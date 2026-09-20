@@ -1,0 +1,175 @@
+/* ============================================================================
+   THE GREEK PALETTE — rebuilt 2026-07-28 from the artwork the user supplied.
+
+   The reference is their own image set: classical figures in ochre and brass on
+   parchment, and a set of icon studies in ink navy, cream and gold. Both themes
+   are drawn from those, not invented:
+
+     dark  = the library at night — ink navy ground, parchment text, gold leaf
+     light = the page itself      — true parchment, warm ink, sienna
+
+   ONE RULE ABOVE THE OTHERS: no cool white and no blue-grey anywhere in the
+   text ramp. Beside terracotta and bronze, a blue-white reads as a different
+   and colder design pasted on top. Every neutral here carries warmth.
+
+   The three token families still must not re-merge — see CLAUDE.md §6. What
+   changed is only their colour: --line* are now translucent PARCHMENT rather
+   than translucent white.
+
+   MODULE COLOURS WERE REPLACED (user's decision, 2026-07-28). They were locked
+   because the Notion board and the PDF schedule share them; the user chose the
+   full Greek palette knowing those two will no longer match until updated. The
+   old values are in archive\index.pre-greek-2026-07-28.html.
+
+     ENT     #ff5a5f -> #b4472f  terracotta
+     Ophtho  #00b37e -> #5c7a52  olive
+     Neuro   #8b5cf6 -> #6d4c7d  tyrian purple
+     Peds    #3b82f6 -> #2e5f8a  lapis
+
+   A happy consequence, measured not hoped for: all four are dark enough that
+   WHITE text on them now passes AA (4.8-7.1:1). The old set failed at
+   3.05-4.23:1 and that failure had to be left standing. The same move fixes the
+   bank colours, so .bankchip.on and .pill.bankpill go back to white text.
+   ============================================================================ */
+:root{
+  /* ---- type ---------------------------------------------------------------
+     Cinzel and EB Garamond are embedded in data/fonts.js. The fallbacks matter:
+     if that file is ever missing the app must still read, so each stack ends in
+     a real system serif rather than in `serif`. */
+  --font-display:'Cinzel','Trajan Pro','Palatino Linotype','Book Antiqua',Georgia,serif;
+  --font-body:'EB Garamond','Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+
+  /* text ramp — warm parchment on ink */
+  --tx:#f2e8d5;
+  --ink:#f2e8d5;
+  --ink-2:#cfc0a5;
+  --ink-3:#ab9a80;
+  --ink-4:#9c8b71;   /* the 10-11px ramp; 5.2:1 on --card, audited */
+
+  /* ground and surfaces */
+  --bg:#0a1017;
+  --bg-2:#151f2d;
+  --card:#121a27;
+  --fill:#2b3a4f;
+  --glass:rgba(18,27,40,.76);
+  --glass-2:rgba(11,17,26,.84);
+
+  /* hairlines — parchment, not white */
+  --line:rgba(242,232,213,.085);
+  --line-2:rgba(242,232,213,.16);
+
+  --rail:#080d14;
+  --rail-2:#16202e;
+  --rail-3:#27364b;
+  --rail-text:#b9a88d;
+  /* Secondary text in the rail — the subtitle, the section labels, the counts,
+     the streak caption. Five rules each carried their own hardcoded lavender
+     (#a79ddb, #a89fd4, #9c92cc, #c2bbe4), left over from a palette this app no
+     longer uses: a cool purple secondary sitting underneath a warm sand
+     primary, which is the seam that makes a rail read as two designs stacked.
+     Warm, and one value. Measured 4.87:1 against the rail's darker gradient
+     stop, so the small uppercase labels clear AA on their own. */
+  --rail-dim:#8c7f6a;
+
+  /* module colours — the Greek set */
+  --ent:#b4472f;
+  --ophtho:#5c7a52;
+  --neuro:#6d4c7d;
+  --peds:#2e5f8a;
+  --revision:#7a6a55;
+  --buffer:#9a6b1f;
+
+  /* state colours */
+  --ok:#7fae6f;
+  --ok-bg:rgba(127,174,111,.15);
+  --bad:#d4674f;
+  --bad-bg:rgba(212,103,79,.15);
+  --gold:#d9b44a;
+  --gold-bg:rgba(217,180,74,.15);
+  --warn:#d1a03c;
+  --on-accent:#12100b;   /* text ON gold and other bright fills */
+  --gold-text:#d9b44a;   /* gold used AS TEXT. Separate from --gold because on
+                            parchment the background gold measures 1.6:1. */
+
+  /* One radius scale, four steps and a pill. Before this there were seventeen
+     different values across the stylesheet — two sibling buttons in the same
+     toolbar were 11px and 12px — and nothing but drift decided which a given
+     element got. The steps nest: a 12px panel inside a 16px card reads as
+     deliberate, two 13px boxes beside a 14px one reads as an accident. */
+  --r-1:4px;             /* swatches, marks, thin bars, inline code */
+  --r-2:8px;             /* small square tiles, icon buttons, images */
+  --r-3:12px;            /* rows, options, inputs, buttons, inner panels */
+  --r:16px;              /* cards, modals, the outermost surfaces */
+  --r-pill:999px;        /* anything shaped like a chip or a badge */
+  --pop:0 7px 18px;
+  --pop-lg:0 14px 34px;
+  --glow:0 0 0 1px rgba(242,232,213,.07);
+
+  --sh:rgba(0,0,0,.5);
+  --sh-soft:rgba(0,0,0,.3);
+  --sh-deep:rgba(0,0,0,.65);
+  --sheen:linear-gradient(160deg,rgba(242,232,213,.05),rgba(242,232,213,.012));
+  --tint:rgba(242,232,213,.045);
+  --tint-2:rgba(242,232,213,.075);
+
+  /* the clinical reading surface */
+  --stem:#f5ecdb;
+  --prose:#d8c9ae;
+  --strong:#fff8ea;
+}
+
+/* ============================================================================
+   LIGHT — parchment. Sampled from the user's "Father of Anatomy" card: an aged
+   page, warm ink, sienna rule lines. Only tokens are restated; the rules are
+   shared with dark.
+
+   The two asymmetries from the previous theme still hold and still matter:
+     1. THE RAIL STAYS DARK — it is a carved plinth in both themes, and the ~12
+        hardcoded #fff values inside it stay correct.
+     2. --gold STAYS BRIGHT — it is a background in 7 places and a text colour
+        in none. --ok and --bad DO darken, because accColor() returns them as
+        text.
+   ============================================================================ */
+:root[data-theme="light"]{
+  --tx:#241c14;
+  --ink:#241c14;
+  --ink-2:#463726;
+  --ink-3:#5e4c37;
+  --ink-4:#5c4b36;   /* 5.2:1 on --bg-2, the DARKEST surface it lands on — measuring
+                        against --card alone put this at 4.11:1 in real use */
+
+  --bg:#e6d9be;
+  --bg-2:#dbcbab;
+  --card:#f7efe0;
+  --fill:#2b2118;    /* dark ink solid — buttons stay dark on the page */
+  --glass:rgba(247,239,224,.78);
+  --glass-2:rgba(247,239,224,.85);
+
+  --line:rgba(60,44,28,.13);
+  --line-2:rgba(60,44,28,.22);
+
+  /* rail unchanged — see note 1 above */
+
+  --ok:#2f5426;
+  --ok-bg:rgba(47,84,38,.13);
+  --bad:#9c3620;
+  --bad-bg:rgba(156,54,32,.11);
+  --gold:#d9b44a;              /* unchanged — see note 2 above */
+  --gold-bg:rgba(154,107,31,.17);
+  --warn:#8a5a12;
+  --on-accent:#1a150e;
+  --gold-text:#7a5410;   /* bronze. The background gold measures 1.6:1 as text
+                            on parchment — unreadable. See the dark block. */
+
+  --glow:0 0 0 1px rgba(74,56,34,.06);
+  --sh:rgba(74,56,34,.16);
+  --sh-soft:rgba(74,56,34,.10);
+  --sh-deep:rgba(74,56,34,.24);
+  --sheen:linear-gradient(160deg,rgba(74,56,34,.02),rgba(74,56,34,.05));
+  --tint:rgba(74,56,34,.045);
+  --tint-2:rgba(74,56,34,.075);
+
+  --stem:#1c150e;
+  --prose:#33281c;
+  --strong:#000000;
+}

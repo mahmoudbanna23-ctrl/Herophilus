@@ -1,0 +1,18 @@
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  /* EB Garamond throughout. It has a small x-height, so the base size goes up
+     from 15px to 16.5px — matched by eye against the old Nunito, not converted
+     arithmetically, because the two faces set at very different apparent sizes. */
+  font-family:var(--font-body);
+  background:var(--bg);color:var(--tx);font-size:16.5px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(circle at 12% 8%, rgba(109,76,125,.09) 0, transparent 42%),
+                   radial-gradient(circle at 88% 4%, rgba(46,95,138,.05) 0, transparent 38%);
+  background-attachment:fixed;
+}
+button{font-family:inherit;font-size:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input{font-family:inherit;font-size:inherit}
+:focus-visible{outline:3px solid var(--neuro);outline-offset:2px;border-radius:var(--r-1)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+

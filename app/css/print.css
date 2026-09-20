@@ -1,0 +1,279 @@
+/* ---------- Print / Save as PDF ---------- */
+@media print{
+  /* @page lives further down with the cover rules, so the margin and the page
+     number are declared together. Two @page blocks would merge silently and the
+     later one would win — one place is clearer. */
+  /* ⚠️ .filterbar and .tb-btn were missing here, so "Test the whole lecture",
+     "Save as PDF" and the "← ENT notes" back link all printed onto paper —
+     three controls that do nothing on a sheet of paper. Reported by the user
+     from a real saved PDF. */
+  .rail,.topbar,.th-test,.readtheory,.toast,.modal-bg,.splash,.gate,.qzoom,
+  .filterbar,.tb-btn,.clep,
+  /* The schedule's own controls: the ✓/✗ marks and the Edit/Reset bar. Same
+     reason as the buttons above — a printed plan is read, not clicked. */
+  .mk,.edbar{display:none!important}
+  /* A question's photograph is content, so it PRINTS — unlike the module
+     artwork below. It is an <img>, not a background, so it needs nothing but
+     room; the caption's "tap to enlarge" is meaningless on paper. */
+  .qfig img{max-width:78mm;box-shadow:none}
+  .qfig figcaption{color:#444}
+  /* The module artwork is a background-image, and browsers do not print those by
+     default — left in, it reserves a square of blank paper per card. It carries
+     no information anyway, so drop it and let the card collapse to its text. */
+  .mod-art{display:none!important}
+  /* The app is dark on screen. Printing keeps paper white, so every colour token
+     that carries text has to flip back to ink or the PDF comes out blank.
+
+     The selector list is not decoration. :root[data-theme="light"] has a higher
+     specificity than a bare :root, so once the light theme existed it outranked
+     this block and printed its grey page background onto paper. Matching the
+     specificity here — and sitting later in the file — puts print back on top
+     for BOTH themes. */
+  :root,
+  :root[data-theme="light"],
+  :root[data-theme="dark"]{
+    /* ⚠️ THE MUTED RAMP WAS TOO LIGHT ON PAPER AND THE USER SAID IT HURT TO READ.
+       --ink-3 and --ink-4 carry the italic "(not taken from the course material)"
+       tags and every small label; at #4a5464/#6b7688 in a light serif they render
+       as grey hairlines. Both pulled to near-ink — on white there is no reason for
+       any text colour on this page to be pale. */
+    --tx:#14181f; --ink:#14181f; --ink-2:#1b2028; --ink-3:#2f3742; --ink-4:#3a424e;
+    --card:#fff; --bg:#fff; --bg-2:#f2f4f8; --fill:#14181f;
+    --line:#d8dde5; --line-2:#b9c1cd;
+    --ok-bg:#e6f9f0; --bad-bg:#ffecee; --gold-bg:#fff6e0;
+    --stem:#14181f; --prose:#22282f; --strong:#000;
+    --warn:#8a5000; --ok:#06603f; --bad:#a3182a;
+    --sh:rgba(0,0,0,.10); --sh-soft:rgba(0,0,0,.07); --sh-deep:rgba(0,0,0,.14);
+    --sheen:none; --tint:transparent; --tint-2:#f2f4f8;
+    --glow:0 0 0 1px rgba(0,0,0,.06);
+  }
+  body{background:#fff!important;background-image:none!important;font-size:11pt;color:#14181f}
+  .ambient,.ambient *{display:none!important}
+  /* Weight, not just colour. EB Garamond is a light serif and at 11pt its regular
+     weight is a hairline on paper; 500 gives it a stem without turning it bold. */
+  .th-body,.th-body p,.th-body li,.stem,.ex-body{color:#14181f!important;font-weight:500}
+  .th-body em,.th-body i{color:#2f3742!important;font-weight:500}
+  .th-body strong,.th-h h2,h1{color:#0d1117!important}
+  /* ⚠️ Chrome's own print dialog has "Background graphics" OFF BY DEFAULT, so a
+     user pressing Save as PDF gets NO table-header fill — and the header text is
+     white, which prints white-on-white and loses every column label. Headless
+     --print-to-pdf prints backgrounds regardless, so the harness could never
+     have shown this. print-color-adjust makes the fill survive either way. */
+  .th-table th,.th-table tbody tr:nth-child(odd) td,.fbox,.flow,.th-intro,.wbadge,.eyebrow{
+    -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  /* Table heads take the module colour too, so a table reads as part of the
+     chapter rather than as a black slab dropped into it. */
+  .th-table{border:.6pt solid #d8dde5!important;border-radius:2pt!important;overflow:hidden}
+  .th-table th{background:var(--mod,#14181f)!important;color:#fff!important}
+  .th-table th strong,.th-table th em{color:#fff!important}
+  /* The stripe was a neutral grey, which read as a printing artefact next to a
+     coloured head. Tinting it from --mod at 7% ties the body of the table to its
+     own header. The fallback keeps the old grey if a view sets no --mod. */
+  .th-table tbody tr:nth-child(odd) td{
+    background:color-mix(in srgb,var(--mod,#14181f) 7%,#fff)!important}
+  .th-table td{border-bottom:.5pt solid #e4e8ee!important}
+  /* A callout is the other thing the eye should catch. Tinted ground, a solid
+     bar in the warn colour, and room to breathe. */
+  .th-body blockquote{
+    border-left:3pt solid #c08a1e!important;background:#fdf7e8!important;
+    border-radius:0 2pt 2pt 0!important;
+    -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
+  }
+  .app{display:block}
+  .page{padding:0;max-width:100%}
+  .th-sec{break-inside:auto;page-break-inside:auto;margin-bottom:20px;padding-left:12px}
+  .th-h{break-after:avoid;page-break-after:avoid}
+  /* ⚠️⚠️ `.th-table` IS DELIBERATELY NOT IN THIS LIST ANY MORE, AND THAT ONE
+     CHANGE IS WORTH MORE PAGES THAN ANY AMOUNT OF FURTHER WORD-CUTTING.
+     Measured: rewriting a chapter from prose into tables cut it from 10,384
+     words to 3,826 and left the page count at 16 — density fell from ~350 words
+     a page to ~240. With `break-inside:avoid`, a ten-row table that will not fit
+     in the space remaining jumps WHOLE to the next page and leaves the bottom
+     third of the sheet blank; on a page made of medium tables that happens over
+     and over. Rows still never split, and <thead> repeats the column labels on
+     the continuation page, so a broken table stays readable. */
+  .flow,.fbox,.th-body blockquote{break-inside:avoid;page-break-inside:avoid}
+  .th-table thead{display:table-header-group}
+  .th-table tr{break-inside:avoid;page-break-inside:avoid}
+  .fbox,.th-table{box-shadow:none!important}
+  /* ⚠️ THE PDF IS A BOOK, NOT THE SCREEN (user's instruction, 2026-08-13):
+     title page, contents, then straight into the notes. The exam-patterns
+     intro is screen-only — on paper the user asked to start with the
+     explanation directly. */
+  .th-intro{display:none!important}
+  /* ⚠️ PAGE COUNT. 47 pages for one chapter was too many. Nothing here removes a
+     word — it is leading, section gaps and cell padding, all of which were set
+     for a 15px screen and are wasteful at 11pt on A4. */
+  /* ⚠️ TWO COLUMNS WAS TRIED AND MADE IT WORSE — 42 pages went to 50. MEASURED,
+     not predicted. This chapter carries 21 tables, and a table has to span both
+     columns to stay readable; every span closes the column set and reopens it,
+     so the flow fragments into short stubs and the wasted half-columns cost more
+     than the narrow measure saves. Do not re-try it on a table-heavy chapter.
+     Below ~42 pages the only remaining lever is the WORD COUNT. */
+  .th-body{line-height:1.5!important}
+  .th-body p{margin:0 0 6pt!important}
+  .th-body ul{margin:4pt 0 6pt!important}
+  .th-body li{margin-bottom:2pt!important}
+  /* ── THE PAGE IS SCANNED, NOT READ (user, 2026-08-14: the PDF "doesn't look
+     appetising at all. Some parts just look like plain paragraphs") ───────────
+     Nothing below changes a single word. It gives the four kinds of line the
+     format already produces four different appearances, so the eye can tell an
+     entity from a citation from an aside without reading any of them.
+     ⚠️ COLOUR HERE IS PRINT-ONLY AND MUST STAY THAT WAY. The module hues are
+     dark by design (CLAUDE.md §6) so white text passes on them — which is the
+     same thing as saying they are nearly invisible AS text on the dark screen
+     ground. On white paper they are exactly right. */
+  /* The lead anchor, chosen by mdLead() — see the long note at that function
+     for why this is not `strong:first-child`. Only the term is coloured; the
+     rest of the bold statement stays near-black, so the colour marks WHERE a
+     block starts instead of shouting the whole of it. */
+  .th-body .lt{color:var(--mod,#14181f)!important}
+  /* Entity blocks need air between them or they read as one slab. Ordinary
+     paragraphs keep the tight 6pt above. */
+  .th-body p.lead{margin-top:8pt!important}
+  .th-body p.lead:first-child{margin-top:0!important}
+  /* A citation is furniture. Small, spaced, muted, ruled off — findable when
+     checked, skipped when reading. */
+  .th-body .src{
+    margin:7pt 0 0!important;padding-top:3pt!important;
+    border-top:.4pt solid #e4e8ee!important;
+    font-size:7.5pt!important;font-weight:500!important;letter-spacing:.09em!important;
+    text-transform:uppercase!important;color:#8a94a3!important}
+  /* ⚠️ `.th-body .xref` is TWO classes so it outranks the `.th-body p` weight
+     rule above, which forces 500 on every paragraph. A single-class selector
+     loses and the aside prints at full prose weight. */
+  .th-body .xref{font-size:9pt!important;font-weight:400!important;color:#5a6472!important}
+  .th-body .xref em,.th-body .xref i{color:#5a6472!important;font-weight:400!important}
+  /* Sub-heading inside a section — the lever that breaks a long body into
+     scannable blocks. Coloured text, hairline rule, never stranded at a foot. */
+  .th-body .th-sub{
+    margin:9pt 0 4pt!important;padding-bottom:2pt!important;
+    border-bottom:.4pt solid #e4e8ee!important;
+    font-family:var(--font-display),Georgia,serif!important;
+    font-size:9.5pt!important;font-weight:700!important;letter-spacing:.07em!important;
+    text-transform:uppercase!important;color:var(--mod,#14181f)!important;
+    break-after:avoid;page-break-after:avoid}
+  .th-body .th-sub:first-child{margin-top:0!important}
+  /* ── SECTION HEADINGS ──────────────────────────────────────────────────────
+     Revision notes are SCANNED, so a heading has to be findable at arm's length
+     and cheap in vertical space. A tinted band in the module colour, the number
+     in the colour, the weight badge inline. `break-after:avoid` already stops a
+     heading stranding at the foot of a page. */
+  .th-sec{margin-bottom:9pt!important;padding-left:0!important;border-left:none!important}
+  /* The heading is a solid bar in the module colour with the type reversed out —
+     the strongest cheap signal on the page, and it makes flicking to a section
+     possible at arm's length. */
+  /* ⚠️ `flex-wrap:wrap` (the screen default) DROPPED THE BADGE ONTO ITS OWN LINE
+     and turned a one-line bar into a three-line slab on any section with a long
+     title. nowrap + a flexible h2 keeps the number left, the badge right, and
+     lets the TITLE be the thing that wraps. */
+  .th-h{
+    margin:0 0 6pt!important;padding:4pt 8pt!important;
+    background:var(--mod,#b4472f)!important;border:none!important;
+    align-items:baseline!important;border-radius:2pt!important;
+    flex-wrap:nowrap!important;gap:7pt!important;
+    -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
+  }
+  .th-h h2{
+    font-size:11.4pt!important;letter-spacing:.03em!important;margin:0!important;
+    color:#fff!important;flex:1 1 auto;min-width:0;
+  }
+  .th-num{
+    color:rgba(255,255,255,.72)!important;font-size:8.4pt!important;font-weight:900!important;
+    flex:0 0 auto;
+  }
+  .th-h .wbadge{
+    background:rgba(255,255,255,.2)!important;color:#fff!important;border:none!important;
+    flex:0 0 auto;white-space:nowrap;
+  }
+  .wbadge{
+    font-size:6.6pt!important;padding:1pt 4pt!important;letter-spacing:.09em!important;
+    -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
+  }
+  .wbadge.know{display:none!important}   /* "background" is the default; saying so costs a line */
+  /* Cell padding is charged once per ROW, so on a table-heavy page it is the
+     single biggest consumer of vertical space after the break behaviour above.
+     4pt → 2.6pt saves ~2.8pt a row; a chapter with 150 table rows gets ~15 cm
+     of paper back for nothing. */
+  .th-table{margin:3pt 0 6pt!important;font-size:9.6pt!important}
+  .th-table th{padding:2.6pt 6pt!important;font-size:8.4pt!important}
+  .th-table td{padding:2.6pt 6pt!important;line-height:1.3!important}
+  .th-body blockquote{margin:6pt 0!important;padding:6pt 9pt!important}
+  .flow{margin:4pt 0 8pt!important;padding:7pt 9pt!important}
+  .fbox{padding:5pt 7pt!important}
+  .farrow{margin:2pt 0!important}
+  /* ⚠️ UNDO THE BOOK READER ENTIRELY. A fixed-height, overflow-hidden,
+     translated column-set prints as ONE page and silently loses the rest of the
+     chapter. Paper does its own pagination and needs the plain flow back. */
+  .bk-on .bk-view{overflow:visible!important}
+  .bk-on .bk-flow{
+    columns:auto!important;column-gap:normal!important;
+    height:auto!important;transform:none!important;transition:none!important}
+  .bk-prog,.bk-run,.bk-tap,.bk-top,.bk-foot,.bk-title,
+  .bk-stage>.bk-btn{display:none!important}
+  /* The cover is .doc-head, which the screen hides while the reader is on. */
+  .bk-on .doc-head{display:block!important}
+  /* ⚠️ AND THE A4 BOX ITSELF COMES OFF. Paper does its own pagination; a fixed
+     aspect-ratio, overflow-hidden sheet prints as one page and loses the rest of
+     the chapter, exactly as the columned flow does. Every property the screen
+     rule sets is unset here — height and aspect-ratio together, or the box keeps
+     its shape from whichever survives. */
+  .bk-on .bk-stage{display:block!important}
+  .bk-on .bk-sheet{
+    display:block!important;aspect-ratio:auto!important;height:auto!important;
+    width:auto!important;padding:0!important;border:none!important;
+    border-radius:0!important;box-shadow:none!important;background:none!important;
+    overflow:visible!important}
+  /* ── THE COVER ─────────────────────────────────────────────────────────────
+     Typographic, not illustrated: Canva was considered and set aside because a
+     cover image cannot be generated per chapter for 104 chapters, and the module
+     colour already carries the identity. A rule above the title, the module in
+     small caps, the chapter, a rule below, and the counts as a footer line. */
+  /* A SOLID PANEL IN THE MODULE'S COLOUR, type reversed out of it. True
+     full-bleed is not reachable through @page margins, so the panel is a wide
+     band instead — it still reads as designed rather than as a bare title. */
+  /* ⚠️ TRUE FULL BLEED IS NOT REACHABLE. Negative margins that would push the
+     panel into the @page margin are clipped by Chrome — measured: -15mm left/
+     right moved the edge not at all, and it left a stray rule at the foot of the
+     sheet. So the panel fills the whole PRINTABLE area instead: A4 297mm less
+     the 18mm/16mm page margins = 263mm, which reads as a cover rather than as a
+     banner with white under it. */
+  .doc-head{
+    break-after:page;page-break-after:always;
+    margin:0;padding:84mm 22mm 0;min-height:238mm;box-sizing:border-box;
+    text-align:center;border-bottom:none;
+    background:var(--mod,#b4472f)!important;color:#fff!important;
+    -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
+  }
+  .doc-head .eyebrow{
+    display:inline-block;margin-bottom:11mm;background:none!important;
+    color:rgba(255,255,255,.82)!important;font-size:9.5pt;letter-spacing:.4em;
+    font-weight:800;padding:0;border:none;
+  }
+  .doc-head .eyebrow svg{display:none}
+  .doc-head h1{
+    font-size:31pt;line-height:1.1;letter-spacing:.035em;margin:0;
+    color:#fff!important;
+  }
+  .doc-head .doc-meta{
+    margin-top:12mm;padding-top:7mm;font-size:9pt;letter-spacing:.18em;
+    text-transform:uppercase;color:rgba(255,255,255,.9)!important;font-weight:700;
+    border-top:.8pt solid rgba(255,255,255,.42);display:inline-block;
+  }
+  /* ── RUNNING HEAD AND PAGE NUMBERS ─────────────────────────────────────────
+     @page margin boxes are the only way to repeat furniture on every sheet;
+     Chrome supports the counter but not `string-set`, so the chapter name is
+     written in by the renderer as a CSS variable rather than pulled from h1. */
+  @page{
+    margin:18mm 15mm 16mm;
+    @bottom-center{
+      content:counter(page);
+      font-family:'EB Garamond',Georgia,serif;font-size:9pt;color:#5a6472;
+    }
+  }
+  @page:first{ @bottom-center{content:''} }
+  h1{font-size:22pt}
+  .th-h h2{font-size:14pt}
+  .th-body{font-size:10.5pt;line-height:1.55}
+  a{text-decoration:none;color:inherit}
+}

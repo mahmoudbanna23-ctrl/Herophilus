@@ -1,0 +1,965 @@
+/* ---------- Misc ---------- */
+.empty{text-align:center;padding:64px 20px;color:var(--ink-4)}
+.empty .big{font-size:52px;margin-bottom:14px}
+.empty h3{color:var(--ink-2);font-size:17px;margin:0 0 7px;font-weight:900}
+.empty p{margin:0 auto;font-size:13.5px;max-width:400px;line-height:1.6;font-weight:500}
+
+.toast{
+  position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(90px);
+  background:var(--fill);color:#fff;padding:13px 22px;border-radius:var(--r-3);font-size:13.5px;
+  border:2.5px solid #000;box-shadow:0 10px 24px rgba(0,0,0,.3);z-index:400;opacity:0;
+  transition:all .3s cubic-bezier(.34,1.56,.64,1);font-weight:800;
+}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+
+.modal-bg{
+  position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:300;
+  display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px);
+  /* A tall modal was unscrollable and cut its own save button off. */
+  overflow-y:auto;overscroll-behavior:contain;
+}
+.modal-bg.show{display:flex}
+.modal{
+  border-radius:var(--r);padding:27px;
+  max-width:460px;width:100%;animation:pop .3s cubic-bezier(.34,1.56,.64,1);
+  margin:auto;flex-shrink:0;
+}
+.modal h3{margin:0 0 9px;font-size:20px;font-weight:900;letter-spacing:-.02em}
+.modal p{margin:0 0 19px;color:var(--ink-2);font-size:14px;line-height:1.6;font-weight:500}
+.modal-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+
+.kbd{
+  display:inline-block;padding:2px 8px;border:2px solid var(--line-2);border-bottom-width:3px;
+  border-radius:var(--r-1);font-size:11px;font-family:ui-monospace,Menlo,monospace;background:var(--bg-2);font-weight:800;
+}
+.shortcuts{display:grid;grid-template-columns:auto 1fr;gap:10px 17px;font-size:13px;align-items:center}
+.shortcuts .d{color:var(--ink-3);font-weight:600}
+
+.filterbar{display:flex;gap:9px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
+/* Source filter — which of the three question banks a module draws from. */
+.bankbar{display:flex;gap:8px;margin:0 0 16px;flex-wrap:wrap;align-items:center}
+.bank-lbl{font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-2);margin-right:2px}
+.bankchip{display:inline-flex;align-items:center;gap:7px;padding:7px 13px;cursor:pointer;
+  border:1px solid var(--line-2);border-radius:var(--r-pill);background:var(--card);color:var(--ink-2);
+  font-family:inherit;font-size:13px;font-weight:800;
+  transition:transform .18s ease,box-shadow .18s,background .18s,color .18s}
+.bankchip:hover{transform:translateY(-2px)}
+/* Off-state is deliberately flat and grey: which sources are live must be
+   readable at a glance, or you sit an exam on a filtered set without noticing. */
+/* White text is correct again as of the Greek palette: bronze #9a6b1f, aegean
+   #2f6b8f and madder #8f3f5c are all dark enough that white clears 4.6-6.9:1.
+   Under the OLD bright bank colours it did not — white on amber #f59e0b
+   measured 2.15:1, the worst reading in the app, and this rule had to carry
+   dark text instead. Recheck by measurement if the bank colours ever change.
+
+   The glow was `var(--ink)`, which is TEXT colour — parchment-white, so the
+   chip wore a pale halo. That is the exact re-merge the token contract forbids. */
+.bankchip.on{background:var(--bk);color:#fff;box-shadow:0 6px 16px var(--sh)}
+.bankchip:not(.on){opacity:.5;text-decoration:line-through}
+.bankn{font-size:11px;font-weight:900;padding:1px 7px;border-radius:var(--r-pill);
+  background:rgba(0,0,0,.18)}
+.bankchip.on .bankn{background:rgba(0,0,0,.26)}
+.bankchip:not(.on) .bankn{background:rgba(0,0,0,.08)}
+.bankchip.reset{border-style:dashed;opacity:1;text-decoration:none;font-weight:700}
+/* Which of the three banks this question came from, on the question itself. */
+/* white again, for the same reason as .bankchip.on — the Greek bank colours are
+   dark. This pill sits right beside a question stem, so it is the one to
+   re-measure first if those colours are ever touched. */
+.pill.bankpill{color:#fff}
+.chip{
+  padding:8px 15px;border:1px solid var(--line-2);border-radius:var(--r-pill);font-size:12.5px;
+  background:var(--card);font-weight:800;
+  transition:transform .13s ease,box-shadow .13s;
+}
+.chip:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.25)}
+/* fallback is --fill, not --ink: --ink is near-white since the redesign, so an
+   unset --c would have made a white chip carrying white text */
+.chip.on{background:var(--c,var(--fill));color:#fff}
+
+@keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:0}}
+.confetti{position:fixed;top:-14px;width:11px;height:11px;z-index:250;pointer-events:none;animation:fall linear forwards}
+
+.mobile-only{display:none}
+@media(max-width:860px){
+  .rail{position:fixed;left:-238px;z-index:60;transition:left .24s;box-shadow:8px 0 30px rgba(0,0,0,.3)}
+  .rail.open{left:0}
+  .mobile-only{display:block}
+  .page{padding:18px 14px}
+  #saveWarning, #dataWarning{width:calc(100% - 28px)}   /* the page's gutter halves here; the notice follows it */
+  .qcard{padding:20px 17px}
+  .topbar{padding:10px 14px}
+  h1{font-size:25px}
+  .day{flex-wrap:wrap}
+  .day-marks{margin-left:auto}
+}
+
+/* ============================================================================
+   CINEMATIC LAYER — added 2026-07-27
+   Depth, glass and motion. The governing rule for this whole block:
+
+       ALIVE TO BROWSE, CALM TO READ.
+
+   Ambient motion runs on home / module / schedule / flagged / moved.
+   It stops dead on quiz / mock / review / theory, because those are the screens
+   where a clinical stem is read for minutes at a time and anything drifting in
+   the periphery competes with it. The gate is body[data-view], set by render().
+   ============================================================================ */
+
+/* ---- ground ------------------------------------------------------------- */
+body{
+  background:var(--bg);
+  background-image:
+    radial-gradient(1200px 700px at 8% -10%, rgba(109,76,125,.30), transparent 60%),
+    radial-gradient(1000px 620px at 100% 0%, rgba(46,95,138,.26), transparent 58%),
+    radial-gradient(900px 600px at 50% 110%, rgba(92,122,82,.20), transparent 60%);
+  background-attachment:fixed;
+}
+
+/* Slow-moving colour behind everything. Fixed, non-interactive, z-index 0;
+   .app sits at z-index 1. Blur is on an element that never scrolls and never
+   repaints, which is the only place a 90px blur is affordable. */
+.ambient{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;contain:strict}
+/* Pulled back from .55 when the film moved in underneath. Two ambient systems
+   at full strength cancel each other out — the orbs are a 90px blur, so at
+   their old weight they simply fogged the room away. They are a tint over the
+   film now, not the atmosphere in their own right. */
+.ambient .orb{
+  position:absolute;border-radius:50%;filter:blur(90px);opacity:.38;
+  will-change:transform;
+}
+.ambient .o1{width:46vw;height:46vw;left:-12vw;top:-14vh;background:radial-gradient(circle,var(--neuro),transparent 68%);animation:drift1 34s ease-in-out infinite}
+.ambient .o2{width:40vw;height:40vw;right:-10vw;top:4vh;background:radial-gradient(circle,var(--peds),transparent 68%);animation:drift2 41s ease-in-out infinite}
+.ambient .o3{width:38vw;height:38vw;left:26vw;bottom:-18vh;background:radial-gradient(circle,var(--ophtho),transparent 70%);animation:drift3 47s ease-in-out infinite}
+.ambient .o4{width:26vw;height:26vw;right:16vw;bottom:-10vh;background:radial-gradient(circle,var(--gold),transparent 72%);opacity:.28;animation:drift1 52s ease-in-out infinite reverse}
+@keyframes drift1{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(6vw,5vh,0) scale(1.12)}}
+@keyframes drift2{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-7vw,7vh,0) scale(1.09)}}
+@keyframes drift3{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(5vw,-6vh,0) scale(1.14)}}
+
+/* ---- the film ------------------------------------------------------------ */
+/* A candlelit scholar's desk, playing under the whole app. It is the BOTTOM
+   layer of .ambient: the orbs drift OVER it and the scrim sits over both, so
+   the film reads as the deepest part of the colour field rather than as a
+   video pasted behind the page.
+
+   Everything that keeps it out of the way of reading:
+     · the scrim, which is what actually guarantees contrast — the film never
+       touches the page unmediated;
+     · body[data-view], which fades .ambient to .3 on the four reading screens,
+       and syncFilm(), which calls pause() so the frames stop decoding too;
+     · prefers-reduced-motion, which drops it entirely — poster and all;
+     · the print block above, whose `.ambient *` rule already covers it.
+
+   The clip is a PING-PONG loop, forward then reverse, cut in ffmpeg. The source
+   slowly pushes in, so a plain loop snapped back to the wide framing every six
+   seconds — the one thing a background must never do. Reversed, the push-in
+   becomes a slow breath with no seam at either end. */
+/* .gate-amb rides on every one of these rules. The gate is opaque and sits at
+   z-index 200 above .app, so the page's film is unreachable from behind it and
+   it carries its own copy — but it must never drift out of step with this one,
+   so the selectors are shared rather than duplicated. */
+.ambient .film,.gate-amb .film{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:50% 42%;
+  opacity:.48;
+  /* the source is warm amber against a navy ground; pulling the saturation
+     back and easing the brightness settles it without draining the lamp */
+  filter:saturate(.70) contrast(1.05) brightness(.82);
+}
+/* The scrim is the contrast guarantee, not a mood effect. It is heaviest top
+   and bottom — behind the top bar and below the fold — and lightest across the
+   middle band where the lamp and the figure actually are. */
+.ambient .film-scrim,.gate-amb .film-scrim{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,
+      rgba(7,13,22,.88) 0%, rgba(7,13,22,.44) 18%,
+      rgba(7,13,22,.26) 50%, rgba(7,13,22,.64) 100%),
+    radial-gradient(150% 105% at 50% 48%, transparent 38%, rgba(7,13,22,.46) 100%);
+}
+
+/* PORTRAIT IS A DIFFERENT PICTURE, not the same one narrower.
+   object-fit:cover crops to the middle of the frame, and on a tall viewport
+   that middle is only about 39% of a 16:9 source. For this clip the middle
+   band is the scholar's unlit back; the oil lamp — the one bright, legible
+   thing in the shot — sits ~14% from the left and is cropped away entirely.
+   The result on an iPad in portrait was an apparently blank navy page.
+
+   So the framing moves toward the lamp rather than the figure, and the film
+   lifts to carry a crop that is inherently darker. Found by rendering at
+   820x1180; it is invisible in the CSS and invisible on a desktop window.
+
+   And it needs a harder push than a wider screen does, because in portrait the
+   cards run nearly edge to edge: the only film left showing is the strip above
+   the first card and the gaps between sections. What survives has to carry the
+   whole effect, so the film runs brighter here than it ever does on a desktop. */
+@media (max-aspect-ratio:5/4){
+  .ambient .film,.gate-amb .film{object-position:18% 45%;opacity:.72}
+  .ambient .film-scrim,.gate-amb .film-scrim{
+    background:
+      linear-gradient(180deg,
+        rgba(7,13,22,.78) 0%, rgba(7,13,22,.28) 14%,
+        rgba(7,13,22,.14) 48%, rgba(7,13,22,.52) 100%),
+      radial-gradient(170% 95% at 50% 45%, transparent 50%, rgba(7,13,22,.34) 100%);
+  }
+}
+
+.app{position:relative;z-index:1}
+
+/* ---- the gate: still while reading -------------------------------------- */
+body[data-view="quiz"] .ambient,
+body[data-view="mock"] .ambient,
+body[data-view="review"] .ambient,
+body[data-view="theory"] .ambient{opacity:.3;transition:opacity .5s ease}
+body[data-view="quiz"] .orb,
+body[data-view="mock"] .orb,
+body[data-view="review"] .orb,
+body[data-view="theory"] .orb{animation-play-state:paused}
+
+/* ---- glass on the fixed furniture only ---------------------------------- */
+/* Deliberately NOT on cards, chapter rows or question options: backdrop-filter
+   on a long scrolling list is the single most expensive thing on the page. */
+.rail{
+  background:linear-gradient(180deg,rgba(10,20,34,.96),rgba(8,16,28,.99));
+  border-right:1px solid var(--line-2);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+}
+.topbar{backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%)}
+.modal{
+  background:linear-gradient(160deg,rgba(24,40,60,.96),rgba(14,25,40,.98));
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid var(--line-2);box-shadow:0 30px 80px rgba(0,0,0,.6),var(--glow);
+}
+.modal-bg{background:rgba(3,7,14,.66);backdrop-filter:blur(5px)}
+.results{background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--line-2)}
+.gate,.splash{background:var(--bg);background-image:inherit}
+
+/* ---- surfaces get an inner highlight so edges read on dark -------------- */
+/* Shadow ink and the sheen wash come from tokens so the light theme inherits
+   these rules unchanged instead of restating all of them. */
+.card,.stat,.ch-row,.qcard,.th-ch,.day,.modelans,.explain,.fbox,.conf,.bk-sheet{
+  box-shadow:var(--pop) var(--sh),var(--glow);
+}
+.card,.stat,.qcard,.ch-row,.th-ch,.day{
+  background:var(--sheen);
+  background-color:var(--card);
+}
+
+/* hover lifts instead of sliding into a hard shadow */
+button.card:hover:not(:disabled),.ch-row:hover:not(:disabled),.th-ch:hover:not(:disabled){
+  transform:translateY(-3px);
+  box-shadow:0 16px 38px var(--sh-deep),0 0 0 1px var(--c,var(--line-2));
+}
+button.card:active:not(:disabled){transform:translateY(-1px)}
+.day:hover{transform:translateY(-2px);box-shadow:0 14px 32px var(--sh-deep),var(--glow)}
+
+/* module cards glow in their own colour */
+.mod-card::after{opacity:.5;filter:blur(26px);width:120px;height:120px;right:-40px;top:-40px}
+.mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(255,255,255,.14)}
+.pill{border:none;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+
+/* buttons: the primary action is now a lit surface, not a dark slab */
+.btn{
+  background:linear-gradient(160deg,#2c4a6b,#1b2d44);
+  background-color:var(--fill);border:1px solid var(--line-2);
+  box-shadow:0 8px 20px rgba(0,0,0,.45),var(--glow);
+}
+.btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.18)}
+.btn:active:not(:disabled){transform:translateY(0)}
+.btn.go{background:linear-gradient(160deg,#7d5890,#573a66);border-color:rgba(255,255,255,.2);box-shadow:0 10px 26px rgba(125,88,144,.5)}
+.btn.go:hover:not(:disabled){box-shadow:0 16px 36px rgba(125,88,144,.65)}
+.btn.flag.on{background:linear-gradient(160deg,#ffd469,#f0b429);color:var(--on-accent)}
+.wbadge.high{color:var(--on-accent)}
+
+/* options: selection and verdict read by glow, not by a hard offset */
+.opt{background:var(--tint);border-color:var(--line-2)}
+.opt:hover:not(:disabled){background:var(--tint-2);border-color:var(--line-2);transform:translateX(3px);box-shadow:0 6px 18px var(--sh-soft)}
+.opt.sel{box-shadow:0 8px 24px rgba(125,88,144,.4),0 0 0 1px rgba(125,88,144,.6)}
+.opt.correct{box-shadow:0 8px 24px rgba(34,201,138,.3),0 0 0 1px rgba(34,201,138,.5)}
+.opt.wrong{box-shadow:0 8px 24px rgba(255,90,106,.3),0 0 0 1px rgba(255,90,106,.5)}
+.verdict{border:1px solid var(--line-2)}
+.verdict.ok{box-shadow:0 10px 30px rgba(34,201,138,.22),0 0 0 1px rgba(34,201,138,.4)}
+.verdict.bad{box-shadow:0 10px 30px rgba(255,90,106,.22),0 0 0 1px rgba(255,90,106,.4)}
+.verdict.part{box-shadow:0 10px 30px rgba(255,201,74,.22),0 0 0 1px rgba(255,201,74,.4)}
+
+/* the reading surface — highest contrast on the page, deliberately.
+   These three carry the clinical text, so they are the one place the theme is
+   allowed its own dedicated tokens rather than reusing the general ramp. */
+.qcard{border:1px solid var(--line-2)}
+.stem{color:var(--stem);font-size:17px;line-height:1.7}
+.th-body{color:var(--prose)}
+.th-body strong,.ex-body strong{color:var(--strong)}
+.stem th{background:var(--tint-2)}
+.th-table th{background:var(--fill);color:#fff}
+
+/* inputs */
+.search,.caseinput,.jumpin,.pind,.cfgbox,.ed-lab,.ed-txt,.keyin,.newday input[type=date]{
+  background:var(--tint);border-color:var(--line-2);color:var(--tx);
+}
+.search:focus,.caseinput:focus{border-color:var(--neuro);box-shadow:0 0 0 3px rgba(125,88,144,.3)}
+/* --fill is a DARK solid in both themes, so the text on it must be white in
+   both. Using var(--tx) here worked on dark only by coincidence — on light it
+   put near-black text on a near-black chip. */
+.eyebrow{background:var(--fill);color:#fff;border:1px solid var(--line-2)}
+.toast{background:linear-gradient(160deg,#22344b,#14243a);border:1px solid var(--line-2);box-shadow:0 18px 44px rgba(0,0,0,.6)}
+.kbd{background:var(--tint-2);border-color:var(--line-2)}
+.grouphdr::after{height:1px;background:var(--line-2)}
+
+/* ---- entrance motion ---------------------------------------------------- */
+@keyframes pagein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+#page{animation:pagein .34s cubic-bezier(.22,1,.36,1)}
+
+/* scroll reveal — browse screens only, applied by the observer in JS */
+.reveal{opacity:0;transform:translateY(16px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
+
+/* ---- accessibility ------------------------------------------------------ */
+/* The original rule already killed animation and transition. Ambient orbs are
+   background-position/transform loops, so they need explicitly stopping too. */
+@media (prefers-reduced-motion:reduce){
+  .ambient .orb{animation:none!important}
+  /* The film is the most insistent motion on the page, so it goes entirely —
+     poster included. Its scrim goes with it, or the page keeps a dark wash
+     that is now shading nothing. */
+  .ambient .film,.ambient .film-scrim,
+  .gate-amb .film,.gate-amb .film-scrim{display:none!important}
+  .reveal{opacity:1!important;transform:none!important}
+  /* the gate is the most animated screen in the app, so it needs the most
+     thorough opt-out: orbs, staggered entrances, the halo and the sheen */
+  .gate-amb .gorb{animation:none!important}
+  .gstep>*,.pcard,.gtitle{animation:none!important}
+  .gmark::after,.gsign::after{animation:none!important;opacity:0}
+}
+
+/* ============================================================================
+   LIGHT THEME — the rules tokens could not carry.
+   Everything above is shared. What is left here is the handful of places where
+   the dark theme hardcodes an atmosphere value: the ground wash, orb strength,
+   the glass gradients and the modal scrim. Placed last so it wins on source
+   order without needing !important.
+
+   NOT overridden on purpose: .rail, .btn, .toast and .th-table th all stay dark
+   in light mode. They are solid dark objects on a light page by design, and
+   their hardcoded #fff text stays correct.
+   ============================================================================ */
+:root[data-theme="light"] body{
+  /* same three orbs of colour, roughly a third of the strength — at dark-mode
+     alpha they turn a white page murky rather than atmospheric */
+  background-image:
+    radial-gradient(1200px 700px at 8% -10%, rgba(109,76,125,.13), transparent 60%),
+    radial-gradient(1000px 620px at 100% 0%, rgba(46,95,138,.11), transparent 58%),
+    radial-gradient(900px 600px at 50% 110%, rgba(154,107,31,.14), transparent 60%);
+}
+:root[data-theme="light"] .ambient .orb{opacity:.20}
+:root[data-theme="light"] .ambient .o4{opacity:.13}
+
+/* The film is a night scene and this is the page in daylight, so it cannot
+   simply run dimmer here — a dark image at low opacity on parchment is a grey
+   smudge, and at .14 it was invisible altogether, which is how it first
+   shipped. The trick is to BRIGHTEN IT INTO A PALE PRINT rather than show a
+   dark photograph faintly: brightness well above 1 lifts the shadows off the
+   floor, low contrast keeps them there, and the warmth that survives reads as
+   a faded fresco on the page rather than a window onto a dark room.
+   Higher opacity than dark mode, therefore, not lower. */
+:root[data-theme="light"] .ambient .film,
+:root[data-theme="light"] .gate-amb .film{
+  /* .42 -> .55 at the user's request: at .42 it was present but easy to miss.
+     The brightening does the work, not the opacity — see the note above. */
+  opacity:.55;filter:saturate(.58) contrast(.66) brightness(1.82);
+}
+:root[data-theme="light"] .ambient .film-scrim,
+:root[data-theme="light"] .gate-amb .film-scrim{
+  background:
+    linear-gradient(180deg,
+      rgba(247,244,236,.64) 0%, rgba(247,244,236,.34) 22%,
+      rgba(247,244,236,.26) 55%, rgba(247,244,236,.58) 100%),
+    radial-gradient(140% 100% at 50% 50%, rgba(247,244,236,.08) 34%, rgba(247,244,236,.50) 100%);
+}
+/* Light mode's selector outranks the portrait media query, so portrait needs
+   saying again here or it silently keeps the wide-screen values. */
+@media (max-aspect-ratio:5/4){
+  :root[data-theme="light"] .ambient .film,
+  :root[data-theme="light"] .gate-amb .film{opacity:.68}
+}
+
+/* ---- the gate runs the film harder than the app does ----------------------
+   The user asked for it to be more obvious on the sign-in screen, and the gate
+   can carry it: it is a five-second screen with nothing to read on it, so the
+   calm-to-read half of the rule does not apply. What keeps the type legible is
+   .film-scrim::after, the pool under the centre column — NOT the film opacity.
+   Both were re-measured together after this change; raising one without
+   checking the other is how the type would quietly slip below AA.
+
+   Placed after every shared rule on purpose: these match the shared selectors'
+   specificity exactly, so they win on source order alone. Moving this block
+   higher silently disables it. */
+.gate-amb .film{opacity:.66}
+:root[data-theme="light"] .gate-amb .film{opacity:.62}
+@media (max-aspect-ratio:5/4){
+  .gate-amb .film{opacity:.86}
+  :root[data-theme="light"] .gate-amb .film{opacity:.78}
+}
+
+/* ---- the rail follows the theme (2026-07-28, user's request) --------------
+   It used to stay dark in light mode on purpose. The user asked for it to
+   change with the theme, so it does — but the rail was built on the assumption
+   that its ground is always near-black, and roughly a dozen colours inside it
+   are hardcoded white or lilac rather than tokenised. Flipping only the
+   background would have left white text on parchment. Every one of them is
+   restated here, and the whole rail is re-measured after. */
+:root[data-theme="light"] .rail{
+  --rail:#eae2d3; --rail-2:#ded3bf; --rail-3:#cec0a6; --rail-text:#4f4536;
+  --rail-dim:#60533e;   /* the one value four separate light overrides used to repeat */
+  /* The token alone does NOTHING here. The cinematic layer re-declares .rail
+     with a hardcoded dark gradient, so background-color computes to
+     transparent and --rail is never consulted. Found by reading the computed
+     background, which came back rgba(0,0,0,0) while --rail was correctly
+     #eae2d3 — the token had applied and changed nothing. The gradient is what
+     has to be replaced. Contrast below is measured against the DARKER stop. */
+  background:linear-gradient(180deg,#ece5d7,#e6dccb);
+  border-right:1px solid rgba(16,27,45,.14);
+  backdrop-filter:none;-webkit-backdrop-filter:none;
+}
+:root[data-theme="light"] .rail .logo{color:#2a2118}
+:root[data-theme="light"] .rail .logo .blip{
+  /* the gold ring existed to separate a navy medallion from a near-black rail.
+     On parchment the disc already stands out, so it becomes a plain soft edge */
+  box-shadow:0 0 0 1px rgba(122,90,20,.30),0 3px 9px rgba(60,45,20,.20);
+}
+:root[data-theme="light"] .nav-item:hover,
+:root[data-theme="light"] .nav-item.on,
+:root[data-theme="light"] .railprof .rn{color:#2a2118}
+:root[data-theme="light"] .railprof .rav{border-color:rgba(42,33,24,.18)}
+:root[data-theme="light"] .railsync{background:rgba(42,33,24,.055);color:var(--rail-dim)}
+:root[data-theme="light"] .streak{
+  background:linear-gradient(135deg,rgba(217,180,74,.26),rgba(180,71,47,.14));
+  border-color:rgba(154,107,31,.38);
+}
+:root[data-theme="light"] .streak .n{color:#7a5200}
+:root[data-theme="light"] .modal{
+  background:linear-gradient(160deg,rgba(255,255,255,.98),rgba(243,247,252,.97));
+  border:1px solid var(--line-2);
+  box-shadow:0 30px 80px rgba(23,38,66,.22),var(--glow);
+}
+:root[data-theme="light"] .modal-bg{background:rgba(28,42,66,.38);backdrop-filter:blur(5px)}
+:root[data-theme="light"] .results{background:var(--card)}
+:root[data-theme="light"] .toast{
+  /* stays dark — a light toast on a light page has no presence */
+  box-shadow:0 18px 44px rgba(23,38,66,.3);
+}
+:root[data-theme="light"] .gsign{
+  /* the Google button is white by brand, which on a light page needs a real
+     border or it dissolves into the background */
+  border:1px solid rgba(16,27,45,.16);
+  box-shadow:0 6px 18px rgba(23,38,66,.12);
+}
+:root[data-theme="light"] .gsign:hover{box-shadow:0 12px 28px rgba(23,38,66,.18)}
+:root[data-theme="light"] .mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(16,27,45,.08)}
+:root[data-theme="light"] .pill{box-shadow:0 4px 14px rgba(23,38,66,.18)}
+:root[data-theme="light"] .btn:hover:not(:disabled){box-shadow:0 14px 30px rgba(23,38,66,.28),0 0 0 1px rgba(16,27,45,.12)}
+
+/* The highlighter pens are translucent brights. Over a white card with dark
+   text they read fine unchanged, but they need a touch more opacity to be
+   visible at all against white rather than against navy. */
+:root[data-theme="light"] mark.hl[data-c="y"]{background:rgba(255,214,60,.55)}
+:root[data-theme="light"] mark.hl[data-c="g"]{background:rgba(88,232,146,.45)}
+:root[data-theme="light"] mark.hl[data-c="p"]{background:rgba(255,140,196,.42)}
+:root[data-theme="light"] mark.hl[data-c="b"]{background:rgba(96,178,255,.45)}
+
+/* ============================================================================
+   THE GREEK LAYER — 2026-07-28. Type, glyphs, and the artwork.
+   ============================================================================ */
+
+/* ---- glyphs -------------------------------------------------------------- */
+/* Stroked SVG inherits currentColor, so a glyph is the colour of its context
+   and needs no per-theme rule. Optical alignment is by eye against the cap
+   height of EB Garamond, which sits lower than a sans. */
+.gi{display:inline-block;vertical-align:-.17em;flex-shrink:0}
+h1 .gi,h2 .gi{vertical-align:-.1em;margin-right:.3em;opacity:.85}
+.nav-item .ic,.search-ic,.blip,.fl,.emo{display:inline-flex;align-items:center;justify-content:center}
+.mod-ic .gi{width:25px;height:25px}
+/* the glyph inside a coloured tile is on that colour, so it must be light */
+.mod-ic{color:#fff}
+
+/* ---- display type -------------------------------------------------------- */
+/* Cinzel is a titling face: it is drawn for capitals at large sizes with air
+   between the letters. Everything it touches is therefore tracked OUT, never
+   in, and h1 is uppercased. Body copy stays EB Garamond — Cinzel is unreadable
+   in a paragraph and was never meant for one. */
+.logo,.glogo,.gtitle,.mod-name,.grouphdr,.nav-label,.stat .n,.gate h2,.hp-name,.hp-sub{
+  font-family:var(--font-display);
+}
+.logo{letter-spacing:.06em;font-weight:700}
+.eyebrow{font-family:var(--font-display);letter-spacing:.16em;font-weight:600}
+.mod-name{letter-spacing:.045em;font-weight:700;font-size:17.5px;text-transform:uppercase}
+.grouphdr{letter-spacing:.13em;font-weight:600}
+.nav-label{letter-spacing:.19em}
+.stat .n{letter-spacing:.01em;font-weight:600}
+h2{font-family:var(--font-display);letter-spacing:.035em;font-weight:600}
+/* the question stem stays EB Garamond: it is the one place on the page that is
+   read for minutes at a time, and a titling face there would be punishing */
+.stem{font-family:var(--font-body)}
+
+/* ---- module artwork ------------------------------------------------------ */
+/* One painting per module, drained to greyscale and re-tinted in that module's
+   own colour with background-blend-mode:color — hue and saturation come from
+   the tint layer, luminance from the artwork. That is what makes four images
+   from four different generations read as one commissioned set.
+
+   THE WHOLE PAINTING IS SHOWN, NEVER CROPPED (user's decision, 2026-07-28).
+   It used to be a full-bleed background behind the text at background-size:
+   cover, which on a wide short card threw away about two thirds of a square
+   image — the figure's head and the entire lower half. The art now owns a
+   SQUARE panel of its own at the top of the card, so aspect-ratio:1 against a
+   square source means cover and contain are the same thing and nothing is lost.
+
+   .mod-grid is the reason this works at all: module cards drop to TWO per row
+   while every other card grid stays at three or more, which is what buys the
+   painting enough width to be worth showing whole. */
+/* Exactly two, not auto-fill: the content column is 1180px, so auto-fill would
+   put four across and the painting would be back to thumbnail size. The cap
+   keeps a card near 430px — big enough to read the artwork, short of absurd. */
+.mod-grid{grid-template-columns:repeat(2,1fr);max-width:880px}
+/* button.card sets padding:17px at (0,1,1) — .mod-card alone would lose to it */
+button.card.mod-card{display:flex;flex-direction:column;padding:0}
+/* A subject whose bank is not finished. It keeps its artwork and its place in
+   the grid — the syllabus is four subjects and the grid should say so — but it
+   sits back: no hover lift, no pointer, dimmed enough to read as not-yet
+   without reading as broken. The dashboard card is a <div>, so there is no
+   disabled state to style; this is what carries it. */
+.mod-card.locked{display:flex;flex-direction:column;padding:0;cursor:default}
+.mod-card.locked:hover{transform:none;box-shadow:none}
+/* Dim the PAINTING, not the words. This card used to carry opacity:.55, which
+   dims the text with everything else: measured against the page that put the
+   title, the meta line and the badge at 2.65:1, well under AA, at 10px on the
+   badge. The card still sits back — the artwork is what carries "not yet" —
+   and the reading stays readable. §6: measured, not habit. */
+.mod-card.locked .mod-art{opacity:.42}
+.mod-card.locked .mod-ic{opacity:.72}
+.mod-card.locked .mod-name{color:var(--ink-2)}
+/* The badge sits on the painting's top corner, not in the title row.
+   Measured at 360px: in the title row it needed 328px of a 294px row, so it
+   was clipped by the card on BOTH locked subjects, and Neuropsychiatry was
+   still 4px over at 390px. Nothing numeric could have caught that — the card
+   clips it, so the page never overflows and every width reported "fits". It
+   came out of a screenshot. Out of the flow it cannot compete with a long
+   subject name at any width, and both locked cards look identical.
+   The fill is --card, not --fill: --fill is a dark solid in BOTH themes and
+   --ink-3 on it is unreadable in light mode. */
+.mod-card>.soon{
+  position:absolute;top:11px;right:11px;z-index:2;
+  font-size:10px;letter-spacing:.08em;
+  text-transform:uppercase;padding:3px 8px;border-radius:var(--r-pill);
+  background:var(--card);border:1px solid var(--line);color:var(--ink-3)
+}
+/* Print drops .mod-art, so anchoring to a corner of nothing would land the
+   badge on top of the title. Put it back in the flow there. */
+@media print{
+  .mod-card>.soon{position:static;display:inline-block;margin:0 0 6px}
+}
+.mod-card>*{position:relative;z-index:1}
+.mod-art{
+  display:block;width:100%;aspect-ratio:1;flex:0 0 auto;
+  border-radius:calc(var(--r) - 1px) calc(var(--r) - 1px) 0 0;
+  background-image:linear-gradient(var(--c),var(--c)),var(--art);
+  background-size:cover;background-position:center;
+  background-blend-mode:color;
+  opacity:.9;
+  transition:opacity .5s cubic-bezier(.22,1,.36,1),filter .5s cubic-bezier(.22,1,.36,1);
+}
+/* the body sits under the art and carries the padding the card gave up */
+.mod-info{padding:15px 17px 17px;display:flex;flex-direction:column;gap:0}
+/* a hairline between art and text, so the painting ends deliberately */
+.mod-info::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--line-2);
+}
+button.card:hover .mod-art{opacity:1;filter:saturate(1.12)}
+/* on parchment the art is dark against a light card, so it needs less presence */
+:root[data-theme="light"] .mod-art{opacity:.82}
+:root[data-theme="light"] button.card:hover .mod-art{opacity:.95}
+/* The locked card dims its artwork, and the rule that says so is further up —
+   but the two rules directly above are (0,3,0) as well, and an equal-specificity
+   tie is broken by source order, so up there it loses. This is measured, not
+   deduced: a locked card in light mode computed .mod-art opacity .82, exactly
+   what an unlocked card computes. Dark mode was already correct at .42, because
+   dark is bare :root and carries no competing rule. .38 rather than .42 keeps
+   the same step down from light's own .82 baseline.
+   The theory view's locked card is a real <button class="card">, so the hover
+   rule undims it on touch and focus; these two hold it dimmed. */
+:root[data-theme="light"] .mod-card.locked .mod-art{opacity:.38}
+button.card.locked:hover .mod-art{opacity:.42}
+:root[data-theme="light"] button.card.locked:hover .mod-art{opacity:.38}
+/* the corner blob was drawn for a text-only card; over artwork it is noise */
+.mod-card::after{display:none}
+/* two 300px columns plus the gap need ~615px; below that go single file, where
+   a square panel at full phone width is already as large as anyone needs */
+@media(max-width:700px){
+  .mod-grid{grid-template-columns:1fr;max-width:420px}
+}
+
+/* ---- the Herophilus panel ------------------------------------------------ */
+.hero-panel{
+  display:grid;grid-template-columns:minmax(130px,168px) 1fr;gap:28px;align-items:center;
+  background:var(--sheen);background-color:var(--card);
+  border:1px solid var(--line-2);border-radius:var(--r);
+  padding:24px 30px;margin-bottom:30px;position:relative;overflow:hidden;
+  box-shadow:var(--pop) var(--sh),var(--glow);
+}
+/* a gold rule down the spine, the one ornament on the panel */
+.hero-panel::after{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,transparent,var(--gold),transparent);opacity:.65;
+}
+.hp-art img{
+  width:100%;display:block;border-radius:var(--r-2);border:1px solid var(--line-2);
+  box-shadow:0 10px 26px var(--sh);
+}
+/* the engraving is printed on parchment; on the dark theme it is lifted off the
+   page so it reads as an object rather than a bright rectangle */
+:root .hp-art img{filter:sepia(.2) contrast(1.02) brightness(.94)}
+:root[data-theme="light"] .hp-art img{filter:none}
+.hp-kicker{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-4);font-weight:700}
+.hp-name{font-size:33px;letter-spacing:.07em;text-transform:uppercase;margin:7px 0 3px;color:var(--tx);line-height:1}
+.hp-sub{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-text);margin-bottom:13px}
+.hp-txt p{margin:0 0 9px;color:var(--ink-2);font-size:15.5px;line-height:1.72;max-width:62ch}
+.hp-txt p:last-child{margin-bottom:0;color:var(--ink-3);font-style:italic}
+@media(max-width:720px){
+  .hero-panel{grid-template-columns:1fr;gap:18px;padding:22px}
+  .hp-art{max-width:150px}
+}
+
+/* ============================================================================
+   THE CLEPSYDRA — the study companion.
+
+   A κλεψύδρα is the Alexandrian water clock, which is why she is a clock and
+   why she wears a laurel crown. She is a projection: a warm amber figure with
+   scanlines, a flicker and an occasional glitch, standing on a pool of light.
+
+   She is ONE fixed element, so glass and filters are affordable here in a way
+   they are not on a list of cards. Deliberately no backdrop-filter even so —
+   she floats above a scrolling page, and a blurred backdrop on a fixed element
+   repaints every frame of that scroll.
+
+   Layering: she sits at 150, under the gate (200), confetti (250), modal (300)
+   and toast (400). A companion that covered a modal would be a bug.
+   ============================================================================ */
+.clep{
+  position:fixed;right:20px;bottom:18px;z-index:150;
+  display:flex;align-items:flex-end;gap:9px;
+  touch-action:none;                 /* the figure is a drag handle */
+  /* The figure is a PNG now, so it carries its own colour and needs no ramp.
+     Six shading tokens went with the SVG. These three are still hers because
+     the CHROME around her is drawn in CSS, not painted into the sprite. */
+  --cl-1:#ffb96a;                    /* bold text in her speech bubble */
+  --cl-2:#ef8228;                    /* the light pool, and tool-button hover */
+  --cl-w:#fff1da;                    /* the small dial on her collapsed pill */
+  --cl-glow:rgba(255,150,55,.5);
+  --cl-glow2:rgba(255,125,30,.26);
+  --cl-panel:rgba(24,15,4,.94);
+  --cl-text:#ffe4bd;
+  --cl-edge:rgba(255,190,110,.42);
+}
+.clep[hidden]{display:none}          /* display:flex would otherwise beat it */
+.cl-col{display:flex;flex-direction:column;align-items:flex-end;gap:7px}
+
+/* ---- the figure ---------------------------------------------------------
+   NINE poses of the user's OWN artwork, supplied 2026-08-02, cut out of their
+   white sheet and landed on one shared 360x360 canvas by scripts/poses*.ps1.
+   She faces the viewer in every one of them and wears her own gold wreath, so
+   the CSS stephane that used to be drawn here is GONE — leaving it would put a
+   second crown on her head.
+
+   ⚠️ THE CANVAS IS SQUARE NOW. .cl-body was 96x99 for the old 0.967 artwork;
+   a non-square box letterboxes her inside her own drag handle, silently and
+   with no error. Both the desktop and the mobile size must stay 1:1.
+
+   ⚠️ The box is BIGGER than the old one (112 vs 96) because the new canvas
+   has headroom: her figure occupies ~83% of it rather than filling it, so at
+   96px she rendered noticeably smaller than before. 112 x 0.83 restores her
+   old on-screen height.
+
+   TWO stacked images, not one. The swap needs the outgoing frame to stay on
+   screen while it is torn apart — see clepPose(). */
+.cl-body{position:relative;width:112px;height:112px;cursor:grab;flex:0 0 auto}
+.clep.drag .cl-body{cursor:grabbing}
+.cl-stage{position:absolute;inset:0;animation:clBob 3.6s ease-in-out infinite}
+.cl-fig{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
+  -webkit-user-drag:none;user-select:none;
+  filter:drop-shadow(0 0 4px var(--cl-glow)) drop-shadow(0 0 13px var(--cl-glow2))}
+.cl-ghost{opacity:0;pointer-events:none}   /* the outgoing frame, only alive mid-swap */
+
+/* ---- the pose change ----------------------------------------------------
+   A hologram does not dissolve, it FAILS and re-forms. So the outgoing pose is
+   not cross-faded out: it is shunted sideways, squashed on the vertical and
+   dropped in steps, while the incoming pose comes up underneath it doing the
+   same thing out of phase. The existing burst (.gl) rides along on top and
+   supplies the shake and the red/cyan split, so the two systems stay in sync
+   by construction rather than by matching two sets of numbers.
+
+   .46s is deliberate: shorter read as a flicker rather than a change of pose,
+   and longer started to feel like a transition the reader has to wait out. */
+@keyframes clSwapOut{
+  0%  {opacity:1;  transform:translate3d(0,0,0)     scaleY(1)}
+  18% {opacity:1;  transform:translate3d(-5px,0,0)  scaleY(1.05)}
+  34% {opacity:.85;transform:translate3d(6px,0,0)   scaleY(.94)}
+  52% {opacity:.35;transform:translate3d(-3px,0,0)  scaleY(1.08)}
+  70% {opacity:.12;transform:translate3d(2px,0,0)   scaleY(.97)}
+  100%{opacity:0;  transform:none}
+}
+@keyframes clSwapIn{
+  0%  {opacity:0;  transform:translate3d(4px,0,0)   scaleY(1.06)}
+  30% {opacity:.18;transform:translate3d(-4px,0,0)  scaleY(.95)}
+  55% {opacity:.6; transform:translate3d(3px,0,0)   scaleY(1.04)}
+  78% {opacity:.92;transform:translate3d(-1px,0,0)  scaleY(.99)}
+  100%{opacity:1;  transform:none}
+}
+/* the lit slice jumps four times across the swap instead of sitting still */
+@keyframes clTear{
+  0%{top:14%} 25%{top:63%} 50%{top:31%} 75%{top:79%} 100%{top:46%}
+}
+.clep.swap .cl-ghost{animation:clSwapOut .46s cubic-bezier(.3,.9,.3,1) forwards}
+.clep.swap .cl-main {animation:clSwapIn  .46s cubic-bezier(.3,.9,.3,1) forwards}
+.clep.swap .cl-band {animation:clTear    .46s steps(4,end)}
+.clep.swap .cl-scan {opacity:.9}
+
+/* The light pool she stands on. It was part of the artwork's background and
+   was removed with it, so it is redrawn here as a DOM element — it has to
+   pulse with the bob, and it must not be baked into the sprite or it would
+   drag a grey ellipse onto the parchment theme.
+   ⚠️ bottom:9%, not 0. On the shared canvas her feet land at 89% of the
+   height, not at the very bottom; a pool at the box edge floats below her. */
+.cl-base{
+  position:absolute;left:50%;bottom:9%;transform:translateX(-50%);
+  width:56%;height:9px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(50% 50% at 50% 50%,var(--cl-2),transparent 72%);
+  opacity:.3;animation:clPool 3.6s ease-in-out infinite;
+}
+
+/* ---- she is alive ------------------------------------------------------- */
+@keyframes clBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+/* The pool is centred with translateX(-50%), so every keyframe has to RESTATE
+   it — a bare scaleX() replaces the whole transform and shunts the ellipse
+   half its width to the right. */
+@keyframes clPool{
+  0%,100%{opacity:.3;transform:translateX(-50%) scaleX(1)}
+  50%    {opacity:.42;transform:translateX(-50%) scaleX(1.07)}
+}
+/* Blink, wave and the sweeping hands are GONE with the SVG. They were per-part
+   animations and a flat sprite has no parts; the artwork has no hands to sweep
+   either. What still carries her is on the container, not the drawing: the bob,
+   the scanlines, the glitch bursts and the glow. The session time now lives
+   only in the HUD pill, which is where a reader actually looks for it. */
+
+/* ---- projection artefacts ----------------------------------------------- */
+.cl-scan{
+  position:absolute;inset:-6px;pointer-events:none;opacity:.55;mix-blend-mode:screen;
+  background:repeating-linear-gradient(180deg,rgba(255,214,150,.17) 0 1px,transparent 1px 3px);
+  animation:clScan 2.4s linear infinite;
+  -webkit-mask-image:radial-gradient(62% 56% at 50% 44%,#000 38%,transparent 80%);
+  mask-image:radial-gradient(62% 56% at 50% 44%,#000 38%,transparent 80%);
+}
+@keyframes clScan{from{background-position-y:0}to{background-position-y:3px}}
+/* a lit slice that jumps to a new height on each burst — the height is set by
+   JS, because a fixed keyframe position reads as a loop rather than a fault */
+.cl-band{
+  position:absolute;left:-8px;right:-8px;top:var(--cl-band-y,42%);height:7px;
+  background:linear-gradient(90deg,transparent,rgba(255,224,178,.55),transparent);
+  opacity:0;pointer-events:none;mix-blend-mode:screen;
+}
+@keyframes clGlitch{
+  0%{transform:translate3d(0,0,0)}   20%{transform:translate3d(-2.5px,1px,0)}
+  40%{transform:translate3d(2px,-1px,0)} 60%{transform:translate3d(-1px,0,0)}
+  80%{transform:translate3d(1.5px,1px,0)} 100%{transform:translate3d(0,0,0)}
+}
+.clep.gl .cl-band{opacity:1}
+.clep.gl .cl-stage{animation:clGlitch .18s steps(3,end) infinite}
+.clep.gl .cl-fig{
+  filter:drop-shadow(3px 0 rgba(255,72,60,.6)) drop-shadow(-3px 0 rgba(80,220,255,.5))
+         drop-shadow(0 0 6px var(--cl-glow));
+}
+
+/* ---- what she says ------------------------------------------------------ */
+.cl-say{
+  position:relative;max-width:270px;min-width:0;
+  background:var(--cl-panel);border:1px solid var(--cl-edge);border-radius:var(--r-3);
+  padding:11px 30px 12px 14px;
+  color:var(--cl-text);font:400 13.3px/1.58 var(--font-body);
+  box-shadow:0 12px 32px var(--sh-deep),0 0 20px rgba(255,150,50,.14);
+  opacity:0;transform:translateY(6px) scale(.97);transform-origin:100% 100%;
+  transition:opacity .26s cubic-bezier(.22,1,.36,1),transform .26s cubic-bezier(.22,1,.36,1);
+  pointer-events:none;
+}
+.cl-say.show{opacity:1;transform:none;pointer-events:auto}
+.cl-say b,.cl-say strong{color:var(--cl-1);font-weight:700}
+.cl-say::after{                       /* the tail, pointing at her */
+  content:"";position:absolute;right:-6px;bottom:16px;width:10px;height:10px;
+  background:var(--cl-panel);border-right:1px solid var(--cl-edge);
+  border-bottom:1px solid var(--cl-edge);transform:rotate(-45deg);
+}
+.cl-x{
+  position:absolute;top:6px;right:6px;width:19px;height:19px;border:0;border-radius:50%;
+  background:transparent;color:var(--cl-text);opacity:.5;cursor:pointer;line-height:1;
+  font-size:14px;display:flex;align-items:center;justify-content:center;
+}
+.cl-x:hover{opacity:1;background:rgba(255,190,110,.14)}
+
+/* ---- the readout and controls ------------------------------------------- */
+.cl-hud{
+  display:none;align-items:center;gap:7px;padding:5px 11px;border-radius:var(--r-pill);
+  background:var(--cl-panel);border:1px solid var(--cl-edge);color:var(--cl-text);
+  font:700 13px/1 var(--font-display);letter-spacing:.07em;
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+  box-shadow:0 6px 18px var(--sh-soft);
+}
+.clep.timed .cl-hud{display:inline-flex}
+.cl-hud .ph{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;opacity:.72;font-weight:700}
+.cl-hud.rest{--cl-edge:rgba(127,174,111,.5)}
+.cl-tools{display:flex;gap:5px;opacity:0;transition:opacity .2s}
+.clep:hover .cl-tools,.clep:focus-within .cl-tools{opacity:1}
+.cl-tool{
+  width:23px;height:23px;border-radius:50%;cursor:pointer;line-height:1;
+  background:var(--cl-panel);border:1px solid var(--cl-edge);color:var(--cl-text);
+  font:700 12px/1 var(--font-body);display:flex;align-items:center;justify-content:center;
+}
+.cl-tool:hover{background:var(--cl-2);color:#241502;border-color:var(--cl-2)}
+/* A phone has no hover, so the only thing left to reveal these is
+   :focus-within — which means blind-tapping a control you cannot see to find
+   out where it is. Where there is no pointer to hover with, show them, and
+   give them and the dismiss a real target. 36px with an 8px gap is a 44px
+   pitch, so the invisible 44px hit areas tile without overlapping: two
+   overlapping targets would just move the mis-tap somewhere else. */
+@media(hover:none){
+  .cl-tools{opacity:1;gap:8px}
+  .cl-tool{width:36px;height:36px;font-size:15px;position:relative}
+  /* .cl-x is NOT in that list on purpose: it is position:absolute at a corner
+     of the speech bubble, so it already anchors its own ::after, and setting
+     it relative here would drop it back into the flow. */
+  .cl-tool::after,.cl-x::after{
+    content:"";position:absolute;left:50%;top:50%;width:44px;height:44px;
+    transform:translate(-50%,-50%);
+  }
+}
+
+/* ---- collapsed ---------------------------------------------------------- */
+.cl-mini{
+  display:none;align-items:center;gap:8px;padding:6px 12px 6px 7px;border-radius:var(--r-pill);
+  background:var(--cl-panel);border:1px solid var(--cl-edge);color:var(--cl-text);
+  cursor:pointer;font:700 13px/1 var(--font-display);letter-spacing:.06em;
+  font-variant-numeric:tabular-nums;box-shadow:0 8px 22px var(--sh-soft);
+}
+.cl-mini svg{filter:drop-shadow(0 0 5px var(--cl-glow))}
+.clep.mini .cl-body,.clep.mini .cl-col{display:none}
+.clep.mini .cl-mini{display:inline-flex}
+
+/* ---- docked to the other corner -----------------------------------------
+   On the question screens she stands bottom-LEFT (user, 2026-08-02). Skip and
+   Next are pushed hard against the RIGHT edge of the question card — .qactions
+   does it with margin-left:auto — so in her usual corner she was sitting on
+   top of the two buttons the reader presses most.
+
+   The row is REVERSED rather than the figure being moved on its own: her
+   bubble, readout and tools all hang off her, and left un-flipped they would
+   run off the left edge of the window. Flipping puts the figure on the outside
+   and everything that grows on the inside, where there is room.
+
+   These rules only need to beat the base corner when nothing is stored;
+   clepPlace() writes inline left/top when she has been dragged, and inline
+   always wins. ------------------------------------------------------------ */
+.clep.left{flex-direction:row-reverse;right:auto;left:20px}
+.clep.left .cl-col{align-items:flex-start}
+.clep.left .cl-say{transform-origin:0 100%}
+.clep.left .cl-say::after{right:auto;left:-6px;transform:rotate(135deg)}
+
+/* ---- light: only her CHROME re-themes now -------------------------------
+   The figure itself does NOT change between themes and must not be made to:
+   it is one fixed piece of artwork, and a filter that "adapts" it for
+   parchment would be repainting the user's drawing. What still flips is the
+   panel, the text, the edge and the halo — all CSS around her. */
+:root[data-theme="light"] .clep{
+  --cl-1:#a4540a; --cl-2:#c2670f; --cl-w:#fffaf0;
+  --cl-glow:rgba(196,100,20,.26); --cl-glow2:rgba(196,100,20,.12);
+  --cl-panel:#fff6e6; --cl-text:#4a2c07; --cl-edge:rgba(164,84,10,.42);
+}
+:root[data-theme="light"] .cl-say b,:root[data-theme="light"] .cl-say strong{color:#8a4408}
+:root[data-theme="light"] .cl-scan{opacity:.3;mix-blend-mode:multiply}
+
+/* ---- small screens: she gets out of the way ----------------------------- */
+@media(max-width:700px){
+  .clep{right:12px;bottom:12px}
+  .clep.left{right:auto;left:12px}
+  .cl-body{width:84px;height:84px}   /* SQUARE, like the desktop size — see above */
+  .cl-say{max-width:min(64vw,240px);font-size:12.6px}
+}
+
+/* ---- opt-outs ----------------------------------------------------------- */
+/* Reduced motion keeps the companion but stops every loop, including the ones
+   JS starts: clepGlitch() checks the same query before scheduling a burst. */
+@media (prefers-reduced-motion:reduce){
+  .cl-stage,.cl-base,.cl-scan{animation:none!important}
+  .clep.gl .cl-stage{animation:none!important}
+  .clep.gl .cl-fig{filter:drop-shadow(0 0 4px var(--cl-glow))!important}
+  /* the pose still changes — it just cuts, with no tear and no burst */
+  .clep.swap .cl-ghost,.clep.swap .cl-main,.clep.swap .cl-band{animation:none!important}
+  .cl-ghost{opacity:0!important}
+  .cl-band{display:none}
+  .cl-say{transition:none}
+}
+@media print{.clep{display:none!important}}
+
+/* ---- the study session screen ------------------------------------------- */
+.sess-live{
+  display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;
+  background:var(--sheen);background-color:var(--card);
+  border:1px solid var(--line-2);border-radius:var(--r);
+  padding:24px 28px;margin-bottom:28px;box-shadow:var(--pop) var(--sh),var(--glow);
+}
+.sr-wrap{position:relative;width:172px;height:172px;flex:0 0 auto}
+.sr-ring{display:block;width:100%;height:100%}
+.sr-mid{position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:5px;pointer-events:none}
+.sr-time{font:700 34px/1 var(--font-display);letter-spacing:.03em;color:var(--tx);
+  font-variant-numeric:tabular-nums}
+.sr-ph{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);
+  font-weight:700;text-align:center;max-width:124px;line-height:1.45}
+.sess-side{min-width:0}
+/* The shared .g3 asks for a 258px minimum column, which is right for the full
+   page and wrong beside a 172px ring. The two session tiles stay side by side
+   inside the panel, and only collapse on a phone. */
+.sess-live .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.sess-live .stat{padding:13px 14px}
+.sess-live .stat .n{font-size:25px}
+.sess-live .stat .emo{right:9px;top:8px;font-size:16px}
+.sess-setup h2{margin:23px 0 10px;font-size:15px}
+.sess-setup h2:first-of-type{margin-top:0}
+.sess-sum{
+  margin:21px 0 16px;padding:13px 16px;border-radius:var(--r-3);
+  background:var(--tint);border:1px solid var(--line);color:var(--ink-2);font-size:14px;
+}
+.sess-sum b{color:var(--tx)}
+@media(max-width:760px){
+  .sess-live{grid-template-columns:1fr;justify-items:center}
+  .sess-side{width:100%}
+}
+@media(max-width:620px){
+  .sess-live .grid{grid-template-columns:1fr}
+}
+
+/* ---- the backup status light -------------------------------------------- */
+.bak-btn{position:relative}
+.bak-dot{
+  position:absolute;right:6px;top:6px;width:6px;height:6px;border-radius:50%;
+  background:var(--ok);box-shadow:0 0 0 2px var(--bg-2);
+}
+.bak-dot.warn{background:var(--bad)}
+/* A mark keeps the warning readable when the dot's colour is missed. */
+.bak-dot.warn::after{
+  content:"!";position:absolute;inset:-4px;display:flex;align-items:center;justify-content:center;
+  font-size:8px;line-height:1;font-weight:900;color:var(--card);
+}
+.bak-list{display:flex;flex-direction:column;gap:7px;margin-top:15px;max-height:272px;overflow:auto}
+.bak-row{
+  display:flex;align-items:center;gap:13px;padding:9px 13px;border-radius:var(--r-3);
+  background:var(--tint);border:1px solid var(--line);
+}
+.bak-when{font-weight:700;font-size:13.5px;color:var(--tx);flex:0 0 auto}
+.bak-meta{font-size:12px;color:var(--ink-3);flex:1;min-width:0}
