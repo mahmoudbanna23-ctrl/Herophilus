@@ -1,0 +1,43 @@
+{
+  "source_pdf": "Semester 8/Opthalmo/Questions/Opthalmology endpoint.pdf",
+  "requested_range": [
+    1245,
+    1331
+  ],
+  "model": "gemini/gemini-3.1-flash-lite (direct gateway credential; p.1324-1331 finished after the openrouter route ran out of credit)",
+  "start_time": "2026-09-19",
+  "end_time": "2026-09-20",
+  "pages_completed": 87,
+  "parse_errors": 0,
+  "http_errors": 0,
+  "stopped_by_429": false,
+  "model_note": "gateway saturated by another chat (chat_admission_busy, cooldown 429s); retried per page, cost 0",
+  "reread": "Three independent Sonnet (refuter) subagents re-read pdf 1245-1281 (classification and figure flags), 1282-1306 and 1307-1331 against the rendered images 2026-09-20: all 25 keys agree with the machine reading, 25 questions confirmed, no MCQ on any theory page.",
+  "numbering_note": "Printed question number 16 appears on two different questions (pdf 1312-1313 diabetic retinopathy risk at diagnosis of type 2 DM; pdf 1314-1315 hypertensive male with copper-wire arterioles); printed numbers otherwise run 1..24, so 25 questions. pdf 1245-1281 are 37 theory slide pages (not questions); questions begin at pdf 1282 after a Questions divider slide.",
+  "printed_typos_kept": [
+    "p.1316-1317 stem \"prese11ts\" (printed)",
+    "p.1320-1321 stem \"hemorhage\" (printed)"
+  ],
+  "repairs": [
+    "p.1297: stem \"check-up.\nFundoscopy\" -> \"check-up. Fundoscopy\"",
+    "p.1297: stem \"is\nstill\" -> \"is still\"",
+    "p.1316: stem \"presel1ts\" -> \"prese11ts\"",
+    "p.1317: stem \"presel1ts\" -> \"prese11ts\"",
+    "p.1320: stem \"hemorrhage\" -> \"hemorhage\"",
+    "p.1321: stem \"hemorrhage\" -> \"hemorhage\"",
+    "p.1327: stem missing -> printed stem (same as p.1326)",
+    "p.1327: letter prefixes stripped",
+    "p.1246: figure true->false (table page)",
+    "p.1247: figure true->false (table page)",
+    "p.1249: figure true->false (table page)",
+    "p.1254: figure true->false (table page)",
+    "p.1255: figure true->false (table page)",
+    "p.1258: figure true->false (table page)",
+    "p.1265: figure true->false (table page)",
+    "p.1267: figure true->false (table page)",
+    "p.1268: figure true->false (table page)",
+    "p.1269: figure true->false (table page)",
+    "p.1271: figure true->false (table page)",
+    "p.1280: figure true->false (table page)"
+  ]
+}
