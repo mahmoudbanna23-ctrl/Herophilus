@@ -1,0 +1,329 @@
+{
+  "source_pdf": "Semester 8/Opthalmo/Questions/Opthalmology endpoint.pdf",
+  "requested_range": [
+    1098,
+    1149
+  ],
+  "model": "work-vision",
+  "start_time": "2026-09-20T07:50:59.475Z",
+  "end_time": "2026-09-20T07:59:12.714Z",
+  "pages_completed": 52,
+  "parse_errors": 0,
+  "http_errors": 0,
+  "stopped_by_429": false,
+  "pages": [
+    {
+      "page": 1098,
+      "image": "render\\p-1098.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1099,
+      "image": "render\\p-1099.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1100,
+      "image": "render\\p-1100.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1101,
+      "image": "render\\p-1101.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1102,
+      "image": "render\\p-1102.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1103,
+      "image": "render\\p-1103.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1104,
+      "image": "render\\p-1104.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1105,
+      "image": "render\\p-1105.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1106,
+      "image": "render\\p-1106.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1107,
+      "image": "render\\p-1107.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1108,
+      "image": "render\\p-1108.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1109,
+      "image": "render\\p-1109.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1110,
+      "image": "render\\p-1110.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1111,
+      "image": "render\\p-1111.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1112,
+      "image": "render\\p-1112.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1113,
+      "image": "render\\p-1113.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1114,
+      "image": "render\\p-1114.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1115,
+      "image": "render\\p-1115.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1116,
+      "image": "render\\p-1116.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1117,
+      "image": "render\\p-1117.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1118,
+      "image": "render\\p-1118.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1119,
+      "image": "render\\p-1119.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1120,
+      "image": "render\\p-1120.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1121,
+      "image": "render\\p-1121.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1122,
+      "image": "render\\p-1122.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1123,
+      "image": "render\\p-1123.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1124,
+      "image": "render\\p-1124.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1125,
+      "image": "render\\p-1125.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1126,
+      "image": "render\\p-1126.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1127,
+      "image": "render\\p-1127.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1128,
+      "image": "render\\p-1128.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1129,
+      "image": "render\\p-1129.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1130,
+      "image": "render\\p-1130.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1131,
+      "image": "render\\p-1131.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1132,
+      "image": "render\\p-1132.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1133,
+      "image": "render\\p-1133.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1134,
+      "image": "render\\p-1134.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1135,
+      "image": "render\\p-1135.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1136,
+      "image": "render\\p-1136.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1137,
+      "image": "render\\p-1137.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1138,
+      "image": "render\\p-1138.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1139,
+      "image": "render\\p-1139.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1140,
+      "image": "render\\p-1140.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1141,
+      "image": "render\\p-1141.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1142,
+      "image": "render\\p-1142.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1143,
+      "image": "render\\p-1143.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1144,
+      "image": "render\\p-1144.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1145,
+      "image": "render\\p-1145.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1146,
+      "image": "render\\p-1146.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1147,
+      "image": "render\\p-1147.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1148,
+      "image": "render\\p-1148.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1149,
+      "image": "render\\p-1149.png",
+      "status": 200,
+      "parse_error": false
+    }
+  ],
+  "reread": "2026-09-20: two independent Sonnet refuter runs re-read all 52 pages against the 150 dpi renders. pdf 1098-1123: 23 clean, 3 numeric_note gaps on theory pages 1105, 1107, 1108 (flag field only). pdf 1124-1149: 26 clean. No stem, option, key or page_type fault. printed_q on 1132, 1140, 1146, 1148 holds stem text instead of the bare number. Q9 (1134/1135) and Q15 (1146/1147) are printed twice in the source. pdf 1149 is the last page of section 16."
+}

@@ -1210,3 +1210,17 @@ Chapter `op-glauc`, source `Opthalmology endpoint.pdf` pdf 788-849, 26 staged ro
   systemic-17 fibrinoid necrosis (L23), systemic-19 PRP and anti-VEGF statements (L19.1), systemic-22 microaneurysm
   and hard-exudate descriptions (L19.1); trauma-5 blacksmith and low-pressure inference also sits without a tag. Add
   cites if a later pass touches those entries.
+
+**2026-09-20, s16 Pediatric Ophthalmology STAGED (first job on the rewritten routing ladder).**
+- Rung 2: `Tools/omniroute/stage-pages.mjs` with `STAGE_MODEL=work-vision`, pdf 1098-1149 of
+  `Opthalmology endpoint.pdf`. 1 dispatch ok, 0 failed: 52 of 52 pages HTTP 200, 0 parse errors, no 429.
+  Page types: 20 theory, 16 question_unmarked, 16 question_marked.
+- Checked against the page images by two independent Sonnet refuter runs (26 pages each): 49 clean; the
+  only faults are three incomplete `numeric_note` flags on theory pages 1105, 1107, 1108. No stem, option,
+  key or page_type fault. `printed_q` on 1132, 1140, 1146, 1148 holds stem text, not the bare number.
+  Q9 (1134/1135) and Q15 (1146/1147) are each printed twice in the source. pdf 1149 closes the section.
+- Files: `content/ophtho/qb-pages/oph-ep-p1-s16-pediatric-ophthalmology.staging.json` and `.manifest.json`
+  (check record in its `reread` field). Renders died with the scratchpad.
+- Not done: no chapter or group for s16 in `modules.js`, no draft, no sweep, no splice, no commit.
+- Next: add the s16 chapter and group, draft from the staging, six-stage sweep against House ch.16 and
+  Grade Gain topic 16, then splice. s20 (pdf 1332-1373) is still unstaged.
