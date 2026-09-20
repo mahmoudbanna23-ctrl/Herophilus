@@ -205,121 +205,56 @@ const MODULES = [
       ['op-red-mgmt','Red eye — danger signals, referral and treatment']]}
   ]},
   {id:'neuropsych', term:'y4s2', name:'Neuropsychiatry', icon:'brain', color:'var(--neuro)', hex:'#6d4c7d', groups:[
-    {name:'Psychiatry', chapters:[
-      ['ps-interview','Interview Assessment'],['ps-osce','OSCE demonstration'],
-      ['ps-somato','Somatoform disorders'],['ps-symptom','Symptomatology'],
-      ['ps-psychoed','Psychoeducation and Myths'],['ps-anxiety','Anxiety Disorders'],
-      /* Split 2026-08-22, AFTER printing 14 pp — one past the 13-page hard
-         shape, with 132 words stranded on page 14. Two genuine second copies
-         were trimmed FIRST and recovered only 82 words of paper; 50 words still
-         sat on page 14 and nothing left was duplication, so the chapter split.
-         The seam is the DECK'S OWN `PART ONE` / `PART TWO` boundary: 3,139 words
-         of OCD against 1,850 of PTSD, at the chapter's measured 306 w/pp.
-         ⚠ Unlike nr-lmn/nr-nerve this splits a SINGLE deck. §4's merge rule
-         joins one TOPIC taught over two lectures and says nothing about two
-         disorders taught in one; ≤13 pp measured by printing is a user ruling.
-         ps-ocd keeps its id, so npqb-ps-7 does not move. SCHEDULE untouched. */
-      ['ps-ocd','Obsessive-compulsive disorder'],
-      ['ps-ptsd','PTSD and acute stress disorder'],
-      ['ps-mood','Mood Disorders'],
-      /* Split 2026-08-23, FORECAST BEFORE WRITING — the second such split in the
-         module, after nr-movement/nr-epilepsy. The evidence was in hand first:
-         book Psychiatry ch.7 runs to 4,075 body words over eleven printed pages
-         (228-238), which is more source than any single chapter in this module
-         has ever been written from. At the module's measured 281-343 w/pp and
-         its measured 150-200 % inflation, one chapter forecasts at 20-30 pp —
-         two to three times the ≤13 hard shape. No trim reaches that.
-         ⚠ The deck does NOT rescue it: L11,12 is 2,251 words of which 1,933 —
-         86 % — are FIVE case vignettes. Its teaching content is ~320 words.
-         The seam is `Course & Prognosis` on printed 233, contiguous in the book
-         and needing no reordering, and it splits the sources almost evenly:
-           ps-psychosis  book 228 - 233 upper (2,131 w) + the deck's symptom
-                         teaching — what schizophrenia is and how it presents
-           ps-schizmgmt  book 233 lower - 238 (1,944 w) + the deck's management
-                         slides and all five cases — how it runs and what to do
-         ⚠ ps-schizmgmt also inherits the ANTIPSYCHOTIC block on printed 236-238,
-         which is the content book ch.11 defers to with "(See 'schizophrenia'
-         lecture)". ps-pharm points at it rather than repeating it — declared in
-         both registers. ps-psychosis keeps its id; neither half has a question,
-         so nothing moves. SCHEDULE untouched. */
-      ['ps-psychosis','Psychosis and schizophrenia: cause and presentation'],
-      ['ps-schizmgmt','Schizophrenia: course, differential and management'],
-      ['ps-geri','Geriatric Psychiatry'],['ps-child','Child Psychiatry'],['ps-sud','Substance use disorder'],
-      ['ps-emerg','Emergency Psychiatry'],['ps-pharm','Psychopharmacology'],
-      ['ps-devices','Devices in Psychiatry'],['ps-therapy','Psychotherapy']]},
+    /* Reordered 2026-09-20 to the neuropsychiatry book's TOC order
+       (content\neuro\book-map.md). The book is two halves - NEUROLOGY (printed
+       1-176) then PSYCHIATRY (177-277) - which are the book's own top level, so
+       the two groups stay and are ordered Neurology-first to match the book;
+       chapters are ordered within each to that half's TOC. Ids and titles
+       UNCHANGED. Several chapters are Book-project chapter splits; the split
+       rationale lives in the Book project's theory-plan.md section 4 and in this
+       file's git history (before 2026-09-20), not inline here any more.
+       Placements by title-sense, order only: nr-exam (book ch2 examination),
+       nr-delirium (book Coma ch11 / Psych Dementia ch8), the ps-interview /
+       ps-symptom / ps-osce trio (all book Psych ch1). Coverage gaps: ps-osce has
+       no dedicated book chapter; ps-geri only via Psych ch8 Dementia and delirium. */
     {name:'Neurology', chapters:[
       ['nr-intro','Introduction to neurology and localization'],
       ['nr-exam','The neurological examination'],
-      ['nr-ms','MS and demyelinating disorders'],
-      /* Split 2026-08-22, FORECAST rather than found: theory-plan.md §4 called it
-         the module's only forecast split, and the old title admitted it —
-         "Movement disorders / Epilepsy" are TWO TOPICS, not one topic taught
-         over two lectures, so §4's merge rule never applied. The seam is the
-         deck boundary: L3) MOVEMENT DISORDERS 2,699 w against L4)
-         Seizures_Epilepsy 2,321 w, forecast 15.0 pp together at ÷335 and past
-         the 13-page hard shape on every divisor tried. Split BEFORE writing,
-         which is what §4 asks for where the evidence is already in hand.
-         nr-movement keeps its id, so npqb-nr-113 (festinant gait) does not
-         move. SCHEDULE untouched — it carries no chapter ids. */
-      ['nr-movement','Movement disorders'],
+      ['nr-stroke','Cerebrovascular stroke'],
       ['nr-epilepsy','Seizures and epilepsy'],
-      /* Split 2026-08-22, AFTER printing 17 pp — four past the 13-page hard
-         shape. The seam is the DECK BOUNDARY and it is contiguous: L5) Muscle
-         Disease against L6) Peripheral neuropathy, 3,481 words against 2,134 at
-         the chapter's own measured rate of 296 w/pp. This REVERSES the original
-         nr-lmn1+2 merge noted at the head of this file: the merge rule joins one
-         topic taught over two lectures, and these are two topics. nr-lmn keeps
-         its id, so the module's only LMN question, npqb-nr-118 (waddling gait),
-         does not move. SCHEDULE is untouched — it carries no chapter ids, and the
-         nr-hemi/nr-para split of 2026-08-18 left its wording alone too. */
-      ['nr-lmn','Muscle disease and the neuromuscular junction'],
-      ['nr-nerve','Peripheral neuropathy and Guillain-Barré'],
-      ['nr-cns','CNS infections'],
-      ['nr-cranial','Cranial nerves disorders'],['nr-delirium','Delirium'],
+      ['nr-hemi','Hemiplegia and hemiparesis'],
+      ['nr-para','Paraparesis and ataxia'],
+      ['nr-headache','Headache'],
+      ['nr-ms','MS and demyelinating disorders'],
       ['nr-coma','Coma'],
       ['nr-comapproach','Approach to the comatose patient'],
-      ['nr-headache','Headache'],['nr-stroke','Cerebrovascular stroke'],
-      /* Split 2026-08-23, FORECAST BEFORE WRITING — the third in the module.
-         Book Neurology ch.16 is 6,322 body words over SIXTEEN printed pages
-         (157-172), the longest book chapter this module has drawn on, and the
-         deck adds 1,742. 8,064 source words forecast well past 20 pp against a
-         <=13 hard shape; no trim reaches that.
-         The seam is REGIONAL and it is the book's own: printed 157-165 is low
-         back and sciatica, printed 166-172 is neck and brachialgia — and the
-         cervical end-matter (specific tests, `Investigations for neck pain`,
-         `Treatment of Neck Pain`) is cervical throughout, so nothing general
-         has to be divided.
-           nr-backpain  book 157-165 (3,489 w) + the deck's back-pain blocks
-           nr-neckpain  book 166-172 (2,833 w) + the deck's neck block
-         ⚠ THE DECK INTERLEAVES AND THE BOOK DOES NOT: L11 runs back pain ->
-         neck -> low back, so each new chapter draws two non-contiguous deck
-         blocks. That is allowed here because nothing is REORDERED WITHIN a
-         chapter — the ophthalmology rule rejects a seam that would reorder an
-         already-written chapter, and these are written fresh. Recorded so the
-         choice is visible rather than silent.
-         ⚠ The app's title was right and the book's contents page is wrong: the
-         ch.16 opener and all 15 interior running heads print `cervical and low
-         back pain`, and the contents page's `Cranial and Low Back pain` is a
-         typo. Neither is corrected; the titles below follow the chapter.
-         Neither half has a question, so nothing moves. SCHEDULE untouched. */
+      ['nr-delirium','Delirium'],
+      ['nr-movement','Movement disorders'],
+      ['nr-cns','CNS infections'],
+      ['nr-lmn','Muscle disease and the neuromuscular junction'],
+      ['nr-nerve','Peripheral neuropathy and Guillain-Barré'],
+      ['nr-cranial','Cranial nerves disorders'],
       ['nr-backpain','Low back pain and sciatica'],
-      ['nr-neckpain','Neck pain and brachialgia'],
-      /* Split 2026-08-18, AFTER printing 14 pp — past the 13-page hard shape.
-         The chapter's own title named three topics, and the seam falls exactly
-         between the first and the other two, at hem-6/hem-7: 1,635 words of
-         hemiplegia against 3,052 of paraplegia and ataxia. At the measured
-         rate (4,687 w printed 14 pp = 335 w/pp) that is ~4.9 and ~9.1 pages.
-         Only ONE question sat on both sides — npqb-nr-107, Brown-Sequard —
-         and it stays with nr-hemi, where hem-6 teaches it directly; hem-11's
-         link to it is replaced by a prose cross-reference so the module-wide
-         wrong-chapter check stays clean.
-         ⚠️ The writer proposed this seam and a second at hem-13/hem-14. The
-         second was rejected: it leaves 589 words, below the §14 floor of 600.
-         It also warned half B would still be over, on a ÷240 forecast of 12.6
-         — the estimator over-predicted this chapter by 5.5 pages, its worst
-         miss in the project, so the forecast was not allowed to decide. */
-      ['nr-hemi','Hemiplegia and hemiparesis'],
-      ['nr-para','Paraparesis and ataxia']]}
+      ['nr-neckpain','Neck pain and brachialgia']]},
+    {name:'Psychiatry', chapters:[
+      ['ps-interview','Interview Assessment'],
+      ['ps-symptom','Symptomatology'],
+      ['ps-osce','OSCE demonstration'],
+      ['ps-psychoed','Psychoeducation and Myths'],
+      ['ps-anxiety','Anxiety Disorders'],
+      ['ps-ocd','Obsessive-compulsive disorder'],
+      ['ps-ptsd','PTSD and acute stress disorder'],
+      ['ps-mood','Mood Disorders'],
+      ['ps-somato','Somatoform disorders'],
+      ['ps-child','Child Psychiatry'],
+      ['ps-psychosis','Psychosis and schizophrenia: cause and presentation'],
+      ['ps-schizmgmt','Schizophrenia: course, differential and management'],
+      ['ps-geri','Geriatric Psychiatry'],
+      ['ps-sud','Substance use disorder'],
+      ['ps-emerg','Emergency Psychiatry'],
+      ['ps-pharm','Psychopharmacology'],
+      ['ps-devices','Devices in Psychiatry'],
+      ['ps-therapy','Psychotherapy']]}
   ]},
   {id:'pediatrics', term:'y4s2', name:'Pediatrics', icon:'teddy', color:'var(--peds)', hex:'#2e5f8a', groups:[
     /* Remapped 2026-09-20 to the paediatrics book's chapter order (Part 1 then
