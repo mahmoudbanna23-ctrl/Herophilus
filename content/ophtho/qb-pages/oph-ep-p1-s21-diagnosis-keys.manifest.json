@@ -1,0 +1,25 @@
+{
+  "source_pdf": "Semester 8/Opthalmo/Questions/Opthalmology endpoint.pdf",
+  "requested_range": [
+    1374,
+    1390
+  ],
+  "model": "gemini/gemini-3.1-flash-lite (direct gateway credential)",
+  "start_time": "2026-09-20",
+  "end_time": "2026-09-20",
+  "pages_completed": 17,
+  "parse_errors": 0,
+  "http_errors": 0,
+  "stopped_by_429": false,
+  "reread": "One independent Sonnet (refuter) subagent re-read pdf 1374-1390 against the rendered images 2026-09-20: all 17 printed page numbers match, all 17 pages are theory slides (\"Keys For Diagnosis\" clinical-clue lists and tables), no MCQ, no options list, no marked key, no explanation box. Machine reading agrees (17 theory rows).",
+  "questions_found": 0,
+  "numbering_note": "Section 21 (Diagnosis Keys) holds no questions: 17 theory slide pages only, nothing to sweep, draft or splice. Chapter op-appear gains no rows from this section.",
+  "repairs": [
+    "p.1386: figure true->false (plain text table of laser types, not a diagram/photo)",
+    "p.1381: theory-slide text was in stem -> stem null (no question on the page)",
+    "p.1390: theory-slide text was in stem -> stem null (no question on the page)"
+  ],
+  "numeric_note_not_fixed": [
+    "p.1386 \"50 mmHg\" printed \"<=50 mmHg\"; \"10-21 mmHg\" printed with an en dash (theory page, not a clinical source here)"
+  ]
+}
