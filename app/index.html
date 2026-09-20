@@ -840,8 +840,6 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .newday input[type=date]{padding:8px 11px;border:2px solid var(--line-2);border-radius:var(--r-2);
   font-family:inherit;font-size:13px;font-weight:600;background:var(--card);color:var(--tx)}
 .palette{display:flex;gap:6px;flex-wrap:wrap}
-.pal{width:24px;height:24px;border-radius:var(--r-2);border:2.5px solid var(--line-2);cursor:pointer}
-.pal.on{transform:translateY(-3px)}
 
 
 /* ---------- Profile gate ----------
@@ -1196,7 +1194,6 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .gsign.off::after{animation:none;display:none}
 .gsign.off:hover{transform:none;box-shadow:none}
 .gsign svg{width:19px;height:19px;flex-shrink:0}
-.gate .gor{margin:22px 0 4px;font-size:12px;font-weight:800;color:var(--ink-4);letter-spacing:.08em;text-transform:uppercase}
 .syncdot{
   display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;flex-shrink:0;
   background:var(--ink-4);vertical-align:1px;
@@ -1423,10 +1420,6 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .bk-on .th-sec{margin-bottom:26px}
 
 /* Turning furniture */
-.bk-bar{
-  display:flex;align-items:center;gap:14px;justify-content:center;
-  margin:16px auto 4px;max-width:640px;
-}
 .bk-btn{
   display:inline-flex;align-items:center;justify-content:center;
   width:44px;height:44px;border-radius:50%;cursor:pointer;
@@ -1436,10 +1429,6 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 }
 .bk-btn:hover:not(:disabled){transform:translateY(-2px);background:var(--bg-2)}
 .bk-btn:disabled{opacity:.32;cursor:default}
-.bk-num{
-  font-size:12.5px;font-weight:800;letter-spacing:.05em;color:var(--ink-3);
-  min-width:132px;text-align:center;font-variant-numeric:tabular-nums;
-}
 .bk-run{
   display:flex;justify-content:space-between;align-items:baseline;gap:16px;
   border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:14px;
@@ -1457,7 +1446,6 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .bk-on .bk-tap.r{right:0}
 @media (max-width:700px){
   .bk-on .bk-tap{width:16%}
-  .bk-num{min-width:104px;font-size:11.5px}
   /* Arrows beside a page are a luxury of a wide window. On a phone they would
      take a third of the sheet's width, so they go under it and the page keeps
      the whole measure; the tap zones on the sheet itself are unchanged. */
@@ -1779,7 +1767,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   .bk-on .bk-flow{
     columns:auto!important;column-gap:normal!important;
     height:auto!important;transform:none!important;transition:none!important}
-  .bk-bar,.bk-prog,.bk-run,.bk-tap,.bk-top,.bk-foot,.bk-title,
+  .bk-prog,.bk-run,.bk-tap,.bk-top,.bk-foot,.bk-title,
   .bk-stage>.bk-btn{display:none!important}
   /* The cover is .doc-head, which the screen hides while the reader is on. */
   .bk-on .doc-head{display:block!important}
@@ -3230,7 +3218,6 @@ const isCorrect=id=>S.answers[id]&&S.answers[id].ok;
    components. */
 const isoLocal=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
 const todayISO=()=>isoLocal(new Date());
-const tagHex=t=>({revision:'#7a6a55',buffer:'#9a6b1f','mock exam':'#6d4c7d'}[t])||(moduleOf(t)||{hex:'#7a6a55'}).hex;
 
 function accuracy(list){
   const a=list.filter(q=>isAnswered(q.id));
@@ -3485,7 +3472,6 @@ function markDayActive(){S.days[todayISO()]=true}
 
 
 /* ============ THEORY ============ */
-function theoryFor(ch){return THEORY[ch]||null}
 function theoryChapters(mod){
   const m=moduleOf(mod);if(!m)return [];
   const out=[];
@@ -3817,7 +3803,6 @@ function tableHTML(t){
 function mdInline(s){
   return esc(String(s||'')).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
 }
-function toggleTh(b){if(b&&b.nextElementSibling){b.classList.toggle("open");b.nextElementSibling.classList.toggle("open")}}
 
 function vTheory(p){
   if(!view.mod){
