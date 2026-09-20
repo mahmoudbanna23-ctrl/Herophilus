@@ -1184,3 +1184,29 @@ Chapter `op-glauc`, source `Opthalmology endpoint.pdf` pdf 788-849, 26 staged ro
   "pale-disc end state". Left tagged because no lecture line was found: n33 subarachnoid haemorrhage, n39 cataract
   extraction and the choroid-tear wording, n40 floating debris and dark red glow, n27 retrobulbar normal fundus
   (the printed box itself says a normal-appearing fundus).
+
+- ADDENDUM 2026-09-20 (2), audit of chat B's s18 Ocular Trauma and s19 Ocular Systemic Diseases (owner asked). A
+  read-only auditor confirmed counts (s18 16, s19 23), ids, answer keys, source pages, markers, no backticks, and that
+  s21 holds no array or draft; then each claim was compared with the cached lectures. Fixed in `questions.ophtho.ep.js`
+  and the s18/s19 `draft.js` files (16 exact-once edits, then 5 more tags after the checker below): trauma-1, -5, -15 imaging bullets restated to what L25 slide
+  52 says (dropped "without contrast", "minimal probe pressure", "safe"); trauma-6 lens power cites L7,8 slide 23
+  (18 to 20 of about 60 dioptres); trauma-19 cites L25 slide 28 for bed rest at 45 degrees; trauma-10 gained a note that
+  the printed box's copious irrigation contradicts L25 slides 51-52 (key unaffected); systemic-1 gained a note on the
+  printed key (House `opqb-t28-5` prints optic disc cupping; its textbook chapter lists age-related lid laxity under
+  chronic tearing; answer stays as printed); systemic-13 and -14 tagged the magnesium sulfate, TFT and ECG claims;
+  systemic-17 cites L20 slides 6-7, systemic-19 cites L20 slide 14, systemic-22 cites L19.1 and L23. `sec-oph.js` row 21
+  `chapter` set to `null` (Diagnosis Keys spans `op-acute`, `op-white`, `op-insid`, `op-vissym`, `op-red`, not
+  `op-appear`; the row is documentation only and s21 holds 0 questions). Validator ALL CHECKS PASSED on s18 and s19,
+  live bank 417 entries, 0 holes, unique ids, every chapter exists, live and draft explanations identical, boot-check
+  4049/81/154, 0 errors. Chat B's s19 tag list omitted n10, 11, 16, 25 (they carry tags or notes); its journal says
+  `op-appear` for s21, superseded here. NOT re-verified by eye: s21's 17 staged pages (one machine reading plus one
+  Sonnet re-read agree on 0 questions). Still owed at the end of the stream: House `alsoIn` merges from the s17/s18/s19
+  collisions files and the `ophep-squint-10` reprint citation.
+  Independent check (separate Sonnet refuter run, different from the drafter): all 9 changed passages SUPPORTED by
+  the cited slides (L25 s28, s51, s52; L7,8 s23; L20 s6, s7, s14; L19.1 and L23). It also listed untagged claims outside
+  the slides; five got the tag in a second pass (MRI mechanism in trauma-5 and -15, lens extrusion in trauma-6,
+  endophthalmitis prevention in trauma-10, the pneumatic retinopexy exclusion in systemic-19). Left uncited but
+  lecture-supported, by the refuter's reading: trauma-19 hospitalization criteria and evacuation (L25 s28),
+  systemic-17 fibrinoid necrosis (L23), systemic-19 PRP and anti-VEGF statements (L19.1), systemic-22 microaneurysm
+  and hard-exudate descriptions (L19.1); trauma-5 blacksmith and low-pressure inference also sits without a tag. Add
+  cites if a later pass touches those entries.

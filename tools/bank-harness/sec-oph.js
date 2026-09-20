@@ -50,7 +50,7 @@ const SEC_P1 = {
   19: { prefix: 'ophep-ocular-systemic-diseases-', file: 'oph-ep-p1-s19-ocular-systemic-diseases.array.js', svar: 'OPHEP_S19_STAGED', draft: 'oph-ep-p1-s19-ocular-systemic-diseases.draft', chapter: 'op-systemic', pages: [1245, 1331], ans: null, folded: [2, 3] },
   20: { prefix: 'ophep-drugs-eye-', file: 'oph-ep-p1-s20-drugs-eye.array.js', svar: 'OPHEP_S20_STAGED', draft: 'oph-ep-p1-s20-drugs-eye.draft', chapter: null, pages: [1332, 1373], ans: null }, // no chapter exists for Drugs and the Eye; one must be added to modules.js
   // s21 holds 0 questions (17 theory slide pages, checked 2026-09-20: machine reading + one Sonnet re-read) -- no array, draft or splice exists for it.
-  21: { prefix: 'ophep-diagnosis-keys-', file: 'oph-ep-p1-s21-diagnosis-keys.array.js', svar: 'OPHEP_S21_STAGED', draft: 'oph-ep-p1-s21-diagnosis-keys.draft', chapter: 'op-appear', pages: [1374, 1390], ans: null }, // also involves op-insid, op-white, op-acute, op-red
+  21: { prefix: 'ophep-diagnosis-keys-', file: 'oph-ep-p1-s21-diagnosis-keys.array.js', svar: 'OPHEP_S21_STAGED', draft: 'oph-ep-p1-s21-diagnosis-keys.draft', chapter: null, pages: [1374, 1390], ans: null }, // holds 0 questions; Diagnosis Keys spans op-acute, op-white, op-insid, op-vissym, op-red, not op-appear (Squint group)
 };
 
 // Exam sections draw from every chapter; set chapter: null for all.

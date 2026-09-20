@@ -106,6 +106,11 @@ collisions file). **Also for the owner**: the bank's keys n11 (anti-VEGF for PDR
 (not edited by chat B): `MEMORY.md`, `ledger.md`, `CLAUDE.md`, House `alsoIn` merges from the s17/s18/s19 collisions files.** Not touched: s11-16, s20 (chat A),
 s22-28; chat A's uncommitted `sec-oph.js` row 13 (`figPage`) is theirs.
 
+**CORRECTION 2026-09-20 (audit by the main chat, details in `resume-ophtho-endpoint-A-chapters.md` ADDENDUM 2026-09-20 (2)):** 16 s18/s19
+explanation passages were re-cited or tagged against the cached lectures; s18 n10 and s19 n1 gained notes on the printed box/key (keys
+unmoved); the s19 tag list above also covers n10, 11, 16, 25; the `sec-oph.js` s21 row now carries `chapter: null` (Diagnosis Keys spans
+`op-acute`, `op-white`, `op-insid`, `op-vissym`, `op-red`, not `op-appear`).
+
 (Older RESUME HERE text from 2026-09-19 follows.)
 
 **UPDATE 2026-09-19 (third /prep of chat B): s17 Malignancies of Eye and Adnexa is CLOSED — 12 spliced, live 290 -> 302, commit
