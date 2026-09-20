@@ -1,0 +1,3067 @@
+[
+  {
+    "pdf_page": 1391,
+    "printed_page": 1391,
+    "page_type": "theory",
+    "printed_q": null,
+    "stem": null,
+    "options": null,
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "1391"
+  },
+  {
+    "pdf_page": 1392,
+    "printed_page": "1392",
+    "page_type": "question_unmarked",
+    "printed_q": "1",
+    "stem": "All of the following conditions can cause amblyopia EXCEPT:",
+    "options": [
+      "Unilateral congenital cataract",
+      "Severe unilateral congenital ptosis",
+      "Alternating esotropia",
+      "Anisometropia"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "1, 1392"
+  },
+  {
+    "pdf_page": 1393,
+    "printed_page": "1393",
+    "page_type": "question_marked",
+    "printed_q": "1",
+    "stem": "All of the following conditions can cause amblyopia EXCEPT:",
+    "options": [
+      "Unilateral congenital cataract",
+      "Severe unilateral congenital ptosis",
+      "Alternating esotropia",
+      "Anisometropia"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Alternating esotropia allows both eyes to fixate alternately, preventing suppression and amblyopia. Amblyopia develops only when one eye is constantly deprived of visual stimulation (e.g., congenital cataract, ptosis, or anisometropia).",
+    "figure": true,
+    "figure_desc": "A table/box titled 'Predisposing factors' listing four causes of amblyopia.",
+    "numeric_note": "1, 2, 3, 4"
+  },
+  {
+    "pdf_page": 1394,
+    "printed_page": "1394",
+    "page_type": "question_unmarked",
+    "printed_q": "2. Unilateral dilated pupil is not caused by:",
+    "stem": "Unilateral dilated pupil is not caused by:",
+    "options": [
+      "Horner syndrome",
+      "Ocular trauma",
+      "Atropine toxicity",
+      "Third cranial nerve palsy"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "2, 1394"
+  },
+  {
+    "pdf_page": 1395,
+    "printed_page": 1395,
+    "page_type": "question_marked",
+    "printed_q": "2",
+    "stem": "Unilateral dilated pupil is not caused by:",
+    "options": [
+      "Horner syndrome",
+      "Ocular trauma",
+      "Atropine toxicity",
+      "Third cranial nerve palsy"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Horner syndrome causes miosis (small pupil), not dilation. Dilated pupils result from third nerve palsy, ocular trauma, or exposure to anticholinergic agents like atropine.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "2, 1395"
+  },
+  {
+    "pdf_page": 1396,
+    "printed_page": "1396",
+    "page_type": "question_unmarked",
+    "printed_q": "3. The type of laser used for correction of myopia is:\na. Argon\nb. Diode\nc. YAG\nd. Excimer",
+    "stem": "The type of laser used for correction of myopia is:",
+    "options": [
+      "Argon",
+      "Diode",
+      "YAG",
+      "Excimer"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "1396"
+  },
+  {
+    "pdf_page": 1397,
+    "printed_page": 1397,
+    "page_type": "question_marked",
+    "printed_q": "3. The type of laser used for correction of myopia is:",
+    "stem": "The type of laser used for correction of myopia is:",
+    "options": [
+      "Argon",
+      "Diode",
+      "YAG",
+      "Excimer"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "The excimer laser (193 nm ultraviolet light) reshapes the cornea to correct refractive errors like myopia. Argon, diode, and YAG lasers are used for other ophthalmic procedures (e.g., retinal photocoagulation, posterior capsulotomy).",
+    "figure": true,
+    "figure_desc": "An inset image listing treatment options including glasses, contact lenses, and refractive surgery (LASIK/PRK).",
+    "numeric_note": "3, 1, 2, 3, 193 nm, 1397"
+  },
+  {
+    "pdf_page": 1398,
+    "printed_page": "1398",
+    "page_type": "question_unmarked",
+    "printed_q": "4. A two-year-old child came with esotropia, leukocoria, pain and proptosis.\nThe probable diagnosis is:\na. Orbital cellulitis\nb. Cavernous sinus thrombosis\nc. Retinoblastoma\nd. Congenital cataract",
+    "stem": "A two-year-old child came with esotropia, leukocoria, pain and proptosis. The probable diagnosis is:",
+    "options": [
+      "Orbital cellulitis",
+      "Cavernous sinus thrombosis",
+      "Retinoblastoma",
+      "Congenital cataract"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "4, 1398"
+  },
+  {
+    "pdf_page": 1399,
+    "printed_page": "1399",
+    "page_type": "question_marked",
+    "printed_q": "4",
+    "stem": "A two-year-old child came with esotropia, leukocoria, pain and proptosis. The probable diagnosis is:",
+    "options": [
+      "Orbital cellulitis",
+      "Cavernous sinus thrombosis",
+      "Retinoblastoma",
+      "Congenital cataract"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Retinoblastoma is a malignant intraocular tumor in children that presents with leukocoria, strabismus (esotropia), pain, and proptosis. The other conditions usually cause inflammation or infection without leukocoria.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "4, two, 1399"
+  },
+  {
+    "pdf_page": 1400,
+    "printed_page": "1400",
+    "page_type": "question_unmarked",
+    "printed_q": "5",
+    "stem": "Fundus examination is done by:",
+    "options": [
+      "Ophthalmoscopy",
+      "Biometry",
+      "Retinoscopy",
+      "Topography"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "5, 1400"
+  },
+  {
+    "pdf_page": 1401,
+    "printed_page": "1401",
+    "page_type": "question_marked",
+    "printed_q": "5",
+    "stem": "Fundus examination is done by:",
+    "options": [
+      "Ophthalmoscopy",
+      "Biometry",
+      "Retinoscopy",
+      "Topography"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Ophthalmoscopy (direct or indirect) allows visualization of the retina, optic disc, and macula.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "5, 1401"
+  },
+  {
+    "pdf_page": 1402,
+    "printed_page": 1402,
+    "page_type": "question_unmarked",
+    "printed_q": "6",
+    "stem": "The keratometer is used to measure:",
+    "options": [
+      "Radius of curvature of the cornea",
+      "Thickness of the cornea",
+      "Diameter of the cornea",
+      "Clarity of the cornea"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "6, 1402"
+  },
+  {
+    "pdf_page": 1403,
+    "printed_page": "1403",
+    "page_type": "question_marked",
+    "printed_q": "6",
+    "stem": "The keratometer is used to measure:",
+    "options": [
+      "Radius of curvature of the cornea",
+      "Thickness of the cornea",
+      "Diameter of the cornea",
+      "Clarity of the cornea"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "The keratometer (ophthalmometer) measures the anterior corneal curvature, which helps determine corneal power for contact lens fitting or intraocular lens calculation. Pachymetry measures thickness, not curvature.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 1404,
+    "printed_page": "1404",
+    "page_type": "question_unmarked",
+    "printed_q": "7",
+    "stem": "Action of the superior oblique muscle:",
+    "options": [
+      "elevation in abduction",
+      "Elevation in adduction",
+      "Depression in abduction",
+      "Depression in adduction"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "1404"
+  },
+  {
+    "pdf_page": 1405,
+    "printed_page": 1405,
+    "page_type": "question_marked",
+    "printed_q": "7",
+    "stem": "Action of the superior oblique muscle:",
+    "options": [
+      "elevation in abduction",
+      "Elevation in adduction",
+      "Depression in abduction",
+      "Depression in adduction"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "The superior oblique muscle primarily causes intorsion and depression when the eye is adducted. It’s supplied by the trochlear nerve (CN IV).",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "7, IV, 1405"
+  },
+  {
+    "pdf_page": 1406,
+    "printed_page": 1406,
+    "page_type": "question_unmarked",
+    "printed_q": "8. Proptosis is not present in:",
+    "stem": "Proptosis is not present in:",
+    "options": [
+      "Orbital cellulitis",
+      "Endophthalmitis",
+      "Thyroid ophthalmopathy",
+      "Orbital tumors"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "8, 1406"
+  },
+  {
+    "pdf_page": 1407,
+    "printed_page": 1407,
+    "page_type": "question_marked",
+    "printed_q": "8",
+    "stem": "Proptosis is not present in:",
+    "options": [
+      "Orbital cellulitis",
+      "Endophthalmitis",
+      "Thyroid ophthalmopathy",
+      "Orbital tumors"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Endophthalmitis causes severe intraocular inflammation but usually not proptosis. Proptosis occurs in orbital pathologies like cellulitis, thyroid ophthalmopathy, or orbital tumors.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "8, 1407"
+  },
+  {
+    "pdf_page": 1408,
+    "printed_page": 1408,
+    "page_type": "question_unmarked",
+    "printed_q": "9. The classical treatment of congenital glaucoma:",
+    "stem": "The classical treatment of congenital glaucoma:",
+    "options": [
+      "Long term miotics",
+      "Long term beta blockers",
+      "Laser treatment",
+      "Surgery"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "9, 1408"
+  },
+  {
+    "pdf_page": 1409,
+    "printed_page": 1409,
+    "page_type": "question_marked",
+    "printed_q": "9. The classical treatment of congenital glaucoma:",
+    "stem": "The classical treatment of congenital glaucoma:",
+    "options": [
+      "Long term miotics",
+      "Long term beta blockers",
+      "Laser treatment",
+      "Surgery"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "The definitive treatment for congenital glaucoma is surgical (e.g., goniotomy or trabeculotomy). Medical therapy offers only temporary pressure reduction before surgery.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "9, 1409"
+  },
+  {
+    "pdf_page": 1410,
+    "printed_page": "1410",
+    "page_type": "question_unmarked",
+    "printed_q": "10",
+    "stem": "Testing the visual field in a patient with hand motion vision is done by:",
+    "options": [
+      "Confrontation method",
+      "Automated perimetry",
+      "Light perception",
+      "Light projection"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "10, 1410"
+  },
+  {
+    "pdf_page": 1411,
+    "printed_page": 1411,
+    "page_type": "question_marked",
+    "printed_q": "10",
+    "stem": "Testing the visual field in a patient with hand motion vision is done by:",
+    "options": [
+      "Confrontation method",
+      "Automated perimetry",
+      "Light perception",
+      "Light projection"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "In patients with hand motion vision, visual fields are tested by light projection—determining the direction from which light is perceived. Automated perimetry requires better visual acuity.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "10, 1411"
+  },
+  {
+    "pdf_page": 1412,
+    "printed_page": "1412",
+    "page_type": "question_unmarked",
+    "printed_q": "11",
+    "stem": "The physiological blind spot is:",
+    "options": [
+      "Fovea centralis",
+      "Macula lutea",
+      "Optic disc",
+      "Peripheral retina"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "11, 1412"
+  },
+  {
+    "pdf_page": 1413,
+    "printed_page": 1413,
+    "page_type": "question_marked",
+    "printed_q": 11,
+    "stem": "The physiological blind spot is:",
+    "options": [
+      "Fovea centralis",
+      "Macula lutea",
+      "Optic disc",
+      "Peripheral retina"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "The physiological blind spot corresponds to the optic disc, where no photoreceptors are present. The fovea and macula are areas of maximum visual acuity, not blind spots.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "11, 1413"
+  },
+  {
+    "pdf_page": 1414,
+    "printed_page": "1414",
+    "page_type": "question_unmarked",
+    "printed_q": "12",
+    "stem": "A pituitary adenoma produces:",
+    "options": [
+      "Binasal hemianopia",
+      "Bitemporal hemianopia",
+      "A central scotoma",
+      "An arcuate scotoma"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "12, 1414"
+  },
+  {
+    "pdf_page": 1415,
+    "printed_page": "1415",
+    "page_type": "question_marked",
+    "printed_q": "12",
+    "stem": "A pituitary adenoma produces:",
+    "options": [
+      "Binasal hemianopia",
+      "Bitemporal hemianopia",
+      "A central scotoma",
+      "An arcuate scotoma"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "A pituitary adenoma compresses the optic chiasm, where nasal fibers from both eyes cross, leading to bitemporal hemianopia (loss of temporal visual fields in both eyes).",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "12, 1415"
+  },
+  {
+    "pdf_page": 1416,
+    "printed_page": "1416",
+    "page_type": "question_unmarked",
+    "printed_q": "13",
+    "stem": "Ageing can be associated with all of the following EXCEPT:",
+    "options": [
+      "Epiphora",
+      "Macular degeneration",
+      "Optic disc cupping",
+      "Decrease in accommodative power of the lens"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "13, 1416"
+  },
+  {
+    "pdf_page": 1417,
+    "printed_page": 1417,
+    "page_type": "question_marked",
+    "printed_q": 13,
+    "stem": "Ageing can be associated with all of the following EXCEPT:",
+    "options": [
+      "Epiphora",
+      "Macular degeneration",
+      "Optic disc cupping",
+      "Decrease in accommodative power of the lens"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Aging is associated with macular degeneration, increased optic disc cupping (due to glaucoma), and a decrease in the lens's ability to focus (presbyopia). Epiphora, or watery eyes, is not a direct consequence of aging, though other age-related conditions like dry eye or eyelid issues can contribute to it.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "13, 1417"
+  },
+  {
+    "pdf_page": 1418,
+    "printed_page": "1418",
+    "page_type": "question_unmarked",
+    "printed_q": "14",
+    "stem": "All of the following tests are useful in evaluating a patient with a retained iron intraocular foreign body EXCEPT:",
+    "options": [
+      "Ultrasonography",
+      "CT scan",
+      "MRI",
+      "Indirect ophthalmoscopy"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "14, 1418"
+  },
+  {
+    "pdf_page": 1419,
+    "printed_page": 1419,
+    "page_type": "question_marked",
+    "printed_q": "14",
+    "stem": "All of the following tests are useful in evaluating a patient with a retained iron intraocular foreign body EXCEPT:",
+    "options": [
+      "Ultrasonography",
+      "CT scan",
+      "MRI",
+      "Indirect ophthalmoscopy"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "MRI is contraindicated in patients with possible iron intraocular foreign bodies because magnetic forces may move the metal, causing further eye injury. CT scan and ultrasound are safe alternatives.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "14, 1419"
+  },
+  {
+    "pdf_page": 1420,
+    "printed_page": 1420,
+    "page_type": "question_unmarked",
+    "printed_q": "15",
+    "stem": "All of the following are sequelae of anterior uveitis EXCEPT:",
+    "options": [
+      "Peripheral anterior synechiae",
+      "Occlusion pupillae",
+      "Complicated cataract",
+      "Corneal neovascularization"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "15, 1420"
+  },
+  {
+    "pdf_page": 1421,
+    "printed_page": 1421,
+    "page_type": "question_marked",
+    "printed_q": "15",
+    "stem": "All of the following are sequelae of anterior uveitis EXCEPT:",
+    "options": [
+      "Peripheral anterior synechiae",
+      "Occlusion pupillae",
+      "Complicated cataract",
+      "Corneal neovascularization"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Complications:\n- 2ry glaucoma\n- Posterior synechiae → (leads to irregular shape of the iris .. Tutorial)\n- Complicated cataract\n- Calcific band keratopathy (if the iritis becomes chronic) especially in juvenile idiopathic arthritis.\n- Macular edema (if the iritis becomes chronic)",
+    "figure": true,
+    "figure_desc": "A box containing a bulleted list of complications of anterior uveitis.",
+    "numeric_note": "15, 1421, 2ry"
+  },
+  {
+    "pdf_page": 1422,
+    "printed_page": "1422",
+    "page_type": "question_unmarked",
+    "printed_q": "16",
+    "stem": "Regarding keratoconus:",
+    "options": [
+      "It presents by painless progressive diminution of vision but rapid drop of vision may also occur",
+      "Munson's sign occurs early in the disease",
+      "Pachymetry shows increased corneal thickness",
+      "Soft contact lenses may be used in moderate cases"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "16, 1422"
+  },
+  {
+    "pdf_page": 1423,
+    "printed_page": 1423,
+    "page_type": "question_marked",
+    "printed_q": 16,
+    "stem": "Regarding keratoconus:",
+    "options": [
+      "It presents by painless progressive diminution of vision but rapid drop of vision may also occur",
+      "Munson's sign occurs early in the disease",
+      "Pachymetry shows increased corneal thickness",
+      "Soft contact lenses may be used in moderate cases"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Keratoconus causes progressive, painless blurring due to corneal thinning and irregular astigmatism; acute hydrops can cause sudden vision drop. Corneal thinning (not thickening) is seen on pachymetry.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "16, 1423"
+  },
+  {
+    "pdf_page": 1424,
+    "printed_page": 1424,
+    "page_type": "question_unmarked",
+    "printed_q": "17. Fluorescein does not offer help to diagnose:\na. Corneal ulcers\nb. Leaking phacoemulsification incision\nc. Nasolacrimal duct obstruction\nd. Rhegmatogenous retinal detachment",
+    "stem": "Fluorescein does not offer help to diagnose:",
+    "options": [
+      "Corneal ulcers",
+      "Leaking phacoemulsification incision",
+      "Nasolacrimal duct obstruction",
+      "Rhegmatogenous retinal detachment"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "17, 1424"
+  },
+  {
+    "pdf_page": 1425,
+    "printed_page": "1425",
+    "page_type": "question_marked",
+    "printed_q": "17. Fluorescein does not offer help to diagnose:\na. Corneal ulcers\nb. Leaking phacoemulsification incision\nc. Nasolacrimal duct obstruction\nd. Rhegmatogenous retinal detachment",
+    "stem": "Fluorescein does not offer help to diagnose:",
+    "options": [
+      "Corneal ulcers",
+      "Leaking phacoemulsification incision",
+      "Nasolacrimal duct obstruction",
+      "Rhegmatogenous retinal detachment"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "17, 1425"
+  },
+  {
+    "pdf_page": 1426,
+    "printed_page": "1426",
+    "page_type": "question_unmarked",
+    "printed_q": "18",
+    "stem": "Ophthalmia neonatorum may be caused by the following organisms EXCEPT:",
+    "options": [
+      "a. Gonococci",
+      "b. Candida albicans",
+      "c. Herpes simplex",
+      "d. Chlamydia"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "18, 1426"
+  },
+  {
+    "pdf_page": 1427,
+    "printed_page": "1427",
+    "page_type": "question_marked",
+    "printed_q": "18",
+    "stem": "Ophthalmia neonatorum may be caused by the following organisms EXCEPT:",
+    "options": [
+      "Gonococci",
+      "Candida albicans",
+      "Herpes simplex",
+      "Chlamydia"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Ophthalmia neonatorum is a neonatal conjunctivitis caused mainly by Neisseria gonorrhoeae, Chlamydia trachomatis, or Herpes simplex virus. Candida infection is rare and not a typical cause.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "18, 1427"
+  },
+  {
+    "pdf_page": 1428,
+    "printed_page": 1428,
+    "page_type": "question_unmarked",
+    "printed_q": "19. A retinal break without detachment can be treated by:\na. Vitrectomy\nb. Buckle\nc. Argon laser\nd. All of the above",
+    "stem": "A retinal break without detachment can be treated by:",
+    "options": [
+      "Vitrectomy",
+      "Buckle",
+      "Argon laser",
+      "All of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "19, 1428"
+  },
+  {
+    "pdf_page": 1429,
+    "printed_page": "1429",
+    "page_type": "question_marked",
+    "printed_q": "19",
+    "stem": "A retinal break without detachment can be treated by:",
+    "options": [
+      "Vitrectomy",
+      "Buckle",
+      "Argon laser",
+      "All of the above"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Argon laser photocoagulation seals small retinal breaks to prevent detachment. Vitrectomy or scleral buckling is reserved for cases with established retinal detachment.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "19, 1429"
+  },
+  {
+    "pdf_page": 1430,
+    "printed_page": 1430,
+    "page_type": "question_unmarked",
+    "printed_q": "20",
+    "stem": "The following type of secondary glaucoma occurs as a consequence of central vein occlusion:",
+    "options": [
+      "Pigmentary glaucoma",
+      "Neovascular glaucoma",
+      "Phacomorphic glaucoma",
+      "Angle recession glaucoma"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "20, 1430"
+  },
+  {
+    "pdf_page": 1431,
+    "printed_page": "1431",
+    "page_type": "question_marked",
+    "printed_q": "20",
+    "stem": "The following type of secondary glaucoma occurs as a consequence of central vein occlusion:",
+    "options": [
+      "Pigmentary glaucoma",
+      "Neovascular glaucoma",
+      "Phacomorphic glaucoma",
+      "Angle recession glaucoma"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Central retinal vein occlusion (CRVO) can lead to retinal ischemia and release of VEGF, promoting new vessel growth on the iris and angle, causing neovascular (rubeotic) glaucoma.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "20, 1431"
+  },
+  {
+    "pdf_page": 1432,
+    "printed_page": "1432",
+    "page_type": "question_unmarked",
+    "printed_q": "21",
+    "stem": "The fundus picture of central retinal artery occlusion does not include:",
+    "options": [
+      "Marked narrowing of retinal arterioles",
+      "Numerous flame shaped hemorrhages",
+      "Opaque white retina",
+      "Cherry red spot"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "21, 1432"
+  },
+  {
+    "pdf_page": 1433,
+    "printed_page": 1433,
+    "page_type": "question_marked",
+    "printed_q": "21",
+    "stem": "The fundus picture of central retinal artery occlusion does not include:",
+    "options": [
+      "Marked narrowing of retinal arterioles",
+      "Numerous flame shaped hemorrhages",
+      "Opaque white retina",
+      "Cherry red spot"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Central retinal artery occlusion (CRAO) causes sudden vision loss with a pale opaque retina and a cherry red spot, along with narrow arterioles. Flame-shaped hemorrhages are characteristic of venous occlusion, not arterial occlusion.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "21, 1433"
+  },
+  {
+    "pdf_page": 1434,
+    "printed_page": "1434",
+    "page_type": "question_unmarked",
+    "printed_q": "22",
+    "stem": "Consecutive optic atrophy occurs in:",
+    "options": [
+      "Optic neuritis",
+      "Papilledema",
+      "Glaucoma",
+      "Retinitis pigmentosa"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "22, 1434"
+  },
+  {
+    "pdf_page": 1435,
+    "printed_page": 1435,
+    "page_type": "question_marked",
+    "printed_q": "22. Consecutive optic atrophy occurs in:",
+    "stem": "Consecutive optic atrophy occurs in:",
+    "options": [
+      "Optic neuritis",
+      "Papilledema",
+      "Glaucoma",
+      "Retinitis pigmentosa"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "Consecutive optic atrophy follows degenerative retinal diseases like retinitis pigmentosa, where retinal degeneration leads to secondary optic nerve atrophy. It differs from primary optic atrophy, which originates from optic nerve pathology.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "22, 1435"
+  },
+  {
+    "pdf_page": 1436,
+    "printed_page": 1436,
+    "page_type": "question_unmarked",
+    "printed_q": "23",
+    "stem": "The type of cataract that is specific for diabetes:",
+    "options": [
+      "Rosette shaped",
+      "Sunflower",
+      "Snow flakes",
+      "Blue dotted"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "23, 1436"
+  },
+  {
+    "pdf_page": 1437,
+    "printed_page": 1437,
+    "page_type": "question_marked",
+    "printed_q": "23",
+    "stem": "The type of cataract that is specific for diabetes:",
+    "options": [
+      "Rosette shaped",
+      "Sunflower",
+      "Snow flakes",
+      "Blue dotted"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Snowflake cataract is specific to diabetes, resulting from sorbitol accumulation in the lens due to high glucose. It presents as small, white, snowflake-like opacities in the cortex of the lens.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "23, 1437"
+  },
+  {
+    "pdf_page": 1438,
+    "printed_page": "1438",
+    "page_type": "question_unmarked",
+    "printed_q": "24",
+    "stem": "In immature cortical senile cataract:",
+    "options": [
+      "Visual acuity is hand motion",
+      "The red reflex is absent",
+      "Posterior segment evaluation is impossible",
+      "Decision of the operation is related to the patient's needs"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "24, 1438"
+  },
+  {
+    "pdf_page": 1439,
+    "printed_page": 1439,
+    "page_type": "question_marked",
+    "printed_q": "24. In immature cortical senile cataract:\na. Visual acuity is hand motion\nb. The red reflex is absent\nc. Posterior segment evaluation is impossible\nd. Decision of the operation is related to the patient's needs",
+    "stem": "In immature cortical senile cataract:",
+    "options": [
+      "Visual acuity is hand motion",
+      "The red reflex is absent",
+      "Posterior segment evaluation is impossible",
+      "Decision of the operation is related to the patient's needs"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "In immature cortical cataract, some clear lens areas remain, allowing vision and fundus examination. Surgery timing depends on how much the cataract affects the patient's daily visual function.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "24, 1439"
+  },
+  {
+    "pdf_page": 1440,
+    "printed_page": 1440,
+    "page_type": "question_unmarked",
+    "printed_q": 25,
+    "stem": "Red eye is seen in all EXCEPT:",
+    "options": [
+      "Corneal ulcers",
+      "Conjunctivitis",
+      "Iridocyclitis",
+      "Primary open angle glaucoma"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "25, 1440"
+  },
+  {
+    "pdf_page": 1441,
+    "printed_page": 1441,
+    "page_type": "question_marked",
+    "printed_q": "25",
+    "stem": "Red eye is seen in all EXCEPT:",
+    "options": [
+      "Corneal ulcers",
+      "Conjunctivitis",
+      "Iridocyclitis",
+      "Primary open angle glaucoma"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "Primary open-angle glaucoma causes painless, gradual vision loss without redness. In contrast, corneal ulcers, conjunctivitis, and iridocyclitis all present with red eyes.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "25, 1441"
+  },
+  {
+    "pdf_page": 1442,
+    "printed_page": 1442,
+    "page_type": "question_unmarked",
+    "printed_q": "26",
+    "stem": "The cornea is composed of:",
+    "options": [
+      "3 layers",
+      "4 layers",
+      "5 layers",
+      "6 layers"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "26, 3, 4, 5, 6, 1442"
+  },
+  {
+    "pdf_page": 1443,
+    "printed_page": 1443,
+    "page_type": "question_marked",
+    "printed_q": "26",
+    "stem": "The cornea is composed of:",
+    "options": [
+      "3 layers",
+      "4 layers",
+      "5 layers",
+      "6 layers"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "The cornea consists of five layers: epithelium, Bowman’s membrane, stroma, Descemet’s membrane, and endothelium. Each plays a role in maintaining transparency and refractive power.",
+    "figure": true,
+    "figure_desc": "Diagram showing the structure of the cornea and its five component layers.",
+    "numeric_note": "26, 3, 4, 5, 6, 1443, five"
+  },
+  {
+    "pdf_page": 1444,
+    "printed_page": 1444,
+    "page_type": "question_unmarked",
+    "printed_q": 27,
+    "stem": "Acute dacryocystitis is treated by:",
+    "options": [
+      "Antibiotics and hot fomentation",
+      "Dacryocystorhinostomy",
+      "Probing",
+      "Dacryocystectomy"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "27, 1444"
+  },
+  {
+    "pdf_page": 1445,
+    "printed_page": 1445,
+    "page_type": "question_marked",
+    "printed_q": 27,
+    "stem": "Acute dacryocystitis is treated by:",
+    "options": [
+      "Antibiotics and hot fomentation",
+      "Dacryocystorhinostomy",
+      "Probing",
+      "Dacryocystectomy"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Acute dacryocystitis is an infection of the lacrimal sac and is treated initially with systemic antibiotics and warm compresses. Surgical procedures like DCR are reserved for chronic cases after the acute phase resolves.",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "27, 1445"
+  },
+  {
+    "pdf_page": 1446,
+    "printed_page": "1446",
+    "page_type": "question_unmarked",
+    "printed_q": "28",
+    "stem": "Which is the most dangerous and has bad prognosis?",
+    "options": [
+      "Acid burn",
+      "Alkali burn",
+      "Blunt trauma",
+      "Central retinal vein occlusion"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "28, 1446"
+  },
+  {
+    "pdf_page": 1447,
+    "printed_page": "1447",
+    "page_type": "question_marked",
+    "printed_q": "28",
+    "stem": "Which is the most dangerous and has bad prognosis?",
+    "options": [
+      "Acid burn",
+      "Alkali burn",
+      "Blunt trauma",
+      "Central retinal vein occlusion"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Alkali burns penetrate ocular tissues rapidly, causing severe and deep damage to the cornea and anterior segment. Acid burns tend to coagulate proteins and thus are less penetrating.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "28, 1447"
+  },
+  {
+    "pdf_page": 1448,
+    "printed_page": "1448",
+    "page_type": "question_unmarked",
+    "printed_q": "29",
+    "stem": "Causes of conjunctival follicles EXCEPT:",
+    "options": [
+      "Trachoma",
+      "Local drug toxicity",
+      "Vernal conjunctivitis",
+      "Adenoviral conjunctivitis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "29, 1448"
+  },
+  {
+    "pdf_page": 1449,
+    "printed_page": 1449,
+    "page_type": "question_marked",
+    "printed_q": "29. Causes of conjunctival follicles EXCEPT:",
+    "stem": "Causes of conjunctival follicles EXCEPT:",
+    "options": [
+      "Trachoma",
+      "Local drug toxicity",
+      "Vernal conjunctivitis",
+      "Adenoviral conjunctivitis"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Conjunctival follicles:\n- Multiple discrete slightly elevated lesions with blood vessels running around them\n- Consist of leucocytic infiltration (mainly lymphocytes)\n- Lymphocytic infiltration may, also, take place deep to the corneal epithelium (corneal subepithelial infiltrates as in epidemic keratoconjunctivitis caused by Adenovirus infection)\n- Causes:\n 1. Viral conjunctivitis\n 2. Chlamydia conjunctivitis (trachoma)\n 3. Hypersensitivity to topical medications (e.g., Brimonidine)\n 4. Folliculosis in children (tutorial)",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "29, 1449, 1, 2, 3, 4"
+  },
+  {
+    "pdf_page": 1450,
+    "printed_page": "1450",
+    "page_type": "question_unmarked",
+    "printed_q": "30",
+    "stem": "Presbyopia is a deficiency in:",
+    "options": [
+      "Far vision",
+      "Near vision",
+      "Day vision",
+      "Night vision"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "30, 1450"
+  },
+  {
+    "pdf_page": 1451,
+    "printed_page": "1451",
+    "page_type": "question_marked",
+    "printed_q": "30. Presbyopia is a deficiency in:\na. Far vision\nb. Near vision\nc. Day vision\nd. Night vision",
+    "stem": "30. Presbyopia is a deficiency in:",
+    "options": [
+      "Far vision",
+      "Near vision",
+      "Day vision",
+      "Night vision"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Presbyopia is an age-related loss of lens elasticity, reducing the eye’s ability to accommodate for near objects. Distant vision remains unaffected.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "30, 1451"
+  },
+  {
+    "pdf_page": 1452,
+    "printed_page": "1452",
+    "page_type": "question_unmarked",
+    "printed_q": "31",
+    "stem": "The normal range for IOP as measured by applanation tonometry is:",
+    "options": [
+      "10-21 mmHg",
+      "16 mmHg",
+      "12-17 mmHg",
+      "8-17 mmHg"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "31, 10-21, 16, 12-17, 8-17, 1452"
+  },
+  {
+    "pdf_page": 1453,
+    "printed_page": 1453,
+    "page_type": "question_marked",
+    "printed_q": "31",
+    "stem": "The normal range for IOP as measured by applanation tonometry is:",
+    "options": [
+      "10-21 mmHg",
+      "16 mmHg",
+      "12-17 mmHg",
+      "8-17 mmHg"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "The normal intraocular pressure (IOP) measured by applanation tonometry ranges between 10 and 21 mmHg. Values outside this range may indicate glaucoma or ocular hypotony.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "31, 10, 21, 16, 12, 17, 8, 17, 10, 21, 1453, mmHg"
+  },
+  {
+    "pdf_page": 1454,
+    "printed_page": 1454,
+    "page_type": "question_unmarked",
+    "printed_q": "32. Diurnal variation in ptosis is seen in:",
+    "stem": "Diurnal variation in ptosis is seen in:",
+    "options": [
+      "Congenital ptosis",
+      "Aponeurotic ptosis",
+      "Traumatic ptosis",
+      "Myasthenia gravis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "32, 1454"
+  },
+  {
+    "pdf_page": 1455,
+    "printed_page": 1455,
+    "page_type": "question_marked",
+    "printed_q": 32,
+    "stem": "Diurnal variation in ptosis is seen in:",
+    "options": [
+      "Congenital ptosis",
+      "Aponeurotic ptosis",
+      "Traumatic ptosis",
+      "Myasthenia gravis"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "In myasthenia gravis, ptosis worsens as the day progresses due to fatigable muscle weakness. This diurnal variation is a key diagnostic clue.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "32, 1455"
+  },
+  {
+    "pdf_page": 1456,
+    "printed_page": "1456",
+    "page_type": "question_unmarked",
+    "printed_q": "33",
+    "stem": "Topical steroids are used to treat all of the following EXCEPT:",
+    "options": [
+      "Giant papillary conjunctivitis",
+      "Dendritic corneal ulcer",
+      "Acute iridocyclitis",
+      "Adenoviral conjunctivitis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "33, 1456"
+  },
+  {
+    "pdf_page": 1457,
+    "printed_page": "1457",
+    "page_type": "question_marked",
+    "printed_q": "33",
+    "stem": "Topical steroids are used to treat all of the following EXCEPT:",
+    "options": [
+      "Giant papillary conjunctivitis",
+      "Dendritic corneal ulcer",
+      "Acute iridocyclitis",
+      "Adenoviral conjunctivitis"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Topical steroids worsen herpetic dendritic ulcers by promoting viral replication and delaying healing. They are, however, useful in inflammatory conditions like iridocyclitis or giant papillary conjunctivitis.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "33, 1457"
+  },
+  {
+    "pdf_page": 1458,
+    "printed_page": "1458",
+    "page_type": "question_unmarked",
+    "printed_q": "34",
+    "stem": "Which of the following is a part of the uveal tract?",
+    "options": [
+      "The ciliary body",
+      "The limbus",
+      "The cornea",
+      "The retina"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "34, 1458"
+  },
+  {
+    "pdf_page": 1459,
+    "printed_page": "1459",
+    "page_type": "question_marked",
+    "printed_q": "34",
+    "stem": "Which of the following is a part of the uveal tract?",
+    "options": [
+      "The ciliary body",
+      "The limbus",
+      "The cornea",
+      "The retina"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "The uveal tract includes the iris, ciliary body, and choroid, which are the vascular middle layers of the eye. The cornea and retina are not part of the uveal tract.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "34, 1459"
+  },
+  {
+    "pdf_page": 1460,
+    "printed_page": "1460",
+    "page_type": "question_unmarked",
+    "printed_q": "35",
+    "stem": "Which of the following can cause painless loss of vision?",
+    "options": [
+      "Acute glaucoma",
+      "Anterior ischemic optic neuropathy",
+      "Corneal abrasion",
+      "Conjunctivitis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "35, 1460"
+  },
+  {
+    "pdf_page": 1461,
+    "printed_page": 1461,
+    "page_type": "question_marked",
+    "printed_q": "35",
+    "stem": "Which of the following can cause painless loss of vision?",
+    "options": [
+      "Acute glaucoma",
+      "Anterior ischemic optic neuropathy",
+      "Corneal abrasion",
+      "Conjunctivitis"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Anterior ischemic optic neuropathy (AION) presents with sudden, painless vision loss due to infarction of the optic nerve head. Other options like acute glaucoma or corneal abrasion are typically painful.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "35, 1461"
+  },
+  {
+    "pdf_page": 1462,
+    "printed_page": "1462",
+    "page_type": "question_unmarked",
+    "printed_q": "36",
+    "stem": "Which of the following lenses can be used for correction of astigmatism?",
+    "options": [
+      "Multifocal",
+      "Convex",
+      "Concave",
+      "Cylindrical"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "36, 1462"
+  },
+  {
+    "pdf_page": 1463,
+    "printed_page": 1463,
+    "page_type": "question_marked",
+    "printed_q": "36",
+    "stem": "Which of the following lenses can be used for correction of astigmatism?",
+    "options": [
+      "Multifocal",
+      "Convex",
+      "Concave",
+      "Cylindrical"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "Astigmatism results from uneven corneal curvature and is corrected by cylindrical lenses, which focus light differently along two meridians to form a clear image.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "36, 1463"
+  },
+  {
+    "pdf_page": 1464,
+    "printed_page": "1464",
+    "page_type": "question_unmarked",
+    "printed_q": "37",
+    "stem": "A 25-year-old male patient presented with left enophthalmos. He gave history of receiving a punch in that eye 6 months ago. On examination, there was hypoesthesia over the left side of the nose, upper lip, upper teeth, and gum. Which of the following nerves is commonly affected?",
+    "options": [
+      "Infraorbital",
+      "Supratrochlear",
+      "Supraorbital",
+      "Facial"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "37, 25-year-old, 6 months, 1464"
+  },
+  {
+    "pdf_page": 1465,
+    "printed_page": 1465,
+    "page_type": "question_marked",
+    "printed_q": "37",
+    "stem": "A 25-year-old male patient presented with left enophthalmos. He gave history of receiving a punch in that eye 6 months ago. On examination, there was hypoesthesia over the left side of the nose, upper lip, upper teeth, and gum. Which of the following nerves is commonly affected?",
+    "options": [
+      "Infraorbital",
+      "Supratrochlear",
+      "Supraorbital",
+      "Facial"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "A blow-out fracture of the orbital floor damages the infraorbital nerve, leading to numbness over the cheek, upper lip, and gums. Enophthalmos and restricted eye movement may also occur.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "37, 25, 6, 1465"
+  },
+  {
+    "pdf_page": 1466,
+    "printed_page": 1466,
+    "page_type": "question_unmarked",
+    "printed_q": "38",
+    "stem": "Which of the following is a feature of preseptal cellulitis?",
+    "options": [
+      "Conjunctival chemosis",
+      "Normal ocular motility",
+      "Binocular diplopia",
+      "Proptosis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "38, 1466"
+  },
+  {
+    "pdf_page": 1467,
+    "printed_page": 1467,
+    "page_type": "question_marked",
+    "printed_q": "38",
+    "stem": "Which of the following is a feature of preseptal cellulitis?",
+    "options": [
+      "Conjunctival chemosis",
+      "Normal ocular motility",
+      "Binocular diplopia",
+      "Proptosis"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Preseptal cellulitis affects tissues anterior to the orbital septum, so eye movements and vision remain normal. In contrast, orbital cellulitis involves the orbit and causes proptosis and restricted motility.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "38, 1467"
+  },
+  {
+    "pdf_page": 1468,
+    "printed_page": "1468",
+    "page_type": "question_unmarked",
+    "printed_q": "39",
+    "stem": "Which of the following is responsible for the secretion of the outer oily layer of the tear film?",
+    "options": [
+      "Meibomian gland",
+      "Main lacrimal gland",
+      "Goblet cells",
+      "Krause glands"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "39, 1468"
+  },
+  {
+    "pdf_page": 1469,
+    "printed_page": "1469",
+    "page_type": "question_marked",
+    "printed_q": "39",
+    "stem": "Which of the following is responsible for the secretion of the outer oily layer of the tear film?",
+    "options": [
+      "Meibomian gland",
+      "Main lacrimal gland",
+      "Goblet cells",
+      "Krause glands"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "The Meibomian glands secrete the outer oily layer of the tear film, which prevents tear evaporation. Goblet cells produce mucin, and lacrimal glands produce the aqueous layer.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "39, 1469"
+  },
+  {
+    "pdf_page": 1470,
+    "printed_page": 1470,
+    "page_type": "question_unmarked",
+    "printed_q": "40",
+    "stem": "A 59-year-old lady presented with chronic painless tearing and recurrent conjunctivitis in her right eye over the last year. On examination, there was a positive regurge test on the affected side. Which of the following is the treatment of choice?",
+    "options": [
+      "Digital massage of the lacrimal sac",
+      "Nasolacrimal duct probing",
+      "Dacryocystorhinostomy",
+      "Systemic antibiotics"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "40, 59, 1470"
+  },
+  {
+    "pdf_page": 1471,
+    "printed_page": 1471,
+    "page_type": "question_marked",
+    "printed_q": "40",
+    "stem": "A 59-year-old lady presented with chronic painless tearing and recurrent conjunctivitis in her right eye over the last year. On examination, there was a positive regurge test on the affected side. Which of the following is the treatment of choice?",
+    "options": [
+      "Digital massage of the lacrimal sac",
+      "Nasolacrimal duct probing",
+      "Dacryocystorhinostomy",
+      "Systemic antibiotics"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Chronic dacryocystitis due to nasolacrimal duct obstruction is treated surgically by DCR, which creates a new drainage pathway between the lacrimal sac and nasal cavity.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "40, 59, 1471"
+  },
+  {
+    "pdf_page": 1472,
+    "printed_page": 1472,
+    "page_type": "question_unmarked",
+    "printed_q": "41",
+    "stem": "A 20-year-old female patient presented with one day of history of redness and pain in the left upper eyelid. On examination, you noticed acute suppurative inflammation of one of the lash follicles. Which of the following terms describes the condition?",
+    "options": [
+      "Stye",
+      "Chalazion",
+      "Hordeolum internum",
+      "Trichiasis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "41, 20, one, 1472"
+  },
+  {
+    "pdf_page": 1473,
+    "printed_page": "1473",
+    "page_type": "question_marked",
+    "printed_q": "41",
+    "stem": "A 20-year-old female patient presented with one day of history of redness and pain in the left upper eyelid. On examination, you noticed acute suppurative inflammation of one of the lash follicles. Which of the following terms describes the condition?",
+    "options": [
+      "Stye",
+      "Chalazion",
+      "Hordeolum internum",
+      "Trichiasis"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "A stye is an acute bacterial infection (usually Staphylococcus aureus) of an eyelash follicle or its sebaceous gland. It presents with localized painful swelling, redness, and tenderness at the eyelid margin.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "20, one, 1473"
+  },
+  {
+    "pdf_page": 1474,
+    "printed_page": 1474,
+    "page_type": "question_unmarked",
+    "printed_q": "42",
+    "stem": "Which of the following is the most frequent causative agent of viral conjunctivitis?",
+    "options": [
+      "Cytomegalovirus",
+      "Herpes zoster virus",
+      "Herpes simplex virus",
+      "Adenovirus"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "42, 1474"
+  },
+  {
+    "pdf_page": 1475,
+    "printed_page": 1475,
+    "page_type": "question_marked",
+    "printed_q": "42",
+    "stem": "Which of the following is the most frequent causative agent of viral conjunctivitis?",
+    "options": [
+      "Cytomegalovirus",
+      "Herpes zoster virus",
+      "Herpes simplex virus",
+      "Adenovirus"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "Adenovirus is the most common cause of viral conjunctivitis, often following an upper respiratory infection. It causes watery discharge, follicles, and preauricular lymphadenopathy.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "42, 1475"
+  },
+  {
+    "pdf_page": 1476,
+    "printed_page": 1476,
+    "page_type": "question_unmarked",
+    "printed_q": "43",
+    "stem": "A 39-year-old gentleman came to the clinic complaining of recurrent bilateral severe itching and mucous ropy discharge. On examination, there is bilateral small papillae with diffuse conjunctival injection and chemosis. The skin of the eye lids of both eyes was dry, red and scaly. Which of the following is the most probable diagnosis?",
+    "options": [
+      "Bacterial conjunctivitis",
+      "Allergic conjunctivitis",
+      "Adenoviral conjunctivitis",
+      "Dacryocystitis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "43, 39, 1476"
+  },
+  {
+    "pdf_page": 1477,
+    "printed_page": "1477",
+    "page_type": "question_marked",
+    "printed_q": "43",
+    "stem": "A 39-year-old gentleman came to the clinic complaining of recurrent bilateral severe itching and mucous ropy discharge. On examination, there is bilateral small papillae with diffuse conjunctival injection and chemosis. The skin of the eye lids of both eyes was dry, red and scaly. Which of the following is the most probable diagnosis?",
+    "options": [
+      "Bacterial conjunctivitis",
+      "Allergic conjunctivitis",
+      "Adenoviral conjunctivitis",
+      "Dacryocystitis"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Allergic conjunctivitis presents with bilateral itching, ropy mucous discharge, and conjunctival papillae. It is often associated with atopic dermatitis, as seen with dry, red, scaly eyelids.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "43, 39"
+  },
+  {
+    "pdf_page": 1478,
+    "printed_page": "1478",
+    "page_type": "question_unmarked",
+    "printed_q": "44",
+    "stem": "A 25-year-old lady came to the clinic complaining of bilateral eye redness, irritation and watery discharge that started in the left eye one day before then affected the right eye as well. On examination, there was bilateral conjunctival hyperemia and follicles. There was painful lymphadenopathy. She stated that she had a cold a few days ago. Which of the following is a useful line of treatment?",
+    "options": [
+      "Topical vasoconstrictors",
+      "Oral amoxicillin",
+      "Topical cyclopentolate",
+      "Intravenous acetazolamide"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "44, 25, one, 1478"
+  },
+  {
+    "pdf_page": 1479,
+    "printed_page": "1479",
+    "page_type": "question_marked",
+    "printed_q": "44",
+    "stem": "A 25-year-old lady came to the clinic complaining of bilateral eye redness, irritation and watery discharge that started in the left eye one day before then affected the right eye as well. On examination, there was bilateral conjunctival hyperemia and follicles. There was painful lymphadenopathy. She stated that she had a cold a few days ago. Which of the following is a useful line of treatment?",
+    "options": [
+      "Topical vasoconstrictors",
+      "Oral amoxicillin",
+      "Topical cyclopentolate",
+      "Intravenous acetazolamide"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Adenoviral conjunctivitis is self-limiting, and treatment is mainly supportive. Topical vasoconstrictors relieve redness and discomfort while the infection resolves.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "44, 25, one, 1479"
+  },
+  {
+    "pdf_page": 1480,
+    "printed_page": 1480,
+    "page_type": "question_unmarked",
+    "printed_q": "45",
+    "stem": "Which of the following is useful to differentiate between episcleritis and scleritis?",
+    "options": [
+      "Phenylephrine 2.5% drops",
+      "Phenylephrine 5% drops",
+      "Phenylephrine 10% drops",
+      "Phenylephrine 20% drops"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "45, 2.5%, 5%, 10%, 20%, 1480"
+  },
+  {
+    "pdf_page": 1481,
+    "printed_page": 1481,
+    "page_type": "question_marked",
+    "printed_q": 45,
+    "stem": "Which of the following is useful to differentiate between episcleritis and scleritis?",
+    "options": [
+      "Phenylephrine 2.5% drops",
+      "Phenylephrine 5% drops",
+      "Phenylephrine 10% drops",
+      "Phenylephrine 20% drops"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Phenylephrine 10% causes blanching of superficial vessels in episcleritis but not in scleritis. This helps differentiate the two conditions clinically.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "45, 2.5%, 5%, 10%, 20%, 1481"
+  },
+  {
+    "pdf_page": 1482,
+    "printed_page": 1482,
+    "page_type": "question_unmarked",
+    "printed_q": "46",
+    "stem": "Which of the following can cause miosis?",
+    "options": [
+      "Acute angle closure glaucoma",
+      "Acute iridocyclitis",
+      "Acute conjunctivitis",
+      "Allergic conjunctivitis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "46, 1482"
+  },
+  {
+    "pdf_page": 1483,
+    "printed_page": "1483",
+    "page_type": "question_marked",
+    "printed_q": "46",
+    "stem": "Which of the following can cause miosis?",
+    "options": [
+      "Acute angle closure glaucoma",
+      "Acute iridocyclitis",
+      "Acute conjunctivitis",
+      "Allergic conjunctivitis"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Miosis occurs in acute iridocyclitis due to irritation of the sphincter pupillae muscle. Other signs include ciliary injection and pain.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "46, 1483"
+  },
+  {
+    "pdf_page": 1484,
+    "printed_page": 1484,
+    "page_type": "question_unmarked",
+    "printed_q": 47,
+    "stem": "A 92-year-old female patient came to the clinic complaining of gradual progressive diminution of the vision in her left eye. On examination, the visual acuity was hand motion, and the red reflex was absent. There was no fundus view in the left eye. The pupillary reflexes were normal in both eyes. What is the most probable diagnosis?",
+    "options": [
+      "Nuclear sclerosis",
+      "Posterior subcapsular cataract",
+      "Mature cataract",
+      "Immature cataract"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "92, 47, 1484"
+  },
+  {
+    "pdf_page": 1485,
+    "printed_page": 1485,
+    "page_type": "question_marked",
+    "printed_q": "47",
+    "stem": "A 92-year-old female patient came to the clinic complaining of gradual progressive diminution of the vision in her left eye. On examination, the visual acuity was hand motion, and the red reflex was absent. There was no fundus view in the left eye. The pupillary reflexes were normal in both eyes. What is the most probable diagnosis?",
+    "options": [
+      "Nuclear sclerosis",
+      "Posterior subcapsular cataract",
+      "Mature cataract",
+      "Immature cataract"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "In a mature cataract, the lens becomes completely opaque, causing absent red reflex and no fundus view. Pupillary reflexes remain normal since the optic pathway is intact.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "47, 92, 1485"
+  },
+  {
+    "pdf_page": 1486,
+    "printed_page": "1486",
+    "page_type": "question_unmarked",
+    "printed_q": "48",
+    "stem": "48. A 32-year-old male patient presented with diminution of vision, photophobia, ocular pain and redness in his right eye. Examination of the eye showed ciliary injection, anterior chamber cells, keratic precipitates and aqueous flare. Which of the following is a possible line of treatment?",
+    "options": [
+      "Steroid drops",
+      "Pilocarpine drops",
+      "Latanoprost drops",
+      "Topical anesthetic drops"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "48, 32"
+  },
+  {
+    "pdf_page": 1487,
+    "printed_page": 1487,
+    "page_type": "question_marked",
+    "printed_q": "48",
+    "stem": "A 32-year-old male patient presented with diminution of vision, photophobia, ocular pain and redness in his right eye. Examination of the eye showed ciliary injection, anterior chamber cells, keratic precipitates and aqueous flare. Which of the following is a possible line of treatment?",
+    "options": [
+      "a. Steroid drops",
+      "b. Pilocarpine drops",
+      "c. Latanoprost drops",
+      "d. Topical anesthetic drops"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Anterior uveitis (iridocyclitis) is treated with topical corticosteroids to reduce inflammation. Cycloplegic agents may also be added for pain relief.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "48, 32, 1487"
+  },
+  {
+    "pdf_page": 1488,
+    "printed_page": 1488,
+    "page_type": "question_unmarked",
+    "printed_q": "49",
+    "stem": "A 55-year-old patient came to the clinic with frequent changes of the reading glasses. On examination, the visual acuity was 6/6 and the intraocular pressure was 28 mmHg in both eyes. Fundus examination showed a hemorrhage on the optic disc of the right eye and the cup to disc ratio was 0.8 in both eyes. Which of the following investigations is useful to confirm the diagnosis?",
+    "options": [
+      "Automated perimetry",
+      "Fundus fluorescein angiography",
+      "Pentacam",
+      "Biometry"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "49, 55, 6/6, 28, mmHg, 0.8, 1488"
+  },
+  {
+    "pdf_page": 1489,
+    "printed_page": "1489",
+    "page_type": "question_marked",
+    "printed_q": "49",
+    "stem": "A 55-year-old patient came to the clinic with frequent changes of the reading glasses. On examination, the visual acuity was 6/6 and the intraocular pressure was 28 mmHg in both eyes. Fundus examination showed a hemorrhage on the optic disc of the right eye and the cup to disc ratio was 0.8 in both eyes. Which of the following investigations is useful to confirm the diagnosis?",
+    "options": [
+      "Automated perimetry",
+      "Fundus fluorescein angiography",
+      "Pentacam",
+      "Biometry"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Automated perimetry assesses visual field loss typical of glaucoma. It confirms the diagnosis suggested by elevated IOP and optic disc cupping.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "49, 55, 6/6, 28, 0.8, 1489"
+  },
+  {
+    "pdf_page": 1490,
+    "printed_page": "1490",
+    "page_type": "question_unmarked",
+    "printed_q": "50",
+    "stem": "Type of staphyloma in high myopia is:",
+    "options": [
+      "Anterior staphyloma",
+      "Ciliary staphyloma",
+      "Intercalary staphyloma",
+      "Posterior staphyloma"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "50, 1490"
+  },
+  {
+    "pdf_page": 1491,
+    "printed_page": "1491",
+    "page_type": "question_marked",
+    "printed_q": "50",
+    "stem": "Type of staphyloma in high myopia is:",
+    "options": [
+      "Anterior staphyloma",
+      "Ciliary staphyloma",
+      "Intercalary staphyloma",
+      "Posterior staphyloma"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "In high myopia, stretching of the posterior sclera causes a posterior staphyloma near the optic disc. It leads to progressive visual deterioration.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "50, 1491"
+  },
+  {
+    "pdf_page": 1492,
+    "printed_page": "1492",
+    "page_type": "question_unmarked",
+    "printed_q": "51",
+    "stem": "To diagnose dry eye we do:",
+    "options": [
+      "Canalicular probing",
+      "Regurge test",
+      "Schirmer test",
+      "Fluorescein dye test"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "51, 1492"
+  },
+  {
+    "pdf_page": 1493,
+    "printed_page": "1493",
+    "page_type": "question_marked",
+    "printed_q": "51",
+    "stem": "To diagnose dry eye we do:",
+    "options": [
+      "Canalicular probing",
+      "Regurge test",
+      "Schirmer test",
+      "Fluorescein dye test"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "The Schirmer test measures tear production using filter paper strips. It helps diagnose dry eye syndrome.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "51, 1493"
+  },
+  {
+    "pdf_page": 1494,
+    "printed_page": 1494,
+    "page_type": "question_unmarked",
+    "printed_q": "52",
+    "stem": "Signs of activity of trachoma include:",
+    "options": [
+      "Herbert's pits of the upper limbus",
+      "Scarring of the palpebral conjunctiva",
+      "Follicles in the upper palpebral conjunctiva",
+      "Cicatricial entropion"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "52, 1494"
+  },
+  {
+    "pdf_page": 1495,
+    "printed_page": "1495",
+    "page_type": "question_marked",
+    "printed_q": "52",
+    "stem": "Signs of activity of trachoma include:",
+    "options": [
+      "Herbert's pits of the upper limbus",
+      "Scarring of the palpebral conjunctiva",
+      "Follicles in the upper palpebral conjunctiva",
+      "Cicatricial entropion"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Active trachoma shows follicles in the upper tarsal conjunctiva, indicating ongoing Chlamydia trachomatis infection. Scarring and Herbert's pits indicate inactive or healed disease.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "52, 1495"
+  },
+  {
+    "pdf_page": 1496,
+    "printed_page": 1496,
+    "page_type": "question_unmarked",
+    "printed_q": "53",
+    "stem": "All of the following can be symptoms of a rhegmatogenous retinal detachment EXCEPT:",
+    "options": [
+      "Photopsia",
+      "Floaters",
+      "Field defect",
+      "Night blindness"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "53, 1496"
+  },
+  {
+    "pdf_page": 1497,
+    "printed_page": 1497,
+    "page_type": "question_marked",
+    "printed_q": "53",
+    "stem": "All of the following can be symptoms of a rhegmatogenous retinal detachment EXCEPT:",
+    "options": [
+      "Photopsia",
+      "Floaters",
+      "Field defect",
+      "Night blindness"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "Rhegmatogenous retinal detachment presents with flashes (photopsia), floaters, and field defects not night blindness. Night blindness occurs in retinitis pigmentosa.",
+    "figure": true,
+    "figure_desc": "A table titled 'Clinical features of RRD' listing symptoms.",
+    "numeric_note": "53, 4, 1497, 4"
+  },
+  {
+    "pdf_page": 1498,
+    "printed_page": 1498,
+    "page_type": "question_unmarked",
+    "printed_q": 54,
+    "stem": "The white line in the lid margin represents:",
+    "options": [
+      "The lash line",
+      "The submuscular space",
+      "Orifices of Meibomian glands",
+      "Posterior lid margin"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "54, 1498"
+  },
+  {
+    "pdf_page": 1499,
+    "printed_page": 1499,
+    "page_type": "question_marked",
+    "printed_q": "54",
+    "stem": "The white line in the lid margin represents:",
+    "options": [
+      "The lash line",
+      "The submuscular space",
+      "Orifices of Meibomian glands",
+      "Posterior lid margin"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "The white line on the lid margin marks the openings of the Meibomian glands, which secrete the lipid layer of the tear film.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "54, 1499"
+  },
+  {
+    "pdf_page": 1500,
+    "printed_page": 1500,
+    "page_type": "question_unmarked",
+    "printed_q": "55",
+    "stem": "Ophthalmic manifestations of thyroid eye disease include EXCEPT:",
+    "options": [
+      "Upper lid retraction",
+      "Proptosis",
+      "Monocular diplopia due to extraocular muscle involvement",
+      "Visual loss due to optic nerve compression"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "55, 1500"
+  },
+  {
+    "pdf_page": 1501,
+    "printed_page": 1501,
+    "page_type": "question_marked",
+    "printed_q": "55",
+    "stem": "Ophthalmic manifestations of thyroid eye disease include EXCEPT:",
+    "options": [
+      "Upper lid retraction",
+      "Proptosis",
+      "Monocular diplopia due to extraocular muscle involvement",
+      "Visual loss due to optic nerve compression"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "In thyroid eye disease, diplopia is binocular due to extraocular muscle restriction, not monocular. Monocular diplopia is usually optical in origin.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "55, 1501"
+  },
+  {
+    "pdf_page": 1502,
+    "printed_page": 1502,
+    "page_type": "question_unmarked",
+    "printed_q": "56",
+    "stem": "Lagophthalmos is:",
+    "options": [
+      "Wide palpebral fissure",
+      "The presence of lid lag",
+      "Inability to close palpebral fissure",
+      "Incomplete opening of the palpebral fissure"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "56, 1502"
+  },
+  {
+    "pdf_page": 1503,
+    "printed_page": "1503",
+    "page_type": "question_marked",
+    "printed_q": "56",
+    "stem": "Lagophthalmos is:",
+    "options": [
+      "Wide palpebral fissure",
+      "The presence of lid lag",
+      "Inability to close palpebral fissure",
+      "Incomplete opening of the palpebral fissure"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Lagophthalmos is the inability to close the eyelids completely, often due to facial nerve palsy. It may lead to exposure keratitis.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "56, 1503"
+  },
+  {
+    "pdf_page": 1504,
+    "printed_page": "1504",
+    "page_type": "question_unmarked",
+    "printed_q": "57",
+    "stem": "The retina is composed of:",
+    "options": [
+      "6 layers",
+      "8 layers",
+      "9 layers",
+      "10 layers"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "57, 6, 8, 9, 10, 1504"
+  },
+  {
+    "pdf_page": 1505,
+    "_parse_error": true,
+    "_raw": "gemini/gemini-3.1-flash-lite: model — [400]: Invalid value at 'contents[0].parts[1].inline_data.data' (TYPE_BYTES), Base64 decoding failed for \"iVBORw0KGgoAAAANSUhEUgAABNkAAAbaCAIAAAB3QTY3AAAACXBIWXMA"
+  },
+  {
+    "pdf_page": 1506,
+    "printed_page": "1506",
+    "page_type": "question_unmarked",
+    "printed_q": "58",
+    "stem": "Color vision is tested by:",
+    "options": [
+      "Hess screen",
+      "Ishihara plates",
+      "Lancaster screen",
+      "Amsler's grid"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "58, 1506"
+  },
+  {
+    "pdf_page": 1507,
+    "printed_page": "1507",
+    "page_type": "question_marked",
+    "printed_q": "58",
+    "stem": "Color vision is tested by:",
+    "options": [
+      "Hess screen",
+      "Ishihara plates",
+      "Lancaster screen",
+      "Amsler's grid"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Ishihara plates are used to assess color vision, mainly detecting red-green color deficiencies. They consist of colored dot patterns forming numbers or shapes.",
+    "figure": true,
+    "figure_desc": "Ishihara color vision test plate displaying the number 74.",
+    "numeric_note": "58, 74, 1507"
+  },
+  {
+    "pdf_page": 1508,
+    "printed_page": "1508",
+    "page_type": "question_unmarked",
+    "printed_q": "59",
+    "stem": "Sign of primary open angle glaucoma:",
+    "options": [
+      "Ciliary congestion",
+      "Oval dilated",
+      "Absent red reflex",
+      "Large cup/disc ratio"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "59, 1508"
+  },
+  {
+    "pdf_page": 1509,
+    "printed_page": "1509",
+    "page_type": "question_marked",
+    "printed_q": "59",
+    "stem": "Sign of primary open angle glaucoma:",
+    "options": [
+      "Ciliary congestion",
+      "Oval dilated",
+      "Absent red reflex",
+      "Large cup/disc ratio"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "In primary open-angle glaucoma, the optic disc shows a large cup-to-disc ratio due to progressive loss of nerve fibers. Other findings include raised IOP and visual field defects.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "59, 1509"
+  },
+  {
+    "pdf_page": 1510,
+    "printed_page": 1510,
+    "page_type": "question_unmarked",
+    "printed_q": "60",
+    "stem": "Afferent pupillary defect is seen in:",
+    "options": [
+      "Third nerve paralysis",
+      "Sympathetic paralysis",
+      "Optic atrophy",
+      "Lesions of the occipital cortex"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "60, 1510"
+  },
+  {
+    "pdf_page": 1511,
+    "printed_page": 1511,
+    "page_type": "question_marked",
+    "printed_q": 60,
+    "stem": "Afferent pupillary defect is seen in:",
+    "options": [
+      "Third nerve paralysis",
+      "Sympathetic paralysis",
+      "Optic atrophy",
+      "Lesions of the occipital cortex"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "An afferent pupillary defect (Marcus Gunn pupil) occurs when the optic nerve is damaged, as in optic atrophy. The pupil constricts less when light is shone in the affected eye.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "60, 1511"
+  },
+  {
+    "pdf_page": 1512,
+    "printed_page": 1512,
+    "page_type": "question_unmarked",
+    "printed_q": 61,
+    "stem": "In total vitreous hemorrhage:",
+    "options": [
+      "Fundus fluorescein angiography is indicated",
+      "Fundus examination shows the etiology of the condition",
+      "Ultrasonography is important",
+      "The red reflex is bright"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "61, 1512"
+  },
+  {
+    "pdf_page": 1513,
+    "printed_page": "1513",
+    "page_type": "question_marked",
+    "printed_q": "61",
+    "stem": "In total vitreous hemorrhage:",
+    "options": [
+      "Fundus fluorescein angiography is indicated",
+      "Fundus examination shows the etiology of the condition",
+      "Ultrasonography is important",
+      "The red reflex is bright"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "In total vitreous hemorrhage, the fundus view is obscured, so B-scan ultrasonography helps detect underlying retinal detachment or tumors.",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "61, 1513"
+  },
+  {
+    "pdf_page": 1514,
+    "printed_page": "1514",
+    "page_type": "question_unmarked",
+    "printed_q": "62",
+    "stem": "Phacolytic glaucoma may occur in:",
+    "options": [
+      "Immature senile cataract",
+      "Nuclear cataract",
+      "Intumescent cataract",
+      "Hypermature senile cataract"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "62, 1514"
+  },
+  {
+    "pdf_page": 1515,
+    "printed_page": 1515,
+    "page_type": "question_marked",
+    "printed_q": "62",
+    "stem": "Phacolytic glaucoma may occur in:",
+    "options": [
+      "Immature senile cataract",
+      "Nuclear cataract",
+      "Intumescent cataract",
+      "Hypermature senile cataract"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "Phacolytic glaucoma occurs when lens proteins leak from a hypermature cataract, causing secondary open-angle glaucoma due to inflammatory blockage of trabecular meshwork.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "62, 1515"
+  },
+  {
+    "pdf_page": 1516,
+    "printed_page": "1516",
+    "page_type": "question_unmarked",
+    "printed_q": "63",
+    "stem": "Ectropion can be due to:",
+    "options": [
+      "Scarring of the conjunctiva",
+      "Atrophic eye",
+      "Injury to the third nerve",
+      "Injury to the seventh nerve"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "63, 1516"
+  },
+  {
+    "pdf_page": 1517,
+    "printed_page": 1517,
+    "page_type": "question_marked",
+    "printed_q": "63",
+    "stem": "Ectropion can be due to:",
+    "options": [
+      "Scarring of the conjunctiva",
+      "Atrophic eye",
+      "Injury to the third nerve",
+      "Injury to the seventh nerve"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "Ectropion, or outward turning of the eyelid, can result from facial nerve palsy (7th nerve), which weakens orbicularis oculi muscle tone.",
+    "figure": true,
+    "figure_desc": "A photograph of an eye displaying ectropion.",
+    "numeric_note": "63, 7th, 1517"
+  },
+  {
+    "pdf_page": 1518,
+    "printed_page": "1518",
+    "page_type": "question_unmarked",
+    "printed_q": "64",
+    "stem": "Corneal blood staining is due to:",
+    "options": [
+      "Partial hyphema",
+      "Vitreous hemorrhage",
+      "Total hyphema",
+      "Total hyphema with prolonged rise in IOP"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "64, 1518"
+  },
+  {
+    "pdf_page": 1519,
+    "printed_page": 1519,
+    "page_type": "question_marked",
+    "printed_q": "64",
+    "stem": "Corneal blood staining is due to:",
+    "options": [
+      "Partial hyphema",
+      "Vitreous hemorrhage",
+      "Total hyphema",
+      "Total hyphema with prolonged rise in IOP"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "Corneal blood staining occurs when total hyphema is accompanied by persistently high intraocular pressure, forcing red cells and hemoglobin into the cornea.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "64, 1519"
+  },
+  {
+    "pdf_page": 1520,
+    "printed_page": 1520,
+    "page_type": "question_unmarked",
+    "printed_q": "65",
+    "stem": "The anterior chamber is abnormally deep in EXCEPT:",
+    "options": [
+      "Aphakia",
+      "Congenital glaucoma",
+      "Keratoconus",
+      "Perforated corneal ulcer"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "65, 1520"
+  },
+  {
+    "pdf_page": 1521,
+    "printed_page": "1521",
+    "page_type": "question_marked",
+    "printed_q": "65",
+    "stem": "The anterior chamber is abnormally deep in EXCEPT:",
+    "options": [
+      "Aphakia",
+      "Congenital glaucoma",
+      "Keratoconus",
+      "Perforated corneal ulcer"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "•Aphakia: Absence of the lens increases the anterior chamber depth.\n•Congenital glaucoma: Elevated intraocular pressure enlarges the globe and deepens the anterior chamber.\n•Keratoconus: Corneal thinning and protrusion result in a deeper anterior chamber.\n•Perforated corneal ulcer: Causes leakage of aqueous humor, leading to a shallow or collapsed anterior chamber",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "65, 1521"
+  },
+  {
+    "pdf_page": 1522,
+    "_parse_error": true,
+    "_raw": "gemini/gemini-3.1-flash-lite: model — [400]: Invalid value at 'contents[0].parts[1].inline_data.data' (TYPE_BYTES), Base64 decoding failed for \"iVBORw0KGgoAAAANSUhEUgAABNkAAAbaCAIAAAB3QTY3AAAACXBIWXMA"
+  },
+  {
+    "pdf_page": 1523,
+    "printed_page": "1523",
+    "page_type": "question_marked",
+    "printed_q": "66",
+    "stem": "The axial length of the eye can be measured by:",
+    "options": [
+      "Keratometry",
+      "Exophthalmometry",
+      "Ophthalmoscopy",
+      "A scan ultrasound"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "A-scan ultrasonography measures the eye’s axial length, essential for calculating intraocular lens power before cataract surgery.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "66, 1523"
+  },
+  {
+    "pdf_page": 1524,
+    "printed_page": "1524",
+    "page_type": "question_unmarked",
+    "printed_q": "67",
+    "stem": "A left optic tract lesion is manifested by:",
+    "options": [
+      "Right homonymous hemianopia",
+      "Left homonymous hemianopia",
+      "Bitemporal hemianopia",
+      "Binasal hemianopia"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "67, 1524"
+  },
+  {
+    "pdf_page": 1525,
+    "printed_page": 1525,
+    "page_type": "question_marked",
+    "printed_q": "67",
+    "stem": "A left optic tract lesion is manifested by:",
+    "options": [
+      "Right homonymous hemianopia",
+      "Left homonymous hemianopia",
+      "Bitemporal hemianopia",
+      "Binasal hemianopia"
+    ],
+    "key_letter": "a",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "A left optic tract lesion affects the right visual fields of both eyes, producing right homonymous hemianopia.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "67, 1525"
+  },
+  {
+    "pdf_page": 1526,
+    "printed_page": "1526",
+    "page_type": "question_unmarked",
+    "printed_q": "68. The most common type of intraocular lens used now is:\na. Anterior chamber lens\nb. Posterior chamber lens\nc. Scleral fixation lens\nd. All of the above",
+    "stem": "The most common type of intraocular lens used now is:",
+    "options": [
+      "Anterior chamber lens",
+      "Posterior chamber lens",
+      "Scleral fixation lens",
+      "All of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "68, 1526"
+  },
+  {
+    "pdf_page": 1527,
+    "printed_page": "1527",
+    "page_type": "question_marked",
+    "printed_q": "68",
+    "stem": "The most common type of intraocular lens used now is:",
+    "options": [
+      "Anterior chamber lens",
+      "Posterior chamber lens",
+      "Scleral fixation lens",
+      "All of the above"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "The posterior chamber intraocular lens is the most common type implanted today, placed behind the iris and in front of the posterior capsule.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "68, 1527"
+  },
+  {
+    "pdf_page": 1528,
+    "printed_page": 1528,
+    "page_type": "question_unmarked",
+    "printed_q": 69,
+    "stem": "D-shaped pupil is present in:",
+    "options": [
+      "Iridodonesis",
+      "Iridodialysis",
+      "Posterior sychiae",
+      "Total sector iridectomy"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "69, 1528"
+  },
+  {
+    "pdf_page": 1529,
+    "printed_page": 1529,
+    "page_type": "question_marked",
+    "printed_q": "69",
+    "stem": "D-shaped pupil is present in:",
+    "options": [
+      "Iridodonesis",
+      "Iridodialysis",
+      "Posterior sychiae",
+      "Total sector iridectomy"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Iridodialysis is a separation of the iris root from the ciliary body, often due to trauma, giving a D-shaped pupil.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "69, 1529"
+  },
+  {
+    "pdf_page": 1530,
+    "printed_page": 1530,
+    "page_type": "question_unmarked",
+    "printed_q": "70.",
+    "stem": "The commonest cause of leukocoria in a child is:",
+    "options": [
+      "Retinoblastoma",
+      "Persistent hyperplastic primary vitreous",
+      "Congenital cataract",
+      "Congenital toxoplasmosis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "70, 1530"
+  },
+  {
+    "pdf_page": 1531,
+    "printed_page": "1531",
+    "page_type": "question_marked",
+    "printed_q": "70",
+    "stem": "The commonest cause of leukocoria in a child is:",
+    "options": [
+      "Retinoblastoma",
+      "Persistent hyperplastic primary vitreous",
+      "Congenital cataract",
+      "Congenital toxoplasmosis"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "70, 1531"
+  },
+  {
+    "pdf_page": 1532,
+    "printed_page": 1532,
+    "page_type": "question_unmarked",
+    "printed_q": "71",
+    "stem": "Accommodation of the eye can be achieved by:",
+    "options": [
+      "Changing of the anterior-posterior diameter of the eye",
+      "Ciliary muscle contraction",
+      "Changing the curvature of the cornea",
+      "Changing the depth of the anterior chamber"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "71, 1532"
+  },
+  {
+    "pdf_page": 1533,
+    "printed_page": 1533,
+    "page_type": "question_marked",
+    "printed_q": "71",
+    "stem": "Accommodation of the eye can be achieved by:",
+    "options": [
+      "Changing of the anterior-posterior diameter of the eye",
+      "Ciliary muscle contraction",
+      "Changing the curvature of the cornea",
+      "Changing the depth of the anterior chamber"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Accommodation occurs when the ciliary muscle contracts, releasing tension on the zonules, allowing the lens to become more convex for near vision.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "71, 1533"
+  },
+  {
+    "pdf_page": 1534,
+    "printed_page": "1534",
+    "page_type": "question_unmarked",
+    "printed_q": "72",
+    "stem": "Sudden diminution of vision occurs in:",
+    "options": [
+      "Central retinal vein thrombosis",
+      "Central retinal artery occlusion",
+      "Massive vitreous hemorrhage",
+      "Acute angle closure glaucoma"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "72, 1534"
+  },
+  {
+    "pdf_page": 1535,
+    "printed_page": 1535,
+    "page_type": "question_marked",
+    "printed_q": "72",
+    "stem": "Sudden diminution of vision occurs in:",
+    "options": [
+      "Central retinal vein thrombosis",
+      "Central retinal artery occlusion",
+      "Massive vitreous hemorrhage",
+      "Acute angle closure glaucoma"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Sudden, painless loss of vision is characteristic of central retinal artery occlusion due to acute interruption of retinal blood flow.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "72, 1535"
+  },
+  {
+    "pdf_page": 1536,
+    "printed_page": "1536",
+    "page_type": "question_unmarked",
+    "printed_q": "73",
+    "stem": "Recurrent pterygium may be treated by:",
+    "options": [
+      "Simple excision",
+      "Follow up",
+      "Excision with conjunctival autograft",
+      "Topical steroids followed by excision"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "73, 1536"
+  },
+  {
+    "pdf_page": 1537,
+    "printed_page": 1537,
+    "page_type": "question_marked",
+    "printed_q": 73,
+    "stem": "Recurrent pterygium may be treated by:",
+    "options": [
+      "Simple excision",
+      "Follow up",
+      "Excision with conjunctival autograft",
+      "Topical steroids followed by excision"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Recurrent pterygium is best managed by excision followed by conjunctival autograft to reduce recurrence risk.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "73, 1537"
+  },
+  {
+    "pdf_page": 1538,
+    "printed_page": "1538",
+    "page_type": "question_unmarked",
+    "printed_q": "74",
+    "stem": "The type of laser used to perform a posterior capsulotomy is:",
+    "options": [
+      "Argon laser",
+      "Excision laser",
+      "YAG laser",
+      "Carbon dioxide laser"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "74, 1538"
+  },
+  {
+    "pdf_page": 1539,
+    "printed_page": "1539",
+    "page_type": "question_marked",
+    "printed_q": "74",
+    "stem": "The type of laser used to perform a posterior capsulotomy is:",
+    "options": [
+      "Argon laser",
+      "Excision laser",
+      "YAG laser",
+      "Carbon dioxide laser"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Posterior capsulotomy after cataract surgery is performed with Nd:YAG laser to restore visual clarity by removing the opacified posterior capsule.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "74, 1539"
+  },
+  {
+    "pdf_page": 1540,
+    "printed_page": 1540,
+    "page_type": "question_unmarked",
+    "printed_q": "75",
+    "stem": "The following cranial nerve is tested by corneal sensation testing:",
+    "options": [
+      "Optic nerve",
+      "Trigeminal nerve",
+      "Abducent nerve",
+      "Trochlear nerve"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "75, 1540"
+  },
+  {
+    "pdf_page": 1541,
+    "printed_page": "1541",
+    "page_type": "question_marked",
+    "printed_q": "75",
+    "stem": "The following cranial nerve is tested by corneal sensation testing:",
+    "options": [
+      "Optic nerve",
+      "Trigeminal nerve",
+      "Abducent nerve",
+      "Trochlear nerve"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Corneal sensation is mediated by the ophthalmic branch of the trigeminal nerve (cranial nerve V1). Loss indicates trigeminal dysfunction.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "75, 1, 1541"
+  },
+  {
+    "pdf_page": 1542,
+    "printed_page": "1542",
+    "page_type": "question_unmarked",
+    "printed_q": "76",
+    "stem": "The most common cause of unilateral proptosis in an adult is:",
+    "options": [
+      "Cavernous sinus thrombosis",
+      "Orbital cellulitis",
+      "Thyroid eye disease",
+      "Carotid cavernous fistula"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "76, 1542"
+  },
+  {
+    "pdf_page": 1543,
+    "printed_page": 1543,
+    "page_type": "question_marked",
+    "printed_q": "76.",
+    "stem": "The most common cause of unilateral proptosis in an adult is:",
+    "options": [
+      "Cavernous sinus thrombosis",
+      "Orbital cellulitis",
+      "Thyroid eye disease",
+      "Carotid cavernous fistula"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "In adults, the most common cause of unilateral (and bilateral) proptosis is thyroid eye disease due to orbital tissue inflammation and expansion.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "76, 1543"
+  },
+  {
+    "pdf_page": 1544,
+    "printed_page": "1544",
+    "page_type": "question_unmarked",
+    "printed_q": "77",
+    "stem": "Signs of vernal catarrh include:",
+    "options": [
+      "Ciliary injection",
+      "Flat topped papillae",
+      "Large follicles",
+      "All of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "77, 1544"
+  },
+  {
+    "pdf_page": 1545,
+    "printed_page": 1545,
+    "page_type": "question_marked",
+    "printed_q": "77",
+    "stem": "Signs of vernal catarrh include:",
+    "options": [
+      "Ciliary injection",
+      "Flat topped papillae",
+      "Large follicles",
+      "All of the above"
+    ],
+    "key_letter": "b",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Vernal catarrh is a chronic allergic eye disease characterized by flat-topped (cobblestone) papillae on the upper tarsal conjunctiva and intense itching.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "77, 1545"
+  }
+]

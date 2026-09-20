@@ -1,0 +1,946 @@
+{
+  "source_pdf": "Semester 8/Opthalmo/Questions/Opthalmology endpoint.pdf",
+  "requested_range": [
+    1391,
+    1545
+  ],
+  "model": "work-vision",
+  "start_time": "2026-09-20T10:59:44.548Z",
+  "end_time": "2026-09-20T11:25:28.736Z",
+  "pages_completed": 155,
+  "parse_errors": 2,
+  "http_errors": 2,
+  "stopped_by_429": false,
+  "pages": [
+    {
+      "page": 1391,
+      "image": "s22\\p-1391.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1392,
+      "image": "s22\\p-1392.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1393,
+      "image": "s22\\p-1393.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1394,
+      "image": "s22\\p-1394.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1395,
+      "image": "s22\\p-1395.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1396,
+      "image": "s22\\p-1396.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1397,
+      "image": "s22\\p-1397.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1398,
+      "image": "s22\\p-1398.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1399,
+      "image": "s22\\p-1399.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1400,
+      "image": "s22\\p-1400.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1401,
+      "image": "s22\\p-1401.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1402,
+      "image": "s22\\p-1402.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1403,
+      "image": "s22\\p-1403.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1404,
+      "image": "s22\\p-1404.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1405,
+      "image": "s22\\p-1405.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1406,
+      "image": "s22\\p-1406.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1407,
+      "image": "s22\\p-1407.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1408,
+      "image": "s22\\p-1408.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1409,
+      "image": "s22\\p-1409.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1410,
+      "image": "s22\\p-1410.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1411,
+      "image": "s22\\p-1411.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1412,
+      "image": "s22\\p-1412.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1413,
+      "image": "s22\\p-1413.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1414,
+      "image": "s22\\p-1414.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1415,
+      "image": "s22\\p-1415.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1416,
+      "image": "s22\\p-1416.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1417,
+      "image": "s22\\p-1417.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1418,
+      "image": "s22\\p-1418.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1419,
+      "image": "s22\\p-1419.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1420,
+      "image": "s22\\p-1420.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1421,
+      "image": "s22\\p-1421.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1422,
+      "image": "s22\\p-1422.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1423,
+      "image": "s22\\p-1423.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1424,
+      "image": "s22\\p-1424.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1425,
+      "image": "s22\\p-1425.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1426,
+      "image": "s22\\p-1426.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1427,
+      "image": "s22\\p-1427.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1428,
+      "image": "s22\\p-1428.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1429,
+      "image": "s22\\p-1429.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1430,
+      "image": "s22\\p-1430.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1431,
+      "image": "s22\\p-1431.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1432,
+      "image": "s22\\p-1432.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1433,
+      "image": "s22\\p-1433.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1434,
+      "image": "s22\\p-1434.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1435,
+      "image": "s22\\p-1435.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1436,
+      "image": "s22\\p-1436.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1437,
+      "image": "s22\\p-1437.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1438,
+      "image": "s22\\p-1438.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1439,
+      "image": "s22\\p-1439.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1440,
+      "image": "s22\\p-1440.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1441,
+      "image": "s22\\p-1441.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1442,
+      "image": "s22\\p-1442.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1443,
+      "image": "s22\\p-1443.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1444,
+      "image": "s22\\p-1444.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1445,
+      "image": "s22\\p-1445.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1446,
+      "image": "s22\\p-1446.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1447,
+      "image": "s22\\p-1447.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1448,
+      "image": "s22\\p-1448.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1449,
+      "image": "s22\\p-1449.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1450,
+      "image": "s22\\p-1450.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1451,
+      "image": "s22\\p-1451.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1452,
+      "image": "s22\\p-1452.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1453,
+      "image": "s22\\p-1453.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1454,
+      "image": "s22\\p-1454.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1455,
+      "image": "s22\\p-1455.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1456,
+      "image": "s22\\p-1456.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1457,
+      "image": "s22\\p-1457.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1458,
+      "image": "s22\\p-1458.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1459,
+      "image": "s22\\p-1459.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1460,
+      "image": "s22\\p-1460.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1461,
+      "image": "s22\\p-1461.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1462,
+      "image": "s22\\p-1462.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1463,
+      "image": "s22\\p-1463.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1464,
+      "image": "s22\\p-1464.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1465,
+      "image": "s22\\p-1465.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1466,
+      "image": "s22\\p-1466.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1467,
+      "image": "s22\\p-1467.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1468,
+      "image": "s22\\p-1468.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1469,
+      "image": "s22\\p-1469.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1470,
+      "image": "s22\\p-1470.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1471,
+      "image": "s22\\p-1471.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1472,
+      "image": "s22\\p-1472.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1473,
+      "image": "s22\\p-1473.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1474,
+      "image": "s22\\p-1474.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1475,
+      "image": "s22\\p-1475.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1476,
+      "image": "s22\\p-1476.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1477,
+      "image": "s22\\p-1477.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1478,
+      "image": "s22\\p-1478.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1479,
+      "image": "s22\\p-1479.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1480,
+      "image": "s22\\p-1480.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1481,
+      "image": "s22\\p-1481.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1482,
+      "image": "s22\\p-1482.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1483,
+      "image": "s22\\p-1483.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1484,
+      "image": "s22\\p-1484.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1485,
+      "image": "s22\\p-1485.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1486,
+      "image": "s22\\p-1486.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1487,
+      "image": "s22\\p-1487.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1488,
+      "image": "s22\\p-1488.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1489,
+      "image": "s22\\p-1489.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1490,
+      "image": "s22\\p-1490.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1491,
+      "image": "s22\\p-1491.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1492,
+      "image": "s22\\p-1492.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1493,
+      "image": "s22\\p-1493.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1494,
+      "image": "s22\\p-1494.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1495,
+      "image": "s22\\p-1495.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1496,
+      "image": "s22\\p-1496.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1497,
+      "image": "s22\\p-1497.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1498,
+      "image": "s22\\p-1498.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1499,
+      "image": "s22\\p-1499.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1500,
+      "image": "s22\\p-1500.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1501,
+      "image": "s22\\p-1501.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1502,
+      "image": "s22\\p-1502.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1503,
+      "image": "s22\\p-1503.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1504,
+      "image": "s22\\p-1504.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1505,
+      "image": "s22\\p-1505.png",
+      "status": 400,
+      "parse_error": true
+    },
+    {
+      "page": 1506,
+      "image": "s22\\p-1506.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1507,
+      "image": "s22\\p-1507.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1508,
+      "image": "s22\\p-1508.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1509,
+      "image": "s22\\p-1509.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1510,
+      "image": "s22\\p-1510.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1511,
+      "image": "s22\\p-1511.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1512,
+      "image": "s22\\p-1512.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1513,
+      "image": "s22\\p-1513.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1514,
+      "image": "s22\\p-1514.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1515,
+      "image": "s22\\p-1515.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1516,
+      "image": "s22\\p-1516.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1517,
+      "image": "s22\\p-1517.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1518,
+      "image": "s22\\p-1518.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1519,
+      "image": "s22\\p-1519.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1520,
+      "image": "s22\\p-1520.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1521,
+      "image": "s22\\p-1521.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1522,
+      "image": "s22\\p-1522.png",
+      "status": 400,
+      "parse_error": true
+    },
+    {
+      "page": 1523,
+      "image": "s22\\p-1523.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1524,
+      "image": "s22\\p-1524.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1525,
+      "image": "s22\\p-1525.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1526,
+      "image": "s22\\p-1526.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1527,
+      "image": "s22\\p-1527.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1528,
+      "image": "s22\\p-1528.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1529,
+      "image": "s22\\p-1529.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1530,
+      "image": "s22\\p-1530.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1531,
+      "image": "s22\\p-1531.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1532,
+      "image": "s22\\p-1532.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1533,
+      "image": "s22\\p-1533.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1534,
+      "image": "s22\\p-1534.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1535,
+      "image": "s22\\p-1535.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1536,
+      "image": "s22\\p-1536.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1537,
+      "image": "s22\\p-1537.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1538,
+      "image": "s22\\p-1538.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1539,
+      "image": "s22\\p-1539.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1540,
+      "image": "s22\\p-1540.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1541,
+      "image": "s22\\p-1541.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1542,
+      "image": "s22\\p-1542.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1543,
+      "image": "s22\\p-1543.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1544,
+      "image": "s22\\p-1544.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1545,
+      "image": "s22\\p-1545.png",
+      "status": 200,
+      "parse_error": false
+    }
+  ]
+}

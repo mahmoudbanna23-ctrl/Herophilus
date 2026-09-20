@@ -129,3 +129,13 @@ prose "questions". An adjudication is not a citation; record each one.
 When you stop, append to this file's `## Changed since` block (create it) — never edit the body
 above. State: the pinned flip page, the citation convention you chose, sections done, page ranges
 covered, entry count from disk (not from a draft header), collisions logged, anything left open.
+
+## Changed since
+
+### 2026-09-20 -- Half B started by the Half A chat (owner: finish all)
+- Half A is closed: s1-s21 live, 439 in questions.ophtho.ep.js (commit 809dddb). No second chat exists; this stream now owns PDF 1391-2442 too.
+- Method that works, rung 2: one stage-pages.mjs run per section with STAGE_MODEL=work-vision, Poppler bin prepended to PATH, output JSON placed in its own content/ophtho/qb-pages/_sNN-work/ folder so the stager's _manifest.json lands there and never over the tracked one. 155 pages ran in under 10 minutes.
+- s22 Model Exam 1 (PDF 1391-1545) STAGED: _s22-work/oph-ep-p2-s22-model-exam-1.staging.json, 153 of 155 pages, 76 unmarked + 76 marked + 1 opener, printed page = PDF page throughout. OWED: p.1505 and p.1522 returned a Base64 400 -- re-save each PNG through System.Drawing and rerun those two pages with a no-render copy of the stager (the s20 fix), then merge. Staging is NOT yet image-checked.
+- s23 Model Exam 2 (PDF 1546-1700) staging was launched into _s23-work/ at session end; check the file exists and count its pages before trusting it. Renders were in a session scratchpad and are gone.
+- Next: fix the two s22 pages, build the s22 array, sweep against the 439 live chapter questions AND House (expect heavy repeats; fold per the six shapes, exams fold into chapters), add sec rows for part 2 in sec-oph.js, draft only the survivors, separate refuter, splice into questions.ophtho.ep2.js (Q_OPHTHO_EP2, ophep2-). Wire the new data file into index.html and the aggregator at first splice.
+- Gate 0 (offset flip in PDF 2151-2170) is not pinned; it falls out of staging s26, every staged page records printed_page.
