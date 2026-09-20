@@ -175,5 +175,9 @@ Order follows the parent plan: B1 → B2a/b/c → B11 → B3 → B4 → B5 …
   `attempt-check` FAIL identically on the pre-split state — pre-existing, not investigated.
   One leading newline dropped at `storage.js:1` (css likewise), cosmetic. The builder's
   "dist-check 2 failed" was a stale `dist\`; `dist\` is now rebuilt from the split app.
+- NEXT = B1 tokens (`app\css\tokens.css` already exists, holding the old `:root` vars). Open
+  question put to the owner, unanswered at /prep: wait for Codex (back 23:36) or a Claude builder
+  now. Recommendation given: Claude builder, then Opus refuter. After B1: B3 onward per the plan;
+  M10 backdrop, both home layouts and the ✕ strike-out are build items, not questions.
 - Codex imagegen hit the ChatGPT usage limit 2026-09-20 ~20:30, resets 23:36.
   `generated\q4-clepsydra-controls\` holds a prompt and no image; Q4 was asked with drawn previews.
