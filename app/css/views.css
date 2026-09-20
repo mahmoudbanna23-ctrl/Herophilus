@@ -1,49 +1,49 @@
 /* ---------- Misc ---------- */
-.empty{text-align:center;padding:64px 20px;color:var(--ink-4)}
+.empty{text-align:center;padding:64px var(--s-9);color:var(--ink-4)}
 .empty .big{font-size:52px;margin-bottom:14px}
 .empty h3{color:var(--ink-2);font-size:17px;margin:0 0 7px;font-weight:900}
-.empty p{margin:0 auto;font-size:13.5px;max-width:400px;line-height:1.6;font-weight:500}
+.empty p{margin:0 auto;font-size:var(--fs-7);max-width:400px;line-height:1.6;font-weight:500}
 
 .toast{
   position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(90px);
-  background:var(--fill);color:#fff;padding:13px 22px;border-radius:var(--r-3);font-size:13.5px;
-  border:2.5px solid #000;box-shadow:0 10px 24px rgba(0,0,0,.3);z-index:400;opacity:0;
-  transition:all .3s cubic-bezier(.34,1.56,.64,1);font-weight:800;
+  background:var(--fill);color:#fff;padding:var(--s-6) var(--s-9);border-radius:var(--r-lg);font-size:var(--fs-7);
+  border:2.5px solid #000;box-shadow:0 10px 24px rgba(0,0,0,.3);z-index:var(--z-400);opacity:0;
+  transition:all .3s var(--ease-spring);font-weight:800;
 }
 .toast.show{transform:translateX(-50%) translateY(0);opacity:1}
 
 .modal-bg{
-  position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:300;
-  display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px);
+  position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:var(--z-300);
+  display:none;align-items:center;justify-content:center;padding:var(--s-9);backdrop-filter:blur(3px);
   /* A tall modal was unscrollable and cut its own save button off. */
   overflow-y:auto;overscroll-behavior:contain;
 }
 .modal-bg.show{display:flex}
 .modal{
-  border-radius:var(--r);padding:27px;
-  max-width:460px;width:100%;animation:pop .3s cubic-bezier(.34,1.56,.64,1);
+  border-radius:var(--r-lg);padding:var(--s-11);
+  max-width:460px;width:100%;animation:pop .3s var(--ease-spring);
   margin:auto;flex-shrink:0;
 }
 .modal h3{margin:0 0 9px;font-size:20px;font-weight:900;letter-spacing:-.02em}
-.modal p{margin:0 0 19px;color:var(--ink-2);font-size:14px;line-height:1.6;font-weight:500}
+.modal p{margin:0 0 19px;color:var(--ink-2);font-size:var(--fs-8);line-height:1.6;font-weight:500}
 .modal-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
 
 .kbd{
-  display:inline-block;padding:2px 8px;border:2px solid var(--line-2);border-bottom-width:3px;
-  border-radius:var(--r-1);font-size:11px;font-family:ui-monospace,Menlo,monospace;background:var(--bg-2);font-weight:800;
+  display:inline-block;padding:var(--s-1) var(--s-4);border:2px solid var(--line-2);border-bottom-width:3px;
+  border-radius:var(--r-md);font-size:var(--fs-2);font-family:ui-monospace,Menlo,monospace;background:var(--bg-2);font-weight:800;
 }
-.shortcuts{display:grid;grid-template-columns:auto 1fr;gap:10px 17px;font-size:13px;align-items:center}
+.shortcuts{display:grid;grid-template-columns:auto 1fr;gap:10px 17px;font-size:var(--fs-6);align-items:center}
 .shortcuts .d{color:var(--ink-3);font-weight:600}
 
 .filterbar{display:flex;gap:9px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
 /* Source filter — which of the three question banks a module draws from. */
 .bankbar{display:flex;gap:8px;margin:0 0 16px;flex-wrap:wrap;align-items:center}
-.bank-lbl{font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;
+.bank-lbl{font-size:var(--fs-4);font-weight:900;letter-spacing:.08em;text-transform:uppercase;
   color:var(--ink-2);margin-right:2px}
-.bankchip{display:inline-flex;align-items:center;gap:7px;padding:7px 13px;cursor:pointer;
-  border:1px solid var(--line-2);border-radius:var(--r-pill);background:var(--card);color:var(--ink-2);
-  font-family:inherit;font-size:13px;font-weight:800;
-  transition:transform .18s ease,box-shadow .18s,background .18s,color .18s}
+.bankchip{display:inline-flex;align-items:center;gap:7px;padding:var(--s-3) var(--s-6);cursor:pointer;
+  border:1px solid var(--line-2);border-radius:var(--r-lg);background:var(--card);color:var(--ink-2);
+  font-family:inherit;font-size:var(--fs-6);font-weight:800;
+  transition:transform var(--dur-4) ease,box-shadow var(--dur-4),background var(--dur-4),color var(--dur-4)}
 .bankchip:hover{transform:translateY(-2px)}
 /* Off-state is deliberately flat and grey: which sources are live must be
    readable at a glance, or you sit an exam on a filtered set without noticing. */
@@ -57,7 +57,7 @@
    chip wore a pale halo. That is the exact re-merge the token contract forbids. */
 .bankchip.on{background:var(--bk);color:#fff;box-shadow:0 6px 16px var(--sh)}
 .bankchip:not(.on){opacity:.5;text-decoration:line-through}
-.bankn{font-size:11px;font-weight:900;padding:1px 7px;border-radius:var(--r-pill);
+.bankn{font-size:var(--fs-2);font-weight:900;padding:var(--s-1) var(--s-3);border-radius:var(--r-lg);
   background:rgba(0,0,0,.18)}
 .bankchip.on .bankn{background:rgba(0,0,0,.26)}
 .bankchip:not(.on) .bankn{background:rgba(0,0,0,.08)}
@@ -68,9 +68,9 @@
    re-measure first if those colours are ever touched. */
 .pill.bankpill{color:#fff}
 .chip{
-  padding:8px 15px;border:1px solid var(--line-2);border-radius:var(--r-pill);font-size:12.5px;
+  padding:var(--s-4) var(--s-7);border:1px solid var(--line-2);border-radius:var(--r-lg);font-size:var(--fs-5);
   background:var(--card);font-weight:800;
-  transition:transform .13s ease,box-shadow .13s;
+  transition:transform var(--dur-2) ease,box-shadow var(--dur-2);
 }
 .chip:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.25)}
 /* fallback is --fill, not --ink: --ink is near-white since the redesign, so an
@@ -78,17 +78,17 @@
 .chip.on{background:var(--c,var(--fill));color:#fff}
 
 @keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:0}}
-.confetti{position:fixed;top:-14px;width:11px;height:11px;z-index:250;pointer-events:none;animation:fall linear forwards}
+.confetti{position:fixed;top:-14px;width:11px;height:11px;z-index:var(--z-250);pointer-events:none;animation:fall linear forwards}
 
 .mobile-only{display:none}
 @media(max-width:860px){
   .rail{position:fixed;left:-238px;z-index:60;transition:left .24s;box-shadow:8px 0 30px rgba(0,0,0,.3)}
   .rail.open{left:0}
   .mobile-only{display:block}
-  .page{padding:18px 14px}
+  .page{padding:var(--s-8) var(--s-7)}
   #saveWarning, #dataWarning{width:calc(100% - 28px)}   /* the page's gutter halves here; the notice follows it */
-  .qcard{padding:20px 17px}
-  .topbar{padding:10px 14px}
+  .qcard{padding:var(--s-9) var(--s-8)}
+  .topbar{padding:var(--s-5) var(--s-7)}
   h1{font-size:25px}
   .day{flex-wrap:wrap}
   .day-marks{margin-left:auto}
@@ -307,11 +307,11 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
 
 /* ---- entrance motion ---------------------------------------------------- */
 @keyframes pagein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-#page{animation:pagein .34s cubic-bezier(.22,1,.36,1)}
+#page{animation:pagein .34s var(--ease-standard)}
 
 /* scroll reveal — browse screens only, applied by the observer in JS */
 .reveal{opacity:0;transform:translateY(16px)}
-.reveal.in{opacity:1;transform:none;transition:opacity .5s cubic-bezier(.22,1,.36,1),transform .5s cubic-bezier(.22,1,.36,1)}
+.reveal.in{opacity:1;transform:none;transition:opacity .5s var(--ease-standard),transform .5s var(--ease-standard)}
 
 /* ---- accessibility ------------------------------------------------------ */
 /* The original rule already killed animation and transition. Ambient orbs are
@@ -548,8 +548,8 @@ button.card.mod-card{display:flex;flex-direction:column;padding:0}
    --ink-3 on it is unreadable in light mode. */
 .mod-card>.soon{
   position:absolute;top:11px;right:11px;z-index:2;
-  font-size:10px;letter-spacing:.08em;
-  text-transform:uppercase;padding:3px 8px;border-radius:var(--r-pill);
+  font-size:var(--fs-1);letter-spacing:.08em;
+  text-transform:uppercase;padding:var(--s-1) var(--s-4);border-radius:var(--r-lg);
   background:var(--card);border:1px solid var(--line);color:var(--ink-3)
 }
 /* Print drops .mod-art, so anchoring to a corner of nothing would land the
@@ -560,15 +560,15 @@ button.card.mod-card{display:flex;flex-direction:column;padding:0}
 .mod-card>*{position:relative;z-index:1}
 .mod-art{
   display:block;width:100%;aspect-ratio:1;flex:0 0 auto;
-  border-radius:calc(var(--r) - 1px) calc(var(--r) - 1px) 0 0;
+  border-radius:calc(var(--r-lg) - 1px) calc(var(--r-lg) - 1px) 0 0;
   background-image:linear-gradient(var(--c),var(--c)),var(--art);
   background-size:cover;background-position:center;
   background-blend-mode:color;
   opacity:.9;
-  transition:opacity .5s cubic-bezier(.22,1,.36,1),filter .5s cubic-bezier(.22,1,.36,1);
+  transition:opacity .5s var(--ease-standard),filter .5s var(--ease-standard);
 }
 /* the body sits under the art and carries the padding the card gave up */
-.mod-info{padding:15px 17px 17px;display:flex;flex-direction:column;gap:0}
+.mod-info{padding:var(--s-7) var(--s-8) var(--s-8);display:flex;flex-direction:column;gap:0}
 /* a hairline between art and text, so the painting ends deliberately */
 .mod-info::before{
   content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--line-2);
@@ -601,8 +601,8 @@ button.card.locked:hover .mod-art{opacity:.42}
 .hero-panel{
   display:grid;grid-template-columns:minmax(130px,168px) 1fr;gap:28px;align-items:center;
   background:var(--sheen);background-color:var(--card);
-  border:1px solid var(--line-2);border-radius:var(--r);
-  padding:24px 30px;margin-bottom:30px;position:relative;overflow:hidden;
+  border:1px solid var(--line-2);border-radius:var(--r-lg);
+  padding:var(--s-10) var(--s-11);margin-bottom:30px;position:relative;overflow:hidden;
   box-shadow:var(--pop) var(--sh),var(--glow);
 }
 /* a gold rule down the spine, the one ornament on the panel */
@@ -611,20 +611,20 @@ button.card.locked:hover .mod-art{opacity:.42}
   background:linear-gradient(180deg,transparent,var(--gold),transparent);opacity:.65;
 }
 .hp-art img{
-  width:100%;display:block;border-radius:var(--r-2);border:1px solid var(--line-2);
+  width:100%;display:block;border-radius:var(--r-lg);border:1px solid var(--line-2);
   box-shadow:0 10px 26px var(--sh);
 }
 /* the engraving is printed on parchment; on the dark theme it is lifted off the
    page so it reads as an object rather than a bright rectangle */
 :root .hp-art img{filter:sepia(.2) contrast(1.02) brightness(.94)}
 :root[data-theme="light"] .hp-art img{filter:none}
-.hp-kicker{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-4);font-weight:700}
+.hp-kicker{font-size:var(--fs-1);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-4);font-weight:700}
 .hp-name{font-size:33px;letter-spacing:.07em;text-transform:uppercase;margin:7px 0 3px;color:var(--tx);line-height:1}
-.hp-sub{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-text);margin-bottom:13px}
+.hp-sub{font-size:var(--fs-5);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-text);margin-bottom:13px}
 .hp-txt p{margin:0 0 9px;color:var(--ink-2);font-size:15.5px;line-height:1.72;max-width:62ch}
 .hp-txt p:last-child{margin-bottom:0;color:var(--ink-3);font-style:italic}
 @media(max-width:720px){
-  .hero-panel{grid-template-columns:1fr;gap:18px;padding:22px}
+  .hero-panel{grid-template-columns:1fr;gap:18px;padding:var(--s-9)}
   .hp-art{max-width:150px}
 }
 
@@ -644,7 +644,7 @@ button.card.locked:hover .mod-art{opacity:.42}
    and toast (400). A companion that covered a modal would be a bug.
    ============================================================================ */
 .clep{
-  position:fixed;right:20px;bottom:18px;z-index:150;
+  position:fixed;right:20px;bottom:18px;z-index:var(--z-150);
   display:flex;align-items:flex-end;gap:9px;
   touch-action:none;                 /* the figure is a drag handle */
   /* The figure is a PNG now, so it carries its own colour and needs no ramp.
@@ -717,8 +717,8 @@ button.card.locked:hover .mod-art{opacity:.42}
 @keyframes clTear{
   0%{top:14%} 25%{top:63%} 50%{top:31%} 75%{top:79%} 100%{top:46%}
 }
-.clep.swap .cl-ghost{animation:clSwapOut .46s cubic-bezier(.3,.9,.3,1) forwards}
-.clep.swap .cl-main {animation:clSwapIn  .46s cubic-bezier(.3,.9,.3,1) forwards}
+.clep.swap .cl-ghost{animation:clSwapOut .46s var(--ease-soft) forwards}
+.clep.swap .cl-main {animation:clSwapIn  .46s var(--ease-soft) forwards}
 .clep.swap .cl-band {animation:clTear    .46s steps(4,end)}
 .clep.swap .cl-scan {opacity:.9}
 
@@ -772,7 +772,7 @@ button.card.locked:hover .mod-art{opacity:.42}
   80%{transform:translate3d(1.5px,1px,0)} 100%{transform:translate3d(0,0,0)}
 }
 .clep.gl .cl-band{opacity:1}
-.clep.gl .cl-stage{animation:clGlitch .18s steps(3,end) infinite}
+.clep.gl .cl-stage{animation:clGlitch var(--dur-4) steps(3,end) infinite}
 .clep.gl .cl-fig{
   filter:drop-shadow(3px 0 rgba(255,72,60,.6)) drop-shadow(-3px 0 rgba(80,220,255,.5))
          drop-shadow(0 0 6px var(--cl-glow));
@@ -781,12 +781,12 @@ button.card.locked:hover .mod-art{opacity:.42}
 /* ---- what she says ------------------------------------------------------ */
 .cl-say{
   position:relative;max-width:270px;min-width:0;
-  background:var(--cl-panel);border:1px solid var(--cl-edge);border-radius:var(--r-3);
-  padding:11px 30px 12px 14px;
+  background:var(--cl-panel);border:1px solid var(--cl-edge);border-radius:var(--r-lg);
+  padding:var(--s-5) var(--s-11) var(--s-6) var(--s-7);
   color:var(--cl-text);font:400 13.3px/1.58 var(--font-body);
   box-shadow:0 12px 32px var(--sh-deep),0 0 20px rgba(255,150,50,.14);
   opacity:0;transform:translateY(6px) scale(.97);transform-origin:100% 100%;
-  transition:opacity .26s cubic-bezier(.22,1,.36,1),transform .26s cubic-bezier(.22,1,.36,1);
+  transition:opacity .26s var(--ease-standard),transform .26s var(--ease-standard);
   pointer-events:none;
 }
 .cl-say.show{opacity:1;transform:none;pointer-events:auto}
@@ -799,20 +799,20 @@ button.card.locked:hover .mod-art{opacity:.42}
 .cl-x{
   position:absolute;top:6px;right:6px;width:19px;height:19px;border:0;border-radius:50%;
   background:transparent;color:var(--cl-text);opacity:.5;cursor:pointer;line-height:1;
-  font-size:14px;display:flex;align-items:center;justify-content:center;
+  font-size:var(--fs-8);display:flex;align-items:center;justify-content:center;
 }
 .cl-x:hover{opacity:1;background:rgba(255,190,110,.14)}
 
 /* ---- the readout and controls ------------------------------------------- */
 .cl-hud{
-  display:none;align-items:center;gap:7px;padding:5px 11px;border-radius:var(--r-pill);
+  display:none;align-items:center;gap:7px;padding:var(--s-2) var(--s-5);border-radius:var(--r-lg);
   background:var(--cl-panel);border:1px solid var(--cl-edge);color:var(--cl-text);
   font:700 13px/1 var(--font-display);letter-spacing:.07em;
   font-variant-numeric:tabular-nums;white-space:nowrap;
   box-shadow:0 6px 18px var(--sh-soft);
 }
 .clep.timed .cl-hud{display:inline-flex}
-.cl-hud .ph{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;opacity:.72;font-weight:700}
+.cl-hud .ph{font-size:var(--fs-1);letter-spacing:.16em;text-transform:uppercase;opacity:.72;font-weight:700}
 .cl-hud.rest{--cl-edge:rgba(127,174,111,.5)}
 .cl-tools{display:flex;gap:5px;opacity:0;transition:opacity .2s}
 .clep:hover .cl-tools,.clep:focus-within .cl-tools{opacity:1}
@@ -830,7 +830,7 @@ button.card.locked:hover .mod-art{opacity:.42}
    overlapping targets would just move the mis-tap somewhere else. */
 @media(hover:none){
   .cl-tools{opacity:1;gap:8px}
-  .cl-tool{width:36px;height:36px;font-size:15px;position:relative}
+  .cl-tool{width:36px;height:36px;font-size:var(--fs-8);position:relative}
   /* .cl-x is NOT in that list on purpose: it is position:absolute at a corner
      of the speech bubble, so it already anchors its own ::after, and setting
      it relative here would drop it back into the flow. */
@@ -842,7 +842,7 @@ button.card.locked:hover .mod-art{opacity:.42}
 
 /* ---- collapsed ---------------------------------------------------------- */
 .cl-mini{
-  display:none;align-items:center;gap:8px;padding:6px 12px 6px 7px;border-radius:var(--r-pill);
+  display:none;align-items:center;gap:8px;padding:var(--s-3) var(--s-6) var(--s-3) var(--s-3);border-radius:var(--r-lg);
   background:var(--cl-panel);border:1px solid var(--cl-edge);color:var(--cl-text);
   cursor:pointer;font:700 13px/1 var(--font-display);letter-spacing:.06em;
   font-variant-numeric:tabular-nums;box-shadow:0 8px 22px var(--sh-soft);
@@ -888,7 +888,7 @@ button.card.locked:hover .mod-art{opacity:.42}
   .clep{right:12px;bottom:12px}
   .clep.left{right:auto;left:12px}
   .cl-body{width:84px;height:84px}   /* SQUARE, like the desktop size — see above */
-  .cl-say{max-width:min(64vw,240px);font-size:12.6px}
+  .cl-say{max-width:min(64vw,240px);font-size:var(--fs-5)}
 }
 
 /* ---- opt-outs ----------------------------------------------------------- */
@@ -910,8 +910,8 @@ button.card.locked:hover .mod-art{opacity:.42}
 .sess-live{
   display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;
   background:var(--sheen);background-color:var(--card);
-  border:1px solid var(--line-2);border-radius:var(--r);
-  padding:24px 28px;margin-bottom:28px;box-shadow:var(--pop) var(--sh),var(--glow);
+  border:1px solid var(--line-2);border-radius:var(--r-lg);
+  padding:var(--s-10) var(--s-11);margin-bottom:28px;box-shadow:var(--pop) var(--sh),var(--glow);
 }
 .sr-wrap{position:relative;width:172px;height:172px;flex:0 0 auto}
 .sr-ring{display:block;width:100%;height:100%}
@@ -919,21 +919,21 @@ button.card.locked:hover .mod-art{opacity:.42}
   align-items:center;justify-content:center;gap:5px;pointer-events:none}
 .sr-time{font:700 34px/1 var(--font-display);letter-spacing:.03em;color:var(--tx);
   font-variant-numeric:tabular-nums}
-.sr-ph{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);
+.sr-ph{font-size:var(--fs-1);letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);
   font-weight:700;text-align:center;max-width:124px;line-height:1.45}
 .sess-side{min-width:0}
 /* The shared .g3 asks for a 258px minimum column, which is right for the full
    page and wrong beside a 172px ring. The two session tiles stay side by side
    inside the panel, and only collapse on a phone. */
 .sess-live .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.sess-live .stat{padding:13px 14px}
+.sess-live .stat{padding:var(--s-6) var(--s-7)}
 .sess-live .stat .n{font-size:25px}
 .sess-live .stat .emo{right:9px;top:8px;font-size:16px}
-.sess-setup h2{margin:23px 0 10px;font-size:15px}
+.sess-setup h2{margin:23px 0 10px;font-size:var(--fs-8)}
 .sess-setup h2:first-of-type{margin-top:0}
 .sess-sum{
-  margin:21px 0 16px;padding:13px 16px;border-radius:var(--r-3);
-  background:var(--tint);border:1px solid var(--line);color:var(--ink-2);font-size:14px;
+  margin:21px 0 16px;padding:var(--s-6) var(--s-8);border-radius:var(--r-lg);
+  background:var(--tint);border:1px solid var(--line);color:var(--ink-2);font-size:var(--fs-8);
 }
 .sess-sum b{color:var(--tx)}
 @media(max-width:760px){
@@ -958,8 +958,8 @@ button.card.locked:hover .mod-art{opacity:.42}
 }
 .bak-list{display:flex;flex-direction:column;gap:7px;margin-top:15px;max-height:272px;overflow:auto}
 .bak-row{
-  display:flex;align-items:center;gap:13px;padding:9px 13px;border-radius:var(--r-3);
+  display:flex;align-items:center;gap:13px;padding:var(--s-4) var(--s-6);border-radius:var(--r-lg);
   background:var(--tint);border:1px solid var(--line);
 }
-.bak-when{font-weight:700;font-size:13.5px;color:var(--tx);flex:0 0 auto}
-.bak-meta{font-size:12px;color:var(--ink-3);flex:1;min-width:0}
+.bak-when{font-weight:700;font-size:var(--fs-7);color:var(--tx);flex:0 0 auto}
+.bak-meta{font-size:var(--fs-4);color:var(--ink-3);flex:1;min-width:0}

@@ -13,6 +13,6 @@ body{
 }
 button{font-family:inherit;font-size:inherit;cursor:pointer;border:none;background:none;color:inherit}
 input{font-family:inherit;font-size:inherit}
-:focus-visible{outline:3px solid var(--neuro);outline-offset:2px;border-radius:var(--r-1)}
+:focus-visible{outline:3px solid var(--neuro);outline-offset:2px;border-radius:var(--r-md)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 

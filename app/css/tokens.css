@@ -91,19 +91,69 @@
   --gold-text:#d9b44a;   /* gold used AS TEXT. Separate from --gold because on
                             parchment the background gold measures 1.6:1. */
 
-  /* One radius scale, four steps and a pill. Before this there were seventeen
-     different values across the stylesheet — two sibling buttons in the same
-     toolbar were 11px and 12px — and nothing but drift decided which a given
-     element got. The steps nest: a 12px panel inside a 16px card reads as
-     deliberate, two 13px boxes beside a 14px one reads as an accident. */
-  --r-1:4px;             /* swatches, marks, thin bars, inline code */
-  --r-2:8px;             /* small square tiles, icon buttons, images */
-  --r-3:12px;            /* rows, options, inputs, buttons, inner panels */
-  --r:16px;              /* cards, modals, the outermost surfaces */
-  --r-pill:999px;        /* anything shaped like a chip or a badge */
+  /* Radius scale — replan 2026-09-21 (owner ruling 2026-09-20): small and
+     classical, base 4px, three steps, nothing larger, no pills anywhere.
+     Replaces the old four-step-plus-pill scale (--r-1..--r-3, --r, --r-pill). */
+  --r-sm:2px;             /* swatches, marks, thin inline bits */
+  --r-md:4px;             /* small tiles, icon buttons, inputs */
+  --r-lg:8px;             /* rows, cards, buttons, modals — the ceiling */
   --pop:0 7px 18px;
   --pop-lg:0 14px 34px;
+  /* Shadow shape steps — replan 2026-09-21, pulled from duplicate raw
+     box-shadow shapes already in base/layout/components/views (colour part
+     stays raw or in --sh*, never merged into these). */
+  --pop-xs:0 5px 14px;    /* 10 raw uses before this pass — the commonest shape */
+  --pop-sm:0 6px 18px;    /* 2 raw uses */
+  --pop-md:0 8px 22px;    /* 2 raw uses, usually paired with --sh-soft */
+  --pop-xl:0 18px 44px;   /* 2 raw uses */
+  --pop-2xl:0 30px 80px;  /* 2 raw uses */
   --glow:0 0 0 1px rgba(242,232,213,.07);
+
+  /* Type scale — replan 2026-09-21. 8 steps picked from the 8 most-used raw
+     font-size values (11.5px was the single commonest at 15 uses). */
+  --fs-1:10.5px;
+  --fs-2:11px;
+  --fs-3:11.5px;
+  --fs-4:12px;
+  --fs-5:12.5px;
+  --fs-6:13px;
+  --fs-7:13.5px;
+  --fs-8:14px;
+
+  /* Spacing ladder — replan 2026-09-21. 4px base, 2px smallest step, 12 steps,
+     picked from the padding sides used most across base/layout/components/views. */
+  --s-1:2px;
+  --s-2:4px;
+  --s-3:6px;
+  --s-4:8px;
+  --s-5:10px;
+  --s-6:12px;
+  --s-7:14px;
+  --s-8:16px;
+  --s-9:20px;
+  --s-10:24px;
+  --s-11:28px;
+  --s-12:32px;
+
+  /* Motion — replan 2026-09-21. 4 durations, the 4 most-used raw values.
+     Easings: the cubic-bezier() curves already in use, named; the keyword
+     easings (linear/ease/ease-in-out/ease-out) stay literal — they are
+     already minimal. */
+  --dur-1:.12s;
+  --dur-2:.13s;
+  --dur-3:.14s;
+  --dur-4:.18s;
+  --ease-standard:cubic-bezier(.22,1,.36,1);
+  --ease-spring:cubic-bezier(.34,1.56,.64,1);
+  --ease-soft:cubic-bezier(.3,.9,.3,1);
+
+  /* z-index — replan 2026-09-21. Only the five values named in the brief;
+     small local stacking (0-60, 210) stays raw by design. */
+  --z-150:150;
+  --z-200:200;
+  --z-250:250;
+  --z-300:300;
+  --z-400:400;
 
   --sh:rgba(0,0,0,.5);
   --sh-soft:rgba(0,0,0,.3);
