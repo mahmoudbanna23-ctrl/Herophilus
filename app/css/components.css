@@ -71,13 +71,14 @@
 
 .opts{display:flex;flex-direction:column;gap:9px}
 .opt{
-  display:flex;gap:13px;align-items:flex-start;padding:var(--s-6) var(--s-8);
+  display:flex;gap:var(--s-3);align-items:flex-start;padding:var(--s-2) var(--s-2) var(--s-2) var(--s-8);
   border:1px solid var(--line-2);border-radius:var(--r-lg);background:var(--card);
   text-align:left;width:100%;line-height:1.5;font-weight:600;
   transition:transform var(--dur-1) ease,border-color var(--dur-1),box-shadow var(--dur-1);
 }
-.opt:hover:not(:disabled){border-color:var(--line-2);transform:translateX(4px);box-shadow:0 7px 20px rgba(0,0,0,.12)}
-.opt:disabled{cursor:default}
+.opt:hover:not(:has(.opt-answer:disabled)){border-color:var(--line-2);transform:translateX(4px);box-shadow:0 7px 20px rgba(0,0,0,.12)}
+.opt-answer{display:flex;gap:13px;align-items:flex-start;padding:var(--s-4) 0;border:0;background:transparent;color:var(--tx);text-align:left;flex:1;min-width:0;font:inherit;line-height:inherit;font-weight:inherit}
+.opt-answer:disabled{cursor:default}
 .opt .ltr{
   width:26px;height:26px;border-radius:var(--r-lg);border:2.5px solid var(--line-2);
   display:flex;align-items:center;justify-content:center;font-size:var(--fs-4);font-weight:900;
@@ -92,6 +93,10 @@
 .opt .mark{margin-left:auto;font-weight:900;font-size:19px;flex-shrink:0;line-height:1}
 .opt.correct .mark{color:var(--ok)}
 .opt.wrong .mark{color:var(--bad)}
+.opt.struck .opt-text{color:var(--ink-3);text-decoration:line-through}
+.strike-btn{width:var(--s-12);height:var(--s-12);padding:0;border:1px solid var(--line-2);border-radius:var(--r-md);background:var(--card);color:var(--ink-2);display:flex;align-items:center;justify-content:center;flex:0 0 var(--s-12);align-self:center;transition:transform var(--dur-1) ease,background var(--dur-1) ease}
+.strike-btn:hover{background:var(--bg-2);transform:translateX(1px)}
+.strike-btn:focus-visible,.opt-answer:focus-visible{outline:2px solid var(--tx);outline-offset:2px}
 
 .qactions{display:flex;gap:10px;margin-top:22px;align-items:center;flex-wrap:wrap}
 .btn{
@@ -1084,4 +1089,3 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 .th-ch .m{font-size:var(--fs-3);color:var(--ink-4);font-weight:700}
 .doc-head{border-bottom:3px solid var(--line-2);padding-bottom:var(--s-7);margin-bottom:22px}
 .doc-meta{font-size:var(--fs-5);color:var(--ink-3);font-weight:700;margin-top:6px}
-

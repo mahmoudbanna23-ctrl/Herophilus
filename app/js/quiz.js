@@ -138,6 +138,7 @@ function startQuiz(ids,title,chapter=null,qid=null,exam=null){
   const q=QUESTIONS.find(x=>x.id===ids[0]);
   Q={ids:ids.slice(),i:Math.max(0,ids.indexOf(qid)),title:title,sel:null,shown:false,t0:Date.now(),txt:'',peek:false,caret:null,did:{},
      attempts:{},chapter:chapter,sources:chapter&&q?(S.banks[q.module]||[]).slice():[],exam:exam};
+  strikeQuestion=null;strikes=new Set(); /* a restart or a profile switch on the same question must not inherit strikes */
   saveResume();
   go({name:'quiz'});
   /* Stop first either way: an abandoned paper's interval would otherwise keep
@@ -319,6 +320,18 @@ function vCase(p,q,m,prev){
 // so this has to outrun 'ABCDE': past index 4 that string yields undefined, which rendered
 // as the literal letter "undefined" and printed "the answer is undefined" on reveal.
 const OPT_LETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+/* Deliberately outside Q and S: eliminations are a disposable reading aid.
+   A redraw of this question keeps them; rendering another question clears them. */
+let strikeQuestion=null;
+let strikes=new Set();
+function toggleStrike(i,e){
+  e.stopPropagation();
+  if(Q.shown||(Q.exam&&Q.exam.done))return;
+  if(strikes.has(i))strikes.delete(i);else strikes.add(i);
+  render();
+  const btn=document.querySelector('.opts .opt:nth-child('+(i+1)+') .strike-btn');
+  if(btn&&btn.focus)btn.focus();
+}
 
 function vQuiz(p){
   const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
@@ -327,6 +340,7 @@ function vQuiz(p){
   if(!q){p.innerHTML=`<div class="empty"><div class="big">${ico('laurel',46)}</div><h3>Set complete</h3></div>`;return}
   const m=moduleOf(q.module)||{hex:'#7a6a55'};
   const prev=S.answers[q.id];
+  if(strikeQuestion!==q.id){strikeQuestion=q.id;strikes=new Set()}
   if(q.type==='case'){vCase(p,q,m,prev);return}
   const flagged=!!S.flags[q.id];
 
@@ -348,9 +362,14 @@ function vQuiz(p){
     let cls='opt';
     if(Q.shown){ if(i===q.answer)cls+=' correct'; else if(i===Q.sel)cls+=' wrong' }
     else if(i===Q.sel)cls+=' sel';
+    const answered=Q.shown||Q.sel!==null||(Q.exam&&Object.prototype.hasOwnProperty.call(Q.exam.picked,q.id));
+    const struck=!answered&&strikes.has(i);
+    if(struck)cls+=' struck';
     const mark=Q.shown?(i===q.answer?'<span class="mark">\u2713</span>':(i===Q.sel?'<span class="mark">\u00d7</span>':'')):'';
-    h+=`<button class="${cls}" ${Q.shown?'disabled':''} onclick="pick(${i},event.detail===0)">
-      <span class="ltr">${OPT_LETTERS[i]}</span><span>${esc(o)}</span>${mark}</button>`;
+    h+=`<div class="${cls}">
+      <button type="button" class="opt-answer" ${Q.shown?'disabled':''} onclick="pick(${i},event.detail===0)">
+      <span class="ltr">${OPT_LETTERS[i]}</span><span class="opt-text">${esc(o)}</span>${mark}</button>
+      ${answered?'':`<button type="button" class="strike-btn" aria-label="${struck?'Restore option':'Strike out option'}" aria-pressed="${struck}" onclick="toggleStrike(${i},event)" onkeydown="if(event.key==='Enter'||event.key===' '||(/^[A-Za-z]$/.test(event.key)&&OPT_LETTERS.indexOf(event.key.toUpperCase())<${q.options.length}))event.stopPropagation()">${ico('strike',16)}</button>`}</div>`;
   });
   h+=`</div>`;
   /* Under exam conditions the previous attempt is somebody else's paper. */
@@ -469,7 +488,7 @@ function pick(i,byKey){
      unchanged — only the place the focus lands after is. */
   render();
   if(byKey){
-    const btn=document.querySelector('.opts .opt:nth-child('+(i+1)+')');
+    const btn=document.querySelector('.opts .opt:nth-child('+(i+1)+') .opt-answer');
     if(btn&&btn.focus)btn.focus();
   }
 }
