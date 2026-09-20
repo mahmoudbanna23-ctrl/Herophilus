@@ -1,0 +1,347 @@
+[
+ {
+  "n": 1,
+  "into": "ophep-lens-12",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 2,
+  "into": "ophep-lens-11",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 3,
+  "into": "ophep-lacrimal-system-5",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 4,
+  "into": "ophep-orbit-17",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 5,
+  "into": "ophep-sclera-3",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 6,
+  "into": "ophep-vitreous-4",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 7,
+  "into": "ophep-ocular-systemic-diseases-15",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 8,
+  "into": "ophep-eyelids-8",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 9,
+  "into": "ophep-orbit-8",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 10,
+  "into": "ophep-optics-refraction-10",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 11,
+  "into": "ophep-glaucoma-13",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 12,
+  "into": "ophep-retina-9",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 13,
+  "into": "ophep-uveal-tract-7",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 14,
+  "into": "ophep-optics-refraction-9",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 15,
+  "into": "ophep-drugs-eye-8",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 16,
+  "into": "ophep-retina-10",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 17,
+  "into": "ophep-cornea-13",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 18,
+  "into": "ophep-lens-10",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 19,
+  "into": "ophep-ocular-trauma-10",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 20,
+  "into": "ophep-glaucoma-12",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 21,
+  "into": "ophep-conjunctiva-13",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 22,
+  "into": "ophep-exam-eye-10",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 23,
+  "into": "ophep-cornea-12",
+  "verdict": "IDENTICAL (checker labelled REWORDED, then found no difference; both print the typo Flourescine)"
+ },
+ {
+  "n": 24,
+  "into": "ophep-conjunctiva-14",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 25,
+  "into": "ophep-drugs-eye-7",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 26,
+  "into": "ophep-orbit-9",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 27,
+  "into": "ophep-uveal-tract-8",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 28,
+  "into": "ophep-conjunctiva-15",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 29,
+  "into": "ophep-cornea-11",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 30,
+  "into": "ophep-ocular-systemic-diseases-16",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 31,
+  "into": "ophep-uveal-tract-9",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 32,
+  "into": "ophep-retina-11",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 33,
+  "into": "ophep-ocular-systemic-diseases-17",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 34,
+  "into": "ophep-neuro-ophthalmology-16",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 35,
+  "into": "ophep-malignancies-eye-adnexa-3",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 36,
+  "into": "ophep-exam-eye-11",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 37,
+  "into": "ophep-malignancies-eye-adnexa-4",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 38,
+  "into": "ophep-cornea-16",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 39,
+  "into": "ophep-ocular-trauma-15",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 40,
+  "into": "ophep-retina-19",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 41,
+  "into": "ophep-lens-13",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 42,
+  "into": "ophep-uveal-tract-11",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 44,
+  "into": "ophep-eyelids-11",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 46,
+  "into": "ophep-eyelids-10",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 47,
+  "into": "ophep-eyelids-9",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 48,
+  "into": "ophep-uveal-tract-16",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 49,
+  "into": "ophep-conjunctiva-16",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 50,
+  "into": "ophep-conjunctiva-17",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 51,
+  "into": "ophep-orbit-10",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 52,
+  "into": "ophep-pediatric-ophthalmology-14",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 53,
+  "into": "ophep-exam-eye-12",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 54,
+  "into": "ophep-uveal-tract-10",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 55,
+  "into": "ophep-cornea-15",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 56,
+  "into": "ophep-sclera-4",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 57,
+  "into": "ophep-lens-14",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 60,
+  "into": "ophep-ocular-systemic-diseases-20",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 62,
+  "into": "ophep-lacrimal-system-6",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 63,
+  "into": "ophep-ocular-systemic-diseases-19",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 65,
+  "into": "ophep-conjunctiva-24",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 66,
+  "into": "ophep-uveal-tract-12",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 67,
+  "into": "ophep-cornea-14",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 68,
+  "into": "ophep-squint-6",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 69,
+  "into": "ophep-retina-18",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 71,
+  "into": "ophep-optics-refraction-12",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 72,
+  "into": "ophep-lacrimal-system-15",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 73,
+  "into": "ophep-conjunctiva-24",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 74,
+  "into": "ophep-uveal-tract-12",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 75,
+  "into": "ophep-cornea-14",
+  "verdict": "IDENTICAL"
+ },
+ {
+  "n": 76,
+  "into": "ophep-neuro-ophthalmology-19",
+  "verdict": "RESPELLED: option B prints Arteritic ischemic optic neuropathy here, Anterior ischemic optic neuropathy live; same stem, same key index 1. Ruled by Claude 2026-09-21"
+ }
+]

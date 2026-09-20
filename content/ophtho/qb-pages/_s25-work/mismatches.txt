@@ -1,0 +1,4 @@
+n35 pdf 1926/1927: stem differs between unmarked and marked -- used marked; unmarked stem="A 22-year-old girl was injured severely in a car accident. Initial examination revealed that she had high fever, lid edema and conjunctival injection. Ocular motility was reduced markedly. Also, RAPD was observed. Which of the following is the most likely diagnosis?"
+n58 pdf 1972/1973: options differ between unmarked and marked -- used marked; unmarked opts=["Herpes simplex keratitis","Herpes zoster ophthalmicus","Calcific band keratopathy","Exposure keratopathy","Gerontoxon"]
+n70 pdf 1996/1997: options differ between unmarked and marked -- used marked; unmarked opts=["Minimum VA of 3/60 in the eye tested","Minimum VA> 3/60 in the eye tested","Min mum VA of 1/60 in the eye tested","Minimum VA >1/60 in the eye tested"]
+n80 pdf 2016: marked page with no unmarked twin

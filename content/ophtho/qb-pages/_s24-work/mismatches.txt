@@ -1,0 +1,9 @@
+n1 pdf 1702/1703: options differ between unmarked and marked -- used marked; unmarked opts=["Cataract","Pseudophakia","Posterior lens dislocation","All of the above"]
+n2 pdf 1704/1705: options differ between unmarked and marked -- used marked; unmarked opts=["A. Ultrasonography","B. Ophthalmoscopy","C. Pachymetry","D. Pentacam"]
+n6 pdf 1712/1713: options differ between unmarked and marked -- used marked; unmarked opts=["Endophthalmitis","Cataract","Retinal tears","Glaucoma"]
+n9 pdf 1718/1719: options differ between unmarked and marked -- used marked; unmarked opts=["Lacrimal gland scintigraphy","CT orbit","Ophthalmoscopy","None of the above"]
+n12 pdf 1724/1725: options differ between unmarked and marked -- used marked; unmarked opts=["Rhegmatogenous retinal detachment","Tractional retinal detachment","Exudative retinal detachment","All of the above"]
+n13 pdf 1726/1727: options differ between unmarked and marked -- used marked; unmarked opts=["Morphine","Horner syndrome","Stage 3 anaesthesia","Pontine hemorrhage"]
+n16 pdf 1732/1733: stem differs between unmarked and marked -- used marked; unmarked stem="A 65-year-old woman complains of sudden onset of flashes and floaters. Visual field examination revealed peripheral field loss. She was also found to have low IOP in the affected eye. Which of the following is an appropriate line of management for that patient?"
+n23 pdf 1747/1748: options differ between unmarked and marked -- used marked; unmarked opts=["Flourescine dye","Steroids","Pachymetry","None of the above"]
+n44 pdf 1789/1790: options differ between unmarked and marked -- used marked; unmarked opts=["Staphylococcus aureus","Streptococcus pneumoniae","Pseudomonas aeruginosa","None of the above"]
