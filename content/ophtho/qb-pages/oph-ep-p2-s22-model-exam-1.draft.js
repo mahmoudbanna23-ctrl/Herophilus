@@ -1,12 +1,11 @@
-/* Ophthalmology ENDPOINT PART 2 questions (Opthalmology endpoint.pdf).
-   Exam half; PDF pages 1391-2442, sections 22-28. Own file, separate from
-   questions.ophtho.ep.js (part 1, Q_OPHTHO_EP) so two chats can write without
-   touching each other. Same schema; ids use 'ophep2-' and bank:'endpoint'.
-   From somewhere in PDF pages 2151-2170 onward, the printed page number is the PDF page
-   number plus one; the exact flip page is not pinned, so write no source beyond page 2150.
-   var, not const, so the aggregator reads it off window and degrades to [] if this file
-   fails to parse. Stub awaiting its first splice. */
-var Q_OPHTHO_EP2 = [
+/* Drafted 2026-09-20 -- ophthalmology endpoint, part 2, section 22 (Model Exam 1),
+   survivors only (n7, 25, 27, 32, 34, 35, 46, 50, 58, 73). The other 67 staged rows
+   are folded (see tools/bank-harness/sec-oph.js section 22) and are never drafted here.
+   Stems, options and keys are copied byte-identical from the staging array
+   (oph-ep-p2-s22-model-exam-1.array.js); nothing here is re-derived from the page image. */
+
+var OPHEP2_S22_DRAFT = [
+
 { id:"ophep2-model-exam-1-7", module:"ophtho", bank:"endpoint", chapter:"op-intro-exam",
   stem:"Action of the superior oblique muscle:",
   options:["elevation in abduction","Elevation in adduction","Depression in abduction","Depression in adduction"],
@@ -86,5 +85,6 @@ var Q_OPHTHO_EP2 = [
   answer:2,
   explanation:"The conjunctiva lecture shows an operative photograph of pterygium excision with a sutured graft on its final pterygium slide (L6, slide 57), which is the only sourced anchor for surgical management in this deck -- the lecture never prints the words \"treatment,\" \"management,\" \"indication\" or a recurrence rate anywhere in its pterygium slides. Excision with conjunctival autograft covering the bare sclera is the standard surgical technique used clinically to reduce the risk of recurrence, since the graft restores a normal conjunctival surface over the excision bed and limits regrowth of fibrovascular tissue toward the cornea (not taken from the course material).\n\nSimple excision without a graft (the \"bare sclera\" technique) is the option this lecture's own photograph implicitly moves away from, and it is well recognised to carry a substantially higher recurrence rate than excision with grafting, which is precisely why a RECURRENT pterygium (one that has already failed a prior excision) is managed with the more definitive grafting approach rather than being re-excised alone (not taken from the course material). Follow-up alone is not treatment at all and does not address an already-recurrent lesion that is presumably growing and symptomatic. Topical steroids followed by excision is not a recognised staged protocol for pterygium in the source material or in general ophthalmic teaching; steroids may be used briefly to settle inflammation before elective surgery but are not a treatment sequence specific to recurrence, and grafting at the time of excision, not steroid pre-treatment, is what is understood to lower the chance of a further recurrence (not taken from the course material).\n\n**The endpoint file prints this explanation:**\n\n> Recurrent pterygium is best managed by excision followed by conjunctival autograft to reduce recurrence risk.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*",
   objective:"Recurrent pterygium is treated by excision with conjunctival autograft, which lowers recurrence risk compared with simple bare-sclera excision.",
-  source:"Opthalmology endpoint.pdf p.1536-1537" }
+  source:"Opthalmology endpoint.pdf p.1536-1537" },
+
 ];
