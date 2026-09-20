@@ -312,52 +312,75 @@ const MODULES = [
       ['nr-para','Paraparesis and ataxia']]}
   ]},
   {id:'pediatrics', term:'y4s2', name:'Pediatrics', icon:'teddy', color:'var(--peds)', hex:'#2e5f8a', groups:[
-    {name:'Non-systems', chapters:[
-      ['emergencies','Pediatric emergencies'],['allergy','Allergy'],
-      ['infection','The febrile child and meningitis'],
-      ['infection-bact','Bacterial infections and Kawasaki'],
-      ['infection-rash','Maculopapular exanthems'],
-      ['infection-vesic','Vesicular exanthems'],
-      ['infection-immunity','Immunity and immunodeficiency'],
-      ['infection-vaccine','Vaccination and stewardship'],
-      ['normal-dev','Normal Development'],
-      ['dev-problems','Developmental delay and disability'],
-      ['dev-nd','Autism and ADHD'],['genetics','Genetics'],
-      ['malignant','Leukaemia'],['malignant-solid','Brain and solid tumours']]},
-    {name:'Completed earlier', chapters:[
-      ['growth-puberty','Growth and short stature'],['puberty','Puberty'],
-      ['nutrition','Faltering growth and obesity'],
-      ['nutrition-feed','Infant feeding'],
+    /* Remapped 2026-09-20 to the paediatrics book's chapter order (Part 1 then
+       Part 2), one group per book chapter. Chapter ids and titles are UNCHANGED;
+       only grouping and order changed. Progress/schedule is keyed by date and
+       title, never chapter id or group name, so reordering does not affect it.
+       The old groups were study-status (Non-systems / Completed earlier /
+       Systems) and are replaced. The book chapter "Perinatal medicine" (p.106 —
+       antenatal/fetal medicine, resuscitation, NIPE) has no app chapter, so it
+       has no group here: a coverage gap, recorded in the remap note. All six
+       app "perinatal-" and "neonatal-" chapters fall under the book's Neonatal
+       medicine chapter (p.140) per content\peds\perinatal-neonatal-boundary.md.
+       Source: content\peds book map + that boundary file. */
+    {name:'Growth and puberty', chapters:[
+      ['growth-puberty','Growth and short stature'],['puberty','Puberty']]},
+    {name:'Nutrition', chapters:[
+      ['nutrition','Faltering growth and obesity'],['nutrition-feed','Infant feeding'],
       ['nutrition-pem','Protein energy malnutrition'],
-      ['nutrition-vit','Rickets and vitamin deficiencies'],['accidents','Accidents and poisoning']]},
-    /* Split 2026-08-15 at the user's instruction. Paediatrics carries ~4x ENT's
-       lecture load per chapter, so writing to lecture length gave 21-32 page
-       chapters — the size the user rejected for ENT. Splitting keeps every fact
-       and returns 3-13 page units. Boundaries follow each written chapter's own
-       contiguous sections, so nothing was reordered or rewritten. SCHEDULE is
-       keyed by date and title, never chapter id, so it is unaffected. */
-    {name:'Systems', chapters:[
+      ['nutrition-vit','Rickets and vitamin deficiencies']]},
+    {name:'Gastroenterology', chapters:[
       ['gastroenterology','Vomiting and reflux'],['gi-diarrhoea','Diarrhoea and constipation'],
-      ['gi-abdopain','Abdominal pain'],
+      ['gi-abdopain','Abdominal pain']]},
+    {name:'Accidents and poisoning', chapters:[
+      ['accidents','Accidents and poisoning']]},
+    {name:'Pediatric emergencies', chapters:[
+      ['emergencies','Pediatric emergencies']]},
+    {name:'Neonatal medicine', chapters:[
       ['perinatal','The newborn and prematurity'],
       ['perinatal-rd','Neonatal respiratory distress'],
       ['perinatal-hie','Birth asphyxia and HIE'],
       ['neonatal','Neonatal jaundice'],
       ['neonatal-seiz','Neonatal seizures and birth injury'],
-      ['neonatal-sepsis','Neonatal sepsis'],
+      ['neonatal-sepsis','Neonatal sepsis']]},
+    {name:'Allergy', chapters:[
+      ['allergy','Allergy']]},
+    {name:'Infection and immunity', chapters:[
+      ['infection','The febrile child and meningitis'],
+      ['infection-bact','Bacterial infections and Kawasaki'],
+      ['infection-rash','Maculopapular exanthems'],
+      ['infection-vesic','Vesicular exanthems'],
+      ['infection-immunity','Immunity and immunodeficiency'],
+      ['infection-vaccine','Vaccination and stewardship']]},
+    {name:'Normal Development', chapters:[
+      ['normal-dev','Normal Development']]},
+    {name:'Developmental problems', chapters:[
+      ['dev-problems','Developmental delay and disability'],
+      ['dev-nd','Autism and ADHD']]},
+    {name:'Genetics', chapters:[
+      ['genetics','Genetics']]},
+    {name:'Hematological Disorders', chapters:[
       ['haematology','Anaemia and marrow failure'],
-      ['haem-bleeding','Bleeding and clotting disorders'],
-      ['resp-pneumonia','Pneumonia'],['respiratory','Asthma'],['resp-bronch','Bronchiolitis'],
+      ['haem-bleeding','Bleeding and clotting disorders']]},
+    {name:'Respiratory Disorders', chapters:[
+      ['resp-pneumonia','Pneumonia'],['respiratory','Asthma'],['resp-bronch','Bronchiolitis']]},
+    {name:'Cardiac Disorders', chapters:[
       ['cardiac','Congenital heart disease'],['cardiac-cyan','Cyanotic heart disease'],
-      ['cardiac-acq','Acquired heart disease'],
+      ['cardiac-acq','Acquired heart disease']]},
+    {name:'Kidney & Urinary tract', chapters:[
       ['renal-uti','Urinary tract infection'],['renal','Glomerular disease'],
-      ['renal-cakut','CAKUT, stones and enuresis'],
+      ['renal-cakut','CAKUT, stones and enuresis']]},
+    {name:'Neurological Disorders', chapters:[
       ['neuro-stroke','Stroke and intracranial haemorrhage'],['neurological','Seizures and epilepsy'],
-      ['neuro-nm','Motor and neuromuscular disorders'],['neuro-cp','Cerebral palsy'],
-      ['mental','Mental Health'],
+      ['neuro-nm','Motor and neuromuscular disorders'],['neuro-cp','Cerebral palsy']]},
+    {name:'Mental Health', chapters:[
+      ['mental','Mental Health']]},
+    {name:'Diabetes & Endocrine', chapters:[
       ['endocrine','Diabetes mellitus'],['endo-dka','Diabetic ketoacidosis'],
-      ['endo-thyroid','Thyroid and adrenal disorders'],
-      ['liver','Infantile cholestasis'],
-      ['liver-hep','Viral hepatitis and chronic liver disease']]}
+      ['endo-thyroid','Thyroid and adrenal disorders']]},
+    {name:'Liver Disorders', chapters:[
+      ['liver','Infantile cholestasis'],['liver-hep','Viral hepatitis and chronic liver disease']]},
+    {name:'Malignant Disease', chapters:[
+      ['malignant','Leukaemia'],['malignant-solid','Brain and solid tumours']]}
   ]}
 ];
