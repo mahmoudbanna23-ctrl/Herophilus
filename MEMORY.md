@@ -68,8 +68,8 @@ reprint citation. Detail: `progress\resume-ophtho-endpoint-A-chapters.md` tail (
 - **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->** archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding.
 
 - **App redesign:** Phase 1 (depth `ae9a7b9`, warm grounds + subject colour `ea75502`) pushed
-  2026-09-08; Phase 2 open — spec `progress\redesign-spec-2026-09-07-owner-interview.md`, state in
-  `progress\resume-2026-09-08-depth-and-colour.md` "Changed since". Show options before shipping.
+  2026-09-08 (`progress\resume-2026-09-08-depth-and-colour.md` "Changed since"). Look work now runs
+  under the APP RE-PLAN above; `redesign-spec-2026-09-07-owner-interview.md` is input, not the plan.
 
 ## The watch — oversight every ~12 h (set up 2026-09-02)
 - **PRUNED 2026-09-20 ->** archive. Binding: a watch chat runs `progress\WATCH.md`, reports, never
