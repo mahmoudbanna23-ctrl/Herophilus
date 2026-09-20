@@ -1,0 +1,1031 @@
+[
+  {
+    "pdf_page": 1701,
+    "printed_page": "1701",
+    "page_type": "theory",
+    "printed_q": null,
+    "stem": null,
+    "options": null,
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "1701"
+  },
+  {
+    "pdf_page": 1702,
+    "printed_page": 1702,
+    "page_type": "question_unmarked",
+    "printed_q": "1",
+    "stem": "Which of the following causes jet black appearance of the pupillary aperture?",
+    "options": [
+      "Cataract",
+      "Pseudophakia",
+      "Posterior lens dislocation",
+      "All of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "1, 1702"
+  },
+  {
+    "pdf_page": 1703,
+    "printed_page": 1703,
+    "page_type": "question_marked",
+    "printed_q": "1. Which of the following causes jet black appearance of the pupillary aperture?",
+    "stem": "Which of the following causes jet black appearance of the pupillary aperture?",
+    "options": [
+      "A. Cataract",
+      "B. Pseudophakia",
+      "C. Posterior lens dislocation",
+      "D. All of the above"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Pupil is jet-black in the newly born and starts to acquire a greyish tinge as the person gets older due to the continuous addition of new lens fibers throughout life causing light scattering; a process known as senile sclerosis. It is to be noted that in the absence of the lens (surgically removed or posteriorly dislocated), the pupil regains its jet-black color.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "1703"
+  },
+  {
+    "pdf_page": 1704,
+    "printed_page": "1704",
+    "page_type": "question_unmarked",
+    "printed_q": "2",
+    "stem": "A 58-year-old male patient presents with complete lens opacification. What is the best tool used to visualize retina in that patient?",
+    "options": [
+      "A. Ultrasonography",
+      "B. Ophthalmoscopy",
+      "C. Pachymetry",
+      "D. Pentacam"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "2, 58, 1704"
+  },
+  {
+    "pdf_page": 1705,
+    "printed_page": "1705",
+    "page_type": "question_marked",
+    "printed_q": "2",
+    "stem": "A 58-year-old male patient presents with complete lens opacification. What is the best tool used to visualize retina in that patient?",
+    "options": [
+      "Ultrasonography",
+      "Ophthalmoscopy",
+      "Pachymetry",
+      "Pentacam"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "In case of inability to visualize the retina, due to the presence of a dense cataract, B-scan ultrasonography of the eye can be helpful to exclude the presence of retinal detachment or vitreous haemorrhage.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "58, 1705"
+  },
+  {
+    "pdf_page": 1706,
+    "printed_page": 1706,
+    "page_type": "question_unmarked",
+    "printed_q": "3",
+    "stem": "Which of the following is the structure responsible for secreting inner mucus layer of tear film?",
+    "options": [
+      "Meibomian glands",
+      "Lacrimal glands",
+      "Goblet cells",
+      "All of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "3, 1706"
+  },
+  {
+    "pdf_page": 1707,
+    "printed_page": "1707",
+    "page_type": "question_marked",
+    "printed_q": "3",
+    "stem": "Which of the following is the structure responsible for secreting inner mucus layer of tear film?",
+    "options": [
+      "Meibomian glands",
+      "Lacrimal glands",
+      "Goblet cells",
+      "All of the above"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Inner mucous layer of the tear film:\nSecreted by the conjunctival goblet cells.\nHelps maintain the adherence and stability of the tear film on the ocular surface, especially the cornea.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "3, 1707"
+  },
+  {
+    "pdf_page": 1708,
+    "printed_page": "1708",
+    "page_type": "question_unmarked",
+    "printed_q": "4",
+    "stem": "What is the most common causative organism of preseptal cellulitis in children?",
+    "options": [
+      "Staphylococcus aureus",
+      "Streptococcus pneumoniae",
+      "E-Coli",
+      "H. Influenza"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "4, 1708"
+  },
+  {
+    "pdf_page": 1709,
+    "printed_page": "1709",
+    "page_type": "question_marked",
+    "printed_q": "4",
+    "stem": "What is the most common causative organism of preseptal cellulitis in children?",
+    "options": [
+      "Staphylococcus aureus",
+      "Streptococcus pneumoniae",
+      "E-Coli",
+      "H. Influenza"
+    ],
+    "key_letter": "D",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "Most common cause of pre-septal cellulitis in adults -> Staphylococcus Aureus or Streptococcus.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "4, 1709"
+  },
+  {
+    "pdf_page": 1710,
+    "printed_page": 1710,
+    "page_type": "question_unmarked",
+    "printed_q": "5",
+    "stem": "Which of the following conditions has the worst prognosis?",
+    "options": [
+      "Diffuse scleritis",
+      "Nodular scleritis",
+      "Necrotizing scleritis",
+      "Episcleritis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "5, 1710"
+  },
+  {
+    "pdf_page": 1711,
+    "printed_page": "1711",
+    "page_type": "question_marked",
+    "printed_q": "5",
+    "stem": "Which of the following conditions has the worst prognosis?",
+    "options": [
+      "Diffuse scleritis",
+      "Nodular scleritis",
+      "Necrotizing scleritis",
+      "Episcleritis"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Necrotizing anterior scleritis is the most severe form of scleritis:\nCharacterized by severe pain and extreme scleral tenderness.\nWith or without necrosis and exposure of the choroid.\nScleromalacia perforans is a rare form of necrotizing anterior\nscleritis without pain.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "5, 1711"
+  },
+  {
+    "pdf_page": 1712,
+    "printed_page": "1712",
+    "page_type": "question_unmarked",
+    "printed_q": "6",
+    "stem": "A 22-year-old male patient presented to the ophthalmology clinic with a complaint of seeing bugs or cobwebs together with light flashes. Ophthalmoscopy revealed an evident Weiss ring. Which of the following might occur as a complication to that patient's condition?",
+    "options": [
+      "Endophthalmitis",
+      "Cataract",
+      "Retinal tears",
+      "Glaucoma"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "6, 22, 1712"
+  },
+  {
+    "pdf_page": 1713,
+    "printed_page": 1713,
+    "page_type": "question_marked",
+    "printed_q": "6",
+    "stem": "A 22-year-old male patient presented to the ophthalmology clinic with a complaint of seeing bugs or cobwebs together with light flashes. Ophthalmoscopy revealed an evident Weiss ring. Which of the following might occur as a complication to that patient's condition?",
+    "options": [
+      "A. Endophthalmitis",
+      "B. Cataract",
+      "C. Retinal tears",
+      "D. Glaucoma"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "This case is a case of PVD. Complications of PVD may be:\nA. Traction at areas of abnormal vitreoretinal adhesions or areas of weak retina may cause retinal tears/detachment\nB. Retinal tears/detachment may cause vitreous haemorrhage if a bridging retinal blood vessel is torn.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "22, 6, 1713"
+  },
+  {
+    "pdf_page": 1714,
+    "printed_page": "1714",
+    "page_type": "question_unmarked",
+    "printed_q": "7",
+    "stem": "Which of the following is the best line of treatment used to control the acute inflammatory stage of thyroid eye disease?",
+    "options": [
+      "Eye lubricants",
+      "Topical steroids",
+      "Systemic steroids",
+      "Decompressive surgery"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "7, 1714"
+  },
+  {
+    "pdf_page": 1715,
+    "printed_page": "1715",
+    "page_type": "question_marked",
+    "printed_q": "7",
+    "stem": "Which of the following is the best line of treatment used to control the acute inflammatory stage of thyroid eye disease?",
+    "options": [
+      "Eye lubricants",
+      "Topical steroids",
+      "Systemic steroids",
+      "Decompressive surgery"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Systemic corticosteroids are used in thyroid eye disease to control the acute inflammatory phase. However, surgery is used to decompress the orbit.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": ""
+  },
+  {
+    "pdf_page": 1716,
+    "printed_page": 1716,
+    "page_type": "question_unmarked",
+    "printed_q": "8",
+    "stem": "Which of the following is the area mostly affected by dryness in case of inability to completely close the eyelids?",
+    "options": [
+      "Middle 1/3 of the cornea",
+      "Upper 1/3 of the cornea",
+      "Lower 1/3 of the cornea",
+      "The whole cornea"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "8, 1/3, 1716"
+  },
+  {
+    "pdf_page": 1717,
+    "printed_page": "1717",
+    "page_type": "question_marked",
+    "printed_q": "8",
+    "stem": "Which of the following is the area mostly affected by dryness in case of inability to completely close the eyelids?",
+    "options": [
+      "Middle 1/3 of the cornea",
+      "Upper 1/3 of the cornea",
+      "Lower 1/3 of the cornea",
+      "The whole cornea"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Early EK is characterized by corneal dryness and superficial punctate keratopathy (show punctate epithelial erosions in EK staining upon administration of fluorescein dye) most commonly localized to the inferior one-third of the cornea in cases of lagophthalmos.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "8, 1/3, 1/3, 1/3, 1717"
+  },
+  {
+    "pdf_page": 1718,
+    "printed_page": 1718,
+    "page_type": "question_unmarked",
+    "printed_q": 9,
+    "stem": "A 33-year-old woman presents with ptosis with S-shaped deformity of the upper eyelid. Examination revealed tenderness, edema and erythema of the outer 1/3 of the upper eyelid. Which of the following is the best next step in management of that patient's condition?",
+    "options": [
+      "Lacrimal gland scintigraphy",
+      "CT orbit",
+      "Ophthalmoscopy",
+      "None of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "33, 1/3, 1718"
+  },
+  {
+    "pdf_page": 1719,
+    "printed_page": "1719",
+    "page_type": "question_marked",
+    "printed_q": "9",
+    "stem": "A 33-year-old woman presents with ptosis with S-shaped deformity of the upper eyelid. Examination revealed tenderness, edema and erythema of the outer 1/3 of the upper eyelid. Which of the following is the best next step in management of that patient's condition?",
+    "options": [
+      "A. Lacrimal gland scintigraphy",
+      "B. CT orbit",
+      "C. Ophthalmoscopy",
+      "D. None of the above"
+    ],
+    "key_letter": "B",
+    "key_index": 1,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "33, 1/3, 1719"
+  },
+  {
+    "pdf_page": 1720,
+    "printed_page": 1720,
+    "page_type": "question_unmarked",
+    "printed_q": "10",
+    "stem": "Which of the following is a well-known cause of myopic shift?",
+    "options": [
+      "Hypoglycemia",
+      "Hyperglycemia",
+      "Hyperlipidemia",
+      "None of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "10, 1720"
+  },
+  {
+    "pdf_page": 1721,
+    "printed_page": 1721,
+    "page_type": "question_marked",
+    "printed_q": "10",
+    "stem": "Which of the following is a well-known cause of myopic shift?",
+    "options": [
+      "Hypoglycemia",
+      "Hyperglycemia",
+      "Hyperlipidemia",
+      "None of the above"
+    ],
+    "key_letter": "B",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Myopia rarely begins after the age of 25 years except in patients with DM (osmotic changes caused by hyperglycemia can result in a transient myopic shift of refraction due to thickness and curvature lenticular changes as well as RI changes) and cataract (nuclear cataract).",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "10, 25, 1721"
+  },
+  {
+    "pdf_page": 1722,
+    "printed_page": 1722,
+    "page_type": "question_unmarked",
+    "printed_q": "11",
+    "stem": "Which of the following is the best line of management of a diabetic patient presenting with acute angle closure glaucoma together with lower limb edema and dyspnea?",
+    "options": [
+      "Alpha blockers",
+      "Topical mydriatics",
+      "Mannitol",
+      "Glycerine"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "11, 1722"
+  },
+  {
+    "pdf_page": 1723,
+    "printed_page": "1723",
+    "page_type": "question_marked",
+    "printed_q": "11",
+    "stem": "Which of the following is the best line of management of a diabetic patient presenting with acute angle closure glaucoma together with lower limb edema and dyspnea?",
+    "options": [
+      "Alpha blockers",
+      "Topical mydriatics",
+      "Mannitol",
+      "Glycerine"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Medical treatment of acute angle closure glaucoma (to lower IOP, reduce pain, and clear corneal oedema in preparation for iridotomy). Topical medications: IOP lowering drugs (previously mentioned), miotics & Prednisolone. Systemic medications: Carbonic anhydrase inhibitors (for IOP lowering) & Osmotic agents: Mannitol (contraindicated in cardiac patients) and glycerine (contraindicated in diabetics).",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "11, 1723"
+  },
+  {
+    "pdf_page": 1724,
+    "printed_page": "1724",
+    "page_type": "question_unmarked",
+    "printed_q": "12",
+    "stem": "A 62-year-old diabetic woman with pre-existing proliferative diabetic retinopathy (PDR) is at risk of developing which of the following?",
+    "options": [
+      "Rhegmatogenous retinal detachment",
+      "Tractional retinal detachment",
+      "Exudative retinal detachment",
+      "All of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "12, 62, 1724"
+  },
+  {
+    "pdf_page": 1725,
+    "printed_page": "1725",
+    "page_type": "question_marked",
+    "printed_q": "12",
+    "stem": "A 62-year-old diabetic woman with pre-existing proliferative diabetic retinopathy (PDR) is at risk of developing which of the following?",
+    "options": [
+      "A. Rhegmatogenous retinal detachment",
+      "B. Tractional retinal detachment",
+      "C. Exudative retinal detachment",
+      "D. All of the above"
+    ],
+    "key_letter": "B",
+    "key_index": 1,
+    "box_printed": true,
+    "explanation_verbatim": "Tractional retinal detachment (TrRD) -> Caused by vitreous, epiretinal, or subretinal membrane pulling the neurosensory retina away from the underlying RPE. It is found in conditions such as DR, CRVO, sickle cell disease, ROP, and ocular trauma.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "12, 62, 1725"
+  },
+  {
+    "pdf_page": 1726,
+    "printed_page": "1726",
+    "page_type": "question_unmarked",
+    "printed_q": "13",
+    "stem": "Which of the following is a cause of dilated fixed pupil?",
+    "options": [
+      "Morphine",
+      "Horner syndrome",
+      "Stage 3 anaesthesia",
+      "Pontine hemorrhage"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "13, 3, 1726"
+  },
+  {
+    "pdf_page": 1727,
+    "printed_page": "1727",
+    "page_type": "question_marked",
+    "printed_q": "13",
+    "stem": "Which of the following is a cause of dilated fixed pupil?",
+    "options": [
+      "A. Morphine",
+      "B. Horner syndrome",
+      "C. Stage 3 anaesthesia",
+      "D. Pontine hemorrhage"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Causes of dilated fixed pupil → Trauma to the iris sphincter or the orbital parasympathetic nerves (traumatic mydriasis), Pharmacologic dilatation, Ciliary ganglion disease / damage, Oculomotor (III) Paralysis, Brain stem affection (dorsal midbrain syndrome), Stage III anaesthesia & Death (bilateral).",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "13, 3, III, 1727"
+  },
+  {
+    "pdf_page": 1728,
+    "printed_page": 1728,
+    "page_type": "question_unmarked",
+    "printed_q": 14,
+    "stem": "A 2-year-old child with esotropia and amblyopia. What is the most appropriate management for that child?",
+    "options": [
+      "Spectacles",
+      "Refractive surgery",
+      "Full cycloplegic correction with eye patching",
+      "Eye patching"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "14, 2, 1728"
+  },
+  {
+    "pdf_page": 1729,
+    "printed_page": 1729,
+    "page_type": "question_marked",
+    "printed_q": "14",
+    "stem": "A 2-year-old child with esotropia and amblyopia. What is the most appropriate management for that child?",
+    "options": [
+      "Spectacles",
+      "Refractive surgery",
+      "Full cycloplegic correction with eye patching",
+      "Eye patching"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Treatment of amblyopia\nTreatment of the cause: spectacles for anisometropia, treat media opacity or ptosis... etc.\nOcclusion Therapy: Patching the good eye to force the brain to use the non-dominant eye and redevelop its vision.\nAtropine cycloplegic drops to impair accommodation and blur vision of the better-seeing eye.",
+    "figure": true,
+    "figure_desc": "A text box outlining the treatment of amblyopia with bullet points.",
+    "numeric_note": "14, 2, 1729"
+  },
+  {
+    "pdf_page": 1730,
+    "printed_page": "1730",
+    "page_type": "question_unmarked",
+    "printed_q": "15",
+    "stem": "Patients with photokeratitis are advised to avoid which of the following medications?",
+    "options": [
+      "Oral analgesics",
+      "Artificial tears",
+      "Topical anaesthetics",
+      "None of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "15, 1730"
+  },
+  {
+    "pdf_page": 1731,
+    "printed_page": 1731,
+    "page_type": "question_marked",
+    "printed_q": "15",
+    "stem": "Patients with photokeratitis are advised to avoid which of the following medications?",
+    "options": [
+      "Oral analgesics",
+      "Artificial tears",
+      "Topical anaesthetics",
+      "None of the above"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "During treatment of a patient with photokeratitis, Instruct the patients NOT TO USE topical anaesthetics (tempting) as they may delay healing.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "15, 1731"
+  },
+  {
+    "pdf_page": 1732,
+    "printed_page": 1732,
+    "page_type": "question_unmarked",
+    "printed_q": "16",
+    "stem": "A 65-year-old woman complains of sudden onset of flashes and floaters. Visual field examination revealed peripheral field loss. She was also found to have low IOP in the affected eye. Which of the following is an appropriate line of management for that patient?",
+    "options": [
+      "Anti-VEGF",
+      "Carbonic anhydrase inhibitor",
+      "Intravitreal steroids",
+      "Pneumatic retinopexy"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "16, 65, 1732"
+  },
+  {
+    "pdf_page": 1733,
+    "printed_page": 1733,
+    "page_type": "question_marked",
+    "printed_q": "16. A 65-year-old woman complains of sudden onset of flashes and floaters. Visual field examination revealed peripheral field loss. She was also found to have low IOP in the affected eye. Which of the following is an appropriate line of management for that patient?",
+    "options": [
+      "Anti-VEGF",
+      "Carbonic anhydrase inhibitor",
+      "Intravitreal steroids",
+      "Pneumatic retinopexy"
+    ],
+    "key_letter": "D",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "Treatment of RRD\nScleral buckle procedure.\nPneumatic retinopexy.\nVitrectomy with the injection of gas to tamponade (support) the retina in place or silicone oil in cases of recurrent detachment.",
+    "figure": true,
+    "figure_desc": "A box containing a list of treatments for RRD.",
+    "numeric_note": "16, 65, 1733"
+  },
+  {
+    "pdf_page": 1734,
+    "printed_page": 1734,
+    "page_type": "question_unmarked",
+    "printed_q": "17. Which of the following is among the side effects that accompany the use of local anaesthetics?\nA. Corneal epithelial defect\nB. Keratoconus\nC. Corneal opacification\nD. Retinal detachment",
+    "stem": "Which of the following is among the side effects that accompany the use of local anaesthetics?",
+    "options": [
+      "Corneal epithelial defect",
+      "Keratoconus",
+      "Corneal opacification",
+      "Retinal detachment"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "17, 1734"
+  },
+  {
+    "pdf_page": 1735,
+    "printed_page": 1735,
+    "page_type": "question_marked",
+    "printed_q": "17",
+    "stem": "Which of the following is among the side effects that accompany the use of local anaesthetics?",
+    "options": [
+      "Corneal epithelial defect",
+      "Keratoconus",
+      "Corneal opacification",
+      "Retinal detachment"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Local anesthetics cause corneal epithelial defects; this is why they are not advised during the treatment of photokeratitis (as they delay the healing process by causing corneal epithelial defects)",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "17, 1735"
+  },
+  {
+    "pdf_page": 1736,
+    "printed_page": "1736",
+    "page_type": "question_unmarked",
+    "printed_q": "18",
+    "stem": "Which of the following represents imprinting of the iris lens on the anterior capsule of the lens from the pupillary margin?",
+    "options": [
+      "Hyphema",
+      "Hypopyon",
+      "Vossious ring",
+      "None of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "18, 1736"
+  },
+  {
+    "pdf_page": 1737,
+    "printed_page": 1737,
+    "page_type": "question_marked",
+    "printed_q": "18",
+    "stem": "Which of the following represents imprinting of the iris lens on the anterior capsule of the lens from the pupillary margin?",
+    "options": [
+      "Hyphema",
+      "Hypopyon",
+      "Vossious ring",
+      "None of the above"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Vossious ring refers to imprinting of iris pigment on the anterior capsule of the lens from the pupillary margin (in case of blunt eye trauma).\nHypopyon → Pus in the AC (usually in neglected open wounds of the globe with secondary infection) [post-traumatic infectious endophthalmitis].\nHyphema → Haemorrhage in the anterior chamber. The source of bleeding is the iris root.",
+    "figure": null,
+    "figure_desc": null,
+    "numeric_note": "18, 1737"
+  },
+  {
+    "pdf_page": 1738,
+    "printed_page": "1738",
+    "page_type": "question_unmarked",
+    "printed_q": "19",
+    "stem": "What is the definitive management of a case presenting with an intra-ocular foreign body?",
+    "options": [
+      "Copious irrigation",
+      "Neutralization",
+      "FB removal",
+      "Antibiotics"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "19, 1738"
+  },
+  {
+    "pdf_page": 1739,
+    "printed_page": "1739",
+    "page_type": "question_marked",
+    "printed_q": "19",
+    "stem": "What is the definitive management of a case presenting with an intra-ocular foreign body?",
+    "options": [
+      "Copious irrigation",
+      "Neutralization",
+      "FB removal",
+      "Antibiotics"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "The initial management of a case presenting with an intra-ocular foreign body is copious irrigation. However, the definitive management of that case is surgical removal of the foreign body.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "19, 1739"
+  },
+  {
+    "pdf_page": 1740,
+    "printed_page": 1740,
+    "page_type": "question_unmarked",
+    "printed_q": "20",
+    "stem": "Which of the following is considered a visual field defect that is characteristic of glaucoma?",
+    "options": [
+      "Floaters",
+      "Arcuate scotomata",
+      "Bitemporal hemianopia",
+      "Xanthopsia"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "20, 1740"
+  },
+  {
+    "pdf_page": 1741,
+    "printed_page": 1741,
+    "page_type": "question_marked",
+    "printed_q": "20. Which of the following is considered a visual field defect that is characteristic of glaucoma?",
+    "stem": "Which of the following is considered a visual field defect that is characteristic of glaucoma?",
+    "options": [
+      "Floaters",
+      "Arcuate scotomata",
+      "Bitemporal hemianopia",
+      "Xanthopsia"
+    ],
+    "key_letter": "B",
+    "key_index": 1,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "20, 1741"
+  },
+  {
+    "pdf_page": 1742,
+    "printed_page": "1742",
+    "page_type": "theory",
+    "printed_q": null,
+    "stem": null,
+    "options": null,
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": true,
+    "explanation_verbatim": "Characteristic field changes in glaucoma (particularly primary open angle glaucoma):\nA. Paracentral scotomas: multiple isolated scotomata in the zone between 10 and 20 degrees from the fixation point.\nB. Arcuate scotoma that arches above and below the fixation point.\nC. Nasal step: Due to asymmetric involvement of the arcuate nerve bundles above and below the fixation point.\nD. Tubular field (Tunnel vision): The field of vision may constrict until it is limited to a few degrees around fixation.\nFixation (central vision) may be spared until the disease is markedly advanced.\nE. End-stage glaucoma: These residual seeing areas may be eventually lost leaving the patient blind.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "10, 20"
+  },
+  {
+    "pdf_page": 1743,
+    "printed_page": "1743",
+    "page_type": "question_unmarked",
+    "printed_q": "21",
+    "stem": "A 25-year-old male patient suffering from bronchial asthma and conjunctivitis. Which of the following is commonly associated with his condition?",
+    "options": [
+      "Atopy",
+      "Family history",
+      "Viral infection",
+      "All of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "21, 25, 1743"
+  },
+  {
+    "pdf_page": 1744,
+    "printed_page": 1744,
+    "page_type": "question_marked",
+    "printed_q": 21,
+    "stem": "A 25-year-old male patient suffering from bronchial asthma and conjunctivitis. Which of the following is commonly associated with his condition?",
+    "options": [
+      "Atopy",
+      "Family history",
+      "Viral infection",
+      "All of the above"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "In atopic keratoconjunctivitis (AKC), Usually there is history of atopic dermatitis (eczema) or bronchial asthma.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "25, 1744"
+  },
+  {
+    "pdf_page": 1745,
+    "printed_page": 1745,
+    "page_type": "question_unmarked",
+    "printed_q": "22",
+    "stem": "Which of the following represents the blind spot of the eye?",
+    "options": [
+      "Optic disc",
+      "Macula",
+      "Fovea",
+      "None of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "22, 1745"
+  },
+  {
+    "pdf_page": 1746,
+    "printed_page": 1746,
+    "page_type": "question_marked",
+    "printed_q": "22",
+    "stem": "Which of the following represents the blind spot of the eye?",
+    "options": [
+      "Optic disc",
+      "Macula",
+      "Fovea",
+      "None of the above"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "The optic disc is the part of optic nerve that is visible within the eye. It is the \"blind spot\" in the visual field.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "22, 1746"
+  },
+  {
+    "pdf_page": 1747,
+    "printed_page": "1747",
+    "page_type": "question_unmarked",
+    "printed_q": "23",
+    "stem": "Which of the following is used to detect corneal abrasions?",
+    "options": [
+      "Flourescine dye",
+      "Steroids",
+      "Pachymetry",
+      "None of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "23, 1747"
+  },
+  {
+    "pdf_page": 1748,
+    "printed_page": 1748,
+    "page_type": "question_marked",
+    "printed_q": "23. Which of the following is used to detect corneal abrasions?",
+    "stem": "Which of the following is used to detect corneal abrasions?",
+    "options": [
+      "A. Flourescine dye",
+      "B. Steroids",
+      "C. Pachymetry",
+      "D. None of the above"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "Corneal epithelial defects (e.g. abrasions) are demonstrated by staining with 1% fluorescein sodium and viewing with cobalt blue filtered light.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "23, 1%, 1748"
+  },
+  {
+    "pdf_page": 1749,
+    "printed_page": "1749",
+    "page_type": "question_unmarked",
+    "printed_q": "24",
+    "stem": "What is the recurrence rate of pterygium following excision with conjunctival autograft?",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "50%"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "24, 5%, 10%, 15%, 50%, 1749"
+  },
+  {
+    "pdf_page": 1750,
+    "printed_page": 1750,
+    "page_type": "question_marked",
+    "printed_q": "24",
+    "stem": "What is the recurrence rate of pterygium following excision with conjunctival autograft?",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "50%"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": true,
+    "explanation_verbatim": "One-third of cases of pterygium recur after excision, lower recurrence with conjunctival autograft (only 5% recurrence rate), or mitomycin-c after simple excision.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "24, 5%, 10%, 15%, 50%, 1750, 5%"
+  },
+  {
+    "pdf_page": 1751,
+    "printed_page": 1751,
+    "page_type": "question_unmarked",
+    "printed_q": "25",
+    "stem": "Which of the following is an adverse effect of local cycloplegics?",
+    "options": [
+      "Yellowish discoloration of skin",
+      "Corneal ulceration",
+      "Delirium",
+      "None of the above"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "25, 1751"
+  },
+  {
+    "pdf_page": 1752,
+    "printed_page": "1752",
+    "page_type": "question_marked",
+    "printed_q": "25",
+    "stem": "Which of the following is an adverse effect of local cycloplegics?",
+    "options": [
+      "Yellowish discoloration of skin",
+      "Corneal ulceration",
+      "Delirium",
+      "None of the above"
+    ],
+    "key_letter": "C",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Systemic toxicity of cycloplegics: (especially in children) causes the following:\n1. Increased body temperature\n2. Flushing (reddening) of skin\n3. Dryness of skin and mouth\n4. Irregular rapid pulse\n5. Hallucinations, confusion, and delirium",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "25, 1, 2, 3, 4, 5, 1752"
+  }
+]

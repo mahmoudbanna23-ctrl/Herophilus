@@ -1,0 +1,4 @@
+n18 pdf 1426/1427: options differ between unmarked and marked -- used marked (clean); unmarked opts=["a. Gonococci","b. Candida albicans","c. Herpes simplex","d. Chlamydia"]
+n30 pdf 1450/1451: stem differs between unmarked and marked -- used marked; unmarked stem="Presbyopia is a deficiency in:"
+n48 pdf 1486/1487: options differ between unmarked and marked -- used marked (clean); unmarked opts=["Steroid drops","Pilocarpine drops","Latanoprost drops","Topical anesthetic drops"]
+n48 pdf 1486/1487: stem differs between unmarked and marked -- used marked; unmarked stem="48. A 32-year-old male patient presented with diminution of vision, photophobia, ocular pain and redness in his right eye. Examination of the eye showed ciliary injection, anterior chamber cells, keratic precipitates and aqueous flare. Which of the following is a possible line of treatment?"

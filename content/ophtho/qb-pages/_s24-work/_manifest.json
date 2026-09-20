@@ -1,0 +1,334 @@
+{
+  "source_pdf": "D:/claude os/Medical school/Herophilus/Semester 8/Opthalmo/Questions/Opthalmology endpoint.pdf",
+  "requested_range": [
+    1701,
+    1857
+  ],
+  "model": "work-vision",
+  "start_time": "2026-09-20T14:10:24.562Z",
+  "end_time": "2026-09-20T14:19:04.068Z",
+  "pages_completed": 52,
+  "parse_errors": 0,
+  "http_errors": 1,
+  "stopped_by_429": true,
+  "pages": [
+    {
+      "page": 1701,
+      "image": "r24\\p-1701.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1702,
+      "image": "r24\\p-1702.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1703,
+      "image": "r24\\p-1703.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1704,
+      "image": "r24\\p-1704.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1705,
+      "image": "r24\\p-1705.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1706,
+      "image": "r24\\p-1706.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1707,
+      "image": "r24\\p-1707.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1708,
+      "image": "r24\\p-1708.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1709,
+      "image": "r24\\p-1709.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1710,
+      "image": "r24\\p-1710.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1711,
+      "image": "r24\\p-1711.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1712,
+      "image": "r24\\p-1712.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1713,
+      "image": "r24\\p-1713.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1714,
+      "image": "r24\\p-1714.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1715,
+      "image": "r24\\p-1715.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1716,
+      "image": "r24\\p-1716.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1717,
+      "image": "r24\\p-1717.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1718,
+      "image": "r24\\p-1718.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1719,
+      "image": "r24\\p-1719.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1720,
+      "image": "r24\\p-1720.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1721,
+      "image": "r24\\p-1721.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1722,
+      "image": "r24\\p-1722.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1723,
+      "image": "r24\\p-1723.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1724,
+      "image": "r24\\p-1724.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1725,
+      "image": "r24\\p-1725.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1726,
+      "image": "r24\\p-1726.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1727,
+      "image": "r24\\p-1727.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1728,
+      "image": "r24\\p-1728.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1729,
+      "image": "r24\\p-1729.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1730,
+      "image": "r24\\p-1730.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1731,
+      "image": "r24\\p-1731.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1732,
+      "image": "r24\\p-1732.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1733,
+      "image": "r24\\p-1733.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1734,
+      "image": "r24\\p-1734.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1735,
+      "image": "r24\\p-1735.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1736,
+      "image": "r24\\p-1736.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1737,
+      "image": "r24\\p-1737.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1738,
+      "image": "r24\\p-1738.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1739,
+      "image": "r24\\p-1739.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1740,
+      "image": "r24\\p-1740.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1741,
+      "image": "r24\\p-1741.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1742,
+      "image": "r24\\p-1742.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1743,
+      "image": "r24\\p-1743.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1744,
+      "image": "r24\\p-1744.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1745,
+      "image": "r24\\p-1745.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1746,
+      "image": "r24\\p-1746.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1747,
+      "image": "r24\\p-1747.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1748,
+      "image": "r24\\p-1748.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1749,
+      "image": "r24\\p-1749.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1750,
+      "image": "r24\\p-1750.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1751,
+      "image": "r24\\p-1751.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1752,
+      "image": "r24\\p-1752.png",
+      "status": 200,
+      "parse_error": false
+    },
+    {
+      "page": 1753,
+      "image": "r24\\p-1753.png",
+      "status": 429,
+      "error": "HTTP 429 quota exhausted"
+    }
+  ]
+}
