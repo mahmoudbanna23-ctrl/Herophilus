@@ -39,7 +39,7 @@ Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0
 OPH-B unblocked. **439 live, s1-21 ALL done** (✅ **s14 Neuro-ophthalmology CLOSED 2026-09-19,
 313->338, `264bc74`**, n18 folded into `ophep-squint-10`; s12 `857e08c` chapter `op-vitreous`, chapters 154,
 boot-check 4049/81; s17 `4795291`). **REGROUPED 2026-09-19 `25ab5b7`: 19 book-order groups, ids unchanged, plan `PLAN-ophtho-book-groups-2026-09-19.md`.** **s13 Retina CLOSED 2026-09-20 (40 q, 377->417, n16 folded, boot 4049/81/154; s18/s19/s21 chat B); chapters split by topic, then House; s18/s19 audited, fixed 2026-09-20.
-s16 Pediatric CLOSED 2026-09-20 (11 q, 5 folds, 417->428, chapters 156, `op-peds` + `op-drugs` added); s20 Drugs CLOSED 2026-09-20 (11 q, 4 folds, 428->439); Half A DONE. HALF B (PDF 1391-2442, s22-28): s22 + s23 CLOSED (10 live in ep2), s25 staged + swept, s24/s26 staging left running — count files; resume: resume-ophtho-endpoint-B-exams.md, last block; House merges wait for both halves.** End of stream owes House `alsoIn` merges (`qb-pages\*house-collisions.md`) + `ophep-squint-10`
+s16 Pediatric CLOSED 2026-09-20 (11 q, 5 folds, 417->428, chapters 156, `op-peds` + `op-drugs` added); s20 Drugs CLOSED 2026-09-20 (11 q, 4 folds, 428->439); Half A DONE. HALF B (PDF 1391-2442, s22-28): s22-25 CLOSED 2026-09-21 (39 live in ep2, `79932e7`), s26 staging running, flip UNPINNED; resume: resume-ophtho-endpoint-B-exams.md, last block; House merges wait for both halves.** End of stream owes House `alsoIn` merges (`qb-pages\*house-collisions.md`) + `ophep-squint-10`
 reprint citation. Detail: `progress\resume-ophtho-endpoint-A-chapters.md` tail (s14 entry) + archive
 `## Pruned from MEMORY.md - 2026-09-17`; parallel-run history: archive, `2026-09-16 (part 2)`.
 
