@@ -67,13 +67,14 @@ reprint citation. Detail: `progress\resume-ophtho-endpoint-A-chapters.md` tail (
   PDF 6–98 ONLY; SKIP 99–140.**
 - **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->** archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding.
 
+- **App redesign:** Phase 1 (depth `ae9a7b9`, warm grounds + subject colour `ea75502`) pushed
+  2026-09-08; Phase 2 open — spec `progress\redesign-spec-2026-09-07-owner-interview.md`, state in
+  `progress\resume-2026-09-08-depth-and-colour.md` "Changed since". Show options before shipping.
+
 ## The watch — oversight every ~12 h (set up 2026-09-02)
-- **A fresh chat runs `progress\WATCH.md` top to bottom every ~12 h, reports changed / stale / at
-  risk, and dies. It never builds, splices, edits content or commits** unless told to in that chat.
-  ⚠️ **It reads the repo and the journals, never a work chat's conversation — anything not written
-  into a journal dies with that session.** Rest of the block **PRUNED 2026-09-03 ->** archive,
-  `## Pruned from MEMORY.md - 2026-09-03`. **Append to a resume prompt's `## Changed since` block,
-  never its body; always start a work chat fresh from its prompt.**
+- **PRUNED 2026-09-20 ->** archive. Binding: a watch chat runs `progress\WATCH.md`, reports, never
+  builds or commits; it reads repo + journals only. **Append to a resume prompt's `## Changed since`
+  block, never its body; always start a work chat fresh from its prompt.**
 
 ## Running three chats in parallel — what it actually costs and breaks
 - **MOVED 2026-09-01 ->** the ~75k-token boot cost per chat and the four-chat endpoint plan. Reach any `MOVED`/`PRUNED` block with `grep -n "Pruned from MEMORY" progress\memory-archive.md` then `sed`.

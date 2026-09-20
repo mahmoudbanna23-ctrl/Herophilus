@@ -1164,3 +1164,13 @@ rows 14/19 flagged as "staging language" are the brief's required box-mismatch n
 standard gap-fill tag). Full medical read + boot-check clean (4049/81, 0 errors), spliced+committed.
 
 s10-12 next, s13 deferred, s14-28 unstaged. Close-out: `progress\resume-ophtho-endpoint-A-chapters.md` tail.
+
+## Pruned from MEMORY.md - 2026-09-20
+
+### The watch — oversight every ~12 h (set up 2026-09-02)
+- **A fresh chat runs `progress\WATCH.md` top to bottom every ~12 h, reports changed / stale / at
+  risk, and dies. It never builds, splices, edits content or commits** unless told to in that chat.
+  ⚠️ **It reads the repo and the journals, never a work chat's conversation — anything not written
+  into a journal dies with that session.** Rest of the block **PRUNED 2026-09-03 ->** archive,
+  `## Pruned from MEMORY.md - 2026-09-03`. **Append to a resume prompt's `## Changed since` block,
+  never its body; always start a work chat fresh from its prompt.**
