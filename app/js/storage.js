@@ -205,11 +205,13 @@ function qImgSrc(name){ return `assets/q/${name}.jpg`; }
 function qFigure(q){
   if(!q.image) return '';
   const alt=q.imgAlt||'Clinical image printed with this question';
-  return `<figure class="qfig">
+  /* imgSpoils: the printed figure answers the question, so it stays blurred until the answer is shown. */
+  const veil=q.imgSpoils&&!(typeof Q!=='undefined'&&Q.shown);
+  return `<figure class="qfig${veil?' veil':''}">
     <div class="qfig-media"><img src="${qImgSrc(q.image)}" alt="${esc(alt)}" onclick="openZoom('${q.image}')" onerror="qFigure.failed(this)">
       <p class="qfig-failure" role="alert" hidden>The figure could not be loaded. This question needs it. Reload the page to try again.</p></div>
     <figcaption>${esc(alt)}${q.imgEssential?' — this question cannot be answered without it.':''}
-      <span class="qfig-hint">Tap to enlarge.</span></figcaption>
+      <span class="qfig-hint">${veil?'Revealed after you answer.':'Tap to enlarge.'}</span></figcaption>
   </figure>`;
 }
 /* The image gives up its place to an explanation and loses the zoom it can no
