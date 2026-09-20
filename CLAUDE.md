@@ -190,7 +190,7 @@ No test framework — verification is ad-hoc but must actually run:
 Supersedes `PLAN-sprint-to-17-sep.md` §4 "Never delegated", `WORKFLOW-who-does-what.md` "Never" column, `UPDATE-ophtho-2026-09-07.md` "Vision never leaves Claude".
 - **Claude only — judgement:** key adjudication · fold decisions · the splice · any git write · the final medical read · edits to `CLAUDE.md` / `MEMORY.md`.
 - **Everything else goes to the fleet** per root `CLAUDE.md` §9, vision ladder included: staging, page reads, OCR, drafting, `imgAlt`, merges, key-file edits. Each result passes a script check and an independent checker (never the seat that made it) before Claude judges it.
-- **Gateway:** `auto/*` combos allowed. Still banned: prefixes `dva/` `cxa/` `aug/` `zc/` and any Web Cookie provider — select by prefix allowlist, never by text match in a model id.
+- **Gateway:** never `auto/*` (root rule 2026-09-20, supersedes the 2026-09-15 allowance) — named combos `work-text` / `work-vision` only. Also banned: prefixes `dva/` `cxa/` `aug/` `zc/` and any Web Cookie provider — select by prefix allowlist, never by text match in a model id.
 - `Tools\guard\route-guard.js` refuses a Claude drafter while the gateway is up unless the prompt opens `ROUTE-OK: <reason>`.
 
 ---

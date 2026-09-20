@@ -2088,3 +2088,16 @@ the live array, then section 4 onward through the chapter half (sections up to 2
 Sections 12, 16 and 20 still need chapters added to `app\data\modules.js` before they can be
 drafted — not blocking, but due before those three come up. Full resume state:
 `progress\resume-ophtho-endpoint-A-chapters.md`.
+
+---
+
+## §21 — Pointer: the ledger stopped at §20 (written 2026-09-20)
+
+Sections 3 onward (through s13, s16 staging, s18, s19, s21; live 377 at `a22d588`) were logged in
+`progress\resume-ophtho-endpoint-A-chapters.md`, not here. That file is the record for the ophtho
+endpoint stream.
+
+### Next
+
+Add chapter + group for s16 and s20 in `app\data\modules.js`; draft, sweep and splice s16 from its
+staging (`c078016`); stage s20 (pdf 1332-1373) with `STAGE_MODEL=work-vision`. Never `auto/*`.

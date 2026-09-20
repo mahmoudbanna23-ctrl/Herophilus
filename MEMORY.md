@@ -11,15 +11,14 @@ page. ⚠️⚠️ **SUPERSCRIPTS FAIL SILENTLY: WPS read a printed 10⁶ as 10�
 dose from OCR; read those three off the page image.** ⚠️ **Exit 429 is a RATE limit, NOT a quota** —
 back off, double the gap (cap 60 s), **retry the same page.**
 
-**⚠️ GATEWAY ROUTE (2026-09-16, supersedes the 03:30 note) — Codex+OmniRoute is the default worker.**
-Ladder: Codex+OmniRoute (`Tools/omniroute/codex-gw.sh`) -> opencode+OmniRoute -> Codex solo own OpenAI
-login (`gpt-5.6-terra` routine / `gpt-6-astra` must-be-right) -> fleet direct (vibe · Groq `gpt-oss-120b` ·
-Gemini Flash · opencode `openrouter/poolside/laguna-s-2.1:free`; grok out of quota, agy needs `agy mcp
-disable agentmemory`) -> Claude last, prompt opens `ROUTE-OK: <why>`. ⚠️ **`auto/*` ALLOWED but SPENDS
-the owner's own OpenRouter key** — `auto/best-free` (Groq) is the only free combo; **ask before a paid
-batch**, payer per call in `x-omniroute-provider/-model/-response-cost`. Pong first; drop a route on
-first failure, no retry loops. Checking = two layers, different house, Codex never checks itself.
-"Headroom" DROPPED for good — 2.9x tokens, lossy; never retest.
+**⚠️ GATEWAY ROUTE (2026-09-20, supersedes the 2026-09-16 note) — root `CLAUDE.md` §9 ladder binds here.**
+Bulk pages -> a script, single-shot calls to `work-vision` / `work-text` (`Tools/omniroute/stage-pages.mjs`,
+s16 ran 52/52 that way). A job with steps -> ONE clocked attempt on a seat `Tools/omniroute/seats-alive.json`
+marks capable (`node Tools/omniroute/probe.mjs` once per session; a pong proves nothing) — Codex on its
+own login (`gpt-5.6-terra` routine / `gpt-6-astra` must-be-right); Codex through the gateway has NO
+capable seat. **NEVER `auto/*`** (0 of 221 that week, one request fans across 165–308 models). Two failed
+dispatches -> a Claude role, prompt opens `ROUTE-OK: <why>`; never a third. Checking = two layers,
+different house, Codex never checks itself. "Headroom" DROPPED for good — never retest.
 
 Running record, organised around *resuming*. ISO dates; unverified marked as such. Method in
 `CLAUDE.md`; per-topic history in **`progress\ledger.md` (17+) and `progress\ledger-closed-1-16.md`
@@ -40,7 +39,7 @@ Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0
 OPH-B unblocked. **417 live, s1-15 + s17-19 + s21 done** (✅ **s14 Neuro-ophthalmology CLOSED 2026-09-19,
 313->338, `264bc74`**, n18 folded into `ophep-squint-10`; s12 `857e08c` chapter `op-vitreous`, chapters 154,
 boot-check 4049/81; s17 `4795291`). **REGROUPED 2026-09-19 `25ab5b7`: 19 book-order groups, ids unchanged, plan `PLAN-ophtho-book-groups-2026-09-19.md`.** **s13 Retina CLOSED 2026-09-20 (40 q, 377->417, n16 folded, boot 4049/81/154; s18/s19/s21 chat B); chapters split by topic, then House; s18/s19 audited, fixed 2026-09-20.
-s16 + s20 need chapter+group; journal tail = addendum (2).** End of stream owes House `alsoIn` merges (`qb-pages\*house-collisions.md`) + `ophep-squint-10`
+s16 staged `c078016`, owed items at the resume file's tail; s16 + s20 need chapter+group; journal tail = addendum (2).** End of stream owes House `alsoIn` merges (`qb-pages\*house-collisions.md`) + `ophep-squint-10`
 reprint citation. Detail: `progress\resume-ophtho-endpoint-A-chapters.md` tail (s14 entry) + archive
 `## Pruned from MEMORY.md - 2026-09-17`; parallel-run history: archive, `2026-09-16 (part 2)`.
 

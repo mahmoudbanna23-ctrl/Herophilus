@@ -1224,3 +1224,14 @@ Chapter `op-glauc`, source `Opthalmology endpoint.pdf` pdf 788-849, 26 staged ro
 - Not done: no chapter or group for s16 in `modules.js`, no draft, no sweep, no splice, no commit.
 - Next: add the s16 chapter and group, draft from the staging, six-stage sweep against House ch.16 and
   Grade Gain topic 16, then splice. s20 (pdf 1332-1373) is still unstaged.
+
+### Owed from the 2026-09-20 chat (written here so closing that chat loses nothing)
+
+- s16 staging is committed as `c078016`. s19 closed at 23 questions, live 354 -> 377 (`a22d588`); s21 had
+  0 questions; journal `9c7f0ea`.
+- **s19 n1 key disagreement:** the endpoint bank keys Epiphora ("Ageing ... EXCEPT"); House `opqb-t28-5`
+  keys Optic disc cupping. The endpoint key was kept as printed; both sit in the s19 House-collisions
+  file. Owner decides.
+- **s19 n11 vs n19:** the printed keys contradict (anti-VEGF for PDR vs panretinal photocoagulation); the
+  lecture supports laser for proliferative disease. n11, n23 and n25 carry printed-key notes.
+- Still owed at end of stream: the House `alsoIn` merges (`qb-pages\*house-collisions.md`).
