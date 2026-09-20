@@ -4149,7 +4149,7 @@ const SDK=['https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js',
            'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js',
            'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js'];
 let fbApp=null, fbUser=null, syncState='off', pushTimer=null, sdkLoading=null;
-let cloudSession=null, cloudAuth=0;
+let cloudSession=null, cloudAuth=0, retryTimer=null;
 
 function cloudConfig(){
   if(FIREBASE_CONFIG&&FIREBASE_CONFIG.apiKey)return FIREBASE_CONFIG;
@@ -4208,7 +4208,10 @@ const syncClock=ts=>new Date(ts).toLocaleTimeString('en-GB',{hour:'2-digit',minu
 function setSync(s){
   if(s==='idle')lastSyncAt=Date.now();
   if(s==='off')lastSyncAt=0;
-  syncState=s;const el=$('railSync');if(el&&me)drawRailSync();
+  syncState=s;
+  if(s==='err'){if(!retryTimer)retryTimer=setInterval(retrySync,180000)}
+  else stopRetry();
+  const el=$('railSync');if(el&&me)drawRailSync();
 }
 function drawRailSync(){
   const el=$('railSync');
@@ -4297,8 +4300,19 @@ function cloudWait(work){
   })]).finally(()=>clearTimeout(timer));
 }
 function resetCloud(){
-  clearTimeout(pushTimer);pushTimer=null;cloudSession=null;
+  clearTimeout(pushTimer);pushTimer=null;cloudSession=null;stopRetry();
 }
+function stopRetry(){clearInterval(retryTimer);retryTimer=null}
+/* A push that failed offline must not go silent until reload — retry once
+   the browser says we're back online, and slowly meanwhile in case that event
+   never fires. Only runs while a session exists and the last sync actually failed. */
+function retrySync(){
+  if(syncState!=='err')return;
+  if(!cloudEnabled()||!fbUser){stopRetry();return}
+  if(currentCloud(cloudSession))pushCloud(cloudSession);
+  else if(me)pullCloud();
+}
+window.addEventListener('online',retrySync);
 function currentCloud(c){
   return !!(c&&c===cloudSession&&fbUser&&me&&c.auth===cloudAuth&&
             c.uid===fbUser.uid&&c.pid===me.id);

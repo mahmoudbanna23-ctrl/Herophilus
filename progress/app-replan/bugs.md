@@ -215,3 +215,5 @@ ESCALATION, not a verdict: settle which cause is live before anyone writes a fix
 - c7-1 / c8-3: fixed once, `clepIdleLoop()`. Added `clepReduced()` to the guard so the idle-chatter timer stops rescheduling under reduced motion, matching `clepShiftLoop`/`clepGlitchLoop`.
 - c8-1: fixed, `bakRestore()`. Added the `Q.exam` reset and `sessStartTick()`/`sessStopTick()` pairing mirrored from `importData()`.
 - c8-2: fixed, `advancePhase()`. Sets `s.phase=''` before calling `endSession(true)` on the final cycle so `sessFocusMs()` no longer re-adds the just-folded `phaseElapsed()`.
+
+2026-09-20: fixed, silent-dead cloud sync after a failed push/pull. `setSync()` now starts a 3-minute `retryTimer` on `'err'` and stops it on any other state; new `retrySync()` re-pushes via `pushCloud(cloudSession)` when the session is still current or re-establishes it via `pullCloud()` when `fbUser` is set but the session was never created; a new `window.addEventListener('online',retrySync)` fires the same check immediately on reconnect. `resetCloud()` also clears the timer on sign-out/profile switch. No reload or popup added.
