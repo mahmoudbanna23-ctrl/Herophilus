@@ -42,7 +42,8 @@ function live(file, varName) {
 const file = process.argv[2];
 if (!file) { console.error('usage: node sweep-oph-staged.js <staging.json>'); process.exit(2); }
 const rows = JSON.parse(fs.readFileSync(file, 'utf8')).filter((r) => r.page_type === 'question_marked');
-const EP = live('questions.ophtho.ep.js', 'Q_OPHTHO_EP');
+// Part 2 (exam sections) is the same bank: a later exam reprints an earlier exam's survivors too.
+const EP = live('questions.ophtho.ep.js', 'Q_OPHTHO_EP').concat(live('questions.ophtho.ep2.js', 'Q_OPHTHO_EP2'));
 const HO = live('questions.ophtho.js', 'Q_OPHTHO');
 console.log('staged answered rows', rows.length, '| live endpoint', EP.length, '| live house', HO.length);
 
