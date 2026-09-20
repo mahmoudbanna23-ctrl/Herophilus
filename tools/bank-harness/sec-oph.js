@@ -31,7 +31,9 @@ const SEC_P1 = {
   // s12: no within-bank fold (sweep 2026-09-19, 11 questions, every endpoint hit a different question with a shared option menu).
   // Files under op-vitreous, a chapter added to modules.js for this section.
   12: { prefix: 'ophep-vitreous-', file: 'oph-ep-p1-s12-vitreous.array.js', svar: 'OPHEP_S12_STAGED', draft: 'oph-ep-p1-s12-vitreous.draft', chapter: 'op-vitreous', pages: [850, 879], ans: null },
-  13: { prefix: 'ophep-retina-', file: 'oph-ep-p1-s13-retina.array.js', svar: 'OPHEP_S13_STAGED', draft: 'oph-ep-p1-s13-retina.draft', chapter: 'op-ret', pages: [880, 981], ans: null },
+  // s13: 41 staged pairs, n numbered by physical position (printed numbers run 1-27, a second 27, then 28-40).
+  // n16 (p.931) is an exact within-section reprint of n10 (p.919): same stem, same four options (only an l/I glyph differs), same key D -- folded, none takes alsoIn.
+  13: { prefix: 'ophep-retina-', file: 'oph-ep-p1-s13-retina.array.js', svar: 'OPHEP_S13_STAGED', draft: 'oph-ep-p1-s13-retina.draft', chapter: 'op-ret', pages: [880, 981], ans: null, folded: [16] },
   // s14: n18 (unmarked p.1048) is an exact cross-chapter reprint of live ophep-squint-10 (p.1094; same stem,
   // same options with the A/D duplicate, same key, neither boxed) -- folded, none takes alsoIn. 26 staged rows, 25 drafted.
   14: { prefix: 'ophep-neuro-ophthalmology-', file: 'oph-ep-p1-s14-neuro-ophthalmology.array.js', svar: 'OPHEP_S14_STAGED', draft: 'oph-ep-p1-s14-neuro-ophthalmology.draft', chapter: 'op-neuro', pages: [982, 1065], ans: null, folded: [18] },

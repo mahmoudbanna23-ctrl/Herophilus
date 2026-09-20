@@ -1095,3 +1095,35 @@ Chapter `op-glauc`, source `Opthalmology endpoint.pdf` pdf 788-849, 26 staged ro
 - Next: s16 Pediatric Ophthalmology needs a chapter added to `modules.js`; s18 Ocular Trauma is chat B's (staged,
   unverified, `238d16e`); s13 Retina deferred; s14 done. End-of-stream pass owes the `alsoIn` merges and the
   `ophep-squint-10` reprint citation.
+
+## s13 Retina (chapter `op-ret`, prefix `ophep-retina-`) - staging 2026-09-20
+
+- The "finish s5-s12 first" condition that deferred s13 is met (s5-s12 all closed), so staging was started.
+  Layout: p.880 Retina divider, pp.881-898 notes (not staged), p.899 Questions divider, pp.900-981 = 41
+  unmarked/marked pairs (unmarked page 898+2n, marked 899+2n). n is the physical pair order and the only stable
+  key: printed numbers run 1-27, a second question printed 27 (n28), then 28-40, and the last pair (n41) prints 40.
+- Route: Codex was out of quota until 2026-09-20 18:21, so the journal's Codex-solo plan was not used. Gateway
+  Gemini stager (82/82 pages, 10 needed retries: 955, 956, 957, 961, 967, 968, 971, 973, 975, 980; p.956 failed a
+  deterministic 400 "Base64 decoding failed" until its PNG was re-saved through System.Drawing). Then four blind
+  Sonnet re-reads (n1-10, 11-21, 22-31, 32-41; told not to open the Gemini output) and a per-pair diff, then a
+  third Sonnet reader on seven disputed details. All 41 keys, option counts and label cases agreed between the
+  two readers. Repairs: q12 stem carried "12."; p.911 options came back as one string; Gemini turned the printed
+  arrow in the q9 and q12 boxes into "->"; q16 option C prints a lowercase l ("lntravitreal steroids") and is
+  staged as printed; q4's box prints two spaces before "not" with nothing drawn between, staged as printed.
+- 41 questions: 27 with four options, 14 with five; boxes on n1-12 and n24-27 (16), none on the other 25;
+  figures on n4 and n5. Source quirks kept as printed: n14 option B "CVRO"; "D.AMD", "E.AMD", "A.CRAO" with no
+  space after the dot on n13, n15, n18; n28 option d has a stray straight quote after "fundus"; n25 option D sits
+  on the panel edge and is the last option visible. Labels: lowercase on n1-8 and n28-38, uppercase on n9-27 and
+  n39-41, closing parenthesis on n35-38.
+- Sweep (`sweep-oph-staged.js`, staged 41 rows vs 354 live EP, 1,598 House): one within-bank fold, n16 (p.931)
+  into n10 (p.919) - same stem, same four options apart from the l/I glyph, same key D; only n10 prints a box.
+  Registered in `sec-oph.js` row 13 (`folded: [16]`), none takes `alsoIn`. Pairs, not folds: n9/n12 (shared
+  four-option menu, different keys), n24/n25 (same vignette, different question), n30/n31, n13/n15 (menu overlap).
+  No live-EP reprint. House reprints (to record in the collisions file, merge at end of stream): n9, n10/n16, n11,
+  n12, n13, n15, n17, n18, n19 against `opmcq-c13-*`/`opmcq-c19-10`; n24-27 against `opqb-t27-10..13`; n34
+  `opqb-t13-547`; n35 `opqb-t13-566`. To look at on the page before recording: n4 vs `opqb-t13-531` (stem 0.545,
+  options 0.75, key differs), n14 vs `opmcq-c13-12` (stem 1.000, House prints the key as CRVO, this bank prints
+  CVRO), n20 vs `opqb-t11-454`, n33 vs `opqb-t13-514`.
+- Files: `oph-ep-p1-s13-retina.staging.json` (82 per-page records, s14 schema) and `.manifest.json`.
+- Next: brief, `array.js`, `draft.js` (question order: `folded: [16]` means 40 drafted), `val-oph-ep.js --part 1 13`,
+  independent check, splice, boot-check, journal. Do it in a fresh session from the resume block.
