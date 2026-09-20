@@ -48,7 +48,7 @@ const SEC_P1 = {
   // s19: the book prints number 16 twice, so n is numbered by position (25 staged rows, 23 drafted).
   // n2 (p1284) is an exact cross-chapter reprint of live ophep-orbit-2; n3 (p1286) of live ophep-eyelids-3 -- both folded, none takes alsoIn.
   19: { prefix: 'ophep-ocular-systemic-diseases-', file: 'oph-ep-p1-s19-ocular-systemic-diseases.array.js', svar: 'OPHEP_S19_STAGED', draft: 'oph-ep-p1-s19-ocular-systemic-diseases.draft', chapter: 'op-systemic', pages: [1245, 1331], ans: null, folded: [2, 3] },
-  20: { prefix: 'ophep-drugs-eye-', file: 'oph-ep-p1-s20-drugs-eye.array.js', svar: 'OPHEP_S20_STAGED', draft: 'oph-ep-p1-s20-drugs-eye.draft', chapter: 'op-drugs', pages: [1332, 1373], ans: null },
+  20: { prefix: 'ophep-drugs-eye-', file: 'oph-ep-p1-s20-drugs-eye.array.js', svar: 'OPHEP_S20_STAGED', draft: 'oph-ep-p1-s20-drugs-eye.draft', chapter: 'op-drugs', pages: [1332, 1373], ans: null, folded: [1, 2, 4, 10] }, // folds, all within-bank exact, same key, none takes alsoIn: n1 = live ophep-conjunctiva-2, n2 = ophep-uveal-tract-3, n4 = ophep-sclera-1 (all three live entries already carry the same box); n10 (p.1362, unboxed) = n7 (p.1356, boxed)
   // s21 holds 0 questions (17 theory slide pages, checked 2026-09-20: machine reading + one Sonnet re-read) -- no array, draft or splice exists for it.
   21: { prefix: 'ophep-diagnosis-keys-', file: 'oph-ep-p1-s21-diagnosis-keys.array.js', svar: 'OPHEP_S21_STAGED', draft: 'oph-ep-p1-s21-diagnosis-keys.draft', chapter: null, pages: [1374, 1390], ans: null }, // holds 0 questions; Diagnosis Keys spans op-acute, op-white, op-insid, op-vissym, op-red, not op-appear (Squint group)
 };

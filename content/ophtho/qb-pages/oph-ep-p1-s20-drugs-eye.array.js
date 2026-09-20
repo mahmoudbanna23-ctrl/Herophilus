@@ -1,0 +1,167 @@
+/* Generated mechanically from the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json).
+   Source pairs: unmarked p.1344 through marked p.1373.
+   KEY CONVENTION: 0-based. `key` is an index into `opts` -- 0=A/a, 1=B/b, 2=C/c, 3=D/d --
+   taken directly from the staged marked-page key_index; key_letter position checked to agree
+   on every row (see build.js output).
+   `p` is the row's own UNMARKED page; the marked (answered) page is p+1. Numbering is by
+   position (pair n, n=1..15, unmarked p.1344+2(n-1)... i.e. p=1342+2n).
+   Boxes (boxPrinted true) on n1-8 only (pdf 1345-1359); n9-15 stage no explanation box.
+   `fig` is left false on every row -- no row stages figure:true in this section.
+   n11 (pdf 1364/1365): the unmarked page prints options with letter prefixes baked in
+   ("A. Apraclonidine" etc); the marked page prints the same options clean. `opts` here is
+   taken from the marked page (clean) per instruction -- flagged, not normalized further.
+   `expl` is verbatim only for boxed rows (boxPrinted true); all other rows keep expl empty. */
+
+var OPHEP_S20_STAGED = [
+
+{ n:1, p:1344, key:1,
+  stem:"Topical steroids are used to treat all of the following EXCEPT:",
+  opts:["Giant papillary conjunctivitis","Dendritic corneal ulcer","Acute iridocyclitis","Adenoviral conjunctivitis"],
+  expl:"Topical steroids worsen herpetic dendritic ulcers by promoting viral replication and delaying healing. They are, however, useful in inflammatory conditions like iridocyclitis or giant papillary conjunctivitis.",
+  boxPrinted:true,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1345), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":1,"keyposIndex":1,"agree":true},
+  keyLetter:"b",
+},
+
+{ n:2, p:1346, key:0,
+  stem:"A 32-year-old male patient presented with diminution of vision, photophobia, ocular pain and redness in his right eye. Examination of the eye showed ciliary injection, anterior chamber cells, keratic precipitates and aqueous flare. Which of the following is a possible line of treatment?",
+  opts:["Steroid drops","Pilocarpine drops","Latanoprost drops","Topical anesthetic drops"],
+  expl:"Anterior uveitis (iridocyclitis) is treated with topical corticosteroids to reduce inflammation. Cycloplegic agents may also be added for pain relief.",
+  boxPrinted:true,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1347), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":0,"keyposIndex":0,"agree":true},
+  keyLetter:"a",
+},
+
+{ n:3, p:1348, key:0,
+  stem:"A 25-year-old lady came to the clinic complaining of bilateral eye redness, irritation and watery discharge that started in the left eye one day before then affected the right eye as well. On examination, there was bilateral conjunctival hyperemia and follicles. There was painful lymphadenopathy. She stated that she had a cold a few days ago. Which of the following is a useful line of treatment?",
+  opts:["Topical vasoconstrictors","Oral amoxicillin","Topical cyclopentolate","Intravenous acetazolamide"],
+  expl:"Adenoviral conjunctivitis is self-limiting, and treatment is mainly supportive. Topical vasoconstrictors relieve redness and discomfort while the infection resolves.",
+  boxPrinted:true,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1349), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":0,"keyposIndex":0,"agree":true},
+  keyLetter:"a",
+},
+
+{ n:4, p:1350, key:2,
+  stem:"Which of the following is useful to differentiate between episcleritis and scleritis?",
+  opts:["Phenylephrine 2.5% drops","Phenylephrine 5% drops","Phenylephrine 10% drops","Phenylephrine 20% drops"],
+  expl:"Phenylephrine 10% causes blanching of superficial vessels in episcleritis but not in scleritis. This helps differentiate the two conditions clinically.",
+  boxPrinted:true,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1351), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":2,"keyposIndex":2,"agree":true},
+  keyLetter:"c",
+},
+
+{ n:5, p:1352, key:0,
+  stem:"Which glaucoma medication may cause systemic hypotension?",
+  opts:["Timolol","Pilocarpine","Latanoprost","Brimonidine"],
+  expl:"Timolol may cause systemic hypotension. While timolol is a topical eye drop, it can be absorbed into the bloodstream and cause systemic side effects, including low blood pressure (hypotension), particularly in susceptible individuals.",
+  boxPrinted:true,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1353), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":0,"keyposIndex":0,"agree":true},
+  keyLetter:"a",
+},
+
+{ n:6, p:1354, key:2,
+  stem:"Which of the following represents an abnormal value in the dye disappearance test?",
+  opts:["< 5 seconds","> 5 seconds","> 5 minutes","> 10 seconds"],
+  expl:"In the dye disappearance test, clearance longer than 5 minutes indicates an obstruction of the nasolacrimal drainage system, which is abnormal.",
+  boxPrinted:true,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1355), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":2,"keyposIndex":2,"agree":true},
+  keyLetter:"c",
+},
+
+{ n:7, p:1356, key:2,
+  stem:"Which of the following is an adverse effect of local cycloplegics?",
+  opts:["Yellowish discoloration of skin","Corneal ulceration","Delirium","None of the above"],
+  expl:"Systemic toxicity of cycloplegics: (especially in children) causes the following:\n1. Increased body temperature\n2. Flushing (reddening) of skin\n3. Dryness of skin and mouth\n4. Irregular rapid pulse\n5. Hallucinations, confusion, and delirium",
+  boxPrinted:true,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1357), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":2,"keyposIndex":2,"agree":true},
+  keyLetter:"C",
+},
+
+{ n:8, p:1358, key:2,
+  stem:"Patients with photokeratitis are advised to avoid which of the following medications?",
+  opts:["Oral analgesics","Artificial tears","Topical anaesthetics","None of the above"],
+  expl:"During treatment of a patient with photokeratitis, Instruct the patients NOT TO USE topical anaesthetics (tempting) as they may delay healing.",
+  boxPrinted:true,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1359), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":2,"keyposIndex":2,"agree":true},
+  keyLetter:"C",
+},
+
+{ n:9, p:1360, key:2,
+  stem:"Which of the following is the most common use of hyperosmotic agents?",
+  opts:["Primary open angle glaucoma","Secondary open angle glaucoma","Acute angle closure glaucoma","Chronic angle closure glaucoma"],
+  expl:"",
+  boxPrinted:false,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1361), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":2,"keyposIndex":2,"agree":true},
+  keyLetter:"C",
+},
+
+{ n:10, p:1362, key:2,
+  stem:"Which of the following is an adverse effect of local cycloplegics?",
+  opts:["Yellowish discoloration of skin","Corneal ulceration","Delirium","None of the above"],
+  expl:"",
+  boxPrinted:false,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1363), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":2,"keyposIndex":2,"agree":true},
+  keyLetter:"C",
+},
+
+{ n:11, p:1364, key:3,
+  stem:"All of the following medications are among alpha 2 adrenergic agonists except?",
+  opts:["Apraclonidine","Epinephrine","Dipivefrin","Pilocarpine"],
+  expl:"",
+  boxPrinted:false,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1365), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":3,"keyposIndex":3,"agree":true},
+  keyLetter:"D",
+},
+
+{ n:12, p:1366, key:1,
+  stem:"All of the following are true regarding prostaglandin analogues except?",
+  opts:["They increase aqueous outflow through uveo-scleral pathway","They cause major systemic toxic effects","They may cause darkening of the iris","They are reported to cause anterior uveitis"],
+  expl:"",
+  boxPrinted:false,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1367), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":1,"keyposIndex":1,"agree":true},
+  keyLetter:"B",
+},
+
+{ n:13, p:1368, key:3,
+  stem:"Which of the following is true regarding phenylephrine hydrochloride 2.5%?",
+  opts:["Its effect lasts for about 10-15 hours","It has a potent cycloplegic effect","It's often used alone as a mydriatic agent","It can cause acute hypertension and myocardial infarction"],
+  expl:"",
+  boxPrinted:false,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1369), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":3,"keyposIndex":3,"agree":true},
+  keyLetter:"D",
+},
+
+{ n:14, p:1370, key:0,
+  stem:"Pilocarpine can cause all of the following side effects except?",
+  opts:["Diminished vision due to pupillary dilatation","Headache","Lacrimation, salivation & perspiration","Nausea, vomiting & diarrhea"],
+  expl:"",
+  boxPrinted:false,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1371), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":0,"keyposIndex":0,"agree":true},
+  keyLetter:"A",
+},
+
+{ n:15, p:1372, key:1,
+  stem:"Side effects of hyperosmotic agents include all of the following except?",
+  opts:["Thirst","Hypovolemia","Headache","Disorientation"],
+  expl:"",
+  boxPrinted:false,
+  keySource:"Recorded in the staged s20 source (oph-ep-p1-s20-drugs-eye.staging.json, marked p.1373), 2026-09-20, read by a vision model. Not re-derived by this script.",
+  keypos:{"visualIndex":1,"keyposIndex":1,"agree":true},
+  keyLetter:"B",
+},
+
+];

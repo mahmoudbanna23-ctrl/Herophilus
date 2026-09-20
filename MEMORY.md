@@ -36,10 +36,10 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho
 ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.**
 Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08**,
-OPH-B unblocked. **428 live, s1-19 + s21 done** (✅ **s14 Neuro-ophthalmology CLOSED 2026-09-19,
+OPH-B unblocked. **439 live, s1-21 ALL done** (✅ **s14 Neuro-ophthalmology CLOSED 2026-09-19,
 313->338, `264bc74`**, n18 folded into `ophep-squint-10`; s12 `857e08c` chapter `op-vitreous`, chapters 154,
 boot-check 4049/81; s17 `4795291`). **REGROUPED 2026-09-19 `25ab5b7`: 19 book-order groups, ids unchanged, plan `PLAN-ophtho-book-groups-2026-09-19.md`.** **s13 Retina CLOSED 2026-09-20 (40 q, 377->417, n16 folded, boot 4049/81/154; s18/s19/s21 chat B); chapters split by topic, then House; s18/s19 audited, fixed 2026-09-20.
-s16 Pediatric CLOSED 2026-09-20 (11 q, 5 folds, 417->428, chapters 156, `op-peds` + `op-drugs` added); s20 staged + image-checked, next: s20 array, sweep, draft, splice; journal tail = s16 entry.** End of stream owes House `alsoIn` merges (`qb-pages\*house-collisions.md`) + `ophep-squint-10`
+s16 Pediatric CLOSED 2026-09-20 (11 q, 5 folds, 417->428, chapters 156, `op-peds` + `op-drugs` added); s20 Drugs CLOSED 2026-09-20 (11 q, 4 folds, 428->439); next: end-of-stream House merges; journal tail = s20 entry.** End of stream owes House `alsoIn` merges (`qb-pages\*house-collisions.md`) + `ophep-squint-10`
 reprint citation. Detail: `progress\resume-ophtho-endpoint-A-chapters.md` tail (s14 entry) + archive
 `## Pruned from MEMORY.md - 2026-09-17`; parallel-run history: archive, `2026-09-16 (part 2)`.
 

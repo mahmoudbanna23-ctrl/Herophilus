@@ -1,0 +1,82 @@
+staged answered rows 15 | live endpoint 428 | live house 1598
+
+[q1. Topical steroids are used to treat all of the following EXCEPT: p.1345] best stem score 1.000 | key "Dendritic corneal ulcer"
+  EP ophep-conjunctiva-2  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.446>
+
+[q2 p.1347] best stem score 1.000 | key "Steroid drops"
+  EP ophep-uveal-tract-3  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.744>
+
+[q3 p.1349] best stem score 0.222 | key "Topical vasoconstrictors"
+  no candidate
+
+[q4 p.1351] best stem score 1.000 | key "Phenylephrine 10% drops"
+  EP ophep-sclera-1  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.534>
+
+[q5. Which glaucoma medication may cause systemic hypotension?
+a. Timolol
+b. Pilocarpine
+c. Latanoprost
+d. Brimonidine p.1353] best stem score 0.143 | key "Timolol"
+  HOUSE opmcq-c20-24  stem 0.000  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.132 (Ch.20 Q24; its stem and options A-B print>
+
+[q6 p.1355] best stem score 0.400 | key "> 5 minutes"
+  HOUSE opmcq-c20-20  stem 0.400  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.132 (Ch.20 Q20, the first full question on the>
+
+[q7. Which of the following is an adverse effect of local cycloplegics?
+A. Yellowish discoloration of skin
+B. Corneal ulceration
+C. Delirium
+D. None of the above p.1357] best stem score 1.000 | key "Delirium"
+  HOUSE opmcq-c20-13  stem 1.000  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.130 (Ch.20 Q13).>
+  SELF p1363  stem 1.000  opts 1.000  key SAME  <staged p.1363>
+  HOUSE opmcq-c20-21  stem 0.800  opts 0.222  key DIFF ("All of the above")  <ophthalmology MCQ.pdf p.132 (Ch.20 Q21).>
+  HOUSE opmcq-c20-6  stem 0.762  opts 0.222  key DIFF ("All of the above")  <ophthalmology MCQ.pdf p.129 (Ch.20 Q6). The stem prints "is an the adv>
+  HOUSE opmcq-c20-10  stem 0.727  opts 0.000  key DIFF ("All of the above")  <ophthalmology MCQ.pdf p.130 (Ch.20 Q10, the first question on the page>
+
+[q8 p.1359] best stem score 0.444 | key "Topical anaesthetics"
+  no candidate
+
+[q9. Which of the following is the most common use of hyperosmotic agents?
+A. Primary open angle glaucoma
+B. Secondary open angle glaucoma
+C. Acute angle closure glaucoma
+D. Chronic angle closure glaucoma p.1361] best stem score 1.000 | key "Acute angle closure glaucoma"
+  HOUSE opmcq-c20-11  stem 1.000  opts 0.889  key SAME  <ophthalmology MCQ.pdf p.130 (Ch.20 Q11).>
+  HOUSE opmcq-c11-16  stem 0.667  opts 0.444  key DIFF ("Primary open angle glaucoma")  <ophthalmology MCQ.pdf p.77 (Ch.11 Q16; identical option menu to Ch.11 >
+  EP ophep-glaucoma-15  stem 0.218  opts 0.750  key SAME  <Opthalmology endpoint.pdf p.826>
+  EP ophep-malignancies-eye-adnexa-10  stem 0.700  opts 0.000  key DIFF ("Basal cell carcinoma")  <Opthalmology endpoint.pdf p.1176>
+  HOUSE opmcq-c17-3  stem 0.700  opts 0.000  key DIFF ("Basal cell carcinoma")  <ophthalmology MCQ.pdf p.108 (Ch.17 Q3)>
+
+[q10 p.1363] best stem score 1.000 | key "Delirium"
+  HOUSE opmcq-c20-13  stem 1.000  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.130 (Ch.20 Q13).>
+  SELF p1357  stem 1.000  opts 1.000  key SAME  <staged p.1357>
+  HOUSE opmcq-c20-21  stem 0.800  opts 0.222  key DIFF ("All of the above")  <ophthalmology MCQ.pdf p.132 (Ch.20 Q21).>
+  HOUSE opmcq-c20-6  stem 0.762  opts 0.222  key DIFF ("All of the above")  <ophthalmology MCQ.pdf p.129 (Ch.20 Q6). The stem prints "is an the adv>
+  HOUSE opmcq-c20-10  stem 0.727  opts 0.000  key DIFF ("All of the above")  <ophthalmology MCQ.pdf p.130 (Ch.20 Q10, the first question on the page>
+
+[q11 p.1365] best stem score 1.000 | key "Pilocarpine"
+  HOUSE opmcq-c20-16  stem 1.000  opts 0.889  key SAME  <ophthalmology MCQ.pdf p.131 (Ch.20 Q16).>
+
+[q12 p.1367] best stem score 1.000 | key "They cause major systemic toxic effects"
+  HOUSE opmcq-c20-7  stem 1.000  opts 0.889  key SAME  <ophthalmology MCQ.pdf p.129 (Ch.20 Q7).>
+  EP ophep-eyelids-17  stem 0.706  opts 0.000  key DIFF ("Epicanthal folds are usually bilateral and give a false impression of divergent squint")  <Opthalmology endpoint.pdf p.391>
+  EP ophep-sclera-13  stem 0.706  opts 0.000  key DIFF ("It causes severe eye pain")  <Opthalmology endpoint.pdf p.558>
+  HOUSE opmcq-c1-52  stem 0.706  opts 0.000  key DIFF ("Vision may be impaired in severe cases")  <ophthalmology MCQ.pdf p.14 (Ch.1 Q52)>
+  HOUSE opmcq-c3-14  stem 0.706  opts 0.000  key DIFF ("It may be caused by orbital fat atrophy due to old age")  <ophthalmology MCQ.pdf p.25 (Ch.3 Q14), option D and answer line printe>
+
+[q13 p.1369] best stem score 1.000 | key "It can cause acute hypertension and myocardial infarction"
+  HOUSE opmcq-c20-27  stem 1.000  opts 0.889  key SAME  <ophthalmology MCQ.pdf p.133 (Ch.20 Q27). Key D as printed. ophthalmolo>
+  EP ophep-optics-refraction-20  stem 0.706  opts 0.000  key DIFF ("It's characterized by reduced accommodative power that accompanies aging")  <Opthalmology endpoint.pdf p.198>
+  EP ophep-uveal-tract-10  stem 0.706  opts 0.000  key DIFF ("Non-caseating granuloma")  <Opthalmology endpoint.pdf p.758>
+  HOUSE opmcq-c2-4  stem 0.706  opts 0.000  key DIFF ("All of the above")  <ophthalmology MCQ.pdf p.16 (Ch.2 Q4)>
+  HOUSE opmcq-c2-21  stem 0.706  opts 0.000  key DIFF ("It's characterized by reduced accommodative power that accompanies aging")  <ophthalmology MCQ.pdf p.20 (Ch.2 Q21)>
+
+[q14 p.1371] best stem score 1.000 | key "Diminished vision due to pupillary dilatation"
+  HOUSE opmcq-c20-28  stem 1.000  opts 0.889  key SAME  <ophthalmology MCQ.pdf p.133 (Ch.20 Q28).>
+  HOUSE opmcq-c20-17  stem 0.667  opts 0.000  key DIFF ("Hyperactivity")  <ophthalmology MCQ.pdf p.131 (Ch.20 Q17).>
+  HOUSE opqb-t28-5  stem 0.625  opts 0.000  key DIFF ("Optic disc cupping")  <ophthalmology qb.pdf p.168, Q5 (Grade Gain, "Final Exam"). Supporting:>
+
+[q15 p.1373] best stem score 1.000 | key "Hypovolemia"
+  HOUSE opmcq-c20-14  stem 1.000  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.130 (Ch.20 Q14, the last question on the page)>
+
+rows with a candidate: 13/15 | best-score median 1.000 | max 1.000

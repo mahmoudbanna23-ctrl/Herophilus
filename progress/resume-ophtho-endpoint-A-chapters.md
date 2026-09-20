@@ -1247,3 +1247,11 @@ Chapter `op-glauc`, source `Opthalmology endpoint.pdf` pdf 788-849, 26 staged ro
 - Checks after splice: 428 entries, 0 holes, 428 unique ids, 11 in `op-peds`; boot-check 4049/81, chapters 156, 0 errors.
 - s20 Drugs and the Eye STAGED: `stage-pages.mjs` on `work-vision`, pdf 1332-1373, 12 theory (1343 is the Questions divider), 15 pairs 1344-1373, boxes on n1-8, none on n9-15, no figures. Four pages retried once (1348, 1349, 1351 gateway capacity; 1371 Base64 400 until the PNG was re-saved through System.Drawing). Separate Sonnet read of all 30 question pages: 15/15 clean. Manifest: `oph-ep-p1-s20-drugs-eye.manifest.json` (first run only; the four retried pages read as failures there, the staging file holds their retried records).
 - Next: s20 `array.js`, sweep, brief, draft, check, splice into `op-drugs`. Then the end-of-stream pass: House `alsoIn` merges from every collisions file. Still owner calls: s19 n1 key, s19 n11 vs n19, s13 n4 figure that gives the answer away.
+
+## 2026-09-20, s20 Drugs and the Eye CLOSED -- 11 live, 428 -> 439
+
+- Staged 15 (pdf 1344-1373, 12 theory pages before), all 4-option, no figures. Folds 4, all exact and hand-verified: n1 = ophep-conjunctiva-2, n2 = ophep-uveal-tract-3, n4 = ophep-sclera-1 (stem, options, key, box identical), n10 = unboxed second printing of n7. 11 + 4 = 15.
+- Ids ophep-drugs-eye-3,5,6,7,8,9,11,12,13,14,15, chapter op-drugs. Draft 1,757 words, Sonnet builder; separate refuter run found every slide citation was a LINE number, all corrected and two disputed ones (L26 slide 18, L15,16 slide 48) settled by a form-feed page count. Convention: L9 and L13,14 carry SLIDE N headers; L11, L12, L15,16, L26 are slide = form-feed page ordinal. The 14 / 28 footer rule is L18 only.
+- No lecture is dedicated to drugs; drug identities (timolol, latanoprost, brimonidine) are tagged not taken from the course material, classes cite L11 slide 19.
+- Reprint citations added to the three live survivors. Boot 4049 / 81 / 156, 0 errors. House pairs for the end-of-stream merge: oph-ep-p1-s20-drugs-eye.house-collisions.md (7 drafted rows, all same key).
+- Part 1 sections s1-s21 are now all live. Owed: House alsoIn merges, ophep-squint-10 reprint citation, owner calls (s19 n1 key, s19 n11 vs n19, s13 n4 figure, optics-refraction-18 option A spelling vs p.194).
