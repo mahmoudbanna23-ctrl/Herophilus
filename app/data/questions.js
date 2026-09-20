@@ -7,6 +7,8 @@ const Q_ALL = [].concat(
   window.Q_PEDS_EP || [],
   window.Q_PEDS_EP2 || [],
   window.Q_OPHTHO || [],
+  window.Q_OPHTHO_EP || [],
+  window.Q_OPHTHO_EP2 || [],
   window.Q_NEURO  || [],
   window.C_ENT    || [],
   window.C_PEDS   || [],
