@@ -1,0 +1,94 @@
+[
+ {
+  "q": 7,
+  "marked_page": 1405,
+  "staged_key": "Depression in adduction",
+  "candidates": []
+ },
+ {
+  "q": 25,
+  "marked_page": 1441,
+  "staged_key": "Primary open angle glaucoma",
+  "candidates": []
+ },
+ {
+  "q": 27,
+  "marked_page": 1445,
+  "staged_key": "Antibiotics and hot fomentation",
+  "candidates": [
+   "ophep-lacrimal-system-23"
+  ]
+ },
+ {
+  "q": 30,
+  "marked_page": 1451,
+  "staged_key": "Near vision",
+  "candidates": [
+   "ophep-optics-refraction-1"
+  ]
+ },
+ {
+  "q": 32,
+  "marked_page": 1455,
+  "staged_key": "Myasthenia gravis",
+  "candidates": []
+ },
+ {
+  "q": 34,
+  "marked_page": 1459,
+  "staged_key": "The ciliary body",
+  "candidates": [
+   "ophep-uveal-tract-4",
+   "ophep-orbit-3"
+  ]
+ },
+ {
+  "q": 35,
+  "marked_page": 1461,
+  "staged_key": "Anterior ischemic optic neuropathy",
+  "candidates": []
+ },
+ {
+  "q": 42,
+  "marked_page": 1475,
+  "staged_key": "Adenovirus",
+  "candidates": [
+   "ophep-conjunctiva-3",
+   "ophep-malignancies-eye-adnexa-10"
+  ]
+ },
+ {
+  "q": 46,
+  "marked_page": 1483,
+  "staged_key": "Acute iridocyclitis",
+  "candidates": [
+   "ophep-conjunctiva-21"
+  ]
+ },
+ {
+  "q": 48,
+  "marked_page": 1487,
+  "staged_key": "a. Steroid drops",
+  "candidates": [
+   "ophep-uveal-tract-3"
+  ]
+ },
+ {
+  "q": 50,
+  "marked_page": 1491,
+  "staged_key": "Posterior staphyloma",
+  "candidates": []
+ },
+ {
+  "q": 58,
+  "marked_page": 1507,
+  "staged_key": "Ishihara plates",
+  "candidates": []
+ },
+ {
+  "q": 73,
+  "marked_page": 1537,
+  "staged_key": "Excision with conjunctival autograft",
+  "candidates": []
+ }
+]

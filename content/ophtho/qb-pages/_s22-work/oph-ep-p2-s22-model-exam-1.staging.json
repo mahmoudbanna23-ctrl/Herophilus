@@ -2276,8 +2276,23 @@
   },
   {
     "pdf_page": 1505,
-    "_parse_error": true,
-    "_raw": "gemini/gemini-3.1-flash-lite: model — [400]: Invalid value at 'contents[0].parts[1].inline_data.data' (TYPE_BYTES), Base64 decoding failed for \"iVBORw0KGgoAAAANSUhEUgAABNkAAAbaCAIAAAB3QTY3AAAACXBIWXMA"
+    "printed_page": "1505",
+    "page_type": "question_marked",
+    "printed_q": "57",
+    "stem": "The retina is composed of:",
+    "options": [
+      "6 layers",
+      "8 layers",
+      "9 layers",
+      "10 layers"
+    ],
+    "key_letter": "d",
+    "key_index": 3,
+    "box_printed": true,
+    "explanation_verbatim": "The retina consists of 10 layers, from the retinal pigment epithelium to the internal limiting membrane. Each layer plays a specific role in visual processing.",
+    "figure": true,
+    "figure_desc": "Diagram of the human eye cross-section and the detailed structure of the retina, labeling various cells and layers.",
+    "numeric_note": "57, 6, 8, 9, 10, 1505"
   },
   {
     "pdf_page": 1506,
@@ -2601,8 +2616,23 @@
   },
   {
     "pdf_page": 1522,
-    "_parse_error": true,
-    "_raw": "gemini/gemini-3.1-flash-lite: model — [400]: Invalid value at 'contents[0].parts[1].inline_data.data' (TYPE_BYTES), Base64 decoding failed for \"iVBORw0KGgoAAAANSUhEUgAABNkAAAbaCAIAAAB3QTY3AAAACXBIWXMA"
+    "printed_page": "1522",
+    "page_type": "question_unmarked",
+    "printed_q": "66",
+    "stem": "The axial length of the eye can be measured by:",
+    "options": [
+      "Keratometry",
+      "Exophthalmometry",
+      "Ophthalmoscopy",
+      "A scan ultrasound"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "66, 1522"
   },
   {
     "pdf_page": 1523,

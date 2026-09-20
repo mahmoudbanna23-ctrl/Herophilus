@@ -1,0 +1,515 @@
+[
+ {
+  "q": 1,
+  "marked_page": 1393,
+  "staged_key": "Alternating esotropia",
+  "live": [
+   "ophep-pediatric-ophthalmology-1"
+  ]
+ },
+ {
+  "q": 2,
+  "marked_page": 1395,
+  "staged_key": "Horner syndrome",
+  "live": [
+   "ophep-neuro-ophthalmology-3"
+  ]
+ },
+ {
+  "q": 3,
+  "marked_page": 1397,
+  "staged_key": "Excimer",
+  "live": [
+   "ophep-optics-refraction-2"
+  ]
+ },
+ {
+  "q": 4,
+  "marked_page": 1399,
+  "staged_key": "Retinoblastoma",
+  "live": [
+   "ophep-malignancies-eye-adnexa-1"
+  ]
+ },
+ {
+  "q": 5,
+  "marked_page": 1401,
+  "staged_key": "Ophthalmoscopy",
+  "live": [
+   "ophep-exam-eye-1"
+  ]
+ },
+ {
+  "q": 6,
+  "marked_page": 1403,
+  "staged_key": "Radius of curvature of the cornea",
+  "live": [
+   "ophep-cornea-3"
+  ]
+ },
+ {
+  "q": 8,
+  "marked_page": 1407,
+  "staged_key": "Endophthalmitis",
+  "live": [
+   "ophep-optics-refraction-3",
+   "ophep-orbit-1"
+  ]
+ },
+ {
+  "q": 9,
+  "marked_page": 1409,
+  "staged_key": "Surgery",
+  "live": [
+   "ophep-glaucoma-2"
+  ]
+ },
+ {
+  "q": 10,
+  "marked_page": 1411,
+  "staged_key": "Light projection",
+  "live": [
+   "ophep-exam-eye-2"
+  ]
+ },
+ {
+  "q": 11,
+  "marked_page": 1413,
+  "staged_key": "Optic disc",
+  "live": [
+   "ophep-exam-eye-3"
+  ]
+ },
+ {
+  "q": 12,
+  "marked_page": 1415,
+  "staged_key": "Bitemporal hemianopia",
+  "live": [
+   "ophep-neuro-ophthalmology-2"
+  ]
+ },
+ {
+  "q": 13,
+  "marked_page": 1417,
+  "staged_key": "Epiphora",
+  "live": [
+   "ophep-ocular-systemic-diseases-1"
+  ]
+ },
+ {
+  "q": 14,
+  "marked_page": 1419,
+  "staged_key": "MRI",
+  "live": [
+   "ophep-ocular-trauma-1"
+  ]
+ },
+ {
+  "q": 15,
+  "marked_page": 1421,
+  "staged_key": "Peripheral anterior synechiae",
+  "live": [
+   "ophep-uveal-tract-1"
+  ]
+ },
+ {
+  "q": 16,
+  "marked_page": 1423,
+  "staged_key": "It presents by painless progressive diminution of vision but rapid drop of vision may also occur",
+  "live": [
+   "ophep-cornea-2"
+  ]
+ },
+ {
+  "q": 17,
+  "marked_page": 1425,
+  "staged_key": "Rhegmatogenous retinal detachment",
+  "live": [
+   "ophep-squint-1"
+  ]
+ },
+ {
+  "q": 18,
+  "marked_page": 1427,
+  "staged_key": "Candida albicans",
+  "live": [
+   "ophep-pediatric-ophthalmology-2"
+  ]
+ },
+ {
+  "q": 19,
+  "marked_page": 1429,
+  "staged_key": "Argon laser",
+  "live": [
+   "ophep-retina-1"
+  ]
+ },
+ {
+  "q": 20,
+  "marked_page": 1431,
+  "staged_key": "Neovascular glaucoma",
+  "live": [
+   "ophep-glaucoma-1"
+  ]
+ },
+ {
+  "q": 21,
+  "marked_page": 1433,
+  "staged_key": "Numerous flame shaped hemorrhages",
+  "live": [
+   "ophep-retina-2"
+  ]
+ },
+ {
+  "q": 22,
+  "marked_page": 1435,
+  "staged_key": "Retinitis pigmentosa",
+  "live": [
+   "ophep-neuro-ophthalmology-1"
+  ]
+ },
+ {
+  "q": 23,
+  "marked_page": 1437,
+  "staged_key": "Snow flakes",
+  "live": [
+   "ophep-lens-1"
+  ]
+ },
+ {
+  "q": 24,
+  "marked_page": 1439,
+  "staged_key": "Decision of the operation is related to the patient's needs",
+  "live": [
+   "ophep-lens-2"
+  ]
+ },
+ {
+  "q": 26,
+  "marked_page": 1443,
+  "staged_key": "5 layers",
+  "live": [
+   "ophep-cornea-1"
+  ]
+ },
+ {
+  "q": 28,
+  "marked_page": 1447,
+  "staged_key": "Alkali burn",
+  "live": [
+   "ophep-ocular-trauma-2"
+  ]
+ },
+ {
+  "q": 29,
+  "marked_page": 1449,
+  "staged_key": "Vernal conjunctivitis",
+  "live": [
+   "ophep-conjunctiva-1"
+  ]
+ },
+ {
+  "q": 31,
+  "marked_page": 1453,
+  "staged_key": "10-21 mmHg",
+  "live": [
+   "ophep-glaucoma-5"
+  ]
+ },
+ {
+  "q": 33,
+  "marked_page": 1457,
+  "staged_key": "Dendritic corneal ulcer",
+  "live": [
+   "ophep-conjunctiva-2"
+  ]
+ },
+ {
+  "q": 36,
+  "marked_page": 1463,
+  "staged_key": "Cylindrical",
+  "live": [
+   "ophep-optics-refraction-5"
+  ]
+ },
+ {
+  "q": 37,
+  "marked_page": 1465,
+  "staged_key": "Infraorbital",
+  "live": [
+   "ophep-orbit-4"
+  ]
+ },
+ {
+  "q": 38,
+  "marked_page": 1467,
+  "staged_key": "Normal ocular motility",
+  "live": [
+   "ophep-orbit-3"
+  ]
+ },
+ {
+  "q": 39,
+  "marked_page": 1469,
+  "staged_key": "Meibomian gland",
+  "live": [
+   "ophep-lacrimal-system-1"
+  ]
+ },
+ {
+  "q": 40,
+  "marked_page": 1471,
+  "staged_key": "Dacryocystorhinostomy",
+  "live": [
+   "ophep-lacrimal-system-4"
+  ]
+ },
+ {
+  "q": 41,
+  "marked_page": 1473,
+  "staged_key": "Stye",
+  "live": [
+   "ophep-eyelids-5"
+  ]
+ },
+ {
+  "q": 43,
+  "marked_page": 1477,
+  "staged_key": "Allergic conjunctivitis",
+  "live": [
+   "ophep-conjunctiva-4"
+  ]
+ },
+ {
+  "q": 44,
+  "marked_page": 1479,
+  "staged_key": "Topical vasoconstrictors",
+  "live": [
+   "ophep-drugs-eye-3"
+  ]
+ },
+ {
+  "q": 45,
+  "marked_page": 1481,
+  "staged_key": "Phenylephrine 10% drops",
+  "live": [
+   "ophep-sclera-1"
+  ]
+ },
+ {
+  "q": 47,
+  "marked_page": 1485,
+  "staged_key": "Mature cataract",
+  "live": [
+   "ophep-lens-3"
+  ]
+ },
+ {
+  "q": 49,
+  "marked_page": 1489,
+  "staged_key": "Automated perimetry",
+  "live": [
+   "ophep-glaucoma-4"
+  ]
+ },
+ {
+  "q": 51,
+  "marked_page": 1493,
+  "staged_key": "Schirmer test",
+  "live": [
+   "ophep-lacrimal-system-3"
+  ]
+ },
+ {
+  "q": 52,
+  "marked_page": 1495,
+  "staged_key": "Follicles in the upper palpebral conjunctiva",
+  "live": [
+   "ophep-conjunctiva-5"
+  ]
+ },
+ {
+  "q": 53,
+  "marked_page": 1497,
+  "staged_key": "Night blindness",
+  "live": [
+   "ophep-retina-4"
+  ]
+ },
+ {
+  "q": 54,
+  "marked_page": 1499,
+  "staged_key": "Orifices of Meibomian glands",
+  "live": [
+   "ophep-eyelids-4"
+  ]
+ },
+ {
+  "q": 55,
+  "marked_page": 1501,
+  "staged_key": "Monocular diplopia due to extraocular muscle involvement",
+  "live": [
+   "ophep-eyelids-3"
+  ]
+ },
+ {
+  "q": 56,
+  "marked_page": 1503,
+  "staged_key": "Inability to close palpebral fissure",
+  "live": [
+   "ophep-eyelids-2"
+  ]
+ },
+ {
+  "q": 57,
+  "marked_page": 1505,
+  "staged_key": "10 layers",
+  "live": [
+   "ophep-retina-5"
+  ]
+ },
+ {
+  "q": 59,
+  "marked_page": 1509,
+  "staged_key": "Large cup/disc ratio",
+  "live": [
+   "ophep-glaucoma-3"
+  ]
+ },
+ {
+  "q": 60,
+  "marked_page": 1511,
+  "staged_key": "Optic atrophy",
+  "live": [
+   "ophep-neuro-ophthalmology-4"
+  ]
+ },
+ {
+  "q": 61,
+  "marked_page": 1513,
+  "staged_key": "Ultrasonography is important",
+  "live": [
+   "ophep-vitreous-1"
+  ]
+ },
+ {
+  "q": 62,
+  "marked_page": 1515,
+  "staged_key": "Hypermature senile cataract",
+  "live": [
+   "ophep-lens-5"
+  ]
+ },
+ {
+  "q": 63,
+  "marked_page": 1517,
+  "staged_key": "Injury to the seventh nerve",
+  "live": [
+   "ophep-eyelids-1"
+  ]
+ },
+ {
+  "q": 64,
+  "marked_page": 1519,
+  "staged_key": "Total hyphema with prolonged rise in IOP",
+  "live": [
+   "ophep-cornea-4"
+  ]
+ },
+ {
+  "q": 65,
+  "marked_page": 1521,
+  "staged_key": "Perforated corneal ulcer",
+  "live": [
+   "ophep-cornea-5"
+  ]
+ },
+ {
+  "q": 66,
+  "marked_page": 1523,
+  "staged_key": "A scan ultrasound",
+  "live": [
+   "ophep-optics-refraction-4"
+  ]
+ },
+ {
+  "q": 67,
+  "marked_page": 1525,
+  "staged_key": "Right homonymous hemianopia",
+  "live": [
+   "ophep-neuro-ophthalmology-5"
+  ]
+ },
+ {
+  "q": 68,
+  "marked_page": 1527,
+  "staged_key": "Posterior chamber lens",
+  "live": [
+   "ophep-lens-4"
+  ]
+ },
+ {
+  "q": 69,
+  "marked_page": 1529,
+  "staged_key": "Iridodialysis",
+  "live": [
+   "ophep-uveal-tract-2"
+  ]
+ },
+ {
+  "q": 70,
+  "marked_page": 1531,
+  "staged_key": "Congenital cataract",
+  "live": [
+   "ophep-pediatric-ophthalmology-3"
+  ]
+ },
+ {
+  "q": 71,
+  "marked_page": 1533,
+  "staged_key": "Ciliary muscle contraction",
+  "live": [
+   "ophep-optics-refraction-6"
+  ]
+ },
+ {
+  "q": 72,
+  "marked_page": 1535,
+  "staged_key": "Central retinal artery occlusion",
+  "live": [
+   "ophep-retina-3"
+  ]
+ },
+ {
+  "q": 74,
+  "marked_page": 1539,
+  "staged_key": "YAG laser",
+  "live": [
+   "ophep-lens-6"
+  ]
+ },
+ {
+  "q": 75,
+  "marked_page": 1541,
+  "staged_key": "Trigeminal nerve",
+  "live": [
+   "ophep-exam-eye-4"
+  ]
+ },
+ {
+  "q": 76,
+  "marked_page": 1543,
+  "staged_key": "Thyroid eye disease",
+  "live": [
+   "ophep-orbit-2"
+  ]
+ },
+ {
+  "q": 77,
+  "marked_page": 1545,
+  "staged_key": "Flat topped papillae",
+  "live": [
+   "ophep-conjunctiva-6"
+  ]
+ }
+]

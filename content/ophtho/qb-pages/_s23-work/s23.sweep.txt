@@ -1,0 +1,304 @@
+staged answered rows 77 | live endpoint 439 | live house 1598
+
+[q1. Which of the following is located between the iris and lens?
+a. Posterior chamber
+b. Anterior chamber
+c. Vitreous cavity
+d. Canal of Schlemm p.1548] best stem score 1.000 | key "Posterior chamber"
+  EP ophep-exam-eye-5  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.74>
+  HOUSE opmcq-c1-36  stem 0.640  opts 0.750  key SAME  <ophthalmology MCQ.pdf p.11 (Ch.1 Q36)>
+
+[q2 p.1550] best stem score 1.000 | key "Superior oblique"
+  EP ophep-exam-eye-6  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.76>
+  HOUSE opqb-t21-21  stem 0.308  opts 0.750  key DIFF ("Lateral rectus")  <ophthalmology qb.pdf p.135, Q21 (Grade Gain, "End Exam 1"). Supporting>
+  HOUSE opqb-t1-21  stem 0.154  opts 0.750  key SAME  <ophthalmology qb.pdf p.3 (Q21), key p.8>
+  EP ophep-exam-eye-22  stem 0.000  opts 0.750  key SAME  <Opthalmology endpoint.pdf p.108>
+  HOUSE opmcq-c1-11  stem 0.000  opts 0.750  key DIFF ("Superior rectus")  <ophthalmology MCQ.pdf p.6 (Ch.1 Q11)>
+
+[q3. What does a visual acuity of 0.5 mean? p.1552] best stem score 1.000 | key "6/12"
+  EP ophep-exam-eye-7  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.78>
+
+[q4. How do you test the visual field in a patient who can only detect hand motion? p.1554] best stem score 1.000 | key "Light projection"
+  EP ophep-exam-eye-8  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.80>
+  HOUSE opmcq-c1-39  stem 0.500  opts 0.750  key SAME  <ophthalmology MCQ.pdf p.11 (Ch.1 Q39)>
+
+[q5 p.1556] best stem score 1.000 | key "a. 15° left esotropia"
+  EP ophep-exam-eye-9  stem 1.000  opts 0.000  key DIFF ("15° left esotropia")  <Opthalmology endpoint.pdf p.82>
+
+[q6 p.1558] best stem score 1.000 | key "Cylindrical"
+  EP ophep-optics-refraction-7  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.172>
+  EP ophep-optics-refraction-5  stem 0.000  opts 0.750  key SAME  <Opthalmology endpoint.pdf p.168>
+
+[q7. Which is a complication of high myopia? p.1560] best stem score 1.000 | key "Rhegmatogenous retinal detachment"
+  EP ophep-optics-refraction-8  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.174>
+
+[q8 p.1562] best stem score 1.000 | key "12–22 mm"
+  EP ophep-orbit-5  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.239>
+
+[q9 p.1564] best stem score 1.000 | key "Normal ocular mobility"
+  EP ophep-orbit-6  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.241>
+  HOUSE opmcq-c3-24  stem 1.000  opts 0.750  key DIFF ("Normal ocular motility")  <ophthalmology MCQ.pdf p.27 (Ch.3 Q24), options B-D and answer line pri>
+  HOUSE opqb-t3-134  stem 0.750  opts 0.250  key DIFF ("Proptosis")  <ophthalmology qb.pdf p.18 (Q134), key p.20>
+  EP ophep-orbit-3  stem 0.588  opts 0.250  key DIFF ("Normal ocular motility")  <Opthalmology endpoint.pdf p.235>
+  HOUSE opmcq-c3-28  stem 0.556  opts 0.250  key DIFF ("Normal pupil reaction")  <ophthalmology MCQ.pdf p.28 (Ch.3 Q28)>
+
+[q10 p.1566] best stem score 1.000 | key "Infraorbital"
+  EP ophep-orbit-4  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.237 (the same question is printed again on>
+
+[q11 p.1568] best stem score 0.560 | key "Meibomian gland"
+  EP ophep-lacrimal-system-1  stem 0.560  opts 0.750  key SAME  <Opthalmology endpoint.pdf p.295>
+
+[q12 p.1570] best stem score 1.000 | key "Dacryocystorhinostomy"
+  EP ophep-lacrimal-system-4  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.301 (the same question is printed again on>
+
+[q13 p.1572] best stem score 1.000 | key "Acute dacryoadenitis"
+  EP ophep-eyelids-6  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.369>
+  HOUSE opmcq-c4-6  stem 0.296  opts 0.750  key SAME  <ophthalmology MCQ.pdf p.30 (Ch.4 Q6)>
+  EP ophep-lacrimal-system-9  stem 0.037  opts 1.000  key DIFF ("Chronic dacryocystitis")  <Opthalmology endpoint.pdf p.311>
+  HOUSE opmcq-c4-15  stem 0.037  opts 1.000  key DIFF ("Chronic dacryocystitis")  <ophthalmology MCQ.pdf p.32 (Ch.4 Q15)>
+  EP ophep-lacrimal-system-11  stem 0.000  opts 1.000  key DIFF ("Acute dacryocystitis")  <Opthalmology endpoint.pdf p.315>
+
+[q14 p.1574] best stem score 1.000 | key "Lagophthalmos"
+  EP ophep-eyelids-7  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.371>
+  HOUSE opqb-t5-206  stem 0.000  opts 0.750  key SAME  <ophthalmology qb.pdf p.29 (Q206), key p.32>
+
+[q15 p.1576] best stem score 1.000 | key "Stye"
+  EP ophep-eyelids-5  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.367>
+  HOUSE opmcq-c5-17  stem 0.118  opts 0.750  key DIFF ("Chalazion")  <ophthalmology MCQ.pdf p.39 (Ch.5 Q17)>
+  HOUSE opqb-t25-1  stem 0.000  opts 0.750  key SAME  <ophthalmology qb.pdf p.148, Q1 (Grade Gain, "End Exam 5"). ⚠️ SOURCE D>
+
+[q16 p.1578] best stem score 0.952 | key "a. Topical vasoconstrictors"
+  EP ophep-conjunctiva-7  stem 0.952  opts 0.000  key DIFF ("Topical vasoconstrictors")  <Opthalmology endpoint.pdf p.456>
+
+[q17 p.1580] best stem score 0.930 | key "Tranta spots"
+  EP ophep-conjunctiva-8  stem 0.930  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.458>
+
+[q18 p.1582] best stem score 1.000 | key "Atopic keratoconjunctivitis"
+  EP ophep-conjunctiva-9  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.460>
+  HOUSE opqb-t21-10  stem 0.154  opts 0.750  key DIFF ("Vernal keratoconjunctivitis")  <ophthalmology qb.pdf p.134, Q10 (Grade Gain, "End Exam 1"). Supporting>
+
+[q19 p.1584] best stem score 0.800 | key "Adenovirus"
+  EP ophep-conjunctiva-10  stem 0.667  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.462>
+  HOUSE opmcq-c6-4  stem 0.700  opts 0.500  key SAME  <ophthalmology MCQ.pdf p.43 (Ch.6 Q4)>
+  HOUSE opmcq-c10-20  stem 0.800  opts 0.000  key DIFF ("Idiopathic")  <ophthalmology MCQ.pdf p.72 (Ch.10 Q20)>
+  HOUSE opmcq-c14-27  stem 0.750  opts 0.000  key DIFF ("Stroke")  <ophthalmology MCQ.pdf p.96 (Ch.14 Q27)>
+  HOUSE opmcq-c14-19  stem 0.667  opts 0.000  key DIFF ("Elevated intracranial pressure")  <ophthalmology MCQ.pdf p.95 (Ch.14 Q19)>
+
+[q20 p.1586] best stem score 1.000 | key "Punctate epithelial keratitis"
+  EP ophep-conjunctiva-11  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.464>
+
+[q21 p.1588] best stem score 1.000 | key "Conjunctivitis"
+  EP ophep-conjunctiva-12  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.466>
+
+[q22 p.1590] best stem score 1.000 | key "Phenylephrine 10%"
+  EP ophep-sclera-2  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.536>
+
+[q23 p.1592] best stem score 1.000 | key "Vitamin A"
+  EP ophep-cornea-6  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.591>
+  HOUSE opmcq-c8-18  stem 0.588  opts 0.750  key SAME  <ophthalmology MCQ.pdf pp.58-59 (Ch.8 Q18; ⚠️ four options printed with>
+
+[q24 p.1594] best stem score 1.000 | key "Tip of the nose"
+  EP ophep-cornea-7  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.593>
+
+[q25 p.1596] best stem score 1.000 | key "Topical antibiotics"
+  EP ophep-cornea-8  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.595>
+
+[q26 p.1598] best stem score 1.000 | key "Munson's sign"
+  EP ophep-cornea-9  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.597>
+
+[q27 p.1600] best stem score 0.984 | key "a. Corneal perforation"
+  EP ophep-cornea-10  stem 0.984  opts 0.000  key DIFF ("Corneal perforation")  <Opthalmology endpoint.pdf p.599>
+
+[q28. p.1602] best stem score 1.000 | key "Second sight"
+  EP ophep-lens-7  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.676>
+
+[q29 p.1604] best stem score 1.000 | key "Mature cataract"
+  EP ophep-lens-8  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.678>
+  HOUSE opmcq-c9-6  stem 0.500  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.63 (Ch.9 Q6)>
+  HOUSE opmcq-c9-2  stem 0.273  opts 1.000  key DIFF ("Nuclear cataract")  <ophthalmology MCQ.pdf p.62 (Ch.9 Q2)>
+  HOUSE opqb-t9-398  stem 0.100  opts 0.750  key DIFF ("Nuclear cataract.")  <ophthalmology qb.pdf p.60 (Q398), key p.63 (explanation box printed)>
+
+[q30 p.1606] best stem score 1.000 | key "YAG laser capsulotomy"
+  EP ophep-lens-9  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.680>
+
+[q31 p.1608] best stem score 1.000 | key "a. Ciliary body"
+  EP ophep-uveal-tract-4  stem 1.000  opts 0.000  key DIFF ("Ciliary body")  <Opthalmology endpoint.pdf p.746>
+  HOUSE opmcq-c10-8  stem 0.778  opts 0.000  key DIFF ("Ciliary body")  <ophthalmology MCQ.pdf p.69 (Ch.10 Q8)>
+  HOUSE opqb-t19-772  stem 0.571  opts 0.000  key DIFF ("IRMA in 1 quadrant")  <ophthalmology qb.pdf p.123 (Q772), key p.126 (printed explanation box)>
+
+[q32 p.1610] best stem score 1.000 | key "Ankylosing spondylitis"
+  EP ophep-uveal-tract-5  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.748>
+
+[q33 p.1612] best stem score 1.000 | key "Steroids"
+  EP ophep-uveal-tract-6  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.750>
+
+[q34 p.1614] best stem score 1.000 | key "Trabeculectomy"
+  EP ophep-glaucoma-6  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.808>
+
+[q35. The trabecular pathway is responsible for what percentage of aqueous drainage? p.1616] best stem score 1.000 | key "90%"
+  EP ophep-glaucoma-7  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.810>
+  HOUSE opmcq-c11-6  stem 0.348  opts 0.750  key SAME  <ophthalmology MCQ.pdf p.75 (Ch.11 Q6; identical option menu to Ch.11 Q>
+  EP ophep-uveal-tract-9  stem 0.167  opts 0.750  key DIFF ("10%")  <Opthalmology endpoint.pdf p.756>
+  HOUSE opmcq-c11-5  stem 0.167  opts 0.750  key DIFF ("10%")  <ophthalmology MCQ.pdf p.75 (Ch.11 Q5; the bank hyphenates "uveo-sclera>
+
+[q36 p.1618] best stem score 1.000 | key "Papillomacular bundle"
+  EP ophep-glaucoma-8  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.812>
+
+[q37 p.1620] best stem score 1.000 | key "Glaucoma"
+  EP ophep-glaucoma-9  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.814>
+  HOUSE opqb-t26-30  stem 0.047  opts 1.000  key SAME  <ophthalmology qb.pdf p.158, Q30 (Grade Gain, "End Exam 6 (Photos)"), k>
+  EP ophep-neuro-ophthalmology-1  stem 0.000  opts 1.000  key DIFF ("Retinitis pigmentosa")  <Opthalmology endpoint.pdf p.1014>
+
+[q38 p.1622] best stem score 1.000 | key "Acute angle-closure glaucoma"
+  EP ophep-glaucoma-10  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.816>
+  HOUSE opqb-t20-812  stem 0.000  opts 0.750  key SAME  <ophthalmology qb.pdf p.129, Q812 (Grade Gain, "Drugs and The Eye"). Su>
+
+[q39 p.1624] best stem score 1.000 | key "Automated perimetry"
+  EP ophep-glaucoma-11  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.818>
+
+[q40 p.1626] best stem score 1.000 | key "High myopia"
+  EP ophep-vitreous-2  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.860>
+  EP ophep-optics-refraction-14  stem 0.235  opts 0.750  key DIFF ("Hyperopia")  <Opthalmology endpoint.pdf p.186>
+  HOUSE opmcq-c2-5  stem 0.235  opts 0.750  key DIFF ("Hyperopia")  <ophthalmology MCQ.pdf p.17 (Ch.2 Q5)>
+  HOUSE opqb-t21-17  stem 0.000  opts 0.750  key DIFF ("Myopia")  <ophthalmology qb.pdf p.134, Q17 (Grade Gain, "End Exam 1"). Supporting>
+  EP ophep-ocular-systemic-diseases-10  stem 0.560  opts 0.000  key DIFF ("Smoking")  <Opthalmology endpoint.pdf p.1300>
+
+[q41 p.1628] best stem score 1.000 | key "Dilated fundus examination"
+  EP ophep-vitreous-3  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.862>
+
+[q42 p.1630] best stem score 1.000 | key "Central retinal artery occlusion (CRAO)"
+  EP ophep-retina-6  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.910>
+
+[q43 p.1632] best stem score 1.000 | key "Electrophysiological tests"
+  EP ophep-retina-7  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.912>
+
+[q44 p.1634] best stem score 0.947 | key "Amsler grid"
+  EP ophep-retina-8  stem 0.947  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.914>
+
+[q45 p.1636] best stem score 1.000 | key "Compressive optic neuropathy"
+  EP ophep-neuro-ophthalmology-6  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1024>
+  EP ophep-cornea-10  stem 0.000  opts 0.750  key DIFF ("Corneal perforation")  <Opthalmology endpoint.pdf p.599>
+  HOUSE opqb-t1-48  stem 0.000  opts 0.750  key DIFF ("Retinal detachment")  <ophthalmology qb.pdf p.5 (Q48), key p.8 — **cataract is also a classic>
+
+[q46 p.1638] best stem score 1.000 | key "Posterior communicating artery aneurysm"
+  EP ophep-neuro-ophthalmology-7  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1026>
+
+[q47 p.1640] best stem score 1.000 | key "MRI thorax"
+  EP ophep-neuro-ophthalmology-8  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1028>
+  HOUSE opmcq-c14-24  stem 0.089  opts 0.857  key SAME  <ophthalmology MCQ.pdf p.96 (Ch.14 Q24; the bank restates the Q9 vignet>
+
+[q48 p.1642] best stem score 1.000 | key "Horner syndrome"
+  EP ophep-neuro-ophthalmology-9  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1030>
+  HOUSE opqb-t22-1  stem 0.194  opts 0.750  key DIFF ("Diabetic ophthalmoplegia")  <ophthalmology qb.pdf p.137, Q1 (Grade Gain, "End Exam 2"). Supporting:>
+
+[q49. An elderly patient presents with sudden visual loss, headache, jaw claudication, and scalp tenderness. Which investigation is most important to confirm the diagnosis? p.1644] best stem score 1.000 | key "ESR"
+  EP ophep-neuro-ophthalmology-10  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1032>
+
+[q50 p.1646] best stem score 1.000 | key "Papilledema"
+  EP ophep-neuro-ophthalmology-11  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1034>
+  EP ophep-neuro-ophthalmology-15  stem 0.300  opts 0.750  key DIFF ("Anterior ischemic optic neuropathy")  <Opthalmology endpoint.pdf p.1042>
+  SELF p1654  stem 0.300  opts 0.750  key DIFF ("Anterior ischemic optic neuropathy")  <staged p.1654>
+
+[q51 p.1648] best stem score 0.933 | key "Elevated intracranial pressure"
+  EP ophep-neuro-ophthalmology-12  stem 0.933  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1036>
+  HOUSE opmcq-c14-19  stem 0.778  opts 0.500  key SAME  <ophthalmology MCQ.pdf p.95 (Ch.14 Q19)>
+
+[q52 p.1650] best stem score 1.000 | key "Organophosphorus poisoning"
+  EP ophep-neuro-ophthalmology-13  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1038>
+
+[q53 p.1652] best stem score 0.982 | key "Amaurosis fugax"
+  EP ophep-neuro-ophthalmology-14  stem 0.982  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1040>
+
+[q54 p.1654] best stem score 1.000 | key "Anterior ischemic optic neuropathy"
+  EP ophep-neuro-ophthalmology-15  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1042>
+  EP ophep-neuro-ophthalmology-11  stem 0.300  opts 0.750  key DIFF ("Papilledema")  <Opthalmology endpoint.pdf p.1034>
+  SELF p1646  stem 0.300  opts 0.750  key DIFF ("Papilledema")  <staged p.1646>
+
+[q55 p.1656] best stem score 1.000 | key "Mucocele"
+  EP ophep-pediatric-ophthalmology-4  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1124-1125>
+
+[q56 p.1658] best stem score 1.000 | key "Neisseria gonorrhoeae"
+  EP ophep-pediatric-ophthalmology-5  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1126-1127>
+
+[q57 p.1660] best stem score 1.000 | key "Primary congenital glaucoma"
+  EP ophep-pediatric-ophthalmology-6  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1128-1129>
+
+[q58 p.1662] best stem score 1.000 | key "Red reflex testing"
+  EP ophep-pediatric-ophthalmology-7  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1130-1131>
+
+[q59 p.1664] best stem score 1.000 | key "a. 6 weeks after birth"
+  EP ophep-pediatric-ophthalmology-8  stem 1.000  opts 0.000  key DIFF ("6 weeks after birth")  <Opthalmology endpoint.pdf p.1132-1133>
+
+[q60 p.1666] best stem score 1.000 | key "Basal cell carcinoma"
+  EP ophep-malignancies-eye-adnexa-2  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1160>
+  EP ophep-malignancies-eye-adnexa-10  stem 0.700  opts 0.667  key SAME  <Opthalmology endpoint.pdf p.1176>
+  HOUSE opmcq-c17-3  stem 0.700  opts 0.667  key SAME  <ophthalmology MCQ.pdf p.108 (Ch.17 Q3)>
+  HOUSE opmcq-c16-19  stem 0.560  opts 0.750  key DIFF ("Retinoblastoma")  <ophthalmology MCQ.pdf p.106 (Ch.16 Q19); the same bank reprints the st>
+  HOUSE opmcq-c17-7  stem 0.207  opts 0.889  key DIFF ("Sebaceous carcinoma")  <ophthalmology MCQ.pdf p.109 (Ch.17 Q7)>
+
+[q61. p.1668] best stem score 1.000 | key "CT orbit"
+  EP ophep-ocular-trauma-5  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1213>
+
+[q62 p.1670] best stem score 1.000 | key "Aphakia"
+  EP ophep-ocular-trauma-6  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1215>
+
+[q63 p.1672] best stem score 1.000 | key "Choroidal rupture"
+  EP ophep-ocular-trauma-7  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1217>
+  HOUSE opqb-t18-731  stem 0.146  opts 0.750  key DIFF ("Commotio retinae")  <ophthalmology qb.pdf p.116 (Q731), key p.120>
+
+[q64 p.1674] best stem score 1.000 | key "Removal"
+  EP ophep-ocular-trauma-8  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1219>
+  HOUSE opmcq-c18-2  stem 0.444  opts 0.750  key SAME  <ophthalmology MCQ.pdf p.112 (Ch.18 Q2)>
+
+[q65 p.1676] best stem score 1.000 | key "Vitreous hemorrhage"
+  EP ophep-ocular-systemic-diseases-4  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1288>
+
+[q66 p.1678] best stem score 1.000 | key "Branch retinal vein occlusion (BRVO)"
+  EP ophep-ocular-systemic-diseases-5  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1290>
+  HOUSE opmcq-c19-19  stem 0.643  opts 0.000  key DIFF ("BRVO")  <ophthalmology MCQ.pdf p.122 (Ch.19 Q19)>
+
+[q67 p.1680] best stem score 1.000 | key "Intravitreal injection of ranibizumab"
+  EP ophep-ocular-systemic-diseases-6  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1292>
+  EP ophep-ocular-systemic-diseases-24  stem 0.571  opts 0.000  key DIFF ("Anti-VEGF")  <Opthalmology endpoint.pdf p.1328>
+  HOUSE opmcq-c19-14  stem 0.571  opts 0.000  key DIFF ("Anti-VEGF")  <ophthalmology MCQ.pdf p.121 (Ch.19 Q14, the second of the treatment pa>
+
+[q68. Which investigation is most useful in a patient with macular edema? p.1682] best stem score 0.000 | key "Optical coherence tomography (OCT)"
+  EP ophep-ocular-systemic-diseases-7  stem 0.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1294>
+
+[q69 p.1684] best stem score 0.986 | key "c) Proliferative diabetic retinopathy"
+  EP ophep-ocular-systemic-diseases-8  stem 0.986  opts 0.000  key DIFF ("Proliferative diabetic retinopathy")  <Opthalmology endpoint.pdf p.1296>
+
+[q70 p.1686] best stem score 1.000 | key "HbA1c ≤ 7%"
+  EP ophep-ocular-systemic-diseases-9  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1298>
+
+[q71 p.1688] best stem score 1.000 | key "Smoking"
+  EP ophep-ocular-systemic-diseases-10  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1300>
+  HOUSE opmcq-c19-15  stem 0.640  opts 0.000  key DIFF ("All of the above")  <ophthalmology MCQ.pdf p.121 (Ch.19 Q15)>
+  EP ophep-vitreous-2  stem 0.560  opts 0.000  key DIFF ("High myopia")  <Opthalmology endpoint.pdf p.860>
+  SELF p1626  stem 0.560  opts 0.000  key DIFF ("High myopia")  <staged p.1626>
+
+[q72 p.1690] best stem score 1.000 | key "Intravitreal anti-VEGF injections"
+  EP ophep-ocular-systemic-diseases-11  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1302>
+
+[q73 p.1692] best stem score 1.000 | key "Grade 4"
+  EP ophep-ocular-systemic-diseases-12  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1304>
+  HOUSE opmcq-c19-5  stem 0.326  opts 1.000  key DIFF ("Grade 2")  <ophthalmology MCQ.pdf p.119 (Ch.19 Q5, the first of three questions in>
+  HOUSE opmcq-c19-6  stem 0.300  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.119 (Ch.19 Q6; the chapter prints "HTN retinop>
+  HOUSE opmcq-c19-38  stem 0.296  opts 1.000  key SAME  <ophthalmology MCQ.pdf pp.125-126 (Ch.19 Q38, straddling the page break>
+  HOUSE opqb-t19-775  stem 0.246  opts 1.000  key SAME  <ophthalmology qb.pdf p.123 (Q775), key p.126 (printed explanation box)>
+
+[q74 p.1694] best stem score 1.000 | key "Measure the blood pressure"
+  EP ophep-ocular-systemic-diseases-13  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1306>
+
+[q75 p.1696] best stem score 1.000 | key "Thyroid function tests"
+  EP ophep-ocular-systemic-diseases-14  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1308>
+
+[q76 p.1698] best stem score 1.000 | key "Timolol"
+  EP ophep-drugs-eye-5  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1352-1353>
+  HOUSE opmcq-c20-24  stem 0.000  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.132 (Ch.20 Q24; its stem and options A-B print>
+
+[q77 p.1700] best stem score 1.000 | key "> 5 minutes"
+  EP ophep-drugs-eye-6  stem 1.000  opts 1.000  key SAME  <Opthalmology endpoint.pdf p.1354-1355>
+  HOUSE opmcq-c20-20  stem 0.400  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.132 (Ch.20 Q20, the first full question on the>
+
+rows with a candidate: 77/77 | best-score median 1.000 | max 1.000

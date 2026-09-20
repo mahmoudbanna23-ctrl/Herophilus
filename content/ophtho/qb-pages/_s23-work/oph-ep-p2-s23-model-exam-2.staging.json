@@ -256,8 +256,23 @@
   },
   {
     "pdf_page": 1559,
-    "_parse_error": true,
-    "_raw": "gemini/gemini-3.1-flash-lite: model — [400]: Invalid value at 'contents[0].parts[1].inline_data.data' (TYPE_BYTES), Base64 decoding failed for \"iVBORw0KGgoAAAANSUhEUgAABNkAAAbaCAIAAAB3QTY3AAAACXBIWXMA"
+    "printed_page": "1559",
+    "page_type": "question_unmarked",
+    "printed_q": "7. Which is a complication of high myopia?\na. Rhegmatogenous retinal detachment\nb. Glaucoma\nc. Cataract\nd. Optic neuritis",
+    "stem": "Which is a complication of high myopia?",
+    "options": [
+      "Rhegmatogenous retinal detachment",
+      "Glaucoma",
+      "Cataract",
+      "Optic neuritis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "figure_desc": "",
+    "numeric_note": "7, 1559"
   },
   {
     "pdf_page": 1560,
@@ -461,13 +476,43 @@
   },
   {
     "pdf_page": 1570,
-    "_parse_error": true,
-    "_raw": "gemini/gemini-3.1-flash-lite: model — [400]: Invalid value at 'contents[0].parts[1].inline_data.data' (TYPE_BYTES), Base64 decoding failed for \"iVBORw0KGgoAAAANSUhEUgAABNkAAAbaCAIAAAB3QTY3AAAACXBIWXMA"
+    "printed_page": 1570,
+    "page_type": "question_marked",
+    "printed_q": "12",
+    "stem": "A 59-year-old lady presented with chronic painless tearing and recurrent conjunctivitis in her right eye over the last year. On examination, there was a positive regurge test on the affected side. Which of the following is the treatment of choice?",
+    "options": [
+      "Digital massage of the lacrimal sac",
+      "Nasolacrimal duct probing",
+      "Dacryocystorhinostomy",
+      "Systemic antibiotics"
+    ],
+    "key_letter": "c",
+    "key_index": 2,
+    "box_printed": true,
+    "explanation_verbatim": "Chronic dacryocystitis due to nasolacrimal duct obstruction is treated surgically by DCR, which creates a new passage between the lacrimal sac and nasal cavity. Massage or probing is only for congenital or early cases.",
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "12, 59, 1570"
   },
   {
     "pdf_page": 1571,
-    "_parse_error": true,
-    "_raw": "gemini/gemini-3.1-flash-lite: model — [400]: Invalid value at 'contents[0].parts[1].inline_data.data' (TYPE_BYTES), Base64 decoding failed for \"iVBORw0KGgoAAAANSUhEUgAABNkAAAbaCAIAAAB3QTY3AAAACXBIWXMA"
+    "printed_page": "1571",
+    "page_type": "question_unmarked",
+    "printed_q": "13",
+    "stem": "A woman presents with acute painful swelling on the lateral aspect of her upper eyelid with an S-shaped deformity. What is your diagnosis?",
+    "options": [
+      "Acute dacryocystitis",
+      "Chronic dacryocystitis",
+      "Acute dacryoadenitis",
+      "Chronic dacryoadenitis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": null,
+    "figure": false,
+    "figure_desc": null,
+    "numeric_note": "13, 1571"
   },
   {
     "pdf_page": 1572,
