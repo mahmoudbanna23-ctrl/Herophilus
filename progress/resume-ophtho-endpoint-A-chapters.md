@@ -1130,7 +1130,8 @@ Chapter `op-glauc`, source `Opthalmology endpoint.pdf` pdf 788-849, 26 staged ro
 
 ## 2026-09-20, s13 Retina CLOSED -- 40 live, `questions.ophtho.ep.js` 377 -> 417
 
-- Chapter `op-ret` already existed in `modules.js` (one chapter for the section, as s14 did); chapters stay 154.
+- Chapters: spliced all in `op-ret`, then REASSIGNED the same day (see the addendum at the end of this entry) across
+  the Retina group's three chapters plus two others; chapters stay 154, `modules.js` untouched.
   Draft ids `ophep-retina-1..15,17..41`; `ophep-retina-16` is never created (n16 folded into n10, `sec-oph.js`
   row 13 `folded: [16]`). 16 boxed rows (n1-12, n24-27), 24 unboxed. Draft length 9,873 words.
 - Figures: n4 (lecture slide, `q-oph-ep-907.jpg`, 1100x288) and n5 (retina schematic, `q-oph-ep-909.jpg`,
@@ -1150,8 +1151,7 @@ Chapter `op-glauc`, source `Opthalmology endpoint.pdf` pdf 788-849, 26 staged ro
   cross-reference that argued against the key, n38 macular oedema placement).
 - Scope decision: the brief's cite list stops at L20, L19.1, L19.2, L1,2, L21, L23, L31,32, L35,36, but n3, n10,
   n19 and n20 cite L11 and L12. The checker verified the facts (L11 lines 182-186 and 210, L12 lines 192-194), so
-  the citations stay. Left tagged, conservatively: claims that L25 slides 19-20 and 39 (n33, n39) and L3,4 slides
-  50-51 (n26, n37, n40) do carry. n27's "pale-disc end state" is an untagged interpretation, not edited.
+  the citations stay. Tag-to-citation fixes done in the addendum below (n26, n33, n37, n39; n27 rephrased).
 - Recorded, not corrected: n34 (book number 33) carries a "Note on the printed key" saying the lecture gives no
   speed of onset for central retinal vein occlusion and names no haemorrhage shape for the central form; the
   key stands. No source contradicted any other key.
@@ -1167,3 +1167,20 @@ Chapter `op-glauc`, source `Opthalmology endpoint.pdf` pdf 788-849, 26 staged ro
 - Next: s16 Pediatric Ophthalmology and s20 need a chapter (and group) in `modules.js`; s19 and s21 were closed
   by chat B (`a22d588`, `9c7f0ea`); s22-28 belong to OPH-B. End-of-stream pass owes the `alsoIn` merges (every
   `qb-pages\*house-collisions.md`) and the `ophep-squint-10` reprint citation.
+- ADDENDUM 2026-09-20, chapter reassignment and citation fixes (owner asked after seeing all 40 in "Retinal
+  detachment"). Rule applied: the shelf follows the topic and, on a close call, where House put the same topic.
+  `op-ret-vasc` 17 (n2, 3, 6, 13, 17, 20, 24, 25, 36 CRAO; n14, 19, 22, 34, 38, 41 vein occlusion; n23 amaurosis
+  fugax; n29 embolic plaque), `op-ret-dr` 8 (n21, 30, 37, 40 diabetic incl. diabetic vitreous haemorrhage, as House
+  `opqb-t19-765`; n8, 15, 31, 32 age-related macular degeneration, put on "Diabetic retinopathy and the macula"
+  because the Retina group has no degenerations chapter and House files it in `op-insid`, a different group),
+  `op-ret` 13 (n1, 4, 5, 7, 9-12, 18, 26, 28, 33, 39: detachment, breaks, retina layers, retinitis pigmentosa),
+  `op-neuro-optic` 1 (n27 optic neuritis, as 7 House stems), `op-systemic` 1 (n35 malignant hypertension in renal
+  failure, as House `opqb-t19-775`/`-781`). Edited the `chapter` field only, in `questions.ophtho.ep.js` and
+  `oph-ep-p1-s13-retina.draft.js`. Validator prints `{"op-ret":13,"op-ret-vasc":17,"op-ret-dr":8,"op-neuro-optic":1,
+  "op-systemic":1}`, ALL CHECKS PASSED, boot-check unchanged (4049/81/154, 0 errors).
+  Citation fixes from the cached slides: n26 and n37 cite L3,4 slide 51 (dense vitreous haemorrhage gives an absent,
+  black reflex); n33 cites L25 slides 19 and 20 (blow-out fracture follows fist or tennis-ball trauma); n39 cites L25
+  slide 39 (choroidal rupture sits under blunt trauma); n27 now says "shows a pale disc" (L21 slide 15) instead of
+  "pale-disc end state". Left tagged because no lecture line was found: n33 subarachnoid haemorrhage, n39 cataract
+  extraction and the choroid-tear wording, n40 floating debris and dark red glow, n27 retrobulbar normal fundus
+  (the printed box itself says a normal-appearing fundus).
