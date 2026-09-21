@@ -33,6 +33,23 @@ for (const r of rows) {
   const skip = new Set([String(r.n), String(r.pairN), String(r.qPage), String(r.aPage)]);
   const dn = [...na].filter(x => !nb.has(x) && !skip.has(x)).concat([...nb].filter(x => !na.has(x) && !skip.has(x)));
   if (dn.length) f.push('numbers differ from OCR: ' + dn.join(','));
+  if (kr && kr.stem !== undefined) {   // second independent reader (Gemini, other house) transcribed the same page
+    const cmp = (x, y) => { const tx = toks(x), ty = toks(y), i = [...tx].filter(t => ty.has(t)).length; return Math.min(i / (tx.size || 1), i / (ty.size || 1)); };
+    const numDiff = (x, y) => { const nx = nums(x), ny = nums(y); return [...nx].filter(t => !ny.has(t) && !skip.has(t)).concat([...ny].filter(t => !nx.has(t) && !skip.has(t))); };
+    const cq = r.stem + ' ' + r.options.join(' '), gq = kr.stem + ' ' + (kr.options || []).join(' ');
+    if (!gq.trim()) f.push('Gemini returned no stem/options');
+    else {
+      const s = cmp(cq, gq);
+      if (s < 0.85) f.push('Codex vs Gemini stem/options overlap ' + s.toFixed(2));
+      const d = numDiff(cq, gq);
+      if (d.length) f.push('numbers differ Codex vs Gemini: ' + d.join(','));
+    }
+    if (r.box || kr.box) {
+      const s = cmp(r.box || '', kr.box || '');
+      if (s < 0.85) f.push('Codex vs Gemini box overlap ' + s.toFixed(2) + (r.box ? '' : ' (Codex read no box)'));
+      else { const d = numDiff(r.box, kr.box); if (d.length) f.push('box numbers differ Codex vs Gemini: ' + d.join(',')); }
+    }
+  }
   if (r.pairN !== undefined && r.pairN !== r.n) f.push(`printed number ${r.n} (Codex) vs OCR/inferred ${r.pairN}`);
   if (r.printedNumber === null && r.pairN !== undefined) f.push('Codex saw no printed number');
   if (seen.has(r.n)) f.push('DUPLICATE number ' + r.n + ' in this chapter: id collides');
