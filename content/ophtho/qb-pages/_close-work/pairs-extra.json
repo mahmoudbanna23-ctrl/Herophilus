@@ -1,0 +1,256 @@
+{
+ "pairs": [
+  {
+   "ep": "ophep2-summer-exam-1",
+   "house": "opmcq-c1-56",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-2",
+   "house": "opmcq-c16-21",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-5",
+   "house": "opmcq-c1-55",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-8",
+   "house": "opmcq-c17-1",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-8",
+   "house": "opqb-t19-790",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-9",
+   "house": "opmcq-c1-54",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-10",
+   "house": "opmcq-c4-3",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-12",
+   "house": "opqb-t4-154",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-14",
+   "house": "opmcq-c3-27",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-17",
+   "house": "opmcq-c18-26",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-19",
+   "house": "opmcq-c5-32",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-24",
+   "house": "opmcq-c10-26",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-25",
+   "house": "opmcq-c10-1",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-27",
+   "house": "opmcq-c1-8",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-32",
+   "house": "opmcq-c2-32",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-34",
+   "house": "opmcq-c9-28",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-35",
+   "house": "opmcq-c1-9",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-36",
+   "house": "opmcq-c4-18",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-38",
+   "house": "opmcq-c1-7",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-38",
+   "house": "opqb-t14-588",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-39",
+   "house": "opmcq-c1-6",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-40",
+   "house": "opmcq-c14-2",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-41",
+   "house": "opmcq-c14-29",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-42",
+   "house": "opmcq-c14-28",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-44",
+   "house": "opmcq-c5-2",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-45",
+   "house": "opmcq-c8-27",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-46",
+   "house": "opmcq-c8-26b",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-47",
+   "house": "opmcq-c19-14",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-52",
+   "house": "opqb-t11-460",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-56",
+   "house": "opmcq-c19-35",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-58",
+   "house": "opmcq-c13-2",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-60",
+   "house": "opmcq-c19-34",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-62",
+   "house": "opmcq-c19-1",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-65",
+   "house": "opmcq-c16-1",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-67",
+   "house": "opmcq-c13-1",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-15",
+   "house": "opmcq-c12-9",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-16",
+   "house": "opmcq-c19-42",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-18",
+   "house": "opmcq-c4-29",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-22",
+   "house": "opmcq-c11-26",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-26",
+   "house": "opqb-t10-427",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-28",
+   "house": "opmcq-c4-1",
+   "seed": true,
+   "extra": true
+  },
+  {
+   "ep": "ophep2-summer-exam-13",
+   "house": "opqb-t22-11",
+   "seed": true,
+   "extra": true
+  }
+ ]
+}
