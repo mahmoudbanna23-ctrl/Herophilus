@@ -1,0 +1,34 @@
+{
+ "folds": [
+  {
+   "survivor": "ophep-orbit-1",
+   "twins": ["ophep-optics-refraction-3"],
+   "cite": "; also printed at Opthalmology endpoint.pdf p.164"
+  },
+  {
+   "survivor": "ophep-ocular-systemic-diseases-17",
+   "twins": ["ophep-retina-12"],
+   "cite": "; also printed at Opthalmology endpoint.pdf p.922"
+  },
+  {
+   "survivor": "ophep-orbit-10",
+   "twins": ["ophep-orbit-12", "ophep-optics-refraction-11"],
+   "cite": "; also printed at Opthalmology endpoint.pdf p.253; also printed at Opthalmology endpoint.pdf p.180 and in House bank, ophthalmology MCQ.pdf p.23 (Ch.3 Q4)"
+  },
+  {
+   "survivor": "ophep-conjunctiva-17",
+   "twins": ["ophep-conjunctiva-26"],
+   "cite": "; also printed at Opthalmology endpoint.pdf p.494 and in House bank, ophthalmology MCQ.pdf p.47 (Ch.6 Q21); those printings read 'medication' where p.476 reads 'drug'"
+  },
+  {
+   "survivor": "ophep-orbit-8",
+   "twins": ["ophep-lacrimal-system-7"],
+   "cite": "; also printed at Opthalmology endpoint.pdf p.307"
+  },
+  {
+   "survivor": "ophep-ocular-trauma-16",
+   "twins": ["ophep2-model-exam-4-49"],
+   "cite": "; reprinted in Model Exam 4 at p.1954-1955"
+  }
+ ]
+}
