@@ -40,7 +40,7 @@ Printed page = PDF **+1** from PDF 2151 on (pinned 2026-09-21), but `source` cit
 325 House/Grade Gain twins merged into endpoint survivors via `alsoIn` (`tools\bank-harness\oph-house-merge.js`, decisions
 `content\ophtho\qb-pages\_close-work\merge-decisions.json`); House file 1,598->1,273, ophtho arrays total **1,860**; twin ids orphan local
 progress, as in ENT. Coverage: `pagecov-oph.js --part 2 --cites-pdf` (index `ocr\ep\index.part2.json`, built by `oph-p2-index.js`).
-Owed items A-F + within-endpoint duplicates CLOSED 2026-09-21, ophtho arrays now **1,853** (`progress\resume-ophtho-endpoint-B-exams.md` part 6); one open: sweep the "prints no explanation here" marker against Model Exam reprint boxes.
+Owed items A-F + within-endpoint duplicates CLOSED 2026-09-21, ophtho arrays now **1,853** (`progress\resume-ophtho-endpoint-B-exams.md` part 6); marker sweep CLOSED, ophtho UNLOCKED 2026-09-21 (same file, part 7).
 History: `progress\resume-ophtho-endpoint-A-chapters.md`, archive `## Pruned from MEMORY.md - 2026-09-17` and `2026-09-16 (part 2)`.
 
 - ✅ **PEDS HOUSE CLOSED 2026-09-04 — `questions.peds.js` holds 393, the full measured bank**, all
@@ -130,7 +130,7 @@ History: `progress\resume-ophtho-endpoint-A-chapters.md`, archive `## Pruned fro
   `for i… if(!(i in A))`, **zero holes, every file `eval`s clean**): ENT **2,322** (2,240 q + 82 c) ·
   **Ophtho 1,598** · Neuro **304** (297 q + 7 c) · Peds House **393** · Peds endpoint **1,334**
   (p1 704 + p2 630, both CLOSED). ⚠️ **The case arrays are `C_ENT`/`C_NEURO`/`C_OPHTHO`/`C_PEDS`, not
-  `CASES_*`** (ophtho and peds hold 0). **5,951 is the CORPUS and no longer what the app reports:** ⚠️ `LOCKED_MODULES=['ophtho','neuropsych']` + `THEORY_LOCKED` hold 1,902 q (1,598 ophtho + 304 neuro) and 72 theory chapters out at the aggregator, so **a healthy boot reports 4,049 / 81** — a check wanting 5,951/153 is STALE, not a loss.
+  `CASES_*`** (ophtho and peds hold 0). **5,951 is the CORPUS and no longer what the app reports:** ⚠️ `LOCKED_MODULES=['neuropsych']` (ophtho unlocked 2026-09-21) + `THEORY_LOCKED` hold 304 neuro q and 36 theory chapters out at the aggregator, so **a healthy boot reports 5,902 / 117** — a check wanting 5,951/153 is STALE, not a loss.
   ✅ **BOOTED `file://` 2026-09-07, 0 errors**: `QUESTIONS 4049 · THEORY 81 · MODULES 4 · 153 chapter rows, 80 with questions`; per module ent 30 · ophtho 36 · neuropsych 36 · pediatrics 51. Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`; options 2–10 coexist (2:10 · 3:67 · 4:3836 · 5:1365 · 8:1 · 9:1 · 10:6).
   ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js` BY ~440 — load the array.**
 - **✅ THE BOOT CHECK IS NOW A REPO TOOL: `node tools\boot-check\boot-check.js`** (2026-09-02) —
