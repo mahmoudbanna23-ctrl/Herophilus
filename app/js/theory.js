@@ -339,7 +339,7 @@ function vTheory(p){
       const chs=theoryChapters(m.id);
       const lock=isLocked(m.id);
       h+=`<button class="card mod-card${lock?' locked':''}" style="--c:${m.color}" ${chs.length?`onclick="go({name:'theory',mod:'${m.id}'})"`:'disabled style="opacity:.45"'}>
-        ${(m.art||MOD_ART[m.id])?`<span class="mod-art" style="--art:url('assets/${m.art||MOD_ART[m.id]}.jpg')"></span>`:''}
+        ${(m.art||MOD_ART[m.id])?`<span class="mod-art" style="--art:url('../assets/${m.art||MOD_ART[m.id]}.jpg')"></span>`:''}
         ${lock?'<span class="soon">Coming soon</span>':''}
         <div class="mod-info">
           <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span></div>

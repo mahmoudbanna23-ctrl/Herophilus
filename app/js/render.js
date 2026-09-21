@@ -237,7 +237,7 @@ function vHome(p){
        progress ring, because both would be zero and a zero reads as broken. */
     if(isLocked(m.id)){
       modsHTML+=`<div class="card mod-card locked" style="--c:${m.color}" aria-disabled="true">
-        ${(m.art||MOD_ART[m.id])?`<span class="mod-art" style="--art:url('assets/${m.art||MOD_ART[m.id]}.jpg')"></span>`:''}
+        ${(m.art||MOD_ART[m.id])?`<span class="mod-art" style="--art:url('../assets/${m.art||MOD_ART[m.id]}.jpg')"></span>`:''}
         <span class="soon">Coming soon</span>
         <div class="mod-info">
           <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span></div>
@@ -258,7 +258,7 @@ function vHome(p){
           <div class="ringmeta"><div class="a" style="color:${accColor(a)}">${a===null?'—':a+'%'}</div>
           <div class="b">${d}/${qs.length} answered</div></div></div>`;
     modsHTML+=`<button class="card mod-card" style="--c:${m.color}" onclick="go({name:'module',id:'${m.id}'})">
-      ${(m.art||MOD_ART[m.id])?`<span class="mod-art" style="--art:url('assets/${m.art||MOD_ART[m.id]}.jpg')"></span>`:''}
+      ${(m.art||MOD_ART[m.id])?`<span class="mod-art" style="--art:url('../assets/${m.art||MOD_ART[m.id]}.jpg')"></span>`:''}
       <div class="mod-info">
         <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span></div>
         <div class="mod-meta">${chs} chapters · ${qs.length} question${qs.length===1?'':'s'}</div>

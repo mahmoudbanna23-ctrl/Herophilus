@@ -285,3 +285,8 @@ It is now `['neuro']`; `tools/dist-check.js` expects three shipping subjects and
 `dist\` rebuilt and checked: 5,902 questions (ent 2,322, pediatrics 1,727, ophtho 1,853), 8 passed 0 failed.
 Theory is still withheld whole (`THEORY_LOCKED = true`). The rebuilt `dist` carries the design chat's `app\` as it stood
 at build time. Deploying is the owner's step: drop the `dist` folder on Cloudflare Pages (`herophilus`).
+
+## Part 9 - module card art path fix (2026-09-22)
+- Card art 404'd on the live site: `--art:url('assets/..')` set in an inline style is substituted inside `.mod-art` in `app/css/views.css`, so the browser resolved it against the stylesheet folder and asked for `/css/assets/mod-*.jpg`. Cards showed only the colour wash.
+- Fix: `../assets/` in `app/js/render.js` (2 lines) and `app/js/theory.js` (1 line). Owner-approved edit outside the ophtho lane. Same URL form works from `file://` and from the host.
+- Checked: computed background resolves to `/assets/mod-ent.jpg` on the live stylesheet, art renders tinted; `dist` rebuilt, `dist-check` 8 passed 0 failed. `dist-check` does not test art, so it did not catch the bug. Redeploy of `dist` is the owner's step.
