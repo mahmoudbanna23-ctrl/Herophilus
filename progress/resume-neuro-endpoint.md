@@ -246,3 +246,31 @@ Model Final Exams stay deferred/untouched.
 - `alsoIn` is empty on all 571 entries, so no Grade Gain / Endpoint cross-bank fold pass has run for neuro. Owed after the endpoint chapters, same convention as ENT and ophtho (survivor keeps its id, gains the cite in `source`, `alsoIn` is the union). Whether twins exist is unmeasured.
 - The route in section 8 predates the 2026-09-20 ladder (root `CLAUDE.md` section 9); the Codex exclusion "till 2026-09-20" has expired. Re-probe first with `node Tools/omniroute/probe.mjs`. Bulk page reads: a script making single-shot calls to the `work-vision` / `work-text` gateway combos (`Tools/omniroute/stage-pages.mjs` pattern). Drafting: a seat `seats-alive.json` marks capable (Codex on its own login). Claude roles, cheap subagents with a `ROUTE-OK:` prefix, only as the last resort. The main chat never does the labour. Owner order, 2026-09-22: "use codex, the fleet, omniroute, if it comes to claude as a last resort use cheap subagents, never use the main chat". Never `auto/*`; two failed dispatches means a Claude role; Codex never checks Codex.
 - Neuro stays LOCKED in the shipped app (`LOCKED_MODULES=['neuropsych']` in `app/data/modules.js`, `LOCKED_SUBJECTS=['neuro']` in `tools/build-launch.js`). Unlocking means editing both, rebuilding, `node tools/dist-check.js`, and the owner redeploys `dist`. Neuro exam 3 Oct 2026.
+
+## 10. Chapter 4 Headache — CLOSED 2026-09-22
+
+**27 live** (`npep-headache-1..4,6..28`), `Q_NEURO` 571 -> 598. Printed pp.200-282: p.200 divider, pp.201-223
+theory slides, Q1 p.224 ... Q28 p.281 (answer p.282); pp.220-221 are a lecture slide pair, not a question.
+28 printed - 0 skipped - 1 fold (Q5 folded into Q3: same stem, options reordered, same key; both printed boxes
+carried in Q3's explanation, Q5's citation in `source`). Within-batch near-duplicates left unfolded: 1~9, 2~28.
+Cross-bank, left as two entries and noted in `source`: Q2 = `npqb-nr-132` (identical), Q27 ~ `npqb-nr-129`, Q23 ~
+`npqb-nr-123`, Q11 ~ `npqb-nr-130` (reworded). Defective keys: none found.
+
+Route (first run of the NEW script pipeline, section 11): Codex (`gpt-5.6-terra`, own login) read every
+question + answer page image; Gemini via gateway `work-vision` read the marked option independently (28/28 agree
+with Codex); an Opus refuter checked the rows and its defects were hand-fixed (Q12 two outside-fact tags, Q9
+footer). Sweep A-F: `tools/qb-pipeline/sweep.js`. Splice `splice-safe.js --go`, validate.js only the 23 known
+`npqb-nr-228..250` failures, boot-check 0 errors (5902/117, neuro locked).
+
+## 11. Script pipeline for the rest of the endpoint (built 2026-09-22, all in `tools/bank-harness/`)
+Whole book rendered + Tesseract-OCR'd once: `content/neuro/qb-pages/_ep-work/` (2190 png + txt, untracked,
+OCR = SEARCH INDEX only, never a clinical source). Per chapter: `npep-run.mjs <queue.json> <token...>` runs
+`npep-pairs.mjs` (question page + answer page from OCR option lines and text similarity; soft pairs = no
+options read, Codex may reject with `notQuestion`) -> `npep-codex-rows.mjs` (K parallel Codex drivers, one
+question each, reads the PNGs, reports `printedNumber`) + `npep-keyread.mjs` (independent Gemini key read) ->
+`npep-build.mjs` (draft + machine checks in `<token>/checks.md`). `npep-finish.mjs` re-runs key reads that hit a
+gateway 503 and rebuilds. Queue = `npep-queue.json` (24 entries, incl. Model Final Exams `fe1..fe6`, tokens
+map to ids `npep-<token>-<printed n>`). Work folders: `_ep-work/<token>/` (pairs.json, pairs.log, rows/,
+keyread.json, checks.md, summary.json); drafts `content/neuro/qb-pages/np-ep-<token>.draft.js`.
+Every draft still needs: independent checker on flagged rows, sweep, fold decisions, header, splice, commit.
+Model Final Exams are IN SCOPE (owner 2026-09-22), superseding "deferred" above.

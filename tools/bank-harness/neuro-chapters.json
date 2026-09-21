@@ -1,0 +1,146 @@
+[
+ {
+  "id": "nr-intro",
+  "name": "Introduction to neurology and localization"
+ },
+ {
+  "id": "nr-exam",
+  "name": "The neurological examination"
+ },
+ {
+  "id": "nr-stroke",
+  "name": "Cerebrovascular stroke"
+ },
+ {
+  "id": "nr-epilepsy",
+  "name": "Seizures and epilepsy"
+ },
+ {
+  "id": "nr-hemi",
+  "name": "Hemiplegia and hemiparesis"
+ },
+ {
+  "id": "nr-para",
+  "name": "Paraparesis and ataxia"
+ },
+ {
+  "id": "nr-headache",
+  "name": "Headache"
+ },
+ {
+  "id": "nr-ms",
+  "name": "MS and demyelinating disorders"
+ },
+ {
+  "id": "nr-coma",
+  "name": "Coma"
+ },
+ {
+  "id": "nr-comapproach",
+  "name": "Approach to the comatose patient"
+ },
+ {
+  "id": "nr-delirium",
+  "name": "Delirium"
+ },
+ {
+  "id": "nr-movement",
+  "name": "Movement disorders"
+ },
+ {
+  "id": "nr-cns",
+  "name": "CNS infections"
+ },
+ {
+  "id": "nr-lmn",
+  "name": "Muscle disease and the neuromuscular junction"
+ },
+ {
+  "id": "nr-nerve",
+  "name": "Peripheral neuropathy and Guillain-Barré"
+ },
+ {
+  "id": "nr-cranial",
+  "name": "Cranial nerves disorders"
+ },
+ {
+  "id": "nr-backpain",
+  "name": "Low back pain and sciatica"
+ },
+ {
+  "id": "nr-neckpain",
+  "name": "Neck pain and brachialgia"
+ },
+ {
+  "id": "ps-interview",
+  "name": "Interview Assessment"
+ },
+ {
+  "id": "ps-symptom",
+  "name": "Symptomatology"
+ },
+ {
+  "id": "ps-osce",
+  "name": "OSCE demonstration"
+ },
+ {
+  "id": "ps-psychoed",
+  "name": "Psychoeducation and Myths"
+ },
+ {
+  "id": "ps-anxiety",
+  "name": "Anxiety Disorders"
+ },
+ {
+  "id": "ps-ocd",
+  "name": "Obsessive-compulsive disorder"
+ },
+ {
+  "id": "ps-ptsd",
+  "name": "PTSD and acute stress disorder"
+ },
+ {
+  "id": "ps-mood",
+  "name": "Mood Disorders"
+ },
+ {
+  "id": "ps-somato",
+  "name": "Somatoform disorders"
+ },
+ {
+  "id": "ps-child",
+  "name": "Child Psychiatry"
+ },
+ {
+  "id": "ps-psychosis",
+  "name": "Psychosis and schizophrenia: cause and presentation"
+ },
+ {
+  "id": "ps-schizmgmt",
+  "name": "Schizophrenia: course, differential and management"
+ },
+ {
+  "id": "ps-geri",
+  "name": "Geriatric Psychiatry"
+ },
+ {
+  "id": "ps-sud",
+  "name": "Substance use disorder"
+ },
+ {
+  "id": "ps-emerg",
+  "name": "Emergency Psychiatry"
+ },
+ {
+  "id": "ps-pharm",
+  "name": "Psychopharmacology"
+ },
+ {
+  "id": "ps-devices",
+  "name": "Devices in Psychiatry"
+ },
+ {
+  "id": "ps-therapy",
+  "name": "Psychotherapy"
+ }
+]
