@@ -1,0 +1,294 @@
+{
+ "entries": [
+  {
+   "id": "ophep-exam-eye-16",
+   "box": "For confrontation visual field testing to be valid, the tested eye must have sufficient visual acuity—greater than 3/60—to fixate on the examiner’s target. Poor fixation makes the test unreliable.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-orbit-11",
+   "box": "Orbital floor fractures are best evaluated using CT coronal images, which clearly show the orbital floor and herniated tissues.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-orbit-13",
+   "box": "A carotid-cavernous fistula typically presents with pulsating exophthalmos, conjunctival congestion, and a bruit following head trauma. It results from an abnormal communication between the carotid artery and cavernous sinus.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-orbit-17",
+   "box": "Most common cause of pre-septal cellulitis in adults -> Staphylococcus Aureus or Streptococcus.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-orbit-18",
+   "box": "The infraorbital canal carries the infraorbital nerve, which supplies the lower eyelid, cheek, and side of the nose. Fracture of this canal causes anesthesia and paresthesia in these areas.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-orbit-20",
+   "box": "Vision loss due to orbital cellulitis most commonly falls within the range of 7-11 %. This occurs due to complications like optic neuritis, central retinal artery occlusion, or orbital abscesses, making early recognition and aggressive treatment essential to preserving vision.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-orbit-21",
+   "box": "Orbital cellulitis presents with fever, lid swelling, conjunctival congestion, restricted eye movements, and relative afferent pupillary defect (RAPD). It is a serious post-traumatic or sinus-related infection requiring urgent IV antibiotics.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-lacrimal-system-9",
+   "box": "A painless swelling at the inner canthus with tearing indicates chronic dacryocystitis. It is due to nasolacrimal duct obstruction, causing chronic infection and mucus retention in the lacrimal sac.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-lacrimal-system-11",
+   "box": "A painful red swelling over the medial canthal area is characteristic of acute dacryocystitis, which is inflammation of the lacrimal sac due to nasolacrimal duct obstruction. It typically presents with localized tenderness, redness, and swelling below the medial canthus, often with purulent discharge.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-lacrimal-system-12",
+   "box": "Most congenital nasolacrimal duct obstructions resolve with Crigler massage; probing is delayed until after 1 year if symptoms persist.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-lacrimal-system-13",
+   "box": "A tear breakup time (TBUT) less than 10 seconds indicates tear film instability. A value of 7 seconds confirms dry eye disease and warrants investigation of underlying causes.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-lacrimal-system-14",
+   "box": "Although artificial tears relieve symptoms, treating the underlying cause (e.g., lid disease, systemic conditions) is most important for long-term control of dry eye.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-lacrimal-system-15",
+   "box": "Thyroid eye disease causes both aqueous tear deficiency and evaporative dry eye disease.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-lacrimal-system-16",
+   "box": "The lacrimal glands secrete the watery (middle) layer of the tear film, responsible for lubrication and nutrition of the cornea. Meibomian glands secrete the lipid layer, and goblet cells produce the mucin layer.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-eyelids-12",
+   "box": "Seborrheic anterior blepharitis presents with greasy soft scales on lashes and is associated with seborrheic dermatitis.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-eyelids-13",
+   "box": "Lagophthalmos is the inability to completely close the eyelids, leading to exposure-related irritation, redness, and tearing. It may result from facial nerve palsy or eyelid scarring.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-eyelids-18",
+   "box": "The described features (foamy discharge, lid margin hyperemia, telangiectasia) indicate meibomian gland dysfunction (posterior blepharitis). It results from thickened, stagnant secretions obstructing gland ducts.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-conjunctiva-1",
+   "box": "Conjunctival follicles:\n- Multiple discrete slightly elevated lesions with blood vessels running around them\n- Consist of leucocytic infiltration (mainly lymphocytes)\n- Lymphocytic infiltration may, also, take place deep to the corneal epithelium (corneal subepithelial infiltrates as in epidemic keratoconjunctivitis caused by Adenovirus infection)\n- Causes:\n 1. Viral conjunctivitis\n 2. Chlamydia conjunctivitis (trachoma)\n 3. Hypersensitivity to topical medications (e.g., Brimonidine)\n 4. Folliculosis in children (tutorial)",
+   "cite": ""
+  },
+  {
+   "id": "ophep-conjunctiva-18",
+   "box": "Bacterial conjunctivitis is characterized by redness, mucopurulent discharge, eyelid edema, and conjunctival injection. It develops acutely and responds well to topical antibiotics.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-conjunctiva-21",
+   "box": "Papillae are caused by nonspecific conjunctival inflammation, typically due to allergy, foreign bodies, or contact lens irritation. Chlamydia causes follicles, not papillae.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-conjunctiva-24",
+   "box": "Large subconjunctival hemorrhage + hypotony (lower IOP than normal) → Suspect globe rupture.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-sclera-5",
+   "box": "Severe eye pain with bluish scleral hue unresponsive to phenylephrine suggests scleritis, which may be linked to systemic disease and needs urgent specialist care.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-sclera-11",
+   "box": "Episcleritis vessels blanch with topical phenylephrine, while scleritis vessels do not, helping to distinguish between the two.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-sclera-12",
+   "box": "A staphyloma is a localized blue-black bulging of the weakened sclera lined by uveal tissue. It occurs due to thinning of the sclera from inflammation or degeneration.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-cornea-19",
+   "box": "The Seidel test detects aqueous humor leakage from the cornea by using fluorescein dye; a positive test shows dilution of dye by escaping aqueous. It confirms corneal perforation or wound leak.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-cornea-22",
+   "box": "Reactivation of varicella-zoster virus in the ophthalmic branch of the trigeminal nerve causes Herpes zoster ophthalmicus. It presents with facial pain, vesicular rash, and ocular inflammation.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-cornea-23",
+   "box": "A corneal arcus (gray-brown ring) is common in the elderly; however, a lipid profile is recommended to rule out hyperlipidemia.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-uveal-tract-13",
+   "box": "Toxoplasmosis is the most common cause of infectious posterior uveitis, producing focal necrotizing retinochoroiditis with overlying vitreous haze (“headlight in fog”).",
+   "cite": ""
+  },
+  {
+   "id": "ophep-uveal-tract-14",
+   "box": "Iridocyclitis (anterior uveitis) presents with pain, photophobia, lacrimation, and keratic precipitates with ciliary congestion. It involves inflammation of the iris and ciliary body.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-uveal-tract-16",
+   "box": "Model Exam 3, p.1798:\nThe choroid is divided into four layers arranged from outwards to inwards.\nModel Exam 4, p.1963:\nBruch’s membrane is the innermost layer of the choroid, lying between the choriocapillaris and retinal pigment epithelium. It plays a key role in retinal metabolism and waste transport.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-uveal-tract-18",
+   "box": "The outermost layer of the choroid is Haller’s layer, containing large-diameter vessels. It lies external to Sattler’s layer and the choriocapillaris.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-squint-4",
+   "box": "Poor or lost vision in one eye disrupts fusion, leading to sensory strabismus, commonly manifesting as secondary deviation of the affected eye.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-squint-5",
+   "box": "Diabetic cranial nerve palsy is often ischemic and resolves spontaneously within months; management focuses on blood sugar control and observation.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-squint-6",
+   "box": "Model Exam 3, p.1838:\nTypes of strabismus according to comitance:\nA. Comitant strabismus: the angle (or degree) of misalignment is approximately equal in all directions of gaze. Concomitant strabismus in patients under age 6 is rarely caused by serious neurologic disease. Strabismus arising later in life may have a specific and serious neurologic basis.\nB. Incomitant strabismus: the degree of misalignment varies with the direction of gaze. This type may indicate neurologic disorder, such as third nerve palsy, or orbital disease or trauma, such as thyroid ophthalmopathy or blowout fracture.\nModel Exam 4, p.1891:\nComitant strabismus shows constant deviation in all gaze directions and is not due to muscle paralysis, often seen in childhood squint.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-squint-8",
+   "box": "In comitant strabismus, the angle of deviation remains constant in all directions of gaze because the extraocular muscles function normally. It is typically congenital or developmental, not neurologic.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-squint-10",
+   "box": "Inability to abduct the left eye with esotropia indicates left lateral rectus weakness due to left abducent (VI) nerve palsy.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-squint-11",
+   "box": "Superior oblique palsy causes vertical diplopia, worse on looking down (e.g., reading, descending stairs), with compensatory head tilt to the opposite side.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-glaucoma-12",
+   "box": "Arcuate scotoma is a characteristic visual field defect in glaucoma, corresponding to damage of arcuate nerve fibers near the optic disc.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-malignancies-eye-adnexa-5",
+   "box": "Basal cell carcinoma presents as a slow-growing ulcer with rolled, beaded edges and dilated vessels. It is the most common malignant eyelid tumor.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-malignancies-eye-adnexa-7",
+   "box": "Choroidal melanoma is the most common intraocular malignancy in adults. It arises from uveal melanocytes and may cause visual loss or retinal detachment.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-malignancies-eye-adnexa-10",
+   "box": "Basal cell carcinoma is the most common malignant eyelid tumor, usually affecting the lower lid. It grows slowly and rarely metastasizes but can cause local tissue destruction.",
+   "cite": "; explanation box printed in Model Exam 2 at p.1666"
+  },
+  {
+   "id": "ophep-malignancies-eye-adnexa-12",
+   "box": "Basal cell carcinoma most frequently affects the lower eyelid, especially the nasal side, due to maximum UV exposure. It appears as an ulcer with rolled, pearly edges and telangiectasia.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-vitreous-5",
+   "box": "Postoperative endophthalmitis presents with severe pain, decreased vision, lid edema, and yellow reflex (due to pus in vitreous). It is a surgical emergency requiring intravitreal antibiotics.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-ocular-trauma-11",
+   "box": "Retrobulbar hemorrhage is a vision-threatening emergency that can follow trauma. It presents with sudden eye pain, proptosis, lid swelling, ecchymosis, and restricted ocular movement due to increased orbital pressure. Prompt recognition and intervention (e.g. lateral canthotomy) are essential to prevent optic nerve damage.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-ocular-trauma-13",
+   "box": "Blood in the anterior chamber forming a distinct level is diagnostic of hyphema, commonly caused by blunt trauma.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-ocular-trauma-15",
+   "box": "Model Exam 3, p.1780:\nMRI should not be performed if an iron metallic foreign body is suspected. MRIs are contraindicated for metallic IOFBs as it might result in dislodgement of the foreign body causing further damage.\nModel Exam 5, p.2164:\nMRI is absolutely contraindicated in cases of metallic intraocular foreign bodies due to magnetic movement and heating risks.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-ocular-systemic-diseases-18",
+   "box": "Giant cell arteritis causes temporal artery tenderness, headache, and sudden vision loss due to ischemic optic neuropathy. It is an emergency requiring immediate corticosteroid therapy.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-ocular-systemic-diseases-19",
+   "box": "Model Exam 3, p.1828:\nBest treatment option for PDR is: PRP.\nBest treatment option for DME or CSME is: anti-VEGF.\nModel Exam 4, p.1907:\nNew vessel formation on retina and iris indicates proliferative diabetic retinopathy. The treatment of choice is panretinal photocoagulation to reduce ischemic drive.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-ocular-systemic-diseases-20",
+   "box": "Model Exam 3, p.1822:\nDuring the management of patients with sudden severe rise in blood pressure, lowering the blood pressure must be done in a controlled fashion as a sudden drop in tissue perfusion can result in optic nerve infarction and permanent loss of vision.\nModel Exam 4, p.1903:\nIn hypertensive crisis with exudative retinal detachment, blood pressure must be lowered gradually to prevent optic nerve or cerebral ischemia.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-ocular-systemic-diseases-22",
+   "box": "Soft exudates (cotton wool spots) represent localized infarction of the nerve fiber layer due to ischemia. They appear as fluffy white patches on the retina.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-ocular-systemic-diseases-25",
+   "box": "Multiple sclerosis causes optic neuritis, RAPD, and nystagmus due to demyelination, but not peripheral scotoma. Scotomas are more typical of retinal disease or glaucoma.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-retina-13",
+   "box": "CRAO causes sudden, painless, severe vision loss with a pale retina and a cherry-red spot at the macula. It is an ophthalmic emergency due to retinal ischemia.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-retina-14",
+   "box": "CRVO causes a “blood and thunder” fundus appearance due to widespread retinal hemorrhages and venous congestion. It often occurs in hypertensive and diabetic patients.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-retina-15",
+   "box": "Metamorphopsia (seeing straight lines as wavy) with drusen formation is characteristic of age-related macular degeneration. Smoking is a major risk factor, and the macula is primarily affected, leading to central vision loss.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-retina-18",
+   "box": "Clinical picture of RP:\nA. Symptoms: Night blindness, decreased peripheral vision\n(initial) and decreased central vision (macular affection).\nB. Ophthalmoscopy: A triad of bone spicules, attenuated\nvessels & waxy disc.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-retina-19",
+   "box": "Central retinal vein occlusion risk increases with oral contraceptive use due to hypercoagulability and venous stasis.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-pediatric-ophthalmology-14",
+   "box": "Model Exam 3, p.1806:\nScreening for ROP →\nA. For babies born at GA 28 weeks or more, screening should be done 4 weeks\nafter they are born i.e., when the baby is 1 month old.\nB. For babies born earlier, GA 27 weeks or less, screening should be done at 31\nweeks GA, that is the week 31 from the first day of the woman’s last menstrual\ncycle.\nModel Exam 4, p.1913:\nScreening protocol for retinopathy of prematurity (ROP) depends on the\ngestational age (GA) at which the baby is born as follows:\n• If GA ≤28 weeks: Screen 4 weeks after birth.\n• If GA< 28 weeks: Screen at 31 weeks GA.",
+   "cite": ""
+  },
+  {
+   "id": "ophep-drugs-eye-9",
+   "box": "Hyperosmotic agents (like mannitol) are used in acute angle-closure glaucoma to rapidly lower intraocular pressure by drawing fluid out of the vitreous.",
+   "cite": ""
+  }
+ ]
+}

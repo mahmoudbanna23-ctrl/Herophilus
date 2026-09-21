@@ -1,0 +1,1303 @@
+{
+  "ids": [
+    "ophep-exam-eye-16",
+    "ophep-orbit-11",
+    "ophep-orbit-12",
+    "ophep-orbit-13",
+    "ophep-orbit-15",
+    "ophep-orbit-17",
+    "ophep-orbit-18",
+    "ophep-orbit-20",
+    "ophep-orbit-21",
+    "ophep-lacrimal-system-9",
+    "ophep-lacrimal-system-11",
+    "ophep-lacrimal-system-12",
+    "ophep-lacrimal-system-13",
+    "ophep-lacrimal-system-14",
+    "ophep-lacrimal-system-15",
+    "ophep-lacrimal-system-16",
+    "ophep-eyelids-12",
+    "ophep-eyelids-13",
+    "ophep-eyelids-18",
+    "ophep-conjunctiva-1",
+    "ophep-conjunctiva-18",
+    "ophep-conjunctiva-21",
+    "ophep-conjunctiva-24",
+    "ophep-conjunctiva-26",
+    "ophep-sclera-5",
+    "ophep-sclera-11",
+    "ophep-sclera-12",
+    "ophep-cornea-19",
+    "ophep-cornea-22",
+    "ophep-cornea-23",
+    "ophep-uveal-tract-13",
+    "ophep-uveal-tract-14",
+    "ophep-uveal-tract-16",
+    "ophep-uveal-tract-18",
+    "ophep-squint-4",
+    "ophep-squint-5",
+    "ophep-squint-6",
+    "ophep-squint-8",
+    "ophep-squint-10",
+    "ophep-squint-11",
+    "ophep-glaucoma-12",
+    "ophep-glaucoma-20",
+    "ophep-malignancies-eye-adnexa-5",
+    "ophep-malignancies-eye-adnexa-7",
+    "ophep-malignancies-eye-adnexa-9",
+    "ophep-malignancies-eye-adnexa-10",
+    "ophep-malignancies-eye-adnexa-12",
+    "ophep-vitreous-5",
+    "ophep-vitreous-8",
+    "ophep-neuro-ophthalmology-19",
+    "ophep-ocular-trauma-11",
+    "ophep-ocular-trauma-13",
+    "ophep-ocular-trauma-15",
+    "ophep-ocular-trauma-16",
+    "ophep-ocular-systemic-diseases-17",
+    "ophep-ocular-systemic-diseases-18",
+    "ophep-ocular-systemic-diseases-19",
+    "ophep-ocular-systemic-diseases-20",
+    "ophep-ocular-systemic-diseases-22",
+    "ophep-ocular-systemic-diseases-25",
+    "ophep-retina-13",
+    "ophep-retina-14",
+    "ophep-retina-15",
+    "ophep-retina-18",
+    "ophep-retina-19",
+    "ophep-pediatric-ophthalmology-14",
+    "ophep-drugs-eye-9"
+  ],
+  "candidates": [
+    {
+      "id": "ophep-exam-eye-16",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1997,
+      "printed_q": "64",
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is a pre-requisite for confrontation visual field testing?",
+      "boxed_text_verbatim": "For confrontation visual field testing to be valid, the tested eye must have sufficient visual acuity—greater than 3/60—to fixate on the examiner’s target. Poor fixation makes the test unreliable.",
+      "explanation_last_200": "res better visual acuity than the low-vision approaches. Amsler grid testing instead assesses the central visual field.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-orbit-11",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 2158,
+      "printed_q": 69,
+      "page_already_cited": true,
+      "staged_stem": "Orbital floor fractures are best assessed with which of the following diagnostic imaging modalities?",
+      "boxed_text_verbatim": "Orbital floor fractures are best evaluated using CT coronal images, which clearly show the orbital floor and herniated tissues.",
+      "explanation_last_200": "157-2158) prints a fifth option, \"CT axial section\"; the p.251 printing followed here lists four. The key is unchanged.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-orbit-12",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1804,
+      "printed_q": "51.",
+      "page_already_cited": false,
+      "staged_stem": "Proptosis can be assessed by which of the following devices?",
+      "boxed_text_verbatim": "Exophthalmos (proptosis) → Anterior displacement (forward protrusion) of the globe (measured by a ruler or by Hertel exophthalmometer).",
+      "explanation_last_200": " in isolation.\n\nSame option menu as `ophep-orbit-10`; the discriminating token here is `following proptosis over time`.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-orbit-13",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1995,
+      "printed_q": "63.",
+      "page_already_cited": true,
+      "staged_stem": "A 38-year-old male patient presented with unilateral pulsating exophthalmos following head trauma. What is the most likely diagnosis?",
+      "boxed_text_verbatim": "A carotid-cavernous fistula typically presents with pulsating exophthalmos, conjunctival congestion, and a bruit following head trauma. It results from an abnormal communication between the carotid artery and cavernous sinus.",
+      "explanation_last_200": "on � sinusitis, orbital or preseptal cellulitis, otitis � rather than trauma, and pulsation is not one of its features.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-orbit-15",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.9047619047619048,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1995,
+      "printed_q": "63.",
+      "page_already_cited": false,
+      "staged_stem": "A 38-year-old male patient presented with unilateral pulsating exophthalmos following head trauma. What is the most likely diagnosis?",
+      "boxed_text_verbatim": "A carotid-cavernous fistula typically presents with pulsating exophthalmos, conjunctival congestion, and a bruit following head trauma. It results from an abnormal communication between the carotid artery and cavernous sinus.",
+      "explanation_last_200": "her than a single traumatic event.\n\nSame option menu as `ophep-orbit-13`; the discriminating token here is `pulsating`.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-orbit-17",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1709,
+      "printed_q": "4",
+      "page_already_cited": true,
+      "staged_stem": "What is the most common causative organism of preseptal cellulitis in children?",
+      "boxed_text_verbatim": "Most common cause of pre-septal cellulitis in adults -> Staphylococcus Aureus or Streptococcus.",
+      "explanation_last_200": " rather than the more general staphylococcal and streptococcal causes that dominate preseptal cellulitis at other ages.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-orbit-18",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 3
+      },
+      "matched_pdf_page": 1923,
+      "printed_q": "32.",
+      "page_already_cited": true,
+      "staged_stem": "A 26-year-old male patient developed anaesthesia and paraesthesia in the region of lower lid, cheek and side of nose following a severe head injury. Which of the following is the structure that fractured and caused such manifestations?",
+      "boxed_text_verbatim": "The infraorbital canal carries the infraorbital nerve, which supplies the lower eyelid, cheek, and side of the nose. Fracture of this canal causes anesthesia and paresthesia in these areas.",
+      "explanation_last_200": "from the one described. \"None of the above\" is wrong because the infraorbital canal correctly accounts for the finding.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-orbit-20",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.9375,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1859,
+      "printed_q": "1.",
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is the percentage of people who develop loss of vision due to orbital cellulitis?",
+      "boxed_text_verbatim": "Vision loss due to orbital cellulitis most commonly falls within the range of 7-11 %. This occurs due to complications like optic neuritis, central retinal artery occlusion, or orbital abscesses, making early recognition and aggressive treatment essential to preserving vision.",
+      "explanation_last_200": "is value is treated as settled; OCR is known to misread digits, percent signs, and small punctuation in printed ranges.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-orbit-21",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1927,
+      "printed_q": 34,
+      "page_already_cited": true,
+      "staged_stem": "A 22-year-old girl was injured severely in a car accident. Initial examination revealed that she had high fever, lid edema and conjunctiva[ injection. Ocular motility was reduced markedly. Also, RAPD was observed. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Orbital cellulitis presents with fever, lid swelling, conjunctival congestion, restricted eye movements, and relative afferent pupillary defect (RAPD). It is a serious post-traumatic or sinus-related infection requiring urgent IV antibiotics.",
+      "explanation_last_200": " and does not change this reasoning, which turns on the fever, motility restriction, and RAPD rather than on that word.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-lacrimal-system-9",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.9285714285714286,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 2001,
+      "printed_q": 66,
+      "page_already_cited": true,
+      "staged_stem": "A 32-year-old man presents with a complaint of excessive tearing. Examination revealed a painless lacrimal sac swelling at the inner can thus. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "A painless swelling at the inner canthus with tearing indicates chronic dacryocystitis. It is due to nasolacrimal duct obstruction, causing chronic infection and mucus retention in the lacrimal sac.",
+      "explanation_last_200": "red, hot and tender\" with no duration given in Q11 � the first points to a chronic process, the second to an acute one.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-lacrimal-system-11",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1875,
+      "printed_q": 8,
+      "page_already_cited": true,
+      "staged_stem": "A 33-year-old female patient presents to the ophthalmologist with a painful red swelling localized over the medial canthal area. Which of the following is the most suitable diagnosis for such a swelling?",
+      "boxed_text_verbatim": "A painful red swelling over the medial canthal area is characteristic of acute dacryocystitis, which is inflammation of the lacrimal sac due to nasolacrimal duct obstruction. It typically presents with localized tenderness, redness, and swelling below the medial canthus, often with purulent discharge.",
+      "explanation_last_200": "o diagnoses.\n\nSame option menu as `ophep-lacrimal-system-9`; the discriminating token here is pain versus painlessness.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-lacrimal-system-12",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.9354838709677419,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1826,
+      "printed_q": 62,
+      "page_already_cited": false,
+      "staged_stem": "A 6-month-old child presented with epiphora due to nasolacrimal duct obstruction. Pressure over lacrimal sac caused reflux of mucus from lacrimal punctum. What's the best management for that child?",
+      "boxed_text_verbatim": "Treatment of nasolacrimal system abnormalities (congenital nasolacrimal duct obstruction):\nA. About 85% of cases resolve without surgical intervention before the first year. Therefore, surgery is not indicated before the first year of life. Massage over the lacrimal sac at the medial corner of the eyelid to increase pressure in the canal.\nB. Surgery: Nasolacrimal duct probing can be curative if persistent epiphora after the first year of life.\nC. Mucocele needs probing upon diagnosis.\nD. Lacrimal abscess needs incision and drainage.",
+      "explanation_last_200": "al NLDO.\n\nSame option menu as `ophep-lacrimal-system-6`; the discriminating token here is mucus versus purulent reflux.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-lacrimal-system-12",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 2145,
+      "printed_q": 62,
+      "page_already_cited": true,
+      "staged_stem": "A 6-month-old child presented with epiphora due to nasolacrimal duct obstruction. Pressure over lacrimal sac caused reflux of purulent material from lacrimal punctum. What's the best management for that child?",
+      "boxed_text_verbatim": "Most congenital nasolacrimal duct obstructions resolve with Crigler massage; probing is delayed until after 1 year if symptoms persist.",
+      "explanation_last_200": "al NLDO.\n\nSame option menu as `ophep-lacrimal-system-6`; the discriminating token here is mucus versus purulent reflux.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-lacrimal-system-13",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 3
+      },
+      "matched_pdf_page": 1929,
+      "printed_q": 35,
+      "page_already_cited": true,
+      "staged_stem": "A 25-year-old man complains of foreign body sensation in the eye coupled with tearing, redness and itching. Tear film breakup time test was performed and it was found to be 7 seconds. Based on the previous data, which of the following would be the most accurate conclusion?",
+      "boxed_text_verbatim": "A tear breakup time (TBUT) less than 10 seconds indicates tear film instability. A value of 7 seconds confirms dry eye disease and warrants investigation of underlying causes.",
+      "explanation_last_200": "and look for its cause\" � confirmed against the page image and kept verbatim, not silently corrected, per project rule.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-lacrimal-system-14",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1919,
+      "printed_q": 30,
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is the most important line of management of dry eye disease?",
+      "boxed_text_verbatim": "Although artificial tears relieve symptoms, treating the underlying cause (e.g., lid disease, systemic conditions) is most important for long-term control of dry eye.",
+      "explanation_last_200": "able clinical inference from the source's own structure and is tagged accordingly (not taken from the course material).\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-lacrimal-system-15",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1846,
+      "printed_q": 72,
+      "page_already_cited": true,
+      "staged_stem": "Which of the following conditions contributes to dry eye disease by 2 mechanisms: decreased tear secretion and increased tear evaporation?",
+      "boxed_text_verbatim": "Thyroid eye disease causes both aqueous tear deficiency and evaporative dry eye disease.",
+      "explanation_last_200": " of the source's two aetiological lists, it is the only option that genuinely satisfies \"2 mechanisms\" rather than one.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-lacrimal-system-16",
+      "file": "questions.ophtho.ep.js",
+      "tier": 2,
+      "score": {
+        "stem_overlap": 0.8571428571428571,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1707,
+      "printed_q": "3",
+      "page_already_cited": false,
+      "staged_stem": "Which of the following is the structure responsible for secreting inner mucus layer of tear film?",
+      "boxed_text_verbatim": "Inner mucous layer of the tear film:\nSecreted by the conjunctival goblet cells.\nHelps maintain the adherence and stability of the tear film on the ocular surface, especially the cornea.",
+      "explanation_last_200": "ption menu as `ophep-lacrimal-system-5`; the discriminating token here is middle watery layer versus inner mucus layer.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-lacrimal-system-16",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1935,
+      "printed_q": "38.",
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is the structure responsible for secreting middle watery layer of tear film?",
+      "boxed_text_verbatim": "The lacrimal glands secrete the watery (middle) layer of the tear film, responsible for lubrication and nutrition of the cornea. Meibomian glands secrete the lipid layer, and goblet cells produce the mucin layer.",
+      "explanation_last_200": "ption menu as `ophep-lacrimal-system-5`; the discriminating token here is middle watery layer versus inner mucus layer.\n\n*Written for this bank � Opthalmology endpoint.pdf prints no explanation here.*"
+    },
+    {
+      "id": "ophep-eyelids-12",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1917,
+      "printed_q": "29.",
+      "page_already_cited": true,
+      "staged_stem": "A 24-year-old man complains of greasy soft lash scales. History and examination revealed marked seborrheic dermatitis. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Seborrheic anterior blepharitis presents with greasy soft scales on lashes and is associated with seborrheic dermatitis.",
+      "explanation_last_200": "Greasy soft lash scales with seborrheic dermatitis are consistent with anterior blepharitis.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-eyelids-13",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1931,
+      "printed_q": "36",
+      "page_already_cited": true,
+      "staged_stem": "A 46-year-old male patient complains of eye redness, itching and excessive tearing. Examination revealed inability to completely occlude the palpebral fissure. Which of the following is the term used to describe the patient's condition?",
+      "boxed_text_verbatim": "Lagophthalmos is the inability to completely close the eyelids, leading to exposure-related irritation, redness, and tearing. It may result from facial nerve palsy or eyelid scarring.",
+      "explanation_last_200": "Inability to completely close the palpebral fissure is lagophthalmos.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-eyelids-18",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.96875,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1999,
+      "printed_q": "65.",
+      "page_already_cited": true,
+      "staged_stem": "A 56-year-old male patient complains of eye redness, itching and burning sensation. Examination revealed foamy discharge on the lid margin together with hyperemia and telangiectasia of the lid margin. Which of the following is the pathogenesis of the mentioned condition?",
+      "boxed_text_verbatim": "The described features (foamy discharge, lid margin hyperemia, telangiectasia) indicate meibomian gland dysfunction (posterior blepharitis). It results from thickened, stagnant secretions obstructing gland ducts.",
+      "explanation_last_200": "oamy lid-margin discharge with telangiectasia is associated with meibomian gland dysfunction from inspissated secretions.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-conjunctiva-1",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1449,
+      "printed_q": "29. Causes of conjunctival follicles EXCEPT:",
+      "page_already_cited": true,
+      "staged_stem": "Causes of conjunctival follicles EXCEPT:",
+      "boxed_text_verbatim": "Conjunctival follicles:\n- Multiple discrete slightly elevated lesions with blood vessels running around them\n- Consist of leucocytic infiltration (mainly lymphocytes)\n- Lymphocytic infiltration may, also, take place deep to the corneal epithelium (corneal subepithelial infiltrates as in epidemic keratoconjunctivitis caused by Adenovirus infection)\n- Causes:\n 1. Viral conjunctivitis\n 2. Chlamydia conjunctivitis (trachoma)\n 3. Hypersensitivity to topical medications (e.g., Brimonidine)\n 4. Folliculosis in children (tutorial)",
+      "explanation_last_200": "rsensitivity reactions to topical medications. Vernal conjunctivitis characteristically produces papillae, not follicles.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-conjunctiva-18",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 3
+      },
+      "matched_pdf_page": 1933,
+      "printed_q": 37,
+      "page_already_cited": true,
+      "staged_stem": "A 30-year-old woman complains of acute eye redness, burning and muco purulent discharge. Upon examination, it was evident that she had conjunctival injection and chemosis and eyelid edema. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Bacterial conjunctivitis is characterized by redness, mucopurulent discharge, eyelid edema, and conjunctival injection. It develops acutely and responds well to topical antibiotics.",
+      "explanation_last_200": "tery discharge, while vernal keratoconjunctivitis is a chronic allergic condition with severe itching and ropy discharge.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-conjunctiva-21",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1863,
+      "printed_q": "3.",
+      "page_already_cited": true,
+      "staged_stem": "All of the following can cause conjunctival papillae except?",
+      "boxed_text_verbatim": "Papillae are caused by nonspecific conjunctival inflammation, typically due to allergy, foreign bodies, or contact lens irritation. Chlamydia causes follicles, not papillae.",
+      "explanation_last_200": "conjunctivitis (trachoma) characteristically causes follicles, not papillae, though papillae may appear in chronic cases.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-conjunctiva-24",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1832,
+      "printed_q": 65,
+      "page_already_cited": true,
+      "staged_stem": "A 44-year-old female patient suffered a severe eye trauma that led to large subconjunctival hemorrhage. Digitally-measured IOP was lower than normal. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Large subconjunctival hemorrhage + hypotony (lower IOP than normal) → Suspect globe rupture.",
+      "explanation_last_200": "cion for globe rupture. The hemorrhage can obscure the underlying injury, and reduced IOP is a key sign of an open globe.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-conjunctiva-24",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1848,
+      "printed_q": 73,
+      "page_already_cited": true,
+      "staged_stem": "A 44-year-old female patient suffered a severe eye trauma that led to large subconjunctival hemorrhage. Digitally-measured IOP was lower than normal. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Large subconjunctival hemorrhage + hypotony (lower IOP than normal) → Suspect globe rupture.",
+      "explanation_last_200": "cion for globe rupture. The hemorrhage can obscure the underlying injury, and reduced IOP is a key sign of an open globe.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-conjunctiva-26",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.9230769230769231,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1802,
+      "printed_q": 50,
+      "page_already_cited": false,
+      "staged_stem": "What is the drug that is used to treat resistant cases of vernal keratoconjunctivitis?",
+      "boxed_text_verbatim": "Treatment of allergic conjunctivitis:\n• Cold compresses to relieve itching.\n• Artificial tears (to dilute allergens).\n• Topical mast cell stabilizers and antihistamines.\n• Topical steroids (although effective but are rarely needed).\n• Topical cyclosporine or topical tacrolimus may be considered for severe cases and as steroidsparing agents (in VKC).",
+      "explanation_last_200": " both ask for the resistant-case treatment of vernal keratoconjunctivitis and key the same topical calcineurin inhibitor.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-conjunctiva-26",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.9230769230769231,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1965,
+      "printed_q": "48.",
+      "page_already_cited": false,
+      "staged_stem": "What is the drug that is used to treat resistant cases of vernal keratoconjunctivitis?",
+      "boxed_text_verbatim": "In resistant cases of vernal keratoconjunctivitis, topical tacrolimus, an immunomodulator, is used when antihistamines or mast cell stabilizers fail. It suppresses local immune-mediated inflammation.",
+      "explanation_last_200": " both ask for the resistant-case treatment of vernal keratoconjunctivitis and key the same topical calcineurin inhibitor.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-sclera-5",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.9821428571428571,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 2160,
+      "printed_q": 70,
+      "page_already_cited": true,
+      "staged_stem": "A 80-year-old man presents to the GP with a complaint of severe eye pain, redness and decreased vision. Examination was carried out and it revealed that the redness had violet-bluish hue with scleral edema. Phenylephrine 10% was used topically for a few minutes but the redness didn't disappear. Which of the following would be the most appropriate next step in order to properly treat that patient?",
+      "boxed_text_verbatim": "Severe eye pain with bluish scleral hue unresponsive to phenylephrine suggests scleritis, which may be linked to systemic disease and needs urgent specialist care.",
+      "explanation_last_200": "scleral inflammation, and massive doses of steroids should not be started in the community without specialist assessment.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-sclera-11",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 2172,
+      "printed_q": "76.",
+      "page_already_cited": true,
+      "staged_stem": "How can you differentiate between episcleritis and scleritis?",
+      "boxed_text_verbatim": "Episcleritis vessels blanch with topical phenylephrine, while scleritis vessels do not, helping to distinguish between the two.",
+      "explanation_last_200": "is the one that reliably differentiates the two; the weaker 2.5% drop is not the concentration used for this distinction.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-sclera-12",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.9523809523809523,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1865,
+      "printed_q": "4",
+      "page_already_cited": true,
+      "staged_stem": "Which of the following conditions is described as a localized protrusion of the sclera lined by uveal tissue and appearing blue in color?",
+      "boxed_text_verbatim": "A staphyloma is a localized blue-black bulging of the weakened sclera lined by uveal tissue. It occurs due to thinning of the sclera from inflammation or degeneration.",
+      "explanation_last_200": "apule are focal scleral elevations without uveal lining and without the characteristic blue translucency of a staphyloma.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-cornea-19",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 2005,
+      "printed_q": "68.",
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is the use of Seidel test?",
+      "boxed_text_verbatim": "The Seidel test detects aqueous humor leakage from the cornea by using fluorescein dye; a positive test shows dilution of dye by escaping aqueous. It confirms corneal perforation or wound leak.",
+      "explanation_last_200": "ocate a foreign body (the Seidel test itself is not named in the lecture material -- not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-cornea-22",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 5
+      },
+      "matched_pdf_page": 1973,
+      "printed_q": 52,
+      "page_already_cited": true,
+      "staged_stem": "A 38-year-old male patient complains of eye pain, excessive tearing and redness. History is significant for severe unilateral facial pain that was followed by appearance of skin vesicles. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Reactivation of varicella-zoster virus in the ophthalmic branch of the trigeminal nerve causes Herpes zoster ophthalmicus. It presents with facial pain, vesicular rash, and ocular inflammation.",
+      "explanation_last_200": "ns; and Geronotoxon (arcus senilis) is an asymptomatic lipid ring -- none of these fit this acute vesicular presentation.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-cornea-23",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 5
+      },
+      "matched_pdf_page": 2149,
+      "printed_q": 64,
+      "page_already_cited": true,
+      "staged_stem": "A 65-year-old man visits the ophthalmologist with a complaint of noticing a brown ring in both eyes. From history, there was no blurred vision or any other complaint. Examination revealed bilateral grayish brown ring around the limbus and separated from the limbus by a clear scleral zone. Which of the following would be the most important next step to do for such a patient?",
+      "boxed_text_verbatim": "A corneal arcus (gray-brown ring) is common in the elderly; however, a lipid profile is recommended to rule out hyperlipidemia.",
+      "explanation_last_200": "tigations such as urgent surgery, CT orbit, ophthalmoscopy for this finding, or steroids, none of which have a role here.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-uveal-tract-13",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 5
+      },
+      "matched_pdf_page": 1901,
+      "printed_q": 21,
+      "page_already_cited": true,
+      "staged_stem": "A 35-year-old male patient was found to have posterior uveitis as a result of an infectious process. Which of the following is the most common cause of this patient's condition?",
+      "boxed_text_verbatim": "Toxoplasmosis is the most common cause of infectious posterior uveitis, producing focal necrotizing retinochoroiditis with overlying vitreous haze (“headlight in fog”).",
+      "explanation_last_200": "ingle most frequent cause of infectious posterior uveitis worldwide, presenting with focal necrotizing retinochoroiditis.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-uveal-tract-14",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1869,
+      "printed_q": 6,
+      "page_already_cited": true,
+      "staged_stem": "A 28-year-old female patient complains of ocular pain, excessive lacrimation together with diminished vision. Examination revealed keratic precipitates, hypopyon and ciliary injection with violaceous hue. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Iridocyclitis (anterior uveitis) presents with pain, photophobia, lacrimation, and keratic precipitates with ciliary congestion. It involves inflammation of the iris and ciliary body.",
+      "explanation_last_200": "is (anterior uveitis), whereas pars planitis affects the intermediate zone and choroiditis affects the posterior segment.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-uveal-tract-16",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1798,
+      "printed_q": 48,
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is the innermost layer of the choroid?",
+      "boxed_text_verbatim": "The choroid is divided into four layers arranged from outwards to inwards.",
+      "explanation_last_200": "and Bruch's membrane, which serves as the innermost basement-membrane complex adjacent to the retinal pigment epithelium.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-uveal-tract-16",
+      "file": "questions.ophtho.ep.js",
+      "tier": 2,
+      "score": {
+        "stem_overlap": 0.875,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1949,
+      "printed_q": "45",
+      "page_already_cited": false,
+      "staged_stem": "Which of the following is the outermost layer of the choroid?",
+      "boxed_text_verbatim": "The outermost layer of the choroid is Haller’s layer, containing large-diameter vessels. It lies external to Sattler’s layer and the choriocapillaris.",
+      "explanation_last_200": "and Bruch's membrane, which serves as the innermost basement-membrane complex adjacent to the retinal pigment epithelium.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-uveal-tract-16",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1963,
+      "printed_q": 47,
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is the innermost layer of the choroid?",
+      "boxed_text_verbatim": "Bruch’s membrane is the innermost layer of the choroid, lying between the choriocapillaris and retinal pigment epithelium. It plays a key role in retinal metabolism and waste transport.",
+      "explanation_last_200": "and Bruch's membrane, which serves as the innermost basement-membrane complex adjacent to the retinal pigment epithelium.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-uveal-tract-18",
+      "file": "questions.ophtho.ep.js",
+      "tier": 2,
+      "score": {
+        "stem_overlap": 0.875,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1798,
+      "printed_q": 48,
+      "page_already_cited": false,
+      "staged_stem": "Which of the following is the innermost layer of the choroid?",
+      "boxed_text_verbatim": "The choroid is divided into four layers arranged from outwards to inwards.",
+      "explanation_last_200": " stratum consists of large-diameter blood vessels (Haller's layer) lying adjacent to the suprachoroidal space and sclera.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-uveal-tract-18",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1949,
+      "printed_q": "45",
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is the outermost layer of the choroid?",
+      "boxed_text_verbatim": "The outermost layer of the choroid is Haller’s layer, containing large-diameter vessels. It lies external to Sattler’s layer and the choriocapillaris.",
+      "explanation_last_200": " stratum consists of large-diameter blood vessels (Haller's layer) lying adjacent to the suprachoroidal space and sclera.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-uveal-tract-18",
+      "file": "questions.ophtho.ep.js",
+      "tier": 2,
+      "score": {
+        "stem_overlap": 0.875,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1963,
+      "printed_q": 47,
+      "page_already_cited": false,
+      "staged_stem": "Which of the following is the innermost layer of the choroid?",
+      "boxed_text_verbatim": "Bruch’s membrane is the innermost layer of the choroid, lying between the choriocapillaris and retinal pigment epithelium. It plays a key role in retinal metabolism and waste transport.",
+      "explanation_last_200": " stratum consists of large-diameter blood vessels (Haller's layer) lying adjacent to the suprachoroidal space and sclera.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-squint-4",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.8461538461538461,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1899,
+      "printed_q": "20.",
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is the type of strabismus caused by longstanding poor vision?",
+      "boxed_text_verbatim": "Poor or lost vision in one eye disrupts fusion, leading to sensory strabismus, commonly manifesting as secondary deviation of the affected eye.",
+      "explanation_last_200": "ries in magnitude across different directions of gaze, rather than a specific etiological category caused by poor vision.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-squint-5",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1897,
+      "printed_q": 19,
+      "page_already_cited": true,
+      "staged_stem": "What is the best management of a diabetic patient with paralytic strabismus due to poorly-controlled DM?",
+      "boxed_text_verbatim": "Diabetic cranial nerve palsy is often ischemic and resolves spontaneously within months; management focuses on blood sugar control and observation.",
+      "explanation_last_200": "aneous resolution window. None of the above is wrong because option C correctly specifies the 6-month observation period.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-squint-6",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1838,
+      "printed_q": "68.",
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is characteristic of comitant strabismus?",
+      "boxed_text_verbatim": "Types of strabismus according to comitance:\nA. Comitant strabismus: the angle (or degree) of misalignment is approximately equal in all directions of gaze. Concomitant strabismus in patients under age 6 is rarely caused by serious neurologic disease. Strabismus arising later in life may have a specific and serious neurologic basis.\nB. Incomitant strabismus: the degree of misalignment varies with the direction of gaze. This type may indicate neurologic disorder, such as third nerve palsy, or orbital disease or trauma, such as thyroid ophthalmopathy or blowout fracture.",
+      "explanation_last_200": "orbital pathology such as 3rd, 4th or 6th nerve palsy, thyroid ophthalmopathy or trauma, rather than comitant strabismus.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-squint-6",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1891,
+      "printed_q": 16,
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is characteristic of comitant strabismus?",
+      "boxed_text_verbatim": "Comitant strabismus shows constant deviation in all gaze directions and is not due to muscle paralysis, often seen in childhood squint.",
+      "explanation_last_200": "orbital pathology such as 3rd, 4th or 6th nerve palsy, thyroid ophthalmopathy or trauma, rather than comitant strabismus.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-squint-8",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 2007,
+      "printed_q": 69,
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is true regarding comitant strabismus?",
+      "boxed_text_verbatim": "In comitant strabismus, the angle of deviation remains constant in all directions of gaze because the extraocular muscles function normally. It is typically congenital or developmental, not neurologic.",
+      "explanation_last_200": "asis. None of the above is incorrect because option B correctly states that extraocular muscles are functioning normally.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-squint-10",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 2143,
+      "printed_q": 61,
+      "page_already_cited": true,
+      "staged_stem": "A 22-year-old male complains of double vision. Examination revealed esotropia, inability to abduct the left eye and face turn to the left side. which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Inability to abduct the left eye with esotropia indicates left lateral rectus weakness due to left abducent (VI) nerve palsy.",
+      "explanation_last_200": "eye, giving right esotropia and a face turn to the right. Option D repeats option A verbatim and is not the keyed choice.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-squint-11",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1895,
+      "printed_q": 18,
+      "page_already_cited": true,
+      "staged_stem": "A 34-year-old male patient presented with a complaint of dual vision especially when looking downwards. Examination revealed hypertropia, weak depression of the left eye when adducted together with chin depression and head tilt to the right side. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Superior oblique palsy causes vertical diplopia, worse on looking down (e.g., reading, descending stairs), with compensatory head tilt to the opposite side.",
+      "explanation_last_200": "ed choice. The same option menu is used in ophep-squint-10, where the picture is the horizontal one of an abducent palsy.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-glaucoma-12",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 2170,
+      "printed_q": 75,
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is considered a visual field defect that is characteristic of glaucoma?",
+      "boxed_text_verbatim": "Arcuate scotoma is a characteristic visual field defect in glaucoma, corresponding to damage of arcuate nerve fibers near the optic disc.",
+      "explanation_last_200": "e course material). Therefore, arcuate scotomata represent a hallmark functional sign of glaucomatous optic nerve damage.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-glaucoma-20",
+      "file": "questions.ophtho.ep.js",
+      "tier": 2,
+      "score": {
+        "stem_overlap": 0.7391304347826086,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1723,
+      "printed_q": "11",
+      "page_already_cited": false,
+      "staged_stem": "Which of the following is the best line of management of a diabetic patient presenting with acute angle closure glaucoma together with lower limb edema and dyspnea?",
+      "boxed_text_verbatim": "Medical treatment of acute angle closure glaucoma (to lower IOP, reduce pain, and clear corneal oedema in preparation for iridotomy). Topical medications: IOP lowering drugs (previously mentioned), miotics & Prednisolone. Systemic medications: Carbonic anhydrase inhibitors (for IOP lowering) & Osmotic agents: Mannitol (contraindicated in cardiac patients) and glycerine (contraindicated in diabetics).",
+      "explanation_last_200": "ck and narrows the angle further (not taken from the course material). The same answer menu appears in ophep-glaucoma-13.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-malignancies-eye-adnexa-5",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1985,
+      "printed_q": 58,
+      "page_already_cited": true,
+      "staged_stem": "A 59-year-old male patient visits the ophthalmologist with a complaint of a lid ulcer. He reported that the ulcer appeared 5 weeks ago and enlarged in size over that period. Examination revealed an ulcerative lesion with beaded edges and dilated vessels on the ulcer margin. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Basal cell carcinoma presents as a slow-growing ulcer with rolled, beaded edges and dilated vessels. It is the most common malignant eyelid tumor.",
+      "explanation_last_200": "gnancies-eye-adnexa-8 (a child with leukocoria) and ophep-malignancies-eye-adnexa-10 (the most common eyelid malignancy).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-malignancies-eye-adnexa-7",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.9285714285714286,
+        "option_matches": 5
+      },
+      "matched_pdf_page": 1873,
+      "printed_q": 7,
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is the most common intraocular malignancy in the adult age group?",
+      "boxed_text_verbatim": "Choroidal melanoma is the most common intraocular malignancy in adults. It arises from uveal melanocytes and may cause visual loss or retinal detachment.",
+      "explanation_last_200": "es; squamous cell carcinoma also occurs on the cornea. Retinoblastoma is the primary intraocular malignancy of childhood.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-malignancies-eye-adnexa-9",
+      "file": "questions.ophtho.ep.js",
+      "tier": 2,
+      "score": {
+        "stem_overlap": 0.8571428571428571,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1873,
+      "printed_q": 7,
+      "page_already_cited": false,
+      "staged_stem": "Which of the following is the most common intraocular malignancy in the adult age group?",
+      "boxed_text_verbatim": "Choroidal melanoma is the most common intraocular malignancy in adults. It arises from uveal melanocytes and may cause visual loss or retinal detachment.",
+      "explanation_last_200": "amous cell carcinoma and basal cell carcinoma are eyelid malignancies; squamous cell carcinoma also occurs on the cornea.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-malignancies-eye-adnexa-10",
+      "file": "questions.ophtho.ep.js",
+      "tier": 2,
+      "score": {
+        "stem_overlap": 0.8,
+        "option_matches": 3
+      },
+      "matched_pdf_page": 1666,
+      "printed_q": "60",
+      "page_already_cited": false,
+      "staged_stem": "Which of the following is the most common malignant tumor of the eyelid?",
+      "boxed_text_verbatim": "Basal cell carcinoma is the most common malignant eyelid tumor, usually affecting the lower lid. It grows slowly and rarely metastasizes but can cause local tissue destruction.",
+      "explanation_last_200": "carcinoma arises from eyelid sebaceous glands. Retinoblastoma and choroidal melanoma are intraocular, not eyelid tumours.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-malignancies-eye-adnexa-12",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1953,
+      "printed_q": 45,
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is the most common sites of basal cell carcinoma of eyelid?",
+      "boxed_text_verbatim": "Basal cell carcinoma most frequently affects the lower eyelid, especially the nasal side, due to maximum UV exposure. It appears as an ulcer with rolled, pearly edges and telangiectasia.",
+      "explanation_last_200": "he lower lid. Nasal part of upper lid incorrectly places basal cell carcinoma on the upper lid rather than the lower lid.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-vitreous-5",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1943,
+      "printed_q": 42,
+      "page_already_cited": true,
+      "staged_stem": "A 60-year-old male patient complains of sudden severe eye pain, redness and discharge. History revealed that he just had a cataract surgery 1 day ago. Ophthalmoscopic examination revealed that the red reflex was altered with a yellowish tint. Externally, there was associated lid edema, proptosis and corneal edema. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Postoperative endophthalmitis presents with severe pain, decreased vision, lid edema, and yellow reflex (due to pus in vitreous). It is a surgical emergency requiring intravitreal antibiotics.",
+      "explanation_last_200": " flashes and a curtain-like field loss rather than purulent discharge and lid edema (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-vitreous-8",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1883,
+      "printed_q": "12.",
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is NOT true regarding endophthalmitis?",
+      "boxed_text_verbatim": "Endophthalmitis is usually exogenous, most commonly postoperative or post-traumatic. It’s an ophthalmic emergency requiring intravitreal antibiotics.",
+      "explanation_last_200": "I lecture); that bacteria are the most common cause overall is outside the lectures (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-neuro-ophthalmology-19",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 3
+      },
+      "matched_pdf_page": 1854,
+      "printed_q": 76,
+      "page_already_cited": true,
+      "staged_stem": "A 67-year-old female patient presented with acute unilateral diminished vision, jaw claudication and severe temporal headache. Which of the following is the most likely cause of that patient’s condition?",
+      "boxed_text_verbatim": "GCA causes the following symptoms:\nAcute unilateral diminution of vision.\nPain in the ipsilateral temporal region (over the temporal artery).\nJaw claudication.\nScalp tenderness.\nWith/without fever and/or general malaise.",
+      "explanation_last_200": "taken from the course material).\n\nNone of the above is wrong because the picture fits anterior ischemic optic neuropathy.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-trauma-11",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1911,
+      "printed_q": 26,
+      "page_already_cited": true,
+      "staged_stem": "A 26-year-old male presents to the emergency department after he had a severe head trauma. He complained of severe left eye pain with swelling of the left lower lid. Examination revealed limitation of ocular motility with ecchymosis and lid hematoma. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Retrobulbar hemorrhage is a vision-threatening emergency that can follow trauma. It presents with sudden eye pain, proptosis, lid swelling, ecchymosis, and restricted ocular movement due to increased orbital pressure. Prompt recognition and intervention (e.g. lateral canthotomy) are essential to prevent optic nerve damage.",
+      "explanation_last_200": "ectious keratitis or endophthalmitis (not taken from the course material), distinct from post-traumatic orbital hematoma.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-trauma-13",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.98,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1909,
+      "printed_q": 25,
+      "page_already_cited": true,
+      "staged_stem": "A 30-year-old man got a fist blow in his right eye during a quarrel with his wife that made him feel severe eye pain. He headed to the ophthalmologist who examined his eye and found that the trauma caused hemorrhage and blood accumulation in the anterior chamber. Fluid level was sharply demarkated. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Blood in the anterior chamber forming a distinct level is diagnostic of hyphema, commonly caused by blunt trauma.",
+      "explanation_last_200": "ior chamber associated with infectious or inflammatory conditions, distinct from acute traumatic red blood cell layering.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-trauma-15",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1780,
+      "printed_q": 39,
+      "page_already_cited": true,
+      "staged_stem": "Which of the following imaging modalities is absolutely contraindicated in a patient with intra-ocular metallic foreign body?",
+      "boxed_text_verbatim": "MRI should not be performed if an iron metallic foreign body is suspected. MRIs are contraindicated for metallic IOFBs as it might result in dislodgement of the foreign body causing further damage.",
+      "explanation_last_200": "rse material), and the lecture lists it as possibly useful when an intraocular foreign body is suspected (L25, slide 52).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-trauma-15",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 2164,
+      "printed_q": "72",
+      "page_already_cited": true,
+      "staged_stem": "Which of the following imaging modalities is absolutely contraindicated in a patient with intra-ocular metallic foreign body?",
+      "boxed_text_verbatim": "MRI is absolutely contraindicated in cases of metallic intraocular foreign bodies due to magnetic movement and heating risks.",
+      "explanation_last_200": "rse material), and the lecture lists it as possibly useful when an intraocular foreign body is suspected (L25, slide 52).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-trauma-16",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1955,
+      "printed_q": "46.",
+      "page_already_cited": false,
+      "staged_stem": "Which of the following has the poorest prognosis ever?",
+      "boxed_text_verbatim": "Alkali burns (like sodium hydroxide) penetrate deeply, causing progressive tissue destruction and scarring. They have the worst prognosis compared to acid burns.",
+      "explanation_last_200": "lly different chemical mechanisms and tissue penetration profiles, making alkali injuries significantly more devastating.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-systemic-diseases-17",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1768,
+      "printed_q": 33,
+      "page_already_cited": true,
+      "staged_stem": "A 60-year-old hypertensive male patient was found by an ophthalmologist to have a light reflex that occupies most of the width of the vessels (copper-wire arterioles). Fundoscopy revealed retinal hemorrhages and exudates. Which of the following is a potential complication for such a patient?",
+      "boxed_text_verbatim": "Exudative retinal detachment → Caused by damage to the RPE resulting in fluid accumulation in the Subretinal space. Main causes are malignant hypertension, toxaemia of pregnancy, posterior uveitis, and intraocular tumours.",
+      "explanation_last_200": "n (not taken from the course material). 'All of the above' is wrong because only the exudative type follows hypertension.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-systemic-diseases-18",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.972972972972973,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1983,
+      "printed_q": 57,
+      "page_already_cited": true,
+      "staged_stem": "A 66-year-old woman presents with a complaint of acutely diminished vision in the left eye coupled with severe pain the left temporal region. Examination revealed tender and cord-like texture of temporal artery on palpation. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "Giant cell arteritis causes temporal artery tenderness, headache, and sudden vision loss due to ischemic optic neuropathy. It is an emergency requiring immediate corticosteroid therapy.",
+      "explanation_last_200": "e sclerosis nor sarcoidosis is characterized by a tender, cord-like temporal artery (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-systemic-diseases-19",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1828,
+      "printed_q": 63,
+      "page_already_cited": true,
+      "staged_stem": "A diabetic patient with pre-existing diabetic retinopathy was informed by her ophthalmologist that she developed new blood vessel formation on retina and iris. What's the best line of management for that patient?",
+      "boxed_text_verbatim": "Best treatment option for PDR is: PRP.\nBest treatment option for DME or CSME is: anti-VEGF.",
+      "explanation_last_200": " tear from the inside (L20, slide 14); it does not treat retinal neovascularization (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-systemic-diseases-19",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1907,
+      "printed_q": "24.",
+      "page_already_cited": true,
+      "staged_stem": "A diabetic patient with pre-existing diabetic retinopathy was informed by her ophthalmologist that she developed new blood vessel formation on retina and iris. What's the best line of management for that patient?",
+      "boxed_text_verbatim": "New vessel formation on retina and iris indicates proliferative diabetic retinopathy. The treatment of choice is panretinal photocoagulation to reduce ischemic drive.",
+      "explanation_last_200": " tear from the inside (L20, slide 14); it does not treat retinal neovascularization (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-systemic-diseases-20",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.975,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1822,
+      "printed_q": 60,
+      "page_already_cited": true,
+      "staged_stem": "An old hypertensive male patient developed sudden acute rise in blood pressure that was accompanied by blurred vision and large subconjunctival hemorrhage. Ophthalmoscopy revealed exudative retinal detachment. Which of the following is the most appropriate initial step to be carried out in that patient?",
+      "boxed_text_verbatim": "During the management of patients with sudden severe rise in blood pressure, lowering the blood pressure must be done in a controlled fashion as a sudden drop in tissue perfusion can result in optic nerve infarction and permanent loss of vision.",
+      "explanation_last_200": " the detachment and vitrectomy are retinal procedures for other kinds of detachment (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-systemic-diseases-20",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 0.975,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1903,
+      "printed_q": "22.",
+      "page_already_cited": true,
+      "staged_stem": "An old hypertensive male patient developed sudden acute rise in blood pressure that was accompanied by blurred vision and large subconjunctival hemorrhage. Ophthalmoscopy revealed exudative retinal detachment. Which of the following is the most appropriate initial step to be carried out in that patient?",
+      "boxed_text_verbatim": "In hypertensive crisis with exudative retinal detachment, blood pressure must be lowered gradually to prevent optic nerve or cerebral ischemia.",
+      "explanation_last_200": " the detachment and vitrectomy are retinal procedures for other kinds of detachment (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-systemic-diseases-22",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1957,
+      "printed_q": "44.",
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is the retinal lesion resulting from infarction of nerve fiber layer?",
+      "boxed_text_verbatim": "Soft exudates (cotton wool spots) represent localized infarction of the nerve fiber layer due to ischemia. They appear as fluffy white patches on the retina.",
+      "explanation_last_200": "rrhages are leakage and bleeding lesions, and hard exudates are arranged in clumps or rings; none of these is an infarct.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-ocular-systemic-diseases-25",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 5
+      },
+      "matched_pdf_page": 1961,
+      "printed_q": 46,
+      "page_already_cited": true,
+      "staged_stem": "Ocular signs that manifest in patients with multiple sclerosis include all of the following except?",
+      "boxed_text_verbatim": "Multiple sclerosis causes optic neuritis, RAPD, and nystagmus due to demyelination, but not peripheral scotoma. Scotomas are more typical of retinal disease or glaucoma.",
+      "explanation_last_200": " disease through involvement of the oculomotor pathways (not taken from the course material). The key is left as printed.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-retina-13",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1971,
+      "printed_q": 51,
+      "page_already_cited": true,
+      "staged_stem": "A 65-year-old man presents with sudden painless severe monocular vision loss. Ophthalmoscopic examination revealed cherry red spots together with venous stasis. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "CRAO causes sudden, painless, severe vision loss with a pale retina and a cherry-red spot at the macula. It is an ophthalmic emergency due to retinal ischemia.",
+      "explanation_last_200": "rs (L35,36). Retinitis pigmentosa is wrong because its complaint is night blindness (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-retina-14",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1945,
+      "printed_q": "43.",
+      "page_already_cited": true,
+      "staged_stem": "A 57-year-old diabetic and hypertensive male patient complained of acute painless loss of vision in his left eye. Ophthalmoscopy revealed (blood and thunder appearance) together with cotton wool spots and diffuse retinal hemorrhages. Which of the following is the most likely diagnosis?",
+      "boxed_text_verbatim": "CRVO causes a “blood and thunder” fundus appearance due to widespread retinal hemorrhages and venous congestion. It often occurs in hypertensive and diabetic patients.",
+      "explanation_last_200": ", slide 11). Retinitis pigmentosa is wrong because its complaint is night blindness (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-retina-15",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 5
+      },
+      "matched_pdf_page": 1991,
+      "printed_q": "61",
+      "page_already_cited": true,
+      "staged_stem": "A 61-year-old woman complains of seeing straight objects as if they were wavy. History was taken and it showed that the patient was a heavy smoker. Ophthalmoscopy revealed drusen formation. Which of the following is the most probable diagnosis?",
+      "boxed_text_verbatim": "Metamorphopsia (seeing straight lines as wavy) with drusen formation is characteristic of age-related macular degeneration. Smoking is a major risk factor, and the macula is primarily affected, leading to central vision loss.",
+      "explanation_last_200": "ema (L19.2). Retinitis pigmentosa is wrong because its complaint is night blindness (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-retina-18",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1840,
+      "printed_q": 69,
+      "page_already_cited": true,
+      "staged_stem": "A 25-year-old man complains of night blindness and decreased peripheral vision. What is the most likely diagnosis?",
+      "boxed_text_verbatim": "Clinical picture of RP:\nA. Symptoms: Night blindness, decreased peripheral vision\n(initial) and decreased central vision (macular affection).\nB. Ophthalmoscopy: A triad of bone spicules, attenuated\nvessels & waxy disc.",
+      "explanation_last_200": "in or shadow in the peripheral vision comes with floaters and flashes of light (L20, slide 11), and the stem has neither.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-retina-19",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 2168,
+      "printed_q": 74,
+      "page_already_cited": true,
+      "staged_stem": "Which of the following increases the risk of central retinal vein occlusion?",
+      "boxed_text_verbatim": "Central retinal vein occlusion risk increases with oral contraceptive use due to hypercoagulability and venous stasis.",
+      "explanation_last_200": " of haemorrhages, cotton-wool spots and venous tortuosity (L19.2), which is not a predisposing factor for vein occlusion.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-pediatric-ophthalmology-14",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1806,
+      "printed_q": "52.",
+      "page_already_cited": true,
+      "staged_stem": "A baby born at gestational age of 29 weeks. What is the optimal time to screen for retinopathy of prematurity in that baby?",
+      "boxed_text_verbatim": "Screening for ROP →\nA. For babies born at GA 28 weeks or more, screening should be done 4 weeks\nafter they are born i.e., when the baby is 1 month old.\nB. For babies born earlier, GA 27 weeks or less, screening should be done at 31\nweeks GA, that is the week 31 from the first day of the woman’s last menstrual\ncycle.",
+      "explanation_last_200": "more immature 26-week infant where 6 weeks after birth is itself the correct timing (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-pediatric-ophthalmology-14",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1913,
+      "printed_q": "27",
+      "page_already_cited": true,
+      "staged_stem": "A baby born at gestational age of 29 weeks. What is the optimal time to screen for retinopathy of prematurity in that baby?",
+      "boxed_text_verbatim": "Screening protocol for retinopathy of prematurity (ROP) depends on the\ngestational age (GA) at which the baby is born as follows:\n• If GA ≤28 weeks: Screen 4 weeks after birth.\n• If GA< 28 weeks: Screen at 31 weeks GA.",
+      "explanation_last_200": "more immature 26-week infant where 6 weeks after birth is itself the correct timing (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep-drugs-eye-9",
+      "file": "questions.ophtho.ep.js",
+      "tier": 1,
+      "score": {
+        "stem_overlap": 1,
+        "option_matches": 4
+      },
+      "matched_pdf_page": 1959,
+      "printed_q": "45.",
+      "page_already_cited": true,
+      "staged_stem": "Which of the following is the most common use of hyperosmotic agents?",
+      "boxed_text_verbatim": "Hyperosmotic agents (like mannitol) are used in acute angle-closure glaucoma to rapidly lower intraocular pressure by drawing fluid out of the vitreous.",
+      "explanation_last_200": "osmotic agent, since they do not present with the same sudden, severe pressure rise (not taken from the course material).\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here."
+    },
+    {
+      "id": "ophep2-model-exam-5-6",
+      "file": "questions.ophtho.ep2.js",
+      "tier": 3,
+      "score": {
+        "stem_overlap": 1
+      },
+      "matched_pdf_page": 766,
+      "printed_q": null,
+      "page_already_cited": false,
+      "staged_stem": null,
+      "boxed_text_verbatim": "",
+      "explanation_last_200": "ne of the other three categories are anatomically centred there, intermediate uveitis is the only correct classification.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here.",
+      "note": "OCR text, unverified"
+    },
+    {
+      "id": "ophep2-model-exam-5-6",
+      "file": "questions.ophtho.ep2.js",
+      "tier": 3,
+      "score": {
+        "stem_overlap": 1
+      },
+      "matched_pdf_page": 767,
+      "printed_q": null,
+      "page_already_cited": false,
+      "staged_stem": null,
+      "boxed_text_verbatim": "",
+      "explanation_last_200": "ne of the other three categories are anatomically centred there, intermediate uveitis is the only correct classification.\n\nWritten for this bank � Opthalmology endpoint.pdf prints no explanation here.",
+      "note": "OCR text, unverified"
+    }
+  ]
+}
