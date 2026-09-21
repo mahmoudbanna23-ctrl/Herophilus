@@ -31,7 +31,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 **no live rule left it.**
 
 ## Resume here — state at 2026-09-16
-- **APP RE-PLAN 2026-09-17 (design + code review + refactor + features): `progress\PLAN-app-replan-2026-09-17.md`** — B10, B11, B2 DONE (`index.html` 145 lines + `app\css`, `app\js`; tag `pre-b2c-2026-09-20`); look questions ALL answered; sign-in fix NOT live until owner adds the redirect URI + drops `dist`. Next B1 tokens. **Resume: `progress\app-replan\plan-until-codex-2026-09-20.md` sections F + G.** Older detail: `progress\memory-archive.md`, pruned 2026-09-20.
+- **APP RE-PLAN 2026-09-17 (design + code review + refactor + features): `progress\PLAN-app-replan-2026-09-17.md`** — B10, B11, B2, B1, B3a-1 icons, B12 strike-out DONE (2026-09-21, tags `pre-*`); home = ONE desk layout; sign-in fix NOT live until owner adds the redirect URI + drops a REBUILT `dist`. Next: B3a-3 type scale, then B3b. **Resume: `progress\app-replan\plan-until-codex-2026-09-20.md` section H.** Older detail: `progress\memory-archive.md`, pruned 2026-09-20.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
 boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho
 ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.**

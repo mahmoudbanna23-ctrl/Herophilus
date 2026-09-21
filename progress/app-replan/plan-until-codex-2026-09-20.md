@@ -209,3 +209,12 @@ Order follows the parent plan: B1 → B2a/b/c → B11 → B3 → B4 → B5 …
   Consequence stated to him, not yet confirmed: the M10 dimmed painting backdrop leaves the home
   screen (the desk photo owns the background; never both). Assumption stated to him, not yet
   confirmed: big front card = last-used subject, the other three fan beside it.
+- 2026-09-21 results. B3a-1 icons committed (refuter PASS). B3a-2 copy: no-op, all 12 audit
+  anchors already gone. B12 strike-out committed `af16306` after two refuter FAILs; the last fix
+  (strike reset inside `startQuiz`) is machine-checked only. lock-check, navclock-check and
+  attempt-check fail byte-identically before and after B12 (two refuter runs) - pre-existing,
+  root cause NOT investigated. `dist-check` flaked once in three runs (image copy race).
+  Known and left: on a 6-option question, F on a focused X is taken as an answer letter.
+  B3a-3 type scale: brief `b3a-3-type-scale-brief.md`, tag `pre-b3a3-2026-09-21`; Codex hit its
+  usage limit, job went to a Claude builder. Owner sees shots before commit.
+  Buttons ("Practice all", filter chips): owner wants to talk before B3b touches them.
