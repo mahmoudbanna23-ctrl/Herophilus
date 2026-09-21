@@ -35,7 +35,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
 boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho
 ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.**
-Printed page = PDF **+1** past an unpinned flip in PDF 2151–2170. ✅ **GATE 0 CLOSED 2026-09-08**,
+Printed page = PDF **+1** from PDF 2151 on (pinned 2026-09-21). ✅ **GATE 0 CLOSED 2026-09-08**,
 OPH-B unblocked. **439 live, s1-21 ALL done** (✅ **s14 Neuro-ophthalmology CLOSED 2026-09-19,
 313->338, `264bc74`**, n18 folded into `ophep-squint-10`; s12 `857e08c` chapter `op-vitreous`, chapters 154,
 boot-check 4049/81; s17 `4795291`). **REGROUPED 2026-09-19 `25ab5b7`: 19 book-order groups, ids unchanged, plan `PLAN-ophtho-book-groups-2026-09-19.md`.** **s13 Retina CLOSED 2026-09-20 (40 q, 377->417, n16 folded, boot 4049/81/154; s18/s19/s21 chat B); chapters split by topic, then House; s18/s19 audited, fixed 2026-09-20.
