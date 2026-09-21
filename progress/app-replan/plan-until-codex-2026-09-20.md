@@ -218,3 +218,15 @@ Order follows the parent plan: B1 → B2a/b/c → B11 → B3 → B4 → B5 …
   B3a-3 type scale: brief `b3a-3-type-scale-brief.md`, tag `pre-b3a3-2026-09-21`; Codex hit its
   usage limit, job went to a Claude builder. Owner sees shots before commit.
   Buttons ("Practice all", filter chips): owner wants to talk before B3b touches them.
+- 2026-09-21 /prep stop point. B3a-3 type scale is BUILT and UNCOMMITTED in
+  `app/css/{tokens,base,layout,components,views}.css` (Claude builder; its own checks at
+  baseline; raw sizes left: 52px `views.css:3`, 9/8.5/8px badges, one clamp, two inherit).
+  An Opus refuter was running when the session was cleared - its verdict is LOST; re-run one
+  from the brief's verify list (diff touches only font-size + `--fs-*`, mapping on-table, new
+  overflow/clipping vs tag `pre-b3a3-2026-09-21`). Then show the owner before/after shots
+  (`b1-shots.js type` vs the `b3a1` set in `progress/app-replan/shots/`; builder could not
+  locate its PNGs - re-run the script) and commit ONLY after his look. Rollback:
+  `git checkout pre-b3a3-2026-09-21 -- app/css`.
+  Codex terra out of quota until 04:58 on 2026-09-22.
+  Impeccable hook keeps flagging `--ease-spring` (`tokens.css:148`); owner not yet answered
+  keep-or-replace; no ignore written.
