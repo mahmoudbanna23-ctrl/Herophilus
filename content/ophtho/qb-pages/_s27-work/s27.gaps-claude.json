@@ -1,0 +1,425 @@
+[
+  {
+    "pdf_page": 2188,
+    "printed_page": 2189,
+    "page_type": "question_unmarked",
+    "printed_q": 7,
+    "stem": "A 30-year-old male is struck in the face during a bar fight. He presents with blurred vision and severe aching pain in the affected eye. Slit-lamp examination reveals a distinct horizontal fluid level of bright red blood layering within the anterior chamber. What is the most likely diagnosis?",
+    "options": [
+      "Hyphema",
+      "Hypopyon",
+      "Subconjunctival hemorrhage",
+      "Vitreous hemorrhage"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2305,
+    "printed_page": 2306,
+    "page_type": "question_marked",
+    "printed_q": 65,
+    "stem": "A full-term infant is delivered at 38 weeks’ gestation with a birth weight of 3.2 kg after an uncomplicated pregnancy and delivery. The parents ask whether retinal screening for retinopathy of prematurity is necessary. What is the most appropriate recommendation?",
+    "options": [
+      "No screening is required",
+      "Immediate screening within 24 hours",
+      "Screening at 4 weeks of age",
+      "Screening before hospital discharge"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2312,
+    "printed_page": 2313,
+    "page_type": "question_unmarked",
+    "printed_q": 69,
+    "stem": "During ophthalmoscopic examination of a patient with suspected glaucoma, thinning of the neuroretinal rim is noted. According to the ISNT rule, glaucomatous damage most commonly begins in a characteristic region of the optic disc. Where does glaucomatous neuroretinal rim loss most commonly begin?",
+    "options": [
+      "Inferotemporal region",
+      "Nasal region",
+      "Superonasal region",
+      "Central region"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2313,
+    "printed_page": 2314,
+    "page_type": "question_marked",
+    "printed_q": 69,
+    "stem": "During ophthalmoscopic examination of a patient with suspected glaucoma, thinning of the neuroretinal rim is noted. According to the ISNT rule, glaucomatous damage most commonly begins in a characteristic region of the optic disc. Where does glaucomatous neuroretinal rim loss most commonly begin?",
+    "options": [
+      "Inferotemporal region",
+      "Nasal region",
+      "Superonasal region",
+      "Central region"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2314,
+    "printed_page": 2315,
+    "page_type": "question_unmarked",
+    "printed_q": 70,
+    "stem": "A 40-year-old female with chronic juvenile idiopathic arthritis-associated ocular inflammation presents with a gray-white horizontal corneal opacity located within the interpalpebral zone. Examination reveals superficial calcium deposition within the cornea. What is the traditional definitive treatment for removing this corneal opacity?",
+    "options": [
+      "EDTA chelation therapy",
+      "Phototherapeutic keratectomy",
+      "Penetrating keratoplasty",
+      "Topical corticosteroids"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2315,
+    "printed_page": 2316,
+    "page_type": "question_marked",
+    "printed_q": 70,
+    "stem": "A 40-year-old female with chronic juvenile idiopathic arthritis-associated ocular inflammation presents with a gray-white horizontal corneal opacity located within the interpalpebral zone. Examination reveals superficial calcium deposition within the cornea. What is the traditional definitive treatment for removing this corneal opacity?",
+    "options": [
+      "EDTA chelation therapy",
+      "Phototherapeutic keratectomy",
+      "Penetrating keratoplasty",
+      "Topical corticosteroids"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2316,
+    "printed_page": 2317,
+    "page_type": "question_unmarked",
+    "printed_q": 71,
+    "stem": "A 65-year-old patient presents with a painful vesicular rash distributed over the right forehead, upper eyelid, and the tip of the nose. He also complains of photophobia and decreased vision. Slit-lamp examination reveals corneal inflammation with multiple raised pseudodendritic lesions. What is the most likely diagnosis?",
+    "options": [
+      "Herpes zoster ophthalmicus",
+      "Herpes simplex keratitis",
+      "Bacterial keratitis",
+      "Acanthamoeba keratitis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2317,
+    "printed_page": 2318,
+    "page_type": "question_marked",
+    "printed_q": 71,
+    "stem": "A 65-year-old patient presents with a painful vesicular rash distributed over the right forehead, upper eyelid, and the tip of the nose. He also complains of photophobia and decreased vision. Slit-lamp examination reveals corneal inflammation with multiple raised pseudodendritic lesions. What is the most likely diagnosis?",
+    "options": [
+      "Herpes zoster ophthalmicus",
+      "Herpes simplex keratitis",
+      "Bacterial keratitis",
+      "Acanthamoeba keratitis"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2318,
+    "printed_page": 2319,
+    "page_type": "question_unmarked",
+    "printed_q": 72,
+    "stem": "A 35-year-old female presents with a mildly painful sectoral redness of one eye without visual loss or photophobia. To differentiate superficial episcleral inflammation from deeper scleral inflammation, the ophthalmologist instills a diagnostic eye drop that causes blanching of the superficial vessels within minutes. Which medication was most likely used?",
+    "options": [
+      "Phenylephrine 2.5%",
+      "Topical anesthetic drops",
+      "Topical antibiotic drops",
+      "Topical cycloplegic drops"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2319,
+    "printed_page": 2320,
+    "page_type": "question_marked",
+    "printed_q": 72,
+    "stem": "A 35-year-old female presents with a mildly painful sectoral redness of one eye without visual loss or photophobia. To differentiate superficial episcleral inflammation from deeper scleral inflammation, the ophthalmologist instills a diagnostic eye drop that causes blanching of the superficial vessels within minutes. Which medication was most likely used?",
+    "options": [
+      "Phenylephrine 2.5%",
+      "Topical anesthetic drops",
+      "Topical antibiotic drops",
+      "Topical cycloplegic drops"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2320,
+    "printed_page": 2321,
+    "page_type": "question_unmarked",
+    "printed_q": 73,
+    "stem": "A 55-year-old male presents with progressive unilateral hearing loss, tinnitus, facial weakness, and decreased corneal sensation on the same side. Examination also reveals exposure keratopathy due to incomplete eyelid closure. MRI demonstrates a slowly enlarging tumor compressing cranial nerves V, VII, and VIII. Where is this lesion most likely located?",
+    "options": [
+      "Cerebellopontine angle",
+      "Cavernous sinus",
+      "Orbital apex",
+      "Optic chiasm"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2321,
+    "printed_page": 2322,
+    "page_type": "question_marked",
+    "printed_q": 73,
+    "stem": "A 55-year-old male presents with progressive unilateral hearing loss, tinnitus, facial weakness, and decreased corneal sensation on the same side. Examination also reveals exposure keratopathy due to incomplete eyelid closure. MRI demonstrates a slowly enlarging tumor compressing cranial nerves V, VII, and VIII. Where is this lesion most likely located?",
+    "options": [
+      "Cerebellopontine angle",
+      "Cavernous sinus",
+      "Orbital apex",
+      "Optic chiasm"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2322,
+    "printed_page": 2323,
+    "page_type": "question_unmarked",
+    "printed_q": 74,
+    "stem": "A 25-year-old male is struck in the eye by a baseball. CT scan demonstrates an orbital floor fracture with entrapment of the inferior rectus muscle within the fracture defect. What is the most likely visual complaint resulting from this injury?",
+    "options": [
+      "Binocular diplopia",
+      "Monocular diplopia",
+      "Flashes and floaters",
+      "Central scotoma"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2323,
+    "printed_page": 2324,
+    "page_type": "question_marked",
+    "printed_q": 74,
+    "stem": "A 25-year-old male is struck in the eye by a baseball. CT scan demonstrates an orbital floor fracture with entrapment of the inferior rectus muscle within the fracture defect. What is the most likely visual complaint resulting from this injury?",
+    "options": [
+      "Binocular diplopia",
+      "Monocular diplopia",
+      "Flashes and floaters",
+      "Central scotoma"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2324,
+    "printed_page": 2325,
+    "page_type": "question_unmarked",
+    "printed_q": 75,
+    "stem": "A 32-year-old female presents with fluctuating ptosis and intermittent binocular diplopia that worsen toward the end of the day and improve with rest. An ice-pack test produces marked temporary improvement of her ptosis. What is the most likely diagnosis?",
+    "options": [
+      "Myasthenia gravis",
+      "Multiple sclerosis",
+      "Thyroid eye disease",
+      "Horner syndrome"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2325,
+    "printed_page": 2326,
+    "page_type": "question_marked",
+    "printed_q": 75,
+    "stem": "A 32-year-old female presents with fluctuating ptosis and intermittent binocular diplopia that worsen toward the end of the day and improve with rest. An ice-pack test produces marked temporary improvement of her ptosis. What is the most likely diagnosis?",
+    "options": [
+      "Myasthenia gravis",
+      "Multiple sclerosis",
+      "Thyroid eye disease",
+      "Horner syndrome"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2326,
+    "printed_page": 2327,
+    "page_type": "question_unmarked",
+    "printed_q": 76,
+    "stem": "An oculoplastic surgeon is repairing a full-thickness eyelid laceration involving the lid margin. To achieve proper alignment and avoid postoperative lid notching, the surgeon carefully aligns an anatomical landmark that separates the anterior and posterior lamellae of the eyelid. What is the name of this landmark?",
+    "options": [
+      "Gray line",
+      "White line of Toldt",
+      "Schwalbe line",
+      "Arcus marginalis"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2327,
+    "printed_page": 2328,
+    "page_type": "question_marked",
+    "printed_q": 76,
+    "stem": "An oculoplastic surgeon is repairing a full-thickness eyelid laceration involving the lid margin. To achieve proper alignment and avoid postoperative lid notching, the surgeon carefully aligns an anatomical landmark that separates the anterior and posterior lamellae of the eyelid. What is the name of this landmark?",
+    "options": [
+      "Gray line",
+      "White line of Toldt",
+      "Schwalbe line",
+      "Arcus marginalis"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2328,
+    "printed_page": 2329,
+    "page_type": "question_unmarked",
+    "printed_q": 77,
+    "stem": "A 60-year-old male undergoes a routine ophthalmologic examination. He is asymptomatic and has normal central visual acuity. Intraocular pressure is measured at 30 mmHg in both eyes, and fundus examination demonstrates marked vertical cupping of the optic discs bilaterally. What is the most likely diagnosis?",
+    "options": [
+      "Primary open-angle glaucoma",
+      "Age-related macular degeneration",
+      "Cataract",
+      "Diabetic retinopathy"
+    ],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2329,
+    "printed_page": 2330,
+    "page_type": "question_marked",
+    "printed_q": 77,
+    "stem": "A 60-year-old male undergoes a routine ophthalmologic examination. He is asymptomatic and has normal central visual acuity. Intraocular pressure is measured at 30 mmHg in both eyes, and fundus examination demonstrates marked vertical cupping of the optic discs bilaterally. What is the most likely diagnosis?",
+    "options": [
+      "Primary open-angle glaucoma",
+      "Age-related macular degeneration",
+      "Cataract",
+      "Diabetic retinopathy"
+    ],
+    "key_letter": "A",
+    "key_index": 0,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2330,
+    "printed_page": null,
+    "page_type": "theory",
+    "printed_q": null,
+    "stem": "Section divider: \"Exam Night Review\" banner, with a \"YOU CAN DO IT\" ribbon graphic. No question content.",
+    "options": [],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": true,
+    "note": "No printed page number visible on this render (bottom-right red page-number marker was not present in the image) — flagged, not guessed.",
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2331,
+    "printed_page": 2332,
+    "page_type": "theory",
+    "printed_q": null,
+    "stem": "Examination of the Eye (theory notes, bulleted):\n• Anterior chamber and the iris posteriorly. The iris lies between the back surface of the cornea anteriorly.\n• Posterior chamber lies between the back surface of the iris anteriorly and the crystalline lens posteriorly.\n• Iris is the colored portion of the eye.\n• The pupil is jet-black in the newborn and starts to acquire a greyish tinge as the person gets older due to the continuous addition of new lens fibers throughout life causing light scattering; a process known as senile sclerosis. It is to be noted that in the absence of the lens (surgically removed or posteriorly dislocated), the pupil regains its jet-black color.",
+    "options": [],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  },
+  {
+    "pdf_page": 2332,
+    "printed_page": 2333,
+    "page_type": "theory",
+    "printed_q": null,
+    "stem": "Theory notes (bulleted), continuation of Examination of the Eye:\n• Ciliary body has 3 functions (3 As) as follows:\n•Accommodation for near and far vision through the effect of contraction and relaxation of the ciliary muscle transmitted to the lens via the zonules (discussed in detail in the 2 notes below).\n•Aqueous humor secretion.\n•Attachment to the zonular fibers keeping the lens in place.\n• When the ciliary muscle relaxes, the zonules become taut (tense), resulting in flattening of the lens, and hence improving the focus for far objects (distant vision).\n• Conversely, when the ciliary muscle contracts, the zonules become relaxed, and consequently, the lens becomes more convex, improving the focus for near objects (accommodation).\n• Photoreceptor cells in the retina are of two types as follows:\n•Rods: Necessary for seeing in dim (faint) light.\n•Cones: Necessary for sharp vision, day vision, and color vision.",
+    "options": [],
+    "key_letter": null,
+    "key_index": null,
+    "box_printed": false,
+    "explanation_verbatim": "",
+    "figure": false,
+    "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+  }
+]
