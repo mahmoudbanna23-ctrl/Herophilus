@@ -109,16 +109,17 @@
   --pop-2xl:0 30px 80px;  /* 2 raw uses */
   --glow:0 0 0 1px rgba(242,232,213,.07);
 
-  /* Type scale — replan 2026-09-21. 8 steps picked from the 8 most-used raw
-     font-size values (11.5px was the single commonest at 15 uses). */
-  --fs-1:10.5px;
-  --fs-2:11px;
-  --fs-3:11.5px;
-  --fs-4:12px;
-  --fs-5:12.5px;
-  --fs-6:13px;
-  --fs-7:13.5px;
-  --fs-8:14px;
+  /* Type scale — replan 2026-09-21, job 3. 9-step ladder with a visible
+     ratio, replacing the flat 10.5-14px half-px steps above. */
+  --fs-xs:11px;
+  --fs-sm:12px;
+  --fs-md:13px;
+  --fs-ui:14px;
+  --fs-body:16.5px;
+  --fs-lg:19px;
+  --fs-xl:24px;
+  --fs-2xl:32px;
+  --fs-3xl:44px;
 
   /* Spacing ladder — replan 2026-09-21. 4px base, 2px smallest step, 12 steps,
      picked from the padding sides used most across base/layout/components/views. */

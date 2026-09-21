@@ -6,7 +6,7 @@
   border-right:3px solid #150f33;
 }
 .rail-head{padding:var(--s-9) var(--s-8) var(--s-6)}
-.logo{display:flex;align-items:center;gap:9px;color:#fff;font-weight:900;letter-spacing:-.03em;font-size:19px}
+.logo{display:flex;align-items:center;gap:9px;color:#fff;font-weight:900;letter-spacing:-.03em;font-size:var(--fs-lg)}
 /* THE MARK IS THE MEDALLION — `Design\Images\Icons\Herophilus 3.png`, the user's choice
    on 2026-07-28, cut to a transparent circle in assets\icon-96.png.
 
@@ -30,31 +30,31 @@
   box-shadow:0 0 0 1px rgba(217,180,74,.4),0 4px 12px rgba(0,0,0,.45);
 }
 .blip img,.gmark img{width:100%;height:100%;display:block;border-radius:50%}
-.rail-sub{font-size:var(--fs-1);color:var(--rail-dim);margin-top:4px;letter-spacing:.09em;text-transform:uppercase;font-weight:700}
+.rail-sub{font-size:var(--fs-xs);color:var(--rail-dim);margin-top:4px;letter-spacing:.09em;text-transform:uppercase;font-weight:700}
 
 .streak{
   margin:8px 12px 4px;padding:var(--s-5) var(--s-6);border-radius:var(--r-lg);
   background:linear-gradient(135deg,rgba(255,201,74,.16),rgba(255,90,95,.13));
   border:1.5px solid rgba(255,201,74,.3);display:flex;align-items:center;gap:9px;
 }
-.streak .fl{font-size:17px}
-.streak .n{color:#ffd977;font-weight:900;font-size:16px;line-height:1}
-.streak .t{font-size:var(--fs-1);color:var(--rail-dim);line-height:1.25;font-weight:600}
+.streak .fl{font-size:var(--fs-body)}
+.streak .n{color:#ffd977;font-weight:900;font-size:var(--fs-body);line-height:1}
+.streak .t{font-size:var(--fs-xs);color:var(--rail-dim);line-height:1.25;font-weight:600}
 
 .nav{padding:var(--s-3) var(--s-5) var(--s-9);flex:1}
-.nav-label{font-size:var(--fs-1);letter-spacing:.13em;text-transform:uppercase;color:var(--rail-dim);padding:var(--s-7) var(--s-4) var(--s-3);font-weight:800}
+.nav-label{font-size:var(--fs-xs);letter-spacing:.13em;text-transform:uppercase;color:var(--rail-dim);padding:var(--s-7) var(--s-4) var(--s-3);font-weight:800}
 .nav-item{
   display:flex;align-items:center;gap:10px;width:100%;text-align:left;
-  padding:var(--s-4) var(--s-5);border-radius:var(--r-lg);color:var(--rail-text);font-size:var(--fs-7);font-weight:600;
+  padding:var(--s-4) var(--s-5);border-radius:var(--r-lg);color:var(--rail-text);font-size:var(--fs-ui);font-weight:600;
   transition:transform var(--dur-2) ease,background var(--dur-2),color var(--dur-2);
 }
 .nav-item:hover{background:var(--rail-2);color:#fff;transform:translateX(3px)}
 .nav-item.on{background:var(--rail-3);color:#fff;font-weight:800;box-shadow:inset 3px 0 0 var(--gold)}
-.nav-item .ic{width:19px;text-align:center;flex-shrink:0;font-size:var(--fs-8)}
-.nav-item .cnt{margin-left:auto;font-size:var(--fs-2);color:var(--rail-dim);font-variant-numeric:tabular-nums;font-weight:700}
+.nav-item .ic{width:19px;text-align:center;flex-shrink:0;font-size:var(--fs-ui)}
+.nav-item .cnt{margin-left:auto;font-size:var(--fs-xs);color:var(--rail-dim);font-variant-numeric:tabular-nums;font-weight:700}
 .nav-item.on .cnt{color:var(--rail-text)}
 .badge-due{
-  margin-left:auto;background:var(--ent);color:#fff;font-size:var(--fs-1);font-weight:900;
+  margin-left:auto;background:var(--ent);color:#fff;font-size:var(--fs-xs);font-weight:900;
   padding:var(--s-1) var(--s-3);border-radius:var(--r-lg);min-width:20px;text-align:center;
   box-shadow:0 0 0 3px rgba(255,90,95,.2);
 }
@@ -68,24 +68,24 @@
 .search-wrap{position:relative;flex:1;max-width:440px}
 .search{
   width:100%;padding:var(--s-4) var(--s-6) var(--s-4) 35px;border:2px solid var(--line-2);border-radius:var(--r-lg);
-  background:var(--card);font-size:var(--fs-7);color:var(--tx);font-weight:600;transition:box-shadow var(--dur-3),border-color var(--dur-3);
+  background:var(--card);font-size:var(--fs-ui);color:var(--tx);font-weight:600;transition:box-shadow var(--dur-3),border-color var(--dur-3);
 }
 .search:focus{border-color:var(--neuro);box-shadow:var(--pop) rgba(125,88,144,.35);outline:none}
 .search::placeholder{color:var(--ink-4);font-weight:500}
 .keyin{
   width:100%;padding:var(--s-4) var(--s-6);border:2px solid var(--line-2);border-radius:var(--r-lg);
-  background:var(--card);font-size:var(--fs-7);color:var(--tx);font-weight:600;transition:box-shadow var(--dur-3),border-color var(--dur-3);
+  background:var(--card);font-size:var(--fs-ui);color:var(--tx);font-weight:600;transition:box-shadow var(--dur-3),border-color var(--dur-3);
 }
 .keyin:focus{border-color:var(--neuro);box-shadow:var(--pop) rgba(125,88,144,.35);outline:none}
 .keyin::placeholder{color:var(--ink-4);font-weight:500}
-.search-ic{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:var(--fs-8);pointer-events:none}
+.search-ic{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:var(--fs-ui);pointer-events:none}
 .results{
   position:absolute;top:calc(100% + 7px);left:0;right:0;background:var(--card);
   border:2px solid var(--line-2);border-radius:var(--r-lg);box-shadow:var(--pop-lg) var(--sh);
   max-height:380px;overflow-y:auto;z-index:40;display:none;
 }
 .results.show{display:block}
-.res-item{display:block;width:100%;padding:var(--s-5) var(--s-7);border:0;border-bottom:1.5px solid var(--line);border-radius:0;cursor:pointer;font-size:var(--fs-6);color:inherit;text-align:left;background:none}
+.res-item{display:block;width:100%;padding:var(--s-5) var(--s-7);border:0;border-bottom:1.5px solid var(--line);border-radius:0;cursor:pointer;font-size:var(--fs-md);color:inherit;text-align:left;background:none}
 .res-item:last-child{border-bottom:none}
 .res-item:hover{background:var(--bg-2)}
 /* A button inside a listbox needs a focus ring the cursor cannot miss — the
@@ -93,9 +93,9 @@
    ring is the only signal that the next Enter is going somewhere real. */
 .res-item:focus{outline:none;background:var(--bg-2);box-shadow:inset 3px 0 0 var(--neuro)}
 .res-item.res-more{font-weight:700;color:var(--ink-3)}
-.res-tag{display:block;font-size:var(--fs-1);text-transform:uppercase;letter-spacing:.08em;font-weight:900;margin-bottom:3px}
+.res-tag{display:block;font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:.08em;font-weight:900;margin-bottom:3px}
 .res-txt{display:block;color:var(--ink-2);line-height:1.45}
-.res-empty{padding:var(--s-8) var(--s-7);color:var(--ink-4);font-size:var(--fs-6)}
+.res-empty{padding:var(--s-8) var(--s-7);color:var(--ink-4);font-size:var(--fs-md)}
 
 .topbar-actions{margin-left:auto;display:flex;gap:7px;align-items:center}
 /* On a narrow phone the topbar's fixed furniture leaves the search box 121px
@@ -105,7 +105,7 @@
    cannot press anything the dialog lists; it is the only control here that is
    not merely cramped but meaningless. That returns 48px to the search. */
 @media(max-width:520px){ .kbd-btn{display:none} }
-.tb-btn{padding:var(--s-3) var(--s-6);border-radius:var(--r-lg);font-size:var(--fs-5);color:var(--ink-3);font-weight:700;transition:background var(--dur-2),transform var(--dur-2)}
+.tb-btn{padding:var(--s-3) var(--s-6);border-radius:var(--r-lg);font-size:var(--fs-md);color:var(--ink-3);font-weight:700;transition:background var(--dur-2),transform var(--dur-2)}
 .tb-btn:hover{background:var(--bg-2);color:var(--tx);transform:translateY(-1px)}
 /* Touch. The nav rows are 36px tall and the topbar buttons 33-36px, both under
    the 44px minimum. The nav is a vertical list, so it can simply grow. The
@@ -134,10 +134,10 @@
   border:1px solid var(--bad);border-radius:var(--r-lg);background:var(--bad-bg);
   display:flex;align-items:center;gap:16px;flex-wrap:wrap;
 }
-#saveWarning p, #dataWarning p{margin:0;flex:1;min-width:260px;font-size:var(--fs-8);line-height:1.55;color:var(--tx)}
+#saveWarning p, #dataWarning p{margin:0;flex:1;min-width:260px;font-size:var(--fs-ui);line-height:1.55;color:var(--tx)}
 #saveWarning strong, #dataWarning strong{color:var(--bad)}
 #saveWarning .btn, #dataWarning .btn{flex:none}
-#saveWarning .warnico, #dataWarning .warnico{flex:none;font-size:19px;font-weight:900;color:var(--bad)}
+#saveWarning .warnico, #dataWarning .warnico{flex:none;font-size:var(--fs-lg);font-weight:900;color:var(--bad)}
 .page{padding:var(--s-11);max-width:1180px;width:100%;margin:0 auto;flex:1}
 /* The dashboard is narrower than every other view, and deliberately so. Module
    cards are capped at two per row so the artwork is worth showing, which puts
@@ -155,12 +155,12 @@
 /* ---------- Type ---------- */
 /* Display type is carved, not set: Roman capitals, letter-spaced OUT rather than
    in. The old -.035em tracking is wrong for capitals — it jams them together. */
-h1{font-family:var(--font-display);font-size:29px;font-weight:700;letter-spacing:.02em;
+h1{font-family:var(--font-display);font-size:var(--fs-2xl);font-weight:700;letter-spacing:.02em;
    margin:0 0 5px;line-height:1.18;text-transform:uppercase}
-h2{font-size:18px;font-weight:800;letter-spacing:-.02em;margin:0 0 13px}
-.page-sub{color:var(--ink-3);font-size:var(--fs-8);margin:0 0 26px;font-weight:500;max-width:640px;line-height:1.55}
+h2{font-size:var(--fs-lg);font-weight:800;letter-spacing:-.02em;margin:0 0 13px}
+.page-sub{color:var(--ink-3);font-size:var(--fs-ui);margin:0 0 26px;font-weight:500;max-width:640px;line-height:1.55}
 .eyebrow{
-  display:inline-block;font-size:var(--fs-1);letter-spacing:.13em;text-transform:uppercase;font-weight:900;
+  display:inline-block;font-size:var(--fs-xs);letter-spacing:.13em;text-transform:uppercase;font-weight:900;
   padding:var(--s-2) var(--s-5);border-radius:var(--r-lg);background:var(--fill);color:#fff;margin-bottom:11px;
 }
 
@@ -184,21 +184,21 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 .mod-top{display:flex;align-items:center;gap:10px;margin-bottom:6px}
 .mod-ic{
   width:36px;height:36px;border-radius:var(--r-lg);background:var(--c);display:flex;align-items:center;
-  justify-content:center;font-size:18px;flex-shrink:0;box-shadow:0 5px 14px rgba(0,0,0,.2);
+  justify-content:center;font-size:var(--fs-lg);flex-shrink:0;box-shadow:0 5px 14px rgba(0,0,0,.2);
 }
-.mod-name{font-weight:700;font-size:17.5px;letter-spacing:.045em}
-.mod-meta{font-size:var(--fs-4);color:var(--ink-3);margin-bottom:13px;font-weight:600}
+.mod-name{font-weight:700;font-size:var(--fs-body);letter-spacing:.045em}
+.mod-meta{font-size:var(--fs-sm);color:var(--ink-3);margin-bottom:13px;font-weight:600}
 
 .ringrow{display:flex;align-items:center;gap:13px}
 .ring{width:52px;height:52px;flex-shrink:0;position:relative}
 .ring svg{transform:rotate(-90deg)}
 .ring .rv{
   position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-  font-size:var(--fs-5);font-weight:900;font-variant-numeric:tabular-nums;
+  font-size:var(--fs-md);font-weight:900;font-variant-numeric:tabular-nums;
 }
 .ringmeta{flex:1;min-width:0}
-.ringmeta .a{font-size:var(--fs-8);font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
-.ringmeta .b{font-size:var(--fs-3);color:var(--ink-3);font-weight:600}
+.ringmeta .a{font-size:var(--fs-ui);font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.ringmeta .b{font-size:var(--fs-sm);color:var(--ink-3);font-weight:600}
 /* Stands in for the ring on a subject nobody has opened. Height is matched to
    the ring's 52px so a card that has just earned its first answer changes what
    it says without changing what it measures. Colour is --tx, not the module's
@@ -206,7 +206,7 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
    says that is chosen by measurement rather than habit. */
 .mod-card .startrow{min-height:52px}
 .mod-card .startgo{
-  font-family:var(--font-display);font-size:var(--fs-7);font-weight:600;letter-spacing:.09em;
+  font-family:var(--font-display);font-size:var(--fs-ui);font-weight:600;letter-spacing:.09em;
   text-transform:uppercase;color:var(--tx);
 }
 
@@ -214,14 +214,14 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
   background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-lg);padding:var(--s-7);
   box-shadow:var(--pop) rgba(0,0,0,.16);position:relative;overflow:hidden;
 }
-.stat .n{font-size:31px;font-weight:900;letter-spacing:-.04em;font-variant-numeric:tabular-nums;line-height:1.05}
-.stat .l{font-size:var(--fs-3);color:var(--ink-3);margin-top:3px;font-weight:700}
-.stat .emo{position:absolute;right:11px;top:10px;font-size:19px;opacity:.3}
+.stat .n{font-size:var(--fs-2xl);font-weight:900;letter-spacing:-.04em;font-variant-numeric:tabular-nums;line-height:1.05}
+.stat .l{font-size:var(--fs-sm);color:var(--ink-3);margin-top:3px;font-weight:700}
+.stat .emo{position:absolute;right:11px;top:10px;font-size:var(--fs-lg);opacity:.3}
 
 /* ---------- Chapter rows ---------- */
 .grouphdr{
   display:flex;align-items:center;gap:10px;margin:24px 0 11px;
-  font-size:var(--fs-1);letter-spacing:.11em;text-transform:uppercase;font-weight:900;color:var(--ink-3);
+  font-size:var(--fs-xs);letter-spacing:.11em;text-transform:uppercase;font-weight:900;color:var(--ink-3);
 }
 .grouphdr::after{content:"";flex:1;height:2.5px;background:var(--line);border-radius:var(--r-md)}
 .ch-row{
@@ -233,11 +233,11 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 .ch-row:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.2)}
 .ch-row:disabled{opacity:.45;cursor:default;box-shadow:none;border-style:dashed}
 .ch-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;border:2px solid var(--line-2)}
-.ch-name{flex:1;font-size:var(--fs-8);font-weight:700}
-.ch-count{font-size:var(--fs-3);color:var(--ink-4);font-variant-numeric:tabular-nums;font-weight:700}
-.ch-acc{font-size:var(--fs-4);font-weight:900;font-variant-numeric:tabular-nums;min-width:40px;text-align:right}
+.ch-name{flex:1;font-size:var(--fs-ui);font-weight:700}
+.ch-count{font-size:var(--fs-sm);color:var(--ink-4);font-variant-numeric:tabular-nums;font-weight:700}
+.ch-acc{font-size:var(--fs-sm);font-weight:900;font-variant-numeric:tabular-nums;min-width:40px;text-align:right}
 /* On the weakest-chapters page the rows come from four different modules, so
    each name has to say which one it belongs to. */
-.wk-mod{display:block;font-size:var(--fs-2);font-weight:700;color:var(--ink-4);
+.wk-mod{display:block;font-size:var(--fs-xs);font-weight:700;color:var(--ink-4);
   letter-spacing:.05em;text-transform:uppercase;margin-top:2px}
 
