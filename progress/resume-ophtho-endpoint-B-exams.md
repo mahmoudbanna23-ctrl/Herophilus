@@ -212,3 +212,29 @@ covered, entry count from disk (not from a draft header), collisions logged, any
 - OTHER OWED, not yet handled: s22 n8 matches two identical live entries `ophep-optics-refraction-3` and `ophep-orbit-1` (within-bank fold); part-1 duplicates `ophep-retina-12` = `ophep-ocular-systemic-diseases-17`, and `ophep-orbit-10` / `-12` / `ophep-optics-refraction-11`; live `ophep-conjunctiva-3` option d "Adenovirus 44 g" vs plain "Adenovirus" on p.1475 (check its own source page); s22 pages 1443 (n26), 1497 (n53), 1505 (n57), 1517 (n63) print figures the live entries carry no image for; live `ophep-neuro-ophthalmology-19` option B prints Anterior, Exam 3 reprint prints Arteritic (note only); `ophep-vitreous-8` lacks a fifth option printed in s25 n13 (note only). Typos in the source are transcribed silently (standing rule).
 - STEP 4 untouched: pagecov (`--part 2`), hole load of all ophtho arrays, `val-oph-ep.js`, boot-check (expect 4049 / 81 / 156, 0 errors), recount from disk, MEMORY.md closure (non-growing, file at 21,942 of 22,528 B), ledger. 13 local commits unpushed plus c0fa1b4; ask before any push.
 - Live at handoff (2026-09-21 09:05): 8 shard processes plus the extras process (started about 09:00, roughly 60 min to finish, 106 of 519 verdicts done) and the Codex merge-script job (started 09:01, 900 s cap) were still running detached. Before re-launching any shard, check `Get-CimInstance Win32_Process | ? CommandLine -match 'oph-pairs-verdict'` and count the rows in each `pairs-verdict.shard<i>.json`; two writers on one shard file would corrupt it. A shard is finished when its row count equals its slice of `pairs.json` (pair index mod 8 equals i).
+
+
+---
+
+## part 5 - CLOSE-OUT DONE 2026-09-21 (ophthalmology endpoint CLOSED)
+
+Checklist part 4 is finished. Ledger entry: `progress\ledger.md` §22. State: `questions.ophtho.js` 1,273 + `questions.ophtho.ep.js` 439 + `questions.ophtho.ep2.js` 148 = 1,860 ophtho entries, 0 holes, 0 duplicate ids, boot 4049 / 81 / 156 with 0 console errors.
+
+**What ran, in order.**
+1. House / Grade Gain `alsoIn` merges. Candidates listed by script, rulings written to `content\ophtho\qb-pages\_close-work\merge-decisions.json` (320 survivors, 325 twins), applied by `tools\bank-harness\oph-house-merge.js`. Convention: the endpoint entry survives with `alsoIn`; the twin is deleted; its citation is appended to the survivor's `source` as "; also printed in <House|Grade Gain> bank, <citation>"; references to the twin id are repointed. Independent verifier against `HEAD`: 320 of 320 pass. The first `--write` had an unbounded id-prefix replacement (122 ids corrupted, 8 sparse holes); fixed in the script and re-run on clean copies before touching `app\data`.
+2. Reprint citations for the s24/s25/s26 folds and `ophep-squint-10`: commit `c0fa1b4`.
+3. Carries: n65 2305 vs 2304 was whitespace only (no edit); `ophep-orbit-11` explanation notes Exam 5's fifth option "CT axial section"; `ophep-eyelids-6` explanation notes Exam 5's fuller vignette and its "Dry eye disease" fourth option (p.369 not re-read). No key moved.
+4. Coverage: `node tools\bank-harness\pagecov-oph.js --part 2 --cites-pdf`. **Two findings.** (a) Part 2 has no OCR index; `tools\bank-harness\oph-p2-index.js` derives `content\ophtho\qb-pages\ocr\ep\index.part2.json` from the six s22-27 staging files, with PDF 2330-2442 written `answered:true, kind:'unstaged'` so the skipped s28 shows up as an explicit deferral. (b) Endpoint part-2 `source` strings cite PDF pages, not printed pages, so the run needs `--cites-pdf` (flip = Infinity); a plain `--flip 2151` throws "printed p.2151 does not exist". Result: no answered page in 1391-2329 is uncited; only 2330-2442 (s28) is. The 461 cited-but-unanswered pages are each question's unmarked companion page, an artefact, not a defect. Three pages (1451, 1475, 1487) initially had no citation: s22 q30, q42 and q48 were exact duplicates of live survivors that `s22.folds.json` had missed; Model Exam 1 reprint cites were added by hand to `ophep-optics-refraction-1`, `ophep-conjunctiva-3` and `ophep-uveal-tract-3`.
+
+**Not checked.** `val-oph-ep.js` validates drafts, not the live arrays, so it was not applicable here. `pagecov --part 1` was not re-scored after the merge. The part-2 index is derived from staging, not OCR, so its "answered" flag is only as good as the staged page types.
+
+**Still owed, none blocking** (each is a separate live entry; nothing was merged on a guess):
+- A. s22 n8 duplicate `ophep-optics-refraction-3` / `ophep-orbit-1`.
+- B. `ophep-conjunctiva-3` option d reads "Adenovirus 44 g" (an OCR-era artefact).
+- C. Figures for s22 pages 1443, 1497, 1505, 1517.
+- D. `ophep-retina-12` = `ophep-ocular-systemic-diseases-17`; `ophep-orbit-10` / `-12` / `ophep-optics-refraction-11`.
+- E. `ophep-neuro-ophthalmology-19` option B, Anterior vs Arteritic.
+- F. `ophep-vitreous-8` lacks a fifth option.
+- Other within-endpoint duplicates: `ophep-conjunctiva-17`/`-26`, `ophep-glaucoma-13`/`-20`, `ophep-malignancies-eye-adnexa-2`/`-10` and `-3`/`-7`, `ophep-lacrimal-system-7`/`ophep-orbit-8`, `ophep2-model-exam-4-49`/`ophep-ocular-trauma-16`. Summer rows 10, 36 and 47 were deliberately left unmerged.
+
+**Consequence to know.** The 325 deleted House/Grade Gain ids orphan any local progress stored against them, as in ENT. **Push:** the local commits are unpushed; owner decides.

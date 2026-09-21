@@ -1178,3 +1178,16 @@ s10-12 next, s13 deferred, s14-28 unstaged. Close-out: `progress\resume-ophtho-e
 ## Pruned from MEMORY.md - 2026-09-20
 
 - **APP RE-PLAN 2026-09-17 (design + code review + refactor + features): `progress\PLAN-app-replan-2026-09-17.md`** — B10 code review DONE 2026-09-17, bugs + refuter verdicts in `progress\app-replan\bugs.md`; sign-in fix (bug 1) COMMITTED 542c7e4, LIVE ONLY AFTER owner adds the OAuth redirect URI then redeploys (see commit msg); B0 pictures wait for Codex; B11 DONE 2026-09-19 (6 bugs fixed + refuter pass, commit in git log; c6-1 refuted, c2-1 left); Pro Max skill installed project-level, its design-system generator REJECTED (progress/app-replan/design-refs.md); next B0 pictures when Codex returns, then B1; nothing else in `app\` touched yet; Codex out of quota until 2026-09-20 18:21.
+
+
+## Pruned from MEMORY.md - 2026-09-21
+
+Replaced by the OPHTHO ENDPOINT CLOSED stanza in the "Resume here" block. Removed text, verbatim:
+
+Printed page = PDF **+1** from PDF 2151 on (pinned 2026-09-21). ✅ **GATE 0 CLOSED 2026-09-08**,
+OPH-B unblocked. **439 live, s1-21 ALL done** (✅ **s14 Neuro-ophthalmology CLOSED 2026-09-19,
+313->338, `264bc74`**, n18 folded into `ophep-squint-10`; s12 `857e08c` chapter `op-vitreous`, chapters 154,
+boot-check 4049/81; s17 `4795291`). **REGROUPED 2026-09-19 `25ab5b7`: 19 book-order groups, ids unchanged, plan `PLAN-ophtho-book-groups-2026-09-19.md`.** **s13 Retina CLOSED 2026-09-20 (40 q, 377->417, n16 folded, boot 4049/81/154; s18/s19/s21 chat B); chapters split by topic, then House; s18/s19 audited, fixed 2026-09-20.
+s16 Pediatric CLOSED 2026-09-20 (11 q, 5 folds, 417->428, chapters 156, `op-peds` + `op-drugs` added); s20 Drugs CLOSED 2026-09-20 (11 q, 4 folds, 428->439); Half A DONE. HALF B (PDF 1391-2442, s22-28): s22-27 CLOSED 2026-09-21 (148 live in ep2, `fb297a3`), flip PINNED 2151, s28 SKIPPED (owner); resume: resume-ophtho-endpoint-B-exams.md last block = CLOSE-OUT checklist.** End of stream owes House `alsoIn` merges (`qb-pages\*house-collisions.md`) + `ophep-squint-10`
+reprint citation. Detail: `progress\resume-ophtho-endpoint-A-chapters.md` tail (s14 entry) + archive
+`## Pruned from MEMORY.md - 2026-09-17`; parallel-run history: archive, `2026-09-16 (part 2)`.

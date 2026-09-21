@@ -1,0 +1,322 @@
+[
+  {
+    "ep": "ophep2-summer-exam-1",
+    "house": "opmcq-c1-56",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-2",
+    "house": "opmcq-c16-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Minor wording variation; both target same age range for amblyopia treatment efficacy.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-5",
+    "house": "opmcq-c1-55",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-8",
+    "house": "opmcq-c17-1",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-8",
+    "house": "opqb-t19-790",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-9",
+    "house": "opmcq-c1-54",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-10",
+    "house": "opmcq-c4-3",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A recommends massage only; B recommends massage with probing if no response after age 1",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-12",
+    "house": "opqb-t4-154",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Answer content differs (topical antibiotics vs warm compress)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-14",
+    "house": "opmcq-c3-27",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-17",
+    "house": "opmcq-c18-26",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Correct option numbers differ (1 vs 3)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-19",
+    "house": "opmcq-c5-32",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-24",
+    "house": "opmcq-c10-26",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Stem wording and option phrasing differ but content same.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-25",
+    "house": "opmcq-c10-1",
+    "same_question": true,
+    "same_key": false,
+    "difference": "B adds pupil size and intraocular pressure details",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-27",
+    "house": "opmcq-c1-8",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-32",
+    "house": "opmcq-c2-32",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-34",
+    "house": "opmcq-c9-28",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-35",
+    "house": "opmcq-c1-9",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Correct answer positioned differently (1 vs 3)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-36",
+    "house": "opmcq-c4-18",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-38",
+    "house": "opmcq-c1-7",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option ordering and distractor choices differ",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-38",
+    "house": "opqb-t14-588",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-39",
+    "house": "opmcq-c1-6",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option order and distractor choices differ",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-40",
+    "house": "opmcq-c14-2",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B adds chest X‑ray detail and phrases answer as Horner syndrome due to Pancoast tumor",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-41",
+    "house": "opmcq-c14-29",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-42",
+    "house": "opmcq-c14-28",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Correct answer placed in different option position (option 1 vs option 2).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-44",
+    "house": "opmcq-c5-2",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-45",
+    "house": "opmcq-c8-27",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-46",
+    "house": "opmcq-c8-26b",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-47",
+    "house": "opmcq-c19-14",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-52",
+    "house": "opqb-t11-460",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-56",
+    "house": "opmcq-c19-35",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-58",
+    "house": "opmcq-c13-2",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Correct answer positioned differently (option 1 in A vs option 3 in B).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-60",
+    "house": "opmcq-c19-34",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-62",
+    "house": "opmcq-c19-1",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Correct answer positioned differently (option 1 vs option 2)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-65",
+    "house": "opmcq-c16-1",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-67",
+    "house": "opmcq-c13-1",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-15",
+    "house": "opmcq-c12-9",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-16",
+    "house": "opmcq-c19-42",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-18",
+    "house": "opmcq-c4-29",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-22",
+    "house": "opmcq-c11-26",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-26",
+    "house": "opqb-t10-427",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  }
+]

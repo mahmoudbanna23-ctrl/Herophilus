@@ -1,0 +1,3370 @@
+[
+  {
+    "ep": "ophep-conjunctiva-11",
+    "house": "opmcq-c8-26b",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Stem differs: vignette versus definition description",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-13",
+    "house": "opmcq-c6-22",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-14",
+    "house": "opmcq-c6-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-15",
+    "house": "opmcq-c6-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-19",
+    "house": "opmcq-c6-23",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks about TT (trichiasis); B asks about TS (scarring).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-23",
+    "house": "opmcq-c6-4",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different focus: overall cause vs viral subtype; answers differ",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-32",
+    "house": "opqb-t27-3",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-5",
+    "house": "opqb-t6-246",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-12",
+    "house": "opmcq-c8-8",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 1 spelling differs (Flourescine vs Fluorescein)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-2",
+    "house": "opqb-t8-325",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 2 typo: \"Munson's\" in A vs \"Manson’s\" in B",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-27",
+    "house": "opqb-t27-8",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-drugs-eye-15",
+    "house": "opmcq-c20-14",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-12",
+    "house": "opmcq-c4-2",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-2",
+    "house": "opqb-t22-12",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical scenario and investigation: visual field testing vs retinal detachment assessment.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-26",
+    "house": "opmcq-c1-29",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-4",
+    "house": "opmcq-c1-2",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-11",
+    "house": "opmcq-c5-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-17",
+    "house": "opmcq-c5-19",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-20",
+    "house": "opmcq-c5-11",
+    "same_question": false,
+    "same_key": true,
+    "difference": "A asks for a complication; B asks for the exception (non‑complication)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-6",
+    "house": "opqb-t1-48",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different ocular condition and answer (acute dacryoadenitis vs retinal detachment)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-15",
+    "house": "opmcq-c11-7",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes an extra 'None of the above' option.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-7",
+    "house": "opmcq-c11-6",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Correct answer located at different option positions",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-12",
+    "house": "opqb-t4-143",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A recommends massage then probing later; B recommends massage with antibiotics as first line.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-5",
+    "house": "opmcq-c4-18",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-7",
+    "house": "opqb-t4-155",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different scenario: one asks imaging management, the other asks most common infectious cause.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-14",
+    "house": "opqb-t1-70",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-22",
+    "house": "opqb-t27-14",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-1",
+    "house": "opmcq-c16-24",
+    "same_question": true,
+    "same_key": true,
+    "difference": "A adds esotropia, pain, proptosis; B mentions only leukocoria/white reflex",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-6",
+    "house": "opmcq-c17-8",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-10",
+    "house": "opmcq-c19-34",
+    "same_question": false,
+    "same_key": false,
+    "difference": "different required investigation (ESR vs temporal artery biopsy)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-21",
+    "house": "opqb-t27-18",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical focus: diagnosis test vs drug contraindication",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-5",
+    "house": "opqb-t14-599",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Lesion side differs (left vs right) leading to opposite answer",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-16",
+    "house": "opmcq-c19-16",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-23",
+    "house": "opmcq-c19-22",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-24",
+    "house": "opmcq-c8-27",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical topics and answer choices",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-13",
+    "house": "opmcq-c18-27",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Correct answer appears as option 3 in A and option 2 in B",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-20",
+    "house": "opqb-t27-27",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-15",
+    "house": "opmcq-c2-6",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-22",
+    "house": "opmcq-c2-2",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-11",
+    "house": "opmcq-c18-17",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different imaging focus: orbital fracture assessment vs contraindication for metallic intraocular foreign body.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-15",
+    "house": "opmcq-c3-9",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-2",
+    "house": "opmcq-c19-1",
+    "same_question": false,
+    "same_key": true,
+    "difference": "Q A tests cause prevalence; Q B tests clinical diagnosis of thyroid eye disease.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-6",
+    "house": "opmcq-c3-24",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 4 wording differs: \"Normal ocular mobility\" vs \"Normal ocular motility\"",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-9",
+    "house": "opmcq-c3-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Age (26 vs 15) and mention of CT imaging.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-12",
+    "house": "opmcq-c19-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-24",
+    "house": "opqb-t27-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-37",
+    "house": "opmcq-c19-14",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different conditions: vitreous hemorrhage vs diabetic macular edema treatment.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-37",
+    "house": "opqb-t11-460",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different disease focus and answer (vitreous hemorrhage vs goniotomy).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-10",
+    "house": "opmcq-c7-20",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A answers general scleritis; B answers necrotizing scleritis (specific subtype)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-13",
+    "house": "opmcq-c6-6",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different disease topics and false statements (episcleritis pain vs pingueculum sunlight exposure)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-4",
+    "house": "opmcq-c7-13",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-squint-10",
+    "house": "opmcq-c14-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra \"None of the above\" option.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-10",
+    "house": "opmcq-c15-11",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different topics: sarcoidosis vs heterophoria; different correct answers.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-17",
+    "house": "opmcq-c10-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "A asks for false statement, B asks for true statement",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-4",
+    "house": "opmcq-c10-8",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-9",
+    "house": "opmcq-c11-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "different distractor options",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-vitreous-7",
+    "house": "opmcq-c12-16",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra \"None of the above\" option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-3-64",
+    "house": "opmcq-c16-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-4-32",
+    "house": "opmcq-c9-25",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 3 differs: posterior subcapsular cataract vs nuclear cataract",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-4-59",
+    "house": "opmcq-c1-34",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-5-14",
+    "house": "opqb-t4-148",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 2 wording opposite (common canalicular obstruction vs no obstruction)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-5-45",
+    "house": "opqb-t6-232",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-5-66",
+    "house": "opmcq-c1-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-19",
+    "house": "opmcq-c6-8",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 3 wording differs (\"Early\" vs \"Easily\" visible fibrous white tarsal bands)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-24",
+    "house": "opmcq-c6-27",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-33",
+    "house": "opqb-t27-4",
+    "same_question": false,
+    "same_key": true,
+    "difference": "A says no conjunctival injection; B says with injection",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-7",
+    "house": "opmcq-c7-4",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical topics: viral conjunctivitis treatment vs episcleritis vs scleritis differentiation.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-13",
+    "house": "opmcq-c20-19",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-20",
+    "house": "opmcq-c8-12",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-28",
+    "house": "opqb-t8-338",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Option order differs, changing the position of the correct answer",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-drugs-eye-3",
+    "house": "opmcq-c7-4",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical focus: conjunctivitis treatment vs differentiating episcleritis from scleritis.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-13",
+    "house": "opmcq-c1-53",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-20",
+    "house": "opmcq-c1-16",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-28",
+    "house": "opmcq-c1-23",
+    "same_question": false,
+    "same_key": false,
+    "difference": "One asks about vergence, the other about version",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-5",
+    "house": "opmcq-c1-36",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-12",
+    "house": "opmcq-c5-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 4 typo in A ('blepharitisve') vs B ('blepharitis')",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-17",
+    "house": "opmcq-c6-6",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different ocular condition tested (epicanthus vs pingueculum)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-20",
+    "house": "opmcq-c5-30",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-6",
+    "house": "opqb-t4-155",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks for diagnosis; B asks for most common infectious cause",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-16",
+    "house": "opmcq-c11-12",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-8",
+    "house": "opmcq-c11-24",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option lists differ",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-12",
+    "house": "opqb-t4-163",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A recommends massage then later probing; B adds antibiotics to massage.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-6",
+    "house": "opmcq-c4-3",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Stem uses mucus vs purulent discharge; correct answer differs (immediate probing vs massage then delayed probing).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-8",
+    "house": "opmcq-c4-13",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-15",
+    "house": "opmcq-c9-8",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-23",
+    "house": "opqb-t27-15",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Minor wording differences in stem and option phrasing (colour vs color, OCT description).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-10",
+    "house": "opmcq-c17-3",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-7",
+    "house": "opmcq-c16-19",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different age groups (adult vs pediatric) resulting in different correct malignancy",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-10",
+    "house": "opmcq-c19-8",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different confirmatory test (ESR vs biopsy)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-22",
+    "house": "opqb-t27-22",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-6",
+    "house": "opmcq-c4-29",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical topics and answers",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-17",
+    "house": "opmcq-c19-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-24",
+    "house": "opmcq-c19-14",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-24",
+    "house": "opqb-t11-460",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different disease (diabetic macular edema vs congenital glaucoma) and treatment (anti-VEGF vs goniotomy)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-13",
+    "house": "opmcq-c18-9",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B adds a \"None of the above\" option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-8",
+    "house": "opmcq-c18-2",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option wording differs (laser therapy vs eye patching) and order",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-16",
+    "house": "opmcq-c2-11",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-23",
+    "house": "opmcq-c2-15",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-11",
+    "house": "opmcq-c3-11",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra option (CT axial section).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-16",
+    "house": "opmcq-c2-13",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical focus: exophthalmos cause versus amblyopia cause.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-2",
+    "house": "opqb-t27-24",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different stems: cause prevalence vs specific diagnostic scenario",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-6",
+    "house": "opqb-t3-134",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Answers differ (normal ocular mobility vs proptosis)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-pediatric-ophthalmology-1",
+    "house": "opmcq-c4-24",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different disease (amblyopia vs epiphora) and answer choices",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-13",
+    "house": "opmcq-c13-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-24",
+    "house": "opqb-t27-11",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks for diagnosis; B asks for management of the condition.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-37",
+    "house": "opmcq-c19-35",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different conditions: vitreous hemorrhage vs secondary optic atrophy",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-37",
+    "house": "opqb-t13-549",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Wording of stem and distractor options differs",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-11",
+    "house": "opmcq-c7-4",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-13",
+    "house": "opmcq-c7-16",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different false statements; correct answers differ",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-5",
+    "house": "opmcq-c7-2",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-squint-11",
+    "house": "opmcq-c14-7",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes extra \"None of the above\" option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-10",
+    "house": "opmcq-c2-21",
+    "same_question": false,
+    "same_key": false,
+    "difference": "One tests sarcoidosis pathology; the other tests presbyopia accommodation.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-18",
+    "house": "opmcq-c10-24",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-5",
+    "house": "opmcq-c10-22",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-vitreous-10",
+    "house": "opmcq-c12-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-vitreous-8",
+    "house": "opmcq-c12-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-3-70",
+    "house": "opmcq-c13-11",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-4-32",
+    "house": "opqb-t1-70",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks for phenomenon name; B asks for cause (nuclear cataract)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-4-68",
+    "house": "opmcq-c10-12",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-5-15",
+    "house": "opqb-t14-598",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-5-47",
+    "house": "opqb-t11-452",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option wording differs (congenital glaucoma vs buphthalmos)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-5-67",
+    "house": "opmcq-c1-22",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-20",
+    "house": "opmcq-c6-14",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-25",
+    "house": "opmcq-c6-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-34",
+    "house": "opqb-t27-1",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-7",
+    "house": "opqb-t7-291",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks treatment for viral conjunctivitis; B asks phenylephrine blanching effect in conjunctivitis",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-14",
+    "house": "opmcq-c18-24",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-21",
+    "house": "opmcq-c8-14",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-6",
+    "house": "opmcq-c8-18",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-drugs-eye-3",
+    "house": "opqb-t7-291",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Answers differ: one seeks treatment (vasoconstrictor), the other identifies condition showing blanching (conjunctivitis).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-14",
+    "house": "opmcq-c1-12",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-21",
+    "house": "opmcq-c1-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Minor typo in ratio wording; extra filler option in B",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-28",
+    "house": "opmcq-c1-43",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-8",
+    "house": "opmcq-c1-39",
+    "same_question": true,
+    "same_key": false,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-13",
+    "house": "opmcq-c5-7",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-17",
+    "house": "opmcq-c7-16",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different condition: epicanthus versus episcleritis",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-21",
+    "house": "opmcq-c5-29",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-8",
+    "house": "opmcq-c5-18",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-17",
+    "house": "opmcq-c11-23",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-9",
+    "house": "opqb-t26-30",
+    "same_question": true,
+    "same_key": true,
+    "difference": "A includes patient age, IOP and disc cupping; B only mentions visual field defect.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-13",
+    "house": "opmcq-c4-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Minor wording changes in option 3 and typo in option 1.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-6",
+    "house": "opmcq-c4-4",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-9",
+    "house": "opmcq-c4-15",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-16",
+    "house": "opmcq-c9-14",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra 'None of the above' option.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-24",
+    "house": "opqb-t27-16",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-11",
+    "house": "opmcq-c17-16",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-7",
+    "house": "opmcq-c17-14",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-12",
+    "house": "opmcq-c14-19",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option order and distractor choices differ",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-23",
+    "house": "opqb-t27-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-6",
+    "house": "opmcq-c4-5",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different conditions and clinical scenarios; one asks about Marcus Gunn pupil, the other eyelid inflammation management.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-18",
+    "house": "opmcq-c19-7",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes an extra \"None of the above\" option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-24",
+    "house": "opmcq-c19-35",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different disease and answer: diabetic macular edema treatment vs secondary optic atrophy diagnosis",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-24",
+    "house": "opqb-t19-775",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different disease and answer: diabetic macular edema treatment vs hypertensive retinopathy grade.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-14",
+    "house": "opmcq-c18-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-10",
+    "house": "opmcq-c2-5",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical fact tested and different correct answer",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-17",
+    "house": "opmcq-c2-31",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes an extra 'All of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-24",
+    "house": "opmcq-c2-18",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-12",
+    "house": "opmcq-c3-4",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-16",
+    "house": "opmcq-c3-16",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-2",
+    "house": "opqb-t3-117",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-8",
+    "house": "opmcq-c4-29",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks best next step (CT); B asks possible complication (abscess)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-pediatric-ophthalmology-11",
+    "house": "opmcq-c16-7",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-14",
+    "house": "opmcq-c13-12",
+    "same_question": true,
+    "same_key": true,
+    "difference": "A misspells CRVO as CVRO and lacks the extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-20",
+    "house": "opmcq-c6-9",
+    "same_question": false,
+    "same_key": false,
+    "difference": "One asks about cicatricial trachoma, the other about active trachoma; different correct answers.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-26",
+    "house": "opmcq-c6-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-35",
+    "house": "opqb-t27-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-10",
+    "house": "opmcq-c4-29",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different disease and complication: corneal ulcer perforation versus dacryoadenitis abscess",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-15",
+    "house": "opmcq-c18-15",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-22",
+    "house": "opmcq-c8-2",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-9",
+    "house": "opmcq-c8-24",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option lists differ; B includes different distractors like Inverse Darier's sign and None of the above.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-drugs-eye-6",
+    "house": "opmcq-c20-20",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Minor wording and option order differences",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-15",
+    "house": "opmcq-c1-13",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-22",
+    "house": "opmcq-c1-18",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-29",
+    "house": "opmcq-c1-48",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes extra \"None of the above\" option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-8",
+    "house": "opqb-t22-12",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A assesses visual field via light projection; B assesses retina via ultrasound.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-14",
+    "house": "opmcq-c5-15",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option list differs (OM vs DM)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-17",
+    "house": "opmcq-c7-19",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different anatomy: epicanthus versus sclera",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-24",
+    "house": "opqb-t5-218",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-9",
+    "house": "opmcq-c8-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-17",
+    "house": "opqb-t20-796",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-1",
+    "house": "opmcq-c4-25",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option wording differs; B includes an 'All of the above' choice.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-14",
+    "house": "opmcq-c4-22",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-6",
+    "house": "opqb-t4-143",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A: immediate probing; B: massage with antibiotics as first line.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-9",
+    "house": "opmcq-c4-6",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different diseases and presentations: chronic dacryocystitis vs acute dacryoadenitis.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-16",
+    "house": "opmcq-c9-15",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A tests intumescent capsule → Phacomorphic; B tests wrinkled capsule → Phacolytic.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-26",
+    "house": "opqb-t9-388",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Minor wording changes; refraction signs omitted in B",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-12",
+    "house": "opmcq-c17-12",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra \"None of the above\" option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-7",
+    "house": "opmcq-c17-15",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A targets primary intraocular cancer; B answers secondary metastases",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-16",
+    "house": "opmcq-c14-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-24",
+    "house": "opqb-t27-23",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-6",
+    "house": "opqb-t1-48",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different condition tested and different correct answer",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-19",
+    "house": "opmcq-c19-12",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-24",
+    "house": "opmcq-c19-37",
+    "same_question": false,
+    "same_key": false,
+    "difference": "One asks treatment for macular edema; other asks iris neovascularization in proliferative retinopathy.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-25",
+    "house": "opmcq-c19-30",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-14",
+    "house": "opmcq-c18-9",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks source of bleeding; B asks diagnosis (traumatic hyphema)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-10",
+    "house": "opqb-t21-17",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks cause of myopic shift (hyperglycemia); B asks association of congenital glaucoma (myopia).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-18",
+    "house": "opmcq-c2-13",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Spelling error in option 3 ('ambylopia' vs 'amblyopia').",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-25",
+    "house": "opqb-t28-48",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Correct answer differs: pseudophakia vs hyperopia with presbyopia",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-13",
+    "house": "opmcq-c3-3",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-16",
+    "house": "opmcq-c3-20",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different patient age group (children vs adults) and different correct answer.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-20",
+    "house": "opmcq-c3-15",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-8",
+    "house": "opmcq-c4-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-pediatric-ophthalmology-12",
+    "house": "opmcq-c16-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Q B adds a \"None of the above\" option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-15",
+    "house": "opmcq-c13-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-25",
+    "house": "opqb-t27-11",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B references previous question instead of full vignette",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-37",
+    "house": "opmcq-c5-2",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different topics: vitreous hemorrhage vs trichiasis",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-37",
+    "house": "opqb-t19-775",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different conditions: diabetic vitreous hemorrhage vs hypertensive retinopathy grading",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-12",
+    "house": "opmcq-c7-25",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-13",
+    "house": "opmcq-c7-6",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-7",
+    "house": "opmcq-c7-11",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-squint-4",
+    "house": "opmcq-c15-15",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-11",
+    "house": "opmcq-c2-5",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different conditions: Horner's syndrome vs hyperopia.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-20",
+    "house": "opmcq-c10-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-5",
+    "house": "opqb-t10-428",
+    "same_question": false,
+    "same_key": false,
+    "difference": "One asks disease association, the other asks early ocular sign of uveitis",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-vitreous-4",
+    "house": "opmcq-c12-7",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-1-27",
+    "house": "opqb-t4-154",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-3-77",
+    "house": "opqb-t26-4",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Stem phrasing differs; Q B omits case description",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-4-45",
+    "house": "opmcq-c1-22",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different topics: cause of retinal vein occlusion vs cause of vision impairment",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-16",
+    "house": "opmcq-c6-7",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-21",
+    "house": "opmcq-c6-16",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-27",
+    "house": "opmcq-c6-12",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-36",
+    "house": "opqb-t6-270",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-10",
+    "house": "opmcq-c4-5",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical scenario and answer; corneal ulcer risk vs orbital CT for eyelid inflammation.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-16",
+    "house": "opmcq-c10-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-23",
+    "house": "opmcq-c8-20",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-drugs-eye-11",
+    "house": "opmcq-c20-16",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-drugs-eye-7",
+    "house": "opmcq-c20-13",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-16",
+    "house": "opmcq-c1-15",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-23",
+    "house": "opmcq-c1-30",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-30",
+    "house": "opmcq-c1-51",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-1",
+    "house": "opqb-t14-600",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different condition: ectropion vs bitemporal hemianopia; different correct answers.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-16",
+    "house": "opmcq-c5-14",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-17",
+    "house": "opmcq-c7-6",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different condition (epicanthus vs episcleritis) and different correct answer",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-28",
+    "house": "opqb-t5-220",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-12",
+    "house": "opmcq-c11-4",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-2",
+    "house": "opqb-t11-452",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks treatment; B asks diagnosis of congenital glaucoma.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-10",
+    "house": "opmcq-c4-16",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-15",
+    "house": "opmcq-c4-28",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-6",
+    "house": "opqb-t4-163",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different recommended primary treatment (probing vs antibiotics+massage)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-11",
+    "house": "opmcq-c9-20",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-17",
+    "house": "opmcq-c9-14",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks about wrinkled capsule (phacolytic), B about intumescent capsule (phacomorphic)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-27",
+    "house": "opqb-t6-225",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-2",
+    "house": "opmcq-c17-3",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-8",
+    "house": "opmcq-c16-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-17",
+    "house": "opmcq-c14-9",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B adds a \"None of the above\" option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-25",
+    "house": "opmcq-c19-1",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Q A mentions pupil dilation; Q B mentions lid lag. Otherwise same.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-6",
+    "house": "opqb-t4-155",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical focus: afferent pupillary defect vs infectious cause of orbital inflammation",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-20",
+    "house": "opmcq-c19-4",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-24",
+    "house": "opmcq-c5-2",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical topics: diabetic macular edema treatment vs eyelash misdirection condition.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-5",
+    "house": "opmcq-c19-19",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-15",
+    "house": "opmcq-c18-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-11",
+    "house": "opmcq-c3-4",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-18",
+    "house": "opmcq-c3-16",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different condition and answer: amblyopia vs exophthalmos, answers anisometropia vs orbital cellulitis.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-6",
+    "house": "opqb-t2-80",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-13",
+    "house": "opmcq-c3-9",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Stem wording differs (pulsating vs progressively‑expanding) and correct answer differs (CCF vs retrobulbar hemorrhage)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-16",
+    "house": "opqb-t3-135",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-21",
+    "house": "opmcq-c3-2",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-8",
+    "house": "opqb-t1-48",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different ocular condition: eyelid imaging vs grey reflex indicating retinal detachment",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-pediatric-ophthalmology-14",
+    "house": "opmcq-c16-3",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-17",
+    "house": "opmcq-c13-25",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-17",
+    "house": "opmcq-c6-1",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different drugs: tacrolimus vs mast cell stabilizer; focus on resistant treatment vs prophylaxis.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-22",
+    "house": "opmcq-c6-19",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-28",
+    "house": "opmcq-c6-18",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-37",
+    "house": "opqb-t6-278",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-10",
+    "house": "opqb-t1-48",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different scenario and answer; A concerns ulcer complication, B concerns grey reflex cause.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-16",
+    "house": "opmcq-c11-5",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different topics: iridocyclitis complication vs aqueous humor drainage proportion",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-24",
+    "house": "opmcq-c8-22",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-drugs-eye-12",
+    "house": "opmcq-c20-7",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra \"None of the above\" option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-drugs-eye-9",
+    "house": "opmcq-c20-11",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-17",
+    "house": "opmcq-c1-14",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-24",
+    "house": "opmcq-c1-31",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra \"None of the above\" option.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-31",
+    "house": "opmcq-c1-40",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-1",
+    "house": "opqb-t15-645",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different conditions: ectropion vs monocular diplopia, different correct answers.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-17",
+    "house": "opmcq-c1-52",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical topic and false statement; epicanthus vs conjunctivitis.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-18",
+    "house": "opmcq-c5-3",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Stem typo: \"redenss\" in A vs \"redness\" in B",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-6",
+    "house": "opmcq-c4-29",
+    "same_question": false,
+    "same_key": false,
+    "difference": "One asks diagnosis, the other asks a complication of that condition.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-12",
+    "house": "opqb-t11-462",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Stem wording differs (general glaucoma vs POAG specification)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-2",
+    "house": "opqb-t11-460",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Answer A lists generic surgery; Answer B specifies goniotomy",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-11",
+    "house": "opmcq-c4-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-16",
+    "house": "opmcq-c4-20",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-7",
+    "house": "opmcq-c4-29",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical focus: imaging choice vs complication of dacryoadenitis",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-12",
+    "house": "opmcq-c9-12",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-17",
+    "house": "opmcq-c9-15",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra \"None of the above\" option.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-5",
+    "house": "opqb-t11-466",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 1 wording differs (cortical added)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-2",
+    "house": "opqb-t17-707",
+    "same_question": true,
+    "same_key": false,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-9",
+    "house": "opmcq-c16-19",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 4 differs: choroidal melanoma vs sebaceous carcinoma",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-19",
+    "house": "opmcq-c14-3",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-25",
+    "house": "opqb-t27-24",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-8",
+    "house": "opmcq-c14-24",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-21",
+    "house": "opmcq-c13-23",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different scope (worldwide vs Western); answers differ (AMD+glaucoma vs AMD only)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-24",
+    "house": "opmcq-c6-1",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different conditions (diabetic macular edema vs allergic conjunctivitis) and distinct treatment choices.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-1",
+    "house": "opqb-t18-717",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-16",
+    "house": "opmcq-c18-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-13",
+    "house": "opmcq-c2-30",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-19",
+    "house": "opmcq-c2-8",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-8",
+    "house": "opmcq-c2-23",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-14",
+    "house": "opmcq-c3-27",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-17",
+    "house": "opmcq-c3-18",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A targets children with H. influenza; B targets adults with both S. aureus and S. pneumoniae.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-3",
+    "house": "opmcq-c3-24",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Correct answer listed as option 2 vs option 4",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-8",
+    "house": "opqb-t4-155",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks best imaging; B asks most common infectious cause.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-pediatric-ophthalmology-14",
+    "house": "opmcq-c16-4",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Gestational age differs, leading to different screening timing (4 vs 5 weeks).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-18",
+    "house": "opmcq-c13-18",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-27",
+    "house": "opqb-t27-13",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-37",
+    "house": "opmcq-c8-26",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different ocular conditions; one about diabetic vitreous hemorrhage, other about HSV keratitis ulcer type.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-1",
+    "house": "opmcq-c7-4",
+    "same_question": true,
+    "same_key": false,
+    "difference": "B mentions redness disappearance in episcleritis; A only lists phenylephrine concentration",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-13",
+    "house": "opmcq-c3-14",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different condition: episcleritis vs exophthalmos; distinct false statements",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-2",
+    "house": "opqb-t7-291",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different focus: differentiating scleritis/episcleritis vs phenylephrine blanching in conjunctivitis",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-8",
+    "house": "opqb-t14-598",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different disease focus; anterior scleritis vs Horner's syndrome",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-squint-6",
+    "house": "opmcq-c15-7",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-13",
+    "house": "opmcq-c10-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-23",
+    "house": "opqb-t27-17",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different focus: drug contraindication versus diagnostic test",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-7",
+    "house": "opmcq-c14-18",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-vitreous-6",
+    "house": "opmcq-c12-4",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-3-43",
+    "house": "opmcq-c16-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-4-12",
+    "house": "opmcq-c12-8",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option lists differ (different distractors)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-4-49",
+    "house": "opmcq-c18-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-4-81",
+    "house": "opqb-t8-323",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different correct answer: cataract versus rubbing lashes",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-5-34",
+    "house": "opmcq-c19-14",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-5-5",
+    "house": "opqb-t13-529",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-17",
+    "house": "opmcq-c6-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-23",
+    "house": "opmcq-c1-22",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different condition and answer",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-31",
+    "house": "opqb-t27-2",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Correct answer differs: exposure to children with colds vs sore throat",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-38",
+    "house": "opqb-t6-224",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-10",
+    "house": "opqb-t4-155",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different disease focus and answer: corneal ulcer risk vs orbital infection cause.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-18",
+    "house": "opmcq-c8-9",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B adds an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-25",
+    "house": "opqb-t27-6",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-drugs-eye-13",
+    "house": "opmcq-c20-27",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra “All of the above” option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-1",
+    "house": "opmcq-c1-3",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-18",
+    "house": "opmcq-c1-20",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-25",
+    "house": "opmcq-c1-27",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-32",
+    "house": "opmcq-c1-45",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-1",
+    "house": "opqb-t5-185",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Minor wording/punctuation differences in options.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-17",
+    "house": "opmcq-c3-14",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different condition: epicanthus vs exophthalmos",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-19",
+    "house": "opmcq-c5-12",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-6",
+    "house": "opmcq-c4-5",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks for diagnosis; B asks for next imaging step",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-12",
+    "house": "opqb-t11-468",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Q A asks for a characteristic defect; Q B asks for non‑characteristic defect (EXCEPT).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-2",
+    "house": "opqb-t16-684",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-12",
+    "house": "opmcq-c4-3",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-17",
+    "house": "opmcq-c4-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-7",
+    "house": "opmcq-c4-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-13",
+    "house": "opmcq-c9-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-20",
+    "house": "opmcq-c9-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-7",
+    "house": "opqb-t1-70",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Answers differ: 'Second sight' vs 'Nuclear cataract causes myopic shift'.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-3",
+    "house": "opmcq-c17-14",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra option (Secondaries from other sites)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-9",
+    "house": "opmcq-c17-14",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Question A focuses on pediatric patients; Question B focuses on adults, with different correct answers.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-20",
+    "house": "opmcq-c14-23",
+    "same_question": true,
+    "same_key": true,
+    "difference": "minor wording change in fatigue description",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-25",
+    "house": "opqb-t3-117",
+    "same_question": false,
+    "same_key": true,
+    "difference": "A asks diagnosis from symptoms; B asks most common cause of unilateral exophthalmos.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-12",
+    "house": "opmcq-c19-38",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-21",
+    "house": "opmcq-c19-31",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Answer differs: 'AMO & glaucoma' vs 'AMD & glaucoma'",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-24",
+    "house": "opmcq-c8-26",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different conditions and answers: diabetic macular edema treatment vs HSV keratitis ulcer type.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-11",
+    "house": "opmcq-c18-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-18",
+    "house": "opqb-t27-25",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-14",
+    "house": "opmcq-c2-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-20",
+    "house": "opmcq-c2-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-9",
+    "house": "opmcq-c15-8",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-14",
+    "house": "opmcq-c3-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-17",
+    "house": "opmcq-c3-19",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-3",
+    "house": "opmcq-c3-28",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different correct answer (ocular motility vs pupil reaction)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-9",
+    "house": "opmcq-c18-20",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-10",
+    "house": "opmcq-c13-4",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-19",
+    "house": "opmcq-c13-8",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-35",
+    "house": "opqb-t13-547",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-37",
+    "house": "opmcq-c8-26b",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different ocular conditions: vitreous hemorrhage vs punctate epithelial keratitis.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-1",
+    "house": "opqb-t7-291",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different phenylephrine concentration and condition; tests distinct clinical fact",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-13",
+    "house": "opmcq-c4-23",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different conditions: episcleritis versus epiphora",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-3",
+    "house": "opmcq-c7-14",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks about specific scleritis subtypes; B asks about broader ocular conditions.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-sclera-9",
+    "house": "opmcq-c7-4",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A tests episcleritis vs conjunctivitis; B tests episcleritis vs scleritis with different phenylephrine concentration.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-squint-8",
+    "house": "opmcq-c15-12",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-14",
+    "house": "opmcq-c10-2",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B has typo \"cliliary\" instead of \"ciliary\" in the stem",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-23",
+    "house": "opqb-t27-18",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-uveal-tract-8",
+    "house": "opmcq-c11-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-vitreous-6",
+    "house": "opqb-t13-549",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-3-45",
+    "house": "opmcq-c13-22",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-4-14",
+    "house": "opmcq-c13-24",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-4-5",
+    "house": "opmcq-c9-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-model-exam-5-11",
+    "house": "opqb-t15-651",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Spelling difference in option 4: \"hyphema\" vs \"hyphemia\"",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-18",
+    "house": "opmcq-c6-2",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 4 contains extra '47 g' text",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-23",
+    "house": "opmcq-c6-25",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-32",
+    "house": "opqb-t27-2",
+    "same_question": false,
+    "same_key": false,
+    "difference": "One tests treatment, the other tests history clue",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-conjunctiva-39",
+    "house": "opqb-t6-228",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-11",
+    "house": "opmcq-c8-6",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-19",
+    "house": "opmcq-c8-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes an extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-cornea-26",
+    "house": "opqb-t27-7",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-drugs-eye-14",
+    "house": "opmcq-c20-28",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Question B includes extra 'None of the above' option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-10",
+    "house": "opmcq-c1-41",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-19",
+    "house": "opmcq-c1-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-25",
+    "house": "opqb-t1-39",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option wording differs (≤ vs =) and distractors differ",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-exam-eye-34",
+    "house": "opmcq-c1-4",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-10",
+    "house": "opmcq-c5-13",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 2 typo: 'Ectroion' vs 'Ectropion'",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-17",
+    "house": "opmcq-c4-23",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different condition: epicanthus versus epiphora",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-2",
+    "house": "opqb-t5-182",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-eyelids-6",
+    "house": "opmcq-c4-6",
+    "same_question": true,
+    "same_key": true,
+    "difference": "different distractor options",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-13",
+    "house": "opmcq-c11-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "A mentions lower‑limb edema and dyspnea; B omits these details.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-glaucoma-20",
+    "house": "opmcq-c11-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-12",
+    "house": "opmcq-c4-4",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A uses purulent discharge and recommends massage then probing after 1 yr; B uses mucus discharge and recommends immediate probing.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-20",
+    "house": "opqb-t4-164",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Minor punctuation and capitalization variations in stem and option text.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lacrimal-system-7",
+    "house": "opqb-t1-48",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different ocular conditions and management; one imaging for eyelid inflammation, other diagnosis of retinal detachment.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-14",
+    "house": "opmcq-c9-5",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-20",
+    "house": "opmcq-c9-11",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different focus (most common vs most serious); answers differ",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-lens-8",
+    "house": "opmcq-c9-6",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-5",
+    "house": "opmcq-c17-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-malignancies-eye-adnexa-9",
+    "house": "opmcq-c17-15",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A targets pediatric primary tumor (retinoblastoma); B targets adult intraocular malignancy (metastases).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-21",
+    "house": "opqb-t27-17",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-neuro-ophthalmology-26",
+    "house": "opqb-t14-585",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-12",
+    "house": "opqb-t19-775",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Minor wording differences in stem description",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-22",
+    "house": "opmcq-c19-18",
+    "same_question": true,
+    "same_key": true,
+    "difference": "B includes an extra \"None of the above\" option",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-systemic-diseases-24",
+    "house": "opmcq-c8-26b",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different topics: diabetic macular edema treatment vs corneal staining terminology",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-12",
+    "house": "opmcq-c18-5",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks for treatment, B asks for diagnosis",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-ocular-trauma-19",
+    "house": "opqb-t27-26",
+    "same_question": true,
+    "same_key": true,
+    "difference": "OS visual acuity listed as 6/6 versus 6/5; minor wording/punctuation differences.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-14",
+    "house": "opqb-t21-17",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical condition and correct answer (hyperopia vs myopia).",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-optics-refraction-21",
+    "house": "opmcq-c2-19",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 2 wording differs (above vs below normal)",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-10",
+    "house": "opmcq-c3-4",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-15",
+    "house": "opmcq-c3-3",
+    "same_question": false,
+    "same_key": false,
+    "difference": "Different clinical presentation and correct answer",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-18",
+    "house": "opmcq-c3-21",
+    "same_question": true,
+    "same_key": true,
+    "difference": "Option 3 typo in A ('lnfraorbital' vs 'Infraorbital')",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-5",
+    "house": "opmcq-c3-10",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-orbit-9",
+    "house": "opmcq-c3-27",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-11",
+    "house": "opmcq-c13-7",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-20",
+    "house": "opmcq-c13-26",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Option order differs; correct answer is option 1 in A and option 3 in B.",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-36",
+    "house": "opqb-t13-566",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-25",
+    "house": "opqb-t27-10",
+    "same_question": false,
+    "same_key": false,
+    "difference": "A asks for management, B asks for diagnosis; answer choices differ",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep-retina-26",
+    "house": "opqb-t27-12",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  }
+]

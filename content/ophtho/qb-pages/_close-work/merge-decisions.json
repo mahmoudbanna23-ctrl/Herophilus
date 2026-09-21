@@ -1,0 +1,1932 @@
+{
+ "merges": [
+  {
+   "survivor": "ophep-conjunctiva-13",
+   "twins": [
+    "opmcq-c6-22"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-14",
+   "twins": [
+    "opmcq-c6-5"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-15",
+   "twins": [
+    "opmcq-c6-17"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-16",
+   "twins": [
+    "opmcq-c6-7"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-18",
+   "twins": [
+    "opmcq-c6-2"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-19",
+   "twins": [
+    "opmcq-c6-8"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-20",
+   "twins": [
+    "opmcq-c6-14"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-21",
+   "twins": [
+    "opmcq-c6-16"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-22",
+   "twins": [
+    "opmcq-c6-19"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-23",
+   "twins": [
+    "opmcq-c6-25"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-24",
+   "twins": [
+    "opmcq-c6-27"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-25",
+   "twins": [
+    "opmcq-c6-10"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-26",
+   "twins": [
+    "opmcq-c6-21"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-27",
+   "twins": [
+    "opmcq-c6-12"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-28",
+   "twins": [
+    "opmcq-c6-18"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-32",
+   "twins": [
+    "opqb-t27-3"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-33",
+   "twins": [
+    "opqb-t27-4"
+   ],
+   "note": "The Grade Gain printing words the stem \"with injection of the conjunctival vessels\"; the key (subconjunctival hemorrhage) is the same."
+  },
+  {
+   "survivor": "ophep-conjunctiva-34",
+   "twins": [
+    "opqb-t27-1"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-35",
+   "twins": [
+    "opqb-t27-5"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-36",
+   "twins": [
+    "opqb-t6-270"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-37",
+   "twins": [
+    "opqb-t6-278"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-38",
+   "twins": [
+    "opqb-t6-224"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-39",
+   "twins": [
+    "opqb-t6-228"
+   ]
+  },
+  {
+   "survivor": "ophep-conjunctiva-5",
+   "twins": [
+    "opqb-t6-246"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-11",
+   "twins": [
+    "opmcq-c8-6"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-12",
+   "twins": [
+    "opmcq-c8-8"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-13",
+   "twins": [
+    "opmcq-c20-19"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-14",
+   "twins": [
+    "opmcq-c18-24"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-15",
+   "twins": [
+    "opmcq-c18-15"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-16",
+   "twins": [
+    "opmcq-c10-21"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-18",
+   "twins": [
+    "opmcq-c8-9"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-19",
+   "twins": [
+    "opmcq-c8-17"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-2",
+   "twins": [
+    "opqb-t8-325"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-20",
+   "twins": [
+    "opmcq-c8-12"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-21",
+   "twins": [
+    "opmcq-c8-14"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-22",
+   "twins": [
+    "opmcq-c8-2"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-23",
+   "twins": [
+    "opmcq-c8-20"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-24",
+   "twins": [
+    "opmcq-c8-22"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-25",
+   "twins": [
+    "opqb-t27-6"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-26",
+   "twins": [
+    "opqb-t27-7"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-27",
+   "twins": [
+    "opqb-t27-8"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-28",
+   "twins": [
+    "opqb-t8-338"
+   ]
+  },
+  {
+   "survivor": "ophep-cornea-6",
+   "twins": [
+    "opmcq-c8-18"
+   ]
+  },
+  {
+   "survivor": "ophep-drugs-eye-11",
+   "twins": [
+    "opmcq-c20-16"
+   ]
+  },
+  {
+   "survivor": "ophep-drugs-eye-12",
+   "twins": [
+    "opmcq-c20-7"
+   ]
+  },
+  {
+   "survivor": "ophep-drugs-eye-13",
+   "twins": [
+    "opmcq-c20-27"
+   ]
+  },
+  {
+   "survivor": "ophep-drugs-eye-14",
+   "twins": [
+    "opmcq-c20-28"
+   ]
+  },
+  {
+   "survivor": "ophep-drugs-eye-15",
+   "twins": [
+    "opmcq-c20-14"
+   ]
+  },
+  {
+   "survivor": "ophep-drugs-eye-6",
+   "twins": [
+    "opmcq-c20-20"
+   ]
+  },
+  {
+   "survivor": "ophep-drugs-eye-7",
+   "twins": [
+    "opmcq-c20-13"
+   ]
+  },
+  {
+   "survivor": "ophep-drugs-eye-9",
+   "twins": [
+    "opmcq-c20-11"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-1",
+   "twins": [
+    "opmcq-c1-3"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-10",
+   "twins": [
+    "opmcq-c1-41"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-12",
+   "twins": [
+    "opmcq-c4-2"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-13",
+   "twins": [
+    "opmcq-c1-53"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-14",
+   "twins": [
+    "opmcq-c1-12"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-15",
+   "twins": [
+    "opmcq-c1-13"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-16",
+   "twins": [
+    "opmcq-c1-15"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-17",
+   "twins": [
+    "opmcq-c1-14"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-18",
+   "twins": [
+    "opmcq-c1-20"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-19",
+   "twins": [
+    "opmcq-c1-21"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-20",
+   "twins": [
+    "opmcq-c1-16"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-21",
+   "twins": [
+    "opmcq-c1-17"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-22",
+   "twins": [
+    "opmcq-c1-18"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-23",
+   "twins": [
+    "opmcq-c1-30"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-24",
+   "twins": [
+    "opmcq-c1-31"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-25",
+   "twins": [
+    "opmcq-c1-27",
+    "opqb-t1-39"
+   ],
+   "note": "The House-side printing (Grade Gain bank) offers VA < 6/60, VA = 1/60, VA <= 3/60 and PL only, with \"Best-corrected VA <= 3/60\" as its key; the endpoint prints \"= 3/60\" and is kept."
+  },
+  {
+   "survivor": "ophep-exam-eye-26",
+   "twins": [
+    "opmcq-c1-29"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-28",
+   "twins": [
+    "opmcq-c1-43"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-29",
+   "twins": [
+    "opmcq-c1-48"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-30",
+   "twins": [
+    "opmcq-c1-51"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-31",
+   "twins": [
+    "opmcq-c1-40"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-32",
+   "twins": [
+    "opmcq-c1-45"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-34",
+   "twins": [
+    "opmcq-c1-4"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-4",
+   "twins": [
+    "opmcq-c1-2"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-5",
+   "twins": [
+    "opmcq-c1-36"
+   ]
+  },
+  {
+   "survivor": "ophep-exam-eye-8",
+   "twins": [
+    "opmcq-c1-39"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-1",
+   "twins": [
+    "opqb-t5-185"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-10",
+   "twins": [
+    "opmcq-c5-13"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-11",
+   "twins": [
+    "opmcq-c5-10"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-12",
+   "twins": [
+    "opmcq-c5-5"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-13",
+   "twins": [
+    "opmcq-c5-7"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-14",
+   "twins": [
+    "opmcq-c5-15"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-16",
+   "twins": [
+    "opmcq-c5-14"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-17",
+   "twins": [
+    "opmcq-c5-19"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-18",
+   "twins": [
+    "opmcq-c5-3"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-19",
+   "twins": [
+    "opmcq-c5-12"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-2",
+   "twins": [
+    "opqb-t5-182"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-20",
+   "twins": [
+    "opmcq-c5-30"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-21",
+   "twins": [
+    "opmcq-c5-29"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-24",
+   "twins": [
+    "opqb-t5-218"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-28",
+   "twins": [
+    "opqb-t5-220"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-6",
+   "twins": [
+    "opmcq-c4-6"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-8",
+   "twins": [
+    "opmcq-c5-18"
+   ]
+  },
+  {
+   "survivor": "ophep-eyelids-9",
+   "twins": [
+    "opmcq-c8-5"
+   ]
+  },
+  {
+   "survivor": "ophep-glaucoma-12",
+   "twins": [
+    "opmcq-c11-4"
+   ]
+  },
+  {
+   "survivor": "ophep-glaucoma-15",
+   "twins": [
+    "opmcq-c11-7"
+   ]
+  },
+  {
+   "survivor": "ophep-glaucoma-16",
+   "twins": [
+    "opmcq-c11-12"
+   ]
+  },
+  {
+   "survivor": "ophep-glaucoma-17",
+   "twins": [
+    "opmcq-c11-23",
+    "opqb-t20-796"
+   ]
+  },
+  {
+   "survivor": "ophep-glaucoma-2",
+   "twins": [
+    "opqb-t16-684"
+   ]
+  },
+  {
+   "survivor": "ophep-glaucoma-20",
+   "twins": [
+    "opmcq-c11-17"
+   ]
+  },
+  {
+   "survivor": "ophep-glaucoma-7",
+   "twins": [
+    "opmcq-c11-6"
+   ]
+  },
+  {
+   "survivor": "ophep-glaucoma-8",
+   "twins": [
+    "opmcq-c11-24"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-1",
+   "twins": [
+    "opmcq-c4-25"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-10",
+   "twins": [
+    "opmcq-c4-16"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-11",
+   "twins": [
+    "opmcq-c4-17"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-12",
+   "twins": [
+    "opmcq-c4-3"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-13",
+   "twins": [
+    "opmcq-c4-10"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-14",
+   "twins": [
+    "opmcq-c4-22"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-15",
+   "twins": [
+    "opmcq-c4-28"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-16",
+   "twins": [
+    "opmcq-c4-20"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-17",
+   "twins": [
+    "opmcq-c4-21"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-20",
+   "twins": [
+    "opqb-t4-164"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-5",
+   "twins": [
+    "opmcq-c4-18"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-6",
+   "twins": [
+    "opmcq-c4-4"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-8",
+   "twins": [
+    "opmcq-c4-13"
+   ]
+  },
+  {
+   "survivor": "ophep-lacrimal-system-9",
+   "twins": [
+    "opmcq-c4-15"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-11",
+   "twins": [
+    "opmcq-c9-20"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-12",
+   "twins": [
+    "opmcq-c9-12"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-13",
+   "twins": [
+    "opmcq-c9-21"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-14",
+   "twins": [
+    "opmcq-c9-5"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-15",
+   "twins": [
+    "opmcq-c9-8"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-16",
+   "twins": [
+    "opmcq-c9-14"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-17",
+   "twins": [
+    "opmcq-c9-15"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-20",
+   "twins": [
+    "opmcq-c9-10"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-22",
+   "twins": [
+    "opqb-t27-14"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-23",
+   "twins": [
+    "opqb-t27-15"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-24",
+   "twins": [
+    "opqb-t27-16"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-26",
+   "twins": [
+    "opqb-t9-388"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-27",
+   "twins": [
+    "opqb-t6-225"
+   ]
+  },
+  {
+   "survivor": "ophep-lens-8",
+   "twins": [
+    "opmcq-c9-6"
+   ]
+  },
+  {
+   "survivor": "ophep-malignancies-eye-adnexa-10",
+   "twins": [
+    "opmcq-c17-3"
+   ]
+  },
+  {
+   "survivor": "ophep-malignancies-eye-adnexa-11",
+   "twins": [
+    "opmcq-c17-16"
+   ]
+  },
+  {
+   "survivor": "ophep-malignancies-eye-adnexa-12",
+   "twins": [
+    "opmcq-c17-12"
+   ]
+  },
+  {
+   "survivor": "ophep-malignancies-eye-adnexa-2",
+   "twins": [
+    "opqb-t17-707"
+   ]
+  },
+  {
+   "survivor": "ophep-malignancies-eye-adnexa-5",
+   "twins": [
+    "opmcq-c17-10"
+   ]
+  },
+  {
+   "survivor": "ophep-malignancies-eye-adnexa-6",
+   "twins": [
+    "opmcq-c17-8"
+   ]
+  },
+  {
+   "survivor": "ophep-malignancies-eye-adnexa-7",
+   "twins": [
+    "opmcq-c17-14"
+   ]
+  },
+  {
+   "survivor": "ophep-malignancies-eye-adnexa-8",
+   "twins": [
+    "opmcq-c16-5"
+   ]
+  },
+  {
+   "survivor": "ophep-malignancies-eye-adnexa-9",
+   "twins": [
+    "opmcq-c16-19"
+   ]
+  },
+  {
+   "survivor": "ophep-neuro-ophthalmology-12",
+   "twins": [
+    "opmcq-c14-19"
+   ]
+  },
+  {
+   "survivor": "ophep-neuro-ophthalmology-16",
+   "twins": [
+    "opmcq-c14-17"
+   ]
+  },
+  {
+   "survivor": "ophep-neuro-ophthalmology-17",
+   "twins": [
+    "opmcq-c14-9"
+   ]
+  },
+  {
+   "survivor": "ophep-neuro-ophthalmology-19",
+   "twins": [
+    "opmcq-c14-3"
+   ]
+  },
+  {
+   "survivor": "ophep-neuro-ophthalmology-20",
+   "twins": [
+    "opmcq-c14-23"
+   ]
+  },
+  {
+   "survivor": "ophep-neuro-ophthalmology-21",
+   "twins": [
+    "opqb-t27-17"
+   ]
+  },
+  {
+   "survivor": "ophep-neuro-ophthalmology-22",
+   "twins": [
+    "opqb-t27-22"
+   ]
+  },
+  {
+   "survivor": "ophep-neuro-ophthalmology-23",
+   "twins": [
+    "opqb-t27-21"
+   ]
+  },
+  {
+   "survivor": "ophep-neuro-ophthalmology-24",
+   "twins": [
+    "opqb-t27-23"
+   ]
+  },
+  {
+   "survivor": "ophep-neuro-ophthalmology-25",
+   "twins": [
+    "opqb-t27-24"
+   ]
+  },
+  {
+   "survivor": "ophep-neuro-ophthalmology-26",
+   "twins": [
+    "opqb-t14-585"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-systemic-diseases-16",
+   "twins": [
+    "opmcq-c19-16"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-systemic-diseases-17",
+   "twins": [
+    "opmcq-c19-10"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-systemic-diseases-18",
+   "twins": [
+    "opmcq-c19-7"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-systemic-diseases-19",
+   "twins": [
+    "opmcq-c19-12"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-systemic-diseases-20",
+   "twins": [
+    "opmcq-c19-4"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-systemic-diseases-22",
+   "twins": [
+    "opmcq-c19-18"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-systemic-diseases-23",
+   "twins": [
+    "opmcq-c19-22"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-systemic-diseases-24",
+   "twins": [
+    "opmcq-c19-14"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-systemic-diseases-25",
+   "twins": [
+    "opmcq-c19-30"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-systemic-diseases-5",
+   "twins": [
+    "opmcq-c19-19"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-trauma-1",
+   "twins": [
+    "opqb-t18-717"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-trauma-11",
+   "twins": [
+    "opmcq-c18-5"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-trauma-13",
+   "twins": [
+    "opmcq-c18-9"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-trauma-14",
+   "twins": [
+    "opmcq-c18-10"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-trauma-15",
+   "twins": [
+    "opmcq-c18-17"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-trauma-16",
+   "twins": [
+    "opmcq-c18-21"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-trauma-18",
+   "twins": [
+    "opqb-t27-25"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-trauma-20",
+   "twins": [
+    "opqb-t27-27"
+   ]
+  },
+  {
+   "survivor": "ophep-ocular-trauma-8",
+   "twins": [
+    "opmcq-c18-2"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-11",
+   "twins": [
+    "opmcq-c3-4"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-13",
+   "twins": [
+    "opmcq-c2-30"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-14",
+   "twins": [
+    "opmcq-c2-5"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-15",
+   "twins": [
+    "opmcq-c2-6"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-16",
+   "twins": [
+    "opmcq-c2-11"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-17",
+   "twins": [
+    "opmcq-c2-31"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-18",
+   "twins": [
+    "opmcq-c2-13"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-19",
+   "twins": [
+    "opmcq-c2-8"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-20",
+   "twins": [
+    "opmcq-c2-21"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-21",
+   "twins": [
+    "opmcq-c2-19"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-22",
+   "twins": [
+    "opmcq-c2-2"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-23",
+   "twins": [
+    "opmcq-c2-15"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-24",
+   "twins": [
+    "opmcq-c2-18"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-6",
+   "twins": [
+    "opqb-t2-80"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-8",
+   "twins": [
+    "opmcq-c2-23"
+   ]
+  },
+  {
+   "survivor": "ophep-optics-refraction-9",
+   "twins": [
+    "opmcq-c15-8"
+   ]
+  },
+  {
+   "survivor": "ophep-orbit-11",
+   "twins": [
+    "opmcq-c3-11"
+   ]
+  },
+  {
+   "survivor": "ophep-orbit-13",
+   "twins": [
+    "opmcq-c3-3"
+   ]
+  },
+  {
+   "survivor": "ophep-orbit-14",
+   "twins": [
+    "opmcq-c3-5"
+   ]
+  },
+  {
+   "survivor": "ophep-orbit-15",
+   "twins": [
+    "opmcq-c3-9"
+   ]
+  },
+  {
+   "survivor": "ophep-orbit-16",
+   "twins": [
+    "opmcq-c3-16",
+    "opqb-t3-135"
+   ]
+  },
+  {
+   "survivor": "ophep-orbit-17",
+   "twins": [
+    "opmcq-c3-19"
+   ]
+  },
+  {
+   "survivor": "ophep-orbit-2",
+   "twins": [
+    "opqb-t3-117"
+   ]
+  },
+  {
+   "survivor": "ophep-orbit-20",
+   "twins": [
+    "opmcq-c3-15"
+   ]
+  },
+  {
+   "survivor": "ophep-orbit-21",
+   "twins": [
+    "opmcq-c3-2"
+   ]
+  },
+  {
+   "survivor": "ophep-orbit-3",
+   "twins": [
+    "opmcq-c3-24"
+   ]
+  },
+  {
+   "survivor": "ophep-orbit-5",
+   "twins": [
+    "opmcq-c3-10"
+   ]
+  },
+  {
+   "survivor": "ophep-orbit-8",
+   "twins": [
+    "opmcq-c4-5"
+   ]
+  },
+  {
+   "survivor": "ophep-pediatric-ophthalmology-11",
+   "twins": [
+    "opmcq-c16-7"
+   ]
+  },
+  {
+   "survivor": "ophep-pediatric-ophthalmology-12",
+   "twins": [
+    "opmcq-c16-10"
+   ]
+  },
+  {
+   "survivor": "ophep-pediatric-ophthalmology-14",
+   "twins": [
+    "opmcq-c16-3"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-10",
+   "twins": [
+    "opmcq-c13-4"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-11",
+   "twins": [
+    "opmcq-c13-7"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-13",
+   "twins": [
+    "opmcq-c13-10"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-15",
+   "twins": [
+    "opmcq-c13-5"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-17",
+   "twins": [
+    "opmcq-c13-25"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-18",
+   "twins": [
+    "opmcq-c13-18"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-19",
+   "twins": [
+    "opmcq-c13-8"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-24",
+   "twins": [
+    "opqb-t27-10"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-25",
+   "twins": [
+    "opqb-t27-11"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-26",
+   "twins": [
+    "opqb-t27-12"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-27",
+   "twins": [
+    "opqb-t27-13"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-35",
+   "twins": [
+    "opqb-t13-547"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-36",
+   "twins": [
+    "opqb-t13-566"
+   ]
+  },
+  {
+   "survivor": "ophep-retina-9",
+   "twins": [
+    "opmcq-c13-17"
+   ]
+  },
+  {
+   "survivor": "ophep-sclera-10",
+   "twins": [
+    "opmcq-c7-14"
+   ]
+  },
+  {
+   "survivor": "ophep-sclera-11",
+   "twins": [
+    "opmcq-c7-4"
+   ]
+  },
+  {
+   "survivor": "ophep-sclera-12",
+   "twins": [
+    "opmcq-c7-25"
+   ]
+  },
+  {
+   "survivor": "ophep-sclera-13",
+   "twins": [
+    "opmcq-c7-6"
+   ]
+  },
+  {
+   "survivor": "ophep-sclera-3",
+   "twins": [
+    "opmcq-c7-20"
+   ]
+  },
+  {
+   "survivor": "ophep-sclera-4",
+   "twins": [
+    "opmcq-c7-13"
+   ]
+  },
+  {
+   "survivor": "ophep-sclera-5",
+   "twins": [
+    "opmcq-c7-2"
+   ]
+  },
+  {
+   "survivor": "ophep-sclera-6",
+   "twins": [
+    "opmcq-c7-9"
+   ]
+  },
+  {
+   "survivor": "ophep-sclera-7",
+   "twins": [
+    "opmcq-c7-11"
+   ]
+  },
+  {
+   "survivor": "ophep-sclera-8",
+   "twins": [
+    "opmcq-c7-23"
+   ]
+  },
+  {
+   "survivor": "ophep-sclera-9",
+   "twins": [
+    "opmcq-c7-5"
+   ]
+  },
+  {
+   "survivor": "ophep-squint-10",
+   "twins": [
+    "opmcq-c14-5"
+   ]
+  },
+  {
+   "survivor": "ophep-squint-11",
+   "twins": [
+    "opmcq-c14-7"
+   ]
+  },
+  {
+   "survivor": "ophep-squint-3",
+   "twins": [
+    "opmcq-c15-5"
+   ]
+  },
+  {
+   "survivor": "ophep-squint-4",
+   "twins": [
+    "opmcq-c15-15"
+   ]
+  },
+  {
+   "survivor": "ophep-squint-5",
+   "twins": [
+    "opmcq-c15-10"
+   ]
+  },
+  {
+   "survivor": "ophep-squint-6",
+   "twins": [
+    "opmcq-c15-7"
+   ]
+  },
+  {
+   "survivor": "ophep-squint-8",
+   "twins": [
+    "opmcq-c15-12"
+   ]
+  },
+  {
+   "survivor": "ophep-squint-9",
+   "twins": [
+    "opmcq-c15-14"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-12",
+   "twins": [
+    "opmcq-c10-7"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-13",
+   "twins": [
+    "opmcq-c10-5"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-14",
+   "twins": [
+    "opmcq-c10-2"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-16",
+   "twins": [
+    "opmcq-c10-16"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-18",
+   "twins": [
+    "opmcq-c10-24"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-19",
+   "twins": [
+    "opmcq-c10-23"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-20",
+   "twins": [
+    "opmcq-c10-17"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-23",
+   "twins": [
+    "opqb-t27-18"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-24",
+   "twins": [
+    "opqb-t27-9"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-4",
+   "twins": [
+    "opmcq-c10-8"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-7",
+   "twins": [
+    "opmcq-c14-18"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-8",
+   "twins": [
+    "opmcq-c11-21"
+   ]
+  },
+  {
+   "survivor": "ophep-uveal-tract-9",
+   "twins": [
+    "opmcq-c11-5"
+   ]
+  },
+  {
+   "survivor": "ophep-vitreous-10",
+   "twins": [
+    "opmcq-c12-10"
+   ]
+  },
+  {
+   "survivor": "ophep-vitreous-4",
+   "twins": [
+    "opmcq-c12-7"
+   ]
+  },
+  {
+   "survivor": "ophep-vitreous-5",
+   "twins": [
+    "opmcq-c12-1"
+   ]
+  },
+  {
+   "survivor": "ophep-vitreous-6",
+   "twins": [
+    "opmcq-c12-4"
+   ]
+  },
+  {
+   "survivor": "ophep-vitreous-7",
+   "twins": [
+    "opmcq-c12-16"
+   ]
+  },
+  {
+   "survivor": "ophep-vitreous-8",
+   "twins": [
+    "opmcq-c12-17"
+   ]
+  },
+  {
+   "survivor": "ophep-vitreous-9",
+   "twins": [
+    "opmcq-c12-15"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-3-43",
+   "twins": [
+    "opmcq-c16-17"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-3-45",
+   "twins": [
+    "opmcq-c13-22"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-3-59",
+   "twins": [
+    "opmcq-c19-28"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-3-70",
+   "twins": [
+    "opmcq-c13-11"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-3-77",
+   "twins": [
+    "opmcq-c14-11"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-12",
+   "twins": [
+    "opmcq-c12-11"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-14",
+   "twins": [
+    "opmcq-c13-24"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-15",
+   "twins": [
+    "opmcq-c13-23"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-32",
+   "twins": [
+    "opmcq-c9-25"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-42",
+   "twins": [
+    "opmcq-c14-24"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-45",
+   "twins": [
+    "opmcq-c13-19"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-5",
+   "twins": [
+    "opmcq-c9-17"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-55",
+   "twins": [
+    "opmcq-c19-5"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-59",
+   "twins": [
+    "opmcq-c1-34"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-68",
+   "twins": [
+    "opmcq-c10-12"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-7",
+   "twins": [
+    "opmcq-c10-3"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-73",
+   "twins": [
+    "opmcq-c9-19"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-4-77",
+   "twins": [
+    "opqb-t18-718"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-11",
+   "twins": [
+    "opqb-t15-651"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-12",
+   "twins": [
+    "opqb-t14-599"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-14",
+   "twins": [
+    "opqb-t4-148"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-15",
+   "twins": [
+    "opqb-t14-598"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-2",
+   "twins": [
+    "opqb-t18-719"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-33",
+   "twins": [
+    "opqb-t27-19"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-4",
+   "twins": [
+    "opqb-t5-183"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-45",
+   "twins": [
+    "opqb-t6-232"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-48",
+   "twins": [
+    "opqb-t10-436"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-49",
+   "twins": [
+    "opqb-t11-452"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-5",
+   "twins": [
+    "opqb-t13-529"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-50",
+   "twins": [
+    "opqb-t11-453"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-6",
+   "twins": [
+    "opqb-t10-421"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-66",
+   "twins": [
+    "opmcq-c1-5"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-67",
+   "twins": [
+    "opmcq-c1-22"
+   ]
+  },
+  {
+   "survivor": "ophep2-model-exam-5-7",
+   "twins": [
+    "opqb-t15-649"
+   ],
+   "note": "The Grade Gain bank prints the key of this question as \"Elevator of the abducted eye\" (opqb-t15-649); the endpoint key is kept."
+  },
+  {
+   "survivor": "ophep2-model-exam-5-76",
+   "twins": [
+    "opmcq-c3-1"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-1",
+   "twins": [
+    "opmcq-c1-56"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-12",
+   "twins": [
+    "opqb-t4-154"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-14",
+   "twins": [
+    "opmcq-c3-27"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-17",
+   "twins": [
+    "opmcq-c18-26"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-19",
+   "twins": [
+    "opmcq-c5-32"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-2",
+   "twins": [
+    "opmcq-c16-21"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-24",
+   "twins": [
+    "opmcq-c10-26"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-25",
+   "twins": [
+    "opmcq-c10-1"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-27",
+   "twins": [
+    "opmcq-c1-8"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-32",
+   "twins": [
+    "opmcq-c2-32"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-34",
+   "twins": [
+    "opmcq-c9-28"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-35",
+   "twins": [
+    "opmcq-c1-9"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-38",
+   "twins": [
+    "opmcq-c1-7",
+    "opqb-t14-588"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-39",
+   "twins": [
+    "opmcq-c1-6"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-40",
+   "twins": [
+    "opmcq-c14-2"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-41",
+   "twins": [
+    "opmcq-c14-29"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-42",
+   "twins": [
+    "opmcq-c14-28"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-44",
+   "twins": [
+    "opmcq-c5-2"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-45",
+   "twins": [
+    "opmcq-c8-27"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-46",
+   "twins": [
+    "opmcq-c8-26b"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-5",
+   "twins": [
+    "opmcq-c1-55"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-52",
+   "twins": [
+    "opqb-t11-460"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-56",
+   "twins": [
+    "opmcq-c19-35"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-58",
+   "twins": [
+    "opmcq-c13-2"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-60",
+   "twins": [
+    "opmcq-c19-34"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-62",
+   "twins": [
+    "opmcq-c19-1"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-65",
+   "twins": [
+    "opmcq-c16-1"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-67",
+   "twins": [
+    "opmcq-c13-1"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-7",
+   "twins": [
+    "opmcq-c18-27"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-8",
+   "twins": [
+    "opmcq-c17-1",
+    "opqb-t19-790"
+   ]
+  },
+  {
+   "survivor": "ophep2-summer-exam-9",
+   "twins": [
+    "opmcq-c1-54"
+   ]
+  }
+ ]
+}

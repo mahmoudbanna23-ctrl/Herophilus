@@ -2101,3 +2101,26 @@ endpoint stream.
 
 Add chapter + group for s16 and s20 in `app\data\modules.js`; draft, sweep and splice s16 from its
 staging (`c078016`); stage s20 (pdf 1332-1373) with `STAGE_MODEL=work-vision`. Never `auto/*`.
+
+
+---
+
+## §22 — ⭐ OPHTHALMOLOGY ENDPOINT IS CLOSED (2026-09-21)
+
+Half A (s1-21, PDF 6-1390) is `questions.ophtho.ep.js` (439). Half B (s22-27, PDF 1391-2329) is `questions.ophtho.ep2.js` (148). Section 28 (Night Review notes, PDF 2330-2442, no MCQs) was skipped by owner ruling 2026-09-21 and stays a recorded deferral.
+
+**House / Grade Gain `alsoIn` merges.** 325 House and Grade Gain twin entries were merged into 320 endpoint survivors (the endpoint entry keeps the id and gains `alsoIn`; the twin is deleted and its citation folded into the survivor's `source`). Script `tools\bank-harness\oph-house-merge.js`, decisions `content\ophtho\qb-pages\_close-work\merge-decisions.json`, plan `merge.plan.md`. The House file went 1,598 to 1,273; both endpoint files kept their counts; 1,195 references to a removed id were repointed. Deleted twin ids orphan any local progress stored against them, as in ENT. Policy: same question and same key only; siblings with a different vignette or age stay separate; a journal row yielded to a better exact match in three cases (`opmcq-c4-3`, `opmcq-c4-18`, `opmcq-c19-14`); summer rows 10, 36 and 47 stay unmerged. A defective key is noted in `explanation`, never moved (three notes). An independent verifier re-derived every survivor against `HEAD` and passed 320 of 320. The first `--write` corrupted 122 ids (unbounded id-prefix replacement) and left 8 sparse holes; both faults were fixed in the script and the run redone on clean copies before anything reached `app\data`.
+
+**Reprint citations.** Model Exams 1-5 reprint citations landed in `c0fa1b4`. Page coverage then found three survivors the folds file had missed (Exam 1 q30, q42, q48, exact duplicates of `ophep-optics-refraction-1`, `ophep-conjunctiva-3`, `ophep-uveal-tract-3`); their citations were added.
+
+**Carry notes (explanation only, no key change).** `ophep-orbit-11`: Exam 5 prints a fifth option, "CT axial section". `ophep-eyelids-6`: Exam 5 words the vignette more fully and lists "Dry eye disease" as its fourth option; the p.369 printing was not re-read.
+
+**Checks.** `pagecov-oph.js --part 2 --cites-pdf`: no answered page in 1391-2329 is uncited; only 2330-2442 is. The 461 cited-but-unanswered pages are each question's unmarked companion page. Part 2 has no OCR pass, so its page index (`content\ophtho\qb-pages\ocr\ep\index.part2.json`) is derived from the staging files by `oph-p2-index.js`; `--cites-pdf` is needed because `source` cites PDF pages, not printed pages. Every ophtho array loaded: 0 holes, 0 duplicate ids, every answer in range. Boot: QUESTIONS 4049, THEORY 81, chapters 156, 0 console errors (ophtho is a locked module, so the boot count does not move).
+
+### Still owed (not blocking)
+
+- s22 n8 duplicate `ophep-optics-refraction-3` / `ophep-orbit-1`; `ophep-conjunctiva-3` option "Adenovirus 44 g" (an OCR-era artefact).
+- Figures for s22 pages 1443, 1497, 1505, 1517.
+- Within-endpoint duplicates left as separate entries: `ophep-conjunctiva-17`/`-26`, `ophep-glaucoma-13`/`-20`, `ophep-malignancies-eye-adnexa-2`/`-10` and `-3`/`-7`, `ophep-orbit-10`/`-12`/`ophep-optics-refraction-11`, `ophep-lacrimal-system-7`/`ophep-orbit-8`, `ophep-retina-12`/`ophep-ocular-systemic-diseases-17`, `ophep2-model-exam-4-49`/`ophep-ocular-trauma-16`.
+- `ophep-neuro-ophthalmology-19` option B (Anterior vs Arteritic); `ophep-vitreous-8` lacks a fifth option.
+- Push: the local commits are unpushed; owner decides.

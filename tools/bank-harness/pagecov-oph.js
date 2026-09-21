@@ -46,7 +46,11 @@ const KNOWN_UNCITED = [];
 const KNOWN_EXTRA = [];
 
 function main(argv) {
-  const { target, part, flip } = parseArgs(argv, 'pagecov');
+  // --cites-pdf: every `source` page is already a PDF page (resume-ophtho-endpoint-B-exams.md, flip pin), so no
+  // printed->PDF shift is applied.  Without it, the +1 flip pinned by --flip is applied to printed citations.
+  const citesPdf = argv.includes('--cites-pdf');
+  const { target, part, flip: pinned } = parseArgs(argv.filter(a => a !== '--cites-pdf'), 'pagecov');
+  const flip = citesPdf ? Infinity : pinned;
   const SEC = part === '1' ? SEC_P1 : SEC_P2;
   const low = Math.min(...Object.values(SEC).map(s => s.pages[0]));
   const high = Math.max(...Object.values(SEC).map(s => s.pages[1]));
@@ -58,9 +62,10 @@ function main(argv) {
       'past an unpinned flip in PDF 2151-2170, so coverage comparison there is meaningless. ' +
       'Pin the FIRST shifted PDF page, then supply --part 2 --flip <pdfpage>. No partial closing score is reported.');
   console.log('Numbering: source = printed; index = PDF; ' +
-    (part === '1' ? 'offset 0 throughout part 1.' : 'printed = PDF + 1 from PDF ' + flip + ' inclusive.'));
+    (part === '1' ? 'offset 0 throughout part 1.' : citesPdf ? 'citations are PDF pages (no shift).' : 'printed = PDF + 1 from PDF ' + flip + ' inclusive.'));
 
-  const IDX = path.join(R, 'content/ophtho/qb-pages/ocr/ep/index.json');
+  // Part 2 has no OCR pass; its index is built from staging by oph-p2-index.js.
+  const IDX = path.join(R, 'content/ophtho/qb-pages/ocr/ep/' + (part === '2' ? 'index.part2.json' : 'index.json'));
   const idx = JSON.parse(fs.readFileSync(IDX, 'utf8'));
   if (!Array.isArray(idx)) throw new Error('OCR index must be an array of PDF page records: ' + IDX);
   const byPage = new Map(), answered = new Set();
@@ -110,8 +115,10 @@ function main(argv) {
     const A = loadArray(path.join(R, 'app/data', B.file), B.svar);
     // Index-walk: Array.filter skips holes; loadArray already rejects them.
     for (let i = 0; i < A.length; i++) {
-      const q = A[i], source = q.source;
-      if (typeof source !== 'string') throw new Error(B.file + ' entry ' + i + ': source must be text');
+      const q = A[i];
+      if (typeof q.source !== 'string') throw new Error(B.file + ' entry ' + i + ': source must be text');
+      // oph-house-merge.js appends "; also printed in <bank> bank, <other pdf> p.N" - that is not an endpoint page.
+      const source = q.source.split('; also printed in ')[0];
       if (B.whole) {
         if (q.module !== 'ophtho' || q.bank !== 'endpoint' || typeof q.id !== 'string' || !q.id.startsWith(B.prefix))
           throw new Error(B.file + ': WRONG TARGET entry ' + q.id);

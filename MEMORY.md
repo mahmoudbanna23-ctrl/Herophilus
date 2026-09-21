@@ -35,13 +35,13 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
 boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho
 ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.**
-Printed page = PDF **+1** from PDF 2151 on (pinned 2026-09-21). ✅ **GATE 0 CLOSED 2026-09-08**,
-OPH-B unblocked. **439 live, s1-21 ALL done** (✅ **s14 Neuro-ophthalmology CLOSED 2026-09-19,
-313->338, `264bc74`**, n18 folded into `ophep-squint-10`; s12 `857e08c` chapter `op-vitreous`, chapters 154,
-boot-check 4049/81; s17 `4795291`). **REGROUPED 2026-09-19 `25ab5b7`: 19 book-order groups, ids unchanged, plan `PLAN-ophtho-book-groups-2026-09-19.md`.** **s13 Retina CLOSED 2026-09-20 (40 q, 377->417, n16 folded, boot 4049/81/154; s18/s19/s21 chat B); chapters split by topic, then House; s18/s19 audited, fixed 2026-09-20.
-s16 Pediatric CLOSED 2026-09-20 (11 q, 5 folds, 417->428, chapters 156, `op-peds` + `op-drugs` added); s20 Drugs CLOSED 2026-09-20 (11 q, 4 folds, 428->439); Half A DONE. HALF B (PDF 1391-2442, s22-28): s22-27 CLOSED 2026-09-21 (148 live in ep2, `fb297a3`), flip PINNED 2151, s28 SKIPPED (owner); resume: resume-ophtho-endpoint-B-exams.md last block = CLOSE-OUT checklist.** End of stream owes House `alsoIn` merges (`qb-pages\*house-collisions.md`) + `ophep-squint-10`
-reprint citation. Detail: `progress\resume-ophtho-endpoint-A-chapters.md` tail (s14 entry) + archive
-`## Pruned from MEMORY.md - 2026-09-17`; parallel-run history: archive, `2026-09-16 (part 2)`.
+Printed page = PDF **+1** from PDF 2151 on (pinned 2026-09-21), but `source` cites PDF pages. ✅ **OPHTHO ENDPOINT CLOSED 2026-09-21**
+(chapters 156, boot 4049/81/156, 0 holes): ep 439 + ep2 148 (s22-27); **s28 Night Review notes PDF 2330-2442 SKIPPED by owner — the only uncited pages**.
+325 House/Grade Gain twins merged into endpoint survivors via `alsoIn` (`tools\bank-harness\oph-house-merge.js`, decisions
+`content\ophtho\qb-pages\_close-work\merge-decisions.json`); House file 1,598->1,273, ophtho arrays total **1,860**; twin ids orphan local
+progress, as in ENT. Coverage: `pagecov-oph.js --part 2 --cites-pdf` (index `ocr\ep\index.part2.json`, built by `oph-p2-index.js`).
+Not blocking, still owed: the within-endpoint duplicates and items A-F in `progress\resume-ophtho-endpoint-B-exams.md` (tail = close-out block).
+History: `progress\resume-ophtho-endpoint-A-chapters.md`, archive `## Pruned from MEMORY.md - 2026-09-17` and `2026-09-16 (part 2)`.
 
 - ✅ **PEDS HOUSE CLOSED 2026-09-04 — `questions.peds.js` holds 393, the full measured bank**, all
   20 chapter prefixes present (array loaded 2026-09-05, 0 holes, boots clean). Close-out: `resume-peds.md`.
