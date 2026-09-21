@@ -1,0 +1,9 @@
+{
+ "n": 5,
+ "lecture": "L1,2) Ocular Anatomy, Symptomatology & Basic Eye Examination.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-intro-exam",
+ "expansion": "A. X-linked recessive is correct. Red-green colour blindness is usually caused by pathogenic variants affecting red- or green-sensitive cone photopigments on the X chromosome (not taken from the course material). An affected male has only one X chromosome, so one altered allele produces the condition; the history through his maternal grandfather is compatible with transmission through the maternal line (not taken from the course material). The lecture identifies “Colour blindness” as a visual complaint and lists “Colour vision testing” among complementary tests, but it gives no inheritance pattern and does not name Ishihara plates (L1,2, slide 103; L1,2, slide 103).\n\nB. Autosomal dominant inheritance would usually show vertical transmission in both sexes, with an affected parent commonly transmitting the disorder to about half of offspring (not taken from the course material). That pattern is not the typical inheritance of red-green colour blindness.\n\nC. Autosomal recessive inheritance requires biallelic pathogenic variants and affects males and females similarly (not taken from the course material). It does not account for the characteristic male predominance of red-green colour blindness.\n\nD. Mitochondrial inheritance is transmitted only through an affected mother: all her children may inherit the mitochondrial variant, while affected fathers do not transmit it (not taken from the course material). This is not the usual inheritance pattern of red-green colour blindness.",
+ "objective": "Recognize that congenital red-green colour blindness is typically inherited as an X-linked recessive disorder.",
+ "lectureCovers": false
+}

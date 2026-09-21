@@ -1,0 +1,247 @@
+staged answered rows 77 | live endpoint 510 | live house 1598
+
+[q1. p.2177] best stem score 0.213 | key "0.2 to 0.4"
+  no candidate
+
+[q2 p.2179] best stem score 0.133 | key "8 to 10 years"
+  SELF p2181  stem 0.000  opts 0.750  key DIFF ("2 to 4 years")  <staged p.2181>
+
+[q3 p.2181] best stem score 0.174 | key "2 to 4 years"
+  SELF p2179  stem 0.000  opts 0.750  key DIFF ("8 to 10 years")  <staged p.2179>
+
+[q4 p.2183] best stem score 0.171 | key "Normal Pupil Response"
+  no candidate
+
+[q5 p.2185] best stem score 0.136 | key "X-linked recessive"
+  no candidate
+
+[q6 p.2187] best stem score 0.177 | key "Posterior subcapsular cataract"
+  SELF p2197  stem 0.073  opts 0.750  key SAME  <staged p.2197>
+
+[q7. p.2189] best stem score 0.337 | key "Hyphema"
+  HOUSE opmcq-c18-27  stem 0.337  opts 0.750  key SAME  <ophthalmology MCQ.pdf p.117 (Ch.18 Q27, the last question of the chapt>
+
+[q8 p.2191] best stem score 0.346 | key "Choroid"
+  HOUSE opmcq-c17-1  stem 0.346  opts 0.750  key SAME  <ophthalmology MCQ.pdf p.108 (Ch.17 Q1, the first question of the chapt>
+  HOUSE opqb-t19-790  stem 0.157  opts 0.750  key SAME  <ophthalmology qb.pdf p.125 (Q790), key p.126>
+
+[q9 p.2193] best stem score 0.340 | key "3:2"
+  HOUSE opmcq-c1-54  stem 0.340  opts 0.750  key SAME  <ophthalmology MCQ.pdf p.15 (Ch.1 Q54)>
+
+[q10 p.2195] best stem score 0.328 | key "Crigler massage"
+  no candidate
+
+[q11 p.2197] best stem score 0.292 | key "Posterior subcapsular cataract"
+  SELF p2187  stem 0.073  opts 0.750  key SAME  <staged p.2187>
+
+[q12 p.2199] best stem score 0.261 | key "Topical and systemic antibiotics"
+  no candidate
+
+[q13 p.2201] best stem score 0.295 | key "Observation and low-vision aids"
+  no candidate
+
+[q14 p.2203] best stem score 0.230 | key "Orbital floor"
+  no candidate
+
+[q15 p.2205] best stem score 0.222 | key "Observation and reassurance"
+  no candidate
+
+[q16 p.2207] best stem score 0.310 | key "Intravitreal anti-VEGF injections"
+  no candidate
+
+[q17 p.2209] best stem score 0.180 | key "Intravenous broad-spectrum antibiotics"
+  no candidate
+
+[q18 p.2211] best stem score 0.329 | key "Abscess formation"
+  EP ophep-cornea-10  stem 0.137  opts 0.750  key DIFF ("Corneal perforation")  <Opthalmology endpoint.pdf p.599>
+  EP ophep-neuro-ophthalmology-6  stem 0.000  opts 0.750  key DIFF ("Compressive optic neuropathy")  <Opthalmology endpoint.pdf p.1024>
+  HOUSE opqb-t1-48  stem 0.000  opts 0.750  key DIFF ("Retinal detachment")  <ophthalmology qb.pdf p.5 (Q48), key p.8 — **cataract is also a classic>
+
+[q19 p.2213] best stem score 0.296 | key "Incision and drainage"
+  no candidate
+
+[q20. p.2215] best stem score 0.348 | key "Ipsilateral relative afferent pupillary defect (RAPD)"
+  SELF p2217  stem 0.348  opts 0.750  key SAME  <staged p.2217>
+
+[q21 p.2217] best stem score 0.348 | key "Ipsilateral relative afferent pupillary defect (RAPD)"
+  SELF p2215  stem 0.348  opts 0.750  key SAME  <staged p.2215>
+
+[q22. p.2219] best stem score 0.212 | key "Carbonic anhydrase inhibitors"
+  no candidate
+
+[q23 p.2221] best stem score 0.170 | key "Acute angle-closure glaucoma"
+  HOUSE opmcq-c2-23  stem 0.000  opts 0.750  key DIFF ("Rhegmatogenous retinal detachment")  <ophthalmology MCQ.pdf p.20 (Ch.2 Q23)>
+
+[q24 p.2223] best stem score 0.409 | key "Topical cycloplegic agent"
+  no candidate
+
+[q25 p.2225] best stem score 0.228 | key "Acute iridocyclitis"
+  no candidate
+
+[q26 p.2227] best stem score 0.494 | key "Acute iritis"
+  no candidate
+
+[q27 p.2229] best stem score 0.250 | key "Migraine with aura"
+  no candidate
+
+[q28 p.2231] best stem score 0.257 | key "Keratoconjunctivitis sicca"
+  no candidate
+
+[q29 p.2233] best stem score 0.222 | key "Undiagnosed diabetes mellitus"
+  no candidate
+
+[q30 p.2235] best stem score 0.139 | key "Resolution of the myopic shift toward baseline refraction"
+  no candidate
+
+[q31. p.2237] best stem score 0.143 | key "Myopia"
+  EP ophep-optics-refraction-14  stem 0.081  opts 1.000  key DIFF ("Hyperopia")  <Opthalmology endpoint.pdf p.186>
+  HOUSE opmcq-c2-5  stem 0.081  opts 1.000  key DIFF ("Hyperopia")  <ophthalmology MCQ.pdf p.17 (Ch.2 Q5)>
+  HOUSE opqb-t21-17  stem 0.000  opts 1.000  key SAME  <ophthalmology qb.pdf p.134, Q17 (Grade Gain, "End Exam 1"). Supporting>
+  EP ophep-optics-refraction-24  stem 0.067  opts 0.750  key DIFF ("Hypermetropia")  <Opthalmology endpoint.pdf p.206>
+  HOUSE opmcq-c2-18  stem 0.067  opts 0.750  key DIFF ("Hypermetropia")  <ophthalmology MCQ.pdf p.19 (Ch.2 Q18)>
+
+[q32 p.2239] best stem score 0.186 | key "Cornea"
+  no candidate
+
+[q33. p.2241] best stem score 0.200 | key "MRI of the orbit"
+  no candidate
+
+[q34 p.2243] best stem score 0.277 | key "Posterior capsular opacification"
+  HOUSE opmcq-c9-28  stem 0.222  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.67 (Ch.9 Q28, the last question of the chapter>
+
+[q35 p.2245] best stem score 0.157 | key "Anisocoria"
+  no candidate
+
+[q36 p.2247] best stem score 0.176 | key "Goblet cells"
+  no candidate
+
+[q37 p.2249] best stem score 0.169 | key "Retinoblastoma"
+  no candidate
+
+[q38 p.2251] best stem score 0.316 | key "1.5 mm"
+  no candidate
+
+[q39 p.2253] best stem score 0.350 | key "15 mmHg"
+  no candidate
+
+[q40 p.2255] best stem score 0.222 | key "Pancoast tumor"
+  no candidate
+
+[q41 p.2257] best stem score 0.262 | key "Dorsal midbrain"
+  no candidate
+
+[q42 p.2259] best stem score 0.262 | key "Argyll Robertson pupil"
+  no candidate
+
+[q43 p.2261] best stem score 0.286 | key "Grade 4 hypertensive retinopathy"
+  no candidate
+
+[q44. p.2263] best stem score 0.186 | key "Trichiasis"
+  HOUSE opmcq-c5-2  stem 0.147  opts 0.750  key SAME  <ophthalmology MCQ.pdf p.36 (Ch.5 Q2)>
+  HOUSE opmcq-c5-13  stem 0.000  opts 0.750  key DIFF ("Entropion")  <ophthalmology MCQ.pdf p.38 (Ch.5 Q13; option B is printed "Ectroion")>
+  HOUSE opmcq-c5-20  stem 0.000  opts 0.750  key SAME  <ophthalmology MCQ.pdf p.40 (Ch.5 Q20; option B is printed "Ectroion")>
+
+[q45 p.2265] best stem score 0.182 | key "Kerotoconus"
+  no candidate
+
+[q46 p.2267] best stem score 0.185 | key "Punctate epithelial keratitis"
+  HOUSE opmcq-c8-26b  stem 0.067  opts 0.750  key SAME  <ophthalmology MCQ.pdf pp.60-61 (Ch.8, ⚠️ the question is PRINTED WITH >
+
+[q47 p.2269] best stem score 0.310 | key "Intravitreal anti-VEGF injections"
+  no candidate
+
+[q48. p.2271] best stem score 0.098 | key "Limbus"
+  no candidate
+
+[q49 p.2273] best stem score 0.224 | key "Geographic corneal ulcer"
+  no candidate
+
+[q50. p.2275] best stem score 0.234 | key "Rubeosis iridis"
+  no candidate
+
+[q51 p.2277] best stem score 0.292 | key "Vitreous hemorrhage"
+  no candidate
+
+[q52 p.2279] best stem score 0.263 | key "Goniotomy"
+  no candidate
+
+[q53 p.2281] best stem score 0.247 | key "Mast cell stabilizers"
+  no candidate
+
+[q54 p.2283] best stem score 0.140 | key "Legally blind"
+  no candidate
+
+[q55. p.2285] best stem score 0.463 | key "Topical vasoconstrictors"
+  no candidate
+
+[q56 p.2287] best stem score 0.191 | key "Secondary optic atrophy"
+  HOUSE opqb-t14-584  stem 0.068  opts 1.000  key SAME  <ophthalmology qb.pdf p.93 (Q584), key p.100>
+  HOUSE opqb-t26-18  stem 0.071  opts 0.750  key DIFF ("Consecutive optic atrophy")  <ophthalmology qb.pdf p.155, Q18 (Grade Gain, "End Exam 6 (Photos)"), k>
+  HOUSE opqb-t26-19  stem 0.000  opts 0.750  key DIFF ("Papilledema-induced optic atrophy")  <ophthalmology qb.pdf p.155, Q19 (Grade Gain, "End Exam 6 (Photos)"), k>
+
+[q57 p.2289] best stem score 0.354 | key "Corneal scraping for culture followed by targeted antimicrobial therapy"
+  no candidate
+
+[q58 p.2291] best stem score 0.269 | key "Vitrectomy"
+  HOUSE opmcq-c13-2  stem 0.269  opts 0.750  key SAME  <ophthalmology MCQ.pdf p.85 (Ch.13 Q2)>
+
+[q59 p.2293] best stem score 0.190 | key "They can cause corneal melting and perforation"
+  no candidate
+
+[q60 p.2295] best stem score 0.194 | key "Temporal artery biopsy"
+  no candidate
+
+[q61. p.2297] best stem score 0.261 | key "Cerebrovascular imaging with CTA"
+  no candidate
+
+[q62 p.2299] best stem score 0.261 | key "Thyroid eye disease"
+  HOUSE opmcq-c19-1  stem 0.241  opts 1.000  key SAME  <ophthalmology MCQ.pdf p.118 (Ch.19 Q1, the first question of the chapt>
+  EP ophep-orbit-2  stem 0.037  opts 0.750  key SAME  <Opthalmology endpoint.pdf p.233>
+  HOUSE opqb-t3-117  stem 0.000  opts 0.750  key SAME  <ophthalmology qb.pdf p.16 (Q117), key p.19>
+
+[q63 p.2301] best stem score 0.197 | key "Light projection test"
+  no candidate
+
+[q64 p.2303] best stem score 0.141 | key "The macula remains attached"
+  no candidate
+
+[q65 p.2305] best stem score 0.357 | key "No screening is required"
+  no candidate
+
+[q66 p.2307] best stem score 0.148 | key "Restrictive strabismus"
+  EP ophep-squint-4  stem 0.077  opts 0.750  key DIFF ("Sensory strabismus")  <Opthalmology endpoint.pdf p.1082>
+
+[q67 p.2309] best stem score 0.274 | key "Drusen"
+  HOUSE opmcq-c13-1  stem 0.274  opts 0.750  key SAME  <ophthalmology MCQ.pdf p.85 (Ch.13 Q1, the first question under the "13>
+
+[q68. p.2311] best stem score 0.213 | key "Arcuate scotoma"
+  no candidate
+
+[q69 p.2313] best stem score 0.157 | key "Inferotemporal region"
+  no candidate
+
+[q70 p.2315] best stem score 0.188 | key "EDTA chelation therapy"
+  no candidate
+
+[q71 p.2317] best stem score 0.296 | key "Herpes zoster ophthalmicus"
+  no candidate
+
+[q72 p.2319] best stem score 0.463 | key "Phenylephrine 2.5%"
+  no candidate
+
+[q73 p.2321] best stem score 0.138 | key "Cerebellopontine angle"
+  no candidate
+
+[q74 p.2323] best stem score 0.244 | key "Binocular diplopia"
+  no candidate
+
+[q75 p.2325] best stem score 0.311 | key "Myasthenia gravis"
+  no candidate
+
+[q76 p.2327] best stem score 0.192 | key "Gray line"
+  no candidate
+
+[q77 p.2329] best stem score 0.296 | key "Primary open-angle glaucoma"
+  no candidate
+
+rows with a candidate: 20/77 | best-score median 0.234 | max 0.494

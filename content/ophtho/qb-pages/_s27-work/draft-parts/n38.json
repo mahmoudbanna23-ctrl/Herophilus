@@ -1,0 +1,9 @@
+{
+ "n": 38,
+ "lecture": "L19.1) Diabetic Retinopathy.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-ret-dr",
+ "expansion": "A. 1.5 mm is correct. The lecture defines one disc diameter as “(1500 μm)” when describing clinically significant macular oedema: “Retinal oedema one disc area or larger any part of which is within one disc diameter (1500 μm) of centre of fovea” (L19.1, page 11). Since 1500 μm equals 1.5 mm, the normal optic-disc diameter used as a fundus reference is 1.5 mm.\n\nB. 3.0 mm is wrong because it is twice the lecture’s stated one-disc-diameter reference of 1500 μm (L19.1, page 11).\n\nC. 5.0 mm is wrong because it is much larger than the stated 1500 μm, or 1.5 mm, disc-diameter reference (L19.1, page 11).\n\nD. 0.5 mm is wrong because it is only one third of the stated 1500 μm disc diameter (L19.1, page 11).",
+ "objective": "Recognize that one optic disc diameter is approximately 1.5 mm (1500 μm).",
+ "lectureCovers": true
+}

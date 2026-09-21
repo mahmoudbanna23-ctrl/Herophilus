@@ -1,0 +1,9 @@
+{
+ "n": 54,
+ "lecture": "L1,2) Ocular Anatomy, Symptomatology & Basic Eye Examination.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-va",
+ "expansion": "A is the keyed answer: a best-corrected visual acuity of 3/60 meets the usual legal-blindness threshold, so this patient is legally blind (not taken from the course material). The lecture explains that the upper Snellen fraction is the testing distance and the lower number is the distance at which a normal eye reads that line; therefore, 3/60 represents profoundly reduced acuity (L1,2, slide 116). The lecture does not teach legal-blindness or WHO visual-impairment classification thresholds.\n\nThere is a terminology discrepancy: under the WHO acuity categories, 3/60 is severe visual impairment, whereas blindness is acuity worse than 3/60 (not taken from the course material). Nevertheless, the printed key is retained because the question’s legal classification is legally blind.\n\nB is wrong because mild visual impairment is substantially better acuity than 3/60 (not taken from the course material). C is wrong because normal vision is represented by much better acuity, such as 6/6 in the lecture’s conversion table (L1,2, slide 114). D is wrong because moderate visual impairment is also a less severe category than an acuity of 3/60 (not taken from the course material).",
+ "objective": "Recognize that best-corrected visual acuity of 3/60 meets the usual legal-blindness threshold.",
+ "lectureCovers": false
+}

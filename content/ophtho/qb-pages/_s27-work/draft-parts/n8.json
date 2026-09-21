@@ -1,0 +1,9 @@
+{
+ "n": 8,
+ "lecture": "L24) Ocular tumors..txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-onc",
+ "expansion": "A. Choroid is correct. The lesion described is a choroidal metastasis: the lecture classifies “Choroidal metastasis (Breast-Bronchi)” as a secondary choroidal malignancy and illustrates “creamy multifocal subretinal lesions” as choroidal metastases (L24, slide 12). Thus, despite appearing subretinal on fundoscopy, the metastatic deposit is anatomically in the choroid. The lecture does not explicitly state that the choroid is the most common intraocular metastatic site; that prevalence statement is not taken from the course material.\n\nB. Retina is wrong because a subretinal lesion is located beneath the retina and may arise from the choroid; it is not therefore a retinal metastasis. The lecture’s metastatic examples are specifically labelled choroidal metastases (L24, slide 12).\n\nC. Optic nerve is wrong because optic-nerve metastasis is not the usual intraocular site for metastatic tumour (not taken from the course material).\n\nD. Iris is wrong because iris metastases can occur but are less common than choroidal metastases (not taken from the course material).",
+ "objective": "Identify the choroid as the most common intraocular site of metastatic tumours.",
+ "lectureCovers": true
+}

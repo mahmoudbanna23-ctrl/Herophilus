@@ -1,0 +1,9 @@
+{
+ "n": 76,
+ "lecture": "L1,2) Ocular Anatomy, Symptomatology & Basic Eye Examination.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-lid",
+ "expansion": "A. Gray line is correct. The lecture’s lid-margin diagram labels the “Grey line” between the “Front skin / muscle layer” and the “Tarsoconjunctival layer” (L1,2, slide 48). Thus, in a full-thickness lid-margin repair, it is the visible landmark used to restore the relationship of the anterior and posterior lamellae; careful re-apposition helps preserve a smooth margin and avoid notching (not taken from the course material).\n\nB. White line of Toldt is wrong. It is a peritoneal fusion plane along the lateral aspect of the colon, used in abdominal surgery, not an eyelid-margin landmark (not taken from the course material).\n\nC. Schwalbe line is wrong. The lecture identifies “Schwalbe’s Line” as part of the gonioscopic angle anatomy, listed after trabecular meshwork in the mnemonic “I CAN’T SEE THE STUPID LINE” (L1,2, slide 22). It is therefore an anterior-chamber angle structure, not the line separating eyelid lamellae.\n\nD. Arcus marginalis is wrong. This is the periosteal thickening at the orbital rim, rather than a landmark within the lid margin that guides alignment of its anterior and posterior lamellae (not taken from the course material).",
+ "objective": "Identify the gray line as the lid-margin landmark between the anterior and posterior eyelid lamellae.",
+ "lectureCovers": true
+}

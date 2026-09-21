@@ -1,0 +1,9 @@
+{
+ "n": 11,
+ "lecture": "L35,36) Chronic visual loss.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-cat",
+ "expansion": "A. Posterior subcapsular cataract is the keyed diagnosis. The course lists “Retinal dystrophy, retinitis pigmentosa” under complicated cataract (L35,36, page 21), and states that posterior subcapsular cataracts cause “glare as well as image blur and distortion” (L35,36, page 27). Thus, a posterior lens opacity with disabling glare in a patient with retinitis pigmentosa fits PSC. The specific word “granular” is not used by the course to describe PSC (not taken from the course material).\n\nB. Cortical cataract is wrong because it is an opacity of lens fibres surrounding the nucleus and typically begins as peripheral “wedge-shaped / spoke-like” opacities, rather than a posterior capsular opacity (L18, page 6).\n\nC. Nuclear sclerotic cataract is wrong because it is an exaggeration of nuclear sclerosis, with yellowing progressing to brunescence. It predominantly affects distant vision and can produce acquired myopia or temporary “second sight,” unlike this posterior opacity with glare (L18, page 6).\n\nD. Vossius ring is wrong because it is a pigment imprint on the anterior lens capsule after blunt ocular trauma, not a posterior lens opacity associated with retinitis pigmentosa (not taken from the course material). The course likewise places Vossius ring with traumatic cataract following blunt injury (L18, page 24).",
+ "objective": "Recognize posterior subcapsular cataract from posterior lens opacity and glare, including its association with retinitis pigmentosa.",
+ "lectureCovers": true
+}

@@ -1,0 +1,9 @@
+{
+ "n": 70,
+ "lecture": "L15,16) Cornea.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-cornea",
+ "expansion": "The finding is band keratopathy: superficial calcium deposition in Bowman's layer in the interpalpebral zone. The lecture states, “Band keratopathy: calcium deposits in Bowman's layer in interpalpebral zone,” and associates it with “chronic uveitis,” which fits this patient’s chronic juvenile idiopathic arthritis-associated ocular inflammation (L15,16, page 30). EDTA chelation therapy is the traditional definitive treatment because it chelates and removes the deposited calcium; the lecture explicitly lists “Treatment of band keratopathy: EDTA chelation (effective)” (L15,16, page 30).\n\nPhototherapeutic keratectomy is not the keyed traditional treatment. The lecture does list excimer laser PTK as an alternative treatment, but EDTA chelation is the treatment specified by the printed key (L15,16, page 29).\n\nPenetrating keratoplasty is not appropriate for this superficial calcific opacity. It replaces the full thickness of the cornea and is generally reserved for severe corneal opacity or structural disease not amenable to superficial treatment (not taken from the course material).\n\nTopical corticosteroids may be used to control the associated ocular inflammation, but they do not chelate or remove established corneal calcium deposits (not taken from the course material).",
+ "objective": "Recognize band keratopathy and identify EDTA chelation as its traditional definitive treatment.",
+ "lectureCovers": true
+}

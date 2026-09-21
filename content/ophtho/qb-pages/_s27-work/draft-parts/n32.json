@@ -1,0 +1,9 @@
+{
+ "n": 32,
+ "lecture": "L7,8) Refractive errors.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-refract",
+ "expansion": "A. Cornea is correct. The lecture’s optical-elements diagram assigns the cornea 42-44 Dioptres of the eye’s approximately 60 Dioptres total optical power, making it the largest contributor. It therefore supplies substantially more refractive power than the crystalline lens (L7,8, slide 23).\n\nB. Crystalline lens is incorrect because the same diagram assigns the lens 18-20 Dioptres, less than the cornea’s 42-44 Dioptres (L7,8, slide 23). The lens remains an important optical element and can alter its power during accommodation, but it does not provide the greatest proportion of the resting eye’s refractive power (not taken from the course material).\n\nC. Aqueous humor is incorrect. The lecture’s diagram identifies the cornea and lens as the eye’s optical elements, not the aqueous humor (L7,8, slide 23). Aqueous humor contributes little refractive effect because its refractive index is close to that of adjacent ocular media (not taken from the course material).\n\nD. Vitreous humor is incorrect for the same reason: it is not listed as one of the optical elements supplying the stated major powers (L7,8, slide 23). Its refractive contribution is small because its refractive index is similar to that of the surrounding ocular media (not taken from the course material).",
+ "objective": "The cornea provides the greatest proportion of the eye’s approximately 60 Dioptres of refractive power.",
+ "lectureCovers": true
+}

@@ -1,0 +1,9 @@
+{
+ "n": 42,
+ "lecture": "L22) Pupil and Visual pathway.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-neuro",
+ "expansion": "The keyed answer is Argyll Robertson pupil. The combination of small, irregular pupils with failure of the light response but preservation of constriction for accommodation is light-near dissociation. The lecture identifies Argyll Robertson pupil with “Small pupils,” “Light Near dissociation,” and “Neurosyphilis” (L22, slide 8). Its clinical photograph also shows pupils that are “miotic and irregular in outline” (L22, slide 5). Thus the late-stage syphilis context and the pupillary findings match option A.\n\nAdie tonic pupil is wrong. It is typically a unilateral dilated pupil with a poor light response and slow tonic near response, rather than bilaterally small irregular pupils with preserved normal accommodation (not taken from the course material). Adie’s pupil is not mentioned in the lecture.\n\nMarcus Gunn pupil is wrong. The lecture labels it “Relative Afferent Pupillary Defect” and shows that illuminating the affected eye produces less constriction, whereas illuminating the fellow eye constricts both pupils (L22, slide 6). This is a swinging-flashlight finding, not light-near dissociation in both pupils.\n\nHorner pupil is wrong. Horner syndrome can cause miosis, but the lecture lists “Dilation Lag,” “Ptosis,” “Apparent enophthalmos,” “Anhydrosis,” and congenital heterochromia with it (L22, slide 11). It does not present as the syphilis-associated light-near dissociation described here.",
+ "objective": "Recognize Argyll Robertson pupil as small irregular pupils with light-near dissociation associated with neurosyphilis.",
+ "lectureCovers": true
+}

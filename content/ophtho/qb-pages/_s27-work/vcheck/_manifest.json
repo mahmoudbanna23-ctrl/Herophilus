@@ -1,0 +1,22 @@
+{
+  "source_pdf": "D:/claude os/Medical school/Herophilus/Semester 8/Opthalmo/Questions/Opthalmology endpoint.pdf",
+  "requested_range": [
+    2176,
+    2329
+  ],
+  "model": "work-vision",
+  "start_time": "2026-09-21T02:20:40.509Z",
+  "end_time": "2026-09-21T02:21:04.661Z",
+  "pages_completed": 0,
+  "parse_errors": 0,
+  "http_errors": 1,
+  "stopped_by_429": true,
+  "pages": [
+    {
+      "page": 2176,
+      "image": "rv27\\p-2176.png",
+      "status": 429,
+      "error": "HTTP 429 quota exhausted"
+    }
+  ]
+}

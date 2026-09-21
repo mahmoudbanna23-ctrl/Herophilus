@@ -1,0 +1,9 @@
+{
+ "n": 26,
+ "lecture": "L13,14) Uvea & Sclera.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-uvea",
+ "expansion": "A. Acute iritis is correct. The lecture classifies anterior uveitis as “iritis / iridocyclitis” and describes it as usually unilateral, with ocular pain, red eye and photophobia (L13,14, slide 12; L13,14, slide 13). It also lists ankylosing spondylitis among immune-mediated causes of uveitis (L13,14, slide 11). The circumcorneal congestion is the ciliary injection described for anterior uveitis, and anterior-chamber inflammatory cells are directly consistent with the listed sign, “Anterior chamber: Cells & flare ± hypopyon” (L13,14, slide 16; L13,14, slide 16). Together, these findings identify acute anterior uveitis/iritis.\n\nB. Bacterial conjunctivitis is wrong because the course image shows superficial conjunctival injection with mucopurulent material on the lashes and medial canthus, while the cornea is clear (L6, slide 17). This vignette instead has ciliary injection and anterior-chamber cells, both supporting intraocular inflammation rather than isolated conjunctival disease.\n\nC. Viral keratitis is wrong because herpes simplex epithelial keratitis is taught as a corneal epithelial process with a classic dendritic ulcer and terminal buds (L15,16, page 13). No corneal epithelial lesion or dendritic ulcer is described; the decisive stated slit-lamp abnormality is inflammatory cells circulating in the anterior chamber.\n\nD. Episcleritis is wrong because it is described as a benign, self-limited red eye causing only mild pain or discomfort and mild localised tenderness (L13,14, slide 30). It does not account for this severe painful photophobic presentation with anterior-chamber inflammation.",
+ "objective": "Recognize acute anterior uveitis (iritis) from unilateral painful photophobic red eye, ciliary injection, anterior-chamber cells, and associated ankylosing spondylitis.",
+ "lectureCovers": true
+}

@@ -1,0 +1,9 @@
+{
+ "n": 3,
+ "lecture": "L29) Sqint I.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-squint",
+ "expansion": "Option A is keyed correctly. The presentation is accommodative esotropia: esotropia associated with hypermetropia and a high AC/A ratio, becoming greater at near fixation. The lecture gives its age as “2.5 - 5 years” (L29, slide 29). Thus 2 to 4 years best captures the classic preschool onset among the options. The lecture’s stated range extends to 5 years, a minor discrepancy from the keyed option’s upper limit; the printed key remains A.\n\nOption B is wrong because birth to 6 months is the lecture’s age for congenital esotropia, which is separately described as “< 6 months,” large-angle and constant (L29, slide 28), rather than accommodative esotropia.\n\nOption C is wrong because 8 to 10 years lies beyond the lecture’s stated “2.5 - 5 years” range for accommodative esotropia (L29, slide 29).\n\nOption D is wrong for the same reason: 12 to 14 years is well outside the preschool age range taught for accommodative esotropia (L29, slide 29). The +4.50 D cycloplegic finding is compatible with the lecture’s association with “Hypermetropia,” although the lecture gives no dioptric threshold or cycloplegic-refraction detail (L29, slide 29).",
+ "objective": "Accommodative esotropia classically presents in preschool children, with the lecture giving an age range of 2.5 - 5 years.",
+ "lectureCovers": true
+}

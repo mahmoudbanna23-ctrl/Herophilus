@@ -1,0 +1,9 @@
+{
+ "n": 44,
+ "lecture": "L5) Eyelid disease.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-lid",
+ "expansion": "A. Trichiasis is correct: it means misdirected eyelashes rubbing the ocular surface while the eyelid margin remains in its normal position (not taken from the course material). This exactly matches the vignette’s inward-pointing lashes with a normally positioned lid margin. The course explicitly includes a slide headed “Trichiasis,” although it states that it has “no body text, no definition” (L5, slide 27).\n\nB. Entropion is wrong because it is inward turning of the eyelid margin itself, which carries the lash line toward the globe (not taken from the course material). The stem specifically says that the margin is normally positioned. The course separately labels slides as “Entropion / Cicatricial” and “Entropion / Senile (Involutional)” (L5, slide 28–29), while also noting that slide 27 gives no printed distinction from entropion (L5, slide 27).\n\nC. Ectropion is wrong because it is outward eversion of the eyelid margin, rather than isolated inward misdirection of lashes (not taken from the course material). The course separately presents “Ectropion / Cicatricial,” “Ectropion / Paralytic,” and “Ectropion / Senile (Involutional)” (L5, slide 30–32).\n\nD. Distichiasis is wrong because it is an accessory row of eyelashes, usually arising from the meibomian-gland orifices; the stem describes several lashes from the usual margin that are misdirected, not a second lash row (not taken from the course material). Distichiasis is listed as absent from this deck (L5, slide 27).",
+ "objective": "Identify trichiasis as isolated inward misdirection of eyelashes despite a normally positioned eyelid margin.",
+ "lectureCovers": true
+}

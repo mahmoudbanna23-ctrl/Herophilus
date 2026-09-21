@@ -1,0 +1,9 @@
+{
+ "n": 46,
+ "lecture": "L3,4) Clinical- Ocular examination.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-cornea",
+ "expansion": "A is correct. Numerous tiny, scattered punctate epithelial staining spots are termed punctate epithelial keratitis (not taken from the course material). The finding represents diseased or absent corneal epithelium: the lecture states that fluorescein becomes green under cobalt-blue illumination and that areas of bright-green staining denote “absent or diseased epithelium” (L3,4, slide 16). It also lists punctate epithelial keratitis among the corneal manifestations of herpes zoster ophthalmicus (L15,16, page 16).\n\nB is wrong because a geographic ulcer is a large irregular epithelial lesion, rather than numerous tiny punctate spots. The lecture explicitly says, “Geographic = large irregular lesion” (L15,16, page 14).\n\nC is wrong because a dendritic ulcer has a linear branching configuration with terminal buds, not scattered punctate staining. The lecture describes the “Classic dendritic ulcer with terminal buds” and instructs the examiner to look for a “linear branching pattern with terminal buds on fluorescein staining” (L15,16, page 13 and 15).\n\nD is wrong because a corneal abrasion is a discrete traumatic epithelial defect rather than the named pattern of multiple punctate epithelial lesions (not taken from the course material). Although it can stain with fluorescein, the lecture describes abrasion as a defect whose extent is delineated by fluorescein staining (L15,16, page 46).",
+ "objective": "Recognize numerous tiny scattered fluorescein-staining corneal epithelial lesions as punctate epithelial keratitis.",
+ "lectureCovers": true
+}

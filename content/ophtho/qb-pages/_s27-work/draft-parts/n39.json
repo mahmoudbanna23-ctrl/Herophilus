@@ -1,0 +1,9 @@
+{
+ "n": 39,
+ "lecture": "L3,4) Clinical- Ocular examination.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-intro-exam",
+ "expansion": "Option A is the printed key. The lecture, however, states: “Normal range 10-21 mmHg (mean = 16 mmHg)” (L3,4, slide 36). Thus, the keyed value 15 mmHg is close to the stated normal population mean, but it does not exactly match the lecture’s quoted mean of 16 mmHg. Goldmann applanation tonometry is an appropriate context because the lecture lists “Applanation Tonometry — e.g., Goldman applanation tonometer” (L3,4, slide 39).\n\nOption B, 21 mmHg, is wrong as the average because the lecture gives it as the upper end of the normal range, not the mean: “Normal range 10-21 mmHg (mean = 16 mmHg)” (L3,4, slide 36).\n\nOption C, 8 mmHg, is wrong because it is below the lecture’s stated normal range of 10-21 mmHg (L3,4, slide 36).\n\nOption D, 25 mmHg, is wrong because it is above the stated normal range of 10-21 mmHg (L3,4, slide 36).",
+ "objective": "The question tests the average normal intraocular pressure in healthy adults.",
+ "lectureCovers": true
+}

@@ -1,0 +1,55 @@
+@@ n43
+OLD: (L23, page 21)
+NEW: (L23, page 23)
+
+@@ n46
+OLD: (L15,16, page 13 and 15)
+NEW: (L15,16, page 14 and 16)
+
+@@ n46
+OLD: herpes zoster ophthalmicus (L15,16, page 16)
+NEW: herpes zoster ophthalmicus (L15,16, page 17)
+
+@@ n46
+OLD: delineated by fluorescein staining (L15,16, page 46)
+NEW: delineated by fluorescein staining (L15,16, page 47)
+
+@@ n47
+OLD: thickening “more than 500 µ-m from centre of fovea,” whereas
+NEW: thickening more than 500 µm from the centre of the fovea, whereas
+
+@@ n49
+OLD: (L15,16, page 13; L15,16, page 15)
+NEW: (L15,16, page 14; L15,16, page 16)
+
+@@ n49
+OLD: early perineural infiltrates, and a late ring infiltrate (L15,16, page 17)
+NEW: early perineural infiltrates, and a late ring infiltrate (L15,16, page 18)
+
+@@ n49
+OLD: hypopyon, and contact lens history (L15,16, page 19)
+NEW: hypopyon, and contact lens history (L15,16, page 20)
+
+@@ n49
+OLD: Sabouraud culture; topical steroid history can occur but is not the defining morphology here (L15,16, page 19)
+NEW: Sabouraud culture; topical steroid history can occur but is not the defining morphology here (L15,16, page 20)
+
+@@ n50
+OLD: (L19.2, page 12; L19.2, slide 14)
+NEW: (L19.2, page 12; L19.2, page 14)
+
+@@ n50
+OLD: pulling the peripheral iris over the trabeculum (L12, page 14)
+NEW: pulling the peripheral iris over the trabeculum (L12, page 26)
+
+@@ n62
+OLD: demonstrates fatigability by lid drooping after sustained upgaze (L5, slide 13)
+NEW: demonstrates variability of the ptosis, which resolves after rest, and a positive Ice Pack Test (L5, slide 13), and shows the ptosis worsening on sustained upgaze (L30, slide 18)
+
+@@ n67
+OLD: blood dyscrasias but does not define them (L19.2, page 25)
+NEW: blood dyscrasias but does not define them (L19.2, page 43)
+
+@@ n70
+OLD: excimer laser PTK as an alternative treatment, but EDTA chelation is the treatment specified by the printed key (L15,16, page 29)
+NEW: excimer laser PTK as an alternative treatment, but EDTA chelation is the treatment specified by the printed key (L15,16, page 30)

@@ -1,0 +1,9 @@
+{
+ "n": 1,
+ "lecture": "L21) Optic Nerve.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-neuro-optic",
+ "expansion": "Option A is correct. A C/D ratio of 0.2 to 0.4 is the expected physiologically normal range in a healthy adult (not taken from the course material). This fits the normal fundus described in the lecture: the physiological cup is “small-to-moderate, central, occupying well under half the disc,” with a healthy neuroretinal rim and sharp disc margins (L21, slide 2). The healthy pink discs and distinct margins in the stem further support a normal optic-disc appearance.\n\nOption B is wrong because a C/D ratio of 0.5 to 0.7 is larger than the keyed normal range and should prompt assessment of the neuroretinal rim, inter-eye asymmetry, intraocular pressure, and visual field rather than being called universally normal (not taken from the course material). The lecture’s normal-disc image instead shows a cup occupying well under half the disc (L21, slide 2).\n\nOption C is wrong because a C/D ratio of 0.8 to 0.9 represents marked cupping, not the expected physiological cup in this healthy examination (not taken from the course material). The lecture contrasts the normal small central cup with glaucomatous discs in which the cup fills nearly the whole disc and the rim becomes a thin crescent (L21, slide 11).\n\nOption D is wrong because a C/D ratio of 1.0 means the cup occupies the entire disc, with no visible neuroretinal rim; this is not a physiologically normal finding (not taken from the course material). It is incompatible with the lecture’s normal disc, which has a healthy pink-orange rim all the way round (L21, slide 2).",
+ "objective": "Identify the physiologically normal cup-to-disc ratio expected in a healthy adult.",
+ "lectureCovers": false
+}

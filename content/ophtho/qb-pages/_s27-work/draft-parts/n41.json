@@ -1,0 +1,9 @@
+{
+ "n": 41,
+ "lecture": "L22) Pupil and Visual pathway.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-neuro",
+ "expansion": "A. Dorsal midbrain is correct. This presentation is dorsal midbrain syndrome: the lecture lists “Light Near dissociation,” “Upward gaze paralysis,” and “Convergence-retraction nystagmus” together under this syndrome (L22, slide 9). The preserved pupillary constriction with accommodation but absent response to light is light-near dissociation. Marked limitation of upward gaze and convergence-retraction nystagmus make the dorsal-midbrain localisation especially characteristic. The same slide also lists lid retraction and possible causes: “Pineal body tumors, Stroke, MS” (L22, slide 9).\n\nB. The occipital lobe is wrong because an occipital lesion affects the visual cortex and classically causes a contralateral homonymous visual-field defect, rather than vertical-gaze paralysis, convergence-retraction nystagmus, or light-near dissociation (not taken from the course material). The lecture’s visual-pathway diagram places the primary visual cortex after the optic radiations, not in the dorsal midbrain (L22, slide 13).\n\nC. The optic chiasm is wrong because chiasmal disease affects crossing optic nerve fibres and typically produces a bitemporal visual-field defect, not this combination of pupillary and vertical eye-movement signs (not taken from the course material). The lecture separately identifies the optic chiasm as part of the visual pathway (L22, slide 13).\n\nD. The cerebellum is wrong because cerebellar lesions more often cause impaired coordination, gait ataxia, or gaze-evoked nystagmus; they do not produce the dorsal-midbrain syndrome triad described here (not taken from the course material).",
+ "objective": "Recognize dorsal midbrain syndrome from light-near dissociation, upward-gaze paralysis, and convergence-retraction nystagmus.",
+ "lectureCovers": true
+}

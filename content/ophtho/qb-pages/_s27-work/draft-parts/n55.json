@@ -1,0 +1,9 @@
+{
+ "n": 55,
+ "lecture": "L13,14) Uvea & Sclera.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-sclera",
+ "expansion": "A. Topical vasoconstrictors are correct. The lecture specifically describes the “Blanching effect of Phenylephrine eye drops to differentiate conjunctivitis, episcleritis and anterior scleritis” (L13,14, slide 40). Phenylephrine is a topical sympathomimetic vasoconstrictor (not taken from the course material), so it can blanch susceptible superficial ocular vessels. This fits the intended diagnostic use in a mildly red, non-painful eye. The lecture identifies episcleritis as a relatively common, benign, self-limited red eye and describes mild pain and/or discomfort, whereas anterior scleritis has moderate to severe pain with globe tenderness (L13,14, slide 30 and 34). There is a discrepancy between the stem’s wording and the lecture table: the table states that episcleritis does not blanch with Phenylephrine 2.5 % but does blanch with Phenylephrine 10%; anterior scleritis does not blanch with either concentration (L13,14, slide 40).\n\nB. Topical anesthetics numb the ocular surface for examination or procedures; they do not produce the vasoconstrictive blanching response used in this test (not taken from the course material).\n\nC. Topical antibiotics treat susceptible bacterial ocular infection; they are not used to acutely distinguish superficial from deep vascular inflammation by blanching vessels (not taken from the course material).\n\nD. Topical cycloplegics paralyse the ciliary muscle and dilate the pupil; they do not serve as the vessel-blanching diagnostic drop (not taken from the course material).",
+ "objective": "Recognize phenylephrine, a topical vasoconstrictor, as the drop used for blanching-based differentiation of ocular redness.",
+ "lectureCovers": true
+}

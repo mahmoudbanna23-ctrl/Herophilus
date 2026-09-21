@@ -1,0 +1,9 @@
+{
+ "n": 16,
+ "lecture": "L35,36) Chronic visual loss.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-ret-dr",
+ "expansion": "The keyed option, A, intravitreal anti-VEGF injections, is right. This presentation is wet age-related macular degeneration: the lecture identifies the wet type as “RPE detachment and choroidal neovascularization” (L35,36, page 40) and states, “For wet AMD injections of Anti VEGF” (L35,36, page 45). Thus, in a patient with active submacular choroidal neovascularization, anti-VEGF treatment is the course-supported management.\n\nB, systemic corticosteroids, is wrong because the lecture’s treatment for wet AMD is anti-VEGF injections, not systemic corticosteroids (L35,36, page 43). Corticosteroids are not the current standard treatment for wet AMD-associated choroidal neovascularization (not taken from the course material).\n\nC, laser photocoagulation, is wrong as the current gold-standard choice. The lecture does mention that some macular degeneration types may be treated effectively with laser (L35,36, page 34), but it specifically gives anti-VEGF injections for wet AMD (L35,36, page 43). Therefore, the specific treatment statement for the wet, neovascular form supports A rather than laser.\n\nD, observation alone, is wrong because active wet AMD is treated with anti-VEGF injections in the lecture (L35,36, page 43), rather than simply observed. Observation would leave active neovascular leakage untreated (not taken from the course material).",
+ "objective": "Wet age-related macular degeneration with choroidal neovascularization is treated with intravitreal anti-VEGF injections.",
+ "lectureCovers": true
+}

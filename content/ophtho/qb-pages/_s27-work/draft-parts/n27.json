@@ -1,0 +1,9 @@
+{
+ "n": 27,
+ "lecture": "L1,2) Ocular Anatomy, Symptomatology & Basic Eye Examination.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-vissym",
+ "expansion": "A. Migraine with aura is correct. Recurrent, gradually expanding scintillating zig-zag visual phenomena lasting 20–30 minutes, with complete resolution followed immediately by unilateral throbbing headache, nausea, and photophobia, is the typical pattern of migraine visual aura followed by migraine headache (not taken from the course material). The course defines photopsia only as “Seeing flashes of light in the absence of a light source” and floaters as “Seeing floating black shadows in bright illumination” (L1,2, slide 82); it does not teach migraine aura or its duration.\n\nB. Rhegmatogenous retinal detachment is wrong. Its course pattern is floaters, flashes of light, and a “curtain” or peripheral shadow, often with sudden, rapid progression (L20, slide 11). This patient instead has a fully reversible, spreading zig-zag phenomenon and then a characteristic headache; no persistent curtain or shadow is described.\n\nC. Vitreous floaters are wrong. Floaters are black shadows seen floating in bright illumination (L1,2, slide 82), rather than recurrent expanding scintillating zig-zag lines followed by headache. Floaters do not account for the associated nausea and photophobia (not taken from the course material).\n\nD. Posterior vitreous detachment is wrong. The course does not cover posterior vitreous detachment as a named entity (L20, slide 20). It may cause floaters and flashes, but it does not characteristically cause a transient spreading visual aura followed by unilateral throbbing headache with nausea and photophobia (not taken from the course material).",
+ "objective": "The fact tested is that a reversible, gradually spreading scintillating visual aura lasting 20–30 minutes followed by migrainous headache indicates migraine with aura.",
+ "lectureCovers": false
+}

@@ -74,7 +74,7 @@ for (const r of survivors) {
   const expl = r.expl
     ? d.expansion.trim() + '\n\n**The endpoint file prints this explanation:**\n\n> ' + r.expl + '\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file\u2019s own.*'
     : d.expansion.trim() + '\n\nWritten for this bank \u2014 the endpoint file prints no explanation here.';
-  js += '{ id:"ophep2-model-exam-' + EXAM + '-' + r.n + '", module:"ophtho", bank:"endpoint", chapter:' + E(d.chapter) + ',\n  stem:' + E(r.stem) +
+  js += '{ id:"' + require('./sec-oph.js').SEC_P2[SEC].prefix + r.n + '", module:"ophtho", bank:"endpoint", chapter:' + E(d.chapter) + ',\n  stem:' + E(r.stem) +
     ',\n  options:' + JSON.stringify(r.opts) + ',\n  answer:' + r.key + ',\n  explanation:' + E(expl) + ',\n  objective:' + E(d.objective) +
     ',\n  source:"Opthalmology endpoint.pdf p.' + (r.markedOnly ? r.mp : r.p + '-' + r.mp) + '" },\n\n';
 }

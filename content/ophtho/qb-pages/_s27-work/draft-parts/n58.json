@@ -1,0 +1,9 @@
+{
+ "n": 58,
+ "lecture": "L20) Retinal detachment and degenerations.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-peds",
+ "expansion": "A. Vitrectomy is correct. This infant has tractional retinal detachment from advanced fibrovascular proliferation. The lecture explains that, in tractional retinal detachment, scar tissue or membranes physically pull the retina away, and treatment must remove that mechanical force. It specifically states: “Vitrectomy & Membrane Peeling” removes the vitreous and peels “FIBROVASCULAR MEMBRANES or scar tissue that is pulling on the retina” (L20, slide 15). Thus vitrectomy addresses the established traction causing the detachment.\n\nB. Laser photocoagulation is not the appropriate intervention once advanced tractional detachment is present. The ROP lecture lists laser photocoagulation as a modality for active ROP at “threshold disease,” rather than as surgery to remove pre-existing tractional membranes (L19.2, page 37). It cannot peel the fibrovascular tissue already pulling the retina off.\n\nC. Intravitreal anti-VEGF injection alone may suppress active neovascular drive, but it does not surgically release an established tractional retinal detachment (not taken from the course material). The indicated management here must remove the tractional membranes.\n\nD. Observation is inappropriate because the retina is already detached by traction. The lecture frames tractional-detachment treatment as relieving the pulling force, not watchful waiting (L20, slide 15).",
+ "objective": "Established tractional retinal detachment from fibrovascular membranes requires vitrectomy with membrane peeling to relieve retinal traction.",
+ "lectureCovers": true
+}

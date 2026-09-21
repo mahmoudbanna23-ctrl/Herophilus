@@ -1,0 +1,45 @@
+[
+ {
+  "pdf_page": 2330,
+  "printed_page": null,
+  "page_type": "theory",
+  "printed_q": null,
+  "stem": "Section divider: \"Exam Night Review\" banner, with a \"YOU CAN DO IT\" ribbon graphic. No question content.",
+  "options": [],
+  "key_letter": null,
+  "key_index": null,
+  "box_printed": false,
+  "explanation_verbatim": "",
+  "figure": true,
+  "note": "No printed page number visible on this render (bottom-right red page-number marker was not present in the image) — flagged, not guessed.",
+  "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+ },
+ {
+  "pdf_page": 2331,
+  "printed_page": 2332,
+  "page_type": "theory",
+  "printed_q": null,
+  "stem": "Examination of the Eye (theory notes, bulleted):\n• Anterior chamber and the iris posteriorly. The iris lies between the back surface of the cornea anteriorly.\n• Posterior chamber lies between the back surface of the iris anteriorly and the crystalline lens posteriorly.\n• Iris is the colored portion of the eye.\n• The pupil is jet-black in the newborn and starts to acquire a greyish tinge as the person gets older due to the continuous addition of new lens fibers throughout life causing light scattering; a process known as senile sclerosis. It is to be noted that in the absence of the lens (surgically removed or posteriorly dislocated), the pupil regains its jet-black color.",
+  "options": [],
+  "key_letter": null,
+  "key_index": null,
+  "box_printed": false,
+  "explanation_verbatim": "",
+  "figure": false,
+  "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+ },
+ {
+  "pdf_page": 2332,
+  "printed_page": 2333,
+  "page_type": "theory",
+  "printed_q": null,
+  "stem": "Theory notes (bulleted), continuation of Examination of the Eye:\n• Ciliary body has 3 functions (3 As) as follows:\n•Accommodation for near and far vision through the effect of contraction and relaxation of the ciliary muscle transmitted to the lens via the zonules (discussed in detail in the 2 notes below).\n•Aqueous humor secretion.\n•Attachment to the zonular fibers keeping the lens in place.\n• When the ciliary muscle relaxes, the zonules become taut (tense), resulting in flattening of the lens, and hence improving the focus for far objects (distant vision).\n• Conversely, when the ciliary muscle contracts, the zonules become relaxed, and consequently, the lens becomes more convex, improving the focus for near objects (accommodation).\n• Photoreceptor cells in the retina are of two types as follows:\n•Rods: Necessary for seeing in dim (faint) light.\n•Cones: Necessary for sharp vision, day vision, and color vision.",
+  "options": [],
+  "key_letter": null,
+  "key_index": null,
+  "box_printed": false,
+  "explanation_verbatim": "",
+  "figure": false,
+  "staged_by": "claude-sonnet lean-drafter 2026-09-21"
+ }
+]

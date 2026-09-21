@@ -1,0 +1,9 @@
+{
+ "n": 63,
+ "lecture": "L18) Cataract II.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-cat-surg",
+ "expansion": "A. Light projection test is right. In a dense cataract, the pre-operative assessment specifically includes “Projection of light in all 4 directions (dense cataract)” (L18, page 14). A penlight is directed from the superior, inferior, temporal, and nasal quadrants while the other eye is occluded; the patient identifies the direction of illumination. The result is recorded as good or bad light projection (L1,2, slide 130). Thus, it provides a gross assessment of remaining visual pathway function when only hand-motion vision is present and the fundus cannot be assessed adequately through the opaque lens.\n\nB. Snellen visual acuity testing is wrong because it measures letter-chart acuity, which cannot be meaningfully obtained when vision is only hand motion. It quantifies acuity but does not test whether the patient can localise light from the four quadrants in this dense-cataract setting.\n\nC. Amsler grid testing is wrong because the course assigns it to the central 10° of the visual field (L1,2, slide 123). It requires sufficient central vision and fixation to detect distortion or central field defects, neither of which is practical through a completely dense mature cataract with hand-motion vision.\n\nD. Confrontation visual field testing is wrong because the course distinguishes it from light projection: confrontation is for VA = 1/60 or better, whereas light projection is for VA less than 1/60 (L1,2, slide 123). It is therefore not the most appropriate gross visual-function test here.",
+ "objective": "In a dense cataract with profoundly reduced vision, assess gross visual function by testing projection of light in all four directions.",
+ "lectureCovers": true
+}

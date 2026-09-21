@@ -1,0 +1,9 @@
+{
+ "n": 12,
+ "lecture": "L9) lacrimal system..txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-lac",
+ "expansion": "This is acute dacryocystitis: the painful medial-canthal swelling, epiphora and abscess-like fluctuation match the lecture’s description of “pain in the medial canthal area,” “epiphora,” and “a very tender, tense red swelling” that commonly progresses to abscess formation (L9, slide 32). A is therefore the keyed initial treatment because this is an infection of the lacrimal sac, usually secondary to nasolacrimal-duct obstruction and commonly staphylococcal or streptococcal (L9, slide 32). Systemic antibiotic treatment addresses the acute infection. The lecture specifically states: “Initial treatment involves the application of warm compresses and oral antibiotics” (L9, slide 32). Thus, the topical-antibiotic component of option A is not stated in the course material; the printed key nevertheless remains A.\n\nB is wrong as the immediate step because the lecture says dacryocystorhinostomy is commonly required only “after the acute infection has been controlled” (L9, slide 32).\n\nC is wrong because “Irrigation and probing should not be performed” in acute dacryocystitis (L9, slide 32). The lecture also states that palpation is painful and should be avoided in acute dacryocystitis (L9, slide 11).\n\nD is wrong because corticosteroids do not treat the underlying bacterial lacrimal-sac infection (not taken from the course material). Initial management instead uses warm compresses and oral antibiotics; if pus points and an abscess is about to drain spontaneously, incision and drainage may be considered (L9, slide 32).",
+ "objective": "Recognize acute dacryocystitis and select antibiotic treatment as the initial management, with DCR deferred until the acute infection is controlled.",
+ "lectureCovers": true
+}

@@ -1,0 +1,9 @@
+{
+ "n": 37,
+ "lecture": "L24) Ocular tumors..txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-onc",
+ "expansion": "A. Retinoblastoma is correct. A dense white pupillary reflex is leukocoria. The lecture describes retinoblastoma as the most common primary intraocular malignancy of childhood and states that it arises from primitive retinal cells (L24, slide 19). Its clinical features include a yellow/white pupillary reflex, and leukocoria occurs in 60% of cases (L24, slide 20). The vignette is especially concerning because the child is 6 months old: the lecture gives a mean age of 4 months with a known history, and says that 90% of cases occur before 3 years of age (L24, slide 19). Retinoblastoma must therefore be urgently excluded. The lecture includes red reflex testing and ocular U/S (B-Scan) in its assessment, with B-Scan detecting calcification (L24, slide 22).\n\nB. Congenital glaucoma is wrong because it is not the serious intraocular malignancy classically signalled by leukocoria. It can present in infancy with enlarged eyes, corneal oedema, and blue sclera, but these findings are also listed as possible secondary manifestations of retinoblastoma (L24, slide 20). A dense white pupil should direct urgent exclusion toward retinoblastoma.\n\nC. Optic neuritis is wrong because it is an optic-nerve inflammatory disorder and does not characteristically produce a dense white pupillary reflex (not taken from the course material).\n\nD. Choroidal melanoma is wrong because it is a different intraocular tumour and is not the childhood tumour identified by this leukocoria vignette. The lecture instead specifically links retinoblastoma with a child presenting with a yellow/white pupillary reflex (L24, slide 20).",
+ "objective": "Recognize leukocoria in an infant as a presentation requiring urgent exclusion of retinoblastoma.",
+ "lectureCovers": true
+}

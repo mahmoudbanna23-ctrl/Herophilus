@@ -1,0 +1,9 @@
+{
+ "n": 59,
+ "lecture": "L15,16) Cornea.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-cornea",
+ "expansion": "A is correct. Prolonged outpatient topical anesthetic use is unsafe because it impairs corneal surface repair: the lecture states that these drops “Inhibit epithelial healing,” “Cause stromal melting,” and can produce “Anaesthetic keratopathy → perforation”; therefore, they should “NEVER” be prescribed for prolonged outpatient use (L15,16, page 48). In a corneal abrasion, pain relief may encourage repeated use while the injured cornea continues to be damaged and loses protective sensation.\n\nB is wrong. Acute angle-closure glaucoma results from obstruction of aqueous outflow at the anterior chamber angle, not from topical corneal anesthetic use (not taken from the course material).\n\nC is wrong. Rapid cataract formation is not an adverse effect of topical tetracaine or other topical anesthetics (not taken from the course material).\n\nD is wrong. Retinal detachment is separation of the retina and is not caused by prolonged topical anesthetic use (not taken from the course material).",
+ "objective": "Prolonged topical anesthetic use inhibits corneal epithelial healing and can cause stromal melting, anesthetic keratopathy, and perforation.",
+ "lectureCovers": true
+}

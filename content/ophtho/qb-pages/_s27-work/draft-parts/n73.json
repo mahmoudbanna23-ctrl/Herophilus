@@ -1,0 +1,9 @@
+{
+ "n": 73,
+ "lecture": "L15,16) Cornea.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-cornea",
+ "expansion": "A cerebellopontine angle lesion is the keyed answer. A slowly enlarging mass in this region can compress cranial nerves VIII, VII and V together, producing unilateral hearing loss and tinnitus, facial weakness with incomplete lid closure, and reduced corneal sensation. The course material links these ocular consequences to the relevant nerves: “Neurotrophic keratopathy: trigeminal anaesthesia” and lists “acoustic neuroma surgery” among its causes (L15,16, page 34). It also states that “Incomplete lid closure → inferior epithelial breakdown” and lists “VII nerve palsy” as a cause of exposure keratopathy (L15,16, page 36). The anatomical location of acoustic neuroma/vestibular schwannoma at the cerebellopontine angle is not taken from the course material.\n\nCavernous sinus disease can affect cranial nerves III, IV, V1, V2 and VI, typically producing ophthalmoplegia, sensory loss in the ophthalmic/maxillary distributions, and sometimes proptosis; it does not characteristically compress VIII to cause unilateral hearing loss and tinnitus (not taken from the course material).\n\nAn orbital apex lesion affects the optic nerve and ocular motor nerves, causing visual loss, ophthalmoplegia and V1 sensory disturbance. It would not account for auditory symptoms from VIII compression (not taken from the course material).\n\nAn optic chiasm lesion causes characteristic visual-field defects, especially bitemporal hemianopia when central chiasmal fibres are compressed. It does not explain ipsilateral VII, V and VIII findings or exposure keratopathy from facial weakness (not taken from the course material).",
+ "objective": "Recognize that a cerebellopontine angle mass can compress cranial nerves V, VII and VIII, causing corneal sensory loss, facial palsy and auditory symptoms.",
+ "lectureCovers": true
+}

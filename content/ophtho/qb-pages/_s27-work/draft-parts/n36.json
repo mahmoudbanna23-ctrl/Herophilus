@@ -1,0 +1,9 @@
+{
+ "n": 36,
+ "lecture": "L9) lacrimal system..txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-lac",
+ "expansion": "A. Goblet cells is correct. The lecture’s “The Secretory Part / Mucin and Lipid part” slide includes a diagram explicitly captioned “Distribution of goblet cells on the conjunctiva with eyelids everted” (L9, slide 5). Goblet cells are specialised conjunctival epithelial cells that secrete mucins, forming the mucous component of the tear film and helping the aqueous tears spread over the ocular surface (not taken from the course material). Thus, loss of these cells in cicatrizing conjunctival disease explains the reduced mucin layer and severe ocular-surface symptoms. The lecture also labels a distinct “MUCIN LAYER   0.2 µm” within the tear film (L9, slide 3).\n\nB. Meibomian glands are incorrect because they produce the lipid component of the tear film, not its mucous component (not taken from the course material). The lecture places meibomian glands on the “Mucin and Lipid part” slide, but the adjacent figure separately identifies conjunctival goblet cells (L9, slide 5).\n\nC. Lacrimal gland acini are incorrect because they principally secrete the aqueous portion of tears (not taken from the course material). This matches the lecture’s designation of the lacrimal gland within “The Secretory Part / Aqueous part” (L9, slide 4).\n\nD. Corneal endothelial cells are incorrect because they maintain corneal deturgescence through fluid transport across the posterior cornea; they do not secrete tear-film mucin (not taken from the course material).",
+ "objective": "Identify conjunctival goblet cells as the cells that produce the mucous layer of the tear film.",
+ "lectureCovers": true
+}

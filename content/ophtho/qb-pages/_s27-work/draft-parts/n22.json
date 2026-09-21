@@ -1,0 +1,9 @@
+{
+ "n": 22,
+ "lecture": "L11) Glaucoma Diag, POAG.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-glauc",
+ "expansion": "Carbonic anhydrase inhibitors are correct. The treatment protocol explicitly lists “carbonic anhydrase inhibitors” among drugs that decrease aqueous humour production (L11, page 19). Therefore, a topical carbonic anhydrase inhibitor fits the stated pressure-lowering mechanism when topical beta-blockers are unsuitable because of severe bronchial asthma (not taken from the course material).\n\nProstaglandin analogues are wrong because the lecture places them under “Increasing aqueous humour drainage,” not under decreasing production (L11, page 19). They lower intraocular pressure chiefly by increasing uveoscleral aqueous outflow (not taken from the course material).\n\nCholinergic agonists are wrong because their glaucoma effect corresponds to the lecture’s “miotics,” which are likewise listed with drugs that increase aqueous humour drainage (L11, page 19). They contract the ciliary muscle and facilitate trabecular outflow rather than primarily suppressing aqueous production (not taken from the course material).\n\nTopical corticosteroids are wrong because they are not aqueous-suppressant glaucoma medication. They are anti-inflammatory drugs, and local corticosteroid use may instead elevate intraocular pressure (not taken from the course material).",
+ "objective": "Carbonic anhydrase inhibitors lower intraocular pressure by decreasing aqueous humour production.",
+ "lectureCovers": true
+}

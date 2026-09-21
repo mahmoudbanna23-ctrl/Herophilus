@@ -1,0 +1,9 @@
+{
+ "n": 53,
+ "lecture": "L6) Conjunctiva.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-conj",
+ "expansion": "The keyed option, mast cell stabilizers, is appropriate for long-term maintenance of vernal keratoconjunctivitis because it reduces mast-cell degranulation and helps prevent recurrent allergic inflammation (not taken from the course material). The presentation is consistent with the lecture’s Vernal KeratoConjunctivitis image: the everted upper lid has “LARGE, FLAT-TOPPED, POLYGONAL GIANT PAPILLAE” in a “cobblestone mosaic” (L6, slide 38). The course material teaches this diagnostic sign but does not state maintenance treatment.\n\nSystemic corticosteroids are not appropriate for routine long-term maintenance because their substantial systemic adverse effects make them unsuitable for chronic control when safer topical preventive treatment is available (not taken from the course material). They may be reserved for selected severe disease under specialist supervision (not taken from the course material).\n\nTopical antibiotics are wrong because this is allergic rather than bacterial conjunctival disease; antibiotics treat susceptible bacterial infection and do not prevent the mast-cell-mediated inflammation of vernal keratoconjunctivitis (not taken from the course material).\n\nTopical antivirals are wrong because they target viral ocular infection, not allergic conjunctival inflammation or giant papillae (not taken from the course material).",
+ "objective": "Vernal keratoconjunctivitis with giant cobblestone papillae is maintained with mast cell stabilizers.",
+ "lectureCovers": false
+}

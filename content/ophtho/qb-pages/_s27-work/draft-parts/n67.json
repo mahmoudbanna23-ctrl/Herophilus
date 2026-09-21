@@ -1,0 +1,9 @@
+{
+ "n": 67,
+ "lecture": "L35,36) Chronic visual loss.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-insid",
+ "expansion": "A. Drusen is correct. The deposits described are drusen: small yellow extracellular deposits associated with macular degeneration. The lecture states, “Drusen are hyaline nodules (or colloid bodies) deposited in Bruch's membrane,” and explains that Bruch’s membrane separates the inner choroidal vessels from the retinal pigment epithelium (L35,36, page 41). It also says that drusen may be “small and discrete” or larger with irregular shapes and indistinct edges (L35,36, page 41). The stem’s macular location and gradual central distortion are therefore consistent with drusen. The lecture notes that patients with drusen alone tend to have normal or near-normal visual acuity with minimal metamorphopsia (L35,36, page 41). The stem’s wording places the deposits between the retinal pigment epithelium and Bruch’s membrane, whereas the lecture describes them as deposited “in Bruch's membrane” (L35,36, page 41).\n\nB. Cotton-wool spots are superficial retinal nerve-fibre-layer lesions caused by focal retinal ischaemia, not deposits at the retinal pigment epithelium–Bruch’s membrane interface (not taken from the course material).\n\nC. Hard exudates are intraretinal lipid deposits from vascular leakage, commonly seen with diabetic retinal disease; they are not drusen beneath the retina in the macular Bruch’s membrane region (not taken from the course material).\n\nD. Roth spots are white-centred retinal haemorrhages, rather than yellow subretinal deposits. The course lists Roth spots among retinal findings in blood dyscrasias but does not define them (L19.2, page 25); the distinguishing description is not taken from the course material.",
+ "objective": "Identify drusen as yellow deposits at the retinal pigment epithelium–Bruch’s membrane interface in macular degeneration.",
+ "lectureCovers": true
+}

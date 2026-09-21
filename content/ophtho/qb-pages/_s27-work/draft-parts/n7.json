@@ -1,0 +1,9 @@
+{
+ "n": 7,
+ "lecture": "L25) Trauma I.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-trauma",
+ "expansion": "A. Hyphema is correct. Following blunt facial trauma, the distinct horizontal level of bright red blood in the anterior chamber is a hyphema. The examination lecture explicitly labels anterior-chamber “Blood (Hyphema)” and distinguishes it from “Pus (Hypopyon)” (L3,4, slide 27). The trauma lecture also addresses hyphema after blunt trauma, including its grading and complications, such as re-bleeding in the “FIRST 5 DAYS” and uncontrolled high IOP (L25, slide 25; L25, slide 27).\n\nB. Hypopyon is wrong because it is pus, not blood, in the anterior chamber; the course labels it “Pus (Hypopyon)” (L3,4, slide 27). The described bright red fluid level is therefore inconsistent with hypopyon.\n\nC. Subconjunctival hemorrhage is wrong because the blood is beneath the conjunctiva on the external surface of the eye, rather than layering inside the anterior chamber (not taken from the course material). Although subconjunctival hemorrhage can occur after trauma, the trauma lecture lists it with orbital-floor-fracture presentation, not as anterior-chamber blood (L25, slide 20).\n\nD. Vitreous hemorrhage is wrong because it is bleeding into the vitreous cavity behind the lens, not a visible anterior-chamber fluid level (not taken from the course material). The course instead associates dense vitreous hemorrhage with a “Black reflex” (L3,4, slide 51), whereas this vignette gives the anterior-chamber blood sign of hyphema.",
+ "objective": "Identify hyphema as blood layering in the anterior chamber after blunt ocular trauma.",
+ "lectureCovers": true
+}

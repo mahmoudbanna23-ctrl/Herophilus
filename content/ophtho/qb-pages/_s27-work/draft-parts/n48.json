@@ -1,0 +1,9 @@
+{
+ "n": 48,
+ "lecture": "L25) Trauma I.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-trauma",
+ "expansion": "A. Limbus is correct. The lecture identifies loss of “LIMBAL STEM CELLS” after chemical injury as a cause of persistent corneal epithelial defects, and lists limbal stem cell transplantation among surgical interventions for these injuries (L25, slide 5; L25, slide 13). Thus, when normal corneal epithelial regeneration has been lost, the stem cells for transplantation are harvested from the limbus.\n\nB. Central cornea is wrong because the course specifically locates the relevant stem-cell population at the limbus, not the central cornea (L25, slide 5). The central cornea is therefore not the appropriate source for limbal epithelial stem-cell transplantation.\n\nC. Tarsal conjunctiva is wrong. It lines the inner surface of the eyelid and is not the anatomical reservoir of corneal epithelial stem cells; harvesting it would not replace the lost limbal stem-cell population (not taken from the course material).\n\nD. Conjunctival fornix is wrong. The fornix is the conjunctival recess between the lid and globe, rather than the limbal region identified in the lecture. Although the lecture notes that retained particles may be trapped in the conjunctival fornices after chemical injury, it does not identify the fornix as a source of corneal epithelial stem cells (L25, slide 10).",
+ "objective": "Corneal epithelial stem cells required for ocular-surface reconstruction are harvested from the limbus.",
+ "lectureCovers": true
+}

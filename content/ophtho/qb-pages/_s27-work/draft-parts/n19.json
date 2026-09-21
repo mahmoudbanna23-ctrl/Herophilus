@@ -1,0 +1,9 @@
+{
+ "n": 19,
+ "lecture": "L5) Eyelid disease.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-lid",
+ "expansion": "A is correct. The large, tense, tender, pointing lesion deep in the lid/tarsal plate is an internal hordeolum (infected chalazion) with an abscess that has not settled with initial conservative treatment. The lecture’s internal-hordeolum photographs show a “large, tense, red-and-yellow swelling” behind the lash line with a “pale pointing centre,” and a “yellow pointing abscess” deep to the lid margin (L5, slide 20). Incision and drainage evacuates this fluctuant collection; in this severe persistent presentation, it is the appropriate next step (not taken from the course material). The lecture also depicts incision and curettage from the tarsal conjunctival side, with contents “expressed/curetted from within the tarsus” (L5, slide 19).\n\nThere is a timing discrepancy in the course material: L37 states, “Refer the patient for incision and curettage of the lesion if there is no resolution in 3–4 weeks,” whereas this vignette specifies only 5 days. The printed key remains A; the vignette’s severe tenderness, pointing, fluctuation, and tarsal involvement support drainage rather than continued observation.\n\nB is wrong. Systemic corticosteroids do not drain an eyelid abscess and could suppress the inflammatory response during infection (not taken from the course material).\n\nC is wrong. Intralesional triamcinolone may be used in selected chronic, noninfected chalazia, but this is a tender, pointing, fluctuant infected lesion; steroid injection would not provide source control (not taken from the course material).\n\nD is wrong. Cryotherapy is not treatment for an internal hordeolum or infected chalazion and would not evacuate pus (not taken from the course material).",
+ "objective": "Recognize that a persistent, fluctuant, pointing internal hordeolum requires incision and drainage.",
+ "lectureCovers": true
+}

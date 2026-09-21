@@ -1,0 +1,9 @@
+{
+ "n": 69,
+ "lecture": "L21) Optic Nerve.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-glauc",
+ "expansion": "A. Inferotemporal region is correct. The ISNT rule describes the normal rim as thickest inferiorly, then superiorly, nasally, and thinnest temporally; glaucomatous loss characteristically affects the inferior and temporal rim early, producing inferotemporal thinning or notching. The lecture’s glaucoma fundus photograph shows that the surviving neuroretinal rim is “thinnest inferiorly and temporally” (L21, slide 10). Although the term “ISNT rule” is not printed in the lecture, this finding supports the keyed inferotemporal location.\n\nB. The nasal region is wrong because the lecture describes the retinal vessel trunk as emerging nasally in the glaucomatous disc; it does not identify the nasal rim as the characteristic site of initial loss (L21, slide 10). Nasal rim loss is not the typical early ISNT-rule pattern (not taken from the course material).\n\nC. The superonasal region is wrong. Superior rim damage can occur in glaucoma, but superonasal loss is not the characteristic initial site tested here; the course image instead identifies inferior and temporal rim thinning (L21, slide 10). The usual early pattern is inferotemporal or superotemporal, rather than superonasal (not taken from the course material).\n\nD. The central region is wrong because the centre of the disc is the cup, not the neuroretinal rim. In glaucoma, the lecture depicts a greatly enlarged cup with only a thin rim remaining at the edge of the disc (L21, slide 10). Rim loss therefore concerns the peripheral rim, not a central region.\n\n",
+ "objective": "Identify the inferotemporal neuroretinal rim as the characteristic early site of glaucomatous rim loss under the ISNT rule.",
+ "lectureCovers": true
+}

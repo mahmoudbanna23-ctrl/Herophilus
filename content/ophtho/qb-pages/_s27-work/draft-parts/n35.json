@@ -1,0 +1,9 @@
+{
+ "n": 35,
+ "lecture": "L3,4) Clinical- Ocular examination.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-pupil",
+ "expansion": "A. Anisocoria is correct because it means a difference in size between the two pupils. The examination shows marked inequality: the right pupil is 2 mm and the left is fixed and dilated at 8 mm. The lecture states that normally pupils are “round and equal in diameter (Isocoria)” and that a “Difference in size between both pupils termed anisocoria” (L3,4, slide 29). Thus, regardless of the trauma context or the possible cause of the fixed dilated pupil, the clinical term describing the unequal sizes is anisocoria. The 6 mm difference is also greater than the lecture’s 1 mm threshold for anisocoria requiring assessment in both very bright and very dim lighting (L3,4, slide 30).\n\nB. Strabismus is incorrect. Strabismus denotes ocular misalignment, in which the visual axes are not directed at the same target, rather than unequal pupil diameters (not taken from the course material). This stem gives pupil measurements, not an eye-position abnormality.\n\nC. Leukocoria is incorrect. Leukocoria refers to a white pupillary reflex or “white pupil,” not a difference in pupil diameter. The lecture labels leukocoria as a pupil colour finding in mature cataract (L3,4, slide 20). Here, the abnormality described is a fixed dilated pupil, not a white reflex.\n\nD. Amblyopia is incorrect. Amblyopia is reduced visual acuity and is not a visible pupil-size finding. The course specifically notes that “amblyopia is a visual acuity, not an appearance” (L29, slide 23). No visual-acuity deficit is described; the finding is unequal pupil size, so anisocoria remains the keyed answer.",
+ "objective": "Identify anisocoria as the term for unequal pupil sizes.",
+ "lectureCovers": true
+}

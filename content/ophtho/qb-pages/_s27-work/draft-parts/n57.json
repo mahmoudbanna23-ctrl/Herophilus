@@ -1,0 +1,9 @@
+{
+ "n": 57,
+ "lecture": "L15,16) Cornea.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-cornea",
+ "expansion": "A is right. This is Acanthamoeba keratitis: the lecture links it to “contact lens wear + tap water / swimming,” severe disproportionate pain, and a late “RING infiltrate” (L15,16, page 18). Initial investigation includes “corneal scraping & culture,” and the lecture specifies culture on non-nutrient agar with E. coli overlay (L15,16, page 19). The printed keyed sequence therefore appropriately obtains microbiological material before antimicrobial treatment. The lecture’s organism-specific treatment is PHMB (polyhexamethylene biguanide) plus propamidine isethionate hourly for weeks (L15,16, page 19).\n\nB is wrong because this presentation is an active infectious keratitis, not an indication for empirical steroid monotherapy. The lecture states, “AVOID topical steroids until infectious cause is excluded or controlled” (L15,16, page 11); steroids may potentiate infection and delay healing in bacterial keratitis (L15,16, page 48).\n\nC is wrong as immediate penetrating keratoplasty is not the initial step. The lecture reserves therapeutic keratoplasty for active keratitis failing medical therapy, while tectonic grafting restores integrity in descemetocele or perforation (L15,16, page 38). Neither failure of medical treatment nor perforation is given here.\n\nD is wrong because the severe pain, reduced vision, water exposure, and ring infiltrate identify a potentially sight-threatening corneal infection requiring diagnostic sampling and treatment, not observation. The lecture specifically says never to use tap water with contact lenses and to use lens solution (L15,16, page 19).",
+ "objective": "Recognize Acanthamoeba keratitis from contact-lens water exposure, severe disproportionate pain, and a ring infiltrate, then obtain corneal scraping and culture before treatment.",
+ "lectureCovers": true
+}

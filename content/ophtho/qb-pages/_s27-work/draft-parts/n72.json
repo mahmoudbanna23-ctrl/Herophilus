@@ -1,0 +1,9 @@
+{
+ "n": 72,
+ "lecture": "L13,14) Uvea & Sclera.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-sclera",
+ "expansion": "A. Phenylephrine 2.5% is the keyed answer because phenylephrine is a topical sympathomimetic vasoconstrictor; blanching after instillation indicates that the injected vessels are in a superficial, vasoconstrictable vascular bed rather than in the deeper scleral circulation (not taken from the course material). The clinical picture also resembles episcleritis: the lecture describes it as usually unilateral, with “Mild pain and/or discomfort,” and identifies simple episcleritis as “Sectoral or diffuse injection” (L13,14, slide 30; L13,14, slide 31). However, the lecture’s printed table conflicts with the premise and keyed concentration: it states that Phenylephrine 2.5 % blanches conjunctivitis but not episcleritis, whereas Phenylephrine 10% blanches episcleritis; anterior scleritis does not blanch with either concentration (L13,14, slide 40). The printed key remains A.\n\nB. Topical anesthetic drops reduce ocular surface sensation and may facilitate examination, but they are not used to produce diagnostic vascular blanching (not taken from the course material).\n\nC. Topical antibiotic drops treat susceptible superficial bacterial infection; they do not provide the immediate vasoconstrictive blanching test described in the stem (not taken from the course material).\n\nD. Topical cycloplegic drops paralyse accommodation and dilate the pupil. They are used in selected painful anterior-segment inflammatory conditions, but are not the diagnostic agent used to blanch superficial red-eye vessels (not taken from the course material).",
+ "objective": "Identify phenylephrine as the diagnostic vasoconstrictor drop used in assessing superficial versus deeper ocular redness.",
+ "lectureCovers": true
+}

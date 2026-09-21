@@ -1,0 +1,9 @@
+{
+ "n": 4,
+ "lecture": "L10) orbit.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-orbit",
+ "expansion": "This is preseptal cellulitis. The keyed answer, normal pupil response, is correct because the lecture states that in preseptal cellulitis “VA, pupillary reactions and ocular motility are UNIMPAIRED” (L10, slide 24). This child’s swollen red lid with normal visual acuity, eye movements, proptosis assessment, and pupil response therefore supports infection anterior to the orbital septum rather than orbital cellulitis.\n\nElevated intraocular pressure is wrong because raised IOP is listed among the ocular complications of bacterial orbital cellulitis, not as a normal finding in preseptal cellulitis (L10, slide 27). It would raise concern for the dangerous orbital process.\n\nPresence of a relative afferent pupillary defect (RAPD) is wrong because the lecture specifically lists “Relative afferent pupillary defect” among the clinical features of bacterial orbital cellulitis (L10, slide 26). A normal pupillary response, not an RAPD, fits the diagnosis in this vignette.\n\nSevere conjunctival chemosis is wrong because the lecture says that, in contrast to orbital cellulitis, “proptosis and chemosis are ABSENT” in preseptal cellulitis (L10, slide 24). Chemosis would therefore favour orbital involvement rather than the superficial preseptal infection.",
+ "objective": "Preseptal cellulitis has preserved pupillary reactions, whereas orbital cellulitis may produce an RAPD and other signs of orbital involvement.",
+ "lectureCovers": true
+}

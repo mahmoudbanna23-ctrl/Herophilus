@@ -1,0 +1,63 @@
+@@ n5
+OLD: (L1,2, slide 103; L1,2, slide 103)
+NEW: (L1,2, slide 103)
+
+@@ n6
+OLD: may read better because of “second sight” (L18, page 20)
+NEW: may read better because of “second sight” (L18, page 21)
+
+@@ n15
+OLD: does not teach posterior vitreous detachment or Weiss ring; it states only that aging may cause “vitreous shrinkage” (L20, slide 6).
+NEW: does not teach posterior vitreous detachment or Weiss ring — both are listed in its not-covered register (L20, slide 33); it states only that aging may cause “vitreous shrinkage” (L20, slide 6).
+
+@@ n16
+OLD: not systemic corticosteroids (L35,36, page 43)
+NEW: not systemic corticosteroids (L35,36, page 45)
+
+@@ n16
+OLD: but it specifically gives anti-VEGF injections for wet AMD (L35,36, page 43)
+NEW: but it specifically gives anti-VEGF injections for wet AMD (L35,36, page 45)
+
+@@ n16
+OLD: active wet AMD is treated with anti-VEGF injections in the lecture (L35,36, page 43)
+NEW: active wet AMD is treated with anti-VEGF injections in the lecture (L35,36, page 45)
+
+@@ n17
+OLD: “suggests globe penetration” (L25, slide 52/50; L25, slide 52)
+NEW: “suggests globe penetration” (L25, slide 52)
+
+@@ n19
+OLD: no resolution in 3–4 weeks,” whereas this vignette
+NEW: no resolution in 3–4 weeks,” (L37, page 31) whereas this vignette
+
+@@ n21
+OLD: identifies it as “Central Retinal Artery Occlusion” (L31,32, slide 4–9)
+NEW: identifies it as “Central Retinal Artery Occlusion” (L31,32, slide 9)
+
+@@ n27
+OLD: as a named entity (L20, slide 20)
+NEW: as a named entity (L20, slide 33)
+
+@@ n31
+OLD: The lecture does mention “Snowflake cataract (acute hyperglycaemia)” but does not state the associated acute refractive shift (L7,8, slide 42 is the relevant refractive mechanism; acute hyperglycaemia itself is not covered in this lecture).
+NEW: The cataract lecture mentions “Snowflake cataract (acute hyperglycaemia)” (L18, page 21), but neither lecture states the associated acute refractive shift; L7,8, slide 42 gives only the refractive mechanism, and acute hyperglycaemia itself is not covered in L7,8.
+
+@@ n34
+OLD: after surgery and is the "Most common late complication" (L18, page 16)
+NEW: after surgery and is the "Most common late complication" (L18, page 18)
+
+@@ n34
+OLD: Nd:YAG laser capsulotomy as definitive outpatient treatment (L18, page 16)
+NEW: Nd:YAG laser capsulotomy as definitive outpatient treatment (L18, page 18)
+
+@@ n34
+OLD: yellowish vitreous haze, rather than an isolated dense opacity behind the IOL (L18, page 16)
+NEW: yellowish vitreous haze, rather than an isolated dense opacity behind the IOL (L18, page 18)
+
+@@ n34
+OLD: posterior capsule rupture with vitreous loss (L18, page 16)
+NEW: posterior capsule rupture with vitreous loss (L18, page 18)
+
+@@ n34
+OLD: after surgery and represents fluid accumulating in the macular Henle's layer (L18, page 16)
+NEW: after surgery and represents fluid accumulating in the macular Henle's layer (L18, page 18)

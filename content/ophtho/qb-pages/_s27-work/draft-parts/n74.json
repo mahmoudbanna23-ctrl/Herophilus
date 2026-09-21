@@ -1,0 +1,9 @@
+{
+ "n": 74,
+ "lecture": "L25) Trauma I.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-trauma",
+ "expansion": "A. Binocular diplopia is correct. The CT description is the mechanism taught for an orbital floor fracture: “RESTRICTIVE ocular motility due to MECHANICAL ENTRAPMENT of the INFERIOR OBLIQUE or INFERIOR RECTUS muscles within the fracture” (L25, slide 21). The lecture specifically states that this produces diplopia in “BOTH UPGAZE AND DOWNGAZE” (L25, slide 21). Entrapment prevents the two eyes from moving together, so each eye fixes the target differently and two images are perceived when both eyes are open (not taken from the course material). The baseball mechanism also matches the listed history of “FIST, TENNIS BALL,” and CT may show tissue entrapment, the “TEAR DROP SIGN” (L25, slide 20 and 23).\n\nB. Monocular diplopia is wrong because this is an ocular-motility restriction involving alignment of the two eyes, hence binocular diplopia. In the same trauma lecture, “UNIOCULAR DIPLOPIA” is instead attached to iridodialysis and lens subluxation (L25, slide 29 and 34), which are different blunt-trauma injuries.\n\nC. Flashes and floaters are not the expected complaint from inferior-rectus entrapment. They are included among associated symptoms to ask about in ocular trauma (L25, slide 56), but “Flashes of light” and “Dark floaters” are shown with rhegmatogenous retinal detachment (L20, slide 12), not orbital muscle entrapment.\n\nD. A central scotoma is a central visual-field defect, not diplopia from restrictive eye movement. The course associates “Acute optic neuritis” with “central scotoma” (L21, slide 4), rather than with orbital floor fracture and inferior-rectus entrapment.",
+ "objective": "Inferior rectus entrapment in an orbital floor fracture causes restrictive ocular motility and binocular diplopia, particularly in upgaze and downgaze.",
+ "lectureCovers": true
+}

@@ -1,0 +1,9 @@
+{
+ "n": 9,
+ "lecture": "L3,4) Clinical- Ocular examination.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-ret-vasc",
+ "expansion": "Option A is correct: the normal retinal vein-to-artery diameter ratio is 3:2, meaning that retinal veins are normally wider than retinal arteries (not taken from the course material). This provides the baseline for recognising relative arteriolar narrowing during fundus examination. The examination lecture labels both “Retinal artery” and “Retinal vein” in its fundus picture, but explicitly lists “The normal retinal VEIN-TO-ARTERY RATIO” among points not covered in the deck (L3,4, slide 58).\n\nOption B, 1:1, is wrong because it would mean equal venous and arterial diameters; normally the veins are wider (not taken from the course material). Option C, 1:2, is wrong because it reverses the expected relationship and makes the vein narrower than the artery (not taken from the course material). Option D, 4:1, is wrong because it represents an extreme venous predominance, not the normal physiological calibre relationship (not taken from the course material).",
+ "objective": "State the normal retinal vein-to-artery diameter ratio.",
+ "lectureCovers": false
+}

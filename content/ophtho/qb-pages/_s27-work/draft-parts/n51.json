@@ -1,0 +1,9 @@
+{
+ "n": 51,
+ "lecture": "L3,4) Clinical- Ocular examination.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-vitreous",
+ "expansion": "A. Vitreous hemorrhage is the keyed answer. The markedly reduced red reflex and inability to see fundus details localize the problem to an opacity in the ocular media. The lecture states that media opacities including “vitreous haemorrhage” appear as black shadows against the reflex (L3,4, slide 50), and specifically lists “Dense vitreous hemorrhage (Black reflex)” under an absent reflex (L3,4, slide 51). In long-standing poorly controlled diabetes, proliferative diabetic retinopathy can produce fragile new vessels that bleed into the vitreous, causing abrupt, painless, profound visual loss and obscuring the fundus (not taken from the course material).\n\nB. Diabetic macular edema causes visual loss from retinal thickening at the macula, not from a hemorrhage that blocks the visual axis. It therefore would not be expected to markedly reduce the red reflex or prevent visualization of fundus details in this manner (not taken from the course material).\n\nC. Cataract is also a media opacity, and the lecture does note that a mature cataract can cause an absent reflex (L3,4, slide 51). However, cataract-related visual loss is usually gradual rather than sudden; the acute painless onset in this diabetic patient favors vitreous hemorrhage (not taken from the course material).\n\nD. Central retinal artery occlusion causes severe acute visual loss, but the fundus is expected to show retinal whitening, a cherry-red macular spot, and narrowed retinal vessels rather than being obscured by a black or markedly reduced red reflex (L19.2, page 26).",
+ "objective": "A dense vitreous hemorrhage causes sudden painless visual loss with a markedly reduced or absent black red reflex and obscured fundus view.",
+ "lectureCovers": true
+}

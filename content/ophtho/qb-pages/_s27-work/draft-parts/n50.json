@@ -1,0 +1,9 @@
+{
+ "n": 50,
+ "lecture": "L19.2) Retinal Vascular Disorders.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-ret-vasc",
+ "expansion": "A. Rubeosis iridis is correct. The fine abnormal new vessels on the anterior iris are rubeosis iridis (not taken from the course material). The retinal vascular lecture lists “Rubeosis irides in 50%” among signs of ischaemic central retinal vein occlusion and instructs clinicians to “Look for rubeosis and angle new vessels” during follow-up (L19.2, page 12; L19.2, slide 14). The severe pain and markedly raised intraocular pressure fit associated neovascular glaucoma (not taken from the course material); the glaucoma lecture states that a neovascular membrane can grow over the trabecular meshwork and contract, pulling the peripheral iris over the trabeculum (L12, page 14).\n\nB. Iridodialysis is an iris-root separation, producing a peripheral crescentic gap and a displaced pupil, rather than new vessels spread over the iris surface. The course illustrates it as an iris defect (L13,14, slide 8).\n\nC. Posterior synechiae are adhesions involving the posterior iris and are associated in the course with a festooned, irregular pupil in uveitis, not iris-surface neovascularization (L3,4, slide 31).\n\nD. Iris coloboma is a structural iris defect, illustrated as an inferiorly extending keyhole-shaped pupil defect, not acquired fine iris vessels (L13,14, slide 8).",
+ "objective": "Recognize rubeosis iridis as abnormal neovascularization on the anterior iris, often associated with retinal ischaemia and neovascular glaucoma.",
+ "lectureCovers": true
+}

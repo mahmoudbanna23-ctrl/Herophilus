@@ -1,0 +1,9 @@
+{
+ "n": 40,
+ "lecture": "L5) Eyelid disease.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-neuro",
+ "expansion": "A. Pancoast tumor is the keyed answer. The ipsilateral ptosis and miosis indicate Horner syndrome, which the lecture labels “Sympathetic paralysis (Horner Syndrome)” (L5, slide 11); the slide’s photograph also shows mild ptosis and miosis. In this older heavy smoker, shoulder pain radiating to the arm together with Horner syndrome requires urgent exclusion of an apical lung (Pancoast) tumour, which can disrupt the cervical sympathetic pathway (not taken from the course material). The lecture does not state the association between Horner syndrome and Pancoast tumour, nor facial anhidrosis.\n\nB. Pituitary adenoma may produce visual-field defects through optic-chiasm compression, but it does not classically produce the ipsilateral sympathetic pattern of ptosis, miosis, and facial anhidrosis (not taken from the course material).\n\nC. Optic nerve glioma primarily causes optic-nerve dysfunction, such as reduced visual acuity, colour-vision impairment, visual-field loss, or optic-disc changes; it does not explain this Horner syndrome with shoulder and arm pain (not taken from the course material).\n\nD. Multiple sclerosis can cause optic neuritis or internuclear ophthalmoplegia, but it is not the urgent characteristic cause of this smoking-associated Horner syndrome and shoulder pain (not taken from the course material).",
+ "objective": "Recognize Horner syndrome in a smoker with shoulder pain and urgently exclude a Pancoast tumour.",
+ "lectureCovers": false
+}

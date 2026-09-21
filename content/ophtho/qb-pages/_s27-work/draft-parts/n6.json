@@ -1,0 +1,9 @@
+{
+ "n": 6,
+ "lecture": "L18) Cataract II.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-cat",
+ "expansion": "The keyed answer is C, posterior subcapsular cataract. PSC is a posterior capsular opacity near the nodal point and is described as the most visually disabling per unit size; its worst symptoms are near vision, bright light, and miosis (L18, page 6). Thus it can cause major visual difficulty, particularly while reading in bright light. However, the lecture directly contradicts the printed key for the specific “second sight” refractive shift: it states, “Nuclear: myopic shift allows reading without glasses (temporary)” (L18, page 5), and under nuclear cataract, “‘Second sight’: elderly regain near vision temporarily” (L18, page 6). The printed key remains C as required, but this discrepancy should be noted.\n\nA. Nuclear sclerotic cataract is wrong according to the printed key. The lecture nevertheless identifies increased nuclear refractive index causing acquired myopia and predominantly impaired distant vision, which produces the temporary ability to read without glasses (L18, page 6). It also explicitly summarizes that a patient with nuclear cataract may read better because of “second sight” (L18, page 20).\n\nB. Cortical cataract is wrong because it consists of wedge-shaped or spoke-like peripheral opacities, with visual-acuity impact depending on their proximity to the visual axis (L18, page 6). The lecture associates cortical opacity with monocular diplopia and glare, rather than the acquired myopic shift described in the stem (L18, page 5).\n\nD. Rosette cataract is wrong because it is a traumatic cataract pattern, rather than the typical age-related refractive explanation for this vignette (not taken from the course material).",
+ "objective": "Recognize the cataract type associated with the temporary myopic “second sight” phenomenon.",
+ "lectureCovers": true
+}

@@ -1,0 +1,9 @@
+{
+ "n": 43,
+ "lecture": "L23) Ocular manifestations of systemic diseases.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-systemic",
+ "expansion": "A is correct: this is Grade 4 hypertensive retinopathy. The lecture states that Grade 4 is “grade 3 plus disc swelling” (L23, page 23). This patient has the Grade 3 retinal findings—flame-shaped haemorrhages and cotton-wool spots/exudates—plus bilateral optic disc swelling. The stated blood pressure also fits the lecture’s description of a severe acute rise: diastolic pressure greater than 120 mm Hg and systolic pressure greater than 200 mm Hg, which produces “cotton-wool spots, flame-shaped hemorrhages” (L23, page 20). The lecture adds that in malignant hypertension optic disc swelling can resemble papilloedema (L23, page 18). The lecture labels this sequence “Modified Scheie Classification,” rather than Keith-Wagener-Barker, but its Grade 4 criterion supports the printed key (L23, page 23).\n\nB is wrong because Grade 1 is only “barely detectable arterial narrowing” (L23, page 23), without retinal haemorrhages, exudates, or disc swelling.\n\nC is wrong because Grade 2 is “obvious arterial narrowing with focal irregularities” (L23, page 21). It does not include the retinal lesions or swollen discs described here.\n\nD is wrong because Grade 3 is Grade 2 plus “retinal hemorrhages and/or exudates” (L23, page 23). Although this patient has those Grade 3 features, the additional bilateral optic disc swelling advances the grade to Grade 4.",
+ "objective": "Identify Grade 4 hypertensive retinopathy as Grade 3 retinal haemorrhages/exudates plus optic disc swelling.",
+ "lectureCovers": true
+}

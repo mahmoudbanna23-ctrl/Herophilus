@@ -1,0 +1,9 @@
+{
+ "n": 68,
+ "lecture": "L11) Glaucoma Diag, POAG.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-glauc",
+ "expansion": "A is correct. This is an arcuate scotoma: a dense curved field defect arising from the blind spot and arching around fixation toward the nasal field, following the arcuate retinal nerve-fibre bundles (not taken from the course material). In open-angle glaucoma, the lecture links neural rim thinning to visual-field changes and specifically lists “Arcuate scotomata (superior, inferior)” (L11, page 14). The described chronic glaucoma setting and arcuate configuration therefore fit this named defect.\n\nB is wrong because a central scotoma is centred on fixation rather than curving from the blind spot around it. The course illustrates central scotoma as a central oval defect in acute optic neuritis (L21, slide 4).\n\nC is wrong because bitemporal hemianopia is loss of the temporal outer half of each eye’s field, not a local curved scotoma. The lecture’s chiasmal field figure shows the outer temporal halves lost with nasal halves spared (L22, slide 15).\n\nD is wrong because homonymous hemianopia is loss of the same half of the visual field in both eyes, typically from a post-chiasmal lesion, rather than an arcuate defect associated with glaucoma. The lecture describes a left homonymous hemianopia as loss of the left half in both eyes (L22, slide 17).",
+ "objective": "Recognize arcuate scotoma as a characteristic glaucomatous visual-field defect.",
+ "lectureCovers": true
+}

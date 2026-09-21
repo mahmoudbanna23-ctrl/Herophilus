@@ -1,0 +1,9 @@
+{
+ "n": 65,
+ "lecture": "L33,34) The White Eye.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-peds",
+ "expansion": "Option A is correct. This infant was born full-term at 38 weeks and weighs 3.2 kg, so he does not have the preterm, low-birth-weight context associated with ROP. The lecture describes ROP as “Proliferative retinopathy in preterm and low birth weight infants,” which may lead to “epiretinal fibrosis and tractional retinal detachment” (L33,34, page 22). Therefore routine ROP screening is not indicated for the infant described (not taken from the course material).\n\nOption B is wrong because immediate examination within 24 hours is not the routine timing for ROP screening in an otherwise well full-term infant; moreover, this infant has no screening indication (not taken from the course material).\n\nOption C is wrong because screening at 4 weeks of age applies only when an infant meets an ROP screening indication; it should not be arranged simply because the patient is a newborn (not taken from the course material).\n\nOption D is wrong because discharge timing does not create an indication for ROP screening. A full-term infant of this birth weight does not require screening before discharge (not taken from the course material). The lecture names ROP and describes its complications and management, including observation, laser, intravitreal anti-VEGF, and PPV, but it does not provide screening eligibility criteria or screening timing (L33,34, page 19).",
+ "objective": "ROP screening is not required for a full-term infant with normal birth weight; it is directed toward preterm, low-birth-weight infants.",
+ "lectureCovers": false
+}

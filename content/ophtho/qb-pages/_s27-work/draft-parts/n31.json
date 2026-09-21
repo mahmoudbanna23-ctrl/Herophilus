@@ -1,0 +1,9 @@
+{
+ "n": 31,
+ "lecture": "L7,8) Refractive errors.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-refract",
+ "expansion": "A. Myopia is the keyed answer. Acute severe hyperglycaemia can produce a transient myopic refractive shift through altered lens hydration and refractive index (not taken from the course material). This makes distant objects blur, matching the vignette. The lecture defines myopia as parallel rays being focused “IN FRONT OF” the retina with accommodation at rest and lists “Index myopia” with increased refractive index of the lens nucleus as a refractive cause (L7,8, slide 39; L7,8, slide 42). The lecture does mention “Snowflake cataract (acute hyperglycaemia)” but does not state the associated acute refractive shift (L7,8, slide 42 is the relevant refractive mechanism; acute hyperglycaemia itself is not covered in this lecture).\n\nB. Hyperopia is incorrect because it is the opposite optical state: parallel rays are focused “BEHIND” the retina with accommodation at rest (L7,8, slide 49). It would not explain the printed-keyed acute myopic shift in this setting (not taken from the course material).\n\nC. Presbyopia is incorrect because it is age-related recession of the near point, usually in persons 40 years of age or older, producing impaired near accommodation rather than an abrupt distance-vision change after hyperglycaemia (L7,8, slide 73). The acute metabolic association is not taken from the course material.\n\nD. Astigmatism is incorrect because it results from unequal refractive power in different meridians, most commonly corneal in origin, rather than a transient uniform lens-related refractive shift from acute hyperglycaemia (L7,8, slide 64; not taken from the course material).",
+ "objective": "Acute hyperglycaemia may induce a transient myopic refractive shift with blurred distance vision.",
+ "lectureCovers": false
+}

@@ -1,0 +1,9 @@
+{
+ "n": 13,
+ "lecture": "L35,36) Chronic visual loss.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-insid",
+ "expansion": "A. Observation and low-vision aids is correct because this is an established disciform scar replacing the fovea with profound irreversible central visual loss. A fibrotic end-stage macular lesion cannot be restored by treating prior neovascular activity; management is supportive, including low-vision rehabilitation and aids to maximize remaining peripheral vision (not taken from the course material). The lecture supports that AMD affects central vision and can impair reading and other fine-detail activities (L35,36, page 39).\n\nB. Intravitreal anti-VEGF injections are used for active wet AMD with choroidal neovascularization, but they do not reverse an inactive dense fibrovascular scar or recover destroyed foveal function (not taken from the course material). There is an important course discrepancy: the lecture states broadly, “For wet AMD injections of Anti VEGF” (L35,36, page 45), whereas this vignette specifically describes irreversible scar-stage disease; the printed key remains A.\n\nC. Pan-retinal photocoagulation is not treatment for a macular disciform scar. PRP treats proliferative diabetic retinopathy; the lecture lists “PDR     PRP” under diabetic-retinopathy management (L35,36, page 51). It would not restore central vision from this scar (not taken from the course material).\n\nD. Scleral buckling is a surgical treatment for selected rhegmatogenous retinal detachments, not macular neovascularization or a disciform scar (not taken from the course material).",
+ "objective": "Recognize that end-stage disciform scarring from wet AMD is managed with observation and low-vision support rather than lesion-directed treatment.",
+ "lectureCovers": true
+}

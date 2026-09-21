@@ -1,0 +1,9 @@
+{
+ "n": 20,
+ "lecture": "L31,32) Acute visual Loss.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-acute",
+ "expansion": "A is correct. The presentation is central retinal artery occlusion: the course case pairs a “white, opacified retina with a cherry-red macular spot” with the diagnosis “Central Retinal Artery Occlusion” (L31,32, slide 7; L31,32, slide 9). In that same right-eye case, “The swinging –flashlight test confirms a right relative afferent pupillary defect (Marcus Gunn pupil)” (L31,32, slide 6). Therefore, with the lesion in the right eye, the expected finding is an ipsilateral—right—RAPD. The examination lecture illustrates that, in RAPD, the pupil “Dilates” as the light is swung to the affected eye, unlike normal constriction (L3,4, slide 34).\n\nB is wrong because the defect is in the eye with the severe retinal ischaemia, not the unaffected fellow eye. The course case explicitly identifies the RAPD as right-sided while describing the left retina as normal (L31,32, slide 6–7).\n\nC is wrong because a fixed dilated pupil is an efferent pupillary abnormality, rather than the relative afferent abnormality demonstrated by this retinal lesion (not taken from the course material). The relevant course case instead records a right RAPD and preserved consensual reaction of the right pupil (L31,32, slide 5–6).\n\nD is wrong because Argyll Robertson pupil is a light-near dissociation syndrome associated in the lecture with “Affection of pretectal area,” “Small pupils,” and “Neurosyphilis,” rather than unilateral retinal artery occlusion (L22, slide 8).",
+ "objective": "Recognize that central retinal artery occlusion produces an ipsilateral relative afferent pupillary defect on the swinging flashlight test.",
+ "lectureCovers": true
+}

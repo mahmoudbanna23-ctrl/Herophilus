@@ -1,0 +1,9 @@
+{
+ "n": 77,
+ "lecture": "L11) Glaucoma Diag, POAG.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-glauc",
+ "expansion": "A. Primary open-angle glaucoma is the keyed diagnosis. The combination of raised IOP and bilateral marked optic-disc cupping represents glaucoma: the lecture defines it as a triad of “Elevated intraocular pressure (IOP),” “Optic nerve affection (cupping),” and visual-field defects (L11, page 5). Normal central visual acuity does not exclude it, because central vision diminishes only in end-stage disease (L11, page 14), and patients are “Most commonly → asymptomatic” (L11, page 17). The age also fits, as older age (> 5th decade) is a predisposing factor for primary open-angle glaucoma (L11, page 11). The vignette does not provide gonioscopy or exclude secondary causes; the lecture states “Primary → no obvious cause” and defines an open angle by visible exposure of the trabecular meshwork to aqueous humour on gonioscopy (L11, page 7; L11, page 8). Nevertheless, the printed key is retained.\n\nB. Age-related macular degeneration primarily affects the macula and therefore central vision, rather than producing glaucomatous optic-disc cupping with raised IOP (not taken from the course material).\n\nC. Cataract is an opacity of the natural crystalline lens and typically causes progressive painless reduction in vision; it does not account for marked bilateral optic-disc cupping (not taken from the course material).\n\nD. Diabetic retinopathy is a retinal microvascular disease with retinal lesions such as microaneurysms, haemorrhages, exudates, or neovascularization, rather than the cupped optic discs characteristic of glaucoma (not taken from the course material).",
+ "objective": "Recognize primary open-angle glaucoma from asymptomatic raised IOP with glaucomatous optic-disc cupping despite preserved central visual acuity.",
+ "lectureCovers": true
+}

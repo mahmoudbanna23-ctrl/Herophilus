@@ -1,0 +1,9 @@
+{
+ "n": 30,
+ "lecture": "L7,8) Refractive errors.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-refract",
+ "expansion": "A is correct. The hyperglycaemia-associated myopic shift is transient; once blood glucose normalizes, lens hydration and refractive power return toward their previous state, so the refraction moves back toward baseline. This is consistent with the course definition of myopia as parallel rays focusing “IN FRONT OF” the retina (L7,8, slide 39), although the glucose-related reversible shift itself is not taught in the lectures (not taken from the course material).\n\nB is wrong because persistent or permanently worsening myopia would not describe a transient metabolic refractive change after glycaemic control. Resolution toward the pre-hyperglycaemic refraction is expected (not taken from the course material).\n\nC is wrong because irregular astigmatism is a meridional refractive abnormality, not the expected consequence of correcting hyperglycaemia. The course describes astigmatism as failure of rays to focus to a single retinal point, producing two focal lines (L7,8, slide 61); it does not link it to glucose normalization.\n\nD is wrong because the vignette describes a reversible refractive shift, not cataract formation. Diabetes is listed among systemic associations of complicated cataract (L17, page 3), but this does not make cataract an inevitable or irreversible result of a short-lived hyperglycaemic refractive change (not taken from the course material).",
+ "objective": "Recognize that a transient myopic refractive shift during severe hyperglycaemia resolves toward baseline after blood glucose normalization.",
+ "lectureCovers": false
+}

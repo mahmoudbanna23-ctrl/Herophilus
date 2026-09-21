@@ -1,0 +1,9 @@
+{
+ "n": 52,
+ "lecture": "L12) Glaucoma 2 Cong, PACG, 2ry.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-glauc",
+ "expansion": "A. Goniotomy is the keyed definitive first-line treatment for congenital/developmental glaucoma. The infant’s watering, photophobia and blepharospasm match the lecture’s symptom triad, while enlarged corneas, corneal oedema and increased IOP are listed signs (L12, page 35; L12, page 39). Goniotomy is an angle operation that opens the abnormal aqueous outflow pathway (not taken from the course material). However, the lecture specifically states, “Clear cornea → goniotomy” (L12, page 48). Because this vignette describes cloudy corneas, this conflicts with the lecture: for an “Opaque cornea” it lists trabeculotomy, trabeculectomy with antimetabolites, or synthetic valve implantation (L12, page 49). The printed key remains A as required.\n\nB. Topical beta-blockers alone are wrong because medical treatment is described as “Temporary till surgery,” rather than definitive therapy (L12, page 47). They may lower IOP temporarily (not taken from the course material), but do not provide the required surgical correction.\n\nC. Systemic carbonic anhydrase inhibitors are also not definitive first-line treatment. They can reduce IOP as a short-term measure (not taken from the course material), but the lecture distinguishes temporary medical treatment from surgical management (L12, page 47).\n\nD. Observation only is wrong because the child has markedly raised IOP with structural corneal enlargement and oedema. Untreated congenital glaucoma can cause progressive optic nerve damage and visual loss (not taken from the course material); the lecture presents surgery as the treatment pathway (L12, page 47).",
+ "objective": "Recognize congenital/developmental glaucoma and identify goniotomy as the printed-key definitive surgical treatment.",
+ "lectureCovers": true
+}

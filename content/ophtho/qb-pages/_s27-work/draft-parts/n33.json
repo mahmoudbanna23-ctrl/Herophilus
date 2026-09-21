@@ -1,0 +1,9 @@
+{
+ "n": 33,
+ "lecture": "L10) orbit.txt",
+ "model": "codex gpt-5.6-terra",
+ "chapter": "op-orbit",
+ "expansion": "A. MRI of the orbit is correct. This presentation is characteristic of thyroid eye disease: the lecture describes bilateral proptosis with lid retraction (L10, slide 18) and restrictive myopathy causing double vision in positions of gaze (L10, slide 19). MRI is the appropriate modality because it can image orbital inflammatory disease (L10, slide 14), and the TED MRI figure specifically shows “enlarged extraocular muscle bellies” (L10, slide 21). It therefore directly evaluates the suspected orbital soft-tissue and extraocular-muscle enlargement.\n\nB. Fluorescein angiography is wrong because it is not an orbital soft-tissue or extraocular-muscle imaging study (not taken from the course material). In the course, fluorescein angiography is listed among investigations for malignant melanoma (L24, slide 15), not for thyroid eye disease or orbital inflammatory disease.\n\nC. B-scan ultrasonography is wrong because it is not the best study for defining the extraocular muscles and orbital inflammatory soft tissues in this vignette (not taken from the course material). The course illustrates B-scan ultrasonography for posterior scleritis, where it shows thickened sclera and a T-sign (L13,14, slide 37), a different anatomical target.\n\nD. Corneal topography is wrong because it maps corneal curvature rather than orbital tissues or extraocular muscles (not taken from the course material). The lecture identifies corneal topography as mandatory screening for ectasia before refractive surgery (L15,16, page 22), so it addresses corneal rather than orbital pathology.",
+ "objective": "MRI evaluates orbital inflammatory disease and can demonstrate enlarged extraocular muscle bellies in thyroid eye disease.",
+ "lectureCovers": true
+}
