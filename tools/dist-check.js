@@ -99,16 +99,15 @@ const url='file:///'+INDEX.split(BS).join('/');
       return {total:QUESTIONS.length, modules:MODULES.length, by:by};
     })()`);
   console.log('    shipping: ' + JSON.stringify(counts.by) + '  total ' + counts.total);
-  check('the two shipping subjects carry every question in the upload',
-    [counts.modules, counts.by.ent > 0, counts.by.pediatrics > 0,
-     (counts.by.ent || 0) + (counts.by.pediatrics || 0) === counts.total],
-    [4, true, true, true]);
+  check('the three shipping subjects carry every question in the upload',
+    [counts.modules, counts.by.ent > 0, counts.by.pediatrics > 0, counts.by.ophtho > 0,
+     (counts.by.ent || 0) + (counts.by.pediatrics || 0) + (counts.by.ophtho || 0) === counts.total],
+    [4, true, true, true, true]);
 
-  check('the locked subjects have no questions at all in the upload',
-    await ev(`[QUESTIONS.filter(function(q){return q.module==='ophtho'}).length,
-               QUESTIONS.filter(function(q){return q.module==='neuropsych'}).length,
-               typeof window.Q_OPHTHO, typeof window.Q_NEURO]`),
-    [0,0,'undefined','undefined']);
+  check('the locked subject has no questions at all in the upload',
+    await ev(`[QUESTIONS.filter(function(q){return q.module==='neuropsych'}).length,
+               typeof window.Q_NEURO]`),
+    [0,'undefined']);
 
   check('no theory text ships at all, and the map is empty rather than missing',
     await ev(`[typeof THEORY, Object.keys(THEORY).length,
@@ -117,12 +116,12 @@ const url='file:///'+INDEX.split(BS).join('/');
     ['object',0,'undefined','undefined','undefined','undefined']);
 
   await ev('go({name:"home"})'); await sleep(500);
-  check('four module cards, two of them still saying coming soon',
+  check('four module cards, one of them still saying coming soon',
     await ev(`(function(){
       var c=document.querySelectorAll('.mod-card');
       return [c.length, document.querySelectorAll('.mod-card.locked').length,
               [].slice.call(c).filter(function(x){return /Coming soon/.test(x.textContent)}).length];
-    })()`), [4,2,2]);
+    })()`), [4,1,1]);
 
   check('the theory rail row is present, disabled, and says soon',
     await ev(`(function(){

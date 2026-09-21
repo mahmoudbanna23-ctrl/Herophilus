@@ -276,3 +276,12 @@ State: ophtho arrays 1,273 + 433 + 147 = **1,853** (was 1,860), 0 holes, boot 40
 **Ophtho module UNLOCKED:** `LOCKED_MODULES` in `app/data/modules.js` is now `['neuropsych']`. `THEORY_LOCKED` stays true. Boot check after: QUESTIONS 5902 (4049 + 1853), THEORY 117, MODULES 4, chapters 156, 120 rendered (117 with questions), ophtho 39 chapters with questions, 0 console errors. The old 4049/81 expectation is stale now.
 
 **Still open, none blocking:** push (owner's yes needed, tree unpushed, recount after `git fetch`). The 159 ep and 80 ep2 markers that remain matched no staged exam box at the sweep thresholds; the sweep reads only the staging rows (not the chapter-half scans), so it is evidence, not proof. Four ids were kept out by hand and still carry the marker: `ophep-orbit-15`, `ophep-malignancies-eye-adnexa-9`, `ophep-glaucoma-20`, `ophep2-model-exam-5-6`. Coverage limit: 44 of the 58 new boxes were never looked at on the page.
+
+## Part 8 - ophthalmology in the shipped build (2026-09-22)
+
+The source unlock in part 7 did not reach the live site: `tools/build-launch.js` carried its own hard-coded
+`LOCKED_SUBJECTS = ['ophtho', 'neuro']` and stripped the ophtho data files from `dist\` whatever `modules.js` said.
+It is now `['neuro']`; `tools/dist-check.js` expects three shipping subjects and one coming-soon card.
+`dist\` rebuilt and checked: 5,902 questions (ent 2,322, pediatrics 1,727, ophtho 1,853), 8 passed 0 failed.
+Theory is still withheld whole (`THEORY_LOCKED = true`). The rebuilt `dist` carries the design chat's `app\` as it stood
+at build time. Deploying is the owner's step: drop the `dist` folder on Cloudflare Pages (`herophilus`).
