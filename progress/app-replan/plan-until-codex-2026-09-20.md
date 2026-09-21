@@ -230,3 +230,9 @@ Order follows the parent plan: B1 → B2a/b/c → B11 → B3 → B4 → B5 …
   Codex terra out of quota until 04:58 on 2026-09-22.
   Impeccable hook keeps flagging `--ease-spring` (`tokens.css:148`); owner not yet answered
   keep-or-replace; no ignore written.
+- CORRECTION to the stop-point entry above: the refuter DID return before the clear - PASS.
+  Diff touches only font-size + the `--fs` block, 205 declarations on-table, largest move
+  38->44px, zero new clipping at 1280 and 390 in both themes, all checks at baseline. Shots exist:
+  `progress/app-replan/shots/b1-type-{home,module,question}.png`. Not checked: gate/profile
+  screen (`drawProfileEditor(false)` throws under the b1-shots stub on baseline too); light theme
+  was forced by attribute. Still owed: the owner's look, then commit. No second refuter needed.
