@@ -2117,6 +2117,8 @@ Half A (s1-21, PDF 6-1390) is `questions.ophtho.ep.js` (439). Half B (s22-27, PD
 
 **Checks.** `pagecov-oph.js --part 2 --cites-pdf`: no answered page in 1391-2329 is uncited; only 2330-2442 is. The 461 cited-but-unanswered pages are each question's unmarked companion page. Part 2 has no OCR pass, so its page index (`content\ophtho\qb-pages\ocr\ep\index.part2.json`) is derived from the staging files by `oph-p2-index.js`; `--cites-pdf` is needed because `source` cites PDF pages, not printed pages. Every ophtho array loaded: 0 holes, 0 duplicate ids, every answer in range. Boot: QUESTIONS 4049, THEORY 81, chapters 156, 0 console errors (ophtho is a locked module, so the boot count does not move).
 
+**Owed items A-F (2026-09-21, later the same day).** Seven within-endpoint twins folded by `tools/bank-harness/oph-endpoint-fold.js` (ophtho 1,860 to 1,853); `ophep-conjunctiva-3` option and stem repaired; `ophep-vitreous-8` fifth option added; `ophep-neuro-ophthalmology-19` printing note; no figure added to `ophep-cornea-1`. Detail and the open marker audit: `progress/resume-ophtho-endpoint-B-exams.md`, part 6. The list below is superseded by it.
+
 ### Still owed (not blocking)
 
 - s22 n8 duplicate `ophep-optics-refraction-3` / `ophep-orbit-1`; `ophep-conjunctiva-3` option "Adenovirus 44 g" (an OCR-era artefact).

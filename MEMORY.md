@@ -40,7 +40,7 @@ Printed page = PDF **+1** from PDF 2151 on (pinned 2026-09-21), but `source` cit
 325 House/Grade Gain twins merged into endpoint survivors via `alsoIn` (`tools\bank-harness\oph-house-merge.js`, decisions
 `content\ophtho\qb-pages\_close-work\merge-decisions.json`); House file 1,598->1,273, ophtho arrays total **1,860**; twin ids orphan local
 progress, as in ENT. Coverage: `pagecov-oph.js --part 2 --cites-pdf` (index `ocr\ep\index.part2.json`, built by `oph-p2-index.js`).
-Not blocking, still owed: the within-endpoint duplicates and items A-F in `progress\resume-ophtho-endpoint-B-exams.md` (tail = close-out block).
+Owed items A-F + within-endpoint duplicates CLOSED 2026-09-21, ophtho arrays now **1,853** (`progress\resume-ophtho-endpoint-B-exams.md` part 6); one open: sweep the "prints no explanation here" marker against Model Exam reprint boxes.
 History: `progress\resume-ophtho-endpoint-A-chapters.md`, archive `## Pruned from MEMORY.md - 2026-09-17` and `2026-09-16 (part 2)`.
 
 - ✅ **PEDS HOUSE CLOSED 2026-09-04 — `questions.peds.js` holds 393, the full measured bank**, all

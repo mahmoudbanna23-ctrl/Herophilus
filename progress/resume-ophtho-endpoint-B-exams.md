@@ -238,3 +238,26 @@ Checklist part 4 is finished. Ledger entry: `progress\ledger.md` §22. State: `q
 - Other within-endpoint duplicates: `ophep-conjunctiva-17`/`-26`, `ophep-glaucoma-13`/`-20`, `ophep-malignancies-eye-adnexa-2`/`-10` and `-3`/`-7`, `ophep-lacrimal-system-7`/`ophep-orbit-8`, `ophep2-model-exam-4-49`/`ophep-ocular-trauma-16`. Summer rows 10, 36 and 47 were deliberately left unmerged.
 
 **Consequence to know.** The 325 deleted House/Grade Gain ids orphan any local progress stored against them, as in ENT. **Push:** the local commits are unpushed; owner decides.
+
+## part 6 - OWED ITEMS A-F CLOSED 2026-09-21 (ophthalmology endpoint stays CLOSED)
+
+State: ophtho arrays 1,273 + 433 + 147 = **1,853** (was 1,860), 0 holes, boot 4049 / 81 / 4 / 156, 0 console errors. Item B, E, F and the survivor fixes are ordinary edits in `app/data/questions.ophtho.ep.js`; the six folds ran through `tools/bank-harness/oph-endpoint-fold.js` (built by Codex terra from `content/ophtho/qb-pages/_close-work/endpoint-fold-brief.md`; fixture proof, dry run and live post-write proof all passed; decisions in `endpoint-fold-decisions.json`, plan in `merge-endpoint.plan.md`).
+
+**Folds (7 twins removed, survivor keeps the id and gains the cite in `source`; `alsoIn` = union; twin explanation dropped):**
+- A. `ophep-optics-refraction-3` into `ophep-orbit-1` (Proptosis is not present in; identical printed box).
+- D. `ophep-retina-12` into `ophep-ocular-systemic-diseases-17`; `ophep-orbit-12` and `ophep-optics-refraction-11` into `ophep-orbit-10`.
+- Others. `ophep-conjunctiva-26` into `-17` (the twin printings read "medication", the survivor "drug"); `ophep-lacrimal-system-7` into `ophep-orbit-8` (twin stem was "A -33year-old ... outer third", survivor is the clean transcription); `ophep2-model-exam-4-49` into `ophep-ocular-trauma-16`.
+- **The refuter found two survivors that lacked the printed box their twin carried** (`ophep-ocular-systemic-diseases-17`, `ophep-ocular-trauma-16`; both still ended "prints no explanation here" although p.922 and Model Exam 4 p.1954-1955 print one). Both now carry the box in the "The endpoint file prints this explanation" form. Orbit-1 and orbit-10 already carried identical boxes.
+- Kept as pairs (not folds): `ophep-glaucoma-13`/`-20` (-13 adds "lower limb edema and dyspnea" to the stem); `ophep-malignancies-eye-adnexa-2`/`-10` (different option sets, and -10 has a fifth option); `-3`/`-7` (-7 adds the substantive option "Secondaries from other sites"). Summer rows 10, 36 and 47 stay unmerged, as before.
+
+**Page reads (Codex vision, then a Sonnet reader of a different house confirmed):**
+- B. `ophep-conjunctiva-3`: endpoint p.448 and Model Exam 1 pp.1474-1475 print plain "Adenovirus"; "Adenovirus 44 g" removed, stem "ofthe" repaired to "of the".
+- E. `ophep-neuro-ophthalmology-19`: p.1050 prints option B "Anterior ischemic optic neuropathy" and marks no answer; Model Exam 3 p.1853-1854 prints "Arteritic ischemic optic neuropathy" and highlights B. Printing note added to the explanation; `answer` unmoved.
+- F. `ophep-vitreous-8`: p.872 prints four options; Model Exam 4 pp.1882-1883 print "E. None of the above" and the House bank transcription (`house-c12.array.js` n17) also has five. Fifth option added, `answer` still 1 (B); the Model Exam 4 printed box ("Endophthalmitis is usually exogenous, most commonly postoperative or post-traumatic. It's an ophthalmic emergency requiring intravitreal antibiotics.") replaces the false "prints no explanation here" marker; `source` notes the four-versus-five difference. The House pages were NOT re-read as images (the two PNGs rendered for that check were the wrong spread of `ophthalmology MCQ.pdf`, the OSCE section); the House five options rest on the cached transcription.
+- C. No figure added. Endpoint p.581 (`ophep-cornea-1`) prints no figure; the diagram on Model Exam 1 p.1443 ("Structure of the Cornea", five labelled layers) sits beside the question and its labels give away the answer, so it is not attached. The other three pages (1497, 1505, 1517) already have images.
+
+**Still open, none blocking.**
+- **New finding, not fixed:** 191 entries in `questions.ophtho.ep.js` and 80 in `ep2.js` still end with the marker "prints no explanation here". Some of them may have a Model Exam reprint that prints an explanation box (this session found it on `ophep-vitreous-8`, `-ocular-systemic-diseases-17`, `-ocular-trauma-16`). Needs a scripted sweep over the Model Exam pages, not a hand read.
+- `ophep-neuro-ophthalmology-19`: the Model Exam 3 p.1854 box (a giant cell arteritis symptom list) was read once and not captured.
+- `ophep-cornea-1` and the s28 pages (PDF 2330-2442, skipped by owner) unchanged.
+- Twin ids removed now (7 more) orphan local progress, as before. Push: still owner's decision; the tree is unpushed.
