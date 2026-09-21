@@ -1,0 +1,9 @@
+{
+  "n": 6,
+  "lecture": "L13,14) Uvea & Sclera.txt",
+  "model": "claude-sonnet lean-drafter",
+  "chapter": "op-uvea",
+  "expansion": "The lecture's anatomical classification of uveitis defines intermediate uveitis as \"Inflammation predominantly involving the pars plana, vitreous, and the peripheral retina\" (L13,14, slide 12). Pars planitis is the idiopathic subtype of intermediate uveitis in which this pars-plana-centred inflammation occurs without an identifiable systemic cause; the term \"pars planitis\" itself is not used in the lecture, so the specific name-to-category link is (not taken from the course material), but it is a direct and standard consequence of the anatomical definition the slide gives — inflammation of the pars plana is, by the lecture's own classification, intermediate uveitis. Anterior uveitis, the first category on the same slide, is defined as iritis/iridocyclitis — inflammation of the iris and ciliary body at the front of the eye, not the pars plana — so it does not match pars planitis (L13,14, slide 12). Posterior uveitis is defined as choroiditis or chorioretinitis, inflammation of the choroid with or without the retina, which is a different, more posterior compartment than the pars plana (L13,14, slide 12). Panuveitis is defined as simultaneous inflammation of all three parts of the uveal tract together, which is broader than the isolated pars-plana process that defines pars planitis (L13,14, slide 12). Because the pars plana sits within the middle segment the lecture assigns to the intermediate category, and none of the other three categories are anatomically centred there, intermediate uveitis is the only correct classification.",
+  "objective": "Classify pars planitis as intermediate uveitis based on its pars-plana location",
+  "lectureCovers": true
+}

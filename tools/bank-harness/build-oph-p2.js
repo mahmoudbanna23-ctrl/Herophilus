@@ -23,6 +23,10 @@ for (let i = 0; i < nonTheory.length; i++) {
   } else if (um.page_type === 'question_marked') {
     mk = um; markedOnly = true;
     flags.push('n' + n + ' pdf ' + mk.pdf_page + ': marked page with no unmarked twin');
+  } else if (um.page_type === 'question_unmarked') {
+    // The scan can lack a marked page (s26 Q65: printed p.2151 absent). Row keeps key null: no key printed.
+    mk = um;
+    flags.push('n' + n + ' pdf ' + um.pdf_page + ': unmarked page with no marked twin -- NO KEY PRINTED');
   } else {
     throw new Error('unpairable row at n=' + n + ' pdf ' + um.pdf_page + ' type ' + um.page_type);
   }

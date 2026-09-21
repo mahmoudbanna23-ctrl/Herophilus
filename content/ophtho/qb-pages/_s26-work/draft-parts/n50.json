@@ -1,0 +1,9 @@
+{
+ "n": 50,
+ "lecture": "L11) Glaucoma Diag, POAG.txt",
+ "model": "work-text",
+ "chapter": "op-glauc",
+ "expansion": "Optic disc cupping is the defining structural sign of open‑angle glaucoma. The lecture states that glaucoma is a triad of elevated intraocular pressure, optic nerve affection (cupping), and visual field defects (L11, slide 4). It further emphasizes that clinically one sees an enlargement of the cup‑to‑disc ratio greater than 0.3 (L11, slide 9). This makes option B the correct answer because cupping directly reflects the optic neuropathy that characterises the disease. \n\nOption A, shallow anterior chamber, is incorrect. Open‑angle glaucoma is defined by an open, deep anterior chamber; a shallow chamber is typical of angle‑closure glaucoma, which the lecture differentiates on the basis of gonioscopic findings (L11, slide 3). \n\nOption C, narrow angle, is also wrong for the same reason: a narrow or closed angle denotes angle‑closure glaucoma, not the open‑angle form being asked about (L11, slide 3). \n\nOption D, visual acuity and refractive error, is not a primary diagnostic criterion. The lecture notes that visual acuity may only decline in end‑stage disease and that refractive error is a predisposing factor rather than a diagnostic marker (L11, slide 12). Hence it does not serve as an important point for diagnosing open‑angle glaucoma (not taken from the course material).",
+ "objective": "Identify optic disc cupping as the key diagnostic sign of open‑angle glaucoma.",
+ "lectureCovers": true
+}

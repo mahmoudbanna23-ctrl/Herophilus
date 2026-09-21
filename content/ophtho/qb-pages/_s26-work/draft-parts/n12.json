@@ -1,0 +1,9 @@
+{
+  "n": 12,
+  "lecture": "L22) Pupil and Visual pathway.txt",
+  "model": "claude-sonnet lean-drafter",
+  "chapter": "op-neuro",
+  "expansion": "The lecture's own summary lesion map works through exactly this scenario: for \"lesion C (right optic tract)\" it states \"Left field: LEFT half black, right half grey. Right field: LEFT half black, right half grey. = LEFT HOMONYMOUS HEMIANOPIA (same side lost in both eyes)\" (L22, slide 24). This matches the dedicated optic tract slide earlier in the deck, which prints the caption \"Contralateral homonymous hemianopia (incongruous)\" directly under the tract lesion figure (L22, slide 17). The optic tract carries crossed fibres from the contralateral nasal retina and uncrossed fibres from the ipsilateral temporal retina — together these represent the visual field on the side opposite the tract, so a right-sided lesion knocks out the left half of each eye's field, producing LEFT, not right, homonymous hemianopia; this rules out option A. Bitemporal hemianopia is the map's lesion B, at the midline of the chiasm, where only the crossing nasal fibres from both eyes are cut, sparing the temporal fields — the lecture's own row for that lesion reads \"Right field: RIGHT half black, left half grey\" for both eyes, a chiasmal pattern quite different from a post-chiasmal tract lesion (L22, slide 24), so option C does not fit a tract lesion. Binasal hemianopia is not produced by any single lesion on the lecture's five-point map (A–E all lie on the retina-to-cortex pathway, none isolating the temporal fibres from both sides), and it is not associated with the optic tract in the source material (not taken from the course material), so option D is excluded. The lecture's own worked example therefore directly supports left homonymous hemianopia as the answer.",
+  "objective": "Localise a right optic tract lesion to a left homonymous hemianopia",
+  "lectureCovers": true
+}

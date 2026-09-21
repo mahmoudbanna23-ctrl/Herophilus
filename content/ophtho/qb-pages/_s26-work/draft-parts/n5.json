@@ -1,0 +1,9 @@
+{
+ "n": 5,
+ "lecture": "L19.2) Retinal Vascular Disorders.txt",
+ "model": "work-text",
+ "chapter": "op-ret-vasc",
+ "expansion": "Fluorescein angiography (FA) is designed to visualise the retinal and choroidal circulation. The lecture shows a classic example: “FA of branch retinal vein occlusion – Early – blocked background fluorescence due to haemorrhage; Late – hyperfluorescence due to diffuse oedema” (L19.2, page 6). A similar description appears for arterial lesions: “FA of branch retinal artery occlusion – Early masking; Extreme delay of arterial phase; Late staining of arterial walls” (L19.2, page 24). These passages demonstrate that the technique highlights retinal vessels and their perfusion abnormalities, confirming that option B is correct. Option A (orbital vessels) is incorrect because the lecture never mentions FA being applied to the orbit; orbital vascular imaging is typically performed with MRI or CT angiography, not fluorescein (not taken from the course material). Option C (lid vessels) is also wrong; the lid vasculature is superficial and examined clinically or with Doppler, and FA is not used for that purpose (not taken from the course material). Finally, option D (conjunctival vessels) is false; while conjunctival angiography can be performed with other dyes, fluorescein angiography is not employed for conjunctival circulation in the material presented (not taken from the course material).",
+ "objective": "Identify which ocular vascular structures are visualised by fluorescein angiography",
+ "lectureCovers": true
+}

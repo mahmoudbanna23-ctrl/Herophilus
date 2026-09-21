@@ -70,6 +70,13 @@ Verified by rendering individual pages and reading the small red number at botto
 further; five samples bracket it, they do not locate it. From the flip onward,
 `PDF page = printed page − 1`.
 
+**FLIP PINNED 2026-09-21: it sits at PDF 2151.** PDF 2150 prints 2150 (last question 65); PDF 2151
+prints 2152 (first question 66) — printed page 2151 is ABSENT from the scan. It was the marked
+(answer) page of Model Exam 5 Q65: PDF 2150 is Q65's unmarked page and no marked twin follows, so
+the PDF prints no key for Q65. Offset 0 through PDF 2150, +1 from PDF 2151 onward. Measured
+from the s26 Codex staging `printed_page` column (2145–2170, every staged page consistent) and
+confirmed by an independent Claude read of the rendered pages 2149–2152.
+
 **Consequence:** the closing page-coverage test compares `p.<n>` in `source` fields against
 OCR-answered pages. Past the flip those two numberings disagree by one. Whichever chat owns the
 exam half must pin the exact flip page — roughly four more single-page renders across 2151–2170 —

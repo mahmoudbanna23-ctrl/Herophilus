@@ -1,0 +1,9 @@
+{
+ "n": 57,
+ "lecture": "L11) Glaucoma Diag, POAG.txt",
+ "model": "work-text",
+ "chapter": "op-glauc",
+ "expansion": "Applanation tonometry is regarded as the reference standard for measuring intraocular pressure because it directly quantifies the force required to flatten a small area of the cornea, eliminating the influence of corneal curvature and thickness to a greater extent than other methods (not taken from the course material). This is why option D, stating that applanation tonometry is the most accurate method of measuring intraocular pressure, is the keyed correct answer. The lecture on glaucoma emphasizes that elevated intraocular pressure is a central diagnostic criterion (L11, slide 5) but does not discuss the specific techniques used to obtain that measurement, so the answer relies on general ophthalmic knowledge rather than the provided slides.\n\nOption A is incorrect because a Schiotz tonometer works by indentation, not applanation; it applies a known weight to depress the cornea rather than flattening it (not taken from the course material). Option B is wrong because applanation tonometry can be performed with the patient seated or supine; the posture is not a prerequisite for the technique (not taken from the course material). Option C is inaccurate because while very low scleral rigidity can affect some tonometers, the Goldmann applanation method is calibrated to account for typical variations in ocular rigidity and remains reliable in most abnormal eyes (not taken from the course material).",
+ "objective": "Identify the most accurate method for measuring intraocular pressure.",
+ "lectureCovers": false
+}

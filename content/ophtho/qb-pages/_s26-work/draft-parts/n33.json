@@ -1,0 +1,9 @@
+{
+ "n": 33,
+ "lecture": "L19.1) Diabetic Retinopathy.txt",
+ "model": "work-text",
+ "chapter": "op-ret-dr",
+ "expansion": "Fluorescein angiography is the investigation of choice because it directly demonstrates the presence of retinal micro‑aneurysms and the pattern of macular leakage that defines diabetic maculopathy. The lecture notes that focal diabetic maculopathy shows \"Focal leakage on FA\" (L19.1, page 11) and that diffuse maculopathy is characterised by \"Generalized leakage on FA\" (L19.1, page 12). Ischaemic maculopathy is identified by \"Capillary non‑perfusion on FA\" (L19.1, page 13). These statements confirm that fluorescein angiography visualises the lesions that guide laser or anti‑VEGF therapy, exactly as the printed key indicates.\n\nA visual field test is designed to map peripheral field defects, not macular fluid or leakage, and the lecture contains no reference to its use in diabetic macular edema (not taken from the course material). OCT of the optic nerve evaluates nerve‑head thickness for glaucoma or optic neuropathy, which is unrelated to macular oedema; the lecture does not discuss OCT in this context (not taken from the course material). The Amsler grid can detect metamorphopsia but does not quantify leakage or guide treatment; the course material does not mention it for diabetic maculopathy (not taken from the course material). Therefore the only answer that aligns with the lecture content is option D.",
+ "objective": "Identify the diagnostic test that visualises macular leakage in diabetic macular edema.",
+ "lectureCovers": true
+}

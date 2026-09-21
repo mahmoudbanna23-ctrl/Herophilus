@@ -1,0 +1,9 @@
+{
+  "n": 3,
+  "lecture": "L7,8) Refractive errors.txt",
+  "model": "claude-sonnet lean-drafter",
+  "chapter": "op-refract-astig",
+  "expansion": "The lecture's treatment tree for astigmatism lists only glasses (cylindrical lenses), soft toric contact lenses, LASIK, PRK, lenticular surgery, rigid gas-permeable lenses, intracorneal ring segments and keratoplasty as the recognised options for regular and irregular astigmatism (L7,8, slide 71). Radial keratotomy is never named anywhere in that tree or anywhere else in the deck, which is consistent with its real role: it is a set of deep radial corneal incisions historically used to flatten the cornea and reduce myopia, and it does not reshape the cornea's meridional curvature difference that defines astigmatism (not taken from the course material). Glasses correct astigmatism with cylindrical lenses that neutralise the eye's two focal lines, exactly as the deck's treatment tree states under \"Conservative → Glasses (Cylindrical lenses)\" (L7,8, slide 71), so option A is a valid correction and not the answer. Contact lenses correct astigmatism through soft toric lenses for regular astigmatism or rigid gas-permeable lenses for irregular astigmatism, both listed on the same slide (L7,8, slide 71), so option B is also a valid correction. LASIK is listed directly under \"Corneal surgery\" in the regular-astigmatism surgical branch of the same tree (L7,8, slide 71), confirming it is an accepted surgical correction, so option D is valid as well. Because radial keratotomy targets spherical myopic power rather than astigmatic curvature and is absent from the lecture's own treatment options, it is the one procedure among the four that does NOT correct astigmatism, matching option C.",
+  "objective": "Identify radial keratotomy as a procedure that does not correct astigmatism",
+  "lectureCovers": true
+}

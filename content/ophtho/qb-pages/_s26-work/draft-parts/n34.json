@@ -1,0 +1,9 @@
+{
+ "n": 34,
+ "lecture": "L19.1) Diabetic Retinopathy.txt",
+ "model": "work-text",
+ "chapter": "op-ret-dr",
+ "expansion": "The correct answer is C because the patient has clinically significant diabetic macular oedema (DME) with visual loss. The lecture states that for diffuse retinal thickening, \"Intra vitreal Injection of anti VEGEF\" is the recommended treatment (L19.1, slide 14). Anti‑VEGF agents reduce vascular permeability and resolve macular swelling, thereby improving visual acuity, which matches the clinical scenario. Option A, YAG laser capsulotomy, is used to treat posterior capsule opacification after cataract surgery; the case notes clear media and no mention of capsular opacity, so it is not indicated (not taken from the course material). Option B, pan‑retinal photocoagulation (PRP), is reserved for proliferative diabetic retinopathy or severe neovascularization, as the lecture lists PRP under \"Indications for treatment of proliferative diabetic retinopathy\" (L19.1, slide 15) and not for macular oedema. The patient only has mild NPDR and macular edema, so PRP would be unnecessary and could worsen macular function. Option D, oral antioxidant supplements, is not discussed in the lecture as a therapy for DME and lacks evidence for efficacy in this condition (not taken from the course material). Therefore, intravitreal anti‑VEGF therapy is the only appropriate choice.",
+ "objective": "Identify the first‑line treatment for clinically significant diabetic macular oedema.",
+ "lectureCovers": true
+}

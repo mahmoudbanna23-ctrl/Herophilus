@@ -1,0 +1,9 @@
+{
+  "n": 2,
+  "lecture": "L26) Trauma II.txt",
+  "model": "claude-sonnet lean-drafter",
+  "chapter": "op-conj",
+  "expansion": "Symblepharon is the adhesion of the palpebral to the bulbar conjunctiva, and the lecture on chemical injuries places it explicitly in the late/chronic phase (>7 days) of a severe chemical burn, alongside dry eye and entropion: \"Conjunctiva: scarring. Dry eye, symblepharon, entropion\" (L26, page 9). Alkalis in particular penetrate deeply and destroy the conjunctival goblet cells and stroma, and the healing fibrosis that follows bridges the fornix with scar bands — exactly the appearance the deck's own conjunctiva lecture shows on its symblepharon photograph, a lower fornix obliterated by pale scarred bands (L6, slide 63). Spring catarrh (vernal keratoconjunctivitis) is a chronic allergic, itchy conjunctivitis with papillary hypertrophy and Trantas dots; it inflames the conjunctiva without the full-thickness necrosis needed to fuse the two conjunctival layers, and the lecture material never links it to symblepharon (not taken from the course material). Phlyctenular conjunctivitis produces small, self-limited hypersensitivity nodules at the limbus that heal without the deep cicatrizing damage a chemical burn causes, so it is not a recognised cause of symblepharon either (not taken from the course material). Epidemic keratoconjunctivitis is an acute adenoviral infection that, even when severe enough to leave subepithelial infiltrates or pseudomembranes, resolves without the tissue-destructive scarring seen after alkali or acid exposure, and no source material connects it to symblepharon (not taken from the course material). Chemical burn is therefore the only option among the four whose pathophysiology and lecture citation both support fusion of the conjunctival surfaces.",
+  "objective": "Identify chemical burn as a cause of symblepharon (conjunctival scarring adhesion)",
+  "lectureCovers": true
+}

@@ -1,0 +1,9 @@
+{
+  "n": 15,
+  "lecture": "L22) Pupil and Visual pathway.txt",
+  "model": "claude-sonnet lean-drafter",
+  "chapter": "op-neuro",
+  "expansion": "The lecture's Horner Syndrome slide lists its features exactly: \"Miosis, Dilation Lag, Ptosis, Apparent enophthalmos, Anhydrosis, Heterochromia (Congenital)\" (L22, slide 11), and its clinical photograph shows the affected eye with \"the palpebral fissure of the left-of-photograph eye... slightly narrower than its fellow\" because of the accompanying ptosis (L22, slide 11). Because ptosis of the upper lid on the affected side NARROWS the palpebral fissure, a WIDENED palpebral fissure is the opposite of what Horner's syndrome produces, making it the one feature not part of the syndrome and the correct exception. Miosis is explicitly the first sign listed on the slide (L22, slide 11) — the affected pupil is smaller due to loss of sympathetic dilator tone — so it is a true feature of Horner's syndrome, not the exception. Slight enophthalmos is also explicitly listed as \"Apparent enophthalmos\" (L22, slide 11); the eye appears sunken because of the mild ptosis and narrowed fissure even though true globe position is usually unchanged, so this too is a genuine feature and not the exception. Unilateral absence of sweating is listed on the same slide as \"Anhydrosis\" (L22, slide 11), reflecting loss of sympathetic innervation to facial sweat glands on the affected side, so it is also a true feature. Since miosis, enophthalmos and anhidrosis are all directly listed on the lecture's Horner slide and ptosis narrows rather than widens the fissure, \"widened palpebral fissure\" is correctly identified as the feature that does NOT belong to Horner's syndrome.",
+  "objective": "Recognise that Horner's syndrome narrows, rather than widens, the palpebral fissure",
+  "lectureCovers": true
+}

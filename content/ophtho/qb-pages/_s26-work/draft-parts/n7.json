@@ -1,0 +1,9 @@
+{
+  "n": 7,
+  "lecture": "L3,4) Clinical- Ocular examination.txt",
+  "model": "claude-sonnet lean-drafter",
+  "chapter": "op-pupil",
+  "expansion": "The lecture's high-yield action table gives the inferior oblique's action as \"elevation (Mainly in adduction)\" (L3,4, slide 43), and the six-cardinal-positions diagram on the following slide confirms this by naming the inferior oblique as the muscle tested for the up-and-in gaze position (L3,4, slide 44). Because elevation of the globe requires the eye to be adducted for the inferior oblique to act as the prime elevator, and no other muscle produces elevation specifically in the adducted position, it is correctly described as the only elevator of the adducted eye. The superior rectus is also an elevator, but the same table lists its action as \"elevation, (Mainly in abduction)\" (L3,4, slide 43) — it elevates best when the eye is abducted, the opposite position, so option A (elevator of the abducted eye) describes the superior rectus, not the inferior oblique. The inferior rectus is a depressor rather than an elevator, with its action given as \"depression (Mainly in abduction)\" on the same table (L3,4, slide 43), so it cannot be the answer to either elevator option and rules out any depressor-of-the-abducted-eye reading (option C) being assigned to the inferior oblique. The superior oblique is the muscle that depresses the adducted eye, with its action listed as \"depression (Mainly in adduction)\" (L3,4, slide 43), which is exactly option D — the mirror-image depressor role to the inferior oblique's elevator role — confirming that option D belongs to the superior oblique and not the inferior oblique. This leaves elevation of the adducted eye, option B, as the inferior oblique's unique action among the four choices.",
+  "objective": "Identify the inferior oblique as the sole elevator of the adducted eye",
+  "lectureCovers": true
+}

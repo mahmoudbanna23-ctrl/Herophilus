@@ -1,0 +1,9 @@
+{
+  "n": 4,
+  "lecture": "L5) Eyelid disease.txt",
+  "model": "claude-sonnet lean-drafter",
+  "chapter": "op-lid",
+  "expansion": "Ptosis is drooping of the UPPER eyelid, and a large chalazion of the LOWER lid cannot produce it because the lower lid is anatomically and mechanically independent of the levator/upper-lid apparatus that ptosis affects — a lower-lid mass has no attachment to the levator complex and cannot pull the upper lid down (not taken from the course material, though it follows directly from the anatomical separation of the two lids). By contrast, the lecture's own ptosis slides map the recognised causes directly onto upper-lid pathology: slide 10 shows complete ptosis from \"Oculomotor paralysis\" (third nerve palsy), demonstrating a neurogenic cause (L5, slide 10); slide 11 shows partial ptosis with a narrowed palpebral fissure captioned \"Sympathetic paralysis (Horner Syndrome)\" (L5, slide 11), confirming Horner's syndrome as a recognised cause; and slide 14, headed \"Ptosis / Mechanical,\" shows an infant with a large upper-lid vascular mass mechanically dragging the lid down and occluding the eye, establishing that a mass involving the UPPER lid is a valid mechanical cause of ptosis (L5, slide 14). Trauma is not named explicitly as a ptosis cause in this deck, but traumatic disruption or dehiscence of the levator aponeurosis producing acquired ptosis is standard mechanism consistent with the mechanical/aponeurotic causes the slides do illustrate (not taken from the course material). Because options A, B and D are all upper-lid or neurogenic mechanisms the lecture supports (or that are anatomically plausible upper-lid causes), and a lower-lid chalazion cannot mechanically affect the upper lid, option C is correctly the one condition that cannot cause ptosis.",
+  "objective": "Recognise that a lower-lid chalazion cannot cause ptosis because ptosis is an upper-lid sign",
+  "lectureCovers": true
+}

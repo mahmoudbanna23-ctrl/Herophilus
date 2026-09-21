@@ -1,0 +1,716 @@
+[
+ {
+  "printed_q": 1,
+  "marked_pdf": 2025,
+  "targets": [
+   {
+    "id": "ophep-eyelids-2",
+    "stem": 1,
+    "opts": 0.5,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 6,
+  "marked_pdf": 2035,
+  "targets": [
+   {
+    "id": "ophep-uveal-tract-20",
+    "stem": 0,
+    "opts": 0.75,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 8,
+  "marked_pdf": 2039,
+  "targets": [
+   {
+    "id": "ophep-lens-5",
+    "stem": 1,
+    "opts": 0.75,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 9,
+  "marked_pdf": 2041,
+  "targets": [
+   {
+    "id": "ophep-eyelids-1",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 12,
+  "marked_pdf": 2047,
+  "targets": [
+   {
+    "id": "ophep-neuro-ophthalmology-5",
+    "stem": 0.308,
+    "opts": 1,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 15,
+  "marked_pdf": 2053,
+  "targets": [
+   {
+    "id": "ophep-sclera-8",
+    "stem": 0.737,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 16,
+  "marked_pdf": 2055,
+  "targets": [
+   {
+    "id": "ophep-conjunctiva-31",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-conjunctiva-32",
+    "stem": 0.756,
+    "opts": 0,
+    "key": "DIFF"
+   },
+   {
+    "id": "ophep-conjunctiva-34",
+    "stem": 0.674,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 17,
+  "marked_pdf": 2057,
+  "targets": [
+   {
+    "id": "ophep-conjunctiva-32",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-conjunctiva-34",
+    "stem": 0.784,
+    "opts": 0,
+    "key": "DIFF"
+   },
+   {
+    "id": "ophep-conjunctiva-31",
+    "stem": 0.756,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 18,
+  "marked_pdf": 2059,
+  "targets": [
+   {
+    "id": "ophep-conjunctiva-33",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-conjunctiva-35",
+    "stem": 0.874,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 19,
+  "marked_pdf": 2061,
+  "targets": [
+   {
+    "id": "ophep-conjunctiva-34",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-conjunctiva-18",
+    "stem": 0.052,
+    "opts": 0.75,
+    "key": "DIFF"
+   },
+   {
+    "id": "ophep-conjunctiva-32",
+    "stem": 0.784,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 20,
+  "marked_pdf": 2063,
+  "targets": [
+   {
+    "id": "ophep-conjunctiva-35",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-conjunctiva-33",
+    "stem": 0.874,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 21,
+  "marked_pdf": 2065,
+  "targets": [
+   {
+    "id": "ophep-cornea-25",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-cornea-26",
+    "stem": 0.83,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 22,
+  "marked_pdf": 2067,
+  "targets": [
+   {
+    "id": "ophep-cornea-26",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-cornea-25",
+    "stem": 0.83,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 23,
+  "marked_pdf": 2069,
+  "targets": [
+   {
+    "id": "ophep-cornea-27",
+    "stem": 0.947,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 24,
+  "marked_pdf": 2071,
+  "targets": [
+   {
+    "id": "ophep-uveal-tract-24",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 25,
+  "marked_pdf": 2073,
+  "targets": [
+   {
+    "id": "ophep-retina-24",
+    "stem": 1,
+    "opts": 0,
+    "key": "DIFF"
+   },
+   {
+    "id": "ophep-retina-25",
+    "stem": 0.915,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 26,
+  "marked_pdf": 2075,
+  "targets": [
+   {
+    "id": "ophep-retina-25",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-retina-24",
+    "stem": 0.915,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 27,
+  "marked_pdf": 2077,
+  "targets": [
+   {
+    "id": "ophep-retina-26",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 28,
+  "marked_pdf": 2079,
+  "targets": [
+   {
+    "id": "ophep-retina-27",
+    "stem": 1,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 29,
+  "marked_pdf": 2081,
+  "targets": [
+   {
+    "id": "ophep-lens-22",
+    "stem": 1,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 30,
+  "marked_pdf": 2083,
+  "targets": [
+   {
+    "id": "ophep-lens-23",
+    "stem": 0.966,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 31,
+  "marked_pdf": 2085,
+  "targets": [
+   {
+    "id": "ophep-lens-24",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 32,
+  "marked_pdf": 2087,
+  "targets": [
+   {
+    "id": "ophep-neuro-ophthalmology-21",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-uveal-tract-23",
+    "stem": 0.761,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 33,
+  "marked_pdf": 2089,
+  "targets": [
+   {
+    "id": "ophep-neuro-ophthalmology-21",
+    "stem": 0.212,
+    "opts": 0.75,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 35,
+  "marked_pdf": 2093,
+  "targets": [
+   {
+    "id": "ophep-uveal-tract-23",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-neuro-ophthalmology-21",
+    "stem": 0.761,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 36,
+  "marked_pdf": 2095,
+  "targets": [
+   {
+    "id": "ophep-neuro-ophthalmology-22",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 37,
+  "marked_pdf": 2097,
+  "targets": [
+   {
+    "id": "ophep-neuro-ophthalmology-23",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 38,
+  "marked_pdf": 2099,
+  "targets": [
+   {
+    "id": "ophep-neuro-ophthalmology-24",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 39,
+  "marked_pdf": 2101,
+  "targets": [
+   {
+    "id": "ophep-neuro-ophthalmology-25",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 40,
+  "marked_pdf": 2103,
+  "targets": [
+   {
+    "id": "ophep-ocular-trauma-18",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 41,
+  "marked_pdf": 2105,
+  "targets": [
+   {
+    "id": "ophep-ocular-trauma-19",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 42,
+  "marked_pdf": 2107,
+  "targets": [
+   {
+    "id": "ophep-ocular-trauma-20",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 43,
+  "marked_pdf": 2109,
+  "targets": [
+   {
+    "id": "ophep-conjunctiva-38",
+    "stem": 0.545,
+    "opts": 0.75,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 55,
+  "marked_pdf": 2131,
+  "targets": [
+   {
+    "id": "ophep-eyelids-1",
+    "stem": 0.75,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 57,
+  "marked_pdf": 2135,
+  "targets": [
+   {
+    "id": "ophep-glaucoma-5",
+    "stem": 0.818,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 61,
+  "marked_pdf": 2143,
+  "targets": [
+   {
+    "id": "ophep-squint-10",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-squint-11",
+    "stem": 0.385,
+    "opts": 1,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 62,
+  "marked_pdf": 2145,
+  "targets": [
+   {
+    "id": "ophep-lacrimal-system-12",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-lacrimal-system-6",
+    "stem": 0.921,
+    "opts": 0.75,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 63,
+  "marked_pdf": 2147,
+  "targets": [
+   {
+    "id": "ophep-lens-11",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 64,
+  "marked_pdf": 2149,
+  "targets": [
+   {
+    "id": "ophep-cornea-23",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 66,
+  "marked_pdf": 2152,
+  "targets": [
+   {
+    "id": "ophep-lacrimal-system-9",
+    "stem": 0.258,
+    "opts": 0.75,
+    "key": "DIFF"
+   },
+   {
+    "id": "ophep-eyelids-6",
+    "stem": 0.222,
+    "opts": 0.75,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-lacrimal-system-11",
+    "stem": 0.188,
+    "opts": 0.75,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 68,
+  "marked_pdf": 2156,
+  "targets": [
+   {
+    "id": "ophep-conjunctiva-23",
+    "stem": 0.857,
+    "opts": 0,
+    "key": "DIFF"
+   },
+   {
+    "id": "ophep2-model-exam-4-45",
+    "stem": 0.818,
+    "opts": 0,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 69,
+  "marked_pdf": 2158,
+  "targets": [
+   {
+    "id": "ophep-orbit-11",
+    "stem": 1,
+    "opts": 0.889,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 70,
+  "marked_pdf": 2160,
+  "targets": [
+   {
+    "id": "ophep-sclera-5",
+    "stem": 0.971,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 71,
+  "marked_pdf": 2162,
+  "targets": [
+   {
+    "id": "ophep-ocular-systemic-diseases-15",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 72,
+  "marked_pdf": 2164,
+  "targets": [
+   {
+    "id": "ophep-ocular-trauma-15",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-orbit-11",
+    "stem": 0.267,
+    "opts": 0.75,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 73,
+  "marked_pdf": 2166,
+  "targets": [
+   {
+    "id": "ophep2-model-exam-3-77",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 74,
+  "marked_pdf": 2168,
+  "targets": [
+   {
+    "id": "ophep-retina-19",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   }
+  ]
+ },
+ {
+  "printed_q": 75,
+  "marked_pdf": 2170,
+  "targets": [
+   {
+    "id": "ophep-glaucoma-12",
+    "stem": 1,
+    "opts": 0.75,
+    "key": "DIFF"
+   }
+  ]
+ },
+ {
+  "printed_q": 76,
+  "marked_pdf": 2172,
+  "targets": [
+   {
+    "id": "ophep-sclera-11",
+    "stem": 1,
+    "opts": 1,
+    "key": "SAME"
+   },
+   {
+    "id": "ophep-sclera-9",
+    "stem": 0.857,
+    "opts": 0.5,
+    "key": "DIFF"
+   }
+  ]
+ }
+]
