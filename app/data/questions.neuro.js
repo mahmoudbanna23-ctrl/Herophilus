@@ -2693,53 +2693,53 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-24', bank:'gradegain', module:'neuropsych', chapter:'ps-anxiety',
+    id:'npqb-ps-24', bank:'gradegain', module:'neuropsych', chapter:'ps-anxiety', alsoIn:['endpoint'],
     stem:'The common manifestation that can be found in both panic disorder and somatic symptom disorder is the presence of:',
     options:['Absent insight','Anhedonia','Severe fear','Multiple somatic symptoms'],
     answer:3,
     explanation:'**The answer is multiple somatic symptoms** — the one feature both disorders genuinely share, and the reason both patients arrive in a medical clinic rather than a psychiatric one.\n\n**Panic disorder is a somatic presentation.** `L6) Myths about psychiatry`, under *Myth #2: Panic Attacks Can Be Fatal*, lists what happens during an attack: **“Racing heartbeat, Shortness of breath, Overwhelming sense of fear, Chest tightness / dizziness, Feeling of impending doom.”** Four of those five are bodily. `L4,5) Psychiatric symptomatology` reinforces the point with its repeated instruction **“Respect somatic c/o”** — one of the department’s four “most important pieces of information.”\n\n**Somatic symptom disorder is somatic by definition.** `L3) Somatization` defines it as **“A disorder characterized by multiple somatic complaints requiring medical attention, but not associated with any physical disorder,”** and its clinical case is a woman with **“abdominal pain, dysuria, dysmennorhea, and tiredness”** referred to gynaecologists, urologists and general surgeons.\n\nThe shared consequence is the shared trap: both patients accumulate negative investigations. Q38 of this same topic is built on exactly that — a panic patient who has seen two cardiologists and a pulmonologist.\n\n**Why each distractor is wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Absent insight** | `L4,5` grades insight explicitly and puts these two disorders in **different** boxes: **“Intact …. (Anxiety)”**, **“Partial …. (Somatic symptom)”**, **“Absent .... (Psychosis)”**. Panic patients know the fear is disproportionate; somatic symptom patients hold their belief only partially. *Absent* insight belongs to psychosis, so it is shared by neither |\n| **Anhedonia** | A **depressive** symptom. `L4,5` defines it as “Loss of pleasure sensations” under the *quantitative decrease* of mood, and `L9,10) Mood disorders` makes “Diminished or loss of interest in daily activities or pleasure” one of the two gateway criteria for a depressive episode. Neither panic disorder nor somatic symptom disorder requires it |\n| **Severe fear** | This is the seductive one, and it fails on **“both.”** Severe fear is the *core* of panic — `L6` calls it an “Overwhelming sense of fear” and a “Feeling of impending doom.” But somatic symptom disorder is characterised by **preoccupation, health anxiety and conviction of illness**, not by paroxysms of terror. `L3`’s patient “remains convinced that she has a serious physical illness that remains undiagnosed” and “demands further referrals” — that is persistent worry and help-seeking, not severe fear. It is also chronic and continuous, whereas panic fear is episodic and peaks in minutes |\n\n**The discrimination the examiner wants:**\n\n| | Panic disorder | Somatic symptom disorder |\n|---|---|---|\n| **Time course** | Paroxysmal — peaks in minutes, resolves in **10–20 min** (`L6`) | Chronic and continuous, over **years** (`L3`) |\n| **Dominant emotion** | Acute terror, fear of dying or going crazy | Persistent preoccupation and conviction of illness |\n| **Insight** | **Intact** (`L4,5`) | **Partial** (`L4,5`) |\n| **What the patient wants** | Reassurance the attack will not kill them | **More** investigations and referrals |\n| **Somatic symptoms** | **Present** — autonomic, during attacks | **Present** — multi-system, between and outside any attack |\n\n**The management consequence is opposite in the two.** For panic, `L4,5` prescribes SSRIs and CBT, and `L6` advises to **“educate patients to prevent catastrophic misinterpretation which perpetuates the cycle.”** For somatic symptom disorder, `L3` teaches **“The wisdom of doing less”** — regular brief visits every 4–6 weeks, part of a physical exam each time, **“Avoid diagnostic tests, operative procedures unless clearly indicated,”** and management by a **single** clinician because **“Referrals should be used sparingly, as they add the impression that the problem is both physical and severe.”**\n\n**Bottom line:** both fill the body with symptoms; only panic fills it with terror, and only somatic symptom disorder fills the notes with referrals.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Panic disorder and somatic symptom disorder share multiple somatic symptoms — but panic is paroxysmal with intact insight and severe fear, while somatic symptom disorder is chronic with partial insight and investigation-seeking.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.68 (answer p.71)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.68 (answer p.71). Also printed in Neuro endpoint.pdf, Somatic disorders, Q24, p.1080 (answer p.1081).'
   },
 
   {
-    id:'npqb-ps-25', bank:'gradegain', module:'neuropsych', chapter:'ps-anxiety',
+    id:'npqb-ps-25', bank:'gradegain', module:'neuropsych', chapter:'ps-anxiety', alsoIn:['endpoint'],
     stem:'A 24-year-old woman comes to the psychiatrist with a 2-month history of short episodes of “I feel like I am going to die”. During these episodes she also notices the feeling of nausea along with a feeling of choking. She describes these episodes as very frightening and she is terrified of having another. Which drug should she be started on?',
     options:['Imipramine','Fluoxetine & Quetiapine','Phenelzine','Paroxetine & Alprazolam'],
     answer:3,
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> Paroxetine is an SSRI and is a first-line treatment for panic disorder. Alprazolam (a benzodiazepine) can be used short-term for acute symptom relief while waiting for the SSRI to take effect (which can take 2-4 weeks)\n\n**What the lectures add.** The diagnosis comes first, and it is **panic disorder**: short frightening episodes with a fear of dying, nausea and choking, plus **anticipatory anxiety** — “she is terrified of having another,” which is the criterion that turns recurrent panic *attacks* into panic *disorder*. `L6) Myths about psychiatry` describes the attack itself — **“Racing heartbeat, Shortness of breath, Overwhelming sense of fear, Chest tightness / dizziness, Feeling of impending doom”** — and notes they **“resolve — typically within 10–20 min,”** matching the stem’s “short episodes.”\n\nThe box’s two-drug strategy is exactly what `L4,5) Psychiatric symptomatology` prescribes. Its anxiety treatment slide ranks **“SSRIs”** first, and states that antidepressants take **“2-6 weeks to start its effect”**, are given for **“One year then gradual withdrawal”**, and are **“Not addictive.”** It permits benzodiazepines only as **“Short duration, Not preferred.”** `L17) Psychopharmacology` confirms both halves: antidepressants are indicated for **“Anxiety disorders, obsessive compulsive disorder,”** and benzodiazepines are indicated for **“1. Panic disorder”** under the heading **“(must NOT be used more than ONE month).”**\n\nSo the pairing is deliberate: the SSRI is the treatment, the benzodiazepine is the **bridge** across the 2–6 week latency, and it comes off within a month.\n\n**Why each distractor is wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Imipramine** | A **TCA**, and genuinely effective in panic — `L4,5` lists “Others … SNRIs, TCAs” as second-line. But it is **not first-line**: anticholinergic effects (dry mouth, constipation, urinary retention), postural hypotension, cardiac conduction delay and **lethality in overdose** put it behind the SSRIs. It also offers no rapid relief, so it leaves the 2–6 week gap uncovered |\n| **Fluoxetine & Quetiapine** | Fluoxetine is a reasonable SSRI, but **quetiapine is an antipsychotic** and has no place in uncomplicated panic disorder. `L17` restricts antipsychotics to “Schizophrenia, Schizoaffective disorder, Bipolar disorder, Psychotic depression, Treatment-resistant… major depression as an adjunct.” Nothing in this stem is psychotic — the patient has **intact insight** (`L4,5`: “Intact …. (Anxiety)”). Adding an antipsychotic exposes her to weight gain, metabolic syndrome, sedation and extrapyramidal risk for no benefit |\n| **Phenelzine** | An **MAOI**. Effective in panic and in atypical depression, but a last-resort agent: it requires a **tyramine-free diet** to avoid hypertensive crisis, and carries serotonin-syndrome risk with SSRIs, TCAs and sympathomimetics. Never an opening choice in a 24-year-old with a two-month history |\n\n**A practical caution the box does not give:** SSRIs can **transiently worsen** anxiety and even provoke panic in the first days, so panic disorder is started at **half the usual antidepressant dose** and titrated slowly — another reason the benzodiazepine bridge earns its place *(the low-start rule is not taken from the course material)*. And the alprazolam must be **time-limited**: `L17` lists **“Tolerance and dependence”** among benzodiazepine adverse effects, which is the subject of Q23 in this same topic.\n\n**Bottom line:** panic disorder = SSRI for the disorder + short-course benzodiazepine for the wait. Treat for a year, then withdraw gradually.',
     objective:'First-line for panic disorder is an SSRI (paroxetine) plus a short-course benzodiazepine to bridge the 2–6 week antidepressant latency; TCAs and MAOIs are later lines and antipsychotics have no role.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.68 (answer p.71)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.68 (answer p.71). Also printed in Neuro endpoint.pdf, Anxiety disorders, Q2, p.839 (answer p.840).'
   },
 
   {
-    id:'npqb-ps-26', bank:'gradegain', module:'neuropsych', chapter:'ps-ocd',
+    id:'npqb-ps-26', bank:'gradegain', module:'neuropsych', chapter:'ps-ocd', alsoIn:['endpoint'],
     stem:'A 5th-year student presented his complaints by this statement: “I am suffering from a terrible problem for about 2 years. I can’t leave home unless I check that the door is closed 5 times. Always the same number to check the door.” What is the best description for his symptoms?',
     options:['Compulsion with intact insight','Compulsion with impaired insight','Compulsion with partial insight','Obsessive personality traits'],
     answer:0,
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> In this case, the student is aware that his behavior is problematic ("I am suffering from a terrible problem"), which indicates intact insight.\n\n**What the lectures add.** Two judgements are being made, and the options test both.\n\n**First — is it a compulsion?** `L8) OCD & PTSD` defines compulsions as **“Repetitive behaviours or mental acts performed in response to obsessions or rigid rules, aimed at reducing distress — not realistically connected to what they prevent.”** Checking the door five times, always the same number, is repetitive, rule-bound and disproportionate. `L8` names **“Checking (~30%)”** as the second commonest subtype: **“Repetitive checking driven by harm avoidance. Doors, stoves, driving routes.”** `L4,5) Psychiatric symptomatology` gives the patient’s-eye definition — compulsivity is **“inability to stop continuing the behaviour”** — and makes a point that decides this question: abnormal behaviour is **“Usually c/o informant and observed by examiner… EXCEPT …. Complained by the patient himself: Compulsivity, Impulsivity.”** The student is complaining **himself**, which is the signature of compulsivity rather than of an observed behavioural abnormality.\n\nThe two-year duration and the fact that he **cannot leave home** satisfy `L8`’s threshold: **“time-consuming (>1 hr/day) or cause clinically significant distress or functional impairment.”**\n\n**Second — what is his insight?** `L8` lists the DSM-5 specifiers: **“With good/fair insight | With poor insight | With absent insight/delusional beliefs | Tic-related.”** `L4,5` defines insight as the **“ability to identify whether (s)he is suffering of a psychiatric disorder or not”** and grades it **“Intact …. (Anxiety)”**, **“Partial …. (Somatic symptom)”**, **“Absent .... (Psychosis).”** The student calls it **“a terrible problem”** — he labels his own behaviour as pathological and is distressed by it. That is intact insight, and it is typical: `L8` records OCD’s good-insight subtype as the norm and lists **“poor insight”** among the **poor** prognostic factors.\n\n**Why each distractor is wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Compulsion with impaired insight** | Would require him to believe the checking is genuinely necessary and reasonable. He says the opposite — he is *suffering* from it |\n| **Compulsion with partial insight** | `L4,5` reserves partial insight for **somatic symptom disorder**. A patient with partial insight would half-accept the behaviour is excessive while still defending it. This statement contains no defence at all |\n| **Obsessive personality traits** | The crucial distinction. **OCPD is ego-syntonic** — the person values their orderliness, perfectionism and control and does **not** complain of it; distress falls on those around them. **OCD is ego-dystonic** — the person is tormented by their own behaviour. `L4,5` captures it in one line: compulsivity is **“Complained by the patient himself.”** OCPD also involves a pervasive lifelong personality style, not a discrete two-year ritual |\n\n**Discrimination table worth memorising:**\n\n| | OCD | Obsessive-compulsive personality (OCPD) |\n|---|---|---|\n| Ego relationship | **Ego-dystonic** — unwanted, resisted | **Ego-syntonic** — valued, defended |\n| Who complains | **The patient** | Family, colleagues |\n| Content | Discrete obsessions and rituals | Pervasive perfectionism, rigidity, control |\n| Onset | Definable, often adolescence (`L8`: mean age ~17) | Lifelong personality pattern |\n| Response | SSRIs + ERP | Psychotherapy; poor drug response |\n\n**Bottom line:** repetitive rule-bound checking that the patient himself calls a terrible problem = compulsion with intact insight. Insight is graded, and it is graded from what the patient says about his own behaviour, not from how odd the behaviour looks.',
     objective:'Repetitive rule-bound checking that the patient himself complains of is a compulsion with intact insight — OCD is ego-dystonic, whereas obsessive personality traits are ego-syntonic and not complained of.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71). Also printed in Neuro endpoint.pdf, Anxiety disorders, Q4, p.843 (answer p.844).'
   },
 
   {
-    id:'npqb-ps-27', bank:'gradegain', module:'neuropsych', chapter:'ps-devices',
+    id:'npqb-ps-27', bank:'gradegain', module:'neuropsych', chapter:'ps-devices', alsoIn:['endpoint'],
     stem:'Which of the following is a contraindication of ECT?',
     options:['High intracranial pressure','Lactation','Old age','Pregnancy'],
     answer:0,
     explanation:'**The answer is raised intracranial pressure**, and the reasoning is mechanical rather than psychiatric.\n\n`L18) Devices in Psychiatry` describes how ECT works: **“A brief, controlled electrical stimulus is applied transcranially (unilateral or bilateral) to induce a generalized therapeutic seizure lasting 20–60 seconds,”** performed **“under general anesthesia with a muscle relaxant (succinylcholine).”** A generalised seizure produces a surge in **cerebral blood flow, cerebral blood volume and therefore intracranial pressure**. In a brain that already has a space-occupying lesion, obstructive hydrocephalus or oedema, that surge risks **herniation**. This is the one classically taught **absolute** contraindication *(the raised-ICP mechanism and the “absolute” grading are not taken from the course material — no cached deck prints a contraindication list, so the reasoning is supplied from general medical knowledge)*.\n\n**⚠️ A NOTE ON THE MATERIAL.** No cached neuropsychiatry deck lists ECT contraindications. `L18) Devices in Psychiatry` covers ECT’s history, delivery, indications, mechanism and stigma but prints **no** contraindication slide; `L9,10) Mood disorders` and `L16) Emergency Psychiatry Critical Interventions` print only indications. **The key is nonetheless correct, and the decks positively exclude the other three options** — see below. The bank also misprints the option as **“Hight intracranial pressure”**; the typo has been repaired here and is preserved in the verbatim staging record.\n\n**Why each distractor is wrong — and the decks settle all three:**\n\n| Option | Why it is NOT a contraindication |\n|---|---|\n| **Pregnancy** | The decks say the **opposite**. `L9,10) Mood disorders` lists ECT indications as **“Suicide-Violence, PM retardation-agitation, Psychotic-catatonic features, Multiple drugs-Pregnancies (first trimester), Resistant depression.”** Pregnancy is an **indication**, precisely because ECT avoids first-trimester teratogenic drug exposure. It is one of the safest treatments in pregnancy, requiring only fetal monitoring and left lateral tilt |\n| **Lactation** | ECT is not a drug and leaves no active metabolite in milk. The only agents involved are the short-acting anaesthetic and succinylcholine, cleared within hours. Breastfeeding continues normally |\n| **Old age** | The reverse of a contraindication — the elderly are among the **best** ECT responders, and often the group in whom drugs are least tolerated. `L18` records ECT’s **“70–80% response rate in patients who have failed multiple trials of antidepressants”** and calls it **“the most effective acute treatment available for severe mood disorders.”** Age raises anaesthetic and cognitive risk to be managed, not a reason to withhold |\n\n**What the decks do emphasise about ECT’s risks.** `L18` states that **“ECT is a highly safe procedure despite its bad reputation. The true primary clinical drawback is transient cognitive disruption and anterograde/retrograde memory gaps around the treatment period. Modern ultra-brief pulse width delivery significantly minimizes these cognitive side effects.”** It also notes the stigma problem — media depictions such as *One Flew Over the Cuckoo’s Nest* **“completely [ignore] modern anaesthesia, leading to widespread public and patient fear”** — and that a rename to **Brain Synchronising Therapy (BST)** has been proposed.\n\n**Other conditions that raise ECT risk** *(not taken from the course material)*: recent myocardial infarction or stroke, unstable arrhythmia, aortic or cerebral aneurysm, phaeochromocytoma, and severe anaesthetic risk. Modern practice treats these as **relative** — requiring optimisation and specialist anaesthetic input — with raised ICP the closest thing to an absolute bar.\n\n**Bottom line:** ECT is remarkably free of contraindications. Pregnancy, lactation and old age are all situations where it is *preferred*; a brain that cannot tolerate a pressure surge is the exception.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Raised intracranial pressure is the classic contraindication to ECT — pregnancy (first trimester) is listed by the course as an INDICATION, and lactation and old age are not contraindications at all.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71) — the bank prints option a as “Hight intracranial pressure”'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71) — the bank prints option a as “Hight intracranial pressure”. Also printed in Neuro endpoint.pdf, Psychopharmacology, Q2, p.1390 (answer p.1391).'
   },
 
   {
-    id:'npqb-ps-28', bank:'gradegain', module:'neuropsych', chapter:'ps-anxiety',
+    id:'npqb-ps-28', bank:'gradegain', module:'neuropsych', chapter:'ps-anxiety', alsoIn:['endpoint'],
     stem:'What group of disorders does panic disorder belong to?',
     options:['Developmental disorders','Mood disorders','Anxiety disorders','Psychotic disorders'],
     answer:2,
     explanation:'**Panic disorder is an anxiety disorder**, and the course material lists it as such directly. `L4,5) Psychiatric symptomatology` devotes a slide to *Anxiety and related disorders* and enumerates them: **“GAD, Panic disorder, Social anxiety disorder, Specific phobia, Agoraphobia”**, then **“OCD”**, then **“PTSD, ASD.”** Panic disorder sits second on that list.\n\nThe classification follows from the phenomenology. `L4,5` files the whole family under the **quantitative increase** of the fear axis of mood and affect — **“Fear …. (Anxiety, Panic, Phobia)”** — three expressions of one emotion differing in pattern: anxiety is sustained and free-floating, phobia is stimulus-bound, and **panic is paroxysmal**. `L6) Myths about psychiatry` describes the paroxysm: **“Racing heartbeat, Shortness of breath, Overwhelming sense of fear, Chest tightness / dizziness, Feeling of impending doom,”** resolving **“typically within 10–20 min.”**\n\n**An important nuance the decks make explicit.** `L4,5` groups OCD and PTSD *with* the anxiety disorders on its list, but `L8) OCD & PTSD` records the modern position: **“DSM-5 Reclassification (2013): OCD and PTSD were separated from Anxiety Disorders due to distinct neurobiological, phenomenological, and treatment profiles.”** OCD now sits in *Obsessive-Compulsive and Related Disorders* and PTSD in *Trauma- and Stressor-Related Disorders*. **Panic disorder was not moved** — it, GAD, social anxiety disorder, specific phobia, agoraphobia, separation anxiety and selective mutism remain the anxiety disorders proper. That is why this question is answerable cleanly while Q32 of this topic has to be answered from the PTSD deck instead.\n\n**Why each distractor is wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Developmental disorders** | Neurodevelopmental conditions begin in childhood and involve impaired acquisition of skills — intellectual disability, autism spectrum disorder, ADHD, communication and learning disorders. Panic disorder typically begins in **late adolescence to the mid-thirties** and involves no developmental delay. `L4,5` lists intellectual disability separately under **“Intellectual disability (Mental subnormality) … (Organicity)”** |\n| **Mood disorders** | Mood disorders are disturbances of **sustained emotional state** — `L9,10) Mood disorders` builds them from the depressive episode (“depressed mood or… loss of interest or pleasure”) and the manic episode. `L4,5` separates **mood** (“Emotional experience, Long term”) from **affect** (“Emotional expression, Short term”). Panic is a brief autonomic paroxysm, not a sustained mood shift. Comorbidity is high — `L4,5` warns **“Comorbidity with depression and other anxiety disorders are very common”** — but comorbidity is not classification |\n| **Psychotic disorders** | Defined by loss of contact with reality — delusions and hallucinations. `L4,5` draws the line on insight: **“Intact …. (Anxiety)”** versus **“Absent .... (Psychosis),”** and its anxiety slide states plainly **“Insight is intact”** and **“No psychotic features.”** A panic patient fears she is “going crazy” but knows she is not — that fear is itself evidence of preserved insight |\n\n**Why the classification changes what you do.** Because panic disorder is an anxiety disorder, its treatment is the anxiety-disorder algorithm from `L4,5`: **CBT** plus an **SSRI**, given for **“One year then gradual withdrawal,”** with benzodiazepines **“Short duration, Not preferred.”** Misfiling it as a mood disorder would invite a mood stabiliser; misfiling it as psychotic would invite an antipsychotic. Q40 of this topic tests exactly that consequence.\n\n**Bottom line:** panic disorder is a core anxiety disorder — and unlike OCD and PTSD, DSM-5 left it there.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Panic disorder is a core anxiety disorder and stayed one in DSM-5, unlike OCD and PTSD which were reclassified out of the anxiety group in 2013.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71). Also printed in Neuro endpoint.pdf, Anxiety disorders, Q5, p.845 (answer p.846).'
   },
 
   {
@@ -2753,23 +2753,23 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-30', bank:'gradegain', module:'neuropsych', chapter:'ps-anxiety',
+    id:'npqb-ps-30', bank:'gradegain', module:'neuropsych', chapter:'ps-anxiety', alsoIn:['endpoint'],
     stem:'The most common manifestation that can be found in both GAD and major depression is:',
     options:['Absent insight','Anhedonia','Delusions of grandiosity','Insomnia'],
     answer:3,
     explanation:'**The answer is insomnia** — the one symptom that appears in the criterion sets of **both** disorders, which is why it is useless as a discriminator and essential as a shared finding.\n\n`L9,10) Mood disorders` lists **“Insomnia or hypersomnia”** among the depressive episode criteria, and adds under *Melancholic features* that these include **“middle, late insomnia or early morning awakening.”** On the GAD side, sleep disturbance is one of the six accompanying symptoms of the DSM-5 criterion set (restlessness, easy fatigability, poor concentration, irritability, muscle tension, **sleep disturbance**) *(the DSM-5 GAD list is not taken from the course material)*, and `L4,5) Psychiatric symptomatology` catalogues insomnia among the quantitative sleep complaints — **“Insomnia (early, late)”**.\n\n**The pattern of insomnia, however, does discriminate**, and it is worth carrying:\n\n| | GAD | Major depression |\n|---|---|---|\n| **Type** | **Early (initial) insomnia** — difficulty falling asleep | **Late (terminal) insomnia** — early-morning awakening |\n| **Why** | The mind will not stop worrying at lights-out | Melancholic biology; `L9,10` lists it under melancholic features |\n| **Mood on waking** | Variable | **Diurnal variation** — worst in the morning (`L9,10`: “diurnal variation of the mood or its non-reactivity”) |\n\n`L4,5` sets up this exact distinction in its opening matching exercise: **“I sleep on time, but I wake up 3 hours earlier than I used to”** = *late insomnia*, versus early insomnia. So both disorders produce insomnia; only depression classically produces the terminal pattern with morning worsening.\n\n**Why each distractor is wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Absent insight** | `L4,5` grades insight and places these two disorders together at the **intact** end: **“Intact …. (Anxiety)”**, with **“Absent .... (Psychosis)”** reserved for psychotic illness. GAD patients know their worry is excessive; most depressed patients know they are ill. Absent insight is shared by **neither** — it appears only in psychotic depression, which is a specifier, not the rule |\n| **Anhedonia** | The classic **depression-only** answer. `L9,10` makes **“Diminished or loss of interest in daily activities or pleasure”** one of the **two gateway criteria** — a depressive episode requires depressed mood *or* anhedonia. `L4,5` defines it as “Loss of pleasure sensations” under the quantitative **decrease** of mood. GAD does not involve loss of the capacity for pleasure; the GAD patient still enjoys things, he simply cannot stop worrying while doing so. **This is the single best discriminator between the two disorders**, and choosing it here is choosing the opposite of what the stem asks |\n| **Delusions of grandiosity** | Belongs to **mania**, not to depression at all. `L9,10` places it under psychotic specifiers: **“delusion of grandeur in manic episodes,”** and lists **“Grandiosity”** among manic criteria. It appears in neither GAD nor major depression |\n\n**⚠️ Read this question against Q24 of the same topic**, which the bank builds on the identical skeleton — *“The common manifestation that can be found in both panic disorders and somatic symptom disorder”* — with the same first two options (*Absent insight*, *Anhedonia*) and a different pair after. They are **not** the same question: different disorders are compared and the last two options are replaced, so both are held. But the shared trap is the same — the examiner puts the strongest *discriminator* in the list and asks for the strongest *overlap*.\n\n**Clinical bottom line:** GAD and depression overlap heavily — `L4,5` warns **“Comorbidity with depression and other anxiety disorders are very common”** and `L9,10` provides an **“Anxious distress”** specifier for depression. Shared: insomnia, fatigue, poor concentration, irritability. Depression-only: **anhedonia**, worthlessness/guilt, suicidal ideation, psychomotor change, weight change. When both are present, treat the depression first — it carries the mortality.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Insomnia is common to both GAD and major depression; anhedonia is the depression-specific discriminator, and grandiose delusions belong to mania.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71). Also printed in Neuro endpoint.pdf, Mood disorders, Q10, p.955 (answer p.956).'
   },
 
   {
-    id:'npqb-ps-31', bank:'gradegain', module:'neuropsych', chapter:'ps-anxiety',
+    id:'npqb-ps-31', bank:'gradegain', module:'neuropsych', chapter:'ps-anxiety', alsoIn:['endpoint'],
     stem:'A 23-year-old woman arrives at the emergency room complaining that, out of the blue, she had been seized by an overwhelming fear, associated with shortness of breath and a pounding heart. These symptoms lasted for approximately 20 minutes, and while she was experiencing them, she feared that she was dying or going crazy. The patient has had four similar episodes during the past month, and she has been worrying that they will continue to recur. Which of the following is the most likely diagnosis?',
     options:['Acute psychotic episode','Hypochondriasis','Generalized anxiety disorder','Panic disorder'],
     answer:3,
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> Panic attacks are sudden and reach peak intensity within minutes. The patient has had multiple episodes and is worried about recurrence, which is a hallmark of panic disorder.\n\n**What the lectures add.** Every element of this vignette matches the department’s own description of a panic attack. `L6) Myths about psychiatry`, under *Myth #2*, lists what occurs **“DURING A PANIC ATTACK”**: **“Racing heartbeat, Shortness of breath, Overwhelming sense of fear, Chest tightness / dizziness, Feeling of impending doom.”** The stem supplies the pounding heart, the shortness of breath and the overwhelming fear. The deck also gives the duration — **“They resolve — typically within 10–20 min”** — which is exactly the stem’s “approximately 20 minutes.”\n\nThree features together make this panic **disorder** rather than isolated panic attacks:\n\n1. **“Out of the blue”** — unexpected, uncued attacks. A cued attack points to a phobia or agoraphobia instead.\n2. **Recurrence** — four episodes in a month.\n3. **Anticipatory anxiety** — **“worrying that they will continue to recur.”** This is the criterion the box calls the hallmark, and it is what converts attacks into a disorder.\n\nThe fear of **“dying or going crazy”** is characteristic and is what `L6` calls **“catastrophic misinterpretation”**: benign autonomic arousal is read as a heart attack or as insanity, which generates more arousal — the cycle the deck says patients must be educated out of. `L6` also settles the reassurance: **“Panic attacks cannot directly cause death. Symptoms are distressing but not dangerous,”** with the residual risk being **“accidents during an episode.”**\n\n**Why each distractor is wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Acute psychotic episode** | She fears she is *going* crazy — she is not. `L4,5) Psychiatric symptomatology` divides on insight: **“Intact …. (Anxiety)”** versus **“Absent .... (Psychosis),”** and its anxiety slide states **“Insight is intact”** and **“No psychotic features.”** There are no delusions (no “False fixed belief, can’t be reasoned”) and no hallucinations. A patient who is frightened of losing her mind has, by that very fear, demonstrated she has not |\n| **Hypochondriasis** | `L3) Somatization` lists hypochondriasis among the somatoform disorders — a **persistent preoccupation with having a serious illness**, chronic and continuous, driving demands for **“further referrals and further investigations.”** Two things exclude it: the episodes here are **paroxysmal** with well periods between, and her fear is of **dying during an attack**, not of harbouring an undiagnosed disease. Note that hypochondriasis can develop *secondary* to panic disorder, which is what Q38 of this topic depicts |\n| **Generalized anxiety disorder** | The closest wrong answer. GAD is **continuous, diffuse worry** across multiple domains — `L4,5` requires it to be present **“Almost always.”** Panic is **episodic**: discrete attacks peaking in minutes with normality between. The stem gives a clear episodic structure. The confounder is her **anticipatory** worry, which is continuous — but it is worry about **one** thing (the attacks), which is panic disorder, not the multi-domain worry of GAD |\n\n**Discrimination table:**\n\n| | Panic disorder | GAD |\n|---|---|---|\n| **Pattern** | Discrete attacks, peak in minutes, resolve in 10–20 min | Continuous, most days, ≥6 months |\n| **Worry content** | About having another attack | Diffuse — health, work, money, family |\n| **Autonomic surge** | Intense, paroxysmal | Low-grade, sustained (muscle tension, fatigue) |\n| **Presents to** | **Emergency department**, cardiology | GP, over months |\n\n**Bottom line:** unexpected, recurrent, minutes-long autonomic storms with a fear of dying, plus anticipatory worry about the next one, is panic disorder. Treat with an SSRI plus CBT, with a short benzodiazepine bridge — the strategy Q25 of this topic tests.',
     objective:'Unexpected recurrent attacks peaking within minutes, with fear of dying and anticipatory worry about recurrence, define panic disorder — episodic pattern separates it from the continuous diffuse worry of GAD.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71). Also printed in Neuro endpoint.pdf, Anxiety disorders, Q24, p.883 (answer p.884), and Neuro endpoint.pdf, Anxiety disorders, Q33, p.901 (answer p.902).'
   },
 
   {
@@ -2833,13 +2833,13 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-38', bank:'gradegain', module:'neuropsych', chapter:'ps-anxiety',
+    id:'npqb-ps-38', bank:'gradegain', module:'neuropsych', chapter:'ps-anxiety', alsoIn:['endpoint'],
     stem:'A 35-year-old female patient presents to the psychiatric service for consultation. She says that for the last 6 months she experiences brief periods of about 10 minutes on average in which she feels suffocated and breathless, with rapid cardiac pulsation and sweating, as if she is going to die. She experiences those frightening episodes so frequently, even several in the same day. She has consulted two cardiologists and had investigations that revealed a normal ECG and echocardiography; she has normal blood pressure and a normal chest X-ray. A pulmonologist examined her and reassured her that she has nothing abnormal, and requested a thyroid profile that revealed no pathology, so he advised her to consult a neuropsychiatrist.\n\nWhat is the neurologic investigation that a neuropsychiatrist should ask for in this patient?',
     options:['Brain MRI','Brain CT','EEG','Transcranial doppler'],
     answer:2,
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> the least inappropriate option would be EEG, as it is sometimes used to rule out temporal lobe epilepsy, which can mimic panic attacks.\n\n**Note the box’s own hedge.** The bank writes **“the least inappropriate option”** rather than “the correct investigation” — an unusually candid admission that no option on this list is genuinely indicated. That is worth recording: this presentation is a textbook panic disorder, and `L4,5) Psychiatric symptomatology` states of anxiety disorders that there is **“NO DIAGNOSTIC TEST.”** Investigations here serve to exclude mimics, not to confirm anything. The examiner is asking which *exclusion* still has value after cardiac, respiratory and thyroid causes have already been cleared.\n\n**Why EEG is the defensible choice.** The mimic that survives this workup is **temporal lobe (focal) epilepsy**. Ictal fear arising from the amygdala and mesial temporal structures produces sudden, stereotyped, brief episodes of intense terror with autonomic features — a presentation almost indistinguishable from panic on history alone, and one that responds to anticonvulsants rather than to SSRIs. The EEG is the investigation that separates them *(the ictal-fear mechanism is not taken from the course material; `L4) Seizures_Epilepsy` is the module’s epilepsy deck and the bank’s own box supplies the temporal-lobe rationale)*.\n\n**Features that would raise the epilepsy suspicion** *(not taken from the course material)*: highly **stereotyped** attacks identical each time, an **aura** (epigastric rising, déjà vu, olfactory or gustatory hallucination), **automatisms** (lip-smacking, fumbling), impaired awareness during the event, **post-ictal confusion**, and very short duration (seconds to 2 minutes — shorter than panic’s 10–20). A sleep-deprived EEG with temporal leads raises the yield.\n\n**Why each distractor is wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Brain MRI** | Structural imaging looks for a **lesion**. Nothing here suggests one — no focal neurological deficit, no headache, no seizure, no personality change, no progressive course. MRI is the right *second* step if the EEG is abnormal, to look for mesial temporal sclerosis or a low-grade tumour, but it is not the screening test for a paroxysmal functional disturbance. Ordering it also feeds the very cycle `L3) Somatization` warns against — **“Avoid diagnostic tests… unless clearly indicated”** |\n| **Brain CT** | Worse than MRI for this purpose: poor posterior fossa and mesial temporal resolution, and it adds ionising radiation. CT’s strength is **acute** work — haemorrhage, fracture, mass effect. None applies to a 6-month history of 10-minute spells |\n| **Transcranial doppler** | Measures **cerebral blood flow velocity** in the basal arteries. Its uses are vasospasm after subarachnoid haemorrhage, sickle-cell stroke risk screening, and emboli detection. It has no role whatever in paroxysmal fear |\n\n**The clinical picture is panic disorder, and the stem is a case study in its cost.** `L6) Myths about psychiatry` describes the attack — **“Racing heartbeat, Shortness of breath, Overwhelming sense of fear, Chest tightness / dizziness, Feeling of impending doom”** — and gives the duration: **“They resolve — typically within 10–20 min,”** matching the stem’s 10. The deck’s clinical tip is the whole lesson: **“Distinguish panic disorder from cardiac events: panic attacks often peak quickly and resolve fully; educate patients to prevent catastrophic misinterpretation which perpetuates the cycle.”** This patient has instead accumulated two cardiologists, a pulmonologist, an ECG, an echocardiogram, a chest X-ray and a thyroid profile over six months.\n\n**But the workup she received was correct, not wasteful.** `L4,5` lists **“General medical conditions”** second in the differential for anxiety and instructs **“Respect somatic c/o.”** Thyrotoxicosis, arrhythmia and asthma genuinely mimic panic, and Q34 of this topic tests exactly that. The error is not investigating — it is failing to **stop** and make the positive diagnosis once the results return clean.\n\n**Bottom line:** after cardiac, respiratory and thyroid causes are excluded, EEG is the last mimic-excluding test worth doing, because temporal lobe epilepsy is the one remaining organic imitator of panic. Then diagnose, explain, and treat.',
     objective:'After cardiac, respiratory and thyroid causes are excluded in suspected panic disorder, EEG is the remaining useful test — temporal lobe epilepsy is the last organic mimic; there is no diagnostic test for anxiety itself.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.70 (answer p.71)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.70 (answer p.71). Also printed in Neuro endpoint.pdf, Anxiety disorders, Q21, p.877 (answer p.878).'
   },
 
   {
@@ -2862,23 +2862,23 @@ var Q_NEURO = [
     source:'neuropsychiatry & neurosurgery qb.pdf p.70 (answer p.71) — printed as a continuation of the preceding vignette; three options only, verified at 200 dpi'
   },
   {
-    id:'npqb-ps-41', bank:'gradegain', module:'neuropsych', chapter:'ps-mood',
+    id:'npqb-ps-41', bank:'gradegain', module:'neuropsych', chapter:'ps-mood', alsoIn:['endpoint'],
     stem:'In classical manic episode, the patient is:',
     options:['Depressed','Elated','Apathetic','Anxious'],
     answer:1,
     explanation:'**The classical manic patient is elated.** Mania is defined by an elevated mood, and the department’s own definition of the whole disorder group is built on that axis.\n\n`L9,10) Mood disorders` defines mood disorders as involving a **“disturbed mood parameter that has at one end; elation and at the other end; depression,”** and criterion A of the manic episode reads **“A period of abnormal and persistent elated mood or expansive or irritable mood accompanied by increased goal-directed behavior or energy during one week duration or more.”** `L4,5) Psychiatric symptomatology` files the same finding under the quantitative *increase* of mood — **“Happiness … Elation”** — beside sadness, fear and irritability.\n\n**Why the stem says “classical.”** Mania can present as predominantly **irritable** rather than elated, and the deck accounts for that explicitly: three of the seven B-criteria are required for a diagnosis, but **“4 if irritable mood.”** The word *classical* points the reader at the textbook euphoric presentation rather than the irritable variant — which is exactly the variant Q43 of this topic then tests.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Depressed** | The opposite pole of the same parameter — `L4,5` lists **“Sadness …. Depressed mood”** as the other quantitative increase. Depressive symptoms can coexist with mania, but only in a **mixed** episode, where the deck requires “full manic symptoms with 3 or more depressive mixed features” |\n| **Apathetic** | Apathy is a quantitative **decrease** of affect. `L4,5` groups it with **“Anhedonia, Blunted affect or apathy, Indifference, Restricted affect”** — the direction of change is wrong for mania in every respect |\n| **Anxious** | Sits on the fear axis — **“Fear …. (Anxiety, Panic, Phobia)”**. Anxiety is common in mixed states and is a recognised specifier (**“Anxious distress”**), but it is a comorbid colouring, never the defining mood of a manic episode |\n\n**Bottom line:** elation is the defining mood of classical mania; irritability is the recognised alternative and raises the symptom threshold from three criteria to four.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Classical mania is defined by elated (or expansive) mood; irritable mood is the recognised alternative presentation and requires four B-criteria instead of three.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.72 (answer p.75)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.72 (answer p.75). Also printed in Neuro endpoint.pdf, Mood disorders, Q32, p.999 (answer p.1000).'
   },
 
   {
-    id:'npqb-ps-42', bank:'gradegain', module:'neuropsych', chapter:'ps-mood',
+    id:'npqb-ps-42', bank:'gradegain', module:'neuropsych', chapter:'ps-mood', alsoIn:['endpoint'],
     stem:'What is the gender ratio of males to females in bipolar disorders?',
     options:['1:1','2:1','1:2','3:2'],
     answer:0,
     explanation:'**Bipolar disorder affects men and women equally — 1:1.** This is one of the few epidemiological numbers the department prints outright, and it is printed twice.\n\n`L9,10) Mood disorders` sets bipolar disorder (BD) beside depressive disorder (DD) in a single epidemiology table, and the gender row reads **“Females=Males”** for BD against **“Female: Male=2:1”** for DD. The same deck then asks the question itself in its own MCQ block — **“What is the female to male gender difference in Bipolar Disorders”** with **“C- 1/1”** among the choices — so this item is lifted straight from the lecture.\n\n**Note the direction of the ratio and why it does not matter here.** The bank asks for *males to females*; the deck states it as *females to males*. Equality is the one ratio that reads identically in either direction, so no reversal trap exists in this question — but it does exist in Q58 of this topic, which asks the depressive ratio in the female:male direction. Read which sex is named first before answering that one.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **2:1** | Male-to-female 2:1 is not a mood-disorder ratio at all. If the axis were reversed it would be the **depressive disorder** figure (`L9,10`: “Female: Male=2:1”) — this is the intended trap, mixing the two rows of one table |\n| **1:2** | The depressive-disorder ratio written male-first. Right number, wrong disorder — the deck gives no female excess in bipolar disorder |\n| **3:2** | Appears in neither row of the deck’s epidemiology table and corresponds to no mood disorder taught here |\n\n**The rest of that table is worth carrying with the ratio:** BD begins in **“Late teenagers and Early adulthood”** with a prevalence of **“1-2.8%”**, while DD peaks at **“40”** with a prevalence of **“5-17%”**. Bipolar disorder is the earlier, rarer, sex-neutral illness; depression is the later, commoner, female-predominant one.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Bipolar disorder has an equal sex ratio (1:1), unlike depressive disorder, which runs female:male 2:1.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.72 (answer p.75)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.72 (answer p.75). Also printed in Neuro endpoint.pdf, Mood disorders, Q5, p.945 (answer p.946).'
   },
 
   {
@@ -3001,13 +3001,13 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-55', bank:'gradegain', module:'neuropsych', chapter:'ps-mood',
+    id:'npqb-ps-55', bank:'gradegain', module:'neuropsych', chapter:'ps-mood', alsoIn:['endpoint'],
     stem:'A 20-year-old man has presented with increased alcohol consumption and sexual indulgence, irritability, lack of sleep and not feeling fatigued even in prolonged periods of activity. All these changes are present for the past 3 weeks. What is the most likely diagnosis?',
     options:['Schizophrenia','Alcohol dependence','Bipolar disorder','Impulse control disorder'],
     answer:2,
     explanation:'**The answer is bipolar disorder.** Four domains changed at once in a 20-year-old over three weeks — mood, sleep, sexual behaviour and alcohol use — and that simultaneity is what makes this a **mood episode** rather than a behaviour problem. `L9,10) Mood disorders` then closes it in one line: *“Bipolar I Disorder: To diagnose it, there must be at least one manic episode.”* One episode is enough; no depressive history is required.\n\n**Mapping the stem onto the manic criteria.** `L9,10` requires *“A period of abnormal and persistent elated mood or expansive or irritable mood accompanied by increased goal-directed behavior or energy during one week duration or more.”* The stem supplies **irritability** — the third mood the deck permits — and **three weeks**, past both the one-week manic threshold and the four-day hypomanic one. From the seven-item list:\n\n| Stem finding | Criterion it satisfies |\n|---|---|\n| *“lack of sleep and not feeling fatigued even in prolonged periods of activity”* | 2 — *“Decrease need for sleep.”* This is the phrase to read carefully: it is **not insomnia**. An insomniac lies awake and pays for it the next day; this man sleeps little and feels **no fatigue**, which is a decreased *need* |\n| *“sexual indulgence”* | 7 — *“Increase in goal-directed behavior( like activities with potential risks as involvement in buying sprees, sexual indiscretions or foolish business investments).”* The deck names sexual indiscretion in those words |\n| *“increased alcohol consumption”* | Also criterion 7 — risk-taking. Disinhibited substance use belongs to the episode; it is not a second diagnosis |\n\n**One honest caveat.** `L9,10` demands **four** of the seven criteria when the mood is irritable rather than elated, and this stem states only two outright. The vignette is under-specified against the deck’s own threshold. But the question asks for the **most likely** diagnosis among four offered options, and each of the other three fails on something the stem does supply.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Schizophrenia** | Nothing psychotic is described. `L11,12) Schizophrenia` is built on delusions and hallucinations, *“perceptions that occur without an external stimulus.”* This man’s reality testing is untouched; his energy, sleep and conduct changed |\n| **Alcohol dependence** | Mistakes a symptom for the diagnosis. `L15) substance related disorder and psychiatry emergency` defines addiction as *“a chronic, relapsing brain disease that is characterized by compulsive drug seeking and use, despite harmful consequences.”* Three weeks of heavier drinking inside a wider behavioural change is not a chronic relapsing course. And the pharmacology points the other way: that deck classifies alcohol under **depressants**, while cocaine and amphetamines are the **stimulants** — so drink cannot account for a reduced need for sleep with preserved energy |\n| **Impulse control disorder** | `L4,5) Psychiatric symptomatology` treats impulsivity as a **symptom** — *“inability to prevent starting the behaviour”* — listed beside compulsivity, not as a diagnosis to reach for first. Taken as an entity *(the DSM impulse-control category is not taken from the course material)*, it would explain the sexual indulgence and the drinking and nothing else: neither the sustained irritable mood nor the sleeplessness without fatigue |\n\n**Bottom line:** decreased *need* for sleep, disinhibited risk-taking and irritability running for weeks in a young adult is a manic episode — and one manic episode is bipolar disorder.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Weeks of irritability with decreased need for sleep, preserved energy and disinhibited risk-taking is a manic episode — and a single manic episode makes the diagnosis bipolar disorder.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.73 (answer p.75)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.73 (answer p.75). Also printed in Neuro endpoint.pdf, Mood disorders, Q25, p.985 (answer p.986).'
   },
 
   {
@@ -3141,23 +3141,23 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-70', bank:'gradegain', module:'neuropsych', chapter:'ps-somato',
+    id:'npqb-ps-70', bank:'gradegain', module:'neuropsych', chapter:'ps-somato', alsoIn:['endpoint'],
     stem:'Somatoform disorders include all of the following, EXCEPT:',
     options:['Acute stress disorder','Somatization disorder','Conversion disorder','Somatoform pain disorder'],
     answer:0,
     explanation:'**This is a negative stem — you are hunting the one option that is NOT a somatoform disorder, and that is acute stress disorder.** It belongs to the trauma- and stressor-related disorders, taught in a different lecture entirely.\n\n`L3) Somatization` prints the membership list under *"(DSM-IV) classifies somatoform disorders"*: *"Somatization disorder"*, *"Undifferentiated somatoform disorder"*, *"Conversion disorder"*, *"Pain disorder"*, *"Hypochondriasis"*, *"Body dysmorphic disorder"* and *"Somatoform disorder not otherwise specified (NOS)"*. Options b, c and d are on it. Acute stress disorder is not, and never was.\n\n**The two categories are defined by different things, which is the point of the question.** A somatoform disorder is defined by the **body**: somatization is *"a clinical state characterized by symptoms without demonstrable physical abnormality"* in which psychological factors have a *"role … in initiating and maintaining symptoms"*. Acute stress disorder is defined by an **event** and by psychological symptom clusters. `L8) OCD & PTSD` tabulates it against PTSD: duration *"3 days – 1 month post-trauma"* (against *">1 month post-trauma"* for PTSD), code *"308.3 / F43.0"*, dissociation as a *"Required criterion (≥9 of 14 symptoms)"* rather than an optional specifier, *"Any 9+ from five clusters"*, and *"~50% convert to PTSD"*. No bodily symptom appears anywhere in those criteria.\n\n**A caution about stress as a clue.** Stress does not distinguish the categories — conversion disorder *"usually occurs during times of stress"* too, and both Q68 and Q75 of this topic are conversion cases precipitated by an emotional stressor. What distinguishes them is that acute stress disorder requires a **traumatic** event and produces re-experiencing, avoidance, hyperarousal and dissociation, while conversion produces a neurological deficit. The department does this deliberately: `L9,10) Mood disorders` parks adjustment disorder among the depressive disorders *"though it\'s a stress-related disorder to differentiate it from other depressive disorders"* — the same trap, one category over.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails as the exception |\n|---|---|\n| **Somatization disorder** | The prototype member and the one the deck develops at greatest length — *"multiple somatic complaints requiring medical attention, but not associated with any physical disorder"*, prevalence *"4-6 % but may be as high as 15 %"* |\n| **Conversion disorder** | Starred on the printed list and given its own criteria, specifiers and worked examples in the same lecture |\n| **Somatoform pain disorder** | The deck\'s *"Pain disorder"*, fourth on the list. The bank has expanded the name, as it also did in Q65; the entity is the same |\n\n**Bottom line:** three of the four are on one printed slide. Acute stress disorder is on a different slide, in a different lecture, defined by trauma rather than by bodily complaint.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Acute stress disorder is a trauma- and stressor-related disorder (3 days to 1 month post-trauma, dissociation required), not a somatoform disorder; somatoform membership requires bodily symptoms without demonstrable physical abnormality.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.77 (answer p.78). "EXCEPT" is printed bold and underlined on the page; the emphasis is not carried into the stem here.'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.77 (answer p.78). "EXCEPT" is printed bold and underlined on the page; the emphasis is not carried into the stem here. Also printed in Neuro endpoint.pdf, Somatic disorders, Q21, p.1074 (answer p.1075).'
   },
 
   {
-    id:'npqb-ps-71', bank:'gradegain', module:'neuropsych', chapter:'ps-somato',
+    id:'npqb-ps-71', bank:'gradegain', module:'neuropsych', chapter:'ps-somato', alsoIn:['endpoint'],
     stem:'A 20-year-old female patient presented with unchanged complaints of nausea, vomiting, diarrhea, headache, fatigue and joint pain for 2 years. All her laboratory results are normal. What is the most probable diagnosis of this patient?',
     options:['Somatization disorder','Generalized anxiety disorder','Dissociative disorder','Conversion disorder'],
     answer:0,
     explanation:'**Many symptoms, many body systems, many years, and a normal workup — that combination is somatization disorder.** Count the systems before you count anything else: gastrointestinal (nausea, vomiting, diarrhoea), neurological (headache), constitutional (fatigue) and musculoskeletal (joint pain). Multiplicity across systems is the diagnostic signature.\n\n`L3) Somatization` defines somatic symptom disorder — which it names in parentheses as *"(Somatization Disorder)"* — as *"A disorder characterized by multiple somatic complaints requiring medical attention, but not associated with any physical disorder"*. Every clause is satisfied here. The deck\'s epidemiology fits her too: onset *"Commonly appears in persons 20 to 30 years of age"* and she is 20; prevalence *"estimated to be 4-6 % but may be as high as 15 %"*, so this is the common diagnosis, not an exotic one.\n\n**The lecture\'s own clinical case is the same patient, twenty years older.** `L3` opens with a woman whose *"complaints have varied and include abdominal pain, dysuria, dysmennorhea, and tiredness"*, who has been *"referred to gynecologists, urologists, and general surgeons"*, and in whom *"Extensive investigations have revealed no clear cause for her symptoms."* The word *unchanged* in the stem carries the chronicity the deck emphasises — these patients *"rarely respond to treatment, and if they do, their response is short-lived"*, and they *"exhaust the therapeutic repertoire of one physician and move on to the next."*\n\n**The management follows from the diagnosis, and it is deliberately restrained**: care directed by the *"Primary care practitioner"*, *"Regularly scheduled visits every 4-6 weeks; visits should be kept short"*, *"Avoid diagnostic tests, operative procedures unless clearly indicated"*, and *"Look for signs of disease rather than being symptom focused."* Ordering another round of investigations on a normal workup is the error the deck spends five slides warning against.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Generalized anxiety disorder** | Defined by worry, not by bodily complaint. `L8) OCD & PTSD` characterises GAD as *"Repetitive worry, anxiety"* with *"Worries are realistic, ego-syntonic"*, and the diagnosis requires excessive anxiety and worry, difficult to control, on more days than not for at least six months *(the full criterion set is not printed in these decks)*. The stem reports no worry, no apprehension and no autonomic anxiety — only symptoms |\n| **Dissociative disorder** | The wrong domain entirely. Dissociation is a disruption of memory, identity, consciousness or perception, not of bodily function *(the dissociative disorders are not taught as a category in these 25 decks)*. What the decks do print is dissociation as a **feature** of trauma: `L8` makes it a *"Required criterion (≥9 of 14 symptoms)"* of acute stress disorder and lists *"Trauma amnesia (dissociative)"* in PTSD, while `L6) Myths about psychiatry` corrects the popular confusion — *"Split personality = Dissociative Identity Disorder — a completely different condition"* |\n| **Conversion disorder** | Wrong symptom type and wrong tempo. `L3` requires *"One or more symptoms of altered voluntary motor or sensory function"* with *"incompatibility between symptom and neurological condition"*, and its mnemonic is *"SUDDEN, SYMBOLIC, SECONDARY GAIN"*. Nausea, diarrhoea, fatigue and joint pain are neither voluntary motor nor sensory functions, and two unchanged years is the opposite of sudden |\n\n**Bottom line:** conversion is one neurological deficit arriving suddenly; somatization is many symptoms across many systems grinding on for years with normal investigations.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Multiple unexplained somatic complaints spanning several body systems, persisting for years with normal investigations in a patient aged 20-30, is somatization disorder — distinguished from conversion by symptom multiplicity, non-neurological character and chronic tempo.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.77 (answer p.78)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.77 (answer p.78). Also printed in Neuro endpoint.pdf, Somatic disorders, Q4, p.1040 (answer p.1041).'
   },
 
   {
@@ -3241,13 +3241,13 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-80', bank:'gradegain', module:'neuropsych', chapter:'ps-child',
+    id:'npqb-ps-80', bank:'gradegain', module:'neuropsych', chapter:'ps-child', alsoIn:['endpoint'],
     stem:'Tom is a 7-year-old boy diagnosed with ADHD recently. His mom wants to know the prognosis of symptoms. What is the symptom most likely to remit first?',
     options:['Learning difficulties','Aggressiveness','Impulsivity','Hyperactivity'],
     answer:3,
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> Hyperactivity is the symptom most likely to remit first as the child grows older. Hyperactivity tends to decrease during adolescence and adulthood, although other symptoms, such as inattention and impulsivity, may persist.\n\n**The gross motor overactivity is the part of ADHD that grows out; the attentional deficit is the part that stays.** That is the whole answer, and the box states it plainly.\n\n**⚠️ `L14) Child Psychiatry` prints no prognosis at all for ADHD** — no course, no remission rate, no age of decline. Its ADHD run goes criteria, then *"Management"*, and stops. The trajectory this question tests is therefore supplied from outside the lecture *(the age-related decline of hyperactivity relative to inattention is not taken from the course material)*. What the deck does give is a developmental frame that makes the pattern intelligible: its opening slides describe synaptic overproduction and *"The Pruning Paradox"* — *"Use it or lose it: efficient circuits strengthen while unused connections are discarded — especially during ages 2-3 and adolescence"* — and note that when *"overproduction and pruning fail to balance, abnormal connectivity emerges — linked to autism, ADHD, and other disorders"*. Adolescence is exactly when hyperactivity is described as fading, and it is the second of the deck\'s two pruning windows.\n\n**Read the question as a mother\'s question, which is how it is written.** She is not asking whether the diagnosis goes away; she is asking what changes. The honest answer is that the visible restlessness — the child who *"runs about or climbs in situations where it is inappropriate"* and is *"on the go, acting as if driven by a motor"* — usually settles into subjective restlessness by adolescence, while the inattentive items (*"difficulty sustaining attention"*, *"often loses things necessary for tasks"*, *"often forgetful in daily activities"*) and the impulsive ones persist and increasingly drive the impairment.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Learning difficulties** | Not an ADHD symptom in the first place — `L14` lists specific learning disorder as a separate neurodevelopmental disorder, *"Difficulties learning and using academic skills … persisted for at least 6 months, despite the provision of interventions that target those difficulties"*. Where it co-exists with ADHD it is a second diagnosis with its own course, and it does not remit with age; the deck states the difficulties persist despite targeted intervention |\n| **Aggressiveness** | Not an ADHD criterion either. It appears on neither of `L14`\'s two symptom lists, and where an ADHD child is aggressive the driver is usually a comorbid disruptive behaviour disorder (see Q81) — which, untreated, tends to worsen through adolescence rather than remit |\n| **Impulsivity** | The trap, because it sits in the same criterion set as hyperactivity — *"Hyperactivity and impulsivity"* is one list in the deck, and the two are easily read as one symptom. The bank\'s own box separates them: *"other symptoms, such as inattention and impulsivity, may persist"*. Impulsive items such as *"blurts out an answer before a question has been completed"* and *"difficulty waiting his or her turn"* carry into adult life as poor judgement, risk-taking and interruption |\n\n**Bottom line:** hyperactivity first, and it is the only one of the four that is both an ADHD symptom and age-limited.',
     objective:'Hyperactivity is the ADHD symptom most likely to remit first, declining through adolescence and adulthood, while inattention and impulsivity persist; learning difficulty and aggression are not ADHD symptoms but comorbid diagnoses with their own courses.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.79 (answer p.81)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.79 (answer p.81). Also printed in Neuro endpoint.pdf, Child psychiatry, Q2, p.1109 (answer p.1110).'
   },
 
   {
@@ -3341,13 +3341,13 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-90', bank:'gradegain', module:'neuropsych', chapter:'ps-child',
+    id:'npqb-ps-90', bank:'gradegain', module:'neuropsych', chapter:'ps-child', alsoIn:['endpoint'],
     stem:'A 12-year-old boy is severely upset being compelled to repeat the end of every sentence twice and to count to 20 before answering any question. Not only that but if he is interrupted, he has to start from the beginning. Which drug has proven effective to control such manifestations?',
     options:['Propranolol','Clomipramine','Phenobarbital','Alprazolam'],
     answer:1,
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> The 12-year-old boy is exhibiting symptoms of obsessive-compulsive disorder (OCD), specifically compulsive behaviors such as repeating sentences, counting, and restarting tasks if interrupted. These behaviors are classic manifestations of OCD, where individuals feel compelled to perform rituals to reduce anxiety or prevent perceived harm. Clomipramine is a tricyclic antidepressant that has proven efficacy in treating OCD. It works by inhibiting the reuptake of serotonin, which helps reduce obsessive thoughts and compulsive behaviors.\n\n**Recognise the rituals first, then pick the drug — and only one drug on this list treats OCD at all.**\n\n**The rituals are the diagnosis.** `L8) OCD & PTSD` defines compulsions as *"Repetitive behaviours or mental acts performed in response to obsessions or rigid rules"*, and its table of common compulsions prints repeating, counting and ordering among them. Two details in the stem are worth naming. *"Severely upset"* marks the acts as **ego-dystonic** — the boy does not want to do them, which is what the deck means when it lists ego-dystonic thought content in the mental state examination. And *"if he is interrupted, he has to start from the beginning"* is the ritual\'s all-or-nothing structure: the sequence must be completed intact or the anxiety it discharges returns. The DSM-5 threshold is met by the distress alone — *"Symptoms >1 hr/day OR cause clinically significant distress/impairment"*.\n\n**Why a child.** The deck gives OCD a lifetime prevalence of *"2-3%"* with a *"Bimodal peak: childhood and early adulthood"*, notes a *"3-5x increased risk in first-degree relatives"*, and lists the paediatric complications — *"school refusal, family accommodation"*. A 12-year-old with rituals is squarely inside the first peak, not an oddity.\n\n**⚠️ Where the box is thin: clomipramine is the course\'s second-line drug, not its first.** `L8`\'s pharmacological table prints four SSRIs starred as first line — *"Fluoxetine ★ SSRI 1st line 40-80 mg/day"*, *"Fluvoxamine ★ SSRI 1st line 100-300 mg/day"*, *"Sertraline ★ SSRI 1st line 100-200 mg/day"*, *"Paroxetine ★ SSRI 1st line 40-60 mg/day"* — and then *"Clomipramine ★ TCA 2nd line 100-250 mg/day"*. It reappears at the top of the stepped ladder as *"Step 4 — Specialist/Inpatient Care: IV clomipramine, DBS, rTMS"*. So the honest answer to *"which drug has proven effective"* is *clomipramine, yes — as the second-line agent*; no SSRI is offered among the options, which is why the question works. Note also that drugs are not the first move at all: the deck\'s *"Step 2 — CBT-ERP + SSRI"* is the *"First-line combination"*, with *"ERP achieves 50-70% symptom reduction"*, and NICE is quoted as *"First-line — CBT-ERP ± SSRI"*.\n\n**The mechanism the box gives is the deck\'s own logic.** Clomipramine is the most serotonergic of the tricyclics, and `L8`\'s neurochemistry table makes serotonin the target — the OCD drugs are the serotonergic ones, whatever their class label.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Propranolol** | A beta-blocker with no role in OCD. The course gives it one indication: `L3) MOVEMENT DISORDERS` prints *"Treatment: Propranolol - Topiramate"* for essential tremor. It is the tempting answer only if the rituals are misread as a movement disorder — and `L8` closes that door in its differential table, where tic disorders resemble OCD in *"Repetitive movements"* but *"Tics are involuntary, not aimed at neutralising anxiety"*. This boy\'s repeating is deliberate and anxiety-driven, so it is a compulsion, not a tic |\n| **Phenobarbital** | A barbiturate anticonvulsant, and the course does not name it as a drug at all — barbiturates appear only as sedatives capable of causing delirium (`L13) Dementia and Delirium`) and among the substances requiring detoxification (`L15`). Nothing connects it to OCD |\n| **Alprazolam** | The plausible wrong answer, because the boy is anxious. `L17) Psychopharmacology` names it among the *"most commonly prescribed Benzos"* — *"Alprazolam (Xanax)"* — and restricts benzodiazepine indications to *"Panic disorder · Generalized anxiety disorder · Insomnia · Seizures · Alcohol withdrawal"*, with the ceiling printed in bold red: *"must NOT be used more than ONE month"*. OCD is not on that list; the illness is chronic, so a one-month drug cannot treat it; and the deck\'s adverse-effect slide ends on *"Tolerance and dependence"* — the last thing to start in a 12-year-old |\n\n**Bottom line:** counting, repeating and restarting rituals that distress the child are OCD, and of the four drugs offered only clomipramine — the serotonergic tricyclic, second line behind the SSRIs and CBT-ERP — has proven efficacy in it.',
     objective:'Repeating, counting and restart-if-interrupted rituals that distress the child are OCD compulsions; clomipramine, a serotonergic tricyclic, is the course\'s second-line drug behind first-line CBT-ERP plus an SSRI, while propranolol, phenobarbital and alprazolam have no role.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.80 (answer p.81). No dose is printed for clomipramine in the bank; the doses quoted in the explanation are from L8) OCD & PTSD.'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.80 (answer p.81). No dose is printed for clomipramine in the bank; the doses quoted in the explanation are from L8) OCD & PTSD. Also printed in Neuro endpoint.pdf, Anxiety disorders, Q3, p.841 (answer p.842).'
   },
 
   {
@@ -3361,23 +3361,23 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-92', bank:'gradegain', module:'neuropsych', chapter:'ps-symptom',
+    id:'npqb-ps-92', bank:'gradegain', module:'neuropsych', chapter:'ps-symptom', alsoIn:['endpoint'],
     stem:'The state of unresponsiveness is known as:',
     options:['Delirium','Lethargy','Stupor','Confusion'],
     answer:2,
     explanation:'**Stupor is the term for a patient who appears awake but does not respond, and `L4,5) Psychiatric symptomatology` prints that definition as a matching item.**\n\nThe deck\'s third matching exercise offers *"a) Restlessness. b) Agitation. c) Stupor. d) Stereotypy. e) Perseveration. f) Echolalia. g) Waxy flexibility"* and asks which of them is *"Person who seems to be conscious with no adequate response to external or internal stimuli."* That is stupor, and it is the bank\'s stem in longer words. Note what the definition does **not** say: it does not say the patient is unconscious. Consciousness is preserved — what fails is the response.\n\nStupor sits in the deck under **behaviour**, not under consciousness. `L4,5` files *"Catatonic stupor"* in its catatonia list alongside catatonic rigidity, mutism, waxy flexibility, negativism, stereotypy, mannerism, grimacing, echolalia, echopraxia and catatonic excitement — so in psychiatric usage stupor is most often met as part of a catatonic picture. `L15) substance related disorder and psychiatry emergency` makes the same point from the syndrome side: *"Catatonia is a clinical syndrome characterized by motoric immobility or excitement, profound negativism, echolalia (mimicry of speech), echopraxia (mimicry of movement)."* Motoric immobility in an alert patient is stupor.\n\n**Why each of the other three is wrong:**\n\n- **Delirium** is not a state of unresponsiveness but of *disturbed* responsiveness. `L13) Dementia and Delirium` defines it as *"a transient, usually reversible, cerebral dysfunction"*, adds that *"The hallmarks of delirium are waxing and waning signs, symptoms, and sensorium"*, and tabulates its consciousness as *"altered"* against dementia\'s *"clear"*. The deck also splits it into *"Agitation (hyperactive type of delirium) or hypersomnolence (hypoactive type)"* — the hyperactive delirious patient is over-responsive, not unresponsive.\n- **Lethargy** is reduced arousal — drowsiness from which the patient can be roused by ordinary stimulation. It is a level-of-consciousness word, and unlike stupor the responsiveness returns when you push. The term is not defined anywhere in the cached decks, *not taken from the course material*.\n- **Confusion** is disordered thinking, not absent responding. `L13` uses *"Acute confusional state"* as one of delirium\'s own alternative names (printed beside *"ICU psychosis, Sundowning"*), so confusion is a feature of that syndrome rather than a separate answer to this stem. A confused patient talks — incorrectly, but he talks.\n\n**The discriminator to carry:** delirium, lethargy and confusion all describe a *clouded* mind; stupor describes a *clear* mind that does not answer. The deck\'s own wording — *"seems to be conscious with no adequate response"* — is the whole distinction in one clause.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Stupor is the state in which a patient seems conscious but gives no adequate response to external or internal stimuli — a behavioural sign, most often catatonic — whereas delirium, lethargy and confusion all involve a clouded or fluctuating level of consciousness.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.82 (answer p.85)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.82 (answer p.85). Also printed in Neuro endpoint.pdf, Symptomatology, Q13, p.785 (answer p.786).'
   },
 
   {
-    id:'npqb-ps-93', bank:'gradegain', module:'neuropsych', chapter:'ps-symptom',
+    id:'npqb-ps-93', bank:'gradegain', module:'neuropsych', chapter:'ps-symptom', alsoIn:['endpoint'],
     stem:'Delusion is a disorder of:',
     options:['Thought','Affect','Perception','Personality'],
     answer:0,
     explanation:'**A delusion is a disorder of thought — specifically of thought *content* — and `L4,5) Psychiatric symptomatology` files it there explicitly.**\n\nThe deck organises the mental state under the mnemonic **TOP-MAGII**: *"T Thought (talk) · O Orientation · P Perception · M Memory · A Attention & concentration · G General knowledge · I Intelligence · I Insight & judgment."* It then opens the T: *"T…Thought: (Type, Content, Form) — Type: proverb, abstract, concrete · Content: delusions, obsessions · Form (talk): stream (rate, volume, tone), appropriateness."* Delusions are printed under **Content**, beside obsessions. That single line answers the question.\n\nThe deck defines the symptom twice. `L4,5`\'s fourth matching exercise gives *"False fixed belief, can\'t be reasoned, not related to the cultural or religious background of the patient"* and keys it to *c) Delusion*. `L11,12) Schizophrenia` says the same thing in its own words — *"Delusions, are fixed false beliefs that a person strongly believes even when there is clear evidence that they are not true"* — and prints three worked examples: *"Believing that strangers are spying on you without any evidence (persecutory delusion)"*, *"Believing you have special powers or an important mission (grandiose delusion)"*, and *"Believing a famous person is secretly in love with you (erotomanic delusion)."* Every one of those is a belief. A belief is a thought, not a percept and not a feeling.\n\n**Why each of the other three is wrong:**\n\n- **Affect.** `L4,5` defines affect as *"Emotional expression, Short term"* against mood\'s *"Emotional experience, Long term"*, and lists its disorders separately: quantitatively *"Sadness …. Depressed mood"*, *"Anhedonia"*, *"Blunted affect or apathy"*; qualitatively *"Ambivalence"*, *"Inappropriate affect (mood incongruity)"*, *"Emotional incontinence"* and *"La belle indifference"*. Delusion appears on none of those lists.\n- **Perception.** The deck defines perception as *"Giving a meaning to received stimuli"* and gives it exactly two disorders — *"Illusions"* (*"False perception for an existing stimulus"*) and *"Hallucinations"* (*"Non existing stimulus"*). This is the strongest distractor, because a persecutory delusion and a persecutory hallucination often travel together in the same patient; the split is that a hallucination is a false *percept* while a delusion is a false *interpretation* held as fact.\n- **Personality.** Personality is assessed in this course as **premorbid personality** — `L1,2) Psychiatric sheet` prints *"PREMORBID PERSONALITY"* as its own heading in the history, alongside *"Relational changes"*. It is the enduring background against which an illness appears, not a category of symptom. A delusion is a new, acute abnormality of belief, not a trait.\n\n**The line to hold:** false belief → thought content; false percept → perception; false or absent feeling → affect; long-standing trait → personality.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'A delusion is a fixed false belief that cannot be reasoned away and is not explained by the patient\'s cultural or religious background; the lecture files it under thought CONTENT, beside obsessions, and not under perception, affect or personality.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.82 (answer p.85)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.82 (answer p.85). Also printed in Neuro endpoint.pdf, Symptomatology, Q14, p.787 (answer p.788).'
   },
 
   {
@@ -3471,7 +3471,7 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-103', bank:'gradegain', module:'neuropsych', chapter:'ps-symptom',
+    id:'npqb-ps-103', bank:'gradegain', module:'neuropsych', chapter:'ps-symptom', alsoIn:['endpoint'],
     stem:'A patient, who does not eat because he is convinced that his family is poisoning his food, is said to have:',
     options:['Anorexia','Obsession','Apathy','Delusion'],
     answer:3,
@@ -3491,23 +3491,23 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-105', bank:'gradegain', module:'neuropsych', chapter:'ps-psychosis',
+    id:'npqb-ps-105', bank:'gradegain', module:'neuropsych', chapter:'ps-psychosis', alsoIn:['endpoint'],
     stem:'Which of the following is a negative symptom of schizophrenia?',
     options:['Delusion','Loosening association','Hallucinations','Apathy'],
     answer:3,
     explanation:'**Apathy is the only deficit on this menu. The other three are all positive symptoms — things the illness ADDS — and the positive/negative split is the whole content of the question.**\n\nThe book\'s schizophrenia chapter (`neuropsychiatry.pdf`, printed p.233) prints the two lists side by side and defines the division before it lists anything. Positive symptoms are *"Those that most individuals do not normally experience but are present in people with schizophrenia (manifestations of psychosis)"*, and it names three: *"Delusions"*, *"Disordered thoughts and speech"*, *"Hallucinations (tactile, auditory, visual, olfactory, and gustatory)"*. Negative symptoms are *"Deficits of normal emotional responses or thought processes"*, and it names five: *"Flat expressions (little emotion)"*, *"Poverty of speech (Alogia)"*, *"Inability to experience pleasure (Anhedonia)"*, *"Lack of desire to form relationships"* and *"Lack of motivation (Avolition)"*. **Every one of the four options is on one of those two lists or is the lecture\'s word for something on them.**\n\n**Why "apathy" and not "avolition".** The book prints *avolition*; the option prints *apathy*. `L4,5) Psychiatric symptomatology` supplies the bridge — under *Mood & affect, Quantitative, Decrease* it prints *"Anhedonia"*, *"Blunted affect or apathy"*, *"Indifference"* and *"Restricted affect"*. Apathy sits in that deck as a **decrease** in affect and drive, which is exactly what a negative symptom is. The DSM-5 criterion the book prints on printed p.232 uses the third wording again — *"Negative symptoms (i.e., affective flattening, alogia, or avolition)"*. Three names, one deficit.\n\n**Two consequences worth carrying, because the bank returns to both.** First, **treatment response is asymmetric**: printed p.233 says positive symptoms *"respond well to medication"* while for negative symptoms *"Response to medication is often limited"*, and that they *"Contribute more to poor quality of life, functional ability, and burden on others"*. Second, **prognosis follows the same axis** — the printed-p.234 prognosis poster puts *"Positive symptoms"* in the good-outcome column and *"Negative symptoms"* in the poor-outcome column. The dopamine scheme on printed p.230 completes it: positive symptoms with **excessive dopamine** in the associative nigrostriatal pathway, negative symptoms with a **deficit of dopamine** in the mesolimbic pathway.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Delusion** | A **positive** symptom and the first item on the printed-p.233 positive list. `L4,5` files it under *Thought — Content* and defines it as a *"False fixed belief, can\'t be reasoned, not related to the cultural or religious background of the patient"*. It is an addition to mental life, not a deficit |\n| **Loosening association** | Formal thought disorder — the book\'s *"Disordered thoughts and speech"* and DSM-5\'s *"Disorganized speech (e.g., frequent derailment or incoherence)"* (printed p.232). Also **positive**. The trap is that speech is abnormal in both columns: loosening of association is disorganised speech (positive), whereas **alogia**, poverty of speech, is the negative one. Abnormal speech alone does not tell you which side you are on |\n| **Hallucinations** | A **positive** symptom, and `L4,5` defines it under *Perception* as a percept from a *"Non existing stimulus"*, listing *"Auditory, visual, olfactory, tactile, gustatory"*. Again an addition |\n\n**Bottom line:** positive = added (delusions, hallucinations, disorganised speech and thought); negative = subtracted (flat affect, alogia, anhedonia, asociality, avolition/apathy). Only apathy is a subtraction.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Positive symptoms are additions to mental life — delusions, hallucinations, disordered thought and speech — and respond well to medication; negative symptoms are deficits — flat affect, alogia, anhedonia, asociality and avolition/apathy — respond poorly, and carry the worse prognosis.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.83 (answer p.85)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.83 (answer p.85). Also printed in Neuro endpoint.pdf, Schizophrenia, Q19, p.1201 (answer p.1202).'
   },
 
   {
-    id:'npqb-ps-106', bank:'gradegain', module:'neuropsych', chapter:'ps-symptom',
+    id:'npqb-ps-106', bank:'gradegain', module:'neuropsych', chapter:'ps-symptom', alsoIn:['endpoint'],
     stem:'Loss of insight occurs in:',
     options:['Panic disorder','Schizophrenia','Somatoform disorders','Obsessive Compulsive neurosis'],
     answer:1,
     explanation:'**`L4,5) Psychiatric symptomatology` answers this question in four printed lines, and it maps three of these four options by name.** Under *Intellectual functions — I … Insight & Judgment* the deck defines insight as the *"ability to identify whether (s)he is suffering of a psychiatric disorder or not"*, then grades it:\n\n- *"Intact …. (Anxiety)"*\n- *"Absent .... (Psychosis)"*\n- *"Partial …. (Somatic symptom)"*\n\nSchizophrenia is the psychosis on this menu, so insight is **absent** — option b. The same slide grades judgment on the identical axis: *"Good …. Anxiety"*, *"Poor …. Psychosis"*.\n\n**This is the neurosis/psychosis divide, and it is the reason the item exists.** Loss of insight is not one symptom among many in schizophrenia; it is the feature that separates the psychotic disorders from every other option here. `L8) OCD & PTSD` makes the same cut from the other direction — its differential-diagnosis table distinguishes schizophrenia from OCD by *"Ego-syntonic, lack of insight, positive symptoms"*, against OCD\'s ego-dystonic obsessions that the patient recognises as their own and resists.\n\n**It has a direct management consequence**, which is why the book bothers to print it: among the indications for hospitalisation the book\'s schizophrenia chapter (`neuropsychiatry.pdf`, printed p.235) lists *"Possible deterioration of health: dehydration, total refusal of food, no insight & refusal of medications"*. The deck L11,12 prints the same line. A patient who cannot identify that he is ill cannot consent to be treated for it, and that is what turns absent insight into an admission.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Panic disorder** | An anxiety disorder, and `L4,5` files anxiety on the *intact* row. The book\'s anxiety chapter says it outright for the whole group — *"Features: Psychotic features are absent. Insight is intact."* The panicking patient knows perfectly well that the attack is an attack; that recognition is often what brings him to the clinic |\n| **Somatoform disorders** | `L4,5` gives this group its own row and it is **partial**, not absent — *"Partial …. (Somatic symptom)"*. The patient half-accepts that no physical disease has been found and half-does not, which is precisely what makes these patients so hard to reassure. `L3) Somatization` frames the whole group as *"symptoms without demonstrable physical abnormality"* with *"role of psychological factors"* — the belief is stubborn but it is not held with delusional conviction |\n| **Obsessive Compulsive neurosis** | The bank\'s older name for OCD, and the book files obsessive-compulsive and related disorders inside *Anxiety And Related Disorders*, whose printed feature line is *"Psychotic features are absent. Insight is intact."* The obsession is ego-dystonic: the patient knows the thought is senseless and fights it. ⚠️ **One qualification worth carrying** — `L8` prints the DSM-5 specifiers *"With good/fair insight | With poor insight | With absent insight/delusional beliefs"*, so a minority of OCD patients do lose insight. That does not move the key: the stem asks where loss of insight **occurs** as a rule, and in OCD it is a specifier for the exception, whereas in psychosis it is the rule |\n\n**Bottom line:** absent insight = psychosis; partial = somatoform; intact = anxiety, OCD included. Learn the three-row table, not the single answer.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Insight is the ability to recognise that one is ill: intact in anxiety and OCD, partial in somatoform disorders, and absent in psychosis — which is why loss of insight in schizophrenia becomes an indication for admission when medication is refused.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.83 (answer p.85). Option d\'s mid-capitals ("Obsessive Compulsive neurosis") are the book\'s own and are transcribed as printed.'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.83 (answer p.85). Option d\'s mid-capitals ("Obsessive Compulsive neurosis") are the book\'s own and are transcribed as printed. Also printed in Neuro endpoint.pdf, Symptomatology, Q12, p.783 (answer p.784); and Schizophrenia, Q14, p.1191 (answer p.1192).'
   },
 
   {
@@ -3521,13 +3521,13 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-108', bank:'gradegain', module:'neuropsych', chapter:'ps-psychosis',
+    id:'npqb-ps-108', bank:'gradegain', module:'neuropsych', chapter:'ps-psychosis', alsoIn:['endpoint'],
     stem:'What duration is needed for diagnosis of schizophrenia?',
     options:['One month','One week','One year','Six months'],
     answer:3,
     explanation:'**Six months of continuous signs, of which at least one month is active-phase symptoms. The menu prints both numbers and the stem asks for the one that makes the diagnosis — that is six months, not one.**\n\nThe book\'s schizophrenia chapter (`neuropsychiatry.pdf`, printed p.232) prints the DSM-5 criteria in full and gives the two durations in two different places, which is exactly what this question is built on.\n\n**Criterion A — the symptom threshold**: *"Two (or more)"* of delusions, hallucinations, disorganized speech, grossly disorganized or catatonic behavior, and negative symptoms, *"each present for a significant portion of time during a **1-month period** (or less if successfully treated)"*.\n\n**The duration criterion — the diagnostic threshold**: *"Continuous signs of the disturbance persist for **at least 6 months**. This 6-month period must include **at least 1 month** of symptoms (or less if successfully treated) that meet Criterion A (active-phase symptoms) and may include periods of prodromal or residual symptoms."*\n\n**So the one month is nested inside the six.** The six months is the total illness, prodrome and residual included; the one month is the window of florid psychosis that has to sit somewhere inside it. During the prodromal or residual stretches the book allows the signs to be *"only negative symptoms or two or more symptoms listed in Criterion A present in an attenuated form (e.g., odd beliefs, unusual perceptual experiences)."* That is why a patient who has been odd and withdrawn for five months and frankly psychotic for the sixth still qualifies.\n\n**What the six months is doing there.** It is a filter against calling a transient psychosis schizophrenia. The book approaches the same problem from the other side on printed p.235, where the differential lists drug intoxication and drug-induced psychosis, delirium, and psychosis in bipolar and borderline personality disorder — all of which can look identical in a single week and none of which runs continuously for six months. *(The DSM-5 labels for psychoses shorter than six months — brief psychotic disorder under a month, schizophreniform between one and six — are **not taken from the course material**: neither term appears anywhere in the cached decks or book chapters.)*\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **One month** | The **right number for the wrong criterion**, and the only serious distractor here. One month is the Criterion A window — how long the characteristic symptoms must have been present — and also the minimum active-phase segment inside the six. It is never by itself enough to diagnose schizophrenia |\n| **One week** | No threshold of one week is printed anywhere in this chapter. It is short enough to belong to an acute organic or drug-induced picture; the book\'s printed-p.235 differential puts delirium and drug-induced psychosis exactly there, distinguished by *"acute onset"* and *"fluctuating level of consciousness"* |\n| **One year** | Not a schizophrenia duration in any part of the material. The chapter\'s only other long interval is the **5 years** over which printed p.233 grades the course of first-admission patients (22% / 35% / 8% / 38%), which is a prognostic frame, not a diagnostic one |\n\n⚠️ **A lettering defect in the source of these criteria, recorded and not corrected:** the book prints **two criteria both lettered `A`** on printed p.232 — *Characteristic Symptoms* and then, after the Note box, *Onset of the disturbance* — so its list runs A, A, B, C, D and the duration criterion carries the letter B. That is the book\'s own numbering; it does not change any of the figures above.\n\n**Bottom line:** 6 months total, ≥1 month active. If you remember only one number, remember six — the stem asks for the diagnosis.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'DSM-5 schizophrenia requires continuous signs of disturbance for at least six months, including at least one month of active-phase Criterion A symptoms, with prodromal and residual periods counting toward the six.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.83 (answer p.85)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.83 (answer p.85). Also printed in Neuro endpoint.pdf, Schizophrenia, Q18, p.1199 (answer p.1200).'
   },
 
   {
@@ -3551,33 +3551,33 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-111', bank:'gradegain', module:'neuropsych', chapter:'ps-schizmgmt',
+    id:'npqb-ps-111', bank:'gradegain', module:'neuropsych', chapter:'ps-schizmgmt', alsoIn:['endpoint'],
     stem:'What is the drug of choice for management of treatment resistant schizophrenia?',
     options:['Clozapine','Aripiprazole','Olanzapine','Haloperidol'],
     answer:0,
     explanation:'**Clozapine — and it is the only drug in the material that carries this indication.** The book\'s schizophrenia chapter (`neuropsychiatry.pdf`, printed p.238) names it directly for **treatment-resistant (refractory) schizophrenia**, and pairs the indication with the reason it is not used first: **agranulocytosis**.\n\n**What "treatment-resistant" means here.** The standard definition — failure of an adequate trial of two different antipsychotics, at least one of them second-generation — is **not taken from the course material**; the chapter prints the phrase without defining it. What the material does make clear is the sequence: an antipsychotic is chosen from the classes on printed p.236, and clozapine is what you reach for **after** the ordinary agents have failed, not instead of trying them.\n\n**Why it is held back.** Agranulocytosis is the printed reason. ⚠️ **Note carefully what the chapter does and does not say:** it names agranulocytosis on printed p.238 and then **never instructs you to monitor a white cell count** — no threshold, no interval, no dose appears anywhere in the chapter. The mandatory **serial blood-count monitoring** that clozapine carries in practice is therefore **not taken from the course material**, and neither are the specific neutrophil counts and schedules you may have seen elsewhere; they are deliberately not reproduced here. Learn the rule, not a number: *check the white cell count, and stop the drug if it falls.* The other associations — myocarditis, seizures at higher doses, marked sedation — are likewise **not taken from the course material**, though printed p.238 does record **hypersalivation**, **prominent weight gain** and common **anticholinergic effects** for clozapine.\n\n**Why the other three are wrong for this stem:**\n\n| Option | What it is | Why it is not the answer |\n|---|---|---|\n| **Aripiprazole** | The book classes it separately as **3rd generation** — a *"Partial Dopamine agonist antagonist"* or **dopamine stabilizer** (printed p.236) | A reasonable *first- or second-line* choice, and the chapter records **hyperprolactinaemia as rare** with it — but the material gives it no refractory indication |\n| **Olanzapine** | **Atypical**, a dopamine and serotonin antagonist (printed p.236) | Widely used first-line, and printed p.237 names it for **prominent weight gain** and **common anticholinergic effects**. It is a drug you will have *already failed* before the word "resistant" applies |\n| **Haloperidol** | **Typical (first-generation)**, high potency | The classic conventional agent, and printed p.237 puts it at the sharp end of the **extrapyramidal side effects** — treated, the chapter says, with anticholinergics and **propranolol**. It is also the drug the material picks for acute agitation, which is a different question |\n\n⚠️ **Do not confuse "drug of choice for a resistant case" with "drug of choice for a non-compliant one."** Printed p.238 answers the second one separately, under the same heading *"Treatment of resistant cases & non-compliant patients"*: **long-acting depot preparations** are for the patient *"unwilling or unable to take medication regularly"*, and the chapter says they **reduce the risk of relapse** more than oral medication. Non-compliance is not resistance.\n\n**One non-drug answer sits beside clozapine.** The same page lists **ECT** for *"suicidal/homicidal attempts, catatonic stupor, excitement and resistant cases"*, and the chapter\'s resistant-case flow runs clozapine or depot → psychosocial interventions → ECT. This stem asks for a **drug**, so the answer is still clozapine.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Clozapine is the drug of choice for treatment-resistant schizophrenia; its risk of agranulocytosis is why it is reserved and why it requires blood-count monitoring, while depot antipsychotics answer the different problem of non-compliance.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). Also printed in Neuro endpoint.pdf, Schizophrenia, Q3, p.1166 (answer p.1167).'
   },
 
   {
-    id:'npqb-ps-112', bank:'gradegain', module:'neuropsych', chapter:'ps-psychosis',
+    id:'npqb-ps-112', bank:'gradegain', module:'neuropsych', chapter:'ps-psychosis', alsoIn:['endpoint'], alsoIn:['endpoint'],
     stem:'Mohamed is a 21-year university student. Over the past few months his family overheard him whispering in an agitated voice, even thought there is no one nearby. Lately, he has accused his parents on several occasions of conspiring with the aliens to have him killed. He has stopped attending classes altogether. He will fail if something doesn\'t change very soon. What is the provisional diagnosis?',
     options:['Mania','Depression','Schizophrenia','PTSD'],
     answer:2,
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> Mohamed\'s symptoms are most consistent with schizophrenia, characterized by: Auditory hallucinations (whispering in an agitated voice when no one is nearby). Delusions (fixed false beliefs, such as his parents conspiring with aliens to kill him). Social and occupational dysfunction (stopping attendance at university and risk of failing).\n\n**The vignette is built out of the DSM-5 criteria, one clause at a time.** Map it back to the book\'s chapter (`neuropsychiatry.pdf`, printed p.232) and nothing is left over:\n\n| What the stem says | Criterion it satisfies |\n|---|---|\n| *"whispering in an agitated voice, even thought there is no one nearby"* | **Hallucination** — `L4,5) Psychiatric symptomatology` defines it as a perception with no external stimulus. Answering an unheard voice is the observable sign of it |\n| *"accused his parents … of conspiring with the aliens to have him killed"* | **Persecutory delusion** — `L4,5` prints the definition: *"False fixed belief, can\'t be reasoned, not related to the cultural or religious background of the patient."* The aliens make it **bizarre**, which printed p.232\'s Note box treats as carrying particular weight |\n| *"has stopped attending classes altogether … will fail"* | **Social / occupational dysfunction**, the criterion that separates a symptom from an illness |\n| *"over the past few months"* | The **duration** criterion — signs continuous for at least six months, at least one of them active-phase |\n\n**And the demographics fit.** Printed p.228 puts onset in **late adolescence and young adulthood**, slightly more common in males and with an earlier onset in them. Mohamed is 21.\n\n**Why the other three are wrong:**\n\n| Option | What it would need |\n|---|---|\n| **Mania** | An elevated, expansive or irritable **mood** with increased energy — the whole picture must be driven by the mood change, with pressure of speech, reduced sleep and grandiosity. `L9,10) Mood disorders` does allow psychotic features here, but they are the specifier, not the diagnosis, and there is **no mood elevation anywhere in this stem** — the agitation described is the agitation of talking back to voices |\n| **Depression** | Persistent low mood, anhedonia and the biological symptoms. Withdrawal and failing classes are compatible, but psychotic depression\'s delusions are typically **mood-congruent** (guilt, worthlessness, nihilism), not persecution by aliens, and the stem records no low mood at all |\n| **PTSD** | An index **traumatic event**, then re-experiencing (flashbacks, nightmares), avoidance and hyperarousal. There is no trauma in this history, and a flashback is a re-lived memory — not a voice commenting from outside |\n\n⚠️ **Two printing slips in the stem, transcribed as the bank prints them:** *"a 21-year university student"* (no "-old") and *"even thought there is no one nearby"* ("thought" for "though"). Neither changes the meaning.\n\n**Note the word "provisional".** At a few months\' history the safe formulation is a provisional diagnosis of schizophrenia — the six-month clock and the differential on printed p.235 (drug-induced psychosis, delirium, mood disorder with psychotic features) still have to be cleared.',
     objective:'A young adult with auditory hallucinations, bizarre persecutory delusions and months of social and occupational decline, without mood elevation, low mood or a traumatic index event, is a provisional case of schizophrenia.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). The bank prints an Explanation box for this question; curly apostrophes in the printed stem and box are straightened here.'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). The bank prints an Explanation box for this question; curly apostrophes in the printed stem and box are straightened here. Also printed in Neuro endpoint.pdf, Schizophrenia, Q4, p.1168 (answer p.1169).'
   },
 
   {
-    id:'npqb-ps-113', bank:'gradegain', module:'neuropsych', chapter:'ps-psychosis',
+    id:'npqb-ps-113', bank:'gradegain', module:'neuropsych', chapter:'ps-psychosis', alsoIn:['endpoint'],
     stem:'What is common to schizophrenia and Alzheimer disease?',
     options:['Apraxia','Delusions','Disorientation','Aphasia'],
     answer:1,
     explanation:'**Delusions — the only item on this menu that both illnesses actually produce. The other three are the cortical deficits of Alzheimer disease, and schizophrenia has none of them.**\n\n**Look at how the menu is built.** `L13) Dementia and Delirium` prints the diagnostic domains of Alzheimer disease as **amnesia, aphasia, apraxia, agnosia** and **topographical disorientation**. Three of the four options here — apraxia, disorientation, aphasia — are lifted straight off that list. Only **delusion** is not, and that is the whole trick of the question.\n\n**Delusions in schizophrenia.** They are a core positive symptom: the book\'s chapter (`neuropsychiatry.pdf`, printed p.232) opens Criterion A with delusions, and `L11,12) Schizophrenia` builds the Schneiderian first-rank list around them — delusional perception, delusions of control and passivity.\n\n**Delusions in Alzheimer disease.** `L13` records the **behavioural and psychological symptoms of dementia (BPSD)** in around **90%** of patients, and names **delusion** and **hallucination** among them. The classic dementia delusions are of theft, of infidelity, and of the house not being one\'s own *(those three specific themes are **not taken from the course material**)*. So the symptom is shared — but the mechanism and the setting are not: in schizophrenia it arrives in a young adult with intact cognition, in Alzheimer disease it arrives late, on a floor of progressive memory loss.\n\n**Why the other three are Alzheimer-only:**\n\n| Option | What it is | Why schizophrenia does not have it |\n|---|---|---|\n| **Apraxia** | Inability to carry out a learned skilled movement despite intact motor power, sensation and comprehension | A **cortical deficit**. Schizophrenia has motor abnormalities — catatonia, grossly disorganised behaviour on printed p.232 — but disorganisation is not loss of a learned motor programme |\n| **Disorientation** | Loss of orientation to time, place or person | The hallmark of an **organic** state, and the discriminator the book leans on in its differential on printed p.235: **delirium** has the acute onset and the fluctuating level of consciousness, dementia the progressive cognitive decline. The schizophrenic patient is characteristically **alert and oriented** — his beliefs are wrong, not his coordinates |\n| **Aphasia** | Loss of language — a defect of the language apparatus itself | Not the same object as schizophrenia\'s **disorganised speech** or **alogia**. Disorganised speech is fluent but derailed; alogia is poverty of output. In aphasia the machinery is broken; in schizophrenia the content or the drive is |\n\n⚠️ **The pitfall this question is built on:** knowing that schizophrenia disturbs thought and speech makes aphasia and disorganisation feel interchangeable. They are not. Sort the menu by *which illness owns it* — three belong to Alzheimer disease alone, one belongs to both.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Delusions occur in both schizophrenia (as a core positive symptom) and Alzheimer disease (as part of BPSD), whereas apraxia, aphasia and disorientation are cortical or organic deficits of dementia that schizophrenia does not produce.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85)'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). Also printed in Neuro endpoint.pdf, Dementia and delirium, Q3, p.1293 (answer p.1294).'
   },
 
   {
@@ -3591,13 +3591,13 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-115', bank:'gradegain', module:'neuropsych', chapter:'nr-delirium',
+    id:'npqb-ps-115', bank:'gradegain', module:'neuropsych', chapter:'nr-delirium', alsoIn:['endpoint'],
     stem:'On third day of hospitalization for an elective hysterectomy, a 45-year-old woman experienced visual and auditory hallucinations, and is agitated. What would be the most appropriated drug for this patient?',
     options:['Propranolol','SSRI','Atypical antipsychotic','A benzodiazepine'],
     answer:2,
     explanation:'**This is post-operative delirium, not schizophrenia — and the drug is an antipsychotic.**\n\n**Read the three cues that make it delirium.** `L13) Dementia and Delirium` calls delirium an *"acute confusional state or acute brain failure"* and records that **postoperative delirium occurs in 15–53% of patients**. Everything in the stem points there:\n\n| Cue | Why it matters |\n|---|---|\n| **Third day of hospitalisation, after surgery** | Acute onset in a medically stressed patient — the classic window. A primary psychotic illness does not begin on a surgical ward on day three |\n| **Visual** hallucinations | `L4,5) Psychiatric symptomatology` prints the rule of thumb bluntly: *"Visual …….. Organicity."* Visual hallucinations point away from schizophrenia and toward an organic cause. Here they are visual **and** auditory, which is even less like a primary psychosis |\n| **Agitation** | The hyperactive form of delirium — the part that needs treating tonight, while the cause is being found |\n\n**Why an atypical antipsychotic.** `L13` sets out the management in order: **treat the underlying cause** first, then **environmental interventions** (orientation cues, frequent reorientation, familiar visitors, minimal staff switching), then — for the agitation itself — *"Small doses of antipsychotics \'as haloperidol\' and \'risperidone\' can be used to control agitation"* and *"Atypical antipsychotics may be used as low doses of quitiapine"* (the lecture\'s own spelling). The atypicals are preferred in this setting because they carry less extrapyramidal burden than the conventional agents. ⚠️ **No dose is printed** — the lecture says "small doses" and "low doses" and stops there, and this bank prints no dose anywhere in the topic, so any milligram figure you have seen is **not taken from the course material**.\n\n**Why the other three are wrong — and one of them is a trap:**\n\n| Option | What it is for | Why not here |\n|---|---|---|\n| **A benzodiazepine** | Sedation, alcohol and sedative withdrawal, catatonia | ⚠️⚠️ **The trap, and the most dangerous answer on the menu.** `L13` says explicitly to *"Minimize psychoactive medications especially those with anticholinergic potentials and sedating one"* — and it lists **sedatives (benzodiazepines, barbiturates)** among the *causes* of delirium. Giving one to a delirious post-operative patient typically deepens the confusion. The one exception is delirium **due to alcohol or sedative withdrawal**, which this stem does not describe |\n| **Propranolol** | A beta blocker. In this material its psychiatric use is on printed p.237 of the book, where it is one of the treatments for antipsychotic-induced **extrapyramidal side effects** — akathisia in particular | Treats no part of an acute confusional state, and does nothing for hallucinations |\n| **SSRI** | Depression and the anxiety disorders | Wrong target and wrong timescale — an SSRI takes weeks to act, and this patient is agitated and hallucinating now |\n\n⚠️ **The printed stem reads "the most appropriated drug"** (for *appropriate*) — the bank\'s own slip, transcribed as printed.\n\n**Filed under Delirium, not schizophrenia.** The item sits inside the bank\'s schizophrenia topic, but its entire discriminating content — the post-operative onset, the visual hallucinations, the benzodiazepine trap and the small-dose antipsychotic rule — is taught in `L13) Dementia and Delirium`.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Agitation with visual and auditory hallucinations on the third post-operative day is delirium: treat the cause and use environmental measures, control the agitation with a small dose of an antipsychotic (atypicals preferred), and avoid benzodiazepines, which can deepen the delirium.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). The stem is printed "the most appropriated drug" — the book\'s own slip, transcribed as printed. The options name bare agents and drug classes only; no dose is printed.'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). The stem is printed "the most appropriated drug" — the book\'s own slip, transcribed as printed. The options name bare agents and drug classes only; no dose is printed. Also printed in Neuro endpoint.pdf, Mood disorders, Q6, p.947 (answer p.948).'
   },
 
   {
@@ -3681,13 +3681,13 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-124', bank:'gradegain', module:'neuropsych', chapter:'ps-symptom',
+    id:'npqb-ps-124', bank:'gradegain', module:'neuropsych', chapter:'ps-symptom', alsoIn:['endpoint'],
     stem:'Which of the following is an abnormality of attention?',
     options:['Delusions','Distractibility','Hallucinations','Insomnia'],
     answer:1,
     explanation:'**Distractibility is the attention word, and the lecture files it nowhere else.**\n\n`L4,5) Psychiatric symptomatology` organises the mental state by faculty, and the option list here is one item taken from four different faculties. Its **attention and concentration** slide defines attention as the *"selective perception of certain stimuli"* and prints exactly two abnormalities of it:\n\n| Abnormality | Definition and where it points |\n|---|---|\n| **DISTRACTIBILITY** | *"Inability to sustain"* attention. Seen in **mania**, **depression** and **ADHD** |\n| **INATTENTION WITH A DISTURBED CONSCIOUS LEVEL** | **Delirium** — and therefore **organicity** |\n\n**The conscious level is what separates the two**, and it is the same discriminator this topic uses everywhere else: a patient who cannot sustain attention but is fully alert is distractible; one who cannot sustain attention because his alertness is fluctuating is delirious. The deck also gives the bedside tests — *name the days of the week backwards*, *name 5 objects starting with a given letter*, *serial subtractions of 7*, and *spell a word forward and backward* — and `nr-delirium` `dl-7` reuses three of them as its tests of attention, adding *months of the year backward* and *counting down from 20*. All of them are reversed or serial, because attention has to be **sustained and manipulated** rather than merely present.\n\n**The other three, and which faculty each actually belongs to:**\n\n| Option | Its faculty, in the deck\'s own scheme |\n|---|---|\n| **Delusions** | **Thought — content.** A delusion is a fixed false belief, filed under the *T* of the deck\'s intellectual-functions mnemonic (thought: type, content, form). `ps-psychosis` is where the types are taught. It says nothing about whether the patient can hold his attention |\n| **Distractibility** *(the keyed answer)* | **Attention and concentration.** The only option on the list drawn from that slide |\n| **Hallucinations** | **Perception.** The deck defines them as a perception with a *"non existing stimulus"* — auditory, visual, olfactory, tactile, gustatory — against **illusions**, a *"false perception for an existing stimulus"*. A different faculty entirely |\n| **Insomnia** | **A sleep complaint**, and not an intellectual function at all. `L4,5` files it under sleep as a **quantitative decrease** — *insomnia (early, late)* and *decreased need for sleep* — against hypersomnia as the increase |\n\n**Template pair, not a duplicate:** this question is built on the same frame as `gg-ps-t20` Q102 (`npqb-ps-102`), *"Which of the following is an abnormality of perception?"*, whose options are Delusion / Hallucination / Insomnia / Preservation and whose key is also B. Three option strings are shared — singular there, plural here, and in a different order — but **the discriminating token is "attention" against "perception"**, and the two stems take different answers from the same menu. A shared option menu pairs questions; it never folds them. Reading the faculty in the stem first, before looking at the options, is what keeps the pair apart.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Distractibility — the inability to sustain attention, seen in mania, depression and ADHD — is the abnormality of attention, while delusions belong to thought content, hallucinations to perception, and insomnia to the sleep complaints.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.86 (answer p.88). TEMPLATE PAIR with gg-ps-t20 Q102 (npqb-ps-102, "abnormality of perception", key B): same construction, different faculty, three option strings shared in a different order and in the plural here. Flagged in the staging record as a pair, not a fold; the discriminating token is "attention" against "perception". The answer page prints the bare letter "(B)" with no option name, so the letter-versus-name cross-check was unavailable for this key.'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.86 (answer p.88). TEMPLATE PAIR with gg-ps-t20 Q102 (npqb-ps-102, "abnormality of perception", key B): same construction, different faculty, three option strings shared in a different order and in the plural here. Flagged in the staging record as a pair, not a fold; the discriminating token is "attention" against "perception". The answer page prints the bare letter "(B)" with no option name, so the letter-versus-name cross-check was unavailable for this key. Also printed in Neuro endpoint.pdf, Child psychiatry, Q8, p.1121 (answer p.1122), and Neuro endpoint.pdf, Symptomatology, Q21, p.883 (answer p.884).'
   },
 
   {
@@ -3791,13 +3791,13 @@ var Q_NEURO = [
   },
 
   {
-    id:'npqb-ps-135', bank:'gradegain', module:'neuropsych', chapter:'ps-geri',
+    id:'npqb-ps-135', bank:'gradegain', module:'neuropsych', chapter:'ps-geri', alsoIn:['endpoint'],
     stem:'Which age group has the highest rate of Alzheimer cases reported:',
     options:['55 to 65','74 to 84','85 and older','65 to 74'],
     answer:2,
     explanation:'**⚠️⚠️ THE OPTION LIST IS DEFECTIVE, AND IT IS RECORDED HERE RATHER THAN REPAIRED.** The bank prints its four age bands **out of ascending order and overlapping**. Exactly as printed:\n\n| Printed as | Band |\n|---|---|\n| **a** | **"55 to 65"** |\n| **b** | **"74 to 84"** |\n| **c** | **"85 and older"** |\n| **d** | **"65 to 74"** |\n\n**Two ages belong to two options at once.** A patient of **65** falls inside both **a** (55 to 65) and **d** (65 to 74); a patient of **74** falls inside both **b** (74 to 84) and **d** (65 to 74). The bands also run a → d as 55, 74, 85, 65, so **d is printed after the band that follows it**. **The printed key is C and the answer does not move** — C is the only band the defect cannot touch, because it is open-ended at the top and shares no boundary with any other option. **A defective source is noted, never corrected and never disputed.**\n\n**What the lecture does print about age, and what it does not.**\n\n`L13) Dementia and Delirium` makes age the first of the eight risk factors for Alzheimer\'s disease and marks it out: *"Age: mostly affects elderly population > 65 years"*, followed by the deck\'s own **N.B.** — *"this is the most important risk factor, however this DOESN\'T mean that anyone above 65 years will suffer from dementia."* Its second classification of dementia splits the same way: **presenile, before 65**, against **senile, after 65 years old**. And `ge-8` records **ApoE4 for late-onset AD**, the only quantified genetic risk in the module — **one allele doubles the risk, two multiply it fivefold.**\n\n⚠️ **But no age-banded prevalence is printed anywhere in the material.** The deck\'s one prevalence table breaks the figures down **by type of dementia**, not by age — Alzheimer\'s 65–85 %, Lewy body 15–30 %, vascular 20–30 %, frontotemporal 5–10 %, others 5–10 % — and even that is defective, the lower bounds totalling 110 % and the upper 165 %. The phrase *age group* returns **zero** across all 25 cached decks, checked twice by two methods. **The banded answer is therefore filled from general knowledge:** the prevalence of Alzheimer\'s disease rises steeply and continuously with age, roughly doubling every five years beyond 65, so the oldest band always carries the highest rate — **85 and older**, *not taken from the course material*.\n\n**The three bands that are not the answer:**\n\n| Option | Where it sits |\n|---|---|\n| **55 to 65** | Almost entirely **presenile**, on the deck\'s own before-65 side of the line. Alzheimer\'s does occur here — this is the territory of early-onset disease — but it is rare, and the deck\'s risk-factor slide starts the clock at **> 65** |\n| **65 to 74** | The band in which risk becomes real rather than exceptional. It is where the deck\'s **senile** category and its most important risk factor begin, which makes it the plausible wrong answer — the one you pick if you read the stem as asking where the risk *starts* rather than where it is *highest* |\n| **74 to 84** | Higher again, and higher than either band below it, but still bounded above. It loses to the open-ended band on the same monotonic rise, *not taken from the course material* |\n| **85 and older** *(the keyed answer)* | The only open-ended band, and the top of a curve that never turns down |\n\n**⚠️ And the deck\'s own N.B. is the trap to hold on to:** age is the most important risk factor, and it is still **not** true that everyone above 65 will become demented. The question asks which band reports the **highest rate**, not which band is affected.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Age is the most important risk factor for Alzheimer\'s disease and the rate rises continuously with it, so the oldest band - 85 and older - reports the highest rate; the lecture itself prints no age-banded prevalence, only "mostly affects elderly population > 65 years" and the presenile/senile split at 65.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.87 (answer p.88). All four age bands were read off a 400 dpi crop, not from OCR. DEFECT OF SUBSTANCE, RECORDED AND NOT CORRECTED: the bands are printed out of ascending order (a "55 to 65", b "74 to 84", c "85 and older", d "65 to 74") and they overlap - 65 falls in both a and d, 74 in both b and d. The printed key C is transcribed as printed and is not disputed. SOURCE WORDING: a "Which ..." stem closed with a colon rather than a question mark, and "Alzheimer cases" with no possessive; as printed. No Explanation is printed and the answer page gives the bare letter "(C)" with no name beside it, so the key carries no corroboration.'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.87 (answer p.88). All four age bands were read off a 400 dpi crop, not from OCR. DEFECT OF SUBSTANCE, RECORDED AND NOT CORRECTED: the bands are printed out of ascending order (a "55 to 65", b "74 to 84", c "85 and older", d "65 to 74") and they overlap - 65 falls in both a and d, 74 in both b and d. The printed key C is transcribed as printed and is not disputed. SOURCE WORDING: a "Which ..." stem closed with a colon rather than a question mark, and "Alzheimer cases" with no possessive; as printed. No Explanation is printed and the answer page gives the bare letter "(C)" with no name beside it, so the key carries no corroboration. Also printed in Neuro endpoint.pdf, Dementia and delirium, Q2, p.1291 (answer p.1292).'
   },
 
   {
@@ -4060,6 +4060,7 @@ var Q_NEURO = [
     "bank": "gradegain",
     "module": "neuropsych",
     "chapter": "ps-emerg",
+    "alsoIn": ["endpoint"],
     "stem": "A 24-year-old man with chronic schizophrenia that is maintained on antipsychotic treatment was brought to the emergency room after being found lying fixed in bed and is unable to communicate. Examination revealed that the patient was confused and disoriented. He has severe muscle rigidity and a temperature of 39.4 C. His blood pressure was 180/100 mmHg. His CBC showed leukocytosis. What is the most appropriate first line drug for treatment of this patient?",
     "options": [
       "Bromocriptine",
@@ -4070,7 +4071,7 @@ var Q_NEURO = [
     "answer": 0,
     "explanation": "The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> This patient is presenting with neuroleptic malignant syndrome (NMS), a rare but life-threatening condition associated with the use of antipsychotics. Key features include: Severe muscle rigidity Hyperthermia (temperature >38°C) Autonomic dysregulation (e.g., hypertension). Altered mental status (e.g., confusion, disorientation). Leukocytosis and elevated creatine kinase (CK) levels. Bromocriptine, a dopamine agonist, is commonly used to counteract dopamine receptor blockade caused by antipsychotics.\n\nThe printed explanation names NMS and describes bromocriptine as commonly used; it does not itself call it first-line. Bromocriptine is the printed answer among these options. The lecture `L15) substance related disorder and psychiatry emergency` describes NMS in its \"Neuroleptic Malignant Syndrome\" section, listing the tetrad (mental status change, rigidity, fever, dysautonomia) and noting that \"Dopaminergic drugs, such as bromocriptine and amantadine\" are used in treatment. The staged stem prints 39.4 C and 180/100 mmHg; the staged box separately prints temperature >38°C. These numerical strings are preserved. Bromocriptine works by stimulating dopamine receptors, counteracting the antipsychotic dopamine blockade described in the printed box. L15 also lists discontinuing the offending drug, ICU admission and supportive care; the keyed drug is part of management.\n\nAnalysis of incorrect options:\n\n| Option | Actual Concept | Why It Is Incorrect |\n| :--- | :--- | :--- |\n| **Lithium** | A mood stabilizer used in bipolar disorder. | It is not the NMS treatment named here; the draft’s warning that lithium could worsen the condition or contribute to toxicity is not taken from the course material. |\n| **Haloperidol** | A typical antipsychotic (dopamine D2 antagonist). | It is an *antipsychotic* and would likely *worsen* NMS, which is caused by dopamine blockade. It is a potential precipitant, not a treatment. |\n| **Lamotrigine** | An anticonvulsant/mood stabilizer used in bipolar disorder. | It has no role in the acute management of NMS, which requires dopaminergic stimulation. |",
     "objective": "Recognize the bank’s NMS presentation and its keyed drug, bromocriptine, within management that also requires stopping the offending drug and supportive care.",
-    "source": "neuropsychiatry & neurosurgery qb.pdf p.90 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key."
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.90 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key. Also printed in Neuro endpoint.pdf, Emergency psychiatry, Q4, p.1245 (answer p.1246)."
   },
   {
     "id": "npqb-ps-152",
@@ -4726,7 +4727,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-187', bank:'gradegain', module:'neuropsych', chapter:'nr-coma',
+  id:'npqb-nr-187', bank:'gradegain', module:'neuropsych', chapter:'nr-coma', alsoIn:['endpoint'],
   stem:'Patient in ICU with loss of consciousness and absent corneal, gag, oculocephalic reflexes but biceps and brachioradialis reflexes are present, what is the diagnosis?',
   options:['deep coma','persistent vegetative state','locked in syndrome','brain stem death'],
   answer:3,
@@ -4746,13 +4747,13 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-189', bank:'gradegain', module:'neuropsych', chapter:'nr-coma',
+  id:'npqb-nr-189', bank:'gradegain', module:'neuropsych', chapter:'nr-coma', alsoIn:['endpoint'],
   stem:'A patient was in coma for 6 weeks after a road traffic accident. Currently he has spontaneous eye opening and can breathe spontaneously. He does not respond to any verbal stimulus. Which of the following best describes the current state?',
   options:['Brain stem death','Persistent vegetative state','Locked-in syndrome','Coma'],
   answer:1,
   explanation:'**The bank prints an explanation box for this question, transcribed here verbatim:**\n\n> PVS is characterized by spontaneous eye opening and breathing but the absence of awareness or purposeful responses\n\n**Six weeks after a head injury, spontaneous eye opening and spontaneous breathing with no response to verbal stimulation is the textbook description of persistent vegetative state (PVS), and the box states the diagnostic logic directly: the brainstem-driven functions (eye opening, breathing) have returned, but the cortically-driven ones (awareness, purposeful response) have not.**\n\nPVS follows a period of coma once the brainstem recovers arousal circuitry while the cerebral hemispheres remain too damaged to generate awareness — the vegetative functions (sleep-wake cycling, eye opening, breathing, swallowing) resume, but there is no evidence the patient perceives or responds to the environment purposefully. It is termed "persistent" once this state lasts beyond about a month, consistent with the six weeks given here; it becomes "permanent" only after about twelve months (traumatic) or three months (non-traumatic), a distinction that changes the prognostic conversation, not the diagnosis itself *(these PVS timings are not taken from the course material)*.\n\n**Why the others are wrong.** **Brain stem death** is the opposite pattern: the brainstem has permanently and irreversibly lost all function — no spontaneous breathing, no spontaneous eye opening, and none of the brainstem reflexes (pupillary, corneal, oculocephalic, oculovestibular, gag) survive on bedside testing *(this reflex list is not taken from the course material)* — directly contradicted by this patient\'s spontaneous breathing and eye opening. **Locked-in syndrome** is the mirror-image trap: consciousness and awareness are fully intact, but a lesion of the ventral pons — classically a basilar artery occlusion — destroys the descending corticospinal and corticobulbar tracts while sparing the dorsal tegmentum that carries the ascending reticular activating system, leaving the patient aware and able to communicate only through vertical eye movements or blinking. Nothing here suggests preserved awareness that is merely untestable; it is the opposite state, where the vegetative functions have returned but awareness has not. **Coma** requires the eyes to stay closed with no spontaneous eye opening at all, by definition — a returning sleep-wake cycle with spontaneous eye opening is exactly what moves a patient out of coma and into the vegetative state.\n\nA nearby state worth naming even though it is not an option here: the **minimally conscious state**, in which the patient shows inconsistent but reproducible evidence of awareness (visual tracking, reaching, following a command) that PVS, by definition, shows none of — that reproducibility is the discriminating feature, and this vignette states plainly there is none *(this minimally conscious state comparison is not taken from the course material)*.\n\n**A defect recorded, not repaired.** As printed, the stem is garbled and self-duplicating: "He does not respond to any verbal stimulus to following best describes the current state any verbal is. Which of the following best describes the current state?" The duplicated, scrambled fragment adds no clinical information beyond "he does not respond to any verbal stimulus" — it reads as a typesetting stutter of the question\'s own closing sentence rather than a second, competing reading of the case. On that basis it is repaired here to plain English; the printed form is quoted in full in `source`, and no clinical fact was added or changed in the repair.\n\n**Bottom line:** spontaneous eye opening and breathing with no purposeful response, weeks after a coma, is persistent vegetative state — brain death has no spontaneous breathing or brainstem reflexes, locked-in syndrome keeps awareness intact behind a ventral pontine lesion, minimally conscious state shows inconsistent but real purposeful responses, and coma has no eye opening at all.',
   objective:'Spontaneous eye opening and breathing with no purposeful response to stimuli, persisting for weeks after coma, defines persistent vegetative state — distinct from brain stem death (no spontaneous breathing), locked-in syndrome (awareness intact) and coma (no eye opening).',
-  source:'neuropsychiatry & neurosurgery qb.pdf p.38 (answer p.39, explanation box printed). Stem printed garbled/self-duplicating: "A patient was in coma for 6 weeks after a road traffic accident. Currently he has spontaneous eye opening and can breathe spontanously. He does not respond to any verbal stimulus to following best describes the current state any verbal is. Which of the following best describes the current state?" — repaired here to remove the duplicated fragment; "spontanously" corrected to spontaneously. Option b prints "Persistant vegetative state"; corrected to Persistent.'
+  source:'neuropsychiatry & neurosurgery qb.pdf p.38 (answer p.39, explanation box printed). Stem printed garbled/self-duplicating: "A patient was in coma for 6 weeks after a road traffic accident. Currently he has spontaneous eye opening and can breathe spontanously. He does not respond to any verbal stimulus to following best describes the current state any verbal is. Which of the following best describes the current state?" — repaired here to remove the duplicated fragment; "spontanously" corrected to spontaneously. Option b prints "Persistant vegetative state"; corrected to Persistent. Also printed in Neuro endpoint.pdf, Coma, Q7, p.707 (answer p.708).'
 },
 
 {
@@ -5464,13 +5465,13 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-261', bank:'gradegain', module:'neuropsych', chapter:'nr-lmn',
+  id:'npqb-nr-261', bank:'gradegain', module:'neuropsych', chapter:'nr-lmn', alsoIn:['endpoint'],
   stem:'Which of the followings is a common cause of coarse fasciculation?',
   options:['Muscle Dystrophy', 'Peripheral neuropathy', 'Cortical infarction', 'Motor neuron disease'],
   answer:3,
   explanation:'Motor neuron disease is the keyed answer. The peripheral neuropathy lecture defines fasciculations as spontaneous contractions of individual motor units, visible twitches of limb or cranial muscles. The muscle disease lecture lists progressive spinal muscular atrophy and motor neuron disease (MND) together as the clinical differential of the dystrophies, placing MND among anterior horn cell disorders, and it is that anterior horn cell pathology that gives the coarse fasciculations the bank intends; the claim that MND produces specifically coarse rather than fine fasciculation is not taken from the course material and is read as the bank\'s intended association. Fasciculation is therefore a motor-unit phenomenon, and the lectures link it to motor neuron involvement, while the other listed options are not the coarsely fasciculating disease.\n\nMuscle Dystrophy is wrong because the lecture on Duchenne dystrophy says expressly that there is no fasciculation in that condition, so primary muscle disease is distinguished from anterior horn cell disease by this finding. Peripheral neuropathy is wrong because the lecture describes polyneuropathy largely through weakness, sensory loss, and reflex loss; the claim that peripheral neuropathy commonly produces coarse fasciculation is not taken from the course material. Cortical infarction is an upper motor neuron lesion; the lectures do not associate cortical infarction with fasciculation, since fasciculation is a lower motor neuron motor-unit sign, so its role here is not taken from the course material. The anterior horn cell localization of MND, with the lecture defining fasciculation as motor-unit twitching, selects motor neuron disease. Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
   objective:'Associate coarse fasciculation with motor neuron disease as an anterior horn cell disorder.',
-  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 12 "Neuromuscular Disorders," Q261, book p.51; also printed as Q280 (book p.53), options reshuffled, key printed there as \'B\' — same content, folded, not drafted separately'
+  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 12 "Neuromuscular Disorders," Q261, book p.51; also printed as Q280 (book p.53), options reshuffled, key printed there as \'B\' — same content, folded, not drafted separately. Also printed in Neuro endpoint.pdf, Neuromuscular disorders, Q27, p.620 (answer p.621), and Neuro endpoint.pdf, Neuromuscular disorders, Q32, p.630 (answer p.631).'
 },
 
 {
@@ -5653,13 +5654,13 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-282', bank:'gradegain', module:'neuropsych', chapter:'nr-lmn',
+  id:'npqb-nr-282', bank:'gradegain', module:'neuropsych', chapter:'nr-lmn', alsoIn:['endpoint'],
   stem:'Waddling gait is commonly seen in patients with:',
   options:['Parkinson disease', 'Pseudobulbar syndrome', 'Cerebellar ataxia', 'Myopathy'],
   answer:3,
   explanation:'The keyed answer is myopathy. The lecture uses waddling gait as a clinical feature of muscle disease: it lists waddling gait as resulting from weak hip adductors in Duchenne muscular dystrophy and again lists waddling gait among the features of limb-girdle muscular dystrophy. A waddling, swaying gait therefore reflects weakness of the proximal hip-girdle muscles, the hallmark distribution of myopathy. Parkinson disease is wrong because its gait disturbance is not waddling; the lecture describes Parkinson disease with bradykinesia, rigidity, tremor, and balance problems rather than proximal hip weakness, and the characteristic parkinsonian gait is shuffling rather than waddling. Pseudobulbar syndrome is wrong because it refers to upper motor neuron involvement of the bulbar muscles causing emotional and speech changes, not proximal limb weakness producing a waddling gait. Cerebellar ataxia is wrong because the lecture associates ataxia with incoordination of movement rather than with weakness of the hip adductors; an ataxic gait is unsteady and wide-based from loss of coordination, unlike the pelvic-drop pattern of a myopathic waddle. Because the waddling gait comes from weakness of the hip abductor and adductor muscles, it is the myopathy option that the bank keys, and the lecture locates that sign firmly within the muscular dystrophies and myopathies. Written for this bank \u2014 neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
   objective:'Link a waddling gait to the proximal hip weakness of myopathy.',
-  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 12 "Neuromuscular Disorders," Q282, book p.53'
+  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 12 "Neuromuscular Disorders," Q282, book p.53. Also printed in Neuro endpoint.pdf, Neuromuscular disorders, Q3, p.572 (answer p.573).'
 },
 
 {
@@ -5797,13 +5798,13 @@ var Q_NEURO = [
   source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 13 "CNS Infections," Q296, book p.57'
 },
 {
-  id:'npqb-nr-297', bank:'gradegain', module:'neuropsych', chapter:'nr-cns',
+  id:'npqb-nr-297', bank:'gradegain', module:'neuropsych', chapter:'nr-cns', alsoIn:['endpoint'],
   stem:'In a case of bacterial meningitis purpuric rash and petechial haemorrhages indicate infection by which organism?',
   options:['a. Hemophilus influenza', 'b. Pneumococci', 'c. Streptococci', 'd. Neisseria meningitides [Meningococci]'],
   answer:3,
   explanation:'Neisseria meningitidis [Meningococci] is the keyed correct organism. The acute bacterial meningitis lecture explicitly states that purpuric rash, petechial hemorrhage, and ecchymosis are characteristic clinical signs occurring specifically in meningococcal meningitis. This striking dermatological finding results from systemic meningococcemia, wherein bacterial lipopolysaccharide endotoxins and profound inflammatory cytokine cascades trigger disseminated intravascular coagulation (DIC), capillary endothelial damage, and small vessel vasculitis, leading directly to cutaneous microhemorrhages and skin necrosis.\n\nOption A (Hemophilus influenzae) is a prominent bacterial meningitis pathogen affecting children between 3 months and 7 years of age via respiratory droplet transmission and hematogenous seeding, yet it lacks the propensity to cause petechial or purpuric rashes. Option B (Pneumococci / Streptococcus pneumoniae) and Option C (Streptococci) are leading causes of purulent bacterial meningitis secondary to pneumococcal colonization, sinusitis, pneumonia, or mastoid extension, but they do not classically produce the distinctive petechial-purpuric exanthem seen in meningococcal septicemia. Recognizing this specific clinical sign is essential for identifying meningococcal infection, guiding empirical antibiotic selection, and initiating urgent chemoprophylaxis for exposed contacts. Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
   objective:'Identify Neisseria meningitidis as the causative agent of bacterial meningitis presenting with purpuric and petechial rash.',
-  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 13 "CNS Infections," Q297, book p.57'
+  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 13 "CNS Infections," Q297, book p.57. Also printed in Neuro endpoint.pdf, CNS infection, Q5, p.523 (answer p.524) — draft options give the organism names without the qb\'s "Streptococci"/"Pneumococci" split.'
 },
 {
   id:'npqb-nr-298', bank:'gradegain', module:'neuropsych', chapter:'nr-cns',
@@ -5824,13 +5825,13 @@ var Q_NEURO = [
   source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 13 "CNS Infections," Q299, book p.57'
 },
 {
-  id:'npqb-nr-300', bank:'gradegain', module:'neuropsych', chapter:'nr-cns',
+  id:'npqb-nr-300', bank:'gradegain', module:'neuropsych', chapter:'nr-cns', alsoIn:['endpoint'],
   stem:'In purulent meningitis, the CSF WBC count is:',
   options:['a. Above 1000', 'b. 100-500', 'c. 10-100', 'd. Below 10'],
   answer:0,
   explanation:'Above 1000 is the keyed answer. The lecture on acute bacterial meningitis specifies under CSF analysis that white blood cell counts are markedly increased, usually ranging from 1000 to 10,000/dl, predominantly consisting of neutrophils (polymorphonuclear leukocytes). This massive neutrophilic pleocytosis reflects the intense acute purulent inflammatory response elicited by pyogenic bacterial pathogens within the subarachnoid space, accompanied by elevated protein (100-500 mg/dl) and decreased glucose (<40 mg/dl).\n\nOption B (100-500) and Option C (10-100) represent lower cellularity ranges that are characteristic of aseptic meningitis, viral meningoencephalitis, or tuberculous meningitis, wherein mononuclear cells and lymphocytes dominate the cerebrospinal fluid pleocytosis rather than acute neutrophils. Option D (Below 10) represents normal or near-normal acellular CSF cell counts, which would effectively exclude acute purulent bacterial meningitis and its associated high bacterial load. Recognizing this distinct cerebrospinal fluid pleocytosis profile is critical for distinguishing acute bacterial infection from viral or granulomatous central nervous system etiologies. Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
   objective:'State the characteristic CSF white blood cell count (pleocytosis) in acute purulent bacterial meningitis.',
-  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 13 "CNS Infections," Q300, book p.57'
+  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 13 "CNS Infections," Q300, book p.57. Also printed in Neuro endpoint.pdf, CNS infection, Q7, p.527 (answer p.528), which orders the same four ranges "Above 1000" first, key a, vs this bank\'s key a also.'
 },
 {
   id:'npqb-nr-301', bank:'gradegain', module:'neuropsych', chapter:'nr-cns',
@@ -5896,13 +5897,13 @@ var Q_NEURO = [
   source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 13 "CNS Infections," Q307, book p.58'
 },
 {
-  id:'npqb-nr-308', bank:'gradegain', module:'neuropsych', chapter:'nr-cns',
+  id:'npqb-nr-308', bank:'gradegain', module:'neuropsych', chapter:'nr-cns', alsoIn:['endpoint'],
   stem:'Localization of as infective encephalitis to the medial Temporal or orbital frontal region brain is most consistent with which microorganisms?',
   options:['a. Herpes simplex virus', 'b. Varicella zoster virus', 'c. Treponema pallidum', 'd. Cryptococcus neoformans'],
   answer:0,
   explanation:'Option A (Herpes simplex virus) is the keyed microorganism. The lecture on Herpes Simplex Encephalitis (HSE) explicitly states that the virus reaches the brain via local spread from an oropharyngeal infection traveling along the trigeminal or olfactory nerves, or via possible viremia. Once neuroinvasive, herpes simplex virus characteristically localizes to and necrotizes the inferior and medial portions of the temporal lobes and orbitofrontal regions, producing edema, scattered hemorrhages, and classic limbic manifestations.\n\nOption B (Varicella zoster virus) is incorrect because it typically causes cerebral vasculopathy, cranial neuropathies, or zoster myelitis rather than selective inferomedial temporal and orbitofrontal necrotizing encephalitis. Option C (Treponema pallidum) is incorrect because it causes neurosyphilis, presenting as meningovascular syphilis or general paresis involving widespread cortical and meningeal arteritis rather than focal inferomedial temporal lobe predilection. Option D (Cryptococcus neoformans) is incorrect because it is a fungal pathogen causing subacute cryptococcal meningitis with gelatinous basal exudates, primarily affecting the leptomeninges and basal cisterns in immunocompromised individuals rather than targeting limbic temporal structures. Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
   objective:'Recognize herpes simplex virus as the pathogen producing inferomedial temporal and orbitofrontal encephalitis.',
-  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 13 "CNS Infections," Q308, book p.58'
+  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 13 "CNS Infections," Q308, book p.58. Also printed in Neuro endpoint.pdf, CNS infection, Q3, p.519 (answer p.520).'
 },
 {
   id:'npqb-nr-309', bank:'gradegain', module:'neuropsych', chapter:'nr-cns',
@@ -7587,6 +7588,2009 @@ var Q_NEURO = [
   explanation:'Trigeminal neuralgia predominantly affects elderly individuals, with peak incidence between the ages of 50 and 70. It is often idiopathic or related to vascular compression.',
   objective:'Identify the age group most commonly affected by trigeminal neuralgia.',
   source:'Neuro endpoint.pdf, Cranial nerve disorders, Q14, p.676 (answer p.677)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Child psychiatry: 9 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-child-1', bank:'endpoint', module:'neuropsych', chapter:'ps-interview',
+  stem:'The serial 7 test in mental state examination measures:',
+  options:['Immediate retention', 'Memory', 'Attention', 'Thought content'],
+  answer:2,
+  explanation:'Serial sevens is a bedside mental-state task in which the person repeatedly subtracts seven from a starting number, commonly 100. It primarily assesses attention and concentration because successful performance requires sustained focus, mental tracking of the current number, and resistance to distraction across several sequential calculations (not taken from the course material). The printed key marks Attention.\n\nImmediate retention is wrong because this refers to registering information over seconds, often assessed by asking a patient to repeat digits or words immediately after hearing them (not taken from the course material). Serial subtraction may require holding the current result briefly in mind, but that is not its principal measured domain.\n\nMemory is wrong because memory assessment is usually divided into immediate registration, recent recall, and remote memory, using tasks such as delayed recall of words or events (not taken from the course material). Poor serial sevens can occur in memory impairment, but the task is designed mainly to test concentration rather than to establish memory function.\n\nThought content is wrong because thought content concerns what a person is thinking, including delusions, obsessions, suicidal ideas, and preoccupations (not taken from the course material). Arithmetic performance gives no direct assessment of these themes. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Serial sevens primarily tests attention and concentration during the mental state examination.',
+  source:'Neuro endpoint.pdf, Child psychiatry, Q1, p.1107 (answer p.1108)'
+},
+
+{ id:'npep-child-3', bank:'endpoint', module:'neuropsych', chapter:'ps-child',
+  stem:'A 5-year-old boy is brought to the psychiatrist because he has difficulty paying attention in school. He fidgets, squirms, and cannot stay seated in class. At home, he talks excessively and has difficulty waiting his turn. His language and motor skills are appropriate for his age. Which of the following is the most likely diagnosis?',
+  options:['Oppositional defiant disorder (ODD)', 'Attention-deficit hyperactivity disorder (ADHD)', 'Pervasive developmental disorder', 'Separation anxiety disorder', 'Mild mental retardation'],
+  answer:1,
+  explanation:'The child demonstrates classic signs of ADHD—impulsivity, hyperactivity, and inattention ➡ in both school and home settings. His age-appropriate language and motor skills help rule out developmental delays.',
+  objective:'Identify attention-deficit hyperactivity disorder from inattention, hyperactivity, and impulsivity across school and home settings.',
+  source:'Neuro endpoint.pdf, Child psychiatry, Q3, p.1111 (answer p.1112)'
+},
+
+{ id:'npep-child-4', bank:'endpoint', module:'neuropsych', chapter:'ps-child',
+  stem:'Atomoxetine is a relatively new drug used for the treatment of ADHD. Which of the following represents the advantage of using atomoxetine over methylphenidate?',
+  options:['Atomoxetine has a shorter half-life.', 'Atomoxetine is available in a generic form that is less costly than methylphenidate (Ritalin).', 'Atomoxetine appears to have less of a potential for abuse than does methylphenidate (Ritalin).', 'Atomoxetine’s effects begin working immediately to reduce symptoms of ADHD.', 'Atomoxetine can be taken on an empty stomach'],
+  answer:2,
+  explanation:'The keyed option is that atomoxetine appears to have less potential for abuse than methylphenidate (Ritalin). Atomoxetine is a selective norepinephrine reuptake inhibitor and is not a controlled stimulant; therefore, it has substantially lower misuse and diversion potential than methylphenidate (not taken from the course material). This can be an important advantage when stimulant misuse is a concern.\n\nOption A is wrong because atomoxetine does not offer a shorter half-life as its advantage. It generally has a longer duration of action than immediate-release methylphenidate, which may permit once-daily dosing (not taken from the course material). Option B is wrong because atomoxetine was originally marketed as a brand medication and is not selected over methylphenidate because it is a less costly generic option. In practice, medication costs vary by formulation and setting (not taken from the course material).\n\nOption D is wrong because atomoxetine does not usually reduce ADHD symptoms immediately. Its clinical benefit develops gradually, often over several weeks, whereas stimulant medications can have a more rapid symptomatic effect (not taken from the course material). Option E is wrong because the ability to take a medicine on an empty stomach is not the distinctive advantage being tested. Atomoxetine may be taken with or without food, but this does not distinguish it from methylphenidate in the way that lower abuse potential does (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Atomoxetine has lower abuse potential than methylphenidate in ADHD treatment.',
+  source:'Neuro endpoint.pdf, Child psychiatry, Q4, p.1113 (answer p.1114)'
+},
+
+{ id:'npep-child-5', bank:'endpoint', module:'neuropsych', chapter:'ps-child',
+  stem:'Which of the following is not typically associated with ADHD?',
+  options:['Loss of concentration', 'Inability to complete tasks', 'Stereotyped behaviors', 'Impulsivity'],
+  answer:2,
+  explanation:'Stereotyped behaviors are not typical of ADHD but are more associated with autism spectrum disorder. ADHD is characterized by impulsivity, inattention, and hyperactivity.',
+  objective:'Recognize that stereotyped behaviors are not typically associated with ADHD.',
+  source:'Neuro endpoint.pdf, Child psychiatry, Q5, p.1115 (answer p.1116)'
+},
+
+{ id:'npep-child-6', bank:'endpoint', module:'neuropsych', chapter:'ps-child',
+  stem:'Which of the following is not typically associated with ADHD?',
+  options:['Stereotyped actions', 'Lack of organization', 'Failure to finish tasks', 'Answering before the question is completed'],
+  answer:0,
+  explanation:'Stereotyped actions are more characteristic of autism spectrum disorders. ADHD is characterized by inattention, impulsivity, and hyperactivity.',
+  objective:'Identify the feature not typically associated with ADHD.',
+  source:'Neuro endpoint.pdf, Child psychiatry, Q6, p.1117 (answer p.1118)'
+},
+
+{ id:'npep-child-7', bank:'endpoint', module:'neuropsych', chapter:'ps-child',
+  stem:'What is a common feature shared by ADHD and mania?',
+  options:['Impulsivity', 'Hallucinations', 'Emotional flatness', 'Amotivation'],
+  answer:0,
+  explanation:'Both ADHD and mania can involve impulsivity, poor judgment, and distractibility. However, mania also includes elevated mood and grandiosity.',
+  objective:'Identify impulsivity as a feature shared by ADHD and mania.',
+  source:'Neuro endpoint.pdf, Child psychiatry, Q7, p.1119 (answer p.1120)'
+},
+
+{ id:'npep-child-9', bank:'endpoint', module:'neuropsych', chapter:'ps-child',
+  stem:'A 6-year-old child is brought to the clinic by his mother. She reports that his teacher complains he is easily distracted and interrupts others when they answer questions. At home, he cannot focus on tasks for long and cannot play quietly. He is also careless and often breaks things. What is the SINGLE most likely diagnosis?',
+  options:['Autism spectrum disorder', 'Dyslexia', 'Attention-deficit hyperactivity disorder (ADHD)', 'Oppositional defiant disorder'],
+  answer:2,
+  explanation:'ADHD is characterized by inattention, hyperactivity, and impulsivity. The child\'s distractibility, inability to play quietly, and disruptive behavior fit this diagnosis.',
+  objective:'Recognize attention-deficit hyperactivity disorder from inattention, hyperactivity, and impulsivity across settings.',
+  source:'Neuro endpoint.pdf, Child psychiatry, Q9, p.1123 (answer p.1124)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - CNS infection: 19 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-cns-1', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'Which of the following bacteria is a common pathogen in a 70-year-old male with bacterial meningitis?',
+  options:['Streptococcus pneumoniae', 'Listeria monocytogenes', 'Klebsiella', 'Staphylococcus aureus'],
+  answer:0,
+  explanation:'Streptococcus pneumoniae is the printed correct answer and is a common cause of community-acquired bacterial meningitis in older adults. It is an encapsulated Gram-positive diplococcus that can reach the meninges from the nasopharynx, often after bacteraemia or from a nearby focus such as pneumonia, sinusitis, or otitis. Older age is a risk factor for invasive pneumococcal disease and meningitis (not taken from the course material).\n\nListeria monocytogenes is also an important cause of bacterial meningitis in adults over 50 years, people with impaired cellular immunity, pregnancy, and neonates (not taken from the course material). Therefore, it is a clinically relevant alternative and is usually included in empiric treatment considerations for this age group, but it is not the option marked by this bank.\n\nKlebsiella can cause meningitis, particularly in selected healthcare-associated settings or in people with certain predisposing illnesses, but it is not a usual leading community-acquired pathogen in this presentation (not taken from the course material).\n\nStaphylococcus aureus more often causes meningitis after neurosurgery, head trauma, CSF devices, or haematogenous spread from another infection, rather than as a typical community-acquired cause in an otherwise unspecified older adult (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify Streptococcus pneumoniae as a common cause of bacterial meningitis in an older adult.',
+  source:'Neuro endpoint.pdf, CNS infection, Q1, p.515 (answer p.516)'
+},
+
+{ id:'npep-cns-2', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'The WBC count in CSF of patients with acute bacterial meningitis is:',
+  options:['More than 1000 mainly neutrophils', 'More than 1000 mainly lymphocytes', '50 to 100 mainly neutrophils', '50 to 100 mainly lymphocytes'],
+  answer:0,
+  explanation:'The printed key is option a: More than 1000 mainly neutrophils. In acute bacterial meningitis, cerebrospinal fluid commonly has a markedly raised white blood cell count, often exceeding 1000 cells per microlitre, with neutrophils predominating. This reflects the acute pyogenic inflammatory response produced by bacterial infection. (not taken from the course material)\n\nOption b is wrong because a lymphocyte-predominant CSF response is more characteristic of viral, tuberculous, or fungal meningitis than typical acute bacterial meningitis. (not taken from the course material) Option c is wrong because 50 to 100 cells is a substantially lower count than the usual marked pleocytosis expected in typical acute bacterial meningitis, although CSF findings can vary in early disease or particular clinical circumstances. (not taken from the course material) It is also wrong because the option pairs that lower count with neutrophil predominance rather than the bank’s keyed pattern of more than 1000 mainly neutrophils. Option d is wrong because it combines a relatively low CSF white cell count with lymphocyte predominance, a pattern that does not describe the usual acute bacterial meningitis profile. (not taken from the course material)\n\nCSF interpretation is normally made alongside other findings, including glucose, protein, microbiology, and the patient’s clinical presentation. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Acute bacterial meningitis typically causes a CSF WBC count of more than 1000 with mainly neutrophils.',
+  source:'Neuro endpoint.pdf, CNS infection, Q2, p.517 (answer p.518)'
+},
+
+{ id:'npep-cns-4', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'A 40-year-old man presents with 2 weeks of headache, excessive sleepiness, and confusion. He has a fever of 38°C, neck rigidity, and positive Kernig’s sign. Examination reveals a left 6th cranial nerve palsy. CSF analysis shows protein 100 mg/dL, glucose 20 mg/dL, and 120 WBCs, all lymphocytes.\n\nWhat is the most likely diagnosis?',
+  options:['Herpes simplex encephalitis', 'Tuberculous meningitis', 'Meningococcal meningitis', 'Hemophilus influenzae meningitis'],
+  answer:1,
+  explanation:'The chronic course, lymphocytic CSF, low glucose, high protein, and cranial nerve involvement suggest TB meningitis. It is more subacute or chronic than bacterial meningitis.',
+  objective:'Identify tuberculous meningitis from its subacute presentation, cranial nerve palsy, and lymphocytic CSF with low glucose and high protein.',
+  source:'Neuro endpoint.pdf, CNS infection, Q4, p.521 (answer p.522)'
+},
+
+{ id:'npep-cns-6', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'What is the most appropriate initial management step in a suspected case of acute bacterial meningitis?',
+  options:['Delay antibiotics until CSF culture results are obtained', 'Start IV antibiotics after CT and CSF analysis', 'Start IV antibiotics immediately after collecting CSF', 'Wait for MRI brain before initiating treatment'],
+  answer:2,
+  explanation:'Early antibiotic treatment is critical to reduce mortality and morbidity in bacterial meningitis. Antibiotics should be started immediately after lumbar puncture, without waiting for culture results.',
+  objective:'Identify the initial antibiotic-management step in suspected acute bacterial meningitis.',
+  source:'Neuro endpoint.pdf, CNS infection, Q6, p.525 (answer p.526)'
+},
+
+{ id:'npep-cns-8', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'A patient presented to ER with disturbed level of consciousness. On examination, no signs of lateralization were detected. The vital signs were as follows: blood pressure 130 /85 mmHg , heart rate 65 beat per minute. temperature 39.5 °c and respiratory rate was 16 breath per minute.CT brain was unremarkable Which of the following investigations is the best next step?',
+  options:['EEG', 'Transcranial duplex', 'CSF examination.', 'MRI Brain'],
+  answer:2,
+  explanation:'Coma + high fever >> suspect infection >> do CSF examination',
+  objective:'The question tests that impaired consciousness with high fever and an unremarkable CT brain warrants CSF examination.',
+  source:'Neuro endpoint.pdf, CNS infection, Q8, p.529 (answer p.530)'
+},
+
+{ id:'npep-cns-9', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'A 61-year-old male patient presented with throbbing right sided headache. On examination, he had tenderness over the right superficial temporal artery. Investigations revealed ESR of 70 mm/hour. What is the most appropriate management plan ?',
+  options:['Start analgesics', 'Ask for CSF analysis', 'Start steroid therapy.', 'Ask for MRI brain'],
+  answer:2,
+  explanation:'A-Temporal arteritis:\nA systemic, inflammatory, vascular syndrome that predominantly affects the temporal arteries.\n✓ occurs in elderly.\n✓ throbbing headache\n✓ elevated ESR\n✓ treated with steroids.',
+  objective:'Temporal arteritis presenting with headache, temporal artery tenderness, and elevated ESR is treated with steroids.',
+  source:'Neuro endpoint.pdf, CNS infection, Q9, p.531 (answer p.532)'
+},
+
+{ id:'npep-cns-10', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'A 32-year-old woman had an upper respiratory infection for a few days. Then, she complained of a severe headache, became confused, and started talking about strange odors. Lumbar puncture revealed clear CSF containing 53 WBC/mm³, predominantly mononuclear cells. Glucose and protein were within normal limits.\n\nWhat is the most probable cause of this condition?',
+  options:['Bacterial CNS infection', 'Tuberculous CNS infection', 'Fungal CNS infection', 'Viral CNS infection'],
+  answer:3,
+  explanation:'These features are typical of viral encephalitis, especially herpes simplex virus (HSV), which often presents with behavioral changes and olfactory hallucinations. CSF findings of mononuclear cells with normal glucose and protein support a viral etiology.',
+  objective:'Identify viral CNS infection from encephalitic symptoms and a mononuclear CSF pleocytosis with normal glucose and protein.',
+  source:'Neuro endpoint.pdf, CNS infection, Q10, p.533 (answer p.534)'
+},
+
+{ id:'npep-cns-11', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'What is the empirical treatment in a suspected meningitis ?',
+  options:['Chloramphenicol and gentamycin', 'Tetracycline and vancomycin', '3rd generation cephalosporin and gentamicin', '3rd generation cephalosporin and vancomycin'],
+  answer:3,
+  explanation:'Recommended Empiric Antibiotics for Suspected Bacterial Meningitis.\n\nVancomycin + ceftriaxone ➔ Antimeningitic dose\n\nCorticosteroids; dexamethasone inj. Decrease mortality and sequelae.\n\nEmpirical treatment should be given until the results of CSF culture and sensitivity are available and then give the specific antibiotic.',
+  objective:'Identify the empirical antibiotic regimen for suspected bacterial meningitis.',
+  source:'Neuro endpoint.pdf, CNS infection, Q11, p.535 (answer p.536)'
+},
+
+{ id:'npep-cns-12', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'A 38-year-old patient was presenting with fever , stupor, and seizures His caregivers reported that he had olfactory hallucinations yesterday. His brain MRI showed a hypertensive lesion at the left temporal lobe with areas of hemorrhage .what is the most appropriate treatment for his condition',
+  options:['Acyclovir.', 'Corticosteroids', 'Rifampicin and isoniazid', 'Ceftriaxone and vancomycin'],
+  answer:0,
+  explanation:'The clinical presentation of fever, stupor, seizures, and olfactory hallucinations,\nalong with a brain MRI showing a hypertensive lesion with areas of\nhemorrhage in the left temporal lobe, suggests a possible infectious etiology\ninvolving the brain.',
+  objective:'Recognize the treatment option printed as correct for this temporal-lobe hemorrhagic infectious presentation.',
+  source:'Neuro endpoint.pdf, CNS infection, Q12, p.537 (answer p.538)'
+},
+
+{ id:'npep-cns-13', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'What is the most common complication of bacterial meningitis?',
+  options:['Brain abscess', 'hydrocephalus', 'subdural hemorrhage', 'subdural abscess'],
+  answer:1,
+  explanation:'Hydrocephalus can occur due to inflammation and obstruction of CSF flow in bacterial meningitis. It leads to increased intracranial pressure and worsened prognosis.\n\nContradiction between banks, recorded not resolved: the Grade Gain qb (npqb-nr-303, same fact pattern, fourth option "subarachnoid haemorrhage" instead of this bank\'s "subdural abscess") keys brain abscess instead, and its own explanation concedes the source lecture "lists these complications without explicitly ranking them by frequency," while separately calling hydrocephalus "a well-recognized and frequent complication." The answer here is not changed on that basis — it is this bank\'s own printed key.',
+  objective:'Identify hydrocephalus as the most common complication of bacterial meningitis.',
+  source:'Neuro endpoint.pdf, CNS infection, Q13, p.539 (answer p.540)'
+},
+
+{ id:'npep-cns-166', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'What should be the requested CSF test for the diagnosis of herpes simplex encephalitis?',
+  options:['Biochemical analysis', 'Cytology', 'Ziehl-Neelsen staining', 'PCR assay'],
+  answer:3,
+  explanation:'Herpes simplex virus encephalitis is diagnosed via PCR testing of cerebrospinal fluid, which detects viral DNA with high sensitivity and specificity.',
+  objective:'Identify PCR assay of CSF as the requested test for herpes simplex encephalitis.',
+  source:'Neuro endpoint.pdf, CNS infection, Q166, p.541 (answer p.542)'
+},
+
+{ id:'npep-cns-14', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'A 27-year-old patient was brought to at the emergency room with disturbed consciousness. Nis examination revealed body temperature of 39.5C, neck rigidity, positive Brudzinski\'s sign, and cutaneous petechial hemorrhage. His cerebrospinal fluid analysis revealed elevated proteins, decreased glucose, and increased cells (predominantly neutrophils). What is the most likely causative organism of this condition?',
+  options:['Mycobacterium tuberculosis.', 'Pneumococci.', 'Hemophilus influenza.', 'Meningococci.'],
+  answer:3,
+  explanation:'The rapid onset of meningitis with petechial rash, fever, and CSF neutrophilia is most consistent with meningococcal infection.',
+  objective:'Identify meningococcal meningitis from acute bacterial meningitis with a petechial rash.',
+  source:'Neuro endpoint.pdf, CNS infection, Q14, p.543 (answer p.544)'
+},
+
+{ id:'npep-cns-15', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'A 28-year-old junior doctor has had a headache for the past 24 hours. It began gradually and has progressively worsened, involving the whole head. In the past few hours, she has developed neck discomfort when turning her head. She feels unwell and prefers to stay in a dark room. Her boyfriend reports increased irritability. On examination, she has photophobia and neck stiffness, but no papilloedema. There are no skin rashes. Kernig’s sign is negative. Lumbar puncture shows low protein, normal glucose, and lymphocytosis. What is the diagnosis?',
+  options:['Viral meningitis', 'Migraine', 'Aseptic meningitis', 'Bacterial meningitis', 'TB meningitis'],
+  answer:0,
+  explanation:'The CSF shows normal glucose, low protein, and lymphocytosis ➡ features typical of viral meningitis. The gradual onset and absence of papilledema or rash support this diagnosis.',
+  objective:'Recognise viral meningitis from its clinical features and CSF findings.',
+  source:'Neuro endpoint.pdf, CNS infection, Q15, p.545 (answer p.546)'
+},
+
+{ id:'npep-cns-16', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'A 10-year-old boy presents with headache, photophobia, and neck stiffness. He has a non-blanching rash on his abdomen and a fever of 39°C. There are no known drug allergies. What is the next most appropriate step in management?',
+  options:['Paracetamol', 'Cefotaxime', 'Ampicillin', 'Benzylpenicillin', 'Chloramphenicol'],
+  answer:1,
+  explanation:'Cefotaxime is the printed answer. This presentation is strongly suggestive of suspected meningococcal meningitis or septicaemia: fever, headache, photophobia, neck stiffness and a non-blanching rash require urgent parenteral antibiotic treatment. Cefotaxime is a third-generation cephalosporin with appropriate activity against likely bacterial causes of meningitis and good penetration into cerebrospinal fluid (not taken from the course material).\n\nParacetamol may reduce fever or pain but does not treat the suspected invasive bacterial infection, so it cannot be the next definitive management step. Ampicillin has a role in selected meningitis regimens, particularly where Listeria coverage is required, but it is not the best single empiric choice for this 10-year-old with suspected meningococcal disease (not taken from the course material). Benzylpenicillin may be given pre-hospital for suspected meningococcal disease in some protocols, but cefotaxime is the bank’s selected treatment option here (not taken from the course material). Chloramphenicol is generally reserved for circumstances such as severe beta-lactam allergy or limited availability of preferred agents; this child has no known drug allergies (not taken from the course material). Prompt treatment should not be delayed for investigations when bacterial meningitis is suspected (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognise suspected bacterial meningitis with a non-blanching rash and select urgent cefotaxime.',
+  source:'Neuro endpoint.pdf, CNS infection, Q16, p.547 (answer p.548)'
+},
+
+{ id:'npep-cns-17', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'A 19-year-old university student presents with headache, stiff neck, and photophobia. His temperature is 39°C. What is the most appropriate initial investigation?',
+  options:['Blood culture', 'LP', 'Viral serology', 'Head CT scan', 'Syphilis serology'],
+  answer:1,
+  explanation:'Lumbar puncture (LP) is the appropriate investigation in suspected meningitis. However, it is contraindicated in the presence of a space-occupying lesion or raised intracranial pressure, as this may lead to brain herniation. Therefore, a CT scan is recommended prior to LP in such patients.',
+  objective:'Identify lumbar puncture as the appropriate initial investigation for suspected meningitis.',
+  source:'Neuro endpoint.pdf, CNS infection, Q17, p.549 (answer p.550)'
+},
+
+{ id:'npep-cns-18', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'A 23-year-old university student is diagnosed with bacterial meningitis. What is the most likely finding on CSF analysis?',
+  options:['Lymphocytes, increased protein, normal glucose', 'Lymphocytes, decreased protein, increased glucose', 'Lymphocytes, normal protein, normal glucose', 'Polymorphs, normal protein, normal glucose', 'Polymorphs, increased protein, decreased glucose'],
+  answer:4,
+  explanation:'Bacterial meningitis is characterized by neutrophilic (polymorph) predominance in CSF, elevated protein, and decreased glucose due to bacterial metabolism and inflammation.',
+  objective:'Identify the typical CSF findings in bacterial meningitis.',
+  source:'Neuro endpoint.pdf, CNS infection, Q18, p.551 (answer p.552)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Neuromuscular disorders: 35 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-nm-1', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'Proximal weakness is mostly found in:',
+  options:['Muscle diseases', 'Axonal polyneuropathy', 'Root disorders (radiculopathies)', 'Anterior horn cell disorders'],
+  answer:0,
+  explanation:'Muscle diseases commonly produce predominantly proximal weakness because proximal limb-girdle muscles are often affected early. Patients may have difficulty rising from a chair, climbing stairs, lifting their arms overhead, or combing their hair. This distribution is typical of many myopathies and is the pattern tested here. (not taken from the course material)\n\nAxonal polyneuropathy usually causes distal, length-dependent weakness and sensory symptoms, often beginning in the feet and later involving the hands, rather than mainly proximal weakness. (not taken from the course material) Root disorders (radiculopathies) cause weakness in muscles supplied by a particular nerve root, usually with radicular pain, sensory change, or reflex alteration; their pattern is myotomal rather than generally proximal. (not taken from the course material) Anterior horn cell disorders can cause lower motor neuron weakness with atrophy, fasciculations, and reduced reflexes, but the distribution depends on the affected motor neuron groups and is not characteristically described as predominantly proximal in this comparison. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify muscle disease as the disorder class most commonly associated with proximal weakness.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q1, p.568 (answer p.569)'
+},
+
+{ id:'npep-nm-2', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'Which of the following is associated with marked delay in nerve conduction velocity?',
+  options:['Axonal polyneuropathy', 'Demyelinating polyneuropathy', 'Anterior horn cell disease', 'Neuromuscular junction disorders'],
+  answer:1,
+  explanation:'Demyelinating polyneuropathy is the keyed option because intact myelin permits rapid saltatory conduction between nodes of Ranvier. Loss or dysfunction of myelin markedly slows nerve conduction velocity, commonly prolongs distal latencies, and may cause conduction block or temporal dispersion on nerve-conduction studies. (not taken from the course material) Thus, the prominent electrophysiological abnormality in a demyelinating neuropathy is delayed conduction velocity.\n\nAxonal polyneuropathy is not the best answer because its principal abnormality is loss of axons. Nerve-conduction studies in axonal neuropathy characteristically show reduced compound muscle action potential and sensory nerve action potential amplitudes, while conduction velocity is relatively preserved or only mildly reduced unless there is associated demyelination. (not taken from the course material)\n\nAnterior horn cell disease is not the best answer because it affects motor neuron cell bodies in the spinal cord, producing a lower-motor-neuron pattern of weakness and denervation. Peripheral sensory conduction is generally preserved, and marked slowing of peripheral nerve conduction velocity is not its typical defining finding. (not taken from the course material)\n\nNeuromuscular junction disorders are not the best answer because transmission fails at the synapse between nerve terminal and muscle rather than through myelinated peripheral nerve. Routine nerve-conduction velocity is usually normal; specialized repetitive nerve stimulation or single-fiber electromyography may instead demonstrate impaired transmission. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Demyelination causes marked slowing of peripheral nerve conduction velocity.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q2, p.570 (answer p.571)'
+},
+
+{ id:'npep-nm-4', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What are the diagnostic CSF findings for Guillain-Barré Syndrome?',
+  options:['Increased cells and protein', 'Increased protein with two lymphocytes', 'Increased cells mainly lymphocytes with normal protein', 'Normal cells and protein'],
+  answer:1,
+  explanation:'The keyed option, “Increased protein with two lymphocytes,” represents the classic cerebrospinal-fluid pattern of Guillain-Barré syndrome: raised protein with a normal or very low cell count, termed albuminocytologic dissociation (not taken from the course material). Protein rises because inflammation and demyelination of peripheral nerve roots increase permeability of the blood-nerve barrier, allowing protein to enter CSF (not taken from the course material). A small number of cells, such as two lymphocytes, remains compatible with this pattern (not taken from the course material).\n\nOption a, “Increased cells and protein,” is wrong because a clear pleocytosis is not the typical CSF finding in Guillain-Barré syndrome (not taken from the course material). Substantial CSF cellularity should prompt consideration of alternative causes, including infectious or inflammatory radiculopathies (not taken from the course material).\n\nOption c, “Increased cells mainly lymphocytes with normal protein,” is wrong because it describes lymphocytic pleocytosis without the characteristic raised protein. That pattern is more suggestive of a process affecting the central nervous system or meninges than the usual Guillain-Barré CSF profile (not taken from the course material).\n\nOption d, “Normal cells and protein,” is wrong as the diagnostic pattern expected in established Guillain-Barré syndrome includes elevated CSF protein. Protein can be normal early in the illness, especially during the first week, but this is not the characteristic diagnostic finding being tested (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Guillain-Barré syndrome classically produces raised CSF protein with very few cells.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q4, p.574 (answer p.575)'
+},
+
+{ id:'npep-nm-5', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'Which of the following treatment modalities can be used in a patient with myasthenic crisis?',
+  options:['Methylprednisolone', 'Plasmapheresis', 'Pyridostigmine', 'Azathioprine'],
+  answer:1,
+  explanation:'Plasmapheresis is the printed answer. It is used in myasthenic crisis because it rapidly removes circulating pathogenic antibodies and can produce clinical improvement over days; it is commonly used alongside intensive respiratory and supportive care. (not taken from the course material)\n\nMethylprednisolone is not the best answer for the acute crisis itself. Corticosteroids are important longer-term immunotherapy in myasthenia gravis, but starting or escalating them can initially worsen weakness, so they do not provide the rapid rescue effect sought in a crisis. (not taken from the course material)\n\nPyridostigmine is a symptomatic acetylcholinesterase inhibitor used in stable myasthenia gravis. During severe crisis, especially with respiratory compromise or excessive secretions, it may be withheld or used cautiously because cholinergic adverse effects can complicate airway management; it is not a rapid immunomodulatory treatment. (not taken from the course material)\n\nAzathioprine is a steroid-sparing immunosuppressant for long-term disease control. Its benefit develops slowly, usually over months, and therefore it cannot treat the immediate deterioration of myasthenic crisis. (not taken from the course material)\n\nIntravenous immunoglobulin is another commonly taught rapid immunomodulatory option for myasthenic crisis, but it is not among the listed choices. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify plasmapheresis as a treatment modality for myasthenic crisis.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q5, p.576 (answer p.577). Also printed at Q13, p.592 (answer p.593), same stem and key, folded, not drafted separately.'
+},
+
+{ id:'npep-nm-6', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'Which of the following physical exam findings is most likely to be seen in patient with acute inflammatory demyelinating polyneuropathy ?',
+  options:['Loss of temperature sensation in the hands', 'Absent deep tendon reflexes.', 'Delayed relaxation of deep tendon reflexes', 'Muscle fasciculations'],
+  answer:1,
+  explanation:'The keyed option, Absent deep tendon reflexes., is the typical examination finding in acute inflammatory demyelinating polyneuropathy, the common demyelinating form of Guillain-Barré syndrome. Demyelination of peripheral motor and sensory nerves impairs conduction through the reflex arc, producing reduced or absent tendon reflexes, usually with progressive symmetrical weakness (not taken from the course material).\n\nLoss of temperature sensation in the hands is not the most likely finding because sensory symptoms in this disorder are commonly distal and may include paraesthesiae, but isolated loss of temperature sensation in the hands is not its characteristic physical-examination feature (not taken from the course material). Delayed relaxation of deep tendon reflexes is more characteristic of hypothyroidism, where the relaxation phase of reflexes is slowed (not taken from the course material); in this neuropathy the reflexes themselves are diminished or absent. Muscle fasciculations suggest lower motor neurone disorders with chronic denervation, such as motor neurone disease, rather than an acute inflammatory demyelinating peripheral neuropathy (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Acute inflammatory demyelinating polyneuropathy commonly causes absent deep tendon reflexes.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q6, p.578 (answer p.579)'
+},
+
+{ id:'npep-nm-7', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'A 32-year-old woman has several family members with Duchene dystrophy and is a carrier of its gene. A blood test may show elevation in her serum of which of the following?',
+  options:['Myoglobin', 'Creatine phosphokinase (CPK)', 'Phosphofructokinase', 'Ammonia'],
+  answer:1,
+  explanation:'• Muscle EXAMINATION:\n  ○ Weakness proximal more than distal.\n  ○ Hypotonia, Hyporeflexia\n  ○ Muscle state:\n    ■ Some muscles are unaffected e.g. muscles of the face, hands and feet are not affected.\n    ■ Certain muscles show pseudo-hypertrophy e.g. calf, glutei & deltoid.\n    ■ Atrophy of biceps, triceps, forearm and leg muscles.\n\nThe course is progressive. The cause of death is usually due repeated chest infections or associated cardiomyopathy.\n\nDiagnosis:\n□ Elevated serum creatine phosphokinase (CPK).\n□ Electromyography [EMG]: myopathic pattern.\n□ Gene analysis.\n□ Muscle biopsy: Dystrophin analysis by immunocytochemistry\n\n192 | Page',
+  objective:'Recognize elevated serum creatine phosphokinase (CPK) in a carrier of Duchene dystrophy.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q7, p.580 (answer p.581)'
+},
+
+{ id:'npep-nm-8', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'76-year-old man has particular trouble getting out of low seats and off toilets. He most likely has which of the following?',
+  options:['Proximal muscle weakness', 'Poor fine finger movements', 'Gait apraxia', 'Poor rapid alternating movement'],
+  answer:0,
+  explanation:'Proximal muscle weakness affects the muscles closest to the trunk of the body, which are essential for movements such as rising from a seated position, climbing stairs, and lifting the arms above the head. Conditions such as polymyositis, dermatomyositis, or muscular dystrophies often present with proximal muscle weakness.',
+  objective:'Identify proximal muscle weakness from difficulty rising from low seats or toilets.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q8, p.582 (answer p.583)'
+},
+
+{ id:'npep-nm-9', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'A 17-year-old male patient presents with 10 days of progressive tingling of the hands and feet followed by evolution of weakness of the legs, two days before admission. He has a history of diarrhea 2 weeks ago. Examination revealed moderate leg and mild arm weakness, mild sensory loss in his feet and loss of reflexes. Mental status is normal. What is the most probable spinal fluid analysis findings in this case?',
+  options:['Elevated pressure', 'No abnormalities', 'Elevated protein level.', 'Elevated white blood cell count'],
+  answer:2,
+  explanation:'Investigations\n185 | Page\n\nCSF: protein cell dissociation with few or no cells (protein cell dissociation) and marked increase in CSF protein appears after first week.\n\nNerve conduction study: marked reduction of conduction velocity, prolongation of distal latency and F wave latency. [demyelinating polyneuropathy]',
+  objective:'Identify the cerebrospinal-fluid finding in Guillain-Barré syndrome.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q9, p.584 (answer p.585)'
+},
+
+{ id:'npep-nm-10', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What does the motor examination in case of peripheral neuropathy?',
+  options:['distal muscle weakness', 'planer extension', 'lost abdominal reflex', 'bradykinesia'],
+  answer:0,
+  explanation:'Peripheral neuropathy commonly affects distal nerves first, resulting in weakness and atrophy in the hands and feet. Reflexes are also typically diminished.',
+  objective:'Peripheral neuropathy commonly causes distal muscle weakness on motor examination.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q10, p.586 (answer p.587)'
+},
+
+{ id:'npep-nm-11', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What is the most common cause of non-compressive polyneuropathy?',
+  options:['Diphtheria', 'Diabetes mellitus', 'Leprosy', 'Guillain-Barré syndrome'],
+  answer:1,
+  explanation:'Diabetes is the most common cause of non-compressive polyneuropathy due to chronic hyperglycemia causing peripheral nerve damage. It often presents as a symmetric distal sensory or sensorimotor neuropathy.',
+  objective:'Identify diabetes mellitus as the most common cause of non-compressive polyneuropathy.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q11, p.588 (answer p.589)'
+},
+
+{ id:'npep-nm-12', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'A 15-year-old boy presents with gradually progressive weakness of both upper and lower limbs without sensory or sphincter complaints. On examination, proximal muscle weakness and atrophy are noted, with diminished deep tendon reflexes and intact sensation. What is the most diagnostic investigation?',
+  options:['MRI cervical spine', 'Electroencephalogram', 'CSF analysis', 'Electromyogram and nerve conduction studies'],
+  answer:3,
+  explanation:'The clinical features suggest a motor neuron or muscular disorder. Electromyography and nerve conduction studies help differentiate between neuropathic and myopathic causes.',
+  objective:'Differentiate neuropathic from myopathic causes of progressive motor weakness using electromyography and nerve conduction studies.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q12, p.590 (answer p.591)'
+},
+
+{ id:'npep-nm-14', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'In which of the following conditions is proximal muscle weakness most characteristic?',
+  options:['Axonal polyneuropathy', 'Radiculopathy', 'Pyramidal tract lesions', 'Muscle diseases'],
+  answer:3,
+  explanation:'Proximal muscle weakness is typical of myopathies such as polymyositis and muscular dystrophies.\nThese conditions primarily affect the muscle fibers rather than nerves or spinal tracts.',
+  objective:'Proximal muscle weakness is characteristic of muscle diseases.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q14, p.594 (answer p.595)'
+},
+
+{ id:'npep-nm-15', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'Which disease is characterized by fluctuating muscle weakness that worsens with activity and improves with rest?',
+  options:['Duchenne muscular dystrophy', 'Myelitis', 'Myasthenia gravis', 'Guillain-Barré Syndrome'],
+  answer:2,
+  explanation:'Myasthenia gravis is characterized by fluctuating muscle weakness that worsens with activity and improves with rest due to autoimmune attack on acetylcholine receptors at the neuromuscular junction.',
+  objective:'Identify myasthenia gravis from fatigable muscle weakness that improves with rest.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q15, p.596 (answer p.597)'
+},
+
+{ id:'npep-nm-16', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'Which of the following diseases is associated with diminished nerve conduction velocity due to demyelination?',
+  options:['Myasthenia gravis', 'Duchenne muscular dystrophy', 'Guillain-Barré Syndrome', 'Spinal cord tumor'],
+  answer:2,
+  explanation:'Guillain-Barré syndrome is an acute demyelinating polyneuropathy that causes reduced nerve conduction velocity. It typically presents with ascending weakness and areflexia.',
+  objective:'Identify Guillain-Barré Syndrome as a demyelinating neuropathy with reduced nerve conduction velocity.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q16, p.598 (answer p.599)'
+},
+
+{ id:'npep-nm-17', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'In which of the following conditions is creatine kinase (CK) typically very high?',
+  options:['Guillain-Barré Syndrome', 'Polymyositis', 'Multiple sclerosis', 'Myasthenia gravis'],
+  answer:1,
+  explanation:'Polymyositis is an inflammatory myopathy causing proximal muscle weakness and significant elevation of creatine kinase due to muscle breakdown.',
+  objective:'Identify polymyositis as a condition associated with markedly elevated creatine kinase.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q17, p.600 (answer p.601)'
+},
+
+{ id:'npep-nm-18', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What is the most serious complication of Guillain-Barré Syndrome?',
+  options:['Seizures', 'Visual loss', 'Respiratory failure', 'Urinary incontinence'],
+  answer:2,
+  explanation:'The most serious complication of Guillain-Barré Syndrome is respiratory muscle weakness leading to respiratory failure. Close monitoring of respiratory function is essential in management.',
+  objective:'Identify respiratory failure as the most serious complication of Guillain-Barré Syndrome.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q18, p.602 (answer p.603)'
+},
+
+{ id:'npep-nm-19', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'Which of the following is commonly associated with peripheral neuropathy?',
+  options:['Hypotonia', 'Hyperreflexia', 'Spasticity', 'Tremors'],
+  answer:0,
+  explanation:'Peripheral neuropathy leads to decreased motor input, often causing hypotonia and areflexia. Unlike central causes, it does not typically cause spasticity or hyperreflexia.',
+  objective:'Identify hypotonia as a common association of peripheral neuropathy.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q19, p.604 (answer p.605)'
+},
+
+{ id:'npep-nm-20', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'In myopathies, which type of muscle weakness is typically observed?',
+  options:['Proximal', 'Distal', 'Asymmetrical', 'Fluctuating'],
+  answer:0,
+  explanation:'Myopathies typically cause symmetric, proximal muscle weakness, especially in the shoulders and hips. This pattern helps distinguish them from neuropathies, which often affect distal muscles.',
+  objective:'Myopathies typically present with symmetric proximal muscle weakness.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q20, p.606 (answer p.607)'
+},
+
+{ id:'npep-nm-21', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'A young boy has progressive muscle weakness starting in childhood, calf pseudohypertrophy, and Gower’s sign. What is the most likely diagnosis?',
+  options:['Becker muscular dystrophy', 'Myasthenia gravis', 'Duchenne muscular dystrophy', 'Polymyositis'],
+  answer:2,
+  explanation:'Duchenne muscular dystrophy presents in early childhood with progressive muscle weakness, calf pseudohypertrophy, and Gower’s sign. It is an X-linked recessive disorder due to dystrophin deficiency.',
+  objective:'Recognize Duchenne muscular dystrophy from childhood-onset progressive weakness, calf pseudohypertrophy, and Gower’s sign.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q21, p.608 (answer p.609)'
+},
+
+{ id:'npep-nm-22', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'Which antibody is associated with the diagnosis of myasthenia gravis?',
+  options:['ANA', 'ACh receptor antibody', 'Anti-DNA', 'Rheumatoid factor'],
+  answer:1,
+  explanation:'Myasthenia gravis is an autoimmune disease where antibodies target acetylcholine receptors at the neuromuscular junction, impairing muscle contraction. The ACh receptor antibody is a key diagnostic marker.',
+  objective:'Identify the antibody associated with the diagnosis of myasthenia gravis.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q22, p.610 (answer p.611)'
+},
+
+{ id:'npep-nm-23', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'A 10-year-old girl presents with progressive weakness in both upper and lower limbs over the past 5 days. Two weeks prior, she had symptoms of a common cold. There are no bulbar or sphincteric symptoms. Examination reveals proximal muscle weakness, areflexia, and glove-and-stocking hypoesthesia.\nWhat is the most likely diagnosis?',
+  options:['Myasthenia gravis', 'Duchenne muscular dystrophy', 'Guillain-Barré syndrome', 'Spinal muscular atrophy'],
+  answer:2,
+  explanation:'This post-infectious polyneuropathy presents with rapidly progressive limb weakness, areflexia, and sensory symptoms. A preceding upper respiratory infection is common.',
+  objective:'Recognize Guillain-Barré syndrome from acute post-infectious progressive weakness with areflexia and sensory symptoms.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q23, p.612 (answer p.613)'
+},
+
+{ id:'npep-nm-24', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'A 10-year-old girl presents with progressive weakness in both upper and lower limbs over the past 5 days. Two weeks prior, she had symptoms of a common cold. There are no bulbar or sphincteric symptoms. Examination reveals proximal muscle weakness, areflexia, and glove-and-stocking hypoesthesia.\nWhat is the most appropriate diagnostic investigation to confirm the diagnosis?',
+  options:['MRI of the spine', 'Nerve conduction study', 'Muscle biopsy', 'Serum CK levels'],
+  answer:1,
+  explanation:'Guillain-Barré syndrome is confirmed by nerve conduction studies, which typically show demyelination. CSF may show albuminocytologic dissociation, but NCS is more specific early on.',
+  objective:'Guillain-Barré syndrome is confirmed by nerve conduction studies demonstrating demyelination.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q24, p.614 (answer p.615)'
+},
+
+{ id:'npep-nm-25', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What is the most common cause of sensory peripheral neuropathy ?',
+  options:['Vitamin B1 deficiency', 'Gillian-Barre syndrome', 'Arsenic poising', 'Diabetic peripheral neuropathy'],
+  answer:3,
+  explanation:'Diabetes is the most common cause of sensory peripheral neuropathy, typically presenting in a glove-and-stocking distribution. Chronic hyperglycemia damages peripheral nerves over time.',
+  objective:'Identify diabetes as the most common cause of sensory peripheral neuropathy.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q25, p.616 (answer p.617)'
+},
+
+{ id:'npep-nm-26', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'Which of the following features suggests the presence of lower motor neuron lesion ?',
+  options:['hyperreflexia', 'positive Babinski sign', 'Muscle hypertrophy', 'fasciculation'],
+  answer:3,
+  explanation:'Fasciculations are involuntary muscle twitches and a hallmark of lower motor neuron (LMN) lesions. They reflect spontaneous discharge of diseased motor neurons.',
+  objective:'Identify fasciculation as a feature of a lower motor neuron lesion.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q26, p.618 (answer p.619)'
+},
+
+{ id:'npep-nm-28', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What is the pattern of sensory loss in peripheral neuropathy ?',
+  options:['Dissociated sensory loss', 'Sensory level', 'Acral dysthesia', 'Saddle shape hypoesthesia'],
+  answer:2,
+  explanation:'Peripheral neuropathy commonly causes acral dysesthesia ➡ burning or tingling in the hands and feet. It often starts distally and progresses proximally in a "stocking-glove" pattern.',
+  objective:'Identify the sensory-loss pattern of peripheral neuropathy.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q28, p.622 (answer p.623)'
+},
+
+{ id:'npep-nm-29', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'Which of the following statements about Duchenne muscular dystrophy is true?',
+  options:['Cardiomyopathy is common', 'Distal muscles are primarily affected', 'It is the most common childhood neuromuscular junction disorder', 'It is an autosomal dominant condition'],
+  answer:0,
+  explanation:'Duchenne muscular dystrophy (DMD) is a severe X-linked recessive disorder characterized by progressive proximal muscle weakness. Cardiomyopathy is a common and serious complication due to dystrophin deficiency in cardiac muscle.',
+  objective:'Recognize cardiomyopathy as a common complication of Duchenne muscular dystrophy.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q29, p.624 (answer p.625)'
+},
+
+{ id:'npep-nm-30', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'Proximal muscle weakness is commonly seen in which condition?',
+  options:['Demyelinating polyneuropathy', 'Myasthenia gravis', 'Parkinson\'s disease', 'ALS'],
+  answer:1,
+  explanation:'Myasthenia gravis is the keyed answer. It is an autoimmune disorder of the neuromuscular junction in which impaired transmission produces fluctuating, fatigable weakness. (not taken from the course material) Weakness often affects ocular, bulbar, facial, neck, and proximal limb muscles, so patients may have difficulty lifting their arms, climbing stairs, or rising from a chair. (not taken from the course material) Sensory examination is typically normal because the disorder affects motor end-plate transmission rather than sensory nerves. (not taken from the course material)\n\nDemyelinating polyneuropathy is not the best answer because peripheral neuropathies classically produce distal weakness, sensory symptoms, and reduced reflexes; although proximal weakness can occur in some forms such as CIDP, it is not the characteristic general pattern implied by this question. (not taken from the course material)\n\nParkinson\'s disease is not primarily a disorder of muscle power. Its typical motor features are bradykinesia, rigidity, resting tremor, and postural instability rather than fatigable proximal muscle weakness. (not taken from the course material)\n\nALS causes progressive weakness from upper and lower motor neuron degeneration, often with wasting, fasciculations, spasticity, and hyperreflexia, but it does not characteristically present as the fatigable proximal weakness of myasthenia gravis. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify myasthenia gravis as a common cause of proximal muscle weakness.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q30, p.626 (answer p.627)'
+},
+
+{ id:'npep-nm-31', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What are the features of Guillain Barre syndrome?',
+  options:['Deep tendon jerks are exaggerated in both lower limbs', 'Static tremor is distal rather than proximal', 'Retention with overflow of urine is common', 'Facial nerve weakness could be present'],
+  answer:3,
+  explanation:'Guillain-Barré syndrome is an acute demyelinating polyneuropathy that can involve cranial nerves, particularly the facial nerve, causing bilateral facial weakness',
+  objective:'Guillain-Barré syndrome may involve the facial nerve, causing facial weakness.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q31, p.628 (answer p.629)'
+},
+
+{ id:'npep-nm-33', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'A 29-year-old woman reports fatigue and drooping of her eyelids, which worsens toward the end of the day. Examination reveals ptosis and weakness of extraocular muscles, improving after rest. Which test would most likely confirm the diagnosis?',
+  options:['CT brain', 'MRI orbits', 'Anti-acetylcholine receptor antibody test', 'Lumbar puncture', 'EEG'],
+  answer:2,
+  explanation:'Myasthenia gravis is confirmed by the presence of anti-AChR antibodies in most cases. The fatigability of muscle weakness and improvement with rest are hallmark features.',
+  objective:'Myasthenia gravis is commonly confirmed by detecting anti-AChR antibodies.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q33, p.632 (answer p.633)'
+},
+
+{ id:'npep-nm-34', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'A 31-year-old woman presents with progressive difficulty walking and lower back pain. She reports recent tripping and now has trouble climbing stairs. She also describes tingling and numbness in both hands extending to the elbows and is unable to write. On examination, cranial nerves are intact. There is loss of vibration and pinprick sensation in the upper limbs to the elbows and lower limbs to the hips. Muscle power is 3/5 at the ankles and 4/5 at the hips. Reflexes are absent, and plantars are mute. She has type 1 diabetes and recently recovered from food poisoning. What is the diagnosis?',
+  options:['Multiple sclerosis (MS)', 'Guillain–Barré syndrome (GBS)', 'Myasthenia gravis', 'Diabetic neuropathy', 'Infective neuropathy'],
+  answer:1,
+  explanation:'This presentation of ascending weakness, areflexia, and recent infection suggests Guillain–Barré syndrome. The sensory symptoms and absence of cranial nerve involvement further support this diagnosis.',
+  objective:'Recognize Guillain–Barré syndrome from ascending weakness, areflexia, sensory symptoms, and recent infection.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q34, p.634 (answer p.635)'
+},
+
+{ id:'npep-nm-35', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'A 7-year-old boy presents with difficulty running and rising from the floor. His mother notes that he uses his hands to climb up his legs to stand. What is the most likely diagnosis?',
+  options:['Limb girdle dystrophy', 'Facioscapulohumeral dystrophy', 'Duchenne muscular dystrophy', 'Becker muscular dystrophy', 'Myotonia congenita'],
+  answer:2,
+  explanation:'Duchenne muscular dystrophy typically presents in early childhood with proximal muscle weakness and the Gower’s sign ➡ using hands to climb up the legs to stand.',
+  objective:'Recognize Duchenne muscular dystrophy from early childhood proximal muscle weakness and Gower’s sign.',
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q35, p.636 (answer p.637)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Symptomatology: 25 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-sympt-1', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'Which manifestation raises suspicion of psychiatric disorder due to another medical condition (organicity)?',
+  options:['Ambivalence', 'Anhedonia', 'Emotional incontinence', 'La Belle Indifference'],
+  answer:2,
+  explanation:'Emotional incontinence is the keyed answer. It refers to involuntary, poorly controlled episodes of crying or laughing that are disproportionate to, or incongruent with, the person’s underlying mood and the immediate situation. It raises suspicion of an organic psychiatric presentation because impaired brain regulation of emotional expression may occur with neurological disease or brain injury (not taken from the course material). It is sometimes described clinically as pseudobulbar affect or pathological laughing and crying (not taken from the course material).\n\nAmbivalence means the simultaneous presence of opposing feelings, wishes, or attitudes toward the same object or situation. It can occur in normal experience and may be prominent in schizophrenia, but it is not a characteristic clue pointing specifically to a psychiatric disorder due to another medical condition (not taken from the course material).\n\nAnhedonia is a reduced ability to experience pleasure. It is a core depressive symptom and can also occur in other psychiatric conditions, so it is not by itself a specific sign of organicity (not taken from the course material).\n\nLa Belle Indifference describes an apparent lack of concern about symptoms and has traditionally been associated with functional neurological symptom presentations; it is neither reliably present nor diagnostic, and it does not specifically indicate an organic cause (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Emotional incontinence raises suspicion of psychiatric disorder due to another medical condition.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q1, p.761 (answer p.762)'
+},
+
+{ id:'npep-sympt-2', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'Which of the following is NOT a symptom of agoraphobia?',
+  options:['Fear of using public transportation', 'Fear of being in open space', 'Fear of being in closed space', 'Fear of separation from attachment figure'],
+  answer:3,
+  explanation:'The keyed option is “Fear of separation from attachment figure.” This describes the central fear in separation anxiety disorder, in which the person fears or is anxious about separation from people to whom they are attached. It is therefore not one of the characteristic feared situations used to define agoraphobia (not taken from the course material).\n\n“Fear of using public transportation” is wrong because public transportation is a typical agoraphobic situation. A person with agoraphobia may fear using buses, trains, ships, or planes because escape may seem difficult or help may be unavailable if panic-like or other incapacitating symptoms occur (not taken from the course material).\n\n“Fear of being in open space” is also wrong because open spaces are among the situations associated with agoraphobia. The fear concerns being in places where leaving might be difficult or where assistance may not be readily available (not taken from the course material).\n\n“Fear of being in closed space” is wrong for the same reason: enclosed places are another recognised agoraphobic setting. The term does not require fear of every enclosed space, but situations such as shops, cinemas, or other crowded/enclosed environments may be avoided (not taken from the course material).\n\nThus, the printed answer identifies fear of separation from an attachment figure as the option that does not fit agoraphobia. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Distinguish agoraphobic feared situations from fear of separation from an attachment figure.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q2, p.763 (answer p.764)'
+},
+
+{ id:'npep-sympt-3', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'In Which disorder Anhedonia can be found ?',
+  options:['Generalized anxiety', 'Panic disorder', 'Mania', 'Depression'],
+  answer:3,
+  explanation:'Anhedonia, or loss of interest or pleasure in activities, is a core symptom of major depressive disorder. It distinguishes depression from anxiety or manic disorders.',
+  objective:'Anhedonia is a core symptom of major depressive disorder.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q3, p.765 (answer p.766)'
+},
+
+{ id:'npep-sympt-4', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'A 42-year-old man comes to the emergency room with the chief complaint that “the men are following me.” He also complains of hearing a voice telling him to hurt others. He tells the examiner that the news anchorman gives him special messages about the state of the world every night through the TV. Which of the following psychiatric findings best describes this last belief of the patient?',
+  options:['Grandiose delusion', 'Illusion', 'Loose association', 'Idea of reference', 'Clouding of consciousness'],
+  answer:3,
+  explanation:'An idea of reference is when a person believes that everyday occurrences or media (e.g., television) contain special messages directed specifically at them. This belief is characteristic of psychotic disorders like schizophrenia.',
+  objective:'Recognize an idea of reference in the belief that television broadcasts contain personal messages.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q4, p.767 (answer p.768)'
+},
+
+{ id:'npep-sympt-5', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'A 32-year-old woman is seen in an outpatient psychiatric clinic for the chief complaint of a depressed mood for 4 months. During the interview, she gives very long, complicated explanations and many unnecessary details before finally answering the original questions. Which of the following psychiatric findings best describes this style of train of thought?',
+  options:['Loose association', 'Circumstantiality', 'Neologism', 'Perseveration', 'Flight of ideas'],
+  answer:1,
+  explanation:'Circumstantiality involves overly detailed and indirect speech where the person eventually reaches the point. It is commonly seen in anxiety and some mood disorders but is not as severe as loose associations.',
+  objective:'Circumstantiality is overly detailed, indirect speech that eventually reaches the point.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q5, p.769 (answer p.770)'
+},
+
+{ id:'npep-sympt-6', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'An 18-year-old man is seen by a psychiatrist in the emergency room. During the history, the patient is asked to describe his mood. He answers the following: “My mood is flextitating, I am up and down.” The patient is exhibiting which of the following thought disorders?',
+  options:['Clang association', 'Thought blocking', 'No thought disorder is apparent', 'Tangentiality', 'Neologism'],
+  answer:4,
+  explanation:'A neologism is a newly coined or invented word that has meaning only to the person using it. It is often seen in schizophrenia and reflects disorganized thinking.',
+  objective:'Identify a neologism as a thought disorder.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q6, p.771 (answer p.772)'
+},
+
+{ id:'npep-sympt-7', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'A 56-year-old man has been hospitalized for a myocardial infarction. Two days after admission, he awakens in the middle of the night and screams that there is a man standing by the window in his room. When the nurse enters the room and turns on a light, the patient is relieved to learn that the “man” was actually a drape by the window. This misperception of reality is best described by which of the following psychiatric terms?',
+  options:['Delusion', 'Hallucination', 'Illusion', 'Projection', 'Dementia'],
+  answer:2,
+  explanation:'An illusion is a misinterpretation of a real external stimulus,\nsuch as mistaking a curtain for a person. Unlike hallucinations,\nillusions require an actual sensory input.',
+  objective:'An illusion is a misinterpretation of a real external sensory stimulus.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q7, p.773 (answer p.774)'
+},
+
+{ id:'npep-sympt-8', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'A 22-year-old woman is seen by a psychiatrist in the emergency room after she is found walking in the middle of a busy street with no shoes on. During her interview, she is asked to count backwards from 100 by 7’s. Which of the following best describes the cognitive function being tested by this request?',
+  options:['Orientation', 'Immediate memory', 'Fund of knowledge', 'Concentration', 'Abstract reasoning'],
+  answer:3,
+  explanation:'Concentration is crucial for tasks requiring sustained attention.\nImpairment may occur in depression, anxiety, ADHD, or organic brain\ndisorders. The serial 7s test is sensitive but nonspecific ➡ abnormal\nresults warrant further cognitive testing.',
+  objective:'Serial subtraction by 7s tests concentration.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q8, p.775 (answer p.776)'
+},
+
+{ id:'npep-sympt-9', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'A psychiatric resident is called to consult on the case of a 75-year-old woman who had undergone a hip replacement 2 days before. On examination, the resident notes that the patient states the date as 1956, and she thinks she is at her son’s house. These impairments best illustrate which aspect of the mental status examination?',
+  options:['Concentration', 'Memory', 'Thought process', 'Orientation', 'Level of consciousness'],
+  answer:3,
+  explanation:'Orientation assesses a person’s awareness of time, place, and person.\nThe patient’s confusion about the date and location indicates impaired\norientation, often seen in delirium or other cognitive disorders.',
+  objective:'Tests that incorrect awareness of time and place is impaired orientation.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q9, p.777 (answer p.778)'
+},
+
+{ id:'npep-sympt-10', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'What is the term used to describe the inability to experience pleasure?',
+  options:['Apathy', 'Anhedonia', 'Amnesia', 'Agnosia'],
+  answer:1,
+  explanation:'Anhedonia refers to the inability to feel pleasure in normally enjoyable activities and is a key symptom of depression. It differs from apathy, which is a lack of motivation or interest.',
+  objective:'Identify anhedonia as the inability to experience pleasure.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q10, p.779 (answer p.780)'
+},
+
+{ id:'npep-sympt-11', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'A mother brought her 23-year-old son for psychiatric consultation. He stopped his university studies four years ago and has become increasingly detached from academic and social activities. He neglects personal hygiene and insists that the intelligence services are conspiring to kill him. He completely denies having a mental illness. What type of delusion is this?',
+  options:['Grandiosity', 'Persecution', 'Reference', 'Nihilism'],
+  answer:1,
+  explanation:'The patient believes intelligence services are conspiring to kill him, which is a persecutory delusion ➡ a false belief of being targeted or harmed. This type is common in psychotic disorders like schizophrenia.',
+  objective:'Identify a persecutory delusion from a belief of being targeted for harm.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q11, p.781 (answer p.782)'
+},
+
+{ id:'npep-sympt-15', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'Illusions are perceptual disturbances that occur when a patient does which of the following?',
+  options:['Misinterprets an internal stimulus', 'Misinterprets without an external stimulus', 'Misinterprets an external stimulus', 'Misinterprets without an internal stimulus'],
+  answer:2,
+  explanation:'An illusion is a misperception or misinterpretation of a real external stimulus, such as seeing a rope and thinking it’s a snake. This differs from hallucinations, which occur without external stimuli.',
+  objective:'An illusion is a misinterpretation of a real external stimulus.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q15, p.789 (answer p.790)'
+},
+
+{ id:'npep-sympt-16', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'A father screamed at his son, "Are you mad? Why are you holding a snake?" The son replied, "Relax dad, it\'s just a rope." What is this phenomenon?',
+  options:['Delusion', 'Illusion', 'Hallucination', 'Obsession'],
+  answer:1,
+  explanation:'The son saw a rope and mistook it for a snake, which is an illusion: misperception of a real external object. It\'s not a hallucination since a stimulus was actually present.',
+  objective:'An illusion is a misperception of a real external stimulus.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q16, p.791 (answer p.792)'
+},
+
+{ id:'npep-sympt-17', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'A patient is asked, “What’s your name?” and he replies, “What’s our name?” Then you ask, “How old are you?” and he replies, “How old are you?” What is this behavior called?',
+  options:['Neologism', 'Word salad', 'Echolalia', 'Perseveration'],
+  answer:2,
+  explanation:'Echolalia is the automatic repetition of another person\'s spoken words. It is often seen in psychiatric or neurological disorders like autism or schizophrenia.',
+  objective:'Identify echolalia as automatic repetition of another person\'s spoken words.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q17, p.793 (answer p.794)'
+},
+
+{ id:'npep-sympt-18', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'What is stupor best defined as?',
+  options:['A state of reduced responsiveness requiring repeated strong stimuli to arouse', 'A condition where a patient is completely unconscious', 'A condition where a patient exhibits constant hyperactivity', 'A mild form of delirium'],
+  answer:0,
+  explanation:'Stupor refers to a condition where the patient is largely unresponsive but can be aroused with strong stimuli. It differs from coma or hyperactive states.',
+  objective:'Define stupor.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q18, p.795 (answer p.796)'
+},
+
+{ id:'npep-sympt-20', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'Asking the patient about time, place, and person is an assessment of which of the following?',
+  options:['Ambivalence', 'Syncing', 'Orientation', 'Judgment'],
+  answer:2,
+  explanation:'Orientation testing evaluates the patient’s awareness of self and environment. It is part of the mental status exam.',
+  objective:'Identify orientation as assessment of awareness of time, place, and person.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q20, p.799 (answer p.800)'
+},
+
+{ id:'npep-sympt-22', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'What does the term anhedonia refer to?',
+  options:['Inability to feel pleasure', 'Inability to concentrate', 'Excessive worry', 'Loss of memory'],
+  answer:0,
+  explanation:'Anhedonia is a core symptom of depression. It refers to a reduced ability to enjoy previously pleasurable activities.',
+  objective:'Identify anhedonia as inability to feel pleasure.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q22, p.803 (answer p.804)'
+},
+
+{ id:'npep-sympt-23', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom', alsoIn:['endpoint'],
+  stem:'A 48-year-old man claims to be a renowned professor teaching rocket science to thousands of students flying in from all over the world. He believes he owns most of the United Kingdom and will be regarded as a god in the near future. What is the SINGLE most likely diagnosis?',
+  options:['Delusion', 'Mania', 'Identity disorder', 'Bipolar disorder'],
+  answer:0,
+  explanation:'The keyed option is Delusion. The patient holds fixed, implausible beliefs that he is an eminent professor, owns most of the United Kingdom, and will soon be regarded as a god. These are grandiose delusions: false beliefs concerning exceptional status, power, wealth, or importance. A delusion may occur in several psychiatric disorders, but the question asks for the most likely diagnosis based on the symptom described, rather than the underlying disorder.\n\nMania is wrong because a manic episode requires a distinct period of elevated, expansive, or irritable mood with increased energy or activity, together with other features such as reduced need for sleep, pressured speech, racing thoughts, increased goal-directed activity, or risky behaviour (not taken from the course material). Grandiose delusions can occur during severe mania, but the stem supplies no manic syndrome.\n\nIdentity disorder is wrong because the beliefs described are not a disturbance of personal identity. They are exaggerated beliefs about achievement, ownership, and future status.\n\nBipolar disorder is wrong because its diagnosis requires evidence of manic, hypomanic, and/or depressive episodes over time (not taken from the course material). A single grandiose belief cannot by itself establish bipolar disorder.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify grandiose delusion from a clinical description.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q23, p.805 (answer p.806). Also printed in Neuro endpoint.pdf, Schizophrenia, Q25, p.1214 (answer p.1215).'
+},
+
+{ id:'npep-sympt-24', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'A 29-year-old man with chronic depression believes he never existed and that he is invisible and inaudible to others. What is the SINGLE most likely type of delusion?',
+  options:['Nihilistic delusions', 'Delusion of guilt', 'Persecutory delusion', 'Fregoli delusion'],
+  answer:0,
+  explanation:'Believing one doesn\'t exist or is invisible reflects a nihilistic delusion, which is often seen in severe depressive states, particularly psychotic depression.',
+  objective:'Identify nihilistic delusions from a belief that one does not exist or is invisible.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q24, p.807 (answer p.808)'
+},
+
+{ id:'npep-sympt-25', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'A patient repeatedly turns a light switch off and on for 3 minutes before leaving a room. Attempts to stop cause agitation. He acknowledges the behavior is problematic and is willing to seek help. What is the SINGLE most accurate term that describes this situation?',
+  options:['Nihilistic delusion', 'Thought insertion', 'Panic attack', 'Insight'],
+  answer:3,
+  explanation:'The patient demonstrates insight by recognizing his compulsive behavior is abnormal and expressing a desire for help, which is often present in obsessive-compulsive disorder (OCD).',
+  objective:'Recognizing that one’s compulsive behavior is abnormal and seeking help demonstrates insight.',
+  source:'Neuro endpoint.pdf, Symptomatology, Q25, p.809 (answer p.810)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Anxiety disorders: 35 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-anx-1', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'Which of the following is one of the anxiety disorders?',
+  options:['Conversion disorder', 'Factitious disorder', 'Illness anxiety disorder', 'Panic disorder'],
+  answer:3,
+  explanation:'Panic disorder is the keyed option. It is classified among anxiety disorders and is characterized by recurrent, unexpected panic attacks followed by persistent concern about further attacks and/or maladaptive behavioural change related to the attacks. (not taken from the course material) A panic attack is an abrupt surge of intense fear or discomfort that reaches a peak within minutes and may include autonomic, respiratory, cognitive, and somatic symptoms. (not taken from the course material)\n\nConversion disorder is not an anxiety disorder. It is now termed functional neurological symptom disorder and involves neurological-type symptoms, such as weakness, sensory loss, or non-epileptic events, that are incompatible with recognized neurological or medical disease patterns. (not taken from the course material) It is classified with somatic symptom and related disorders. (not taken from the course material)\n\nFactitious disorder is also not an anxiety disorder. It involves intentional falsification, induction, or production of symptoms, with deception present even when there is no obvious external reward. (not taken from the course material) It is distinct from malingering, in which symptom production is motivated by an external incentive. (not taken from the course material)\n\nIllness anxiety disorder is not classified as an anxiety disorder despite prominent health-related worry. It belongs to somatic symptom and related disorders and involves preoccupation with having or acquiring a serious illness, usually with absent or mild somatic symptoms. (not taken from the course material) Therefore, the bank’s marked answer is Panic disorder. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Panic disorder is classified as an anxiety disorder.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q1, p.837 (answer p.838)'
+},
+
+{ id:'npep-anx-6', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'What is the definition of specific phobias ?',
+  options:['An excessive worry of places and situations that the person feels anxious or panics', 'An excessive worry about everyday things', 'A persistent fear of social situations', 'An excessive, unreasonable ,persistent fear triggered by objects or situations'],
+  answer:3,
+  explanation:'Specific phobias are defined as an excessive, irrational, and persistent fear of a particular object or situation (e.g., flying, heights, animals, injections). The fear is out of proportion to the actual danger posed and typically leads to avoidance behavior.',
+  objective:'Specific phobias are excessive, unreasonable, persistent fears triggered by objects or situations.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q6, p.847 (answer p.848)'
+},
+
+{ id:'npep-anx-7', bank:'endpoint', module:'neuropsych', chapter:'ps-ocd',
+  stem:'A 34 - year - old father with repetitive thoughts running in his mind that he is going to throw his 2 - month - old infant from the window He knows that these thoughts are irrational , however, he can\'t stop these running thoughts. He is afraid of doing this . how is the insight of this patient?',
+  options:['partial', 'Intact.', 'poor', 'absent'],
+  answer:1,
+  explanation:'Patients with OCD typically recognize their obsessions as irrational, which means their insight is intact. They are distressed by their intrusive thoughts and try to resist them.',
+  objective:'Recognize that awareness of obsessive thoughts as irrational indicates intact insight.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q7, p.849 (answer p.850)'
+},
+
+{ id:'npep-anx-8', bank:'endpoint', module:'neuropsych', chapter:'ps-ocd',
+  stem:'A 23-year-old male patient said to his psychiatrist that he had persisting ugly annoying thoughts running in his mind about ALLAH with more exaggerating during praying. He knew that they are irrational, but he couldn\'t stop them What thought the best treatment option to him?',
+  options:['Prescription of an antipsychotic drug', 'Electroconvulsive therapy', 'Psychotherapy', 'Prescription of a selective serotonin uptake inhibitor'],
+  answer:3,
+  explanation:'Obsessive-compulsive disorder presents with ego-dystonic intrusive thoughts, and SSRIs are first-line treatment.',
+  objective:'Recognize obsessive-compulsive disorder with ego-dystonic intrusive thoughts and its first-line treatment.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q8, p.851 (answer p.852)'
+},
+
+{ id:'npep-anx-9', bank:'endpoint', module:'neuropsych', chapter:'ps-ocd',
+  stem:'A 34-year-old father presented with repetitive running thoughts in his mind that he is going to throw his 2-month-old infant from the window. He knew that these thoughts are irrational; however, he can\'t stop them. He was afraid of doing this. What is expected response from him?',
+  options:['Repetitive, prolonged asking for family assurance that he won\'t do that This will be associated with continuous avoidance of carrying his infant.', 'These running thoughts mostly will be transformed into "unseen and absent\' auditory ordering voices, leading to increase probability of actual throwing his infant', 'Developing incoherent speech', 'Developing another idea that "this infant is not mine. \'m sure of that That\'s why he will complain of infidelity ails of his wife'],
+  answer:0,
+  explanation:'The keyed option describes a likely obsessive-compulsive response. The father has recurrent, unwanted thoughts of harming his infant, recognises that they are irrational, and is frightened by them. Such ego-dystonic intrusive thoughts may lead to reassurance-seeking and avoidance behaviours, such as repeatedly asking relatives whether he will act on the thought and avoiding carrying the infant. These are compulsions or safety behaviours intended to reduce anxiety temporarily (not taken from the course material).\n\nOption b is wrong because obsessional thoughts are not expected to become auditory command hallucinations. His preserved insight and fear of the thought support an obsession rather than psychosis; intrusive harm obsessions do not by themselves imply increased likelihood of acting on them (not taken from the course material). Option c is wrong because incoherent speech is a formal thought disorder more associated with severe psychotic illness, not the usual response to an insight-retained obsession (not taken from the course material). Option d is wrong because a fixed belief that the infant is not his, with accusations of infidelity, would be delusional thinking. The scenario instead explicitly says that he knows the thought is irrational, which is inconsistent with the firm conviction expected in a delusion (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Intrusive ego-dystonic harm obsessions can produce reassurance-seeking and avoidance behaviours.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q9, p.853 (answer p.854)'
+},
+
+{ id:'npep-anx-10', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A 28-year-old business executive sees her physician because she is having difficulty in her new position, which requires frequent public speaking. She states that she is terrified she will say or do something that will cause her extreme embarrassment. When speaking in public, she becomes very anxious, and her heart races uncontrollably. Based on this clinical picture, which of the following is the most likely diagnosis?',
+  options:['Panic disorder', 'Avoidant personality disorder', 'Specific phobia', 'Agoraphobia', 'Social phobia'],
+  answer:4,
+  explanation:'The fear of embarrassment or negative evaluation during public speaking, with physical symptoms of anxiety, indicates social phobia (social anxiety disorder). It differs from panic disorder because it is situation-specific.',
+  objective:'Recognize social phobia from fear of embarrassment during public speaking with situation-specific anxiety symptoms.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q10, p.855 (answer p.856)'
+},
+
+{ id:'npep-anx-11', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'28-year-old businessman describes a persistent fear of speaking in public. Although he does not have difficulty with one-on-one situations, he becomes extremely anxious when giving a lecture to a group, worrying that he will be humiliated. He relates one episode when he was forced to speak at the last minute, which resulted in his experiencing panic, shaking, abdominal cramps, and a fear that he would defecate on himself. Because of this problem, he has been held back from promotion at his place of employment. Which of the following is the most likely diagnosis?',
+  options:['Agoraphobia', 'Generalized anxiety disorder', 'Panic disorder', 'Social anxiety disorder', 'Specific phobia'],
+  answer:3,
+  explanation:'Fear of public speaking with physical symptoms of anxiety and fear of embarrassment is classic for social anxiety disorder. It typically affects performance-based situations rather than general social interactions.',
+  objective:'Social anxiety disorder may be limited to performance situations such as public speaking.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q11, p.857 (answer p.858)'
+},
+
+{ id:'npep-anx-12', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A 40-year-old woman presents with complaints of not being able to leave her house. For the past 5 years, she has had increasing difficulty traveling far from home. She constantly worries that she will not be able to get help if she “freaks out.” In fact, when she has ventured out of her neighborhood alone, she has had several episodes of intense fear associated with shortness of breath, chest pain, diaphoresis, and dizziness, lasting for 20 minutes. She is convinced that if she drives alone or with someone else too far from home, she will have an attack and not be able to obtain help. As a result, she relies on her husband and siblings to do all of her shopping, and when she does travel, she does so with extreme trepidation and anxiety. Which of the following is the most likely diagnosis?',
+  options:['Agoraphobia', 'Generalized anxiety disorder', 'Panic disorder', 'Social anxiety disorder', 'Specific phobia'],
+  answer:0,
+  explanation:'Agoraphobia is characterized by fear and avoidance of situations where escape or help might not be available during panic-like symptoms. This patient avoids leaving home due to fear of panic attacks in unfamiliar places.',
+  objective:'Agoraphobia is fear and avoidance of situations in which escape or help may be unavailable during panic-like symptoms.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q12, p.859 (answer p.860)'
+},
+
+{ id:'npep-anx-13', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A 25-year-old woman describes a lifelong history of being “scared of heights.” She becomes uncomfortable when at an elevation higher than three stories, and whenever traveling or shopping, she becomes preoccupied with knowing the exact heights of buildings. Whenever finding herself at a significant distance from the ground, she has severe anxiety symptoms, including trembling, lightheadedness, numbness and tingling, and a fear of dying. Which of the following is the most likely diagnosis?',
+  options:['Agoraphobia', 'Generalized anxiety disorder', 'Panic disorder', 'Social anxiety disorder', 'Specific phobia'],
+  answer:4,
+  explanation:'This patient presents with intense fear and avoidance of heights, which has been persistent since childhood and leads to significant anxiety symptoms (e.g., trembling, lightheadedness, paresthesia, fear of dying) when exposed to heights. These features are characteristic of a specific phobia, in this case: acrophobia (fear of heights).',
+  objective:'Identify specific phobia presenting as acrophobia.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q13, p.861 (answer p.862)'
+},
+
+{ id:'npep-anx-14', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A 33-year-old man has the chief complaint of “I’m going to have a heart attack like my father.” He explains that his father died of a myocardial infarction at 45 years of age. He is convinced that he is experiencing angina attacks consisting of nervousness, sweating, shortness of breath, palpitations, flushing, and numbness in his hands, each lasting for several minutes. He is anxious about having these symptoms, and despite negative results from a cardiology workup, he remains certain that he will suffer a heart attack. His behavior and lifestyle have not been otherwise affected. Which of the following is the most likely diagnosis?',
+  options:['Agoraphobia', 'Generalized anxiety disorder', 'Panic disorder', 'Social anxiety disorder', 'Specific phobia'],
+  answer:2,
+  explanation:'This patient has recurrent, unexpected episodes of intense anxiety (palpitations, sweating, shortness of breath, etc.) with ongoing fear of future attacks, despite no physical findings. The presence of panic-like symptoms and preoccupation with heart disease indicates panic disorder.',
+  objective:'Recognize panic disorder from recurrent panic-like episodes and persistent concern about future attacks.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q14, p.863 (answer p.864)'
+},
+
+{ id:'npep-anx-15', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A 38-year-old woman is sent to a psychiatrist by her obstetrician-gynecologist. She describes increasing difficulties leaving her home, which stemmed from having a severe panic attack 4 months prior while at the shopping mall. Although she has not had any further panic attacks since that time, she is “deathly afraid” of having another one. At first, she avoided malls, but gradually she has limited her driving, and recently won’t even leave her home. In fact, she was “forced” to come in by her sister, who has become very worried about her. During the car ride to the appointment, the patient suffered extreme anxiety, fearful she would have another panic attack while on the highway and be unable to obtain help. Which of the following is the most likely diagnosis?',
+  options:['Agoraphobia', 'Generalized anxiety disorder', 'Panic disorder', 'Social anxiety disorder (social phobia)', 'Specific phobia'],
+  answer:0,
+  explanation:'This woman avoids situations where escape may be difficult in the event of a panic attack, such as malls, highways, or even leaving the house. Her fear is not of the places themselves, but of having another attack in those settings.',
+  objective:'Recognize agoraphobia as avoidance of settings where escape or help may be difficult if panic symptoms occur.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q15, p.865 (answer p.866)'
+},
+
+{ id:'npep-anx-16', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A 28-year-old woman who is a medical student is brought to the physician by her boyfriend because of unremitting headaches and always “worrying about everything.” The patient admits that she has been more “stressed out” than usual over the last year about interview season, the couples match, getting married, moving out of state, and student loans. Her headaches have increased in frequency and intensity. She reports difficulty sleeping through the night and constant fatigue. The patient’s boyfriend complains that lately, “She freaks out about every little thing. I can’t deal with this anymore. I don’t even know if matching together is still a good idea.” Which of the following is the most likely diagnosis?',
+  options:['Anxiety disorder due to another medical condition', 'Substance/medication-induced anxiety disorder', 'Somatic symptom disorder', 'Generalized anxiety disorder', 'Adjustment disorder'],
+  answer:3,
+  explanation:'This patient demonstrates excessive, uncontrollable worry about multiple areas of life for more than six months, with associated symptoms such as fatigue, sleep disturbances, and irritability. These features are characteristic of GAD.',
+  objective:'Recognize generalized anxiety disorder from excessive uncontrollable worry across multiple domains for more than six months with associated symptoms.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q16, p.867 (answer p.868)'
+},
+
+{ id:'npep-anx-17', bank:'endpoint', module:'neuropsych', chapter:'ps-ptsd',
+  stem:'A 34-year-old office clerk was a victim of robbery at his place of work 4 months ago. He was alone at the time when two individuals entered, demanded all the cash at the store, and pointed a gun at him. One of them kicked him to the floor when he was slow to react. Since then, he has not been sleeping well, having recurrent nightmares about the robbery. He has thought of going back to work and has been to the parking lot of his workplace but had to leave, as he had panic attacks. He has also been “spacing out.” He reports his mood as being sad and angry. He is not eating well. He feels guilty that he was not able to call for help quickly or defend himself. He has started to drink more to get to sleep. Which of the following is the likely diagnosis?',
+  options:['Major depressive disorder', 'Panic disorder', 'Post-traumatic stress disorder (PTSD)', 'Adjustment disorder'],
+  answer:2,
+  explanation:'This patient has classic PTSD features including re-\nexperiencing (nightmares, flashbacks), avoidance of\nreminders, hyperarousal, and mood changes, all occurring\nmore than one month after a traumatic event. The impact\non daily function and coping with substance use further\nsupports this diagnosis.',
+  objective:'Recognize post-traumatic stress disorder after a traumatic event.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q17, p.869 (answer p.870)'
+},
+
+{ id:'npep-anx-18', bank:'endpoint', module:'neuropsych', chapter:'ps-ptsd',
+  stem:'A 5-year-old boy was in a recent motor vehicle accident in which he fractured his leg. He needed to be flown by helicopter to the nearest hospital. It has been 5 months since the accident, and the boy has never talked much about it. His parents report that he still continues to refuse to get in the car. When playing with his toys, he often crashes the cars and seems distressed. He wakes up at night screaming but is only able to say “car.” What is the likely diagnosis?',
+  options:['Adjustment disorder', 'Sleep terror', 'Post-traumatic stress disorder (PTSD)', 'Oppositional defiant disorder', 'Anxiety disorder'],
+  answer:2,
+  explanation:'Children may express PTSD symptoms through play (e.g., car crash reenactments), nightmares, and avoidance of trauma-related cues. His behavior and emotional response months after the trauma are consistent with PTSD.',
+  objective:'Recognize post-traumatic stress disorder in a child after trauma.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q18, p.871 (answer p.872)'
+},
+
+{ id:'npep-anx-19', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A 20-year-old woman is seen at her university health clinic with the chief complaint of difficulty in classes. During some courses, she is asked to present solutions and give short talks to peers. She says during these times her heart races and she feels short of breath. She has come to dread these moments and has withdrawn from classes requiring such work. She is afraid she will make a fool of herself. She denies other symptoms and does not use alcohol or drugs. She says she does fine around very small groups (two to three people). Which of the following is the most likely diagnosis?',
+  options:['Specific phobia', 'Adjustment disorder with anxiety', 'Acute stress disorder', 'Social anxiety disorder'],
+  answer:3,
+  explanation:'This patient has intense fear and physical symptoms triggered by social performance situations, especially public speaking. Her avoidance behavior and impairment in functioning are typical of social anxiety disorder.',
+  objective:'Identify social anxiety disorder presenting as fear and avoidance of public performance situations.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q19, p.873 (answer p.874)'
+},
+
+{ id:'npep-anx-20', bank:'endpoint', module:'neuropsych', chapter:'ps-ocd',
+  stem:'A patient says, “I have ugly thoughts about Allah, especially when I pray. I know they are wrong, but I can’t stop them. They take up so much of my time.” He also shows depressive symptoms. What is the most appropriate treatment?',
+  options:['This is obsession; you should take antipsychotics', 'This is obsession; you should stop praying', 'This is obsession; you should take SSRIs', 'This is obsession; you should have more faith'],
+  answer:2,
+  explanation:'The patient describes intrusive, distressing thoughts consistent with obsessive-compulsive disorder. SSRIs are the first-line pharmacologic treatment for OCD.',
+  objective:'Identify SSRIs as the first-line pharmacologic treatment for obsessive-compulsive disorder.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q20, p.875 (answer p.876)'
+},
+
+{ id:'npep-anx-22', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'If the neurological investigations are normal in the previous case, what is the most probable diagnosis?',
+  options:['Panic disorder', 'Panic schizophrenia syndrome', 'Somatic delusional disorder', 'Generalized anxiety disorder (GAD)'],
+  answer:0,
+  explanation:'If neurological findings are normal and episodes include intense fear and physical symptoms, panic disorder is the likely diagnosis. It presents with sudden, short-lived attacks.',
+  objective:'Identify panic disorder when neurological investigations are normal and episodes involve intense fear with physical symptoms.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q22, p.879 (answer p.880)'
+},
+
+{ id:'npep-anx-23', bank:'endpoint', module:'neuropsych', chapter:'ps-ocd',
+  stem:'Which of the following statements about obsessive-compulsive disorder (OCD) is not correct?',
+  options:['One of the most common obsessions is a fear of contamination', 'The lifetime prevalence of OCD is between 2–3%', 'OCD commonly coexists with other psychiatric disorders', 'Because the symptoms of OCD are distressing, patients typically report them to their physicians'],
+  answer:3,
+  explanation:'Many OCD patients feel embarrassed or ashamed of their symptoms and often hide them, leading to delayed diagnosis.',
+  objective:'OCD symptoms are often concealed because of shame or embarrassment, delaying presentation and diagnosis.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q23, p.881 (answer p.882)'
+},
+
+{ id:'npep-anx-25', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A middle-aged woman presents to the emergency room with palpitations, shortness of breath, tingling sensations, and dizziness. Her mother reports that the patient developed these symptoms following the death of her husband due to COVID-19 and often feels like she is going to die during these episodes. What is the most likely diagnosis?',
+  options:['Panic disorder', 'Conversion disorder', 'Bereavement reaction', 'Generalized anxiety disorder'],
+  answer:0,
+  explanation:'Despite the emotional trigger, the presence of repeated intense physical symptoms and fear of dying indicates panic disorder. Bereavement reactions usually lack the physiological panic features.',
+  objective:'Recognize panic disorder from recurrent episodes of intense autonomic symptoms with fear of dying.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q25, p.885 (answer p.886)'
+},
+
+{ id:'npep-anx-26', bank:'endpoint', module:'neuropsych', chapter:'ps-emerg',
+  stem:'What is the most appropriate treatment This case ?',
+  options:['Oral SSRI', 'IM benzodiazepine', 'Haloperidol injection', 'Psychotherapy session'],
+  answer:1,
+  explanation:'IM benzodiazepines are the treatment of choice for acute agitation, anxiety, or panic attacks due to their rapid onset of action. Oral SSRIs or psychotherapy are more suitable for long-term management.',
+  objective:'IM benzodiazepines are the treatment of choice for acute agitation, anxiety, or panic attacks.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q26, p.887 (answer p.888)'
+},
+
+{ id:'npep-anx-27', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'Which investigation is most relevant for this case?',
+  options:['Complete blood count (CBC)', 'Chest X-ray', 'TSH function test', 'ECG'],
+  answer:2,
+  explanation:'The printed key selects TSH function test. Thyroid dysfunction, especially hyperthyroidism, can cause or worsen neurological and psychiatric symptoms such as tremor, anxiety, agitation, palpitations, weakness, and altered mood; thyroid function testing can therefore identify a reversible metabolic contributor (not taken from the course material). In the context implied by “this case,” the bank regards this as the most relevant investigation.\n\nComplete blood count (CBC) can identify anaemia, infection, or other haematological abnormalities, but it is a broad screening test and does not specifically assess thyroid-related symptoms. Chest X-ray is used when a pulmonary, cardiac, mediastinal, infective, or malignant chest condition is suspected; no such indication is printed in this isolated question. ECG assesses cardiac rhythm and conduction and may be relevant if there are palpitations or suspected arrhythmia, but it does not establish whether thyroid dysfunction is contributing to the presentation. A thyroid disorder may produce cardiovascular manifestations, yet the thyroid function test addresses the suspected underlying cause more directly (not taken from the course material).\n\nThe choice is therefore based on the visibly marked option on the answer page, not on an inferred diagnosis from the incomplete case stem. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Thyroid function testing is the most relevant investigation in the case implied by the bank.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q27, p.889 (answer p.890)'
+},
+
+{ id:'npep-anx-28', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'Which of the following is a common symptom of generalized anxiety disorder (GAD)?',
+  options:['Muscle tension and fatigue', 'Hallucinations', 'Delusional thinking', 'Dissociation'],
+  answer:0,
+  explanation:'GAD is characterized by chronic worry along with physical symptoms such as muscle tension, restlessness, and fatigue. Hallucinations and delusions are not typical of GAD.',
+  objective:'Identify muscle tension and fatigue as common symptoms of generalized anxiety disorder.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q28, p.891 (answer p.892)'
+},
+
+{ id:'npep-anx-29', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A man is scheduled to deliver an important presentation in front of 100 people in 10 days. He reports anxiety, insomnia, and intense worry. What is the most likely diagnosis?',
+  options:['Panic disorder', 'Generalized anxiety disorder', 'Social phobia', 'Acute stress reaction'],
+  answer:2,
+  explanation:'The patient’s anxiety, insomnia, and intense worry are specifically tied to an upcoming social performance (presentation in front of a large audience), which is the hallmark of social phobia.',
+  objective:'Recognize social phobia when anxiety is tied to an upcoming social performance.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q29, p.893 (answer p.894)'
+},
+
+{ id:'npep-anx-30', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A 30-year-old woman complains of restlessness, muscle tension, and sleep disturbance for over 9 months. She worries excessively about everyday matters and cannot control her anxiety, which affects her job. What is the SINGLE most likely diagnosis?',
+  options:['Panic disorder', 'Generalized anxiety disorder (GAD)', 'Acute stress reaction', 'Social phobia'],
+  answer:1,
+  explanation:'The woman describes excessive, uncontrollable worry lasting more than six months, along with physical symptoms like sleep disturbance and muscle tension. These are hallmark features of GAD.',
+  objective:'Identify generalized anxiety disorder from excessive uncontrollable worry lasting more than six months with associated symptoms.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q30, p.895 (answer p.896)'
+},
+
+{ id:'npep-anx-31', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis', alsoIn:['endpoint'],
+  stem:'A 64-year-old man believes that a female newscaster is communicating directly with him through her gestures on television. What is the SINGLE most likely type of delusion?',
+  options:['Persecutory delusions', 'Grandiose delusions', 'Delusion of control', 'Delusion of reference'],
+  answer:3,
+  explanation:'The belief that a newscaster is sending personal messages through TV gestures is a classic example of a delusion of reference, where neutral events are interpreted as having personal significance.',
+  objective:'Recognize a delusion of reference from the belief that neutral television gestures carry personal messages.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q31, p.897 (answer p.898). Also printed in Neuro endpoint.pdf, Schizophrenia, Q26, p.1216 (answer p.1217).'
+},
+
+{ id:'npep-anx-32', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'Which of the following medications is the first choice for treating panic disorder?',
+  options:['Conventional antipsychotics', 'Novel antipsychotics', 'Selective serotonin reuptake inhibitors (SSRIs)', 'Mood stabilizers'],
+  answer:2,
+  explanation:'SSRIs are the first-line pharmacologic treatment for panic disorder. They help reduce frequency and severity of panic attacks over time.',
+  objective:'Identify SSRIs as the first-choice medication for treating panic disorder.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q32, p.899 (answer p.900)'
+},
+
+{ id:'npep-anx-34', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A patient with panic disorder has been on paroxetine for three months with good control of symptoms. She asks whether she should continue the treatment. What is the best advice?',
+  options:['You must stop medication immediately to avoid addiction', 'You should only take it when panic attacks occur', 'You should switch from paroxetine to haloperidol', 'You should continue treatment for about 1 year if symptom-free, then taper gradually'],
+  answer:3,
+  explanation:'Long-term maintenance with SSRIs like paroxetine is recommended for panic disorder. Discontinuation should be gradual and only after a sustained period of symptom remission.',
+  objective:'Maintenance SSRI treatment for panic disorder should be continued during sustained remission and tapered gradually.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q34, p.903 (answer p.904)'
+},
+
+{ id:'npep-anx-35', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A 21-year-old woman reports several sudden episodes of palpitations, nausea, and fear. One episode woke her from sleep, making her think she was going insane. She has no past psychiatric history. What is the SINGLE most likely diagnosis?',
+  options:['Phaeochromocytoma', 'Panic disorder', 'Generalized anxiety disorder', 'Acute stress disorder'],
+  answer:1,
+  explanation:'Sudden episodes of intense fear, physical symptoms, and fear of going crazy, especially when awakening from sleep, are classic signs of panic disorder.',
+  objective:'Recognize panic disorder from recurrent sudden episodes of intense fear with physical symptoms.',
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q35, p.905 (answer p.906)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Mood disorders: 33 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-mood-1', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'Which of the following is considered as a specifier for atypical depression?',
+  options:['Mood reactivity, hypersomnia, hyperphagia', 'Non reactivity, sense of guilt, early morning awakening', 'Disorientation', 'Nihilistic delusions'],
+  answer:0,
+  explanation:'The keyed option, “Mood reactivity, hypersomnia, hyperphagia,” contains the characteristic features used to specify atypical features in a depressive episode. Mood reactivity is the central feature: mood can brighten in response to positive events. Associated features can include increased sleep (hypersomnia) and increased appetite or eating (hyperphagia), often with weight gain. Rejection sensitivity and leaden paralysis are also classically associated with this presentation (not taken from the course material).\n\nOption b is wrong because non reactivity, excessive guilt, and early morning awakening are more consistent with melancholic depressive features rather than atypical features. Melancholic depression is generally characterized by anhedonia or lack of mood reactivity, worsening in the morning, early awakening, psychomotor change, loss of appetite or weight, and inappropriate guilt (not taken from the course material).\n\nOption c is wrong because disorientation is not a specifier for atypical depression. It suggests impaired cognition or altered awareness and should prompt consideration of conditions such as delirium, dementia, or another medical or psychiatric cause (not taken from the course material).\n\nOption d is wrong because nihilistic delusions are psychotic symptoms, classically seen in severe depression with psychotic features, including Cotard-type beliefs. They do not define atypical depression (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'To identify the clinical features that specify atypical depression.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q1, p.937 (answer p.938)'
+},
+
+{ id:'npep-mood-2', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'What is the minimum duration needed to diagnose major depressive episode?',
+  options:['One week', 'Two weeks', 'Three weeks', 'One month'],
+  answer:1,
+  explanation:'The keyed answer is Two weeks. A major depressive episode requires a period of at least two weeks during which depressive symptoms are present most of the day, nearly every day, with either depressed mood or loss of interest/pleasure among the required symptoms (not taken from the course material). The symptoms must also cause clinically significant distress or impairment and must not be better explained by substances, a medical condition, or a bipolar-spectrum episode (not taken from the course material).\n\nOne week is incorrect because it is shorter than the minimum duration used for a major depressive episode (not taken from the course material). A one-week duration is clinically important and may warrant assessment and treatment, particularly where there is suicide risk or severe functional decline, but it does not by duration alone meet the usual episode threshold (not taken from the course material).\n\nThree weeks is incorrect because symptoms may certainly persist for three weeks or longer in a major depressive episode, but three weeks is not the minimum required duration (not taken from the course material). The diagnosis may be made once the full symptom and impairment criteria have been present for two weeks (not taken from the course material).\n\nOne month is also incorrect because an episode can last a month or more, but waiting one month is not necessary before the duration criterion is met (not taken from the course material). Clinical assessment should occur whenever depressive symptoms are concerning, regardless of whether the formal duration threshold has been reached (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Tests the minimum duration criterion for a major depressive episode.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q2, p.939 (answer p.940)'
+},
+
+{ id:'npep-mood-3', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'Which of the following drugs is used for treatment of mania?',
+  options:['Amitriptyline', 'Lithium', 'Mirtazapine', 'Venlafaxine'],
+  answer:1,
+  explanation:'Lithium is used in the treatment of mania and is a classic mood stabilizer for bipolar disorder (not taken from the course material). It can be used for acute manic episodes and for long-term prevention of recurrent manic and depressive episodes (not taken from the course material). Monitoring is required because lithium has a narrow therapeutic range and can affect renal and thyroid function (not taken from the course material).\n\nAmitriptyline is a tricyclic antidepressant, mainly used for depression and sometimes for neuropathic pain or migraine prophylaxis; it is not a treatment for mania and antidepressants can precipitate or worsen mania in susceptible patients (not taken from the course material). Mirtazapine is an antidepressant, often used when depression is associated with insomnia or poor appetite; it is not an antimanic drug (not taken from the course material). Venlafaxine is an SNRI antidepressant used for depressive and anxiety disorders; it likewise does not treat acute mania and may contribute to mood switching in bipolar disorder if used without appropriate mood stabilization (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Lithium is used for the treatment of mania.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q3, p.941 (answer p.942)'
+},
+
+{ id:'npep-mood-4', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'After delivery of a healthy baby boy, a 25-year-old woman notes over the next week that she has become irritable, unable to sleep well and lost weight. She worries that her child will die and fantasizes that if the child died, she would kill herself as well. Over the course of the following week, she begins to investigate how she might commit suicide and she calls her parents to take care Of her child so that he will not be left alone. What is the most likely diagnosis of her condition ?',
+  options:['Uncomplicated bereavement', 'Postpartum depression', 'Postpartum blues', 'Postpartum psychosis'],
+  answer:1,
+  explanation:'Postpartum blues are common and typically begin within a few days after delivery, peaking around day 5–7 and resolving within two weeks without treatment, requiring only support and reassurance. However, the presence of severe symptoms like suicidal ideation suggests postpartum depression, a more serious condition requiring clinical intervention.',
+  objective:'Recognize postpartum depression in a woman with depressive symptoms and suicidal ideation after childbirth.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q4, p.943 (answer p.944)'
+},
+
+{ id:'npep-mood-7', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 25-year-old man comes to the psychatrist with a chief complaint of sadness and tearfulness for one month since death of his mother. He also lost weight and is having difficulty in concentration and in falling a sleep at night . What is the likely diagnosis of his condition?',
+  options:['Major depression', 'Dysthymia', 'Adjustment disorder', 'Uncomplicated bereavement'],
+  answer:2,
+  explanation:'NB: The main difference between major depression disorder and Adjustment disorder is the trigger. Adjustment is associated with trigger ( death of his mother ), but no trigger in major depression disorder.',
+  objective:'Identify adjustment disorder following a stressful life event.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q7, p.949 (answer p.950)'
+},
+
+{ id:'npep-mood-8', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 28-year-old woman is hospitalized after becoming psychotic, hypersexual, severely agitated, unable to sleep. She is started drug in the acute phase or nor illness which it is also continued as maintenance therapy. What is that likely drug?',
+  options:['Lamotrigine', 'Olanzapine', 'Lithium.', 'Aripiprazole'],
+  answer:2,
+  explanation:'Lithium is a mood stabilizer used in both acute manic episodes and long-term maintenance in bipolar disorder. It helps control psychotic features and prevents recurrence.',
+  objective:'Identify lithium as a treatment used in acute mania and maintenance therapy for bipolar disorder.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q8, p.951 (answer p.952). Also printed at Q11, p.957 (answer p.958), same stem and key, folded, not drafted separately.'
+},
+
+{ id:'npep-mood-9', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 20-year-old man has presented with increased sexual drive, irritability, lack of sleep, and not feeling fatigued even during prolonged periods of activity. All these changes have been present for the past 3 weeks. What is the most likely diagnosis?',
+  options:['Mania', 'Schizophrenia', 'Alcohol dependence', 'Impulse control disorder'],
+  answer:0,
+  explanation:'Mania is characterized by elevated or irritable mood, increased energy, hypersexuality, decreased need for sleep, and impulsive behavior lasting at least one week. The presentation clearly aligns with these features.',
+  objective:'Recognize mania from increased sexual drive, irritability, decreased need for sleep, and sustained increased energy.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q9, p.953 (answer p.954)'
+},
+
+{ id:'npep-mood-12', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 55-year-old lady presents with decreased sleep and appetite, increased motor activity and thoughts of communication with the spirits of the dead people. She donates money and property and talks a lot about Allah. Her husband died few days back. What is the most likely diagnosis for that lady?',
+  options:['Manic episode.', 'post-traumatic stress disorder', 'Brief psychotic episode', 'Depressive episode'],
+  answer:0,
+  explanation:'Despite bereavement, the presence of grandiosity, decreased need for sleep, and excessive activity suggests mania rather than grief or psychosis alone.',
+  objective:'Recognize a manic episode despite a recent bereavement.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q12, p.959 (answer p.960)'
+},
+
+{ id:'npep-mood-13', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 29-year-old woman with a previous diagnosis of bipolar disorder is hospitalized because of being elated, sexually provocative, and speaks very fast, jumping from one subject to another. She tells the nurses that she has received messages from God. If BUN, creatinine, electrolytes, TSH, and ANA were within normal limits. What other test is necessary before starting the Lithium as mood stabilizer for this patient?',
+  options:['Total bilirubin', 'EEG', 'Chest x-ray', 'Pregnancy test.'],
+  answer:3,
+  explanation:'Lithium is teratogenic, especially in the first trimester, and may cause Ebstein’s anomaly. A pregnancy test is mandatory before initiating lithium therapy in women of childbearing age.',
+  objective:'Identify the required pregnancy test before initiating lithium in a woman of childbearing age.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q13, p.961 (answer p.962)'
+},
+
+{ id:'npep-mood-14', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 52-year-old male patient sought psychiatric consultations he has been feeling sad, hopeless, withdrawn from social activities, fatigued and enable to sleep property in the last 2 months. No otherwise medical nor neurological findings were detected. He was prescribed a drug for a whole month, but none of his manifestations were alleviated. He progressed to further complaint of headache. Patient was advised contrast-enhanced computed tomography (CECT) that is shown in the attached figure.\n\nWhat is the likely type of medication that he received but failed to alleviate his condition?',
+  options:['Escitalopram', 'Lorazepam', 'Methylphenidate', 'Risperidone'],
+  answer:0,
+  image:'npep-mood-14', imgAlt:'Contrast-enhanced axial CT (CECT) of the brain', imgEssential:true,
+  explanation:'The symptoms described are consistent with major depressive disorder, for which SSRIs like escitalopram are commonly prescribed. The lack of improvement and emergence of neurological symptoms (e.g., headache) warranted imaging, suggesting an organic cause overlooked initially.',
+  objective:'Identify escitalopram as the SSRI likely prescribed for depressive symptoms.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q14, p.963 (answer p.964)'
+},
+
+{ id:'npep-mood-15', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 50-year-old man had been repeatedly treated for recurrent depressive and anxiety disorders by psychotherapy and psychotropic agents, but with poor response. When he complained of persistent headache, he was referred to a neurologist, who asked for a contrast enhanced CT when no clinical signs were detected. Findings of patient\'s imaging are illustrated in the attached figure. What is the likely drug that was prescribed to the patient to control his anxiety symptoms?',
+  options:['Paroxetine.', 'Bromocriptine.', 'Methylphenidates.', 'Risperidone.'],
+  answer:0,
+  image:'npep-mood-15', imgAlt:'Contrast-enhanced axial CT (CECT) of the brain', imgEssential:true,
+  explanation:'Paroxetine is an SSRI used for anxiety and depression. Given poor response and subsequent detection of a brain lesion on CT, the symptoms were likely due to an organic cause rather than a primary anxiety disorder.',
+  objective:'Identify paroxetine as an SSRI used for anxiety and depression.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q15, p.965 (answer p.966)'
+},
+
+{ id:'npep-mood-16', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'What is the main psychiatric diagnosis given to a person initially presenting with an episode of mania?',
+  options:['Affective disorder.', 'Bipolar disorder.', 'Personality disorder.', 'Unipolar disorder'],
+  answer:1,
+  explanation:'A manic episode is a hallmark of bipolar I disorder, even in the absence of depressive episodes at presentation. It involves elevated mood, hyperactivity, and sometimes psychotic features.',
+  objective:'A manic episode establishes a diagnosis of bipolar disorder.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q16, p.967 (answer p.968)'
+},
+
+{ id:'npep-mood-17', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 24-year-old patient is crying on a daily basis and bad a decrease in her concentration and energy for 6 months. She has lost 5 Kg during that time. She had difficulty in falling asleep and she wakes up early in the morning For the past 3 weeks, she has become convinced that she is dying of cancer. In the past 2 weeks, she had been hearing a voice calling her name when no one was around. Which of the following is the most likely diagnosis of this patient?',
+  options:['Major depression with psychotic features.', 'Schizophreniform disorder.', 'Schizoaffective disorder.', 'Delusional disorder.'],
+  answer:0,
+  explanation:'The patient shows persistent depressive symptoms with somatic delusions and auditory hallucinations. This combination defines major depressive disorder with psychotic features.',
+  objective:'Identify major depression with psychotic features.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q17, p.969 (answer p.970)'
+},
+
+{ id:'npep-mood-18', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 684year-old male patient presented 1 year following stroke, On detailed interview, he disclosed about his depressed mood and anhedonia. His daughter stated that he has been upset about being completely dependent on others. He was deeply grieved over the demise of his wife nearly 6 months back. He was known to be hypertensive and was under medication. No family history of psychiatric illness was traced out. On mental state examination, the patient was not maintaining eye contact, sitting with his head down and of decreased psychomotor activity. Rate, quantity, and volume of speech were reduced with decreased productivity. What is the possible diagnosis for this patient?',
+  options:['Post stroke depression.', 'Post stroke catastrophic reaction.', 'Post stroke epilepsy', 'Post stroke psychosis'],
+  answer:0,
+  explanation:'Depression is common following stroke, especially when the patient is aware of their functional decline. Symptoms like low mood, anhedonia, and psychomotor retardation support this diagnosis.',
+  objective:'Recognize post stroke depression from low mood, anhedonia, and psychomotor retardation.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q18, p.971 (answer p.972)'
+},
+
+{ id:'npep-mood-19', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'What could be the most appropriate drug prescribed to this patient?',
+  options:['Anti-epileptic drug.', 'Antidepressant drug.', 'Antipsychotic drug.', 'Sedative hypnotic drug.'],
+  answer:1,
+  explanation:'Given the diagnosis of post-stroke depression, antidepressants like SSRIs are the most appropriate pharmacologic treatment to improve mood and functionality.',
+  objective:'Identify the appropriate drug class for post-stroke depression.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q19, p.973 (answer p.974)'
+},
+
+{ id:'npep-mood-20', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 32-year-old woman on psychiatric medication reports excessive thirst and frequent urination. She cannot recall the medication name. Which of the following is the most likely diagnosis?',
+  options:['Bipolar disorder', 'Major depression', 'Panic disorder', 'Schizophrenia', 'Social phobia'],
+  answer:0,
+  explanation:'Excessive thirst and urination suggest nephrogenic diabetes insipidus, a common side effect of lithium, which is used to treat bipolar disorder. Lithium impairs the kidney\'s response to ADH.',
+  objective:'Recognize lithium-induced nephrogenic diabetes insipidus as a clue to treatment for bipolar disorder.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q20, p.975 (answer p.976)'
+},
+
+{ id:'npep-mood-21', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 35-year-old woman with bipolar disorder delivers a male newborn with spina bifida. What is the most likely etiology?',
+  options:['Advanced maternal age', 'Mood-stabilizing medication', 'Folate excess', 'Random mutation', 'Maternal malnutrition'],
+  answer:1,
+  explanation:'This woman was likely taking valproic acid, a mood stabilizer used in treating bipolar disorder, which increases the risk for teratogenicity (eg, a neural tube defect).',
+  objective:'Mood-stabilizing medication such as valproic acid can cause neural tube defects including spina bifida.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q21, p.977 (answer p.978)'
+},
+
+{ id:'npep-mood-22', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 35-year-old man is brought to a psychiatrist’s office by his wife. He previously suffered a major depressive episode 2 years ago and stopped his medications 6 months ago. More recently, the patient had been working many overtime hours for several weeks to complete a project at work, and had slept much less than normal without apparent ill effect. When the project was completed, he continued to sleep little and shifted his activities to socializing and drinking with his work colleagues. The patient admits he has not drunk this heavily since college. For the past few days, the patient has “crashed” back into depression. Which of the following is the most likely explanation for this patient’s condition?',
+  options:['Exacerbation of major depression', 'Substance/medication-induced depressive disorder (alcohol)', 'Bipolar disorder', 'Adjustment disorder'],
+  answer:2,
+  explanation:'Bipolar disorder is the printed answer. The history includes a prior major depressive episode followed by a period of markedly reduced sleep without apparent ill effect, prolonged work activity, increased socializing, and heavy drinking. These features indicate a manic or hypomanic episode followed by a depressive episode, establishing a bipolar-spectrum illness. A manic episode is characterized by elevated, expansive, or irritable mood with increased energy and associated symptoms such as decreased need for sleep, increased goal-directed activity, and potentially risky behavior (not taken from the course material). The subsequent “crash” into depression is consistent with the episodic mood shifts of bipolar disorder.\n\nA. Exacerbation of major depression is wrong because unipolar major depressive disorder does not account for the preceding period of decreased need for sleep and increased activity. B. Substance/medication-induced depressive disorder (alcohol) is wrong because alcohol use occurred during the activated period, while the broader pattern suggests a primary mood episode rather than depression directly caused by alcohol. D. Adjustment disorder is wrong because the symptoms are more consistent with a recurrent, syndromal mood disorder and are not simply an emotional or behavioral response to an identifiable stressor (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize bipolar disorder from a depressive history followed by manic or hypomanic features.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q22, p.979 (answer p.980)'
+},
+
+{ id:'npep-mood-23', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'Adjustment disorder is diagnosed in a 45-year-old woman who was fired from a job she held for 20 years. She undergoes supportive psychotherapy. Nine months later, she is seen by her health care provider, but none of her symptoms have resolved. During this time, she has found another job that is similar to her first position in duties and salary. Which of the following is the most likely diagnosis?',
+  options:['Adjustment disorder', 'Posttraumatic stress disorder', 'Major depressive disorder', 'Bipolar disorder', 'Schizoaffective disorder'],
+  answer:2,
+  explanation:'Symptoms persisting beyond 6 months and causing functional impairment, despite resolution of the stressor, suggest major depressive disorder rather than adjustment disorder. Continued supportive therapy without improvement further supports this diagnosis.',
+  objective:'Persistent symptoms after resolution of a stressor suggest major depressive disorder rather than adjustment disorder.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q23, p.981 (answer p.982)'
+},
+
+{ id:'npep-mood-24', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'Which of the following scenarios is most consistent with an adjustment disorder?',
+  options:['A depressed 62-year-old man experiences a variety of auditory hallucinations which include his mother, who died when he was a child.', 'A 37-year-old man who recently lost his wife to ovarian cancer expresses a wish that he could be “with her again.”', 'A 19-year-old marine experiences intrusive memories, sleep disturbance, and hypervigilance after he was the only member of his platoon to escape an ambush unharmed.', 'A 70-year-old woman with metastatic renal cancer refuses further treatment and tells her treatment team that she is ready to die.'],
+  answer:1,
+  explanation:'The printed key selects the recently bereaved 37-year-old man who wishes he could be “with her again.” This is presented as an emotional response after an identifiable psychosocial stressor, the loss of his wife. Adjustment disorder involves clinically significant emotional or behavioural symptoms in response to an identifiable stressor, occurring within 3 months of that stressor and causing distress out of proportion to the context or functional impairment (not taken from the course material). The bank therefore treats this bereavement-related presentation as the best fit among the listed choices.\n\nOption A is less consistent with adjustment disorder because varied auditory hallucinations in a depressed older man suggest a depressive disorder with psychotic features or another psychotic process, rather than a limited stress response (not taken from the course material). Option C describes intrusive memories, sleep disturbance, and hypervigilance after surviving an ambush; these are characteristic trauma-related symptoms and are more consistent with PTSD or acute stress disorder, depending on duration (not taken from the course material). Option D describes a woman with metastatic cancer declining further treatment and expressing readiness to die. This may represent a reasoned end-of-life treatment decision or acceptance of terminal illness; the vignette does not state the disproportionate distress or impairment needed for adjustment disorder (not taken from the course material). Although grief can be a normal response to bereavement, the printed key identifies B as the intended answer. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify the presentation the bank classifies as adjustment disorder.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q24, p.983 (answer p.984)'
+},
+
+{ id:'npep-mood-26', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'What is the minimum duration required to diagnose a depressive episode?',
+  options:['1 week', '2 weeks', '4 weeks', '2 months'],
+  answer:1,
+  explanation:'According to DSM-5, symptoms must persist for at least two weeks to diagnose a major depressive episode.',
+  objective:'A major depressive episode requires symptoms to persist for at least 2 weeks.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q26, p.987 (answer p.988)'
+},
+
+{ id:'npep-mood-27', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A female was brought by her parents because she has been singing out loud, highly active for 2 days, not sleeping, cooking at 5 AM, giving food to neighbors, and was rude to one neighbor. What best describes this behavior?',
+  options:['Disinhibition', 'Psychosis', 'Catatonia', 'Withdrawal'],
+  answer:0,
+  explanation:'Her behavior is characterized by a lack of social restraint, a hallmark of manic disinhibition.',
+  objective:'Identify disinhibition as a behavioural feature of mania.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q27, p.989 (answer p.990)'
+},
+
+{ id:'npep-mood-28', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'What is the most probable diagnosis for this female’s behavior?',
+  options:['Bipolar disorder, manic episode', 'Bipolar disorder, hypomanic episode', 'Schizophrenia', 'Major depressive episode with psychotic features'],
+  answer:0,
+  explanation:'Her elevated activity, reduced sleep, and social intrusiveness are typical of a manic episode.',
+  objective:'Recognize a manic episode from elevated activity, reduced sleep, and social intrusiveness.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q28, p.991 (answer p.992)'
+},
+
+{ id:'npep-mood-29', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 78-year-old male with recurrent depressive episodes refuses to talk, eat, or take medications for 2 days and has auditory hallucinations. He lost 15 kg of weight. What is the most probable diagnosis?',
+  options:['Recurrent depression with psychotic features', 'Schizophrenia', 'Dementia', 'Delirium'],
+  answer:0,
+  explanation:'Severe depression in the elderly may include psychotic features like hallucinations and requires prompt treatment.',
+  objective:'Recognize recurrent depression with psychotic features in an elderly patient.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q29, p.993 (answer p.994)'
+},
+
+{ id:'npep-mood-30', bank:'endpoint', module:'neuropsych', chapter:'ps-geri',
+  stem:'What is the most important investigation in this patient?',
+  options:['Electrolytes', 'Brain imaging', 'Substance abuse screening', 'Complete blood count'],
+  answer:1,
+  explanation:'In elderly patients with new or worsening psychiatric symptoms, imaging helps rule out organic causes such as stroke or tumor.',
+  objective:'Brain imaging is important in elderly patients with new or worsening psychiatric symptoms to exclude organic causes.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q30, p.995 (answer p.996)'
+},
+
+{ id:'npep-mood-31', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'What is the most appropriate treatment for this patient?',
+  options:['Electroconvulsive therapy (ECT)', 'High-dose antidepressants', 'Antipsychotics only', 'Mood stabilizers'],
+  answer:0,
+  explanation:'ECT is especially effective in elderly patients with severe depression and psychotic features or when rapid response is needed.',
+  objective:'ECT is especially effective for severe depression with psychotic features in elderly patients or when a rapid response is needed.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q31, p.997 (answer p.998)'
+},
+
+{ id:'npep-mood-33', bank:'endpoint', module:'neuropsych', chapter:'ps-mood', alsoIn:['endpoint'],
+  stem:'Which common manifestation can be found in both major depressive disorder and schizophrenia?',
+  options:['Anxious mood', 'Decreased social interaction', 'Disturbed level of consciousness', 'Intact insight'],
+  answer:1,
+  explanation:'Both disorders can present with social withdrawal, although for different underlying reasons (anhedonia in depression, negative symptoms in schizophrenia).',
+  objective:'Identify decreased social interaction as a manifestation shared by major depressive disorder and schizophrenia.',
+  source:'Neuro endpoint.pdf, Mood disorders, Q33, p.1001 (answer p.1002). Also printed in Neuro endpoint.pdf, Schizophrenia, Q22, p.1207 (answer p.1208).'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Somatic disorders: 28 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-soma-1', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'One of the characteristics of somatic symptom and related disorder is:',
+  options:['Symptoms have demonstrable physical abnormalities', 'Symptoms are under the patient’s conscious control', 'They are rare conditions', 'They are diagnosed by exclusion'],
+  answer:3,
+  explanation:'The bank’s printed key is option d: somatic symptom and related disorders are diagnosed by exclusion. In the framing used by this question bank, clinicians first exclude an underlying physical disorder that adequately explains the presentation before applying the psychiatric diagnosis.\n\nOption a is wrong because these disorders do not require demonstrable physical abnormalities. A person may have symptoms with or without a coexisting medical condition; the defining issue is the excessive thoughts, feelings, or behaviours related to the symptoms, rather than a demonstrable abnormality (not taken from the course material).\n\nOption b is wrong because symptoms are not consciously produced or controlled. Deliberate production of symptoms is characteristic of factitious disorder or malingering, not somatic symptom disorder (not taken from the course material).\n\nOption c is wrong because somatic symptom and related disorders are not simply rare conditions; they are encountered in clinical practice and may cause substantial distress and health-care use (not taken from the course material).\n\nMore generally, current diagnostic teaching emphasizes a positive clinical assessment rather than requiring symptoms to be medically unexplained or making diagnosis solely one of exclusion (not taken from the course material). Nevertheless, for this item the bank printed option d, and that is the keyed answer.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Somatic symptom and related disorders are keyed in this bank as being diagnosed by exclusion.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q1, p.1034 (answer p.1035)'
+},
+
+{ id:'npep-soma-2', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'What is the main physician\'s role in the management of somatization disorder ?',
+  options:['Order all possible investigation', 'Provision of emotional support', 'Prescription of symptomatic treatment', 'Referral to psychiatrist'],
+  answer:1,
+  explanation:'Physicians should offer consistent emotional support and avoid unnecessary investigations. Establishing a strong therapeutic alliance helps reduce symptom exaggeration.',
+  objective:'The main physician\'s role in managing somatization disorder is provision of emotional support.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q2, p.1036 (answer p.1037)'
+},
+
+{ id:'npep-soma-3', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 27-year-old man is brought to the psychiatry clinic by his roommates. They state that the patient has been very irritable and explosive and had not slept for the past 3 weeks. He stays up all night cleaning his apartment. He has bought new computer equipment and a digital video disc player, although the patient cannot afford these kinds of items. He has been drinking a "lot of alcohol" for the past 2 weeks, which is uncharacteristic. They state that the patient complained of headache, nausea and vomiting 3 weeks ago. He has a past medical history of brain tumor which was surgically removed.\n\nWhat is the first step in the management of this case ?',
+  options:['Multi-drug screen test', 'Brain imaging', 'Thyroid profile', 'Complete blood count'],
+  answer:1,
+  explanation:'Given his history of brain tumor and current behavioral changes, recurrence or neurological complications should be excluded first with neuroimaging.',
+  objective:'Behavioral changes in a patient with a history of a brain tumor require neuroimaging first to exclude recurrence or neurological complications.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q3, p.1038 (answer p.1039)'
+},
+
+{ id:'npep-soma-5', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A 34-year-old male thought that he has cancer despite all his relevant investigations were proved to be negative. He spent much of his time and money seeking medical consultation . What is the most probable diagnosis of this patient?',
+  options:['Panic disorder', 'Obsessive compulsive disorders', 'Factitious disorder.', 'Hypochondriasis'],
+  answer:3,
+  explanation:'The keyed answer is Hypochondriasis. This term was used in older psychiatric classifications for persistent fear or belief of having a serious disease despite negative investigations and reassurance; current terminology commonly places similar presentations under illness anxiety disorder. (not taken from the course material) The patient remains preoccupied with cancer and repeatedly seeks consultations, spending substantial time and money, which fits that pattern. (not taken from the course material)\n\nPanic disorder is wrong because it is characterized by recurrent unexpected panic attacks and concern or behavioural change related to further attacks, rather than a sustained conviction or fear of one specific serious medical illness. (not taken from the course material) The stem does not describe sudden episodes of intense fear with autonomic panic symptoms.\n\nObsessive compulsive disorders are wrong because obsessive thoughts are typically intrusive and unwanted, and compulsions are repetitive acts or mental rituals intended to reduce anxiety. (not taken from the course material) Repeated medical consultations can occur in several conditions, but the question specifically emphasizes illness fear after negative testing rather than obsessions and compulsions.\n\nFactitious disorder is wrong because it involves intentional falsification, production, or induction of symptoms in order to adopt the sick role, without obvious external reward. (not taken from the course material) Nothing here indicates deliberate deception; the patient appears genuinely convinced or fearful that he has cancer.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Persistent fear of serious illness despite negative medical investigations indicates hypochondriasis.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q5, p.1042 (answer p.1043)'
+},
+
+{ id:'npep-soma-6', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'What is the term used to describe the individuals with hypochondriasis that are inclined to actively seek out information which confirms their own view of their medical state, but they reject arguments against their own beliefs?',
+  options:['Inflated knowledge structure', 'Cognitive dissonance', 'A reasoning bias', 'A memory bias.'],
+  answer:2,
+  explanation:'Patients exhibit reasoning bias by selectively accepting information that confirms their beliefs while dismissing contradictory evidence.',
+  objective:'Identifies reasoning bias in individuals with hypochondriasis who selectively accept belief-confirming information.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q6, p.1044 (answer p.1045)'
+},
+
+{ id:'npep-soma-7', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'Which disorder is usually associated with Labelle Indifference?',
+  options:['somatoform disorder', 'Schizophrenia', 'Generalized anxiety disorder', 'Conversion disorder.'],
+  answer:3,
+  explanation:'Patients with conversion disorder often show a surprising lack of concern (La belle indifference) about serious neurologic symptoms like paralysis or blindness.',
+  objective:'Identify conversion disorder as the disorder associated with La belle indifference.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q7, p.1046 (answer p.1047)'
+},
+
+{ id:'npep-soma-8', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'Which type of cognitive biases exists when a sufferer of psychotic tendencies in somatoform disorders believes that he has significant and threatening manifestation that could not be medically justified?',
+  options:['Overt reaction biases', 'Interpretation biases', 'Cognitive dissonance', 'Hypochondrial biases.'],
+  answer:3,
+  explanation:'Hypochondrial biases are the bank’s keyed answer. They describe a tendency to interpret bodily sensations or minor symptoms as evidence of serious disease, despite the absence of adequate medical justification. In somatoform presentations, this can involve persistent concern that a significant and threatening illness is present. The patient’s appraisal of the symptom is disproportionately alarming rather than medically supported (not taken from the course material).\n\nOvert reaction biases are wrong because an overt reaction refers to an observable behavioural or emotional response; it does not specifically name the biased belief that a medically unexplained manifestation indicates serious illness. Interpretation biases are wrong because this is a broad term for systematic errors in assigning meaning to information. Although catastrophic interpretation of bodily sensations may be involved clinically, the question asks for the more specific bias named by this bank. Cognitive dissonance is wrong because it is psychological discomfort resulting from inconsistent beliefs, attitudes, or behaviours, often followed by attempts to reduce that inconsistency (not taken from the course material). It is not specifically a conviction of serious physical illness from medically unjustified manifestations.\n\nThe question’s wording links somatoform disorders with an illness-focused, threatening interpretation of symptoms; therefore the printed answer is Hypochondrial biases. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'The question tests recognition of hypochondrial bias as interpreting medically unjustified bodily manifestations as significant and threatening illness.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q8, p.1048 (answer p.1049)'
+},
+
+{ id:'npep-soma-9', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'Which disorder/s could be associated with somatic symptoms?',
+  options:['Schizophrenia.', 'Bipolar disorder.', 'Somatoform disorder', 'All psychiatric disorders'],
+  answer:3,
+  explanation:'Somatic symptoms can present in a variety of psychiatric conditions, including depression, anxiety, schizophrenia, and somatoform disorders. Their presence is not exclusive to one disorder.',
+  objective:'Somatic symptoms may occur across psychiatric disorders.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q9, p.1050 (answer p.1051)'
+},
+
+{ id:'npep-soma-10', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A 25-year-old man presents to the emergency department with sudden onset paralysis of his right arm. He reports that the previous day, he had a heated argument with his mother regarding her intrusiveness in his life. The patient mentions that he has always had mixed feelings about his mother but believes strongly that mothers should always be respected. Which of the following diagnoses best fits this patient’s clinical picture?',
+  options:['Major depression', 'Conversion disorder', 'Adjustment disorder', 'Fugue state'],
+  answer:1,
+  explanation:'The sudden paralysis after a psychologically stressful event, without a neurological basis, points to conversion disorder. The symptom allows the patient to avoid internal conflict (e.g., ambivalence toward his mother) by expressing it physically.',
+  objective:'Conversion disorder can present with neurological-like symptoms after psychological conflict.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q10, p.1052 (answer p.1053)'
+},
+
+{ id:'npep-soma-11', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A 13-year-old girl is admitted to the pediatric unit for evaluation of seizures. Her first seizure occurred 1 week ago, and she has had three since then. Episodes are described by her parents as generalized shaking and jerking of the body, lasting 1 to 2 minutes, with eyes rolled back. During one seizure, there was urinary incontinence. The girl denies feeling depressed but mentions feeling “stressed out” due to school and recent conflicts with her stepmother. There is a history of sexual abuse by her stepfather 5 years ago. She has diagnoses of depressive disorder and anxiety, for which she takes fluoxetine 20 mg daily. Physical examination, neurologic workup, and laboratory studies are unremarkable. Which of the following is the most likely diagnosis?',
+  options:['Malingering', 'Conversion disorder', 'Factitious disorder', 'Illness anxiety disorder'],
+  answer:1,
+  explanation:'Conversion disorder involves neurologic symptoms (e.g., seizures) incompatible with clinical findings, often linked to psychological stress. The lack of abnormalities on testing supports this diagnosis.',
+  objective:'Identify conversion disorder presenting with seizure-like neurologic symptoms associated with psychological stress and unremarkable evaluation.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q11, p.1054 (answer p.1055)'
+},
+
+{ id:'npep-soma-12', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A 42-year-old man returns to his internist for the fourth time in 5 months with the same complaints of intermittent numbness of his fingers and indigestion. Although his medical workup has been unremarkable, he remains anxious and is now concerned that he has celiac disease, requesting a gastrointestinal consultation. Which of the following is the most likely diagnosis?',
+  options:['Body dysmorphic disorder', 'Conversion disorder (functional neurologic symptom disorder)', 'Factitious disorder', 'Illness anxiety disorder', 'Malingering'],
+  answer:3,
+  explanation:'This patient is excessively preoccupied with having a serious illness despite minimal or no somatic symptoms and repeated negative evaluations. Reassurance and normal tests do not alleviate the anxiety.',
+  objective:'Identify illness anxiety disorder in a patient with persistent fear of serious disease despite repeated negative evaluations.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q12, p.1056 (answer p.1057)'
+},
+
+{ id:'npep-soma-13', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A 32-year-old woman is admitted for second- and third-degree burns of her right hand, which she attributes to accidentally spilling hot oil while cooking dinner. The surgeon recognizes her as a patient treated for a similar burn on the same hand 3 months ago. Medical records reveal this is her sixth burn injury in 2 years. There is no apparent secondary gain. Which of the following is the most likely diagnosis?',
+  options:['Body dysmorphic disorder', 'Conversion disorder (functional neurologic symptom disorder)', 'Factitious disorder', 'Illness anxiety disorder', 'Malingering'],
+  answer:2,
+  explanation:'Factitious disorder is the keyed answer because the pattern suggests recurrent, intentionally produced or imposed illness or injury in the absence of an apparent external reward. Repeated serious burns, including a similar injury to the same hand, and multiple presentations over 2 years support this diagnosis. The motivation in factitious disorder is to assume the sick role rather than to obtain a concrete benefit (not taken from the course material).\n\nBody dysmorphic disorder involves a preoccupation with a perceived defect or flaw in appearance that is not observable or appears slight to others, often with repetitive checking, grooming, or reassurance-seeking behaviors (not taken from the course material). The stem instead describes recurrent injuries and provides no appearance-related preoccupation.\n\nConversion disorder, also termed functional neurologic symptom disorder, causes neurologic symptoms such as weakness, sensory loss, or nonepileptic attacks that are incompatible with recognized neurologic disease (not taken from the course material). Burns are actual physical injuries rather than functional neurologic symptoms.\n\nIllness anxiety disorder is excessive fear of having or acquiring a serious disease, typically with absent or mild somatic symptoms (not taken from the course material). It does not explain recurrent inflicted injuries requiring treatment.\n\nMalingering also involves intentional production or exaggeration of symptoms, but it is driven by external incentives such as financial compensation, avoiding work, obtaining drugs, or evading legal responsibility (not taken from the course material). The stem specifically states that there is no apparent secondary gain, which favors factitious disorder. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Differentiate factitious disorder from malingering and other somatic symptom-related conditions.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q13, p.1058 (answer p.1059)'
+},
+
+{ id:'npep-soma-14', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A 26-year-old woman presents with the chief complaint, “I have epilepsy.” She states that for the past 3 weeks she has had seizures almost daily. She describes the episodes as falling to the ground, followed by uncontrollable shaking of her arms and legs. These events last about 10 minutes. She is unable to move during the episodes but denies loss of consciousness or bladder/bowel dysfunction. The patient appears indifferent when discussing her symptoms. She has never injured herself during these episodes but has been unable to continue her job, which bothers her because she received a promotion 1 month ago. Which of the following is the most likely diagnosis?',
+  options:['Somatic symptom disorder', 'Conversion disorder', 'Illness anxiety disorder', 'Seizure disorder'],
+  answer:1,
+  explanation:'Conversion disorder presents with neurological symptoms (e.g., seizures) inconsistent with medical findings, often triggered by stress. The patient shows la belle indifférence (lack of concern) and no injury despite frequent episodes, supporting the diagnosis.',
+  objective:'Recognize conversion disorder presenting with seizure-like neurological symptoms.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q14, p.1060 (answer p.1061)'
+},
+
+{ id:'npep-soma-15', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A 36-year-old man presents to his primary care provider, convinced he has colon cancer despite being told it is unlikely due to his young age. He occasionally notices traces of red blood on toilet paper, which he previously attributed to hemorrhoids, and experiences abdominal cramps after eating too much. His records show multiple prior visits for similar complaints, with repeatedly negative occult fecal blood tests and normal colonoscopies. He remains worried about dying of cancer and requests another colonoscopy. Which of the following is the most likely diagnosis?',
+  options:['Body dysmorphic disorder', 'Illness anxiety disorder', 'Somatic symptom disorder with predominant pain', 'Somatic symptom disorder', 'Conversion disorder'],
+  answer:1,
+  explanation:'Illness anxiety disorder is the keyed diagnosis. The central feature is persistent preoccupation with having or acquiring a serious illness despite repeated reassuring evaluations. This patient remains convinced that he has colon cancer, fears dying from it, repeatedly seeks care, and requests further colonoscopy despite negative occult fecal blood tests and normal colonoscopies. In illness anxiety disorder, somatic symptoms are absent or mild; the anxiety and health-related checking or reassurance-seeking are disproportionate. This diagnostic distinction is based on general medical knowledge (not taken from the course material).\n\nBody dysmorphic disorder is incorrect because it involves preoccupation with an imagined or slight defect in physical appearance, not fear of an internal disease such as cancer (not taken from the course material). Somatic symptom disorder with predominant pain is incorrect because pain must be the predominant somatic complaint and the patient’s main problem here is cancer anxiety, not abdominal pain. Somatic symptom disorder is less appropriate because it requires one or more distressing somatic symptoms accompanied by excessive thoughts, feelings, or behaviors; his mild intermittent cramps and traces of blood do not dominate the presentation, whereas his disease fear does (not taken from the course material). Conversion disorder is incorrect because it produces neurologic-type symptoms incompatible with recognized neurologic or medical conditions, such as weakness, sensory loss, or nonepileptic attacks, rather than persistent fear of cancer (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize illness anxiety disorder in a patient persistently fearful of serious disease despite reassuring investigations.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q15, p.1062 (answer p.1063)'
+},
+
+{ id:'npep-soma-16', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A 29-year-old man presents to his primary care provider with back pain for the past year since he slipped on a wet floor at work. He has been unable to work since the accident. A comprehensive medical workup has been entirely normal, and his only symptom is constant pain in the middle of his back. He has had multiple visits (more than two dozen) to the emergency department, where he is frequently given opioids and alprazolam for pain. At today’s visit, he says he is applying for disability designation and benefits. If the patient truly has pain and limitations without a medical physiologic explanation, which of the following is most likely to be present?',
+  options:['Somatic symptom disorder', 'Malingering', 'Conversion disorder', 'Posttraumatic stress disorder'],
+  answer:2,
+  explanation:'The bank prints conversion disorder as the answer. Conversion disorder, now termed functional neurologic symptom disorder, involves neurologic-type symptoms that are incompatible with recognized neurologic or medical disease; symptoms are not intentionally produced. This patient is stated to truly have pain and limitations despite the lack of a medical physiologic explanation, so the bank is treating the presentation as a nonvolitional functional symptom. (not taken from the course material)\n\nSomatic symptom disorder is not the printed answer. It involves distressing somatic symptoms accompanied by excessive thoughts, feelings, or behaviors related to those symptoms; a symptom does not have to be medically unexplained. (not taken from the course material) In general teaching, persistent pain with extensive health-care use may fit this diagnosis more closely than conversion disorder, because pain alone is not a typical focal neurologic conversion symptom. The printed key nevertheless remains conversion disorder.\n\nMalingering is not correct because it is the intentional production or exaggeration of symptoms for external gain, such as disability benefits, avoiding work, drugs, or legal advantage. (not taken from the course material) The question explicitly says that the patient truly has pain and limitations, which argues against intentional feigning despite the possible external incentives.\n\nPosttraumatic stress disorder is not correct because it requires a qualifying traumatic exposure plus symptom clusters such as intrusion, avoidance, negative changes in cognition or mood, and arousal changes. (not taken from the course material) Those features are not described; the stated issue is unexplained pain and disability.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Functional symptoms may be distinguished from malingering by the absence of intentional symptom production.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q16, p.1064 (answer p.1065)'
+},
+
+{ id:'npep-soma-17', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A 42-year-old woman is hospitalized for severe abdominal pain. After an extensive evaluation, clinicians have diagnosed factitious disorder. Which of the following is most likely the motivation behind this patient’s behavior?',
+  options:['The motivation is unconscious, and thus the patient is unaware of it.', 'Desire to avoid jail.', 'Desire to take on the patient role.', 'Desire to obtain compensation.', 'Desire to obtain narcotics.'],
+  answer:2,
+  explanation:'Factitious disorder involves a conscious desire to assume the sick role and receive attention or sympathy, without external incentives. Unlike malingering, the motivation is internal and psychological.',
+  objective:'Factitious disorder is motivated by assuming the sick role rather than obtaining an external incentive.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q17, p.1066 (answer p.1067)'
+},
+
+{ id:'npep-soma-18', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A 35-year-old woman is admitted to psychiatry after attempting suicide by swallowing an entire bottle of antidepressants. She states she is at her wit’s end due to terrible abdominal pain no one is willing to treat. Medical records show multiple negative workups for stomach pain and other complaints. On the inpatient unit, she is found injecting feces under the skin of her arms. Family history reveals her mother was a nurse. There is no evidence the patient is avoiding legal trouble or other external gain. Which of the following is the most likely diagnosis?',
+  options:['Malingering', 'Borderline personality disorder', 'Somatic symptom disorder with pain as major symptom', 'Major depression with psychosis', 'Factitious disorder'],
+  answer:4,
+  explanation:'The patient is intentionally producing symptoms (injecting feces) to assume the sick role without external incentives. This behavior, combined with a medical background in the family, is classic for factitious disorder.',
+  objective:'Identify factitious disorder when symptoms are intentionally produced without an external incentive.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q18, p.1068 (answer p.1069)'
+},
+
+{ id:'npep-soma-19', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A 50-year-old man repeatedly calls his clinician worried about undiagnosed cancer. He has had several workups for GI cancer, CNS cancer, and leukemia/lymphoma, all negative. After each workup, he feels somewhat reassured but soon worries again about having cancer or another fatal disease. He has no other complaints and denies physical symptoms. Which of the following is the most likely diagnosis?',
+  options:['Factitious disorder', 'Illness anxiety disorder', 'Generalized anxiety disorder (GAD)', 'Conversion disorder', 'Somatic symptom disorder with pain'],
+  answer:1,
+  explanation:'This patient is preoccupied with having a serious illness despite normal medical evaluations and minimal or no physical symptoms. His persistent anxiety and frequent health-related reassurance-seeking are typical of illness anxiety disorder.',
+  objective:'Identify illness anxiety disorder in a patient with persistent fear of serious disease despite negative evaluations and minimal or absent somatic symptoms.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q19, p.1070 (answer p.1071)'
+},
+
+{ id:'npep-soma-20', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'What is the primary gain in factitious disorder?',
+  options:['handle inner tension', 'obtain sickness role', 'obtain emotional support.', 'handle environmental stress'],
+  answer:1,
+  explanation:'In factitious disorder, the primary gain is to assume the sick role deliberately,\nwithout external rewards. The patient intentionally produces or feigns symptoms to\nreceive medical attention and sympathy, not to gain tangible benefits (which would\nsuggest malingering).',
+  objective:'Identify the primary gain in factitious disorder.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q20, p.1072 (answer p.1073)'
+},
+
+{ id:'npep-soma-22', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'Hypochondriasis is diagnosed in patients having:',
+  options:['Morbid preoccupation and fear of having disease', 'Morbid delusion of having disease', 'Morbid obsession with having disease', 'None of the above'],
+  answer:0,
+  explanation:'Hypochondriasis involves persistent fears and beliefs about having a serious illness, despite medical reassurance. It is driven by misinterpretation of bodily symptoms.',
+  objective:'Hypochondriasis is characterized by morbid preoccupation and fear of having a disease.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q22, p.1076 (answer p.1077)'
+},
+
+{ id:'npep-soma-23', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'Regarding conversion disorder, the patient must present with:',
+  options:['Neurological deficit', 'Inner conflict', 'Psychosis', 'Mood disturbance'],
+  answer:0,
+  explanation:'Conversion disorder presents with neurological symptoms like paralysis, blindness, or mutism without an identifiable organic cause. These symptoms often follow psychological stress.',
+  objective:'Conversion disorder presents with a neurological deficit without an identifiable organic cause.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q23, p.1078 (answer p.1079)'
+},
+
+{ id:'npep-soma-25', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'Which of the following disorders often presents with somatic complaints?',
+  options:['All psychiatric disorders', 'Schizophrenia', 'Bipolar disorder', 'Somatoform disorder'],
+  answer:0,
+  explanation:'The printed key is “All psychiatric disorders.” Psychiatric disorders may commonly present through physical or somatic complaints, especially when patients describe symptoms such as pain, fatigue, sleep disturbance, appetite change, palpitations, gastrointestinal symptoms, or other bodily concerns rather than identifying emotional distress directly. This is particularly relevant in general medical settings, where psychiatric illness may first be expressed as a physical complaint. (not taken from the course material)\n\nSchizophrenia is wrong as the single best answer because it is one psychiatric disorder, rather than covering the broader clinical observation represented by the keyed option. It can be associated with somatic concerns or somatic delusions, but this does not make it the best inclusive answer. (not taken from the course material)\n\nBipolar disorder is also wrong as the single best answer because somatic symptoms may occur during depressive or manic episodes, but bipolar disorder alone does not encompass all psychiatric disorders that may present with bodily complaints. (not taken from the course material)\n\nSomatoform disorder is wrong according to the printed key because it is a specific diagnostic category characterized by prominent somatic symptoms, whereas the question asks which disorders often present with somatic complaints in general. Although somatoform disorders are strongly associated with such complaints, the bank selects the wider answer, “All psychiatric disorders.” (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Psychiatric disorders may present with somatic complaints.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q25, p.1082 (answer p.1083)'
+},
+
+{ id:'npep-soma-26', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A patient complains of multiple somatic symptoms without any physical abnormality. What is the most likely diagnosis?',
+  options:['Somatization disorder', 'Hypochondriasis', 'Conversion disorder', 'Body dysmorphic disorder'],
+  answer:0,
+  explanation:'Somatization disorder is diagnosed when a person has multiple, recurrent somatic complaints without a medical basis, often affecting several organ systems.',
+  objective:'Identify somatization disorder from multiple somatic complaints without a physical abnormality.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q26, p.1084 (answer p.1085)'
+},
+
+{ id:'npep-soma-27', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A patient with body dysmorphic disorder repeatedly visits surgeons but is never satisfied. What is the best advice?',
+  options:['Recommend cosmetic surgery', 'Advise psychotherapy only', 'Advise her to see a psychiatrist', 'Ignore the complaints'],
+  answer:2,
+  explanation:'Patients with body dysmorphic disorder are not satisfied with surgical results and may seek multiple procedures. Psychiatric evaluation and cognitive behavioral therapy are the treatments of choice.',
+  objective:'Body dysmorphic disorder should be managed with psychiatric evaluation and cognitive behavioral therapy rather than cosmetic procedures.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q27, p.1086 (answer p.1087)'
+},
+
+{ id:'npep-soma-28', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'Which of the following is most accurate about conversion disorder?',
+  options:['Presents with neurological deficit without organic cause', 'Is always voluntary', 'Is caused by malingering', 'Presents with hallucinations'],
+  answer:0,
+  explanation:'Conversion disorder features neurological-like symptoms that are inconsistent with known neurological conditions and often linked to psychological stress.',
+  objective:'Conversion disorder presents with neurological deficits without an organic cause.',
+  source:'Neuro endpoint.pdf, Somatic disorders, Q28, p.1088 (answer p.1089)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Emergency psychiatry: 7 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-emerg-1', bank:'endpoint', module:'neuropsych', chapter:'ps-emerg',
+  stem:'Which of the following is a risk factor for suicide?',
+  options:['Age less than 30 years', 'Being single', 'Female', 'Having a job'],
+  answer:1,
+  explanation:'The printed key is “Being single.” Being single is associated with increased suicide risk because it may reflect reduced social support, social isolation, or lack of a close partner relationship. Social connectedness and reliable support can be protective factors, while isolation, bereavement, divorce, and relationship disruption can increase vulnerability (not taken from the course material).\n\n“Age less than 30 years” is not the usual single best answer in this comparison. Suicide can occur in younger people, and age-related risk varies by population, sex, and method; however, standard teaching commonly identifies older age, particularly older men, as a higher-risk demographic pattern (not taken from the course material).\n\n“Female” is incorrect as written. Females generally have higher rates of suicide attempts, whereas males generally have higher rates of death by suicide, partly because of differences in methods used (not taken from the course material).\n\n“Having a job” is not usually considered a risk factor. Employment, financial stability, daily structure, and social contact may be protective; unemployment, occupational loss, and financial stress may instead increase risk (not taken from the course material). Risk assessment should also consider previous attempts, psychiatric illness, substance misuse, hopelessness, access to lethal means, and acute psychosocial stressors (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Being single is a suicide risk factor.',
+  source:'Neuro endpoint.pdf, Emergency psychiatry, Q1, p.1239 (answer p.1240)'
+},
+
+{ id:'npep-emerg-2', bank:'endpoint', module:'neuropsych', chapter:'ps-emerg',
+  stem:'Mental status changes, rigidity, fever, and dysautonomia raise suspicion of:',
+  options:['Catatonia', 'Discontinuation syndrome', 'Neuroleptic malignant syndrome', 'Serotonin syndrome'],
+  answer:2,
+  explanation:'Neuroleptic malignant syndrome is the printed answer. It is characterized by altered mental status, severe generalized muscle rigidity, hyperthermia, and autonomic instability such as fluctuating blood pressure, tachycardia, diaphoresis, or tachypnea (not taken from the course material). It most often follows exposure to dopamine-blocking drugs, particularly antipsychotics, or abrupt withdrawal of dopaminergic medication (not taken from the course material). Laboratory abnormalities may include raised creatine kinase from muscle injury (not taken from the course material).\n\nCatatonia can cause mutism, posturing, negativism, stupor, agitation, and sometimes fever or autonomic disturbance, but the classic combination of marked rigidity, fever, dysautonomia, and mental-status change in this question raises suspicion of neuroleptic malignant syndrome (not taken from the course material).\n\nDiscontinuation syndrome occurs after stopping certain medications, commonly antidepressants, and may cause flu-like symptoms, dizziness, sensory symptoms, insomnia, and mood changes rather than the severe rigidity and hyperthermia described here (not taken from the course material).\n\nSerotonin syndrome also produces mental-status change, fever, and autonomic hyperactivity, but it is more typically associated with neuromuscular hyperactivity such as clonus, hyperreflexia, and tremor rather than the pronounced “lead-pipe” rigidity classically associated with neuroleptic malignant syndrome (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'The question tests recognition of neuroleptic malignant syndrome from mental-status change, rigidity, fever, and dysautonomia.',
+  source:'Neuro endpoint.pdf, Emergency psychiatry, Q2, p.1241 (answer p.1242)'
+},
+
+{ id:'npep-emerg-3', bank:'endpoint', module:'neuropsych', chapter:'ps-emerg',
+  stem:'The best treatment for a depressed patient with active serious suicidal attempt is:',
+  options:['Sodium valproate', 'Risperidone', 'Fluoxetine', 'Electroconvulsive therapy'],
+  answer:3,
+  explanation:'Electroconvulsive therapy is the keyed option because it can produce a relatively rapid antidepressant response and is used when severe depression presents with an immediate, serious suicide risk. (not taken from the course material) In this setting, urgent safety measures, assessment of intent and means, and appropriate inpatient care may also be required. (not taken from the course material) The bank prints electroconvulsive therapy as the best treatment.\n\nSodium valproate is primarily a mood stabilizer and antiseizure medicine. It may be used in bipolar disorder, especially for manic episodes, but it is not the usual rapid definitive treatment for a patient with severe unipolar depression and an active serious suicidal attempt. (not taken from the course material)\n\nRisperidone is an antipsychotic medication. It can be useful for psychotic disorders, acute agitation, or as augmentation in selected mood disorders, but it is not the standard primary treatment chosen here for urgent severe depressive suicidality. (not taken from the course material)\n\nFluoxetine is an SSRI antidepressant and can be appropriate for depressive disorders, but its therapeutic antidepressant effect generally takes time to emerge. (not taken from the course material) Therefore, it does not provide the rapid response sought when there is an immediate serious suicide risk. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify electroconvulsive therapy as the treatment selected for severe depression with an active serious suicidal attempt.',
+  source:'Neuro endpoint.pdf, Emergency psychiatry, Q3, p.1243 (answer p.1244)'
+},
+
+{ id:'npep-emerg-5', bank:'endpoint', module:'neuropsych', chapter:'ps-emerg',
+  stem:'A 47-year-old businessman presented to the emergency room with irritability, tearfulness, dizziness, nausea, and shivering. Medical records showed that he had been well controlled after taking paroxetine 40 mg/day for 6 months for depression. Since his depression had been in full remission for at least 3 months, he decided to stop the treatment without talking with his psychiatrist. He developed these symptoms after stopping the medication. Which of the following could be a possible explanation for his newly developed presenting manifestations?',
+  options:['SSRI discontinuation syndrome following his decision to stop taking', 'A manic episode because the patient seemed agitated easily and distracted', 'Development of serotonin syndrome as a possible interaction with another medication', 'The occurrence of a relapse of his major depressive symptoms'],
+  answer:0,
+  explanation:'The keyed option is SSRI discontinuation syndrome following abrupt cessation of paroxetine. This syndrome can occur after stopping an SSRI, particularly one with a relatively short half-life such as paroxetine, and may cause dizziness, nausea, shivering or flu-like symptoms, irritability, and tearfulness (not taken from the course material). The close temporal relationship between stopping the medicine and developing symptoms supports this explanation.\n\nOption b is wrong because a manic episode would usually involve persistently elevated, expansive, or irritable mood with increased energy, reduced need for sleep, pressured speech, grandiosity, and increased goal-directed activity (not taken from the course material). The described physical symptoms after drug withdrawal are more consistent with discontinuation.\n\nOption c is wrong because serotonin syndrome results from excessive serotonergic activity, usually during serotonergic drug use, dose escalation, overdose, or interacting medicines, rather than from stopping paroxetine (not taken from the course material). It commonly includes neuromuscular hyperactivity and autonomic instability (not taken from the course material).\n\nOption d is wrong because relapse of major depression would more typically reproduce depressive symptoms over time rather than produce an acute withdrawal-type cluster of dizziness, nausea, and shivering immediately after cessation (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Abrupt discontinuation of paroxetine can cause SSRI discontinuation syndrome.',
+  source:'Neuro endpoint.pdf, Emergency psychiatry, Q5, p.1247 (answer p.1248)'
+},
+
+{ id:'npep-emerg-6', bank:'endpoint', module:'neuropsych', chapter:'ps-emerg', alsoIn:['endpoint'],
+  stem:'A college student switched to a new antidepressant presents with muscle spasms, confusion, fever, tachycardia, and hypertension. Which of the following is the most likely cause?',
+  options:['Serotonin syndrome', 'Cocaine intoxication', 'Meningitis', 'Alcohol withdrawal (delirium tremens)', 'Neuroleptic malignant syndrome (NMS)'],
+  answer:0,
+  explanation:'This patient was likely switched from an SSRI, sertraline, to an MAOI, such as phenelzine. Because both agents increase serotonin levels, 5 weeks should elapse between discontinuation of one medication and initiation of the other. This is to avoid the danger of very serious serotonin syndrome, which has features similar to those of NMS.',
+  objective:'Recognize serotonin syndrome after switching between serotonergic antidepressants.',
+  source:'Neuro endpoint.pdf, Emergency psychiatry, Q6, p.1250 (answer p.1251). Also printed in Neuro endpoint.pdf, Psychopharmacology, Q8, p.1402 (answer p.1403).'
+},
+
+{ id:'npep-emerg-7', bank:'endpoint', module:'neuropsych', chapter:'ps-emerg',
+  stem:'A 24-year-old man on haloperidol presents with fever, rigidity, and high creatine phosphokinase (CPK). What is the most appropriate treatment?',
+  options:['Bromocriptine', 'Chlorpromazine', 'Haloperidol dose increase', 'Electroconvulsive therapy'],
+  answer:0,
+  explanation:'NMS is a life-threatening reaction to antipsychotics, characterized by rigidity, fever, and high CPK. Dopamine agonists like bromocriptine are used for treatment.',
+  objective:'Identify bromocriptine as the printed treatment for neuroleptic malignant syndrome.',
+  source:'Neuro endpoint.pdf, Emergency psychiatry, Q7, p.1252 (answer p.1253)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Dementia and delirium: 11 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-dem-1', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
+  stem:'The main clinical feature that helps differentiate dementia from delirium is:',
+  options:['Fluctuating course', 'Disturbed sensorium', 'Disorganized speech', 'Inattention'],
+  answer:0,
+  explanation:'Fluctuating course is the printed answer. Delirium is typically an acute, fluctuating disturbance in attention and awareness, with symptoms varying substantially over hours or during the day, often worsening at night. Dementia usually has an insidious onset and a chronic, progressive course; cognitive impairment is generally more stable from moment to moment until later stages. This distinction is particularly useful when deciding whether an apparent cognitive decline may represent an acute confusional state requiring urgent assessment. (not taken from the course material)\n\nDisturbed sensorium is not the best answer because it is characteristic of delirium, but it describes altered consciousness or awareness rather than the key temporal pattern distinguishing it from dementia. Disorganized speech can occur in delirium, especially with severe inattention or altered thought processes, but it is not the principal differentiating feature and may occur in several psychiatric or neurological conditions. Inattention is a central diagnostic feature of delirium and is often impaired early, whereas attention may be relatively preserved in mild dementia; however, it can also be impaired in advanced dementia, so fluctuating course is the more discriminating feature among these choices. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Delirium is distinguished from dementia chiefly by its fluctuating course.',
+  source:'Neuro endpoint.pdf, Dementia and delirium, Q1, p.1289 (answer p.1290)'
+},
+
+{ id:'npep-dem-4', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
+  stem:'What is the most likely diagnosis for this patient?',
+  options:['Dementia', 'Delirium', 'Schizophernia', 'Major depression'],
+  answer:1,
+  explanation:'The printed key selects delirium. Delirium is an acute disturbance in attention and awareness with a fluctuating course, usually caused by an underlying medical condition, substance effect, or withdrawal state (not taken from the course material). It may include disorientation, altered level of consciousness, perceptual disturbances, and sleep-wake disturbance (not taken from the course material). However, the visible stem provides no patient details, so the diagnosis cannot be independently determined from the question page alone.\n\nDementia is generally a chronic, progressive decline in one or more cognitive domains, with consciousness usually preserved until late disease (not taken from the course material). It is less likely than delirium when the intended presentation is acute or fluctuating, although no timing or clinical findings are supplied here. Schizophernia is a printed spelling in this bank; schizophrenia generally involves persistent psychotic symptoms such as delusions, hallucinations, disorganized thought, or negative symptoms, rather than the primary attentional disturbance of delirium (not taken from the course material). Major depression can cause poor concentration and apparent cognitive slowing, but it is characterized principally by persistent low mood or loss of interest with associated depressive symptoms (not taken from the course material), none of which are stated. The bank therefore prints delirium as the answer despite the absent patient vignette. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify delirium as the bank’s intended diagnosis among cognitive and psychiatric differentials.',
+  source:'Neuro endpoint.pdf, Dementia and delirium, Q4, p.1296 (answer p.1297)'
+},
+
+{ id:'npep-dem-5', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
+  stem:'What is the next step in the treatment of this patient?',
+  options:['Just assure the patient', 'order antipsycotic drugs', 'order anti Alzheimer drugs', 'proper neurological examination and investigate for the cause'],
+  answer:3,
+  explanation:'The printed answer is proper neurological examination and investigate for the cause. This is the appropriate next step when a patient presents with a symptom that may reflect an underlying neurological, medical, medication-related, or psychiatric disorder. A focused neurological examination and investigation directed by the clinical presentation help identify reversible or serious causes before treatment is selected. This is generally taught medical practice (not taken from the course material).\n\nJust assure the patient is wrong because reassurance without assessment may overlook an important underlying condition. Reassurance may become appropriate after evaluation excludes concerning causes, but it is not the first step when the cause has not been established.\n\nOrder antipsycotic drugs is wrong because antipsychotic treatment should not be started solely from the limited information in this question. Such drugs may be appropriate in selected patients with severe psychotic symptoms, agitation, or distress after assessment, but they can cause adverse effects and may obscure the clinical picture (not taken from the course material).\n\nOrder anti Alzheimer drugs is wrong because there is no established diagnosis of Alzheimer disease in the question. Cognitive-enhancing drugs are not a general first-line response to an undifferentiated neurological or behavioural presentation, and diagnosis should precede disease-specific treatment (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'The question tests that an undiagnosed neurological or behavioural presentation should first receive a proper neurological assessment and investigation for its cause.',
+  source:'Neuro endpoint.pdf, Dementia and delirium, Q5, p.1298 (answer p.1299)'
+},
+
+{ id:'npep-dem-6', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
+  stem:'Three days after a coronary bypass graft intervention, a 64 -year-old man became agitated and restless. Moreover , he began screaming that there were strange men around him trying to hurt him . Later on the evening, he was disoriented and stuporous . He has no prior history of psychiatric difficulties. What is the most probable diagnosis of this patient?',
+  options:['Delirium', 'Schizophrenia', 'Bibolar disorder', 'Alzheimers dementia'],
+  answer:0,
+  explanation:'Delirium is an acute confusional state common after surgery, especially in elderly patients. It is characterized by fluctuating consciousness, disorientation, hallucinations, and agitation.',
+  objective:'Identify delirium after surgery from acute agitation, hallucinations, disorientation, and stupor.',
+  source:'Neuro endpoint.pdf, Dementia and delirium, Q6, p.1300 (answer p.1301)'
+},
+
+{ id:'npep-dem-7', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
+  stem:'What differentiates dementia from delirium?',
+  options:['Dementia develops over months to years while dilirum develops in few days.', 'Dementia makes engaging patients\' attention difficult while deilious patients are alert in early stages', 'Dementia has a fluctuating course while delirium has a progressive course', 'Dementia symptoms are worse at night while symptoms of delirium are the same all day'],
+  answer:0,
+  explanation:'Delirium has an acute onset with fluctuating consciousness, while dementia is a chronic, progressive cognitive decline with stable alertness in early stages.',
+  objective:'Differentiate dementia from delirium by their time course of onset.',
+  source:'Neuro endpoint.pdf, Dementia and delirium, Q7, p.1302 (answer p.1303)'
+},
+
+{ id:'npep-dem-8', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
+  stem:'What feature differentiates delirium from dementia?',
+  options:['Fluctuating course', 'Memory loss', 'Inattention', 'Disorganized thinking'],
+  answer:0,
+  explanation:'Fluctuating course is the keyed option. Delirium is an acute disturbance in attention and awareness whose severity commonly varies over hours to a day; a patient may appear relatively lucid at one time and markedly confused later. This waxing-and-waning pattern, often with worsening at night, helps distinguish it from the more steadily progressive cognitive decline of dementia. (not taken from the course material)\n\nMemory loss is wrong because it can occur in both conditions. Dementia commonly presents with impaired memory, while delirium may also impair recall because reduced attention prevents new information from being properly registered. (not taken from the course material)\n\nInattention is wrong because it is a core feature of delirium but does not uniquely differentiate it in this list as well as fluctuation does. Attention can also be impaired in advanced dementia, although it is usually relatively preserved early in dementia. (not taken from the course material)\n\nDisorganized thinking is wrong because it may occur in delirium and can also be seen in dementia, particularly when cognitive impairment is severe. It is therefore not the best distinguishing feature here. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify the fluctuating course as the feature that differentiates delirium from dementia.',
+  source:'Neuro endpoint.pdf, Dementia and delirium, Q8, p.1304 (answer p.1305)'
+},
+
+{ id:'npep-dem-9', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
+  stem:'An 85-year-old woman is admitted to the ICU after a motor vehicle accident fractured her pelvis and killed her husband of 50 years. On the third evening after surgery, she becomes agitated and tries to pull out her IV lines. She seems terrified of a potted plant in her room. She is disoriented to place and time, though her mental status exam was normal that afternoon. Which of the following is the most likely diagnosis?',
+  options:['Dementia', 'Acute stress reaction', 'Brief psychotic disorder', 'Delirium', 'Bereavement'],
+  answer:3,
+  explanation:'The acute onset of confusion, disorientation, hallucinations, and fluctuating mental status after hospitalization suggests delirium. This is common in elderly patients following surgery or trauma.',
+  objective:'Recognize delirium from acute fluctuating confusion, disorientation, agitation, and hallucinations after surgery in an elderly patient.',
+  source:'Neuro endpoint.pdf, Dementia and delirium, Q9, p.1306 (answer p.1307)'
+},
+
+{ id:'npep-dem-10', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
+  stem:'Which of the following is a feature of acute confusional state (delirium)?',
+  options:['Visual hallucination', 'Auditory hallucination', 'Tactile hallucination', 'Olfactory hallucinations'],
+  answer:0,
+  explanation:'Visual hallucinations are commonly seen in delirium, especially in medically ill or elderly patients. This helps differentiate it from psychiatric conditions, which more often involve auditory hallucinations.',
+  objective:'Identify visual hallucination as a feature of delirium.',
+  source:'Neuro endpoint.pdf, Dementia and delirium, Q10, p.1308 (answer p.1309)'
+},
+
+{ id:'npep-dem-11', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
+  stem:'A 70-year-old male with chronic renal failure undergoes dialysis twice a week. After his last dialysis, he started experiencing explosive anger at night and seeing snakes walking on the blanket. Sometimes he responds to questions; other times, he looks dreamy and unfocused. What is the most probable diagnosis?',
+  options:['Dementia', 'Psychosis', 'Delirium', 'Depression'],
+  answer:2,
+  explanation:'The acute onset, visual hallucinations, fluctuating attention, and association with dialysis strongly indicate delirium, not dementia or psychosis.',
+  objective:'Identify delirium from acute fluctuating attention and visual hallucinations following dialysis.',
+  source:'Neuro endpoint.pdf, Dementia and delirium, Q11, p.1310 (answer p.1311)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Coma: 17 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-coma-1', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'Unilateral motor deficits are commonly seen in which of the following causes of coma?',
+  options:['Supratentorial', 'Infratentorial', 'Metabolic', 'All of the following'],
+  answer:0,
+  explanation:'Supratentorial causes of coma commonly produce unilateral motor deficits because a focal lesion in one cerebral hemisphere can affect the contralateral corticospinal pathways. (not taken from the course material) Examples include a large hemispheric stroke, intracerebral haemorrhage, tumour, or subdural haematoma causing mass effect and impaired consciousness. (not taken from the course material) Such lesions may initially cause a lateralized weakness before deterioration in consciousness becomes more profound. (not taken from the course material)\n\nInfratentorial lesions can cause coma through brainstem or cerebellar involvement, but their motor findings are often accompanied by cranial-nerve abnormalities, abnormal eye movements, or bilateral long-tract signs rather than being commonly characterized simply by unilateral motor deficit. (not taken from the course material) Metabolic coma usually affects brain function diffusely, so examination more often shows symmetric neurological findings; focal unilateral weakness should prompt consideration of a structural lesion instead. (not taken from the course material) “All of the following” is wrong because unilateral motor deficits are not commonly expected in metabolic coma, and infratentorial causes do not share this as their usual defining motor pattern. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Unilateral motor deficits in coma are most commonly associated with a supratentorial structural lesion.',
+  source:'Neuro endpoint.pdf, Coma, Q1, p.694 (answer p.695)'
+},
+
+{ id:'npep-coma-2', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'The cut-off point of time to declare brain death in adults is irreversible loss of brain and brainstem function for more than:',
+  options:['1 hour', '2 hours', '6 hours', '48 hours'],
+  answer:2,
+  explanation:'The keyed answer is 6 hours. The bank prints this as the required duration of irreversible loss of brain and brainstem function before brain death is declared in adults. Brain death assessment requires a clinical finding of absent brainstem function with exclusion of reversible causes such as hypothermia, sedative drugs, metabolic disturbance, and shock (not taken from the course material). The duration and exact procedure may vary by jurisdiction and institutional protocol (not taken from the course material).\n\n1 hour is incorrect because it is shorter than the cut-off printed by this bank. A brief period of absent neurological function may occur in reversible circumstances, so appropriate observation and prerequisite assessment are required (not taken from the course material).\n\n2 hours is incorrect because it is also shorter than the printed 6-hour interval. It therefore does not match the bank’s stated threshold.\n\n48 hours is incorrect because it is longer than the interval printed as necessary by the bank. Although prolonged observation may be used in selected clinical circumstances or local protocols, it is not the answer marked in this endpoint file (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'The question tests the printed adult observation time for irreversible loss of brain and brainstem function when declaring brain death.',
+  source:'Neuro endpoint.pdf, Coma, Q2, p.696 (answer p.697)'
+},
+
+{ id:'npep-coma-3', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'A male patient with bilateral internal capsule infarctions will experience:',
+  options:['Staccato dysarthria', 'Low monotonous dysarthria', 'Mixed dysarthria', 'Slurred dysarthria'],
+  answer:3,
+  explanation:'Bilateral internal capsule infarctions can disrupt corticobulbar pathways on both sides. These pathways carry upper motor neuron input from the cerebral cortex to the cranial motor nuclei that control speech muscles. Bilateral involvement may therefore produce pseudobulbar dysarthria, with impaired articulation and characteristically slurred speech (not taken from the course material). The printed key marks Slurred dysarthria.\n\nStaccato dysarthria is typically associated with cerebellar disease, where speech becomes irregularly segmented with abnormal rhythm and stress (not taken from the course material). It is not the expected pattern from bilateral internal capsule lesions.\n\nLow monotonous dysarthria is more characteristic of hypokinetic dysarthria in Parkinsonism, with reduced pitch variation and reduced volume (not taken from the course material). Internal capsule infarction does not primarily produce this extrapyramidal speech pattern.\n\nMixed dysarthria occurs when more than one motor speech system is affected, such as combined upper and lower motor neuron or cerebellar involvement (not taken from the course material). Although bilateral capsular lesions can cause severe dysarthria, the bank specifically identifies slurred dysarthria rather than a mixed type.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Bilateral internal capsule infarctions produce slurred dysarthria.',
+  source:'Neuro endpoint.pdf, Coma, Q3, p.700. This question is printed twice in the book, p.698 first with no visible answer mark; this second printing carries the key.'
+},
+
+{ id:'npep-coma-4', bank:'endpoint', module:'neuropsych', chapter:'nr-intro',
+  stem:'What is the expected sensory deficit in right hemi-section of the spinal cord?',
+  options:['Loss of vibration sense on the right side', 'Loss of both pain and vibration sense on the left side', 'Loss of pain sensation on the right side', 'Loss of both pain and vibration sense on the right side'],
+  answer:0,
+  explanation:'The printed key is option a: loss of vibration sense on the right side. In a right spinal cord hemisection, the dorsal column pathways carrying vibration sensation ascend ipsilaterally within the spinal cord before crossing in the medulla. Therefore, vibration sense is lost on the right side below the lesion (not taken from the course material). This makes option a the best answer among those provided.\n\nOption b is wrong because vibration loss would not be expected on the left side in a right hemisection. Pain sensation is generally affected on the opposite side below the lesion because spinothalamic fibres cross near their spinal entry level (not taken from the course material), but the option incorrectly places both pain and vibration loss on the left.\n\nOption c is wrong because isolated right-sided pain loss is not the usual sensory pattern of a right hemisection. Pain and temperature loss is generally contralateral below the lesion, often beginning a short distance below it (not taken from the course material).\n\nOption d is wrong because it combines ipsilateral vibration loss with ipsilateral pain loss. Although vibration loss on the right is expected, pain loss is generally on the left below the lesion after crossing of the spinothalamic pathway (not taken from the course material). The bank therefore selects the single correctly stated component of the sensory deficit.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'A right spinal cord hemisection causes ipsilateral loss of vibration sense below the lesion.',
+  source:'Neuro endpoint.pdf, Coma, Q4, p.701 (answer p.702)'
+},
+
+{ id:'npep-coma-5', bank:'endpoint', module:'neuropsych', chapter:'nr-exam',
+  stem:'Which of the following is more specific for upper motor neuron lesions?',
+  options:['Hyporeflexia', 'Distal weakness', 'Extensor plantar', 'Wasting'],
+  answer:2,
+  explanation:'The keyed option, Extensor plantar, refers to an extensor plantar response, commonly called a positive Babinski sign. This is a relatively specific sign of corticospinal tract dysfunction and therefore supports an upper motor neuron lesion. (not taken from the course material)\n\nHyporeflexia is incorrect because upper motor neuron lesions typically cause hyperreflexia after the initial acute phase, whereas reduced reflexes are more characteristic of lower motor neuron lesions or peripheral nerve disease. (not taken from the course material)\n\nDistal weakness is incorrect because it can occur in many neurological disorders, including peripheral neuropathy, radiculopathy, lower motor neuron lesions, muscle disease, and upper motor neuron lesions. It is therefore not a specific sign of an upper motor neuron lesion. (not taken from the course material)\n\nWasting is incorrect because marked early muscle wasting is more typical of lower motor neuron lesions due to denervation. Mild disuse atrophy may occur with chronic upper motor neuron weakness, but this finding is not specific for an upper motor neuron lesion. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'An extensor plantar response is a relatively specific sign of an upper motor neuron lesion.',
+  source:'Neuro endpoint.pdf, Coma, Q5, p.703 (answer p.704)'
+},
+
+{ id:'npep-coma-6', bank:'endpoint', module:'neuropsych', chapter:'nr-neckpain',
+  stem:'A young male patient with a history of trauma presented with falling of the right upper eyelid. Clinical examination revealed miosis in the right eye and decrease facial sweating. What is the injured nerve ?',
+  options:['Suprascapular nerve', 'Upper trunk of brachial plexus', 'cervical sympathetic chain', 'Phrenic nerve'],
+  answer:2,
+  explanation:'The patient shows signs of Horner’s syndrome (ptosis, miosis, and anhidrosis), typically due to disruption of the cervical sympathetic chain. This is often caused by trauma or lesions affecting the sympathetic pathway.',
+  objective:'Identify cervical sympathetic chain injury from Horner’s syndrome findings.',
+  source:'Neuro endpoint.pdf, Coma, Q6, p.705 (answer p.706)'
+},
+
+{ id:'npep-coma-8', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'What condition causes loss of brain stem functions ?',
+  options:['Subarachnoid hemorrhage', 'Pontine hemorrhage', 'Brain death', 'Herpes simplex encephalitis'],
+  answer:2,
+  explanation:'Brain death is defined as the irreversible loss of all brain and brainstem functions. It is the only condition among the choices where there is complete cessation of brainstem activity.',
+  objective:'Brain death causes irreversible loss of all brain and brainstem functions.',
+  source:'Neuro endpoint.pdf, Coma, Q8, p.709 (answer p.710)'
+},
+
+{ id:'npep-coma-9', bank:'endpoint', module:'neuropsych', chapter:'nr-comapproach',
+  stem:'What is the most common site of lesion in comatose patient with decorticate posturing?',
+  options:['Spinal cord', 'Infra tentorial', 'Supra tentorial.', 'Peripheral nerves'],
+  answer:2,
+  explanation:'Decorticate posturing → supratentorial lesions.\nDecerebrate posturing → infratentorial lesions.\nBilateral myoclonic jerks suggest toxic-metabolic causes of coma.\n\nDecorticate posturing, characterized by flexion of the arms and extension of the legs, typically indicates damage to the cerebral hemispheres or their connections. Therefore, the most common site of lesion in a comatose patient with decorticate posturing is:\nc. Supra tentorial\n\nNB :Decorticate >>supra tentorial, dercerebrate >> infra tentorial',
+  objective:'Decorticate posturing is associated with a supratentorial lesion.',
+  source:'Neuro endpoint.pdf, Coma, Q9, p.711 (answer p.712)'
+},
+
+{ id:'npep-coma-10', bank:'endpoint', module:'neuropsych', chapter:'nr-comapproach',
+  stem:'What is the possible reason for pinpoint pupils in a comatose patient?',
+  options:['Opiate intoxication', 'Severe hypothermia', 'Intraventricular hemorrhage', 'Mild brain infarction'],
+  answer:0,
+  explanation:'Pinpoint pupils in a comatose patient are classically seen with opioid intoxication, due to the effect of opioids on the parasympathetic innervation of the eye. Other causes like pontine hemorrhage can also cause miosis, but opioids are the most common and reversible cause.',
+  objective:'Pinpoint pupils in a comatose patient are associated with opiate intoxication.',
+  source:'Neuro endpoint.pdf, Coma, Q10, p.713 (answer p.714)'
+},
+
+{ id:'npep-coma-11', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'What is the shape of pupil seen in extensive pontine lesion ?',
+  options:['Pinpoint pupil reactive to light.', 'Dilated unreactive to light', 'Dilated pupil reactive to light', 'Pinpoint unreactive to light'],
+  answer:0,
+  explanation:'An extensive pontine lesion produces pinpoint pupils that remain reactive to light. The pinpoint size occurs because disruption of descending sympathetic pathways reduces pupillary dilator activity, while the parasympathetic light-reflex pathway can remain intact. This produces marked bilateral miosis with preserved response to light. (not taken from the course material)\n\nOption b, dilated unreactive pupils, is wrong because this pattern suggests severe midbrain dysfunction, uncal herniation with third-nerve compression, or pharmacological dilatation rather than a pontine lesion. (not taken from the course material) Option c, dilated pupils reactive to light, is also wrong because pontine damage characteristically causes constriction rather than dilatation. (not taken from the course material) Option d, pinpoint unreactive pupils, is wrong because although pupils may be very small in pontine lesions, they should retain light reactivity. Loss of light reactivity would imply additional impairment of the relevant reflex pathways or another cause. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Extensive pontine lesions cause pinpoint pupils that are reactive to light.',
+  source:'Neuro endpoint.pdf, Coma, Q11, p.715 (answer p.716)'
+},
+
+{ id:'npep-coma-12', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'A 31-year-old male patient was admitted to the ICU after having severe road traffic accident. CT brain showed frontoparietal contusion on the left side. Two days after admission, the patient was not responsive to any painful stimuli, corneal, gag and oculocephalic reflexes were absent, However, the biceps, brachioradialis and knee reflexes were preserved. What is the description of this state of consciousness',
+  options:['Locked-in syndrome', 'Brain stem death', 'Persistent vegetative state', 'Deep coma'],
+  answer:1,
+  explanation:'Brainstem death is diagnosed when all brainstem reflexes are absent, despite spinal reflexes (like limb reflexes) being preserved. This indicates irreversible cessation of brainstem function.',
+  objective:'Brain stem death may show absent brainstem reflexes despite preserved spinal reflexes.',
+  source:'Neuro endpoint.pdf, Coma, Q12, p.717 (answer p.718)'
+},
+
+{ id:'npep-coma-13', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'A 24-year-old man is brought to the ED after a motorcycle accident. He has a GCS of 3 and a CT head shows a large subdural hematoma and cerebral edema. He undergoes decompressive craniotomy and improves gradually. At 15 months, he opens his eyes spontaneously and gazes around, but does not follow objects or commands, vocalize, or respond purposefully to stimuli. Pupils react to light, and he moves all limbs non-purposefully. He is incontinent and fed via gastrostomy. What is the most likely diagnosis?',
+  options:['Brain death', 'Cataplexy', 'Locked-in syndrome', 'Persistent vegetative state'],
+  answer:3,
+  explanation:'The patient is awake but lacks awareness and purposeful responses, which is consistent with a persistent vegetative state. Brainstem reflexes and sleep-wake cycles may be preserved.',
+  objective:'Identify persistent vegetative state from wakefulness without awareness or purposeful responses after severe brain injury.',
+  source:'Neuro endpoint.pdf, Coma, Q13, p.719 (answer p.720)'
+},
+
+{ id:'npep-coma-14', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'An awake patient presents with quadriplegia, preserved blinking, and horizontal eye movements. What is the most likely diagnosis?',
+  options:['Locked-in syndrome', 'Persistent vegetative state', 'Brain death', 'Catatonia'],
+  answer:0,
+  explanation:'Locked-in syndrome results from damage to the ventral pons, leading to quadriplegia and loss of speech with preserved consciousness and vertical eye movements. Horizontal eye movements and blinking are typically preserved.',
+  objective:'Identify locked-in syndrome from preserved consciousness and eye movements despite quadriplegia.',
+  source:'Neuro endpoint.pdf, Coma, Q14, p.721 (answer p.722)'
+},
+
+{ id:'npep-coma-15', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'A patient has spontaneous eye opening and breathing but is unable to communicate or follow commands. What is the most likely diagnosis?',
+  options:['Coma', 'Locked-in syndrome', 'Persistent vegetative state', 'Minimally conscious state'],
+  answer:2,
+  explanation:'A persistent vegetative state (PVS) is characterized by preserved autonomic functions such as breathing and sleep-wake cycles, along with spontaneous eye opening, but no awareness of self or environment and no purposeful response to stimuli or commands.',
+  objective:'Recognize persistent vegetative state from spontaneous eye opening and breathing without communication or command following.',
+  source:'Neuro endpoint.pdf, Coma, Q15, p.723 (answer p.724)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Psychopharmacology: 18 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-psychopharm-1', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
+  stem:'Which group has high anticholinergic side effects?',
+  options:['Noradrenergic Dopaminergic Reuptake Inhibitor (NDRI)', 'Noradrenergic Specific Serotonergic Antidepressants (NaSSA)', 'Selective Serotonin Reuptake Inhibitors (SSRIs)', 'Tricyclic Antidepressants (TCAs)'],
+  answer:3,
+  explanation:'Tricyclic antidepressants (TCAs) are the keyed group because many members have substantial muscarinic receptor antagonism, producing prominent anticholinergic adverse effects such as dry mouth, blurred vision, constipation, urinary retention, tachycardia, and confusion, particularly in older patients. This is a class feature, although the degree varies between individual TCAs. (not taken from the course material)\n\nNoradrenergic Dopaminergic Reuptake Inhibitor (NDRI) is wrong because the usual representative, bupropion, primarily inhibits norepinephrine and dopamine reuptake and is not characterized by high antimuscarinic activity. Its adverse-effect profile more commonly includes insomnia, agitation, dry mouth, and a dose-related seizure risk rather than the typical high anticholinergic burden of TCAs. (not taken from the course material)\n\nNoradrenergic Specific Serotonergic Antidepressants (NaSSA) is wrong because mirtazapine, the principal NaSSA, acts through alpha-2 adrenergic antagonism and serotonin-receptor effects. Sedation, increased appetite, and weight gain are more characteristic than marked anticholinergic toxicity. (not taken from the course material)\n\nSelective Serotonin Reuptake Inhibitors (SSRIs) are wrong because they selectively increase serotonin signaling and generally have little anticholinergic activity. Their common adverse effects include gastrointestinal upset, sexual dysfunction, sleep disturbance, and possible serotonin toxicity with interacting serotonergic drugs. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify tricyclic antidepressants as the antidepressant group with high anticholinergic side effects.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q1, p.1388 (answer p.1389)'
+},
+
+{ id:'npep-psychopharm-3', bank:'endpoint', module:'neuropsych', chapter:'ps-therapy',
+  stem:'A 27-year-old man has unstable romantic relationships. He wants to investigate how his childhood experience affected his current behaviors and to explore his unconscious mind. What is the type of therapy suitable for him ?',
+  options:['Psychodynamic therapy', 'DBT', 'Hypnotherapy', 'supportive therapy'],
+  answer:0,
+  explanation:'❖ Psychodynamic Therapy:\nIs based on the idea that behaviour and mental well-being are influenced by childhood experiences and inappropriate repetitive thoughts or feelings that are unconscious (outside of the person\'s awareness). A person works with the therapist to improve self-awareness and to change old patterns so he/she can more fully take charge of his/her life. Techniques commonly used by Freud included the analysis of transference, dream interpretation, and free association. Psychoanalysis is a more intensive form of psychodynamic therapy. Sessions are typically conducted three or more times a week.\n\nThis therapy focuses on exploring unconscious processes and past experiences, especially from childhood, to understand current behavior. It’s suitable for individuals seeking insight into their emotions and relationship patterns.',
+  objective:'Identify psychodynamic therapy from its focus on childhood experiences and unconscious processes.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q3, p.1392 (answer p.1393)'
+},
+
+{ id:'npep-psychopharm-4', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
+  stem:'Which receptor mediates the action of benzodiazepine?',
+  options:['NMDA-glutamate', 'GABA.', 'Serotonin', 'Dopamine'],
+  answer:1,
+  explanation:'Benzodiazepines act on the GABA-A receptor to enhance inhibitory neurotransmission. This results in sedative, anxiolytic, and muscle-relaxant effects.',
+  objective:'Benzodiazepines act on the GABA-A receptor.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q4, p.1394 (answer p.1395)'
+},
+
+{ id:'npep-psychopharm-5', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
+  stem:'A 24-year-old man with chronic schizophrenia is brought to the emergency room after his parents found him in bed and were unable to communicate with him. On examination, the man is confused and disoriented. He has severe muscle rigidity and a temperature of 39.4°C (103°F). His blood pressure is elevated, and he has leukocytosis. Which of the following is the best first step in the pharmacologic treatment of this man?',
+  options:['Haloperidol', 'Lorazepam', 'Bromocriptine', 'Benztropine', 'Lithium'],
+  answer:2,
+  explanation:'The patient presents with neuroleptic malignant syndrome (NMS), a life-threatening reaction to antipsychotics. Dopamine agonists like bromocriptine help reverse dopamine blockade, the underlying cause of NMS.',
+  objective:'Neuroleptic malignant syndrome is treated pharmacologically with the dopamine agonist bromocriptine.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q5, p.1396 (answer p.1397)'
+},
+
+{ id:'npep-psychopharm-6', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'A 54-year-old man with a chronic mental illness seems to be constantly chewing. He does not wear dentures. His tongue darts in and out of his mouth, and he occasionally smacks his lips. He also grimaces, frowns, and blinks excessively. Which of the following disorders is most likely in this patient?',
+  options:['Tourette syndrome', 'Akathisia', 'Tardive dyskinesia', 'Parkinson disease', 'Huntington disease'],
+  answer:2,
+  explanation:'Tardive dyskinesia is a late-onset, often irreversible side effect of long-term antipsychotic use, characterized by involuntary oral-facial movements. It is more common in older adults with chronic schizophrenia.',
+  objective:'Recognize tardive dyskinesia from involuntary oral-facial movements in a patient with chronic mental illness.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q6, p.1398 (answer p.1399)'
+},
+
+{ id:'npep-psychopharm-7', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
+  stem:'A 58-year-old woman with a chronic mental disorder comes to the physician with irregular choreoathetoid movements of her hands and trunk. She states that the movements worsen under stressful conditions. Which of the following medications is most likely to have caused this disorder?',
+  options:['Fluoxetine', 'Clozapine', 'Perphenazine', 'Diazepam', 'Phenobarbital'],
+  answer:2,
+  explanation:'Perphenazine is a typical antipsychotic known to cause tardive dyskinesia, a movement disorder presenting with choreoathetoid movements. These symptoms are often worsened by stress and are a result of prolonged dopamine receptor blockade.',
+  objective:'Identify a typical antipsychotic as a cause of tardive dyskinesia.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q7, p.1400 (answer p.1401)'
+},
+
+{ id:'npep-psychopharm-9', bank:'endpoint', module:'neuropsych', chapter:'ps-emerg',
+  stem:'A 40-year-old man with schizoaffective disorder has been hospitalized in an inpatient psychiatry unit for the third time in the last 5 years. During each episode prior to hospitalization, he becomes noncompliant in taking his medications, develops manic symptoms and auditory hallucinations, and then becomes violent. In the inpatient unit, he physically threatens other patients and staff and is generally agitated. He is put in isolation to help quiet him. The patient is prescribed a mood stabilizer. Which of the following medications would be most appropriate to help relieve this patient’s acute agitation?',
+  options:['Buspirone', 'Fluoxetine', 'Chloral hydrate', 'Risperidone'],
+  answer:3,
+  explanation:'Risperidone is an atypical antipsychotic effective in managing both psychosis and acute agitation. It is appropriate for patients with schizoaffective disorder who are aggressive or threatening in an inpatient setting.',
+  objective:'Identify risperidone as the printed treatment choice for acute agitation in schizoaffective disorder.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q9, p.1404 (answer p.1405)'
+},
+
+{ id:'npep-psychopharm-10', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A 37-year-old man who works as a college professor and has a history of generalized anxiety disorder (GAD) and major depressive disorder (MDD) has been referred to psychiatry by his primary care provider. His symptoms have been relatively well controlled up until last semester when he received negative reviews from his students. Since this time, he has started to doubt his ability to teach, worry about his career, and ruminate on each lesson plan. He worries that his reputation among the students has been irrevocably damaged, which makes him feel despondent. The professor desperately wants to get help but is hesitant to try any medication that will impair his intellectual prowess. Which of the following is the most effective treatment approach?',
+  options:['Cognitive behavioral therapy (CBT)', 'CBT and escitalopram', 'Psychoeducation and lorazepam', 'Psychodynamic psychotherapy'],
+  answer:1,
+  explanation:'The patient would benefit most from a combination of cognitive behavioral therapy (CBT) and an SSRI, such as escitalopram, which is FDA-approved for generalized anxiety disorder (GAD). While CBT alone is helpful, adding medication is recommended due to the severity of symptoms and coexisting depression.',
+  objective:'Combined CBT and escitalopram are the printed most effective treatment approach for coexisting generalized anxiety disorder and major depressive disorder.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q10, p.1406 (answer p.1407)'
+},
+
+{ id:'npep-psychopharm-11', bank:'endpoint', module:'neuropsych', chapter:'ps-ptsd',
+  stem:'Despite a course of psychotherapy, the above patient in continues to suffer from depressed mood, recurrent nightmares, flashbacks, hypervigilance, and emotional numbing. Which of the following medications is the first choice in this patient?',
+  options:['Alprazolam', 'Propranolol', 'Prazosin', 'Risperidone', 'Sertraline'],
+  answer:4,
+  explanation:'SSRIs like sertraline are first-line pharmacologic treatments for PTSD. They help alleviate core symptoms including mood disturbances, hypervigilance, and intrusive thoughts.',
+  objective:'SSRIs such as sertraline are first-line pharmacologic treatment for PTSD.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q11, p.1408 (answer p.1409)'
+},
+
+{ id:'npep-psychopharm-12', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
+  stem:'Which type of neuroreceptors is blocked by all antipsychotic agents ?',
+  options:['The serotonergic 5-HT2A', 'The dopaminergic D2.', 'The muscarinic MI', 'The adrenergic alpha 1'],
+  answer:1,
+  explanation:'Mechanism of action:\no Typical antipsychotics are not particularly selective and also block dopamine receptors. Blocking D2 receptors is thought to produce some unwanted side effects that the typical antipsychotics can produce.\no Atypical antipsychotics have a similar blocking effect on D2 receptors, however, most also act on serotonin receptors, especially 5-HT2A and 5-HT2C receptors.\n\nAdverse effects:\nAdverse effect also can be classified according to the rate of occurrence into common & rare.',
+  objective:'All antipsychotic agents block dopaminergic D2 receptors.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q12, p.1410 (answer p.1411)'
+},
+
+{ id:'npep-psychopharm-13', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
+  stem:'Which mood stabilizer is considered safest during pregnancy?',
+  options:['Lithium', 'Carbamazepine', 'Valproic acid', 'Lamotrigine'],
+  answer:3,
+  explanation:'Lamotrigine has the best safety profile among mood stabilizers during pregnancy, unlike lithium, valproate, or carbamazepine.',
+  objective:'Identify the mood stabilizer considered safest during pregnancy.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q13, p.1412 (answer p.1413)'
+},
+
+{ id:'npep-psychopharm-14', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
+  stem:'Conventional antipsychotics carry a risk of extrapyramidal side effects because they block which receptors?',
+  options:['Striatal dopaminergic D3 receptors', 'Striatal dopaminergic D2 receptors', 'Prefrontal dopaminergic D3 receptors', 'Mesolimbic dopaminergic D2 receptors'],
+  answer:1,
+  explanation:'Typical antipsychotics block D2 receptors in the striatum, which is part of the nigrostriatal pathway, leading to extrapyramidal side effects like parkinsonism and dystonia.',
+  objective:'Typical antipsychotics cause extrapyramidal side effects through blockade of striatal dopaminergic D2 receptors.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q14, p.1414 (answer p.1415)'
+},
+
+{ id:'npep-psychopharm-15', bank:'endpoint', module:'neuropsych', chapter:'ps-ptsd',
+  stem:'A 30-year-old woman comes to the clinic in tears, complaining of constant irritability when dealing with her two young children. She describes being easily startled, unable to concentrate, and having nightmares of a house fire in which her husband died last year. What is the SINGLE most appropriate management?',
+  options:['Reassurance', 'Relaxation therapy', 'Quetiapine', 'Fluoxetine'],
+  answer:3,
+  explanation:'This woman presents with symptoms of post-traumatic stress disorder\n(PTSD), including hyperarousal, intrusive memories, and nightmares. First-\nline pharmacological treatment for PTSD includes SSRIs such as fluoxetine.',
+  objective:'Recognize PTSD symptoms and its first-line pharmacological treatment.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q15, p.1416 (answer p.1417)'
+},
+
+{ id:'npep-psychopharm-16', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'A 64-year-old man recovering from a myocardial infarction appears withdrawn, avoids eye contact, and skips meals. What is the SINGLE best treatment for his condition?',
+  options:['Sertraline', 'Risperidone', 'Lithium', 'Diazepam'],
+  answer:0,
+  explanation:'This man shows signs of post-MI depression, which is common and can affect recovery. SSRIs like sertraline are safe and effective for treating depression in patients with cardiovascular disease.',
+  objective:'Recognize post-myocardial-infarction depression and its appropriate treatment.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q16, p.1418 (answer p.1419)'
+},
+
+{ id:'npep-psychopharm-18', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'A 28-year-old woman presents with anxiety on most days over the past six months. She feels distressed about money and work, is unable to sleep well, and finds it difficult to concentrate. Occasionally, she experiences panic episodes and feels as though she is about to die. On examination, her blood pressure is 120/80 mmHg and her pulse is 90 beats per minute. What is the SINGLE most appropriate medication to prescribe?',
+  options:['Selective serotonin reuptake inhibitors (SSRIs)', 'Propranolol', 'Monoamine oxidase inhibitors (MAOIs)', 'Mood stabilizers', 'Benzodiazepines'],
+  answer:0,
+  explanation:'This patient meets the criteria for GAD with possible panic episodes. SSRIs are first-line pharmacologic treatment for both generalized anxiety disorder and panic disorder.',
+  objective:'Identify SSRIs as the first-line pharmacologic treatment for generalized anxiety disorder with possible panic episodes.',
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q18, p.1422 (answer p.1423)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Schizophrenia: 27 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-schiz-1', bank:'endpoint', module:'neuropsych', chapter:'ps-schizmgmt',
+  stem:'What is the most appropriate management for a schizophrenic patient recently suffering from headache?',
+  options:['Increase the dose of antipsychotic drug received by the patient', 'Ignore the headache as assessing it can worsen psychosis', 'Hospitalization to receive Electroconvulsive Therapy (ECT)', 'Asking about the criteria of his headache'],
+  answer:3,
+  explanation:'The printed key selects asking about the criteria of the patient’s headache. A new or recently reported headache should be assessed by taking an appropriate headache history, including its onset, site, character, severity, duration, associated symptoms, precipitating factors, medication use, and warning features. This helps distinguish a primary headache from a possible secondary cause requiring further assessment (not taken from the course material). The presence of schizophrenia should not prevent ordinary evaluation of a new physical symptom (not taken from the course material).\n\nIncreasing the dose of the antipsychotic drug is wrong because headache alone does not establish that psychotic symptoms require dose escalation. Antipsychotic treatment decisions should be based on psychiatric assessment, response, adverse effects, and the individual clinical situation, rather than using headache as an indication to increase the dose (not taken from the course material).\n\nIgnoring the headache is wrong because it risks overlooking a medical disorder or a medication-related adverse effect. Assessing a physical complaint does not inherently worsen psychosis; communication should instead be calm, respectful, and clinically focused (not taken from the course material).\n\nHospitalization for Electroconvulsive Therapy (ECT) is wrong because a recently reported headache, without further information indicating a severe psychiatric indication, is not itself an indication for ECT. ECT is generally reserved for selected serious psychiatric presentations, such as severe depression, catatonia, or treatment-resistant illness, depending on the clinical context (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'A new headache in a patient with schizophrenia should first be assessed by asking about its criteria.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q1, p.1162 (answer p.1163)'
+},
+
+{ id:'npep-schiz-2', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'Positive symptoms of schizophrenia are caused by:',
+  options:['Increased dopamine in associative nigrostriatal pathway', 'Decreased dopamine in associative nigrostriatal pathway', 'Decreased dopamine in mesocortical pathway', 'Increased dopamine in ventral striatum'],
+  answer:0,
+  explanation:'The bank prints increased dopamine in the associative nigrostriatal pathway as the cause of positive symptoms. This pathway is the associative striatal dopaminergic circuit, and excessive dopamine activity within it is associated with the development of psychotic positive symptoms such as delusions and hallucinations (not taken from the course material). The dopamine hypothesis of schizophrenia is more precisely described as dysregulated dopamine signalling in particular circuits, rather than a uniform increase throughout the brain (not taken from the course material).\n\nOption b is wrong because it states decreased dopamine in the same associative nigrostriatal pathway. A decrease would be the opposite of the hyperdopaminergic state printed by the bank and would not account for the positive symptoms in this question (not taken from the course material).\n\nOption c is wrong because decreased dopamine in the mesocortical pathway is generally associated with negative and cognitive symptoms, including reduced motivation, diminished emotional expression, impaired executive function, and attentional difficulties (not taken from the course material). It is therefore not the mechanism selected here for positive symptoms.\n\nOption d is wrong for this bank item because the printed key specifically identifies the associative nigrostriatal pathway, not increased dopamine in the ventral striatum. Dopamine activity in ventral striatal and mesolimbic circuits is also commonly discussed in relation to psychosis, but the bank’s marked answer remains option a (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Positive symptoms of schizophrenia are linked to increased dopamine in the associative nigrostriatal pathway.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q2, p.1164 (answer p.1165)'
+},
+
+{ id:'npep-schiz-5', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'What does the term anhedonia in schizophrenia refer to ?',
+  options:['An inability to react appropriately to social cue', 'An inability to enjoy food', 'An inability to react to pleasurable events', 'An inability to express empathy'],
+  answer:2,
+  explanation:'Anhedonia is a negative symptom of schizophrenia, referring to diminished ability to experience pleasure in activities once found enjoyable.',
+  objective:'Identify anhedonia as diminished ability to experience pleasure.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q5, p.1170 (answer p.1171)'
+},
+
+{ id:'npep-schiz-6', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'What is the peak age of onset of Schizophrenia?',
+  options:['30-40 years old', '40-50 years old', '10-15 years old', '15-25 years old'],
+  answer:3,
+  explanation:'The keyed answer is 15-25 years old. Schizophrenia most commonly begins in late adolescence and early adulthood, with the usual peak period falling within this age range (not taken from the course material). The onset may be gradual, with social withdrawal, declining academic or occupational performance, suspiciousness, and other prodromal changes preceding clear psychotic symptoms (not taken from the course material).\n\nOption a, 30-40 years old, is not the usual peak age range. Although schizophrenia can first present in adulthood, onset after the mid-twenties is less typical than onset in late adolescence or early adult life (not taken from the course material). Option b, 40-50 years old, is also incorrect because first onset in this range is relatively uncommon and should prompt consideration of alternative psychiatric, substance-related, neurological, or medical causes of psychotic symptoms (not taken from the course material). Option c, 10-15 years old, is incorrect because childhood or early-adolescent onset schizophrenia can occur but is rare; it is not the peak age of onset (not taken from the course material). Age of onset can differ between individuals and is often earlier in males than in females, but the bank’s marked range remains 15-25 years old (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'The question tests the typical peak age range for onset of schizophrenia.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q6, p.1172 (answer p.1173)'
+},
+
+{ id:'npep-schiz-7', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'What are the symptoms found in active stage of Schizophrenia?',
+  options:['Delusions, speech disorders and hallucinations', 'Social withdrawal and cognitive impairment', 'impairment of planning and decision making', 'Blunt affect and poor judgement'],
+  answer:0,
+  explanation:'These are positive symptoms of schizophrenia, most prominent during the active (psychotic) phase. They reflect a loss of connection with reality.',
+  objective:'Identify the positive symptoms most prominent in the active stage of schizophrenia.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q7, p.1175 (answer p.1176)'
+},
+
+{ id:'npep-schiz-8', bank:'endpoint', module:'neuropsych', chapter:'ps-schizmgmt',
+  stem:'A 25-year-old woman, after sudden death of her mother , began complaining that she is hearing the voice that other people were out to hurt her. This was preceded by experiencing gradual social withdrawal apathy , and bizarre behavior in the previous 3 years. Her family history included major depression of her father. Which detail in her history may raise suspicion that her outcome may be Poor?',
+  options:['Her age was 25-year-old at diagnosis.', 'Prescence of family history of psychiatric disorder', 'beginning of hearing voices after death of her mother', 'she is female'],
+  answer:0,
+  explanation:'The patient had Schizophrenic symptoms 3 years ago . she diagnosed at 25-year-old and she didn\'t take any medications in this period, so it\'s poor prognosis. Why not B ? her father had major depression disorder not schizophrenia, so the prognosis of her father is better.',
+  objective:'Poor prognostic factors in schizophrenia.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q8, p.1177 (answer p.1178)'
+},
+
+{ id:'npep-schiz-9', bank:'endpoint', module:'neuropsych', chapter:'ps-emerg',
+  stem:'An old aged disheveled male patient came to the emergency unit. He was continuously saying "I have chest pain. from ALLAH now to be the Prophet". "I have chest pain so , I am receiving a message from ALLAH now to be the prophet "I have chest pain. So, I\'m receiving a message from Allah now to be Prophet". The best management of the following is',
+  options:['Perform electrocardiogram for him.', 'Giving him benzodiazepine injection as tranquillizer and advising him to go to a psychiatrist', 'Giving him 3 ml saline intravenously as suggestion and advising him to go to a psychiatrist', 'advising him to go to a psychiatrist without any investigation'],
+  answer:0,
+  explanation:'Regardless of the psychiatric symptoms, chest pain must be evaluated medically first to rule out cardiac causes. Delusions or psychosis do not exclude real physical illness.',
+  objective:'Chest pain requires medical evaluation even when the patient has psychotic symptoms.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q9, p.1180 (answer p.1181)'
+},
+
+{ id:'npep-schiz-10', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'What is the nature of hallucinations in schizophrenia?',
+  options:['Auditory, olfactory, and gust', 'Only Auditory', 'Only Olfactory', 'Only gustatory'],
+  answer:0,
+  explanation:'The keyed option is “Auditory, olfactory, and gust.” The bank therefore indicates that hallucinations in schizophrenia may involve auditory, olfactory, and gustatory modalities. Auditory hallucinations are the characteristic perceptual disturbance in schizophrenia, commonly experienced as voices. (not taken from the course material) The printed note on the answer page also states: “Most specific hallucinations in schizophrenia is auditory”.\n\n“Only Auditory” is wrong because the printed key includes auditory hallucinations together with olfactory and gustatory hallucinations, rather than restricting the condition to one sensory modality. “Only Olfactory” is wrong because olfactory hallucinations are not the only type named by the bank, and the bank’s printed note identifies auditory hallucinations as the most specific type. “Only gustatory” is wrong for the same reason: gustatory hallucinations are included in the keyed option but are not presented as the sole nature of hallucinations in schizophrenia. (not taken from the course material) Although auditory hallucinations are the most typical modality, hallucinations can occur in other sensory modalities in schizophrenia. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Hallucinations in schizophrenia may include auditory, olfactory, and gustatory modalities, with auditory being most specific.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q10, p.1182 (answer p.1183)'
+},
+
+{ id:'npep-schiz-11', bank:'endpoint', module:'neuropsych', chapter:'ps-schizmgmt',
+  stem:'A 20-year-old student showed a rapid deterioration of his grades over a 3-month period. He became increasingly isolated, believing that the government was after him because he has solved all religious problems through direct communication with Allah. He was started on olanzapine 10 mg by mouth. He recovered after 4months but he had another relapse 6 months later in the absence of elevated, irritable, or depressed mood. What should be the management plan of this student?',
+  options:['A combination of family focused intervention and pharmacotherapy', 'Psychoeducation alone', 'Medication alone', 'a combination of psycho education, medication and family therapy'],
+  answer:3,
+  explanation:'Optimal long-term schizophrenia management includes medication plus psychosocial interventions like family therapy and education to reduce relapse risk.',
+  objective:'Long-term schizophrenia management combines medication, psychoeducation, and family therapy.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q11, p.1184 (answer p.1185)'
+},
+
+{ id:'npep-schiz-12', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'A 19-year-old woman is brought to the emergency room by her roommate after the patient told her that “the voices are telling me to kill the teacher.” The roommate states the patient has always been isolative and “odd,” but for the past 2 weeks, she has been hoarding food, talking to herself, and appearing very paranoid. Which of the following tests are likely to be abnormal in this patient?',
+  options:['All of these tests may be abnormal', 'EEG (will show decreased alpha activity)', 'Test of eye movements (patient will be unable to follow a moving visual target accurately)', 'CT (lateral and third ventricle enlargement will be seen)'],
+  answer:0,
+  explanation:'The bank keys “All of these tests may be abnormal.” The presentation is consistent with schizophrenia-spectrum psychosis: longstanding social isolation and odd behaviour with recent hallucinations, paranoia, disorganized behaviour, and functional deterioration (not taken from the course material). The wording “may be abnormal” allows each listed finding to occur as an associated biological abnormality rather than requiring it in every affected person.\n\nOption b is not the best single answer because decreased alpha activity on EEG is not a diagnostic test for schizophrenia and is neither necessary nor specific, although EEG abnormalities have been reported in some patients (not taken from the course material). Option c is not the best single answer because impaired smooth-pursuit eye tracking can be associated with schizophrenia and may also occur in relatives, but it is not universally present or diagnostic (not taken from the course material). Option d is not the best single answer because ventricular enlargement, including lateral and third ventricular enlargement, has been described on neuroimaging in some people with schizophrenia, but it is variable and not diagnostic in an individual patient (not taken from the course material). Because all three listed investigations can show abnormalities in schizophrenia, option a is the inclusive answer printed by the bank.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Schizophrenia may be associated with EEG, smooth-pursuit eye-movement, and ventricular imaging abnormalities.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q12, p.1186 (answer p.1187)'
+},
+
+{ id:'npep-schiz-13', bank:'endpoint', module:'neuropsych', chapter:'ps-schizmgmt',
+  stem:'In the patient in the above vignette, which of the following features would be indicative of a good prognosis with this disease?',
+  options:['Young onset', 'Withdrawn behavior', 'Poor support system', 'Family history of mood disorders', 'Neurologic signs and symptoms present'],
+  answer:3,
+  explanation:'A family history of mood disorders is associated with a better prognosis in schizophrenia. It suggests a stronger affective component, which generally responds better to treatment compared to primary psychotic symptoms.',
+  objective:'Identify a prognostic feature associated with a better outcome in schizophrenia.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q13, p.1189 (answer p.1190)'
+},
+
+{ id:'npep-schiz-15', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'What is a common feature between depression and schizophrenia?',
+  options:['Hypoactivity', 'Insomnia', 'Hallucinations', 'Delusions'],
+  answer:3,
+  explanation:'Both depression (especially psychotic depression) and schizophrenia may present with delusions. However, hallucinations are more typical of schizophrenia.',
+  objective:'Depression and schizophrenia may both present with delusions.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q15, p.1193 (answer p.1194)'
+},
+
+{ id:'npep-schiz-16', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'In which of the following conditions are delusions commonly found?',
+  options:['Schizophrenia and bipolar disorder', 'Anxiety and OCD', 'Depression and dementia', 'Somatization and PTSD'],
+  answer:0,
+  explanation:'Delusions are a hallmark of schizophrenia and can also occur during manic or depressive episodes in bipolar disorder. They are not typical of anxiety or PTSD.',
+  objective:'Identify conditions in which delusions are commonly found.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q16, p.1195 (answer p.1196)'
+},
+
+{ id:'npep-schiz-17', bank:'endpoint', module:'neuropsych', chapter:'ps-schizmgmt',
+  stem:'A 35-year-old woman has been hospitalized for 10 years, often rocking, muttering, giggling without reason, and needing help with dressing and showering. What is the most likely diagnosis?',
+  options:['Schizophrenia', 'Delusional disorder', 'Bipolar disorder, manic phase', 'Schizoaffective disorder'],
+  answer:0,
+  explanation:'Chronic institutionalization with disorganized behavior and poor self-care suggests a diagnosis of schizophrenia.',
+  objective:'Recognize chronic disorganized behavior and poor self-care as schizophrenia.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q17, p.1197 (answer p.1198)'
+},
+
+{ id:'npep-schiz-20', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'Negative symptoms in Schizophrenia is associated with:',
+  options:['Increased dopamine in mesocortical pathway', 'Decreased dopamine in mesocortical pathway', 'Decreased dopamine in nigrostriatal pathway', 'Increased dopamine in nigrostriatal pathway'],
+  answer:1,
+  explanation:'Negative and cognitive symptoms of schizophrenia are associated with decreased dopamine activity in the mesocortical pathway, while positive symptoms are linked to increased dopamine in the mesolimbic pathway.',
+  objective:'Negative symptoms of schizophrenia are associated with decreased dopamine activity in the mesocortical pathway.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q20, p.1203 (answer p.1204)'
+},
+
+{ id:'npep-schiz-21', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'A patient with hallucinations, delusions, and catatonia is said to have which type of symptoms?',
+  options:['Negative symptoms of schizophrenia', 'Positive symptoms of schizophrenia', 'Cognitive symptoms of schizophrenia', 'Affective symptoms of schizophrenia'],
+  answer:1,
+  explanation:'Positive symptoms include hallucinations, delusions, and disorganized behavior (e.g., catatonia), which represent an excess or distortion of normal function.',
+  objective:'Identify hallucinations, delusions, and catatonia as positive symptoms of schizophrenia.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q21, p.1205 (answer p.1206)'
+},
+
+{ id:'npep-schiz-23', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'A 28-year-old woman was brough to see a psychiatrist by her mother. The patient insisted that nothing is wrong with her ,though the mother calims that she has been slowly but progressively isolating herself from everyone . She now rarely leaves the house and can be heard always talking although no body is with her there. On examination, the patient was noted to have unrealistic belief that her mother is going to kick her out of the house to sell it . What is the life- time prevalence for this disorder?',
+  options:['5%', '10%', '3%', '1%'],
+  answer:3,
+  explanation:'The presentation is consistent with schizophrenia: progressive social isolation, apparent auditory hallucinations suggested by talking when alone, poor insight, and a fixed persecutory belief about her mother. The printed key selects 1%. The lifetime prevalence of schizophrenia is generally taught as approximately 1% of the population (not taken from the course material).\n\nOption 5% is wrong because it is substantially higher than the usual lifetime prevalence estimate for schizophrenia (not taken from the course material). It may be confused with the broader frequency of psychotic symptoms or with other mental-health conditions, but it is not the standard estimate for schizophrenia.\n\nOption 10% is wrong because this would imply that schizophrenia affects about one in ten people over a lifetime, far above the generally taught epidemiology (not taken from the course material). This percentage is more compatible with the frequency of some common psychiatric disorders, not schizophrenia.\n\nOption 3% is wrong because it also exceeds the conventional approximately 1% lifetime estimate (not taken from the course material). Some studies produce varying figures depending on diagnostic definitions and population methods, but the bank’s intended answer is 1% (not taken from the course material).\n\nOption 1% is right because it matches the printed key and the conventional teaching for lifetime prevalence of schizophrenia (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify the lifetime prevalence of schizophrenia.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q23, p.1209 (answer p.1210)'
+},
+
+{ id:'npep-schiz-24', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'A 55-year-old man has a firm belief that newspaper headlines are written especially for him. He believes the authors are sending secret messages only he can understand. What is the SINGLE most likely type of delusion?',
+  options:['Persecutory delusions', 'Grandiose delusions', 'Delusion of control', 'Delusion of reference'],
+  answer:3,
+  explanation:'Delusions of reference involve the belief that neutral stimuli, like newspaper headlines, are specifically directed at the person. This is common in schizophrenia and other psychotic disorders.',
+  objective:'Identify a delusion of reference from the belief that neutral newspaper headlines contain personal messages.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q24, p.1212 (answer p.1213)'
+},
+
+{ id:'npep-schiz-27', bank:'endpoint', module:'neuropsych', chapter:'ps-schizmgmt',
+  stem:'A male patient was suffering from schizophrenia for 5 years. His delusions of persecution and auditory hallucinations are usually controlled with his pharmacological treatment. Yesterday at night, he presented to the ER with intense fear and was pushing unseen objects and screaming loudly, "WHAT ARE ALL THESE GHOSTS?! GO AWAY FROM ME!" What is the most appropriate next step to be done for this patient?',
+  options:['Hospitalization to make him away from the stressors that caused recent condition', 'Hospitalization and laboratory investigations to search for the cause of the recent condition', 'Assessing compliance on his treatment and manage accordingly', 'Trying to convince him in a calm way that ghosts are absent'],
+  answer:1,
+  explanation:'The printed key is option b. This patient has a known chronic psychotic disorder whose usual symptoms are controlled, but he has developed an abrupt, dramatic change with frightening visual experiences and severe agitation. An acute change in mental state in a person with schizophrenia should prompt hospital admission for safety and assessment of possible medical, neurologic, toxic, or substance-related causes. Acute visual hallucinations are particularly suggestive of delirium or another organic process rather than simply a routine relapse of schizophrenia (not taken from the course material). Laboratory investigations are part of searching for a reversible precipitant while the patient is managed in a protected setting.\n\nOption a is inadequate because removing stressors alone does not investigate the acute change or ensure that a medical cause is not missed. Option c may be relevant later, since non-adherence can cause recurrence of psychotic symptoms, but it is not enough as the immediate step when the presentation is sudden and atypical. Option d is inappropriate because directly arguing against a frightened patient\'s perception is unlikely to calm him and does not address safety or possible underlying illness. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'An acute atypical psychotic presentation in a patient with schizophrenia requires hospitalization and investigation for an organic cause.',
+  source:'Neuro endpoint.pdf, Schizophrenia, Q27, p.1218 (answer p.1219)'
 }
 
 ];
