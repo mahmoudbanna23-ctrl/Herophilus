@@ -6,12 +6,14 @@
 // Writes <outDir>/n<N>.json per question. Resume-safe. Stops after two failures in a row (no retry loop).
 // Run disjoint index ranges in parallel. ~1-3 min a question.
 import fs from 'node:fs';
-import { spawnSync } from 'node:child_process';
+import { spawnSync, execFileSync } from 'node:child_process';
 
 const [OCR, PAIRS, OUT, CHAPTER, A, B] = process.argv.slice(2);
 if (!OCR || !PAIRS || !OUT || !CHAPTER || A === undefined || B === undefined) throw new Error('usage: node npep-codex-rows.mjs <ocrDir> <pairs.json> <outDir> <chapterId> <fromIdx> <toIdx>');
 if (/\s/.test(OCR + PAIRS + OUT)) throw new Error('paths must be relative and space-free');
-const MODEL = process.env.CODEX_MODEL || 'gpt-5.6-terra';
+const GW = process.env.NPEP_BACKEND === 'gw';   // gateway: one single-shot work-vision call per question instead of `codex exec` (rung 2, never auto/*)
+const MODEL = GW ? 'work-vision' : (process.env.CODEX_MODEL || 'gpt-5.6-terra');
+const gwKey = GW ? (process.env.OMNIROUTE_API_KEY || execFileSync('reg', ['query', 'HKCU\\Environment', '/v', 'OMNIROUTE_API_KEY'], { encoding: 'utf8' }).match(/REG_(?:EXPAND_)?SZ\s+(.+)/)[1].trim()) : '';
 const pad = p => String(p).padStart(4, '0');
 const CHAPTER_LIST = JSON.parse(fs.readFileSync(new URL('./neuro-chapters.json', import.meta.url), 'utf8')).map(c => `${c.id} = ${c.name}`).join('\n');
 const pairs = JSON.parse(fs.readFileSync(PAIRS, 'utf8')).slice(+A, +B + 1);
@@ -52,18 +54,34 @@ for (const r of pairs) {
   if (fs.existsSync(out) || fs.existsSync(out.replace(/\.json$/, '.rejected.json'))) { ok++; continue; }
   const lastMsg = `${OUT}/_msg-${r.pk || 'n' + r.n}.txt`;
   try { fs.unlinkSync(lastMsg); } catch (e) {}
-  const call = () => spawnSync('codex', ['exec', '-m', MODEL, '-s', 'read-only', '--skip-git-repo-check',
+  const gwCall = async () => {
+    let status = 0;
+    const imgs = [r.q, ...(r.a ? [r.a] : [])].map(p => ({ type: 'image_url', image_url: { url: 'data:image/png;base64,' + fs.readFileSync(`${OCR}/pages/p-${pad(p)}.png`).toString('base64') } }));
+    for (let t = 0; t < 5; t++) {
+      if (t) await new Promise(ok => setTimeout(ok, 8000 * t));   // 503 "capacity busy" is transient: back off 8/16/24/32 s
+      try {
+        const x = await fetch('http://localhost:20128/v1/chat/completions', { method: 'POST', headers: { 'content-type': 'application/json', Authorization: 'Bearer ' + gwKey, 'x-omniroute-no-cache': 'true' },
+          body: JSON.stringify({ model: 'work-vision', max_tokens: 6000, messages: [{ role: 'user', content: [{ type: 'text', text: prompt(r) }, ...imgs] }] }), signal: AbortSignal.timeout(300000) });
+        status = x.status; const j = await x.json().catch(() => ({}));
+        const txt = (j.choices?.[0]?.message?.content || '').trim();
+        if (status === 429) break;
+        if (status === 200 && txt) { fs.writeFileSync(lastMsg, txt); return { status: 0, stderr: '' }; }
+      } catch (e) { status = 0; }
+    }
+    return { status, stderr: 'gateway ' + status };
+  };
+  const call = () => GW ? gwCall() : spawnSync('codex', ['exec', '-m', MODEL, '-s', 'read-only', '--skip-git-repo-check',
     '-i', `${OCR}/pages/p-${pad(r.q)}.png`, ...(r.a ? ['-i', `${OCR}/pages/p-${pad(r.a)}.png`] : []), '-o', lastMsg, '-'],
     { input: prompt(r), shell: true, encoding: 'utf8', timeout: 900000 });
   const parse = () => {
     try { const t = fs.readFileSync(lastMsg, 'utf8'); return JSON.parse(t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1)); } catch (e) { return null; }
   };
-  let res = call(), d = parse(), why = '';
-  if (!d) { res = call(); d = parse(); }   // one retry: Codex now and then answers with only its greeting line
+  let res = await call(), d = parse(), why = '';
+  if (!d && res.status !== 429) { res = await call(); d = parse(); }   // one retry: Codex now and then answers with only its greeting line
   if (d && d.notQuestion) { fs.writeFileSync(out.replace(/\.json$/, '.rejected.json'), JSON.stringify({ pages: [r.q, r.a], note: 'Codex: not a question' })); ok++; fails = 0; console.log(r.pk, 'REJECTED soft pair (not a question)'); continue; }
   if (d && !(Array.isArray(d.options) && d.options.length >= 2 && d.stem && (d.key === null || (Number.isInteger(d.key) && d.key >= 0 && d.key < d.options.length)) && (d.box || (d.explanation && d.explanation.length > 300)))) { why = 'schema/length check'; d = null; }
   if (d) {
-    d.pairN = r.n; d.n = Number.isInteger(d.printedNumber) ? d.printedNumber : r.n; d.qPage = r.q; d.aPage = r.a; d.model = 'codex ' + MODEL;
+    d.pairN = r.n; d.n = Number.isInteger(d.printedNumber) ? d.printedNumber : r.n; d.qPage = r.q; d.aPage = r.a; d.model = GW ? 'omniroute work-vision' : 'codex ' + MODEL;
     fs.writeFileSync(out, JSON.stringify(d, null, 1), 'utf8');
     ok++; fails = 0; console.log(r.pk || 'n' + r.n, 'OK key', d.key, d.box ? 'box' : 'written', d.figure ? 'FIG' : '');
   } else {

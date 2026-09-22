@@ -274,3 +274,24 @@ map to ids `npep-<token>-<printed n>`). Work folders: `_ep-work/<token>/` (pairs
 keyread.json, checks.md, summary.json); drafts `content/neuro/qb-pages/np-ep-<token>.draft.js`.
 Every draft still needs: independent checker on flagged rows, sweep, fold decisions, header, splice, commit.
 Model Final Exams are IN SCOPE (owner 2026-09-22), superseding "deferred" above.
+
+## 12. Chapters 5-6 Multiple sclerosis + Hemiplegia and paraplegia — CLOSED 2026-09-22
+Pipeline of section 11, first chapters through it. `Q_NEURO` 598 -> 626 (endpoint 105 -> 133).
+- **Multiple sclerosis** printed pp.283-353: 24 entries `npep-ms-1..24`, Questions p.305-353. Pages 283-304 lecture slides
+  (p.304 has no OCR text, not visually confirmed as a slide, owed if anyone doubts it); p.335 is a lecture slide, not a
+  question. No fold. Cross-bank, left as two entries and noted in `source`: Q24 = `npqb-nr-239`, Q3 = `npqb-nr-236`.
+  Q13 ~ Q14 (reworded stem, same options reordered, same key) left unfolded, cross-referenced in `source`.
+- **Hemiplegia and paraplegia** printed pp.354-372: 4 entries `npep-hemi-1..4`, Questions p.365-371. Sweep zero
+  candidates (4 x 598 compared). Codex filed Q3 (cervical hemicord, Brown-Sequard) in `nr-intro`; moved to `nr-hemi`.
+- Checked: Codex row vs Gemini full transcription (key, stem, options, box) agrees on all 28; only the noisy
+  OCR-overlap flag remained (Codex text fully inside OCR, OCR has extra page text). No refuter run: nothing left to
+  refute after the second-house read. Splice `splice-safe.js --go`, validate.js only the 23 known failures,
+  boot-check 0 errors (5902/117, neuro locked).
+- **BUG FOUND AND FIXED (2026-09-22):** `npep-build.mjs` looked the Gemini key read up by the PRINTED number, but
+  `keyread.json` is keyed by PAIR key (row file name). Where printed != pair number (mood, movement, fe2) it compared
+  each row against its neighbour and raised false KEY DISAGREE / stem-overlap flags. Now keyed by row file name.
+  Any `checks.md` built before this fix is stale; rebuild with `npep-finish.mjs`.
+- **State of the run:** 288 rows staged in `_ep-work/` for ataxia, movement, cns (10/19), sympt, anx, mood, fe1, fe2.
+  Codex hit its usage limit ~02:29 Cairo, resets 04:03. Gateway `work-vision` (Gemini flash-lite free) is quota-
+  exhausted after the key-read passes, so 83 rows have no independent key read yet; rerun `npep-finish.mjs` when
+  it recovers. `NPEP_BACKEND=gw` in `npep-codex-rows.mjs` stages rows over the gateway instead of Codex (untested past a 429).

@@ -10,7 +10,7 @@ const MARKER = 'Written for this bank — the endpoint file prints no explanatio
 const fix = s => String(s ?? '').replace(/â€”/g, '—').replace(/Â·/g, '·').replace(/\r/g, '');
 const q = s => "'" + fix(s).replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\n/g, '\\n') + "'";
 const keys = fs.existsSync(KEYS) ? JSON.parse(fs.readFileSync(KEYS, 'utf8')) : {};
-const rows = fs.readdirSync(ROWS).filter(f => /^n\d+[a-e]?\.json$/.test(f)).map(f => JSON.parse(fs.readFileSync(`${ROWS}/${f}`, 'utf8'))).sort((a, b) => a.qPage - b.qPage);
+const rows = fs.readdirSync(ROWS).filter(f => /^n\d+[a-e]?\.json$/.test(f)).map(f => ({ ...JSON.parse(fs.readFileSync(`${ROWS}/${f}`, 'utf8')), _pk: f.replace(/.json$/, '') })).sort((a, b) => a.qPage - b.qPage);
 const norm = s => fix(s).toLowerCase().replace(/[^a-z0-9.%<>=\/-]+/g, ' ').trim();
 const toks = s => new Set(norm(s).split(' ').filter(t => t.length > 1));
 const nums = s => new Set((fix(s).match(/\d+(?:[.,]\d+)?/g) || []));
@@ -19,7 +19,7 @@ const ocrText = p => { try { return fs.readFileSync(`${OCR}/p${pad(p)}.txt`, 'ut
 const flags = [], entries = [], seen = new Set();
 for (const r of rows) {
   const f = [];
-  const kr = keys[r.pk || 'n' + r.n];
+  const kr = keys[r._pk];   // keyread is keyed by PAIR key (row file name), not by printed number
   if (r.key === null || r.key === undefined) f.push('Codex key NULL (no visible mark)');
   else if (!kr) f.push('no independent key read');
   else if (kr.marked === null) f.push('Gemini key read NULL, Codex key ' + 'abcde'[r.key]);
