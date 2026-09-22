@@ -942,6 +942,7 @@ var Q_NEURO = [
   {
     "id": "npqb-nr-62",
     "bank": "gradegain",
+    "alsoIn": ["endpoint"],
     "module": "neuropsych",
     "chapter": "nr-cranial",
     "stem": "In upper motor neuron facial weakness, the hemiplegia will be on the.........side of facial weakness:",
@@ -954,11 +955,12 @@ var Q_NEURO = [
     "answer": 0,
     "explanation": "**Same side. In an upper motor neuron facial palsy the face and the limbs are weak TOGETHER, because one lesion above the pons takes out both pathways at once.**\n\n`L8) Cranial nerves` states it outright under **UMNF**: “Lesion in corticobulbar pathway till above level of pons… **If associated with hemiparesis, the hemiparesis will be on the same side of facial weakness.**”\n\n**Why the anatomy forces this.** Both the corticospinal fibres (to the limbs) and the corticobulbar fibres (to the facial nucleus) run side by side down through the internal capsule and the cerebral peduncle. Both cross **below** the level of the facial nucleus — the corticospinal tract at the medullary pyramids. So a lesion in one cerebral hemisphere or internal capsule produces weakness of the opposite face **and** the opposite limbs. Face and limbs are on the **same** side as each other, both opposite the lesion.\n\n**The contrast that makes this examinable — the same deck's LMNF slide:**\n\n> “Lesion from nucleus in the pons till the facial muscles… **If associated with hemiparesis, the hemiparesis will be on the opposite side to the facial weakness (crossed hemiplegia).**”\n\n| | **UMN facial palsy** | **LMN facial palsy** |\n|---|---|---|\n| Lesion | corticobulbar pathway, **above the pons** | facial nucleus in the pons, or the nerve itself |\n| Forehead | **spared** | **paralysed** |\n| Mouth deviates | toward the **healthy** side | toward the healthy side |\n| Emotional expression | **improves** the deviation | **increases** the deviation |\n| Hemiparesis, if present | **SAME side as the facial weakness** | **OPPOSITE side — crossed hemiplegia** |\n\n**Why the forehead is spared in UMN lesions.** The part of the facial nucleus supplying the upper face receives corticobulbar input from **both** hemispheres, so one hemisphere's fibres can be lost and the other still drives it. The lower-face part receives input from the opposite hemisphere only, so it has no backup. `L8` puts it plainly: “Feel muscle strength by pushing down on each side [**UMNL preserved because of bilateral innervation**].”\n\n**Why the other options are wrong:** **either side** and **it depends on the location** both deny the rule — within the UMN category the relationship is fixed. **Opposite side** is the answer for an **LMN** (pontine) lesion; the deck calls that **crossed hemiplegia**, and it localises the lesion to the pons because that is the only place where the facial nucleus and the still-uncrossed corticospinal tract sit together.\n\n**Bottom line:** face and limbs on the same side means the lesion is above the pons; face and limbs on opposite sides means it is in the pons.\n\n*Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.*",
     "objective": "In UMN facial palsy the hemiparesis is on the same side as the facial weakness; crossed sides indicate a pontine LMN lesion.",
-    "source": "neuropsychiatry & neurosurgery qb.pdf p.17 (answer p.20)"
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.17 (answer p.20). Also printed by Neuro endpoint.pdf, Cranial nerve disorders, Q9, p.666 (answer p.667) - same fact, one-line explanation with no anatomical grounding. Folded on the sweep, not held twice: this entry's fuller, lecture-grounded explanation is kept."
   },
   {
     "id": "npqb-nr-63",
     "bank": "gradegain",
+    "alsoIn": ["endpoint"],
     "module": "neuropsych",
     "chapter": "nr-cranial",
     "stem": "The most suitable drug for trigeminal neuralgia is:",
@@ -971,11 +973,12 @@ var Q_NEURO = [
     "answer": 1,
     "explanation": "**Carbamazepine. Trigeminal neuralgia is treated as a paroxysmal nerve-firing disorder, so the first-line drugs are antiepileptics — and carbamazepine heads the list.**\n\n`L8) Cranial nerves` sets out the treatment order:\n\n> “**Pharmacologic therapy is the initial treatment of classic TN. Antiepileptic drugs starting by small dose and gradually increase till the pain is controlled.**\n> ○ **Carbamazepine**\n> ○ Oxcarbazepine\n> ○ Gabapentin\n> ○ Pregabalin”\n\nCarbamazepine is listed **first**, and it is the reference drug against which the others are judged — a good response to it is so characteristic that it is often treated as supporting the diagnosis.\n\n**Two principles in that quotation worth carrying into the exam.** First, **medical therapy comes before surgery** — the same deck reserves surgery “for patients who are refractory to medical therapy.” Second, **start low and titrate up**: the dose is raised gradually until the pain is controlled, which limits the dizziness, unsteadiness and drowsiness that otherwise stop patients taking it.\n\n**The second-line options `L8` gives** are antidepressants: “Tricyclic antidepressants: **amitriptyline** – Selective serotonin-noradrenaline reuptake inhibitors; **duloxetine**.” And where the neuralgia is **secondary**, the deck insists on “treatment of the cause in cases of secondary TN; e.g., multiple sclerosis, tumors” — so a drug alone is never the whole answer if a structural lesion is behind it.\n\n**Why the other options are wrong**\n\n| Drug | What it is actually for | Why not here |\n|---|---|---|\n| **Propranolol** | a beta-blocker, used in **migraine prophylaxis** and essential tremor | no action on paroxysmal nerve discharge |\n| **Chlorpromazine** | a typical **antipsychotic** | no analgesic role in neuralgia, and it carries extrapyramidal risk |\n| **Phenobarbital** | an old **antiepileptic** and sedative | although an antiepileptic, it is not used for TN — heavily sedating, and ineffective for this pain *(the specific ineffectiveness is not stated on the slide — general medical knowledge, not taken from the course material)* |\n\n**⚠️ Note that being an antiepileptic is not enough.** Phenobarbital is on that class list and is still wrong, which is exactly the discrimination this question tests: it is **carbamazepine and its relatives** (oxcarbazepine) plus the gabapentinoids that work, not the barbiturates.\n\n**Bottom line:** carbamazepine first, titrated slowly; amitriptyline or duloxetine second; surgery only when drugs fail.\n\n*Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.*",
     "objective": "Carbamazepine is the first-line drug for trigeminal neuralgia, started low and titrated up; surgery is reserved for medical failure.",
-    "source": "neuropsychiatry & neurosurgery qb.pdf p.17 (answer p.20)"
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.17 (answer p.20). Also printed by Neuro endpoint.pdf, Cranial nerve disorders, Q10, p.668 (answer p.669) - same fact, one-line mechanism note, no distractor reasoning. Folded on the sweep, not held twice: this entry's fuller explanation is kept."
   },
   {
     "id": "npqb-nr-64",
     "bank": "gradegain",
+    "alsoIn": ["endpoint"],
     "module": "neuropsych",
     "chapter": "nr-cranial",
     "stem": "How to differentiate Upper Motor Neuron (UMN) facial lesion from Lower Motor Neuron (LMN) facial lesion?",
@@ -988,7 +991,7 @@ var Q_NEURO = [
     "answer": 1,
     "explanation": "**The forehead is the answer. An UMN facial lesion weakens the LOWER face only and spares the forehead; an LMN lesion takes out the whole half-face.**\n\n`L8) Cranial nerves` gives both halves of the rule side by side. **UMNF:** “Lesion in corticobulbar pathway till above level of pons. **Spared upper face, only lower face affected.**” **LMNF:** “Lesion from nucleus in the pons till the facial muscles. **Upper and lower face are affected.**”\n\n**The single anatomical fact behind it.** The facial nucleus has two halves. The half driving the **upper** face (frontalis, orbicularis oculi) receives corticobulbar fibres from **both** cerebral hemispheres; the half driving the **lower** face receives them from the **opposite hemisphere only**. Knock out one hemisphere and the forehead still has its second supply — so it keeps working. Knock out the nucleus or the nerve itself and everything downstream fails, forehead included.\n\n**How to test it at the bedside**, from the same deck: “Facial expression muscles: **pt looks up and wrinkles forehead. Examine wrinkling loss.** Feel muscle strength by pushing down on each side [**UMNL preserved because of bilateral innervation**]. Pt shuts eyes tightly: compare each side. Pt grins: compare nasolabial grooves.” **Asking the patient to raise their eyebrows is the whole examination in one manoeuvre.**\n\n**A second discriminator the deck supplies, and it is easy to forget:** emotional movement. UMNF — “**Emotional expression lead to improvement of the deviation of the mouth**”; LMNF — “**Emotion increase mouth deviation.**” A spontaneous smile is driven by a separate extrapyramidal pathway that bypasses the damaged corticobulbar fibres, so in an UMN palsy the face looks *better* when the patient laughs genuinely than when they are asked to smile to order.\n\n**Why the other options are wrong**\n\n- **Affects the entire face, including the forehead** — that is the **LMN** pattern, the exact opposite.\n- **Causes speech difficulties** — dysarthria can accompany either, and accompanies many things that are neither; it does not separate them.\n- **Affects the upper face bilaterally** — bilateral upper-face weakness is not the picture of a unilateral UMN lesion at all; the upper face is *spared*, not bilaterally weak.\n\n**And why getting this right matters clinically.** An LMN palsy leaves the eye unable to close, which is why `L8` calls eye care “**the primary concern in Bell palsy**” and lists **exposure corneal ulcer** as the most dangerous early complication. An UMN palsy does not threaten the cornea — but it does mean a **stroke**, and the limb examination follows immediately.\n\n**Bottom line:** ask the patient to wrinkle their forehead. If it wrinkles, the lesion is upper motor neuron and you are looking for a stroke; if it does not, it is lower motor neuron and the eye needs protecting.\n\n*Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.*",
     "objective": "An UMN facial lesion spares the forehead and weakens only the lower face; an LMN lesion affects upper and lower face alike.",
-    "source": "neuropsychiatry & neurosurgery qb.pdf p.17 (answer p.20)"
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.17 (answer p.20). Also printed by Neuro endpoint.pdf, Cranial nerve disorders, Q8, p.664 (answer p.665) - same fact, one-line explanation with no mechanism. Folded on the sweep, not held twice: this entry's fuller, lecture-grounded explanation is kept."
   },
   {
     "id": "npqb-nr-65",
@@ -1044,6 +1047,7 @@ var Q_NEURO = [
   {
     "id": "npqb-nr-68",
     "bank": "gradegain",
+    "alsoIn": ["endpoint"],
     "module": "neuropsych",
     "chapter": "nr-cranial",
     "stem": "The second most common cause of lower motor neuron facial palsy after Bell's palsy is:",
@@ -1056,7 +1060,7 @@ var Q_NEURO = [
     "answer": 1,
     "explanation": "**Diabetes mellitus. After idiopathic Bell's palsy, diabetes is the commonest cause of a lower motor neuron facial palsy — and unlike the other three it is present in a large slice of the population, needs no trauma and no tumour.**\n\n`L8) Cranial nerves` lists it in the differential diagnosis of Bell's palsy:\n\n> “**Differential diagnosis.** Other causes of the LMN facial palsy and: ❖ Infections of the middle ear, or mastoid; cholesteatoma. ❖ **Diabetes mellitus**”\n\n**⚠️ A note on that list.** The deck prints middle-ear infection *before* diabetes, but it presents them as a differential list, **not as a ranking by frequency** — it never states which is second commonest. The bank's key of diabetes is the standard teaching and is what to answer; the lecture simply does not rank them. *(The ranking itself is general medical knowledge, not taken from the course material.)*\n\n**Why diabetes does this.** Diabetic microvascular disease damages the **vasa nervorum**, the small vessels supplying the nerve trunk, producing an ischaemic mononeuropathy. The same mechanism explains why diabetes is also a leading cause of a **third** and a **sixth** nerve palsy — and question 75 of this same topic keys “hypertension and diabetes” as the commonest cause of an isolated abducent palsy for exactly this reason. **One mechanism, several cranial nerves.** *(The vasa nervorum mechanism is not spelled out on the slide — general medical knowledge, not taken from the course material.)*\n\n**Where `L8` locates each of the wrong answers, which is the real content of this question.** The deck maps LMN facial palsy by the **site** of the lesion along the nerve, and the site determines the extra signs:\n\n| Site | Example causes | Additional signs, per `L8` |\n|---|---|---|\n| **Pontine** | vascular | **crossed hemiplegia**; often 6th nerve too |\n| **Cerebello-pontine angle** | tumour | “7th + 8th → **deafness (perceptive)**” |\n| **In the facial canal** | cholesteatoma, acoustic neuroma, otitis media | loss of lacrimation (**dry eye**), lost taste over the **anterior 2/3** of the tongue, **hyperacusis** |\n| **At the stylomastoid foramen** | **Bell's palsy**, mastoiditis | “**Facial LMN only**”; retro-auricular pain |\n| **Outside the stylomastoid** | **parotid tumour or surgery, trauma** | “**Partial** LMN affection of the face; eyes only, mouth only” |\n\n**⚠️ That table is the examinable point.** A **complete** LMN palsy with no other signs is Bell's or diabetes. A palsy **with hearing loss** is a cerebello-pontine angle lesion. A palsy **with hyperacusis, dry eye or taste loss** is inside the facial canal. A **partial** palsy — only the eye or only the mouth — is outside the stylomastoid foramen, i.e. in the parotid.\n\n**Why the other options are wrong:** **stab wound in the parotid** is a rare and obvious traumatic cause producing a *partial* palsy; **otitis media** is a real cause but far less common than diabetes and comes with ear signs and canal-lesion features; **cerebello-pontine angle tumour** is uncommon and virtually never isolated — it takes the eighth nerve with it and causes sensorineural deafness.\n\n**Bottom line:** Bell's palsy first, diabetes second — and if there is deafness, hyperacusis, dry eye, taste loss or only part of the face is weak, it is neither.\n\n*Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.*",
     "objective": "Diabetes mellitus is the second commonest cause of LMN facial palsy after Bell's; extra signs localise the lesion along the nerve.",
-    "source": "neuropsychiatry & neurosurgery qb.pdf p.17 (answer p.20)"
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.17 (answer p.20). Also printed by Neuro endpoint.pdf, Cranial nerve disorders, Q11, p.670 (answer p.671) - same fact, one-line explanation, no localising table. Folded on the sweep, not held twice: this entry's fuller explanation is kept."
   },
   {
     "id": "npqb-nr-69",
@@ -5580,13 +5584,13 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-274', bank:'gradegain', module:'neuropsych', chapter:'nr-nerve',
+  id:'npqb-nr-274', bank:'gradegain', alsoIn:['endpoint'], module:'neuropsych', chapter:'nr-nerve',
   stem:'Bilateral lower motor neuron facial weakness can occur in:',
   options:['Duchene muscle dystrophy', 'Becker muscle dystrophy', 'Guillain Barre Syndrome', 'Diabetic polyneuropathy'],
   answer:2,
   explanation:'Guillain Barre Syndrome is the keyed answer. The peripheral neuropathy lecture states that in GBS the cranial nerves may be affected, that more than 50% of patients have facial diplegia, dysphagia, and dysarthria, and that occasionally facial, ocular, or oropharyngeal muscles are affected first; it also notes that cranial nerves are particularly affected in GBS and diphtheritic neuropathy. The peripheral lecture\'s picture of acute bilateral cranial nerve weakness with symmetric limb arreflexia fits bilateral lower motor neuron facial weakness, and GBS is the option where the course explicitly teaches facial diplegia. The claim that bilateral facial weakness in GBS is a lower motor neuron, not an upper motor neuron, pattern is not taken from the course material but matches the arreflexic peripheral disease the lecture describes.\n\nDuchene and Becker muscle dystrophies, with their printed spellings, are wrong because the muscle disease lecture says the muscles of the face are not affected in Duchenne dystrophy, which is a primary myopathy sparing the face; Becker is described as the milder dystrophinopathy without facial weakness, and neither lecture gives Becker facial diplegia. Diabetic polyneuropathy is wrong because the lecture describes diabetic neuropathy as a distal symmetric sensory and sensorimotor process with painful burning sensations in the feet; facial weakness is not part of the taught diabetic picture, and its absence there is the relevant contrast. The lecture\'s explicit facial diplegia in GBS, with cranial nerve vulnerability in the disease, makes Guillain Barre Syndrome the cause of bilateral lower motor neuron facial weakness. Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
   objective:'Recognize GBS as a cause of bilateral lower motor neuron facial weakness.',
-  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 12 "Neuromuscular Disorders," Q274, book p.52'
+  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 12 "Neuromuscular Disorders," Q274, book p.52. **Also printed by Neuro endpoint.pdf, Cranial nerve disorders, Q5, p.658 (answer p.659)** — same fact (GBS causes bilateral LMN facial weakness), thinner explanation, no distractor reasoning. Folded on the sweep, not held twice: this entry\'s fuller lecture-grounded explanation is kept.'
 },
 
 {
@@ -6199,7 +6203,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Left abducent palsy is correct. The abducent nerve (CN VI) supplies the lateral rectus, the only muscle that abducts (turns outward) the eye. When it is paralysed, the unopposed medial rectus (CN III) pulls the eye inward at rest, producing an inward-deviated (esotropic) eye and diplopia that worsens on attempted gaze toward the affected side. Because the inward deviation is in the LEFT eye, the lesion is on the left — a right abducent palsy would deviate the right eye, not the left, and an oculomotor or facial palsy does not produce this pattern of an intact medial rectus overpowering a weak lateral rectus. Written for this bank — the endpoint file prints no explanation here.',
   objective:'Localize inward eye deviation (esotropia) with diplopia to an ipsilateral abducent (CN VI) nerve palsy.',
-  source:'Neuro endpoint.pdf, Localization, Q1, p.16 (answer p.17)'
+  source:'Neuro endpoint.pdf, Localization, Q1, p.16 (answer p.17). Also printed by the same book under Cranial nerve disorders, Q1, p.650 (answer p.651) — identical stem and options. Same bank both times, so no second entry and no alsoIn.'
 },
 
 { id:'npep-loc-2', bank:'endpoint', module:'neuropsych', chapter:'nr-hemi',
@@ -7437,6 +7441,152 @@ var Q_NEURO = [
   explanation:'Brown-Séquard syndrome results from hemisection of the spinal cord. It produces ipsilateral motor weakness and proprioceptive loss, with contralateral loss of pain and temperature due to crossed spinothalamic fibers.',
   objective:'Brown-Séquard syndrome causes ipsilateral motor weakness with contralateral loss of pain and temperature sensation.',
   source:'Neuro endpoint.pdf, Hemiplegia and paraplegia, Q4, p.371 (answer p.372)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Substance-related disorders: 6 rows built by tools/bank-harness/npep-build.mjs.
+ * OmniRoute gateway down for this batch; independent key read done by a Claude subagent against the
+ * answer-page images instead of Gemini (2026-09-22) - 6/6 match, 0 mismatch. No fold candidates checked yet.
+ */
+
+{ id:'npep-subst-1', bank:'endpoint', module:'neuropsych', chapter:'ps-sud',
+  stem:'Which substance withdrawal presents with pain, diarrhea, dilated pupils, and gooseflesh skin?',
+  options:['Alcohol', 'Cannabis', 'Heroin', 'Ketamine'],
+  answer:2,
+  explanation:'Heroin is the keyed option. Heroin is an opioid, and opioid withdrawal classically causes diffuse body pain, diarrhea, dilated pupils, and piloerection, which produces gooseflesh skin (not taken from the course material). Other commonly associated features include lacrimation, rhinorrhea, yawning, sweating, nausea, vomiting, anxiety, and insomnia (not taken from the course material). These manifestations reflect rebound autonomic activity after opioid cessation (not taken from the course material).\n\nAlcohol withdrawal is not the best answer because it more typically causes tremor, anxiety, sweating, nausea, insomnia, tachycardia, hypertension, seizures, hallucinations, or delirium tremens in severe cases (not taken from the course material). Although gastrointestinal symptoms can occur, the combination of mydriasis and gooseflesh is characteristic of opioid withdrawal rather than alcohol withdrawal (not taken from the course material).\n\nCannabis withdrawal can cause irritability, anxiety, sleep difficulty, decreased appetite, restlessness, and dysphoric mood, but the autonomic syndrome described here is not typical (not taken from the course material). Ketamine withdrawal is less classically defined and may involve craving or psychological symptoms; it does not produce the characteristic opioid-withdrawal cluster of diarrhea, mydriasis, pain, and piloerection (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify heroin withdrawal from its characteristic autonomic and gastrointestinal symptoms.',
+  source:'Neuro endpoint.pdf, Substance-related disorders, Q1, p.1333 (answer p.1334)'
+},
+
+{ id:'npep-subst-2', bank:'endpoint', module:'neuropsych', chapter:'ps-sud',
+  stem:'The use of Disulfiram in treatment of alcohol dependence is based on which mechanism?',
+  options:['Substitution therapy', 'Antidepressant therapy', 'Behavioral therapy', 'Detoxification therapy'],
+  answer:3,
+  explanation:'The printed key is Detoxification therapy. Disulfiram is used after alcohol withdrawal and detoxification as part of relapse prevention. It inhibits aldehyde dehydrogenase, so alcohol intake leads to acetaldehyde accumulation and an unpleasant reaction including flushing, headache, nausea, vomiting, palpitations, and hypotension (not taken from the course material). This aversive consequence is intended to discourage further drinking (not taken from the course material).\n\nSubstitution therapy is wrong because it refers to replacing a substance with a safer pharmacologically related agent, such as opioid substitution with methadone or buprenorphine (not taken from the course material). Disulfiram does not substitute for alcohol or prevent withdrawal through replacement.\n\nAntidepressant therapy is wrong because disulfiram is not prescribed as an antidepressant and its principal role is not treatment of depressive symptoms. Coexisting depression may require separate assessment and treatment (not taken from the course material).\n\nBehavioral therapy is wrong according to the printed key. However, generally, disulfiram’s alcohol-deterrent effect is often described as aversion therapy or as supporting behavioural change, rather than detoxification itself (not taken from the course material). The bank nevertheless prints Detoxification therapy, so that is the staged answer.\n\nDetoxification therapy is the keyed option because the bank places disulfiram within the treatment approach to alcohol dependence following detoxification. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Disulfiram is keyed by this bank as detoxification therapy for alcohol dependence.',
+  source:'Neuro endpoint.pdf, Substance-related disorders, Q2, p.1335 (answer p.1336)'
+},
+
+{ id:'npep-subst-3', bank:'endpoint', module:'neuropsych', chapter:'ps-sud',
+  stem:'What is the final stage of change according to the model of behaviour change proposed by Prochaska and DiClemente ?',
+  options:['Action', 'Maintenance', 'Pre-contemplation', 'Contemplation'],
+  answer:1,
+  explanation:'Maintenance is the final stage listed in the Prochaska and DiClemente transtheoretical model of behaviour change. It refers to sustaining the behavioural change over time and working to prevent relapse. (not taken from the course material) The model is commonly described as progressing through pre-contemplation, contemplation, preparation, action, and maintenance. (not taken from the course material)\n\nAction is not the final stage because it is the period in which the person has begun making the intended behavioural change. (not taken from the course material) Although action is an important active phase, it precedes the longer-term task of maintaining that change.\n\nPre-contemplation is incorrect because it is an early stage in which the person does not yet intend to change the behaviour or may not recognise it as a problem. (not taken from the course material) It is therefore at the opposite end of the change process from maintenance.\n\nContemplation is also incorrect because it describes awareness of a problem and consideration of change, often with ambivalence still present. (not taken from the course material) The person is considering change rather than consistently sustaining it.\n\nThus, among the options provided, Maintenance is the final stage of change. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'The question tests identification of maintenance as the final stage in the Prochaska and DiClemente model of behaviour change.',
+  source:'Neuro endpoint.pdf, Substance-related disorders, Q3, p.1337 (answer p.1338)'
+},
+
+{ id:'npep-subst-4', bank:'endpoint', module:'neuropsych', chapter:'ps-sud',
+  stem:'A 52-year-old man was complaining about hearing and seeing miniature people who tell him to kill everyone in sight. He stated that these symptoms developed suddenly during the past 48 hours, but that he has had them on and off for years. He states that he has never previously sought treatment for the symptoms, but that this episode is particularly bad. He denies the use of any illicit substances. The patient is alert and oriented to person, place, and time. His mental status examination is normal except for his complaints. His thought process is normal. His drug toxicology screen is positive for marijuana. He is quite insistent that he needs to be "put away" in the hospital for the symptoms he is experiencing. Which of the following is the most likely diagnosis of this man?',
+  options:['Malingering', 'Substance-induced psychosis', 'Schizophrenia', 'Schizophreniform disorder.'],
+  answer:1,
+  explanation:'The patient\'s acute-onset hallucinations (auditory and visual) with no prior psychiatric treatment history, along with a positive drug screen for marijuana, strongly suggest substance-induced psychosis. Cannabis, especially in high doses or in susceptible individuals, can trigger psychotic symptoms (e.g., paranoia, command hallucinations). The sudden worsening and his insistence on hospitalization (possibly due to distress) further support this.',
+  objective:'Identify substance-induced psychosis in a patient with hallucinations and a positive marijuana toxicology screen.',
+  source:'Neuro endpoint.pdf, Substance-related disorders, Q4, p.1339 (answer p.1340)'
+},
+
+{ id:'npep-subst-5', bank:'endpoint', module:'neuropsych', chapter:'ps-sud',
+  stem:'A 23-year-old man is referred from an outpatient drug rehabilitation program to a psychiatrist for significant depression. The patient endorses having used “everything I can get my hands on, as often as I can get it.” A drug screen is positive for an illicit substance. The psychiatrist, however, doubts that the drug identified is responsible for the patient’s symptoms of depression. Which of the following drugs is most likely to be present on the drug screen?',
+  options:['Cannabis', 'Cocaine', 'Alcohol', 'Methamphetamine'],
+  answer:0,
+  explanation:'While cannabis may show up on a drug screen, it is less commonly associated with significant depressive symptoms compared to other substances like alcohol or stimulants. The psychiatrist likely believes the cannabis is incidental to the patient’s depression.',
+  objective:'To identify cannabis as the positive illicit substance considered less likely to explain significant depressive symptoms.',
+  source:'Neuro endpoint.pdf, Substance-related disorders, Q5, p.1341 (answer p.1342)'
+},
+
+{ id:'npep-subst-6', bank:'endpoint', module:'neuropsych', chapter:'ps-sud',
+  stem:'A 50-year-old homeless man is brought to the emergency department by the police for disruptive behavior. On mental status examination, he has an elevated affect, but he also has psychomotor agitation and paranoia; he says he “feels fantastic” but is wary of answering any questions, quickly becoming irritated. On physical examination, the patient exhibits a moderately elevated blood pressure and pulse rate. He is most likely intoxicated with which of the following substances?',
+  options:['Alcohol', 'Barbiturates', 'Benzodiazepines', 'Cocaine'],
+  answer:3,
+  explanation:'Cocaine intoxication presents with euphoria, agitation, paranoia, increased energy, and physical examination and tachycardia. The patient’s elevated mood and suspiciousness are classic for stimulant use.',
+  objective:'Identify cocaine intoxication from euphoria, agitation, paranoia, hypertension, and tachycardia.',
+  source:'Neuro endpoint.pdf, Substance-related disorders, Q6, p.1343 (answer p.1344)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Cranial nerve disorders: 14 rows built by tools/bank-harness/npep-build.mjs.
+ * OmniRoute gateway down for this batch; independent key read done by a Claude subagent against the
+ * answer-page images instead of Gemini (2026-09-22) - 14/14 match, 0 mismatch.
+ * Fold pass (2026-09-22): 6 of 14 were duplicates and dropped from this file -
+ *   npep-cranial-1  -> already live as npep-loc-1 (same book, Localization Q1) - source note added there.
+ *   npep-cranial-5  -> folded into npqb-nr-274 (gradegain, fuller GBS explanation) via alsoIn.
+ *   npep-cranial-8  -> folded into npqb-nr-64 (gradegain, fuller UMN/LMN table) via alsoIn.
+ *   npep-cranial-9  -> folded into npqb-nr-62 (gradegain, fuller anatomy) via alsoIn.
+ *   npep-cranial-10 -> folded into npqb-nr-63 (gradegain, fuller TN treatment) via alsoIn.
+ *   npep-cranial-11 -> folded into npqb-nr-68 (gradegain, fuller LMN-site table) via alsoIn.
+ * The 8 rows below are the novel remainder, renumbered to keep original printed order.
+ */
+
+{ id:'npep-cranial-2', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'What are the results of examination of the right corneal reflex in a patient with left upper motor facial palsy ?',
+  options:['No blink in either eye', 'Blink in both eyes', 'Blink on the right side only', 'Blink on the left side only'],
+  answer:1,
+  explanation:'The keyed option is Blink in both eyes. The corneal reflex has an afferent limb through the ophthalmic division of the trigeminal nerve and an efferent limb through the facial nerve to orbicularis oculi (not taken from the course material). Stimulation of one cornea normally produces both a direct blink in the stimulated eye and a consensual blink in the opposite eye (not taken from the course material).\n\nA left upper motor facial palsy affects voluntary facial movements predominantly in the lower face, while the upper facial muscles receive bilateral cortical input and are relatively spared (not taken from the course material). Therefore, it does not abolish the facial motor output required for blinking. With the right cornea examined, the afferent pathway is intact and the brainstem reflex connections activate both facial nuclei sufficiently for bilateral blinking (not taken from the course material).\n\nOption A, No blink in either eye, would suggest failure of the afferent corneal pathway or a major brainstem reflex disturbance rather than an isolated left upper motor facial palsy (not taken from the course material). Option C, Blink on the right side only, would be expected with a left lower motor facial palsy affecting the left facial efferent limb, not an upper motor lesion (not taken from the course material). Option D, Blink on the left side only, would be incompatible with intact right facial motor function during right corneal stimulation (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Tests the effect of left upper motor facial palsy on the right corneal reflex.',
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q2, p.652 (answer p.653)'
+},
+
+{ id:'npep-cranial-3', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'A 64-year-old female patient was presenting with acute attacks of electric like pain in the left side of her face which lasted for a few seconds. The attacks were 10-30 attacks/day. What is the possible diagnosis ?',
+  options:['Trigeminal neuralgia', 'Atypical migraine', 'Temporal arteritis', 'Glossopharyngeal neuralgia'],
+  answer:0,
+  explanation:'Trigeminal neuralgia presents with sudden, brief, electric shock-like facial pain, often triggered by touch or movement. It is typically unilateral and can occur many times a day.',
+  objective:'Identify trigeminal neuralgia from recurrent brief unilateral electric-like facial pain.',
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q3, p.654 (answer p.655)'
+},
+
+{ id:'npep-cranial-4', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'A 58-year-old patient presented with the left unilateral facial paralysis, which it was not present the prior night. She also reported hyperacusis in the left ear and unusual taste of the food. Examination revealed left facial droop and close inability to close her left eye. What is the most likely diagnosis ?',
+  options:['Acute pontine stroke', 'Cholesteatoma', 'Lyme disease', 'Bell\'s palsy.'],
+  answer:3,
+  explanation:'Upper and lower face are affected, so it\'s lower motor neuron lesion (bell\'s palsy)',
+  objective:'Identify Bell\'s palsy from acute unilateral lower motor neuron facial paralysis with hyperacusis and altered taste.',
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q4, p.656 (answer p.657)'
+},
+
+{ id:'npep-cranial-6', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'For 6 months, a lancinating pain that lasted for seconds in her right face and responded well to medical treatment. Currently, she had similar attacks that did not respond well to maximum doses of the previously given medication. MRI was ordered. Once the data was interpreted, the patient was referred to neurosurgeon for surgery. What did that patient likely suffer from?',
+  options:['Stroke', 'Trigeminal neuralgia.', 'Migraine', 'Myositis'],
+  answer:1,
+  explanation:'Trigeminal neuralgia presents as brief, stabbing facial pain. Refractory cases unresponsive to medication may require surgical decompression or ablative procedures.',
+  objective:'Recognize trigeminal neuralgia from brief lancinating facial pain and refractory attacks.',
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q6, p.660 (answer p.661)'
+},
+
+{ id:'npep-cranial-7', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'What best distinguishes the upper motor lesion of the facial nerve pathway from that of a lower motor lesion of facial nerve?',
+  options:['rarely involves taste sensation', 'It affects only the lower part of the face', 'it affects both sides of face', 'it is common to be accompanied by hearing'],
+  answer:1,
+  explanation:'Upper motor neuron lesions spare the upper facial muscles due to bilateral cortical representation. Lower face weakness with preserved forehead movement is typical.',
+  objective:'Upper motor neuron facial lesions cause lower facial weakness with forehead sparing.',
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q7, p.662 (answer p.663)'
+},
+
+{ id:'npep-cranial-12', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'What nerve supplies the majority of facial sensory innervation?',
+  options:['Facial nerve', 'Glossopharyngeal nerve', 'Trigeminal nerve', 'Vagus nerve'],
+  answer:2,
+  explanation:'The trigeminal nerve provides the main sensory innervation to the face, including light touch, pain, and temperature. It has three branches: ophthalmic (V1), maxillary (V2), and mandibular (V3).',
+  objective:'Identify the cranial nerve supplying most facial sensation.',
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q12, p.672 (answer p.673)'
+},
+
+{ id:'npep-cranial-13', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'What is the most dangerous complication of facial nerve palsy?',
+  options:['Speech difficulty', 'Exposure keratitis', 'Loss of taste', 'Drooling'],
+  answer:1,
+  explanation:'In facial nerve palsy, the inability to close the eye can lead to corneal drying and damage (exposure keratitis), which may result in vision loss if not managed promptly with eye protection and lubrication.',
+  objective:'Identify exposure keratitis as the most dangerous complication of facial nerve palsy.',
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q13, p.674 (answer p.675)'
+},
+
+{ id:'npep-cranial-14', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'Trigeminal neuralgia most commonly affects which age group?',
+  options:['Elderly', 'Adults', 'Adolescents', 'Children'],
+  answer:0,
+  explanation:'Trigeminal neuralgia predominantly affects elderly individuals, with peak incidence between the ages of 50 and 70. It is often idiopathic or related to vascular compression.',
+  objective:'Identify the age group most commonly affected by trigeminal neuralgia.',
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q14, p.676 (answer p.677)'
 }
 
 ];
