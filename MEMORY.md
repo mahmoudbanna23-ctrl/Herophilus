@@ -47,17 +47,11 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
   Close-out: `progress\resume-peds-endpoint-part2.md`. ⚠️ Endpoint/House overlap is chapter-shaped —
   never fold `pedhd-card-6..10` (5 identical stems, 5 different figures). Full detail: archive,
   `## Pruned from MEMORY.md - 2026-09-16`, and `## Pruned from MEMORY.md - 2026-09-05`.
-- ✅ **NEURO CLOSED 2026-09-17 — 493 live.** Neuro Endpoint (separate 2190-page book): Ch.1-6 closed
-  598->626 by 2026-09-21; history archive `## Pruned from MEMORY.md - 2026-09-22 (neuro endpoint
-  Ch.1-6 + pipeline detail)`. ✅ Ch.7 Substance-related disorders (6) + Ch.8 Cranial nerve disorders
-  (8 of 14, 6 folded) CLOSED 2026-09-22 (`6746fd5`), 626->640. Close-out: `resume-neuro-endpoint.md`
-  §14. Gateway still down this session despite a relaunch report — key reads ran via Claude subagent,
-  not Gemini; re-check liveness before trusting `npep-finish.mjs` on the 14 chapters left (emerg next,
-  `ps-pharm` filing flag first; then child, cns, nm, coma, sympt, anx, mood, soma, schiz, dem,
-  psychopharm, fe2-4; fe5/fe6 deferred, real per-chapter Codex limit).
-  ⚠️⚠️ **RUNNING HEADER LAGS TRUE SECTION ~1 PAGE** — boxed section-title banner + question
-  content are the only reliable markers, still applies to T13's own boundary. ⚠️ **Renders die
-  with the scratchpad.**
+- ✅ **NEURO CLOSED 2026-09-17 — 493 live.** ✅ **NEURO ENDPOINT CLOSED 2026-09-22 — 1047 live, all 22
+  chapters (incl. fe1-fe6), 0 dupes, 0 holes.** History: `resume-neuro-endpoint.md` §14-16 (ch.7-8
+  detail + close-out), `## Pruned from MEMORY.md - 2026-09-22 (neuro endpoint Ch.1-6 + pipeline
+  detail)`. `LOCKED_MODULES` cleared in `app/data/modules.js` — neuropsych UNLOCKED, boot-check clean
+  (6956 total, neuropsych 36 chapters, 0 errors). **User still needs to upload `dist` to Cloudflare.**
   ⚠️⚠️ **OFFSET NOT GLOBAL: neuropsychiatry PDF = book+5, neurosurgery PDF = book+7. In scope =
   PDF 6–98 ONLY; SKIP 99–140.**
 - **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->** archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding.
@@ -125,7 +119,7 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
   `for i… if(!(i in A))`, **zero holes, every file `eval`s clean**): ENT **2,322** (2,240 q + 82 c) ·
   **Ophtho 1,598** · Neuro **304** (297 q + 7 c) · Peds House **393** · Peds endpoint **1,334**
   (p1 704 + p2 630, both CLOSED). ⚠️ **The case arrays are `C_ENT`/`C_NEURO`/`C_OPHTHO`/`C_PEDS`, not
-  `CASES_*`** (ophtho and peds hold 0). **5,951 is the CORPUS and no longer what the app reports:** ⚠️ `LOCKED_MODULES=['neuropsych']` (ophtho unlocked 2026-09-21) + `THEORY_LOCKED` hold 304 neuro q and 36 theory chapters out at the aggregator, so **a healthy boot reports 5,902 / 117** — a check wanting 5,951/153 is STALE, not a loss.
+  `CASES_*`** (ophtho and peds hold 0). **5,951 is a STALE pre-neuro-endpoint corpus figure, not current** — `LOCKED_MODULES` is now `[]` (neuropsych unlocked 2026-09-22, ophtho unlocked 2026-09-21); only `THEORY_LOCKED` still holds chapters out. A full recount from disk is owed before quoting a new total.
   ✅ **BOOTED `file://` 2026-09-07, 0 errors**: `QUESTIONS 4049 · THEORY 81 · MODULES 4 · 153 chapter rows, 80 with questions`; per module ent 30 · ophtho 36 · neuropsych 36 · pediatrics 51. Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`; options 2–10 coexist (2:10 · 3:67 · 4:3836 · 5:1365 · 8:1 · 9:1 · 10:6).
   ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js` BY ~440 — load the array.**
 - **✅ THE BOOT CHECK IS NOW A REPO TOOL: `node tools\boot-check\boot-check.js`** (2026-09-02) —

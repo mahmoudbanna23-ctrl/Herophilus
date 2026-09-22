@@ -345,3 +345,62 @@ verification), then child (9 rows) — investigate the systematic +1 printed-num
 every row before trusting citations, then n1/n8 "filed elsewhere" flags and n9's "numbers differ from
 OCR: 4". Per the original ladder: smallest first, one chapter at a time, gateway status re-checked
 before relying on it.**
+
+## 15. Documentation gap, §14→§16 — commits `cbff399`..`4d2fc01` landed without resume entries
+Emergency, Child psychiatry, CNS infection, Coma, Symptomatology, Anxiety disorders, Mood disorders,
+Somatic disorders, Dementia+Delirium, Schizophrenia, Psychopharmacology all closed and spliced in an
+earlier chat segment (`Q_NEURO` 640 -> 857) whose close-out detail is not in this file's history and
+was not recovered before this session's own compaction. Git history (`cbff399`, `8bcd730`, `6746fd5`,
+`3ea75da`, `4d2fc01`) is the record of record for those 11 chapters' fold/defect detail — read the
+diffs there if a question comes up, rather than trusting a reconstruction here.
+
+## 16. Ataxia+low back pain, Movement disorders, Model Final Exams 1-6 — CLOSED 2026-09-22
+**This closes the neuro endpoint book — every chapter now spliced, `Q_NEURO` 857 -> 1047.**
+
+- **Ataxia (`npep-ataxia`):** 8 transcribed -> 5 live (`npep-ataxia-1,2,3,5,7`). Q1 had been split into
+  two rows by the build pipeline around an unrelated reference table (merged back to one). 2 folds into
+  `npqb-nr-2` (gradegain, cross-bank, `alsoIn:['endpoint']` added). Spliced 857 -> 862.
+- **Movement disorders (`npep-movement`):** 21 transcribed -> 18 live. 3 folds: `npep-movement-4`->
+  `npep-movement-8` (same-book), `-5`->`npqb-nr-220`, `-6`->`npqb-nr-219` (cross-bank, `alsoIn` added).
+  Spliced 862 -> 880. Owed, out of scope: `npep-movement-10`/`npqb-nr-208` near-duplicate left unfolded
+  (not an exact fold shape).
+- **Model Final Exam 1 (`npep-fe1`):** 65 transcribed -> 21 live, 44 folded (68% duplicate rate against
+  earlier endpoint chapters and gradegain — the book's own recap pattern, confirmed again in fe2-fe6
+  below). Fold decisions recorded in `content/neuro/qb-pages/_ep-work/fe1/fold-map.md`, applied in a
+  separate citation-only pass (44/44 citations landed, corpus count unchanged at that step). Spliced
+  857 -> 901 (fe1 itself), citations applied after. Owed: `npep-ataxia-1`/`npep-fe1-15` verbatim
+  duplicate flagged, not folded (out of scope, no data risk).
+- **Model Final Exam 2 (`npep-fe2`):** 64 transcribed -> 33 live, 31 folded (48%), incl. 2 cross-bank.
+  `fe2-61`'s stem hand-repaired (dangling cross-reference to folded `fe2-60` replaced with the full
+  vignette). One sweep auto-classification ("shared menu, not a fold") overridden by hand on `fe2-28`
+  vs `npqb-nr-274` after independent verification confirmed genuine duplicate (same fact, same
+  options/answer, reworded stem only) — orchestrator cross-checked this call directly against the live
+  corpus row, confirmed sound. Spliced 933 -> 966.
+- **Model Final Exam 3 (`npep-fe3`):** 64 transcribed -> 32 live, 32 folded (50%). Book defect: printed
+  question "13." appears twice on different pages (pp.1745/1747) — both facts already independently in
+  corpus via other folds, no id collision reached the spliced set. Spliced 901 -> 933.
+- **Model Final Exam 4 (`npep-fe4`):** 71 transcribed -> 42 live, 29 folded (41%). Book defect: FOUR
+  number collisions this chapter (Q14, Q45, Q52, Q56) — Q14/Q45 each genuinely distinct content on both
+  printings, resolved with `-14b`/`-45b` suffix ids; Q52/Q56 each resolved by one side folding into an
+  existing corpus row. One new unnumbered tail row added as `npep-fe4-66`. `npep-fe4-48` (Parinaud's
+  sign) kept `figure:false` — no answer-page illustration captured, owed. Spliced 985 -> 1027.
+- **Model Final Exam 5 (`npep-fe5`):** 43 transcribed -> 19 live (`npep-fe5-6,8,9,11,17,19,21,22,23,28,
+  29,31,32,33,34,35,36,37,45`), 24 folded (56%). Book defect: printed "42" appears twice
+  (pp.2085/2087), both sides folded away, no collision. Spliced 966 -> 985.
+- **Model Final Exam 6 (`npep-fe6`):** 45 transcribed -> 20 live (`npep-fe6-2,7,8,11,13,14,16,17,20,21,
+  22,23,24,25,26,30,35,38,41,45`), 25 same-book folds (source note on each survivor, no `alsoIn` — all
+  within-book). No number-collision defect this chapter. One sweep hit (`fe6-30` vs `npqb-nr-321`) was a
+  false positive on hand read — meningitis vs sciatica, shared only a four-word template phrase, kept
+  live. `fe6-2`'s internal "continuing the same patient as fe6-1" cross-reference repointed to survivor
+  `npep-mood-15` after fe6-1 folded away. Spliced 1027 -> 1047. Printed pp.2095-2190: divider p.2095, Q1
+  p.2096 .. Q45 p.2185, book ends p.2190 — confirmed true end of the entire PDF, offset held throughout.
+
+**Checks, all chapters this section:** `node --check` clean after every splice; `validate.js` reported
+only the 23 pre-existing `nr-demyelinating` failures + 1 pre-existing unrelated ophtho line, 0 new, at
+every step; `boot-check.js` 0 console errors throughout. Final corpus, orchestrator-verified fresh via
+`node -e` vm-load (not sweep/agent self-report): **1047 total, 1047 unique ids, 0 dupes, 0 holes.**
+
+**`LOCKED_MODULES` cleared in `app/data/modules.js`** (was `['neuropsych']`, now `[]`) — orchestrator
+edit, boot-check re-run clean post-unlock: `neuropsych 36` chapters, 6956 total questions, 0 console
+errors. Neuro endpoint book is fully closed and live in the app build. Not yet committed to git —
+next action.

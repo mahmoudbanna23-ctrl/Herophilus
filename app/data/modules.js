@@ -17,7 +17,7 @@
    Launching a subject is removing its id from this list. Nothing else. A
    student's local progress on a locked subject is hidden, never deleted, and
    comes back untouched when the id goes. */
-const LOCKED_MODULES = ['neuropsych'];
+const LOCKED_MODULES = [];
 
 /* The Theory section as a whole, not one subject's share of it. The summaries
    in T_ENT/T_PEDS/T_OPHTHO/T_NEURO were written to be read alongside the

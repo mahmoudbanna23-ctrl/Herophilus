@@ -30,6 +30,7 @@ var Q_NEURO = [
   {
     "id": "npqb-nr-2",
     "bank": "gradegain",
+    "alsoIn": ["endpoint"],
     "module": "neuropsych",
     "chapter": "nr-para",
     "stem": "Muscle tone in vestibular ataxia?",
@@ -41,7 +42,7 @@ var Q_NEURO = [
     "answer": 0,
     "explanation": "**Muscle tone is normal in vestibular ataxia — this is one of the few features that separates it cleanly from the other two types.**\n\n`L12) hemi,parap&ataxia` tabulates the three ataxias side by side, and the tone row reads **hypotonia** for cerebellar, **hypotonia** for sensory and **normal** for vestibular. That single table answers a large share of the ataxia questions in this bank, so it is worth holding whole:\n\n| | Cerebellar | Sensory | Vestibular |\n|---|---|---|---|\n| **Speech** | staccato | normal | normal |\n| **Nystagmus** | present | absent | present |\n| **Muscle tone** | hypotonia | hypotonia | **normal** |\n| **Weakness** | absent | present | absent |\n| **Ataxia** | present with eyes open **and** closed | present with eyes **closed only** | absent |\n| **Gait** | ataxic, wide based | stamping / high steppage | normal / vertigo |\n| **Reflexes** | average | diminished | normal |\n| **Romberg's test** | negative | **positive** | negative |\n| **Auditory symptoms** | absent | present | absent |\n\n**Why vestibular ataxia spares tone.** The lesion is in the labyrinth, the vestibular nerve or the vestibular nuclei. What is disturbed is the sense of where the head is in space, so the patient has vertigo, nystagmus and often deafness or tinnitus, and veers to one side when walking. Nothing in that pathway sets the gain of the stretch reflex, so tone and the deep tendon reflexes are untouched. Note the row above it: in vestibular disease there is strictly no *limb* ataxia at all — finger-to-nose and heel-knee-shin are performed normally. The imbalance is of the whole body.\n\n**Why the other options are wrong**\n\n- **Hypotonia** is the answer for the other two types. In cerebellar disease the cerebellum's facilitation of the anterior horn cell is lost, giving a floppy, pendular limb. In sensory ataxia the afferent limb of the stretch reflex arc is interrupted, so tone and reflexes are both *diminished*.\n- **Clasp-knife spasticity** is a **pyramidal** sign — `L1) INTRODUCTION AND LOCALISATION IN NEUROLOGY` lists it under *Upper Motor Neuron Manifestations*, alongside hyperreflexia and an extensor plantar. It has no place in any ataxia; if you find it, you are looking at a corticospinal lesion, not a coordination disorder.\n\n**Bottom line:** normal tone, normal reflexes, negative Romberg, but vertigo, nystagmus and auditory symptoms — that combination is vestibular. Hypotonia with a *negative* Romberg is cerebellar; hypotonia with a *positive* Romberg and diminished reflexes is sensory.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.",
     "objective": "Vestibular ataxia leaves muscle tone and reflexes normal; cerebellar and sensory ataxia both cause hypotonia.",
-    "source": "neuropsychiatry & neurosurgery qb.pdf p.1"
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.1. Also printed in Neuro endpoint.pdf, Ataxia and low back pain: as Q4, p.418 (answer p.419), and again as Q6, p.422 (answer p.423) — same fact, three printings, this entry's explanation kept as the fuller, lecture-grounded one. Printed a fourth time as Model Final Exam 3, Q60, p.1841 (answer p.1842), with an added fourth option \"Cog wheel rigidity.\""
   },
   {
     "id": "npqb-nr-3",
@@ -2709,7 +2710,7 @@ var Q_NEURO = [
     answer:3,
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> Paroxetine is an SSRI and is a first-line treatment for panic disorder. Alprazolam (a benzodiazepine) can be used short-term for acute symptom relief while waiting for the SSRI to take effect (which can take 2-4 weeks)\n\n**What the lectures add.** The diagnosis comes first, and it is **panic disorder**: short frightening episodes with a fear of dying, nausea and choking, plus **anticipatory anxiety** — “she is terrified of having another,” which is the criterion that turns recurrent panic *attacks* into panic *disorder*. `L6) Myths about psychiatry` describes the attack itself — **“Racing heartbeat, Shortness of breath, Overwhelming sense of fear, Chest tightness / dizziness, Feeling of impending doom”** — and notes they **“resolve — typically within 10–20 min,”** matching the stem’s “short episodes.”\n\nThe box’s two-drug strategy is exactly what `L4,5) Psychiatric symptomatology` prescribes. Its anxiety treatment slide ranks **“SSRIs”** first, and states that antidepressants take **“2-6 weeks to start its effect”**, are given for **“One year then gradual withdrawal”**, and are **“Not addictive.”** It permits benzodiazepines only as **“Short duration, Not preferred.”** `L17) Psychopharmacology` confirms both halves: antidepressants are indicated for **“Anxiety disorders, obsessive compulsive disorder,”** and benzodiazepines are indicated for **“1. Panic disorder”** under the heading **“(must NOT be used more than ONE month).”**\n\nSo the pairing is deliberate: the SSRI is the treatment, the benzodiazepine is the **bridge** across the 2–6 week latency, and it comes off within a month.\n\n**Why each distractor is wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Imipramine** | A **TCA**, and genuinely effective in panic — `L4,5` lists “Others … SNRIs, TCAs” as second-line. But it is **not first-line**: anticholinergic effects (dry mouth, constipation, urinary retention), postural hypotension, cardiac conduction delay and **lethality in overdose** put it behind the SSRIs. It also offers no rapid relief, so it leaves the 2–6 week gap uncovered |\n| **Fluoxetine & Quetiapine** | Fluoxetine is a reasonable SSRI, but **quetiapine is an antipsychotic** and has no place in uncomplicated panic disorder. `L17` restricts antipsychotics to “Schizophrenia, Schizoaffective disorder, Bipolar disorder, Psychotic depression, Treatment-resistant… major depression as an adjunct.” Nothing in this stem is psychotic — the patient has **intact insight** (`L4,5`: “Intact …. (Anxiety)”). Adding an antipsychotic exposes her to weight gain, metabolic syndrome, sedation and extrapyramidal risk for no benefit |\n| **Phenelzine** | An **MAOI**. Effective in panic and in atypical depression, but a last-resort agent: it requires a **tyramine-free diet** to avoid hypertensive crisis, and carries serotonin-syndrome risk with SSRIs, TCAs and sympathomimetics. Never an opening choice in a 24-year-old with a two-month history |\n\n**A practical caution the box does not give:** SSRIs can **transiently worsen** anxiety and even provoke panic in the first days, so panic disorder is started at **half the usual antidepressant dose** and titrated slowly — another reason the benzodiazepine bridge earns its place *(the low-start rule is not taken from the course material)*. And the alprazolam must be **time-limited**: `L17` lists **“Tolerance and dependence”** among benzodiazepine adverse effects, which is the subject of Q23 in this same topic.\n\n**Bottom line:** panic disorder = SSRI for the disorder + short-course benzodiazepine for the wait. Treat for a year, then withdraw gradually.',
     objective:'First-line for panic disorder is an SSRI (paroxetine) plus a short-course benzodiazepine to bridge the 2–6 week antidepressant latency; TCAs and MAOIs are later lines and antipsychotics have no role.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.68 (answer p.71). Also printed in Neuro endpoint.pdf, Anxiety disorders, Q2, p.839 (answer p.840).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.68 (answer p.71). Also printed in Neuro endpoint.pdf, Anxiety disorders, Q2, p.839 (answer p.840). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q9, p.1441 (answer p.1442).'
   },
 
   {
@@ -2719,7 +2720,7 @@ var Q_NEURO = [
     answer:0,
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> In this case, the student is aware that his behavior is problematic ("I am suffering from a terrible problem"), which indicates intact insight.\n\n**What the lectures add.** Two judgements are being made, and the options test both.\n\n**First — is it a compulsion?** `L8) OCD & PTSD` defines compulsions as **“Repetitive behaviours or mental acts performed in response to obsessions or rigid rules, aimed at reducing distress — not realistically connected to what they prevent.”** Checking the door five times, always the same number, is repetitive, rule-bound and disproportionate. `L8` names **“Checking (~30%)”** as the second commonest subtype: **“Repetitive checking driven by harm avoidance. Doors, stoves, driving routes.”** `L4,5) Psychiatric symptomatology` gives the patient’s-eye definition — compulsivity is **“inability to stop continuing the behaviour”** — and makes a point that decides this question: abnormal behaviour is **“Usually c/o informant and observed by examiner… EXCEPT …. Complained by the patient himself: Compulsivity, Impulsivity.”** The student is complaining **himself**, which is the signature of compulsivity rather than of an observed behavioural abnormality.\n\nThe two-year duration and the fact that he **cannot leave home** satisfy `L8`’s threshold: **“time-consuming (>1 hr/day) or cause clinically significant distress or functional impairment.”**\n\n**Second — what is his insight?** `L8` lists the DSM-5 specifiers: **“With good/fair insight | With poor insight | With absent insight/delusional beliefs | Tic-related.”** `L4,5` defines insight as the **“ability to identify whether (s)he is suffering of a psychiatric disorder or not”** and grades it **“Intact …. (Anxiety)”**, **“Partial …. (Somatic symptom)”**, **“Absent .... (Psychosis).”** The student calls it **“a terrible problem”** — he labels his own behaviour as pathological and is distressed by it. That is intact insight, and it is typical: `L8` records OCD’s good-insight subtype as the norm and lists **“poor insight”** among the **poor** prognostic factors.\n\n**Why each distractor is wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Compulsion with impaired insight** | Would require him to believe the checking is genuinely necessary and reasonable. He says the opposite — he is *suffering* from it |\n| **Compulsion with partial insight** | `L4,5` reserves partial insight for **somatic symptom disorder**. A patient with partial insight would half-accept the behaviour is excessive while still defending it. This statement contains no defence at all |\n| **Obsessive personality traits** | The crucial distinction. **OCPD is ego-syntonic** — the person values their orderliness, perfectionism and control and does **not** complain of it; distress falls on those around them. **OCD is ego-dystonic** — the person is tormented by their own behaviour. `L4,5` captures it in one line: compulsivity is **“Complained by the patient himself.”** OCPD also involves a pervasive lifelong personality style, not a discrete two-year ritual |\n\n**Discrimination table worth memorising:**\n\n| | OCD | Obsessive-compulsive personality (OCPD) |\n|---|---|---|\n| Ego relationship | **Ego-dystonic** — unwanted, resisted | **Ego-syntonic** — valued, defended |\n| Who complains | **The patient** | Family, colleagues |\n| Content | Discrete obsessions and rituals | Pervasive perfectionism, rigidity, control |\n| Onset | Definable, often adolescence (`L8`: mean age ~17) | Lifelong personality pattern |\n| Response | SSRIs + ERP | Psychotherapy; poor drug response |\n\n**Bottom line:** repetitive rule-bound checking that the patient himself calls a terrible problem = compulsion with intact insight. Insight is graded, and it is graded from what the patient says about his own behaviour, not from how odd the behaviour looks.',
     objective:'Repetitive rule-bound checking that the patient himself complains of is a compulsion with intact insight — OCD is ego-dystonic, whereas obsessive personality traits are ego-syntonic and not complained of.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71). Also printed in Neuro endpoint.pdf, Anxiety disorders, Q4, p.843 (answer p.844).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71). Also printed in Neuro endpoint.pdf, Anxiety disorders, Q4, p.843 (answer p.844). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q36, p.1495 (answer p.1496).'
   },
 
   {
@@ -2729,7 +2730,7 @@ var Q_NEURO = [
     answer:0,
     explanation:'**The answer is raised intracranial pressure**, and the reasoning is mechanical rather than psychiatric.\n\n`L18) Devices in Psychiatry` describes how ECT works: **“A brief, controlled electrical stimulus is applied transcranially (unilateral or bilateral) to induce a generalized therapeutic seizure lasting 20–60 seconds,”** performed **“under general anesthesia with a muscle relaxant (succinylcholine).”** A generalised seizure produces a surge in **cerebral blood flow, cerebral blood volume and therefore intracranial pressure**. In a brain that already has a space-occupying lesion, obstructive hydrocephalus or oedema, that surge risks **herniation**. This is the one classically taught **absolute** contraindication *(the raised-ICP mechanism and the “absolute” grading are not taken from the course material — no cached deck prints a contraindication list, so the reasoning is supplied from general medical knowledge)*.\n\n**⚠️ A NOTE ON THE MATERIAL.** No cached neuropsychiatry deck lists ECT contraindications. `L18) Devices in Psychiatry` covers ECT’s history, delivery, indications, mechanism and stigma but prints **no** contraindication slide; `L9,10) Mood disorders` and `L16) Emergency Psychiatry Critical Interventions` print only indications. **The key is nonetheless correct, and the decks positively exclude the other three options** — see below. The bank also misprints the option as **“Hight intracranial pressure”**; the typo has been repaired here and is preserved in the verbatim staging record.\n\n**Why each distractor is wrong — and the decks settle all three:**\n\n| Option | Why it is NOT a contraindication |\n|---|---|\n| **Pregnancy** | The decks say the **opposite**. `L9,10) Mood disorders` lists ECT indications as **“Suicide-Violence, PM retardation-agitation, Psychotic-catatonic features, Multiple drugs-Pregnancies (first trimester), Resistant depression.”** Pregnancy is an **indication**, precisely because ECT avoids first-trimester teratogenic drug exposure. It is one of the safest treatments in pregnancy, requiring only fetal monitoring and left lateral tilt |\n| **Lactation** | ECT is not a drug and leaves no active metabolite in milk. The only agents involved are the short-acting anaesthetic and succinylcholine, cleared within hours. Breastfeeding continues normally |\n| **Old age** | The reverse of a contraindication — the elderly are among the **best** ECT responders, and often the group in whom drugs are least tolerated. `L18` records ECT’s **“70–80% response rate in patients who have failed multiple trials of antidepressants”** and calls it **“the most effective acute treatment available for severe mood disorders.”** Age raises anaesthetic and cognitive risk to be managed, not a reason to withhold |\n\n**What the decks do emphasise about ECT’s risks.** `L18` states that **“ECT is a highly safe procedure despite its bad reputation. The true primary clinical drawback is transient cognitive disruption and anterograde/retrograde memory gaps around the treatment period. Modern ultra-brief pulse width delivery significantly minimizes these cognitive side effects.”** It also notes the stigma problem — media depictions such as *One Flew Over the Cuckoo’s Nest* **“completely [ignore] modern anaesthesia, leading to widespread public and patient fear”** — and that a rename to **Brain Synchronising Therapy (BST)** has been proposed.\n\n**Other conditions that raise ECT risk** *(not taken from the course material)*: recent myocardial infarction or stroke, unstable arrhythmia, aortic or cerebral aneurysm, phaeochromocytoma, and severe anaesthetic risk. Modern practice treats these as **relative** — requiring optimisation and specialist anaesthetic input — with raised ICP the closest thing to an absolute bar.\n\n**Bottom line:** ECT is remarkably free of contraindications. Pregnancy, lactation and old age are all situations where it is *preferred*; a brain that cannot tolerate a pressure surge is the exception.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Raised intracranial pressure is the classic contraindication to ECT — pregnancy (first trimester) is listed by the course as an INDICATION, and lactation and old age are not contraindications at all.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71) — the bank prints option a as “Hight intracranial pressure”. Also printed in Neuro endpoint.pdf, Psychopharmacology, Q2, p.1390 (answer p.1391).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71) — the bank prints option a as “Hight intracranial pressure”. Also printed in Neuro endpoint.pdf, Psychopharmacology, Q2, p.1390 (answer p.1391). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q41, p.1505 (answer p.1506).'
   },
 
   {
@@ -2739,7 +2740,7 @@ var Q_NEURO = [
     answer:2,
     explanation:'**Panic disorder is an anxiety disorder**, and the course material lists it as such directly. `L4,5) Psychiatric symptomatology` devotes a slide to *Anxiety and related disorders* and enumerates them: **“GAD, Panic disorder, Social anxiety disorder, Specific phobia, Agoraphobia”**, then **“OCD”**, then **“PTSD, ASD.”** Panic disorder sits second on that list.\n\nThe classification follows from the phenomenology. `L4,5` files the whole family under the **quantitative increase** of the fear axis of mood and affect — **“Fear …. (Anxiety, Panic, Phobia)”** — three expressions of one emotion differing in pattern: anxiety is sustained and free-floating, phobia is stimulus-bound, and **panic is paroxysmal**. `L6) Myths about psychiatry` describes the paroxysm: **“Racing heartbeat, Shortness of breath, Overwhelming sense of fear, Chest tightness / dizziness, Feeling of impending doom,”** resolving **“typically within 10–20 min.”**\n\n**An important nuance the decks make explicit.** `L4,5` groups OCD and PTSD *with* the anxiety disorders on its list, but `L8) OCD & PTSD` records the modern position: **“DSM-5 Reclassification (2013): OCD and PTSD were separated from Anxiety Disorders due to distinct neurobiological, phenomenological, and treatment profiles.”** OCD now sits in *Obsessive-Compulsive and Related Disorders* and PTSD in *Trauma- and Stressor-Related Disorders*. **Panic disorder was not moved** — it, GAD, social anxiety disorder, specific phobia, agoraphobia, separation anxiety and selective mutism remain the anxiety disorders proper. That is why this question is answerable cleanly while Q32 of this topic has to be answered from the PTSD deck instead.\n\n**Why each distractor is wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Developmental disorders** | Neurodevelopmental conditions begin in childhood and involve impaired acquisition of skills — intellectual disability, autism spectrum disorder, ADHD, communication and learning disorders. Panic disorder typically begins in **late adolescence to the mid-thirties** and involves no developmental delay. `L4,5` lists intellectual disability separately under **“Intellectual disability (Mental subnormality) … (Organicity)”** |\n| **Mood disorders** | Mood disorders are disturbances of **sustained emotional state** — `L9,10) Mood disorders` builds them from the depressive episode (“depressed mood or… loss of interest or pleasure”) and the manic episode. `L4,5` separates **mood** (“Emotional experience, Long term”) from **affect** (“Emotional expression, Short term”). Panic is a brief autonomic paroxysm, not a sustained mood shift. Comorbidity is high — `L4,5` warns **“Comorbidity with depression and other anxiety disorders are very common”** — but comorbidity is not classification |\n| **Psychotic disorders** | Defined by loss of contact with reality — delusions and hallucinations. `L4,5` draws the line on insight: **“Intact …. (Anxiety)”** versus **“Absent .... (Psychosis),”** and its anxiety slide states plainly **“Insight is intact”** and **“No psychotic features.”** A panic patient fears she is “going crazy” but knows she is not — that fear is itself evidence of preserved insight |\n\n**Why the classification changes what you do.** Because panic disorder is an anxiety disorder, its treatment is the anxiety-disorder algorithm from `L4,5`: **CBT** plus an **SSRI**, given for **“One year then gradual withdrawal,”** with benzodiazepines **“Short duration, Not preferred.”** Misfiling it as a mood disorder would invite a mood stabiliser; misfiling it as psychotic would invite an antipsychotic. Q40 of this topic tests exactly that consequence.\n\n**Bottom line:** panic disorder is a core anxiety disorder — and unlike OCD and PTSD, DSM-5 left it there.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Panic disorder is a core anxiety disorder and stayed one in DSM-5, unlike OCD and PTSD which were reclassified out of the anxiety group in 2013.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71). Also printed in Neuro endpoint.pdf, Anxiety disorders, Q5, p.845 (answer p.846).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.69 (answer p.71). Also printed in Neuro endpoint.pdf, Anxiety disorders, Q5, p.845 (answer p.846). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q44, p.1511 (answer p.1512).'
   },
 
   {
@@ -2878,7 +2879,7 @@ var Q_NEURO = [
     answer:0,
     explanation:'**Bipolar disorder affects men and women equally — 1:1.** This is one of the few epidemiological numbers the department prints outright, and it is printed twice.\n\n`L9,10) Mood disorders` sets bipolar disorder (BD) beside depressive disorder (DD) in a single epidemiology table, and the gender row reads **“Females=Males”** for BD against **“Female: Male=2:1”** for DD. The same deck then asks the question itself in its own MCQ block — **“What is the female to male gender difference in Bipolar Disorders”** with **“C- 1/1”** among the choices — so this item is lifted straight from the lecture.\n\n**Note the direction of the ratio and why it does not matter here.** The bank asks for *males to females*; the deck states it as *females to males*. Equality is the one ratio that reads identically in either direction, so no reversal trap exists in this question — but it does exist in Q58 of this topic, which asks the depressive ratio in the female:male direction. Read which sex is named first before answering that one.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **2:1** | Male-to-female 2:1 is not a mood-disorder ratio at all. If the axis were reversed it would be the **depressive disorder** figure (`L9,10`: “Female: Male=2:1”) — this is the intended trap, mixing the two rows of one table |\n| **1:2** | The depressive-disorder ratio written male-first. Right number, wrong disorder — the deck gives no female excess in bipolar disorder |\n| **3:2** | Appears in neither row of the deck’s epidemiology table and corresponds to no mood disorder taught here |\n\n**The rest of that table is worth carrying with the ratio:** BD begins in **“Late teenagers and Early adulthood”** with a prevalence of **“1-2.8%”**, while DD peaks at **“40”** with a prevalence of **“5-17%”**. Bipolar disorder is the earlier, rarer, sex-neutral illness; depression is the later, commoner, female-predominant one.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Bipolar disorder has an equal sex ratio (1:1), unlike depressive disorder, which runs female:male 2:1.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.72 (answer p.75). Also printed in Neuro endpoint.pdf, Mood disorders, Q5, p.945 (answer p.946).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.72 (answer p.75). Also printed in Neuro endpoint.pdf, Mood disorders, Q5, p.945 (answer p.946). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q51, p.1525 (answer p.1526). Also printed in Neuro endpoint.pdf, Model Final Exam 3, Q16, p.1753 (answer p.1754), options reordered.'
   },
 
   {
@@ -3157,7 +3158,7 @@ var Q_NEURO = [
     answer:0,
     explanation:'**Many symptoms, many body systems, many years, and a normal workup — that combination is somatization disorder.** Count the systems before you count anything else: gastrointestinal (nausea, vomiting, diarrhoea), neurological (headache), constitutional (fatigue) and musculoskeletal (joint pain). Multiplicity across systems is the diagnostic signature.\n\n`L3) Somatization` defines somatic symptom disorder — which it names in parentheses as *"(Somatization Disorder)"* — as *"A disorder characterized by multiple somatic complaints requiring medical attention, but not associated with any physical disorder"*. Every clause is satisfied here. The deck\'s epidemiology fits her too: onset *"Commonly appears in persons 20 to 30 years of age"* and she is 20; prevalence *"estimated to be 4-6 % but may be as high as 15 %"*, so this is the common diagnosis, not an exotic one.\n\n**The lecture\'s own clinical case is the same patient, twenty years older.** `L3` opens with a woman whose *"complaints have varied and include abdominal pain, dysuria, dysmennorhea, and tiredness"*, who has been *"referred to gynecologists, urologists, and general surgeons"*, and in whom *"Extensive investigations have revealed no clear cause for her symptoms."* The word *unchanged* in the stem carries the chronicity the deck emphasises — these patients *"rarely respond to treatment, and if they do, their response is short-lived"*, and they *"exhaust the therapeutic repertoire of one physician and move on to the next."*\n\n**The management follows from the diagnosis, and it is deliberately restrained**: care directed by the *"Primary care practitioner"*, *"Regularly scheduled visits every 4-6 weeks; visits should be kept short"*, *"Avoid diagnostic tests, operative procedures unless clearly indicated"*, and *"Look for signs of disease rather than being symptom focused."* Ordering another round of investigations on a normal workup is the error the deck spends five slides warning against.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Generalized anxiety disorder** | Defined by worry, not by bodily complaint. `L8) OCD & PTSD` characterises GAD as *"Repetitive worry, anxiety"* with *"Worries are realistic, ego-syntonic"*, and the diagnosis requires excessive anxiety and worry, difficult to control, on more days than not for at least six months *(the full criterion set is not printed in these decks)*. The stem reports no worry, no apprehension and no autonomic anxiety — only symptoms |\n| **Dissociative disorder** | The wrong domain entirely. Dissociation is a disruption of memory, identity, consciousness or perception, not of bodily function *(the dissociative disorders are not taught as a category in these 25 decks)*. What the decks do print is dissociation as a **feature** of trauma: `L8` makes it a *"Required criterion (≥9 of 14 symptoms)"* of acute stress disorder and lists *"Trauma amnesia (dissociative)"* in PTSD, while `L6) Myths about psychiatry` corrects the popular confusion — *"Split personality = Dissociative Identity Disorder — a completely different condition"* |\n| **Conversion disorder** | Wrong symptom type and wrong tempo. `L3` requires *"One or more symptoms of altered voluntary motor or sensory function"* with *"incompatibility between symptom and neurological condition"*, and its mnemonic is *"SUDDEN, SYMBOLIC, SECONDARY GAIN"*. Nausea, diarrhoea, fatigue and joint pain are neither voluntary motor nor sensory functions, and two unchanged years is the opposite of sudden |\n\n**Bottom line:** conversion is one neurological deficit arriving suddenly; somatization is many symptoms across many systems grinding on for years with normal investigations.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Multiple unexplained somatic complaints spanning several body systems, persisting for years with normal investigations in a patient aged 20-30, is somatization disorder — distinguished from conversion by symptom multiplicity, non-neurological character and chronic tempo.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.77 (answer p.78). Also printed in Neuro endpoint.pdf, Somatic disorders, Q4, p.1040 (answer p.1041).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.77 (answer p.78). Also printed in Neuro endpoint.pdf, Somatic disorders, Q4, p.1040 (answer p.1041). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q58, p.1539 (answer p.1540). Also printed in Neuro endpoint.pdf, Model Final Exam 3, Q2, p.1724 (answer p.1725), options reordered.'
   },
 
   {
@@ -3247,7 +3248,7 @@ var Q_NEURO = [
     answer:3,
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> Hyperactivity is the symptom most likely to remit first as the child grows older. Hyperactivity tends to decrease during adolescence and adulthood, although other symptoms, such as inattention and impulsivity, may persist.\n\n**The gross motor overactivity is the part of ADHD that grows out; the attentional deficit is the part that stays.** That is the whole answer, and the box states it plainly.\n\n**⚠️ `L14) Child Psychiatry` prints no prognosis at all for ADHD** — no course, no remission rate, no age of decline. Its ADHD run goes criteria, then *"Management"*, and stops. The trajectory this question tests is therefore supplied from outside the lecture *(the age-related decline of hyperactivity relative to inattention is not taken from the course material)*. What the deck does give is a developmental frame that makes the pattern intelligible: its opening slides describe synaptic overproduction and *"The Pruning Paradox"* — *"Use it or lose it: efficient circuits strengthen while unused connections are discarded — especially during ages 2-3 and adolescence"* — and note that when *"overproduction and pruning fail to balance, abnormal connectivity emerges — linked to autism, ADHD, and other disorders"*. Adolescence is exactly when hyperactivity is described as fading, and it is the second of the deck\'s two pruning windows.\n\n**Read the question as a mother\'s question, which is how it is written.** She is not asking whether the diagnosis goes away; she is asking what changes. The honest answer is that the visible restlessness — the child who *"runs about or climbs in situations where it is inappropriate"* and is *"on the go, acting as if driven by a motor"* — usually settles into subjective restlessness by adolescence, while the inattentive items (*"difficulty sustaining attention"*, *"often loses things necessary for tasks"*, *"often forgetful in daily activities"*) and the impulsive ones persist and increasingly drive the impairment.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Learning difficulties** | Not an ADHD symptom in the first place — `L14` lists specific learning disorder as a separate neurodevelopmental disorder, *"Difficulties learning and using academic skills … persisted for at least 6 months, despite the provision of interventions that target those difficulties"*. Where it co-exists with ADHD it is a second diagnosis with its own course, and it does not remit with age; the deck states the difficulties persist despite targeted intervention |\n| **Aggressiveness** | Not an ADHD criterion either. It appears on neither of `L14`\'s two symptom lists, and where an ADHD child is aggressive the driver is usually a comorbid disruptive behaviour disorder (see Q81) — which, untreated, tends to worsen through adolescence rather than remit |\n| **Impulsivity** | The trap, because it sits in the same criterion set as hyperactivity — *"Hyperactivity and impulsivity"* is one list in the deck, and the two are easily read as one symptom. The bank\'s own box separates them: *"other symptoms, such as inattention and impulsivity, may persist"*. Impulsive items such as *"blurts out an answer before a question has been completed"* and *"difficulty waiting his or her turn"* carry into adult life as poor judgement, risk-taking and interruption |\n\n**Bottom line:** hyperactivity first, and it is the only one of the four that is both an ADHD symptom and age-limited.',
     objective:'Hyperactivity is the ADHD symptom most likely to remit first, declining through adolescence and adulthood, while inattention and impulsivity persist; learning difficulty and aggression are not ADHD symptoms but comorbid diagnoses with their own courses.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.79 (answer p.81). Also printed in Neuro endpoint.pdf, Child psychiatry, Q2, p.1109 (answer p.1110).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.79 (answer p.81). Also printed in Neuro endpoint.pdf, Child psychiatry, Q2, p.1109 (answer p.1110). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q65, p.1553 (answer p.1554).'
   },
 
   {
@@ -3347,7 +3348,7 @@ var Q_NEURO = [
     answer:1,
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> The 12-year-old boy is exhibiting symptoms of obsessive-compulsive disorder (OCD), specifically compulsive behaviors such as repeating sentences, counting, and restarting tasks if interrupted. These behaviors are classic manifestations of OCD, where individuals feel compelled to perform rituals to reduce anxiety or prevent perceived harm. Clomipramine is a tricyclic antidepressant that has proven efficacy in treating OCD. It works by inhibiting the reuptake of serotonin, which helps reduce obsessive thoughts and compulsive behaviors.\n\n**Recognise the rituals first, then pick the drug — and only one drug on this list treats OCD at all.**\n\n**The rituals are the diagnosis.** `L8) OCD & PTSD` defines compulsions as *"Repetitive behaviours or mental acts performed in response to obsessions or rigid rules"*, and its table of common compulsions prints repeating, counting and ordering among them. Two details in the stem are worth naming. *"Severely upset"* marks the acts as **ego-dystonic** — the boy does not want to do them, which is what the deck means when it lists ego-dystonic thought content in the mental state examination. And *"if he is interrupted, he has to start from the beginning"* is the ritual\'s all-or-nothing structure: the sequence must be completed intact or the anxiety it discharges returns. The DSM-5 threshold is met by the distress alone — *"Symptoms >1 hr/day OR cause clinically significant distress/impairment"*.\n\n**Why a child.** The deck gives OCD a lifetime prevalence of *"2-3%"* with a *"Bimodal peak: childhood and early adulthood"*, notes a *"3-5x increased risk in first-degree relatives"*, and lists the paediatric complications — *"school refusal, family accommodation"*. A 12-year-old with rituals is squarely inside the first peak, not an oddity.\n\n**⚠️ Where the box is thin: clomipramine is the course\'s second-line drug, not its first.** `L8`\'s pharmacological table prints four SSRIs starred as first line — *"Fluoxetine ★ SSRI 1st line 40-80 mg/day"*, *"Fluvoxamine ★ SSRI 1st line 100-300 mg/day"*, *"Sertraline ★ SSRI 1st line 100-200 mg/day"*, *"Paroxetine ★ SSRI 1st line 40-60 mg/day"* — and then *"Clomipramine ★ TCA 2nd line 100-250 mg/day"*. It reappears at the top of the stepped ladder as *"Step 4 — Specialist/Inpatient Care: IV clomipramine, DBS, rTMS"*. So the honest answer to *"which drug has proven effective"* is *clomipramine, yes — as the second-line agent*; no SSRI is offered among the options, which is why the question works. Note also that drugs are not the first move at all: the deck\'s *"Step 2 — CBT-ERP + SSRI"* is the *"First-line combination"*, with *"ERP achieves 50-70% symptom reduction"*, and NICE is quoted as *"First-line — CBT-ERP ± SSRI"*.\n\n**The mechanism the box gives is the deck\'s own logic.** Clomipramine is the most serotonergic of the tricyclics, and `L8`\'s neurochemistry table makes serotonin the target — the OCD drugs are the serotonergic ones, whatever their class label.\n\n**Why the other options are wrong:**\n\n| Option | Why it fails |\n|---|---|\n| **Propranolol** | A beta-blocker with no role in OCD. The course gives it one indication: `L3) MOVEMENT DISORDERS` prints *"Treatment: Propranolol - Topiramate"* for essential tremor. It is the tempting answer only if the rituals are misread as a movement disorder — and `L8` closes that door in its differential table, where tic disorders resemble OCD in *"Repetitive movements"* but *"Tics are involuntary, not aimed at neutralising anxiety"*. This boy\'s repeating is deliberate and anxiety-driven, so it is a compulsion, not a tic |\n| **Phenobarbital** | A barbiturate anticonvulsant, and the course does not name it as a drug at all — barbiturates appear only as sedatives capable of causing delirium (`L13) Dementia and Delirium`) and among the substances requiring detoxification (`L15`). Nothing connects it to OCD |\n| **Alprazolam** | The plausible wrong answer, because the boy is anxious. `L17) Psychopharmacology` names it among the *"most commonly prescribed Benzos"* — *"Alprazolam (Xanax)"* — and restricts benzodiazepine indications to *"Panic disorder · Generalized anxiety disorder · Insomnia · Seizures · Alcohol withdrawal"*, with the ceiling printed in bold red: *"must NOT be used more than ONE month"*. OCD is not on that list; the illness is chronic, so a one-month drug cannot treat it; and the deck\'s adverse-effect slide ends on *"Tolerance and dependence"* — the last thing to start in a 12-year-old |\n\n**Bottom line:** counting, repeating and restarting rituals that distress the child are OCD, and of the four drugs offered only clomipramine — the serotonergic tricyclic, second line behind the SSRIs and CBT-ERP — has proven efficacy in it.',
     objective:'Repeating, counting and restart-if-interrupted rituals that distress the child are OCD compulsions; clomipramine, a serotonergic tricyclic, is the course\'s second-line drug behind first-line CBT-ERP plus an SSRI, while propranolol, phenobarbital and alprazolam have no role.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.80 (answer p.81). No dose is printed for clomipramine in the bank; the doses quoted in the explanation are from L8) OCD & PTSD. Also printed in Neuro endpoint.pdf, Anxiety disorders, Q3, p.841 (answer p.842).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.80 (answer p.81). No dose is printed for clomipramine in the bank; the doses quoted in the explanation are from L8) OCD & PTSD. Also printed in Neuro endpoint.pdf, Anxiety disorders, Q3, p.841 (answer p.842). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q10, p.1443 (answer p.1444).'
   },
 
   {
@@ -3557,7 +3558,7 @@ var Q_NEURO = [
     answer:0,
     explanation:'**Clozapine — and it is the only drug in the material that carries this indication.** The book\'s schizophrenia chapter (`neuropsychiatry.pdf`, printed p.238) names it directly for **treatment-resistant (refractory) schizophrenia**, and pairs the indication with the reason it is not used first: **agranulocytosis**.\n\n**What "treatment-resistant" means here.** The standard definition — failure of an adequate trial of two different antipsychotics, at least one of them second-generation — is **not taken from the course material**; the chapter prints the phrase without defining it. What the material does make clear is the sequence: an antipsychotic is chosen from the classes on printed p.236, and clozapine is what you reach for **after** the ordinary agents have failed, not instead of trying them.\n\n**Why it is held back.** Agranulocytosis is the printed reason. ⚠️ **Note carefully what the chapter does and does not say:** it names agranulocytosis on printed p.238 and then **never instructs you to monitor a white cell count** — no threshold, no interval, no dose appears anywhere in the chapter. The mandatory **serial blood-count monitoring** that clozapine carries in practice is therefore **not taken from the course material**, and neither are the specific neutrophil counts and schedules you may have seen elsewhere; they are deliberately not reproduced here. Learn the rule, not a number: *check the white cell count, and stop the drug if it falls.* The other associations — myocarditis, seizures at higher doses, marked sedation — are likewise **not taken from the course material**, though printed p.238 does record **hypersalivation**, **prominent weight gain** and common **anticholinergic effects** for clozapine.\n\n**Why the other three are wrong for this stem:**\n\n| Option | What it is | Why it is not the answer |\n|---|---|---|\n| **Aripiprazole** | The book classes it separately as **3rd generation** — a *"Partial Dopamine agonist antagonist"* or **dopamine stabilizer** (printed p.236) | A reasonable *first- or second-line* choice, and the chapter records **hyperprolactinaemia as rare** with it — but the material gives it no refractory indication |\n| **Olanzapine** | **Atypical**, a dopamine and serotonin antagonist (printed p.236) | Widely used first-line, and printed p.237 names it for **prominent weight gain** and **common anticholinergic effects**. It is a drug you will have *already failed* before the word "resistant" applies |\n| **Haloperidol** | **Typical (first-generation)**, high potency | The classic conventional agent, and printed p.237 puts it at the sharp end of the **extrapyramidal side effects** — treated, the chapter says, with anticholinergics and **propranolol**. It is also the drug the material picks for acute agitation, which is a different question |\n\n⚠️ **Do not confuse "drug of choice for a resistant case" with "drug of choice for a non-compliant one."** Printed p.238 answers the second one separately, under the same heading *"Treatment of resistant cases & non-compliant patients"*: **long-acting depot preparations** are for the patient *"unwilling or unable to take medication regularly"*, and the chapter says they **reduce the risk of relapse** more than oral medication. Non-compliance is not resistance.\n\n**One non-drug answer sits beside clozapine.** The same page lists **ECT** for *"suicidal/homicidal attempts, catatonic stupor, excitement and resistant cases"*, and the chapter\'s resistant-case flow runs clozapine or depot → psychosocial interventions → ECT. This stem asks for a **drug**, so the answer is still clozapine.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Clozapine is the drug of choice for treatment-resistant schizophrenia; its risk of agranulocytosis is why it is reserved and why it requires blood-count monitoring, while depot antipsychotics answer the different problem of non-compliance.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). Also printed in Neuro endpoint.pdf, Schizophrenia, Q3, p.1166 (answer p.1167).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). Also printed in Neuro endpoint.pdf, Schizophrenia, Q3, p.1166 (answer p.1167). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q26, p.1475 (answer p.1476). Also printed in Neuro endpoint.pdf, Model Final Exam 5, Q39, p.2079 (answer p.2080).'
   },
 
   {
@@ -3567,7 +3568,7 @@ var Q_NEURO = [
     answer:2,
     explanation:'The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> Mohamed\'s symptoms are most consistent with schizophrenia, characterized by: Auditory hallucinations (whispering in an agitated voice when no one is nearby). Delusions (fixed false beliefs, such as his parents conspiring with aliens to kill him). Social and occupational dysfunction (stopping attendance at university and risk of failing).\n\n**The vignette is built out of the DSM-5 criteria, one clause at a time.** Map it back to the book\'s chapter (`neuropsychiatry.pdf`, printed p.232) and nothing is left over:\n\n| What the stem says | Criterion it satisfies |\n|---|---|\n| *"whispering in an agitated voice, even thought there is no one nearby"* | **Hallucination** — `L4,5) Psychiatric symptomatology` defines it as a perception with no external stimulus. Answering an unheard voice is the observable sign of it |\n| *"accused his parents … of conspiring with the aliens to have him killed"* | **Persecutory delusion** — `L4,5` prints the definition: *"False fixed belief, can\'t be reasoned, not related to the cultural or religious background of the patient."* The aliens make it **bizarre**, which printed p.232\'s Note box treats as carrying particular weight |\n| *"has stopped attending classes altogether … will fail"* | **Social / occupational dysfunction**, the criterion that separates a symptom from an illness |\n| *"over the past few months"* | The **duration** criterion — signs continuous for at least six months, at least one of them active-phase |\n\n**And the demographics fit.** Printed p.228 puts onset in **late adolescence and young adulthood**, slightly more common in males and with an earlier onset in them. Mohamed is 21.\n\n**Why the other three are wrong:**\n\n| Option | What it would need |\n|---|---|\n| **Mania** | An elevated, expansive or irritable **mood** with increased energy — the whole picture must be driven by the mood change, with pressure of speech, reduced sleep and grandiosity. `L9,10) Mood disorders` does allow psychotic features here, but they are the specifier, not the diagnosis, and there is **no mood elevation anywhere in this stem** — the agitation described is the agitation of talking back to voices |\n| **Depression** | Persistent low mood, anhedonia and the biological symptoms. Withdrawal and failing classes are compatible, but psychotic depression\'s delusions are typically **mood-congruent** (guilt, worthlessness, nihilism), not persecution by aliens, and the stem records no low mood at all |\n| **PTSD** | An index **traumatic event**, then re-experiencing (flashbacks, nightmares), avoidance and hyperarousal. There is no trauma in this history, and a flashback is a re-lived memory — not a voice commenting from outside |\n\n⚠️ **Two printing slips in the stem, transcribed as the bank prints them:** *"a 21-year university student"* (no "-old") and *"even thought there is no one nearby"* ("thought" for "though"). Neither changes the meaning.\n\n**Note the word "provisional".** At a few months\' history the safe formulation is a provisional diagnosis of schizophrenia — the six-month clock and the differential on printed p.235 (drug-induced psychosis, delirium, mood disorder with psychotic features) still have to be cleared.',
     objective:'A young adult with auditory hallucinations, bizarre persecutory delusions and months of social and occupational decline, without mood elevation, low mood or a traumatic index event, is a provisional case of schizophrenia.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). The bank prints an Explanation box for this question; curly apostrophes in the printed stem and box are straightened here. Also printed in Neuro endpoint.pdf, Schizophrenia, Q4, p.1168 (answer p.1169).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). The bank prints an Explanation box for this question; curly apostrophes in the printed stem and box are straightened here. Also printed in Neuro endpoint.pdf, Schizophrenia, Q4, p.1168 (answer p.1169). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q27, p.1477 (answer p.1478).'
   },
 
   {
@@ -3577,7 +3578,7 @@ var Q_NEURO = [
     answer:1,
     explanation:'**Delusions — the only item on this menu that both illnesses actually produce. The other three are the cortical deficits of Alzheimer disease, and schizophrenia has none of them.**\n\n**Look at how the menu is built.** `L13) Dementia and Delirium` prints the diagnostic domains of Alzheimer disease as **amnesia, aphasia, apraxia, agnosia** and **topographical disorientation**. Three of the four options here — apraxia, disorientation, aphasia — are lifted straight off that list. Only **delusion** is not, and that is the whole trick of the question.\n\n**Delusions in schizophrenia.** They are a core positive symptom: the book\'s chapter (`neuropsychiatry.pdf`, printed p.232) opens Criterion A with delusions, and `L11,12) Schizophrenia` builds the Schneiderian first-rank list around them — delusional perception, delusions of control and passivity.\n\n**Delusions in Alzheimer disease.** `L13` records the **behavioural and psychological symptoms of dementia (BPSD)** in around **90%** of patients, and names **delusion** and **hallucination** among them. The classic dementia delusions are of theft, of infidelity, and of the house not being one\'s own *(those three specific themes are **not taken from the course material**)*. So the symptom is shared — but the mechanism and the setting are not: in schizophrenia it arrives in a young adult with intact cognition, in Alzheimer disease it arrives late, on a floor of progressive memory loss.\n\n**Why the other three are Alzheimer-only:**\n\n| Option | What it is | Why schizophrenia does not have it |\n|---|---|---|\n| **Apraxia** | Inability to carry out a learned skilled movement despite intact motor power, sensation and comprehension | A **cortical deficit**. Schizophrenia has motor abnormalities — catatonia, grossly disorganised behaviour on printed p.232 — but disorganisation is not loss of a learned motor programme |\n| **Disorientation** | Loss of orientation to time, place or person | The hallmark of an **organic** state, and the discriminator the book leans on in its differential on printed p.235: **delirium** has the acute onset and the fluctuating level of consciousness, dementia the progressive cognitive decline. The schizophrenic patient is characteristically **alert and oriented** — his beliefs are wrong, not his coordinates |\n| **Aphasia** | Loss of language — a defect of the language apparatus itself | Not the same object as schizophrenia\'s **disorganised speech** or **alogia**. Disorganised speech is fluent but derailed; alogia is poverty of output. In aphasia the machinery is broken; in schizophrenia the content or the drive is |\n\n⚠️ **The pitfall this question is built on:** knowing that schizophrenia disturbs thought and speech makes aphasia and disorganisation feel interchangeable. They are not. Sort the menu by *which illness owns it* — three belong to Alzheimer disease alone, one belongs to both.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Delusions occur in both schizophrenia (as a core positive symptom) and Alzheimer disease (as part of BPSD), whereas apraxia, aphasia and disorientation are cortical or organic deficits of dementia that schizophrenia does not produce.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). Also printed in Neuro endpoint.pdf, Dementia and delirium, Q3, p.1293 (answer p.1294).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). Also printed in Neuro endpoint.pdf, Dementia and delirium, Q3, p.1293 (answer p.1294). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q53, p.1529 (answer p.1530).'
   },
 
   {
@@ -3597,7 +3598,7 @@ var Q_NEURO = [
     answer:2,
     explanation:'**This is post-operative delirium, not schizophrenia — and the drug is an antipsychotic.**\n\n**Read the three cues that make it delirium.** `L13) Dementia and Delirium` calls delirium an *"acute confusional state or acute brain failure"* and records that **postoperative delirium occurs in 15–53% of patients**. Everything in the stem points there:\n\n| Cue | Why it matters |\n|---|---|\n| **Third day of hospitalisation, after surgery** | Acute onset in a medically stressed patient — the classic window. A primary psychotic illness does not begin on a surgical ward on day three |\n| **Visual** hallucinations | `L4,5) Psychiatric symptomatology` prints the rule of thumb bluntly: *"Visual …….. Organicity."* Visual hallucinations point away from schizophrenia and toward an organic cause. Here they are visual **and** auditory, which is even less like a primary psychosis |\n| **Agitation** | The hyperactive form of delirium — the part that needs treating tonight, while the cause is being found |\n\n**Why an atypical antipsychotic.** `L13` sets out the management in order: **treat the underlying cause** first, then **environmental interventions** (orientation cues, frequent reorientation, familiar visitors, minimal staff switching), then — for the agitation itself — *"Small doses of antipsychotics \'as haloperidol\' and \'risperidone\' can be used to control agitation"* and *"Atypical antipsychotics may be used as low doses of quitiapine"* (the lecture\'s own spelling). The atypicals are preferred in this setting because they carry less extrapyramidal burden than the conventional agents. ⚠️ **No dose is printed** — the lecture says "small doses" and "low doses" and stops there, and this bank prints no dose anywhere in the topic, so any milligram figure you have seen is **not taken from the course material**.\n\n**Why the other three are wrong — and one of them is a trap:**\n\n| Option | What it is for | Why not here |\n|---|---|---|\n| **A benzodiazepine** | Sedation, alcohol and sedative withdrawal, catatonia | ⚠️⚠️ **The trap, and the most dangerous answer on the menu.** `L13` says explicitly to *"Minimize psychoactive medications especially those with anticholinergic potentials and sedating one"* — and it lists **sedatives (benzodiazepines, barbiturates)** among the *causes* of delirium. Giving one to a delirious post-operative patient typically deepens the confusion. The one exception is delirium **due to alcohol or sedative withdrawal**, which this stem does not describe |\n| **Propranolol** | A beta blocker. In this material its psychiatric use is on printed p.237 of the book, where it is one of the treatments for antipsychotic-induced **extrapyramidal side effects** — akathisia in particular | Treats no part of an acute confusional state, and does nothing for hallucinations |\n| **SSRI** | Depression and the anxiety disorders | Wrong target and wrong timescale — an SSRI takes weeks to act, and this patient is agitated and hallucinating now |\n\n⚠️ **The printed stem reads "the most appropriated drug"** (for *appropriate*) — the bank\'s own slip, transcribed as printed.\n\n**Filed under Delirium, not schizophrenia.** The item sits inside the bank\'s schizophrenia topic, but its entire discriminating content — the post-operative onset, the visual hallucinations, the benzodiazepine trap and the small-dose antipsychotic rule — is taught in `L13) Dementia and Delirium`.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Agitation with visual and auditory hallucinations on the third post-operative day is delirium: treat the cause and use environmental measures, control the agitation with a small dose of an antipsychotic (atypicals preferred), and avoid benzodiazepines, which can deepen the delirium.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). The stem is printed "the most appropriated drug" — the book\'s own slip, transcribed as printed. The options name bare agents and drug classes only; no dose is printed. Also printed in Neuro endpoint.pdf, Mood disorders, Q6, p.947 (answer p.948).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.84 (answer p.85). The stem is printed "the most appropriated drug" — the book\'s own slip, transcribed as printed. The options name bare agents and drug classes only; no dose is printed. Also printed in Neuro endpoint.pdf, Mood disorders, Q6, p.947 (answer p.948). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q56, p.1535 (answer p.1536). Also printed as Model Final Exam 2, Q39, p.1653 (answer p.1654).'
   },
 
   {
@@ -3797,7 +3798,7 @@ var Q_NEURO = [
     answer:2,
     explanation:'**⚠️⚠️ THE OPTION LIST IS DEFECTIVE, AND IT IS RECORDED HERE RATHER THAN REPAIRED.** The bank prints its four age bands **out of ascending order and overlapping**. Exactly as printed:\n\n| Printed as | Band |\n|---|---|\n| **a** | **"55 to 65"** |\n| **b** | **"74 to 84"** |\n| **c** | **"85 and older"** |\n| **d** | **"65 to 74"** |\n\n**Two ages belong to two options at once.** A patient of **65** falls inside both **a** (55 to 65) and **d** (65 to 74); a patient of **74** falls inside both **b** (74 to 84) and **d** (65 to 74). The bands also run a → d as 55, 74, 85, 65, so **d is printed after the band that follows it**. **The printed key is C and the answer does not move** — C is the only band the defect cannot touch, because it is open-ended at the top and shares no boundary with any other option. **A defective source is noted, never corrected and never disputed.**\n\n**What the lecture does print about age, and what it does not.**\n\n`L13) Dementia and Delirium` makes age the first of the eight risk factors for Alzheimer\'s disease and marks it out: *"Age: mostly affects elderly population > 65 years"*, followed by the deck\'s own **N.B.** — *"this is the most important risk factor, however this DOESN\'T mean that anyone above 65 years will suffer from dementia."* Its second classification of dementia splits the same way: **presenile, before 65**, against **senile, after 65 years old**. And `ge-8` records **ApoE4 for late-onset AD**, the only quantified genetic risk in the module — **one allele doubles the risk, two multiply it fivefold.**\n\n⚠️ **But no age-banded prevalence is printed anywhere in the material.** The deck\'s one prevalence table breaks the figures down **by type of dementia**, not by age — Alzheimer\'s 65–85 %, Lewy body 15–30 %, vascular 20–30 %, frontotemporal 5–10 %, others 5–10 % — and even that is defective, the lower bounds totalling 110 % and the upper 165 %. The phrase *age group* returns **zero** across all 25 cached decks, checked twice by two methods. **The banded answer is therefore filled from general knowledge:** the prevalence of Alzheimer\'s disease rises steeply and continuously with age, roughly doubling every five years beyond 65, so the oldest band always carries the highest rate — **85 and older**, *not taken from the course material*.\n\n**The three bands that are not the answer:**\n\n| Option | Where it sits |\n|---|---|\n| **55 to 65** | Almost entirely **presenile**, on the deck\'s own before-65 side of the line. Alzheimer\'s does occur here — this is the territory of early-onset disease — but it is rare, and the deck\'s risk-factor slide starts the clock at **> 65** |\n| **65 to 74** | The band in which risk becomes real rather than exceptional. It is where the deck\'s **senile** category and its most important risk factor begin, which makes it the plausible wrong answer — the one you pick if you read the stem as asking where the risk *starts* rather than where it is *highest* |\n| **74 to 84** | Higher again, and higher than either band below it, but still bounded above. It loses to the open-ended band on the same monotonic rise, *not taken from the course material* |\n| **85 and older** *(the keyed answer)* | The only open-ended band, and the top of a curve that never turns down |\n\n**⚠️ And the deck\'s own N.B. is the trap to hold on to:** age is the most important risk factor, and it is still **not** true that everyone above 65 will become demented. The question asks which band reports the **highest rate**, not which band is affected.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
     objective:'Age is the most important risk factor for Alzheimer\'s disease and the rate rises continuously with it, so the oldest band - 85 and older - reports the highest rate; the lecture itself prints no age-banded prevalence, only "mostly affects elderly population > 65 years" and the presenile/senile split at 65.',
-    source:'neuropsychiatry & neurosurgery qb.pdf p.87 (answer p.88). All four age bands were read off a 400 dpi crop, not from OCR. DEFECT OF SUBSTANCE, RECORDED AND NOT CORRECTED: the bands are printed out of ascending order (a "55 to 65", b "74 to 84", c "85 and older", d "65 to 74") and they overlap - 65 falls in both a and d, 74 in both b and d. The printed key C is transcribed as printed and is not disputed. SOURCE WORDING: a "Which ..." stem closed with a colon rather than a question mark, and "Alzheimer cases" with no possessive; as printed. No Explanation is printed and the answer page gives the bare letter "(C)" with no name beside it, so the key carries no corroboration. Also printed in Neuro endpoint.pdf, Dementia and delirium, Q2, p.1291 (answer p.1292).'
+    source:'neuropsychiatry & neurosurgery qb.pdf p.87 (answer p.88). All four age bands were read off a 400 dpi crop, not from OCR. DEFECT OF SUBSTANCE, RECORDED AND NOT CORRECTED: the bands are printed out of ascending order (a "55 to 65", b "74 to 84", c "85 and older", d "65 to 74") and they overlap - 65 falls in both a and d, 74 in both b and d. The printed key C is transcribed as printed and is not disputed. SOURCE WORDING: a "Which ..." stem closed with a colon rather than a question mark, and "Alzheimer cases" with no possessive; as printed. No Explanation is printed and the answer page gives the bare letter "(C)" with no name beside it, so the key carries no corroboration. Also printed in Neuro endpoint.pdf, Dementia and delirium, Q2, p.1291 (answer p.1292). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q5, p.1433 (answer p.1434).'
   },
 
   {
@@ -4071,7 +4072,7 @@ var Q_NEURO = [
     "answer": 0,
     "explanation": "The bank prints an explanation box for this question. **Transcribed verbatim as printed:**\n\n> This patient is presenting with neuroleptic malignant syndrome (NMS), a rare but life-threatening condition associated with the use of antipsychotics. Key features include: Severe muscle rigidity Hyperthermia (temperature >38°C) Autonomic dysregulation (e.g., hypertension). Altered mental status (e.g., confusion, disorientation). Leukocytosis and elevated creatine kinase (CK) levels. Bromocriptine, a dopamine agonist, is commonly used to counteract dopamine receptor blockade caused by antipsychotics.\n\nThe printed explanation names NMS and describes bromocriptine as commonly used; it does not itself call it first-line. Bromocriptine is the printed answer among these options. The lecture `L15) substance related disorder and psychiatry emergency` describes NMS in its \"Neuroleptic Malignant Syndrome\" section, listing the tetrad (mental status change, rigidity, fever, dysautonomia) and noting that \"Dopaminergic drugs, such as bromocriptine and amantadine\" are used in treatment. The staged stem prints 39.4 C and 180/100 mmHg; the staged box separately prints temperature >38°C. These numerical strings are preserved. Bromocriptine works by stimulating dopamine receptors, counteracting the antipsychotic dopamine blockade described in the printed box. L15 also lists discontinuing the offending drug, ICU admission and supportive care; the keyed drug is part of management.\n\nAnalysis of incorrect options:\n\n| Option | Actual Concept | Why It Is Incorrect |\n| :--- | :--- | :--- |\n| **Lithium** | A mood stabilizer used in bipolar disorder. | It is not the NMS treatment named here; the draft’s warning that lithium could worsen the condition or contribute to toxicity is not taken from the course material. |\n| **Haloperidol** | A typical antipsychotic (dopamine D2 antagonist). | It is an *antipsychotic* and would likely *worsen* NMS, which is caused by dopamine blockade. It is a potential precipitant, not a treatment. |\n| **Lamotrigine** | An anticonvulsant/mood stabilizer used in bipolar disorder. | It has no role in the acute management of NMS, which requires dopaminergic stimulation. |",
     "objective": "Recognize the bank’s NMS presentation and its keyed drug, bromocriptine, within management that also requires stopping the offending drug and supportive care.",
-    "source": "neuropsychiatry & neurosurgery qb.pdf p.90 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key. Also printed in Neuro endpoint.pdf, Emergency psychiatry, Q4, p.1245 (answer p.1246)."
+    "source": "neuropsychiatry & neurosurgery qb.pdf p.90 (answer p.91). The answer page prints the bare letter with no option name beside it, so the letter-versus-name cross-check was unavailable for this key. Also printed in Neuro endpoint.pdf, Emergency psychiatry, Q4, p.1245 (answer p.1246). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q42, p.1507 (answer p.1508)."
   },
   {
     "id": "npqb-ps-152",
@@ -4737,13 +4738,13 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-188', bank:'gradegain', module:'neuropsych', chapter:'nr-coma',
+  id:'npqb-nr-188', bank:'gradegain', module:'neuropsych', chapter:'nr-coma', alsoIn:['endpoint'],
   stem:'What is the characteristics of mild traumatic brain injury?',
   options:['Glasgow Coma Score 13','Uncal herniation','Manifestations of brain compression','Lucid interval'],
   answer:0,
   explanation:'**Mild traumatic brain injury is defined by a Glasgow Coma Score of 13-15, and GCS 13 sits inside that band — the other three options are all features of a severe or expanding intracranial mass, not of a mild injury.** *(This classification is not taken from the course material — no dedicated coma/TBI lecture is cached for this topic; the GCS severity bands are standard and widely taught.)*\n\nTraumatic brain injury is graded by the GCS taken after resuscitation: **mild = 13-15**, **moderate = 9-12**, **severe = 8 or less**. A mild injury by definition keeps the patient close to fully alert, with at most confusion or brief loss of consciousness, and most patients recover without a structural lesion needing evacuation.\n\n**Why the others are wrong.** **Uncal herniation** is a late, severe complication of raised intracranial pressure — the medial temporal lobe (uncus) is pushed through the tentorial notch, compressing the third cranial nerve and midbrain, producing a blown pupil and progressive coma; it belongs to a deteriorating severe head injury, not a mild one *(this herniation mechanism is not taken from the course material)*. **Manifestations of brain compression** — a falling conscious level, a widening pulse pressure, bradycardia, focal deficits — describe an expanding mass lesion doing exactly the opposite of what "mild" implies *(these compression signs are not taken from the course material)*. **Lucid interval** is the classic history of extradural haematoma: the patient is briefly conscious after the initial impact before deteriorating as the haematoma expands — a warning sign that a head injury is severe and surgically urgent, not mild *(this lucid-interval account is not taken from the course material)*.\n\nThe wording of option a gives a single score, **13**, rather than reciting the full 13-15 range. That is still a valid characteristic: 13 is the lowest score within the mild band, whereas none of the other options is a grading criterion at all. The practical consequence is that a patient initially labelled mild still needs reassessment if headache, vomiting, worsening drowsiness, a new focal deficit, unequal pupils, or any later fall in GCS develops; the label reflects the measured level of consciousness at that time and must not be used to dismiss subsequent deterioration *(these assessment and reassessment points are not taken from the course material)*. A serial GCS is therefore more informative than one isolated number: a change from 15 to 13 may be clinically important even though both values remain in the numerical mild range, because the direction of change raises concern for an evolving intracranial process *(this interpretation is not taken from the course material)*.\n\nThe score should therefore be recorded alongside the component pattern, not treated as a complete description by itself: two patients can share a total while having different eye, motor, and verbal responses. It also does not decide whether a CT scan, observation, or admission is needed; those decisions depend on the whole presentation and local protocol, not a label alone *(these limitations of GCS use are not taken from the course material)*.\n\n**Bottom line:** GCS 13-15 is what makes a head injury "mild"; herniation, compression signs and a lucid interval are all markers that the injury is severe or about to become so.\n\nWritten for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
   objective:'Mild traumatic brain injury is defined by GCS 13-15; uncal herniation, signs of brain compression and a lucid interval are all markers of a severe or deteriorating injury instead.',
-  source:'neuropsychiatry & neurosurgery qb.pdf p.38 (answer p.39)'
+  source:'neuropsychiatry & neurosurgery qb.pdf p.38 (answer p.39). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q13, p.1449 (answer p.1450).'
 },
 
 {
@@ -4753,7 +4754,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'**The bank prints an explanation box for this question, transcribed here verbatim:**\n\n> PVS is characterized by spontaneous eye opening and breathing but the absence of awareness or purposeful responses\n\n**Six weeks after a head injury, spontaneous eye opening and spontaneous breathing with no response to verbal stimulation is the textbook description of persistent vegetative state (PVS), and the box states the diagnostic logic directly: the brainstem-driven functions (eye opening, breathing) have returned, but the cortically-driven ones (awareness, purposeful response) have not.**\n\nPVS follows a period of coma once the brainstem recovers arousal circuitry while the cerebral hemispheres remain too damaged to generate awareness — the vegetative functions (sleep-wake cycling, eye opening, breathing, swallowing) resume, but there is no evidence the patient perceives or responds to the environment purposefully. It is termed "persistent" once this state lasts beyond about a month, consistent with the six weeks given here; it becomes "permanent" only after about twelve months (traumatic) or three months (non-traumatic), a distinction that changes the prognostic conversation, not the diagnosis itself *(these PVS timings are not taken from the course material)*.\n\n**Why the others are wrong.** **Brain stem death** is the opposite pattern: the brainstem has permanently and irreversibly lost all function — no spontaneous breathing, no spontaneous eye opening, and none of the brainstem reflexes (pupillary, corneal, oculocephalic, oculovestibular, gag) survive on bedside testing *(this reflex list is not taken from the course material)* — directly contradicted by this patient\'s spontaneous breathing and eye opening. **Locked-in syndrome** is the mirror-image trap: consciousness and awareness are fully intact, but a lesion of the ventral pons — classically a basilar artery occlusion — destroys the descending corticospinal and corticobulbar tracts while sparing the dorsal tegmentum that carries the ascending reticular activating system, leaving the patient aware and able to communicate only through vertical eye movements or blinking. Nothing here suggests preserved awareness that is merely untestable; it is the opposite state, where the vegetative functions have returned but awareness has not. **Coma** requires the eyes to stay closed with no spontaneous eye opening at all, by definition — a returning sleep-wake cycle with spontaneous eye opening is exactly what moves a patient out of coma and into the vegetative state.\n\nA nearby state worth naming even though it is not an option here: the **minimally conscious state**, in which the patient shows inconsistent but reproducible evidence of awareness (visual tracking, reaching, following a command) that PVS, by definition, shows none of — that reproducibility is the discriminating feature, and this vignette states plainly there is none *(this minimally conscious state comparison is not taken from the course material)*.\n\n**A defect recorded, not repaired.** As printed, the stem is garbled and self-duplicating: "He does not respond to any verbal stimulus to following best describes the current state any verbal is. Which of the following best describes the current state?" The duplicated, scrambled fragment adds no clinical information beyond "he does not respond to any verbal stimulus" — it reads as a typesetting stutter of the question\'s own closing sentence rather than a second, competing reading of the case. On that basis it is repaired here to plain English; the printed form is quoted in full in `source`, and no clinical fact was added or changed in the repair.\n\n**Bottom line:** spontaneous eye opening and breathing with no purposeful response, weeks after a coma, is persistent vegetative state — brain death has no spontaneous breathing or brainstem reflexes, locked-in syndrome keeps awareness intact behind a ventral pontine lesion, minimally conscious state shows inconsistent but real purposeful responses, and coma has no eye opening at all.',
   objective:'Spontaneous eye opening and breathing with no purposeful response to stimuli, persisting for weeks after coma, defines persistent vegetative state — distinct from brain stem death (no spontaneous breathing), locked-in syndrome (awareness intact) and coma (no eye opening).',
-  source:'neuropsychiatry & neurosurgery qb.pdf p.38 (answer p.39, explanation box printed). Stem printed garbled/self-duplicating: "A patient was in coma for 6 weeks after a road traffic accident. Currently he has spontaneous eye opening and can breathe spontanously. He does not respond to any verbal stimulus to following best describes the current state any verbal is. Which of the following best describes the current state?" — repaired here to remove the duplicated fragment; "spontanously" corrected to spontaneously. Option b prints "Persistant vegetative state"; corrected to Persistent. Also printed in Neuro endpoint.pdf, Coma, Q7, p.707 (answer p.708).'
+  source:'neuropsychiatry & neurosurgery qb.pdf p.38 (answer p.39, explanation box printed). Stem printed garbled/self-duplicating: "A patient was in coma for 6 weeks after a road traffic accident. Currently he has spontaneous eye opening and can breathe spontanously. He does not respond to any verbal stimulus to following best describes the current state any verbal is. Which of the following best describes the current state?" — repaired here to remove the duplicated fragment; "spontanously" corrected to spontaneously. Option b prints "Persistant vegetative state"; corrected to Persistent. Also printed in Neuro endpoint.pdf, Coma, Q7, p.707 (answer p.708). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q31, p.1485 (answer p.1486).'
 },
 
 {
@@ -5045,23 +5046,23 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-219', bank:'gradegain', module:'neuropsych', chapter:'nr-movement',
+  id:'npqb-nr-219', bank:'gradegain', alsoIn:['endpoint'], module:'neuropsych', chapter:'nr-movement',
   stem:'Which is the most characteristic feature of the tremor in Parkinson disease?',
   options:['It improves with moderate alcohol intake','It is most pronounced when patients are asked to hold their arms in front of them','It worsens with action','It is a unilateral, resting tremor'],
   answer:3,
   explanation:'The printed box says: In Parkinson\'s disease, tremor is a resting tremor that is typically unilateral (appearing more prominently on one side of the body). It usually occurs when the affected limb is at rest and improves with voluntary movement. This tremor is also not action-induced.\n\nOption D is therefore the keyed answer and agrees with the lecture: Parkinson tremor often begins unilaterally, occurs when the hand is at rest, and decreases while the patient performs tasks. The lecture also describes the pill-rolling movement of thumb and forefinger and notes that emotional state can increase tremor. The paired words unilateral and resting are important because together they distinguish the classic Parkinson pattern from a postural or kinetic tremor.\n\nOption A describes essential tremor more closely. The lecture states that alcohol temporarily reduces tremor amplitude in approximately 50 to 70% of essential-tremor cases, so alcohol response is not the characteristic Parkinson feature being asked for. Option B describes a postural tremor, because holding the arms out maintains a position against gravity. Essential tremor is typically postural and kinetic, whereas Parkinson tremor is described as resting. Option C reverses the course description: the Parkinson shaking may decrease when the patient is performing tasks, rather than worsen with action.',
   objective:'Recognise Parkinson tremor as typically unilateral and resting, and distinguish it from essential tremor.',
-  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 10 "Movement Disorders," Q219, book p.43'
+  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 10 "Movement Disorders," Q219, book p.43. **Also printed by Neuro endpoint.pdf, Movement disorders, Q6, p.463 (answer p.464)** — same fact (Parkinson tremor is unilateral and resting), thinner explanation, no lecture grounding. Folded on the sweep, not held twice: this entry\'s fuller lecture-grounded explanation is kept. Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q45, p.1513 (answer p.1514).'
 },
 
 {
-  id:'npqb-nr-220', bank:'gradegain', module:'neuropsych', chapter:'nr-movement',
+  id:'npqb-nr-220', bank:'gradegain', alsoIn:['endpoint'], module:'neuropsych', chapter:'nr-movement',
   stem:'Which is a common non motor symptom in Parkinson disease?',
   options:['Depression','Migraines','Palpitations and tachycardia','Prosopagnosia'],
   answer:0,
   explanation:'Depression is the keyed answer and is a common non-motor symptom of Parkinson disease (not taken from the course material). The lecture says that patients usually manifest both motor and non-motor symptoms, but its visible non-motor section contains no enumerated symptom list. It does provide a detailed motor profile: bradykinesia, resting tremor, rigidity, impaired posture and balance, reduced automatic movements, speech changes, and micrographia. Those are not alternatives here, but they clarify why the question is specifically asking for a non-motor feature.\n\nMigraines are not identified by the lecture as a Parkinson non-motor symptom; the assertion that they are not a common Parkinson feature is not taken from the course material. Palpitations and tachycardia are not identified by the lecture as a common Parkinson non-motor symptom; the assertion is not taken from the course material. Prosopagnosia is not identified by the lecture as a common Parkinson non-motor symptom; the assertion is not taken from the course material. The course’s red-flag list does mention dysautonomia as a clue away from typical Parkinson disease toward another syndrome, but it does not establish a comparison among the three distractors.\n\nA non-motor symptom is not simply a finding outside the limbs. It is a manifestation accompanying the disease that is not part of the motor syndrome (not taken from the course material). The course’s unfinished “MOTOR / NON MOTOR / SYMPTOMS” slide confirms the intended division but supplies no content with which to rank the proposed choices. Consequently, the answer is preserved from the printed key while the depression attribution remains tagged. The alternatives are not made correct merely because they are non-motor phenomena in other settings; their relationship to Parkinson disease would require material not given in this lecture. Because the lecture confirms the motor/non-motor distinction but does not name depression, the specific identification is tagged rather than being attributed to the course. Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
   objective:'Identify depression as a common non-motor feature of Parkinson disease while separating motor and non-motor manifestations.',
-  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 10 "Movement Disorders," Q220, book p.43'
+  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 10 "Movement Disorders," Q220, book p.43. **Also printed by Neuro endpoint.pdf, Movement disorders, Q5, p.461 (answer p.462)** — same fact (depression as a common Parkinson non-motor symptom), thinner explanation, no lecture grounding. Folded on the sweep, not held twice: this entry\'s fuller lecture-grounded explanation is kept. Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q12, p.1447 (answer p.1448).'
 },
 
 {
@@ -5591,7 +5592,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'Guillain Barre Syndrome is the keyed answer. The peripheral neuropathy lecture states that in GBS the cranial nerves may be affected, that more than 50% of patients have facial diplegia, dysphagia, and dysarthria, and that occasionally facial, ocular, or oropharyngeal muscles are affected first; it also notes that cranial nerves are particularly affected in GBS and diphtheritic neuropathy. The peripheral lecture\'s picture of acute bilateral cranial nerve weakness with symmetric limb arreflexia fits bilateral lower motor neuron facial weakness, and GBS is the option where the course explicitly teaches facial diplegia. The claim that bilateral facial weakness in GBS is a lower motor neuron, not an upper motor neuron, pattern is not taken from the course material but matches the arreflexic peripheral disease the lecture describes.\n\nDuchene and Becker muscle dystrophies, with their printed spellings, are wrong because the muscle disease lecture says the muscles of the face are not affected in Duchenne dystrophy, which is a primary myopathy sparing the face; Becker is described as the milder dystrophinopathy without facial weakness, and neither lecture gives Becker facial diplegia. Diabetic polyneuropathy is wrong because the lecture describes diabetic neuropathy as a distal symmetric sensory and sensorimotor process with painful burning sensations in the feet; facial weakness is not part of the taught diabetic picture, and its absence there is the relevant contrast. The lecture\'s explicit facial diplegia in GBS, with cranial nerve vulnerability in the disease, makes Guillain Barre Syndrome the cause of bilateral lower motor neuron facial weakness. Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
   objective:'Recognize GBS as a cause of bilateral lower motor neuron facial weakness.',
-  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 12 "Neuromuscular Disorders," Q274, book p.52. **Also printed by Neuro endpoint.pdf, Cranial nerve disorders, Q5, p.658 (answer p.659)** — same fact (GBS causes bilateral LMN facial weakness), thinner explanation, no distractor reasoning. Folded on the sweep, not held twice: this entry\'s fuller lecture-grounded explanation is kept.'
+  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 12 "Neuromuscular Disorders," Q274, book p.52. **Also printed by Neuro endpoint.pdf, Cranial nerve disorders, Q5, p.658 (answer p.659)** — same fact (GBS causes bilateral LMN facial weakness), thinner explanation, no distractor reasoning. Folded on the sweep, not held twice: this entry\'s fuller lecture-grounded explanation is kept. Also printed as Model Final Exam 2, Q28, p.1625 (answer p.1626).'
 },
 
 {
@@ -5903,7 +5904,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Option A (Herpes simplex virus) is the keyed microorganism. The lecture on Herpes Simplex Encephalitis (HSE) explicitly states that the virus reaches the brain via local spread from an oropharyngeal infection traveling along the trigeminal or olfactory nerves, or via possible viremia. Once neuroinvasive, herpes simplex virus characteristically localizes to and necrotizes the inferior and medial portions of the temporal lobes and orbitofrontal regions, producing edema, scattered hemorrhages, and classic limbic manifestations.\n\nOption B (Varicella zoster virus) is incorrect because it typically causes cerebral vasculopathy, cranial neuropathies, or zoster myelitis rather than selective inferomedial temporal and orbitofrontal necrotizing encephalitis. Option C (Treponema pallidum) is incorrect because it causes neurosyphilis, presenting as meningovascular syphilis or general paresis involving widespread cortical and meningeal arteritis rather than focal inferomedial temporal lobe predilection. Option D (Cryptococcus neoformans) is incorrect because it is a fungal pathogen causing subacute cryptococcal meningitis with gelatinous basal exudates, primarily affecting the leptomeninges and basal cisterns in immunocompromised individuals rather than targeting limbic temporal structures. Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
   objective:'Recognize herpes simplex virus as the pathogen producing inferomedial temporal and orbitofrontal encephalitis.',
-  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 13 "CNS Infections," Q308, book p.58. Also printed in Neuro endpoint.pdf, CNS infection, Q3, p.519 (answer p.520).'
+  source:'Grade Gain neuropsychiatry & neurosurgery qb.pdf, Neurology topic 13 "CNS Infections," Q308, book p.58. Also printed in Neuro endpoint.pdf, CNS infection, Q3, p.519 (answer p.520). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q7, p.1437 (answer p.1438). Also printed as Model Final Exam 2, Q55, p.1687 (answer p.1688).'
 },
 {
   id:'npqb-nr-309', bank:'gradegain', module:'neuropsych', chapter:'nr-cns',
@@ -6019,23 +6020,23 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-321', bank:'gradegain', module:'neuropsych', chapter:'nr-backpain',
+  id:'npqb-nr-321', bank:'gradegain', module:'neuropsych', chapter:'nr-backpain', alsoIn:['endpoint'],
   stem:'What is the most common cause of sciatica?',
   options:['Lumbar dacs prolapse', 'Diabetic ischemia of the nerve', 'Sciatic nerve entrapment'],
   answer:0,
   explanation:'Lumbar disc prolapse is the correct answer. According to the course material, sciatica describes pain referred down the course of the sciatic nerve from the back to the buttock, and down the back of the leg to the foot. The lecture explicitly details that the most common cause of sciatica arises from compromise of the L5 and S1 spinal nerve roots, which most frequently occurs due to lumbar disc prolapse (where the soft nucleus pulposus herniates through a tear in the annulus fibrosus). \n\nThe distractor causes of leg and nerve pain are less common or secondary mechanisms:\n- Diabetic ischemia of the nerve and roots is explicitly listed in the lecture as an etiology of sciatica, but it represents a systemic vascular and metabolic cause rather than the primary mechanical structural cause (disc prolapse) responsible for the vast majority of clinical presentations.\n- Sciatic nerve entrapment is not highlighted in the lecture as the primary or most common mechanism of spinal sciatica; the course material attributes sciatica predominantly to root compromise from lumbar disc herniation, diabetic ischemia, and neoplastic involvement. Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
   objective:'Identify lumbar disc prolapse as the most common cause of sciatica.',
-  source:'Grade Gain neuropsychiatry &amp; neurosurgery qb.pdf, Neurology topic 14 "Back &amp; Lower Limb Pain," Q321, book p.61'
+  source:'Grade Gain neuropsychiatry &amp; neurosurgery qb.pdf, Neurology topic 14 "Back &amp; Lower Limb Pain," Q321, book p.61. Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q3, p.1429 (answer p.1430).'
 },
 
 {
-  id:'npqb-nr-322', bank:'gradegain', module:'neuropsych', chapter:'nr-neckpain',
+  id:'npqb-nr-322', bank:'gradegain', module:'neuropsych', chapter:'nr-neckpain', alsoIn:['endpoint'],
   stem:'The MRI cervical spine of patient showed C5 root compression, what is the most common sine of numbness in that patient?',
   options:['Medial aspect of arm', 'Medial aspect of forearm', 'lateral aspect of the left arm', 'Lateral aspect of forearm'],
   answer:2,
   explanation:'The lateral aspect of the left arm is the correct answer. The lecture on cervical pain discusses cervical disc prolapse and cervical spondylosis, noting that posterolateral disc herniations cause nerve root compression (radiculopathy) leading to paresthesia and numbness along the dermatome corresponding to the affected nerve root, such as the C5 root. While L11 establishes that cervical radiculopathy causes dermatomal sensory changes and lists C5 as a compromised root in upper cervical pathology, the specific correlation that C5 root compression maps to the lateral aspect of the arm is general neuroanatomy [not taken from the course material].\n\nThe distractor sensory localizations correspond to different nerve root levels:\n- Medial aspect of the arm corresponds to lower cervical and T1 dermatomal distributions [not taken from the course material], not C5 root compression.\n- Medial aspect of the forearm corresponds to C8 or T1 nerve root sensory distributions [not taken from the course material], rather than C5.\n- Lateral aspect of the forearm corresponds to the C6 dermatome [not taken from the course material] (as seen in C5-C6 disc prolapse), not the C5 root level. Written for this bank — neuropsychiatry & neurosurgery qb.pdf prints no explanation here.',
   objective:'Associate C5 cervical root compression with sensory loss on the lateral aspect of the arm.',
-  source:'Grade Gain neuropsychiatry &amp; neurosurgery qb.pdf, Neurology topic 14 "Back &amp; Lower Limb Pain," Q322, book p.61'
+  source:'Grade Gain neuropsychiatry &amp; neurosurgery qb.pdf, Neurology topic 14 "Back &amp; Lower Limb Pain," Q322, book p.61. Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q4, p.1431 (answer p.1432).'
 },
 
 {
@@ -6231,7 +6232,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Pons is correct. This is the same crossed brainstem pattern the book uses in Q2, Q9 and Q10: the facial nucleus in the pons is destroyed on the same side as the facial palsy (right, LMN pattern), while the still-uncrossed corticospinal tract passing through the pons is damaged as well, producing hemiplegia on the opposite (left) side once those fibres would have crossed lower down. The side of the facial palsy therefore names the side of the pontine lesion. Written for this bank — the endpoint file prints no explanation here.',
   objective:'Localize a right LMN facial palsy + left hemiplegia crossed syndrome to the pons.',
-  source:'Neuro endpoint.pdf, Localization, Q4, p.22 (answer p.23)'
+  source:'Neuro endpoint.pdf, Localization, Q4, p.22 (answer p.23) Also printed as Model Final Exam 2, Q48, p.1672 (answer p.1673).'
 },
 
 { id:'npep-loc-5', bank:'endpoint', module:'neuropsych', chapter:'nr-intro',
@@ -6240,7 +6241,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Speech is primarily controlled by Broca’s and Wernicke’s areas, located in the dominant (usually left) cerebral hemisphere. A lesion here can lead to aphasia and speech disturbances.',
   objective:'Localize aphasia (language/speech disturbance) to a unilateral dominant-hemisphere cortical lesion.',
-  source:'Neuro endpoint.pdf, Localization, Q5, p.24 (answer p.27; pp.25-26 print two supplementary reference tables — Aphasia/Dysarthria/Dysphonia, and Bulbar vs Pseudobulbar palsy — not separate questions)'
+  source:'Neuro endpoint.pdf, Localization, Q5, p.24 (answer p.27; pp.25-26 print two supplementary reference tables — Aphasia/Dysarthria/Dysphonia, and Bulbar vs Pseudobulbar palsy — not separate questions) Also printed as Model Final Exam 2, Q43, p.1661 (answer p.1662). Also printed as Model Final Exam 5, Q20, p.2046 (answer p.2047; options reordered, same key).'
 },
 
 { id:'npep-loc-6', bank:'endpoint', module:'neuropsych', chapter:'nr-hemi',
@@ -6249,7 +6250,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'The internal capsule is a key pathway for motor fibers, including the corticospinal tract. Damage to the internal capsule can result in pure motor strokes, characterized by weakness or paralysis of specific muscles or muscle groups on the opposite side of the body.',
   objective:'Localize a pure motor lacunar stroke to the internal capsule.',
-  source:'Neuro endpoint.pdf, Localization, Q6, p.28 (answer p.29)'
+  source:'Neuro endpoint.pdf, Localization, Q6, p.28 (answer p.29) Also printed as Model Final Exam 2, Q50, p.1677 (answer p.1678).'
 },
 
 { id:'npep-loc-7', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
@@ -6258,7 +6259,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'The vestibulocochlear nerve (cranial nerve VIII) controls balance and hearing. Damage or dysfunction in its vestibular component can cause vertigo, characterized by dizziness and a spinning sensation.',
   objective:'Attribute vertigo to vestibulocochlear (CN VIII) nerve dysfunction.',
-  source:'Neuro endpoint.pdf, Localization, Q7, p.30 (answer p.31)'
+  source:'Neuro endpoint.pdf, Localization, Q7, p.30 (answer p.31); also printed as Model Final Exam 3, Q34, p.1789 (answer p.1790).'
 },
 
 { id:'npep-loc-8', bank:'endpoint', module:'neuropsych', chapter:'nr-hemi',
@@ -6267,7 +6268,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'NB: Planter reflexes were flexors = ( Planter reflexes are negative) , so we exclude any upper motor neuron lesions, so the correct answer is peripheral nerves ( lower motor neuron)',
   objective:'Exclude an upper motor neuron lesion by a flexor plantar and localize acute paraparesis + bilateral facial weakness to peripheral nerves (a Guillain-Barre-type pattern).',
-  source:'Neuro endpoint.pdf, Localization, Q8, p.32 (answer p.33)'
+  source:'Neuro endpoint.pdf, Localization, Q8, p.32 (answer p.33); also printed as Model Final Exam 3, Q50, p.1821 (answer p.1822), reworded.'
 },
 
 { id:'npep-loc-9', bank:'endpoint', module:'neuropsych', chapter:'nr-hemi',
@@ -6276,7 +6277,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Right pontine is correct. Weakness of the facial movements affecting BOTH the upper and lower face marks a lower motor neuron (LMN) facial palsy — an upper motor neuron lesion would spare the forehead. An LMN facial palsy opposite to a hemiplegia is the crossed pontine pattern this book also uses in Q2, Q4 and Q10: the facial nucleus is destroyed on the same side as the facial weakness (here, right), while the corticospinal tract is damaged before it decussates lower down, producing the contralateral (left) hemiplegia. The side of the facial weakness therefore names the side of the lesion — right pontine. Written for this bank — the endpoint file prints no explanation here.',
   objective:'Use an LMN (upper+lower face) facial palsy contralateral to a hemiplegia to name the side of a pontine lesion.',
-  source:'Neuro endpoint.pdf, Localization, Q9, p.34 (answer p.35)'
+  source:'Neuro endpoint.pdf, Localization, Q9, p.34 (answer p.35). Also printed as Model Final Exam 6, Q28, p.2150 (answer p.2151), identical stem and options.'
 },
 
 { id:'npep-loc-10', bank:'endpoint', module:'neuropsych', chapter:'nr-hemi',
@@ -6384,7 +6385,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'The patient is presenting within the window for thrombolytic therapy with symptoms suggestive of acute ischemic stroke. Since the CT scan is negative for hemorrhage, alteplase (tPA) is the treatment of choice.',
   objective:'Recognise a within-window acute ischaemic stroke presentation as an indication for IV alteplase once haemorrhage is excluded.',
-  source:'Neuro endpoint.pdf, Stroke, Q4, p.72 (answer p.73)'
+  source:'Neuro endpoint.pdf, Stroke, Q4, p.72 (answer p.73). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q21, p.1465 (answer p.1466).'
 },
 
 { id:'npep-stroke-5', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
@@ -6393,7 +6394,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Since symptom onset was over 4.5 hours ago, thrombolysis is contraindicated. Aspirin is the appropriate next step for ischemic stroke management after imaging has ruled out hemorrhage.',
   objective:'Recognise that a patient presenting outside the 4.5-hour thrombolysis window is managed with aspirin, not tPA, once hemorrhage is excluded.',
-  source:'Neuro endpoint.pdf, Stroke, Q5, p.74 (answer p.75) — the source prints the blood pressure unit as "mmg" (verbatim, likely intended "mmHg")'
+  source:'Neuro endpoint.pdf, Stroke, Q5, p.74 (answer p.75) — the source prints the blood pressure unit as "mmg" (verbatim, likely intended "mmHg"). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q39, p.1501 (answer p.1502).'
 },
 
 { id:'npep-stroke-6', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
@@ -6402,7 +6403,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Mechanical thrombectomy is most effective when performed within 6–7 hours for anterior circulation strokes involving large vessels. Time is critical to prevent irreversible brain damage.',
   objective:'State the extended time window (up to ~7 hours) for mechanical thrombectomy in anterior large-vessel occlusion, longer than the IV tPA window.',
-  source:'Neuro endpoint.pdf, Stroke, Q6, p.76 (answer p.77) — source stem reads "sed" (verbatim, likely intended "used")'
+  source:'Neuro endpoint.pdf, Stroke, Q6, p.76 (answer p.77) — source stem reads "sed" (verbatim, likely intended "used") Also printed as Model Final Exam 4, Q15, p.1886 (answer p.1887).'
 },
 
 { id:'npep-stroke-7', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
@@ -6411,7 +6412,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'The absence of perfusion mismatch on imaging indicates no viable tissue to salvage, so thrombolytic or surgical intervention is not warranted. Supportive care and secondary prevention are advised.',
   objective:'Interpret an absent perfusion mismatch on CT perfusion as no salvageable penumbra, ruling out thrombectomy/thrombolysis regardless of vessel occlusion.',
-  source:'Neuro endpoint.pdf, Stroke, Q7, p.78 (answer p.79)'
+  source:'Neuro endpoint.pdf, Stroke, Q7, p.78 (answer p.79). Also printed as Model Final Exam 6, Q33, p.2161 (answer p.2162), identical stem and options.'
 },
 
 { id:'npep-stroke-8', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
@@ -6618,7 +6619,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Myoclonic seizures are characterized by brief, sudden, involuntary muscle jerks, often affecting the arms or upper body. These jerks are rapid and typically occur without loss of consciousness.',
   objective:'State that myoclonic seizures (brief shock-like jerks) typically occur without any affection of consciousness.',
-  source:'Neuro endpoint.pdf, Epilepsy, Q5, p.130 (answer p.131)'
+  source:'Neuro endpoint.pdf, Epilepsy, Q5, p.130 (answer p.131). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q8, p.1439 (answer p.1440).'
 },
 
 { id:'npep-epilepsy-6', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
@@ -6627,7 +6628,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'Focal motor seizures with neurological signs like Babinski’s indicate a possible structural brain lesion. MRI is the best first investigation to evaluate for such lesions.',
   objective:'Choose MRI brain as the first investigation for a focal motor seizure accompanied by a neurological sign (extensor plantar response).',
-  source:'Neuro endpoint.pdf, Epilepsy, Q6, p.132 (answer p.133) — the source prints "planter" (verbatim, for "plantar")'
+  source:'Neuro endpoint.pdf, Epilepsy, Q6, p.132 (answer p.133) — the source prints "planter" (verbatim, for "plantar"). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q33, p.1489 (answer p.1490). Also printed as Model Final Exam 2, Q6, p.1568 (answer p.1569).'
 },
 
 { id:'npep-epilepsy-7', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
@@ -6636,7 +6637,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'During a seizure, inserting objects into the mouth can cause choking or injury. The correct approach is to protect the patient from injury and ensure a safe environment until the seizure ends.',
   objective:'Give the correct first-aid instruction for a generalized tonic-clonic seizure: protect from injury, put nothing in the mouth.',
-  source:'Neuro endpoint.pdf, Epilepsy, Q7, p.134 (answer p.135); same question, same options, same key as house-bank npqb-nr-176 — left as two entries, cross-bank'
+  source:'Neuro endpoint.pdf, Epilepsy, Q7, p.134 (answer p.135); same question, same options, same key as house-bank npqb-nr-176 — left as two entries, cross-bank. Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q55, p.1533 (answer p.1534).'
 },
 
 { id:'npep-epilepsy-8', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
@@ -6645,7 +6646,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'EEG is the gold standard for confirming that a therapeutic seizure has occurred during electroconvulsive therapy (ECT), by recording brain electrical activity.',
   objective:'Name EEG as the gold-standard confirmation that a therapeutic seizure occurred during ECT.',
-  source:'Neuro endpoint.pdf, Epilepsy, Q8, p.136 (answer p.137)'
+  source:'Neuro endpoint.pdf, Epilepsy, Q8, p.136 (answer p.137) Also printed as Model Final Exam 2, Q1, p.1556 (answer p.1557).'
 },
 
 { id:'npep-epilepsy-9', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
@@ -6654,7 +6655,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'The bank prints b, wait for the second attack, as the key. The stem describes one isolated generalized tonic-clonic seizure in a girl with normal physical and mental development and a normal neurological examination, i.e. nothing yet establishing epilepsy, which requires recurrent unprovoked seizures; antiepileptic drug treatment is generally deferred after a first unprovoked seizure until a second occurs (not taken from the course material). The course slides list EEG and CT/MRI brain among the investigations of epilepsy (Neuro endpoint.pdf p.117) and do not address management after a single first seizure; the bank key is recorded as printed and is not disputed here. Written for this bank — the endpoint file prints no explanation here.',
   objective:'Recall the bank key for a single first generalized tonic-clonic seizure in a neurologically and developmentally normal adolescent: wait for a second attack before treating.',
-  source:'Neuro endpoint.pdf, Epilepsy, Q9, p.138 (answer p.139) — the answer page prints "Managment" (verbatim; the question page prints "Management")'
+  source:'Neuro endpoint.pdf, Epilepsy, Q9, p.138 (answer p.139) — the answer page prints "Managment" (verbatim; the question page prints "Management"); also printed as Model Final Exam 3, Q13, p.1745 (answer p.1746) - the exam misprints this question\'s number as 13 a second time at p.1747, where an unrelated question is printed (see npep-nm-8). Also printed as Model Final Exam 2, Q42, p.1659 (answer p.1660).'
 },
 
 { id:'npep-epilepsy-11', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
@@ -6663,7 +6664,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Interictal EEG can detect epileptiform discharges that support a diagnosis of epilepsy but is not definitive on its own. It should be interpreted in the context of a compatible clinical history and neurological examination.',
   objective:'State that interictal EEG supports but does not by itself establish epilepsy and must be read in the clinical setting.',
-  source:'Neuro endpoint.pdf, Epilepsy, Q11, p.142 (answer p.143)'
+  source:'Neuro endpoint.pdf, Epilepsy, Q11, p.142 (answer p.143) Also printed as Model Final Exam 4, Q7, p.1867 (answer p.1868).'
 },
 
 { id:'npep-epilepsy-12', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
@@ -6672,7 +6673,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'The bank prints this question twice (Q10 and Q12, same stem, options reordered, same key); the two printings are kept as one entry. Q10\'s printed box (p.141), verbatim: "Ethosuximide is specifically effective for absence seizures and has no role in treating focal seizures. Using it in focal epilepsy would be ineffective and could delay proper treatment. Drugs like phenytoin, carbamazepine, and topiramate are appropriate for focal seizures."\n\nQ12\'s printed slide on the answer page (p.145), verbatim: "Choice of Antiepileptic drugs according to seizure type: Generalized tonic-clonic seizures→ phenytoin, valproate or levetiracetam. Focal seizures→ carbamazepine, phenytoin, lamotrigine, topiramate, lacosamide. Absence seizures→ Ethosuximide or valproate. Myoclonic seizures→ Valproate, clonazepam." Ethosuximide appears on this slide only under absence seizures, not under focal seizures; carbamazepine, phenytoin and topiramate are all listed for focal seizures. (The top edge of the printed slide carries a partly hidden, unreadable text fragment.)',
   objective:'Match antiepileptic drugs to seizure type: ethosuximide is an absence-seizure drug, not a focal-seizure drug.',
-  source:'Neuro endpoint.pdf, Epilepsy, Q12, p.144 (answer p.145); printed again as Q10, p.140 (answer p.141)'
+  source:'Neuro endpoint.pdf, Epilepsy, Q12, p.144 (answer p.145); printed again as Q10, p.140 (answer p.141), and again as Model Final Exam 3, Q51, p.1823 (answer p.1824), options reordered, same answer (Ethosuximide). Printed again as Model Final Exam 4, Q8, p.1869 (answer p.1870), same option order as this entry.'
 },
 
 { id:'npep-epilepsy-13', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
@@ -6681,7 +6682,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Video EEG during an actual seizure provides the most definitive diagnosis by correlating electrical activity with clinical symptoms. It is superior to interictal EEG.',
   objective:'Identify ictal video EEG recording as the preferred tool for diagnosing epileptic seizures, superior to interictal EEG.',
-  source:'Neuro endpoint.pdf, Epilepsy, Q13, p.146 (answer p.147)'
+  source:'Neuro endpoint.pdf, Epilepsy, Q13, p.146 (answer p.147) Also printed as Model Final Exam 4, Q56, p.1979 (answer p.1980).'
 },
 
 { id:'npep-epilepsy-14', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
@@ -6690,7 +6691,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Serial epileptic fits involve repeated seizures with complete or partial recovery in between, distinguishing them from status epilepticus, where recovery is incomplete.',
   objective:'Distinguish serial epileptic fits (recovery between attacks) from status epilepticus (incomplete recovery).',
-  source:'Neuro endpoint.pdf, Epilepsy, Q14, p.148 (answer p.149)'
+  source:'Neuro endpoint.pdf, Epilepsy, Q14, p.148 (answer p.149). Also printed as Model Final Exam 5, Q16, p.2038 (answer p.2039). Also printed as Model Final Exam 4, Q59, p.1988 (answer p.1989).'
 },
 
 { id:'npep-epilepsy-15', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
@@ -6699,7 +6700,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'In psychogenic non-epileptic seizures (PNES, or pseudo-seizures), the EEG is typically normal (negative) because there is no abnormal electrical brain activity. However, movement artifacts (e.g., muscle twitching, patient motion) can sometimes create false-positive EEG changes, though these are not true epileptiform discharges. This distinguishes PNES from epileptic seizures, which show clear ictal EEG abnormalities.',
   objective:'Recall that the EEG in psychogenic non-epileptic seizures is typically normal, with movement artifact the only source of false-positive changes.',
-  source:'Neuro endpoint.pdf, Epilepsy, Q15, p.150 (answer p.151)'
+  source:'Neuro endpoint.pdf, Epilepsy, Q15, p.150 (answer p.151). Also printed as Model Final Exam 5, Q18, p.2042 (answer p.2043).'
 },
 
 { id:'npep-epilepsy-16', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
@@ -6708,7 +6709,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Carbamazepine is not recommended for acute management of status epilepticus due to its slow onset of action and potential to worsen some seizure types.',
   objective:'Recognise carbamazepine as not recommended in the acute management of status epilepticus.',
-  source:'Neuro endpoint.pdf, Epilepsy, Q16, p.152 (answer p.153)'
+  source:'Neuro endpoint.pdf, Epilepsy, Q16, p.152 (answer p.153). Also printed as Model Final Exam 6, Q5, p.2104 (answer p.2105), identical stem and options.'
 },
 
 { id:'npep-epilepsy-17', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
@@ -6717,7 +6718,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'Febrile convulsions are considered provoked seizures triggered by fever; repeated episodes fall under recurrent provoked seizures, not epilepsy.',
   objective:'Classify repeated febrile convulsions as recurrent provoked seizures, not epilepsy.',
-  source:'Neuro endpoint.pdf, Epilepsy, Q17, p.154 (answer p.155)'
+  source:'Neuro endpoint.pdf, Epilepsy, Q17, p.154 (answer p.155). Also printed as Model Final Exam 6, Q15, p.2124 (answer p.2125), identical stem and options.'
 },
 
 { id:'npep-epilepsy-18', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
@@ -6944,7 +6945,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'The most common type of aura associated with migraine is visual aura.',
   objective:'The most common type of aura associated with migraine is visual aura.',
-  source:'Neuro endpoint.pdf, Headache, Q2, p.226 (answer p.227); same question, same options, same key as house-bank npqb-nr-132 — left as two entries, cross-bank'
+  source:'Neuro endpoint.pdf, Headache, Q2, p.226 (answer p.227); same question, same options, same key as house-bank npqb-nr-132 — left as two entries, cross-bank. Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q2, p.1427 (answer p.1428).'
 },
 
 { id:'npep-headache-3', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
@@ -6953,7 +6954,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'The bank prints this question twice (Q3 and Q5, same stem, options reordered, same key); the two printings are kept as one entry. Q3\'s printed box (p.229), verbatim: "New-onset headache in an older adult, especially with associated vomiting, raises concern for a secondary cause such as a brain tumor or intracranial pathology. An MRI is the most appropriate initial investigation to rule out serious structural abnormalities."\n\nQ5\'s printed box (p.233), verbatim: "Red flag >> Do MRI"',
   objective:'New-onset headache in an older adult with vomiting requires brain MRI to assess for a secondary structural cause.',
-  source:'Neuro endpoint.pdf, Headache, Q3, p.228 (answer p.229); printed again as Q5, p.232 (answer p.233)'
+  source:'Neuro endpoint.pdf, Headache, Q3, p.228 (answer p.229); printed again as Q5, p.232 (answer p.233). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q16, p.1455 (answer p.1456). Also printed as Model Final Exam 2, Q24, p.1614 (answer p.1615). Also printed as Model Final Exam 4, Q42, p.1947 (answer p.1948), options reordered.'
 },
 
 { id:'npep-headache-4', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
@@ -6962,7 +6963,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Frequent migraine attacks require prophylactic therapy. Topiramate is an effective first-line preventive medication for chronic migraine.',
   objective:'Identify prophylactic treatment for frequent migraine attacks.',
-  source:'Neuro endpoint.pdf, Headache, Q4, p.230 (answer p.231)'
+  source:'Neuro endpoint.pdf, Headache, Q4, p.230 (answer p.231). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q63, p.1549 (answer p.1550).'
 },
 
 { id:'npep-headache-6', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
@@ -6971,7 +6972,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'B- Preventive Migraine Treatments\nThese are groups of drugs that can be given to a patient to decrease the frequency of migraine\'s attacks.\nTypes of preventive therapy:\n• Medical treatment\n  o Antihypertensives: Beta blockers "propranolol" - Calcium channel blocker "verapamil"\n  o Antidepressants: tricyclics "Amitriptyline"\n  o Anti-epileptics: sodium valproate and Topiramate (drug of choice)\n\n117 | Page\n\n• Cyproheptadine: This drug may be used in children.\n• Monoclonal antibodies.',
   objective:'Identify the drug excluded from migraine prophylactic therapy.',
-  source:'Neuro endpoint.pdf, Headache, Q6, p.235 (answer p.236)'
+  source:'Neuro endpoint.pdf, Headache, Q6, p.235 (answer p.236); also printed as Model Final Exam 3, Q25, p.1770 (answer p.1771).'
 },
 
 { id:'npep-headache-7', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
@@ -6980,7 +6981,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Monoclonal antibodies targeting CGRP (calcitonin gene-related peptide) or its receptor are specifically approved for migraine prophylaxis in patients with frequent or severe migraines. These drugs are not used for tension headaches, cluster headaches, or cervical muscle spasm.',
   objective:'CGRP-targeting monoclonal antibodies are used for migraine prophylaxis.',
-  source:'Neuro endpoint.pdf, Headache, Q7, p.237 (answer p.238)'
+  source:'Neuro endpoint.pdf, Headache, Q7, p.237 (answer p.238) Also printed as Model Final Exam 4, Q1, p.1855 (answer p.1856).'
 },
 
 { id:'npep-headache-8', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
@@ -6998,7 +6999,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'CLUSTER HEADACHE\n\nEpidemiology\n○ The least common of the 3 types of primary headache.\n○ CH usually begins in middle adult life (30s – 40s).\n○ CH is more common in males than in females; M:F=4:1.\n\nClinical picture\n♦ Attacks of cluster headache (CH) are typically short and occur with a clear periodicity. Typically, a patient experiences 1-2 cluster periods per year, each lasting 2 weeks to 3 months.\n♦ The pain of CH is manifested as follows:\n- Character: Excruciating, stabbing, sharp, and lancinating (as if the eye is being pushed out), rather than throbbing\n- Location: Unilateral, in the periorbital, retro-orbital. The pain tends to remain on the same side during the cluster period.\n- Onset: Sudden, peaking in 10-15 minutes\n- Pain is accompanied by various cranial parasympathetic symptoms, including the following\n\n✓ Ipsilateral lacrimation or conjunctival injection\n✓ Nasal stuffiness or rhinorrhea\n✓ Ipsilateral eyelid edema\n✓ Ipsilateral miosis or ptosis\n✓ Ipsilateral forehead and facial perspiration',
   objective:'Cluster headache is associated with ipsilateral cranial parasympathetic symptoms including lacrimation.',
-  source:'Neuro endpoint.pdf, Headache, Q9, p.242 (answer p.243)'
+  source:'Neuro endpoint.pdf, Headache, Q9, p.242 (answer p.243) Also printed as Model Final Exam 4, Q29, p.1917 (answer p.1918).'
 },
 
 { id:'npep-headache-10', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
@@ -7007,7 +7008,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'Progressive neurological symptoms suggest spinal cord or nerve root compression. Urgent imaging (MRI) is needed to diagnose and treat potentially reversible conditions.',
   objective:'Progressive neurological deficit with back pain requires urgent imaging.',
-  source:'Neuro endpoint.pdf, Headache, Q10, p.244 (answer p.245)'
+  source:'Neuro endpoint.pdf, Headache, Q10, p.244 (answer p.245) Also printed as Model Final Exam 4, Q54, p.1975 (answer p.1976).'
 },
 
 { id:'npep-headache-11', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
@@ -7016,7 +7017,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Triptans are selective 5-HT₁B/₁D serotonin receptor agonists. They cause cranial vasoconstriction and inhibit pro-inflammatory neuropeptide release, aborting migraine attacks.',
   objective:'Triptans act as serotonin receptor agonists to abort migraine attacks.',
-  source:'Neuro endpoint.pdf, Headache, Q11, p.246 (answer p.247); reworded stem and options, same fact and key as house-bank npqb-nr-130 — left as two entries, cross-bank'
+  source:'Neuro endpoint.pdf, Headache, Q11, p.246 (answer p.247); reworded stem and options, same fact and key as house-bank npqb-nr-130 — left as two entries, cross-bank. Also printed as Model Final Exam 5, Q3, p.2011 (answer p.2012).'
 },
 
 { id:'npep-headache-12', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
@@ -7025,7 +7026,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'The printed key is Verapamil. The pattern described is consistent with cluster headache: recurrent severe unilateral orbital or periorbital pain with an autonomic feature, lacrimation. (not taken from the course material) Cluster attacks typically build rapidly and may occur frequently in bouts (not taken from the course material). Verapamil is generally taught as a first-line preventive treatment for cluster headache, reducing attack frequency during a cluster period (not taken from the course material). ECG monitoring is commonly required when it is prescribed because conduction abnormalities can occur (not taken from the course material).\n\nOral Amitriptyline is not the usual preventive drug for cluster headache. It is more often used as preventive treatment for migraine, tension-type headache, or some chronic pain syndromes (not taken from the course material). Oral aspirin is not appropriate prophylaxis for this syndrome; it is an analgesic and anti-inflammatory drug, but does not provide standard cluster-headache prevention (not taken from the course material). Intramuscular diclofenac is also an analgesic used for acute pain management rather than prevention. (not taken from the course material) Additionally, cluster pain escalates quickly, so acute treatment is generally directed toward rapidly acting options such as high-flow oxygen or a triptan, rather than delayed intramuscular analgesia (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
   objective:'Tests recognition of verapamil as prophylaxis for cluster headache.',
-  source:'Neuro endpoint.pdf, Headache, Q12, p.248 (answer p.249)'
+  source:'Neuro endpoint.pdf, Headache, Q12, p.248 (answer p.249). Also printed as Model Final Exam 5, Q4, p.2013 (answer p.2014).'
 },
 
 { id:'npep-headache-13', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
@@ -7034,7 +7035,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Tension headaches typically present as a bilateral, pressing or tightening sensation, often described as a "band-like" pressure.',
   objective:'Tension headache characteristically causes pressing pain.',
-  source:'Neuro endpoint.pdf, Headache, Q13, p.251 (answer p.252)'
+  source:'Neuro endpoint.pdf, Headache, Q13, p.251 (answer p.252). Also printed as Model Final Exam 6, Q18, p.2130 (answer p.2131), identical stem and options.'
 },
 
 { id:'npep-headache-14', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
@@ -7043,7 +7044,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Cluster headache is classified as a primary headache disorder because it is not secondary to another underlying pathology. It features recurrent, severe, unilateral pain typically around the eye.',
   objective:'Cluster headache is classified as a primary headache disorder.',
-  source:'Neuro endpoint.pdf, Headache, Q14, p.253 (answer p.254)'
+  source:'Neuro endpoint.pdf, Headache, Q14, p.253 (answer p.254). Also printed as Model Final Exam 6, Q43, p.2181 (answer p.2182), identical stem and options.'
 },
 
 { id:'npep-headache-15', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
@@ -7206,7 +7207,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Lhermitte’s sign is an electric shock-like sensation down the spine triggered by neck flexion. It suggests cervical spinal cord demyelination, commonly seen in multiple sclerosis',
   objective:'Identify Lhermitte\'s sign from electric sensations in the spine triggered by head flexion.',
-  source:'Neuro endpoint.pdf, Multiple sclerosis, Q3, p.309 (answer p.310); same question, same options, same key as Grade Gain npqb-nr-236 — left as two entries, cross-bank'
+  source:'Neuro endpoint.pdf, Multiple sclerosis, Q3, p.309 (answer p.310); same question, same options, same key as Grade Gain npqb-nr-236 — left as two entries, cross-bank. Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q30, p.1483 (answer p.1484).'
 },
 
 { id:'npep-ms-4', bank:'endpoint', module:'neuropsych', chapter:'nr-ms',
@@ -7215,7 +7216,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'MRI is the most sensitive imaging technique for detecting demyelinating lesions in multiple sclerosis. It helps visualize plaques in the brain and spinal cord, which are diagnostic hallmarks of the disease.',
   objective:'Identify MRI brain as the most important investigation modality in the management of multiple sclerosis.',
-  source:'Neuro endpoint.pdf, Multiple sclerosis, Q4, p.311 (answer p.312)'
+  source:'Neuro endpoint.pdf, Multiple sclerosis, Q4, p.311 (answer p.312). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q54, p.1531 (answer p.1532).'
 },
 
 { id:'npep-ms-5', bank:'endpoint', module:'neuropsych', chapter:'nr-ms',
@@ -7260,7 +7261,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'CSF analysis in MS often shows elevated IgG levels and the presence of oligoclonal bands,\nindicating intrathecal IgG synthesis, a hallmark of the disease.',
   objective:'CSF examination in multiple sclerosis may show persistently elevated IgG content.',
-  source:'Neuro endpoint.pdf, Multiple sclerosis, Q9, p.321 (answer p.322)'
+  source:'Neuro endpoint.pdf, Multiple sclerosis, Q9, p.321 (answer p.322) Also printed as Model Final Exam 2, Q3, p.1560 (answer p.1561).'
 },
 
 { id:'npep-ms-10', bank:'endpoint', module:'neuropsych', chapter:'nr-ms',
@@ -7269,7 +7270,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'The printed key is The optic nerve. The presentation is consistent with multiple sclerosis: a young woman has neurologic deficits affecting different CNS sites at different times, including a prior episode of paraplegia that resolved with corticosteroids, current gait unsteadiness and intention tremor, and positive cerebrospinal-fluid oligoclonal bands. Optic neuritis is a common cranial-nerve-related manifestation of multiple sclerosis because the optic nerve is a CNS white-matter tract and can be affected by demyelination (not taken from the course material). It may produce painful monocular visual loss, reduced colour vision, and a relative afferent pupillary defect (not taken from the course material).\n\nThe facial nerve is wrong because facial weakness can occur with a brainstem demyelinating lesion, but it is not the characteristic cranial nerve involvement being tested here (not taken from the course material). The olfactory nerve is wrong because impaired smell is not a typical defining cranial neuropathy of multiple sclerosis (not taken from the course material). The vagus is wrong because vagal lesions more typically cause palatal, pharyngeal, laryngeal, swallowing, or voice abnormalities; none are described in this case (not taken from the course material). The unsteady gait and tremor with movement support cerebellar pathway involvement, while the past paraplegia supports spinal-cord involvement, fitting dissemination in space (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
   objective:'Identify the optic nerve as the cranial nerve most characteristically affected in multiple sclerosis.',
-  source:'Neuro endpoint.pdf, Multiple sclerosis, Q10, p.323 (answer p.324)'
+  source:'Neuro endpoint.pdf, Multiple sclerosis, Q10, p.323 (answer p.324) Also printed as Model Final Exam 2, Q46, p.1667 (answer p.1668).'
 },
 
 { id:'npep-ms-11', bank:'endpoint', module:'neuropsych', chapter:'nr-ms',
@@ -7278,7 +7279,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'The pathogenesis and pathophysiology:\nThe pathogenesis and pathophysiology of MS remains incompletely understood.\nThis disorder is a heterogeneous, multifactorial, immune-mediated disease that is influenced by both genetic such as the human leukocyte antigen (HLA) genes on chromosome 6, including (HLA) DRB1*15:01 polymorphisms and environmental factors such as smoking, low vitamin D level, Epstein-Barr virus (EBV) infection and obesity.\nThe pathological hallmark of MS plaques is the accumulation of demyelinating lesions that occur in the white matter and the grey matter of the brain and spinal cord.\nThey are typically located around post- capillary venules and are characterized by breakdown of the blood-brain barrier (BBB). The dysregulation of the BBB increases the trans-endothelial migration of activated leukocytes, including macrophages, T cells and B cells, into the CNS, which leads to further',
   objective:'Identify low vitamin D level as an environmental factor linked to multiple sclerosis.',
-  source:'Neuro endpoint.pdf, Multiple sclerosis, Q11, p.325 (answer p.326)'
+  source:'Neuro endpoint.pdf, Multiple sclerosis, Q11, p.325 (answer p.326); also printed as Model Final Exam 3, Q6, p.1732 (answer p.1733) (there misspelled "viramin\'s").'
 },
 
 { id:'npep-ms-12', bank:'endpoint', module:'neuropsych', chapter:'nr-ms',
@@ -7287,7 +7288,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Heat sensitivity is common in multiple sclerosis (MS), and hot weather can worsen neurological symptoms by impairing nerve conduction in demyelinated neurons. This is known as Uhthoff\'s phenomenon.',
   objective:'Heat can transiently worsen neurological symptoms in multiple sclerosis.',
-  source:'Neuro endpoint.pdf, Multiple sclerosis, Q12, p.327 (answer p.328)'
+  source:'Neuro endpoint.pdf, Multiple sclerosis, Q12, p.327 (answer p.328); also printed as Model Final Exam 3, Q41, p.1803 (answer p.1804).'
 },
 
 { id:'npep-ms-13', bank:'endpoint', module:'neuropsych', chapter:'nr-ms',
@@ -7296,7 +7297,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Optic neuritis, often associated with MS, typically causes sudden, painless, monocular visual loss in young adults. It\'s one of the most frequent initial presentations of MS.',
   objective:'Optic neuritis causing painless monocular visual loss in a young adult is commonly associated with multiple sclerosis.',
-  source:'Neuro endpoint.pdf, Multiple sclerosis, Q13, p.329 (answer p.330); reworded stem, same options in another order and same answer as npep-ms-14 (Q14, p.331) — left as two entries'
+  source:'Neuro endpoint.pdf, Multiple sclerosis, Q13, p.329 (answer p.330); reworded stem, same options in another order and same answer as npep-ms-14 (Q14, p.331) — left as two entries. Also printed as Model Final Exam 3, Q42, p.1805 (answer p.1806), same option order as this entry. Also printed as Model Final Exam 4, Q35, p.1931 (answer p.1932), options reordered.'
 },
 
 { id:'npep-ms-14', bank:'endpoint', module:'neuropsych', chapter:'nr-ms',
@@ -7341,7 +7342,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'2. CSF analysis:\n• Oligoclonal bands [OCB]: A subtype of globulin can be detected in the CSF of MS patient. It is helpful in confirming the diagnosis.\nFigure 4: Oligoclonal bands [OCB] in CSF\n• Increased IgG index, due to increased intrathecal production of IgG.\n• A lymphocytic pleocytosis occurs during acute exacerbations in about one third of patients.',
   objective:'The CSF finding tested is an increased IgG index in multiple sclerosis.',
-  source:'Neuro endpoint.pdf, Multiple sclerosis, Q18, p.340 (answer p.341)'
+  source:'Neuro endpoint.pdf, Multiple sclerosis, Q18, p.340 (answer p.341). Also printed as Model Final Exam 5, Q12, p.2030 (answer p.2031).'
 },
 
 { id:'npep-ms-19', bank:'endpoint', module:'neuropsych', chapter:'nr-ms',
@@ -7395,7 +7396,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Acute exacerbations of multiple sclerosis are treated with high-dose intravenous corticosteroids to reduce inflammation and hasten recovery. Methylprednisolone is the standard first-line therapy.',
   objective:'Identify the best treatment for an acute exacerbation of multiple sclerosis.',
-  source:'Neuro endpoint.pdf, Multiple sclerosis, Q24, p.352 (answer p.353); same question, same options, same key as Grade Gain npqb-nr-239 — left as two entries, cross-bank'
+  source:'Neuro endpoint.pdf, Multiple sclerosis, Q24, p.352 (answer p.353); same question, same options, same key as Grade Gain npqb-nr-239 — left as two entries, cross-bank. Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q23, p.1469 (answer p.1470). Also printed as Model Final Exam 2, Q37, p.1649 (answer p.1650).'
 },
 
 /*
@@ -7432,7 +7433,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Brown-Séquard syndrome is the bank’s printed answer. A left-sided cervical hemicord injury produces ipsilateral weakness below the lesion because the corticospinal tract has already crossed in the lower medulla. It also produces contralateral loss of pain sensation because spinothalamic fibres cross near their spinal entry level. Thus, left lower-limb weakness with impaired right lower-limb pain sensation fits a left hemicord lesion (not taken from the course material).\n\nAnterior cord syndrome usually causes bilateral motor weakness and bilateral loss of pain and temperature below the lesion, while posterior-column sensations are relatively preserved; it does not classically give this crossed, side-specific pattern (not taken from the course material). Central cord syndrome typically causes motor impairment more marked in the upper limbs than the lower limbs, often after cervical hyperextension injury, rather than ipsilateral weakness with contralateral pain loss (not taken from the course material). Benedikt\'s syndrome is a midbrain syndrome involving the oculomotor nerve and nearby red nucleus/cerebral peduncle, producing ipsilateral third-nerve palsy with contralateral tremor, ataxia, or weakness; it does not describe a cervical spinal cord hemisection pattern (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
   objective:'A cervical hemicord lesion causes ipsilateral motor weakness and contralateral pain-sensation loss.',
-  source:'Neuro endpoint.pdf, Hemiplegia and paraplegia, Q3, p.369 (answer p.370)'
+  source:'Neuro endpoint.pdf, Hemiplegia and paraplegia, Q3, p.369 (answer p.370) Also printed as Model Final Exam 2, Q35, p.1643 (answer p.1644).'
 },
 
 { id:'npep-hemi-4', bank:'endpoint', module:'neuropsych', chapter:'nr-hemi',
@@ -7474,7 +7475,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Maintenance is the final stage listed in the Prochaska and DiClemente transtheoretical model of behaviour change. It refers to sustaining the behavioural change over time and working to prevent relapse. (not taken from the course material) The model is commonly described as progressing through pre-contemplation, contemplation, preparation, action, and maintenance. (not taken from the course material)\n\nAction is not the final stage because it is the period in which the person has begun making the intended behavioural change. (not taken from the course material) Although action is an important active phase, it precedes the longer-term task of maintaining that change.\n\nPre-contemplation is incorrect because it is an early stage in which the person does not yet intend to change the behaviour or may not recognise it as a problem. (not taken from the course material) It is therefore at the opposite end of the change process from maintenance.\n\nContemplation is also incorrect because it describes awareness of a problem and consideration of change, often with ambivalence still present. (not taken from the course material) The person is considering change rather than consistently sustaining it.\n\nThus, among the options provided, Maintenance is the final stage of change. Written for this bank — the endpoint file prints no explanation here.',
   objective:'The question tests identification of maintenance as the final stage in the Prochaska and DiClemente model of behaviour change.',
-  source:'Neuro endpoint.pdf, Substance-related disorders, Q3, p.1337 (answer p.1338)'
+  source:'Neuro endpoint.pdf, Substance-related disorders, Q3, p.1337 (answer p.1338). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q62, p.1547 (answer p.1548).'
 },
 
 { id:'npep-subst-4', bank:'endpoint', module:'neuropsych', chapter:'ps-sud',
@@ -7483,7 +7484,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'The patient\'s acute-onset hallucinations (auditory and visual) with no prior psychiatric treatment history, along with a positive drug screen for marijuana, strongly suggest substance-induced psychosis. Cannabis, especially in high doses or in susceptible individuals, can trigger psychotic symptoms (e.g., paranoia, command hallucinations). The sudden worsening and his insistence on hospitalization (possibly due to distress) further support this.',
   objective:'Identify substance-induced psychosis in a patient with hallucinations and a positive marijuana toxicology screen.',
-  source:'Neuro endpoint.pdf, Substance-related disorders, Q4, p.1339 (answer p.1340)'
+  source:'Neuro endpoint.pdf, Substance-related disorders, Q4, p.1339 (answer p.1340). Also printed as Model Final Exam 5, Q42, p.2085 (answer p.2086). The book prints Q42 twice in this chapter — the second printing is folded into npep-mood-13 (Model Final Exam 5, Q42 second printing, p.2087).'
 },
 
 { id:'npep-subst-5', bank:'endpoint', module:'neuropsych', chapter:'ps-sud',
@@ -7524,7 +7525,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'The keyed option is Blink in both eyes. The corneal reflex has an afferent limb through the ophthalmic division of the trigeminal nerve and an efferent limb through the facial nerve to orbicularis oculi (not taken from the course material). Stimulation of one cornea normally produces both a direct blink in the stimulated eye and a consensual blink in the opposite eye (not taken from the course material).\n\nA left upper motor facial palsy affects voluntary facial movements predominantly in the lower face, while the upper facial muscles receive bilateral cortical input and are relatively spared (not taken from the course material). Therefore, it does not abolish the facial motor output required for blinking. With the right cornea examined, the afferent pathway is intact and the brainstem reflex connections activate both facial nuclei sufficiently for bilateral blinking (not taken from the course material).\n\nOption A, No blink in either eye, would suggest failure of the afferent corneal pathway or a major brainstem reflex disturbance rather than an isolated left upper motor facial palsy (not taken from the course material). Option C, Blink on the right side only, would be expected with a left lower motor facial palsy affecting the left facial efferent limb, not an upper motor lesion (not taken from the course material). Option D, Blink on the left side only, would be incompatible with intact right facial motor function during right corneal stimulation (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
   objective:'Tests the effect of left upper motor facial palsy on the right corneal reflex.',
-  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q2, p.652 (answer p.653)'
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q2, p.652 (answer p.653). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q14, p.1451 (answer p.1452).'
 },
 
 { id:'npep-cranial-3', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
@@ -7533,7 +7534,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Trigeminal neuralgia presents with sudden, brief, electric shock-like facial pain, often triggered by touch or movement. It is typically unilateral and can occur many times a day.',
   objective:'Identify trigeminal neuralgia from recurrent brief unilateral electric-like facial pain.',
-  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q3, p.654 (answer p.655)'
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q3, p.654 (answer p.655). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q47, p.1517 (answer p.1518).'
 },
 
 { id:'npep-cranial-4', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
@@ -7542,7 +7543,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Upper and lower face are affected, so it\'s lower motor neuron lesion (bell\'s palsy)',
   objective:'Identify Bell\'s palsy from acute unilateral lower motor neuron facial paralysis with hyperacusis and altered taste.',
-  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q4, p.656 (answer p.657)'
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q4, p.656 (answer p.657) Also printed as Model Final Exam 2, Q19, p.1602 (answer p.1603).'
 },
 
 { id:'npep-cranial-6', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
@@ -7551,7 +7552,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Trigeminal neuralgia presents as brief, stabbing facial pain. Refractory cases unresponsive to medication may require surgical decompression or ablative procedures.',
   objective:'Recognize trigeminal neuralgia from brief lancinating facial pain and refractory attacks.',
-  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q6, p.660 (answer p.661)'
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q6, p.660 (answer p.661). Also printed as Model Final Exam 5, Q5, p.2016 (answer p.2017).'
 },
 
 { id:'npep-cranial-7', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
@@ -7560,7 +7561,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Upper motor neuron lesions spare the upper facial muscles due to bilateral cortical representation. Lower face weakness with preserved forehead movement is typical.',
   objective:'Upper motor neuron facial lesions cause lower facial weakness with forehead sparing.',
-  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q7, p.662 (answer p.663)'
+  source:'Neuro endpoint.pdf, Cranial nerve disorders, Q7, p.662 (answer p.663). Also printed as Model Final Exam 5, Q1, p.2007 (answer p.2008).'
 },
 
 { id:'npep-cranial-12', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
@@ -7703,7 +7704,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'Coma + high fever >> suspect infection >> do CSF examination',
   objective:'The question tests that impaired consciousness with high fever and an unremarkable CT brain warrants CSF examination.',
-  source:'Neuro endpoint.pdf, CNS infection, Q8, p.529 (answer p.530)'
+  source:'Neuro endpoint.pdf, CNS infection, Q8, p.529 (answer p.530) Also printed as Model Final Exam 2, Q38, p.1651 (answer p.1652).'
 },
 
 { id:'npep-cns-9', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
@@ -7712,7 +7713,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'A-Temporal arteritis:\nA systemic, inflammatory, vascular syndrome that predominantly affects the temporal arteries.\n✓ occurs in elderly.\n✓ throbbing headache\n✓ elevated ESR\n✓ treated with steroids.',
   objective:'Temporal arteritis presenting with headache, temporal artery tenderness, and elevated ESR is treated with steroids.',
-  source:'Neuro endpoint.pdf, CNS infection, Q9, p.531 (answer p.532)'
+  source:'Neuro endpoint.pdf, CNS infection, Q9, p.531 (answer p.532); also printed as Model Final Exam 3, Q29, p.1779 (answer p.1780).'
 },
 
 { id:'npep-cns-10', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
@@ -7721,7 +7722,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'These features are typical of viral encephalitis, especially herpes simplex virus (HSV), which often presents with behavioral changes and olfactory hallucinations. CSF findings of mononuclear cells with normal glucose and protein support a viral etiology.',
   objective:'Identify viral CNS infection from encephalitic symptoms and a mononuclear CSF pleocytosis with normal glucose and protein.',
-  source:'Neuro endpoint.pdf, CNS infection, Q10, p.533 (answer p.534)'
+  source:'Neuro endpoint.pdf, CNS infection, Q10, p.533 (answer p.534); also printed as Model Final Exam 3, Q40, p.1801 (answer p.1802).'
 },
 
 { id:'npep-cns-11', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
@@ -7730,7 +7731,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Recommended Empiric Antibiotics for Suspected Bacterial Meningitis.\n\nVancomycin + ceftriaxone ➔ Antimeningitic dose\n\nCorticosteroids; dexamethasone inj. Decrease mortality and sequelae.\n\nEmpirical treatment should be given until the results of CSF culture and sensitivity are available and then give the specific antibiotic.',
   objective:'Identify the empirical antibiotic regimen for suspected bacterial meningitis.',
-  source:'Neuro endpoint.pdf, CNS infection, Q11, p.535 (answer p.536)'
+  source:'Neuro endpoint.pdf, CNS infection, Q11, p.535 (answer p.536); also printed as Model Final Exam 3, Q63, p.1847 (answer p.1848).'
 },
 
 { id:'npep-cns-12', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
@@ -7739,7 +7740,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'The clinical presentation of fever, stupor, seizures, and olfactory hallucinations,\nalong with a brain MRI showing a hypertensive lesion with areas of\nhemorrhage in the left temporal lobe, suggests a possible infectious etiology\ninvolving the brain.',
   objective:'Recognize the treatment option printed as correct for this temporal-lobe hemorrhagic infectious presentation.',
-  source:'Neuro endpoint.pdf, CNS infection, Q12, p.537 (answer p.538)'
+  source:'Neuro endpoint.pdf, CNS infection, Q12, p.537 (answer p.538) Also printed as Model Final Exam 4, Q11, p.1875 (answer p.1876).'
 },
 
 { id:'npep-cns-13', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
@@ -7748,7 +7749,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Hydrocephalus can occur due to inflammation and obstruction of CSF flow in bacterial meningitis. It leads to increased intracranial pressure and worsened prognosis.\n\nContradiction between banks, recorded not resolved: the Grade Gain qb (npqb-nr-303, same fact pattern, fourth option "subarachnoid haemorrhage" instead of this bank\'s "subdural abscess") keys brain abscess instead, and its own explanation concedes the source lecture "lists these complications without explicitly ranking them by frequency," while separately calling hydrocephalus "a well-recognized and frequent complication." The answer here is not changed on that basis — it is this bank\'s own printed key.',
   objective:'Identify hydrocephalus as the most common complication of bacterial meningitis.',
-  source:'Neuro endpoint.pdf, CNS infection, Q13, p.539 (answer p.540)'
+  source:'Neuro endpoint.pdf, CNS infection, Q13, p.539 (answer p.540) Also printed as Model Final Exam 4, Q50, p.1965 (answer p.1966).'
 },
 
 { id:'npep-cns-166', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
@@ -7757,7 +7758,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Herpes simplex virus encephalitis is diagnosed via PCR testing of cerebrospinal fluid, which detects viral DNA with high sensitivity and specificity.',
   objective:'Identify PCR assay of CSF as the requested test for herpes simplex encephalitis.',
-  source:'Neuro endpoint.pdf, CNS infection, Q166, p.541 (answer p.542)'
+  source:'Neuro endpoint.pdf, CNS infection, Q166, p.541 (answer p.542). Also printed as Model Final Exam 5, Q10, p.2026 (answer p.2027).'
 },
 
 { id:'npep-cns-14', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
@@ -7766,7 +7767,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'The rapid onset of meningitis with petechial rash, fever, and CSF neutrophilia is most consistent with meningococcal infection.',
   objective:'Identify meningococcal meningitis from acute bacterial meningitis with a petechial rash.',
-  source:'Neuro endpoint.pdf, CNS infection, Q14, p.543 (answer p.544)'
+  source:'Neuro endpoint.pdf, CNS infection, Q14, p.543 (answer p.544). Also printed as Model Final Exam 6, Q34, p.2163 (answer p.2164), identical stem and options.'
 },
 
 { id:'npep-cns-15', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
@@ -7851,7 +7852,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'The keyed option, Absent deep tendon reflexes., is the typical examination finding in acute inflammatory demyelinating polyneuropathy, the common demyelinating form of Guillain-Barré syndrome. Demyelination of peripheral motor and sensory nerves impairs conduction through the reflex arc, producing reduced or absent tendon reflexes, usually with progressive symmetrical weakness (not taken from the course material).\n\nLoss of temperature sensation in the hands is not the most likely finding because sensory symptoms in this disorder are commonly distal and may include paraesthesiae, but isolated loss of temperature sensation in the hands is not its characteristic physical-examination feature (not taken from the course material). Delayed relaxation of deep tendon reflexes is more characteristic of hypothyroidism, where the relaxation phase of reflexes is slowed (not taken from the course material); in this neuropathy the reflexes themselves are diminished or absent. Muscle fasciculations suggest lower motor neurone disorders with chronic denervation, such as motor neurone disease, rather than an acute inflammatory demyelinating peripheral neuropathy (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
   objective:'Acute inflammatory demyelinating polyneuropathy commonly causes absent deep tendon reflexes.',
-  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q6, p.578 (answer p.579)'
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q6, p.578 (answer p.579) Also printed as Model Final Exam 2, Q12, p.1586 (answer p.1587).'
 },
 
 { id:'npep-nm-7', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
@@ -7860,7 +7861,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'• Muscle EXAMINATION:\n  ○ Weakness proximal more than distal.\n  ○ Hypotonia, Hyporeflexia\n  ○ Muscle state:\n    ■ Some muscles are unaffected e.g. muscles of the face, hands and feet are not affected.\n    ■ Certain muscles show pseudo-hypertrophy e.g. calf, glutei & deltoid.\n    ■ Atrophy of biceps, triceps, forearm and leg muscles.\n\nThe course is progressive. The cause of death is usually due repeated chest infections or associated cardiomyopathy.\n\nDiagnosis:\n□ Elevated serum creatine phosphokinase (CPK).\n□ Electromyography [EMG]: myopathic pattern.\n□ Gene analysis.\n□ Muscle biopsy: Dystrophin analysis by immunocytochemistry\n\n192 | Page',
   objective:'Recognize elevated serum creatine phosphokinase (CPK) in a carrier of Duchene dystrophy.',
-  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q7, p.580 (answer p.581)'
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q7, p.580 (answer p.581) Also printed as Model Final Exam 2, Q41, p.1657 (answer p.1658).'
 },
 
 { id:'npep-nm-8', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
@@ -7869,7 +7870,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Proximal muscle weakness affects the muscles closest to the trunk of the body, which are essential for movements such as rising from a seated position, climbing stairs, and lifting the arms above the head. Conditions such as polymyositis, dermatomyositis, or muscular dystrophies often present with proximal muscle weakness.',
   objective:'Identify proximal muscle weakness from difficulty rising from low seats or toilets.',
-  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q8, p.582 (answer p.583)'
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q8, p.582 (answer p.583); also printed as Model Final Exam 3, Q13, p.1747 (answer p.1748) - the exam misprints this question\'s number as 13, duplicating another Q13 in the same exam (see npep-epilepsy-9).'
 },
 
 { id:'npep-nm-9', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
@@ -7878,7 +7879,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'Investigations\n185 | Page\n\nCSF: protein cell dissociation with few or no cells (protein cell dissociation) and marked increase in CSF protein appears after first week.\n\nNerve conduction study: marked reduction of conduction velocity, prolongation of distal latency and F wave latency. [demyelinating polyneuropathy]',
   objective:'Identify the cerebrospinal-fluid finding in Guillain-Barré syndrome.',
-  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q9, p.584 (answer p.585)'
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q9, p.584 (answer p.585) Also printed as Model Final Exam 4, Q10, p.1873 (answer p.1874).'
 },
 
 { id:'npep-nm-10', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
@@ -7887,7 +7888,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Peripheral neuropathy commonly affects distal nerves first, resulting in weakness and atrophy in the hands and feet. Reflexes are also typically diminished.',
   objective:'Peripheral neuropathy commonly causes distal muscle weakness on motor examination.',
-  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q10, p.586 (answer p.587)'
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q10, p.586 (answer p.587) Also printed as Model Final Exam 4, Q18, p.1892 (answer p.1893).'
 },
 
 { id:'npep-nm-11', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
@@ -8013,7 +8014,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Diabetes is the most common cause of sensory peripheral neuropathy, typically presenting in a glove-and-stocking distribution. Chronic hyperglycemia damages peripheral nerves over time.',
   objective:'Identify diabetes as the most common cause of sensory peripheral neuropathy.',
-  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q25, p.616 (answer p.617)'
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q25, p.616 (answer p.617). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q28, p.1479 (answer p.1480).'
 },
 
 { id:'npep-nm-26', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
@@ -8022,7 +8023,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Fasciculations are involuntary muscle twitches and a hallmark of lower motor neuron (LMN) lesions. They reflect spontaneous discharge of diseased motor neurons.',
   objective:'Identify fasciculation as a feature of a lower motor neuron lesion.',
-  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q26, p.618 (answer p.619)'
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q26, p.618 (answer p.619). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q29, p.1481 (answer p.1482).'
 },
 
 { id:'npep-nm-28', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
@@ -8031,7 +8032,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'Peripheral neuropathy commonly causes acral dysesthesia ➡ burning or tingling in the hands and feet. It often starts distally and progresses proximally in a "stocking-glove" pattern.',
   objective:'Identify the sensory-loss pattern of peripheral neuropathy.',
-  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q28, p.622 (answer p.623)'
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q28, p.622 (answer p.623). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q43, p.1509 (answer p.1510).'
 },
 
 { id:'npep-nm-29', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
@@ -8058,7 +8059,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Guillain-Barré syndrome is an acute demyelinating polyneuropathy that can involve cranial nerves, particularly the facial nerve, causing bilateral facial weakness',
   objective:'Guillain-Barré syndrome may involve the facial nerve, causing facial weakness.',
-  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q31, p.628 (answer p.629)'
+  source:'Neuro endpoint.pdf, Neuromuscular disorders, Q31, p.628 (answer p.629). Also printed as Model Final Exam 5, Q2, p.2009 (answer p.2010).'
 },
 
 { id:'npep-nm-33', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
@@ -8116,7 +8117,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Anhedonia, or loss of interest or pleasure in activities, is a core symptom of major depressive disorder. It distinguishes depression from anxiety or manic disorders.',
   objective:'Anhedonia is a core symptom of major depressive disorder.',
-  source:'Neuro endpoint.pdf, Symptomatology, Q3, p.765 (answer p.766)'
+  source:'Neuro endpoint.pdf, Symptomatology, Q3, p.765 (answer p.766); also printed as Model Final Exam 3, Q12, p.1743 (answer p.1744).'
 },
 
 { id:'npep-sympt-4', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
@@ -8291,7 +8292,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Specific phobias are defined as an excessive, irrational, and persistent fear of a particular object or situation (e.g., flying, heights, animals, injections). The fear is out of proportion to the actual danger posed and typically leads to avoidance behavior.',
   objective:'Specific phobias are excessive, unreasonable, persistent fears triggered by objects or situations.',
-  source:'Neuro endpoint.pdf, Anxiety disorders, Q6, p.847 (answer p.848)'
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q6, p.847 (answer p.848); also printed as Model Final Exam 3, Q11, p.1741 (answer p.1742).'
 },
 
 { id:'npep-anx-7', bank:'endpoint', module:'neuropsych', chapter:'ps-ocd',
@@ -8300,7 +8301,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Patients with OCD typically recognize their obsessions as irrational, which means their insight is intact. They are distressed by their intrusive thoughts and try to resist them.',
   objective:'Recognize that awareness of obsessive thoughts as irrational indicates intact insight.',
-  source:'Neuro endpoint.pdf, Anxiety disorders, Q7, p.849 (answer p.850)'
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q7, p.849 (answer p.850); also printed as Model Final Exam 3, Q54, p.1829 (answer p.1830).'
 },
 
 { id:'npep-anx-8', bank:'endpoint', module:'neuropsych', chapter:'ps-ocd',
@@ -8318,7 +8319,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'The keyed option describes a likely obsessive-compulsive response. The father has recurrent, unwanted thoughts of harming his infant, recognises that they are irrational, and is frightened by them. Such ego-dystonic intrusive thoughts may lead to reassurance-seeking and avoidance behaviours, such as repeatedly asking relatives whether he will act on the thought and avoiding carrying the infant. These are compulsions or safety behaviours intended to reduce anxiety temporarily (not taken from the course material).\n\nOption b is wrong because obsessional thoughts are not expected to become auditory command hallucinations. His preserved insight and fear of the thought support an obsession rather than psychosis; intrusive harm obsessions do not by themselves imply increased likelihood of acting on them (not taken from the course material). Option c is wrong because incoherent speech is a formal thought disorder more associated with severe psychotic illness, not the usual response to an insight-retained obsession (not taken from the course material). Option d is wrong because a fixed belief that the infant is not his, with accusations of infidelity, would be delusional thinking. The scenario instead explicitly says that he knows the thought is irrational, which is inconsistent with the firm conviction expected in a delusion (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
   objective:'Intrusive ego-dystonic harm obsessions can produce reassurance-seeking and avoidance behaviours.',
-  source:'Neuro endpoint.pdf, Anxiety disorders, Q9, p.853 (answer p.854)'
+  source:'Neuro endpoint.pdf, Anxiety disorders, Q9, p.853 (answer p.854). Also printed as Model Final Exam 6, Q9, p.2112 (answer p.2113), options reworded, same key.'
 },
 
 { id:'npep-anx-10', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
@@ -8565,7 +8566,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Postpartum blues are common and typically begin within a few days after delivery, peaking around day 5–7 and resolving within two weeks without treatment, requiring only support and reassurance. However, the presence of severe symptoms like suicidal ideation suggests postpartum depression, a more serious condition requiring clinical intervention.',
   objective:'Recognize postpartum depression in a woman with depressive symptoms and suicidal ideation after childbirth.',
-  source:'Neuro endpoint.pdf, Mood disorders, Q4, p.943 (answer p.944)'
+  source:'Neuro endpoint.pdf, Mood disorders, Q4, p.943 (answer p.944). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q11, p.1445 (answer p.1446).'
 },
 
 { id:'npep-mood-7', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8574,7 +8575,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'NB: The main difference between major depression disorder and Adjustment disorder is the trigger. Adjustment is associated with trigger ( death of his mother ), but no trigger in major depression disorder.',
   objective:'Identify adjustment disorder following a stressful life event.',
-  source:'Neuro endpoint.pdf, Mood disorders, Q7, p.949 (answer p.950)'
+  source:'Neuro endpoint.pdf, Mood disorders, Q7, p.949 (answer p.950) Also printed as Model Final Exam 2, Q4, p.1562 (answer p.1563).'
 },
 
 { id:'npep-mood-8', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8583,7 +8584,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'Lithium is a mood stabilizer used in both acute manic episodes and long-term maintenance in bipolar disorder. It helps control psychotic features and prevents recurrence.',
   objective:'Identify lithium as a treatment used in acute mania and maintenance therapy for bipolar disorder.',
-  source:'Neuro endpoint.pdf, Mood disorders, Q8, p.951 (answer p.952). Also printed at Q11, p.957 (answer p.958), same stem and key, folded, not drafted separately.'
+  source:'Neuro endpoint.pdf, Mood disorders, Q8, p.951 (answer p.952). Also printed at Q11, p.957 (answer p.958), same stem and key, folded, not drafted separately. Also printed as Model Final Exam 3, Q47, p.1815 (answer p.1816). Also printed as Model Final Exam 4, Q46, p.1957 (answer p.1958), options reordered.'
 },
 
 { id:'npep-mood-9', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8592,7 +8593,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Mania is characterized by elevated or irritable mood, increased energy, hypersexuality, decreased need for sleep, and impulsive behavior lasting at least one week. The presentation clearly aligns with these features.',
   objective:'Recognize mania from increased sexual drive, irritability, decreased need for sleep, and sustained increased energy.',
-  source:'Neuro endpoint.pdf, Mood disorders, Q9, p.953 (answer p.954)'
+  source:'Neuro endpoint.pdf, Mood disorders, Q9, p.953 (answer p.954) Also printed as Model Final Exam 4, Q13, p.1879 (answer p.1880).'
 },
 
 { id:'npep-mood-12', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8601,7 +8602,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Despite bereavement, the presence of grandiosity, decreased need for sleep, and excessive activity suggests mania rather than grief or psychosis alone.',
   objective:'Recognize a manic episode despite a recent bereavement.',
-  source:'Neuro endpoint.pdf, Mood disorders, Q12, p.959 (answer p.960)'
+  source:'Neuro endpoint.pdf, Mood disorders, Q12, p.959 (answer p.960). Also printed as Model Final Exam 5, Q40, p.2081 (answer p.2082).'
 },
 
 { id:'npep-mood-13', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8610,7 +8611,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Lithium is teratogenic, especially in the first trimester, and may cause Ebstein’s anomaly. A pregnancy test is mandatory before initiating lithium therapy in women of childbearing age.',
   objective:'Identify the required pregnancy test before initiating lithium in a woman of childbearing age.',
-  source:'Neuro endpoint.pdf, Mood disorders, Q13, p.961 (answer p.962)'
+  source:'Neuro endpoint.pdf, Mood disorders, Q13, p.961 (answer p.962). Also printed as Model Final Exam 5, Q42 (second printing — the book prints Q42 twice in this chapter, a duplicate-numbering defect; compare npep-subst-4), p.2087 (answer p.2088).'
 },
 
 { id:'npep-mood-14', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8620,7 +8621,7 @@ var Q_NEURO = [
   image:'npep-mood-14', imgAlt:'Contrast-enhanced axial CT (CECT) of the brain', imgEssential:true,
   explanation:'The symptoms described are consistent with major depressive disorder, for which SSRIs like escitalopram are commonly prescribed. The lack of improvement and emergence of neurological symptoms (e.g., headache) warranted imaging, suggesting an organic cause overlooked initially.',
   objective:'Identify escitalopram as the SSRI likely prescribed for depressive symptoms.',
-  source:'Neuro endpoint.pdf, Mood disorders, Q14, p.963 (answer p.964)'
+  source:'Neuro endpoint.pdf, Mood disorders, Q14, p.963 (answer p.964). Also printed as Model Final Exam 5, Q44, p.2091 (answer p.2092).'
 },
 
 { id:'npep-mood-15', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8630,7 +8631,7 @@ var Q_NEURO = [
   image:'npep-mood-15', imgAlt:'Contrast-enhanced axial CT (CECT) of the brain', imgEssential:true,
   explanation:'Paroxetine is an SSRI used for anxiety and depression. Given poor response and subsequent detection of a brain lesion on CT, the symptoms were likely due to an organic cause rather than a primary anxiety disorder.',
   objective:'Identify paroxetine as an SSRI used for anxiety and depression.',
-  source:'Neuro endpoint.pdf, Mood disorders, Q15, p.965 (answer p.966)'
+  source:'Neuro endpoint.pdf, Mood disorders, Q15, p.965 (answer p.966). Also printed as Model Final Exam 6, Q1, p.2096 (answer p.2097) - identical question; its linked follow-up on the CT findings is kept as npep-fe6-2 (chapter nr-headache).'
 },
 
 { id:'npep-mood-16', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8639,7 +8640,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'A manic episode is a hallmark of bipolar I disorder, even in the absence of depressive episodes at presentation. It involves elevated mood, hyperactivity, and sometimes psychotic features.',
   objective:'A manic episode establishes a diagnosis of bipolar disorder.',
-  source:'Neuro endpoint.pdf, Mood disorders, Q16, p.967 (answer p.968)'
+  source:'Neuro endpoint.pdf, Mood disorders, Q16, p.967 (answer p.968). Also printed as Model Final Exam 6, Q12, p.2118 (answer p.2119), identical stem and options.'
 },
 
 { id:'npep-mood-17', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8648,7 +8649,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'The patient shows persistent depressive symptoms with somatic delusions and auditory hallucinations. This combination defines major depressive disorder with psychotic features.',
   objective:'Identify major depression with psychotic features.',
-  source:'Neuro endpoint.pdf, Mood disorders, Q17, p.969 (answer p.970)'
+  source:'Neuro endpoint.pdf, Mood disorders, Q17, p.969 (answer p.970). Also printed as Model Final Exam 6, Q31, p.2157 (answer p.2158), identical stem and options.'
 },
 
 { id:'npep-mood-18', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8657,7 +8658,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Depression is common following stroke, especially when the patient is aware of their functional decline. Symptoms like low mood, anhedonia, and psychomotor retardation support this diagnosis.',
   objective:'Recognize post stroke depression from low mood, anhedonia, and psychomotor retardation.',
-  source:'Neuro endpoint.pdf, Mood disorders, Q18, p.971 (answer p.972)'
+  source:'Neuro endpoint.pdf, Mood disorders, Q18, p.971 (answer p.972). Also printed as Model Final Exam 6, Q36, p.2167 (answer p.2168), identical stem and options.'
 },
 
 { id:'npep-mood-19', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8666,7 +8667,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Given the diagnosis of post-stroke depression, antidepressants like SSRIs are the most appropriate pharmacologic treatment to improve mood and functionality.',
   objective:'Identify the appropriate drug class for post-stroke depression.',
-  source:'Neuro endpoint.pdf, Mood disorders, Q19, p.973 (answer p.974)'
+  source:'Neuro endpoint.pdf, Mood disorders, Q19, p.973 (answer p.974). Also printed as Model Final Exam 6, Q37, p.2169 (answer p.2170), identical options and key - the FE6 printing frames this as a direct continuation of Q36/npep-mood-18\'s case.'
 },
 
 { id:'npep-mood-20', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8796,7 +8797,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Physicians should offer consistent emotional support and avoid unnecessary investigations. Establishing a strong therapeutic alliance helps reduce symptom exaggeration.',
   objective:'The main physician\'s role in managing somatization disorder is provision of emotional support.',
-  source:'Neuro endpoint.pdf, Somatic disorders, Q2, p.1036 (answer p.1037)'
+  source:'Neuro endpoint.pdf, Somatic disorders, Q2, p.1036 (answer p.1037). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q22, p.1467 (answer p.1468).'
 },
 
 { id:'npep-soma-3', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
@@ -8805,7 +8806,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Given his history of brain tumor and current behavioral changes, recurrence or neurological complications should be excluded first with neuroimaging.',
   objective:'Behavioral changes in a patient with a history of a brain tumor require neuroimaging first to exclude recurrence or neurological complications.',
-  source:'Neuro endpoint.pdf, Somatic disorders, Q3, p.1038 (answer p.1039)'
+  source:'Neuro endpoint.pdf, Somatic disorders, Q3, p.1038 (answer p.1039). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q40, p.1503 (answer p.1504). Also printed as Model Final Exam 3, Q59, p.1839 (answer p.1840). Also printed as Model Final Exam 2, Q60, p.1703 (answer p.1704).'
 },
 
 { id:'npep-soma-5', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
@@ -8814,7 +8815,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'The keyed answer is Hypochondriasis. This term was used in older psychiatric classifications for persistent fear or belief of having a serious disease despite negative investigations and reassurance; current terminology commonly places similar presentations under illness anxiety disorder. (not taken from the course material) The patient remains preoccupied with cancer and repeatedly seeks consultations, spending substantial time and money, which fits that pattern. (not taken from the course material)\n\nPanic disorder is wrong because it is characterized by recurrent unexpected panic attacks and concern or behavioural change related to further attacks, rather than a sustained conviction or fear of one specific serious medical illness. (not taken from the course material) The stem does not describe sudden episodes of intense fear with autonomic panic symptoms.\n\nObsessive compulsive disorders are wrong because obsessive thoughts are typically intrusive and unwanted, and compulsions are repetitive acts or mental rituals intended to reduce anxiety. (not taken from the course material) Repeated medical consultations can occur in several conditions, but the question specifically emphasizes illness fear after negative testing rather than obsessions and compulsions.\n\nFactitious disorder is wrong because it involves intentional falsification, production, or induction of symptoms in order to adopt the sick role, without obvious external reward. (not taken from the course material) Nothing here indicates deliberate deception; the patient appears genuinely convinced or fearful that he has cancer.\n\nWritten for this bank — the endpoint file prints no explanation here.',
   objective:'Persistent fear of serious illness despite negative medical investigations indicates hypochondriasis.',
-  source:'Neuro endpoint.pdf, Somatic disorders, Q5, p.1042 (answer p.1043)'
+  source:'Neuro endpoint.pdf, Somatic disorders, Q5, p.1042 (answer p.1043) Also printed as Model Final Exam 2, Q7, p.1571 (answer p.1572).'
 },
 
 { id:'npep-soma-6', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
@@ -8832,7 +8833,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Patients with conversion disorder often show a surprising lack of concern (La belle indifference) about serious neurologic symptoms like paralysis or blindness.',
   objective:'Identify conversion disorder as the disorder associated with La belle indifference.',
-  source:'Neuro endpoint.pdf, Somatic disorders, Q7, p.1046 (answer p.1047)'
+  source:'Neuro endpoint.pdf, Somatic disorders, Q7, p.1046 (answer p.1047). Also printed as Model Final Exam 5, Q38, p.2077 (answer p.2078).'
 },
 
 { id:'npep-soma-8', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
@@ -8841,7 +8842,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Hypochondrial biases are the bank’s keyed answer. They describe a tendency to interpret bodily sensations or minor symptoms as evidence of serious disease, despite the absence of adequate medical justification. In somatoform presentations, this can involve persistent concern that a significant and threatening illness is present. The patient’s appraisal of the symptom is disproportionately alarming rather than medically supported (not taken from the course material).\n\nOvert reaction biases are wrong because an overt reaction refers to an observable behavioural or emotional response; it does not specifically name the biased belief that a medically unexplained manifestation indicates serious illness. Interpretation biases are wrong because this is a broad term for systematic errors in assigning meaning to information. Although catastrophic interpretation of bodily sensations may be involved clinically, the question asks for the more specific bias named by this bank. Cognitive dissonance is wrong because it is psychological discomfort resulting from inconsistent beliefs, attitudes, or behaviours, often followed by attempts to reduce that inconsistency (not taken from the course material). It is not specifically a conviction of serious physical illness from medically unjustified manifestations.\n\nThe question’s wording links somatoform disorders with an illness-focused, threatening interpretation of symptoms; therefore the printed answer is Hypochondrial biases. Written for this bank — the endpoint file prints no explanation here.',
   objective:'The question tests recognition of hypochondrial bias as interpreting medically unjustified bodily manifestations as significant and threatening illness.',
-  source:'Neuro endpoint.pdf, Somatic disorders, Q8, p.1048 (answer p.1049)'
+  source:'Neuro endpoint.pdf, Somatic disorders, Q8, p.1048 (answer p.1049). Also printed as Model Final Exam 5, Q43, p.2089 (answer p.2090).'
 },
 
 { id:'npep-soma-9', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
@@ -8850,7 +8851,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'Somatic symptoms can present in a variety of psychiatric conditions, including depression, anxiety, schizophrenia, and somatoform disorders. Their presence is not exclusive to one disorder.',
   objective:'Somatic symptoms may occur across psychiatric disorders.',
-  source:'Neuro endpoint.pdf, Somatic disorders, Q9, p.1050 (answer p.1051)'
+  source:'Neuro endpoint.pdf, Somatic disorders, Q9, p.1050 (answer p.1051). Also printed as Model Final Exam 6, Q44, p.2183 (answer p.2184), identical stem and options - also near-duplicated (reworded stem, reordered options, same key) by this book\'s own npep-soma-25, pre-existing and out of scope here.'
 },
 
 { id:'npep-soma-10', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
@@ -8949,7 +8950,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'In factitious disorder, the primary gain is to assume the sick role deliberately,\nwithout external rewards. The patient intentionally produces or feigns symptoms to\nreceive medical attention and sympathy, not to gain tangible benefits (which would\nsuggest malingering).',
   objective:'Identify the primary gain in factitious disorder.',
-  source:'Neuro endpoint.pdf, Somatic disorders, Q20, p.1072 (answer p.1073)'
+  source:'Neuro endpoint.pdf, Somatic disorders, Q20, p.1072 (answer p.1073) Also printed as Model Final Exam 2, Q44, p.1663 (answer p.1664).'
 },
 
 { id:'npep-soma-22', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
@@ -9043,7 +9044,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'The keyed option is SSRI discontinuation syndrome following abrupt cessation of paroxetine. This syndrome can occur after stopping an SSRI, particularly one with a relatively short half-life such as paroxetine, and may cause dizziness, nausea, shivering or flu-like symptoms, irritability, and tearfulness (not taken from the course material). The close temporal relationship between stopping the medicine and developing symptoms supports this explanation.\n\nOption b is wrong because a manic episode would usually involve persistently elevated, expansive, or irritable mood with increased energy, reduced need for sleep, pressured speech, grandiosity, and increased goal-directed activity (not taken from the course material). The described physical symptoms after drug withdrawal are more consistent with discontinuation.\n\nOption c is wrong because serotonin syndrome results from excessive serotonergic activity, usually during serotonergic drug use, dose escalation, overdose, or interacting medicines, rather than from stopping paroxetine (not taken from the course material). It commonly includes neuromuscular hyperactivity and autonomic instability (not taken from the course material).\n\nOption d is wrong because relapse of major depression would more typically reproduce depressive symptoms over time rather than produce an acute withdrawal-type cluster of dizziness, nausea, and shivering immediately after cessation (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
   objective:'Abrupt discontinuation of paroxetine can cause SSRI discontinuation syndrome.',
-  source:'Neuro endpoint.pdf, Emergency psychiatry, Q5, p.1247 (answer p.1248)'
+  source:'Neuro endpoint.pdf, Emergency psychiatry, Q5, p.1247 (answer p.1248) Also printed as Model Final Exam 4, Q25, p.1908 (answer p.1909), and again unnumbered near the end of the same exam, p.2002 (answer p.2003), options reordered. Also printed as Model Final Exam 6, Q6, p.2106 (answer p.2107), options reordered - the fourth printing of this question in the book.'
 },
 
 { id:'npep-emerg-6', bank:'endpoint', module:'neuropsych', chapter:'ps-emerg', alsoIn:['endpoint'],
@@ -9101,7 +9102,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Delirium is an acute confusional state common after surgery, especially in elderly patients. It is characterized by fluctuating consciousness, disorientation, hallucinations, and agitation.',
   objective:'Identify delirium after surgery from acute agitation, hallucinations, disorientation, and stupor.',
-  source:'Neuro endpoint.pdf, Dementia and delirium, Q6, p.1300 (answer p.1301)'
+  source:'Neuro endpoint.pdf, Dementia and delirium, Q6, p.1300 (answer p.1301); also printed as Model Final Exam 3, Q4, p.1728 (answer p.1729).'
 },
 
 { id:'npep-dem-7', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
@@ -9119,7 +9120,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Fluctuating course is the keyed option. Delirium is an acute disturbance in attention and awareness whose severity commonly varies over hours to a day; a patient may appear relatively lucid at one time and markedly confused later. This waxing-and-waning pattern, often with worsening at night, helps distinguish it from the more steadily progressive cognitive decline of dementia. (not taken from the course material)\n\nMemory loss is wrong because it can occur in both conditions. Dementia commonly presents with impaired memory, while delirium may also impair recall because reduced attention prevents new information from being properly registered. (not taken from the course material)\n\nInattention is wrong because it is a core feature of delirium but does not uniquely differentiate it in this list as well as fluctuation does. Attention can also be impaired in advanced dementia, although it is usually relatively preserved early in dementia. (not taken from the course material)\n\nDisorganized thinking is wrong because it may occur in delirium and can also be seen in dementia, particularly when cognitive impairment is severe. It is therefore not the best distinguishing feature here. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
   objective:'Identify the fluctuating course as the feature that differentiates delirium from dementia.',
-  source:'Neuro endpoint.pdf, Dementia and delirium, Q8, p.1304 (answer p.1305)'
+  source:'Neuro endpoint.pdf, Dementia and delirium, Q8, p.1304 (answer p.1305) Also printed as Model Final Exam 2, Q51, p.1679 (answer p.1680).'
 },
 
 { id:'npep-dem-9', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
@@ -9204,7 +9205,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'The patient shows signs of Horner’s syndrome (ptosis, miosis, and anhidrosis), typically due to disruption of the cervical sympathetic chain. This is often caused by trauma or lesions affecting the sympathetic pathway.',
   objective:'Identify cervical sympathetic chain injury from Horner’s syndrome findings.',
-  source:'Neuro endpoint.pdf, Coma, Q6, p.705 (answer p.706)'
+  source:'Neuro endpoint.pdf, Coma, Q6, p.705 (answer p.706). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q19, p.1461 (answer p.1462).'
 },
 
 { id:'npep-coma-8', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
@@ -9213,7 +9214,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'Brain death is defined as the irreversible loss of all brain and brainstem functions. It is the only condition among the choices where there is complete cessation of brainstem activity.',
   objective:'Brain death causes irreversible loss of all brain and brainstem functions.',
-  source:'Neuro endpoint.pdf, Coma, Q8, p.709 (answer p.710)'
+  source:'Neuro endpoint.pdf, Coma, Q8, p.709 (answer p.710). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q52, p.1527 (answer p.1528).'
 },
 
 { id:'npep-coma-9', bank:'endpoint', module:'neuropsych', chapter:'nr-comapproach',
@@ -9222,7 +9223,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'Decorticate posturing → supratentorial lesions.\nDecerebrate posturing → infratentorial lesions.\nBilateral myoclonic jerks suggest toxic-metabolic causes of coma.\n\nDecorticate posturing, characterized by flexion of the arms and extension of the legs, typically indicates damage to the cerebral hemispheres or their connections. Therefore, the most common site of lesion in a comatose patient with decorticate posturing is:\nc. Supra tentorial\n\nNB :Decorticate >>supra tentorial, dercerebrate >> infra tentorial',
   objective:'Decorticate posturing is associated with a supratentorial lesion.',
-  source:'Neuro endpoint.pdf, Coma, Q9, p.711 (answer p.712)'
+  source:'Neuro endpoint.pdf, Coma, Q9, p.711 (answer p.712) Also printed as Model Final Exam 2, Q27, p.1623 (answer p.1624).'
 },
 
 { id:'npep-coma-10', bank:'endpoint', module:'neuropsych', chapter:'nr-comapproach',
@@ -9231,7 +9232,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Pinpoint pupils in a comatose patient are classically seen with opioid intoxication, due to the effect of opioids on the parasympathetic innervation of the eye. Other causes like pontine hemorrhage can also cause miosis, but opioids are the most common and reversible cause.',
   objective:'Pinpoint pupils in a comatose patient are associated with opiate intoxication.',
-  source:'Neuro endpoint.pdf, Coma, Q10, p.713 (answer p.714)'
+  source:'Neuro endpoint.pdf, Coma, Q10, p.713 (answer p.714); also printed as Model Final Exam 3, Q18, p.1757 (answer p.1758), reworded ("pinpoint" for "pinpoint pupils"; that printing\'s 4th option reads "Mid brain infarction").'
 },
 
 { id:'npep-coma-11', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
@@ -9240,7 +9241,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'An extensive pontine lesion produces pinpoint pupils that remain reactive to light. The pinpoint size occurs because disruption of descending sympathetic pathways reduces pupillary dilator activity, while the parasympathetic light-reflex pathway can remain intact. This produces marked bilateral miosis with preserved response to light. (not taken from the course material)\n\nOption b, dilated unreactive pupils, is wrong because this pattern suggests severe midbrain dysfunction, uncal herniation with third-nerve compression, or pharmacological dilatation rather than a pontine lesion. (not taken from the course material) Option c, dilated pupils reactive to light, is also wrong because pontine damage characteristically causes constriction rather than dilatation. (not taken from the course material) Option d, pinpoint unreactive pupils, is wrong because although pupils may be very small in pontine lesions, they should retain light reactivity. Loss of light reactivity would imply additional impairment of the relevant reflex pathways or another cause. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
   objective:'Extensive pontine lesions cause pinpoint pupils that are reactive to light.',
-  source:'Neuro endpoint.pdf, Coma, Q11, p.715 (answer p.716)'
+  source:'Neuro endpoint.pdf, Coma, Q11, p.715 (answer p.716); also printed as Model Final Exam 3, Q28, p.1777 (answer p.1778). Also printed as Model Final Exam 4, Q26, p.1910 (answer p.1911), options reordered.'
 },
 
 { id:'npep-coma-12', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
@@ -9249,7 +9250,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Brainstem death is diagnosed when all brainstem reflexes are absent, despite spinal reflexes (like limb reflexes) being preserved. This indicates irreversible cessation of brainstem function.',
   objective:'Brain stem death may show absent brainstem reflexes despite preserved spinal reflexes.',
-  source:'Neuro endpoint.pdf, Coma, Q12, p.717 (answer p.718)'
+  source:'Neuro endpoint.pdf, Coma, Q12, p.717 (answer p.718). Also printed as Model Final Exam 5, Q15, p.2036 (answer p.2037). Also printed as Model Final Exam 4, Q52, p.1971 (answer p.1972).'
 },
 
 { id:'npep-coma-13', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
@@ -9298,7 +9299,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'❖ Psychodynamic Therapy:\nIs based on the idea that behaviour and mental well-being are influenced by childhood experiences and inappropriate repetitive thoughts or feelings that are unconscious (outside of the person\'s awareness). A person works with the therapist to improve self-awareness and to change old patterns so he/she can more fully take charge of his/her life. Techniques commonly used by Freud included the analysis of transference, dream interpretation, and free association. Psychoanalysis is a more intensive form of psychodynamic therapy. Sessions are typically conducted three or more times a week.\n\nThis therapy focuses on exploring unconscious processes and past experiences, especially from childhood, to understand current behavior. It’s suitable for individuals seeking insight into their emotions and relationship patterns.',
   objective:'Identify psychodynamic therapy from its focus on childhood experiences and unconscious processes.',
-  source:'Neuro endpoint.pdf, Psychopharmacology, Q3, p.1392 (answer p.1393)'
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q3, p.1392 (answer p.1393); also printed as Model Final Exam 3, Q3, p.1726 (answer p.1727).'
 },
 
 { id:'npep-psychopharm-4', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
@@ -9307,7 +9308,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Benzodiazepines act on the GABA-A receptor to enhance inhibitory neurotransmission. This results in sedative, anxiolytic, and muscle-relaxant effects.',
   objective:'Benzodiazepines act on the GABA-A receptor.',
-  source:'Neuro endpoint.pdf, Psychopharmacology, Q4, p.1394 (answer p.1395)'
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q4, p.1394 (answer p.1395); also printed as Model Final Exam 3, Q31, p.1783 (answer p.1784).'
 },
 
 { id:'npep-psychopharm-5', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
@@ -9370,7 +9371,7 @@ var Q_NEURO = [
   answer:1,
   explanation:'Mechanism of action:\no Typical antipsychotics are not particularly selective and also block dopamine receptors. Blocking D2 receptors is thought to produce some unwanted side effects that the typical antipsychotics can produce.\no Atypical antipsychotics have a similar blocking effect on D2 receptors, however, most also act on serotonin receptors, especially 5-HT2A and 5-HT2C receptors.\n\nAdverse effects:\nAdverse effect also can be classified according to the rate of occurrence into common & rare.',
   objective:'All antipsychotic agents block dopaminergic D2 receptors.',
-  source:'Neuro endpoint.pdf, Psychopharmacology, Q12, p.1410 (answer p.1411)'
+  source:'Neuro endpoint.pdf, Psychopharmacology, Q12, p.1410 (answer p.1411) Also printed as Model Final Exam 2, Q45, p.1665 (answer p.1666).'
 },
 
 { id:'npep-psychopharm-13', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
@@ -9446,7 +9447,7 @@ var Q_NEURO = [
   answer:2,
   explanation:'Anhedonia is a negative symptom of schizophrenia, referring to diminished ability to experience pleasure in activities once found enjoyable.',
   objective:'Identify anhedonia as diminished ability to experience pleasure.',
-  source:'Neuro endpoint.pdf, Schizophrenia, Q5, p.1170 (answer p.1171)'
+  source:'Neuro endpoint.pdf, Schizophrenia, Q5, p.1170 (answer p.1171). Also printed in Neuro endpoint.pdf, Model Final Exam 1, Q48, p.1519 (answer p.1520).'
 },
 
 { id:'npep-schiz-6', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
@@ -9455,7 +9456,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'The keyed answer is 15-25 years old. Schizophrenia most commonly begins in late adolescence and early adulthood, with the usual peak period falling within this age range (not taken from the course material). The onset may be gradual, with social withdrawal, declining academic or occupational performance, suspiciousness, and other prodromal changes preceding clear psychotic symptoms (not taken from the course material).\n\nOption a, 30-40 years old, is not the usual peak age range. Although schizophrenia can first present in adulthood, onset after the mid-twenties is less typical than onset in late adolescence or early adult life (not taken from the course material). Option b, 40-50 years old, is also incorrect because first onset in this range is relatively uncommon and should prompt consideration of alternative psychiatric, substance-related, neurological, or medical causes of psychotic symptoms (not taken from the course material). Option c, 10-15 years old, is incorrect because childhood or early-adolescent onset schizophrenia can occur but is rare; it is not the peak age of onset (not taken from the course material). Age of onset can differ between individuals and is often earlier in males than in females, but the bank’s marked range remains 15-25 years old (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
   objective:'The question tests the typical peak age range for onset of schizophrenia.',
-  source:'Neuro endpoint.pdf, Schizophrenia, Q6, p.1172 (answer p.1173)'
+  source:'Neuro endpoint.pdf, Schizophrenia, Q6, p.1172 (answer p.1173) Also printed as Model Final Exam 2, Q9, p.1577 (answer p.1578).'
 },
 
 { id:'npep-schiz-7', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
@@ -9464,7 +9465,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'These are positive symptoms of schizophrenia, most prominent during the active (psychotic) phase. They reflect a loss of connection with reality.',
   objective:'Identify the positive symptoms most prominent in the active stage of schizophrenia.',
-  source:'Neuro endpoint.pdf, Schizophrenia, Q7, p.1175 (answer p.1176)'
+  source:'Neuro endpoint.pdf, Schizophrenia, Q7, p.1175 (answer p.1176); also printed as Model Final Exam 3, Q24, p.1768 (answer p.1769).'
 },
 
 { id:'npep-schiz-8', bank:'endpoint', module:'neuropsych', chapter:'ps-schizmgmt',
@@ -9473,7 +9474,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'The patient had Schizophrenic symptoms 3 years ago . she diagnosed at 25-year-old and she didn\'t take any medications in this period, so it\'s poor prognosis. Why not B ? her father had major depression disorder not schizophrenia, so the prognosis of her father is better.',
   objective:'Poor prognostic factors in schizophrenia.',
-  source:'Neuro endpoint.pdf, Schizophrenia, Q8, p.1177 (answer p.1178)'
+  source:'Neuro endpoint.pdf, Schizophrenia, Q8, p.1177 (answer p.1178); also printed as Model Final Exam 3, Q26, p.1772 (answer p.1773).'
 },
 
 { id:'npep-schiz-9', bank:'endpoint', module:'neuropsych', chapter:'ps-emerg',
@@ -9482,7 +9483,7 @@ var Q_NEURO = [
   answer:0,
   explanation:'Regardless of the psychiatric symptoms, chest pain must be evaluated medically first to rule out cardiac causes. Delusions or psychosis do not exclude real physical illness.',
   objective:'Chest pain requires medical evaluation even when the patient has psychotic symptoms.',
-  source:'Neuro endpoint.pdf, Schizophrenia, Q9, p.1180 (answer p.1181)'
+  source:'Neuro endpoint.pdf, Schizophrenia, Q9, p.1180 (answer p.1181) Also printed as Model Final Exam 4, Q4, p.1861 (answer p.1862). Also printed as Model Final Exam 6, Q3, p.2100 (answer p.2101), options reworded - same vignette and key.'
 },
 
 { id:'npep-schiz-10', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
@@ -9572,7 +9573,7 @@ var Q_NEURO = [
   answer:3,
   explanation:'The presentation is consistent with schizophrenia: progressive social isolation, apparent auditory hallucinations suggested by talking when alone, poor insight, and a fixed persecutory belief about her mother. The printed key selects 1%. The lifetime prevalence of schizophrenia is generally taught as approximately 1% of the population (not taken from the course material).\n\nOption 5% is wrong because it is substantially higher than the usual lifetime prevalence estimate for schizophrenia (not taken from the course material). It may be confused with the broader frequency of psychotic symptoms or with other mental-health conditions, but it is not the standard estimate for schizophrenia.\n\nOption 10% is wrong because this would imply that schizophrenia affects about one in ten people over a lifetime, far above the generally taught epidemiology (not taken from the course material). This percentage is more compatible with the frequency of some common psychiatric disorders, not schizophrenia.\n\nOption 3% is wrong because it also exceeds the conventional approximately 1% lifetime estimate (not taken from the course material). Some studies produce varying figures depending on diagnostic definitions and population methods, but the bank’s intended answer is 1% (not taken from the course material).\n\nOption 1% is right because it matches the printed key and the conventional teaching for lifetime prevalence of schizophrenia (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
   objective:'Identify the lifetime prevalence of schizophrenia.',
-  source:'Neuro endpoint.pdf, Schizophrenia, Q23, p.1209 (answer p.1210)'
+  source:'Neuro endpoint.pdf, Schizophrenia, Q23, p.1209 (answer p.1210) Also printed as Model Final Exam 2, Q26, p.1620 (answer p.1621).'
 },
 
 { id:'npep-schiz-24', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
@@ -9590,7 +9591,1808 @@ var Q_NEURO = [
   answer:1,
   explanation:'The printed key is option b. This patient has a known chronic psychotic disorder whose usual symptoms are controlled, but he has developed an abrupt, dramatic change with frightening visual experiences and severe agitation. An acute change in mental state in a person with schizophrenia should prompt hospital admission for safety and assessment of possible medical, neurologic, toxic, or substance-related causes. Acute visual hallucinations are particularly suggestive of delirium or another organic process rather than simply a routine relapse of schizophrenia (not taken from the course material). Laboratory investigations are part of searching for a reversible precipitant while the patient is managed in a protected setting.\n\nOption a is inadequate because removing stressors alone does not investigate the acute change or ensure that a medical cause is not missed. Option c may be relevant later, since non-adherence can cause recurrence of psychotic symptoms, but it is not enough as the immediate step when the presentation is sudden and atypical. Option d is inappropriate because directly arguing against a frightened patient\'s perception is unlikely to calm him and does not address safety or possible underlying illness. Written for this bank — the endpoint file prints no explanation here.',
   objective:'An acute atypical psychotic presentation in a patient with schizophrenia requires hospitalization and investigation for an organic cause.',
-  source:'Neuro endpoint.pdf, Schizophrenia, Q27, p.1218 (answer p.1219)'
+  source:'Neuro endpoint.pdf, Schizophrenia, Q27, p.1218 (answer p.1219) Also printed as Model Final Exam 2, Q36, p.1646 (answer p.1647).'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Ataxia and low back pain: 5 rows (printed Q1-Q3,Q5,Q7, pp.411-425).
+ * Built by tools/bank-harness/npep-build.mjs, then hand-verified against page images:
+ * the pipeline's pairs n2 (p.411) and n3 (p.413) are the SAME question (Q1) - p.411 is
+ * its question page, p.412 is an unrelated ataxia-types reference table, p.413 is Q1's
+ * answer reprint with the key highlighted - not two separate questions. Merged to one
+ * npep-ataxia-1 entry. All 7 keys (pre-merge) independently verified against answer-page
+ * images. Q4 (p.418/419) and Q6 (p.422/423) are the same fact - vestibular ataxia, normal
+ * muscle tone - already printed in app/data/questions.neuro.js as npqb-nr-2 (gradegain,
+ * fuller lecture-grounded explanation); both folded there via alsoIn:['endpoint'] and an
+ * extended source citation, deleted from this draft, ids 4 and 6 left as a gap, never
+ * renumbered.
+ */
+
+{ id:'npep-ataxia-1', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'A 62-year-old male presented with gait difficulty and sense of falling upon closing his eyes. He has a long history of diabetes mellitus and hypertension. Neurological examination revealed weak distal muscles, lost distal reflexes, long glove and stalking hypesthesia and high steppage gait.\n\nWhat is the most probable diagnosis of this patient ?',
+  options:['Mixed ataxia', 'Vestibular ataxia', 'Cerebellar ataxia', 'Sensory ataxia'],
+  answer:3,
+  explanation:'The printed key is D, Sensory ataxia (highlighted on the reprinted answer page, p.413, which also marks in red the clinical clues: sense of falling on eye closure, long history of diabetes mellitus, and glove-and-stocking hypesthesia with high steppage gait). The worsening of imbalance on eye closure indicates dependence on visual input because proprioceptive sensory input is impaired; the distal weakness, absent distal reflexes, glove-and-stocking hypesthesia, and high-steppage gait support a length-dependent peripheral neuropathy, consistent with diabetic neuropathy (not taken from the course material). The chapter’s own ataxia-types table (p.412) lists a positive Romberg / worsening with eye closure and weakness as sensory-ataxia features, matching this case.\n\nMixed ataxia is wrong because the stem gives findings of peripheral sensory loss without accompanying cerebellar or vestibular features. Vestibular ataxia is wrong because vestibular disease commonly causes vertigo, nausea, and nystagmus (not taken from the course material), none of which are described; it also does not explain the distal weakness, lost reflexes, and glove-and-stocking sensory loss. Cerebellar ataxia is wrong because cerebellar gait disturbance generally remains present with the eyes open and closed and may be associated with dysmetria, intention tremor, dysdiadochokinesia, or nystagmus (not taken from the course material), none of which are stated.\n\nWritten for this bank — the endpoint file prints no dedicated explanation paragraph here, only the highlighted stem clues and marked key.',
+  objective:'Identify sensory ataxia caused by peripheral sensory neuropathy (e.g. diabetic), worsened by eye closure.',
+  source:'Neuro endpoint.pdf, Ataxia and low back pain, Q1, p.411 (answer p.413). Also printed as Model Final Exam 5, Q14, p.2034 (answer p.2035; options reordered, same key). Also printed as Model Final Exam 4, Q63, p.1996 (answer p.1997), options reordered.'
+},
+
+{ id:'npep-ataxia-2', bank:'endpoint', module:'neuropsych', chapter:'nr-para',
+  stem:'Where is the site of the lesion if a patient develops ataxia that markedly worsens following eye closure ?',
+  options:['basal ganglia', 'posterior column', 'cerebral cortex', 'cerebellum'],
+  answer:1,
+  explanation:'Worsening ataxia with eye closure suggests sensory ataxia, which is commonly due to lesions in the posterior (dorsal) columns that impair proprioception.',
+  objective:'Identify posterior column lesions as a cause of sensory ataxia that worsens with eye closure.',
+  source:'Neuro endpoint.pdf, Ataxia and low back pain, Q2, p.414 (answer p.415)'
+},
+
+{ id:'npep-ataxia-3', bank:'endpoint', module:'neuropsych', chapter:'nr-para',
+  stem:'A 23-year-old female presented with right sided postural instability and dysdiadokokinesia . She started to notice a speech problem and her friend noted nystagmus in one eye . What is the most probable location of the lesion responsible for the patient presentation?',
+  options:['right cerebellum.', 'left cerebellum', 'left cerebral hemisphere', 'right cerebral hemisphere'],
+  answer:0,
+  explanation:'Printed on the answer page (p.417), in a purple caption below the marked key: "Cerebellum >> lesion on the same side." The patient’s right-sided postural instability, dysdiadokokinesia, speech problem, and nystagmus are cerebellar signs, and cerebellar lesions produce ipsilateral (same-side) limb and gait incoordination, so right-sided signs localize to the right cerebellum (option A).\n\nLeft cerebellum is wrong because it would produce left-sided, not right-sided, incoordination. Left and right cerebral hemisphere are wrong because a cerebral hemispheric lesion more typically causes contralateral upper motor neuron weakness, sensory deficits, or language disturbance if dominant, rather than this cerebellar-sign cluster (not taken from the course material).',
+  objective:'Cerebellar lesions cause ipsilateral cerebellar signs and localize to the same side.',
+  source:'Neuro endpoint.pdf, Ataxia and low back pain, Q3, p.416 (answer p.417); also printed as Model Final Exam 3, Q8, p.1736 (answer p.1737). Also printed as Model Final Exam 6, Q19, p.2132 (answer p.2133), options reordered - the third printing of this question in the book.'
+},
+
+{ id:'npep-ataxia-5', bank:'endpoint', module:'neuropsych', chapter:'nr-para',
+  stem:'In which type of ataxia is nystagmus usually absent?',
+  options:['Cerebellar ataxia', 'Vestibular ataxia', 'Mixed ataxia', 'Sensory ataxia'],
+  answer:3,
+  explanation:'In sensory ataxia, nystagmus is usually absent because the vestibular system is not involved. Patients often compensate with visual input and worsen when eyes are closed (positive Romberg).',
+  objective:'Identify sensory ataxia as the type in which nystagmus is usually absent.',
+  source:'Neuro endpoint.pdf, Ataxia and low back pain, Q5, p.420 (answer p.421)'
+},
+
+{ id:'npep-ataxia-7', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:'Saddle anesthesia (sensory loss in the perianal region) is characteristic of which condition?',
+  options:['Cauda equina syndrome', 'Conus medullaris syndrome', 'Lumbosacral radiculopathy', 'Cervical spondylosis'],
+  answer:0,
+  explanation:'Saddle anesthesia ➡ loss of sensation in the perianal and inner thigh region , is a hallmark of cauda equina syndrome. It results from compression of the lower spinal nerve roots.',
+  objective:'Saddle anesthesia is a hallmark of cauda equina syndrome.',
+  source:'Neuro endpoint.pdf, Ataxia and low back pain, Q7, p.424 (answer p.425)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Movement disorders (pp.427-494, Q1-Q21). All 21 rows verified against
+ * both question and answer page images; no defective/disputed keys found. 3 rows dropped as
+ * folds before splice: Q4 into Q8 (same book, same bank, options reordered), Q5 into
+ * npqb-nr-220 and Q6 into npqb-nr-219 (cross-bank exact, gradegain kept for its fuller
+ * lecture-grounded explanation). 18 rows spliced. Q10 and Q16 are near-duplicates of
+ * npqb-nr-208 and npqb-nr-224 respectively (same fact, different distractor sets) — not an
+ * exact fold shape, left standalone per the Chapter 1 precedent.
+ */
+
+{ id:'npep-movement-1', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'Which of the following makes you suspect atypical parkinsonism rather than idiopathic Parkinson’s disease?',
+  options:['Early onset of associated dementia', 'Early unilateral onset of tremors', 'Gradual progressive course', 'Positive family history'],
+  answer:0,
+  explanation:'Early onset of associated dementia is a red flag for atypical parkinsonism rather than idiopathic Parkinson’s disease. In idiopathic Parkinson’s disease, cognition is often relatively preserved early in the illness; dementia usually occurs later, if it occurs. Prominent early cognitive decline should therefore prompt consideration of an alternative parkinsonian syndrome, including dementia with Lewy bodies or other atypical neurodegenerative disorders (not taken from the course material).\n\nEarly unilateral onset of tremors is not the best answer because asymmetrical onset, commonly affecting one side first, is characteristic of idiopathic Parkinson’s disease (not taken from the course material). Tremor may be absent in atypical syndromes, but unilateral tremor itself does not suggest atypical parkinsonism.\n\nA gradual progressive course is also compatible with idiopathic Parkinson’s disease, which is typically a slowly progressive neurodegenerative condition (not taken from the course material). Atypical syndromes may progress more rapidly, but gradual progression alone does not distinguish them reliably.\n\nPositive family history is not the best discriminator. Although familial forms and genetic susceptibility can occur in Parkinson’s disease, a family history does not by itself establish an atypical syndrome (not taken from the course material). The more useful clinical concern is an early non-motor feature such as dementia, particularly when it appears close to motor onset (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Early associated dementia is a red flag suggesting atypical rather than idiopathic parkinsonism.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q1, p.453 (answer p.454)'
+},
+
+{ id:'npep-movement-2', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'A 40-year-old male with gradual progressive dementia and irregular involuntary movements. Positive family history of similar disease. What is the diagnosis?',
+  options:['Sydenham chorea', 'Huntington disease', 'Dystonia muscularum deformans', 'Creutzfeldt-Jakob disease'],
+  answer:1,
+  explanation:'Huntington disease is the printed answer. The combination of onset in middle adulthood, gradual progressive dementia, irregular involuntary movements, and a positive family history is characteristic of Huntington disease. The involuntary movements are typically choreiform, and the disorder is inherited in an autosomal dominant pattern (not taken from the course material). Cognitive decline and psychiatric or behavioural changes may accompany the motor disorder (not taken from the course material).\n\nSydenham chorea is wrong because it is usually a post-streptococcal manifestation of rheumatic fever, most commonly affecting children or adolescents, rather than a familial progressive dementia syndrome (not taken from the course material). It can cause chorea, but it does not fit this age, course, or family history.\n\nDystonia muscularum deformans is wrong because it refers to a dystonia syndrome with sustained involuntary muscle contractions and abnormal postures, rather than the irregular movements with progressive dementia described here (not taken from the course material). Its presentation does not classically combine these features in the same way.\n\nCreutzfeldt-Jakob disease is wrong because it commonly causes rapidly progressive dementia with myoclonus and other neurological signs, rather than the gradual inherited course stated in the question (not taken from the course material). Although familial forms exist, the overall presentation given is more consistent with Huntington disease.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify Huntington disease from progressive dementia, irregular involuntary movements, and family history.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q2, p.455 (answer p.456)'
+},
+
+{ id:'npep-movement-3', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'Intention tremors are usually found in:',
+  options:['Parkinson disease', 'Thyrotoxicosis', 'Cerebellar diseases', 'Essential tremors'],
+  answer:2,
+  explanation:'The keyed answer is Cerebellar diseases. An intention tremor appears or becomes more pronounced during purposeful movement, particularly as the limb approaches its target, such as during a finger-to-nose test. This occurs with cerebellar dysfunction because the cerebellum normally coordinates the timing, force, and accuracy of voluntary movement (not taken from the course material). Cerebellar disease may also produce dysmetria, decomposition of movement, nystagmus, and gait ataxia (not taken from the course material).\n\nParkinson disease is not the best answer because its classic tremor is a resting tremor: it is most evident when the affected limb is relaxed and tends to diminish with voluntary action (not taken from the course material). Parkinsonian tremor may re-emerge when posture is maintained, but that is distinct from the typical cerebellar intention tremor (not taken from the course material).\n\nThyrotoxicosis usually causes a fine, rapid postural or action tremor, often visible when the hands are held outstretched, due to increased adrenergic activity (not taken from the course material). It is not characteristically a terminal, target-directed intention tremor.\n\nEssential tremors are commonly bilateral action and postural tremors affecting the hands and sometimes the head or voice (not taken from the course material). Although they occur during movement, they are not usually the classic intention tremor associated with cerebellar lesions. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify cerebellar disease as the usual association of intention tremor.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q3, p.457 (answer p.458)'
+},
+
+{ id:'npep-movement-7', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'Which of the following disease cause hypertonia ?',
+  options:['cerebellar lesion', 'Parkinson disease.', 'chorea', 'myopathy'],
+  answer:1,
+  explanation:'Parkinson disease causes hypertonia, classically described clinically as rigidity. Rigidity is an increased resistance to passive movement that is present throughout the range of movement and is not dependent on movement velocity. It results from basal ganglia dysfunction with impaired dopaminergic activity in the nigrostriatal pathway (not taken from the course material). It may be felt as lead-pipe rigidity or, when tremor is superimposed, cogwheel rigidity (not taken from the course material).\n\nA cerebellar lesion does not cause hypertonia. Cerebellar disease typically produces hypotonia, incoordination, dysmetria, intention tremor, and impaired rapid alternating movements (not taken from the course material). Chorea is characterized by irregular, brief, unpredictable involuntary movements and is usually associated with reduced muscle tone rather than hypertonia (not taken from the course material). Myopathy primarily causes muscle weakness, often proximal, and may lead to muscle wasting; muscle tone is generally normal or reduced, rather than increased (not taken from the course material).\n\nTherefore, among the listed disorders, Parkinson disease is the condition associated with hypertonia through rigidity. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Parkinson disease is associated with hypertonia in the form of rigidity.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q7, p.465 (answer p.466) Also printed as Model Final Exam 2, Q30, p.1631 (answer p.1632). Also printed as Model Final Exam 4, Q53, p.1973 (answer p.1974), options reordered.'
+},
+
+{ id:'npep-movement-8', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'A 65 -year -old male patient is presenting with tremors, rigidity and reduced mobility. How should this patient be treated?',
+  options:['Alpha methyldopa', 'Methyl prednisolone', 'haloperidol', 'Bromocriptine'],
+  answer:3,
+  explanation:'Treatment\n\nA. Replacement therapy: Levodopa combined with Carbidopa\n\nThe main stay in the treatment is the replacement of dopamine by combination levodopa and carbidopa.\n\nB. Dopamine agonists: Bromocriptine (parlodel)\n✓ They will directly stimulate dopamine receptors.\n✓ less effective than L-dopa (used in early stage or adjuvant therapy to L-dopa).\n\nC. Anticholinergic drugs: Trihexyphenidyl HCL, Benzotropine\n✓ provide good symptomatic relief but do not improve bradykinesia or rigidity.\n\nD. MAO B inhibitors: Selegiline\n\nThe enzyme monoamine oxidase B plays a key role in breakdown of dopamine. So, MAO-B inhibitor allows dopamine to accumulate, enhancing and prolonging its action.\n\nE. COMT inhibitors: entacapone (O-methyl transferase inhibitor)\n\nUse carbidopa, COMT inhibitors prevent the breakdown of levodopa. These main effect is to prolong duration of action of levodopa, may reduce wearing off.\n\nF. Amantadine, an antiviral drug\n\nE. A surgery for severe refractory cases:\n- Deep brain stimulation\n- Pallidal surgery: Thalamotomy or pallidotomy.\n\nH. Others: Physiotherapy.',
+  objective:'Recognize bromocriptine as a dopamine agonist used in Parkinson\'s disease.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q8, p.467 (answer p.468). Also printed by the same book as Movement disorders Q4, p.459 (answer p.460) — same stem, options reordered (key moves from index 0 to index 3), shorter explanation. Same bank both times, so no second entry and no alsoIn. Also printed as Model Final Exam 2, Q47, p.1670 (answer p.1671).'
+},
+
+{ id:'npep-movement-9', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'What is the most prominent neuropathological feature of Parkinson disease?',
+  options:['loss of striatal dopamine pathway to neostriatum and globus pallidus', 'loss of cholinergic pathway to neostriatum and globus pallidus', 'loss of cholinergic pathway in frontal lobe', 'loss of the serotonergic pathway to the frontal lobe'],
+  answer:0,
+  explanation:'The hallmark of Parkinson\'s disease is the degeneration of dopaminergic neurons in the substantia nigra pars compacta, which leads to reduced dopamine levels in the striatum (caudate and putamen). This disruption in the nigrostriatal dopamine pathway results in the classic motor symptoms of Parkinsonism.',
+  objective:'Identify loss of the nigrostriatal dopaminergic pathway as the prominent neuropathological feature of Parkinson disease.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q9, p.469 (answer p.470); also printed as Model Final Exam 3, Q7, p.1734 (answer p.1735).'
+},
+
+{ id:'npep-movement-10', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'A male patient aged 40 years with gradual onset and progressive course of dementia and involuntary movements that are irregular in place and time interval. He has positive family history of the same disease.\nWhat is your diagnosis?',
+  options:['Sydenham chorea', 'Dystonia muscular deformans', 'Huntington Disease', 'Alzheimer\'s disease'],
+  answer:2,
+  explanation:'Diagnostic signs:\n\n1) onset during early middle age\n\n2) positive family history\n\n3) progressive choreic movements\n\n4) progressive dementia',
+  objective:'Huntington disease presents in early middle age with progressive chorea, dementia, and a positive family history.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q10, p.471 (answer p.472); also printed as Model Final Exam 3, Q43, p.1807 (answer p.1808). Also printed as Model Final Exam 4, Q55, p.1977 (answer p.1978), options reordered, minor OCR spelling variant ("Huntington Discase" for "Huntington Disease").'
+},
+
+{ id:'npep-movement-11', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'Which involuntary movements have regular characteristic?',
+  options:['motor tics', 'fasciculations', 'athetosis', 'tremors.'],
+  answer:3,
+  explanation:'Tremors are rhythmic and regular involuntary movements, distinguishing them from irregular movements like tics or chorea. They may be resting, postural, or intention-\nbased.',
+  objective:'Tremors are regular, rhythmic involuntary movements.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q11, p.473 (answer p.474)'
+},
+
+{ id:'npep-movement-12', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'A patient with a family history of irregular involuntary movements and recent onset of dementia likely has which condition?',
+  options:['Sydenham chorea', 'Huntington’s disease', 'Dystonia musculorum deformans', 'Alzheimer’s disease'],
+  answer:1,
+  explanation:'Huntington’s disease is an autosomal dominant disorder characterized by progressive chorea, psychiatric symptoms, and dementia. A family history and the combination of movement and cognitive symptoms are key clues.',
+  objective:'Identify Huntington’s disease from familial involuntary movements and dementia.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q12, p.475 (answer p.476)'
+},
+
+{ id:'npep-movement-13', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'Which of the following is a hypokinetic disorder with extrapyramidal features?',
+  options:['Parkinson’s disease', 'Huntington’s disease', 'Cerebellar ataxia', 'Tardive dyskinesia'],
+  answer:0,
+  explanation:'Parkinson’s disease is a classic hypokinetic movement disorder, presenting with bradykinesia, rigidity, and resting tremor due to degeneration of the dopaminergic neurons in the substantia nigra.',
+  objective:'Identify Parkinson’s disease as a hypokinetic extrapyramidal movement disorder.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q13, p.477 (answer p.478)'
+},
+
+{ id:'npep-movement-14', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'What is usually the first symptom of Parkinson’s disease?',
+  options:['Bradykinesia', 'Tremors', 'Postural instability', 'Rigidity'],
+  answer:1,
+  explanation:'Resting tremor, often starting in one hand, is commonly the first noticeable symptom of Parkinson’s disease. It is followed by other features like bradykinesia and rigidity as the disease progresses.',
+  objective:'Identify tremor as the usual first noticeable symptom of Parkinson’s disease.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q14, p.479 (answer p.480)'
+},
+
+{ id:'npep-movement-15', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'What is the appropriate treatment option for a patient diagnosed with Parkinson\'s disease?',
+  options:['Beta blocker', 'Alpha methyldopa', 'Bromocriptine', 'Glutamate inhibitor'],
+  answer:2,
+  explanation:'Bromocriptine is a dopamine agonist used to manage Parkinson’s disease symptoms by stimulating dopamine receptors. It is especially useful in younger patients or as adjunct therapy.',
+  objective:'Bromocriptine is a dopamine agonist used in Parkinson\'s disease.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q15, p.481 (answer p.482)'
+},
+
+{ id:'npep-movement-16', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'At which decade of age does the onset for Parkinson\'s disease peak?',
+  options:['Sixth.', 'Third', 'Fourth', 'Fifth'],
+  answer:0,
+  explanation:'Parkinson’s disease most commonly begins in the sixth decade of life, though onset can range from the fifth to seventh decades. Incidence increases with age.',
+  objective:'Identify the decade in which Parkinson\'s disease onset most commonly occurs.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q16, p.483 (answer p.484). Also printed as Model Final Exam 5, Q7, p.2020 (answer p.2021).'
+},
+
+{ id:'npep-movement-17', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'A 76-year-old patient complains of difficulty in doing his daily activity and dizziness. Upon examination, he has severe rigidity and bradykinesia. Which drug should be better avoided in such a patient?',
+  options:['Entacapone', 'Amantadine', 'Bromocriptine', 'Biperiden HCL'],
+  answer:3,
+  explanation:'Biperiden is an anticholinergic that may worsen confusion, dizziness, and cognitive impairment in elderly Parkinson’s patients and should generally be avoided.',
+  objective:'Identify the antiparkinsonian drug that should be avoided in an elderly patient with dizziness.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q17, p.485 (answer p.486). Also printed as Model Final Exam 5, Q13, p.2032 (answer p.2033).'
+},
+
+{ id:'npep-movement-18', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'What is the frequency of resting tremor in Parkinson\'s disease?',
+  options:['4-6/second.', '2/second.', '14/second.', '8/second..'],
+  answer:0,
+  explanation:'Feature of parkinsonian tremors:\n*Coarse with a frequency of 4-7 Hz.\n*At rest.\n*Increase with emotions and stress.\n*Decrease with voluntary action.\n*Disappear with sleep.',
+  objective:'Identify the frequency of resting tremor in Parkinson\'s disease.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q18, p.487 (answer p.488). Also printed as Model Final Exam 6, Q27, p.2148 (answer p.2149), identical stem and options.'
+},
+
+{ id:'npep-movement-19', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'A 45-year-old man with Parkinson\'s disease reports experiencing jerky movements spreading from one part of his body to another after starting treatment. What is the most likely diagnosis?',
+  options:['Chorea', 'Hemiballismus', 'Myoclonus', 'Benign essential tremor', 'Tic'],
+  answer:0,
+  explanation:'Chorea consists of rapid, involuntary, and irregular jerky movements, often seen as a side effect of dopaminergic therapy in Parkinson’s disease. These movements may spread unpredictably across body parts.',
+  objective:'Identify chorea as a treatment-associated hyperkinetic movement disorder in Parkinson\'s disease.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q19, p.489 (answer p.490)'
+},
+
+{ id:'npep-movement-20', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'A 65-year-old woman presents with hand tremor, slowness in daily activities, and dependency for daily care. On examination, she has an expressionless face, bradykinesia, and marked upper limb rigidity. What is the initial most appropriate step in management?',
+  options:['Bromocriptine', 'Selegiline', 'Amantadine', 'Benzhexol', 'Levodopa'],
+  answer:4,
+  explanation:'Levodopa is the first-line treatment for Parkinson’s disease, especially when functional impairment is significant. It replenishes dopamine and improves bradykinesia, rigidity, and tremor.',
+  objective:'Identify levodopa as the initial treatment for Parkinson’s disease with significant functional impairment.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q20, p.491 (answer p.492)'
+},
+
+{ id:'npep-movement-21', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'A 27-year-old woman presents with subacute onset of jerky, irregular involuntary movements affecting her tongue, head, upper and lower limbs, along with mild psychotic symptoms. She has a history of arthritis and kidney disease treated with corticosteroids. What is the most likely diagnosis?',
+  options:['Tremors', 'Athetosis', 'Motor tics', 'Chorea'],
+  answer:3,
+  explanation:'Chorea is characterized by rapid, jerky, involuntary movements that can affect the limbs, face, and tongue. In this case, the presence of chorea along with a history of arthritis and kidney disease suggests a systemic autoimmune condition such as systemic lupus erythematosus (SLE), where chorea can be a neuropsychiatric manifestation.',
+  objective:'Identify chorea from rapid, jerky, irregular involuntary movements.',
+  source:'Neuro endpoint.pdf, Movement disorders, Q21, p.493 (answer p.494)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Model Final Exam 1: 21 rows survive as new corpus entries;
+ * 44 of the original 65 are verbatim/near-verbatim reprints of questions already in
+ * this corpus (other endpoint chapters or the Grade Gain bank) and were folded, not
+ * spliced. Fold map + citations to append to the 44 survivor rows:
+ * content/neuro/qb-pages/_ep-work/fe1/fold-map.md (not yet applied to the corpus —
+ * corpus was being live-edited by concurrent chapter agents; deferred, see report).
+ * All 65 rows independently verified against page images (Neuro endpoint.pdf
+ * pp.1425-1554), zero stem/option/key discrepancies found in this chapter.
+ */
+
+{ id:'npep-fe1-1', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'A 65- year-old male patient is presenting with tremors, rigidity and reduced mobility. How should this patient be treated ?',
+  options:['Bromocriptine', 'haloperidol', 'Methyl prednisolone', 'Alpha methyldopa'],
+  answer:0,
+  explanation:'The printed key is Bromocriptine. The combination of tremors, rigidity, and reduced mobility is consistent with parkinsonism, a movement disorder due to impaired dopaminergic activity in the basal ganglia (not taken from the course material). Bromocriptine is a dopamine agonist, so it can improve the motor manifestations by stimulating dopamine receptors (not taken from the course material). It is therefore the appropriate option among those printed.\n\nHaloperidol is wrong because it blocks dopamine D2 receptors and may cause or worsen extrapyramidal symptoms, including drug-induced parkinsonism (not taken from the course material). It would therefore be unsuitable for a patient presenting with these symptoms. Methyl prednisolone is a corticosteroid used for inflammatory, allergic, and some autoimmune conditions; it does not provide dopaminergic treatment for parkinsonian motor symptoms (not taken from the course material). Alpha methyldopa is an antihypertensive drug that reduces sympathetic outflow through central alpha-2 receptor activity (not taken from the course material). It is not a treatment for tremor, rigidity, and reduced mobility caused by parkinsonism.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Parkinsonian tremor, rigidity, and reduced mobility may be treated with the dopamine agonist bromocriptine.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q1, p.1425 (answer p.1426)'
+},
+
+{ id:'npep-fe1-6', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:'An adult male presented to the neurosurgery clinic with foot drop. On examination a lost ankle reflex and no planter response were found. What is the explanation for his clinical presentation ?',
+  options:['Cervical disc prolapse', 'Parasagittal meningioma', 'Dorsal D11-12 disc herniation', 'Lumbar disc prolapse'],
+  answer:3,
+  explanation:'Lumbar disc prolapse is the printed answer. A prolapsed lumbar disc can compress a lumbosacral nerve root, producing a lower motor neuron pattern in the affected leg. Foot drop is commonly associated with L5 root involvement, while loss of the ankle reflex suggests S1 root involvement; these findings can occur with lumbar disc disease depending on the level and extent of root compression (not taken from the course material). The absence of a planter response is also compatible with a peripheral or root lesion rather than an upper motor neuron lesion (not taken from the course material).\n\nCervical disc prolapse would more typically cause cervical radicular symptoms or spinal cord signs affecting the upper limbs and/or long tracts below the neck; it would not best explain an isolated lower motor neuron foot drop with a lost ankle reflex (not taken from the course material). Parasagittal meningioma may affect the medial frontal motor cortex and cause contralateral leg weakness, but cortical involvement would generally produce upper motor neuron signs such as increased reflexes and an extensor plantar response rather than a lost ankle reflex (not taken from the course material). Dorsal D11-12 disc herniation could compress the spinal cord and cause myelopathic lower-limb signs below the lesion, again tending toward upper motor neuron findings rather than this root-level pattern (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Foot drop with loss of the ankle reflex is tested as a presentation of lumbar disc prolapse.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q6, p.1435 (answer p.1436)'
+},
+
+{ id:'npep-fe1-15', bank:'endpoint', module:'neuropsych', chapter:'nr-para',
+  stem:'A 62-year-old male presented with gait difficulty and sense of falling upon closing his eyes. He has a long history of diabetes mellitus and hypertension. Neurological examination revealed weak distal muscles, lost distal reflexes, long glove and stalking hypesthesia and high steppage gait.\nWhat is the most probable diagnosis of this patient ?',
+  options:['Mixed ataxia', 'Vestibular ataxia', 'Cerebellar ataxia', 'Sensory ataxia'],
+  answer:3,
+  explanation:'The bank keys sensory ataxia. The worsening on closing the eyes indicates loss of visual compensation for impaired proprioceptive sensory input. The distal weakness, absent distal reflexes, glove-and-stocking hypesthesia, and high-steppage gait together indicate a length-dependent peripheral neuropathy, which is compatible with longstanding diabetes mellitus (not taken from the course material). Impaired large-fibre sensory input from such neuropathy produces sensory ataxia (not taken from the course material).\n\nMixed ataxia is wrong because the stem provides evidence for a sensory peripheral-neuropathic cause but does not describe an additional cerebellar or vestibular component. Vestibular ataxia is wrong because no vertigo, nausea, nystagmus, or other vestibular symptoms are given; vestibular imbalance is not characteristically explained by distal areflexia and stocking sensory loss (not taken from the course material). Cerebellar ataxia is wrong because cerebellar gait difficulty generally does not become markedly worse merely on eye closure, and the question does not report dysmetria, intention tremor, dysdiadochokinesia, or cerebellar speech changes (not taken from the course material). The positive Romberg-type history and peripheral sensory findings instead support sensory ataxia.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Sensory ataxia is identified by imbalance worsened by eye closure with peripheral sensory neuropathy findings.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q15, p.1453 (answer p.1454)'
+},
+
+{ id:'npep-fe1-17', bank:'endpoint', module:'neuropsych', chapter:'nr-intro',
+  stem:'What are the site and age incidence of medulloblastoma ?',
+  options:['Intra-axial tumor and common in adults', 'Intra-axial tumor and common in children', 'Extra-axial tumor and common in children', 'Extra-axial tumor and common in adults'],
+  answer:1,
+  explanation:'The keyed option is “Intra-axial tumor and common in children.” Medulloblastoma is an intra-axial tumour because it arises within brain tissue, most commonly in the cerebellum, rather than from structures outside the brain parenchyma (not taken from the course material). It is a malignant embryonal tumour and is one of the important posterior fossa tumours of childhood (not taken from the course material). In children it classically occurs in the midline cerebellar vermis and may obstruct cerebrospinal-fluid pathways, producing features of raised intracranial pressure (not taken from the course material).\n\nOption A is wrong because, although medulloblastoma is intra-axial, it is not common in adults. Adult cases can occur, but they are much less typical than childhood cases (not taken from the course material). Option C is wrong because it calls the tumour extra-axial. Extra-axial lesions arise outside the brain tissue, such as from meninges or cranial nerves, whereas medulloblastoma originates within the cerebellar parenchyma (not taken from the course material). Its reference to children is compatible with the usual age distribution, but the site classification makes the whole option incorrect. Option D is wrong on both parts: medulloblastoma is not extra-axial and is not chiefly common in adults (not taken from the course material). The question therefore tests recognition of both the intracerebral location and the characteristic paediatric incidence of medulloblastoma.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Medulloblastoma is an intra-axial tumour that is common in children.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q17, p.1457 (answer p.1458)'
+},
+
+{ id:'npep-fe1-18', bank:'endpoint', module:'neuropsych', chapter:'nr-intro',
+  stem:'A 30-year-old female patient was complaining from headache, seizures, abnormal speech and facial deviation. His neurological examination showed dysphasia, right sided upper motor facial palsy. What is the most probable diagnosis of this patient ?',
+  options:['Left Cerebellopontine angle tumor', 'Right cerebellar hemisphere astrocytoma', 'Left frontal lobe astrocytoma', 'Right temporal astrocytoma'],
+  answer:2,
+  explanation:'The printed key is Left frontal lobe astrocytoma. The combination of abnormal speech/dysphasia and right sided upper motor facial palsy localizes to the dominant left cerebral hemisphere, particularly the left frontal region involving language and corticobulbar motor pathways (not taken from the course material). A frontal lobe mass can also cause headache and seizures through raised intracranial pressure and cortical irritation (not taken from the course material). Thus, the option that best brings the focal deficits together is a left frontal lobe astrocytoma.\n\nLeft Cerebellopontine angle tumor is wrong because lesions in the cerebellopontine angle more typically affect nearby cranial nerves, especially producing ipsilateral facial weakness, hearing symptoms, or cerebellar signs, rather than dysphasia with a contralateral upper motor neuron facial palsy (not taken from the course material).\n\nRight cerebellar hemisphere astrocytoma is wrong because a cerebellar lesion is expected to produce ipsilateral limb ataxia, dysmetria, gait imbalance, or nystagmus, not a language deficit and right upper motor facial weakness (not taken from the course material).\n\nRight temporal astrocytoma is wrong because the stated dysphasia suggests dominant-hemisphere language involvement, and the right temporal location does not account as well for the right sided upper motor facial palsy (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Localize focal neurological deficits caused by an intracranial tumor.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q18, p.1459 (answer p.1460)'
+},
+
+{ id:'npep-fe1-20', bank:'endpoint', module:'neuropsych', chapter:'nr-intro',
+  stem:'What is the cranial deformity of mtopic suture synostosis ?',
+  options:['Oxycephaly', 'Scaphocephaly', 'Plagiocephaly', 'Trigonocephaly'],
+  answer:3,
+  explanation:'Trigonocephaly is the cranial deformity associated with premature fusion of the metopic suture (not taken from the course material). The metopic suture runs in the midline of the frontal bone; early fusion restricts transverse frontal growth and produces a triangular forehead, often with hypotelorism (not taken from the course material). Therefore, option D is the printed key.\n\nOxycephaly is not the expected deformity because it is classically associated with fusion of multiple cranial sutures, particularly coronal and sagittal sutures, producing a high, tower-shaped skull (not taken from the course material). Scaphocephaly is not correct because it results from premature sagittal suture fusion, causing a long, narrow skull (not taken from the course material). Plagiocephaly is not correct because it refers to asymmetrical skull flattening, commonly related to unilateral coronal or lambdoid suture synostosis, depending on the pattern (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify trigonocephaly as the deformity caused by metopic suture synostosis.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q20, p.1463 (answer p.1464)'
+},
+
+{ id:'npep-fe1-24', bank:'endpoint', module:'neuropsych', chapter:'nr-para',
+  stem:'What is the common extradural tumor in the spinal column ?',
+  options:['Astrocytoma', 'Neurofibroma', 'Metastasis', 'Ependymoma'],
+  answer:2,
+  explanation:'Metastasis is the keyed answer. Metastatic disease is the commonest cause of extradural spinal tumors and usually reaches the spine through spread from a primary malignancy, often involving vertebral bone before extending into the epidural space (not taken from the course material). Such lesions may compress the spinal cord or cauda equina and can present with back pain, radicular pain, weakness, sensory change, or sphincter disturbance (not taken from the course material).\n\nAstrocytoma is wrong because it is a glial tumor that arises within the spinal cord substance; therefore, it is classified as an intramedullary tumor rather than an extradural tumor (not taken from the course material).\n\nNeurofibroma is wrong because it generally arises from a nerve root and is usually an intradural-extramedullary lesion, although it may extend through a neural foramen (not taken from the course material). It is not the commonest extradural spinal tumor.\n\nEpendymoma is wrong because it arises from ependymal cells and is typically an intramedullary spinal cord tumor in adults; myxopapillary ependymoma commonly occurs around the conus medullaris or filum terminale (not taken from the course material). Its usual location is therefore not extradural.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify metastasis as the common extradural tumor in the spinal column.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q24, p.1471 (answer p.1472)'
+},
+
+{ id:'npep-fe1-25', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'Which muscle is affected by radial nerve injury ?',
+  options:['flexor indicis', 'abductor digiti minimi', 'adductor pollicis', 'abductor pollicis longus'],
+  answer:3,
+  explanation:'Abductor pollicis longus is affected in radial nerve injury because it is supplied by the posterior interosseous nerve, a terminal motor branch of the deep branch of the radial nerve. (not taken from the course material) This muscle arises from the posterior surfaces of the radius, ulna, and interosseous membrane and acts mainly to abduct and extend the thumb at the carpometacarpal joint. (not taken from the course material) Therefore, radial nerve damage, especially a lesion involving its deep branch or posterior interosseous nerve, can impair this muscle. (not taken from the course material)\n\nFlexor indicis is wrong because flexor digitorum profundus to the index finger is supplied by the anterior interosseous nerve, which comes from the median nerve. (not taken from the course material) It is therefore not a radial-nerve muscle. Abductor digiti minimi is wrong because it is a hypothenar muscle supplied by the deep branch of the ulnar nerve. (not taken from the course material) Adductor pollicis is also wrong because it is supplied by the deep branch of the ulnar nerve. (not taken from the course material) These ulnar-innervated intrinsic hand muscles may be affected in ulnar neuropathy, not radial nerve injury. (not taken from the course material) Radial nerve lesions classically affect muscles of the posterior arm and forearm, producing weakness of wrist and finger extension; posterior interosseous involvement particularly affects thumb and finger extensors and abductors. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Tests identification of a muscle supplied by the radial nerve.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q25, p.1473 (answer p.1474) Also printed as Model Final Exam 4, Q34, p.1927 (answer p.1928), options reordered, minor OCR spelling variant ("flexor indicator" for "flexor indicis").'
+},
+
+{ id:'npep-fe1-32', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:'A 65 years old male with chronic low back pain and difficulty in walking after certain distance. He leans forward for a while then he can walk for the same distance. What is the underlying cause ?',
+  options:['Stenosis of the femoral artery', 'Varicosities of the saphenous vein', 'Entrapment of the common peroneal nerves', 'Narrowing of the lumbar canal'],
+  answer:3,
+  explanation:'The printed key is narrowing of the lumbar canal. This presentation is typical of neurogenic claudication due to lumbar spinal canal stenosis: walking and lumbar extension aggravate symptoms, while leaning forward relieves them and permits further walking. Flexion increases the effective space in the lumbar canal and reduces compression of neural structures (not taken from the course material). Chronic low back pain in an older patient supports a degenerative lumbar cause (not taken from the course material).\n\nStenosis of the femoral artery would cause vascular claudication, usually producing exertional limb pain from impaired arterial blood flow. Symptoms generally improve with stopping exercise, but the characteristic relief specifically on leaning forward is not expected (not taken from the course material).\n\nVaricosities of the saphenous vein may cause aching, heaviness, swelling, or discomfort related to venous insufficiency, often worsened by prolonged standing. They do not explain posture-dependent walking limitation relieved by spinal flexion (not taken from the course material).\n\nEntrapment of the common peroneal nerves may cause focal sensory disturbance over the lateral leg and dorsum of the foot, weakness of dorsiflexion, or foot drop. It would not usually cause chronic low back pain with exertional symptoms relieved by leaning forward (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Lumbar canal narrowing causes neurogenic claudication that improves with forward flexion.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q32, p.1487 (answer p.1488). Also printed as Model Final Exam 5, Q24, p.2054 (answer p.2055; options reordered, same key).'
+},
+
+{ id:'npep-fe1-34', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'A 32-year-old morbidly obese woman presents to her physician with the complaint of a persistent, and recurring, headache. The examination reveals that the woman has partial loss of vision in both eyes. Examination revealed papilledema and elevated lumbar cerebrospinal fluid opening pressure (27cm H2O). MRI brain is normal. What is most likely diagnosis ?',
+  options:['Idiopathic intracranial hypertension', 'Normal pressure hydrocephalus', 'Hydrocephalus ex vacuo', 'Aqueductal stenosis'],
+  answer:0,
+  explanation:'Idiopathic intracranial hypertension is the printed answer. The presentation is characteristic: a young morbidly obese woman has persistent recurrent headache, bilateral visual loss, papilledema, raised cerebrospinal fluid opening pressure, and a normal brain MRI. This condition reflects raised intracranial pressure without an identified structural intracranial lesion or hydrocephalus (not taken from the course material). Visual symptoms occur because sustained papilledema can compromise optic nerve function (not taken from the course material).\n\nNormal pressure hydrocephalus is wrong because it classically presents with gait disturbance, cognitive impairment, and urinary incontinence, with ventricular enlargement and usually normal or intermittently elevated pressure rather than papilledema with clearly raised opening pressure (not taken from the course material). Hydrocephalus ex vacuo is wrong because it is compensatory ventricular enlargement caused by loss of brain tissue, such as cerebral atrophy; it does not produce this syndrome of raised intracranial pressure and papilledema (not taken from the course material). Aqueductal stenosis is wrong because obstruction of the cerebral aqueduct causes obstructive hydrocephalus with ventricular dilatation visible on brain imaging, whereas the MRI is stated to be normal (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize idiopathic intracranial hypertension from headache, papilledema, visual loss, raised CSF opening pressure, and normal MRI.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q34, p.1491 (answer p.1492); also printed as Model Final Exam 3, Q14, p.1749 (answer p.1750), options reordered. Also printed as Model Final Exam 4, Q39, p.1941 (answer p.1942), options reordered.'
+},
+
+{ id:'npep-fe1-35', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'A 41-year-old worker dropped from a scaffolding at work. He was transported to the Emergency department ( ED ) and has regained consciousness by the time he arrived. The Glasgow coma scale ( GCS ) was 15 and no deficits. He had a scalp laceration stitched and was sent home. Six hours later, he was brought back to the ED with GCS 3 then died . Which of the following is the most likely cause of this man’s clinical course ?',
+  options:['Post traumatic hydrocephalus', 'Epidural hemorrhage', 'Subarachnoid hemorrhage', 'Subdural hemorrhage'],
+  answer:1,
+  explanation:'The printed key is Epidural hemorrhage. This presentation describes a lucid interval after head trauma: the patient initially regains consciousness, has a normal GCS of 15 and no neurological deficits, then deteriorates severely several hours later. An epidural hemorrhage can expand rapidly after traumatic arterial bleeding, classically involving the middle meningeal artery, causing rising intracranial pressure, brain herniation, coma and death (not taken from the course material). The scalp laceration may indicate an associated impact to the skull, but the important feature is the interval of apparent recovery followed by acute collapse.\n\nPost traumatic hydrocephalus is wrong because it usually develops over a more delayed period after trauma rather than producing this short, dramatic lucid interval and fatal deterioration within six hours (not taken from the course material). Subarachnoid hemorrhage is wrong because it more typically presents with sudden severe headache, meningeal symptoms, or abrupt loss of consciousness; the characteristic trauma-related lucid interval is not its usual pattern (not taken from the course material). Subdural hemorrhage is wrong because it commonly results from tearing of bridging veins and often evolves more gradually, particularly in older adults or people with cerebral atrophy, although acute subdural bleeding can occur after severe trauma (not taken from the course material). The question’s sequence is the classic examination description of epidural hemorrhage. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize the lucid interval and rapid neurological deterioration of epidural hemorrhage after head trauma.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q35, p.1493 (answer p.1494)'
+},
+
+{ id:'npep-fe1-37', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'What is the gold standard diagnostic tool for cerebral arteriovenous malformations ?',
+  options:['CT scan', 'Ultrasonography', 'CT angiography', 'digital subtraction angiography (DSA )'],
+  answer:3,
+  explanation:'Digital subtraction angiography (DSA ) is the printed correct answer. DSA provides high-resolution dynamic imaging of the cerebral arterial and venous circulation, allowing delineation of an arteriovenous malformation’s feeding arteries, nidus, venous drainage, associated aneurysms, and flow characteristics (not taken from the course material). It is generally used when detailed vascular definition is required for treatment planning or endovascular intervention (not taken from the course material).\n\nCT scan is wrong because non-contrast CT is mainly useful for detecting acute intracranial haemorrhage, mass effect, hydrocephalus, or calcification, rather than fully defining the vascular anatomy of an arteriovenous malformation (not taken from the course material). It may suggest a lesion or identify complications, but it does not provide the dynamic vessel-by-vessel detail of DSA (not taken from the course material).\n\nUltrasonography is wrong because conventional ultrasound has limited ability to assess intracranial vascular malformations through the adult skull (not taken from the course material). Doppler-based techniques can assess some accessible vessels or be useful in selected settings, but they are not the reference investigation for cerebral AVM anatomy (not taken from the course material).\n\nCT angiography is wrong because it can demonstrate cerebral vessels and may identify an AVM noninvasively, but it has less temporal and fine vascular resolution than catheter DSA (not taken from the course material). It may be useful for screening or urgent assessment, but DSA remains the gold-standard diagnostic study (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify digital subtraction angiography as the gold standard diagnostic tool for cerebral arteriovenous malformations.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q37, p.1497 (answer p.1498)'
+},
+
+{ id:'npep-fe1-38', bank:'endpoint', module:'neuropsych', chapter:'nr-lmn',
+  stem:'What is the common cause of coarse fasciculations ?',
+  options:['Muscle dystrophy', 'Peripheral neuropathy', 'Motor neuron disease', 'Cortical infarction'],
+  answer:2,
+  explanation:'Motor neuron disease is the keyed answer. Coarse fasciculations are visible, irregular contractions of groups of muscle fibres caused by spontaneous discharges within a motor unit, and are a characteristic lower motor neuron feature in motor neuron disease (not taken from the course material). In disorders such as amyotrophic lateral sclerosis, degeneration of anterior horn cells or motor axons produces denervation, reinnervation of surviving motor units, and fasciculations that may be widespread and clinically obvious (not taken from the course material).\n\nMuscle dystrophy is wrong because it is primarily a myopathic disorder: the main abnormalities are muscle-fibre degeneration and weakness rather than lower motor neuron hyperexcitability producing coarse fasciculations (not taken from the course material). Peripheral neuropathy is also wrong as a general answer. Severe axonal peripheral nerve disease can sometimes produce fasciculations through denervation, but it is not the classic common association intended by this question when coarse fasciculations are considered as a neurological sign (not taken from the course material). Cortical infarction is wrong because a cortical lesion produces upper motor neuron signs, such as weakness, spasticity, hyperreflexia, and an extensor plantar response after the acute phase, rather than fasciculations (not taken from the course material). The printed key therefore identifies motor neuron disease as the cause tested here.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Coarse fasciculations are classically associated with motor neuron disease.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q38, p.1499 (answer p.1500)'
+},
+
+{ id:'npep-fe1-46', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'Which nerve is affected in cubital tunnel syndrome ?',
+  options:['The ulnar', 'The terminal segment of the median', 'The musculocutaneous nerve', 'The radial'],
+  answer:0,
+  explanation:'Cubital tunnel syndrome is entrapment or compression of the ulnar nerve as it passes through the cubital tunnel at the elbow, behind the medial epicondyle (not taken from the course material). Therefore, “The ulnar” is the keyed answer. Ulnar nerve involvement can produce sensory symptoms in the little finger and ulnar half of the ring finger, and weakness of ulnar-innervated intrinsic hand muscles (not taken from the course material).\n\n“The terminal segment of the median” is wrong because median nerve compression at the wrist is classically associated with carpal tunnel syndrome, rather than cubital tunnel syndrome (not taken from the course material). Median nerve symptoms typically affect the thumb, index, middle, and radial half of the ring finger (not taken from the course material).\n\n“The musculocutaneous nerve” is wrong because this nerve supplies muscles of the anterior compartment of the arm and continues as the lateral cutaneous nerve of the forearm; it is not the nerve running through the cubital tunnel (not taken from the course material).\n\n“The radial” is wrong because radial nerve lesions occur at other anatomical sites, such as the radial groove or posterior interosseous nerve region, and may cause weakness of wrist or finger extension (not taken from the course material). The radial nerve is not the structure compressed in cubital tunnel syndrome. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Cubital tunnel syndrome affects the ulnar nerve.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q46, p.1515 (answer p.1516)'
+},
+
+{ id:'npep-fe1-49', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'What is the Glasgow Coma Score of a patient with eye opening to painful stimulation localization, and verbalization ?',
+  options:['5', '6', '10', '7'],
+  answer:2,
+  explanation:'The printed key is option C, 10. The Glasgow Coma Scale is calculated by adding eye, motor, and verbal response scores. Eye opening to painful stimulation scores 2. Localization to painful stimulation scores 5 for the motor response. Verbalization is scored as 3, giving a total of 10. These component values and their sum are generally taught components of the Glasgow Coma Scale (not taken from the course material).\n\nOption A, 5, is wrong because it is lower than the score from the eye-opening and motor responses alone: 2 plus 5 equals 7, before adding the verbal response. Option B, 6, is also wrong because it does not reflect the combined eye, motor, and verbal scores stated. Option D, 7, corresponds only to eye opening to pain plus localization, without a verbal score; therefore it does not represent the complete Glasgow Coma Score. The question’s wording uses “verbalization” without specifying the exact verbal category, but the bank’s highlighted answer indicates that it intends a verbal score of 3 (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Calculate the Glasgow Coma Score from stated eye, motor, and verbal responses.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q49, p.1521 (answer p.1522)'
+},
+
+{ id:'npep-fe1-50', bank:'endpoint', module:'neuropsych', chapter:'nr-para',
+  stem:'A 60-years-old diabetic patient complains of unsteady gait that markedly worsen following washing his face in the morning, where is the site of the lesion ?',
+  options:['cerebellum', 'posterior column', 'cerebral cortex', 'basal ganglia'],
+  answer:1,
+  explanation:'The printed key is posterior column. The worsening while washing his face implies that gait becomes more unsteady when visual input is reduced, such as when the eyes are closed. Posterior columns convey conscious proprioception and vibration sensation; impaired proprioceptive input produces sensory ataxia, in which the patient relies heavily on vision to maintain balance (not taken from the course material). Closing the eyes therefore makes the imbalance more apparent, corresponding to a positive Romberg phenomenon (not taken from the course material). Diabetes can be associated with sensory pathway dysfunction, although the question specifically asks for the best listed site (not taken from the course material).\n\nCerebellar disease causes cerebellar ataxia, typically with a broad-based gait, dysmetria, and poor coordination; it does not characteristically worsen substantially simply because visual input is removed (not taken from the course material). Cerebral cortex lesions more often produce focal higher cortical or motor deficits depending on the affected region, rather than the vision-dependent sensory ataxia described here (not taken from the course material). Basal ganglia disorders cause movement abnormalities such as bradykinesia, rigidity, tremor, or choreiform movements, not loss of position sense with worsening on eye closure (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Sensory ataxia that worsens when visual compensation is removed localizes to the posterior columns.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q50, p.1523 (answer p.1524) Also printed as Model Final Exam 2, Q8, p.1574 (answer p.1575).'
+},
+
+{ id:'npep-fe1-57', bank:'endpoint', module:'neuropsych', chapter:'nr-para',
+  stem:'Where is the site of the lesion if a patient develops ataxia that markedly worsens following eye closure ?',
+  options:['basal ganglia', 'posterior column', 'cerebral cortex', 'cerebellum'],
+  answer:1,
+  explanation:'The keyed option is posterior column. Posterior column lesions impair conscious proprioception and vibration sensation, so the patient loses sensory feedback needed to maintain posture and coordinate movement (not taken from the course material). Vision can partly compensate while the eyes are open. Closing the eyes removes this visual compensation, causing sensory ataxia to worsen markedly; this is the basis of a positive Romberg sign (not taken from the course material).\n\nBasal ganglia disease typically produces movement abnormalities such as bradykinesia, rigidity, tremor, chorea, or dystonia rather than ataxia that specifically worsens on eye closure (not taken from the course material). A cerebral cortex lesion may cause focal deficits such as weakness, sensory loss, aphasia, neglect, or cortical visual abnormalities depending on the affected area, but it is not the classic localization for isolated Romberg-worsened ataxia (not taken from the course material). Cerebellar lesions cause cerebellar ataxia, often with dysmetria, intention tremor, dysdiadochokinesia, nystagmus, and a broad-based gait; this instability is generally present with eyes open as well as closed, because the fundamental problem is impaired coordination rather than loss of proprioceptive input (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Sensory ataxia that worsens after eye closure localizes to the posterior columns.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q57, p.1537 (answer p.1538)'
+},
+
+{ id:'npep-fe1-59', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'A 58-year-old male patient presented to ER with vomiting, meningismus and photophobia. He has a history of sudden explosive headache and brief period of loss of consciousness before arrival to the hospital. What is the most probable diagnosis of this patient ?',
+  options:['Bacterial meningitis', 'Attack of cluster headache', 'Aneurysmal rupture', 'Epidural hemorrhage'],
+  answer:2,
+  explanation:'The printed key is Aneurysmal rupture. The presentation is most consistent with aneurysmal subarachnoid hemorrhage: a sudden explosive headache, vomiting, meningismus, photophobia, and transient loss of consciousness are classic features. (not taken from the course material) Blood entering the subarachnoid space can cause meningeal irritation, producing neck stiffness and photophobia. (not taken from the course material) A ruptured intracranial aneurysm is a common cause of spontaneous subarachnoid hemorrhage and typically produces an abrupt, severe “thunderclap” headache. (not taken from the course material)\n\nBacterial meningitis can cause vomiting, meningismus, and photophobia, but its usual presentation is an infective syndrome with fever, headache, and progressive illness rather than a preceding sudden explosive headache with brief loss of consciousness. (not taken from the course material) Attack of cluster headache is incorrect because cluster headache is usually unilateral, severe orbital or temporal pain with autonomic symptoms such as lacrimation or nasal congestion; it does not usually cause meningismus or loss of consciousness. (not taken from the course material) Epidural hemorrhage is generally associated with head trauma and may feature a lucid interval before neurological deterioration, rather than the described spontaneous thunderclap headache and meningeal signs. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize aneurysmal rupture as the cause of sudden explosive headache with meningeal signs and transient loss of consciousness.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q59, p.1541 (answer p.1542)'
+},
+
+{ id:'npep-fe1-60', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'A patient presented with right hemiparesis and seizure, his CT brain scan showed subarachnoid hemorrhage due to ruptured aneurysm, what is the early management plan ?',
+  options:['MRI brain', 'Giving IV recombinant tissue plasminogen activator', 'Endovascular coiling', 'Control blood pressure'],
+  answer:3,
+  explanation:'The printed key is Control blood pressure. In acute aneurysmal subarachnoid hemorrhage, early management includes careful blood-pressure control to reduce the risk of further bleeding while maintaining adequate cerebral perfusion (not taken from the course material). The patient also requires urgent specialist neurosurgical or neurointerventional assessment and supportive management (not taken from the course material). This option is the best immediate measure among those listed.\n\nMRI brain is not the early management plan because the CT brain scan has already demonstrated subarachnoid hemorrhage. Further vascular imaging may be used to define the aneurysm, but MRI itself does not address the immediate risk of rebleeding or stabilize the patient (not taken from the course material).\n\nGiving IV recombinant tissue plasminogen activator is wrong because thrombolysis is used for selected acute ischaemic strokes, whereas this patient has an intracranial hemorrhage. It would be contraindicated and could worsen bleeding (not taken from the course material).\n\nEndovascular coiling is a definitive aneurysm-securing treatment and may be performed urgently after assessment and planning. However, the bank identifies blood-pressure control as the early management step before definitive intervention (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Early management of aneurysmal subarachnoid hemorrhage includes blood-pressure control.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q60, p.1543 (answer p.1544)'
+},
+
+{ id:'npep-fe1-61', bank:'endpoint', module:'neuropsych', chapter:'nr-para',
+  stem:'A male baby is born with a saccular structure approximately 6 cm in diameter located in the lumbosacral region. MRI revealed that this structure contains fluid, portions of the spinal cord, and nerve roots. Which of the following would most correctly describe this lesion ?',
+  options:['Meningomyelocele', 'Spinal bifida occulta', 'Meningoencephalocele', 'Meningocele'],
+  answer:0,
+  explanation:'Meningomyelocele is the printed answer. This is a lumbosacral sac containing fluid together with portions of spinal cord and nerve roots, which identifies herniation of meninges and neural tissue through a spinal defect. This lesion is generally associated with an open neural tube defect (not taken from the course material).\n\nSpinal bifida occulta is wrong because it is a bony vertebral arch defect without an external sac containing cerebrospinal fluid, spinal cord, and nerve roots (not taken from the course material). Meningoencephalocele is wrong because it refers to herniation of meninges and brain tissue, typically through a cranial defect, not a lumbosacral lesion (not taken from the course material). Meningocele is wrong because its sac contains meninges and cerebrospinal fluid but does not contain spinal cord tissue or nerve roots (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'A lumbosacral sac containing fluid, spinal cord, and nerve roots is a meningomyelocele.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q61, p.1545 (answer p.1546)'
+},
+
+{ id:'npep-fe1-64', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'What are the manifestations of cerebellopontine angle schwannoma ?',
+  options:['Tinnitus', 'Epilepsy', 'Paraparesis', 'Saddle shaped hypoesthesia'],
+  answer:0,
+  explanation:'Tinnitus is a characteristic manifestation of a cerebellopontine angle schwannoma, usually a vestibular schwannoma arising from the vestibular component of cranial nerve VIII. The tumour may produce unilateral tinnitus, often with progressive unilateral sensorineural hearing loss, because of involvement or compression of the cochlear portion of the vestibulocochlear nerve (not taken from the course material). Larger lesions can also cause imbalance, vertigo, facial sensory symptoms from trigeminal nerve compression, facial weakness, and cerebellar signs (not taken from the course material).\n\nEpilepsy is wrong because seizures usually arise from cortical cerebral irritation or lesions, whereas a cerebellopontine angle lesion is extra-axial in the posterior fossa and does not typically present with epileptic seizures (not taken from the course material).\n\nParaparesis is wrong because it refers to weakness affecting both lower limbs and more commonly suggests a bilateral cerebral, spinal cord, or motor pathway disorder. It is not a usual presenting manifestation of a localized cerebellopontine angle schwannoma (not taken from the course material).\n\nSaddle shaped hypoesthesia is wrong because reduced sensation in the perineal saddle distribution indicates involvement of sacral nerve roots or the conus medullaris/cauda equina region, not a cranial posterior-fossa tumour (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Cerebellopontine angle schwannoma may manifest with tinnitus.',
+  source:'Neuro endpoint.pdf, Model Final Exam 1, Q64, p.1551 (answer p.1552)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Model Final Exam 3: 64 rows staged by tools/bank-harness/npep-build.mjs.
+ * Fold to 32 net-new rows after hand review against page images and tools/qb-pipeline/sweep.js:
+ *   - Q61 (p.1843) folded into Q1 (p.1722): same vignette, reordered options; cited on Q1.
+ *   - Q13 (p.1745, seizure management) and a second, unrelated question also printed as "13."
+ *     at p.1747 (proximal weakness) are a genuine book numbering defect (verified on the page
+ *     images). Both already exist in the corpus (npep-epilepsy-9, npep-nm-8) and are dropped
+ *     here as duplicate printings, cited on their survivors.
+ *   - 29 further rows are duplicate printings of questions already in the corpus (this exam
+ *     recaps earlier chapters) — dropped and cited on their survivors. Full fold list, rejected
+ *     false-positive candidates, and page-offset confirmation: session report to the orchestrator.
+ */
+
+{ id:'npep-fe3-1', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'A 29-year-old woman with a history of hypertension presents with complaints of right eye pain on eye movement, impaired and blurry vision, and some color perception "do not look right examination revealed that her visual acuity is impaired in the right eye ,as is red color perception. Swinging light test revealed that her vision in his right eye as is impaired in a way different from the normally responding left eye. What is the likely underlying cause behind such findings?',
+  options:['Right lateral geniculate body lesion', 'Severe bilateral macular disease', 'Bilateral optic nerve disease', 'Right optic nerve disease'],
+  answer:3,
+  explanation:'The printed key is Right optic nerve disease. The combination of painful eye movements, reduced visual acuity, impaired red colour perception, and an abnormal swinging-light response affecting the right eye localizes to a unilateral right optic nerve lesion. A relative afferent pupillary defect occurs when the afferent visual input from one eye is reduced compared with the other eye (not taken from the course material). Pain on eye movement and dyschromatopsia are also typical features of optic neuritis (not taken from the course material), although the question asks for the anatomical cause rather than a specific diagnosis.\n\nRight lateral geniculate body lesion is wrong because it is a post-chiasmal visual-pathway lesion; it would not produce the characteristic unilateral afferent pupillary abnormality described here (not taken from the course material). Severe bilateral macular disease is wrong because it would involve both maculae and would not fit the unilateral right-eye afferent findings. Bilateral optic nerve disease is wrong because the stem contrasts an impaired right eye with a normally responding left eye, indicating asymmetrical unilateral disease rather than bilateral optic nerve involvement. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'A unilateral relative afferent visual deficit with painful eye movement and reduced red perception localizes to the ipsilateral optic nerve.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q1, p.1722 (answer p.1723). This question is printed twice in the book: also at Q61, p.1843 (answer p.1844), reworded and with options reordered (key there: Right optic nerve disease). Folded here as the earlier, fuller printing.'
+},
+
+{ id:'npep-fe3-5', bank:'endpoint', module:'neuropsych', chapter:'ps-devices',
+  stem:'A 53 -year old man is admitted to psychiatry hospital after a serious suicide attempt. He remains nearly one and refuses to either eat or drink. He also se main quite suicidal and always requires one to one observation. How can he be managed ?',
+  options:['Antidepressant and SSRI in combination', 'electrocompulsive therapy', 'SSRI and antipsychotic', 'SSRI at higher -than -normal dose'],
+  answer:1,
+  explanation:'a- Electroconvulsive Therapy (ECT)\n\nIndications:\n\n• Suicide-Violence\n• PM retardation-agitation\n• Psychotic-depression features\n• Multiple drugs-Pregnancies (first trimester)\n• Resistant depression',
+  objective:'Identify electroconvulsive therapy as the printed management option for severe suicidal depression with refusal of food and drink.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q5, p.1730 (answer p.1731)'
+},
+
+{ id:'npep-fe3-9', bank:'endpoint', module:'neuropsych', chapter:'ps-sud',
+  stem:'A 29-year-old woman was brought to emergency unit with mydriasis, diaphoresis . The patient was arrested because of stealing from her employer to support her habit . The patient has needed increased amounts of her drug of choice to get high and she suffered from cravings, hypersomnia, depression and hyperphagia when she is unable to obtain it. When intoxicated , the patient notes a feeling of euphoria and heightened energy. What is the most likely drug used by this patient?',
+  options:['phencyclidine', 'Alcohol', 'Cocaine.', 'Opioid'],
+  answer:2,
+  explanation:'The keyed option is Cocaine. The presentation describes a stimulant intoxication and withdrawal pattern: mydriasis, diaphoresis, euphoria, heightened energy, tolerance, craving, and withdrawal with hypersomnia, depression, and hyperphagia. Cocaine increases synaptic catecholamine activity, especially dopamine, producing the desired “high” and reinforcing repeated use. (not taken from the course material) Withdrawal commonly produces a “crash” with fatigue or hypersomnia, low mood, increased appetite, and craving. (not taken from the course material)\n\nPhencyclidine is wrong because PCP intoxication more characteristically causes dissociation, agitation, analgesia, hypertension, and nystagmus, particularly vertical nystagmus. (not taken from the course material) Its typical clinical picture is not the classic stimulant withdrawal syndrome of hypersomnia, depression, and hyperphagia described here.\n\nAlcohol is wrong because alcohol intoxication is usually associated with central nervous system depression, impaired coordination, slurred speech, and disinhibition rather than heightened energy with mydriasis and diaphoresis. (not taken from the course material) Alcohol withdrawal more typically causes tremor, autonomic hyperactivity, insomnia, anxiety, and possibly seizures or delirium tremens. (not taken from the course material)\n\nOpioid is wrong because opioid intoxication classically causes miosis, sedation, respiratory depression, and constipation, which contrast with this patient’s mydriasis and stimulant effects. (not taken from the course material) Opioid withdrawal can cause diaphoresis and craving, but usually includes rhinorrhea, lacrimation, diarrhea, pain, and piloerection rather than hypersomnia and hyperphagia. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify cocaine use from stimulant intoxication, tolerance, and withdrawal features.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q9, p.1738 (answer p.1739)'
+},
+
+{ id:'npep-fe3-15', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'What is the gold standard investigation for intracranial aneurysm?',
+  options:['CT angiography.', 'MR angiography', 'Conventional angiography', 'CT brain with contrast'],
+  answer:2,
+  explanation:'8. Conventional angiography or digital subtraction angiography (gold standard).\n\nNowadays digital subtraction angiography is being computerized angiography is very helpful.\n\nIt can be done through the radial or femoral artery; we introduce a catheter.\n\nIt is considered as an invasive technique, but its hazards are less and give more details.',
+  objective:'Identify conventional angiography as the gold standard investigation for intracranial aneurysm.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q15, p.1751 (answer p.1752)'
+},
+
+{ id:'npep-fe3-17', bank:'endpoint', module:'neuropsych', chapter:'ps-devices',
+  stem:'What is the commonest side of ECT?',
+  options:['Amnesia.', 'Fractures', 'Dehydration', 'Dementia'],
+  answer:0,
+  explanation:'Risks and Side Effects\n\n• Confusion: Immediately after treatment, patients may experience confusion and disorientation, which can last from a few minutes to several hours. Rarely, confusion may last several days or longer. Confusion is generally more noticeable in older adults.\n\n• Memory loss: Patients may have trouble remembering events that occurred right before treatment or in the weeks or months before treatment or, rarely, from previous years. This condition is called retrograde amnesia. They may also have trouble recalling events that occurred during the weeks of treatment. For most people, these memory problems usually improve within a couple of months after treatment ends.',
+  objective:'Identify amnesia as the commonest side effect of ECT.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q17, p.1755 (answer p.1756)'
+},
+
+{ id:'npep-fe3-19', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'What is cause of Foramen Magnum herniation?',
+  options:['pituitary microadenoma', 'Olfactory groove meningioma', 'Cervical intramedullary tumor', 'posterior fossa tumors.'],
+  answer:3,
+  explanation:'Posterior fossa tumors are the printed answer because a mass in the posterior cranial fossa can increase pressure within the confined infratentorial compartment and force the cerebellar tonsils downward through the foramen magnum. This is tonsillar herniation and may compress the medulla, causing severe respiratory and cardiovascular compromise (not taken from the course material).\n\nPituitary microadenoma is wrong because it is a small sellar lesion and does not usually produce the posterior fossa mass effect required to displace the cerebellar tonsils through the foramen magnum (not taken from the course material). Olfactory groove meningioma is wrong because it arises in the anterior cranial fossa; although a large lesion can cause raised intracranial pressure, it is not the typical direct cause of foramen magnum herniation (not taken from the course material). Cervical intramedullary tumor is wrong because it is located within the cervical spinal cord rather than occupying the posterior cranial fossa; it may cause cord symptoms but is not the usual cause of downward cerebellar tonsillar displacement at the foramen magnum (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Posterior fossa tumors can cause tonsillar herniation through the foramen magnum.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q19, p.1759 (answer p.1760)'
+},
+
+{ id:'npep-fe3-20', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'42-year-old right-handed patient with diabetes and dilated cardiomyopathy developed acute confusion. On examination, he did not follow commands and was speaking fluently but no one can understand him . He also right hemifield defect. Where is the most likely vascular occlusion on CT angiography?',
+  options:['Right vertebral artery', 'Right middle cerebral artery', 'Left middle cerebral artery.', 'Left vertebral artery'],
+  answer:2,
+  explanation:'The printed key is Left middle cerebral artery. The patient is right-handed, which makes left-hemisphere language dominance most likely (not taken from the course material). Fluent speech that cannot be understood, together with failure to follow commands, describes a fluent receptive aphasia, classically due to dysfunction of Wernicke’s area in the dominant posterior temporal region (not taken from the course material). A right homonymous hemifield defect also localizes to the left retrochiasmal visual pathway, which may be affected in a left middle cerebral artery territory infarction (not taken from the course material). Dilated cardiomyopathy provides a potential cardioembolic source for an acute arterial occlusion (not taken from the course material).\n\nRight vertebral artery occlusion would usually affect posterior-circulation structures such as the brainstem or cerebellum and would not typically produce dominant-hemisphere receptive aphasia with a contralateral homonymous field defect (not taken from the course material). Right middle cerebral artery occlusion can cause left-sided motor, sensory, visual, or neglect findings, but in a typical right-handed person it would not explain the language syndrome because language is usually left-sided (not taken from the course material). Left vertebral artery occlusion is likewise a posterior-circulation lesion and is less consistent with this cortical language and visual-field presentation (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify a dominant left middle cerebral artery occlusion from receptive aphasia and a right homonymous hemifield defect.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q20, p.1761 (answer p.1762)'
+},
+
+{ id:'npep-fe3-22', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'On asking a patient with a nerve injury to grasp a piece of paper between the thumb and index finger goes into the hyperflexion. What is the nerve affected ?',
+  options:['Ulnar.', 'Posterior interosseous', 'Median', 'Radial'],
+  answer:0,
+  explanation:'The bank prints Ulnar. This describes a positive Froment sign: when a patient grips paper between the thumb and index finger, weakness of adductor pollicis causes compensatory flexion of the thumb interphalangeal joint. Adductor pollicis is supplied by the deep branch of the ulnar nerve (not taken from the course material), so ulnar nerve injury produces the described hyperflexion.\n\nPosterior interosseous nerve injury primarily impairs finger and thumb extension because it is a motor branch of the radial nerve in the forearm (not taken from the course material); it does not denervate adductor pollicis and therefore does not cause Froment sign. Median nerve injury affects muscles including opponens pollicis and the lateral lumbricals (not taken from the course material), producing deficits such as impaired thumb opposition rather than this compensatory thumb flexion during paper pinch. Radial nerve injury causes weakness of wrist and finger extension, often with wrist drop (not taken from the course material), but does not account for the specific pinch-grip finding. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Froment sign indicates ulnar nerve palsy affecting adductor pollicis.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q22, p.1764 (answer p.1765)'
+},
+
+{ id:'npep-fe3-23', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What is the tone presenting in peripheral neuropathy?',
+  options:['Clasp knife', 'Hypotonia.', 'Lead pipe', 'Cogwheel'],
+  answer:1,
+  explanation:'Hypotonia is the expected change in muscle tone in peripheral neuropathy. Peripheral nerves form part of the lower motor neuron pathway, carrying motor signals from anterior horn cells to muscle and sensory input back from muscle spindles. Damage to these nerves disrupts the reflex arc and reduces resting resistance to passive movement, producing reduced tone; weakness, reduced or absent reflexes, and muscle wasting may also occur (not taken from the course material).\n\nClasp knife tone is wrong because it is a form of spasticity associated with an upper motor neuron lesion. Resistance is initially increased during passive movement and then suddenly gives way, rather like closing a clasp knife (not taken from the course material).\n\nLead pipe rigidity is wrong because it is classically associated with extrapyramidal disease, particularly Parkinsonism. It gives a uniform, sustained resistance throughout passive movement and is not the typical tone abnormality of a peripheral neuropathy (not taken from the course material).\n\nCogwheel rigidity is also wrong because it is a Parkinsonian type of rigidity, in which a ratchety interruption is felt during passive movement, often due to superimposed tremor (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Peripheral neuropathy produces hypotonia.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q23, p.1766 (answer p.1767) Also printed as Model Final Exam 4, Q56, p.1981 (answer p.1982), options reordered.'
+},
+
+{ id:'npep-fe3-27', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
+  stem:'A female patient had attacks paroxysmal complex motor involuntary movements associated with numbness at her left upper limb . During the attack, she calls for help and memorize its full details after it subsides. What is the likely diagnosis of this patient?',
+  options:['Focal sensory motor seizure with impaired awareness', 'Focal to bilateral seizures', 'Focal sensory motor seizure with retained awareness', 'Generalized clonic seizures'],
+  answer:2,
+  explanation:'The printed key is option c, Focal sensory motor seizure with retained awareness. The episode includes focal sensory symptoms, namely numbness of the left upper limb, together with focal motor involuntary movements. Most importantly, she can call for help during the attack and remembers its full details after it subsides. These features indicate that awareness is retained throughout the seizure. Focal seizures can produce sensory and motor manifestations when the involved cortical areas correspond to sensation and movement in the affected limb (not taken from the course material).\n\nOption a is wrong because impaired awareness would imply reduced responsiveness, inability to interact appropriately during the event, or incomplete recollection afterward. Here, the patient calls for help and recalls the attack fully. Option b is wrong because focal to bilateral seizures spread from a focal onset to involve both cerebral hemispheres, usually producing bilateral convulsive activity and loss of awareness (not taken from the course material); no such progression is described. Option d is wrong because generalized clonic seizures are generalized from onset and would not be expected to present as localized left upper-limb numbness with preserved detailed recall (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'A focal sensory-motor seizure may occur with retained awareness.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q27, p.1775 (answer p.1776)'
+},
+
+{ id:'npep-fe3-30', bank:'endpoint', module:'neuropsych', chapter:'ps-geri',
+  stem:'What is the most accurate investigation to diagnose Alzheimer disease?',
+  options:['Brain biopsy', 'Mental-status tests.', 'Neurological tests', 'Blood tests'],
+  answer:0,
+  explanation:'The answer is according to the department. We know brain biopsy is done postmartum . The question means most accurate investigation in general ,so Brian biopsy is correct.',
+  objective:'The question tests the investigation identified by the bank as most accurate for diagnosing Alzheimer disease.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q30, p.1781 (answer p.1782). Also printed as Model Final Exam 6, Q39, p.2173 (answer p.2174), options reordered, same key.'
+},
+
+{ id:'npep-fe3-32', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What is the most common nerve affected by entrapment neuropathy?',
+  options:['Sciatic', 'Ulnar', 'Radial', 'Median.'],
+  answer:3,
+  explanation:'The keyed answer is Median. Entrapment neuropathy occurs when a peripheral nerve is compressed at an anatomical narrowing or fibro-osseous tunnel. The median nerve is the nerve most commonly affected by entrapment neuropathy because carpal tunnel syndrome, caused by compression of the median nerve at the wrist, is the most frequent entrapment neuropathy. This produces sensory symptoms in the thumb, index, middle, and radial half of the ring finger, and may cause weakness or wasting of thenar muscles in more advanced cases (not taken from the course material).\n\nSciatic is incorrect because sciatic nerve entrapment is comparatively uncommon. Sciatic symptoms are more often related to lumbosacral radiculopathy, trauma, or deep gluteal/piriformis-region causes rather than a typical common entrapment syndrome (not taken from the course material).\n\nUlnar is incorrect because the ulnar nerve can certainly be entrapped, especially at the elbow in cubital tunnel syndrome or at the wrist in Guyon canal syndrome. However, these are less common overall than median nerve compression at the carpal tunnel (not taken from the course material).\n\nRadial is incorrect because radial nerve compression can occur, for example at the spiral groove or posterior interosseous nerve, but it is not the most common entrapment neuropathy (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Tests recognition that the median nerve is the most commonly affected nerve in entrapment neuropathy.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q32, p.1785 (answer p.1786)'
+},
+
+{ id:'npep-fe3-33', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'A male patient presented with severe neuropathic pain in both lower and upper limbs. What is the approved drug for his pain ?',
+  options:['Prednisone', 'Sertraline', 'Duloxetine.', 'Ibuprofen'],
+  answer:2,
+  explanation:'The printed key selects Duloxetine. Duloxetine is a serotonin-norepinephrine reuptake inhibitor that is used for neuropathic pain, including painful diabetic peripheral neuropathy. (not taken from the course material) It can reduce pain through modulation of descending inhibitory pain pathways in the central nervous system. (not taken from the course material)\n\nPrednisone is a corticosteroid and is not a standard approved treatment for nonspecific severe neuropathic pain. (not taken from the course material) It may be used when neuropathic symptoms arise from an inflammatory disorder, but the stem does not describe such a cause. (not taken from the course material)\n\nSertraline is a selective serotonin reuptake inhibitor used mainly for depressive and anxiety disorders. (not taken from the course material) It is not a usual approved first-line analgesic for neuropathic pain. (not taken from the course material)\n\nIbuprofen is a nonsteroidal anti-inflammatory drug that is useful for inflammatory nociceptive pain. (not taken from the course material) Neuropathic pain generally responds poorly to simple NSAID therapy because its mechanism is nerve injury or abnormal neural signalling rather than peripheral inflammation alone. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Duloxetine is the keyed approved drug for neuropathic pain.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q33, p.1787 (answer p.1788)'
+},
+
+{ id:'npep-fe3-35', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'Sixty-five-year-old patient presented to the ER with left-sided hemiplegia with unknown time of onset. The CT scan showed cerebral infarction of the right middle cerebral artery with subfalcine herniation. The patient had a Glasgow Coma Score of 10 and was agitated. What is the intentional recommended treatment?',
+  options:['Decompressive craniotomy', 'Intravenous alteplase', 'Mechanical thrombectomy', 'Intravenous propofol'],
+  answer:0,
+  explanation:'Surgical treatment:\n\n1. Carotid endarterectomy for carotid atherosclerosis or stenosis in surgically fit patients\n\n2. Extracranial-intracranial arterial bypass\n\n3. Decompressive craniotomy/craniectomy for malignant infarctions i.e. middle cerebral artery infarction with brain herniation',
+  objective:'Decompressive craniotomy/craniectomy is the surgical treatment printed for malignant middle cerebral artery infarction with brain herniation.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q35, p.1791 (answer p.1792)'
+},
+
+{ id:'npep-fe3-36', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:'50-years-old patient had L4 root compression by disc prolapse. what is the most common site of lower limb pain ?',
+  options:['Lateral aspect of knee and leg', 'medial aspect of the knee and leg.', 'Lateral aspect of foot', 'Posterior aspect of knee and leg'],
+  answer:1,
+  explanation:'Level of disc prolapse	L3-L4	L4-L5	L5-S1\nCompressed root	L4 root	L5 root	S1 root\nMotor weakness	Quadriceps	Dorsi-flexors & evertors of the foot	Plantar flexors & invertors of the foot\nSensory impairment	Medial side of the leg, medial malleolus and medial foot	Lateral side of the leg and dorsum of the foot and big toe	Posterior part of calf, lateral malleolus, lateral foot and sole\nReflexes	Impaired knee jerk		Impaired ankle jerk',
+  objective:'L4 root compression causes sensory impairment over the medial side of the leg, medial malleolus and medial foot.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q36, p.1793 (answer p.1794)'
+},
+
+{ id:'npep-fe3-37', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'A 49-year-old patient presents with acute onset quadriplegia . On examination, she seems awake, but unable to verbalize . She moves her eyes vertically and blinks. What is the likely occluded artery in such case?',
+  options:['Anterior cerebral artery', 'Middle cerebral artery', 'Carotid artery', 'Top of basilar artery.'],
+  answer:3,
+  explanation:'The printed answer is top of basilar artery. The presentation describes locked-in syndrome: abrupt quadriplegia and inability to speak despite preserved consciousness, with retained vertical eye movements and blinking. This pattern results from damage to the ventral pons, where corticospinal and corticobulbar pathways are affected while the reticular activating system and vertical gaze pathways are relatively spared (not taken from the course material). Occlusion in the distal basilar circulation can produce this devastating brainstem syndrome (not taken from the course material).\n\nAnterior cerebral artery occlusion more typically causes contralateral leg-predominant weakness and frontal lobe features, rather than awake quadriplegia with preserved vertical eye movement (not taken from the course material). Middle cerebral artery occlusion usually produces contralateral face and arm-predominant weakness, sensory loss, and cortical deficits such as aphasia or neglect; it does not characteristically cause locked-in syndrome (not taken from the course material). Carotid artery occlusion may cause large anterior-circulation hemispheric ischemia with focal cortical deficits, but it does not selectively injure the ventral pons to preserve consciousness and vertical eye movements in this way (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify basilar artery occlusion as the vascular cause of locked-in syndrome.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q37, p.1795 (answer p.1796)'
+},
+
+{ id:'npep-fe3-38', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'Which muscle is affected by abducent nerve injury?',
+  options:['Superior rectus', 'Inferior oblique', 'Lateral rectus.', 'Inferior rectus'],
+  answer:2,
+  explanation:'The lateral rectus is affected in abducent nerve injury because the abducent nerve, cranial nerve VI, supplies the lateral rectus muscle. The lateral rectus abducts the eye, moving it laterally away from the nose (not taken from the course material). Injury to this nerve causes weakness of eye abduction on the affected side and may produce horizontal diplopia, particularly when looking toward the affected side (not taken from the course material).\n\nSuperior rectus is incorrect because it is supplied by the oculomotor nerve, cranial nerve III, rather than the abducent nerve. It primarily elevates the eye and also contributes to adduction and intorsion (not taken from the course material).\n\nInferior oblique is incorrect because it is also supplied by the oculomotor nerve. Its actions include elevation, abduction, and extorsion of the eye, but it is not innervated by cranial nerve VI (not taken from the course material).\n\nInferior rectus is incorrect because it is supplied by the oculomotor nerve. It primarily depresses the eye and also contributes to adduction and extorsion (not taken from the course material). Thus, among the listed muscles, only lateral rectus has abducent nerve innervation.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify the extraocular muscle supplied by the abducent nerve.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q38, p.1797 (answer p.1798) Also printed as Model Final Exam 4, Q31, p.1921 (answer p.1922), options reordered.'
+},
+
+{ id:'npep-fe3-39', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:'What is the commonest site of lumbar disc prolapse?',
+  options:['L3-LA', 'L2-L3', 'L5-S1.', 'L1-L2'],
+  answer:2,
+  explanation:'Epidemiology:\n1. The typical patient with acute lumbar disc prolapse is from 30- 50 years of age in the most productive period of his life\n2. Complaint of chronic low back pain starts for some time prior to the onset of acute disorder.\n3. Lumbar disc prolapse is the main cause of low back pain and sciatica.\n4. The majority of LDP occurs at L4-L5 and L5-S1 (95%).',
+  objective:'Identify the commonest site of lumbar disc prolapse.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q39, p.1799 (answer p.1800). Also printed as Model Final Exam 5, Q30, p.2061 (answer p.2062; options reordered, same key).'
+},
+
+{ id:'npep-fe3-44', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'What is the most important symptom in patients with subarachnoid hemorrhage?',
+  options:['Rapid deterioration of level of consciousness', 'Severe occipital headache.', 'New onset severe vomiting', 'Convulsions'],
+  answer:1,
+  explanation:'The printed key is severe occipital headache. Subarachnoid hemorrhage classically presents with a sudden, severe headache, often described as a thunderclap headache or the worst headache of life (not taken from the course material). Occipital pain may occur because blood in the subarachnoid space irritates the meninges, and associated neck stiffness, photophobia, nausea, or vomiting may develop (not taken from the course material). Thus, among these choices, severe occipital headache is the most important presenting symptom.\n\nRapid deterioration of level of consciousness can occur in severe subarachnoid hemorrhage, particularly with a large bleed, raised intracranial pressure, hydrocephalus, or rebleeding (not taken from the course material). However, it is not the characteristic principal symptom in all patients and may be absent initially. New onset severe vomiting may accompany the headache because of meningeal irritation or raised intracranial pressure (not taken from the course material), but it is a nonspecific associated symptom rather than the key presenting feature. Convulsions can occur at onset or later in some patients (not taken from the course material), but they are less common and do not define the usual clinical presentation. The bank therefore identifies the severe occipital headache as the most important symptom.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Subarachnoid hemorrhage is most characteristically associated with severe occipital headache.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q44, p.1809 (answer p.1810)'
+},
+
+{ id:'npep-fe3-45', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'What is the most sensitive diagnostic tool for cardiac (left atrial ) source of embolization in ischemic stroke?',
+  options:['ECG', 'Holter monitor', 'Transthoracic echocardiogram', 'Transesophageal echocardiogram'],
+  answer:3,
+  explanation:'Transesophageal echocardiogram is the printed answer because it provides the most sensitive echocardiographic assessment of left atrial and left atrial appendage sources of embolism, including thrombus, and it also evaluates structures such as the interatrial septum and thoracic aorta more clearly than transthoracic imaging (not taken from the course material). In ischemic stroke, this can help identify a cardioembolic source when one is suspected (not taken from the course material).\n\nECG is wrong because it records cardiac electrical activity rather than directly imaging the left atrium or demonstrating an atrial thrombus (not taken from the course material). It may show atrial fibrillation, an important embolic risk factor, but a normal ECG does not exclude intermittent arrhythmia or a structural embolic source (not taken from the course material).\n\nHolter monitor is wrong because prolonged rhythm monitoring can detect paroxysmal atrial fibrillation that a single ECG misses (not taken from the course material). However, it does not visualize the left atrium, left atrial appendage, thrombi, valves, or aortic lesions (not taken from the course material).\n\nTransthoracic echocardiogram is wrong as the most sensitive test for this specific left atrial question because acoustic windows may limit visualization of the left atrium and especially the left atrial appendage (not taken from the course material). It remains useful for many cardiac abnormalities, including ventricular function and some valvular disease, but is less sensitive for left atrial appendage thrombus than transesophageal echocardiography (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify transesophageal echocardiography as the most sensitive test for a left atrial cardiac embolic source in ischemic stroke.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q45, p.1811 (answer p.1812)'
+},
+
+{ id:'npep-fe3-46', bank:'endpoint', module:'neuropsych', chapter:'nr-intro',
+  stem:'Which type of brain tumor with genetic predisposition?',
+  options:['ependymoma', 'Neurofibroma.', 'Germinoma', 'pituitary adenoma'],
+  answer:1,
+  explanation:'The printed key is Neurofibroma. The intended association is a genetic predisposition to nervous-system tumours in neurofibromatosis, especially neurofibromatosis type 1 or type 2 (not taken from the course material). Neurofibromatosis is inherited and can be associated with tumours involving neural tissues, including intracranial tumours such as optic pathway gliomas, meningiomas, and vestibular schwannomas (not taken from the course material). The bank prints “Neurofibroma.”, although neurofibroma itself is usually a benign peripheral nerve-sheath tumour rather than the name of the inherited syndrome (not taken from the course material).\n\nEpendymoma is a glial tumour arising from ependymal cells and is usually discussed by site and age distribution rather than as the classic inherited predisposition in this comparison (not taken from the course material). Germinoma is a germ-cell tumour, often occurring in midline intracranial locations, but it is not the usual answer for a broadly framed inherited tumour-predisposition question (not taken from the course material). Pituitary adenoma may occur as part of inherited syndromes such as multiple endocrine neoplasia type 1, but most pituitary adenomas are sporadic and this option is not the marked answer here (not taken from the course material). The key is therefore retained exactly as printed: option b, Neurofibroma.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Tests the association between inherited neurofibromatosis-related disease and tumour predisposition.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q46, p.1813 (answer p.1814)'
+},
+
+{ id:'npep-fe3-48', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'A 24-year-old patient was subjected to a stab wound in the Proximal forearm of the right upper limb. On examination, the metacarpophalangeal joints were found hyperextended and the interphalangeal joints flexed. Which nerve is injured in this patient?',
+  options:['Ulnar.', 'Posterior interosseous', 'Radial', 'Median'],
+  answer:0,
+  explanation:'3. Ulnar nerve injury:\nDeformity:\n• Partial claw hand: due to affection of the little and ring fingers only => flexion of the interphalangeal joint, hyperextension of metacarpophalangeal joints of the medial two fingers especially the little finger.\n• Radial deviation of the hand: due to paralysis of the flexor carpi ulnaris muscle.\n• Trophic changes: maximal on the tip of the little finger.\nAtrophic changes:\n• Sunken interossei spaces on the dorsum of the hand especially the first space (important).\n• Atrophy of the hypothenar muscles and the tip of the little finger.\n• Wasting of the muscles of the medial side of the forearm.',
+  objective:'Identify ulnar nerve injury from the partial claw-hand posture.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q48, p.1817 (answer p.1818)'
+},
+
+{ id:'npep-fe3-49', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:'A 41-year-old manual worker experienced lower back pain suddenly after carrying an object in the past 2 days. He has noticed a gradual. loss of sensation over his buttocks and inner thighs and difficulty urinating, Based on these symptoms, what is the probable diagnosis of this patient?',
+  options:['Syringomyelia at dorsal level', 'Central cervical disc herniation', 'Lumbar disc prolapse.', 'Lateral lumbar disc herniation'],
+  answer:2,
+  explanation:'The patient\'s symptoms, including sudden lower back pain, gradual loss of sensation over the buttocks and inner thighs (saddle anesthesia), and difficulty urinating, are indicative of cauda equina syndrome',
+  objective:'Recognize lumbar disc prolapse causing cauda equina syndrome.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q49, p.1819 (answer p.1820). Also printed as Model Final Exam 6, Q10, p.2114 (answer p.2115), options reordered, same key.'
+},
+
+{ id:'npep-fe3-52', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:'The MRI lumbosacral spine of a 50-year-old patient showed L5,S1 root compression by disc prolapse. which muscle may be weak ?',
+  options:['hamstring muscle.', 'Extensor carpi-radialis', 'quadriceps muscle', 'Flexor carpi radialis'],
+  answer:0,
+  explanation:'Level of disc prolapse\n\nL3-L4\n\nL4-L5\n\nL5-S1\n\nCompressed root\n\nL4 root\n\nL5 root\n\nS1 root\n\nMotor weakness\n\nQuadriceps\n\nDorsi-flexors & evertors of the foot\n\nPlantar flexors & invertors of the foot\n\nSensory impairment\n\nMedial side of the leg, medial malleolus and medial foot\n\nLateral side of the leg and dorsum of the foot and big toe\n\nPosterior part of the calf, lateral malleolus, lateral foot and sole\n\nReflexes\n\nImpaired knee jerk\n\nImpaired ankle jerk',
+  objective:'Identify the muscle weakness associated with S1 root compression from an L5-S1 disc prolapse.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q52, p.1825 (answer p.1826)'
+},
+
+{ id:'npep-fe3-53', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'A 44-year-old patient thought that she has heart disease, despite all her relevant investigations were proved to be negative. She spent . much of her time in bed and refused to do Her home duties',
+  options:['Factitious disorder', 'Obsessive compulsive disorder', 'Hypochondriasis.', 'Panic disorder'],
+  answer:2,
+  explanation:'Hypochondriasis is the printed answer. The patient has a persistent belief or fear that she has heart disease despite negative relevant investigations, with consequent functional impairment: she spends much of her time in bed and refuses home duties. Illness anxiety focused on having a serious disease despite reassurance is characteristic of hypochondriasis; current diagnostic systems generally use related somatic symptom and illness-anxiety diagnoses (not taken from the course material).\n\nFactitious disorder is wrong because it involves intentional production, falsification, or induction of symptoms in order to assume the sick role (not taken from the course material). The stem describes a genuine belief that she has disease, rather than deliberate deception. There is also no evidence of fabricated symptoms, tampering with investigations, or deceptive presentation.\n\nObsessive compulsive disorder is wrong because its core features are intrusive, recurrent obsessions and/or repetitive compulsions performed to reduce distress or prevent a feared event (not taken from the course material). A fixed preoccupation with having heart disease after negative investigations is not presented as an intrusive obsession with ritual behaviour.\n\nPanic disorder is wrong because it is defined by recurrent unexpected panic attacks followed by persistent concern about further attacks or maladaptive behavioural change (not taken from the course material). No discrete attacks of sudden intense fear or accompanying autonomic symptoms are described.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Tests recognition of hypochondriasis from persistent illness belief despite negative investigations.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q53, p.1827 (answer p.1828). Also printed as Model Final Exam 5, Q41, p.2083 (answer p.2084; distractor "Obsessive compulsive disorder" replaced with "Malingering" in this printing, same key).'
+},
+
+{ id:'npep-fe3-55', bank:'endpoint', module:'neuropsych', chapter:'nr-para',
+  stem:'A male child aged five years became incontinent to urine after being continent at the age of 4 years. On examination he had an abnormal gait with a tuft of hair was found on his back. The vertebral column is deviated to one side. What is the explanation for his clinical presentation?',
+  options:['Meningomyelocele', 'Disc prolapse', 'Low lying cord below lumbar vertebra 4', 'Thin filum terminal'],
+  answer:2,
+  explanation:'The printed key is “Low lying cord below lumbar vertebra 4.” This describes a low-lying conus medullaris associated with tethered cord syndrome. A child may initially develop bladder control and then lose it as growth places traction on an abnormally tethered spinal cord. Gait abnormality, scoliosis, and a lumbosacral tuft of hair are compatible associated findings. A conus below the expected level supports the explanation for the progressive neurological and urinary features (not taken from the course material).\n\nMeningomyelocele is a neural-tube defect in which meninges and spinal cord protrude through a vertebral defect (not taken from the course material). It can cause lower-limb and bladder dysfunction, but it is usually an obvious congenital lesion rather than the stated explanation of late deterioration with a cutaneous stigma and low cord.\n\nDisc prolapse can compress nerve roots and cause back or radicular leg pain, and is uncommon as this presentation in a five-year-old (not taken from the course material). It does not account well for the congenital hair tuft, spinal deviation, and progressive bladder dysfunction.\n\nA thin filum terminal is generally a normal anatomical structure that anchors the conus to the coccyx (not taken from the course material). Tethering is associated with an abnormally thickened or shortened filum, rather than a thin filum. Therefore it does not provide the printed explanation.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify tethered cord syndrome from progressive urinary incontinence, gait abnormality, lumbosacral hair tuft, and scoliosis.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q55, p.1831 (answer p.1832)'
+},
+
+{ id:'npep-fe3-56', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What is the manifestation of carpal tunnel syndrome?',
+  options:['Pain is more in the morning', 'Thenar hypertrophy', 'Males are less commonly affected.', 'Tapping on the median nerve at the wrist causes pain in the medial 3.5 fingers'],
+  answer:2,
+  explanation:'The keyed option is “Males are less commonly affected.” Carpal tunnel syndrome is more frequent in females, so males are less commonly affected. (not taken from the course material)\n\nOption a is wrong because symptoms commonly worsen at night rather than being more prominent in the morning. (not taken from the course material) Option b is wrong because longstanding median nerve compression may cause thenar muscle wasting and weakness, not thenar hypertrophy. (not taken from the course material) Option d is wrong because tapping over the median nerve at the wrist is the Tinel sign and may reproduce tingling or pain in the median nerve sensory distribution, classically the lateral 3.5 digits rather than the medial 3.5 fingers. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Carpal tunnel syndrome is less commonly affected in males.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q56, p.1833 (answer p.1834)'
+},
+
+{ id:'npep-fe3-57', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'A 55-year-old man complained of the sudden onset of severe headache and then lost consciousness. On examination, he was awake, but lethargic. He withdrew to pain in his Extremities and moaned, though he did not speak. What is the most likely diagnosis?',
+  options:['Brain tumor', 'Subarachnoid hemorrhage.', 'Brain abscess', 'Ischemic stroke'],
+  answer:1,
+  explanation:'Subarachnoid hemorrhage is the keyed diagnosis because the presentation is abrupt, with sudden severe headache followed by loss of consciousness and impaired conscious level. This pattern is classically associated with bleeding into the subarachnoid space, often from rupture of an intracranial aneurysm (not taken from the course material). The patient is now lethargic, withdraws to pain, and moans without speaking, indicating a depressed level of consciousness after the acute event.\n\nBrain tumor is less likely because tumors usually produce gradually progressive symptoms, such as worsening headache, seizures, focal neurological deficits, or features of raised intracranial pressure, rather than a sudden severe headache with immediate collapse (not taken from the course material).\n\nBrain abscess is less likely because it commonly develops subacutely and may be associated with fever, infection, headache, focal deficits, or seizures. A sudden catastrophic onset with loss of consciousness is not its usual presentation (not taken from the course material).\n\nIschemic stroke can cause sudden neurological deficits and sometimes reduced consciousness, but the dominant presentation here is sudden severe headache followed by collapse. Severe abrupt headache is more characteristic of subarachnoid hemorrhage than uncomplicated ischemic stroke (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize sudden severe headache with collapse as a presentation of subarachnoid hemorrhage.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q57, p.1835 (answer p.1836)'
+},
+
+{ id:'npep-fe3-58', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'Which of the following is the most appropriate step in evolution of this patient?',
+  options:['Cerebrospinal fluid analysis to look xanthochromia', 'CT scan.', 'MRI', 'MR angiogram'],
+  answer:1,
+  explanation:'The printed key selects CT scan. In an acute neurological presentation where intracranial bleeding or another urgent structural brain lesion is a concern, a non-contrast CT scan is generally the first rapid investigation because it is widely available and can promptly show acute blood, mass effect, hydrocephalus, and many other emergent abnormalities (not taken from the course material). It also helps determine whether lumbar puncture would be safe.\n\nCerebrospinal fluid analysis for xanthochromia is not the initial investigation when urgent brain imaging has not yet been performed. Xanthochromia may support subarachnoid haemorrhage when appropriate testing is needed after imaging, but lumbar puncture can be unsafe in patients with raised intracranial pressure or a mass lesion (not taken from the course material). MRI gives more detailed soft-tissue information in many neurological disorders, but it is usually slower and less practical than CT for immediate assessment of suspected acute haemorrhage (not taken from the course material). MR angiogram evaluates cerebral vessels and may identify aneurysms or vascular abnormalities, but it is not the usual first step before establishing the presence and nature of an acute intracranial lesion on initial imaging (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'To identify CT scan as the initial imaging step in an urgent suspected intracranial neurological presentation.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q58, p.1837 (answer p.1838)'
+},
+
+{ id:'npep-fe3-62', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'Which disease is characterized by hypokinetic movements?',
+  options:['Chorea', 'Tremors', 'Parkinsonism.', 'Dystonia'],
+  answer:2,
+  explanation:'Parkinsonism is the keyed answer because it is a hypokinetic movement disorder, meaning that voluntary movement is reduced or slowed. Bradykinesia is its defining motor feature, commonly accompanied by rigidity, resting tremor, and postural instability (not taken from the course material). The basal-ganglia dopamine deficiency characteristic of Parkinson disease produces this reduction in movement (not taken from the course material).\n\nChorea is incorrect because it consists of involuntary, irregular, brief, non-rhythmic movements that flow unpredictably from one body part to another; it is therefore a hyperkinetic movement disorder (not taken from the course material). Tremors are incorrect because tremor is a rhythmic oscillatory movement of a body part, rather than a disorder defined by reduced movement (not taken from the course material). A tremor may occur in parkinsonism, especially as a resting tremor, but tremor itself does not describe the hypokinetic syndrome (not taken from the course material). Dystonia is incorrect because it causes sustained or intermittent muscle contractions producing abnormal postures or repetitive twisting movements, and is categorized among hyperkinetic movement disorders (not taken from the course material). Thus, among the listed choices, Parkinsonism. is the condition characterized by hypokinetic movements.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify parkinsonism as a hypokinetic movement disorder.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q62, p.1845 (answer p.1846)'
+},
+
+{ id:'npep-fe3-64', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'A 55-year-old hypertensive patient suddenly developed left hemiparesis and dysarthria. Examination revealed a blood pressure of 200/110 mmHg. Brain CT showed intracerebral hemorrhage in the right parietal lobe. Despite receiving the recommended initial management, the patient deteriorated in consciousness and developed unequal pupils. An increase in hematoma size and midline shift was detected in the follow-up brain CT. What could have been the immediate initial management of this patient?',
+  options:['MRI brain', 'Immediate blood pressure lowering', 'Vitamin K administration', 'Observation'],
+  answer:1,
+  explanation:'The bank keys immediate blood pressure lowering. This patient has acute intracerebral hemorrhage with severe hypertension, and early controlled reduction of markedly elevated blood pressure is intended to reduce the risk of ongoing hematoma expansion. The later enlargement of the hematoma and midline shift illustrate the serious consequence that initial management aims to prevent. Acute blood-pressure treatment in intracerebral hemorrhage commonly uses titratable intravenous agents and avoids an abrupt excessive fall in pressure (not taken from the course material).\n\nMRI brain is wrong because CT has already demonstrated the hemorrhage, and MRI would not be the immediate priority in an unstable patient with a known acute intracerebral bleed. Vitamin K administration is wrong because it is used to reverse warfarin-associated coagulopathy; the stem provides no history of anticoagulant use or vitamin-K-dependent clotting-factor deficiency. In suspected anticoagulant-associated intracerebral hemorrhage, reversal is urgent and may also require other agents such as prothrombin complex concentrate (not taken from the course material). Observation is wrong because the patient is acutely symptomatic, severely hypertensive, and has radiologically confirmed hemorrhage; passive observation would not address a modifiable cause of further bleeding. With subsequent deterioration, unequal pupils, hematoma enlargement, and midline shift, urgent neurosurgical and critical-care assessment would be indicated (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Severe hypertension in acute intracerebral hemorrhage requires immediate blood pressure lowering.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q64, p.1849 (answer p.1850)'
+},
+
+{ id:'npep-fe3-65', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'What is the recommended surgical intervention depending on findings of 2nd brain CT?',
+  options:['Surgical evacuation of the hematoma', 'Blood pressure management', 'Vitamin K administration', 'Dehydrating measures'],
+  answer:0,
+  explanation:'The printed answer is surgical evacuation of the hematoma. A repeat brain CT may demonstrate a hematoma that is enlarging, causing mass effect, producing midline shift, or associated with neurological deterioration; in these circumstances, operative evacuation can relieve intracranial pressure and prevent further brain injury (not taken from the course material). The specific decision depends on the hematoma type, size, location, clinical state, and neurosurgical assessment (not taken from the course material). Thus, the wording “depending on findings of 2nd brain CT” directs attention to a lesion demonstrated on repeat imaging for which surgery may be required.\n\nBlood pressure management is not the recommended surgical intervention. Blood pressure may require careful control in acute intracranial hemorrhage or head injury, but it is supportive medical management rather than evacuation of a space-occupying hematoma (not taken from the course material). Vitamin K administration is used to reverse vitamin K antagonist-associated coagulopathy and may be relevant if anticoagulation contributes to bleeding, but it does not remove an established hematoma or constitute the indicated surgical procedure (not taken from the course material). Dehydrating measures, such as osmotherapy, can temporarily reduce raised intracranial pressure in selected patients, but they do not definitively treat a hematoma requiring evacuation (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify surgical evacuation of a hematoma as the intervention indicated by relevant repeat brain CT findings.',
+  source:'Neuro endpoint.pdf, Model Final Exam 3, Q65, p.1852 (answer p.1853)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Model Final Exam 2: 64 rows built by tools/bank-harness/npep-build.mjs (HEADER TO BE HAND-EDITED).
+ */
+
+{ id:'npep-fe2-2', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'What is the most common anterior circulation aneurysm?',
+  options:['Anterior communicating artery aneurysm.', 'Anterior choroidal artery aneurysm', 'Ophthalmic artery aneurysm', 'Anterior cerebral artery aneurysm'],
+  answer:0,
+  explanation:'Anterior circulation aneurysms\n85%\n1) Anterior communicating artery: most common\n2) Internal carotid artery:\n- Main trunk\n- At the junction of the internal carotid with\n• Ophthalmic artery\n• Posterior communicating artery\n• Anterior choroidal artery\n3) Anterior cerebral artery\n4) Middle cerebral artery\n\nPosterior circulation aneurysms\n15%\n1) Tip of the basilar artery.\n2) Superior cerebellar artery.\n3) Posterior inferior cerebellar artery (PICA)\n4) Anterior inferior cerebellar artery (AICA)\n5) Vertebral artery',
+  objective:'Identify the most common anterior-circulation intracranial aneurysm.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q2, p.1558 (answer p.1559)'
+},
+
+{ id:'npep-fe2-5', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
+  stem:'32-year-old woman with schizophrenia is brought to hospital because of tachycardia, sweating, confusion and fever (40.2°C) since 1 day . Medications include haloperidol and multivitamins. Deep tendon reflexes were 2+ without clonus and planter reflexes were normal . Hyperthyroid stimulating hormone was 2.8 pU /mL.',
+  options:['Sepsis', 'Cerbral infraction', 'Neuroleptic malignant syndrome', 'serum triiodothyronine (I 3) Toxicosis'],
+  answer:2,
+  explanation:'Neuroleptic malignant syndrome is the keyed diagnosis. The patient is taking haloperidol and has acute hyperthermia, tachycardia, sweating and confusion. Neuroleptic malignant syndrome is a potentially life-threatening adverse reaction to dopamine-blocking antipsychotic medication, characterized by fever, altered mental status, autonomic instability and usually severe generalized rigidity with elevated creatine kinase (not taken from the course material). The normal reflexes, absence of clonus and normal plantar responses also make a serotonin-mediated hyperreflexia/clonus syndrome less likely (not taken from the course material).\n\nSepsis can cause fever, tachycardia and confusion, but the stem supplies haloperidol as an important precipitating drug clue and gives no infectious focus, culture result or other evidence of infection. Cerbral infraction is printed as an option, but cerebral infarction would more typically produce focal neurological deficits; the stated examination does not describe a focal deficit or abnormal plantar response. serum triiodothyronine (I 3) Toxicosis is not supported because the hyperthyroid stimulating hormone is given as 2.8 pU /mL, rather than suppressed as would generally be expected in thyrotoxicosis (not taken from the course material), and the antipsychotic exposure strongly directs the diagnosis to neuroleptic malignant syndrome. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize neuroleptic malignant syndrome in a patient receiving haloperidol.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q5, p.1565 (answer p.1566)'
+},
+
+{ id:'npep-fe2-10', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'A 24-year-old, obese woman presented with 3 week history of severe throbbing headaches throughout her entire head were present for most of the day. She denied any auras or specific trigger.She notes that when she sneezed, she lost vision for several seconds. CT of her brain was normal vision for several seconds. What is the most likely diagnosis ?',
+  options:['Mass lesions causing increased intracranial pressure', 'Idiopathic intracranial hypertension', 'Sinus venous thrombosis', 'atypical migraine headache'],
+  answer:1,
+  explanation:'The keyed answer is idiopathic intracranial hypertension. The bank’s clinical pattern is an obese young woman with a subacute, diffuse daily headache and transient visual loss precipitated by sneezing. Transient visual obscurations can occur with raised intracranial pressure and papilloedema (not taken from the course material). A normal CT supports the absence of an obvious structural intracranial lesion, although the diagnosis generally requires further assessment, including fundus examination, neuroimaging that excludes secondary causes, and lumbar puncture when appropriate (not taken from the course material).\n\nMass lesions causing increased intracranial pressure can produce headache and visual symptoms, but a mass lesion would usually be expected to be detectable on the reported CT, making this option less consistent with the printed vignette. Sinus venous thrombosis may also cause raised intracranial pressure and headache, but it is a secondary cause that requires venous imaging for exclusion; the stem instead emphasizes the classic demographic profile of idiopathic intracranial hypertension (not taken from the course material). Atypical migraine headache is less likely because there is no aura or specific trigger, and the brief sneeze-associated loss of vision with persistent daily headache is more suggestive of pressure-related transient visual obscurations than migraine aura (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize idiopathic intracranial hypertension from headache and transient visual obscurations in an obese young woman.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q10, p.1580 (answer p.1581)'
+},
+
+{ id:'npep-fe2-11', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
+  stem:'A mentally retarded male adolescent who has been increasingly aggressive and agitated receives several consecutive IM doses of haloperidol, totaling 30 mg in 24 hours, as a chemical restrain. The next day , he is rigid ,confused and unresponsive. His blood pressure is 150/90 mm Hg , his pulse is 110 beats/min and his temperature is 38.9°C. Both his WBC count CPK levels are very high . What drug could be effectively used for treatment of this patient?',
+  options:['Chlorpromazine', 'Carbamazepine', 'Brocromctiptine', 'Lithium'],
+  answer:2,
+  explanation:'The presentation following repeated high-dose IM haloperidol is neuroleptic malignant syndrome: severe rigidity, altered consciousness, fever, autonomic instability, leukocytosis, and markedly raised CPK from muscle injury. The printed key is Brocromctiptine, evidently the printed spelling of bromocriptine. Bromocriptine is a dopamine agonist that can help reverse the profound dopamine blockade underlying neuroleptic malignant syndrome (not taken from the course material). The implicated antipsychotic should also be stopped and supportive treatment is required; dantrolene is another commonly taught treatment option (not taken from the course material).\n\nChlorpromazine is wrong because it is another dopamine-blocking antipsychotic and could worsen rather than treat this syndrome (not taken from the course material). Carbamazepine is an antiseizure and mood-stabilizing drug; it does not reverse dopamine blockade or treat neuroleptic malignant syndrome (not taken from the course material). Lithium is used as a mood stabilizer, but it is not treatment for this acute hyperthermic rigid state and can itself be associated with neurotoxicity in some settings (not taken from the course material). The bank therefore prints option c as the appropriate treatment.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize neuroleptic malignant syndrome after haloperidol and identify bromocriptine as the printed treatment.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q11, p.1583 (answer p.1584)'
+},
+
+{ id:'npep-fe2-13', bank:'endpoint', module:'neuropsych', chapter:'nr-hemi',
+  stem:'A 25-year-old female patient presented to the outpatient clinic with numbness in the right hand which started 9 days ago. The patient broke-up with her fiance and had stressful days . Her examination showed right sided weakness and spasticity. What should be next appropriate step conducted for this patient?',
+  options:['Give antidepressant drug', 'Echocardiography', 'Assure the patient and refer to psychotherapy', 'MRI brain'],
+  answer:3,
+  explanation:'Do MRI to exclude any organic disease',
+  objective:'Exclude an organic neurological cause with brain MRI in a patient with unilateral weakness and spasticity.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q13, p.1589 (answer p.1590)'
+},
+
+{ id:'npep-fe2-14', bank:'endpoint', module:'neuropsych', chapter:'ps-devices',
+  stem:'After receiving two of nine electroconvulsive therapy (ECT) treatments, the client states, "I can\'t even remember eating breakfast, so I want to stop the ECT treatments." Which is the most appropriate reply?',
+  options:['"You\'ll need to talk with your doctor about what you are thinking."', '"Memory loss is a rare side effect of the treatment. I don\'t think it should be a concern."', '"It is within your right to discontinue the treatments, but let\'s talk about your concerns."', '"After you begin the course of treatments, you must complete all of them."'],
+  answer:2,
+  explanation:'Option c is the keyed response because it acknowledges the client\'s right to refuse or discontinue treatment while inviting discussion of the concern. A competent client may withdraw consent for ECT, and the nurse should use therapeutic communication to explore the reported memory problem and support informed decision-making (not taken from the course material). Memory difficulties can occur with ECT, so the concern deserves discussion rather than dismissal (not taken from the course material).\n\nOption a is wrong because it deflects the client immediately to the doctor and does not address the concern or recognize the client\'s autonomy. The client may need medical discussion, but the nurse can first listen, clarify, and provide support (not taken from the course material). Option b is wrong because it minimizes the client\'s experience and inaccurately frames memory loss as a negligible concern. It is nontherapeutic to dismiss a symptom that is influencing the client\'s decision (not taken from the course material). Option d is wrong because consent remains voluntary; beginning a planned course does not remove the right to refuse further treatment (not taken from the course material). The response in c neither pressures the client to continue nor abandons the client’s concern. It balances respect for autonomy with an opportunity to discuss the reason for wanting to stop.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'The question tests recognition of a client\'s right to discontinue ECT and the therapeutic response to concerns about memory loss.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q14, p.1592 (answer p.1593)'
+},
+
+{ id:'npep-fe2-15', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'What is the most suitable drug for treatment of Parkinson disease?',
+  options:['Carbidopa-levodopa.', 'Alteplase', 'Interferon Beta-1A', 'Glatiramer'],
+  answer:0,
+  explanation:'Treatment\n\nA. Parkinson disease (Parkinsonism) (rigidity)\n\nThe main stay in the treatment is the replacement of dopamine by combination between levodopa and carbidopa:\n\n1. Dopamine agonists: Bromocriptine (parlodel)\n✓ They act directly on dopamine receptors.\n✓ less effective than L-dopa (used in early stage or adjunct therapy to L-dopa).\n\nS. Anticholinergic drugs: Trihexyphenidyl HCl, Benztropine.\n✓ provide good tremor relief but do not meaningfully improve bradykinesia or rigidity.\n\nB. MAO-B inhibitors: Selegiline\n\nThe enzyme monoamine oxidase B plays a key role in metabolism of dopamine. So, MAO-B inhibitors allow dopamine to accumulate, enhancing and prolonging its action.\n\nC. COMT inhibitors: catecholamine O-methyl transferase inhibitor)\nTES? e.g.\n\nLike carbidopa, COMT inhibitors prevent the breakdown of levodopa. Their main effect is to prolong the duration of action of the dose of levodopa. e.g. entacapone.\n\nF. Amantadine: an antiviral drug.\n\nE. Surgery for severe refractory cases:\n• Deep brain stimulation\n• Palliative surgery, Thalamotomy or pallidotomy.\n\nG. Other: Physiotherapy.',
+  objective:'The question tests the drug combination used to treat Parkinson disease.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q15, p.1594 (answer p.1595)'
+},
+
+{ id:'npep-fe2-16', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'What is the shape of pupil seen in narcotic over use ?',
+  options:['Dilated unreactive to light', 'Pinpoint unreactive to light.', 'Dilated pupil reactive to light', 'Pinpoint pupil reactive to light'],
+  answer:3,
+  explanation:'NB: Pontine lesion ,opiate intoxication and narcotic overuse >> pinpoint pupil reactive to light. We know some sources wrote narcotic overuse >> pinpoint unreactive to light ,but The right answer is pinpoint reactive to light according to your book and after confirmation from department.',
+  objective:'Identify the pupil finding printed for narcotic over use.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q16, p.1596 (answer p.1597). Also printed as Model Final Exam 6, Q32, p.2159 (answer p.2160), options reordered, same key.'
+},
+
+{ id:'npep-fe2-17', bank:'endpoint', module:'neuropsych', chapter:'ps-symptom',
+  stem:'In which disorder headache can be a symptoms?',
+  options:['Schizophrenia', 'Any psychiatric disorder.', 'Somatoform disorder', 'Bipolar disorder'],
+  answer:1,
+  explanation:'The printed key is “Any psychiatric disorder.” Headache may occur in people with any psychiatric disorder, either as a coexisting physical symptom, a stress-related complaint, a medication-related complaint, or a manifestation of associated anxiety, depression, sleep disturbance, or somatic preoccupation (not taken from the course material). Therefore, the broadest option is the bank’s intended answer.\n\nSchizophrenia is incorrect because it is only one psychiatric disorder and cannot encompass all settings in which headache may be reported. Headache is not a defining diagnostic symptom of schizophrenia, although a person with schizophrenia may still have headache for ordinary medical or psychiatric-associated reasons (not taken from the course material).\n\nSomatoform disorder is incorrect because headache can be presented as a somatic symptom in such disorders, but the question asks for the disorder category in which it can occur most broadly. Limiting the answer to somatoform disorder excludes headache complaints in other psychiatric conditions (not taken from the course material).\n\nBipolar disorder is incorrect for the same reason: headache may be reported by a person with bipolar disorder, but it is neither a defining symptom nor the most inclusive option. The keyed answer includes bipolar disorder as well as schizophrenia, somatoform disorder, and other psychiatric disorders (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Headache can be reported in any psychiatric disorder.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q17, p.1598 (answer p.1599)'
+},
+
+{ id:'npep-fe2-18', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'What is the disorder characterized Brian intense , irrational fear of something that poses little or no actual danger ?',
+  options:['Social anxiety disorder', 'Specific phobia.', 'Agoraphobia', 'Panic disorder'],
+  answer:1,
+  explanation:'B. Specific Phobia:\nExposure to certain objects provokes immediate & marked fear. That\'s why the patient always tries to avoid these objects.\n\nThis marked fear is out of proportion to the actual danger.\n\nObjects that can provoke this fear can be animals (e.g. cats), environmental (e.g. heights) or blood - injuries (e.g. needles).',
+  objective:'Specific phobia is characterized by marked irrational fear of an object or situation that poses little or no actual danger.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q18, p.1600 (answer p.1601)'
+},
+
+{ id:'npep-fe2-20', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'A 51-year-old man with hypertension and diabetes presented with left leg weakness associated with incontinence what is the most likely vascular occlusion?',
+  options:['Right Anterior cerebral artery.', 'Right basilar artery', 'Right Middle cerebral artery', 'Right posterior cerebral artery'],
+  answer:0,
+  explanation:'The printed key is Right Anterior cerebral artery. An anterior cerebral artery infarct typically affects the medial surface of the frontal and parietal lobes, including the cortical motor representation of the contralateral lower limb (not taken from the course material). Therefore, right ACA occlusion can produce prominent left leg weakness. Medial frontal involvement may also impair cortical bladder control and cause urinary incontinence (not taken from the course material). Hypertension and diabetes are vascular risk factors for cerebral infarction (not taken from the course material).\n\nRight basilar artery occlusion is wrong because it primarily compromises the brainstem and may cause coma, quadriplegia, cranial-nerve deficits, or locked-in syndrome rather than an isolated contralateral leg-predominant weakness with incontinence (not taken from the course material).\n\nRight middle cerebral artery occlusion is wrong because it more characteristically causes contralateral face and upper-limb weakness greater than leg weakness; a right-sided lesion may also produce left hemispatial neglect (not taken from the course material).\n\nRight posterior cerebral artery occlusion is wrong because its usual deficit is contralateral homonymous visual-field loss from occipital cortex ischemia, sometimes with memory-related symptoms, rather than focal leg weakness with bladder dysfunction (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify right anterior cerebral artery occlusion from contralateral leg weakness and incontinence.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q20, p.1605 (answer p.1606)'
+},
+
+{ id:'npep-fe2-21', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
+  stem:'What is the most suitable mood stabilizer for a 35 years old , newly married female patient?',
+  options:['Lithium', 'Carbamazepine', 'Valproate', 'Lamotrigine'],
+  answer:3,
+  explanation:'Lithium and valproate are CI in pregnancy and lactation, so they are not used for this newly married female.',
+  objective:'Identify the mood stabilizer selected by the bank for a newly married female patient.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q21, p.1608 (answer p.1609)'
+},
+
+{ id:'npep-fe2-23', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'What is the most common visual field defect in pituitary adenomas ?',
+  options:['Homonymous hemianopia', 'Bitemporal hemianopia', 'Inferior quadrantanopia', 'Superior quadrantanopia'],
+  answer:1,
+  explanation:'Bitemporal hemianopia is the printed keyed answer. A pituitary adenoma may enlarge upward from the sella turcica and compress the central portion of the optic chiasm, where the crossing nasal retinal fibres travel. Loss of these fibres causes loss of the temporal visual fields in both eyes, producing bitemporal hemianopia (not taken from the course material).\n\nHomonymous hemianopia is incorrect because it usually results from a lesion behind the optic chiasm, involving the optic tract, optic radiations, or visual cortex on one side (not taken from the course material). It causes loss of the same side of the visual field in both eyes, rather than temporal field loss in both eyes.\n\nInferior quadrantanopia is incorrect because a quadrantic defect is generally caused by partial involvement of post-chiasmal visual pathways, rather than the typical central chiasmal compression caused by a pituitary adenoma (not taken from the course material).\n\nSuperior quadrantanopia is also incorrect. This pattern is classically associated with involvement of temporal lobe optic radiations, whereas pituitary enlargement typically affects the optic chiasm first (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'The question tests that pituitary adenomas most commonly cause bitemporal hemianopia.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q23, p.1611 (answer p.1612) Also printed as Model Final Exam 4, Q38, p.1939 (answer p.1940), options reordered.'
+},
+
+{ id:'npep-fe2-25', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'A 2.5 months infant diagnosed with premature closure of coronal sature with proptosis. What is the best managment ?',
+  options:['Molded helmets', 'Observation till the age 4 years', 'Endoscopic suturectomy', 'Sutrectomy and facial advancement'],
+  answer:3,
+  explanation:'The printed key is Sutrectomy and facial advancement. Premature fusion of a coronal suture is coronal craniosynostosis, and proptosis indicates clinically important orbital and facial involvement from the abnormal craniofacial growth pattern. (not taken from the course material) Operative treatment is required to release the fused suture and address the associated craniofacial deformity; facial advancement can increase orbital volume and improve protection of the prominent eyes. (not taken from the course material)\n\nMolded helmets are not adequate treatment for a truly fused coronal suture with proptosis. Helmets may be used for positional skull deformity or as an adjunct after selected minimally invasive craniosynostosis procedures, but they do not themselves release a prematurely fused suture. (not taken from the course material)\n\nObservation till the age 4 years is inappropriate because untreated craniosynostosis may permit progressive craniofacial asymmetry and can be associated with restricted cranial growth or raised intracranial pressure. (not taken from the course material) Proptosis also makes delayed treatment less suitable because of the risk of inadequate ocular protection. (not taken from the course material)\n\nEndoscopic suturectomy is a less invasive option for selected young infants with isolated craniosynostosis, usually followed by helmet therapy. (not taken from the course material) However, the bank’s marked answer favours the more comprehensive sutrectomy with facial advancement in this infant with proptosis, reflecting the need to treat the orbital and facial component as well as the fused suture. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Tests management of coronal craniosynostosis with proptosis.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q25, p.1618 (answer p.1619)'
+},
+
+{ id:'npep-fe2-29', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'A 30-year-old female with hand pain awaking her from sleep especially after excessive day work in the last 2 weeks . Pain increases on hand flexion and tapping the anterior aspect of wrist . What the next step in her management?',
+  options:['nerve conduction studies', 'MRI cervical spine', 'Surgical decompression', 'MRI wrist'],
+  answer:0,
+  explanation:'The bank keys nerve conduction studies. The nocturnal hand pain, worsening with hand flexion, and pain on tapping the anterior wrist are consistent with carpal tunnel syndrome, caused by median nerve compression at the wrist (not taken from the course material). Nerve conduction studies are used to support the diagnosis, demonstrate median neuropathy across the carpal tunnel, grade its severity, and help exclude alternative peripheral nerve pathology (not taken from the course material). They are therefore the most appropriate next investigation among the listed choices.\n\nMRI cervical spine is not the next step because the findings localize clinically to the wrist rather than to a cervical root or spinal lesion. Cervical imaging would be considered if there were features suggesting cervical radiculopathy or myelopathy, such as neck pain, dermatomal symptoms, weakness in a root distribution, or upper motor neuron signs (not taken from the course material).\n\nSurgical decompression is not first among these options for a recent presentation without documented severe neuropathy, thenar wasting, or failure of conservative management. Carpal tunnel release is generally reserved for severe, persistent, or refractory disease, or for objective nerve damage (not taken from the course material).\n\nMRI wrist is not routinely required for typical carpal tunnel syndrome. It may be useful when a structural mass, trauma, or atypical wrist pathology is suspected, but it does not replace electrophysiological testing for routine diagnostic confirmation (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Carpal tunnel syndrome is evaluated with nerve conduction studies.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q29, p.1628 (answer p.1629)'
+},
+
+{ id:'npep-fe2-31', bank:'endpoint', module:'neuropsych', chapter:'ps-ocd',
+  stem:'A 28-year-old taxi driver is chronically by fears of having accidentally run over a man crossing the road. Although he tries to convince himself that his worries are silly, his anxiety continues to mount until he drives back to the scene of the accident and proves to him self that no body lies hurt in the street. This behavior is an example of which manifestations?',
+  options:['A compulsion secondary to an obsession', 'An obsession triggered by a compulsion', 'A delusional ideation', 'A hallucinatory behavior'],
+  answer:0,
+  explanation:'The compulsion (repeatedly checking the scene) is driven by the obsession (fear of having accidentally run over someone).',
+  objective:'A compulsion may be performed in response to an obsession.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q31, p.1634 (answer p.1635)'
+},
+
+{ id:'npep-fe2-32', bank:'endpoint', module:'neuropsych', chapter:'nr-neckpain',
+  stem:'A 50-years-old patient presented to neurology clinic with numbness of the lateral aspect of the left arm due to radiculopathy . Which muscle action may be affected by the same lesion?',
+  options:['Shoulder flexion', 'Shoulder abduction.', 'Arm extension', 'Arm flexion'],
+  answer:1,
+  explanation:'In radiculopathy affecting the lateral aspect of the left arm, specifically involving the C5 nerve root, the muscles innervated by this nerve root may be affected. The C5 nerve root primarily innervates the deltoid muscle, which is responsible for shoulder abduction',
+  objective:'Identify the motor action affected in C5 radiculopathy.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q32, p.1636 (answer p.1637)'
+},
+
+{ id:'npep-fe2-33', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'Which nerve could be entrapped in tarsal tunnel syndrome?',
+  options:['Posterior tibial.', 'Anterior tibial', 'Sural', 'Common peroneal'],
+  answer:0,
+  explanation:'5) Tarsal Tunnel Syndrome\n\nDefinition:\n\nThis involves compression of the posterior tibial nerve at the ankle behind the medial malleolus, where it is covered by the lanciniate ligament connecting the distal tibia to the calcaneous\n\nEtiology:\nIt is usually related to local fractures, tumors, and vascular abnormalities.\n\nClinical Picture:\n1. Pain and dysthesia in the toes and sole of the foot.\n2. Pes cavum and clawing of the toe occurs.\n3. Positive Tinel\'s sign below medial malleolus.\n\nTreatment :\n1. NSAID\n2. External ankle support (e.g., shoe orthoses) to improve foot mechanics.',
+  objective:'Identify the nerve compressed in tarsal tunnel syndrome.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q33, p.1638 (answer p.1639)'
+},
+
+{ id:'npep-fe2-34', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'A 35-year-old patient experienced severe head injury with traumatic subarachnoid hemorrhage that were managed conservative over 3 week . After 6 months the patient complained of morning headache, vomiting, and blurring of vision . The most probable finding in the head CT ?',
+  options:['Hydrocephalus.', 'Cerebral infarction', 'Subdural hemorrhage', 'cerebral gliosis'],
+  answer:0,
+  explanation:'Hydrocephalus is the printed answer. Delayed hydrocephalus can follow traumatic subarachnoid hemorrhage because blood products and subsequent scarring may impair cerebrospinal-fluid absorption at the arachnoid granulations (not taken from the course material). Progressive ventricular enlargement then raises intracranial pressure, producing morning headache, vomiting, and blurring of vision; these are features compatible with raised intracranial pressure (not taken from the course material). CT would be expected to show enlarged ventricles (not taken from the course material).\n\nCerebral infarction is less consistent with the delayed syndrome described. An infarct generally produces focal neurological deficits according to the affected vascular territory, rather than a six-month history dominated by symptoms of raised intracranial pressure (not taken from the course material). Subdural hemorrhage may occur after head trauma and may present late, but chronic subdural collections more commonly produce headache, altered cognition, focal deficits, or reduced consciousness; the preceding traumatic subarachnoid hemorrhage particularly supports impaired CSF circulation in this question (not taken from the course material). Cerebral gliosis is a chronic scar-like consequence of brain injury and may be visible as a residual structural change, but it does not by itself explain progressive vomiting and visual blurring from raised intracranial pressure (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Delayed hydrocephalus may occur after traumatic subarachnoid hemorrhage and cause raised intracranial pressure.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q34, p.1640 (answer p.1641)'
+},
+
+{ id:'npep-fe2-15b', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'A sixty-year-old male patient presented with dysphasia and right hemiplegia since 6 hours. The CT scan was unremarkable, CT angiography showed occlusion of the Left internal carotid artery and left middle cerebral artery. CT brain perfusion showed mismatch and large area of brain tissue risk (penumbra). What is the best suitable mangment for this patient?',
+  options:['Intravenous alteplase', 'Intravenous infusion of heparin', 'Mechanical thrombectomy', 'Craniotomy and Thrombus aspiration'],
+  answer:2,
+  explanation:'The book prints this page as "Q15" too — same number as the previous entry (npep-fe2-15), a duplicate-numbering defect in the source, not a transcription error (compare the "House printed chapter 9 twice" precedent). Suffixed -15b here only to keep ids unique; the two are unrelated questions. Mechanical thrombectomy is the printed answer. This patient has a disabling acute ischemic stroke with demonstrated large-vessel occlusion involving the left internal carotid artery and left middle cerebral artery. The perfusion mismatch and large penumbra indicate potentially salvageable brain tissue despite presentation at 6 hours. Endovascular thrombectomy is generally taught to be appropriate for selected anterior-circulation large-vessel occlusions within extended time windows when imaging shows salvageable tissue (not taken from the course material).\n\nIntravenous alteplase is not the best listed choice because the stated onset is 6 hours, beyond the standard intravenous thrombolysis window in most patients (not taken from the course material). It also does not directly provide the definitive reperfusion approach for the documented proximal large-vessel occlusion when thrombectomy is available. Intravenous infusion of heparin is wrong because urgent anticoagulation does not recanalize an acute large-vessel ischemic stroke and may increase bleeding risk (not taken from the course material). Craniotomy and Thrombus aspiration is wrong because thrombectomy is performed by an endovascular catheter-based approach; open craniotomy is not the standard acute reperfusion treatment for this presentation (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Select mechanical thrombectomy for imaging-selected acute anterior-circulation large-vessel ischemic stroke with penumbra.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q15, p.1655 (answer p.1656)'
+},
+
+{ id:'npep-fe2-49', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:'A 50 -years - old patient presented to neurology clinic with pain in the buttocks and saddle area . What is the most probable nerve root affected?',
+  options:['L5', 'L4', 'S2', 'S1'],
+  answer:2,
+  explanation:'The sacral nerve roots, particularly S2-S4, are associated with the innervation of the perineum and saddle area.',
+  objective:'Saddle-area sensory symptoms are associated with sacral nerve roots, particularly S2-S4.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q49, p.1675 (answer p.1676)'
+},
+
+{ id:'npep-fe2-53', bank:'endpoint', module:'neuropsych', chapter:'nr-neckpain',
+  stem:'What is the most appropriate management of a patient with central C5-6 disc prolapse presenting with myelopathy manifestations?',
+  options:['Anterior cervical discectomy', 'Intense medical Treatment', 'physical rehabilitation', 'External neck support'],
+  answer:0,
+  explanation:'Anterior cervical discectomy and fusion (ACDF) is a common surgical procedure used to decompress the spinal cord and nerve roots affected by disc prolapse. It is considered the gold standard treatment for central disc herniations causing myelopathy, as it directly addresses the compression of the spinal cord.',
+  objective:'Central cervical disc prolapse with myelopathy manifestations is managed by anterior cervical discectomy.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q53, p.1682 (answer p.1683)'
+},
+
+{ id:'npep-fe2-54', bank:'endpoint', module:'neuropsych', chapter:'nr-epilepsy',
+  stem:'Which of the following is example of partial seizure ?',
+  options:['Myclonic seizures', 'focal aware motor seizure', 'Atonic seizures', 'Absence seizures'],
+  answer:1,
+  explanation:'The keyed option, focal aware motor seizure, is an example of a partial seizure, now more commonly termed a focal seizure. It begins in a localized area of one cerebral hemisphere rather than involving both hemispheres from onset. In a focal aware motor seizure, awareness is retained while the patient has motor manifestations, such as localized jerking, tonic posturing, or movements affecting part of the body (not taken from the course material). The printed key therefore corresponds to option b.\n\nMyclonic seizures are brief, sudden shock-like muscle jerks. They are usually classified among generalized seizure types when they arise with generalized epileptic activity, rather than as the focal aware motor seizure named in the keyed option (not taken from the course material).\n\nAtonic seizures cause a sudden loss or reduction of muscle tone, which may lead to head dropping or falls. They are generally categorized as generalized seizure types and are not the focal aware motor seizure identified by the bank (not taken from the course material).\n\nAbsence seizures are generalized non-motor seizures, typically producing brief episodes of impaired awareness with abrupt onset and offset. They do not describe preserved awareness with a focal motor manifestation (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify focal aware motor seizure as an example of a partial seizure.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q54, p.1685 (answer p.1686)'
+},
+
+{ id:'npep-fe2-56', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
+  stem:'For questions 56-57: A psychiatrist is called to see a 64-year-old man after he began screaming that there were strange men inside his hospital room. The patient underwent a coronary artery bypass graft 3 days previously and appeared to be recovering without complications. He claims that the previous evening he had seen several men standing in his room by the window. The patient states that they didn\'t say anything to him but that he was sure they were going to hurt him. He has never seen anything unusual before and has no prior history of psychiatric difficulties. The nurse\'s notes from the late shift indicate that the patient became agitated and restless. That evening, he was also noted to be disoriented and stuporous. He was not observed in this condition the previous evening. What is the most likely diagnosis for this patient?',
+  options:['Dementia', 'Delirium', 'Schizophernia', 'Major depression'],
+  answer:1,
+  explanation:'Acute onset: The patient had an acute onset of symptoms, which is characteristic of delirium rather than dementia or schizophrenia. Fluctuating course: The symptoms fluctuated, with periods of agitation, restlessness, disorientation, and even stupor. This fluctuating course is typical of delirium. Underlying medical condition: The patient underwent coronary artery bypass graft surgery, which is a significant medical stressor and can predispose individuals to delirium. Perceptual disturbances: The patient\'s report of seeing strange men in his room and feeling threatened by them suggests perceptual disturbances, which are common in delirium. No prior psychiatric history: Delirium often occurs in individuals without a history of psychiatric difficulties, unlike schizophrenia or major depression, which typically have a more chronic course.',
+  objective:'Identify delirium as the marked most likely diagnosis.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q56, p.1690 (answer p.1691)'
+},
+
+{ id:'npep-fe2-57', bank:'endpoint', module:'neuropsych', chapter:'nr-exam',
+  stem:'For questions 56-57 (same patient as npep-fe2-56 — see that stem for the vignette): What is the next step in the treatment of this patient?',
+  options:['Just assure the patient', 'order antipsycotic drugs', 'order anti Alzheimer drugs', 'proper neurological examination and investigate for the cause'],
+  answer:3,
+  explanation:'Identifying the cause: Delirium is often a symptom of an underlying medical condition or a side effect of medication. Conducting a thorough neurological examination and investigations (such as blood tests, imaging studies, and possibly lumbar puncture) can help identify the specific cause of the delirium. Treatment based on cause: Treatment of delirium hinges on addressing its underlying cause. For example, if there is an infection (like urinary tract infection or pneumonia), treating the infection can help resolve delirium. If there are metabolic disturbances or medication side effects contributing to delirium, correcting these factors is crucial. Excluding other causes: It\'s important to rule out other potential neurological or medical conditions that could mimic or exacerbate delirium.',
+  objective:'The next step is to perform a proper neurological examination and investigate the cause before treatment.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q57, p.1693 (answer p.1694)'
+},
+
+{ id:'npep-fe2-58', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'A 55 - year -old man complained of the sudden onset of a severe headache and Then he lost consciousness. On examination ‘he was awake . But lethargic.He withdrew to pain in his Extremities and moaned, though he didn\'t speak. What is the most likely diagnosis?',
+  options:['Brain tumor', 'Subarachonoid hemorrhage', 'Brain abcess', 'Ischemic stroke'],
+  answer:1,
+  explanation:'Sudden severe headache: A sudden severe headache is a hallmark symptom of subarachnoid hemorrhage (SAH), often described as "the worst headache of my life." Loss of consciousness: Loss of consciousness can occur due to the rapid accumulation of blood in the subarachnoid space. Lethargy and altered responsiveness: Following initial loss of consciousness, patients with SAH may present with varying levels of consciousness, ranging from lethargy to coma. Withdrawal to pain and moaning: These symptoms suggest a decreased level of consciousness and responsiveness, which can occur in SAH due to the effects of bleeding on the brain and the resulting increased intracranial pressure.',
+  objective:'Recognize subarachnoid hemorrhage from sudden severe headache and loss of consciousness.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q58, p.1696 (answer p.1697)'
+},
+
+{ id:'npep-fe2-59', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'Which of the following is the most appropriate step in evolution of this patient?',
+  options:['Cerbrospinal fluid analysis to look for red blood cells', 'CT scan', 'MRI', 'MR angiogram'],
+  answer:1,
+  explanation:'Why CT scan is usually the first choice. Rapid detection of bleeding: A non-contrast CT scan of the head is highly sensitive for detecting acute hemorrhage, such as in SAH. It can quickly confirm the presence of blood in the subarachnoid space. Immediate availability: CT scans are readily available in most emergency settings and can be performed quickly, which is crucial for timely diagnosis and management of SAH. Guiding further management: A CT scan can guide subsequent steps in management, such as determining the need for further imaging (like MRI or MR angiogram) or urgent interventions.',
+  objective:'The question tests selection of CT scan as the initial imaging investigation for an acute suspected intracranial event.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q59, p.1699 (answer p.1700)'
+},
+
+{ id:'npep-fe2-61', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'A 27-year-old man is brought to the psychiatry clinic by his roomates. They state that the patient has been very irritable and and explosive and had not slept for the past 3 weeks. Stays up all night cleaning his apartment. He has bought new computer equipment and digital video disc player, although the patient cannot afford these kinds of items. He has been drinking a lot of alcohol. For the past 2 weeks, which is uncharacteristic. They state that the patient complained of headache, nausea and vomiting 3 weeks ago. He has a past medical history of brain tumor which was surgically removed. What is the initial treatment?',
+  options:['corticosteroids administration', 'lumbar puncture', 'intravenous fluid to induce hypervolemia', 'urgent Biopsy'],
+  answer:0,
+  explanation:'Brain tumor history: The patient has a history of a brain tumor. Corticosteroids can be used to reduce inflammation and edema associated with brain tumors or post-surgical changes, which might be contributing to his current symptoms. Immediate psychiatric stabilization: While addressing the underlying cause is crucial, corticosteroids can help in reducing any potential brain edema that might be exacerbating his psychiatric symptoms.',
+  objective:'The question tests the bank’s stated initial treatment choice of corticosteroid administration.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q61, p.1706 (answer p.1707)'
+},
+
+{ id:'npep-fe2-62', bank:'endpoint', module:'neuropsych', chapter:'nr-hemi',
+  stem:'A 23-year-old male presented to the emergency department with epilepticus after motorcycle accident. The CT scan was un remarkable. The patient was managed effectively and discharged fully conscious. After 2 weeks ,he developed severe headache and hemiparesis. What is the most probable diagnosis?',
+  options:['Subacute subdural hematoma.', 'Acute subdural hematoma', 'Epidural hematoma', 'Chronic subdural hematoma'],
+  answer:0,
+  explanation:'The keyed answer is subacute subdural hematoma. The important clue is delayed neurological deterioration with severe headache and hemiparesis two weeks after head trauma, despite an initially un remarkable CT scan and apparent recovery. A subdural collection may enlarge gradually after traumatic tearing of bridging veins, producing mass effect and focal deficits over days to weeks (not taken from the course material). The two-week interval fits the subacute phase of a subdural hematoma (not taken from the course material).\n\nAcute subdural hematoma is less likely because it usually becomes clinically apparent immediately or within the first few days after severe head injury, often with reduced consciousness and early CT findings (not taken from the course material). Epidural hematoma is less likely because it classically presents soon after trauma, often with a lucid interval followed by rapid neurological decline due to arterial bleeding, rather than symptoms emerging after two weeks (not taken from the course material). Chronic subdural hematoma is less likely because it generally presents after a longer delay, commonly several weeks to months after injury, although timing can vary (not taken from the course material). The later headache and hemiparesis indicate an expanding intracranial lesion with focal cerebral compression (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify subacute subdural hematoma from delayed headache and hemiparesis after head trauma.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q62, p.1709 (answer p.1710)'
+},
+
+{ id:'npep-fe2-63', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What is the clinical criterion of cutting ulnar nerve at the distance of 3 cm proximal to the wrist joint?',
+  options:['Sensory loss of medial third of the palm of hand.', 'Paralysis of all thenar muscles', 'Finger drop', 'Ape hand'],
+  answer:0,
+  explanation:'The keyed option is sensory loss of medial third of the palm of hand. A lesion of the ulnar nerve 3 cm proximal to the wrist interrupts sensory fibres supplying the medial part of the palm, because the palmar cutaneous branch arises proximal to the wrist and is therefore affected by a lesion at this level (not taken from the course material). The printed answer identifies this sensory deficit as the clinical criterion.\n\nParalysis of all thenar muscles is wrong because the thenar muscles are predominantly supplied by the median nerve, not the ulnar nerve (not taken from the course material). The ulnar nerve supplies the adductor pollicis and deep head of flexor pollicis brevis, rather than all thenar muscles (not taken from the course material).\n\nFinger drop is wrong because this describes inability to extend the fingers, classically associated with radial nerve palsy affecting the finger extensors (not taken from the course material). A distal ulnar lesion instead affects ulnar-innervated intrinsic hand muscles.\n\nApe hand is wrong because it results from median nerve palsy with thenar wasting and impaired opposition of the thumb (not taken from the course material). It is not the characteristic finding of an ulnar nerve lesion near the wrist.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Tests the sensory finding produced by ulnar nerve transection 3 cm proximal to the wrist joint.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q63, p.1713 (answer p.1714). Also printed as Model Final Exam 6, Q29, p.2153 (answer p.2154), identical stem and options.'
+},
+
+{ id:'npep-fe2-64', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'What is the clinical presentation of glioma of brain stem?',
+  options:['Ipsilateral trigeminal affection.', 'Ipsilateral uvular deviation.', 'Deviation of mouth angle to the tumor side.', 'Ipsilateral positive extensor planter response.'],
+  answer:0,
+  explanation:'Ipsilateral cranial nerve deficit\nContralateral hemiparesis',
+  objective:'Brain-stem glioma presents with ipsilateral cranial nerve deficits, including trigeminal affection.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q64, p.1715 (answer p.1716). Also printed as Model Final Exam 6, Q4, p.2102 (answer p.2103), same options (minor OCR spelling variant on one option: \'planter\'/\'plantar\').'
+},
+
+{ id:'npep-fe2-65', bank:'endpoint', module:'neuropsych', chapter:'nr-neckpain',
+  stem:'What is the most cause of cervical pain ?',
+  options:['cervical Spondylosis.', 'cervical disc prolapses.', 'Cervical Disc Herniation', 'Cervical Radiculopathy'],
+  answer:0,
+  explanation:'The printed key is cervical Spondylosis. Cervical spondylosis refers to age-related degenerative change involving cervical discs, vertebral bodies, facet joints, and osteophyte formation, and it is a common cause of mechanical neck pain (not taken from the course material). It commonly produces localized pain and stiffness, sometimes aggravated by neck movement (not taken from the course material).\n\nCervical disc prolapses are not the best answer because they are less common as a general cause of cervical pain and more characteristically cause nerve-root irritation when clinically significant (not taken from the course material). Cervical Disc Herniation similarly describes focal displacement of disc material; it may cause neck pain, but it is more often considered when there is radicular arm pain, sensory symptoms, weakness, or reflex change (not taken from the course material). Cervical Radiculopathy is a clinical syndrome caused by compression or irritation of a cervical nerve root, rather than the usual underlying degenerative cause of uncomplicated neck pain (not taken from the course material). It may result from spondylosis or disc herniation and typically includes pain radiating into the upper limb in a dermatomal distribution (not taken from the course material).\n\nThus, among the listed choices, the highlighted option identifies the broad common degenerative condition responsible for many cases of cervical pain. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify cervical spondylosis as the most common cause of cervical pain.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q65, p.1717 (answer p.1718)'
+},
+
+{ id:'npep-fe2-66', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'A 12-year-old child previously diagnosed with hydrocephalus and had a shunt presented with headache and vomiting on examination the shunt is non-compressible what is the appropriate management:',
+  options:['shunt survey.', 'give him IV ondansetron', 'endoscopic third ventriculostomy', 'shunt removal'],
+  answer:0,
+  explanation:'This means non functioning shunt\nSigns of Raised ICP And non compressible >>do shunt revision',
+  objective:'A non-compressible shunt with symptoms of raised intracranial pressure should prompt assessment for shunt malfunction.',
+  source:'Neuro endpoint.pdf, Model Final Exam 2, Q66, p.1719 (answer p.1720)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Model Final Exam 5: 43 pairs read, 24 folded as duplicates of
+ * already-spliced material (13 exact, 3 REORDERED, 1 respelled cross-bank, 1 reworded/
+ * dropped-filler-option, 4 near-exact with OCR typos treated as exact, 2 from the book's
+ * duplicate-numbering-42 defect) — source notes appended to the 24 survivors in
+ * app/data/questions.neuro.js. 19 genuinely new rows remain here for splice.
+ */
+
+{ id:'npep-fe5-19', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'What is the first line of treatment for aneurysmal subarachnoid hemorrhage?',
+  options:['Induction of hypertension.', 'Surgical clipping of the aneurysm', 'Hemoconcentration', 'Antiplatelet agents'],
+  answer:1,
+  explanation:'Surgical clipping of the aneurysm is the printed first-line treatment because it definitively secures the ruptured aneurysm and prevents recurrent bleeding. In contemporary practice, aneurysm occlusion may be achieved by microsurgical clipping or endovascular coiling depending on aneurysm anatomy, patient factors, and local expertise (not taken from the course material). The key point tested is early definitive exclusion of the bleeding aneurysm from the circulation.\n\nInduction of hypertension is not the initial treatment for an unsecured ruptured aneurysm, because raising blood pressure can increase the risk of rebleeding. Induced hypertension may be used selectively for delayed cerebral ischemia from vasospasm after the aneurysm has been secured and after other measures are considered (not taken from the course material). Hemoconcentration is not first-line treatment; it was historically associated with hypervolemic, hypertensive, hemodilution-related approaches to vasospasm, but it does not secure the aneurysm and is not routine contemporary management (not taken from the course material). Antiplatelet agents are inappropriate as first-line therapy for aneurysmal subarachnoid hemorrhage because they can worsen bleeding risk and do not treat the ruptured aneurysm. Initial supportive care, blood-pressure management, nimodipine, and treatment of complications are also important, but they do not replace urgent aneurysm-securing treatment (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'A ruptured aneurysm causing subarachnoid hemorrhage requires definitive aneurysm securing by surgical clipping.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q19, p.2044 (answer p.2045)'
+},
+
+{ id:'npep-fe5-21', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:'What is the presentation of far lateral L3-L4 disc prolapse?',
+  options:['Positive reversed straight leg raising test.', 'Sensory loss of little toe', 'Knee clonus', 'Weakness of planter flexors'],
+  answer:0,
+  explanation:'The printed key is option a, Positive reversed straight leg raising test. A far lateral L3-L4 disc prolapse compresses the exiting L3 nerve root rather than the traversing L4 root (not taken from the course material). The reversed straight leg raising test, also called the femoral nerve stretch test, is used to provoke upper lumbar radicular pain and may be positive with L2, L3, or L4 root irritation (not taken from the course material). This therefore fits the expected presentation of a far lateral L3-L4 lesion.\n\nOption b, sensory loss of little toe, is wrong because sensation over the little toe is principally associated with the S1 dermatome (not taken from the course material), not L3 radiculopathy. Option c, knee clonus, is wrong because clonus is an upper motor neuron sign related to corticospinal tract dysfunction (not taken from the course material); a lumbar root compression causes lower motor neuron-pattern radicular findings instead. Option d, weakness of planter flexors, is wrong because plantar flexion is mainly supplied by S1 through the tibial nerve (not taken from the course material). L3 involvement more typically affects functions such as knee extension through the quadriceps, with possible anterior-thigh sensory symptoms (not taken from the course material). The bank’s marked answer is therefore the reversed straight leg raising test.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify the clinical presentation of a far lateral L3-L4 disc prolapse.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q21, p.2048 (answer p.2049)'
+},
+
+{ id:'npep-fe5-22', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'What is the characteristic of moderate traumatic brain injury?',
+  options:['Glasgow Coma Score more than 13', 'Focal neurological deficits', 'Manifestations of post-concussion', 'Brain herniation.'],
+  answer:3,
+  explanation:'The printed key is Brain herniation. Moderate traumatic brain injury is generally classified by an initial Glasgow Coma Scale score of 9–12, whereas severe injury may cause raised intracranial pressure, mass effect, and eventual brain herniation. (not taken from the course material) The bank has printed brain herniation as the characteristic option, so it remains the key for this question.\n\nGlasgow Coma Score more than 13 is not the usual definition of moderate traumatic brain injury; scores of 13–15 are generally classified as mild traumatic brain injury. (not taken from the course material) Focal neurological deficits can occur after traumatic brain injury when there is a localized lesion, such as contusion or intracranial hemorrhage, but they are not the defining characteristic of moderate injury. (not taken from the course material) Manifestations of post-concussion are more often associated with concussion or mild traumatic brain injury and may include headache, dizziness, cognitive symptoms, and sleep disturbance. (not taken from the course material) Brain herniation is a dangerous complication caused by markedly increased intracranial pressure and is generally associated with severe brain injury rather than moderate injury. (not taken from the course material) Thus, although general teaching would not usually identify herniation as a defining feature of moderate traumatic brain injury, the endpoint file visibly prints option d as correct.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify the bank-keyed characteristic of moderate traumatic brain injury.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q22, p.2050 (answer p.2051)'
+},
+
+{ id:'npep-fe5-31', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What is the most common cause of entrapment neuropathy?',
+  options:['Ulnar neuropathy at the cubital fossa', 'Entrapment of the lateral cutaneous nerve of the thigh', 'Carpal tunnel syndrome', 'Radial nerve entrapment at the spiral groove'],
+  answer:2,
+  explanation:'Carpal tunnel syndrome is the printed correct answer. It is caused by compression of the median nerve as it passes through the carpal tunnel at the wrist and is generally taught to be the most common entrapment neuropathy (not taken from the course material). Typical symptoms include numbness, tingling, or pain in the thumb, index finger, middle finger, and radial half of the ring finger, sometimes with thenar weakness in more advanced cases (not taken from the course material).\n\nUlnar neuropathy at the cubital fossa is not the best answer because, although compression around the elbow is a common upper-limb entrapment neuropathy, it is less common overall than carpal tunnel syndrome (not taken from the course material). Entrapment of the lateral cutaneous nerve of the thigh produces meralgia paraesthetica, with sensory symptoms over the outer thigh (not taken from the course material). It is a focal sensory nerve entrapment, but it is not generally the most common entrapment neuropathy. Radial nerve entrapment at the spiral groove can cause radial neuropathy and wrist drop, often after sustained external compression or humeral injury (not taken from the course material). This is also less common than median nerve compression in the carpal tunnel.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify carpal tunnel syndrome as the most common entrapment neuropathy.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q31, p.2063 (answer p.2064)'
+},
+
+{ id:'npep-fe5-32', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'A 38-year-old patient was subjected to a stab wound in the proximal forearm of the right upper limb. On examination, the patient cannot bring the distal phalanx of the thumb and index finger together. Which nerve is injured in this patient?',
+  options:['Radial', 'Posterior interosseous', 'Anterior interosseous.', 'ulnar'],
+  answer:2,
+  explanation:'The printed key is Anterior interosseous. Injury to the anterior interosseous nerve produces weakness of flexor pollicis longus and the radial half of flexor digitorum profundus, including the tendon flexing the distal phalanx of the index finger (not taken from the course material). Consequently, the patient cannot flex the thumb interphalangeal joint and index distal interphalangeal joint sufficiently to bring their distal phalanges together, producing an abnormal pinch or “OK” sign (not taken from the course material). This branch arises in the proximal forearm, fitting the site of the stab wound (not taken from the course material).\n\nRadial nerve injury would mainly impair extension at the wrist, fingers, and thumb, classically causing wrist drop when the lesion is proximal enough (not taken from the course material). It does not selectively account for loss of flexion of the thumb and index distal phalanges. Posterior interosseous nerve injury is a motor branch of the radial nerve and chiefly causes weakness of finger and thumb extension; wrist extension may be relatively preserved (not taken from the course material). It therefore does not explain the described pinch deficit. Ulnar nerve injury affects many intrinsic hand muscles and may impair finger abduction and adduction, with characteristic clawing in some lesions (not taken from the course material), but it does not cause this specific loss of flexion of the thumb and index distal phalanges.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify anterior interosseous nerve injury from inability to bring the distal phalanges of the thumb and index finger together.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q32, p.2065 (answer p.2066)'
+},
+
+{ id:'npep-fe5-33', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'A 35-year female patient presented with absent menstruation and milky nipple discharge. Her prolactin level was 2000 ng/dl (normal value is less than 20 ng\\dl). her visual examination showed normal vision field and acuity. Her MRI brain showed seller space occupying lesion. What is the best management plan for this patient?',
+  options:['Endonasal endoscopic transsphenoidal excision', 'Gama knife radiosurgery', 'Sub frontal craniotomy for tumor removal', 'Dopamine agonist medical care and observation'],
+  answer:3,
+  explanation:'The bank keys dopamine agonist medical care and observation. The combination of amenorrhea, galactorrhea, markedly elevated prolactin, and a sellar space-occupying lesion is consistent with a prolactin-secreting pituitary adenoma (not taken from the course material). Dopamine agonists, such as cabergoline or bromocriptine, are generally first-line treatment because they lower prolactin concentrations, restore gonadal function, and commonly reduce tumour size (not taken from the course material). Her visual fields and acuity are normal, so the question does not describe visual compromise needing urgent decompression (not taken from the course material). Observation includes clinical, hormonal, visual, and MRI follow-up (not taken from the course material).\n\nEndonasal endoscopic transsphenoidal excision is not the initial usual choice for this presentation because surgery is generally reserved for medication resistance or intolerance, apoplexy, cerebrospinal-fluid leak, or threatening visual/neurological compression (not taken from the course material). Gamma knife radiosurgery is not first-line because its hormonal effect is delayed and it is usually considered for persistent or recurrent disease after other management (not taken from the course material). Sub frontal craniotomy for tumor removal is also inappropriate as routine initial management: it is a more invasive approach and is generally reserved for selected lesions not suitably managed by medication or transsphenoidal surgery (not taken from the course material). The visible printed key therefore supports option d.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Tests first-line management of a prolactin-secreting sellar lesion without visual impairment.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q33, p.2067 (answer p.2068)'
+},
+
+{ id:'npep-fe5-34', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:'From this syndrome choose the matching clinical sign Foot drop?',
+  options:['L5 root syndrome.', 'Complete cord syndrome', 'Central cord syndrome', 'S1 root syndrome', 'Brown-Séquard syndrome'],
+  answer:0,
+  explanation:'Foot drop is the matching sign for L5 root syndrome. The L5 root contributes importantly to ankle and great-toe dorsiflexion; weakness of these movements can make the forefoot drag during walking. (not taken from the course material) L5 radiculopathy may also produce sensory symptoms over the lateral leg and dorsum of the foot. (not taken from the course material)\n\nComplete cord syndrome causes loss of motor, sensory and autonomic function below the level of a complete spinal cord lesion, rather than an isolated foot-drop pattern. (not taken from the course material) Central cord syndrome classically produces motor weakness more marked in the upper limbs than the lower limbs, often after cervical hyperextension injury, so it is not the best match. (not taken from the course material) S1 root syndrome more typically affects plantar flexion and may reduce the ankle jerk; it is not the usual root lesion for dorsiflexion weakness causing foot drop. (not taken from the course material) Brown-Séquard syndrome is a spinal cord hemisection pattern with ipsilateral motor and dorsal-column deficits and contralateral pain-and-temperature loss below the lesion, not an isolated L5-pattern foot drop. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Foot drop is associated with L5 root syndrome.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q34, p.2069 (answer p.2070)'
+},
+
+{ id:'npep-fe5-6', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'In the previous case what is the finding in MRI of this patient that necessitate neurosurgery interference?',
+  options:['Vascular loop of artery or vein.', 'Hydrocephalus', 'Brain Herniation', 'Cut injury of nerve'],
+  answer:0,
+  explanation:'The printed key is option a, “Vascular loop of artery or vein.” This question continues the previous case (Q5), the patient with recurrent seconds-long lancinating facial pain who became refractory to medical treatment and was referred to neurosurgery after MRI — the classic presentation of trigeminal neuralgia. When trigeminal neuralgia fails maximal medical therapy, MRI is used to look for a structural cause, and the most common finding that prompts neurosurgical referral for microvascular decompression is a vascular loop, most often from the superior cerebellar artery, compressing the trigeminal nerve at its root entry zone in the posterior fossa (not taken from the course material). Demonstrating this compression on MRI is what specifically triggers surgical rather than continued medical management.\n\nOption b is wrong because hydrocephalus is enlargement of the ventricular system from impaired CSF circulation; it is not the structural finding linked to trigeminal neuralgia surgery (not taken from the course material).\n\nOption c is wrong because brain herniation is a life-threatening mass-effect emergency, not the incidental structural finding sought on an MRI worked up for refractory facial pain (not taken from the course material).\n\nOption d is wrong because a cut injury of the nerve is a traumatic lesion, not something an MRI would newly reveal in a patient with a several-month history of medically treated facial pain; it also would not typically be treated by referral for compressive decompression surgery (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'MRI showing a vascular loop compressing the trigeminal nerve is the finding that prompts neurosurgical referral in refractory trigeminal neuralgia.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q6, p.2018 (answer p.2019)'
+},
+
+{ id:'npep-fe5-8', bank:'endpoint', module:'neuropsych', chapter:'ps-geri',
+  stem:'What is/are the main pathophysiological mechanism/s of Alzheimer\'s disease?',
+  options:['increased serotonergic and gamma-aminobutyric acid activity', 'Increased activity of the hypothalamic-pituitary-adrenal axis', 'Synthesis of cytokines in the brain', 'Amyloidosis and tau-related neurodegeneration.'],
+  answer:3,
+  explanation:'The printed key is option d, “Amyloidosis and tau-related neurodegeneration.” Alzheimer\'s disease is characterised pathologically by extracellular deposition of beta-amyloid plaques and intracellular neurofibrillary tangles composed of hyperphosphorylated tau protein, which together drive progressive neuronal and synaptic loss (not taken from the course material). This amyloid-and-tau model is the core pathophysiological mechanism taught for Alzheimer\'s disease.\n\nOption a is wrong because increased serotonergic and gamma-aminobutyric acid activity does not describe Alzheimer\'s pathology; if anything, Alzheimer\'s disease is more classically linked to loss of cholinergic neurons and reduced acetylcholine activity, not increased serotonin or GABA signalling (not taken from the course material).\n\nOption b is wrong because increased hypothalamic-pituitary-adrenal axis activity is a feature discussed in mood and stress-related disorders such as depression, not the defining pathophysiology of Alzheimer\'s disease (not taken from the course material).\n\nOption c is wrong because, although neuroinflammation and cytokine release can accompany Alzheimer\'s disease, cytokine synthesis is a secondary/contributory process rather than the main pathophysiological mechanism taught for the disease; amyloid and tau pathology are the defining processes (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Alzheimer\'s disease pathophysiology is defined by amyloid deposition and tau-related neurodegeneration.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q8, p.2022 (answer p.2023)'
+},
+
+{ id:'npep-fe5-9', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'A patient presented with acute onset aphasia and severe right sided hemiparesis which started on 10:30 am during breakfast. The patient presented to the ER at 04:30 pm. Blood pressure was 150/90 mmHg. CT brain showed normal findings and CT angiography showed occlusion of the left middle cerebral artery. What is the best next step in the management?',
+  options:['intravenous thrombolysis combined with mechanical thrombectomy', 'Decompressive craniectomy and surgical removal of the clot', 'Intravenous heparin infusion', 'Mechanical thrombectomy.'],
+  answer:3,
+  explanation:'The printed key is option d, “Mechanical thrombectomy.” The stroke began at 10:30 am and the patient reached the ER at 04:30 pm, a symptom-to-presentation interval of six hours. Standard intravenous thrombolysis windows are generally taught as up to 4.5 hours from clearly known symptom onset, so this patient falls outside the window for intravenous thrombolysis (not taken from the course material). Mechanical thrombectomy for large-vessel occlusions such as this proximal left middle cerebral artery occlusion has a substantially longer treatment window — up to roughly 6-24 hours in appropriately selected patients — so thrombectomy remains an appropriate next step even though thrombolysis is no longer an option (not taken from the course material). The normal non-contrast CT brain excludes haemorrhage and shows no established large infarct, supporting a patient who can still benefit from endovascular clot retrieval.\n\nOption a is wrong because it requires intravenous thrombolysis, and this patient already presented beyond the standard thrombolysis window (not taken from the course material).\n\nOption b is wrong because decompressive craniectomy is a treatment for malignant, life-threatening cerebral oedema/mass effect after a completed large infarct, not the immediate next step for a patient who still has a salvageable large-vessel occlusion and normal CT brain (not taken from the course material).\n\nOption c is wrong because intravenous heparin is not standard acute management of an ischaemic stroke from large-vessel occlusion and does not address the mechanical clot causing the occlusion (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'A large-vessel ischaemic stroke presenting outside the thrombolysis window but within the endovascular window is managed with mechanical thrombectomy.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q9, p.2024 (answer p.2025)'
+},
+
+{ id:'npep-fe5-11', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:'Which urinary symptom is considered due to neurogenic cause?',
+  options:['Stress incontinence', 'Frequent micturition', 'Overflow incontinence.', 'Hesitancy'],
+  answer:2,
+  explanation:'The printed key is option c, “Overflow incontinence.” Overflow incontinence results from a bladder that cannot empty properly and becomes overdistended, classically from a lower motor neuron/neurogenic lesion causing an atonic, areflexic detrusor muscle — as seen with cauda equina or conus medullaris lesions — so urine leaks passively once the bladder is overfull (not taken from the course material). This mechanism is specifically neurogenic, unlike the other listed symptoms.\n\nOption a is wrong because stress incontinence is typically due to weakness of the pelvic floor/urethral sphincter mechanism, a structural/mechanical problem rather than a primary neurogenic one (not taken from the course material).\n\nOption b is wrong because frequent micturition (urinary frequency) has many non-neurogenic causes, such as urinary tract infection, diabetes, or an overactive bladder from local bladder pathology, and is not specific to a neurogenic cause (not taken from the course material).\n\nOption d is wrong because hesitancy can occur with non-neurogenic outflow obstruction, such as prostatic enlargement, as well as with neurogenic disease, so it is not the symptom singled out here as specifically neurogenic (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Overflow incontinence from an atonic, areflexic bladder is the urinary symptom specifically attributed to a neurogenic cause.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q11, p.2028 (answer p.2029)'
+},
+
+{ id:'npep-fe5-17', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'A 58-year-old male patient presented to BR with aneurysmal rupture. Coiling of the aneurysm was done, but the patient was comatosed for 10 days. Respiratory distress and tense lower limb edema were observed. What is the recommended investigation?',
+  options:['CT brain', 'ECG', 'Echo', 'Doppler study of lower limb veins'],
+  answer:3,
+  explanation:'The printed key is Doppler study of lower limb veins. Ten days of coma after aneurysm coiling means prolonged immobilisation, which is a major risk factor for deep vein thrombosis; new tense lower limb edema together with respiratory distress raises concern for DVT with possible pulmonary embolism, and Doppler ultrasound of the lower limb veins is the direct investigation used to confirm or exclude DVT (not taken from the course material).\n\nCT brain is wrong because the aneurysm has already been secured by coiling, and the new findings described (respiratory distress, tense limb edema) are not neurological symptoms that a repeat CT brain would be expected to explain (not taken from the course material). ECG is wrong because, while it has a role in general cardiac and PE work-up, it is not the targeted test for tense unilateral or bilateral lower limb edema (not taken from the course material). Echo is wrong because it assesses cardiac structure and function or looks for an embolic source, but it does not directly investigate the swollen limb itself the way Doppler venous ultrasound does (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Prolonged immobilisation after aneurysm treatment raises the risk of DVT; tense limb edema with respiratory distress should prompt a Doppler study of the lower limb veins.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q17, p.2040 (answer p.2041)'
+},
+
+{ id:'npep-fe5-23', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:"Which of the following is a sign of C7-T1 disc prolapse?",
+  options:["Positive Hoffman's sign", 'Weak finger flexors', 'Impaired sensation of the thumb', 'Dampened biceps reflex'],
+  answer:1,
+  explanation:"The printed key is Weak finger flexors. A C7-T1 disc prolapse compresses the exiting C8 nerve root. C8 supplies the long finger flexors and the intrinsic hand muscles, so its compression characteristically produces weak finger flexors and grip weakness (not taken from the course material).\n\nImpaired sensation of the thumb is wrong because thumb sensation is carried mainly by the C6 dermatome, not C8, so it does not fit a C7-T1 level lesion (not taken from the course material). Dampened biceps reflex is wrong because the biceps reflex tests the C5-C6 myotome, which is unrelated to a C8 root lesion at C7-T1 (not taken from the course material). Positive Hoffman's sign is wrong because it is an upper motor neuron (pyramidal) sign that indicates cervical cord compression/myelopathy from the corticospinal tract, not a lower motor neuron finding produced by a single nerve-root level disc prolapse (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.",
+  objective:'A C7-T1 disc prolapse compresses the C8 root and characteristically weakens the finger flexors.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q23, p.2052 (answer p.2053)'
+},
+
+{ id:'npep-fe5-28', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'What is the most common brain tumor in pediatrics?',
+  options:['Meningioma', 'Craniopharyngioma.', 'Hemangioblastoma', 'hemangiopericytoma'],
+  answer:1,
+  explanation:'The printed key is option b, Craniopharyngioma. Craniopharyngioma is a benign, slow-growing tumour arising from remnants of Rathke’s pouch epithelium in the suprasellar region, and it is a classic paediatric intracranial tumour, often presenting with visual field defects, growth failure, and endocrine disturbance from its proximity to the optic chiasm, pituitary, and hypothalamus (not taken from the course material).\n\nNote: many curricula instead teach pilocytic astrocytoma as the single most common paediatric brain tumour overall, with craniopharyngioma more specifically taught as the most common suprasellar/non-glial tumour of childhood. The bank’s printed and highlighted key is followed as marked (not taken from the course material).\n\nMeningioma is wrong because it is a tumour of meningothelial cells that is characteristically a disease of adulthood and is rare in the paediatric age group (not taken from the course material). Hemangioblastoma is wrong because it is a vascular tumour, classically of the cerebellum and associated with von Hippel-Lindau disease, that is more typical of adults and is not the standard answer for the commonest paediatric brain tumour (not taken from the course material). Hemangiopericytoma is wrong because it is a rare, aggressive mesenchymal tumour that occurs predominantly in adults and is not a standard paediatric brain tumour (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Craniopharyngioma is a classic suprasellar paediatric brain tumour arising from Rathke’s pouch remnants.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q28, p.2056 (answer p.2057)'
+},
+
+{ id:'npep-fe5-29', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'Which nerve can be used as a graft?',
+  options:['Sural nerve', 'Lateral femoral cutaneous nerve', 'Posterior interosseous nerve', 'Anterior interosseous'],
+  answer:0,
+  explanation:'The printed key is option a, Sural nerve. The sural nerve is a purely sensory nerve running in the posterior calf that is the classic donor nerve for peripheral nerve grafting, because it is expendable (its sensory loss over the lateral foot is well tolerated), superficial and easily accessible, and long enough to bridge sizeable nerve gaps (not taken from the course material).\n\nLateral femoral cutaneous nerve is wrong because, although it is also a purely sensory nerve, it is not the classic graft donor; it is more often discussed in the context of meralgia paraesthetica than as a harvested graft (not taken from the course material). Posterior interosseous nerve is wrong because it is a deep motor branch of the radial nerve supplying the forearm extensors; sacrificing a motor nerve for grafting would create a significant donor deficit, and it is not the standard graft source (not taken from the course material). Anterior interosseous is wrong for the same reason: it is a motor branch of the median nerve supplying deep forearm flexors, not a disposable sensory nerve suited to grafting (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'The sural nerve is the classic donor nerve used for peripheral nerve grafting.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q29, p.2059 (answer p.2060)'
+},
+
+{ id:'npep-fe5-35', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'A male child presented to the R with recurrent its. He had a history of hydrocephalous and ventriculo-atrial shunt insertion. Examination revealed temperature 37.2 degrees, normal funds and functioning Pudenz valve. What is the most appropriate treatment?',
+  options:['endoscopic third ventriculostomy', 'shunt revision', 'Antiepileptics prescription', 'shunt removal'],
+  answer:2,
+  explanation:'The printed key is option c, Antiepileptics prescription. On examination the Pudenz valve (his ventriculo-atrial shunt) is described as functioning, fundoscopy is normal (no papilloedema, i.e. no evidence of raised intracranial pressure), and his temperature is essentially normal — together these argue against shunt malfunction or shunt infection as the cause of his recurrent fits. Because the hardware itself is working and there is no sign of raised intracranial pressure or infection, the recurrent seizures are managed as seizures in their own right, with antiepileptic medication, rather than by intervening on a shunt that is functioning normally (not taken from the course material).\n\nEndoscopic third ventriculostomy is wrong because it is an alternative primary procedure for diverting CSF in selected forms of hydrocephalus; it is not indicated here since his existing shunt is already functioning and there is no evidence it has failed (not taken from the course material). Shunt revision is wrong because revision is indicated when the shunt is malfunctioning, typically signalled by raised-pressure features such as papilloedema, which are absent here (not taken from the course material). Shunt removal is wrong because it is considered for shunt infection or when the shunt is no longer needed, neither of which is supported by his normal temperature and functioning valve (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Recurrent seizures with a normal fundus, normal temperature, and a functioning shunt valve are treated as seizures, not as shunt malfunction.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q35, p.2071 (answer p.2072)'
+},
+
+{ id:'npep-fe5-36', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'The patient in the previous question refused intervention and after 24 hours became comatose. A follow-up CT brain shows a malignant infarction with midline shift. What is the appropriate treatment?',
+  options:['Therapeutic heparin', 'Excision of necrotic brain tissue', 'Decompressive craniotomy', 'Physiotherapy'],
+  answer:2,
+  explanation:'The printed key is option c, Decompressive craniotomy. A malignant infarction causing coma and midline shift reflects life-threatening cerebral oedema with impending or ongoing herniation. Decompressive craniotomy (hemicraniectomy) is the established emergency surgical intervention for malignant infarction with significant mass effect, removing a portion of the skull to give the swollen brain room to expand and relieve intracranial pressure, which has been shown to reduce mortality in this setting (not taken from the course material).\n\nTherapeutic heparin is wrong because full anticoagulation is not indicated in an acute large-territory infarct with mass effect, where it would raise the risk of haemorrhagic transformation, and it does nothing to relieve herniation. Excision of necrotic brain tissue is wrong because the standard surgical approach to malignant infarction is decompression by bone removal, not resection of the infarcted tissue itself. Physiotherapy is wrong because it is a supportive rehabilitation measure, not an emergency treatment for life-threatening raised intracranial pressure and mass effect (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Decompressive craniotomy is the emergency treatment for malignant infarction causing coma and midline shift.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q36, p.2073 (answer p.2074)'
+},
+
+{ id:'npep-fe5-37', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'A 35-year-old patient experienced head injury that was managed conservatively over 3 weeks. The CT brain showed frontal contusion with brain herniation. The patient has no localizing signs and no lateralization. What is most probably the type of this herniation?',
+  options:['Tonsillar', 'Sub-falcine.', 'Uncal', 'Central'],
+  answer:1,
+  explanation:'The printed key is Sub-falcine herniation. Subfalcine (cingulate) herniation occurs when a hemispheric mass lesion pushes the cingulate gyrus under the free edge of the falx cerebri, and it is the most common type of brain herniation; early on it characteristically produces few or no clear localising or lateralising signs, which fits this patient’s CT evidence of herniation despite a normal focal examination (not taken from the course material).\n\nTonsillar herniation is wrong because it describes downward displacement of the cerebellar tonsils through the foramen magnum, which typically produces brainstem compression and respiratory compromise rather than a silent presentation, and is more a feature of posterior-fossa or diffusely raised pressure than an isolated frontal contusion. Uncal herniation is wrong because medial temporal lobe (uncus) herniation through the tentorial notch classically produces an early ipsilateral third-nerve palsy with a dilated pupil, a lateralising sign that contradicts the stem’s “no lateralization.” Central (transtentorial) herniation is wrong because it describes downward displacement of the diencephalon through the tentorial notch, more typically from diffuse or bilateral pathology, producing a progressive rostral-caudal deterioration rather than the picture described with a focal frontal contusion (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'A hemispheric mass lesion with no localizing or lateralizing signs points to sub-falcine (cingulate) herniation, the most common herniation type.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q37, p.2075 (answer p.2076)'
+},
+
+{ id:'npep-fe5-45', bank:'endpoint', module:'neuropsych', chapter:'ps-mood',
+  stem:'In the previous case how could the recent manifestation of this patient be managed?',
+  options:['Increase the dose of the initial drug', 'Refer the patient for receiving psychotherapy', 'Order magnetic resonance imaging', 'Order nerve conduction study'],
+  answer:2,
+  explanation:'The printed key is option C, "Order magnetic resonance imaging." The recent manifestation in the previous case is the patient\'s new headache together with the intracranial mass lesion demonstrated on CECT. Once a structural lesion has been identified, further characterization with MRI, which offers superior soft-tissue resolution and lesion delineation compared with CT, is the appropriate next step to define the lesion and guide further management, such as neurosurgical referral (not taken from the course material).\n\nIncrease the dose of the initial drug is wrong because simply escalating the antidepressant dose does not address the newly identified structural intracranial pathology, and his headache and imaging findings need dedicated neurological work-up rather than further psychiatric dose adjustment (not taken from the course material).\n\nRefer the patient for receiving psychotherapy is wrong for the same reason: psychotherapy addresses the psychiatric symptom complex but does not investigate or manage a demonstrated intracranial mass (not taken from the course material).\n\nOrder nerve conduction study is wrong because nerve conduction studies assess peripheral nerve function and are not relevant to evaluating an intracranial space-occupying lesion (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Once an intracranial mass lesion is found on CT, the next step is MRI to further characterize it, not escalating psychiatric treatment.',
+  source:'Neuro endpoint.pdf, Model Final Exam 5, Q45, p.2093 (answer p.2094)'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Model Final Exam 4: originally 71 rows built by tools/bank-harness/npep-build.mjs.
+ * Closed 2026-09-22 by Claude subagent (gateway down, ROUTE-OK per project CLAUDE.md §8). 29 rows dropped
+ * as same-bank/cross-chapter duplicates already live in the corpus (citations appended to survivors, no
+ * alsoIn needed — all folds are endpoint-to-endpoint). Two book-defect id collisions (the exam misprints
+ * Q14 and Q45 twice each, for two different questions) resolved with -b suffixes on the second occurrence.
+ * Two unnumbered tail rows (pairN 69-70): the SSRI-discontinuation repeat (69) folded into npep-emerg-5
+ * alongside its own Q25 printing; the conversion/hysteria question (70) kept live, renumbered npep-fe4-66
+ * to continue the sequence after Q65 since the exam prints no number for it. 42 rows spliced live.
+ */
+
+{ id:'npep-fe4-2', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'What is the feasible treatment of giant basilar artery aneurysm?',
+  options:['Trimming', 'Fenestration', 'Clipping.', 'Endovascular flow diverting stent'],
+  answer:3,
+  explanation:'The keyed answer is Endovascular flow diverting stent. Flow diversion is an endovascular technique in which a densely braided stent is placed across the aneurysm neck, redirecting blood flow along the parent artery and promoting gradual thrombosis within the aneurysm while preserving the reconstructed vessel lumen (not taken from the course material). It may offer a feasible reconstructive option for selected giant basilar artery aneurysms, whose size, location, broad neck, and relation to perforating branches can make direct surgery difficult (not taken from the course material).\n\nTrimming is not a standard aneurysm treatment term in this context. Surgical management is generally described as clipping, trapping, bypass, or other microsurgical reconstruction rather than trimming (not taken from the course material).\n\nFenestration refers to creating an opening, such as in a surgical technique or a fenestrated clip configuration, but it is not by itself the feasible definitive treatment named for a giant basilar artery aneurysm in this question (not taken from the course material).\n\nClipping can be an effective treatment for some intracranial aneurysms, but giant basilar aneurysms are often technically challenging for direct clipping because of their deep location and nearby brainstem perforators and cranial nerves (not taken from the course material). Therefore, the bank identifies endovascular flow diversion as the intended feasible treatment. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify the feasible treatment listed for a giant basilar artery aneurysm.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q2, p.1857 (answer p.1858)'
+},
+
+{ id:'npep-fe4-3', bank:'endpoint', module:'neuropsych', chapter:'nr-neckpain',
+  stem:'A 22-year-old patient presents to the clinic with acute lancinating pain in the lateral arm, particularly on moving his neck , coughing , or sneezing. His triceps reflex is absent, and the sensations over the lateral arm are impaired. What is the most likely diagnosis of his condition?',
+  options:['post-herpetic neuralgia', 'Radial nerve palsy', 'Cervical disc prolapse.', 'Transverse myelitis'],
+  answer:2,
+  explanation:'Cervical disc prolapse is the printed answer. The acute lancinating arm pain worsened by neck movement, coughing, and sneezing is consistent with cervical nerve-root irritation, because these maneuvers can increase pressure around an affected cervical disc and root (not taken from the course material). An absent triceps reflex supports involvement of the C7 root, which contributes to the triceps reflex (not taken from the course material). Sensory impairment in the arm also supports a radicular process rather than isolated pain alone (not taken from the course material).\n\nPost-herpetic neuralgia is pain persisting after herpes zoster, usually in the distribution of a prior rash; the question gives no preceding rash or dermatomal shingles history. Radial nerve palsy can affect triceps function and sensory territory, but it more typically produces weakness such as wrist drop and is not characteristically provoked by neck movement, coughing, or sneezing (not taken from the course material). Transverse myelitis is an inflammatory spinal-cord syndrome that usually causes bilateral or more extensive motor, sensory, and autonomic deficits below a spinal level, rather than a focal painful cervical radiculopathy with a selectively absent triceps reflex (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify cervical disc prolapse causing cervical radiculopathy from neck-provoked arm pain, sensory loss, and absent triceps reflex.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q3, p.1859 (answer p.1860)'
+},
+
+{ id:'npep-fe4-5', bank:'endpoint', module:'neuropsych', chapter:'nr-intro',
+  stem:'A 41-year-old worker lost consciousness after falling from scaffolding at work. He has regained consciousness by the time he arrived to ER. Examination revealed scalp wound over defect in the forehead. The CT scan showed frontal depressed fracture. What is the most appropriate treatment of this patient ?',
+  options:['Elevation of the depressed fracture', 'Plastic repair', 'Dressing with broad spectrum antibiotics', 'cleaning and direct suturing of scalp wound'],
+  answer:0,
+  explanation:'The keyed answer is elevation of the depressed fracture. This patient has a frontal depressed skull fracture associated with a scalp wound over the defect, indicating an open depressed fracture. Operative elevation, with wound exploration and debridement as appropriate, is generally indicated to address depression of the skull and reduce risks related to contamination, dural injury, and underlying brain injury. (not taken from the course material)\n\nPlastic repair is not the primary immediate treatment for the described injury. Reconstruction may be considered when required after management of the fracture and associated soft-tissue injury, but it does not replace elevation of a depressed fracture. (not taken from the course material)\n\nDressing with broad spectrum antibiotics alone is insufficient. Antibiotics may be used as an adjunct in an open cranial injury, but they do not correct the bony depression or provide definitive management of the fracture. (not taken from the course material)\n\nCleaning and direct suturing of the scalp wound alone is also inappropriate because it would treat only the superficial wound while leaving the depressed skull fracture unaddressed. The wound and fracture require assessment and operative management rather than simple closure alone. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Open depressed skull fracture is treated by elevation of the depressed fracture.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q5, p.1863 (answer p.1864). Also printed as Model Final Exam 6, Q42, p.2179 (answer p.2180), options reordered, same key.'
+},
+
+{ id:'npep-fe4-6', bank:'endpoint', module:'neuropsych', chapter:'nr-para',
+  stem:'The caregiver of A 60-year-old woman complained that she urinate on herself. She walks in an abnormal fashion with frequent falling , cannot recognize her older son. The examination reveals normal fundus. Her lumbar cerebrospinal opening pressure was 15 cm H2O. MRI brain show pan ventricular dilation . What is most likely diagnosis?',
+  options:['Idiopathic intracranial hypertension', 'Normal pressure hydrocephalus.', 'Hydrocephalus ex vacuo', 'Aqueductal stenosis'],
+  answer:1,
+  explanation:'3) Normal pressure hydrocephalus\nThis type occurs in elderly patients.\nIt is manifested by triad of: I- dementia, II- gait disturbance & III- urinary incontinence',
+  objective:'Recognize normal pressure hydrocephalus from its triad of gait disturbance, dementia, and urinary incontinence.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q6, p.1865 (answer p.1866). Also printed as Model Final Exam 6, Q40, p.2175 (answer p.2176), options reordered, same key.'
+},
+
+{ id:'npep-fe4-9', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'What is the pathology associated with the occurrence of upper motor neurons facial palsy?',
+  options:['Pontine tumors', 'Acoustic schwannoma', 'Frontal tumors.'],
+  answer:2,
+  explanation:'Frontal tumors are the keyed option because an upper motor neuron facial palsy results from a lesion above the facial nucleus, involving corticobulbar fibres. These fibres descend from the motor cortex through the cerebral hemispheres toward the brainstem. A frontal lesion can therefore produce weakness of the contralateral lower face, while forehead movements are relatively spared because the upper facial muscles receive bilateral cortical innervation (not taken from the course material).\n\nPontine tumors are not the expected answer because a lesion in the pons may involve the facial nucleus or the exiting facial nerve fascicles. This would cause a lower motor neuron facial palsy, with weakness of both the upper and lower facial muscles on the affected side (not taken from the course material).\n\nAcoustic schwannoma is also not the expected answer. It usually arises from the vestibular division of cranial nerve VIII at the cerebellopontine angle and commonly presents with progressive unilateral sensorineural hearing loss, tinnitus, or imbalance (not taken from the course material). If sufficiently large, it may compress nearby cranial nerves, including the facial nerve, but this would produce a peripheral, lower motor neuron pattern of facial weakness rather than an upper motor neuron facial palsy (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'An upper motor neuron facial palsy is associated with a frontal tumor.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q9, p.1871 (answer p.1872)'
+},
+
+{ id:'npep-fe4-12', bank:'endpoint', module:'neuropsych', chapter:'nr-para',
+  stem:'What is the most appropriate investigation for a patient with gradual progressive paraparesis and sensory level at the umbilicus?',
+  options:['MRI brain', 'CT whole spine', 'MRI lumbosacral spine.', 'MRI dorsal spine'],
+  answer:3,
+  explanation:'MRI dorsal spine is the appropriate investigation because gradual progressive paraparesis with a sensory level at the umbilicus localizes to the thoracic spinal cord. The umbilical sensory level corresponds approximately to T10 (not taken from the course material), so MRI of the dorsal spine can identify cord compression, an intramedullary lesion, demyelination, tumour, or other structural pathology at the relevant level (not taken from the course material). MRI provides the best soft-tissue and spinal-cord detail for this clinical syndrome (not taken from the course material).\n\nMRI brain is wrong because a brain lesion may cause bilateral weakness, but it would not usually produce a clear truncal sensory level at the umbilicus; that pattern suggests a spinal cord lesion (not taken from the course material). CT whole spine is wrong because CT is less suitable than MRI for assessment of the spinal cord and many soft-tissue causes of progressive myelopathy (not taken from the course material), although it may be useful when MRI is unavailable or contraindicated. MRI lumbosacral spine is wrong because a lesion in the lumbosacral region would not account for a sensory level at the umbilicus; the relevant level is higher, in the thoracic region (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'A sensory level at the umbilicus with progressive paraparesis requires MRI of the dorsal spine.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q12, p.1877 (answer p.1878)'
+},
+
+{ id:'npep-fe4-14', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What is the autonomous skin zone of the radial nerve ?',
+  options:['Dorsal aspect of the wrist', 'It is a dormitory web space.', 'Ring finger', '4th dorsal web space'],
+  answer:0,
+  explanation:'The keyed answer is “Dorsal aspect of the wrist.” The radial nerve supplies sensation to part of the dorsolateral hand and wrist through its superficial branch. The bank identifies the dorsal aspect of the wrist as its autonomous skin zone, meaning the area used clinically to assess radial sensory function with relatively little overlap from neighbouring nerves. (not taken from the course material)\n\nOption b), “It is a dormitory web space.”, is not the radial nerve autonomous zone as printed. The usual anatomical term is the first dorsal web space, between the thumb and index finger, which is commonly taught as the autonomous sensory area of the superficial radial nerve; however, this bank prints “dormitory web space” and keys option a). (not taken from the course material)\n\nOption c), “Ring finger,” is wrong because sensory supply to the ring finger is shared mainly between the median and ulnar nerves, depending on the surface and side of the digit, rather than representing an isolated radial nerve autonomous area. (not taken from the course material)\n\nOption d), “4th dorsal web space,” is wrong because this area is associated with ulnar-side digital sensory territories and is not the characteristic isolated test area for radial nerve sensation. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify the autonomous skin zone of the radial nerve.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q14, p.1881 (answer p.1882). The exam misprints this question\'s number as 14, duplicating another Q14 in the same exam (see npep-fe4-14b).'
+},
+
+{ id:'npep-fe4-14b', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'A 20-year-old woman is brought to the emergency room by her family because they have been unable to get her to eat or drink anything the past 2 days, although being awake ,she is completely unresponsive both vocally and verbally . She actively resists any attempt to be moved. Her family reports that during the previous 7 months, she became increasingly withdrawn , socially isolated and bizarre. She often speaks to people ,no one else could see . What is the most likely diagnosis of this woman?',
+  options:['Delusional disorder', 'Catatonia', 'Schizoaffective disorder', 'schizophrenoform disorder'],
+  answer:1,
+  explanation:'The printed key is Catatonia. The acute presentation is characterized by wakefulness with complete unresponsiveness, refusal to eat or drink, and active resistance to movement. These are compatible with catatonic features, including mutism, negativism, and withdrawal. Catatonia can occur in association with schizophrenia and other psychiatric or medical conditions (not taken from the course material). The preceding seven months of social withdrawal, bizarre behaviour, and apparent hallucinations suggest an underlying psychotic illness, but the immediate syndrome being tested is catatonia.\n\nDelusional disorder is wrong because it is defined by persistent delusions with relatively preserved functioning and without the marked disorganization, hallucination-like behaviour, and catatonic syndrome shown here (not taken from the course material). Schizoaffective disorder is wrong because the stem provides no sustained mood episode occurring with the psychotic illness, which is required for that diagnosis (not taken from the course material). Schizophrenoform disorder is wrong because it describes a schizophrenia-like psychotic disorder lasting from one to six months; the reported disturbance has lasted seven months, and it also does not name the acute motor-behavioural syndrome displayed at presentation (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize catatonia from mutism, negativism, immobility or resistance, and refusal of intake in a patient with psychotic symptoms.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q14, p.1883 (answer p.1884). The exam misprints this question\'s number as 14, duplicating another Q14 in the same exam (see npep-fe4-14).'
+},
+
+{ id:'npep-fe4-16', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'A 40-year-old woman comes into the physician\'s office with a 20 - year history of headache nearly every day. She states that it associated with some nausea. Acetaminophen is the past 3 months, not as effective. The patient states that her doctors in the past have performed history and Physical examinations and have found no problems. The neurologic examinations is normal . Which of the following the best next step?',
+  options:['Initiate beta-blocker', 'Substitute aspirin for acetaminophen', 'CT brain.', 'Psychiatric evaluation'],
+  answer:2,
+  explanation:'The printed key selects CT brain. This patient has chronic daily headache with nausea and reports that acetaminophen has become less effective. Although her neurologic examination is normal and previous evaluations reportedly found no problem, the change in the effectiveness of her usual treatment and the persistent near-daily headaches warrant reassessment for a secondary intracranial cause. Neuroimaging with CT is the bank’s next diagnostic step before assigning a primary headache diagnosis or changing long-term treatment. (not taken from the course material)\n\nInitiating a beta-blocker would be a preventive option for selected primary headache disorders, especially migraine, but it presumes that an appropriate diagnosis has already been established and that concerning secondary causes do not need further evaluation. (not taken from the course material) Substituting aspirin for acetaminophen simply changes symptomatic analgesia; it does not investigate the persistent pattern or a possible change in headache characteristics, and frequent analgesic use can contribute to medication-overuse headache. (not taken from the course material) Psychiatric evaluation is not the best immediate step solely because examinations have previously been normal. Psychological factors may coexist with chronic headache, but they should not be used to dismiss persistent symptoms before an appropriate clinical reassessment. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Persistent chronic headache with a change in symptom control and a normal neurologic examination is tested as an indication for CT brain in this bank.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q16, p.1888 (answer p.1889)'
+},
+
+{ id:'npep-fe4-17', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
+  stem:'What differentiates dementia from delirium?',
+  options:['Dementia develops over months to years, while delirium develops in a few days.', 'Dementia makes engaging patients\' attention difficult, while delirious patients are alert in early stages.', 'Dementia has a fluctuating course, while delirium has a progressive course.', 'Dementia symptoms are worse at night, while symptoms of delirium are the same all day.'],
+  answer:0,
+  explanation:'The keyed option is correct: dementia usually has an insidious onset and progresses over months to years, whereas delirium develops acutely, commonly over hours to days (not taken from the course material). This difference in time course is a central clinical distinction.\n\nOption b is wrong because impaired attention is characteristic of delirium, often occurring early and prominently; patients with early dementia may usually sustain attention better than patients with delirium (not taken from the course material). Option c reverses the usual patterns: delirium typically fluctuates during the day, while dementia generally has a gradual progressive course (not taken from the course material). Option d is also wrong because delirium may fluctuate and can worsen at night, while dementia symptoms can also be more apparent in the evening or at night; neither condition is reliably the same throughout the day (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Differentiate dementia from delirium by their usual onset and course.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q17, p.1890 (answer p.1891)'
+},
+
+{ id:'npep-fe4-19', bank:'endpoint', module:'neuropsych', chapter:'nr-intro',
+  stem:'A 30-year-old female patient presented with headache,remote memory loss and blurring of vision. Physical examination showed contralateral superior quadrantinopia and dysphasia . MRI showed space occupying lesion. What is the most propable location of this lesion ?',
+  options:['Non dominant frontal lobe', 'Dominant temporal lobe.', 'Non dominant occipital lobe', 'Dominant parietal lobe'],
+  answer:1,
+  explanation:'The keyed option is Dominant temporal lobe. A lesion in the dominant temporal lobe can account for dysphasia because the dominant temporal region contains language-related cortex, particularly the posterior superior temporal area involved in comprehension (not taken from the course material). It can also produce remote memory loss through involvement of temporal lobe memory structures, including the hippocampal region (not taken from the course material). Contralateral superior quadrantinopia is consistent with involvement of inferior optic radiations in the temporal lobe, classically called Meyer’s loop; damage here causes a contralateral superior visual-field quadrantanopia (not taken from the course material). Thus, the language, memory, and visual-field findings are brought together by a dominant temporal space-occupying lesion.\n\nNon dominant frontal lobe is wrong because a frontal lesion may cause behavioural, executive, or motor abnormalities, but it does not best explain dysphasia together with contralateral superior quadrantinopia and remote memory loss (not taken from the course material).\n\nNon dominant occipital lobe is wrong because occipital lesions may produce contralateral visual-field defects, but the non-dominant occipital lobe does not explain dysphasia or the temporal-pattern memory finding (not taken from the course material).\n\nDominant parietal lobe is wrong because dominant parietal lesions can cause language-related deficits, but optic-radiation involvement in the parietal lobe more typically produces a contralateral inferior quadrantanopia, rather than the superior quadrantinopia described here (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'The question tests localization of a dominant temporal lobe lesion from dysphasia, memory loss, and contralateral superior quadrantinopia.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q19, p.1894 (answer p.1895)'
+},
+
+{ id:'npep-fe4-20', bank:'endpoint', module:'neuropsych', chapter:'nr-intro',
+  stem:'What is the cranial deformity of lambdoid suture synostosis?',
+  options:['Posterior plagiocephaly.', 'Oxycephaly', 'Posterior Scaphocephaly', 'Posterior Trigonocephaly'],
+  answer:0,
+  explanation:'Types:\n1. Metopic Synostosis: There is ridging of the metopic suture with bilateral flattening of the frontal bones and anterior displacement of the coronal suture. The resultant deformity is termed “Trigonocephaly”.\n2. Sagittal Synostosis (most common): There is ridging of the fused sagittal suture with frontal & occipital bossing and flattening of parietal bones. The head is elongated antero-posteriorly. The deformity is termed “Scaphocephaly”.\n3. Unicoronal Synostosis: There is ridging of half of the coronal suture and flattening of the ipsilateral frontal and parietal bones. The orbit is deformed due to elevation of the sphenoid ridge and is commonly described as the “harlequin eye”. The deformity is termed “Anterior Plagiocephaly”.\n4. Bicoronal Synostosis: There is ridging of the coronal suture and flattening of the cranial portion of the frontal bones and supraorbital ridges. The skull is broad and short, with expansion in the lateral directions and bilateral harlequin configuration of the orbits. The deformity is termed “Brachycephaly”. It may be part of craniofacial syndromes “Apert syndrome”, “Crouzon syndrome”.\n5. Lambdoid Synostosis: There is ridging of the fused lambdoid suture with flattening of the parieto-occipital region ipsilateral to the fused suture. The deformity is termed “Posterior Plagiocephaly”.\n6. Pansynostosis (Craniosynostosis).',
+  objective:'Identify the cranial deformity associated with lambdoid suture synostosis.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q20, p.1897 (answer p.1898)'
+},
+
+{ id:'npep-fe4-21', bank:'endpoint', module:'neuropsych', chapter:'nr-intro',
+  stem:'What is the most common visual field defect in occipital tumors ?',
+  options:['Homonymous hemianopia.', 'Superior quadrantanopia', 'Inferior quadrantanopia', 'Bitemporal hemianopia'],
+  answer:0,
+  explanation:'Homonymous hemianopia is the printed answer. Occipital tumors involve the visual cortex, which receives and represents information from the contralateral visual hemifield after the optic pathways have crossed at the chiasm. A lesion affecting a sufficiently broad area of one occipital lobe therefore produces loss of the same side of the visual field in both eyes, termed homonymous hemianopia. Occipital cortical lesions may also show macular sparing, depending on lesion extent and blood supply. (not taken from the course material)\n\nSuperior quadrantanopia is wrong because it more typically results from a partial lesion of the inferior optic radiations, especially temporal-lobe Meyer loop fibers, rather than being the usual broad visual-field defect of an occipital tumor. (not taken from the course material)\n\nInferior quadrantanopia is wrong because it is associated with partial involvement of superior optic radiation fibers, commonly in the parietal region. A tumor limited to a corresponding portion of the occipital cortex can cause a quadrantic defect, but this is not the printed most common defect here. (not taken from the course material)\n\nBitemporal hemianopia is wrong because it localizes to compression or damage at the optic chiasm, where nasal retinal fibers decussate; this pattern is classically associated with a sellar or suprasellar lesion rather than an occipital tumor. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify the most common visual field defect associated with occipital tumors.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q21, p.1899 (answer p.1900)'
+},
+
+{ id:'npep-fe4-22', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'Which stage of migraine commonly has mood changes?',
+  options:['Aura of migraine', 'Pain phase of migraine', 'In-between attacks', 'Prodrome of migraine'],
+  answer:3,
+  explanation:'The prodrome phase\n\nHours or days before the headache (altered mood, irritability, depression or euphoria, fatigue, yawning, excessive sleepiness, craving for certain food (e.g., chocolate), stiff muscles especially in the neck), increase urination, diarrhea and constipation).',
+  objective:'Identify the migraine stage associated with mood changes.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q22, p.1902 (answer p.1903)'
+},
+
+{ id:'npep-fe4-23', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'A 58-year-old male patient presented to ER with sudden onset of headache and ophthalmoplegia.\nWhat is the most possible diagnosis?',
+  options:['Bacterial meningitis', 'Epidural hemorrhage', 'Aneurysmal rupture.', 'Attack of cluster headache'],
+  answer:2,
+  explanation:'Aneurysmal rupture is the keyed diagnosis. Sudden-onset severe headache is a classic presentation of rupture of an intracranial aneurysm, usually causing subarachnoid hemorrhage (not taken from the course material). Ophthalmoplegia can occur when an aneurysm, particularly near the posterior communicating artery, affects the third cranial nerve, or when hemorrhage and raised intracranial pressure affect ocular motor function (not taken from the course material). The combination of an abrupt headache and ophthalmoplegia therefore supports an aneurysmal event.\n\nBacterial meningitis is less likely because it more commonly presents with fever, neck stiffness, photophobia, altered mental state, and a more diffuse meningeal syndrome (not taken from the course material). Ophthalmoplegia is not the characteristic accompanying finding in the brief presentation given.\n\nEpidural hemorrhage usually follows head trauma and classically may include a lucid interval before neurological deterioration (not taken from the course material). The question gives neither trauma nor this typical pattern, and isolated sudden headache with ophthalmoplegia is not its usual presentation.\n\nAn attack of cluster headache can produce severe unilateral orbital or temporal pain with autonomic features such as lacrimation, conjunctival injection, or nasal congestion (not taken from the course material). It does not ordinarily cause a persistent ophthalmoplegia; an ocular motor palsy should instead raise concern for a structural vascular cause (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize aneurysmal rupture as the likely cause of sudden headache with ophthalmoplegia.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q23, p.1904 (answer p.1905)'
+},
+
+{ id:'npep-fe4-24', bank:'endpoint', module:'neuropsych', chapter:'ps-anxiety',
+  stem:'What is the common manifestation that can be found in both generalized anxiety disorder and major depressive disorder?',
+  options:['Insomnia', 'Absent insight.', 'Delusions of grandiosity.', 'Anhedonia.'],
+  answer:0,
+  explanation:'Insomnia is the keyed answer because disturbed sleep can occur in both generalized anxiety disorder and major depressive disorder. In generalized anxiety disorder, persistent excessive worry and autonomic arousal may make it difficult to fall asleep, stay asleep, or obtain restful sleep. In major depressive disorder, sleep disturbance is a common associated symptom and may present as insomnia, including early-morning waking, although hypersomnia can also occur. (not taken from the course material)\n\nAbsent insight is not the best answer. People with generalized anxiety disorder and major depressive disorder commonly recognize that they are distressed or unwell, even if insight can vary between individuals. Markedly absent insight is more characteristic of some psychotic disorders or severe mood episodes with psychotic features. (not taken from the course material)\n\nDelusions of grandiosity are not a usual manifestation of either generalized anxiety disorder or uncomplicated major depressive disorder. Grandiose delusions are more typically associated with mania, particularly severe manic episodes with psychotic features. (not taken from the course material)\n\nAnhedonia is a core symptom of major depressive disorder, defined as diminished interest or pleasure. However, it is not a defining common manifestation of generalized anxiety disorder; anxiety may reduce enjoyment secondarily, but this does not make anhedonia the shared characteristic tested here. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify insomnia as a manifestation shared by generalized anxiety disorder and major depressive disorder.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q24, p.1906 (answer p.1907)'
+},
+
+{ id:'npep-fe4-27', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'A 33-years-old female patient presented with persistent bilateral frontal headache and sense of tightening of her scalp. The pain triggered with stress and fatigue and lack of sleep. The headache sometimes was referred to the neck with sense of fullness or band like and continued throughout the day for several days per months What is the probable diagnosis of this patient?',
+  options:['Cluster headache', 'Headache due to sinusitis', 'Migraine', 'tension headache'],
+  answer:3,
+  explanation:'The printed key is tension headache. The stem describes a persistent bilateral frontal headache with a tightening sensation of the scalp, a band-like or fullness sensation, referral to the neck, and association with stress, fatigue, and lack of sleep. These are typical features of tension-type headache. (not taken from the course material) Tension-type headache is commonly bilateral, pressing or tightening rather than pulsatile, and is often associated with emotional stress, fatigue, and poor sleep. (not taken from the course material) It may last for hours to days and may recur over months. (not taken from the course material)\n\nCluster headache is not the best answer because it is generally characterized by severe unilateral orbital, supraorbital, or temporal pain with ipsilateral autonomic symptoms such as lacrimation or nasal congestion. (not taken from the course material) The bilateral frontal band-like pattern and scalp tightening in this stem do not fit that pattern.\n\nHeadache due to sinusitis is less likely because sinus-related headache is usually associated with sinonasal symptoms, such as purulent nasal discharge, nasal obstruction, fever, or facial pain and pressure. (not taken from the course material) These features are not given.\n\nMigraine is less likely because migraine is commonly unilateral and pulsating and may be accompanied by nausea, vomiting, photophobia, or phonophobia. (not taken from the course material) The question instead emphasizes bilateral tightening pain and stress-related symptoms, supporting tension headache.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize tension headache from bilateral band-like headache associated with stress, fatigue, and lack of sleep.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q27, p.1912 (answer p.1913)'
+},
+
+{ id:'npep-fe4-28', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'Which of the following is caused by Manganese poisoning ?',
+  options:['Parkinsonism.', 'chorea', 'dystonia', 'Gilles de la Tourette syndrome'],
+  answer:0,
+  explanation:'Parkinsonism\nThis is a clinical entity characterized by a quadriad of: slowness of motor function\n(bradykinesia), tremors, rigidity and postural instability.\nEtiology/Causes:\n1) Idiopathic (Parkinson disease)\n2) Symptomatic\n    a. Atherosclerosis\n\n151 | Page\n\nb. Drugs (antipsychotics, reserpine)\nc. Toxic (Carbon monoxide, manganese)\nd. Traumatic (repeated head trauma)\ne. Post encephalitic (encephalitis lethargica)\nf. Metabolic (Wilson\'s disease; disorders of copper metabolism, early age,\nmental changes, corneal Kayser-Fleisher ring, dystonia, static and\nkinetic tremors)',
+  objective:'Manganese poisoning can cause parkinsonism.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q28, p.1915 (answer p.1916)'
+},
+
+{ id:'npep-fe4-30', bank:'endpoint', module:'neuropsych', chapter:'ps-psychosis',
+  stem:'What is the nature of hallucinations in schizophrenia?',
+  options:['Auditory, olfactory, and gust', 'Only Auditory', 'Only Olfactory', 'Only gustatory'],
+  answer:0,
+  explanation:'The printed key selects “Auditory, olfactory, and gust.” The answer-page note states: “NB: Most specific hallucinations in schizophrenia is auditory.” The option is therefore the bank’s intended answer because it includes auditory hallucinations while also listing olfactory and gustatory experiences.\n\nOption b, “Only Auditory,” is wrong for this bank because the highlighted answer lists additional sensory modalities. Auditory hallucinations are classically the most characteristic hallucinations in schizophrenia, but hallucinations are not restricted solely to hearing. (not taken from the course material)\n\nOption c, “Only Olfactory,” is wrong because it excludes auditory hallucinations, which the printed note identifies as the most specific type in schizophrenia. Olfactory hallucinations can occur in psychiatric and neurological conditions, but are not the defining hallucination type here. (not taken from the course material)\n\nOption d, “Only gustatory,” is likewise wrong because it excludes auditory hallucinations and does not match the highlighted multi-modality answer. Gustatory hallucinations may occur but are less typical than auditory hallucinations in schizophrenia. (not taken from the course material)\n\nThe word “gust” is retained exactly as printed in option a, although option d prints “gustatory.” Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Tests the sensory modalities of hallucinations described in schizophrenia.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q30, p.1919 (answer p.1920)'
+},
+
+{ id:'npep-fe4-32', bank:'endpoint', module:'neuropsych', chapter:'ps-ocd',
+  stem:'A 23-year-old male patient said to his psychiatrist that he had persisting ugly annoying thoughts running in his mind about ALLAH with more exaggerating during praying. He knew that they are irrational, but he couldn\'t stop them What thought the best treatment option to him?',
+  options:['Prescription of an antipsychotic drug', 'Electroconvulsive therapy', 'Psychotherapy', 'Prescription of a selective serotonin uptake inhibitor'],
+  answer:3,
+  explanation:'The bank keys prescription of a selective serotonin uptake inhibitor. The patient has recurrent intrusive, distressing thoughts that he recognizes as irrational but cannot suppress, which is characteristic of obsessive-compulsive disorder (not taken from the course material). First-line pharmacological treatment for obsessive-compulsive disorder commonly includes an SSRI, often at adequate therapeutic doses and for an adequate duration (not taken from the course material). The highlighted option therefore matches the printed key.\n\nPrescription of an antipsychotic drug is not the usual initial treatment for obsessive-compulsive disorder in the absence of psychosis (not taken from the course material). Antipsychotic augmentation can sometimes be considered when symptoms remain resistant to an adequate SSRI-based treatment, but this is not the primary option presented by the question (not taken from the course material).\n\nElectroconvulsive therapy is generally used for selected severe mood disorders, catatonia, or certain urgent psychiatric presentations, rather than as standard treatment for obsessive-compulsive disorder (not taken from the course material).\n\nPsychotherapy can be effective, particularly cognitive behavioural therapy with exposure and response prevention, and may be combined with medication (not taken from the course material). However, among these options, the bank specifically marks the SSRI prescription as the best treatment option. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize obsessive-compulsive disorder and its keyed treatment option, an SSRI.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q32, p.1923 (answer p.1924)'
+},
+
+{ id:'npep-fe4-33', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'A 35-year-old male patient presented with a history of recurrent episodes of neurological symptoms and oral and genital ulcers. What is the most common case of his condition?',
+  options:['Systemic lupus erythematosus', 'Multiple sclerosis', 'Bechet’s disease'],
+  answer:2,
+  explanation:'The keyed answer is Bechet’s disease. Recurrent oral and genital ulceration with episodic neurological manifestations is characteristic of Behçet disease, a multisystem inflammatory vasculitic disorder (not taken from the course material). Neurological involvement may occur through inflammatory disease affecting the central nervous system, producing recurrent neurological symptoms (not taken from the course material). The bank prints the condition as “Bechet’s disease,” and that spelling is retained here exactly as printed.\n\nSystemic lupus erythematosus is incorrect because it can cause neuropsychiatric or neurological manifestations, but recurrent combined oral and genital ulcers are not its defining typical pattern (not taken from the course material). Lupus may include oral ulcers, alongside systemic features such as rash, arthritis, renal disease, and autoantibodies, but the stem’s mucosal-ulcer pattern points elsewhere (not taken from the course material).\n\nMultiple sclerosis is incorrect because it commonly presents with episodes of neurological deficits disseminated in time and anatomical location, but it does not characteristically cause recurrent oral and genital ulcers (not taken from the course material). The mucosal ulcer history is therefore a key clue against multiple sclerosis.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize recurrent oral and genital ulcers with neurological episodes as the pattern keyed to Bechet’s disease.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q33, p.1925 (answer p.1926)'
+},
+
+{ id:'npep-fe4-36', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'A patient presented with acute onset dysarthria and mild left sided hemiparesis which started on 09:00 am during having breakfast. The patient presented to the ER at 02-00 pm. Blood pressure was 165/95 mmHg. CT brain and CT angiography showed normal findings. What is the best next step in the management?',
+  options:['Oral aspirin', 'Intravenous therapeutic heparin', 'Oral anticoagulant', 'Intravenous tissue plasminogen activator'],
+  answer:0,
+  explanation:'The printed key is Oral aspirin. The patient has an acute focal neurological deficit consistent with an acute ischaemic stroke syndrome, with no haemorrhage on CT brain and no large-vessel target demonstrated by CT angiography. Presentation at 02-00 pm after symptom onset at 09:00 am is approximately five hours later, which is outside the usual 4.5-hour intravenous thrombolysis window (not taken from the course material). Aspirin is therefore the appropriate listed immediate antiplatelet treatment once intracranial haemorrhage has been excluded (not taken from the course material).\n\nIntravenous therapeutic heparin is wrong because routine urgent full-dose anticoagulation after acute ischaemic stroke does not provide an overall benefit sufficient to outweigh bleeding risk (not taken from the course material). Oral anticoagulant is also wrong as an immediate general treatment choice; anticoagulation is selected later for specific cardioembolic indications, with timing based on infarct severity and bleeding risk (not taken from the course material). Intravenous tissue plasminogen activator is wrong in this question because the stated arrival time is beyond the conventional intravenous thrombolysis window, despite the blood pressure being below the usual treatment threshold of 185/110 mmHg (not taken from the course material). The normal CT excludes visible haemorrhage but does not itself establish eligibility for thrombolysis.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Tests immediate treatment selection for an acute ischaemic stroke presenting outside the intravenous thrombolysis window.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q36, p.1933 (answer p.1934)'
+},
+
+{ id:'npep-fe4-37', bank:'endpoint', module:'neuropsych', chapter:'nr-hemi',
+  stem:'A 23-year-old male presented to the emergency department with status epilepticus After motorcycle accident, The CT scan was unremarkable. The patient was managed effectively and discharged fully conscious. After 2 weeks he developed severe headache and hemiparesis. What is the most probable diagnosis?',
+  options:['Acute subdural hematoma', 'Subacute subdural hematoma.', 'Epidural hematoma', 'Chronic subdural hematoma'],
+  answer:1,
+  explanation:'The printed key is Subacute subdural hematoma. The delayed development of severe headache and hemiparesis two weeks after head trauma fits the subacute interval for a subdural collection. A subdural hematoma may initially be small or not evident on the first CT, then enlarge or become clinically apparent as blood products evolve and mass effect develops (not taken from the course material). The focal weakness suggests compression of the contralateral cerebral hemisphere, while headache is compatible with raised intracranial pressure from the expanding collection (not taken from the course material).\n\nAcute subdural hematoma is less suitable because it usually presents immediately or within the first few days after trauma, often with early reduced consciousness or neurological deterioration (not taken from the course material). Epidural hematoma classically follows arterial bleeding after trauma and tends to deteriorate rapidly, sometimes after a short lucid interval, rather than after two weeks (not taken from the course material). Chronic subdural hematoma more often becomes symptomatic after several weeks to months, particularly in older people or those with cerebral atrophy, although timing can vary (not taken from the course material). The question’s stated two-week delay therefore corresponds to the bank’s subacute classification. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify subacute subdural hematoma from delayed headache and hemiparesis after head trauma.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q37, p.1936 (answer p.1937)'
+},
+
+{ id:'npep-fe4-40', bank:'endpoint', module:'neuropsych', chapter:'ps-pharm',
+  stem:'What is the mechanism of action of antipsychotic drugs as phenothiazines?',
+  options:['Blocking neuronal dopamine receptors.', 'blocking neuronal sodium channels', 'Preventing neuronal re-uptake of Serotonin', 'Blocking neuronal calcium channels'],
+  answer:0,
+  explanation:'Phenothiazine antipsychotic drugs act principally by blocking dopamine receptors in the brain, especially D2 receptors in relevant dopaminergic pathways (not taken from the course material). This reduces excessive dopaminergic neurotransmission associated with psychotic symptoms, which is why “Blocking neuronal dopamine receptors.” is the keyed option.\n\nBlocking neuronal sodium channels is not the principal antipsychotic mechanism. Sodium-channel blockade is more characteristic of drugs used for local anaesthesia or some antiarrhythmic and antiseizure effects (not taken from the course material).\n\nPreventing neuronal re-uptake of Serotonin is not the usual mechanism of phenothiazines. Inhibition of serotonin re-uptake is the characteristic pharmacological action of selective serotonin reuptake inhibitors, used mainly as antidepressants (not taken from the course material). Some antipsychotics can have actions at serotonin receptors, but that is different from preventing serotonin re-uptake (not taken from the course material).\n\nBlocking neuronal calcium channels is also not the defining mechanism of phenothiazine antipsychotic action. Calcium-channel blockers are generally used for cardiovascular conditions and certain neurological indications depending on the agent (not taken from the course material). Therefore, the printed answer identifies dopamine-receptor blockade as the relevant mechanism.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Phenothiazine antipsychotics act by blocking neuronal dopamine receptors.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q40, p.1943 (answer p.1944)'
+},
+
+{ id:'npep-fe4-41', bank:'endpoint', module:'neuropsych', chapter:'ps-schizmgmt',
+  stem:'A 20-year-old student showed a rapid deterioration of his grades over a 3-month period. He became increasingly isolated, believing that the government was after him because he has solved all religious problems through direct communication with Allah. He was started on olanzapine 10 mg by mouth. He recovered after 4months but he had another relapse 6 months later in the absence of elevated, irritable, or depressed mood. What should be the management plan of this student?',
+  options:['A combination of family focused intervention and pharmacotherapy', 'Psychoeducation alone', 'Medication alone', 'a combination of psycho education, medication and family therapy'],
+  answer:3,
+  explanation:'The printed key selects a combination of psycho education, medication and family therapy. The vignette describes recurrent psychotic illness without an accompanying elevated, irritable, or depressed mood, which is consistent with a schizophrenia-spectrum management approach rather than a mood-disorder episode (not taken from the course material). Management commonly combines ongoing antipsychotic medication with psychosocial care, education about illness and relapse, and work with the family (not taken from the course material). This combined plan addresses symptom control, adherence, recognition of relapse, family support, and functional recovery (not taken from the course material).\n\nOption a includes family focused intervention and pharmacotherapy, so it provides important treatment elements; however, it does not explicitly include psycho education, which the printed answer includes as part of the full plan. Option b, psychoeducation alone, is inadequate because it does not provide antipsychotic treatment for recurrent psychosis (not taken from the course material). Option c, medication alone, may reduce psychotic symptoms but omits psychoeducation and family therapy, which can support adherence and relapse prevention (not taken from the course material). The absence of mood symptoms matters because it argues against framing the recurrent illness primarily as a mood episode requiring a mood-focused treatment plan (not taken from the course material). The bank therefore prints the broad combined intervention in option d rather than any single-component approach. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify the combined management plan printed for recurrent psychosis without mood symptoms.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q41, p.1945 (answer p.1946)'
+},
+
+{ id:'npep-fe4-43', bank:'endpoint', module:'neuropsych', chapter:'ps-geri',
+  stem:'What are the preventative measures that may delay the onset of Alzheimer\'s disease?',
+  options:['Physical activity', 'Cognitive stimulation', 'Physical activity, cognitive stimulation, proper diet.', 'Proper diet.'],
+  answer:2,
+  explanation:'The printed key is option c: physical activity, cognitive stimulation, and proper diet. These measures are grouped because delaying cognitive decline is approached through several modifiable lifestyle factors rather than relying on one measure alone. Regular physical activity is associated with better vascular health and may support brain health. Cognitive stimulation, such as sustained learning, reading, social engagement, and mentally challenging activities, is associated with cognitive reserve. A proper diet, particularly a generally heart-healthy dietary pattern, may help address vascular and metabolic risk factors that are associated with later cognitive impairment. These statements are not taken from the course material.\n\nOption a is incomplete because physical activity alone does not include the cognitive and dietary measures named by the bank. Option b is incomplete because cognitive stimulation alone omits physical activity and proper diet. Option d is incomplete because proper diet alone omits both physical activity and cognitive stimulation. These interventions may reduce risk or delay clinical manifestation, but they do not guarantee prevention of Alzheimer\'s disease, whose causes include non-modifiable factors such as age and genetic susceptibility. This statement is not taken from the course material. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Lifestyle measures that may delay the onset of Alzheimer\'s disease.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q43, p.1949 (answer p.1950)'
+},
+
+{ id:'npep-fe4-44', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'What is the term used to describe the individuals with hypochondriasis that are inclined to actively seek out information which confirms their own view of their medical state, but they reject arguments against their own beliefs?',
+  options:['Inflated knowledge structure', 'Cognitive dissonance', 'A reasoning bias', 'A memory bias.'],
+  answer:2,
+  explanation:'A reasoning bias is the printed answer because the description is of a biased way of evaluating information: the individual preferentially seeks and accepts material that supports the belief that they have a medical illness, while rejecting arguments that challenge that belief. This resembles confirmatory reasoning, in which evidence consistent with an existing conclusion is given more weight than contrary evidence (not taken from the course material). In hypochondriasis, this can help maintain persistent health-related beliefs despite reassurance (not taken from the course material).\n\nInflated knowledge structure is not the best answer because it would refer to an excessive or distorted body of knowledge or beliefs, rather than the selective reasoning process described. The stem focuses on how information is sought and judged, not simply on how much the person thinks they know.\n\nCognitive dissonance is not the best answer because it refers to psychological discomfort arising from inconsistent beliefs, attitudes, or behaviours, often followed by efforts to reduce that inconsistency (not taken from the course material). The stem instead describes selectively confirming a pre-existing belief and dismissing disconfirming material.\n\nA memory bias is not the best answer because memory bias concerns selective encoding, recall, or forgetting of information. Although biased recall could potentially reinforce illness concerns, the question specifically describes active information-seeking and rejection of counterarguments, which are reasoning processes rather than memory processes.\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'The question tests recognition of a reasoning bias in hypochondriasis.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q44, p.1951 (answer p.1952)'
+},
+
+{ id:'npep-fe4-45', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'Which is the common complication of subarachnoid hemorrhage?',
+  options:['Subconjunctival hemorrhage', 'Bleeding per ear', 'Vasospasm.', 'Brain herniation'],
+  answer:2,
+  explanation:'The keyed option, Vasospasm., is a common complication after subarachnoid hemorrhage. Blood within the subarachnoid space can irritate cerebral arteries and cause delayed arterial narrowing, usually several days after the bleed; this can reduce cerebral perfusion and lead to delayed cerebral ischemia or infarction (not taken from the course material). It is therefore an important complication to monitor for after aneurysmal subarachnoid hemorrhage (not taken from the course material).\n\nSubconjunctival hemorrhage is bleeding beneath the conjunctiva of the eye and is not a usual complication of subarachnoid hemorrhage (not taken from the course material). It may occur after local trauma, raised venous pressure, hypertension, or anticoagulation, but it does not represent the characteristic delayed vascular complication of subarachnoid bleeding (not taken from the course material).\n\nBleeding per ear is more suggestive of ear injury or, in an appropriate trauma setting, possible skull-base fracture with bleeding or cerebrospinal-fluid leakage; it is not a common complication of subarachnoid hemorrhage (not taken from the course material).\n\nBrain herniation results from severe raised intracranial pressure and mass effect, most classically with large intracranial space-occupying lesions or extensive cerebral swelling (not taken from the course material). Although severe neurological deterioration can occur in subarachnoid hemorrhage, brain herniation is not the common classic complication asked for here. The visible printed marking selects Vasospasm. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify vasospasm as a common complication of subarachnoid hemorrhage.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q45, p.1953 (answer p.1954). The exam misprints this question\'s number as 45, duplicating another Q45 in the same exam (see npep-fe4-45b).'
+},
+
+{ id:'npep-fe4-45b', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What is the rate of nerve regeneration after injury?',
+  options:['1-2 cm month', '1-2 mm day.', '2-3 cm day', '2-3 mm day'],
+  answer:1,
+  explanation:'The keyed option is “1-2 mm day.” Peripheral nerve axons commonly regenerate at an approximate rate of 1–2 mm per day after injury, provided that the neuronal cell body survives and the distal pathway is suitable for regrowth (not taken from the course material). This is often used clinically as a rough estimate when considering the time required for recovery after peripheral nerve damage (not taken from the course material).\n\nOption a, “1-2 cm month,” is wrong because it describes a considerably slower rate than the usual approximate daily axonal regeneration rate (not taken from the course material). Although regeneration and functional recovery may be delayed by injury severity, scarring, distance to the target, and muscle end-plate viability, the standard teaching estimate is expressed in millimetres per day rather than centimetres per month (not taken from the course material).\n\nOption c, “2-3 cm day,” is wrong because 2–3 centimetres daily would equal 20–30 mm per day, which is far faster than the usual rate of peripheral axonal regrowth (not taken from the course material). Option d, “2-3 mm day,” is also higher than the conventional approximate estimate selected by this bank (not taken from the course material). Regeneration is variable and may sometimes be described using ranges in different settings, but the printed key specifically marks the 1–2 mm/day choice. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Tests the approximate rate of peripheral nerve regeneration after injury.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q45, p.1955 (answer p.1956). The exam misprints this question\'s number as 45, duplicating another Q45 in the same exam (see npep-fe4-45).'
+},
+
+{ id:'npep-fe4-47', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'Which involuntary movements have regular characteristic?',
+  options:['motor tics', 'fasciculations', 'athetosis', 'tremors.'],
+  answer:3,
+  explanation:'Tremor is the keyed option because it is a rhythmic, oscillatory involuntary movement caused by alternating or synchronous contraction of opposing muscle groups (not taken from the course material). Its regular, repetitive character distinguishes it from several other abnormal movements.\n\nMotor tics are sudden, rapid, recurrent movements that are usually stereotyped but may occur irregularly and can often be temporarily suppressed (not taken from the course material). They are therefore not defined by regular rhythmic oscillation.\n\nFasciculations are brief, visible contractions of individual motor units or small groups of muscle fibres (not taken from the course material). They are commonly irregular and may occur intermittently at different sites, rather than producing the sustained rhythmic back-and-forth movement of tremor.\n\nAthetosis consists of slow, writhing, sinuous involuntary movements, typically affecting distal limbs (not taken from the course material). These movements are irregular and continuously changing in direction and posture, unlike the regular oscillation of tremor.\n\nThe bank therefore prints tremors as the answer. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify tremor as the involuntary movement with a regular rhythmic character.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q47, p.1959 (answer p.1960)'
+},
+
+{ id:'npep-fe4-48', bank:'endpoint', module:'neuropsych', chapter:'nr-intro',
+  stem:'What is the cause of Parinaud\'s sign?',
+  options:['Adult hydrocephalus', 'Normal pressure hydrocephalus', 'Infantile hydrocephalus', 'hydrocephalus ex vacuo'],
+  answer:2,
+  explanation:'6. Parinaud\'s sign: This is loss of upward gaze, which further proceeds to downward deviation of the eyeballs with appearance of a rim of sclera above the cornea "sun-set appearance". This sign is due to pressure of floor of dilated third ventricle on the tectum of midbrain.\n7. Cranial nerve paresis specially the VI nerve.\n8. Seizures\n9. Delayed developmental milestones.',
+  objective:'Identify infantile hydrocephalus as the printed cause of Parinaud\'s sign.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q48, p.1961 (answer p.1962)'
+},
+
+{ id:'npep-fe4-49', bank:'endpoint', module:'neuropsych', chapter:'ps-emerg',
+  stem:'An adolescent female was brought to hospital after attempting to make a superficial wound at her wrist with a knife. Her father explained that she repeatedly react like that whenever feeling in trouble when he refuses agreeing to her wrong behavior and disgracing attitudes. What is the most appropriate action towards this patient?',
+  options:['Admit the patient to high security psychiatry ward', 'Reassure the family that this is not serious and they should not pay attention', 'Discharge and ask her to visit the psychiatry outpatient clinic', 'Suicide risk assessment and proper medical care of the wound.'],
+  answer:3,
+  explanation:'The appropriate immediate response is suicide risk assessment together with proper medical care of the wound. Any presentation involving deliberate self-inflicted injury requires assessment of current suicidal intent, planning, access to means, psychiatric symptoms, safeguarding concerns, supports, and the circumstances of the act. The wound also requires appropriate clinical assessment and treatment. (not taken from the course material) The apparently superficial nature of the injury and the father’s interpretation of the behaviour do not safely establish low risk. (not taken from the course material)\n\nOption a is wrong because admission to a high security psychiatry ward is not the routine first response to an adolescent who has self-harmed. The appropriate level of psychiatric containment can only be decided after risk assessment; high-security care is reserved for exceptional circumstances involving severe risk and specific service requirements. (not taken from the course material)\n\nOption b is wrong because reassurance that the event is not serious dismisses self-harm and may miss suicidal risk, distress, or an underlying mental-health problem. (not taken from the course material)\n\nOption c is wrong because direct discharge with only outpatient follow-up omits the necessary immediate medical and suicide-risk assessment. Outpatient follow-up may be arranged later if it is appropriate after assessment and a safe plan is established. (not taken from the course material) Written for this bank — the endpoint file prints no explanation here.',
+  objective:'The question tests the immediate management of an adolescent presenting after deliberate self-harm.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q49, p.1963 (answer p.1964)'
+},
+
+{ id:'npep-fe4-51', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'What the treatment ruptured basilar aneurysm?',
+  options:['shunting of the aneurysm', 'Coiling of the aneurysm.', 'Fenestration of the aneurysm', 'Trimming of the aneurysm'],
+  answer:1,
+  explanation:'The printed key selects Coiling of the aneurysm. Endovascular coiling is a standard treatment approach for many ruptured intracranial aneurysms, including basilar aneurysms, because coils are deployed into the aneurysm sac to promote thrombosis and reduce further bleeding risk (not taken from the course material). It can avoid direct surgical exposure of the basilar artery, which is anatomically deep and technically hazardous (not taken from the course material).\n\nShunting of the aneurysm is not the usual definitive treatment for an aneurysm itself. A cerebrospinal-fluid shunt may be used for hydrocephalus that can complicate subarachnoid haemorrhage, but it does not occlude the aneurysm (not taken from the course material). Fenestration refers to making an opening, often in a membrane or vessel-related surgical context, and is not a routine treatment to secure a ruptured basilar aneurysm (not taken from the course material). Trimming of the aneurysm is not the recognised term for aneurysm occlusion; surgical clipping is the established open operative technique, whereas “trimming” does not describe standard aneurysm treatment (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identifies coiling as the printed treatment option for a ruptured basilar aneurysm.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q51, p.1967 (answer p.1968)'
+},
+
+{ id:'npep-fe4-52', bank:'endpoint', module:'neuropsych', chapter:'nr-backpain',
+  stem:'From this syndrome choose the matching clinical sign Foot drop?',
+  options:['L5 root syndrome.', 'Complete cord syndrome', 'Central cord syndrome', 'S1 root syndrome', 'Brown-Séquard syndrome'],
+  answer:0,
+  explanation:'The printed key selects L5 root syndrome. Foot drop is difficulty dorsiflexing the ankle during walking, often causing the toes to drag or a high-stepping gait. The principal muscles producing ankle dorsiflexion, particularly tibialis anterior, receive an important L5 contribution; therefore an L5 radiculopathy can produce foot drop (not taken from the course material).\n\nComplete cord syndrome causes bilateral motor, sensory, and autonomic impairment below the level of a spinal cord lesion rather than an isolated L5-pattern foot drop (not taken from the course material). Central cord syndrome classically affects the upper limbs more than the lower limbs, especially after cervical cord injury, and does not specifically indicate foot drop (not taken from the course material). S1 root syndrome more typically weakens plantar flexion and may reduce the ankle jerk, rather than weakening dorsiflexion (not taken from the course material). Brown-Séquard syndrome is a hemicord syndrome with ipsilateral motor and dorsal-column deficits plus contralateral pain-and-temperature loss below the lesion; it is not a specific explanation for isolated foot drop (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Foot drop is matched with L5 root syndrome.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q52, p.1969 (answer p.1970)'
+},
+
+{ id:'npep-fe4-57', bank:'endpoint', module:'neuropsych', chapter:'nr-intro',
+  stem:'An 18-year-old patient presented with right sided weakness and double vision. On examination he had right extensor planter and left 6th nerve palsy. What is the most probable diagnosis of this patient ?',
+  options:['Pituitary macroadenoma', 'Occipital lobe tumor', 'Frontal lobe tumor', 'Brain stem tumor.'],
+  answer:3,
+  explanation:'The keyed answer is Brain stem tumor. The combination of an ipsilateral cranial nerve palsy and contralateral long-tract signs is a crossed neurological syndrome, which localizes the lesion to the brainstem. A left sixth nerve palsy produces impaired left lateral rectus function and diplopia, while involvement of the corticospinal tract above its decussation can produce right-sided weakness and a right extensor plantar response. This pattern is consistent with a lesion involving the left pons, where the abducens nerve pathway and descending motor fibres are anatomically close (not taken from the course material).\n\nPituitary macroadenoma is wrong because it may cause visual disturbance through compression of the optic chiasm, typically visual-field loss, and can affect cavernous-sinus cranial nerves when invasive; it does not characteristically produce this crossed sixth-nerve and pyramidal-tract pattern (not taken from the course material).\n\nOccipital lobe tumor is wrong because occipital lesions principally cause contralateral homonymous visual-field defects, rather than an isolated sixth nerve palsy with contralateral upper motor neuron signs (not taken from the course material).\n\nFrontal lobe tumor is wrong because it can cause contralateral weakness from motor-cortex involvement, but it would not ordinarily cause a left sixth nerve palsy as a localizing feature. The simultaneous cranial nerve and crossed motor findings point below the cerebral hemispheres to the brainstem (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Crossed cranial nerve and pyramidal signs localize a lesion to the brainstem.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q57, p.1983 (answer p.1984)'
+},
+
+{ id:'npep-fe4-58', bank:'endpoint', module:'neuropsych', chapter:'nr-ms',
+  stem:'What character is absent in MRI during recent activity of multiple sclerosis?',
+  options:['Non contrast enhancing lesion', 'Ovoid plaques arranged perpendicular to ventricles', 'Periventricular patches.', 'Spinal cord patches'],
+  answer:0,
+  explanation:'The keyed option is “Non contrast enhancing lesion.” During recent inflammatory activity in multiple sclerosis, active lesions typically demonstrate contrast enhancement after gadolinium because inflammation disrupts the blood–brain barrier (not taken from the course material). A non-contrast-enhancing lesion therefore lacks the expected imaging character of recent activity and is more consistent with an older or inactive plaque (not taken from the course material).\n\nOvoid plaques arranged perpendicular to the ventricles are not absent in MS. They are a characteristic distribution of demyelinating lesions, often described as Dawson’s fingers, reflecting lesions along medullary veins (not taken from the course material). Their presence supports MS but does not by itself establish that a lesion is currently active (not taken from the course material).\n\nPeriventricular patches are also not absent. Periventricular white-matter lesions are a typical MRI finding in MS and form part of the usual lesion distribution used in assessing dissemination in space (not taken from the course material). They may be present whether lesions are newly active or chronic (not taken from the course material).\n\nSpinal cord patches are likewise not absent. MS can produce focal spinal-cord demyelinating lesions, usually relatively short lesions in the cord (not taken from the course material). A spinal lesion may enhance when active, but its location alone does not distinguish recent from inactive disease (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify the MRI feature absent in recently active multiple sclerosis.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q58, p.1985 (answer p.1986)'
+},
+
+{ id:'npep-fe4-60', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'Which nerve can be used as a graft?',
+  options:['Sural nerve', 'Lateral femoral cutaneous nerve', 'Posterior interosseous nerve', 'Anterior interosseous.'],
+  answer:0,
+  explanation:'The keyed option is the sural nerve. It is a commonly harvested sensory donor nerve for peripheral nerve reconstruction because it is relatively expendable and provides a useful length of graft material (not taken from the course material). Its removal produces sensory loss over a limited area of the lateral foot, which is generally considered an acceptable donor-site deficit when a graft is required (not taken from the course material). The sural nerve is therefore widely used as an autologous nerve graft, particularly when a gap prevents direct tension-free repair (not taken from the course material).\n\nThe lateral femoral cutaneous nerve is a purely sensory nerve, but it is not the standard named donor nerve intended here; injury to it is associated with meralgia paraesthetica, causing troublesome sensory symptoms over the anterolateral thigh (not taken from the course material). The posterior interosseous nerve is primarily a motor branch of the radial nerve supplying finger and thumb extensors, so sacrificing it would cause important motor impairment and it is unsuitable as a routine graft donor (not taken from the course material). The anterior interosseous nerve is a motor branch of the median nerve supplying muscles involved in thumb and index-finger flexion; its loss would compromise function and it is likewise not used as a standard expendable graft donor (not taken from the course material). Thus, among the listed choices, the sural nerve is the appropriate donor nerve. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify the sural nerve as a commonly used peripheral nerve graft donor.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q60, p.1990 (answer p.1991)'
+},
+
+{ id:'npep-fe4-61', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'Which disorder is usually associated with Labelle Indifference?',
+  options:['somatoform disorder', 'Schizophrenia', 'Generalized anxiety disorder', 'Conversion disorder.'],
+  answer:3,
+  explanation:'The keyed answer is Conversion disorder. La belle indifférence describes an apparently inappropriate lack of concern about a significant neurological-like symptom, such as paralysis, blindness, or loss of speech. It has traditionally been associated with conversion disorder, now termed functional neurological symptom disorder (not taken from the course material). In this condition, symptoms affecting voluntary motor or sensory function are present but are not explained by a recognized neurological or medical disorder (not taken from the course material). The person may appear surprisingly unconcerned despite the apparent severity of the symptom; however, this finding is neither required nor specific for the diagnosis (not taken from the course material).\n\nSomatoform disorder is wrong because it is a broad older grouping of disorders characterized by physical symptoms or health concerns, rather than the specific diagnosis classically linked to la belle indifférence (not taken from the course material). Schizophrenia is wrong because its core features include psychotic symptoms such as delusions, hallucinations, disorganized thought, and negative symptoms, not a characteristic unconcern about functional neurological symptoms (not taken from the course material). Generalized anxiety disorder is wrong because it is characterized by excessive, difficult-to-control worry with associated anxiety symptoms; indifference to symptoms would be inconsistent with its usual presentation (not taken from the course material). Conversion disorder is therefore the bank’s printed answer. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'La belle indifférence is classically associated with conversion disorder.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q61, p.1992 (answer p.1993)'
+},
+
+{ id:'npep-fe4-62', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'A 35-year-old patient experienced head injury that was managed conservatively over 3 weeks. The CT brain showed frontal contusion with brain herniation. The patient has no localizing signs and no lateralization. What is most probably the type of this herniation?',
+  options:['Tonsillar', 'Sub-falcine.', 'Uncal', 'Central.'],
+  answer:1,
+  explanation:'The bank prints Sub-falcine. as the correct option. A frontal contusion can produce a unilateral frontal mass effect, displacing the cingulate gyrus beneath the falx cerebri; this is subfalcine herniation. It may initially cause few localizing signs, and the absence of lateralization fits the description given. (not taken from the course material)\n\nTonsillar herniation is downward displacement of the cerebellar tonsils through the foramen magnum, usually associated with posterior fossa pathology or severe generalized intracranial pressure elevation. It more characteristically threatens the medulla and cardiorespiratory function, rather than being the expected pattern from a frontal contusion. (not taken from the course material)\n\nUncal herniation is medial temporal lobe displacement through the tentorial notch. It commonly produces an ipsilateral dilated pupil from third-nerve compression and may cause contralateral motor deficits, so the lack of localizing signs or lateralization makes it less consistent here. (not taken from the course material)\n\nCentral herniation is a downward, relatively symmetric displacement of diencephalic structures and brainstem through the tentorial opening, often from diffuse cerebral swelling. It is generally associated with progressively impaired consciousness and brainstem signs, which are not described. (not taken from the course material)\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify subfalcine herniation from a frontal contusion without localizing signs or lateralization.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q62, p.1994 (answer p.1995)'
+},
+
+{ id:'npep-fe4-64', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'For 6 months, a lancinating pain that lasted for seconds in her right face and responded well to medical treatment. Currently, she had similar attacks that did not respond well to maximum doses of the previously given medication. MRI was ordered. Once the data was interpreted, the patient was referred to neurosurgeon for surgery. What did that patient likely suffer from?',
+  options:['Stroke', 'Trigeminal neuralgia.', 'Migraine', 'Myositis'],
+  answer:1,
+  explanation:'The printed key is Trigeminal neuralgia. The described pain is unilateral, facial, lancinating, and lasts seconds, which is the classic pattern of trigeminal neuralgia. It often initially responds to drug treatment, commonly carbamazepine, but refractory symptoms or a structural lesion identified on MRI may lead to neurosurgical treatment (not taken from the course material). MRI is particularly relevant when evaluating atypical or treatment-resistant trigeminal neuralgia because it may identify a compressive cause along the trigeminal pathway (not taken from the course material).\n\nStroke is wrong because stroke usually produces sudden focal neurological deficits such as weakness, sensory loss, dysphasia, visual disturbance, or persistent symptoms, rather than recurrent brief lancinating facial pain lasting seconds (not taken from the course material). Migraine is wrong because migraine attacks generally last hours to days and commonly involve headache, nausea, photophobia, phonophobia, or aura; it does not typically cause isolated seconds-long electric facial attacks (not taken from the course material). Myositis is wrong because it is an inflammatory muscle disorder that more typically causes muscle weakness, myalgia, and sometimes elevated muscle enzymes, rather than paroxysmal neuralgic facial pain (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Recognize trigeminal neuralgia from recurrent brief unilateral lancinating facial pain.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q64, p.1998 (answer p.1999)'
+},
+
+{ id:'npep-fe4-65', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'In the previous case what is the finding in MRI of this patient that necessitate neurosurgery interference?',
+  options:['Vascular loop of artery or vein.', 'Hydrocephalus', 'Brain Herniation', 'Cut injury of nerve'],
+  answer:0,
+  explanation:'The printed key selects a vascular loop of artery or vein. In the context of a preceding cranial-nerve case, MRI may demonstrate a vessel loop contacting or compressing a cranial nerve, supporting neurovascular compression and potentially leading to neurosurgical treatment when symptoms are severe or resistant to medical management (not taken from the course material). Microvascular decompression is intended to separate the offending vessel from the nerve (not taken from the course material).\n\nHydrocephalus is enlargement of the ventricular system due to disturbed cerebrospinal-fluid circulation or absorption (not taken from the course material). It can require neurosurgical treatment in appropriate circumstances, but it is not the MRI finding suggested by this previous-case question. Brain Herniation describes displacement of brain tissue caused by raised intracranial pressure or a mass effect and is an emergency finding (not taken from the course material). It is not the vascular compression finding being tested here. Cut injury of nerve would indicate traumatic nerve damage rather than a vascular loop seen on MRI; it is not the described imaging cause for neurosurgical interference in this case (not taken from the course material). Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Identify a vascular loop of an artery or vein on MRI as the finding that necessitates neurosurgery interference in the preceding case.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, Q65, p.2000 (answer p.2001)'
+},
+
+{ id:'npep-fe4-66', bank:'endpoint', module:'neuropsych', chapter:'ps-somato',
+  stem:'What is the popular name of conversion in Psychodynamic circles?',
+  options:['Mental paralysis', 'Hysteria.', 'Histrionics', 'Depression'],
+  answer:1,
+  explanation:'The keyed option is Hysteria. In psychodynamic terminology, conversion refers to the expression of unconscious psychological conflict as neurological-type physical symptoms, such as weakness, sensory loss, blindness, or non-epileptic attacks, without a neurological disease accounting for the presentation (not taken from the course material). Historically, this clinical phenomenon was commonly called hysteria, although modern diagnostic systems use terms such as functional neurological symptom disorder or conversion disorder (not taken from the course material).\n\nMental paralysis is not the popular psychodynamic name for conversion. It is not a standard diagnostic term for conversion symptoms and could ambiguously describe severe psychological inhibition or motor impairment from other causes (not taken from the course material). Histrionics is also incorrect: it informally relates to dramatic behaviour and is associated in name with histrionic personality disorder, which is distinct from conversion symptoms (not taken from the course material). Depression is a mood disorder characterized by persistent low mood and related cognitive, physical, and behavioural symptoms; it is not the traditional name for conversion (not taken from the course material).\n\nThe question asks specifically for the popular name used in psychodynamic circles, rather than the current formal diagnostic label. Therefore the printed answer identifies Hysteria. Written for this bank — the endpoint file prints no explanation here.',
+  objective:'Conversion in psychodynamic terminology was popularly called hysteria.',
+  source:'Neuro endpoint.pdf, Model Final Exam 4, unnumbered question near the end of the exam, p.2004 (answer p.2005) \u2014 the exam prints no question number here; id continues the sequence after Q65.'
+},
+
+/*
+ * "Neuro endpoint.pdf" - Model Final Exam 6, PDF pp.2095-2190 (divider p.2095, Q1 p.2096 ... Q45
+ * p.2185, book ends p.2190 - confirmed by direct render, no questions past Q45).
+ * 45/45 rows TRANSCRIBED DIRECTLY FROM PAGE IMAGES by a Claude subagent (ROUTE-OK: Codex had
+ * already exhausted its quota on this exact chapter; gateway unreachable this session too) -
+ * this file was NOT run through tools/bank-harness/npep-build.mjs, so it carries no machine
+ * checks.json.
+ *
+ * FOLD PASS DONE (hand-verified against the live corpus, fresh sweep + manual dice re-check,
+ * not the stale 29-candidate list handed off by the prior agent): 25 of 45 rows are same-book
+ * duplicates (9 exact, 1 exact-stem/option-typo, 1 respelled, 3 reordered, 1 cross-chapter
+ * exact, 2 heavily-reworded/paraphrased same-vignette pairs the automated sweep under-scored,
+ * and 8 "D near stem" hits at dice>=0.89 all confirmed genuine on read) - each dropped here,
+ * with a source-note citation added to its corpus survivor instead (see the close-out report,
+ * not tracked in this file). One flagged F-stage hit (npep-fe6-30 vs npqb-nr-321) was a FALSE
+ * POSITIVE on hand read - "most common cause of meningitis" vs "most common cause of sciatica"
+ * are unrelated facts that only share the four-word template phrase; npep-fe6-30 stays as a
+ * novel row. 20 rows below are the confirmed-novel survivors of that pass, ready for splice.
+ */
+
+{ id:'npep-fe6-2', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'Continuing the same patient as npep-mood-15 (referred for persistent headache, contrast-enhanced CT obtained). Which type of brain tumors could be suggestive of the findings seen in the contrast-enhanced CT scan?',
+  options:['Temporal meningioma.', 'Cerebellar astrocytoma.', 'Foramen magnum schwannoma.', 'Brain stem Glioblastoma.'],
+  answer:0,
+  explanation:'The printed answer page carries a short handwritten-style note alongside the figure: “Left temporal / With homogenous enhancement / Mostly meningioma” (printed on the page, transcribed verbatim) — this is quoted directly from the source, not added by this bank.\n\nMeningiomas are extra-axial, dural-based tumours that classically show strong, homogeneous contrast enhancement on CT, and a left temporal location with this enhancement pattern is the printed reading of the image, matching option a (not taken from the course material).\n\nCerebellar astrocytoma is wrong because it is an infratentorial tumour, most typical in children, and does not match a left temporal supratentorial location (not taken from the course material). Foramen magnum schwannoma is wrong because it arises at the craniocervical junction, not the temporal lobe (not taken from the course material). Brain stem glioblastoma is wrong both on location (brainstem, not temporal lobe) and on enhancement pattern, since high-grade gliomas more typically show irregular, ring-like or heterogeneous enhancement rather than the homogeneous pattern described here (not taken from the course material).',
+  objective:'A homogeneously enhancing, dural-based temporal mass on contrast CT is characteristic of a meningioma.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q2, p.2098 (answer p.2099)'
+},
+
+{ id:'npep-fe6-7', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'What is the characteristic feature of headache associated with brain tumors?',
+  options:['Diurnal exacerbation.', 'Dull aching.', 'Continuous.', 'Decreased with Valsalva maneuver.'],
+  answer:0,
+  explanation:'The printed key is option a. Headache from raised intracranial pressure (as with a brain tumour) classically follows a diurnal pattern, characteristically worse on waking in the morning (from overnight recumbency, reduced CSF drainage and mild nocturnal CO2 retention raising intracranial pressure) and easing somewhat as the day goes on (not taken from the course material).\n\nDull aching (b) is not a discriminating feature, since tension-type headache is also typically dull and aching, so it does not distinguish a tumour headache from the far more common benign headache (not taken from the course material). Continuous (c) is wrong because raised-ICP headache from a tumour is often intermittent or positional rather than unremitting (not taken from the course material). Decreased with Valsalva maneuver (d) is wrong and in fact reverses the true relationship: raised intracranial pressure headache classically WORSENS with Valsalva-type manoeuvres (coughing, straining, bending) rather than improving with them (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'A morning-predominant (diurnal), Valsalva-worsened headache pattern suggests raised intracranial pressure, as from a brain tumour.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q7, p.2108 (answer p.2109)'
+},
+
+{ id:'npep-fe6-8', bank:'endpoint', module:'neuropsych', chapter:'nr-ms',
+  stem:'What\'s the percentage of patients with history of optic neuritis that have abnormal visual evoked potential (VEP)?',
+  options:['Less than 90%', 'More than 40', 'Less than 40%', 'More than 90%'],
+  answer:3,
+  explanation:'The printed key is option d, more than 90%. Visual evoked potentials remain abnormal (classically showing delayed P100 latency from residual demyelination of the optic nerve) in the large majority — over 90% — of patients with a past episode of optic neuritis, even after clinical visual recovery, which is why VEP is a useful test for detecting subclinical/past optic nerve demyelination (not taken from the course material).\n\nThe other three options (less than 90%, more than 40, less than 40%) all understate how consistently VEP stays abnormal after optic neuritis, and are wrong for that reason (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'VEP remains abnormal in over 90% of patients after an episode of optic neuritis, reflecting persistent optic nerve demyelination even after clinical recovery.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q8, p.2110 (answer p.2111)'
+},
+
+{ id:'npep-fe6-11', bank:'endpoint', module:'neuropsych', chapter:'nr-ms',
+  stem:'A 22-year-old patient presented with acute onset of urine retention and bilateral lower limbs weakness and sensory loss that extend to lower abdomen. One year ago, she had attack of painful decreased visual acuity of left eye that responded to steroid. What is the most probable etiology of this patient\'s presentation?',
+  options:['Demyelinating.', 'Degenerative.', 'infective.', 'Vascular'],
+  answer:0,
+  explanation:'The printed key is option a, demyelinating. A past episode of steroid-responsive painful visual loss (optic neuritis) followed a year later by an acute transverse myelitis-type presentation (bilateral leg weakness and sensory loss ascending to the lower abdomen, with urinary retention) represents CNS lesions separated in both time and space — the hallmark of a demyelinating disease such as multiple sclerosis (not taken from the course material).\n\nDegenerative (b) is wrong because degenerative disease is typically slowly progressive rather than presenting as two discrete, steroid-responsive attacks separated by a year (not taken from the course material). Infective (c) is wrong because there is no fever or infective picture described, and an infective myelitis would not typically explain the earlier steroid-responsive optic neuritis episode as part of the same process (not taken from the course material). Vascular (d) is wrong because a vascular (ischaemic) cord or optic nerve event would present acutely without the striking steroid-responsiveness and relapsing-remitting, multi-site pattern described here (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Lesions separated in time and space — here, optic neuritis followed a year later by transverse myelitis, both steroid-responsive — point to a demyelinating disease.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q11, p.2116 (answer p.2117)'
+},
+
+{ id:'npep-fe6-13', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'A patient developed sudden onset of severe thunderclap headache and loss of consciousness (the source prints the patient\'s age as "4-year-old," almost certainly a printing error given the presentation and the imaging work-up described — kept verbatim, not corrected). In the emergency department, as subarachnoid hemorrhage was suspected, initial treatment was given to prevent worsening of patient condition. Brain CT/CT Angiography was ordered. The imaging revealed that the patient had a ruptured aneurysm. What was the most likely treatment initially given to this patient?',
+  options:['Nimodipine.', 'Steroid.', 'Sumatriptan.', 'Carbamazepine.'],
+  answer:0,
+  explanation:'The printed key is option a, nimodipine. Nimodipine is a calcium channel blocker specifically indicated after aneurysmal subarachnoid haemorrhage to reduce the risk and severity of cerebral vasospasm, one of the main causes of secondary neurological worsening in the days after the bleed — this is exactly the "initial treatment to prevent worsening of patient condition" described in the stem (not taken from the course material).\n\nSteroid (b) is not a standard component of aneurysmal SAH management (not taken from the course material). Sumatriptan (c) is a migraine-specific drug and is not used, and is in fact potentially harmful, in the setting of a vascular emergency such as SAH (not taken from the course material). Carbamazepine (d) is an antiepileptic maintenance drug with no role in the acute prevention of vasospasm (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Nimodipine is given after aneurysmal subarachnoid haemorrhage specifically to reduce the risk of cerebral vasospasm.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q13, p.2120 (answer p.2121)'
+},
+
+{ id:'npep-fe6-14', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'Continuing the same patient as npep-fe6-13 (ruptured aneurysm on CT angiography, on nimodipine). What should be the surgical treatment to prevent recurrence of such hemorrhage?',
+  options:['Endovascular coiling of aneurysm.', 'Shunt insertion in 3rd ventricle.', 'Hematoma evacuation.', 'Thrombus recanalization.'],
+  answer:0,
+  explanation:'The printed key is option a. Endovascular coiling (or surgical clipping) of the ruptured aneurysm is the definitive treatment to obliterate the aneurysm sac and prevent rebleeding, which is the main early recurrence risk after aneurysmal subarachnoid haemorrhage (not taken from the course material).\n\nShunt insertion in the 3rd ventricle (b) treats a possible complication — hydrocephalus from blood obstructing CSF flow — but does not address the aneurysm itself or prevent rebleeding (not taken from the course material). Hematoma evacuation (c) may be needed for a large associated intracerebral haematoma causing mass effect, but again does not secure the aneurysm against rebleeding (not taken from the course material). Thrombus recanalization (d) is a treatment concept for ischaemic stroke (removing an occlusive clot), not for a ruptured aneurysm, and is not relevant here (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Endovascular coiling (or clipping) secures a ruptured aneurysm and is the definitive way to prevent rebleeding.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q14, p.2122 (answer p.2123)'
+},
+
+{ id:'npep-fe6-16', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'What is the most common cause of motor peripheral neuropathy?',
+  options:['Diabetic peripheral neuropathy.', 'Vitamin B1 deficiency.', 'Gillian-Barre syndrome.', 'Arsenic poisoning'],
+  answer:2,
+  explanation:'The printed key is option c (printed as "Gillian-Barre syndrome" — the standard spelling is Guillain-Barré syndrome; kept verbatim as printed). While diabetic neuropathy is the most common peripheral neuropathy overall, it is typically a distal, symmetric, predominantly SENSORY neuropathy. The question specifically asks about MOTOR neuropathy, and Guillain-Barré syndrome, an acute immune-mediated polyradiculoneuropathy, is the most common cause of an acute, predominantly motor (ascending, areflexic) peripheral neuropathy (not taken from the course material).\n\nDiabetic peripheral neuropathy (a) is wrong for a pure motor picture, since it is usually sensory-predominant (not taken from the course material). Vitamin B1 (thiamine) deficiency (b) causes a sensorimotor neuropathy (as in beriberi) but is a far less common cause overall than Guillain-Barré syndrome (not taken from the course material). Arsenic poisoning (d) is a rare toxic cause of peripheral neuropathy, not a common one (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'When a peripheral neuropathy is predominantly motor, Guillain-Barré syndrome is the most common cause, in contrast to the sensory-predominant pattern of diabetic neuropathy.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q16, p.2126 (answer p.2127)'
+},
+
+{ id:'npep-fe6-17', bank:'endpoint', module:'neuropsych', chapter:'nr-exam',
+  stem:'Which finding indicates the examination of optic nerve?',
+  options:['Swelling of optic cup.', 'Appearance of ptosis.', 'Presence of nystagmus.', 'Eye movement deviation'],
+  answer:0,
+  explanation:'The printed key is option a. Swelling of the optic cup/disc (papilloedema) is seen directly on fundoscopic examination of the optic nerve (cranial nerve II) and is the finding that specifically reflects optic nerve/optic disc pathology (not taken from the course material).\n\nPtosis (b) reflects oculomotor (3rd) nerve or sympathetic pathway dysfunction, not the optic nerve (not taken from the course material). Nystagmus (c) reflects vestibular, cerebellar, or brainstem gaze-control pathway dysfunction rather than the optic nerve itself (not taken from the course material). Eye movement deviation (d) reflects dysfunction of the ocular motor nerves (3rd, 4th, 6th) or their supranuclear control, not the optic nerve (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Optic disc/cup swelling on fundoscopy is the direct examination finding of optic nerve involvement, distinct from ptosis, nystagmus, or eye movement signs referable to the ocular motor nerves.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q17, p.2128 (answer p.2129)'
+},
+
+{ id:'npep-fe6-20', bank:'endpoint', module:'neuropsych', chapter:'nr-headache',
+  stem:'A 35-year-old female patient presented with acute headache, visual deterioration, and loss of consciousness. Her MRI brain showed sellar space occupying lesion with suprasellar extension. What is the best treatment plan for this patient?',
+  options:['Endonasal endoscopic transsphenoidal excision.', 'Gamma knife radiosurgery.', 'Stereotactic aspiration.', 'Dopamine agonist medical treatment and observation'],
+  answer:0,
+  explanation:'The printed key is option a. A large sellar mass with suprasellar extension causing acute headache, visual deterioration and loss of consciousness represents an emergency requiring prompt mechanical decompression; endonasal endoscopic transsphenoidal excision is the standard surgical approach for a symptomatic pituitary macroadenoma needing urgent decompression of the optic apparatus (not taken from the course material).\n\nGamma knife radiosurgery (b) is not appropriate as a first-line treatment for a large, acutely symptomatic mass — it is better suited to small residual or recurrent lesions, and its effect is delayed, unsuitable for acute visual threat (not taken from the course material). Stereotactic aspiration (c) is not a standard approach for a solid pituitary tumour (not taken from the course material). Dopamine agonist therapy with observation (d) would only be appropriate if this were confirmed as a prolactinoma, which is not established in the stem, and observation alone is inappropriate given the acute, vision-threatening presentation requiring urgent decompression regardless of tumour subtype (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'An acutely symptomatic sellar mass with visual compromise needs urgent surgical decompression (transsphenoidal excision), not medical therapy or radiosurgery alone.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q20, p.2134 (answer p.2135)'
+},
+
+{ id:'npep-fe6-21', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'A 21-year-old male soldier presented to the clinic with a depression in the first web space and sensory loss involving little finger. He reported that he used to carry his weapon for 6 hours per day. What is the most likely affected nerve?',
+  options:['Median.', 'Radial.', 'Ulnar.', 'Anterior interosseous.'],
+  answer:2,
+  explanation:'The printed key is option c. A "depression" (wasting/hollowing) in the first web space reflects wasting of the first dorsal interosseous muscle, an ulnar-innervated intrinsic hand muscle, and sensory loss over the little finger is classic ulnar nerve sensory territory. Prolonged direct pressure on the medial wrist/hand from carrying a rifle strap is a recognised mechanism of ulnar nerve compression (e.g. at Guyon’s canal) (not taken from the course material).\n\nMedian (a) is wrong because the median nerve supplies the thenar (lateral hand) muscles and sensation to the lateral three and a half digits, not the first dorsal interosseous or the little finger (not taken from the course material). Radial (b) is wrong because the radial nerve is a predominantly extensor/dorsal sensory nerve of the wrist and hand and does not supply the first dorsal interosseous or little finger sensation (not taken from the course material). Anterior interosseous (d) is wrong because it is a purely motor branch of the median nerve supplying deep forearm flexors, with no cutaneous sensory territory and no supply to the first dorsal interosseous (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'First dorsal interosseous wasting plus little-finger sensory loss localises to the ulnar nerve, here from chronic pressure at the wrist/hand.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q21, p.2136 (answer p.2137)'
+},
+
+{ id:'npep-fe6-22', bank:'endpoint', module:'neuropsych', chapter:'nr-stroke',
+  stem:'What is the most common type of stroke?',
+  options:['ischemic embolic.', 'intracerebral hemorrhage.', 'ischemic thrombotic.', 'subarachnoid hemorrhage'],
+  answer:2,
+  explanation:'The printed key is option c, ischaemic thrombotic. Ischaemic stroke overall accounts for the large majority of strokes, and within the ischaemic category, thrombotic mechanisms (large-artery atherosclerotic thrombosis together with small-vessel/lacunar thrombotic disease) are taught here as the most common subtype, outweighing purely embolic and haemorrhagic causes combined (printed key kept as-is; some sources instead emphasise cardioembolic stroke as the single leading mechanism, but the bank’s printed answer is transcribed and not disputed) (not taken from the course material).\n\nIschaemic embolic (a) is a recognised and common ischaemic subtype but is printed here as less common than the thrombotic category. Intracerebral haemorrhage (b) and subarachnoid haemorrhage (d) are both haemorrhagic stroke types, which are collectively less common than ischaemic stroke overall (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Ischaemic stroke is more common than haemorrhagic stroke overall; the bank keys the thrombotic ischaemic subtype as the single most common type.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q22, p.2138 (answer p.2139)'
+},
+
+{ id:'npep-fe6-23', bank:'endpoint', module:'neuropsych', chapter:'nr-coma',
+  stem:'What is the sign of middle cranial skull base fracture?',
+  options:['CSF otorrhea.', 'Bilateral Raccoons eyes.', 'Anosmia.', 'Battie sign.'],
+  answer:0,
+  explanation:'The printed key is option a. CSF otorrhea (cerebrospinal fluid leaking from the ear) requires a fracture through the temporal bone/tegmen tympani with a dural tear, which localises directly to the middle cranial fossa, making it a direct and specific sign of a middle fossa fracture (not taken from the course material).\n\nBilateral raccoon eyes (b) — periorbital ecchymosis — and anosmia (c) — loss of smell from olfactory nerve/cribriform plate injury — are both signs of an ANTERIOR cranial fossa fracture, not the middle fossa (not taken from the course material). Battle’s sign (mastoid ecchymosis, printed here as "Battie sign") is classically associated with a posterior fossa/temporal bone (basilar) fracture and, unlike CSF otorrhea, is an indirect bruising sign that can take a day or more to appear, making it a less immediate/specific indicator than CSF otorrhea for the middle fossa (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'CSF otorrhea is a direct sign of a middle cranial fossa (temporal bone) fracture, in contrast to raccoon eyes and anosmia, which localise to the anterior fossa.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q23, p.2140 (answer p.2141)'
+},
+
+{ id:'npep-fe6-24', bank:'endpoint', module:'neuropsych', chapter:'nr-movement',
+  stem:'A 60-year-old patient complains of seeing children and pets that no one else seems to see. He has a history of tremor and rigidity for 5 years. What is the possible diagnosis in this patient?',
+  options:['Hallucination from comorbid psychiatric illness.', 'Hallucination from in patient with dementia.', 'Hallucination from drug side effects.', 'Hallucination in patient with Parkinson.'],
+  answer:3,
+  explanation:'The printed key is option d. Well-formed visual hallucinations (commonly of people, children, or animals) are a recognised, intrinsic non-motor complication of longstanding Parkinson’s disease itself, related to disease progression and Lewy body pathology affecting visual processing pathways, and are described here as occurring in the context of 5 years of tremor and rigidity (not taken from the course material).\n\nHallucination from comorbid psychiatric illness (a) is wrong because no separate psychiatric diagnosis or history is given. Hallucination from dementia (b) is wrong because no cognitive decline is described in the stem. Hallucination from drug side effects (c) is a clinically important and common alternative explanation in a levodopa/dopamine-agonist-treated Parkinson’s patient, and in practice both a medication effect and intrinsic Parkinson’s disease psychosis must be considered — the printed key selects option d, attributing the hallucinations to the disease itself rather than to medication, and that printed key is kept here without dispute (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Visual hallucinations are a recognised non-motor feature of longstanding Parkinson’s disease itself, in addition to being a possible dopaminergic drug side effect.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q24, p.2142 (answer p.2143)'
+},
+
+{ id:'npep-fe6-25', bank:'endpoint', module:'neuropsych', chapter:'nr-para',
+  stem:'What is the main clinical manifestation of posterior cord syndrome?',
+  options:['Motor weakness in one lower limb and sensory loss on the other limb.', 'Sensory ataxia.', 'Dissociated suspended sensory loss.', 'Lost pain brick sensation.'],
+  answer:1,
+  explanation:'Printed explanation box (transcribed verbatim): "Spinal cord syndromes. These are groups of manifestations that occur due to spinal cord compression and depend on the onset and site of compression. 1) Complete cord syndrome: Complete loss of motor, sensory and autonomic functions below the level of the lesion. 2) Anterior cord syndrome: Anterior corticospinal tract injury (pyramidal tract) → loss of motor function mainly in the lower limbs, it is mostly due to anterior spinal cord artery injury or due to trauma. 3) Posterior cord syndrome: Dorsal column injury, affection of the deep sensation (proprioception and vibration sense) leads to sensory ataxia. 4) Central cord syndrome: It occurs due to central cord compression as in cases of syringomyelia. It presents with motor loss in upper limbs more than lower limbs and in proximal muscles more than distal one (because the fibers of the upper limb and proximal muscles are more medial within the cord than those of the lower limb and distal muscles). It also presents with dissociated sensory loss (suspended sensory level) like jacket with long sleeves. 5) Lateral cord syndrome (Brown-Sequard) (Cord hemisection): It is a rare condition occurs due to unilateral affection of the cord so there is a group of manifestation occur at the same side of the lesion and another manifestation occur at the contralateral side due to long tract decussation inside the cord as follows:" (text continues past the edge of this printed page).\n\nPer the printed box, posterior cord syndrome is defined by dorsal column injury causing loss of proprioception and vibration sense, which produces sensory ataxia — matching option b. Option a (crossed motor/sensory loss on opposite limbs) instead describes a Brown-Séquard-type pattern, option c (dissociated suspended sensory loss) is the CENTRAL cord syndrome pattern per the same box, and option d ("lost pain brick sensation," printed with what is almost certainly a typographical error, likely intended as loss of pain/pressure sensation) describes a spinothalamic-type deficit, which is an ANTEROLATERAL, not posterior (dorsal column), tract finding.',
+  objective:'Posterior (dorsal column) cord syndrome causes sensory ataxia from loss of proprioception/vibration sense, distinct from the central, anterior, and Brown-Séquard cord syndromes.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q25, p.2144 (answer p.2145)'
+},
+
+{ id:'npep-fe6-26', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'A 27-year-old pregnant lady presents to the clinic with numbness over her right thumb and index finger particularly at night. Phalen\'s test is positive on examination. What is the other expected clinical finding in this patient?',
+  options:['Atrophy of the thenar eminence.', 'Impaired sensations over the dorsum of the hand.', 'Atrophy of the abductor pollicis brevis muscle', 'impaired sensations over the thenar eminence.'],
+  answer:0,
+  explanation:'A positive Phalen’s test with nocturnal numbness of the thumb and index finger in pregnancy is classic median nerve compression at the wrist (carpal tunnel syndrome, common in pregnancy from fluid retention). The printed answer page highlights BOTH option a and option c, with a printed note: "Both A and c. Abductor pollicis brevis one of the thenar muscles" (transcribed verbatim) — the book marks both as correct because they describe the same underlying fact: the abductor pollicis brevis is one of the median-innervated thenar eminence muscles, so its atrophy IS thenar eminence atrophy. Option a is kept as the primary printed key here since it is the more general statement and is listed first; option c is the equivalent, more specific restatement of the same finding, also marked correct by the book (not taken from the course material).\n\nImpaired sensation over the dorsum of the hand (b) is wrong because the dorsal hand is supplied by the radial nerve (dorsal cutaneous branch) and the ulnar nerve, not the median nerve, so this is not an expected median-nerve carpal tunnel finding (not taken from the course material). Impaired sensation over the thenar eminence (d) is wrong because the thenar eminence skin itself is supplied by the palmar cutaneous branch of the median nerve, which arises PROXIMAL to the carpal tunnel and is characteristically SPARED in carpal tunnel syndrome, which is why sensation over the thenar eminence is classically preserved even though thumb/index finger sensation is lost (not taken from the course material).',
+  objective:'Carpal tunnel syndrome (median nerve compression) spares thenar-eminence skin sensation (palmar cutaneous branch bypasses the tunnel) while producing thenar muscle wasting, including of the abductor pollicis brevis.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q26, p.2146 (answer p.2147)'
+},
+
+{ id:'npep-fe6-30', bank:'endpoint', module:'neuropsych', chapter:'nr-cns',
+  stem:'What is the most common cause of meningitis?',
+  options:['Bacterial.', 'Tuberculous.', 'Viral.', 'Fungal.'],
+  answer:2,
+  explanation:'The printed key is option c, viral. Viral meningitis is the most common overall cause of meningitis (more common than bacterial), even though bacterial meningitis is typically more severe and carries higher morbidity/mortality (not taken from the course material).\n\nBacterial (a) is a common and clinically important cause, but printed here as less common overall than viral (not taken from the course material). Tuberculous (b) meningitis is a less common, typically subacute/chronic cause (not taken from the course material). Fungal (d) meningitis is uncommon overall and mainly seen in immunocompromised patients (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Viral meningitis is the most common overall cause of meningitis, though bacterial meningitis is more severe.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q30, p.2155 (answer p.2156)'
+},
+
+{ id:'npep-fe6-35', bank:'endpoint', module:'neuropsych', chapter:'ps-ocd',
+  stem:'What class of drugs could produce rapid improvement in symptoms of body dysmorphic disorder?',
+  options:['Anxiolytics', 'Selective serotonin reuptake inhibitors', 'Mood stabilizer', 'Benzodiazepines'],
+  answer:1,
+  explanation:'The printed key is option b. Body dysmorphic disorder is classified among the obsessive-compulsive-related disorders, and SSRIs are the first-line, evidence-based pharmacological treatment for it, often used at higher doses than for depression (not taken from the course material).\n\nAnxiolytics (a) and benzodiazepines (d) can reduce associated anxiety symptomatically but do not target the core obsessive preoccupation with perceived appearance defects the way SSRIs do (not taken from the course material). Mood stabilizers (c) are not a standard or evidence-based treatment for body dysmorphic disorder (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'SSRIs are the first-line pharmacological treatment for body dysmorphic disorder, an OCD-related disorder.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q35, p.2165 (answer p.2166)'
+},
+
+{ id:'npep-fe6-38', bank:'endpoint', module:'neuropsych', chapter:'nr-nerve',
+  stem:'Which nerve could be compressed by the pronator teres muscle?',
+  options:['Median.', 'Radial', 'Musculocutaneous', 'Ulnar'],
+  answer:0,
+  explanation:'The printed key is option a. The median nerve passes between the two heads (humeral and ulnar) of the pronator teres muscle in the proximal forearm, and it can become compressed there, producing pronator teres syndrome, a recognised median nerve entrapment at the elbow/proximal forearm (not taken from the course material).\n\nThe radial nerve (b) runs in the posterior compartment/radial groove and around the lateral elbow, not through pronator teres (not taken from the course material). The musculocutaneous nerve (c) runs through coracobrachialis in the arm and does not pass through pronator teres (not taken from the course material). The ulnar nerve (d) passes posterior to the medial epicondyle (cubital tunnel) and through flexor carpi ulnaris, not through pronator teres (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'The median nerve passes between the two heads of pronator teres and can be entrapped there (pronator teres syndrome).',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q38, p.2171 (answer p.2172)'
+},
+
+{ id:'npep-fe6-41', bank:'endpoint', module:'neuropsych', chapter:'nr-delirium',
+  stem:'What is the diagnostic symptom of normal pressure hydrocephalous?',
+  options:['Macrocephaly', 'Flat anterior fontanel', 'Memory loss', 'Diplopia.'],
+  answer:2,
+  explanation:'The printed key is option c. Cognitive decline/memory loss is a component of the classic normal pressure hydrocephalus triad (gait disturbance, urinary incontinence, and cognitive impairment) among the options given (not taken from the course material).\n\nMacrocephaly (a) and a flat/open versus closed anterior fontanel (b) are relevant to INFANT hydrocephalus (with open cranial sutures), not to adult-onset normal pressure hydrocephalus, where the sutures are already fused (not taken from the course material). Diplopia (d) is not a recognised part of the classic normal pressure hydrocephalus triad (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'Cognitive decline (memory loss) is part of the classic normal pressure hydrocephalus triad, unlike macrocephaly or fontanel findings, which apply to infant hydrocephalus.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q41, p.2177 (answer p.2178)'
+},
+
+{ id:'npep-fe6-45', bank:'endpoint', module:'neuropsych', chapter:'nr-cranial',
+  stem:'A 61-year-old woman with a history of diabetes, presents to ER with double vision as she woke up this morning. On examination, she has a complete left oculomotor nerve palsy with intact pupillary function. What is the most likely cause of her findings?',
+  options:['Brainstem infarction involving the midbrain.', 'Diabetic oculomotor nerve palsy.', 'Aneurysmal compression of the oculomotor nerve.', 'Myasthenia gravis.'],
+  answer:1,
+  explanation:'The printed key is option b. A complete, isolated oculomotor (3rd) nerve palsy with PUPIL SPARING (intact pupillary function) in a diabetic patient is the classic presentation of diabetic (microvascular/ischaemic) oculomotor nerve palsy. This occurs because diabetic microvascular ischaemia damages the central fascicular motor fibres of the nerve while relatively sparing the parasympathetic pupillary fibres, which run peripherally in the nerve and are supplied by a separate superficial blood supply, and are therefore less vulnerable to an ischaemic (as opposed to compressive) insult (not taken from the course material).\n\nBrainstem infarction involving the midbrain (a) is wrong because a midbrain lesion causing 3rd nerve palsy would typically also produce additional brainstem signs (such as a contralateral hemiparesis or ataxia, as in Weber’s or Claude’s syndrome), which are not described here — this is an isolated peripheral 3rd nerve palsy (not taken from the course material). Aneurysmal compression of the oculomotor nerve (c) is wrong because compressive lesions such as a posterior communicating artery aneurysm classically affect the peripherally-located pupillary fibres FIRST, producing a pupil-INVOLVING (dilated, poorly reactive) 3rd nerve palsy — the opposite of the pupil-sparing pattern described here (not taken from the course material). Myasthenia gravis (d) is wrong because it is a neuromuscular junction disorder that never affects the pupil (smooth muscle, not supplied via the neuromuscular junction affected in MG) and typically causes fluctuating, fatigable ptosis/diplopia rather than a fixed, acute-onset complete palsy as described (not taken from the course material).\n\nWritten for this bank — the endpoint file prints no explanation here.',
+  objective:'A pupil-sparing complete oculomotor nerve palsy in a diabetic patient reflects microvascular ischaemia of the central fascicular fibres, in contrast to the pupil-involving pattern of a compressive (e.g. aneurysmal) 3rd nerve palsy.',
+  source:'Neuro endpoint.pdf, Model Final Exam 6, Q45, p.2185 (answer p.2186)'
 }
 
 ];
