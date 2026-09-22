@@ -317,3 +317,31 @@ soma 30/28/2 · child 10/9/1 · schiz 30/27/3 · emerg 7/7/0 · dem 13/11/2 · s
   image (Codex or a subagent), hand-edit the draft header, sweep (`tools/qb-pipeline/sweep.js`), fold
   decisions, `splice-safe.js --go`, `validate.js neuro`, `boot-check`, commit, append the next
   close-out section (14 onward) here. Do this per chapter — do not batch the splice across chapters.
+
+## 14. Substance-related disorders + Cranial nerve disorders CLOSED (2026-09-22, commit `6746fd5`)
+Gateway still unreachable this session despite a relaunch report (`ECONNREFUSED`-style MCP failure) —
+both chapters' key reads ran via a Claude subagent against answer-page images, not Gemini. Re-check
+gateway liveness before trusting it for the remaining 14 chapters.
+
+**Substance-related disorders (`ps-sud`):** 6/6 rows, 6/6 key match, 0 mismatch, 0 fold candidates.
+Spliced 626 -> 632.
+
+**Cranial nerve disorders (`nr-cranial`):** 14/14 rows, 14/14 key match, 0 mismatch. Sweep found 6
+fold candidates, all genuine (2 were tool-flagged `! shared menu` but manual read confirmed same fact
+tested, not a template reuse):
+- `npep-cranial-1` -> same-bank duplicate of already-live `npep-loc-1` (same book, Localization Q1
+  vs Cranial nerve disorders Q1) — dropped, no `alsoIn`, source note added to `npep-loc-1`.
+- `npep-cranial-5/8/9/10/11` -> cross-bank duplicates of `npqb-nr-274/64/62/63/68` (gradegain) — each
+  gradegain entry had the fuller, lecture-grounded explanation, so kept as-is with `alsoIn:['endpoint']`
+  added and the endpoint citation folded into `source`.
+8 novel rows spliced clean (0 sweep candidates against the post-fold corpus). Spliced 632 -> 640.
+
+validate.js: 23 pre-existing failures only (`nr-demyelinating` chapter gap, documented baseline, no
+new failures). boot-check: 0 console errors, 5902/117, neuropsych 0 (locked, expected).
+
+**Next: emerg (7 rows) — resolve n5's "filed elsewhere: ps-pharm" flag first (adverse effects of
+stopping an SSRI, currently filed under psychopharmacology's chapter, needs a filing decision before
+verification), then child (9 rows) — investigate the systematic +1 printed-number-vs-OCR offset across
+every row before trusting citations, then n1/n8 "filed elsewhere" flags and n9's "numbers differ from
+OCR: 4". Per the original ladder: smallest first, one chapter at a time, gateway status re-checked
+before relying on it.**

@@ -47,19 +47,14 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
   Close-out: `progress\resume-peds-endpoint-part2.md`. ⚠️ Endpoint/House overlap is chapter-shaped —
   never fold `pedhd-card-6..10` (5 identical stems, 5 different figures). Full detail: archive,
   `## Pruned from MEMORY.md - 2026-09-16`, and `## Pruned from MEMORY.md - 2026-09-05`.
-- ✅ **NEURO CLOSED 2026-09-17 — 493 live** (t09->t12 history in `resume-neuro.md`; **t13 CNS
-  Infections + t14 Back & Lower Limb Pain CLOSED 2026-09-17, 450->493, 0 folds**, commits
-  `45aa11a` staging+drafts, `b34c56c` splice, `c069c54` journal). Close-out:
-  `progress\resume-neuro.md` "Topic 13/14". **Neuro Endpoint — separate 2190-page book, started
-  2026-09-17.** Ch.1 Loc 17 live, Ch.2 Stroke 23 (`e705e43`), ✅ **Ch.3 Epilepsy CLOSED 2026-09-18**
-  — 38 live (`npep-epilepsy-1..9,11..28,30..40`), 533->571 (`827b422` staging, `9d25bb4` splice).
-  Close-out: `progress\resume-neuro-endpoint.md` §7. ✅ Ch.4 Headache CLOSED 571->598 (`f9b666a`); ✅
-  Ch.5 MS + Ch.6 Hemi/paraplegia CLOSED 598->626 (`8bcd730`), close-outs §9/§12. **Model Final Exams
-  UN-deferred 2026-09-22 (owner) — in scope.** New script pipeline (§11) drafted ALL remaining
-  chapters to `.draft.js`, NONE spliced yet: cns/nm/cranial/coma/sympt/anx/mood/soma/child/schiz/
-  emerg/dem/subst/psychopharm/fe2/fe3/fe4 done, fe5 partial, fe6 running. Resume state: §13.
-  ⚠️ OmniRoute gateway process is DOWN (`ECONNREFUSED :20128`, not just quota) — restart via
-  `Desktop\start-omniroute.bat` before any key-read backfill.
+- ✅ **NEURO CLOSED 2026-09-17 — 493 live.** Neuro Endpoint (separate 2190-page book): Ch.1-6 closed
+  598->626 by 2026-09-21; history archive `## Pruned from MEMORY.md - 2026-09-22 (neuro endpoint
+  Ch.1-6 + pipeline detail)`. ✅ Ch.7 Substance-related disorders (6) + Ch.8 Cranial nerve disorders
+  (8 of 14, 6 folded) CLOSED 2026-09-22 (`6746fd5`), 626->640. Close-out: `resume-neuro-endpoint.md`
+  §14. Gateway still down this session despite a relaunch report — key reads ran via Claude subagent,
+  not Gemini; re-check liveness before trusting `npep-finish.mjs` on the 14 chapters left (emerg next,
+  `ps-pharm` filing flag first; then child, cns, nm, coma, sympt, anx, mood, soma, schiz, dem,
+  psychopharm, fe2-4; fe5/fe6 deferred, real per-chapter Codex limit).
   ⚠️⚠️ **RUNNING HEADER LAGS TRUE SECTION ~1 PAGE** — boxed section-title banner + question
   content are the only reliable markers, still applies to T13's own boundary. ⚠️ **Renders die
   with the scratchpad.**

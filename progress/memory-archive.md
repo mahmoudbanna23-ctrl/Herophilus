@@ -1200,3 +1200,17 @@ Printed page = PDF **+1** from PDF 2151 on (pinned 2026-09-21), but `source` cit
 progress, as in ENT. Coverage: `pagecov-oph.js --part 2 --cites-pdf` (index `ocr\ep\index.part2.json`, built by `oph-p2-index.js`).
 Owed items A-F + within-endpoint duplicates CLOSED 2026-09-21, ophtho arrays now **1,853** (`progress\resume-ophtho-endpoint-B-exams.md` part 6); marker sweep CLOSED, ophtho UNLOCKED 2026-09-21 (same file, part 7).
 History: `progress\resume-ophtho-endpoint-A-chapters.md`, archive `## Pruned from MEMORY.md - 2026-09-17` and `2026-09-16 (part 2)`.
+
+## Pruned from MEMORY.md - 2026-09-22 (neuro endpoint Ch.1-6 + pipeline detail)
+✅ **NEURO CLOSED 2026-09-17 — 493 live** (t09->t12 history in `resume-neuro.md`; **t13 CNS
+Infections + t14 Back & Lower Limb Pain CLOSED 2026-09-17, 450->493, 0 folds**, commits
+`45aa11a` staging+drafts, `b34c56c` splice, `c069c54` journal). Close-out:
+`progress\resume-neuro.md` "Topic 13/14". **Neuro Endpoint — separate 2190-page book, started
+2026-09-17.** Ch.1 Loc 17 live, Ch.2 Stroke 23 (`e705e43`), ✅ **Ch.3 Epilepsy CLOSED 2026-09-18**
+— 38 live (`npep-epilepsy-1..9,11..28,30..40`), 533->571 (`827b422` staging, `9d25bb4` splice).
+Close-out: `progress\resume-neuro-endpoint.md` §7. ✅ Ch.4 Headache CLOSED 571->598 (`f9b666a`); ✅
+Ch.5 MS + Ch.6 Hemi/paraplegia CLOSED 598->626 (`8bcd730`), close-outs §9/§12. **Model Final Exams
+UN-deferred 2026-09-22 (owner) — in scope.** New script pipeline (§11) drafted ALL remaining
+chapters to `.draft.js`, NONE spliced yet: cns/nm/cranial/coma/sympt/anx/mood/soma/child/schiz/
+emerg/dem/subst/psychopharm/fe2/fe3/fe4 done, fe5 partial, fe6 running. Resume state was §13 at the
+time; superseded by §14 (Ch.7 Substance-related disorders + Ch.8 Cranial nerve disorders closed).
