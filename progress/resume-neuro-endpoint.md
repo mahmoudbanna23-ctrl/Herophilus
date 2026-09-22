@@ -295,3 +295,25 @@ Pipeline of section 11, first chapters through it. `Q_NEURO` 598 -> 626 (endpoin
   Codex hit its usage limit ~02:29 Cairo, resets 04:03. Gateway `work-vision` (Gemini flash-lite free) is quota-
   exhausted after the key-read passes, so 83 rows have no independent key read yet; rerun `npep-finish.mjs` when
   it recovers. `NPEP_BACKEND=gw` in `npep-codex-rows.mjs` stages rows over the gateway instead of Codex (untested past a 429).
+
+## 13. Batch draft run (2026-09-22, Codex reset + relaunch) — DRAFTED, NONE SPLICED YET
+`relaunch.sh` fired 01:06 UTC on the Codex reset, ran three `npep-run.mjs` queues in parallel
+(`NPEP_K=5`). All chapters up to `fe4` drafted clean (rows = pairs, `missing 0`); `fe5` stopped at
+20/43 (Codex limit again) and `fe6` never started. Rows staged per chapter (pairs / rows / soft-rejected):
+cns 19/19/0 · nm 35/35/0 · cranial 14/14/0 · coma 19/17/2 · sympt 26/25/1 · anx 35/35/0 · mood 34/33/1 ·
+soma 30/28/2 · child 10/9/1 · schiz 30/27/3 · emerg 7/7/0 · dem 13/11/2 · subst 6/6/0 · psychopharm
+18/18/0 · fe2 64/64/0 · fe3 64/64/0 · fe4 71/71/0 · fe5 43/20/0 (partial). **503 rows drafted, 0 spliced.**
+- **Flags are mostly benign** — spot-checked cns/nm `checks.md`: "text vs OCR overlap 0.7-0.85" is the
+  known-benign shape (codex-in-ocr ~1.00, OCR just carries extra page text). The load-bearing flag
+  across every chapter is **"no independent key read"**, because the gateway isn't just quota-capped —
+  **the whole OmniRoute process is down** (`node` fetch to `:20128` returns `ECONNREFUSED`, not a
+  429/503). Needs `Desktop\start-omniroute.bat` restarted before `npep-finish.mjs` can backfill key
+  reads for any of these 18 chapters. Until then, key disagreement/no-mark rows need a Codex or human
+  look at the answer-page image before splice, chapter by chapter.
+- Relaunched fe5 tail + fe6 in the background (`NPEP_BACKEND` unset = Codex own login) the moment
+  Codex was confirmed back this session (log `_ep-work/_runlogs/qC3.log`).
+- **Next real step, per chapter, smallest first (cranial 14, emerg 7, subst 6, child 10, cns 19,
+  coma 19, dem 13, ...):** read `checks.md`, resolve the "no independent key read" rows against the
+  image (Codex or a subagent), hand-edit the draft header, sweep (`tools/qb-pipeline/sweep.js`), fold
+  decisions, `splice-safe.js --go`, `validate.js neuro`, `boot-check`, commit, append the next
+  close-out section (14 onward) here. Do this per chapter — do not batch the splice across chapters.
