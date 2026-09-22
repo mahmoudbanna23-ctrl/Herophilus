@@ -57,7 +57,7 @@ if (!fs.existsSync(INDEX_SRC)) {
 
 // Named by the brief, not guessed from the filesystem: which two subjects are
 // locked for this launch. Which FILES belong to them is worked out below.
-const LOCKED_SUBJECTS = ['neuro']; // ophtho unlocked 2026-09-21, matches LOCKED_MODULES in app/data/modules.js
+const LOCKED_SUBJECTS = []; // neuro unlocked 2026-09-22 (endpoint book closed), ophtho unlocked 2026-09-21, matches LOCKED_MODULES in app/data/modules.js
 
 /* The Theory section as a whole is locked separately from the two locked
  * subjects, and for a different reason: the summaries there are placeholders
