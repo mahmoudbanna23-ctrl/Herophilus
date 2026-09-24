@@ -91,7 +91,12 @@ unrotated, transparent-backed, `border-radius:50%` (reference.md L797-802).
 - **The Clepsydra figure (`app/assets/clep/`, nine poses) is the owner's own
   artwork: never redraw her, never restyle her, never draw anything onto her,
   never use her as a base image for anything new.** Settled three times
-  (reference.md L818-838).
+  (reference.md L818-838). **Amended by the owner 2026-09-23 (3D ruling):** Clepsydra
+  herself — the character, her design identity, recognisable as her — is fixed; her poses
+  may be changed, replaced, re-posed or turned 3D (route: AI image-to-3D from her existing
+  art, Live2D fallback). Gate: a test render shown to the owner before any final art, and
+  the owner picks the licence before her art is uploaded anywhere. Old PNGs stay in git
+  history. Nothing may be drawn onto her flat art (a water level is a separate element).
 - Existing Herophilus images and the medallion icon are never regenerated.
 - No emoji in generated art.
 - No generic "AI art" tells: random gradients, lens flares, glowing neon, stock

@@ -1214,3 +1214,18 @@ UN-deferred 2026-09-22 (owner) — in scope.** New script pipeline (§11) drafte
 chapters to `.draft.js`, NONE spliced yet: cns/nm/cranial/coma/sympt/anx/mood/soma/child/schiz/
 emerg/dem/subst/psychopharm/fe2/fe3/fe4 done, fe5 partial, fe6 running. Resume state was §13 at the
 time; superseded by §14 (Ch.7 Substance-related disorders + Ch.8 Cranial nerve disorders closed).
+
+## Pruned from MEMORY.md - 2026-09-25 (A-to-Z replan + 2026-09-17 re-plan resume bullets, superseded by the master plan)
+
+- **A-TO-Z REPLAN — Gate DONE, next is compiling the spec sheet.** All 10 facets
+  (`progress\app-replan\research-a-to-z\f10..f19-*.md`) refuter-checked + citation-spot-checked (20
+  URLs, no fabrication) + corrected: f16's SRS/notes/highlight/flag reworded from "to build" to
+  ALREADY SHIPPED in `quiz.js` (line cites added); f18's art-cost options now separate zero-new-art
+  reuse / Live2D-deforms-the-art / Blender-is-new-art, Live2D free-tier caps corrected; f19's glow spec
+  reframed as a candidate for the still-open E6 decision, 22 mojibake `?` fixed. f18's "hand-winding
+  tried and reverted" claim CONFIRMED (clepsydra.js:503-505). f14 legitimately thin (0 live sources,
+  self-marked UNVERIFIED — honest, not a defect). Codex account usage-limit (shared quota) caused the
+  earlier f16/f18 failures, resolved via Claude-researcher escalation. Next: compile
+  `research-spec-app-wide.md` per plan → owner review. Plan: `C:\Users\Alfa388\.claude\plans\zippy-tumbling-plum.md`.
+  ⚠️ Compile in a FRESH session — this one is past its ~80-step budget.
+- **APP RE-PLAN 2026-09-17: `progress\PLAN-app-replan-2026-09-17.md`** — B10, B11, B2, B1, B3a-1/-3, B12, easing DONE (2026-09-21, tags `pre-*`, unpushed); home = ONE desk layout + candle; sign-in + card-art fixes LIVE 2026-09-22 (ophtho shipped, `main` pushed). Next: B3b (talk buttons first), B4 — PAUSED behind the A-to-Z replan above. **Resume: `progress\app-replan\plan-until-codex-2026-09-20.md` section H.** Older detail: `progress\memory-archive.md`, pruned 2026-09-20.

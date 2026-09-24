@@ -30,8 +30,16 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 `CLAUDE.md` was trimmed 2026-09-02 into `reference.md` (`## Moved from CLAUDE.md - 2026-09-02`);
 **no live rule left it.**
 
-## Resume here — state at 2026-09-21
-- **APP RE-PLAN 2026-09-17: `progress\PLAN-app-replan-2026-09-17.md`** — B10, B11, B2, B1, B3a-1/-3, B12, easing DONE (2026-09-21, tags `pre-*`, unpushed); home = ONE desk layout + candle; sign-in + card-art fixes LIVE 2026-09-22 (ophtho shipped, `main` pushed). Next: B3b (talk buttons first), B4. **Resume: `progress\app-replan\plan-until-codex-2026-09-20.md` section H.** Older detail: `progress\memory-archive.md`, pruned 2026-09-20.
+## Resume here — state at 2026-09-25
+- **APP MASTER PLAN — DRAFT, AWAITING OWNER APPROVAL (2026-09-25): `progress\PLAN-app-master-2026-09.md`**
+  (phases P0-P12, P7/P8/P9 split a/b; J9 team talk + Opus refuter folded in,
+  `progress\app-replan\j9-team-talk\minutes.md`). Owner to confirm fork 5 (P3 mocks beside P0/P1).
+  On approval: add a "superseded by" line atop `PLAN-app-replan-2026-09-17.md` and
+  `research-living-scene\DECISION-2026-09-21.md`, then start P0. Rollback tag `pre-master-replan`
+  (local). Owed by owner: Meshy licence (before ANY Clepsydra upload), Osmosis/First Aid screenshots,
+  candle-desk yes, lab-values source, Peds tag plain vs boxed, privacy wording, water-level definition.
+  Deploy freeze R9: no Pages upload 09-26..27, 10-02..03, 10-17..19. Superseded resume bullets:
+  archive `## Pruned from MEMORY.md - 2026-09-25`.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
 boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho
 ENDPOINT is a separate book — 2,442 pp / 293 MB; do NOT split the PDF, split the page RANGE.**
@@ -182,7 +190,8 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
 - Cleanup awaiting approval (nothing without a yes): 173 MB ophtho zip, two Peds PPT stubs, `files.zip`. The 2026-08-31 move to `_archive\` is done — pointer `progress\token-economy\ARCHIVE-MOVED.md`.
 
 **⚠️ THE ONE THING THAT MUST SURVIVE ANY SUMMARY: the Clepsydra is the user's own artwork —
-do not redraw her, do not draw anything onto her.**
+do not redraw her, do not draw anything onto her. She is fixed; her poses may change or go 3D only
+via a test render the owner sees, never uploaded before he picks the licence (3D ruling 2026-09-23).**
 
 ## Connections to other projects
 

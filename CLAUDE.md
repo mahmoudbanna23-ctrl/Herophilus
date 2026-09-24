@@ -125,8 +125,10 @@ Dark cinematic Greek design, rebuilt from **the user's own artwork**. Full histo
 film/ambient rules, icon pipeline and measurements: `reference.md` §6. The standing rules:
 
 - **⚠️ THE CLEPSYDRA IS THE USER'S OWN ARTWORK. Do not redraw her, and do not draw anything
-  onto her** — settled three times in one day; the answer is always *ask for artwork*. Nine
-  poses at `app\assets\clep\`; the figure never re-themes.
+  onto her.** **3D ruling (owner 2026-09-23):** SHE is fixed — who she is, her design identity,
+  recognisable as her; her poses may be changed, replaced, re-posed or turned 3D, but only via a
+  test render the owner sees before final art, and no upload before he picks the licence. Old
+  PNGs (`app\assets\clep\`, nine) stay in git history; the figure never re-themes.
 - **ALIVE TO BROWSE, CALM TO READ**: orbs/reveal run on browse views, pause and dim on quiz,
   mock, review, theory. Exception, user's explicit decision: **her glitch is NOT gated** on
   reading views; `prefers-reduced-motion` stops every loop (JS timers included).
