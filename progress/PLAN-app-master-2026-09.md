@@ -50,13 +50,13 @@ Carried look rulings (owner Q3/Q5, Claude's delegated calls 2026-09-23):
 no spinning icons · no pulsing idle glow · no hover lift (quiet colour change instead) · no pills ·
 no emoji · no gradients in the interface (scene art exempt) · scene on home + subject pages only ·
 one desk layout · clock counts up everywhere except the timed mock, which counts down like the real
-exam · **neon edges DROPPED** (supersedes the 2026-09-21 keep), thin muted borders instead · dark
+exam · **neon edges DEFAULT** (owner overruled the drop after P3, 2026-09-25; thin muted borders out) · dark
 default, light theme later keyed to the system setting · plain line dividers; the only water level
 is in Clepsydra's vessel. Already built and kept: tokens (B1), type scale (B3a-3), Gentle spring
 easing. Chosen but NOT built: Travelling-light buttons + Ink-mark chips (B3b brief; nothing in
 `app\` touched, `plan-until-codex-2026-09-20.md:278`), outline play icon. **Peds tag: sources
 conflict** — plain text (`DECISION-2026-09-21.md:57`, A7) vs boxed (`plan-until-codex:280`); owed by
-the owner (§6). Neon: kept dropped, but P3 shows ONE labelled neon comparison on the same screen so
+the owner (§6). Neon: OWNER RULED DEFAULT 2026-09-25 after P3 Q1 B. P3 showed ONE labelled neon comparison on the same screen so
 the owner decides by eye (J9, 3 of 4 seats).
 
 Fixed facts (measured, not opinions): `file://` blocks `fetch()` and plain-image WebGL textures;
@@ -73,7 +73,7 @@ PWA parts are inert under `file://` (owner Q4 "both"), so no workspace rule chan
 |---|---|---|---|
 | Data loading | rework | Keep classic-script payloads (f21); add `data/manifest.js`; load a subject's files by script injection when opened; home loads < 1 MB. **IndexedDB cache dropped** (J9, 4 of 4): on Pages the service worker caches data, on disk the files are already local — closes the f21/f22 double cache. What IndexedDB would also have saved is the parse (`f21:65`); per-subject loading cuts that to one subject's files, which is the measured target instead. | P2 |
 | File structure | keep | Split already done (6 CSS, 11 JS). f10's namespace/IIFE refactor only where a phase already edits a file; no big-bang rewrite. | — |
-| Look system | keep + rework | Tokens and type scale stay; neon edges out, thin muted borders in; light theme later. | P4, P11 |
+| Look system | keep + rework | Tokens and type scale stay; neon edges DEFAULT (owner 2026-09-25); light theme later. | P4, P11 |
 | Quiz | keep | SRS, notes, strike, flags, mock, cases all ship today. Fix F-on-✕ and c2-1 in P0. Timed mock gains the countdown exception. | P0, P4 |
 | Sessions | keep | Timestamps, `paintSessionLive()`; untouched except Clepsydra's voice hooks. | P6 |
 | Home + scene | rebuild | One combined layout: desk band + subject list; candle over the desk (method in §6 D1). | P3, P5 |
@@ -156,7 +156,7 @@ Each ships alone. "Check" is the machine check; R8 applies to all.
   app code, so it may run beside P0/P1; no functional phase (P2 onward) starts before P0 and P1
   pass. A bug that blocks studying is fixed at once, outside the phase order.
 - **P4 Controls + borders.** Build the existing B3b brief (Travelling-light buttons, Ink-mark
-  chips); neon edges out, thin muted borders in; answer feedback settles ~150 ms (M8); timed-mock
+  chips); neon edges DEFAULT (owner 2026-09-25); answer feedback settles ~150 ms (M8); timed-mock
   countdown. Check: contrast AA both themes, emoji 0, no hover-lift rule.
 - **P5 Home build.** To the P3 pick: desk band, candle, subject list, last-used first. Scene on
   home + subject only. Check: shots 1280×800, 820×1180, 1180×820, 390×844; matched trace static vs
@@ -245,7 +245,7 @@ Living-scene DECISION-2026-09-21 disputes and steps:
 | Item | Fate |
 |---|---|
 | D1 first flame method | P3: DOM/CSS flame over an unlit wick first; canvas only if the owner rejects it by eye |
-| D2 edge glow | **closed**: dropped with neon edges (Claude's call, owner may overrule) |
+| D2 edge glow | **reopened**: owner made neon edges the default 2026-09-25; edge glow follows them into P4 |
 | D3 pass gates | P5: Astra's route — matched static-vs-candidate traces first, then write a refresh-aware budget |
 | D4 exact layouts H1/B1/Q1/R1 | P3 mock-ups with fixture tasks at narrow width, keyboard-only |
 | D5 video | reopened for P7b only: the one live film is the sign-in `ambient-library.mp4` (`index.html:55`); no desk loop exists (`DECISION:12`) and the first pilot stays video-free (`DECISION:33`); 3D loops would be baked mp4 |

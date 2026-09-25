@@ -41,5 +41,5 @@
 ## Owner picks (2026-09-25)
 
 - Desk: painted.
-- Q1: B. Whether the neon edge becomes the default or stays an option is not yet ruled.
+- Q1: B, and neon edges are the DEFAULT (owner, 2026-09-25).
 - R1: A.
