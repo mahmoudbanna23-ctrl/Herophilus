@@ -187,14 +187,17 @@ Each ships alone. "Check" is the machine check; R8 applies to all.
   and so does each user's state. **Owner ruling 2026-09-25: cloud progress splits into one
   document per subject.** Migration: first sync reads the old single doc, writes the per-subject
   docs, keeps the old doc until a read-back matches; local `wardround.*` keys are NEVER renamed.
-  Proposed, awaiting owner yes: sync every 30-60 s + on tab hide/close (from 1.2 s, `gate.js:266`),
-  roster written only on change (`gate.js:294`); Cloudflare D1 via `_worker.js` as primary store,
-  Firestore as second copy (newest `updatedAt` wins, worker verifies the Firebase ID token); R2 for
-  media; a static mirror host for failover (its domain added to Firebase auth); usage alerts at
-  ~70% of each free tier, then paid steps (Workers Paid, then Blaze) with billing-off alerts.
+  Store: **Firestore only** — per-subject docs, measured; a second store only on measured need
+  (D1-primary + Firestore-copy DROPPED 2026-09-25 after the Codex gap review, §8: "newest
+  `updatedAt` wins" loses work). Proposed, awaiting owner yes: replace the 1.2 s debounce
+  (`gate.js:262-266`) with a bounded dirty-state scheduler + durable retry, hide/close as best
+  effort; roster written only on change (`gate.js:294`); R2 for media; a static mirror for
+  failover only (it cannot see permanent-origin localStorage — recovery via cloud/export); usage
+  alerts at ~70% of each free tier, spend threshold + alert recipient named, tested provider-side
+  write-disable in the runbook. Migration protocol, rules for the new paths and backup: §8.
   Free-tier and price figures are general knowledge, UNVERIFIED — check the dashboards first.
-  Owed: rough students per year. Seats: astra (worker, sync, migration), terra (rest), Opus
-  refuter; Astra's P12 pass covers the worker.
+  Owed: rough students per year. Seats: astra (sync, migration, rules), terra (rest), Opus
+  refuter.
 - **P10 Hardening.** f12/B6 accessibility and mobile; f15 CSP Report-Only; inline-handler count then
   cleanup plan; the CSP must allow the classic data `<script>` tags. Check: 0 AA failures,
   keyboard-only quiz, CSP report shows no violations. Runs before P11 so light theme is built on a
@@ -298,3 +301,51 @@ Spend: $0 by default. Codex login (paid already) does builds; free gateway combo
 roles for refuters. Meshy free tier for the pilot; Meshy Pro $20/month only on the owner's explicit
 yes. Backup: `git tag pre-master-replan` before the Deliver edits; per-phase tags per R8;
 `wardround.bak.<profileId>` snapshots untouched.
+
+## 8. Codex gap review — 2026-09-25 (build to deploy)
+
+Two rounds with Codex `gpt-6-astra` (read-only), every round-1 citation checked on disk by a
+Claude refuter (26/26 confirmed). Files: `app-replan/codex-gap-review-2026-09-25/`. Outcomes,
+each placed in its phase; nothing here is built until that phase runs.
+
+- **P0:** device + throttled-network baseline (parse time, peak memory, transfer), budgets then
+  applied per loading/media phase incl. P5, P6b.
+- **P1 exit conditions (sync correctness is a prerequisite, not capacity work — §3 "Sync: keep"
+  is amended to this):** a clock per independently mutable record (`srs`, `hl`, `flags`, `conf`,
+  `days`, `sched` today ride the whole-state clock, `gate.js:221-222`; `conf` changes without a
+  timestamp, `quiz.js:526-536`) + tombstones for every delete (highlights, notes, profiles,
+  schedule marks) + deterministic tie rule + explicit clock-skew behaviour. Schedule items get
+  stable ids (deletes renumber array keys, `sessions.js:341-348`). Cloud state validated like
+  import (`gate.js:287-290` vs `boot.js:275-284`). Profile deletion also removes
+  `wardround.bak.<profileId>` and surfaces a failed cloud delete. Profiles store the owning UID:
+  a profile linked to account A never uploads under B without an explicit action; an unlinked
+  profile asks before upload; sign-out offers device removal and surfaces failure (`gate.js:139`
+  swallows it). SRI on the CDN loader before the next release using it. Named acceptance cases:
+  real auth, blocked popup/redirect, account switch, offline restart, storage failure, migration
+  interruption, SW update; supported-browser matrix incl. iOS Safari and Android.
+- **P1 content:** report button copies question id + content revision + release id and opens
+  mailto/WhatsApp to an owner-controlled address; it never says "delivered" or "review pending"
+  (today it stores the report in private progress, `quiz.js:797-798`). No inbox server.
+- **Rights gate (P1 for source, before any external upload for generated assets):** register of
+  generated assets (art, TTS, Lyria, Meshy) with licence + attribution; owner-signed attestation
+  naming the source material, figures, release and intended distribution; a withdrawal
+  procedure. The attestation records the owner's clearance claim, not independent legal clearance.
+- **Before P2:** per-subject migration protocol — versioned state/export schemas, per-profile
+  subject paths, global-field ownership, resumable markers, old-client compatibility, unknown ids,
+  rollback, recovery fixtures. Extend the existing validated export (`boot.js:191-284`), not a new one.
+- **P2/P9a:** "full corpus offline" only after an explicit full-download state (size, progress,
+  readiness, resume, eviction test).
+- **P9a:** a waiting service worker never activates mid-session; no activation-logic change
+  inside a freeze window; old caches kept for rollback.
+- **P9c:** Firestore rules written with the new paths, constraining shape and size; tested
+  unauthenticated, cross-user, malformed, oversized; deployed rules revision recorded.
+- **Backup (owner decides after checking price):** (a) scheduled daily managed export with
+  retained copies, separate access and a clean restore drill — target at most 24 h of
+  cloud-committed progress lost; or (b) $0, stated as **no operator-managed recovery guarantee**.
+  Replication (second store, multi-device) is not backup.
+- **CSP:** enforcement proven in preview (malicious fixtures, reporting shown to work) before
+  promoting any release that ships it — not left to P12.
+- **Ops (P12):** no in-app usage metrics. Runbook: exact upload artifact + exclusions +
+  checksums, rules/config, post-upload checks, rollback rehearsal, provider-side write-disable.
+  Sealed account-recovery document with recovery codes, kept apart from the devices it recovers,
+  rehearsed once. Stated limit: one owner, so owner incapacity can leave recovery unavailable.

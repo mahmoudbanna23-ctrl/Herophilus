@@ -1,0 +1,31 @@
+ROLE: independent reviewer on a planning board. You are read-only. Do not edit, create or delete any file. Do not run git write commands. Do not contact any network service.
+
+GOAL: find what the app master plan MISSED or got WRONG, across every aspect of the app, from basic build requirements through to deployment and operation after launch. The owner wants a debate: argue, do not agree for politeness. The plan's author (Claude) will reply to your points in a second round.
+
+REPO: current directory = Herophilus, a medical question-bank + revision web app for Alexandria University students. It ships only `app/`. Live at https://herophilus.pages.dev (Cloudflare Pages, manual upload). Firebase Auth (Google sign-in) + Firestore for optional cloud sync; app must work local-only and offline.
+
+READ, in this order, narrowly (use rg to locate; do not dump whole large files):
+1. progress/PLAN-app-master-2026-09.md  (the plan under review; phases P0-P12, section 6 holds owner answers, P9c is a new draft on scale + backup)
+2. CLAUDE.md sections 2, 6, 7 (fixed code constraints, design rules, how changes are verified)
+3. progress/app-replan/j9-team-talk/minutes.md (team sheet: who builds what)
+4. Spot-check real code only to confirm or refute a gap: app/index.html, app/js/*.js (gate.js holds auth + sync: pushTimer ~line 266, pushCloud ~268-294), app/data/modules.js, any service worker, firestore rules file if present, _headers / _redirects if present.
+Do NOT read app/data/questions.*.js bodies (multi-MB); count or rg them only if a gap depends on it.
+
+FIXED RULINGS (do not propose breaking these; if one blocks a real need, say so explicitly as a conflict):
+- Vanilla HTML/CSS/JS. No framework, no build step, no bundler, no npm. Must run from file:// and offline.
+- Data files are classic scripts using var, not ES modules.
+- Never rename the wardround.* localStorage keys.
+- The Clepsydra figure is the owner's own artwork: never redrawn, nothing drawn onto her.
+- herophilus.pages.dev is the permanent origin (localStorage is per-origin). Netlify is blocked in Egypt.
+- Deploy freeze: no upload 09-26..27, 10-02..03, 10-17..19 (exam dates).
+- Owner decided 2026-09-25: cloud progress splits into one document per subject.
+
+CHECKLIST — cover every row, say "covered (plan ref)" or "GAP":
+build requirements and repo hygiene · data schema/versioning/migrations of stored state · auth flows and edge cases (file://, popup blocked, account switch, sign-out on shared device) · sync correctness (conflicts, multi-device, offline queue, clock skew, partial writes) · Firestore rules and quotas · security (CSP, XSS in question/explanation HTML, secrets, dependency/CDN integrity, abuse) · privacy and legal (policy, consent, data deletion, copyright of scanned question banks, licences of generated art/audio/3D) · accessibility · performance on low-end Android and slow Egyptian mobile networks (payload size of question files, lazy load, caching) · service worker / offline / update rollout and cache busting · browser support · content pipeline integrity after launch (corrections, reporting a wrong question, versioning question ids) · testing and verification (what automated checks exist, what should) · observability (error reporting, usage metrics, quota alerts) · backup and restore, disaster recovery · deployment process (manual upload, rollback, preview/staging, domain, headers) · scale over 5 years x 10 semesters of cohorts · support and user feedback channel · ownership/bus factor/documentation · cost controls.
+
+OUTPUT (write only this, plain markdown, max 1800 words):
+A. GAPS — numbered, most severe first. Each: severity (blocker/high/medium/low) · one-line gap · evidence (file:line or plan section) · concrete fix · which phase it belongs in.
+B. WRONG OR RISKY in the plan — numbered, same fields.
+C. Checklist rows you judge fully covered, one line listing them.
+D. Anything you could not verify, marked UNVERIFIED.
+Never invent a file, line number or feature you did not see.

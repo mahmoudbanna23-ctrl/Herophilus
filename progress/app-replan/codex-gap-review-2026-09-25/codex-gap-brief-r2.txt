@@ -1,0 +1,19 @@
+ROLE: same board, round 2. Read-only; no edits, no git writes, no network.
+
+Your round-1 review is at: C:/Users/Alfa388/AppData/Local/Temp/claude/D--claude-os-Medical-school-Herophilus/e0eb2373-e963-4ad1-98eb-7fdbc6d6a899/scratchpad/codex-gap-r1.md
+The plan: progress/PLAN-app-master-2026-09.md
+
+The plan author (Claude) replies below. ACCEPTED points need only a phase placement check. CONTESTED points: argue back or concede, with evidence. Do not repeat round 1.
+
+ACCEPTED as stated: A3 (migration protocol), A4 (rules for new paths + payload/size constraints), A6 (deletion must cover wardround.bak.<profileId> and surface cloud-delete failure; no resurrection by stale device), A9 (validate cloud input like import; SRI on CDN loader), A10 (device/throttle budgets), A11 (named acceptance cases incl. auth/popup/offline/migration/SW update; browser matrix), B1 (sync correctness is a prerequisite, not capacity work), B2 (DROP D1-primary + Firestore-secondary for now: per-subject docs on Firestore only, measure, add a second store only on measured need), B3 (SW waiting-worker never activates mid-session; no activation logic change inside freeze windows), B4 (explicit full-download state with size/progress/readiness), B5 (enforce CSP in preview before promotion; prove reporting works), B6 (extend existing export; debounce not interval; mirror is failover only, recovery via cloud/export).
+
+CONTESTED:
+C1 (your A2): per-record revisions everywhere is heavy for a solo-owner vanilla app. Counter-proposal: per-subject docs + the per-record timestamps merge already has (gate.js:213-250) + deletion tombstones only where deletes exist (highlights, notes, profiles) + deterministic tie rule. Is that enough? Name any record type it still loses.
+C2 (your A7): the owner states he holds clearance for the course material he supplies (owner ruling 2026-09-08). Counter-proposal: rights register only for GENERATED assets (art, TTS, Lyria, Meshy) + a withdrawal procedure + owner-signed attestation line for source material. Is that sufficient as a release gate, or is something still missing?
+C3 (your A8): counter-proposal: no report inbox server. Report button copies question id + content revision + release id and opens a mailto/WhatsApp link; copy on the button changed so it does not promise a review it cannot deliver. Acceptable?
+C4 (your A12): counter-proposal: no in-app usage metrics at all (privacy); rely on provider dashboards + billing alerts + a remote sync kill switch read from a static JSON on Pages that keeps local work. Enough?
+C5 (your A13): single human owner, no backup human exists. Counter-proposal: runbook + sealed account-recovery document held by the owner. Anything cheaper or better?
+C6 (your A1): minimal version: on sign-in, a local profile not yet linked to an account asks "add to this account?" before upload; sign-out offers "also remove my progress from this device". Enough?
+C7 (your A5): independent backup. Option (a) scheduled managed Firestore export (general knowledge: needs a paid plan, UNVERIFIED); option (b) nothing server-side, rely on per-user export + multi-device copies. Which, and what recovery window is honest to promise?
+
+OUTPUT (plain markdown, max 900 words): for each C1-C7: CONCEDE or HOLD + reason + evidence. Then: any ACCEPTED item you would place in a different phase. Then: anything NEW you now see that round 1 missed (max 3). Never invent a file, line or feature.
