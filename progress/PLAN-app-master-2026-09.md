@@ -190,7 +190,10 @@ Each ships alone. "Check" is the machine check; R8 applies to all.
 - **P11 Light theme.** Daytime desk plate (window light, no candle), system-keyed; contrast at both
   light extremes; print block selector unchanged.
 - **P12 Final gate** (old B9): check-all, print test, portrait renders, full-diff Opus refuter,
-  owner reads on phone and laptop. Done when the owner says it feels made.
+  **Astra black-box security pass** on the live URL after the final upload (owner 2026-09-25;
+  brief `app-replan\astra-security-brief.md`, never run — refresh it for the SW, CSP, lazy load and
+  export/import first; findings to `bugs.md`; fixes by terra, re-check by the Opus refuter, never
+  Astra on its own fix), owner reads on phone and laptop. Done when the owner says it feels made.
 
 ## 6. Every open item, mapped
 
