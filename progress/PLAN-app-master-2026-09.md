@@ -239,14 +239,24 @@ Living-scene DECISION-2026-09-21 disputes and steps:
 | E7 contrast at brightest/dimmest frame | P5, P11 checks |
 | E8 build after Neuro banks | gate met: Neuro endpoint closed 2026-09-22 |
 
+Owner answers 2026-09-25 (recorded; the owed list below is what is left):
+- Fork 5 phase order: Claude's call stands (P3 mocks beside P0/P1).
+- Meshy licence: APPROVED (free tier, CC BY 4.0 public). Owner also asks for a search of 3D tools
+  on OmniRoute or Codex before P7a; the catalogue call hung twice on 2026-09-25, search not done.
+- Lab values: course material where found, outside values tagged `not taken from the course
+  material` where not — P8a.
+- Peds tag: plain text — P4.
+- Candle desk: yes only on a photo-real desk, and the owner is unsure of that desk. P3 mocks two
+  plates side by side (photo-real vs painted in her drawn style), both with the code flame; owner
+  picks by eye.
+- Osmosis / First Aid screenshots: DROPPED as owed — they were only layout references for f6
+  (Osmosis returned 403 to the researcher); P3 proceeds without them.
+
 Still owed by the owner (each blocks only the phase named):
-- Osmosis / First Aid screenshots or a description — P3 (mocks proceed without; they only refine).
-- Candle-desk confirmation (Claude's recommendation: keep the candle desk, flame by code) — P3/P5.
-- Meshy licence choice (CC BY 4.0 public vs paid Private) — P7a.
-- Lab-values source: course material or tagged outside values — P8a.
-- Peds tag: plain text or boxed (sources conflict, §2) — P4.
 - Privacy wording approval — P9b.
-- Water-level definition (what counts, target, reset) — P3, before P6.
+- Water-level definition (what counts, target, reset) — P3, before P6. Claude's defaults on the
+  table: every answered question counts, repeats included; 100 a day; reset at local midnight.
+- Formal approval of this plan as a whole.
 
 Old plan §6 parked list (`PLAN-app-replan-2026-09-17.md:424-430`): lecture-derived questions and
 public launch stay parked (`ideas-parking.md`); PWA moved to P9a; new poses now allowed under the

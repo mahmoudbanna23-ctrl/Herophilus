@@ -36,8 +36,9 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
   `progress\app-replan\j9-team-talk\minutes.md`). Owner to confirm fork 5 (P3 mocks beside P0/P1).
   On approval: add a "superseded by" line atop `PLAN-app-replan-2026-09-17.md` and
   `research-living-scene\DECISION-2026-09-21.md`, then start P0. Rollback tag `pre-master-replan`
-  (local). Owed by owner: Meshy licence (before ANY Clepsydra upload), Osmosis/First Aid screenshots,
-  candle-desk yes, lab-values source, Peds tag plain vs boxed, privacy wording, water-level definition.
+  (local). Owner answered 2026-09-25 (plan §6): Meshy CC BY approved, Peds tag plain, lab values
+  source-then-tagged, screenshots dropped, candle desk = P3 mocks photo vs painted plate. Still owed:
+  plan approval, privacy wording, water-level definition. TODO: 3D-tool search (gateway hung twice).
   Deploy freeze R9: no Pages upload 09-26..27, 10-02..03, 10-17..19. Superseded resume bullets:
   archive `## Pruned from MEMORY.md - 2026-09-25`.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
