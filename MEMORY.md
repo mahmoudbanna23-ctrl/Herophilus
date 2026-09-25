@@ -39,7 +39,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
   (local). Owner answered 2026-09-25 (plan §6): Meshy CC BY approved, Peds tag plain, lab values
   source-then-tagged, screenshots dropped, candle desk = P3 mocks photo vs painted plate, water level
   = every answer counts, 100/day, midnight reset. Plan §6 gen map + audio P6b; §8 = Codex gap review (P1 sync exit conditions; P9c Firestore-only, per-subject — owner ruling; D1 DROPPED).
-  Owed by owner: backup (a) paid daily export vs (b) $0 no guarantee · rights attestation · report address · students/yr · privacy wording · Astra baseline go? · push 9 local commits? NEXT: probe gen models, then P0 — ALL design+code DISPATCHED per team sheet.
+  Owed by owner: backup (a) paid daily export vs (b) $0 no guarantee · rights attestation · report address · students/yr · privacy wording · Astra baseline go? · push 10 local commits? P0 DONE `77372af` (slow-3G UNCONFIRMED; 2 latent lock-check flaws in `p0/REFUTE-round2.md`). P3: OWNER PICKED PAINTED desk 2026-09-25; mocks pass review (fix rounds 1-6 in `mocks/p3-fix-brief.md` + NOTES); `shoot.mjs` runs only OUTSIDE Codex sandbox (CDP). Plates: Codex image gen (Gemini image 429 on this key); round-2 plates owe left-third calm (painted) + level lines (photo). ONE Codex job at a time (sandbox acct lockout 1909).
   Deploy freeze R9: no Pages upload 09-26..27, 10-02..03, 10-17..19. Superseded resume bullets:
   archive `## Pruned from MEMORY.md - 2026-09-25`.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
@@ -129,7 +129,7 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
   `for i… if(!(i in A))`, **zero holes, every file `eval`s clean**): ENT **2,322** (2,240 q + 82 c) ·
   **Ophtho 1,598** · Neuro **304** (297 q + 7 c) · Peds House **393** · Peds endpoint **1,334**
   (p1 704 + p2 630, both CLOSED). ⚠️ **The case arrays are `C_ENT`/`C_NEURO`/`C_OPHTHO`/`C_PEDS`, not
-  `CASES_*`** (ophtho and peds hold 0). **5,951 is a STALE pre-neuro-endpoint corpus figure, not current** — `LOCKED_MODULES` is now `[]` (neuropsych unlocked 2026-09-22, ophtho unlocked 2026-09-21); only `THEORY_LOCKED` still holds chapters out. A full recount from disk is owed before quoting a new total.
+  `CASES_*`** (ophtho and peds hold 0). **5,951 is a STALE pre-neuro-endpoint corpus figure, not current** — `LOCKED_MODULES` is now `[]` (neuropsych unlocked 2026-09-22, ophtho unlocked 2026-09-21); only `THEORY_LOCKED` still holds chapters out. **RECOUNT 2026-09-25 (vm-load, holes indexed): 6,956, 0 holes, 12 files parse** — ENT 2,240+82c · neuro 1,047+7c · ophtho 1,273+433+147 · peds 393+704+630.
   ✅ **BOOTED `file://` 2026-09-07, 0 errors**: `QUESTIONS 4049 · THEORY 81 · MODULES 4 · 153 chapter rows, 80 with questions`; per module ent 30 · ophtho 36 · neuropsych 36 · pediatrics 51. Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`; options 2–10 coexist (2:10 · 3:67 · 4:3836 · 5:1365 · 8:1 · 9:1 · 10:6).
   ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js` BY ~440 — load the array.**
 - **✅ THE BOOT CHECK IS NOW A REPO TOOL: `node tools\boot-check\boot-check.js`** (2026-09-02) —

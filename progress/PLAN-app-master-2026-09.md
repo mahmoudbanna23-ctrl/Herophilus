@@ -268,6 +268,13 @@ Owner answers 2026-09-25 (recorded; the owed list below is what is left):
   looked at, owner picks. Painted plate may send her PNGs as STYLE reference (owner OK) — nothing
   is drawn onto her, she is never regenerated. Her voice text P6 = `work-text`, checked against
   f20. P3 mock HTML = Codex terra. Clepsydra 3D = Meshy by the owner's hand. Water level = code.
+  SketchUp connector (owner 2026-09-25): FALLBACK ONLY — a desk blockout with fixed cameras at
+  the four P5 sizes, used as a composition reference, and only if the Gemini plates drift between
+  aspect ratios. Claude-only tool, so one bounded Claude role; never for her, never final art.
+  Connectors added 2026-09-25 (probed same day): PubMed WORKS (outside-knowledge citations, P8a
+  and gap fills); Unsplash WORKS (email confirmed; P3 photo-real plate candidate, licence into the
+  rights register; "candlelit wooden desk" = 2,319 hits, top 3 are lamp/laptop desks, not candles); Cloudflare auth WORKS, R2 not enabled (403
+  10042) — enable only when P9c needs it; no Pages upload tool, so uploads stay manual.
   On hold until checked: `veo-free/*` and `veoaifree-web/*` video (unknown wrappers, Seedance
   version unstated; a `-web` scraper is banned), AI Horde (public volunteer queue).
 - Audio ADDED (owner yes 2026-09-25), new phase P6b after P6: her lines spoken via Gemini TTS,
