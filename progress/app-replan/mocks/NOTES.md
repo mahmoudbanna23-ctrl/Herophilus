@@ -37,3 +37,9 @@
 - Measured (CDP, true 390x844): min gap 19.5px on all four pages, all against `.clep`; scrollWidth 375 on all four. Desktop 1280x800 unchanged (vessel still at base `right:31%`, not the mobile 191px value).
 - Fix: `.water:after` reverted, moved to `.vessel:after` below the vessel (`top:100%;margin-top:16px`, left-aligned, no transform); `.vessel{bottom:52px}` (was 32px) opens room under it.
 - Re-measured: min gap 14.0px on all four pages, all "below label vs vessel" (its own tightest edge); scrollWidth 375; desktop unchanged.
+
+## Owner picks (2026-09-25)
+
+- Desk: painted.
+- Q1: B. Whether the neon edge becomes the default or stays an option is not yet ruled.
+- R1: A.
