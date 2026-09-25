@@ -31,14 +31,15 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 **no live rule left it.**
 
 ## Resume here — state at 2026-09-25
-- **APP MASTER PLAN — DRAFT, AWAITING OWNER APPROVAL (2026-09-25): `progress\PLAN-app-master-2026-09.md`**
+- **APP MASTER PLAN — APPROVED 2026-09-25: `progress\PLAN-app-master-2026-09.md`**
   (phases P0-P12, P7/P8/P9 split a/b; J9 team talk + Opus refuter folded in,
-  `progress\app-replan\j9-team-talk\minutes.md`). Owner to confirm fork 5 (P3 mocks beside P0/P1).
-  On approval: add a "superseded by" line atop `PLAN-app-replan-2026-09-17.md` and
-  `research-living-scene\DECISION-2026-09-21.md`, then start P0. Rollback tag `pre-master-replan`
+  `progress\app-replan\j9-team-talk\minutes.md`). Fork 5: P3 mocks beside P0/P1. Superseded-by
+  lines added atop `PLAN-app-replan-2026-09-17.md` and
+  `research-living-scene\DECISION-2026-09-21.md` (both untracked). NEXT: start P0. Rollback tag `pre-master-replan`
   (local). Owner answered 2026-09-25 (plan §6): Meshy CC BY approved, Peds tag plain, lab values
-  source-then-tagged, screenshots dropped, candle desk = P3 mocks photo vs painted plate. Still owed:
-  plan approval, privacy wording, water-level definition. TODO: 3D-tool search (gateway hung twice).
+  source-then-tagged, screenshots dropped, candle desk = P3 mocks photo vs painted plate, water level
+  = every answer counts, 100/day, midnight reset. Still owed: privacy wording (P9b). TODO first:
+  3D-tool search on OmniRoute/Codex (gateway catalogue hung twice 2026-09-25), then P0.
   Deploy freeze R9: no Pages upload 09-26..27, 10-02..03, 10-17..19. Superseded resume bullets:
   archive `## Pruned from MEMORY.md - 2026-09-25`.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,

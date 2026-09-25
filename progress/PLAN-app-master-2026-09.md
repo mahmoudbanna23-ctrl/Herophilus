@@ -1,8 +1,8 @@
 # Herophilus app — master plan, 2026-09
 
-Status: **DRAFT 2026-09-25 — J9 team talk and Opus refuter done and folded in
-(`app-replan\j9-team-talk\minutes.md`); awaiting owner approval.**
-On approval it supersedes `progress\PLAN-app-replan-2026-09-17.md` and
+Status: **APPROVED by the owner 2026-09-25** (J9 team talk and Opus refuter folded in,
+`app-replan\j9-team-talk\minutes.md`).
+It supersedes `progress\PLAN-app-replan-2026-09-17.md` and
 `progress\app-replan\research-living-scene\DECISION-2026-09-21.md` (each gets one "superseded by"
 header line, nothing else changes in them).
 Inputs: `app-replan\research-spec-app-wide.md` (f1-f22), `app-replan\retrospective-2026-09-23.md`
@@ -254,9 +254,8 @@ Owner answers 2026-09-25 (recorded; the owed list below is what is left):
 
 Still owed by the owner (each blocks only the phase named):
 - Privacy wording approval — P9b.
-- Water-level definition (what counts, target, reset) — P3, before P6. Claude's defaults on the
-  table: every answered question counts, repeats included; 100 a day; reset at local midnight.
-- Formal approval of this plan as a whole.
+Answered the same day: water level counts every answered question, repeats included; target 100 a
+day; reset at local midnight. Plan approved.
 
 Old plan §6 parked list (`PLAN-app-replan-2026-09-17.md:424-430`): lecture-derived questions and
 public launch stay parked (`ideas-parking.md`); PWA moved to P9a; new poses now allowed under the
