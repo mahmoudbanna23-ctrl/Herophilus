@@ -35,11 +35,11 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
   (phases P0-P12, P7/P8/P9 split a/b; J9 team talk + Opus refuter folded in,
   `progress\app-replan\j9-team-talk\minutes.md`). Fork 5: P3 mocks beside P0/P1. Superseded-by
   lines added atop `PLAN-app-replan-2026-09-17.md` and
-  `research-living-scene\DECISION-2026-09-21.md` (both untracked). NEXT: start P0. Rollback tag `pre-master-replan`
+  `research-living-scene\DECISION-2026-09-21.md` (both untracked). NEXT: P3 closed; start P4 (look system: painted desk, neon default, Q1 B, R1 A) + final painted plate art. Rollback tag `pre-master-replan`
   (local). Owner answered 2026-09-25 (plan §6): Meshy CC BY approved, Peds tag plain, lab values
   source-then-tagged, screenshots dropped, candle desk = P3 mocks photo vs painted plate, water level
   = every answer counts, 100/day, midnight reset. Plan §6 gen map + audio P6b; §8 = Codex gap review (P1 sync exit conditions; P9c Firestore-only, per-subject — owner ruling; D1 DROPPED).
-  Owed by owner: backup (a) paid daily export vs (b) $0 no guarantee · rights attestation · report address · students/yr · privacy wording · Astra baseline go? · push 10 local commits? P0 DONE `77372af` (slow-3G UNCONFIRMED; 2 latent lock-check flaws in `p0/REFUTE-round2.md`). P3: OWNER PICKED 2026-09-25 painted desk · Q1 B · R1 A (neon edges = DEFAULT, owner 2026-09-25; plan §2 updated); mocks pass review (fix rounds 1-6 in `mocks/p3-fix-brief.md` + NOTES); `shoot.mjs` runs only OUTSIDE Codex sandbox (CDP). Plates: Codex image gen (Gemini image 429 on this key); round-2 plates owe left-third calm (painted) + level lines (photo). ONE Codex job at a time (sandbox acct lockout 1909).
+  Owed by owner: backup (a) paid daily export vs (b) $0 no guarantee · rights attestation · report address · students/yr · privacy wording · Astra baseline go? · push local commits? (25 ahead of origin/main by local ref 2026-09-25, not fetched) P0 DONE `77372af` (slow-3G UNCONFIRMED; 2 latent lock-check flaws in `p0/REFUTE-round2.md`). P3: OWNER PICKED 2026-09-25 painted desk · Q1 B · R1 A (neon edges = DEFAULT, owner 2026-09-25; plan §2 updated); mocks pass review (fix rounds 1-6 in `mocks/p3-fix-brief.md` + NOTES); `shoot.mjs` runs only OUTSIDE Codex sandbox (CDP). Plates: Codex image gen (Gemini image 429 on this key); round-2 plates owe left-third calm (painted) + level lines (photo). ONE Codex job at a time (sandbox acct lockout 1909).
   Deploy freeze R9: no Pages upload 09-26..27, 10-02..03, 10-17..19. Superseded resume bullets:
   archive `## Pruned from MEMORY.md - 2026-09-25`.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
