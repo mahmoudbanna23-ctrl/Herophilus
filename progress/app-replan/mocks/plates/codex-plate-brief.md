@@ -49,3 +49,15 @@ Save as `<kind>-codex-2.png`. The review of round 1 found:
   spout near its base and faint level lines inside (lines only, no numerals). It must not look like a
   lidded canister. The reed pen is a plain cut reed, with no metal nib and no ferrule.
 - photo: keep round 1's calm left third and bottom fade, and lift the mid-desk contrast slightly.
+
+## Round 3 (2026-09-25) — final art; overrides rounds 1-2 where they differ
+
+Save as `<kind>-codex-3.png`. The owner picked the PAINTED desk; this round is the final plate. Start
+from round 2 (`<kind>-codex-2.png`, attached where the run allows) and change only what is named:
+
+- painted: the left third must be CALM — plain dark wall and desk, nothing lit, no plant, no lit or
+  glowing object, no bright highlight. A character stands there later. Keep everything else from
+  round 2: the smooth glossy soft-lit finish, palette, candle position, bottom fade.
+- photo: the water-clock bowl must show faint level lines inside it (engraved rings, lines only, no
+  numerals), as round 2 asked. Keep everything else from round 2.
+- both: every NEVER item from round 1 still binds (no person, no text, no lit flame, no modern object).

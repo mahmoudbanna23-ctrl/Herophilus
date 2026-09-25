@@ -40,11 +40,10 @@
 .bankbar{display:flex;gap:8px;margin:0 0 16px;flex-wrap:wrap;align-items:center}
 .bank-lbl{font-size:var(--fs-sm);font-weight:900;letter-spacing:.08em;text-transform:uppercase;
   color:var(--ink-2);margin-right:2px}
-.bankchip{display:inline-flex;align-items:center;gap:7px;padding:var(--s-3) var(--s-6);cursor:pointer;
-  border:1px solid var(--line-2);border-radius:var(--r-lg);background:var(--card);color:var(--ink-2);
-  font-family:inherit;font-size:var(--fs-md);font-weight:800;
-  transition:transform var(--dur-4) ease,box-shadow var(--dur-4),background var(--dur-4),color var(--dur-4)}
-.bankchip:hover{transform:translateY(-2px)}
+.bankchip{position:relative;display:inline-flex;align-items:center;gap:7px;padding:var(--s-3) var(--s-6) var(--s-3) var(--s-10);cursor:pointer;
+  border:0;border-radius:var(--r-md);background:transparent;color:var(--tx);font-family:inherit;font-size:var(--fs-md);font-weight:800;
+  transition:color var(--dur-2) var(--ease-spring)}
+.bankchip:hover{color:var(--gold-text)}
 /* Off-state is deliberately flat and grey: which sources are live must be
    readable at a glance, or you sit an exam on a filtered set without noticing. */
 /* White text is correct again as of the Greek palette: bronze #9a6b1f, aegean
@@ -55,8 +54,22 @@
 
    The glow was `var(--ink)`, which is TEXT colour — parchment-white, so the
    chip wore a pale halo. That is the exact re-merge the token contract forbids. */
-.bankchip.on{background:var(--bk);color:#fff;box-shadow:0 6px 16px var(--sh)}
-.bankchip:not(.on){opacity:.5;text-decoration:line-through}
+/* .chip only gets the tick/strike/underline treatment when it carries
+   aria-pressed — a real on/off toggle. An action chip (Review "All N", the
+   bank-filter "Show all" reset) renders plain: fix round 2 item 4,
+   the strike was reading a "Start quiz" button as a disabled toggle. */
+.bankchip::before,.chip[aria-pressed]::before{content:"";position:absolute;left:var(--s-4);top:50%;width:8px;height:4px;border-left:1px solid var(--neon);border-bottom:1px solid var(--neon);transform:translateY(-65%) rotate(-45deg);display:none}
+.bankchip.on::before,.chip.on[aria-pressed]::before{display:block}
+.bankchip > .banklabel,.chip[aria-pressed] > .chiplabel{position:relative}
+.bankchip[aria-pressed]:not(.on) > .banklabel::after,.chip[aria-pressed]:not(.on) > .chiplabel::after{content:"";position:absolute;left:-2px;right:-2px;top:55%;height:1px;background:var(--neon)}
+.bankchip.on{color:var(--tx)}
+.bankchip.on:hover{color:var(--gold-text)}
+.bankchip.on > .banklabel::after,.chip.on[aria-pressed] > .chiplabel::after{content:"";position:absolute;left:-2px;right:-2px;bottom:-3px;height:1px;background:var(--gold)}
+/* Off source chips: solid --ink-2, not opacity — opacity composited the
+   fill against the page ground and fell to 3.0:1 (light) / hover 3.18 dark,
+   2.02 light. Fix round 2 item 1. */
+.bankchip[aria-pressed]:not(.on){color:var(--ink-2)}
+.bankchip[aria-pressed]:not(.on):hover{color:var(--gold-text)}
 .bankn{font-size:var(--fs-xs);font-weight:900;padding:var(--s-1) var(--s-3);border-radius:var(--r-lg);
   background:rgba(0,0,0,.18)}
 .bankchip.on .bankn{background:rgba(0,0,0,.26)}
@@ -68,14 +81,15 @@
    re-measure first if those colours are ever touched. */
 .pill.bankpill{color:#fff}
 .chip{
-  padding:var(--s-4) var(--s-7);border:1px solid var(--line-2);border-radius:var(--r-lg);font-size:var(--fs-md);
-  background:var(--card);font-weight:800;
-  transition:transform var(--dur-2) ease,box-shadow var(--dur-2);
+  position:relative;padding:var(--s-4) var(--s-7) var(--s-4) var(--s-10);border:0;border-radius:var(--r-md);font-size:var(--fs-md);
+  background:transparent;color:var(--tx);font-weight:800;
+  transition:color var(--dur-2) var(--ease-spring);
 }
-.chip:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.25)}
+.chip:hover{color:var(--gold-text)}
 /* fallback is --fill, not --ink: --ink is near-white since the redesign, so an
    unset --c would have made a white chip carrying white text */
-.chip.on{background:var(--c,var(--fill));color:#fff}
+.chip.on{background:transparent;color:var(--tx)}
+.chip.on:hover{color:var(--gold-text)}
 
 @keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:0}}
 .confetti{position:fixed;top:-14px;width:11px;height:11px;z-index:var(--z-250);pointer-events:none;animation:fall linear forwards}
@@ -238,7 +252,7 @@ body[data-view="theory"] .orb{animation-play-state:paused}
 /* Shadow ink and the sheen wash come from tokens so the light theme inherits
    these rules unchanged instead of restating all of them. */
 .card,.stat,.ch-row,.qcard,.th-ch,.day,.modelans,.explain,.fbox,.conf,.bk-sheet{
-  box-shadow:var(--pop) var(--sh),var(--glow);
+  box-shadow:var(--neon-glow);
 }
 .card,.stat,.qcard,.ch-row,.th-ch,.day{
   background:var(--sheen);
@@ -247,37 +261,25 @@ body[data-view="theory"] .orb{animation-play-state:paused}
 
 /* hover lifts instead of sliding into a hard shadow */
 button.card:hover:not(:disabled),.ch-row:hover:not(:disabled),.th-ch:hover:not(:disabled){
-  transform:translateY(-3px);
-  box-shadow:0 16px 38px var(--sh-deep),0 0 0 1px var(--c,var(--line-2));
+  border-color:var(--gold);box-shadow:var(--gold-glow);
 }
-button.card:active:not(:disabled){transform:translateY(-1px)}
-.day:hover{transform:translateY(-2px);box-shadow:0 14px 32px var(--sh-deep),var(--glow)}
+button.card:active:not(:disabled){border-color:var(--gold)}
+.day:hover{border-color:var(--gold);box-shadow:var(--gold-glow)}
 
 /* module cards glow in their own colour */
 .mod-card::after{opacity:.5;filter:blur(26px);width:120px;height:120px;right:-40px;top:-40px}
 .mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(255,255,255,.14)}
 .pill{border:none;box-shadow:0 4px 14px rgba(0,0,0,.4)}
 
-/* buttons: the primary action is now a lit surface, not a dark slab */
-.btn{
-  background:linear-gradient(160deg,#2c4a6b,#1b2d44);
-  background-color:var(--fill);border:1px solid var(--line-2);
-  box-shadow:0 8px 20px rgba(0,0,0,.45),var(--glow);
-}
-.btn:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.18)}
-.btn:active:not(:disabled){transform:translateY(0)}
-.btn.go{background:linear-gradient(160deg,#7d5890,#573a66);border-color:rgba(255,255,255,.2);box-shadow:0 10px 26px rgba(125,88,144,.5)}
-.btn.go:hover:not(:disabled){box-shadow:0 16px 36px rgba(125,88,144,.65)}
-.btn.flag.on{background:linear-gradient(160deg,#ffd469,#f0b429);color:var(--on-accent)}
 .wbadge.high{color:var(--on-accent)}
 
 /* options: selection and verdict read by glow, not by a hard offset */
-.opt{background:var(--tint);border-color:var(--line-2)}
-.opt:hover:not(:disabled){background:var(--tint-2);border-color:var(--line-2);transform:translateX(3px);box-shadow:0 6px 18px var(--sh-soft)}
-.opt.sel{box-shadow:0 8px 24px rgba(125,88,144,.4),0 0 0 1px rgba(125,88,144,.6)}
-.opt.correct{box-shadow:0 8px 24px rgba(34,201,138,.3),0 0 0 1px rgba(34,201,138,.5)}
-.opt.wrong{box-shadow:0 8px 24px rgba(255,90,106,.3),0 0 0 1px rgba(255,90,106,.5)}
-.verdict{border:1px solid var(--line-2)}
+.opt{background:var(--tint);border-color:var(--neon)}
+.opt:hover:not(:disabled){background:var(--tint-2);border-color:var(--gold);box-shadow:var(--gold-glow)}
+.opt.sel{box-shadow:var(--neon-glow)}
+.opt.correct{box-shadow:var(--neon-glow)}
+.opt.wrong{box-shadow:var(--neon-glow)}
+.verdict{border:1px solid var(--neon)}
 .verdict.ok{box-shadow:0 10px 30px rgba(34,201,138,.22),0 0 0 1px rgba(34,201,138,.4)}
 .verdict.bad{box-shadow:0 10px 30px rgba(255,90,106,.22),0 0 0 1px rgba(255,90,106,.4)}
 .verdict.part{box-shadow:0 10px 30px rgba(255,201,74,.22),0 0 0 1px rgba(255,201,74,.4)}
@@ -285,7 +287,7 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
 /* the reading surface — highest contrast on the page, deliberately.
    These three carry the clinical text, so they are the one place the theme is
    allowed its own dedicated tokens rather than reusing the general ramp. */
-.qcard{border:1px solid var(--line-2)}
+.qcard{border:1px solid var(--neon)}
 .stem{color:var(--stem);font-size:var(--fs-body);line-height:1.7}
 .th-body{color:var(--prose)}
 .th-body strong,.ex-body strong{color:var(--strong)}
@@ -456,7 +458,6 @@ button.card:active:not(:disabled){transform:translateY(-1px)}
 :root[data-theme="light"] .gsign:hover{box-shadow:0 12px 28px rgba(23,38,66,.18)}
 :root[data-theme="light"] .mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(16,27,45,.08)}
 :root[data-theme="light"] .pill{box-shadow:0 4px 14px rgba(23,38,66,.18)}
-:root[data-theme="light"] .btn:hover:not(:disabled){box-shadow:0 14px 30px rgba(23,38,66,.28),0 0 0 1px rgba(16,27,45,.12)}
 
 /* The highlighter pens are translucent brights. Over a white card with dark
    text they read fine unchanged, but they need a touch more opacity to be
@@ -528,7 +529,7 @@ button.card.mod-card{display:flex;flex-direction:column;padding:0}
    without reading as broken. The dashboard card is a <div>, so there is no
    disabled state to style; this is what carries it. */
 .mod-card.locked{display:flex;flex-direction:column;padding:0;cursor:default}
-.mod-card.locked:hover{transform:none;box-shadow:none}
+.mod-card.locked:hover{box-shadow:none}
 /* Dim the PAINTING, not the words. This card used to carry opacity:.55, which
    dims the text with everything else: measured against the page that put the
    title, the meta line and the badge at 2.65:1, well under AA, at 10px on the

@@ -1,0 +1,4 @@
+AGENTS.md loaded — Herophilus  
+Fixed all six round‑1 items and updated [p4a-report.md](D:\claude os\Medical school\Herophilus\progress\app-replan\p4\p4a-report.md).  
+Boot-check passes: 6956 questions, 153 theory, 4 modules, 156 chapters, 0 console errors.  
+AA contrast passes for active buttons, bank-chip hover, and Peds text in both themes; diff check is clean.

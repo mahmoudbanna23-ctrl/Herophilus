@@ -1192,7 +1192,7 @@ function vMock(p){
   <h2>1 · Choose modules</h2><div class="filterbar">`;
   openModules().forEach(m=>{
     const n=qsInModule(m.id).filter(mockable).length;
-    h+=`<button class="chip ${mockMods[m.id]&&n?'on':''}" style="--c:${m.hex};${n?'':'opacity:.4'}"
+    h+=`<button class="chip ${mockMods[m.id]&&n?'on':''}" style="--c:${m.hex};${n?'':'opacity:.4'}" aria-pressed="${!!(mockMods[m.id]&&n)}"
       ${n?`onclick="mockMods['${m.id}']=!mockMods['${m.id}'];render()"`:'disabled'}>
       ${ico(m.icon,15)} ${m.name} <span style="opacity:.7">${n}</span></button>`;
   });

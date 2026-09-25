@@ -1,4 +1,5 @@
 /* ---------- Question ---------- */
+@property --angle{syntax:"<angle>";inherits:false;initial-value:0deg}
 .qwrap{max-width:830px;margin:0 auto}
 .qhead{display:flex;align-items:center;gap:10px;margin-bottom:17px;flex-wrap:wrap}
 /* The exam clock rides after .qprog, which already carries margin-left:auto,
@@ -31,7 +32,7 @@
   background:var(--card);padding:var(--s-2) var(--s-5);border-radius:var(--r-lg);border:2px solid var(--line-2);
 }
 
-.qcard{background:var(--card);border:3px solid var(--line-2);border-radius:var(--r-lg);padding:var(--s-11) var(--s-11);box-shadow:0 15px 35px rgba(0,0,0,.15)}
+.qcard{background:var(--card);border:1px solid var(--neon);border-radius:var(--r-lg);padding:var(--s-11) var(--s-11);box-shadow:var(--neon-glow)}
 .stem{
   font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
   font-size:var(--fs-body);line-height:1.64;color:var(--tx);margin-bottom:21px;
@@ -72,11 +73,11 @@
 .opts{display:flex;flex-direction:column;gap:9px}
 .opt{
   display:flex;gap:var(--s-3);align-items:flex-start;padding:var(--s-2) var(--s-2) var(--s-2) var(--s-8);
-  border:1px solid var(--line-2);border-radius:var(--r-lg);background:var(--card);
+  border:1px solid var(--neon);border-radius:var(--r-lg);background:var(--card);box-shadow:var(--neon-glow);
   text-align:left;width:100%;line-height:1.5;font-weight:600;
-  transition:transform var(--dur-1) ease,border-color var(--dur-1),box-shadow var(--dur-1);
+  transition:border-color .15s var(--ease-spring),background-color .15s var(--ease-spring),box-shadow .15s var(--ease-spring);
 }
-.opt:hover:not(:has(.opt-answer:disabled)){border-color:var(--line-2);transform:translateX(4px);box-shadow:0 7px 20px rgba(0,0,0,.12)}
+.opt:hover:not(:has(.opt-answer:disabled)){border-color:var(--gold);background:var(--tint-2);box-shadow:var(--gold-glow)}
 .opt-answer{display:flex;gap:13px;align-items:flex-start;padding:var(--s-4) 0;border:0;background:transparent;color:var(--tx);text-align:left;flex:1;min-width:0;font:inherit;line-height:inherit;font-weight:inherit}
 .opt-answer:disabled{cursor:default}
 .opt .ltr{
@@ -84,39 +85,49 @@
   display:flex;align-items:center;justify-content:center;font-size:var(--fs-sm);font-weight:900;
   flex-shrink:0;color:var(--ink-3);margin-top:1px;transition:all var(--dur-1);
 }
-.opt.sel{border-color:var(--neuro);background:rgba(109,76,125,.15);transform:translateX(4px);box-shadow:0 7px 20px rgba(109,76,125,.28)}
+.opt.sel{border-color:var(--neuro);background:rgba(109,76,125,.15);box-shadow:var(--neon-glow)}
 .opt.sel .ltr{background:var(--neuro);border-color:var(--neuro);color:#fff}
-.opt.correct{border-color:var(--ok);background:var(--ok-bg);box-shadow:0 7px 20px rgba(0,168,107,.25)}
+.opt.correct{border-color:var(--ok);background:var(--ok-bg);box-shadow:var(--neon-glow)}
 .opt.correct .ltr{background:var(--ok);border-color:var(--ok);color:#fff}
-.opt.wrong{border-color:var(--bad);background:var(--bad-bg);box-shadow:0 7px 20px rgba(255,71,87,.25)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg);box-shadow:var(--neon-glow)}
 .opt.wrong .ltr{background:var(--bad);border-color:var(--bad);color:#fff}
 .opt .mark{margin-left:auto;font-weight:900;font-size:var(--fs-lg);flex-shrink:0;line-height:1}
 .opt.correct .mark{color:var(--ok)}
 .opt.wrong .mark{color:var(--bad)}
 .opt.struck .opt-text{color:var(--ink-3);text-decoration:line-through}
 .strike-btn{width:var(--s-12);height:var(--s-12);padding:0;border:1px solid var(--line-2);border-radius:var(--r-md);background:var(--card);color:var(--ink-2);display:flex;align-items:center;justify-content:center;flex:0 0 var(--s-12);align-self:center;transition:transform var(--dur-1) ease,background var(--dur-1) ease}
-.strike-btn:hover{background:var(--bg-2);transform:translateX(1px)}
+.strike-btn:hover{background:var(--bg-2)}
 .strike-btn:focus-visible,.opt-answer:focus-visible{outline:2px solid var(--tx);outline-offset:2px}
 
 .qactions{display:flex;gap:10px;margin-top:22px;align-items:center;flex-wrap:wrap}
 .btn{
-  padding:var(--s-5) var(--s-9);border-radius:var(--r-lg);font-size:var(--fs-ui);font-weight:800;
-  background:var(--fill);color:#fff;border:1px solid var(--line-2);box-shadow:var(--pop) var(--sh-soft);
-  transition:transform var(--dur-2) ease,box-shadow var(--dur-2);
+  position:relative;isolation:isolate;padding:var(--s-5) var(--s-9);border:0;border-radius:var(--r-sm);font-size:var(--fs-ui);font-weight:800;
+  background:var(--fill);color:#fff;
+  transition:color var(--dur-2) var(--ease-spring),background-color var(--dur-2) var(--ease-spring);
 }
-.btn:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:var(--pop-lg) rgba(0,0,0,.35)}
-.btn:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.3)}
+.btn::before{content:"";position:absolute;inset:0;border-radius:var(--r-sm);padding:1px;background:conic-gradient(from var(--angle),transparent,transparent,var(--peds-hi),transparent,transparent);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;z-index:-1;animation:orbit 7s linear infinite}
+.btn:hover:not(:disabled)::before{animation-duration:2.3s}
+.btn:active:not(:disabled){background-color:var(--gold);color:var(--on-accent)}
+.btn:active:not(:disabled)::before{background:var(--gold);animation:none}
 .btn:disabled{opacity:.32;cursor:default;box-shadow:none}
 .btn.sec{background:var(--card);color:var(--tx)}
-.btn.go{background:var(--neuro);border-color:var(--line-2)}
-.btn.flag.on{background:var(--gold);color:var(--tx)}
-/* A destructive button needs a glyph because its red border alone can be missed. */
-.btn[style*="--bad"]::before{content:"! ";font-weight:900}
+.btn.go{background:var(--neuro)}
+.btn.flag.on{background:var(--gold);color:var(--on-accent)}
+/* A destructive button needs a glyph because its red border alone can be
+   missed. ::before is now the travelling-light ring's masked pseudo-element
+   (line above) — content set there is clipped by the mask and never paints.
+   ::after is a plain, unmasked pseudo, absolutely placed at the left edge
+   where the glyph sat before P4; padding-left makes room so it does not
+   overlap the label. Fix round 2 item 3. */
+.btn[style*="--bad"]{padding-left:calc(var(--s-9) + 12px)}
+.btn[style*="--bad"]::after{content:"!";position:absolute;left:var(--s-7);top:50%;transform:translateY(-50%);font-weight:900}
 
+@keyframes orbit{to{--angle:360deg}}
 @keyframes pop{0%{transform:scale(.86)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.btn::before{animation:none}.opt,.opt.correct,.opt.wrong{transition:none}.verdict{animation:none}}
 .verdict{
   margin-top:21px;padding:var(--s-7) var(--s-8);border-radius:var(--r-lg);font-weight:900;font-size:var(--fs-ui);
-  display:flex;align-items:center;gap:11px;border:1px solid var(--line-2);animation:pop .32s var(--ease-spring);
+  display:flex;align-items:center;gap:11px;border:1px solid var(--neon);box-shadow:var(--neon-glow);animation:pop .32s var(--ease-spring);
 }
 .verdict.ok{background:var(--ok-bg);color:#5fe0a8;box-shadow:var(--pop) rgba(0,168,107,.3)}
 .verdict.bad{background:var(--bad-bg);color:#ff9aa2;box-shadow:var(--pop) rgba(255,71,87,.3)}
@@ -135,8 +146,8 @@
 .caseinput:disabled{opacity:.75;cursor:default}
 .caseinput::placeholder{color:var(--ink-2);opacity:.6}
 .modelans{
-  margin-top:15px;padding:var(--s-7) var(--s-8);border:1px solid var(--line-2);border-radius:var(--r-lg);
-  background:var(--ok-bg);box-shadow:var(--pop) rgba(0,168,107,.25);
+  margin-top:15px;padding:var(--s-7) var(--s-8);border:1px solid var(--neon);border-radius:var(--r-lg);
+  background:var(--ok-bg);box-shadow:var(--neon-glow);
 }
 .modelans>b{display:block;font-size:var(--fs-sm);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:5px}
 .modelans>div{font-weight:800;font-size:var(--fs-ui)}
@@ -150,17 +161,17 @@
   padding:var(--s-2) var(--s-6);border:2px dashed var(--line-2);border-radius:var(--r-lg);
   font-size:var(--fs-sm);font-weight:800;color:var(--ink-2);opacity:.85}
 
-.conf{margin-top:17px;padding:var(--s-7) var(--s-8);background:var(--gold-bg);border:1px solid var(--line-2);border-radius:var(--r-lg);box-shadow:var(--pop) rgba(255,201,74,.4)}
+.conf{margin-top:17px;padding:var(--s-7) var(--s-8);background:var(--gold-bg);border:1px solid var(--neon);border-radius:var(--r-lg);box-shadow:var(--neon-glow)}
 .conf-q{font-size:var(--fs-md);color:var(--ink-2);margin-bottom:11px;font-weight:700}
 .conf-btns{display:flex;gap:8px;flex-wrap:wrap}
 .conf-b{
   padding:var(--s-4) var(--s-7);border:1px solid var(--line-2);border-radius:var(--r-lg);font-size:var(--fs-md);
   background:var(--card);font-weight:800;transition:transform var(--dur-1) ease,box-shadow var(--dur-1);
 }
-.conf-b:hover{transform:translateY(-2px);box-shadow:0 7px 18px rgba(2,6,14,.25)}
+.conf-b:hover{background:var(--bg-2);box-shadow:0 7px 18px rgba(2,6,14,.25)}
 .conf-b.on{background:var(--fill);color:#fff}
 
-.explain{margin-top:18px;border:1px solid var(--line-2);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--pop) rgba(0,0,0,.14)}
+.explain{margin-top:18px;border:1px solid var(--neon);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--neon-glow)}
 
 /* Two quiet routes out of a question: a note the student writes to themselves,
    and the one way to tell us the question itself is wrong. Both sit under the
@@ -205,7 +216,7 @@
   border:1px solid var(--line-2);border-radius:var(--r-lg);margin-bottom:9px;
   box-shadow:0 5px 14px rgba(0,0,0,.13);transition:transform var(--dur-2),box-shadow var(--dur-2);
 }
-.day:hover{transform:translate(-1px,-1px);box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.day:hover{border-color:var(--gold);box-shadow:0 10px 24px rgba(0,0,0,.18)}
 .day.rest{background:var(--bg-2);opacity:.72;border-style:dashed}
 .day.missed{background:var(--bad-bg);border-color:var(--bad)}
 .day.done{background:var(--ok-bg);border-color:var(--ok)}
@@ -222,6 +233,8 @@
   padding:var(--s-1) var(--s-5);border-radius:var(--r-lg);color:#fff;margin-right:10px;vertical-align:1.5px;
   border:1.5px solid var(--line-2);white-space:nowrap;box-shadow:0 3px 10px rgba(0,0,0,.22);
 }
+/* Owner ruling: Peds is a coloured word, never a boxed status tag. */
+.tag[style*="#2e5f8a"]{background:transparent!important;border:0;box-shadow:none;padding:0;color:var(--peds-hi)}
 .movednote{font-size:var(--fs-xs);color:var(--neuro);font-weight:800;margin-top:4px}
 .day-marks{display:flex;gap:7px;flex-shrink:0}
 .mk{
@@ -230,7 +243,7 @@
   transition:transform var(--dur-2) ease,box-shadow var(--dur-2),background var(--dur-2);
   box-shadow:0 5px 14px rgba(0,0,0,.16);
 }
-.mk:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.25)}
+.mk:hover{background:var(--bg-2);box-shadow:0 7px 18px rgba(0,0,0,.25)}
 .mk:active{transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.2)}
 .mk.done.on{background:var(--ok);color:#fff}
 .mk.miss.on{background:var(--bad);color:#fff}
@@ -282,7 +295,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   box-shadow:0 5px 14px rgba(0,0,0,.18);transition:transform var(--dur-2) ease,box-shadow var(--dur-2);
   position:relative;
 }
-.pen:hover{transform:translate(-1px,-1px);box-shadow:0 7px 18px rgba(0,0,0,.26)}
+.pen:hover{background:var(--bg-2);box-shadow:0 7px 18px rgba(0,0,0,.26)}
 .pen.on{transform:translateY(-3px);box-shadow:0 9px 22px rgba(0,0,0,.3)}
 .pen.on::after{content:"";position:absolute;inset:-6px;border:2.5px solid var(--line-2);border-radius:var(--r-lg)}
 .pen.y{background:#ffe97a}.pen.g{background:#a8f0bd}.pen.p{background:#ffc2dc}.pen.b{background:#a9d6ff}
@@ -320,7 +333,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   box-shadow:0 5px 14px rgba(0,0,0,.15);
   transition:transform var(--dur-1) ease,box-shadow var(--dur-1);
 }
-.qg:hover{transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.24)}
+.qg:hover{background:var(--bg-2);box-shadow:0 10px 24px rgba(0,0,0,.24)}
 .qg.ok{background:var(--ok-bg);color:#5fe0a8;border-color:var(--ok)}
 .qg.bad{background:var(--bad-bg);color:#ff9aa2;border-color:var(--bad)}
 /* Corner glyphs distinguish right and wrong when their colours look alike. */
@@ -335,7 +348,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   background:var(--gold);border:2px solid var(--line-2);border-radius:50%;
 }
 .qprog{border:2px solid var(--line-2);cursor:pointer;transition:transform var(--dur-1),box-shadow var(--dur-1)}
-.qprog:hover{transform:translate(-1px,-1px);box-shadow:0 5px 14px rgba(0,0,0,.22)}
+.qprog:hover{background:var(--bg-2);box-shadow:0 5px 14px rgba(0,0,0,.22)}
 
 
 
@@ -499,7 +512,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   background:transparent;transition:transform .16s ease;
   animation:gRise .62s var(--ease-standard) var(--d,0ms) backwards;
 }
-.pcard:hover{transform:translateY(-5px)}
+.pcard:hover{border-color:var(--gold)}
 .pav{
   width:96px;height:96px;border-radius:var(--r-lg);border:3px solid var(--line-2);
   display:flex;align-items:center;justify-content:center;font-size:var(--fs-3xl);overflow:hidden;
@@ -535,7 +548,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   background:var(--card);color:var(--tx);font-size:var(--fs-md);font-weight:800;
   transition:transform var(--dur-2) ease,box-shadow var(--dur-2),background var(--dur-2),color var(--dur-2);
 }
-.tchip:hover:not(.on){transform:translateY(-2px);box-shadow:0 8px 20px var(--sh-soft)}
+.tchip:hover:not(.on){background:var(--bg-2);box-shadow:0 8px 20px var(--sh-soft)}
 .tchip.on{background:var(--fill);color:#fff;box-shadow:0 9px 24px rgba(0,0,0,.35),var(--glow)}
 /* The status line is what the old copy's "some semesters have no published
    content yet" was trying to say, except it says it about the semester the
@@ -558,12 +571,12 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   font-size:var(--fs-xl);display:flex;align-items:center;justify-content:center;overflow:hidden;
   transition:transform var(--dur-1) ease;
 }
-.emb:hover{transform:translateY(-2px);border-color:var(--line-2)}
+.emb:hover{background:var(--bg-2);border-color:var(--gold)}
 .emb.on{border-color:var(--line-2);background:var(--fill);transform:translateY(-2px)}
 .colrow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
 .colb{width:34px;height:34px;border-radius:var(--r-lg);border:2.5px solid var(--line-2);
   transition:transform var(--dur-1) ease}
-.colb:hover{transform:translateY(-2px)}
+.colb:hover{background:var(--bg-2)}
 .colb.on{transform:translateY(-4px);box-shadow:0 9px 22px rgba(2,6,14,.3)}
 .avprev{
   width:88px;height:88px;border-radius:var(--r-lg);border:3px solid var(--line-2);margin:0 auto 16px;
@@ -693,7 +706,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   display:flex;align-items:center;justify-content:center;--fr-t:5px;
   border:var(--fr-t) solid var(--line-2);transition:transform var(--dur-1) ease;
 }
-.frtile:hover{transform:translateY(-2px)}
+.frtile:hover{border-color:var(--gold)}
 .frtile.on{transform:translateY(-4px);}
 .frgrid{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
 
@@ -710,7 +723,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   background:#fff;border:1px solid rgba(255,255,255,.5);font-weight:800;font-size:var(--fs-ui);color:#1f2430;
   box-shadow:0 10px 24px rgba(0,0,0,.2);transition:transform var(--dur-3) ease,box-shadow var(--dur-3);
 }
-.gsign:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.3)}
+.gsign:hover{background:var(--bg-2);box-shadow:0 18px 40px rgba(0,0,0,.3)}
 .gsign:active{transform:translateY(-1px)}
 /* a slow sheen crossing the button every few seconds. The button is white, so
    the sweep has to be a shadow rather than a light or it is invisible. */
@@ -726,7 +739,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
    but plainly inert — no pointer, no hover, no sheen */
 .gsign.off{margin-top:18px;opacity:.42;cursor:not-allowed;box-shadow:none}
 .gsign.off::after{animation:none;display:none}
-.gsign.off:hover{transform:none;box-shadow:none}
+.gsign.off:hover{box-shadow:none}
 .gsign svg{width:19px;height:19px;flex-shrink:0}
 .syncdot{
   display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;flex-shrink:0;
@@ -961,7 +974,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   box-shadow:0 1px 0 var(--sh-soft);
   transition:transform var(--dur-4) ease,background var(--dur-4) ease;
 }
-.bk-btn:hover:not(:disabled){transform:translateY(-2px);background:var(--bg-2)}
+.bk-btn:hover:not(:disabled){background:var(--bg-2)}
 .bk-btn:disabled{opacity:.32;cursor:default}
 .bk-run{
   display:flex;justify-content:space-between;align-items:baseline;gap:16px;
@@ -1079,11 +1092,11 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
   box-shadow:var(--pop) rgba(125,88,144,.3);
   transition:transform var(--dur-2) ease,box-shadow var(--dur-2);
 }
-.readtheory:hover{transform:translate(-2px,-2px);box-shadow:var(--pop-lg) rgba(125,88,144,.35)}
+.readtheory:hover{background:var(--bg-2);box-shadow:var(--pop-lg) rgba(125,88,144,.35)}
 .th-ch{display:flex;align-items:center;gap:13px;padding:var(--s-7) var(--s-8);background:var(--card);
   border:1px solid var(--line-2);border-radius:var(--r-lg);margin-bottom:9px;width:100%;text-align:left;
   box-shadow:0 5px 14px rgba(0,0,0,.13);transition:transform var(--dur-2) ease,box-shadow var(--dur-2)}
-.th-ch:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.th-ch:hover:not(:disabled){background:var(--bg-2);box-shadow:0 10px 24px rgba(0,0,0,.2)}
 .th-ch:disabled{opacity:.4;cursor:default;box-shadow:none;border-style:dashed}
 .th-ch .n{flex:1;font-weight:700;font-size:var(--fs-ui)}
 .th-ch .m{font-size:var(--fs-sm);color:var(--ink-4);font-weight:700}

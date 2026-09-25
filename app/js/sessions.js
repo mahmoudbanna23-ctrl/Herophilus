@@ -76,22 +76,22 @@ function vSession(p){
     <div class="card sess-setup">
       <h2 style="margin-top:0">1 · Focus block</h2>
       <div class="filterbar">${[15,25,45,60].map(n=>
-        `<button class="chip ${sessDraft.focus===n?'on':''}" style="--c:var(--gold)" onclick="sessSetDraft('focus',${n})">${n} min</button>`).join('')}</div>
+        `<button class="chip ${sessDraft.focus===n?'on':''}" style="--c:var(--gold)" aria-pressed="${sessDraft.focus===n}" onclick="sessSetDraft('focus',${n})">${n} min</button>`).join('')}</div>
 
       <h2>2 · Break</h2>
       <div class="filterbar">${[3,5,10,15].map(n=>
-        `<button class="chip ${sessDraft.brk===n?'on':''}" style="--c:var(--ophtho)" onclick="sessSetDraft('brk',${n})">${n} min</button>`).join('')}</div>
+        `<button class="chip ${sessDraft.brk===n?'on':''}" style="--c:var(--ophtho)" aria-pressed="${sessDraft.brk===n}" onclick="sessSetDraft('brk',${n})">${n} min</button>`).join('')}</div>
 
       <h2>3 · How many blocks</h2>
       <div class="filterbar">${[1,2,3,4,6].map(n=>
-        `<button class="chip ${sessDraft.cycles===n?'on':''}" style="--c:var(--neuro)" onclick="sessSetDraft('cycles',${n})">${n}</button>`).join('')}</div>
+        `<button class="chip ${sessDraft.cycles===n?'on':''}" style="--c:var(--neuro)" aria-pressed="${sessDraft.cycles===n}" onclick="sessSetDraft('cycles',${n})">${n}</button>`).join('')}</div>
 
       <h2>4 · What are you working on</h2>
       <div class="filterbar">
-        <button class="chip ${sessDraft.scope==='all'?'on':''}" onclick="sessSetDraft('scope','all')">Decide later</button>
-        ${(()=>{const d=dueNow().length;return d?`<button class="chip ${sessDraft.scope==='review'?'on':''}" style="--c:var(--ent)" onclick="sessSetDraft('scope','review')">${ico('hourglass',15)} Review due <span style="opacity:.7">${d}</span></button>`:''})()}
+        <button class="chip ${sessDraft.scope==='all'?'on':''}" aria-pressed="${sessDraft.scope==='all'}" onclick="sessSetDraft('scope','all')">Decide later</button>
+        ${(()=>{const d=dueNow().length;return d?`<button class="chip ${sessDraft.scope==='review'?'on':''}" style="--c:var(--ent)" aria-pressed="${sessDraft.scope==='review'}" onclick="sessSetDraft('scope','review')">${ico('hourglass',15)} Review due <span style="opacity:.7">${d}</span></button>`:''})()}
         ${MODULES.filter(m=>qsInModule(m.id).length).map(m=>
-          `<button class="chip ${sessDraft.scope===m.id?'on':''}" style="--c:${m.hex}" onclick="sessSetDraft('scope','${m.id}')">${ico(m.icon,15)} ${m.name}</button>`).join('')}
+          `<button class="chip ${sessDraft.scope===m.id?'on':''}" style="--c:${m.hex}" aria-pressed="${sessDraft.scope===m.id}" onclick="sessSetDraft('scope','${m.id}')">${ico(m.icon,15)} ${m.name}</button>`).join('')}
       </div>
 
       <div class="sess-sum">

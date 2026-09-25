@@ -58,6 +58,11 @@
   --line:rgba(242,232,213,.085);
   --line-2:rgba(242,232,213,.16);
 
+  /* Static cyan card edge, taken from the selected P3 neon specimen. */
+  --neon:#66d9ff;
+  --neon-glow:0 0 10px rgba(102,217,255,.65);
+  --gold-glow:0 0 10px rgba(217,180,74,.65);
+
   --rail:#080d14;
   --rail-2:#16202e;
   --rail-3:#27364b;
@@ -76,6 +81,7 @@
   --ophtho:#5c7a52;
   --neuro:#6d4c7d;
   --peds:#2e5f8a;
+  --peds-hi:#71b8e8;
   --revision:#7a6a55;
   --buffer:#9a6b1f;
 
@@ -198,6 +204,12 @@
 
   --line:rgba(60,44,28,.13);
   --line-2:rgba(60,44,28,.22);
+
+  /* 4.95:1 against --card; the light-theme equivalent remains legible. */
+  --neon:#00708f;
+  --neon-glow:0 0 10px rgba(0,112,143,.48);
+  --gold-glow:0 0 10px rgba(122,84,16,.55);
+  --peds-hi:#166a9e;
 
   /* rail unchanged — see note 1 above */
 

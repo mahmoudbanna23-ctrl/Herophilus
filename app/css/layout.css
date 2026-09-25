@@ -48,7 +48,7 @@
   padding:var(--s-4) var(--s-5);border-radius:var(--r-lg);color:var(--rail-text);font-size:var(--fs-ui);font-weight:600;
   transition:transform var(--dur-2) ease,background var(--dur-2),color var(--dur-2);
 }
-.nav-item:hover{background:var(--rail-2);color:#fff;transform:translateX(3px)}
+.nav-item:hover{background:var(--rail-2);color:#fff}
 .nav-item.on{background:var(--rail-3);color:#fff;font-weight:800;box-shadow:inset 3px 0 0 var(--gold)}
 .nav-item .ic{width:19px;text-align:center;flex-shrink:0;font-size:var(--fs-ui)}
 .nav-item .cnt{margin-left:auto;font-size:var(--fs-xs);color:var(--rail-dim);font-variant-numeric:tabular-nums;font-weight:700}
@@ -106,7 +106,7 @@
    not merely cramped but meaningless. That returns 48px to the search. */
 @media(max-width:520px){ .kbd-btn{display:none} }
 .tb-btn{padding:var(--s-3) var(--s-6);border-radius:var(--r-lg);font-size:var(--fs-md);color:var(--ink-3);font-weight:700;transition:background var(--dur-2),transform var(--dur-2)}
-.tb-btn:hover{background:var(--bg-2);color:var(--tx);transform:translateY(-1px)}
+.tb-btn:hover{background:var(--bg-2);color:var(--tx)}
 /* Touch. The nav rows are 36px tall and the topbar buttons 33-36px, both under
    the 44px minimum. The nav is a vertical list, so it can simply grow. The
    topbar cannot: four 44px buttons would push a sticky bar to ~70px and take
@@ -169,12 +169,12 @@ h2{font-size:var(--fs-lg);font-weight:800;letter-spacing:-.02em;margin:0 0 13px}
 .g3{grid-template-columns:repeat(auto-fill,minmax(258px,1fr))}
 .g4{grid-template-columns:repeat(auto-fit,minmax(158px,1fr))}
 .card{
-  background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-lg);
-  padding:var(--s-8);text-align:left;width:100%;box-shadow:var(--pop) rgba(0,0,0,.16);
-  transition:transform .15s ease,box-shadow .15s;
+  background:var(--card);border:1px solid var(--neon);border-radius:var(--r-lg);
+  padding:var(--s-8);text-align:left;width:100%;box-shadow:var(--neon-glow);
+  transition:border-color .15s var(--ease-spring),background-color .15s var(--ease-spring),box-shadow .15s var(--ease-spring);
 }
-button.card:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:var(--pop-lg) var(--c,rgba(0,0,0,.3))}
-button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.2)}
+button.card:hover:not(:disabled){border-color:var(--gold);background-color:var(--bg-2);box-shadow:var(--gold-glow)}
+button.card:active:not(:disabled){border-color:var(--gold)}
 
 .mod-card{position:relative;overflow:hidden}
 .mod-card::after{
@@ -211,8 +211,8 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 }
 
 .stat{
-  background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-lg);padding:var(--s-7);
-  box-shadow:var(--pop) rgba(0,0,0,.16);position:relative;overflow:hidden;
+  background:var(--card);border:1px solid var(--neon);border-radius:var(--r-lg);padding:var(--s-7);
+  box-shadow:var(--neon-glow);position:relative;overflow:hidden;
 }
 .stat .n{font-size:var(--fs-2xl);font-weight:900;letter-spacing:-.04em;font-variant-numeric:tabular-nums;line-height:1.05}
 .stat .l{font-size:var(--fs-sm);color:var(--ink-3);margin-top:3px;font-weight:700}
@@ -226,11 +226,11 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
 .grouphdr::after{content:"";flex:1;height:2.5px;background:var(--line);border-radius:var(--r-md)}
 .ch-row{
   display:flex;align-items:center;gap:13px;padding:var(--s-6) var(--s-7);background:var(--card);
-  border:1px solid var(--line-2);border-radius:var(--r-lg);margin-bottom:9px;width:100%;text-align:left;
-  box-shadow:0 5px 14px rgba(0,0,0,.13);
-  transition:transform var(--dur-2) ease,box-shadow var(--dur-2);
+  border:1px solid var(--neon);border-radius:var(--r-lg);margin-bottom:9px;width:100%;text-align:left;
+  box-shadow:var(--neon-glow);
+  transition:border-color var(--dur-2) var(--ease-spring),background-color var(--dur-2) var(--ease-spring),box-shadow var(--dur-2) var(--ease-spring);
 }
-.ch-row:hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.ch-row:hover:not(:disabled){border-color:var(--gold);background-color:var(--bg-2);box-shadow:var(--gold-glow)}
 .ch-row:disabled{opacity:.45;cursor:default;box-shadow:none;border-style:dashed}
 .ch-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;border:2px solid var(--line-2)}
 .ch-name{flex:1;font-size:var(--fs-ui);font-weight:700}
@@ -240,4 +240,3 @@ button.card:active:not(:disabled){transform:translate(1px,1px);box-shadow:0 2px 
    each name has to say which one it belongs to. */
 .wk-mod{display:block;font-size:var(--fs-xs);font-weight:700;color:var(--ink-4);
   letter-spacing:.05em;text-transform:uppercase;margin-top:2px}
-

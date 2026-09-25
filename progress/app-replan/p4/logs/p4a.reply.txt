@@ -1,0 +1,6 @@
+AGENTS.md loaded — Herophilus
+
+Implemented P4a changes and wrote [p4a-report.md](D:\claude os\Medical school\Herophilus\progress\app-replan\p4\p4a-report.md).
+Boot check passed: 0 console errors; 6956 / 153 / 4 / 156.
+All requested grep checks passed; contrast results are recorded in the report.
+Keyboard interaction was not verified interactively; pre-existing unrelated worktree changes remain.

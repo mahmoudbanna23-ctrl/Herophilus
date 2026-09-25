@@ -78,6 +78,7 @@ function render(){
   if((view.name==='home'||view.name==='mock')&&hasSavedMock()){
     p.insertAdjacentHTML('afterbegin','<p><button class="btn sec" onclick="offerMockResume()">Open saved mock exam</button></p>');
   }
+  inkMarkChips(p);
   revealOnScroll(p);
   /* The companion travels with the view: she repaints her readout and, the
      first time she meets a screen, explains it. */
@@ -104,6 +105,17 @@ function revealOnScroll(root){
   });
 }
 
+
+/* Ink-mark chips strike their label rather than drawing across the control. */
+function inkMarkChips(root){
+  root.querySelectorAll('.chip').forEach(chip=>{
+    if(chip.querySelector(':scope > .chiplabel'))return;
+    const label=document.createElement('span');
+    label.className='chiplabel';
+    while(chip.firstChild)label.appendChild(chip.firstChild);
+    chip.appendChild(label);
+  });
+}
 
 function renderNav(){
   $('railTerm').textContent=termName()+' · Q-Bank';
@@ -303,9 +315,9 @@ function vModule(p){
         const n=allQ.filter(q=>banksOf(q).indexOf(b.id)>=0).length;
         return `<button class="bankchip ${on?'on':''}" style="--bk:${b.hex}"
           onclick="toggleBank('${m.id}','${b.id}')"
-          aria-pressed="${on}">${b.name}<span class="bankn">${n}</span></button>`;
+          aria-pressed="${on}"><span class="banklabel">${b.name}</span><span class="bankn">${n}</span></button>`;
       }).join('')}
-      ${filtering?`<button class="bankchip reset" onclick="clearBanks('${m.id}')">Show all</button>`:''}
+      ${filtering?`<button class="bankchip reset" onclick="clearBanks('${m.id}')"><span class="banklabel">Show all</span></button>`:''}
     </div>`;
   }
 
