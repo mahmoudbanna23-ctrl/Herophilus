@@ -16,7 +16,7 @@ function go(v){
 /* Screens where the learner READS for minutes at a time. The cinematic layer
    pauses the ambient orbs on these, so nothing drifts beside a clinical stem.
    Everything else is a browse screen and stays alive. */
-const STILL_VIEWS=['quiz','mock','review','theory'];
+const STILL_VIEWS=['quiz','results','mock','review','theory'];
 
 /* The ambient film obeys the same gate as the orbs, but CSS can only fade it —
    a paused <video> is the difference between a still picture and a decoder
@@ -73,7 +73,7 @@ function render(){
   const emptyCourse=activeModules().length===0&&
     ['home','module','quiz','review','theory','flagged','mock','weak'].indexOf(view.name)>=0;
   if(emptyCourse)vEmptyTerm(p);
-  else ({home:vHome,module:vModule,quiz:vQuiz,review:vReview,schedule:vSchedule,theory:vTheory,
+  else ({home:vHome,module:vModule,quiz:vQuiz,results:vResults,review:vReview,schedule:vSchedule,theory:vTheory,
     moved:vMoved,flagged:vFlagged,mock:vMock,session:vSession,weak:vWeak}[view.name]||vHome)(p);
   if((view.name==='home'||view.name==='mock')&&hasSavedMock()){
     p.insertAdjacentHTML('afterbegin','<p><button class="btn sec" onclick="offerMockResume()">Open saved mock exam</button></p>');

@@ -66,3 +66,33 @@ Change what a control does — layout only.
 ## Output
 `progress/app-replan/p4/p4b-report.md`, ≤ 60 lines: gap list, files and selectors changed, check
 results pasted, anything NOT verified named as such.
+
+## Fix round 1 (2026-09-25) — the Opus refuter FAILED P4b; fix exactly these, nothing else
+
+Same write grant, files and "Do not" list. Keep what passed (review reuses `startQuiz`, controls
+survive, countdown ticks, no mock furniture, tokens untouched). Update `p4b-report.md` in place with a
+"Fix round 1" section: each item, file:line, what changed, the check you ran. Correct your gap list
+where it misread the mock.
+
+1. `quiz.js:347-354,452` — the header row (back, chapter, banks, source, `N / M`, exam clock) was
+   moved to the bottom inside `.qtools`. The mock `question-a.html` puts a quiet "chapter · question
+   N of M" line ABOVE the stem. Put a quiet header line (chapter, progress `N / M`, exam clock) back
+   above the stem; the timed-mock countdown must be visible at the top at 390x844 without scrolling.
+   Secondary tools may stay grouped below.
+2. `quiz.js:452` — the highlighter bar moved away from the stem; it belongs next to the stem (as at
+   `pre-p4b-2026-09-25`), since you select stem text with it.
+3. `quiz.js:598` — `esc(q.stem)` prints raw markdown (`**sinusitis pain**` shows asterisks) in the
+   wrong-answer queue. Render it the way the app renders stems elsewhere (find the existing helper,
+   e.g. `mdInline`), never raw.
+4. `quiz.js:596` — the mock's sample heading shipped ("Review the uncertain 1"; with zero wrong it
+   reads "Review the uncertain answers" over "No wrong answers to review."). Use plain app copy:
+   heading "Wrong answers" (with count when > 0); zero case shows only the plain line.
+5. `vCase` (case questions) was not converted — a mixed session switches layouts. Apply the same
+   reading-first order (quiet header line above the vignette, then the vignette, then the answer area,
+   then actions, then tools) without changing any case behaviour (`Q.peek`, grading, keys).
+Nits, fix too: eyebrow and h1 both "Session result" (`quiz.js:592-593`) — drop the duplicate; at
+> 600 px put the account and the wrong-answer queue side by side as `results-a.html`/`mocks.css`
+show, stacked below; restore the minutes-taken line the old results showed; add `results` to the
+`views.css:224-231` still-view list to match `STILL_VIEWS`.
+Re-run and paste: `node --check`, boot-check (or say plainly it could not start), grep for mock text
+("uncertain", "Sample", "reading first", "R1 A", "Q1 B") in `app/` = 0.

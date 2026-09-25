@@ -1,0 +1,5 @@
+AGENTS.md loaded — Herophilus
+
+Implemented Q1 B reading-first and R1 A session-results layouts.
+Checks passed: JS syntax and boot-check (6956 / 153 / 4 / 156; 0 console errors).
+Report: [p4b-report.md](/D:/claude%20os/Medical%20school/Herophilus/progress/app-replan/p4/p4b-report.md).

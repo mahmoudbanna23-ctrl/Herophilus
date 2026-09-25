@@ -1,0 +1,4 @@
+AGENTS.md loaded — Herophilus
+
+Fixed round 1 exactly and updated [p4b-report.md](D:\claude os\Medical school\Herophilus\progress\app-replan\p4\p4b-report.md).  
+Checks pass: JS syntax, boot-check (6956 / 153 / 4 / 156, 0 console errors), and mock text is absent from touched app files.

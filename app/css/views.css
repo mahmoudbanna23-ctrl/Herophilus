@@ -222,10 +222,12 @@ body{
 
 /* ---- the gate: still while reading -------------------------------------- */
 body[data-view="quiz"] .ambient,
+body[data-view="results"] .ambient,
 body[data-view="mock"] .ambient,
 body[data-view="review"] .ambient,
 body[data-view="theory"] .ambient{opacity:.3;transition:opacity .5s ease}
 body[data-view="quiz"] .orb,
+body[data-view="results"] .orb,
 body[data-view="mock"] .orb,
 body[data-view="review"] .orb,
 body[data-view="theory"] .orb{animation-play-state:paused}

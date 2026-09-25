@@ -223,18 +223,18 @@ function vCase(p,q,m,prev){
     :g.got>0?['part',ico('hourglass',18),'Partly right — '+g.got+' of '+g.total+' key points']
     :['bad',ico('laurel',18),'Not quite']);
 
-  let h=`<div class="qwrap">
-   <div class="qhead">
+  const qhead=`<div class="qreading-head"><span>${esc(chapterName(q.chapter))}</span>
+    <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length}</button></div>`;
+  const qtools=`<div class="qtools qcase-tools"><div class="qhead">
     <button class="tb-btn" style="padding-left:0" onclick="go({name:'module',id:'${q.module}'})">←</button>
     <span class="pill" style="background:${m.hex}">${esc(chapterName(q.chapter))}</span>
     <span class="pill ghost">${ico('stylus',13)} Case</span>
     ${bankPills(q)}
     ${q.source?`<span class="pill ghost">${mdInline(q.source)}</span>`:''}
-    <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length} &nbsp;&#9776;</button>
-   </div>
-   <div class="qcard">
-    ${markbar(q.id)}
-    <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
+    </div></div>`;
+  let h=`<div class="qwrap">${qhead}<div class="qcard">
+     <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
+     <div class="stem-tools">${markbar(q.id)}</div>
     ${qFigure(q)}
     <div class="caseask">${ico('asclepius',17)} What is your diagnosis?</div>
     <textarea id="caseInput" class="caseinput" rows="3" ${Q.shown?'disabled':''}
@@ -247,14 +247,14 @@ function vCase(p,q,m,prev){
   }
 
   if(!Q.shown){
-    h+=`<div class="qactions">
-      <button class="btn go" onclick="revealCase()">Check my answer</button>
-      <button class="btn sec" onclick="peekCase()">${ico('eye',15)} Reveal</button>
+    h+=`<div class="qactions"><div class="qaction-primary">
+      <button class="btn go" onclick="revealCase()">Check my answer</button></div>
+      <div class="qaction-secondary"><button class="btn sec" onclick="peekCase()">${ico('eye',15)} Reveal</button>
       <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
       <div style="margin-left:auto;display:flex;gap:9px">
         ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
         <button class="btn sec" onclick="navQ(1)">Skip →</button>
-      </div></div>`;
+      </div></div></div>`;
   }else{
     h+=`<div class="verdict ${verdict[0]}"><span class="big">${verdict[1]}</span>${verdict[2]}</div>`;
     h+=`<div class="modelans"><b>The source's diagnosis</b><div>${md(q.answer)}</div></div>`;
@@ -292,7 +292,7 @@ function vCase(p,q,m,prev){
         <button class="btn go" onclick="navQ(1)">${Q.i===Q.ids.length-1?'Finish':'Next →'}</button>
       </div></div>`;
   }
-  h+=`</div></div>`;
+   h+=`${qtools}</div></div>`;
   p.innerHTML=h;
   const stemEl=p.querySelector('.stem');
   if(stemEl){
@@ -344,18 +344,19 @@ function vQuiz(p){
   if(q.type==='case'){vCase(p,q,m,prev);return}
   const flagged=!!S.flags[q.id];
 
-  let h=`<div class="qwrap">
-   <div class="qhead">
+  const qhead=`<div class="qreading-head"><span>${esc(chapterName(q.chapter))}</span>
+     <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length}</button>
+     ${Q.exam?`<span class="exam-clock ${examClockClass()}" id="examClock" title="Time left in this paper">${examClockText()}</span>`:''}
+    </div>`;
+  const qtools=`<div class="qtools"><div class="qhead">
     <button class="tb-btn" style="padding-left:0" onclick="go({name:'module',id:'${q.module}'})">←</button>
     <span class="pill" style="background:${m.hex}">${esc(chapterName(q.chapter))}</span>
     ${bankPills(q)}
     ${q.source?`<span class="pill ghost">${mdInline(q.source)}</span>`:''}
-    <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length} &nbsp;&#9776;</button>
-    ${Q.exam?`<span class="exam-clock ${examClockClass()}" id="examClock" title="Time left in this paper">${examClockText()}</span>`:''}
-   </div>
-   <div class="qcard">
-    ${markbar(q.id)}
+    </div></div>`;
+  let h=`<div class="qwrap">${qhead}<div class="qcard">
     <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
+    <div class="stem-tools">${markbar(q.id)}</div>
     ${qFigure(q)}
     <div class="opts">`;
   q.options.forEach((o,i)=>{
@@ -385,18 +386,18 @@ function vQuiz(p){
     const last=Q.i+1>=Q.ids.length;
     const left=Q.ids.filter(id=>!(id in Q.exam.picked)).length;
     h+=`<div class="qactions">
-      ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
-      <button class="btn go" onclick="navQ(1)">${last?'Last one — hand in':'Next'} →</button>
-      <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
-      <div style="margin-left:auto;display:flex;gap:9px;align-items:center">
+      <div class="qaction-primary"><button class="btn go" onclick="navQ(1)">${last?'Last one — hand in':'Next'} →</button></div>
+      <div class="qaction-secondary">
+        ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
+        <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
         <span class="ch-count">${left} unanswered</span>
         <button class="btn sec" onclick="examConfirmFinish()">Hand in</button>
       </div></div>`;
   }else if(!Q.shown){
     h+=`<div class="qactions">
-      <button class="btn go" ${Q.sel===null?'disabled':''} onclick="reveal()">Check answer</button>
-      <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
-      <div style="margin-left:auto;display:flex;gap:9px">
+      <div class="qaction-primary"><button class="btn go" ${Q.sel===null?'disabled':''} onclick="reveal()">Check answer</button></div>
+      <div class="qaction-secondary">
+        <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
         ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
         <button class="btn sec" onclick="navQ(1)">Skip →</button>
       </div></div>`;
@@ -445,13 +446,13 @@ function vQuiz(p){
     }
 
     h+=`<div class="qactions">
-      <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
-      <div style="margin-left:auto;display:flex;gap:9px">
+      <div class="qaction-primary"><button class="btn go" onclick="navQ(1)">${Q.i===Q.ids.length-1?'Finish':'Next →'}</button></div>
+      <div class="qaction-secondary">
+        <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
         ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
-        <button class="btn go" onclick="navQ(1)">${Q.i===Q.ids.length-1?'Finish':'Next →'}</button>
       </div></div>`;
   }
-  h+=`</div></div>`;
+  h+=`${qtools}</div></div>`;
   p.innerHTML=h;
   const stemEl=p.querySelector('.stem');
   if(stemEl){
@@ -581,16 +582,26 @@ function finishSet(){
   if(pct>=80&&done>=3)confetti();
   /* the end of a set is the one moment she gets to jump */
   clepPose(pct>=80&&done>=3?'jumping':'presenting'); clepSettle(5000);
-  const face=ico(pct>=90?'laurel':pct>=75?'target':pct>=50?'hourglass':'scroll',40);
   const skipped=Q.ids.length-done;
-  showModal(`<h3>${face} ${pct}%</h3>
-   <p>You answered <strong>${done}</strong> question${done===1?'':'s'} and got <strong>${right}</strong> right${mins?` in ${mins} min`:''}.
-   ${missed>0?` The ${missed} you missed ${missed===1?'is':'are'} in your review deck.`:' All correct.'}
-   ${skipped>0?`<br><span style="color:var(--ink-4)">${skipped} skipped, still unanswered.</span>`:''}</p>
-   <div class="modal-actions">
-     <button class="btn sec" onclick="closeModal();go({name:'home'})">Dashboard</button>
-     ${missed>0?`<button class="btn go" onclick="closeModal();go({name:'review'})">Review mistakes</button>`:`<button class="btn go" onclick="closeModal()">Continue</button>`}
-   </div>`);
+  const wrong=ids.filter(id=>!Q.did[id]);
+  go({name:'results',result:{done:done,right:right,missed:missed,skipped:skipped,mins:mins,wrong:wrong}});
+}
+function vResults(p){
+  const r=view.result;
+  if(!r){go({name:'home'});return}
+  const quiet=r.missed
+    ?`${r.missed} answer${r.missed===1?' is':'s'} waiting for review.${r.skipped?` ${r.skipped} skipped, still unanswered.`:''}`
+    :`No wrong answers in this session.${r.skipped?` ${r.skipped} skipped, still unanswered.`:''}`;
+  let h=`<section class="session-results"><h1>Session result</h1><div class="result-grid"><section class="result-account"><div class="score">${r.right} / ${r.done}</div>
+    <p class="quiet">${quiet}</p><div class="result-actions"><button class="btn go" onclick="go({name:'quiz'})">Continue</button>
+    <button class="btn sec" onclick="go({name:'home'})">Return home</button></div>${r.mins?`<p class="quiet result-mins">${r.mins} minute${r.mins===1?'':'s'} taken</p>`:''}</section>`;
+  if(r.wrong.length)h+=`<section class="wrong-queue"><h2>Wrong answers${r.missed?` (${r.missed})`:''}</h2>`;
+  if(r.wrong.length){
+    h+=`<div class="wrong-list">${r.wrong.map(id=>{const q=QUESTIONS.find(x=>x.id===id);return `<div class="wrong-row">${q?mdInline(q.stem):'Question'}</div>`}).join('')}</div>
+      <button class="btn go" onclick="startQuiz(${JSON.stringify(r.wrong).replace(/"/g,'&quot;')},'Session review — wrong answers')">Review wrong answers</button>`;
+  }
+  if(r.wrong.length)h+=`</section>`;
+  p.innerHTML=h+`</div></section>`;
 }
 /* ---- Exam conditions ----------------------------------------------------
    The mock page has always promised three things: random order, a running

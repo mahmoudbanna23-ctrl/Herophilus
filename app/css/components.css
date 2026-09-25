@@ -1,7 +1,10 @@
 /* ---------- Question ---------- */
 @property --angle{syntax:"<angle>";inherits:false;initial-value:0deg}
-.qwrap{max-width:830px;margin:0 auto}
+.qwrap{max-width:760px;margin:0 auto}
 .qhead{display:flex;align-items:center;gap:10px;margin-bottom:17px;flex-wrap:wrap}
+.qreading-head{display:flex;align-items:center;gap:10px;margin:0 0 12px;color:var(--ink-2);font-size:var(--fs-sm);font-weight:700}
+.qreading-head .qprog{margin-left:auto}
+.stem-tools{margin:-10px 0 16px}
 /* The exam clock rides after .qprog, which already carries margin-left:auto,
    so the pair sits at the right end of the head together. Tabular figures
    because a proportional 1 is narrower than a 0 and the whole clock jitters
@@ -99,7 +102,12 @@
 .strike-btn:hover{background:var(--bg-2)}
 .strike-btn:focus-visible,.opt-answer:focus-visible{outline:2px solid var(--tx);outline-offset:2px}
 
-.qactions{display:flex;gap:10px;margin-top:22px;align-items:center;flex-wrap:wrap}
+.qactions{display:flex;flex-direction:column;align-items:stretch;gap:10px;margin-top:22px}
+.qaction-primary,.qaction-secondary{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.qaction-primary .btn{width:100%}
+.qaction-secondary{justify-content:flex-start}
+.qtools{margin-top:24px;padding-top:16px;border-top:1px solid var(--line)}
+.qtools .qhead{margin-bottom:13px}
 .btn{
   position:relative;isolation:isolate;padding:var(--s-5) var(--s-9);border:0;border-radius:var(--r-sm);font-size:var(--fs-ui);font-weight:800;
   background:var(--fill);color:#fff;
@@ -133,6 +141,15 @@
 .verdict.bad{background:var(--bad-bg);color:#ff9aa2;box-shadow:var(--pop) rgba(255,71,87,.3)}
 .verdict.part{background:var(--gold-bg);color:#ffd27a;box-shadow:var(--pop) rgba(255,201,74,.45)}
 .verdict .big{font-size:var(--fs-xl)}
+
+/* ---------- Session results ---------- */
+.session-results{max-width:760px;margin:0 auto}.result-grid{display:grid;gap:24px}
+.result-account,.wrong-queue{border:1px solid var(--neon);border-radius:var(--r-lg);background:var(--card);box-shadow:var(--neon-glow);padding:var(--s-9)}
+.result-grid{margin-top:18px}.score{font:var(--fs-3xl)/1 var(--font-display);color:var(--tx);font-variant-numeric:tabular-nums}
+.quiet{color:var(--ink-2);line-height:1.55}.result-actions{display:flex;flex-direction:column;gap:10px;margin-top:22px}.result-actions .btn{width:100%}
+.wrong-queue h2{margin-bottom:14px}.wrong-list{display:grid;gap:8px;margin:0 0 18px}.wrong-row{padding:var(--s-5) var(--s-6);border:1px solid var(--line);border-radius:var(--r-md);color:var(--ink-2);font-size:var(--fs-ui);line-height:1.45}
+.result-mins{margin:18px 0 0}
+@media(min-width:601px){.session-results{max-width:980px}.result-grid{grid-template-columns:1fr 1fr;align-items:start}.wrong-queue{margin-top:0}}
 
 /* ---- free-text case questions ---- */
 .caseask{margin-top:19px;font-weight:900;font-size:var(--fs-ui);color:var(--ink-2)}
