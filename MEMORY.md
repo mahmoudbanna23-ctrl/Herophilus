@@ -39,7 +39,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
   (local). Owner answered 2026-09-25 (plan §6): Meshy CC BY approved, Peds tag plain, lab values
   source-then-tagged, screenshots dropped, candle desk = P3 mocks photo vs painted plate, water level
   = every answer counts, 100/day, midnight reset. Still owed: privacy wording (P9b). 3D search done
-  (none; Meshy only); generation map + audio P6b in plan §6. NEXT: probe gen models, then P0 — ALL design+code DISPATCHED per team sheet (owner 09-25).
+  (none; Meshy only); generation map + audio P6b in plan §6. NEXT: probe gen models, then P0 — ALL design+code DISPATCHED per team sheet (owner 09-25). Astra baseline security pass now: offered, awaiting go.
   Deploy freeze R9: no Pages upload 09-26..27, 10-02..03, 10-17..19. Superseded resume bullets:
   archive `## Pruned from MEMORY.md - 2026-09-25`.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
