@@ -183,6 +183,18 @@ Each ships alone. "Check" is the machine check; R8 applies to all.
 - **P9b Pages extras.** `about.html`, `privacy.html`, `404.html`, share card (old B8). The owner
   approves the privacy wording, and a check confirms it matches what the code actually sends
   (`plan-until-codex:163-166`).
+- **P9c Scale + backup (DRAFT 2026-09-25).** Users grow with every cohort (5 years, 10 semesters)
+  and so does each user's state. **Owner ruling 2026-09-25: cloud progress splits into one
+  document per subject.** Migration: first sync reads the old single doc, writes the per-subject
+  docs, keeps the old doc until a read-back matches; local `wardround.*` keys are NEVER renamed.
+  Proposed, awaiting owner yes: sync every 30-60 s + on tab hide/close (from 1.2 s, `gate.js:266`),
+  roster written only on change (`gate.js:294`); Cloudflare D1 via `_worker.js` as primary store,
+  Firestore as second copy (newest `updatedAt` wins, worker verifies the Firebase ID token); R2 for
+  media; a static mirror host for failover (its domain added to Firebase auth); usage alerts at
+  ~70% of each free tier, then paid steps (Workers Paid, then Blaze) with billing-off alerts.
+  Free-tier and price figures are general knowledge, UNVERIFIED — check the dashboards first.
+  Owed: rough students per year. Seats: astra (worker, sync, migration), terra (rest), Opus
+  refuter; Astra's P12 pass covers the worker.
 - **P10 Hardening.** f12/B6 accessibility and mobile; f15 CSP Report-Only; inline-handler count then
   cleanup plan; the CSP must allow the classic data `<script>` tags. Check: 0 AA failures,
   keyboard-only quiz, CSP report shows no violations. Runs before P11 so light theme is built on a
