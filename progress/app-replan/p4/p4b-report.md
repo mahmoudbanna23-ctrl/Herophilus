@@ -32,3 +32,12 @@
 - `components.css:5-7,146-150`: reading header/stem-tool spacing and desktop (>600 px) account/review grid. `views.css:225,230`: results joins still views.
 - `node tools\boot-check\boot-check.js`: chrome.exe; QUESTIONS 6956 / THEORY 153 / MODULES 4 / chapters 156; console errors 0.
 - Mock-text grep in touched app files (`quiz.js`, `render.js`, `components.css`, `views.css`): 0. Whole `app/` also has pre-existing data/token matches, which this brief forbids changing.
+
+## Orchestrator close-out (2026-09-25, commit 088f468)
+Refuter PASS on fix round 1. Orchestrator then fixed three nits inline, NOT re-shot: `.result-grid`
+owns card spacing (was `.result-account` margin-top 18px offset in 2 columns); zero-wrong line
+"No wrong answers to review." removed (account already says it); "0 minutes taken" hidden when
+`r.mins` is 0. `node --check` + boot-check clean after.
+Left open (small, for P10 or a later pass): chapter name shows twice (header line + tools row);
+`☰` dropped from the `N / M` jump button while its tooltip still mentions J.
+Never verified: focus ring with real Tab presses, light-theme shots, print.
