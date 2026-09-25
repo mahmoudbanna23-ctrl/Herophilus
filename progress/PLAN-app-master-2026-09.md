@@ -241,8 +241,20 @@ Living-scene DECISION-2026-09-21 disputes and steps:
 
 Owner answers 2026-09-25 (recorded; the owed list below is what is left):
 - Fork 5 phase order: Claude's call stands (P3 mocks beside P0/P1).
-- Meshy licence: APPROVED (free tier, CC BY 4.0 public). Owner also asks for a search of 3D tools
-  on OmniRoute or Codex before P7a; the catalogue call hung twice on 2026-09-25, search not done.
+- Meshy licence: APPROVED (free tier, CC BY 4.0 public). 3D-tool search DONE 2026-09-25 (full
+  gateway list, 1,752 models, read by script): no 3D model on OmniRoute or Codex, no Higgsfield,
+  no Kling/Sora/Runway/Luma. Meshy stays the only P7a route.
+- Generation map (owner yes 2026-09-25; listed is not proven, one probe call each before use):
+  desk plates P3/P5/P11 and subject scenes P5 = Gemini image (Nano Banana Pro / 3 Pro Image),
+  backup Codex `image_generation`; one gateway call per image by script, R5 brief, every image
+  looked at, owner picks. Painted plate may send her PNGs as STYLE reference (owner OK) — nothing
+  is drawn onto her, she is never regenerated. Her voice text P6 = `work-text`, checked against
+  f20. P3 mock HTML = Codex terra. Clepsydra 3D = Meshy by the owner's hand. Water level = code.
+  On hold until checked: `veo-free/*` and `veoaifree-web/*` video (unknown wrappers, Seedance
+  version unstated; a `-web` scraper is banned), AI Horde (public volunteer queue).
+- Audio ADDED (owner yes 2026-09-25), new phase P6b after P6: her lines spoken via Gemini TTS,
+  ambient loop via Lyria. Claude's proposal, to confirm in P3: muted by default, silent on reading
+  views, same rule as the scene. Lyria output licence: UNVERIFIED, check before shipping.
 - Lab values: course material where found, outside values tagged `not taken from the course
   material` where not — P8a.
 - Peds tag: plain text — P4.
