@@ -1229,3 +1229,9 @@ time; superseded by §14 (Ch.7 Substance-related disorders + Ch.8 Cranial nerve 
   `research-spec-app-wide.md` per plan → owner review. Plan: `C:\Users\Alfa388\.claude\plans\zippy-tumbling-plum.md`.
   ⚠️ Compile in a FRESH session — this one is past its ~80-step budget.
 - **APP RE-PLAN 2026-09-17: `progress\PLAN-app-replan-2026-09-17.md`** — B10, B11, B2, B1, B3a-1/-3, B12, easing DONE (2026-09-21, tags `pre-*`, unpushed); home = ONE desk layout + candle; sign-in + card-art fixes LIVE 2026-09-22 (ophtho shipped, `main` pushed). Next: B3b (talk buttons first), B4 — PAUSED behind the A-to-Z replan above. **Resume: `progress\app-replan\plan-until-codex-2026-09-20.md` section H.** Older detail: `progress\memory-archive.md`, pruned 2026-09-20.
+
+
+## Pruned from MEMORY.md - 2026-09-25 (P3 close-out detail, superseded by P4a commit 10b2684)
+- Superseded-by lines added atop `PLAN-app-replan-2026-09-17.md` and `research-living-scene\DECISION-2026-09-21.md` (both untracked).
+- NEXT (was): P3 closed; start P4 (look system: painted desk, neon default, Q1 B, R1 A) + final painted plate art.
+- P3: OWNER PICKED 2026-09-25 painted desk · Q1 B · R1 A (neon edges = DEFAULT, owner 2026-09-25; plan §2 updated); mocks pass review (fix rounds 1-6 in `mocks/p3-fix-brief.md` + NOTES). Round-2 plates owed left-third calm (painted) + level lines (photo) — made in round 3 (`plates/<kind>-codex-3.png`).
