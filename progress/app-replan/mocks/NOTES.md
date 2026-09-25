@@ -40,6 +40,6 @@
 
 ## Owner picks (2026-09-25)
 
-- Desk: painted.
+- Desk: painted. FINAL art = `plates/painted-codex-3.png` (owner, 2026-09-25).
 - Q1: B, and neon edges are the DEFAULT (owner, 2026-09-25).
 - R1: A.

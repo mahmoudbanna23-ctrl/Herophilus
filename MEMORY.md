@@ -34,8 +34,8 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 - **APP MASTER PLAN — APPROVED 2026-09-25: `progress\PLAN-app-master-2026-09.md`**
   (phases P0-P12, P7/P8/P9 split a/b; J9 team talk + Opus refuter folded in,
   `progress\app-replan\j9-team-talk\minutes.md`). Fork 5: P3 mocks beside P0/P1. P4a DONE `10b2684`
-  (tag `pre-p4-2026-09-25`, `p4\p4a-report.md`); plates round 3 made, OWNER'S EYE OWED. NEXT: brief P4b
-  (Q1 B/R1 A layouts) to Codex terra. P10 debt: focus ring `--neuro` 2.71:1 dark (`base.css:16`); 7 side-tab left borders (theory, hero, callouts). Rollback tag `pre-master-replan`
+  (tag `pre-p4-2026-09-25`, `p4\p4a-report.md`); final plate = `painted-codex-3.png` (owner). P4b (Q1 B/R1 A)
+  BRIEFED + dispatched to Codex terra (`p4\p4b-layouts-brief.md`, tag `pre-p4b-2026-09-25`). P10 debt: focus ring `--neuro` 2.71:1 dark (`base.css:16`); 7 side-tab left borders (theory, hero, callouts). Rollback tag `pre-master-replan`
   (local). Owner answered 2026-09-25 (plan §6): Meshy CC BY approved, Peds tag plain, lab values
   source-then-tagged, screenshots dropped, candle desk = P3 mocks photo vs painted plate, water level
   = every answer counts, 100/day, midnight reset. Plan §6 gen map + audio P6b; §8 = Codex gap review (P1 sync exit conditions; P9c Firestore-only, per-subject — owner ruling; D1 DROPPED).
