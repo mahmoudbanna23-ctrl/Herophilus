@@ -75,7 +75,7 @@
   display:flex;gap:var(--s-3);align-items:flex-start;padding:var(--s-2) var(--s-2) var(--s-2) var(--s-8);
   border:1px solid var(--neon);border-radius:var(--r-lg);background:var(--card);box-shadow:var(--neon-glow);
   text-align:left;width:100%;line-height:1.5;font-weight:600;
-  transition:border-color .15s var(--ease-spring),background-color .15s var(--ease-spring),box-shadow .15s var(--ease-spring);
+  transition:border-color .15s var(--ease-standard),background-color .15s var(--ease-standard),box-shadow .15s var(--ease-standard);
 }
 .opt:hover:not(:has(.opt-answer:disabled)){border-color:var(--gold);background:var(--tint-2);box-shadow:var(--gold-glow)}
 .opt-answer{display:flex;gap:13px;align-items:flex-start;padding:var(--s-4) 0;border:0;background:transparent;color:var(--tx);text-align:left;flex:1;min-width:0;font:inherit;line-height:inherit;font-weight:inherit}
@@ -103,7 +103,7 @@
 .btn{
   position:relative;isolation:isolate;padding:var(--s-5) var(--s-9);border:0;border-radius:var(--r-sm);font-size:var(--fs-ui);font-weight:800;
   background:var(--fill);color:#fff;
-  transition:color var(--dur-2) var(--ease-spring),background-color var(--dur-2) var(--ease-spring);
+  transition:color var(--dur-2) var(--ease-standard),background-color var(--dur-2) var(--ease-standard);
 }
 .btn::before{content:"";position:absolute;inset:0;border-radius:var(--r-sm);padding:1px;background:conic-gradient(from var(--angle),transparent,transparent,var(--peds-hi),transparent,transparent);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;z-index:-1;animation:orbit 7s linear infinite}
 .btn:hover:not(:disabled)::before{animation-duration:2.3s}
@@ -127,7 +127,7 @@
 @media(prefers-reduced-motion:reduce){.btn::before{animation:none}.opt,.opt.correct,.opt.wrong{transition:none}.verdict{animation:none}}
 .verdict{
   margin-top:21px;padding:var(--s-7) var(--s-8);border-radius:var(--r-lg);font-weight:900;font-size:var(--fs-ui);
-  display:flex;align-items:center;gap:11px;border:1px solid var(--neon);box-shadow:var(--neon-glow);animation:pop .32s var(--ease-spring);
+  display:flex;align-items:center;gap:11px;border:1px solid var(--neon);box-shadow:var(--neon-glow);animation:pop .32s var(--ease-standard);
 }
 .verdict.ok{background:var(--ok-bg);color:#5fe0a8;box-shadow:var(--pop) rgba(0,168,107,.3)}
 .verdict.bad{background:var(--bad-bg);color:#ff9aa2;box-shadow:var(--pop) rgba(255,71,87,.3)}

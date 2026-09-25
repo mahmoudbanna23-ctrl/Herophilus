@@ -171,7 +171,7 @@ h2{font-size:var(--fs-lg);font-weight:800;letter-spacing:-.02em;margin:0 0 13px}
 .card{
   background:var(--card);border:1px solid var(--neon);border-radius:var(--r-lg);
   padding:var(--s-8);text-align:left;width:100%;box-shadow:var(--neon-glow);
-  transition:border-color .15s var(--ease-spring),background-color .15s var(--ease-spring),box-shadow .15s var(--ease-spring);
+  transition:border-color .15s var(--ease-standard),background-color .15s var(--ease-standard),box-shadow .15s var(--ease-standard);
 }
 button.card:hover:not(:disabled){border-color:var(--gold);background-color:var(--bg-2);box-shadow:var(--gold-glow)}
 button.card:active:not(:disabled){border-color:var(--gold)}
@@ -228,7 +228,7 @@ button.card:active:not(:disabled){border-color:var(--gold)}
   display:flex;align-items:center;gap:13px;padding:var(--s-6) var(--s-7);background:var(--card);
   border:1px solid var(--neon);border-radius:var(--r-lg);margin-bottom:9px;width:100%;text-align:left;
   box-shadow:var(--neon-glow);
-  transition:border-color var(--dur-2) var(--ease-spring),background-color var(--dur-2) var(--ease-spring),box-shadow var(--dur-2) var(--ease-spring);
+  transition:border-color var(--dur-2) var(--ease-standard),background-color var(--dur-2) var(--ease-standard),box-shadow var(--dur-2) var(--ease-standard);
 }
 .ch-row:hover:not(:disabled){border-color:var(--gold);background-color:var(--bg-2);box-shadow:var(--gold-glow)}
 .ch-row:disabled{opacity:.45;cursor:default;box-shadow:none;border-style:dashed}

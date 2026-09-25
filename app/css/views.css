@@ -8,7 +8,7 @@
   position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(90px);
   background:var(--fill);color:#fff;padding:var(--s-6) var(--s-9);border-radius:var(--r-lg);font-size:var(--fs-ui);
   border:2.5px solid #000;box-shadow:0 10px 24px rgba(0,0,0,.3);z-index:var(--z-400);opacity:0;
-  transition:all .3s var(--ease-spring);font-weight:800;
+  transition:all .3s var(--ease-standard);font-weight:800;
 }
 .toast.show{transform:translateX(-50%) translateY(0);opacity:1}
 
@@ -21,7 +21,7 @@
 .modal-bg.show{display:flex}
 .modal{
   border-radius:var(--r-lg);padding:var(--s-11);
-  max-width:460px;width:100%;animation:pop .3s var(--ease-spring);
+  max-width:460px;width:100%;animation:pop .3s var(--ease-standard);
   margin:auto;flex-shrink:0;
 }
 .modal h3{margin:0 0 9px;font-size:var(--fs-lg);font-weight:900;letter-spacing:-.02em}
@@ -42,7 +42,7 @@
   color:var(--ink-2);margin-right:2px}
 .bankchip{position:relative;display:inline-flex;align-items:center;gap:7px;padding:var(--s-3) var(--s-6) var(--s-3) var(--s-10);cursor:pointer;
   border:0;border-radius:var(--r-md);background:transparent;color:var(--tx);font-family:inherit;font-size:var(--fs-md);font-weight:800;
-  transition:color var(--dur-2) var(--ease-spring)}
+  transition:color var(--dur-2) var(--ease-standard)}
 .bankchip:hover{color:var(--gold-text)}
 /* Off-state is deliberately flat and grey: which sources are live must be
    readable at a glance, or you sit an exam on a filtered set without noticing. */
@@ -83,7 +83,7 @@
 .chip{
   position:relative;padding:var(--s-4) var(--s-7) var(--s-4) var(--s-10);border:0;border-radius:var(--r-md);font-size:var(--fs-md);
   background:transparent;color:var(--tx);font-weight:800;
-  transition:color var(--dur-2) var(--ease-spring);
+  transition:color var(--dur-2) var(--ease-standard);
 }
 .chip:hover{color:var(--gold-text)}
 /* fallback is --fill, not --ink: --ink is near-white since the redesign, so an
