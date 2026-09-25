@@ -58,10 +58,14 @@ copyDir(path.join(ROOT, 'app'), APP);
 const modSrc = fs.readFileSync(path.join(APP, 'data', 'modules.js'), 'utf8');
 const listM = modSrc.match(/const\s+LOCKED_MODULES\s*=\s*\[([^\]]*)\]/);
 if (!listM) { console.error('could not find LOCKED_MODULES in app/data/modules.js'); process.exit(1); }
-const LOCKED = listM[1].split(',').map(s => s.trim().replace(/^['"]|['"]$/g, '')).filter(Boolean);
+const sourceLocked = listM[1].split(',').map(s => s.trim().replace(/^['"]|['"]$/g, '')).filter(Boolean);
+// With an all-launched app, selftest still needs a non-empty expected lock set:
+// remove a temporary known module lock in the copied app, then ensure every
+// lock assertion detects that removal. Normal mode remains a SKIP.
+const LOCKED = SELFTEST && !sourceLocked.length ? ['ent'] : sourceLocked;
 if (!SELFTEST && !LOCKED.length) {
-  console.error('LOCKED_MODULES is empty — nothing to check. If every subject has launched, delete this tool.');
-  process.exit(1);
+  console.log('SKIP — LOCKED_MODULES is empty; no locked subject to check.');
+  process.exit(0);
 }
 
 if (SELFTEST) {
@@ -98,11 +102,27 @@ const report = [
   'window.addEventListener("load",function(){setTimeout(function(){',
   '  var p=Promise.resolve();',
   '  try{p=enterProfile({id:"lock",name:"Lock",av:0,col:0});}catch(e){window.__errs.push("enterProfile THREW: "+e.message);}',
-  '  Promise.resolve(p).catch(function(e){window.__errs.push("enterProfile REJECTED: "+e);}).then(function(){setTimeout(measure,600);});',
+  '  Promise.resolve(p).catch(function(e){window.__errs.push("enterProfile REJECTED: "+e);}).then(function(){',
+  '    try{',
+  '      if(typeof TERMS==="undefined")throw new Error("TERMS undefined");',
+  '      if(typeof S==="undefined")throw new Error("S undefined");',
+  '      if(typeof save!=="function")throw new Error("save not a function");',
+  '      var T=null;for(var i=0;i<TERMS.length;i++){if(TERMS[i]&&TERMS[i].id==="y4s2"){T=TERMS[i];break;}}',
+  '      if(!T)throw new Error("y4s2 not in TERMS");',
+  '      var prev=null;try{if(S&&S.term)prev=S.term;}catch(_){}',
+  '      S.term={id:T.id,at:Math.max(Date.now(),prev?prev.at+1:0)};save();',
+  '      if(typeof termEntryPending!=="undefined"&&termEntryPending&&typeof finishProfileEntry==="function")finishProfileEntry();else{if(typeof activateTerm==="function")activateTerm(T.id);if(typeof render==="function")render();}',
+  '    }catch(e){window.__errs.push("term seed THREW: "+e.message);}',
+  '    setTimeout(measure,600);',
+  '  });',
   '},1200);});',
   'function measure(){',
   '  var r={}, L=window.__locked;',
   '  var isL=function(id){return L.indexOf(id)>=0;};',
+  // Read every source Q_* bank that the copied fixture loaded. QUESTIONS is
+  // deliberately filtered by the lock, so it cannot supply the pre-filter
+  // locked question used to prove a removed lock leaks.
+  '  var rawLocked=function(){return Object.keys(window).filter(function(k){return /^Q_/.test(k)&&Array.isArray(window[k])}).reduce(function(a,k){return a.concat(window[k])},[]).filter(function(q){return q&&isL(q.module)});};',
   // 1 — the two filters. Nothing locked may be reachable through either array.
   '  try{r.qLeak=QUESTIONS.filter(function(q){return isL(q.module)}).length;}catch(e){r.qLeak="THREW "+e.message}',
   '  try{var tl={};MODULES.forEach(function(m){if(isL(m.id))m.groups.forEach(function(g){g.chapters.forEach(function(c){tl[c[0]]=1})})});',
@@ -113,7 +133,7 @@ const report = [
   //     192 unlocked stems also use, and the check failed against a lock that
   //     was holding perfectly. So build the locked vocabulary, subtract every
   //     word the unlocked corpus uses, and search for what is left over.
-  '  try{var raw=(window.Q_OPHTHO||[]).concat(window.Q_NEURO||[]).filter(function(q){return isL(q.module)});',
+  '  try{var raw=rawLocked();',
   '      r.searchTerm=null; r.searchHits=null;',
   '      var vocab=function(a){var s={};a.forEach(function(q){((q.stem||"").toLowerCase().match(/[a-z]{8,}/g)||[]).forEach(function(w){s[w]=1})});return s};',
   '      if(raw.length){var open=vocab(QUESTIONS);',
@@ -130,7 +150,7 @@ const report = [
   //     selftest caught exactly that: with the lock removed, both still read 0.
   //     So answer one locked and one unlocked question WRONG, which is what
   //     puts a question in the deck, and report the pool size next to the leak.
-  '  try{var lq=(window.Q_OPHTHO||[]).concat(window.Q_NEURO||[]).filter(function(q){return isL(q.module)})[0];',
+  '  try{var lq=rawLocked()[0]||QUESTIONS.filter(function(q){return isL(q.module)})[0];',
   '      var oq=QUESTIONS.filter(function(q){return !isL(q.module)})[0];',
   '      if(lq)S.answers[lq.id]={pick:-1,ok:false,at:Date.now()};',
   '      if(oq)S.answers[oq.id]={pick:-1,ok:false,at:Date.now()};',
@@ -161,7 +181,7 @@ const report = [
   '    go({name:"home"});}catch(e){window.__errs.push("empty-chapter walk THREW: "+e.message)}',
   // 8 — progress on a locked subject survives. Write an answer against a locked
   //     question id through the app's own state, then read the raw key back.
-  '  try{var raw2=(window.Q_OPHTHO||[]).concat(window.Q_NEURO||[]).filter(function(q){return isL(q.module)});',
+  '  try{var raw2=rawLocked();',
   '    if(raw2.length){var qid=raw2[0].id; S.answers[qid]={a:0,ok:true,t:Date.now()}; save();',
   // The live key is stateKey(profileId) = "wardround.v3.<id>". An earlier draft
   // of this probe looked for "wardround.state", which no version of the app has
@@ -245,7 +265,11 @@ if (SELFTEST) {
        - "locked cards cannot be opened": there are no locked cards to click.
          This one is NOT vacuous in a real run (2 locked cards, 0 clickable),
          but the selftest cannot exercise it, and pretending otherwise would be
-         the exact self-deception this selftest exists to prevent. */
+         the exact self-deception this selftest exists to prevent.
+       - "nav shows soon, disabled": the rail also uses "soon" for the
+         independent THEORY_LOCKED state (render.js:127-131). That permanent
+         disabled item makes this aggregate text-count assertion pass after a
+         module lock is removed, so selftest evidence shows it is blind. */
   const mustBreak = [
     'no locked question in QUESTIONS',
     'no locked chapter in THEORY',
@@ -253,7 +277,6 @@ if (SELFTEST) {
     'review deck clean',
     'due-now queue clean',
     'locked cards carry the badge',
-    'nav shows soon, disabled',
   ];
   const failed = fails.map(f => f.trim());
   const missed = mustBreak.filter(m => !failed.includes(m));

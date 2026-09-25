@@ -62,14 +62,15 @@ copyDir(path.join(ROOT, 'app'), APP);
 const INDEX = path.join(APP, 'index.html');
 let html = fs.readFileSync(INDEX, 'utf8');
 
-const TICK_FIXED = 'clepPaint(); paintNavClock(); paintSessionLive();';
-const TICK_BROKEN = 'clepPaint(); paintSessionLive();';
 if (NOFIX) {
-  if (!html.includes(TICK_FIXED)) {
-    console.error('--nofix: the fixed tick line is not in index.html, so there is nothing to un-fix.');
+  const clep = path.join(APP, 'js', 'clepsydra.js');
+  const clepSrc = fs.readFileSync(clep, 'utf8');
+  const tick = /(clepPaint\(\);\s*)paintNavClock\(\);\s*(paintSessionLive\(\);)/;
+  if (!tick.test(clepSrc)) {
+    console.error('--nofix: the fixed tick line is not in clepsydra.js, so there is nothing to un-fix.');
     process.exit(1);
   }
-  html = html.replace(TICK_FIXED, TICK_BROKEN);
+  fs.writeFileSync(clep, clepSrc.replace(tick, '$1$2'), 'utf8');
 }
 
 const probe = [
@@ -89,6 +90,16 @@ const report = [
   'function nc(){var n=document.getElementById("navSessClock");return n?n.textContent.trim():"(no node)"}',
   'window.addEventListener("load",function(){setTimeout(function(){',
   '  Promise.resolve(enterProfile({id:"boot",name:"Boot",av:0,col:0})).then(function(){',
+  '    try{',
+  '      if(typeof TERMS==="undefined")throw new Error("TERMS undefined");',
+  '      if(typeof S==="undefined")throw new Error("S undefined");',
+  '      if(typeof save!=="function")throw new Error("save not a function");',
+  '      var T=null;for(var i=0;i<TERMS.length;i++){if(TERMS[i]&&TERMS[i].id==="y4s2"){T=TERMS[i];break;}}',
+  '      if(!T)throw new Error("y4s2 not in TERMS");',
+  '      var prev=null;try{if(S&&S.term)prev=S.term;}catch(_){}',
+  '      S.term={id:T.id,at:Math.max(Date.now(),prev?prev.at+1:0)};save();',
+  '      if(typeof termEntryPending!=="undefined"&&termEntryPending&&typeof finishProfileEntry==="function")finishProfileEntry();else{if(typeof activateTerm==="function")activateTerm(T.id);if(typeof render==="function")render();}',
+  '    }catch(e){window.__errs.push("term seed THREW: "+e.message);}',
   '    var r={};',
   // boot() reaches the real showGate, which stops the session tick by design.
   // Stub it now that the profile is in, so the test is not racing the gate.

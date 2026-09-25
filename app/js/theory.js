@@ -188,7 +188,12 @@ function isMdRule(row){
    real <thead> is what repeats them. Emitted here so md() and mdBlock() cannot
    drift apart. */
 function mdTable(rows,attr){
-  const body=rows.filter(r=>!isMdRule(r)).map(mdCells);
+  /* Drop ONLY rows[1] (the GFM separator position) when it is a rule row —
+     never filter every matching row, or a data row that happens to look like
+     "| - | - |" (single-dash cells, valid GFM data) is silently eaten too.
+     REFUTE-round1.md fix-list item 5, 2026-09-25. */
+  const kept=(rows.length>1&&isMdRule(rows[1]))?rows.slice(0,1).concat(rows.slice(2)):rows.slice();
+  const body=kept.map(mdCells);
   if(!body.length)return '';
   const cell=(c,t)=>`<${t}>${c.trim()}</${t}>`;
   let t='<table'+(attr||'')+'>';

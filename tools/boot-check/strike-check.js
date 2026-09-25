@@ -61,6 +61,8 @@ const report=[
   'x.dispatchEvent(new KeyboardEvent("keydown",{key:"ArrowRight",bubbles:true}));',
   'result("ArrowRight still navigates with focus on X",Q.i===1);',
   'result("next question has zero strikes",document.querySelectorAll(".opt.struck").length===0);',
+  'var six=QUESTIONS.find(function(q){return Array.isArray(q.options)&&q.options.length===6});',
+  'if(!six){result("F on focused X is ignored for six options",false)}else{startQuiz([six.id],"Six-option F probe");var sixX=document.querySelector(".strike-btn");sixX.focus();sixX.dispatchEvent(new KeyboardEvent("keydown",{key:"F",bubbles:true}));result("F on focused X is ignored for six options",Q.sel===null&&!Q.shown&&document.activeElement===sixX);}',
   'navQ(-1);x=document.querySelector(".strike-btn");x.click();document.querySelector(".opt-answer").click();',
   'result("no X after pick in normal quiz",Q.sel===0&&document.querySelectorAll(".strike-btn").length===0&&document.querySelectorAll(".opt.struck").length===0);',
   'var cq=QUESTIONS.find(function(q){return q.type==="case";});',
