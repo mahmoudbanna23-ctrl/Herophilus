@@ -35,7 +35,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
   (phases P0-P12, P7/P8/P9 split a/b; J9 team talk + Opus refuter folded in,
   `progress\app-replan\j9-team-talk\minutes.md`). Fork 5: P3 mocks beside P0/P1. P4a DONE `10b2684`
   (tag `pre-p4-2026-09-25`, `p4\p4a-report.md`); final plate = `painted-codex-3.png` (owner). P4b (Q1 B/R1 A)
-  DONE (tag `pre-p4b-2026-09-25`). P5 = living desk, plan `p5\PLAN-living-desk-2026-09-26.md`, tag `pre-p5-scene-2026-09-26`; NEXT Lane A spike. P10 debt: focus ring `--neuro` 2.71:1 dark (`base.css:16`); impeccable flags: 7 side-tabs, `.gate::before` grid bg, `.bk-prog` width anim. Rollback tag `pre-master-replan`
+  DONE (tag `pre-p4b-2026-09-25`). P5 = living desk, plan `p5\PLAN-living-desk-2026-09-26.md`, tag `pre-p5-scene-2026-09-26`; NEXT: `p5\RESUME-p5.md`. P10 debt: focus ring `--neuro` 2.71:1 dark (`base.css:16`); impeccable flags: 7 side-tabs, `.gate::before` grid bg, `.bk-prog` width anim. Rollback tag `pre-master-replan`
   (local). Owner answered 2026-09-25 (plan §6): Meshy CC BY approved, Peds tag plain, lab values
   source-then-tagged, screenshots dropped, candle desk = P3 mocks photo vs painted plate, water level
   = every answer counts, 100/day, midnight reset. Plan §6 gen map + audio P6b; §8 = Codex gap review (P1 sync exit conditions; P9c Firestore-only, per-subject — owner ruling; D1 DROPPED).
