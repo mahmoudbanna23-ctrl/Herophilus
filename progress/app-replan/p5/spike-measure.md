@@ -381,10 +381,12 @@ skin: cap vertices are authored at y 0.94-1.38, body top rim at y 0.55 — a 0.3
 been in `make-glb.js`'s geometry generator unchanged since round 1. Round 4's fix note offered two
 options, "identity here, or give `head` a rest translation and its matching inverse"; this round
 took the identity branch (derivable, no invented offset), which means the mesh now renders exactly
-as authored, including this pre-existing vertical gap between torso and cap. Earlier rounds' stray
+as authored, including this pre-existing vertical gap between torso and cap. ~~Earlier rounds' stray
 `T(0,+0.55,0)`/`T(0,+0.85,0)` IBM values (flagged by round 4 as unmatched to any real node rest
 transform) had been incidentally narrowing or hiding this same gap; nothing in this round's diff
-touched the vertex position data.
+touched the vertex position data.~~ **Correction (round 5 refuter):** round 4 measured the opposite —
+body top 1.10, cap bottom 1.79, a 0.69-unit gap, larger than this round's 0.39. The stray IBM values
+were not narrowing the gap.
 
 Not verified:
 - Whether the gap between body and cap should be closed by giving `head` an authored rest
@@ -396,3 +398,66 @@ Not verified:
   `--allow-file-access-from-files` — same as round 4, unchanged this round.
 - `measure.mjs`'s own force=2d/force=lost/throttle/reduced-motion suite was not re-run this round
   (out of the two fixes' scope; nothing in the diff touches that code path).
+
+## Round 6 (Claude builder, 2026-09-26, ROUTE-OK — two Codex dispatches failed on the spike)
+
+Fixed the three round-5 failures in `b-min.html` and struck the false history line above.
+
+1. **Rig fix.** `findClip` now groups every channel of a clip by target node (was: first
+   translation + first rotation channel only, regardless of node). `model()` walks the node
+   hierarchy read from the GLB's own `nodes[].children` (`nodeParent`, built once from the parsed
+   JSON, not hard-coded), composes `world = parent world x local` per joint via `worldOf()`, and
+   sets `jm[i] = world(jointIds[i]) x IBM[i]` for every skin joint (`jointIds = skins[0].joints`).
+   Untargeted nodes fall back to their GLB rest TRS (`restLocal`), not an assumed identity.
+2. **Fallback fix.** `main()` is now called as `try{main()}catch(e){show2d(e)}` (line ~65).
+3. Struck (see above) — round 4's gap numbers were the opposite of what the line claimed.
+4. Owner ruling and A's margin recorded in `spike-report.md`.
+
+**Body motion, measured by hooking `WebGLRenderingContext.prototype.drawElements` and reading
+pixels inside the same call** (a later, separate `readPixels` call on the same canvas came back
+all-zero — headless Chrome had already discarded the default drawing buffer by the time a
+follow-up `Runtime.evaluate` ran; only an in-hook read is fresh). Pixels split into two clusters by
+the largest row-index gap (fewer opaque rows = cap, more = body); guide-only (`#scene` hidden,
+so the plate lamp is masked with it), 1280x800 not forced (headless default viewport, 762x484 —
+window size was not in scope of this fix), Chrome not sandboxed, both file:// and http:
+
+| protocol | idle body cx (5 samples, ~1.05-1.3s apart) | wave body cx (dt from click) | wave cap cx |
+|---|---|---|---|
+| file:// | 382.5 -> 396.5 -> 395.0 -> 392.0 -> 390.0 | 380.5 (dt 10ms) -> 380.5 (dt 1010ms) -> 394.0 (dt 2077ms) | 380.8 -> 427.3 -> 393.8 |
+| http | 382.5 -> 380.5 -> 395.0 -> 392.0 -> 390.5 | 380.5 (dt 12ms) -> 380.5 (dt 1086ms) -> 395.0 (dt 2150ms) | 380.8 -> 430.4 -> 394.9 |
+
+Body centroid now moves **up to ~14 px** across the idle loop, both protocols (round 5 measured
+it fixed at x=639.5 in all 7 frames, guide-only, before this fix). Cluster sizes stayed stable
+(body ~42,200-42,450 px, cap ~4,000-4,110 px) across every sample, confirming the split is
+tracking the same two body parts frame to frame, not drifting onto noise. `exc: []` on both runs
+(0 uncaught exceptions). Probe script: session scratchpad `r6probe.mjs` (not committed).
+
+**Corrupt-model test, file://:** scratch copy of `b-min.html`+`assets.js`+`plate.b64.js` with
+`model.b64.js` replaced by a 4-byte base64 payload (`AAAA`). Result: `.fallback` element present,
+`.fallback img` present (not a black page), console shows `scene fallback Offset is outside the
+bounds of the DataView`, **0 uncaught exceptions** (round 5 measured an uncaught `RangeError`, no
+fallback, black page, on the same corruption). Fix 2 confirmed.
+
+**B bytes (corrected by refuter round 6):** `b-min.html` grew 13,172 -> **13,896 B** (+724 B, the
+hierarchy-walk code); B page+assets = **14,424 B**. Code total, file:// (page+assets, all four
+scripts) **250,793 B** (was 250,069). **Http transfer, `Network.loadingFinished` sum, no-store, 5
+responses (doc + `assets.js` + `model.glb` + `plate.jpg` + `favicon.ico` 404, 175 B):
+192,580 B**; without the favicon 192,423 B (refuter round 6).
+
+`measure.mjs` full suite re-run this round (`node measure.mjs`, default Chrome path, 12 runs): 0
+exceptions on any run; `force=2d` and `force=lost` both fall back for A and B; `?throttle` sheds
+through all six stages to `still` for both; reduced-motion runs show no fallback for either. Full
+JSON: session scratchpad `measure-full.txt`.
+
+**Not verified this round:**
+- A's files, `make-glb.js` and `model.glb`/`model.b64.js` — untouched, not re-checked (out of
+  scope per brief).
+- Body motion was not measured at the brief's 1280x800; the probe used headless Chrome's default
+  new-tab viewport (762x484). The hierarchy-walk fix is viewport-independent, but the exact px
+  numbers above are not comparable to round 5's 1280x800 figures.
+- A real WebGL context restore, an OS-level minimise, a browser without
+  `--allow-file-access-from-files` — same gaps as every prior round.
+- Whether the http response set is exactly 4 real resources + a favicon 404, or something else —
+  `transfer_http` only recorded a count (5) and a byte total, not per-URL detail.
+- The body/cap vertical-gap placeholder-geometry note from round 5 — out of this round's scope,
+  unchanged.

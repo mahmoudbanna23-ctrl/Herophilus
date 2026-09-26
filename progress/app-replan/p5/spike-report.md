@@ -18,6 +18,9 @@ Chrome was not run in this sandbox; no rendering result is asserted here.
 ## Proposed budgets
 
 - Transfer: <=900 KB; A runtime is 711,095 B before scene assets, so HTTP assets need separate measurement.
+  **Owner ruling, 2026-09-26: the budget unit is 900,000 B (decimal), not 921,600 B (900 KiB).**
+  Measured http transfer (round 5 refuter): A 898,548 B, a margin of **1,452 B** under 900,000; B
+  191,850 B.
 - File base64: count only the two injected asset scripts; their encoded sizes need re-stat after the new JPEG.
 - Decoded RAM: 1916×821 RGBA plate is 6.30 MB; embedded 512² texture is 1.00 MB.
 - GPU at DPR1 (two full-screen canvases, `#scene`+`#guide`, RGBA8 + depth, MiB): 23.73 MiB at

@@ -62,7 +62,7 @@ if(!tierOk()){
   if(isFile)heavy.push('plate.b64.js','model.b64.js');
   loadScripts(heavy,function(err){
     if(err)return show2d(err);
-    main();
+    try{main()}catch(e){show2d(e)}
   });
 }
 
@@ -171,13 +171,19 @@ function main(){
     }
     function findClip(name){
       var anim=M.j.animations.filter(function(x){return x.name===name})[0];
-      var tCh=anim.channels.filter(function(c){return c.target.path==='translation'})[0];
-      var rCh=anim.channels.filter(function(c){return c.target.path==='rotation'})[0];
-      var tS=anim.samplers[tCh.sampler],rS=anim.samplers[rCh.sampler];
-      var times=readAccessor(tS.input);
-      return{node:tCh.target.node,dur:times[times.length-1]||1,trans:readAccessor(tS.output),rots:readAccessor(rS.output)};
+      var nodes={},dur=1;
+      anim.channels.forEach(function(c){
+        var s=anim.samplers[c.sampler],out=readAccessor(s.output),n=c.target.node;
+        if(!nodes[n])nodes[n]={};
+        nodes[n][c.target.path]=out;
+        if(c.target.path==='translation'){var times=readAccessor(s.input);dur=times[times.length-1]||dur}
+      });
+      return{dur:dur,nodes:nodes};
     }
     var CLIPS={idle:findClip('idle'),wave:findClip('wave')};
+    var nodeParent={}; /* parent links read from the GLB, not hard-coded */
+    M.j.nodes.forEach(function(nd,ni){(nd.children||[]).forEach(function(c){nodeParent[c]=ni})});
+    var jointIds=M.j.skins[0].joints; /* node id per joint slot, in skin order */
     var invBind=readAccessor(M.j.skins[0].inverseBindMatrices); /* Float32Array, 3 mat4 = 48 floats */
     function invBindAt(i){return Array.prototype.slice.call(invBind,i*16,i*16+16)}
 
@@ -210,16 +216,27 @@ function main(){
       waveEnd=t+CLIPS.wave.dur*1000;
     };
 
-    function sampleClip(clip,localT){
-      var frac=Math.min(Math.max(localT/clip.dur,0),1);
-      var t=vLerp([clip.trans[0],clip.trans[1],clip.trans[2]],[clip.trans[3],clip.trans[4],clip.trans[5]],frac);
-      var r=qSlerp([clip.rots[0],clip.rots[1],clip.rots[2],clip.rots[3]],[clip.rots[4],clip.rots[5],clip.rots[6],clip.rots[7]],frac);
+    function restLocal(ni){
+      var nd=M.j.nodes[ni],t=nd.translation||[0,0,0],r=nd.rotation||[0,0,0,1];
       return mat4FromTR(t,r);
     }
-    function headLocalAt(now){
-      if(now<waveEnd)return sampleClip(CLIPS.wave,(now-waveStart)/1000); /* now/waveStart are ms; clip.dur is seconds */
-      var idle=CLIPS.idle,localT=(now/1000)%idle.dur; /* already seconds */
-      return sampleClip(idle,localT);
+    function nodeLocal(clip,ni,localT){
+      var tr=clip.nodes[ni];
+      if(!tr)return restLocal(ni);
+      var frac=Math.min(Math.max(localT/clip.dur,0),1);
+      var t=tr.translation?vLerp([tr.translation[0],tr.translation[1],tr.translation[2]],[tr.translation[3],tr.translation[4],tr.translation[5]],frac):[0,0,0];
+      var r=tr.rotation?qSlerp([tr.rotation[0],tr.rotation[1],tr.rotation[2],tr.rotation[3]],[tr.rotation[4],tr.rotation[5],tr.rotation[6],tr.rotation[7]],frac):[0,0,0,1];
+      return mat4FromTR(t,r);
+    }
+    function worldOf(ni,clip,localT,memo){
+      if(memo[ni])return memo[ni];
+      var p=nodeParent[ni],pw=p==null?mat4Identity():worldOf(p,clip,localT,memo);
+      return memo[ni]=mat4Mul(pw,nodeLocal(clip,ni,localT));
+    }
+    function activeClipAt(now){
+      if(now<waveEnd)return{clip:CLIPS.wave,localT:(now-waveStart)/1000}; /* now/waveStart are ms; clip.dur is seconds */
+      var idle=CLIPS.idle;
+      return{clip:idle,localT:(now/1000)%idle.dur}; /* already seconds */
     }
 
     model=function(t){
@@ -227,13 +244,13 @@ function main(){
       g.clearColor(0,0,0,0);
       g.clear(g.COLOR_BUFFER_BIT);
       g.useProgram(pr);
-      var headLocal=headLocalAt(t),ident=mat4Identity();
-      /* this simplified guide renderer always writes the sampled clip value into joint slot 2 and
-         leaves 0/1 static; that is unchanged by which node the GLB's own channels target. */
-      var jointWorld=[ident,ident,headLocal];
-      g.uniformMatrix4fv(g.getUniformLocation(pr,'jm0'),false,new Float32Array(mat4Mul(jointWorld[0],invBindAt(0))));
-      g.uniformMatrix4fv(g.getUniformLocation(pr,'jm1'),false,new Float32Array(mat4Mul(jointWorld[1],invBindAt(1))));
-      g.uniformMatrix4fv(g.getUniformLocation(pr,'jm2'),false,new Float32Array(mat4Mul(jointWorld[2],invBindAt(2))));
+      var act=activeClipAt(t),memo={};
+      /* every channel of the active clip is sampled onto its own target node; world = parent world
+         x local, walked down the hierarchy via node.children read from the GLB; bone = world x IBM. */
+      var jm=jointIds.map(function(nodeId,i){return mat4Mul(worldOf(nodeId,act.clip,act.localT,memo),invBindAt(i))});
+      g.uniformMatrix4fv(g.getUniformLocation(pr,'jm0'),false,new Float32Array(jm[0]));
+      g.uniformMatrix4fv(g.getUniformLocation(pr,'jm1'),false,new Float32Array(jm[1]));
+      g.uniformMatrix4fv(g.getUniformLocation(pr,'jm2'),false,new Float32Array(jm[2]));
       g.drawElements(g.TRIANGLES,ia.count,g.UNSIGNED_SHORT,0);
     };
 
