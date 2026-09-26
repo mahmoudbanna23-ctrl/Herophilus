@@ -41,7 +41,7 @@
 - The lwdickens CC BY-NC tone.
 - Mubert.
 - The 7 MEMORY items.
-- Push: main is 38 ahead by local ref (2026-09-26).
+- ~~Push~~ push freely, no asking (owner 2026-09-26); main = origin at `abc09e28`.
 
 ## Carried into J4 (desk-data.js nits, refuter round 2 PASS, none fires today)
 - `desk-data.js:23`/`:32` test `a.ok===true`, but utils only checks that `ok` is truthy.
@@ -51,7 +51,6 @@
 Align all three when J4 wires the file in.
 
 ## Uncommitted on disk, deliberately
-- `scene-pilot/spike/*`: the spike is not accepted.
-- `p5/spike-*.md`, `p5/spike*.reply.txt` and `p5/*-codex.log`.
+- `p5/*.reply.txt`, `p5/*-codex.log`, `p5/shots/`, `p5/.keep_check`: job leftovers.
 - `master-v2-{a,c}.png`.
-- `D:\tmp-spike-ud`: left empty by the refuter, because `rm` was denied. Safe to delete.
+- `D:\tmp-spike-ud`, `D:\tmp-scenemap-ref`, `D:\tmp-scenemap-r2`: refuter scratch. Safe to delete.
