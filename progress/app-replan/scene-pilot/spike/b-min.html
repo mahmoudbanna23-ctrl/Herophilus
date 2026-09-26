@@ -169,7 +169,7 @@ function main(){
 
   var pr=sh(g,
     'attribute vec3 p;attribute vec4 j,w;uniform mat4 jm0,jm1,jm2;'+
-    'mat4 pick(float idx){int i=int(idx+0.5);if(i<=0)return jm0;if(i==1)return jm1;return jm2;}'+
+    'mat4 pick(float idx){int i=int(idx+0.5);if(i==0)return jm0;if(i==1)return jm1;return jm2;}'+
     'void main(){vec4 sp=pick(j.x)*vec4(p,1.)*w.x+pick(j.y)*vec4(p,1.)*w.y+pick(j.z)*vec4(p,1.)*w.z+pick(j.w)*vec4(p,1.)*w.w;'+
     'gl_Position=vec4(sp.x*.42,sp.y*.55-.2,0.,1.);}',
     'precision mediump float;void main(){gl_FragColor=vec4(.8,.42,.12,1.);}');
@@ -203,9 +203,9 @@ function main(){
     return mat4FromTR(t,r);
   }
   function headLocalAt(now){
-    if(now<waveEnd)return sampleClip(CLIPS.wave,now-waveStart);
-    var idle=CLIPS.idle,localT=(now/1000)%idle.dur;
-    return sampleClip(idle,localT*1000);
+    if(now<waveEnd)return sampleClip(CLIPS.wave,(now-waveStart)/1000); /* now/waveStart are ms; clip.dur is seconds */
+    var idle=CLIPS.idle,localT=(now/1000)%idle.dur; /* already seconds */
+    return sampleClip(idle,localT);
   }
   var modelReady=true; /* GLB parsed synchronously above */
 
@@ -215,7 +215,7 @@ function main(){
     g.clear(g.COLOR_BUFFER_BIT);
     g.useProgram(pr);
     var headLocal=headLocalAt(t),ident=mat4Identity();
-    var jointWorld=[ident,headLocal,ident]; /* joint0=sway(static), joint1=head(animated), joint2=guide-self(static) */
+    var jointWorld=[ident,ident,headLocal]; /* skin.joints=[root,sway,head]: joint0=root(static), joint1=sway(static), joint2=head(animated) */
     g.uniformMatrix4fv(g.getUniformLocation(pr,'jm0'),false,new Float32Array(mat4Mul(jointWorld[0],invBindAt(0))));
     g.uniformMatrix4fv(g.getUniformLocation(pr,'jm1'),false,new Float32Array(mat4Mul(jointWorld[1],invBindAt(1))));
     g.uniformMatrix4fv(g.getUniformLocation(pr,'jm2'),false,new Float32Array(mat4Mul(jointWorld[2],invBindAt(2))));
@@ -252,10 +252,10 @@ function main(){
     if(dead)return;
     raf=requestAnimationFrame(frame);
     if(t-last<33)return;
-    var dt=t-last||16.7;
+    var dt=last>0?(t-last):0; /* 0 on the frame right after a hidden-tab resume: no prior sample to diff against */
     last=t;
     if(q.has('throttle'))dt=60;
-    if(shedTrack(t,dt)){show2d(new Error('shed still'));return}
+    if(dt>0&&shedTrack(t,dt)){show2d(new Error('shed still'));return}
     if(drawScene.t)drawScene(t);
     if(t-gLast>66){gLast=t;model(t)}
   }
@@ -265,6 +265,7 @@ function main(){
       if(raf){cancelAnimationFrame(raf);raf=0}
     }else if(!dead&&!reduce&&!raf){
       last=0;
+      shedTimes.length=0; /* the hidden gap must not count as one huge frame in the shed mean */
       raf=requestAnimationFrame(frame);
     }
   });

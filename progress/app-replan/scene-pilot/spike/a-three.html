@@ -107,6 +107,7 @@ function main(){
     tex.minFilter=THREE.LinearFilter;
     tex.magFilter=THREE.LinearFilter;
     tex.generateMipmaps=false;
+    tex.flipY=false; /* shader already flips with 1.-p.y; three's default flipY doubled it, upside down */
     uniforms.tMap.value=tex;
     plateReady=true;
     checkStill();
@@ -177,10 +178,10 @@ function main(){
     if(dead)return;
     raf=requestAnimationFrame(frame);
     if(t-last<33)return; /* 30fps cap at DPR1 */
-    var dt=t-last||16.7;
+    var dt=last>0?(t-last):0; /* 0 on the frame right after a hidden-tab resume: no prior sample to diff against */
     last=t;
     if(q.has('throttle'))dt=60;
-    if(shedTrack(t,dt)){show2d(new Error('shed still'));return}
+    if(dt>0&&shedTrack(t,dt)){show2d(new Error('shed still'));return}
     uniforms.uTime.value=t/1000;
     if(plateReady)renderer.render(scene,cam);
     if(t-gLast>66){ /* model idle capped ~15fps */
@@ -194,6 +195,7 @@ function main(){
       if(raf){cancelAnimationFrame(raf);raf=0}
     }else if(!dead&&!reduce&&!raf){
       last=0;
+      shedTimes.length=0; /* the hidden gap must not count as one huge frame in the shed mean */
       raf=requestAnimationFrame(frame);
     }
   });

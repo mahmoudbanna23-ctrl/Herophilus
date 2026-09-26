@@ -258,3 +258,55 @@ free of `--`; `measure.mjs` does not take a `--user-data-dir` CLI flag, it alway
   something whose downstream visual effect was isolated beyond "clamped and didn't crash."
 - Scene-render fps under real CPU pressure (still the harness's own rAF-scheduling-capacity number,
   not per-frame render cost — same caveat as every prior round).
+
+## Round 4 (Claude role, fix round, 2026-09-26)
+
+Retraction: the Round 2 "canvas non-background pixel check ... scene 0% bg, guide 0% bg" line
+(`spike-measure.md:107`) is withdrawn — it was never re-derived against the screenshots that show
+real backgrounds, and this round's own out-of-band `gl.readPixels` probe reads back all-zero on
+this Chrome regardless of what is actually composited on screen (the drawing buffer is not preserved
+outside the render loop), so that method cannot support the claim either way.
+
+Fixes: `make-glb.js` skin (`skins[0].joints` `[1,2,3]`->`[0,1,2]`, head-cap `JOINTS_0` `3`->`2`, two
+new self-check asserts, `53 passed`) · `a-three.html` plate `tex.flipY=false` · `b-min.html`
+`sampleClip` unit fix (seconds throughout) + `pick()` defensive clamp removed + `jointWorld` reorder
+to match the new joints array · both pages' hidden-tab resume now clears `shedTimes` and skips the
+first post-resume `dt` sample. `node --check` clean on both inline scripts and `make-glb.js`;
+`model.b64.js` decodes byte-identical to `model.glb`.
+
+Measured (headless Chrome, `file://`, `--user-data-dir=D:\tmp-spike-ud4`, no `--` in the path):
+
+| metric | a-three.html | b-min.html |
+|---|---:|---:|
+| code bytes (page) | 8,285 | 12,377 |
+| code bytes (page + vendor, A only) | 719,380 | n/a |
+| HTTP transfer (this navigation) | 8,585 B | 12,677 B |
+| JS heap | 4.14 MB | 0.99 MB |
+| first paint | 116 ms | 152 ms |
+
+Motion: `Page.captureScreenshot` (not `gl.readPixels` — see retraction above), 3 shots per page,
+gaps of 1,100 ms then 1,700 ms (both non-multiples of the 1.2 s idle-clip period, to avoid aliasing
+against it), pixel diff restricted to the model column (`x<470`):
+- A: 137,946 then 137,946 changed pixels — non-zero both gaps. Plate upright, head cap present (no
+  gap at the top of the cylinder, unlike the pre-fix screenshot).
+- B: 183,510 then 2,553 changed pixels — non-zero both gaps. Plate upright.
+
+Hide/show: `document.hidden` + `visibilitychange` simulated 4 times per page (same method as the
+Round 3 refuter). `shed` log lines captured per cycle: `[[],[],[],[]]` for both A and B — 0 sheds
+over 4 cycles, both variants. No console exceptions in any run.
+
+Not verified this round:
+- A real backgrounding/foregrounding by the OS (still simulated via `document.hidden` override, per
+  the Round 3 refuter's own caveat).
+- A real context restore; a browser without `--allow-file-access-from-files` (both still open from
+  earlier rounds).
+- Exact per-pixel correctness of the head-cap's bind pose in `b-min.html`'s hand-rolled skinning —
+  `make-glb.js`'s inverse-bind-matrix values were not re-derived for the new joint order (out of the
+  refuter's item-4 fix scope, which asked only for valid indices, not bind-pose placement); visually
+  the head cap now closes the cylinder top rather than leaving a gap, but its exact position was not
+  checked against the intended pose.
+- The `A: 137,946 then 137,946` identical counts across two different-length gaps were not chased
+  further; plausibly both windows each caught one of the idle clip's known start/end key "pop"
+  (`spike-measure.md` Round 3, "idle clip's first and last keys differ, pops every 1.2 s"), which
+  would dominate the diff count similarly either way — not proven, only the non-zero result was the
+  requirement here.

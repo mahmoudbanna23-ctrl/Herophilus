@@ -5,7 +5,7 @@
 | input | raw bytes | base64 bytes |
 |---|---:|---:|
 | three + GLTFLoader | 711,095 | n/a |
-| Variant B code | 5,484 | n/a |
+| Variant B code | 12,377 | n/a |
 | placeholder GLB | 120,600 | generated `model.b64.js` |
 | plate JPEG q60 | generated `plate.jpg` | generated `plate.b64.js` |
 
@@ -20,7 +20,10 @@ Chrome was not run in this sandbox; no rendering result is asserted here.
 - Transfer: <=900 KB; A runtime is 711,095 B before scene assets, so HTTP assets need separate measurement.
 - File base64: count only the two injected asset scripts; their encoded sizes need re-stat after the new JPEG.
 - Decoded RAM: 1916×821 RGBA plate is 6.30 MB; embedded 512² texture is 1.00 MB.
-- GPU at DPR1: two full-screen RGBA8+depth canvases are 23.73 MB at 1920×1080 and 7.90 MB at 390×844; add plate/model textures above this, so the former 10 MB GPU budget is not viable.
+- GPU at DPR1 (two full-screen canvases, `#scene`+`#guide`, RGBA8 + depth, MiB): 23.73 MiB at
+  1920×1080 and 3.77 MiB at 390×844 with depth16; 31.64 MiB and 5.02 MiB with depth24+stencil8
+  instead. (The earlier 7.90 figure for 390×844 was DPR 2, not DPR 1 -- corrected.) Add plate/model
+  textures above this, so the former 10 MB GPU budget is not viable.
 - Frame: 33.3 ms at 30 fps; guide target 66.7 ms; shed uses a post-500 ms, 1-second mean.
 
 ## Storage check (source inspection only)
