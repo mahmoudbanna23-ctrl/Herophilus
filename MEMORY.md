@@ -39,7 +39,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
   (local). Owner answered 2026-09-25 (plan §6): Meshy CC BY approved, Peds tag plain, lab values
   source-then-tagged, screenshots dropped, candle desk = P3 mocks photo vs painted plate, water level
   = every answer counts, 100/day, midnight reset. Plan §6 gen map + audio P6b; §8 = Codex gap review (P1 sync exit conditions; P9c Firestore-only, per-subject — owner ruling; D1 DROPPED).
-  Owed by owner: backup (a) paid daily export vs (b) $0 no guarantee · rights attestation · report address · students/yr · privacy wording · Astra baseline go? · push local commits? (38 ahead by local ref 2026-09-26) P0 DONE `77372af` (slow-3G UNCONFIRMED; 2 latent lock-check flaws in `p0/REFUTE-round2.md`). P3: owner picked painted desk · Q1 B · R1 A, neon edges DEFAULT; `shoot.mjs` runs only OUTSIDE Codex sandbox (CDP). Plates: Codex image gen (Gemini image 429 on this key); ONE Codex job at a time (sandbox acct lockout 1909).
+  Owed by owner: backup (a) paid daily export vs (b) $0 no guarantee · rights attestation · report address · students/yr · privacy wording · Astra baseline go?. Push freely, no asking (owner 2026-09-26). P0 DONE `77372af` (slow-3G UNCONFIRMED; 2 latent lock-check flaws in `p0/REFUTE-round2.md`). P3: owner picked painted desk · Q1 B · R1 A, neon edges DEFAULT; `shoot.mjs` runs only OUTSIDE Codex sandbox (CDP). Plates: Codex image gen (Gemini image 429 on this key); ONE Codex job at a time (sandbox acct lockout 1909).
   Deploy freeze R9: no Pages upload 09-26..27, 10-02..03, 10-17..19. Superseded resume bullets:
   archive `## Pruned from MEMORY.md - 2026-09-25`.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
