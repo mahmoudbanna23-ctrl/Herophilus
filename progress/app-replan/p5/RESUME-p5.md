@@ -22,14 +22,14 @@
   - A fails the 400 px cluster (451 px).
   - C fails the cluster (429 px) and its wick box is ~55 px off.
   - B passes all 10 checks. It has an extra closed book near the bowl, which is not a violation.
-- **The owner's pick is owed.** After the pick:
+- **Owner PICKED B (2026-09-26).** Next:
   1. Measure `SCENE_MAP`.
   2. Sprite layers.
   3. Commit the plates.
 
 ## Owner decisions owed
-- The plate pick (B recommended).
-- `S.tally` and `S.miss` fields: add them in J4 unless the owner objects.
+- ~~Plate pick~~ B, decided 2026-09-26.
+- ~~Fields~~ APPROVED 2026-09-26: `S.tally` {"YYYY-MM-DD":n} and `S.miss` {qid:n} are added in J4, and every path goes through `checkedProgressState` (storage.js:65-72), import, export and backup.
 - Read the ElevenLabs ToS and OEM terms before generating.
 - The lwdickens CC BY-NC tone.
 - Mubert.
