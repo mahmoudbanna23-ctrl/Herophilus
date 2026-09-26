@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Type mock — Herophilus</title>
+<script src="../../../../../app/data/fonts.js"></script>
+<style>
+  :root{
+    --gold:#d9b44a;
+    --gold-glow:0 0 10px rgba(217,180,74,.65);
+    --ink-iron:#2c2015;
+  }
+  html,body{margin:0;padding:0;width:1536px;height:1024px;overflow:hidden;background:#000;}
+  .stage{position:relative;width:1536px;height:1024px;background-size:cover;background-position:center;}
+
+  /* ---------- Beat 1: dark study, gold title ---------- */
+  .stage.beat1{background-image:url('beat-1-plate.png');}
+  .beat1 .title-block{
+    position:absolute;
+    left:70px; top:150px;
+    width:760px;
+    text-align:left;
+  }
+  .beat1 h1{
+    margin:0;
+    font-family:'Cinzel','Trajan Pro',Georgia,serif;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.34em;
+    font-size:86px;
+    line-height:1;
+    color:var(--gold);
+    text-shadow:0 0 18px rgba(217,180,74,.55), 0 0 4px rgba(217,180,74,.4), 0 2px 2px rgba(0,0,0,.6);
+  }
+  .beat1 .sub{
+    margin:26px 2px 0;
+    font-family:'EB Garamond',Georgia,serif;
+    font-style:italic;
+    font-weight:400;
+    font-size:23px;
+    letter-spacing:.03em;
+    color:rgba(207,192,165,.62);
+    text-shadow:0 1px 3px rgba(0,0,0,.5);
+  }
+
+  /* ---------- Beat 3: parchment sheet, ink heading ---------- */
+  .stage.beat3{background-image:url('beat-3-plate.png');}
+  .beat3 .ink-block{
+    position:absolute;
+    left:225px; top:492px;
+    width:460px;
+    transform:perspective(1400px) rotateX(6deg) rotateY(-6deg) rotate(-1.2deg);
+    transform-origin:top left;
+    mix-blend-mode:multiply;
+  }
+  .beat3 h2{
+    margin:0;
+    font-family:'EB Garamond',Georgia,serif;
+    font-style:italic;
+    font-weight:700;
+    font-size:78px;
+    color:var(--ink-iron);
+    opacity:1;
+  }
+  .beat3 .rules{margin-top:26px;}
+  .beat3 .rule{
+    height:3px;
+    width:360px;
+    background:var(--ink-iron);
+    opacity:.4;
+    margin-bottom:18px;
+    border-radius:1px;
+  }
+  .beat3 .rule:nth-child(2){width:320px;opacity:.32;}
+  .beat3 .rule:nth-child(3){width:250px;opacity:.24;}
+</style>
+</head>
+<body>
+<script>
+  var beat = (new URLSearchParams(location.search)).get('beat') || '1';
+  document.write('<div class="stage beat' + beat + '">' +
+    (beat === '1'
+      ? '<div class="title-block"><h1>Herophilus</h1><p class="sub">A study of the body, by lamplight</p></div>'
+      : '<div class="ink-block"><h2>Today</h2><div class="rules"><div class="rule"></div><div class="rule"></div><div class="rule"></div></div></div>'
+    ) + '</div>');
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+# P5 — reference frames v2: three re-shoots (2026-09-26)
+
+Seat: Codex `gpt-5.6-terra`, built-in `image_gen` tool. Final reply begins with
+`AGENTS.md loaded — Herophilus`, then ≤ 6 lines.
+
+WRITE GRANT (overrides AGENTS.md read-only default for this job only): create files ONLY under
+`progress/app-replan/p5/ref-frames/v2/`: `beat-1-plate.png`, `beat-3-plate.png`,
+`beat-4-scrollrack.png`, `STYLE-NOTES-v2.md`. Everything else read-only. Never overwrite
+`ref-frames/beat-*.png`.
+
+## Why
+Owner reviewed beats 1–5 (`ref-frames/`, prompts in `ref-frames/STYLE-NOTES.md` — read it).
+Rulings 2026-09-26:
+- Beats 1 and 3: typography must be more aesthetic. Decision: NO painted text at all. Generate
+  text-free plates; real type (Cinzel / EB Garamond) is set over them later in HTML.
+- Beat 4: replace the floating books with a scroll rack (Greek scholars used scrolls).
+
+## Attached image
+`painted-codex-3.png` — owner-picked master desk; fixes WORLD and FINISH. Keep it.
+
+## Style head
+Start every prompt with the style head from `ref-frames/STYLE-NOTES.md`, verbatim.
+
+## The three images (each its own image_gen call; landscape 3:2, ideally 1536×1024)
+1. `beat-1-plate` — Arrival, same as beat-1 but NO TEXT anywhere. The room lit ONLY by the clay
+   oil lamp: no bright window, no extra vessels. Upper-left and upper-centre stay dark, quiet and
+   empty — a title will be set there, so no objects, no light shafts, no busy texture in that area.
+2. `beat-3-plate` — The day's sheet, same as beat-3 but a BLANK parchment: no word, no ink lines,
+   no marks. The upper-left third of the sheet stays clean and evenly lit (a heading goes there);
+   the lamp's warm falloff sits toward the right.
+3. `beat-4-scrollrack` — The four subjects as scrolls. On the desk, a low wooden Greek scroll rack
+   (or open cylindrical scroll case, capsa) holds four papyrus scrolls lying horizontally, staggered
+   in depth. Each scroll has a wooden end-knob and a small hanging leather tag, dyed distinctly:
+   terracotta `#b4472f`, sage GREEN `#5c7a52` (must read clearly green, not olive or tan), muted
+   violet `#6d4c7d`, deep blue `#2e5f8a`. Progress is shown by how far each scroll is unrolled out
+   along the desk — four clearly different lengths, roughly 20%, 45%, 70%, 90%. Warm lamp rim light
+   on the papyrus edges. No rings, no floating objects, no glow effects.
+
+## Never
+- The Clepsydra, any person, figure, face, hand or statue.
+- ANY text, letters, numerals or glyphs — on tags, scrolls, walls, anywhere.
+- Emoji, UI pills, badges, buttons, logos, watermarks, modern objects, neon, purple-cyan.
+
+## Report
+`STYLE-NOTES-v2.md`: each full prompt, plus one honest line per image on what came out wrong
+(stray text, wrong colour, scroll lengths not distinct, clutter in the title area). Do not claim
+quality you did not check. Do not commit, push, add, tag, download or install.

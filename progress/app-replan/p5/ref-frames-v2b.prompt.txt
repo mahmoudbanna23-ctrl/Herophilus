@@ -1,0 +1,21 @@
+Follow this brief exactly. Repo root is the working directory.
+
+Re-shoot ONE image. Read progress/app-replan/p5/ref-frames-v2-brief.md (binds, incl. Never list) and
+progress/app-replan/p5/ref-frames/v2/STYLE-NOTES-v2.md. Your beat-4-scrollrack.png failed: only one
+broad unrolled sheet reads, the four lengths are not distinct.
+
+WRITE GRANT: create ONLY progress/app-replan/p5/ref-frames/v2/beat-4-scrollrack-b.png and append a
+"## Beat 4 retake" section to STYLE-NOTES-v2.md. Never overwrite other files.
+
+Composition fix (use image_gen, 3:2, 1536x1024, style head verbatim first):
+Three-quarter view from slightly above the desk. The wooden scroll rack sits at the back edge of the
+desk; four papyrus scrolls lie in FOUR SEPARATE PARALLEL LANES side by side, each lane clearly apart
+with dark desk wood visible between them, each unrolling from the rack TOWARD the camera. The four
+unrolled strips are narrow and must be obviously different lengths, like a bar chart: strip 1 very
+short (barely out of the rack), strip 2 about half the desk depth, strip 3 about three quarters,
+strip 4 reaching the near desk edge. Each rolled end has a small blank leather tag: terracotta
+#b4472f, clearly GREEN sage #5c7a52, muted violet #6d4c7d, deep blue #2e5f8a, left to right.
+Blank papyrus, no writing, no text or glyphs anywhere. Lamp light warm from the left.
+
+Inspect honestly: are four separate strips of four distinct lengths visible? Any text? Colours right?
+Final reply begins with "AGENTS.md loaded — Herophilus", then <=4 lines. No commit/push/download/install.
