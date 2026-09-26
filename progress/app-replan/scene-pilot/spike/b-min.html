@@ -141,86 +141,106 @@ function main(){
   };
 
   /* -------- guide canvas: real linear skinning + GLB clip sampling -------- */
-  function glb(uri){
-    var b=atob(uri.split(',')[1]),u=new Uint8Array(b.length);
-    for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);
-    var dv=new DataView(u.buffer),jl=dv.getUint32(12,true),j=JSON.parse(new TextDecoder().decode(u.slice(20,20+jl))),bin=20+jl+8;
+  function parseGlb(u){
+    var dv=new DataView(u.buffer,u.byteOffset,u.byteLength),jl=dv.getUint32(12,true),
+        j=JSON.parse(new TextDecoder().decode(u.slice(20,20+jl))),bin=20+jl+8;
     return{j:j,u:u,bin:bin};
   }
-  var M=glb(a.model);
-  var COMP_SIZE={5120:1,5121:1,5122:2,5123:2,5125:4,5126:4};
-  var NUM_COMP={SCALAR:1,VEC2:2,VEC3:3,VEC4:4,MAT4:16};
-  function readAccessor(ai){
-    var ac=M.j.accessors[ai],v=M.j.bufferViews[ac.bufferView],
-        off=M.bin+(v.byteOffset||0)+(ac.byteOffset||0),n=ac.count*NUM_COMP[ac.type];
-    return ac.componentType===5126?new Float32Array(M.u.buffer,off,n):new Uint16Array(M.u.buffer,off,n);
+  function glbFromDataUri(uri){
+    var b=atob(uri.split(',')[1]),u=new Uint8Array(b.length);
+    for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);
+    return parseGlb(u);
   }
-  function findClip(name){
-    var anim=M.j.animations.filter(function(x){return x.name===name})[0];
-    var tCh=anim.channels.filter(function(c){return c.target.path==='translation'})[0];
-    var rCh=anim.channels.filter(function(c){return c.target.path==='rotation'})[0];
-    var tS=anim.samplers[tCh.sampler],rS=anim.samplers[rCh.sampler];
-    var times=readAccessor(tS.input);
-    return{node:tCh.target.node,dur:times[times.length-1]||1,trans:readAccessor(tS.output),rots:readAccessor(rS.output)};
+  function loadModel(cb){
+    if(isFile){cb(glbFromDataUri(a.model));return} /* data URI, in-memory, no request */
+    fetch(a.model).then(function(r){
+      if(!r.ok)throw new Error('model fetch failed: '+r.status);
+      return r.arrayBuffer();
+    }).then(function(buf){cb(parseGlb(new Uint8Array(buf)))}).catch(function(e){show2d(e)});
   }
-  var CLIPS={idle:findClip('idle'),wave:findClip('wave')};
-  var invBind=readAccessor(M.j.skins[0].inverseBindMatrices); /* Float32Array, 3 mat4 = 48 floats */
-  function invBindAt(i){return Array.prototype.slice.call(invBind,i*16,i*16+16)}
 
-  var pr=sh(g,
-    'attribute vec3 p;attribute vec4 j,w;uniform mat4 jm0,jm1,jm2;'+
-    'mat4 pick(float idx){int i=int(idx+0.5);if(i==0)return jm0;if(i==1)return jm1;return jm2;}'+
-    'void main(){vec4 sp=pick(j.x)*vec4(p,1.)*w.x+pick(j.y)*vec4(p,1.)*w.y+pick(j.z)*vec4(p,1.)*w.z+pick(j.w)*vec4(p,1.)*w.w;'+
-    'gl_Position=vec4(sp.x*.42,sp.y*.55-.2,0.,1.);}',
-    'precision mediump float;void main(){gl_FragColor=vec4(.8,.42,.12,1.);}');
+  var modelReady=false,model=function(){}; /* real values wired in setupModel once M is parsed */
 
-  function attr(name,n,type){
-    var idx={p:0,j:2,w:3}[name],ac=M.j.accessors[idx],v=M.j.bufferViews[ac.bufferView],b=g.createBuffer();
-    g.bindBuffer(g.ARRAY_BUFFER,b);
-    g.bufferData(g.ARRAY_BUFFER,M.u.slice(M.bin+v.byteOffset,M.bin+v.byteOffset+v.byteLength),g.STATIC_DRAW);
-    var l=g.getAttribLocation(pr,name);
-    g.enableVertexAttribArray(l);
-    g.vertexAttribPointer(l,n,type,0,0,0);
-  }
-  attr('p',3,g.FLOAT);
-  attr('j',4,g.UNSIGNED_SHORT);
-  attr('w',4,g.FLOAT);
-  var ia=M.j.accessors[4],iv=M.j.bufferViews[ia.bufferView],ib=g.createBuffer();
-  g.bindBuffer(g.ELEMENT_ARRAY_BUFFER,ib);
-  g.bufferData(g.ELEMENT_ARRAY_BUFFER,M.u.slice(M.bin+iv.byteOffset,M.bin+iv.byteOffset+iv.byteLength),g.STATIC_DRAW);
+  function setupModel(M){
+    var COMP_SIZE={5120:1,5121:1,5122:2,5123:2,5125:4,5126:4};
+    var NUM_COMP={SCALAR:1,VEC2:2,VEC3:3,VEC4:4,MAT4:16};
+    function readAccessor(ai){
+      var ac=M.j.accessors[ai],v=M.j.bufferViews[ac.bufferView],
+          off=M.bin+(v.byteOffset||0)+(ac.byteOffset||0),n=ac.count*NUM_COMP[ac.type];
+      return ac.componentType===5126?new Float32Array(M.u.buffer,off,n):new Uint16Array(M.u.buffer,off,n);
+    }
+    function findClip(name){
+      var anim=M.j.animations.filter(function(x){return x.name===name})[0];
+      var tCh=anim.channels.filter(function(c){return c.target.path==='translation'})[0];
+      var rCh=anim.channels.filter(function(c){return c.target.path==='rotation'})[0];
+      var tS=anim.samplers[tCh.sampler],rS=anim.samplers[rCh.sampler];
+      var times=readAccessor(tS.input);
+      return{node:tCh.target.node,dur:times[times.length-1]||1,trans:readAccessor(tS.output),rots:readAccessor(rS.output)};
+    }
+    var CLIPS={idle:findClip('idle'),wave:findClip('wave')};
+    var invBind=readAccessor(M.j.skins[0].inverseBindMatrices); /* Float32Array, 3 mat4 = 48 floats */
+    function invBindAt(i){return Array.prototype.slice.call(invBind,i*16,i*16+16)}
 
-  var waveStart=-1e9,waveEnd=-1e9;
-  document.getElementById('wave').onclick=function(){
-    var t=performance.now();
-    waveStart=t;
-    waveEnd=t+CLIPS.wave.dur*1000;
-  };
+    var pr=sh(g,
+      'attribute vec3 p;attribute vec4 j,w;uniform mat4 jm0,jm1,jm2;'+
+      'mat4 pick(float idx){int i=int(idx+0.5);if(i==0)return jm0;if(i==1)return jm1;return jm2;}'+
+      'void main(){vec4 sp=pick(j.x)*vec4(p,1.)*w.x+pick(j.y)*vec4(p,1.)*w.y+pick(j.z)*vec4(p,1.)*w.z+pick(j.w)*vec4(p,1.)*w.w;'+
+      'gl_Position=vec4(sp.x*.42,sp.y*.55-.2,0.,1.);}',
+      'precision mediump float;void main(){gl_FragColor=vec4(.8,.42,.12,1.);}');
 
-  function sampleClip(clip,localT){
-    var frac=Math.min(Math.max(localT/clip.dur,0),1);
-    var t=vLerp([clip.trans[0],clip.trans[1],clip.trans[2]],[clip.trans[3],clip.trans[4],clip.trans[5]],frac);
-    var r=qSlerp([clip.rots[0],clip.rots[1],clip.rots[2],clip.rots[3]],[clip.rots[4],clip.rots[5],clip.rots[6],clip.rots[7]],frac);
-    return mat4FromTR(t,r);
-  }
-  function headLocalAt(now){
-    if(now<waveEnd)return sampleClip(CLIPS.wave,(now-waveStart)/1000); /* now/waveStart are ms; clip.dur is seconds */
-    var idle=CLIPS.idle,localT=(now/1000)%idle.dur; /* already seconds */
-    return sampleClip(idle,localT);
-  }
-  var modelReady=true; /* GLB parsed synchronously above */
+    function attr(name,n,type){
+      var idx={p:0,j:2,w:3}[name],ac=M.j.accessors[idx],v=M.j.bufferViews[ac.bufferView],b=g.createBuffer();
+      g.bindBuffer(g.ARRAY_BUFFER,b);
+      g.bufferData(g.ARRAY_BUFFER,M.u.slice(M.bin+v.byteOffset,M.bin+v.byteOffset+v.byteLength),g.STATIC_DRAW);
+      var l=g.getAttribLocation(pr,name);
+      g.enableVertexAttribArray(l);
+      g.vertexAttribPointer(l,n,type,0,0,0);
+    }
+    attr('p',3,g.FLOAT);
+    attr('j',4,g.UNSIGNED_SHORT);
+    attr('w',4,g.FLOAT);
+    var ia=M.j.accessors[4],iv=M.j.bufferViews[ia.bufferView],ib=g.createBuffer();
+    g.bindBuffer(g.ELEMENT_ARRAY_BUFFER,ib);
+    g.bufferData(g.ELEMENT_ARRAY_BUFFER,M.u.slice(M.bin+iv.byteOffset,M.bin+iv.byteOffset+iv.byteLength),g.STATIC_DRAW);
 
-  function model(t){
-    g.viewport(0,0,gc.width=innerWidth,gc.height=innerHeight);
-    g.clearColor(0,0,0,0);
-    g.clear(g.COLOR_BUFFER_BIT);
-    g.useProgram(pr);
-    var headLocal=headLocalAt(t),ident=mat4Identity();
-    var jointWorld=[ident,ident,headLocal]; /* skin.joints=[root,sway,head]: joint0=root(static), joint1=sway(static), joint2=head(animated) */
-    g.uniformMatrix4fv(g.getUniformLocation(pr,'jm0'),false,new Float32Array(mat4Mul(jointWorld[0],invBindAt(0))));
-    g.uniformMatrix4fv(g.getUniformLocation(pr,'jm1'),false,new Float32Array(mat4Mul(jointWorld[1],invBindAt(1))));
-    g.uniformMatrix4fv(g.getUniformLocation(pr,'jm2'),false,new Float32Array(mat4Mul(jointWorld[2],invBindAt(2))));
-    g.drawElements(g.TRIANGLES,ia.count,g.UNSIGNED_SHORT,0);
+    var waveStart=-1e9,waveEnd=-1e9;
+    document.getElementById('wave').onclick=function(){
+      var t=performance.now();
+      waveStart=t;
+      waveEnd=t+CLIPS.wave.dur*1000;
+    };
+
+    function sampleClip(clip,localT){
+      var frac=Math.min(Math.max(localT/clip.dur,0),1);
+      var t=vLerp([clip.trans[0],clip.trans[1],clip.trans[2]],[clip.trans[3],clip.trans[4],clip.trans[5]],frac);
+      var r=qSlerp([clip.rots[0],clip.rots[1],clip.rots[2],clip.rots[3]],[clip.rots[4],clip.rots[5],clip.rots[6],clip.rots[7]],frac);
+      return mat4FromTR(t,r);
+    }
+    function headLocalAt(now){
+      if(now<waveEnd)return sampleClip(CLIPS.wave,(now-waveStart)/1000); /* now/waveStart are ms; clip.dur is seconds */
+      var idle=CLIPS.idle,localT=(now/1000)%idle.dur; /* already seconds */
+      return sampleClip(idle,localT);
+    }
+
+    model=function(t){
+      g.viewport(0,0,gc.width=innerWidth,gc.height=innerHeight);
+      g.clearColor(0,0,0,0);
+      g.clear(g.COLOR_BUFFER_BIT);
+      g.useProgram(pr);
+      var headLocal=headLocalAt(t),ident=mat4Identity();
+      /* this simplified guide renderer always writes the sampled clip value into joint slot 2 and
+         leaves 0/1 static; that is unchanged by which node the GLB's own channels target. */
+      var jointWorld=[ident,ident,headLocal];
+      g.uniformMatrix4fv(g.getUniformLocation(pr,'jm0'),false,new Float32Array(mat4Mul(jointWorld[0],invBindAt(0))));
+      g.uniformMatrix4fv(g.getUniformLocation(pr,'jm1'),false,new Float32Array(mat4Mul(jointWorld[1],invBindAt(1))));
+      g.uniformMatrix4fv(g.getUniformLocation(pr,'jm2'),false,new Float32Array(mat4Mul(jointWorld[2],invBindAt(2))));
+      g.drawElements(g.TRIANGLES,ia.count,g.UNSIGNED_SHORT,0);
+    };
+
+    modelReady=true;
+    checkStill();
   }
+  loadModel(setupModel);
 
   function checkStill(){if(reduce&&plateReady&&modelReady)renderStill()}
   function renderStill(){
@@ -257,7 +277,7 @@ function main(){
     if(q.has('throttle'))dt=60;
     if(dt>0&&shedTrack(t,dt)){show2d(new Error('shed still'));return}
     if(drawScene.t)drawScene(t);
-    if(t-gLast>66){gLast=t;model(t)}
+    if(modelReady&&t-gLast>66){gLast=t;model(t)}
   }
 
   document.addEventListener('visibilitychange',function(){

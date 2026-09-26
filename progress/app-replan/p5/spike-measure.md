@@ -310,3 +310,89 @@ Not verified this round:
   (`spike-measure.md` Round 3, "idle clip's first and last keys differ, pops every 1.2 s"), which
   would dominate the diff count similarly either way — not proven, only the non-zero result was the
   requirement here.
+
+## Round 5 (Claude role, fix round, 2026-09-26, `ROUTE-OK` — two Codex dispatches failed on the spike)
+
+Read first: `REFUTE-spike-round4.md` (both failures). Fixes, both re-derived not patched:
+
+**Fix 1, `make-glb.js` rig.** Generic node tree (`root`->`sway`->`head`, plus a `guide` node),
+TRS composed in code (`composeTRS`), forward kinematics cached per node (`worldOf`), and
+`invBindFlat[j] = matInvert(worldOf(joints[j]))` for every joint — no hand-typed matrix literals
+anywhere. All three joint nodes have identity rest TRS, so the derived IBMs come out identity,
+matching round 4's own diagnosis ("no joint node has a rest transform... the correct IBMs are
+identity"). `idle` now carries two tracks (primary: `sway`, node 1, the old idle magnitude;
+secondary: `head`, node 2, a small bob) and `wave` the mirror (primary: `head`, secondary: `sway`
+small) — so each clip's animated-joint set covers both the body (1,538 verts) and the cap
+(770 verts), and because `head` is a child of `sway` in the node tree, animating `sway` also moves
+`head`'s world transform through inheritance (the cap follows the body, not just its own track).
+Self-check extended with the three asserts the brief asked for, plus the existing ones:
+**`82 passed`** (`node --check make-glb.js && node make-glb.js`) — includes "IBM x restWorld ~=
+identity" x3, "channel target is a joint" x4, "clip idle/wave moves >= half of weighted vertices"
+x2. One real bug caught by the new IBM assert while building this: a transcribed `matInvert`
+formula for `out[15]` was wrong (`a21*b03-a22*b01+a20*b02` instead of `a20*b03-a21*b01+a22*b00`) —
+found because assert (a) failed on node 0 before the fix, confirming the assert works. `model.glb`
+121,576 B / `model.b64.js` 162,151 B, both regenerated, b64 decodes byte-identical (existing assert).
+
+**Fix 2, `b-min.html:150`.** `glb()` only parsed a data URI. Replaced with `parseGlb(bytes)` (pure
+parse, takes a `Uint8Array`) plus `loadModel(cb)`: under `file:` it still does the synchronous
+`atob` data-URI path into `parseGlb`; under http(s) it `fetch(a.model)` -> `arrayBuffer()` ->
+`parseGlb`. All the old `M`-dependent setup moved into `setupModel(M)`, called from `loadModel`'s
+callback; `modelReady`/`model` promoted to outer `var`s so the one frame-loop call site
+(`if(modelReady&&t-gLast>66){...model(t)}`) can't fire before the async fetch resolves.
+
+**Verify.** `node --check` clean on `make-glb.js` and both inline page scripts (`a-three.html`
+untouched, confirmed still clean). Headless Chrome, `D:/tmp-spike-ud6` (no `--`), one Chrome at a
+time, a throwaway `node:http` static server in the scratchpad (not `spike\`) for the http leg.
+Motion measured by hiding `#scene` (removes the plate, and with it the plate lamp's `uTime`
+flicker, entirely — no lamp pixels left to contaminate the diff, a stronger version of the brief's
+"mask a region" ask) and diffing 4 guide-only shots at 120/1100/1300/1700 ms gaps
+(`_pngdiff.mjs`, moved to the scratchpad per the brief).
+
+| metric | a-three.html | b-min.html |
+|---|---:|---:|
+| code bytes, page | 8,285 | 13,172 |
+| code bytes, page+vendor+assets (A) / page+assets (B) | 719,908 | 13,700 |
+| HTTP transfer, `file://` (this navigation) | 8,585 B | 13,472 B |
+| HTTP transfer, http:// (this navigation, incl. `model.glb`+`plate.jpg`+vendor as applicable) | 899,239 B | 192,431 B |
+| JS heap, `file://` / http:// | 4.37 MB / 4.14 MB | 0.97 MB / 0.82 MB |
+| first paint, `file://` / http:// | 136 ms / 104 ms | 108 ms / 124 ms |
+| model-region motion (guide-only, 3 diffs) `file://` | 114,722 / 112,608 / 96,452 | 231 / 333 / 945 |
+| model-region motion (guide-only, 3 diffs) http:// | 35,173 / 62,656 / 96,765 | 229 / 332 / 944 |
+| `model.glb` requested over http | yes, 200 | yes, 200 |
+
+A's motion count is far above round 3/4's magnitude (round 3: 1,361-5,223 px). Read against the
+screenshots (`D:\tmp-spike-ud6\shots\a-three-*-guide-t*.png`): the silhouette position and the
+top-rim curve do shift slightly frame to frame — real sway is happening — but the jump vs round 3
+is because `idle`'s primary track (the pre-existing magnitude, tx .1 / rot .04 rad) now drives
+`sway`, the joint the *whole body* (and, by inheritance, the cap) hangs off, not a small head-only
+nod; three.js's lit gradient material recolors across most of the silhouette for even a few degrees
+of rotation, so the diff count is dominated by subtle shading change over a large area, not a
+large positional jump. This was not chased further inside the tool-call budget; flagged below.
+
+Screenshot read, on-screen (`*-file.png` / `*-http.png`, file/http pairs visually identical for
+each variant):
+- A: plate upright, model visible on screen (not off-screen, round 4's failure), head cap visible
+  and separated from the body by a gap (silhouette: body top rim ~y170px, cap bottom ~y85px in the
+  762x483 shot).
+- B: plate upright, model visible, head cap visible with a smaller but present gap above the body.
+
+The gap is the same shape in both variants and traces to the raw mesh geometry itself, not to the
+skin: cap vertices are authored at y 0.94-1.38, body top rim at y 0.55 — a 0.39-unit jump that has
+been in `make-glb.js`'s geometry generator unchanged since round 1. Round 4's fix note offered two
+options, "identity here, or give `head` a rest translation and its matching inverse"; this round
+took the identity branch (derivable, no invented offset), which means the mesh now renders exactly
+as authored, including this pre-existing vertical gap between torso and cap. Earlier rounds' stray
+`T(0,+0.55,0)`/`T(0,+0.85,0)` IBM values (flagged by round 4 as unmatched to any real node rest
+transform) had been incidentally narrowing or hiding this same gap; nothing in this round's diff
+touched the vertex position data.
+
+Not verified:
+- Whether the gap between body and cap should be closed by giving `head` an authored rest
+  translation (round 4's other allowed option) — left as the identity branch per above; flagging
+  for the refuter/owner rather than picking an untested offset.
+- A's guide-only motion count magnitude was not decomposed into "real sway distance" vs "gradient
+  recolour area" — only confirmed non-zero and visually real via the screenshots.
+- OS-level minimise/backgrounding, a real WebGL context restore, and a browser without
+  `--allow-file-access-from-files` — same as round 4, unchanged this round.
+- `measure.mjs`'s own force=2d/force=lost/throttle/reduced-motion suite was not re-run this round
+  (out of the two fixes' scope; nothing in the diff touches that code path).
