@@ -1,0 +1,9 @@
+Refute sprites dispatch 3 (2026-09-26): FAIL.
+Script v.js: 41 checks pass; 6 "margin" fails were my probe (alpha>20 counted shadow) - retracted; object alpha>89 bbox inside 8px margin.
+Real defect: letters-1, letters-few, letters-many, tablet-blank, pile = opaque rectangles (obj>89 region exactly 111x74=8214 / 49x74=3626 px) of the whole generated frame: black background + orange glow.
+Cause: obj-*.png (5 of 6) are RGBA with transparent bg (alpha 0 on ~46-64% px, RGB ~0,0,0), NOT on #00b140; cut-sprites.js:9 key() ignores source alpha, black keys to 255.
+tablet-half keyed OK (green source) but design/size mismatch vs tablet-blank (2:1 vs 3:2 frame, 155 vs ~100 px wide).
+ribbon: routed through key(): 8px margin + baked contact shadow (lamp vs fake box [0,0]); object now x8-39,y50-291 of 48x300; spec said 48x300 fit, as before.
+letters-0 transparent: master box already empty desk (preview) - functional equivalent, PASS.
+gilt x4 PASS: seams 8.52/9.48/9.81/5.54 match, previews clean.
+Cutter B fixes present: per-box shift (line16), ring excludes other books (line15), drift>12 fails (line16), despill all alpha>0 (line9).

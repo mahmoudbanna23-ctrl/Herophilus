@@ -32,7 +32,26 @@
 - Owner ruled 2026-09-26, applied `64b62f8a` (refuter round 4 PASS, 64 passed): tablet
   [932,458,200,90] + pile [1160,458,200,90] sit ON openScroll; portrait crop x0 = bookCluster left
   (1066..1445.4), every book inside, lamp handle clips ~29.6 px.
-- Next: sprite layers (letters ×4, tablet ×2, pile, ribbon, gilt spine ×4), then dawn/day/dusk/night.
+- Grades DONE `dd7332da`: time of day = programmatic grade presets (`REFUTE-grades.md`, round 2 PASS).
+- Sprites: 12 in `app/assets/scene/`, made by `plates/cut-sprites.js` (`12 passed`), after 4 Codex dispatches
+  (`p5/sprites-brief{,-2,-3,-4}.md`). Method: keyed objects on `#00b140`, overlaid on the master, box-sized
+  RGBA, 8 px margin, bottom-centred, contact shadow away from the lamp. Families share one width.
+  letters-many = script stack of letters-1 ×9. tablet-half = blank's alpha + wax-confined strokes. gilt ×4
+  and letters-0 are cut from master edits. Refuter rounds 1-4 in `REFUTE-sprites.md` +
+  `D:\tmp-sprite-ref{3,4,5}\findings.txt`; round 5 is tablet-half only.
+- Codex call that works: `timeout -k 10 2400 codex exec -m gpt-5.6-terra -c model_reasoning_effort=low
+  --sandbox workspace-write -C "$R" -i <img> - < promptfile > log 2>&1`. A last line of `Node.js vNN` is a
+  thrown error, not a pass; re-run the script yourself.
+- Next: wire sprites + grades into the home desk.
+
+## Parallel lanes opened 2026-09-26 (owner: P1, P2, P3 alongside P5)
+- P1a gate (Codex): `tools/validate`, `tools/check-all`, `app/smoke.*`, report `p1/p1a-report.md`. It caught
+  23 neuro MS questions on a non-existent chapter `nr-demyelinating` (since `5a479760`); fixed to `nr-ms`,
+  CHECK-ALL 4/4.
+- P2a design (Sonnet): `p2/P2a-design.md`. The home floor is already 1,055,663 B (> 1 MB), so shared
+  bytes must be cut first. It has 3 owner questions.
+- P3: only B1 (subject page) is left. The owner ruled on 2026-09-26: re-mock both options after P5,
+  against the finished desk.
 
 ## Owner decisions owed
 - ~~Plate pick~~ B, decided 2026-09-26.
@@ -53,4 +72,5 @@ Align all three when J4 wires the file in.
 ## Uncommitted on disk, deliberately
 - `p5/*.reply.txt`, `p5/*-codex.log`, `p5/shots/`, `p5/.keep_check`: job leftovers.
 - `master-v2-{a,c}.png`.
-- `D:\tmp-spike-ud`, `D:\tmp-scenemap-ref`, `D:\tmp-scenemap-r2`: refuter scratch. Safe to delete.
+- `D:\tmp-spike-ud`, `D:\tmp-scenemap-ref`, `D:\tmp-scenemap-r2`, `D:\tmp-grades{,-ref}`,
+  `D:\tmp-sprite-{look,ref,ref3,ref4,ref5,ref6}`, `D:\tmp-p1a-ref`: refuter scratch. Safe to delete.

@@ -1,0 +1,1450 @@
+Reading prompt from stdin...
+OpenAI Codex v0.153.2
+--------
+workdir: D:\claude os\Medical school\Herophilus
+model: gpt-5.6-terra
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: low
+reasoning summaries: none
+session id: 01a0dc3a-22a3-7692-bd46-a3cadd941374
+--------
+user
+Follow this brief exactly. The repository root is the current directory. The attached image = progress/app-replan/scene-pilot/plates/master-v2-b.png (the master).
+
+# P5 step 2b, dispatch 2 — finish the sprite job (2026-09-26)
+
+Same brief as `progress/app-replan/p5/sprites-brief.md` (read it in full; its write grant, rules
+and "Do not" list all apply), with ONE change and a narrower scope.
+
+CHANGE: an edit whose size differs from 1916x821 by at most 2 px in either dimension is ACCEPTED,
+not failed. Do not resample. Decode it as-is and let the per-box +-8 px shift search register it
+against the master (shift = offset of the edit relative to the master at that box). Report each
+edit's real size in the report. Only a difference over 2 px fails that edit.
+
+SCOPE:
+- REUSE `plates/edits/edit-1.png` .. `edit-4.png` as they are. Do not regenerate them unless the
+  cutter measures a seam > 10 on a sprite; then retry that one edit once, per the original brief.
+- Generate `plates/edits/ribbon-raw.png` (original brief, edit 5).
+- Write `plates/cut-sprites.js`, run it, write every sprite to `app/assets/scene/`.
+- Overwrite `plates/sprites-report.md` as plain UTF-8 (the current file is not valid UTF-8).
+
+codex
+I’ll use the image-generation workflow for the single ribbon plate, then apply the brief’s pixel-level cutting and validation rules.
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Raw 'C:\\Users\\Alfa388\\.codex\\skills\\.system\\imagegen\\SKILL.md'; Get-Content -Raw 'progress\\app-replan\\p5\\sprites-brief.md'" in D:\claude os\Medical school\Herophilus
+ succeeded in 0ms:
+---
+name: "imagegen"
+description: "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas."
+---
+
+# Image Generation Skill
+
+Generates or edits images for the current project (for example website assets, game assets, UI mockups, product mockups, wireframes, logo design, photorealistic images, or infographics).
+
+## Top-level modes and rules
+
+This skill has exactly two top-level modes:
+
+- **Default built-in tool mode (preferred):** built-in `image_gen` tool for image generation, editing, and transparent-image requests. Does not require `OPENAI_API_KEY`.
+- **Fallback CLI mode:** `scripts/image_gen.py` CLI. Use when the user explicitly asks for or confirms the CLI/API/model path. Requires `OPENAI_API_KEY`.
+
+Within CLI fallback, the CLI exposes three subcommands:
+
+- `generate`
+- `edit`
+- `generate-batch`
+
+Rules:
+- Use the built-in `image_gen` tool by default for normal image generation and editing requests.
+- Do not switch to CLI fallback for ordinary quality, size, or file-path control.
+- For transparent images, ask built-in `image_gen` for a transparent background and preserve the generated alpha.
+- Never silently switch from built-in `image_gen` or CLI `gpt-image-2` to CLI `gpt-image-1.5`; ask the user first unless they explicitly requested `gpt-image-1.5`.
+- The word `batch` by itself does not mean CLI fallback. If the user asks for many assets or says to batch-generate assets without explicitly asking for CLI/API/model controls, stay on the built-in path and issue one built-in call per requested asset or variant.
+- If the built-in tool fails or is unavailable, tell the user the CLI fallback exists and that it requires `OPENAI_API_KEY`. Proceed only if the user explicitly asks for that fallback.
+- If the user explicitly asks for CLI mode, use the bundled `scripts/image_gen.py` workflow. Do not create one-off SDK runners.
+- Never modify `scripts/image_gen.py`. If something is missing, ask the user before doing anything else.
+
+Built-in save-path policy:
+- In built-in tool mode, Codex saves generated images under `$CODEX_HOME/*` by default.
+- Do not describe or rely on OS temp as the default built-in destination.
+- Do not describe or rely on a destination-path argument (if any) on the built-in `image_gen` tool. If a specific location is needed, generate first and then move or copy the selected output from `$CODEX_HOME/generated_images/...`.
+- Save-path precedence in built-in mode:
+  1. If the user names a destination, move or copy the selected output there.
+  2. If the image is meant for the current project, move or copy the final selected image into the workspace before finishing.
+  3. If the image is only for preview or brainstorming, render it inline; the underlying file can remain at the default `$CODEX_HOME/*` path.
+- Never leave a project-referenced asset only at the default `$CODEX_HOME/*` path.
+- Do not overwrite an existing asset unless the user explicitly asked for replacement; otherwise create a sibling versioned filename such as `hero-v2.png` or `item-icon-edited.png`.
+
+Shared prompt guidance for both modes lives in `references/prompting.md` and `references/sample-prompts.md`.
+
+Fallback-only docs/resources for CLI mode:
+- `references/cli.md`
+- `references/image-api.md`
+- `references/codex-network.md`
+- `scripts/image_gen.py`
+
+## When to use
+- Generate a new image (concept art, product shot, cover, website hero)
+- Generate a new image using one or more reference images for style, composition, or mood
+- Edit an existing image (inpainting, lighting or weather transformations, background replacement, object removal, compositing, transparent background)
+- Produce many assets or variants for one task
+
+## When not to use
+- Extending or matching an existing SVG/vector icon set, logo system, or illustration library inside the repo
+- Creating simple shapes, diagrams, wireframes, or icons that are better produced directly in SVG, HTML/CSS, or canvas
+- Making a small project-local asset edit when the source file already exists in an editable native format
+- Any task where the user clearly wants deterministic code-native output instead of a generated bitmap
+
+## Decision tree
+
+Think about two separate questions:
+
+1. **Intent:** is this a new image or an edit of an existing image?
+2. **Execution strategy:** is this one asset or many assets/variants?
+
+Intent:
+- If the user wants to modify an existing image while preserving parts of it, treat the request as **edit**.
+- If the user provides images only as references for style, composition, mood, or subject guidance, treat the request as **generate**.
+- If the user provides no images, treat the request as **generate**.
+
+Built-in edit semantics:
+- Built-in edit mode is for images already visible in the conversation context, such as attached images or images generated earlier in the thread.
+- If the user wants to edit a local image file with the built-in tool, first load it with built-in `view_image` tool so the image is visible in the conversation context, then proceed with the built-in edit flow.
+- Do not promise arbitrary filesystem-path editing through the built-in tool.
+- If a local file still needs direct file-path control, masks, or other explicit CLI-only parameters, use the explicit CLI fallback only when the user asks for it.
+- For edits, preserve invariants aggressively and save non-destructively by default.
+
+Execution strategy:
+- In the built-in default path, produce many assets or variants by issuing one `image_gen` call per requested asset or variant.
+- In the CLI fallback path, use the CLI `generate-batch` subcommand only when the user explicitly chose CLI mode and needs many prompts/assets.
+- For many distinct assets, do not use `n` as a substitute for separate prompts. `n` is for variants of one prompt; distinct assets need distinct built-in calls or distinct CLI `generate-batch` jobs.
+
+Assume the user wants a new image unless they clearly ask to change an existing one.
+
+## Workflow
+1. Decide the top-level mode: built-in by default, including transparent-output requests; fallback CLI only if explicitly requested or confirmed.
+2. Decide the intent: `generate` or `edit`.
+3. Decide whether the output is preview-only or meant to be consumed by the current project.
+4. Decide the execution strategy: single asset vs repeated built-in calls vs CLI `generate-batch`.
+5. Collect inputs up front: prompt(s), exact text (verbatim), constraints/avoid list, and any input images.
+6. For every input image, label its role explicitly:
+   - reference image
+   - edit target
+   - supporting insert/style/compositing input
+7. If the edit target is only on the local filesystem and you are staying on the built-in path, inspect it with `view_image` first so the image is available in conversation context.
+8. If the user asked for a photo, illustration, sprite, product image, banner, or other explicitly raster-style asset, use `image_gen` rather than substituting SVG/HTML/CSS placeholders. If the request is for an icon, logo, or UI graphic that should match existing repo-native SVG/vector/code assets, prefer editing those directly instead.
+9. Augment the prompt based on specificity:
+   - If the user's prompt is already specific and detailed, normalize it into a clear spec without adding creative requirements.
+   - If the user's prompt is generic, add tasteful augmentation only when it materially improves output quality.
+10. Use the built-in `image_gen` tool by default.
+11. For transparent-output requests, ask built-in `image_gen` for a transparent background and preserve the generated alpha channel.
+12. Inspect outputs and validate: subject, style, composition, text accuracy, and invariants/avoid items.
+13. Iterate with a single targeted change, then re-check.
+14. For preview-only work, render the image inline; the underlying file may remain at the default `$CODEX_HOME/generated_images/...` path.
+15. For project-bound work, move or copy the selected artifact into the workspace and update any consuming code or references. Never leave a project-referenced asset only at the default `$CODEX_HOME/generated_images/...` path.
+16. For batches or multi-asset requests, persist every requested deliverable final in the workspace unless the user explicitly asked to keep outputs preview-only. Discarded variants do not need to be kept unless requested.
+17. If the user explicitly chooses or confirms the CLI fallback, then use the fallback-only docs for model, quality, size, `input_fidelity`, masks, output format, output paths, and network setup.
+18. Always report the final saved path(s) for any workspace-bound asset(s), plus the final prompt or prompt set and whether the built-in tool or fallback CLI mode was used.
+
+## Transparent image requests
+
+Ask built-in `image_gen` for a genuinely transparent background and preserve its alpha.
+
+## Prompt augmentation
+
+Reformat user prompts into a structured, production-oriented spec. Make the user's goal clearer and more actionable, but do not blindly add detail.
+
+Treat this as prompt-shaping guidance, not a closed schema. Use only the lines that help, and add a short extra labeled line when it materially improves clarity.
+
+### Specificity policy
+
+Use the user's prompt specificity to decide how much augmentation is appropriate:
+
+- If the prompt is already specific and detailed, preserve that specificity and only normalize/structure it.
+- If the prompt is generic, you may add tasteful augmentation when it will materially improve the result.
+
+Allowed augmentations:
+- composition or framing hints
+- polish level or intended-use hints
+- practical layout guidance
+- reasonable scene concreteness that supports the stated request
+
+Not allowed augmentations:
+- extra characters or objects that are not implied by the request
+- brand names, slogans, palettes, or narrative beats that are not implied
+- arbitrary side-specific placement unless the surrounding layout supports it
+
+## Use-case taxonomy (exact slugs)
+
+Classify each request into one of these buckets and keep the slug consistent across prompts and references.
+
+Generate:
+- photorealistic-natural â€” candid/editorial lifestyle scenes with real texture and natural lighting.
+- product-mockup â€” product/packaging shots, catalog imagery, merch concepts.
+- ui-mockup â€” app/web interface mockups and wireframes; specify the desired fidelity.
+- infographic-diagram â€” diagrams/infographics with structured layout and text.
+- scientific-educational â€” classroom explainers, scientific diagrams, and learning visuals with required labels and accuracy constraints.
+- ads-marketing â€” campaign concepts and ad creatives with audience, brand position, scene, and exact tagline/copy.
+- productivity-visual â€” slide, chart, workflow, and data-heavy business visuals.
+- logo-brand â€” logo/mark exploration, vector-friendly.
+- illustration-story â€” comics, childrenâ€™s book art, narrative scenes.
+- stylized-concept â€” style-driven concept art, 3D/stylized renders.
+- historical-scene â€” period-accurate/world-knowledge scenes.
+
+Edit:
+- text-localization â€” translate/replace in-image text, preserve layout.
+- identity-preserve â€” try-on, person-in-scene; lock face/body/pose.
+- precise-object-edit â€” remove/replace a specific element (including interior swaps).
+- lighting-weather â€” time-of-day/season/atmosphere changes only.
+- background-extraction â€” transparent background / clean cutout. Ask built-in `image_gen` for actual transparency.
+- style-transfer â€” apply reference style while changing subject/scene.
+- compositing â€” multi-image insert/merge with matched lighting/perspective.
+- sketch-to-render â€” drawing/line art to photoreal render.
+
+## Shared prompt schema
+
+Use the following labeled spec as shared prompt scaffolding for both top-level modes:
+
+```text
+Use case: <taxonomy slug>
+Asset type: <where the asset will be used>
+Primary request: <user's main prompt>
+Input images: <Image 1: role; Image 2: role> (optional)
+Scene/backdrop: <environment>
+Subject: <main subject>
+Style/medium: <photo/illustration/3D/etc>
+Composition/framing: <wide/close/top-down; placement>
+Lighting/mood: <lighting + mood>
+Color palette: <palette notes>
+Materials/textures: <surface details>
+Text (verbatim): "<exact text>"
+Constraints: <must keep/must avoid>
+Avoid: <negative constraints>
+```
+
+Notes:
+- `Asset type` and `Input images` are prompt scaffolding, not dedicated CLI flags.
+- `Scene/backdrop` refers to the visual setting. It is not the same as the fallback CLI `background` parameter, which controls output transparency behavior.
+- Fallback-only execution notes such as `Quality:`, `Input fidelity:`, masks, output format, and output paths belong in the CLI path only. Do not treat them as built-in `image_gen` tool arguments.
+
+Augmentation rules:
+- Keep it short.
+- Add only the details needed to improve the prompt materially.
+- For edits, explicitly list invariants (`change only X; keep Y unchanged`).
+- If any critical detail is missing and blocks success, ask a question; otherwise proceed.
+
+## Examples
+
+### Generation example (hero image)
+```text
+Use case: product-mockup
+Asset type: landing page hero
+Primary request: a minimal hero image of a ceramic coffee mug
+Style/medium: clean product photography
+Composition/framing: wide composition with usable negative space for page copy if needed
+Lighting/mood: soft studio lighting
+Constraints: no logos, no text, no watermark
+```
+
+### Edit example (invariants)
+```text
+Use case: precise-object-edit
+Asset type: product photo background replacement
+Primary request: replace only the background with a warm sunset gradient
+Constraints: change only the background; keep the product and its edges unchanged; no text; no watermark
+```
+
+## Prompting best practices
+- Structure prompt as scene/backdrop -> subject -> details -> constraints.
+- Include intended use (ad, UI mock, infographic) to set the mode and polish level.
+- Use camera/composition language for photorealism.
+- Only use SVG/vector stand-ins when the user explicitly asked for vector output or a non-image placeholder.
+- Quote exact text and specify typography + placement.
+- For tricky words, spell them letter-by-letter and require verbatim rendering.
+- For multi-image inputs, reference images by index and describe how they should be used.
+- For edits, repeat invariants every iteration to reduce drift.
+- Iterate with single-change follow-ups.
+- If the prompt is generic, add only the extra detail that will materially help.
+- If the prompt is already detailed, normalize it instead of expanding it.
+- For CLI fallback only, see `references/cli.md` and `references/image-api.md` for model, `quality`, `input_fidelity`, masks, output format, and output-path guidance.
+- For transparent images, ask built-in `image_gen` for actual transparency and preserve its alpha.
+
+More principles shared by both modes: `references/prompting.md`.
+Copy/paste specs shared by both modes: `references/sample-prompts.md`.
+
+## Guidance by asset type
+Asset-type templates (website assets, game assets, wireframes, logo) are consolidated in `references/sample-prompts.md`.
+
+## gpt-image-2 guidance for CLI fallback
+
+The fallback CLI defaults to `gpt-image-2`.
+
+- Use `gpt-image-2` for new CLI/API workflows unless the user confirms a different model.
+- CLI `gpt-image-2` does not support `background=transparent`; ask before using `gpt-image-1.5` unless the user explicitly requested that model.
+- `gpt-image-2` always uses high fidelity for image inputs; do not set `input_fidelity` with this model.
+- `gpt-image-2` supports `quality` values `low`, `medium`, `high`, and `auto`.
+- Use `quality low` for fast drafts, thumbnails, and quick iterations. Use `medium`, `high`, or `auto` for final assets, dense text, diagrams, identity-sensitive edits, or high-resolution outputs.
+- Square images are typically fastest to generate. Use `1024x1024` for fast square drafts.
+- If the user asks for 4K-style output, use `3840x2160` for landscape or `2160x3840` for portrait.
+- `gpt-image-2` size may be `auto` or `WIDTHxHEIGHT` if all constraints hold: max edge `<= 3840px`, both edges multiples of `16px`, long-to-short ratio `<= 3:1`, total pixels between `655,360` and `8,294,400`.
+
+Popular `gpt-image-2` sizes:
+- `1024x1024` square
+- `1536x1024` landscape
+- `1024x1536` portrait
+- `2048x2048` 2K square
+- `2048x1152` 2K landscape
+- `3840x2160` 4K landscape
+- `2160x3840` 4K portrait
+- `auto`
+
+## Fallback CLI mode only
+
+### Temp and output conventions
+These conventions apply only to the CLI fallback. They do not describe built-in `image_gen` output behavior.
+- Use `tmp/imagegen/` for intermediate files (for example JSONL batches); delete them when done.
+- Write final artifacts under `output/imagegen/`.
+- Use `--out` or `--out-dir` to control output paths; keep filenames stable and descriptive.
+
+### Dependencies
+Prefer `uv` for dependency management in this repo.
+
+Required Python package:
+```bash
+uv pip install openai
+```
+
+Optional for image inspection and downscaling:
+```bash
+uv pip install pillow
+```
+
+Portability note:
+- If you are using the installed skill outside this repo, install dependencies into that environment with its package manager.
+- In uv-managed environments, `uv pip install ...` remains the preferred path.
+
+### Environment
+- `OPENAI_API_KEY` must be set for live API calls.
+- Do not ask the user for `OPENAI_API_KEY` when using the built-in `image_gen` tool.
+- Never ask the user to paste the full key in chat. Ask them to set it locally and confirm when ready.
+
+If the key is missing, give the user these steps:
+1. Create an API key in the OpenAI platform UI: https://platform.openai.com/api-keys
+2. Set `OPENAI_API_KEY` as an environment variable in their system.
+3. Offer to guide them through setting the environment variable for their OS/shell if needed.
+
+If installation is not possible in this environment, tell the user which dependency is missing and how to install it into their active environment.
+
+### Script-mode notes
+- CLI commands + examples: `references/cli.md`
+- API parameter quick reference: `references/image-api.md`
+- Network approvals / sandbox settings for CLI mode: `references/codex-network.md`
+
+## Reference map
+- `references/prompting.md`: shared prompting principles for both modes.
+- `references/sample-prompts.md`: shared copy/paste prompt recipes for both modes.
+- `references/cli.md`: fallback-only CLI usage via `scripts/image_gen.py`.
+- `references/image-api.md`: fallback-only API/CLI parameter reference.
+- `references/codex-network.md`: fallback-only network/sandbox troubleshooting for CLI mode.
+- `scripts/image_gen.py`: fallback-only CLI implementation. Use only when the user explicitly chooses or confirms CLI mode.
+
+# P5 Lane A step 2b â€” sprite layers from master-v2-b (2026-09-26)
+
+Seat: Codex `gpt-5.6-terra`, built-in `image_gen` tool (imagegen skill, edit mode on the attached
+master). Final reply begins with `AGENTS.md loaded â€” Herophilus`, then â‰¤ 6 lines.
+
+WRITE GRANT (overrides AGENTS.md read-only default for this job only): you may create files under
+`progress/app-replan/scene-pilot/plates/edits/`, the script
+`progress/app-replan/scene-pilot/plates/cut-sprites.js`, the report
+`progress/app-replan/scene-pilot/plates/sprites-report.md`, and PNGs under `app/assets/scene/`.
+Everything else is read-only.
+
+## Attached image
+`progress/app-replan/scene-pilot/plates/master-v2-b.png` â€” the owner's picked master plate,
+1916Ã—821. It is canonical. Every edit keeps it pixel-for-pixel wherever this brief does not ask
+for a change: same framing, same size, same light, same finish. No restyle, no re-render.
+
+## Fixed bounds â€” source of truth
+`progress/app-replan/scene-pilot/plates/scene-map-b.js` (load it with `vm`, never retype a box).
+Boxes are `[x, y, w, h]` in plate px:
+- `SCENE_MAP.slots.letters` `[642,522,160,90]`, `slots.tablet` `[932,458,200,90]`,
+  `slots.pile` `[1160,458,200,90]` (tablet and pile lie ON the open scroll â€” owner ruling);
+- `SCENE_MAP.books.terracotta|sage|violet|blue` for the gilt.
+Every added object sits fully inside its box with at least 8 px clear margin on every side.
+
+## Edits â€” one `image_gen` edit call each, saved full-size to `plates/edits/`
+1. `edit-1.png`: letters box â€” ONE folded letter with a wax seal; tablet box â€” a wooden wax
+   tablet, frame and dark smooth wax, BLANK; pile box â€” a small loose pile of 4â€“6 parchment
+   pages, a few corners turned down.
+2. `edit-2.png`: letters box â€” a small stack of THREE sealed letters; tablet box â€” the same
+   tablet, about half its wax scored with stylus strokes.
+3. `edit-3.png`: letters box â€” a tall, slightly leaning stack of 8â€“10 sealed letters, still
+   inside the box with margin.
+4. `edit-4.png`: gilt on all four book spines â€” raised gold-leaf bands and a thin gilt border.
+   Spine colours, positions, shapes and the lamp's occlusion of the blue book unchanged.
+5. `ribbon-raw.png` (NOT an edit, a new image): a single fabric bookmark ribbon, deep wine red
+   with a thin gold edge, hanging straight down, forked tail, same smooth glossy soft-lit finish
+   as the master, on a flat solid `#00b140` background, nothing else in frame.
+
+All objects: lit by the plate's own existing light; no writing, letters, numerals, symbols,
+logo or watermark anywhere (stylus strokes and seals are plain marks, never legible glyphs); no
+figure, face or hand; no flame, glow or smoke; no ink outlines, hatching or grain.
+
+## `cut-sprites.js` â€” Node, built-ins only (`fs`, `zlib`, `vm`); no npm
+Write a minimal PNG decode/encode (RGBA out; `zlib.crc32` exists in this Node). Then:
+- Registration: for each edit, find the integer shift in Â±8 px (x and y) that minimises mean
+  |edit âˆ’ master| over a 16 px ring OUTSIDE each target box; cut at that shift. If an edit is not
+  1916Ã—821, report its size and fail that edit â€” do not resample.
+- Cut each sprite at its fixed box, output exactly box-sized RGBA. Alpha: 255 inside, linear
+  ramp to 0 across the outer 8 px of the box (feather) so the patch blends onto the master.
+- `seam` = mean |edit âˆ’ master| (RGB, 0â€“255) over that 8 px feather band, after the shift.
+  FAIL a sprite whose seam > 10. `drift` = the ring mean outside the box; report only.
+- `letters-0.png` = the master's own letters-box crop, same feather (state 0 = empty desk).
+- Ribbon: key out `#00b140` (soft threshold on green dominance, despill the edge), trim to the
+  ribbon's alpha bounds, then pad/scale to exactly 48Ã—300, centred, aspect kept.
+- Outputs in `app/assets/scene/`: `letters-0.png`, `letters-1.png`, `letters-few.png`,
+  `letters-many.png`, `tablet-blank.png`, `tablet-half.png`, `pile.png`, `gilt-terracotta.png`,
+  `gilt-sage.png`, `gilt-violet.png`, `gilt-blue.png`, `ribbon.png`.
+- Self-check at the end, assert-based, prints `N passed` and exits non-zero on any fail: every
+  output exists, decodes, has exactly its box size (ribbon 48Ã—300), every seam â‰¤ 10, every shift
+  within Â±8, ribbon has transparent corners.
+
+## Report
+`sprites-report.md`, â‰¤ 30 lines: a table of sprite Â· source edit Â· box Â· shift Â· seam Â· drift Â·
+pass/fail; which edits failed and why; the script's final `passed` line. Do not judge the art by
+eye in the report â€” a separate reviewer looks at every crop.
+
+If an edit fails the seam check, retry that one edit ONCE with a stricter "change only inside
+this box" prompt; if it fails again, report it failed and move on.
+
+## Do not
+- Draw the Clepsydra, or any figure.
+- Edit `master-v2-b.png`, `scene-map-b.js` or any `app/` file outside `app/assets/scene/`.
+- Commit, push, `git add` or tag.
+- Download anything; install anything.
+- Start a second job.
+
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -Raw 'progress\\app-replan\\scene-pilot\\plates\\scene-map-b.js'; Get-ChildItem 'progress\\app-replan\\scene-pilot\\plates\\edits' -Force | Select-Object Name,Length; Get-ChildItem 'app\\assets\\scene' -Force | Select-Object Name,Length" in D:\claude os\Medical school\Herophilus
+ exited 1 in 185ms:
+
+Name        Length
+----        ------
+edit-1.png 1354918
+edit-2.png 1357610
+edit-3.png 1397939
+edit-4.png 1353559
+Get-ChildItem : Cannot find path 'D:\claude os\Medical school\Herophilus\app\assets\scene' because it does not exist.
+At line:2 char:172
++ ... t-Object Name,Length; Get-ChildItem 'app\assets\scene' -Force | Selec ...
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (D:\claude os\Me...pp\assets\scene:String) [Get-ChildItem], ItemNotFound 
+   Exception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+ 
+
+
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "New-Item -ItemType Directory -Force 'progress\\app-replan\\scene-pilot\\plates\\edits' | Out-Null; New-Item -ItemType Directory -Force 'app\\assets\\scene' | Out-Null; Copy-Item -LiteralPath 'C:\\Users\\Alfa388\\.codex\\generated_images\\01a0dc3a-22a3-7692-bd46-a3cadd941374\\exec-2d90ce15-0d6d-442b-8f68-1d1cde4f480a.png' -Destination 'progress\\app-replan\\scene-pilot\\plates\\edits\\ribbon-raw.png'" in D:\claude os\Medical school\Herophilus
+ succeeded in 14ms:
+apply patch
+patch: completed
+D:\claude os\Medical school\Herophilus\progress\app-replan\scene-pilot\plates\cut-sprites.js
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a1040f1b607b35b846bc093a08203620628bfe6
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a1040f1b607b35b846bc093a08203620628bfe6
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "node 'progress\\app-replan\\scene-pilot\\plates\\cut-sprites.js'" in D:\claude os\Medical school\Herophilus
+ exited 1 in 831ms:
+node:internal/assert/utils:146
+  throw error;
+  ^
+
+AssertionError [ERR_ASSERTION]: missing letters-few.png
+    at Object.<anonymous> (D:\claude os\Medical school\Herophilus\progress\app-replan\scene-pilot\plates\cut-sprites.js:33:301)
+    at Module._compile (node:internal/modules/cjs/loader:1934:14)
+    at Object..js (node:internal/modules/cjs/loader:2074:10)
+    at Module.load (node:internal/modules/cjs/loader:1656:32)
+    at Module._load (node:internal/modules/cjs/loader:1448:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v26.7.0
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a1040f1b607b35b846bc093a08203620628bfe6
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+apply patch
+patch: completed
+D:\claude os\Medical school\Herophilus\progress\app-replan\scene-pilot\plates\cut-sprites.js
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "node 'progress\\app-replan\\scene-pilot\\plates\\cut-sprites.js'" in D:\claude os\Medical school\Herophilus
+ exited 1 in 824ms:
+┌─────────┬───────────────────────┬──────────────────┬───────────┬─────────┬─────────┬────────┐
+│ (index) │ sprite                │ source           │ shift     │ seam    │ drift   │ result │
+├─────────┼───────────────────────┼──────────────────┼───────────┼─────────┼─────────┼────────┤
+│ 0       │ 'letters-0.png'       │ 'master'         │ '[0,0]'   │ '0.00'  │ '0.00'  │ 'pass' │
+│ 1       │ 'letters-1.png'       │ 'edit-1.png'     │ '[0,1]'   │ '2.39'  │ '12.87' │ 'pass' │
+│ 2       │ 'tablet-blank.png'    │ 'edit-1.png'     │ '[0,1]'   │ '31.32' │ '12.87' │ 'fail' │
+│ 3       │ 'pile.png'            │ 'edit-1.png'     │ '[0,1]'   │ '26.28' │ '12.87' │ 'fail' │
+│ 4       │ 'letters-few.png'     │ 'edit-2.png'     │ '[0,-1]'  │ '10.10' │ '21.24' │ 'fail' │
+│ 5       │ 'tablet-half.png'     │ 'edit-2.png'     │ '[0,-1]'  │ '73.55' │ '21.24' │ 'fail' │
+│ 6       │ 'letters-many.png'    │ 'edit-3.png'     │ '[-1,-1]' │ '16.03' │ '17.06' │ 'fail' │
+│ 7       │ 'gilt-terracotta.png' │ 'edit-4.png'     │ '[-1,0]'  │ '7.81'  │ '6.04'  │ 'pass' │
+│ 8       │ 'gilt-sage.png'       │ 'edit-4.png'     │ '[-1,0]'  │ '10.67' │ '6.04'  │ 'fail' │
+│ 9       │ 'gilt-violet.png'     │ 'edit-4.png'     │ '[-1,0]'  │ '9.78'  │ '6.04'  │ 'pass' │
+│ 10      │ 'gilt-blue.png'       │ 'edit-4.png'     │ '[-1,0]'  │ '3.36'  │ '6.04'  │ 'pass' │
+│ 11      │ 'ribbon.png'          │ 'ribbon-raw.png' │ '—'       │ '—'     │ '—'     │ 'pass' │
+└─────────┴───────────────────────┴──────────────────┴───────────┴─────────┴─────────┴────────┘
+node:internal/assert/utils:146
+  throw error;
+  ^
+
+AssertionError [ERR_ASSERTION]: missing letters-few.png
+    at Object.<anonymous> (D:\claude os\Medical school\Herophilus\progress\app-replan\scene-pilot\plates\cut-sprites.js:33:402)
+    at Module._compile (node:internal/modules/cjs/loader:1934:14)
+    at Object..js (node:internal/modules/cjs/loader:2074:10)
+    at Module.load (node:internal/modules/cjs/loader:1656:32)
+    at Module._load (node:internal/modules/cjs/loader:1448:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v26.7.0
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+codex
+The first validation pass found several generated edits touching pixels in their feather bands, so I’m using the brief’s single retry allowance for those source edits with tighter inside-box-only constraints.
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command 'Add-Type -AssemblyName System.Drawing; $p='"'C:\\Users\\Alfa388\\.codex\\generated_images\\01a0dc3a-22a3-7692-bd46-a3cadd941374\\exec-ae56f1dc-a15f-48a5-8224-2e4605648a4f.png'; "'$i=[System.Drawing.Image]::FromFile($p); "$($i.Width)x$($i.Height)"; $i.Dispose()' in D:\claude os\Medical school\Herophilus
+ succeeded in 55ms:
+1914x822
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Copy-Item -LiteralPath 'C:\\Users\\Alfa388\\.codex\\generated_images\\01a0dc3a-22a3-7692-bd46-a3cadd941374\\exec-ae56f1dc-a15f-48a5-8224-2e4605648a4f.png' -Destination 'progress\\app-replan\\scene-pilot\\plates\\edits\\edit-1.png'" in D:\claude os\Medical school\Herophilus
+ succeeded in 0ms:
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Copy-Item -LiteralPath 'C:\\Users\\Alfa388\\.codex\\generated_images\\01a0dc3a-22a3-7692-bd46-a3cadd941374\\exec-08b76eed-a32f-4f40-a01b-5ed79508a8d3.png' -Destination 'progress\\app-replan\\scene-pilot\\plates\\edits\\edit-2.png'" in D:\claude os\Medical school\Herophilus
+ succeeded in 0ms:
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Copy-Item -LiteralPath 'C:\\Users\\Alfa388\\.codex\\generated_images\\01a0dc3a-22a3-7692-bd46-a3cadd941374\\exec-fa5c5928-9cb7-4cda-9013-7c0cb601e641.png' -Destination 'progress\\app-replan\\scene-pilot\\plates\\edits\\edit-3.png'" in D:\claude os\Medical school\Herophilus
+ succeeded in 0ms:
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Copy-Item -LiteralPath 'C:\\Users\\Alfa388\\.codex\\generated_images\\01a0dc3a-22a3-7692-bd46-a3cadd941374\\exec-60dafe86-37ad-47b5-90fb-65497e58d932.png' -Destination 'progress\\app-replan\\scene-pilot\\plates\\edits\\edit-4.png'" in D:\claude os\Medical school\Herophilus
+ succeeded in 0ms:
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7a14631cea991d0ef4276bdb3ec3d511c1f5fb50
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);if(ok)save(n,z.im);else failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+apply patch
+patch: completed
+D:\claude os\Medical school\Herophilus\progress\app-replan\scene-pilot\plates\cut-sprites.js
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..b7fe7f87fb34eaa0709906645959e13815d4f9fc
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);save(n,z.im);if(!ok)failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..b7fe7f87fb34eaa0709906645959e13815d4f9fc
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);save(n,z.im);if(!ok)failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "node 'progress\\app-replan\\scene-pilot\\plates\\cut-sprites.js'" in D:\claude os\Medical school\Herophilus
+ exited 1 in 851ms:
+┌─────────┬───────────────────────┬──────────────────┬──────────┬─────────┬─────────┬────────┐
+│ (index) │ sprite                │ source           │ shift    │ seam    │ drift   │ result │
+├─────────┼───────────────────────┼──────────────────┼──────────┼─────────┼─────────┼────────┤
+│ 0       │ 'letters-0.png'       │ 'master'         │ '[0,0]'  │ '0.00'  │ '0.00'  │ 'pass' │
+│ 1       │ 'letters-1.png'       │ 'edit-1.png'     │ '[-1,1]' │ '14.48' │ '26.35' │ 'fail' │
+│ 2       │ 'tablet-blank.png'    │ 'edit-1.png'     │ '[-1,1]' │ '81.43' │ '26.35' │ 'fail' │
+│ 3       │ 'pile.png'            │ 'edit-1.png'     │ '[-1,1]' │ '71.07' │ '26.35' │ 'fail' │
+│ 4       │ 'letters-few.png'     │ 'edit-2.png'     │ '[0,1]'  │ '8.62'  │ '21.17' │ 'pass' │
+│ 5       │ 'tablet-half.png'     │ 'edit-2.png'     │ '[0,1]'  │ '80.84' │ '21.17' │ 'fail' │
+│ 6       │ 'letters-many.png'    │ 'edit-3.png'     │ '[-1,1]' │ '9.59'  │ '10.91' │ 'pass' │
+│ 7       │ 'gilt-terracotta.png' │ 'edit-4.png'     │ '[0,-1]' │ '7.52'  │ '6.65'  │ 'pass' │
+│ 8       │ 'gilt-sage.png'       │ 'edit-4.png'     │ '[0,-1]' │ '8.53'  │ '6.65'  │ 'pass' │
+│ 9       │ 'gilt-violet.png'     │ 'edit-4.png'     │ '[0,-1]' │ '9.42'  │ '6.65'  │ 'pass' │
+│ 10      │ 'gilt-blue.png'       │ 'edit-4.png'     │ '[0,-1]' │ '5.84'  │ '6.65'  │ 'pass' │
+│ 11      │ 'ribbon.png'          │ 'ribbon-raw.png' │ '—'      │ '—'     │ '—'     │ 'pass' │
+└─────────┴───────────────────────┴──────────────────┴──────────┴─────────┴─────────┴────────┘
+D:\claude os\Medical school\Herophilus\progress\app-replan\scene-pilot\plates\cut-sprites.js:33
+for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+
+Error: failed: letters-1.png: seam 14.48; tablet-blank.png: seam 81.43; pile.png: seam 71.07; tablet-half.png: seam 80.84; letters-1.png; tablet-blank.png; pile.png; tablet-half.png
+    at Object.<anonymous> (D:\claude os\Medical school\Herophilus\progress\app-replan\scene-pilot\plates\cut-sprites.js:33:652)
+    at Module._compile (node:internal/modules/cjs/loader:1934:14)
+    at Object..js (node:internal/modules/cjs/loader:2074:10)
+    at Module.load (node:internal/modules/cjs/loader:1656:32)
+    at Module._load (node:internal/modules/cjs/loader:1448:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v26.7.0
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..b7fe7f87fb34eaa0709906645959e13815d4f9fc
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);save(n,z.im);if(!ok)failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Add-Type -AssemblyName System.Drawing; Get-ChildItem 'progress\\app-replan\\scene-pilot\\plates\\edits\\edit-*.png' | ForEach-Object { "'$i=[System.Drawing.Image]::FromFile($_.FullName); "$($_.Name) $($i.Width)x$($i.Height)"; $i.Dispose() }; $r=[System.Drawing.Image]::FromFile('"'progress\\app-replan\\scene-pilot\\plates\\edits\\ribbon-raw.png'); \"ribbon-raw.png "'$($r.Width)x$($r.Height)"; $r.Dispose()' in D:\claude os\Medical school\Herophilus
+ succeeded in 236ms:
+edit-1.png 1914x822
+edit-2.png 1914x822
+edit-3.png 1914x822
+edit-4.png 1914x822
+ribbon-raw.png 1024x1536
+
+diff --git a/progress/app-replan/scene-pilot/plates/cut-sprites.js b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..b7fe7f87fb34eaa0709906645959e13815d4f9fc
+--- /dev/null
++++ b/progress/app-replan/scene-pilot/plates/cut-sprites.js
+@@ -0,0 +1,33 @@
++/* P5 sprite cutter: deliberately dependency-free PNG reader/writer. */
++const fs = require('fs'), zlib = require('zlib'), vm = require('vm'), path = require('path'), assert = require('assert');
++const here = __dirname, root = path.resolve(here, '..', '..', '..', '..');
++const masterFile = path.join(here, 'master-v2-b.png');
++const editDir = path.join(here, 'edits'), outDir = path.join(root, 'app', 'assets', 'scene');
++fs.mkdirSync(outDir, {recursive:true});
++function u32(b,o){return b.readUInt32BE(o)}
++function crc32(b){let c=~0; for(const v of b){c^=v; for(let k=0;k<8;k++) c=(c>>>1)^((c&1)?0xedb88320:0)} return (~c)>>>0}
++function png(buf){
++  assert(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'not PNG'); let p=8,w,h,bd,ct,idat=[];
++  while(p<buf.length){let n=u32(buf,p), t=buf.toString('ascii',p+4,p+8), d=buf.subarray(p+8,p+8+n); p+=12+n; if(t==='IHDR'){w=u32(d,0);h=u32(d,4);bd=d[8];ct=d[9];assert(!d[12],'interlaced PNG')} if(t==='IDAT')idat.push(d);}
++  assert(bd===8 && (ct===6||ct===2),'only 8-bit RGB/RGBA PNG supported'); const ch=ct===6?4:3, raw=zlib.inflateSync(Buffer.concat(idat)), stride=w*ch, data=Buffer.alloc(w*h*4); let prev=Buffer.alloc(stride), pos=0;
++  for(let y=0;y<h;y++){let f=raw[pos++], row=Buffer.from(raw.subarray(pos,pos+stride));pos+=stride; for(let x=0;x<stride;x++){let a=x>=ch?row[x-ch]:0,b=prev[x],c=x>=ch?prev[x-ch]:0; if(f===1)row[x]=(row[x]+a)&255; else if(f===2)row[x]=(row[x]+b)&255; else if(f===3)row[x]=(row[x]+((a+b)>>1))&255; else if(f===4){let q=a+b-c,pa=Math.abs(q-a),pb=Math.abs(q-b),pc=Math.abs(q-c);row[x]=(row[x]+(pa<=pb&&pa<=pc?a:pb<=pc?b:c))&255;} else assert(f===0,'bad filter');}
++    for(let x=0;x<w;x++){let s=x*ch,d=(y*w+x)*4;data[d]=row[s];data[d+1]=row[s+1];data[d+2]=row[s+2];data[d+3]=ch===4?row[s+3]:255;} prev=row;
++  } return {w,h,data};
++}
++function enc(im){let raw=Buffer.alloc((im.w*4+1)*im.h),p=0;for(let y=0;y<im.h;y++){raw[p++]=0;im.data.copy(raw,p,y*im.w*4,(y+1)*im.w*4);p+=im.w*4} function chunk(t,d){let b=Buffer.alloc(12+d.length);b.writeUInt32BE(d.length,0);b.write(t,4);d.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,8+d.length)),8+d.length);return b}let ih=Buffer.alloc(13);ih.writeUInt32BE(im.w,0);ih.writeUInt32BE(im.h,4);ih[8]=8;ih[9]=6;return Buffer.concat([Buffer.from([137,80,78,71,13,10,26,10]),chunk('IHDR',ih),chunk('IDAT',zlib.deflateSync(raw)),chunk('IEND',Buffer.alloc(0))])}
++function load(f){return png(fs.readFileSync(f))} function px(im,x,y,c){if(x<0||y<0||x>=im.w||y>=im.h)return 0;return im.data[(y*im.w+x)*4+c]}
++const sb={};vm.createContext(sb);vm.runInContext(fs.readFileSync(path.join(here,'scene-map-b.js'),'utf8'),sb); const M=sb.SCENE_MAP, master=load(masterFile);
++function ringMean(edit, boxes, dx,dy){let sum=0,n=0;for(const [x,y,w,h] of boxes)for(let yy=y-16;yy<y+h+16;yy++)for(let xx=x-16;xx<x+w+16;xx++){if(xx>=x&&xx<x+w&&yy>=y&&yy<y+h)continue;for(let c=0;c<3;c++){sum+=Math.abs(px(edit,xx+dx,yy+dy,c)-px(master,xx,yy,c));n++}}return sum/n}
++function shiftFor(edit,boxes){let best={v:Infinity,dx:0,dy:0};for(let dy=-8;dy<=8;dy++)for(let dx=-8;dx<=8;dx++){let v=ringMean(edit,boxes,dx,dy);if(v<best.v)best={v,dx,dy}}return best}
++function cut(edit,box,s){let [x,y,w,h]=box,d=Buffer.alloc(w*h*4);let sum=0,n=0;for(let yy=0;yy<h;yy++)for(let xx=0;xx<w;xx++){let q=(yy*w+xx)*4, dist=Math.min(xx,yy,w-1-xx,h-1-yy),a=Math.max(0,Math.min(255,Math.round(dist*255/8)));for(let c=0;c<3;c++){let v=px(edit,x+xx+s.dx,y+yy+s.dy,c);d[q+c]=v;if(dist<8){sum+=Math.abs(v-px(master,x+xx,y+yy,c));n++}}d[q+3]=a}return {im:{w,h,data:d},seam:sum/n}}
++const jobs=[
++ ['edit-1.png',[M.slots.letters.box,M.slots.tablet.box,M.slots.pile.box],[['letters-1.png',M.slots.letters.box],['tablet-blank.png',M.slots.tablet.box],['pile.png',M.slots.pile.box]]],
++ ['edit-2.png',[M.slots.letters.box,M.slots.tablet.box],[['letters-few.png',M.slots.letters.box],['tablet-half.png',M.slots.tablet.box]]],
++ ['edit-3.png',[M.slots.letters.box],[['letters-many.png',M.slots.letters.box]]],
++ ['edit-4.png',[M.books.terracotta.box,M.books.sage.box,M.books.violet.box,M.books.blue.box],[['gilt-terracotta.png',M.books.terracotta.box],['gilt-sage.png',M.books.sage.box],['gilt-violet.png',M.books.violet.box],['gilt-blue.png',M.books.blue.box]]]
++]; let rows=[], failed=[];
++function save(n,im){fs.writeFileSync(path.join(outDir,n),enc(im))}
++let empty=cut(master,M.slots.letters.box,{dx:0,dy:0});save('letters-0.png',empty.im);rows.push(['letters-0.png','master',M.slots.letters.box,'[0,0]',empty.seam.toFixed(2),'0.00','pass']);
++for(const [file,boxes,outputs] of jobs){let e=load(path.join(editDir,file));if(Math.abs(e.w-master.w)>2||Math.abs(e.h-master.h)>2){failed.push(`${file}: size ${e.w}x${e.h}`);for(const [n,b]of outputs)rows.push([n,file,b,'—','—','—','fail']);continue}let s=shiftFor(e,boxes);for(const [n,b]of outputs){let z=cut(e,b,s),ok=z.seam<=10;rows.push([n,file,b,`[${s.dx},${s.dy}]`,z.seam.toFixed(2),s.v.toFixed(2),ok?'pass':'fail']);save(n,z.im);if(!ok)failed.push(`${n}: seam ${z.seam.toFixed(2)}`)}}
++function ribbon(){let a=load(path.join(editDir,'ribbon-raw.png')), alpha=Buffer.alloc(a.w*a.h);let minx=a.w,miny=a.h,maxx=-1,maxy=-1;for(let y=0;y<a.h;y++)for(let x=0;x<a.w;x++){let i=(y*a.w+x)*4,r=a.data[i],g=a.data[i+1],b=a.data[i+2],dom=g-Math.max(r,b),v=Math.max(0,Math.min(255,Math.round((70-dom)*255/45)));alpha[y*a.w+x]=v;if(v>20){minx=Math.min(minx,x);maxx=Math.max(maxx,x);miny=Math.min(miny,y);maxy=Math.max(maxy,y);if(g>Math.max(r,b))a.data[i+1]=Math.max(r,b)}}assert(maxx>=minx,'ribbon key found no subject');let sw=maxx-minx+1,sh=maxy-miny+1,scale=Math.min(48/sw,300/sh),nw=Math.max(1,Math.round(sw*scale)),nh=Math.max(1,Math.round(sh*scale)),d=Buffer.alloc(48*300*4),ox=Math.floor((48-nw)/2),oy=Math.floor((300-nh)/2);for(let y=0;y<nh;y++)for(let x=0;x<nw;x++){let sx=Math.min(maxx, minx+Math.floor(x/scale)),sy=Math.min(maxy,miny+Math.floor(y/scale)),si=(sy*a.w+sx)*4,di=((oy+y)*48+ox+x)*4;d[di]=a.data[si];d[di+1]=a.data[si+1];d[di+2]=a.data[si+2];d[di+3]=alpha[sy*a.w+sx]}let im={w:48,h:300,data:d};save('ribbon.png',im);assert(!d[3]&&!d[(47)*4+3]&&!d[(299*48)*4+3]&&!d[(299*48+47)*4+3],'ribbon corners opaque');rows.push(['ribbon.png','ribbon-raw.png','48×300','—','—','—','pass']);} ribbon();
++for(const r of rows)if(r[6]==='fail')failed.push(r[0]); console.table(rows.map(r=>({sprite:r[0],source:r[1],shift:r[3],seam:r[4],drift:r[5],result:r[6]}))); const expected=['letters-0.png','letters-1.png','letters-few.png','letters-many.png','tablet-blank.png','tablet-half.png','pile.png','gilt-terracotta.png','gilt-sage.png','gilt-violet.png','gilt-blue.png','ribbon.png'];for(const n of expected){assert(fs.existsSync(path.join(outDir,n)),`missing ${n}`);let q=load(path.join(outDir,n));if(n==='ribbon.png')assert(q.w===48&&q.h===300);else{let r=rows.find(v=>v[0]===n),b=r[2];assert(q.w===b[2]&&q.h===b[3],`bad size ${n}`)}}if(failed.length)throw Error('failed: '+failed.join('; ')); console.log(`${expected.length} passed`); globalThis.rows=rows;
+
+apply patch
+patch: completed
+D:\claude os\Medical school\Herophilus\progress\app-replan\scene-pilot\plates\sprites-report.md
+codex
+AGENTS.md loaded — Herophilus
+
+Created the cutter, ribbon source/sprite, report, and all requested sprite files.
+The cutter completed dimensional/PNG checks but exited non-zero on four seam failures after their single permitted retries: letters-1, tablet-blank, pile, tablet-half.
+Details are in [sprites-report.md](D:\claude os\Medical school\Herophilus\progress\app-replan\scene-pilot\plates\sprites-report.md) and [cut-sprites.js](D:\claude os\Medical school\Herophilus\progress\app-replan\scene-pilot\plates\cut-sprites.js).
+tokens used
+74,924
+AGENTS.md loaded — Herophilus
+
+Created the cutter, ribbon source/sprite, report, and all requested sprite files.
+The cutter completed dimensional/PNG checks but exited non-zero on four seam failures after their single permitted retries: letters-1, tablet-blank, pile, tablet-half.
+Details are in [sprites-report.md](D:\claude os\Medical school\Herophilus\progress\app-replan\scene-pilot\plates\sprites-report.md) and [cut-sprites.js](D:\claude os\Medical school\Herophilus\progress\app-replan\scene-pilot\plates\cut-sprites.js).
