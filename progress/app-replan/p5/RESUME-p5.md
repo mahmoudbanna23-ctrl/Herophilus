@@ -29,9 +29,9 @@
 - `SCENE_MAP` measured, `plates/scene-map-b.js` + `.check.js` (35 passed). Refuter: round 1 FAIL
   (9/15 boxes), round 2 FAIL (portrait typed in), round 3 PASS — `p5/REFUTE-scenemap-b{,-round2}.md`.
   Violet w 43 = occlusion touch, confirmed. No desk-edge field; letters slot ends y=612 < edge ~619.
-- OWNER-PENDING before sprite layers: (a) tablet/pile slots null — shrink into strips
-  [870,556,170,60]/[1360,574,200,44] or sit on open scroll; (b) portrait: cluster 409 > crop 379.4
-  (overflow 29.6) — accept clip, shift crop, or narrow cluster.
+- Owner ruled 2026-09-26, applied `64b62f8a` (refuter round 4 PASS, 64 passed): tablet
+  [932,458,200,90] + pile [1160,458,200,90] sit ON openScroll; portrait crop x0 = bookCluster left
+  (1066..1445.4), every book inside, lamp handle clips ~29.6 px.
 - Next: sprite layers (letters ×4, tablet ×2, pile, ribbon, gilt spine ×4), then dawn/day/dusk/night.
 
 ## Owner decisions owed
