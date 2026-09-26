@@ -35,11 +35,11 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
   (phases P0-P12, P7/P8/P9 split a/b; J9 team talk + Opus refuter folded in,
   `progress\app-replan\j9-team-talk\minutes.md`). Fork 5: P3 mocks beside P0/P1. P4a DONE `10b2684`
   (tag `pre-p4-2026-09-25`, `p4\p4a-report.md`); final plate = `painted-codex-3.png` (owner). P4b (Q1 B/R1 A)
-  DONE, refuter PASS after 1 Codex fix round (tag `pre-p4b-2026-09-25`). NEXT: P5 home build. P10 debt: focus ring `--neuro` 2.71:1 dark (`base.css:16`); impeccable flags: 7 side-tabs, `.gate::before` grid bg, `.bk-prog` width anim. Rollback tag `pre-master-replan`
+  DONE (tag `pre-p4b-2026-09-25`). P5 = living desk, plan `p5\PLAN-living-desk-2026-09-26.md`, tag `pre-p5-scene-2026-09-26`; NEXT Lane A spike. P10 debt: focus ring `--neuro` 2.71:1 dark (`base.css:16`); impeccable flags: 7 side-tabs, `.gate::before` grid bg, `.bk-prog` width anim. Rollback tag `pre-master-replan`
   (local). Owner answered 2026-09-25 (plan §6): Meshy CC BY approved, Peds tag plain, lab values
   source-then-tagged, screenshots dropped, candle desk = P3 mocks photo vs painted plate, water level
   = every answer counts, 100/day, midnight reset. Plan §6 gen map + audio P6b; §8 = Codex gap review (P1 sync exit conditions; P9c Firestore-only, per-subject — owner ruling; D1 DROPPED).
-  Owed by owner: backup (a) paid daily export vs (b) $0 no guarantee · rights attestation · report address · students/yr · privacy wording · Astra baseline go? · push local commits? (32 ahead of origin/main by local ref 2026-09-25, not fetched) P0 DONE `77372af` (slow-3G UNCONFIRMED; 2 latent lock-check flaws in `p0/REFUTE-round2.md`). P3: owner picked painted desk · Q1 B · R1 A, neon edges DEFAULT; `shoot.mjs` runs only OUTSIDE Codex sandbox (CDP). Plates: Codex image gen (Gemini image 429 on this key); ONE Codex job at a time (sandbox acct lockout 1909).
+  Owed by owner: backup (a) paid daily export vs (b) $0 no guarantee · rights attestation · report address · students/yr · privacy wording · Astra baseline go? · push local commits? (34 ahead by local ref 2026-09-26) P0 DONE `77372af` (slow-3G UNCONFIRMED; 2 latent lock-check flaws in `p0/REFUTE-round2.md`). P3: owner picked painted desk · Q1 B · R1 A, neon edges DEFAULT; `shoot.mjs` runs only OUTSIDE Codex sandbox (CDP). Plates: Codex image gen (Gemini image 429 on this key); ONE Codex job at a time (sandbox acct lockout 1909).
   Deploy freeze R9: no Pages upload 09-26..27, 10-02..03, 10-17..19. Superseded resume bullets:
   archive `## Pruned from MEMORY.md - 2026-09-25`.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
