@@ -25,7 +25,7 @@
 - **Owner PICKED B (2026-09-26).** Next:
   1. Measure `SCENE_MAP`.
   2. Sprite layers.
-  3. Commit the plates.
+  3. B + notes committed `047f401`; a/c stay uncommitted on disk.
 
 ## Owner decisions owed
 - ~~Plate pick~~ B, decided 2026-09-26.
@@ -34,4 +34,17 @@
 - The lwdickens CC BY-NC tone.
 - Mubert.
 - The 7 MEMORY items.
-- Push: main is 36 ahead by local ref.
+- Push: main is 38 ahead by local ref (2026-09-26).
+
+## Carried into J4 (desk-data.js nits, refuter round 2 PASS, none fires today)
+- `desk-data.js:23`/`:32` test `a.ok===true`, but utils only checks that `ok` is truthy.
+- `:22` tests `!a`, but utils uses `!==undefined`.
+- `:26` takes `maxLvl` as a parameter, so the caller must pass `SRS.length-1` (4).
+
+Align all three when J4 wires the file in.
+
+## Uncommitted on disk, deliberately
+- `scene-pilot/spike/*`: the spike is not accepted.
+- `p5/spike-*.md`, `p5/spike*.reply.txt` and `p5/*-codex.log`.
+- `master-v2-{a,c}.png`.
+- `D:\tmp-spike-ud`: left empty by the refuter, because `rm` was denied. Safe to delete.
