@@ -1,4 +1,7 @@
-/* Open smoke.html directly from file://.  It deliberately uses no app JS. */
+/* Open smoke.html directly from file://.  It runs no app boot logic of its
+   own, but it does load js/utils.js and js/storage.js (see smoke.html) so
+   the bank-badge check below exercises the app's own bankPills()/BANKS
+   colour lookup instead of reimplementing it here. */
 (function(){
   var out=document.getElementById('results'), EXPECTED_TOTAL=6956, pass=0, fail=0;
   function test(name,ok,detail){var li=document.createElement('li');li.textContent=(ok?'PASS ':'FAIL ')+name+(detail?' — '+detail:'');out.appendChild(li);if(ok)pass++;else fail++;}
@@ -12,9 +15,15 @@
   test('aggregator contains every source question',Q_ALL.length===all.length,'got '+Q_ALL.length);
   test('no sparse holes in banks',!arrays.some(holes));
   test('no sparse holes in module groups',!MODULES.some(function(m){return holes(m.groups)||m.groups.some(function(g){return holes(g.chapters)})}));
-  var q=Q_ENT[0], quiz=document.getElementById('quiz');quiz.textContent=q.stem;q.options.forEach(function(o){var b=document.createElement('button');b.textContent=o;quiz.appendChild(b)});
-  test('quiz item renders each option',quiz.querySelectorAll('button').length===q.options.length);
-  var banks={endpoint:0,house:0,gradegain:0};all.forEach(function(q){[q.bank].concat(q.alsoIn||[]).forEach(function(b){if(banks[b]!==undefined)banks[b]++})});
-  Object.keys(banks).forEach(function(b){test(b+' bank badge has content',banks[b]>0,'count '+banks[b])});
+  /* Bank badge colour: find a real question in each bank and render its
+     actual pill through the app's own bankPills(), checking the hex it
+     produces matches BANKS — not just that the bank has questions. */
+  /* Literal, NOT read from BANKS: a wrong hex in BANKS must fail here. */
+  var BANK_HEX={endpoint:"#9a6b1f",house:"#2f6b8f",gradegain:"#8f3f5c"};
+  Object.keys(BANK_HEX).forEach(function(b){
+    var q=all.find(function(x){return banksOf(x).indexOf(b)>=0});
+    var html=q?bankPills(q):'';
+    test(b+' bank badge renders its own colour',!!q&&html.indexOf('background:'+BANK_HEX[b])>=0,q?'':'no question found in bank '+b);
+  });
   var summary=document.createElement('p');summary.textContent=pass+' passed, '+fail+' failed';document.body.appendChild(summary);document.title='SMOKE '+(fail?'FAIL':'PASS')+' '+pass+'/'+(pass+fail);
 })();

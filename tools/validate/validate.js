@@ -20,10 +20,10 @@ function load(root){
  return {sandbox,files};
 }
 function validate(root=APP){
- let x; try{x=load(root)}catch(e){return {ok:false,checks:0,errors:[e.message],counts:{}}}
- const {sandbox:s,files}=x, errors=[]; let checks=0;
+ let x; try{x=load(root)}catch(e){return {ok:false,checks:0,passed:0,errors:[e.message],counts:{}}}
+ const {sandbox:s,files}=x, errors=[]; let checks=0, passed=0;
  const fail=(file,id,msg)=>errors.push(file+(id?' '+id:'')+': '+msg);
- const check=(good,file,id,msg)=>{checks++;if(!good)fail(file,id,msg)};
+ const check=(good,file,id,msg)=>{checks++;if(good)passed++;else fail(file,id,msg)};
  const modules=s.__MODULES||[], chapters=new Map(), moduleIds=new Set(modules.map(m=>m.id));
  for(const m of modules){check(m&&typeof m.id==='string'&&Array.isArray(m.groups),'modules.js',m&&m.id,'module needs id and groups');
   for(const g of m.groups||[]){check(Array.isArray(g.chapters),'modules.js',m.id,'group needs chapters array'); for(let i=0;i<(g.chapters||[]).length;i++){const c=g.chapters[i];check(i in g.chapters,'modules.js',m.id,'sparse chapter hole '+i);check(Array.isArray(c)&&typeof c[0]==='string'&&typeof c[1]==='string','modules.js',m.id,'invalid chapter tuple '+i);if(c)chapters.set(c[0],m.id)}}
@@ -56,8 +56,18 @@ function validate(root=APP){
  }
  const qids=new Set(questions.map(x=>x.q.id));
  for(const c of collections.filter(c=>c.type==='theory'))for(const [chapter,t] of Object.entries(c.v))for(const sec of t.sections||[])for(const id of sec.qs||[])check(qids.has(id),c.file,chapter,'qs id not found: '+id);
- const expectedPath=path.join(__dirname,'counts.json'); if(fs.existsSync(expectedPath)){const expected=JSON.parse(fs.readFileSync(expectedPath,'utf8'));for(const [f,n] of Object.entries(expected))check(counts[f]===n,f,'','count '+counts[f]+' differs from expected '+n);for(const f of Object.keys(counts))check(Object.prototype.hasOwnProperty.call(expected,f),f,'','missing expected count');}
- return {ok:!errors.length,checks,errors,counts,total:questions.length};
+ const expectedPath=path.join(__dirname,'counts.json'); if(fs.existsSync(expectedPath)){const expected=JSON.parse(fs.readFileSync(expectedPath,'utf8'));for(const [f,n] of Object.entries(expected))check(counts[f]===n,f,'','count '+counts[f]+' differs from expected '+n);for(const f of Object.keys(counts))check(Object.prototype.hasOwnProperty.call(expected,f),f,'','missing expected count');
+  /* app/smoke.js cannot fetch counts.json under file://, so it pins its own
+     EXPECTED_TOTAL.  Catch drift here instead: fail the gate if that number
+     stops matching the question+case total this file computed from counts.json. */
+  const smokePath=path.join(root,'smoke.js');
+  if(fs.existsSync(smokePath)){
+   const smokeSrc=fs.readFileSync(smokePath,'utf8'), m=smokeSrc.match(/EXPECTED_TOTAL\s*=\s*(\d+)/);
+   const countsTotal=Object.entries(expected).filter(([f])=>!f.startsWith('theory.')).reduce((sum,[,n])=>sum+n,0);
+   check(m&&Number(m[1])===countsTotal,'smoke.js','','EXPECTED_TOTAL '+(m?m[1]:'not found')+' differs from counts.json total '+countsTotal);
+  }
+ }
+ return {ok:!errors.length,checks,passed,errors,counts,total:questions.length};
 }
-if(require.main===module){const rootArg=process.argv.find(a=>a.startsWith('--root='));const r=validate(rootArg?path.resolve(rootArg.slice(7)):APP);r.errors.forEach(e=>console.error('FAIL  '+e));console.log(r.checks+' checks passed'+(r.ok?'':'; '+r.errors.length+' failed'));process.exit(r.ok?0:1)}
+if(require.main===module){const rootArg=process.argv.find(a=>a.startsWith('--root='));const r=validate(rootArg?path.resolve(rootArg.slice(7)):APP);r.errors.forEach(e=>console.error('FAIL  '+e));console.log(r.passed+' of '+r.checks+' checks passed'+(r.ok?'':'; '+r.errors.length+' failed'));process.exit(r.ok?0:1)}
 module.exports={validate,load,dataScripts};
