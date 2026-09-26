@@ -1,0 +1,172 @@
+diff --git a/app/index.html b/app/index.html
+index 2dcfc75..0d6c9ac 100644
+--- a/app/index.html
++++ b/app/index.html
+@@ -40,6 +40,7 @@
+ <link rel="stylesheet" href="css/components.css">
+ <link rel="stylesheet" href="css/print.css">
+ <link rel="stylesheet" href="css/views.css">
++<link rel="stylesheet" href="css/desk.css">
+ </head>
+ <body>
+ <!-- Ambient colour field. Fixed and non-interactive, sits behind .app.
+@@ -130,6 +131,7 @@
+ <script src="data/theory.ophtho.js"></script>
+ <script src="data/theory.neuro.js"></script>
+ <script src="data/theory.js"></script>
++<script src="js/desk.js"></script>
+ <script src="js/storage.js"></script>
+ <script src="js/icons.js"></script>
+ <script src="js/theme.js"></script>
+diff --git a/app/js/render.js b/app/js/render.js
+index a2a6000..5394a50 100644
+--- a/app/js/render.js
++++ b/app/js/render.js
+@@ -75,7 +75,7 @@ function render(){
+   if(emptyCourse)vEmptyTerm(p);
+   else ({home:vHome,module:vModule,quiz:vQuiz,results:vResults,review:vReview,schedule:vSchedule,theory:vTheory,
+     moved:vMoved,flagged:vFlagged,mock:vMock,session:vSession,weak:vWeak}[view.name]||vHome)(p);
+-  if((view.name==='home'||view.name==='mock')&&hasSavedMock()){
++  if(view.name==='mock'&&hasSavedMock()){
+     p.insertAdjacentHTML('afterbegin','<p><button class="btn sec" onclick="offerMockResume()">Open saved mock exam</button></p>');
+   }
+   inkMarkChips(p);
+@@ -83,6 +83,7 @@ function render(){
+   /* The companion travels with the view: she repaints her readout and, the
+      first time she meets a screen, explains it. */
+   clepPaint(); clepPlace(); clepOnView();
++  if(window.syncDeskMotion)window.syncDeskMotion();
+ }
+ 
+ /* Fade cards up as they enter the viewport — browse screens only. Reading
+@@ -176,40 +177,49 @@ function vHome(p){
+   const done=QUESTIONS.filter(q=>isAnswered(q.id)).length;
+   const acc=accuracy(QUESTIONS);
+   const due=dueNow().length;
+-  /* A profile that has answered nothing has nothing to stand on, and the four
+-     stat tiles say so in the bluntest possible way: 0 / — / 0 / 0. That is an
+-     empty scoreboard shown to somebody who has not played yet, and it was the
+-     first sentence the app spoke to a new colleague. The first run asks for a
+-     subject instead, and puts the subjects directly underneath the question.
+-     The moment one answer lands the dashboard becomes the ledger it was built
+-     to be — nothing is removed, it is deferred until it means something. */
+   const fresh=done===0;
++  const recent=Object.keys(S.resumeByChapter||{}).filter(cid=>
++    openModules().some(m=>m.groups.some(g=>g.chapters.some(c=>c[0]===cid)))
++  ).sort((a,b)=>S.resumeByChapter[b].at-S.resumeByChapter[a].at)[0];
++  const recentModule=recent&&openModules().find(m=>m.groups.some(g=>g.chapters.some(c=>c[0]===recent)));
++  const subjects=activeModules().slice();
++  if(recentModule){
++    const i=subjects.indexOf(recentModule);
++    if(i>0)subjects.unshift(subjects.splice(i,1)[0]);
++  }
++  const resume=recent?S.resumeByChapter[recent]:null;
++  let h=`<section class="desk-band" aria-label="Study desk">
++    <img class="desk-plate" src="assets/desk/painted.jpg" alt="">
++    <button class="desk-candle" type="button" data-desk-candle aria-pressed="true">Candle<span class="desk-wick" aria-hidden="true"></span><span class="desk-flame" aria-hidden="true"></span></button>
++    <div class="desk-copy"><div class="eyebrow">${esc(termName())}</div>
++    <h1>${fresh?'Choose a subject to begin':`Continue with ${esc(recentModule?recentModule.name:'your studies')}.`}</h1>
++    <p>${fresh?`${total} questions are ready. Every chapter remembers where you stopped.`:`${done} of ${total} questions answered.`}</p>
++    ${recent?`<button class="btn go" onclick="startChapter('${recent}')">${resume.finished?'Restart':'Continue'} — ${esc(chapterName(recent))}</button>`:''}
++    </div>
++  </section>`;
+ 
+-  let h=`<div class="eyebrow">${esc(termName())}</div>`;
+-  h+=fresh
+-    ?`<h1>Choose a subject to begin</h1>
+-      <p class="page-sub">${total} questions, transcribed from the printed banks. Start anywhere — every chapter remembers where you stopped.</p>`
+-    :`<h1>Where you stand</h1>
+-      <p class="page-sub">${total} questions loaded. Work through them by chapter, by module, or build a custom set.</p>`;
++  h+=`<section class="home-subjects"><h2>Subjects</h2><div class="home-subject-list">`;
++  subjects.forEach(m=>{
++    const qs=qsInModule(m.id), answered=qs.filter(q=>isAnswered(q.id)).length;
++    const pct=qs.length?Math.round(answered/qs.length*100):0;
++    const chapters=m.groups.reduce((n,g)=>n+g.chapters.length,0);
++    const detail=isLocked(m.id)?`${chapters} chapters on the syllabus. Coming soon.`:`${answered}/${qs.length} answered · ${pct}% complete`;
++    const row=`<span class="home-subject-name">${esc(m.name)}</span><span class="home-subject-detail">${detail}</span>`+
++      `<span class="home-subject-progress" aria-hidden="true"><i style="width:${pct}%"></i></span>`;
++    h+=isLocked(m.id)
++      ?`<div class="home-subject-row is-locked" aria-disabled="true">${row}</div>`
++      :`<button class="home-subject-row" onclick="go({name:'module',id:'${m.id}'})">${row}<span class="home-subject-action">${m===recentModule?'Continue':'Browse'}</span></button>`;
++  });
++  h+=`</div></section>`;
+ 
++  if(hasSavedMock())h+=`<p class="home-kept-control"><button class="btn sec" onclick="offerMockResume()">Open saved mock exam</button></p>`;
+   if(!fresh){
+-    h+=`<div class="grid g4" style="margin-bottom:30px">
++    h+=`<section class="home-kept"><div class="grid g4" style="margin-bottom:30px">
+     <div class="stat"><span class="emo">${ico('stylus',20)}</span><div class="n">${done}<span style="font-size:15px;color:var(--ink-4)">/${total}</span></div><div class="l">Answered</div></div>
+     <div class="stat"><span class="emo">${ico('target',20)}</span><div class="n" style="color:${accColor(acc)}">${acc===null?'—':acc+'%'}</div><div class="l">Accuracy</div></div>
+     <div class="stat"><span class="emo">${ico('hourglass',20)}</span><div class="n" style="color:${due?'var(--ent)':'var(--ok)'}">${due}</div><div class="l">Due for review</div></div>
+     <div class="stat"><span class="emo">${ico('laurel',20)}</span><div class="n">${QUESTIONS.filter(q=>S.flags[q.id]).length}</div><div class="l">Flagged</div></div>
+-  </div>`;
+-  }
+-
+-  /* openModules(), not MODULES: a student who practised a subject before it was
+-     locked still has its place saved, and offering to continue it would open a
+-     chapter with nothing in it. The pointer is kept, just not offered. */
+-  const recent=Object.keys(S.resumeByChapter||{}).filter(cid=>
+-    openModules().some(m=>m.groups.some(g=>g.chapters.some(c=>c[0]===cid)))
+-  ).sort((a,b)=>S.resumeByChapter[b].at-S.resumeByChapter[a].at)[0];
+-  if(recent){
+-    const r=S.resumeByChapter[recent];
+-    h+=`<div class="filterbar"><button class="btn go" onclick="startChapter('${recent}')">${r.finished?'Restart':'Continue'} &mdash; ${esc(chapterName(recent))}</button></div>`;
++  </div></section>`;
+   }
+ 
+   const t=todayISO();
+@@ -237,53 +247,7 @@ function vHome(p){
+     </div>
+   </section>`;
+ 
+-  let modsHTML=`<h2>${fresh?'Subjects':'Modules'}</h2><div class="grid g3 mod-grid">`;
+-  activeModules().forEach(m=>{
+-    const qs=qsInModule(m.id);
+-    const d=qs.filter(q=>isAnswered(q.id)).length;
+-    const a=accuracy(qs);
+-    const pct=qs.length?d/qs.length*100:0;
+-    const chs=m.groups.reduce((n,g)=>n+g.chapters.length,0);
+-    /* A locked subject keeps its card and its artwork — dropping it would read
+-       as an app that only covers two subjects — but shows no counts and no
+-       progress ring, because both would be zero and a zero reads as broken. */
+-    if(isLocked(m.id)){
+-      modsHTML+=`<div class="card mod-card locked" style="--c:${m.color}" aria-disabled="true">
+-        ${(m.art||MOD_ART[m.id])?`<span class="mod-art" style="--art:url('../assets/${m.art||MOD_ART[m.id]}.jpg')"></span>`:''}
+-        <span class="soon">Coming soon</span>
+-        <div class="mod-info">
+-          <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span></div>
+-          <div class="mod-meta">${chs} chapters on the syllabus. The questions are still being transcribed.</div>
+-        </div>
+-      </div>`;
+-      return;
+-    }
+-    /* An untouched subject has no ring worth drawing. A 0% arc, a dash for
+-       accuracy and "0/1598 answered" are three separate ways of printing the
+-       same nothing, and printed three times they read as a fault rather than a
+-       beginning. The card says what to do instead, and earns its ring with the
+-       first answer. Same height either way, so the grid does not jump when one
+-       subject crosses over. */
+-    const foot=d===0
+-      ?`<div class="ringrow startrow"><span class="startgo">Start studying</span></div>`
+-      :`<div class="ringrow">${ring(pct,m.hex)}
+-          <div class="ringmeta"><div class="a" style="color:${accColor(a)}">${a===null?'—':a+'%'}</div>
+-          <div class="b">${d}/${qs.length} answered</div></div></div>`;
+-    modsHTML+=`<button class="card mod-card" style="--c:${m.color}" onclick="go({name:'module',id:'${m.id}'})">
+-      ${(m.art||MOD_ART[m.id])?`<span class="mod-art" style="--art:url('../assets/${m.art||MOD_ART[m.id]}.jpg')"></span>`:''}
+-      <div class="mod-info">
+-        <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span></div>
+-        <div class="mod-meta">${chs} chapters · ${qs.length} question${qs.length===1?'':'s'}</div>
+-        ${foot}
+-      </div>
+-    </button>`;
+-  });
+-  modsHTML+=`</div>`;
+-
+-  /* The biography sits above the subjects on every run. A first run once led
+-     with the subjects and kept it as a closing note, which buried the card the
+-     app is named after at the foot of the page. */
+-  h+=todayHTML+heroHTML+modsHTML;
++  h+=`<section class="home-kept">${todayHTML}${heroHTML}</section>`;
+   p.innerHTML=h;
+ }
+ 
