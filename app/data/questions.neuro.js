@@ -5136,7 +5136,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-228', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-228', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'A 30-year-old secretary presents with bilateral leg weakness and D blurred vision. Fundoscopy reveals pale optic discs bilaterally. Most probable diagnosis is:',
   options:['multiple sclerosis', 'Syringomyelia', 'Motor neuron disease', 'bilateral stroke'],
   answer:0,
@@ -5146,7 +5146,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-229', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-229', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'A 28- year- old man presents with sudden blurring of the left eye. Aweek earlier he had noted progressive clumsiness of the right hand. Few months\' earlier he had had an episode of left leg stiffness that resolved spontaneously. Most probable diagnosis is:',
   options:['Multiple sclerosis', 'Motor neurone disease', 'Meningitis', 'Guillain-Barre syndrome'],
   answer:0,
@@ -5156,7 +5156,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-230', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-230', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'Which of the following findings can be found in the CSF of a MS patient?',
   options:['Increased IgG index', 'Decreased white blood cell count', 'Oligoclonal bands absent', 'Normal protein concentration'],
   answer:0,
@@ -5166,7 +5166,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-231', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-231', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'Which of the following is commonly used as a prophylactic treatment for multiple sclerosis (MS)?',
   options:['Alpha interferon', 'Beta interferon', 'Steroids', 'Methotrexate'],
   answer:1,
@@ -5176,7 +5176,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-232', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-232', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'What is the most common age range for the onset of (MS)?',
   options:['20 years', '20-40 years', '40 years', '40-60 years'],
   answer:1,
@@ -5186,7 +5186,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-233', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-233', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'What is the most common form of multiple sclerosis (MS)?',
   options:['Primary progressive', 'Relapsing-remitting', 'Secondary progressive', 'Regressive'],
   answer:1,
@@ -5196,7 +5196,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-234', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-234', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'What is the investigation of choice for diagnosing multiple sclerosis?',
   options:['MRI', 'VEP (Visual Evoked Potential)', 'CSF (Cerebrospinal Fluid) analysis', 'CT (Computed Tomography)'],
   answer:0,
@@ -5206,7 +5206,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-235', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-235', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'Which of the following neurological diseases are characterized by a pattern of relapse and remission?',
   options:['Multiple sclerosis (MS) and vasculitis', 'Parkinson\'s disease and Alzheimer\'s disease', 'Epilepsy and Huntington\'s disease', 'Amyotrophic lateral sclerosis (ALS) and Guillain-Barr\u00e9 syndrome', 'Meningitis and encephalitis'],
   answer:0,
@@ -5216,7 +5216,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-236', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-236', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'what term is given when there\'s a complain of electrical sensation in spine that develop upon head flexion?',
   options:['Kering sign', 'Gower sign', 'Brudzinski sign', 'Lhermitte\'s sign.'],
   answer:3,
@@ -5226,7 +5226,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-237', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-237', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'A 32-year-old female patient presents with paresthesia of the left upper and lower limbs that started yesterday. She has a past history of diplopia lasting 6 days one year ago and optic neuritis 4 years ago. What is the most important investigation to perform?',
   options:['MRI of the brain and spinal cord', 'Nerve conduction velocity study', 'Lumbar puncture for CSF analysis', 'Visual evoked potentials (VEP)'],
   answer:0,
@@ -5236,7 +5236,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-238', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-238', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'All the following could be clinical presentation of multiple sclerosis EXCEPT:',
   options:['Hemiplegia', 'Ataxia', 'Hemihypothesia', 'Aphasia'],
   answer:3,
@@ -5246,7 +5246,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-239', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-239', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'Which of the following is the best treatment for acute exacerbations of MS?',
   options:['IV methylprednisolone', 'IV thrombolytic drug', 'Oral Mestinon', 'SC interferon'],
   answer:0,
@@ -5256,7 +5256,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-240', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-240', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'Which of the following is required for the diagnosis of relapsing-remitting multiple sclerosis according to the McDonald criteria?',
   options:['At least two attacks, separated by one month, with evidence of dissemination in space (DIS) and time (DIT)', 'One attack with dissemination in space', 'Evidence of two separate CNS lesions on MRI alone', 'One attack with a positive CSF and VEP findings'],
   answer:0,
@@ -5266,7 +5266,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-241', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-241', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'Which of the following findings on MRI is indicative of active disease in multiple sclerosis?',
   options:['Hypointense lesions on T2-weighted images', 'Gadolinium-enhanced lesions on T1-weighted images', 'Enlarged ventricles without lesions', 'Lesions in the gray matter'],
   answer:1,
@@ -5276,7 +5276,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-242', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-242', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'Which of the following is the most common location for MS plaques to be found on MRI?',
   options:['Gray matter of the brain', 'Periventricular white matter', 'Brainstem and cerebellum', 'Temporal lobes', 'Subcortical regions of the brain'],
   answer:1,
@@ -5286,7 +5286,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-243', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-243', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'What is the role of cerebrospinal fluid (CSF) analysis in the diagnosis of MS?',
   options:['It is the primary diagnostic tool for MS', 'It is used to detect the presence of oligoclonal bands', 'It is used to rule out infectious causes of symptoms', 'It helps differentiate MS from neurodegenerative diseases', 'It provides definitive evidence of the type of MS (relapsing vs. progressive)'],
   answer:1,
@@ -5296,7 +5296,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-244', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-244', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'Which form of multiple sclerosis typically follows the initial relapsing-remitting course and eventually leads to a steady progression without relapses?',
   options:['Secondary Progressive MS', 'Relapsing-Remitting Multiple Sclerosis', 'Progressive-Relapsing MS', 'Primary Progressive Multiple Sclerosis'],
   answer:0,
@@ -5306,7 +5306,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-245', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-245', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'Which of the following is a distinguishing feature of Progressive-Relapsing MS compared to Relapsing-Remitting MS?',
   options:['Steady worsening of symptoms from the onset', 'periods of complete remission', 'Absence of relapses', 'Progressive disease with incomplete remissions and occasional relapses'],
   answer:3,
@@ -5316,7 +5316,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-246', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-246', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'What is the most common presenting manifestation in MS?',
   options:['Motor manifestations', 'Optic neuritis', 'Sensory symptoms', 'Brainstem manifestations'],
   answer:2,
@@ -5326,7 +5326,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-247', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-247', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'Which of the following symptoms can temporarily worsen with increased body temperature in multiple sclerosis patients?',
   options:['Optic neuritis', 'Fatigue', 'Sensory symptoms', 'Cognitive symptoms'],
   answer:2,
@@ -5336,7 +5336,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-248', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-248', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'Which of the following is the most common cause of diplopia in (MS)?',
   options:['Optic neuritis', 'Nystagmus', 'Internuclear ophthalmoplegia'],
   answer:2,
@@ -5346,7 +5346,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-249', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-249', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'Which of the following paroxysmal symptoms is characterized by an electrical or tingling sensation triggered by neck flexion?',
   options:['Trigeminal neuralgia', 'Lhermitte\'s sign', 'Painful tonic spasms'],
   answer:1,
@@ -5356,7 +5356,7 @@ var Q_NEURO = [
 },
 
 {
-  id:'npqb-nr-250', bank:'gradegain', module:'neuropsych', chapter:'nr-demyelinating',
+  id:'npqb-nr-250', bank:'gradegain', module:'neuropsych', chapter:'nr-ms',
   stem:'A 36-year-old male patient with a long history of relapsing-remitting multiple sclerosis, develops double vision. On examination of his eye movements abduction of either eye elicits nystagmus in that eye. Adduction is impaired in both eyes. On MRI scanning. Where will a new white matter lesion probably evident?',
   options:['Cerebellum', 'Cingulate gyrus', 'Medial longitudinal bundle', 'Optic chiasma', 'Parietal lobes'],
   answer:2,

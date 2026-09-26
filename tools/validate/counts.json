@@ -1,0 +1,18 @@
+{
+  "questions.ent.js": 2240,
+  "questions.peds.js": 393,
+  "questions.peds.ep.js": 704,
+  "questions.peds.ep2.js": 630,
+  "questions.ophtho.js": 1273,
+  "questions.ophtho.ep.js": 433,
+  "questions.ophtho.ep2.js": 147,
+  "questions.neuro.js": 1047,
+  "cases.ent.js": 82,
+  "cases.peds.js": 0,
+  "cases.ophtho.js": 0,
+  "cases.neuro.js": 7,
+  "theory.ent.js": 30,
+  "theory.peds.js": 51,
+  "theory.ophtho.js": 36,
+  "theory.neuro.js": 36
+}
