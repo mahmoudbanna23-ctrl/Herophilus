@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Desk3D step 1 — test render</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#120c0a}
+  #scene{position:fixed;inset:0;width:100%;height:100%;display:block}
+  /* the label layer never swallows canvas clicks; only the labels themselves take pointer input */
+  #ui{position:fixed;inset:0;z-index:20;pointer-events:none;overflow:hidden}
+  /* every readable word is live HTML text, placed each frame on a projected 3D anchor */
+  .lbl{position:absolute;left:0;top:0;margin:0;padding:4px 6px;border:0;background:transparent;
+       pointer-events:auto;cursor:pointer;font:700 16px/1.15 Georgia,"Times New Roman",serif;
+       text-align:center;hyphens:none;white-space:nowrap;transform-origin:50% 50%;
+       will-change:transform;-webkit-tap-highlight-color:transparent;
+       transition:opacity 150ms ease-out,visibility 0s}
+  .lbl[hidden]{display:none}
+  /* a label fades (never pops): facing away, leaving the frame, or 150 ms before a nearer book reaches it */
+  .lbl.gone{opacity:0;visibility:hidden;pointer-events:none;transition:opacity 150ms ease-out,visibility 0s linear 150ms}
+  @media (prefers-reduced-motion:reduce){ .lbl,.lbl.gone{transition:none} }
+  .lbl:focus{outline:none}
+  .lbl:focus-visible{outline:3px solid #f1d37a;outline-offset:2px;border-radius:6px}
+  /* a dark tooled title plate on the cover: gold on it measures >= 4.5:1 over any cover or desk pixel */
+  .lbl.title{color:#ecc96a;letter-spacing:.02em;background:rgba(20,12,8,.74);border-radius:4px;
+       box-shadow:inset 0 0 0 1px rgba(236,201,106,.35);text-shadow:0 1px 0 rgba(0,0,0,.55)}
+  .lbl.page{color:#4a3417;text-shadow:0 1px 0 rgba(255,250,235,.5)}
+  /* Mocks rides the sheet's top edge, where the desk and the gilt arc can sit under its text:
+     a paper slip behind it keeps it readable on any ground */
+  #mocksBtn{background:rgba(243,233,208,.95);border-radius:2px}
+  @media (max-width:560px){ .lbl.page{font-size:15px} }
+  #backBtn{position:fixed;left:16px;bottom:16px;z-index:30;
+       background:#2a1a10;color:#eadfc4;border:1.5px solid #d4af37;border-radius:8px;
+       padding:10px 18px;font:700 16px Georgia,serif;cursor:pointer}
+  #backBtn[hidden]{display:none}
+  #backBtn:focus{outline:none}
+  #backBtn:focus-visible{outline:3px solid #f1d37a;outline-offset:2px}
+</style>
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div id="ui">
+    <!-- book title buttons are created by app.js (one per subject), before these three -->
+    <button id="lectBtn" class="lbl page gone">Lectures</button>
+    <button id="questBtn" class="lbl page gone">Questions</button>
+    <button id="mocksBtn" class="lbl page gone">Mocks</button>
+  </div>
+  <button id="backBtn" hidden>Back</button>
+  <script src="vendor/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
