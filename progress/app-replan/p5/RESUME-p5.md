@@ -1,20 +1,23 @@
 # P5 resume — state at 2026-09-26 (end of session block)
 
-## Lane A — spike (uncommitted, `scene-pilot/spike/`)
-- Opus refuter round 2 FAILED it. 17 items are listed in `p5/REFUTE-spike-round2.md`.
-- Codex fix dispatch #2 (`p5/spike-fix-brief.md`) exited 0 and claims GLB self-check `51 passed`.
-  It also **silently replaced `a-three.html` with a redirect to `b-min.html`**, which removes
-  variant A. That counts as the 2nd failed Codex dispatch.
-- **NEXT:**
-  1. lean-drafter, prompt opening `ROUTE-OK: two Codex dispatches failed on the spike`, rebuilds
-     variant A from the brief, covering refuter items 5, 6 and 9-13 (git has no copy: spike never
-     committed).
-  2. The same agent runs `measure.mjs` outside the sandbox. Its `--user-data-dir` must not contain
-     `--`.
-  3. An Opus refuter reviews the result.
-  4. Commit the spike.
-  5. The owner picks A (three r147, 711 KB) or B (hand-written renderer, 5 KB).
-- Codex's report and GLB self-check are unverified by Claude.
+## Lane A — spike: CLOSED 2026-09-26, OWNER PICKED B (hand-written renderer)
+- Four lean-drafter fix rounds, each checked by an Opus refuter (`p5/REFUTE-spike-round{3,4,5,6}.md`).
+  Round 6 passes the code. Commits: `df4b83b`, `2db6f25`, `0630d58`, `4b64c454`.
+- Final numbers (refuter round 6, `spike-measure.md` Round 6):
+  - B: 14,424 B code, 192,423 B http, heap ~1 MB.
+  - A: 719,908 B code, 898,309 B http.
+- Budget unit: 900,000 B decimal (owner, 2026-09-26).
+- B plays the full rig (every channel down the GLB node tree, world × IBM) and falls back to 2D on
+  any load failure.
+- `make-glb.js` derives its IBMs from node TRS; self-check `82 passed`, confirmed by the refuter's
+  own matrix check.
+- P5 build notes:
+  - The placeholder model leaves a gap between body top (y=0.55) and cap (y=0.94). That is a
+    geometry issue; the real glb comes from Meshy.
+  - Lit materials in B must be hand-written.
+  - `app/vendor/` is NOT needed (the owner picked B).
+- Scratch probes live in the session scratchpad, not `spike/`. The three old probe files
+  (`verify-round4.mjs`, `probe-sweep.mjs`, `_pngdiff.mjs`) are gone from `spike/`.
 
 ## Lane A — master plate v2
 - Three candidates are in `scene-pilot/plates/master-v2-{a,b,c}.png`, sent to the owner.
