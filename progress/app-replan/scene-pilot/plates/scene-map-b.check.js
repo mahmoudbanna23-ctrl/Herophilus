@@ -97,45 +97,69 @@ for (const [name, v] of Object.entries(SCENE_MAP.books)) {
 }
 
 // 6. slots don't overlap each other or books/lamp/bowl/scroll/extraBook/window
-//    (null / owner-pending slots are skipped, reported separately below)
+//    (null / owner-pending slots are skipped, reported separately below). tablet/pile sit
+//    ON openScroll by owner ruling 2026-09-26, so openScroll is excluded from THEIR blocker
+//    list only — letters still must not touch openScroll.
 const slotNames = Object.keys(boxes).filter((n) => n.startsWith('slot.'));
 const blockerNames = ['lamp', 'bowl', 'openScroll', 'scrollBundle', 'extraBook', 'window',
   'book.terracotta', 'book.sage', 'book.violet', 'book.blue'];
+const onScrollSlots = ['slot.tablet', 'slot.pile'];
 
 for (let i = 0; i < slotNames.length; i++) {
   for (let j = i + 1; j < slotNames.length; j++) {
     ok(!overlaps(boxes[slotNames[i]], boxes[slotNames[j]]),
       `${slotNames[i]} overlaps ${slotNames[j]}`);
   }
-  for (const bn of blockerNames) {
+  const blockers = onScrollSlots.includes(slotNames[i])
+    ? blockerNames.filter((bn) => bn !== 'openScroll')
+    : blockerNames;
+  for (const bn of blockers) {
     ok(!overlaps(boxes[slotNames[i]], boxes[bn]),
       `${slotNames[i]} overlaps ${bn}`);
   }
 }
 
-console.log(`${pass} passed`);
+// 6b. tablet and pile sit INSIDE openScroll (owner ruling 2026-09-26)
+for (const name of onScrollSlots) {
+  if (!boxes[name]) continue; // still pending, skip
+  ok(inside(boxes[name], SCENE_MAP.openScroll.box),
+    `${name} [${boxes[name]}] not inside openScroll [${SCENE_MAP.openScroll.box}]`);
+}
 
 // 7. PENDING slots reported, never counted as passes
 for (const p of pending) {
   console.log(`${p}: PENDING — owner has not picked a box yet (see scene-map-b.js comment)`);
 }
 
-// 8. bookCluster.w vs the DERIVED portrait crop width, and vs the plan's 400px rule —
-//    computed FAIL/flag, not an assert; neither line affects the exit code.
-//    cropW is derived here from portraitCrop.viewport + plate.h, never typed into the data
-//    file (round-2 finding: it was a literal there before).
+// 8. portrait crop shifted onto the books (owner ruling 2026-09-26): x0 = bookCluster's
+//    left edge (portraitCrop.x0, a derived getter — not typed in); cropW derived here from
+//    portraitCrop.viewport + plate.h, same as before. Assert every book box lies inside
+//    [x0, x0+cropW]; report the lamp's clipped width (crop falls short of the lamp's right
+//    edge) as an info line, and the plan's 400px bookCluster rule separately — neither info
+//    line affects the exit code.
 {
   const { w: vw, h: vh } = SCENE_MAP.portraitCrop.viewport;
   const scale = Math.max(vw / P.w, vh / P.h);
   const cropW = vw / scale;
-  const clusterW = SCENE_MAP.bookCluster.box[2];
-  const overflow = clusterW - cropW;
-  if (clusterW > cropW) {
-    console.log(`PORTRAIT: cluster ${clusterW} > crop ${cropW.toFixed(1)} — OWNER-PENDING (overflow ${overflow.toFixed(1)})`);
-  } else {
-    console.log(`PORTRAIT: cluster ${clusterW} fits crop ${cropW.toFixed(1)}`);
+  const x0 = SCENE_MAP.portraitCrop.x0;
+  const cropRight = x0 + cropW;
+
+  for (const [name, v] of Object.entries(SCENE_MAP.books)) {
+    const [bx, , bw] = v.box;
+    ok(bx >= x0 && bx + bw <= cropRight,
+      `book.${name} [${v.box}] not inside portrait crop [${x0.toFixed(1)},${cropRight.toFixed(1)}]`);
   }
+
+  console.log(`PORTRAIT: crop [${x0.toFixed(1)}, ${cropRight.toFixed(1)}] (w ${cropW.toFixed(1)}) — ${SCENE_MAP.portraitCrop.decision}`);
+
+  const lampRight = SCENE_MAP.lamp.box[0] + SCENE_MAP.lamp.box[2];
+  const lampClip = lampRight - cropRight;
+  if (lampClip > 0) {
+    console.log(`LAMP: crop clips ~${lampClip.toFixed(1)}px of the lamp handle (info only)`);
+  }
+
   const limit = SCENE_MAP.bookCluster.widthLimit;
+  const clusterW = SCENE_MAP.bookCluster.box[2];
   if (limit != null && clusterW > limit) {
     console.log(`WIDTH: bookCluster ${clusterW} exceeds plan's ${limit}px rule (info only)`);
   }
@@ -151,6 +175,8 @@ if (SCENE_MAP.deskFrontEdgeY != null) {
 } else {
   console.log('SKIPPED: letters-vs-desk-edge check — scene-map-b.js records no deskFrontEdgeY field (only a y≈620 comment)');
 }
+
+console.log(`${pass} passed`);
 
 if (fails.length) {
   console.error(`${fails.length} FAILED:`);

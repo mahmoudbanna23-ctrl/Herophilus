@@ -16,7 +16,13 @@
    ROUND 2 (2026-09-26) — REFUTE-scenemap-b-round2.md: boxes all passed; openScroll nudged
    per its crop-read advisory; portraitCropW/sourceWidth/cluster/overflow were typed-in
    literals instead of being derived from data — removed, now computed in
-   scene-map-b.check.js from portraitCrop.viewport and plate.h / bookCluster.box. */
+   scene-map-b.check.js from portraitCrop.viewport and plate.h / bookCluster.box.
+
+   OWNER RULINGS 2026-09-26 (round 3, no new measuring):
+   (1) tablet and pile sit ON openScroll, not free desk — both slots below now hold real
+       boxes instead of null/PENDING.
+   (2) the portrait crop shifts onto the books — portraitCrop.x0 replaces the old
+       centred x=1073, derived from bookCluster.box[0] rather than typed in. */
 var SCENE_MAP = {
   plate: { w: 1916, h: 821 },
 
@@ -75,35 +81,36 @@ var SCENE_MAP = {
   // measured front edge y≈620), not the desk top — each had only 20-30px of real desk top,
   // the rest on the vertical face. Only one free desk-top zone was found, ~160x90, left of
   // the open scroll's left roll (desk top runs y430..620, left edge diagonal x≈752@y420,
-  // 636@y520, 529@y610). letters fits there. tablet and pile do NOT fit free desk top at
-  // their planned sizes — OWNER-PENDING, left null. Options, both cropped and confirmed
-  // free wood by the refuter:
-  //   (a) shrink to fit the free strips: tablet -> [870,556,170,60] (~60-70px deep strip
-  //       between the scroll and the front edge); pile -> [1360,574,200,44] (under the
-  //       right roll, only ~44px deep there).
-  //   (b) sit tablet/pile on the open scroll's parchment instead of free desk.
-  // Next job / owner decides; do not guess a box here.
+  // 636@y520, 529@y610). letters fits there.
+  //
+  // OWNER RULING 2026-09-26: tablet and pile sit ON openScroll [932,458,522,90] instead of
+  // free desk. tablet = 200x90 (owner-given size), placed flush with the scroll's left edge.
+  // pile: PLAN-living-desk-2026-09-26.md names "pile" only as a content item, no size. First
+  // pass filled the scroll's remaining 322 px; refuter round 4 found that stretched (3.6:1) and
+  // the right roll touching its top-right corner, so pile = 200x90 like the tablet, at x=1160,
+  // leaving a 28 px parchment gap between them. Lamp bottom and openScroll top are both y=458,
+  // book bottoms y=433, so neither slot can reach them.
   slots: {
     letters: { box: [642, 522, 160, 90] },
-    tablet:  null,
-    pile:    null,
+    tablet:  { box: [932, 458, 200, 90] },
+    pile:    { box: [1160, 458, 200, 90] }, // size not given in the plan — see above
   },
 
   // Cover-fit math for a 390x844 portrait viewport against this 821px-tall plate:
   // scale = max(viewport.w/plate.w, viewport.h/plate.h) = 844/821 (height-constrained).
   // Visible source width (cropW) = viewport.w / scale — DERIVED, not typed in here; computed
-  // by scene-map-b.check.js from portraitCrop.viewport and plate.h. Same for bookCluster's
-  // overflow against that cropW (cluster width comes straight from bookCluster.box[2]).
-  // ROUND 2 finding: bookCluster (409px) overflows cropW — roughly double the first pass's
-  // ~14px claim, which used the uncorrected 393px cluster. Centring the crop clips ~15px
-  // each side; x=1073 below keeps terracotta's left 7px out and loses 23px of the lamp
-  // handle. Decision (accept the clip, shift/narrow the cluster in the plate, or a
-  // taller-than-cover crop) is OWNER-PENDING — not decided here. Only the crop's own inputs
-  // (x, viewport) are stored; nothing derived is typed in.
+  // by scene-map-b.check.js from portraitCrop.viewport and plate.h.
+  //
+  // OWNER RULING 2026-09-26: shift the crop onto the books instead of centring on the
+  // (overflowing) bookCluster. x0 is the crop's left edge, DERIVED as bookCluster.box[0]
+  // via a getter (not a typed-in 1066 literal) so it tracks the box if it ever changes.
+  // At cropW≈379.4 this crop [1066, 1445.4] contains every book box (max book right edge is
+  // blue's 1281) but still clips the lamp's handle, whose right edge (1475) sits past the
+  // crop's right edge — scene-map-b.check.js reports that clip as an info line, not a fail.
   portraitCrop: {
-    x: 1073,
     viewport: { w: 390, h: 844 },
-    decision: 'OWNER-PENDING',
-    note: 'bookCluster overflows the computed portrait crop width; owner picks clip vs. shift/narrow vs. taller-than-cover crop',
+    get x0() { return SCENE_MAP.bookCluster.box[0]; },
+    decision: 'owner 2026-09-26: shift crop to books',
+    note: 'crop left edge = bookCluster left edge; every book fits, the lamp handle is clipped by design',
   },
 };
