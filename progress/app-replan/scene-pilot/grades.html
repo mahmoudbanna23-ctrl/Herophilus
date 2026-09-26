@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Living desk — time-of-day grade pilot</title>
+<style>
+  body {
+    margin: 2rem;
+    background: #1a1a1a;
+    color: #e8e8e8;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  h1 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+  .stage {
+    position: relative;
+    max-width: 1916px;
+  }
+  .stage img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .layer {
+    position: absolute;
+    pointer-events: none;
+  }
+  .ambient-multiply,
+  .ambient-screen {
+    inset: 0;
+  }
+  .ambient-multiply {
+    mix-blend-mode: multiply;
+  }
+  .ambient-screen {
+    mix-blend-mode: screen;
+  }
+  .window-tint {
+    /* left/top/width/height set from SCENE_MAP.window.box at load time */
+  }
+  fieldset {
+    margin-top: 1.5rem;
+    border: 1px solid #555;
+    padding: 0.75rem 1rem;
+    width: fit-content;
+  }
+  legend {
+    padding: 0 0.5rem;
+  }
+  fieldset label {
+    display: inline-block;
+    margin-right: 1.25rem;
+  }
+  fieldset label:last-child {
+    margin-right: 0;
+  }
+  input[type="radio"] {
+    margin-right: 0.35rem;
+  }
+</style>
+</head>
+<body>
+<h1>Living desk — time-of-day grade pilot (master-v2-b.png)</h1>
+
+<div class="stage" id="stage">
+  <img id="plate" src="plates/master-v2-b.png" width="1916" height="821"
+       alt="Living desk master plate, night scene">
+  <div class="layer ambient-multiply" id="ambientMultiply"></div>
+  <div class="layer ambient-screen" id="ambientScreen"></div>
+  <div class="layer window-tint" id="windowTint"></div>
+</div>
+
+<fieldset id="gradeChoice">
+  <legend>Time of day</legend>
+  <label><input type="radio" name="grade" value="dawn"> Dawn</label>
+  <label><input type="radio" name="grade" value="day"> Day</label>
+  <label><input type="radio" name="grade" value="dusk"> Dusk</label>
+  <label><input type="radio" name="grade" value="night"> Night</label>
+</fieldset>
+
+<script src="plates/scene-map-b.js"></script>
+<script src="grades.js"></script>
+<script>
+(function () {
+  var plate = SCENE_MAP.plate;
+  var win = SCENE_MAP.window.box; // [x, y, w, h] in plate px
+
+  var windowTint = document.getElementById('windowTint');
+  windowTint.style.left = (win[0] / plate.w * 100) + '%';
+  windowTint.style.top = (win[1] / plate.h * 100) + '%';
+  windowTint.style.width = (win[2] / plate.w * 100) + '%';
+  windowTint.style.height = (win[3] / plate.h * 100) + '%';
+
+  var ambientMultiply = document.getElementById('ambientMultiply');
+  var ambientScreen = document.getElementById('ambientScreen');
+  var stage = document.getElementById('stage');
+
+  function applyGrade(name) {
+    var g = SCENE_GRADES[name];
+    if (!g) return;
+    ambientMultiply.style.backgroundColor = g.ambient.multiply;
+    ambientScreen.style.backgroundColor = g.ambient.screen;
+    windowTint.style.backgroundColor = g.window.color;
+    windowTint.style.mixBlendMode = g.window.blend;
+    windowTint.style.opacity = String(g.window.opacity);
+    // lamp is DATA ONLY in this pilot — no flame/glow is drawn. Exposed as an
+    // attribute so the value is inspectable while judging screenshots.
+    stage.setAttribute('data-lamp', String(g.lamp));
+  }
+
+  var radios = document.querySelectorAll('input[name="grade"]');
+  for (var i = 0; i < radios.length; i++) {
+    radios[i].addEventListener('change', function (e) {
+      if (e.target.checked) {
+        applyGrade(e.target.value);
+        location.hash = e.target.value;
+      }
+    });
+  }
+
+  var initial = (location.hash || '').replace('#', '');
+  if (!SCENE_GRADES[initial]) initial = 'night';
+  var initialRadio = document.querySelector('input[name="grade"][value="' + initial + '"]');
+  if (initialRadio) initialRadio.checked = true;
+  applyGrade(initial);
+})();
+</script>
+</body>
+</html>
