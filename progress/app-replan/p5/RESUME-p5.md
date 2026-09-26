@@ -25,10 +25,14 @@
   - A fails the 400 px cluster (451 px).
   - C fails the cluster (429 px) and its wick box is ~55 px off.
   - B passes all 10 checks. It has an extra closed book near the bowl, which is not a violation.
-- **Owner PICKED B (2026-09-26).** Next:
-  1. Measure `SCENE_MAP`.
-  2. Sprite layers.
-  3. B + notes committed `047f401`; a/c stay uncommitted on disk.
+- **Owner PICKED B (2026-09-26).** B + notes committed `047f401`; a/c stay uncommitted on disk.
+- `SCENE_MAP` measured, `plates/scene-map-b.js` + `.check.js` (35 passed). Refuter: round 1 FAIL
+  (9/15 boxes), round 2 FAIL (portrait typed in), round 3 PASS — `p5/REFUTE-scenemap-b{,-round2}.md`.
+  Violet w 43 = occlusion touch, confirmed. No desk-edge field; letters slot ends y=612 < edge ~619.
+- OWNER-PENDING before sprite layers: (a) tablet/pile slots null — shrink into strips
+  [870,556,170,60]/[1360,574,200,44] or sit on open scroll; (b) portrait: cluster 409 > crop 379.4
+  (overflow 29.6) — accept clip, shift crop, or narrow cluster.
+- Next: sprite layers (letters ×4, tablet ×2, pile, ribbon, gilt spine ×4), then dawn/day/dusk/night.
 
 ## Owner decisions owed
 - ~~Plate pick~~ B, decided 2026-09-26.

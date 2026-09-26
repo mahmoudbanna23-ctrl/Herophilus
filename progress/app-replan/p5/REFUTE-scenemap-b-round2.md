@@ -30,3 +30,16 @@ All 15 keys equal the round-1 fix values except books.violet w 43 (fix said 44) 
 
 ## Fit to commit
 Not yet. All three files need the edits above (js: computed portraitCropW + comment fixes; check.js: derive/assert the crop width; notes: violet 43 + stale paragraph). No box needs re-measuring.
+
+## Round 3 (2026-09-26)
+
+**Verdict: PASS.** All six drafter claims hold. Three files fit to commit.
+
+- (a) PASS. scene-map-b.js stores portraitCrop as { x, viewport, decision, note } only. Grep for 379 / 29.6 / 409: no 379 or 29.6 anywhere; 409 appears only as bookCluster.box[2] (the measured box itself) and in two comments.
+- (b) PASS. check.js computes scale = max(vw/plate.w, vh/plate.h), cropW = vw/scale, overflow = bookCluster.box[2] - cropW. Real run: "35 passed", "PORTRAIT: cluster 409 > crop 379.4 ... (overflow 29.6)", exit 0. Break tests on copies in D:/tmp-scenemap-r2/brk/ (originals untouched, git status unchanged): bookCluster w 420 gives overflow 40.6; w 350 gives "fits crop 379.4"; viewport h 900 gives crop 355.8 / overflow 53.2 (390/(900/821) = 355.8, right); viewport w 500 gives "fits crop 486.4" (500/(844/821), right). Every line moves with the data.
+- (c) PASS. New 4b assert: lamp inside bookCluster; with the books-inside assert this covers every book and the lamp. Count 34 -> 35 matches. Breaks correctly: cluster w 350 -> exit 1 "lamp right edge 1475 vs cluster right edge 1416"; lamp w 250 -> exit 1 "1483 vs 1475". Residual (not claimed, not blocking): it tests containment, not equality - an oversized cluster (w 420) still passes.
+- (d) PASS. openScroll: [932, 458, 522, 90] (line 59); right edge 1454 now clears the right roll (~1452 at y458).
+- (e) PASS. Comment reads x1209..1280; header credits violet w 43 as a main-chat trim confirmed by round 2.
+- (f) PASS. Notes table: violet (1166,219,43,214), open scroll (932,458,522,90) with reason; overlap paragraph records the trim, the y220-228 corner occlusion, and the round-2 fixes. Both owner-pending decisions still named. Nit: it says "the round-1 pass found" the 1 px overlap - it was the drafter's check run after round 1. Cosmetic.
+
+**Desk-edge skip does not block.** The check prints SKIPPED, never counts it as a pass. Round 2 crop confirmed letters bottom y=612 sits above the desk front edge y~619. Adding a deskFrontEdgeY field is optional follow-up work.
