@@ -43,3 +43,5 @@
 - Desk: painted. FINAL art = `plates/painted-codex-3.png` (owner, 2026-09-25).
 - Q1: B, and neon edges are the DEFAULT (owner, 2026-09-25).
 - R1: A.
+- Home: A (owner, 2026-09-25, at P5 start). B1 subject page NOT picked yet — its own brief after P5.
+- B1 subject page: owner 2026-09-26 — RE-MOCK both after P5, against the finished living desk, then pick.

@@ -1,0 +1,3071 @@
+OpenAI Codex v0.153.2
+--------
+workdir: D:\claude os\Medical school\Herophilus
+model: gpt-5.6-terra
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: low
+reasoning summaries: none
+session id: 01a0dc9e-817f-7042-8481-aac49d42fa3c
+--------
+user
+Follow this brief exactly. Repo root is the working directory.
+# P1b — sync correctness: DESIGN ONLY (2026-09-26)
+
+Seat: Codex `gpt-5.6-terra`. Final reply begins with `AGENTS.md loaded — Herophilus`, then ≤ 6 lines.
+
+WRITE GRANT (overrides AGENTS.md read-only default for this job only): create ONE file,
+`progress/app-replan/p1/P1b-sync-design.md`. Everything else is read-only. No code change anywhere.
+
+## Goal
+A design that a later build job can implement without re-deciding anything, for the P1 sync exit
+conditions in `progress/PLAN-app-master-2026-09.md` §8 (lines ~320-332; read that span only).
+Read the app code the plan cites, at the cited lines first, then only what they call:
+`app/js/gate.js` (~139, ~221-222, ~287-290), `app/js/quiz.js` (~526-536), `app/js/sessions.js`
+(~341-348), `app/js/boot.js` (~191-284), `app/js/storage.js`. Locate before reading; never read a
+whole large file.
+
+## The design must answer, each with file:line evidence of today's behaviour
+1. Per-record clocks for `srs`, `hl`, `flags`, `conf`, `days`, `sched` (today they ride one
+   whole-state clock). Where the clock lives, how it is set on every write path, how merge uses it.
+2. Tombstones for every delete (highlights, notes, profiles, schedule marks): shape, lifetime,
+   garbage collection.
+3. Deterministic tie rule and explicit clock-skew behaviour.
+4. Stable ids for schedule items (deletes renumber array keys today).
+5. Cloud state validated the same way import is validated (reuse, not a second validator).
+6. Profile deletion also removes `wardround.bak.<profileId>` and surfaces a failed cloud delete.
+7. Profiles store the owning UID: account A's profile never uploads under B without an explicit
+   action; an unlinked profile asks before upload; sign-out offers device removal and surfaces
+   failure (`gate.js:139` swallows it today).
+8. SRI on the CDN loader.
+9. Migration: existing users' state (no per-record clocks yet) upgrades without loss; old client
+   meeting new state does not destroy it. Say which version marker you need, if any.
+10. The named acceptance cases, each as a concrete test a script or `app/smoke.html` can run:
+    real auth, blocked popup/redirect, account switch, offline restart, storage failure,
+    migration interruption, SW update; browser matrix incl. iOS Safari and Android (say which
+    cases need a real device and cannot be scripted).
+11. Build split: ordered, independently shippable steps, each with its own check.
+
+## Hard constraints (`CLAUDE.md` §2) — the design must keep every one
+Vanilla JS, no build step/bundler/npm; data files are classic scripts, not ES modules; boots from
+`file://` and offline; NEVER rename a `wardround.*` storage key; Firebase optional, `loadSDK()`
+8 s / `boot()` 15 s timeouts, app degrades to local-only; theme and Clepsydra state are device keys,
+never synced; `loadState()` rescues only a missing or unparseable live key.
+
+## Output
+`P1b-sync-design.md`, ≤ 220 lines, telegraphic, tables where they fit. End with "Open questions
+for the owner" — only real product decisions, never something the plan or code already answers.
+
+## Do not
+- Edit any file other than the one above. Commit, push, `git add`, tag.
+- Touch `app/assets/scene/`, `progress/app-replan/scene-pilot/`, `progress/app-replan/p5/`,
+  `progress/app-replan/p2/`, `app/data/`.
+- Download or install anything. Start a second job.
+
+codex
+I’ll inspect only the specified plan/code spans and the required constraints, then write the single design file.
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "Get-Content -LiteralPath 'AGENTS.md'; rg -n -C 3 \""'^## 2|''^#|wardround|loadSDK|loadState" CLAUDE.md; $f='"'progress/PLAN-app-master-2026-09.md'; "'$lines=Get-Content -LiteralPath $f; for($i=319;$i -le 333;$i++){ if($i -le $lines.Count){ '"'{0}:{1}' -f "'$i,$lines[$i-1] } }; rg -n "" app/js/gate.js app/js/quiz.js app/js/sessions.js app/js/boot.js app/js/storage.js | Select-String -Pattern '"'"'^(app/js/(gate|quiz|sessions|boot|storage)'"\\.js):(139|221|222|287|288|289|290|526|527|528|529|530|531|532|533|534|535|536|341|342|343|344|345|346|347|348|191|192|193|194|195|196|197|198|199|200|201|202|203|204|205|206|207|208|209|210|211|212|213|214|215|216|217|218|219|220|221|222|223|224|225|226|227|228|229|230|231|232|233|234|235|236|237|238|239|240|241|242|243|244|245|246|247|248|249|250|251|252|253|254|255|256|257|258|259|260|261|262|263|264|265|266|267|268|269|270|271|272|273|274|275|276|277|278|279|280|281|282|283|284):'" in D:\claude os\Medical school\Herophilus
+ exited 1 in 177ms:
+# AGENTS.md â€” Herophilus
+
+Rules for any agent run from this directory. They bind before any prompt is read; a prompt may
+narrow them, never loosen them.
+
+1. Read-only unless the brief says otherwise. **Never write anywhere under `app\`** â€” `app\data\`
+   above all; that is the live app.
+   **App-lane exception (owner 2026-09-20):** a brief under `progress\app-replan\` may open
+   `app\css\`, `app\js\` and `app\index.html` for writing, and only the files it names under
+   "May change". `app\data\` stays closed â€” never open it, never write it. Running
+   `node tools\boot-check\*.js` and `node tools\dist-check.js` is allowed on that lane.
+2. **Never modify, rename, move or delete anything in `Semester 8\`.** Never copy a scanned page
+   off this machine. Rendered PNGs live in the session scratchpad only.
+3. **`key` is a zero-based index into `opts`, never a letter.** `null` if unreadable â€” never guess.
+4. **Verbatim means verbatim:** no corrected spelling, units, grammar or abbreviations, no reordered
+   options, even where the page is plainly wrong.
+5. **Numbers, units, doses and exponents are transcribed, never normalised.** Anything not
+   unambiguous at the given resolution goes in `note` instead of being read confidently.
+6. **A defective printed key is recorded, never disputed and never corrected.**
+7. **Figures: modality and view only.** Never interpret one, and never let a description answer
+   the question it belongs to.
+8. Where the brief lets you write, write results to disk as you go. **A partial job reported
+   honestly is a success.**
+9. **On ambiguity, stop and hand back** â€” do not decide.
+10. Output is data awaiting a human check. **Never assert that a fact is verified.**
+11. Never run git â€” except, on the app lane, read-only `git diff` and `git status`. No network beyond the model call itself.
+12. **Begin every final reply with the exact line `AGENTS.md loaded â€” Herophilus`.** The runner
+    checks for it; a reply without it is discarded.
+1:# Herophilus — project rules
+2-
+3-Medical question bank and revision app for 2nd-term Semester 8 at Alexandria University: ENT,
+4-Ophthalmology, Neuropsychiatry, Pediatrics. Built from the material in `Semester 8\`. Named for
+--
+15-
+16----
+17-
+18:## 1. Layout
+19-
+20-`app\` is the only thing that ships and `Semester 8\` is read-only (§5). The full tree — every
+21-folder and what lives in it — is `reference.md` §1; the prose inventory that stood here **MOVED
+22-2026-09-02** to `reference.md`, `## Moved from CLAUDE.md - 2026-09-02`.
+23-
+24:## 2. Code constraints
+25-
+26-Vanilla HTML/CSS/JS. **No framework, no build step, no bundler, no npm** — this is what lets the
+27-app run from `file://`, deploy by drag-and-drop, and work offline.
+--
+30-  Per-subject files use `var` so aggregators read them off `window` and degrade to empty rather
+31-  than throwing. **Load order matters**: subjects → aggregators → inline script; `fonts.js` from
+32-  `<head>` before the stylesheet.
+33:- **Never let a network call strand the boot** — `loadSDK()` 8 s timeout, `boot()` 15 s race;
+34-  Firebase is optional and the app must degrade to local-only. (Netlify was unreachable from the
+35-  user's connection; slow CDNs are a real condition.)
+36:- **Never rename the `wardround.*` storage keys** — renaming orphans every user's progress. Key
+37-  table: `reference.md` §2. Theme and Clepsydra state are **device** keys, never synced.
+38-- **⚠️ Everything that touches a bank goes through `banksOf(q)`, never `bankOf(q)`** — a miss is
+39-  silent and asymmetric (filters right, counts wrong). Grep `bankOf(` after any work there.
+--
+47-- **The Firebase config in the file is fine** — keys are public by design; security is the
+48-  Firestore rules.
+49-
+50:## 3. Source material — three tiers, very different costs
+51-
+52-**Same three tiers as workspace `CLAUDE.md` §5** — slides carry a text layer (126 of 140 extract),
+53-books and question banks are image-only scans. This project adds **16 `.pptx/.ppt`** decks, which
+--
+62-- **Cache everything you read**: transcription to `content\`, range to `progress\ledger.md`,
+63-  same pass. A page is rendered and read once, ever.
+64-
+65:## 4. Content standards
+66-
+67-- **Chapters:** a topic taught over two lectures is ONE chapter — never carry a `…1/…2` pair into
+68-  `MODULES`. `SCHEDULE` is keyed by date+title, never chapter ids — restructuring cannot break
+--
+110-  kept only as history. Written backwards from the questions; importance tests and drop-list:
+111-  `reference.md` §4.
+112-
+113:## 5. Citations and grounding
+114-
+115-- **No clinical fact without a page citation** — `<file>.pdf p.<N>`. Preserve medical
+116-  terminology exactly. All study output in English.
+--
+119-- **Never modify, rename, move, or delete anything in `Semester 8\`.** Rendered PNGs go to the
+120-  scratchpad, never the source tree.
+121-
+122:## 6. Design
+123-
+124-Dark cinematic Greek design, rebuilt from **the user's own artwork**. Full history, palettes,
+125-film/ambient rules, icon pipeline and measurements: `reference.md` §6. The standing rules:
+--
+155-  **Three `max-aspect-ratio:5/4` blocks is the correct count.** A `/*`-vs-`*/` balance scan is
+156-  a hint, never a verdict (regex literals fake it).
+157-- Sessions: **timestamps, never countdowns**; the 1 s tick repaints via `paintSessionLive()`,
+158:  never `render()`. Backups: `wardround.bak.<profileId>` snapshots; `loadState()` rescues only
+159-  a **missing or unparseable** live key, never second-guesses a clean one.
+160-
+161:## 7. Verifying a change
+162-
+163-No test framework — verification is ad-hoc but must actually run:
+164-
+--
+187-  copy it out of the scratchpad if it has been cleaned.
+188-- Real bugs worth re-testing, the list: **MOVED 2026-09-02** to `reference.md`, `## Moved from CLAUDE.md - 2026-09-02`.
+189-
+190:## 8. Delegation — the one rule (owner 2026-09-15)
+191-
+192-Supersedes `PLAN-sprint-to-17-sep.md` §4 "Never delegated", `WORKFLOW-who-does-what.md` "Never" column, `UPDATE-ophtho-2026-09-07.md` "Vision never leaves Claude".
+193-- **Claude only — judgement:** key adjudication · fold decisions · the splice · any git write · the final medical read · edits to `CLAUDE.md` / `MEMORY.md`.
+319:  applied per loading/media phase incl. P5, P6b.
+320:- **P1 exit conditions (sync correctness is a prerequisite, not capacity work â€” Â§3 "Sync: keep"
+321:  is amended to this):** a clock per independently mutable record (`srs`, `hl`, `flags`, `conf`,
+322:  `days`, `sched` today ride the whole-state clock, `gate.js:221-222`; `conf` changes without a
+323:  timestamp, `quiz.js:526-536`) + tombstones for every delete (highlights, notes, profiles,
+324:  schedule marks) + deterministic tie rule + explicit clock-skew behaviour. Schedule items get
+325:  stable ids (deletes renumber array keys, `sessions.js:341-348`). Cloud state validated like
+326:  import (`gate.js:287-290` vs `boot.js:275-284`). Profile deletion also removes
+327:  `wardround.bak.<profileId>` and surfaces a failed cloud delete. Profiles store the owning UID:
+328:  a profile linked to account A never uploads under B without an explicit action; an unlinked
+329:  profile asks before upload; sign-out offers device removal and surfaces failure (`gate.js:139`
+330:  swallows it). SRI on the CDN loader before the next release using it. Named acceptance cases:
+331:  real auth, blocked popup/redirect, account switch, offline restart, storage failure, migration
+332:  interruption, SW update; supported-browser matrix incl. iOS Safari and Android.
+333:- **P1 content:** report button copies question id + content revision + release id and opens
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command '$spans=@(@('"'app/js/gate.js',132,148),@('app/js/gate.js',214,228),@('app/js/gate.js',280,296),@('app/js/quiz.js',518,544),@('app/js/sessions.js',333,356),@('app/js/boot.js',185,286)); foreach("'$s in $spans){$p=$s[0];$a=$s[1];$b=$s[2]; "`n--- $p $a-$b ---"; $l=Get-Content -LiteralPath $p; for($i=$a;$i -le $b;$i++){ '"'{0}:{1}' -f "'$i,$l[$i-1] }}; "`n--- storage locations ---"; rg -n -i -C 2 "loadState|saveState|import|export|wardround|localStorage|setItem|removeItem|validate|profile|schedule|sched|highlights|notes" app/js/storage.js app/js/gate.js app/js/boot.js app/js/sessions.js app/js/quiz.js' in D:\claude os\Medical school\Herophilus
+ succeeded in 118ms:
+132:    }
+133:  }catch(e){if(auth===cloudAuth)setSync('err')}
+134:}
+135:async function signOutCloud(){
+136:  resetCloud();cloudAuth++;
+137:  fbUser=null;setSync('off');
+138:  me=null;closeModal();showGate();
+139:  try{if(window.firebase&&firebase.auth)await cloudWait(firebase.auth().signOut())}catch(e){}
+140:  toast('Signed out \u2014 your progress stays on this device');
+141:}
+142:
+143:function cloudWait(work){
+144:  let timer;
+145:  return Promise.race([work,new Promise((_,reject)=>{
+146:    timer=setTimeout(()=>reject(new Error('Sync timed out')),8000);
+147:  })]).finally(()=>clearTimeout(timer));
+148:}
+
+--- app/js/gate.js 214-228 ---
+214:  const ids=new Set(Object.keys(a.answers||{}).concat(Object.keys(b.answers||{})));
+215:  ids.forEach(id=>{
+216:    const x=(a.answers||{})[id], y=(b.answers||{})[id];
+217:    if(!x){out.answers[id]=y;return}
+218:    if(!y){out.answers[id]=x;return}
+219:    out.answers[id]=((x.at||0)>=(y.at||0))?x:y;
+220:  });
+221:  ['srs','hl','flags','conf','days','sched'].forEach(k=>{
+222:    out[k]=Object.assign({},older[k]||{},newer[k]||{});
+223:  });
+224:  /* Each chapter has its own clock: practising another chapter on a second
+225:     device must not discard a more recent place in this one. */
+226:  out.resumeByChapter={};
+227:  const chapters=new Set(Object.keys(a.resumeByChapter||{}).concat(Object.keys(b.resumeByChapter||{})));
+228:  chapters.forEach(cid=>{
+
+--- app/js/gate.js 280-296 ---
+280:       "the keys came back in a different order". */
+281:    const before=JSON.stringify(mergeStates(local,local));
+282:    const merged=await cloudWait(firebase.firestore().runTransaction(async tx=>{
+283:      const roster=await tx.get(root),snap=await tx.get(c.ref);
+284:      if(!live||!currentCloud(c))return null;
+285:      const data=roster.exists?roster.data():{};
+286:      let out=local;
+287:      if(snap.exists&&snap.data().state)out=mergeStates(out,JSON.parse(snap.data().state));
+288:      /* Removing the old field and adopting its contents in the same commit
+289:         makes retries and simultaneous first sign-ins adopt it only once. */
+290:      if(Object.prototype.hasOwnProperty.call(data,'state'))out=mergeStates(out,JSON.parse(data.state));
+291:      tx.set(c.ref,{state:JSON.stringify(out),updatedAt:Date.now()});
+292:      const list=rosterList(data);
+293:      if(!list.some(p=>p.id===entry.id))list.push(entry);
+294:      tx.set(root,{profiles:list});
+295:      return out;
+296:    }));
+
+--- app/js/quiz.js 518-544 ---
+518:   numbers, so the deck's own description of itself stays true.
+519:   Unsure PINS the rung instead of inheriting it. scheduleSRS has already
+520:   promoted a correct answer by the time this runs, so a question answered
+521:   right at rung 3 would otherwise go out to 60 days while the student was
+522:   telling us they did not trust it. Pinning can therefore demote, which is
+523:   the intended reading of unsure: the memory is not solid yet.
+524:   A wrong answer is deliberately NOT touched here. scheduleSRS has already
+525:   put it at rung 0, due tomorrow, and tomorrow is the floor â€” no rating can
+526:   make it come back sooner, and none should make it come back later. */
+527:function setConf(id,c){
+528:  S.conf[id]=c;
+529:  if(S.answers[id]){
+530:    S.answers[id].conf=c;
+531:    if(isCorrect(id)&&(c===0||c===1)){
+532:      const lvl=c===0?0:1;
+533:      const d=new Date();d.setDate(d.getDate()+SRS[lvl]);
+534:      S.srs[id]={lvl:lvl,due:isoLocal(d)};
+535:    }
+536:  }
+537:  save();render();
+538:  toast(c===0?'In your review deck, back tomorrow.'
+539:    :c===1?'In your review deck, back in three days.'
+540:    :'Left on the normal schedule.');
+541:}
+542:function navQ(d){
+543:  const n=Q.i+d;
+544:  if(n<0)return;
+
+--- app/js/sessions.js 333-356 ---
+333:}
+334:function delItem(di,idx){
+335:  const s=activeSchedule();
+336:  if(!s[di])return;
+337:  const date=s[di].date;
+338:  s[di].items.splice(idx,1);
+339:  /* marks are index-based, so re-key them for this day */
+340:  const keep={};
+341:  Object.keys(S.sched).forEach(k=>{
+342:    const [d,i]=k.split('|');
+343:    if(d!==date){keep[k]=S.sched[k];return}
+344:    const n=+i;
+345:    if(n===idx)return;
+346:    keep[d+'|'+(n>idx?n-1:n)]=S.sched[k];
+347:  });
+348:  S.sched=keep;
+349:  saveSchedule();
+350:}
+351:function addDay(){
+352:  const inp=$('newDate');
+353:  const v=inp&&inp.value;
+354:  if(!v){toast('Pick a date first');return}
+355:  const s=activeSchedule();
+356:  if(s.some(d=>d.date===v)){toast('That day is already in the plan');return}
+
+--- app/js/boot.js 185-286 ---
+185:  if(Q.exam){examStopTick();Q.exam=null;view={name:'home'}}
+186:  if(sess())sessStartTick(); else sessStopTick();
+187:  save(); closeModal(); render();
+188:  toast('Restored your progress from '+bakWhen(at));
+189:}
+190:
+191:function exportData(){
+192:  const blob=new Blob([JSON.stringify({v:2,saved:new Date().toISOString(),state:S},null,2)],{type:'application/json'});
+193:  const a=document.createElement('a');
+194:  a.href=URL.createObjectURL(blob);a.download=`herophilus-progress-${todayISO()}.json`;a.click();
+195:  toast('Progress downloaded');
+196:}
+197:/* Known fields are checked where their readers need a particular shape. Extra
+198:   JSON fields are retained, so adding a runtime field does not make exports lossy. */
+199:function checkedProgressState(st){
+200:  const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
+201:  const obj=v=>v!==null&&typeof v==='object'&&!Array.isArray(v);
+202:  const num=v=>typeof v==='number'&&Number.isFinite(v)&&v>=0;
+203:  const int=v=>Number.isInteger(v)&&v>=0;
+204:  const str=v=>typeof v==='string';
+205:  const bool=v=>typeof v==='boolean';
+206:  const strings=v=>Array.isArray(v)&&v.every(str);
+207:  const date=v=>str(v)&&/^\d{4}-\d{2}-\d{2}$/.test(v)&&Number.isFinite(Date.parse(v));
+208:  const optional=(o,k,test)=>!own(o,k)||test(o[k]);
+209:  const map=(v,test)=>obj(v)&&Object.keys(v).every(k=>test(v[k]));
+210:  const bad=k=>{throw new Error('Invalid progress field: '+k)};
+211:  /* JSON.parse accepts these names as data, but Object.assign and later map
+212:     writes can give them prototype behaviour. Reject them before any merge. */218:      ['__proto__','constructor','prototype'].indexOf(k)<0&&safe(v[k]));
+219:  }
+220:  if(!obj(st)||!own(st,'answers')||!safe(st))bad('state');
+221:  const rating=v=>int(v)&&v<=2;
+222:  const answer=v=>obj(v)&&bool(v.ok)&&optional(v,'at',num)&&
+223:    (own(v,'pick')||own(v,'text'))&&
+224:    optional(v,'pick',x=>x===null||int(x))&&optional(v,'text',str)&&
+225:    optional(v,'got',int)&&optional(v,'total',int)&&optional(v,'conf',rating);
+226:  const checks={
+227:    answers:v=>map(v,answer),
+228:    flags:v=>map(v,bool),
+229:    conf:v=>map(v,rating),
+230:    sched:v=>map(v,x=>x==='done'||x==='missed'),
+231:    srs:v=>map(v,x=>obj(x)&&int(x.lvl)&&x.lvl<SRS.length&&date(x.due)),
+232:    days:v=>map(v,bool),
+233:    hl:v=>map(v,x=>Array.isArray(x)&&x.every(h=>obj(h)&&int(h.s)&&int(h.e)&&
+234:      h.e>h.s&&['y','g','p','b'].indexOf(h.c)>=0)),
+235:    banks:v=>map(v,strings),
+236:    resumeByChapter:v=>map(v,x=>obj(x)&&str(x.qid)&&strings(x.sources)&&
+237:      num(x.at)&&bool(x.finished)),
+238:    notes:v=>map(v,x=>obj(x)&&str(x.txt)&&num(x.at)),
+239:    reports:v=>map(v,x=>obj(x)&&str(x.kind)&&str(x.txt)&&num(x.at))
+240:  };
+241:  const out=Object.assign({},st);
+242:  Object.keys(checks).forEach(k=>{
+243:    if(!own(out,k))out[k]={};
+244:    else if(!checks[k](out[k]))bad(k);
+245:  });
+246:  const item=x=>obj(x)&&str(x.label)&&str(x.text)&&
+247:    optional(x,'hex',v=>str(v)&&/^#[0-9a-f]{3}([0-9a-f]{3})?$/i.test(v));
+248:  const schedule=v=>v===null||(Array.isArray(v)&&v.every(d=>obj(d)&&date(d.date)&&
+249:    optional(d,'rest',bool)&&Array.isArray(d.items)&&d.items.every(item)));
+250:  const session=v=>v===null||(obj(v)&&obj(v.plan)&&
+251:    num(v.startedAt)&&num(v.phaseStart)&&num(v.pausedAt)&&bool(v.paused)&&
+252:    (v.phase==='focus'||v.phase==='break')&&int(v.cycle)&&v.cycle>0&&
+253:    num(v.plan.focus)&&v.plan.focus>0&&num(v.plan.brk)&&v.plan.brk>0&&
+254:    int(v.plan.cycles)&&v.plan.cycles>0&&str(v.scope)&&
+255:    optional(v,'term',id=>TERMS.some(t=>t.id===id))&&
+256:    optional(v,'lost',num)&&optional(v,'focusMs',num)&&optional(v,'done',bool));
+257:  const log=v=>Array.isArray(v)&&v.every(x=>obj(x)&&num(x.start)&&num(x.end)&&
+258:    int(x.cycles)&&num(x.focusMin)&&int(x.answered)&&int(x.correct)&&
+259:    str(x.scope)&&bool(x.completed)&&optional(x,'term',id=>TERMS.some(t=>t.id===id)));
+260:  const extra={term:v=>v===null||!!termChoice(v),
+261:    schedule:schedule,updatedAt:num,editSched:bool,sess:session,
+262:    sessLog:log,mockResume:validMockResume};
+263:  Object.keys(extra).forEach(k=>{if(!optional(out,k,extra[k]))bad(k)});
+264:  return out;
+265:}
+266:function importData(e){
+267:  const f=e.target.files[0];if(!f)return;
+268:  const entry=profileLoad, key=KEY, profile=me;
+269:  const r=new FileReader();
+270:  r.onload=async()=>{
+271:    if(entry!==profileLoad||key!==KEY||profile!==me)return;
+272:    let incoming;
+273:    try{
+274:      const d=JSON.parse(r.result);
+275:      if(!d||d.v!==2)throw new Error('Expected a version 2 progress export');
+276:      incoming=checkedProgressState(d.state);
+277:    }catch(err){toast('Could not import that file. '+err.message);return}
+278:    if(!window.confirm('Merge this file into the current profile? Existing progress is kept where possible; more recent entries and settings win conflicts, including the saved mock paper.'))return;
+279:    if(entry!==profileLoad||key!==KEY||profile!==me)return;
+280:    let next;
+281:    try{
+282:      const newer=(S.updatedAt||0)>=(incoming.updatedAt||0)?S:incoming;
+283:      const older=newer===S?incoming:S;
+284:      next=checkedProgressState(Object.assign({},older,newer,mergeStates(S,incoming)));
+285:    }catch(err){toast('Could not merge that progress. '+err.message);return}
+286:    S=next;
+
+--- storage locations ---
+app/js/boot.js-21-   BACKUP — automatic.
+app/js/boot.js-22-
+app/js/boot.js:23:   This replaced a pair of Export / Import buttons. The trouble with those is
+app/js/boot.js-24-   not that they did not work; it is that they only work if you remember to
+app/js/boot.js:25:   press them, and nobody presses Export the day before they need it.
+app/js/boot.js-26-
+app/js/boot.js:27:   So: a dated snapshot is kept per profile, pruned to a size the browser will
+app/js/boot.js-28-   actually hold, and restored on its own when the live state is missing or
+app/js/boot.js-29-   unreadable. Everything else is one-click from the shield in the top bar.
+--
+app/js/boot.js-39-   ============================================================================ */
+app/js/boot.js-40-let bakTimer=null, bakLast=0, bakState='ok', bakRestored=0;
+app/js/boot.js:41:const BAK_MAX_BYTES=1500000;    /* localStorage gives ~5 MB; the live state and
+app/js/boot.js:42:                                   the profile list have to fit beside this */
+app/js/boot.js-43-
+app/js/boot.js:44:function bakKey(){ return 'wardround.bak.'+((me&&me.id)||'local') }
+app/js/boot.js-45-function bakRead(){
+app/js/boot.js-46-  try{
+app/js/boot.js:47:    const o=JSON.parse(localStorage.getItem(bakKey())||'null');
+app/js/boot.js-48-    if(o&&Array.isArray(o.snaps))return o;
+app/js/boot.js-49-  }catch(e){}
+--
+app/js/boot.js-52-function bakWrite(box){
+app/js/boot.js-53-  try{
+app/js/boot.js:54:    localStorage.setItem(bakKey(),JSON.stringify(box));
+app/js/boot.js-55-    bakState='ok';
+app/js/boot.js-56-  }catch(e){
+--
+app/js/boot.js-59-    try{
+app/js/boot.js-60-      box.snaps=box.snaps.slice(0,2);
+app/js/boot.js:61:      localStorage.setItem(bakKey(),JSON.stringify(box));
+app/js/boot.js-62-      bakState='ok';
+app/js/boot.js-63-    }catch(e2){ bakState='full' }
+--
+app/js/boot.js-95-/* Debounced off save(): a burst of answers collapses into one snapshot, and
+app/js/boot.js-96-   after that at most one every four minutes. */
+app/js/boot.js:97:function bakSchedule(){
+app/js/boot.js-98-  if(bakTimer)return;
+app/js/boot.js-99-  const wait=Math.max(4000,240000-(Date.now()-bakLast));
+--
+app/js/boot.js-102-function bakNewest(){
+app/js/boot.js-103-  /* Walks the list newest-first. The previous version took only snaps[0], so a
+app/js/boot.js:104:     truncated or corrupt newest snapshot was a complete outage: loadState()
+app/js/boot.js-105-     would conclude there was nothing to rescue while five perfectly good
+app/js/boot.js-106-     snapshots sat behind the bad one. Walk past every entry that fails to
+--
+app/js/boot.js-158-     browser data — sign in if you want your progress kept off this machine.</p>
+app/js/boot.js-159-   <div class="modal-actions" style="margin-top:18px">
+app/js/boot.js:160:     <button class="btn sec" onclick="exportData()">Download a copy</button>
+app/js/boot.js:161:     <button class="btn sec" onclick="document.getElementById('importFile').click()">Restore from a file</button>
+app/js/boot.js-162-     <button class="btn go" onclick="closeModal()">Close</button>
+app/js/boot.js-163-   </div>`,true);
+--
+app/js/boot.js-182-  if(!s){toast('That snapshot is gone');return}
+app/js/boot.js-183-  let st; try{ st=checkedProgressState(JSON.parse(s.json)) }catch(e){ toast('That snapshot is unusable. Your current progress has been kept.'); return }
+app/js/boot.js:184:  S=Object.assign({answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},notes:{},reports:{}},st);
+app/js/boot.js-185-  if(Q.exam){examStopTick();Q.exam=null;view={name:'home'}}
+app/js/boot.js-186-  if(sess())sessStartTick(); else sessStopTick();
+--
+app/js/boot.js-189-}
+app/js/boot.js-190-
+app/js/boot.js:191:function exportData(){
+app/js/boot.js-192-  const blob=new Blob([JSON.stringify({v:2,saved:new Date().toISOString(),state:S},null,2)],{type:'application/json'});
+app/js/boot.js-193-  const a=document.createElement('a');
+--
+app/js/boot.js-196-}
+app/js/boot.js-197-/* Known fields are checked where their readers need a particular shape. Extra
+app/js/boot.js:198:   JSON fields are retained, so adding a runtime field does not make exports lossy. */
+app/js/boot.js-199-function checkedProgressState(st){
+app/js/boot.js-200-  const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
+--
+app/js/boot.js-228-    flags:v=>map(v,bool),
+app/js/boot.js-229-    conf:v=>map(v,rating),
+app/js/boot.js:230:    sched:v=>map(v,x=>x==='done'||x==='missed'),
+app/js/boot.js-231-    srs:v=>map(v,x=>obj(x)&&int(x.lvl)&&x.lvl<SRS.length&&date(x.due)),
+app/js/boot.js-232-    days:v=>map(v,bool),
+--
+app/js/boot.js-236-    resumeByChapter:v=>map(v,x=>obj(x)&&str(x.qid)&&strings(x.sources)&&
+app/js/boot.js-237-      num(x.at)&&bool(x.finished)),
+app/js/boot.js:238:    notes:v=>map(v,x=>obj(x)&&str(x.txt)&&num(x.at)),
+app/js/boot.js-239-    reports:v=>map(v,x=>obj(x)&&str(x.kind)&&str(x.txt)&&num(x.at))
+app/js/boot.js-240-  };
+--
+app/js/boot.js-246-  const item=x=>obj(x)&&str(x.label)&&str(x.text)&&
+app/js/boot.js-247-    optional(x,'hex',v=>str(v)&&/^#[0-9a-f]{3}([0-9a-f]{3})?$/i.test(v));
+app/js/boot.js:248:  const schedule=v=>v===null||(Array.isArray(v)&&v.every(d=>obj(d)&&date(d.date)&&
+app/js/boot.js-249-    optional(d,'rest',bool)&&Array.isArray(d.items)&&d.items.every(item)));
+app/js/boot.js-250-  const session=v=>v===null||(obj(v)&&obj(v.plan)&&
+--
+app/js/boot.js-259-    str(x.scope)&&bool(x.completed)&&optional(x,'term',id=>TERMS.some(t=>t.id===id)));
+app/js/boot.js-260-  const extra={term:v=>v===null||!!termChoice(v),
+app/js/boot.js:261:    schedule:schedule,updatedAt:num,editSched:bool,sess:session,
+app/js/boot.js-262-    sessLog:log,mockResume:validMockResume};
+app/js/boot.js-263-  Object.keys(extra).forEach(k=>{if(!optional(out,k,extra[k]))bad(k)});
+app/js/boot.js-264-  return out;
+app/js/boot.js-265-}
+app/js/boot.js:266:function importData(e){
+app/js/boot.js-267-  const f=e.target.files[0];if(!f)return;
+app/js/boot.js:268:  const entry=profileLoad, key=KEY, profile=me;
+app/js/boot.js-269-  const r=new FileReader();
+app/js/boot.js-270-  r.onload=async()=>{
+app/js/boot.js:271:    if(entry!==profileLoad||key!==KEY||profile!==me)return;
+app/js/boot.js-272-    let incoming;
+app/js/boot.js-273-    try{
+app/js/boot.js-274-      const d=JSON.parse(r.result);
+app/js/boot.js:275:      if(!d||d.v!==2)throw new Error('Expected a version 2 progress export');
+app/js/boot.js-276-      incoming=checkedProgressState(d.state);
+app/js/boot.js:277:    }catch(err){toast('Could not import that file. '+err.message);return}
+app/js/boot.js:278:    if(!window.confirm('Merge this file into the current profile? Existing progress is kept where possible; more recent entries and settings win conflicts, including the saved mock paper.'))return;
+app/js/boot.js:279:    if(entry!==profileLoad||key!==KEY||profile!==me)return;
+app/js/boot.js-280-    let next;
+app/js/boot.js-281-    try{
+--
+app/js/boot.js-286-    S=next;
+app/js/boot.js-287-    /* A running paper must reopen from the merged record, or its next tap would
+app/js/boot.js:288:       overwrite the imported paper with the quiz that was already on screen. */
+app/js/boot.js-289-    if(Q.exam){examStopTick();Q.exam=null;view={name:'home'}}
+app/js/boot.js-290-    if(sess())sessStartTick(); else sessStopTick();
+app/js/boot.js-291-    render();
+app/js/boot.js-292-    const saved=await save();
+app/js/boot.js:293:    if(entry===profileLoad&&key===KEY&&profile===me){
+app/js/boot.js-294-      toast(saved?'Progress merged':'Progress merged in memory. Download a copy before leaving.');
+app/js/boot.js-295-    }
+app/js/boot.js-296-  };
+app/js/boot.js:297:  r.onerror=()=>{if(entry===profileLoad&&key===KEY&&profile===me)toast('Could not read that file')};
+app/js/boot.js-298-  r.readAsText(f);e.target.value='';
+app/js/boot.js-299-}
+--
+app/js/boot.js-376-  clepLoadCfg();            /* where she stands is a device preference, like the theme */
+app/js/boot.js-377-  paintBakBtn();
+app/js/boot.js:378:  bootstrapProfiles();
+app/js/boot.js-379-  if(cloudEnabled()){
+app/js/boot.js-380-    showSplash('Restoring your session\u2026');
+--
+app/js/boot.js-388-    hideSplash();
+app/js/boot.js-389-    /* A restored session no longer means "straight into the app": afterSignIn()
+app/js/boot.js:390:       now hands off to gate step 2 so a profile is always chosen explicitly.
+app/js/boot.js-391-       Returning here is still right \u2014 that path has already drawn the gate. */
+app/js/boot.js-392-    if(restored)return;
+--
+app/js/sessions.js-139-}
+app/js/sessions.js-140-
+app/js/sessions.js:141:/* ============ SCHEDULE PAGE ============ */
+app/js/sessions.js:142:function vSchedule(p){
+app/js/sessions.js-143-  const t=todayISO();
+app/js/sessions.js:144:  const {rows,catchups,overflow}=buildSchedule();
+app/js/sessions.js-145-  const landing={};
+app/js/sessions.js-146-  catchups.forEach(c=>{if(c.to)(landing[c.to]=landing[c.to]||[]).push(c)});
+app/js/sessions.js:147:  const ed=!!S.editSched;
+app/js/sessions.js-148-
+app/js/sessions.js-149-  const empty=!rows.length;
+app/js/sessions.js-150-
+app/js/sessions.js:151:  let h=`<div class="eyebrow" style="background:var(--peds)">Your plan</div><h1>${ico('tablet',26)} Study schedule</h1>
+app/js/sessions.js-152-  <p class="page-sub">${empty
+app/js/sessions.js:153:      ? 'This is yours to write. Add the days you are studying and what each one is for; the plan is stored with your profile and nobody else sees it.'
+app/js/sessions.js-154-      : 'Every subject has its own <b>&#10003; done</b> and <b>&#10007; missed</b> buttons. Missed work moves to a catch-up slot on a free day; nothing else shifts.'}</p>`;
+app/js/sessions.js-155-
+--
+app/js/sessions.js-159-    h+=`<div class="empty"><div class="big">${ico('tablet',46)}</div><h3>No days yet</h3>
+app/js/sessions.js-160-     <p>Build the plan a day at a time &mdash; a date, then what you mean to study on it. A day you leave without a subject becomes a catch-up slot for anything you miss.</p>
+app/js/sessions.js:161:     <div style="margin-top:20px"><button class="btn go" onclick="S.editSched=true;save();render()">${ico('stylus',15)} Start your plan</button></div></div>`;
+app/js/sessions.js-162-    p.innerHTML=h;
+app/js/sessions.js-163-    return;
+--
+app/js/sessions.js-165-
+app/js/sessions.js-166-  h+=`<div class="edbar">
+app/js/sessions.js:167:    <button class="btn ${ed?'':'sec'}" onclick="S.editSched=!S.editSched;save();render()">${ed?'\u2713 Done editing':`${ico('stylus',14)} Edit schedule`}</button>
+app/js/sessions.js:168:    ${ed&&rows.length?`<button class="ed-t danger" onclick="resetSchedule()">Clear the whole plan</button>`:''}
+app/js/sessions.js-169-  </div>`;
+app/js/sessions.js-170-
+app/js/sessions.js-171-  if(!ed){
+app/js/sessions.js:172:    h+=`<div class="sched-legend">
+app/js/sessions.js-173-      <span class="leg"><span class="sw" style="background:var(--neuro)"></span>Today</span>
+app/js/sessions.js-174-      <span class="leg"><span class="sw" style="background:var(--bad)"></span>Missed</span>
+--
+app/js/sessions.js-189-  rows.forEach((d,di)=>{
+app/js/sessions.js-190-    const isToday=d.date===t;
+app/js/sessions.js:191:    const marks=d.items.map(it=>S.sched[d.date+'|'+it.idx]);
+app/js/sessions.js-192-    const allDone=d.items.length&&marks.every(m=>m==='done');
+app/js/sessions.js-193-    const anyMissed=marks.some(m=>m==='missed');
+--
+app/js/sessions.js-225-      }
+app/js/sessions.js-226-      d.items.forEach(it=>{
+app/js/sessions.js:227:        h+=trackRow(d.date,it.idx,it.label,it.hex,it.text,S.sched[d.date+'|'+it.idx]);
+app/js/sessions.js-228-      });
+app/js/sessions.js-229-      landed.forEach(c=>{
+--
+app/js/sessions.js-266-function setMark(date,idx,mark){
+app/js/sessions.js-267-  const k=date+'|'+idx;
+app/js/sessions.js:268:  if(S.sched[k]===mark)delete S.sched[k]; else S.sched[k]=mark;
+app/js/sessions.js-269-  markDayActive();save();render();
+app/js/sessions.js:270:  if(S.sched[k]==='missed'){
+app/js/sessions.js:271:    const {overflow}=buildSchedule();
+app/js/sessions.js-272-    toast(overflow>0?`Queued for catch-up \u2014 ${overflow} with no slot left`:'Queued for catch-up');
+app/js/sessions.js:273:  }else if(S.sched[k]==='done')toast('Marked done');
+app/js/sessions.js-274-  else toast('Cleared');
+app/js/sessions.js-275-}
+app/js/sessions.js-276-
+app/js/sessions.js-277-/* Rebuild the plan. Content from missed days flows forward into later study days. */
+app/js/sessions.js:278:function buildSchedule(){
+app/js/sessions.js:279:  const rows=activeSchedule().map(d=>({
+app/js/sessions.js-280-    date:d.date,rest:!!d.rest,
+app/js/sessions.js-281-    items:(d.items||[]).map((it,i)=>({label:it.label,text:it.text,hex:it.hex||'#7a6a55',idx:i}))
+--
+app/js/sessions.js-285-    if(r.rest)return;
+app/js/sessions.js-286-    r.items.forEach(it=>{
+app/js/sessions.js:287:      if(S.sched[r.date+'|'+it.idx]==='missed')
+app/js/sessions.js-288-        missed.push({date:r.date,idx:it.idx,text:it.text,label:it.label,hex:it.hex});
+app/js/sessions.js-289-    });
+--
+app/js/sessions.js-310-
+app/js/sessions.js-311-
+app/js/sessions.js:312:/* ============ SCHEDULE EDITOR ============ */
+app/js/sessions.js-313-function editItem(di,idx,field,val){
+app/js/sessions.js:314:  const s=activeSchedule();
+app/js/sessions.js-315-  if(!s[di]||!s[di].items[idx])return;
+app/js/sessions.js-316-  s[di].items[idx][field]=val;
+--
+app/js/sessions.js-318-}
+app/js/sessions.js-319-function cycleColour(di,idx){
+app/js/sessions.js:320:  const s=activeSchedule();
+app/js/sessions.js-321-  const it=s[di]&&s[di].items[idx];
+app/js/sessions.js-322-  if(!it)return;
+app/js/sessions.js-323-  const cur=SUBJ_COLOURS.findIndex(c=>c[0].toLowerCase()===String(it.hex).toLowerCase());
+app/js/sessions.js-324-  it.hex=SUBJ_COLOURS[(cur+1)%SUBJ_COLOURS.length][0];
+app/js/sessions.js:325:  saveSchedule();
+app/js/sessions.js-326-}
+app/js/sessions.js-327-function addItem(di){
+app/js/sessions.js:328:  const s=activeSchedule();
+app/js/sessions.js-329-  if(!s[di])return;
+app/js/sessions.js-330-  s[di].rest=false;
+app/js/sessions.js-331-  s[di].items.push({label:'',text:'',hex:'#7a6a55'});
+app/js/sessions.js:332:  saveSchedule();
+app/js/sessions.js-333-}
+app/js/sessions.js-334-function delItem(di,idx){
+app/js/sessions.js:335:  const s=activeSchedule();
+app/js/sessions.js-336-  if(!s[di])return;
+app/js/sessions.js-337-  const date=s[di].date;
+--
+app/js/sessions.js-339-  /* marks are index-based, so re-key them for this day */
+app/js/sessions.js-340-  const keep={};
+app/js/sessions.js:341:  Object.keys(S.sched).forEach(k=>{
+app/js/sessions.js-342-    const [d,i]=k.split('|');
+app/js/sessions.js:343:    if(d!==date){keep[k]=S.sched[k];return}
+app/js/sessions.js-344-    const n=+i;
+app/js/sessions.js-345-    if(n===idx)return;
+app/js/sessions.js:346:    keep[d+'|'+(n>idx?n-1:n)]=S.sched[k];
+app/js/sessions.js-347-  });
+app/js/sessions.js:348:  S.sched=keep;
+app/js/sessions.js:349:  saveSchedule();
+app/js/sessions.js-350-}
+app/js/sessions.js-351-function addDay(){
+--
+app/js/sessions.js-353-  const v=inp&&inp.value;
+app/js/sessions.js-354-  if(!v){toast('Pick a date first');return}
+app/js/sessions.js:355:  const s=activeSchedule();
+app/js/sessions.js-356-  if(s.some(d=>d.date===v)){toast('That day is already in the plan');return}
+app/js/sessions.js-357-  s.push({date:v,rest:false,items:[]});
+app/js/sessions.js-358-  s.sort((a,b)=>a.date<b.date?-1:1);
+app/js/sessions.js:359:  saveSchedule();toast('Day added');
+app/js/sessions.js-360-}
+app/js/sessions.js-361-function delDay(di){
+app/js/sessions.js:362:  const s=activeSchedule();
+app/js/sessions.js-363-  if(!s[di])return;
+app/js/sessions.js-364-  const date=s[di].date;
+app/js/sessions.js-365-  s.splice(di,1);
+app/js/sessions.js:366:  Object.keys(S.sched).forEach(k=>{if(k.split('|')[0]===date)delete S.sched[k]});
+app/js/sessions.js:367:  saveSchedule();toast('Day removed');
+app/js/sessions.js-368-}
+app/js/sessions.js-369-function nextFreeDate(){
+app/js/sessions.js:370:  const s=activeSchedule();
+app/js/sessions.js-371-  if(!s.length)return todayISO();
+app/js/sessions.js-372-  const last=s[s.length-1].date;
+--
+app/js/sessions.js-375-  return isoLocal(d);
+app/js/sessions.js-376-}
+app/js/sessions.js:377:function resetSchedule(){
+app/js/sessions.js-378-  showModal(`<h3>Clear the whole plan?</h3>
+app/js/sessions.js:379:   <p>Every day you have written, and every done / missed mark on them, is removed and the schedule goes back to empty. There is no built-in plan to fall back on, so this cannot be undone. Your answers, highlights and review deck are not affected.</p>
+app/js/sessions.js-380-   <div class="modal-actions">
+app/js/sessions.js-381-     <button class="btn sec" onclick="closeModal()">Cancel</button>
+app/js/sessions.js:382:     <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="doResetSchedule()">Clear it</button>
+app/js/sessions.js-383-   </div>`);
+app/js/sessions.js-384-}
+app/js/sessions.js:385:function doResetSchedule(){
+app/js/sessions.js:386:  S.schedule=[];S.sched={};
+app/js/sessions.js:387:  save();closeModal();render();toast('Schedule cleared');
+app/js/sessions.js-388-}
+app/js/sessions.js-389-
+app/js/sessions.js:390:/* ============ RESCHEDULED PAGE ============ */
+app/js/sessions.js-391-function vMoved(p){
+app/js/sessions.js:392:  const {catchups,overflow,capacity}=buildSchedule();
+app/js/sessions.js:393:  let h=`<div class="eyebrow" style="background:var(--neuro)">Catch-up plan</div><h1>${ico('shuffle',26)} Rescheduled</h1>
+app/js/sessions.js:394:  <p class="page-sub">Only the subjects you marked missed, and the day each one has been moved to. Nothing else in the schedule was touched.</p>`;
+app/js/sessions.js-395-
+app/js/sessions.js-396-  if(!catchups.length){
+app/js/sessions.js-397-    h+=`<div class="empty"><div class="big">${ico('laurel',46)}</div><h3>Nothing missed</h3>
+app/js/sessions.js:398:     <p>Nothing is behind. Mark a subject missed on the schedule and it appears here with a new date.</p>
+app/js/sessions.js:399:     <div style="margin-top:20px"><button class="btn go" onclick="go({name:'schedule'})">Open schedule</button></div></div>`;
+app/js/sessions.js-400-    p.innerHTML=h;return;
+app/js/sessions.js-401-  }
+--
+app/js/sessions.js-486-    showT.forEach(t=>{
+app/js/sessions.js-487-      h+=`<button class="res-item" type="button" role="option" id="res-${id}" data-jump="theory" data-ch="${esc(t.ch)}" data-sec="${esc(t.sec.id)}">
+app/js/sessions.js:488:        <span class="res-tag" style="color:var(--neuro)">${ico('scroll',16)} Notes \u00b7 ${esc(chapterName(t.ch))}</span>
+app/js/sessions.js-489-        <span class="res-txt"><b>${esc(t.sec.h)}</b></span></button>`;
+app/js/sessions.js-490-      id++;
+--
+app/js/sessions.js-509-  };
+app/js/sessions.js-510-  if(!hits.length&&!thits.length){
+app/js/sessions.js:511:    box.innerHTML='<div class="res-empty">Nothing matched \u2014 try a shorter term. Search covers questions'+(THEORY_LOCKED?' and explanations.':', explanations and the notes.')+'</div>';
+app/js/sessions.js-512-    box.classList.add('show');
+app/js/sessions.js-513-    sinput.setAttribute('aria-expanded','true');
+--
+app/js/sessions.js-576-   Where she lives is a DEVICE preference, like the theme: which corner suits
+app/js/sessions.js-577-   you depends on the screen you are looking at, not on who is studying. So her
+app/js/sessions.js:578:   position, her mute and her collapsed state sit in their own localStorage key
+app/js/sessions.js-579-   and are deliberately not synced.
+app/js/sessions.js-580-   ============================================================================ */
+app/js/sessions.js:581:const CLKEY='wardround.clep';
+app/js/sessions.js-582-const CLEP={on:false,mini:false,muted:false,pos:null,posQ:null,seen:{},
+app/js/sessions.js-583-            typer:null,hideT:null,glT:null,tickT:null,lastSay:0,idleT:null,
+--
+app/js/quiz.js-45-function offerMockResume(){
+app/js/quiz.js-46-  if(!hasSavedMock())return;
+app/js/quiz.js:47:  const r=S.mockResume, entry=profileLoad;
+app/js/quiz.js-48-  const problem=savedMockProblem(r);
+app/js/quiz.js-49-  const expired=!problem&&r.paper.exam.end<=Date.now();
+app/js/quiz.js:50:  const current=()=>entry===profileLoad&&JSON.stringify(S.mockResume)===JSON.stringify(r);
+app/js/quiz.js-51-  const message=problem||(expired
+app/js/quiz.js-52-    ?'The time limit passed while you were away. Nothing has been handed in. You can hand in the saved answers now, keep the paper for later, or discard it.'
+--
+app/js/quiz.js-54-  showModal('<h3>Saved mock exam</h3><p>'+message+'</p><div class="modal-actions">'+
+app/js/quiz.js-55-    '<button class="btn sec" onclick="closeModal()">Keep for later</button>'+
+app/js/quiz.js:56:    '<button class="btn sec" onclick="exportData()">Download a copy</button>'+
+app/js/quiz.js-57-    '<button class="btn sec" id="mockDiscard">Discard paper</button>'+
+app/js/quiz.js-58-    (problem?'':'<button class="btn go" id="mockContinue">'+
+--
+app/js/quiz.js-139-  Q={ids:ids.slice(),i:Math.max(0,ids.indexOf(qid)),title:title,sel:null,shown:false,t0:Date.now(),txt:'',peek:false,caret:null,did:{},
+app/js/quiz.js-140-     attempts:{},chapter:chapter,sources:chapter&&q?(S.banks[q.module]||[]).slice():[],exam:exam};
+app/js/quiz.js:141:  strikeQuestion=null;strikes=new Set(); /* a restart or a profile switch on the same question must not inherit strikes */
+app/js/quiz.js-142-  saveResume();
+app/js/quiz.js-143-  go({name:'quiz'});
+--
+app/js/quiz.js-195-  if(!S.answers[q.id]||S.answers[q.id].text!==txt){
+app/js/quiz.js-196-    S.answers[q.id]={text:txt,got:g.got,total:g.total,ok:g.ok,at:Date.now()};
+app/js/quiz.js:197:    scheduleSRS(q.id,g.ok);
+app/js/quiz.js-198-  }
+app/js/quiz.js-199-  /* Outside the storage guard on purpose: retyping the same words is still an
+--
+app/js/quiz.js-284-    const th=THEORY_LOCKED?null:qTheory(q.id);
+app/js/quiz.js-285-    if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">
+app/js/quiz.js:286:      ${ico('scroll',16)} <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
+app/js/quiz.js-287-      <span style="margin-left:auto">&rarr;</span></button>`;
+app/js/quiz.js-288-    h+=`<div class="qactions">
+--
+app/js/quiz.js-297-  const stemEl=p.querySelector('.stem');
+app/js/quiz.js-298-  if(stemEl){
+app/js/quiz.js:299:    applyHighlights(stemEl,S.hl[q.id]||[]);
+app/js/quiz.js-300-    stemEl.addEventListener('mouseup',onStemSelect);
+app/js/quiz.js-301-    stemEl.addEventListener('touchend',onStemSelect);
+--
+app/js/quiz.js-425-    const th=THEORY_LOCKED?null:qTheory(q.id);
+app/js/quiz.js-426-    if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">
+app/js/quiz.js:427:      ${ico('scroll',16)} <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
+app/js/quiz.js-428-      <span style="margin-left:auto">&rarr;</span></button>`;
+app/js/quiz.js-429-
+app/js/quiz.js-430-    /* An emptied note is kept as a stamped blank so it can win a merge (see
+app/js/quiz.js-431-       saveNote), which means a record with no text is not a note. */
+app/js/quiz.js:432:    const noteRec=(S.notes||{})[q.id];
+app/js/quiz.js-433-    const note=(noteRec&&noteRec.txt)?noteRec:null;
+app/js/quiz.js-434-    const reported=!!(S.reports||{})[q.id];
+--
+app/js/quiz.js-442-        <textarea class="caseinput" id="qNote" rows="3" placeholder="Why you got it wrong, the bit you keep forgetting, a mnemonic…"
+app/js/quiz.js-443-          oninput="saveNote('${q.id}',this.value)">${esc(note?note.txt:'')}</textarea>
+app/js/quiz.js:444:        <div class="say" id="qNoteSay">${note?'Saved '+bakWhen(note.at):''}</div>
+app/js/quiz.js-445-       </div>`;
+app/js/quiz.js-446-    }
+--
+app/js/quiz.js-457-  const stemEl=p.querySelector('.stem');
+app/js/quiz.js-458-  if(stemEl){
+app/js/quiz.js:459:    applyHighlights(stemEl,S.hl[q.id]||[]);
+app/js/quiz.js-460-    stemEl.addEventListener('mouseup',onStemSelect);
+app/js/quiz.js-461-    stemEl.addEventListener('touchend',onStemSelect);
+--
+app/js/quiz.js-469-     because there is no Check answer to commit it later and a reload mid-exam
+app/js/quiz.js-470-     must not cost the student the work they have already done. What is NOT
+app/js/quiz.js:471:     done here is scheduleSRS — a paper is one sitting, and forty promotions
+app/js/quiz.js-472-     fired one at a time as the student worked down the page would be forty
+app/js/quiz.js-473-     separate reviews of the same sitting. It runs once each, at hand-in. */
+--
+app/js/quiz.js-500-  const ok=Q.sel===q.answer;
+app/js/quiz.js-501-  Q.shown=true;
+app/js/quiz.js:502:  /* Repeating the same choice is still a new recall attempt. Schedule once
+app/js/quiz.js-503-     on submission, never when revisiting the result inside this run. */
+app/js/quiz.js-504-  S.answers[q.id]={pick:Q.sel,ok:ok,at:Date.now()};
+app/js/quiz.js-505-  Q.did[q.id]=ok;                         /* what THIS sitting scored — see finishSet */
+app/js/quiz.js:506:  scheduleSRS(q.id,ok);
+app/js/quiz.js-507-  markDayActive();save();render();
+app/js/quiz.js-508-  /* she reacts, then settles back to the screen's own pose */
+--
+app/js/quiz.js-517-   Both intervals come off the existing SRS ladder rather than being new
+app/js/quiz.js-518-   numbers, so the deck's own description of itself stays true.
+app/js/quiz.js:519:   Unsure PINS the rung instead of inheriting it. scheduleSRS has already
+app/js/quiz.js-520-   promoted a correct answer by the time this runs, so a question answered
+app/js/quiz.js-521-   right at rung 3 would otherwise go out to 60 days while the student was
+app/js/quiz.js-522-   telling us they did not trust it. Pinning can therefore demote, which is
+app/js/quiz.js-523-   the intended reading of unsure: the memory is not solid yet.
+app/js/quiz.js:524:   A wrong answer is deliberately NOT touched here. scheduleSRS has already
+app/js/quiz.js-525-   put it at rung 0, due tomorrow, and tomorrow is the floor — no rating can
+app/js/quiz.js-526-   make it come back sooner, and none should make it come back later. */
+--
+app/js/quiz.js-538-  toast(c===0?'In your review deck, back tomorrow.'
+app/js/quiz.js-539-    :c===1?'In your review deck, back in three days.'
+app/js/quiz.js:540:    :'Left on the normal schedule.');
+app/js/quiz.js-541-}
+app/js/quiz.js-542-function navQ(d){
+--
+app/js/quiz.js-552-   isAnswered/isCorrect, which read S.answers — lifetime state. So a student who
+app/js/quiz.js-553-   had worked the chapter last week and now skipped straight through it was told
+app/js/quiz.js:554:   they had answered forty questions at 92%, "in 1 min"; and a brand-new profile
+app/js/quiz.js-555-   skipping everything was congratulated with "0%, you answered 0, all correct."
+app/js/quiz.js-556-   Q.did is written only where an answer is actually submitted in this run
+--
+app/js/quiz.js-663-  const picked=Q.exam.picked, ids=Q.ids;
+app/js/quiz.js-664-  const answered=ids.filter(id=>id in picked);
+app/js/quiz.js:665:  /* Scheduled once each, here, rather than on every tap: a paper is one
+app/js/quiz.js-666-     sitting, and a question whose answer was changed three times is still one
+app/js/quiz.js-667-     attempt. Unanswered questions are deliberately left out — they score as
+--
+app/js/quiz.js-675-     from its own picks, not a later practice answer or a cloud merge. */
+app/js/quiz.js-676-  const correct=id=>picked[id]===QUESTIONS.find(q=>q.id===id).answer;
+app/js/quiz.js:677:  answered.forEach(id=>scheduleSRS(id,correct(id)));
+app/js/quiz.js-678-  markDayActive(); saveResume();
+app/js/quiz.js-679-  const right=answered.filter(correct).length;
+--
+app/js/quiz.js-750-function saveNote(qid,txt){
+app/js/quiz.js-751-  clearTimeout(NOTE_T);
+app/js/quiz.js:752:  if(!S.notes)S.notes={};
+app/js/quiz.js-753-  const t=(txt||'').trim();
+app/js/quiz.js:754:  S.notes[qid]={txt:t,at:Date.now()};
+app/js/quiz.js-755-  NOTE_DIRTY=true;
+app/js/quiz.js:756:  const say=$('qNoteSay'); if(say)say.textContent='Saving…';
+app/js/quiz.js-757-  NOTE_T=setTimeout(()=>{
+app/js/quiz.js-758-    NOTE_T=null; NOTE_DIRTY=false;
+app/js/quiz.js-759-    save();
+app/js/quiz.js:760:    const s2=$('qNoteSay'); if(s2)s2.textContent=t?'Saved just now':'';
+app/js/quiz.js-761-  },500);
+app/js/quiz.js-762-}
+--
+app/js/quiz.js-958-  });
+app/js/quiz.js-959-}
+app/js/quiz.js:960:function applyHighlights(root,list){
+app/js/quiz.js-961-  stripMarks(root);
+app/js/quiz.js-962-  (list||[]).slice().sort((a,b)=>a.s-b.s).forEach(h=>paint(root,h.s,h.e,h.c));
+--
+app/js/quiz.js-997-  sel.removeAllRanges();
+app/js/quiz.js-998-  save();
+app/js/quiz.js:999:  applyHighlights(root,merged);
+app/js/quiz.js-1000-}
+app/js/quiz.js-1001-function clearHl(){
+--
+app/js/quiz.js-1003-  if(!q)return;
+app/js/quiz.js-1004-  delete S.hl[q.id];save();render();
+app/js/quiz.js:1005:  toast('Highlights cleared');
+app/js/quiz.js-1006-}
+app/js/quiz.js-1007-function markbar(qid){
+--
+app/js/storage.js-2-/* ==========================================================================
+app/js/storage.js-3-   CLOUD SYNC  \u2014  paste your Firebase config between the braces below.
+app/js/storage.js:4:   Leave it empty and the app simply runs offline with local profiles.
+app/js/storage.js:5:   Setup instructions are in the app: profile screen \u2192 "Set up sync".
+app/js/storage.js-6-   ========================================================================== */
+app/js/storage.js-7-const FIREBASE_CONFIG = {
+--
+app/js/storage.js-18-
+app/js/storage.js-19-
+app/js/storage.js:20:/* ============ SCHEDULE ============ */
+app/js/storage.js-21-const SUBJ_COLOURS=[['#b4472f','ENT'],['#5c7a52','Ophthalmology'],['#6d4c7d','Neuro/Psych'],
+app/js/storage.js-22-                    ['#2e5f8a','Pediatrics'],['#7a6a55','Revision'],['#9a6b1f','Buffer'],['#2f6b8f','Other']];
+--
+app/js/storage.js-28-   who opened it inherited a stranger's plan and had to demolish it before their
+app/js/storage.js-29-   own could exist — and the dates were wrong for them the moment the calendar
+app/js/storage.js:30:   moved on. A schedule is the one thing here that cannot be written for someone
+app/js/storage.js:31:   else, so every profile starts empty and builds its own. `data/schedule.js` was
+app/js/storage.js-32-   deleted with this change; nothing else read it. */
+app/js/storage.js:33:function activeSchedule(){
+app/js/storage.js:34:  if(!S.schedule)S.schedule=[];
+app/js/storage.js:35:  return S.schedule;
+app/js/storage.js-36-}
+app/js/storage.js:37:function saveSchedule(){save();render()}
+app/js/storage.js-38-
+app/js/storage.js-39-/* ============ STORAGE ============ */
+app/js/storage.js:40:let KEY='wardround.v2';
+app/js/storage.js-41-/* banks: per-module source filter, {ent:['endpoint','house'], …}. An absent or
+app/js/storage.js-42-   empty entry means "all sources" — never store the full set, so a bank added
+app/js/storage.js-43-   later is included by default instead of silently hidden. */
+app/js/storage.js:44:let S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},notes:{},reports:{}};
+app/js/storage.js-45-let storageMode='memory';
+app/js/storage.js-46-
+app/js/storage.js:47:async function loadState(){
+app/js/storage.js:48:  const key=KEY,p=me,entry=profileLoad;
+app/js/storage.js-49-  let raw=null,mode='local';
+app/js/storage.js-50-  try{
+app/js/storage.js-51-    if(typeof window!=='undefined'&&window.storage&&window.storage.get){
+app/js/storage.js-52-      const r=await window.storage.get(key);
+app/js/storage.js:53:      if(entry!==profileLoad||me!==p)return;
+app/js/storage.js-54-      raw=r&&r.value;mode='cloud';
+app/js/storage.js-55-    }
+app/js/storage.js:56:  }catch(e){if(entry!==profileLoad||me!==p)return;mode='local'}
+app/js/storage.js-57-  /* Parsing and checking share their own try so a missing, unreadable or
+app/js/storage.js-58-     unusable value reaches the existing snapshot ladder instead of becoming
+app/js/storage.js-59-     live state or dropping the app to memory-only storage. */
+app/js/storage.js-60-  try{
+app/js/storage.js:61:    if(mode==='local'){try{ raw=localStorage.getItem(key) }catch(e){}}
+app/js/storage.js-62-    let parsed=null;
+app/js/storage.js-63-    if(raw){ try{ parsed=checkedProgressState(JSON.parse(raw)) }catch(e){ parsed=null } }
+--
+app/js/storage.js-71-    if(!S.hl)S.hl={};
+app/js/storage.js-72-    storageMode=mode;
+app/js/storage.js:73:    migrateSched();dropAI();
+app/js/storage.js-74-  }catch(e){storageMode='memory'}
+app/js/storage.js-75-}
+app/js/storage.js-76-function dropAI(){delete S.ai;delete S.aiKey;delete S.hideFileWarn}
+app/js/storage.js:77:function migrateSched(){
+app/js/storage.js-78-  const out={};
+app/js/storage.js:79:  Object.keys(S.sched||{}).forEach(k=>{
+app/js/storage.js:80:    if(/\|\d+$/.test(k)){out[k]=S.sched[k];return}
+app/js/storage.js:81:    if(k.indexOf('|main')>0){out[k.replace('|main','|0')]=S.sched[k];return}
+app/js/storage.js:82:    if(k.indexOf('|peds')>0){out[k.replace('|peds','|1')]=S.sched[k];return}
+app/js/storage.js:83:    out[k+'|0']=S.sched[k];out[k+'|1']=S.sched[k];
+app/js/storage.js-84-  });
+app/js/storage.js:85:  S.sched=out;
+app/js/storage.js-86-}
+app/js/storage.js-87-/* A toast disappears and the page is rebuilt on every answer. This notice lives
+--
+app/js/storage.js-93-  box.setAttribute('role','alert');
+app/js/storage.js-94-  box.innerHTML='<span class="warnico" aria-hidden="true">!</span>'+(message||'<p><strong>Saving failed during this visit.</strong> Recent progress may be missing from storage. Keep this tab open and download a copy before leaving.</p>'+
+app/js/storage.js:95:    '<button class="btn sec" onclick="exportData()">Download progress</button>');
+app/js/storage.js-96-  const page=document.getElementById('page');
+app/js/storage.js-97-  page.parentNode.insertBefore(box,page);
+--
+app/js/storage.js-116-  let locked=[];
+app/js/storage.js-117-  try{if(typeof LOCKED_MODULES!=='undefined'&&Array.isArray(LOCKED_MODULES))locked=LOCKED_MODULES}catch(e){}
+app/js/storage.js:118:  let notesLocked=false;
+app/js/storage.js:119:  try{notesLocked=typeof THEORY_LOCKED!=='undefined'&&!!THEORY_LOCKED}catch(e){}
+app/js/storage.js-120-  subjects.forEach(s=>{
+app/js/storage.js-121-    if(locked.indexOf(s[1])>=0)return;
+app/js/storage.js-122-    const banksGone=s[2].some(k=>!Array.isArray(window[k]));
+app/js/storage.js:123:    const notesGone=!notesLocked&&s[3].some(k=>
+app/js/storage.js-124-      !window[k]||typeof window[k]!=='object'||Array.isArray(window[k]));
+app/js/storage.js:125:    if(banksGone||notesGone)missing.push(s[0]);
+app/js/storage.js-126-  });
+app/js/storage.js-127-  /* MODULES is a lexical constant, so looking on window would falsely report
+--
+app/js/storage.js-142-      /* Each key has one active write and one replaceable pending write, so
+app/js/storage.js-143-         a slow earlier request cannot overwrite a later answer. Keeping the
+app/js/storage.js:144:         key and payload together also prevents writes crossing profiles.
+app/js/storage.js-145-         A superseded caller gets false because its payload was not persisted. */
+app/js/storage.js-146-      const writes=save.cloudWrites||(save.cloudWrites=new Map());
+--
+app/js/storage.js-163-      });
+app/js/storage.js-164-    }
+app/js/storage.js:165:    else if(storageMode==='local'){localStorage.setItem(KEY,JSON.stringify(S));saved=true}
+app/js/storage.js-166-    else throw new Error('No persistent storage is available');
+app/js/storage.js-167-  }catch(e){warnSaveFailure()}
+app/js/storage.js:168:  schedulePush();
+app/js/storage.js:169:  bakSchedule();
+app/js/storage.js-170-  return saved;
+app/js/storage.js-171-}
+--
+app/js/storage.js-319-   This app's user is at UTC+3, so every night between 00:00 and 03:00 local
+app/js/storage.js-320-   `new Date().toISOString().slice(0,10)` returns YESTERDAY. Measured, not
+app/js/storage.js:321:   reasoned: at 00:41 local on 14 Aug the schedule highlighted 13 Aug as TODAY,
+app/js/storage.js-322-   and the same off-by-one moved every SRS due date and broke `nextFreeDate()`,
+app/js/storage.js:323:   which returned the last scheduled day again instead of the day after it.
+app/js/storage.js-324-   A study app is used late at night; this was wrong for three hours a night.
+app/js/storage.js-325-   Dates here are CALENDAR days in the reader's own timezone — read the local
+--
+app/js/storage.js-406-
+app/js/storage.js-407-  /* The last four, with asclepius, amphora, olive and lamp above, were the
+app/js/storage.js:408:     profile emblems. Nothing calls them any more — profiles wear painted
+app/js/storage.js-409-     portraits now (see AVATARS) — and they are kept only because a line
+app/js/storage.js-410-     emblem is the obvious fallback if the portraits ever have to go, and
+--
+app/js/gate.js-2-  if(FIREBASE_CONFIG&&FIREBASE_CONFIG.apiKey)return FIREBASE_CONFIG;
+app/js/gate.js-3-  try{
+app/js/gate.js:4:    const c=JSON.parse(localStorage.getItem('wardround.fbconfig')||'null');
+app/js/gate.js-5-    if(c&&c.apiKey)return c;
+app/js/gate.js-6-  }catch(e){}
+--
+app/js/gate.js-104-  fbUser=u;
+app/js/gate.js-105-  const auth=cloudAuth;
+app/js/gate.js:106:  const local=new Map(profiles.map(p=>[p.id,JSON.stringify(rosterProfile(p))]));
+app/js/gate.js:107:  /* Signing in while studying keeps the local profile and merges its work.
+app/js/gate.js-108-     The picker stays usable while another device's roster is arriving. */
+app/js/gate.js:109:  if(me)pullCloud();else showGate('profiles');
+app/js/gate.js-110-  try{
+app/js/gate.js-111-    const ref=rosterRef();
+--
+app/js/gate.js-114-    if(auth!==cloudAuth||!fbUser||fbUser.uid!==u.uid)return;
+app/js/gate.js-115-    rosterList(snap.exists?snap.data():{}).forEach(p=>{
+app/js/gate.js:116:      const old=profiles.find(x=>x.id===p.id);
+app/js/gate.js:117:      if(!old){if(!local.has(p.id))profiles.push(Object.assign({pin:''},p))}
+app/js/gate.js:118:      else if(local.get(p.id)===JSON.stringify(rosterProfile(old)))Object.assign(old,p);
+app/js/gate.js-119-    });
+app/js/gate.js:120:    saveProfiles();
+app/js/gate.js-121-    if(!me&&!draft){
+app/js/gate.js:122:      showGate('profiles');
+app/js/gate.js:123:      if(!profiles.length){
+app/js/gate.js-124-        draft={id:'g:'+u.uid,name:(u.displayName||'Me').split(' ')[0],
+app/js/gate.js-125-               /* No Google picture, so the account is given a portrait rather
+--
+app/js/gate.js-128-               av:u.photoURL?{t:'p',v:u.photoURL,c:'#6d4c7d'}
+app/js/gate.js-129-                            :{t:'g',v:avKey({v:u.uid||u.email||''}),c:'#6d4c7d'},pin:''};
+app/js/gate.js:130:        drawProfileEditor(false);
+app/js/gate.js-131-      }
+app/js/gate.js-132-    }
+--
+app/js/gate.js-172-  if(!me||!fbUser)return null;
+app/js/gate.js-173-  const ref=rosterRef();
+app/js/gate.js:174:  return ref?ref.collection('profiles').doc(me.id):null;
+app/js/gate.js-175-}
+app/js/gate.js:176:function rosterProfile(p){
+app/js/gate.js-177-  const av=p.av||{};
+app/js/gate.js-178-  return {id:p.id,name:p.name||'Untitled',av:{t:av.t||'e',v:av.v||'',c:av.c||'#6d4c7d',f:av.f||'plain'}};
+app/js/gate.js-179-}
+app/js/gate.js-180-function rosterList(data,p,remove=false){
+app/js/gate.js:181:  const list=(Array.isArray(data.profiles)?data.profiles:[])
+app/js/gate.js:182:    .filter(x=>x&&typeof x.id==='string'&&x.id&&(!p||x.id!==p.id)).map(rosterProfile);
+app/js/gate.js:183:  if(p&&!remove)list.push(rosterProfile(p));
+app/js/gate.js-184-  return list;
+app/js/gate.js-185-}
+--
+app/js/gate.js-187-  const ref=rosterRef(),auth=cloudAuth;
+app/js/gate.js-188-  if(!ref)return;
+app/js/gate.js:189:  const entry=rosterProfile(p);
+app/js/gate.js-190-  let live=true;
+app/js/gate.js-191-  try{
+--
+app/js/gate.js-193-      const snap=await tx.get(ref);
+app/js/gate.js-194-      if(!live||auth!==cloudAuth||!fbUser)return;
+app/js/gate.js:195:      /* Keep a legacy state until profile entry can adopt it atomically. */
+app/js/gate.js:196:      tx.set(ref,{profiles:rosterList(snap.exists?snap.data():{},entry,remove)},{merge:true});
+app/js/gate.js:197:      if(remove)tx.delete(ref.collection('profiles').doc(entry.id));
+app/js/gate.js-198-    }));
+app/js/gate.js-199-  }catch(e){if(auth===cloudAuth)setSync('err')}
+--
+app/js/gate.js-219-    out.answers[id]=((x.at||0)>=(y.at||0))?x:y;
+app/js/gate.js-220-  });
+app/js/gate.js:221:  ['srs','hl','flags','conf','days','sched'].forEach(k=>{
+app/js/gate.js-222-    out[k]=Object.assign({},older[k]||{},newer[k]||{});
+app/js/gate.js-223-  });
+--
+app/js/gate.js-231-  });
+app/js/gate.js-232-  /* A note and a report are written per question and stamped, so they merge the
+app/js/gate.js:233:     way answers do. Object.assign would let the whole of an older device's notes
+app/js/gate.js-234-     lose to the whole of a newer one's, which is how a note gets typed on a phone
+app/js/gate.js-235-     and vanishes on a laptop. */
+app/js/gate.js:236:  ['notes','reports'].forEach(k=>{
+app/js/gate.js-237-    out[k]={};
+app/js/gate.js-238-    const keys=new Set(Object.keys(a[k]||{}).concat(Object.keys(b[k]||{})));
+--
+app/js/gate.js-242-    });
+app/js/gate.js-243-  });
+app/js/gate.js:244:  out.schedule=newer.schedule||older.schedule||null;
+app/js/gate.js-245-  /* A paper travels as one record. Combining picks from different sittings would
+app/js/gate.js-246-     invent a paper; a dated empty record also prevents an older copy returning. */
+--
+app/js/gate.js-260-  await pushCloud(cloudSession);
+app/js/gate.js-261-}
+app/js/gate.js:262:function schedulePush(){
+app/js/gate.js-263-  const c=cloudSession;
+app/js/gate.js-264-  if(!currentCloud(c))return;
+--
+app/js/gate.js-273-  setSync('busy');
+app/js/gate.js-274-  try{
+app/js/gate.js:275:    const local=JSON.parse(JSON.stringify(S)),entry=rosterProfile(me),root=rosterRef(c.uid);
+app/js/gate.js-276-    /* mergeStates rebuilds answers and resumeByChapter key by key, so its output
+app/js/gate.js-277-       does not compare byte-for-byte against its input even when nothing moved.
+--
+app/js/gate.js-292-      const list=rosterList(data);
+app/js/gate.js-293-      if(!list.some(p=>p.id===entry.id))list.push(entry);
+app/js/gate.js:294:      tx.set(root,{profiles:list});
+app/js/gate.js-295-      return out;
+app/js/gate.js-296-    }));
+app/js/gate.js-297-    if(!merged||!currentCloud(c))return;
+app/js/gate.js:298:    /* Include edits made during the request without scheduling an endless
+app/js/gate.js-299-       save/push loop. Their existing debounce sends them on the next pass. */
+app/js/gate.js-300-    S=mergeStates(S,merged);
+app/js/gate.js-301-    if(!S.hl)S.hl={};
+app/js/gate.js-302-    /* Apply a remote semester before another input can use the old quiz.
+app/js/gate.js:303:       Profile entry draws its own screen after loading has finished. */
+app/js/gate.js-304-    const termChanged=!termEntryPending&&termChoice(S.term)&&S.term.id!==activeTerm;
+app/js/gate.js-305-    if(termChanged)render();
+--
+app/js/gate.js-307-    try{
+app/js/gate.js-308-      if(c.mode==='cloud'&&window.storage&&window.storage.set)await cloudWait(window.storage.set(c.key,raw));
+app/js/gate.js:309:      else if(c.mode==='local')localStorage.setItem(c.key,raw);
+app/js/gate.js-310-    }catch(e){warnSaveFailure()}
+app/js/gate.js-311-    if(!currentCloud(c))return;
+app/js/gate.js:312:    bakSchedule();
+app/js/gate.js-313-    /* A push runs 1.2 s after every answer. Repainting unconditionally would
+app/js/gate.js-314-       rebuild the page under the student mid-question — losing the caret in a
+--
+app/js/gate.js-321-  finally{
+app/js/gate.js-322-    live=false;c.running=false;
+app/js/gate.js:323:    if(currentCloud(c)&&c.again)schedulePush();
+app/js/gate.js-324-  }
+app/js/gate.js-325-}
+--
+app/js/gate.js-371-      allow read, write: if request.auth != null
+app/js/gate.js-372-                         &amp;&amp; request.auth.uid == uid;
+app/js/gate.js:373:      match /profiles/{pid} {
+app/js/gate.js-374-        allow read, write: if request.auth != null
+app/js/gate.js-375-                           &amp;&amp; request.auth.uid == uid;
+--
+app/js/gate.js-409-  }
+app/js/gate.js-410-  if(!obj||!obj.apiKey){toast('Config is missing apiKey');return}
+app/js/gate.js:411:  try{localStorage.setItem('wardround.fbconfig',JSON.stringify(obj))}catch(e){}
+app/js/gate.js-412-  closeModal();toast('Saved \u2014 now sign in with Google');showGate();
+app/js/gate.js-413-}
+app/js/gate.js-414-function clearCfg(){
+app/js/gate.js:415:  try{localStorage.removeItem('wardround.fbconfig')}catch(e){}
+app/js/gate.js-416-  closeModal();showGate();toast('Sync configuration removed');
+app/js/gate.js-417-}
+app/js/gate.js-418-
+app/js/gate.js:419:/* ============ PROFILES ============ */
+app/js/gate.js:420:const PKEY='wardround.profiles', LASTKEY='wardround.lastprofile';
+app/js/gate.js:421:let profiles=[], me=null, profileLoad=0;
+app/js/gate.js-422-/* THE EIGHT PORTRAITS. These were emoji first, then line emblems, and both
+app/js/gate.js-423-   failed the same way: an amphora and a lamp are objects, and nobody is an
+app/js/gate.js:424:   object. A profile picture is meant to be somebody, so these are people —
+app/js/gate.js-425-   the physicians and the healing gods this app is named out of, painted in
+app/js/gate.js:426:   the same low-key oil manner as the rest of the artwork so a profile sits
+app/js/gate.js-427-   inside the design instead of on top of it.
+app/js/gate.js-428-
+--
+app/js/gate.js-455-};
+app/js/gate.js-456-
+app/js/gate.js:457:/* A profile saved before this list existed holds an emoji, or an emblem key
+app/js/gate.js:458:   from the set before it, and those profiles are not rewritten — a stored
+app/js/gate.js:459:   record is not touched to suit a redesign, and a photo profile must keep its
+app/js/gate.js-460-   photo. So whatever is stored is resolved at DRAWING time, by hashing it into
+app/js/gate.js:461:   the current list. Deterministic, so a profile wears the same face on every
+app/js/gate.js-462-   device and every reload; and the moment it is next saved from the editor it
+app/js/gate.js-463-   writes a real key and stops hashing.
+app/js/gate.js-464-
+app/js/gate.js-465-   Reordering or replacing AVATARS therefore changes which face those older
+app/js/gate.js:466:   profiles wear. That is accepted: it is cosmetic, it corrects itself on the
+app/js/gate.js-467-   next save, and the alternative is never being able to change the list. */
+app/js/gate.js-468-function avKey(av){
+--
+app/js/gate.js-476-const AVCOLS=['#b4472f','#5c7a52','#6d4c7d','#2e5f8a','#9a6b1f','#8f3f5c','#3f7d7a','#7a6a55'];
+app/js/gate.js-477-
+app/js/gate.js:478:function stateKey(id){return 'wardround.v3.'+id}
+app/js/gate.js:479:function loadProfiles(){
+app/js/gate.js:480:  try{profiles=JSON.parse(localStorage.getItem(PKEY))||[]}catch(e){profiles=[]}
+app/js/gate.js-481-}
+app/js/gate.js:482:function saveProfiles(){try{localStorage.setItem(PKEY,JSON.stringify(profiles))}catch(e){}}
+app/js/gate.js:483:function bootstrapProfiles(){
+app/js/gate.js:484:  loadProfiles();
+app/js/gate.js:485:  if(profiles.length)return;
+app/js/gate.js-486-  let old=null;
+app/js/gate.js:487:  try{old=localStorage.getItem('wardround.v2')}catch(e){}
+app/js/gate.js-488-  if(old){
+app/js/gate.js-489-    const p={id:'p'+Date.now(),name:'Me',av:{t:'g',v:AVATARS[0],c:'#6d4c7d'},pin:''};
+app/js/gate.js:490:    profiles.push(p);saveProfiles();
+app/js/gate.js:491:    try{localStorage.setItem(stateKey(p.id),old)}catch(e){}
+app/js/gate.js-492-  }
+app/js/gate.js-493-}
+app/js/gate.js-494-/* Wraps a ready-made <img> tag in whatever av.f asks for. "plain" (or no
+app/js/gate.js:495:   f at all — every profile made before this shipped) returns the image
+app/js/gate.js-496-   untouched, so the box's own border keeps drawing the ring it always has.
+app/js/gate.js-497-   The other three wrap it in a same-size inner span carrying that
+--
+app/js/gate.js-509-
+app/js/gate.js-510-/* One place draws an avatar, and every surface that shows one goes through it:
+app/js/gate.js:511:   the editor's preview and the rail (the gate cards and Manage profiles build
+app/js/gate.js-512-   their own wrapper — see the comments where they do). A portrait and an
+app/js/gate.js-513-   uploaded photo are now the same shape — an <img> filling the box — so both
+--
+app/js/gate.js-517-   av.c survives as the ring rather than the backdrop. An opaque portrait hides
+app/js/gate.js-518-   whatever is painted behind it, and a colour picker that changes nothing is a
+app/js/gate.js:519:   dead control; on the border it still tells two profiles apart at a glance.
+app/js/gate.js-520-   --fr-c carries that same colour to the frame CSS. A ported frame (mount,
+app/js/gate.js-521-   moulding, walnut) draws its own edge, so the box's own border — the plain
+--
+app/js/gate.js-531-
+app/js/gate.js-532-/* ---- gate ----
+app/js/gate.js:533:   TWO STEPS, in this order: sign in, then choose or create a profile.
+app/js/gate.js-534-
+app/js/gate.js-535-   showGate() picks the step for itself unless told which one:
+app/js/gate.js:536:     - already signed in, or cloud unavailable  -> profiles. A sign-in step
+app/js/gate.js-537-       would be pointless in the first case and a dead end in the second.
+app/js/gate.js-538-     - otherwise                                -> sign-in first.
+--
+app/js/gate.js-566-     her — nobody is studying on the gate. */
+app/js/gate.js-567-  clepHide(); sessStopTick();
+app/js/gate.js:568:  gateStep=step||((fbUser||!cloudEnabled())?'profiles':'signin');
+app/js/gate.js:569:  g.innerHTML=gateChrome()+(gateStep==='signin'?gateSignInStep():gateProfileStep());
+app/js/gate.js-570-  paintThemeBtn();
+app/js/gate.js-571-  /* innerHTML was just rewritten, so this is a brand-new <video> every time the
+--
+app/js/gate.js-579-   One decision and nothing else. The escape hatch is worded for what it
+app/js/gate.js-580-   actually does, which differs depending on whether this device already has
+app/js/gate.js:581:   profiles on it.                                                           */
+app/js/gate.js-582-function gateSignInStep(){
+app/js/gate.js-583-  /* Google OAuth requires an http(s) origin. Opened straight from disk as a
+--
+app/js/gate.js-589-     original order returns. */
+app/js/gate.js-590-  const offline=location.protocol==='file:';
+app/js/gate.js:591:  const onward=profiles.length?'Choose your profile':'Create your profile';
+app/js/gate.js-592-  if(offline){
+app/js/gate.js-593-    return `<div class="gstep" data-step="signin">
+app/js/gate.js-594-      <div class="gmark" style="--d:0ms"><img src="assets/icon-180.png" alt="" width="88" height="88"></div>
+app/js/gate.js-595-      <h1 class="gtitle" style="--d:80ms">Herophilus</h1>
+app/js/gate.js:596:      <p class="gtag" style="--d:150ms">Choose your profile, year and semester.<br>Question banks appear for your selected semester.</p>
+app/js/gate.js:597:      <button class="btn go gbig" style="--d:230ms" onclick="showGate('profiles')">${onward} →</button>
+app/js/gate.js-598-      <div class="gsign off" style="--d:300ms" aria-disabled="true">${GOOGLE_MARK}<span>Sign in with Google</span></div>
+app/js/gate.js-599-      <p class="gnote" style="--d:370ms"><b>Google sign-in needs the app to be online.</b> Opened directly from the file on this computer it cannot run — so your progress saves here instead, which works fully and offline.</p>
+--
+app/js/gate.js-603-    <div class="gmark" style="--d:0ms"><img src="assets/icon-180.png" alt="" width="88" height="88"></div>
+app/js/gate.js-604-    <h1 class="gtitle" style="--d:80ms">Herophilus</h1>
+app/js/gate.js:605:    <p class="gtag" style="--d:150ms">Choose your profile, year and semester.<br>Question banks appear for your selected semester.</p>
+app/js/gate.js-606-    <button class="gsign" style="--d:230ms" onclick="signInGoogle()">${GOOGLE_MARK}<span>Sign in with Google</span></button>
+app/js/gate.js:607:    <button class="glink" style="--d:300ms" onclick="showGate('profiles')">${profiles.length?'Use a profile on this device':'Continue without an account'} →</button>
+app/js/gate.js-608-    ${inAppBrowser()?`<p class="gnote warn" style="--d:370ms"><b>Open this in your own browser first.</b> You have arrived here from inside another app, and Google will not let anyone sign in from there. Use the menu in the corner and choose <b>Open in browser</b> — or carry on below and keep your progress on this device.</p>`
+app/js/gate.js-609-      :`<p class="gnote" style="--d:370ms">Signing in keeps your progress the same on your phone and your laptop. Without it everything still works — it just stays on this device.</p>`}
+--
+app/js/gate.js-618-
+app/js/gate.js-619-/* STEP 2 ------------------------------------------------------------------- */
+app/js/gate.js:620:function gateProfileStep(){
+app/js/gate.js:621:  if(termLoading)return `<div class="gstep" data-step="profiles">
+app/js/gate.js:622:    <h2 role="status">Loading your profile...</h2></div>`;
+app/js/gate.js-623-  if(termEntryPending&&me)return gateTermStep();
+app/js/gate.js-624-  /* Back only makes sense when there is a sign-in step to go back TO. */
+app/js/gate.js-625-  const canBack=!fbUser&&cloudEnabled();
+app/js/gate.js-626-  let d=0;const step=()=>`--d:${d+=70}ms`;
+app/js/gate.js:627:  let h=`<div class="gstep" data-step="profiles">
+app/js/gate.js-628-    <div class="glogo" style="--d:0ms"><span class="blip"><img src="assets/icon-96.png" alt="" width="38" height="38"></span> Herophilus</div>`;
+app/js/gate.js-629-  if(fbUser){
+app/js/gate.js-630-    h+=`<div class="gwho" style="${step()}">✓ Signed in as <b>${esc(fbUser.displayName||fbUser.email||'your Google account')}</b></div>`;
+app/js/gate.js-631-  }
+app/js/gate.js:632:  h+=`<h2 style="${step()}">${profiles.length?"Who's studying?":'Create your profile'}</h2>
+app/js/gate.js-633-    <div class="pgrid">`;
+app/js/gate.js:634:  profiles.forEach(p=>{
+app/js/gate.js-635-    /* The card cannot call avHTML: it hangs a PIN dot and a Google badge inside
+app/js/gate.js-636-       the same box. So it builds its own wrapper and borrows the resolver, which
+app/js/gate.js:637:       is the part that must not drift — a profile showing one emblem here and a
+app/js/gate.js-638-       different one in the rail is the bug this line exists to prevent. The same
+app/js/gate.js-639-       is now true of the frame: it goes through avFrame(), same as everywhere else. */
+--
+app/js/gate.js-642-    const fr=av.f||'plain';
+app/js/gate.js-643-    const inner=avFrame(fr,img,false);
+app/js/gate.js:644:    h+=`<button class="pcard" style="${step()}" onclick="pickProfile('${p.id}')">
+app/js/gate.js-645-      <div class="pav${fr!=='plain'?' hasfr':''}" style="background:${av.c};border-color:${av.c};--fr-c:${av.c}">${inner}${p.pin?'<span class="lock" style="font-size:9px;letter-spacing:1.5px;padding-left:1.5px">\u2022\u2022\u2022\u2022</span>':''}${p.id.indexOf('g:')===0?'<span class="lock" style="background:#4285F4;color:#fff;font-size:14px;font-weight:900">G</span>':''}</div>
+app/js/gate.js-646-      <div class="pname">${esc(p.name)}</div></button>`;
+app/js/gate.js-647-  });
+app/js/gate.js:648:  h+=`<button class="pcard add" style="${step()}" onclick="editProfile(null)">
+app/js/gate.js:649:      <div class="pav">+</div><div class="pname">Add profile</div></button></div>`;
+app/js/gate.js-650-  h+=`<div class="gfoot" style="${step()}">`;
+app/js/gate.js-651-  if(canBack)h+=`<button class="btn sec" onclick="showGate('signin')">← Back</button>`;
+app/js/gate.js:652:  if(profiles.length)h+=`<button class="btn sec" onclick="manageProfiles()">Manage profiles</button>`;
+app/js/gate.js-653-  h+=`</div>`;
+app/js/gate.js-654-  /* cloudEnabled() is false whenever the app is opened as a file rather than
+--
+app/js/gate.js-665-}
+app/js/gate.js-666-
+app/js/gate.js:667:function pickProfile(id){
+app/js/gate.js:668:  const p=profiles.find(x=>x.id===id);
+app/js/gate.js-669-  if(!p)return;
+app/js/gate.js-670-  if(p.pin){askPin(p);return}
+app/js/gate.js:671:  enterProfile(p);
+app/js/gate.js-672-}
+app/js/gate.js-673-/* ---- one-time colour migration, 2026-07-28 --------------------------------
+app/js/gate.js-674-   The Greek palette replaced every module colour, but two things had already
+app/js/gate.js:675:   BAKED the old hex values into localStorage and so could never pick the change
+app/js/gate.js-676-   up from CSS:
+app/js/gate.js-677-
+app/js/gate.js:678:     • a schedule the user has edited — buildSchedule() stores {label,text,hex}
+app/js/gate.js-679-       per item, so an edited plan keeps rendering vermilion tags forever
+app/js/gate.js:680:     • profile avatars — the colour is chosen once and saved on the profile
+app/js/gate.js-681-
+app/js/gate.js-682-   Found by auditing the running app, not by reading the code: the contrast pass
+app/js/gate.js:683:   kept reporting rgb(255,90,95) on the schedule long after that hex was gone
+app/js/gate.js-684-   from the source. Anything that stores a colour rather than a token needs a
+app/js/gate.js-685-   migration; that is the general lesson.
+--
+app/js/gate.js-693-function migrateColours(){
+app/js/gate.js-694-  const map=h=>COLOUR_MIGRATION[String(h||'').toLowerCase()];
+app/js/gate.js:695:  let stateChanged=false,profilesChanged=false;
+app/js/gate.js:696:  if(S.schedule&&S.schedule.length){
+app/js/gate.js:697:    S.schedule.forEach(d=>{
+app/js/gate.js-698-      (d.items||[]).forEach(it=>{const n=map(it.hex);if(n){it.hex=n;stateChanged=true}});
+app/js/gate.js-699-    });
+app/js/gate.js-700-  }
+app/js/gate.js:701:  profiles.forEach(p=>{
+app/js/gate.js:702:    if(p.av&&p.av.c){const n=map(p.av.c);if(n){p.av.c=n;profilesChanged=true}}
+app/js/gate.js-703-  });
+app/js/gate.js-704-  if(stateChanged)save();
+app/js/gate.js:705:  if(profilesChanged)saveProfiles();
+app/js/gate.js-706-}
+app/js/gate.js-707-
+app/js/gate.js:708:async function enterProfile(p){
+app/js/gate.js-709-  flushNote();
+app/js/gate.js-710-  resetCloud();
+app/js/gate.js:711:  const entry=++profileLoad;
+app/js/gate.js-712-  termEntryPending=true;
+app/js/gate.js-713-  termLoading=true;
+--
+app/js/gate.js-715-  me=p;
+app/js/gate.js-716-  KEY=stateKey(p.id);
+app/js/gate.js:717:  try{localStorage.setItem(LASTKEY,p.id)}catch(e){}
+app/js/gate.js:718:  S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},notes:{},reports:{},schedule:null};
+app/js/gate.js:719:  showGate('profiles');
+app/js/gate.js:720:  await loadState();
+app/js/gate.js:721:  if(entry!==profileLoad||me!==p)return;
+app/js/gate.js-722-  /* A new device may already have this preference in the cloud. Try that
+app/js/gate.js-723-     before asking for another selection; offline entry still reaches the picker. */
+app/js/gate.js-724-  if(fbUser&&!termChoice(S.term)){
+app/js/gate.js-725-    await pullCloud();
+app/js/gate.js:726:    if(entry!==profileLoad||me!==p)return;
+app/js/gate.js-727-  }
+app/js/gate.js-728-  termLoading=false;
+app/js/gate.js:729:  if(!termChoice(S.term)){showGate('profiles');return}
+app/js/gate.js:730:  finishProfileEntry();
+app/js/gate.js-731-}
+app/js/gate.js:732:function finishProfileEntry(){
+app/js/gate.js-733-  termEntryPending=false;
+app/js/gate.js-734-  termLoading=false;
+--
+app/js/gate.js-738-  closeModal();hideGate();
+app/js/gate.js-739-  view={name:'home'};
+app/js/gate.js:740:  /* The companion belongs to a profile session, not to the gate — she appears
+app/js/gate.js-741-     once someone is actually studying. A session left running is picked back
+app/js/gate.js-742-     up here rather than restarted, because its clock is a timestamp. */
+--
+app/js/gate.js-751-    bakRestored=0;
+app/js/gate.js-752-  }
+app/js/gate.js:753:  /* Every profile under the account syncs, including one created offline.
+app/js/gate.js-754-     Entry is already usable while the optional cloud merge runs. */
+app/js/gate.js-755-  if(fbUser&&!cloudSession)pullCloud();
+app/js/gate.js-756-}
+app/js/gate.js:757:function leaveProfile(){
+app/js/gate.js-758-  flushNote();
+app/js/gate.js-759-  resetCloud();
+--
+app/js/gate.js-764-  showGate();
+app/js/gate.js-765-}
+app/js/gate.js:766:function switchProfile(){
+app/js/gate.js-767-  if(fbUser){
+app/js/gate.js-768-    showModal(`<h3>Switch or sign out?</h3>
+--
+app/js/gate.js-770-     <div class="modal-actions">
+app/js/gate.js-771-       <button class="btn sec" onclick="closeModal()">Stay</button>
+app/js/gate.js:772:       <button class="btn sec" onclick="leaveProfile()">Switch profile</button>
+app/js/gate.js-773-       <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="signOutCloud()">Sign out</button>
+app/js/gate.js-774-     </div>`);
+app/js/gate.js-775-    return;
+app/js/gate.js-776-  }
+app/js/gate.js:777:  leaveProfile();
+app/js/gate.js-778-}
+app/js/gate.js-779-
+--
+app/js/gate.js-803-function readPin(){return [0,1,2,3].map(i=>($('pd'+i)||{}).value||'').join('')}
+app/js/gate.js-804-function tryPin(id){
+app/js/gate.js:805:  const p=profiles.find(x=>x.id===id);
+app/js/gate.js-806-  if(!p)return;
+app/js/gate.js:807:  if(readPin()===p.pin){enterProfile(p);return}
+app/js/gate.js-808-  const e=$('pinErr');if(e)e.textContent='Wrong PIN \u2014 try again';
+app/js/gate.js-809-  [0,1,2,3].forEach(i=>{const el=$('pd'+i);if(el)el.value=''});
+--
+app/js/gate.js-813-/* ---- create / edit ---- */
+app/js/gate.js-814-let draft=null;
+app/js/gate.js:815:function editProfile(id){
+app/js/gate.js:816:  const p=id?profiles.find(x=>x.id===id):null;
+app/js/gate.js-817-  draft=p?JSON.parse(JSON.stringify(p)):{id:'p'+Date.now(),name:'',av:{t:'g',v:AVATARS[0],c:AVCOLS[2]},pin:''};
+app/js/gate.js:818:  drawProfileEditor(!!p);
+app/js/gate.js-819-}
+app/js/gate.js:820:function drawProfileEditor(isEdit){
+app/js/gate.js:821:  showModal(`<h3>${isEdit?'Edit profile':'New profile'}</h3>
+app/js/gate.js-822-   ${avHTML(draft.av,'avprev')}
+app/js/gate.js-823-   <input class="keyin" id="pfName" placeholder="Name" value="${esc(draft.name)}"
+--
+app/js/gate.js-827-   <div class="emgrid">
+app/js/gate.js-828-     ${AVATARS.map(k=>`<button class="emb ${avKey(draft.av)===k&&draft.av.t!=='p'?'on':''}" title="${AVNAMES[k]}"
+app/js/gate.js:829:       onclick="draft.av={t:'g',v:'${k}',c:draft.av.c,f:draft.av.f};drawProfileEditor(${isEdit})"><img src="${avSrc(k)}" alt="${AVNAMES[k]}"></button>`).join('')}
+app/js/gate.js-830-   </div>
+app/js/gate.js-831-   <div class="colrow">
+app/js/gate.js-832-     ${AVCOLS.map(c=>`<button class="colb ${draft.av.c===c?'on':''}" style="background:${c}"
+app/js/gate.js:833:       onclick="draft.av.c='${c}';drawProfileEditor(${isEdit})"></button>`).join('')}
+app/js/gate.js-834-   </div>
+app/js/gate.js-835-   <div style="font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px">Frame</div>
+--
+app/js/gate.js-838-       return ['plain','mount','moulding','walnut'].map(f=>`<button class="frtile ${f!=='plain'?'hasfr ':''}${(draft.av.f||'plain')===f?'on':''}"
+app/js/gate.js-839-         style="--fr-c:${draft.av.c};border-color:${f==='plain'?draft.av.c:'transparent'}"
+app/js/gate.js:840:         onclick="draft.av.f='${f}';drawProfileEditor(${isEdit})">${avFrame(f,tileImg,false)}</button>`).join('');})()}
+app/js/gate.js-841-   </div>
+app/js/gate.js-842-   <div style="margin-bottom:16px">
+app/js/gate.js-843-     <button class="btn sec" onclick="document.getElementById('pfPhoto').click()">Upload a photo</button>
+app/js/gate.js:844:     ${draft.av.t==='p'?`<button class="ai-p" onclick="draft.av={t:'g',v:AVATARS[0],c:draft.av.c,f:draft.av.f};drawProfileEditor(${isEdit})" style="border:2px solid var(--line-2);padding:7px 13px;border-radius:var(--r-lg);font-size:12px;font-weight:700;margin-left:7px">Use a portrait instead</button>`:''}
+app/js/gate.js-845-     <input type="file" id="pfPhoto" accept="image/*" style="display:none" onchange="pfUpload(event,${isEdit})">
+app/js/gate.js-846-   </div>
+--
+app/js/gate.js-850-     oninput="draft.pin=this.value.replace(/[^0-9]/g,'').slice(0,4)">
+app/js/gate.js-851-   <div class="ai-note" style="font-size:11.5px;color:var(--ink-4);font-weight:600;margin-top:8px;line-height:1.5">
+app/js/gate.js:852:     Keeps other people from clicking into your profile by accident. It is not real security \u2014 anyone determined can get past it.</div>
+app/js/gate.js-853-   <div class="modal-actions" style="margin-top:18px">
+app/js/gate.js-854-     <button class="btn sec" onclick="closeModal();showGate()">Cancel</button>
+app/js/gate.js:855:     ${isEdit?`<button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="deleteProfile('${draft.id}')">Delete</button>`:''}
+app/js/gate.js:856:     <button class="btn go" onclick="saveProfile()">Save</button>
+app/js/gate.js-857-   </div>`,true);
+app/js/gate.js-858-}
+--
+app/js/gate.js-872-      x.drawImage(img,(img.width-s)/2,(img.height-s)/2,s,s,0,0,SZ,SZ);
+app/js/gate.js-873-      draft.av={t:'p',v:c.toDataURL('image/jpeg',0.8),c:draft.av.c,f:draft.av.f};
+app/js/gate.js:874:      drawProfileEditor(isEdit);
+app/js/gate.js-875-    };
+app/js/gate.js-876-    img.onerror=()=>toast('Could not read that image');
+--
+app/js/gate.js-880-  e.target.value='';
+app/js/gate.js-881-}
+app/js/gate.js:882:function saveProfile(){
+app/js/gate.js-883-  const n=$('pfName');
+app/js/gate.js-884-  draft.name=((n&&n.value)||draft.name||'').trim()||'Untitled';
+app/js/gate.js-885-  if(draft.pin&&draft.pin.length!==4){toast('PIN must be 4 digits, or blank');return}
+app/js/gate.js:886:  const i=profiles.findIndex(p=>p.id===draft.id);
+app/js/gate.js:887:  if(i>=0)profiles[i]=draft; else profiles.push(draft);
+app/js/gate.js:888:  saveProfiles();
+app/js/gate.js-889-  const saved=draft;draft=null;
+app/js/gate.js-890-  syncRoster(saved);
+app/js/gate.js-891-  closeModal();
+app/js/gate.js:892:  if(me&&me.id===saved.id){me=saved;render();toast('Profile updated')}
+app/js/gate.js:893:  else if(!me)enterProfile(saved);
+app/js/gate.js-894-  else{showGate()}
+app/js/gate.js-895-}
+app/js/gate.js:896:function deleteProfile(id){
+app/js/gate.js:897:  const p=profiles.find(x=>x.id===id);
+app/js/gate.js-898-  if(!p)return;
+app/js/gate.js-899-  showModal(`<h3>Delete ${esc(p.name)}?</h3>
+app/js/gate.js:900:   <p>This erases that profile's answers, highlights, schedule and review deck. It cannot be undone.</p>
+app/js/gate.js-901-   <div class="modal-actions">
+app/js/gate.js:902:     <button class="btn sec" onclick="editProfile('${id}')">Cancel</button>
+app/js/gate.js:903:     <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="doDeleteProfile('${id}')">Delete</button>
+app/js/gate.js-904-   </div>`);
+app/js/gate.js-905-}
+app/js/gate.js:906:function doDeleteProfile(id){
+app/js/gate.js:907:  const p=profiles.find(x=>x.id===id);
+app/js/gate.js-908-  if(!p)return;
+app/js/gate.js-909-  if(me&&me.id===id){resetCloud();me=null}
+app/js/gate.js:910:  profiles=profiles.filter(p=>p.id!==id);
+app/js/gate.js:911:  saveProfiles();
+app/js/gate.js:912:  try{localStorage.removeItem(stateKey(id))}catch(e){}
+app/js/gate.js-913-  syncRoster(p,true);
+app/js/gate.js:914:  closeModal();showGate();toast('Profile deleted');
+app/js/gate.js-915-}
+app/js/gate.js:916:function manageProfiles(){
+app/js/gate.js:917:  let h=`<h3>Manage profiles</h3><p>Pick one to rename, change its picture or PIN, or delete it.</p>`;
+app/js/gate.js:918:  profiles.forEach(p=>{
+app/js/gate.js-919-    const mav=p.av||{t:'g',v:AVATARS[0],c:'#6d4c7d'};
+app/js/gate.js-920-    const msrc=mav.t==='p'?mav.v:avSrc(avKey(mav));
+app/js/gate.js-921-    const mfr=mav.f||'plain';
+app/js/gate.js-922-    const minner=avFrame(mfr,`<img src="${msrc}" alt="">`,true);
+app/js/gate.js:923:    h+=`<button class="ch-row" style="margin-bottom:8px" onclick="editProfile('${p.id}')">
+app/js/gate.js-924-      <div class="rav${mfr!=='plain'?' hasfr':''}" style="width:34px;height:34px;border-radius:var(--r-lg);display:flex;align-items:center;justify-content:center;font-size:18px;overflow:hidden;border:${mfr==='plain'?'2px solid '+mav.c:'0'};background:${mav.c};--fr-c:${mav.c};--fr-t:3px">${minner}</div>
+app/js/gate.js-925-      <span class="ch-name">${esc(p.name)}</span>
+--
+app/js/gate.js-928-  h+=`<div class="modal-actions" style="margin-top:16px">
+app/js/gate.js-929-     <button class="btn sec" onclick="closeModal();showGate()">Back</button>
+app/js/gate.js:930:     <button class="btn go" onclick="editProfile(null)">Add profile</button></div>`;
+app/js/gate.js-931-  showModal(h,true);
+app/js/gate.js-932-}
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command '$targets=@(@('"'app/js/storage.js',1,260),@('app/js/gate.js',1,132),@('app/js/gate.js',149,330),@('app/js/gate.js',708,765),@('app/js/gate.js',882,915),@('app/js/boot.js',35,120),@('app/js/sessions.js',300,380),@('app/index.html',1,120)); foreach("'$s in $targets){$p=$s[0];$a=$s[1];$b=$s[2];$l=Get-Content -LiteralPath $p; "`n--- $p $a-$([Math]::Min($b,$l.Count)) / $($l.Count) ---";for($i=$a;$i -le [Math]::Min($b,$l.Count);$i++){if($p -like '"'*storage*' -or "'$p -like '"'*gate*' -or "'$p -like '"'*boot*' -or "'$p -like '"'*sessions*' -or "'$l[$i-1] -match '"'firebase|script|integrity|loadSDK'){ '{0}:{1}' -f "'$i,$l[$i-1]}}' in D:\claude os\Medical school\Herophilus
+ exited 1 in 94ms:
+Missing closing '}' in statement block or type definition.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingEndCurlyBrace
+ 
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command '$targets=@(@('"'app/js/storage.js',1,260),@('app/js/gate.js',1,132),@('app/js/gate.js',149,330),@('app/js/gate.js',708,765),@('app/js/gate.js',882,915),@('app/js/boot.js',35,120),@('app/js/sessions.js',300,380),@('app/index.html',1,120)); foreach("'$s in $targets){ $p=$s[0]; $a=$s[1]; $b=$s[2]; $l=Get-Content -LiteralPath $p; "`n--- $p $a-$([Math]::Min($b,$l.Count)) / $($l.Count) ---"; for($i=$a;$i -le [Math]::Min($b,$l.Count);$i++){ $include=($p -like '"'*storage*') -or ("'$p -like '"'*gate*') -or ("'$p -like '"'*boot*') -or ("'$p -like '"'*sessions*') -or ("'$l[$i-1] -match '"'firebase|script|integrity|loadSDK'); if("'$include){ '"'{0}:{1}' -f "'$i,$l[$i-1] } } }' in D:\claude os\Medical school\Herophilus
+ succeeded in 135ms:
+
+--- app/js/storage.js 1-260 / 436 ---
+1:
+2:/* ==========================================================================
+3:   CLOUD SYNC  \u2014  paste your Firebase config between the braces below.
+4:   Leave it empty and the app simply runs offline with local profiles.
+5:   Setup instructions are in the app: profile screen \u2192 "Set up sync".
+6:   ========================================================================== */
+7:const FIREBASE_CONFIG = {
+8:  apiKey: "AIzaSyAg9OGSUbn7A04K5nRdStjzwGrO0nrvidk",
+9:  /* auth handler proxied by _worker.js so sign-in stays same-origin */
+10:  authDomain: "herophilus.pages.dev",
+11:  projectId: "ward-round-e4822",
+12:  storageBucket: "ward-round-e4822.firebasestorage.app",
+13:  messagingSenderId: "353156608996",
+14:  appId: "1:353156608996:web:1b8faf5f9fa01dafd48df1"
+15:};
+16:
+17:
+18:
+19:
+20:/* ============ SCHEDULE ============ */
+21:const SUBJ_COLOURS=[['#b4472f','ENT'],['#5c7a52','Ophthalmology'],['#6d4c7d','Neuro/Psych'],
+22:                    ['#2e5f8a','Pediatrics'],['#7a6a55','Revision'],['#9a6b1f','Buffer'],['#2f6b8f','Other']];
+23:
+24:/* Shape: [{date, rest, items:[{label,text,hex}]}], sorted by date.
+25:
+26:   THERE IS NO BUILT-IN PLAN, and that is deliberate. The app used to ship one
+27:   author's revision timetable, built around one faculty's exam dates. Everyone
+28:   who opened it inherited a stranger's plan and had to demolish it before their
+29:   own could exist â€” and the dates were wrong for them the moment the calendar
+30:   moved on. A schedule is the one thing here that cannot be written for someone
+31:   else, so every profile starts empty and builds its own. `data/schedule.js` was
+32:   deleted with this change; nothing else read it. */
+33:function activeSchedule(){
+34:  if(!S.schedule)S.schedule=[];
+35:  return S.schedule;
+36:}
+37:function saveSchedule(){save();render()}
+38:
+39:/* ============ STORAGE ============ */
+40:let KEY='wardround.v2';
+41:/* banks: per-module source filter, {ent:['endpoint','house'], â€¦}. An absent or
+42:   empty entry means "all sources" â€” never store the full set, so a bank added
+43:   later is included by default instead of silently hidden. */
+44:let S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},notes:{},reports:{}};
+45:let storageMode='memory';
+46:
+47:async function loadState(){
+48:  const key=KEY,p=me,entry=profileLoad;
+49:  let raw=null,mode='local';
+50:  try{
+51:    if(typeof window!=='undefined'&&window.storage&&window.storage.get){
+52:      const r=await window.storage.get(key);
+53:      if(entry!==profileLoad||me!==p)return;
+54:      raw=r&&r.value;mode='cloud';
+55:    }
+56:  }catch(e){if(entry!==profileLoad||me!==p)return;mode='local'}
+57:  /* Parsing and checking share their own try so a missing, unreadable or
+58:     unusable value reaches the existing snapshot ladder instead of becoming
+59:     live state or dropping the app to memory-only storage. */
+60:  try{
+61:    if(mode==='local'){try{ raw=localStorage.getItem(key) }catch(e){}}
+62:    let parsed=null;
+63:    if(raw){ try{ parsed=checkedProgressState(JSON.parse(raw)) }catch(e){ parsed=null } }
+64:    if(!parsed){
+65:      const r=bakNewest();
+66:      if(r){
+67:        try{ parsed=checkedProgressState(r.state); bakRestored=r.at }catch(e){}
+68:      }
+69:    }
+70:    if(parsed)S=Object.assign(S,parsed);
+71:    if(!S.hl)S.hl={};
+72:    storageMode=mode;
+73:    migrateSched();dropAI();
+74:  }catch(e){storageMode='memory'}
+75:}
+76:function dropAI(){delete S.ai;delete S.aiKey;delete S.hideFileWarn}
+77:function migrateSched(){
+78:  const out={};
+79:  Object.keys(S.sched||{}).forEach(k=>{
+80:    if(/\|\d+$/.test(k)){out[k]=S.sched[k];return}
+81:    if(k.indexOf('|main')>0){out[k.replace('|main','|0')]=S.sched[k];return}
+82:    if(k.indexOf('|peds')>0){out[k.replace('|peds','|1')]=S.sched[k];return}
+83:    out[k+'|0']=S.sched[k];out[k+'|1']=S.sched[k];
+84:  });
+85:  S.sched=out;
+86:}
+87:/* A toast disappears and the page is rebuilt on every answer. This notice lives
+88:   outside the page, so a storage failure stays visible throughout this visit. */
+89:function warnSaveFailure(message,id='saveWarning'){
+90:  if(document.getElementById(id))return;
+91:  const box=document.createElement('div');
+92:  box.id=id;
+93:  box.setAttribute('role','alert');
+94:  box.innerHTML='<span class="warnico" aria-hidden="true">!</span>'+(message||'<p><strong>Saving failed during this visit.</strong> Recent progress may be missing from storage. Keep this tab open and download a copy before leaving.</p>'+
+95:    '<button class="btn sec" onclick="exportData()">Download progress</button>');
+96:  const page=document.getElementById('page');
+97:  page.parentNode.insertBefore(box,page);
+98:  if(!message)toast('Progress could not be saved. Please read the saving warning.');
+99:}
+100:/* The aggregators deliberately tolerate absent files. Checking their inputs
+101:   here prevents a missing or unparseable script from looking like a small bank.
+102:   Empty arrays and maps are valid, including subjects still being prepared. */
+103:warnSaveFailure.checkData=function(){
+104:  const missing=[];
+105:  const subjects=[
+106:    ['ENT','ent',['Q_ENT','C_ENT'],['T_ENT']],
+107:    ['Pediatrics','pediatrics',['Q_PEDS','Q_PEDS_EP','Q_PEDS_EP2','C_PEDS'],['T_PEDS']],
+108:    ['Ophthalmology','ophtho',['Q_OPHTHO','Q_OPHTHO_EP','Q_OPHTHO_EP2','C_OPHTHO'],['T_OPHTHO']],
+109:    ['Neuro/Psych','neuropsych',['Q_NEURO','C_NEURO'],['T_NEURO']]
+110:  ];
+111:  /* The launch build leaves out the data for a locked subject on purpose, and
+112:     every theory file while that section is locked. Looking for those files is
+113:     looking for something the build was told not to ship, which is why the
+114:     upload showed all four subjects failing while the rail counted 4,049
+115:     questions. Only the files that should be present are checked. */
+116:  let locked=[];
+117:  try{if(typeof LOCKED_MODULES!=='undefined'&&Array.isArray(LOCKED_MODULES))locked=LOCKED_MODULES}catch(e){}
+118:  let notesLocked=false;
+119:  try{notesLocked=typeof THEORY_LOCKED!=='undefined'&&!!THEORY_LOCKED}catch(e){}
+120:  subjects.forEach(s=>{
+121:    if(locked.indexOf(s[1])>=0)return;
+122:    const banksGone=s[2].some(k=>!Array.isArray(window[k]));
+123:    const notesGone=!notesLocked&&s[3].some(k=>
+124:      !window[k]||typeof window[k]!=='object'||Array.isArray(window[k]));
+125:    if(banksGone||notesGone)missing.push(s[0]);
+126:  });
+127:  /* MODULES is a lexical constant, so looking on window would falsely report
+128:     a failure on every healthy boot. Without the catalogue no subject can open. */
+129:  let catalogue=false;
+130:  try{catalogue=typeof MODULES!=='undefined'&&Array.isArray(MODULES)}catch(e){}
+131:  if(!catalogue)missing.push('all subjects (module list)');
+132:  if(missing.length)warnSaveFailure('<p><strong>Part of the question bank failed to load.</strong> Affected: '+
+133:    missing.join(', ')+'. Reload the page.'+(catalogue?' You can study the subjects that loaded.':'')+'</p>', 'dataWarning');
+134:  return catalogue;
+135:};
+136:async function save(){
+137:  S.updatedAt=Date.now();
+138:  let saved=false;
+139:  try{
+140:    if(storageMode==='cloud'&&window.storage&&window.storage.set){
+141:      const key=KEY,raw=JSON.stringify(S),storage=window.storage;
+142:      /* Each key has one active write and one replaceable pending write, so
+143:         a slow earlier request cannot overwrite a later answer. Keeping the
+144:         key and payload together also prevents writes crossing profiles.
+145:         A superseded caller gets false because its payload was not persisted. */
+146:      const writes=save.cloudWrites||(save.cloudWrites=new Map());
+147:      let queue=writes.get(key);
+148:      if(!queue){queue={running:false,pending:null};writes.set(key,queue)}
+149:      saved=await new Promise(resolve=>{
+150:        if(queue.pending)queue.pending.resolve(false);
+151:        queue.pending={raw:raw,storage:storage,resolve:resolve};
+152:        if(queue.running)return;
+153:        queue.running=true;
+154:        (async()=>{
+155:          while(queue.pending){
+156:            const job=queue.pending;queue.pending=null;
+157:            let ok=false;
+158:            try{await job.storage.set(key,job.raw);ok=true}catch(e){warnSaveFailure()}
+159:            job.resolve(ok);
+160:          }
+161:          writes.delete(key);
+162:        })();
+163:      });
+164:    }
+165:    else if(storageMode==='local'){localStorage.setItem(KEY,JSON.stringify(S));saved=true}
+166:    else throw new Error('No persistent storage is available');
+167:  }catch(e){warnSaveFailure()}
+168:  schedulePush();
+169:  bakSchedule();
+170:  return saved;
+171:}
+172:
+173:/* ============ HELPERS ============ */
+174:const $=id=>document.getElementById(id);
+175:const chapterName=id=>{for(const m of MODULES)for(const g of m.groups)for(const c of g.chapters)if(c[0]===id)return c[1];return id};
+176:const moduleOf=id=>MODULES.find(m=>m.id===id);
+177:/* The three question banks the material comes from. Order here is the order the
+178:   filter chips render in. `bank` on a question is one of these ids; anything
+179:   missing one is treated as 'endpoint', which is where every question
+180:   transcribed before the field existed came from. */
+181:const BANKS=[
+182:  {id:'endpoint', name:'Endpoint',   hex:'#9a6b1f'},
+183:  {id:'house',    name:'House',      hex:'#2f6b8f'},
+184:  {id:'gradegain',name:'Grade Gain', hex:'#8f3f5c'}
+185:];
+186:/* Module id -> artwork basename. The ids and the filenames diverge (neuropsych
+187:   vs mod-neuro), so this map exists rather than a string template. */
+188:const MOD_ART={ent:'mod-ent',ophtho:'mod-ophtho',neuropsych:'mod-neuro',pediatrics:'mod-peds'};
+189:
+190:/* A question's clinical photograph, cropped out of the bank by
+191:   Design\scripts\q-images.ps1 and named for the source page it came from â€”
+192:   q.image is 'q-2844', which cites ENT endpoint.pdf p.2844 by itself.
+193:
+194:   âš ï¸ The path is BUILT HERE and never written as a literal src in a template.
+195:   A single-file build has no assets\ folder, so the bundler has to rewrite
+196:   these to data: URIs â€” the same reason poseSrc() and MOD_ART exist. One
+197:   function is one place for it to intercept; a literal src is a broken image
+198:   that the bundler cannot see and that throws nothing when it fails. */
+199:function qImgSrc(name){ return `assets/q/${name}.jpg`; }
+200:
+201:/* The figure block. `imgAlt` is the bank's own wording for what the picture is
+202:   ("otoscopy of the left ear"); where a question is unanswerable without the
+203:   picture the caption says so, because a learner whose images failed to load
+204:   otherwise just sees a question that makes no sense. */
+205:function qFigure(q){
+206:  if(!q.image) return '';
+207:  const alt=q.imgAlt||'Clinical image printed with this question';
+208:  /* imgSpoils: the printed figure answers the question, so it stays blurred until the answer is shown. */
+209:  const veil=q.imgSpoils&&!(typeof Q!=='undefined'&&Q.shown);
+210:  return `<figure class="qfig${veil?' veil':''}">
+211:    <div class="qfig-media"><img src="${qImgSrc(q.image)}" alt="${esc(alt)}" onclick="openZoom('${q.image}')" onerror="qFigure.failed(this)">
+212:      <p class="qfig-failure" role="alert" hidden>The figure could not be loaded. This question needs it. Reload the page to try again.</p></div>
+213:    <figcaption>${esc(alt)}${q.imgEssential?' â€” this question cannot be answered without it.':''}
+214:      <span class="qfig-hint">${veil?'Revealed after you answer.':'Tap to enlarge.'}</span></figcaption>
+215:  </figure>`;
+216:}
+217:/* The image gives up its place to an explanation and loses the zoom it can no
+218:   longer open, so a missing file cannot leave the browser's broken-image glyph
+219:   sitting in a question the student cannot answer without the picture. The
+220:   caption's invitation to enlarge goes with it, because there is nothing left
+221:   to enlarge. */
+222:qFigure.failed=function(img){
+223:  img.onerror=null;
+224:  img.onclick=null;
+225:  img.style.display='none';
+226:  img.setAttribute('aria-hidden','true');
+227:  const box=img.parentNode;
+228:  box.querySelector('.qfig-failure').hidden=false;
+229:  const fig=box.closest('.qfig');
+230:  const hint=fig?fig.querySelector('.qfig-hint'):null;
+231:  if(hint)hint.hidden=true;
+232:};
+233:function openZoom(name){
+234:  const d=document.createElement('div');
+235:  d.className='qzoom';
+236:  d.innerHTML=`<img src="${qImgSrc(name)}" alt="" onerror="qFigure.failed(this)">
+237:    <p class="qfig-failure" role="alert" hidden>The figure could not be loaded. This question needs it. Reload the page to try again. Tap to close.</p>`;
+238:  d.onclick=()=>d.remove();
+239:  document.body.appendChild(d);
+240:}
+241:
+242:const bankOf=q=>q.bank||'endpoint';
+243:const bankName=b=>(BANKS.find(x=>x.id===b)||{name:b}).name;
+244:/* ---- a question can belong to MORE THAN ONE bank ------------------------
+245:   The commercial banks reprint each other, so the same question genuinely
+246:   appears in two of them. It used to be stored as TWO entries, one per bank,
+247:   which meant that ticking both sources showed the learner the same question
+248:   twice (user, 2026-08-03).
+249:
+250:   So a question now carries its origin bank in `bank` and any OTHER bank it
+251:   also appears in in `alsoIn`. One entry, several banks: it shows up whichever
+252:   of its banks is ticked, exactly once however many are ticked, and vanishes
+253:   only when none of them is.
+254:
+255:   âš ï¸ EVERYTHING THAT TOUCHES A BANK MUST GO THROUGH banksOf(), NOT bankOf().
+256:   Miss one and the failure is silent and asymmetric â€” the question filters
+257:   correctly but is missing from a count, or counts but cannot be filtered to.
+258:   `bankOf` survives only as "which bank was this transcribed from", which is
+259:   what the id prefix and the source citation record.
+260:   ------------------------------------------------------------------------ */
+
+--- app/js/gate.js 1-132 / 937 ---
+1:function cloudConfig(){
+2:  if(FIREBASE_CONFIG&&FIREBASE_CONFIG.apiKey)return FIREBASE_CONFIG;
+3:  try{
+4:    const c=JSON.parse(localStorage.getItem('wardround.fbconfig')||'null');
+5:    if(c&&c.apiKey)return c;
+6:  }catch(e){}
+7:  return null;
+8:}
+9:function cloudEnabled(){return location.protocol!=='file:'&&!!cloudConfig()}
+10:
+11:function loadSDK(){
+12:  if(window.firebase)return Promise.resolve(true);
+13:  if(sdkLoading)return sdkLoading;
+14:  sdkLoading=new Promise(res=>{
+15:    let settled=false;
+16:    const done=v=>{if(!settled){settled=true;res(v)}};
+17:    /* never let a slow or blocked CDN strand the user on the splash */
+18:    setTimeout(()=>done(!!window.firebase),8000);
+19:    let i=0;
+20:    const next=()=>{
+21:      if(settled)return;
+22:      if(i>=SDK.length)return done(!!window.firebase);
+23:      const s=document.createElement('script');
+24:      s.src=SDK[i++];
+25:      s.onload=next;
+26:      s.onerror=()=>done(false);
+27:      document.head.appendChild(s);
+28:    };
+29:    next();
+30:  });
+31:  return sdkLoading;
+32:}
+33:async function initCloud(){
+34:  if(!cloudEnabled())return false;
+35:  const cfg=cloudConfig();
+36:  if(!cfg)return false;
+37:  const ok=await loadSDK();
+38:  if(!ok)return false;
+39:  try{
+40:    if(!fbApp)fbApp=firebase.initializeApp(cfg);
+41:  }catch(e){
+42:    if(firebase.apps&&firebase.apps.length)fbApp=firebase.apps[0];
+43:    else return false;
+44:  }
+45:  /* keep the session across browser restarts */
+46:  try{await firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)}catch(e){}
+47:  return true;
+48:}
+49:function isStandalone(){
+50:  return (window.navigator&&window.navigator.standalone===true)||
+51:         (window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches);
+52:}
+53:let lastSyncAt=0;
+54:const syncClock=ts=>new Date(ts).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
+55:function setSync(s){
+56:  if(s==='idle')lastSyncAt=Date.now();
+57:  if(s==='off')lastSyncAt=0;
+58:  syncState=s;
+59:  if(s==='err'){if(!retryTimer)retryTimer=setInterval(retrySync,180000)}
+60:  else stopRetry();
+61:  const el=$('railSync');if(el&&me)drawRailSync();
+62:}
+63:function drawRailSync(){
+64:  const el=$('railSync');
+65:  if(!el)return;
+66:  if(!fbUser){el.innerHTML='';el.style.display='none';return}
+67:  el.style.display='flex';
+68:  /* "Synced" alone is a claim with no time on it, and a push that quietly
+69:     stopped an hour ago looks identical to one that finished a second ago.
+70:     Say when. */
+71:  const when=lastSyncAt?' '+syncClock(lastSyncAt):'';
+72:  const label={idle:'Synced'+when,busy:'Syncing\u2026',err:'Sync failed \u2014 retry on next change',off:'Offline'}[syncState]||'Synced'+when;
+73:  const cls={idle:'ok',busy:'busy',err:'err',off:''}[syncState]||'ok';
+74:  el.innerHTML=`<span class="syncdot ${cls}"></span>${label}`;
+75:}
+76:
+77:async function signInGoogle(){
+78:  const ok=await initCloud();
+79:  if(!ok){toast('Sync is not available right now');return}
+80:  const prov=new firebase.auth.GoogleAuthProvider();
+81:  prov.setCustomParameters({prompt:'select_account'});
+82:  /* popups are unreliable inside the iOS home-screen app \u2014 use a redirect there */
+83:  if(isStandalone()){
+84:    try{await firebase.auth().signInWithRedirect(prov)}
+85:    catch(e){toast('Sign-in failed: '+(e&&e.code||e))}
+86:    return;
+87:  }
+88:  try{
+89:    const res=await firebase.auth().signInWithPopup(prov);
+90:    await afterSignIn(res.user);
+91:  }catch(e){
+92:    const m=String(e&&e.code||e);
+93:    if(/popup-closed|cancelled/i.test(m)){toast('Sign-in cancelled');return}
+94:    if(/unauthorized-domain/i.test(m)){toast('This address is not authorised in Firebase');return}
+95:    if(/popup-blocked/i.test(m)){
+96:      try{await firebase.auth().signInWithRedirect(prov)}catch(e2){toast('Sign-in blocked by the browser')}
+97:      return;
+98:    }
+99:    toast('Sign-in failed: '+m);
+100:  }
+101:}
+102:async function afterSignIn(u){
+103:  resetCloud();cloudAuth++;
+104:  fbUser=u;
+105:  const auth=cloudAuth;
+106:  const local=new Map(profiles.map(p=>[p.id,JSON.stringify(rosterProfile(p))]));
+107:  /* Signing in while studying keeps the local profile and merges its work.
+108:     The picker stays usable while another device's roster is arriving. */
+109:  if(me)pullCloud();else showGate('profiles');
+110:  try{
+111:    const ref=rosterRef();
+112:    if(!ref)return;
+113:    const snap=await cloudWait(ref.get());
+114:    if(auth!==cloudAuth||!fbUser||fbUser.uid!==u.uid)return;
+115:    rosterList(snap.exists?snap.data():{}).forEach(p=>{
+116:      const old=profiles.find(x=>x.id===p.id);
+117:      if(!old){if(!local.has(p.id))profiles.push(Object.assign({pin:''},p))}
+118:      else if(local.get(p.id)===JSON.stringify(rosterProfile(old)))Object.assign(old,p);
+119:    });
+120:    saveProfiles();
+121:    if(!me&&!draft){
+122:      showGate('profiles');
+123:      if(!profiles.length){
+124:        draft={id:'g:'+u.uid,name:(u.displayName||'Me').split(' ')[0],
+125:               /* No Google picture, so the account is given a portrait rather
+126:                  than one house default: avKey hashes whatever it is handed, so
+127:                  two colleagues signing in on the same laptop are not twins. */
+128:               av:u.photoURL?{t:'p',v:u.photoURL,c:'#6d4c7d'}
+129:                            :{t:'g',v:avKey({v:u.uid||u.email||''}),c:'#6d4c7d'},pin:''};
+130:        drawProfileEditor(false);
+131:      }
+132:    }
+
+--- app/js/gate.js 149-330 / 937 ---
+149:function resetCloud(){
+150:  clearTimeout(pushTimer);pushTimer=null;cloudSession=null;stopRetry();
+151:}
+152:function stopRetry(){clearInterval(retryTimer);retryTimer=null}
+153:/* A push that failed offline must not go silent until reload â€” retry once
+154:   the browser says we're back online, and slowly meanwhile in case that event
+155:   never fires. Only runs while a session exists and the last sync actually failed. */
+156:function retrySync(){
+157:  if(syncState!=='err')return;
+158:  if(!cloudEnabled()||!fbUser){stopRetry();return}
+159:  if(currentCloud(cloudSession))pushCloud(cloudSession);
+160:  else if(me)pullCloud();
+161:}
+162:window.addEventListener('online',retrySync);
+163:function currentCloud(c){
+164:  return !!(c&&c===cloudSession&&fbUser&&me&&c.auth===cloudAuth&&
+165:            c.uid===fbUser.uid&&c.pid===me.id);
+166:}
+167:function rosterRef(uid=fbUser&&fbUser.uid){
+168:  if(!uid||!cloudEnabled()||!window.firebase||!firebase.firestore)return null;
+169:  try{return firebase.firestore().collection('users').doc(uid)}catch(e){return null}
+170:}
+171:function docRef(){
+172:  if(!me||!fbUser)return null;
+173:  const ref=rosterRef();
+174:  return ref?ref.collection('profiles').doc(me.id):null;
+175:}
+176:function rosterProfile(p){
+177:  const av=p.av||{};
+178:  return {id:p.id,name:p.name||'Untitled',av:{t:av.t||'e',v:av.v||'',c:av.c||'#6d4c7d',f:av.f||'plain'}};
+179:}
+180:function rosterList(data,p,remove=false){
+181:  const list=(Array.isArray(data.profiles)?data.profiles:[])
+182:    .filter(x=>x&&typeof x.id==='string'&&x.id&&(!p||x.id!==p.id)).map(rosterProfile);
+183:  if(p&&!remove)list.push(rosterProfile(p));
+184:  return list;
+185:}
+186:async function syncRoster(p,remove=false){
+187:  const ref=rosterRef(),auth=cloudAuth;
+188:  if(!ref)return;
+189:  const entry=rosterProfile(p);
+190:  let live=true;
+191:  try{
+192:    await cloudWait(firebase.firestore().runTransaction(async tx=>{
+193:      const snap=await tx.get(ref);
+194:      if(!live||auth!==cloudAuth||!fbUser)return;
+195:      /* Keep a legacy state until profile entry can adopt it atomically. */
+196:      tx.set(ref,{profiles:rosterList(snap.exists?snap.data():{},entry,remove)},{merge:true});
+197:      if(remove)tx.delete(ref.collection('profiles').doc(entry.id));
+198:    }));
+199:  }catch(e){if(auth===cloudAuth)setSync('err')}
+200:  finally{live=false}
+201:}
+202:function mergeStates(a,b){
+203:  const at=a.updatedAt||0, bt=b.updatedAt||0;
+204:  const newer=at>=bt?a:b, older=at>=bt?b:a;
+205:  const out=JSON.parse(JSON.stringify(newer));
+206:  /* Answering on another device advances updatedAt without changing the
+207:     student's semester. Only an explicit selection advances this clock.
+208:     Equal clocks use the same tie-break in either merge direction. */
+209:  const termA=termChoice(a.term), termB=termChoice(b.term);
+210:  const chosenTerm=!termA?termB:!termB?termA:
+211:    (termA.at>termB.at||(termA.at===termB.at&&termA.id>=termB.id)?termA:termB);
+212:  if(chosenTerm)out.term=chosenTerm; else delete out.term;
+213:  out.answers={};
+214:  const ids=new Set(Object.keys(a.answers||{}).concat(Object.keys(b.answers||{})));
+215:  ids.forEach(id=>{
+216:    const x=(a.answers||{})[id], y=(b.answers||{})[id];
+217:    if(!x){out.answers[id]=y;return}
+218:    if(!y){out.answers[id]=x;return}
+219:    out.answers[id]=((x.at||0)>=(y.at||0))?x:y;
+220:  });
+221:  ['srs','hl','flags','conf','days','sched'].forEach(k=>{
+222:    out[k]=Object.assign({},older[k]||{},newer[k]||{});
+223:  });
+224:  /* Each chapter has its own clock: practising another chapter on a second
+225:     device must not discard a more recent place in this one. */
+226:  out.resumeByChapter={};
+227:  const chapters=new Set(Object.keys(a.resumeByChapter||{}).concat(Object.keys(b.resumeByChapter||{})));
+228:  chapters.forEach(cid=>{
+229:    const x=(a.resumeByChapter||{})[cid], y=(b.resumeByChapter||{})[cid];
+230:    out.resumeByChapter[cid]=!x?y:!y?x:((x.at||0)>=(y.at||0)?x:y);
+231:  });
+232:  /* A note and a report are written per question and stamped, so they merge the
+233:     way answers do. Object.assign would let the whole of an older device's notes
+234:     lose to the whole of a newer one's, which is how a note gets typed on a phone
+235:     and vanishes on a laptop. */
+236:  ['notes','reports'].forEach(k=>{
+237:    out[k]={};
+238:    const keys=new Set(Object.keys(a[k]||{}).concat(Object.keys(b[k]||{})));
+239:    keys.forEach(id=>{
+240:      const x=(a[k]||{})[id], y=(b[k]||{})[id];
+241:      out[k][id]=!x?y:!y?x:((x.at||0)>=(y.at||0)?x:y);
+242:    });
+243:  });
+244:  out.schedule=newer.schedule||older.schedule||null;
+245:  /* A paper travels as one record. Combining picks from different sittings would
+246:     invent a paper; a dated empty record also prevents an older copy returning. */
+247:  const x=a.mockResume, y=b.mockResume;
+248:  out.mockResume=!x?(y||null):!y?x:
+249:    x.at!==y.at?(x.at>y.at?x:y):
+250:    x.paper===null?x:y.paper===null?y:
+251:    (JSON.stringify(x)>=JSON.stringify(y)?x:y);
+252:  out.updatedAt=Math.max(at,bt);
+253:  return out;
+254:}
+255:async function pullCloud(){
+256:  const ref=docRef();
+257:  if(!ref)return;
+258:  if(!currentCloud(cloudSession))cloudSession={uid:fbUser.uid,pid:me.id,auth:cloudAuth,
+259:    ref:ref,key:KEY,mode:storageMode,running:false,again:false};
+260:  await pushCloud(cloudSession);
+261:}
+262:function schedulePush(){
+263:  const c=cloudSession;
+264:  if(!currentCloud(c))return;
+265:  clearTimeout(pushTimer);
+266:  pushTimer=setTimeout(()=>{if(currentCloud(c))pushCloud(c)},1200);
+267:}
+268:async function pushCloud(c=cloudSession){
+269:  if(!currentCloud(c))return;
+270:  if(c.running){c.again=true;return}
+271:  c.running=true;c.again=false;
+272:  let live=true;
+273:  setSync('busy');
+274:  try{
+275:    const local=JSON.parse(JSON.stringify(S)),entry=rosterProfile(me),root=rosterRef(c.uid);
+276:    /* mergeStates rebuilds answers and resumeByChapter key by key, so its output
+277:       does not compare byte-for-byte against its input even when nothing moved.
+278:       Merging local with itself gives the same normal form, which is what makes
+279:       the comparison below mean "another device changed something" rather than
+280:       "the keys came back in a different order". */
+281:    const before=JSON.stringify(mergeStates(local,local));
+282:    const merged=await cloudWait(firebase.firestore().runTransaction(async tx=>{
+283:      const roster=await tx.get(root),snap=await tx.get(c.ref);
+284:      if(!live||!currentCloud(c))return null;
+285:      const data=roster.exists?roster.data():{};
+286:      let out=local;
+287:      if(snap.exists&&snap.data().state)out=mergeStates(out,JSON.parse(snap.data().state));
+288:      /* Removing the old field and adopting its contents in the same commit
+289:         makes retries and simultaneous first sign-ins adopt it only once. */
+290:      if(Object.prototype.hasOwnProperty.call(data,'state'))out=mergeStates(out,JSON.parse(data.state));
+291:      tx.set(c.ref,{state:JSON.stringify(out),updatedAt:Date.now()});
+292:      const list=rosterList(data);
+293:      if(!list.some(p=>p.id===entry.id))list.push(entry);
+294:      tx.set(root,{profiles:list});
+295:      return out;
+296:    }));
+297:    if(!merged||!currentCloud(c))return;
+298:    /* Include edits made during the request without scheduling an endless
+299:       save/push loop. Their existing debounce sends them on the next pass. */
+300:    S=mergeStates(S,merged);
+301:    if(!S.hl)S.hl={};
+302:    /* Apply a remote semester before another input can use the old quiz.
+303:       Profile entry draws its own screen after loading has finished. */
+304:    const termChanged=!termEntryPending&&termChoice(S.term)&&S.term.id!==activeTerm;
+305:    if(termChanged)render();
+306:    const raw=JSON.stringify(S);
+307:    try{
+308:      if(c.mode==='cloud'&&window.storage&&window.storage.set)await cloudWait(window.storage.set(c.key,raw));
+309:      else if(c.mode==='local')localStorage.setItem(c.key,raw);
+310:    }catch(e){warnSaveFailure()}
+311:    if(!currentCloud(c))return;
+312:    bakSchedule();
+313:    /* A push runs 1.2 s after every answer. Repainting unconditionally would
+314:       rebuild the page under the student mid-question â€” losing the caret in a
+315:       case's answer box â€” for a merge that changed nothing, which is what a
+316:       merge changes on a single device. Repaint only when a second device
+317:       actually sent something back. */
+318:    if(!termEntryPending&&!termChanged&&JSON.stringify(merged)!==before)render();
+319:    setSync('idle');
+320:  }catch(e){if(currentCloud(c))setSync('err')}
+321:  finally{
+322:    live=false;c.running=false;
+323:    if(currentCloud(c)&&c.again)schedulePush();
+324:  }
+325:}
+326:
+327:/* restore an existing session on load */
+328:async function restoreSession(){
+329:  if(!cloudEnabled())return false;
+330:  const ok=await initCloud();
+
+--- app/js/gate.js 708-765 / 937 ---
+708:async function enterProfile(p){
+709:  flushNote();
+710:  resetCloud();
+711:  const entry=++profileLoad;
+712:  termEntryPending=true;
+713:  termLoading=true;
+714:  activateTerm(null,true);
+715:  me=p;
+716:  KEY=stateKey(p.id);
+717:  try{localStorage.setItem(LASTKEY,p.id)}catch(e){}
+718:  S={answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},notes:{},reports:{},schedule:null};
+719:  showGate('profiles');
+720:  await loadState();
+721:  if(entry!==profileLoad||me!==p)return;
+722:  /* A new device may already have this preference in the cloud. Try that
+723:     before asking for another selection; offline entry still reaches the picker. */
+724:  if(fbUser&&!termChoice(S.term)){
+725:    await pullCloud();
+726:    if(entry!==profileLoad||me!==p)return;
+727:  }
+728:  termLoading=false;
+729:  if(!termChoice(S.term)){showGate('profiles');return}
+730:  finishProfileEntry();
+731:}
+732:function finishProfileEntry(){
+733:  termEntryPending=false;
+734:  termLoading=false;
+735:  activateTerm(S.term.id,true);
+736:  sanitiseBanks();
+737:  migrateColours();
+738:  closeModal();hideGate();
+739:  view={name:'home'};
+740:  /* The companion belongs to a profile session, not to the gate â€” she appears
+741:     once someone is actually studying. A session left running is picked back
+742:     up here rather than restarted, because its clock is a timestamp. */
+743:  CLEP.seen={}; _clLastView='';
+744:  clepShow();
+745:  if(sess())sessStartTick(); else sessStopTick();
+746:  paintBakBtn();
+747:  render();
+748:  if(hasSavedMock())offerMockResume();
+749:  if(bakRestored){
+750:    toast('Progress restored from the backup taken '+bakWhen(bakRestored));
+751:    bakRestored=0;
+752:  }
+753:  /* Every profile under the account syncs, including one created offline.
+754:     Entry is already usable while the optional cloud merge runs. */
+755:  if(fbUser&&!cloudSession)pullCloud();
+756:}
+757:function leaveProfile(){
+758:  flushNote();
+759:  resetCloud();
+760:  me=null;
+761:  termEntryPending=false;
+762:  termLoading=false;
+763:  activateTerm(null,true);
+764:  showGate();
+765:}
+
+--- app/js/gate.js 882-915 / 937 ---
+882:function saveProfile(){
+883:  const n=$('pfName');
+884:  draft.name=((n&&n.value)||draft.name||'').trim()||'Untitled';
+885:  if(draft.pin&&draft.pin.length!==4){toast('PIN must be 4 digits, or blank');return}
+886:  const i=profiles.findIndex(p=>p.id===draft.id);
+887:  if(i>=0)profiles[i]=draft; else profiles.push(draft);
+888:  saveProfiles();
+889:  const saved=draft;draft=null;
+890:  syncRoster(saved);
+891:  closeModal();
+892:  if(me&&me.id===saved.id){me=saved;render();toast('Profile updated')}
+893:  else if(!me)enterProfile(saved);
+894:  else{showGate()}
+895:}
+896:function deleteProfile(id){
+897:  const p=profiles.find(x=>x.id===id);
+898:  if(!p)return;
+899:  showModal(`<h3>Delete ${esc(p.name)}?</h3>
+900:   <p>This erases that profile's answers, highlights, schedule and review deck. It cannot be undone.</p>
+901:   <div class="modal-actions">
+902:     <button class="btn sec" onclick="editProfile('${id}')">Cancel</button>
+903:     <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="doDeleteProfile('${id}')">Delete</button>
+904:   </div>`);
+905:}
+906:function doDeleteProfile(id){
+907:  const p=profiles.find(x=>x.id===id);
+908:  if(!p)return;
+909:  if(me&&me.id===id){resetCloud();me=null}
+910:  profiles=profiles.filter(p=>p.id!==id);
+911:  saveProfiles();
+912:  try{localStorage.removeItem(stateKey(id))}catch(e){}
+913:  syncRoster(p,true);
+914:  closeModal();showGate();toast('Profile deleted');
+915:}
+
+--- app/js/boot.js 35-120 / 397 ---
+35:
+36:   Scope: this is a browser-local safety net. It survives a crash, a bad write
+37:   and an accidental reset. It does NOT survive clearing browser data or moving
+38:   to another machine â€” signing in is what covers those.
+39:   ============================================================================ */
+40:let bakTimer=null, bakLast=0, bakState='ok', bakRestored=0;
+41:const BAK_MAX_BYTES=1500000;    /* localStorage gives ~5 MB; the live state and
+42:                                   the profile list have to fit beside this */
+43:
+44:function bakKey(){ return 'wardround.bak.'+((me&&me.id)||'local') }
+45:function bakRead(){
+46:  try{
+47:    const o=JSON.parse(localStorage.getItem(bakKey())||'null');
+48:    if(o&&Array.isArray(o.snaps))return o;
+49:  }catch(e){}
+50:  return {v:1,snaps:[]};
+51:}
+52:function bakWrite(box){
+53:  try{
+54:    localStorage.setItem(bakKey(),JSON.stringify(box));
+55:    bakState='ok';
+56:  }catch(e){
+57:    /* out of room â€” drop back to the two most recent and try once more before
+58:       admitting it. A backup that throws is worse than a shallow one. */
+59:    try{
+60:      box.snaps=box.snaps.slice(0,2);
+61:      localStorage.setItem(bakKey(),JSON.stringify(box));
+62:      bakState='ok';
+63:    }catch(e2){ bakState='full' }
+64:  }
+65:  paintBakBtn();
+66:}
+67:/* Newest three always; then one per day for up to seven days; then whatever
+68:   fits in the byte budget. Two survive the budget no matter what. */
+69:function bakPrune(snaps){
+70:  snaps.sort((a,b)=>b.at-a.at);
+71:  const keep=[], days={};
+72:  snaps.forEach((s,i)=>{
+73:    if(i<3){keep.push(s);days[s.day]=1;return}
+74:    if(!days[s.day]&&Object.keys(days).length<7){keep.push(s);days[s.day]=1}
+75:  });
+76:  const out=[]; let total=0;
+77:  for(const s of keep){
+78:    total+=s.json.length;
+79:    if(total>BAK_MAX_BYTES&&out.length>=2)break;
+80:    out.push(s);
+81:  }
+82:  return out;
+83:}
+84:function bakSnapshot(){
+85:  if(!me)return;
+86:  let json;
+87:  try{ json=JSON.stringify(S) }catch(e){ return }
+88:  const box=bakRead();
+89:  /* nothing changed since the last one â€” do not spend a slot on a duplicate */
+90:  if(box.snaps[0]&&box.snaps[0].json===json){ paintBakBtn(); return }
+91:  box.snaps.unshift({at:Date.now(),day:todayISO(),json:json});
+92:  box.snaps=bakPrune(box.snaps);
+93:  bakWrite(box);
+94:}
+95:/* Debounced off save(): a burst of answers collapses into one snapshot, and
+96:   after that at most one every four minutes. */
+97:function bakSchedule(){
+98:  if(bakTimer)return;
+99:  const wait=Math.max(4000,240000-(Date.now()-bakLast));
+100:  bakTimer=setTimeout(()=>{ bakTimer=null; bakLast=Date.now(); bakSnapshot() },wait);
+101:}
+102:function bakNewest(){
+103:  /* Walks the list newest-first. The previous version took only snaps[0], so a
+104:     truncated or corrupt newest snapshot was a complete outage: loadState()
+105:     would conclude there was nothing to rescue while five perfectly good
+106:     snapshots sat behind the bad one. Walk past every entry that fails to
+107:     parse, keep returning the same {at,state} shape the caller already reads,
+108:     and only return null when nothing in the list is usable. A rescue path is
+109:     the wrong place to delete anything â€” bad entries are left alone in storage
+110:     so bakRestore() can still see them and the snapshot history is not
+111:     quietly rewritten by the one path that exists to be safe. */
+112:  const box=bakRead();
+113:  const snaps=box.snaps||[];
+114:  for(let i=0;i<snaps.length;i++){
+115:    const s=snaps[i];
+116:    if(!s)continue;
+117:    try{ return {at:s.at,state:JSON.parse(s.json)} }catch(e){}
+118:  }
+119:  return null;
+120:}
+
+--- app/js/sessions.js 300-380 / 607 ---
+300:  let si=0,used=0;
+301:  missed.forEach(m=>{
+302:    while(si<slots.length&&used>=slots[si].cap){si++;used=0}
+303:    if(si>=slots.length){catchups.push(Object.assign({to:null,kind:null},m));return}
+304:    catchups.push(Object.assign({to:slots[si].date,kind:slots[si].kind},m));
+305:    used++;
+306:  });
+307:  return {rows,catchups,overflow:catchups.filter(c=>!c.to).length,
+308:          capacity:slots.reduce((n,s)=>n+s.cap,0)};
+309:}
+310:
+311:
+312:/* ============ SCHEDULE EDITOR ============ */
+313:function editItem(di,idx,field,val){
+314:  const s=activeSchedule();
+315:  if(!s[di]||!s[di].items[idx])return;
+316:  s[di].items[idx][field]=val;
+317:  save();
+318:}
+319:function cycleColour(di,idx){
+320:  const s=activeSchedule();
+321:  const it=s[di]&&s[di].items[idx];
+322:  if(!it)return;
+323:  const cur=SUBJ_COLOURS.findIndex(c=>c[0].toLowerCase()===String(it.hex).toLowerCase());
+324:  it.hex=SUBJ_COLOURS[(cur+1)%SUBJ_COLOURS.length][0];
+325:  saveSchedule();
+326:}
+327:function addItem(di){
+328:  const s=activeSchedule();
+329:  if(!s[di])return;
+330:  s[di].rest=false;
+331:  s[di].items.push({label:'',text:'',hex:'#7a6a55'});
+332:  saveSchedule();
+333:}
+334:function delItem(di,idx){
+335:  const s=activeSchedule();
+336:  if(!s[di])return;
+337:  const date=s[di].date;
+338:  s[di].items.splice(idx,1);
+339:  /* marks are index-based, so re-key them for this day */
+340:  const keep={};
+341:  Object.keys(S.sched).forEach(k=>{
+342:    const [d,i]=k.split('|');
+343:    if(d!==date){keep[k]=S.sched[k];return}
+344:    const n=+i;
+345:    if(n===idx)return;
+346:    keep[d+'|'+(n>idx?n-1:n)]=S.sched[k];
+347:  });
+348:  S.sched=keep;
+349:  saveSchedule();
+350:}
+351:function addDay(){
+352:  const inp=$('newDate');
+353:  const v=inp&&inp.value;
+354:  if(!v){toast('Pick a date first');return}
+355:  const s=activeSchedule();
+356:  if(s.some(d=>d.date===v)){toast('That day is already in the plan');return}
+357:  s.push({date:v,rest:false,items:[]});
+358:  s.sort((a,b)=>a.date<b.date?-1:1);
+359:  saveSchedule();toast('Day added');
+360:}
+361:function delDay(di){
+362:  const s=activeSchedule();
+363:  if(!s[di])return;
+364:  const date=s[di].date;
+365:  s.splice(di,1);
+366:  Object.keys(S.sched).forEach(k=>{if(k.split('|')[0]===date)delete S.sched[k]});
+367:  saveSchedule();toast('Day removed');
+368:}
+369:function nextFreeDate(){
+370:  const s=activeSchedule();
+371:  if(!s.length)return todayISO();
+372:  const last=s[s.length-1].date;
+373:  const d=new Date(last+'T00:00:00');
+374:  d.setDate(d.getDate()+1);
+375:  return isoLocal(d);
+376:}
+377:function resetSchedule(){
+378:  showModal(`<h3>Clear the whole plan?</h3>
+379:   <p>Every day you have written, and every done / missed mark on them, is removed and the schedule goes back to empty. There is no built-in plan to fall back on, so this cannot be undone. Your answers, highlights and review deck are not affected.</p>
+380:   <div class="modal-actions">
+
+--- app/index.html 1-120 / 145 ---
+13:<meta name="description" content="Herophilus â€” clinical question bank and revision schedule">
+17:     script, or one at the end of <body>, runs after first paint and the flash
+20:<script>
+29:</script>
+31:     the stylesheet: a classic script blocks parsing and runs immediately, so the
+36:<script src="data/fonts.js"></script>
+112:     Classic scripts (not modules) so they load over file:// without CORS.
+114:<script src="data/modules.js"></script>
+115:<script src="data/questions.ent.js"></script>
+116:<script src="data/questions.peds.js"></script>
+117:<script src="data/questions.peds.ep.js"></script>
+118:<script src="data/questions.peds.ep2.js"></script>
+119:<script src="data/questions.ophtho.js"></script>
+120:<script src="data/questions.ophtho.ep.js"></script>
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command "rg -n \"S\\.(srs|hl|flags|conf|days|sched|schedule|notes)\\b|delete S\\.(srs|hl|flags|conf|days|sched|notes)|splice\\(|resetSchedule|function saveProfiles|function stateKey|function loadProfiles|SDK\\s*=|firebase.*js|serviceWorker|boot\\(\" app/js/gate.js app/js/quiz.js app/js/sessions.js app/js/boot.js app/js/storage.js app/index.html app/js/*.js" in D:\claude os\Medical school\Herophilus
+ exited 1 in 50ms:
+rg: app/js/*.js: The filename, directory name, or volume label syntax is incorrect. (os error 123)
+app/js/boot.js:372:boot();
+app/js/boot.js:373:async function boot(){
+app/js/storage.js:34:  if(!S.schedule)S.schedule=[];
+app/js/storage.js:35:  return S.schedule;
+app/js/storage.js:71:    if(!S.hl)S.hl={};
+app/js/storage.js:79:  Object.keys(S.sched||{}).forEach(k=>{
+app/js/storage.js:80:    if(/\|\d+$/.test(k)){out[k]=S.sched[k];return}
+app/js/storage.js:81:    if(k.indexOf('|main')>0){out[k.replace('|main','|0')]=S.sched[k];return}
+app/js/storage.js:82:    if(k.indexOf('|peds')>0){out[k.replace('|peds','|1')]=S.sched[k];return}
+app/js/storage.js:83:    out[k+'|0']=S.sched[k];out[k+'|1']=S.sched[k];
+app/js/storage.js:85:  S.sched=out;
+app/js/sessions.js:168:    ${ed&&rows.length?`<button class="ed-t danger" onclick="resetSchedule()">Clear the whole plan</button>`:''}
+app/js/sessions.js:191:    const marks=d.items.map(it=>S.sched[d.date+'|'+it.idx]);
+app/js/sessions.js:227:        h+=trackRow(d.date,it.idx,it.label,it.hex,it.text,S.sched[d.date+'|'+it.idx]);
+app/js/sessions.js:268:  if(S.sched[k]===mark)delete S.sched[k]; else S.sched[k]=mark;
+app/js/sessions.js:270:  if(S.sched[k]==='missed'){
+app/js/sessions.js:273:  }else if(S.sched[k]==='done')toast('Marked done');
+app/js/sessions.js:287:      if(S.sched[r.date+'|'+it.idx]==='missed')
+app/js/sessions.js:338:  s[di].items.splice(idx,1);
+app/js/sessions.js:341:  Object.keys(S.sched).forEach(k=>{
+app/js/sessions.js:343:    if(d!==date){keep[k]=S.sched[k];return}
+app/js/sessions.js:346:    keep[d+'|'+(n>idx?n-1:n)]=S.sched[k];
+app/js/sessions.js:348:  S.sched=keep;
+app/js/sessions.js:365:  s.splice(di,1);
+app/js/sessions.js:366:  Object.keys(S.sched).forEach(k=>{if(k.split('|')[0]===date)delete S.sched[k]});
+app/js/sessions.js:377:function resetSchedule(){
+app/js/sessions.js:386:  S.schedule=[];S.sched={};
+app/js/gate.js:301:    if(!S.hl)S.hl={};
+app/js/gate.js:478:function stateKey(id){return 'wardround.v3.'+id}
+app/js/gate.js:479:function loadProfiles(){
+app/js/gate.js:482:function saveProfiles(){try{localStorage.setItem(PKEY,JSON.stringify(profiles))}catch(e){}}
+app/js/gate.js:696:  if(S.schedule&&S.schedule.length){
+app/js/gate.js:697:    S.schedule.forEach(d=>{
+app/js/quiz.js:219:  const flagged=!!S.flags[q.id];
+app/js/quiz.js:299:    applyHighlights(stemEl,S.hl[q.id]||[]);
+app/js/quiz.js:345:  const flagged=!!S.flags[q.id];
+app/js/quiz.js:432:    const noteRec=(S.notes||{})[q.id];
+app/js/quiz.js:459:    applyHighlights(stemEl,S.hl[q.id]||[]);
+app/js/quiz.js:528:  S.conf[id]=c;
+app/js/quiz.js:534:      S.srs[id]={lvl:lvl,due:isoLocal(d)};
+app/js/quiz.js:752:  if(!S.notes)S.notes={};
+app/js/quiz.js:754:  S.notes[qid]={txt:t,at:Date.now()};
+app/js/quiz.js:838:function toggleFlag(id){S.flags[id]=!S.flags[id];save();render();toast(S.flags[id]?'Flagged':'Flag removed')}
+app/js/quiz.js:874:    if(S.flags[id])cls.push('flagged');
+app/js/quiz.js:986:  let list=carve(S.hl[q.id]||[],s,e);
+app/js/quiz.js:996:  S.hl[q.id]=merged;
+app/js/quiz.js:1004:  delete S.hl[q.id];save();render();
+app/js/quiz.js:1008:  const n=(S.hl[qid]||[]).length;
+app/js/quiz.js:1132:    <div class="stat"><span class="emo">${ico('laurel',20)}</span><div class="n">${deck.filter(q=>(S.srs[q.id]||{}).lvl>=3).length}</div><div class="l">Nearly retired</div></div>
+app/js/quiz.js:1151:      const s=S.srs[q.id]||{lvl:0,due:todayISO()};
+app/js/quiz.js:1167:  const f=QUESTIONS.filter(q=>S.flags[q.id]);
+
+codex
+The current merge is whole-map last-writer-wins for the six named records, while schedule marks are index-addressed; I’m encoding the replacement protocol and compatibility bridge in the design.
+apply patch
+patch: completed
+D:\claude os\Medical school\Herophilus\progress\app-replan\p1\P1b-sync-design.md
+diff --git a/progress/app-replan/p1/P1b-sync-design.md b/progress/app-replan/p1/P1b-sync-design.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..4b0cf8f42a1515677dbce881a076567c4cfb785e
+--- /dev/null
++++ b/progress/app-replan/p1/P1b-sync-design.md
+@@ -0,0 +1,149 @@
++# P1b — sync correctness design
++
++Scope: P1 exit conditions only. Keep classic scripts, vanilla JS, `file://` and
++offline use; Firebase stays optional. Do not rename any `wardround.*` key.
++
++## Evidence: present behaviour
++
++| Concern | Today | Evidence |
++|---|---|---|
++| Six maps | `mergeStates` overlays whole maps selected by `updatedAt`; no entry clocks. | `app/js/gate.js:202-223` |
++| Confidence | `setConf` writes `conf`, and sometimes `srs`, without a timestamp. | `app/js/quiz.js:527-537` |
++| Schedule marks | Keys are `date|array-index`; deleting splices and renumbers them. | `app/js/sessions.js:334-349` |
++| Deletes | Highlight delete is a plain `delete`; day delete deletes marks; profile delete removes only live state. | `app/js/quiz.js:1004`; `app/js/sessions.js:361-367`; `app/js/gate.js:906-914` |
++| Cloud input | Cloud `JSON.parse` goes straight to merge, whereas import calls `checkedProgressState`. | `app/js/gate.js:287-290`; `app/js/boot.js:273-284` |
++| Ownership/sign-out | Every local profile syncs under current account; sign-out catches and discards error. | `app/js/gate.js:135-140`, `753-755` |
++| CDN | Dynamic script loader has timeout but attaches no `integrity`. | `app/js/gate.js:11-31` |
++| Recovery | `loadState` only restores backup after missing/unparseable live state. | `app/js/storage.js:47-75` |
++
++## Wire format and merge
++
++Add `syncV:1`, `deviceId` (random durable per installation), `clock` (last issued
++millisecond), and `records` to a state. `records[k][id]` is an envelope:
++`{v:<existing value>, c:[wallMs,deviceId], del?:true}`. `k` is exactly `srs`,
++`hl`, `flags`, `conf`, `days`, or `sched`. Values remain materialised in the
++existing six maps for current readers; envelopes are canonical sync metadata.
++
++`tick()` returns `[max(Date.now(), S.clock+1), deviceId]`, updates `S.clock`, and
++is called by one `putRecord(k,id,value)` or `deleteRecord(k,id)` helper before
++every `save()`: quiz SRS/conf/flag/highlight writes, all highlight removal, and
++schedule mark/day/item/whole-plan changes. The helper updates both map and
++envelope; delete removes the materialised map entry and writes `del:true`.
++`migrateSched()` must use the helper only after legacy conversion.
++
++For a record present on both sides, choose lexicographically greatest `c`
++(`wallMs`, then opaque `deviceId` byte order); tombstone is an ordinary winner.
++Thus equal clocks are deterministic in either merge direction. Clocks are
++client wall time, not trusted chronology: a clock behind advances locally via
++`max`; a clock far ahead wins until another write exceeds it. Show one nonfatal
++"device clock differs; latest sync follows its clock" notice per session when
++incoming wall time is >24 h ahead/behind local time; never rewrite received
++clocks. State-level settings retain their current explicit rules unless moved to
++records later.
++
++`schedule` item shape becomes `{id,label,text,hex}`; id is `deviceId + '-' +
++tick()[0]` at creation and is never regenerated. Mark key is `date+'|'+item.id`.
++Render/edit/delete by id, not index. A legacy item gets an id once during
++migration; legacy `date|index` marks are translated in the same in-memory
++transaction. A deleted item records a `sched` tombstone; deleted day/reset
++records tombstones for every contained stable mark/item. Do not renumber.
++
++Notes join the same envelope/tombstone mechanism (although already individually
++timestamped: `app/js/gate.js:232-242`); highlights are one record per question.
++Profiles use `{id,ownerUid|null,...,c,del?:true}` in a separately merged roster.
++Profile, note, highlight and schedule tombstones live 90 days after their winning
++clock, then GC only during a successful authenticated transaction after merging
++both sides. Never GC offline or local-only; deletion wins throughout retention.
++
++## Cloud, validation, ownership
++
++Extract `parseProgressState(raw)` in `boot.js`: JSON parse then
++`checkedProgressState`; import and every cloud read call this exact function.
++Extend `checkedProgressState` for `syncV`, clock/envelopes/tombstones, stable
++schedule ids, and profile owner fields; preserve unrelated forward fields as it
++does today (`app/js/boot.js:197-264`). Invalid cloud state is not merged or
++written back: set sync error with "Cloud progress was not accepted" and retain
++local state.
++
++Use canonical child document `users/{uid}/profiles/{pid}/sync/v1`, containing
++the validated state. Keep the existing profile document's `state` as a legacy
++bridge only: old clients cannot erase the child document by their whole-document
++`set` (`app/js/gate.js:291`). Canonical state stores `legacyAppliedAt`; new client
++imports legacy state only when its `updatedAt` is later, normalises it, then
++advances that marker. This makes an old client's later legacy write observable
++without allowing it to destroy record clocks/tombstones. New clients never use
++legacy state as canonical after migration.
++
++On profile creation while signed in set `ownerUid=fbUser.uid`; cloud roster and
++document operations require equality. On account switch, profiles owned by the
++other UID remain device-only and cannot auto-upload. An `ownerUid:null` profile
++shows a choice: "Upload to <account>" (sets owner, explicit action) or "Keep on
++this device". No implicit adoption. Sign-out modal offers "remove account data
++from this device" (remove only profiles owned by that UID plus their live and
++`wardround.bak.<profileId>` keys); report each local removal failure and do not
++claim completion. `signOutCloud` must surface Firebase sign-out failure rather
++than swallow it (`app/js/gate.js:139`).
++
++Profile delete: first write its roster tombstone and delete cloud profile/sync
++documents in a bounded transaction/batch; only then remove local profile, live
++key, and `wardround.bak.<profileId>`. If cloud delete fails, keep local data and
++show retryable "Cloud profile delete failed"; never toast success. Local storage
++failures are likewise surfaced.
++
++Pin exact, versioned Firebase CDN URLs and SHA-384 `integrity` values in the
++`SDK` list; set `crossOrigin='anonymous'` before append. Preserve `loadSDK()`'s
++8 s timeout and `boot()` 15 s race/local-only fallback.
++
++## Migration and compatibility
++
++`syncV:1` is the marker. First new-client load of state without it assigns one
++`tick()` clock to every extant record (same millisecond, device-id tie breaker),
++creates no tombstones, assigns schedule ids/translates marks, validates, then
++atomically saves local state before its first cloud push. If save fails, retain
++legacy in memory, warn through existing persistent-save warning, and do not
++publish migration. Re-running is idempotent; interruption before the save simply
++restarts; after save recognises `syncV:1`.
++
++Never delete/rename live or backup `wardround.*` keys. `loadState` retains its
++missing/unparseable-only rescue contract. Old client compatibility is via the
++child canonical document and legacy bridge above; a newer state is not placed
++only in the old whole-state field. An old client may lose its own unsupported
++metadata in legacy state, but cannot remove canonical v1 data; its subsequent
++legacy progress is imported by `legacyAppliedAt`.
++
++## Acceptance checks
++
++| Case | Concrete check | Device requirement |
++|---|---|---|
++| Real auth | Two browser profiles sign into a real test Firebase account, independently edit same/different records, force push/pull; assert record winner/tombstone and UID isolation. | Real network/account |
++| Popup/redirect blocked | Stub popup rejection `popup-blocked`, assert redirect call and retained local gate; standalone path asserts redirect. | iOS standalone redirect needs real iOS Safari |
++| Account switch | A-owned profile under B has no cloud write; unlinked prompt requires explicit Upload; choose Keep and assert no write. | Scriptable with mocked Firebase; real auth smoke |
++| Offline restart | Block network, write, close/reopen; assert local state and backup recovery rules; reconnect then merge. | Scriptable; iOS/Android real smoke |
++| Storage failure | Throw on `setItem`/storage.set; assert warning, no false success, download offered, memory remains usable. | Scriptable |
++| Migration interruption | Seed v0, interrupt before/after local migration save; restart and assert one stable-id mapping/no loss/no duplicate clocks. | Scriptable |
++| SW update | Serve old shell then activate updated worker mid-queued push; reload and assert canonical record/tombstone survives. | Scriptable desktop; real iOS Safari and Android browser/PWA |
++
++Run the scripted cases in current Chrome, Firefox, Edge, Safari desktop; manually
++run real-auth, redirect, offline restart, and SW-update cases on iOS Safari and
++Android Chrome (including installed PWA where supported). `app/smoke.html` may
++host deterministic fake clock/storage/Firebase tests; real auth and device/SW
++behaviour cannot be fully scripted there.
++
++## Ordered build split
++
++1. Validator/parser plus v0→v1 local migration and stable schedule ids. Check:
++   fixture validation, idempotent interrupted migration, `file://` boot.
++2. Record helpers and all six-map/note/schedule write paths; deterministic merge.
++   Check: two-state merge matrix, delete-vs-write/tie/skew tests.
++3. Canonical child cloud document, legacy bridge, invalid-cloud rejection and
++   SRI. Check: transaction fixtures, old-client bridge fixture, 8 s/15 s fallbacks.
++4. Ownership, roster tombstones, profile/sign-out deletion UX. Check: UID switch,
++   unlinked choice, cloud/local delete failure assertions.
++5. Smoke harness and browser/device matrix. Check: every acceptance row recorded
++   against the named browser/version/device.
++
++## Open questions for the owner
++
++- Is 90 days the desired tombstone retention period, or should it be longer?
++- Should "remove account data from this device" remove only cloud-owned profiles
++  or also their backups when a local storage removal error leaves a partial result?
+
+diff --git a/progress/app-replan/p1/P1b-sync-design.md b/progress/app-replan/p1/P1b-sync-design.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..4b0cf8f42a1515677dbce881a076567c4cfb785e
+--- /dev/null
++++ b/progress/app-replan/p1/P1b-sync-design.md
+@@ -0,0 +1,149 @@
++# P1b — sync correctness design
++
++Scope: P1 exit conditions only. Keep classic scripts, vanilla JS, `file://` and
++offline use; Firebase stays optional. Do not rename any `wardround.*` key.
++
++## Evidence: present behaviour
++
++| Concern | Today | Evidence |
++|---|---|---|
++| Six maps | `mergeStates` overlays whole maps selected by `updatedAt`; no entry clocks. | `app/js/gate.js:202-223` |
++| Confidence | `setConf` writes `conf`, and sometimes `srs`, without a timestamp. | `app/js/quiz.js:527-537` |
++| Schedule marks | Keys are `date|array-index`; deleting splices and renumbers them. | `app/js/sessions.js:334-349` |
++| Deletes | Highlight delete is a plain `delete`; day delete deletes marks; profile delete removes only live state. | `app/js/quiz.js:1004`; `app/js/sessions.js:361-367`; `app/js/gate.js:906-914` |
++| Cloud input | Cloud `JSON.parse` goes straight to merge, whereas import calls `checkedProgressState`. | `app/js/gate.js:287-290`; `app/js/boot.js:273-284` |
++| Ownership/sign-out | Every local profile syncs under current account; sign-out catches and discards error. | `app/js/gate.js:135-140`, `753-755` |
++| CDN | Dynamic script loader has timeout but attaches no `integrity`. | `app/js/gate.js:11-31` |
++| Recovery | `loadState` only restores backup after missing/unparseable live state. | `app/js/storage.js:47-75` |
++
++## Wire format and merge
++
++Add `syncV:1`, `deviceId` (random durable per installation), `clock` (last issued
++millisecond), and `records` to a state. `records[k][id]` is an envelope:
++`{v:<existing value>, c:[wallMs,deviceId], del?:true}`. `k` is exactly `srs`,
++`hl`, `flags`, `conf`, `days`, or `sched`. Values remain materialised in the
++existing six maps for current readers; envelopes are canonical sync metadata.
++
++`tick()` returns `[max(Date.now(), S.clock+1), deviceId]`, updates `S.clock`, and
++is called by one `putRecord(k,id,value)` or `deleteRecord(k,id)` helper before
++every `save()`: quiz SRS/conf/flag/highlight writes, all highlight removal, and
++schedule mark/day/item/whole-plan changes. The helper updates both map and
++envelope; delete removes the materialised map entry and writes `del:true`.
++`migrateSched()` must use the helper only after legacy conversion.
++
++For a record present on both sides, choose lexicographically greatest `c`
++(`wallMs`, then opaque `deviceId` byte order); tombstone is an ordinary winner.
++Thus equal clocks are deterministic in either merge direction. Clocks are
++client wall time, not trusted chronology: a clock behind advances locally via
++`max`; a clock far ahead wins until another write exceeds it. Show one nonfatal
++"device clock differs; latest sync follows its clock" notice per session when
++incoming wall time is >24 h ahead/behind local time; never rewrite received
++clocks. State-level settings retain their current explicit rules unless moved to
++records later.
++
++`schedule` item shape becomes `{id,label,text,hex}`; id is `deviceId + '-' +
++tick()[0]` at creation and is never regenerated. Mark key is `date+'|'+item.id`.
++Render/edit/delete by id, not index. A legacy item gets an id once during
++migration; legacy `date|index` marks are translated in the same in-memory
++transaction. A deleted item records a `sched` tombstone; deleted day/reset
++records tombstones for every contained stable mark/item. Do not renumber.
++
++Notes join the same envelope/tombstone mechanism (although already individually
++timestamped: `app/js/gate.js:232-242`); highlights are one record per question.
++Profiles use `{id,ownerUid|null,...,c,del?:true}` in a separately merged roster.
++Profile, note, highlight and schedule tombstones live 90 days after their winning
++clock, then GC only during a successful authenticated transaction after merging
++both sides. Never GC offline or local-only; deletion wins throughout retention.
++
++## Cloud, validation, ownership
++
++Extract `parseProgressState(raw)` in `boot.js`: JSON parse then
++`checkedProgressState`; import and every cloud read call this exact function.
++Extend `checkedProgressState` for `syncV`, clock/envelopes/tombstones, stable
++schedule ids, and profile owner fields; preserve unrelated forward fields as it
++does today (`app/js/boot.js:197-264`). Invalid cloud state is not merged or
++written back: set sync error with "Cloud progress was not accepted" and retain
++local state.
++
++Use canonical child document `users/{uid}/profiles/{pid}/sync/v1`, containing
++the validated state. Keep the existing profile document's `state` as a legacy
++bridge only: old clients cannot erase the child document by their whole-document
++`set` (`app/js/gate.js:291`). Canonical state stores `legacyAppliedAt`; new client
++imports legacy state only when its `updatedAt` is later, normalises it, then
++advances that marker. This makes an old client's later legacy write observable
++without allowing it to destroy record clocks/tombstones. New clients never use
++legacy state as canonical after migration.
++
++On profile creation while signed in set `ownerUid=fbUser.uid`; cloud roster and
++document operations require equality. On account switch, profiles owned by the
++other UID remain device-only and cannot auto-upload. An `ownerUid:null` profile
++shows a choice: "Upload to <account>" (sets owner, explicit action) or "Keep on
++this device". No implicit adoption. Sign-out modal offers "remove account data
++from this device" (remove only profiles owned by that UID plus their live and
++`wardround.bak.<profileId>` keys); report each local removal failure and do not
++claim completion. `signOutCloud` must surface Firebase sign-out failure rather
++than swallow it (`app/js/gate.js:139`).
++
++Profile delete: first write its roster tombstone and delete cloud profile/sync
++documents in a bounded transaction/batch; only then remove local profile, live
++key, and `wardround.bak.<profileId>`. If cloud delete fails, keep local data and
++show retryable "Cloud profile delete failed"; never toast success. Local storage
++failures are likewise surfaced.
++
++Pin exact, versioned Firebase CDN URLs and SHA-384 `integrity` values in the
++`SDK` list; set `crossOrigin='anonymous'` before append. Preserve `loadSDK()`'s
++8 s timeout and `boot()` 15 s race/local-only fallback.
++
++## Migration and compatibility
++
++`syncV:1` is the marker. First new-client load of state without it assigns one
++`tick()` clock to every extant record (same millisecond, device-id tie breaker),
++creates no tombstones, assigns schedule ids/translates marks, validates, then
++atomically saves local state before its first cloud push. If save fails, retain
++legacy in memory, warn through existing persistent-save warning, and do not
++publish migration. Re-running is idempotent; interruption before the save simply
++restarts; after save recognises `syncV:1`.
++
++Never delete/rename live or backup `wardround.*` keys. `loadState` retains its
++missing/unparseable-only rescue contract. Old client compatibility is via the
++child canonical document and legacy bridge above; a newer state is not placed
++only in the old whole-state field. An old client may lose its own unsupported
++metadata in legacy state, but cannot remove canonical v1 data; its subsequent
++legacy progress is imported by `legacyAppliedAt`.
++
++## Acceptance checks
++
++| Case | Concrete check | Device requirement |
++|---|---|---|
++| Real auth | Two browser profiles sign into a real test Firebase account, independently edit same/different records, force push/pull; assert record winner/tombstone and UID isolation. | Real network/account |
++| Popup/redirect blocked | Stub popup rejection `popup-blocked`, assert redirect call and retained local gate; standalone path asserts redirect. | iOS standalone redirect needs real iOS Safari |
++| Account switch | A-owned profile under B has no cloud write; unlinked prompt requires explicit Upload; choose Keep and assert no write. | Scriptable with mocked Firebase; real auth smoke |
++| Offline restart | Block network, write, close/reopen; assert local state and backup recovery rules; reconnect then merge. | Scriptable; iOS/Android real smoke |
++| Storage failure | Throw on `setItem`/storage.set; assert warning, no false success, download offered, memory remains usable. | Scriptable |
++| Migration interruption | Seed v0, interrupt before/after local migration save; restart and assert one stable-id mapping/no loss/no duplicate clocks. | Scriptable |
++| SW update | Serve old shell then activate updated worker mid-queued push; reload and assert canonical record/tombstone survives. | Scriptable desktop; real iOS Safari and Android browser/PWA |
++
++Run the scripted cases in current Chrome, Firefox, Edge, Safari desktop; manually
++run real-auth, redirect, offline restart, and SW-update cases on iOS Safari and
++Android Chrome (including installed PWA where supported). `app/smoke.html` may
++host deterministic fake clock/storage/Firebase tests; real auth and device/SW
++behaviour cannot be fully scripted there.
++
++## Ordered build split
++
++1. Validator/parser plus v0→v1 local migration and stable schedule ids. Check:
++   fixture validation, idempotent interrupted migration, `file://` boot.
++2. Record helpers and all six-map/note/schedule write paths; deterministic merge.
++   Check: two-state merge matrix, delete-vs-write/tie/skew tests.
++3. Canonical child cloud document, legacy bridge, invalid-cloud rejection and
++   SRI. Check: transaction fixtures, old-client bridge fixture, 8 s/15 s fallbacks.
++4. Ownership, roster tombstones, profile/sign-out deletion UX. Check: UID switch,
++   unlinked choice, cloud/local delete failure assertions.
++5. Smoke harness and browser/device matrix. Check: every acceptance row recorded
++   against the named browser/version/device.
++
++## Open questions for the owner
++
++- Is 90 days the desired tombstone retention period, or should it be longer?
++- Should "remove account data from this device" remove only cloud-owned profiles
++  or also their backups when a local storage removal error leaves a partial result?
+
+exec
+"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -Command '$p='"'progress/app-replan/p1/P1b-sync-design.md'; "'$l=Get-Content -LiteralPath $p; "lines=$($l.Count)"; Get-Content -LiteralPath $p | Select-Object -Last 18' in D:\claude os\Medical school\Herophilus
+ succeeded in 80ms:
+lines=149
+## Ordered build split
+
+1. Validator/parser plus v0â†’v1 local migration and stable schedule ids. Check:
+   fixture validation, idempotent interrupted migration, `file://` boot.
+2. Record helpers and all six-map/note/schedule write paths; deterministic merge.
+   Check: two-state merge matrix, delete-vs-write/tie/skew tests.
+3. Canonical child cloud document, legacy bridge, invalid-cloud rejection and
+   SRI. Check: transaction fixtures, old-client bridge fixture, 8 s/15 s fallbacks.
+4. Ownership, roster tombstones, profile/sign-out deletion UX. Check: UID switch,
+   unlinked choice, cloud/local delete failure assertions.
+5. Smoke harness and browser/device matrix. Check: every acceptance row recorded
+   against the named browser/version/device.
+
+## Open questions for the owner
+
+- Is 90 days the desired tombstone retention period, or should it be longer?
+- Should "remove account data from this device" remove only cloud-owned profiles
+  or also their backups when a local storage removal error leaves a partial result?
+
+diff --git a/progress/app-replan/p1/P1b-sync-design.md b/progress/app-replan/p1/P1b-sync-design.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..4b0cf8f42a1515677dbce881a076567c4cfb785e
+--- /dev/null
++++ b/progress/app-replan/p1/P1b-sync-design.md
+@@ -0,0 +1,149 @@
++# P1b — sync correctness design
++
++Scope: P1 exit conditions only. Keep classic scripts, vanilla JS, `file://` and
++offline use; Firebase stays optional. Do not rename any `wardround.*` key.
++
++## Evidence: present behaviour
++
++| Concern | Today | Evidence |
++|---|---|---|
++| Six maps | `mergeStates` overlays whole maps selected by `updatedAt`; no entry clocks. | `app/js/gate.js:202-223` |
++| Confidence | `setConf` writes `conf`, and sometimes `srs`, without a timestamp. | `app/js/quiz.js:527-537` |
++| Schedule marks | Keys are `date|array-index`; deleting splices and renumbers them. | `app/js/sessions.js:334-349` |
++| Deletes | Highlight delete is a plain `delete`; day delete deletes marks; profile delete removes only live state. | `app/js/quiz.js:1004`; `app/js/sessions.js:361-367`; `app/js/gate.js:906-914` |
++| Cloud input | Cloud `JSON.parse` goes straight to merge, whereas import calls `checkedProgressState`. | `app/js/gate.js:287-290`; `app/js/boot.js:273-284` |
++| Ownership/sign-out | Every local profile syncs under current account; sign-out catches and discards error. | `app/js/gate.js:135-140`, `753-755` |
++| CDN | Dynamic script loader has timeout but attaches no `integrity`. | `app/js/gate.js:11-31` |
++| Recovery | `loadState` only restores backup after missing/unparseable live state. | `app/js/storage.js:47-75` |
++
++## Wire format and merge
++
++Add `syncV:1`, `deviceId` (random durable per installation), `clock` (last issued
++millisecond), and `records` to a state. `records[k][id]` is an envelope:
++`{v:<existing value>, c:[wallMs,deviceId], del?:true}`. `k` is exactly `srs`,
++`hl`, `flags`, `conf`, `days`, or `sched`. Values remain materialised in the
++existing six maps for current readers; envelopes are canonical sync metadata.
++
++`tick()` returns `[max(Date.now(), S.clock+1), deviceId]`, updates `S.clock`, and
++is called by one `putRecord(k,id,value)` or `deleteRecord(k,id)` helper before
++every `save()`: quiz SRS/conf/flag/highlight writes, all highlight removal, and
++schedule mark/day/item/whole-plan changes. The helper updates both map and
++envelope; delete removes the materialised map entry and writes `del:true`.
++`migrateSched()` must use the helper only after legacy conversion.
++
++For a record present on both sides, choose lexicographically greatest `c`
++(`wallMs`, then opaque `deviceId` byte order); tombstone is an ordinary winner.
++Thus equal clocks are deterministic in either merge direction. Clocks are
++client wall time, not trusted chronology: a clock behind advances locally via
++`max`; a clock far ahead wins until another write exceeds it. Show one nonfatal
++"device clock differs; latest sync follows its clock" notice per session when
++incoming wall time is >24 h ahead/behind local time; never rewrite received
++clocks. State-level settings retain their current explicit rules unless moved to
++records later.
++
++`schedule` item shape becomes `{id,label,text,hex}`; id is `deviceId + '-' +
++tick()[0]` at creation and is never regenerated. Mark key is `date+'|'+item.id`.
++Render/edit/delete by id, not index. A legacy item gets an id once during
++migration; legacy `date|index` marks are translated in the same in-memory
++transaction. A deleted item records a `sched` tombstone; deleted day/reset
++records tombstones for every contained stable mark/item. Do not renumber.
++
++Notes join the same envelope/tombstone mechanism (although already individually
++timestamped: `app/js/gate.js:232-242`); highlights are one record per question.
++Profiles use `{id,ownerUid|null,...,c,del?:true}` in a separately merged roster.
++Profile, note, highlight and schedule tombstones live 90 days after their winning
++clock, then GC only during a successful authenticated transaction after merging
++both sides. Never GC offline or local-only; deletion wins throughout retention.
++
++## Cloud, validation, ownership
++
++Extract `parseProgressState(raw)` in `boot.js`: JSON parse then
++`checkedProgressState`; import and every cloud read call this exact function.
++Extend `checkedProgressState` for `syncV`, clock/envelopes/tombstones, stable
++schedule ids, and profile owner fields; preserve unrelated forward fields as it
++does today (`app/js/boot.js:197-264`). Invalid cloud state is not merged or
++written back: set sync error with "Cloud progress was not accepted" and retain
++local state.
++
++Use canonical child document `users/{uid}/profiles/{pid}/sync/v1`, containing
++the validated state. Keep the existing profile document's `state` as a legacy
++bridge only: old clients cannot erase the child document by their whole-document
++`set` (`app/js/gate.js:291`). Canonical state stores `legacyAppliedAt`; new client
++imports legacy state only when its `updatedAt` is later, normalises it, then
++advances that marker. This makes an old client's later legacy write observable
++without allowing it to destroy record clocks/tombstones. New clients never use
++legacy state as canonical after migration.
++
++On profile creation while signed in set `ownerUid=fbUser.uid`; cloud roster and
++document operations require equality. On account switch, profiles owned by the
++other UID remain device-only and cannot auto-upload. An `ownerUid:null` profile
++shows a choice: "Upload to <account>" (sets owner, explicit action) or "Keep on
++this device". No implicit adoption. Sign-out modal offers "remove account data
++from this device" (remove only profiles owned by that UID plus their live and
++`wardround.bak.<profileId>` keys); report each local removal failure and do not
++claim completion. `signOutCloud` must surface Firebase sign-out failure rather
++than swallow it (`app/js/gate.js:139`).
++
++Profile delete: first write its roster tombstone and delete cloud profile/sync
++documents in a bounded transaction/batch; only then remove local profile, live
++key, and `wardround.bak.<profileId>`. If cloud delete fails, keep local data and
++show retryable "Cloud profile delete failed"; never toast success. Local storage
++failures are likewise surfaced.
++
++Pin exact, versioned Firebase CDN URLs and SHA-384 `integrity` values in the
++`SDK` list; set `crossOrigin='anonymous'` before append. Preserve `loadSDK()`'s
++8 s timeout and `boot()` 15 s race/local-only fallback.
++
++## Migration and compatibility
++
++`syncV:1` is the marker. First new-client load of state without it assigns one
++`tick()` clock to every extant record (same millisecond, device-id tie breaker),
++creates no tombstones, assigns schedule ids/translates marks, validates, then
++atomically saves local state before its first cloud push. If save fails, retain
++legacy in memory, warn through existing persistent-save warning, and do not
++publish migration. Re-running is idempotent; interruption before the save simply
++restarts; after save recognises `syncV:1`.
++
++Never delete/rename live or backup `wardround.*` keys. `loadState` retains its
++missing/unparseable-only rescue contract. Old client compatibility is via the
++child canonical document and legacy bridge above; a newer state is not placed
++only in the old whole-state field. An old client may lose its own unsupported
++metadata in legacy state, but cannot remove canonical v1 data; its subsequent
++legacy progress is imported by `legacyAppliedAt`.
++
++## Acceptance checks
++
++| Case | Concrete check | Device requirement |
++|---|---|---|
++| Real auth | Two browser profiles sign into a real test Firebase account, independently edit same/different records, force push/pull; assert record winner/tombstone and UID isolation. | Real network/account |
++| Popup/redirect blocked | Stub popup rejection `popup-blocked`, assert redirect call and retained local gate; standalone path asserts redirect. | iOS standalone redirect needs real iOS Safari |
++| Account switch | A-owned profile under B has no cloud write; unlinked prompt requires explicit Upload; choose Keep and assert no write. | Scriptable with mocked Firebase; real auth smoke |
++| Offline restart | Block network, write, close/reopen; assert local state and backup recovery rules; reconnect then merge. | Scriptable; iOS/Android real smoke |
++| Storage failure | Throw on `setItem`/storage.set; assert warning, no false success, download offered, memory remains usable. | Scriptable |
++| Migration interruption | Seed v0, interrupt before/after local migration save; restart and assert one stable-id mapping/no loss/no duplicate clocks. | Scriptable |
++| SW update | Serve old shell then activate updated worker mid-queued push; reload and assert canonical record/tombstone survives. | Scriptable desktop; real iOS Safari and Android browser/PWA |
++
++Run the scripted cases in current Chrome, Firefox, Edge, Safari desktop; manually
++run real-auth, redirect, offline restart, and SW-update cases on iOS Safari and
++Android Chrome (including installed PWA where supported). `app/smoke.html` may
++host deterministic fake clock/storage/Firebase tests; real auth and device/SW
++behaviour cannot be fully scripted there.
++
++## Ordered build split
++
++1. Validator/parser plus v0→v1 local migration and stable schedule ids. Check:
++   fixture validation, idempotent interrupted migration, `file://` boot.
++2. Record helpers and all six-map/note/schedule write paths; deterministic merge.
++   Check: two-state merge matrix, delete-vs-write/tie/skew tests.
++3. Canonical child cloud document, legacy bridge, invalid-cloud rejection and
++   SRI. Check: transaction fixtures, old-client bridge fixture, 8 s/15 s fallbacks.
++4. Ownership, roster tombstones, profile/sign-out deletion UX. Check: UID switch,
++   unlinked choice, cloud/local delete failure assertions.
++5. Smoke harness and browser/device matrix. Check: every acceptance row recorded
++   against the named browser/version/device.
++
++## Open questions for the owner
++
++- Is 90 days the desired tombstone retention period, or should it be longer?
++- Should "remove account data from this device" remove only cloud-owned profiles
++  or also their backups when a local storage removal error leaves a partial result?
+
+codex
+AGENTS.md loaded — Herophilus
+Created [P1b-sync-design.md](D:\claude os\Medical school\Herophilus\progress\app-replan\p1\P1b-sync-design.md).
+It is 149 lines and covers the required evidence, protocol, migration, acceptance matrix, and build split.
+diff --git a/progress/app-replan/p1/P1b-sync-design.md b/progress/app-replan/p1/P1b-sync-design.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..4b0cf8f42a1515677dbce881a076567c4cfb785e
+--- /dev/null
++++ b/progress/app-replan/p1/P1b-sync-design.md
+@@ -0,0 +1,149 @@
++# P1b — sync correctness design
++
++Scope: P1 exit conditions only. Keep classic scripts, vanilla JS, `file://` and
++offline use; Firebase stays optional. Do not rename any `wardround.*` key.
++
++## Evidence: present behaviour
++
++| Concern | Today | Evidence |
++|---|---|---|
++| Six maps | `mergeStates` overlays whole maps selected by `updatedAt`; no entry clocks. | `app/js/gate.js:202-223` |
++| Confidence | `setConf` writes `conf`, and sometimes `srs`, without a timestamp. | `app/js/quiz.js:527-537` |
++| Schedule marks | Keys are `date|array-index`; deleting splices and renumbers them. | `app/js/sessions.js:334-349` |
++| Deletes | Highlight delete is a plain `delete`; day delete deletes marks; profile delete removes only live state. | `app/js/quiz.js:1004`; `app/js/sessions.js:361-367`; `app/js/gate.js:906-914` |
++| Cloud input | Cloud `JSON.parse` goes straight to merge, whereas import calls `checkedProgressState`. | `app/js/gate.js:287-290`; `app/js/boot.js:273-284` |
++| Ownership/sign-out | Every local profile syncs under current account; sign-out catches and discards error. | `app/js/gate.js:135-140`, `753-755` |
++| CDN | Dynamic script loader has timeout but attaches no `integrity`. | `app/js/gate.js:11-31` |
++| Recovery | `loadState` only restores backup after missing/unparseable live state. | `app/js/storage.js:47-75` |
++
++## Wire format and merge
++
++Add `syncV:1`, `deviceId` (random durable per installation), `clock` (last issued
++millisecond), and `records` to a state. `records[k][id]` is an envelope:
++`{v:<existing value>, c:[wallMs,deviceId], del?:true}`. `k` is exactly `srs`,
++`hl`, `flags`, `conf`, `days`, or `sched`. Values remain materialised in the
++existing six maps for current readers; envelopes are canonical sync metadata.
++
++`tick()` returns `[max(Date.now(), S.clock+1), deviceId]`, updates `S.clock`, and
++is called by one `putRecord(k,id,value)` or `deleteRecord(k,id)` helper before
++every `save()`: quiz SRS/conf/flag/highlight writes, all highlight removal, and
++schedule mark/day/item/whole-plan changes. The helper updates both map and
++envelope; delete removes the materialised map entry and writes `del:true`.
++`migrateSched()` must use the helper only after legacy conversion.
++
++For a record present on both sides, choose lexicographically greatest `c`
++(`wallMs`, then opaque `deviceId` byte order); tombstone is an ordinary winner.
++Thus equal clocks are deterministic in either merge direction. Clocks are
++client wall time, not trusted chronology: a clock behind advances locally via
++`max`; a clock far ahead wins until another write exceeds it. Show one nonfatal
++"device clock differs; latest sync follows its clock" notice per session when
++incoming wall time is >24 h ahead/behind local time; never rewrite received
++clocks. State-level settings retain their current explicit rules unless moved to
++records later.
++
++`schedule` item shape becomes `{id,label,text,hex}`; id is `deviceId + '-' +
++tick()[0]` at creation and is never regenerated. Mark key is `date+'|'+item.id`.
++Render/edit/delete by id, not index. A legacy item gets an id once during
++migration; legacy `date|index` marks are translated in the same in-memory
++transaction. A deleted item records a `sched` tombstone; deleted day/reset
++records tombstones for every contained stable mark/item. Do not renumber.
++
++Notes join the same envelope/tombstone mechanism (although already individually
++timestamped: `app/js/gate.js:232-242`); highlights are one record per question.
++Profiles use `{id,ownerUid|null,...,c,del?:true}` in a separately merged roster.
++Profile, note, highlight and schedule tombstones live 90 days after their winning
++clock, then GC only during a successful authenticated transaction after merging
++both sides. Never GC offline or local-only; deletion wins throughout retention.
++
++## Cloud, validation, ownership
++
++Extract `parseProgressState(raw)` in `boot.js`: JSON parse then
++`checkedProgressState`; import and every cloud read call this exact function.
++Extend `checkedProgressState` for `syncV`, clock/envelopes/tombstones, stable
++schedule ids, and profile owner fields; preserve unrelated forward fields as it
++does today (`app/js/boot.js:197-264`). Invalid cloud state is not merged or
++written back: set sync error with "Cloud progress was not accepted" and retain
++local state.
++
++Use canonical child document `users/{uid}/profiles/{pid}/sync/v1`, containing
++the validated state. Keep the existing profile document's `state` as a legacy
++bridge only: old clients cannot erase the child document by their whole-document
++`set` (`app/js/gate.js:291`). Canonical state stores `legacyAppliedAt`; new client
++imports legacy state only when its `updatedAt` is later, normalises it, then
++advances that marker. This makes an old client's later legacy write observable
++without allowing it to destroy record clocks/tombstones. New clients never use
++legacy state as canonical after migration.
++
++On profile creation while signed in set `ownerUid=fbUser.uid`; cloud roster and
++document operations require equality. On account switch, profiles owned by the
++other UID remain device-only and cannot auto-upload. An `ownerUid:null` profile
++shows a choice: "Upload to <account>" (sets owner, explicit action) or "Keep on
++this device". No implicit adoption. Sign-out modal offers "remove account data
++from this device" (remove only profiles owned by that UID plus their live and
++`wardround.bak.<profileId>` keys); report each local removal failure and do not
++claim completion. `signOutCloud` must surface Firebase sign-out failure rather
++than swallow it (`app/js/gate.js:139`).
++
++Profile delete: first write its roster tombstone and delete cloud profile/sync
++documents in a bounded transaction/batch; only then remove local profile, live
++key, and `wardround.bak.<profileId>`. If cloud delete fails, keep local data and
++show retryable "Cloud profile delete failed"; never toast success. Local storage
++failures are likewise surfaced.
++
++Pin exact, versioned Firebase CDN URLs and SHA-384 `integrity` values in the
++`SDK` list; set `crossOrigin='anonymous'` before append. Preserve `loadSDK()`'s
++8 s timeout and `boot()` 15 s race/local-only fallback.
++
++## Migration and compatibility
++
++`syncV:1` is the marker. First new-client load of state without it assigns one
++`tick()` clock to every extant record (same millisecond, device-id tie breaker),
++creates no tombstones, assigns schedule ids/translates marks, validates, then
++atomically saves local state before its first cloud push. If save fails, retain
++legacy in memory, warn through existing persistent-save warning, and do not
++publish migration. Re-running is idempotent; interruption before the save simply
++restarts; after save recognises `syncV:1`.
++
++Never delete/rename live or backup `wardround.*` keys. `loadState` retains its
++missing/unparseable-only rescue contract. Old client compatibility is via the
++child canonical document and legacy bridge above; a newer state is not placed
++only in the old whole-state field. An old client may lose its own unsupported
++metadata in legacy state, but cannot remove canonical v1 data; its subsequent
++legacy progress is imported by `legacyAppliedAt`.
++
++## Acceptance checks
++
++| Case | Concrete check | Device requirement |
++|---|---|---|
++| Real auth | Two browser profiles sign into a real test Firebase account, independently edit same/different records, force push/pull; assert record winner/tombstone and UID isolation. | Real network/account |
++| Popup/redirect blocked | Stub popup rejection `popup-blocked`, assert redirect call and retained local gate; standalone path asserts redirect. | iOS standalone redirect needs real iOS Safari |
++| Account switch | A-owned profile under B has no cloud write; unlinked prompt requires explicit Upload; choose Keep and assert no write. | Scriptable with mocked Firebase; real auth smoke |
++| Offline restart | Block network, write, close/reopen; assert local state and backup recovery rules; reconnect then merge. | Scriptable; iOS/Android real smoke |
++| Storage failure | Throw on `setItem`/storage.set; assert warning, no false success, download offered, memory remains usable. | Scriptable |
++| Migration interruption | Seed v0, interrupt before/after local migration save; restart and assert one stable-id mapping/no loss/no duplicate clocks. | Scriptable |
++| SW update | Serve old shell then activate updated worker mid-queued push; reload and assert canonical record/tombstone survives. | Scriptable desktop; real iOS Safari and Android browser/PWA |
++
++Run the scripted cases in current Chrome, Firefox, Edge, Safari desktop; manually
++run real-auth, redirect, offline restart, and SW-update cases on iOS Safari and
++Android Chrome (including installed PWA where supported). `app/smoke.html` may
++host deterministic fake clock/storage/Firebase tests; real auth and device/SW
++behaviour cannot be fully scripted there.
++
++## Ordered build split
++
++1. Validator/parser plus v0→v1 local migration and stable schedule ids. Check:
++   fixture validation, idempotent interrupted migration, `file://` boot.
++2. Record helpers and all six-map/note/schedule write paths; deterministic merge.
++   Check: two-state merge matrix, delete-vs-write/tie/skew tests.
++3. Canonical child cloud document, legacy bridge, invalid-cloud rejection and
++   SRI. Check: transaction fixtures, old-client bridge fixture, 8 s/15 s fallbacks.
++4. Ownership, roster tombstones, profile/sign-out deletion UX. Check: UID switch,
++   unlinked choice, cloud/local delete failure assertions.
++5. Smoke harness and browser/device matrix. Check: every acceptance row recorded
++   against the named browser/version/device.
++
++## Open questions for the owner
++
++- Is 90 days the desired tombstone retention period, or should it be longer?
++- Should "remove account data from this device" remove only cloud-owned profiles
++  or also their backups when a local storage removal error leaves a partial result?
+
+tokens used
+56,450
+AGENTS.md loaded — Herophilus
+Created [P1b-sync-design.md](D:\claude os\Medical school\Herophilus\progress\app-replan\p1\P1b-sync-design.md).
+It is 149 lines and covers the required evidence, protocol, migration, acceptance matrix, and build split.
