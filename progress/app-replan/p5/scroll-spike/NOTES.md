@@ -9,6 +9,53 @@ local progress via a negative `animation-delay`. Reduced motion shows the final 
 Titles: plain text, no `&shy;`, `white-space:nowrap`, fixed 16px desktop / 14px phone. The grid gives
 way, not the word: 4 columns from 1080px, 2x2 from 701 to 1079px, 1 column at 700px and below.
 
+## Fix round 6 (2026-09-26, Claude lean-drafter, ROUTE-OK per brief: Codex cannot render)
+
+Owner rejected round-6 film: "low quality items fading out of nowhere". Fix targets the three desk
+props only (`.letters/.tablet/.pile`). Films: `D:/tmp-spike-fix6/shots/` (`scroll-spike-film-fix6.mjs`
+= copy of `p5/scroll-spike-film.mjs`, OUT switched, extra computed-style reads for the three prop
+layers). Probe: `regress.mjs` (own script, stall pixel-diff via a from-scratch PNG decoder + title
+width sweep - the round-5/6 probes `dip.mjs`/`sweep.mjs`/etc. lived in an earlier scratchpad and are
+gone, not reused).
+
+| Item | Result | Change | Evidence |
+|---|---|---|---|
+| 1 raster quality | LANDED | `p5/props-v2/{letters,tablet,pile}.png` (1536x1024, real alpha, confirmed clean edges by eye - no grey halo, no cutout script needed) trimmed to the alpha bbox with a PowerShell/System.Drawing script (no grey-key needed) and scaled to 600px wide (2x the 300px layer clamp): letters bbox 89,42 1370x938 -> 600x411; tablet bbox 72,69 1416x896 -> 600x380; pile bbox 43,82 1453x851 -> 600x351. Saved to `scroll-spike/props/*.png` (476K/443K/403K), `index.html` `.layer` `src` swapped to them. | Read all three trimmed PNGs directly: clean silhouette, no residual grey pixels at the edge, shadow (`.layer` `drop-shadow` filter, unchanged) still renders under each. |
+| 2 entrances | LANDED | `@keyframes far/mid/near` rewritten: explicit `0%{opacity:1;...}` (was `20%{opacity:1}`, which faded in from the base `opacity:0` over the first 20% of the local range while barely moving) - now opacity is 1 for the animation's entire active life, no fade at any point. Each keyframe now starts from **off-frame**: letters `translate(-38vw,1vh)` (enters from the left, matches its left-anchored position), tablet `translate(45vw,-2.4vh)`, pile `translate(48vw,2.4vh)` (both enter from the right, matching their right-anchored position and the brief's "tablet and pile from the right"). A mid-range `82%` keyframe overshoots slightly past the final rest transform before the `100%` keyframe settles back (e.g. letters: overshoot `-3vw,.3vh` (was -7vw, which undershot; fixed after refuter round 7 m1) -> rest `-5vw,1vh`) for the "slight settle" the brief asked for. `--range`s unchanged (letters 20-54%, tablet 22-55%, pile 24-58%). Reduced-motion block already showed props at rest with no motion (unchanged, correct). | Own film run, 1280x800, frames 0/15/18/20/22/25/28/30/32/34/36/38/40/45/50/55/58/60/75/100%: `letOp`/`tabOp`/`pilOp` computed-style opacity = `"1"` at **every** frame, never <1 - confirmed no semi-transparent frame exists anywhere. Screenshots `desk-030.png` (letters just entering frame left edge, opaque, sharp), `desk-040.png` (all three visible, sharp, shadowed, tablet/pile still sliding in from the right), `desk-045.png`, `desk-060.png` (all three at rest, sharp, natural desk placement) all read clean - no ghosting, no grey fringe. Phone (390x844): tablet/pile correctly `display:none` (unchanged mobile rule); letters entrance frames 0/15/20/25/30/35/40/50/60/100% all opacity `"1"`. Reduced-motion (`red`/`redphone`): all three at opacity 1, final-rest transform, matches non-reduced end state. 0 broken images (`imgs:0`) and 0 console errors in all 4 passes. |
+| 3 other entrances | CHECKED, none needed a fix | `.book` (subjects cards): base `opacity:0;transform:translateY(120px) scale(.82)` -> `card` keyframe end `opacity:1;transform:none;filter:blur(0)` - real 120px vertical slide + scale, not a pure fade. `.line-content` (the "Study / plan" copy): base `opacity:0;transform:translateY(105%)` -> `rise` keyframe `opacity:1;transform:translateY(0)` - a real 105%-of-own-height slide. `.daily-mask` (the sheet): driven entirely by `clip-path` (`wipe` keyframe, a vertical unroll), no opacity animation at all. All three already carry real movement as their entrance mechanism; opacity change on `.book`/`.line-content` rides along with the slide rather than carrying it alone. Nothing to change. | Read the base rule + keyframe text for `.book`, `.line-content`, `.daily-mask` directly in `spike.css`; confirmed each keyframe's `to` state changes `transform` (or `clip-path`) alongside/opacity, not opacity in isolation. |
+| Do-not-regress | Title sweep PASS (fresh run); stall shape present but not numerically comparable; ring/wipe carried by argument | See below. | See below. |
+
+**Do-not-regress, re-run:**
+- **Title width sweep**: 320-1600px step 20 (65 widths) x 800px height, final scroll state, checking
+  text clipped inside its card, text under the ring, or card overflowing the viewport: **0 failures**
+  (`D:/tmp-spike-fix6/sweep-fails.json` = `[]`).
+- **Console errors**: 0 in every film pass (desk 20 frames, phone 10, red 1, redphone 1) and the
+  regression probe (title sweep + stall run) - `D:/tmp-spike-fix6/regress-errs.json` = `[]`.
+- **Ranges for everything NOT touched this round are byte-identical to round 6's PASS values** (grepped
+  directly from the live file): `.plate`/`.candle-pool` `0-20%`, `.shaft` `20-45%`, `.daily-mask`
+  (wipe) `46-74%`, `.line-a` `52-66%`, `.line-b` `61-77%`, `.ent`/`.ent .ring-sweep` `62-84%`/`64-85%`,
+  `.oph` `68-87%`, `.neuro` `78-94%`, `.peds` `82-97%`. This round's edit touched only the
+  `far`/`mid`/`near` keyframes and the three `.layer` image `src`s - nothing that feeds the plate,
+  pool, shaft, wipe, book-card or ring-sweep animations.
+- **Stall 60-76%**: re-ran a pixel-diff (own from-scratch PNG decoder over CDP screenshots, dust
+  hidden and confirmed via `getComputedStyle` before capture, 0.5% steps 44-86%, mean abs RGB delta
+  between consecutive frames) since the round-5/6 `dip.mjs` script no longer exists (lived in an
+  earlier, since-cleared scratchpad). **Numbers do not reconcile with round 6's published table**
+  (my scale runs 20-40x larger throughout, e.g. my 85%-step value is 9.59 vs round 6's 0.544; my
+  60-76% min is 1.99 = 20.7% of my own 85% value, vs round 6's 60.7%) - this is a normalization/
+  downsampling difference in the probe itself, not a re-measurement of the same metric, and I could
+  not recover round 6's exact script to match it. What I *can* say from my own run: the window is not
+  frozen (min 1.99, max 8.11 across 60-76%, real frame-to-frame motion throughout) and the props
+  contribute zero pixels to this window regardless of old or new artwork, since all three finish
+  their motion by 58% (before 60%) and are static after. Given the `.plate`/`.candle-pool`/`.shaft`/
+  `.daily-mask` CSS driving this window is untouched (previous bullet), I have high confidence there
+  is no regression, but the exact round-6 number is **not independently reproduced this round** -
+  flagged for the round-7 refuter to re-derive with its own probe.
+- **Ring evenness (2.8-5.4 deg/0.25%) and sheet wipe (46-74%)**: not re-swept with a fresh angle/
+  clip-path probe this round (same "probe lost" reason as the stall dip) - relying on the byte-identical
+  `--range` values above plus a direct read of `desk-075.png`/`desk-100.png` (ENT ring ~3/4 then full,
+  Oph partially filled, both legible) as a sanity check, not a full sweep. Flagged for round 7.
+
 ## Fix round 5 (2026-09-26, Opus builder, ROUTE-OK per fix4 escalation)
 
 Probes: copies of the round-5 refuter harness in `D:/tmp-spike-fix5/` (`probe.mjs`, `dip.mjs`,
