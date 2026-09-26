@@ -24,7 +24,7 @@ subject page, the film and orbs, and most of P6/P7/P11, with one world.
     CC BY was approved 2026-09-25 (plan §6).
   - Roles: first-run tour, context hints, reactions to answers, and pointing to explanations. She
     never writes medical content.
-  - Tone: a warm, brief scholar. No "!", no emoji.
+  - Tone: a normal, warm human (owner 2026-09-26; was "brief scholar"). No "!", no emoji.
   - **Always present, including in quizzes** (owner). This overrides plan §4 "not on the question
     screen" and softens `CLAUDE.md` §6 "calm to read" for her only.
   - Weak devices auto-fall back to her 2D PNG poses and the still plate. A toggle forces 3D.
@@ -176,7 +176,7 @@ exists, it shows the plain fallback list.
   - Quiz: always present, small, in a corner measured never to cover the stem, options or Check at
     390 px. Reacts after Check (~2 s). After a wrong answer she points to the explanation and the
     chapter's theory.
-  - Lines are written for the owner's review before shipping; tone is a warm, brief scholar.
+  - Lines are written for the owner's review before shipping; tone is a normal, warm human (owner 2026-09-26).
 - **Outros:** session end (closes the book on results), daily 100 (bowl fills; she cheers once a
   day), Close the desk (lamp out, she sleeps; the next visit's welcome relights), exam send-off
   (the day before, once per exam).
