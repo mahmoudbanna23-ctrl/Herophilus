@@ -1,0 +1,213 @@
+<!doctype html><meta charset="utf-8"><title>Three r147 spike</title>
+<style>html,body,#host{margin:0;width:100%;height:100%;overflow:hidden;background:#100805}
+canvas{position:fixed;inset:0;width:100%;height:100%}
+#guide{z-index:150;pointer-events:none}
+button{position:fixed;z-index:200;right:16px;bottom:16px}
+.fallback img:first-child{width:100%;height:100%;object-fit:cover}
+.fallback img+img{position:fixed;z-index:150;right:4%;bottom:3%;max-height:35%;max-width:30%}
+</style>
+<div id="host"><canvas id="scene"></canvas><canvas id="guide"></canvas><button id="wave">Wave</button></div>
+<script>
+(function(){
+'use strict';
+var host=document.getElementById('host'),sc=document.getElementById('scene'),gc=document.getElementById('guide'),
+    q=new URLSearchParams(location.search),
+    reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,
+    isFile=location.protocol==='file:',
+    dead=0,raf=0;
+
+function log(x){console.log('shed '+x)}
+function toView(r){var k=Math.min(innerWidth/1916,innerHeight/821),w=1916*k,h=821*k;return{x:(innerWidth-w)/2+r.x*k,y:(innerHeight-h)/2+r.y*k,w:r.w*k,h:r.h*k}}
+window.toView=toView;
+
+/* capability tier: zero external scripts, runs before any heavy load */
+function tierOk(){
+  if(q.get('force')==='2d')return false;
+  try{
+    var c=document.createElement('canvas'),t=c.getContext('webgl',{failIfMajorPerformanceCaveat:true});
+    return !!t;
+  }catch(e){return false}
+}
+
+function loadScripts(urls,cb){
+  var i=0;
+  function next(){
+    if(i>=urls.length)return cb();
+    var s=document.createElement('script');
+    s.src=urls[i++];
+    s.onload=next;
+    s.onerror=function(){cb(new Error('load failed: '+s.src))};
+    document.head.appendChild(s);
+  }
+  next();
+}
+
+function show2d(e){
+  if(dead++)return;
+  if(raf){cancelAnimationFrame(raf);raf=0}
+  var need=['assets.js'];if(isFile)need.push('plate.b64.js');
+  loadScripts(need,function(err){
+    if(!window.SCENE_ASSETS)return;
+    var res=SCENE_ASSETS.load(host); /* under file:, a missing model throws inside load() and it
+      already renders the fallback itself, returning null; under http, load() succeeds with plain
+      paths and needs an explicit .fail() to force the 2D UI */
+    if(res)res.fail(e||err);
+  });
+}
+
+if(!tierOk()){
+  show2d(new Error('capability tier 2d'));
+}else{
+  var heavy=['vendor/three.min.js','vendor/GLTFLoader.js','assets.js'];
+  if(isFile)heavy.push('plate.b64.js','model.b64.js');
+  loadScripts(heavy,function(err){
+    if(err)return show2d(err);
+    main();
+  });
+}
+
+function main(){
+  var a=SCENE_ASSETS.load(host);
+  if(!a)return;
+
+  var renderer=new THREE.WebGLRenderer({canvas:sc,antialias:false,alpha:false,failIfMajorPerformanceCaveat:true});
+  renderer.setPixelRatio(1);
+  renderer.setSize(innerWidth,innerHeight,false);
+  var gRenderer=new THREE.WebGLRenderer({canvas:gc,antialias:false,alpha:true,failIfMajorPerformanceCaveat:true});
+  gRenderer.setPixelRatio(1);
+  gRenderer.setSize(innerWidth,innerHeight,false);
+
+  function onLost(e){e.preventDefault();show2d(new Error('context lost'))}
+  function onRestore(){log('restore held at fallback')}
+  sc.addEventListener('webglcontextlost',onLost,false);
+  sc.addEventListener('webglcontextrestored',onRestore,false);
+  gc.addEventListener('webglcontextlost',onLost,false);
+  gc.addEventListener('webglcontextrestored',onRestore,false);
+
+  var scene=new THREE.Scene();
+  var cam=new THREE.OrthographicCamera(-1,1,1,-1,0.1,10);
+  cam.position.z=1;
+
+  var wpt=toView({x:1342,y:367,w:1,h:1});
+  var uniforms={tMap:{value:null},uLamp:{value:new THREE.Vector2(wpt.x/innerWidth,1-wpt.y/innerHeight)},uTime:{value:0}};
+  var mat=new THREE.ShaderMaterial({
+    uniforms:uniforms,
+    vertexShader:'void main(){gl_Position=vec4(position.xy,0.,1.);}',
+    fragmentShader:'uniform sampler2D tMap;uniform vec2 uLamp;uniform float uTime;'+
+      'void main(){vec2 p=gl_FragCoord.xy/vec2('+innerWidth+'.0,'+innerHeight+'.0);'+
+      'float d=length(p-uLamp);float z=.15/(.04+d*8.)*(.7+.3*sin(uTime*9.));'+
+      'gl_FragColor=vec4(texture2D(tMap,vec2(p.x,1.-p.y)).rgb+vec3(z,.35*z,0.),1.);}'
+  });
+  var quad=new THREE.Mesh(new THREE.PlaneGeometry(2,2),mat);
+  scene.add(quad);
+
+  var plateReady=false,modelReady=false;
+  var loader=new THREE.TextureLoader();
+  var tex=loader.load(a.plate,function(){
+    tex.minFilter=THREE.LinearFilter;
+    tex.magFilter=THREE.LinearFilter;
+    tex.generateMipmaps=false;
+    uniforms.tMap.value=tex;
+    plateReady=true;
+    checkStill();
+  },undefined,function(e){show2d(e)});
+
+  var gScene=new THREE.Scene();
+  var gCam=new THREE.PerspectiveCamera(35,1,0.1,10);
+  gCam.position.set(0,0.2,3.6);
+  gCam.lookAt(0,0.2,0);
+
+  /* MeshBasicMaterial has no `skinning` property in this three build (setValues warns and drops
+     it silently), so an unlit swap would render the skin in its static bind pose. Keep GLTFLoader's
+     default MeshStandardMaterial (skinning already wired by the loader) and light the scene instead
+     -- the other option item 6 allows. */
+  gScene.add(new THREE.AmbientLight(0xffffff,1.6));
+  var dLight=new THREE.DirectionalLight(0xffffff,1.2);
+  dLight.position.set(1,1.4,1);
+  gScene.add(dLight);
+
+  var mixer=null,idleAction=null,waveAction=null;
+  var gltfLoader=new THREE.GLTFLoader();
+  gltfLoader.load(a.model,function(gltf){
+    gScene.add(gltf.scene);
+    mixer=new THREE.AnimationMixer(gltf.scene);
+    var idleClip=THREE.AnimationClip.findByName(gltf.animations,'idle');
+    var waveClip=THREE.AnimationClip.findByName(gltf.animations,'wave');
+    if(idleClip){idleAction=mixer.clipAction(idleClip);idleAction.play()}
+    if(waveClip){waveAction=mixer.clipAction(waveClip);waveAction.setLoop(THREE.LoopOnce);waveAction.clampWhenFinished=true}
+    modelReady=true;
+    checkStill();
+  },undefined,function(e){show2d(e)});
+
+  document.getElementById('wave').onclick=function(){
+    if(waveAction)waveAction.reset().play();
+  };
+
+  function checkStill(){
+    if(reduce&&plateReady&&modelReady)renderStill();
+  }
+  function renderStill(){
+    uniforms.uTime.value=0;
+    renderer.render(scene,cam);
+    mixer.update(0);
+    gRenderer.render(gScene,gCam);
+    log('reduced static');
+  }
+
+  /* frame-time shed monitor: mean over a 1s window, first 500ms ignored */
+  var frameStart=0,shedTimes=[],shedStage=0,stages=['lightning','tilt','weather','smoke','parallax','still'];
+  function shedTrack(now,dt){
+    if(!frameStart)frameStart=now;
+    if(now-frameStart<500)return false;
+    shedTimes.push({t:now,dt:dt});
+    while(shedTimes.length&&now-shedTimes[0].t>1000)shedTimes.shift();
+    if(shedTimes.length<5)return false;
+    var sum=0;for(var i=0;i<shedTimes.length;i++)sum+=shedTimes[i].dt;
+    var mean=sum/shedTimes.length;
+    if(mean>42&&shedStage<stages.length){
+      log(stages[shedStage++]);
+      shedTimes.length=0;
+      if(shedStage===stages.length)return true;
+    }
+    return false;
+  }
+
+  var last=0,gLast=0,mixT=0;
+  function frame(t){
+    if(dead)return;
+    raf=requestAnimationFrame(frame);
+    if(t-last<33)return; /* 30fps cap at DPR1 */
+    var dt=t-last||16.7;
+    last=t;
+    if(q.has('throttle'))dt=60;
+    if(shedTrack(t,dt)){show2d(new Error('shed still'));return}
+    uniforms.uTime.value=t/1000;
+    if(plateReady)renderer.render(scene,cam);
+    if(t-gLast>66){ /* model idle capped ~15fps */
+      gLast=t;
+      if(modelReady){mixer.update((t-(mixT||t))/1000);mixT=t;gRenderer.render(gScene,gCam)}
+    }
+  }
+
+  document.addEventListener('visibilitychange',function(){
+    if(document.hidden){
+      if(raf){cancelAnimationFrame(raf);raf=0}
+    }else if(!dead&&!reduce&&!raf){
+      last=0;
+      raf=requestAnimationFrame(frame);
+    }
+  });
+
+  if(q.get('force')==='lost'){
+    requestAnimationFrame(function(){
+      var e1=renderer.getContext().getExtension('WEBGL_lose_context');
+      var e2=gRenderer.getContext().getExtension('WEBGL_lose_context');
+      if(e1)e1.loseContext();
+      if(e2)e2.loseContext();
+    });
+  }
+
+  if(!reduce)raf=requestAnimationFrame(frame);
+}
+}());
+</script>

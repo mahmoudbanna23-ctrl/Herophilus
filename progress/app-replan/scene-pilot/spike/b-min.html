@@ -1,0 +1,283 @@
+<!doctype html><meta charset="utf-8"><title>Minimal WebGL1 spike</title>
+<style>html,body,#host{margin:0;width:100%;height:100%;overflow:hidden;background:#100805}
+canvas{position:fixed;inset:0;width:100%;height:100%}
+#guide{z-index:150;pointer-events:none}
+button{position:fixed;z-index:200;right:16px;bottom:16px}
+.fallback img:first-child{width:100%;height:100%;object-fit:cover}
+.fallback img+img{position:fixed;z-index:150;right:4%;bottom:3%;max-height:35%;max-width:30%}
+</style>
+<div id="host"><canvas id="scene"></canvas><canvas id="guide"></canvas><button id="wave">Wave</button></div>
+<script>
+(function(){
+'use strict';
+var host=document.getElementById('host'),sc=document.getElementById('scene'),gc=document.getElementById('guide'),
+    q=new URLSearchParams(location.search),
+    reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,
+    isFile=location.protocol==='file:',
+    dead=0,raf=0;
+
+function log(x){console.log('shed '+x)}
+function toView(r){var k=Math.min(innerWidth/1916,innerHeight/821),w=1916*k,h=821*k;return{x:(innerWidth-w)/2+r.x*k,y:(innerHeight-h)/2+r.y*k,w:r.w*k,h:r.h*k}}
+window.toView=toView;
+
+/* capability tier: zero external scripts, runs before any heavy load */
+function tierOk(){
+  if(q.get('force')==='2d')return false;
+  try{
+    var c=document.createElement('canvas'),t=c.getContext('webgl',{failIfMajorPerformanceCaveat:true});
+    return !!t;
+  }catch(e){return false}
+}
+
+function loadScripts(urls,cb){
+  var i=0;
+  function next(){
+    if(i>=urls.length)return cb();
+    var s=document.createElement('script');
+    s.src=urls[i++];
+    s.onload=next;
+    s.onerror=function(){cb(new Error('load failed: '+s.src))};
+    document.head.appendChild(s);
+  }
+  next();
+}
+
+function show2d(e){
+  if(dead++)return;
+  if(raf){cancelAnimationFrame(raf);raf=0}
+  var need=['assets.js'];if(isFile)need.push('plate.b64.js');
+  loadScripts(need,function(err){
+    if(!window.SCENE_ASSETS)return;
+    var res=SCENE_ASSETS.load(host); /* under file:, a missing model throws inside load() and it
+      already renders the fallback itself, returning null; under http, load() succeeds with plain
+      paths and needs an explicit .fail() to force the 2D UI */
+    if(res)res.fail(e||err);
+  });
+}
+
+if(!tierOk()){
+  show2d(new Error('capability tier 2d'));
+}else{
+  var heavy=['assets.js'];
+  if(isFile)heavy.push('plate.b64.js','model.b64.js');
+  loadScripts(heavy,function(err){
+    if(err)return show2d(err);
+    main();
+  });
+}
+
+/* ---- tiny mat4/quat helpers (column-major, translation+rotation only, scale=1) ---- */
+function qSlerp(a,b,t){
+  var cosom=a[0]*b[0]+a[1]*b[1]+a[2]*b[2]+a[3]*b[3],bx=b[0],by=b[1],bz=b[2],bw=b[3];
+  if(cosom<0){cosom=-cosom;bx=-bx;by=-by;bz=-bz;bw=-bw}
+  var s0,s1;
+  if(1-cosom>1e-6){var omega=Math.acos(cosom),sinom=Math.sin(omega);s0=Math.sin((1-t)*omega)/sinom;s1=Math.sin(t*omega)/sinom}
+  else{s0=1-t;s1=t}
+  return[a[0]*s0+bx*s1,a[1]*s0+by*s1,a[2]*s0+bz*s1,a[3]*s0+bw*s1];
+}
+function vLerp(a,b,t){return[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,a[2]+(b[2]-a[2])*t]}
+function mat4FromTR(tr,q){
+  var x=q[0],y=q[1],z=q[2],w=q[3],x2=x+x,y2=y+y,z2=z+z,
+      xx=x*x2,xy=x*y2,xz=x*z2,yy=y*y2,yz=y*z2,zz=z*z2,wx=w*x2,wy=w*y2,wz=w*z2;
+  return[1-(yy+zz),xy+wz,xz-wy,0, xy-wz,1-(xx+zz),yz+wx,0, xz+wy,yz-wx,1-(xx+yy),0, tr[0],tr[1],tr[2],1];
+}
+function mat4Identity(){return[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
+function mat4Mul(a,b){
+  var r=new Array(16);
+  for(var c=0;c<4;c++)for(var rr=0;rr<4;rr++){var s=0;for(var k=0;k<4;k++)s+=a[k*4+rr]*b[c*4+k];r[c*4+rr]=s}
+  return r;
+}
+
+function main(){
+  var a=SCENE_ASSETS.load(host);
+  if(!a)return;
+
+  function cx(c){
+    var x=c.getContext('webgl',{alpha:c===gc,failIfMajorPerformanceCaveat:true});
+    c.addEventListener('webglcontextlost',function(e){e.preventDefault();show2d(new Error('context lost'))},false);
+    c.addEventListener('webglcontextrestored',function(){log('restore held at fallback')},false);
+    return x;
+  }
+  var gl=cx(sc),g=cx(gc);
+  if(!gl||!g)return show2d(new Error('capability tier 2d'));
+
+  /* -------- scene canvas: painted plate quad -------- */
+  function sh(x,vs,fs){var c=x.createProgram(),v=x.createShader(x.VERTEX_SHADER),f=x.createShader(x.FRAGMENT_SHADER);x.shaderSource(v,vs);x.shaderSource(f,fs);x.compileShader(v);x.compileShader(f);x.attachShader(c,v);x.attachShader(c,f);x.linkProgram(c);return c}
+  var P=sh(gl,'attribute vec2 p;void main(){gl_Position=vec4(p,0,1);}',
+    'precision mediump float;uniform sampler2D t;uniform vec2 w;uniform float u;void main(){vec2 p=gl_FragCoord.xy/vec2('+innerWidth+'.0,'+innerHeight+'.0);float d=length(p-w);float z=.15/(.04+d*8.)*(.7+.3*sin(u*9.));gl_FragColor=vec4(texture2D(t,vec2(p.x,1.-p.y)).rgb+vec3(z,.35*z,0),1.);}'),
+    quad=gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER,quad);
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+
+  var plateReady=false;
+  var im=new Image();
+  im.onload=function(){
+    var t=gl.createTexture();
+    gl.bindTexture(gl.TEXTURE_2D,t);
+    gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,im);
+    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR); /* no mipmap: NPOT-safe */
+    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+    drawScene.t=t;
+    plateReady=true;
+    checkStill();
+  };
+  im.onerror=function(e){show2d(e)};
+  im.src=a.plate;
+
+  var drawScene=function(t){
+    gl.viewport(0,0,sc.width=innerWidth,sc.height=innerHeight);
+    gl.useProgram(P);
+    gl.bindBuffer(gl.ARRAY_BUFFER,quad);
+    var l=gl.getAttribLocation(P,'p');
+    gl.enableVertexAttribArray(l);
+    gl.vertexAttribPointer(l,2,gl.FLOAT,0,0,0);
+    var w=toView({x:1342,y:367,w:1,h:1});
+    gl.uniform2f(gl.getUniformLocation(P,'w'),w.x/innerWidth,1-w.y/innerHeight);
+    gl.uniform1f(gl.getUniformLocation(P,'u'),t/1000);
+    gl.bindTexture(gl.TEXTURE_2D,drawScene.t);
+    gl.drawArrays(gl.TRIANGLE_STRIP,0,4);
+  };
+
+  /* -------- guide canvas: real linear skinning + GLB clip sampling -------- */
+  function glb(uri){
+    var b=atob(uri.split(',')[1]),u=new Uint8Array(b.length);
+    for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);
+    var dv=new DataView(u.buffer),jl=dv.getUint32(12,true),j=JSON.parse(new TextDecoder().decode(u.slice(20,20+jl))),bin=20+jl+8;
+    return{j:j,u:u,bin:bin};
+  }
+  var M=glb(a.model);
+  var COMP_SIZE={5120:1,5121:1,5122:2,5123:2,5125:4,5126:4};
+  var NUM_COMP={SCALAR:1,VEC2:2,VEC3:3,VEC4:4,MAT4:16};
+  function readAccessor(ai){
+    var ac=M.j.accessors[ai],v=M.j.bufferViews[ac.bufferView],
+        off=M.bin+(v.byteOffset||0)+(ac.byteOffset||0),n=ac.count*NUM_COMP[ac.type];
+    return ac.componentType===5126?new Float32Array(M.u.buffer,off,n):new Uint16Array(M.u.buffer,off,n);
+  }
+  function findClip(name){
+    var anim=M.j.animations.filter(function(x){return x.name===name})[0];
+    var tCh=anim.channels.filter(function(c){return c.target.path==='translation'})[0];
+    var rCh=anim.channels.filter(function(c){return c.target.path==='rotation'})[0];
+    var tS=anim.samplers[tCh.sampler],rS=anim.samplers[rCh.sampler];
+    var times=readAccessor(tS.input);
+    return{node:tCh.target.node,dur:times[times.length-1]||1,trans:readAccessor(tS.output),rots:readAccessor(rS.output)};
+  }
+  var CLIPS={idle:findClip('idle'),wave:findClip('wave')};
+  var invBind=readAccessor(M.j.skins[0].inverseBindMatrices); /* Float32Array, 3 mat4 = 48 floats */
+  function invBindAt(i){return Array.prototype.slice.call(invBind,i*16,i*16+16)}
+
+  var pr=sh(g,
+    'attribute vec3 p;attribute vec4 j,w;uniform mat4 jm0,jm1,jm2;'+
+    'mat4 pick(float idx){int i=int(idx+0.5);if(i<=0)return jm0;if(i==1)return jm1;return jm2;}'+
+    'void main(){vec4 sp=pick(j.x)*vec4(p,1.)*w.x+pick(j.y)*vec4(p,1.)*w.y+pick(j.z)*vec4(p,1.)*w.z+pick(j.w)*vec4(p,1.)*w.w;'+
+    'gl_Position=vec4(sp.x*.42,sp.y*.55-.2,0.,1.);}',
+    'precision mediump float;void main(){gl_FragColor=vec4(.8,.42,.12,1.);}');
+
+  function attr(name,n,type){
+    var idx={p:0,j:2,w:3}[name],ac=M.j.accessors[idx],v=M.j.bufferViews[ac.bufferView],b=g.createBuffer();
+    g.bindBuffer(g.ARRAY_BUFFER,b);
+    g.bufferData(g.ARRAY_BUFFER,M.u.slice(M.bin+v.byteOffset,M.bin+v.byteOffset+v.byteLength),g.STATIC_DRAW);
+    var l=g.getAttribLocation(pr,name);
+    g.enableVertexAttribArray(l);
+    g.vertexAttribPointer(l,n,type,0,0,0);
+  }
+  attr('p',3,g.FLOAT);
+  attr('j',4,g.UNSIGNED_SHORT);
+  attr('w',4,g.FLOAT);
+  var ia=M.j.accessors[4],iv=M.j.bufferViews[ia.bufferView],ib=g.createBuffer();
+  g.bindBuffer(g.ELEMENT_ARRAY_BUFFER,ib);
+  g.bufferData(g.ELEMENT_ARRAY_BUFFER,M.u.slice(M.bin+iv.byteOffset,M.bin+iv.byteOffset+iv.byteLength),g.STATIC_DRAW);
+
+  var waveStart=-1e9,waveEnd=-1e9;
+  document.getElementById('wave').onclick=function(){
+    var t=performance.now();
+    waveStart=t;
+    waveEnd=t+CLIPS.wave.dur*1000;
+  };
+
+  function sampleClip(clip,localT){
+    var frac=Math.min(Math.max(localT/clip.dur,0),1);
+    var t=vLerp([clip.trans[0],clip.trans[1],clip.trans[2]],[clip.trans[3],clip.trans[4],clip.trans[5]],frac);
+    var r=qSlerp([clip.rots[0],clip.rots[1],clip.rots[2],clip.rots[3]],[clip.rots[4],clip.rots[5],clip.rots[6],clip.rots[7]],frac);
+    return mat4FromTR(t,r);
+  }
+  function headLocalAt(now){
+    if(now<waveEnd)return sampleClip(CLIPS.wave,now-waveStart);
+    var idle=CLIPS.idle,localT=(now/1000)%idle.dur;
+    return sampleClip(idle,localT*1000);
+  }
+  var modelReady=true; /* GLB parsed synchronously above */
+
+  function model(t){
+    g.viewport(0,0,gc.width=innerWidth,gc.height=innerHeight);
+    g.clearColor(0,0,0,0);
+    g.clear(g.COLOR_BUFFER_BIT);
+    g.useProgram(pr);
+    var headLocal=headLocalAt(t),ident=mat4Identity();
+    var jointWorld=[ident,headLocal,ident]; /* joint0=sway(static), joint1=head(animated), joint2=guide-self(static) */
+    g.uniformMatrix4fv(g.getUniformLocation(pr,'jm0'),false,new Float32Array(mat4Mul(jointWorld[0],invBindAt(0))));
+    g.uniformMatrix4fv(g.getUniformLocation(pr,'jm1'),false,new Float32Array(mat4Mul(jointWorld[1],invBindAt(1))));
+    g.uniformMatrix4fv(g.getUniformLocation(pr,'jm2'),false,new Float32Array(mat4Mul(jointWorld[2],invBindAt(2))));
+    g.drawElements(g.TRIANGLES,ia.count,g.UNSIGNED_SHORT,0);
+  }
+
+  function checkStill(){if(reduce&&plateReady&&modelReady)renderStill()}
+  function renderStill(){
+    drawScene(0);
+    model(0);
+    log('reduced static');
+  }
+
+  /* frame-time shed monitor: mean over a 1s window, first 500ms ignored */
+  var frameStart=0,shedTimes=[],shedStage=0,stages=['lightning','tilt','weather','smoke','parallax','still'];
+  function shedTrack(now,dt){
+    if(!frameStart)frameStart=now;
+    if(now-frameStart<500)return false;
+    shedTimes.push({t:now,dt:dt});
+    while(shedTimes.length&&now-shedTimes[0].t>1000)shedTimes.shift();
+    if(shedTimes.length<5)return false;
+    var sum=0;for(var i=0;i<shedTimes.length;i++)sum+=shedTimes[i].dt;
+    var mean=sum/shedTimes.length;
+    if(mean>42&&shedStage<stages.length){
+      log(stages[shedStage++]);
+      shedTimes.length=0;
+      if(shedStage===stages.length)return true;
+    }
+    return false;
+  }
+
+  var last=0,gLast=0;
+  function frame(t){
+    if(dead)return;
+    raf=requestAnimationFrame(frame);
+    if(t-last<33)return;
+    var dt=t-last||16.7;
+    last=t;
+    if(q.has('throttle'))dt=60;
+    if(shedTrack(t,dt)){show2d(new Error('shed still'));return}
+    if(drawScene.t)drawScene(t);
+    if(t-gLast>66){gLast=t;model(t)}
+  }
+
+  document.addEventListener('visibilitychange',function(){
+    if(document.hidden){
+      if(raf){cancelAnimationFrame(raf);raf=0}
+    }else if(!dead&&!reduce&&!raf){
+      last=0;
+      raf=requestAnimationFrame(frame);
+    }
+  });
+
+  if(q.get('force')==='lost'){
+    requestAnimationFrame(function(){
+      var e1=gl.getExtension('WEBGL_lose_context'),e2=g.getExtension('WEBGL_lose_context');
+      if(e1)e1.loseContext();
+      if(e2)e2.loseContext();
+    });
+  }
+
+  if(!reduce)raf=requestAnimationFrame(frame);
+}
+}());
+</script>
