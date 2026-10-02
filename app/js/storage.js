@@ -274,7 +274,14 @@ const isLocked=id=>LOCKED_MODULES.indexOf(id)>=0;
 const openModules=()=>activeModules().filter(m=>!isLocked(m.id));
 const bankOn=q=>{const f=S.banks&&S.banks[q.module];
   return !f||!f.length||banksOf(q).some(b=>f.indexOf(b)>=0)};
-const qsIn=ch=>QUESTIONS.filter(q=>q.chapter===ch&&bankOn(q));
+/* Exam membership is an additional view, never a second topical home. */
+const inChapter=(q,ch)=>q.chapter===ch||
+  (((typeof EXAMS_NEURO!=='undefined'&&EXAMS_NEURO[ch])||[]).indexOf(q.id)>=0);
+const qsIn=ch=>{
+  const exam=(typeof EXAMS_NEURO!=='undefined'&&EXAMS_NEURO[ch]);
+  if(exam)return exam.map(id=>QUESTIONS.find(q=>q.id===id)).filter(q=>q&&bankOn(q));
+  return QUESTIONS.filter(q=>inChapter(q,ch)&&bankOn(q));
+};
 const qsInModule=m=>QUESTIONS.filter(q=>q.module===m&&bankOn(q));
 /* Unfiltered, for the filter UI itself — it must count what it would reveal. */
 const allQsInModule=m=>QUESTIONS.filter(q=>q.module===m);

@@ -340,7 +340,15 @@ const MODULES = [
       ['ps-emerg','Emergency Psychiatry'],
       ['ps-pharm','Psychopharmacology'],
       ['ps-devices','Devices in Psychiatry'],
-      ['ps-therapy','Psychotherapy']]}
+      ['ps-therapy','Psychotherapy']]},
+    {name:'Model Final Exams', chapters:[
+      ['np-fe1','Model Final Exam 1'],
+      ['np-fe2','Model Final Exam 2'],
+      ['np-fe3','Model Final Exam 3'],
+      ['np-fe4','Model Final Exam 4'],
+      ['np-fe5','Model Final Exam 5'],
+      ['np-fe6','Model Final Exam 6']
+    ]}
   ]},
   {id:'pediatrics', term:'y4s2', name:'Pediatrics', icon:'teddy', color:'var(--peds)', hex:'#2e5f8a', groups:[
     /* Remapped 2026-09-20 to the paediatrics book's chapter order (Part 1 then
@@ -413,5 +421,5 @@ const MODULES = [
       ['liver','Infantile cholestasis'],['liver-hep','Viral hepatitis and chronic liver disease']]},
     {name:'Malignant Disease', chapters:[
       ['malignant','Leukaemia'],['malignant-solid','Brain and solid tumours']]}
-  ]}
+    ]}
 ];

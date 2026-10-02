@@ -88,7 +88,7 @@ function startChapter(cid,restart=false){
   if(!qs.length){toast('No questions in this chapter with the current sources. Change the source filter to continue.');return}
   const r=(S.resumeByChapter||{})[cid];
   if(r&&!r.finished&&!restart&&!qs.some(q=>q.id===r.qid)){
-    const exists=QUESTIONS.some(q=>q.id===r.qid&&q.chapter===cid);
+    const exists=QUESTIONS.some(q=>q.id===r.qid&&inChapter(q,cid));
     showModal(`<h3>Saved question unavailable</h3>
       <p>${exists?'Your current source filter excludes the saved question. Change the source filter to continue there, or restart with the current sources.':'The saved question is no longer in this chapter. You can restart with the current questions.'}</p>
       <div class="modal-actions">
@@ -1041,7 +1041,9 @@ function weakChapters(){
   openModules().forEach(m=>{
     m.groups.forEach(g=>{
       g.chapters.forEach(([cid,cname])=>{
-        const cq=by[cid];
+        /* Topic buckets preserve module totals; exam rows deliberately read
+           their separate ordered membership and never enter those totals. */
+        const cq=(typeof EXAMS_NEURO!=='undefined'&&EXAMS_NEURO[cid])?qsIn(cid):by[cid];
         if(!cq||!cq.length)return;
         /* One walk of the chapter, not three filters and then accuracy() over
            the same array again. The accuracy is the same number accuracy(cq)
@@ -1079,7 +1081,7 @@ function vWeak(p){
   }
 
   const worst=ranked.slice(0,5);
-  const drill=worst.reduce((a,c)=>a.concat(c.wrong),[]);
+  const drill=[...new Set(worst.reduce((a,c)=>a.concat(c.wrong),[]))];
   if(drill.length){
     h+=`<div class="filterbar">
       <button class="btn go" onclick="startQuiz(${JSON.stringify(drill).replace(/"/g,'&quot;')},'Weakest chapters — what you got wrong')">${ico('play')} Drill the ${drill.length} you got wrong in your ${worst.length===1?'weakest chapter':`${worst.length} weakest chapters`}</button>
