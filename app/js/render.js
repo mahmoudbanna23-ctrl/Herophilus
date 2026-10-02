@@ -323,8 +323,16 @@ function vModule(p){
 
   if(qs.length){
     const un=qs.filter(q=>!isAnswered(q.id));
+    /* Neuropsychiatry is two subjects examined apart (owner 2026-10-02): one
+       "practise all" per half, by the question's topic chapter. */
+    const halves=m.id==='neuropsych'?m.groups.filter(g=>g.name==='Neurology'||g.name==='Psychiatry'):[];
+    const allBtn=halves.length===2?halves.map(g=>{
+      const ids=g.chapters.map(c=>c[0]);
+      const gq=qs.filter(q=>ids.indexOf(q.chapter)>=0);
+      return `<button class="btn go" onclick="startQuiz(${JSON.stringify(gq.map(q=>q.id)).replace(/"/g,'&quot;')},'${g.name} — all')">${ico('play')} Practise all ${g.name} ${gq.length}</button>`;
+    }).join('\n      '):`<button class="btn go" onclick="startQuiz(${JSON.stringify(qs.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — all')">${ico('play')} Practise all ${qs.length}</button>`;
     h+=`<div class="filterbar">
-      <button class="btn go" onclick="startQuiz(${JSON.stringify(qs.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — all')">${ico('play')} Practise all ${qs.length}</button>
+      ${allBtn}
       ${un.length?`<button class="btn sec" onclick="startQuiz(${JSON.stringify(un.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — new')">Unanswered (${un.length})</button>`:''}
     </div>`;
   }
