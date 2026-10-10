@@ -532,6 +532,9 @@ function setConf(id,c){
       const lvl=c===0?0:1;
       const d=new Date();d.setDate(d.getDate()+SRS[lvl]);
       S.srs[id]={lvl:lvl,due:isoLocal(d)};
+      /* Rated after a deck reset that this answer predates: restamp it, or
+         inDeck drops it and the toast below would be false. */
+      if(S.deckResetAt&&(S.answers[id].at||0)<=S.deckResetAt)S.answers[id].at=Date.now();
     }
   }
   save();render();
@@ -1135,9 +1138,11 @@ function vReview(p){
   </div>`;
   if(due.length){
     h+=`<div class="filterbar"><button class="btn go" onclick="startQuiz(${JSON.stringify(due.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — due today')">${ico('play')} Start ${due.length} due</button>
-    <button class="btn sec" onclick="startQuiz(${JSON.stringify(deck.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — all')">Whole deck (${deck.length})</button></div>`;
+    <button class="btn sec" onclick="startQuiz(${JSON.stringify(deck.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — all')">Whole deck (${deck.length})</button>
+    <button class="btn sec" onclick="resetDeck()">Reset deck</button></div>`;
   }else{
-    h+=`<div class="filterbar"><button class="btn sec" onclick="startQuiz(${JSON.stringify(deck.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — all')">Nothing due — practise anyway (${deck.length})</button></div>`;
+    h+=`<div class="filterbar"><button class="btn sec" onclick="startQuiz(${JSON.stringify(deck.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — all')">Nothing due — practise anyway (${deck.length})</button>
+    <button class="btn sec" onclick="resetDeck()">Reset deck</button></div>`;
   }
 
   activeModules().forEach(m=>{
@@ -1162,6 +1167,21 @@ function vReview(p){
     });
   });
   p.innerHTML=h;
+}
+function resetDeck(){
+  const n=deckAll().length;
+  showModal(`<h3>Empty the review deck?</h3>
+   <p>All ${n} question${n===1?'':'s'} leave the deck. Your answers, scores and progress are kept. A question comes back only if you get it wrong again, or mark it as a guess or as unsure. This cannot be undone.</p>
+   <div class="modal-actions">
+     <button class="btn sec" onclick="closeModal()">Cancel</button>
+     <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="doResetDeck()">Empty it</button>
+   </div>`);
+}
+function doResetDeck(){
+  /* ponytail: srs is cleared on this device only; another device's old timings can
+     return through sync. Harmless — inDeck ignores a question older than the stamp. */
+  S.deckResetAt=Date.now();S.srs={};
+  save();closeModal();render();toast('Review deck emptied');
 }
 function daysUntil(iso){return Math.max(Math.ceil((new Date(iso)-new Date(todayISO()))/86400000),0)}
 

@@ -181,7 +181,10 @@ function bakRestore(at){
   const box=bakRead(), s=box.snaps.find(x=>x.at===at);
   if(!s){toast('That snapshot is gone');return}
   let st; try{ st=checkedProgressState(JSON.parse(s.json)) }catch(e){ toast('That snapshot is unusable. Your current progress has been kept.'); return }
+  /* A deck reset outlives a restore, the same way it outlives a sync merge. */
+  const reset=Math.max(+S.deckResetAt||0,+st.deckResetAt||0);
   S=Object.assign({answers:{},flags:{},conf:{},sched:{},srs:{},days:{},hl:{},banks:{},resumeByChapter:{},notes:{},reports:{}},st);
+  if(reset)S.deckResetAt=reset;
   if(Q.exam){examStopTick();Q.exam=null;view={name:'home'}}
   if(sess())sessStartTick(); else sessStopTick();
   save(); closeModal(); render();

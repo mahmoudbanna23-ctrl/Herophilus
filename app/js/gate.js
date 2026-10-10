@@ -221,6 +221,8 @@ function mergeStates(a,b){
   ['srs','hl','flags','conf','days','sched'].forEach(k=>{
     out[k]=Object.assign({},older[k]||{},newer[k]||{});
   });
+  /* The later reset wins on every device, or the cloud copy would refill the deck. */
+  out.deckResetAt=Math.max(+a.deckResetAt||0,+b.deckResetAt||0);
   /* Each chapter has its own clock: practising another chapter on a second
      device must not discard a more recent place in this one. */
   out.resumeByChapter={};

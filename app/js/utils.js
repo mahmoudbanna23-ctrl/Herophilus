@@ -65,6 +65,9 @@ function scheduleSRS(qid,ok){
    undefined matches neither number, so it stays out exactly as before. */
 function inDeck(q){
   if(!isAnswered(q.id))return false;
+  /* Reset deck: an answer given at or before the reset stamp no longer counts
+     toward the deck; scores and the answer itself are untouched. */
+  if(S.deckResetAt&&(S.answers[q.id].at||0)<=S.deckResetAt)return false;
   if(!isCorrect(q.id))return true;
   const c=S.answers[q.id].conf;
   return c===0||c===1;
