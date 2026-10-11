@@ -334,4 +334,44 @@
    gold-brass edge stay, so the bubble still reads as lamp-lit. */
 :root:not([data-theme="light"]) .clep{--cl-panel:rgba(9,14,24,.94)}
 
+/* ============================================================================
+   FIX PASS 4 — two brown things left on night blue (dark look only)
+   ============================================================================ */
+
+/* A. Wrong-answer red. The base --bad (#d4674f, orange) and --bad-bg turn maroon-brown
+   over night blue, and the wrong row / verdict also wore the gold edge and gold glow.
+   Dark look restates the pair as a cool crimson; every --bad user (option letter chip
+   and mark, quiz grid cell, feedback box, banners, exam clock, danger buttons) follows. */
+:root:not([data-theme="light"]){
+  --bad:#e5485a;
+  --bad-bg:rgba(240,64,76,.17);
+}
+:root:not([data-theme="light"]) .opt.wrong{
+  border-color:var(--bad);
+  background:linear-gradient(180deg,rgba(240,64,76,.17),rgba(240,64,76,.12)),var(--card);
+  box-shadow:0 0 0 1px rgba(229,72,90,.32),0 0 14px rgba(229,72,90,.22);
+}
+:root:not([data-theme="light"]) .verdict.bad{
+  background:linear-gradient(180deg,rgba(240,64,76,.17),rgba(240,64,76,.12)),var(--card);
+  border-color:var(--bad);
+  box-shadow:var(--pop) rgba(229,72,90,.26),0 0 0 1px rgba(229,72,90,.32);
+}
+/* white letter on the chip 4.93:1 (the plain --bad chip was 3.88); the x mark and the
+   feedback label are text on the red tint: 5.35:1 and 6.35:1 */
+:root:not([data-theme="light"]) .opt.wrong .ltr{background:#cf3548;border-color:#cf3548}
+:root:not([data-theme="light"]) .opt.wrong .mark{color:#ff7a88}
+:root:not([data-theme="light"]) .fb.n b{color:#ff8a96}
+:root:not([data-theme="light"]) .qg.bad{background:rgba(240,64,76,.17)}
+:root:not([data-theme="light"]) .fb.n{background:rgba(240,64,76,.14)}
+
+/* B. The film behind the pages (.ambient .film, views.css): amber source, only slightly
+   desaturated there. Dark look takes it nearly to grey and lays a night-blue wash over
+   it; the picture is still there. Static filter only, no opacity or animation touched. */
+:root:not([data-theme="light"]) .ambient .film{
+  filter:saturate(.16) contrast(1.05) brightness(.9);
+}
+:root:not([data-theme="light"]) .ambient .film-scrim::before{
+  content:"";position:absolute;inset:0;background:rgba(30,56,110,.22);
+}
+
 }
