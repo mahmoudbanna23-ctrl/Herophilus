@@ -88,8 +88,50 @@ written. New files only: `app/js/hall.js`, `app/css/hall.css`, `app/assets/hall/
 - **Button sample sheet** (owner asked to see ready-made button styles, 2026-10-11):
   `progress/redesign/samples/buttons.html` + two screenshots. A look for him to pick by number; not
   wired into the app.
+- **Second button sheet:** `samples/buttons-2.html` + `.png` — 27 buttons copied verbatim from
+  `uiverse-io/galaxy` (MIT), numbers 13-39. The owner rejected redrawn samples: real ones only.
+- **Bulk button sheets:** `samples/more/buttons-3-01..09.png` + `index.tsv` — 299 more of the same
+  collection, numbers 40-338, every 4th of the 1,208 files that passed the filter (1,231 in the
+  collection; 22 dropped for emoji, 1 for a crude word). 909 passed and are not shown. About 21% have
+  no hover effect; about 7% are clipped by their frame. Generator and HTML sheets are in
+  `D:\scratch 2026\redesign\btn-gen\`, not in the repo. **Owner has not picked a number yet.**
+  A looker's shortlist (stills only, so motion is inferred): main button 139 (best), 72, 141, 151, 187,
+  73; quiet button 21 (best), 31, 212, 105. Avoid neon glow, glossy white pills, candy 3D bubbles.
+  Defect in the sheets: sheet 7 has blank cards 274-290 (except 277), sheet 8 blanks at 316, 319, 322,
+  325 — not fixed.
+- **Shelf map:** `samples/shelf-map.md` — what the factory's library shelf offers beyond buttons, and
+  the motion shortlist. Paper only.
+- **Two motion libraries brought in, owner's yes 2026-10-11, SAMPLE FOLDER ONLY (not `app/`):**
+  `samples/lib/` — GSAP 3.15.0 (core, ScrollTrigger, Flip, DrawSVGPlugin, CustomEase, CustomBounce,
+  CustomWiggle; 158,872 bytes; GreenSock's standard no-charge licence) and Lenis 1.3.26 (+ snap, css;
+  25,079 bytes; MIT). Both from their makers' official npm packages, tarball sha512 checked against
+  the registry; per-file hashes in `samples/lib/SOURCES.md`. The owner was told "maker's own site" for
+  GSAP; the file actually came from GreenSock's official npm package — say so. All are classic
+  builds. Live demo page: `samples/motion.html`. **Using either inside the app is a separate yes.**
 
 ## Pictures made
 
 | # | Name | Date | Result |
 |---|---|---|---|
+| 1 | `hall-dark` 1536x1024 | 2026-10-11 | Saved `paint/hall-dark.png` (2.4 MB, not committed). Sent raw to owner; **APPROVED by owner 2026-10-11.** Looker (Claude, different house from the maker): usable as is. Four alcoves, each ~20% wide, y 10-72%, centres x 15 / 38 / 62 / 85%, y 41%; objects left to right ear trumpet, crystal sphere, marble brain, toy horse. Empty lower panels y 58-72%, ~17% wide (plaque spot). No letters, no figure. Misses: top band ~9% not 14%, floor ~23% not 14%, side margins a sliver, scroll piles and lamps repeat, floor reflections streaky. Welcome line fits on the floor, x 15-85%, y 84-96%. |
+| 2 | `hall-light` 1536x1024 | 2026-10-11 | Saved `paint/hall-light.png`, sent raw to owner; **APPROVED by owner 2026-10-11.** Looker: same four objects, alcove centres x 14 / 38 / 62 / 86%, y ~43%; lower panels y 62-77% (dark: 58-72%), so panels sit 4-5% lower than in the dark painting. One full-panel plaque set will NOT fit both; either per-theme positions, or one compact plaque <=9% tall, <=16% wide, centred y ~67%. Outer pilasters cut off at both edges (no side margin). Sun streaks cross the panels: measure text contrast inside a streak. |
+| 3 | `hall-dark-tall` 1024x1536 | 2026-10-11 | Saved `paint/hall-dark-tall.png` (2.5 MB, not committed). Sent raw to owner; his verdict pending. Looker (Claude): usable, same hall, no letters or figures, nothing cut off. 2x2 grid, divider at y 41-43%. Top row ENT (x 3-48) and Ophthalmology (x 52-97): alcove y 9-37, lower panel y 37-41 — ONLY ~4% tall, plaques are tight there. Bottom row Neuropsychiatry and Pediatrics: alcove y 44-71, lower panel y 72-79. Floor x 5-95, y 82-98 for the welcome line. Differs from the landscape: no columns between alcoves, no books, flat panels. Side margins ~2.4%. Cropped to 820x1180: ~4% of height lost, all alcoves survive. |
+| 4 | `hall-light-tall` 1024x1536 | 2026-10-11 | Launched; result pending. |
+
+## Motion page, 2026-10-11
+
+`samples/motion.html` — eight live demos (tile opens into a page, row opens into a card, depth on
+scroll, ring that draws itself, wrong-answer shake, right-answer bounce, weighted scroll with snap,
+browser page morph) on the two libraries in `samples/lib/`. Maker's self-test from `file://`: 26 of 26
+pass. NOT checked: real-screen smoothness (headless Chrome gives no real frames, the test drove the
+clocks by hand), the light theme, reduced motion. Stills `samples/motion-m1/m4/m6-mid.png` sent to the
+owner. The in-app browser pane shows this file as a frozen snapshot, so he must open it from disk to
+see it move. No independent check yet.
+
+## In flight when this note was last written
+
+- A Claude helper is putting the two approved paintings into the hall (`app/assets/hall/`,
+  `app/css/hall.css`, `app/js/hall.js` only) and shooting the six home screenshots into `shots/`.
+  Its `app/` edits are uncommitted until its report is read and checked.
+- Still owed after that: independent different-house check of the hall build, `hall-light-tall` and
+  `fore` paintings (3 of 8 pictures used today), owner's button pick (suggested 139 main, 21 quiet).

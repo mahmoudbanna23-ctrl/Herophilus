@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Herophilus motion samples</title>
+<script>
+/* error catcher first, so a failing library script is recorded too */
+window.__errs = [];
+window.onerror = function (m, src, ln) { window.__errs.push(String(m) + ' @' + String(src || '').split('/').pop() + ':' + ln); };
+if (/[?&]theme=light/.test(location.search)) document.documentElement.setAttribute('data-theme', 'light');
+</script>
+<link rel="stylesheet" href="lib/lenis/lenis.css">
+<style>
+/* tokens copied from app/css/tokens.css (dark :root, then the light block) */
+:root{
+  --font-display:'Cinzel','Trajan Pro','Palatino Linotype','Book Antiqua',Georgia,serif;
+  --font-body:'EB Garamond','Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+  --tx:#f2e8d5; --ink:#f2e8d5; --ink-2:#cfc0a5; --ink-3:#ab9a80; --ink-4:#9c8b71;
+  --bg:#0a1017; --bg-2:#151f2d; --card:#121a27; --fill:#2b3a4f;
+  --line:rgba(242,232,213,.085); --line-2:rgba(242,232,213,.16);
+  --neon:#66d9ff; --neon-glow:0 0 10px rgba(102,217,255,.65); --gold-glow:0 0 10px rgba(217,180,74,.65);
+  --ent:#b4472f; --ophtho:#5c7a52; --neuro:#6d4c7d; --peds:#2e5f8a;
+  --ok:#7fae6f; --ok-bg:rgba(127,174,111,.15); --bad:#d4674f; --bad-bg:rgba(212,103,79,.15);
+  --gold:#d9b44a; --gold-bg:rgba(217,180,74,.15); --on-accent:#12100b; --gold-text:#d9b44a;
+  --r-sm:2px; --r-md:4px; --r-lg:8px;
+  --pop-xs:0 5px 14px; --pop-md:0 8px 22px;
+  --fs-xs:11px; --fs-sm:12px; --fs-md:13px; --fs-ui:14px; --fs-body:16.5px; --fs-lg:19px; --fs-xl:24px; --fs-2xl:32px; --fs-3xl:44px;
+  --sh:rgba(0,0,0,.5); --sh-soft:rgba(0,0,0,.3);
+  --tint:rgba(242,232,213,.045); --tint-2:rgba(242,232,213,.075);
+  --ease-standard:cubic-bezier(.22,1,.36,1);
+}
+:root[data-theme="light"]{
+  --tx:#241c14; --ink:#241c14; --ink-2:#463726; --ink-3:#5e4c37; --ink-4:#5c4b36;
+  --bg:#e6d9be; --bg-2:#dbcbab; --card:#f7efe0; --fill:#2b2118;
+  --line:rgba(60,44,28,.13); --line-2:rgba(60,44,28,.22);
+  --neon:#00708f; --neon-glow:0 0 10px rgba(0,112,143,.48); --gold-glow:0 0 10px rgba(122,84,16,.55);
+  --ok:#2f5426; --ok-bg:rgba(47,84,38,.13); --bad:#9c3620; --bad-bg:rgba(156,54,32,.11);
+  --gold:#d9b44a; --gold-bg:rgba(154,107,31,.17); --on-accent:#1a150e; --gold-text:#7a5410;
+  --sh:rgba(74,56,34,.16); --sh-soft:rgba(74,56,34,.10);
+  --tint:rgba(74,56,34,.045); --tint-2:rgba(74,56,34,.075);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:var(--font-body);background:var(--bg);color:var(--tx);font-size:var(--fs-body);line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(circle at 12% 8%, rgba(109,76,125,.09) 0, transparent 42%),
+                   radial-gradient(circle at 88% 4%, rgba(46,95,138,.05) 0, transparent 38%);
+  background-attachment:fixed;
+}
+button{font-family:inherit;font-size:inherit;cursor:pointer;border:none;background:none;color:inherit}
+:focus-visible{outline:3px solid var(--neon);outline-offset:2px;border-radius:var(--r-md)}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 16px 96px}
+h1{font:600 var(--fs-2xl)/1.2 var(--font-display);margin:0 0 6px;letter-spacing:.02em}
+.sub{margin:0 0 32px;color:var(--ink-3);font-size:var(--fs-ui)}
+.demo{margin:0 0 40px}
+.dh{display:grid;grid-template-columns:auto 1fr auto;gap:4px 16px;align-items:center;margin-bottom:12px}
+.num{grid-row:1 / span 2;font:600 var(--fs-3xl)/1 var(--font-display);color:var(--gold-text);min-width:84px}
+.dh h2{margin:0;font:600 var(--fs-lg)/1.25 var(--font-display);letter-spacing:.02em}
+.dh p{margin:0;color:var(--ink-3);font-size:var(--fs-ui)}
+.play{grid-row:1 / span 2;grid-column:3;min-height:44px;min-width:96px;padding:0 20px;border-radius:var(--r-lg);
+  background:var(--gold);color:var(--on-accent);font:600 var(--fs-ui)/1 var(--font-display);letter-spacing:.06em}
+.play:hover{box-shadow:var(--gold-glow)}
+.stage{position:relative;overflow:hidden;border:1px solid var(--line-2);border-radius:var(--r-lg);background:var(--card);padding:16px}
+.mini{min-height:36px;padding:0 14px;border-radius:var(--r-md);border:1px solid var(--line-2);font-size:var(--fs-ui);color:var(--ink-2)}
+.mini:hover{border-color:var(--gold);color:var(--tx)}
+
+/* M1 */
+#s1{height:340px}
+.row4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cell{height:150px}
+.tile{position:relative;width:100%;height:100%;display:flex;flex-direction:column;overflow:hidden;
+  border:1px solid var(--line-2);border-top:3px solid var(--mc);border-radius:var(--r-lg);background:var(--bg-2)}
+.face{position:absolute;inset:0;z-index:2;border-radius:var(--r-lg)}
+.alc{flex:1;margin:10px 10px 0;border-radius:var(--r-md);
+  background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.5)),var(--mc);
+  box-shadow:inset 0 0 0 1px var(--line-2),inset 0 14px 22px var(--sh)}
+.tn{display:block;padding:8px 12px 2px;font:600 var(--fs-ui)/1.2 var(--font-display);letter-spacing:.05em}
+.ts{display:block;padding:0 12px 10px;font-size:var(--fs-sm);color:var(--ink-3)}
+.pg{display:none;flex-direction:column;gap:8px;padding:6px 20px 16px}
+.pg h3{margin:0;font:600 var(--fs-xl)/1.2 var(--font-display)}
+.pg .bar{height:8px;border-radius:var(--r-sm);background:var(--tint-2);overflow:hidden}
+.pg .bar i{display:block;height:100%;background:var(--mc)}
+.pg .lbl{display:flex;justify-content:space-between;font-size:var(--fs-md);color:var(--ink-2)}
+.tile.open{position:absolute;inset:12px;width:auto;height:auto;z-index:5}
+.tile.open .face{display:none}
+.tile.open .alc{flex:0 0 78px}
+.tile.open .tn,.tile.open .ts{display:none}
+.tile.open .pg{display:flex}
+.pg .back{align-self:flex-start;margin-top:4px}
+
+/* M2 */
+#s2{height:440px}
+.rows{display:flex;flex-direction:column;gap:8px}
+.crow{position:relative;overflow:hidden;border:1px solid var(--line-2);border-radius:var(--r-lg);background:var(--bg-2)}
+.crow .hd{display:flex;gap:14px;align-items:center;width:100%;min-height:50px;padding:0 16px;text-align:left}
+.crow .no{font:600 var(--fs-ui) var(--font-display);color:var(--gold-text);min-width:28px}
+.crow .tt{flex:1}
+.crow .ct{font-size:var(--fs-md);color:var(--ink-3)}
+.cbody{display:none;padding:2px 16px 16px 58px;color:var(--prose,var(--ink-2));max-width:760px}
+.cbody p{margin:0 0 8px}
+.crow.open{background:var(--card);border-color:var(--gold)}
+.crow.open .cbody{display:block}
+
+/* M3 */
+#s3{padding:0}
+.sc3{height:340px;overflow-y:auto;position:relative}
+.world3{height:1240px}
+.vp3{position:sticky;top:0;height:340px;overflow:hidden;background:linear-gradient(180deg,var(--bg),var(--bg-2))}
+.lay{position:absolute;left:0;right:0;top:0;will-change:transform}
+.l-far{height:125%;background:
+  repeating-linear-gradient(180deg,transparent 0 46px,var(--line) 46px 47px),
+  linear-gradient(180deg,var(--bg-2),var(--card))}
+.l-mid{height:200%}
+.a3{position:absolute;width:18%;height:18%;border-radius:var(--r-md);background:var(--bg);
+  box-shadow:inset 0 0 0 1px var(--line-2),inset 0 16px 24px var(--sh)}
+.l-near{height:330%;pointer-events:none}
+.col{position:absolute;top:0;bottom:0;border-radius:var(--r-sm);
+  background:repeating-linear-gradient(90deg,rgba(0,0,0,.28) 0 3px,transparent 3px 11px),linear-gradient(90deg,var(--fill),var(--bg-2) 60%,var(--fill));
+  box-shadow:var(--pop-xs) var(--sh)}
+.hint3{position:absolute;left:16px;bottom:12px;z-index:3;font-size:var(--fs-sm);color:var(--ink-3);
+  background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-md);padding:4px 10px}
+
+/* M4 */
+#s4{height:240px;display:flex;align-items:center;justify-content:space-around;gap:16px}
+.ringbox{position:relative;width:176px;height:176px}
+.ringbox svg{width:100%;height:100%}
+.ringbox .val{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font:600 var(--fs-2xl)/1 var(--font-display)}
+.ringbox .val small{font:400 var(--fs-sm) var(--font-body);color:var(--ink-3);margin-top:4px}
+#emblem{width:240px;height:176px}
+
+/* M5 M6 */
+#s5,#s6{height:170px}
+.stem{margin:0 0 10px;color:var(--ink-2)}
+.opt{display:flex;align-items:center;gap:14px;min-height:54px;padding:0 16px;border:2px solid var(--line-2);border-radius:var(--r-lg);background:var(--card);position:relative}
+.opt .ch{display:grid;place-items:center;width:30px;height:30px;border-radius:var(--r-md);background:var(--tint-2);font:600 var(--fs-ui) var(--font-display)}
+.opt .tx{flex:1}
+.opt svg{width:28px;height:28px}
+
+/* M7 */
+#s7{padding:16px 0 12px}
+.strip{overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding:0 16px}
+.strip::-webkit-scrollbar{display:none}
+.track{display:flex;gap:16px;width:max-content}
+.pan{flex:0 0 min(62vw,560px);height:200px;display:flex;flex-direction:column;border:1px solid var(--line-2);border-top:3px solid var(--mc);border-radius:var(--r-lg);background:var(--bg-2);overflow:hidden}
+.pan .alc{margin:10px 10px 0}
+.ctl{display:flex;gap:12px;align-items:center;padding:12px 16px 0;font-size:var(--fs-ui);color:var(--ink-2)}
+.sw{display:inline-flex;align-items:center;gap:8px;min-height:36px}
+.sw input{width:20px;height:20px;accent-color:var(--gold)}
+
+/* M8 */
+#s8{height:300px}
+.vt-card{position:absolute;left:16px;top:50%;margin-top:-65px;width:200px;height:130px;view-transition-name:vt-card;
+  display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--line-2);border-top:3px solid var(--peds);border-radius:var(--r-lg);background:var(--bg-2)}
+.vt-card .alc{background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.5)),var(--peds)}
+.vt-card .pgv{display:none;padding:6px 20px 16px}
+.vt-card .pgv h3{margin:0 0 4px;font:600 var(--fs-xl)/1.2 var(--font-display)}
+.vt-card .pgv p{margin:0 0 10px;color:var(--ink-2)}
+.vt-card .face{z-index:2}
+#s8.open .vt-card{left:16px;top:16px;right:16px;bottom:16px;width:auto;height:auto;margin:0}
+#s8.open .vt-card .alc{flex:0 0 78px}
+#s8.open .vt-card .tn,#s8.open .vt-card .ts,#s8.open .vt-card .face{display:none}
+#s8.open .vt-card .pgv{display:block}
+.nope{margin:0;color:var(--ink-3);padding:90px 0;text-align:center}
+::view-transition-group(vt-card){animation-duration:.7s;animation-timing-function:var(--ease-standard)}
+::view-transition-old(root),::view-transition-new(root){animation:none}
+
+#selftest{margin:40px 0 0;padding:12px;border:1px solid var(--line-2);border-radius:var(--r-lg);background:var(--bg-2);color:var(--ink-2);
+  font:12px/1.5 Consolas,monospace;white-space:pre-wrap}
+body.freeze .demo:not(.on){display:none}
+body.freeze .sub{margin-bottom:16px}
+@media (max-width:720px){
+  .dh{grid-template-columns:auto 1fr}.play{grid-row:auto;grid-column:1 / -1}
+  .row4{grid-template-columns:repeat(2,1fr)}#s1{height:430px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Real motion effects</h1>
+<p class="sub" id="top">Real motion effects. Press Play on each. Tell me a number.</p>
+
+<section class="demo" id="m1">
+  <div class="dh"><div class="num">M1</div><h2>Tile grows into a subject page</h2><p>Real effect: Flip glides one element between two layouts. Library: gsap Flip. Press a tile, then Back.</p><button class="play" data-d="m1">Play</button></div>
+  <div class="stage" id="s1">
+    <div class="row4">
+      <div class="cell"><div class="tile" style="--mc:var(--ent)"><button class="face" aria-label="Open ENT"></button><div class="alc"></div><span class="tn">ENT</span><span class="ts">30 chapters</span><div class="pg"><h3>ENT</h3><div><div class="lbl"><span>Chapter 1</span><span>40%</span></div><div class="bar"><i style="width:40%"></i></div></div><div><div class="lbl"><span>Chapter 2</span><span>75%</span></div><div class="bar"><i style="width:75%"></i></div></div><div><div class="lbl"><span>Chapter 3</span><span>10%</span></div><div class="bar"><i style="width:10%"></i></div></div><button class="mini back">Back</button></div></div></div>
+      <div class="cell"><div class="tile" style="--mc:var(--ophtho)"><button class="face" aria-label="Open Ophthalmology"></button><div class="alc"></div><span class="tn">Ophthalmology</span><span class="ts">36 chapters</span><div class="pg"><h3>Ophthalmology</h3><div><div class="lbl"><span>Chapter 1</span><span>40%</span></div><div class="bar"><i style="width:40%"></i></div></div><div><div class="lbl"><span>Chapter 2</span><span>75%</span></div><div class="bar"><i style="width:75%"></i></div></div><div><div class="lbl"><span>Chapter 3</span><span>10%</span></div><div class="bar"><i style="width:10%"></i></div></div><button class="mini back">Back</button></div></div></div>
+      <div class="cell"><div class="tile" style="--mc:var(--neuro)"><button class="face" aria-label="Open Neuropsychiatry"></button><div class="alc"></div><span class="tn">Neuropsychiatry</span><span class="ts">36 chapters</span><div class="pg"><h3>Neuropsychiatry</h3><div><div class="lbl"><span>Chapter 1</span><span>40%</span></div><div class="bar"><i style="width:40%"></i></div></div><div><div class="lbl"><span>Chapter 2</span><span>75%</span></div><div class="bar"><i style="width:75%"></i></div></div><div><div class="lbl"><span>Chapter 3</span><span>10%</span></div><div class="bar"><i style="width:10%"></i></div></div><button class="mini back">Back</button></div></div></div>
+      <div class="cell"><div class="tile" style="--mc:var(--peds)"><button class="face" aria-label="Open Pediatrics"></button><div class="alc"></div><span class="tn">Pediatrics</span><span class="ts">51 chapters</span><div class="pg"><h3>Pediatrics</h3><div><div class="lbl"><span>Chapter 1</span><span>40%</span></div><div class="bar"><i style="width:40%"></i></div></div><div><div class="lbl"><span>Chapter 2</span><span>75%</span></div><div class="bar"><i style="width:75%"></i></div></div><div><div class="lbl"><span>Chapter 3</span><span>10%</span></div><div class="bar"><i style="width:10%"></i></div></div><button class="mini back">Back</button></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="demo" id="m2">
+  <div class="dh"><div class="num">M2</div><h2>Chapter row grows into a reading card</h2><p>Real effect: Flip resizes and re-flows a list. Library: gsap Flip. Press a row.</p><button class="play" data-d="m2">Play</button></div>
+  <div class="stage" id="s2"><div class="rows">
+    <div class="crow"><button class="hd"><span class="no">01</span><span class="tt">Chapter one</span><span class="ct">24 questions</span></button><div class="cbody"><p>Reading card. Stand-in text sits here so the card has a body to grow into.</p><p>A second paragraph shows that the card makes room by pushing the rows below it down.</p></div></div>
+    <div class="crow"><button class="hd"><span class="no">02</span><span class="tt">Chapter two</span><span class="ct">31 questions</span></button><div class="cbody"><p>Reading card. Stand-in text sits here so the card has a body to grow into.</p><p>A second paragraph shows that the card makes room by pushing the rows below it down.</p></div></div>
+    <div class="crow"><button class="hd"><span class="no">03</span><span class="tt">Chapter three</span><span class="ct">18 questions</span></button><div class="cbody"><p>Reading card. Stand-in text sits here so the card has a body to grow into.</p><p>A second paragraph shows that the card makes room by pushing the rows below it down.</p></div></div>
+    <div class="crow"><button class="hd"><span class="no">04</span><span class="tt">Chapter four</span><span class="ct">42 questions</span></button><div class="cbody"><p>Reading card. Stand-in text sits here so the card has a body to grow into.</p><p>A second paragraph shows that the card makes room by pushing the rows below it down.</p></div></div>
+    <div class="crow"><button class="hd"><span class="no">05</span><span class="tt">Chapter five</span><span class="ct">27 questions</span></button><div class="cbody"><p>Reading card. Stand-in text sits here so the card has a body to grow into.</p><p>A second paragraph shows that the card makes room by pushing the rows below it down.</p></div></div>
+  </div></div>
+</section>
+
+<section class="demo" id="m3">
+  <div class="dh"><div class="num">M3</div><h2>Depth on scroll</h2><p>Real effect: three layers drift at different speeds. Library: gsap ScrollTrigger, scrubbed against this panel's own scroll. Scroll inside the panel, or press Play.</p><button class="play" data-d="m3">Play</button></div>
+  <div class="stage" id="s3"><div class="sc3" id="sc3"><div class="world3" id="world3"><div class="vp3" id="vp3">
+    <div class="lay l-far" id="lfar"></div><div class="lay l-mid" id="lmid"></div><div class="lay l-near" id="lnear"><div class="col" style="left:3%;width:7%"></div><div class="col" style="left:46%;width:5%"></div><div class="col" style="left:90%;width:7%"></div></div>
+    <div class="hint3">Far wall, alcoves, near columns</div>
+  </div></div></div></div>
+</section>
+
+<section class="demo" id="m4">
+  <div class="dh"><div class="num">M4</div><h2>Self-drawing lines</h2><p>Real effect: strokes draw themselves while a number counts. Library: gsap DrawSVGPlugin.</p><button class="play" data-d="m4">Play</button></div>
+  <div class="stage" id="s4">
+    <div class="ringbox"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="none" stroke="var(--line-2)" stroke-width="8"/><circle id="ring" cx="60" cy="60" r="50" fill="none" stroke="var(--gold)" stroke-width="8" stroke-linecap="round" transform="rotate(-90 60 60)"/></svg><div class="val"><span id="ringnum">72%</span><small>chapters read</small></div></div>
+    <svg id="emblem" viewBox="0 0 200 160" fill="none" stroke="var(--gold)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path class="em" d="M22 62 L100 18 L178 62 Z"/><path class="em" d="M30 72 H170"/>
+      <path class="em" d="M46 82 V126"/><path class="em" d="M82 82 V126"/><path class="em" d="M118 82 V126"/><path class="em" d="M154 82 V126"/>
+      <path class="em" d="M32 136 H168"/><path class="em" d="M22 148 H178"/>
+    </svg>
+  </div>
+</section>
+
+<section class="demo" id="m5">
+  <div class="dh"><div class="num">M5</div><h2>Wrong answer</h2><p>Real effect: the row shakes, then settles, edge turns the wrong colour. Library: gsap CustomWiggle.</p><button class="play" data-d="m5">Play</button></div>
+  <div class="stage" id="s5"><p class="stem">Which structure is shown?</p>
+    <div class="opt" id="o5"><span class="ch">B</span><span class="tx">Vestibule</span></div></div>
+</section>
+
+<section class="demo" id="m6">
+  <div class="dh"><div class="num">M6</div><h2>Right answer</h2><p>Real effect: the row drops and bounces, a tick draws itself. Library: gsap CustomBounce and DrawSVGPlugin.</p><button class="play" data-d="m6">Play</button></div>
+  <div class="stage" id="s6"><p class="stem">Which structure is shown?</p>
+    <div class="opt" id="o6"><span class="ch">C</span><span class="tx">Cochlea</span>
+      <svg viewBox="0 0 28 28" fill="none" stroke="var(--ok)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path id="tick" d="M5 15 L11 21 L23 7"/></svg></div></div>
+</section>
+
+<section class="demo" id="m7">
+  <div class="dh"><div class="num">M7</div><h2>Weighted scroll with snap</h2><p>Real effect: scrolling has weight and settles on each panel. Library: Lenis and its snap add-on. Scroll the strip sideways, then flip the switch.</p><button class="play" data-d="m7">Play</button></div>
+  <div class="stage" id="s7">
+    <div class="strip" id="strip"><div class="track" id="track">
+      <div class="pan" style="--mc:var(--ent)"><div class="alc"></div><span class="tn">ENT</span><span class="ts">Panel 1 of 4</span></div>
+      <div class="pan" style="--mc:var(--ophtho)"><div class="alc"></div><span class="tn">Ophthalmology</span><span class="ts">Panel 2 of 4</span></div>
+      <div class="pan" style="--mc:var(--neuro)"><div class="alc"></div><span class="tn">Neuropsychiatry</span><span class="ts">Panel 3 of 4</span></div>
+      <div class="pan" style="--mc:var(--peds)"><div class="alc"></div><span class="tn">Pediatrics</span><span class="ts">Panel 4 of 4</span></div>
+    </div></div>
+    <div class="ctl"><label class="sw"><input type="checkbox" id="sw7" checked> Weighted scroll and snap</label><span id="sw7note">On. Sideways scroll over the strip is smoothed and settles on a panel.</span></div>
+  </div>
+</section>
+
+<section class="demo" id="m8">
+  <div class="dh"><div class="num">M8</div><h2>The browser's own page morph</h2><p>Real effect: tile becomes a page. No library, the browser's startViewTransition. Press the tile.</p><button class="play" data-d="m8">Play</button></div>
+  <div class="stage" id="s8">
+    <div class="vt-card" id="vtcard"><button class="face" aria-label="Open Pediatrics"></button><div class="alc"></div><span class="tn">Pediatrics</span><span class="ts">51 chapters</span>
+      <div class="pgv"><h3>Pediatrics</h3><p>The tile and the page are the same element, moved by the browser.</p><button class="mini" id="vtback">Back</button></div></div>
+  </div>
+</section>
+
+<pre id="selftest" hidden></pre>
+</div>
+
+<script src="lib/gsap/gsap.min.js"></script>
+<script src="lib/gsap/ScrollTrigger.min.js"></script>
+<script src="lib/gsap/Flip.min.js"></script>
+<script src="lib/gsap/DrawSVGPlugin.min.js"></script>
+<script src="lib/gsap/CustomEase.min.js"></script>
+<script src="lib/gsap/CustomBounce.min.js"></script>
+<script src="lib/gsap/CustomWiggle.min.js"></script>
+<script src="lib/lenis/lenis.min.js"></script>
+<script src="lib/lenis/lenis-snap.min.js"></script>
+<script>
+(function () {
+'use strict';
+var RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+var Q = new URLSearchParams(location.search);
+var SELF = Q.get('selftest') === '1', FREEZE = Q.get('freeze'), AT = parseFloat(Q.get('at') || '0.5');
+function $(s, r) { return (r || document).querySelector(s); }
+function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+function d(x) { return RM ? 0 : x; }
+function cv(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+var regErr = '';
+try { gsap.registerPlugin(ScrollTrigger, Flip, DrawSVGPlugin, CustomEase, CustomBounce, CustomWiggle); } catch (e) { regErr = String(e); }
+
+var DEMOS = {};
+
+/* ---------- M1 ---------- */
+(function () {
+  var s1 = $('#s1'), tiles = $$('#s1 .tile'), cells = $$('#s1 .cell'), openTile = null;
+  var opt = { duration: d(.8), ease: 'power3.inOut', scale: false };
+  function open(t) {
+    if (openTile) return null;
+    var st = Flip.getState(t);
+    openTile = t; t.classList.add('open'); s1.appendChild(t);
+    var tl = Flip.from(st, opt);
+    gsap.from($$('.pg > *', t), { y: 18, duration: d(.5), delay: d(.5), stagger: .07, ease: 'power3.out' });
+    return tl;
+  }
+  function close() {
+    if (!openTile) return null;
+    var t = openTile, st = Flip.getState(t);
+    openTile = null; t.classList.remove('open'); cells[tiles.indexOf(t)].appendChild(t);
+    return Flip.from(st, opt);
+  }
+  function reset() {
+    if (openTile) { var t = openTile; openTile = null; t.classList.remove('open'); cells[tiles.indexOf(t)].appendChild(t); }
+    gsap.killTweensOf(tiles); gsap.set(tiles, { clearProps: 'all' });
+    gsap.set($$('#s1 .pg > *'), { clearProps: 'all' });
+  }
+  tiles.forEach(function (t) {
+    $('.face', t).addEventListener('click', function () { open(t); });
+    $('.back', t).addEventListener('click', close);
+  });
+  DEMOS.m1 = { play: function () { reset(); return open(tiles[1]); }, open: open, close: close, tiles: tiles, stage: s1,
+    isOpen: function () { return !!openTile; } };
+})();
+
+/* ---------- M2 ---------- */
+(function () {
+  var rows = $$('#s2 .crow'), fp = { props: 'backgroundColor,borderColor' };
+  function toggle(r) {
+    var was = r.classList.contains('open');
+    var st = Flip.getState(rows, fp);
+    rows.forEach(function (x) { x.classList.toggle('open', x === r && !was); });
+    return Flip.from(st, { duration: d(.7), ease: 'power3.inOut', scale: false, props: fp.props });
+  }
+  rows.forEach(function (r) { $('.hd', r).addEventListener('click', function () { toggle(r); }); });
+  DEMOS.m2 = { play: function () {
+    gsap.killTweensOf(rows); rows.forEach(function (x) { x.classList.remove('open'); });
+    gsap.set(rows, { clearProps: 'all' });
+    return toggle(rows[1]);
+  }, rows: rows };
+})();
+
+/* ---------- M3 ---------- */
+(function () {
+  var sc = $('#sc3'), vp = $('#vp3'), far = $('#lfar'), mid = $('#lmid'), near = $('#lnear');
+  for (var r = 0; r < 4; r++) for (var c = 0; c < 4; c++) {
+    var a = document.createElement('div'); a.className = 'a3';
+    a.style.left = (6 + c * 24) + '%'; a.style.top = (6 + r * 24) + '%'; mid.appendChild(a);
+  }
+  function dist(l) { return function () { return -(l.offsetHeight - vp.offsetHeight); }; }
+  var layers = [far, mid, near], made = [];
+  if (RM) { layers.forEach(function (l) { gsap.set(l, { y: dist(l)() }); }); }
+  else {
+    layers.forEach(function (l) {
+      made.push(gsap.to(l, { y: dist(l), ease: 'none', scrollTrigger: {
+        scroller: sc, trigger: '#world3', start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true } }));
+    });
+  }
+  function max() { return sc.scrollHeight - sc.clientHeight; }
+  DEMOS.m3 = {
+    play: function () {
+      sc.scrollTop = 0; ScrollTrigger.update();
+      if (RM) { sc.scrollTop = max(); return null; }
+      var o = { v: 0 };
+      return gsap.to(o, { v: 1, duration: 3, ease: 'power1.inOut', onUpdate: function () { sc.scrollTop = o.v * max(); ScrollTrigger.update(); } });
+    },
+    freeze: function (at) { sc.scrollTop = at * max(); ScrollTrigger.update(); },
+    sc: sc, layers: layers, max: max
+  };
+})();
+
+/* ---------- M4 ---------- */
+(function () {
+  var ring = $('#ring'), num = $('#ringnum'), em = $$('#emblem .em');
+  var o = { v: 72 };
+  DEMOS.m4 = { play: function () {
+    gsap.killTweensOf([ring, num, o].concat(em));
+    o.v = 0; num.textContent = '0%';
+    gsap.set(ring, { drawSVG: '0%' }); gsap.set(em, { drawSVG: '0%' });
+    var tl = gsap.timeline();
+    tl.to(ring, { drawSVG: '72%', duration: d(1.8), ease: 'power2.out' }, 0);
+    tl.to(o, { v: 72, duration: d(1.8), ease: 'power2.out', onUpdate: function () { num.textContent = Math.round(o.v) + '%'; } }, 0);
+    tl.to(em, { drawSVG: '100%', duration: d(.9), stagger: .22, ease: 'power1.inOut' }, .3);
+    return tl;
+  }, ring: ring, num: num, em: em };
+})();
+
+/* ---------- M5 ---------- */
+(function () {
+  var row = $('#o5');
+  CustomWiggle.create('wrongWiggle', { wiggles: 9, type: 'easeOut' });
+  var peak = 0;
+  DEMOS.m5 = { play: function () {
+    gsap.killTweensOf(row); gsap.set(row, { x: 0, borderColor: cv('--line-2'), backgroundColor: cv('--card') });
+    peak = 0;
+    var tl = gsap.timeline();
+    tl.to(row, { borderColor: cv('--bad'), backgroundColor: 'rgba(212,103,79,.15)', duration: d(.15) }, 0);
+    tl.to(row, { x: 16, duration: d(.8), ease: 'wrongWiggle', onUpdate: function () { peak = Math.max(peak, Math.abs(gsap.getProperty(row, 'x'))); } }, 0);
+    return tl;
+  }, row: row, peak: function () { return peak; } };
+})();
+
+/* ---------- M6 ---------- */
+(function () {
+  var row = $('#o6'), tick = $('#tick'), top = 0;
+  CustomBounce.create('dropBounce', { strength: .45, squash: 0 });
+  DEMOS.m6 = { play: function () {
+    gsap.killTweensOf([row, tick]); gsap.set(row, { y: 0, borderColor: cv('--line-2'), backgroundColor: cv('--card') }); gsap.set(tick, { drawSVG: '0%' });
+    top = 0;
+    var tl = gsap.timeline();
+    tl.from(row, { y: -26, duration: d(.9), ease: 'dropBounce', onUpdate: function () { top = Math.min(top, gsap.getProperty(row, 'y')); } }, 0);
+    tl.to(row, { borderColor: cv('--ok'), backgroundColor: 'rgba(127,174,111,.15)', duration: d(.15) }, 0);
+    tl.to(tick, { drawSVG: '100%', duration: d(.45), ease: 'power2.out' }, .35);
+    return tl;
+  }, row: row, tick: tick, top: function () { return top; } };
+})();
+
+/* ---------- M7 ---------- */
+(function () {
+  var strip = $('#strip'), track = $('#track'), sw = $('#sw7'), note = $('#sw7note');
+  var lenis = null, snap = null, pts = [];
+  function layout() {
+    var p = $('.pan', track), step = p.offsetWidth + 16;
+    track.style.paddingRight = Math.max(0, strip.clientWidth - 32 - p.offsetWidth) + 'px';
+    pts = [0, 1, 2, 3].map(function (i) { return i * step; });
+    return pts;
+  }
+  function on() {
+    if (RM || lenis) return;
+    layout();
+    lenis = new Lenis({ wrapper: strip, content: track, orientation: 'horizontal', gestureOrientation: 'both', lerp: .08, smoothWheel: true, autoRaf: !SELF });
+    snap = new Snap(lenis, { type: 'proximity', distanceThreshold: 220, debounce: 120, duration: .7 });
+    pts.forEach(function (v) { snap.add(v); });
+    note.textContent = 'On. Sideways scroll over the strip is smoothed and settles on a panel.';
+  }
+  function off() {
+    if (snap) { snap.destroy(); snap = null; }
+    if (lenis) { lenis.destroy(); lenis = null; }
+    note.textContent = 'Off. Plain browser scrolling, nothing settles.';
+  }
+  if (RM) { sw.checked = false; sw.disabled = true; note.textContent = 'Off. Reduced motion is requested, so weighted scroll stays off.'; }
+  sw.addEventListener('change', function () { sw.checked ? on() : off(); });
+  window.addEventListener('resize', function () { if (lenis) { off(); on(); } });
+  var wait = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+  DEMOS.m7 = {
+    play: function () {
+      if (RM) { strip.scrollLeft = layout()[3]; return null; }
+      if (!sw.checked) { sw.checked = true; }
+      on();
+      lenis.scrollTo(0, { immediate: true });
+      var seq = Promise.resolve();
+      [1, 2, 3].forEach(function (i) { seq = seq.then(function () { return wait(350); }).then(function () { snap.goTo(i); return wait(1000); }); });
+      return seq;
+    },
+    freeze: function (at) { on(); lenis.scrollTo(at * pts[3], { immediate: true }); },
+    state: function () { return { lenis: lenis, snap: snap, pts: pts, left: strip.scrollLeft, scroll: lenis ? lenis.scroll : null }; },
+    on: on, off: off, strip: strip
+  };
+  if (!RM) on();
+})();
+
+/* ---------- M8 ---------- */
+(function () {
+  var st = $('#s8'), card = $('#vtcard'), supported = typeof document.startViewTransition === 'function';
+  function toggle() {
+    var apply = function () { st.classList.toggle('open'); };
+    if (RM || !supported) { apply(); return null; }
+    return document.startViewTransition(apply);
+  }
+  if (!supported) {
+    st.innerHTML = '<p class="nope">This browser does not have it.</p>';
+  } else {
+    $('.face', card).addEventListener('click', toggle);
+    $('#vtback').addEventListener('click', toggle);
+  }
+  DEMOS.m8 = { play: function () {
+    if (!supported) return null;
+    st.classList.remove('open');
+    var vt = toggle();
+    return vt ? vt.finished : null;
+  }, supported: supported, stage: st };
+})();
+
+/* ---------- Play buttons ---------- */
+$$('.play').forEach(function (b) {
+  b.addEventListener('click', function () { DEMOS[b.getAttribute('data-d')].play(); b.textContent = 'Replay'; });
+});
+
+/* ---------- freeze (for stills) ---------- */
+if (FREEZE && DEMOS[FREEZE]) {
+  document.body.classList.add('freeze');
+  document.getElementById(FREEZE).classList.add('on');
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      var D = DEMOS[FREEZE];
+      if (D.freeze) D.freeze(AT);
+      else { var tl = D.play(); if (tl && tl.pause) { tl.pause(); tl.progress(AT); } }
+      document.title = 'frozen ' + FREEZE + ' ' + AT;
+    }, 200);
+  });
+}
+
+/* ---------- selftest ---------- */
+if (SELF) {
+  var out = $('#selftest'); out.hidden = false;
+  var L = [], np = 0, nf = 0;
+  var ok = function (name, cond, extra) { cond ? np++ : nf++; L.push((cond ? 'PASS ' : 'FAIL ') + name + (extra ? ' | ' + extra : '')); out.textContent = L.join('\n'); };
+  var sleep = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+  var fin = function (x) {
+    var p = !x ? Promise.resolve() : new Promise(function (r) { x.then(function () { r(); }); });
+    return Promise.race([p, sleep(5000).then(function () { throw new Error('timeout waiting for demo'); })]);
+  };
+  /* length of stroke DrawSVG currently shows = first number of the dash array */
+  var dashLen = function (el) { var a = getComputedStyle(el).strokeDasharray; return a && a !== 'none' ? parseFloat(a) || 0 : el.getTotalLength(); };
+  var run = async function (name, fn) {
+    try { await fn(); } catch (e) { ok(name + ' ran without throwing', false, String(e && e.message || e)); return; }
+  };
+  /* headless Chrome in virtual-time mode delivers no animation frames, so the test pumps the clocks by hand */
+  gsap.ticker.lagSmoothing(0);
+  setInterval(function () {
+    if (typeof gsap.ticker.tick === 'function') gsap.ticker.tick();
+    var s = DEMOS.m7.state(); if (s.lenis) s.lenis.raf(performance.now());
+  }, 16);
+  window.addEventListener('unhandledrejection', function (e) { window.__errs.push('rejection: ' + (e.reason && e.reason.message || e.reason)); });
+  window.addEventListener('load', function () { setTimeout(async function () { try {
+    gsap.globalTimeline.timeScale(3);
+    ok('typeof gsap', typeof gsap === 'object' || typeof gsap === 'function', typeof gsap + ' v' + (window.gsap && gsap.version));
+    ok('registerPlugin call clean', !regErr, regErr);
+    ['ScrollTrigger', 'Flip', 'DrawSVGPlugin', 'CustomEase', 'CustomBounce', 'CustomWiggle'].forEach(function (n) {
+      ok('plugin ' + n + ' loaded and registered', !regErr && typeof window[n] !== 'undefined', 'v' + (window[n] && window[n].version));
+    });
+    ok('gsap.plugins.drawSVG present', !!gsap.plugins.drawSVG);
+    ok('custom eases created', typeof gsap.parseEase('wrongWiggle') === 'function' && typeof gsap.parseEase('dropBounce') === 'function');
+    ok('typeof Lenis', typeof Lenis === 'function', typeof Lenis);
+    ok('typeof Snap (Lenis snap add-on)', typeof Snap === 'function', typeof Snap);
+    ok('prefers-reduced-motion in this run', true, String(RM));
+
+    await run('M1', async function () {
+      var D = DEMOS.m1; await fin(D.play());
+      var t = D.tiles[1], sw = D.stage.clientWidth, w = t.getBoundingClientRect().width;
+      ok('M1 tile grew to a page panel', D.isOpen() && w > sw - 60, 'tile width ' + Math.round(w) + ' of stage ' + sw);
+      await fin(D.close());
+      ok('M1 Back glides tile home', !D.isOpen() && t.parentNode.className === 'cell', 'parent=' + t.parentNode.className);
+    });
+    await run('M2', async function () {
+      var D = DEMOS.m2; await fin(D.play());
+      var r = D.rows[1];
+      ok('M2 row grew into reading card', r.classList.contains('open') && r.getBoundingClientRect().height > 120, 'height ' + Math.round(r.getBoundingClientRect().height));
+    });
+    await run('M3', async function () {
+      var D = DEMOS.m3; await fin(D.play()); await sleep(200);
+      var ys = D.layers.map(function (l) { return Math.round(gsap.getProperty(l, 'y')); });
+      ok('M3 layers drift at different speeds', ys[0] < 0 && ys[1] < ys[0] && ys[2] < ys[1], 'far/alcoves/near y=' + ys.join('/') + ' scrollTop=' + Math.round(D.sc.scrollTop) + '/' + D.max());
+    });
+    await run('M4', async function () {
+      var D = DEMOS.m4; await fin(D.play());
+      var rl = D.ring.getTotalLength(), rd = dashLen(D.ring), lp = D.em[D.em.length - 1], le = dashLen(lp);
+      ok('M4 ring drew round and number counted', Math.abs(rd - .72 * rl) < 2 && D.num.textContent === '72%', 'drawn ' + rd.toFixed(1) + ' of ' + rl.toFixed(1) + ' (72% = ' + (.72 * rl).toFixed(1) + '), text ' + D.num.textContent);
+      ok('M4 emblem outline drew itself', le >= lp.getTotalLength() - 1, 'last path drawn ' + le.toFixed(1) + ' of ' + lp.getTotalLength().toFixed(1));
+    });
+    await run('M5', async function () {
+      var D = DEMOS.m5; await fin(D.play());
+      ok('M5 row shook then settled, edge wrong colour', D.peak() > 3 && Math.abs(gsap.getProperty(D.row, 'x')) < 1 && getComputedStyle(D.row).borderTopColor === 'rgb(212, 103, 79)',
+        'peak ' + D.peak().toFixed(1) + 'px, edge ' + getComputedStyle(D.row).borderTopColor);
+    });
+    await run('M6', async function () {
+      var D = DEMOS.m6; await fin(D.play());
+      ok('M6 row dropped, bounced, tick drew', D.top() < -5 && Math.abs(gsap.getProperty(D.row, 'y')) < 1 && dashLen(D.tick) >= D.tick.getTotalLength() - 1,
+        'start offset ' + D.top().toFixed(1) + 'px, tick drawn ' + dashLen(D.tick).toFixed(1) + ' of ' + D.tick.getTotalLength().toFixed(1));
+    });
+    await run('M7', async function () {
+      var D = DEMOS.m7; await fin(D.play()); await sleep(600);
+      var s = D.state();
+      ok('M7 Lenis and snap live', !!s.lenis && !!s.snap && window.lenis && window.lenis.snap === true, 'lenis ' + typeof s.lenis + ' snap ' + typeof s.snap);
+      ok('M7 settled on last panel', s.lenis && Math.abs(s.scroll - s.pts[3]) < 3 && Math.abs(s.left - s.pts[3]) < 3, 'scroll ' + (s.scroll && s.scroll.toFixed(1)) + ' left ' + s.left + ' target ' + s.pts[3]);
+      D.off();
+      ok('M7 switch off tears down cleanly', !D.state().lenis);
+      D.on();
+    });
+    await run('M8', async function () {
+      var D = DEMOS.m8;
+      if (!D.supported) { ok('M8 startViewTransition', true, 'unsupported here, plain line shown: ' + $('#s8').textContent.trim()); return; }
+      var done = false;
+      try { await fin(D.play()); done = true; } catch (e) { /* no frames in headless virtual time: the browser never finishes the transition */ }
+      ok('M8 view transition started and page state switched', D.stage.classList.contains('open'), 'startViewTransition present, finished=' + done + (done ? '' : ' (headless virtual time gives no frames, finish needs a real screen)'));
+    });
+    ok('no window.onerror messages', window.__errs.length === 0, window.__errs.join(' ;; '));
+    L.push('DOCHEIGHT ' + document.documentElement.scrollHeight);
+    L.push('END pass=' + np + ' fail=' + nf);
+    } catch (e) { L.push('FAIL selftest harness threw | ' + (e && e.message || e)); }
+    out.textContent = L.join('\n');
+  }, 150); });
+}
+})();
+</script>
+</body>
+</html>
