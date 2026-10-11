@@ -188,8 +188,19 @@ end up doing:
 
 ## In flight when this note was last written
 
-- Researcher (Sonnet, read-only, no downloads) looking for ready-made scroll walk-in demos. If its
-  report is lost, re-dispatch the same search once.
+- Researcher report read 2026-10-11: no whole doorway walk-in page found that can be taken as is
+  (CodePen and Codrops refused its fetches; both Codrops demos need a smooth-scroll hijack = banned).
+  Three CodePen leads then opened in the built-in browser and confirmed real:
+  1. `codepen.io/mvaneijgen/pen/YzwVZEm` "GSAP ScrollTrigger Zoom" — CLOSEST: two stacked pictures,
+     the front one a cut-out that scales up on scroll until you are through it; GSAP core +
+     ScrollTrigger only as far as read; its two pictures are a third party's, swap for ours.
+  2. `codepen.io/GreenSock/pen/mdRaRrN` "Zoom by section" — a reusable zoom-on-a-spot helper
+     (`origin: [x, y]`), useful for aiming the zoom at the door.
+  3. `codepen.io/GreenSock/pen/oNJRjNL` clip-path reveal — loads Lenis from a CDN, would need
+     stripping; look only.
+  CodePen public pens are MIT per CodePen's licensing page (second-hand quote, not read first-hand).
+  Shown to the owner: lead 1 in full view; his verdict on the feel is pending. Taking it still needs
+  an outside painting per theme with the doorway cut see-through. No code copied yet.
 - Unanswered by the owner: keep the upright evening hall or repaint it with a taller name strip under
   the top two alcoves; button pick (suggested 139 main, 21 quiet).
 - 4 of 8 pictures used on 2026-10-11. Raw paintings in `paint/` are uncommitted by design.
