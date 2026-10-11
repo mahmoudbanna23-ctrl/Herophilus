@@ -2243,5 +2243,5 @@ citations; 72 pairs read by eye, all true repeats. It found five leftovers, all 
   content/peds/qb-pages/dupes/second-pass/rulings-2.json.
 - Model Final Exam 3 (endpoint part 1) row shows 58, was 59: both copies of one question sat in it.
 - Exam-row pictures obtained; the measured check still passes.
-- Still owed: 274 + 48 first-pass rows read by script only; the live site has 346, not 351, until
-  the next upload.
+- Still owed: 274 + 48 first-pass rows read by script only. Live site carries all 351 since the
+  2026-10-11 upload (deployment `79cccaa1`, byte-matched against `dist`).
