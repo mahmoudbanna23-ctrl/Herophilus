@@ -155,10 +155,41 @@ home. Not started.
   not yet settled — ask him, plan, get his yes, then build. Carry the order fault above into the next
   build brief.
 
+## NEW DIRECTION, owner 2026-10-11 — RESUME HERE
+
+Owner chose: **the first screen is the library seen from OUTSIDE** (new painting of the doorway, welcome
+line on it); **scrolling carries you through the door into the hall**; then the rest of home below.
+Hall-first build is saved at `e2e50560` as the fallback. Footprint at that commit, measured
+`git diff main...HEAD --stat -- app` (three dots; two dots also shows Pediatrics's newer commits on
+main and reads as a false alarm): 4 new files + 1 line in `index.html`.
+
+**Owner's ruling on HOW, 2026-10-11 (supersedes building it from scratch):** "it only takes time to
+design if we did it ourself, you might find something similar online to take it and just make a few
+edits". So: find a ready-made scroll walk-in demo online, take it, edit lightly. It must be plain
+HTML/CSS/JS, no framework, no build, no CDN, open from disk, licence allowing reuse; any download
+needs his yes (name, source, size) and lands in its own empty folder as untrusted. Show him real
+candidates (live links), never redrawn ones. A Sonnet researcher was dispatched for a shortlist of up
+to six; its report is the next thing to read. Nothing built or painted for the walk-in yet.
+
+The from-scratch plan below was NOT approved. It stays only as the list of what the borrowed demo must
+end up doing:
+1. Paint `outside-dark` and `outside-light` (1536x1024), hall painting given as style reference, big
+   central doorway with the hall's glow inside, no letters or figures. Upright iPad uses the centre of
+   the same painting at first. 4 of 8 pictures used today.
+2. Scroll-led walk-in: the outside view grows around the doorway until the opening fills the screen
+   and the hall is seen through it (a move caused by the scroll, never a fade). Hall holds while the
+   plaques settle and rings draw (M4), then releases to the rest of home with depth (M3). Alcove click
+   = M1. GSAP core + ScrollTrigger + Flip + DrawSVG copied into `app/`, loaded by `hall.js` itself so
+   `index.html` stays at one line. Reduced motion: two plain stacked pictures, no walk-in.
+3. Fix carried in: alcove order fixed to the painting by module id, not list order.
+4. Script check, Codex check (a different house from the Claude builder), then stills at three scroll
+   stops x three sizes x two themes AND the owner opens it live, since motion cannot be judged from
+   stills. The two upright hall paintings (rows 3-4) go in at the same time.
+
 ## In flight when this note was last written
 
-- A Claude helper is putting the two approved paintings into the hall (`app/assets/hall/`,
-  `app/css/hall.css`, `app/js/hall.js` only) and shooting the six home screenshots into `shots/`.
-  Its `app/` edits are uncommitted until its report is read and checked.
-- Still owed after that: independent different-house check of the hall build, `hall-light-tall` and
-  `fore` paintings (3 of 8 pictures used today), owner's button pick (suggested 139 main, 21 quiet).
+- Researcher (Sonnet, read-only, no downloads) looking for ready-made scroll walk-in demos. If its
+  report is lost, re-dispatch the same search once.
+- Unanswered by the owner: keep the upright evening hall or repaint it with a taller name strip under
+  the top two alcoves; button pick (suggested 139 main, 21 quiet).
+- 4 of 8 pictures used on 2026-10-11. Raw paintings in `paint/` are uncommitted by design.
