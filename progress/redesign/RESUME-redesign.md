@@ -393,3 +393,29 @@ Gilda, GFS Didot; files unmodified). Glyph check by cmap parse:
   stills of home, a subject page, a question and a theory page at the three sizes.
 - Reserved Font Name applies to GFS Didot and Gentium: embed the files unmodified, or rename
   the family if a subset is made.
+
+### 2026-10-11, 18:25 — PREP: cleared context, same chat continues
+
+- Owner (verbatim): "no keep everything here /prep and we continue after the clear". So the
+  work goes on in the SAME window after `/clear`, not in a new chat. Nothing new was built
+  between the lettering pick (`6c2c194e`) and this note.
+- State of the tree at prep: last commit `6c2c194e`, pushed. Nothing modified. Untracked on
+  purpose and ONLY on disk (not in git): the source paintings and their logs/prompts under
+  `progress/redesign/paint/` (`hall-dark.png`, `hall-light.png`, `hall-dark-tall.png`,
+  `hall-light-tall.png`, `outside-dark.png`, `outside-light.png`, `*.log`, `prompt-hall-*.txt`,
+  `doors.log`). Build B needs the two `*-tall.png`; they are there.
+- Doors picture: `paint/doors.png` did NOT exist at 18:25. A background shell of the cleared
+  chat was sleeping until 21:05 to run `bash ./paint-ref.sh doors 1024x1536 outside-dark.png`
+  in `paint/` (the last of today's eight pictures; Codex was at its usage limit until 21:03).
+  After the clear: first `ls paint/doors.png`. If it is missing and it is past 21:05, check no
+  other Codex job is running (Pediatrics has first call), then run that one command once.
+  Before 21:05 it cannot run; do the steps that need no Codex first.
+- Gateway (OmniRoute) gave no answer tonight; do not rely on it without a fresh probe.
+- Next action, unchanged: "Order for the fresh chat" in the HANDOFF block above, with the
+  lettering build (the "LETTERING PICKED: pair 5" block) slotted in beside step 1. Steps 1 and
+  the lettering build need no Codex and can start at once; both are helper jobs (Haiku looks at
+  stills, one Sonnet builder with a brief that still has to be written under `briefs/`).
+- Told to the owner already, do not re-ask: pair 5 is recorded; the missing signs come from
+  Gentium Book Plus built in behind it; printing keeps today's lettering unless he says
+  otherwise. Still unanswered from earlier: the button pick (suggested 139 main, 21 quiet) —
+  one plain question, only when the screenshots go to him.
