@@ -70,6 +70,25 @@ written. New files only: `app/js/hall.js`, `app/css/hall.css`, `app/assets/hall/
 - Raw paintings stay in `progress/redesign/paint/` and are not committed (3 MB each); the converted
   files in `app/assets/hall/` are.
 
+## Build state, 2026-10-11
+
+- **Home built and committed `45409db`, pushed** — no paintings in it yet, so alcove and greeting
+  positions are untuned starting guesses. Builder was a Claude role (Codex occupied by Pediatrics).
+- Builder's own checks: `tools/boot-check` QUESTIONS 7477 · THEORY 153 · MODULES 4 · chapters 162 ·
+  0 console errors ("module cards in DOM 0" is expected: the alcoves replace them);
+  `progress/redesign/check-hall.mjs` 21 PASS. **Independent different-house check still owed.**
+- Deviations from the brief, accepted: `hall.js` also wraps `inkMarkChips`, so the saved-mock button
+  lands inside `.hall-below`; the plaque fill is `--card`, not `--fill` (`--fill` is dark in both
+  themes). Measured plaque contrast, name / count / lowest accuracy colour: dark 14.37 / 6.37 / 4.87,
+  light 14.69 / 7.17 / 6.2.
+- **Library survey (researcher, paper only, nothing run from disk):** nothing on the factory shelf
+  clearly beats the plain build for home. GSAP (one 73 KB classic file, free standard licence) is the
+  only candidate worth a `file://` test, for the walk-in move. three.js ships no classic build since
+  r160; Babylon is 7.5 MB; WebGL textures from local files are a known `file://` risk.
+- **Button sample sheet** (owner asked to see ready-made button styles, 2026-10-11):
+  `progress/redesign/samples/buttons.html` + two screenshots. A look for him to pick by number; not
+  wired into the app.
+
 ## Pictures made
 
 | # | Name | Date | Result |
