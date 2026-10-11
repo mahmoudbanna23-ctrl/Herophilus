@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Herophilus motion samples, anime.js</title>
+<script>
+/* error catcher first, so a failing library script is recorded too */
+window.__errs = [];
+window.onerror = function (m, src, ln) { window.__errs.push(String(m) + ' @' + String(src || '').split('/').pop() + ':' + ln); };
+if (/[?&]theme=light/.test(location.search)) document.documentElement.setAttribute('data-theme', 'light');
+</script>
+<style>
+/* tokens copied from motion-more.html (itself copied from app/css/tokens.css) */
+:root{
+  --font-display:'Cinzel','Trajan Pro','Palatino Linotype','Book Antiqua',Georgia,serif;
+  --font-body:'EB Garamond','Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+  --tx:#f2e8d5; --ink:#f2e8d5; --ink-2:#cfc0a5; --ink-3:#ab9a80; --ink-4:#9c8b71;
+  --bg:#0a1017; --bg-2:#151f2d; --card:#121a27; --fill:#2b3a4f;
+  --line:rgba(242,232,213,.085); --line-2:rgba(242,232,213,.16);
+  --neon:#66d9ff; --neon-glow:0 0 10px rgba(102,217,255,.65); --gold-glow:0 0 10px rgba(217,180,74,.65);
+  --ent:#b4472f; --ophtho:#5c7a52; --neuro:#6d4c7d; --peds:#2e5f8a;
+  --ok:#7fae6f; --ok-bg:rgba(127,174,111,.15); --bad:#d4674f; --bad-bg:rgba(212,103,79,.15);
+  --gold:#d9b44a; --gold-bg:rgba(217,180,74,.15); --on-accent:#12100b; --gold-text:#d9b44a;
+  --r-sm:2px; --r-md:4px; --r-lg:8px;
+  --pop-xs:0 5px 14px; --pop-md:0 8px 22px;
+  --fs-xs:11px; --fs-sm:12px; --fs-md:13px; --fs-ui:14px; --fs-body:16.5px; --fs-lg:19px; --fs-xl:24px; --fs-2xl:32px; --fs-3xl:44px;
+  --sh:rgba(0,0,0,.5); --sh-soft:rgba(0,0,0,.3);
+  --tint:rgba(242,232,213,.045); --tint-2:rgba(242,232,213,.075);
+  --ease-standard:cubic-bezier(.22,1,.36,1);
+}
+:root[data-theme="light"]{
+  --tx:#241c14; --ink:#241c14; --ink-2:#463726; --ink-3:#5e4c37; --ink-4:#5c4b36;
+  --bg:#e6d9be; --bg-2:#dbcbab; --card:#f7efe0; --fill:#2b2118;
+  --line:rgba(60,44,28,.13); --line-2:rgba(60,44,28,.22);
+  --neon:#00708f; --neon-glow:0 0 10px rgba(0,112,143,.48); --gold-glow:0 0 10px rgba(122,84,16,.55);
+  --ok:#2f5426; --ok-bg:rgba(47,84,38,.13); --bad:#9c3620; --bad-bg:rgba(156,54,32,.11);
+  --gold:#d9b44a; --gold-bg:rgba(154,107,31,.17); --on-accent:#1a150e; --gold-text:#7a5410;
+  --sh:rgba(74,56,34,.16); --sh-soft:rgba(74,56,34,.10);
+  --tint:rgba(74,56,34,.045); --tint-2:rgba(74,56,34,.075);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:var(--font-body);background:var(--bg);color:var(--tx);font-size:var(--fs-body);line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(circle at 12% 8%, rgba(109,76,125,.09) 0, transparent 42%),
+                   radial-gradient(circle at 88% 4%, rgba(46,95,138,.05) 0, transparent 38%);
+  background-attachment:fixed;
+}
+button{font-family:inherit;font-size:inherit;cursor:pointer;border:none;background:none;color:inherit;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid var(--neon);outline-offset:2px;border-radius:var(--r-md)}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 16px 96px}
+h1{font:600 var(--fs-2xl)/1.2 var(--font-display);margin:0 0 6px;letter-spacing:.02em}
+.sub{margin:0 0 32px;color:var(--ink-3);font-size:var(--fs-ui)}
+.demo{margin:0 0 40px}
+.dh{display:grid;grid-template-columns:auto 1fr auto;gap:4px 16px;align-items:center;margin-bottom:12px}
+.num{grid-row:1 / span 2;font:600 var(--fs-3xl)/1 var(--font-display);color:var(--gold-text);min-width:84px}
+.dh h2{margin:0;font:600 var(--fs-lg)/1.25 var(--font-display);letter-spacing:.02em}
+.dh p{margin:0;color:var(--ink-3);font-size:var(--fs-ui)}
+.play{grid-row:1 / span 2;grid-column:3;min-height:44px;min-width:96px;padding:0 20px;border-radius:var(--r-lg);
+  background:var(--gold);color:var(--on-accent);font:600 var(--fs-ui)/1 var(--font-display);letter-spacing:.06em}
+.play:hover{box-shadow:var(--gold-glow)}
+.stage{position:relative;overflow:hidden;border:1px solid var(--line-2);border-radius:var(--r-lg);background:var(--card);padding:16px}
+
+/* A1 */
+#s1{display:flex;flex-direction:column;align-items:center;gap:14px;padding:28px 16px 20px}
+#grid1{display:grid;grid-template-columns:repeat(9,1fr);gap:8px;width:100%;max-width:600px}
+.tile{aspect-ratio:1;min-height:36px;display:flex;align-items:center;justify-content:center;
+  border:1px solid var(--line-2);border-radius:var(--r-md);background:var(--bg-2);color:var(--ink-3);
+  font:600 var(--fs-sm)/1 var(--font-display);letter-spacing:.04em}
+.tile.done{background:var(--gold-bg);border-color:var(--gold);color:var(--gold-text)}
+.tile:hover{border-color:var(--gold)}
+.hint{margin:0;font-size:var(--fs-sm);color:var(--ink-3)}
+
+/* A2 */
+#s2{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;padding:36px 16px 28px}
+.cardcol{display:flex;flex-direction:column;align-items:center;gap:12px}
+.scard{width:210px;height:128px;display:flex;flex-direction:column;overflow:hidden;text-align:left;
+  border:1px solid var(--line-2);border-top:3px solid var(--peds);border-radius:var(--r-lg);background:var(--bg-2);
+  box-shadow:var(--pop-xs) var(--sh);user-select:none;-webkit-user-select:none}
+.scard .alc{flex:0 0 38px;margin:10px 10px 0;border-radius:var(--r-md);
+  background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.5)),var(--peds);box-shadow:inset 0 0 0 1px var(--line-2)}
+.scard .tn{display:block;padding:8px 12px 2px;font:600 var(--fs-ui)/1.2 var(--font-display);letter-spacing:.05em}
+.scard .ts{display:block;padding:0 12px 10px;font-size:var(--fs-sm);color:var(--ink-3)}
+.cardlab{font:600 var(--fs-sm)/1 var(--font-display);letter-spacing:.08em;color:var(--ink-2)}
+
+/* A3 */
+#s3{padding:16px}
+#list3{margin:0;padding:0;list-style:none;overflow:hidden;border:1px dashed var(--line-2);border-radius:var(--r-lg);background:var(--bg-2)}
+#list3 li{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;padding:0 16px;
+  border-left:4px solid var(--c, var(--peds));border-bottom:1px solid var(--line);background:var(--card)}
+#list3 li:last-child{border-bottom:none}
+#list3 .rn{font:600 var(--fs-ui)/1.2 var(--font-display);letter-spacing:.04em}
+#list3 .rq{font-size:var(--fs-sm);color:var(--ink-3)}
+
+/* A4 */
+#s4{display:flex;align-items:center;justify-content:center;gap:56px;flex-wrap:wrap;padding:36px 16px}
+.ttl{display:flex;flex-direction:column;gap:6px}
+.ttl h3{margin:0;font:600 var(--fs-2xl)/1.2 var(--font-display);letter-spacing:.03em}
+.ttl svg{display:block;width:300px;height:14px;overflow:visible}
+.ring{position:relative;width:160px;height:160px}
+.ring svg{width:160px;height:160px;display:block}
+.ring .lab{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font:600 var(--fs-lg)/1.1 var(--font-display);letter-spacing:.04em}
+.ring .lab small{font:var(--fs-sm)/1.2 var(--font-body);color:var(--ink-3);letter-spacing:0;margin-top:4px}
+#track{fill:none;stroke:var(--line-2);stroke-width:9}
+#ring{fill:none;stroke:var(--gold);stroke-width:9;stroke-linecap:round}
+#under{fill:none;stroke:var(--gold);stroke-width:3;stroke-linecap:round}
+
+#selftest{margin:40px 0 0;padding:12px;border:1px solid var(--line-2);border-radius:var(--r-lg);background:var(--bg-2);color:var(--ink-2);
+  font:12px/1.5 Consolas,monospace;white-space:pre-wrap}
+body.freeze .demo:not(.on){display:none}
+body.freeze .sub{margin-bottom:16px}
+@media (max-width:720px){
+  .dh{grid-template-columns:auto 1fr}.play{grid-row:auto;grid-column:1 / -1}
+  #grid1{grid-template-columns:repeat(6,1fr)}
+  #s2{gap:28px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Motion effects, anime.js</h1>
+<p class="sub" id="top">Four demos with one small library. Press Play on each, or press the tiles and cards. Tell me a number.</p>
+
+<section class="demo" id="a1">
+  <div class="dh"><div class="num">A1</div><h2>Ripple across a grid</h2><p>Press any tile and a ripple spreads outward from it, each tile lifting and settling in turn.</p><button class="play" data-d="a1">Play</button></div>
+  <div class="stage" id="s1">
+    <div id="grid1" role="group" aria-label="Chapter tiles"></div>
+    <p class="hint">Press a tile. Play ripples from the centre.</p>
+  </div>
+</section>
+
+<section class="demo" id="a2">
+  <div class="dh"><div class="num">A2</div><h2>Spring settle</h2><p>Press a card. It dips and returns. The left one springs past its place and settles; the right one eases in with no overshoot.</p><button class="play" data-d="a2">Play</button></div>
+  <div class="stage" id="s2">
+    <div class="cardcol"><button class="scard" id="cardS" type="button" aria-label="Study card, spring"><span class="alc"></span><span class="tn">Study card</span><span class="ts">Question 12 of 40</span></button><span class="cardlab">Spring</span></div>
+    <div class="cardcol"><button class="scard" id="cardE" type="button" aria-label="Study card, plain ease"><span class="alc"></span><span class="tn">Study card</span><span class="ts">Question 12 of 40</span></button><span class="cardlab">Plain ease</span></div>
+  </div>
+</section>
+
+<section class="demo" id="a3">
+  <div class="dh"><div class="num">A3</div><h2>Rows arrive in a wave</h2><p>Eight rows slide in from the left edge of the box, one after another, from behind its edge.</p><button class="play" data-d="a3">Play</button></div>
+  <div class="stage" id="s3">
+    <ul id="list3" aria-label="Chapter list"></ul>
+  </div>
+</section>
+
+<section class="demo" id="a4">
+  <div class="dh"><div class="num">A4</div><h2>Line draws itself</h2><p>A progress ring and an underline beneath the subject title draw themselves, using the library's own line-drawing helper.</p><button class="play" data-d="a4">Play</button></div>
+  <div class="stage" id="s4">
+    <div class="ttl">
+      <h3>Pediatrics</h3>
+      <svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path id="under" vector-effect="non-scaling-stroke" d="M 3 8 C 50 3, 100 12, 150 7 S 250 4, 297 8"/></svg>
+    </div>
+    <div class="ring">
+      <svg viewBox="0 0 160 160" aria-hidden="true">
+        <circle id="track" cx="80" cy="80" r="66"/>
+        <circle id="ring" cx="80" cy="80" r="66" transform="rotate(-90 80 80)"/>
+      </svg>
+      <div class="lab">29 of 40<small>chapters done</small></div>
+    </div>
+  </div>
+</section>
+
+<pre id="selftest" hidden></pre>
+</div>
+
+<script src="lib/animejs/anime.umd.min.js"></script>
+<script>
+(function () {
+'use strict';
+var RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+var Q = new URLSearchParams(location.search);
+var SELF = Q.get('selftest') === '1', FREEZE = Q.get('freeze'), AT = parseFloat(Q.get('at') || '0.5');
+function $(s, r) { return (r || document).querySelector(s); }
+function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+var A = window.anime;           /* v4 global; undefined if the script failed to load */
+
+/* selftest on a headless page gets no animation frames, so the test drives the engine itself */
+if (SELF && A && A.engine) { A.engine.useDefaultMainLoop = false; }
+
+var DEMOS = {};
+if (RM) {
+  var note = document.createElement('span');
+  note.textContent = ' Reduced motion is on, so each demo shows its finished state and does not move.';
+  $('#top').appendChild(note);
+}
+
+/* ---------- A1: grid stagger ripple ---------- */
+(function () {
+  var grid = $('#grid1'), N = 54, DONE = [0, 1, 2, 3, 4, 9, 10, 11, 18, 27, 28, 36], tiles = [], cur = null;
+  for (var i = 0; i < N; i++) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'tile' + (DONE.indexOf(i) >= 0 ? ' done' : '');
+    b.textContent = String(i + 1);
+    b.setAttribute('aria-label', 'Chapter ' + (i + 1) + (DONE.indexOf(i) >= 0 ? ', done' : ''));
+    b.addEventListener('click', (function (k) { return function () { ripple(k); }; })(i));
+    grid.appendChild(b); tiles.push(b);
+  }
+  function cols() { return getComputedStyle(grid).gridTemplateColumns.split(' ').length; }
+  function ripple(from, hold) {
+    if (RM || !A) return null;
+    if (cur) cur.cancel();
+    var c = cols(), rows = Math.ceil(N / c);
+    cur = A.animate(tiles, {
+      translateY: [{ to: -12, duration: 180, ease: 'outQuad' }, { to: 0, duration: 420, ease: 'inOutQuad' }],
+      scale: [{ to: 1.14, duration: 180, ease: 'outQuad' }, { to: 1, duration: 420, ease: 'inOutQuad' }],
+      delay: A.stagger(55, { grid: [c, rows], from: from }),
+      autoplay: !hold
+    });
+    return cur;
+  }
+  DEMOS.a1 = {
+    tiles: tiles, grid: grid, cols: cols,
+    ripple: ripple,
+    centre: function () { var c = cols(), r = Math.ceil(N / c); return Math.floor((r - 1) / 2) * c + Math.floor((c - 1) / 2); },
+    play: function (hold) { return ripple(this.centre(), hold); }
+  };
+})();
+
+/* ---------- A2: spring settle against a plain ease ---------- */
+(function () {
+  var cS = $('#cardS'), cE = $('#cardE');
+  function press(el, springy, hold) {
+    if (RM || !A) return null;
+    var sp = springy ? A.spring({ bounce: .4, duration: 520 }) : null;
+    var back = function (to) { return springy ? { to: to, duration: sp.settlingDuration, ease: sp } : { to: to, duration: 520, ease: 'outCubic' }; };
+    return A.animate(el, {
+      translateY: [{ to: 18, duration: 140, ease: 'outQuad' }, back(0)],
+      scale: [{ to: .95, duration: 140, ease: 'outQuad' }, back(1)],
+      autoplay: !hold
+    });
+  }
+  cS.addEventListener('click', function () { press(cS, true); });
+  cE.addEventListener('click', function () { press(cE, false); });
+  DEMOS.a2 = {
+    cS: cS, cE: cE, press: press,
+    play: function (hold) { return [press(cS, true, hold), press(cE, false, hold)]; }
+  };
+})();
+
+/* ---------- A3: rows arrive in a wave ---------- */
+(function () {
+  var list = $('#list3'), rows = [], cols = ['var(--ent)', 'var(--ophtho)', 'var(--neuro)', 'var(--peds)'], qn = [24, 18, 31, 22, 27, 16, 29, 20];
+  for (var i = 0; i < 8; i++) {
+    var li = document.createElement('li');
+    li.style.setProperty('--c', cols[i % 4]);
+    li.innerHTML = '<span class="rn">Chapter ' + (i + 1) + '</span><span class="rq">' + qn[i] + ' questions</span>';
+    list.appendChild(li); rows.push(li);
+  }
+  DEMOS.a3 = {
+    rows: rows, list: list,
+    play: function (hold) {
+      if (RM || !A) return null;
+      return A.animate(rows, {
+        translateX: ['-105%', '0%'],
+        duration: 650, ease: 'outCubic',
+        delay: A.stagger(85),
+        autoplay: !hold
+      });
+    }
+  };
+})();
+
+/* ---------- A4: ring and underline draw themselves ---------- */
+(function () {
+  var RING_END = 29 / 40;
+  var ring = $('#ring'), under = $('#under'), dr = null, du = null;
+  /* createDrawable needs the end value at creation; the ring rests at 29/40 and the underline at full length */
+  if (A && A.svg) { dr = A.svg.createDrawable(ring, 0, RING_END)[0]; du = A.svg.createDrawable(under, 0, 1)[0]; }
+  DEMOS.a4 = {
+    ring: ring, under: under, end: RING_END,
+    play: function (hold) {
+      if (RM || !A || !dr) return null;
+      var tl = A.createTimeline({ autoplay: false, defaults: { ease: 'inOutQuad' } });
+      /* the underline starts late, so it is set undrawn at time zero or it would sit whole until its turn */
+      tl.set(du, { draw: '0 0' }, 0)
+        .add(dr, { draw: ['0 0', '0 ' + RING_END], duration: 1300 }, 0)
+        .add(du, { draw: ['0 0', '0 1'], duration: 900 }, 350);
+      tl.pause(); tl.seek(0);   /* paint the undrawn first frame now, not on the next engine tick */
+      if (!hold) tl.play();
+      return tl;
+    }
+  };
+})();
+
+/* ---------- Play buttons ---------- */
+$$('.play').forEach(function (b) {
+  b.addEventListener('click', function () { DEMOS[b.getAttribute('data-d')].play(); });
+});
+
+/* ---------- freeze: park one demo mid-motion for a still ---------- */
+if (FREEZE && DEMOS[FREEZE]) {
+  document.body.classList.add('freeze');
+  document.getElementById(FREEZE).classList.add('on');
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      var r = DEMOS[FREEZE].play(true);
+      if (r && r.seek) { r.pause(); r.seek(r.duration * AT); }
+      document.title = 'frozen ' + FREEZE + ' ' + AT;
+    }, 300);
+  });
+}
+
+/* ---------- selftest ---------- */
+if (SELF) {
+  var out = $('#selftest'); out.hidden = false;
+  var L = [], np = 0, nf = 0;
+  var ok = function (name, cond, extra) { cond ? np++ : nf++; L.push((cond ? 'PASS ' : 'FAIL ') + name + (extra ? ' | ' + extra : '')); out.textContent = L.join('\n'); };
+  var sleep = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+  var run = async function (name, fn) {
+    try { await fn(); } catch (e) { ok(name + ' ran without throwing', false, String(e && e.message || e)); }
+  };
+  var bb = function (el) { var r = el.getBoundingClientRect(); return { l: r.left, t: r.top, r: r.right, b: r.bottom, w: r.width, h: r.height }; };
+  var ty = function (el) { var m = new DOMMatrix(getComputedStyle(el).transform); return m.m42; };
+  var tx = function (el) { var m = new DOMMatrix(getComputedStyle(el).transform); return m.m41; };
+  var sc = function (el) { var m = new DOMMatrix(getComputedStyle(el).transform); return m.a; };
+  var atRest = function (el) { var m = new DOMMatrix(getComputedStyle(el).transform); return Math.abs(m.m41) < .01 && Math.abs(m.m42) < .01 && Math.abs(m.a - 1) < .001 && Math.abs(m.d - 1) < .001; };
+  var fin = function (a) { return Promise.race([a.then(function () {}), sleep(6000).then(function () { throw new Error('timeout waiting for demo'); })]); };
+  /* drive the engine by hand: headless virtual time gives no animation frames */
+  if (A && A.engine) setInterval(function () { A.engine.update(); }, 16);
+  window.addEventListener('unhandledrejection', function (e) { window.__errs.push('rejection: ' + (e.reason && e.reason.message || e.reason)); });
+  window.addEventListener('load', function () { setTimeout(async function () { try {
+    ok('library global anime defined', typeof A === 'object' && A !== null);
+    ['animate', 'stagger', 'createTimeline', 'createSpring', 'spring', 'svg', 'utils'].forEach(function (n) {
+      ok('anime.' + n + ' defined', A && typeof A[n] !== 'undefined', typeof (A && A[n]));
+    });
+    ok('anime.svg.createDrawable defined', A && A.svg && typeof A.svg.createDrawable === 'function');
+    ok('prefers-reduced-motion in this run', true, String(RM));
+
+    await run('A1', async function () {
+      var D = DEMOS.a1, T = D.tiles;
+      ok('A1 grid built: 54 tiles, 12 marked done', T.length === 54 && $$('#grid1 .tile.done').length === 12, T.length + ' tiles, ' + D.cols() + ' columns');
+      if (RM) {
+        T[10].click(); await sleep(400);
+        ok('A1 reduced motion: pressing a tile moves nothing', T.every(atRest));
+        return;
+      }
+      /* press a real tile through the click path, then hold the animation by seeking it */
+      var P = 22, anim = D.ripple(P, true);
+      anim.pause(); anim.seek(260);
+      var cs = D.cols(), pr = Math.floor(P / cs), pc = P % cs;
+      var lifted = T.map(function (t) { return -ty(t); });
+      var far = 0, farD = -1;
+      T.forEach(function (t, i) { var dd = Math.hypot(Math.floor(i / cs) - pr, (i % cs) - pc); if (dd > farD) { farD = dd; far = i; } });
+      ok('A1 mid-ripple: pressed tile lifted, farthest tile still at rest', lifted[P] > 3 && lifted[far] < .01, 'pressed ' + lifted[P].toFixed(1) + 'px, farthest tile ' + far + ' ' + lifted[far].toFixed(1) + 'px');
+      anim.seek(90);
+      var l90 = T.map(function (t) { return -ty(t); });
+      var near = [P - 1, P + 1, P - cs, P + cs].map(function (i) { return l90[i]; });
+      ok('A1 early ripple: the pressed tile leads its neighbours', near.every(function (v) { return v < l90[P]; }), 'at 90ms pressed ' + l90[P].toFixed(1) + 'px, neighbours ' + near.map(function (v) { return v.toFixed(1); }).join('/'));
+      anim.seek(260);
+      var d1 = [], d2 = [];
+      T.forEach(function (t, i) { var dd = Math.hypot(Math.floor(i / cs) - pr, (i % cs) - pc); if (dd > 0 && dd <= 1.01) d1.push(lifted[i]); if (dd > 3.9) d2.push(lifted[i]); });
+      var m1 = d1.reduce(function (a, b) { return a + b; }, 0) / d1.length, m2 = d2.reduce(function (a, b) { return a + b; }, 0) / d2.length;
+      ok('A1 ripple order: ring one lifts more than distant tiles', m1 > m2, 'ring one avg ' + m1.toFixed(2) + ', beyond 3.9 avg ' + m2.toFixed(2));
+      anim.complete(); await sleep(50);
+      ok('A1 end state: every tile back at rest, scale 1', T.every(atRest) && T.every(function (t) { return getComputedStyle(t).opacity === '1'; }));
+      /* the Play button path, real clock, driven engine */
+      var pa = D.play(true), ci = D.centre(); pa.pause(); pa.seek(90);
+      var lc = T.map(function (t) { return -ty(t); }), edge = [0, cs - 1, T.length - cs, T.length - 1];
+      ok('A1 Play ripples from the centre: centre tile ' + ci + ' leads, corners not yet moving', lc[ci] > 3 && edge.every(function (i) { return lc[i] < .01; }) && Math.abs(Math.floor(ci / cs) - 2) <= 1 && Math.abs(ci % cs - (cs - 1) / 2) <= .5, 'centre ' + lc[ci].toFixed(1) + 'px, corners ' + edge.map(function (i) { return lc[i].toFixed(1); }).join('/'));
+      pa.play();
+      await fin(pa); await sleep(50);
+      ok('A1 after the real run: all tiles at rest', T.every(atRest));
+      /* a second press in the middle of the first must still end at rest */
+      D.ripple(0); await sleep(150); var a2 = D.ripple(53); await fin(a2); await sleep(50);
+      ok('A1 interrupted press still ends at rest', T.every(atRest));
+    });
+
+    await run('A2', async function () {
+      var D = DEMOS.a2, cS = D.cS, cE = D.cE;
+      if (RM) {
+        cS.click(); cE.click(); await sleep(400);
+        ok('A2 reduced motion: both cards unmoved', atRest(cS) && atRest(cE));
+        return;
+      }
+      var pair = D.play(true), aS = pair[0], aE = pair[1];
+      var dur = Math.max(aS.duration, aE.duration);
+      var minS = 1e9, maxS = -1e9, minE = 1e9, maxE = -1e9, n = 0;
+      for (var t = 0; t <= dur; t += 10) {
+        aS.pause(); aE.pause(); aS.seek(t); aE.seek(t);
+        var vs = ty(cS), ve = ty(cE);
+        minS = Math.min(minS, vs); maxS = Math.max(maxS, vs); minE = Math.min(minE, ve); maxE = Math.max(maxE, ve); n++;
+      }
+      ok('A2 both cards dip about 18px', maxS > 16 && maxE > 16, 'spring ' + maxS.toFixed(1) + ', plain ' + maxE.toFixed(1));
+      ok('A2 spring card overshoots its place on the way back', minS < -.8, 'lowest offset ' + minS.toFixed(2) + 'px over ' + n + ' samples');
+      ok('A2 plain card never passes its place', minE > -.01, 'lowest offset ' + minE.toFixed(2) + 'px');
+      aS.complete(); aE.complete(); await sleep(50);
+      ok('A2 end state: both cards at rest', atRest(cS) && atRest(cE));
+      cS.click(); cE.click();
+      await sleep(1600);
+      ok('A2 real run through click: both settle at rest', atRest(cS) && atRest(cE));
+    });
+
+    await run('A3', async function () {
+      var D = DEMOS.a3, R = D.rows, box = bb(D.list);
+      ok('A3 eight rows, inside a clipping box', R.length === 8 && getComputedStyle(D.list).overflow === 'hidden', getComputedStyle(D.list).overflow);
+      if (RM) {
+        ok('A3 reduced motion: rows rest in place', R.every(atRest));
+        D.play(); await sleep(300);
+        ok('A3 reduced motion: Play moves nothing', R.every(atRest));
+        return;
+      }
+      var anim = D.play(true); anim.pause(); anim.seek(0);
+      var behind = R.every(function (r) { return bb(r).r <= box.l + 1; });
+      ok('A3 at start every row sits fully behind the left edge', behind, 'right edges ' + R.map(function (r) { return Math.round(bb(r).r - box.l); }).join('/'));
+      anim.seek(anim.duration * .45);
+      var xs = R.map(tx);
+      var ordered = xs.every(function (v, i) { return i === 0 || v <= xs[i - 1] + .01; });
+      ok('A3 mid-wave: earlier rows are further along than later ones', ordered && xs[0] > xs[7] + 20, 'offsets ' + xs.map(Math.round).join('/'));
+      var cut = R.some(function (r) { return bb(r).l < box.l - 1; });
+      ok('A3 mid-wave: some rows are cut by the box edge, none fade', cut && R.every(function (r) { return getComputedStyle(r).opacity === '1'; }));
+      anim.complete(); await sleep(50);
+      ok('A3 end state: all rows at rest and inside the box', R.every(atRest) && R.every(function (r) { var b = bb(r); return b.l >= box.l - 1 && b.r <= box.r + 1; }));
+      var real = D.play();
+      ok('A3 real run: later rows are already parked behind the edge before their turn', bb(R[7]).r <= box.l + 1 && bb(R[4]).r <= box.l + 1, 'row 8 right edge ' + Math.round(bb(R[7]).r - box.l));
+      await fin(real); await sleep(50);
+      ok('A3 real run ends at rest', R.every(atRest));
+    });
+
+    await run('A4', async function () {
+      var D = DEMOS.a4;
+      var frac = function (el) { var s = (el.getAttribute('stroke-dasharray') || '').split(/[\s,]+/).map(parseFloat); var K = parseFloat(el.getAttribute('pathLength')); return s.length >= 2 && K ? s[0] / K : NaN; };
+      var rest = [frac(D.ring), frac(D.under)];
+      ok('A4 resting state: ring shows 29/40, underline whole', Math.abs(rest[0] - D.end) < .01 && Math.abs(rest[1] - 1) < .01, 'ring ' + rest[0].toFixed(3) + ', underline ' + rest[1].toFixed(3) + ' dasharray "' + D.ring.getAttribute('stroke-dasharray') + '"');
+      if (RM) {
+        D.play(); await sleep(300);
+        ok('A4 reduced motion: Play leaves both lines whole', Math.abs(frac(D.ring) - D.end) < .01 && Math.abs(frac(D.under) - 1) < .01);
+        return;
+      }
+      var tl = D.play(true); tl.pause(); tl.seek(0);
+      ok('A4 at start both lines are undrawn', frac(D.ring) < .01 && frac(D.under) < .01, frac(D.ring).toFixed(3) + '/' + frac(D.under).toFixed(3));
+      tl.seek(700);
+      var m = [frac(D.ring), frac(D.under)];
+      ok('A4 mid-draw: ring part drawn, underline begun but not whole', m[0] > .05 && m[0] < D.end - .02 && m[1] > .02 && m[1] < .98, 'ring ' + m[0].toFixed(3) + ', underline ' + m[1].toFixed(3));
+      tl.complete(); await sleep(50);
+      ok('A4 end state: ring at 29/40, underline whole', Math.abs(frac(D.ring) - D.end) < .01 && Math.abs(frac(D.under) - 1) < .01, 'ring ' + frac(D.ring).toFixed(3) + ', underline ' + frac(D.under).toFixed(3));
+      var real = D.play();
+      ok('A4 real run: underline undrawn at once, not whole until its turn', frac(D.under) < .02, frac(D.under).toFixed(3));
+      await fin(real); await sleep(50);
+      ok('A4 real run ends in the same state', Math.abs(frac(D.ring) - D.end) < .01 && Math.abs(frac(D.under) - 1) < .01);
+      ok('A4 stroke only: no transform or opacity set on the lines', getComputedStyle(D.under).opacity === '1' && getComputedStyle(D.ring).opacity === '1');
+    });
+
+    ok('no window.onerror messages', window.__errs.length === 0, window.__errs.join(' ;; '));
+    L.push('END pass=' + np + ' fail=' + nf);
+    } catch (e) { L.push('FAIL selftest harness threw | ' + (e && e.message || e)); }
+    out.textContent = L.join('\n');
+  }, 400); });
+}
+})();
+</script>
+</body>
+</html>

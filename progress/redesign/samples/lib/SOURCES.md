@@ -33,3 +33,33 @@ Sizes are exact bytes, hashes are SHA-256, both measured from the files on disk.
 | LICENSE | 1096 | bba15b1137346a73ed8c35e7f20961a69e0ed842d956a50339240c3e7b08c089 |
 
 Globals: `gsap`, `ScrollTrigger`, `Flip`, `DrawSVGPlugin`, `CustomEase`, `CustomBounce`, `CustomWiggle`, `Lenis`, `Snap` (Lenis snap add-on).
+
+## GSAP 3.15.0 - five more plugins (added 2026-10-11, for motion-more.html)
+
+- Source: the same saved tarball (gsap-3.15.0.tgz from the official npm package, saved earlier at `D:\scratch 2026\redesign\dl-gsap\gsap.tgz`, SHA-256 d2e33ad202d4811e9084883f7ff9a27967ac4095caef51ca4c9d20697a253b1c measured now). Unpacked into a fresh scratch folder, nothing run from inside it; only the `dist/` classic minified builds below were copied out. No download this session. The registry sha512 check was done when the tarball was first fetched, not repeated now.
+- Licence: same as above (Standard "no charge" license, https://gsap.com/standard-license).
+- Total: 94,026 bytes
+
+| File (gsap/) | Bytes | SHA-256 |
+|---|---|---|
+| SplitText.min.js | 7732 | 419f7027a5f086a12cb7988736d8fdd3a6ed2200229661de25b6628ca7ced344 |
+| MotionPathPlugin.min.js | 22002 | ace44a07c6c179f5347d9b46a152d468e4c9f272ee0d68bf0354e00d60000693 |
+| Draggable.min.js | 35762 | eb28ff7ac2d320ba24a5c065563fcd8f61f2df9d7574b175b9b30942e5867e8c |
+| InertiaPlugin.min.js | 7335 | 5ddbc518fe02e79d66713b8af6fab0b91ee5eb58ef3beaf589b70fdfb824733f |
+| MorphSVGPlugin.min.js | 21195 | 19c891a412240d8521b13330813d9b551ea5b0f707907c365ffecaf1dfa0f5cf |
+
+Globals: `SplitText`, `MotionPathPlugin`, `Draggable`, `InertiaPlugin`, `MorphSVGPlugin`.
+
+## anime.js 4.5.0 (added 2026-10-11, for motion-anime.html)
+
+- Source: https://registry.npmjs.org/animejs/-/animejs-4.5.0.tgz (official npm package; tarball 514152 bytes, sha512 integrity sha512-NQimYX+lz8WaXonGS9zVVoviCIAjONeJayxacUditaivYLqyXgGjFKjuyl0aUUhFKm5MriX9ty1TGovNzoJQWA== re-checked against the saved file this session)
+- Unpacked into a fresh scratch folder, nothing run from inside it; only the classic UMD minified build and the licence were copied out.
+- Licence: MIT (full text in animejs/LICENSE.md)
+- Total: 119,118 bytes (118,043 code + 1,075 licence)
+
+| File (animejs/) | Bytes | SHA-256 |
+|---|---|---|
+| anime.umd.min.js | 118043 | 8d5b3a58a1f64023a04a4cedeef135a2263b18da04b35177ac13438a0bad033b |
+| LICENSE.md | 1075 | 3f3e835a9952cfc2a6ca836fb95b3257c981f24fa3ef51249055acb09931897b |
+
+Global: `anime` (v4 API: `animate`, `stagger`, `createTimeline`, `spring`, `svg.createDrawable`, `utils`). `createSpring` is still exported but deprecated and logs a console warning; the page uses `spring()`.

@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Herophilus motion samples, more</title>
+<script>
+/* error catcher first, so a failing library script is recorded too */
+window.__errs = [];
+window.onerror = function (m, src, ln) { window.__errs.push(String(m) + ' @' + String(src || '').split('/').pop() + ':' + ln); };
+if (/[?&]theme=light/.test(location.search)) document.documentElement.setAttribute('data-theme', 'light');
+</script>
+<style>
+/* tokens copied from motion.html (itself copied from app/css/tokens.css) */
+:root{
+  --font-display:'Cinzel','Trajan Pro','Palatino Linotype','Book Antiqua',Georgia,serif;
+  --font-body:'EB Garamond','Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+  --tx:#f2e8d5; --ink:#f2e8d5; --ink-2:#cfc0a5; --ink-3:#ab9a80; --ink-4:#9c8b71;
+  --bg:#0a1017; --bg-2:#151f2d; --card:#121a27; --fill:#2b3a4f;
+  --line:rgba(242,232,213,.085); --line-2:rgba(242,232,213,.16);
+  --neon:#66d9ff; --neon-glow:0 0 10px rgba(102,217,255,.65); --gold-glow:0 0 10px rgba(217,180,74,.65);
+  --ent:#b4472f; --ophtho:#5c7a52; --neuro:#6d4c7d; --peds:#2e5f8a;
+  --ok:#7fae6f; --ok-bg:rgba(127,174,111,.15); --bad:#d4674f; --bad-bg:rgba(212,103,79,.15);
+  --gold:#d9b44a; --gold-bg:rgba(217,180,74,.15); --on-accent:#12100b; --gold-text:#d9b44a;
+  --r-sm:2px; --r-md:4px; --r-lg:8px;
+  --pop-xs:0 5px 14px; --pop-md:0 8px 22px;
+  --fs-xs:11px; --fs-sm:12px; --fs-md:13px; --fs-ui:14px; --fs-body:16.5px; --fs-lg:19px; --fs-xl:24px; --fs-2xl:32px; --fs-3xl:44px;
+  --sh:rgba(0,0,0,.5); --sh-soft:rgba(0,0,0,.3);
+  --tint:rgba(242,232,213,.045); --tint-2:rgba(242,232,213,.075);
+  --ease-standard:cubic-bezier(.22,1,.36,1);
+}
+:root[data-theme="light"]{
+  --tx:#241c14; --ink:#241c14; --ink-2:#463726; --ink-3:#5e4c37; --ink-4:#5c4b36;
+  --bg:#e6d9be; --bg-2:#dbcbab; --card:#f7efe0; --fill:#2b2118;
+  --line:rgba(60,44,28,.13); --line-2:rgba(60,44,28,.22);
+  --neon:#00708f; --neon-glow:0 0 10px rgba(0,112,143,.48); --gold-glow:0 0 10px rgba(122,84,16,.55);
+  --ok:#2f5426; --ok-bg:rgba(47,84,38,.13); --bad:#9c3620; --bad-bg:rgba(156,54,32,.11);
+  --gold:#d9b44a; --gold-bg:rgba(154,107,31,.17); --on-accent:#1a150e; --gold-text:#7a5410;
+  --sh:rgba(74,56,34,.16); --sh-soft:rgba(74,56,34,.10);
+  --tint:rgba(74,56,34,.045); --tint-2:rgba(74,56,34,.075);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:var(--font-body);background:var(--bg);color:var(--tx);font-size:var(--fs-body);line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(circle at 12% 8%, rgba(109,76,125,.09) 0, transparent 42%),
+                   radial-gradient(circle at 88% 4%, rgba(46,95,138,.05) 0, transparent 38%);
+  background-attachment:fixed;
+}
+button{font-family:inherit;font-size:inherit;cursor:pointer;border:none;background:none;color:inherit}
+:focus-visible{outline:3px solid var(--neon);outline-offset:2px;border-radius:var(--r-md)}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 16px 96px}
+h1{font:600 var(--fs-2xl)/1.2 var(--font-display);margin:0 0 6px;letter-spacing:.02em}
+.sub{margin:0 0 32px;color:var(--ink-3);font-size:var(--fs-ui)}
+.demo{margin:0 0 40px}
+.dh{display:grid;grid-template-columns:auto 1fr auto;gap:4px 16px;align-items:center;margin-bottom:12px}
+.num{grid-row:1 / span 2;font:600 var(--fs-3xl)/1 var(--font-display);color:var(--gold-text);min-width:84px}
+.dh h2{margin:0;font:600 var(--fs-lg)/1.25 var(--font-display);letter-spacing:.02em}
+.dh p{margin:0;color:var(--ink-3);font-size:var(--fs-ui)}
+.play{grid-row:1 / span 2;grid-column:3;min-height:44px;min-width:96px;padding:0 20px;border-radius:var(--r-lg);
+  background:var(--gold);color:var(--on-accent);font:600 var(--fs-ui)/1 var(--font-display);letter-spacing:.06em}
+.play:hover{box-shadow:var(--gold-glow)}
+.stage{position:relative;overflow:hidden;border:1px solid var(--line-2);border-radius:var(--r-lg);background:var(--card);padding:16px}
+.mini{min-height:36px;padding:0 14px;border-radius:var(--r-md);border:1px solid var(--line-2);font-size:var(--fs-ui);color:var(--ink-2)}
+.mini:hover{border-color:var(--gold);color:var(--tx)}
+
+/* N1 */
+#s1{height:330px;display:flex;flex-direction:column;justify-content:center;gap:18px;padding:16px 32px}
+#s1 .hello{margin:0;max-width:660px;font:600 var(--fs-2xl)/1.3 var(--font-display);letter-spacing:.02em}
+#s1 .subj{margin:0;max-width:660px;font:600 var(--fs-xl)/1.35 var(--font-display);letter-spacing:.03em;color:var(--gold-text)}
+
+/* N2 */
+#s2{height:340px;padding:0}
+#s2 svg{position:absolute;inset:0;width:100%;height:100%}
+#s2 .guide{fill:none;stroke:var(--line-2);stroke-width:2;stroke-dasharray:2 9;stroke-linecap:round}
+#clep{position:absolute;left:0;top:0;z-index:2;width:160px;height:160px;display:block}
+
+/* N3 */
+#s3{height:340px}
+#box3{position:relative;height:100%;border:1px dashed var(--line-2);border-radius:var(--r-lg);background:var(--bg-2)}
+#card3{position:absolute;left:20px;top:20px;width:210px;height:128px;display:flex;flex-direction:column;overflow:hidden;
+  border:1px solid var(--line-2);border-top:3px solid var(--peds);border-radius:var(--r-lg);background:var(--card);
+  box-shadow:var(--pop-xs) var(--sh);touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+#card3:active{cursor:grabbing}
+#card3 .alc{flex:0 0 38px;margin:10px 10px 0;border-radius:var(--r-md);
+  background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.5)),var(--peds);box-shadow:inset 0 0 0 1px var(--line-2)}
+#card3 .tn{display:block;padding:8px 12px 2px;font:600 var(--fs-ui)/1.2 var(--font-display);letter-spacing:.05em}
+#card3 .ts{display:block;padding:0 12px 10px;font-size:var(--fs-sm);color:var(--ink-3)}
+#reset3{position:absolute;right:12px;bottom:12px;z-index:3;background:var(--card)}
+.hint3{position:absolute;left:14px;bottom:12px;font-size:var(--fs-sm);color:var(--ink-3)}
+
+/* N4 */
+#s4{height:290px;display:flex;align-items:center;justify-content:center}
+#s4 svg{width:200px;height:200px;overflow:visible}
+#n4shape{fill:none;stroke:var(--gold);stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+
+#selftest{margin:40px 0 0;padding:12px;border:1px solid var(--line-2);border-radius:var(--r-lg);background:var(--bg-2);color:var(--ink-2);
+  font:12px/1.5 Consolas,monospace;white-space:pre-wrap}
+body.freeze .demo:not(.on){display:none}
+body.freeze .sub{margin-bottom:16px}
+@media (max-width:720px){
+  .dh{grid-template-columns:auto 1fr}.play{grid-row:auto;grid-column:1 / -1}
+  #s1{padding:16px 20px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>More motion effects</h1>
+<p class="sub" id="top">Four more. Press Play on each. Tell me a number.</p>
+
+<section class="demo" id="n1">
+  <div class="dh"><div class="num">N1</div><h2>Heading rises line by line</h2><p>Each line lifts up from behind a hidden edge, one after another. Library: gsap SplitText.</p><button class="play" data-d="n1">Play</button></div>
+  <div class="stage" id="s1">
+    <h3 class="hello">Welcome back to the library. Today we pick up where you stopped.</h3>
+    <h3 class="subj">Pediatrics: growth, development and the early years</h3>
+  </div>
+</section>
+
+<section class="demo" id="n2">
+  <div class="dh"><div class="num">N2</div><h2>She glides along a curve</h2><p>Her picture travels a gentle curve and settles. Only her position changes. Library: gsap MotionPath.</p><button class="play" data-d="n2">Play</button></div>
+  <div class="stage" id="s2">
+    <svg viewBox="0 0 1000 340" preserveAspectRatio="none" aria-hidden="true"><path class="guide" id="n2path" vector-effect="non-scaling-stroke" d="M 110 250 C 260 40, 430 40, 540 190 S 780 310, 890 130"/></svg>
+    <img id="clep" src="../../../app/assets/clep/welcoming.png" width="160" height="160" alt="The Clepsydra mascot, welcoming">
+  </div>
+</section>
+
+<section class="demo" id="n3">
+  <div class="dh"><div class="num">N3</div><h2>Grab and flick</h2><p>Drag the card with mouse or finger and let go. It slides on, slows and stays in the box. Library: gsap Draggable and Inertia.</p><button class="play" data-d="n3">Play</button></div>
+  <div class="stage" id="s3">
+    <div id="box3">
+      <div id="card3" role="group" aria-label="Study card, draggable"><div class="alc"></div><span class="tn">Study card</span><span class="ts">Question 12 of 40</span></div>
+      <span class="hint3">Drag the card, then let go.</span>
+      <button class="mini" id="reset3" type="button">Reset</button>
+    </div>
+  </div>
+</section>
+
+<section class="demo" id="n4">
+  <div class="dh"><div class="num">N4</div><h2>One shape melts into another</h2><p>A progress ring reshapes into a tick, and back on the next press. Library: gsap MorphSVG.</p><button class="play" data-d="n4">Play</button></div>
+  <div class="stage" id="s4">
+    <svg viewBox="0 0 200 200" aria-hidden="true"><path id="n4shape" d="M100 40 C133.14 40 160 66.86 160 100 C160 133.14 133.14 160 100 160 C66.86 160 40 133.14 40 100 C40 66.86 66.86 40 100 40 Z"/></svg>
+  </div>
+</section>
+
+<pre id="selftest" hidden></pre>
+</div>
+
+<script src="lib/gsap/gsap.min.js"></script>
+<script src="lib/gsap/SplitText.min.js"></script>
+<script src="lib/gsap/MotionPathPlugin.min.js"></script>
+<script src="lib/gsap/Draggable.min.js"></script>
+<script src="lib/gsap/InertiaPlugin.min.js"></script>
+<script src="lib/gsap/MorphSVGPlugin.min.js"></script>
+<script>
+(function () {
+'use strict';
+var RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+var Q = new URLSearchParams(location.search);
+var SELF = Q.get('selftest') === '1', FREEZE = Q.get('freeze'), AT = parseFloat(Q.get('at') || '0.5');
+function $(s, r) { return (r || document).querySelector(s); }
+function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
+function d(x) { return RM ? 0 : x; }
+function cv(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+var regErr = '';
+try { gsap.registerPlugin(SplitText, MotionPathPlugin, Draggable, InertiaPlugin, MorphSVGPlugin); } catch (e) { regErr = String(e); }
+
+var DEMOS = {};
+
+/* ---------- N1: SplitText, lines lift from behind a mask ---------- */
+(function () {
+  var els = $$('#s1 .hello, #s1 .subj'), split = null, tw = null;
+  if (!RM && !regErr) {
+    split = SplitText.create(els, {
+      type: 'lines', mask: 'lines', autoSplit: true,
+      onSplit: function (self) {
+        /* built paused and parked at its end: the resting page is the finished page */
+        tw = gsap.from(self.lines, { yPercent: 110, duration: .9, ease: 'power3.out', stagger: .14, paused: true });
+        tw.progress(1);
+        return tw;
+      }
+    });
+  }
+  DEMOS.n1 = {
+    play: function () { if (!tw) return null; tw.restart(); return tw; },
+    freeze: function (at) { if (tw) { tw.pause(); tw.progress(at); } },
+    tw: function () { return tw; }, split: function () { return split; }, els: els
+  };
+})();
+
+/* ---------- N2: MotionPath, her picture rides a curve ---------- */
+(function () {
+  var img = $('#clep'), path = $('#n2path'), tw = null;
+  function build(prog) {
+    if (tw) tw.kill();
+    gsap.set(img, { clearProps: 'transform' });
+    tw = gsap.to(img, {
+      motionPath: { path: path, align: path, alignOrigin: [.5, .5], autoRotate: false },
+      duration: 2.8, ease: 'power3.inOut', paused: true
+    });
+    tw.progress(prog);
+  }
+  if (!regErr) { build(1); }
+  var rt = 0;
+  window.addEventListener('resize', function () {
+    clearTimeout(rt);
+    rt = setTimeout(function () { var p = tw ? tw.progress() : 1; build(p); }, 120);
+  });
+  DEMOS.n2 = {
+    play: function () {
+      if (!tw) return null;
+      if (RM) { tw.progress(1); return null; }
+      tw.restart(); return tw;
+    },
+    freeze: function (at) { if (tw) { tw.pause(); tw.progress(at); } },
+    tw: function () { return tw; }, img: img, path: path
+  };
+})();
+
+/* ---------- N3: Draggable + Inertia ---------- */
+(function () {
+  var card = $('#card3'), box = $('#box3'), inst = null;
+  if (!regErr) {
+    inst = Draggable.create(card, { type: 'x,y', bounds: box, inertia: !RM, edgeResistance: .9, minimumMovement: 2 })[0];
+  }
+  function limits() {
+    return { minX: -card.offsetLeft, maxX: box.clientWidth - card.offsetLeft - card.offsetWidth,
+             minY: -card.offsetTop, maxY: box.clientHeight - card.offsetTop - card.offsetHeight };
+  }
+  function reset() {
+    gsap.killTweensOf(card);
+    gsap.set(card, { x: 0, y: 0 });
+    if (inst) inst.update();
+  }
+  function flick() {
+    reset();
+    var L = limits();
+    if (RM) { gsap.set(card, { x: L.maxX - 40, y: L.maxY - 30 }); if (inst) inst.update(); return null; }
+    return gsap.to(card, { inertia: {
+      x: { velocity: 1500, min: L.minX, max: L.maxX },
+      y: { velocity: 560, min: L.minY, max: L.maxY }
+    } });
+  }
+  $('#reset3').addEventListener('click', function () {
+    gsap.killTweensOf(card);
+    if (RM) { reset(); return; }
+    gsap.to(card, { x: 0, y: 0, duration: .6, ease: 'power3.inOut', onUpdate: function () { if (inst) inst.update(); } });
+  });
+  DEMOS.n3 = { play: flick, freeze: function () {}, card: card, box: box, inst: function () { return inst; }, reset: reset, limits: limits };
+})();
+
+/* ---------- N4: MorphSVG, ring to tick and back ---------- */
+(function () {
+  var shape = $('#n4shape');
+  var RING = shape.getAttribute('d');
+  var TICK = 'M62 104 L90 132 L142 72';
+  var isTick = false, tw = null;
+  function go() {
+    var toTick = !isTick; isTick = toTick;
+    if (tw) tw.kill();
+    var vars = { morphSVG: { shape: toTick ? TICK : RING, shapeIndex: 'auto' }, stroke: cv(toTick ? '--ok' : '--gold'), duration: d(1), ease: 'power3.inOut' };
+    if (RM) {
+      gsap.set(shape, { morphSVG: { shape: toTick ? TICK : RING }, stroke: vars.stroke });
+      return null;
+    }
+    tw = gsap.to(shape, vars);
+    return tw;
+  }
+  DEMOS.n4 = {
+    play: go,
+    freeze: function (at) { var t = go(); if (t) { t.pause(); t.progress(at); } },
+    shape: shape, isTick: function () { return isTick; }
+  };
+})();
+
+/* ---------- Play buttons ---------- */
+$$('.play').forEach(function (b) {
+  b.addEventListener('click', function () { DEMOS[b.getAttribute('data-d')].play(); b.textContent = 'Replay'; });
+});
+
+/* ---------- freeze (for stills) ---------- */
+if (FREEZE && DEMOS[FREEZE]) {
+  document.body.classList.add('freeze');
+  document.getElementById(FREEZE).classList.add('on');
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      DEMOS[FREEZE].freeze(AT);
+      document.title = 'frozen ' + FREEZE + ' ' + AT;
+    }, 500);
+  });
+}
+
+/* ---------- selftest ---------- */
+if (SELF) {
+  var out = $('#selftest'); out.hidden = false;
+  var L = [], np = 0, nf = 0;
+  var ok = function (name, cond, extra) { cond ? np++ : nf++; L.push((cond ? 'PASS ' : 'FAIL ') + name + (extra ? ' | ' + extra : '')); out.textContent = L.join('\n'); };
+  var sleep = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+  var fin = function (x) {
+    var p = !x ? Promise.resolve() : new Promise(function (r) { x.then(function () { r(); }); });
+    return Promise.race([p, sleep(8000).then(function () { throw new Error('timeout waiting for demo'); })]);
+  };
+  var run = async function (name, fn) {
+    try { await fn(); } catch (e) { ok(name + ' ran without throwing', false, String(e && e.message || e)); }
+  };
+  var bb = function (el) { var r = el.getBoundingClientRect(); return { l: r.left, t: r.top, r: r.right, b: r.bottom, w: r.width, h: r.height }; };
+  /* headless Chrome in virtual-time mode delivers no animation frames, so the test pumps the clock by hand */
+  gsap.ticker.lagSmoothing(0);
+  setInterval(function () { if (typeof gsap.ticker.tick === 'function') gsap.ticker.tick(); }, 16);
+  window.addEventListener('unhandledrejection', function (e) { window.__errs.push('rejection: ' + (e.reason && e.reason.message || e.reason)); });
+  window.addEventListener('load', function () { setTimeout(async function () { try {
+    ok('typeof gsap', typeof gsap === 'object' || typeof gsap === 'function', 'v' + (window.gsap && gsap.version));
+    ok('registerPlugin call clean', !regErr, regErr);
+    ['SplitText', 'MotionPathPlugin', 'Draggable', 'InertiaPlugin', 'MorphSVGPlugin'].forEach(function (n) {
+      ok('library ' + n + ' defined', typeof window[n] !== 'undefined', 'v' + (window[n] && window[n].version));
+    });
+    ok('prefers-reduced-motion in this run', true, String(RM));
+
+    await run('N1', async function () {
+      var D = DEMOS.n1;
+      if (RM) {
+        ok('N1 reduced motion: no split, heading whole and still', !D.tw() && D.els.every(function (e) { return !e.querySelector('div,span') || e.children.length === 0; }), 'lines not created');
+        return;
+      }
+      var s = D.split(), lines = s ? s.lines : [];
+      ok('N1 heading split into lines (3 or more)', lines.length >= 3, lines.length + ' lines');
+      var masks = lines.map(function (l) { return getComputedStyle(l.parentNode).overflow; });
+      ok('N1 every line sits inside a clipping mask', masks.length > 0 && masks.every(function (o) { return o === 'clip' || o === 'hidden'; }), masks.join(','));
+      var tw = D.tw();
+      tw.pause(); tw.progress(.3);
+      var mid = lines.map(function (l) { return gsap.getProperty(l, 'yPercent'); });
+      var clipped = lines.some(function (l) { var r = bb(l), m = bb(l.parentNode); return r.t > m.t + 2 || r.b > m.b + 2; });
+      ok('N1 mid-move some lines are lifted and cut by the mask', mid.some(function (v) { return v > 1; }) && clipped, 'yPercent ' + mid.map(function (v) { return Math.round(v); }).join('/'));
+      await fin(D.play());
+      await sleep(100);
+      lines = D.split().lines;
+      var end = lines.map(function (l) { return Math.round(gsap.getProperty(l, 'yPercent')); });
+      var inside = lines.every(function (l) { var r = bb(l), m = bb(l.parentNode); return r.t >= m.t - 1 && r.b <= m.b + 1; });
+      var op = lines.every(function (l) { return getComputedStyle(l).opacity === '1'; });
+      ok('N1 end state: every line at rest, whole, opaque', end.every(function (v) { return v === 0; }) && inside && op, 'yPercent ' + end.join('/') + ', inside ' + inside);
+    });
+
+    await run('N2', async function () {
+      var D = DEMOS.n2, img = D.img;
+      ok('N2 her picture loaded', img.complete && img.naturalWidth === 360 && img.naturalHeight === 360, img.naturalWidth + 'x' + img.naturalHeight + ' src ' + img.getAttribute('src'));
+      if (!RM) {
+        D.tw().pause(); D.tw().progress(.5);
+        var p = bb(img), g = bb(D.path);
+        ok('N2 mid-glide she is away from both ends', D.tw().progress() === .5 && p.l > g.l + 100, 'left ' + Math.round(p.l));
+        await fin(D.play());
+      } else { D.play(); }
+      await sleep(100);
+      var r = bb(img), pt = D.path.getPointAtLength(D.path.getTotalLength()), m = D.path.getScreenCTM();
+      var ex = m.a * pt.x + m.e, ey = m.d * pt.y + m.f;
+      var cx = r.l + r.w / 2, cy = r.t + r.h / 2;
+      ok('N2 she settled on the path end', Math.abs(cx - ex) < 2 && Math.abs(cy - ey) < 2, 'centre ' + Math.round(cx) + ',' + Math.round(cy) + ' end ' + Math.round(ex) + ',' + Math.round(ey));
+      var cs = getComputedStyle(img);
+      ok('N2 picture unaltered: square, no filter, no clip, no scale, no rotation, opaque',
+        Math.abs(r.w - r.h) < .5 && cs.filter === 'none' && cs.clipPath === 'none' && cs.maskImage === 'none' && cs.opacity === '1' &&
+        gsap.getProperty(img, 'scaleX') === 1 && gsap.getProperty(img, 'scaleY') === 1 && gsap.getProperty(img, 'rotation') === 0,
+        'box ' + r.w + 'x' + r.h + ' filter ' + cs.filter + ' clip ' + cs.clipPath);
+      var st = bb(img.parentNode);
+      ok('N2 she is inside her stage', r.l >= st.l && r.r <= st.r && r.t >= st.t && r.b <= st.b);
+    });
+
+    await run('N3', async function () {
+      var D = DEMOS.n3, card = D.card, box = D.box;
+      ok('N3 Draggable instance exists with Inertia', !!D.inst() && (RM || D.inst().vars.inertia === true), RM ? 'inertia off under reduced motion' : 'inertia ' + (D.inst() && D.inst().vars.inertia));
+      var b0 = bb(card);
+      await fin(D.play()); await sleep(200);
+      var b1 = bb(card), bx = bb(box);
+      ok('N3 flick moved the card and it stayed in the box',
+        Math.abs(b1.l - b0.l) > 40 && b1.l >= bx.l - 1 && b1.r <= bx.r + 1 && b1.t >= bx.t - 1 && b1.b <= bx.b + 1,
+        'moved ' + Math.round(b1.l - b0.l) + ',' + Math.round(b1.t - b0.t) + ' card ' + Math.round(b1.l) + '-' + Math.round(b1.r) + ' box ' + Math.round(bx.l) + '-' + Math.round(bx.r));
+      D.reset(); await sleep(50);
+      var b2 = bb(card);
+      ok('N3 Reset puts the card back', Math.abs(b2.l - b0.l) < 1 && Math.abs(b2.t - b0.t) < 1);
+      /* synthetic pointer drag, a real finger or mouse cannot be used headless */
+      var cx = b2.l + b2.w / 2, cy = b2.t + b2.h / 2;
+      function ev(type, x, y, tgt) { (tgt || document).dispatchEvent(new PointerEvent(type, { bubbles: true, cancelable: true, clientX: x, clientY: y, pointerId: 1, pointerType: 'mouse', isPrimary: true, buttons: type === 'pointerup' ? 0 : 1 })); }
+      ev('pointerdown', cx, cy, card);
+      for (var i = 1; i <= 8; i++) { ev('pointermove', cx + i * 14, cy + i * 6, document); await sleep(16); }
+      var mid = bb(card);
+      ev('pointerup', cx + 112, cy + 48, document);
+      await sleep(900);
+      var b3 = bb(card);
+      ok('N3 synthetic drag moved the card and kept it in the box', b3.l - b2.l > 40 && b3.l >= bx.l - 1 && b3.r <= bx.r + 1 && b3.b <= bx.b + 1,
+        'during drag moved ' + Math.round(mid.l - b2.l) + 'px, after release ' + Math.round(b3.l - b2.l) + ',' + Math.round(b3.t - b2.t));
+      D.reset();
+    });
+
+    await run('N4', async function () {
+      var D = DEMOS.n4, sh = D.shape;
+      var b0 = sh.getBBox();
+      ok('N4 starts as a ring', Math.abs(b0.width - 120) < 3 && Math.abs(b0.height - 120) < 3, 'bbox ' + b0.width.toFixed(1) + 'x' + b0.height.toFixed(1));
+      await fin(D.play());
+      var b1 = sh.getBBox();
+      ok('N4 melted into a tick', D.isTick() && Math.abs(b1.width - 80) < 4 && Math.abs(b1.height - 60) < 4, 'bbox ' + b1.width.toFixed(1) + 'x' + b1.height.toFixed(1) + ' stroke ' + getComputedStyle(sh).stroke);
+      await fin(D.play());
+      var b2 = sh.getBBox();
+      ok('N4 replay melts back to the ring', !D.isTick() && Math.abs(b2.width - 120) < 3 && Math.abs(b2.height - 120) < 3, 'bbox ' + b2.width.toFixed(1) + 'x' + b2.height.toFixed(1));
+    });
+
+    ok('no window.onerror messages', window.__errs.length === 0, window.__errs.join(' ;; '));
+    L.push('END pass=' + np + ' fail=' + nf);
+    } catch (e) { L.push('FAIL selftest harness threw | ' + (e && e.message || e)); }
+    out.textContent = L.join('\n');
+  }, 400); });
+}
+})();
+</script>
+</body>
+</html>

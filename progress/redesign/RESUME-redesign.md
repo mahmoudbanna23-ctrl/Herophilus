@@ -191,7 +191,21 @@ end up doing:
 - **Owner 2026-10-11: "yes, go ahead with it make it smoother and redesign it"** — the borrowed
   scroll-through technique (lead 1 below) is approved, to be made ours. `outside-dark` / `outside-light`
   painted (6 of 8 pictures used), converted to `app/assets/hall/outside-*.jpg` (UNCOMMITTED until the
-  build is checked), raw PNGs sent to him; no verdict on them yet. Doorway box and known look faults:
+  build is checked), raw PNGs sent to him; **both APPROVED by owner 2026-10-11**.
+- Second sample page `samples/motion-more.html` (N1-N4; five more GSAP files in `samples/lib/gsap/`,
+  rows in `SOURCES.md`). **Owner 2026-10-11: keep N1 (heading rises line by line, SplitText) and N4
+  (ring melts into a tick, MorphSVG). N2 (glide on a curve) and N3 (grab and flick) OUT.** He then
+  asked to see what anime.js (factory inventory) can offer; not on disk, nothing fetched yet.
+- anime.js 4.5.0 fetched with owner's yes (npm tarball, hash-checked, MIT; `samples/lib/animejs/`,
+  one 118 KB file) and shown on `samples/motion-anime.html` (A1-A4, this kit alone).
+  **Owner 2026-10-11: keep A1 (ripple across a tile grid from the pressed tile), A3 (chapter rows
+  arrive in a wave), A4 (ring and underline draw themselves). A2 (spring settle) OUT.**
+  Orchestrator's call, told to owner: these are MOVES he approved, not a second kit. GSAP already
+  on the branch does all three (grid stagger `from: index`, row stagger, DrawSVG), so build them
+  with GSAP and keep anime.js out of `app/` unless a GSAP version visibly falls short; show him
+  side by side if it does. UNVERIFIED that the GSAP ripple looks the same.
+- Full list of approved moves so far: M1-M6, N1, N4, A1, A3, A4. Out: M7, M8, N2, N3, A2.
+- `briefs/check-walkin.md` written: the different-house check brief for the walk-in build. Doorway box and known look faults:
   bottom of `briefs/build-walkin.md`. A Claude builder is running that brief (edits `app/js/hall.js`,
   `app/css/hall.css`, adds `app/js/lib/`, stills `shots/walkin-*`). After its report: footprint check
   (three dots), Codex different-house check, stills to the owner, AND open the live page for him with
