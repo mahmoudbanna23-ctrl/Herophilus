@@ -251,4 +251,37 @@
   .plaque .ring .rv{font-size:11px}
 }
 
+/* ============================================================================
+   FIX PASS 2
+   ============================================================================ */
+
+/* A. Dark question page: the four option rows and the question card rest on a
+   hairline; gold edge and glow only on hover, keyboard focus and the SELECTED option.
+   Correct / wrong keep their own colours (.correct / .wrong are left out of the
+   rest rule, so their borders and glows are untouched). */
+:root:not([data-theme="light"]) .opt:not(.sel):not(.correct):not(.wrong){
+  border-color:var(--line-2);box-shadow:none;
+}
+:root:not([data-theme="light"]) .opt:not(.sel):not(.correct):not(.wrong):hover:not(:has(.opt-answer:disabled)),
+:root:not([data-theme="light"]) .opt:not(.sel):not(.correct):not(.wrong):has(.opt-answer:focus-visible){
+  border-color:var(--gold);box-shadow:var(--gold-glow);
+}
+:root:not([data-theme="light"]) .opt.sel{border-color:var(--gold);box-shadow:var(--gold-glow)}
+:root:not([data-theme="light"]) .qcard{border-color:var(--line-2);box-shadow:none}
+
+/* B. Streak chip in the bar: "streak" sat alone on a second line. Two balanced lines
+   are the deliberate shape (the box is too narrow for one at this size). */
+.streak>span{text-wrap:balance}
+
+/* C. Subject-page section labels (Ear, Nose...): --ink-3 measured 3.99:1 dark and
+   4.06:1 light at 11 px. A step toward --ink-2 (a text token is mixed, none restated). */
+.grouphdr{color:color-mix(in srgb,var(--ink-3) 55%,var(--ink-2))}
+
+/* D. Dark theory sheet: italic notes sit between the body ink and ink-3, same size. */
+:root:not([data-theme="light"]) .th-body em{color:color-mix(in srgb,var(--ink-3) 45%,var(--ink-2))}
+
+/* E. Question page citation strip (the .pill.ghost sentence under the chips): 12 px in
+   ink-3 read small and dim. A step larger and in ink-2. */
+.pill.ghost{font-size:13px;color:var(--ink-2)}
+
 }
