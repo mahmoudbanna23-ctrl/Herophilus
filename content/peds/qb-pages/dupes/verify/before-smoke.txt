@@ -1,0 +1,14 @@
+PASS fonts.js registered a stylesheet under file://
+PASS boot globals exist
+PASS four modules — got 4
+PASS validator question total — got 7477 expected 7477
+PASS aggregator contains every source question — got 7477
+PASS no sparse holes in banks
+PASS no sparse holes in module groups
+PASS selfassess bank registered with its colour
+PASS endpoint bank badge renders its own colour
+PASS house bank badge renders its own colour
+PASS gradegain bank badge renders its own colour
+PASS selfassess bank badge renders its own colour
+SMOKE PASS 12/12
+exit 0

@@ -1,0 +1,39 @@
+data files       13   arrays 13   questions 7131
+with a figure    250   distinct files named 242
+files on disk    271
+
+sparse holes     0
+missing figures  0
+orphan files     29  (on disk, no question names them)
+  - npep-fe5-44.jpg
+  - q-pd-ep-1079.jpg
+  - q-pd-ep-1081.jpg
+  - q-pd-ep-1087.jpg
+  - q-pd-ep-238.jpg
+  - q-pd-ep-797.jpg
+  - q-pd-ep-806.jpg
+  - q-pd-ep-808.jpg
+  - q-pd-ep-810.jpg
+  - q-pd-ep2-1172.jpg
+  - q-pd-ep2-243.jpg
+  - q-pd-ep2-320.jpg
+  - q-pd-ep2-323.jpg
+  - q-pd-ep2-477.jpg
+  - q-pd-ep2-479.jpg
+  - q-pd-ep2-493.jpg
+  - q-pd-ep2-497.jpg
+  - q-pd-ep2-499.jpg
+  - q-pd-ep2-648.jpg
+  - q-pd-ep2-961.jpg
+  - q-pd-ep2-970.jpg
+  - q-pd-ep2-973.jpg
+  - q-pd-hd-112.jpg
+  - q-pd-hd-126b.jpg
+  - q-pd-hd-138.jpg
+  - q-pd-hd-3.jpg
+  - q-pd-sa-170.jpg
+  - q-pd-sa-172.jpg
+  - q-pd-sa-43.jpg
+figures with no imgAlt  0
+
+CLEAN — every figure a question names is on disk, and every one has alt text

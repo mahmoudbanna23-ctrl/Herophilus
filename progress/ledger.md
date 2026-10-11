@@ -2190,3 +2190,48 @@ splice (`pedsa-b31-3` explanation ran into the book's index; `pedsa-b25-2` had l
   `pedsa-b15-10-6` reach 20 options, their keys are I and R, clicking works.
 - Weak but defensible chapter calls: `pedsa-b28-5`, `pedsa-b25-11-2`, `pedsa-b30-1`, `pedsa-b25-10`.
 - The book is a published title: whether it may sit on the live site is the owner's rights call.
+
+---
+
+## §24 — PEDIATRICS REPEATS MERGED across the four sources (2026-10-11)
+
+Working folder `content\peds\qb-pages\dupes\`; the full trail is `progress\resume-peds-dupes.md`
+("## Changed since", in order). This section is the reconciliation only.
+
+**Counts.** Sweep of House, endpoint part 1, endpoint part 2 and Self assessment: 1,236 possible
+pairs, each read twice. Merge list under the lossless rule (kept copy holds every option of the
+removed one, same key text, its picture, stem at least 80% as long; a different wrong option means
+both stay; topic copy kept over a model-exam copy): **346 removed, 333 kept copies, 0 clashes, 0
+chains.** Pediatrics 2,248 -> 1,902: `questions.peds.js` 393 -> 365, `questions.peds.ep.js`
+704 -> 582, `questions.peds.ep2.js` 630 -> 434, `questions.peds.sa.js` 521 -> 521. Corpus
+7,477 -> 7,131 (boot QUESTIONS). Folds: 331 cross-source (kept copy gains the other source in
+`alsoIn`, citation folded into `source`) + 15 same-source, all in `app\data\folds.js` (`FOLDED`),
+which the app uses to carry saved progress to the kept copy.
+
+**Also changed by the merge.** `exams.peds.js`: 22 ids remapped; Model Final Exam 3 of endpoint
+part 1 shows 59, not 60 (its kept copy was already in that list). `theory.peds.js`: `qs` of inf-4
+and inf-13. 84 sentences in surviving entries that named a removed id were rewritten first
+(`repoint\verdicts.json`). Pins: `tools\validate\counts.json`, `EXPECTED_TOTAL` in `app\smoke.js`.
+
+**Checks.** Machine: validate 156008 of 156008, validate-all hard checks pass, boot 0 console errors,
+smoke 12/12, exam rows 8/8 at both tablet sizes, image-check clean, independent
+`verify\merge-check.js` 0 failed at the write. Outside check: Codex died on its usage limit, so a
+separate Claude refuter (Opus) ran the brief: all 346 rows clean on options, keys, pictures and
+citations; 72 pairs read by eye, all true repeats. It found five leftovers, all fixed the same day.
+
+**Pages read for those fixes** (each read once; renders in scratch):
+- `Pediatrics endpoint part1.pdf` p.854: "<37 weeks gestation" is printed as both option a and
+  option c, key c. `pedep-neo-29` is faithful; `pedep-mf3-45` stays a separate entry.
+- `pediatric .pdf` PDF p.18 (book p.34), Q5: platelets printed "262 × 109/L", superscript lost; WBC
+  printed 10⁹. `Pediatrics endpoint part2.pdf` p.320 prints both as 10⁹. Stem of `pedhd-haem-5`
+  corrected to 10⁹; the printing is recorded in its explanation.
+- `Pediatrics endpoint part2.pdf` pp.840, 842, 844, 846: urine white cells printed per mm²;
+  `pediatric .pdf` PDF p.10 (book pp.18-19) prints mm³. Recorded in `pedhd-renal-11..14`.
+- A House citation `pediatric .pdf p.N` is the BOOK page; the PDF page is floor(N/2)+1.
+
+### Still owed (not blocking)
+- Seven possible repeats found on a looser rule, not ruled: listed in the last bullet of
+  `progress\resume-peds-dupes.md`.
+- 274 merge rows and 48 pointer rows were checked by script only, never read by eye.
+- Exam-row pictures were not obtained (the measured check passes).
+- The live site does not have the merge until `dist` is rebuilt and uploaded.

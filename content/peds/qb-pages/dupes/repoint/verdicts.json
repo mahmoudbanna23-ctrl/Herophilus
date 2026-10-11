@@ -1,0 +1,847 @@
+[
+ {
+  "carrier": "pedhd-renal-19",
+  "field": "explanation",
+  "dead": "pedhd-inf-1",
+  "keep": "pedep-inf-53",
+  "op": "swap",
+  "find": "pedhd-inf-1",
+  "replace": "pedep-inf-53",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedhd-haem-22",
+  "field": "explanation",
+  "dead": "pedhd-inf-1",
+  "keep": "pedep-inf-53",
+  "op": "swap",
+  "find": "pedhd-inf-1",
+  "replace": "pedep-inf-53",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedhd-gen-14",
+  "field": "explanation",
+  "dead": "pedhd-gen-13",
+  "keep": "pedep2-gen-22",
+  "op": "swap",
+  "find": "pedhd-gen-13",
+  "replace": "pedep2-gen-22",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedhd-gastro-12",
+  "field": "explanation",
+  "dead": "pedhd-gastro-11",
+  "keep": "pedep-gi-11",
+  "op": "reword",
+  "find": "the identical wording to `pedhd-gastro-11`",
+  "replace": "near-identical wording to `pedep-gi-11`",
+  "why": "Claude r2: kept copy ends \"in this patient\", this entry \"in that patient\"."
+ },
+ {
+  "carrier": "pedhd-gastro-12",
+  "field": "explanation",
+  "dead": "pedhd-gastro-11",
+  "keep": "pedep-gi-11",
+  "op": "swap",
+  "find": "pedhd-gastro-11",
+  "replace": "pedep-gi-11",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedhd-gastro-14",
+  "field": "explanation",
+  "dead": "pedhd-gastro-13",
+  "keep": "pedep-gi-13",
+  "op": "swap",
+  "find": "pedhd-gastro-13",
+  "replace": "pedep-gi-13",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedhd-gastro-19",
+  "field": "explanation",
+  "dead": "pedhd-gastro-23",
+  "keep": "pedep-gi-23",
+  "op": "reword",
+  "find": "`pedhd-gastro-23` in this same file (`pedhd-gastro-23`) covers",
+  "replace": "`pedep-gi-23` covers",
+  "why": "Claude r2: kept copy is not in this file; doubled id dropped."
+ },
+ {
+  "carrier": "pedep-nut-23",
+  "field": "explanation",
+  "dead": "pedep-nut-5",
+  "keep": "pedhd-nutr-5",
+  "op": "swap",
+  "find": "pedep-nut-5",
+  "replace": "pedhd-nutr-5",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-nut-23",
+  "field": "objective",
+  "dead": "pedep-nut-5",
+  "keep": "pedhd-nutr-5",
+  "op": "swap",
+  "find": "pedep-nut-5",
+  "replace": "pedhd-nutr-5",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-nut-31",
+  "field": "explanation",
+  "dead": "pedep-nut-5",
+  "keep": "pedhd-nutr-5",
+  "op": "swap",
+  "find": "pedep-nut-5",
+  "replace": "pedhd-nutr-5",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-nut-31",
+  "field": "explanation",
+  "dead": "pedep-nut-11",
+  "keep": "pedhd-nutr-11",
+  "op": "swap",
+  "find": "pedep-nut-11",
+  "replace": "pedhd-nutr-11",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-nut-58",
+  "field": "explanation",
+  "dead": "pedep-nut-70",
+  "keep": "pedep-nut-58",
+  "op": "reword",
+  "find": "`Vitamin deficiency  Rickets.txt` carries a full vitamin function/deficiency/source table that grounds every option in this question and its reordered sibling `pedep-nut-70`:",
+  "replace": "`Vitamin deficiency  Rickets.txt` carries a full vitamin function/deficiency/source table that grounds every option in this question:",
+  "why": "Carrier is the kept copy; the sibling pointer would become self-referential."
+ },
+ {
+  "carrier": "pedep-nut-68",
+  "field": "explanation",
+  "dead": "pedep-nut-60",
+  "keep": "pedhd-nutr-15",
+  "op": "swap",
+  "find": "pedep-nut-60",
+  "replace": "pedhd-nutr-15",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-gi-7",
+  "field": "explanation",
+  "dead": "pedep-gi-19",
+  "keep": "pedhd-gastro-19",
+  "op": "swap",
+  "find": "pedep-gi-19",
+  "replace": "pedhd-gastro-19",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-gi-11",
+  "field": "explanation",
+  "dead": "pedep-gi-12",
+  "keep": "pedhd-gastro-12",
+  "op": "swap",
+  "find": "pedep-gi-12",
+  "replace": "pedhd-gastro-12",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-gi-23",
+  "field": "explanation",
+  "dead": "pedep-gi-19",
+  "keep": "pedhd-gastro-19",
+  "op": "swap",
+  "find": "pedep-gi-19",
+  "replace": "pedhd-gastro-19",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-gi-28",
+  "field": "explanation",
+  "dead": "pedep-gi-8",
+  "keep": "pedhd-gastro-8",
+  "op": "swap",
+  "find": "pedep-gi-8",
+  "replace": "pedhd-gastro-8",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-gi-28",
+  "field": "explanation",
+  "dead": "pedep-gi-20",
+  "keep": "pedhd-gastro-20",
+  "op": "swap",
+  "find": "pedep-gi-20",
+  "replace": "pedhd-gastro-20",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-gi-29",
+  "field": "explanation",
+  "dead": "pedep-gi-17",
+  "keep": "pedhd-gastro-17",
+  "op": "swap",
+  "find": "pedep-gi-17",
+  "replace": "pedhd-gastro-17",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-gi-30",
+  "field": "explanation",
+  "dead": "pedep-gi-19",
+  "keep": "pedhd-gastro-19",
+  "op": "swap",
+  "find": "pedep-gi-19",
+  "replace": "pedhd-gastro-19",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-gi-31",
+  "field": "explanation",
+  "dead": "pedep-gi-8",
+  "keep": "pedhd-gastro-8",
+  "op": "swap",
+  "find": "pedep-gi-8",
+  "replace": "pedhd-gastro-8",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-gi-31",
+  "field": "explanation",
+  "dead": "pedep-gi-20",
+  "keep": "pedhd-gastro-20",
+  "op": "swap",
+  "find": "pedep-gi-20",
+  "replace": "pedhd-gastro-20",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-gi-34",
+  "field": "explanation",
+  "dead": "pedep-gi-10",
+  "keep": "pedhd-gastro-10",
+  "op": "swap",
+  "find": "pedep-gi-10",
+  "replace": "pedhd-gastro-10",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-gi-34",
+  "field": "explanation",
+  "dead": "pedep-gi-17",
+  "keep": "pedhd-gastro-17",
+  "op": "swap",
+  "find": "pedep-gi-17",
+  "replace": "pedhd-gastro-17",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-gi-34",
+  "field": "explanation",
+  "dead": "pedep-gi-25",
+  "keep": "pedhd-gastro-25",
+  "op": "swap",
+  "find": "pedep-gi-25",
+  "replace": "pedhd-gastro-25",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-emg-15",
+  "field": "explanation",
+  "dead": "pedep-emg-13",
+  "keep": "pedhd-emg-13",
+  "op": "append-keeper",
+  "find": "pedep-emg-13",
+  "replace": "pedhd-emg-13",
+  "why": "Claude r2: promised table lives only in the removed copy; carried into the kept copy verbatim.",
+  "append": "| Child | Key clinical detail | ABCDE problem | Correct option |\n|---|---|---|---|\n| Nathaniel (here) | Can speak (patent airway), sat 90%, CRT <2s (circulation intact) | Breathing/oxygenation | High-flow oxygen therapy |\n| Kelsey (`pedep-emg-14`) | Found unconscious, gasping and moaning | Airway | Airway opening manoeuvres |\n| Ahmed (`pedep-emg-15`) | HR 40 despite effective bag-mask ventilation | Circulation | Chest compressions, hands-encircling |\n| Daniel (`pedep-emg-16`) | Known diabetic, collapsed after exertion | Reversible metabolic cause | Check blood glucose |\n| Aisha (`pedep-emg-17`) | Post-seizure, unresponsive to pain, glucose already being checked | Disability/neuro | Check pupils |"
+ },
+ {
+  "carrier": "pedep-emg-16",
+  "field": "explanation",
+  "dead": "pedep-emg-13",
+  "keep": "pedhd-emg-13",
+  "op": "append-keeper",
+  "find": "pedep-emg-13",
+  "replace": "pedhd-emg-13",
+  "why": "Claude r2: promised table lives only in the removed copy; carried into the kept copy verbatim.",
+  "append": "| Child | Key clinical detail | ABCDE problem | Correct option |\n|---|---|---|---|\n| Nathaniel (here) | Can speak (patent airway), sat 90%, CRT <2s (circulation intact) | Breathing/oxygenation | High-flow oxygen therapy |\n| Kelsey (`pedep-emg-14`) | Found unconscious, gasping and moaning | Airway | Airway opening manoeuvres |\n| Ahmed (`pedep-emg-15`) | HR 40 despite effective bag-mask ventilation | Circulation | Chest compressions, hands-encircling |\n| Daniel (`pedep-emg-16`) | Known diabetic, collapsed after exertion | Reversible metabolic cause | Check blood glucose |\n| Aisha (`pedep-emg-17`) | Post-seizure, unresponsive to pain, glucose already being checked | Disability/neuro | Check pupils |"
+ },
+ {
+  "carrier": "pedep-emg-17",
+  "field": "explanation",
+  "dead": "pedep-emg-13",
+  "keep": "pedhd-emg-13",
+  "op": "append-keeper",
+  "find": "pedep-emg-13",
+  "replace": "pedhd-emg-13",
+  "why": "Claude r2: promised table lives only in the removed copy; carried into the kept copy verbatim.",
+  "append": "| Child | Key clinical detail | ABCDE problem | Correct option |\n|---|---|---|---|\n| Nathaniel (here) | Can speak (patent airway), sat 90%, CRT <2s (circulation intact) | Breathing/oxygenation | High-flow oxygen therapy |\n| Kelsey (`pedep-emg-14`) | Found unconscious, gasping and moaning | Airway | Airway opening manoeuvres |\n| Ahmed (`pedep-emg-15`) | HR 40 despite effective bag-mask ventilation | Circulation | Chest compressions, hands-encircling |\n| Daniel (`pedep-emg-16`) | Known diabetic, collapsed after exertion | Reversible metabolic cause | Check blood glucose |\n| Aisha (`pedep-emg-17`) | Post-seizure, unresponsive to pain, glucose already being checked | Disability/neuro | Check pupils |"
+ },
+ {
+  "carrier": "pedep-emg-17",
+  "field": "explanation",
+  "dead": "pedep-emg-3",
+  "keep": "pedhd-emg-3",
+  "op": "swap",
+  "find": "pedep-emg-3",
+  "replace": "pedhd-emg-3",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-emg-25",
+  "field": "explanation",
+  "dead": "pedep-emg-20",
+  "keep": "pedhd-emg-20",
+  "op": "swap",
+  "find": "pedep-emg-20",
+  "replace": "pedhd-emg-20",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-emg-26",
+  "field": "explanation",
+  "dead": "pedep-emg-12",
+  "keep": "pedhd-emg-12",
+  "op": "swap",
+  "find": "pedep-emg-12",
+  "replace": "pedhd-emg-12",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-per-13",
+  "field": "explanation",
+  "dead": "pedep-per-10",
+  "keep": "pedhd-peri-10",
+  "op": "swap",
+  "find": "pedep-per-10",
+  "replace": "pedhd-peri-10",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-inf-40",
+  "field": "explanation",
+  "dead": "pedep-inf-2",
+  "keep": "pedep-inf-40",
+  "op": "reword",
+  "find": "The full comparative table against measles, rubella, chickenpox and mumps for this option set is written out at `pedep-inf-2`;",
+  "replace": "The comparative reasoning against measles, rubella, chickenpox and mumps is set out below;",
+  "why": "Carrier is the kept copy; the table pointer would become self-referential."
+ },
+ {
+  "carrier": "pedep-inf-40",
+  "field": "objective",
+  "dead": "pedep-inf-2",
+  "keep": "pedep-inf-40",
+  "op": "reword",
+  "find": "full comparative table at `pedep-inf-2`",
+  "replace": "comparative reasoning set out here",
+  "why": "Carrier is the kept copy; the table pointer would become self-referential."
+ },
+ {
+  "carrier": "pedep-inf-44",
+  "field": "explanation",
+  "dead": "pedep-inf-2",
+  "keep": "pedep-inf-40",
+  "op": "swap",
+  "find": "pedep-inf-2",
+  "replace": "pedep-inf-40",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-inf-44",
+  "field": "objective",
+  "dead": "pedep-inf-2",
+  "keep": "pedep-inf-40",
+  "op": "swap",
+  "find": "pedep-inf-2",
+  "replace": "pedep-inf-40",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-inf-67",
+  "field": "explanation",
+  "dead": "pedep-inf-64",
+  "keep": "pedhd-inf-13",
+  "op": "swap",
+  "find": "pedep-inf-64",
+  "replace": "pedhd-inf-13",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-inf-67",
+  "field": "explanation",
+  "dead": "pedep-inf-65",
+  "keep": "pedhd-inf-14",
+  "op": "swap",
+  "find": "pedep-inf-65",
+  "replace": "pedhd-inf-14",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-inf-71",
+  "field": "explanation",
+  "dead": "pedep-inf-55",
+  "keep": "pedhd-inf-3",
+  "op": "swap",
+  "find": "pedep-inf-55",
+  "replace": "pedhd-inf-3",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-inf-83",
+  "field": "explanation",
+  "dead": "pedep-inf-75",
+  "keep": "pedhd-inf-24",
+  "op": "swap",
+  "find": "pedep-inf-75",
+  "replace": "pedhd-inf-24",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-mf2-24",
+  "field": "explanation",
+  "dead": "pedep-emg-23",
+  "keep": "pedhd-emg-23",
+  "op": "reword",
+  "find": "but offers four options including both",
+  "replace": "but offers five options including both",
+  "why": "Claude r2: kept copy prints five options (adds the dextrose bolus)."
+ },
+ {
+  "carrier": "pedep-mf2-24",
+  "field": "explanation",
+  "dead": "pedep-emg-23",
+  "keep": "pedhd-emg-23",
+  "op": "swap",
+  "find": "pedep-emg-23",
+  "replace": "pedhd-emg-23",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-mf2-24",
+  "field": "objective",
+  "dead": "pedep-emg-23",
+  "keep": "pedhd-emg-23",
+  "op": "swap",
+  "find": "pedep-emg-23",
+  "replace": "pedhd-emg-23",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-mf2-24",
+  "field": "source",
+  "dead": "pedep-emg-23",
+  "keep": "pedhd-emg-23",
+  "op": "swap",
+  "find": "pedep-emg-23",
+  "replace": "pedhd-emg-23",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-mf3-41",
+  "field": "explanation",
+  "dead": "pedep-mf3-6",
+  "keep": "pedep-mf3-41",
+  "op": "reword",
+  "find": "The endpoint file prints this vignette twice, and `pedep-mf3-6` carries the full working -- why onset at 6 hours places the illness inside the early-onset window that `11) Neonatal sepsis.txt` defines as the first 72 hours of life, why rupture of membranes 24 hours before delivery is the prolonged-rupture risk factor that deck attaches to vertical transmission, and why the same deck's table assigns GBS and E. coli to early-onset disease and staphylococci to late-onset disease after 72 hours.",
+  "replace": "The endpoint file prints this vignette twice. `11) Neonatal sepsis.txt` splits neonatal sepsis by timing: early-onset (EONS), 'first 72 hours of life... vertical or horizontal' transmission, organisms 'GBS and Echoli'; against late-onset, 'after 72 hours', horizontal transmission, CONS/staph aureus. This infant's signs -- fast breathing, low temperature, lethargy, poor feeding -- begin at 6 hours of age, squarely inside the EONS window, and her membranes ruptured 24 hours before delivery -- inside the lecture's own >18-hour prolonged-rupture risk factor for GBS transmission. The lecture notes 15-40% of pregnant women carry GBS rectally or vaginally, about half of their infants become colonised, and 1-2% of colonised infants go on to develop early-onset infection -- exactly the vertically transmitted route this baby's presentation and risk factor fit.",
+  "why": "Claude: kept copy delegated its working to the removed copy; that paragraph is carried over verbatim."
+ },
+ {
+  "carrier": "pedep-mf4-61",
+  "field": "explanation",
+  "dead": "pedep-alg-1",
+  "keep": "pedhd-alg-1",
+  "op": "swap",
+  "find": "pedep-alg-1",
+  "replace": "pedhd-alg-1",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-nd-24",
+  "field": "explanation",
+  "dead": "pedep2-nd-19",
+  "keep": "pedhd-dev-19",
+  "op": "swap",
+  "find": "pedep2-nd-19",
+  "replace": "pedhd-dev-19",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-dp-14",
+  "field": "explanation",
+  "dead": "pedep2-dp-12",
+  "keep": "pedhd-devp-12",
+  "op": "swap",
+  "find": "pedep2-dp-12",
+  "replace": "pedhd-devp-12",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-dp-14",
+  "field": "explanation",
+  "dead": "pedep2-dp-15",
+  "keep": "pedhd-devp-15",
+  "op": "swap",
+  "find": "pedep2-dp-15",
+  "replace": "pedhd-devp-15",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-car-6",
+  "field": "explanation",
+  "dead": "pedep2-car-10",
+  "keep": "pedhd-card-10",
+  "op": "reword",
+  "find": "through `pedep2-car-10`)",
+  "replace": "through `pedep2-car-9`, and `pedhd-card-10`)",
+  "why": "Claude r2: an id range cannot end on an id from another series."
+ },
+ {
+  "carrier": "pedep2-car-6",
+  "field": "explanation",
+  "dead": "pedep2-car-10",
+  "keep": "pedhd-card-10",
+  "op": "swap",
+  "find": "pedep2-car-10",
+  "replace": "pedhd-card-10",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-car-8",
+  "field": "explanation",
+  "dead": "pedep2-car-10",
+  "keep": "pedhd-card-10",
+  "op": "swap",
+  "find": "pedep2-car-10",
+  "replace": "pedhd-card-10",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-car-9",
+  "field": "explanation",
+  "dead": "pedep2-car-10",
+  "keep": "pedhd-card-10",
+  "op": "swap",
+  "find": "pedep2-car-10",
+  "replace": "pedhd-card-10",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-ren-4",
+  "field": "explanation",
+  "dead": "pedep2-ren-3",
+  "keep": "pedhd-renal-3",
+  "op": "swap",
+  "find": "pedep2-ren-3",
+  "replace": "pedhd-renal-3",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-ren-4",
+  "field": "objective",
+  "dead": "pedep2-ren-3",
+  "keep": "pedhd-renal-3",
+  "op": "swap",
+  "find": "pedep2-ren-3",
+  "replace": "pedhd-renal-3",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-ren-35",
+  "field": "explanation",
+  "dead": "pedep2-ren-13",
+  "keep": "pedhd-renal-13",
+  "op": "swap",
+  "find": "pedep2-ren-13",
+  "replace": "pedhd-renal-13",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-ren-43",
+  "field": "explanation",
+  "dead": "pedep2-ren-11",
+  "keep": "pedhd-renal-11",
+  "op": "swap",
+  "find": "pedep2-ren-11",
+  "replace": "pedhd-renal-11",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-neu-40",
+  "field": "explanation",
+  "dead": "pedep2-dp-7",
+  "keep": "pedhd-devp-7",
+  "op": "reword",
+  "find": "four-option investigation menu at `pedep2-dp-7`",
+  "replace": "five-option investigation menu at `pedhd-devp-7`",
+  "why": "Claude r2: kept copy prints five options."
+ },
+ {
+  "carrier": "pedep2-neu-40",
+  "field": "explanation",
+  "dead": "pedep2-dp-7",
+  "keep": "pedhd-devp-7",
+  "op": "reword",
+  "find": "creatine kinase, karyotype and thyroid function tests",
+  "replace": "creatine kinase and karyotype",
+  "why": "Claude r2: kept copy also offers thyroid function tests, so it is no longer a difference."
+ },
+ {
+  "carrier": "pedep2-neu-49",
+  "field": "explanation",
+  "dead": "pedep2-neu-13",
+  "keep": "pedhd-neuro-13",
+  "op": "swap",
+  "find": "pedep2-neu-13",
+  "replace": "pedhd-neuro-13",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-end-11",
+  "field": "explanation",
+  "dead": "pedep2-end-9",
+  "keep": "pedhd-endo-9",
+  "op": "append-keeper",
+  "find": "pedep2-end-9",
+  "replace": "pedhd-endo-9",
+  "why": "Claude r2: promised table lives only in the removed copy; carried into the kept copy verbatim.",
+  "append": "| Entry | Clinical picture | Key |\n|---|---|---|\n| `pedep2-end-9` (this entry) | Shock: tachycardia, hypotension, prolonged capillary refill, drowsy | Fluid resuscitation with normal saline |\n| `pedep2-end-10` | New-onset hyperglycaemia, well, no dehydration, normal pH, only mild ketonaemia | Subcutaneous insulin |\n| `pedep2-end-11` | Known diabetic, blood glucose 3 mmol/L, conscious and able to swallow | Oral glucose drink |\n| `pedep2-end-12` | Vomiting and diarrhoea, clinically dehydrated but talking and hemodynamically stable | Intravenous infusion of normal saline |"
+ },
+ {
+  "carrier": "pedep2-end-11",
+  "field": "explanation",
+  "dead": "pedep2-end-10",
+  "keep": "pedhd-endo-10",
+  "op": "swap",
+  "find": "pedep2-end-10",
+  "replace": "pedhd-endo-10",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-end-12",
+  "field": "explanation",
+  "dead": "pedep2-end-9",
+  "keep": "pedhd-endo-9",
+  "op": "append-keeper",
+  "find": "pedep2-end-9",
+  "replace": "pedhd-endo-9",
+  "why": "Claude r2: promised table lives only in the removed copy; carried into the kept copy verbatim.",
+  "append": "| Entry | Clinical picture | Key |\n|---|---|---|\n| `pedep2-end-9` (this entry) | Shock: tachycardia, hypotension, prolonged capillary refill, drowsy | Fluid resuscitation with normal saline |\n| `pedep2-end-10` | New-onset hyperglycaemia, well, no dehydration, normal pH, only mild ketonaemia | Subcutaneous insulin |\n| `pedep2-end-11` | Known diabetic, blood glucose 3 mmol/L, conscious and able to swallow | Oral glucose drink |\n| `pedep2-end-12` | Vomiting and diarrhoea, clinically dehydrated but talking and hemodynamically stable | Intravenous infusion of normal saline |"
+ },
+ {
+  "carrier": "pedep2-end-12",
+  "field": "explanation",
+  "dead": "pedep2-end-10",
+  "keep": "pedhd-endo-10",
+  "op": "swap",
+  "find": "pedep2-end-10",
+  "replace": "pedhd-endo-10",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-liv-7",
+  "field": "explanation",
+  "dead": "pedep2-liv-6",
+  "keep": "pedhd-liv-6",
+  "op": "swap",
+  "find": "pedep2-liv-6",
+  "replace": "pedhd-liv-6",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-liv-8",
+  "field": "explanation",
+  "dead": "pedep2-liv-6",
+  "keep": "pedhd-liv-6",
+  "op": "swap",
+  "find": "pedep2-liv-6",
+  "replace": "pedhd-liv-6",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-liv-9",
+  "field": "explanation",
+  "dead": "pedep2-liv-6",
+  "keep": "pedhd-liv-6",
+  "op": "swap",
+  "find": "pedep2-liv-6",
+  "replace": "pedhd-liv-6",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-liv-10",
+  "field": "explanation",
+  "dead": "pedep2-liv-4",
+  "keep": "pedhd-liv-4",
+  "op": "swap",
+  "find": "pedep2-liv-4",
+  "replace": "pedhd-liv-4",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-liv-13",
+  "field": "explanation",
+  "dead": "pedep-neo-8",
+  "keep": "pedhd-neo-8",
+  "op": "swap",
+  "find": "pedep-neo-8",
+  "replace": "pedhd-neo-8",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-liv-13",
+  "field": "objective",
+  "dead": "pedep-neo-8",
+  "keep": "pedhd-neo-8",
+  "op": "swap",
+  "find": "pedep-neo-8",
+  "replace": "pedhd-neo-8",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-mal-16",
+  "field": "explanation",
+  "dead": "pedep2-mal-7",
+  "keep": "pedhd-mal-7",
+  "op": "swap",
+  "find": "pedep2-mal-7",
+  "replace": "pedhd-mal-7",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-mal-16",
+  "field": "explanation",
+  "dead": "pedep2-mal-22",
+  "keep": "pedhd-mal-22",
+  "op": "swap",
+  "find": "pedep2-mal-22",
+  "replace": "pedhd-mal-22",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-mal-23",
+  "field": "explanation",
+  "dead": "pedep2-mal-1",
+  "keep": "pedhd-mal-1",
+  "op": "swap",
+  "find": "pedep2-mal-1",
+  "replace": "pedhd-mal-1",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-mf3-1",
+  "field": "explanation",
+  "dead": "pedep2-hem-38",
+  "keep": "pedhd-haem-17",
+  "op": "reword",
+  "find": ", with a four-option menu that drops folate deficiency entirely",
+  "replace": "",
+  "why": "Claude r2: kept copy prints five options including folate deficiency."
+ },
+ {
+  "carrier": "pedep2-mf3-1",
+  "field": "explanation",
+  "dead": "pedep2-hem-38",
+  "keep": "pedhd-haem-17",
+  "op": "swap",
+  "find": "pedep2-hem-38",
+  "replace": "pedhd-haem-17",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-mf3-17",
+  "field": "explanation",
+  "dead": "pedep2-end-6",
+  "keep": "pedhd-endo-6",
+  "op": "swap",
+  "find": "pedep2-end-6",
+  "replace": "pedhd-endo-6",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-mf4-56",
+  "field": "explanation",
+  "dead": "pedep2-res-11",
+  "keep": "pedhd-resp-12",
+  "op": "swap",
+  "find": "pedep2-res-11",
+  "replace": "pedhd-resp-12",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-mf4-67",
+  "field": "explanation",
+  "dead": "pedep2-nd-8",
+  "keep": "pedhd-dev-8",
+  "op": "swap",
+  "find": "pedep2-nd-8",
+  "replace": "pedhd-dev-8",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep2-mf4-73",
+  "field": "explanation",
+  "dead": "pedep2-res-26",
+  "keep": "pedhd-resp-27",
+  "op": "swap",
+  "find": "pedep2-res-26",
+  "replace": "pedhd-resp-27",
+  "why": "Compared carrier reference and kept copy."
+ },
+ {
+  "carrier": "pedep-inf-40",
+  "field": "explanation",
+  "dead": "pedep-inf-2",
+  "keep": "pedep-inf-40",
+  "op": "reword",
+  "find": " See `pedep-inf-2` for the full side-by-side reasoning against all four.",
+  "replace": "",
+  "why": "Claude: second pointer in the same field; the paragraph before it already answers all four options."
+ },
+ {
+  "carrier": "pedhd-emg-13",
+  "field": "explanation",
+  "dead": "pedep-emg-14",
+  "keep": "pedhd-emg-14",
+  "op": "swap",
+  "find": "pedep-emg-14",
+  "replace": "pedhd-emg-14",
+  "why": "Claude r2: id inside the carried table."
+ },
+ {
+  "carrier": "pedhd-endo-9",
+  "field": "explanation",
+  "dead": "pedep2-end-9",
+  "keep": "pedhd-endo-9",
+  "op": "swap",
+  "find": "pedep2-end-9",
+  "replace": "pedhd-endo-9",
+  "why": "Claude r2: id inside the carried table."
+ },
+ {
+  "carrier": "pedhd-endo-9",
+  "field": "explanation",
+  "dead": "pedep2-end-10",
+  "keep": "pedhd-endo-10",
+  "op": "swap",
+  "find": "pedep2-end-10",
+  "replace": "pedhd-endo-10",
+  "why": "Claude r2: id inside the carried table."
+ },
+ {
+  "carrier": "pedep2-ren-28",
+  "field": "explanation",
+  "dead": "pedep2-ren-2",
+  "keep": "pedhd-renal-2",
+  "op": "swap",
+  "find": "pedep2-ren-2",
+  "replace": "pedhd-renal-2",
+  "why": "Claude r3: the shared five-option ladder now lives at the kept House copy."
+ }
+]

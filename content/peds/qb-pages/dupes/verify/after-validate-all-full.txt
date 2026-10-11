@@ -1,0 +1,39 @@
+questions.ent.js          Q_ENT      2240 entries, holes 0
+questions.neuro.js        Q_NEURO    1047 entries, holes 0
+questions.ophtho.ep.js    Q_OPHTHO_EP  433 entries, holes 0
+questions.ophtho.js       Q_OPHTHO   1273 entries, holes 0
+questions.peds.ep.js      Q_PEDS_EP   582 entries, holes 0
+questions.peds.js         Q_PEDS      365 entries, holes 0
+questions.peds.sa.js      Q_PEDS_SA   521 entries, holes 0
+
+live entries 6461 | ids 6461 | prefixes enthd-ear- entep-ear- entep-nose- entep-throat- entep-mfe1- entep-mfe3- entep-mfe4- entep-mfe5- entep-mfe6- entep-mfe7- entep-enr- entqb-ear1- entqb-ear2- entqb-ear3- entqb-ear4- entqb-ear5- entqb-ear6- entqb-ear7- entqb-ear8- entqb-ear9- entqb-nose1- entqb-nose2- entqb-nose3- entqb-nose4- entqb-nose5- entqb-nose6- entqb-nose7- entqb-nose8- entqb-nose9- entqb-thr1- entqb-thr2- entqb-thr3- entqb-thr4- entqb-thr5- entqb-thr6- entqb-thr7- entqb-thr8- entqb-thr9- entqb-thr10- entqb-thr11- enthd-nose- enthd-thr- enthd-sel- npqb-nr- npqb-ps- npep-loc- npep-stroke- npep-epilepsy- npep-headache- npep-ms- npep-hemi- npep-subst- npep-cranial- npep-child- npep-cns- npep-nm- npep-sympt- npep-anx- npep-mood- npep-soma- npep-emerg- npep-dem- npep-coma- npep-psychopharm- npep-schiz- npep-ataxia- npep-movement- npep-fe1- npep-fe3- npep-fe2- npep-fe5- npep-fe4- npep-fe6- ophep-exam-eye- ophep-optics-refraction- ophep-orbit- ophep-lacrimal-system- ophep-eyelids- ophep-conjunctiva- ophep-sclera- ophep-lens- ophep-cornea- ophep-uveal-tract- ophep-squint- ophep-glaucoma- ophep-malignancies-eye-adnexa- ophep-vitreous- ophep-neuro-ophthalmology- ophep-ocular-trauma- ophep-ocular-systemic-diseases- ophep-retina- ophep-pediatric-ophthalmology- ophep-drugs-eye- opqb-t1- opqb-t2- opqb-t3- opmcq-c1- opqb-t4- opqb-t7- opqb-t8- opqb-t6- opqb-t9- opmcq-c2- opmcq-c3- opqb-t13- opqb-t5- opmcq-c4- opmcq-c5- opqb-t11- opqb-t10- opmcq-c6- opqb-t14- opmcq-c7- opqb-t12- opmcq-c8- opqb-t17- opmcq-c9- opqb-t19- opmcq-c10- opmcq-c11- opqb-t18- opqb-t15- opmcq-c12- opqb-t16- opmcq-c13- opqb-t20- opmcq-c14- opqb-t21- opmcq-c15- opqb-t22- opmcq-c16- opqb-t23- opmcq-c17- opmcq-c18- opmcq-c19- opmcq-c20- opqb-t24- opqb-t25- opqb-t27- opqb-t28- opqb-t26- pedep-gp- pedep-nut- pedep-gi- pedep-acc- pedep-emg- pedep-per- pedep-neo- pedep-alg- pedep-inf- pedep-mf1- pedep-mf2- pedep-mf3- pedep-mf4- pedep-tr1- pedep-tr2- pedhd-inf- pedhd-renal- pedhd-card- pedhd-haem- pedhd-gen- pedhd-peri- pedhd-neo- pedhd-dev- pedhd-devp- pedhd-nutr- pedhd-gastro- pedhd-neuro- pedhd-resp- pedhd-endo- pedhd-alg- pedhd-gp- pedhd-emg- pedhd-acc- pedhd-liv- pedhd-mal- pedsa1-1- pedsa1-2- pedsa1-3- pedsa1-4- pedsa1-5- pedsa1-6- pedsa1-7- pedsa1-8- pedsa1-9- pedsa1-m- pedsa1-10- pedsa2-1- pedsa2-2- pedsa2-3- pedsa2-4- pedsa2-5- pedsa2-6- pedsa2-7- pedsa2-8- pedsa2-9- pedsa2-10- pedsa2-11- pedsa2-12- pedsa2-m- pedsa2-13- pedsa-b1- pedsa-b2- pedsa-b2-9- pedsa-b3- pedsa-b3-8- pedsa-b4- pedsa-b4-11- pedsa-b5- pedsa-b5-4- pedsa-b5-5- pedsa-b5-6- pedsa-b7- pedsa-b7-13- pedsa-b8- pedsa-b8-5- pedsa-b9- pedsa-b9-15- pedsa-b9-16- pedsa-b10- pedsa-b11- pedsa-b14-10- pedsa-b15- pedsa-b15-10- pedsa-b17- pedsa-b17-12- pedsa-b17-13- pedsa-b18-6- pedsa-b18-7- pedsa-b19- pedsa-b20- pedsa-b24- pedsa-b24-8- pedsa-b25- pedsa-b25-11- pedsa-b26- pedsa-b27- pedsa-b28- pedsa-b28-12- pedsa-b28-13- pedsa-b28-14- pedsa-b29- pedsa-b29-13- pedsa-b29-15- pedsa-b30- pedsa-b30-5- pedsa-b31-
+soft: no page citation 8 | thin (<120 w) 1204 | "held as one" 2 | duplicate-stem groups 64 (9 cross-file)
+duplicate stems (same normalised text):
+  questions.ent.js entep-ear-17 | questions.ent.js entep-ear-98
+  questions.ent.js entep-ear-59 | questions.ent.js entep-mfe6-1 | questions.ent.js enthd-sel-63
+  questions.ent.js entep-ear-76 | questions.ent.js entep-ear-96
+  questions.ent.js entep-ear-86 | questions.ent.js enthd-sel-62
+  questions.ent.js entep-nose-19 | questions.ent.js entep-mfe7-1
+  questions.ent.js entep-nose-97 | questions.ent.js entep-nose-112
+  questions.ent.js entep-nose-98 | questions.ent.js entep-nose-115
+  questions.ent.js entep-throat-15 | questions.ent.js entep-throat-65
+  questions.ent.js entep-throat-82 | questions.ent.js entqb-thr10-534
+  questions.ent.js entep-mfe4-6 | questions.ent.js entqb-thr8-393
+  questions.ent.js entqb-ear6-168 | questions.ent.js entqb-ear6-169
+  questions.ent.js entqb-ear8-206 | questions.ent.js entqb-ear8-207
+  questions.ent.js entqb-nose1-15 | questions.ophtho.js opqb-t4-146
+  questions.ent.js entqb-nose3-108 | questions.ent.js entqb-nose3-109
+  questions.ent.js entqb-nose3-128 | questions.ent.js entqb-nose3-130
+  questions.ent.js entqb-thr2-65 | questions.ent.js enthd-thr-499
+  questions.ent.js entqb-thr8-406 | questions.ent.js enthd-thr-661
+  questions.ent.js entqb-thr8-434 | questions.ent.js entqb-thr8-438
+  questions.ent.js entqb-thr9-491 | questions.ent.js entqb-thr10-561
+  questions.ent.js enthd-nose-450 | questions.ent.js enthd-nose-454
+  questions.ent.js enthd-thr-544 | questions.ent.js enthd-thr-545
+  questions.ent.js enthd-thr-554 | questions.ent.js enthd-thr-566
+  questions.neuro.js npqb-nr-132 | questions.neuro.js npep-headache-2
+  questions.neuro.js npqb-nr-176 | questions.neuro.js npep-epilepsy-7
+  questions.neuro.js npqb-nr-195 | questions.neuro.js npep-fe1-49
+  ... --all-dups for the rest
+
+ALL HARD CHECKS PASSED (7 files). --soft lists the soft items one per line.

@@ -25,7 +25,10 @@ function dice(a, b) {
   for (const [g, c] of B) { nb += c; hit += Math.min(c, A.get(g) || 0); }
   return na + nb ? 2 * hit / (na + nb) : 0;
 }
-const same = (x, y) => nums(x) === nums(y) && dice(norm(x), norm(y)) >= 0.82;
+// comparators and Greek letters carry meaning that norm() strips: "<37" against "≤ 37" is a different option;
+// a spelled-out "Alpha-" / "Beta-" is the same print as the letter
+const signs = s => (String(s).replace(/µ/g, 'μ').replace(/\balpha\b/gi, 'α').replace(/\bbeta\b/gi, 'β').match(/[<>≤≥±Ͱ-Ͽ]/g) || []).join('');
+const same = (x, y) => nums(x) === nums(y) && signs(x) === signs(y) && dice(norm(x), norm(y)) >= 0.82;
 const key = q => typeof q.answer === 'number' ? q.options[q.answer] : JSON.stringify(q.answer);
 const isExam = q => /-mf\d+-/.test(q.id);
 // why K cannot stand in for X ('' = it can)
@@ -90,7 +93,13 @@ const cmp = (x, y) => { const a = score(E.get(x)), b = score(E.get(y)); for (let
 const list = [], groupOf = new Map();
 for (const ids of groups.values()) {
   ids.sort(cmp);
-  const keep = ids[0];
+  // stems of near-equal length (within 5%) are the same printing respelled: the richer explanation then decides,
+  // but only when that copy absorbs everything the default keeper would (owner rule: keep the fuller printing)
+  const top = q => score(q).slice(0, 3).join(), len = (q, f) => String(q[f] || '').length, k0 = ids[0], can = k => ids.filter(x => x !== k && !lost(E.get(k), E.get(x))).length;
+  const k1 = ids.filter(x => x !== k0 && top(E.get(x)) === top(E.get(k0)) && len(E.get(x), 'stem') >= 0.95 * len(E.get(k0), 'stem') && len(E.get(x), 'explanation') > len(E.get(k0), 'explanation') && can(x) >= can(k0))
+    .sort((x, y) => len(E.get(y), 'explanation') - len(E.get(x), 'explanation'))[0];
+  const keep = k1 || k0;
+  if (k1) ids.splice(ids.indexOf(k1), 1), ids.unshift(k1);
   for (const dead of ids.slice(1)) {
     const why = lost(E.get(keep), E.get(dead));
     if (why) { stays.push({ pair: 'group', a: keep, b: dead, class: 'group', why: 'keeper cannot stand in: ' + why }); continue; }

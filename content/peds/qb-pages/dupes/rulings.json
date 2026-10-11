@@ -40,9 +40,8 @@
   "why": "options are mechanisms in one and diagnoses in the other"
  },
  "88": {
-  "merge": true,
-  "force": true,
-  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+  "merge": false,
+  "why": "both stay: the model-exam copy pedep2-mf3-66 prints a fifth option (PDA) the topic copy pedep2-car-62 lacks; forced merge withdrawn 2026-10-11 (re-read by Claude)"
  },
  "103": {
   "merge": true,
@@ -159,6 +158,11 @@
   "force": true,
   "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
  },
+ "377": {
+  "merge": true,
+  "force": true,
+  "why": "same question and key; the endpoint copy prints option C as \"Thalassaemia major\" where House prints \"α-Thalassaemia major\" (print slip: it sits beside \"Beta-thalassaemia major\"); House copy kept (read by Claude 2026-10-11)"
+ },
  "382": {
   "merge": true,
   "force": true,
@@ -184,10 +188,13 @@
   "force": true,
   "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
  },
+ "454": {
+  "merge": false,
+  "why": "this stem alone prints \"has normal heart rate and respiratory rate\"; printed content the other copies lack, so it stays its own entry (checker finding, ruled by Claude 2026-10-11)"
+ },
  "458": {
-  "merge": true,
-  "force": true,
-  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+  "merge": false,
+  "why": "both stay: wrong options differ (pedep2-res-10 prints HF and Inhaled F.B, pedhd-resp-14 prints Pertussis and Bronchiolitis twice); forced merge withdrawn 2026-10-11 (re-read by Claude)"
  },
  "470": {
   "merge": true,
@@ -213,6 +220,10 @@
  "562": {
   "merge": false,
   "why": "exam copy says upper limbs stiff, House copy says right limbs: finding differs"
+ },
+ "573": {
+  "merge": false,
+  "why": "this stem alone prints \"has normal heart rate and respiratory rate\"; printed content the other copies lack, so it stays its own entry (checker finding, ruled by Claude 2026-10-11)"
  },
  "_about": "Claude's rulings on read pairs (key = pair number n in pairs/judged/all.json). merge:false = both stay. keep overrides the first reader's keep. A pair with no ruling here follows the first reader only if the second reader agreed.",
  "pedep2-gen-27|pedhd-gen-18": {

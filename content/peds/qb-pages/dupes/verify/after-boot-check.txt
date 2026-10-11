@@ -1,0 +1,6 @@
+browser   chrome.exe
+QUESTIONS 7131   THEORY 153   MODULES 4   chapters 171
+Q_OPHTHO  1273   module cards in DOM 4
+chapter rows rendered 171 (168 with questions, 3 empty — empty is deliberate)
+  per module: ent 30 · ophtho 39 · neuropsych 42 · pediatrics 60
+console errors: 0

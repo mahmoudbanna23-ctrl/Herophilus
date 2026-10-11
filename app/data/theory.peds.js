@@ -2947,7 +2947,7 @@ var T_PEDS = {
         "h": "Red flags — how ill is this child?",
         "body": "Ten items, and any one changes the disposition.\n\n- **Age < 1 month.**\n- **Behaviour:** lethargy, irritability or a toxic appearance.\n- **Respiratory distress.**\n- **Petechiae or purpura.**\n- **Inconsolability.**\n- **A seizure**, or **a change in consciousness**.\n- **A headache that will not go away**, or **continued vomiting**.\n- **Complex medical problems.**\n\n*Petechiae or purpura in a febrile child is meningococcal disease until proved otherwise — inf-13.*\n\nSrc: L18 p.15",
         "qs": [
-          "pedhd-inf-1",
+          "pedep-inf-53",
           "pedhd-inf-22"
         ]
       },
@@ -3066,7 +3066,7 @@ var T_PEDS = {
         "h": "Neisseria meningitidis and meningococcal disease",
         "body": "### The organism\n- **What it is:** a **Gram-negative aerobic diplococcus** — **kidney-bean shaped pairs with adjacent sides flattened**. A strictly human pathogen.\n- **Carriage:** the nasopharynx of roughly **10 %** of people, asymptomatically; disease follows bloodstream invasion.\n- **Capsule:** the key virulence factor, **prevents phagocytosis**. **12 serogroups**; **A, B, C, W-135, X, Y** cause almost all disease.\n- **Endotoxin (LOS):** massive inflammation → **shock and DIC**. **Pili:** attachment to nasopharyngeal epithelium.\n\n### Two clinical faces\n- **Meningitis:** the classic triad of **fever, neck stiffness and altered mental status**.\n- **Meningococcaemia:** the **more lethal** form, with or without meningitis. **Very rapid progression**, high mortality, children and adolescents.\n\n### The rash\n- **Evolution:** macular red, changing rapidly to **maculopapular and dark** on trunk and limbs, **petechial and purpuric within a few hours**.\n- **Non-blanching:** the **glass test**. Lesions are **irregular in size and outline with a necrotic centre**.\n- **Purpura fulminans:** the extensive form, large confluent purple patches.\n\n### Red flags that mean now\n- **Non-blanching rash** · **bulging fontanelle** · **rapidly progressing purpura** · **cold hands and feet, mottled skin, very rapid breathing**.\n- **Course:** acute fever and prostration → **hypotension**; headache, myalgia, vomiting, loss of consciousness.\n\n### Complications\n- **Hearing loss:** the commonest. **Skin and limb necrosis**, often needing **amputation**.\n- **Waterhouse–Friderichsen syndrome:** massive **adrenal haemorrhage**, acute adrenal failure, death.\n- **Renal failure:** from profound hypotension and DIC.\n\n### Investigation and treatment\n- **CSF:** turbid, high protein, low glucose, neutrophils. **Gram stain:** Gram-negative diplococci, **intra- and extracellular**. **PCR** if pre-treated (inf-10).\n- **⚠️ Never delay treatment for investigations:** oxygen, IV fluids, vasopressors, plus **ceftriaxone or cefotaxime immediately**; **penicillin G** only once proven sensitive.\n- **Prevention:** **MenACWY** and **MenB** for adolescents, travellers to the African **\"meningitis belt\"** and the immunocompromised; ring chemoprophylaxis (inf-11).\n\nSrc: SBI pp.1–3; L18 pp.24–29 (pp.24, 25, 26, 28 image-only, recovered by render)",
         "qs": [
-          "pedhd-inf-1",
+          "pedep-inf-53",
           "pedhd-inf-2"
         ]
       },

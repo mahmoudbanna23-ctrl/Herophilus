@@ -4648,6 +4648,13 @@
   "why": "class different"
  },
  {
+  "pair": "n=88",
+  "a": "pedep2-car-62",
+  "b": "pedep2-mf3-66",
+  "class": "exact",
+  "why": "ruled: both stay: the model-exam copy pedep2-mf3-66 prints a fifth option (PDA) the topic copy pedep2-car-62 lacks; forced merge withdrawn 2026-10-11 (re-read by Claude)"
+ },
+ {
   "pair": "n=89",
   "a": "pedep2-dp-22",
   "b": "pedep2-dp-26",
@@ -5073,6 +5080,13 @@
   "b": "pedhd-neo-3",
   "class": "near",
   "why": "lossy both ways: option not in kept copy: Herpes simplex virus (HSV) infection // option not in kept copy: Streptococcus pneumoniae"
+ },
+ {
+  "pair": "n=241",
+  "a": "pedep-mf3-45",
+  "b": "pedep-neo-29",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: <30 weeks gestation | >30 weeks gestation // option not in kept copy: ≤ 37 weeks gestation | ≥ 30 weeks gestation | ≤ 30 weeks gestation"
  },
  {
   "pair": "n=243",
@@ -5691,11 +5705,25 @@
   "why": "class figure"
  },
  {
+  "pair": "n=454",
+  "a": "pedep2-ren-28",
+  "b": "pedhd-renal-2",
+  "class": "near",
+  "why": "ruled: this stem alone prints \"has normal heart rate and respiratory rate\"; printed content the other copies lack, so it stays its own entry (checker finding, ruled by Claude 2026-10-11)"
+ },
+ {
   "pair": "n=457",
   "a": "pedep2-res-10",
   "b": "pedep2-res-13",
   "class": "different",
   "why": "class different"
+ },
+ {
+  "pair": "n=458",
+  "a": "pedep2-res-10",
+  "b": "pedhd-resp-14",
+  "class": "near",
+  "why": "ruled: both stay: wrong options differ (pedep2-res-10 prints HF and Inhaled F.B, pedhd-resp-14 prints Pertussis and Bronchiolitis twice); forced merge withdrawn 2026-10-11 (re-read by Claude)"
  },
  {
   "pair": "n=461",
@@ -6067,6 +6095,13 @@
   "b": "pedhd-renal-15",
   "class": "different",
   "why": "class different"
+ },
+ {
+  "pair": "n=573",
+  "a": "pedep2-ren-2",
+  "b": "pedep2-ren-28",
+  "class": "near",
+  "why": "ruled: this stem alone prints \"has normal heart rate and respiratory rate\"; printed content the other copies lack, so it stays its own entry (checker finding, ruled by Claude 2026-10-11)"
  },
  {
   "pair": "n=575",

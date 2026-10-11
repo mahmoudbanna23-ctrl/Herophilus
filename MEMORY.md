@@ -67,7 +67,7 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
 - **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->** archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding.
 
 - ✅ **PEDS SELF ASSESSMENT IN 2026-10-11** — 4th bank `selfassess`: 521 new + 585 live tagged `alsoIn`. `ledger.md` §23.
-- PEDS REPEATS: 350 listed, NOT merged yet. NEXT: `progress\resume-peds-dupes.md`.
+- ✅ PEDS REPEATS MERGED 2026-10-11 (346). NEXT: `progress\resume-peds-dupes.md`.
 - **App redesign:** PRUNED 2026-10-11 -> archive, `## Pruned from MEMORY.md - 2026-10-11`.
 
 ## The watch — oversight every ~12 h (set up 2026-09-02)
@@ -129,7 +129,7 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
   `for i… if(!(i in A))`, **zero holes, every file `eval`s clean**): ENT **2,322** (2,240 q + 82 c) ·
   **Ophtho 1,598** · Neuro **304** (297 q + 7 c) · Peds House **393** · Peds endpoint **1,334**
   (p1 704 + p2 630, both CLOSED). ⚠️ **The case arrays are `C_ENT`/`C_NEURO`/`C_OPHTHO`/`C_PEDS`, not
-  `CASES_*`** (ophtho and peds hold 0). **5,951 is a STALE pre-neuro-endpoint corpus figure, not current** — `LOCKED_MODULES` is now `[]` (neuropsych unlocked 2026-09-22, ophtho unlocked 2026-09-21); only `THEORY_LOCKED` still holds chapters out. **RECOUNT 2026-10-11 (boot QUESTIONS; peds arrays re-loaded, 0 holes): 7,477** — ENT 2,240+82c · neuro 1,047+7c · ophtho 1,273+433+147 · peds 393+704+630+521.
+  `CASES_*`** (ophtho and peds hold 0). **5,951 is a STALE pre-neuro-endpoint corpus figure, not current** — `LOCKED_MODULES` is now `[]` (neuropsych unlocked 2026-09-22, ophtho unlocked 2026-09-21); only `THEORY_LOCKED` still holds chapters out. **RECOUNT 2026-10-11 (boot QUESTIONS; peds arrays re-loaded, 0 holes): 7,131** — ENT 2,240+82c · neuro 1,047+7c · ophtho 1,273+433+147 · peds 365+582+434+521.
   ✅ **BOOTED `file://` 2026-09-07, 0 errors**: `QUESTIONS 4049 · THEORY 81 · MODULES 4 · 153 chapter rows, 80 with questions`; per module ent 30 · ophtho 36 · neuropsych 36 · pediatrics 51. Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`; options 2–10 coexist (2:10 · 3:67 · 4:3836 · 5:1365 · 8:1 · 9:1 · 10:6).
   ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js` BY ~440 — load the array.**
 - **✅ THE BOOT CHECK IS NOW A REPO TOOL: `node tools\boot-check\boot-check.js`** (2026-09-02) —

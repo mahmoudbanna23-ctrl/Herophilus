@@ -1,0 +1,15 @@
+data files       13   arrays 13   questions 7477
+with a figure    275   distinct files named 267
+files on disk    271
+
+sparse holes     0
+missing figures  0
+orphan files     4  (on disk, no question names them)
+  - npep-fe5-44.jpg
+  - q-pd-sa-170.jpg
+  - q-pd-sa-172.jpg
+  - q-pd-sa-43.jpg
+figures with no imgAlt  0
+
+CLEAN — every figure a question names is on disk, and every one has alt text
+exit 0

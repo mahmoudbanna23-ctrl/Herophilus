@@ -1,0 +1,6 @@
+[
+  { "keep": "pedhd-neuro-4", "dead": "pedep2-neu-4" },
+  { "keep": "pedep2-hem-81", "dead": "pedep2-hem-55" },
+  { "keep": "pedep-emg-24", "dead": "pedhd-emg-24" },
+  { "keep": "pedhd-emg-24", "dead": "pedep-mf4-62" }
+]
