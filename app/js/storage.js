@@ -392,7 +392,9 @@ function foldState(s){
   });
   if(s.conf)dead(s.conf).forEach(d=>{
     const k=mapId(d);
-    if(s.conf[k]===undefined||deadWon[k]===d)s.conf[k]=s.conf[d];
+    /* answers are all settled above: once a removed answer has won, only that
+       removed id's conf may land — a losing copy's conf is about another answer */
+    if(deadWon[k]===undefined?s.conf[k]===undefined:deadWon[k]===d)s.conf[k]=s.conf[d];
     delete s.conf[d];
   });
   if(s.srs)dead(s.srs).forEach(d=>{

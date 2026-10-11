@@ -1,0 +1,34 @@
+{
+  "job": "D:\\claude os\\Medical school\\Herophilus\\content\\peds\\qb-pages\\dupes\\row-read\\pointer-job",
+  "items": 79,
+  "ok": 79,
+  "failed": 0,
+  "skipped": 0,
+  "called": 79,
+  "perHouse": {
+    "gemini": {
+      "calls": 79,
+      "costUsd": 0
+    }
+  },
+  "perWorker": {
+    "gemini-lite": {
+      "calls": 79,
+      "accepted": 79,
+      "rejected": 0,
+      "busySeconds": 642.9560000000001,
+      "waiting": 0,
+      "unavailable": false,
+      "dailyAllowanceUsedUp": false
+    }
+  },
+  "stoppedReason": "",
+  "startedAt": "2026-10-11T18:17:12.847Z",
+  "machine": "gemini-lite",
+  "retired": [],
+  "notes": [],
+  "unexamined": [],
+  "familyUnknown": [],
+  "canaries": [],
+  "endedAt": "2026-10-11T18:27:56.542Z"
+}

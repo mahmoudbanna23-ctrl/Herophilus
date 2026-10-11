@@ -1,0 +1,314 @@
+{
+ "merge": [
+  {
+   "i": 33,
+   "keep": "pedhd-resp-7",
+   "dead": "pedep2-mf2-67",
+   "why": "notSame",
+   "says": "Question B adds a 3‑year‑old boy with recurrent wheezing; Question A has no case"
+  },
+  {
+   "i": 74,
+   "keep": "pedhd-emg-23",
+   "dead": "pedep-emg-23",
+   "why": "notSame",
+   "says": "Question B includes an extra option E: 3 mL/kg bolus of dextrose."
+  },
+  {
+   "i": 75,
+   "keep": "pedhd-emg-19",
+   "dead": "pedep-emg-19",
+   "why": "notSame",
+   "says": "Base excess differs: -18 vs +18 mmol/L; also presence of apyrexial."
+  },
+  {
+   "i": 76,
+   "keep": "pedhd-emg-19",
+   "dead": "pedep-emg-57",
+   "why": "notSame",
+   "says": "B includes specific pH, base excess, glucose; A only notes metabolic acidosis."
+  },
+  {
+   "i": 91,
+   "keep": "pedhd-haem-7",
+   "dead": "pedep2-mf2-57",
+   "why": "notSame",
+   "says": "B adds Hb 84 g/L, platelets 322×10⁹/L, WBC 12×10⁹/L; A lacks these."
+  },
+  {
+   "i": 100,
+   "keep": "pedhd-neuro-10",
+   "dead": "pedep2-neu-10",
+   "why": "notSame",
+   "says": "Mother reports feeling sick vs feeling faint"
+  },
+  {
+   "i": 105,
+   "keep": "pedhd-neuro-5",
+   "dead": "pedep2-neu-5",
+   "why": "missing",
+   "says": null
+  },
+  {
+   "i": 106,
+   "keep": "pedhd-renal-12",
+   "dead": "pedep2-ren-12",
+   "why": "notSame",
+   "says": "Units for WBC count differ: mm^2 vs mm^3"
+  },
+  {
+   "i": 161,
+   "keep": "pedep-gp-38",
+   "dead": "pedep-mf3-14",
+   "why": "notSame",
+   "says": "Question A specifies age 15 years; Question B only states teenager without exact age"
+  },
+  {
+   "i": 173,
+   "keep": "pedhd-inf-23",
+   "dead": "pedep-mf2-58",
+   "why": "notSame",
+   "says": "ALT of 190 U/L added in question B"
+  },
+  {
+   "i": 190,
+   "keep": "pedhd-nutr-12",
+   "dead": "pedep-nut-12",
+   "why": "notSame",
+   "says": "Question B adds statement 'with no other neurological or musculoskeletal findings'"
+  },
+  {
+   "i": 197,
+   "keep": "pedhd-nutr-9",
+   "dead": "pedep-nut-9",
+   "why": "notSame",
+   "says": "Edema location specified as 'top of feet' vs generic 'feet'"
+  },
+  {
+   "i": 215,
+   "keep": "pedhd-devp-9",
+   "dead": "pedep2-dp-9",
+   "why": "notSame",
+   "says": "B specifies confirming developmental delay; A asks to confirm diagnosis generally."
+  },
+  {
+   "i": 230,
+   "keep": "pedhd-gen-3",
+   "dead": "pedep2-gen-20",
+   "why": "notSame",
+   "says": "Question includes 'most' while the other does not"
+  },
+  {
+   "i": 234,
+   "keep": "pedhd-gen-19",
+   "dead": "pedep2-gen-28",
+   "why": "notSame",
+   "says": "A asks 'most likely cause'; B asks 'likely cause' (missing 'most')."
+  },
+  {
+   "i": 235,
+   "keep": "pedhd-gen-20",
+   "dead": "pedep2-gen-29",
+   "why": "notSame",
+   "says": "Question B adds 'no masses palpable' on abdominal exam, absent in A."
+  },
+  {
+   "i": 242,
+   "keep": "pedhd-haem-10",
+   "dead": "pedep2-hem-31",
+   "why": "notSame",
+   "says": "Option C: generic thalassaemia major vs alpha‑thalassaemia major"
+  },
+  {
+   "i": 244,
+   "keep": "pedhd-haem-14",
+   "dead": "pedep2-hem-35",
+   "why": "notSame",
+   "says": "Drug option D differs: recombinant factor VIII vs factor IIIV"
+  },
+  {
+   "i": 276,
+   "keep": "pedhd-neuro-23",
+   "dead": "pedep2-neu-23",
+   "why": "missing",
+   "says": null
+  },
+  {
+   "i": 278,
+   "keep": "pedhd-neuro-8",
+   "dead": "pedep2-neu-8",
+   "why": "notSame",
+   "says": "Question A denies family history of seizures; B only notes no notable family history."
+  },
+  {
+   "i": 280,
+   "keep": "pedhd-renal-11",
+   "dead": "pedep2-ren-11",
+   "why": "notSame",
+   "says": "Unit difference: WBC >200/mm^2 vs >200/mm³"
+  },
+  {
+   "i": 281,
+   "keep": "pedhd-renal-13",
+   "dead": "pedep2-ren-13",
+   "why": "notSame",
+   "says": "WBC count unit differs: mm² vs mm³"
+  },
+  {
+   "i": 282,
+   "keep": "pedhd-renal-14",
+   "dead": "pedep2-ren-14",
+   "why": "notSame",
+   "says": "White blood cell unit differs: mm^2 vs mm³"
+  },
+  {
+   "i": 292,
+   "keep": "pedhd-renal-23",
+   "dead": "pedep2-mf1-20",
+   "why": "notSame",
+   "says": "Question B adds fever, vomiting, crying, and dipstick WBC/protein; Question A lacks these details."
+  },
+  {
+   "i": 313,
+   "keep": "pedep-emg-33",
+   "dead": "pedhd-acc-3",
+   "why": "notSame",
+   "says": "Age specified as 2.5‑year‑old; burn mechanism and description added."
+  },
+  {
+   "i": 316,
+   "keep": "pedhd-inf-2",
+   "dead": "pedep-inf-54",
+   "why": "notSame",
+   "says": "Question B adds age 3 years, irritability, vomiting, fever, purpuric rash, and recent amoxicillin."
+  },
+  {
+   "i": 318,
+   "keep": "pedhd-inf-13",
+   "dead": "pedep-inf-64",
+   "why": "notSame",
+   "says": "Question B includes vital signs, respiratory effort, and hydration status not mentioned in Question A."
+  },
+  {
+   "i": 320,
+   "keep": "pedhd-inf-24",
+   "dead": "pedep-inf-75",
+   "why": "notSame",
+   "says": "Question B adds chest pain, abnormal ECG, left coronary artery specifics, and female gender."
+  },
+  {
+   "i": 333,
+   "keep": "pedhd-gen-9",
+   "dead": "pedep2-gen-15",
+   "why": "notSame",
+   "says": "B mentions the healthy daughter is 3 years old; A does not mention her age."
+  },
+  {
+   "i": 335,
+   "keep": "pedhd-mal-13",
+   "dead": "pedep2-mal-13",
+   "why": "notSame",
+   "says": "A mentions pancytopenia; B mentions only anemia and thrombocytopenia (low Hb and platelets)."
+  },
+  {
+   "i": 336,
+   "keep": "pedhd-mal-18",
+   "dead": "pedep2-mal-18",
+   "why": "notSame",
+   "says": "B adds weight loss, irregular hard nodes >2 cm, and no fever/night sweats"
+  },
+  {
+   "i": 343,
+   "keep": "pedhd-mal-8",
+   "dead": "pedep2-mal-8",
+   "why": "notSame",
+   "says": "B adds glasses for 4 months and mother thinks prescription needs changing"
+  },
+  {
+   "i": 345,
+   "keep": "pedhd-renal-7",
+   "dead": "pedep2-ren-7",
+   "why": "notSame",
+   "says": "Question B includes patient age, symptoms, and lab findings; Question A lacks these details."
+  },
+  {
+   "i": 347,
+   "keep": "pedhd-peri-9",
+   "dead": "pedep-mf3-16",
+   "why": "notSame",
+   "says": "QB adds that the infant had a breast feed; QA does not."
+  }
+ ],
+ "pointer": [
+  {
+   "i": 8,
+   "carrier": "pedep-nut-23",
+   "keep": "pedhd-nutr-5",
+   "op": "swap",
+   "why": "readsBadly",
+   "says": "The text is a sentence fragment lacking a subject and a verb."
+  },
+  {
+   "i": 11,
+   "carrier": "pedep-nut-58",
+   "keep": "pedep-nut-58",
+   "why": "notBuilt"
+  },
+  {
+   "i": 32,
+   "carrier": "pedep-inf-40",
+   "keep": "pedep-inf-40",
+   "why": "notBuilt"
+  },
+  {
+   "i": 33,
+   "carrier": "pedep-inf-40",
+   "keep": "pedep-inf-40",
+   "why": "notBuilt"
+  },
+  {
+   "i": 35,
+   "carrier": "pedep-inf-44",
+   "keep": "pedep-inf-40",
+   "op": "swap",
+   "why": "doesNotHold",
+   "says": "Entry pedep-inf-40 is a question about Scarlet fever and lacks comparative reasoning regarding Mumps and orchitis."
+  },
+  {
+   "i": 44,
+   "carrier": "pedep-mf3-41",
+   "keep": "pedep-mf3-41",
+   "why": "notBuilt"
+  },
+  {
+   "i": 72,
+   "carrier": "pedep2-mal-23",
+   "keep": "pedhd-mal-1",
+   "op": "swap",
+   "why": "doesNotHold",
+   "says": "The referenced entry does not contain the hierarchy mentioning lymphomas, as claimed in the TEXT."
+  },
+  {
+   "i": 79,
+   "carrier": "pedep-inf-40",
+   "keep": "pedep-inf-40",
+   "why": "notBuilt"
+  },
+  {
+   "i": 80,
+   "carrier": "pedhd-emg-13",
+   "keep": "pedhd-emg-14",
+   "op": "swap",
+   "why": "readsBadly",
+   "says": "The cross-reference appears only in a table, not as a grammatically complete sentence."
+  },
+  {
+   "i": 81,
+   "carrier": "pedhd-endo-9",
+   "keep": "pedhd-endo-9",
+   "op": "swap",
+   "why": "doesNotHold",
+   "says": "IDs for questions 11 and 12 in the text differ from the IDs in the table."
+  }
+ ]
+}

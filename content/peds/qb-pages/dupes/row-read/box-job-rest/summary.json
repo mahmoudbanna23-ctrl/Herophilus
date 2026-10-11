@@ -1,0 +1,34 @@
+{
+  "job": "D:\\claude os\\Medical school\\Herophilus\\content\\peds\\qb-pages\\dupes\\row-read\\box-job-rest",
+  "items": 119,
+  "ok": 119,
+  "failed": 0,
+  "skipped": 0,
+  "called": 119,
+  "perHouse": {
+    "nvidia": {
+      "calls": 119,
+      "costUsd": 0
+    }
+  },
+  "perWorker": {
+    "nv-nemotron-super": {
+      "calls": 119,
+      "accepted": 119,
+      "rejected": 0,
+      "busySeconds": 348.8360000000001,
+      "waiting": 357.3469999999999,
+      "unavailable": false,
+      "dailyAllowanceUsedUp": false
+    }
+  },
+  "stoppedReason": "",
+  "startedAt": "2026-10-11T19:12:45.610Z",
+  "machine": "nv-nemotron-super",
+  "retired": [],
+  "notes": [],
+  "unexamined": [],
+  "familyUnknown": [],
+  "canaries": [],
+  "endedAt": "2026-10-11T19:24:32.237Z"
+}

@@ -1,4 +1,4 @@
-CARRY-OVER on D:\claude os\Medical school\Herophilus\app
+CARRY-OVER on D:\claude os\Medical school\Herophilus\dist
 seed: FOLDED 351 removed -> 335 kept (16 removed ids share a kept id) | collisions seeded 20 | shadow ids 15 | controls 5 [pedsa1-1-1,pedsa1-1-2,pedsa1-1-3,pedsa1-1-4,pedsa1-1-5] | sections answers,flags,conf,srs,hl,notes,reports,resumeByChapter(21),mockResume
 page: FOLDED in page 351 | storageMode local | save() returned true | kept ids live in page 335/335 | controls live 5/5
 info: storage right after load, before the app saves, still holds 351 removed ids (loadState migrates in memory only, storage.js:47-75; the first save() writes it)

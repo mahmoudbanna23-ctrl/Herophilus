@@ -2243,5 +2243,8 @@ citations; 72 pairs read by eye, all true repeats. It found five leftovers, all 
   content/peds/qb-pages/dupes/second-pass/rulings-2.json.
 - Model Final Exam 3 (endpoint part 1) row shows 58, was 59: both copies of one question sat in it.
 - Exam-row pictures obtained; the measured check still passes.
-- Still owed: 274 + 48 first-pass rows read by script only. Live site carries all 351 since the
-  2026-10-11 upload (deployment `79cccaa1`, byte-matched against `dist`).
+- Outside read of the written merge done 2026-10-11: 351 pairs, 317 agree, 34 questioned or
+  unreadable, all 34 ruled same question and same key; 79 pointers, 5 questioned, all fine.
+- 319 pairs had lost the endpoint file's printed explanation box in the merge; restored into 303
+  kept entries by `content/peds/qb-pages/dupes/splice/restore-boxes.js`, outside read 299 agree,
+  4 questioned and ruled fine. Counts unchanged. Live since deployment `9da2dc95`, byte-matched.

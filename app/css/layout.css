@@ -232,6 +232,10 @@ button.card:active:not(:disabled){border-color:var(--gold)}
   box-shadow:var(--neon-glow);
   transition:border-color var(--dur-2) var(--ease-standard),background-color var(--dur-2) var(--ease-standard),box-shadow var(--dur-2) var(--ease-standard);
 }
+/* The Clepsydra is fixed bottom-right and a chapter list ends under her: the
+   counts of the last rows could never be scrolled clear (measured on Pediatrics,
+   rows 7-8 of Model Final Exams). Room at the foot of a list view for her. */
+@media screen{.page>.ch-row:last-child{margin-bottom:120px}}
 .ch-row:hover:not(:disabled){border-color:var(--gold);background-color:var(--bg-2);box-shadow:var(--gold-glow)}
 .ch-row:disabled{opacity:.45;cursor:default;box-shadow:none;border-style:dashed}
 .ch-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;border:2px solid var(--line-2)}

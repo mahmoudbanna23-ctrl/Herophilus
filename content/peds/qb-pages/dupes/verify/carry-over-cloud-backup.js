@@ -452,6 +452,46 @@ for (const sc of toRun) {
   if (cw) say('    FAIL-NOTE (counted as a rule miss in the conf section): in ' + cw.R.confNotWinner + ' groups where 2 removed ids fold into one kept id, conf is not the conf of the winning answer, e.g. ' + cw.R.confExample + ' (storage.js:395 overwrites on every removed id once deadWon is set)');
   results[sc.id] = ev.bad ? 'FAIL' : 'PASS'; if (ev.bad) hardFail = true;
 }
+/* Direct foldState cases, no browser: a kept id receiving 2 removed ids where the removed answer that
+   WINS has no conf and the LOSING removed id has one. The loser's conf must never land on the kept id,
+   in either processing order of the removed ids (answers and conf keys inserted winner-first and
+   winner-last). Controls in the same run: winner with conf keeps its own conf; no removed answer wins
+   (kept answer newer) -> the old fill-from-removed still happens. */
+say('--- foldState direct: multi-removed, winner without conf, loser with conf ---');
+let directFail = 0;
+{
+  const m = fs.readFileSync(path.join(SRC, 'js', 'storage.js'), 'utf8');
+  const a0 = m.indexOf('function foldState(s){'), a1 = m.indexOf('\nconst isAnswered');
+  if (a0 < 0 || a1 < a0) { say('FAIL direct: foldState not found in storage.js'); directFail++; }
+  else {
+    const fctx = { FOLDED }; vm.createContext(fctx);
+    vm.runInContext(m.slice(a0, a1) + '\n;this.foldState=foldState;', fctx);
+    const K = multiKept[0], X = groupOfKept[K][0], Y = groupOfKept[K][1];
+    const run = (win, lose, winnerFirst, o) => {
+      const ord = winnerFirst ? [win, lose] : [lose, win], s = { answers: {}, conf: {} };
+      ord.forEach(d => { s.answers[d] = { ok: true, at: d === win ? 900 : 100, pick: 1 }; });
+      if (o.keptAns) s.answers[K] = { ok: false, at: o.keptAns, pick: 2 };
+      if (o.winConf !== undefined) s.conf[win] = o.winConf;
+      s.conf[lose] = 2;
+      return fctx.foldState(JSON.parse(JSON.stringify(s)));
+    };
+    const chk = (name, s, want) => {
+      const got = s.conf[K], ok = want === 'fill' ? got === 2 : got === want;
+      if (!ok) directFail++;
+      say('    ' + (ok ? 'ok ' : 'x ') + name + ': kept conf ' + got + (want === 'fill' ? ' (want 2, filled from a removed id)' : ' (want ' + want + ')') + ', removed ids left ' + [X, Y].filter(d => has(s.conf, d) || has(s.answers, d)).length);
+      if (has(s.conf, X) || has(s.conf, Y) || has(s.answers, X) || has(s.answers, Y)) directFail++;
+    };
+    [[X, Y], [Y, X]].forEach(([win, lose]) => [true, false].forEach(wf => {
+      const tag = 'winner ' + (win === X ? 'first-listed' : 'second-listed') + ' removed id, keys ' + (wf ? 'winner-first' : 'winner-last');
+      chk('winner has no conf, loser has conf, kept has no answer (' + tag + ')', run(win, lose, wf, {}), undefined);
+      chk('winner has no conf, loser has conf, kept answer older (' + tag + ')', run(win, lose, wf, { keptAns: 50 }), undefined);
+      chk('winner has conf 1, loser has conf 2 (' + tag + ')', run(win, lose, wf, { winConf: 1 }), 1);
+      chk('kept answer newest, no removed answer wins, kept has no conf: fill (' + tag + ')', run(win, lose, wf, { keptAns: 5000 }), 'fill');
+    }));
+  }
+}
+say(directFail ? 'DIRECT-FOLDSTATE FAIL ' + directFail : 'DIRECT-FOLDSTATE PASS');
+if (directFail) hardFail = true;
 say('--- negative controls: same input, FOLDED emptied in the scratch copy; each MUST fail ---');
 let negBroken = false;
 for (const id of NEG) {

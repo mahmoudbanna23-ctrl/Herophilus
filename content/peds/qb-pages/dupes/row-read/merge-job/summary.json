@@ -1,0 +1,34 @@
+{
+  "job": "D:\\claude os\\Medical school\\Herophilus\\content\\peds\\qb-pages\\dupes\\row-read\\merge-job",
+  "items": 351,
+  "ok": 349,
+  "failed": 2,
+  "skipped": 0,
+  "called": 351,
+  "perHouse": {
+    "nvidia": {
+      "calls": 351,
+      "costUsd": 0
+    }
+  },
+  "perWorker": {
+    "nv-nemotron-super": {
+      "calls": 351,
+      "accepted": 349,
+      "rejected": 2,
+      "busySeconds": 1907.7250000000001,
+      "waiting": 501.8750000000001,
+      "unavailable": false,
+      "dailyAllowanceUsedUp": false
+    }
+  },
+  "stoppedReason": "",
+  "startedAt": "2026-10-11T17:36:47.394Z",
+  "machine": "nv-nemotron-super",
+  "retired": [],
+  "notes": [],
+  "unexamined": [],
+  "familyUnknown": [],
+  "canaries": [],
+  "endedAt": "2026-10-11T18:16:58.217Z"
+}

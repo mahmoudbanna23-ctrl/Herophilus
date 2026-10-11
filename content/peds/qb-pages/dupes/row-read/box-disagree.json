@@ -1,0 +1,22 @@
+[
+ {
+  "id": "pedhd-dev-21",
+  "why": "doesNotSupport",
+  "says": "The explanation argues the marked answer is a concern, contradicting the question asking for 'not a concern'."
+ },
+ {
+  "id": "pedhd-gastro-17",
+  "why": "doesNotFit",
+  "says": "Explanation describes a different version of the question (withheld values, corrected mass location)."
+ },
+ {
+  "id": "pedhd-resp-9",
+  "why": "doesNotSupport",
+  "says": "Explanation describes bulging erythematous TM typical of acute otitis media, not otitis media with effusion."
+ },
+ {
+  "id": "pedhd-liv-4",
+  "why": "doesNotSupport",
+  "says": "Explanation fails to address vaccination for household contacts/other children, failing to support the marked answer."
+ }
+]
