@@ -28,6 +28,7 @@ Mapping to the app's 21 sections (Claude's reading, section names as in app/data
 - Neurology = Neurological Disorders
 
 Not in the list, ruled by the owner 2026-10-11: Accidents and poisoning = Paper 1, right after Pediatric emergencies; Mental Health = Paper 2, right after Neurological Disorders (last).
+Perinatal, ruled by the owner 2026-10-11: a NEW section "Perinatal medicine" in Paper 1, right after Neonatal medicine, for the textbook perinatal chapter (antenatal and fetal medicine, resuscitation, newborn examination). The six existing newborn topics stay together in Neonatal medicine; their ids are not renamed. New chapter id must not collide with the existing id perinatal (suggest perinatal-med). Questions are pulled into it by content from the topics they were sorted into (Self assessment book perinatal chapter first, then the other three sources): only the chapter field changes, ids stay, so saved progress is untouched. Read content/peds/perinatal-neonatal-boundary.md first; a seat lists candidates, a different-house checker reviews, Claude rules each move. If none are found the row stays empty and greyed. Update the comment above the Pediatrics groups in app/data/modules.js, which today calls this a coverage gap.
 The app keeps its own section names unless the owner says to rename them.
 
 # Plan — Pediatrics duplicate sweep + model-exam rows (2026-10-11)
