@@ -282,3 +282,28 @@ end up doing:
 - Still to do after build A: build B (doors + upright hall; needs the doors picture), outside
   check, stills looked at by a helper, screenshots to the owner, then wait for his verdict.
 - Font files may be downloaded only after the owner's yes.
+
+### 2026-10-11, later — typography: shortlist back, owner said yes to the fetch
+
+- Researcher's shortlist (report: `D:\scratch 2026\redesign\round2\fonts-report.md`, written via
+  heredoc, treat backslashes with care). Pairs, title face + reading face:
+  0 Cinzel + EB Garamond (today's) · 1 Marcellus + Gentium Book Plus · 2 Forum + Alegreya ·
+  3 Cormorant SC + Cardo · 4 Gilda Display + IM Fell Double Pica (tiring for long study) ·
+  5 GFS Didot + Libre Caslon Text.
+- Unverified at research time: full licence text read for 2 faces only; glyph cover for
+  `µ ° ± × ≤ ≥` and superscripts; GFS download URLs.
+- Owner's answer (AskUserQuestion): "Yes, fetch all ten (Recommended)".
+- Dispatched: one Sonnet builder, brief `briefs/build-type-specimen.md`. It fetches into
+  `samples/lib/fonts/<face>/`, logs `samples/lib/SOURCES.md`, builds `samples/type.html`, runs a
+  per-character glyph check, shoots `shots/type-*.png`. Report:
+  `D:\scratch 2026\redesign\round2\type-report.md`. Nothing under `app/`.
+- Next on typography: a helper looks at the stills, the owner picks by looking, only then
+  `app/css/type.css` (base64 faces, injected by the hall script like the warm sheet).
+
+### Still in flight at this note
+- Build A (scroll box out, warm skin, left rail): running; report
+  `D:\scratch 2026\redesign\round2\build-a-report.md`; its files are NOT committed yet.
+- Doors painting: a waiting shell starts it at 21:05 (picture maker limit lifts 21:03).
+- Outside check: not run; `briefs/check-walkin.md` still describes round 1 and must be rewritten.
+- Build B (doors on the scroll, upright hall paintings): not started; needs the doors picture.
+- This chat is past its step budget: start a fresh chat from this note.
