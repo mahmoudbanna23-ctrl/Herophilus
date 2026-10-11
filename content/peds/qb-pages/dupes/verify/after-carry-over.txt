@@ -1,0 +1,13 @@
+CARRY-OVER on D:\claude os\Medical school\Herophilus\dist
+seed: FOLDED 346 removed -> 333 kept (13 removed ids share a kept id) | collisions seeded 20 | shadow ids 15 | controls 5 [pedsa1-1-1,pedsa1-1-2,pedsa1-1-3,pedsa1-1-4,pedsa1-1-5] | sections answers,flags,conf,srs,hl,notes,reports,resumeByChapter(21),mockResume
+page: FOLDED in page 346 | storageMode local | save() returned true | kept ids live in page 333/333 | controls live 5/5
+info: storage right after load, before the app saves, still holds 346 removed ids (loadState migrates in memory only, storage.js:47-75; the first save() writes it)
+PASS a no removed id left as a key or value: removed ids still present: memory 0/346, storage 0/346, other wardround keys 0 (backup snapshots included)
+PASS b kept id holds the carried record (no collision): records verbatim: memory 2130/2130 + resume pointers 21/21; storage 2130/2130 + 21/21
+PASS b2 no stray or missing keys per section: sections whose key set equals the expected set: memory 7/7, storage 7/7
+PASS c collisions follow the code rule (storage.js:383-420): collision records as expected: memory 231/231, storage 231/231 | seeded-collision outcomes: answers dead-newer 10 kept-newer 10, srs dead-earlier 10 kept-earlier 10, reports dead 10 kept 10, notes joined 16 same-text 4, hl dead-filled 7 kept 13
+PASS d control records byte-identical: memory 35/35, storage 35/35 (5 ids x 7 sections)
+PASS e console errors: run 1 0, run 2 0
+PASS f reload is idempotent: run 2 loaded run 1 storage: state equals it true, storage after run 2 equals it true, removed ids 0, storage bytes 103226 -> 103226
+PASS g saved timed paper and resume pointers: paper ids/i/picked got {"ids":4,"i":2,"picked":3} want {"ids":4,"i":2,"picked":3} (duplicate dropped, place follows question, kept pick wins)
+CARRY-OVER PASS

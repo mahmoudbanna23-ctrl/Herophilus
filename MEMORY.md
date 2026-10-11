@@ -67,7 +67,7 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
 - **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->** archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding.
 
 - ✅ **PEDS SELF ASSESSMENT IN 2026-10-11** — 4th bank `selfassess`: 521 new + 585 live tagged `alsoIn`. `ledger.md` §23.
-- ✅ PEDS REPEATS MERGED 2026-10-11 (346). NEXT: `progress\resume-peds-dupes.md`.
+- ✅ PEDS REPEATS MERGED+LIVE 2026-10-11 (346). NEXT: `progress\resume-peds-dupes.md`.
 - **App redesign:** PRUNED 2026-10-11 -> archive, `## Pruned from MEMORY.md - 2026-10-11`.
 
 ## The watch — oversight every ~12 h (set up 2026-09-02)
