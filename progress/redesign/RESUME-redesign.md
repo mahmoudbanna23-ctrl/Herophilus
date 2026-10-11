@@ -419,3 +419,51 @@ Gilda, GFS Didot; files unmodified). Glyph check by cmap parse:
   Gentium Book Plus built in behind it; printing keeps today's lettering unless he says
   otherwise. Still unanswered from earlier: the button pick (suggested 139 main, 21 quiet) —
   one plain question, only when the screenshots go to him.
+
+## EVENING BLOCK — 2026-10-11, from 18:26 (state at 19:20)
+
+Commits, all pushed: `8d6da064` briefs · `9408e0ff` lettering · `d94be479` fix pass 1 ·
+`dc0f3b5a` upright hall.
+
+- **Look-over 1** (Haiku, all 28 `r2a-*`): 15 faults. List is in the fix brief,
+  `briefs/build-round2-fix.md`.
+- **Lettering pair 5 LANDED** — `app/css/type.css` (3.95 MB, whole TTFs as base64, screen only),
+  injected by `hall.js` after `warm.css`. Sign proof: 29 signs, 0 system faces (Caslon: micro,
+  degree, plus-minus, times, superscripts, subscript 2; Gentium: less/greater-or-equal, Greek,
+  non-breaking hyphen; Gentium carries `size-adjust:115%`). **Theory text inside the sheet went
+  14px -> 12.9px** to hold the page count (all chapters 3517 -> 3521; `ent-tonsils` 38 -> 39,
+  `nr-cns` 35 -> 35). Print unchanged (PDF fonts still the old ones). Italic sets NO ligatures
+  (the "st" tie sits in Caslon's common ligatures). Report:
+  `D:\scratch 2026\redesign\type5\build-type-report.md`. NOT done: 60-75 character measure.
+- **Fix pass 1 LANDED** (`warm.css` +72, `type.css` +11): rows and stat cards rest on a hairline;
+  left bar fits at 820 px height; dark `--fill` now `#342516`; focus ring uses `--neon`
+  (dark >= 6.3:1, light >= 4.2:1); blue button ring warmed; small labels in the reading face;
+  theory section titles lost small caps. Report:
+  `D:\scratch 2026\redesign\round2fix\build-fix-report.md`.
+- **Look-over 2** (Haiku, all 30 `r2f-*`, lines in `round2fix\r2f-look.txt`): a theory table at
+  1180x820 shows one row then a blank sheet (cause unknown: lettering or old fault); gold edge
+  still loud on option rows and question card; streak chip wraps; faint section labels.
+  **Fix pass 2 is RUNNING** on these (stills `r2g-*`, report
+  `D:\scratch 2026\redesign\round2fix2\build-fix2-report.md`).
+- **Upright hall LANDED** — there was NO portrait branch before (`--hall-tall` was read nowhere).
+  Now `hall.js` has `tall()`, a tall preload and a tall branch in `layout()`; `hall.css` has one
+  late `@media (orientation:portrait)` block with the tall coordinates. JPGs 281 KB + 318 KB.
+  Landscape proven unchanged. Doubts: `warm.css` section 3 (plaque enlargement) is now outranked
+  in portrait, i.e. dead there; **the Clepsydra greeting is drawn at 96px and behind the plaques
+  in portrait** (size and layer only, the picture itself untouched) — owner has not seen this;
+  phones and 1024x1366 not shot. Report:
+  `D:\scratch 2026\redesign\round2b\build-b-upright-report.md`.
+- **Doors**: still no `paint/doors.png`. A background shell of THIS chat waits until 21:07, then
+  runs `paint-ref.sh doors 1024x1536 outside-dark.png` once if no Codex job is running (the
+  script refuses if the picture exists). Then: Haiku looks at it; a Sonnet builder does the doors
+  half of `briefs/build-round2-b.md` (cut at the measured seam, first scroll beat). The half-fixed
+  fault "plaque text tiny at 820 wide" needed a counter-scale in `hall.js`; the upright hall may
+  have made it moot — check on the final stills.
+- **Check brief rewritten** for round 2: `briefs/check-walkin.md`. Codex check not yet run (one
+  Codex job at a time; after the doors picture).
+- Shared-file lines touched this block: none. Still open from before: navy `theme-color` in
+  `index.html` / `theme.js`; first-paint flash of the old look before the injected sheets; the
+  4 MB lettering sheet is fetched on first load (weight not yet judged by the owner).
+- To tell the owner with the screenshots: theory text 14 -> 12.9; Clepsydra smaller on upright
+  iPad; printing keeps the old lettering (already told). One question only: the button pick
+  (suggested 139 main, 21 quiet).
