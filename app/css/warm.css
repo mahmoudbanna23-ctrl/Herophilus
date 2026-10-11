@@ -179,4 +179,76 @@
 :root:not([data-theme="light"]) .railprof:hover{box-shadow:inset 0 0 0 1px rgba(217,180,74,.34)}
 :root:not([data-theme="light"]) .railsync{color:var(--rail-dim);background:rgba(217,180,74,.06)}
 
+/* ============================================================================
+   FIX PASS, ROUND 2 — faults found by looking at the first stills.
+   ============================================================================ */
+
+/* 1. Dark: stacked rows and stat cards rest on a hairline; the gold edge and glow
+   come back on hover and keyboard focus only. */
+:root:not([data-theme="light"]) .ch-row,
+:root:not([data-theme="light"]) .stat{border-color:var(--line-2);box-shadow:none}
+:root:not([data-theme="light"]) .ch-row:hover:not(:disabled),
+:root:not([data-theme="light"]) .ch-row:focus-visible{border-color:var(--gold);box-shadow:var(--gold-glow)}
+
+/* 5. Dark: ink-4 text sat at 4.00:1 on --fill and 4.27:1 on the hover tint. The
+   surface goes a step darker and the tint a step fainter (text tokens untouched).
+   Measured: ink-4 on --fill 4.5+:1, on --tint-2 over --card 4.57:1. */
+:root:not([data-theme="light"]){--fill:#342516;--tint-2:rgba(242,232,213,.05)}
+
+/* 7. Focus ring: was --neuro purple, 2.42:1 on dark cards. The ring now takes the
+   edge colour of the look (gold on stone, bronze on parchment); no subject colour
+   token is changed. Measured in the report. */
+:focus-visible{outline-color:var(--neon)}
+
+/* 8. The blue under Flag, Skip and every button was the travelling-light ring
+   (conic gradient on .btn::before) still using the old sky blue. Warm it. */
+.btn::before{
+  background:conic-gradient(from var(--angle),transparent,transparent,var(--neon),transparent,transparent);
+}
+
+/* 4. Question page. Check answer: a hairline edge in dark so the purple button reads
+   as a button against the card (2.15:1 without); a disabled one stays visible as an
+   outlined ghost instead of a 32%-opacity smear (it was nearly invisible in light). */
+:root:not([data-theme="light"]) .btn.go:not(:disabled){box-shadow:inset 0 0 0 1px rgba(242,232,213,.5)}
+.btn.go:disabled{
+  opacity:1;background:transparent;color:var(--ink-3);
+  box-shadow:inset 0 0 0 1px var(--ink-4);
+}
+
+/* 6. Streak box text in the dark rail: 3.56:1 on the tinted box; the lighter rail text
+   gives 6.1:1 on the worst end of its gradient. */
+:root:not([data-theme="light"]) .streak .t{color:var(--rail-text)}
+
+/* 9. One line for the bar's sub-title ("4th year · 2nd semester · Q-bank"): it wrapped to
+   "Q-" / "BANK" with the new lettering. */
+.rail-sub{white-space:nowrap;font-size:9.5px;letter-spacing:.04em}
+
+/* 2. Short windows: everything in the bar fits without scrolling at 820 px height. */
+@media (max-height:860px){
+  .rail-head{padding-top:var(--s-7);padding-bottom:var(--s-4)}
+  .rail-head::after{margin-top:var(--s-3)}
+  .rail::after{margin:var(--s-2) var(--s-8) var(--s-4)}
+  .streak{margin-top:var(--s-3);margin-bottom:0;padding-block:var(--s-3)}
+  .nav{padding-top:0;padding-bottom:var(--s-4)}
+  .nav-label{padding-top:var(--s-5);padding-bottom:var(--s-2)}
+  .nav-item{padding-block:var(--s-2)}
+}
+
+/* 3. Subject plaques in the hall when the picture is pulled back to fit all four
+   alcoves (tall or narrow windows): the stage is scaled to about 0.5, so 10 px type
+   drew at 5 px. Sizes below are in the stage's own pixels; hall.js owns the scale,
+   so these steps follow the window's shape. */
+@media (max-aspect-ratio:3/4){
+  .pl-name{font-size:19px;letter-spacing:.03em}
+  .pl-acc,.pl-count{font-size:18px}
+  .plaque .ring{width:46px!important;height:46px!important}
+  .plaque .ring .rv{font-size:14px}
+}
+@media (min-aspect-ratio:3/4) and (max-aspect-ratio:19/20){
+  .pl-name{font-size:15px;letter-spacing:.03em}
+  .pl-acc,.pl-count{font-size:14px}
+  .plaque .ring{width:36px!important;height:36px!important}
+  .plaque .ring .rv{font-size:11px}
+}
+
 }

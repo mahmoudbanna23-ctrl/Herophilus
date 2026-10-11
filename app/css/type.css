@@ -81,3 +81,14 @@ h2{font-variant-caps:small-caps;letter-spacing:.07em;font-weight:400}
 .stat .n{letter-spacing:.02em;font-weight:400}
 
 }
+
+/* ---- round-2 lettering fixes (screen only) ---------------------------------
+   a. GFS Didot has hairline strokes: under about 15 px on a small label, pill or
+      button they break up. Those small labels take the reading face (capitals and
+      tracking kept). Titles, plaques and headings stay Didot.
+   b. Small capitals made a whole sentence-long theory section title heavy: the
+      theory sheet's h2 keeps the face and loses the small capitals. */
+@media screen{
+.nav-label,.eyebrow,.cl-hud,.cl-mini,.mod-card .startgo{font-family:var(--font-body)}
+.bk-sheet h2,.th-body h2{font-variant-caps:normal;letter-spacing:.03em}
+}
