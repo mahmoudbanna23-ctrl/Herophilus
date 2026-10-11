@@ -1,0 +1,24 @@
+ONE pair of tall bronze double doors from the entrance of an ancient Greek library in Alexandria,
+SHUT, painted in the same rich, hand-painted, cinematic finish as the style reference: aged dark
+bronze with warm brass highlights, verdigris in the recesses, lit softly from the front by warm
+evening lamp light.
+
+Layout, strict:
+- Dead front-on, orthographic, no perspective, no tilt. The doors fill the picture from edge to
+  edge: the outer left edge of the left leaf touches the left side of the picture, the outer
+  right edge of the right leaf touches the right side, the bottom edge sits on the bottom.
+- The top is a single round arch spanning both leaves: straight sides for the lower three
+  quarters, then one smooth semicircular curve across the full width at the top.
+- Exactly two leaves, mirror images of each other, meeting at one clear, dark, perfectly vertical
+  seam in the exact centre of the picture, running from the bottom to the top of the arch.
+- Each leaf: a few large recessed panels framed by a raised border, a band of Greek key (meander)
+  pattern along the border, rows of round bronze studs, and one heavy ring handle near the seam at
+  mid height. No lettering of any kind.
+- Flat, even lighting across both leaves so they can later be brightened or darkened as a whole.
+
+Background: everything outside the arched door shape fully transparent (alpha) if you can produce
+it. If you cannot, a perfectly flat, uniform, single colour, cool light grey-blue (#B8C4D6), with
+no gradient, no texture and NO cast shadow or glow on the background.
+
+Do not include: a wall, a door frame, columns, steps, a floor, a threshold, people, hands, torches,
+text, labels, numbers, a border, or any object other than the two door leaves.

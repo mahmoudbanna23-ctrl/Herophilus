@@ -244,3 +244,41 @@ end up doing:
   samples/scroll-apart.html; pieces samples/parts/. At most two pictures (daily allowance: 6 of 8
   used before this job). Result NOT yet known when this note was written.
 - Nothing from this trial goes under app/ before the owner's verdict.
+- RESULT + VERDICT 2026-10-11: one picture, transparent background, five clean pieces; page
+  samples/scroll-apart.html built, 0 console errors (commit after c1e205fd). Owner saw the stills
+  and the live page: "Approved". The painted-in-pieces way is the route; 3D is NOT needed.
+  Known faults carried: joints read as nested rings up close; upright iPad size sits small.
+- Owner then asked what can be done for the whole app. A whole-app proposal was given in chat;
+  nothing beyond home is to be built before his verdict on the walk-in home screen.
+- Walk-in home: built (c1e205fd), footprint clean, upright iPad letterboxed and unfinished;
+  Codex check with briefs/check-walkin.md queued behind a busy Codex, report expected at
+  D:\scratch 2026\redesign\walkin\check-report.txt. An unexplained paint/hall-dark-tall.png
+  appeared untracked during this stretch: look at who made it before using or counting it.
+
+## 2026-10-11 — round 2 on the home screen (owner's verdict on the walk-in)
+
+- Owner approved the whole-app order: judge home first, then ONE complete subject page (ENT, the
+  trumpet is ready), then the rest copy the pattern.
+- Owner's verdict on the walk-in home, verbatim: "Remove the "Scroll" box at the bottom, change the
+  boxes over all this dark blue doesn't match the whole theme, add doors to the library that opens
+  with the animation, edit the left side tool bar so it goes on with the whole theme, don't forget
+  that our general whole theme is ancient Alex and greek". Then: "Also find font types and
+  typography that matches the theme". Box edge glow: he picked warm gold (light blue is out).
+- Plan approved by him: `briefs/round2-plan.md` (six parts: cue out, warm skin app-wide, left rail,
+  doors on the scroll, upright hall wired in, typography with a specimen page he picks from).
+- Footprint stays: ONE script-tag line in `app/index.html`, zero lines in the Pediatrics files.
+  New override sheets `app/css/warm.css` (and later `app/css/type.css`) are injected by `hall.js`.
+  Fonts today are base64 in `app/data/fonts.js`; that folder is off-limits, so it is not edited.
+- Dispatched 16:33: build A (cue, skin, rail) = one lean-drafter, brief `briefs/build-round2-a.md`,
+  report `D:\scratch 2026\redesign\round2\build-a-report.md`, stills `shots/r2a-*`. Font search =
+  one researcher, read-only, report `D:\scratch 2026\redesign\round2\fonts-report.md`. Neither
+  result known when this was written.
+- BLOCKED until 21:03: Codex hit its usage limit ("try again at 9:03 PM"). That stops the doors
+  painting (`paint/prompt-doors.txt` is written; run `bash paint/paint-ref.sh doors 1024x1536
+  outside-dark.png`, delete `paint/doors.log` first if it complains) and the outside check.
+  The failed attempt made no picture, so 7 of 8 pictures are used today, one left.
+- The old outside check of the first walk-in was cancelled unrun: the screen it would have judged
+  is being changed. `briefs/check-walkin.md` must be rewritten for round 2 before it is used.
+- Still to do after build A: build B (doors + upright hall; needs the doors picture), outside
+  check, stills looked at by a helper, screenshots to the owner, then wait for his verdict.
+- Font files may be downloaded only after the owner's yes.
