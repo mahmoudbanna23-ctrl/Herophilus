@@ -27,7 +27,7 @@ Mapping to the app's 21 sections (Claude's reading, section names as in app/data
 - Diabetes and endocrinology = Diabetes & Endocrine
 - Neurology = Neurological Disorders
 
-NOT in the owner's list, placement still to be ruled by the owner (never guess): Accidents and poisoning; Mental Health.
+Not in the list, ruled by the owner 2026-10-11: Accidents and poisoning = Paper 1, right after Pediatric emergencies; Mental Health = Paper 2, right after Neurological Disorders (last).
 The app keeps its own section names unless the owner says to rename them.
 
 # Plan — Pediatrics duplicate sweep + model-exam rows (2026-10-11)
