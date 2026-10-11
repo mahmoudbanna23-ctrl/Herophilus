@@ -81,7 +81,7 @@ body.hall-on .ambient{display:none}
 
 /* ---------- the hall block ---------- */
 .hall{position:relative;width:100%;background:linear-gradient(var(--bg-2),var(--bg))}
-.hall-view{position:relative;width:100%}
+.hall-view{position:relative;width:100%;overflow:hidden}   /* the door layer is painting-sized and bleeds past the view */
 
 /* 0. the outside painting. Plain: a screen-tall block, door kept near the middle. */
 .wk-out{
@@ -255,6 +255,14 @@ body.hall-clep .clep .cl-body{visibility:hidden}
   position:absolute;inset:0;width:auto;aspect-ratio:auto;max-height:none;min-height:0;
   container:none;overflow:visible;background:none;
 }
+/* Where the pulled-back hall is shorter than the view, the strip above and below it is
+   the painting itself, blurred and darkened, never a flat colour. It lies under every
+   other layer, so it only shows once the outside painting is hidden (hall open). */
+.hall.walk .hall-view::before{
+  content:"";position:absolute;inset:-60px;pointer-events:none;
+  background:var(--hall-wide) center/cover no-repeat;
+  filter:blur(18px) brightness(1) saturate(1);
+}
 /* will-change only on the two moving layers, only while the section is pinned */
 .hall.walk.pinned .wk-out,.hall.walk.pinned .hall-stage{will-change:transform}
 .hall.walk.pinned .wk-clip{will-change:clip-path}
@@ -273,11 +281,18 @@ body.hall-clep .clep .cl-body{visibility:hidden}
 .wk-dbox{position:absolute}
 .wk-leaf{
   position:absolute;top:0;height:100%;width:calc(50% + .5px);display:block;
-  backface-visibility:hidden;filter:brightness(1) saturate(1) sepia(.24);
+  backface-visibility:hidden;filter:brightness(1.16) sepia(.55) saturate(1.55);
 }
+/* Light look only: the pale floor of the hall shows through the gap while the leaves
+   swing, so the gap is glazed with a warm dark interior that settles onto the threshold
+   as the leaves open. Transform only; it sits under the leaves. */
+.wk-shade{position:absolute;inset:0;transform-origin:50% 100%;pointer-events:none}
+:root[data-theme="light"] .wk-shade{background:linear-gradient(to top,rgba(52,30,10,.82),rgba(52,30,10,.52) 30%,rgba(52,30,10,.14) 64%,transparent 86%)}
 .wk-leaf.l{left:0;transform-origin:0 50%}
 .wk-leaf.r{right:0;transform-origin:100% 50%}
-:root[data-theme="light"] .wk-leaf{filter:brightness(1.25) saturate(1.05) sepia(.22)}
+/* daylight: the leaves are lifted, warmed and flattened so they sit in the sunlit stone
+   instead of lying on it as a dark slab */
+:root[data-theme="light"] .wk-leaf{filter:brightness(1.5) contrast(.76) sepia(.85) saturate(1.7)}
 .hall.walk.pinned .wk-leaf{will-change:transform}
 @media print{.wk-doors{display:none}}
 /* clear of the lip the rest of home laps over the hall */
@@ -311,7 +326,7 @@ body.hall-clep .clep .cl-body{visibility:hidden}
      narrow window never crops the outer alcoves away. */
   .hall-stage{--fw:calc(min(max(100cqw,66.667cqh),108cqw) + 28px)}
   .hall-frame,.hall-back{aspect-ratio:2/3}
-  .hall-back{background:var(--hall-tall) center/cover no-repeat}
+  .hall-back,.hall.walk .hall-view::before{background:var(--hall-tall) center/cover no-repeat}
   .wk-clip{aspect-ratio:2/3}
   /* the tall niches hang their lamp lower than the wide ones */
   .glow{background:radial-gradient(ellipse 60% 30% at 50% 27%,rgba(255,196,110,.30),rgba(255,160,70,.10) 55%,transparent 80%)}

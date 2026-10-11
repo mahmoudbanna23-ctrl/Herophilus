@@ -97,7 +97,11 @@
     });
     return libPromise;
   }
-  if(!reduced()) loadLibs();
+  if(!reduced()){
+    loadLibs();
+    /* the two bronze leaves are in the first paint of home, so they are fetched now */
+    ['door-l.png','door-r.png'].forEach(n=>{ const im=new Image(); im.src='assets/hall/'+n; });
+  }
 
   function decodePaintings(){
     const th=theme();
@@ -119,6 +123,46 @@
     });
   }
   const motionNow=()=>libState==='ok'&&decodedTheme===theme();
+
+  /* ---- the shut doors, from first paint -------------------------------- */
+  /* The two leaves are part of the hall's first markup, shut, so the doorway is never
+     seen empty. They exist only while motion may still start: reduced motion and a
+     failed library never get them, and the 3 s fallback takes them out again (a shut
+     door that cannot open is forbidden). */
+  const DOORS_HTML='<div class="wk-doors" aria-hidden="true"><div class="wk-dbox"><i class="wk-shade"></i>'+
+    '<img class="wk-leaf l" src="assets/hall/door-l.png" alt="">'+
+    '<img class="wk-leaf r" src="assets/hall/door-r.png" alt=""></div></div>';
+  function dropDoors(hall){
+    const d=hall&&hall.querySelector('.wk-doors');
+    if(d) d.remove();
+  }
+  /* Put the door box on the painted doorway. o = where the outside painting lies in
+     the view (px), Wo x Ho = its size. The one place the box is sized, for the plain
+     shape (before the walk starts) and the walk shape alike. */
+  function fitDoors(hall,ox,oy,Wo,Ho){
+    const doors=hall.querySelector('.wk-doors');
+    if(!doors) return;
+    const dbox=doors.firstElementChild;
+    doors.style.left=ox+'px'; doors.style.top=oy+'px';
+    doors.style.width=Wo+'px'; doors.style.height=Ho+'px';
+    /* a half-inset in from the doorway's edge (the hall's own clip is one full inset in,
+       so the doors always cover it), arch clipped round */
+    const Dm=DOOR.inset*Wo*.5, bw=DOOR.w*Wo-2*Dm, bh=DOOR.h*Ho-Dm, bry=(DOOR.arch-DOOR.t)*Ho-Dm;
+    dbox.style.left=(DOOR.l*Wo+Dm).toFixed(2)+'px'; dbox.style.top=(DOOR.t*Ho+Dm).toFixed(2)+'px';
+    dbox.style.width=bw.toFixed(2)+'px'; dbox.style.height=bh.toFixed(2)+'px';
+    dbox.style.perspective=(bw*2.4).toFixed(0)+'px';
+    dbox.style.clipPath='inset(0 round '+(bw/2).toFixed(2)+'px '+(bw/2).toFixed(2)+'px 0 0 / '+bry.toFixed(2)+'px '+bry.toFixed(2)+'px 0 0)';
+  }
+  /* Before the walk: the outside painting is a screen-tall block (background cover,
+     centred across, 56% down), and the leaves sit on its doorway there. */
+  function placePlain(hall){
+    if(hall.classList.contains('walk')) return;
+    const out=hall.querySelector('.wk-out');
+    const W=out.clientWidth, H=out.clientHeight;
+    if(!W||!H) return;
+    const k=Math.max(W/PAINT_W,H/PAINT_H), Wo=PAINT_W*k, Ho=PAINT_H*k;
+    fitDoors(hall,(W-Wo)*.5,(H-Ho)*.56,Wo,Ho);
+  }
 
   /* ---- wraps ---------------------------------------------------------- */
   const _syncFilm=syncFilm;
@@ -234,6 +278,7 @@
     const hall=document.createElement('section');
     hall.className='hall';
     hall.setAttribute('aria-label','Subjects');
+    const doorsOn=!reduced()&&libState!=='fail';
     hall.innerHTML=
       `<div class="hall-view">
          <div class="wk-out" aria-hidden="true"></div>
@@ -246,6 +291,7 @@
            <div class="hall-fore" aria-hidden="true"></div>
            <div class="hall-greet"></div>
          </div></div></div>
+         ${doorsOn?DOORS_HTML:''}
        </div>`;
 
     /* The welcome line and the student's name: real text on the outside painting. */
@@ -267,6 +313,7 @@
     p.appendChild(hall);
     p.appendChild(below);
     sizeHall(hall);
+    placePlain(hall);
 
     const st={vis:false,gate:true,showClep};   // gate: the door has been passed
     const syncClep=()=>{
@@ -301,7 +348,7 @@
       const token=++buildToken;
       const go_=()=>{ if(token===buildToken&&hall.isConnected) startWalk(hall,below,st,returned,keepY) };
       if(motionNow()) go_();
-      else motionReady().then(ok=>{ if(ok) go_() });
+      else motionReady().then(ok=>{ if(ok) go_(); else dropDoors(hall) });
     }
   }
 
@@ -311,7 +358,7 @@
   }
   addEventListener('resize',()=>{
     const hall=document.querySelector('.hall');
-    if(hall) sizeHall(hall);
+    if(hall){ sizeHall(hall); placePlain(hall) }
   });
 
   /* ---- the walk-in ---------------------------------------------------- */
@@ -325,7 +372,7 @@
 
   function startWalk(hall,below,st,landed,y0){
     const g=window.gsap, ST=window.ScrollTrigger;
-    if(!g||!ST||walk) return;
+    if(!g||!ST||walk){ dropDoors(hall); return }
     g.registerPlugin(ST);
     const hasDraw=!!window.DrawSVGPlugin;
     if(hasDraw) g.registerPlugin(window.DrawSVGPlugin);
@@ -338,15 +385,13 @@
     const stage=hall.querySelector('.hall-stage');
     /* The bronze doors: two leaves in a box that sits exactly on the painted doorway,
        on top of the hall (which is already behind it). The layer is placed and scaled
-       like the outside painting, so it grows with it. Built here, never in the plain
-       version: no library, 3 s clock or reduced motion = no leaves, doors open. */
-    const doors=document.createElement('div');
-    doors.className='wk-doors';
-    doors.setAttribute('aria-hidden','true');
-    doors.innerHTML='<div class="wk-dbox"><img class="wk-leaf l" src="assets/hall/door-l.png" alt="">'+
-      '<img class="wk-leaf r" src="assets/hall/door-r.png" alt=""></div>';
-    view_.appendChild(doors);
-    const dbox=doors.firstChild, leafL=dbox.children[0], leafR=dbox.children[1];
+       like the outside painting, so it grows with it. buildHall put it in the first
+       markup (shut); the walk takes it over. No library, 3 s clock or reduced motion =
+       no leaves (dropDoors), doors open. */
+    if(!view_.querySelector('.wk-doors')) view_.insertAdjacentHTML('beforeend',DOORS_HTML);
+    const doors=view_.querySelector('.wk-doors');
+    const dbox=doors.firstElementChild, shade=dbox.querySelector('.wk-shade');
+    const leafL=dbox.querySelector('.wk-leaf.l'), leafR=dbox.querySelector('.wk-leaf.r');
     const plaques=Array.from(hall.querySelectorAll('.plaque'));
     const rings=Array.from(hall.querySelectorAll('.plaque .ring svg circle:nth-of-type(2)'));
 
@@ -403,13 +448,7 @@
       g.set([out,doors],{transformOrigin:(Px-ox)+'px '+(Py-oy)+'px'});
       /* the door box: the painted doorway, a half-inset in from its edge (the hall's own
          clip is one full inset in, so the doors always cover it), arch clipped round */
-      doors.style.left=out.style.left; doors.style.top=out.style.top;
-      doors.style.width=Wo+'px'; doors.style.height=Ho+'px';
-      const Dm=DOOR.inset*Wo*.5, bw=DOOR.w*Wo-2*Dm, bh=DOOR.h*Ho-Dm, bry=(DOOR.arch-DOOR.t)*Ho-Dm;
-      dbox.style.left=(DOOR.l*Wo+Dm).toFixed(2)+'px'; dbox.style.top=(DOOR.t*Ho+Dm).toFixed(2)+'px';
-      dbox.style.width=bw.toFixed(2)+'px'; dbox.style.height=bh.toFixed(2)+'px';
-      dbox.style.perspective=(bw*2.4).toFixed(0)+'px';
-      dbox.style.clipPath='inset(0 round '+(bw/2).toFixed(2)+'px '+(bw/2).toFixed(2)+'px 0 0 / '+bry.toFixed(2)+'px '+bry.toFixed(2)+'px 0 0)';
+      fitDoors(hall,ox,oy,Wo,Ho);
       g.set(stage,{transformOrigin:Px+'px '+Py+'px'});
     }
 
@@ -430,6 +469,7 @@
       if(vis){
         leafL.style.transform='rotateY('+ang.toFixed(2)+'deg)';
         leafR.style.transform='rotateY('+(-ang).toFixed(2)+'deg)';
+        shade.style.transform='scaleY('+(1-DR.a).toFixed(3)+')';   /* the interior glaze shrinks to the threshold as the leaves open */
       }
       const u=Math.pow(P.p,1.5);
       const so=Math.pow(G.S,u);
