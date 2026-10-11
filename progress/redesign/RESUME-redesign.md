@@ -550,3 +550,42 @@ Commits since, pushed: `b55fce7b` doors · `0b05d70d` doors fix.
   `tokens.css`), the `.ambient` film pictures behind pages, the sepia Herophilus portrait.
 - Still open from the outside check: the three walk-in behaviour faults in `hall.js`, the band above
   the hall at 1180x820, light-look door toning. Button pick still open.
+
+## 2026-10-12 BLOCK — SLIM FLOATING STRIP BUILT; OUTSIDE CHECK RUNNING.
+
+- **Owner ruling:** "The left tool bar and the search bar above are so out of place" -> he picked the
+  **slim floating strip**. Approved plan: `C:\Users\Alfa388\.claude\plans\gentle-hugging-wolf.md`.
+- **Landed, all in `app/css/warm.css`** (no base file edited, nothing in `hall.css` / `hall.js`):
+  - `a703d87e` FIX PASS 4: dark wrong-answer surfaces red not gold; `.ambient .film` cooled.
+  - Strip commit `3cf0a542`: `/* STRIP — slim floating rail */` and `/* STRIP B — floating top
+    buttons and search */`. Rail = 52px chip column, 238px on hover / `:has(:focus-visible)` /
+    class `open`; `#nav` keeps a fixed 52px box (mascot placement reads it). Top bar zero height,
+    round `--fab` buttons, search collapses to a circle and grows leftward on focus.
+  - **New stacking rungs: open strip 160, touch menu button 170** (between mascot 150 and gate 200).
+  - Tokens: `--chip`, `--strip-w`, `--rail-open`, `--fab`, `--strip-clear`, `--page-pl`, `--sw`.
+  - Dark wrong-row fill raised: `rgba(255,28,40,.32/.24)` over `--card`; text 11.38, chip 4.93.
+- **Measured:** 0 errors, 4 cards, 3 sizes x 2 looks; `#nav` rect (0,52,52) thin and open; button
+  gaps 8/8/8; `warm.css` 170 parsed rules, brace depth back to 0; result tags 6.16-10.43 from pixels.
+- **Not caused by the strip (same with the blocks removed):** 820x1180 hall walk class `live open`;
+  820x1180 print `.page` padding `16px 14px`; theory tables paginate across sheet pages (rows are on
+  the next page, not lost).
+- **Cost to know:** centring the theory sheet made it 562x794 at 820x1180 (was 616x871).
+- **`max-aspect-ratio:5/4` count is now 4** (3 in `views.css`, 1 at `warm.css:75`, pre-existing).
+- **Cannot be fixed from override CSS:** keyboard focus drops after navigation (`renderNav` rebuilds
+  the buttons); Esc closes search results but not the open field; tabbing out of search leaves the
+  results list open until a click elsewhere.
+- **Stills:** `r5-*` (red/film), `r6a-*` (strip, top bar not yet moved: stale), `r6b-*` (buttons),
+  `r6c-*` (after fix pass; `strip-open` = widened strip). Harness `D:\scratch 2026\redesign\dark6\`.
+- **Outside check:** `D:\scratch 2026\redesign\check3\` (`task.md`, `run-check.sh`, `check-report.txt`).
+- **Still open, owner's call:** the mascot's speech bubble covers row ends, "Read the notes" and
+  explanation text (outside the footprint); keep her bubble blue-black or revert `.clep{--cl-panel}`.
+- **Still open, ours:** three walk-in faults in `hall.js` + 1180x820 band; light-look door toning;
+  button pick; phones and 1024x1366 not shot.
+- **Outside check (Codex, read-only) = FAIL, then fixed** (`check3\check-report.txt`). Fixed in the
+  follow-up commit: thin strip without `:has()` (thin rules exist once per hover x `:has()` case, so
+  `warm.css` parses to 237 rules); hover widening only under `(hover:hover)`; `#railTerm` clipped
+  not `display:none`; thin chips are circles (nav, profile), streak and sync are pills. Stills `r6d-*`.
+  Judged NOT faults: touch button z 170 sits inside the top bar's z 20 layer (the strip starts
+  below it under a coarse pointer, so they never overlap); coarse strip is 56px by design; the
+  bare-`:root` dark token block predates this work; open strip covers page text by design.
+  Not re-checked by an outside house after the fix; sync chip never seen in a still (signed out).
