@@ -355,7 +355,7 @@ function checkState(st, U, opt) {
           if (wk && wk !== m) { // a removed id's answer won: conf must be one of the removed ids' confs
             ok = others.map(k => U.conf[k]).some(x => x === got1);
             if (others.length === 1) ok = ok && got1 === U.conf[others[0]];
-            if (isMulti && got1 !== U.conf[wk]) { R.confNotWinner++; if (!R.confExample) R.confExample = m + ' (answer won by ' + wk + ' conf ' + U.conf[wk] + ', got ' + got1 + ')'; }
+            if (isMulti && got1 !== U.conf[wk]) { ok = false; R.confNotWinner++; if (!R.confExample) R.confExample = m + ' (answer won by ' + wk + ' conf ' + U.conf[wk] + ', got ' + got1 + ')'; }
           } else if (keys.includes(m) && U.conf[m] !== undefined) ok = got1 === U.conf[m];
         }
       }
@@ -449,7 +449,7 @@ for (const sc of toRun) {
   const R = (ev.views.find(v => v.R) || {}).R;
   if (R && Object.keys(R.tally).length) say('    outcomes in first view: ' + Object.keys(R.tally).sort().map(k => k + ' ' + R.tally[k]).join(', '));
   const cw = ev.views.find(v => v.R && v.R.confNotWinner);
-  if (cw) say('    note (observation, not a fail by itself): in ' + cw.R.confNotWinner + ' groups where 2 removed ids fold into one kept id, conf is not the conf of the winning answer, e.g. ' + cw.R.confExample + ' (storage.js:395 overwrites on every removed id once deadWon is set)');
+  if (cw) say('    FAIL-NOTE (counted as a rule miss in the conf section): in ' + cw.R.confNotWinner + ' groups where 2 removed ids fold into one kept id, conf is not the conf of the winning answer, e.g. ' + cw.R.confExample + ' (storage.js:395 overwrites on every removed id once deadWon is set)');
   results[sc.id] = ev.bad ? 'FAIL' : 'PASS'; if (ev.bad) hardFail = true;
 }
 say('--- negative controls: same input, FOLDED emptied in the scratch copy; each MUST fail ---');

@@ -382,7 +382,7 @@ function foldState(s){
   const deadWon={};
   if(s.answers)dead(s.answers).forEach(d=>{
     const k=mapId(d),a=s.answers[d],b=s.answers[k];
-    if(!b||at(a)>at(b)){s.answers[k]=a;deadWon[k]=true}
+    if(!b||at(a)>at(b)){s.answers[k]=a;deadWon[k]=d}
     delete s.answers[d];
   });
   if(s.flags)dead(s.flags).forEach(d=>{
@@ -392,7 +392,7 @@ function foldState(s){
   });
   if(s.conf)dead(s.conf).forEach(d=>{
     const k=mapId(d);
-    if(s.conf[k]===undefined||deadWon[k])s.conf[k]=s.conf[d];
+    if(s.conf[k]===undefined||deadWon[k]===d)s.conf[k]=s.conf[d];
     delete s.conf[d];
   });
   if(s.srs)dead(s.srs).forEach(d=>{

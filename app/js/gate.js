@@ -199,7 +199,9 @@ async function syncRoster(p,remove=false){
   }catch(e){if(auth===cloudAuth)setSync('err')}
   finally{live=false}
 }
-function mergeStates(a,b){
+/* `raw` skips the fold: a caller that merges more than once keeps removed ids
+   distinct until the last step, so foldState alone settles a removed-vs-kept clash. */
+function mergeStates(a,b,raw){
   const at=a.updatedAt||0, bt=b.updatedAt||0;
   const newer=at>=bt?a:b, older=at>=bt?b:a;
   const out=JSON.parse(JSON.stringify(newer));
@@ -253,7 +255,7 @@ function mergeStates(a,b){
     (JSON.stringify(x)>=JSON.stringify(y)?x:y);
   out.updatedAt=Math.max(at,bt);
   /* An un-updated device must not push a dead duplicate id back into the cloud. */
-  return foldState(out);
+  return raw?out:foldState(out);
 }
 async function pullCloud(){
   const ref=docRef();
@@ -287,11 +289,11 @@ async function pushCloud(c=cloudSession){
       if(!live||!currentCloud(c))return null;
       const data=roster.exists?roster.data():{};
       let out=local;
-      if(snap.exists&&snap.data().state)out=mergeStates(out,JSON.parse(snap.data().state));
+      if(snap.exists&&snap.data().state)out=mergeStates(out,JSON.parse(snap.data().state),true);
       /* Removing the old field and adopting its contents in the same commit
          makes retries and simultaneous first sign-ins adopt it only once. */
-      if(Object.prototype.hasOwnProperty.call(data,'state'))out=mergeStates(out,JSON.parse(data.state));
-      tx.set(c.ref,{state:JSON.stringify(out),updatedAt:Date.now()});
+      if(Object.prototype.hasOwnProperty.call(data,'state'))out=mergeStates(out,JSON.parse(data.state),true);
+      tx.set(c.ref,{state:JSON.stringify(foldState(JSON.parse(JSON.stringify(out)))),updatedAt:Date.now()});
       const list=rosterList(data);
       if(!list.some(p=>p.id===entry.id))list.push(entry);
       tx.set(root,{profiles:list});

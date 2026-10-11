@@ -202,7 +202,7 @@ function exportData(){
 }
 /* Known fields are checked where their readers need a particular shape. Extra
    JSON fields are retained, so adding a runtime field does not make exports lossy. */
-function checkedProgressState(st){
+function checkedProgressState(st,keepDead){
   const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
   const obj=v=>v!==null&&typeof v==='object'&&!Array.isArray(v);
   const num=v=>typeof v==='number'&&Number.isFinite(v)&&v>=0;
@@ -268,7 +268,7 @@ function checkedProgressState(st){
     sessLog:log,mockResume:validMockResume};
   Object.keys(extra).forEach(k=>{if(!optional(out,k,extra[k]))bad(k)});
   /* Progress saved on a removed duplicate moves to the copy kept. */
-  return foldState(out);
+  return keepDead?out:foldState(out);
 }
 function importData(e){
   const f=e.target.files[0];if(!f)return;
@@ -277,10 +277,12 @@ function importData(e){
   r.onload=async()=>{
     if(entry!==profileLoad||key!==KEY||profile!==me)return;
     let incoming;
+    /* The file keeps its removed ids until the merge, so foldState settles any clash
+       with local progress on the kept copy; the final checkedProgressState folds. */
     try{
       const d=JSON.parse(r.result);
       if(!d||d.v!==2)throw new Error('Expected a version 2 progress export');
-      incoming=checkedProgressState(d.state);
+      incoming=checkedProgressState(d.state,true);
     }catch(err){toast('Could not import that file. '+err.message);return}
     if(!window.confirm('Merge this file into the current profile? Existing progress is kept where possible; more recent entries and settings win conflicts, including the saved mock paper.'))return;
     if(entry!==profileLoad||key!==KEY||profile!==me)return;
@@ -288,7 +290,7 @@ function importData(e){
     try{
       const newer=(S.updatedAt||0)>=(incoming.updatedAt||0)?S:incoming;
       const older=newer===S?incoming:S;
-      next=checkedProgressState(Object.assign({},older,newer,mergeStates(S,incoming)));
+      next=checkedProgressState(Object.assign({},older,newer,mergeStates(S,incoming,true)));
     }catch(err){toast('Could not merge that progress. '+err.message);return}
     S=next;
     /* A running paper must reopen from the merged record, or its next tap would
