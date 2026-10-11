@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Real buttons 2</title>
+<style>
+/* Sheet furniture only. Every sample below is UIverse (github.com/uiverse-io/galaxy, MIT, Copyright (c) 2023 Uiverse.io),
+   CSS copied as the author wrote it; the only edits are: selectors scoped under .sNN, hover rules duplicated onto .is-hover,
+   xmlns attributes and one external href removed. No recolouring. */
+:root{
+  --font-display:'Cinzel','Trajan Pro','Palatino Linotype','Book Antiqua',Georgia,serif;
+  --font-body:'EB Garamond','Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:#141414;color:#d8d8d8;font-family:var(--font-body);font-size:16.5px;line-height:1.5;padding:28px 28px 44px}
+h1{margin:0 0 6px;font:500 22px/1.3 var(--font-body);color:#ececec}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:1200px}
+h2{grid-column:1/-1;margin:18px 0 0;font:600 15px/1 var(--font-display);letter-spacing:.18em;text-transform:uppercase;color:#a8a8a8}
+.card{background:#1f1f1f;border:1px solid #333;border-radius:6px;padding:16px 18px 14px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.num{font:700 52px/1 var(--font-display);color:#ececec}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.f{margin:0;min-width:0}
+.cell{position:relative;isolation:isolate;background:#2b2b2b;border-radius:4px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.f figcaption{margin-top:4px;font-size:12px;color:#9a9a9a;text-align:center}
+.by{margin:0;font-size:13px;line-height:1.4;color:#b4b4b4}
+
+/* ---- 13 0x-Sarthak ---- */
+.s13 .cta{position:relative;margin:auto;padding:11.5px 18px;transition:all .2s ease;border:3px solid #552da8;border-radius:50px;background:#552da8;cursor:pointer}
+.s13 .cta:before{content:"";position:absolute;top:0;right:0;display:block;border-radius:50px;background:white;width:45px;height:45px;transition:all .8s ease}
+.s13 .cta span{position:relative;font-family:Montserrat;font-size:18px;color:white;font-weight:400;letter-spacing:.05em}
+.s13 .cta svg{position:relative;top:0;margin-left:10px;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:white;stroke-width:2;transform:translateX(-5px);transition:all .5s ease}
+.s13 .cta:hover:before,.s13 .cta.is-hover:before{width:100%;background:#1c1c1c}
+.s13 .cta:hover svg,.s13 .cta.is-hover svg{transform:translateX(0);transition:all 2s ease}
+.s13 .cta:active{transform:scale(.95);transition:all 2s ease}
+
+/* ---- 14 AKAspidey01 ---- */
+.s14 .button{display:flex;align-items:center;gap:10px;padding:12px 15px;border-radius:10px;border:none;overflow:hidden;background:rgb(164,46,194);color:#fff}
+.s14 .button-text{transform:translateX(15px);font-size:1.5em;font-weight:700;transition-duration:.3s}
+.s14 .iconer{transform:translateY(35px);transition-duration:.3s}
+.s14 .button:hover .button-text,.s14 .button.is-hover .button-text{transform:translateX(0)}
+.s14 .button:hover .iconer,.s14 .button.is-hover .iconer{transform:translateY(0)}
+
+/* ---- 15 2Fl00rian6 ---- */
+.s15 button{background-color:rgb(20,87,244);border:1px solid rgb(20,87,244);padding:12px 20px;border-radius:7px;transition:.3s;color:#fff}
+.s15 button:hover,.s15 button.is-hover{border:1px solid rgb(20,87,244);background-color:transparent;color:rgb(20,87,244)}
+.s15 button:focus{box-shadow:0px 0px 0px 5px rgba(20,87,244,.37),0px 0px 0px 10px rgba(20,87,244,.38);outline:none}
+
+/* ---- 16 AhSiber ---- */
+.s16 button{border:1px solid seagreen;border-radius:5px;background:rgb(255,255,255);color:seagreen;font-style:italic;padding:10px;padding-right:14px;padding-left:12px;font-size:17px}
+.s16 button:hover,.s16 button.is-hover{background-color:seagreen;color:white;border:1px solid seagreen}
+
+/* ---- 17 gharsh11032000 (search) ---- */
+.s17 .button{position:relative;border:none;background-color:white;color:#212121;padding:20px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:600;gap:10px;border-radius:10px;transition:all .6s cubic-bezier(.23,1,.320,1);box-shadow:0 10px 20px rgba(0,0,0,.2);cursor:pointer;overflow:hidden}
+.s17 .button span{position:relative;display:flex;align-items:center;justify-content:center;z-index:1}
+.s17 .button::before{content:"";position:absolute;background-color:palevioletred;width:100%;height:100%;left:0%;bottom:0%;transform:translate(-100%,100%);border-radius:inherit}
+.s17 .button svg{fill:palevioletred;transition:all .6s cubic-bezier(.23,1,.320,1)}
+.s17 .button:hover::before,.s17 .button.is-hover::before{animation:shakeBack .6s forwards}
+.s17 .button:hover svg,.s17 .button.is-hover svg{fill:white;scale:1.3}
+.s17 .button:active{box-shadow:none}
+@keyframes shakeBack{0%{transform:translate(-100%,100%)}50%{transform:translate(20%,-20%)}100%{transform:translate(0%,0%)}}
+
+/* ---- 18 pradipkaityuiux ---- */
+.s18 .button{background-color:#000fdb;border:none;padding:20px 48px;color:#fff;cursor:pointer;border-radius:40px;position:relative;z-index:10;overflow:hidden}
+.s18 .button span{font-size:24px;font-weight:bold}
+.s18 .button::before,.s18 .button::after{content:"";position:absolute;width:100px;height:100px;border-radius:50px;z-index:-1;background-color:#535fff;transition:all .3s .3s cubic-bezier(.215,.610,.355,1)}
+.s18 .button::after{right:-30px;transform:translateX(30px) translateY(-110px) rotate(30deg)}
+.s18 .button::before{left:-20px;transform:translateX(-10px) translateY(50px) rotate(30deg)}
+.s18 .button:hover::before,.s18 .button.is-hover::before{transform:rotate(30deg) translateY(10px) translateX(-15px)}
+.s18 .button:hover::after,.s18 .button.is-hover::after{transform:rotate(30deg) translateY(-70px) translateX(-30px)}
+.s18 .button:hover,.s18 .button.is-hover{animation:wobel .3s ease-in-out}
+@keyframes wobel{0%{transform:scale(1)}20%{transform:scale(1.1)}60%{transform:scale(1.05)}80%{transform:scale(.85)}100%{transform:scale(1)}}
+
+/* ---- 19 ossoboy ---- */
+.s19 button{background-color:rgb(82,163,255);color:transparent;border:0 none;padding:15px 30px;text-decoration:none;display:inline-block;transition:background-color 300ms ease,color 300ms ease;font-size:17px;position:relative;text-align:center;cursor:pointer}
+.s19 button::before,.s19 button::after{content:attr(data-label);display:inline-block;position:absolute;transition:all 300ms ease;width:100%;left:0;top:50%;color:white}
+.s19 button::before{opacity:0;transform:translateY(calc(-50% - 15px))}
+.s19 button::after{opacity:1;transform:translateY(-50%)}
+.s19 button:hover,.s19 button.is-hover{background-color:rgb(66,133,209)}
+.s19 button:hover::before,.s19 button.is-hover::before{opacity:1;transform:translateY(-50%)}
+.s19 button:hover::after,.s19 button.is-hover::after{opacity:0;transform:translateY(calc(-50% + 15px))}
+.s19 button:active{background-color:rgb(82,163,255)}
+
+/* ---- 20 nima-mollazadeh ---- */
+.s20 .btn-1,.s20 .btn-1 *,.s20 .btn-1 :after,.s20 .btn-1 :before,.s20 .btn-1:after,.s20 .btn-1:before{border:none;box-sizing:border-box}
+.s20 .btn-1{scale:.8;-webkit-tap-highlight-color:transparent;background-color:#000;background-image:none;color:#fff;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;cursor:pointer;font-size:100%;line-height:1.5;margin:0;padding:2}
+.s20 .btn-1:disabled{cursor:default}
+.s20 .btn-1:-moz-focusring{outline:auto}
+.s20 .btn-1 svg{display:block;vertical-align:middle}
+.s20 .btn-1 [hidden]{display:none}
+.s20 .btn-1{border:1px solid;border-radius:999px;box-sizing:border-box;display:block;font-weight:900;overflow:hidden;padding:1.2rem 3rem;position:relative;text-transform:uppercase}
+.s20 .btn-1 .original{background:#ffffff;color:#000;display:grid;inset:0;place-content:center;position:absolute;transition:transform .3s cubic-bezier(.87,0,.13,1)}
+.s20 .btn-1:hover .original,.s20 .btn-1.is-hover .original{transform:translateY(100%)}
+.s20 .btn-1 .letters{display:inline-flex}
+.s20 .btn-1 span{opacity:0;transform:translateY(-15px);transition:transform .3s cubic-bezier(.87,0,.13,1),opacity .3s}
+.s20 .btn-1 span:nth-child(2n){transform:translateY(15px)}
+.s20 .btn-1:hover span,.s20 .btn-1.is-hover span{opacity:1;transform:translateY(0)}
+.s20 .btn-1:hover span:nth-child(2),.s20 .btn-1.is-hover span:nth-child(2){transition-delay:.1s}
+.s20 .btn-1:hover span:nth-child(3),.s20 .btn-1.is-hover span:nth-child(3){transition-delay:.2s}
+.s20 .btn-1:hover span:nth-child(4),.s20 .btn-1.is-hover span:nth-child(4){transition-delay:.3s}
+.s20 .btn-1:hover span:nth-child(5),.s20 .btn-1.is-hover span:nth-child(5){transition-delay:.4s}
+.s20 .btn-1:hover span:nth-child(6),.s20 .btn-1.is-hover span:nth-child(6){transition-delay:.5s}
+
+/* ---- 21 satyamchaudharydev (Back to top) ---- */
+.s21 button{width:140px;height:56px;overflow:hidden;border:none;color:#fff;background:none;position:relative;padding-bottom:2em}
+.s21 button > div,.s21 button > svg{position:absolute;width:100%;height:100%;display:flex}
+.s21 button:before{content:"";position:absolute;height:2px;bottom:0;left:0;width:100%;transform:scaleX(0);transform-origin:bottom right;background:currentColor;transition:transform .25s ease-out}
+.s21 button:hover:before,.s21 button.is-hover:before{transform:scaleX(1);transform-origin:bottom left}
+.s21 button .clone > *,.s21 button .text > *{opacity:1;font-size:1.3rem;transition:.2s;margin-left:4px}
+.s21 button .clone > *{transform:translateY(60px)}
+.s21 button:hover .clone > *,.s21 button.is-hover .clone > *{opacity:1;transform:translateY(0px);transition:all .2s cubic-bezier(.215,.61,.355,1) 0s}
+.s21 button:hover .text > *,.s21 button.is-hover .text > *{opacity:1;transform:translateY(-60px);transition:all .2s cubic-bezier(.215,.61,.355,1) 0s}
+.s21 button:hover .clone > :nth-child(1),.s21 button.is-hover .clone > :nth-child(1){transition-delay:.15s}
+.s21 button:hover .clone > :nth-child(2),.s21 button.is-hover .clone > :nth-child(2){transition-delay:.2s}
+.s21 button:hover .clone > :nth-child(3),.s21 button.is-hover .clone > :nth-child(3){transition-delay:.25s}
+.s21 button:hover .clone > :nth-child(4),.s21 button.is-hover .clone > :nth-child(4){transition-delay:.3s}
+.s21 button svg{width:20px;right:0;top:50%;transform:translateY(-50%) rotate(-50deg);transition:.2s ease-out}
+.s21 button:hover svg,.s21 button.is-hover svg{transform:translateY(-50%) rotate(-90deg)}
+
+/* ---- 22 satyamchaudharydev (Download) ---- */
+.s22 .button{--width:100px;--height:35px;--tooltip-height:35px;--tooltip-width:90px;--gap-between-tooltip-to-button:18px;--button-color:#1163ff;--tooltip-color:#fff;width:var(--width);height:var(--height);background:var(--button-color);position:relative;text-align:center;border-radius:.45em;font-family:"Arial";transition:background .3s}
+.s22 .button::before{position:absolute;content:attr(data-tooltip);width:var(--tooltip-width);height:var(--tooltip-height);background-color:var(--tooltip-color);font-size:.9rem;color:#111;border-radius:.25em;line-height:var(--tooltip-height);bottom:calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);left:calc(50% - var(--tooltip-width) / 2)}
+.s22 .button::after{position:absolute;content:'';width:0;height:0;border:10px solid transparent;border-top-color:var(--tooltip-color);left:calc(50% - 10px);bottom:calc(100% + var(--gap-between-tooltip-to-button) - 10px)}
+.s22 .button::after,.s22 .button::before{opacity:0;visibility:hidden;transition:all .5s}
+.s22 .text{display:flex;align-items:center;justify-content:center}
+.s22 .button-wrapper,.s22 .text,.s22 .icon{overflow:hidden;position:absolute;width:100%;height:100%;left:0;color:#fff}
+.s22 .text{top:0}
+.s22 .text,.s22 .icon{transition:top .5s}
+.s22 .icon{color:#fff;top:100%;display:flex;align-items:center;justify-content:center}
+.s22 .icon svg{width:24px;height:24px}
+.s22 .button:hover,.s22 .button.is-hover{background:#6c18ff}
+.s22 .button:hover .text,.s22 .button.is-hover .text{top:-100%}
+.s22 .button:hover .icon,.s22 .button.is-hover .icon{top:0}
+.s22 .button:hover:before,.s22 .button:hover:after,.s22 .button.is-hover:before,.s22 .button.is-hover:after{opacity:1;visibility:visible}
+.s22 .button:hover:after,.s22 .button.is-hover:after{bottom:calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px)}
+.s22 .button:hover:before,.s22 .button.is-hover:before{bottom:calc(var(--height) + var(--gap-between-tooltip-to-button))}
+
+/* ---- 23 Ayzen-Dev ---- */
+.s23 .button{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+.s23 .button a{display:block;height:50px;width:200px;background:#00b7ea;color:white;font:17px/50px Helvetica,Verdana,sans-serif;text-decoration:none;text-align:center;text-transform:uppercase;-webkit-border-radius:10px;border-radius:10px;-webkit-box-shadow:2px 2px 8px rgba(0,0,0,.2);box-shadow:2px 2px 8px rgba(0,0,0,.2);background:-webkit-linear-gradient(top,#00b7ea 0%,#009ec3 100%)}
+.s23 b{background:#222;display:block;height:40px;width:180px;margin:-50px 0 0 10px;text-align:center;font:12px/45px Helvetica,Verdana,sans-serif;color:#fff;position:absolute;z-index:-1;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:2px 2px 8px rgba(0,0,0,.2);box-shadow:2px 2px 8px rgba(0,0,0,.2);-webkit-transition:all .5s ease;transition:all .5s ease}
+.s23 .button a,.s23 b{-webkit-border-radius:10px;border-radius:10px;-webkit-box-shadow:2px 2px 8px rgba(0,0,0,.2);box-shadow:2px 2px 8px rgba(0,0,0,.2)}
+.s23 .button:hover .top,.s23 .button.is-hover .top{margin:-80px 0 0 10px;line-height:35px}
+.s23 .button:hover .bottom,.s23 .button.is-hover .bottom{margin:-10px 0 0 10px}
+.s23 .button a:active{background:#00b7ea;background:-webkit-linear-gradient(top,#00b7ea 36%,#009ec3 100%)}
+.s23 .button:active .bottom{margin:-20px 0 0 10px}
+.s23 .button:active .top{margin:-70px 0 0 10px}
+
+/* ---- 24 vinodjangid07 (Premium, round) ---- */
+.s24 .Btn{width:45px;height:45px;border:none;border-radius:50%;background:linear-gradient(-50deg,rgb(39,107,255),rgb(112,186,255),rgb(39,107,255));background-size:250%;background-position:left;display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative;transition-duration:.5s;box-shadow:2px 2px 10px rgba(0,0,0,.11)}
+.s24 .logoIcon{fill:white}
+.s24 .tooltip{position:absolute;top:-20px;opacity:0;background:linear-gradient(to right,rgb(39,107,255),rgb(108,184,255));color:white;padding:5px 10px;border-radius:5px;display:flex;align-items:center;justify-content:center;transition-duration:.2s;pointer-events:none;letter-spacing:.5px}
+.s24 .tooltip::before{position:absolute;content:"";width:10px;height:10px;background:linear-gradient(45deg,rgb(39,107,255),rgb(108,184,255));background-size:1000%;background-position:center;transform:rotate(45deg);bottom:-15%;transition-duration:.3s}
+.s24 .Btn:hover .tooltip,.s24 .Btn.is-hover .tooltip{top:-50px;opacity:1;transition-duration:.3s}
+.s24 .Btn:hover,.s24 .Btn.is-hover{background-position:right;transition-duration:.5s}
+
+/* ---- 25 vinodjangid07 (Go premium, gold) ---- */
+.s25 .Btn{width:200px;height:40px;border:none;border-radius:40px;background:linear-gradient(to right,#bf953f,#fcf6ba,#b38728,#fbf5b7,#aa771c);display:flex;align-items:center;justify-content:center;gap:8px;font-size:.8em;color:rgb(121,103,3);font-weight:600;cursor:pointer;position:relative;z-index:2;transition-duration:3s;box-shadow:5px 5px 10px rgba(0,0,0,.144);background-size:200% 200%}
+.s25 .logoIcon path{fill:rgb(121,103,3)}
+.s25 .Btn:hover,.s25 .Btn.is-hover{transform:scale(.95);transition-duration:3s;animation:gradient 5s ease infinite;background-position:right}
+
+/* ---- 26 vinodjangid07 (Notifications) ---- */
+.s26 .button{width:140px;height:40px;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(to left,rgb(173,154,255),rgb(149,110,255));border-radius:30px;color:rgb(255,255,255);font-weight:600;border:none;position:relative;cursor:pointer;transition-duration:.2s;box-shadow:5px 5px 10px rgba(0,0,0,.116)}
+.s26 .bell{width:13px}
+.s26 .bell path{fill:rgb(255,255,255)}
+.s26 .button:hover,.s26 .button.is-hover{background:linear-gradient(to left,rgb(154,131,255),rgb(135,91,255))}
+.s26 .button:active{transform:scale(.97);transition-duration:.2s}
+.s26 .button:hover .bell,.s26 .button.is-hover .bell{animation:bellRing .9s both}
+@keyframes bellRing{0%,100%{transform-origin:top}15%{transform:rotateZ(10deg)}30%{transform:rotateZ(-10deg)}45%{transform:rotateZ(5deg)}60%{transform:rotateZ(-5deg)}75%{transform:rotateZ(2deg)}}
+
+/* ---- 27 vinodjangid07 (Explore, lime) ---- */
+.s27 .button{width:110px;height:40px;display:flex;align-items:center;justify-content:flex-start;gap:10px;background-color:rgb(161,255,20);border-radius:30px;color:rgb(19,19,19);font-weight:600;border:none;position:relative;cursor:pointer;transition-duration:.2s;box-shadow:5px 5px 10px rgba(0,0,0,.116);padding-left:8px;transition-duration:.5s}
+.s27 .svgIcon{height:25px;transition-duration:1.5s}
+.s27 .bell path{fill:rgb(19,19,19)}
+.s27 .button:hover,.s27 .button.is-hover{background-color:rgb(192,255,20);transition-duration:.5s}
+.s27 .button:active{transform:scale(.97);transition-duration:.2s}
+.s27 .button:hover .svgIcon,.s27 .button.is-hover .svgIcon{transform:rotate(250deg);transition-duration:1.5s}
+
+/* ---- 28 shadowmurphy ---- */
+.s28 .button *{cursor:pointer}
+.s28 .button{position:relative;width:160px;height:50px;background:none;border-radius:8px;outline:none;font-size:19px;font-family:"Montserrat",sans-serif;overflow:hidden;box-shadow:rgba(151,65,252,.2) 0 15px 30px -5px;text-decoration:none;border:none;display:flex;justify-content:center;align-items:center;transition:all .4s}
+.s28 .button::before{content:'';position:absolute;width:200%;height:100%;background-image:linear-gradient(to right,#AF40FF,#5B42F3,#006eeb,#42a0f3,#AF40FF);background-size:200% 100%;background-position:100% 0;animation:moveGradient 3s linear infinite;z-index:-1}
+.s28 .inner-circle{position:absolute;width:94%;height:84%;background-color:rgb(2,3,20);border-radius:6px;opacity:1;transition:opacity .2s}
+.s28 .text{z-index:3;color:white;cursor:pointer}
+@keyframes moveGradient{0%{background-position:100% 0}100%{background-position:-100% 0}}
+.s28 .button:active{transform:scale(.9)}
+
+/* ---- 29 mrhyddenn (glow circle) ---- */
+.s29 button{display:flex;align-items:center;justify-content:center;width:100px;position:relative;cursor:pointer;height:100px;border-radius:100px;border:none;background:#333;color:#e5e5e5;font-weight:600;box-shadow:inset 20px 20px 39px #080a10,inset -20px -20px 39px #1b263e;font-size:13px}
+.s29 button::after{content:'';position:absolute;z-index:-1;left:-10px;top:-10px;border-radius:50%;width:calc(100% + 20px);height:calc(100% + 20px);background:linear-gradient(35deg,rgb(47,190,238),rgb(218,57,143),rgb(139,255,23));filter:blur(10px)}
+.s29 button:hover::after,.s29 button.is-hover::after{animation:rotcirclegr 1s linear infinite}
+@keyframes rotcirclegr{to{transform:rotate(360deg)}}
+
+/* ---- 30 neerajbaniwal (shine text; has no hover effect) ---- */
+.s30 .btn-shine{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);padding:12px 48px;color:#fff;background:linear-gradient(to right,#9f9f9f 0,#fff 10%,#868686 20%);background-position:0;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s infinite linear;animation-fill-mode:forwards;-webkit-text-size-adjust:none;font-weight:600;font-size:16px;text-decoration:none;white-space:nowrap;font-family:"Poppins",sans-serif}
+@keyframes shine{0%{background-position:0}60%{background-position:180px}100%{background-position:180px}}
+
+/* ---- 31 ArturCodeCraft (link) ---- */
+.s31 a{text-decoration:none}
+.s31 .menu__link{color:#fff;line-height:2;position:relative}
+.s31 .menu__link::before{content:'';width:0;height:2px;border-radius:2px;background-color:#fff;position:absolute;bottom:-.25rem;left:50%;transition:width .4s,left .4s}
+.s31 .menu__link:hover::before,.s31 .menu__link.is-hover::before{width:100%;left:0}
+
+/* ---- 32 gharsh11032000 (Contact, corner draw) ---- */
+.s32 .button{position:relative;text-decoration:none;color:#e8e8e8;padding:15px 30px;width:170px;height:60px;font-weight:600;font-size:18px;cursor:pointer;border:none;overflow:hidden;background:linear-gradient(-45deg,#f89b29 0%,#ff0f7b 100%);transition:all .3s cubic-bezier(.215,.610,.355,1)}
+.s32 .button span,.s32 .button span::before{position:absolute;top:0%;left:0;width:100%;height:100%;display:flex;align-items:center;pointer-events:none;justify-content:center;transition:all .3s cubic-bezier(.215,.610,.355,1)}
+.s32 .button span::before{content:'Hello!';top:-100%}
+.s32 .button:before{top:0;left:0;border-top:2px solid #e8e8e8;border-left:2px solid #e8e8e8}
+.s32 .button:after{bottom:0;right:0;border-bottom:2px solid #e8e8e8;border-right:2px solid #e8e8e8}
+.s32 .button:after,.s32 .button:before{content:"";position:absolute;width:24px;height:24px;pointer-events:none;transition:all .3s cubic-bezier(.215,.610,.355,1)}
+.s32 .button:hover,.s32 .button.is-hover{box-shadow:0 0 30px rgba(248,155,41,.4),0 0 30px rgba(255,15,123,.4)}
+.s32 .button:hover:before,.s32 .button:hover:after,.s32 .button.is-hover:before,.s32 .button.is-hover:after{width:100%;height:100%}
+.s32 .button:hover span,.s32 .button.is-hover span{top:100%}
+.s32 .button:active{scale:.95;box-shadow:0 0 10px rgba(248,155,41,.4),0 0 10px rgba(255,15,123,.4)}
+
+/* ---- 33 Cevorob (crosshair) ---- */
+.s33 button{position:relative;height:50px;padding:0 30px;border:2px solid #000;background:#e8e8e8;user-select:none;white-space:nowrap;transition:all .05s linear;font-family:inherit}
+.s33 button:before,.s33 button:after{content:"";position:absolute;background:#e8e8e8;transition:all .2s linear}
+.s33 button:before{width:calc(100% + 6px);height:calc(100% - 16px);top:8px;left:-3px}
+.s33 button:after{width:calc(100% - 16px);height:calc(100% + 6px);top:-3px;left:8px}
+.s33 button:hover,.s33 button.is-hover{cursor:crosshair}
+.s33 button:active{transform:scale(.95)}
+.s33 button:hover:before,.s33 button.is-hover:before{height:calc(100% - 32px);top:16px}
+.s33 button:hover:after,.s33 button.is-hover:after{width:calc(100% - 32px);left:16px}
+.s33 button span{font-size:15px;z-index:3;position:relative;font-weight:600}
+
+/* ---- 34 gharsh11032000 (Vite) ---- */
+.s34 .button{border-radius:8px;border:1px solid transparent;padding:.6em 1.2em;font-size:1em;font-weight:500;font-family:inherit;background-color:#1a1a1a;cursor:pointer;color:white;transition:border-color .25s}
+.s34 .button:hover,.s34 .button.is-hover{border-color:#646cff}
+.s34 .button:focus,.s34 .button:focus-visible{outline:4px auto -webkit-focus-ring-color}
+
+/* ---- 35 sekaiking ---- */
+.s35 button{background-color:white;color:black;border-radius:10em;font-size:17px;font-weight:600;padding:1em 2em;cursor:pointer;transition:all .3s ease-in-out;border:1px solid black;box-shadow:0 0 0 0 black}
+.s35 button:hover,.s35 button.is-hover{transform:translateY(-4px) translateX(-2px);box-shadow:2px 5px 0 0 black};
+.s35 button:active{transform:translateY(2px) translateX(1px);box-shadow:0 0 0 0 black};
+
+/* ---- 36 Bodyhc (keycap; has no hover effect) ---- */
+.s36 .button{--key-text-color:#969faf;--docsearch-key-shadow:inset 0 -2px 0 0 #cdcde6,inset 0 0 1px 1px #fff,0 1px 2px 1px rgba(30,35,90,.4);--docsearch-key-gradient:linear-gradient(-225deg,#d5dbe4,#f8f8f8);background:var(--docsearch-key-gradient);border-radius:5px;box-shadow:var(--docsearch-key-shadow);color:var(--key-text-color);height:2.5em;text-align:center;padding:.6em;margin:0 .6em;display:inline-block;text-transform:uppercase;font-weight:bold;font-size:1em;min-width:1em;line-height:1em;user-select:none}
+
+/* ---- 37 vinodjangid07 (Upgrade to PRO) ---- */
+.s37 .Btn-container{width:fit-content;height:fit-content;border:none;background-color:#ebebeb;padding:10px;border-radius:10px;box-shadow:0px 2px 5px #e1e1e1;transition:.2s}
+.s37 .inner-wrapper{width:fit-content;height:100%;display:flex;align-items:center;justify-content:center;background-color:#f7f7f7;border-radius:5px;padding:8px 15px;box-shadow:0px 4px 10px #d3d3d3;gap:50px;transition:.2s}
+.s37 .text{display:flex;align-items:center;justify-content:center;gap:6px}
+.s37 .text p{font-size:1.2em;font-weight:600;color:rgb(140,140,140)}
+.s37 .text .pro{background-color:black;color:white;padding:4px 8px;border-radius:5px}
+.s37 .icon{width:40px;height:40px;background-color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;transform:rotate(45deg);transition:.2s}
+.s37 .icon svg{width:15px}
+.s37 .Btn-container:active{transform:scale(1)}
+.s37 .Btn-container:active .inner-wrapper{transform:scale(.97)}
+.s37 .Btn-container:hover .icon,.s37 .Btn-container.is-hover .icon{transform:rotate(0deg)}
+
+/* ---- 38 vinodjangid07 (let's go) ---- */
+.s38 .Btn-container{display:flex;width:170px;height:fit-content;background-color:#1d2129;border-radius:40px;box-shadow:0px 5px 10px #bebebe;justify-content:space-between;align-items:center;border:none;cursor:pointer}
+.s38 .icon-Container{width:45px;height:45px;background-color:#f59aff;display:flex;align-items:center;justify-content:center;border-radius:50%;border:3px solid #1d2129}
+.s38 .text{width:calc(170px - 45px);height:100%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.1em;letter-spacing:1.2px}
+.s38 .icon-Container svg{transition-duration:1.5s}
+.s38 .Btn-container:hover .icon-Container svg,.s38 .Btn-container.is-hover .icon-Container svg{transition-duration:1.5s;animation:arrow 1s linear infinite}
+@keyframes arrow{0%{opacity:0;margin-left:0px}100%{opacity:1;margin-left:10px}}
+
+/* ---- 39 vinodjangid07 (Rewards) ---- */
+.s39 .reward-btn{width:120px;height:40px;background-color:#101218;display:flex;align-items:center;justify-content:center;border:none;border-radius:8px;cursor:pointer;transition:all .3s}
+.s39 .IconContainer{width:40px;height:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+.s39 .IconContainer svg{width:40%;z-index:3}
+.s39 .box-top{transition:all .3s}
+.s39 .text{width:70px;height:100%;font-size:13px;color:#6a8ef6;display:flex;align-items:center;justify-content:flex-start;font-weight:600}
+.s39 .reward-btn:hover .IconContainer .box-top,.s39 .reward-btn.is-hover .IconContainer .box-top{transform:translateY(-5px)}
+.s39 .reward-btn:hover,.s39 .reward-btn.is-hover{background-color:#202531}
+.s39 .reward-btn:hover .coin,.s39 .reward-btn.is-hover .coin{transform:translateY(-5px);transition-delay:.2s}
+.s39 .coin{width:25%;height:25%;background-color:#e4d61a;position:absolute;border-radius:50%;transition:all .3s;z-index:1;border:2px solid #ffe956;margin-top:4px}
+</style>
+</head>
+<body>
+<h1>Real library buttons, untouched. Each shows resting and hovered. Tell me a number.</h1>
+<main class="grid">
+
+<h2>Fill</h2>
+
+<div class="card s13"><div class="num">13</div><div class="pair">
+<figure class="f"><div class="cell"><button class="cta"><span>Contact Us &nbsp;</span><svg viewBox="0 0 13 10" height="10px" width="15px"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="cta is-hover"><span>Contact Us &nbsp;</span><svg viewBox="0 0 13 10" height="10px" width="15px"><path d="M1,5 L11,5"></path><polyline points="8 1 12 5 8 9"></polyline></svg></button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">0x-Sarthak &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s14"><div class="num">14</div><div class="pair">
+<figure class="f"><div class="cell"><button class="button"><p class="button-text">Read More</p> <p class="iconer"><svg height="24" width="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg></p></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="button is-hover"><p class="button-text">Read More</p> <p class="iconer"><svg height="24" width="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg></p></button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">AKAspidey01 &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s15"><div class="num">15</div><div class="pair">
+<figure class="f"><div class="cell"><button>This is a button :)</button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="is-hover">This is a button :)</button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">2Fl00rian6 &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s16"><div class="num">16</div><div class="pair">
+<figure class="f"><div class="cell"><button> Button
+</button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="is-hover"> Button
+</button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">AhSiber &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s17"><div class="num">17</div><div class="pair">
+<figure class="f"><div class="cell"><button class="button"><span><svg viewBox="0 0 24 24" height="24" width="24"><path d="M9.145 18.29c-5.042 0-9.145-4.102-9.145-9.145s4.103-9.145 9.145-9.145 9.145 4.103 9.145 9.145-4.102 9.145-9.145 9.145zm0-15.167c-3.321 0-6.022 2.702-6.022 6.022s2.702 6.022 6.022 6.022 6.023-2.702 6.023-6.022-2.702-6.022-6.023-6.022zm9.263 12.443c-.817 1.176-1.852 2.188-3.046 2.981l5.452 5.453 3.014-3.013-5.42-5.421z"></path></svg></span></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="button is-hover"><span><svg viewBox="0 0 24 24" height="24" width="24"><path d="M9.145 18.29c-5.042 0-9.145-4.102-9.145-9.145s4.103-9.145 9.145-9.145 9.145 4.103 9.145 9.145-4.102 9.145-9.145 9.145zm0-15.167c-3.321 0-6.022 2.702-6.022 6.022s2.702 6.022 6.022 6.022 6.023-2.702 6.023-6.022-2.702-6.022-6.023-6.022zm9.263 12.443c-.817 1.176-1.852 2.188-3.046 2.981l5.452 5.453 3.014-3.013-5.42-5.421z"></path></svg></span></button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">gharsh11032000 &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s18"><div class="num">18</div><div class="pair">
+<figure class="f"><div class="cell"><button class="button"><span>Subscribe</span></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="button is-hover"><span>Subscribe</span></button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">pradipkaityuiux &middot; UIverse, MIT, as-is</p></div>
+
+<h2>Reveal</h2>
+
+<div class="card s19"><div class="num">19</div><div class="pair">
+<figure class="f"><div class="cell"><button data-label="Button :)">Button :)
+</button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="is-hover" data-label="Button :)">Button :)
+</button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">ossoboy &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s20"><div class="num">20</div><div class="pair">
+<figure class="f"><div class="cell"><button class="btn-1"><div class="original">Signup</div><div class="letters"><span>S</span><span>I</span><span>G</span><span>N</span><span>U</span><span>P</span></div></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="btn-1 is-hover"><div class="original">Signup</div><div class="letters"><span>S</span><span>I</span><span>G</span><span>N</span><span>U</span><span>P</span></div></button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">nima-mollazadeh &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s21"><div class="num">21</div><div class="pair">
+<figure class="f"><div class="cell"><button><div class="text"><span>Back</span><span>to</span><span>top</span></div><div class="clone"><span>Back</span><span>to</span><span>top</span></div><svg width="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="is-hover"><div class="text"><span>Back</span><span>to</span><span>top</span></div><div class="clone"><span>Back</span><span>to</span><span>top</span></div><svg width="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">satyamchaudharydev &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s22"><div class="num">22</div><div class="pair">
+<figure class="f"><div class="cell"><div class="button" data-tooltip="Size: 20Mb"><div class="button-wrapper"><div class="text">Download</div><span class="icon"><svg aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg></span></div></div></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><div class="button is-hover" data-tooltip="Size: 20Mb"><div class="button-wrapper"><div class="text">Download</div><span class="icon"><svg aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg></span></div></div></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">satyamchaudharydev &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s23"><div class="num">23</div><div class="pair">
+<figure class="f"><div class="cell"><div class="button"><a href="#">Download</a><b class="top">click to download</b><b class="bottom">1.2MB .zip</b></div></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><div class="button is-hover"><a href="#">Download</a><b class="top">click to download</b><b class="bottom">1.2MB .zip</b></div></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">Ayzen-Dev &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s24"><div class="num">24</div><div class="pair">
+<figure class="f"><div class="cell"><button class="Btn"><svg class="logoIcon" height="1em" viewBox="0 0 576 512"><path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"></path></svg><span class="tooltip">Premium</span></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="Btn is-hover"><svg class="logoIcon" height="1em" viewBox="0 0 576 512"><path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"></path></svg><span class="tooltip">Premium</span></button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">vinodjangid07 &middot; UIverse, MIT, as-is</p></div>
+
+<h2>Glow</h2>
+
+<div class="card s25"><div class="num">25</div><div class="pair">
+<figure class="f"><div class="cell"><button class="Btn"><svg class="logoIcon" height="1em" viewBox="0 0 576 512"><path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"></path></svg>
+  GO PREMIUM
+</button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="Btn is-hover"><svg class="logoIcon" height="1em" viewBox="0 0 576 512"><path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6H426.6c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"></path></svg>
+  GO PREMIUM
+</button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">vinodjangid07 &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s26"><div class="num">26</div><div class="pair">
+<figure class="f"><div class="cell"><button class="button"><svg viewBox="0 0 448 512" class="bell"><path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"></path></svg>
+  Notifications
+</button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="button is-hover"><svg viewBox="0 0 448 512" class="bell"><path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"></path></svg>
+  Notifications
+</button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">vinodjangid07 &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s27"><div class="num">27</div><div class="pair">
+<figure class="f"><div class="cell"><button class="button"><svg class="svgIcon" viewBox="0 0 512 512" height="1em"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+  Explore
+</button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="button is-hover"><svg class="svgIcon" viewBox="0 0 512 512" height="1em"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+  Explore
+</button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">vinodjangid07 &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s28"><div class="num">28</div><div class="pair">
+<figure class="f"><div class="cell"><button class="button"><span class="inner-circle"></span><span class="text">Button</span></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="button is-hover"><span class="inner-circle"></span><span class="text">Button</span></button></div><figcaption>hovered (no hover rule)</figcaption></figure>
+</div><p class="by">shadowmurphy &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s29"><div class="num">29</div><div class="pair">
+<figure class="f"><div class="cell"><button>
+    Hover me!
+</button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="is-hover">
+    Hover me!
+</button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">mrhyddenn &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s30"><div class="num">30</div><div class="pair">
+<figure class="f"><div class="cell"><a class="btn-shine" href="#">Get early access</a></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><a class="btn-shine is-hover" href="#">Get early access</a></div><figcaption>hovered (no hover rule)</figcaption></figure>
+</div><p class="by">neerajbaniwal &middot; UIverse, MIT, as-is</p></div>
+
+<h2>Edge</h2>
+
+<div class="card s31"><div class="num">31</div><div class="pair">
+<figure class="f"><div class="cell"><a href="#" class="menu__link">Hover me!</a></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><a href="#" class="menu__link is-hover">Hover me!</a></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">ArturCodeCraft &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s32"><div class="num">32</div><div class="pair">
+<figure class="f"><div class="cell"><button class="button"><span>Contact</span></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="button is-hover"><span>Contact</span></button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">gharsh11032000 &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s33"><div class="num">33</div><div class="pair">
+<figure class="f"><div class="cell"><button><span> GAME ON
+  </span></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="is-hover"><span> GAME ON
+  </span></button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">Cevorob &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s34"><div class="num">34</div><div class="pair">
+<figure class="f"><div class="cell"><button class="button">
+  Vite Button
+</button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="button is-hover">
+  Vite Button
+</button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">gharsh11032000 &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s35"><div class="num">35</div><div class="pair">
+<figure class="f"><div class="cell"><button>
+    Hover Me
+</button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="is-hover">
+    Hover Me
+</button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">sekaiking &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s36"><div class="num">36</div><div class="pair">
+<figure class="f"><div class="cell"><button class="button">
+ALT
+</button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="button is-hover">
+ALT
+</button></div><figcaption>hovered (no hover rule)</figcaption></figure>
+</div><p class="by">Bodyhc &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s37"><div class="num">37</div><div class="pair">
+<figure class="f"><div class="cell"><button class="Btn-container"><span class="inner-wrapper"><span class="text"><p>Upgrade to</p><p class="pro">PRO</p></span><span class="icon"><svg viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path></svg></span></span></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="Btn-container is-hover"><span class="inner-wrapper"><span class="text"><p>Upgrade to</p><p class="pro">PRO</p></span><span class="icon"><svg viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path></svg></span></span></button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">vinodjangid07 &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s38"><div class="num">38</div><div class="pair">
+<figure class="f"><div class="cell"><button class="Btn-container"><span class="text">let's go!</span><span class="icon-Container"><svg width="16" height="19" viewBox="0 0 16 19" fill="nones"><circle cx="1.61321" cy="1.61321" r="1.5" fill="black"></circle><circle cx="5.73583" cy="1.61321" r="1.5" fill="black"></circle><circle cx="5.73583" cy="5.5566" r="1.5" fill="black"></circle><circle cx="9.85851" cy="5.5566" r="1.5" fill="black"></circle><circle cx="9.85851" cy="9.5" r="1.5" fill="black"></circle><circle cx="13.9811" cy="9.5" r="1.5" fill="black"></circle><circle cx="5.73583" cy="13.4434" r="1.5" fill="black"></circle><circle cx="9.85851" cy="13.4434" r="1.5" fill="black"></circle><circle cx="1.61321" cy="17.3868" r="1.5" fill="black"></circle><circle cx="5.73583" cy="17.3868" r="1.5" fill="black"></circle></svg></span></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="Btn-container is-hover"><span class="text">let's go!</span><span class="icon-Container"><svg width="16" height="19" viewBox="0 0 16 19" fill="nones"><circle cx="1.61321" cy="1.61321" r="1.5" fill="black"></circle><circle cx="5.73583" cy="1.61321" r="1.5" fill="black"></circle><circle cx="5.73583" cy="5.5566" r="1.5" fill="black"></circle><circle cx="9.85851" cy="5.5566" r="1.5" fill="black"></circle><circle cx="9.85851" cy="9.5" r="1.5" fill="black"></circle><circle cx="13.9811" cy="9.5" r="1.5" fill="black"></circle><circle cx="5.73583" cy="13.4434" r="1.5" fill="black"></circle><circle cx="9.85851" cy="13.4434" r="1.5" fill="black"></circle><circle cx="1.61321" cy="17.3868" r="1.5" fill="black"></circle><circle cx="5.73583" cy="17.3868" r="1.5" fill="black"></circle></svg></span></button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">vinodjangid07 &middot; UIverse, MIT, as-is</p></div>
+
+<div class="card s39"><div class="num">39</div><div class="pair">
+<figure class="f"><div class="cell"><button class="reward-btn"><span class="IconContainer"><svg fill="none" viewBox="0 0 60 20" class="box-top box"><path stroke-linecap="round" stroke-width="4" stroke="#6A8EF6" d="M2 18L58 18"></path><circle stroke-width="5" stroke="#6A8EF6" fill="#101218" r="7" cy="9.5" cx="20.5"></circle><circle stroke-width="5" stroke="#6A8EF6" fill="#101218" r="7" cy="9.5" cx="38.5"></circle></svg><svg fill="none" viewBox="0 0 58 44" class="box-body box"><rect stroke-width="8" stroke="#6A8EF6" fill="#101218" rx="3" height="44" width="58"></rect><line stroke-width="6" stroke="#6A8EF6" y2="29" x2="58" y1="29" x1="0"></line><path stroke-linecap="round" stroke-width="5" stroke="#6A8EF6" d="M45.0005 20L36 3"></path><path stroke-linecap="round" stroke-width="5" stroke="#6A8EF6" d="M21 3L13.0002 19.9992"></path></svg><span class="coin"></span></span><span class="text">Rewards</span></button></div><figcaption>resting</figcaption></figure>
+<figure class="f"><div class="cell"><button class="reward-btn is-hover"><span class="IconContainer"><svg fill="none" viewBox="0 0 60 20" class="box-top box"><path stroke-linecap="round" stroke-width="4" stroke="#6A8EF6" d="M2 18L58 18"></path><circle stroke-width="5" stroke="#6A8EF6" fill="#101218" r="7" cy="9.5" cx="20.5"></circle><circle stroke-width="5" stroke="#6A8EF6" fill="#101218" r="7" cy="9.5" cx="38.5"></circle></svg><svg fill="none" viewBox="0 0 58 44" class="box-body box"><rect stroke-width="8" stroke="#6A8EF6" fill="#101218" rx="3" height="44" width="58"></rect><line stroke-width="6" stroke="#6A8EF6" y2="29" x2="58" y1="29" x1="0"></line><path stroke-linecap="round" stroke-width="5" stroke="#6A8EF6" d="M45.0005 20L36 3"></path><path stroke-linecap="round" stroke-width="5" stroke="#6A8EF6" d="M21 3L13.0002 19.9992"></path></svg><span class="coin"></span></span><span class="text">Rewards</span></button></div><figcaption>hovered</figcaption></figure>
+</div><p class="by">vinodjangid07 &middot; UIverse, MIT, as-is</p></div>
+
+</main>
+</body>
+</html>
