@@ -101,9 +101,9 @@
 
   function decodePaintings(){
     const th=theme();
-    return Promise.all(['outside-'+th,'hall-'+th+(tall()?'-tall':'')].map(n=>{
+    return Promise.all(['outside-'+th+'.jpg','hall-'+th+(tall()?'-tall':'')+'.jpg','door-l.png','door-r.png'].map(n=>{
       const im=new Image();
-      im.src='assets/hall/'+n+'.jpg';
+      im.src='assets/hall/'+n;
       return im.decode?im.decode().catch(()=>{}):Promise.resolve();
     })).then(()=>{decodedTheme=th});
   }
@@ -336,6 +336,17 @@
     const text=hall.querySelector('.wk-text');
     const clip=hall.querySelector('.wk-clip');
     const stage=hall.querySelector('.hall-stage');
+    /* The bronze doors: two leaves in a box that sits exactly on the painted doorway,
+       on top of the hall (which is already behind it). The layer is placed and scaled
+       like the outside painting, so it grows with it. Built here, never in the plain
+       version: no library, 3 s clock or reduced motion = no leaves, doors open. */
+    const doors=document.createElement('div');
+    doors.className='wk-doors';
+    doors.setAttribute('aria-hidden','true');
+    doors.innerHTML='<div class="wk-dbox"><img class="wk-leaf l" src="assets/hall/door-l.png" alt="">'+
+      '<img class="wk-leaf r" src="assets/hall/door-r.png" alt=""></div>';
+    view_.appendChild(doors);
+    const dbox=doors.firstChild, leafL=dbox.children[0], leafR=dbox.children[1];
     const plaques=Array.from(hall.querySelectorAll('.plaque'));
     const rings=Array.from(hall.querySelectorAll('.plaque .ring svg circle:nth-of-type(2)'));
 
@@ -345,10 +356,13 @@
     st.gate=false;
 
     const P={p:0,q:0};        // walk-in progress, pull-back progress (both 0..1)
+    const DR={a:0};           // door swing, 0 shut .. 1 fully open (the first beat, before the walk-in)
+    const SWING=100;          // degrees of the open leaf; past 90 it is edge-on and hidden
+    let shown=true;           // are the leaves currently displayed
     const G={};               // geometry, rebuilt on every refresh
     const clamp=(v,lo,hi)=>Math.min(hi,Math.max(lo,v));
 
-    const setOut=v=>g.set(out,{scale:v});
+    const setOut=v=>g.set([out,doors],{scale:v});
     const setStage=v=>g.set(stage,{scale:v});
     const setTx=g.quickSetter(text,'x','px'), setTy=g.quickSetter(text,'y','px');
     /* Geometry. Runs on build and again on every ScrollTrigger refresh (resize,
@@ -386,7 +400,16 @@
       Object.assign(G,{W,H,Px,Py,d,S,R,pb,tr,top:bar?bar.offsetHeight:64});
       out.style.left=ox+'px'; out.style.top=oy+'px';
       out.style.width=Wo+'px'; out.style.height=Ho+'px';
-      g.set(out,{transformOrigin:(Px-ox)+'px '+(Py-oy)+'px'});
+      g.set([out,doors],{transformOrigin:(Px-ox)+'px '+(Py-oy)+'px'});
+      /* the door box: the painted doorway, a half-inset in from its edge (the hall's own
+         clip is one full inset in, so the doors always cover it), arch clipped round */
+      doors.style.left=out.style.left; doors.style.top=out.style.top;
+      doors.style.width=Wo+'px'; doors.style.height=Ho+'px';
+      const Dm=DOOR.inset*Wo*.5, bw=DOOR.w*Wo-2*Dm, bh=DOOR.h*Ho-Dm, bry=(DOOR.arch-DOOR.t)*Ho-Dm;
+      dbox.style.left=(DOOR.l*Wo+Dm).toFixed(2)+'px'; dbox.style.top=(DOOR.t*Ho+Dm).toFixed(2)+'px';
+      dbox.style.width=bw.toFixed(2)+'px'; dbox.style.height=bh.toFixed(2)+'px';
+      dbox.style.perspective=(bw*2.4).toFixed(0)+'px';
+      dbox.style.clipPath='inset(0 round '+(bw/2).toFixed(2)+'px '+(bw/2).toFixed(2)+'px 0 0 / '+bry.toFixed(2)+'px '+bry.toFixed(2)+'px 0 0)';
       g.set(stage,{transformOrigin:Px+'px '+Py+'px'});
     }
 
@@ -402,6 +425,12 @@
        last part of the growth is the quick part of the scroll (u = p^1.5), so the
        enlarged outside painting is on screen for as little time as possible. */
     function apply(){
+      const ang=DR.a*SWING, vis=DR.a<1;
+      if(vis!==shown){shown=vis;doors.style.visibility=vis?'':'hidden'}
+      if(vis){
+        leafL.style.transform='rotateY('+ang.toFixed(2)+'deg)';
+        leafR.style.transform='rotateY('+(-ang).toFixed(2)+'deg)';
+      }
       const u=Math.pow(P.p,1.5);
       const so=Math.pow(G.S,u);
       setOut(so);
@@ -419,17 +448,20 @@
 
     layout();
 
-    /* The scrubbed timeline: 2 units of walk-in, then the hold. Eased "none". */
+    /* The scrubbed timeline: the doors swing open (the first beat), then 2 units of
+       walk-in, then the hold. Eased "none" except the door swing. */
+    const T0=.9;
     const tl=g.timeline({paused:true,defaults:{ease:'none'}});
-    tl.to(P,{p:1,duration:2,onUpdate:apply},0);
-    tl.to(P,{q:1,duration:.6,onUpdate:apply},2);
-    if(plaques.length) tl.fromTo(plaques,{yPercent:130},{yPercent:0,duration:.45,stagger:.1},2.15);
+    tl.to(DR,{a:1,duration:T0,ease:'power2.inOut',onUpdate:apply},0);
+    tl.to(P,{p:1,duration:2,onUpdate:apply},T0);
+    tl.to(P,{q:1,duration:.6,onUpdate:apply},T0+2);
+    if(plaques.length) tl.fromTo(plaques,{yPercent:130},{yPercent:0,duration:.45,stagger:.1},T0+2.15);
     rings.forEach((c,i)=>{
       const len=parseFloat(c.getAttribute('stroke-dasharray'))||0;
       const off=parseFloat(c.getAttribute('stroke-dashoffset'))||0;
       const pct=len?Math.max(0,Math.min(100,(1-off/len)*100)):0;
-      if(hasDraw) tl.fromTo(c,{drawSVG:'0% 0%'},{drawSVG:'0% '+pct.toFixed(2)+'%',duration:.5},2.45+i*.1);
-      else tl.fromTo(c,{attr:{'stroke-dashoffset':len}},{attr:{'stroke-dashoffset':off},duration:.5},2.45+i*.1);
+      if(hasDraw) tl.fromTo(c,{drawSVG:'0% 0%'},{drawSVG:'0% '+pct.toFixed(2)+'%',duration:.5},T0+2.45+i*.1);
+      else tl.fromTo(c,{attr:{'stroke-dashoffset':len}},{attr:{'stroke-dashoffset':off},duration:.5},T0+2.45+i*.1);
     });
 
     const pin=ST.create({
@@ -474,6 +506,7 @@
         try{depth.kill(true)}catch(e){}
         try{pin.kill(true)}catch(e){}
         try{tl.kill();depthTween.kill()}catch(e){}
+        doors.remove();
         hall.classList.remove('walk','pinned','open');
         below.classList.remove('lap');
         clip.inert=false;

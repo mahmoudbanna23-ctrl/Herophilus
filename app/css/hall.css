@@ -264,6 +264,22 @@ body.hall-clep .clep .cl-body{visibility:hidden}
 /* once the doorway has filled the screen the outside is fully behind the hall; hiding it
    keeps its enlarged doorway glow from showing as bands round a pulled-back hall */
 .hall.walk.open .wk-out{visibility:hidden}
+
+/* the bronze doors: a layer placed and scaled like .wk-out by hall.js, a box on the
+   doorway inside it (perspective, arch clip and size from hall.js), two leaves hinged
+   on the jambs. Only transform moves; the filter is static and sits the front-lit
+   bronze into the painted evening (dark) and the daylight (light). */
+.wk-doors{position:absolute;pointer-events:none}
+.wk-dbox{position:absolute}
+.wk-leaf{
+  position:absolute;top:0;height:100%;width:calc(50% + .5px);display:block;
+  backface-visibility:hidden;filter:brightness(1) saturate(1) sepia(.24);
+}
+.wk-leaf.l{left:0;transform-origin:0 50%}
+.wk-leaf.r{right:0;transform-origin:100% 50%}
+:root[data-theme="light"] .wk-leaf{filter:brightness(1.25) saturate(1.05) sepia(.22)}
+.hall.walk.pinned .wk-leaf{will-change:transform}
+@media print{.wk-doors{display:none}}
 /* clear of the lip the rest of home laps over the hall */
 .hall.walk .hall-greet{bottom:calc(var(--s-4) + var(--wk-lap))}
 
