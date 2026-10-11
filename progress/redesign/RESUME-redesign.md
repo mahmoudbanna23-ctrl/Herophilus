@@ -467,3 +467,30 @@ Commits, all pushed: `8d6da064` briefs · `9408e0ff` lettering · `d94be479` fix
 - To tell the owner with the screenshots: theory text 14 -> 12.9; Clepsydra smaller on upright
   iPad; printing keeps the old lettering (already told). One question only: the button pick
   (suggested 139 main, 21 quiet).
+
+## EVENING BLOCK, continued — state at 19:55
+
+Commits since, pushed: `6853e495` fix pass 2 · `d6a58e0f` fix pass 3.
+
+- **Fix pass 2 LANDED** (`warm.css` +33): dark option rows and question card rest on a hairline;
+  streak chip on two balanced lines; section labels 3.99 -> 4.87:1 dark, 4.06 -> 4.73:1 light;
+  citation strip 13px. The "one-row table then blank" theory page at 1180x820 was measured three
+  ways (both sheets / no `type.css` / neither): identical on the base app, an OLD paging fault,
+  left alone. Report: `D:\scratch 2026\redesign\round2fix2\build-fix2-report.md`.
+- **Look-over 3** (Haiku, 37 `r2g` + `r2b` stills): lines in `round2fix2\r2g-look.txt`.
+- **Fix pass 3 LANDED** (`warm.css` +21, `hall.css` +9/-5): light verdict boxes use the deep red
+  and green tokens (1.40 -> 4.92, 1.12 -> 5.87); dark How-sure card and Explain row rest on a
+  hairline; hall plate figures 10 -> 14px at 1180x820, 13px at 1440x900, ring enlarged too
+  (beyond the ask). Stills `r2h-*`. Report: `D:\scratch 2026\redesign\round2fix3\build-fix3-report.md`.
+- **Look-over 4** (Haiku, 16 `r2h`): `round2fix3\r2h-look.txt`. Open, NOT fixed: the mascot's
+  speech bubble covers the Guessed / Unsure buttons at 1180x820 on an answered question (her
+  position and code, outside the footprint: tell the owner); `views.css:284` paints a gold corner
+  on the dark verdict box; the "partial" verdict (`components.css:142`) is still pastel on
+  parchment in the light look; the two unsure `r2b-*-below` items (hall bottom edge cutting plates
+  at 820x1180 light, mascot at 1180x820 dark).
+- **Doors**: the shell from 16:34 is still alive and runs `paint-ref.sh doors` at 21:05 by itself.
+  `doors-at-2107.ps1` was STOPPED: its busy test (` exec`) matched the Codex desktop app's
+  `exec-server` and would never have run. Real test: `codex.exe` with `* exec *`. A watch-only
+  shell reports when `doors.png` lands. Next: Haiku looks at it; Sonnet builder does the doors
+  half of `briefs/build-round2-b.md` plus the final owner stills; Haiku look-over; Codex check
+  with `briefs/check-walkin.md`; then screenshots to the owner and STOP.
