@@ -307,3 +307,63 @@ end up doing:
 - Outside check: not run; `briefs/check-walkin.md` still describes round 1 and must be rewritten.
 - Build B (doors on the scroll, upright hall paintings): not started; needs the doors picture.
 - This chat is past its step budget: start a fresh chat from this note.
+
+### 2026-10-11, evening — HANDOFF: start the next chat here
+
+Committed and pushed: `c26035a4` (build A + type specimen). Nothing merged, nothing live.
+
+**Build A — landed, NOT yet shown to the owner.** Report
+`D:\scratch 2026\redesign\round2\build-a-report.md`; stills `shots/r2a-*.png` (28).
+- Done: scroll box gone (0 in DOM, grep clean); `app/css/warm.css` live (49 rules, screen only),
+  injected by the hall script after `hall.css`; boot-check 0 console errors; no blue-above-red
+  surface in dark or light. Footprint: `hall.js`, `hall.css`, new `warm.css`. No new shared-file line.
+- Open, to judge before showing: only 8 of 28 stills were looked at, all before the last colour
+  tuning (a Haiku helper must look at the final ones; 1180 and 820 light were shot before a
+  light-orb fix and need re-shooting; no reduced-motion stills) · gold edge loud on stacked cards
+  in the subject list · left bar scrolls at 820 px height (key bands push "Mock exam" off) ·
+  dim rail text lifted to `#9a8d77` in the dark rail (builder's call) · `--ink-4` 4.00:1 on
+  `--fill` and 4.27 on hover tint, under AA · focus ring `--neuro` 2.34:1, not fixed ·
+  navy `theme-color` (`#070d16`) still in `index.html` and `theme.js` (outside the grant;
+  fixing it is a shared-file line) · navy flash before the injected sheet: not tested ·
+  boot-check prints "module cards in DOM 0" because home is the hall (predates this job).
+
+**Typography — fetched, specimen built, NOT yet picked.** Report
+`D:\scratch 2026\redesign\round2\type-report.md`. Page `samples/type.html`; stills
+`shots/type-*.png` (`type-1440x900-both.png` = both surfaces). 27 files, 6.58 MB, ten faces,
+every `OFL.txt` opened: all SIL OFL 1.1 (Reserved Font Names: Marcellus, Gentium/SIL, Forum,
+Gilda, GFS Didot; files unmodified). Glyph check by cmap parse:
+- Complete on the dose test line: Gentium Book Plus (pair 1), Alegreya (pair 2), Cardo (pair 3).
+- Missing: today's embedded EB Garamond subset lacks superscript 6, less-or-equal,
+  greater-or-equal, subscript 2 and all Greek · IM Fell Double Pica the same, and its archaic
+  digits make the dose line hard to read · Libre Caslon Text lacks the two inequality signs and
+  Greek. The micro, degree, plus-minus and times signs are present in every reading face.
+- Builder's read: pairs 1, 2, 3 good for long study; pair 4 not; pair 5 sturdy but falls back.
+- Finding worth telling the owner plainly: TODAY'S reading face already drops some dose signs
+  to a stand-in face.
+- Next: owner picks by looking; only then `app/css/type.css`.
+
+**Doors — two routes, neither finished.**
+- Owner asked (verbatim): "try to create the doors with canva or the gateway".
+- Canva: painted on the first try from `paint/prompt-doors.txt` (text only, no style reference),
+  2:3. Media id `MAHXtQXK9uU` (on flat grey-blue), `MAHXts-mHpk` (background removed, alpha).
+  Seen as a 133x200 preview only: arched bronze pair, centre seam, two ring handles, palmette
+  panels, studs. ⚠️ Full size is NOT on disk: the tools returned previews only. To get it out:
+  place the media in a Canva page and export PNG with a transparent background, or the owner
+  downloads it from his Canva uploads. Not attempted.
+- Gateway: the image-model list call was interrupted and a health call gave no answer for
+  minutes (left running in the background). Treat as not available tonight; not relied on.
+- Codex: the waiting shell still starts `paint-ref.sh doors 1024x1536 outside-dark.png` at 21:05
+  (last picture of today's eight). It uses the outside painting as style reference and writes a
+  full-size local file. Kept on purpose as the second candidate.
+- Then: a helper looks at both, owner or main chat picks, cut at the centre seam into
+  `app/assets/hall/door-l.png` / `door-r.png`, build B.
+
+**Order for the fresh chat**
+1. Haiku helper looks at the `r2a-*` and `type-*` stills; fix or re-shoot what it flags.
+2. Get a full-size doors picture (Canva export, or the 21:05 Codex one).
+3. Build B: doors as the first scroll beat + upright hall paintings (plan sections 4 and 5).
+4. Rewrite `briefs/check-walkin.md` for round 2; Codex outside check (one Codex job at a time,
+   Pediatrics first).
+5. Show the owner: home (doors shut, opening, hall, below), a subject page, a question, the
+   theory page, at laptop and both iPad sizes, both looks; and the lettering page. One question
+   at a time. Still unanswered from earlier: the button pick (suggested 139 main, 21 quiet).
