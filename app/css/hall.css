@@ -1,4 +1,14 @@
-/* The home screen as a library hall — loaded by js/hall.js.
+/* The home screen as a library seen from outside, then its hall — loaded by js/hall.js.
+
+   TWO SHAPES, ONE DOM.
+     .hall.walk   the scroll-led version. .hall is the pin target; .hall-view is the
+                  box (one screen under the top bar) holding three layers: the outside
+                  painting (.wk-out), the welcome card (.wk-text) and the hall, which is
+                  clipped to the doorway's shape and grows with it (.wk-clip). js/hall.js
+                  drives only transform and clip-path.
+     .hall (plain) the same layers stacked: outside with its welcome card, then the hall
+                  at the painting's own 3:2 shape. This is what reduced motion gets, and
+                  what stays if the motion libraries do not load.
 
    ALCOVE BOXES AND PLAQUES. Tuned to the two approved paintings, in PAINTING
    coordinates: every number is a percent of the painting (left / top / width /
@@ -11,12 +21,13 @@
              panel. This is the button's hit area, and the dimming veil.
      --pN-*  the plaque: sits inside the EMPTY LOWER PANEL of that alcove.
    Left to right: ear trumpet (ENT), crystal sphere (Ophthalmology), marble brain
-   (Neuropsychiatry), toy horse (Pediatrics) — the order activeModules() gives.
+   (Neuropsychiatry), toy horse (Pediatrics). hall.js fixes the order by module id
+   (ent, ophtho, neuropsych, pediatrics), never by the order the data arrives in.
    Dark = the evening painting (assets/hall/hall-dark.jpg), light = the daylight
    one. Read off the paintings: lower panels y 58-72 (dark), 62-77 (light).
    The tall 2:3 paintings do not exist yet, so upright windows use the wide
-   painting: the hall's height is capped to the painting's own shape (below), so
-   all four alcoves stay on screen instead of being cropped away. */
+   painting: in the plain shape the hall's height is capped to the painting's own
+   shape; in the walk shape the view pulls back to fit the alcoves (hall.js). */
 
 @media screen{
 
@@ -25,6 +36,8 @@
   --hall-tall:var(--hall-wide);   /* no tall painting yet: fall back to the wide one */
   --hall-fore:none;               /* no foreground-columns picture: the paintings carry their own */
   --hall-fore-filter:none;
+  --wk-out:url("../assets/hall/outside-dark.jpg");
+  --wk-lap:48px;                  /* how far the rest of home laps over the hall's lower edge */
 
   --a1-l:5;    --a1-t:10; --a1-w:20.4; --a1-h:63;
   --a2-l:28.2; --a2-t:10; --a2-w:20.4; --a2-h:63;
@@ -38,6 +51,7 @@
 :root[data-theme="light"]{
   --hall-wide:url("../assets/hall/hall-light.jpg");
   --hall-fore-filter:none;
+  --wk-out:url("../assets/hall/outside-light.jpg");
 
   --a1-l:3.5;  --a1-t:10.5; --a1-w:20; --a1-h:66.5;
   --a2-l:28;   --a2-t:10.5; --a2-w:20; --a2-h:66.5;
@@ -49,26 +63,57 @@
   --p4-l:78.6; --p4-t:64; --p4-w:16.8; --p4-h:11.6;
 }
 
-/* ---------- page: the hall runs edge to edge, the rest keeps its measure ---------- */
+/* ---------- page: the hall runs edge to edge, the rest keeps its measure ----------
+   The rest of home is a full-width sheet (it must hide the hall where it laps over
+   it); its content keeps the old 936px measure through side padding. It is NEVER
+   given a transform or overflow:hidden — that breaks the reveal-on-scroll inside. */
 body.hall-on[data-view="home"] .page{max-width:none;padding:0}
 body.hall-on .ambient{display:none}
 .hall-below{
-  box-sizing:border-box;width:100%;max-width:936px;margin:0 auto;padding:var(--s-11);
+  box-sizing:border-box;width:100%;margin:0;position:relative;z-index:2;
+  padding:var(--s-11) max(var(--s-11), calc((100% - (936px - 2 * var(--s-11))) / 2));
+  background:var(--bg);box-shadow:0 -14px 32px -10px rgba(0,0,0,.38);
+}
+.hall-below.lap{margin-top:calc(-1 * var(--wk-lap))}
+
+/* ---------- the hall block ---------- */
+.hall{position:relative;width:100%;background:linear-gradient(var(--bg-2),var(--bg))}
+.hall-view{position:relative;width:100%}
+
+/* 0. the outside painting. Plain: a screen-tall block, door kept near the middle. */
+.wk-out{
+  position:relative;width:100%;height:calc(100svh - var(--hall-top,64px));min-height:420px;
+  background:var(--wk-out) 50% 56%/cover no-repeat,linear-gradient(var(--bg-2),var(--bg));
 }
 
-/* ---------- the box ----------
-   Fills the first screen, but never taller than the painting is at its own width
-   (aspect-ratio 3:2, height clamped by max-height): in a narrow or upright
-   window the whole painting, every alcove and the floor strip, stays in view
-   instead of cropping to the middle two. The box width is the page's, which
-   sits beside the side rail, so this cannot be written in vw. */
-.hall{
+/* 0b. the welcome card — real text on --card, so its contrast never depends on the paint */
+.wk-text{
+  position:absolute;left:max(var(--s-10),4vw);top:var(--s-9);max-width:min(30rem,calc(100% - 2 * var(--s-10)));
+  box-sizing:border-box;padding:var(--s-5) var(--s-8) var(--s-6);
+  background:var(--card);color:var(--tx);border:1px solid var(--line-2);border-radius:var(--r-lg);
+}
+.wk-name{margin:0 0 var(--s-1);font-size:var(--fs-ui);font-weight:600;color:var(--ink-3);letter-spacing:.02em}
+.wk-text h1{margin:0;font-size:var(--fs-lg);color:var(--tx)}
+.wk-cue{
+  display:none;position:absolute;left:50%;bottom:var(--s-8);margin-left:-3.2rem;width:6.4rem;
+  box-sizing:border-box;padding:var(--s-3) 0 var(--s-2);text-align:center;
+  background:var(--card);color:var(--ink-3);border:1px solid var(--line-2);border-radius:var(--r-lg);
+  font-size:var(--fs-ui);font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+}
+.wk-cue::after{content:"";display:block;width:1px;height:1.6rem;margin:var(--s-2) auto 0;background:var(--gold)}
+
+/* ---------- the hall painting box ----------
+   Plain: never taller than the painting is at its own width (aspect-ratio 3:2, height
+   clamped), so in a narrow or upright window every alcove and the floor strip stays in
+   view. Walk: the .hall-view box is the container instead (see .hall.walk below). */
+.wk-clip{
   position:relative;width:100%;aspect-ratio:3/2;
   max-height:calc(100svh - var(--hall-top,64px));min-height:420px;
   container:hall / size;overflow:hidden;
   background:linear-gradient(var(--bg-2),var(--bg));
 }
-.hall-stage{position:absolute;inset:0;transform-origin:var(--ox,50%) var(--oy,50%)}
+.hall-push{position:absolute;inset:0;transform-origin:var(--ox,50%) var(--oy,50%)}
+.hall-stage{position:absolute;inset:0}
 
 /* The frame is the painting's own shape, covering the stage (capped so a very
    wide window never crops the alcoves off the top). 28px of spare width is the
@@ -105,7 +150,7 @@ body.hall-on .ambient{display:none}
 .glow[data-i="3"]{animation-duration:6.4s;animation-delay:-4.6s}
 .glow[data-i="4"]{animation-duration:8.1s;animation-delay:-1.3s}
 :root[data-theme="light"] .hall-glow .glow{display:none}
-/* a locked subject: its alcove dimmed, that box only */
+/* a subject missing from the data (or locked): its alcove dimmed, that box only */
 .veil{background:var(--bg);opacity:.55;border-radius:var(--r-lg)}
 .hall:has(.alcove[data-i="1"]:is(:hover,:focus-visible)) .glow[data-i="1"],
 .hall:has(.alcove[data-i="2"]:is(:hover,:focus-visible)) .glow[data-i="2"],
@@ -144,7 +189,9 @@ body.hall-on .ambient{display:none}
 .alcove:focus-visible .plaque{outline:2px solid var(--tx);outline-offset:2px}
 
 /* The plaque is opaque (--card) so its text never depends on the paint behind it.
-   Its box comes from --pl/--pt/--pw/--ph (painting %) turned into this button's %. */
+   Its box comes from --pl/--pt/--pw/--ph (painting %) turned into this button's %.
+   Hover lifts it with the separate `translate` property, so it never fights the
+   transform the walk-in writes. */
 .plaque{
   position:absolute;box-sizing:border-box;
   left:calc((var(--pl) - var(--l)) / var(--w) * 100%);
@@ -156,9 +203,9 @@ body.hall-on .ambient{display:none}
   padding:clamp(2px,.4cqw,8px) clamp(4px,.8cqw,12px);
   background:var(--card);color:var(--tx);
   border:1px solid var(--line-2);border-radius:var(--r-md);
-  transition:transform .2s var(--ease-soft);
+  transition:translate .2s var(--ease-soft);
 }
-.alcove:not([aria-disabled="true"]):hover .plaque{transform:translateY(-2px)}
+.alcove:not([aria-disabled="true"]):hover .plaque{translate:0 -2px}
 .pl-name{
   font-family:var(--font-display);font-weight:700;font-size:clamp(10px,.95cqw,14px);
   letter-spacing:.045em;text-transform:uppercase;white-space:nowrap;
@@ -182,24 +229,48 @@ body.hall-on .ambient{display:none}
   transform:translate(calc(var(--mx,0)*-22px),calc(var(--my,0)*-22px));
 }
 
-/* 6. welcome line and the Clepsydra — on the calm floor under the alcoves */
+/* 6. the Clepsydra's greeting — her existing picture, bottom left of the hall. The
+   welcome line itself lives on the outside painting (.wk-text). */
 .hall-greet{
   position:absolute;left:max(var(--s-10),4cqw);bottom:var(--s-4);max-width:60%;
   display:flex;align-items:flex-end;gap:var(--s-6);pointer-events:none;
-}
-.hall-greet h1{
-  margin:0;padding:var(--s-4) var(--s-8);font-size:var(--fs-lg);color:var(--tx);
-  background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-lg);
 }
 .hall-clep{display:block;height:min(180px,16cqh);width:auto;order:-1}
 /* She stands in the hall, so the corner figure steps aside while the hall shows. */
 body.hall-clep .clep .cl-body{visibility:hidden}
 
+/* ---------- the walk shape ---------- */
+.hall.walk .hall-view{
+  height:calc(100svh - var(--hall-top,64px));min-height:420px;
+  container:hall / size;overflow:hidden;
+  background:linear-gradient(var(--bg-2),var(--bg));
+}
+/* the outside painting is sized and placed in pixels by hall.js (cover, doorway
+   centred); here it only needs to be a layer that scales about the doorway */
+.hall.walk .wk-out{
+  position:absolute;left:0;top:0;width:100%;height:100%;min-height:0;
+  background:var(--wk-out) 0 0/100% 100% no-repeat;
+}
+.hall.walk .wk-cue{display:block}
+.hall.walk .wk-clip{
+  position:absolute;inset:0;width:auto;aspect-ratio:auto;max-height:none;min-height:0;
+  container:none;overflow:visible;background:none;
+}
+/* will-change only on the two moving layers, only while the section is pinned */
+.hall.walk.pinned .wk-out,.hall.walk.pinned .hall-stage{will-change:transform}
+.hall.walk.pinned .wk-clip{will-change:clip-path}
+/* her picture stays hidden until the door is passed, so the corner figure and she
+   are never both on screen */
+.hall.walk:not(.open) .hall-clep{visibility:hidden}
+/* once the doorway has filled the screen the outside is fully behind the hall; hiding it
+   keeps its enlarged doorway glow from showing as bands round a pulled-back hall */
+.hall.walk.open .wk-out{visibility:hidden}
+/* clear of the lip the rest of home laps over the hall */
+.hall.walk .hall-greet{bottom:calc(var(--s-4) + var(--wk-lap))}
+
 /* ---------- motion ---------- */
-.hall.arrive .hall-stage{animation:hallArrive .6s var(--ease-soft)}
-@keyframes hallArrive{from{transform:scale(1.06)}to{transform:scale(1)}}
-.hall.pushing .hall-stage{transform:scale(1.9);transition:transform .45s var(--ease-soft)}
-.hall.pushing .alcove:not(.pick) .plaque{transform:translateY(300%);transition:transform .3s var(--ease-soft)}
+.hall.pushing .hall-push{transform:scale(1.9);transition:transform .45s var(--ease-soft)}
+.hall.pushing .alcove:not(.pick) .plaque{translate:0 300%;transition:translate .3s var(--ease-soft)}
 .hall:not(.live) .glow,.hall:not(.live) .hall-dust i{animation-play-state:paused}
 
 @media (prefers-reduced-motion:reduce){

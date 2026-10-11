@@ -231,3 +231,16 @@ end up doing:
 - Unanswered by the owner: keep the upright evening hall or repaint it with a taller name strip under
   the top two alcoves; button pick (suggested 139 main, 21 quiet).
 - 4 of 8 pictures used on 2026-10-11. Raw paintings in `paint/` are uncommitted by design.
+
+## 2026-10-11 — "comes apart on scroll" trial (owner request)
+
+- Owner pointed at the anime.js front page (a machine coming apart as you scroll) and asked for the
+  same kind of move. Measured there: that object is a 3D model built in pieces; the kit only ties
+  movement to scroll. What we lack is an object in pieces, not a kit.
+- Owner ruling: "yes, try the quick way and show me if not approved go 3D". Quick way = ONE alcove
+  object (the ear trumpet) painted as five separate parts, cut out by script, pulled apart and put
+  back by the scroll with the kit already on the branch. Not approved -> a true 3D model (Blender).
+- Dispatched: one lean-drafter. Prompt file paint/prompt-trumpet-parts.txt; page
+  samples/scroll-apart.html; pieces samples/parts/. At most two pictures (daily allowance: 6 of 8
+  used before this job). Result NOT yet known when this note was written.
+- Nothing from this trial goes under app/ before the owner's verdict.
