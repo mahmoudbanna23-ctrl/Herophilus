@@ -60,4 +60,37 @@ function rebuildQuestions(termId){
     .map(q => ({q, k: qHash(q.id)}))
     .sort((a,b) => a.k - b.k || (a.q.id < b.q.id ? -1 : 1))
     .map(x => x.q);
+  buildShadows();
+}
+
+/* Pediatrics keeps SEPARATE progress per place (owner 2026-10-11): a question
+   answered inside a model-exam row is still new in its topic, and the reverse.
+   So each EXAMS_PEDS slot gets a shadow — Object.create(real question) with its
+   own id (examId~realId), rid (the real id, the key for everything shared:
+   flags, notes, highlights, reports, review scheduling, theory links) and exam.
+   Shadows never enter QUESTIONS, so totals, Practise all and mocks count once.
+   EXAMS_NEURO is not touched: Neuro stays shared. */
+let QBYID = new Map();          /* real id -> question */
+let SHADOW_BY_ID = {};          /* shadow id -> shadow */
+let SHADOWS_BY_EXAM = {};       /* examId -> [shadow, …] in printed order */
+let SHADOWS_OF = {};            /* real id -> [shadow id, …] */
+function buildShadows(){
+  QBYID = new Map(); SHADOW_BY_ID = {}; SHADOWS_BY_EXAM = {}; SHADOWS_OF = {};
+  QUESTIONS.forEach(q => QBYID.set(q.id, q));
+  if(typeof EXAMS_PEDS === 'undefined' || !EXAMS_PEDS) return;
+  Object.keys(EXAMS_PEDS).forEach(examId => {
+    const list = [];
+    (EXAMS_PEDS[examId] || []).forEach(rid => {
+      const q = QBYID.get(rid);
+      if(!q) return;
+      const s = Object.create(q);
+      s.id = examId + '~' + rid;
+      s.rid = rid;
+      s.exam = examId;
+      SHADOW_BY_ID[s.id] = s;
+      (SHADOWS_OF[rid] = SHADOWS_OF[rid] || []).push(s.id);
+      list.push(s);
+    });
+    SHADOWS_BY_EXAM[examId] = list;
+  });
 }

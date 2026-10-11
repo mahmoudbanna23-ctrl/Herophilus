@@ -277,10 +277,33 @@ const bankOn=q=>{const f=S.banks&&S.banks[q.module];
   return !f||!f.length||banksOf(q).some(b=>f.indexOf(b)>=0)};
 /* Exam membership is an additional view, never a second topical home. */
 const inChapter=(q,ch)=>q.chapter===ch||
-  (((typeof EXAMS_NEURO!=='undefined'&&EXAMS_NEURO[ch])||[]).indexOf(q.id)>=0);
+  (((typeof EXAMS_NEURO!=='undefined'&&EXAMS_NEURO[ch])||[]).indexOf(q.id)>=0)||
+  (((typeof EXAMS_PEDS!=='undefined'&&EXAMS_PEDS[ch])||[]).indexOf(q.rid||q.id)>=0);
+/* Real question or Pediatrics exam-slot shadow, by id. Shadow table first. */
+const qById=id=>(typeof SHADOW_BY_ID!=='undefined'&&SHADOW_BY_ID[id])||
+  (typeof QBYID!=='undefined'&&QBYID.get(id))||QUESTIONS.find(x=>x.id===id);
+/* The key for everything shared between a topic and its exam rows: flags,
+   notes, highlights, reports, review scheduling, theory links. */
+const shareKey=q=>q.rid||q.id;
+/* Same thing from an id string (onclick handlers pass ids, not objects). */
+const realId=id=>{const s=typeof SHADOW_BY_ID!=='undefined'&&SHADOW_BY_ID[id];return s?s.rid:id};
+/* Answer given anywhere: this place first, else any of the question's exam
+   slots (latest wins). Module-level totals use this; chapter rows do not. */
+const answerAny=q=>{
+  const rid=q.rid||q.id;
+  let best=S.answers[rid];
+  ((typeof SHADOWS_OF!=='undefined'&&SHADOWS_OF[rid])||[]).forEach(sid=>{
+    const a=S.answers[sid];
+    if(a&&(!best||(a.at||0)>(best.at||0)))best=a;
+  });
+  return best;
+};
+const isDoneAny=q=>answerAny(q)!==undefined;
 const qsIn=ch=>{
+  if(typeof EXAMS_PEDS!=='undefined'&&EXAMS_PEDS[ch]&&typeof SHADOWS_BY_EXAM!=='undefined'&&SHADOWS_BY_EXAM[ch])
+    return SHADOWS_BY_EXAM[ch].filter(bankOn);
   const exam=(typeof EXAMS_NEURO!=='undefined'&&EXAMS_NEURO[ch]);
-  if(exam)return exam.map(id=>QUESTIONS.find(q=>q.id===id)).filter(q=>q&&bankOn(q));
+  if(exam)return exam.map(id=>qById(id)).filter(q=>q&&bankOn(q));
   return QUESTIONS.filter(q=>inChapter(q,ch)&&bankOn(q));
 };
 const qsInModule=m=>QUESTIONS.filter(q=>q.module===m&&bankOn(q));
@@ -321,6 +344,103 @@ function sanitiseBanks(){
     S.banks[mod]=(!kept.length||kept.length===present.length)?[]:kept;
   });
 }
+/* Two sources can mark different answers for one merged question: `answer` is
+   the first source's key, `alsoRight` lists the other source's. Both are right. */
+const isRight=(q,pick)=>pick===q.answer||(q.alsoRight||[]).includes(pick);
+/* "A" or "A or C" — the verdict line. */
+const rightLetters=q=>[q.answer].concat(q.alsoRight||[]).filter((x,i,a)=>a.indexOf(x)===i)
+  .map(i=>'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.charAt(i)).join(' or ');
+
+/* ---- Carry-over of progress from a removed duplicate to the copy kept ------
+   FOLDED = {deadId: keptId} (data/folds.js, empty until a fold ships). Progress
+   saved on a dead id moves to the kept id; the dead key is then deleted.
+   Idempotent: a second run finds no dead key and changes nothing. A shadow id
+   whose real part is dead ("exam~dead") moves to "exam~kept".
+   Fields: answers (later `at` wins; conf follows the winning answer), flags
+   (OR), conf, srs (earlier due wins), hl (kept's wins, else dead's — offsets
+   belong to one printing's text, so two sets are never mixed), notes (text of
+   both kept, latest `at`), reports (later `at` wins), resumeByChapter[*].qid. */
+function foldState(s){
+  if(typeof FOLDED==='undefined'||!FOLDED||!s)return s;
+  const mapId=id=>{
+    if(typeof id!=='string')return id;
+    let cur=id,guard=0;
+    while(Object.prototype.hasOwnProperty.call(FOLDED,cur)&&guard++<20)cur=FOLDED[cur];
+    if(cur!==id)return cur;
+    const t=id.indexOf('~');
+    if(t>0){
+      const real=id.slice(t+1);
+      let k=real;guard=0;
+      while(Object.prototype.hasOwnProperty.call(FOLDED,k)&&guard++<20)k=FOLDED[k];
+      if(k!==real)return id.slice(0,t+1)+k;
+    }
+    return id;
+  };
+  const at=o=>(o&&o.at)||0;
+  const dead=obj=>obj?Object.keys(obj).filter(k=>mapId(k)!==k):[];
+  /* answers first, so conf can follow the winner */
+  const deadWon={};
+  if(s.answers)dead(s.answers).forEach(d=>{
+    const k=mapId(d),a=s.answers[d],b=s.answers[k];
+    if(!b||at(a)>at(b)){s.answers[k]=a;deadWon[k]=true}
+    delete s.answers[d];
+  });
+  if(s.flags)dead(s.flags).forEach(d=>{
+    const k=mapId(d);
+    s.flags[k]=!!(s.flags[k]||s.flags[d]);
+    delete s.flags[d];
+  });
+  if(s.conf)dead(s.conf).forEach(d=>{
+    const k=mapId(d);
+    if(s.conf[k]===undefined||deadWon[k])s.conf[k]=s.conf[d];
+    delete s.conf[d];
+  });
+  if(s.srs)dead(s.srs).forEach(d=>{
+    const k=mapId(d),a=s.srs[d],b=s.srs[k];
+    if(!b||(a&&a.due&&b.due&&a.due<b.due))s.srs[k]=a;
+    delete s.srs[d];
+  });
+  if(s.hl)dead(s.hl).forEach(d=>{
+    const k=mapId(d);
+    if(!s.hl[k]||!s.hl[k].length)s.hl[k]=s.hl[d];
+    delete s.hl[d];
+  });
+  if(s.notes)dead(s.notes).forEach(d=>{
+    const k=mapId(d),a=s.notes[d],b=s.notes[k];
+    if(!b)s.notes[k]=a;
+    else if(a&&a.txt&&a.txt!==b.txt){
+      s.notes[k]={txt:(b.txt?b.txt+'\n':'')+a.txt,at:Math.max(at(a),at(b))};
+    }
+    delete s.notes[d];
+  });
+  if(s.reports)dead(s.reports).forEach(d=>{
+    const k=mapId(d),a=s.reports[d],b=s.reports[k];
+    if(!b||at(a)>at(b))s.reports[k]=a;
+    delete s.reports[d];
+  });
+  if(s.resumeByChapter)Object.keys(s.resumeByChapter).forEach(c=>{
+    const r=s.resumeByChapter[c];
+    if(r&&typeof r.qid==='string')r.qid=mapId(r.qid);
+  });
+  /* A saved timed paper holds question ids (ids, place i, exam.picked keys).
+     Dead ids map to the kept id, duplicates drop (first place wins), the place
+     pointer follows the question it was on, and a kept id's pick beats a dead one. */
+  const mp=s.mockResume&&s.mockResume.paper;
+  if(mp&&Array.isArray(mp.ids)&&mp.ids.some(id=>mapId(id)!==id)){
+    const cur=mp.ids[mp.i],seen={},ids=[];
+    mp.ids.forEach(id=>{const k=mapId(id);if(!seen[k]){seen[k]=true;ids.push(k)}});
+    const at2=ids.indexOf(mapId(cur));
+    mp.ids=ids;
+    if(Number.isInteger(mp.i))mp.i=at2>=0?at2:Math.min(mp.i,ids.length-1);
+  }
+  const pk=mp&&mp.exam&&mp.exam.picked;
+  if(pk&&typeof pk==='object')Object.keys(pk).filter(k=>mapId(k)!==k).forEach(d=>{
+    const k=mapId(d);
+    if(!Object.prototype.hasOwnProperty.call(pk,k))pk[k]=pk[d];
+    delete pk[d];
+  });
+  return s;
+}
 const isAnswered=id=>S.answers[id]!==undefined;
 const isCorrect=id=>S.answers[id]&&S.answers[id].ok;
 /* ⚠️⚠️ NEVER BUILD A CALENDAR DATE WITH toISOString() — IT CONVERTS TO UTC.
@@ -339,6 +459,13 @@ function accuracy(list){
   const a=list.filter(q=>isAnswered(q.id));
   if(!a.length)return null;
   return Math.round(a.filter(q=>isCorrect(q.id)).length/a.length*100);
+}
+/* Module-level accuracy: a question counts once, from whichever place it was
+   answered (see answerAny). */
+function accuracyAny(list){
+  const a=list.map(answerAny).filter(x=>x!==undefined);
+  if(!a.length)return null;
+  return Math.round(a.filter(x=>x&&x.ok).length/a.length*100);
 }
 function accColor(p){
   if(p===null)return 'var(--ink-4)';

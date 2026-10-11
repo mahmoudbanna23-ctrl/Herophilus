@@ -64,13 +64,19 @@ function scheduleSRS(qid,ok){
    An old record saved before ratings existed has no conf at all, and
    undefined matches neither number, so it stays out exactly as before. */
 function inDeck(q){
-  if(!isAnswered(q.id))return false;
-  /* Reset deck: an answer given at or before the reset stamp no longer counts
-     toward the deck; scores and the answer itself are untouched. */
-  if(S.deckResetAt&&(S.answers[q.id].at||0)<=S.deckResetAt)return false;
-  if(!isCorrect(q.id))return true;
-  const c=S.answers[q.id].conf;
-  return c===0||c===1;
+  /* The deck belongs to the question: an answer given in a Pediatrics exam row
+     (stored under the shadow id) counts the same as one given in the topic.
+     Any place that qualifies puts the real question in the deck, once. */
+  const places=[q.id].concat((typeof SHADOWS_OF!=='undefined'&&SHADOWS_OF[q.id])||[]);
+  return places.some(id=>{
+    if(!isAnswered(id))return false;
+    /* Reset deck: an answer given at or before the reset stamp no longer counts
+       toward the deck; scores and the answer itself are untouched. */
+    if(S.deckResetAt&&(S.answers[id].at||0)<=S.deckResetAt)return false;
+    if(!isCorrect(id))return true;
+    const c=S.answers[id].conf;
+    return c===0||c===1;
+  });
 }
 function deckAll(){return QUESTIONS.filter(inDeck)}
 function dueNow(){

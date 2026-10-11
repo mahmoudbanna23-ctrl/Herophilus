@@ -17,19 +17,24 @@ function deskDayMs(iso){
    a deck item (answered, and if correct only at low confidence) with no srs
    record is due; a correct item at max level is excluded; everything else
    follows its srs due date. */
-function ddInDeck(qid,answers){
-  const a=answers[qid];
-  if(!a)return false;
-  if(a.ok!==true)return true;
-  return a.conf===0||a.conf===1;
+function ddInDeck(qid,answers,shadowsOf){
+  /* desk-data is pure and unlinked, so it cannot call utils.js inDeck(); same rule
+     instead: any place (real id or a Pediatrics exam-row id) that qualifies. */
+  const places=[qid].concat((shadowsOf&&shadowsOf[qid])||[]);
+  return places.some(id=>{
+    const a=answers[id];
+    if(!a)return false;
+    if(a.ok!==true)return true;
+    return a.conf===0||a.conf===1;
+  });
 }
-function lettersDue(answers,srs,qIds,today,maxLvl){
+function lettersDue(answers,srs,qIds,today,maxLvl,shadowsOf){
   let n=0;
   for(const qid of qIds){
-    if(!ddInDeck(qid,answers))continue;
+    if(!ddInDeck(qid,answers,shadowsOf))continue;
     const s=srs[qid];
     if(!s){n++;continue}
-    if(answers[qid].ok===true&&s.lvl>=maxLvl)continue;
+    if((answers[qid]||{}).ok===true&&s.lvl>=maxLvl)continue;
     if(s.due<=today)n++;
   }
   const state = n===0?0 : n===1?1 : n<10?'few':'many';

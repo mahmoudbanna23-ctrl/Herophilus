@@ -362,7 +362,7 @@ function clepChapterCount(){
    words. A companion who talks past the second line stops being read. */
 const CL_TIPS={
   home(){
-    const due=dueNow().length, done=QUESTIONS.filter(q=>isAnswered(q.id)).length;
+    const due=dueNow().length, done=QUESTIONS.filter(isDoneAny).length;
     /* On a first visit "0 of 4049 answered, nothing due" is the same empty
        scoreboard the dashboard has just stopped printing, and hearing it from
        her as well makes it two. She says what to do instead. */
@@ -542,7 +542,7 @@ function phaseLeft(){ return Math.max(0,phaseMs()-phaseElapsed()) }
 function sessStats(s){
   let n=0,ok=0;
   QUESTIONS.forEach(q=>{
-    const a=S.answers[q.id];
+    const a=answerAny(q);   /* once per question, latest answer from either place */
     if(a&&a.at&&a.at>=s.startedAt){n++; if(a.ok)ok++}
   });
   return {n:n,ok:ok,acc:n?Math.round(ok/n*100):null};
@@ -579,7 +579,7 @@ function sessScopeIds(scope){
   const m=MODULES.find(x=>x.id===scope);
   if(m){
     const all=qsInModule(m.id);
-    const un=all.filter(q=>!isAnswered(q.id));
+    const un=all.filter(q=>!isDoneAny(q));
     return (un.length?un:all).map(q=>q.id);
   }
   return [];

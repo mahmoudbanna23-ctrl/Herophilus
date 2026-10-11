@@ -656,7 +656,7 @@ function openTheoryFor(qid){
   if(THEORY_LOCKED)return;
   const t=qTheory(qid);
   if(!t)return;
-  const q=QUESTIONS.find(x=>x.id===qid);
+  const q=qById(qid);
   go({name:'theory',mod:q?q.module:'pediatrics',ch:t.ch,sec:t.sec});
 }
 

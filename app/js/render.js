@@ -10,7 +10,7 @@ function go(v){
     }
   }
   if(v.name==='quiz'&&(!Q.ids.length||
-     Q.ids.some(id=>!QUESTIONS.some(q=>q.id===id))))v={name:'home'};
+     Q.ids.some(id=>!qById(id))))v={name:'home'};
   view=v;render();window.scrollTo(0,0);closeRail();
 }
 /* Screens where the learner READS for minutes at a time. The cinematic layer
@@ -173,8 +173,8 @@ function renderNav(){
 /* ============ DASHBOARD ============ */
 function vHome(p){
   const total=QUESTIONS.length;
-  const done=QUESTIONS.filter(q=>isAnswered(q.id)).length;
-  const acc=accuracy(QUESTIONS);
+  const done=QUESTIONS.filter(isDoneAny).length;
+  const acc=accuracyAny(QUESTIONS);
   const due=dueNow().length;
   /* A profile that has answered nothing has nothing to stand on, and the four
      stat tiles say so in the bluntest possible way: 0 / — / 0 / 0. That is an
@@ -240,8 +240,8 @@ function vHome(p){
   let modsHTML=`<h2>${fresh?'Subjects':'Modules'}</h2><div class="grid g3 mod-grid">`;
   activeModules().forEach(m=>{
     const qs=qsInModule(m.id);
-    const d=qs.filter(q=>isAnswered(q.id)).length;
-    const a=accuracy(qs);
+    const d=qs.filter(isDoneAny).length;
+    const a=accuracyAny(qs);
     const pct=qs.length?d/qs.length*100:0;
     const chs=m.groups.reduce((n,g)=>n+g.chapters.length,0);
     /* A locked subject keeps its card and its artwork — dropping it would read
@@ -291,11 +291,11 @@ function vHome(p){
 function vModule(p){
   const m=moduleOf(view.id);
   const qs=qsInModule(m.id);
-  const a=accuracy(qs);
+  const a=accuracyAny(qs);
   let h=`<button class="tb-btn" style="padding-left:0;margin-bottom:8px" onclick="go({name:'home'})">← Dashboard</button>
   <div class="eyebrow" style="background:${m.hex}">${m.name}</div>
   <h1>${ico(m.icon,26)} ${m.name}</h1>
-  <p class="page-sub">${qs.length} question${qs.length===1?'':'s'} · ${qs.filter(q=>isAnswered(q.id)).length} answered${a!==null?` · <b style="color:${accColor(a)}">${a}% accuracy</b>`:''}</p>`;
+  <p class="page-sub">${qs.length} question${qs.length===1?'':'s'} · ${qs.filter(isDoneAny).length} answered${a!==null?` · <b style="color:${accColor(a)}">${a}% accuracy</b>`:''}</p>`;
 
   /* Source filter. Only rendered for banks this module actually has questions
      from, so an empty module does not offer four dead toggles. */
@@ -325,7 +325,13 @@ function vModule(p){
     const un=qs.filter(q=>!isAnswered(q.id));
     /* Neuropsychiatry is two subjects examined apart (owner 2026-10-02): one
        "practise all" per half, by the question's topic chapter. */
-    const halves=m.id==='neuropsych'?m.groups.filter(g=>g.name==='Neurology'||g.name==='Psychiatry'):[];
+    let halves=m.id==='neuropsych'?m.groups.filter(g=>g.name==='Neurology'||g.name==='Psychiatry'):[];
+    /* Pediatrics is split the same way by the group's paper tag (owner
+       2026-10-11); groups with no tag (the model-exam group) serve neither. */
+    if(m.id==='pediatrics'){
+      const pp=[1,2].map(n=>({name:'Paper '+n,chapters:m.groups.filter(g=>g.paper===n).reduce((a,g)=>a.concat(g.chapters),[])}));
+      if(pp.every(x=>x.chapters.length))halves=pp;
+    }
     const allBtn=halves.length===2?halves.map(g=>{
       const ids=g.chapters.map(c=>c[0]);
       const gq=qs.filter(q=>ids.indexOf(q.chapter)>=0);
@@ -337,7 +343,9 @@ function vModule(p){
     </div>`;
   }
 
+  let lastPaper=null;
   m.groups.forEach(g=>{
+    if(g.paper&&g.paper!==lastPaper){lastPaper=g.paper;h+=`<div class="paperhdr">Paper ${g.paper}</div>`;}
     h+=`<div class="grouphdr">${g.name}</div>`;
     g.chapters.forEach(([cid,cname])=>{
       const cq=qsIn(cid);

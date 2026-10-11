@@ -252,7 +252,8 @@ function mergeStates(a,b){
     x.paper===null?x:y.paper===null?y:
     (JSON.stringify(x)>=JSON.stringify(y)?x:y);
   out.updatedAt=Math.max(at,bt);
-  return out;
+  /* An un-updated device must not push a dead duplicate id back into the cloud. */
+  return foldState(out);
 }
 async function pullCloud(){
   const ref=docRef();

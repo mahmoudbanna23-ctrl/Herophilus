@@ -165,8 +165,11 @@ function showBackup(){
 function bakConfirm(at){
   const box=bakRead(), s=box.snaps.find(x=>x.at===at);
   if(!s){toast('That snapshot is gone');return}
-  let n=0; try{ n=Object.keys(JSON.parse(s.json).answers||{}).length }catch(e){}
-  const now=Object.keys(S.answers||{}).length;
+  /* Count questions, not records: a Pediatrics question answered in a topic and in
+     an exam row has two keys (shadow id + real id) but is one answered question. */
+  const countQs=o=>new Set(Object.keys(o||{}).map(realId)).size;
+  let n=0; try{ n=countQs(JSON.parse(s.json).answers) }catch(e){}
+  const now=countQs(S.answers);
   showModal(`<h3>Restore ${bakWhen(at)}?</h3>
    <p>That snapshot holds <b>${n}</b> answered question${n===1?'':'s'}. You currently have <b>${now}</b>.
       Restoring replaces what is on this device now.</p>
@@ -264,7 +267,8 @@ function checkedProgressState(st){
     schedule:schedule,updatedAt:num,editSched:bool,sess:session,
     sessLog:log,mockResume:validMockResume};
   Object.keys(extra).forEach(k=>{if(!optional(out,k,extra[k]))bad(k)});
-  return out;
+  /* Progress saved on a removed duplicate moves to the copy kept. */
+  return foldState(out);
 }
 function importData(e){
   const f=e.target.files[0];if(!f)return;
@@ -339,7 +343,7 @@ document.addEventListener('keydown',e=>{
     if(e.key==='End'){e.preventDefault();BK.page=BK.pages-1;bkPaint();return}
   }
   if(view.name!=='quiz')return;
-  const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+  const q=qById(Q.ids[Q.i]);
   if(!q)return;
   const k=e.key.toUpperCase();
   if(!Q.shown&&q.options&&k.length===1){const i=OPT_LETTERS.indexOf(k);if(i>=0&&i<q.options.length){pick(i,true);return}}

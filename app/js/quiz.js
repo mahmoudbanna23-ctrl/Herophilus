@@ -36,7 +36,7 @@ function savedMockProblem(r){
   if(!validMockResume(r))return 'The saved paper is damaged and cannot be resumed. Download a copy before discarding it.';
   const p=r.paper;
   const unavailable=p.ids.some(id=>{
-    const q=QUESTIONS.find(x=>x.id===id);
+    const q=qById(id);
     return !q||!mockable(q)||!Array.isArray(q.options)||!q.options.length||
       (Object.prototype.hasOwnProperty.call(p.exam.picked,id)&&p.exam.picked[id]>=q.options.length);
   });
@@ -88,7 +88,7 @@ function startChapter(cid,restart=false){
   if(!qs.length){toast('No questions in this chapter with the current sources. Change the source filter to continue.');return}
   const r=(S.resumeByChapter||{})[cid];
   if(r&&!r.finished&&!restart&&!qs.some(q=>q.id===r.qid)){
-    const exists=QUESTIONS.some(q=>q.id===r.qid&&inChapter(q,cid));
+    const exists=(q=>!!q&&inChapter(q,cid))(qById(r.qid));
     showModal(`<h3>Saved question unavailable</h3>
       <p>${exists?'Your current source filter excludes the saved question. Change the source filter to continue there, or restart with the current sources.':'The saved question is no longer in this chapter. You can restart with the current questions.'}</p>
       <div class="modal-actions">
@@ -130,12 +130,11 @@ function startQuiz(ids,title,chapter=null,qid=null,exam=null){
   if(!ids||!ids.length){toast('No questions there yet');return}
   /* A stale button must not open another term. Reject the set intact rather
      than quietly shortening a paper and changing what its score means. */
-  const available=new Set(QUESTIONS.map(q=>q.id));
-  if(ids.some(id=>!available.has(id))){
+  if(ids.some(id=>!qById(id))){
     toast('Those questions are unavailable in this semester.');
     return;
   }
-  const q=QUESTIONS.find(x=>x.id===ids[0]);
+  const q=qById(ids[0]);
   Q={ids:ids.slice(),i:Math.max(0,ids.indexOf(qid)),title:title,sel:null,shown:false,t0:Date.now(),txt:'',peek:false,caret:null,did:{},
      attempts:{},chapter:chapter,sources:chapter&&q?(S.banks[q.module]||[]).slice():[],exam:exam};
   strikeQuestion=null;strikes=new Set(); /* a restart or a profile switch on the same question must not inherit strikes */
@@ -186,7 +185,7 @@ function gradeCase(q,txt){
   return {hits:hits,got:got,total:keys.length,ok:keys.length>0&&got===keys.length,blank:!hay};
 }
 function revealCase(){
-  const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+  const q=qById(Q.ids[Q.i]);
   const el=document.getElementById('caseInput');
   const txt=el?el.value:'';
   if(!normTxt(txt)){toast('Type a diagnosis first');return}
@@ -194,7 +193,7 @@ function revealCase(){
   const g=gradeCase(q,txt);
   if(!S.answers[q.id]||S.answers[q.id].text!==txt){
     S.answers[q.id]={text:txt,got:g.got,total:g.total,ok:g.ok,at:Date.now()};
-    scheduleSRS(q.id,g.ok);
+    scheduleSRS(shareKey(q),g.ok);
   }
   /* Outside the storage guard on purpose: retyping the same words is still an
      attempt made in this sitting, and the set's score is about the sitting. */
@@ -216,7 +215,7 @@ function vCase(p,q,m,prev){
      point is to type the diagnosis first (user's instruction, 2026-07-26).
      A new run starts blank; movement within a run keeps its attempt. The
      previous score is shown as a chip so the earlier score is not lost. */
-  const flagged=!!S.flags[q.id];
+  const flagged=!!S.flags[shareKey(q)];
   const g=(Q.shown&&!Q.peek)?gradeCase(q,Q.txt):null;
   const verdict=Q.peek?['bad',ico('eye',18),'Revealed — not scored']
     :!g?null:(g.ok?['ok',ico('target',18),'Spot on']
@@ -281,8 +280,8 @@ function vCase(p,q,m,prev){
       <div class="ex-body">${hasExp?md(q.explanation):'<div class="noexp">No explanation came with this case.</div>'}
       ${q.objective?`<div class="objective"><b>${ico('laurel',15)} Educational objective</b>${md(q.objective).replace(/<\/?p>/g,'')}</div>`:''}
       </div></div>`;
-    const th=THEORY_LOCKED?null:qTheory(q.id);
-    if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">
+    const th=THEORY_LOCKED?null:qTheory(shareKey(q));
+    if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${shareKey(q)}')">
       ${ico('scroll',16)} <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
       <span style="margin-left:auto">&rarr;</span></button>`;
     h+=`<div class="qactions">
@@ -296,7 +295,7 @@ function vCase(p,q,m,prev){
   p.innerHTML=h;
   const stemEl=p.querySelector('.stem');
   if(stemEl){
-    applyHighlights(stemEl,S.hl[q.id]||[]);
+    applyHighlights(stemEl,S.hl[shareKey(q)]||[]);
     stemEl.addEventListener('mouseup',onStemSelect);
     stemEl.addEventListener('touchend',onStemSelect);
   }
@@ -333,8 +332,11 @@ function toggleStrike(i,e){
   if(btn&&btn.focus)btn.focus();
 }
 
+/* Two sources mark different answers for a merged question: both count as right. */
+const twoRight=q=>!!(q&&Array.isArray(q.alsoRight)&&q.alsoRight.length);
+const twoRightNotice=q=>twoRight(q)?'<div class="two-right">Two sources mark different answers here. Both count as right \u2014 read the explanation.</div>':'';
 function vQuiz(p){
-  const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+  const q=qById(Q.ids[Q.i]);
   /* backticks, not quotes: ico() contains single quotes, which would close a
      single-quoted string and take the whole script down with it */
   if(!q){p.innerHTML=`<div class="empty"><div class="big">${ico('laurel',46)}</div><h3>Set complete</h3></div>`;return}
@@ -342,7 +344,7 @@ function vQuiz(p){
   const prev=S.answers[q.id];
   if(strikeQuestion!==q.id){strikeQuestion=q.id;strikes=new Set()}
   if(q.type==='case'){vCase(p,q,m,prev);return}
-  const flagged=!!S.flags[q.id];
+  const flagged=!!S.flags[shareKey(q)];
 
   const qhead=`<div class="qreading-head"><span>${esc(chapterName(q.chapter))}</span>
      <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length}</button>
@@ -357,16 +359,17 @@ function vQuiz(p){
   let h=`<div class="qwrap">${qhead}<div class="qcard">
     <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
     <div class="stem-tools">${markbar(q.id)}</div>
+    ${twoRightNotice(q)}
     ${qFigure(q)}
     <div class="opts">`;
   q.options.forEach((o,i)=>{
     let cls='opt';
-    if(Q.shown){ if(i===q.answer)cls+=' correct'; else if(i===Q.sel)cls+=' wrong' }
+    if(Q.shown){ if(isRight(q,i))cls+=' correct'; else if(i===Q.sel)cls+=' wrong' }
     else if(i===Q.sel)cls+=' sel';
     const answered=Q.shown||Q.sel!==null||(Q.exam&&Object.prototype.hasOwnProperty.call(Q.exam.picked,q.id));
     const struck=!answered&&strikes.has(i);
     if(struck)cls+=' struck';
-    const mark=Q.shown?(i===q.answer?'<span class="mark">\u2713</span>':(i===Q.sel?'<span class="mark">\u00d7</span>':'')):'';
+    const mark=Q.shown?(isRight(q,i)?'<span class="mark">\u2713</span>':(i===Q.sel?'<span class="mark">\u00d7</span>':'')):'';
     h+=`<div class="${cls}">
       <button type="button" class="opt-answer" ${Q.shown?'disabled':''} onclick="pick(${i},event.detail===0)">
       <span class="ltr">${OPT_LETTERS[i]}</span><span class="opt-text">${esc(o)}</span>${mark}</button>
@@ -402,9 +405,9 @@ function vQuiz(p){
         <button class="btn sec" onclick="navQ(1)">Skip →</button>
       </div></div>`;
   }else{
-    const ok=Q.sel===q.answer;
+    const ok=isRight(q,Q.sel);
     h+=`<div class="verdict ${ok?'ok':'bad'}"><span class="big">${ok?ico('target',26):ico('laurel',26)}</span>
-      ${ok?'Correct.':'Not quite — the answer is '+OPT_LETTERS[q.answer]}</div>`;
+      ${ok?'Correct.'+(twoRight(q)?' The accepted answers are '+rightLetters(q)+'.':''):'Not quite — the answer is '+rightLetters(q)}</div>`;
 
     if(!prev||prev.conf===undefined){
       h+=`<div class="conf"><div class="conf-q">${ico('target',15)} How sure were you? This sets when it comes back.</div>
@@ -422,16 +425,16 @@ function vQuiz(p){
       ${q.objective?`<div class="objective"><b>${ico('laurel',15)} Educational objective</b>${md(q.objective).replace(/<\/?p>/g,'')}</div>`:''}
       </div></div>`;
 
-    const th=THEORY_LOCKED?null:qTheory(q.id);
-    if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">
+    const th=THEORY_LOCKED?null:qTheory(shareKey(q));
+    if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${shareKey(q)}')">
       ${ico('scroll',16)} <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
       <span style="margin-left:auto">&rarr;</span></button>`;
 
     /* An emptied note is kept as a stamped blank so it can win a merge (see
        saveNote), which means a record with no text is not a note. */
-    const noteRec=(S.notes||{})[q.id];
+    const noteRec=(S.notes||{})[shareKey(q)];
     const note=(noteRec&&noteRec.txt)?noteRec:null;
-    const reported=!!(S.reports||{})[q.id];
+    const reported=!!(S.reports||{})[shareKey(q)];
     h+=`<div class="qfoot">
       <button class="lnk ${note?'has':''}" onclick="toggleNote('${q.id}')">${note?'Your note':'Write a note on this'}</button>
       <button class="lnk ${reported?'has':''}" onclick="openReport('${q.id}')">${reported?'You reported this':'Something wrong here?'}</button>
@@ -456,7 +459,7 @@ function vQuiz(p){
   p.innerHTML=h;
   const stemEl=p.querySelector('.stem');
   if(stemEl){
-    applyHighlights(stemEl,S.hl[q.id]||[]);
+    applyHighlights(stemEl,S.hl[shareKey(q)]||[]);
     stemEl.addEventListener('mouseup',onStemSelect);
     stemEl.addEventListener('touchend',onStemSelect);
   }
@@ -472,9 +475,9 @@ function pick(i,byKey){
      fired one at a time as the student worked down the page would be forty
      separate reviews of the same sitting. It runs once each, at hand-in. */
   if(Q.exam){
-    const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+    const q=qById(Q.ids[Q.i]);
     Q.exam.picked[q.id]=i;
-    S.answers[q.id]={pick:i,ok:i===q.answer,at:Date.now()};
+    S.answers[q.id]={pick:i,ok:isRight(q,i),at:Date.now()};
     saveResume();
   }
   /* The student who tabbed to option C and pressed Enter must not have to tab
@@ -496,14 +499,14 @@ function pick(i,byKey){
 function reveal(){
   if(Q.exam)return;                       /* no peeking: the promise on the mock page */
   if(Q.shown||Q.sel===null)return;
-  const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
-  const ok=Q.sel===q.answer;
+  const q=qById(Q.ids[Q.i]);
+  const ok=isRight(q,Q.sel);
   Q.shown=true;
   /* Repeating the same choice is still a new recall attempt. Schedule once
      on submission, never when revisiting the result inside this run. */
   S.answers[q.id]={pick:Q.sel,ok:ok,at:Date.now()};
   Q.did[q.id]=ok;                         /* what THIS sitting scored — see finishSet */
-  scheduleSRS(q.id,ok);
+  scheduleSRS(shareKey(q),ok);
   markDayActive();save();render();
   /* she reacts, then settles back to the screen's own pose */
   clepPose(ok?'dancing':'surprised'); clepSettle(3200);
@@ -525,13 +528,13 @@ function reveal(){
    put it at rung 0, due tomorrow, and tomorrow is the floor — no rating can
    make it come back sooner, and none should make it come back later. */
 function setConf(id,c){
-  S.conf[id]=c;
+  S.conf[realId(id)]=c;
   if(S.answers[id]){
     S.answers[id].conf=c;
     if(isCorrect(id)&&(c===0||c===1)){
       const lvl=c===0?0:1;
       const d=new Date();d.setDate(d.getDate()+SRS[lvl]);
-      S.srs[id]={lvl:lvl,due:isoLocal(d)};
+      S.srs[realId(id)]={lvl:lvl,due:isoLocal(d)};
       /* Rated after a deck reset that this answer predates: restamp it, or
          inDeck drops it and the toast below would be false. */
       if(S.deckResetAt&&(S.answers[id].at||0)<=S.deckResetAt)S.answers[id].at=Date.now();
@@ -600,7 +603,7 @@ function vResults(p){
     <button class="btn sec" onclick="go({name:'home'})">Return home</button></div>${r.mins?`<p class="quiet result-mins">${r.mins} minute${r.mins===1?'':'s'} taken</p>`:''}</section>`;
   if(r.wrong.length)h+=`<section class="wrong-queue"><h2>Wrong answers${r.missed?` (${r.missed})`:''}</h2>`;
   if(r.wrong.length){
-    h+=`<div class="wrong-list">${r.wrong.map(id=>{const q=QUESTIONS.find(x=>x.id===id);return `<div class="wrong-row">${q?mdInline(q.stem):'Question'}</div>`}).join('')}</div>
+    h+=`<div class="wrong-list">${r.wrong.map(id=>{const q=qById(id);return `<div class="wrong-row">${q?mdInline(q.stem):'Question'}</div>`}).join('')}</div>
       <button class="btn go" onclick="startQuiz(${JSON.stringify(r.wrong).replace(/"/g,'&quot;')},'Session review — wrong answers')">Review wrong answers</button>`;
   }
   if(r.wrong.length)h+=`</section>`;
@@ -676,7 +679,7 @@ function examFinish(byClock){
      today's mark. */
   /* Progress may have changed while the paper was away. Its mark must come
      from its own picks, not a later practice answer or a cloud merge. */
-  const correct=id=>picked[id]===QUESTIONS.find(q=>q.id===id).answer;
+  const correct=id=>isRight(qById(id),picked[id]);
   answered.forEach(id=>scheduleSRS(id,correct(id)));
   markDayActive(); saveResume();
   const right=answered.filter(correct).length;
@@ -754,7 +757,7 @@ function saveNote(qid,txt){
   clearTimeout(NOTE_T);
   if(!S.notes)S.notes={};
   const t=(txt||'').trim();
-  S.notes[qid]={txt:t,at:Date.now()};
+  S.notes[realId(qid)]={txt:t,at:Date.now()};
   NOTE_DIRTY=true;
   const say=$('qNoteSay'); if(say)say.textContent='Saving…';
   NOTE_T=setTimeout(()=>{
@@ -776,8 +779,8 @@ const REPORT_KINDS=[
   ['other','Something else'],
 ];
 function openReport(qid){
-  const q=QUESTIONS.find(x=>x.id===qid); if(!q)return;
-  const old=(S.reports||{})[qid];
+  const q=qById(qid); if(!q)return;
+  const old=(S.reports||{})[realId(qid)];
   showModal(`<h3>${ico('stylus',19)} Something wrong with this question</h3>
    <p style="margin-bottom:15px">Tell us what you saw and we will check it against the book. Nothing you write here changes your score.</p>
    <div class="conf-btns" id="repKinds" style="flex-wrap:wrap;margin-bottom:13px">
@@ -809,7 +812,7 @@ function sendReport(qid){
   const r=reportText(qid);
   if(!r.kind&&!r.txt){toast('Pick what is wrong, or write a line');return}
   if(!S.reports)S.reports={};
-  S.reports[qid]={kind:r.kind||'other',txt:r.txt,at:Date.now()};
+  S.reports[realId(qid)]={kind:r.kind||'other',txt:r.txt,at:Date.now()};
   save();
   closeModal();
   render();
@@ -817,7 +820,7 @@ function sendReport(qid){
 }
 function copyReport(qid){
   const r=reportText(qid);
-  const line=qid+' — '+r.label+(r.txt?': '+r.txt:'');
+  const line=realId(qid)+' — '+r.label+(r.txt?': '+r.txt:'');
   const done=()=>toast('Copied — paste it wherever you like');
   /* The old path is the fallback for a REJECTION as well as for an absent API.
      navigator.clipboard exists over file:// and on any page the browser does
@@ -838,7 +841,7 @@ function copyReport(qid){
   }else legacy();
 }
 
-function toggleFlag(id){S.flags[id]=!S.flags[id];save();render();toast(S.flags[id]?'Flagged':'Flag removed')}
+function toggleFlag(id){id=realId(id);S.flags[id]=!S.flags[id];save();render();toast(S.flags[id]?'Flagged':'Flag removed')}
 function toggleExp(b){b.classList.toggle('open');b.nextElementSibling.classList.toggle('open')}
 
 
@@ -874,7 +877,7 @@ function openJump(){
        would light a question green before the student had even reached it. */
     else if(Q.exam){ if(id in Q.exam.picked)cls.push('done') }
     else if(isAnswered(id))cls.push(isCorrect(id)?'ok':'bad');
-    if(S.flags[id])cls.push('flagged');
+    if(S.flags[realId(id)])cls.push('flagged');
     h+=`<button class="${cls.join(' ')}" onclick="jumpTo(${i})">${i+1}</button>`;
   });
   h+=`</div><div class="modal-actions" style="margin-top:18px">
@@ -984,9 +987,9 @@ function onStemSelect(){
   const s=offsetOf(root,r.startContainer,r.startOffset);
   const e=offsetOf(root,r.endContainer,r.endOffset);
   if(s<0||e<0||e<=s)return;
-  const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+  const q=qById(Q.ids[Q.i]);
   if(!q)return;
-  let list=carve(S.hl[q.id]||[],s,e);
+  let list=carve(S.hl[shareKey(q)]||[],s,e);
   if(armed!=='er')list.push({s:s,e:e,c:armed});
   list.sort((a,b)=>a.s-b.s);
   /* merge touching runs of the same colour */
@@ -996,19 +999,19 @@ function onStemSelect(){
     if(p&&p.c===h.c&&h.s<=p.e)p.e=Math.max(p.e,h.e);
     else merged.push(Object.assign({},h));
   });
-  S.hl[q.id]=merged;
+  S.hl[shareKey(q)]=merged;
   sel.removeAllRanges();
   save();
   applyHighlights(root,merged);
 }
 function clearHl(){
-  const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+  const q=qById(Q.ids[Q.i]);
   if(!q)return;
-  delete S.hl[q.id];save();render();
+  delete S.hl[shareKey(q)];save();render();
   toast('Highlights cleared');
 }
 function markbar(qid){
-  const n=(S.hl[qid]||[]).length;
+  const n=(S.hl[realId(qid)]||[]).length;
   let h=`<div class="mkbar"><span class="lb">${ico('stylus',14)} Marker</span>`;
   PENS.forEach(([c,name])=>{
     h+=`<button class="pen ${c} ${armed===c?'on':''}" title="${name} highlighter" onclick="setPen('${c}')"></button>`;
@@ -1046,7 +1049,7 @@ function weakChapters(){
       g.chapters.forEach(([cid,cname])=>{
         /* Topic buckets preserve module totals; exam rows deliberately read
            their separate ordered membership and never enter those totals. */
-        const cq=(typeof EXAMS_NEURO!=='undefined'&&EXAMS_NEURO[cid])?qsIn(cid):by[cid];
+        const cq=((typeof EXAMS_NEURO!=='undefined'&&EXAMS_NEURO[cid])||(typeof EXAMS_PEDS!=='undefined'&&EXAMS_PEDS[cid]))?qsIn(cid):by[cid];
         if(!cq||!cq.length)return;
         /* One walk of the chapter, not three filters and then accuracy() over
            the same array again. The accuracy is the same number accuracy(cq)
@@ -1133,7 +1136,7 @@ function vReview(p){
   h+=`<div class="grid g4" style="margin-bottom:24px">
     <div class="stat"><span class="emo">${ico('hourglass',20)}</span><div class="n" style="color:${due.length?'var(--ent)':'var(--ok)'}">${due.length}</div><div class="l">Due today</div></div>
     <div class="stat"><span class="emo">${ico('amphora',20)}</span><div class="n">${deck.length}</div><div class="l">In the deck</div></div>
-    <div class="stat"><span class="emo">${ico('target',20)}</span><div class="n">${deck.filter(q=>S.answers[q.id].conf===0&&isCorrect(q.id)).length}</div><div class="l">Lucky guesses</div></div>
+    <div class="stat"><span class="emo">${ico('target',20)}</span><div class="n">${deck.filter(q=>{const a=answerAny(q);return a&&a.ok&&a.conf===0}).length}</div><div class="l">Lucky guesses</div></div>
     <div class="stat"><span class="emo">${ico('laurel',20)}</span><div class="n">${deck.filter(q=>(S.srs[q.id]||{}).lvl>=3).length}</div><div class="l">Nearly retired</div></div>
   </div>`;
   if(due.length){
@@ -1157,7 +1160,8 @@ function vReview(p){
     md_.forEach(q=>{
       const s=S.srs[q.id]||{lvl:0,due:todayISO()};
       const isDue=s.due<=todayISO();
-      const guess=isCorrect(q.id)&&S.answers[q.id].conf===0;
+      const ga=answerAny(q);   /* a deck question may be answered only in an exam row */
+      const guess=!!(ga&&ga.ok&&ga.conf===0);
       h+=`<button class="ch-row" onclick="startQuiz(['${q.id}'],'Single question')">
         <span class="ch-dot" style="background:${isDue?'var(--ent)':'var(--line-2)'}"></span>
         <span class="ch-name" style="font-size:13.2px;font-weight:600">${guess?ico('target',13)+' ':''}${esc(q.stem.slice(0,96))}…</span>
