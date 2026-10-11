@@ -494,3 +494,37 @@ Commits since, pushed: `6853e495` fix pass 2 · `d6a58e0f` fix pass 3.
   shell reports when `doors.png` lands. Next: Haiku looks at it; Sonnet builder does the doors
   half of `briefs/build-round2-b.md` plus the final owner stills; Haiku look-over; Codex check
   with `briefs/check-walkin.md`; then screenshots to the owner and STOP.
+
+## EVENING BLOCK, close — state at 22:10. SCREENSHOTS SENT; WAITING FOR THE OWNER'S VERDICT.
+
+Commits since, pushed: `b55fce7b` doors · `0b05d70d` doors fix.
+
+- **Doors LANDED.** `paint/doors.png` made 21:06 by the 16:34 shell. Leaves `door-l.png` /
+  `door-r.png` 256x810, 885.5 KB together; seam column 509, split at 512; arch zone squashed about
+  20 percent to fit the painted doorway (ring handles slightly oval). `rotateY` 0 -> 100 -> 0.
+  Fix pass: leaves in the first markup, removed only by the 3 s fallback; never built for reduced
+  motion; light leaves warmer plus a contact shadow; mid-swing gap interior. Reports:
+  `D:\scratch 2026\redesign\round2d\build-doors-report.md`, `round2e\build-doorsfix-report.md`;
+  look-overs `round2d\r2d-look.txt`, `round2e\r2e-look.txt`.
+- **Owner set sent** (30 stills): home `r2e-*-doors-shut` + `r2e-*-hall`, subject page
+  `r2g-*-module`, question `r2h-*-question-wrong`, theory `r2g-*-theory`; three sizes, both looks.
+- **Outside check (Codex, read-only) = FAIL.** Report `D:\scratch 2026\redesign\check2\check-report.txt`,
+  launcher `check2\run-check.sh`. NOT fixed, held until the owner's verdict:
+  - `hall.js:577` the 450 ms alcove-push timer is never cancelled on leaving home; parallax frames
+    593-597 not cancelled.
+  - `hall.js:332` the no-library fallback still enables parallax (animation frames) and the push timer.
+  - `hall.js:537` the return-to-hall flag is consumed only inside `startWalk`; reduced-motion and
+    fallback paths never consume it.
+  - `warm.css:135` redefines `--rail-dim` (a text token).
+  - `hall.js:503` the scroll animates SVG ring stroke; round-1 brief asked for it, check rule (a)
+    forbids it: contracts conflict, owner or orchestrator rules.
+  - `r2e-1180x820-<dark|light>-hall`: blurred band above the pulled-back hall with a step line
+    (brown smear in light). Full fix = the `pb` geometry in `layout()` in `hall.js`.
+  - Light look: doors read cooler than the cream stone; mid-swing gap washes out to cream.
+  - Light theory sheet is pale (`components.css:884`, base app, outside the footprint).
+  - The Clepsydra speech bubble covers controls and rows on question, subject and theory pages
+    (`clepsydra.js` ~369/375, `views.css` `.cl-say` 785-795: outside the footprint; owner's call).
+  - Passing-state only, not faults: plates lapped by the rising sheet in `-below`.
+  - Check passed: all `warm.css` / `type.css` rules inside `@media screen` (brace walk); font bytes
+    match the source files exactly; which-face table gives per-sign evidence.
+- Not shot: 1024x1366 and phones. Still open: button pick (suggested 139 main, 21 quiet).
