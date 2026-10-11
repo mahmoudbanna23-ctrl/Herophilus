@@ -1,0 +1,38 @@
+{
+  "job": "D:\\claude os\\Medical school\\Herophilus\\content\\peds\\qb-pages\\dupes\\second-pass\\check-job",
+  "items": 7,
+  "ok": 7,
+  "failed": 0,
+  "skipped": 0,
+  "called": 7,
+  "perHouse": {
+    "groq": {
+      "calls": 7,
+      "costUsd": 0
+    }
+  },
+  "perWorker": {
+    "text": {
+      "calls": 7,
+      "accepted": 7,
+      "rejected": 0,
+      "busySeconds": 9.628,
+      "waiting": 0,
+      "unavailable": false,
+      "dailyAllowanceUsedUp": false
+    }
+  },
+  "stoppedReason": "",
+  "startedAt": "2026-10-11T15:24:03.056Z",
+  "machine": "text",
+  "retired": [],
+  "notes": [],
+  "unexamined": [
+    "text"
+  ],
+  "familyUnknown": [
+    "text"
+  ],
+  "canaries": [],
+  "endedAt": "2026-10-11T15:24:12.835Z"
+}

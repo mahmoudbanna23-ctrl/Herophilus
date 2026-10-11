@@ -18,7 +18,7 @@
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
-const { execFileSync } = require('child_process');
+const { execFileSync, spawn } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..', '..', '..', '..', '..');
 const SHOTS = 'D:\\scratch 2026\\peds-exam-rows';
@@ -178,6 +178,58 @@ function runChrome(INDEX, w, h, shotPath) {
   return { ok: false, err: lastErr };
 }
 
+/* Screenshots via CDP. Cause of the old gate-covered PNGs: --screenshot fires at the load
+   event, but the report script (enterProfile, go) only runs 1.2 s + 0.6 s AFTER load, so
+   the picture was taken before the gate was dismissed. Here we wait for the EXAMREPORT
+   title (measure() finished), then capture, and scroll to the exam group for the second. */
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+async function shootCdp(INDEX, w, h, outTop, outExams) {
+  const udd = path.join(WORK, 'chrome_cdp_' + w + 'x' + h);
+  const proc = spawn(browser, ['--headless=new', '--disable-gpu', '--no-sandbox', '--no-first-run',
+    '--disable-extensions', '--allow-file-access-from-files', '--hide-scrollbars',
+    '--remote-debugging-port=0', '--remote-allow-origins=*',
+    '--window-size=' + w + ',' + h, '--user-data-dir=' + udd, 'about:blank'], { stdio: 'ignore', windowsHide: true });
+  try {
+    let port = null;
+    for (let i = 0; i < 100 && !port; i++) {
+      const f = path.join(udd, 'DevToolsActivePort');
+      if (fs.existsSync(f)) port = fs.readFileSync(f, 'utf8').split(/\r?\n/)[0]; else await sleep(100);
+    }
+    if (!port) throw new Error('no CDP port');
+    const tgt = await (await fetch('http://127.0.0.1:' + port + '/json/new?about:blank', { method: 'PUT' })).json();
+    const ws = new WebSocket(tgt.webSocketDebuggerUrl.replace('localhost', '127.0.0.1'));
+    await new Promise((res, rej) => { ws.onopen = res; ws.onerror = () => rej(new Error('ws error')); });
+    let id = 0; const pend = new Map();
+    ws.onmessage = ev => { const m = JSON.parse(ev.data); if (m.id && pend.has(m.id)) { const p = pend.get(m.id); pend.delete(m.id); m.error ? p.rej(new Error(JSON.stringify(m.error))) : p.res(m.result); } };
+    const send = (method, params = {}) => new Promise((res, rej) => { const i = ++id; pend.set(i, { res, rej }); ws.send(JSON.stringify({ id: i, method, params })); });
+    const ev = async expr => (await send('Runtime.evaluate', { expression: expr, returnByValue: true })).result.value;
+    await send('Page.enable');
+    await send('Emulation.setDeviceMetricsOverride', { width: w, height: h, deviceScaleFactor: 1, mobile: false });
+    await send('Page.navigate', { url: 'file:///' + INDEX.replace(/\\/g, '/') });
+    let ready = false;
+    for (let i = 0; i < 100 && !ready; i++) { await sleep(300); ready = await ev('document.title.indexOf("EXAMREPORT")===0').catch(() => false); }
+    if (!ready) throw new Error('page never reached EXAMREPORT');
+    await sleep(400);
+    const shot = async file => { const r = await send('Page.captureScreenshot', { format: 'png', captureBeyondViewport: false }); fs.writeFileSync(file, Buffer.from(r.data, 'base64')); };
+    // (1) top of the Pediatrics module view
+    await ev('(function(){window.scrollTo(0,0);var s=document.scrollingElement;if(s)s.scrollTop=0;var m=document.querySelector("main,#app,#view");if(m)m.scrollTop=0;})()');
+    await sleep(300);
+    const gateUp = await ev('(function(){var g=document.getElementById("gate");return !g||!g.classList.contains("hide")||getComputedStyle(g).display!=="none"&&getComputedStyle(g).visibility!=="hidden"&&g.getBoundingClientRect().height>0&&!g.classList.contains("hide");})()');
+    await shot(outTop);
+    // (2) scrolled so the Model Final Exams group and its rows are in view
+    await ev('(function(){var b=Array.prototype.filter.call(document.querySelectorAll(".ch-row"),function(x){return (x.getAttribute("onclick")||"").indexOf("startChapter(\'pedep-mf1\')")>=0;})[0];if(b){var h=b.previousElementSibling;(h&&h.classList.contains("grouphdr")?h:b).scrollIntoView({block:"start"});}})()');
+    await sleep(300);
+    await shot(outExams);
+    ws.close();
+    return { ok: true, gateUp };
+  } catch (e) {
+    return { ok: false, err: e.message };
+  } finally {
+    proc.kill();
+  }
+}
+
+(async () => {
 fs.mkdirSync(SHOTS, { recursive: true });
 let fails = 0;
 const INDEX = buildApp();
@@ -199,8 +251,13 @@ for (const [w, h] of SIZES) {
     else notes.push(id + ' resolve: nodeDead ' + e.dead.length + ' pageMissing ' + o.pageMissing + ' shadows ' + o.shadows + ' of ' + e.mapped);
   });
   const errs = r.errs || [];
-  const shot = path.join(SHOTS, 'peds-exam-rows-' + tag + '.png');
-  const s = runChrome(INDEX, w, h, shot);
+  const shot = path.join(SHOTS, 'peds-' + tag + '-top.png');
+  const shot2 = path.join(SHOTS, 'peds-' + tag + '-exams.png');
+  let s = { ok: false };
+  for (let a = 1; a <= 3 && !s.ok; a++) {
+    s = await shootCdp(INDEX, w, h, shot, shot2);
+    if (!s.ok) console.error('attempt ' + a + ' (' + tag + ' cdp shot) failed: ' + s.err);
+  }
   if (!s.ok) notes.push('SCREENSHOT FAILED');
   const bad = (8 - present) + (8 - visible) + (8 - countOk) + (8 - resolveOk) + errs.length + (s.ok ? 0 : 1);
   fails += bad;
@@ -213,3 +270,4 @@ for (const [w, h] of SIZES) {
 rmrf(WORK);
 console.log(fails ? 'EXAM-ROWS FAIL ' + fails : 'EXAM-ROWS OK');
 process.exit(fails ? 1 : 0);
+})();

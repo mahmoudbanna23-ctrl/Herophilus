@@ -2282,18 +2282,6 @@ var Q_PEDS_EP = [
 
 
 
-{
-  id: 'pedep-per-5', alsoIn:['selfassess'],
-  bank: 'endpoint',
-  module: 'pediatrics',
-  chapter: 'perinatal-med',
-  stem: 'During a routine newborn examination at 20 hours old, which of the following findings requires further immediate assessment?',
-  options: ['Acrocyanosis (cyanosis of hands and feet)', 'A heart murmur', 'An undescended testis', 'Breast enlargement', 'Subconjunctival haemorrhages'],
-  answer: 1,
-  explanation: '**The endpoint file prints this explanation:**\n\n> A heart murmur may indicate congenital heart disease. Early evaluation, especially if symptomatic, is critical.\n\n---\n\nNot every newborn murmur is pathological, but every one needs to be checked against the criteria for an innocent murmur before it can be dismissed. `33)Congenital acyanotic heart disease_.txt` gives that checklist: the infant must be asymptomatic, the murmur soft and blowing, systolic only (never diastolic), best heard at the left sternal edge, with normal heart sounds, no added sounds and no parasternal thrill. A murmur that is loud, harsh, diastolic, or accompanied by any symptom fails this checklist and needs echocardiography to exclude structural congenital heart disease.\n\n**Why each wrong option is wrong.** Acrocyanosis, an undescended testis found at birth (often descends within the first months), transient breast enlargement (from residual maternal hormone), and subconjunctival haemorrhages (from the pressure of vaginal delivery) are all common, benign findings on the routine newborn check and need only reassurance, not urgent work-up.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
-  objective: 'Apply the innocent-versus-pathological murmur criteria to a routine newborn examination finding.',
-  source: 'Pediatrics endpoint part1.pdf p.736; Self Assessment Book.pdf p.62 10.5'
-},
 
 
 {
@@ -2745,7 +2733,7 @@ var Q_PEDS_EP = [
   "answer": 2,
   "explanation": "**The endpoint file prints this explanation:**\n\n> Positive pressure ventilation is the single most important and effective intervention in neonatal resuscitation. Oxygen, compressions, and drugs are secondary.\n\n---\n\n`3) Pediatric resuscitation.txt` states directly that bag-and-mask ventilation is as effective as endotracheal intubation, and dedicates its own slides to what makes bag-mask ventilation effective — using only the force and tidal volume needed to make the chest visibly rise, avoiding excess pressure, and having a second rescuer verify adequate chest expansion — which is exactly the emphasis behind the box’s claim that ventilating the lungs, not merely supplying oxygen, is the single most important action once a newborn fails to breathe *(the specific \"airway is open but the baby still is not breathing → ventilate first\" reasoning for the neonatal case is not spelled out as a standalone algorithm in the cached deck beyond this bag-mask-ventilation emphasis; not taken from the course material)*. Establishing lung inflation is what allows oxygen to actually reach the alveoli and what restores the heart rate in the great majority of apnoeic newborns, without needing to progress further down the resuscitation ladder.\n\nAgainst the ladder: **providing oxygen** alone does nothing if the lungs are not being inflated to move that oxygen into the alveoli — supplemental oxygen without ventilation cannot rescue an apnoeic baby. **Chest compressions** are reserved for a heart rate that stays low despite effective ventilation, and starting them before the lungs are ventilated skips the step that would have corrected the bradycardia on its own. **Epinephrine** is a later-tier drug, used only when compressions plus ventilation fail to raise the heart rate — administering it before ventilating would not solve the underlying problem of un-oxygenated blood. **Tracheal intubation** can deliver ventilation, but the same lecture states bag-mask ventilation is just as effective, so intubation is a route to achieve ventilation, not a separate step that outranks ventilating the lungs itself.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*",
   "objective": "Identify lung ventilation, not oxygen alone, compressions, epinephrine or intubation specifically, as the single most important intervention for an apnoeic newborn.",
-  "source": "Pediatrics endpoint part1.pdf p.868; Pediatrics endpoint part1.pdf p.1581"
+  "source": "Pediatrics endpoint part1.pdf p.868; Pediatrics endpoint part1.pdf p.1581; Pediatrics endpoint part1.pdf p.1525 (Model Final Exam 3 reprint: four options, Provide oxygen not printed, stem asks for the next step)"
 },
 
 {
@@ -3063,18 +3051,6 @@ var Q_PEDS_EP = [
 },
 
 
-{
-  id: 'pedep-alg-2', alsoIn:['selfassess'],
-  bank: 'endpoint',
-  module: 'pediatrics',
-  chapter: 'allergy',
-  stem: 'What is the first step in Jonathan\'s management?',
-  options: ['Administer a budesonide nebulizer', 'Assess his airway and give high-flow oxygen', 'Give intramuscular benzylpenicillin', 'Insert an intravenous cannula', 'Lie him flat'],
-  answer: 1,
-  explanation: '**The endpoint file prints this explanation:**\n\n> In anaphylaxis, prompt assessment of airway and oxygen delivery is essential to prevent respiratory failure. Oxygen is a priority before medications or IV access.\n\n---\n\nThe patient here is a 6-year-old boy who has just developed acute anaphylaxis — struggling to breathe, unable to speak more than one word at a time, anxious, with a spreading urticarial rash — after unwitnessed exposure to an unknown trigger at a family party. Whatever the eventual drug treatment, `27)Anaphylaxsis.txt` sets out hospital management as a sequence: rapidly assess airway, breathing, circulation, skin and body mass first, start resuscitation if indicated, and only then move to positioning and definitive drug therapy (intramuscular epinephrine remains the main therapy, but it is not one of the options offered here). Assessing his airway and giving high-flow oxygen is the correct first action because a child this breathless may be minutes from respiratory failure, and oxygenation buys time for everything that follows.\n\n**Why each wrong option is wrong.** *Budesonide nebulizer* is an inhaled steroid — it has no role as an acute rescue drug in this situation and does not address airway compromise quickly. *Intramuscular benzylpenicillin* is an antibiotic used for suspected bacterial sepsis (e.g. meningococcaemia), which is not this presentation. *Insert an intravenous cannula* will be needed for fluids and drugs, but obtaining access should never come before securing the airway and giving oxygen — the ABC sequence puts breathing ahead of circulation access. *Lie him flat* is actively unhelpful for a child in respiratory distress; supine positioning (with legs raised) is the posture used once hypotension/shock dominates the picture, not while a patient is struggling to breathe and needs to be allowed a position that eases ventilation.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*',
-  objective: 'Sequence the first action in suspected anaphylaxis as airway assessment and oxygen delivery, ahead of drug administration or IV access.',
-  source: 'Pediatrics endpoint part1.pdf p.913; Self Assessment Book.pdf p.99 16.2'
-},
 
 
 
@@ -4773,18 +4749,6 @@ var Q_PEDS_EP = [
   source: 'Pediatrics endpoint part1.pdf p.1320'
 },
 
-{
-  id: 'pedep-mf2-2', alsoIn:['selfassess'],
-  bank: 'endpoint',
-  module: 'pediatrics',
-  chapter: 'emergencies',
-  stem: "Which of the following would be the single most important factor responsible for a possible decline in the incidence of sudden infant death syndrome (SIDS)?",
-  options: ["Feet to foot of cot","Keeping baby in parent's room until 6 months of age","Keeping room cool to prevent overheating","Parents not smoking in the same room as the infant","Supine sleeping"],
-  answer: 4,
-  explanation: "**The endpoint file prints this explanation:**\n\n> The most important factor in reducing SIDS has been the \"Back to Sleep\" campaign, encouraging babies to sleep on their backs. Other measures help but are less impactful.\n\n---\n\nSudden infant death syndrome and safe-sleep advice are not covered in the cached lecture set at all -- none of the peds decks carries a SIDS or safe-sleep section, so this entry is answered from general medical knowledge and tagged throughout *(not taken from the course material)*. Supine positioning ('Back to Sleep'/'Safe to Sleep') is credited with the single largest population-level fall in SIDS incidence internationally, larger than any other individual safe-sleep measure introduced around the same time.\n\nThe remaining four options are all genuine, guideline-listed elements of safe-sleep advice, but each addresses a smaller or more contributory hazard rather than the dominant factor. **Feet to foot of cot** positioning stops the infant sliding under bedding and becoming covered -- one mechanism among several, not the leading one. **Room-sharing until 6 months** lowers risk while avoiding the separate hazards of bed-sharing. **A cool room** avoids overheating, an independent but smaller contributor. **Avoiding smoking near the infant** removes a dose-related risk factor, but again a smaller one than the shift to supine sleeping produced when it was introduced.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*",
-  objective: "Identify supine sleep positioning as the single intervention most responsible for the population-level decline in SIDS, against the smaller-effect safe-sleep measures listed as distractors.",
-  source: 'Pediatrics endpoint part1.pdf p.1326; Self Assessment Book.pdf p.34 6.12'
-},
 
 {
   id: 'pedep-mf2-11',
@@ -5429,18 +5393,6 @@ var Q_PEDS_EP = [
   source: 'Pediatrics endpoint part1.pdf p.1513; Self Assessment Book.pdf p.81 13.7.3'
 },
 
-{
-  id: 'pedep-mf3-16', alsoIn:['selfassess'],
-  bank: 'endpoint',
-  module: 'pediatrics',
-  chapter: 'neonatal-seiz',
-  stem: "A mother is known to have preeclampsia and had her delivery at 37 weeks of gestation for a boy weighing 2.2 kg. The newborn is admitted to the Special Care Baby Unit because of his size. He appears well. What is he most at risk of?",
-  options: ["Anemia", "Congenital cardiac abnormality", "Group B streptococcus infection", "Hypoglycemia", "Hypercalcemia"],
-  answer: 3,
-  explanation: "**The endpoint file prints this explanation:**\n\n> A low-birth-weight infant of a preeclamptic mother is at risk for hypoglycemia due to limited glycogen stores.\n\n---\n\n`10) new Seizures . Birth injuries , Hpoglycemia 2.txt` lists neonatal hypoglycaemia's aetiology by birth-weight category, and places 'SGA' with 'Decreased glycogen stores' as one of its named risk groups -- exactly the mechanism the box gives. Maternal preeclampsia causes placental insufficiency, which restricts fetal growth; this boy's birth weight of 2.2 kg at 37 weeks sits well below the weight expected for that gestation, marking him small-for-gestational-age, and SGA infants enter life with reduced hepatic glycogen reserves to draw on once the placental glucose supply is cut off at delivery.\n\nWhy the other four fail. **Anaemia** and **congenital cardiac abnormality** are not among the recognised consequences of preeclampsia-related growth restriction the lecture lists; nothing about reduced fetal growth specifically predisposes to either. **Group B streptococcus infection** is a risk from prolonged rupture of membranes or maternal GBS colonisation, not from preeclampsia or low birth weight as such. **Hypercalcaemia** is not a recognised risk in this setting at all -- if anything, growth-restricted and stressed neonates are more often at risk of the *opposite*, hypocalcaemia, not a raised calcium.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*",
-  objective: "Identify SGA infants of preeclamptic mothers as at risk of neonatal hypoglycaemia from reduced glycogen stores, against anaemia, congenital heart disease, GBS infection and hypercalcaemia, none of which the material or general knowledge attaches to this mechanism.",
-  source: 'Pediatrics endpoint part1.pdf p.1515; Self Assessment Book.pdf p.63 10.9'
-},
 
 {
   id: 'pedep-mf3-18',
@@ -5481,18 +5433,6 @@ var Q_PEDS_EP = [
   source: 'Pediatrics endpoint part1.pdf p.1523; Self Assessment Book.pdf p.34 6.12'
 },
 
-{
-  id: 'pedep-mf3-21',
-  bank: 'endpoint',
-  module: 'pediatrics',
-  chapter: 'perinatal-med',
-  stem: "In neonatal resuscitation, what is the next step to do if the baby doesn't start to breathe after delivery?",
-  options: ["Perform chest compressions", "Ventilate the lungs", "Give epinephrine", "Tracheal intubation"],
-  answer: 1,
-  explanation: "**The endpoint file prints this explanation:**\n\n> If a newborn isn’t breathing, the first step is to ventilate the lungs. Oxygenation takes priority before chest compressions or medications.\n\n---\n\nDelivery-room neonatal resuscitation is not covered as a stepwise algorithm in the cached lecture set -- `7) Intro to neonatology.txt` and `3) Pediatric resuscitation.txt` both touch resuscitation-adjacent topics (apnoea of prematurity, the general paediatric ABCDE approach) but neither sets out the specific initial-steps-after-birth sequence this stem asks for, so this entry is answered from general medical knowledge and tagged throughout *(not taken from the course material)*. Standard newborn resuscitation, once a baby fails to establish breathing after the initial steps (dry, stimulate, position the airway), moves next to **positive-pressure ventilation** -- the single step most newborns who fail to breathe spontaneously actually need, since most neonatal compromise at birth is respiratory rather than cardiac in origin.\n\nWhy the other three fail, in the order the algorithm would reach them. **Chest compressions** are reserved for a heart rate that stays below 60 beats per minute despite effective ventilation for 30 seconds -- never the *next* step after a baby simply fails to breathe, and starting compressions before ventilation is established risks compressing an inadequately oxygenated heart to no benefit. **Epinephrine** is reserved further still, for a heart rate that remains below 60 despite adequate ventilation *and* chest compressions -- several steps beyond where this stem's baby currently sits. **Tracheal intubation** may become necessary if bag-mask ventilation is ineffective or prolonged support is needed, but it is an escalation *within* establishing ventilation, not the first action to take in place of it -- effective ventilation, by bag-mask if adequate, is what the algorithm calls for first.\n\n*The expansion above this line is written for this bank; the box itself is the endpoint file’s own.*",
-  objective: "Recognise ventilation (positive-pressure ventilation) as the next step in neonatal resuscitation once a newborn fails to breathe after birth, ahead of chest compressions, epinephrine or intubation, which the standard algorithm reserves for later steps -- not covered as a sequence in the cached material.",
-  source: 'Pediatrics endpoint part1.pdf p.1525'
-},
 
 {
   id: 'pedep-mf3-22',

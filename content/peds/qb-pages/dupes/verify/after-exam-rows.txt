@@ -1,12 +1,12 @@
-node side: EXAMS_PEDS keys 8 | FOLDED size 346 | live ids 7131
+node side: EXAMS_PEDS keys 8 | FOLDED size 351 | live ids 7126
   pedep-mf1   list 50 mapped 50 distinct 50 dead 0
   pedep-mf2   list 46 mapped 46 distinct 46 dead 0
-  pedep-mf3   list 59 mapped 59 distinct 59 dead 0
+  pedep-mf3   list 58 mapped 58 distinct 58 dead 0
   pedep-mf4   list 59 mapped 59 distinct 59 dead 0
   pedep2-mf1  list 49 mapped 49 distinct 49 dead 0
   pedep2-mf2  list 49 mapped 49 distinct 49 dead 0
   pedep2-mf3  list 27 mapped 27 distinct 27 dead 0
   pedep2-mf4  list 9 mapped 9 distinct 9 dead 0
-820x1180 rows 8/8 visible 8/8 counts-match 8/8 resolve 8/8 errors 0 framed 11111111 QUESTIONS 7131 shown [50,46,59,59,49,49,27,9] shot D:\scratch 2026\peds-exam-rows\peds-exam-rows-820x1180.png
-1180x820 rows 8/8 visible 8/8 counts-match 8/8 resolve 8/8 errors 0 framed 11111111 QUESTIONS 7131 shown [50,46,59,59,49,49,27,9] shot D:\scratch 2026\peds-exam-rows\peds-exam-rows-1180x820.png
+820x1180 rows 8/8 visible 8/8 counts-match 8/8 resolve 8/8 errors 0 framed 11111111 QUESTIONS 7126 shown [50,46,58,59,49,49,27,9] shot D:\scratch 2026\peds-exam-rows\peds-820x1180-top.png
+1180x820 rows 8/8 visible 8/8 counts-match 8/8 resolve 8/8 errors 0 framed 11111111 QUESTIONS 7126 shown [50,46,58,59,49,49,27,9] shot D:\scratch 2026\peds-exam-rows\peds-1180x820-top.png
 EXAM-ROWS OK

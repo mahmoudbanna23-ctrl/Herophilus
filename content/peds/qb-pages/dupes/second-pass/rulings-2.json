@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-11",
+  "what": "Second pass: the seven loose-rule pairs left undecided after the 346 merge. Ruled by Claude on the lossless rule (ledger.md §24); outside second read = factory text machine, house groq, verdict not shown (check-job/results).",
+  "rulings": [
+    { "pair": "pedhd-peri-5|pedep-per-5", "ruling": "merge", "keep": "pedhd-peri-5", "why": "same five options, same key, stems reworded only", "outside": "same yes, key same yes" },
+    { "pair": "pedhd-peri-9|pedep-mf3-16", "ruling": "merge", "keep": "pedhd-peri-9", "why": "same five options (UK/US spelling), same key; the Model Final Exam 3 printing is an abridged stem, nothing in it is missing from the kept copy; difference recorded in the kept source", "outside": "same NO (kept copy mentions a breast feed, removed copy omits it), key same yes — overruled: the kept copy is the fuller one, so nothing printed is lost" },
+    { "pair": "pedhd-alg-2|pedep-alg-2", "ruling": "merge", "keep": "pedhd-alg-2", "why": "same options, same key; back-reference to the same case, whose first question was already merged (pedep-alg-1 into pedhd-alg-1), so the endpoint copy had lost its own antecedent", "outside": "same yes, key same yes" },
+    { "pair": "pedhd-emg-12|pedep-mf2-2", "ruling": "merge", "keep": "pedhd-emg-12", "why": "same options, same key, stems reworded only; topic copy kept over the model-exam copy", "outside": "same yes, key same yes" },
+    { "pair": "pedep-neo-36|pedep-mf3-21", "ruling": "merge", "keep": "pedep-neo-36", "why": "same key text; removed copy prints four of the kept copy's five options (Provide oxygen dropped) and a reworded stem; difference recorded in the kept source; both sat in Model Final Exam 3, so that exam row goes 59 to 58", "outside": "same yes, key same yes" },
+    { "pair": "pedhd-renal-8|pedep2-ren-42", "ruling": "both stay", "why": "different printed numbers and units (Hb 76 g/L vs 7.5 g/dl, creatinine 200 µmol/L vs 1.5 mg/dl, PT/APTT values vs normal), different name; one option worded differently (lymphatic vs lymphoblastic)", "outside": "same yes, key same yes — not followed: the reader missed the differing numbers, and a both-stay loses nothing" },
+    { "pair": "pedep-gp-6|pedep-nut-21", "ruling": "both stay", "why": "printed in two different chapters with a different stem detail (a few spoons of pasta vs loves potato chips) and a different closing sentence", "outside": "same yes, key same yes — not followed: a both-stay loses nothing and keeps each chapter's own printing" }
+  ],
+  "result": { "merged": 5, "stay": 2, "clashes": 0, "FOLDED": 351, "pediatrics": 1897, "total": 7126 }
+}

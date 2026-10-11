@@ -1,4 +1,4 @@
-data files       13   arrays 13   questions 7131
+data files       13   arrays 13   questions 7126
 with a figure    250   distinct files named 242
 files on disk    271
 

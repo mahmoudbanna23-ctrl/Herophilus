@@ -1,0 +1,12 @@
+{
+  "id": "pedhd-alg-2__pedep-alg-2",
+  "key": "3905640f73fa7798498e5808149a86c4ae90f0936277fd6de8b84a5560be9037",
+  "ok": true,
+  "answer": "{\n  \"same\": \"yes\",\n  \"keySame\": \"yes\",\n  \"differs\": \"\",\n  \"confidence\": \"high\"\n}",
+  "error": "",
+  "machine": "text",
+  "house": "groq",
+  "model": "work-text",
+  "costUsd": 0,
+  "ms": 1200
+}

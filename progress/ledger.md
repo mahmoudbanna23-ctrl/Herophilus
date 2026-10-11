@@ -2235,3 +2235,13 @@ citations; 72 pairs read by eye, all true repeats. It found five leftovers, all 
 - 274 merge rows and 48 pointer rows were checked by script only, never read by eye.
 - Exam-row pictures were not obtained (the measured check passes).
 - The live site does not have the merge until `dist` is rebuilt and uploaded.
+
+### Second pass (2026-10-11, same day)
+- The seven loose-rule pairs are ruled: 5 merged, 2 stay, 0 clashes. FOLDED 351, kept copies 335.
+  Pediatrics 1,897 = 365 House file + 577 endpoint part 1 + 434 endpoint part 2 + 521 Self
+  Assessment. Corpus 7,126. Rulings and the outside reader's verdicts:
+  content/peds/qb-pages/dupes/second-pass/rulings-2.json.
+- Model Final Exam 3 (endpoint part 1) row shows 58, was 59: both copies of one question sat in it.
+- Exam-row pictures obtained; the measured check still passes.
+- Still owed: 274 + 48 first-pass rows read by script only; the live site has 346, not 351, until
+  the next upload.

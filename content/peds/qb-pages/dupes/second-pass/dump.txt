@@ -1,0 +1,143 @@
+
+==================== pedhd-renal-8|pedep2-ren-42
+--- pedhd-renal-8  [questions.peds.js]  module/chapter pediatrics/renal  bank house  alsoIn ["selfassess"]  image -  type mcq
+STEM (800): Finlay, a 5-year-old boy, recently had a birthday party at his local farm. Since then he has had 3 days of diarrhoea, and the loose stool had some blood in it. His mother is concerned as he is still not himself. He appears to be very pale and has not passed urine for 12 hours. He has no other medical problems and is not normally on any medication. On examination you note that he has pale conjunctivae. His blood pressure is 120/70 mmHg. You take blood tests and get the following results:
+
+| | |
+|---|---|
+| Haemoglobin | 76 g/L |
+| White blood cells | 14.2 × 10⁹/L |
+| Platelet count | 50 × 10⁹/L |
+| Creatinine | 200 µmol/L *(normal 20–80)* |
+| Prothrombin time | 13 s *(control 12–15 s)* |
+| Activated partial thromboplastin time | 34 s *(control 25–35 s)* |
+
+What is the most likely diagnosis?
+   a) Acute lymphatic leukaemia
+  *b) Haemolytic-uraemic syndrome
+   c) Henoch–Schönlein purpura
+   d) Immune thrombocytopenic purpura
+   e) Post-streptococcal glomerulonephritis
+SOURCE: pediatric .pdf p.17 (Part I, ch.2 Q8); Self Assessment Book.pdf p.117 19.8
+--- pedep2-ren-42  [questions.peds.ep2.js]  module/chapter pediatrics/renal  bank endpoint  alsoIn ["selfassess"]  image -  type mcq
+STEM (565): Fady, a 5-year-old boy. He has had 3 days of diarrhea. The loose stool had some blood in it. He appears to be very pale and has not passed urine for 12 hours. He has no other medical problems and is not normally on any medication. On examination you note that he has pale conjunctivae. His blood pressure is 120/70 mmHg. You decide to take tests and get the following results: some blood hemoglobin: 7.5 g/dl; white blood cells: 14,200/ml; platelet count: 50000/ml; creatinine: 1.5 mg/dl (normal: < 0.8 mg/dl) PT & PTT are normal. What is the most likely diagnosis?
+   a) Acute lymphoblastic leukemia
+  *b) Hemolytic-uremic syndrome
+   c) Henoch-Schonlein purpura
+   d) Immune thrombocytopenic purpura
+   e) Post streptococcal glomerulonephritis
+SOURCE: Pediatrics endpoint part2.pdf p.902 (reprinted in Model Final Exam 2, p.1486, where the boy is named Finlay, a birthday party at a local farm is given as the exposure, and every laboratory value is printed in SI units with its reference range); Self Assessment Book.pdf p.117 19.8
+FACTS: options 5 vs 5 | only in first: ["Acute lymphatic leukaemia","Haemolytic-uraemic syndrome","Henoch–Schönlein purpura"] | only in second: ["Acute lymphoblastic leukemia","Hemolytic-uremic syndrome","Henoch-Schonlein purpura"] | key text same: false | stem ratio 0.71
+
+==================== pedhd-peri-5|pedep-per-5
+--- pedhd-peri-5  [questions.peds.js]  module/chapter pediatrics/perinatal-med  bank house  alsoIn ["selfassess"]  image -  type mcq
+STEM (147): You perform a routine newborn examination on a baby who is 20 hours old. Which one of the following features requires further immediate assessment?
+   a) Acrocyanosis (cyanosis of the hands and feet)
+  *b) A heart murmur
+   c) An undescended testis
+   d) Breast enlargement
+   e) Subconjunctival haemorrhages
+SOURCE: pediatric .pdf p.50 (Part I, ch.6 Q5); Self Assessment Book.pdf p.62 10.5
+--- pedep-per-5  [questions.peds.ep.js]  module/chapter pediatrics/perinatal-med  bank endpoint  alsoIn ["selfassess"]  image -  type mcq
+STEM (124): During a routine newborn examination at 20 hours old, which of the following findings requires further immediate assessment?
+   a) Acrocyanosis (cyanosis of hands and feet)
+  *b) A heart murmur
+   c) An undescended testis
+   d) Breast enlargement
+   e) Subconjunctival haemorrhages
+SOURCE: Pediatrics endpoint part1.pdf p.736; Self Assessment Book.pdf p.62 10.5
+FACTS: options 5 vs 5 | only in first: ["Acrocyanosis (cyanosis of the hands and feet)"] | only in second: ["Acrocyanosis (cyanosis of hands and feet)"] | key text same: true | stem ratio 0.84
+
+==================== pedhd-peri-9|pedep-mf3-16
+--- pedhd-peri-9  [questions.peds.js]  module/chapter pediatrics/neonatal-seiz  bank house  alsoIn ["selfassess","endpoint"]  image -  type mcq
+STEM (308): A mother is known to have pre-eclampsia and her fetus has shown signs of intrauterine growth restriction on antenatal scans. He is delivered at 37 weeks and weighs 2.2 kg. He is admitted to the Special Care Baby Unit because of his size. He appears well and has had a breast feed. What is he most at risk of?
+   a) Anaemia
+   b) Congenital cardiac abnormality
+   c) Group B streptococcus infection
+  *d) Hypoglycaemia
+   e) Hypercalcaemia
+SOURCE: pediatric .pdf p.51 (Part I, ch.6 Q9); Self Assessment Book.pdf p.63 10.9; Pediatrics endpoint part1.pdf p.744
+--- pedep-mf3-16  [questions.peds.ep.js]  module/chapter pediatrics/neonatal-seiz  bank endpoint  alsoIn ["selfassess"]  image -  type mcq
+STEM (231): A mother is known to have preeclampsia and had her delivery at 37 weeks of gestation for a boy weighing 2.2 kg. The newborn is admitted to the Special Care Baby Unit because of his size. He appears well. What is he most at risk of?
+   a) Anemia
+   b) Congenital cardiac abnormality
+   c) Group B streptococcus infection
+  *d) Hypoglycemia
+   e) Hypercalcemia
+SOURCE: Pediatrics endpoint part1.pdf p.1515; Self Assessment Book.pdf p.63 10.9
+FACTS: options 5 vs 5 | only in first: ["Anaemia","Hypoglycaemia","Hypercalcaemia"] | only in second: ["Anemia","Hypoglycemia","Hypercalcemia"] | key text same: false | stem ratio 0.75
+
+==================== pedhd-alg-2|pedep-alg-2
+--- pedhd-alg-2  [questions.peds.js]  module/chapter pediatrics/allergy  bank house  alsoIn ["selfassess"]  image -  type mcq
+STEM (55): What will be your first step in Johnathan’s management?
+   a) Administer a budesonide nebulizer
+  *b) Assess his airway and give him high-flow oxygen
+   c) Give intramuscular benzylpenicillin
+   d) Insert an intravenous cannula
+   e) Lie him flat
+SOURCE: pediatric .pdf p.118 (Part I, ch.15 Q2); Self Assessment Book.pdf p.99 16.2
+--- pedep-alg-2  [questions.peds.ep.js]  module/chapter pediatrics/allergy  bank endpoint  alsoIn ["selfassess"]  image -  type mcq
+STEM (48): What is the first step in Jonathan's management?
+   a) Administer a budesonide nebulizer
+  *b) Assess his airway and give high-flow oxygen
+   c) Give intramuscular benzylpenicillin
+   d) Insert an intravenous cannula
+   e) Lie him flat
+SOURCE: Pediatrics endpoint part1.pdf p.913; Self Assessment Book.pdf p.99 16.2
+FACTS: options 5 vs 5 | only in first: ["Assess his airway and give him high-flow oxygen"] | only in second: ["Assess his airway and give high-flow oxygen"] | key text same: false | stem ratio 0.87
+
+==================== pedhd-emg-12|pedep-mf2-2
+--- pedhd-emg-12  [questions.peds.js]  module/chapter pediatrics/emergencies  bank house  alsoIn ["selfassess","endpoint"]  image -  type mcq
+STEM (182): There has been a dramatic decline in the incidence of sudden infant death syndrome in the UK. Which of the following is the single most important factor responsible for this decline?
+   a) Feet to foot of cot
+   b) Keeping baby in parent's room until 6 months of age
+   c) Keeping room cool to prevent overheating
+   d) Parents not smoking in the same room as infant
+  *e) Supine sleeping
+SOURCE: pediatric .pdf p.130 (Part I, ch.17 Q12); Self Assessment Book.pdf p.34 6.12; Pediatrics endpoint part1.pdf p.600
+--- pedep-mf2-2  [questions.peds.ep.js]  module/chapter pediatrics/emergencies  bank endpoint  alsoIn ["selfassess"]  image -  type mcq
+STEM (156): Which of the following would be the single most important factor responsible for a possible decline in the incidence of sudden infant death syndrome (SIDS)?
+   a) Feet to foot of cot
+   b) Keeping baby in parent's room until 6 months of age
+   c) Keeping room cool to prevent overheating
+   d) Parents not smoking in the same room as the infant
+  *e) Supine sleeping
+SOURCE: Pediatrics endpoint part1.pdf p.1326; Self Assessment Book.pdf p.34 6.12
+FACTS: options 5 vs 5 | only in first: ["Parents not smoking in the same room as infant"] | only in second: ["Parents not smoking in the same room as the infant"] | key text same: true | stem ratio 0.86
+
+==================== pedep-neo-36|pedep-mf3-21
+--- pedep-neo-36  [questions.peds.ep.js]  module/chapter pediatrics/perinatal-med  bank endpoint  alsoIn []  image -  type mcq
+STEM (122): The most important and effective action in neonatal resuscitation if the baby does not start to breathe after delivery is:
+   a) Provide oxygen
+   b) Perform chest compressions
+  *c) Ventilate the lungs
+   d) Give epinephrine
+   e) Tracheal intubation
+SOURCE: Pediatrics endpoint part1.pdf p.868; Pediatrics endpoint part1.pdf p.1581
+--- pedep-mf3-21  [questions.peds.ep.js]  module/chapter pediatrics/perinatal-med  bank endpoint  alsoIn []  image -  type mcq
+STEM (107): In neonatal resuscitation, what is the next step to do if the baby doesn't start to breathe after delivery?
+   a) Perform chest compressions
+  *b) Ventilate the lungs
+   c) Give epinephrine
+   d) Tracheal intubation
+SOURCE: Pediatrics endpoint part1.pdf p.1525
+FACTS: options 5 vs 4 | only in first: ["Provide oxygen"] | only in second: [] | key text same: true | stem ratio 0.88
+
+==================== pedep-gp-6|pedep-nut-21
+--- pedep-gp-6  [questions.peds.ep.js]  module/chapter pediatrics/growth-puberty  bank endpoint  alsoIn []  image -  type mcq
+STEM (227): A 2-year-old girl is brought to the clinic for a routine check-up. Her mother states that she does not like to eat but prefers eating only a few spoons of pasta each day. What is the best method to check her nutritional status?
+   a) Head circumference
+   b) Height
+   c) Weight
+  *d) Weight-for-height
+   e) Skinfold thickness
+SOURCE: Pediatrics endpoint part1.pdf p.40 (the same question is printed again on p.173; reprinted word for word in Model Final Exam 2, p.1354; reprinted word for word in Model Training Exam 2, p.1928)
+--- pedep-nut-21  [questions.peds.ep.js]  module/chapter pediatrics/nutrition-pem  bank endpoint  alsoIn []  image -  type mcq
+STEM (180): A 2-year-old girl presented to the clinic for a routine check-up. She does not like to eat but she loves potato chips. The best method to check her nutritional status is to assess:
+   a) Head circumference
+   b) Height
+   c) Weight
+  *d) Weight for height
+   e) Skin fold thickness
+SOURCE: Pediatrics endpoint part1.pdf p.278
+FACTS: options 5 vs 5 | only in first: ["Skinfold thickness"] | only in second: ["Skin fold thickness"] | key text same: true | stem ratio 0.79

@@ -1382,5 +1382,25 @@
  {
   "keep": "pedhd-renal-7",
   "dead": "pedep2-ren-7"
+ },
+ {
+  "keep": "pedhd-peri-5",
+  "dead": "pedep-per-5"
+ },
+ {
+  "keep": "pedhd-peri-9",
+  "dead": "pedep-mf3-16"
+ },
+ {
+  "keep": "pedhd-alg-2",
+  "dead": "pedep-alg-2"
+ },
+ {
+  "keep": "pedhd-emg-12",
+  "dead": "pedep-mf2-2"
+ },
+ {
+  "keep": "pedep-neo-36",
+  "dead": "pedep-mf3-21"
  }
 ]
