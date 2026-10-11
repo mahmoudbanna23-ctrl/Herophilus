@@ -41,6 +41,9 @@
   const warm=document.createElement('link');
   warm.rel='stylesheet'; warm.href='css/warm.css';
   document.head.appendChild(warm);
+  const type=document.createElement('link');
+  type.rel='stylesheet'; type.href='css/type.css';
+  document.head.appendChild(type);
 
   /* Left to right on the painting. The order is fixed here, by module id — never
      taken from the order activeModules() returns. */
