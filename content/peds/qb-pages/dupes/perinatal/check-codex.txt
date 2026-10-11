@@ -1,0 +1,3 @@
+yes 58, no 1, unsure 1
+pedsa-b11-6, unsure, Neonatal umbilical lesion; could belong to general neonatal care.
+pedsa-b31-2, no, Global health epidemiology, not mortality definitions.

@@ -1,0 +1,184 @@
+[
+ {
+  "a": "pedep2-neu-4",
+  "b": "pedhd-neuro-4",
+  "ia": "q-pd-ep2-961",
+  "ib": "q-pd-hd-91",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-res-2",
+  "b": "pedhd-resp-2",
+  "ia": "q-pd-ep2-479",
+  "ib": "q-pd-hd-101b",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-res-9",
+  "b": "pedhd-resp-9",
+  "ia": "q-pd-ep2-493",
+  "ib": "q-pd-hd-104a",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-liv-5",
+  "b": "pedhd-liv-5",
+  "ia": "q-pd-ep2-1177",
+  "ib": "q-pd-hd-138",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-neu-9",
+  "b": "pedhd-neuro-9",
+  "ia": "q-pd-ep2-973",
+  "ib": "q-pd-hd-94",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-res-1",
+  "b": "pedhd-resp-1",
+  "ia": "q-pd-ep2-477",
+  "ib": "q-pd-hd-101a",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep-emg-2",
+  "b": "pedhd-emg-2",
+  "ia": "q-pd-ep-580",
+  "ib": "q-pd-hd-126b",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep-inf-53",
+  "b": "pedhd-inf-1",
+  "ia": "q-pd-ep-1071",
+  "ib": "q-pd-hd-3",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep-inf-58",
+  "b": "pedhd-inf-6",
+  "ia": "q-pd-ep-1081",
+  "ib": "q-pd-hd-5b",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep-inf-61",
+  "b": "pedhd-inf-10",
+  "ia": "q-pd-ep-1087",
+  "ib": "q-pd-hd-7a",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep-neo-6",
+  "b": "pedhd-neo-6",
+  "ia": "q-pd-ep-808",
+  "ib": "q-pd-hd-56a",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep-neo-7",
+  "b": "pedhd-neo-7",
+  "ia": "q-pd-ep-810",
+  "ib": "q-pd-hd-56b",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-car-10",
+  "b": "pedhd-card-10",
+  "ia": "q-pd-ep2-648",
+  "ib": "q-pd-hd-27",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-end-3",
+  "b": "pedhd-endo-3",
+  "ia": "q-pd-ep2-1096",
+  "ib": "q-pd-hd-112",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-gen-38",
+  "b": "pedhd-gen-12",
+  "ia": "q-pd-ep2-243",
+  "ib": "q-pd-hd-46a",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-hem-27",
+  "b": "pedhd-haem-6",
+  "ia": "q-pd-ep2-323",
+  "ib": "q-pd-hd-34b",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-liv-3",
+  "b": "pedhd-liv-3",
+  "ia": "q-pd-ep2-1172",
+  "ib": "q-pd-hd-137",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-neu-8",
+  "b": "pedhd-neuro-8",
+  "ia": "q-pd-ep2-970",
+  "ib": "q-pd-hd-93",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-res-11",
+  "b": "pedhd-resp-12",
+  "ia": "q-pd-ep2-497",
+  "ib": "q-pd-hd-105a",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep2-res-12",
+  "b": "pedhd-resp-13",
+  "ia": "q-pd-ep2-499",
+  "ib": "q-pd-hd-105b",
+  "why": "confirm"
+ },
+ {
+  "a": "pedep-neo-1",
+  "b": "pedhd-neo-1",
+  "ia": "q-pd-ep-797",
+  "ib": "q-pd-hd-54",
+  "why": "pending"
+ },
+ {
+  "a": "pedep-neo-5",
+  "b": "pedhd-neo-5",
+  "ia": "q-pd-ep-806",
+  "ib": "q-pd-hd-55",
+  "why": "pending"
+ },
+ {
+  "a": "pedep2-hem-26",
+  "b": "pedhd-haem-5",
+  "ia": "q-pd-ep2-320",
+  "ib": "q-pd-hd-34a",
+  "why": "pending"
+ },
+ {
+  "a": "pedep-nut-1",
+  "b": "pedhd-nutr-1",
+  "ia": "q-pd-ep-238",
+  "ib": "q-pd-hd-75",
+  "why": "pending"
+ },
+ {
+  "a": "pedep-inf-57",
+  "b": "pedhd-inf-5",
+  "ia": "q-pd-ep-1079",
+  "ib": "q-pd-hd-5a",
+  "why": "pending"
+ },
+ {
+  "a": "pedep-inf-62",
+  "b": "pedhd-inf-11",
+  "ia": "q-pd-ep-1089",
+  "ib": "q-pd-hd-7b",
+  "why": "pending"
+ }
+]

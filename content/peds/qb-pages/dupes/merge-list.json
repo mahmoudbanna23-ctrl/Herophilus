@@ -316,6 +316,14 @@
   "dead": "pedep-mf3-6"
  },
  {
+  "keep": "pedhd-neo-1",
+  "dead": "pedep-neo-1"
+ },
+ {
+  "keep": "pedhd-neo-5",
+  "dead": "pedep-neo-5"
+ },
+ {
   "keep": "pedhd-nutr-2",
   "dead": "pedep-nut-2"
  },
@@ -350,6 +358,10 @@
  {
   "keep": "pedhd-gen-6",
   "dead": "pedep2-gen-18"
+ },
+ {
+  "keep": "pedhd-haem-5",
+  "dead": "pedep2-hem-26"
  },
  {
   "keep": "pedhd-haem-7",
@@ -746,6 +758,10 @@
  {
   "keep": "pedhd-neo-9",
   "dead": "pedep-neo-9"
+ },
+ {
+  "keep": "pedhd-nutr-1",
+  "dead": "pedep-nut-1"
  },
  {
   "keep": "pedhd-nutr-10",
@@ -1266,6 +1282,10 @@
  {
   "keep": "pedhd-inf-2",
   "dead": "pedep-inf-54"
+ },
+ {
+  "keep": "pedhd-inf-5",
+  "dead": "pedep-inf-57"
  },
  {
   "keep": "pedhd-inf-13",

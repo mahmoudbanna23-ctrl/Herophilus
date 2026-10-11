@@ -8196,7 +8196,7 @@ var Q_PEDS_SA = [
     "id": "pedsa-b11-6",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "perinatal-med",
+    "chapter": "perinatal",
     "stem": "Aaron was born at term, birth weight 3.2 kg. He is now 2 weeks old, and his mother is concerned that his umbilicus looks abnormal. A photo is shown in Fig. 11.2. Select the most likely diagnosis. Select one answer only.",
     "options": [
       "Exomphalos",

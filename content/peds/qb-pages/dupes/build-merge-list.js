@@ -54,6 +54,9 @@ for (const r of J('eyes-job/list.json')) {
   if (typeof a === 'string') { try { a = JSON.parse(a); } catch (e) { a = null; } }
   if (a) { eyes.set(r.a + '|' + r.b, a.same === true); eyes.set(r.b + '|' + r.a, a.same === true); }
 }
+// second look by a Claude role (different house); it wins, and anything but a clear "same" keeps both
+if (fs.existsSync(path.join(D, 'eyes-job', 'claude.json')))
+  for (const r of J('eyes-job/claude.json')) { eyes.set(r.a + '|' + r.b, r.same === true); eyes.set(r.b + '|' + r.a, r.same === true); }
 
 const stays = [], links = [], pictureDriven = [];
 const all = J('pairs/judged/all.json'), auto = J('pairs/auto.json');

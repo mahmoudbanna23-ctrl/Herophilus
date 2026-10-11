@@ -360,8 +360,9 @@ const MODULES = [
        Paper 2 order; each group carries paper:1 or paper:2 (the exam group has
        none). The book chapter "Perinatal medicine" (p.106 — antenatal/fetal
        medicine, resuscitation, NIPE) now has its own group and the single new
-       chapter perinatal-med (owner ruling 2026-10-11); 60 questions were moved in
-       2026-10-11 by owner ruling (only their chapter field changed; list:
+       chapter perinatal-med (owner ruling 2026-10-11); 59 questions were moved in
+       2026-10-11 by owner ruling (only their chapter field changed; a 60th,
+       pedsa-b11-6, went back to "perinatal" after the second look; list:
        content\peds\qb-pages\dupes\perinatal\move-60.json). The six existing "perinatal-" and
        "neonatal-" chapters stay in Neonatal medicine (book p.140) per
        content\peds\perinatal-neonatal-boundary.md. Chapter ids are unchanged.

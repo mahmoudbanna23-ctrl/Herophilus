@@ -4599,13 +4599,6 @@
   "why": "lossy both ways: key text differs // key text differs"
  },
  {
-  "pair": "n=76",
-  "a": "pedep-neo-1",
-  "b": "pedhd-neo-1",
-  "class": "near",
-  "why": "picture not compared yet"
- },
- {
   "pair": "n=77",
   "a": "pedep-neo-3",
   "b": "pedhd-neo-3",
@@ -4618,13 +4611,6 @@
   "b": "pedep-neo-47",
   "class": "different",
   "why": "class different"
- },
- {
-  "pair": "n=79",
-  "a": "pedep-neo-5",
-  "b": "pedhd-neo-5",
-  "class": "near",
-  "why": "picture not compared yet"
  },
  {
   "pair": "n=81",
@@ -4681,13 +4667,6 @@
   "b": "pedep2-neu-40",
   "class": "near",
   "why": "lossy both ways: option not in kept copy: Chromosome karyotype | Creatine kinase | Thyroid function tests // option not in kept copy: Cranial ultrasound scan | EEG"
- },
- {
-  "pair": "n=97",
-  "a": "pedep2-hem-26",
-  "b": "pedhd-haem-5",
-  "class": "near",
-  "why": "picture not compared yet"
  },
  {
   "pair": "n=106",
@@ -5234,13 +5213,6 @@
   "b": "pedhd-neo-13",
   "class": "near",
   "why": "lossy both ways: option not in kept copy: Coarctation of the aorta | Anaemia // option not in kept copy: aspiration of meconium | bronchopulmonary dysplasia"
- },
- {
-  "pair": "n=278",
-  "a": "pedep-nut-1",
-  "b": "pedhd-nutr-1",
-  "class": "near",
-  "why": "picture not compared yet"
  },
  {
   "pair": "n=283",
@@ -5999,18 +5971,11 @@
   "why": "lossy both ways: kept stem shorter // kept copy is the exam copy"
  },
  {
-  "pair": "n=522",
-  "a": "pedep-inf-57",
-  "b": "pedhd-inf-5",
-  "class": "near",
-  "why": "picture not compared yet"
- },
- {
   "pair": "n=523",
   "a": "pedep-inf-62",
   "b": "pedhd-inf-11",
   "class": "near",
-  "why": "picture not compared yet"
+  "why": "pictures differ"
  },
  {
   "pair": "n=537",

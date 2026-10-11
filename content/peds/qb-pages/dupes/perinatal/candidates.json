@@ -4053,9 +4053,9 @@
   "id": "pedsa-b11-6",
   "bank": "selfassess",
   "chapter": "perinatal",
-  "class": "unsure",
+  "class": "stay",
   "theme": "newborn-exam",
-  "why": "no lecture teaches the newborn examination",
+  "why": "moved back 2026-10-11: the source book files it under its Neonatal medicine chapter (11)",
   "lecture": ""
  },
  {
