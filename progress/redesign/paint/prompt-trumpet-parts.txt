@@ -1,0 +1,24 @@
+An exploded parts sheet of ONE antique brass ear trumpet (a 19th-century hearing horn), painted in
+the same rich, hand-painted, cinematic finish as the style reference: warm aged brass with soft
+engraved bands, small dents and patina, lit from the upper left by warm lamp light.
+
+Layout, strict:
+- Pure side-on profile view, no perspective, the instrument's long axis running exactly
+  horizontally across the picture, centred vertically.
+- The trumpet is taken apart into exactly FIVE separate parts, laid out in a single row in their
+  assembly order, left to right: (1) the small rounded earpiece tip, (2) a narrow straight tube,
+  (3) a decorative collar ring with engraved bands, (4) a gently widening middle tube, (5) the
+  large flared bell, its open mouth facing right.
+- Every part is whole and complete, including the short plain sleeve at each end where it would
+  slot into its neighbour. No part touches, overlaps or hides another.
+- A clear gap of empty background, at least 6% of the picture width, between neighbouring parts,
+  and a clear margin of empty background on all four sides.
+- All parts share the same scale, the same lighting and the same centre line, so that sliding
+  them together along the horizontal axis would rebuild one trumpet.
+
+Background: fully transparent (alpha) if you can produce it. If you cannot, a perfectly flat,
+uniform, single colour, cool light grey-blue (#B8C4D6), with no gradient, no texture, no floor,
+no vignette and NO cast shadows or glow of any kind on the background.
+
+Do not include: any text, labels, numbers, arrows, guide lines, hands, people, a table, a stand,
+a frame, a border, extra objects, or more or fewer than five parts.

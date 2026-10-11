@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Herophilus scroll sample, the instrument taken apart</title>
+<script>
+/* error catcher first, so a failing library script is recorded too */
+window.__errs = [];
+window.onerror = function (m, src, ln) { window.__errs.push(String(m) + ' @' + String(src || '').split('/').pop() + ':' + ln); };
+if (/[?&]theme=light/.test(location.search)) document.documentElement.setAttribute('data-theme', 'light');
+</script>
+<style>
+/* tokens copied from motion-more.html (itself from app/css/tokens.css) */
+:root{
+  --font-display:'Cinzel','Trajan Pro','Palatino Linotype','Book Antiqua',Georgia,serif;
+  --font-body:'EB Garamond','Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
+  --tx:#f2e8d5; --ink:#f2e8d5; --ink-2:#cfc0a5; --ink-3:#ab9a80; --ink-4:#9c8b71;
+  --bg:#0a1017; --bg-2:#151f2d; --card:#121a27; --fill:#2b3a4f;
+  --line:rgba(242,232,213,.085); --line-2:rgba(242,232,213,.16);
+  --neon:#66d9ff; --gold:#d9b44a; --gold-text:#d9b44a; --gold-line:rgba(217,180,74,.85);
+  --r-sm:2px; --r-md:4px; --r-lg:8px;
+  --fs-xs:11px; --fs-sm:12px; --fs-md:13px; --fs-ui:14px; --fs-body:16.5px; --fs-lg:19px; --fs-xl:24px; --fs-2xl:32px; --fs-3xl:44px;
+}
+:root[data-theme="light"]{
+  --tx:#241c14; --ink:#241c14; --ink-2:#463726; --ink-3:#5e4c37; --ink-4:#5c4b36;
+  --bg:#e6d9be; --bg-2:#dbcbab; --card:#f7efe0;
+  --line:rgba(60,44,28,.13); --line-2:rgba(60,44,28,.22);
+  --neon:#00708f; --gold:#d9b44a; --gold-text:#7a5410; --gold-line:rgba(122,84,16,.85);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:var(--font-body);background:var(--bg);color:var(--tx);font-size:var(--fs-body);line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(circle at 12% 8%, rgba(109,76,125,.09) 0, transparent 42%),
+                   radial-gradient(circle at 88% 4%, rgba(46,95,138,.05) 0, transparent 38%);
+  background-attachment:fixed;
+}
+:focus-visible{outline:3px solid var(--neon);outline-offset:2px;border-radius:var(--r-md)}
+
+/* intro and closing blocks */
+.block{min-height:70vh;display:flex;align-items:center;justify-content:center;padding:48px 24px}
+.block .in{max-width:620px}
+.block h1,.block h2{font:600 var(--fs-2xl)/1.2 var(--font-display);margin:0 0 10px;letter-spacing:.02em}
+.block p{margin:0;color:var(--ink-2)}
+.block .hint{margin-top:18px;color:var(--ink-3);font-size:var(--fs-ui)}
+
+/* pinned stage */
+.stage{position:relative;height:100vh;height:100svh;min-height:420px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.fig{position:relative;width:min(96vw,1800px);aspect-ratio:1800 / 600;flex:none}
+.part{position:absolute;display:block;margin:0;will-change:transform;user-select:none;-webkit-user-drag:none}
+.part img{display:block;width:100%;height:auto;pointer-events:none}
+.ln{position:absolute;width:1px;background:var(--gold-line);clip-path:inset(0 0 100% 0)}
+.nmclip{position:absolute;width:150px;margin-left:-75px;height:2em;overflow:hidden;text-align:center}
+.nm{display:block;font:600 var(--fs-md)/2em var(--font-display);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);transform:translateY(-110%)}
+
+/* reduced motion: nothing pinned, nothing scrubbed, two still pictures */
+.rm-only{display:none}
+@media (prefers-reduced-motion: reduce){
+  .stage{height:auto;min-height:0;padding:32px 0}
+  .rm-only{display:flex}
+  .rm-only .nm{transform:none}
+  .rm-only .ln{clip-path:inset(0)}
+}
+.rm-cap{display:none;text-align:center;color:var(--ink-3);font-size:var(--fs-ui);margin:8px 0 0}
+@media (prefers-reduced-motion: reduce){ .rm-cap{display:block} }
+.rm-wrap{display:flex;flex-direction:column;align-items:center;gap:8px}
+@media (max-width:900px){ .nm{font-size:12px;letter-spacing:.08em} .nmclip{width:96px;margin-left:-48px} }
+</style>
+</head>
+<body>
+
+<section class="block" aria-label="Introduction">
+  <div class="in">
+    <h1>One instrument, five parts</h1>
+    <p>An antique ear trumpet, painted as one brass object. Scroll slowly and it comes apart along its axis, each piece named, then settles back together.</p>
+    <p class="hint">Scroll down.</p>
+  </div>
+</section>
+
+<section class="stage" id="stage" aria-label="The trumpet taken apart">
+  <div class="fig" id="fig"></div>
+</section>
+
+<section class="block" aria-label="Closing">
+  <div class="in">
+    <h2>Seated again</h2>
+    <p>The pieces return to their joints in the order they came apart. Scroll back up and the sequence runs in reverse.</p>
+  </div>
+</section>
+
+<script src="lib/gsap/gsap.min.js"></script>
+<script src="lib/gsap/ScrollTrigger.min.js"></script>
+<script>
+(function () {
+  'use strict';
+  /* ---- data: boxes of the five cut pieces in the painted source (parts/parts.json), source is 1536x1024 ---- */
+  var PARTS = [
+    { n: 1, name: 'Earpiece', x: 53,   y: 446, w: 187, h: 129 },
+    { n: 2, name: 'Tube',     x: 269,  y: 473, w: 291, h: 73  },
+    { n: 3, name: 'Collar',   x: 590,  y: 450, w: 105, h: 121 },
+    { n: 4, name: 'Body',     x: 724,  y: 438, w: 341, h: 144 },
+    { n: 5, name: 'Bell',     x: 1098, y: 317, w: 390, h: 379 }
+  ];
+  var UW = 1800, UH = 600, Y0 = 300;          /* figure units: 1800 wide, 600 tall, source y shifted up 300 */
+  var OV = [30, 20, 32, 30];                   /* joint overlap in units, part n+1 over part n (tuned by eye) */
+  var GAP = [60, 60, 60, 60];                  /* clear gap between neighbours once apart */
+  var SHIFT = -40;                             /* apart row sits a little left of centre, so the bell travels less */
+  var LIFT = [-26, 14, -34, 10, 6];            /* units; the heaviest part moves least */
+  var TURN = [-5, 3, -7, 2, 1];                /* degrees */
+  var LBL_Y = 500;                             /* units: where the names sit */
+
+  var i, asm = [], apt = [], sumW = 0, sumOv = 0, sumG = 0;
+  for (i = 0; i < 5; i++) sumW += PARTS[i].w;
+  for (i = 0; i < 4; i++) { sumOv += OV[i]; sumG += GAP[i]; }
+  var asmW = sumW - sumOv, aptW = sumW + sumG;
+  var x = (UW - asmW) / 2, ax = (UW - aptW) / 2 + SHIFT;
+  for (i = 0; i < 5; i++) {
+    asm.push(x); apt.push(ax);
+    if (i < 4) { x += PARTS[i].w - OV[i]; ax += PARTS[i].w + GAP[i]; }
+  }
+
+  /* ---- build the figure ---- */
+  var fig = document.getElementById('fig');
+  function pc(v, of) { return (v / of * 100) + '%'; }
+  function build(host, isRm) {
+    var els = [];
+    PARTS.forEach(function (p, k) {
+      var d = document.createElement('figure');
+      d.className = 'part'; d.style.left = pc(asm[k], UW); d.style.top = pc(p.y - Y0, UH);
+      d.style.width = pc(p.w, UW); d.style.zIndex = String(k + 1);
+      var im = document.createElement('img');
+      im.src = 'parts/part-' + p.n + '.png'; im.alt = ''; im.decoding = 'async';
+      d.appendChild(im); host.appendChild(d);
+      /* hairline + name, positioned at the apart centre of this part */
+      var cx = apt[k] + p.w / 2;
+      var bottom = p.y - Y0 + p.h + Math.max(0, LIFT[k]) + 0.5 * p.w * Math.abs(Math.sin(TURN[k] * Math.PI / 180)) + 14;
+      var ln = document.createElement('div'); ln.className = 'ln';
+      ln.setAttribute('data-cx', cx); ln.style.left = pc(cx, UW); ln.style.top = pc(bottom, UH); ln.style.height = pc(LBL_Y - bottom, UH);
+      var nc = document.createElement('div'); nc.className = 'nmclip';
+      nc.style.left = pc(cx, UW); nc.style.top = pc(LBL_Y + 4, UH);
+      var nm = document.createElement('span'); nm.className = 'nm'; nm.textContent = p.name;
+      nc.appendChild(nm); host.appendChild(ln); host.appendChild(nc);
+      els.push({ part: d, ln: ln, nm: nm, k: k });
+    });
+    return els;
+  }
+  var main = build(fig, false);
+  function snap() {                              /* hairlines on whole pixels, or they render at different strengths */
+    document.querySelectorAll('.ln').forEach(function (l) {
+      var w = l.parentNode.offsetWidth, f = parseFloat(l.getAttribute('data-cx'));
+      l.style.left = Math.round(f / UW * w) + 'px';
+    });
+  }
+  window.addEventListener('resize', snap); window.addEventListener('load', snap); snap();
+
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.__apart = { reduce: reduce, asm: asm, apt: apt };
+
+  if (reduce) {
+    /* two stills: assembled, then laid apart with names; no pin, no scrub */
+    var stage = document.getElementById('stage');
+    stage.className = 'stage';
+    var wrap = document.createElement('div'); wrap.className = 'rm-wrap';
+    stage.removeChild(fig); wrap.appendChild(fig);
+    var cap1 = document.createElement('p'); cap1.className = 'rm-cap'; cap1.textContent = 'Assembled'; wrap.appendChild(cap1);
+    var fig2 = document.createElement('div'); fig2.className = 'fig rm-only'; fig2.style.display = 'block';
+    wrap.appendChild(fig2);
+    var cap2 = document.createElement('p'); cap2.className = 'rm-cap'; cap2.textContent = 'Laid apart'; wrap.appendChild(cap2);
+    stage.appendChild(wrap);
+    var rm = build(fig2, true);
+    rm.forEach(function (o) {
+      var k = o.k;
+      o.part.style.left = pc(apt[k], UW);
+      o.ln.style.clipPath = 'inset(0)'; o.nm.style.transform = 'none';
+    });
+    window.__apart.mode = 'reduced-motion-stills';
+    return;
+  }
+
+  /* ---- the scrubbed timeline: 0-1 drift apart, 1-2 names out and hold, 2-3 names back, parts return and seat ---- */
+  gsap.registerPlugin(ScrollTrigger);
+  /* test hook ?still=0.5 : no scroll trigger, intro and closing hidden, timeline set directly (headless stills) */
+  var sm = location.search.match(/[?&]still=([0-9.]+)/);
+  var cfg = { defaults: { ease: 'none' } };
+  if (sm) { [].forEach.call(document.querySelectorAll('.block'), function (b) { b.style.display = 'none'; }); }
+  else cfg.scrollTrigger = {
+      trigger: '#stage', start: 'top top', end: '+=300%', pin: true, scrub: 0.8, anticipatePin: 1,
+      invalidateOnRefresh: true
+    };
+  var tl = gsap.timeline(cfg);
+  function k0() { return fig.offsetWidth / UW; }    /* px per figure unit, re-read on every refresh */
+
+  main.forEach(function (o) {
+    var k = o.k;
+    /* drift apart, 0 -> 1 (ease inside the tween shapes the weight; the scrub itself stays linear) */
+    tl.to(o.part, {
+      x: function () { return (apt[k] - asm[k]) * k0(); },
+      y: function () { return LIFT[k] * k0(); },
+      rotation: TURN[k], duration: 1, ease: 'power2.inOut'
+    }, 0);
+    /* return and seat, 2.1 -> 2.85, then a short settle to the exact joint */
+    var sg = apt[k] < asm[k] ? 1 : -1;        /* overshoot a few units past the joint, then ease back */
+    tl.to(o.part, { x: function () { return sg * 4 * k0(); }, y: 0, rotation: 0, duration: 0.75, ease: 'power2.inOut' }, 2.1);
+    tl.to(o.part, { x: 0, duration: 0.15, ease: 'power1.out' }, 2.85);
+  });
+  /* names: the hairline grows from the part (clip-path), the name slides down it from behind its clip edge (transform) */
+  main.forEach(function (o, idx) {
+    var s = 0.95 + idx * 0.05;
+    tl.to(o.ln, { clipPath: 'inset(0 0 0% 0)', duration: 0.3 }, s);
+    tl.to(o.nm, { y: '0%', duration: 0.22 }, s + 0.2);
+    var r = 1.9 + idx * 0.03;
+    tl.to(o.nm, { y: '-110%', duration: 0.2 }, r);
+    tl.to(o.ln, { clipPath: 'inset(0 0 100% 0)', duration: 0.25 }, r + 0.15);
+  });
+  tl.set({}, {}, 3);                          /* fix total length at 3 */
+  if (sm) tl.progress(parseFloat(sm[1]));
+
+  window.__apart.tl = tl; window.__apart.st = tl.scrollTrigger;
+  window.__apart.mode = 'scrub';
+  window.__apart.dur = tl.duration();
+
+  /* test hook: ?p=0.5 jumps the scroll to that fraction of the stage and sets the timeline directly */
+  var m = location.search.match(/[?&]p=([0-9.]+)/);
+  if (m) {
+    var p = parseFloat(m[1]);
+    window.addEventListener('load', function () {
+      ScrollTrigger.refresh();
+      var st = tl.scrollTrigger;
+      window.scrollTo(0, st.start + (st.end - st.start) * p);
+      tl.progress(p);
+      window.__apart.setP = p;
+    });
+  }
+})();
+</script>
+<script>
+/* ?selftest=1 writes a plain report block into the page so a headless dump can read it */
+if (/[?&]selftest=1/.test(location.search)) {
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      var a = window.__apart || {};
+      var imgs = [].slice.call(document.querySelectorAll('.part img'));
+      var r = {
+        gsap: typeof window.gsap, ScrollTrigger: typeof window.ScrollTrigger,
+        errors: window.__errs, mode: a.mode, reduce: a.reduce, dur: a.dur,
+        imgsLoaded: imgs.filter(function (i) { return i.complete && i.naturalWidth > 0; }).length + '/' + imgs.length,
+        pinSpacers: document.querySelectorAll('.pin-spacer').length,
+        scrollHeight: document.documentElement.scrollHeight,
+        scrollY: Math.round(window.scrollY),
+        figTop: Math.round(document.getElementById('fig').getBoundingClientRect().top),
+        tlProgress: a.tl ? +a.tl.progress().toFixed(3) : null,
+        part1tf: (document.querySelector('.part') || {style:{}}).style.transform || ''
+      };
+      var pre = document.createElement('pre'); pre.id = 'selftest'; pre.textContent = JSON.stringify(r);
+      document.body.appendChild(pre);
+    }, 600);
+  });
+}
+</script>
+</body>
+</html>
