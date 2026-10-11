@@ -25,15 +25,17 @@
    (ent, ophtho, neuropsych, pediatrics), never by the order the data arrives in.
    Dark = the evening painting (assets/hall/hall-dark.jpg), light = the daylight
    one. Read off the paintings: lower panels y 58-72 (dark), 62-77 (light).
-   The tall 2:3 paintings do not exist yet, so upright windows use the wide
-   painting: in the plain shape the hall's height is capped to the painting's own
-   shape; in the walk shape the view pulls back to fit the alcoves (hall.js). */
+   UPRIGHT WINDOWS (orientation:portrait) use the tall 2:3 paintings, a 2x2 grid of
+   alcoves, with their own boxes in the portrait block below: ear trumpet top left,
+   crystal sphere top right, marble brain bottom left, toy horse bottom right (the
+   same ent, ophtho, neuropsych, pediatrics order). Read off the tall paintings:
+   top panels y 37-41 (dark) / 36-42 (light), bottom panels y 72-79 / 76-85. */
 
 @media screen{
 
 :root{
   --hall-wide:url("../assets/hall/hall-dark.jpg");
-  --hall-tall:var(--hall-wide);   /* no tall painting yet: fall back to the wide one */
+  --hall-tall:url("../assets/hall/hall-dark-tall.jpg");
   --hall-fore:none;               /* no foreground-columns picture: the paintings carry their own */
   --hall-fore-filter:none;
   --wk-out:url("../assets/hall/outside-dark.jpg");
@@ -50,6 +52,7 @@
 }
 :root[data-theme="light"]{
   --hall-wide:url("../assets/hall/hall-light.jpg");
+  --hall-tall:url("../assets/hall/hall-light-tall.jpg");
   --hall-fore-filter:none;
   --wk-out:url("../assets/hall/outside-light.jpg");
 
@@ -259,6 +262,57 @@ body.hall-clep .clep .cl-body{visibility:hidden}
 .hall.walk.open .wk-out{visibility:hidden}
 /* clear of the lip the rest of home laps over the hall */
 .hall.walk .hall-greet{bottom:calc(var(--s-4) + var(--wk-lap))}
+
+/* ---------- upright windows: the tall 2:3 painting, 2x2 alcoves ----------
+   Same variables, tall numbers (percent of the 1024x1536 painting). Order is
+   still 1 ent, 2 ophtho, 3 neuropsych, 4 pediatrics: top row, then bottom row. */
+@media (orientation:portrait){
+  :root{
+    --a1-l:2.4;  --a1-t:8.8;  --a1-w:46.2; --a1-h:32.4;
+    --a2-l:51.5; --a2-t:8.8;  --a2-w:46.2; --a2-h:32.4;
+    --a3-l:2.4;  --a3-t:43.6; --a3-w:46.2; --a3-h:36;
+    --a4-l:51.5; --a4-t:43.6; --a4-w:46.2; --a4-h:36;
+    --p1-l:5.5;  --p1-t:37.4; --p1-w:40;   --p1-h:3.8;
+    --p2-l:55;   --p2-t:37.4; --p2-w:40;   --p2-h:3.8;
+    --p3-l:5.5;  --p3-t:72.8; --p3-w:40;   --p3-h:5.2;
+    --p4-l:55;   --p4-t:72.8; --p4-w:40;   --p4-h:5.2;
+  }
+  :root[data-theme="light"]{
+    --a1-l:2.9;  --a1-t:6.5;  --a1-w:45.4; --a1-h:36.6;
+    --a2-l:51;   --a2-t:6.5;  --a2-w:45.9; --a2-h:36.6;
+    --a3-l:2.9;  --a3-t:46.7; --a3-w:45.4; --a3-h:40;
+    --a4-l:51;   --a4-t:46.7; --a4-w:45.9; --a4-h:40;
+    --p1-l:8;    --p1-t:35.9; --p1-w:36;   --p1-h:6.2;
+    --p2-l:56;   --p2-t:35.9; --p2-w:36;   --p2-h:6.2;
+    --p3-l:8;    --p3-t:76.4; --p3-w:36;   --p3-h:6.2;
+    --p4-l:56;   --p4-t:76.4; --p4-w:36;   --p4-h:6.2;
+  }
+  /* The frame is 2:3 and covers the stage, capped at 108% of the width so a very
+     narrow window never crops the outer alcoves away. */
+  .hall-stage{--fw:calc(min(max(100cqw,66.667cqh),108cqw) + 28px)}
+  .hall-frame,.hall-back{aspect-ratio:2/3}
+  .hall-back{background:var(--hall-tall) center/cover no-repeat}
+  .wk-clip{aspect-ratio:2/3}
+  /* the tall niches hang their lamp lower than the wide ones */
+  .glow{background:radial-gradient(ellipse 60% 30% at 50% 27%,rgba(255,196,110,.30),rgba(255,160,70,.10) 55%,transparent 80%)}
+  /* The tall plaque panels are shallow: name and figures side by side. The stage is
+     not pulled back with the tall painting (scale 1), so the type is set in plain
+     pixels here; the .hall prefix outranks warm.css section 3, whose bigger sizes
+     were made for the pulled-back wide painting. */
+  .hall .plaque{flex-direction:row;gap:clamp(6px,1.3cqw,14px);padding:clamp(2px,.3cqw,4px) clamp(4px,.8cqw,10px)}
+  .hall .plaque .pl-name{font-size:clamp(12px,1.6cqw,17px);letter-spacing:.06em}
+  .hall .plaque .pl-acc{font-size:clamp(12px,1.55cqw,16px)}
+  .hall .plaque .pl-count{font-size:clamp(11px,1.4cqw,14px)}
+  .hall .plaque .ring{width:clamp(28px,3.6cqw,40px)!important;height:clamp(28px,3.6cqw,40px)!important}
+  .hall .plaque .ring .rv{font-size:clamp(8px,1cqw,11px)}
+  /* The floor under the lower plaques is shallow here (shallower still in the light
+     painting), so she is smaller, and she stands behind the plaque layer: if the
+     floor runs out she goes behind a plaque, never over its text. Her picture is
+     only resized, never altered. */
+  .hall-greet{z-index:0}
+  .hall-alcoves{z-index:1}
+  .hall-clep{height:min(96px,8.5cqh)}
+}
 
 /* ---------- motion ---------- */
 .hall.pushing .hall-push{transform:scale(1.9);transition:transform .45s var(--ease-soft)}

@@ -65,6 +65,7 @@
   let decodedTheme='';    // the theme whose two paintings are already decoded
 
   const reduced=()=>matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const tall=()=>matchMedia('(orientation:portrait)').matches;   // same test as hall.css: upright window, tall painting
   const body=()=>document.body;
   const theme=()=>document.documentElement.getAttribute('data-theme')==='light'?'light':'dark';
 
@@ -100,9 +101,9 @@
 
   function decodePaintings(){
     const th=theme();
-    return Promise.all(['outside','hall'].map(n=>{
+    return Promise.all(['outside-'+th,'hall-'+th+(tall()?'-tall':'')].map(n=>{
       const im=new Image();
-      im.src='assets/hall/'+n+'-'+th+'.jpg';
+      im.src='assets/hall/'+n+'.jpg';
       return im.decode?im.decode().catch(()=>{}):Promise.resolve();
     })).then(()=>{decodedTheme=th});
   }
@@ -378,7 +379,8 @@
       const R=Math.min(1,Math.max((Px-d.l)/Px,(d.r-Px)/(W-Px),(Py-d.t)/Py,(d.b-Py)/(H-Py))*1.04);
       /* the pull-back: cover (what the door shows) down to the width that fits all
          four alcoves (painting x 3.5-97, y 10-77). 1 when cover already fits. */
-      const fwC=Math.min(Math.max(W,1.5*H),2.08*H), fwT=Math.min(W/.94,2.2*H);
+      const fwC=tall()?Math.min(Math.max(W,H*2/3),1.08*W):Math.min(Math.max(W,1.5*H),2.08*H);
+      const fwT=tall()?W/.95:Math.min(W/.94,2.2*H);   // tall: alcoves span x 2.4-98
       const pb=Math.min(1,fwT/fwC);
       const tr=text.getBoundingClientRect?{x:text.offsetLeft+text.offsetWidth/2,y:text.offsetTop+text.offsetHeight/2}:{x:0,y:0};
       Object.assign(G,{W,H,Px,Py,d,S,R,pb,tr,top:bar?bar.offsetHeight:64});
