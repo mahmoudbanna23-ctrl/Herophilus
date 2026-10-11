@@ -1,0 +1,75 @@
+/* SAMPLE A — "old dark". Dark look only. Injected LAST (after type.css) by the shooting
+   harness. Puts back the base app's own dark ground / panel / hairline / shadow values
+   (tokens.css bare :root, views.css, components.css) over warm.css. Lettering, spacing,
+   layout, gold edge colour (--neon) and gold accents of the trial are kept. */
+@media screen {
+
+:root:not([data-theme="light"]){
+  --bg:#0a1017;
+  --bg-2:#151f2d;
+  --card:#121a27;
+  --fill:#2b3a4f;
+  --glass:rgba(18,27,40,.76);
+  --glass-2:rgba(11,17,26,.84);
+  --tint-2:rgba(242,232,213,.075);
+  --line:rgba(242,232,213,.085);
+  --line-2:rgba(242,232,213,.16);
+  --rail:#080d14;
+  --rail-2:#16202e;
+  --rail-3:#27364b;
+}
+
+:root:not([data-theme="light"]) body{
+  background-image:
+    radial-gradient(1200px 700px at 8% -10%, rgba(109,76,125,.30), transparent 60%),
+    radial-gradient(1000px 620px at 100% 0%, rgba(46,95,138,.26), transparent 58%),
+    radial-gradient(900px 600px at 50% 110%, rgba(92,122,82,.20), transparent 60%);
+}
+:root:not([data-theme="light"]) .ambient .o1{background:radial-gradient(circle,var(--neuro),transparent 68%)}
+:root:not([data-theme="light"]) .ambient .o2{background:radial-gradient(circle,var(--peds),transparent 68%)}
+
+:root:not([data-theme="light"]) .ambient .film-scrim,
+:root:not([data-theme="light"]) .gate-amb .film-scrim{
+  background:
+    linear-gradient(180deg,
+      rgba(7,13,22,.88) 0%, rgba(7,13,22,.44) 18%,
+      rgba(7,13,22,.26) 50%, rgba(7,13,22,.64) 100%),
+    radial-gradient(150% 105% at 50% 48%, transparent 38%, rgba(7,13,22,.46) 100%);
+}
+@media (max-aspect-ratio:5/4){
+  :root:not([data-theme="light"]) .ambient .film-scrim,
+  :root:not([data-theme="light"]) .gate-amb .film-scrim{
+    background:
+      linear-gradient(180deg,
+        rgba(7,13,22,.78) 0%, rgba(7,13,22,.28) 14%,
+        rgba(7,13,22,.14) 48%, rgba(7,13,22,.52) 100%),
+      radial-gradient(170% 95% at 50% 45%, transparent 50%, rgba(7,13,22,.34) 100%);
+  }
+}
+:root:not([data-theme="light"]) .gate-amb .film-scrim::after{
+  background:radial-gradient(46% 42% at 50% 52%,
+    rgba(7,13,22,.88) 0%, rgba(7,13,22,.72) 45%, transparent 78%);
+}
+
+:root:not([data-theme="light"]) .modal{
+  background:linear-gradient(160deg,rgba(24,40,60,.96),rgba(14,25,40,.98));
+}
+:root:not([data-theme="light"]) .modal-bg{background:rgba(3,7,14,.66)}
+:root:not([data-theme="light"]) .toast{background:linear-gradient(160deg,#22344b,#14243a)}
+:root:not([data-theme="light"]) .qzoom{background:rgba(3,7,14,.86)}
+
+:root:not([data-theme="light"]) .objective,
+:root:not([data-theme="light"]) .th-intro,
+:root:not([data-theme="light"]) .readtheory{
+  background:linear-gradient(135deg,rgba(46,95,138,.13),rgba(109,76,125,.15));
+}
+:root:not([data-theme="light"]) .conf-b:hover{box-shadow:0 7px 18px rgba(2,6,14,.25)}
+:root:not([data-theme="light"]) .colb.on{box-shadow:0 9px 22px rgba(2,6,14,.3)}
+
+:root:not([data-theme="light"]) .rail{
+  background:
+    linear-gradient(180deg,rgba(217,180,74,.05),transparent 140px),
+    linear-gradient(180deg,rgba(10,20,34,.96),rgba(8,16,28,.99));
+}
+
+}

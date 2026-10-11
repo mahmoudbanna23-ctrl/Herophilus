@@ -1,0 +1,78 @@
+/* SAMPLE B — "black ink". Dark look only. Injected LAST (after type.css) by the shooting
+   harness. Neutral near-black ground, neutral panels one step lighter, neutral ivory
+   hairlines. Gold kept only where warm.css already uses it as an accent. Text tokens,
+   subject colours and the painted hall pictures are untouched. */
+@media screen {
+
+:root:not([data-theme="light"]){
+  --bg:#0b0c0e;
+  --bg-2:#181a1e;
+  --card:#131417;
+  --fill:#25282d;
+  --glass:rgba(19,20,23,.78);
+  --glass-2:rgba(11,12,14,.86);
+  --tint:rgba(238,236,230,.045);
+  --tint-2:rgba(238,236,230,.05);
+  --sheen:linear-gradient(160deg,rgba(238,236,230,.05),rgba(238,236,230,.012));
+  --glow:0 0 0 1px rgba(238,236,230,.07);
+  --line:rgba(238,236,230,.09);
+  --line-2:rgba(238,236,230,.17);
+  --rail:#08090b;
+  --rail-2:#17191c;
+  --rail-3:#25282d;
+}
+
+:root:not([data-theme="light"]) body{
+  background-image:
+    radial-gradient(1200px 700px at 8% -10%, rgba(238,236,230,.06), transparent 60%),
+    radial-gradient(1000px 620px at 100% 0%, rgba(238,236,230,.035), transparent 58%),
+    radial-gradient(900px 600px at 50% 110%, rgba(238,236,230,.03), transparent 60%);
+}
+:root:not([data-theme="light"]) .ambient .o1{background:radial-gradient(circle,#4a4d54,transparent 68%)}
+:root:not([data-theme="light"]) .ambient .o2{background:radial-gradient(circle,#3a3d43,transparent 68%)}
+
+:root:not([data-theme="light"]) .ambient .film-scrim,
+:root:not([data-theme="light"]) .gate-amb .film-scrim{
+  background:
+    linear-gradient(180deg,
+      rgba(8,9,11,.88) 0%, rgba(8,9,11,.44) 18%,
+      rgba(8,9,11,.26) 50%, rgba(8,9,11,.64) 100%),
+    radial-gradient(150% 105% at 50% 48%, transparent 38%, rgba(8,9,11,.46) 100%);
+}
+@media (max-aspect-ratio:5/4){
+  :root:not([data-theme="light"]) .ambient .film-scrim,
+  :root:not([data-theme="light"]) .gate-amb .film-scrim{
+    background:
+      linear-gradient(180deg,
+        rgba(8,9,11,.78) 0%, rgba(8,9,11,.28) 14%,
+        rgba(8,9,11,.14) 48%, rgba(8,9,11,.52) 100%),
+      radial-gradient(170% 95% at 50% 45%, transparent 50%, rgba(8,9,11,.34) 100%);
+  }
+}
+:root:not([data-theme="light"]) .gate-amb .film-scrim::after{
+  background:radial-gradient(46% 42% at 50% 52%,
+    rgba(8,9,11,.88) 0%, rgba(8,9,11,.72) 45%, transparent 78%);
+}
+
+:root:not([data-theme="light"]) .modal{
+  background:linear-gradient(160deg,rgba(28,30,34,.97),rgba(14,15,18,.98));
+}
+:root:not([data-theme="light"]) .modal-bg{background:rgba(4,5,6,.68)}
+:root:not([data-theme="light"]) .toast{background:linear-gradient(160deg,#25282d,#15171a)}
+:root:not([data-theme="light"]) .qzoom{background:rgba(4,5,6,.88)}
+
+:root:not([data-theme="light"]) .objective,
+:root:not([data-theme="light"]) .th-intro,
+:root:not([data-theme="light"]) .readtheory{
+  background:linear-gradient(135deg,rgba(238,236,230,.06),rgba(238,236,230,.03));
+}
+:root:not([data-theme="light"]) .conf-b:hover{box-shadow:0 7px 18px rgba(0,0,0,.4)}
+:root:not([data-theme="light"]) .colb.on{box-shadow:0 9px 22px rgba(0,0,0,.45)}
+
+:root:not([data-theme="light"]) .rail{
+  background:
+    linear-gradient(180deg,rgba(217,180,74,.05),transparent 140px),
+    linear-gradient(180deg,#0e0f12 0%,#0a0b0d 55%,#07080a 100%);
+}
+
+}

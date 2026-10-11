@@ -1,0 +1,80 @@
+{
+ "hall-dark.jpg": {
+  "before": {
+   "dark3_hex": "#361a07",
+   "dark3_hue": 24.1,
+   "dark3_sat": 0.76,
+   "dark3_light": 0.121,
+   "top5_hex": "#ca863d",
+   "top5_hue": 31.2,
+   "pct_lum_lt8": 1.66
+  },
+  "after": {
+   "dark3_hex": "#121d31",
+   "dark3_hue": 220.0,
+   "dark3_sat": 0.46,
+   "dark3_light": 0.133,
+   "top5_hex": "#be884f",
+   "top5_hue": 30.8,
+   "pct_lum_lt8": 1.97
+  },
+  "size_before": 330780,
+  "size_after": 361461,
+  "px": [
+   1536,
+   1024
+  ]
+ },
+ "hall-dark-tall.jpg": {
+  "before": {
+   "dark3_hex": "#341907",
+   "dark3_hue": 24.1,
+   "dark3_sat": 0.77,
+   "dark3_light": 0.115,
+   "top5_hex": "#c67e31",
+   "top5_hue": 31.2,
+   "pct_lum_lt8": 3.14
+  },
+  "after": {
+   "dark3_hex": "#111b2f",
+   "dark3_hue": 219.9,
+   "dark3_sat": 0.46,
+   "dark3_light": 0.126,
+   "top5_hex": "#b78046",
+   "top5_hue": 30.7,
+   "pct_lum_lt8": 3.32
+  },
+  "size_before": 287655,
+  "size_after": 337225,
+  "px": [
+   1024,
+   1536
+  ]
+ },
+ "outside-dark.jpg": {
+  "before": {
+   "dark3_hex": "#41200e",
+   "dark3_hue": 21.9,
+   "dark3_sat": 0.65,
+   "dark3_light": 0.154,
+   "top5_hex": "#e6972f",
+   "top5_hue": 34.2,
+   "pct_lum_lt8": 0.03
+  },
+  "after": {
+   "dark3_hex": "#17233c",
+   "dark3_hue": 220.1,
+   "dark3_sat": 0.45,
+   "dark3_light": 0.162,
+   "top5_hex": "#e19837",
+   "top5_hue": 34.2,
+   "pct_lum_lt8": 0.05
+  },
+  "size_before": 298611,
+  "size_after": 335423,
+  "px": [
+   1536,
+   1024
+  ]
+ }
+}

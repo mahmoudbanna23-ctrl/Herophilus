@@ -528,3 +528,25 @@ Commits since, pushed: `b55fce7b` doors · `0b05d70d` doors fix.
   - Check passed: all `warm.css` / `type.css` rules inside `@media screen` (brace walk); font bytes
     match the source files exactly; which-face table gives per-sign evidence.
 - Not shot: 1024x1366 and phones. Still open: button pick (suggested 139 main, 21 quiet).
+
+## NIGHT BLOCK — state at 23:45. OWNER TESTED; DARK LOOK GOES NIGHT BLUE.
+
+- Owner opened the trial from disk and ruled: "fine but something still feels odd, the app doesn't
+  feel as one and the color palate for the dark mode is awful" = too brown and muddy. Shown three
+  samples (`samples/dark-variants/A|B|C.css`, stills `r3-*`), he picked **C, night blue**, and asked
+  for the hall to be cooler.
+- Landed: `warm.css` dark values are sample C (no brown hex left in a dark rule); "How sure" card
+  and streak chip cooled; `hall-dark.jpg`, `hall-dark-tall.jpg`, `outside-dark.jpg` re-graded by
+  `paint/cool/grade-cool.py` (always reads `paint/cool/src/`, the warm originals): shadows to hue
+  220, lamps kept warm (top-5-percent hue 31 -> 31). Dark door-leaf filter retuned in `hall.css`.
+  Stills `r4-<size>-dark-*` (21). Light look unchanged (pixel diff = noise).
+- Builder calls to confirm: it restated `--line`, `--line-2`, `--tint`, `--sheen`, `--glow` in the
+  dark block (cream hairlines read brown on blue) and rewrote the `warm.css` header; it kept the
+  `--rail-dim` redefinition (base value reads 3.03 on the active row); it added
+  `.clep{--cl-panel}` so the mascot's speech bubble is blue-black: OWNER NOT YET ASKED, revert that
+  one rule if he says no.
+- Under 4.5:1, not patched: ink-4 on `--rail-3` 4.33; `#9a8d77` on `--rail-3` 4.40.
+- Still warm, outside the footprint: `--bad-bg` (wrong-answer box reads maroon on blue,
+  `tokens.css`), the `.ambient` film pictures behind pages, the sepia Herophilus portrait.
+- Still open from the outside check: the three walk-in behaviour faults in `hall.js`, the band above
+  the hall at 1180x820, light-look door toning. Button pick still open.

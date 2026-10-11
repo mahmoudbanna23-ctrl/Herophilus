@@ -276,12 +276,14 @@ body.hall-clep .clep .cl-body{visibility:hidden}
 /* the bronze doors: a layer placed and scaled like .wk-out by hall.js, a box on the
    doorway inside it (perspective, arch clip and size from hall.js), two leaves hinged
    on the jambs. Only transform moves; the filter is static and sits the front-lit
-   bronze into the painted evening (dark) and the daylight (light). */
+   bronze into the painted night-blue evening (dark: a touch less bright and less
+   green than before the painting was cooled, so the bronze reads as lamp-lit metal)
+   and the daylight (light). */
 .wk-doors{position:absolute;pointer-events:none}
 .wk-dbox{position:absolute}
 .wk-leaf{
   position:absolute;top:0;height:100%;width:calc(50% + .5px);display:block;
-  backface-visibility:hidden;filter:brightness(1.16) sepia(.55) saturate(1.55);
+  backface-visibility:hidden;filter:brightness(1.06) sepia(.5) saturate(1.3) hue-rotate(-8deg);
 }
 /* Light look only: the pale floor of the hall shows through the gap while the leaves
    swing, so the gap is glazed with a warm dark interior that settles onto the threshold

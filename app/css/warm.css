@@ -4,12 +4,16 @@
    specificity. Everything is inside @media screen: print.css forces its own
    tokens for paper and none of this reaches it.
 
-   Why: the evening painting is warm stone and aged bronze; the app around it was
-   navy. Dark values were sampled from app/assets/hall/hall-dark.jpg (darkest
-   quartile averages rgb 52,23,5 .. 68,36,12 — more saturated than a UI ground can
-   carry, so the surfaces below keep the painting's hue, about 27-30 degrees, at a
-   third of its saturation). Text tokens, --line*, subject colours, --gold, --r-*
-   and the fonts are NOT restated here. Three token families stay separate.
+   DARK LOOK = NIGHT BLUE (owner pick, round 4). The first dark values were brown,
+   sampled from the evening painting, and read as muddy next to a navy app. Hall and
+   pages now share one colour world: the painting itself is graded to night blue
+   (progress/redesign/paint/cool/grade-cool.py; shadows and mid-tones cool, the lamp
+   light stays warm) and every dark surface below is the same blue family, with the
+   lamp colour kept for gold accents, hairline edges on hover and text only.
+   Text tokens, subject colours, --gold, --r-* and the fonts are NOT restated here.
+   The hairline tokens (--line, --line-2), the tints and --glow ARE restated, in the
+   dark block only: their base values are parchment-cream and read brown on blue.
+   Three token families stay separate (text / hairlines / fills).
 
    The box edge was light blue (--neon). It is warm gold now — lamp light on brass.
    Every card, option and verdict already reads var(--neon), so the token alone moves
@@ -19,19 +23,27 @@
 
 /* ---- dark: tokens ---------------------------------------------------------- */
 :root{
-  --bg:#15100a;
-  --bg-2:#1e150d;
-  --card:#241a11;
-  --fill:#3f2c1b;
-  --glass:rgba(36,26,17,.78);
-  --glass-2:rgba(22,15,9,.86);
+  --bg:#0a0f1a;
+  --bg-2:#111a2b;
+  --card:#0f1626;
+  --fill:#1b263c;
+  --glass:rgba(15,22,38,.78);
+  --glass-2:rgba(9,14,24,.86);
+  --tint:rgba(226,233,246,.045);
+  --tint-2:rgba(226,233,246,.05);
+  --sheen:linear-gradient(160deg,rgba(226,233,246,.05),rgba(226,233,246,.012));
+  --glow:0 0 0 1px rgba(226,233,246,.07);
+
+  /* hairlines: cool ivory, low alpha */
+  --line:rgba(226,233,246,.09);
+  --line-2:rgba(226,233,246,.17);
 
   --neon:#e8c26a;
   --neon-glow:0 0 10px rgba(232,194,106,.5);
 
-  --rail:#110b07;
-  --rail-2:#2a1d12;
-  --rail-3:#402c18;
+  --rail:#070b13;
+  --rail-2:#121b2c;
+  --rail-3:#1d2a44;
 }
 
 /* ---- light: only the edge, and the blue that leaked into parchment ---------- */
@@ -41,60 +53,62 @@
 }
 
 /* ---- dark: ground ------------------------------------------------------------ */
-/* the three orbs of colour: bronze, ember, olive (was purple, lapis, olive) */
+/* the three orbs of colour: night blue, deep blue, sea teal */
 :root:not([data-theme="light"]) body{
   background-image:
-    radial-gradient(1200px 700px at 8% -10%, rgba(150,96,34,.26), transparent 60%),
-    radial-gradient(1000px 620px at 100% 0%, rgba(180,71,47,.16), transparent 58%),
-    radial-gradient(900px 600px at 50% 110%, rgba(92,122,82,.18), transparent 60%);
+    radial-gradient(1200px 700px at 8% -10%, rgba(56,88,160,.22), transparent 60%),
+    radial-gradient(1000px 620px at 100% 0%, rgba(40,70,130,.14), transparent 58%),
+    radial-gradient(900px 600px at 50% 110%, rgba(40,80,110,.10), transparent 60%);
 }
-:root:not([data-theme="light"]) .ambient .o1{background:radial-gradient(circle,#96601f,transparent 68%)}
-:root:not([data-theme="light"]) .ambient .o2{background:radial-gradient(circle,var(--ent),transparent 68%)}
+:root:not([data-theme="light"]) .ambient .o1{background:radial-gradient(circle,#2a4a8a,transparent 68%)}
+:root:not([data-theme="light"]) .ambient .o2{background:radial-gradient(circle,var(--peds),transparent 68%)}
 
-/* film scrims: navy veil to warm-black veil (same alphas, so contrast is unchanged) */
+/* film scrims: cool-black veil (same alphas, so contrast is unchanged) */
 :root:not([data-theme="light"]) .ambient .film-scrim,
 :root:not([data-theme="light"]) .gate-amb .film-scrim{
   background:
     linear-gradient(180deg,
-      rgba(14,9,5,.88) 0%, rgba(14,9,5,.44) 18%,
-      rgba(14,9,5,.26) 50%, rgba(14,9,5,.64) 100%),
-    radial-gradient(150% 105% at 50% 48%, transparent 38%, rgba(14,9,5,.46) 100%);
+      rgba(6,10,18,.88) 0%, rgba(6,10,18,.44) 18%,
+      rgba(6,10,18,.26) 50%, rgba(6,10,18,.64) 100%),
+    radial-gradient(150% 105% at 50% 48%, transparent 38%, rgba(6,10,18,.46) 100%);
 }
 @media (max-aspect-ratio:5/4){
   :root:not([data-theme="light"]) .ambient .film-scrim,
   :root:not([data-theme="light"]) .gate-amb .film-scrim{
     background:
       linear-gradient(180deg,
-        rgba(14,9,5,.78) 0%, rgba(14,9,5,.28) 14%,
-        rgba(14,9,5,.14) 48%, rgba(14,9,5,.52) 100%),
-      radial-gradient(170% 95% at 50% 45%, transparent 50%, rgba(14,9,5,.34) 100%);
+        rgba(6,10,18,.78) 0%, rgba(6,10,18,.28) 14%,
+        rgba(6,10,18,.14) 48%, rgba(6,10,18,.52) 100%),
+      radial-gradient(170% 95% at 50% 45%, transparent 50%, rgba(6,10,18,.34) 100%);
   }
 }
 :root:not([data-theme="light"]) .gate-amb .film-scrim::after{
   background:radial-gradient(46% 42% at 50% 52%,
-    rgba(14,9,5,.88) 0%, rgba(14,9,5,.72) 45%, transparent 78%);
+    rgba(6,10,18,.88) 0%, rgba(6,10,18,.72) 45%, transparent 78%);
 }
 
 /* ---- pop-ups, notices, zoom ---------------------------------------------------- */
 :root:not([data-theme="light"]) .modal{
-  background:linear-gradient(160deg,rgba(46,33,20,.97),rgba(28,19,11,.98));
+  background:linear-gradient(160deg,rgba(22,32,52,.97),rgba(11,17,30,.98));
   border-color:rgba(232,194,106,.30);
 }
-:root:not([data-theme="light"]) .modal-bg{background:rgba(10,6,3,.68)}
-.toast{background:linear-gradient(160deg,#3b2a1a,#241810)}
-:root:not([data-theme="light"]) .qzoom{background:rgba(10,6,3,.88)}
+:root:not([data-theme="light"]) .modal-bg{background:rgba(3,6,12,.68)}
+/* the toast kept its dark-brown ground in the light look (the one value both looks shared) */
+:root[data-theme="light"] .toast{background:linear-gradient(160deg,#3b2a1a,#241810)}
+:root:not([data-theme="light"]) .toast{background:linear-gradient(160deg,#1c2a44,#111b2e)}
+:root:not([data-theme="light"]) .qzoom{background:rgba(3,6,12,.88)}
 
-/* the three purple-over-lapis callouts: a bronze tint, same border (subject colour) */
+/* the three callouts: a cool tint, same border (subject colour) */
 :root:not([data-theme="light"]) .objective,
 :root:not([data-theme="light"]) .th-intro,
 :root:not([data-theme="light"]) .readtheory{
-  background:linear-gradient(135deg,rgba(217,180,74,.08),rgba(180,71,47,.10));
+  background:linear-gradient(135deg,rgba(120,160,230,.08),rgba(120,160,230,.04));
 }
 :root:not([data-theme="light"]) .th-intro{box-shadow:var(--pop) rgba(0,0,0,.35)}
 :root:not([data-theme="light"]) .readtheory{box-shadow:var(--pop) rgba(0,0,0,.35)}
 :root:not([data-theme="light"]) .readtheory:hover{background:var(--bg-2);box-shadow:var(--pop-lg) rgba(0,0,0,.45)}
-:root:not([data-theme="light"]) .conf-b:hover{box-shadow:0 7px 18px rgba(8,4,2,.35)}
-:root:not([data-theme="light"]) .colb.on{box-shadow:0 9px 22px rgba(8,4,2,.4)}
+:root:not([data-theme="light"]) .conf-b:hover{box-shadow:0 7px 18px rgba(2,5,12,.4)}
+:root:not([data-theme="light"]) .colb.on{box-shadow:0 9px 22px rgba(2,5,12,.45)}
 
 /* ---- light: blue leaks on parchment ------------------------------------------- */
 :root[data-theme="light"] body{
@@ -130,12 +144,13 @@
    trim below (hairline, key band, plaque) reads on both.
    ============================================================================ */
 :root:not([data-theme="light"]) .rail{
-  /* the dim rail text, lifted from #8c7f6a so it stays AA (5.0:1 or better) on the
-     warm rail, its hover chip and the sync chip; measured in the build report */
+  /* the dim rail text, lifted from #8c7f6a. The base value is 4.69-5.06:1 on the rail
+     itself but 4.40 on the hover chip, 4.28 on the sync chip (top end) and 3.0-3.65 on
+     the active row; the lifted value is kept (5.65-6.09 rail, 5.29 hover chip) */
   --rail-dim:#9a8d77;
   background:
     linear-gradient(180deg,rgba(217,180,74,.05),transparent 140px),
-    linear-gradient(180deg,#1b120b 0%,#130d08 55%,#0e0905 100%);
+    linear-gradient(180deg,#0d1424 0%,#090e1a 55%,#060a12 100%);
   border-right:1px solid rgba(217,180,74,.42);
   box-shadow:inset -1px 0 0 rgba(0,0,0,.55),inset -6px 0 14px -8px rgba(217,180,74,.10);
 }
@@ -190,10 +205,8 @@
 :root:not([data-theme="light"]) .ch-row:hover:not(:disabled),
 :root:not([data-theme="light"]) .ch-row:focus-visible{border-color:var(--gold);box-shadow:var(--gold-glow)}
 
-/* 5. Dark: ink-4 text sat at 4.00:1 on --fill and 4.27:1 on the hover tint. The
-   surface goes a step darker and the tint a step fainter (text tokens untouched).
-   Measured: ink-4 on --fill 4.5+:1, on --tint-2 over --card 4.57:1. */
-:root:not([data-theme="light"]){--fill:#342516;--tint-2:rgba(242,232,213,.05)}
+/* 5. (--fill and --tint-2 now live in the dark token block at the top.) Measured on
+   the night-blue values: ink-4 on --fill 4.57:1, on --tint-2 over --card 4.89:1. */
 
 /* 7. Focus ring: was --neuro purple, 2.42:1 on dark cards. The ring now takes the
    edge colour of the look (gold on stone, bronze on parchment); no subject colour
@@ -304,5 +317,21 @@
 :root:not([data-theme="light"]) .explain:hover,
 :root:not([data-theme="light"]) .explain:has(:focus-visible),
 :root:not([data-theme="light"]) .explain:has(.ex-head.open){border-color:var(--gold);box-shadow:var(--gold-glow)}
+
+/* C. Dark look, night-blue family: the "How sure were you?" card and the streak chip in
+   the bar leave their gold wash (--gold-bg, amber-to-red). A cool tint instead, same
+   shape as the callouts; gold stays as the hover edge (above) and as the streak number. */
+:root:not([data-theme="light"]) .conf{
+  background:linear-gradient(135deg,rgba(120,160,230,.08),rgba(120,160,230,.04));
+}
+:root:not([data-theme="light"]) .streak{
+  background:linear-gradient(135deg,rgba(120,160,230,.10),rgba(120,160,230,.04));
+  border-color:var(--line-2);
+}
+
+/* D. Dark look: the Clepsydra's speech bubble sat on a brown-black panel (views.css
+   --cl-panel rgba(24,15,4,.94)). Night-blue panel instead; her warm text colour and her
+   gold-brass edge stay, so the bubble still reads as lamp-lit. */
+:root:not([data-theme="light"]) .clep{--cl-panel:rgba(9,14,24,.94)}
 
 }
