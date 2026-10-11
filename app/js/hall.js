@@ -130,9 +130,9 @@
       const pct=qs.length?d/qs.length*100:0;
       const foot=d===0
         ?`<span class="pl-count">Start studying</span>`
-        :`<span class="pl-row">${ring(pct,m.hex,38)}<span class="pl-meta">
+        :`<span class="pl-row">${ring(pct,m.hex,38).replace('<svg ','<svg viewBox="0 0 38 38" ')}<span class="pl-meta">
             <span class="pl-acc" style="color:${accColor(a)}">${a===null?'—':a+'%'}</span>
-            <span class="pl-count">${d}/${qs.length} answered</span></span></span>`;
+            <span class="pl-count">${d}/${qs.length}<span class="pl-w"> answered</span></span></span></span>`;
       const say=`${m.name}, ${chs} chapters, ${qs.length} question${qs.length===1?'':'s'}`+
         (d?`, ${d} answered${a===null?'':', '+a+'% accuracy'}`:', not started');
       alcoves+=`<button class="alcove" type="button" data-i="${n}" data-id="${m.id}"
@@ -230,8 +230,8 @@
     lastAlcove=id;
     if(kbd||reduced()){go({name:'module',id});return}
     pushing=true;
-    setOrigin(hall,b);
     hall.classList.remove('arrive');
+    setOrigin(hall,b);
     b.classList.add('pick');
     hall.classList.add('pushing');
     setTimeout(()=>{pushing=false;go({name:'module',id})},450);

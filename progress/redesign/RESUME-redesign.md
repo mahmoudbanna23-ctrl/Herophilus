@@ -116,7 +116,7 @@ written. New files only: `app/js/hall.js`, `app/css/hall.css`, `app/assets/hall/
 | 1 | `hall-dark` 1536x1024 | 2026-10-11 | Saved `paint/hall-dark.png` (2.4 MB, not committed). Sent raw to owner; **APPROVED by owner 2026-10-11.** Looker (Claude, different house from the maker): usable as is. Four alcoves, each ~20% wide, y 10-72%, centres x 15 / 38 / 62 / 85%, y 41%; objects left to right ear trumpet, crystal sphere, marble brain, toy horse. Empty lower panels y 58-72%, ~17% wide (plaque spot). No letters, no figure. Misses: top band ~9% not 14%, floor ~23% not 14%, side margins a sliver, scroll piles and lamps repeat, floor reflections streaky. Welcome line fits on the floor, x 15-85%, y 84-96%. |
 | 2 | `hall-light` 1536x1024 | 2026-10-11 | Saved `paint/hall-light.png`, sent raw to owner; **APPROVED by owner 2026-10-11.** Looker: same four objects, alcove centres x 14 / 38 / 62 / 86%, y ~43%; lower panels y 62-77% (dark: 58-72%), so panels sit 4-5% lower than in the dark painting. One full-panel plaque set will NOT fit both; either per-theme positions, or one compact plaque <=9% tall, <=16% wide, centred y ~67%. Outer pilasters cut off at both edges (no side margin). Sun streaks cross the panels: measure text contrast inside a streak. |
 | 3 | `hall-dark-tall` 1024x1536 | 2026-10-11 | Saved `paint/hall-dark-tall.png` (2.5 MB, not committed). Sent raw to owner; his verdict pending. Looker (Claude): usable, same hall, no letters or figures, nothing cut off. 2x2 grid, divider at y 41-43%. Top row ENT (x 3-48) and Ophthalmology (x 52-97): alcove y 9-37, lower panel y 37-41 — ONLY ~4% tall, plaques are tight there. Bottom row Neuropsychiatry and Pediatrics: alcove y 44-71, lower panel y 72-79. Floor x 5-95, y 82-98 for the welcome line. Differs from the landscape: no columns between alcoves, no books, flat panels. Side margins ~2.4%. Cropped to 820x1180: ~4% of height lost, all alcoves survive. |
-| 4 | `hall-light-tall` 1024x1536 | 2026-10-11 | Launched; result pending. |
+| 4 | `hall-light-tall` 1024x1536 | 2026-10-11 | Saved `paint/hall-light-tall.png` (2.7 MB, not committed). Sent raw to owner; his verdict pending. Looker (Claude): usable, style matches `hall-light`, no letters or figures, nothing cut off. 2x2, same objects in the same corners as the dark upright. Alcoves: top row y 6.5-35, bottom row y 47-75; left x 4-48, right x 52-97. Lower panels: top row x 8-44 / 56-92, y 36-43 (about 7% tall, roomier than the dark's 4%); bottom row y 76-85. Floor x 5-95, y 88-99. **Does NOT line up with the dark upright on the bottom row:** panels light y 76-85 vs dark 72-79.5; ledge 75 vs 71; arch top 47 vs 44; floor starts 87 vs 80. So upright positions must be per theme too, as in landscape. Side margins ~3%, scrolls repeat, soft sun shafts touch the top-left panel edge. Cropped to 820x1180: ~4% of height lost. |
 
 ## Motion page, 2026-10-11
 
@@ -127,6 +127,33 @@ pass. NOT checked: real-screen smoothness (headless Chrome gives no real frames,
 clocks by hand), the light theme, reduced motion. Stills `samples/motion-m1/m4/m6-mid.png` sent to the
 owner. The in-app browser pane shows this file as a frozen snapshot, so he must open it from disk to
 see it move. No independent check yet.
+
+**Owner's pick, 2026-10-11: M1-M6 go into the app; M7 (weighted scroll with snap) and M8 (browser page
+morph) are OUT.** That is his yes for GSAP inside `app/` (core, Flip, ScrollTrigger, DrawSVGPlugin,
+CustomEase, CustomBounce, CustomWiggle). Lenis is no longer needed anywhere — do not copy it into
+`app/`. Where each goes: M1 tile-into-page = alcove into subject page, M3 depth on scroll and M4
+self-drawing ring = home, so they join the home screen after the independent check and his look at the
+stills. M2 (row into card), M5 (wrong-answer shake) and M6 (right-answer bounce) belong to the chapter
+list and the quiz — later screens, and the quiz file is Pediatrics-owned; they wait for his verdict on
+home. Not started.
+
+## Hall-first home: built, checked, REJECTED by owner 2026-10-11
+
+- Paintings wired in by a Claude helper: `app/assets/hall/hall-dark.jpg` (331 KB), `hall-light.jpg`
+  (366 KB); `hall.css` rewritten, `hall.js` small edits. Hall box capped to the painting's 3:2 shape
+  (1187x791 at 1440x900, 927x618 at 1180x820, 805x537 at 820x1180), so it no longer fills the first
+  screen. Upright layout removed (no upright painting was in yet); foreground picture set to none.
+  Plaques, % of painting: dark left 7.4 / 30.6 / 53.9 / 77.2, top 59.2, 15.6 x 11.8; light left
+  5 / 29.6 / 54 / 78.6, top 64, 16.8 x 11.6. Builder's checks: boot-check 0 errors, `check-hall.mjs`
+  all PASS. Six shots in `shots/`, sent to the owner.
+- Independent check (Codex `gpt-5.6-terra`, read-only, brief `briefs/check-home.md`): **VERDICT FAIL,
+  13 rules PASS, 1 FAIL** — `hall.js:99,115` takes alcove order from `activeModules()`, so a reordered
+  module list would put the wrong subject on a fixed painted alcove. NOT fixed. Six shots: no visual
+  doubt. It did not check the footprint (its house rules forbid git) or any runtime behaviour.
+- **Owner's verdict on the shots: the hall must NOT be the first thing shown ("it doesn't make
+  sense"); redesign the whole with a scroll-down animation that fits the hall.** What opens first is
+  not yet settled — ask him, plan, get his yes, then build. Carry the order fault above into the next
+  build brief.
 
 ## In flight when this note was last written
 
