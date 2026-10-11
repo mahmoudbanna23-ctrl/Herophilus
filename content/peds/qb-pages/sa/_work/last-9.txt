@@ -1,0 +1,8 @@
+AGENTS.md loaded — Herophilus
+
+Pairs read: 40 (highest `n` written 40) · SAME 39 · DIFFERENT 1 · UNSURE 0
+
+DIFFERENT:
+- n 1 — `pedsa-b1-1` / `pedep2-mal-20`
+
+Stopped at the next slice boundary after output for records 41–60 was truncated, so I did not write verdicts for that slice.

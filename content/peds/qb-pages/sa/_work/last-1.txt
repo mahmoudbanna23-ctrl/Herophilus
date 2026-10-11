@@ -1,0 +1,9 @@
+AGENTS.md loaded — Herophilus
+
+Completed the staged arrays, parser, checker, and report under `content/peds/qb-pages/sa/`.
+
+`check-parts.js` exits 0; raw/parsed counts match:
+- p1: 165 total — 130 SBA, 25 EMQ, 10 mock
+- p2: 188 total — 164 SBA, 20 EMQ, 4 mock
+
+[Report](D:/claude%20os/Medical%20school/Herophilus/content/peds/qb-pages/sa/_work/report-1.md) records the Block 10 printed-count disagreement and ignored introductory instructions.

@@ -1,0 +1,99 @@
+=== n 491
+BOOK pedsa-b4-10-4
+  STEM: Considering these types of cerebral palsy, choose the type of movement disorder to fit the following scenarios. Each type of cerebral palsy [A–E] can be used once, more than once, or not at all. Alan is a 3-year-old boy who developed a preference for using his left hand at 7 months of age. He learnt to sit at 9 months and walked at 20 months. When he runs, he holds his right arm flexed and limps with his right foot. On examination, his right upper and lower limbs are stiff, with increased reflexes.
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic hemiplegia
+OTHER pedep2-mf1-64
+  STEM: A 3-year-old boy developed a preference for using his left hand at 7 months of age. His upper limbs are stiff, with increased reflexes. What is the type of movement disorder that fits with this type of cerebral palsy?
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic hemiplegia
+
+=== n 492
+BOOK pedsa-b4-10-4
+  STEM: Considering these types of cerebral palsy, choose the type of movement disorder to fit the following scenarios. Each type of cerebral palsy [A–E] can be used once, more than once, or not at all. Alan is a 3-year-old boy who developed a preference for using his left hand at 7 months of age. He learnt to sit at 9 months and walked at 20 months. When he runs, he holds his right arm flexed and limps with his right foot. On examination, his right upper and lower limbs are stiff, with increased reflexes.
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic hemiplegia
+OTHER pedhd-devp-15
+  STEM: Alan is a 3-year-old boy who developed a preference for using his left hand at 7 months of age. He learnt to sit at 9 months and walked at 20 months. When he runs, he holds his right arm flexed and limps with his right foot. On examination, his right upper and lower limbs are stiff, with increased reflexes. What is the type of movement disorder that fiits this clinical scenario?
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic hemiplegia
+
+=== n 493
+BOOK pedsa-b4-10-5
+  STEM: Considering these types of cerebral palsy, choose the type of movement disorder to fit the following scenarios. Each type of cerebral palsy [A–E] can be used once, more than once, or not at all. Ronaldo is a 6-year-old boy. He attends the outpatient department as his teacher has had some concerns. He has recently started school and has been noted to be unsteady on his feet. He has to walk and run with his legs quite wide apart to stop himself from falling over. His teacher also reports that he finds it difficult to grip a pen and to write because of unsteadiness.
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Ataxic
+OTHER pedep2-dp-16
+  STEM: Ronaldo is a 6-year-old boy whose teacher reports concerns. He is unsteady on his feet and walks with legs wide apart. He struggles to grip a pen due to unsteadiness. What type of movement disorder best fits this scenario?
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Ataxic
+
+=== n 494
+BOOK pedsa-b4-10-5
+  STEM: Considering these types of cerebral palsy, choose the type of movement disorder to fit the following scenarios. Each type of cerebral palsy [A–E] can be used once, more than once, or not at all. Ronaldo is a 6-year-old boy. He attends the outpatient department as his teacher has had some concerns. He has recently started school and has been noted to be unsteady on his feet. He has to walk and run with his legs quite wide apart to stop himself from falling over. His teacher also reports that he finds it difficult to grip a pen and to write because of unsteadiness.
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Ataxic
+OTHER pedhd-devp-16
+  STEM: Ronaldo is a 6-year-old boy. He attends the outpatient department as his teacher has had some concerns. He has recently started school and has been noted to be unsteady on his feet. He has to walk and run with his legs quite wide apart to stop himself from falling over. His teacher also reports that he finds it difficult to grip a pen and to write because of unsteadiness. What is the type of movement disorder that fiits this clinical scenario?
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Ataxic
+
+=== n 495
+BOOK pedsa-b4-11-6
+  STEM: Which of the following health professionals (A–H) involved in the care of a disabled child would be of MOST help to the children described below? Gloria is a 22-month-old girl whose health visitor is concerned because she is still only babbling and says no distinct words. She is able to walk, scribbles with crayons, and feeds herself with a spoon.
+  OPTIONS: Dietician | Occupational therapist | Paediatrician | Physiotherapist and occupational therapist | Psychologist | Social worker | Specialist health visitor | Speech and language therapist
+  KEY: Speech and language therapist
+OTHER pedep2-dp-5
+  STEM: Gloria is a 19-month-old girl who presents to you in primary care. Her health visitor is concerned because she is still only babbling and says no distinct words. She is able to walk, scribble with crayons, and feed herself with a spoon. What is the most appropriate first action?
+  OPTIONS: Hearing test | Assessment by a team specializing in autism spectrum disorders | Reassure the health visitor | Refer to an ear, nose, and throat surgeon | Refer to a paediatrician for a full developmental assessment
+  KEY: Hearing test
+
+=== n 496
+BOOK pedsa-b4-11-6
+  STEM: Which of the following health professionals (A–H) involved in the care of a disabled child would be of MOST help to the children described below? Gloria is a 22-month-old girl whose health visitor is concerned because she is still only babbling and says no distinct words. She is able to walk, scribbles with crayons, and feeds herself with a spoon.
+  OPTIONS: Dietician | Occupational therapist | Paediatrician | Physiotherapist and occupational therapist | Psychologist | Social worker | Specialist health visitor | Speech and language therapist
+  KEY: Speech and language therapist
+OTHER pedhd-devp-5
+  STEM: Gloria is a 19-month-old girl who presents to you in primary care. Her health visitor is concerned because she is still only babbling and says no distinct words. She is able to walk, scribbles with crayons and feeds herself with a spoon. What is the most appropriate first action?
+  OPTIONS: Hearing test | Assessment by a team specializing in autism spectrum disorders | Reassure the health visitor | Refer to an ear, nose and throat surgeon | Refer to a paediatrician for a full developmental assessment
+  KEY: Hearing test
+
+=== n 497
+BOOK pedsa-b4-2
+  STEM: At what age does autism spectrum disorder usually become evident? Select one answer only.
+  OPTIONS: 0–12 months | 12–24 months | 2–4 years | 4–8 years | Above 8 years
+  KEY: 2–4 years
+OTHER pedep2-dp-2
+  STEM: At what age does autism spectrum disorder usually become evident?
+  OPTIONS: 0–12 months | 12–24 months | 2–4 years | 4–8 years | Above 8 years
+  KEY: 2–4 years
+
+=== n 498
+BOOK pedsa-b4-2
+  STEM: At what age does autism spectrum disorder usually become evident? Select one answer only.
+  OPTIONS: 0–12 months | 12–24 months | 2–4 years | 4–8 years | Above 8 years
+  KEY: 2–4 years
+OTHER pedhd-devp-2
+  STEM: At what age does autism spectrum disorder usually become evident?
+  OPTIONS: 0–12 months | 12–24 months | 2–4 years | 4–8 years | Above 8 years
+  KEY: 2–4 years
+
+=== n 499
+BOOK pedsa-b4-3
+  STEM: At what age would you expect the clinical features of spastic bilateral cerebral palsy to become evident? Select one answer only.
+  OPTIONS: 0–12 months | 12–24 months | 2–4 years | 4–8 years | Above 8 years
+  KEY: 0–12 months
+OTHER pedep2-dp-3
+  STEM: At what age would you expect the clinical features of spastic bilateral cerebral palsy to become evident?
+  OPTIONS: 0–12 months | 12–24 months | 2–4 years | 4–8 years | Above 8 years
+  KEY: 0–12 months
+
+=== n 500
+BOOK pedsa-b4-3
+  STEM: At what age would you expect the clinical features of spastic bilateral cerebral palsy to become evident? Select one answer only.
+  OPTIONS: 0–12 months | 12–24 months | 2–4 years | 4–8 years | Above 8 years
+  KEY: 0–12 months
+OTHER pedhd-devp-3
+  STEM: At what age would you expect the clinical features of spastic bilateral cerebral palsy to become evident?
+  OPTIONS: 0–12 months | 12–24 months | 2–4 years | 4–8 years | Above 8 years
+  KEY: 0–12 months

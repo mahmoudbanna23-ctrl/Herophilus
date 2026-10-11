@@ -1,0 +1,36 @@
+10.8 · SINGLE BEST ANSWER
+
+Which set of results confirms diabetic ketoacidosis?
+
+ A. Glucose above 11 mmol/L, blood ketones above 3.0 mmol/L, pH below 7.3 or bicarbonate below
+   15 mmol/L
+ B. Glucose above 7 mmol/L with glycosuria only
+ C. Ketonuria with a normal pH
+D. pH below 7.3 with a normal glucose
+ E. Raised HbA1c alone
+
+Answer: A.
+
+Severity: mild pH <7.2 or bicarbonate 10–15; moderate pH 7.1–7.2 or bicarbonate 5–10; severe pH <7.1 or
+bicarbonate <5.
+
+
+
+
+10.9 · MANAGEMENT
+
+Which statement about DKA management is correct?
+
+ A. Insulin should be started immediately with the first fluid bolus
+ B. Insulin is started after one hour of fluids at 0.05 units/kg/hour, and the deficit is replaced over 48
+   hours
+ C. Bicarbonate should be given if the pH is below 7.0
+D. The IV insulin is stopped at the same moment as the first subcutaneous dose
+ E. Potassium should be withheld throughout
+
+Answer: B.
+
+No bicarbonate. The IV insulin continues for an hour AFTER the first subcutaneous dose because
+subcutaneous insulin takes time to absorb. Watch the ECG for hypokalaemia — total body potassium is
+depleted even when the plasma level looks normal.
+

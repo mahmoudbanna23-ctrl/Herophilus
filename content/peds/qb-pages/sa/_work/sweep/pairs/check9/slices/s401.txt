@@ -1,0 +1,99 @@
+=== n 401
+BOOK pedsa-b26-9
+  STEM: George, a 2-week-old male infant, presents to the Emergency Department with vomiting, diarrhoea and poor feeding. Investigations show: • sodium 112 mmol/L (normal range 133–145 mmol/L) • potassium 6.8 mmol/L (normal range 3.5–6.0 mmol/L) • urea 7.8 mmol/L (normal range 2.5–8.0 mmol/L) • creatinine 30 mmol/L (normal range 20–65 mmol/L) • blood glucose 1.7 mmol/L (normal range >2.6 mmol/L) • infection screen—negative What is the most likely cause? Select one answer only.
+  OPTIONS: Acute kidney injury | Congenital adrenal hyperplasia | Congenital adrenal hypoplasia | Cushing syndrome | Gastroenteritis
+  KEY: Congenital adrenal hyperplasia
+OTHER pedep2-end-6
+  STEM: George, a 2-week-old male infant, presents to the Emergency Department with vomiting, diarrhea, and poor feeding. Investigations show: Sodium: 112 mmol/L Potassium: 6.8 mmol/L Urea: 7.8 mmol/L Creatinine: 30 mmol/L Blood glucose: 1.7 mmol/L Infection screen: Negative What is the most likely cause?
+  OPTIONS: Acute kidney injury | Congenital adrenal hyperplasia | Congenital adrenal hypoplasia | Cushing syndrome | Gastroenteritis
+  KEY: Congenital adrenal hyperplasia
+
+=== n 402
+BOOK pedsa-b26-9
+  STEM: George, a 2-week-old male infant, presents to the Emergency Department with vomiting, diarrhoea and poor feeding. Investigations show: • sodium 112 mmol/L (normal range 133–145 mmol/L) • potassium 6.8 mmol/L (normal range 3.5–6.0 mmol/L) • urea 7.8 mmol/L (normal range 2.5–8.0 mmol/L) • creatinine 30 mmol/L (normal range 20–65 mmol/L) • blood glucose 1.7 mmol/L (normal range >2.6 mmol/L) • infection screen—negative What is the most likely cause? Select one answer only.
+  OPTIONS: Acute kidney injury | Congenital adrenal hyperplasia | Congenital adrenal hypoplasia | Cushing syndrome | Gastroenteritis
+  KEY: Congenital adrenal hyperplasia
+OTHER pedhd-endo-6
+  STEM: George, a 2-week-old male infant, presents to the Emergency Department with vomiting, diarrhoea and poor feeding. Investigations show: • sodium 112 mmol/L (normal range 133–145 mmol/L) • potassium 6.8 mmol/L (normal range 3.5–6.0 mmol/L) • urea 7.8 mmol/L (normal range 2.5–8.0 mmol/L) • creatinine 30 mmol/L (normal range 20–65 mmol/L) • blood glucose 1.7 mmol/L (normal range >2.6 mmol/L) • infection screen—negative What is the most likely cause?
+  OPTIONS: Acute kidney injury | Congenital adrenal hyperplasia | Congenital adrenal hypoplasia | Cushing syndrome | Gastroenteritis
+  KEY: Congenital adrenal hyperplasia
+
+=== n 403
+BOOK pedsa-b29-1
+  STEM: Annette is a 15-year-old girl who complains of worsening daily occipital headaches. They occur mainly in the mornings and sometimes wake her from sleep. Her mother says she is doing less well at school than previously and has become a difficult and grumpy teenager. She sometimes vomits in the mornings. She has no other medical problems though she is on the oral contraceptive pill. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Idiopathic intracranial hypertension | Migraine | Medication side-effect | Tension headache | Raised intracranial pressure due to a space-occupying lesion
+  KEY: Raised intracranial pressure due to a space-occupying lesion
+OTHER pedhd-neuro-1
+  STEM: Annette is a 15-year-old girl who complains of worsening daily occipital headaches. They occur mainly in the mornings and sometimes wake her from sleep. Her mother says she is doing less well at school than previously and has become a difficult and grumpy teenager. She sometimes vomits in the mornings. She has no other medical problems though she is on the oral contraceptive pill. What is the most likely diagnosis?
+  OPTIONS: Idiopathic intracranial hypertension | Migraine | Medication side-effect | Tension headache | Raised intracranial pressure due to a space-occupying lesion
+  KEY: Raised intracranial pressure due to a space-occupying lesion
+
+=== n 404
+BOOK pedsa-b29-10
+  STEM: Gregor is born at term. It was a normal pregnancy though the mother did not have any antenatal ultrasound examinations as she was against medical procedures. He was born by vaginal delivery. Immediately, the midwife noticed the lesion shown in Fig. 29.3. Which of the supplements listed would have reduced the risk of this problem if taken by the mother periconceptually? Select one answer only.
+  OPTIONS: Folic acid | Iron | Vitamin A | Vitamin B₁₂ | Vitamin D
+  KEY: Folic acid
+OTHER pedep2-neu-7
+  STEM: Gregor was born at term. It was a normal pregnancy, though the mother did not have any antenatal ultrasound examinations as she was against medical procedures. He was born by vaginal delivery. Immediately, the midwife noticed the lesion shown in the opposite figure. Which of the supplements listed would have reduced the risk of this problem if taken by the mother periconceptually?
+  OPTIONS: Folic acid | Iron | Vitamin A | Vitamin B12 | Vitamin D
+  KEY: Folic acid
+
+=== n 405
+BOOK pedsa-b29-10
+  STEM: Gregor is born at term. It was a normal pregnancy though the mother did not have any antenatal ultrasound examinations as she was against medical procedures. He was born by vaginal delivery. Immediately, the midwife noticed the lesion shown in Fig. 29.3. Which of the supplements listed would have reduced the risk of this problem if taken by the mother periconceptually? Select one answer only.
+  OPTIONS: Folic acid | Iron | Vitamin A | Vitamin B₁₂ | Vitamin D
+  KEY: Folic acid
+OTHER pedhd-neuro-7
+  STEM: Gregor is born at term. It was a normal pregnancy though the mother did not have any antenatal ultrasound examinations as she was against medical procedures. He was born by vaginal delivery. Immediately, the midwife noticed the lesion shown in the opposite figure. Which of the supplements listed would have reduced the risk of this problem if taken by the mother periconceptually?
+  OPTIONS: Folic acid | Iron | Vitamin A | Vitamin B12 | Vitamin D
+  KEY: Folic acid
+
+=== n 406
+BOOK pedsa-b29-11
+  STEM: Antonia, a 5-year-old girl, is seen by her general practitioner. Her mother and school teacher have noticed she has episodes where she stops her activity for a few seconds, stares blankly ahead and then resumes the activity as if she had never stopped. These episodes happen many times a day. She has no other medical problems and there is no family history of note. The EEG during an episode is shown in Fig. 29.4. Choose the most likely diagnosis. Select one answer only.
+  OPTIONS: Childhood Rolandic epilepsy (benign epilepsy with centro-temporal spikes) | Childhood absence epilepsy | Juvenile myoclonic epilepsy | Lennox-Gastaut syndrome | Infantile spasms (West syndrome)
+  KEY: Childhood absence epilepsy
+OTHER pedep2-neu-8
+  STEM: Antonia, a 5-year-old girl, is seen by her general practitioner. Her mother and school teacher have noticed she has episodes where she stops her activity for a few seconds, stares blankly ahead, and then resumes the activity as if she had never stopped. These episodes happen many times a day. She has no other medical problems, and there is no family history of seizures. The EEG during an episode is shown in the figure below. Choose the most likely diagnosis.
+  OPTIONS: Childhood Rolandic epilepsy (benign epilepsy with centrotemporal spikes) | Childhood absence epilepsy | Juvenile myoclonic epilepsy | Lennox-Gastaut syndrome | Infantile spasms (West syndrome)
+  KEY: Childhood absence epilepsy
+
+=== n 407
+BOOK pedsa-b29-11
+  STEM: Antonia, a 5-year-old girl, is seen by her general practitioner. Her mother and school teacher have noticed she has episodes where she stops her activity for a few seconds, stares blankly ahead and then resumes the activity as if she had never stopped. These episodes happen many times a day. She has no other medical problems and there is no family history of note. The EEG during an episode is shown in Fig. 29.4. Choose the most likely diagnosis. Select one answer only.
+  OPTIONS: Childhood Rolandic epilepsy (benign epilepsy with centro-temporal spikes) | Childhood absence epilepsy | Juvenile myoclonic epilepsy | Lennox-Gastaut syndrome | Infantile spasms (West syndrome)
+  KEY: Childhood absence epilepsy
+OTHER pedhd-neuro-8
+  STEM: Antonia, a 5-year-old girl, is seen by her general practitioner. Her mother and school teacher have noticed she has episodes where she stops her activity for a few seconds, stares blankly ahead and then resumes the activity as if she had never stopped. These episodes happen many times a day. She has no other medical problems and there is no family history of note. The EEG during an episode is shown in the figure below. Choose the most likely diagnosis.
+  OPTIONS: Childhood Rolandic epilepsy (benign epilepsy with centro-temporal spikes) | Childhood absence epilepsy | Juvenile myoclonic epilepsy | Lennox-Gastaut syndrome | Infantile spasms (West syndrome)
+  KEY: Childhood absence epilepsy
+
+=== n 408
+BOOK pedsa-b29-12
+  STEM: Vijay is a 5-month-old infant who has been seen repeatedly by his general practitioner because of colic. His mother brings him to the Accident and Emergency department as he is having episodes of suddenly throwing his head and arms forward. These episodes occur in repetitive bursts. His mother thinks they may be something more than just colic, as he is now not smiling or supporting his head as well as he did previously. He was born at term by normal vaginal delivery and has no other medical problems. His EEG is shown in Fig. 29.5. Choose the most likely diagnosis. Select one answer only.
+  OPTIONS: Juvenile myoclonic epilepsy | Lennox-Gastaut syndrome | Childhood Rolandic epilepsy (benign epilepsy with centro-temporal spikes) | Childhood absence epilepsy | Infantile spasms (West syndrome)
+  KEY: Infantile spasms (West syndrome)
+OTHER pedep2-neu-9
+  STEM: Vijay is a 5-month-old infant who has been seen repeatedly by his general practitioner because of colic. His mother brings him to the Accident and Emergency Department as he is having episodes of suddenly throwing his head and arms forward. These episodes occur in repetitive bursts. His mother thinks they may be something more than just colic, as he is now not smiling or supporting his head as well as he did previously. He was born at term by normal vaginal delivery and has no other medical problems. His EEG is shown in the figure below. Choose the most likely diagnosis.
+  OPTIONS: Juvenile myoclonic epilepsy | Lennox-Gastaut syndrome | Childhood Rolandic epilepsy (benign epilepsy with centrotemporal spikes) | Childhood absence epilepsy | Infantile spasms (West syndrome)
+  KEY: Infantile spasms (West syndrome)
+
+=== n 409
+BOOK pedsa-b29-12
+  STEM: Vijay is a 5-month-old infant who has been seen repeatedly by his general practitioner because of colic. His mother brings him to the Accident and Emergency department as he is having episodes of suddenly throwing his head and arms forward. These episodes occur in repetitive bursts. His mother thinks they may be something more than just colic, as he is now not smiling or supporting his head as well as he did previously. He was born at term by normal vaginal delivery and has no other medical problems. His EEG is shown in Fig. 29.5. Choose the most likely diagnosis. Select one answer only.
+  OPTIONS: Juvenile myoclonic epilepsy | Lennox-Gastaut syndrome | Childhood Rolandic epilepsy (benign epilepsy with centro-temporal spikes) | Childhood absence epilepsy | Infantile spasms (West syndrome)
+  KEY: Infantile spasms (West syndrome)
+OTHER pedhd-neuro-9
+  STEM: Vijay is a 5-month-old infant who has been seen repeatedly by his general practitioner because of colic. His mother brings him to the Accident and Emergency department as he is having episodes of suddenly throwing his head and arms forward. These episodes occur in repetitive bursts. His mother thinks they may be something more than just colic, as he is now not smiling or supporting his head as well as he did previously. He was born at term by normal vaginal delivery and has no other medical problems. His EEG is shown in the figure below. Choose the most likely diagnosis.
+  OPTIONS: Juvenile myoclonic epilepsy | Lennox-Gastaut syndrome | Childhood Rolandic epilepsy (benign epilepsy with centro-temporal spikes) | Childhood absence epilepsy | Infantile spasms (West syndrome)
+  KEY: Infantile spasms (West syndrome)
+
+=== n 410
+BOOK pedsa-b29-13-1
+  STEM: For each of the scenarios (A–N) of children who have had a funny turn, pick the most likely diagnosis from the list. Each answer can be used once, more than once, or not at all. Emily, a normally fit and healthy 3-year-old girl, is rushed to the Emergency Department. She had been playing at nursery and had banged her head against a door. Almost immediately she went very pale and stiff and had jerking movements of her arms and legs for 20 seconds. Afterwards she was groggy for a few minutes, but is now back to her usual self. This has not happened before. Her mother is very distressed and now reports feeling faint herself. The triage nurse has performed a blood glucose which indicates a glucose level of 4.1 mmol/L (within normal range).
+  OPTIONS: Benign paroxysmal vertigo | Blue breath-holding spells (expiratory apnoea syncope) | Cardiac arrhythmia | Childhood absence epilepsy | Hypoglycaemia | Intracranial haemorrhage | Migraine | Narcolepsy | Night terrors | Non-epileptic attack disorder (pseudoseizure) | Reflex asystolic syncope (reflex anoxic seizure) | Syncope | Tic disorder | Tonic–clonic seizure
+  KEY: Reflex asystolic syncope (reflex anoxic seizure)
+OTHER pedep2-neu-10
+  STEM: Emily, a normally fit and healthy 3-year-old girl, is rushed to the Emergency Department. She had been playing at the nursery and had banged her head against a door. Almost immediately, she went very pale and stiff and had jerking movements of her arms and legs for 20 seconds. Afterwards, she was groggy for a few minutes but is now back to her usual self. This has not happened before. Her mother is very distressed and now reports feeling sick herself. The triage nurse has performed a blood glucose test, which indicates a glucose level of 4.1 mmol/L (within normal range). Which of the following is the most likely diagnosis?
+  OPTIONS: Childhood absence epilepsy | Migraine | Syncope | Reflex asystolic syncope (reflex anoxic seizure)
+  KEY: Reflex asystolic syncope (reflex anoxic seizure)

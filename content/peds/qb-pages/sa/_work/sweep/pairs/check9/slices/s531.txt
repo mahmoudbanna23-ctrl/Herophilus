@@ -1,0 +1,99 @@
+=== n 531
+BOOK pedsa-b6-13-2
+  STEM: For each of the following patients seen in the emergency department select the most appropriate next step in the management plan from the following list (A–L). Each option may be used once, more than once, or not at all. Kelsey, a 2-year-old girl, is found unconscious in the garden. When she is bought into the resuscitation room she is gasping and moaning.
+  OPTIONS: Airway opening manoeuvres | Bag and mask ventilation | Check blood glucose | Check conscious level [alert, voice, pain, unresponsive (AVPU)] | Check pupils | Commence cardiac compressions using both hands, one hand on top of the other | Commence cardiac compressions using the encircling method | Commence cardiac compressions using one hand on the sternum | High-flow oxygen therapy | Intravenous access | Intravenous fluid | Secondary survey
+  KEY: Airway opening manoeuvres
+OTHER pedep-emg-14
+  STEM: Kelsey, a 2-year-old girl, is found unconscious in the garden. In the resuscitation room, she is gasping and moaning. What is the next most appropriate step?
+  OPTIONS: Check blood glucose | Check pupils | Airway opening manoeuvres | High-flow oxygen therapy | Start chest compressions using hands-encircling method
+  KEY: Airway opening manoeuvres
+
+=== n 532
+BOOK pedsa-b6-13-2
+  STEM: For each of the following patients seen in the emergency department select the most appropriate next step in the management plan from the following list (A–L). Each option may be used once, more than once, or not at all. Kelsey, a 2-year-old girl, is found unconscious in the garden. When she is bought into the resuscitation room she is gasping and moaning.
+  OPTIONS: Airway opening manoeuvres | Bag and mask ventilation | Check blood glucose | Check conscious level [alert, voice, pain, unresponsive (AVPU)] | Check pupils | Commence cardiac compressions using both hands, one hand on top of the other | Commence cardiac compressions using the encircling method | Commence cardiac compressions using one hand on the sternum | High-flow oxygen therapy | Intravenous access | Intravenous fluid | Secondary survey
+  KEY: Airway opening manoeuvres
+OTHER pedhd-emg-14
+  STEM: Kelsey, a 2-year-old girl, is found unconscious in the garden. When she is bought into the resuscitation room she is gasping and moaning. Which of the following is the most appropriate next step in the management of that patient?
+  OPTIONS: Check blood glucose | Check pupils | Airway opening manoeuvres | High-flow oxygen therapy | Commence cardiac compressions using the hands encircling method
+  KEY: Airway opening manoeuvres
+
+=== n 533
+BOOK pedsa-b6-13-3
+  STEM: For each of the following patients seen in the emergency department select the most appropriate next step in the management plan from the following list (A–L). Each option may be used once, more than once, or not at all. Ahmed, aged 2 months, is found by his mother to be pale and floppy in his cot. The paramedics are giving bag and valve mask ventilation when he arrives in the resuscitation room and his chest is moving well. His heart rate is 40 beats/min.
+  OPTIONS: Airway opening manoeuvres | Bag and mask ventilation | Check blood glucose | Check conscious level [alert, voice, pain, unresponsive (AVPU)] | Check pupils | Commence cardiac compressions using both hands, one hand on top of the other | Commence cardiac compressions using the encircling method | Commence cardiac compressions using one hand on the sternum | High-flow oxygen therapy | Intravenous access | Intravenous fluid | Secondary survey
+  KEY: Commence cardiac compressions using the encircling method
+OTHER pedhd-emg-15
+  STEM: Ahmed, aged 2 months, is found by his mother to be pale and floppy in his cot. The paramedics are giving bag and valve mask ventilation when he arrives in the resuscitation room and his chest is moving well. His heart rate is 40 beats/min. Which of the following is the most appropriate next step in the management of that patient?
+  OPTIONS: Check blood glucose | Check pupils | Airway opening manoeuvres | High-flow oxygen therapy | Commence cardiac compressions using the hands encircling method
+  KEY: Commence cardiac compressions using the hands encircling method
+
+=== n 534
+BOOK pedsa-b6-13-4
+  STEM: For each of the following patients seen in the emergency department select the most appropriate next step in the management plan from the following list (A–L). Each option may be used once, more than once, or not at all. Daniel, age 10 years, has diabetes mellitus and has been playing football at his friend’s house. He has been brought to the emergency department as he has become confused and is sweaty. He walks into the department.
+  OPTIONS: Airway opening manoeuvres | Bag and mask ventilation | Check blood glucose | Check conscious level [alert, voice, pain, unresponsive (AVPU)] | Check pupils | Commence cardiac compressions using both hands, one hand on top of the other | Commence cardiac compressions using the encircling method | Commence cardiac compressions using one hand on the sternum | High-flow oxygen therapy | Intravenous access | Intravenous fluid | Secondary survey
+  KEY: Check blood glucose
+OTHER pedhd-emg-16
+  STEM: Daniel, age 10 years, has diabetes mellitus and has been playing football at his friend's house. He has been brought to the emergency department as he has become. Which of the following is the most appropriate next step in the management of that patient?
+  OPTIONS: Check blood glucose | Check pupils | Airway opening manoeuvres | High-flow oxygen therapy | Commence cardiac compressions using the hands encircling method
+  KEY: Check blood glucose
+
+=== n 535
+BOOK pedsa-b6-13-5
+  STEM: For each of the following patients seen in the emergency department select the most appropriate next step in the management plan from the following list (A–L). Each option may be used once, more than once, or not at all. Aisha, a 3-year-old girl, is bought to hospital by the paramedics as she has had a seizure. She is receiving high-flow oxygen, her breathing is regular, and the cardiac monitor shows a heart rate of 100 beats/min. She is unresponsive to painful stimuli, as she does not flinch when her blood glucose is checked.
+  OPTIONS: Airway opening manoeuvres | Bag and mask ventilation | Check blood glucose | Check conscious level [alert, voice, pain, unresponsive (AVPU)] | Check pupils | Commence cardiac compressions using both hands, one hand on top of the other | Commence cardiac compressions using the encircling method | Commence cardiac compressions using one hand on the sternum | High-flow oxygen therapy | Intravenous access | Intravenous fluid | Secondary survey
+  KEY: Check pupils
+OTHER pedep-emg-17
+  STEM: Aisha, a 3-year-old girl, had a seizure. She is on high-flow oxygen and unresponsive to pain. Blood glucose is being checked. What is the next most appropriate step?
+  OPTIONS: Check blood glucose | Check pupils | Airway opening manoeuvres | High-flow oxygen therapy | Start chest compressions using hands-encircling method
+  KEY: Check pupils
+
+=== n 536
+BOOK pedsa-b6-13-5
+  STEM: For each of the following patients seen in the emergency department select the most appropriate next step in the management plan from the following list (A–L). Each option may be used once, more than once, or not at all. Aisha, a 3-year-old girl, is bought to hospital by the paramedics as she has had a seizure. She is receiving high-flow oxygen, her breathing is regular, and the cardiac monitor shows a heart rate of 100 beats/min. She is unresponsive to painful stimuli, as she does not flinch when her blood glucose is checked.
+  OPTIONS: Airway opening manoeuvres | Bag and mask ventilation | Check blood glucose | Check conscious level [alert, voice, pain, unresponsive (AVPU)] | Check pupils | Commence cardiac compressions using both hands, one hand on top of the other | Commence cardiac compressions using the encircling method | Commence cardiac compressions using one hand on the sternum | High-flow oxygen therapy | Intravenous access | Intravenous fluid | Secondary survey
+  KEY: Check pupils
+OTHER pedhd-emg-17
+  STEM: Aisha, a 3-year-old girl, is bought to hospital by the paramedics as she has had a seizure. She is receiving high-flow oxygen, her breathing is regular, and the cardiac monitor shows a heart rate of 100 beats/min. She is unresponsive to painful stimuli, as she does not flinch when her blood glucose is checked. Which of the following is the most appropriate next step in the management of that patient?
+  OPTIONS: Check blood glucose | Check pupils | Airway opening manoeuvres | High-flow oxygen therapy | Commence cardiac compressions using the hands encircling method
+  KEY: Check pupils
+
+=== n 537
+BOOK pedsa-b6-2
+  STEM: You are in the Acute Assessment Unit and see David, a 15-month-old boy, who has a fever of 38.5° C. He has had a runny nose, cough and a fever for 3 days. Since this morning he has slept and has been difficult to wake. His heart rate is raised. He has a rash (Fig. 6.2) scattered over his legs which does not disappear with pressure. Which of the following is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute lymphoblastic leukaemia | Henoch–Schönlein purpura | Immune thrombocytopenia | Non-accidental injury | Septicaemia
+  KEY: Septicaemia
+OTHER pedep-emg-2
+  STEM: You are in the Acute Assessment Unit and assess David, a 15-month-old boy, who has a fever of 38.5°C. He has had a runny nose, cough, and fever for 3 days. Since this morning, he has been sleeping excessively and is difficult to wake. His heart rate is elevated. He has a rash scattered over his legs that does not blanch with pressure. What is the most likely diagnosis?
+  OPTIONS: Acute lymphoblastic leukaemia | Henoch–Schönlein purpura | Immune thrombocytopenia | Non-accidental injury | Septicaemia
+  KEY: Septicaemia
+
+=== n 538
+BOOK pedsa-b6-2
+  STEM: You are in the Acute Assessment Unit and see David, a 15-month-old boy, who has a fever of 38.5° C. He has had a runny nose, cough and a fever for 3 days. Since this morning he has slept and has been difficult to wake. His heart rate is raised. He has a rash (Fig. 6.2) scattered over his legs which does not disappear with pressure. Which of the following is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute lymphoblastic leukaemia | Henoch–Schönlein purpura | Immune thrombocytopenia | Non-accidental injury | Septicaemia
+  KEY: Septicaemia
+OTHER pedhd-emg-2
+  STEM: You are in the Acute Assessment Unit and see David, a 15-month-old boy, who has a fever of 38.5°C. He has had a runny nose, cough and a fever for 3 days. Since this morning he has slept and has been difficult to wake. His heart rate is raised. He has a rash (Fig. 6.2) scattered over his legs which does not disappear with pressure. Which of the following is the most likely diagnosis?
+  OPTIONS: Acute lymphoblastic leukaemia | Henoch–Schönlein purpura | Immune thrombocytopenia | Non-accidental injury | Septicaemia
+  KEY: Septicaemia
+
+=== n 539
+BOOK pedsa-b6-3
+  STEM: A 3-year-old boy who is unconscious arrives in the Emergency Department. You manage his airway, breathing and circulation. His blood glucose is normal. On examination you note his pupils are as in Fig. 6.3. His temperature and other vital signs are otherwise normal. What is the most likely cause? Select one answer only.
+  OPTIONS: Third nerve lesion | Severe hypoxia | Hypothermia | Tentorial herniation | Opiate poisoning
+  KEY: Opiate poisoning
+OTHER pedep-emg-3
+  STEM: A 3-year-old boy who is unconscious arrives at the Emergency Department. Airway, breathing, and circulation have been managed. Blood glucose is normal. On examination, his pupils are bilaterally pinpoint. Temperature and other vitals are normal. What is the most likely cause?
+  OPTIONS: Third nerve lesion | Severe hypoxia | Hypothermia | Tentorial herniation | Opiate poisoning
+  KEY: Opiate poisoning
+
+=== n 540
+BOOK pedsa-b6-3
+  STEM: A 3-year-old boy who is unconscious arrives in the Emergency Department. You manage his airway, breathing and circulation. His blood glucose is normal. On examination you note his pupils are as in Fig. 6.3. His temperature and other vital signs are otherwise normal. What is the most likely cause? Select one answer only.
+  OPTIONS: Third nerve lesion | Severe hypoxia | Hypothermia | Tentorial herniation | Opiate poisoning
+  KEY: Opiate poisoning
+OTHER pedhd-emg-3
+  STEM: A 3-year-old boy who is unconscious arrives in the Emergency Department. You manage his airway, breathing and circulation. His blood glucose is normal. On examination you note his pupils are as in the opposite figure (bilateral pinpoint pupils). His temperature and other vital signs are otherwise normal. What is the most likely cause?
+  OPTIONS: Third nerve lesion | Severe hypoxia | Hypothermia | Tentorial herniation | Opiate poisoning
+  KEY: Opiate poisoning

@@ -1,0 +1,26 @@
+[
+ {
+  "n": 173,
+  "book": "pedsa-b15-7",
+  "other": "pedep-mf1-37",
+  "first": "SAME",
+  "second": "DIFFERENT",
+  "why": "The book asks the cause of respiratory failure and keys Pneumocystis jiroveci pneumonia, whereas the other asks the diagnosis and keys severe combined immunodeficiency."
+ },
+ {
+  "n": 251,
+  "book": "pedsa-b18-8-4",
+  "other": "pedep2-car-35",
+  "first": "SAME",
+  "second": "DIFFERENT",
+  "why": "The book localizes the ejection systolic murmur to the upper right sternal edge, whereas the other item says upper left, a diagnostic finding despite both keyed aortic stenosis."
+ },
+ {
+  "n": 299,
+  "book": "pedsa-b2-8-3",
+  "other": "pedep2-mf1-15",
+  "first": "DIFF",
+  "second": "SAME",
+  "why": "Both ask the diagnosis for a 3-year-old who coughed during peanut eating then developed exertional breathlessness and left reduced air entry, keyed left inhaled foreign body."
+ }
+]

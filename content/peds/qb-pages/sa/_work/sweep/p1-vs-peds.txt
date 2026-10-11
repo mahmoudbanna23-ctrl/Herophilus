@@ -1,0 +1,7 @@
+incoming 165  from sa-p1.array.js
+corpus   393  from questions.peds.js
+
+G within-batch                pedsa1-3-5        pedsa1-10-2         dice 0.76
+G within-batch                pedsa1-3-14       pedsa1-m-3          dice 0.76
+
+2 candidates. NONE is a decision. Read both pages.

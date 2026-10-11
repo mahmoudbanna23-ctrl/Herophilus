@@ -104,7 +104,7 @@ warnSaveFailure.checkData=function(){
   const missing=[];
   const subjects=[
     ['ENT','ent',['Q_ENT','C_ENT'],['T_ENT']],
-    ['Pediatrics','pediatrics',['Q_PEDS','Q_PEDS_EP','Q_PEDS_EP2','C_PEDS'],['T_PEDS']],
+    ['Pediatrics','pediatrics',['Q_PEDS','Q_PEDS_EP','Q_PEDS_EP2','Q_PEDS_SA','C_PEDS'],['T_PEDS']],
     ['Ophthalmology','ophtho',['Q_OPHTHO','Q_OPHTHO_EP','Q_OPHTHO_EP2','C_OPHTHO'],['T_OPHTHO']],
     ['Neuro/Psych','neuropsych',['Q_NEURO','C_NEURO'],['T_NEURO']]
   ];
@@ -174,14 +174,15 @@ async function save(){
 const $=id=>document.getElementById(id);
 const chapterName=id=>{for(const m of MODULES)for(const g of m.groups)for(const c of g.chapters)if(c[0]===id)return c[1];return id};
 const moduleOf=id=>MODULES.find(m=>m.id===id);
-/* The three question banks the material comes from. Order here is the order the
+/* The four question banks the material comes from. Order here is the order the
    filter chips render in. `bank` on a question is one of these ids; anything
    missing one is treated as 'endpoint', which is where every question
    transcribed before the field existed came from. */
 const BANKS=[
   {id:'endpoint', name:'Endpoint',   hex:'#9a6b1f'},
   {id:'house',    name:'House',      hex:'#2f6b8f'},
-  {id:'gradegain',name:'Grade Gain', hex:'#8f3f5c'}
+  {id:'gradegain',name:'Grade Gain', hex:'#8f3f5c'},
+  {id:'selfassess',name:'Self assessment', hex:'#5d4b8c'}
 ];
 /* Module id -> artwork basename. The ids and the filenames diverge (neuropsych
    vs mod-neuro), so this map exists rather than a string template. */

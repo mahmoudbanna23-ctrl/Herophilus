@@ -1,0 +1,99 @@
+=== n 181
+BOOK pedsa-b16-3
+  STEM: Cordelia, a 5-month-old infant, was exclusively breastfed up until yesterday when her mother started her on formula as she is planning to go back to work. She noticed that she developed a rash very soon after the formula feed. She has no other medical problems and is not routinely on any medications. On examination she has the rash shown in Fig. 16.1 all over her body. What term provides the best description of this rash?
+  OPTIONS: Annular | Maculopapular | Purpuric | Urticarial | Vesicular
+  KEY: Urticarial
+OTHER pedep-alg-3
+  STEM: Cordelia, a 5-month-old infant, was exclusively breastfed until yesterday when her mother introduced formula feeding. Soon after the feed, the baby developed a rash covering her body. She has no past medical history and is not on medications.What term best describes the rash?
+  OPTIONS: Annular | Maculopapular | Purpuric | Urticarial | Vesicular
+  KEY: Urticarial
+
+=== n 182
+BOOK pedsa-b16-3
+  STEM: Cordelia, a 5-month-old infant, was exclusively breastfed up until yesterday when her mother started her on formula as she is planning to go back to work. She noticed that she developed a rash very soon after the formula feed. She has no other medical problems and is not routinely on any medications. On examination she has the rash shown in Fig. 16.1 all over her body. What term provides the best description of this rash?
+  OPTIONS: Annular | Maculopapular | Purpuric | Urticarial | Vesicular
+  KEY: Urticarial
+OTHER pedhd-alg-3
+  STEM: Cordelia, a 5-month-old infant, was exclusively breastfed up until yesterday when her mother started her on formula as she is planning to go back to work. She noticed that she developed a rash very soon after the formula feed. She has no other medical problems and is not routinely on any medications. On examination she has the rash shown in the opposite figure all over her body. What term provides the best description of this rash?
+  OPTIONS: Annular | Maculopapular | Purpuric | Urticarial | Vesicular
+  KEY: Urticarial
+
+=== n 183
+BOOK pedsa-b16-4
+  STEM: Eddy is an 8-month-old infant who presents to his general practitioner following a bout of diarrhoea and vomiting, associated with fever for 3 days. This was managed at home with oral rehydration solution. The vomiting had settled but the diarrhoea has continued for three weeks. The stool microscopy and culture were negative. He has no other medical problems and is not on any other medication. On examination he is not dehydrated. He has a soft, mildly distended abdomen. What is the most likely cause of his prolonged diarrhoea?
+  OPTIONS: Coeliac disease | Giardiasis | IgE mediated cow’s milk protein allergy | Non-allergic food hypersensitivity | Non-IgE mediated cow’s milk protein allergy
+  KEY: Non-allergic food hypersensitivity
+OTHER pedep-alg-4
+  STEM: Eddy, an 8-month-old infant, had diarrhea and vomiting with fever for three days, managed at home with oral rehydration. Vomiting resolved, but diarrhea has persisted for three weeks. Stool microscopy and culture are negative. He appears well, with a soft, mildly distended abdomen. What is the most likely cause of his prolonged diarrhea?
+  OPTIONS: Coeliac disease | Giardiasis | IgE-mediated cow's milk protein allergy | Non-allergic food hypersensitivity | Non-IgE-mediated cow's milk protein allergy
+  KEY: Non-allergic food hypersensitivity
+
+=== n 184
+BOOK pedsa-b16-4
+  STEM: Eddy is an 8-month-old infant who presents to his general practitioner following a bout of diarrhoea and vomiting, associated with fever for 3 days. This was managed at home with oral rehydration solution. The vomiting had settled but the diarrhoea has continued for three weeks. The stool microscopy and culture were negative. He has no other medical problems and is not on any other medication. On examination he is not dehydrated. He has a soft, mildly distended abdomen. What is the most likely cause of his prolonged diarrhoea?
+  OPTIONS: Coeliac disease | Giardiasis | IgE mediated cow’s milk protein allergy | Non-allergic food hypersensitivity | Non-IgE mediated cow’s milk protein allergy
+  KEY: Non-allergic food hypersensitivity
+OTHER pedhd-alg-4
+  STEM: Eddy is an 8-month-old infant who presents to his general practitioner following a bout of diarrhoea and vomiting, associated with fever for 3 days. This was managed at home with oral rehydration solution. The vomiting had settled but the diarrhoea has continued for three weeks. The stool microscopy and culture were negative. He has no other medical problems and is not on any other medication. On examination he is not dehydrated. He has a soft, mildly distended abdomen. What is the most likely cause of his prolonged diarrhoea?
+  OPTIONS: Coeliac disease | Giardiasis | IgE mediated cow’s milk protein allergy | Non-allergic food hypersensitivity | Non-IgE mediated cow’s milk protein allergy
+  KEY: Non-allergic food hypersensitivity
+
+=== n 185
+BOOK pedsa-b17-1
+  STEM: Liam, a 7-year-old boy, complains to his family doctor of a sore throat and has a mild fever. The appearance of his throat is as shown in Fig. 17.1. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Diphtheria | Glandular fever (Ebstein Barr virus) | Group A Streptococcal tonsillitis | Measles | Herpes simplex stomatitis
+  KEY: Group A Streptococcal tonsillitis
+OTHER pedep2-res-1
+  STEM: Liam, a 7-year-old boy, complains to his family doctor of a sore throat and has a mild fever. The appearance of his throat is as shown in the opposite figure. What is the most likely diagnosis?
+  OPTIONS: Diphtheria | Glandular fever (Epstein–Barr virus) | Group A Streptococcal tonsillitis | Measles | Herpes simplex stomatitis
+  KEY: Group A Streptococcal tonsillitis
+
+=== n 186
+BOOK pedsa-b17-1
+  STEM: Liam, a 7-year-old boy, complains to his family doctor of a sore throat and has a mild fever. The appearance of his throat is as shown in Fig. 17.1. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Diphtheria | Glandular fever (Ebstein Barr virus) | Group A Streptococcal tonsillitis | Measles | Herpes simplex stomatitis
+  KEY: Group A Streptococcal tonsillitis
+OTHER pedhd-resp-1
+  STEM: Liam, a 7-year-old boy, complains to his family doctor of a sore throat and has a mild fever. The appearance of his throat is as shown in the opposite figure. What is the most likely diagnosis?
+  OPTIONS: Diphtheria | Glandular fever (Ebstein Barr virus) | Group A Streptococcal tonsillitis | Measles | Herpes simplex stomatitis
+  KEY: Group A Streptococcal tonsillitis
+
+=== n 187
+BOOK pedsa-b17-10
+  STEM: Fiona, a 10-month-old infant, has been unsettled and febrile with a runny nose for 2 days. Her family doctor examines her ear canal and the tympanic membrane appears as in Fig. 17.3 below. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute otitis externa | Cholesteatoma | Chronic otitis externa | Foreign body in the external ear canal | Otitis media with effusion
+  KEY: Otitis media with effusion
+OTHER pedep2-res-9
+  STEM: Fiona, a 10-month-old infant, has been unsettled and febrile with a runny nose for 2 days. Her family doctor examines her ear canal, and the tympanic membrane appears as in the opposite figure. What is the most likely diagnosis?
+  OPTIONS: Acute otitis externa | Cholesteatoma | Chronic otitis externa | Foreign body in the external ear canal | Otitis media with effusion
+  KEY: Otitis media with effusion
+
+=== n 188
+BOOK pedsa-b17-10
+  STEM: Fiona, a 10-month-old infant, has been unsettled and febrile with a runny nose for 2 days. Her family doctor examines her ear canal and the tympanic membrane appears as in Fig. 17.3 below. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute otitis externa | Cholesteatoma | Chronic otitis externa | Foreign body in the external ear canal | Otitis media with effusion
+  KEY: Otitis media with effusion
+OTHER pedhd-resp-9
+  STEM: Fiona, a 10-month-old infant, has been unsettled and febrile with a runny nose for 2 days. Her family doctor examines her ear canal and the tympanic membrane appears as in the opposite figure. What is the most likely diagnosis?
+  OPTIONS: Acute otitis externa | Cholesteatoma | Chronic otitis externa | Foreign body in the external ear canal | Otitis media with effusion
+  KEY: Otitis media with effusion
+
+=== n 189
+BOOK pedsa-b17-11
+  STEM: Jake is a 10-month-old boy from the UK who presents to the Emergency Department with a 2-day history of fever and runny nose. He has been otherwise well. During the night he gradually developed a barking cough in association with a loud noise on inspiration. On examination he has a temperature of 38° C and noisy inspiration accompanied by marked sternal recession (Fig. 17.4). His capillary refill time is normal. Select the ONE most likely diagnosis from the list below.
+  OPTIONS: Acute epiglottitis | Anaphylaxis | Bronchiolitis | Laryngeal foreign body | Laryngotracheobronchitis (croup)
+  KEY: Laryngotracheobronchitis (croup)
+OTHER pedhd-resp-10
+  STEM: Jake is a 10-month-old boy from the UK who presents to the Emergency Department with a 2-day history of fever and runny nose. He has been otherwise well. During the night he gradually developed a barking cough in association with a loud noise on inspiration. On examination he has a temperature of 38°C and noisy inspiration accompanied by marked sternal recession (as shown in the opposite figure). His capillary refill time is normal. Select the ONE most likely diagnosis from the list below.
+  OPTIONS: Acute epiglottitis | Anaphylaxis | Bronchiolitis | Laryngeal foreign body | Laryngotracheobronchitis (croup)
+  KEY: Laryngotracheobronchitis (croup)
+
+=== n 190
+BOOK pedsa-b17-12-2
+  STEM: Below is a list of conditions affecting the respiratory tract (A–O). For each of the clinical scenarios described pick the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. A 10-year-old African boy woke up four nights ago with a sudden onset of coughing and choking. Since then he has been noted to be intermittently wheezy. He has wheeze on auscultation of his right chest only. His chest X-ray is shown in Fig. 17.6 below.
+  OPTIONS: Acute exacerbation of asthma | Bronchiolitis obliterans | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis | Pneumonia | Pneumothorax | Retropharyngeal abscess | Tracheitis | Tuberculosis
+  KEY: Inhaled foreign body
+OTHER pedep2-res-11
+  STEM: A 10-year-old African boy woke up four nights ago with a sudden onset of coughing and choking. Since then, he has been noted to be intermittently wheezy. He has wheeze on auscultation of his right chest only. His chest X-ray is shown in the opposite figure. What is the most likely diagnosis?
+  OPTIONS: Pneumonia | Inhaled foreign body | Laryngotracheobronchitis (croup) | Bronchopulmonary dysplasia (BPD) | Chronic asthma
+  KEY: Inhaled foreign body

@@ -1,0 +1,99 @@
+=== n 471
+BOOK pedsa-b3-8-2
+  STEM: At which of these ages is the following action (screening, examination, health promotion activity) usually first taken in the child health surveillance and promotion programme in the United Kingdom? Each answer can be used once, more than once, or not at all. Biochemical screening test (Guthrie test).
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months | 4 months | 8 months | 12 months | 2–3 years | 4–5 years (preschool) | 5 years (school entry)
+  KEY: 5–6 days
+OTHER pedep2-nd-15
+  STEM: At which of these ages is the following action (biochemical screening test [Guthrie test]) usually first taken in the child health surveillance and promotion program in the United Kingdom?
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months
+  KEY: 5–6 days
+
+=== n 472
+BOOK pedsa-b3-8-2
+  STEM: At which of these ages is the following action (screening, examination, health promotion activity) usually first taken in the child health surveillance and promotion programme in the United Kingdom? Each answer can be used once, more than once, or not at all. Biochemical screening test (Guthrie test).
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months | 4 months | 8 months | 12 months | 2–3 years | 4–5 years (preschool) | 5 years (school entry)
+  KEY: 5–6 days
+OTHER pedhd-dev-15
+  STEM: At which of these ages is the following action (Biochemical screening test (Guthrie test)) usually first taken in the child health surveillance and promotion programme in the United Kingdom?
+  OPTIONS: Newborn | 5-6 days | 12 days | 8 weeks | 3 months
+  KEY: 5-6 days
+
+=== n 473
+BOOK pedsa-b3-8-3
+  STEM: At which of these ages is the following action (screening, examination, health promotion activity) usually first taken in the child health surveillance and promotion programme in the United Kingdom? Each answer can be used once, more than once, or not at all. Advice on reducing the risk of sudden infant death syndrome by ‘back to sleep’, avoiding overheating and avoiding parental smoking.
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months | 4 months | 8 months | 12 months | 2–3 years | 4–5 years (preschool) | 5 years (school entry)
+  KEY: Newborn
+OTHER pedep2-nd-16
+  STEM: At which of these ages is the following action (advice on reducing the risk of sudden infant death syndrome by "back to sleep", avoiding overheating, and avoiding parental smoking) usually first taken in the child health surveillance and promotion program in the United Kingdom?
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months
+  KEY: Newborn
+
+=== n 474
+BOOK pedsa-b3-8-3
+  STEM: At which of these ages is the following action (screening, examination, health promotion activity) usually first taken in the child health surveillance and promotion programme in the United Kingdom? Each answer can be used once, more than once, or not at all. Advice on reducing the risk of sudden infant death syndrome by ‘back to sleep’, avoiding overheating and avoiding parental smoking.
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months | 4 months | 8 months | 12 months | 2–3 years | 4–5 years (preschool) | 5 years (school entry)
+  KEY: Newborn
+OTHER pedhd-dev-16
+  STEM: At which of these ages is the following action (Advice on reducing the risk of sudden infant death syndrome by ‘back to sleep’, avoiding overheating and avoiding parental smoking) usually first taken in the child health surveillance and promotion programme in the United Kingdom?
+  OPTIONS: Newborn | 5-6 days | 12 days | 8 weeks | 3 months
+  KEY: Newborn
+
+=== n 475
+BOOK pedsa-b3-8-4
+  STEM: At which of these ages is the following action (screening, examination, health promotion activity) usually first taken in the child health surveillance and promotion programme in the United Kingdom? Each answer can be used once, more than once, or not at all. Hearing test using otoacoustic emission or auditory brainstem response audiometry.
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months | 4 months | 8 months | 12 months | 2–3 years | 4–5 years (preschool) | 5 years (school entry)
+  KEY: Newborn
+OTHER pedep2-nd-17
+  STEM: At which of these ages is the following action (hearing test using otoacoustic emission or auditory brainstem response audiometry) usually first taken in the child health surveillance and promotion program in the United Kingdom?
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months
+  KEY: Newborn
+
+=== n 476
+BOOK pedsa-b3-8-4
+  STEM: At which of these ages is the following action (screening, examination, health promotion activity) usually first taken in the child health surveillance and promotion programme in the United Kingdom? Each answer can be used once, more than once, or not at all. Hearing test using otoacoustic emission or auditory brainstem response audiometry.
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months | 4 months | 8 months | 12 months | 2–3 years | 4–5 years (preschool) | 5 years (school entry)
+  KEY: Newborn
+OTHER pedhd-dev-17
+  STEM: At which of these ages is the following action (Hearing test using otoacoustic emission or auditory brainstem response audiometry) usually first taken in the child health surveillance and promotion programme in the United Kingdom?
+  OPTIONS: Newborn | 5-6 days | 12 days | 8 weeks | 3 months
+  KEY: Newborn
+
+=== n 477
+BOOK pedsa-b3-8-5
+  STEM: At which of these ages is the following action (screening, examination, health promotion activity) usually first taken in the child health surveillance and promotion programme in the United Kingdom? Each answer can be used once, more than once, or not at all. An orthoptist assessment for visual impairment.
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months | 4 months | 8 months | 12 months | 2–3 years | 4–5 years (preschool) | 5 years (school entry)
+  KEY: 4–5 years (preschool)
+OTHER pedep2-nd-15
+  STEM: At which of these ages is the following action (biochemical screening test [Guthrie test]) usually first taken in the child health surveillance and promotion program in the United Kingdom?
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months
+  KEY: 5–6 days
+
+=== n 478
+BOOK pedsa-b3-8-5
+  STEM: At which of these ages is the following action (screening, examination, health promotion activity) usually first taken in the child health surveillance and promotion programme in the United Kingdom? Each answer can be used once, more than once, or not at all. An orthoptist assessment for visual impairment.
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months | 4 months | 8 months | 12 months | 2–3 years | 4–5 years (preschool) | 5 years (school entry)
+  KEY: 4–5 years (preschool)
+OTHER pedhd-dev-14
+  STEM: At which of these ages is the following action (First measles/mumps/rubella (MMR) immunization) usually first taken in the child health surveillance and promotion programme in the United Kingdom?
+  OPTIONS: 3 months | 4 months | 8 months | 12 months | 18 months
+  KEY: 12 months
+
+=== n 479
+BOOK pedsa-b3-8-5
+  STEM: At which of these ages is the following action (screening, examination, health promotion activity) usually first taken in the child health surveillance and promotion programme in the United Kingdom? Each answer can be used once, more than once, or not at all. An orthoptist assessment for visual impairment.
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months | 4 months | 8 months | 12 months | 2–3 years | 4–5 years (preschool) | 5 years (school entry)
+  KEY: 4–5 years (preschool)
+OTHER pedhd-dev-15
+  STEM: At which of these ages is the following action (Biochemical screening test (Guthrie test)) usually first taken in the child health surveillance and promotion programme in the United Kingdom?
+  OPTIONS: Newborn | 5-6 days | 12 days | 8 weeks | 3 months
+  KEY: 5-6 days
+
+=== n 480
+BOOK pedsa-b30-3
+  STEM: Which of the following is the most common cause of death in 15–19-year-olds in the UK? Select one answer only.
+  OPTIONS: Malignant disease | Heart disease | Infection | Injury and poisoning | Neurological disease
+  KEY: Injury and poisoning
+OTHER pedhd-acc-1
+  STEM: What is the most common cause of death in children aged 1 year to 14 years in the UK?
+  OPTIONS: Accidents | Congenital heart disease | Infectious disease | Malignant disease | Respiratory disease
+  KEY: Malignant disease

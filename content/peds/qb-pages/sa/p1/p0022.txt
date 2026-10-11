@@ -1,0 +1,33 @@
+3.13 · SINGLE BEST ANSWER
+
+Why does oral rehydration solution work in diarrhoeal illness?
+
+ A. It stops the diarrhoea by slowing gut transit
+ B. Glucose drives active sodium co-transport, which drags water across the mucosa
+ C. It is hypertonic and draws water into the circulation
+D. It kills the causative organism
+ E. It replaces bicarbonate lost in the stool only
+
+Answer: B.
+
+The glucose-coupled sodium transporter remains intact in diarrhoeal illness. ORS does not stop the
+diarrhoea — it keeps the child hydrated until the organism is cleared. Fruit juices and carbonated drinks
+are unsuitable.
+
+
+
+
+3.14 · CALCULATION
+
+A 24 kg child needs maintenance IV fluids. What is the 24-hour volume?
+
+ A. 1200 ml
+ B. 1440 ml
+ C. 1580 ml
+D. 1800 ml
+ E. 2400 ml
+
+Answer: C.
+
+100 ml/kg × 10 = 1000, plus 50 ml/kg × 10 = 500, plus 20 ml/kg × 4 = 80 → 1580 ml/24 h.
+

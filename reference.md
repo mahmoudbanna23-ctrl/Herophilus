@@ -191,6 +191,11 @@ is House — neither is guessable from its name. Render page 1 before assigning 
 | Neuropsychiatry | `Neuro endpoint.pdf` | **not supplied yet** | `neuropsychiatry & neurosurgery qb.pdf` |
 | Pediatrics | `Pediatrics endpoint part1+2.pdf` | `pediatric .pdf` | **not supplied yet** |
 
+**Fourth bank, Pediatrics only (2026-10-11):** `selfassess`, on screen "Self assessment", `#5d4b8c` —
+`Self Assessment Book.pdf` (printed book) + `Self assessment part 1.pdf` / `part 2.pdf` (authored
+sets). Data file `questions.peds.sa.js`, ids `pedsa-b<chapter>-<n>`, `pedsa1-…`, `pedsa2-…`.
+Detail: `progress\ledger.md` §23.
+
 A question with no `bank` is treated as `endpoint` — that is where everything transcribed before the
 field existed came from. **Set `bank` explicitly on every new question anyway.**
 

@@ -1,0 +1,99 @@
+=== n 191
+BOOK pedsa-b17-12-2
+  STEM: Below is a list of conditions affecting the respiratory tract (A–O). For each of the clinical scenarios described pick the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. A 10-year-old African boy woke up four nights ago with a sudden onset of coughing and choking. Since then he has been noted to be intermittently wheezy. He has wheeze on auscultation of his right chest only. His chest X-ray is shown in Fig. 17.6 below.
+  OPTIONS: Acute exacerbation of asthma | Bronchiolitis obliterans | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis | Pneumonia | Pneumothorax | Retropharyngeal abscess | Tracheitis | Tuberculosis
+  KEY: Inhaled foreign body
+OTHER pedhd-resp-12
+  STEM: A 10-year-old African boy woke up four nights ago with a sudden onset of coughing and choking. Since then he has been noted to be intermittently wheezy. He has wheeze on auscultation of his right chest only. His chest X-ray is shown in the opposite figure. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Pneumonia | Inhaled foreign body | Laryngotracheobronchitis (croup) | Bronchopulmonary dysplasia (BPD) | Chronic asthma
+  KEY: Inhaled foreign body
+
+=== n 192
+BOOK pedsa-b17-12-3
+  STEM: Below is a list of conditions affecting the respiratory tract (A–O). For each of the clinical scenarios described pick the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. A 3-year-old Asian girl has been coughing for 10 days, with fever and lethargy for 2 days. On examination, she has a respiratory rate of 45 breaths/min and crepitations with decreased air entry on her left lung base. Her chest X-ray is shown (Fig. 17.7).
+  OPTIONS: Acute exacerbation of asthma | Bronchiolitis obliterans | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis | Pneumonia | Pneumothorax | Retropharyngeal abscess | Tracheitis | Tuberculosis
+  KEY: Pneumonia
+OTHER pedep2-res-12
+  STEM: A 3-year-old Asian girl has been coughing for 10 days, with fever and lethargy for 2 days. On examination, she has a respiratory rate of 45 breaths/min and crepitations with decreased air entry at her left lung base. Her chest X-ray is shown in the opposite figure. What is the most likely diagnosis?
+  OPTIONS: Pneumonia | Inhaled foreign body | Laryngotracheobronchitis (croup) | Bronchopulmonary dysplasia (BPD) | Chronic asthma
+  KEY: Pneumonia
+
+=== n 193
+BOOK pedsa-b17-12-3
+  STEM: Below is a list of conditions affecting the respiratory tract (A–O). For each of the clinical scenarios described pick the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. A 3-year-old Asian girl has been coughing for 10 days, with fever and lethargy for 2 days. On examination, she has a respiratory rate of 45 breaths/min and crepitations with decreased air entry on her left lung base. Her chest X-ray is shown (Fig. 17.7).
+  OPTIONS: Acute exacerbation of asthma | Bronchiolitis obliterans | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis | Pneumonia | Pneumothorax | Retropharyngeal abscess | Tracheitis | Tuberculosis
+  KEY: Pneumonia
+OTHER pedhd-resp-13
+  STEM: A 3-year-old Asian girl has been coughing for 10 days, with fever and lethargy for 2 days. On examination, she has a respiratory rate of 45 breaths/min and crepitations with decreased air entry on her left lung base. Her chest X-ray is shown in the opposite figure. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Pneumonia | Inhaled foreign body | Laryngotracheobronchitis (croup) | Bronchopulmonary dysplasia (BPD) | Chronic asthma
+  KEY: Pneumonia
+
+=== n 194
+BOOK pedsa-b17-13-1
+  STEM: Below is a list of diagnoses (A–N) that result in tachypnoea in children. For each of the following patients with respiratory symptoms, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Jamal, a 10-month-old Asian boy, is brought at 1 am to the Emergency Department because he has woken up with noisy breathing. He has had coryzal symptoms for 2 days and now has a barking cough. On examination he has a fever of 37.8° C. He is alert and watches you but clings to his mother. On crying, he has marked inspiratory stridor.
+  OPTIONS: Acute asthma | Bronchitis | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis (whooping cough) | Pneumonia | Retropharyngeal abscess | Tuberculosis
+  KEY: Laryngotracheobronchitis (croup)
+OTHER pedep2-res-10
+  STEM: Jamel 10-month-old boy is brought at 1 am to the emergency because he has woken up with noisy breathing. He had coryzal symptoms for 2 days and now has a barking cough. On examination he has a fever of 37.8. He is alert and watches you but clings to his mother. On crying, he has marked inspiratory stridor. Select the most likely diagnosis.
+  OPTIONS: Bronchiolitis | HF | Inhaled F.B | CROUP | Pneumonia
+  KEY: CROUP
+
+=== n 195
+BOOK pedsa-b17-13-1
+  STEM: Below is a list of diagnoses (A–N) that result in tachypnoea in children. For each of the following patients with respiratory symptoms, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Jamal, a 10-month-old Asian boy, is brought at 1 am to the Emergency Department because he has woken up with noisy breathing. He has had coryzal symptoms for 2 days and now has a barking cough. On examination he has a fever of 37.8° C. He is alert and watches you but clings to his mother. On crying, he has marked inspiratory stridor.
+  OPTIONS: Acute asthma | Bronchitis | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis (whooping cough) | Pneumonia | Retropharyngeal abscess | Tuberculosis
+  KEY: Laryngotracheobronchitis (croup)
+OTHER pedep2-res-13
+  STEM: Jamal, a 10-month-old Asian boy, is brought at 1 a.m. to the Emergency Department because he has woken up with noisy breathing. He has had coryzal symptoms for 2 days and now has a barking cough. On examination, he has a fever of 37.8°C. He is alert and watches you but clings to his mother. On crying, he is noted to have inspiratory stridor. What is the most likely diagnosis?
+  OPTIONS: Bronchiolitis | Pneumonia | Pertussis (whooping cough) | Bronchiolitis | Laryngotracheobronchitis (croup)
+  KEY: Laryngotracheobronchitis (croup)
+
+=== n 196
+BOOK pedsa-b17-13-1
+  STEM: Below is a list of diagnoses (A–N) that result in tachypnoea in children. For each of the following patients with respiratory symptoms, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Jamal, a 10-month-old Asian boy, is brought at 1 am to the Emergency Department because he has woken up with noisy breathing. He has had coryzal symptoms for 2 days and now has a barking cough. On examination he has a fever of 37.8° C. He is alert and watches you but clings to his mother. On crying, he has marked inspiratory stridor.
+  OPTIONS: Acute asthma | Bronchitis | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis (whooping cough) | Pneumonia | Retropharyngeal abscess | Tuberculosis
+  KEY: Laryngotracheobronchitis (croup)
+OTHER pedhd-resp-14
+  STEM: Jamal, a 10-month-old Asian boy, is brought at 1 am to the Emergency Department because he has woken up with noisy breathing. He has had coryzal symptoms for 2 days and now has a barking cough. On examination he has a fever of 37.8°C. He is alert and watches you but clings to his mother. On crying, he has marked inspiratory stridor. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Bronchiolitis | Pneumonia | Pertussis (whooping cough) | Bronchiolitis | Laryngotracheobronchitis (croup)
+  KEY: Laryngotracheobronchitis (croup)
+
+=== n 197
+BOOK pedsa-b17-13-2
+  STEM: Below is a list of diagnoses (A–N) that result in tachypnoea in children. For each of the following patients with respiratory symptoms, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Jack, a 4-month-old infant, has rapid, laboured breathing that has been getting worse over the last 2 days. His mother is concerned as she is struggling to get him to feed. He was born at 27 weeks’ gestation, birth weight 979 g and was discharged home at 3 months of age. On examination he has a temperature of 37.4° C and a respiratory rate of 60 breaths/min. He is coughing. His chest is hyperinflated with marked intercostal recession. On auscultation there are generalized fine crackles and wheezes.
+  OPTIONS: Acute asthma | Bronchitis | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis (whooping cough) | Pneumonia | Retropharyngeal abscess | Tuberculosis
+  KEY: Bronchiolitis
+OTHER pedep2-res-14
+  STEM: Jack, a 4-month-old infant, has rapid, labored breathing that has been getting worse over the last 2 days. His mother is concerned as she is struggling to get him to feed. He was born at 27 weeks' gestation, birth weight 979 g, and was discharged home at 3 months of age. On examination, he has a temperature of 37.4°C and a respiratory rate of 60 breaths/min. He is coughing. His chest is hyperinflated with marked intercostal recession. On auscultation, there are generalized fine crackles and wheezes. What is the most likely diagnosis?
+  OPTIONS: Bronchiolitis | Pneumonia | Pertussis (whooping cough) | Bronchiolitis | Laryngotracheobronchitis (croup)
+  KEY: Bronchiolitis
+
+=== n 198
+BOOK pedsa-b17-13-2
+  STEM: Below is a list of diagnoses (A–N) that result in tachypnoea in children. For each of the following patients with respiratory symptoms, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Jack, a 4-month-old infant, has rapid, laboured breathing that has been getting worse over the last 2 days. His mother is concerned as she is struggling to get him to feed. He was born at 27 weeks’ gestation, birth weight 979 g and was discharged home at 3 months of age. On examination he has a temperature of 37.4° C and a respiratory rate of 60 breaths/min. He is coughing. His chest is hyperinflated with marked intercostal recession. On auscultation there are generalized fine crackles and wheezes.
+  OPTIONS: Acute asthma | Bronchitis | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis (whooping cough) | Pneumonia | Retropharyngeal abscess | Tuberculosis
+  KEY: Bronchiolitis
+OTHER pedep2-res-56
+  STEM: A 4-month-old infant has rapid, labored breathing that has been getting worse over the last 2 days. His mother is concerned as she is struggling to get him to feed. He was born at 27 weeks' gestation, weighing 979 g, and was discharged home at 3 months of age. On examination, he has a temperature of 37.4°C and a respiratory rate of 60 breaths/min. He is coughing. His chest is hyperinflated with marked intercostal recession. On auscultation, there are generalized fine crackles and wheezes. Select the most likely diagnosis:
+  OPTIONS: Acute asthma | Bronchiolitis | Laryngotracheobronchitis (Croup) | Pneumonia | Heart failure
+  KEY: Bronchiolitis
+
+=== n 199
+BOOK pedsa-b17-13-2
+  STEM: Below is a list of diagnoses (A–N) that result in tachypnoea in children. For each of the following patients with respiratory symptoms, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Jack, a 4-month-old infant, has rapid, laboured breathing that has been getting worse over the last 2 days. His mother is concerned as she is struggling to get him to feed. He was born at 27 weeks’ gestation, birth weight 979 g and was discharged home at 3 months of age. On examination he has a temperature of 37.4° C and a respiratory rate of 60 breaths/min. He is coughing. His chest is hyperinflated with marked intercostal recession. On auscultation there are generalized fine crackles and wheezes.
+  OPTIONS: Acute asthma | Bronchitis | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis (whooping cough) | Pneumonia | Retropharyngeal abscess | Tuberculosis
+  KEY: Bronchiolitis
+OTHER pedhd-resp-15
+  STEM: Jack, a 4-month-old infant, has rapid, laboured breathing that has been getting worse over the last 2 days. His mother is concerned as she is struggling to get him to feed. He was born at 27 weeks' gestation, birth weight 979 g and was discharged home at 3 months of age. On examination he has a temperature of 37.4°C and a respiratory rate of 60 breaths/min. He is coughing. His chest is hyperinflated with marked intercostal recession. On auscultation there are generalized fine crackles and wheezes. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Bronchiolitis | Pneumonia | Pertussis (whooping cough) | Bronchiolitis | Laryngotracheobronchitis (croup)
+  KEY: Bronchiolitis
+
+=== n 200
+BOOK pedsa-b17-13-4
+  STEM: Below is a list of diagnoses (A–N) that result in tachypnoea in children. For each of the following patients with respiratory symptoms, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Fred is a normally well 4-year-old boy. He has had a runny nose and fever for 3 days. He has now developed a cough and difficulty breathing. On examination his temperature is 39° C. He watches you but sits quietly on his mother’s lap. He has a respiratory rate of 55 breaths/min. His breaths are rapid but shallow with some mild substernal recession. There is no wheeze on auscultation but some coarse crackles at the right base. His oxygen saturation is 91% in air.
+  OPTIONS: Acute asthma | Bronchitis | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis (whooping cough) | Pneumonia | Retropharyngeal abscess | Tuberculosis
+  KEY: Pneumonia
+OTHER pedep2-res-15
+  STEM: Fred is a normally well 4-year-old boy. He has had a runny nose and fever for 3 days. He has now developed a cough and difficulty breathing. On examination, his temperature is 39°C. He watches you but sits quietly on his mother’s lap. He has a respiratory rate of 55 breaths/min. His breaths are rapid but shallow with some mild substernal recession. There is no wheeze on auscultation but some coarse crackles at the right base. His oxygen saturation is 91% in air. What is the most likely diagnosis?
+  OPTIONS: Bronchiolitis | Pneumonia | Pertussis (whooping cough) | Bronchiolitis | Laryngotracheobronchitis (croup)
+  KEY: Pneumonia

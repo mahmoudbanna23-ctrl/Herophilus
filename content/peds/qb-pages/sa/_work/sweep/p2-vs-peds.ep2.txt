@@ -1,0 +1,11 @@
+incoming 188  from sa-p2.array.js
+corpus   630  from questions.peds.ep2.js
+
+! shared menu (PAIR, not a fold)pedsa2-1-5        pedep2-mf4-67       identical option menu, different stem — name the discriminating token
+F reworded + option dropped   pedsa2-5-3        pedep2-res-44       dice 0.89  options 5 vs 4
+G within-batch                pedsa2-4-5        pedsa2-13-18        dice 0.81
+G within-batch                pedsa2-6-4        pedsa2-13-1         dice 0.75
+G within-batch                pedsa2-8-11       pedsa2-10-9         dice 0.73
+G within-batch                pedsa2-11-3       pedsa2-13-16        dice 0.72
+
+6 candidates. NONE is a decision. Read both pages.

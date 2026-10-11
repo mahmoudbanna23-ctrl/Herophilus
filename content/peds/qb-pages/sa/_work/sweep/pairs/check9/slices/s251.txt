@@ -1,0 +1,99 @@
+=== n 251
+BOOK pedsa-b18-8-4
+  STEM: Below is a list (A–M) of possible findings on echocardiography. For each of the following children who present with a heart murmur select the most likely findings on echocardiography. Each option may be used once, more than once, or not at all. Robert, a 3-year-old boy, has had a runny nose and wheeze for 3 days. On examination his pulse is 100 beats/min. Pulses are normal. There is an ejection systolic murmur heard loudest at the upper right sternal edge, which can also be heard over the carotid arteries but not at the back.
+  OPTIONS: Aortic stenosis | Atrial septal defect | Coarctation of the aorta | Dextrocardia with situs inversus | Dextrocardia with situs solitus | Mitral regurgitation | Mitral stenosis | Normal | Persistent ductus arteriosus | Pulmonary stenosis | Tetralogy of Fallot | Transposition of the great arteries | Ventricular septal defect (VSD)
+  KEY: Aortic stenosis
+OTHER pedep2-car-35
+  STEM: A 3-year-old boy has had a runny nose and wheeze for 3 days. On examination his pulse is 100 beats/min. There is an ejection systolic murmur heard loudest at the upper left sternal edge, which can also be heard over the carotid arteries but not at the back. Select most findings on echocardiography:
+  OPTIONS: Aortic stenosis | Atrial septal defect | Coarctation of the aorta | Pulmonary stenosis | Ventricular septal defect (VSD)
+  KEY: Aortic stenosis
+
+=== n 252
+BOOK pedsa-b18-8-4
+  STEM: Below is a list (A–M) of possible findings on echocardiography. For each of the following children who present with a heart murmur select the most likely findings on echocardiography. Each option may be used once, more than once, or not at all. Robert, a 3-year-old boy, has had a runny nose and wheeze for 3 days. On examination his pulse is 100 beats/min. Pulses are normal. There is an ejection systolic murmur heard loudest at the upper right sternal edge, which can also be heard over the carotid arteries but not at the back.
+  OPTIONS: Aortic stenosis | Atrial septal defect | Coarctation of the aorta | Dextrocardia with situs inversus | Dextrocardia with situs solitus | Mitral regurgitation | Mitral stenosis | Normal | Persistent ductus arteriosus | Pulmonary stenosis | Tetralogy of Fallot | Transposition of the great arteries | Ventricular septal defect (VSD)
+  KEY: Aortic stenosis
+OTHER pedhd-card-17
+  STEM: Robert, a 3-year-old boy, has had a runny nose and wheeze for 3 days. On examination his pulse is 100 beats/min. Pulses are normal. There is an ejection systolic murmur heard loudest at the upper right sternal edge, which can also be heard over the carotid arteries but not at the back. In this case, which of the following would be the most likely findings on echocardiography?
+  OPTIONS: Persistent ductus arteriosus | Aortic stenosis | Coarctation of the aorta | Transposition of the great arteries | Mitral regurgitation
+  KEY: Aortic stenosis
+
+=== n 253
+BOOK pedsa-b19-1
+  STEM: Emily is a 2-year-old girl. She presents to the Emergency Department with a 2-day history of fever, vomiting and ‘smelly’ urine. She has no significant medical history and is not on any medication. On examination she has a temperature of 39° C and has a heart rate of 126 beats/min. She has generalized tenderness over her abdomen. What is the best way to collect a urine sample from her? Select one answer only.
+  OPTIONS: Bag sample | Catheter sample | Clean catch | Pad/cotton wool balls in nappy | Suprapubic aspirate
+  KEY: Clean catch
+OTHER pedep2-ren-1
+  STEM: Emily is a 2-year-old girl who presents to the Emergency Department with a 2-day history of fever, vomiting, and foul-smelling urine. She has no significant past medical history and is not on any medication. On examination, her temperature is 39°C, and her heart rate is 126 beats/min. She has generalized abdominal tenderness.What is the best method to collect a urine sample from her?
+  OPTIONS: Bag sample | Catheter sample | Clean catch | Pad/cotton wool balls in nappy | Suprapubic aspirate
+  KEY: Clean catch
+
+=== n 254
+BOOK pedsa-b19-1
+  STEM: Emily is a 2-year-old girl. She presents to the Emergency Department with a 2-day history of fever, vomiting and ‘smelly’ urine. She has no significant medical history and is not on any medication. On examination she has a temperature of 39° C and has a heart rate of 126 beats/min. She has generalized tenderness over her abdomen. What is the best way to collect a urine sample from her? Select one answer only.
+  OPTIONS: Bag sample | Catheter sample | Clean catch | Pad/cotton wool balls in nappy | Suprapubic aspirate
+  KEY: Clean catch
+OTHER pedhd-renal-1
+  STEM: Emily is a 2-year-old girl. She presents to the Emergency Department with a 2-day history of fever, vomiting and ‘smelly’ urine. She has no significant medical history and is not on any medication. On examination she has a temperature of 39°C and a heart rate of 126 beats/min. She has generalized tenderness over her abdomen. What is the best way to collect a urine sample from her?
+  OPTIONS: Bag sample | Catheter sample | Clean catch | Pad/cotton wool balls in nappy | Suprapubic aspirate
+  KEY: Clean catch
+
+=== n 255
+BOOK pedsa-b19-11-1
+  STEM: Below is a list of possible diagnoses (A–H) for which urinalysis may be undertaken. For each of the following patients who have urine microscopy and culture sent from the Emergency Department, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Ji is a 12-month-old Japanese girl who presents to the Emergency Department. She has a 2-day history of fever and vomiting. Her mother is concerned that she is dehydrated. On examination she is well hydrated and has marked coryza. She has an inflamed pharynx. A urine sample from a bag is sent to the laboratory. You obtain the following result from the microscopy and culture: white blood cells 100/mm³ ; red blood cells negative; organisms, none seen; red cell casts, none seen; culture, not available.
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection | Vulvovaginitis
+  KEY: Perineal contamination
+OTHER pedep2-ren-10
+  STEM: Ji, a 12-month-old Japanese girl, presents with a 2-day history of fever and vomiting. She is well-hydrated and has signs of coryza and pharyngitis. A bag urine sample was sent. Results: WBCs 100/mm^3, RBCs negative, organisms not seen, red cell casts absent, culture not available. What is the most likely diagnosis?
+  OPTIONS: Balanitis | Glomerulonephritis | Normal result | Perineal contamination | Urinary tract infection (UTI)
+  KEY: Perineal contamination
+
+=== n 256
+BOOK pedsa-b19-11-1
+  STEM: Below is a list of possible diagnoses (A–H) for which urinalysis may be undertaken. For each of the following patients who have urine microscopy and culture sent from the Emergency Department, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Ji is a 12-month-old Japanese girl who presents to the Emergency Department. She has a 2-day history of fever and vomiting. Her mother is concerned that she is dehydrated. On examination she is well hydrated and has marked coryza. She has an inflamed pharynx. A urine sample from a bag is sent to the laboratory. You obtain the following result from the microscopy and culture: white blood cells 100/mm³ ; red blood cells negative; organisms, none seen; red cell casts, none seen; culture, not available.
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection | Vulvovaginitis
+  KEY: Perineal contamination
+OTHER pedhd-renal-10
+  STEM: Ji is a 12-month-old Japanese girl who presents to the Emergency Department. She has a 2-day history of fever and vomiting. Her mother is concerned that she is dehydrated. On examination she is well hydrated and has marked coryza. She has an inflamed pharynx. A urine sample from a bag is sent to the laboratory. You obtain the following result from the microscopy and culture: white blood cells 100/mm³; red blood cells negative; organisms, none seen; red cell casts, none seen; culture, not available. Which of the following is the most likely diagnosis?
+  OPTIONS: Balanitis | Glomerulonephritis | Normal result | Perineal contamination | Urinary tract infection (UTI)
+  KEY: Perineal contamination
+
+=== n 257
+BOOK pedsa-b19-11-2
+  STEM: Below is a list of possible diagnoses (A–H) for which urinalysis may be undertaken. For each of the following patients who have urine microscopy and culture sent from the Emergency Department, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Harriet, a 12-year-old girl, presents to the Emergency Department. She has abdominal pain and pain on micturition. A mid-stream urine sample is obtained and is positive for leucocytes but negative for nitrites. She was started on oral antibiotics and discharged; 48 hours later you receive the following result from the microscopy and culture: white blood cells >200/mm³ ; red blood cells, many seen; organisms, none seen; red cell casts, none seen; culture, >10⁵ coliforms.
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection | Vulvovaginitis
+  KEY: Urinary tract infection
+OTHER pedep2-ren-11
+  STEM: Harriet, a 12-year-old girl, presents to the Emergency Department with abdominal pain and pain on micturition. A midstream urine sample is obtained and is positive for leucocytes but negative for nitrites. She is started on oral antibiotics and discharged. Forty-eight hours later, the following result from microscopy and culture is received: white blood cells >200/mm^2; red blood cells, many seen; organisms, none seen; red cell casts, none seen; culture, >10^5 coliforms. Which of the following is the most likely diagnosis?
+  OPTIONS: Balanitis | Glomerulonephritis | Renal stone | Perineal contamination | Urinary tract infection (UTI)
+  KEY: Urinary tract infection (UTI)
+
+=== n 258
+BOOK pedsa-b19-11-2
+  STEM: Below is a list of possible diagnoses (A–H) for which urinalysis may be undertaken. For each of the following patients who have urine microscopy and culture sent from the Emergency Department, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Harriet, a 12-year-old girl, presents to the Emergency Department. She has abdominal pain and pain on micturition. A mid-stream urine sample is obtained and is positive for leucocytes but negative for nitrites. She was started on oral antibiotics and discharged; 48 hours later you receive the following result from the microscopy and culture: white blood cells >200/mm³ ; red blood cells, many seen; organisms, none seen; red cell casts, none seen; culture, >10⁵ coliforms.
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection | Vulvovaginitis
+  KEY: Urinary tract infection
+OTHER pedep2-ren-43
+  STEM: Harriet, a 12-year-old girl, presents to the Emergency Department. She has abdominal pain and pain on micturition. A mid-stream urine sample is obtained and is positive for leucocytes but negative for nitrites. She was started on oral antibiotics and discharged. 48 hours later you receive the following result from the microscopy and culture: white blood cells >200/mm3; red blood cells, many seen; organisms, none seen; red cell casts, none seen; culture, >100000 coliforms. What is your diagnosis?
+  OPTIONS: Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection
+  KEY: Urinary tract infection
+
+=== n 259
+BOOK pedsa-b19-11-2
+  STEM: Below is a list of possible diagnoses (A–H) for which urinalysis may be undertaken. For each of the following patients who have urine microscopy and culture sent from the Emergency Department, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Harriet, a 12-year-old girl, presents to the Emergency Department. She has abdominal pain and pain on micturition. A mid-stream urine sample is obtained and is positive for leucocytes but negative for nitrites. She was started on oral antibiotics and discharged; 48 hours later you receive the following result from the microscopy and culture: white blood cells >200/mm³ ; red blood cells, many seen; organisms, none seen; red cell casts, none seen; culture, >10⁵ coliforms.
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection | Vulvovaginitis
+  KEY: Urinary tract infection
+OTHER pedhd-renal-11
+  STEM: Harriet, a 12-year-old girl, presents to the Emergency Department. She has abdominal pain and pain on micturition. A mid-stream urine sample is obtained and is positive for leucocytes but negative for nitrites. She was started on oral antibiotics and discharged; 48 hours later you receive the following result from the microscopy and culture: white blood cells >200/mm³; red blood cells, many seen; organisms, none seen; red cell casts, none seen; culture, >10⁵ coliforms. Which of the following is the most likely diagnosis?
+  OPTIONS: Balanitis | Glomerulonephritis | Renal stone | Perineal contamination | Urinary tract infection (UTI)
+  KEY: Urinary tract infection (UTI)
+
+=== n 260
+BOOK pedsa-b19-11-3
+  STEM: Below is a list of possible diagnoses (A–H) for which urinalysis may be undertaken. For each of the following patients who have urine microscopy and culture sent from the Emergency Department, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Gary is a 6-month-old boy. He has been febrile for 1 day, is feeding poorly and has difficulty breathing. On examination he has a respiratory rate of 60 breaths/min, marked chest recession and on auscultation has widespread wheeze and fine crepitations. He needs admission for oxygen therapy. A urine sample was sent from the Emergency Department and you receive the following results: white blood cells <50/mm³ ; red blood cells, none seen; organisms, none seen; red cell casts, none seen; culture, mixed coliforms.
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection | Vulvovaginitis
+  KEY: Perineal contamination
+OTHER pedep2-ren-12
+  STEM: Gary is a 6-month-old boy who has been febrile for 1 day, is feeding poorly, and has difficulty breathing. On examination, he has a respiratory rate of 60 breaths/min, marked chest recession, and widespread wheeze and fine crepitations on auscultation. He requires admission for oxygen therapy. A urine sample is sent from the Emergency Department, and the results are: white blood cells <50/mm^2; red blood cells, none seen; organisms, none seen; red cell casts, none seen; culture, mixed coliforms. Which of the following is the most likely diagnosis?
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Perineal contamination
+  KEY: Perineal contamination

@@ -1,0 +1,99 @@
+=== n 521
+BOOK pedsa-b6-10
+  STEM: Seb, a 2-year-old boy, was at his cousin’s birthday party. His mother noticed that he has suddenly developed a widespread urticarial rash and has also become flushed in the face. His vital signs are normal and he has no respiratory compromise. Which medication would you give? Select one answer only.
+  OPTIONS: Intramuscular adrenaline | Intramuscular antihistamine | Intravenous hydrocortisone | Oral antihistamine | Oral corticosteroid
+  KEY: Oral antihistamine
+OTHER pedhd-emg-10
+  STEM: Seb, a 2-year-old boy, was at his cousin's birthday party. His mother noticed that he has suddenly developed a widespread urticarial rash and has also become flushed in the face. His vital signs are normal and he has no respiratory compromise. Which medication would you give?
+  OPTIONS: Intramuscular adrenaline | Intramuscular antihistamine | Intravenous hydrocortisone | Oral antihistamine | Oral corticosteroid
+  KEY: Oral antihistamine
+
+=== n 522
+BOOK pedsa-b6-11
+  STEM: Jenny, a 3-year-old girl, was at a village fete. She suddenly developed swollen cheeks and lips and a widespread urticarial rash. She is rushed to the nearby general practice surgery, where it is noted that her breathing is very noisy. She is distressed and frightened. On auscultation she has widespread wheeze. Which medication would you give first?
+  OPTIONS: Intramuscular adrenaline | Oral corticosteroid | Intravenous hydrocortisone | Oral antihistamine | Intramuscular antihistamine
+  KEY: Intramuscular adrenaline
+OTHER pedep-emg-11
+  STEM: Jenny, a 3-year-old girl, suddenly develops facial swelling, urticaria, and noisy breathing at a village fete. She is distressed and has widespread wheeze. What is the first-line medication?
+  OPTIONS: Intramuscular adrenaline | Oral corticosteroid | Intravenous hydrocortisone | Oral antihistamine | Intramuscular antihistamine
+  KEY: Intramuscular adrenaline
+
+=== n 523
+BOOK pedsa-b6-11
+  STEM: Jenny, a 3-year-old girl, was at a village fete. She suddenly developed swollen cheeks and lips and a widespread urticarial rash. She is rushed to the nearby general practice surgery, where it is noted that her breathing is very noisy. She is distressed and frightened. On auscultation she has widespread wheeze. Which medication would you give first?
+  OPTIONS: Intramuscular adrenaline | Oral corticosteroid | Intravenous hydrocortisone | Oral antihistamine | Intramuscular antihistamine
+  KEY: Intramuscular adrenaline
+OTHER pedep-emg-58
+  STEM: A 3-year-old girl was at a birthday party. She suddenly developed swollen cheeks and lips and a widespread urticarial rash. She is rushed to the nearby general practice surgery, where it is noted that her breathing is very noisy. She is distressed and frightened. On auscultation, she has widespread wheeze. Which medication would you give first?
+  OPTIONS: Intramuscular antihistamine | Intravenous hydrocortisone | Oral antihistamine | Oral corticosteroid | Intramuscular adrenaline
+  KEY: Intramuscular adrenaline
+
+=== n 524
+BOOK pedsa-b6-11
+  STEM: Jenny, a 3-year-old girl, was at a village fete. She suddenly developed swollen cheeks and lips and a widespread urticarial rash. She is rushed to the nearby general practice surgery, where it is noted that her breathing is very noisy. She is distressed and frightened. On auscultation she has widespread wheeze. Which medication would you give first?
+  OPTIONS: Intramuscular adrenaline | Oral corticosteroid | Intravenous hydrocortisone | Oral antihistamine | Intramuscular antihistamine
+  KEY: Intramuscular adrenaline
+OTHER pedhd-emg-11
+  STEM: Jenny, a 3-year-old girl, was at a village fete. She suddenly developed swollen cheeks and lips and a widespread urticarial rash. She is rushed to the nearby general practice surgery, where it is noted that her breathing is very noisy. She is distressed and frightened. On auscultation she has widespread wheeze. Which medication would you give first?
+  OPTIONS: Intramuscular adrenaline | Intramuscular antihistamine | Intravenous hydrocortisone | Oral antihistamine | Oral corticosteroid
+  KEY: Intramuscular adrenaline
+
+=== n 525
+BOOK pedsa-b6-12
+  STEM: There has been a dramatic decline in the incidence of sudden infant death syndrome in the UK. Which of the following is the single most important factor responsible for this decline?
+  OPTIONS: Feet to foot of cot | Keeping baby in parent’s room until 6 months of age | Keeping room cool to prevent overheating | Parents not smoking in the same room as infant | Supine sleeping
+  KEY: Supine sleeping
+OTHER pedep-emg-12
+  STEM: The incidence of sudden infant death syndrome has decreased dramatically in the UK. What is the single most important factor responsible for this decline?
+  OPTIONS: Feet to foot of cot | Keeping baby in parent's room for 6 months | Keeping room cool | Parents not smoking near the baby | Supine sleeping
+  KEY: Supine sleeping
+
+=== n 526
+BOOK pedsa-b6-12
+  STEM: There has been a dramatic decline in the incidence of sudden infant death syndrome in the UK. Which of the following is the single most important factor responsible for this decline?
+  OPTIONS: Feet to foot of cot | Keeping baby in parent’s room until 6 months of age | Keeping room cool to prevent overheating | Parents not smoking in the same room as infant | Supine sleeping
+  KEY: Supine sleeping
+OTHER pedep-mf2-2
+  STEM: Which of the following would be the single most important factor responsible for a possible decline in the incidence of sudden infant death syndrome (SIDS)?
+  OPTIONS: Feet to foot of cot | Keeping baby in parent's room until 6 months of age | Keeping room cool to prevent overheating | Parents not smoking in the same room as the infant | Supine sleeping
+  KEY: Supine sleeping
+
+=== n 527
+BOOK pedsa-b6-12
+  STEM: There has been a dramatic decline in the incidence of sudden infant death syndrome in the UK. Which of the following is the single most important factor responsible for this decline?
+  OPTIONS: Feet to foot of cot | Keeping baby in parent’s room until 6 months of age | Keeping room cool to prevent overheating | Parents not smoking in the same room as infant | Supine sleeping
+  KEY: Supine sleeping
+OTHER pedep-mf3-20
+  STEM: Which procedure is considered the single most important factor responsible for a dramatic decline in the incidence of sudden infant death syndrome?
+  OPTIONS: Keeping baby in parent's room until 6 months of age | Introducing Folic acid early in pregnancy | Keeping the room warmer | Parents not smoking in the same room as infant | Supine sleeping
+  KEY: Supine sleeping
+
+=== n 528
+BOOK pedsa-b6-12
+  STEM: There has been a dramatic decline in the incidence of sudden infant death syndrome in the UK. Which of the following is the single most important factor responsible for this decline?
+  OPTIONS: Feet to foot of cot | Keeping baby in parent’s room until 6 months of age | Keeping room cool to prevent overheating | Parents not smoking in the same room as infant | Supine sleeping
+  KEY: Supine sleeping
+OTHER pedhd-emg-12
+  STEM: There has been a dramatic decline in the incidence of sudden infant death syndrome in the UK. Which of the following is the single most important factor responsible for this decline?
+  OPTIONS: Feet to foot of cot | Keeping baby in parent's room until 6 months of age | Keeping room cool to prevent overheating | Parents not smoking in the same room as infant | Supine sleeping
+  KEY: Supine sleeping
+
+=== n 529
+BOOK pedsa-b6-13-1
+  STEM: For each of the following patients seen in the emergency department select the most appropriate next step in the management plan from the following list (A–L). Each option may be used once, more than once, or not at all. Nathaniel, a 4-year-old boy, is brought to hospital with shortness of breath. He is able to talk but has oxygen saturation of 90%. His capillary refill time is less than 2 seconds.
+  OPTIONS: Airway opening manoeuvres | Bag and mask ventilation | Check blood glucose | Check conscious level [alert, voice, pain, unresponsive (AVPU)] | Check pupils | Commence cardiac compressions using both hands, one hand on top of the other | Commence cardiac compressions using the encircling method | Commence cardiac compressions using one hand on the sternum | High-flow oxygen therapy | Intravenous access | Intravenous fluid | Secondary survey
+  KEY: High-flow oxygen therapy
+OTHER pedep-emg-13
+  STEM: Nathaniel, a 4-year-old boy, presents with shortness of breath and oxygen saturation of 90%. He can speak and has a capillary refill time <2 seconds. What is the most appropriate next step?
+  OPTIONS: Check blood glucose | Check pupils | Airway opening manoeuvres | High-flow oxygen therapy | Start chest compressions using hands-encircling method
+  KEY: High-flow oxygen therapy
+
+=== n 530
+BOOK pedsa-b6-13-1
+  STEM: For each of the following patients seen in the emergency department select the most appropriate next step in the management plan from the following list (A–L). Each option may be used once, more than once, or not at all. Nathaniel, a 4-year-old boy, is brought to hospital with shortness of breath. He is able to talk but has oxygen saturation of 90%. His capillary refill time is less than 2 seconds.
+  OPTIONS: Airway opening manoeuvres | Bag and mask ventilation | Check blood glucose | Check conscious level [alert, voice, pain, unresponsive (AVPU)] | Check pupils | Commence cardiac compressions using both hands, one hand on top of the other | Commence cardiac compressions using the encircling method | Commence cardiac compressions using one hand on the sternum | High-flow oxygen therapy | Intravenous access | Intravenous fluid | Secondary survey
+  KEY: High-flow oxygen therapy
+OTHER pedhd-emg-13
+  STEM: Nathaniel, a 4-year-old boy, is brought to hospital with shortness of breath. He is able to talk but has oxygen saturation of 90%. His capillary refill time is less than 2 seconds. Which of the following is the most appropriate next step in the management of that patient?
+  OPTIONS: Check blood glucose | Check pupils | Airway opening manoeuvres | High-flow oxygen therapy | Commence cardiac compressions using the hands encircling method
+  KEY: High-flow oxygen therapy

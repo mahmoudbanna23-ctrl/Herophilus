@@ -1,0 +1,99 @@
+=== n 551
+BOOK pedsa-b6-9
+  STEM: You are called to the resuscitation room where there is a 6-year-old child who has arrived by ambulance. The child has been having a generalized seizure for 15 minutes. The ambulance crew gave a dose of buccal midazolam 5 minutes ago. The emergency doctor has maintained the airway and has applied oxygen. His capillary refill time is less than 2 seconds and his heart rate 120 beats/min. What is the next most appropriate management step? Select one answer only.
+  OPTIONS: Administer further anticonvulsant | Check blood glucose level | Gain intravenous access | Request senior review | Start bag and valve mask ventilation
+  KEY: Check blood glucose level
+OTHER pedhd-emg-9
+  STEM: You are called to the resuscitation room where there is a 6-year-old child who has arrived by ambulance. The child has been having a generalized seizure for 15 minutes. The ambulance crew gave a dose of buccal midazolam 5 minutes ago. The emergency doctor has maintained the airway and has applied oxygen. His capillary refill time is less than 2 seconds and his heart rate 120 beats/min. What is the next most appropriate management step?
+  OPTIONS: Administer further anticonvulsant | Check blood glucose level | Gain intravenous access | Request senior review | Start bag and valve mask ventilation
+  KEY: Check blood glucose level
+
+=== n 552
+BOOK pedsa-b7-1
+  STEM: What is the most common cause of death in children aged 1 year to 14 years in the UK? Select one answer only.
+  OPTIONS: Accidents | Congenital heart disease | Infectious disease | Malignant disease | Respiratory disease
+  KEY: Malignant disease
+OTHER pedhd-acc-1
+  STEM: What is the most common cause of death in children aged 1 year to 14 years in the UK?
+  OPTIONS: Accidents | Congenital heart disease | Infectious disease | Malignant disease | Respiratory disease
+  KEY: Malignant disease
+
+=== n 553
+BOOK pedsa-b7-5
+  STEM: Louise, aged 4 years, was hit by a car in the local supermarket car park. She is brought to the Emergency Department by ambulance. An initial assessment shows • Airway — talking to mother • Breathing — receiving oxygen via a rebreathing circuit, oxygen saturation 99% • Breathing — air entry satisfactory and equal bilaterally, respiratory rate 30/min • Circulation — pulse 160/min, blood pressure 90/50 mmHg, capillary refill time 3 seconds • Disability — alert, but frightened and agitated, moving all four limbs She has abrasions to her left flank and pain in her left shoulder. What is the next intervention needed? Select one answer only.
+  OPTIONS: Analgesia | Blood glucose measurement | Chest X-ray | Intravenous access | Intubation and ventilation
+  KEY: Intravenous access
+OTHER pedep-acc-2
+  STEM: Louise, aged 4 years, was hit by a car in the local supermarket car park. She is brought to the Emergency Department by ambulance. An initial assessment shows: Airway: Talking to mother Breathing: Receiving oxygen via a rebreathing circuit; oxygen saturation 99%; air entry satisfactory and equal bilaterally; respiratory rate 30/min Circulation: Pulse 160/min, blood pressure 90/50 mmHg, capillary refill time 3 seconds Disability: Alert but frightened and agitated, moving all four limbs She has abrasions to her left flank and pain in her left shoulder. What is the next intervention needed?
+  OPTIONS: Analgesia | Blood glucose measurement | Chest X-ray | Intravenous access | Intubation and ventilation
+  KEY: Intravenous access
+
+=== n 554
+BOOK pedsa-b7-5
+  STEM: Louise, aged 4 years, was hit by a car in the local supermarket car park. She is brought to the Emergency Department by ambulance. An initial assessment shows • Airway — talking to mother • Breathing — receiving oxygen via a rebreathing circuit, oxygen saturation 99% • Breathing — air entry satisfactory and equal bilaterally, respiratory rate 30/min • Circulation — pulse 160/min, blood pressure 90/50 mmHg, capillary refill time 3 seconds • Disability — alert, but frightened and agitated, moving all four limbs She has abrasions to her left flank and pain in her left shoulder. What is the next intervention needed? Select one answer only.
+  OPTIONS: Analgesia | Blood glucose measurement | Chest X-ray | Intravenous access | Intubation and ventilation
+  KEY: Intravenous access
+OTHER pedhd-acc-2
+  STEM: Louise, aged 4 years, was hit by a car in the local supermarket car park. She is brought to the Emergency Department by ambulance. An initial assessment shows: • Airway — talking to mother • Breathing — receiving oxygen via a rebreathing circuit, oxygen saturation 99% • Breathing — air entry satisfactory and equal bilaterally, respiratory rate 30/min • Circulation — pulse 160/min, blood pressure 90/50 mmHg, capillary refill time 3 seconds • Disability — alert, but frightened and agitated, moving all four limbs She has abrasions to her left flank and pain in her left shoulder. What is the next intervention needed?
+  OPTIONS: Analgesia | Blood glucose measurement | Chest X-ray | Intravenous access | Intubation and ventilation
+  KEY: Intravenous access
+
+=== n 555
+BOOK pedsa-b7-7
+  STEM: Roberto is a 2.5-year-old boy. He pulled a chip pan off the cooker and has been extensively burnt. He is rushed to the nearest Children’s Emergency Department. His airway, breathing and circulation are satisfactory. His burns are distributed on his body as shown in Fig. 7.3. Most of the burnt area is now blistering and mottled in colour, with a few white areas. Intravenous analgesia is given. What is the estimated area of the burn? Select one answer only.
+  OPTIONS: 15% | 20% | 25% | 30% | 35%
+  KEY: 20%
+OTHER pedep-emg-33
+  STEM: Roberto is a 2.5-year-old boy. He pulled a chip pan off the cooker and has been extensively burnt. He is rushed to the nearest Children’s Emergency Department. His airway, breathing and circulation are satisfactory. His burns are distributed on his body as shown. Most of the burnt area is now blistering and mottled in colour, with a few white areas. Intravenous analgesia is given. Roberto is much more settled following intravenous analgesia. From the list of possible management options below, which should be undertaken first?
+  OPTIONS: Commence intravenous 0.9% saline | Cover the burns with sterile dressings | Intravenous antibiotics | Intubation and artificial ventilation | Place affected areas in cold water
+  KEY: Commence intravenous 0.9% saline
+
+=== n 556
+BOOK pedsa-b7-8
+  STEM: Roberto (as outlined in Question 7.7) is much more settled following intravenous analgesia. From the list of possible management options below, which should be undertaken first? Select one answer only.
+  OPTIONS: Commence intravenous 0.9% saline | Cover the burns with sterile dressings | Intravenous antibiotics | Intubation and artificial ventilation | Place affected areas in cold water
+  KEY: Commence intravenous 0.9% saline
+OTHER pedep-emg-33
+  STEM: Roberto is a 2.5-year-old boy. He pulled a chip pan off the cooker and has been extensively burnt. He is rushed to the nearest Children’s Emergency Department. His airway, breathing and circulation are satisfactory. His burns are distributed on his body as shown. Most of the burnt area is now blistering and mottled in colour, with a few white areas. Intravenous analgesia is given. Roberto is much more settled following intravenous analgesia. From the list of possible management options below, which should be undertaken first?
+  OPTIONS: Commence intravenous 0.9% saline | Cover the burns with sterile dressings | Intravenous antibiotics | Intubation and artificial ventilation | Place affected areas in cold water
+  KEY: Commence intravenous 0.9% saline
+
+=== n 557
+BOOK pedsa-b7-8
+  STEM: Roberto (as outlined in Question 7.7) is much more settled following intravenous analgesia. From the list of possible management options below, which should be undertaken first? Select one answer only.
+  OPTIONS: Commence intravenous 0.9% saline | Cover the burns with sterile dressings | Intravenous antibiotics | Intubation and artificial ventilation | Place affected areas in cold water
+  KEY: Commence intravenous 0.9% saline
+OTHER pedhd-acc-3
+  STEM: Roberto (a boy who suffered an extensive burn) is much more settled following intravenous analgesia. From the list of possible management options below, which should be undertaken first?
+  OPTIONS: Commence intravenous 0.9% saline | Cover the burns with sterile dressings | Intravenous antibiotics | Intubation and artificial ventilation | Place affected areas in cold water
+  KEY: Commence intravenous 0.9% saline
+
+=== n 558
+BOOK pedsa-b9-1
+  STEM: Michael is a 6-year-old boy who is prone to bleeding. He has a problem with one of his clotting factors and his parents have been told that this is caused by a faulty gene. He is otherwise well and has no other medical problems. His parents have an appointment with the geneticist who takes a family history and draws a family tree, which is shown in Fig. 9.1. What is the most likely pattern of inheritance in this disorder? Select one answer only. Hint: Why are only squares affected?
+  OPTIONS: Autosomal dominant | Autosomal recessive | Imprinting from uniparental disomy | Trinucleotide repeat expansion mutation | X-linked recessive
+  KEY: X-linked recessive
+OTHER pedep2-gen-8
+  STEM: Michael is a 6-year-old boy who is prone to bleeding. He has a problem with one of his clotting factors, and his parents have been told that this is caused by a faulty gene. He is otherwise well and has no other medical problems. His parents have an appointment with a geneticist who takes a family history and draws a family tree, which is shown in the opposite figure. What is the most likely pattern of inheritance of this disorder?
+  OPTIONS: Autosomal dominant | Autosomal recessive | Imprinting from uniparental disomy | Trinucleotide repeat expansion mutation | X-linked recessive
+  KEY: X-linked recessive
+
+=== n 559
+BOOK pedsa-b9-1
+  STEM: Michael is a 6-year-old boy who is prone to bleeding. He has a problem with one of his clotting factors and his parents have been told that this is caused by a faulty gene. He is otherwise well and has no other medical problems. His parents have an appointment with the geneticist who takes a family history and draws a family tree, which is shown in Fig. 9.1. What is the most likely pattern of inheritance in this disorder? Select one answer only. Hint: Why are only squares affected?
+  OPTIONS: Autosomal dominant | Autosomal recessive | Imprinting from uniparental disomy | Trinucleotide repeat expansion mutation | X-linked recessive
+  KEY: X-linked recessive
+OTHER pedhd-gen-1
+  STEM: Michael is a 6-year-old boy who is prone to bleeding. He has a problem with one of his clotting factors and his parents have been told that this is caused by a faulty gene. He is otherwise well and has no other medical problems. His parents have an appointment with the geneticist who takes a family history and draws a family tree, which is shown in the opposite figure. What is the most likely pattern of inheritance in this disorder?
+  OPTIONS: Autosomal dominant | Autosomal recessive | Imprinting from uniparental disomy | Trinucleotide repeat expansion mutation | X-linked recessive
+  KEY: X-linked recessive
+
+=== n 560
+BOOK pedsa-b9-10
+  STEM: A Bangladeshi couple are referred for genetic counselling. Both parents are carriers of a faulty gene PEX1; possession of two abnormal copies of this gene leads to death in infancy. They have lost two children who both died in the first 2 years of life. They have one healthy daughter, who is 3 years of age. What is the risk that their daughter is a carrier?
+  OPTIONS: None | 1 in 4 | 1 in 2 | 2 in 3 | 100%
+  KEY: 2 in 3
+OTHER pedep2-gen-21
+  STEM: A Bangladeshi couple are referred for genetic counselling. Both parents are carriers of a faulty PEX1 gene; possession of two abnormal copies leads to death in infancy. They have lost two children who both died in the first 2 years of life and have one healthy daughter aged 3 years. What is the risk that their daughter is a carrier?
+  OPTIONS: None | 1 in 4 | 1 in 2 | 2 in 3 | 100%
+  KEY: 2 in 3

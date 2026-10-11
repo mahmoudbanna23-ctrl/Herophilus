@@ -1,0 +1,99 @@
+=== n 141
+BOOK pedsa-b14-9-5
+  STEM: The following (A–O) is a list of possible diagnoses which result in vomiting. For each of the following scenarios pick the most likely cause for the vomiting. Each answer may be used once, more than once, or not at all. Jennifer, a 14-year-old girl, presents to the emergency department with a severe headache for the last 6 hours, mainly affecting the left side of her head. She just wants to lie still in the dark and dislikes being disturbed, but her mother is concerned as she has never had such an episode before and is normally a very lively girl who is doing well at school. She has been vomiting for the last 2 hours and cannot keep anything down and is also complaining of tummy pain. On examination she is distressed by her headache and dislikes having the examination light shone on her. Her temperature is 37.2° C. She does not have neck stiffness or papilloedema. The rest of her examination is normal.
+  OPTIONS: Appendicitis | Coeliac disease | Cyclical vomiting syndrome | Diabetic ketoacidosis | Gastroenteritis | Gastro-oesophageal reflux | Intussusception | Malrotation | Meningitis | Migraine | Pyloric stenosis | Raised intracranial pressure | Sepsis | Strangulated inguinal hernia | Urinary tract infection
+  KEY: Migraine
+OTHER pedhd-gastro-12
+  STEM: Jennifer, a 14-year-old girl, presents to the emergency department with a severe headache for the last 6 hours, mainly affecting the left side of her head. She just wants to lie still in the dark and dislikes being disturbed, but her mother is concerned as she has never had such an episode before and is normally a very lively girl who is doing well at school. She has been vomiting for the last 2 hours and cannot keep anything down and is also complaining of tummy pain. On examination she is distressed by her headache and dislikes having the examination light shone on her. Her temperature is 37.2°C. She does not have neck stiffness or papilloedema. The rest of her examination is normal. Which of the following is the most likely cause of the vomiting in that patient?
+  OPTIONS: Intussusception | Malrotation | Meningitis | Inflammatory bowel disease | Migraine
+  KEY: Migraine
+
+=== n 142
+BOOK pedsa-b15-1
+  STEM: Joseph, aged 3 years, has been unwell for 24 hours with irritability, vomiting and fever. He was seen by his general practitioner earlier in the day and started on amoxicillin. On examination his temperature is 38.5° C, pulse 140 beats/min and blood pressure 90/60 mmHg. He has a rash on his upper limbs and abdomen as shown in Fig. 15.1. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Henoch–Schönlein purpura | Immune thrombocytopenic purpura | Measles | Meningococcal sepsis | Pertussis
+  KEY: Meningococcal sepsis
+OTHER pedep-inf-21
+  STEM: A 3-year-old boy presents with 24 hours of irritability, vomiting, and fever. He has a purpuric rash on his upper limbs and abdomen. Vitals: Temp 38.5°C, HR 140/min, BP 90/60 mmHg. What is the most likely diagnosis?
+  OPTIONS: Henoch-Schönlein purpura | Immune thrombocytopenic purpura | Measles | Meningococcal sepsis | Leukemia
+  KEY: Meningococcal sepsis
+
+=== n 143
+BOOK pedsa-b15-1
+  STEM: Joseph, aged 3 years, has been unwell for 24 hours with irritability, vomiting and fever. He was seen by his general practitioner earlier in the day and started on amoxicillin. On examination his temperature is 38.5° C, pulse 140 beats/min and blood pressure 90/60 mmHg. He has a rash on his upper limbs and abdomen as shown in Fig. 15.1. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Henoch–Schönlein purpura | Immune thrombocytopenic purpura | Measles | Meningococcal sepsis | Pertussis
+  KEY: Meningococcal sepsis
+OTHER pedep-inf-53
+  STEM: Joseph, aged 3 years, has been unwell for 24 hours with irritability, vomiting, and fever. He was seen by his general practitioner earlier in the day and started on amoxicillin. On examination, his temperature is 38.5°C, pulse is 140 beats/min, and blood pressure is 90/60 mmHg. He has a rash on his upper limbs and abdomen as shown in the figure. What is the most likely diagnosis?
+  OPTIONS: Henoch-Schönlein purpura | Immune thrombocytopenic purpura | Measles | Meningococcal sepsis | Pertussis
+  KEY: Meningococcal sepsis
+
+=== n 144
+BOOK pedsa-b15-1
+  STEM: Joseph, aged 3 years, has been unwell for 24 hours with irritability, vomiting and fever. He was seen by his general practitioner earlier in the day and started on amoxicillin. On examination his temperature is 38.5° C, pulse 140 beats/min and blood pressure 90/60 mmHg. He has a rash on his upper limbs and abdomen as shown in Fig. 15.1. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Henoch–Schönlein purpura | Immune thrombocytopenic purpura | Measles | Meningococcal sepsis | Pertussis
+  KEY: Meningococcal sepsis
+OTHER pedhd-inf-1
+  STEM: Joseph, aged 3 years, has been unwell for 24 hours with irritability, vomiting and fever. He was seen by his general practitioner earlier in the day and started on amoxicillin. On examination his temperature is 38.5°C, pulse 140 beats/min and blood pressure 90/60 mmHg. He has a rash on his upper limbs and abdomen as shown. What is the most likely diagnosis?
+  OPTIONS: Henoch–Schönlein purpura | Immune thrombocytopenic purpura | Measles | Meningococcal sepsis | Pertussis
+  KEY: Meningococcal sepsis
+
+=== n 145
+BOOK pedsa-b15-10-1
+  STEM: The following (A–T) is a list of infectious agents seen in children. Select the organism that is most likely to be the causative agent in the clinical scenarios outlined below. Each option may be used once, more than once, or not at all. Harry, aged 21 months, presents with a 3 day history of cough and fever and is very miserable and feeding poorly. Examination reveals conjunctivitis and the widespread rash shown in Fig. 15.5 below.
+  OPTIONS: Aspergillus fumigatus | Chickenpox virus (varicella zoster virus) | Cytomegalovirus infection | Epstein–Barr virus | Herpes simplex virus | Human immunodeficiency virus infection | Influenza virus | Lyme disease (Borrelia burgdorferi) | Malaria parasites (Plasmodium sp.) | Measles virus | Mumps virus | Parvovirus infection (fifth disease) | Pseudomonas aeruginosa | Respiratory syncytial virus | Rhinovirus | Roseola infantum (sixth disease) | Rubella virus | Staphylococcus aureus | Streptococcus pneumoniae | Tuberculosis (Mycobacterium tuberculosis)
+  KEY: Measles virus
+OTHER pedep-inf-59
+  STEM: Harry, 21 months old, has a 3-day history of cough, fever, conjunctivitis, and a widespread rash. What is the most likely causative organism?
+  OPTIONS: Influenza virus | Rhinovirus | Measles virus | Roseola infantum | Cytomegalovirus
+  KEY: Measles virus
+
+=== n 146
+BOOK pedsa-b15-10-1
+  STEM: The following (A–T) is a list of infectious agents seen in children. Select the organism that is most likely to be the causative agent in the clinical scenarios outlined below. Each option may be used once, more than once, or not at all. Harry, aged 21 months, presents with a 3 day history of cough and fever and is very miserable and feeding poorly. Examination reveals conjunctivitis and the widespread rash shown in Fig. 15.5 below.
+  OPTIONS: Aspergillus fumigatus | Chickenpox virus (varicella zoster virus) | Cytomegalovirus infection | Epstein–Barr virus | Herpes simplex virus | Human immunodeficiency virus infection | Influenza virus | Lyme disease (Borrelia burgdorferi) | Malaria parasites (Plasmodium sp.) | Measles virus | Mumps virus | Parvovirus infection (fifth disease) | Pseudomonas aeruginosa | Respiratory syncytial virus | Rhinovirus | Roseola infantum (sixth disease) | Rubella virus | Staphylococcus aureus | Streptococcus pneumoniae | Tuberculosis (Mycobacterium tuberculosis)
+  KEY: Measles virus
+OTHER pedhd-inf-8
+  STEM: Harry, aged 21 months, presents with a 3 day history of cough and fever and is very miserable and feeding poorly. Examination reveals conjunctivitis and the widespread rash shown. Which of the following is the organism that is most likely to be the causative agent in this clinical scenario?
+  OPTIONS: Influenza virus | Rhinovirus | Measles virus | Roseola infantum (sixth disease) | Cytomegalovirus infection
+  KEY: Measles virus
+
+=== n 147
+BOOK pedsa-b15-10-2
+  STEM: The following (A–T) is a list of infectious agents seen in children. Select the organism that is most likely to be the causative agent in the clinical scenarios outlined below. Each option may be used once, more than once, or not at all. Maryam, a 10-month-old infant is brought to her general practitioner. She has had an intermittent fever for 1 day and has a runny nose. Her mother is concerned as her appetite is reduced, but she is still drinking. She is generally miserable when febrile. On examination she has a temperature of 37.9° C, a runny nose and a fine macular rash, mainly on her trunk.
+  OPTIONS: Aspergillus fumigatus | Chickenpox virus (varicella zoster virus) | Cytomegalovirus infection | Epstein–Barr virus | Herpes simplex virus | Human immunodeficiency virus infection | Influenza virus | Lyme disease (Borrelia burgdorferi) | Malaria parasites (Plasmodium sp.) | Measles virus | Mumps virus | Parvovirus infection (fifth disease) | Pseudomonas aeruginosa | Respiratory syncytial virus | Rhinovirus | Roseola infantum (sixth disease) | Rubella virus | Staphylococcus aureus | Streptococcus pneumoniae | Tuberculosis (Mycobacterium tuberculosis)
+  KEY: Rhinovirus
+OTHER pedep-inf-60
+  STEM: Maryam, 10 months old, has an intermittent fever for one day, a runny nose, and a fine macular rash on her trunk. What is the most likely causative organism?
+  OPTIONS: Rhinovirus | HIV | RSV | EBV | Varicella zoster
+  KEY: Rhinovirus
+
+=== n 148
+BOOK pedsa-b15-10-2
+  STEM: The following (A–T) is a list of infectious agents seen in children. Select the organism that is most likely to be the causative agent in the clinical scenarios outlined below. Each option may be used once, more than once, or not at all. Maryam, a 10-month-old infant is brought to her general practitioner. She has had an intermittent fever for 1 day and has a runny nose. Her mother is concerned as her appetite is reduced, but she is still drinking. She is generally miserable when febrile. On examination she has a temperature of 37.9° C, a runny nose and a fine macular rash, mainly on her trunk.
+  OPTIONS: Aspergillus fumigatus | Chickenpox virus (varicella zoster virus) | Cytomegalovirus infection | Epstein–Barr virus | Herpes simplex virus | Human immunodeficiency virus infection | Influenza virus | Lyme disease (Borrelia burgdorferi) | Malaria parasites (Plasmodium sp.) | Measles virus | Mumps virus | Parvovirus infection (fifth disease) | Pseudomonas aeruginosa | Respiratory syncytial virus | Rhinovirus | Roseola infantum (sixth disease) | Rubella virus | Staphylococcus aureus | Streptococcus pneumoniae | Tuberculosis (Mycobacterium tuberculosis)
+  KEY: Rhinovirus
+OTHER pedhd-inf-9
+  STEM: Maryam, a 10-month-old infant, is brought to her general practitioner. She has had an intermittent fever for 1 day and has a runny nose. Her mother is concerned as her appetite is reduced, but she is still drinking. She is generally miserable when febrile. On examination she has a temperature of 37.9°C, a runny nose and a fine macular rash, mainly on her trunk. Which of the following is the organism that is most likely to be the causative agent in this clinical scenario?
+  OPTIONS: Rhinovirus | HIV | RSV | EBV | Chickenpox virus (VZV)
+  KEY: Rhinovirus
+
+=== n 149
+BOOK pedsa-b15-10-3
+  STEM: The following (A–T) is a list of infectious agents seen in children. Select the organism that is most likely to be the causative agent in the clinical scenarios outlined below. Each option may be used once, more than once, or not at all. Jennifer, aged 12 years, developed a severe sore throat and lethargy. Amoxicillin was prescribed. The next day she developed the florid maculopapular rash shown (Fig. 15.6).
+  OPTIONS: Aspergillus fumigatus | Chickenpox virus (varicella zoster virus) | Cytomegalovirus infection | Epstein–Barr virus | Herpes simplex virus | Human immunodeficiency virus infection | Influenza virus | Lyme disease (Borrelia burgdorferi) | Malaria parasites (Plasmodium sp.) | Measles virus | Mumps virus | Parvovirus infection (fifth disease) | Pseudomonas aeruginosa | Respiratory syncytial virus | Rhinovirus | Roseola infantum (sixth disease) | Rubella virus | Staphylococcus aureus | Streptococcus pneumoniae | Tuberculosis (Mycobacterium tuberculosis)
+  KEY: Epstein–Barr virus
+OTHER pedep-inf-42
+  STEM: A 12-year-old girl developed a severe sore throat and lethargy. Amoxicillin was prescribed. The next day, she developed a florid maculopapular rash. Which organism is most likely the causative agent?
+  OPTIONS: Cytomegalovirus | Epstein-Barr virus | Parvovirus | Roseola infantum | Group A Streptococcus
+  KEY: Epstein-Barr virus
+
+=== n 150
+BOOK pedsa-b15-10-3
+  STEM: The following (A–T) is a list of infectious agents seen in children. Select the organism that is most likely to be the causative agent in the clinical scenarios outlined below. Each option may be used once, more than once, or not at all. Jennifer, aged 12 years, developed a severe sore throat and lethargy. Amoxicillin was prescribed. The next day she developed the florid maculopapular rash shown (Fig. 15.6).
+  OPTIONS: Aspergillus fumigatus | Chickenpox virus (varicella zoster virus) | Cytomegalovirus infection | Epstein–Barr virus | Herpes simplex virus | Human immunodeficiency virus infection | Influenza virus | Lyme disease (Borrelia burgdorferi) | Malaria parasites (Plasmodium sp.) | Measles virus | Mumps virus | Parvovirus infection (fifth disease) | Pseudomonas aeruginosa | Respiratory syncytial virus | Rhinovirus | Roseola infantum (sixth disease) | Rubella virus | Staphylococcus aureus | Streptococcus pneumoniae | Tuberculosis (Mycobacterium tuberculosis)
+  KEY: Epstein–Barr virus
+OTHER pedep-inf-61
+  STEM: Jennifer, 12 years old, developed a severe sore throat and lethargy. She was prescribed amoxicillin and developed a florid maculopapular rash the next day. What is the most likely causative organism?
+  OPTIONS: Mumps virus | Measles virus | RSV | Epstein-Barr virus (EBV) | Rhinovirus
+  KEY: Epstein-Barr virus (EBV)

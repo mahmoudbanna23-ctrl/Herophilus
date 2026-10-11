@@ -1,0 +1,15 @@
+POSITIVE CONTROL - 5 live questions planted into a copy of the book array as ctl-1..ctl-5
+copy: C:\Users\Alfa388\AppData\Local\Temp\ctl-YpxpYy\book-plus-control.array.js
+
+ctl-1 planted from pedhd-neo-15 -> FOUND as SAME (cls SAME), stemDice 1, keyTextSame true, keyLetterMoved false
+    planted stem: A newborn baby is delivered by caesarean following an obstructed labour. He requires full resuscitation including adrenaline (epinephrine) a
+ctl-2 planted from pedep-gi-20 -> FOUND as SAME (cls SAME), stemDice 0.98, keyTextSame true, keyLetterMoved false
+    planted stem: A 7-month-old infant presents with a 12-hour history of intermittent inconsolable crying. He is mottled, has cold peripheries, and has vomit
+ctl-3 planted from pedep-mf1-55 (options rotated by one) -> FOUND as SAME (cls SAME), stemDice 1, keyTextSame true, keyLetterMoved true
+    planted stem: A 7-month-old baby was found suddenly by his mother excessively crying and dragging his legs to his abdomen. The baby became calm and then h
+ctl-4 planted from pedep2-hem-47 -> FOUND as SAME (cls SAME), stemDice 1, keyTextSame true, keyLetterMoved false
+    planted stem: A 3-year-old male presents to the pediatrician with fever, anorexia, joint pain, petechiae and hepatosplenomegaly. Which of the following di
+ctl-5 planted from pedep2-mal-10 -> FOUND as SAME (cls SAME), stemDice 0.97, keyTextSame true, keyLetterMoved false
+    planted stem: Angel, a 2-year-old boy, has a left-sided abdominal mass that does not cross the midline. which is the most probable diagnosis? Select one a
+
+found 5 of 5 proposed SAME

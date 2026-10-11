@@ -1,0 +1,99 @@
+=== n 121
+BOOK pedsa-b14-4
+  STEM: Ellie is a 4-year-old girl who has been complaining of pain in her tummy for a month. It is worse when she goes to the toilet; her stools are firm and she opens her bowels only every 2–3 days. She has not had any vomiting. For the last 2 weeks her stools have become loose. On examination she has a mass in the left iliac fossa. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Appendix mass | Constipation | Gastroenteritis | Inguinal hernia | Wilms tumour
+  KEY: Constipation
+OTHER pedhd-gastro-3
+  STEM: Ellie is a 4-year-old girl who has been complaining of pain in her tummy for a month. It is worse when she goes to the toilet; her stools are firm and she opens her bowels only every 2–3 days. She has not had any vomiting. For the last 2 weeks her stools have become loose. On examination she has a mass in the left iliac fossa. What is the most likely diagnosis?
+  OPTIONS: Appendix mass | Constipation | Gastroenteritis | Inguinal hernia | Wilms tumour
+  KEY: Constipation
+
+=== n 122
+BOOK pedsa-b14-5
+  STEM: Aiysha is a 2-month-old baby who is seen in the paediatric outpatient department. She was born at term, weighing 3.5 kg and is breastfed. Her mother is concerned as she has vomited some of the milk after most feeds since birth. She cries when she vomits. She is continuing to grow along the 50th centile. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Gastro-oesophageal reflux | Helicobacter pylori infection | Infant colic | Overfeeding | Pyloric stenosis
+  KEY: Gastro-oesophageal reflux
+OTHER pedep-gi-4
+  STEM: Alysha is a 2-month-old baby who is seen in the paediatric outpatient department. She was born at term, weighing 3.5 kg, and is breastfed. Her mother is concerned as she has vomited some of the milk after most feeds since birth. She cries when she vomits. She is continuing to grow along the 50th centile. What is the most likely diagnosis?
+  OPTIONS: Gastro-oesophageal reflux | Helicobacter pylori infection | Infant colic | Overfeeding | Pyloric stenosis
+  KEY: Gastro-oesophageal reflux
+
+=== n 123
+BOOK pedsa-b14-5
+  STEM: Aiysha is a 2-month-old baby who is seen in the paediatric outpatient department. She was born at term, weighing 3.5 kg and is breastfed. Her mother is concerned as she has vomited some of the milk after most feeds since birth. She cries when she vomits. She is continuing to grow along the 50th centile. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Gastro-oesophageal reflux | Helicobacter pylori infection | Infant colic | Overfeeding | Pyloric stenosis
+  KEY: Gastro-oesophageal reflux
+OTHER pedep-gi-59
+  STEM: A 2-month-old baby is seen in the pediatric outpatient department. She was born at term, weighing 3.5 kg, and is breastfed. Her mother is concerned as she has vomited some of the milk after most feeds since birth. She cries when she vomits. She is continuing to grow along the 50th centile. What is the most likely diagnosis?
+  OPTIONS: Gastroesophageal reflux | Gastroenteritis | Infant colic | Overfeeding | Pyloric stenosis
+  KEY: Gastroesophageal reflux
+
+=== n 124
+BOOK pedsa-b14-5
+  STEM: Aiysha is a 2-month-old baby who is seen in the paediatric outpatient department. She was born at term, weighing 3.5 kg and is breastfed. Her mother is concerned as she has vomited some of the milk after most feeds since birth. She cries when she vomits. She is continuing to grow along the 50th centile. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Gastro-oesophageal reflux | Helicobacter pylori infection | Infant colic | Overfeeding | Pyloric stenosis
+  KEY: Gastro-oesophageal reflux
+OTHER pedhd-gastro-4
+  STEM: Aiysha is a 2-month-old baby who is seen in the paediatric outpatient department. She was born at term, weighing 3.5 kg and is breastfed. Her mother is concerned as she has vomited some of the milk after most feeds since birth. She cries when she vomits. She is continuing to grow along the 50th centile. What is the most likely diagnosis?
+  OPTIONS: Gastro-oesophageal reflux | Helicobacter pylori infection | Infant colic | Overfeeding | Pyloric stenosis
+  KEY: Gastro-oesophageal reflux
+
+=== n 125
+BOOK pedsa-b14-6
+  STEM: Claire, a 7-year-old girl, has had abdominal pain for the last 6 months. On several occasions it has been sufficiently severe for her to be sent home early from school. The pain happens once or twice a week in the afternoon or early evening. It is periumbilical in nature. It does not wake her at night. She has not had vomiting or diarrhoea. She is growing well. Her examination is normal. Her urine is clear on dipstick testing. What is the most likely cause for her pain? Select one answer only.
+  OPTIONS: Functional abdominal pain | Gastritis | Hepatitis A | Irritable bowel syndrome | Meckel diverticulum
+  KEY: Functional abdominal pain
+OTHER pedep-gi-5
+  STEM: Claire, a 7-year-old girl, has had abdominal pain for the last 6 months. On several occasions, it has been sufficiently severe for her to be sent home early from school. The pain happens once or twice a week in the afternoon or early evening. It is periumbilical in nature. It does not wake her at night. She has not had vomiting or diarrhoea. She is growing well. Her examination is normal. Her urine is clear on dipstick testing. What is the most likely cause for her pain?
+  OPTIONS: Functional abdominal pain | Gastritis | Hepatitis A | Irritable bowel syndrome | Meckel diverticulum
+  KEY: Functional abdominal pain
+
+=== n 126
+BOOK pedsa-b14-6
+  STEM: Claire, a 7-year-old girl, has had abdominal pain for the last 6 months. On several occasions it has been sufficiently severe for her to be sent home early from school. The pain happens once or twice a week in the afternoon or early evening. It is periumbilical in nature. It does not wake her at night. She has not had vomiting or diarrhoea. She is growing well. Her examination is normal. Her urine is clear on dipstick testing. What is the most likely cause for her pain? Select one answer only.
+  OPTIONS: Functional abdominal pain | Gastritis | Hepatitis A | Irritable bowel syndrome | Meckel diverticulum
+  KEY: Functional abdominal pain
+OTHER pedhd-gastro-5
+  STEM: Claire, a 7-year-old girl, has had abdominal pain for the last 6 months. On several occasions it has been sufficiently severe for her to be sent home early from school. The pain happens once or twice a week in the afternoon or early evening. It is periumbilical in nature. It does not wake her at night. She has not had vomiting or diarrhoea. She is growing well. Her examination is normal. Her urine is clear on dipstick testing. What is the most likely cause for her pain?
+  OPTIONS: Functional abdominal pain | Gastritis | Hepatitis A | Irritable bowel syndrome | Meckel diverticulum
+  KEY: Functional abdominal pain
+
+=== n 127
+BOOK pedsa-b14-7
+  STEM: Ben, aged 9 months, has had a 3 day history of diarrhoea and vomiting. On examination he is found to be quiet but alert, is tachypnoeic, has a tachycardia but normal pulses, dry mouth, no mottling of the skin but reduced skin turgor and a sunken fontanelle. Capillary refill time is 2 seconds. His blood pressure is normal for his age. He continues to vomit even with oral rehydration solution given via a nasogastric tube. Ben’s plasma sodium is found to be 156 mmol/L (normal range, 135–145 mmol/L). He needs fluid as he has clinical dehydration. How would this fluid best be replaced? Select one answer only.
+  OPTIONS: Immediate bolus of 20 ml/kg of 0.9% sodium chloride followed by reassessment and replacement of remaining deficit over 24 hours with 0.9% sodium chloride solution | Rehydration over 6 hours followed by repeat urea and electrolyte measurement and maintenance fluid only for a further 18 hours | Rehydration over 24 hours with 0.18% sodium chloride/5% glucose solution | Rehydration over 24 hours with 0.9% sodium chloride/5% glucose solution | Rehydration over 48 hours with 0.9% or 0.45% saline
+  KEY: Rehydration over 48 hours with 0.9% or 0.45% saline
+OTHER pedep-gi-6
+  STEM: Ben, aged 9 months, has had a 3-day history of diarrhoea and vomiting. On examination, he is found to be quiet but alert, is tachypnoeic, has a tachycardia but normal pulses, a dry mouth, no mottling of the skin but reduced skin turgor and a sunken fontanelle. The capillary refill time is 2 seconds. His blood pressure is normal for his age. He continues to vomit even with an oral rehydration solution given via a nasogastric tube. Ben's plasma sodium is found to be 156 mmol/L (normal range: 135-145 mmol/L). He needs fluid as he has clinical dehydration. How would this fluid best be replaced?
+  OPTIONS: Immediate bolus of 20 ml/kg of 0.9% sodium chloride followed by reassessment and replacement of the remaining deficit over 24 hours with 0.9% sodium chloride solution | Rehydration over 6 hours followed by repeat urea and electrolyte measurement and maintenance fluid only for a further 18 hours | Rehydration over 24 hours with 0.18% sodium chloride/5% glucose solution | Rehydration over 24 hours with 0.9% sodium chloride/5% glucose solution | Rehydration over 48 hours with 0.9% or 0.45% saline
+  KEY: Rehydration over 48 hours with 0.9% or 0.45% saline
+
+=== n 128
+BOOK pedsa-b14-7
+  STEM: Ben, aged 9 months, has had a 3 day history of diarrhoea and vomiting. On examination he is found to be quiet but alert, is tachypnoeic, has a tachycardia but normal pulses, dry mouth, no mottling of the skin but reduced skin turgor and a sunken fontanelle. Capillary refill time is 2 seconds. His blood pressure is normal for his age. He continues to vomit even with oral rehydration solution given via a nasogastric tube. Ben’s plasma sodium is found to be 156 mmol/L (normal range, 135–145 mmol/L). He needs fluid as he has clinical dehydration. How would this fluid best be replaced? Select one answer only.
+  OPTIONS: Immediate bolus of 20 ml/kg of 0.9% sodium chloride followed by reassessment and replacement of remaining deficit over 24 hours with 0.9% sodium chloride solution | Rehydration over 6 hours followed by repeat urea and electrolyte measurement and maintenance fluid only for a further 18 hours | Rehydration over 24 hours with 0.18% sodium chloride/5% glucose solution | Rehydration over 24 hours with 0.9% sodium chloride/5% glucose solution | Rehydration over 48 hours with 0.9% or 0.45% saline
+  KEY: Rehydration over 48 hours with 0.9% or 0.45% saline
+OTHER pedhd-gastro-6
+  STEM: Ben, aged 9 months, has had a 3 day history of diarrhoea and vomiting. On examination he is found to be quiet but alert, is tachypnoeic, has a tachycardia but normal pulses, dry mouth, no mottling of the skin but reduced skin turgor and a sunken fontanelle. Capillary refill time is 2 seconds. His blood pressure is normal for his age. He continues to vomit even with oral rehydration solution given via a nasogastric tube. Ben's plasma sodium is found to be 156 mmol/L (normal range, 135–145 mmol/L). He needs fluid as he has clinical dehydration. How would this fluid best be replaced?
+  OPTIONS: Immediate bolus of 20 ml/kg of 0.9% sodium chloride followed by reassessment and replacement of remaining deficit over 24 hours with 0.9% sodium chloride solution | Rehydration over 6 hours followed by repeat urea and electrolyte measurement and maintenance fluid only for a further 18 hours | Rehydration over 24 hours with 0.18% sodium chloride/5% glucose solution | Rehydration over 24 hours with 0.9% sodium chloride/5% glucose solution | Rehydration over 48 hours with 0.9% or 0.45% saline
+  KEY: Rehydration over 48 hours with 0.9% or 0.45% saline
+
+=== n 129
+BOOK pedsa-b14-8
+  STEM: Matthew is a 3-day-old term infant who has not passed meconium since birth. On examination his abdomen is distended but the remainder of the examination is normal. An x-ray of the abdomen shows distended loops throughout the bowel, including the rectum. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Congenital hypothyroidism | Cystic fibrosis | Duodenal atresia | Hirschsprung disease | Rectal atresia
+  KEY: Hirschsprung disease
+OTHER pedep-gi-46
+  STEM: You are counselling a 3-day-old term infant who has not passed meconium since birth. On examination his abdomen is distended but the remainder of the examination is normal. An x-ray of the abdomen shows distended loops throughout the bowel, including the rectum. What is the most likely diagnosis?
+  OPTIONS: Congenital hypothyroidism | Cystic fibrosis | Duodenal atresia | Hirschsprung disease | Malrotation
+  KEY: Hirschsprung disease
+
+=== n 130
+BOOK pedsa-b14-8
+  STEM: Matthew is a 3-day-old term infant who has not passed meconium since birth. On examination his abdomen is distended but the remainder of the examination is normal. An x-ray of the abdomen shows distended loops throughout the bowel, including the rectum. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Congenital hypothyroidism | Cystic fibrosis | Duodenal atresia | Hirschsprung disease | Rectal atresia
+  KEY: Hirschsprung disease
+OTHER pedep-gi-7
+  STEM: Matthew is a 3-day-old term infant who has not passed meconium since birth. On examination, his abdomen is distended, but the remainder of the examination is normal. An x-ray of the abdomen shows distended loops throughout the bowel, including the rectum. What is the most likely diagnosis?
+  OPTIONS: Congenital hypothyroidism | Cystic fibrosis | Duodenal atresia | Hirschsprung's disease | Rectal atresia
+  KEY: Hirschsprung's disease

@@ -1,0 +1,16 @@
+AGENTS.md loaded — Herophilus
+
+Built 521 entries: 165 p1, 188 p2, 168 book. Fold/stay: 284/168.
+
+Dry merge plan: 585 live entries — ep 121, base 272, ep2 192. No live files written.
+
+Pictures: 47 attached. Left off: pedsa-b9-16-3, b28-8, b18-7-3, b9-15-4; answer-only figures for b7-3, b28-2, b28-10 were not attached.
+
+`check.js` result:
+
+```text
+dry passed: 585 live entries touched
+check.js PASS
+```
+
+[QUESTIONS.md](D:/claude%20os/Medical%20school/Herophilus/content/peds/qb-pages/sa/_build/QUESTIONS.md) lists 39 retained extended-matching entries with 11–20 shared options, conflicting with the brief’s 2–10 assertion; options were preserved verbatim. Nothing stopped the build.

@@ -1,0 +1,7 @@
+AGENTS.md loaded — Herophilus
+
+Highest `n`: 240 · SAME 238 / DIFFERENT 2 / UNSURE 0
+
+DIFFERENT: n 1 (`pedsa-b1-1`, `pedep2-mal-20`); n 173 (`pedsa-b15-7`, `pedep-mf1-37`).
+
+Stopped after completing `s231.txt`; `s241.txt` onward remain.

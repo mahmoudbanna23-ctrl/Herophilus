@@ -1,0 +1,7 @@
+AGENTS.md loaded — Herophilus
+
+Highest n written: 520 · SAME 509 · DIFFERENT 11 · UNSURE 0.
+
+DIFFERENT: n 1, 173, 251, 400, 448, 477, 478, 479, 480, 495, 496 (ids recorded in `verdicts.jsonl`).
+
+Stopped after complete `s511.txt`; remaining slices begin at `s521.txt`.

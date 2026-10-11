@@ -1,0 +1,7 @@
+AGENTS.md loaded — Herophilus
+
+Highest n written: 290 · SAME 287 · DIFFERENT 3 · UNSURE 0.
+
+DIFFERENT: n 1 (pedsa-b1-1 / pedep2-mal-20); n 173 (pedsa-b15-7 / pedep-mf1-37); n 251 (pedsa-b18-8-4 / pedep2-car-35).
+
+Stopped after completing s281.txt.

@@ -1,0 +1,129 @@
+Genetics
+
+9
+
+9.11
+A. 1 in 6
+This would be the risk if Mark was known to be a
+carrier but Gemma’s status was unknown. A
+more complicated pedigree where Mark already
+has an affected child by another partner could
+give this risk.
+B. 1 in 37.5
+This is roughly the risk that both parents are
+carriers. As Gemma does not have the condition
+there are three possible outcomes, one (33%) is
+that she is not a carrier, the other two (66%) are
+that she is a carrier, i.e. 2/3 × 1/25 = 1 in 37.5.
+C. 1 in 100
+This is a tempting option but incorrect. If Gemma
+was known to be a carrier and she found a
+partner from the general population, this would
+be the chance that a pregnancy would result in
+an affected child, i.e. 1/25 × 1/4 = 1/100.
+D. 1 in 150
+Correct. As Gemma does not have the condition
+there are three possible outcomes, one (1 in 3) is
+that she is not a carrier, the other two (2 in 3) are
+that she is a carrier. The risk of Mark being an
+unaffected carrier is the population frequency of
+heterozygosity. The risk of two carriers having an
+affected child is 1 in 4 per pregnancy. Therefore
+the risk is roughly 2/3 × 1/25 × 1/4. This could be
+refined slightly if Gemma’s status is known, but
+this might not influence the couples decision
+about screening. Checking whether Mark is a
+carrier has a bigger influence on the risk.
+E. 1 in 2500
+This is incorrect but is the risk for Caucasian
+couples having a child with cystic fibrosis in
+the UK.
+9.12
+A. Autosomal dominant
+Correct. This is the most common mode of
+Mendelian inheritance. An affected individual
+carries the abnormal gene in the heterozygous
+state. Offspring have a 50% chance of inheriting
+the abnormal gene.
+B. Autosomal recessive
+Providing that new partners came from outside
+this family, the chance that this pattern is
+autosomal recessive is extremely low.
+C. Imprinting from uniparental disomy
+Following meiosis, imprinting proceeds in a
+‘parent of origin’ specific manner. In general this
+‘resets’ the genetic information correctly and
+therefore uniparental disomy is not heritable.
+
+52
+
+D. X-linked dominant
+In X-linked dominant inheritance all the
+daughters of an affected male have the
+condition as he must pass on a copy of the gene
+to any daughter.
+
+E. X-linked recessive
+Males and females are equally affected in this
+family’s pedigree therefore, it cannot be X-linked
+recessive.
+9.13
+A. 46, XO
+An interesting karyotype. This could only occur if
+you had an extra autosome and a missing sex
+chromosome.
+B. 46, XY
+Normal male karyotype.
+C. 45, XO
+Turner syndrome.
+D. 45, XY
+There is a missing autosome. This would not be
+survivable.
+E. 47, XXY
+Correct. This is Klinefelter syndrome.
+9.14
+A. Cushing syndrome
+In Cushing syndrome there is growth failure but
+you would also expect other clinical features as
+listed in Box 9.1.
+
+Box 9.1 Clinical features of Cushing
+syndrome
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+
+Growth failure/short stature
+Face and trunk obesity
+Red cheeks
+Hirsutism
+Striae
+Hypertension
+Bruising
+Carbohydrate intolerance
+Muscle wasting and weakness
+Osteopenia
+Psychological problems.
+
+B. Down syndrome
+Children with Down syndrome are small but
+have different clinical features. See Box 9.2.
+C. Noonan syndrome
+Correct. She has a round face with short,
+webbed neck, and short stature since infancy,
+characteristic of Noonan syndrome. There is
+some overlap with the phenotype of Turner
+syndrome, but her karyotype is normal.
+D. Turner syndrome
+The normal karyotype excludes Turner
+syndrome.
+
+

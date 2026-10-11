@@ -1,0 +1,99 @@
+=== n 291
+BOOK pedsa-b19-9
+  STEM: Jane is a 5-year-old girl who presents to her general practice with bed-wetting. She has been wetting for 4 months and wets on average three nights per week. Her mother is upset as she had been dry during the day and night for almost a year. She recently started school and has had two episodes of wetting at school. She has no other medical problems and is not on any medication. She has always liked to drink water from a bottle she carries. Which of the following would you do first? Select one answer only.
+  OPTIONS: Blood glucose | Ultrasound of the abdomen | Urinary dipstick | Urinary microscopy and culture | Water deprivation test
+  KEY: Urinary dipstick
+OTHER pedep2-ren-9
+  STEM: Jane, a 5-year-old girl, presents with 4 months of bedwetting, occurring about three times a week. She had previously been dry for almost a year. She also recently started school and had two episodes of wetting during the day. No other symptoms are reported. What is the first investigation you would perform?
+  OPTIONS: Blood glucose | Ultrasound of the abdomen | Urine dipstick | Urine microscopy and culture | Water deprivation test
+  KEY: Urine dipstick
+
+=== n 292
+BOOK pedsa-b19-9
+  STEM: Jane is a 5-year-old girl who presents to her general practice with bed-wetting. She has been wetting for 4 months and wets on average three nights per week. Her mother is upset as she had been dry during the day and night for almost a year. She recently started school and has had two episodes of wetting at school. She has no other medical problems and is not on any medication. She has always liked to drink water from a bottle she carries. Which of the following would you do first? Select one answer only.
+  OPTIONS: Blood glucose | Ultrasound of the abdomen | Urinary dipstick | Urinary microscopy and culture | Water deprivation test
+  KEY: Urinary dipstick
+OTHER pedhd-renal-9
+  STEM: Jane is a 5-year-old girl who presents to her general practice with bed-wetting. She has been wetting for 4 months and wets on average three nights per week. Her mother is upset as she had been dry during the day and night for almost a year. She recently started school and has had two episodes of wetting at school. She has no other medical problems and is not on any medication. She has always liked to drink water from a bottle she carries. Which of the following would you do first?
+  OPTIONS: Blood glucose | Ultrasound of the abdomen | Urinary dipstick | Urinary microscopy and culture | Water deprivation test
+  KEY: Urinary dipstick
+
+=== n 293
+BOOK pedsa-b2-1
+  STEM: Ritha, aged 2 months, is admitted to hospital with a 2-day history of mild coryza and tachypnoea without significant intercostal recession. She has been feeding poorly for the last 3 weeks. Which clinical feature most supports her having congenital heart disease rather than respiratory disease? Select one answer only.
+  OPTIONS: Sibling with congenital heart disease | Poor feeding | Generalized wheeze on auscultation | Hepatomegaly | Ejection systolic murmur, grade II/VI, at the left sternal edge
+  KEY: Hepatomegaly
+OTHER pedep2-ra-1
+  STEM: Ritha, aged 2 months, is admitted to hospital with a 2-day history of mild coryza and tachypnoea without significant intercostal recession. She has been feeding poorly for the last 3 weeks. Which clinical feature most supports her having congenital heart disease rather than respiratory disease?
+  OPTIONS: Sibling with congenital heart disease | Poor feeding | Generalized wheeze on auscultation | Hepatomegaly | Ejection systolic murmur, grade II/VI, at the left sternal edge
+  KEY: Hepatomegaly
+
+=== n 294
+BOOK pedsa-b2-2
+  STEM: Nazma, aged 4 years, presents with a 1-week history of episodic central abdominal pain. She is of Indian ethnicity, but the family live in Kenya and are visiting relatives in the UK. She is otherwise well. Her relative’s general practitioner thinks she may be slightly pale and that her spleen is enlarged, as it is 3 cm below the costal margin. There are no other abnormalities on examination. Which of the following is the most likely cause for her enlarged spleen? Select one answer only.
+  OPTIONS: Acute lymphoblastic leukaemia | Malaria | Hookworm infestation | Wilms tumour | Sickle cell disease
+  KEY: Malaria
+OTHER pedep2-mf2-16
+  STEM: Nazma, aged 4 years, presents with a 1-week history of episodic central abdominal pain. She is of Indian ethnicity, but the family live in Kenya and are visiting relatives in the UK. She is otherwise well. Her relative’s general practitioner thinks she may be slightly pale and that her spleen is enlarged, as it is 3 cm below the costal margin. There are no other abnormalities on examination. Which of the following is the most likely cause for her enlarged spleen?
+  OPTIONS: Acute lymphoblastic leukaemia | Malaria | Hookworm infestation | Wilms tumour | Sickle cell disease
+  KEY: Malaria
+
+=== n 295
+BOOK pedsa-b2-3
+  STEM: Katie, an 18-month-old girl, is reviewed in the paediatric clinic. She is unsteady on her feet but has normal vision and gaze. She walks with a limp and tends to fall to her left side. Her limb tone and reflexes are as shown in Fig. 2.1. Which is the site of her neurological lesion? Select one answer only.
+  OPTIONS: Upper motor neurone lesion | Lower motor neurone lesion | Cerebellar lesion | Basal ganglia lesion | Neuromuscular junction
+  KEY: Upper motor neurone lesion
+OTHER pedep2-neu-33
+  STEM: Dalia, an 18-month-old girl, is reviewed in the pediatric clinic. She is unsteady on her feet but has normal vision and gaze. She walks with a limp and tends to fall to her left side. Her limb tone and reflexes show the following: ● Right arm: Tone: normal Reflexes: normal ● Left arm: Tone: increased Reflexes: brisk ● Right leg: Tone: normal Reflexes: normal ● Left leg: Tone: increased Reflexes: brisk Which is the site of her neurological lesion?
+  OPTIONS: Upper motor neuron lesion | Lower motor neuron lesion | Cerebellar lesion | Basal ganglia lesion | Neuromuscular junction
+  KEY: Upper motor neuron lesion
+
+=== n 296
+BOOK pedsa-b2-7
+  STEM: Ishmael, a 15-year-old boy from Pakistan, is seen in the outpatient department. He has a long history of chest infections needing recurrent courses of antibiotics. He has a productive cough. He opens his bowels once a day. On examination, he has a normal temperature, his skin and mucous membranes are pink and his heart sounds are normal. His hands look unusual (Fig. 2.4). On auscultation, there are some scattered crepitations at both bases. In view of his recurrent chest infections, you had ordered a sweat test, which is negative. Which of the following is the most likely cause of the appearance of Ishmael’s hands? Select one answer only.
+  OPTIONS: Cystic fibrosis | Infective endocarditis | Primary ciliary dyskinesia | Crohn’s disease | Tetralogy of Fallot
+  KEY: Primary ciliary dyskinesia
+OTHER pedep2-mf2-52
+  STEM: Ishmael, a 15-year-old boy from Pakistan, is seen in the outpatient department. He presents with otitis media and a history of recurrent chest infections needing antibiotics. He has a productive cough. Bowel movements are normal. On examination, he is afebrile, pink, with normal heart sounds. Clubbing is noted. Auscultation reveals scattered crepitations. Sweat test is negative. What is the most likely diagnosis?
+  OPTIONS: Cystic fibrosis | Infective endocarditis | Primary ciliary dyskinesia | Crohn’s disease | Tetralogy of Fallot
+  KEY: Primary ciliary dyskinesia
+
+=== n 297
+BOOK pedsa-b2-8-1
+  STEM: The following list (A–M) are causes of difficulty breathing in children. For each of the following clinical scenarios select the most likely diagnosis. Each answer may be used once, more than once or not at all. Rob, a 9-month-old boy, presents with fever and difficulty breathing for the last 3 days. His breathing is now interfering with his feeding. He has not had any previous illnesses and his growth is normal. Examination of his chest is shown in Fig. 2.5. Subcostal and Respiratory intercostal rate 70 breaths/min recession Scattered wheezes throughout both lung fields Fine end-expiratory crackles Heart rate 120 beats/ Hyperinflated min chest Heart sounds normal No murmurs
+  OPTIONS: Acute exacerbation of asthma | Bronchiolitis | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body (left side) | Inhaled foreign body (right side) | Pleural effusion (left sided) | Pleural effusion (right sided) | Pneumonia (left sided) | Pneumonia (right sided) | Pneumothorax (left sided) | Pneumothorax (right sided)
+  KEY: Bronchiolitis
+OTHER pedep2-ra-5
+  STEM: Rob, a 9-month-old boy, presents with fever and difficulty breathing for the last 3 days. His breathing is now interfering with his feeding. He has not had any previous illnesses and his growth is normal. Examination findings: • Subcostal and intercostal recession Hyperinflated chest • Respiratory rate: 70 breaths/min • Scattered wheezes throughout both lung fields, more prominent in the lower zones • Fine end-expiratory crackles in the lower zones • Heart rate: 120 beats/min • Heart sounds normal, no murmurs What is the most likely diagnosis?
+  OPTIONS: Acute exacerbation of asthma | Bronchiolitis | Chronic asthma | Cystic fibrosis
+  KEY: Bronchiolitis
+
+=== n 298
+BOOK pedsa-b2-8-2
+  STEM: The following list (A–M) are causes of difficulty breathing in children. For each of the following clinical scenarios select the most likely diagnosis. Each answer may be used once, more than once or not at all. Hatem, a 3-year-old boy, presents with fever and difficulty breathing, getting worse for the last 3 days. Examination shows the clinical signs shown in Fig. 2.6. Respiratory rate 40 breaths/min Dull to percussion Heart rate 120 beats/min Bronchial breathing Heart sounds normal Inspiratory crepitations No murmurs
+  OPTIONS: Acute exacerbation of asthma | Bronchiolitis | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body (left side) | Inhaled foreign body (right side) | Pleural effusion (left sided) | Pleural effusion (right sided) | Pneumonia (left sided) | Pneumonia (right sided) | Pneumothorax (left sided) | Pneumothorax (right sided)
+  KEY: Pneumonia (right sided)
+OTHER pedep2-mf1-4
+  STEM: A 3-year-old boy presents with fever and difficulty breathing, getting worse for the last 3 days. Examination shows the following clinical signs: respiratory rate 40 breaths/min, heart rate 120 beats/min, heart sounds normal, no murmurs, dullness on percussion, bronchial breathing, and inspiratory crepitations over the right lower chest front. Select the most likely diagnosis.
+  OPTIONS: Acute exacerbation of asthma | Inhaled foreign body (right side) | Pleural effusion (right-sided) | Pneumonia (right-sided) | Pneumothorax (right-sided)
+  KEY: Pneumonia (right-sided)
+
+=== n 299
+BOOK pedsa-b2-8-3
+  STEM: The following list (A–M) are causes of difficulty breathing in children. For each of the following clinical scenarios select the most likely diagnosis. Each answer may be used once, more than once or not at all. Darren, a 3-year-old boy, was eating peanuts 2 days ago when his younger brother pushed him over. He coughed up the peanuts and was all right. Today, he has been coughing and becomes breathless as soon as he runs about. He is afebrile. Examination findings are shown in Fig. 2.7.
+  OPTIONS: Acute exacerbation of asthma | Bronchiolitis | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body (left side) | Inhaled foreign body (right side) | Pleural effusion (left sided) | Pleural effusion (right sided) | Pneumonia (left sided) | Pneumonia (right sided) | Pneumothorax (left sided) | Pneumothorax (right sided)
+  KEY: Inhaled foreign body (left side)
+OTHER pedep2-mf1-15
+  STEM: A 3-year-old boy was eating peanuts 2 days ago when his younger brother pushed him over. He coughed up the peanuts and was all right. Today, he has been coughing and becomes breathless as soon as he runs about. He is afebrile. Examination findings are: Respiratory rate 36 breaths/min, heart apex beat displaced to the right, reduced air entry on the left chest. Percussion normal. What is the most likely diagnosis?
+  OPTIONS: Inhaled foreign body (left side) | Inhaled foreign body (right side) | Pleural effusion | Pneumonia | Pneumothorax
+  KEY: Inhaled foreign body (left side)
+
+=== n 300
+BOOK pedsa-b2-8-4
+  STEM: The following list (A–M) are causes of difficulty breathing in children. For each of the following clinical scenarios select the most likely diagnosis. Each answer may be used once, more than once or not at all. Tony, a 4-year-old boy, is admitted with pneumonia. His chest X-ray shows consolidation at the right base. Despite antibiotic therapy, he remains febrile and unwell. Examination findings are shown in Fig. 2.8.
+  OPTIONS: Acute exacerbation of asthma | Bronchiolitis | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body (left side) | Inhaled foreign body (right side) | Pleural effusion (left sided) | Pleural effusion (right sided) | Pneumonia (left sided) | Pneumonia (right sided) | Pneumothorax (left sided) | Pneumothorax (right sided)
+  KEY: Pleural effusion (right sided)
+OTHER pedep2-ra-8
+  STEM: Tony, a 4-year-old boy, is admitted with pneumonia. His chest X-ray shows consolidation at the right base. Despite antibiotic therapy, he remains febrile and unwell. Examination findings: •Respiratory rate: 50 breaths/min •Stony dull to percussion at the right lower zone •Reduced breath sounds at the right lower zone •Scattered inspiratory crepitations above the level of dullness What is the most likely diagnosis?
+  OPTIONS: Pleural effusion (left sided) | Pleural effusion (right sided) | Pneumonia (left sided) | Pneumonia (right sided)
+  KEY: Pleural effusion (right sided)

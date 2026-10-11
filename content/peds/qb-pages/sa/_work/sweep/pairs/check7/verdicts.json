@@ -1,0 +1,4118 @@
+[
+  {
+    "book": "pedsa-b1-1",
+    "other": "pedep2-mal-20",
+    "cls": "DIFF",
+    "verdict": "AGREE",
+    "why": "different scenario; no missed same"
+  },
+  {
+    "book": "pedsa-b10-1",
+    "other": "pedep-per-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-1",
+    "other": "pedhd-peri-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-12",
+    "other": "pedep-mf4-24",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-13-1",
+    "other": "pedhd-peri-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-13-2",
+    "other": "pedhd-peri-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-13-3",
+    "other": "pedep-per-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-13-3",
+    "other": "pedhd-peri-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-13-4",
+    "other": "pedhd-peri-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-13-5",
+    "other": "pedep-per-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-13-5",
+    "other": "pedhd-peri-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-2",
+    "other": "pedep-per-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-2",
+    "other": "pedhd-peri-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-3",
+    "other": "pedep-per-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-3",
+    "other": "pedhd-peri-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-4",
+    "other": "pedep-per-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-4",
+    "other": "pedhd-peri-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-5",
+    "other": "pedep-neo-35",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-5",
+    "other": "pedep-per-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-5",
+    "other": "pedhd-peri-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-6",
+    "other": "pedep-neo-40",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-6",
+    "other": "pedep-per-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-6",
+    "other": "pedhd-peri-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-7",
+    "other": "pedep-per-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-7",
+    "other": "pedhd-peri-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-8",
+    "other": "pedep-per-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-8",
+    "other": "pedhd-peri-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-9",
+    "other": "pedep-mf3-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-9",
+    "other": "pedep-neo-37",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-9",
+    "other": "pedep-per-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b10-9",
+    "other": "pedhd-peri-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-1",
+    "other": "pedep-neo-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-1",
+    "other": "pedhd-neo-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-2",
+    "other": "pedep-neo-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-2",
+    "other": "pedhd-neo-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-4",
+    "other": "pedep-mf3-41",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-4",
+    "other": "pedep-mf3-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-4",
+    "other": "pedep-neo-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-4",
+    "other": "pedhd-neo-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-5",
+    "other": "pedep-neo-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-5",
+    "other": "pedhd-neo-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-7-1",
+    "other": "pedep-neo-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-7-1",
+    "other": "pedhd-neo-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-7-2",
+    "other": "pedep-neo-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-7-2",
+    "other": "pedhd-neo-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-7-3",
+    "other": "pedep-neo-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-7-3",
+    "other": "pedhd-neo-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-8-1",
+    "other": "pedep-neo-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-8-1",
+    "other": "pedhd-neo-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-8-2",
+    "other": "pedep-neo-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-8-2",
+    "other": "pedhd-neo-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-8-3",
+    "other": "pedep-neo-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-8-3",
+    "other": "pedep-neo-23",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-8-3",
+    "other": "pedhd-neo-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-8-4",
+    "other": "pedep-neo-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-8-4",
+    "other": "pedhd-neo-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-9-1",
+    "other": "pedep2-mf1-73",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-9-1",
+    "other": "pedep-neo-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-9-1",
+    "other": "pedhd-neo-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-9-2",
+    "other": "pedep-neo-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-9-2",
+    "other": "pedep-neo-43",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b11-9-2",
+    "other": "pedhd-neo-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-1",
+    "other": "pedep-gp-21",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-1",
+    "other": "pedhd-gp-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-2",
+    "other": "pedep-gp-22",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-2",
+    "other": "pedhd-gp-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-3",
+    "other": "pedep-gp-23",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-3",
+    "other": "pedhd-gp-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-4",
+    "other": "pedep-gp-24",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-4",
+    "other": "pedhd-gp-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-5",
+    "other": "pedep-gp-25",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-5",
+    "other": "pedhd-gp-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-6-1",
+    "other": "pedep-gp-26",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-6-1",
+    "other": "pedhd-gp-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-6-2",
+    "other": "pedep-gp-27",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-6-2",
+    "other": "pedhd-gp-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-6-3",
+    "other": "pedep-gp-28",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b12-6-3",
+    "other": "pedhd-gp-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-1",
+    "other": "pedep-nut-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-1",
+    "other": "pedhd-nutr-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-2",
+    "other": "pedep-nut-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-2",
+    "other": "pedhd-nutr-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-3",
+    "other": "pedep-nut-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-3",
+    "other": "pedhd-nutr-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-4",
+    "other": "pedep-nut-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-4",
+    "other": "pedhd-nutr-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-5",
+    "other": "pedep-nut-23",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-5",
+    "other": "pedep-nut-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-5",
+    "other": "pedhd-nutr-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-6",
+    "other": "pedep-nut-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-6",
+    "other": "pedhd-nutr-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-7-1",
+    "other": "pedep-nut-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-7-1",
+    "other": "pedhd-nutr-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-7-2",
+    "other": "pedep-nut-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-7-2",
+    "other": "pedhd-nutr-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-7-3",
+    "other": "pedep-mf3-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-7-3",
+    "other": "pedep-nut-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-7-3",
+    "other": "pedhd-nutr-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-7-4",
+    "other": "pedep-nut-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-7-4",
+    "other": "pedhd-nutr-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-7-5",
+    "other": "pedep-gp-37",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-7-5",
+    "other": "pedep-nut-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b13-7-5",
+    "other": "pedhd-nutr-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-1",
+    "other": "pedep-gi-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-1",
+    "other": "pedhd-gastro-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-10-1",
+    "other": "pedep-gi-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-10-1",
+    "other": "pedhd-gastro-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-10-2",
+    "other": "pedep-gi-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-10-2",
+    "other": "pedep-mf2-56",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-10-2",
+    "other": "pedhd-gastro-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-10-3",
+    "other": "pedep-gi-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-10-3",
+    "other": "pedhd-gastro-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-10-5",
+    "other": "pedep-gi-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-10-5",
+    "other": "pedhd-gastro-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-2",
+    "other": "pedep-gi-61",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-3",
+    "other": "pedep-gi-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-3",
+    "other": "pedep-gi-63",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-3",
+    "other": "pedhd-gastro-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-4",
+    "other": "pedep-gi-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-4",
+    "other": "pedep-mf1-49",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-4",
+    "other": "pedhd-gastro-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-5",
+    "other": "pedep-gi-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-5",
+    "other": "pedep-gi-59",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-5",
+    "other": "pedhd-gastro-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-6",
+    "other": "pedep-gi-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-6",
+    "other": "pedhd-gastro-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-7",
+    "other": "pedep-gi-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-7",
+    "other": "pedhd-gastro-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-8",
+    "other": "pedep-gi-46",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-8",
+    "other": "pedep-gi-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-8",
+    "other": "pedhd-gastro-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-9-1",
+    "other": "pedep-gi-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-9-1",
+    "other": "pedhd-gastro-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-9-2",
+    "other": "pedep-gi-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-9-2",
+    "other": "pedhd-gastro-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-9-3",
+    "other": "pedep-gi-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-9-3",
+    "other": "pedhd-gastro-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-9-4",
+    "other": "pedep-gi-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-9-4",
+    "other": "pedhd-gastro-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-9-5",
+    "other": "pedep-gi-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b14-9-5",
+    "other": "pedhd-gastro-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-1",
+    "other": "pedep-inf-21",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-1",
+    "other": "pedep-inf-53",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-1",
+    "other": "pedhd-inf-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-10-1",
+    "other": "pedep-inf-59",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-10-1",
+    "other": "pedhd-inf-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-10-2",
+    "other": "pedep-inf-60",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-10-2",
+    "other": "pedhd-inf-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-10-3",
+    "other": "pedep-inf-42",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-10-3",
+    "other": "pedep-inf-61",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-10-3",
+    "other": "pedhd-inf-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-10-5",
+    "other": "pedep-inf-62",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-10-5",
+    "other": "pedhd-inf-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-10-7",
+    "other": "pedep-mf3-40",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-10-7",
+    "other": "pedep-mf4-58",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-10-7",
+    "other": "pedhd-inf-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-11-1",
+    "other": "pedhd-inf-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-11-2",
+    "other": "pedep2-res-64",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-11-2",
+    "other": "pedhd-inf-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-11-3",
+    "other": "pedep-emg-59",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-11-3",
+    "other": "pedhd-inf-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-11-4",
+    "other": "pedhd-inf-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-11-5",
+    "other": "pedep-mf1-25",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-2",
+    "other": "pedep-inf-54",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-2",
+    "other": "pedhd-inf-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-3",
+    "other": "pedep-inf-55",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-3",
+    "other": "pedhd-inf-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-4",
+    "other": "pedep-inf-56",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-4",
+    "other": "pedep-mf1-36",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-4",
+    "other": "pedhd-inf-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-5",
+    "other": "pedep-inf-57",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-5",
+    "other": "pedhd-inf-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-7",
+    "other": "pedep-mf1-37",
+    "cls": "SAME",
+    "verdict": "DISAGREE",
+    "why": "different keyed answer: pneumonia versus SCID"
+  },
+  {
+    "book": "pedsa-b15-8",
+    "other": "pedep-inf-58",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-8",
+    "other": "pedhd-inf-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b15-9",
+    "other": "pedhd-inf-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b16-1",
+    "other": "pedep-alg-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b16-1",
+    "other": "pedhd-alg-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b16-2",
+    "other": "pedep-alg-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b16-2",
+    "other": "pedhd-alg-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b16-3",
+    "other": "pedep-alg-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b16-3",
+    "other": "pedhd-alg-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b16-4",
+    "other": "pedep-alg-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b16-4",
+    "other": "pedhd-alg-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-1",
+    "other": "pedep2-res-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-1",
+    "other": "pedhd-resp-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-10",
+    "other": "pedep2-res-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-10",
+    "other": "pedhd-resp-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-11",
+    "other": "pedhd-resp-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-12-2",
+    "other": "pedep2-res-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-12-2",
+    "other": "pedhd-resp-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-12-3",
+    "other": "pedep2-res-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-12-3",
+    "other": "pedhd-resp-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-13-1",
+    "other": "pedep2-res-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-13-1",
+    "other": "pedep2-res-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-13-1",
+    "other": "pedhd-resp-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-13-2",
+    "other": "pedep2-res-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-13-2",
+    "other": "pedep2-res-56",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-13-2",
+    "other": "pedhd-resp-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-13-4",
+    "other": "pedep2-res-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-13-4",
+    "other": "pedep2-res-63",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-13-4",
+    "other": "pedhd-resp-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-13-5",
+    "other": "pedep2-res-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-13-5",
+    "other": "pedhd-resp-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-14-1",
+    "other": "pedep2-res-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-14-1",
+    "other": "pedhd-resp-18",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-14-2",
+    "other": "pedep2-res-18",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-14-2",
+    "other": "pedhd-resp-19",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-14-3",
+    "other": "pedep2-res-19",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-14-3",
+    "other": "pedhd-resp-20",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-2",
+    "other": "pedep2-res-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-2",
+    "other": "pedhd-resp-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-3",
+    "other": "pedep2-res-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-3",
+    "other": "pedhd-resp-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-4",
+    "other": "pedep2-res-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-4",
+    "other": "pedhd-resp-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-5",
+    "other": "pedep2-res-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-5",
+    "other": "pedhd-resp-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-6",
+    "other": "pedep2-res-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-6",
+    "other": "pedhd-resp-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-7",
+    "other": "pedep2-mf2-67",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-7",
+    "other": "pedep2-res-54",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-7",
+    "other": "pedep2-res-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-7",
+    "other": "pedhd-resp-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-9",
+    "other": "pedep2-res-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b17-9",
+    "other": "pedhd-resp-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-1",
+    "other": "pedep2-car-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-1",
+    "other": "pedhd-card-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-2",
+    "other": "pedep2-car-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-2",
+    "other": "pedhd-card-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-3",
+    "other": "pedep2-car-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-3",
+    "other": "pedhd-card-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-4",
+    "other": "pedep2-car-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-4",
+    "other": "pedhd-card-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-5",
+    "other": "pedep2-car-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-5",
+    "other": "pedhd-card-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-7-1",
+    "other": "pedep2-car-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-7-1",
+    "other": "pedhd-card-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-7-2",
+    "other": "pedep2-car-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-7-2",
+    "other": "pedhd-card-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-7-4",
+    "other": "pedep2-car-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-7-4",
+    "other": "pedhd-card-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-8-1",
+    "other": "pedep2-car-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-8-1",
+    "other": "pedhd-card-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-8-2",
+    "other": "pedep2-car-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-8-2",
+    "other": "pedhd-card-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-8-3",
+    "other": "pedep2-car-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-8-3",
+    "other": "pedep2-car-59",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-8-3",
+    "other": "pedhd-card-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-8-4",
+    "other": "pedep2-car-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-8-4",
+    "other": "pedep2-car-35",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b18-8-4",
+    "other": "pedhd-card-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-1",
+    "other": "pedep2-ren-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-1",
+    "other": "pedhd-renal-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-11-1",
+    "other": "pedep2-ren-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-11-1",
+    "other": "pedhd-renal-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-11-2",
+    "other": "pedep2-ren-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-11-2",
+    "other": "pedep2-ren-43",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-11-2",
+    "other": "pedhd-renal-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-11-3",
+    "other": "pedep2-ren-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-11-3",
+    "other": "pedhd-renal-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-11-4",
+    "other": "pedep2-ren-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-11-4",
+    "other": "pedep2-ren-35",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-11-4",
+    "other": "pedhd-renal-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-11-5",
+    "other": "pedep2-ren-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-11-5",
+    "other": "pedhd-renal-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-12-1",
+    "other": "pedep2-ren-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-12-1",
+    "other": "pedhd-renal-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-12-2",
+    "other": "pedep2-ren-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-12-2",
+    "other": "pedhd-renal-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-12-3",
+    "other": "pedep2-ren-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-12-3",
+    "other": "pedhd-renal-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-12-4",
+    "other": "pedep2-ren-18",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-12-4",
+    "other": "pedhd-renal-18",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-2",
+    "other": "pedep2-ren-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-2",
+    "other": "pedep2-ren-28",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-2",
+    "other": "pedhd-renal-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-3",
+    "other": "pedep2-ren-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-3",
+    "other": "pedhd-renal-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-4",
+    "other": "pedep2-ren-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-4",
+    "other": "pedhd-renal-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-5",
+    "other": "pedep2-ren-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-5",
+    "other": "pedhd-renal-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-6",
+    "other": "pedep2-ren-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-6",
+    "other": "pedhd-renal-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-7",
+    "other": "pedep2-ren-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-7",
+    "other": "pedhd-renal-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-8",
+    "other": "pedep2-ren-42",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-8",
+    "other": "pedep2-ren-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-8",
+    "other": "pedhd-renal-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-9",
+    "other": "pedep2-ren-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b19-9",
+    "other": "pedhd-renal-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b2-1",
+    "other": "pedep2-ra-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b2-2",
+    "other": "pedep2-mf2-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b2-3",
+    "other": "pedep2-neu-33",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b2-7",
+    "other": "pedep2-mf2-52",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b2-8-1",
+    "other": "pedep2-ra-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b2-8-2",
+    "other": "pedep2-mf1-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b2-8-3",
+    "other": "pedep2-mf1-15",
+    "cls": "DIFF",
+    "verdict": "AGREE",
+    "why": "different scenario; no missed same"
+  },
+  {
+    "book": "pedsa-b2-8-4",
+    "other": "pedep2-ra-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-1",
+    "other": "pedep2-liv-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-1",
+    "other": "pedhd-liv-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-2",
+    "other": "pedep2-liv-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-2",
+    "other": "pedhd-liv-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-3",
+    "other": "pedep2-end-26",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-3",
+    "other": "pedep2-liv-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-3",
+    "other": "pedhd-liv-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-4",
+    "other": "pedep2-liv-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-4",
+    "other": "pedhd-liv-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-5",
+    "other": "pedep2-liv-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-5",
+    "other": "pedhd-liv-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-6-1",
+    "other": "pedep2-liv-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-6-1",
+    "other": "pedhd-liv-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-6-2",
+    "other": "pedep2-liv-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-6-2",
+    "other": "pedhd-liv-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-6-3",
+    "other": "pedep2-liv-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-6-3",
+    "other": "pedhd-liv-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-6-4",
+    "other": "pedep2-liv-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b21-6-4",
+    "other": "pedhd-liv-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-1",
+    "other": "pedep2-mal-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-1",
+    "other": "pedhd-mal-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-10-1",
+    "other": "pedhd-mal-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-10-2",
+    "other": "pedhd-mal-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-10-3",
+    "other": "pedhd-mal-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-10-4",
+    "other": "pedhd-mal-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-10-5",
+    "other": "pedhd-mal-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-10-6",
+    "other": "pedhd-mal-18",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-2",
+    "other": "pedep2-mal-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-2",
+    "other": "pedhd-mal-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-3",
+    "other": "pedep2-mal-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-3",
+    "other": "pedhd-mal-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-4",
+    "other": "pedep2-mal-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-4",
+    "other": "pedhd-mal-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-5",
+    "other": "pedep2-mal-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-5",
+    "other": "pedhd-mal-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-6",
+    "other": "pedhd-mal-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-7",
+    "other": "pedep2-mal-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-7",
+    "other": "pedhd-mal-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-8",
+    "other": "pedep2-mal-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-8",
+    "other": "pedhd-mal-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-9-1",
+    "other": "pedhd-mal-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-9-2",
+    "other": "pedhd-mal-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-9-3",
+    "other": "pedhd-mal-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b22-9-4",
+    "other": "pedhd-mal-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-1",
+    "other": "pedep2-hem-22",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-1",
+    "other": "pedep2-hem-61",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-1",
+    "other": "pedhd-haem-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-2",
+    "other": "pedep2-hem-23",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-2",
+    "other": "pedhd-haem-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-3",
+    "other": "pedep2-hem-24",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-3",
+    "other": "pedhd-haem-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-4",
+    "other": "pedep2-hem-25",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-4",
+    "other": "pedhd-haem-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-5",
+    "other": "pedep2-hem-26",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-5",
+    "other": "pedep2-hem-87",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-5",
+    "other": "pedhd-haem-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-6",
+    "other": "pedep2-hem-27",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-6",
+    "other": "pedhd-haem-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-7-1",
+    "other": "pedep2-hem-28",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-7-1",
+    "other": "pedhd-haem-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-7-2",
+    "other": "pedep2-hem-29",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-7-2",
+    "other": "pedhd-haem-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-7-3",
+    "other": "pedep2-hem-30",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-7-3",
+    "other": "pedhd-haem-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-7-4",
+    "other": "pedep2-hem-31",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-7-4",
+    "other": "pedhd-haem-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-8-1",
+    "other": "pedep2-hem-32",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-8-1",
+    "other": "pedhd-haem-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-8-2",
+    "other": "pedep2-hem-33",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-8-2",
+    "other": "pedhd-haem-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-8-3",
+    "other": "pedep2-hem-34",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-8-3",
+    "other": "pedhd-haem-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-8-4",
+    "other": "pedep2-hem-35",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-8-4",
+    "other": "pedhd-haem-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-8-5",
+    "other": "pedep2-hem-36",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b23-8-5",
+    "other": "pedhd-haem-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-1",
+    "other": "pedep2-end-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-1",
+    "other": "pedhd-endo-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-10",
+    "other": "pedep2-end-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-10",
+    "other": "pedhd-endo-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-11",
+    "other": "pedep2-end-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-11",
+    "other": "pedhd-endo-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-12-1",
+    "other": "pedep2-end-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-12-1",
+    "other": "pedhd-endo-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-12-2",
+    "other": "pedep2-end-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-12-2",
+    "other": "pedhd-endo-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-12-3",
+    "other": "pedep2-end-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-12-3",
+    "other": "pedep2-mf3-34",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-12-3",
+    "other": "pedhd-endo-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-12-4",
+    "other": "pedep2-mf2-26",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-12-4",
+    "other": "pedhd-endo-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-2",
+    "other": "pedep2-end-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-2",
+    "other": "pedhd-endo-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-3",
+    "other": "pedep2-end-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-3",
+    "other": "pedhd-endo-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-4",
+    "other": "pedep2-end-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-4",
+    "other": "pedhd-endo-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-5",
+    "other": "pedep2-end-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-5",
+    "other": "pedhd-endo-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-6",
+    "other": "pedep2-end-17",
+    "cls": "DIFF",
+    "verdict": "AGREE",
+    "why": "different scenario; no missed same"
+  },
+  {
+    "book": "pedsa-b26-9",
+    "other": "pedep2-end-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b26-9",
+    "other": "pedhd-endo-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-1",
+    "other": "pedhd-neuro-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-10",
+    "other": "pedep2-neu-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-10",
+    "other": "pedhd-neuro-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-11",
+    "other": "pedep2-neu-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-11",
+    "other": "pedhd-neuro-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-12",
+    "other": "pedep2-neu-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-12",
+    "other": "pedhd-neuro-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-13-1",
+    "other": "pedep2-neu-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-13-1",
+    "other": "pedhd-neuro-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-13-2",
+    "other": "pedep2-neu-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-13-2",
+    "other": "pedhd-neuro-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-13-4",
+    "other": "pedep2-neu-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-13-4",
+    "other": "pedhd-neuro-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-13-5",
+    "other": "pedep2-neu-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-13-5",
+    "other": "pedhd-neuro-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-14-1",
+    "other": "pedep2-neu-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-14-1",
+    "other": "pedhd-neuro-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-14-2",
+    "other": "pedep2-neu-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-14-2",
+    "other": "pedhd-neuro-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-14-3",
+    "other": "pedep2-neu-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-14-3",
+    "other": "pedhd-neuro-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-15-1",
+    "other": "pedep2-neu-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-15-1",
+    "other": "pedhd-neuro-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-15-2",
+    "other": "pedep2-neu-18",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-15-2",
+    "other": "pedhd-neuro-18",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-15-3",
+    "other": "pedep2-neu-19",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-15-3",
+    "other": "pedhd-neuro-19",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-15-5",
+    "other": "pedep2-neu-20",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-15-5",
+    "other": "pedhd-neuro-20",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-4",
+    "other": "pedep2-neu-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-4",
+    "other": "pedhd-neuro-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-5",
+    "other": "pedep2-neu-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-5",
+    "other": "pedhd-neuro-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-6",
+    "other": "pedep2-neu-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-6",
+    "other": "pedhd-neuro-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-7",
+    "other": "pedep2-neu-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-7",
+    "other": "pedhd-neuro-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-8",
+    "other": "pedep2-neu-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b29-8",
+    "other": "pedhd-neuro-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-1",
+    "other": "pedep2-nd-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-1",
+    "other": "pedhd-dev-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-4",
+    "other": "pedep2-nd-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-4",
+    "other": "pedhd-dev-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-5",
+    "other": "pedep2-nd-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-5",
+    "other": "pedhd-dev-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-6",
+    "other": "pedep-nut-72",
+    "cls": "DIFF",
+    "verdict": "AGREE",
+    "why": "different scenario; no missed same"
+  },
+  {
+    "book": "pedsa-b3-7-1",
+    "other": "pedep2-nd-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-1",
+    "other": "pedhd-dev-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-10",
+    "other": "pedep2-nd-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-10",
+    "other": "pedhd-dev-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-2",
+    "other": "pedep2-nd-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-2",
+    "other": "pedhd-dev-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-3",
+    "other": "pedep2-nd-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-3",
+    "other": "pedhd-dev-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-4",
+    "other": "pedep2-nd-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-4",
+    "other": "pedhd-dev-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-5",
+    "other": "pedep2-nd-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-5",
+    "other": "pedhd-dev-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-6",
+    "other": "pedep2-nd-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-6",
+    "other": "pedhd-dev-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-7",
+    "other": "pedep2-nd-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-7",
+    "other": "pedhd-dev-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-8",
+    "other": "pedep2-nd-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-8",
+    "other": "pedhd-dev-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-9",
+    "other": "pedep2-nd-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-7-9",
+    "other": "pedhd-dev-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-8-1",
+    "other": "pedep2-nd-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-8-1",
+    "other": "pedhd-dev-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-8-2",
+    "other": "pedep2-nd-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-8-2",
+    "other": "pedhd-dev-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-8-3",
+    "other": "pedep2-nd-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-8-3",
+    "other": "pedhd-dev-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-8-4",
+    "other": "pedep2-nd-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-8-4",
+    "other": "pedhd-dev-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b3-8-5",
+    "other": "pedep2-nd-15",
+    "cls": "MENU",
+    "verdict": "AGREE",
+    "why": "different scenario; no missed same"
+  },
+  {
+    "book": "pedsa-b3-8-5",
+    "other": "pedhd-dev-14",
+    "cls": "MENU",
+    "verdict": "AGREE",
+    "why": "different scenario; no missed same"
+  },
+  {
+    "book": "pedsa-b3-8-5",
+    "other": "pedhd-dev-15",
+    "cls": "MENU",
+    "verdict": "AGREE",
+    "why": "different scenario; no missed same"
+  },
+  {
+    "book": "pedsa-b30-3",
+    "other": "pedhd-acc-1",
+    "cls": "DIFF",
+    "verdict": "AGREE",
+    "why": "different scenario; no missed same"
+  },
+  {
+    "book": "pedsa-b4-1",
+    "other": "pedep2-dp-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-1",
+    "other": "pedhd-devp-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-10-1",
+    "other": "pedep2-dp-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-10-1",
+    "other": "pedhd-devp-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-10-2",
+    "other": "pedep2-dp-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-10-2",
+    "other": "pedhd-devp-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-10-3",
+    "other": "pedep2-dp-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-10-3",
+    "other": "pedep2-mf1-80",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-10-3",
+    "other": "pedhd-devp-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-10-4",
+    "other": "pedep2-dp-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-10-4",
+    "other": "pedep2-mf1-64",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-10-4",
+    "other": "pedhd-devp-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-10-5",
+    "other": "pedep2-dp-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-10-5",
+    "other": "pedhd-devp-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-11-6",
+    "other": "pedep2-dp-5",
+    "cls": "DIFF",
+    "verdict": "AGREE",
+    "why": "different scenario; no missed same"
+  },
+  {
+    "book": "pedsa-b4-11-6",
+    "other": "pedhd-devp-5",
+    "cls": "DIFF",
+    "verdict": "AGREE",
+    "why": "different scenario; no missed same"
+  },
+  {
+    "book": "pedsa-b4-2",
+    "other": "pedep2-dp-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-2",
+    "other": "pedhd-devp-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-3",
+    "other": "pedep2-dp-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-3",
+    "other": "pedhd-devp-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-4",
+    "other": "pedep2-dp-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-4",
+    "other": "pedhd-devp-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-5",
+    "other": "pedep2-dp-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-5",
+    "other": "pedhd-devp-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-8",
+    "other": "pedep2-dp-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-8",
+    "other": "pedhd-devp-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-9-1",
+    "other": "pedep2-dp-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-9-1",
+    "other": "pedep2-neu-40",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-9-1",
+    "other": "pedhd-devp-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-9-2",
+    "other": "pedep2-dp-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-9-2",
+    "other": "pedhd-devp-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-9-3",
+    "other": "pedep2-dp-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-9-3",
+    "other": "pedhd-devp-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-9-4",
+    "other": "pedep2-dp-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-9-4",
+    "other": "pedhd-devp-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-9-5",
+    "other": "pedep2-dp-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b4-9-5",
+    "other": "pedhd-devp-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-1",
+    "other": "pedhd-emg-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-10",
+    "other": "pedep2-res-65",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-10",
+    "other": "pedep-emg-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-10",
+    "other": "pedhd-emg-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-11",
+    "other": "pedep-emg-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-11",
+    "other": "pedep-emg-58",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-11",
+    "other": "pedhd-emg-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-12",
+    "other": "pedep-emg-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-12",
+    "other": "pedep-mf2-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-12",
+    "other": "pedep-mf3-20",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-12",
+    "other": "pedhd-emg-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-13-1",
+    "other": "pedep-emg-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-13-1",
+    "other": "pedhd-emg-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-13-2",
+    "other": "pedep-emg-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-13-2",
+    "other": "pedhd-emg-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-13-3",
+    "other": "pedhd-emg-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-13-4",
+    "other": "pedhd-emg-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-13-5",
+    "other": "pedep-emg-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-13-5",
+    "other": "pedhd-emg-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-2",
+    "other": "pedep-emg-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-2",
+    "other": "pedhd-emg-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-3",
+    "other": "pedep-emg-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-3",
+    "other": "pedhd-emg-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-4",
+    "other": "pedep-emg-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-4",
+    "other": "pedhd-emg-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-5",
+    "other": "pedep-emg-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-5",
+    "other": "pedhd-emg-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-6",
+    "other": "pedep-emg-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-6",
+    "other": "pedhd-emg-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-7",
+    "other": "pedep-emg-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-7",
+    "other": "pedhd-emg-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-8",
+    "other": "pedep-emg-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-8",
+    "other": "pedhd-emg-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b6-9",
+    "other": "pedhd-emg-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b7-1",
+    "other": "pedhd-acc-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b7-5",
+    "other": "pedep-acc-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b7-5",
+    "other": "pedhd-acc-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b7-7",
+    "other": "pedep-emg-33",
+    "cls": "DIFF",
+    "verdict": "AGREE",
+    "why": "different scenario; no missed same"
+  },
+  {
+    "book": "pedsa-b7-8",
+    "other": "pedep-emg-33",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b7-8",
+    "other": "pedhd-acc-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-1",
+    "other": "pedep2-gen-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-1",
+    "other": "pedhd-gen-1",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-10",
+    "other": "pedep2-gen-21",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-10",
+    "other": "pedhd-gen-10",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-11",
+    "other": "pedep2-gen-37",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-11",
+    "other": "pedhd-gen-11",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-12",
+    "other": "pedep2-gen-38",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-12",
+    "other": "pedhd-gen-12",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-13",
+    "other": "pedep2-gen-22",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-13",
+    "other": "pedhd-gen-13",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-15-1",
+    "other": "pedep2-gen-23",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-15-1",
+    "other": "pedhd-gen-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-16-1",
+    "other": "pedep2-mf2-21",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-2",
+    "other": "pedep2-gen-36",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-2",
+    "other": "pedhd-gen-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-3",
+    "other": "pedep2-gen-20",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-3",
+    "other": "pedhd-gen-3",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-4",
+    "other": "pedep2-gen-16",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-4",
+    "other": "pedep2-mf1-24",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-4",
+    "other": "pedhd-gen-4",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-5",
+    "other": "pedep2-gen-17",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-5",
+    "other": "pedhd-gen-5",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-6",
+    "other": "pedep2-gen-18",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-6",
+    "other": "pedep-gp-2",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-6",
+    "other": "pedhd-gen-6",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-7",
+    "other": "pedep2-gen-19",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-7",
+    "other": "pedhd-gen-7",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-8",
+    "other": "pedep2-gen-14",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-8",
+    "other": "pedhd-gen-8",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-9",
+    "other": "pedep2-gen-15",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  },
+  {
+    "book": "pedsa-b9-9",
+    "other": "pedhd-gen-9",
+    "cls": "SAME",
+    "verdict": "AGREE",
+    "why": "same scenario and keyed answer"
+  }
+]

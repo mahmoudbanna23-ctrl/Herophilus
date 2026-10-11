@@ -1,0 +1,51 @@
+5.12 · SINGLE BEST ANSWER
+
+Which feature best supports a diagnosis of asthma in a 6-year-old with recurrent wheeze?
+
+ A. Wheeze only with colds and no symptoms in between
+ B. Symptoms at night and in the early morning, with atopy and a family history
+ C. Wet cough with clubbing
+D. Faltering growth
+ E. Stridor
+
+Answer: B.
+
+Interval symptoms, nocturnal and early-morning cough or wheeze, and atopy support asthma.
+Clubbing, a wet cough and faltering growth are NEVER asthma — they mean suppurative lung disease.
+
+
+
+
+5.13 · SINGLE BEST ANSWER
+
+Which spirometry result supports asthma?
+
+ A. FEV₁:FVC below 80% with reversibility of FEV₁ greater than 12% after a bronchodilator
+ B. A restrictive pattern with normal ratio
+ C. Normal spirometry excludes asthma
+D. Reduced FVC with normal FEV₁
+ E. Reversibility of less than 5%
+
+Answer: A.
+
+And the trap: normal spirometry between attacks does NOT exclude asthma.
+
+
+
+
+5.14 · SINGLE BEST ANSWER
+
+Which statement about asthma treatment is correct?
+
+ A. A long-acting beta agonist may be used alone if symptoms are mild
+ B. A long-acting beta agonist must NEVER be given without an inhaled corticosteroid
+ C. Short-acting beta agonists are used as maintenance monotherapy
+D. Leukotriene receptor antagonists are contraindicated in children
+ E. Inhaler technique rarely matters
+
+Answer: B.
+
+LABA never without ICS; SABA never alone as maintenance. In under-fives the usual add-on is a
+leukotriene receptor antagonist. Always check adherence, inhaler technique and trigger avoidance
+before escalating.
+

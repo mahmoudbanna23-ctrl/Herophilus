@@ -1,0 +1,5 @@
+AGENTS.md loaded — Herophilus
+
+Book mapping complete: 452/452 items; 101 out-of-course. Required checker passed (805 entries).
+
+Least sure: pedsa-b2-2 infection-bact/genetics; b5-6-1 emergencies/infection-immunity; b7-12 resp-bronch/gastroenterology; b8-5-2 dev-problems/infection-bact; b10-10 neuro-nm/genetics; b19-10 neuro-nm/renal-cakut; b25-2 renal-uti/allergy; b28-2 neuro-nm/growth-puberty; b29-2 neurological/dev-problems; b30-5-3 mental/malignant-solid. Nothing undone.

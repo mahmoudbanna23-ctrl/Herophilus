@@ -1,0 +1,2490 @@
+[
+ {
+  "id": "pedsa-b1-3",
+  "cls": "DISAGREE",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b2-1",
+  "cls": "DISAGREE",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "cardiac",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b2-2",
+  "cls": "DISAGREE",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "infection",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b2-3",
+  "cls": "DISAGREE",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "neuro-nm",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b2-5",
+  "cls": "DISAGREE",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "neuro-nm",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b2-7",
+  "cls": "DISAGREE",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "genetics",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b2-8-3",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "accidents",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b2-8-4",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "resp-pneumonia",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b3-2",
+  "cls": "DISAGREE",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "dev-problems",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b3-6",
+  "cls": "DISAGREE",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "mental",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b3-7-9",
+  "cls": "MISSING",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b3-8-1",
+  "cls": "MISSING",
+  "first": "infection-vaccine",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b3-8-2",
+  "cls": "MISSING",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b3-8-3",
+  "cls": "MISSING",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b3-8-4",
+  "cls": "MISSING",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b3-8-5",
+  "cls": "MISSING",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-1",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-2",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-3",
+  "cls": "MISSING",
+  "first": "neuro-cp",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-4",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-5",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-6",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-7",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-8",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-9-1",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-9-2",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-9-3",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-9-4",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-9-5",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-10-1",
+  "cls": "MISSING",
+  "first": "neuro-cp",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-10-2",
+  "cls": "MISSING",
+  "first": "neuro-cp",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-10-3",
+  "cls": "MISSING",
+  "first": "neuro-cp",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-10-4",
+  "cls": "MISSING",
+  "first": "neuro-cp",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-10-5",
+  "cls": "MISSING",
+  "first": "neuro-cp",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-11-1",
+  "cls": "MISSING",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-11-2",
+  "cls": "MISSING",
+  "first": "resp-pneumonia",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-11-3",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-11-4",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-11-5",
+  "cls": "MISSING",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-11-6",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-11-7",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b4-11-8",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-1",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-2",
+  "cls": "MISSING",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-3",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-4-1",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-4-2",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-4-3",
+  "cls": "MISSING",
+  "first": "respiratory",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-4-4",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-4-5",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-5-1",
+  "cls": "MISSING",
+  "first": "infection-vaccine",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-5-2",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-5-3",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-5-4",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-5-5",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-5-6",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-5-7",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-6-1",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-6-2",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-6-3",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-6-4",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b5-6-5",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-1",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-2",
+  "cls": "MISSING",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-3",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-4",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-5",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-6",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-7",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-8",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-9",
+  "cls": "MISSING",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-10",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-11",
+  "cls": "MISSING",
+  "first": "endo-thyroid",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-12",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-13-1",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-13-2",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-13-3",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-13-4",
+  "cls": "MISSING",
+  "first": "emergencies",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b6-13-5",
+  "cls": "MISSING",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-1",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-2",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-3",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-4",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-5",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-6",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-7",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-8",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-9",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-10",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-11",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-12",
+  "cls": "MISSING",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-13-1",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-13-2",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-13-3",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-13-4",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b7-13-5",
+  "cls": "MISSING",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b8-1",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b8-2",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b8-3",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b8-4",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b8-5-1",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b8-5-2",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b8-5-3",
+  "cls": "MISSING",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b8-5-4",
+  "cls": "MISSING",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b8-5-5",
+  "cls": "MISSING",
+  "first": "dev-problems",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-1",
+  "cls": "MISSING",
+  "first": "haem-bleeding",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-2",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-3",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-4",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-5",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-6",
+  "cls": "MISSING",
+  "first": "endo-thyroid",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-7",
+  "cls": "MISSING",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-8",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-9",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-10",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-11",
+  "cls": "MISSING",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-12",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-13",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-14",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-15-1",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-15-2",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-15-3",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-15-4",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-15-5",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-16-1",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-16-2",
+  "cls": "MISSING",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-16-3",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-16-4",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b9-16-5",
+  "cls": "MISSING",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b10-2",
+  "cls": "DISAGREE",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "renal-cakut",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b10-5",
+  "cls": "DISAGREE",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "cardiac",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b10-6",
+  "cls": "SWAP",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "perinatal-rd",
+  "secondSecondary": "perinatal"
+ },
+ {
+  "id": "pedsa-b10-7",
+  "cls": "DISAGREE",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "infection",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b10-10",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b10-11",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b10-13-5",
+  "cls": "DISAGREE",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "normal-dev",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b11-1",
+  "cls": "DISAGREE",
+  "first": "neonatal",
+  "firstSecondary": "",
+  "second": "perinatal-rd",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b11-3",
+  "cls": "DISAGREE",
+  "first": "neonatal",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b11-4",
+  "cls": "DISAGREE",
+  "first": "neonatal",
+  "firstSecondary": "",
+  "second": "neonatal-sepsis",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b11-5",
+  "cls": "DISAGREE",
+  "first": "neonatal",
+  "firstSecondary": "",
+  "second": "gastroenterology",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b11-6",
+  "cls": "DISAGREE",
+  "first": "neonatal",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b11-7-1",
+  "cls": "DISAGREE",
+  "first": "neonatal",
+  "firstSecondary": "",
+  "second": "perinatal-rd",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b11-7-2",
+  "cls": "DISAGREE",
+  "first": "neonatal",
+  "firstSecondary": "",
+  "second": "perinatal-rd",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b11-7-3",
+  "cls": "DISAGREE",
+  "first": "neonatal",
+  "firstSecondary": "",
+  "second": "perinatal-rd",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b11-9-1",
+  "cls": "DISAGREE",
+  "first": "neonatal",
+  "firstSecondary": "",
+  "second": "cardiac",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b11-9-2",
+  "cls": "DISAGREE",
+  "first": "neonatal",
+  "firstSecondary": "",
+  "second": "perinatal-rd",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b12-1",
+  "cls": "DISAGREE",
+  "first": "growth-puberty",
+  "firstSecondary": "",
+  "second": "nutrition",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b12-3",
+  "cls": "DISAGREE",
+  "first": "growth-puberty",
+  "firstSecondary": "",
+  "second": "puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b12-4",
+  "cls": "DISAGREE",
+  "first": "growth-puberty",
+  "firstSecondary": "",
+  "second": "puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b12-6-3",
+  "cls": "DISAGREE",
+  "first": "growth-puberty",
+  "firstSecondary": "",
+  "second": "nutrition",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b13-1",
+  "cls": "DISAGREE",
+  "first": "nutrition",
+  "firstSecondary": "",
+  "second": "nutrition-vit",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b13-3",
+  "cls": "DISAGREE",
+  "first": "nutrition",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b13-4",
+  "cls": "DISAGREE",
+  "first": "haem-bleeding",
+  "firstSecondary": "",
+  "second": "nutrition-feed",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b13-5",
+  "cls": "DISAGREE",
+  "first": "nutrition",
+  "firstSecondary": "",
+  "second": "nutrition-pem",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b13-7-1",
+  "cls": "DISAGREE",
+  "first": "nutrition",
+  "firstSecondary": "",
+  "second": "nutrition-vit",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b13-7-2",
+  "cls": "DISAGREE",
+  "first": "haem-bleeding",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b13-7-3",
+  "cls": "DISAGREE",
+  "first": "nutrition",
+  "firstSecondary": "",
+  "second": "nutrition-pem",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b13-7-4",
+  "cls": "DISAGREE",
+  "first": "nutrition",
+  "firstSecondary": "",
+  "second": "allergy",
+  "secondSecondary": "nutrition-feed"
+ },
+ {
+  "id": "pedsa-b13-7-5",
+  "cls": "DISAGREE",
+  "first": "nutrition",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b14-1",
+  "cls": "DISAGREE",
+  "first": "gastroenterology",
+  "firstSecondary": "",
+  "second": "gi-diarrhoea",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b14-2",
+  "cls": "DISAGREE",
+  "first": "gastroenterology",
+  "firstSecondary": "",
+  "second": "nutrition",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b14-3",
+  "cls": "DISAGREE",
+  "first": "gastroenterology",
+  "firstSecondary": "",
+  "second": "gi-diarrhoea",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b14-4",
+  "cls": "DISAGREE",
+  "first": "gastroenterology",
+  "firstSecondary": "",
+  "second": "gi-abdopain",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b14-6",
+  "cls": "DISAGREE",
+  "first": "gastroenterology",
+  "firstSecondary": "",
+  "second": "gi-abdopain",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b14-7",
+  "cls": "DISAGREE",
+  "first": "gastroenterology",
+  "firstSecondary": "",
+  "second": "gi-diarrhoea",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b14-8",
+  "cls": "DISAGREE",
+  "first": "gastroenterology",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b14-9-5",
+  "cls": "DISAGREE",
+  "first": "gastroenterology",
+  "firstSecondary": "",
+  "second": "neurological",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b14-10-1",
+  "cls": "DISAGREE",
+  "first": "gastroenterology",
+  "firstSecondary": "",
+  "second": "gi-abdopain",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b14-10-3",
+  "cls": "DISAGREE",
+  "first": "gastroenterology",
+  "firstSecondary": "",
+  "second": "gi-abdopain",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b14-10-4",
+  "cls": "DISAGREE",
+  "first": "gastroenterology",
+  "firstSecondary": "",
+  "second": "gi-abdopain",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b14-10-5",
+  "cls": "DISAGREE",
+  "first": "gastroenterology",
+  "firstSecondary": "",
+  "second": "gi-diarrhoea",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-1",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-2",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-3",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-5",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-vesic",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-6",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-7",
+  "cls": "DISAGREE",
+  "first": "resp-pneumonia",
+  "firstSecondary": "",
+  "second": "infection-immunity",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-8",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-10-1",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-rash",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-10-3",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-rash",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-10-5",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-vesic",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-10-6",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-10-7",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-rash",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-11-1",
+  "cls": "DISAGREE",
+  "first": "respiratory",
+  "firstSecondary": "",
+  "second": "resp-pneumonia",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-11-3",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "gi-diarrhoea",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-11-4",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "resp-pneumonia",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b15-11-5",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b16-1",
+  "cls": "DISAGREE",
+  "first": "respiratory",
+  "firstSecondary": "",
+  "second": "allergy",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b16-4",
+  "cls": "DISAGREE",
+  "first": "allergy",
+  "firstSecondary": "",
+  "second": "gi-diarrhoea",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-1",
+  "cls": "DISAGREE",
+  "first": "respiratory",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-2",
+  "cls": "DISAGREE",
+  "first": "infection-vaccine",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-3",
+  "cls": "DISAGREE",
+  "first": "respiratory",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-4",
+  "cls": "DISAGREE",
+  "first": "respiratory",
+  "firstSecondary": "",
+  "second": "resp-pneumonia",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-8",
+  "cls": "DISAGREE",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "genetics",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-9",
+  "cls": "DISAGREE",
+  "first": "respiratory",
+  "firstSecondary": "",
+  "second": "infection",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-11",
+  "cls": "DISAGREE",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "respiratory",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-12-1",
+  "cls": "DISAGREE",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "genetics",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-12-2",
+  "cls": "DISAGREE",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "accidents",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-12-4",
+  "cls": "DISAGREE",
+  "first": "respiratory",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-13-3",
+  "cls": "DISAGREE",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "genetics",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-13-5",
+  "cls": "DISAGREE",
+  "first": "respiratory",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b17-14-1",
+  "cls": "DISAGREE",
+  "first": "respiratory",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b18-5",
+  "cls": "DISAGREE",
+  "first": "cardiac",
+  "firstSecondary": "",
+  "second": "emergencies",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b18-7-4",
+  "cls": "DISAGREE",
+  "first": "respiratory",
+  "firstSecondary": "",
+  "second": "cardiac",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b18-8-4",
+  "cls": "DISAGREE",
+  "first": "respiratory",
+  "firstSecondary": "",
+  "second": "cardiac",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b19-1",
+  "cls": "DISAGREE",
+  "first": "renal",
+  "firstSecondary": "",
+  "second": "renal-uti",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b19-2",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "renal-uti",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b19-3",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "renal-cakut",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b19-5",
+  "cls": "DISAGREE",
+  "first": "renal",
+  "firstSecondary": "",
+  "second": "renal-uti",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b19-9",
+  "cls": "DISAGREE",
+  "first": "renal",
+  "firstSecondary": "",
+  "second": "renal-cakut",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b19-10",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "renal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b19-11-1",
+  "cls": "DISAGREE",
+  "first": "renal",
+  "firstSecondary": "",
+  "second": "renal-uti",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b19-11-3",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "renal-uti",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b19-12-1",
+  "cls": "DISAGREE",
+  "first": "neuro-cp",
+  "firstSecondary": "",
+  "second": "renal-cakut",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b19-12-2",
+  "cls": "DISAGREE",
+  "first": "renal",
+  "firstSecondary": "",
+  "second": "renal-uti",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b19-12-3",
+  "cls": "DISAGREE",
+  "first": "renal",
+  "firstSecondary": "",
+  "second": "renal-cakut",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b19-12-4",
+  "cls": "DISAGREE",
+  "first": "renal-uti",
+  "firstSecondary": "",
+  "second": "renal-cakut",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b20-1",
+  "cls": "DISAGREE",
+  "first": "renal-cakut",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b20-2",
+  "cls": "DISAGREE",
+  "first": "renal-cakut",
+  "firstSecondary": "",
+  "second": "emergencies",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b20-3",
+  "cls": "DISAGREE",
+  "first": "renal-cakut",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b21-1",
+  "cls": "DISAGREE",
+  "first": "liver",
+  "firstSecondary": "",
+  "second": "neonatal-sepsis",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b21-2",
+  "cls": "DISAGREE",
+  "first": "liver",
+  "firstSecondary": "",
+  "second": "neonatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b21-5",
+  "cls": "DISAGREE",
+  "first": "liver",
+  "firstSecondary": "",
+  "second": "genetics",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b21-6-2",
+  "cls": "DISAGREE",
+  "first": "liver",
+  "firstSecondary": "",
+  "second": "liver-hep",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b21-6-4",
+  "cls": "DISAGREE",
+  "first": "liver",
+  "firstSecondary": "",
+  "second": "liver-hep",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-2",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "infection",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-3",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-5",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-6",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "infection-vesic",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-7",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-8",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-9-2",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-9-3",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-9-4",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-10-2",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-10-3",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-10-4",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b22-10-5",
+  "cls": "DISAGREE",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b23-2",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "haematology",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b23-3",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "haem-bleeding",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b23-7-2",
+  "cls": "DISAGREE",
+  "first": "haematology",
+  "firstSecondary": "",
+  "second": "haem-bleeding",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b23-8-3",
+  "cls": "DISAGREE",
+  "first": "infection-vaccine",
+  "firstSecondary": "",
+  "second": "haem-bleeding",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b24-1",
+  "cls": "DISAGREE",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "renal-cakut",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b24-3",
+  "cls": "DISAGREE",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "dev-nd",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b24-4",
+  "cls": "DISAGREE",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "gi-abdopain",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b24-6",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "mental",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b25-1",
+  "cls": "DISAGREE",
+  "first": "allergy",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b25-2",
+  "cls": "DISAGREE",
+  "first": "renal-uti",
+  "firstSecondary": "",
+  "second": "allergy",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b25-3",
+  "cls": "DISAGREE",
+  "first": "allergy",
+  "firstSecondary": "",
+  "second": "infection-rash",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b25-4",
+  "cls": "DISAGREE",
+  "first": "allergy",
+  "firstSecondary": "",
+  "second": "infection-rash",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b25-7",
+  "cls": "DISAGREE",
+  "first": "allergy",
+  "firstSecondary": "",
+  "second": "puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b25-8",
+  "cls": "DISAGREE",
+  "first": "allergy",
+  "firstSecondary": "",
+  "second": "infection",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b25-9",
+  "cls": "DISAGREE",
+  "first": "allergy",
+  "firstSecondary": "",
+  "second": "infection",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b25-10",
+  "cls": "DISAGREE",
+  "first": "resp-pneumonia",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b25-11-1",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "haem-bleeding",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b25-11-2",
+  "cls": "DISAGREE",
+  "first": "allergy",
+  "firstSecondary": "",
+  "second": "infection-rash",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b25-11-3",
+  "cls": "DISAGREE",
+  "first": "allergy",
+  "firstSecondary": "",
+  "second": "infection",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b25-11-4",
+  "cls": "DISAGREE",
+  "first": "allergy",
+  "firstSecondary": "",
+  "second": "infection",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b26-7",
+  "cls": "DISAGREE",
+  "first": "endocrine",
+  "firstSecondary": "",
+  "second": "endo-thyroid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b26-8",
+  "cls": "DISAGREE",
+  "first": "endocrine",
+  "firstSecondary": "",
+  "second": "endo-thyroid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b26-10",
+  "cls": "DISAGREE",
+  "first": "endocrine",
+  "firstSecondary": "",
+  "second": "genetics",
+  "secondSecondary": "perinatal"
+ },
+ {
+  "id": "pedsa-b26-12-1",
+  "cls": "DISAGREE",
+  "first": "endocrine",
+  "firstSecondary": "",
+  "second": "endo-dka",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-1",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-2",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-3",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-4",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-5",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "infection-immunity",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-6",
+  "cls": "DISAGREE",
+  "first": "haem-bleeding",
+  "firstSecondary": "",
+  "second": "allergy",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-7",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "infection",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-8",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-9",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "genetics",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-10",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-11",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "genetics",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-12-1",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-12-2",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "accidents",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-12-3",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "infection-immunity",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-13-1",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-13-2",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "neurological",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-13-3",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-13-4",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-13-5",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-14-1",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-14-2",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "nutrition-vit",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-14-3",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "normal-dev",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b28-14-4",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "normal-dev",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-1",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-2",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "genetics",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-4",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "infection",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-6",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-8",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "neuro-nm",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-9",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "genetics",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-10",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "genetics",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-13-1",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "accidents",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-13-2",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "emergencies",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-13-3",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "cardiac",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-15-2",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "neuro-cp",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-15-3",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "neuro-nm",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-15-4",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "neuro-cp",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b29-15-5",
+  "cls": "DISAGREE",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "infection",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b30-1",
+  "cls": "MISSING",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b30-2",
+  "cls": "MISSING",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b30-3",
+  "cls": "MISSING",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b30-4",
+  "cls": "MISSING",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b30-5-1",
+  "cls": "MISSING",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b30-5-2",
+  "cls": "MISSING",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b30-5-3",
+  "cls": "MISSING",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b30-5-4",
+  "cls": "MISSING",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b30-5-5",
+  "cls": "MISSING",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b31-1",
+  "cls": "MISSING",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b31-2",
+  "cls": "MISSING",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa-b31-3",
+  "cls": "MISSING",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ }
+]

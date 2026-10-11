@@ -1,0 +1,75 @@
+Table 6.1 Glasgow Coma Scale, incorporating Children’s Coma Scale
+                                   Glasgow Coma Scale                      Children’s Coma Scale
+                                   (4–15 years)                            (<4 years)
+                                   Response                                Response                              Score
+
+ Eye opening                       Spontaneous                             Spontaneous                               4
+
+
+
+
+                                                                                                                         Paediatric emergencies
+                                   To sound                                To sound                                  3
+                                   To pressure                             To pain                                   2
+                                   None                                    No response                               1
+
+ Best motor response               Obeys commands                          Obeys commands                            6
+
+                                   Localizes pain                          Localizes pain                            5
+                                   Normal flexion                          Flexion to pain                           4
+                                   Abnormal flexion                        Abnormal flexion                          3
+                                                                           (decorticate posture)
+                                   Extension                               Abnormal extension                        2
+                                                                           (decerebrate posture)
+                                   No response                             No response                               1
+
+ Best verbal response              Oriented                                Talks normally, interacts                 5
+                                   Confused                                Words                                     4
+                                   Words                                   Vocal sounds                              3
+                                   Sounds                                  Cries                                     2
+                                   No response                             No response                               1
+ A score of <8 out of 15 means that the child’s airway is at risk and will need to be maintained by a manoeuvre or
+ adjunct.
+
+
+abdomen as if in pain are characteristic of                    Paediatrics for initial fluid resuscitation in shock.
+intussusception.                                               In trauma or diabetic ketoacidosis smaller
+                                                               aliquots are given.
+B. Intussusception
+Correct. Intussusception is the most likely cause
+                                                               6.8
+of the pain and shock. Although this could be a
+                                                               E. 1600 ml
+strangulated hernia, this should be evident on
+                                                               Correct. Mohammed’s fluid requirement is
+clinical examination. Follow an Airway, Breathing,
+                                                               calculated by adding
+Circulation approach, get senior help and speak
+to the radiologist. The diagnosis might be                     • Deficit: 10% of 8 kg = 800 ml
+obvious on ultrasound.                                         • Maintenance: 100 ml/kg per 24 hours =
+                                                                 800 ml
+C. Malrotation and volvulus                                    • Continuing losses: 0 ml
+Less likely, because episodes of crying
+                                                               Total = 1600 ml
+uncontrollably with drawing of legs up into his
+                                                               See Table 6.1 in Illustrated Textbook of
+abdomen as if in pain are characteristic of
+                                                               Paediatrics for maintenance fluid requirements
+intussusception. Bile-stained vomiting is often
+                                                               at different weights.
+present in malrotation. However, the diagnosis
+must be considered.
+                                                               6.9
+D. Meckel diverticulum                                         A. Administer further anticonvulsant
+Meckel diverticulum tends to present with                      After 10 minutes it is recommended to give a
+bleeding per rectum as well as abdominal pain.                 further dose of an anticonvulsant if still having a
+Blood loss is rarely so severe to result in shock.             seizure.
+E. Strangulated hernia
+Although this could be a strangulated hernia,                  B. Check blood glucose level
+this should be evident on clinical examination.                Correct. This is the most appropriate next step
+                                                               as, if the patient is hypoglycaemic, the only
+6.7                                                            treatment to stop the seizure would be to
+B. 160 ml                                                      administer glucose. Ideally, intravenous glucose
+Correct. This is 20 ml/kg initially, repeated as               will be given but if access is not achieved, then         31
+necessary. See Fig. 6.9 in Illustrated Textbook of             glucose gel buccally.
+

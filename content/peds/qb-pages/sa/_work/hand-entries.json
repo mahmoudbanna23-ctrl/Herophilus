@@ -1,0 +1,217 @@
+{
+  "head:18.6": {
+    "reason": "options split across columns",
+    "lead": "The following is a list (A–J) of congenital heart problems encountered in children. From the list select the most likely diagnosis given the associated findings on clinical examination. The site and heart sounds and murmurs are depicted below in Fig. 18.1. For each presentation, select the most likely diagnosis.",
+    "options": [
+      "Aortic stenosis",
+      "Atrial septal defect",
+      "Coarctation of the aorta",
+      "Dextrocardia",
+      "Mitral regurgitation",
+      "Mitral stenosis",
+      "Normal",
+      "Persistent ductus arteriosus",
+      "Ventricular septal defect",
+      "Pulmonary stenosis"
+    ]
+  },
+  "head:18.7": {
+    "reason": "options split across columns; lead-in carried stray list and Fig. 18.1 text (page look 2026-10-11, p.111)",
+    "lead": "Below is a list (A–M) of possible findings on echocardiography. For each of the following clinical scenarios described select the most likely findings on echocardiography. Each option may be used once, more than once, or not at all.",
+    "options": [
+      "Aortic stenosis",
+      "Atrial septal defect",
+      "Coarctation of the aorta",
+      "Dextrocardia with situs inversus",
+      "Dextrocardia with situs solitus",
+      "Mitral regurgitation",
+      "Mitral stenosis",
+      "Normal",
+      "Persistent ductus arteriosus",
+      "Pulmonary stenosis",
+      "Tetralogy of Fallot",
+      "Transposition of the great arteries",
+      "Ventricular septal defect"
+    ]
+  },
+  "head:6.1": {
+    "reason": "options are figure labels",
+    "lead": "The paediatric team is resuscitating a 3-month-old boy who is in pulseless electrical activity. He was discovered to be blue and lifeless when his parents went to wake him in the morning. The airway has been secured and despite bag valve mask ventilation the child remains blue. Cardiac compressions are given. Where is the most appropriate position on the chest (Fig. 6.1) to do cardiac compressions? Select one answer only.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "None of the above",
+      "All of the above"
+    ]
+  },
+  "head:6.11": {
+    "reason": "option letters printed out of order",
+    "lead": "Jenny, a 3-year-old girl, was at a village fete. She suddenly developed swollen cheeks and lips and a widespread urticarial rash. She is rushed to the nearby general practice surgery, where it is noted that her breathing is very noisy. She is distressed and frightened. On auscultation she has widespread wheeze. Which medication would you give first?",
+    "options": [
+      "Intramuscular adrenaline",
+      "Oral corticosteroid",
+      "Intravenous hydrocortisone",
+      "Oral antihistamine",
+      "Intramuscular antihistamine"
+    ]
+  },
+  "pedsa-b4-6": {
+    "reason": "figure axis text leaked into stem and option E",
+    "stem": "Andrew is a 5-year-old boy. His father feels his behaviour has deteriorated and he is worried he is not hearing him all the time. He has poor articulation of the few words that he can say. Andrew goes to the audiology department and has his hearing tested. His audiogram is shown in Fig. 4.1. What type of hearing loss does he have? Select one answer only.",
+    "options": [
+      "Mild conductive hearing loss in the right ear",
+      "Mild sensorineural hearing loss in the right ear",
+      "Mixed hearing loss in the right ear",
+      "Moderate sensorineural hearing loss in the right ear",
+      "Severe conductive hearing loss in the right ear"
+    ]
+  },
+  "pedsa-b4-8": {
+    "reason": "figure axis text leaked into stem and option E",
+    "stem": "Jenny is an 8-week-old girl who was born preterm at 35 weeks’ gestation. She is seen by her general practitioner for her surveillance review. Her mother is concerned that she does not smile. Her gross motor development appears to be normal and she startles to loud noises. However, she will not follow a face or a colourful ball. The appearance of one of her eyes is shown in Fig. 4.3. The other eye has a similar appearance. She has no other medical problems. What is the likely underlying diagnosis? Select one answer only.",
+    "options": [
+      "Cataract",
+      "Conjunctivitis",
+      "Corneal trauma",
+      "Retinopathy of prematurity",
+      "Vitamin A deficiency"
+    ]
+  },
+  "pedsa-b6-2": {
+    "reason": "neighbour 6.1 text leaked into option E; stem tail figure letters",
+    "stem": "You are in the Acute Assessment Unit and see David, a 15-month-old boy, who has a fever of 38.5° C. He has had a runny nose, cough and a fever for 3 days. Since this morning he has slept and has been difficult to wake. His heart rate is raised. He has a rash (Fig. 6.2) scattered over his legs which does not disappear with pressure. Which of the following is the most likely diagnosis? Select one answer only.",
+    "options": [
+      "Acute lymphoblastic leukaemia",
+      "Henoch–Schönlein purpura",
+      "Immune thrombocytopenia",
+      "Non-accidental injury",
+      "Septicaemia"
+    ],
+    "figs": [
+      {
+        "label": "Fig. 6.2",
+        "page": 32,
+        "where": "question"
+      }
+    ]
+  },
+  "pedsa-b26-4": {
+    "reason": "next-page figure text leaked into stem and option E",
+    "stem": "Mohammed, a 12-year-old boy with type 1 diabetes mellitus, is reviewed in the outpatient clinic. In spite of maintaining good control of his diabetes, his height has remained static for 9 months. He says his appetite is alright, but he has lost interest in football, which is his passion, as he says he can’t keep up with the other boys any more. He just stays at home and watches TV, but wants to be out playing football and getting back his energy. A full blood count and C-reactive protein are normal and his HbA1C is satisfactory. What is the most likely diagnosis? Select one answer only.",
+    "options": [
+      "Anorexia nervosa",
+      "Depression",
+      "Growth hormone deficiency",
+      "Hypothyroidism",
+      "Inflammatory bowel disease"
+    ]
+  },
+  "pedsa-b7-10": {
+    "reason": "options D/E printed out of order; figure text in stem",
+    "stem": "Solomon, aged 3 years, has been found eating some of his pregnant mother’s iron tablets; up to 10 tablets are missing. Their general practitioner advised that he should be taken to hospital directly. On examination in the Emergency Department he is found to be talkative, with no obvious abnormalities. He has no other medical problems and is not normally on any medications. What would be the first investigation you would perform? Select one answer only.",
+    "options": [
+      "Abdominal X-ray",
+      "Full blood count",
+      "Clotting studies",
+      "Serum iron",
+      "Liver function tests"
+    ]
+  },
+  "pedsa-b29-11": {
+    "reason": "EEG figure channel numbers leaked into stem",
+    "stem": "Antonia, a 5-year-old girl, is seen by her general practitioner. Her mother and school teacher have noticed she has episodes where she stops her activity for a few seconds, stares blankly ahead and then resumes the activity as if she had never stopped. These episodes happen many times a day. She has no other medical problems and there is no family history of note. The EEG during an episode is shown in Fig. 29.4. Choose the most likely diagnosis. Select one answer only."
+  },
+  "pedsa-b29-12": {
+    "reason": "EEG figure channel numbers leaked into stem",
+    "stem": "Vijay is a 5-month-old infant who has been seen repeatedly by his general practitioner because of colic. His mother brings him to the Accident and Emergency department as he is having episodes of suddenly throwing his head and arms forward. These episodes occur in repetitive bursts. His mother thinks they may be something more than just colic, as he is now not smiling or supporting his head as well as he did previously. He was born at term by normal vaginal delivery and has no other medical problems. His EEG is shown in Fig. 29.5. Choose the most likely diagnosis. Select one answer only."
+  },
+  "pedsa-b4-5": {
+    "reason": "figure axis text leaked into option E",
+    "stem": "Gloria is a 19-month-old girl who presents to you in primary care. Her health visitor is concerned because she is still only babbling and says no distinct words. She is able to walk, scribbles with crayons and feeds herself with a spoon. What is the most appropriate first action? Select one answer only.",
+    "options": [
+      "Hearing test",
+      "Assessment by a team specializing in autism spectrum disorders",
+      "Reassure the health visitor",
+      "Refer to an ear, nose and throat surgeon",
+      "Refer to a paediatrician for a full developmental assessment"
+    ]
+  },
+  "pedsa-b4-7": {
+    "reason": "figure axis text leaked into option E",
+    "stem": "Cruz is a 2-year-old boy. He has recently moved to the UK from Mexico. He attends the audiology department as he has marked problems with his language development. His audiogram is shown in Fig. 4.2. What type of hearing loss does he have? Select one answer only.",
+    "options": [
+      "Mild conductive hearing loss in both ears",
+      "Mild sensorineural hearing loss in both ears",
+      "Mixed hearing loss in both ears",
+      "Severe conductive hearing loss in both ears",
+      "Severe sensorineural hearing loss in both ears"
+    ]
+  },
+  "pedsa-b7-9": {
+    "reason": "figure table text leaked into option E and stem",
+    "stem": "Jake is a 3-year-old boy. His brother spilt a pan of hot water over him and he has been extensively scalded. He is rushed to the nearest Emergency Department. His airway and breathing are satisfactory. He is tachycardiac, his capillary refill time is 4 seconds and he has a low blood pressure. He has 20% burns involving his chest, abdomen, and his right arm and hand. What is the most likely underlying cause for his shock? Select one answer only.",
+    "options": [
+      "It is secondary to the pain from his burn",
+      "Jake has shock due to loss of blood plasma, because of damage to his blood vessels secondary to his scald",
+      "Jake has shock due to loss of red blood cells, because of damage to his blood vessels secondary to his scald",
+      "Jake has shock due to vasodilation of his blood vessels, secondary to his scald",
+      "He has shock due to vasodilation of his blood vessels, secondary to infection developing in his scald"
+    ]
+  },
+  "pedsa-b18-6-1": {
+    "reason": "scenario is a figure (Fig. 18.1); stem = set lead-in + printed sub-item label",
+    "stem": "The following is a list (A–J) of congenital heart problems encountered in children. From the list select the most likely diagnosis given the associated findings on clinical examination. The site and heart sounds and murmurs are depicted below in Fig. 18.1. For each presentation, select the most likely diagnosis. 18.6.1",
+    "figs": [
+      {
+        "label": "Fig. 18.1",
+        "page": 111,
+        "where": "question"
+      }
+    ]
+  },
+  "pedsa-b18-6-2": {
+    "reason": "scenario is a figure (Fig. 18.1); stem = set lead-in + printed sub-item label",
+    "stem": "The following is a list (A–J) of congenital heart problems encountered in children. From the list select the most likely diagnosis given the associated findings on clinical examination. The site and heart sounds and murmurs are depicted below in Fig. 18.1. For each presentation, select the most likely diagnosis. 18.6.2",
+    "figs": [
+      {
+        "label": "Fig. 18.1",
+        "page": 111,
+        "where": "question"
+      }
+    ]
+  },
+  "pedsa-b18-6-3": {
+    "reason": "scenario is a figure (Fig. 18.1); stem = set lead-in + printed sub-item label",
+    "stem": "The following is a list (A–J) of congenital heart problems encountered in children. From the list select the most likely diagnosis given the associated findings on clinical examination. The site and heart sounds and murmurs are depicted below in Fig. 18.1. For each presentation, select the most likely diagnosis. 18.6.3",
+    "figs": [
+      {
+        "label": "Fig. 18.1",
+        "page": 111,
+        "where": "question"
+      }
+    ]
+  },
+  "pedsa-b18-6-4": {
+    "reason": "scenario is a figure (Fig. 18.1); stem = set lead-in + printed sub-item label",
+    "stem": "The following is a list (A–J) of congenital heart problems encountered in children. From the list select the most likely diagnosis given the associated findings on clinical examination. The site and heart sounds and murmurs are depicted below in Fig. 18.1. For each presentation, select the most likely diagnosis. 18.6.4",
+    "figs": [
+      {
+        "label": "Fig. 18.1",
+        "page": 111,
+        "where": "question"
+      }
+    ]
+  },
+  "pedsa-b18-6-5": {
+    "reason": "scenario is a figure (Fig. 18.1); stem = set lead-in + printed sub-item label",
+    "stem": "The following is a list (A–J) of congenital heart problems encountered in children. From the list select the most likely diagnosis given the associated findings on clinical examination. The site and heart sounds and murmurs are depicted below in Fig. 18.1. For each presentation, select the most likely diagnosis. 18.6.5",
+    "figs": [
+      {
+        "label": "Fig. 18.1",
+        "page": 111,
+        "where": "question"
+      }
+    ]
+  }
+}

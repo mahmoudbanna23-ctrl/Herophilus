@@ -1,0 +1,39 @@
+raw noise/anomalies: p41 9.5 (wrong chapter for page); p41 2.75 (wrong chapter for page); p41 2.5 (wrong chapter for page); p41 8.5 (wrong chapter for page); p41 3.25 (wrong chapter for page); p41 2.5 (wrong chapter for page); p41 6.5 (wrong chapter for page); p41 2.75 (wrong chapter for page); p41 5.5 (wrong chapter for page); p41 4.5 (wrong chapter for page); p41 4.5 (wrong chapter for page); p41 4.5 (wrong chapter for page); p41 3.25 (wrong chapter for page)
+total 452 sba 229 emq 223
+1 | 3 | 3 | 3 | complete
+2 | 12 | 12 | 12 | complete
+3 | 21 | 21 | 21 | complete
+4 | 26 | 26 | 26 | complete
+5 | 20 | 20 | 20 | complete
+6 | 17 | 17 | 17 | complete
+7 | 17 | 17 | 17 | complete
+8 | 9 | 9 | 9 | complete
+9 | 24 | 24 | 24 | complete
+10 | 17 | 17 | 17 | complete
+11 | 15 | 15 | 15 | complete
+12 | 8 | 8 | 8 | complete
+13 | 11 | 11 | 11 | complete
+14 | 18 | 18 | 18 | complete
+15 | 21 | 21 | 21 | complete
+16 | 4 | 4 | 4 | complete
+17 | 23 | 23 | 23 | complete
+18 | 18 | 18 | 18 | complete
+19 | 19 | 19 | 19 | complete
+20 | 4 | 4 | 4 | complete
+21 | 9 | 9 | 9 | complete
+22 | 18 | 18 | 18 | complete
+23 | 15 | 15 | 15 | complete
+24 | 10 | 10 | 10 | complete
+25 | 15 | 15 | 15 | complete
+26 | 15 | 15 | 15 | complete
+27 | 3 | 3 | 3 | complete
+28 | 23 | 23 | 23 | complete
+29 | 25 | 25 | 25 | complete
+30 | 9 | 9 | 9 | complete
+31 | 3 | 3 | 3 | complete
+key exceptions applied: 4 of 4 listed
+  pedsa-b10-8 [chapter-title-fragment-printed-in-text] PDF p.63 Hint box prints 'Chapter 10. Perinatal medicine in Illustrated Textbook of Paediatrics' inside the question text
+  pedsa-b16-3 [sba-explanation-needs-Correct.] PDF p.100 prints bold heading 'D. Urticarial' with tick and the word 'Correct' with no full stop
+  pedsa-b17-4 [sba-explanation-needs-Correct.] PDF p.106 prints 'D. Request a chest X-ray' as the only bold option heading; no 'Correct.' and no tick printed; key taken from the bold heading
+  pedsa-b26-11 [sba-explanation-needs-Correct.] PDF p.162 prints 'D. A markedly raised plasma 17α-hydroxyprogesterone' bold with tick; the word 'Correct.' is not printed; key taken from the bold heading
+OK

@@ -1,0 +1,35 @@
+13.23 · SINGLE BEST ANSWER
+
+Which statement about hepatitis B serology is correct?
+
+ A. Anti-HBs alone indicates natural infection
+ B. Anti-HBc indicates true infection and is never produced by vaccination
+ C. HBeAg indicates low infectivity
+D. HBsAg indicates immunity
+ E. IgG anti-HBc indicates acute infection
+
+Answer: B.
+
+s = sick (HBsAg = infected now; anti-HBs = immune). e = easily spread. c = core, meaning real infection —
+IgM acute, IgG past or chronic.
+
+
+
+
+13.24 · SINGLE BEST ANSWER
+
+A 9-year-old has had headaches for 8 weeks that are worse on lying down and on coughing, with
+vomiting on waking, a new convergent squint and an unsteady gait. Fundoscopy is normal. What is the
+correct next step?
+
+ A. Reassure — normal fundi exclude raised intracranial pressure
+ B. Urgent neuroimaging
+ C. Lumbar puncture
+D. Start migraine prophylaxis
+ E. Refer for refraction
+
+Answer: B.
+
+Every red flag is present, and papilloedema is a LATE sign whose absence excludes nothing. A lumbar
+puncture before imaging is dangerous when pressure may be raised.
+

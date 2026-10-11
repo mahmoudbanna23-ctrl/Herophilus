@@ -1,0 +1,35 @@
+3.5 · SINGLE BEST ANSWER
+
+A condition shows male-to-male transmission and affects both sexes equally in every generation. What
+is the inheritance pattern?
+
+ A. Autosomal recessive
+ B. Autosomal dominant
+ C. X-linked recessive
+D. X-linked dominant
+ E. Mitochondrial
+
+Answer: B.
+
+Father-to-son transmission excludes any X-linked pattern. Autosomal dominant conditions affect both
+sexes, appear in every generation, and carry a 50% risk to each offspring.
+
+
+
+
+3.6 · SINGLE BEST ANSWER
+
+Two unaffected parents have a child with cystic fibrosis. What is the risk that their next child is
+affected?
+
+ A. 1 in 2
+ B. 1 in 3
+ C. 1 in 4
+D. 2 in 3
+ E. Negligible
+
+Answer: C.
+
+Autosomal recessive: both parents are carriers, so each pregnancy carries a 1 in 4 risk of being affected
+and a 2 in 3 chance that an UNAFFECTED sibling is a carrier — a favourite second half to this question.
+

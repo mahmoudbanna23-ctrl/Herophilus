@@ -1,0 +1,99 @@
+=== n 131
+BOOK pedsa-b14-8
+  STEM: Matthew is a 3-day-old term infant who has not passed meconium since birth. On examination his abdomen is distended but the remainder of the examination is normal. An x-ray of the abdomen shows distended loops throughout the bowel, including the rectum. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Congenital hypothyroidism | Cystic fibrosis | Duodenal atresia | Hirschsprung disease | Rectal atresia
+  KEY: Hirschsprung disease
+OTHER pedhd-gastro-7
+  STEM: Matthew is a 3-day-old term infant who has not passed meconium since birth. On examination his abdomen is distended but the remainder of the examination is normal. An x-ray of the abdomen shows distended loops throughout the bowel, including the rectum. What is the most likely diagnosis?
+  OPTIONS: Congenital hypothyroidism | Cystic fibrosis | Duodenal atresia | Hirschsprung disease | Rectal atresia
+  KEY: Hirschsprung disease
+
+=== n 132
+BOOK pedsa-b14-9-1
+  STEM: The following (A–O) is a list of possible diagnoses which result in vomiting. For each of the following scenarios pick the most likely cause for the vomiting. Each answer may be used once, more than once, or not at all. James, an 8-month-old infant, is bought to the Emergency Department by his parents. He is having episodes of abdominal pain and is just recovering from an upper respiratory tract infection. He seems well in-between, but then suddenly seems to be in pain and looks pale. He has vomited several times. On questioning he has had no blood in his stool but has not opened his bowels for 24 hours.
+  OPTIONS: Appendicitis | Coeliac disease | Cyclical vomiting syndrome | Diabetic ketoacidosis | Gastroenteritis | Gastro-oesophageal reflux | Intussusception | Malrotation | Meningitis | Migraine | Pyloric stenosis | Raised intracranial pressure | Sepsis | Strangulated inguinal hernia | Urinary tract infection
+  KEY: Intussusception
+OTHER pedep-gi-8
+  STEM: James, an 8-month-old infant, is brought to the Emergency Department by his parents. He is having episodes of abdominal pain and is just recovering from an upper respiratory tract infection. He seems well in between, but then suddenly seems to be in pain and looks pale. He has vomited several times. On questioning, he has had no blood in his stool but has not opened his bowels for 24 hours. Which of the following is the most likely cause of vomiting in this patient?
+  OPTIONS: Intussusception | Diabetic ketoacidosis | Appendicitis | Coeliac disease | Pyloric stenosis
+  KEY: Intussusception
+
+=== n 133
+BOOK pedsa-b14-9-1
+  STEM: The following (A–O) is a list of possible diagnoses which result in vomiting. For each of the following scenarios pick the most likely cause for the vomiting. Each answer may be used once, more than once, or not at all. James, an 8-month-old infant, is bought to the Emergency Department by his parents. He is having episodes of abdominal pain and is just recovering from an upper respiratory tract infection. He seems well in-between, but then suddenly seems to be in pain and looks pale. He has vomited several times. On questioning he has had no blood in his stool but has not opened his bowels for 24 hours.
+  OPTIONS: Appendicitis | Coeliac disease | Cyclical vomiting syndrome | Diabetic ketoacidosis | Gastroenteritis | Gastro-oesophageal reflux | Intussusception | Malrotation | Meningitis | Migraine | Pyloric stenosis | Raised intracranial pressure | Sepsis | Strangulated inguinal hernia | Urinary tract infection
+  KEY: Intussusception
+OTHER pedhd-gastro-8
+  STEM: James, an 8-month-old infant, is bought to the Emergency Department by his parents. He is having episodes of abdominal pain and is just recovering from an upper respiratory tract infection. He seems well in-between, but then suddenly seems to be in pain and looks pale. He has vomited several times. On questioning he has had no blood in his stool but has not opened his bowels for 24 hours. Which of the following is the most likely cause of the vomiting in that patient?
+  OPTIONS: Intussusception | Diabetic ketoacidosis | Appendicitis | Coeliac disease | Pyloric stenosis
+  KEY: Intussusception
+
+=== n 134
+BOOK pedsa-b14-9-2
+  STEM: The following (A–O) is a list of possible diagnoses which result in vomiting. For each of the following scenarios pick the most likely cause for the vomiting. Each answer may be used once, more than once, or not at all. Bridgitta, an 8-year-old girl, presents to her family doctor with vomiting and abdominal pain. Her vomiting only started today and she has no diarrhoea or fever. She looks unwell and has clinical dehydration on examination and has deep rapid breathing. She is thirsty and pale. She has lost weight over the last few weeks.
+  OPTIONS: Appendicitis | Coeliac disease | Cyclical vomiting syndrome | Diabetic ketoacidosis | Gastroenteritis | Gastro-oesophageal reflux | Intussusception | Malrotation | Meningitis | Migraine | Pyloric stenosis | Raised intracranial pressure | Sepsis | Strangulated inguinal hernia | Urinary tract infection
+  KEY: Diabetic ketoacidosis
+OTHER pedep-gi-9
+  STEM: Bridgitta, an 8-year-old girl, presents to her family doctor with vomiting and abdominal pain. Her vomiting only started today and she has no diarrhoea or fever. She looks unwell and has clinical dehydration on examination and has deep, rapid breathing. She is thirsty and pale. She has lost weight over the last few weeks. Which of the following is the most likely cause of the vomiting in this patient?
+  OPTIONS: Intussusception | Diabetic ketoacidosis | Appendicitis | Coeliac disease | Pyloric stenosis
+  KEY: Diabetic ketoacidosis
+
+=== n 135
+BOOK pedsa-b14-9-2
+  STEM: The following (A–O) is a list of possible diagnoses which result in vomiting. For each of the following scenarios pick the most likely cause for the vomiting. Each answer may be used once, more than once, or not at all. Bridgitta, an 8-year-old girl, presents to her family doctor with vomiting and abdominal pain. Her vomiting only started today and she has no diarrhoea or fever. She looks unwell and has clinical dehydration on examination and has deep rapid breathing. She is thirsty and pale. She has lost weight over the last few weeks.
+  OPTIONS: Appendicitis | Coeliac disease | Cyclical vomiting syndrome | Diabetic ketoacidosis | Gastroenteritis | Gastro-oesophageal reflux | Intussusception | Malrotation | Meningitis | Migraine | Pyloric stenosis | Raised intracranial pressure | Sepsis | Strangulated inguinal hernia | Urinary tract infection
+  KEY: Diabetic ketoacidosis
+OTHER pedhd-gastro-9
+  STEM: Bridgitta, an 8-year-old girl, presents to her family doctor with vomiting and abdominal pain. Her vomiting only started today and she has no diarrhoea or fever. She looks unwell and has clinical dehydration on examination and has deep rapid breathing. She is thirsty and pale. She has lost weight over the last few weeks. Which of the following is the most likely cause of the vomiting in that patient?
+  OPTIONS: Intussusception | Diabetic ketoacidosis | Appendicitis | Coeliac disease | Pyloric stenosis
+  KEY: Diabetic ketoacidosis
+
+=== n 136
+BOOK pedsa-b14-9-3
+  STEM: The following (A–O) is a list of possible diagnoses which result in vomiting. For each of the following scenarios pick the most likely cause for the vomiting. Each answer may be used once, more than once, or not at all. Noah is 5 weeks old and has been breastfeeding well and putting on weight. However, over the last 36 hours he has been vomiting after almost every feed. The vomit goes everywhere and he then wants to feed again. All the vomits are milky. He was born at term (birth weight 3.8 kg).
+  OPTIONS: Appendicitis | Coeliac disease | Cyclical vomiting syndrome | Diabetic ketoacidosis | Gastroenteritis | Gastro-oesophageal reflux | Intussusception | Malrotation | Meningitis | Migraine | Pyloric stenosis | Raised intracranial pressure | Sepsis | Strangulated inguinal hernia | Urinary tract infection
+  KEY: Pyloric stenosis
+OTHER pedep-gi-10
+  STEM: Noah is 5 weeks old and has been breastfeeding well and putting on weight. However, over the last 36 hours, he has been vomiting after almost every feed. The vomit goes everywhere, and he then wants to feed again. All the vomits are milky. He was born at term (birth weight 3.8 kg). Which of the following is the most likely cause of the vomiting in this patient?
+  OPTIONS: Intussusception | Diabetic ketoacidosis | Appendicitis | Coeliac disease | Pyloric stenosis
+  KEY: Pyloric stenosis
+
+=== n 137
+BOOK pedsa-b14-9-3
+  STEM: The following (A–O) is a list of possible diagnoses which result in vomiting. For each of the following scenarios pick the most likely cause for the vomiting. Each answer may be used once, more than once, or not at all. Noah is 5 weeks old and has been breastfeeding well and putting on weight. However, over the last 36 hours he has been vomiting after almost every feed. The vomit goes everywhere and he then wants to feed again. All the vomits are milky. He was born at term (birth weight 3.8 kg).
+  OPTIONS: Appendicitis | Coeliac disease | Cyclical vomiting syndrome | Diabetic ketoacidosis | Gastroenteritis | Gastro-oesophageal reflux | Intussusception | Malrotation | Meningitis | Migraine | Pyloric stenosis | Raised intracranial pressure | Sepsis | Strangulated inguinal hernia | Urinary tract infection
+  KEY: Pyloric stenosis
+OTHER pedhd-gastro-10
+  STEM: Noah is 5 weeks old and has been breastfeeding well and putting on weight. However, over the last 36 hours he has been vomiting after almost every feed. The vomit goes everywhere and he then wants to feed again. All the vomits are milky. He was born at term (birth weight 3.8 kg). Which of the following is the most likely cause of the vomiting in that patient?
+  OPTIONS: Intussusception | Diabetic ketoacidosis | Appendicitis | Coeliac disease | Pyloric stenosis
+  KEY: Pyloric stenosis
+
+=== n 138
+BOOK pedsa-b14-9-4
+  STEM: The following (A–O) is a list of possible diagnoses which result in vomiting. For each of the following scenarios pick the most likely cause for the vomiting. Each answer may be used once, more than once, or not at all. Amir was born by elective caesarean section for maternal pre-eclampsia. His birthweight was 3.3 kg. He is 36 hours old. He has started to establish breastfeeding but has been vomiting after every feed. The vomit is noted by the midwife to be green. On examination his temperature is 37.2° C. His abdomen is slightly distended. The rest of his examination is normal.
+  OPTIONS: Appendicitis | Coeliac disease | Cyclical vomiting syndrome | Diabetic ketoacidosis | Gastroenteritis | Gastro-oesophageal reflux | Intussusception | Malrotation | Meningitis | Migraine | Pyloric stenosis | Raised intracranial pressure | Sepsis | Strangulated inguinal hernia | Urinary tract infection
+  KEY: Malrotation
+OTHER pedep-gi-11
+  STEM: Amir was born by elective caesarean section for maternal pre-eclampsia. His birthweight was 3.3 kg. He is 36 hours old. He has started to establish breastfeeding but has been vomiting after every feed. The vomit is noted by the midwife to be green. On examination, his temperature is 37.2°C. His abdomen is slightly distended. The rest of his examination is normal. Which of the following is the most likely cause of the vomiting in this patient?
+  OPTIONS: Intussusception | Malrotation | Meningitis | Inflammatory bowel disease | Migraine
+  KEY: Malrotation
+
+=== n 139
+BOOK pedsa-b14-9-4
+  STEM: The following (A–O) is a list of possible diagnoses which result in vomiting. For each of the following scenarios pick the most likely cause for the vomiting. Each answer may be used once, more than once, or not at all. Amir was born by elective caesarean section for maternal pre-eclampsia. His birthweight was 3.3 kg. He is 36 hours old. He has started to establish breastfeeding but has been vomiting after every feed. The vomit is noted by the midwife to be green. On examination his temperature is 37.2° C. His abdomen is slightly distended. The rest of his examination is normal.
+  OPTIONS: Appendicitis | Coeliac disease | Cyclical vomiting syndrome | Diabetic ketoacidosis | Gastroenteritis | Gastro-oesophageal reflux | Intussusception | Malrotation | Meningitis | Migraine | Pyloric stenosis | Raised intracranial pressure | Sepsis | Strangulated inguinal hernia | Urinary tract infection
+  KEY: Malrotation
+OTHER pedhd-gastro-11
+  STEM: Amir was born by elective caesarean section for maternal pre-eclampsia. His birthweight was 3.3 kg. He is 36 hours old. He has started to establish breastfeeding but has been vomiting after every feed. The vomit is noted by the midwife to be green. On examination his temperature is 37.2°C. His abdomen is slightly distended. The rest of his examination is normal. Which of the following is the most likely cause of the vomiting in that patient?
+  OPTIONS: Intussusception | Malrotation | Meningitis | Inflammatory bowel disease | Migraine
+  KEY: Malrotation
+
+=== n 140
+BOOK pedsa-b14-9-5
+  STEM: The following (A–O) is a list of possible diagnoses which result in vomiting. For each of the following scenarios pick the most likely cause for the vomiting. Each answer may be used once, more than once, or not at all. Jennifer, a 14-year-old girl, presents to the emergency department with a severe headache for the last 6 hours, mainly affecting the left side of her head. She just wants to lie still in the dark and dislikes being disturbed, but her mother is concerned as she has never had such an episode before and is normally a very lively girl who is doing well at school. She has been vomiting for the last 2 hours and cannot keep anything down and is also complaining of tummy pain. On examination she is distressed by her headache and dislikes having the examination light shone on her. Her temperature is 37.2° C. She does not have neck stiffness or papilloedema. The rest of her examination is normal.
+  OPTIONS: Appendicitis | Coeliac disease | Cyclical vomiting syndrome | Diabetic ketoacidosis | Gastroenteritis | Gastro-oesophageal reflux | Intussusception | Malrotation | Meningitis | Migraine | Pyloric stenosis | Raised intracranial pressure | Sepsis | Strangulated inguinal hernia | Urinary tract infection
+  KEY: Migraine
+OTHER pedep-gi-12
+  STEM: Jennifer, a 14-year-old girl, presents to the Emergency Department with a severe headache for the last 6 hours, mainly affecting the left side of her head. She just wants to lie still in the dark and dislikes being disturbed, but her mother is concerned as she has never had such an episode before and is normally a very lively girl who is doing well at school. She has been vomiting for the last 2 hours and cannot keep anything down and is also complaining of tummy pain. On examination, she is distressed by her headache and dislikes having the examination light shone on her. Her temperature is 37.2°C. She does not have neck stiffness or papilloedema. The rest of her examination is normal. Which of the following is the most likely cause of the vomiting in this patient?
+  OPTIONS: Intussusception | Malrotation | Meningitis | Inflammatory bowel disease | Migraine
+  KEY: Migraine

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "pedsa-b16-3",
+    "rule": "sba-explanation-needs-Correct.",
+    "evidence": "PDF p.100 prints bold heading 'D. Urticarial' with tick and the word 'Correct' with no full stop"
+  },
+  {
+    "id": "pedsa-b10-8",
+    "rule": "chapter-title-fragment-printed-in-text",
+    "evidence": "PDF p.63 Hint box prints 'Chapter 10. Perinatal medicine in Illustrated Textbook of Paediatrics' inside the question text"
+  },
+  {
+    "id": "pedsa-b17-4",
+    "rule": "sba-explanation-needs-Correct.",
+    "evidence": "PDF p.106 prints 'D. Request a chest X-ray' as the only bold option heading; no 'Correct.' and no tick printed; key taken from the bold heading"
+  },
+  {
+    "id": "pedsa-b26-11",
+    "rule": "sba-explanation-needs-Correct.",
+    "evidence": "PDF p.162 prints 'D. A markedly raised plasma 17α-hydroxyprogesterone' bold with tick; the word 'Correct.' is not printed; key taken from the bold heading"
+  }
+]

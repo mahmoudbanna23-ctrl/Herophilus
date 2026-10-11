@@ -1,0 +1,99 @@
+=== n 511
+BOOK pedsa-b4-9-2
+  STEM: Which of these investigations [A–J] would you choose to initially undertake to confirm the diagnosis of developmental delay in the children described in the following scenarios? Each investigation can be used once, more than once, or not at all. Geoffrey is a 10-month-old black infant referred to the child development clinic. His mother raised concerns because he is slower in his development than her four other children. He can sit but only if he is propped up with cushions. He is not crawling or pulling to stand. On examination he is hypotonic, with some dysmorphic features, including upslanting palpebral fissures. There is a skin fold of the upper eyelid covering the inner corner of the eye and a flat occiput. He has no other medical problems except some vitiligo. He was born at term by normal vaginal delivery. He has been slow to feed.
+  OPTIONS: Blood lactate | Chromosome karyotype | Congenital infection screen | Cranial ultrasound scan | Creatine kinase | CT or MRI scan of the brain | DNA fluorescent in situ hybridization (FISH) analysis | EEG | Maternal amino acids for raised phenylalanine | Thyroid function tests
+  KEY: Chromosome karyotype
+OTHER pedhd-devp-8
+  STEM: Geoffrey is a 10-month-old black infant referred to the child development clinic. His mother raised concerns because he is slower in his development than her four other children. He can sit but only if he is propped up with cushions. He is not crawling or pulling to stand. On examination he is hypotonic, with some dysmorphic features, including upslanting palpebral fissures. There is a skin fold of the upper eyelid covering the inner corner of the eye and a flat occiput. He has no other medical problems except some vitiligo. He was born at term by normal vaginal delivery. He has been slow to feed. Which of these investigations would you choose to initially undertake to confirm the diagnosis of developmental delay in the child described in this clinical scenario?
+  OPTIONS: Chromosome karyotype | Creatine kinase | CT or MRI scan of the brain | Congenital infection screen | Thyroid function tests
+  KEY: Chromosome karyotype
+
+=== n 512
+BOOK pedsa-b4-9-3
+  STEM: Which of these investigations [A–J] would you choose to initially undertake to confirm the diagnosis of developmental delay in the children described in the following scenarios? Each investigation can be used once, more than once, or not at all. Batar is a 1-week-old baby born at term who is seen in the ophthalmology clinic because of cataracts. He has a head circumference of 32 cm (normal range 32.5–37 cm) and weight of 2.3 kg, mild jaundice, pallor and moderate hepatosplenomegaly. He has been referred for further hearing assessment as he failed his newborn hearing test. His mother had a mild flu-like illness during pregnancy.
+  OPTIONS: Blood lactate | Chromosome karyotype | Congenital infection screen | Cranial ultrasound scan | Creatine kinase | CT or MRI scan of the brain | DNA fluorescent in situ hybridization (FISH) analysis | EEG | Maternal amino acids for raised phenylalanine | Thyroid function tests
+  KEY: Congenital infection screen
+OTHER pedep2-dp-9
+  STEM: Batar is a 1-week-old term baby seen in the ophthalmology clinic for cataracts. He has a head circumference of 32 cm (normal range 32.5–37 cm), a weight of 2.3 kg, mild jaundice, pallor, and moderate hepatosplenomegaly. He failed his newborn hearing test. His mother had a mild flu-like illness during pregnancy. Which investigation would you initially undertake to confirm the diagnosis?
+  OPTIONS: Chromosome karyotype | Creatine kinase | CT or MRI scan of the brain | Congenital infection screen | Thyroid function tests
+  KEY: Congenital infection screen
+
+=== n 513
+BOOK pedsa-b4-9-3
+  STEM: Which of these investigations [A–J] would you choose to initially undertake to confirm the diagnosis of developmental delay in the children described in the following scenarios? Each investigation can be used once, more than once, or not at all. Batar is a 1-week-old baby born at term who is seen in the ophthalmology clinic because of cataracts. He has a head circumference of 32 cm (normal range 32.5–37 cm) and weight of 2.3 kg, mild jaundice, pallor and moderate hepatosplenomegaly. He has been referred for further hearing assessment as he failed his newborn hearing test. His mother had a mild flu-like illness during pregnancy.
+  OPTIONS: Blood lactate | Chromosome karyotype | Congenital infection screen | Cranial ultrasound scan | Creatine kinase | CT or MRI scan of the brain | DNA fluorescent in situ hybridization (FISH) analysis | EEG | Maternal amino acids for raised phenylalanine | Thyroid function tests
+  KEY: Congenital infection screen
+OTHER pedhd-devp-9
+  STEM: Batar is a 1-week-old baby born at term who is seen in the ophthalmology clinic because of cataracts. He has a head circumference of 32 cm (normal range 32.5–37 cm) and weight of 2.3 kg, mild jaundice, pallor and moderate hepatosplenomegaly. He has been referred for further hearing assessment as he failed his newborn hearing test. His mother had a mild flu-like illness during pregnancy. Which of these investigations would you choose to initially undertake to confirm the diagnosis of developmental delay in the child described in this clinical scenario?
+  OPTIONS: Chromosome karyotype | Creatine kinase | CT or MRI scan of the brain | Congenital infection screen | Thyroid function tests
+  KEY: Congenital infection screen
+
+=== n 514
+BOOK pedsa-b4-9-4
+  STEM: Which of these investigations [A–J] would you choose to initially undertake to confirm the diagnosis of developmental delay in the children described in the following scenarios? Each investigation can be used once, more than once, or not at all. Dorcus, a 9-month-old infant, attends the clinic because of unusual movements. She has developed episodes of suddenly throwing her head and arms forward. These occur in repetitive bursts. She was able to sit and babble but has stopped doing so.
+  OPTIONS: Blood lactate | Chromosome karyotype | Congenital infection screen | Cranial ultrasound scan | Creatine kinase | CT or MRI scan of the brain | DNA fluorescent in situ hybridization (FISH) analysis | EEG | Maternal amino acids for raised phenylalanine | Thyroid function tests
+  KEY: EEG
+OTHER pedep2-dp-10
+  STEM: Dorcus, a 9-month-old infant, attends the clinic due to unusual movements. She has developed episodes of suddenly throwing her head and arms forward in repetitive bursts. She was able to sit and babble but has stopped doing so. Which investigation would you initially undertake to confirm the diagnosis?
+  OPTIONS: Cranial ultrasound scan | EEG | CT or MRI scan of the brain | Congenital infection screen | Thyroid function tests
+  KEY: EEG
+
+=== n 515
+BOOK pedsa-b4-9-4
+  STEM: Which of these investigations [A–J] would you choose to initially undertake to confirm the diagnosis of developmental delay in the children described in the following scenarios? Each investigation can be used once, more than once, or not at all. Dorcus, a 9-month-old infant, attends the clinic because of unusual movements. She has developed episodes of suddenly throwing her head and arms forward. These occur in repetitive bursts. She was able to sit and babble but has stopped doing so.
+  OPTIONS: Blood lactate | Chromosome karyotype | Congenital infection screen | Cranial ultrasound scan | Creatine kinase | CT or MRI scan of the brain | DNA fluorescent in situ hybridization (FISH) analysis | EEG | Maternal amino acids for raised phenylalanine | Thyroid function tests
+  KEY: EEG
+OTHER pedhd-devp-10
+  STEM: Dorcus, a 9-month-old infant, attends the clinic because of unusual movements. She has developed episodes of suddenly throwing her head and arms forward. These occur in repetitive bursts. She was able to sit and babble but has stopped doing so. Which of these investigations would you choose to initially undertake to confirm the diagnosis of developmental delay in the child described in this clinical scenario?
+  OPTIONS: Cranial ultrasound scan | EEG | CT or MRI scan of the brain | Congenital infection screen | Thyroid function tests
+  KEY: EEG
+
+=== n 516
+BOOK pedsa-b4-9-5
+  STEM: Which of these investigations [A–J] would you choose to initially undertake to confirm the diagnosis of developmental delay in the children described in the following scenarios? Each investigation can be used once, more than once, or not at all. Darren is a 3-year-old boy who has difficulty climbing stairs. He always needs to hold on to the railings or to have a supporting hand. He walked unsupported at 14 months. His development is otherwise normal. On examination the power in his legs is reduced, he is somewhat hypotonic but his reflexes are normal.
+  OPTIONS: Blood lactate | Chromosome karyotype | Congenital infection screen | Cranial ultrasound scan | Creatine kinase | CT or MRI scan of the brain | DNA fluorescent in situ hybridization (FISH) analysis | EEG | Maternal amino acids for raised phenylalanine | Thyroid function tests
+  KEY: Creatine kinase
+OTHER pedep2-dp-11
+  STEM: Darren is a 3-year-old boy who has difficulty climbing stairs. He always needs support. He walked unsupported at 14 months. His development is otherwise normal. On examination, leg power is reduced, he is hypotonic, but reflexes are normal. Which investigation would you initially undertake to confirm the diagnosis?
+  OPTIONS: Chromosome karyotype | Creatine kinase | CT or MRI scan of the brain | Congenital infection screen | Thyroid function tests
+  KEY: Creatine kinase
+
+=== n 517
+BOOK pedsa-b4-9-5
+  STEM: Which of these investigations [A–J] would you choose to initially undertake to confirm the diagnosis of developmental delay in the children described in the following scenarios? Each investigation can be used once, more than once, or not at all. Darren is a 3-year-old boy who has difficulty climbing stairs. He always needs to hold on to the railings or to have a supporting hand. He walked unsupported at 14 months. His development is otherwise normal. On examination the power in his legs is reduced, he is somewhat hypotonic but his reflexes are normal.
+  OPTIONS: Blood lactate | Chromosome karyotype | Congenital infection screen | Cranial ultrasound scan | Creatine kinase | CT or MRI scan of the brain | DNA fluorescent in situ hybridization (FISH) analysis | EEG | Maternal amino acids for raised phenylalanine | Thyroid function tests
+  KEY: Creatine kinase
+OTHER pedhd-devp-11
+  STEM: Darren is a 3-year-old boy who has difficulty climbing stairs. He always needs to hold on to the railings or to have a supporting hand. He walked unsupported at 14 months. His development is otherwise normal. On examination the power in his legs is reduced, he is somewhat hypotonic but his reflexes are normal. Which of these investigations would you choose to initially undertake to confirm the diagnosis of developmental delay in the child described in this clinical scenario?
+  OPTIONS: Chromosome karyotype | Creatine kinase | CT or MRI scan of the brain | Congenital infection screen | Thyroid function tests
+  KEY: Creatine kinase
+
+=== n 518
+BOOK pedsa-b6-1
+  STEM: The paediatric team is resuscitating a 3-month-old boy who is in pulseless electrical activity. He was discovered to be blue and lifeless when his parents went to wake him in the morning. The airway has been secured and despite bag valve mask ventilation the child remains blue. Cardiac compressions are given. Where is the most appropriate position on the chest (Fig. 6.1) to do cardiac compressions? Select one answer only.
+  OPTIONS: A | B | C | None of the above | All of the above
+  KEY: B
+OTHER pedhd-emg-1
+  STEM: The paediatric team is resuscitating a 3-monthold boy who is in pulseless electrical activity. He was discovered to be blue and lifeless when his parents went to wake him in the morning. The airway has been secured and despite bag valve mask ventilation the child remains blue. Cardiac compressions are given. Where is the most appropriate position on the chest (in the figure below) to do cardiac compressions?
+  OPTIONS: A | B | C | None of the above | All of the above
+  KEY: B
+
+=== n 519
+BOOK pedsa-b6-10
+  STEM: Seb, a 2-year-old boy, was at his cousin’s birthday party. His mother noticed that he has suddenly developed a widespread urticarial rash and has also become flushed in the face. His vital signs are normal and he has no respiratory compromise. Which medication would you give? Select one answer only.
+  OPTIONS: Intramuscular adrenaline | Intramuscular antihistamine | Intravenous hydrocortisone | Oral antihistamine | Oral corticosteroid
+  KEY: Oral antihistamine
+OTHER pedep2-res-65
+  STEM: Seb, a 2-year-old boy, was at his cousin's birthday party. His mother noticed that he has suddenly developed a widespread urticarial rash and has also become flushed in the face. His vital signs are normal, and he has no respiratory compromise. Which medication would you give?
+  OPTIONS: Intramuscular adrenaline | Intramuscular antihistamine | Intravenous hydrocortisone | Oral antihistamine | Oral corticosteroid
+  KEY: Oral antihistamine
+
+=== n 520
+BOOK pedsa-b6-10
+  STEM: Seb, a 2-year-old boy, was at his cousin’s birthday party. His mother noticed that he has suddenly developed a widespread urticarial rash and has also become flushed in the face. His vital signs are normal and he has no respiratory compromise. Which medication would you give? Select one answer only.
+  OPTIONS: Intramuscular adrenaline | Intramuscular antihistamine | Intravenous hydrocortisone | Oral antihistamine | Oral corticosteroid
+  KEY: Oral antihistamine
+OTHER pedep-emg-10
+  STEM: Seb, a 2-year-old boy, suddenly develops widespread urticaria and facial flushing at a party. Vitals are normal, and there is no respiratory compromise. What is the most appropriate medication?
+  OPTIONS: Intramuscular adrenaline | Intramuscular antihistamine | Intravenous hydrocortisone | Oral antihistamine | Oral corticosteroid
+  KEY: Oral antihistamine

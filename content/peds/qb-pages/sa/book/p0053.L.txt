@@ -1,0 +1,54 @@
+9.11                                                     9
+Gemma and Mark, who are both well, are                   G
+planning to start a family. Gemma’s older brother        k
+has cystic fibrosis. There is no history of cystic
+                                                         S
+fibrosis in Mark’s family. The family tree is shown
+in Fig. 9.4. What is the chance that they will have      A
+a child with cystic fibrosis? The carrier rate is 1 in   B
+25 in their population.                                  C
+                                                         D
+                                                         E
+                                                         9
+                                                         L
+                                                         t
+                                                         h
+                                                         m
+                                                         o
+                                                         s
+                       Gemma             Mark            s
+                                                         t
+                                                         c
+
+
+Figure 9.4
+
+
+Select one answer only.
+A.   1 in 6
+B.   1 in 37.5
+C.   1 in 100
+D.   1 in 150
+E.   1 in 2500
+
+9.12
+A mother comes to see the geneticist. She has two
+children, Robert and Elizabeth. They both suffer
+from a genetic disorder. The geneticist takes a
+history and draws the family tree (Fig. 9.5).
+
+
+
+
+Figure 9.5
+
+
+What is the likely pattern of inheritance in this        F
+disorder?                                                W
+Select one answer only.                                  S
+A.   Autosomal dominant                                  A
+B.   Autosomal recessive                                 B
+C.   Imprinting from uniparental disomy                  C
+D.   X-linked dominant                                   D
+E.   X-linked recessive                                  E
+

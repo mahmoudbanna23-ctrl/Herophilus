@@ -1,0 +1,13 @@
+items 452
+unresolved 0
+
+--- flags
+superscript/small-height text (43): 5.3 6.6 6.7 15.3 15.4 18.7.1 18.7.2 18.7.3 18.7.4 19.8 19.11.1 19.11.2 19.11.3 19.11.4 19.11.5 21.6.1 21.6.2 21.6.3 21.6.4 23.1 23.3 23.4 23.5 23.7.1 23.7.2 23.7.3 23.7.4 23.8.1 23.8.3 26.3 26.4 26.5 28.2 28.5 29.10 29.11 29.12 31.3 18.6.1 18.6.2 18.6.3 18.6.4 18.6.5
+trailing lines after options, joined into stem (10): 4.6 4.8 6.2 7.10 9.1 10.8 17.2 19.6 20.2 26.4
+figure label with no caption page (19): 4.9.4 Table 29.1 ; 4.10.1 Fig. 4.5 ; 6.7 Fig. 6.9 ; 12.3 Fig. 12.5 ; 13.3 Fig. 13.3 ; 22.7 Fig. 22.17 ; 23.1 Fig. 23.12 ; 23.5 Table 23.2 ; 23.5 Fig. 23.7 ; 23.6 Fig. 23.13 ; 23.7.1 Table 23.3 ; 23.7.4 Table 23.2 ; 25.2 Fig. 22.19 ; 26.11 Fig. 26.11 ; 26.12.1 Fig. 26.7 ; 29.11 Table 29.1 ; 29.12 Table 29.1 ; 29.15.1 Fig. 29.6 ; 31.2 Fig. 31.3
+EMQ printed answer text differs from list option (35): 4.11.5 5.5.3 5.5.6 5.5.7 5.6.4 6.13.3 6.13.4 7.13.4 7.13.5 8.5.2 8.5.3 9.15.3 10.13.1 10.13.4 13.7.2 13.7.5 15.10.5 17.14.2 17.14.3 18.8.1 19.12.1 19.12.3 22.10.4 22.10.5 23.7.4 24.8.2 26.12.1 26.12.4 28.14.1 29.13.1 29.13.4 29.13.5 29.14.1 30.5.5 18.6.3
+hand-entered heads (11): 6.1 (options are figure labels) ; 6.11 (option letters printed out of order) ; 18.7 (options split across columns; lead-in carried stray list and Fig. 18.1 text (page look 2026-10-11, p.111)) ; 18.7 (options split across columns; lead-in carried stray list and Fig. 18.1 text (page look 2026-10-11, p.111)) ; 18.7 (options split across columns; lead-in carried stray list and Fig. 18.1 text (page look 2026-10-11, p.111)) ; 18.7 (options split across columns; lead-in carried stray list and Fig. 18.1 text (page look 2026-10-11, p.111)) ; 18.6 (options split across columns) ; 18.6 (options split across columns) ; 18.6 (options split across columns) ; 18.6 (options split across columns) ; 18.6 (options split across columns)
+key exceptions (3): 16.3 (printed "Correct" without full stop) ; 17.4 ("Correct." absent from text layer; key from the one bold option heading) ; 26.11 ("Correct." absent from text layer; key from the one bold option heading)
+figure-only sub-items, scenario is a figure (5): 18.6.1 18.6.2 18.6.3 18.6.4 18.6.5
+small-height words not convertible to Unicode super/subscripts, kept as extracted (3): 1C (lowered)
+number line carries a printed label, label left out of stem (1): 20.2 (Testicular swelling)

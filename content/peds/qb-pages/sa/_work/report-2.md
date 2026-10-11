@@ -1,0 +1,3 @@
+# Stage 2 report — incomplete
+
+Current raw-input parse: 192 items (125 SBA, 67 EMQ sub-items). No chapter is verified complete. The raw checker now inventories printed number lines separately from Questions and Answers and fails for every unequal chapter count, as required. It currently exposes section-continuation and column-separated-option extraction failures; the emitted array also has option-marker validation failures. No hand repairs were made. No lost-superscript ids or doubtful printed keys were asserted. The required ten page-text reads were not completed. This is a partial state only; `_work/parse-book.log` lists unresolved items.

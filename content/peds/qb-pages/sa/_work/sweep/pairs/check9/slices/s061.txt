@@ -1,0 +1,99 @@
+=== n 61
+BOOK pedsa-b11-9-2
+  STEM: The following is a list (A–L) of diagnoses that are associated with respiratory distress in the newborn period. For each of the following scenarios pick the most likely cause of the jaundice. Each answer may be used once, more than once or not at all. For each of the scenarios, choose the most likely diagnosis from the list. Zak, a full-term male infant, with a birth weight of 3.7 kg, is born by elective caesarean section. His mother was well during pregnancy and had normal blood glucose screen. Zak becomes tachypnoeic with indrawing between his ribs at 2 hours of age. Examination is otherwise normal. A chest X-ray looks normal.
+  OPTIONS: Anaemia | Bronchopulmonary dysplasia (BPD) | Coarctation of the aorta | Diaphragmatic hernia | Heart failure | Meconium aspiration | Persistent pulmonary hypertension of the newborn | Pneumonia | Pneumothorax | Respiratory distress syndrome | Tracheo-oesphageal fistula | Transient tachypnoea of the newborn
+  KEY: Transient tachypnoea of the newborn
+OTHER pedep-neo-43
+  STEM: A full-term male infant, with a birth weight of 3.7 kg, is born by elective caesarean section. His mother was well during pregnancy and had a normal blood glucose screen. Zak becomes tachypnoeic with indrawing between his ribs at 2 hours of age. Examination is otherwise normal. A chest X-ray looks normal. Diagnosis?
+  OPTIONS: transient tachypnea of new born | pneumonia | aspiration of meconium | bronchopulmonary dysplasia | respiratory distress syndrome
+  KEY: transient tachypnea of new born
+
+=== n 62
+BOOK pedsa-b11-9-2
+  STEM: The following is a list (A–L) of diagnoses that are associated with respiratory distress in the newborn period. For each of the following scenarios pick the most likely cause of the jaundice. Each answer may be used once, more than once or not at all. For each of the scenarios, choose the most likely diagnosis from the list. Zak, a full-term male infant, with a birth weight of 3.7 kg, is born by elective caesarean section. His mother was well during pregnancy and had normal blood glucose screen. Zak becomes tachypnoeic with indrawing between his ribs at 2 hours of age. Examination is otherwise normal. A chest X-ray looks normal.
+  OPTIONS: Anaemia | Bronchopulmonary dysplasia (BPD) | Coarctation of the aorta | Diaphragmatic hernia | Heart failure | Meconium aspiration | Persistent pulmonary hypertension of the newborn | Pneumonia | Pneumothorax | Respiratory distress syndrome | Tracheo-oesphageal fistula | Transient tachypnoea of the newborn
+  KEY: Transient tachypnoea of the newborn
+OTHER pedhd-neo-13
+  STEM: Zak, a full-term male infant, with a birth weight of 3.7 kg, is born by elective caesarean section. His mother was well during pregnancy and had a normal blood glucose screen. Zak becomes tachypnoeic with indrawing between his ribs at 2 hours of age. Examination is otherwise normal. A chest X-ray looks normal. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Pneumonia | Transient tachypnoea of the newborn | Coarctation of the aorta | Respiratory distress syndrome | Anaemia
+  KEY: Transient tachypnoea of the newborn
+
+=== n 63
+BOOK pedsa-b12-1
+  STEM: Janine, a 9-month-old female infant, is seen by her family doctor because of concern that she is not growing fast enough. She is only on the 5th centile for height and 2nd centile for weight. What is the greatest influence on her growth rate at her age? Select one answer only.
+  OPTIONS: Genes | Growth hormone | Nutrition | Oestrogen | Testosterone
+  KEY: Nutrition
+OTHER pedep-gp-21
+  STEM: Janine, a 9-month-old female infant, is seen by her family doctor because of concern that she is not growing fast enough. She is on the 5th centile for height and 2nd centile for weight. What is the greatest influence on her growth rate at this age?
+  OPTIONS: Genes | Growth hormone | Nutrition | Oestrogen | Testosterone
+  KEY: Nutrition
+
+=== n 64
+BOOK pedsa-b12-1
+  STEM: Janine, a 9-month-old female infant, is seen by her family doctor because of concern that she is not growing fast enough. She is only on the 5th centile for height and 2nd centile for weight. What is the greatest influence on her growth rate at her age? Select one answer only.
+  OPTIONS: Genes | Growth hormone | Nutrition | Oestrogen | Testosterone
+  KEY: Nutrition
+OTHER pedhd-gp-1
+  STEM: Janine, a 9-month-old female infant, is seen by her family doctor because of concern that she is not growing fast enough. She is only on the 5th centile for height and 2nd centile for weight. What is the greatest influence on her growth rate at her age?
+  OPTIONS: Genes | Growth hormone | Nutrition | Oestrogen | Testosterone
+  KEY: Nutrition
+
+=== n 65
+BOOK pedsa-b12-2
+  STEM: John, a 3-year-old boy, is referred to paediatric outpatients because of concern about the development of pubic and axillary hair. His testes are 1.5 ml in size (prepubertal). His blood pressure is 100/75 mmHg. Gonadotrophin levels are normal for a prepubertal boy (undetectable) but his bone age is 5 years. What is the most likely cause of his early pubertal development? Select one answer only.
+  OPTIONS: Adrenal tumour | Brain tumour | Idiopathic precocious puberty | Prader–Willi syndrome | Testicular tumour
+  KEY: Adrenal tumour
+OTHER pedep-gp-22
+  STEM: John, a 3-year-old boy, is referred to paediatric outpatients because of concern about the development of pubic and axillary hair. His testes are 1.5 mL in size (prepubertal). His blood pressure is 100/75 mmHg. Gonadotrophin levels are undetectable (prepubertal), but his bone age is 5 years. What is the most likely cause of his early pubertal development?
+  OPTIONS: Adrenal tumor | Brain tumor | Idiopathic precocious puberty | Prader-Willi syndrome | Testicular tumor
+  KEY: Adrenal tumor
+
+=== n 66
+BOOK pedsa-b12-2
+  STEM: John, a 3-year-old boy, is referred to paediatric outpatients because of concern about the development of pubic and axillary hair. His testes are 1.5 ml in size (prepubertal). His blood pressure is 100/75 mmHg. Gonadotrophin levels are normal for a prepubertal boy (undetectable) but his bone age is 5 years. What is the most likely cause of his early pubertal development? Select one answer only.
+  OPTIONS: Adrenal tumour | Brain tumour | Idiopathic precocious puberty | Prader–Willi syndrome | Testicular tumour
+  KEY: Adrenal tumour
+OTHER pedhd-gp-2
+  STEM: John, a 3-year-old boy, is referred to paediatric outpatients because of concern about the development of pubic and axillary hair. His testes are 1.5 ml in size (prepubertal). His blood pressure is 100/75 mmHg. Gonadotrophin levels are normal for a prepubertal boy (undetectable) but his bone age is 5 years. What is the most likely cause of his early pubertal development?
+  OPTIONS: Adrenal tumour | Brain tumour | Idiopathic precocious puberty | Prader-Willi syndrome | Testicular tumour
+  KEY: Adrenal tumour
+
+=== n 67
+BOOK pedsa-b12-3
+  STEM: Chelsea, a 7-year-old girl, is brought by her mother to the paediatric clinic. Her mother is concerned about Chelsea’s early development of puberty. Chelsea has started to develop breasts and, more recently, some pubic hair. On examination she has breast development stage 3 and pubic hair development stage 2 (see Fig. 12.5, Illustrated Textbook of Paediatrics). She has not started her periods, but has had a growth spurt recently. An ultrasound of her pelvis shows multicystic ovaries and enlarging uterus. What is the most likely cause of her early pubertal development? Select one answer only.
+  OPTIONS: Brain tumour | Congenital adrenal hyperplasia | Idiopathic precocious puberty | Ovarian tumour | Turner syndrome
+  KEY: Idiopathic precocious puberty
+OTHER pedep-gp-23
+  STEM: Chelsea, a 7-year-old girl, is brought by her mother to the paediatric clinic. Her mother is concerned about early puberty. Chelsea has developed breasts and recently some pubic hair. On examination, she has breast development stage 3 and pubic hair stage 2. She has not started her periods but has had a growth spurt. A pelvic ultrasound shows multicystic ovaries and an enlarging uterus. What is the most likely cause of her early pubertal development?
+  OPTIONS: Brain tumor | Congenital adrenal hyperplasia | Idiopathic precocious puberty | Ovarian tumor | Turner syndrome
+  KEY: Idiopathic precocious puberty
+
+=== n 68
+BOOK pedsa-b12-3
+  STEM: Chelsea, a 7-year-old girl, is brought by her mother to the paediatric clinic. Her mother is concerned about Chelsea’s early development of puberty. Chelsea has started to develop breasts and, more recently, some pubic hair. On examination she has breast development stage 3 and pubic hair development stage 2 (see Fig. 12.5, Illustrated Textbook of Paediatrics). She has not started her periods, but has had a growth spurt recently. An ultrasound of her pelvis shows multicystic ovaries and enlarging uterus. What is the most likely cause of her early pubertal development? Select one answer only.
+  OPTIONS: Brain tumour | Congenital adrenal hyperplasia | Idiopathic precocious puberty | Ovarian tumour | Turner syndrome
+  KEY: Idiopathic precocious puberty
+OTHER pedhd-gp-3
+  STEM: Chelsea, a 7-year-old girl, is brought by her mother to the paediatric clinic. Her mother is concerned about Chelsea’s early development of puberty. Chelsea has started to develop breasts and, more recently, some pubic hair. On examination she has breast development stage 3 and pubic hair development stage 2. She has not started her periods, but has had a growth spurt recently. An ultrasound of her pelvis shows multicystic ovaries and enlarging uterus. What is the most likely cause of her early pubertal development?
+  OPTIONS: Brain tumour | Congenital adrenal hyperplasia | Idiopathic precocious puberty | Ovarian tumour | Turner syndrome
+  KEY: Idiopathic precocious puberty
+
+=== n 69
+BOOK pedsa-b12-4
+  STEM: Sophia, an 18-month-old girl, is brought to outpatients by her mother, who is very worried as she has developed breasts. She is otherwise well and has been growing normally. On examination she has breast development stage 3 (BIII) but no pubic or axillary hair. Her bone age is 20 months. What is the most likely cause of her early pubertal development? Select one answer only.
+  OPTIONS: Brain tumour | Congenital adrenal hyperplasia | Idiopathic precocious puberty | Premature thelarche | Premature pubarche
+  KEY: Premature thelarche
+OTHER pedep-gp-24
+  STEM: Sophia, an 18-month-old girl, is brought to outpatients by her mother, who is concerned as Sophia has developed breasts. She is otherwise well and growing normally. On examination, she has breast development stage 3 (BIII), but no pubic or axillary hair. Her bone age is 20 months. What is the most likely cause of her early pubertal development?
+  OPTIONS: Brain tumor | Congenital adrenal hyperplasia | Idiopathic precocious puberty | Premature thelarche | Premature puberty
+  KEY: Premature thelarche
+
+=== n 70
+BOOK pedsa-b12-4
+  STEM: Sophia, an 18-month-old girl, is brought to outpatients by her mother, who is very worried as she has developed breasts. She is otherwise well and has been growing normally. On examination she has breast development stage 3 (BIII) but no pubic or axillary hair. Her bone age is 20 months. What is the most likely cause of her early pubertal development? Select one answer only.
+  OPTIONS: Brain tumour | Congenital adrenal hyperplasia | Idiopathic precocious puberty | Premature thelarche | Premature pubarche
+  KEY: Premature thelarche
+OTHER pedhd-gp-4
+  STEM: Sophia, an 18-month-old girl, is brought to outpatients by her mother, who is very worried as she has developed breasts. She is otherwise well and has been growing normally. On examination she has breast development stage 3 (BIII) but no pubic or axillary hair. Her bone age is 20 months. What is the most likely cause of her early pubertal development?
+  OPTIONS: Brain tumour | Congenital adrenal hyperplasia | Idiopathic precocious puberty | Premature thelarche | Premature pubarche
+  KEY: Premature thelarche

@@ -1,0 +1,36 @@
+4.11 · SINGLE BEST ANSWER
+
+Which coagulation screen pattern fits vitamin K deficiency bleeding of the newborn?
+
+ A. Prolonged PT with normal APTT and normal platelets, correcting with vitamin K
+ B. Normal PT with prolonged APTT
+ C. Low platelets alone
+ D. Prolonged bleeding time only
+ E. Normal screen
+
+Answer: A.
+
+Vitamin K-dependent factors are II, VII, IX and X; factor VII has the shortest half-life, so the PT rises first.
+Severe deficiency prolongs both. Intramuscular vitamin K at birth prevents it, and exclusively breastfed
+babies are at greatest risk.
+
+
+
+
+4.12 · SINGLE BEST ANSWER
+
+A child with meningococcal sepsis has bleeding from venepuncture sites, low platelets, prolonged PT
+and APTT, low fibrinogen and raised D-dimers. What is the diagnosis?
+
+ A. Immune thrombocytopenic purpura
+ B. Disseminated intravascular coagulation
+ C. Haemolytic uraemic syndrome
+ D. Haemophilia
+ E. Von Willebrand disease
+
+Answer: B.
+
+DIC — consumption of platelets and clotting factors with fibrinolysis. Treat the underlying cause and
+support with fresh frozen plasma, cryoprecipitate and platelets. In HUS the clotting screen is
+NORMAL.
+

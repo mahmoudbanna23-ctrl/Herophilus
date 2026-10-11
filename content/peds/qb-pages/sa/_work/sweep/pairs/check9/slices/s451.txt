@@ -1,0 +1,99 @@
+=== n 451
+BOOK pedsa-b3-7-10
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Lizzie has just started crawling.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 8 months
+OTHER pedep2-nd-13
+  STEM: Lizzie has just started crawling. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 months | 8 months | 10 months | 12 months | 24 months
+  KEY: 8 months
+
+=== n 452
+BOOK pedsa-b3-7-10
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Lizzie has just started crawling.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 8 months
+OTHER pedhd-dev-13
+  STEM: Lizzie has just started crawling. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 months | 8 months | 10 months | 12 months | 24 months
+  KEY: 8 months
+
+=== n 453
+BOOK pedsa-b3-7-2
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Peace has just taken her first steps!
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 12 months
+OTHER pedep2-nd-5
+  STEM: Peace has just taken her first steps! At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 weeks | 6 months | 8 months | 18 months | 12 months
+  KEY: 12 months
+
+=== n 454
+BOOK pedsa-b3-7-2
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Peace has just taken her first steps!
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 12 months
+OTHER pedhd-dev-5
+  STEM: Peace has just taken her first steps! At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 weeks | 6 months | 8 months | 18 months | 12 months
+  KEY: 12 months
+
+=== n 455
+BOOK pedsa-b3-7-3
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Anthony has a friend at nursery, and they enjoy playing with toy cars together.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 3 years
+OTHER pedep2-nd-6
+  STEM: Anthony has a friend at nursery, and they enjoy playing with toy cars together. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 months | 12 months | 18 months | 24 months | 36 months
+  KEY: 36 months
+
+=== n 456
+BOOK pedsa-b3-7-3
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Anthony has a friend at nursery, and they enjoy playing with toy cars together.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 3 years
+OTHER pedhd-dev-6
+  STEM: Anthony has a friend at nursery, and they enjoy playing with toy cars together. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 months | 12 months | 18 months | 24 months | 36 months
+  KEY: 36 months
+
+=== n 457
+BOOK pedsa-b3-7-4
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Herbert can transfer objects from one hand to the other whilst sitting without support and with a straight back.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 8 months
+OTHER pedep2-nd-7
+  STEM: Herbert can transfer objects from one hand to the other while sitting without support and with a straight back. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 months | 8 months | 12 months | 18 months | 24 months
+  KEY: 8 months
+
+=== n 458
+BOOK pedsa-b3-7-4
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Herbert can transfer objects from one hand to the other whilst sitting without support and with a straight back.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 8 months
+OTHER pedhd-dev-7
+  STEM: Herbert can transfer objects from one hand to the other whilst sitting without support and with a straight back. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 months | 8 months | 12 months | 18 months | 24 months
+  KEY: 8 months
+
+=== n 459
+BOOK pedsa-b3-7-5
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Grace enjoys drawing. She has just learnt to copy drawing a square, and can build steps using blocks after being shown.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 4 years
+OTHER pedep2-nd-8
+  STEM: Grace enjoys drawing. She has just learned to copy drawing a square and can build steps using blocks after being shown. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 1 year | 2 years | 3 years | 4 years | 5 years
+  KEY: 4 years
+
+=== n 460
+BOOK pedsa-b3-7-5
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Grace enjoys drawing. She has just learnt to copy drawing a square, and can build steps using blocks after being shown.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 4 years
+OTHER pedhd-dev-8
+  STEM: Grace enjoys drawing. She has just learnt to copy drawing a square, and can build steps using blocks after being shown. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 1 year | 2 years | 3 years | 4 years | 5 years
+  KEY: 4 years

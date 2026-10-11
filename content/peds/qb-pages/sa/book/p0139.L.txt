@@ -1,0 +1,62 @@
+N.   Normal variant                                  F
+O.   Sickle cell disease                             (
+P.   Vitamin D deficiency
+Q.   Vitamin K deficiency                            2
+R.   von Willebrand disease                          B
+23.7.1                                               F
+Shlomo is a 9-day-old Jewish boy who was born        h
+in the UK. He had a religious circumcision           t
+yesterday, but the wound will not stop bleeding.     t
+On examination he is pale and has tachycardia.       A
+There is oozing of blood around the circumcision     B
+wound. A cannula is inserted and a blood             C
+cross-match sent. There is now oozing around         D
+the cannula site.                                    E
+Investigation reveals:                               F
+   • Hb (haemoglobin): 84 g/L                        G
+   • WBC (white blood cell count): 12 × 109/L        H
+   • platelet count: 322 × 109/L                     I
+   • prothrombin time: 16 seconds (control:          J
+     12–15 s)                                        K
+   • activated partial thromboplastin time: >120     2
+     seconds (control: 25–35 s)                      A
+                                                     w
+23.7.2                                               y
+Charlie, aged 5 years, is troubled by recurrent      O
+nose bleeds, the last of which took 1.5 hours to     t
+stop. He has no other medical problems. His
+examination is normal except for pale                I
+conjunctivae.
+Investigation reveals:
+   • Hb (haemoglobin): 86 g/L
+   • WBC (white blood cells): 10.2 × 109/L
+   • platelet count: 350 × 109/L
+   • prothrombin time: 16 seconds (control:
+     12–15 s)
+   • activated partial thromboplastin time: 46       2
+     seconds (control: 25–35 s)                      L
+   • fibrinogen: 2.5 g/L (normal: 2–4 g/L)           r
+   • factor VIII: just below the normal range        s
+                                                     g
+23.7.3                                               l
+Melissa is a 3-year-old girl. She presents to her    a
+general practitioner with a 3–4 week history of
+lethargy and weight loss. On examination she is      2
+pale and has widespread bruising. She has no         G
+other medical history and is not currently on any    p
+medications.                                         i
+                                                     s
+The general practitioner orders a full blood count   i
+which reveals:
+  • Hb (haemoglobin): 66 g/L
+  • WBC (white blood cell): 43.2 × 109/L
+  • platelet count: 50 × 109/L
+
+23.7.4
+Xevera is a 7-year-old Greek boy who is seen by
+a paediatrician for constipation and was noted to
+look pale. Haematological testing reveals that he    T
+is anaemic with Hb of 100 g/L (both MCV and          h
+MCHC are low). He is given a course of iron          b
+therapy but his anaemia does not improve.            p
+

@@ -1,0 +1,235 @@
+incoming 452  from sa-book.array.js
+corpus   630  from questions.peds.ep2.js
+
+! shared menu (PAIR, not a fold)pedsa-b2-7        pedep2-mf2-52       identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-2        pedep2-dp-3         identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-3        pedep2-dp-2         identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-1     pedep2-dp-12        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-1     pedep2-dp-13        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-1     pedep2-dp-14        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-1     pedep2-dp-15        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-1     pedep2-dp-16        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-1     pedep2-mf1-64       identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-2     pedep2-dp-12        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-2     pedep2-dp-13        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-2     pedep2-dp-14        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-2     pedep2-dp-15        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-2     pedep2-dp-16        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-2     pedep2-mf1-64       identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-3     pedep2-dp-12        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-3     pedep2-dp-13        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-3     pedep2-dp-14        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-3     pedep2-dp-15        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-3     pedep2-dp-16        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-3     pedep2-mf1-64       identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-4     pedep2-dp-12        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-4     pedep2-dp-13        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-4     pedep2-dp-14        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-4     pedep2-dp-15        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-4     pedep2-dp-16        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-4     pedep2-mf1-64       identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-5     pedep2-dp-12        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-5     pedep2-dp-13        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-5     pedep2-dp-14        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-5     pedep2-dp-15        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-5     pedep2-dp-16        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b4-10-5     pedep2-mf1-64       identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b6-11       pedep2-res-65       identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b9-1        pedep2-gen-14       identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b9-4        pedep2-mf1-24       identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b9-8        pedep2-gen-8        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b9-9        pedep2-gen-15       identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b17-7       pedep2-mf2-67       identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b22-4       pedep2-mal-4        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b22-5       pedep2-mal-5        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b22-7       pedep2-mal-7        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b22-8       pedep2-mal-8        identical option menu, different stem — name the discriminating token
+! shared menu (PAIR, not a fold)pedsa-b26-9       pedep2-mf3-17       identical option menu, different stem — name the discriminating token
+D near stem                   pedsa-b2-1        pedep2-ra-1         dice 0.94
+D near stem                   pedsa-b2-2        pedep2-mf2-16       dice 0.96
+D near stem                   pedsa-b2-3        pedep2-neu-33       dice 0.75
+D near stem                   pedsa-b3-1        pedep2-nd-1         dice 0.95
+D near stem                   pedsa-b3-4        pedep2-nd-2         dice 0.92
+D near stem                   pedsa-b3-5        pedep2-nd-3         dice 0.95
+D near stem                   pedsa-b4-1        pedep2-dp-1         dice 0.96
+D near stem                   pedsa-b4-2        pedep2-dp-2         dice 0.83
+D near stem                   pedsa-b4-3        pedep2-dp-3         dice 0.88
+D near stem                   pedsa-b4-5        pedep2-dp-5         dice 0.90
+D near stem                   pedsa-b4-8        pedep2-dp-6         dice 0.82
+D near stem                   pedsa-b6-10       pedep2-res-65       dice 0.94
+D near stem                   pedsa-b9-1        pedep2-gen-8        dice 0.87
+D near stem                   pedsa-b9-2        pedep2-gen-36       dice 0.77
+D near stem                   pedsa-b9-3        pedep2-gen-20       dice 0.91
+D near stem                   pedsa-b9-4        pedep2-gen-16       dice 0.92
+D near stem                   pedsa-b9-5        pedep2-gen-17       dice 0.88
+D near stem                   pedsa-b9-7        pedep2-gen-19       dice 0.76
+D near stem                   pedsa-b9-8        pedep2-gen-14       dice 0.86
+D near stem                   pedsa-b9-10       pedep2-gen-21       dice 0.96
+D near stem                   pedsa-b9-11       pedep2-gen-37       dice 0.93
+D near stem                   pedsa-b9-12       pedep2-gen-38       dice 0.81
+D near stem                   pedsa-b9-13       pedep2-gen-22       dice 0.75
+D near stem                   pedsa-b17-1       pedep2-res-1        dice 0.80
+D near stem                   pedsa-b17-2       pedep2-res-2        dice 0.80
+D near stem                   pedsa-b17-3       pedep2-res-3        dice 0.93
+D near stem                   pedsa-b17-4       pedep2-res-4        dice 0.92
+D near stem                   pedsa-b17-5       pedep2-res-5        dice 0.92
+D near stem                   pedsa-b17-6       pedep2-res-6        dice 0.94
+D near stem                   pedsa-b17-7       pedep2-res-7        dice 0.91
+D near stem                   pedsa-b17-7       pedep2-res-54       dice 0.77
+D near stem                   pedsa-b17-10      pedep2-res-9        dice 0.83
+D near stem                   pedsa-b18-1       pedep2-car-1        dice 0.94
+D near stem                   pedsa-b18-3       pedep2-car-3        dice 0.89
+D near stem                   pedsa-b18-4       pedep2-car-4        dice 0.96
+D near stem                   pedsa-b18-5       pedep2-car-5        dice 0.94
+D near stem                   pedsa-b19-1       pedep2-ren-1        dice 0.84
+D near stem                   pedsa-b19-2       pedep2-ren-2        dice 0.74
+D near stem                   pedsa-b19-2       pedep2-ren-28       dice 0.80
+D near stem                   pedsa-b19-3       pedep2-ren-3        dice 0.73
+D near stem                   pedsa-b19-5       pedep2-ren-5        dice 0.77
+D near stem                   pedsa-b19-7       pedep2-ren-7        dice 0.75
+D near stem                   pedsa-b21-1       pedep2-liv-1        dice 0.96
+D near stem                   pedsa-b21-2       pedep2-liv-2        dice 0.93
+D near stem                   pedsa-b21-3       pedep2-liv-3        dice 0.89
+D near stem                   pedsa-b21-4       pedep2-liv-4        dice 0.96
+D near stem                   pedsa-b21-5       pedep2-liv-5        dice 0.87
+D near stem                   pedsa-b22-1       pedep2-mal-1        dice 0.78
+D near stem                   pedsa-b22-2       pedep2-mal-2        dice 0.90
+D near stem                   pedsa-b23-1       pedep2-hem-22       dice 0.86
+D near stem                   pedsa-b23-1       pedep2-hem-61       dice 0.90
+D near stem                   pedsa-b23-2       pedep2-hem-23       dice 0.76
+D near stem                   pedsa-b23-3       pedep2-hem-24       dice 0.89
+D near stem                   pedsa-b23-4       pedep2-hem-25       dice 0.87
+D near stem                   pedsa-b23-6       pedep2-hem-27       dice 0.85
+D near stem                   pedsa-b26-1       pedep2-end-1        dice 0.90
+D near stem                   pedsa-b26-2       pedep2-end-2        dice 0.95
+D near stem                   pedsa-b26-3       pedep2-end-3        dice 0.92
+D near stem                   pedsa-b26-5       pedep2-end-5        dice 0.88
+D near stem                   pedsa-b26-9       pedep2-end-6        dice 0.80
+D near stem                   pedsa-b26-10      pedep2-end-7        dice 0.87
+D near stem                   pedsa-b26-11      pedep2-end-8        dice 0.88
+D near stem                   pedsa-b29-4       pedep2-neu-2        dice 0.99
+D near stem                   pedsa-b29-5       pedep2-neu-3        dice 0.97
+D near stem                   pedsa-b29-6       pedep2-neu-4        dice 0.93
+D near stem                   pedsa-b29-8       pedep2-neu-6        dice 0.95
+D near stem                   pedsa-b29-8       pedep2-neu-51       dice 0.78
+D near stem                   pedsa-b29-10      pedep2-neu-7        dice 0.90
+D near stem                   pedsa-b29-11      pedep2-neu-8        dice 0.90
+D near stem                   pedsa-b29-12      pedep2-neu-9        dice 0.94
+D near stem                   pedsa-b29-14-2    pedep2-neu-15       dice 0.84
+E cross-chapter exact         pedsa-b17-9       pedep2-res-8        stem identical, options in the same order
+F reworded + option dropped   pedsa-b2-8-1      pedep2-ra-5         dice 0.81  options 13 vs 4
+F reworded + option dropped   pedsa-b3-7-1      pedep2-nd-4         dice 0.73  options 10 vs 5
+F reworded + option dropped   pedsa-b3-7-3      pedep2-nd-6         dice 0.74  options 10 vs 5
+F reworded + option dropped   pedsa-b3-7-4      pedep2-nd-7         dice 0.75  options 10 vs 5
+F reworded + option dropped   pedsa-b3-7-5      pedep2-nd-8         dice 0.77  options 10 vs 5
+F reworded + option dropped   pedsa-b3-7-6      pedep2-nd-9         dice 0.76  options 10 vs 5
+F reworded + option dropped   pedsa-b3-7-7      pedep2-nd-10        dice 0.80  options 10 vs 5
+F reworded + option dropped   pedsa-b3-7-8      pedep2-nd-11        dice 0.72  options 10 vs 5
+F reworded + option dropped   pedsa-b3-8-1      pedep2-nd-14        dice 0.72  options 11 vs 5
+F reworded + option dropped   pedsa-b3-8-2      pedep2-nd-15        dice 0.72  options 11 vs 5
+F reworded + option dropped   pedsa-b3-8-3      pedep2-nd-16        dice 0.79  options 11 vs 5
+F reworded + option dropped   pedsa-b3-8-4      pedep2-nd-17        dice 0.78  options 11 vs 5
+F reworded + option dropped   pedsa-b4-4        pedep2-dp-4         dice 0.91  options 5 vs 4
+F reworded + option dropped   pedsa-b4-9-1      pedep2-dp-7         dice 0.87  options 10 vs 4
+F reworded + option dropped   pedsa-b4-9-1      pedep2-neu-40       dice 0.86  options 10 vs 5
+F reworded + option dropped   pedsa-b4-9-2      pedep2-dp-8         dice 0.79  options 10 vs 4
+F reworded + option dropped   pedsa-b4-9-3      pedep2-dp-9         dice 0.78  options 10 vs 5
+F reworded + option dropped   pedsa-b4-9-4      pedep2-dp-10        dice 0.76  options 10 vs 5
+F reworded + option dropped   pedsa-b9-6        pedep2-gen-18       dice 0.92  options 5 vs 4
+F reworded + option dropped   pedsa-b9-16-1     pedep2-mf2-21       dice 0.75  options 7 vs 5
+F reworded + option dropped   pedsa-b11-9-1     pedep2-mf1-73       dice 0.77  options 12 vs 5
+F reworded + option dropped   pedsa-b15-11-2    pedep2-res-64       dice 0.74  options 15 vs 5
+F reworded + option dropped   pedsa-b17-13-1    pedep2-res-10       dice 0.77  options 14 vs 5
+F reworded + option dropped   pedsa-b17-13-1    pedep2-res-13       dice 0.76  options 14 vs 5
+F reworded + option dropped   pedsa-b17-13-2    pedep2-res-14       dice 0.84  options 14 vs 5
+F reworded + option dropped   pedsa-b17-13-2    pedep2-res-56       dice 0.83  options 14 vs 5
+F reworded + option dropped   pedsa-b17-13-4    pedep2-res-15       dice 0.85  options 14 vs 5
+F reworded + option dropped   pedsa-b17-13-5    pedep2-res-16       dice 0.79  options 14 vs 4
+F reworded + option dropped   pedsa-b17-14-1    pedep2-res-17       dice 0.72  options 14 vs 5
+F reworded + option dropped   pedsa-b17-14-2    pedep2-res-18       dice 0.81  options 14 vs 4
+F reworded + option dropped   pedsa-b17-14-3    pedep2-res-19       dice 0.79  options 14 vs 5
+F reworded + option dropped   pedsa-b18-8-2     pedep2-car-15       dice 0.76  options 13 vs 5
+F reworded + option dropped   pedsa-b18-8-3     pedep2-car-16       dice 0.77  options 13 vs 5
+F reworded + option dropped   pedsa-b18-8-3     pedep2-car-59       dice 0.80  options 13 vs 5
+F reworded + option dropped   pedsa-b18-8-4     pedep2-car-17       dice 0.80  options 13 vs 5
+F reworded + option dropped   pedsa-b18-8-4     pedep2-car-35       dice 0.77  options 13 vs 5
+F reworded + option dropped   pedsa-b19-11-2    pedep2-ren-11       dice 0.72  options 8 vs 5
+F reworded + option dropped   pedsa-b19-11-2    pedep2-ren-43       dice 0.80  options 8 vs 4
+F reworded + option dropped   pedsa-b19-11-3    pedep2-ren-12       dice 0.80  options 8 vs 4
+F reworded + option dropped   pedsa-b19-11-4    pedep2-ren-35       dice 0.76  options 8 vs 4
+F reworded + option dropped   pedsa-b19-12-1    pedep2-ren-15       dice 0.77  options 10 vs 4
+F reworded + option dropped   pedsa-b19-12-2    pedep2-ren-16       dice 0.79  options 10 vs 5
+F reworded + option dropped   pedsa-b21-6-1     pedep2-liv-6        dice 0.82  options 12 vs 5
+F reworded + option dropped   pedsa-b21-6-3     pedep2-liv-8        dice 0.78  options 12 vs 5
+F reworded + option dropped   pedsa-b21-6-4     pedep2-liv-9        dice 0.75  options 12 vs 5
+F reworded + option dropped   pedsa-b23-5       pedep2-hem-26       dice 0.89  options 5 vs 4
+F reworded + option dropped   pedsa-b23-7-3     pedep2-hem-30       dice 0.79  options 18 vs 5
+F reworded + option dropped   pedsa-b23-7-4     pedep2-hem-31       dice 0.80  options 18 vs 5
+F reworded + option dropped   pedsa-b23-8-2     pedep2-hem-33       dice 0.73  options 11 vs 5
+F reworded + option dropped   pedsa-b23-8-3     pedep2-hem-34       dice 0.82  options 11 vs 4
+F reworded + option dropped   pedsa-b23-8-4     pedep2-hem-35       dice 0.85  options 11 vs 5
+F reworded + option dropped   pedsa-b23-8-5     pedep2-hem-36       dice 0.76  options 11 vs 5
+F reworded + option dropped   pedsa-b26-4       pedep2-end-4        dice 0.90  options 5 vs 4
+F reworded + option dropped   pedsa-b26-12-1    pedep2-end-9        dice 0.81  options 11 vs 5
+F reworded + option dropped   pedsa-b26-12-4    pedep2-mf2-26       dice 0.95  options 11 vs 5
+F reworded + option dropped   pedsa-b29-7       pedep2-neu-5        dice 0.97  options 5 vs 4
+F reworded + option dropped   pedsa-b29-13-1    pedep2-neu-10       dice 0.86  options 14 vs 4
+F reworded + option dropped   pedsa-b29-13-2    pedep2-neu-11       dice 0.89  options 14 vs 4
+F reworded + option dropped   pedsa-b29-13-4    pedep2-neu-12       dice 0.87  options 14 vs 4
+F reworded + option dropped   pedsa-b29-13-5    pedep2-neu-13       dice 0.88  options 14 vs 5
+F reworded + option dropped   pedsa-b29-14-1    pedep2-neu-14       dice 0.91  options 5 vs 4
+F reworded + option dropped   pedsa-b29-14-3    pedep2-neu-16       dice 0.87  options 5 vs 4
+F reworded + option dropped   pedsa-b29-15-1    pedep2-neu-17       dice 0.88  options 9 vs 5
+F reworded + option dropped   pedsa-b29-15-2    pedep2-neu-18       dice 0.86  options 9 vs 5
+F reworded + option dropped   pedsa-b29-15-3    pedep2-neu-19       dice 0.85  options 9 vs 4
+F reworded + option dropped   pedsa-b29-15-5    pedep2-neu-20       dice 0.78  options 9 vs 5
+G within-batch                pedsa-b3-7-1      pedsa-b3-7-2        dice 0.76
+G within-batch                pedsa-b3-7-1      pedsa-b3-7-9        dice 0.76
+G within-batch                pedsa-b3-7-1      pedsa-b3-7-10       dice 0.78
+G within-batch                pedsa-b3-7-2      pedsa-b3-7-3        dice 0.76
+G within-batch                pedsa-b3-7-2      pedsa-b3-7-5        dice 0.76
+G within-batch                pedsa-b3-7-2      pedsa-b3-7-6        dice 0.80
+G within-batch                pedsa-b3-7-2      pedsa-b3-7-8        dice 0.77
+G within-batch                pedsa-b3-7-2      pedsa-b3-7-9        dice 0.78
+G within-batch                pedsa-b3-7-2      pedsa-b3-7-10       dice 0.87
+G within-batch                pedsa-b3-7-3      pedsa-b3-7-9        dice 0.72
+G within-batch                pedsa-b3-7-3      pedsa-b3-7-10       dice 0.77
+G within-batch                pedsa-b3-7-5      pedsa-b3-7-10       dice 0.74
+G within-batch                pedsa-b3-7-6      pedsa-b3-7-8        dice 0.73
+G within-batch                pedsa-b3-7-6      pedsa-b3-7-10       dice 0.78
+G within-batch                pedsa-b3-7-8      pedsa-b3-7-10       dice 0.78
+G within-batch                pedsa-b3-7-9      pedsa-b3-7-10       dice 0.79
+G within-batch                pedsa-b3-8-1      pedsa-b3-8-2        dice 0.87
+G within-batch                pedsa-b3-8-1      pedsa-b3-8-3        dice 0.73
+G within-batch                pedsa-b3-8-1      pedsa-b3-8-4        dice 0.79
+G within-batch                pedsa-b3-8-1      pedsa-b3-8-5        dice 0.85
+G within-batch                pedsa-b3-8-2      pedsa-b3-8-3        dice 0.75
+G within-batch                pedsa-b3-8-2      pedsa-b3-8-4        dice 0.84
+G within-batch                pedsa-b3-8-2      pedsa-b3-8-5        dice 0.88
+G within-batch                pedsa-b3-8-3      pedsa-b3-8-5        dice 0.74
+G within-batch                pedsa-b3-8-4      pedsa-b3-8-5        dice 0.80
+G within-batch                pedsa-b5-6-1      pedsa-b5-6-2        dice 0.89
+G within-batch                pedsa-b5-6-1      pedsa-b5-6-3        dice 0.92
+G within-batch                pedsa-b5-6-1      pedsa-b5-6-4        dice 0.90
+G within-batch                pedsa-b5-6-1      pedsa-b5-6-5        dice 0.85
+G within-batch                pedsa-b5-6-2      pedsa-b5-6-3        dice 0.89
+G within-batch                pedsa-b5-6-2      pedsa-b5-6-4        dice 0.88
+G within-batch                pedsa-b5-6-2      pedsa-b5-6-5        dice 0.83
+G within-batch                pedsa-b5-6-3      pedsa-b5-6-4        dice 0.93
+G within-batch                pedsa-b5-6-3      pedsa-b5-6-5        dice 0.87
+G within-batch                pedsa-b5-6-4      pedsa-b5-6-5        dice 0.89
+G within-batch                pedsa-b10-13-3    pedsa-b10-13-5      dice 0.78
+G within-batch                pedsa-b15-3       pedsa-b15-4         dice 0.82
+G within-batch                pedsa-b18-6-1     pedsa-b18-6-2       dice 0.98
+G within-batch                pedsa-b18-6-1     pedsa-b18-6-3       dice 0.98
+G within-batch                pedsa-b18-6-1     pedsa-b18-6-4       dice 0.98
+G within-batch                pedsa-b18-6-1     pedsa-b18-6-5       dice 0.98
+G within-batch                pedsa-b18-6-2     pedsa-b18-6-3       dice 0.96
+G within-batch                pedsa-b18-6-2     pedsa-b18-6-4       dice 0.96
+G within-batch                pedsa-b18-6-2     pedsa-b18-6-5       dice 0.96
+G within-batch                pedsa-b18-6-3     pedsa-b18-6-4       dice 0.96
+G within-batch                pedsa-b18-6-3     pedsa-b18-6-5       dice 0.96
+G within-batch                pedsa-b18-6-4     pedsa-b18-6-5       dice 0.96
+G within-batch                pedsa-b18-7-3     pedsa-b18-7-4       dice 0.77
+
+230 candidates. NONE is a decision. Read both pages.

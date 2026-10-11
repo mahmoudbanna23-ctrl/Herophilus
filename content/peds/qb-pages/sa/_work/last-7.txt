@@ -1,0 +1,7 @@
+AGENTS.md loaded — Herophilus
+
+Report written under `check7/`. No pairs were read: AGENTS.md prohibits opening `app/data`, required for comparisons.
+
+Verdicts: AGREE 0; DISAGREE 0; DOUBT 0; MISSED-SAME 0.  
+Not read: 588 (577 SAME, 3 MENU, 8 DIFF), listed in `not-read.json`.  
+Ten worst pairs: unavailable—no live-array comparison was permitted.

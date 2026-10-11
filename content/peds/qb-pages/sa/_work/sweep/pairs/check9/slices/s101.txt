@@ -1,0 +1,99 @@
+=== n 101
+BOOK pedsa-b13-7-5
+  STEM: For each of the following patients with nutritional problems select the most likely diagnosis from the list (A–J) below. Each option may be used once, more than once, or not at all. Tanya, an 11-month-old Caucasian girl, is being monitored by her health visitor. Her birthweight was 2.4 kg (0.4th centile) and she has remained on the 2nd centile, now weighing 7.0 kg. Her mother is on the 5th centile and her father is on the 40th centile for height. She is well, has a good appetite and has never needed to visit her doctor. She has no abnormal signs on examination and her development is normal.
+  OPTIONS: Cow’s milk protein allergy | Cystic fibrosis | Kwashiorkor | Marasmus | Normal | Obesity | Vitamin A deficiency | Vitamin C deficiency | Vitamin D deficiency | Vitamin K deficiency
+  KEY: Normal
+OTHER pedep-gp-37
+  STEM: Laila, an 11-month-old girl, is being monitored by her health provider. Her birthweight was 2.4 kg (2nd centile) and she has remained on the 2nd centile, now weighing 7.0 kg. Her mother is on the 5th centile and her father is on the 40th centile for height. She is well, has a good appetite and has never needed to visit her doctor. She has no abnormal signs on examination and her development is normal. What is the most likely diagnosis?
+  OPTIONS: Cow milk protein allergy | Stunting | Marasmus | Normal | Vitamin D deficiency
+  KEY: Normal
+
+=== n 102
+BOOK pedsa-b13-7-5
+  STEM: For each of the following patients with nutritional problems select the most likely diagnosis from the list (A–J) below. Each option may be used once, more than once, or not at all. Tanya, an 11-month-old Caucasian girl, is being monitored by her health visitor. Her birthweight was 2.4 kg (0.4th centile) and she has remained on the 2nd centile, now weighing 7.0 kg. Her mother is on the 5th centile and her father is on the 40th centile for height. She is well, has a good appetite and has never needed to visit her doctor. She has no abnormal signs on examination and her development is normal.
+  OPTIONS: Cow’s milk protein allergy | Cystic fibrosis | Kwashiorkor | Marasmus | Normal | Obesity | Vitamin A deficiency | Vitamin C deficiency | Vitamin D deficiency | Vitamin K deficiency
+  KEY: Normal
+OTHER pedep-nut-11
+  STEM: Tanya, an 11-month-old Caucasian girl, is being monitored by her health visitor. Her birthweight was 2.4 kg (0.4th centile), and she has remained on the 2nd centile, now weighing 7.0 kg. Her mother is on the 5th centile and her father is on the 40th centile for height. She is well, has a good appetite, and has never needed to visit her doctor. She has no abnormal signs on examination, and her development is normal.Which of the following is the most likely diagnosis?
+  OPTIONS: Cystic fibrosis | Obesity | Vitamin C deficiency | Marasmus | Normal
+  KEY: Normal
+
+=== n 103
+BOOK pedsa-b13-7-5
+  STEM: For each of the following patients with nutritional problems select the most likely diagnosis from the list (A–J) below. Each option may be used once, more than once, or not at all. Tanya, an 11-month-old Caucasian girl, is being monitored by her health visitor. Her birthweight was 2.4 kg (0.4th centile) and she has remained on the 2nd centile, now weighing 7.0 kg. Her mother is on the 5th centile and her father is on the 40th centile for height. She is well, has a good appetite and has never needed to visit her doctor. She has no abnormal signs on examination and her development is normal.
+  OPTIONS: Cow’s milk protein allergy | Cystic fibrosis | Kwashiorkor | Marasmus | Normal | Obesity | Vitamin A deficiency | Vitamin C deficiency | Vitamin D deficiency | Vitamin K deficiency
+  KEY: Normal
+OTHER pedhd-nutr-11
+  STEM: Tanya, an 11-month-old Caucasian girl, is being monitored by her health visitor. Her birthweight was 2.4 kg (0.4th centile) and she has remained on the 2nd centile, now weighing 7.0 kg. Her mother is on the 5th centile and her father is on the 40th centile for height. She is well, has a good appetite and has never needed to visit her doctor. She has no abnormal signs on examination and her development is normal. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Cystic fibrosis | Obesity | Vitamin C deficiency | Marasmus | Normal
+  KEY: Normal
+
+=== n 104
+BOOK pedsa-b14-1
+  STEM: Benjamin is a 6-year-old boy who is seen in the paediatric emergency department. He has been vomiting and has had diarrhoea for 3 days. His stool is watery and foul smelling but has no blood in it. He has not been out of the UK since he was born. Examination reveals mild dehydration but is otherwise normal. What is the most likely organism that has caused his symptoms? Select one answer only.
+  OPTIONS: Campylobacter | Escherichia coli | Giardia lamblia | Rotavirus | Shigella
+  KEY: Rotavirus
+OTHER pedep-gi-1
+  STEM: Benjamin is a 6-year-old boy who is seen in the Paediatric Emergency Department. He has been vomiting and has had diarrhea for 3 days. His stool is watery and foul-smelling but contains no blood. He has never left the UK. Examination reveals mild dehydration but is otherwise normal. What is the most likely organism that has caused his symptoms?
+  OPTIONS: Campylobacter | Escherichia coli | Giardia lamblia | Rotavirus | Shigella
+  KEY: Rotavirus
+
+=== n 105
+BOOK pedsa-b14-1
+  STEM: Benjamin is a 6-year-old boy who is seen in the paediatric emergency department. He has been vomiting and has had diarrhoea for 3 days. His stool is watery and foul smelling but has no blood in it. He has not been out of the UK since he was born. Examination reveals mild dehydration but is otherwise normal. What is the most likely organism that has caused his symptoms? Select one answer only.
+  OPTIONS: Campylobacter | Escherichia coli | Giardia lamblia | Rotavirus | Shigella
+  KEY: Rotavirus
+OTHER pedhd-gastro-1
+  STEM: Benjamin is a 6-year-old boy who is seen in the paediatric emergency department. He has been vomiting and has had diarrhoea for 3 days. His stool is watery and foul smelling but has no blood in it. He has not been out of the UK since he was born. Examination reveals mild dehydration but is otherwise normal. What is the most likely organism that has caused his symptoms?
+  OPTIONS: Campylobacter | Escherichia coli | Giardia lamblia | Rotavirus | Shigella
+  KEY: Rotavirus
+
+=== n 106
+BOOK pedsa-b14-10-1
+  STEM: The following (A–M) is a list of diagnoses associated with abdominal pain in children. For each of the following scenarios select the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. Max, aged 9 years, has been brought to the Emergency Department as he is crying and saying his tummy hurts. He has had a 2-day history of fever and coryza. He has been drinking orange juice but has only eaten some jelly and yogurt. He has not opened his bowels. His temperature is 38.2° C. His throat is red and he has tender cervical lymph nodes. He is not dehydrated. He has mild generalized tenderness of the abdomen, with no guarding.
+  OPTIONS: Appendicitis | Coeliac disease | Constipation | Diabetic ketoacidosis | Functional abdominal pain | Gastroenteritis | Hepatitis | Inflammatory bowel disease | Inguinal hernia | Intussusception | Mesenteric adenitis | Pneumonia | Urinary tract infection
+  KEY: Mesenteric adenitis
+OTHER pedep-gi-13
+  STEM: Max, aged 9 years, has been brought to the Emergency Department because he is crying and saying his tummy hurts. He has had a 2-day history of fever and coryza. He has been drinking orange juice but has only eaten some jelly and yogurt. He has not opened his bowels. His temperature is 38.2°C. His throat is red and he has tender cervical lymph nodes. He is not dehydrated. He has mild generalized tenderness of the abdomen, with no guarding. Which of the following is the most likely diagnosis in this patient?
+  OPTIONS: Constipation | Pneumonia | Appendicitis | Mesenteric adenitis | Functional abdominal pain
+  KEY: Mesenteric adenitis
+
+=== n 107
+BOOK pedsa-b14-10-1
+  STEM: The following (A–M) is a list of diagnoses associated with abdominal pain in children. For each of the following scenarios select the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. Max, aged 9 years, has been brought to the Emergency Department as he is crying and saying his tummy hurts. He has had a 2-day history of fever and coryza. He has been drinking orange juice but has only eaten some jelly and yogurt. He has not opened his bowels. His temperature is 38.2° C. His throat is red and he has tender cervical lymph nodes. He is not dehydrated. He has mild generalized tenderness of the abdomen, with no guarding.
+  OPTIONS: Appendicitis | Coeliac disease | Constipation | Diabetic ketoacidosis | Functional abdominal pain | Gastroenteritis | Hepatitis | Inflammatory bowel disease | Inguinal hernia | Intussusception | Mesenteric adenitis | Pneumonia | Urinary tract infection
+  KEY: Mesenteric adenitis
+OTHER pedhd-gastro-13
+  STEM: Max, aged 9 years, has been brought to the Emergency Department as he is crying and saying his tummy hurts. He has had a 2-day history of fever and coryza. He has been drinking orange juice but has only eaten some jelly and yogurt. He has not opened his bowels. His temperature is 38.2°C. His throat is red and he has tender cervical lymph nodes. He is not dehydrated. He has mild generalized tenderness of the abdomen, with no guarding. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Constipation | Pneumonia | Appendicitis | Mesenteric adenitis | Functional abdominal pain
+  KEY: Mesenteric adenitis
+
+=== n 108
+BOOK pedsa-b14-10-2
+  STEM: The following (A–M) is a list of diagnoses associated with abdominal pain in children. For each of the following scenarios select the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. Pete, aged 4 years, is brought by his mother to the Emergency Department as he is crying and saying his tummy hurts. He has had a 2-day history of fever, coryza and cough. He is sitting quietly on his mother’s lap, and is reluctant to play. He has a temperature of 38.2° C and a respiratory rate of 50 beats/min. On examination, his throat is red and he has tender cervical lymph nodes. He complains of tenderness on palpation of the right upper quadrant of the abdomen.
+  OPTIONS: Appendicitis | Coeliac disease | Constipation | Diabetic ketoacidosis | Functional abdominal pain | Gastroenteritis | Hepatitis | Inflammatory bowel disease | Inguinal hernia | Intussusception | Mesenteric adenitis | Pneumonia | Urinary tract infection
+  KEY: Pneumonia
+OTHER pedep-gi-14
+  STEM: Pete, aged 4 years, is brought by his mother to the Emergency Department because he is crying and saying his tummy hurts. He has had a 2-day history of fever, coryza, and cough. He is sitting quietly on his mother's lap and is reluctant to play. He has a temperature of 38.2°C and a respiratory rate of 50 breaths/min. On examination, his throat is red and he has tender cervical lymph nodes. He complains of tenderness on palpation of the right upper quadrant of the abdomen. Which of the following is the most likely diagnosis in this patient?
+  OPTIONS: Constipation | Pneumonia | Appendicitis | Mesenteric adenitis | Functional abdominal pain
+  KEY: Pneumonia
+
+=== n 109
+BOOK pedsa-b14-10-2
+  STEM: The following (A–M) is a list of diagnoses associated with abdominal pain in children. For each of the following scenarios select the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. Pete, aged 4 years, is brought by his mother to the Emergency Department as he is crying and saying his tummy hurts. He has had a 2-day history of fever, coryza and cough. He is sitting quietly on his mother’s lap, and is reluctant to play. He has a temperature of 38.2° C and a respiratory rate of 50 beats/min. On examination, his throat is red and he has tender cervical lymph nodes. He complains of tenderness on palpation of the right upper quadrant of the abdomen.
+  OPTIONS: Appendicitis | Coeliac disease | Constipation | Diabetic ketoacidosis | Functional abdominal pain | Gastroenteritis | Hepatitis | Inflammatory bowel disease | Inguinal hernia | Intussusception | Mesenteric adenitis | Pneumonia | Urinary tract infection
+  KEY: Pneumonia
+OTHER pedep-mf2-56
+  STEM: A 4-year-old boy is brought by his mother to the Emergency Department as he is crying and saying his tummy hurts. He has had a 2-day history of fever, coryza, and cough. He is sitting quietly on his mother's lap and is reluctant to play. He has a temperature of 38.2 °C and a respiratory rate of 50 breaths/min. He complains of pain and tenderness on palpation of the right upper quadrant of the abdomen. What is the most likely cause of abdominal pain?
+  OPTIONS: Appendicitis | Functional abdominal pain | Hepatitis | Mesenteric adenitis | Pneumonia
+  KEY: Pneumonia
+
+=== n 110
+BOOK pedsa-b14-10-2
+  STEM: The following (A–M) is a list of diagnoses associated with abdominal pain in children. For each of the following scenarios select the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. Pete, aged 4 years, is brought by his mother to the Emergency Department as he is crying and saying his tummy hurts. He has had a 2-day history of fever, coryza and cough. He is sitting quietly on his mother’s lap, and is reluctant to play. He has a temperature of 38.2° C and a respiratory rate of 50 beats/min. On examination, his throat is red and he has tender cervical lymph nodes. He complains of tenderness on palpation of the right upper quadrant of the abdomen.
+  OPTIONS: Appendicitis | Coeliac disease | Constipation | Diabetic ketoacidosis | Functional abdominal pain | Gastroenteritis | Hepatitis | Inflammatory bowel disease | Inguinal hernia | Intussusception | Mesenteric adenitis | Pneumonia | Urinary tract infection
+  KEY: Pneumonia
+OTHER pedhd-gastro-14
+  STEM: Pete, aged 4 years, is brought by his mother to the Emergency Department as he is crying and saying his tummy hurts. He has had a 2-day history of fever, coryza and cough. He is sitting quietly on his mother's lap, and is reluctant to play. He has a temperature of 38.2°C and a respiratory rate of 50 beats/min. On examination, his throat is red and he has tender cervical lymph nodes. He complains of tenderness on palpation of the right upper quadrant of the abdomen. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Constipation | Pneumonia | Appendicitis | Mesenteric adenitis | Functional abdominal pain
+  KEY: Pneumonia

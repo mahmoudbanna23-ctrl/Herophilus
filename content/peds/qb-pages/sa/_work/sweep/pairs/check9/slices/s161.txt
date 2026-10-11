@@ -1,0 +1,99 @@
+=== n 161
+BOOK pedsa-b15-11-3
+  STEM: For each of the following patients with an infectious disease, select the NEXT step in management from the list (A–O) below. Each option may be used once, more than once, or not at all. Mustafa, an 18-month-old boy, presents with 3 days of vomiting and diarrhoea. The vomiting has now settled but he continues to have loose stools (he had about eight loose stools in the last 24 hours). His mucous membranes are dry, he has sunken eyes and appears lethargic. His skin turgor is reduced. His extremities are warm and capillary refill time is normal.
+  OPTIONS: Antipyretic/analgesia | Combined anti-tuberculosis medication | Highly active antiretroviral therapy | Intravenous aciclovir | Intravenous antibiotics | Intravenous bolus of 20 ml/kg of normal saline | Intravenous immunoglobulin | Intravenous quinine | Nasogastric rehydration therapy | Oral antibiotic | Oral rehydration solution | Oral ACT (artemisinin-based combination therapy) | Oxygen | Topical antibiotic | Topical emollient
+  KEY: Oral rehydration solution
+OTHER pedhd-inf-15
+  STEM: Mustafa, an 18-month-old boy, presents with 3 days of vomiting and diarrhoea. The vomiting has now settled but he continues to have loose stools — he had about eight loose stools in the last 24 hours. His mucous membranes are dry, he has sunken eyes and appears lethargic. His skin turgor is reduced. His extremities are warm and capillary refill time is normal. Which of the following is the most appropriate NEXT step in the management of this patient?
+  OPTIONS: Oral rehydration solution | Nasogastric rehydration therapy | Intravenous bolus of 20 ml/kg of normal saline | Intravenous antibiotics | Oral antibiotic
+  KEY: Oral rehydration solution
+
+=== n 162
+BOOK pedsa-b15-11-4
+  STEM: For each of the following patients with an infectious disease, select the NEXT step in management from the list (A–O) below. Each option may be used once, more than once, or not at all. Josie is 3 years old. She has had a cough and fever for 6 days. On examination her oxygen saturation is 92% in air. Her temperature is 39° C and she has a respiratory rate of 50 breaths/ minute. She has marked indrawing between her ribs and is using her accessory muscles of respiration. On percussion there is ‘stony dullness’ at her left base and on auscultation decreased air entry at the left base.
+  OPTIONS: Antipyretic/analgesia | Combined anti-tuberculosis medication | Highly active antiretroviral therapy | Intravenous aciclovir | Intravenous antibiotics | Intravenous bolus of 20 ml/kg of normal saline | Intravenous immunoglobulin | Intravenous quinine | Nasogastric rehydration therapy | Oral antibiotic | Oral rehydration solution | Oral ACT (artemisinin-based combination therapy) | Oxygen | Topical antibiotic | Topical emollient
+  KEY: Intravenous antibiotics
+OTHER pedhd-inf-16
+  STEM: Josie is 3 years old. She has had a cough and fever for 6 days. On examination her oxygen saturation is 92% in air. Her temperature is 39°C and she has a respiratory rate of 50 breaths/minute. She has marked indrawing between her ribs and is using her accessory muscles of respiration. On percussion there is ‘stony dullness’ at her left base and on auscultation decreased air entry at the left base. Which of the following is the most appropriate NEXT step in the management of this patient?
+  OPTIONS: Intravenous antibiotics | Oral antibiotics | Intravenous immunoglobulin | Highly active antiretroviral therapy | Antipyretic/analgesia
+  KEY: Intravenous antibiotics
+
+=== n 163
+BOOK pedsa-b15-11-5
+  STEM: For each of the following patients with an infectious disease, select the NEXT step in management from the list (A–O) below. Each option may be used once, more than once, or not at all. Michael is a 2-year-old boy whose parents were born in Taiwan. He has been unwell now for 6 days with a fever, sore eyes and throat. He is noted to have red eyes, an injected throat and cervical lymphadenopathy. He also has a generalized maculopapular rash and the skin is peeling from his hands and feet.
+  OPTIONS: Antipyretic/analgesia | Combined anti-tuberculosis medication | Highly active antiretroviral therapy | Intravenous aciclovir | Intravenous antibiotics | Intravenous bolus of 20 ml/kg of normal saline | Intravenous immunoglobulin | Intravenous quinine | Nasogastric rehydration therapy | Oral antibiotic | Oral rehydration solution | Oral ACT (artemisinin-based combination therapy) | Oxygen | Topical antibiotic | Topical emollient
+  KEY: Intravenous immunoglobulin
+OTHER pedep-mf1-25
+  STEM: A 2-year-old boy has been unwell for 6 days with a fever, sore eyes, and throat. He is noted to have red eyes, an injected throat, and cervical lymphadenopathy. He also has a generalized maculopapular rash, and the skin is peeling from his hands and feet. What is the next best step in management?
+  OPTIONS: Antipyretic/analgesia | Highly active antiretroviral therapy | Intravenous antibiotics | Intravenous immunoglobulin | Oral antibiotic
+  KEY: Intravenous immunoglobulin
+
+=== n 164
+BOOK pedsa-b15-2
+  STEM: What investigation is most likely to give a definitive diagnosis in Joseph’s case? Select one answer only.
+  OPTIONS: Blood culture | Lumbar puncture | Polymerase chain reaction (PCR) | Pernasal swab | Throat swab
+  KEY: Polymerase chain reaction (PCR)
+OTHER pedep-inf-54
+  STEM: What investigation is most likely to give a definitive diagnosis in Joseph's case? Select one answer only.
+  OPTIONS: Blood culture | Lumbar puncture | Polymerase chain reaction (PCR) | Pernasal swab | Throat swab
+  KEY: Polymerase chain reaction (PCR)
+
+=== n 165
+BOOK pedsa-b15-2
+  STEM: What investigation is most likely to give a definitive diagnosis in Joseph’s case? Select one answer only.
+  OPTIONS: Blood culture | Lumbar puncture | Polymerase chain reaction (PCR) | Pernasal swab | Throat swab
+  KEY: Polymerase chain reaction (PCR)
+OTHER pedhd-inf-2
+  STEM: Joseph is 3 years old and was admitted 24 hours after becoming irritable, vomiting and febrile, with a purpuric rash over his upper limbs and abdomen. He had been started on oral amoxicillin by his general practitioner earlier that day. What investigation is most likely to give a definitive diagnosis?
+  OPTIONS: Blood culture | Lumbar puncture | Polymerase chain reaction (PCR) | Pernasal swab | Throat swab
+  KEY: Polymerase chain reaction (PCR)
+
+=== n 166
+BOOK pedsa-b15-3
+  STEM: Henry is 4 years old and has a 3 day history of fever. He presents to the Accident and Emergency department with a headache. A lumbar puncture is performed. You receive the following result from the laboratory: • Cerebrospinal fluid (CSF) microscopy: • 250 red blood cells/mm³ • 1200 neutrophils/mm³ • 250 lymphocytes/mm³ • CSF protein: 0.6 g/L • CSF glucose: 2.1 mmol/L • blood glucose: 7.2 mmol/L What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Bacterial meningitis | Blood-stained tap | Normal lumbar puncture result | Tuberculosis meningitis | Viral meningitis
+  KEY: Bacterial meningitis
+OTHER pedep-inf-55
+  STEM: Henry is 4 years old and has a 3-day history of fever. He presents to the Emergency Department with a headache. A lumbar puncture is performed with the following CSF result: 250 RBCs/mm³, 1200 neutrophils/mm³, 250 lymphocytes/mm³, Protein: 0.6 g/L, CSF glucose: 2.1 mmol/L, Blood glucose: 7.2 mmol/L. What is the most likely diagnosis?
+  OPTIONS: Bacterial meningitis | Blood-stained tap | Normal lumbar puncture result | Tuberculosis meningitis | Viral meningitis
+  KEY: Bacterial meningitis
+
+=== n 167
+BOOK pedsa-b15-3
+  STEM: Henry is 4 years old and has a 3 day history of fever. He presents to the Accident and Emergency department with a headache. A lumbar puncture is performed. You receive the following result from the laboratory: • Cerebrospinal fluid (CSF) microscopy: • 250 red blood cells/mm³ • 1200 neutrophils/mm³ • 250 lymphocytes/mm³ • CSF protein: 0.6 g/L • CSF glucose: 2.1 mmol/L • blood glucose: 7.2 mmol/L What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Bacterial meningitis | Blood-stained tap | Normal lumbar puncture result | Tuberculosis meningitis | Viral meningitis
+  KEY: Bacterial meningitis
+OTHER pedhd-inf-3
+  STEM: Henry is 4 years old and has a 3 day history of fever. He presents to the Accident and Emergency department with a headache. A lumbar puncture is performed. You receive the following result from the laboratory: | | | |---|---| | Red blood cells | 250 /mm³ | | Neutrophils | 1200 /mm³ | | Lymphocytes | 250 /mm³ | | CSF protein | 0.6 g/L | | CSF glucose | 2.1 mmol/L | | Blood glucose | 7.2 mmol/L | What is the most likely diagnosis?
+  OPTIONS: Bacterial meningitis | Blood-stained tap | Normal lumbar puncture result | Tuberculosis meningitis | Viral meningitis
+  KEY: Bacterial meningitis
+
+=== n 168
+BOOK pedsa-b15-4
+  STEM: Graham is 5 years old and has had an intermittent fever for 4 weeks. He presents to the Emergency Department with a headache and neck stiffness. A CT scan is performed, which is normal. A lumbar puncture is performed. You receive the following result from the laboratory: • cerebrospinal fluid (CSF) microscopy: 95 lymphocytes, 10 neutrophils and 0 red blood cells/mm³ • CSF protein: 2.2 g/L • CSF glucose: 1.3 mmol/L • blood glucose: 6.3 mmol/L What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Ascending polyneuritis (Guillain–Barré syndrome) | Bacterial meningitis | Blood-stained tap | Tuberculosis meningitis | Viral meningitis
+  KEY: Tuberculosis meningitis
+OTHER pedep-inf-56
+  STEM: Graham, 5 years old, presents with a 4-week history of intermittent fever, headache, and neck stiffness. CT scan is normal. CSF results: 95 lymphocytes/mm³, 10 neutrophils/mm³, 0 RBCs/mm³, Protein: 2.2 g/L, CSF glucose: 1.3 mmol/L, Blood glucose: 6.3 mmol/L. What is the most likely diagnosis?
+  OPTIONS: Ascending polyneuritis (Guillain-Barré syndrome) | Bacterial meningitis | Blood-stained tap | Tuberculosis meningitis | Viral meningitis
+  KEY: Tuberculosis meningitis
+
+=== n 169
+BOOK pedsa-b15-4
+  STEM: Graham is 5 years old and has had an intermittent fever for 4 weeks. He presents to the Emergency Department with a headache and neck stiffness. A CT scan is performed, which is normal. A lumbar puncture is performed. You receive the following result from the laboratory: • cerebrospinal fluid (CSF) microscopy: 95 lymphocytes, 10 neutrophils and 0 red blood cells/mm³ • CSF protein: 2.2 g/L • CSF glucose: 1.3 mmol/L • blood glucose: 6.3 mmol/L What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Ascending polyneuritis (Guillain–Barré syndrome) | Bacterial meningitis | Blood-stained tap | Tuberculosis meningitis | Viral meningitis
+  KEY: Tuberculosis meningitis
+OTHER pedep-mf1-36
+  STEM: A 5-year-old boy has had an intermittent fever for 4 weeks. He presents to the Emergency Department with a headache and neck stiffness. A CT scan is performed, which is normal. A lumbar puncture is performed, and you receive the following results: Cerebrospinal fluid (CSF) microscopy: 95 lymphocytes, 10 neutrophils, and 0 red blood cells/mm3. CSF protein: 220 mg/dl. CSF glucose: 24 mg/dl. Blood glucose: 149 mg/dl. What is the most likely diagnosis?
+  OPTIONS: Guillain-Barré syndrome | Bacterial meningitis | Blood-stained tap | Tuberculosis meningitis | Viral meningitis
+  KEY: Tuberculosis meningitis
+
+=== n 170
+BOOK pedsa-b15-4
+  STEM: Graham is 5 years old and has had an intermittent fever for 4 weeks. He presents to the Emergency Department with a headache and neck stiffness. A CT scan is performed, which is normal. A lumbar puncture is performed. You receive the following result from the laboratory: • cerebrospinal fluid (CSF) microscopy: 95 lymphocytes, 10 neutrophils and 0 red blood cells/mm³ • CSF protein: 2.2 g/L • CSF glucose: 1.3 mmol/L • blood glucose: 6.3 mmol/L What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Ascending polyneuritis (Guillain–Barré syndrome) | Bacterial meningitis | Blood-stained tap | Tuberculosis meningitis | Viral meningitis
+  KEY: Tuberculosis meningitis
+OTHER pedhd-inf-4
+  STEM: Graham is 5 years old and has had an intermittent fever for 4 weeks. He presents to the Emergency Department with a headache and neck stiffness. A CT scan is performed, which is normal. A lumbar puncture is performed. You receive the following result from the laboratory: | | | |---|---| | Lymphocytes | 95 /mm³ | | Neutrophils | 10 /mm³ | | Red blood cells | 0 /mm³ | | CSF protein | 2.2 g/L | | CSF glucose | 1.3 mmol/L | | Blood glucose | 6.3 mmol/L | What is the most likely diagnosis?
+  OPTIONS: Ascending polyneuritis (Guillain–Barré syndrome) | Bacterial meningitis | Blood-stained tap | Tuberculosis meningitis | Viral meningitis
+  KEY: Tuberculosis meningitis

@@ -1,0 +1,36 @@
+9.21 · SINGLE BEST ANSWER
+
+A 5-year-old contact of a smear-positive adult has a Mantoux induration of 8 mm. He had BCG as a
+neonate and is asymptomatic. What does this mean under UK (NICE) guidance?
+
+ A. The test is positive because of BCG and can be ignored
+ B. The test is positive; he should be assessed and given chemoprophylaxis for latent TB if active
+    disease is excluded
+ C. The cut-off is 15 mm in BCG-vaccinated children
+D. Only the erythema should be measured
+ E. He needs no follow-up as he is well
+
+Answer: B.
+
+≥5 mm induration is positive regardless of BCG in the UK, and only the induration is measured. Latent
+TB is treated with rifampicin + isoniazid for 3 months or isoniazid alone for 6 months.
+
+
+
+
+9.22 · SINGLE BEST ANSWER
+
+A 4-month-old born to an HIV-positive mother needs testing. Which test is appropriate?
+
+ A. HIV antibody test
+ B. HIV DNA PCR or viral load assay
+ C. CD4 count alone
+D. Western blot
+ E. Wait until 18 months
+
+Answer: B.
+
+Maternal IgG crosses the placenta, so antibody tests show exposure, not infection, until 18 months.
+Infection is excluded by at least two negative viral genome tests after stopping post-exposure prophylaxis,
+confirmed by loss of maternal antibody after 18 months.
+

@@ -1,0 +1,99 @@
+=== n 481
+BOOK pedsa-b4-1
+  STEM: Jonathan is 4 years old and lives in a small village in southern England. He attends a paediatric outpatient clinic with his grandmother who is his legal guardian. She is concerned that he only seems to like to play with his toy train and insists on watching the same DVD every night before he goes to bed. He attends nursery where he plays with the toys but not with other children. His behaviour can be very difficult to manage at times. He does not say any words, whereas the grandmother’s children were speaking in sentences at his age. On examination you notice he does not make eye contact with you and pushes his toy train back and forth on the floor. The rest of his examination is normal. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Asperger syndrome | Attention deficit hyperactivity disorder | Autism spectrum disorder | Developmental coordination disorder (also known as dyspraxia) | Expressive language disorder
+  KEY: Autism spectrum disorder
+OTHER pedep2-dp-1
+  STEM: Jonathan is 4 years old and lives in a small village in southern England. He attends a paediatric outpatient clinic with his grandmother, who is his legal guardian. She is concerned that he only seems to like playing with his toy train and insists on watching the same DVD every night before bed. He attends nursery where he plays with toys but not with other children. His behaviour can be very difficult to manage at times. He does not say any words, whereas the grandmother’s children were speaking in sentences at his age. On examination, you notice he does not make eye contact and pushes his toy train back and forth on the floor. The rest of his examination is normal. What is the most likely diagnosis?
+  OPTIONS: Asperger syndrome | Attention deficit hyperactivity disorder | Autism spectrum disorder | Developmental coordination disorder (dyspraxia) | Expressive language disorder
+  KEY: Autism spectrum disorder
+
+=== n 482
+BOOK pedsa-b4-1
+  STEM: Jonathan is 4 years old and lives in a small village in southern England. He attends a paediatric outpatient clinic with his grandmother who is his legal guardian. She is concerned that he only seems to like to play with his toy train and insists on watching the same DVD every night before he goes to bed. He attends nursery where he plays with the toys but not with other children. His behaviour can be very difficult to manage at times. He does not say any words, whereas the grandmother’s children were speaking in sentences at his age. On examination you notice he does not make eye contact with you and pushes his toy train back and forth on the floor. The rest of his examination is normal. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Asperger syndrome | Attention deficit hyperactivity disorder | Autism spectrum disorder | Developmental coordination disorder (also known as dyspraxia) | Expressive language disorder
+  KEY: Autism spectrum disorder
+OTHER pedhd-devp-1
+  STEM: Jonathan is 4 years old and lives in a small village in southern England. He attends a paediatric outpatient clinic with his grandmother who is his legal guardian. She is concerned that he only seems to like to play with his toy train and insists on watching the same DVD every night before he goes to bed. He attends nursery where he plays with the toys but not with other children. His behaviour can be very difficult to manage at times. He does not say any words, whereas the grandmother's children were speaking in sentences at his age. On examination you notice he does not make eye contact with you and pushes his toy train back and forth on the floor. The rest of his examination is normal. What is the most likely diagnosis?
+  OPTIONS: Asperger syndrome | Attention deficit hyperactivity disorder | Autism spectrum disorder | Developmental coordination disorder (also known as dyspraxia) | Expressive language disorder
+  KEY: Autism spectrum disorder
+
+=== n 483
+BOOK pedsa-b4-10-1
+  STEM: Considering these types of cerebral palsy, choose the type of movement disorder to fit the following scenarios. Each type of cerebral palsy [A–E] can be used once, more than once, or not at all. Moses is a 5-year-old boy who failed to attain his developmental milestones from shortly after birth. Currently, he cannot roll or talk, but he can smile. His mother complains it is difficult to dress him as both his arms and legs are stiff. On examination, his left and right upper and lower limbs are stiff and hyperreflexic. He has a primitive grasp reflex in both hands.
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic quadriplegia
+OTHER pedep2-dp-12
+  STEM: Moses is a 5-year-old boy who failed to attain milestones from shortly after birth. He cannot roll or talk, but he can smile. His mother reports difficulty dressing him due to stiffness. Examination shows all limbs are stiff and hyperreflexic with primitive grasp reflexes. What type of movement disorder best fits this scenario?
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic quadriplegia
+
+=== n 484
+BOOK pedsa-b4-10-1
+  STEM: Considering these types of cerebral palsy, choose the type of movement disorder to fit the following scenarios. Each type of cerebral palsy [A–E] can be used once, more than once, or not at all. Moses is a 5-year-old boy who failed to attain his developmental milestones from shortly after birth. Currently, he cannot roll or talk, but he can smile. His mother complains it is difficult to dress him as both his arms and legs are stiff. On examination, his left and right upper and lower limbs are stiff and hyperreflexic. He has a primitive grasp reflex in both hands.
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic quadriplegia
+OTHER pedhd-devp-12
+  STEM: Moses is a 5-year-old boy who failed to attain his developmental milestones from shortly after birth. Currently, he cannot roll or talk, but he can smile. His mother complains it is difficult to dress him as both his arms and legs are stiff. On examination, his left and right upper and lower limbs are stiff and hyperreflexic. He has a primitive grasp reflex in both hands. What is the type of movement disorder that fiits this clinical scenario?
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic quadriplegia
+
+=== n 485
+BOOK pedsa-b4-10-2
+  STEM: Considering these types of cerebral palsy, choose the type of movement disorder to fit the following scenarios. Each type of cerebral palsy [A–E] can be used once, more than once, or not at all. Gerald is a 4-year-old boy who was born in Tanzania, and had severe jaundice as a neonate that could not be treated because of lack of medical services. He now has abnormal movements of all his limbs where he adopts and maintains unusual postures, and when he is startled by a loud noise, the arm on one side straightens and the opposite arm bends. When he is asleep he is hypotonic.
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Dyskinetic
+OTHER pedep2-dp-13
+  STEM: Gerald is a 4-year-old boy born in Tanzania who had severe neonatal jaundice that was untreated. He now shows abnormal movements and postures, with asymmetrical limb responses to startle. He is hypotonic when asleep. What type of movement disorder best fits this scenario?
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Dyskinetic
+
+=== n 486
+BOOK pedsa-b4-10-2
+  STEM: Considering these types of cerebral palsy, choose the type of movement disorder to fit the following scenarios. Each type of cerebral palsy [A–E] can be used once, more than once, or not at all. Gerald is a 4-year-old boy who was born in Tanzania, and had severe jaundice as a neonate that could not be treated because of lack of medical services. He now has abnormal movements of all his limbs where he adopts and maintains unusual postures, and when he is startled by a loud noise, the arm on one side straightens and the opposite arm bends. When he is asleep he is hypotonic.
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Dyskinetic
+OTHER pedhd-devp-13
+  STEM: Gerald is a 4-year-old boy who was born in Tanzania, and had severe jaundice as a neonate that could not be treated because of lack of medical services. He now has abnormal movements of all his limbs where he adopts and maintains unusual postures, and when he is startled by a loud noise, the arm on one side straightens and the opposite arm bends. When he is asleep he is hypotonic. What is the type of movement disorder that fiits this clinical scenario?
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Dyskinetic
+
+=== n 487
+BOOK pedsa-b4-10-3
+  STEM: Considering these types of cerebral palsy, choose the type of movement disorder to fit the following scenarios. Each type of cerebral palsy [A–E] can be used once, more than once, or not at all. Hassan is 3 years old and was born at 26 weeks’ gestation weighing 700 g. He sat at 10 months, and has just started to walk. He can scribble and build a tower of three blocks. When you examine him, he is walking on tiptoes, and his legs ‘scissor’ when you lift him up. He is able to feed himself.
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic diplegia
+OTHER pedep2-dp-14
+  STEM: Hassan is 3 years old, born at 26 weeks weighing 700 g. Now 10 months corrected age, he has started to walk. He can scribble and build a tower of three blocks. On examination, he walks on tiptoes and has 'scissoring' of the legs when lifted. He can feed himself. What type of movement disorder best fits this scenario?
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic diplegia
+
+=== n 488
+BOOK pedsa-b4-10-3
+  STEM: Considering these types of cerebral palsy, choose the type of movement disorder to fit the following scenarios. Each type of cerebral palsy [A–E] can be used once, more than once, or not at all. Hassan is 3 years old and was born at 26 weeks’ gestation weighing 700 g. He sat at 10 months, and has just started to walk. He can scribble and build a tower of three blocks. When you examine him, he is walking on tiptoes, and his legs ‘scissor’ when you lift him up. He is able to feed himself.
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic diplegia
+OTHER pedep2-mf1-80
+  STEM: A 3-year-old boy was born at 26 weeks' gestation weighing 700 g. He is 10 months old and has just started to walk. He can build a tower of three blocks and is able to feed himself. On examination, he walks on tiptoes, and his legs scissor when lifted. What is the most appropriate type of cerebral palsy?
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia
+  KEY: Spastic diplegia
+
+=== n 489
+BOOK pedsa-b4-10-3
+  STEM: Considering these types of cerebral palsy, choose the type of movement disorder to fit the following scenarios. Each type of cerebral palsy [A–E] can be used once, more than once, or not at all. Hassan is 3 years old and was born at 26 weeks’ gestation weighing 700 g. He sat at 10 months, and has just started to walk. He can scribble and build a tower of three blocks. When you examine him, he is walking on tiptoes, and his legs ‘scissor’ when you lift him up. He is able to feed himself.
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic diplegia
+OTHER pedhd-devp-14
+  STEM: Hassan is 3 years old and was born at 26 weeks' gestation weighing 700 g. He sat at 10 months, and has just started to walk. He can scribble and build a tower of three blocks. When you examine him, he is walking on tiptoes, and his legs ‘scissor’ when you lift him up. He is able to feed himself. What is the type of movement disorder that fiits this clinical scenario?
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic diplegia
+
+=== n 490
+BOOK pedsa-b4-10-4
+  STEM: Considering these types of cerebral palsy, choose the type of movement disorder to fit the following scenarios. Each type of cerebral palsy [A–E] can be used once, more than once, or not at all. Alan is a 3-year-old boy who developed a preference for using his left hand at 7 months of age. He learnt to sit at 9 months and walked at 20 months. When he runs, he holds his right arm flexed and limps with his right foot. On examination, his right upper and lower limbs are stiff, with increased reflexes.
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic hemiplegia
+OTHER pedep2-dp-15
+  STEM: Alan is a 3-year-old boy who developed a preference for his left hand at 7 months. He sat at 9 months and walked at 20 months. When running, he holds his right arm flexed and limps on the right foot. On examination, right limbs are stiff with increased reflexes. What type of movement disorder best fits this scenario?
+  OPTIONS: Dyskinetic | Ataxic | Spastic diplegia | Spastic hemiplegia | Spastic quadriplegia
+  KEY: Spastic hemiplegia

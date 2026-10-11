@@ -1,0 +1,99 @@
+=== n 461
+BOOK pedsa-b3-7-6
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Rita’s father is thrilled that she has just said her first word – says ‘dada’ to her father only.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 10 months
+OTHER pedep2-nd-9
+  STEM: Rita’s father is thrilled that she has just said her first word—says "dada" to her father only. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 months | 8 months | 10 months | 12 months | 24 months
+  KEY: 10 months
+
+=== n 462
+BOOK pedsa-b3-7-6
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Rita’s father is thrilled that she has just said her first word – says ‘dada’ to her father only.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 10 months
+OTHER pedhd-dev-9
+  STEM: Rita's father is thrilled that she has just said her first word – says ‘dada’ to her father only. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 months | 8 months | 10 months | 12 months | 24 months
+  KEY: 10 months
+
+=== n 463
+BOOK pedsa-b3-7-7
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Rinah can follow her mother’s two-step commands, such as ‘Go to the cupboard and fetch your red shoes’.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 3 years
+OTHER pedep2-nd-10
+  STEM: Rinah can follow her mother's two-step commands, such as "Go to the cupboard and fetch your red shoes". At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 months | 12 months | 2 years | 3 years | 4 years
+  KEY: 3 years
+
+=== n 464
+BOOK pedsa-b3-7-7
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Rinah can follow her mother’s two-step commands, such as ‘Go to the cupboard and fetch your red shoes’.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 3 years
+OTHER pedhd-dev-10
+  STEM: Rinah can follow her mother's two-step commands, such as ‘Go to the cupboard and fetch your red shoes’. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 months | 12 months | 2 years | 3 years | 4 years
+  KEY: 3 years
+
+=== n 465
+BOOK pedsa-b3-7-8
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Blessing’s mother is so pleased; her baby has just learnt to smile when she smiles at her!
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 6 weeks
+OTHER pedep2-nd-11
+  STEM: Blessing's mother is so pleased; her baby has just learned to smile when she smiles at her! At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 weeks | 12 weeks | 6 months | 12 months | 18 months
+  KEY: 6 weeks
+
+=== n 466
+BOOK pedsa-b3-7-8
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Blessing’s mother is so pleased; her baby has just learnt to smile when she smiles at her!
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 6 weeks
+OTHER pedhd-dev-11
+  STEM: Blessing's mother is so pleased; her baby has just learnt to smile when she smiles at her! At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 weeks | 12 weeks | 6 months | 12 months | 18 months
+  KEY: 6 weeks
+
+=== n 467
+BOOK pedsa-b3-7-9
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Ivan can tie his shoe laces all by himself.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 5 years
+OTHER pedep2-nd-12
+  STEM: Ivan can tie his shoelaces all by himself. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 1 year | 2 years | 3 years | 4 years | 5 years
+  KEY: 5 years
+
+=== n 468
+BOOK pedsa-b3-7-9
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Ivan can tie his shoe laces all by himself.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 5 years
+OTHER pedhd-dev-12
+  STEM: Ivan can tie his shoe laces all by himself. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 1 year | 2 years | 3 years | 4 years | 5 years
+  KEY: 5 years
+
+=== n 469
+BOOK pedsa-b3-8-1
+  STEM: At which of these ages is the following action (screening, examination, health promotion activity) usually first taken in the child health surveillance and promotion programme in the United Kingdom? Each answer can be used once, more than once, or not at all. First measles/mumps/rubella (MMR) immunization.
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months | 4 months | 8 months | 12 months | 2–3 years | 4–5 years (preschool) | 5 years (school entry)
+  KEY: 12 months
+OTHER pedep2-nd-14
+  STEM: At which of these ages is the following action (first measles/mumps/rubella (MMR) immunization) usually first taken in the child health surveillance and promotion program in the United Kingdom?
+  OPTIONS: 3 months | 4 months | 8 months | 12 months | 18 months
+  KEY: 12 months
+
+=== n 470
+BOOK pedsa-b3-8-1
+  STEM: At which of these ages is the following action (screening, examination, health promotion activity) usually first taken in the child health surveillance and promotion programme in the United Kingdom? Each answer can be used once, more than once, or not at all. First measles/mumps/rubella (MMR) immunization.
+  OPTIONS: Newborn | 5–6 days | 12 days | 8 weeks | 3 months | 4 months | 8 months | 12 months | 2–3 years | 4–5 years (preschool) | 5 years (school entry)
+  KEY: 12 months
+OTHER pedhd-dev-14
+  STEM: At which of these ages is the following action (First measles/mumps/rubella (MMR) immunization) usually first taken in the child health surveillance and promotion programme in the United Kingdom?
+  OPTIONS: 3 months | 4 months | 8 months | 12 months | 18 months
+  KEY: 12 months

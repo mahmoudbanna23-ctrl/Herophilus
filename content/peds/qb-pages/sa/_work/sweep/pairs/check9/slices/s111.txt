@@ -1,0 +1,99 @@
+=== n 111
+BOOK pedsa-b14-10-3
+  STEM: The following (A–M) is a list of diagnoses associated with abdominal pain in children. For each of the following scenarios select the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. Molly, aged 10 years, is brought to the Paediatric Assessment Unit as she has been vomiting and had central abdominal pain for 2 days. She has also had some diarrhoea. She has only had apple juice and no food for the last day. Her pain is getting worse. On examination, she has a temperature of 38.2° C and a heart rate of 110 beats/min. She has mild dehydration. There is tenderness in the lower right abdomen, but no guarding. When asked to walk, she is unable to stand up straight because of pain.
+  OPTIONS: Appendicitis | Coeliac disease | Constipation | Diabetic ketoacidosis | Functional abdominal pain | Gastroenteritis | Hepatitis | Inflammatory bowel disease | Inguinal hernia | Intussusception | Mesenteric adenitis | Pneumonia | Urinary tract infection
+  KEY: Appendicitis
+OTHER pedep-gi-15
+  STEM: Molly, aged 10 years, is brought to the Paediatric Assessment Unit as she has been vomiting and had central abdominal pain for 2 days. She has also had some diarrhoea. She has only had apple juice and no food for the last day. Her pain is getting worse. On examination, she has a temperature of 38.2°C and a heart rate of 110 beats/min. She has mild dehydration. There is tenderness in the lower right abdomen, but no guarding. When asked to walk, she is unable to stand up straight because of pain. Which of the following is the most likely diagnosis in this patient?
+  OPTIONS: Constipation | Pneumonia | Appendicitis | Mesenteric adenitis | Functional abdominal pain
+  KEY: Appendicitis
+
+=== n 112
+BOOK pedsa-b14-10-3
+  STEM: The following (A–M) is a list of diagnoses associated with abdominal pain in children. For each of the following scenarios select the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. Molly, aged 10 years, is brought to the Paediatric Assessment Unit as she has been vomiting and had central abdominal pain for 2 days. She has also had some diarrhoea. She has only had apple juice and no food for the last day. Her pain is getting worse. On examination, she has a temperature of 38.2° C and a heart rate of 110 beats/min. She has mild dehydration. There is tenderness in the lower right abdomen, but no guarding. When asked to walk, she is unable to stand up straight because of pain.
+  OPTIONS: Appendicitis | Coeliac disease | Constipation | Diabetic ketoacidosis | Functional abdominal pain | Gastroenteritis | Hepatitis | Inflammatory bowel disease | Inguinal hernia | Intussusception | Mesenteric adenitis | Pneumonia | Urinary tract infection
+  KEY: Appendicitis
+OTHER pedhd-gastro-15
+  STEM: Molly, aged 10 years, is brought to the Paediatric Assessment Unit as she has been vomiting and had central abdominal pain for 2 days. She has also had some diarrhoea. She has only had apple juice and no food for the last day. Her pain is getting worse. On examination, she has a temperature of 38.2°C and a heart rate of 110 beats/min. She has mild dehydration. There is tenderness in the lower right abdomen, but no guarding. When asked to walk, she is unable to stand up straight because of pain. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Constipation | Pneumonia | Appendicitis | Mesenteric adenitis | Functional abdominal pain
+  KEY: Appendicitis
+
+=== n 113
+BOOK pedsa-b14-10-5
+  STEM: The following (A–M) is a list of diagnoses associated with abdominal pain in children. For each of the following scenarios select the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. Ted, aged 2 years, has had a 2-day history of low-grade fever and coryza. His mother has brought him to the Emergency Department as he is crying inconsolably. She thinks his tummy is hurting him. He has not opened his bowels for 2 days. He appears reasonably well, has minimal abdominal tenderness but has an indentable mass on the left side of the abdomen.
+  OPTIONS: Appendicitis | Coeliac disease | Constipation | Diabetic ketoacidosis | Functional abdominal pain | Gastroenteritis | Hepatitis | Inflammatory bowel disease | Inguinal hernia | Intussusception | Mesenteric adenitis | Pneumonia | Urinary tract infection
+  KEY: Constipation
+OTHER pedep-gi-16
+  STEM: Ted, aged 2 years, has had a 2-day history of low-grade fever and coryza. His mother has brought him to the Emergency Department because he is crying inconsolably. She thinks his tummy is hurting him. He has not opened his bowels for 2 days. He appears reasonably well, has minimal abdominal tenderness, but has an indentable mass on the left side of the abdomen. Which of the following is the most likely diagnosis?
+  OPTIONS: Constipation | Pneumonia | Appendicitis | Mesenteric adenitis | Functional abdominal pain
+  KEY: Constipation
+
+=== n 114
+BOOK pedsa-b14-10-5
+  STEM: The following (A–M) is a list of diagnoses associated with abdominal pain in children. For each of the following scenarios select the most likely diagnosis from the list. Each answer may be used once, more than once, or not at all. Ted, aged 2 years, has had a 2-day history of low-grade fever and coryza. His mother has brought him to the Emergency Department as he is crying inconsolably. She thinks his tummy is hurting him. He has not opened his bowels for 2 days. He appears reasonably well, has minimal abdominal tenderness but has an indentable mass on the left side of the abdomen.
+  OPTIONS: Appendicitis | Coeliac disease | Constipation | Diabetic ketoacidosis | Functional abdominal pain | Gastroenteritis | Hepatitis | Inflammatory bowel disease | Inguinal hernia | Intussusception | Mesenteric adenitis | Pneumonia | Urinary tract infection
+  KEY: Constipation
+OTHER pedhd-gastro-16
+  STEM: Ted, aged 2 years, has had a 2-day history of low-grade fever and coryza. His mother has brought him to the Emergency Department as he is crying inconsolably. She thinks his tummy is hurting him. He has not opened his bowels for 2 days. He appears reasonably well, has minimal abdominal tenderness but has an indentable mass on the left side of the abdomen. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Constipation | Pneumonia | Appendicitis | Mesenteric adenitis | Functional abdominal pain
+  KEY: Constipation
+
+=== n 115
+BOOK pedsa-b14-2
+  STEM: Emma is an 18-month-old girl who is seen in the outpatient department. She presents with loose stools two to three times each day, with no blood in them. She is generally difficult and it has become a battle to get her to feed. Examination of her abdomen, although difficult due to distress at being examined, is unremarkable apart from being distended. She is not on any medication. Her weight was on the 9th centile and is now below the 0.4th centile. What is the most likely cause for the weight loss? Select one answer only.
+  OPTIONS: Chronic non-specific diarrhoea | Coeliac disease | Hirschsprung disease | Lactose intolerance | Ulcerative colitis
+  KEY: Coeliac disease
+OTHER pedep-gi-61
+  STEM: An 18-month-old girl is seen in the outpatient department. She presents with loose stools two to three times each day, with no blood in them. She is generally difficult, and it has become a battle to get her to feed. Examination of her abdomen, although difficult due to distress at being examined, is unremarkable apart from being distended. She is not on any medication. Her weight was at the 9th centile and is now below the 0.4th centile. What is the most likely cause for weight loss?
+  OPTIONS: Chronic non-specific diarrhea | Celiac disease | Hirschsprung disease | Lactose intolerance | Ulcerative colitis
+  KEY: Celiac disease
+
+=== n 116
+BOOK pedsa-b14-3
+  STEM: Rodney, a boisterous 2-year-old, has had diarrhoea for the last 3 months. He produces up to four stools a day, which are loose, brown in colour and usually contain undigested food. The rest of the family are well. He has never been abroad. Examination is normal and his personal child health record shows that he is growing along the 50th centile. What is the most likely diagnosis?
+  OPTIONS: Chronic non-specific diarrhoea | Coeliac disease | Cow’s milk protein allergy | Inflammatory bowel disease | Lactose intolerance
+  KEY: Chronic non-specific diarrhoea
+OTHER pedep-gi-2
+  STEM: Rodney, a boisterous 2-year-old, has had diarrhea for the last 3 months. He produces up to four stools a day, which are loose, brown in color, and usually contain undigested food. The rest of the family is well. He has never been abroad. Examination is normal, and his personal child health record shows that he is growing along the 50th centile. What is the most likely diagnosis?
+  OPTIONS: Chronic non-specific diarrhea | Coeliac disease | Cow's milk protein allergy | Inflammatory bowel disease | Lactose intolerance
+  KEY: Chronic non-specific diarrhea
+
+=== n 117
+BOOK pedsa-b14-3
+  STEM: Rodney, a boisterous 2-year-old, has had diarrhoea for the last 3 months. He produces up to four stools a day, which are loose, brown in colour and usually contain undigested food. The rest of the family are well. He has never been abroad. Examination is normal and his personal child health record shows that he is growing along the 50th centile. What is the most likely diagnosis?
+  OPTIONS: Chronic non-specific diarrhoea | Coeliac disease | Cow’s milk protein allergy | Inflammatory bowel disease | Lactose intolerance
+  KEY: Chronic non-specific diarrhoea
+OTHER pedep-gi-63
+  STEM: A 2-year-old boy has had diarrhea for the last 3 months. He produces up to four stools a day, which are loose, brown in color, and usually contain undigested food. The rest of the family is well. Examination is normal, and his personal child health record shows that he is growing along the 50th centile. What is the most likely diagnosis?
+  OPTIONS: Chronic non-specific diarrhea | Post-gastroenteritis syndrome | Cow's milk protein allergy | Inflammatory bowel disease | Lactose intolerance
+  KEY: Chronic non-specific diarrhea
+
+=== n 118
+BOOK pedsa-b14-3
+  STEM: Rodney, a boisterous 2-year-old, has had diarrhoea for the last 3 months. He produces up to four stools a day, which are loose, brown in colour and usually contain undigested food. The rest of the family are well. He has never been abroad. Examination is normal and his personal child health record shows that he is growing along the 50th centile. What is the most likely diagnosis?
+  OPTIONS: Chronic non-specific diarrhoea | Coeliac disease | Cow’s milk protein allergy | Inflammatory bowel disease | Lactose intolerance
+  KEY: Chronic non-specific diarrhoea
+OTHER pedhd-gastro-2
+  STEM: Rodney, a boisterous 2-year-old, has had diarrhoea for the last 3 months. He produces up to four stools a day, which are loose, brown in colour and usually contain undigested food. The rest of the family are well. He has never been abroad. Examination is normal and his personal child health record shows that he is growing along the 50th centile. What is the most likely diagnosis?
+  OPTIONS: Chronic non-specific diarrhoea | Coeliac disease | Cow's milk protein allergy | Inflammatory bowel disease | Lactose intolerance
+  KEY: Chronic non-specific diarrhoea
+
+=== n 119
+BOOK pedsa-b14-4
+  STEM: Ellie is a 4-year-old girl who has been complaining of pain in her tummy for a month. It is worse when she goes to the toilet; her stools are firm and she opens her bowels only every 2–3 days. She has not had any vomiting. For the last 2 weeks her stools have become loose. On examination she has a mass in the left iliac fossa. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Appendix mass | Constipation | Gastroenteritis | Inguinal hernia | Wilms tumour
+  KEY: Constipation
+OTHER pedep-gi-3
+  STEM: Ellie is a 4-year-old girl who has been complaining of tummy pain for a month. It is worse when she goes to the toilet; her stools are firm, and she opens her bowels only every 2-3 days. She has not had any vomiting. For the last 2 weeks, her stools have become loose. On examination, she has a mass in the left iliac fossa. What is the most likely diagnosis?
+  OPTIONS: Appendix mass | Constipation | Gastroenteritis | Intussusception | Hirschsprung's disease
+  KEY: Constipation
+
+=== n 120
+BOOK pedsa-b14-4
+  STEM: Ellie is a 4-year-old girl who has been complaining of pain in her tummy for a month. It is worse when she goes to the toilet; her stools are firm and she opens her bowels only every 2–3 days. She has not had any vomiting. For the last 2 weeks her stools have become loose. On examination she has a mass in the left iliac fossa. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Appendix mass | Constipation | Gastroenteritis | Inguinal hernia | Wilms tumour
+  KEY: Constipation
+OTHER pedep-mf1-49
+  STEM: A 4-year-old girl has been complaining of pain in her tummy for a month. It is worse when she goes to the toilet; her stools are firm, and she passes stools only once every 2–3 days. She has not had any vomiting. For the last 2 days her stools have become loose. On examination, she has a mass in the left iliac fossa. What is the most likely diagnosis?
+  OPTIONS: Appendix mass | Constipation | Gastroenteritis | Inguinal hernia | Wilms tumor
+  KEY: Constipation

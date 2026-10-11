@@ -1,0 +1,99 @@
+=== n 281
+BOOK pedsa-b19-4
+  STEM: In Johnathan’s particular case (Question 19.3), what is the most likely organism to have been the cause of his previous urinary tract infections? Select one answer only.
+  OPTIONS: Escherichia coli | Klebsiella sp. | Proteus sp. | Pseudomonas aeruginosa | Streptococcus faecalis
+  KEY: Proteus sp.
+OTHER pedhd-renal-4
+  STEM: Johnathan is an 8-year-old boy with a history of recurrent urinary tract infections, who has now presented with severe left-sided colicky loin pain and 2+ haematuria, and has been found to have a renal stone. What is the most likely organism to have been the cause of his previous urinary tract infections?
+  OPTIONS: Escherichia coli | Klebsiella sp. | Proteus sp. | Pseudomonas aeruginosa | Streptococcus faecalis
+  KEY: Proteus sp.
+
+=== n 282
+BOOK pedsa-b19-5
+  STEM: Eesa, a 1-month-old Pakistani infant, is taken to his general practitioner by his mother. He is vomiting and not taking his feeds as well as normal. He is irritable and has a temperature of 39° C. His heart rate is 170 beats/min and his respiratory rate 45 breaths/min. The remainder of his examination is unremarkable. A clean catch urine sample is obtained and is positive for nitrites, leucocytes and protein on dipstick. Which is the most appropriate next course of action? Select one answer only.
+  OPTIONS: Intravenous antibiotics | Intravenous fluids | Oral antibiotics | Oral paracetamol | Oral rehydration solution
+  KEY: Intravenous antibiotics
+OTHER pedep2-ren-5
+  STEM: Eesa is a 1-month-old Pakistani infant brought to the GP by his mother due to vomiting and reduced feeding. He is irritable and has a temperature of 39°C. His heart rate is 170 beats/min and respiratory rate is 45 breaths/min. The remainder of the examination is unremarkable. A clean-catch urine sample shows nitrites, leucocytes, and protein on dipstick. What is the most appropriate next course of action?
+  OPTIONS: Intravenous antibiotics | Intravenous fluids | Oral antibiotics | Oral paracetamol | Oral rehydration solution
+  KEY: Intravenous antibiotics
+
+=== n 283
+BOOK pedsa-b19-5
+  STEM: Eesa, a 1-month-old Pakistani infant, is taken to his general practitioner by his mother. He is vomiting and not taking his feeds as well as normal. He is irritable and has a temperature of 39° C. His heart rate is 170 beats/min and his respiratory rate 45 breaths/min. The remainder of his examination is unremarkable. A clean catch urine sample is obtained and is positive for nitrites, leucocytes and protein on dipstick. Which is the most appropriate next course of action? Select one answer only.
+  OPTIONS: Intravenous antibiotics | Intravenous fluids | Oral antibiotics | Oral paracetamol | Oral rehydration solution
+  KEY: Intravenous antibiotics
+OTHER pedhd-renal-5
+  STEM: Eesa, a 1-month-old Pakistani infant, is taken to his general practitioner by his mother. He is vomiting and not taking his feeds as well as normal. He is irritable and has a temperature of 39°C. His heart rate is 170 beats/min and his respiratory rate 45 breaths/min. The remainder of his examination is unremarkable. A clean catch urine sample is obtained and is positive for nitrites, leucocytes and protein on dipstick. Which is the most appropriate next course of action?
+  OPTIONS: Intravenous antibiotics | Intravenous fluids | Oral antibiotics | Oral paracetamol | Oral rehydration solution
+  KEY: Intravenous antibiotics
+
+=== n 284
+BOOK pedsa-b19-6
+  STEM: Freddie is a 3-year-old boy. He is referred to the hospital as his mother has noticed that his face is swollen (Fig. 19.1). His mother was concerned that he had an allergic reaction to some peanuts he ate at a party. Examination reveals abdominal distension, bilateral scrotal swelling and pitting oedema of his lower limbs. Urine dipstick had 4+ protein, 2+ blood and nitrite and leucocyte negative. His blood pressure is normal for his age. You perform renal function tests, which reveal normal levels of sodium, potassium, urea, and creatinine. His complement levels (C3 and C4) are normal. What is the most likely diagnosis? Select one answer only. Hint: This child is losing lots of protein in his urine.
+  OPTIONS: Acute allergic reaction to peanuts | Acute glomerulonephritis | Haemolytic-uraemic syndrome | Nephrotic syndrome | Urinary tract infection
+  KEY: Nephrotic syndrome
+OTHER pedep2-ren-6
+  STEM: Freddie is a 3-year-old boy referred due to facial swelling. His mother suspects a peanut allergy. On examination, he has abdominal distension, bilateral scrotal swelling, and pitting edema of the lower limbs. Urine dipstick shows 4+ protein, 2+ blood, nitrites present, and negative leucocytes. Blood pressure and renal function are normal. Complement levels (C3, C4) are normal. What is the most likely diagnosis?
+  OPTIONS: Acute allergic reaction to peanuts | Acute glomerulonephritis | Hemolytic-uraemic syndrome | Nephrotic syndrome | Urinary tract infection
+  KEY: Nephrotic syndrome
+
+=== n 285
+BOOK pedsa-b19-6
+  STEM: Freddie is a 3-year-old boy. He is referred to the hospital as his mother has noticed that his face is swollen (Fig. 19.1). His mother was concerned that he had an allergic reaction to some peanuts he ate at a party. Examination reveals abdominal distension, bilateral scrotal swelling and pitting oedema of his lower limbs. Urine dipstick had 4+ protein, 2+ blood and nitrite and leucocyte negative. His blood pressure is normal for his age. You perform renal function tests, which reveal normal levels of sodium, potassium, urea, and creatinine. His complement levels (C3 and C4) are normal. What is the most likely diagnosis? Select one answer only. Hint: This child is losing lots of protein in his urine.
+  OPTIONS: Acute allergic reaction to peanuts | Acute glomerulonephritis | Haemolytic-uraemic syndrome | Nephrotic syndrome | Urinary tract infection
+  KEY: Nephrotic syndrome
+OTHER pedhd-renal-6
+  STEM: Freddie is a 3-year-old boy. He is referred to the hospital as his mother has noticed that his face is swollen, as shown. His mother was concerned that he had an allergic reaction to some peanuts he ate at a party. Examination reveals abdominal distension, bilateral scrotal swelling and pitting oedema of his lower limbs. Urine dipstick had 4+ protein, 2+ blood, and was nitrite and leucocyte negative. His blood pressure is normal for his age. You perform renal function tests, which reveal normal levels of sodium, potassium, urea, and creatinine. His complement levels (C3 and C4) are normal. What is the most likely diagnosis?
+  OPTIONS: Acute allergic reaction to peanuts | Acute glomerulonephritis | Haemolytic-uraemic syndrome | Nephrotic syndrome | Urinary tract infection
+  KEY: Nephrotic syndrome
+
+=== n 286
+BOOK pedsa-b19-7
+  STEM: What is the initial treatment of Freddie’s condition? Select one answer only.
+  OPTIONS: Diuretics | Fluid restriction | Intravenous human albumin solution 20% | Intravenous hydrocortisone | Oral prednisolone
+  KEY: Oral prednisolone
+OTHER pedep2-ren-7
+  STEM: What is the initial treatment of Freddie’s condition?
+  OPTIONS: Diuretics | Fluid restriction | Intravenous human albumin solution 20% | Intravenous hydrocortisone | Oral prednisolone
+  KEY: Oral prednisolone
+
+=== n 287
+BOOK pedsa-b19-7
+  STEM: What is the initial treatment of Freddie’s condition? Select one answer only.
+  OPTIONS: Diuretics | Fluid restriction | Intravenous human albumin solution 20% | Intravenous hydrocortisone | Oral prednisolone
+  KEY: Oral prednisolone
+OTHER pedhd-renal-7
+  STEM: Freddie is a 3-year-old boy who has presented with facial swelling, ascites, scrotal oedema and pitting oedema of the lower limbs. His urine dipstick shows 4+ protein, his blood pressure, renal function and complement levels are all normal, and a diagnosis of nephrotic syndrome has been made. What is the initial treatment of his condition?
+  OPTIONS: Diuretics | Fluid restriction | Intravenous human albumin solution 20% | Intravenous hydrocortisone | Oral prednisolone
+  KEY: Oral prednisolone
+
+=== n 288
+BOOK pedsa-b19-8
+  STEM: Finlay, a 5-year-old boy, recently had a birthday party at his local farm. Since then he has had 3 days of diarrhoea. The loose stool had some blood in it. His mother is concerned as he is still not himself. He appears to be very pale and has not passed urine for 12 hours. He has no other medical problems and is not normally on any medication. On examination you note that he has pale conjunctivae. His blood pressure is 120/70 mmHg. You decide to take some blood tests and get the following results: • haemoglobin: 76 g/L; white blood cells: 14.2 × 10⁹ /L; platelet count: 50 × 10⁹ /L • creatinine: 200 µmol/L (normal: 20–80 µmol/L) • prothrombin time: 13 seconds (control: 12–15 s) • activated partial thromboplastin time: 34 seconds (control: 25–35 s) What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute lymphatic leukaemia | Haemolytic-uraemic syndrome | Henoch–Schönlein purpura | Immune thrombocytopenic purpura | Post-streptococcal glomerulonephritis
+  KEY: Haemolytic-uraemic syndrome
+OTHER pedep2-ren-42
+  STEM: Fady, a 5-year-old boy. He has had 3 days of diarrhea. The loose stool had some blood in it. He appears to be very pale and has not passed urine for 12 hours. He has no other medical problems and is not normally on any medication. On examination you note that he has pale conjunctivae. His blood pressure is 120/70 mmHg. You decide to take tests and get the following results: some blood hemoglobin: 7.5 g/dl; white blood cells: 14,200/ml; platelet count: 50000/ml; creatinine: 1.5 mg/dl (normal: < 0.8 mg/dl) PT & PTT are normal. What is the most likely diagnosis?
+  OPTIONS: Acute lymphoblastic leukemia | Hemolytic-uremic syndrome | Henoch-Schonlein purpura | Immune thrombocytopenic purpura | Post streptococcal glomerulonephritis
+  KEY: Hemolytic-uremic syndrome
+
+=== n 289
+BOOK pedsa-b19-8
+  STEM: Finlay, a 5-year-old boy, recently had a birthday party at his local farm. Since then he has had 3 days of diarrhoea. The loose stool had some blood in it. His mother is concerned as he is still not himself. He appears to be very pale and has not passed urine for 12 hours. He has no other medical problems and is not normally on any medication. On examination you note that he has pale conjunctivae. His blood pressure is 120/70 mmHg. You decide to take some blood tests and get the following results: • haemoglobin: 76 g/L; white blood cells: 14.2 × 10⁹ /L; platelet count: 50 × 10⁹ /L • creatinine: 200 µmol/L (normal: 20–80 µmol/L) • prothrombin time: 13 seconds (control: 12–15 s) • activated partial thromboplastin time: 34 seconds (control: 25–35 s) What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute lymphatic leukaemia | Haemolytic-uraemic syndrome | Henoch–Schönlein purpura | Immune thrombocytopenic purpura | Post-streptococcal glomerulonephritis
+  KEY: Haemolytic-uraemic syndrome
+OTHER pedep2-ren-8
+  STEM: Finlay, a 5-year-old boy, had a birthday party at a local farm. He now has had 3 days of bloody diarrhea and appears pale. He has not passed urine for 12 hours. On examination, he is pale but normotensive. Lab tests show: Hemoglobin: 76 g/L WBC: 14.2 x 10^9/L Platelets: 50 x 10^9/L Creatinine: 200 µmol/L PT: 13 sec aPTT: 34 sec What is the most likely diagnosis?
+  OPTIONS: Acute lymphatic leukaemia | Hemolytic-uraemic syndrome | Henoch-Schönlein purpura | Immune thrombocytopenic purpura | Post-streptococcal glomerulonephritis
+  KEY: Hemolytic-uraemic syndrome
+
+=== n 290
+BOOK pedsa-b19-8
+  STEM: Finlay, a 5-year-old boy, recently had a birthday party at his local farm. Since then he has had 3 days of diarrhoea. The loose stool had some blood in it. His mother is concerned as he is still not himself. He appears to be very pale and has not passed urine for 12 hours. He has no other medical problems and is not normally on any medication. On examination you note that he has pale conjunctivae. His blood pressure is 120/70 mmHg. You decide to take some blood tests and get the following results: • haemoglobin: 76 g/L; white blood cells: 14.2 × 10⁹ /L; platelet count: 50 × 10⁹ /L • creatinine: 200 µmol/L (normal: 20–80 µmol/L) • prothrombin time: 13 seconds (control: 12–15 s) • activated partial thromboplastin time: 34 seconds (control: 25–35 s) What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute lymphatic leukaemia | Haemolytic-uraemic syndrome | Henoch–Schönlein purpura | Immune thrombocytopenic purpura | Post-streptococcal glomerulonephritis
+  KEY: Haemolytic-uraemic syndrome
+OTHER pedhd-renal-8
+  STEM: Finlay, a 5-year-old boy, recently had a birthday party at his local farm. Since then he has had 3 days of diarrhoea, and the loose stool had some blood in it. His mother is concerned as he is still not himself. He appears to be very pale and has not passed urine for 12 hours. He has no other medical problems and is not normally on any medication. On examination you note that he has pale conjunctivae. His blood pressure is 120/70 mmHg. You take blood tests and get the following results: | | | |---|---| | Haemoglobin | 76 g/L | | White blood cells | 14.2 × 10⁹/L | | Platelet count | 50 × 10⁹/L | | Creatinine | 200 µmol/L *(normal 20–80)* | | Prothrombin time | 13 s *(control 12–15 s)* | | Activated partial thromboplastin time | 34 s *(control 25–35 s)* | What is the most likely diagnosis?
+  OPTIONS: Acute lymphatic leukaemia | Haemolytic-uraemic syndrome | Henoch–Schönlein purpura | Immune thrombocytopenic purpura | Post-streptococcal glomerulonephritis
+  KEY: Haemolytic-uraemic syndrome

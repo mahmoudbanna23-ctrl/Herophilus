@@ -1,0 +1,99 @@
+=== n 391
+BOOK pedsa-b26-12-4
+  STEM: For each of the following scenarios chose the best course of action (A–K) to take immediately. Sophie, a 9-year-old girl with type 1 diabetes mellitus, develops a fever along with vomiting and diarrhoea. After 2 days her mother takes her to the local paediatric assessment unit as she continues to vomit. On examination her temperature is 37.5° C. She is able to talk to her mother. She has clinical dehydration. Her pulses, capillary refill time and blood pressure are normal. Her blood glucose is 16 mmol/L.
+  OPTIONS: Buccal glucose gel | Diet therapy alone | Fluid resuscitation with normal saline (0.9% sodium chloride) | Insulin infusion intravenously | Intramuscular (IM) glucagon | Intravenous antibiotics | Intravenous infusion of 5% glucose | Intravenous infusion of normal saline (0.9% sodium chloride) | Intravenous sodium bicarbonate | Oral glucose drink | Subcutaneous insulin
+  KEY: Intravenous infusion of normal saline (0.9% sodium chloride)
+OTHER pedhd-endo-12
+  STEM: Sophie, a 9-year-old girl with type 1 diabetes mellitus, develops a fever along with vomiting and diarrhoea. After 2 days her mother takes her to the local paediatric assessment unit as she continues to vomit. On examination her temperature is 37.5°C. She is able to talk to her mother. She has clinical dehydration. Her pulses, capillary refill time and blood pressure are normal. Her blood glucose is 16 mmol/L. Which of the following is the best course of action to take immediately for that patient?
+  OPTIONS: Oral glucose drink | Intravenous infusion of normal saline (0.9% sodium chloride) | Subcutaneous insulin | Fluid resuscitation with normal saline (0.9% sodium chloride) | Intravenous infusion of 5% glucose
+  KEY: Intravenous infusion of normal saline (0.9% sodium chloride)
+
+=== n 392
+BOOK pedsa-b26-2
+  STEM: James, aged 11 years, has type 1 diabetes mellitus. While playing football during the mid-morning break at a holiday camp, he suddenly feels faint. His classmates call the supervisor who finds him lying unresponsive in the playground. What should be his immediate management? Select one answer only.
+  OPTIONS: Call an ambulance | Check blood glucose | Give a glucose drink | Give buccal glucose gel | Give insulin
+  KEY: Give buccal glucose gel
+OTHER pedep2-end-2
+  STEM: James, aged 11 years, has type 1 diabetes mellitus. While playing football during the mid-morning break at a holiday camp, he suddenly feels faint. His classmates call the supervisor who finds him lying unresponsive in the playground. What should be his immediate management?
+  OPTIONS: Call an ambulance | Check blood glucose | Give a glucose drink | Give buccal glucose gel | Give insulin
+  KEY: Give buccal glucose gel
+
+=== n 393
+BOOK pedsa-b26-2
+  STEM: James, aged 11 years, has type 1 diabetes mellitus. While playing football during the mid-morning break at a holiday camp, he suddenly feels faint. His classmates call the supervisor who finds him lying unresponsive in the playground. What should be his immediate management? Select one answer only.
+  OPTIONS: Call an ambulance | Check blood glucose | Give a glucose drink | Give buccal glucose gel | Give insulin
+  KEY: Give buccal glucose gel
+OTHER pedhd-endo-2
+  STEM: James, aged 11 years, has type 1 diabetes mellitus. While playing football during the mid-morning break at a holiday camp, he suddenly feels faint. His classmates call the supervisor who finds him lying unresponsive in the playground. What should be his immediate management?
+  OPTIONS: Call an ambulance | Check blood glucose | Give a glucose drink | Give buccal glucose gel | Give insulin
+  KEY: Give buccal glucose gel
+
+=== n 394
+BOOK pedsa-b26-3
+  STEM: Catherine, aged 15 years, has had type 1 diabetes mellitus for 7 years. Her insulin regimen has remained unchanged for the last 7 months. Her HbA1C has increased from 58 mmol/mol (7.5%) to 90 mmol/mol (10.3%) (desired level <58 mmol/mol). The most recent blood glucose levels as recorded in her book are shown in Fig. 26.1 (overleaf): What is the most likely explanation for these findings? Select one answer only.
+  OPTIONS: During the summer holidays she took less exercise | She has reduced her insulin dosage to try to lose weight | She is taking more insulin than she needs | She is regularly eating snacks and indulging in high carbohydrate food | Some of the blood glucose measurements are fictitious
+  KEY: Some of the blood glucose measurements are fictitious
+OTHER pedep2-end-3
+  STEM: Catherine, aged 15 years, has had type 1 diabetes mellitus for 7 years. Her insulin regimen has remained unchanged for the last 7 months. Her HbA1c has increased from 58 mmol/mol (7.5%) to 90 mmol/mol (10.3%) (desired level <58 mmol/mol). The most recent blood glucose levels as recorded in her book are shown. What is the most likely explanation for these findings?
+  OPTIONS: During the summer holidays she took less exercise | She has reduced her insulin dosage to try to lose weight | She is taking more insulin than she needs | She is regularly eating snacks and indulging in high-carbohydrate food | Some of the blood glucose measurements are fictitious
+  KEY: Some of the blood glucose measurements are fictitious
+
+=== n 395
+BOOK pedsa-b26-3
+  STEM: Catherine, aged 15 years, has had type 1 diabetes mellitus for 7 years. Her insulin regimen has remained unchanged for the last 7 months. Her HbA1C has increased from 58 mmol/mol (7.5%) to 90 mmol/mol (10.3%) (desired level <58 mmol/mol). The most recent blood glucose levels as recorded in her book are shown in Fig. 26.1 (overleaf): What is the most likely explanation for these findings? Select one answer only.
+  OPTIONS: During the summer holidays she took less exercise | She has reduced her insulin dosage to try to lose weight | She is taking more insulin than she needs | She is regularly eating snacks and indulging in high carbohydrate food | Some of the blood glucose measurements are fictitious
+  KEY: Some of the blood glucose measurements are fictitious
+OTHER pedhd-endo-3
+  STEM: Catherine, aged 15 years, has had type 1 diabetes mellitus for 7 years. Her insulin regimen has remained unchanged for the last 7 months. Her HbA1C has increased from 58 mmol/mol (7.5%) to 90 mmol/mol (10.3%) (desired level <58 mmol/mol). The most recent blood glucose levels as recorded in her book are shown in the figure in the next page (overleaf):
+  OPTIONS: During the summer holidays she took less exercise | She has reduced her insulin dosage to try to lose weight | She is taking more insulin than she needs | She is regularly eating snacks and indulging in high carbohydrate food | Some of the blood glucose measurements are fictitious
+  KEY: Some of the blood glucose measurements are fictitious
+
+=== n 396
+BOOK pedsa-b26-4
+  STEM: Mohammed, a 12-year-old boy with type 1 diabetes mellitus, is reviewed in the outpatient clinic. In spite of maintaining good control of his diabetes, his height has remained static for 9 months. He says his appetite is alright, but he has lost interest in football, which is his passion, as he says he can’t keep up with the other boys any more. He just stays at home and watches TV, but wants to be out playing football and getting back his energy. A full blood count and C-reactive protein are normal and his HbA1C is satisfactory. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Anorexia nervosa | Depression | Growth hormone deficiency | Hypothyroidism | Inflammatory bowel disease
+  KEY: Hypothyroidism
+OTHER pedep2-end-4
+  STEM: Mohammed, a 12-year-old boy with type 1 diabetes mellitus, is reviewed in the outpatient clinic. Despite maintaining good control of his diabetes, his height has remained static for 9 months. He says his appetite is normal, but he has lost interest in football, which is his passion, as he says he can't keep up with the other boys anymore. He just stays at home and watches TV but wants to be back playing football and regaining his energy. A full blood count and C-reactive protein are normal, and his HbA1c is satisfactory. What is the most likely diagnosis?
+  OPTIONS: Anorexia nervosa | Depression | Growth hormone deficiency | Hypothyroidism
+  KEY: Hypothyroidism
+
+=== n 397
+BOOK pedsa-b26-4
+  STEM: Mohammed, a 12-year-old boy with type 1 diabetes mellitus, is reviewed in the outpatient clinic. In spite of maintaining good control of his diabetes, his height has remained static for 9 months. He says his appetite is alright, but he has lost interest in football, which is his passion, as he says he can’t keep up with the other boys any more. He just stays at home and watches TV, but wants to be out playing football and getting back his energy. A full blood count and C-reactive protein are normal and his HbA1C is satisfactory. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Anorexia nervosa | Depression | Growth hormone deficiency | Hypothyroidism | Inflammatory bowel disease
+  KEY: Hypothyroidism
+OTHER pedhd-endo-4
+  STEM: Mohammed, a 12-year-old boy with type 1 diabetes mellitus, is reviewed in the outpatient clinic. In spite of maintaining good control of his diabetes, his height has remained static for 9 months. He says his appetite is alright, but he has lost interest in football, which is his passion, as he says he can't keep up with the other boys any more. He just stays at home and watches TV, but wants to be out playing football and getting back his energy. A full blood count and C-reactive protein are normal and his HbA1C is satisfactory. What is the most likely diagnosis?
+  OPTIONS: Anorexia nervosa | Depression | Growth hormone deficiency | Hypothyroidism | Inflammatory bowel disease
+  KEY: Hypothyroidism
+
+=== n 398
+BOOK pedsa-b26-5
+  STEM: Zeinab, aged 15 years, has had 3 months of diarrhoea, weight loss and palpitations. You suspect hyperthyroidism. Which combination of thyroid function test results would confirm the diagnosis? Select one answer only.
+  OPTIONS: High TSH and high T₄ levels | High TSH and low T₄ levels | Low TSH and high T₄ levels | Low TSH and low T₄ levels | Normal TSH and high T₄ levels
+  KEY: Low TSH and high T₄ levels
+OTHER pedep2-end-5
+  STEM: Zeinab, aged 15 years, has had 3 months of diarrhea, weight loss, and palpitations. You suspect hyperthyroidism. Which combination of thyroid function test results would confirm the diagnosis?
+  OPTIONS: High TSH and high T4 levels | High TSH and low T4 levels | Low TSH and high T4 levels | Low TSH and low T4 levels | Normal TSH and high T4 levels
+  KEY: Low TSH and high T4 levels
+
+=== n 399
+BOOK pedsa-b26-5
+  STEM: Zeinab, aged 15 years, has had 3 months of diarrhoea, weight loss and palpitations. You suspect hyperthyroidism. Which combination of thyroid function test results would confirm the diagnosis? Select one answer only.
+  OPTIONS: High TSH and high T₄ levels | High TSH and low T₄ levels | Low TSH and high T₄ levels | Low TSH and low T₄ levels | Normal TSH and high T₄ levels
+  KEY: Low TSH and high T₄ levels
+OTHER pedhd-endo-5
+  STEM: Zeinab, aged 15 years, has had 3 months of diarrhoea, weight loss and palpitations. You suspect hyperthyroidism. Which combination of thyroid function test results would confirm the diagnosis?
+  OPTIONS: High TSH and high T4 levels | High TSH and low T4 levels | Low TSH and high T4 levels | Low TSH and low T4 levels | Normal TSH and high T4 levels
+  KEY: Low TSH and high T4 levels
+
+=== n 400
+BOOK pedsa-b26-6
+  STEM: Lara, an 18-day-old female infant, has congenital adrenal hypoplasia. She presents having Comments vomited all her feeds today. She has become lethargic and will no longer feed. On examination she has tachycardia, with a heart rate of 160 beats/min and a capillary refill time of 3 seconds. A bedside blood test shows that she is hypoglycaemic. What is the best immediate management? Select one answer only.
+  OPTIONS: Intravenous glucose alone for 24 hours | Intravenous saline, glucose and hydrocortisone | Oral rehydration | Oral rehydration and oral glucocorticoid | Oral rehydration, sodium supplements and oral glucocorticoid
+  KEY: Intravenous saline, glucose and hydrocortisone
+OTHER pedep2-end-17
+  STEM: Salma, a 2-week-old infant, presents with persistent vomiting. There is no history of diarrhea or fever. She has become lethargic and refuses to feed. On examination, she has virilized external genitalia, tachycardia (heart rate of 160 beats/min), and a capillary refill time of 3 seconds. A blood sample is sent for testing. What is the expected result?
+  OPTIONS: High blood glucose | Low blood sodium and high potassium | High serum cortisol | High blood sodium | High blood aldosterone
+  KEY: Low blood sodium and high potassium

@@ -1,0 +1,9 @@
+AGENTS.md loaded — Herophilus
+
+Highest `n` written: 180. Counts: SAME 178 · DIFFERENT 2 · UNSURE 0.
+
+DIFFERENT:
+- 1 — `pedsa-b1-1` / `pedep2-mal-20`
+- 173 — `pedsa-b15-7` / `pedep-mf1-37`
+
+Stopped after completing `s171.txt`; next is `s181.txt`.

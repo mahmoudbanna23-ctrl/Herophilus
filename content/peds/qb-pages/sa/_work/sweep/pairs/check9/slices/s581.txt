@@ -1,0 +1,79 @@
+=== n 581
+BOOK pedsa-b9-6
+  STEM: Fiona is a well 4-year-old girl with Down syndrome. She attends her yearly follow-up appointment with her mother. There are no real problems other than constipation, for which her general practitioner has started treatment. When you plot Fiona on the Down syndrome growth chart, you notice that her height has gone from the 75th centile to the 25th centile. Her weight, however, has gone from the 50th centile to the 75th centile. Which of the following investigations would you perform? Select one answer only.
+  OPTIONS: Coeliac screen | Abdominal ultrasound | Full blood count | Thyroid function tests | Vitamin D levels
+  KEY: Thyroid function tests
+OTHER pedep-gp-2
+  STEM: A 4-year-old girl with Down syndrome, Saima, attends her routine annual follow-up with her mother. She is generally well, except for a history of constipation. On plotting her growth on a Down syndrome-specific chart, her height has dropped from the 75th to the 25th centile, while her weight has increased from the 50th to the 75th centile. Which of the following investigations is the most appropriate to perform?
+  OPTIONS: Lipid profile | Abdominal ultrasound | Full blood count | Thyroid function tests | Vitamin D levels
+  KEY: Thyroid function tests
+
+=== n 582
+BOOK pedsa-b9-6
+  STEM: Fiona is a well 4-year-old girl with Down syndrome. She attends her yearly follow-up appointment with her mother. There are no real problems other than constipation, for which her general practitioner has started treatment. When you plot Fiona on the Down syndrome growth chart, you notice that her height has gone from the 75th centile to the 25th centile. Her weight, however, has gone from the 50th centile to the 75th centile. Which of the following investigations would you perform? Select one answer only.
+  OPTIONS: Coeliac screen | Abdominal ultrasound | Full blood count | Thyroid function tests | Vitamin D levels
+  KEY: Thyroid function tests
+OTHER pedhd-gen-6
+  STEM: Fiona is a well 4-year-old girl with Down syndrome. She attends her yearly follow-up appointment with her mother. There are no real problems other than constipation, for which her general practitioner has started treatment. When you plot Fiona on the Down syndrome growth chart, you notice that her height has gone from the 75th centile to the 25th centile. Her weight, however, has gone from the 50th centile to the 75th centile. Which of the following investigations would you perform?
+  OPTIONS: Coeliac screen | Abdominal ultrasound | Full blood count | Thyroid function tests | Vitamin D levels
+  KEY: Thyroid function tests
+
+=== n 583
+BOOK pedsa-b9-7
+  STEM: Mary is an infant with Down syndrome. Her antenatal scans had all been normal and an echocardiogram on the neonatal unit shortly after birth was normal. She attends the community clinic for the first time at 4 weeks of age. She is now thriving and feeding well. Her parents have many questions about what is going to happen in the future. In particular, they have been reading that she is still at an increased risk of certain diseases because she has Down syndrome. Out of the following, which condition is Mary at increased risk of developing compared with the general population? Select one answer only.
+  OPTIONS: Congenital heart disease | Duodenal atresia | Ischaemic heart disease | Leukaemia | Pyloric stenosis
+  KEY: Leukaemia
+OTHER pedep2-gen-19
+  STEM: Mary is an infant with Down syndrome. Her antenatal scans were normal, and an echocardiogram in the neonatal unit shortly after birth was also normal. She attends the community clinic at 4 weeks of age, thriving and feeding well. Her parents have many questions about future risks. Which condition is Mary at increased risk of developing compared to the general population?
+  OPTIONS: Congenital heart disease | Duodenal atresia | Ischaemic heart disease | Leukaemia | Pyloric stenosis
+  KEY: Leukaemia
+
+=== n 584
+BOOK pedsa-b9-7
+  STEM: Mary is an infant with Down syndrome. Her antenatal scans had all been normal and an echocardiogram on the neonatal unit shortly after birth was normal. She attends the community clinic for the first time at 4 weeks of age. She is now thriving and feeding well. Her parents have many questions about what is going to happen in the future. In particular, they have been reading that she is still at an increased risk of certain diseases because she has Down syndrome. Out of the following, which condition is Mary at increased risk of developing compared with the general population? Select one answer only.
+  OPTIONS: Congenital heart disease | Duodenal atresia | Ischaemic heart disease | Leukaemia | Pyloric stenosis
+  KEY: Leukaemia
+OTHER pedhd-gen-7
+  STEM: Mary is an infant with Down syndrome. Her antenatal scans had all been normal and an echocardiogram on the neonatal unit shortly after birth was normal. She attends the community clinic for the first time at 4 weeks of age. She is now thriving and feeding well. Her parents have many questions about what is going to happen in the future. In particular, they have been reading that she is still at an increased risk of certain diseases because she has Down syndrome. Out of the following, which condition is Mary at increased risk of developing compared with the general population?
+  OPTIONS: Congenital heart disease | Duodenal atresia | Ischaemic heart disease | Leukaemia | Pyloric stenosis
+  KEY: Leukaemia
+
+=== n 585
+BOOK pedsa-b9-8
+  STEM: A Pakistani couple are referred for genetic counselling. They have lost two children who both died in the first 2 years of life. They have one healthy girl, who is 3 years of age. The faulty gene has been identified and other members of their family have been tested (Fig. 9.3). What is the pattern of inheritance in this disorder?
+  OPTIONS: Autosomal dominant | Autosomal recessive | Imprinting from uniparental disomy | Trinucleotide repeat expansion mutation | X-linked recessive
+  KEY: Autosomal recessive
+OTHER pedep2-gen-14
+  STEM: A Pakistani couple are referred for genetic counselling. They have lost two children who both died in the first 2 years of life. They have one healthy daughter who is 3 years old. The faulty gene has been identified, and other members of their family have been tested (see opposite figure). What is the most likely pattern of inheritance?
+  OPTIONS: Autosomal dominant | Autosomal recessive | Imprinting from uniparental disomy | Trinucleotide repeat expansion mutation | X-linked recessive
+  KEY: Autosomal recessive
+
+=== n 586
+BOOK pedsa-b9-8
+  STEM: A Pakistani couple are referred for genetic counselling. They have lost two children who both died in the first 2 years of life. They have one healthy girl, who is 3 years of age. The faulty gene has been identified and other members of their family have been tested (Fig. 9.3). What is the pattern of inheritance in this disorder?
+  OPTIONS: Autosomal dominant | Autosomal recessive | Imprinting from uniparental disomy | Trinucleotide repeat expansion mutation | X-linked recessive
+  KEY: Autosomal recessive
+OTHER pedhd-gen-8
+  STEM: A Pakistani couple are referred for genetic counselling. They have lost two children who both died in the first 2 years of life. They have one healthy girl, who is 3 years of age. The faulty gene has been identified and other members of their family have been tested (in the opposite figure). What is the pattern of inheritance in this disorder?
+  OPTIONS: Autosomal dominant | Autosomal recessive | Imprinting from uniparental disomy | Trinucleotide repeat expansion mutation | X-linked recessive
+  KEY: Autosomal recessive
+
+=== n 587
+BOOK pedsa-b9-9
+  STEM: The same couple (Fig. 9.3) tell you that they would like more children. What is the risk of them having another affected baby? Select one answer only.
+  OPTIONS: Around 1 in 200 | 1 in 2 | 1 in 4 | 2 in 3 | 3 in 4
+  KEY: 1 in 4
+OTHER pedep2-gen-15
+  STEM: The same couple (as in the previous question) would like more children. What is the risk of them having another affected baby?
+  OPTIONS: Around 1 in 200 | 1 in 2 | 1 in 4 | 2 in 3 | 3 in 4
+  KEY: 1 in 4
+
+=== n 588
+BOOK pedsa-b9-9
+  STEM: The same couple (Fig. 9.3) tell you that they would like more children. What is the risk of them having another affected baby? Select one answer only.
+  OPTIONS: Around 1 in 200 | 1 in 2 | 1 in 4 | 2 in 3 | 3 in 4
+  KEY: 1 in 4
+OTHER pedhd-gen-9
+  STEM: A Pakistani couple were referred for genetic counselling. They have lost two children who both died in the first 2 years of life, and they have one healthy girl, who is 3 years of age. The faulty gene has been identified and other members of their family have been tested. The couple now tell you that they would like more children. What is the risk of them having another affected baby?
+  OPTIONS: Around 1 in 200 | 1 in 2 | 1 in 4 | 2 in 3 | 3 in 4
+  KEY: 1 in 4

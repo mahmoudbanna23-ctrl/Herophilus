@@ -1,0 +1,99 @@
+=== n 151
+BOOK pedsa-b15-10-3
+  STEM: The following (A–T) is a list of infectious agents seen in children. Select the organism that is most likely to be the causative agent in the clinical scenarios outlined below. Each option may be used once, more than once, or not at all. Jennifer, aged 12 years, developed a severe sore throat and lethargy. Amoxicillin was prescribed. The next day she developed the florid maculopapular rash shown (Fig. 15.6).
+  OPTIONS: Aspergillus fumigatus | Chickenpox virus (varicella zoster virus) | Cytomegalovirus infection | Epstein–Barr virus | Herpes simplex virus | Human immunodeficiency virus infection | Influenza virus | Lyme disease (Borrelia burgdorferi) | Malaria parasites (Plasmodium sp.) | Measles virus | Mumps virus | Parvovirus infection (fifth disease) | Pseudomonas aeruginosa | Respiratory syncytial virus | Rhinovirus | Roseola infantum (sixth disease) | Rubella virus | Staphylococcus aureus | Streptococcus pneumoniae | Tuberculosis (Mycobacterium tuberculosis)
+  KEY: Epstein–Barr virus
+OTHER pedhd-inf-10
+  STEM: Jennifer, aged 12 years, developed a severe sore throat and lethargy. Amoxicillin was prescribed. The next day she developed the florid maculopapular rash shown. Which of the following is the organism that is most likely to be the causative agent in this clinical scenario?
+  OPTIONS: Mumps virus | Measles virus | RSV | Epstein-Barr virus (EBV) | Rhinovirus
+  KEY: Epstein-Barr virus (EBV)
+
+=== n 152
+BOOK pedsa-b15-10-5
+  STEM: The following (A–T) is a list of infectious agents seen in children. Select the organism that is most likely to be the causative agent in the clinical scenarios outlined below. Each option may be used once, more than once, or not at all. Philip is 4 years old and has recently started school. He presents with a widespread rash (Fig. 15.8) that is intensely itchy.
+  OPTIONS: Aspergillus fumigatus | Chickenpox virus (varicella zoster virus) | Cytomegalovirus infection | Epstein–Barr virus | Herpes simplex virus | Human immunodeficiency virus infection | Influenza virus | Lyme disease (Borrelia burgdorferi) | Malaria parasites (Plasmodium sp.) | Measles virus | Mumps virus | Parvovirus infection (fifth disease) | Pseudomonas aeruginosa | Respiratory syncytial virus | Rhinovirus | Roseola infantum (sixth disease) | Rubella virus | Staphylococcus aureus | Streptococcus pneumoniae | Tuberculosis (Mycobacterium tuberculosis)
+  KEY: Chickenpox virus (varicella zoster virus)
+OTHER pedep-inf-62
+  STEM: Philip is 4 years old and presents with a widespread, intensely itchy vesicular rash after starting school. What is the most likely causative organism?
+  OPTIONS: Chickenpox (varicella zoster virus) | Measles virus | Mumps virus | Lyme disease (Borrelia burgdorferi) | Chickenpox virus (varicella zoster virus)
+  KEY: Chickenpox (varicella zoster virus)
+
+=== n 153
+BOOK pedsa-b15-10-5
+  STEM: The following (A–T) is a list of infectious agents seen in children. Select the organism that is most likely to be the causative agent in the clinical scenarios outlined below. Each option may be used once, more than once, or not at all. Philip is 4 years old and has recently started school. He presents with a widespread rash (Fig. 15.8) that is intensely itchy.
+  OPTIONS: Aspergillus fumigatus | Chickenpox virus (varicella zoster virus) | Cytomegalovirus infection | Epstein–Barr virus | Herpes simplex virus | Human immunodeficiency virus infection | Influenza virus | Lyme disease (Borrelia burgdorferi) | Malaria parasites (Plasmodium sp.) | Measles virus | Mumps virus | Parvovirus infection (fifth disease) | Pseudomonas aeruginosa | Respiratory syncytial virus | Rhinovirus | Roseola infantum (sixth disease) | Rubella virus | Staphylococcus aureus | Streptococcus pneumoniae | Tuberculosis (Mycobacterium tuberculosis)
+  KEY: Chickenpox virus (varicella zoster virus)
+OTHER pedhd-inf-11
+  STEM: Philip is 4 years old and has recently started school. He presents with a widespread rash, shown, that is intensely itchy. Which of the following is the organism that is most likely to be the causative agent in this clinical scenario?
+  OPTIONS: Chickenpox (varicella zoster virus) | Measles virus | Mumps virus | Lyme disease (Borrelia burgdorferi) | Chickenpox virus (varicella zoster virus)
+  KEY: Chickenpox (varicella zoster virus)
+
+=== n 154
+BOOK pedsa-b15-10-7
+  STEM: The following (A–T) is a list of infectious agents seen in children. Select the organism that is most likely to be the causative agent in the clinical scenarios outlined below. Each option may be used once, more than once, or not at all. Katie is 6 years old. She missed a few days of school as she had a fever and was generally lethargic. Now she has a temperature of 38.3° C and has a marked erythematous rash on her cheeks. Hint: Also known as ‘slapped cheek’.
+  OPTIONS: Aspergillus fumigatus | Chickenpox virus (varicella zoster virus) | Cytomegalovirus infection | Epstein–Barr virus | Herpes simplex virus | Human immunodeficiency virus infection | Influenza virus | Lyme disease (Borrelia burgdorferi) | Malaria parasites (Plasmodium sp.) | Measles virus | Mumps virus | Parvovirus infection (fifth disease) | Pseudomonas aeruginosa | Respiratory syncytial virus | Rhinovirus | Roseola infantum (sixth disease) | Rubella virus | Staphylococcus aureus | Streptococcus pneumoniae | Tuberculosis (Mycobacterium tuberculosis)
+  KEY: Parvovirus infection (fifth disease)
+OTHER pedep-mf3-40
+  STEM: A 6-year-old girl missed a few days of school as she had a fever and was generally lethargic. Now she has a temperature of 38.3°C and has a marked erythematous rash on her cheeks. Which organism is most likely to be the causative agent?
+  OPTIONS: Chickenpox virus (varicella-zoster virus) | Herpes simplex virus | Measles virus | Parvovirus infection (fifth disease) | Roseola infantum (sixth disease)
+  KEY: Parvovirus infection (fifth disease)
+
+=== n 155
+BOOK pedsa-b15-10-7
+  STEM: The following (A–T) is a list of infectious agents seen in children. Select the organism that is most likely to be the causative agent in the clinical scenarios outlined below. Each option may be used once, more than once, or not at all. Katie is 6 years old. She missed a few days of school as she had a fever and was generally lethargic. Now she has a temperature of 38.3° C and has a marked erythematous rash on her cheeks. Hint: Also known as ‘slapped cheek’.
+  OPTIONS: Aspergillus fumigatus | Chickenpox virus (varicella zoster virus) | Cytomegalovirus infection | Epstein–Barr virus | Herpes simplex virus | Human immunodeficiency virus infection | Influenza virus | Lyme disease (Borrelia burgdorferi) | Malaria parasites (Plasmodium sp.) | Measles virus | Mumps virus | Parvovirus infection (fifth disease) | Pseudomonas aeruginosa | Respiratory syncytial virus | Rhinovirus | Roseola infantum (sixth disease) | Rubella virus | Staphylococcus aureus | Streptococcus pneumoniae | Tuberculosis (Mycobacterium tuberculosis)
+  KEY: Parvovirus infection (fifth disease)
+OTHER pedep-mf4-58
+  STEM: Katie is 6 years old. She missed a few days of school as she had a fever and was generally lethargic. Now she has a temperature of 38.3°C and has a marked erythematous rash on her cheeks. Which of the following is the organism that is most likely to be the causative agent in this clinical scenario?
+  OPTIONS: Parvovirus infection (fifth disease) | Roseola infantum (sixth disease) | Measles virus | Mumps virus | Cytomegalovirus infection
+  KEY: Parvovirus infection (fifth disease)
+
+=== n 156
+BOOK pedsa-b15-10-7
+  STEM: The following (A–T) is a list of infectious agents seen in children. Select the organism that is most likely to be the causative agent in the clinical scenarios outlined below. Each option may be used once, more than once, or not at all. Katie is 6 years old. She missed a few days of school as she had a fever and was generally lethargic. Now she has a temperature of 38.3° C and has a marked erythematous rash on her cheeks. Hint: Also known as ‘slapped cheek’.
+  OPTIONS: Aspergillus fumigatus | Chickenpox virus (varicella zoster virus) | Cytomegalovirus infection | Epstein–Barr virus | Herpes simplex virus | Human immunodeficiency virus infection | Influenza virus | Lyme disease (Borrelia burgdorferi) | Malaria parasites (Plasmodium sp.) | Measles virus | Mumps virus | Parvovirus infection (fifth disease) | Pseudomonas aeruginosa | Respiratory syncytial virus | Rhinovirus | Roseola infantum (sixth disease) | Rubella virus | Staphylococcus aureus | Streptococcus pneumoniae | Tuberculosis (Mycobacterium tuberculosis)
+  KEY: Parvovirus infection (fifth disease)
+OTHER pedhd-inf-12
+  STEM: Katie is 6 years old. She missed a few days of school as she had a fever and was generally lethargic. Now she has a temperature of 38.3°C and has a marked erythematous rash on her cheeks. Which of the following is the organism that is most likely to be the causative agent in this clinical scenario?
+  OPTIONS: Parvovirus infection (fifth disease) | Roseola infantum (sixth disease) | Measles virus | Mumps virus | Cytomegalovirus infection
+  KEY: Parvovirus infection (fifth disease)
+
+=== n 157
+BOOK pedsa-b15-11-1
+  STEM: For each of the following patients with an infectious disease, select the NEXT step in management from the list (A–O) below. Each option may be used once, more than once, or not at all. Mohammed is 2 years old and presents with a fever and cough for 2 days. He is drinking sips of water but is off his food. He has a temperature of 39.5° C, respiratory rate of 40 breaths/min and his oxygen saturation is normal. On examination he has mild indrawing between his ribs. On auscultation there are some crackles at the left base. There is no wheeze. He is not clinically dehydrated.
+  OPTIONS: Antipyretic/analgesia | Combined anti-tuberculosis medication | Highly active antiretroviral therapy | Intravenous aciclovir | Intravenous antibiotics | Intravenous bolus of 20 ml/kg of normal saline | Intravenous immunoglobulin | Intravenous quinine | Nasogastric rehydration therapy | Oral antibiotic | Oral rehydration solution | Oral ACT (artemisinin-based combination therapy) | Oxygen | Topical antibiotic | Topical emollient
+  KEY: Oral antibiotic
+OTHER pedhd-inf-13
+  STEM: Mohammed is 2 years old and presents with a fever and cough for 2 days. He is drinking sips of water but is off his food. He has a temperature of 39.5°C, a respiratory rate of 40 breaths/min and his oxygen saturation is normal. On examination he has mild indrawing between his ribs. On auscultation there are some crackles at the left base. There is no wheeze. He is not clinically dehydrated. Which of the following is the most appropriate NEXT step in the management of this patient?
+  OPTIONS: Oral rehydration solution | Oral antibiotic | Intravenous immunoglobulin | Combined anti-tuberculosis medication | Antipyretic/analgesia
+  KEY: Oral antibiotic
+
+=== n 158
+BOOK pedsa-b15-11-2
+  STEM: For each of the following patients with an infectious disease, select the NEXT step in management from the list (A–O) below. Each option may be used once, more than once, or not at all. Imran is 2 years old and presents with fever and a cough for 2 days. He has a fever of 38° C, a respiratory rate of 25 breaths/min and oxygen saturation of 98%. He is coryzal and has an inflamed pharynx.
+  OPTIONS: Antipyretic/analgesia | Combined anti-tuberculosis medication | Highly active antiretroviral therapy | Intravenous aciclovir | Intravenous antibiotics | Intravenous bolus of 20 ml/kg of normal saline | Intravenous immunoglobulin | Intravenous quinine | Nasogastric rehydration therapy | Oral antibiotic | Oral rehydration solution | Oral ACT (artemisinin-based combination therapy) | Oxygen | Topical antibiotic | Topical emollient
+  KEY: Antipyretic/analgesia
+OTHER pedep2-res-64
+  STEM: A 2-year-old presents with fever and a cough for 2 days. She has a fever of 38°C, a respiratory rate of 25 breaths/min, and oxygen saturation of 98%. She is having coryzal symptoms and an inflamed pharynx. Select the next step in management from the list below:
+  OPTIONS: Antipyretic/analgesia | Intravenous aciclovir | Intravenous antibiotics | Oral antibiotic | Oxygen
+  KEY: Antipyretic/analgesia
+
+=== n 159
+BOOK pedsa-b15-11-2
+  STEM: For each of the following patients with an infectious disease, select the NEXT step in management from the list (A–O) below. Each option may be used once, more than once, or not at all. Imran is 2 years old and presents with fever and a cough for 2 days. He has a fever of 38° C, a respiratory rate of 25 breaths/min and oxygen saturation of 98%. He is coryzal and has an inflamed pharynx.
+  OPTIONS: Antipyretic/analgesia | Combined anti-tuberculosis medication | Highly active antiretroviral therapy | Intravenous aciclovir | Intravenous antibiotics | Intravenous bolus of 20 ml/kg of normal saline | Intravenous immunoglobulin | Intravenous quinine | Nasogastric rehydration therapy | Oral antibiotic | Oral rehydration solution | Oral ACT (artemisinin-based combination therapy) | Oxygen | Topical antibiotic | Topical emollient
+  KEY: Antipyretic/analgesia
+OTHER pedhd-inf-14
+  STEM: Imran is 2 years old and presents with fever and a cough for 2 days. He has a fever of 38°C, a respiratory rate of 25 breaths/min and oxygen saturation of 98%. He is coryzal and has an inflamed pharynx. Which of the following is the most appropriate NEXT step in the management of this patient?
+  OPTIONS: Nasogastric rehydration therapy | Intravenous antibiotics | Antipyretic/analgesia | Oxygen | Oral antibiotic
+  KEY: Antipyretic/analgesia
+
+=== n 160
+BOOK pedsa-b15-11-3
+  STEM: For each of the following patients with an infectious disease, select the NEXT step in management from the list (A–O) below. Each option may be used once, more than once, or not at all. Mustafa, an 18-month-old boy, presents with 3 days of vomiting and diarrhoea. The vomiting has now settled but he continues to have loose stools (he had about eight loose stools in the last 24 hours). His mucous membranes are dry, he has sunken eyes and appears lethargic. His skin turgor is reduced. His extremities are warm and capillary refill time is normal.
+  OPTIONS: Antipyretic/analgesia | Combined anti-tuberculosis medication | Highly active antiretroviral therapy | Intravenous aciclovir | Intravenous antibiotics | Intravenous bolus of 20 ml/kg of normal saline | Intravenous immunoglobulin | Intravenous quinine | Nasogastric rehydration therapy | Oral antibiotic | Oral rehydration solution | Oral ACT (artemisinin-based combination therapy) | Oxygen | Topical antibiotic | Topical emollient
+  KEY: Oral rehydration solution
+OTHER pedep-emg-59
+  STEM: An 18-month-old boy presents with 3 days of vomiting and diarrhea. The vomiting has now settled, but he continues to have loose stools (he had about eight loose stools in the last 24 hours). His mucous membranes are dry, he has sunken eyes, and appears lethargic. His skin turgor is reduced. His extremities are warm and capillary refill time is normal. What is the NEXT step in management?
+  OPTIONS: Antipyretic/analgesia | Intravenous bolus of 20 mL/kg of normal saline | Nasogastric rehydration therapy | Oral antibiotic | Oral rehydration solution
+  KEY: Oral rehydration solution

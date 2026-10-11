@@ -1,0 +1,618 @@
+[
+ {
+  "id": "pedsa1-1-4",
+  "cls": "DISAGREE",
+  "first": "growth-puberty",
+  "firstSecondary": "",
+  "second": "nutrition",
+  "secondSecondary": "perinatal"
+ },
+ {
+  "id": "pedsa1-1-5",
+  "cls": "SOFT",
+  "first": "puberty",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": "puberty"
+ },
+ {
+  "id": "pedsa1-1-6",
+  "cls": "SOFT",
+  "first": "endo-thyroid",
+  "firstSecondary": "growth-puberty",
+  "second": "growth-puberty",
+  "secondSecondary": "endo-thyroid"
+ },
+ {
+  "id": "pedsa1-1-11",
+  "cls": "SOFT",
+  "first": "puberty",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": "puberty"
+ },
+ {
+  "id": "pedsa1-2-5",
+  "cls": "SOFT",
+  "first": "nutrition-feed",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": "nutrition-feed"
+ },
+ {
+  "id": "pedsa1-3-5",
+  "cls": "DISAGREE",
+  "first": "gi-abdopain",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": "gastroenterology"
+ },
+ {
+  "id": "pedsa1-3-14",
+  "cls": "DISAGREE",
+  "first": "gi-diarrhoea",
+  "firstSecondary": "",
+  "second": "emergencies",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-3-15",
+  "cls": "DISAGREE",
+  "first": "gi-diarrhoea",
+  "firstSecondary": "",
+  "second": "gastroenterology",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-4-2",
+  "cls": "DISAGREE",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "emergencies",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-4-3",
+  "cls": "SOFT",
+  "first": "accidents",
+  "firstSecondary": "",
+  "second": "emergencies",
+  "secondSecondary": "accidents"
+ },
+ {
+  "id": "pedsa1-5-6",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "emergencies",
+  "second": "haem-bleeding",
+  "secondSecondary": "infection-bact"
+ },
+ {
+  "id": "pedsa1-5-10",
+  "cls": "SOFT",
+  "first": "neurological",
+  "firstSecondary": "emergencies",
+  "second": "emergencies",
+  "secondSecondary": "neurological"
+ },
+ {
+  "id": "pedsa1-6-2",
+  "cls": "DISAGREE",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "neurological",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-6-5",
+  "cls": "SOFT",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "neonatal",
+  "secondSecondary": "perinatal"
+ },
+ {
+  "id": "pedsa1-6-8",
+  "cls": "DISAGREE",
+  "first": "infection",
+  "firstSecondary": "perinatal",
+  "second": "infection-rash",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-6-9",
+  "cls": "SOFT",
+  "first": "infection",
+  "firstSecondary": "perinatal",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-6-10",
+  "cls": "SOFT",
+  "first": "infection",
+  "firstSecondary": "perinatal",
+  "second": "perinatal",
+  "secondSecondary": "neonatal-sepsis"
+ },
+ {
+  "id": "pedsa1-6-11",
+  "cls": "DISAGREE",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "perinatal-rd",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-6-14",
+  "cls": "SOFT",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": "genetics"
+ },
+ {
+  "id": "pedsa1-7-3",
+  "cls": "SOFT",
+  "first": "perinatal-rd",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": "perinatal-rd"
+ },
+ {
+  "id": "pedsa1-7-5",
+  "cls": "SOFT",
+  "first": "perinatal-rd",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": "perinatal-rd"
+ },
+ {
+  "id": "pedsa1-7-7",
+  "cls": "SOFT",
+  "first": "neuro-stroke",
+  "firstSecondary": "perinatal",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-7-9",
+  "cls": "SOFT",
+  "first": "perinatal-rd",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": "perinatal-rd"
+ },
+ {
+  "id": "pedsa1-7-13",
+  "cls": "SOFT",
+  "first": "neonatal",
+  "firstSecondary": "",
+  "second": "liver",
+  "secondSecondary": "neonatal"
+ },
+ {
+  "id": "pedsa1-7-14",
+  "cls": "DISAGREE",
+  "first": "neonatal-seiz",
+  "firstSecondary": "",
+  "second": "neonatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-9-14",
+  "cls": "SOFT",
+  "first": "infection",
+  "firstSecondary": "",
+  "second": "haematology",
+  "secondSecondary": "infection"
+ },
+ {
+  "id": "pedsa1-9-15",
+  "cls": "SOFT",
+  "first": "infection-rash",
+  "firstSecondary": "",
+  "second": "infection",
+  "secondSecondary": "infection-rash"
+ },
+ {
+  "id": "pedsa1-9-18",
+  "cls": "SOFT",
+  "first": "infection-vesic",
+  "firstSecondary": "",
+  "second": "allergy",
+  "secondSecondary": "infection-vesic"
+ },
+ {
+  "id": "pedsa1-m-3",
+  "cls": "DISAGREE",
+  "first": "gi-diarrhoea",
+  "firstSecondary": "",
+  "second": "emergencies",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-m-9",
+  "cls": "DISAGREE",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "emergencies",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-10-2",
+  "cls": "DISAGREE",
+  "first": "gi-abdopain",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": "gastroenterology"
+ },
+ {
+  "id": "pedsa1-10-15",
+  "cls": "SOFT",
+  "first": "haematology",
+  "firstSecondary": "",
+  "second": "neonatal",
+  "secondSecondary": "haematology"
+ },
+ {
+  "id": "pedsa1-10-16",
+  "cls": "DISAGREE",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-10-20",
+  "cls": "DISAGREE",
+  "first": "nutrition",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-10-23",
+  "cls": "DISAGREE",
+  "first": "cardiac-cyan",
+  "firstSecondary": "",
+  "second": "perinatal-rd",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa1-10-25",
+  "cls": "SOFT",
+  "first": "perinatal",
+  "firstSecondary": "",
+  "second": "perinatal-rd",
+  "secondSecondary": "perinatal"
+ },
+ {
+  "id": "pedsa2-1-4",
+  "cls": "DISAGREE",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "dev-problems",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-1-6",
+  "cls": "DISAGREE",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-1-7",
+  "cls": "SOFT",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "dev-problems",
+  "secondSecondary": "normal-dev"
+ },
+ {
+  "id": "pedsa2-1-8",
+  "cls": "DISAGREE",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-1-9",
+  "cls": "DISAGREE",
+  "first": "normal-dev",
+  "firstSecondary": "",
+  "second": "neurological",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-2-6",
+  "cls": "INVALID",
+  "first": "neuro-cp",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-3-4",
+  "cls": "SOFT",
+  "first": "genetics",
+  "firstSecondary": "",
+  "second": "growth-puberty",
+  "secondSecondary": "genetics"
+ },
+ {
+  "id": "pedsa2-5-1",
+  "cls": "SOFT",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "respiratory",
+  "secondSecondary": "resp-bronch"
+ },
+ {
+  "id": "pedsa2-5-3",
+  "cls": "DISAGREE",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "emergencies",
+  "secondSecondary": "respiratory"
+ },
+ {
+  "id": "pedsa2-5-11",
+  "cls": "DISAGREE",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "infection-bact",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-5-16",
+  "cls": "INVALID",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-5-17",
+  "cls": "DISAGREE",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "respiratory",
+  "secondSecondary": "nutrition"
+ },
+ {
+  "id": "pedsa2-5-18",
+  "cls": "DISAGREE",
+  "first": "resp-bronch",
+  "firstSecondary": "",
+  "second": "respiratory",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-6-12",
+  "cls": "INVALID",
+  "first": "cardiac-cyan",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-6-16",
+  "cls": "SOFT",
+  "first": "cardiac",
+  "firstSecondary": "",
+  "second": "emergencies",
+  "secondSecondary": "cardiac"
+ },
+ {
+  "id": "pedsa2-7-3",
+  "cls": "DISAGREE",
+  "first": "renal-cakut",
+  "firstSecondary": "",
+  "second": "renal-uti",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-7-10",
+  "cls": "DISAGREE",
+  "first": "renal",
+  "firstSecondary": "",
+  "second": "renal-uti",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-7-11",
+  "cls": "DISAGREE",
+  "first": "renal",
+  "firstSecondary": "",
+  "second": "renal-uti",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-7-12",
+  "cls": "DISAGREE",
+  "first": "renal",
+  "firstSecondary": "",
+  "second": "renal-cakut",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-7-18",
+  "cls": "INVALID",
+  "first": "renal",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-8-1",
+  "cls": "SOFT",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": "neurological"
+ },
+ {
+  "id": "pedsa2-8-9",
+  "cls": "SOFT",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "emergencies",
+  "secondSecondary": "neurological"
+ },
+ {
+  "id": "pedsa2-8-11",
+  "cls": "INVALID",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-8-13",
+  "cls": "DISAGREE",
+  "first": "neuro-nm",
+  "firstSecondary": "",
+  "second": "neurological",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-8-16",
+  "cls": "SOFT",
+  "first": "neuro-stroke",
+  "firstSecondary": "",
+  "second": "perinatal",
+  "secondSecondary": "neuro-stroke"
+ },
+ {
+  "id": "pedsa2-9-1",
+  "cls": "DISAGREE",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "normal-dev",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-9-3",
+  "cls": "DISAGREE",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "gastroenterology",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-9-5",
+  "cls": "INVALID",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-9-7",
+  "cls": "DISAGREE",
+  "first": "renal-cakut",
+  "firstSecondary": "mental",
+  "second": "gi-diarrhoea",
+  "secondSecondary": "neurological"
+ },
+ {
+  "id": "pedsa2-9-8",
+  "cls": "DISAGREE",
+  "first": "mental",
+  "firstSecondary": "",
+  "second": "neurological",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-11-1",
+  "cls": "DISAGREE",
+  "first": "liver",
+  "firstSecondary": "",
+  "second": "neonatal",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-11-2",
+  "cls": "SOFT",
+  "first": "liver",
+  "firstSecondary": "",
+  "second": "neonatal",
+  "secondSecondary": "liver"
+ },
+ {
+  "id": "pedsa2-12-1",
+  "cls": "DISAGREE",
+  "first": "malignant-solid",
+  "firstSecondary": "",
+  "second": "malignant",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-12-3",
+  "cls": "SOFT",
+  "first": "infection",
+  "firstSecondary": "malignant",
+  "second": "malignant",
+  "secondSecondary": "emergencies"
+ },
+ {
+  "id": "pedsa2-12-7",
+  "cls": "INVALID",
+  "first": "malignant",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-12-8",
+  "cls": "INVALID",
+  "first": "malignant-solid",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-12-9",
+  "cls": "INVALID",
+  "first": "malignant-solid",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-m-24",
+  "cls": "SOFT",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "malignant-solid",
+  "secondSecondary": "neurological"
+ },
+ {
+  "id": "pedsa2-13-1",
+  "cls": "INVALID",
+  "first": "cardiac",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-13-10",
+  "cls": "INVALID",
+  "first": "renal",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ },
+ {
+  "id": "pedsa2-13-11",
+  "cls": "INVALID",
+  "first": "neurological",
+  "firstSecondary": "",
+  "second": "",
+  "secondSecondary": ""
+ }
+]

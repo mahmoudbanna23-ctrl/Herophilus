@@ -1,0 +1,2906 @@
+{
+ "pedsa1-1-1": {
+  "chapter": "growth-puberty"
+ },
+ "pedsa1-1-2": {
+  "chapter": "growth-puberty"
+ },
+ "pedsa1-1-3": {
+  "chapter": "growth-puberty"
+ },
+ "pedsa1-1-4": {
+  "chapter": "growth-puberty",
+  "secondary": "perinatal"
+ },
+ "pedsa1-1-5": {
+  "chapter": "puberty"
+ },
+ "pedsa1-1-6": {
+  "chapter": "endo-thyroid",
+  "secondary": "growth-puberty"
+ },
+ "pedsa1-1-7": {
+  "chapter": "puberty"
+ },
+ "pedsa1-1-8": {
+  "chapter": "puberty"
+ },
+ "pedsa1-1-9": {
+  "chapter": "puberty"
+ },
+ "pedsa1-1-10": {
+  "chapter": "puberty"
+ },
+ "pedsa1-1-11": {
+  "chapter": "puberty"
+ },
+ "pedsa1-1-12": {
+  "chapter": "normal-dev",
+  "outOfCourse": true,
+  "note": "head shape"
+ },
+ "pedsa1-1-13": {
+  "chapter": "growth-puberty"
+ },
+ "pedsa1-1-14": {
+  "chapter": "genetics",
+  "secondary": "cardiac"
+ },
+ "pedsa1-2-1": {
+  "chapter": "nutrition-feed"
+ },
+ "pedsa1-2-2": {
+  "chapter": "nutrition-feed"
+ },
+ "pedsa1-2-3": {
+  "chapter": "nutrition-feed"
+ },
+ "pedsa1-2-4": {
+  "chapter": "nutrition-feed"
+ },
+ "pedsa1-2-5": {
+  "chapter": "nutrition-feed"
+ },
+ "pedsa1-2-6": {
+  "chapter": "nutrition-feed"
+ },
+ "pedsa1-2-7": {
+  "chapter": "nutrition-feed"
+ },
+ "pedsa1-2-8": {
+  "chapter": "nutrition-feed"
+ },
+ "pedsa1-2-9": {
+  "chapter": "liver",
+  "secondary": "nutrition-feed"
+ },
+ "pedsa1-2-10": {
+  "chapter": "nutrition-vit"
+ },
+ "pedsa1-2-11": {
+  "chapter": "nutrition-vit"
+ },
+ "pedsa1-2-12": {
+  "chapter": "nutrition-pem"
+ },
+ "pedsa1-2-13": {
+  "chapter": "nutrition-pem"
+ },
+ "pedsa1-2-14": {
+  "chapter": "nutrition",
+  "secondary": "genetics"
+ },
+ "pedsa1-3-1": {
+  "chapter": "gi-abdopain"
+ },
+ "pedsa1-3-2": {
+  "chapter": "gi-abdopain"
+ },
+ "pedsa1-3-3": {
+  "chapter": "gi-abdopain"
+ },
+ "pedsa1-3-4": {
+  "chapter": "gi-abdopain"
+ },
+ "pedsa1-3-5": {
+  "chapter": "gastroenterology",
+  "secondary": "perinatal"
+ },
+ "pedsa1-3-6": {
+  "chapter": "gi-abdopain"
+ },
+ "pedsa1-3-7": {
+  "chapter": "gi-abdopain"
+ },
+ "pedsa1-3-8": {
+  "chapter": "gi-abdopain"
+ },
+ "pedsa1-3-9": {
+  "chapter": "gastroenterology"
+ },
+ "pedsa1-3-10": {
+  "chapter": "gastroenterology"
+ },
+ "pedsa1-3-11": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa1-3-12": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa1-3-13": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa1-3-14": {
+  "chapter": "gi-diarrhoea",
+  "secondary": "emergencies"
+ },
+ "pedsa1-3-15": {
+  "chapter": "gi-diarrhoea",
+  "outOfCourse": true,
+  "note": "coeliac disease",
+  "secondary": "haematology"
+ },
+ "pedsa1-3-16": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa1-3-17": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa1-3-18": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa1-4-1": {
+  "chapter": "accidents"
+ },
+ "pedsa1-4-2": {
+  "chapter": "accidents",
+  "secondary": "emergencies"
+ },
+ "pedsa1-4-3": {
+  "chapter": "accidents"
+ },
+ "pedsa1-4-4": {
+  "chapter": "accidents"
+ },
+ "pedsa1-4-5": {
+  "chapter": "accidents"
+ },
+ "pedsa1-4-6": {
+  "chapter": "accidents"
+ },
+ "pedsa1-4-7": {
+  "chapter": "accidents"
+ },
+ "pedsa1-5-1": {
+  "chapter": "emergencies"
+ },
+ "pedsa1-5-2": {
+  "chapter": "emergencies"
+ },
+ "pedsa1-5-3": {
+  "chapter": "respiratory",
+  "secondary": "emergencies"
+ },
+ "pedsa1-5-4": {
+  "chapter": "emergencies"
+ },
+ "pedsa1-5-5": {
+  "chapter": "emergencies"
+ },
+ "pedsa1-5-6": {
+  "chapter": "haem-bleeding",
+  "secondary": "infection"
+ },
+ "pedsa1-5-7": {
+  "chapter": "emergencies"
+ },
+ "pedsa1-5-8": {
+  "chapter": "emergencies"
+ },
+ "pedsa1-5-9": {
+  "chapter": "emergencies"
+ },
+ "pedsa1-5-10": {
+  "chapter": "neurological",
+  "secondary": "emergencies"
+ },
+ "pedsa1-5-11": {
+  "chapter": "allergy",
+  "secondary": "emergencies"
+ },
+ "pedsa1-5-12": {
+  "chapter": "emergencies"
+ },
+ "pedsa1-5-13": {
+  "chapter": "perinatal",
+  "outOfCourse": true,
+  "note": "sudden infant death"
+ },
+ "pedsa1-6-1": {
+  "chapter": "perinatal"
+ },
+ "pedsa1-6-2": {
+  "chapter": "perinatal",
+  "secondary": "neurological"
+ },
+ "pedsa1-6-3": {
+  "chapter": "renal-cakut",
+  "secondary": "perinatal"
+ },
+ "pedsa1-6-4": {
+  "chapter": "perinatal"
+ },
+ "pedsa1-6-5": {
+  "chapter": "perinatal"
+ },
+ "pedsa1-6-6": {
+  "chapter": "perinatal"
+ },
+ "pedsa1-6-7": {
+  "chapter": "perinatal"
+ },
+ "pedsa1-6-8": {
+  "chapter": "infection-rash",
+  "secondary": "perinatal"
+ },
+ "pedsa1-6-9": {
+  "chapter": "infection",
+  "secondary": "perinatal"
+ },
+ "pedsa1-6-10": {
+  "chapter": "infection",
+  "secondary": "perinatal"
+ },
+ "pedsa1-6-11": {
+  "chapter": "perinatal-rd",
+  "secondary": "perinatal"
+ },
+ "pedsa1-6-12": {
+  "chapter": "perinatal"
+ },
+ "pedsa1-6-13": {
+  "chapter": "perinatal"
+ },
+ "pedsa1-6-14": {
+  "chapter": "genetics",
+  "outOfCourse": true,
+  "note": "metabolic screening"
+ },
+ "pedsa1-7-1": {
+  "chapter": "perinatal-rd"
+ },
+ "pedsa1-7-2": {
+  "chapter": "perinatal-rd"
+ },
+ "pedsa1-7-3": {
+  "chapter": "perinatal-rd"
+ },
+ "pedsa1-7-4": {
+  "chapter": "perinatal-rd"
+ },
+ "pedsa1-7-5": {
+  "chapter": "perinatal-rd"
+ },
+ "pedsa1-7-6": {
+  "chapter": "perinatal",
+  "outOfCourse": true,
+  "note": "necrotising enterocolitis"
+ },
+ "pedsa1-7-7": {
+  "chapter": "neuro-stroke",
+  "secondary": "perinatal"
+ },
+ "pedsa1-7-8": {
+  "chapter": "neuro-cp",
+  "secondary": "perinatal"
+ },
+ "pedsa1-7-9": {
+  "chapter": "perinatal-rd"
+ },
+ "pedsa1-7-10": {
+  "chapter": "cardiac-cyan",
+  "secondary": "perinatal-rd"
+ },
+ "pedsa1-7-11": {
+  "chapter": "neonatal"
+ },
+ "pedsa1-7-12": {
+  "chapter": "neonatal"
+ },
+ "pedsa1-7-13": {
+  "chapter": "neonatal"
+ },
+ "pedsa1-7-14": {
+  "chapter": "neonatal",
+  "secondary": "neonatal-seiz"
+ },
+ "pedsa1-7-15": {
+  "chapter": "neonatal-sepsis"
+ },
+ "pedsa1-7-16": {
+  "chapter": "neonatal-sepsis"
+ },
+ "pedsa1-7-17": {
+  "chapter": "perinatal-hie"
+ },
+ "pedsa1-7-18": {
+  "chapter": "neonatal-seiz"
+ },
+ "pedsa1-8-1": {
+  "chapter": "allergy"
+ },
+ "pedsa1-8-2": {
+  "chapter": "allergy"
+ },
+ "pedsa1-8-3": {
+  "chapter": "allergy"
+ },
+ "pedsa1-8-4": {
+  "chapter": "allergy"
+ },
+ "pedsa1-8-5": {
+  "chapter": "allergy"
+ },
+ "pedsa1-8-6": {
+  "chapter": "allergy"
+ },
+ "pedsa1-8-7": {
+  "chapter": "allergy"
+ },
+ "pedsa1-8-8": {
+  "chapter": "allergy"
+ },
+ "pedsa1-9-1": {
+  "chapter": "infection"
+ },
+ "pedsa1-9-2": {
+  "chapter": "infection"
+ },
+ "pedsa1-9-3": {
+  "chapter": "infection"
+ },
+ "pedsa1-9-4": {
+  "chapter": "infection"
+ },
+ "pedsa1-9-5": {
+  "chapter": "infection"
+ },
+ "pedsa1-9-6": {
+  "chapter": "infection"
+ },
+ "pedsa1-9-7": {
+  "chapter": "infection"
+ },
+ "pedsa1-9-8": {
+  "chapter": "infection"
+ },
+ "pedsa1-9-9": {
+  "chapter": "infection"
+ },
+ "pedsa1-9-10": {
+  "chapter": "infection-bact"
+ },
+ "pedsa1-9-11": {
+  "chapter": "infection-bact"
+ },
+ "pedsa1-9-12": {
+  "chapter": "infection-bact"
+ },
+ "pedsa1-9-13": {
+  "chapter": "infection-rash"
+ },
+ "pedsa1-9-14": {
+  "chapter": "infection"
+ },
+ "pedsa1-9-15": {
+  "chapter": "infection-rash"
+ },
+ "pedsa1-9-16": {
+  "chapter": "infection-rash"
+ },
+ "pedsa1-9-17": {
+  "chapter": "infection-rash"
+ },
+ "pedsa1-9-18": {
+  "chapter": "infection-vesic"
+ },
+ "pedsa1-9-19": {
+  "chapter": "infection-bact"
+ },
+ "pedsa1-9-20": {
+  "chapter": "infection-bact"
+ },
+ "pedsa1-9-21": {
+  "chapter": "infection-bact"
+ },
+ "pedsa1-9-22": {
+  "chapter": "infection-immunity"
+ },
+ "pedsa1-9-23": {
+  "chapter": "infection-vaccine"
+ },
+ "pedsa1-9-24": {
+  "chapter": "infection-immunity"
+ },
+ "pedsa1-m-1": {
+  "chapter": "perinatal"
+ },
+ "pedsa1-m-2": {
+  "chapter": "growth-puberty"
+ },
+ "pedsa1-m-3": {
+  "chapter": "gi-diarrhoea",
+  "secondary": "emergencies"
+ },
+ "pedsa1-m-4": {
+  "chapter": "normal-dev"
+ },
+ "pedsa1-m-5": {
+  "chapter": "infection-vaccine"
+ },
+ "pedsa1-m-6": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa1-m-7": {
+  "chapter": "resp-bronch"
+ },
+ "pedsa1-m-8": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa1-m-9": {
+  "chapter": "emergencies",
+  "secondary": "sudden unexpected death in infancy"
+ },
+ "pedsa1-m-10": {
+  "chapter": "infection"
+ },
+ "pedsa1-10-1": {
+  "chapter": "gastroenterology"
+ },
+ "pedsa1-10-2": {
+  "chapter": "gastroenterology",
+  "secondary": "perinatal"
+ },
+ "pedsa1-10-3": {
+  "chapter": "perinatal"
+ },
+ "pedsa1-10-4": {
+  "chapter": "gi-abdopain"
+ },
+ "pedsa1-10-5": {
+  "chapter": "gastroenterology"
+ },
+ "pedsa1-10-6": {
+  "chapter": "infection-bact"
+ },
+ "pedsa1-10-7": {
+  "chapter": "infection-rash"
+ },
+ "pedsa1-10-8": {
+  "chapter": "infection-rash"
+ },
+ "pedsa1-10-9": {
+  "chapter": "infection"
+ },
+ "pedsa1-10-10": {
+  "chapter": "infection-vesic"
+ },
+ "pedsa1-10-11": {
+  "chapter": "neonatal"
+ },
+ "pedsa1-10-12": {
+  "chapter": "liver"
+ },
+ "pedsa1-10-13": {
+  "chapter": "neonatal"
+ },
+ "pedsa1-10-14": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa1-10-15": {
+  "chapter": "haematology"
+ },
+ "pedsa1-10-16": {
+  "chapter": "growth-puberty",
+  "secondary": "genetics"
+ },
+ "pedsa1-10-17": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa1-10-18": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa1-10-19": {
+  "chapter": "nutrition"
+ },
+ "pedsa1-10-20": {
+  "chapter": "growth-puberty",
+  "secondary": "nutrition"
+ },
+ "pedsa1-10-21": {
+  "chapter": "perinatal-rd"
+ },
+ "pedsa1-10-22": {
+  "chapter": "perinatal-rd"
+ },
+ "pedsa1-10-23": {
+  "chapter": "perinatal-rd",
+  "secondary": "cardiac-cyan"
+ },
+ "pedsa1-10-24": {
+  "chapter": "perinatal-rd"
+ },
+ "pedsa1-10-25": {
+  "chapter": "perinatal"
+ },
+ "pedsa2-1-1": {
+  "chapter": "normal-dev"
+ },
+ "pedsa2-1-2": {
+  "chapter": "normal-dev"
+ },
+ "pedsa2-1-3": {
+  "chapter": "normal-dev"
+ },
+ "pedsa2-1-4": {
+  "chapter": "dev-problems",
+  "secondary": "normal-dev"
+ },
+ "pedsa2-1-5": {
+  "chapter": "normal-dev"
+ },
+ "pedsa2-1-6": {
+  "chapter": "normal-dev",
+  "outOfCourse": true,
+  "note": "hearing and vision",
+  "secondary": "perinatal"
+ },
+ "pedsa2-1-7": {
+  "chapter": "normal-dev",
+  "outOfCourse": true,
+  "note": "hearing and vision"
+ },
+ "pedsa2-1-8": {
+  "chapter": "normal-dev",
+  "outOfCourse": true,
+  "note": "hearing and vision",
+  "secondary": "malignant-solid"
+ },
+ "pedsa2-1-9": {
+  "chapter": "normal-dev",
+  "outOfCourse": true,
+  "note": "hearing and vision",
+  "secondary": "neurological"
+ },
+ "pedsa2-1-10": {
+  "chapter": "normal-dev"
+ },
+ "pedsa2-2-1": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa2-2-2": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa2-2-3": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa2-2-4": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa2-2-5": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa2-2-6": {
+  "chapter": "neuro-cp",
+  "secondary": "dev-problems"
+ },
+ "pedsa2-2-7": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa2-2-8": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa2-2-9": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa2-2-10": {
+  "chapter": "dev-problems",
+  "outOfCourse": true,
+  "note": "developmental regression"
+ },
+ "pedsa2-2-11": {
+  "chapter": "dev-nd"
+ },
+ "pedsa2-2-12": {
+  "chapter": "dev-nd"
+ },
+ "pedsa2-3-1": {
+  "chapter": "genetics"
+ },
+ "pedsa2-3-2": {
+  "chapter": "genetics"
+ },
+ "pedsa2-3-3": {
+  "chapter": "genetics"
+ },
+ "pedsa2-3-4": {
+  "chapter": "genetics"
+ },
+ "pedsa2-3-5": {
+  "chapter": "genetics"
+ },
+ "pedsa2-3-6": {
+  "chapter": "genetics"
+ },
+ "pedsa2-3-7": {
+  "chapter": "genetics"
+ },
+ "pedsa2-3-8": {
+  "chapter": "genetics"
+ },
+ "pedsa2-3-9": {
+  "chapter": "genetics"
+ },
+ "pedsa2-3-10": {
+  "chapter": "genetics"
+ },
+ "pedsa2-3-11": {
+  "chapter": "genetics"
+ },
+ "pedsa2-3-12": {
+  "chapter": "genetics"
+ },
+ "pedsa2-4-1": {
+  "chapter": "haematology"
+ },
+ "pedsa2-4-2": {
+  "chapter": "haematology"
+ },
+ "pedsa2-4-3": {
+  "chapter": "haematology"
+ },
+ "pedsa2-4-4": {
+  "chapter": "haematology"
+ },
+ "pedsa2-4-5": {
+  "chapter": "haematology"
+ },
+ "pedsa2-4-6": {
+  "chapter": "haematology"
+ },
+ "pedsa2-4-7": {
+  "chapter": "haematology"
+ },
+ "pedsa2-4-8": {
+  "chapter": "haematology"
+ },
+ "pedsa2-4-9": {
+  "chapter": "haem-bleeding"
+ },
+ "pedsa2-4-10": {
+  "chapter": "haem-bleeding"
+ },
+ "pedsa2-4-11": {
+  "chapter": "haem-bleeding"
+ },
+ "pedsa2-4-12": {
+  "chapter": "haem-bleeding"
+ },
+ "pedsa2-4-13": {
+  "chapter": "malignant",
+  "secondary": "haematology"
+ },
+ "pedsa2-4-14": {
+  "chapter": "haematology"
+ },
+ "pedsa2-5-1": {
+  "chapter": "resp-bronch",
+  "note": "chronic lung disease"
+ },
+ "pedsa2-5-2": {
+  "chapter": "resp-bronch",
+  "note": "chronic lung disease"
+ },
+ "pedsa2-5-3": {
+  "chapter": "emergencies",
+  "note": "chronic lung disease",
+  "secondary": "respiratory"
+ },
+ "pedsa2-5-4": {
+  "chapter": "resp-bronch",
+  "note": "chronic lung disease"
+ },
+ "pedsa2-5-5": {
+  "chapter": "resp-bronch",
+  "note": "chronic lung disease"
+ },
+ "pedsa2-5-6": {
+  "chapter": "resp-bronch",
+  "note": "chronic lung disease"
+ },
+ "pedsa2-5-7": {
+  "chapter": "resp-bronch",
+  "note": "chronic lung disease"
+ },
+ "pedsa2-5-8": {
+  "chapter": "resp-bronch",
+  "note": "chronic lung disease"
+ },
+ "pedsa2-5-9": {
+  "chapter": "resp-pneumonia"
+ },
+ "pedsa2-5-10": {
+  "chapter": "resp-pneumonia"
+ },
+ "pedsa2-5-11": {
+  "chapter": "infection-bact",
+  "note": "chronic lung disease",
+  "secondary": "resp-bronch"
+ },
+ "pedsa2-5-12": {
+  "chapter": "respiratory"
+ },
+ "pedsa2-5-13": {
+  "chapter": "respiratory"
+ },
+ "pedsa2-5-14": {
+  "chapter": "respiratory"
+ },
+ "pedsa2-5-15": {
+  "chapter": "respiratory"
+ },
+ "pedsa2-5-16": {
+  "chapter": "respiratory",
+  "outOfCourse": true,
+  "note": "chronic lung disease",
+  "secondary": "cystic fibrosis"
+ },
+ "pedsa2-5-17": {
+  "chapter": "respiratory",
+  "outOfCourse": true,
+  "note": "chronic lung disease",
+  "secondary": "cystic fibrosis"
+ },
+ "pedsa2-5-18": {
+  "chapter": "respiratory",
+  "outOfCourse": true,
+  "note": "chronic lung disease",
+  "secondary": "primary ciliary dyskinesia"
+ },
+ "pedsa2-6-1": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-6-2": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-6-3": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-6-4": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-6-5": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-6-6": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-6-7": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-6-8": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-6-9": {
+  "chapter": "cardiac-cyan"
+ },
+ "pedsa2-6-10": {
+  "chapter": "cardiac-cyan"
+ },
+ "pedsa2-6-11": {
+  "chapter": "cardiac-cyan"
+ },
+ "pedsa2-6-12": {
+  "chapter": "cardiac",
+  "secondary": "cardiac-cyan"
+ },
+ "pedsa2-6-13": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-6-14": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-6-15": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-6-16": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-6-17": {
+  "chapter": "cardiac-acq"
+ },
+ "pedsa2-6-18": {
+  "chapter": "cardiac-acq"
+ },
+ "pedsa2-7-1": {
+  "chapter": "renal"
+ },
+ "pedsa2-7-2": {
+  "chapter": "renal"
+ },
+ "pedsa2-7-3": {
+  "chapter": "renal-uti",
+  "secondary": "renal-cakut"
+ },
+ "pedsa2-7-4": {
+  "chapter": "renal-cakut"
+ },
+ "pedsa2-7-5": {
+  "chapter": "renal-cakut"
+ },
+ "pedsa2-7-6": {
+  "chapter": "renal-cakut"
+ },
+ "pedsa2-7-7": {
+  "chapter": "renal-cakut"
+ },
+ "pedsa2-7-8": {
+  "chapter": "renal-uti"
+ },
+ "pedsa2-7-9": {
+  "chapter": "renal-uti"
+ },
+ "pedsa2-7-10": {
+  "chapter": "renal-uti"
+ },
+ "pedsa2-7-11": {
+  "chapter": "renal-uti"
+ },
+ "pedsa2-7-12": {
+  "chapter": "renal-cakut"
+ },
+ "pedsa2-7-13": {
+  "chapter": "renal"
+ },
+ "pedsa2-7-14": {
+  "chapter": "renal"
+ },
+ "pedsa2-7-15": {
+  "chapter": "renal"
+ },
+ "pedsa2-7-16": {
+  "chapter": "renal"
+ },
+ "pedsa2-7-17": {
+  "chapter": "renal"
+ },
+ "pedsa2-7-18": {
+  "chapter": "renal",
+  "secondary": "emergencies"
+ },
+ "pedsa2-8-1": {
+  "chapter": "neurological",
+  "note": "general neurology"
+ },
+ "pedsa2-8-2": {
+  "chapter": "neurological",
+  "note": "general neurology"
+ },
+ "pedsa2-8-3": {
+  "chapter": "neurological",
+  "note": "general neurology"
+ },
+ "pedsa2-8-4": {
+  "chapter": "neurological",
+  "note": "general neurology"
+ },
+ "pedsa2-8-5": {
+  "chapter": "neurological"
+ },
+ "pedsa2-8-6": {
+  "chapter": "neurological"
+ },
+ "pedsa2-8-7": {
+  "chapter": "neurological"
+ },
+ "pedsa2-8-8": {
+  "chapter": "neurological"
+ },
+ "pedsa2-8-9": {
+  "chapter": "neurological"
+ },
+ "pedsa2-8-10": {
+  "chapter": "neurological"
+ },
+ "pedsa2-8-11": {
+  "chapter": "neurological"
+ },
+ "pedsa2-8-12": {
+  "chapter": "neurological"
+ },
+ "pedsa2-8-13": {
+  "chapter": "neuro-nm",
+  "secondary": "neurological"
+ },
+ "pedsa2-8-14": {
+  "chapter": "neuro-nm"
+ },
+ "pedsa2-8-15": {
+  "chapter": "neuro-nm"
+ },
+ "pedsa2-8-16": {
+  "chapter": "neuro-stroke"
+ },
+ "pedsa2-9-1": {
+  "chapter": "mental",
+  "outOfCourse": true,
+  "note": "infant crying",
+  "secondary": "normal-dev"
+ },
+ "pedsa2-9-2": {
+  "chapter": "accidents",
+  "secondary": "mental"
+ },
+ "pedsa2-9-3": {
+  "chapter": "mental"
+ },
+ "pedsa2-9-4": {
+  "chapter": "nutrition",
+  "secondary": "mental"
+ },
+ "pedsa2-9-5": {
+  "chapter": "mental",
+  "secondary": "neurological"
+ },
+ "pedsa2-9-6": {
+  "chapter": "gi-diarrhoea",
+  "secondary": "mental"
+ },
+ "pedsa2-9-7": {
+  "chapter": "gi-diarrhoea",
+  "secondary": "renal-cakut"
+ },
+ "pedsa2-9-8": {
+  "chapter": "mental",
+  "secondary": "neurological"
+ },
+ "pedsa2-10-1": {
+  "chapter": "endocrine"
+ },
+ "pedsa2-10-2": {
+  "chapter": "endocrine"
+ },
+ "pedsa2-10-3": {
+  "chapter": "endocrine"
+ },
+ "pedsa2-10-4": {
+  "chapter": "endo-dka"
+ },
+ "pedsa2-10-5": {
+  "chapter": "endocrine"
+ },
+ "pedsa2-10-6": {
+  "chapter": "endocrine"
+ },
+ "pedsa2-10-7": {
+  "chapter": "endocrine"
+ },
+ "pedsa2-10-8": {
+  "chapter": "endo-dka"
+ },
+ "pedsa2-10-9": {
+  "chapter": "endo-dka"
+ },
+ "pedsa2-10-10": {
+  "chapter": "endocrine"
+ },
+ "pedsa2-10-11": {
+  "chapter": "endocrine"
+ },
+ "pedsa2-10-12": {
+  "chapter": "endocrine"
+ },
+ "pedsa2-10-13": {
+  "chapter": "endocrine"
+ },
+ "pedsa2-10-14": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa2-10-15": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa2-10-16": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa2-11-1": {
+  "chapter": "liver",
+  "secondary": "neonatal"
+ },
+ "pedsa2-11-2": {
+  "chapter": "liver"
+ },
+ "pedsa2-11-3": {
+  "chapter": "liver"
+ },
+ "pedsa2-11-4": {
+  "chapter": "liver"
+ },
+ "pedsa2-11-5": {
+  "chapter": "liver"
+ },
+ "pedsa2-11-6": {
+  "chapter": "liver"
+ },
+ "pedsa2-11-7": {
+  "chapter": "liver",
+  "secondary": "infection"
+ },
+ "pedsa2-11-8": {
+  "chapter": "liver-hep"
+ },
+ "pedsa2-11-9": {
+  "chapter": "liver-hep"
+ },
+ "pedsa2-11-10": {
+  "chapter": "liver-hep"
+ },
+ "pedsa2-11-11": {
+  "chapter": "liver"
+ },
+ "pedsa2-11-12": {
+  "chapter": "liver-hep"
+ },
+ "pedsa2-12-1": {
+  "chapter": "malignant",
+  "secondary": "malignant-solid"
+ },
+ "pedsa2-12-2": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa2-12-3": {
+  "chapter": "infection",
+  "secondary": "malignant"
+ },
+ "pedsa2-12-4": {
+  "chapter": "malignant"
+ },
+ "pedsa2-12-5": {
+  "chapter": "malignant"
+ },
+ "pedsa2-12-6": {
+  "chapter": "malignant"
+ },
+ "pedsa2-12-7": {
+  "chapter": "malignant"
+ },
+ "pedsa2-12-8": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa2-12-9": {
+  "chapter": "malignant-solid",
+  "secondary": "endocrine"
+ },
+ "pedsa2-12-10": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa2-m-21": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-m-22": {
+  "chapter": "endo-dka"
+ },
+ "pedsa2-m-23": {
+  "chapter": "liver-hep"
+ },
+ "pedsa2-m-24": {
+  "chapter": "neurological"
+ },
+ "pedsa2-13-1": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-13-2": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-13-3": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-13-4": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-13-5": {
+  "chapter": "cardiac-cyan"
+ },
+ "pedsa2-13-6": {
+  "chapter": "renal"
+ },
+ "pedsa2-13-7": {
+  "chapter": "renal"
+ },
+ "pedsa2-13-8": {
+  "chapter": "renal"
+ },
+ "pedsa2-13-9": {
+  "chapter": "renal"
+ },
+ "pedsa2-13-10": {
+  "chapter": "renal"
+ },
+ "pedsa2-13-11": {
+  "chapter": "neurological"
+ },
+ "pedsa2-13-12": {
+  "chapter": "neurological"
+ },
+ "pedsa2-13-13": {
+  "chapter": "cardiac"
+ },
+ "pedsa2-13-14": {
+  "chapter": "neurological"
+ },
+ "pedsa2-13-15": {
+  "chapter": "neurological"
+ },
+ "pedsa2-13-16": {
+  "chapter": "liver"
+ },
+ "pedsa2-13-17": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa2-13-18": {
+  "chapter": "haematology"
+ },
+ "pedsa2-13-19": {
+  "chapter": "malignant"
+ },
+ "pedsa2-13-20": {
+  "chapter": "renal"
+ },
+ "pedsa-b1-1": {
+  "chapter": "respiratory",
+  "outOfCourse": true,
+  "note": "child poverty and mortality"
+ },
+ "pedsa-b1-2": {
+  "chapter": "normal-dev",
+  "outOfCourse": true,
+  "note": "child poverty and mortality"
+ },
+ "pedsa-b1-3": {
+  "chapter": "perinatal",
+  "outOfCourse": true,
+  "note": "child poverty and mortality",
+  "secondary": "child health epidemiology"
+ },
+ "pedsa-b2-1": {
+  "chapter": "cardiac",
+  "outOfCourse": true,
+  "note": "history and examination"
+ },
+ "pedsa-b2-2": {
+  "chapter": "infection",
+  "outOfCourse": true,
+  "note": "history and examination",
+  "secondary": "haematology"
+ },
+ "pedsa-b2-3": {
+  "chapter": "neuro-nm",
+  "outOfCourse": true,
+  "note": "history and examination",
+  "secondary": "neuro-cp"
+ },
+ "pedsa-b2-4": {
+  "chapter": "neuro-cp",
+  "outOfCourse": true,
+  "note": "history and examination"
+ },
+ "pedsa-b2-5": {
+  "chapter": "normal-dev",
+  "outOfCourse": true,
+  "note": "history and examination"
+ },
+ "pedsa-b2-6": {
+  "chapter": "respiratory",
+  "outOfCourse": true,
+  "note": "history and examination"
+ },
+ "pedsa-b2-7": {
+  "chapter": "respiratory",
+  "outOfCourse": true,
+  "note": "history and examination",
+  "secondary": "primary ciliary dyskinesia"
+ },
+ "pedsa-b2-8-1": {
+  "chapter": "resp-bronch",
+  "outOfCourse": true,
+  "note": "history and examination"
+ },
+ "pedsa-b2-8-2": {
+  "chapter": "resp-pneumonia",
+  "outOfCourse": true,
+  "note": "history and examination"
+ },
+ "pedsa-b2-8-3": {
+  "chapter": "accidents",
+  "outOfCourse": true,
+  "note": "history and examination",
+  "secondary": "respiratory"
+ },
+ "pedsa-b2-8-4": {
+  "chapter": "resp-pneumonia",
+  "outOfCourse": true,
+  "note": "history and examination"
+ },
+ "pedsa-b2-9-1": {
+  "chapter": "respiratory",
+  "outOfCourse": true,
+  "note": "history and examination"
+ },
+ "pedsa-b3-1": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-2": {
+  "chapter": "normal-dev",
+  "secondary": "dev-problems"
+ },
+ "pedsa-b3-3": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-4": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-5": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-6": {
+  "chapter": "mental",
+  "secondary": "normal-dev"
+ },
+ "pedsa-b3-7-1": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-7-2": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-7-3": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-7-4": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-7-5": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-7-6": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-7-7": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-7-8": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-7-9": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-7-10": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-8-1": {
+  "chapter": "infection-vaccine",
+  "secondary": "normal-dev"
+ },
+ "pedsa-b3-8-2": {
+  "chapter": "normal-dev",
+  "secondary": "perinatal"
+ },
+ "pedsa-b3-8-3": {
+  "chapter": "normal-dev",
+  "secondary": "accidents"
+ },
+ "pedsa-b3-8-4": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b3-8-5": {
+  "chapter": "normal-dev"
+ },
+ "pedsa-b4-1": {
+  "chapter": "dev-nd",
+  "secondary": "dev-problems"
+ },
+ "pedsa-b4-2": {
+  "chapter": "dev-nd",
+  "secondary": "dev-problems"
+ },
+ "pedsa-b4-3": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa-b4-4": {
+  "chapter": "neuro-cp",
+  "secondary": "dev-problems"
+ },
+ "pedsa-b4-5": {
+  "chapter": "dev-problems",
+  "secondary": "normal-dev"
+ },
+ "pedsa-b4-6": {
+  "chapter": "dev-problems",
+  "secondary": "normal-dev"
+ },
+ "pedsa-b4-7": {
+  "chapter": "dev-problems",
+  "secondary": "normal-dev"
+ },
+ "pedsa-b4-8": {
+  "chapter": "dev-problems",
+  "secondary": "normal-dev"
+ },
+ "pedsa-b4-9-1": {
+  "chapter": "neuro-cp",
+  "secondary": "dev-problems"
+ },
+ "pedsa-b4-9-2": {
+  "chapter": "genetics",
+  "secondary": "dev-problems"
+ },
+ "pedsa-b4-9-3": {
+  "chapter": "infection",
+  "secondary": "dev-problems"
+ },
+ "pedsa-b4-9-4": {
+  "chapter": "neurological",
+  "secondary": "dev-problems"
+ },
+ "pedsa-b4-9-5": {
+  "chapter": "neuro-nm",
+  "secondary": "dev-problems"
+ },
+ "pedsa-b4-10-1": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa-b4-10-2": {
+  "chapter": "neuro-cp",
+  "secondary": "neonatal"
+ },
+ "pedsa-b4-10-3": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa-b4-10-4": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa-b4-10-5": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa-b4-11-1": {
+  "chapter": "dev-problems",
+  "secondary": "neurological"
+ },
+ "pedsa-b4-11-2": {
+  "chapter": "dev-problems",
+  "secondary": "nutrition"
+ },
+ "pedsa-b4-11-3": {
+  "chapter": "dev-problems",
+  "secondary": "nutrition"
+ },
+ "pedsa-b4-11-4": {
+  "chapter": "dev-problems",
+  "secondary": "dev-nd"
+ },
+ "pedsa-b4-11-5": {
+  "chapter": "dev-problems",
+  "secondary": "neuro-nm"
+ },
+ "pedsa-b4-11-6": {
+  "chapter": "dev-problems"
+ },
+ "pedsa-b4-11-7": {
+  "chapter": "dev-problems"
+ },
+ "pedsa-b4-11-8": {
+  "chapter": "dev-problems",
+  "secondary": "accidents"
+ },
+ "pedsa-b5-1": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child"
+ },
+ "pedsa-b5-2": {
+  "chapter": "neuro-nm",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "communication of diagnosis"
+ },
+ "pedsa-b5-3": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "communication"
+ },
+ "pedsa-b5-4-1": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "neonatal-sepsis"
+ },
+ "pedsa-b5-4-2": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "resp-pneumonia"
+ },
+ "pedsa-b5-4-3": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "respiratory"
+ },
+ "pedsa-b5-4-4": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "perinatal"
+ },
+ "pedsa-b5-4-5": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "allergy"
+ },
+ "pedsa-b5-5-1": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "infection-vaccine"
+ },
+ "pedsa-b5-5-2": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child"
+ },
+ "pedsa-b5-5-3": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child"
+ },
+ "pedsa-b5-5-4": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child"
+ },
+ "pedsa-b5-5-5": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "accidents"
+ },
+ "pedsa-b5-5-6": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "malignant-solid"
+ },
+ "pedsa-b5-5-7": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "haematology"
+ },
+ "pedsa-b5-6-1": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "medical ethics"
+ },
+ "pedsa-b5-6-2": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "medical ethics"
+ },
+ "pedsa-b5-6-3": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "medical ethics"
+ },
+ "pedsa-b5-6-4": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "medical ethics"
+ },
+ "pedsa-b5-6-5": {
+  "chapter": "emergencies",
+  "outOfCourse": true,
+  "note": "care of sick child",
+  "secondary": "medical ethics"
+ },
+ "pedsa-b6-1": {
+  "chapter": "emergencies"
+ },
+ "pedsa-b6-2": {
+  "chapter": "infection",
+  "secondary": "emergencies"
+ },
+ "pedsa-b6-3": {
+  "chapter": "accidents",
+  "secondary": "emergencies"
+ },
+ "pedsa-b6-4": {
+  "chapter": "emergencies"
+ },
+ "pedsa-b6-5": {
+  "chapter": "emergencies",
+  "secondary": "accidents"
+ },
+ "pedsa-b6-6": {
+  "chapter": "gi-abdopain",
+  "secondary": "emergencies"
+ },
+ "pedsa-b6-7": {
+  "chapter": "emergencies"
+ },
+ "pedsa-b6-8": {
+  "chapter": "emergencies",
+  "secondary": "gi-diarrhoea"
+ },
+ "pedsa-b6-9": {
+  "chapter": "neurological",
+  "secondary": "emergencies"
+ },
+ "pedsa-b6-10": {
+  "chapter": "allergy",
+  "secondary": "emergencies"
+ },
+ "pedsa-b6-11": {
+  "chapter": "allergy",
+  "secondary": "emergencies"
+ },
+ "pedsa-b6-12": {
+  "chapter": "emergencies",
+  "secondary": "sudden unexpected death in infancy"
+ },
+ "pedsa-b6-13-1": {
+  "chapter": "emergencies"
+ },
+ "pedsa-b6-13-2": {
+  "chapter": "emergencies"
+ },
+ "pedsa-b6-13-3": {
+  "chapter": "emergencies"
+ },
+ "pedsa-b6-13-4": {
+  "chapter": "emergencies",
+  "secondary": "endocrine"
+ },
+ "pedsa-b6-13-5": {
+  "chapter": "neurological",
+  "secondary": "emergencies"
+ },
+ "pedsa-b7-1": {
+  "chapter": "accidents",
+  "secondary": "malignant"
+ },
+ "pedsa-b7-2": {
+  "chapter": "accidents"
+ },
+ "pedsa-b7-3": {
+  "chapter": "accidents"
+ },
+ "pedsa-b7-4": {
+  "chapter": "accidents"
+ },
+ "pedsa-b7-5": {
+  "chapter": "accidents",
+  "secondary": "emergencies"
+ },
+ "pedsa-b7-6": {
+  "chapter": "accidents"
+ },
+ "pedsa-b7-7": {
+  "chapter": "accidents"
+ },
+ "pedsa-b7-8": {
+  "chapter": "accidents",
+  "secondary": "emergencies"
+ },
+ "pedsa-b7-9": {
+  "chapter": "accidents",
+  "secondary": "emergencies"
+ },
+ "pedsa-b7-10": {
+  "chapter": "accidents"
+ },
+ "pedsa-b7-11": {
+  "chapter": "accidents"
+ },
+ "pedsa-b7-12": {
+  "chapter": "accidents",
+  "secondary": "gastroenterology"
+ },
+ "pedsa-b7-13-1": {
+  "chapter": "accidents"
+ },
+ "pedsa-b7-13-2": {
+  "chapter": "accidents",
+  "secondary": "liver"
+ },
+ "pedsa-b7-13-3": {
+  "chapter": "accidents"
+ },
+ "pedsa-b7-13-4": {
+  "chapter": "accidents"
+ },
+ "pedsa-b7-13-5": {
+  "chapter": "accidents"
+ },
+ "pedsa-b8-1": {
+  "chapter": "accidents",
+  "outOfCourse": true,
+  "note": "child protection",
+  "secondary": "child protection"
+ },
+ "pedsa-b8-2": {
+  "chapter": "accidents",
+  "outOfCourse": true,
+  "note": "child protection",
+  "secondary": "child protection"
+ },
+ "pedsa-b8-3": {
+  "chapter": "accidents",
+  "outOfCourse": true,
+  "note": "child protection",
+  "secondary": "child protection"
+ },
+ "pedsa-b8-4": {
+  "chapter": "accidents",
+  "outOfCourse": true,
+  "note": "child protection",
+  "secondary": "child protection"
+ },
+ "pedsa-b8-5-1": {
+  "chapter": "accidents",
+  "outOfCourse": true,
+  "note": "child protection",
+  "secondary": "child protection"
+ },
+ "pedsa-b8-5-2": {
+  "chapter": "infection-bact",
+  "outOfCourse": true,
+  "note": "child protection",
+  "secondary": "child protection"
+ },
+ "pedsa-b8-5-3": {
+  "chapter": "haem-bleeding",
+  "outOfCourse": true,
+  "note": "child protection",
+  "secondary": "child protection"
+ },
+ "pedsa-b8-5-4": {
+  "chapter": "infection",
+  "outOfCourse": true,
+  "note": "child protection",
+  "secondary": "child protection"
+ },
+ "pedsa-b8-5-5": {
+  "chapter": "accidents",
+  "outOfCourse": true,
+  "note": "child protection",
+  "secondary": "child protection"
+ },
+ "pedsa-b9-1": {
+  "chapter": "genetics",
+  "secondary": "haem-bleeding"
+ },
+ "pedsa-b9-2": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-3": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-4": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-5": {
+  "chapter": "genetics",
+  "secondary": "cardiac"
+ },
+ "pedsa-b9-6": {
+  "chapter": "genetics",
+  "secondary": "endo-thyroid"
+ },
+ "pedsa-b9-7": {
+  "chapter": "genetics",
+  "secondary": "malignant"
+ },
+ "pedsa-b9-8": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-9": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-10": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-11": {
+  "chapter": "genetics",
+  "secondary": "respiratory"
+ },
+ "pedsa-b9-12": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-13": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-14": {
+  "chapter": "genetics",
+  "secondary": "growth-puberty"
+ },
+ "pedsa-b9-15-1": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-15-2": {
+  "chapter": "genetics",
+  "secondary": "growth-puberty"
+ },
+ "pedsa-b9-15-3": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-15-4": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-15-5": {
+  "chapter": "genetics",
+  "secondary": "puberty"
+ },
+ "pedsa-b9-16-1": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-16-2": {
+  "chapter": "genetics",
+  "secondary": "haematology"
+ },
+ "pedsa-b9-16-3": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-16-4": {
+  "chapter": "genetics"
+ },
+ "pedsa-b9-16-5": {
+  "chapter": "genetics",
+  "secondary": "gastroenterology"
+ },
+ "pedsa-b10-1": {
+  "chapter": "perinatal"
+ },
+ "pedsa-b10-2": {
+  "chapter": "renal-cakut",
+  "secondary": "perinatal"
+ },
+ "pedsa-b10-3": {
+  "chapter": "perinatal"
+ },
+ "pedsa-b10-4": {
+  "chapter": "perinatal"
+ },
+ "pedsa-b10-5": {
+  "chapter": "perinatal",
+  "secondary": "cardiac"
+ },
+ "pedsa-b10-6": {
+  "chapter": "perinatal-rd",
+  "secondary": "perinatal"
+ },
+ "pedsa-b10-7": {
+  "chapter": "perinatal",
+  "secondary": "infection"
+ },
+ "pedsa-b10-8": {
+  "chapter": "perinatal"
+ },
+ "pedsa-b10-9": {
+  "chapter": "perinatal"
+ },
+ "pedsa-b10-10": {
+  "chapter": "perinatal",
+  "secondary": "genetics"
+ },
+ "pedsa-b10-11": {
+  "chapter": "perinatal",
+  "secondary": "neonatal-seiz"
+ },
+ "pedsa-b10-12": {
+  "chapter": "perinatal"
+ },
+ "pedsa-b10-13-1": {
+  "chapter": "perinatal"
+ },
+ "pedsa-b10-13-2": {
+  "chapter": "perinatal"
+ },
+ "pedsa-b10-13-3": {
+  "chapter": "perinatal"
+ },
+ "pedsa-b10-13-4": {
+  "chapter": "perinatal"
+ },
+ "pedsa-b10-13-5": {
+  "chapter": "perinatal"
+ },
+ "pedsa-b11-1": {
+  "chapter": "perinatal-rd",
+  "secondary": "perinatal"
+ },
+ "pedsa-b11-2": {
+  "chapter": "neonatal"
+ },
+ "pedsa-b11-3": {
+  "chapter": "neonatal-sepsis",
+  "secondary": "perinatal"
+ },
+ "pedsa-b11-4": {
+  "chapter": "neonatal-sepsis"
+ },
+ "pedsa-b11-5": {
+  "chapter": "gastroenterology",
+  "secondary": "perinatal"
+ },
+ "pedsa-b11-6": {
+  "chapter": "perinatal"
+ },
+ "pedsa-b11-7-1": {
+  "chapter": "perinatal-rd"
+ },
+ "pedsa-b11-7-2": {
+  "chapter": "perinatal-rd"
+ },
+ "pedsa-b11-7-3": {
+  "chapter": "perinatal-rd",
+  "secondary": "perinatal"
+ },
+ "pedsa-b11-8-1": {
+  "chapter": "neonatal"
+ },
+ "pedsa-b11-8-2": {
+  "chapter": "neonatal"
+ },
+ "pedsa-b11-8-3": {
+  "chapter": "neonatal"
+ },
+ "pedsa-b11-8-4": {
+  "chapter": "neonatal"
+ },
+ "pedsa-b11-9-1": {
+  "chapter": "cardiac",
+  "secondary": "perinatal-rd"
+ },
+ "pedsa-b11-9-2": {
+  "chapter": "perinatal-rd"
+ },
+ "pedsa-b12-1": {
+  "chapter": "growth-puberty",
+  "secondary": "nutrition"
+ },
+ "pedsa-b12-2": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa-b12-3": {
+  "chapter": "puberty"
+ },
+ "pedsa-b12-4": {
+  "chapter": "puberty"
+ },
+ "pedsa-b12-5": {
+  "chapter": "growth-puberty"
+ },
+ "pedsa-b12-6-1": {
+  "chapter": "growth-puberty"
+ },
+ "pedsa-b12-6-2": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa-b12-6-3": {
+  "chapter": "growth-puberty",
+  "secondary": "gi-diarrhoea"
+ },
+ "pedsa-b13-1": {
+  "chapter": "nutrition-vit"
+ },
+ "pedsa-b13-2": {
+  "chapter": "nutrition"
+ },
+ "pedsa-b13-3": {
+  "chapter": "nutrition",
+  "secondary": "perinatal"
+ },
+ "pedsa-b13-4": {
+  "chapter": "nutrition-feed",
+  "secondary": "haem-bleeding"
+ },
+ "pedsa-b13-5": {
+  "chapter": "nutrition-pem"
+ },
+ "pedsa-b13-6": {
+  "chapter": "nutrition"
+ },
+ "pedsa-b13-7-1": {
+  "chapter": "nutrition-vit"
+ },
+ "pedsa-b13-7-2": {
+  "chapter": "haem-bleeding",
+  "secondary": "nutrition-vit"
+ },
+ "pedsa-b13-7-3": {
+  "chapter": "nutrition-pem"
+ },
+ "pedsa-b13-7-4": {
+  "chapter": "allergy",
+  "secondary": "nutrition-feed"
+ },
+ "pedsa-b13-7-5": {
+  "chapter": "growth-puberty",
+  "secondary": "nutrition"
+ },
+ "pedsa-b14-1": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa-b14-2": {
+  "chapter": "gi-diarrhoea",
+  "secondary": "nutrition"
+ },
+ "pedsa-b14-3": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa-b14-4": {
+  "chapter": "gi-diarrhoea",
+  "secondary": "gi-abdopain"
+ },
+ "pedsa-b14-5": {
+  "chapter": "gastroenterology"
+ },
+ "pedsa-b14-6": {
+  "chapter": "gi-abdopain"
+ },
+ "pedsa-b14-7": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa-b14-8": {
+  "chapter": "gi-diarrhoea",
+  "secondary": "perinatal"
+ },
+ "pedsa-b14-9-1": {
+  "chapter": "gastroenterology"
+ },
+ "pedsa-b14-9-2": {
+  "chapter": "endo-dka"
+ },
+ "pedsa-b14-9-3": {
+  "chapter": "gastroenterology"
+ },
+ "pedsa-b14-9-4": {
+  "chapter": "gastroenterology"
+ },
+ "pedsa-b14-9-5": {
+  "chapter": "gastroenterology",
+  "secondary": "neurological"
+ },
+ "pedsa-b14-10-1": {
+  "chapter": "gi-abdopain"
+ },
+ "pedsa-b14-10-2": {
+  "chapter": "resp-pneumonia"
+ },
+ "pedsa-b14-10-3": {
+  "chapter": "gi-abdopain"
+ },
+ "pedsa-b14-10-4": {
+  "chapter": "gi-abdopain",
+  "secondary": "gi-diarrhoea"
+ },
+ "pedsa-b14-10-5": {
+  "chapter": "gi-diarrhoea",
+  "secondary": "gi-abdopain"
+ },
+ "pedsa-b15-1": {
+  "chapter": "infection",
+  "secondary": "infection-bact"
+ },
+ "pedsa-b15-2": {
+  "chapter": "infection",
+  "secondary": "infection-bact"
+ },
+ "pedsa-b15-3": {
+  "chapter": "infection"
+ },
+ "pedsa-b15-4": {
+  "chapter": "infection"
+ },
+ "pedsa-b15-5": {
+  "chapter": "infection-vesic"
+ },
+ "pedsa-b15-6": {
+  "chapter": "infection-bact",
+  "secondary": "cardiac-acq"
+ },
+ "pedsa-b15-7": {
+  "chapter": "infection-immunity",
+  "secondary": "resp-pneumonia"
+ },
+ "pedsa-b15-8": {
+  "chapter": "infection-bact"
+ },
+ "pedsa-b15-9": {
+  "chapter": "infection-vaccine"
+ },
+ "pedsa-b15-10-1": {
+  "chapter": "infection-rash"
+ },
+ "pedsa-b15-10-2": {
+  "chapter": "infection"
+ },
+ "pedsa-b15-10-3": {
+  "chapter": "infection-rash"
+ },
+ "pedsa-b15-10-4": {
+  "chapter": "infection"
+ },
+ "pedsa-b15-10-5": {
+  "chapter": "infection-vesic"
+ },
+ "pedsa-b15-10-6": {
+  "chapter": "infection-bact"
+ },
+ "pedsa-b15-10-7": {
+  "chapter": "infection-rash"
+ },
+ "pedsa-b15-11-1": {
+  "chapter": "resp-pneumonia"
+ },
+ "pedsa-b15-11-2": {
+  "chapter": "infection"
+ },
+ "pedsa-b15-11-3": {
+  "chapter": "gi-diarrhoea"
+ },
+ "pedsa-b15-11-4": {
+  "chapter": "resp-pneumonia"
+ },
+ "pedsa-b15-11-5": {
+  "chapter": "infection-bact",
+  "secondary": "cardiac-acq"
+ },
+ "pedsa-b16-1": {
+  "chapter": "allergy",
+  "secondary": "emergencies"
+ },
+ "pedsa-b16-2": {
+  "chapter": "allergy"
+ },
+ "pedsa-b16-3": {
+  "chapter": "allergy"
+ },
+ "pedsa-b16-4": {
+  "chapter": "allergy",
+  "secondary": "gi-diarrhoea"
+ },
+ "pedsa-b17-1": {
+  "chapter": "infection-bact"
+ },
+ "pedsa-b17-2": {
+  "chapter": "infection-bact",
+  "secondary": "infection-vaccine"
+ },
+ "pedsa-b17-3": {
+  "chapter": "infection-bact",
+  "secondary": "resp-bronch"
+ },
+ "pedsa-b17-4": {
+  "chapter": "resp-pneumonia",
+  "secondary": "infection-bact"
+ },
+ "pedsa-b17-5": {
+  "chapter": "respiratory"
+ },
+ "pedsa-b17-6": {
+  "chapter": "respiratory"
+ },
+ "pedsa-b17-7": {
+  "chapter": "respiratory"
+ },
+ "pedsa-b17-8": {
+  "chapter": "respiratory",
+  "secondary": "cystic fibrosis"
+ },
+ "pedsa-b17-9": {
+  "chapter": "infection",
+  "secondary": "resp-bronch"
+ },
+ "pedsa-b17-10": {
+  "chapter": "infection"
+ },
+ "pedsa-b17-11": {
+  "chapter": "resp-bronch",
+  "secondary": "croup"
+ },
+ "pedsa-b17-12-1": {
+  "chapter": "respiratory",
+  "secondary": "cystic fibrosis"
+ },
+ "pedsa-b17-12-2": {
+  "chapter": "accidents",
+  "secondary": "respiratory"
+ },
+ "pedsa-b17-12-3": {
+  "chapter": "resp-pneumonia"
+ },
+ "pedsa-b17-12-4": {
+  "chapter": "perinatal-rd",
+  "secondary": "perinatal"
+ },
+ "pedsa-b17-13-1": {
+  "chapter": "resp-bronch"
+ },
+ "pedsa-b17-13-2": {
+  "chapter": "resp-bronch"
+ },
+ "pedsa-b17-13-3": {
+  "chapter": "respiratory",
+  "secondary": "cystic fibrosis"
+ },
+ "pedsa-b17-13-4": {
+  "chapter": "resp-pneumonia"
+ },
+ "pedsa-b17-13-5": {
+  "chapter": "infection-bact",
+  "secondary": "resp-bronch"
+ },
+ "pedsa-b17-14-1": {
+  "chapter": "infection-bact"
+ },
+ "pedsa-b17-14-2": {
+  "chapter": "respiratory"
+ },
+ "pedsa-b17-14-3": {
+  "chapter": "respiratory"
+ },
+ "pedsa-b18-1": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-2": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-3": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-4": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-5": {
+  "chapter": "cardiac-acq",
+  "secondary": "emergencies"
+ },
+ "pedsa-b18-6-1": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-6-2": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-6-3": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-6-4": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-6-5": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-7-1": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-7-2": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-7-3": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-7-4": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-8-1": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-8-2": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-8-3": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b18-8-4": {
+  "chapter": "cardiac"
+ },
+ "pedsa-b19-1": {
+  "chapter": "renal-uti"
+ },
+ "pedsa-b19-2": {
+  "chapter": "renal-uti"
+ },
+ "pedsa-b19-3": {
+  "chapter": "renal-cakut"
+ },
+ "pedsa-b19-4": {
+  "chapter": "renal-uti"
+ },
+ "pedsa-b19-5": {
+  "chapter": "renal-uti"
+ },
+ "pedsa-b19-6": {
+  "chapter": "renal"
+ },
+ "pedsa-b19-7": {
+  "chapter": "renal"
+ },
+ "pedsa-b19-8": {
+  "chapter": "renal"
+ },
+ "pedsa-b19-9": {
+  "chapter": "renal-cakut"
+ },
+ "pedsa-b19-10": {
+  "chapter": "renal-cakut",
+  "secondary": "renal"
+ },
+ "pedsa-b19-11-1": {
+  "chapter": "renal-uti"
+ },
+ "pedsa-b19-11-2": {
+  "chapter": "renal-uti"
+ },
+ "pedsa-b19-11-3": {
+  "chapter": "renal-uti"
+ },
+ "pedsa-b19-11-4": {
+  "chapter": "renal"
+ },
+ "pedsa-b19-11-5": {
+  "chapter": "renal-uti"
+ },
+ "pedsa-b19-12-1": {
+  "chapter": "renal-cakut"
+ },
+ "pedsa-b19-12-2": {
+  "chapter": "renal-uti"
+ },
+ "pedsa-b19-12-3": {
+  "chapter": "renal-cakut"
+ },
+ "pedsa-b19-12-4": {
+  "chapter": "renal-cakut",
+  "secondary": "renal-uti"
+ },
+ "pedsa-b20-1": {
+  "chapter": "gi-abdopain",
+  "outOfCourse": true,
+  "note": "genital disorders",
+  "secondary": "renal-cakut"
+ },
+ "pedsa-b20-2": {
+  "chapter": "renal-cakut",
+  "outOfCourse": true,
+  "note": "genital disorders",
+  "secondary": "emergencies"
+ },
+ "pedsa-b20-3": {
+  "chapter": "renal-cakut",
+  "outOfCourse": true,
+  "note": "genital disorders",
+  "secondary": "infection-bact"
+ },
+ "pedsa-b20-4": {
+  "chapter": "renal-cakut",
+  "outOfCourse": true,
+  "note": "genital disorders"
+ },
+ "pedsa-b21-1": {
+  "chapter": "liver",
+  "secondary": "neonatal-sepsis"
+ },
+ "pedsa-b21-2": {
+  "chapter": "liver",
+  "secondary": "neonatal"
+ },
+ "pedsa-b21-3": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa-b21-4": {
+  "chapter": "infection-vaccine"
+ },
+ "pedsa-b21-5": {
+  "chapter": "liver-hep",
+  "secondary": "genetics"
+ },
+ "pedsa-b21-6-1": {
+  "chapter": "liver"
+ },
+ "pedsa-b21-6-2": {
+  "chapter": "liver-hep"
+ },
+ "pedsa-b21-6-3": {
+  "chapter": "liver"
+ },
+ "pedsa-b21-6-4": {
+  "chapter": "liver-hep"
+ },
+ "pedsa-b22-1": {
+  "chapter": "malignant"
+ },
+ "pedsa-b22-2": {
+  "chapter": "malignant",
+  "secondary": "infection"
+ },
+ "pedsa-b22-3": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa-b22-4": {
+  "chapter": "malignant"
+ },
+ "pedsa-b22-5": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa-b22-6": {
+  "chapter": "infection-vesic",
+  "secondary": "malignant"
+ },
+ "pedsa-b22-7": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa-b22-8": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa-b22-9-1": {
+  "chapter": "malignant"
+ },
+ "pedsa-b22-9-2": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa-b22-9-3": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa-b22-9-4": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa-b22-10-1": {
+  "chapter": "malignant"
+ },
+ "pedsa-b22-10-2": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa-b22-10-3": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa-b22-10-4": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa-b22-10-5": {
+  "chapter": "malignant-solid"
+ },
+ "pedsa-b22-10-6": {
+  "chapter": "malignant"
+ },
+ "pedsa-b23-1": {
+  "chapter": "haematology"
+ },
+ "pedsa-b23-2": {
+  "chapter": "haematology"
+ },
+ "pedsa-b23-3": {
+  "chapter": "haem-bleeding"
+ },
+ "pedsa-b23-4": {
+  "chapter": "haematology"
+ },
+ "pedsa-b23-5": {
+  "chapter": "haematology"
+ },
+ "pedsa-b23-6": {
+  "chapter": "haematology"
+ },
+ "pedsa-b23-7-1": {
+  "chapter": "haem-bleeding"
+ },
+ "pedsa-b23-7-2": {
+  "chapter": "haem-bleeding"
+ },
+ "pedsa-b23-7-3": {
+  "chapter": "malignant"
+ },
+ "pedsa-b23-7-4": {
+  "chapter": "haematology"
+ },
+ "pedsa-b23-8-1": {
+  "chapter": "haem-bleeding"
+ },
+ "pedsa-b23-8-2": {
+  "chapter": "haematology"
+ },
+ "pedsa-b23-8-3": {
+  "chapter": "haem-bleeding"
+ },
+ "pedsa-b23-8-4": {
+  "chapter": "haematology"
+ },
+ "pedsa-b23-8-5": {
+  "chapter": "haematology"
+ },
+ "pedsa-b24-1": {
+  "chapter": "renal-cakut",
+  "secondary": "mental"
+ },
+ "pedsa-b24-2": {
+  "chapter": "mental"
+ },
+ "pedsa-b24-3": {
+  "chapter": "mental",
+  "secondary": "dev-nd"
+ },
+ "pedsa-b24-4": {
+  "chapter": "gi-diarrhoea",
+  "secondary": "gi-abdopain"
+ },
+ "pedsa-b24-5": {
+  "chapter": "mental"
+ },
+ "pedsa-b24-6": {
+  "chapter": "mental"
+ },
+ "pedsa-b24-7": {
+  "chapter": "mental"
+ },
+ "pedsa-b24-8-1": {
+  "chapter": "mental"
+ },
+ "pedsa-b24-8-2": {
+  "chapter": "mental"
+ },
+ "pedsa-b24-8-3": {
+  "chapter": "mental"
+ },
+ "pedsa-b25-1": {
+  "chapter": "infection-bact",
+  "outOfCourse": true,
+  "note": "dermatology",
+  "secondary": "dermatology"
+ },
+ "pedsa-b25-2": {
+  "chapter": "allergy",
+  "outOfCourse": true,
+  "note": "dermatology",
+  "secondary": "dermatology"
+ },
+ "pedsa-b25-3": {
+  "chapter": "infection",
+  "outOfCourse": true,
+  "note": "dermatology",
+  "secondary": "dermatology"
+ },
+ "pedsa-b25-4": {
+  "chapter": "allergy",
+  "outOfCourse": true,
+  "note": "dermatology",
+  "secondary": "dermatology"
+ },
+ "pedsa-b25-5": {
+  "chapter": "allergy",
+  "outOfCourse": true,
+  "note": "dermatology"
+ },
+ "pedsa-b25-6": {
+  "chapter": "allergy",
+  "outOfCourse": true,
+  "note": "dermatology"
+ },
+ "pedsa-b25-7": {
+  "chapter": "puberty",
+  "outOfCourse": true,
+  "note": "dermatology",
+  "secondary": "dermatology"
+ },
+ "pedsa-b25-8": {
+  "chapter": "infection",
+  "outOfCourse": true,
+  "note": "dermatology",
+  "secondary": "dermatology"
+ },
+ "pedsa-b25-9": {
+  "chapter": "infection",
+  "outOfCourse": true,
+  "note": "dermatology",
+  "secondary": "dermatology"
+ },
+ "pedsa-b25-10": {
+  "chapter": "resp-pneumonia",
+  "outOfCourse": true,
+  "note": "dermatology",
+  "secondary": "infection-bact"
+ },
+ "pedsa-b25-11-1": {
+  "chapter": "haem-bleeding",
+  "outOfCourse": true,
+  "note": "dermatology"
+ },
+ "pedsa-b25-11-2": {
+  "chapter": "allergy",
+  "outOfCourse": true,
+  "note": "dermatology",
+  "secondary": "dermatology"
+ },
+ "pedsa-b25-11-3": {
+  "chapter": "infection",
+  "outOfCourse": true,
+  "note": "dermatology",
+  "secondary": "dermatology"
+ },
+ "pedsa-b25-11-4": {
+  "chapter": "infection",
+  "outOfCourse": true,
+  "note": "dermatology",
+  "secondary": "dermatology"
+ },
+ "pedsa-b25-11-5": {
+  "chapter": "allergy",
+  "outOfCourse": true,
+  "note": "dermatology"
+ },
+ "pedsa-b26-1": {
+  "chapter": "endocrine"
+ },
+ "pedsa-b26-2": {
+  "chapter": "endocrine"
+ },
+ "pedsa-b26-3": {
+  "chapter": "endocrine"
+ },
+ "pedsa-b26-4": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa-b26-5": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa-b26-6": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa-b26-7": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa-b26-8": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa-b26-9": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa-b26-10": {
+  "chapter": "puberty",
+  "secondary": "genetics"
+ },
+ "pedsa-b26-11": {
+  "chapter": "endo-thyroid"
+ },
+ "pedsa-b26-12-1": {
+  "chapter": "endo-dka"
+ },
+ "pedsa-b26-12-2": {
+  "chapter": "endocrine"
+ },
+ "pedsa-b26-12-3": {
+  "chapter": "endocrine"
+ },
+ "pedsa-b26-12-4": {
+  "chapter": "endocrine"
+ },
+ "pedsa-b27-1": {
+  "chapter": "genetics",
+  "outOfCourse": true,
+  "note": "inborn metabolism"
+ },
+ "pedsa-b27-2": {
+  "chapter": "genetics",
+  "outOfCourse": true,
+  "note": "inborn metabolism"
+ },
+ "pedsa-b27-3": {
+  "chapter": "genetics",
+  "outOfCourse": true,
+  "note": "inborn metabolism"
+ },
+ "pedsa-b28-1": {
+  "chapter": "infection-bact",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-2": {
+  "chapter": "growth-puberty",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-3": {
+  "chapter": "growth-puberty",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-4": {
+  "chapter": "infection-bact",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-5": {
+  "chapter": "infection-immunity",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "rheumatology"
+ },
+ "pedsa-b28-6": {
+  "chapter": "haem-bleeding",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders"
+ },
+ "pedsa-b28-7": {
+  "chapter": "infection",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-8": {
+  "chapter": "perinatal",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-9": {
+  "chapter": "genetics",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "accidents"
+ },
+ "pedsa-b28-10": {
+  "chapter": "growth-puberty",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-11": {
+  "chapter": "genetics",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-12-1": {
+  "chapter": "infection-bact",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-12-2": {
+  "chapter": "accidents",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-12-3": {
+  "chapter": "infection",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-13-1": {
+  "chapter": "growth-puberty",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-13-2": {
+  "chapter": "neuro-nm",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-13-3": {
+  "chapter": "growth-puberty",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-13-4": {
+  "chapter": "growth-puberty",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-13-5": {
+  "chapter": "malignant-solid",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-14-1": {
+  "chapter": "perinatal",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-14-2": {
+  "chapter": "nutrition-vit",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-14-3": {
+  "chapter": "normal-dev",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b28-14-4": {
+  "chapter": "normal-dev",
+  "outOfCourse": true,
+  "note": "musculoskeletal disorders",
+  "secondary": "musculoskeletal"
+ },
+ "pedsa-b29-1": {
+  "chapter": "malignant-solid",
+  "secondary": "neurological"
+ },
+ "pedsa-b29-2": {
+  "chapter": "neuro-nm",
+  "secondary": "genetics"
+ },
+ "pedsa-b29-3": {
+  "chapter": "renal-uti"
+ },
+ "pedsa-b29-4": {
+  "chapter": "neurological",
+  "secondary": "infection"
+ },
+ "pedsa-b29-5": {
+  "chapter": "neurological"
+ },
+ "pedsa-b29-6": {
+  "chapter": "perinatal",
+  "secondary": "neonatal-seiz"
+ },
+ "pedsa-b29-7": {
+  "chapter": "neurological"
+ },
+ "pedsa-b29-8": {
+  "chapter": "neuro-nm"
+ },
+ "pedsa-b29-9": {
+  "chapter": "genetics",
+  "secondary": "neurological"
+ },
+ "pedsa-b29-10": {
+  "chapter": "genetics",
+  "secondary": "perinatal"
+ },
+ "pedsa-b29-11": {
+  "chapter": "neurological"
+ },
+ "pedsa-b29-12": {
+  "chapter": "neurological"
+ },
+ "pedsa-b29-13-1": {
+  "chapter": "neurological"
+ },
+ "pedsa-b29-13-2": {
+  "chapter": "neurological"
+ },
+ "pedsa-b29-13-3": {
+  "chapter": "cardiac-acq",
+  "secondary": "neurological"
+ },
+ "pedsa-b29-13-4": {
+  "chapter": "neurological"
+ },
+ "pedsa-b29-13-5": {
+  "chapter": "neurological"
+ },
+ "pedsa-b29-14-1": {
+  "chapter": "neurological"
+ },
+ "pedsa-b29-14-2": {
+  "chapter": "neurological"
+ },
+ "pedsa-b29-14-3": {
+  "chapter": "neurological"
+ },
+ "pedsa-b29-15-1": {
+  "chapter": "neuro-nm"
+ },
+ "pedsa-b29-15-2": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa-b29-15-3": {
+  "chapter": "neuro-nm"
+ },
+ "pedsa-b29-15-4": {
+  "chapter": "neuro-cp"
+ },
+ "pedsa-b29-15-5": {
+  "chapter": "infection"
+ },
+ "pedsa-b30-1": {
+  "chapter": "puberty",
+  "outOfCourse": true,
+  "note": "adolescent medicine",
+  "secondary": "adolescent medicine"
+ },
+ "pedsa-b30-2": {
+  "chapter": "puberty",
+  "outOfCourse": true,
+  "note": "adolescent medicine",
+  "secondary": "adolescent medicine"
+ },
+ "pedsa-b30-3": {
+  "chapter": "accidents",
+  "outOfCourse": true,
+  "note": "adolescent medicine",
+  "secondary": "adolescent medicine"
+ },
+ "pedsa-b30-4": {
+  "chapter": "puberty",
+  "outOfCourse": true,
+  "note": "adolescent medicine",
+  "secondary": "adolescent medicine"
+ },
+ "pedsa-b30-5-1": {
+  "chapter": "puberty",
+  "outOfCourse": true,
+  "note": "adolescent medicine",
+  "secondary": "adolescent medicine"
+ },
+ "pedsa-b30-5-2": {
+  "chapter": "mental",
+  "outOfCourse": true,
+  "note": "adolescent medicine",
+  "secondary": "adolescent medicine"
+ },
+ "pedsa-b30-5-3": {
+  "chapter": "malignant-solid",
+  "outOfCourse": true,
+  "note": "adolescent medicine",
+  "secondary": "adolescent medicine"
+ },
+ "pedsa-b30-5-4": {
+  "chapter": "mental",
+  "outOfCourse": true,
+  "note": "adolescent medicine",
+  "secondary": "adolescent medicine"
+ },
+ "pedsa-b30-5-5": {
+  "chapter": "mental",
+  "outOfCourse": true,
+  "note": "adolescent medicine",
+  "secondary": "adolescent medicine"
+ },
+ "pedsa-b31-1": {
+  "chapter": "perinatal",
+  "outOfCourse": true,
+  "note": "global child health",
+  "secondary": "global child health"
+ },
+ "pedsa-b31-2": {
+  "chapter": "perinatal",
+  "outOfCourse": true,
+  "note": "global child health",
+  "secondary": "global child health"
+ },
+ "pedsa-b31-3": {
+  "chapter": "accidents",
+  "outOfCourse": true,
+  "note": "global child health",
+  "secondary": "global child health"
+ }
+}

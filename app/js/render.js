@@ -298,7 +298,7 @@ function vModule(p){
   <p class="page-sub">${qs.length} question${qs.length===1?'':'s'} · ${qs.filter(q=>isAnswered(q.id)).length} answered${a!==null?` · <b style="color:${accColor(a)}">${a}% accuracy</b>`:''}</p>`;
 
   /* Source filter. Only rendered for banks this module actually has questions
-     from, so an empty module does not offer three dead toggles. */
+     from, so an empty module does not offer four dead toggles. */
   const allQ=allQsInModule(m.id);
   const present=BANKS.filter(b=>allQ.some(q=>banksOf(q).indexOf(b.id)>=0));
   if(present.length>1){

@@ -1,0 +1,9 @@
+AGENTS.md loaded — Herophilus
+
+Completed and wrote the check-7 report artifacts under `check7/`.
+
+- Verdicts: 587 AGREE, 1 DISAGREE, 0 DOUBT, 0 MISSED-SAME
+- Disagreement: `pedsa-b15-7` / `pedep-mf1-37` — keyed answer is pneumonia versus SCID.
+- Pairs not read: 0
+
+Files: [verdicts.json](D:\claude os\Medical school\Herophilus\content\peds\qb-pages\sa\_work\sweep\pairs\check7\verdicts.json), [refute-pairs.md](D:\claude os\Medical school\Herophilus\content\peds\qb-pages\sa\_work\sweep\pairs\check7\refute-pairs.md), [not-read.json](D:\claude os\Medical school\Herophilus\content\peds\qb-pages\sa\_work\sweep\pairs\check7\not-read.json).

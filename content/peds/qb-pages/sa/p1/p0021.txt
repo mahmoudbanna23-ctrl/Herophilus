@@ -1,0 +1,36 @@
+3.11 · SINGLE BEST ANSWER
+
+A 2-year-old with gastroenteritis has been drinking large volumes of water. He has a seizure. Serum
+sodium is 124 mmol/L. What is the mechanism?
+
+ A. Water moves out of the brain, causing cerebral shrinkage
+ B. Water moves into cells, increasing brain volume
+ C. Cerebral vasospasm
+D. Hypoglycaemia
+ E. Hypocalcaemia from bicarbonate loss
+
+Answer: B.
+
+Hyponatraemic dehydration: extracellular hypotonicity drives water into cells → increased brain volume
+→ seizures, plus early exaggerated peripheral signs and early shock. Hypernatraemia does the opposite
+(cerebral shrinkage).
+
+
+
+
+3.12 · MANAGEMENT
+
+A child with hypernatraemic dehydration has a sodium of 162 mmol/L. What rate of correction is
+appropriate?
+
+ A. As fast as possible with 5% dextrose
+ B. Reduce sodium by less than 0.5 mmol/L per hour over at least 48 hours
+ C. Reduce sodium by 2 mmol/L per hour
+D. Give 0.45% saline as a rapid bolus
+ E. Restrict all fluids for 24 hours
+
+Answer: B.
+
+Rapid correction causes cerebral oedema and seizures. Use 0.9% saline (± 5% glucose) tailored to
+response, with regular sodium measurement.
+

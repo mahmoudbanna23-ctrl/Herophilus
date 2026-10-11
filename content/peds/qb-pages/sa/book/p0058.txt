@@ -1,0 +1,71 @@
+           9.11                                                    E. X-linked recessive
+           A. 1 in 6                                               Males and females are equally affected in this
+           This would be the risk if Mark was known to be a        family’s pedigree therefore, it cannot be X-linked
+           carrier but Gemma’s status was unknown. A               recessive.
+ 9         more complicated pedigree where Mark already
+           has an affected child by another partner could          9.13
+                                                                   A. 46, XO
+           give this risk.
+                                                                   An interesting karyotype. This could only occur if
+Genetics
+
+
+
+           B. 1 in 37.5                                            you had an extra autosome and a missing sex
+           This is roughly the risk that both parents are          chromosome.
+           carriers. As Gemma does not have the condition
+           there are three possible outcomes, one (33%) is         B. 46, XY
+           that she is not a carrier, the other two (66%) are      Normal male karyotype.
+           that she is a carrier, i.e. 2/3 × 1/25 = 1 in 37.5.     C. 45, XO
+           C. 1 in 100                                             Turner syndrome.
+           This is a tempting option but incorrect. If Gemma       D. 45, XY
+           was known to be a carrier and she found a               There is a missing autosome. This would not be
+           partner from the general population, this would         survivable.
+           be the chance that a pregnancy would result in
+           an affected child, i.e. 1/25 × 1/4 = 1/100.             E. 47, XXY
+                                                                   Correct. This is Klinefelter syndrome.
+           D. 1 in 150
+           Correct. As Gemma does not have the condition           9.14
+           there are three possible outcomes, one (1 in 3) is      A. Cushing syndrome
+           that she is not a carrier, the other two (2 in 3) are   In Cushing syndrome there is growth failure but
+           that she is a carrier. The risk of Mark being an        you would also expect other clinical features as
+           unaffected carrier is the population frequency of       listed in Box 9.1.
+           heterozygosity. The risk of two carriers having an
+           affected child is 1 in 4 per pregnancy. Therefore
+           the risk is roughly 2/3 × 1/25 × 1/4. This could be
+           refined slightly if Gemma’s status is known, but        Box 9.1 Clinical features of Cushing
+           this might not influence the couples decision           syndrome
+           about screening. Checking whether Mark is a
+           carrier has a bigger influence on the risk.              •   Growth failure/short stature
+                                                                    •   Face and trunk obesity
+           E. 1 in 2500                                             •   Red cheeks
+           This is incorrect but is the risk for Caucasian
+                                                                    •   Hirsutism
+           couples having a child with cystic fibrosis in
+           the UK.                                                  •   Striae
+                                                                    •   Hypertension
+           9.12                                                     •   Bruising
+           A. Autosomal dominant                                    •   Carbohydrate intolerance
+           Correct. This is the most common mode of
+                                                                    •   Muscle wasting and weakness
+           Mendelian inheritance. An affected individual
+           carries the abnormal gene in the heterozygous            •   Osteopenia
+           state. Offspring have a 50% chance of inheriting         •   Psychological problems.
+           the abnormal gene.
+           B. Autosomal recessive
+           Providing that new partners came from outside
+           this family, the chance that this pattern is            B. Down syndrome
+           autosomal recessive is extremely low.                   Children with Down syndrome are small but
+                                                                   have different clinical features. See Box 9.2.
+           C. Imprinting from uniparental disomy
+           Following meiosis, imprinting proceeds in a             C. Noonan syndrome
+           ‘parent of origin’ specific manner. In general this     Correct. She has a round face with short,
+           ‘resets’ the genetic information correctly and          webbed neck, and short stature since infancy,
+           therefore uniparental disomy is not heritable.          characteristic of Noonan syndrome. There is
+                                                                   some overlap with the phenotype of Turner
+           D. X-linked dominant                                    syndrome, but her karyotype is normal.
+           In X-linked dominant inheritance all the
+           daughters of an affected male have the                  D. Turner syndrome
+   52      condition as he must pass on a copy of the gene         The normal karyotype excludes Turner
+           to any daughter.                                        syndrome.
+

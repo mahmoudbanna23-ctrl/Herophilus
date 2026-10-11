@@ -36,7 +36,7 @@
 .shortcuts .d{color:var(--ink-3);font-weight:600}
 
 .filterbar{display:flex;gap:9px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
-/* Source filter — which of the three question banks a module draws from. */
+/* Source filter — which of the four question banks (endpoint, house, gradegain, selfassess) a module draws from. */
 .bankbar{display:flex;gap:8px;margin:0 0 16px;flex-wrap:wrap;align-items:center}
 .bank-lbl{font-size:var(--fs-sm);font-weight:900;letter-spacing:.08em;text-transform:uppercase;
   color:var(--ink-2);margin-right:2px}
@@ -75,7 +75,7 @@
 .bankchip.on .bankn{background:rgba(0,0,0,.26)}
 .bankchip:not(.on) .bankn{background:rgba(0,0,0,.08)}
 .bankchip.reset{border-style:dashed;opacity:1;text-decoration:none;font-weight:700}
-/* Which of the three banks this question came from, on the question itself. */
+/* Which of the four banks (incl. selfassess) this question came from, on the question itself. */
 /* white again, for the same reason as .bankchip.on — the Greek bank colours are
    dark. This pill sits right beside a question stem, so it is the one to
    re-measure first if those colours are ever touched. */

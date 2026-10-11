@@ -1,0 +1,3512 @@
+[
+  {
+    "book": "pedsa-b10-1",
+    "live": "pedep-per-1",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.62 10.1"
+  },
+  {
+    "book": "pedsa-b10-1",
+    "live": "pedhd-peri-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.62 10.1"
+  },
+  {
+    "book": "pedsa-b10-12",
+    "live": "pedep-mf4-24",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.63 10.12"
+  },
+  {
+    "book": "pedsa-b10-13-1",
+    "live": "pedhd-peri-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.64 10.13.1"
+  },
+  {
+    "book": "pedsa-b10-13-2",
+    "live": "pedhd-peri-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.64 10.13.2"
+  },
+  {
+    "book": "pedsa-b10-13-3",
+    "live": "pedep-per-12",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.64 10.13.3"
+  },
+  {
+    "book": "pedsa-b10-13-3",
+    "live": "pedhd-peri-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.64 10.13.3"
+  },
+  {
+    "book": "pedsa-b10-13-4",
+    "live": "pedhd-peri-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.64 10.13.4"
+  },
+  {
+    "book": "pedsa-b10-13-5",
+    "live": "pedep-per-14",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.65 10.13.5"
+  },
+  {
+    "book": "pedsa-b10-13-5",
+    "live": "pedhd-peri-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.65 10.13.5"
+  },
+  {
+    "book": "pedsa-b10-2",
+    "live": "pedep-per-2",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.62 10.2"
+  },
+  {
+    "book": "pedsa-b10-2",
+    "live": "pedhd-peri-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.62 10.2"
+  },
+  {
+    "book": "pedsa-b10-3",
+    "live": "pedep-per-3",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.62 10.3"
+  },
+  {
+    "book": "pedsa-b10-3",
+    "live": "pedhd-peri-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.62 10.3"
+  },
+  {
+    "book": "pedsa-b10-4",
+    "live": "pedep-per-4",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.62 10.4"
+  },
+  {
+    "book": "pedsa-b10-4",
+    "live": "pedhd-peri-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.62 10.4"
+  },
+  {
+    "book": "pedsa-b10-5",
+    "live": "pedep-neo-35",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.62 10.5"
+  },
+  {
+    "book": "pedsa-b10-5",
+    "live": "pedep-per-5",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.62 10.5"
+  },
+  {
+    "book": "pedsa-b10-5",
+    "live": "pedhd-peri-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.62 10.5"
+  },
+  {
+    "book": "pedsa-b10-6",
+    "live": "pedep-neo-40",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.62 10.6"
+  },
+  {
+    "book": "pedsa-b10-6",
+    "live": "pedep-per-6",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.62 10.6"
+  },
+  {
+    "book": "pedsa-b10-6",
+    "live": "pedhd-peri-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.62 10.6"
+  },
+  {
+    "book": "pedsa-b10-7",
+    "live": "pedep-per-7",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.63 10.7"
+  },
+  {
+    "book": "pedsa-b10-7",
+    "live": "pedhd-peri-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.63 10.7"
+  },
+  {
+    "book": "pedsa-b10-8",
+    "live": "pedep-per-8",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.63 10.8"
+  },
+  {
+    "book": "pedsa-b10-8",
+    "live": "pedhd-peri-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.63 10.8"
+  },
+  {
+    "book": "pedsa-b10-9",
+    "live": "pedep-mf3-16",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.63 10.9"
+  },
+  {
+    "book": "pedsa-b10-9",
+    "live": "pedep-neo-37",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.63 10.9"
+  },
+  {
+    "book": "pedsa-b10-9",
+    "live": "pedep-per-9",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.63 10.9"
+  },
+  {
+    "book": "pedsa-b10-9",
+    "live": "pedhd-peri-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.63 10.9"
+  },
+  {
+    "book": "pedsa-b11-1",
+    "live": "pedep-mf2-78",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.69 11.1"
+  },
+  {
+    "book": "pedsa-b11-1",
+    "live": "pedep-neo-1",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.69 11.1"
+  },
+  {
+    "book": "pedsa-b11-1",
+    "live": "pedhd-neo-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.69 11.1"
+  },
+  {
+    "book": "pedsa-b11-2",
+    "live": "pedep-neo-2",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.69 11.2"
+  },
+  {
+    "book": "pedsa-b11-2",
+    "live": "pedhd-neo-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.69 11.2"
+  },
+  {
+    "book": "pedsa-b11-4",
+    "live": "pedep-mf3-41",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.69 11.4"
+  },
+  {
+    "book": "pedsa-b11-4",
+    "live": "pedep-mf3-6",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.69 11.4"
+  },
+  {
+    "book": "pedsa-b11-4",
+    "live": "pedep-neo-3",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.69 11.4"
+  },
+  {
+    "book": "pedsa-b11-4",
+    "live": "pedhd-neo-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.69 11.4"
+  },
+  {
+    "book": "pedsa-b11-5",
+    "live": "pedep-neo-4",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.70 11.5"
+  },
+  {
+    "book": "pedsa-b11-5",
+    "live": "pedhd-neo-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.70 11.5"
+  },
+  {
+    "book": "pedsa-b11-7-1",
+    "live": "pedep-neo-5",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.70 11.7.1"
+  },
+  {
+    "book": "pedsa-b11-7-1",
+    "live": "pedhd-neo-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.70 11.7.1"
+  },
+  {
+    "book": "pedsa-b11-7-2",
+    "live": "pedep-neo-6",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.71 11.7.2"
+  },
+  {
+    "book": "pedsa-b11-7-2",
+    "live": "pedhd-neo-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.71 11.7.2"
+  },
+  {
+    "book": "pedsa-b11-7-3",
+    "live": "pedep-neo-7",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.71 11.7.3"
+  },
+  {
+    "book": "pedsa-b11-7-3",
+    "live": "pedhd-neo-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.71 11.7.3"
+  },
+  {
+    "book": "pedsa-b11-8-1",
+    "live": "pedep-neo-8",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.71 11.8.1"
+  },
+  {
+    "book": "pedsa-b11-8-1",
+    "live": "pedhd-neo-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.71 11.8.1"
+  },
+  {
+    "book": "pedsa-b11-8-2",
+    "live": "pedep-neo-9",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.71 11.8.2"
+  },
+  {
+    "book": "pedsa-b11-8-2",
+    "live": "pedhd-neo-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.71 11.8.2"
+  },
+  {
+    "book": "pedsa-b11-8-3",
+    "live": "pedep-neo-10",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.71 11.8.3"
+  },
+  {
+    "book": "pedsa-b11-8-3",
+    "live": "pedep-neo-23",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.71 11.8.3"
+  },
+  {
+    "book": "pedsa-b11-8-3",
+    "live": "pedhd-neo-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.71 11.8.3"
+  },
+  {
+    "book": "pedsa-b11-8-4",
+    "live": "pedep-neo-11",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.71 11.8.4"
+  },
+  {
+    "book": "pedsa-b11-8-4",
+    "live": "pedhd-neo-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.71 11.8.4"
+  },
+  {
+    "book": "pedsa-b11-9-1",
+    "live": "pedep2-mf1-73",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.72 11.9.1"
+  },
+  {
+    "book": "pedsa-b11-9-1",
+    "live": "pedep-neo-12",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.72 11.9.1"
+  },
+  {
+    "book": "pedsa-b11-9-1",
+    "live": "pedhd-neo-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.72 11.9.1"
+  },
+  {
+    "book": "pedsa-b11-9-2",
+    "live": "pedep-neo-13",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.72 11.9.2"
+  },
+  {
+    "book": "pedsa-b11-9-2",
+    "live": "pedep-neo-43",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.72 11.9.2"
+  },
+  {
+    "book": "pedsa-b11-9-2",
+    "live": "pedhd-neo-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.72 11.9.2"
+  },
+  {
+    "book": "pedsa-b12-1",
+    "live": "pedep-gp-21",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.76 12.1"
+  },
+  {
+    "book": "pedsa-b12-1",
+    "live": "pedhd-gp-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.76 12.1"
+  },
+  {
+    "book": "pedsa-b12-2",
+    "live": "pedep-gp-22",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.76 12.2"
+  },
+  {
+    "book": "pedsa-b12-2",
+    "live": "pedhd-gp-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.76 12.2"
+  },
+  {
+    "book": "pedsa-b12-3",
+    "live": "pedep-gp-23",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.76 12.3"
+  },
+  {
+    "book": "pedsa-b12-3",
+    "live": "pedhd-gp-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.76 12.3"
+  },
+  {
+    "book": "pedsa-b12-4",
+    "live": "pedep-gp-24",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.76 12.4"
+  },
+  {
+    "book": "pedsa-b12-4",
+    "live": "pedhd-gp-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.76 12.4"
+  },
+  {
+    "book": "pedsa-b12-5",
+    "live": "pedep-gp-25",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.76 12.5"
+  },
+  {
+    "book": "pedsa-b12-5",
+    "live": "pedhd-gp-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.76 12.5"
+  },
+  {
+    "book": "pedsa-b12-6-1",
+    "live": "pedep-gp-26",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.77 12.6.1"
+  },
+  {
+    "book": "pedsa-b12-6-1",
+    "live": "pedhd-gp-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.77 12.6.1"
+  },
+  {
+    "book": "pedsa-b12-6-2",
+    "live": "pedep-gp-27",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.77 12.6.2"
+  },
+  {
+    "book": "pedsa-b12-6-2",
+    "live": "pedhd-gp-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.77 12.6.2"
+  },
+  {
+    "book": "pedsa-b12-6-3",
+    "live": "pedep-gp-28",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.77 12.6.3"
+  },
+  {
+    "book": "pedsa-b12-6-3",
+    "live": "pedhd-gp-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.77 12.6.3"
+  },
+  {
+    "book": "pedsa-b13-1",
+    "live": "pedep-nut-1",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.80 13.1"
+  },
+  {
+    "book": "pedsa-b13-1",
+    "live": "pedhd-nutr-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.80 13.1"
+  },
+  {
+    "book": "pedsa-b13-2",
+    "live": "pedep-nut-2",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.80 13.2"
+  },
+  {
+    "book": "pedsa-b13-2",
+    "live": "pedhd-nutr-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.80 13.2"
+  },
+  {
+    "book": "pedsa-b13-3",
+    "live": "pedep-nut-3",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.80 13.3"
+  },
+  {
+    "book": "pedsa-b13-3",
+    "live": "pedhd-nutr-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.80 13.3"
+  },
+  {
+    "book": "pedsa-b13-4",
+    "live": "pedep-nut-4",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.80 13.4"
+  },
+  {
+    "book": "pedsa-b13-4",
+    "live": "pedhd-nutr-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.80 13.4"
+  },
+  {
+    "book": "pedsa-b13-5",
+    "live": "pedep-nut-23",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.81 13.5"
+  },
+  {
+    "book": "pedsa-b13-5",
+    "live": "pedep-nut-5",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.81 13.5"
+  },
+  {
+    "book": "pedsa-b13-5",
+    "live": "pedhd-nutr-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.81 13.5"
+  },
+  {
+    "book": "pedsa-b13-6",
+    "live": "pedep-nut-6",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.81 13.6"
+  },
+  {
+    "book": "pedsa-b13-6",
+    "live": "pedhd-nutr-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.81 13.6"
+  },
+  {
+    "book": "pedsa-b13-7-1",
+    "live": "pedep-nut-7",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.81 13.7.1"
+  },
+  {
+    "book": "pedsa-b13-7-1",
+    "live": "pedhd-nutr-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.81 13.7.1"
+  },
+  {
+    "book": "pedsa-b13-7-2",
+    "live": "pedep-nut-8",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.81 13.7.2"
+  },
+  {
+    "book": "pedsa-b13-7-2",
+    "live": "pedhd-nutr-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.81 13.7.2"
+  },
+  {
+    "book": "pedsa-b13-7-3",
+    "live": "pedep-mf3-15",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.81 13.7.3"
+  },
+  {
+    "book": "pedsa-b13-7-3",
+    "live": "pedep-nut-9",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.81 13.7.3"
+  },
+  {
+    "book": "pedsa-b13-7-3",
+    "live": "pedhd-nutr-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.81 13.7.3"
+  },
+  {
+    "book": "pedsa-b13-7-4",
+    "live": "pedep-nut-10",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.81 13.7.4"
+  },
+  {
+    "book": "pedsa-b13-7-4",
+    "live": "pedhd-nutr-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.81 13.7.4"
+  },
+  {
+    "book": "pedsa-b13-7-5",
+    "live": "pedep-gp-37",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.81 13.7.5"
+  },
+  {
+    "book": "pedsa-b13-7-5",
+    "live": "pedep-nut-11",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.81 13.7.5"
+  },
+  {
+    "book": "pedsa-b13-7-5",
+    "live": "pedhd-nutr-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.81 13.7.5"
+  },
+  {
+    "book": "pedsa-b14-1",
+    "live": "pedep-gi-1",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.84 14.1"
+  },
+  {
+    "book": "pedsa-b14-1",
+    "live": "pedhd-gastro-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.84 14.1"
+  },
+  {
+    "book": "pedsa-b14-10-1",
+    "live": "pedep-gi-13",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.86 14.10.1"
+  },
+  {
+    "book": "pedsa-b14-10-1",
+    "live": "pedhd-gastro-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.86 14.10.1"
+  },
+  {
+    "book": "pedsa-b14-10-2",
+    "live": "pedep-gi-14",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.86 14.10.2"
+  },
+  {
+    "book": "pedsa-b14-10-2",
+    "live": "pedep-mf2-56",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.86 14.10.2"
+  },
+  {
+    "book": "pedsa-b14-10-2",
+    "live": "pedhd-gastro-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.86 14.10.2"
+  },
+  {
+    "book": "pedsa-b14-10-3",
+    "live": "pedep-gi-15",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.86 14.10.3"
+  },
+  {
+    "book": "pedsa-b14-10-3",
+    "live": "pedhd-gastro-15",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.86 14.10.3"
+  },
+  {
+    "book": "pedsa-b14-10-5",
+    "live": "pedep-gi-16",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.86 14.10.5"
+  },
+  {
+    "book": "pedsa-b14-10-5",
+    "live": "pedhd-gastro-16",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.86 14.10.5"
+  },
+  {
+    "book": "pedsa-b14-2",
+    "live": "pedep-gi-61",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.84 14.2"
+  },
+  {
+    "book": "pedsa-b14-3",
+    "live": "pedep-gi-2",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.84 14.3"
+  },
+  {
+    "book": "pedsa-b14-3",
+    "live": "pedep-gi-63",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.84 14.3"
+  },
+  {
+    "book": "pedsa-b14-3",
+    "live": "pedhd-gastro-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.84 14.3"
+  },
+  {
+    "book": "pedsa-b14-4",
+    "live": "pedep-gi-3",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.84 14.4"
+  },
+  {
+    "book": "pedsa-b14-4",
+    "live": "pedep-mf1-49",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.84 14.4"
+  },
+  {
+    "book": "pedsa-b14-4",
+    "live": "pedhd-gastro-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.84 14.4"
+  },
+  {
+    "book": "pedsa-b14-5",
+    "live": "pedep-gi-4",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.84 14.5"
+  },
+  {
+    "book": "pedsa-b14-5",
+    "live": "pedep-gi-59",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.84 14.5"
+  },
+  {
+    "book": "pedsa-b14-5",
+    "live": "pedhd-gastro-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.84 14.5"
+  },
+  {
+    "book": "pedsa-b14-6",
+    "live": "pedep-gi-5",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.85 14.6"
+  },
+  {
+    "book": "pedsa-b14-6",
+    "live": "pedhd-gastro-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.85 14.6"
+  },
+  {
+    "book": "pedsa-b14-7",
+    "live": "pedep-gi-6",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.85 14.7"
+  },
+  {
+    "book": "pedsa-b14-7",
+    "live": "pedhd-gastro-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.85 14.7"
+  },
+  {
+    "book": "pedsa-b14-8",
+    "live": "pedep-gi-46",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.85 14.8"
+  },
+  {
+    "book": "pedsa-b14-8",
+    "live": "pedep-gi-7",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.85 14.8"
+  },
+  {
+    "book": "pedsa-b14-8",
+    "live": "pedhd-gastro-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.85 14.8"
+  },
+  {
+    "book": "pedsa-b14-9-1",
+    "live": "pedep-gi-8",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.85 14.9.1"
+  },
+  {
+    "book": "pedsa-b14-9-1",
+    "live": "pedhd-gastro-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.85 14.9.1"
+  },
+  {
+    "book": "pedsa-b14-9-2",
+    "live": "pedep-gi-9",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.85 14.9.2"
+  },
+  {
+    "book": "pedsa-b14-9-2",
+    "live": "pedhd-gastro-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.85 14.9.2"
+  },
+  {
+    "book": "pedsa-b14-9-3",
+    "live": "pedep-gi-10",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.85 14.9.3"
+  },
+  {
+    "book": "pedsa-b14-9-3",
+    "live": "pedhd-gastro-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.85 14.9.3"
+  },
+  {
+    "book": "pedsa-b14-9-4",
+    "live": "pedep-gi-11",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.86 14.9.4"
+  },
+  {
+    "book": "pedsa-b14-9-4",
+    "live": "pedhd-gastro-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.86 14.9.4"
+  },
+  {
+    "book": "pedsa-b14-9-5",
+    "live": "pedep-gi-12",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.86 14.9.5"
+  },
+  {
+    "book": "pedsa-b14-9-5",
+    "live": "pedhd-gastro-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.86 14.9.5"
+  },
+  {
+    "book": "pedsa-b15-1",
+    "live": "pedep-inf-21",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.91 15.1"
+  },
+  {
+    "book": "pedsa-b15-1",
+    "live": "pedep-inf-53",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.91 15.1"
+  },
+  {
+    "book": "pedsa-b15-1",
+    "live": "pedhd-inf-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.91 15.1"
+  },
+  {
+    "book": "pedsa-b15-10-1",
+    "live": "pedep-inf-59",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.93 15.10.1"
+  },
+  {
+    "book": "pedsa-b15-10-1",
+    "live": "pedhd-inf-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.93 15.10.1"
+  },
+  {
+    "book": "pedsa-b15-10-2",
+    "live": "pedep-inf-50",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.93 15.10.2"
+  },
+  {
+    "book": "pedsa-b15-10-2",
+    "live": "pedep-inf-60",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.93 15.10.2"
+  },
+  {
+    "book": "pedsa-b15-10-2",
+    "live": "pedhd-inf-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.93 15.10.2"
+  },
+  {
+    "book": "pedsa-b15-10-3",
+    "live": "pedep-inf-42",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.93 15.10.3"
+  },
+  {
+    "book": "pedsa-b15-10-3",
+    "live": "pedep-inf-61",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.93 15.10.3"
+  },
+  {
+    "book": "pedsa-b15-10-3",
+    "live": "pedhd-inf-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.93 15.10.3"
+  },
+  {
+    "book": "pedsa-b15-10-5",
+    "live": "pedep-inf-62",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.94 15.10.5"
+  },
+  {
+    "book": "pedsa-b15-10-5",
+    "live": "pedhd-inf-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.94 15.10.5"
+  },
+  {
+    "book": "pedsa-b15-10-7",
+    "live": "pedep-mf3-40",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.94 15.10.7"
+  },
+  {
+    "book": "pedsa-b15-10-7",
+    "live": "pedep-mf4-58",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.94 15.10.7"
+  },
+  {
+    "book": "pedsa-b15-10-7",
+    "live": "pedhd-inf-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.94 15.10.7"
+  },
+  {
+    "book": "pedsa-b15-11-1",
+    "live": "pedhd-inf-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.94 15.11.1"
+  },
+  {
+    "book": "pedsa-b15-11-2",
+    "live": "pedep2-res-64",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.94 15.11.2"
+  },
+  {
+    "book": "pedsa-b15-11-2",
+    "live": "pedhd-inf-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.94 15.11.2"
+  },
+  {
+    "book": "pedsa-b15-11-3",
+    "live": "pedep-emg-59",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.95 15.11.3"
+  },
+  {
+    "book": "pedsa-b15-11-3",
+    "live": "pedhd-inf-15",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.95 15.11.3"
+  },
+  {
+    "book": "pedsa-b15-11-4",
+    "live": "pedhd-inf-16",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.95 15.11.4"
+  },
+  {
+    "book": "pedsa-b15-11-5",
+    "live": "pedep-mf1-25",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.95 15.11.5"
+  },
+  {
+    "book": "pedsa-b15-2",
+    "live": "pedep-inf-54",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.91 15.2"
+  },
+  {
+    "book": "pedsa-b15-2",
+    "live": "pedhd-inf-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.91 15.2"
+  },
+  {
+    "book": "pedsa-b15-3",
+    "live": "pedep-inf-55",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.91 15.3"
+  },
+  {
+    "book": "pedsa-b15-3",
+    "live": "pedhd-inf-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.91 15.3"
+  },
+  {
+    "book": "pedsa-b15-4",
+    "live": "pedep-inf-56",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.91 15.4"
+  },
+  {
+    "book": "pedsa-b15-4",
+    "live": "pedep-mf1-36",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.91 15.4"
+  },
+  {
+    "book": "pedsa-b15-4",
+    "live": "pedhd-inf-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.91 15.4"
+  },
+  {
+    "book": "pedsa-b15-5",
+    "live": "pedep-inf-57",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.92 15.5"
+  },
+  {
+    "book": "pedsa-b15-5",
+    "live": "pedhd-inf-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.92 15.5"
+  },
+  {
+    "book": "pedsa-b15-8",
+    "live": "pedep-inf-58",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.92 15.8"
+  },
+  {
+    "book": "pedsa-b15-8",
+    "live": "pedhd-inf-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.92 15.8"
+  },
+  {
+    "book": "pedsa-b15-9",
+    "live": "pedhd-inf-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.93 15.9"
+  },
+  {
+    "book": "pedsa-b16-1",
+    "live": "pedep-alg-1",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.99 16.1"
+  },
+  {
+    "book": "pedsa-b16-1",
+    "live": "pedhd-alg-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.99 16.1"
+  },
+  {
+    "book": "pedsa-b16-2",
+    "live": "pedep-alg-2",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.99 16.2"
+  },
+  {
+    "book": "pedsa-b16-2",
+    "live": "pedhd-alg-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.99 16.2"
+  },
+  {
+    "book": "pedsa-b16-3",
+    "live": "pedep-alg-3",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.99 16.3"
+  },
+  {
+    "book": "pedsa-b16-3",
+    "live": "pedhd-alg-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.99 16.3"
+  },
+  {
+    "book": "pedsa-b16-4",
+    "live": "pedep-alg-4",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.99 16.4"
+  },
+  {
+    "book": "pedsa-b16-4",
+    "live": "pedhd-alg-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.99 16.4"
+  },
+  {
+    "book": "pedsa-b17-1",
+    "live": "pedep2-res-1",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.101 17.1"
+  },
+  {
+    "book": "pedsa-b17-1",
+    "live": "pedhd-resp-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.101 17.1"
+  },
+  {
+    "book": "pedsa-b17-10",
+    "live": "pedep2-res-9",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.102 17.10"
+  },
+  {
+    "book": "pedsa-b17-10",
+    "live": "pedhd-resp-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.102 17.10"
+  },
+  {
+    "book": "pedsa-b17-11",
+    "live": "pedhd-resp-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.103 17.11"
+  },
+  {
+    "book": "pedsa-b17-12-2",
+    "live": "pedep2-res-11",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.104 17.12.2"
+  },
+  {
+    "book": "pedsa-b17-12-2",
+    "live": "pedhd-resp-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.104 17.12.2"
+  },
+  {
+    "book": "pedsa-b17-12-3",
+    "live": "pedep2-res-12",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.104 17.12.3"
+  },
+  {
+    "book": "pedsa-b17-12-3",
+    "live": "pedhd-resp-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.104 17.12.3"
+  },
+  {
+    "book": "pedsa-b17-13-1",
+    "live": "pedep2-res-10",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.104 17.13.1"
+  },
+  {
+    "book": "pedsa-b17-13-1",
+    "live": "pedep2-res-13",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.104 17.13.1"
+  },
+  {
+    "book": "pedsa-b17-13-1",
+    "live": "pedhd-resp-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.104 17.13.1"
+  },
+  {
+    "book": "pedsa-b17-13-2",
+    "live": "pedep2-res-14",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.104 17.13.2"
+  },
+  {
+    "book": "pedsa-b17-13-2",
+    "live": "pedep2-res-56",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.104 17.13.2"
+  },
+  {
+    "book": "pedsa-b17-13-2",
+    "live": "pedhd-resp-15",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.104 17.13.2"
+  },
+  {
+    "book": "pedsa-b17-13-4",
+    "live": "pedep2-res-15",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.105 17.13.4"
+  },
+  {
+    "book": "pedsa-b17-13-4",
+    "live": "pedep2-res-63",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.105 17.13.4"
+  },
+  {
+    "book": "pedsa-b17-13-4",
+    "live": "pedhd-resp-16",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.105 17.13.4"
+  },
+  {
+    "book": "pedsa-b17-13-5",
+    "live": "pedep2-res-16",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.105 17.13.5"
+  },
+  {
+    "book": "pedsa-b17-13-5",
+    "live": "pedhd-resp-17",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.105 17.13.5"
+  },
+  {
+    "book": "pedsa-b17-14-1",
+    "live": "pedep2-res-17",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.105 17.14.1"
+  },
+  {
+    "book": "pedsa-b17-14-1",
+    "live": "pedhd-resp-18",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.105 17.14.1"
+  },
+  {
+    "book": "pedsa-b17-14-2",
+    "live": "pedep2-res-18",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.105 17.14.2"
+  },
+  {
+    "book": "pedsa-b17-14-2",
+    "live": "pedhd-resp-19",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.105 17.14.2"
+  },
+  {
+    "book": "pedsa-b17-14-3",
+    "live": "pedep2-res-19",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.105 17.14.3"
+  },
+  {
+    "book": "pedsa-b17-14-3",
+    "live": "pedhd-resp-20",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.105 17.14.3"
+  },
+  {
+    "book": "pedsa-b17-2",
+    "live": "pedep2-res-2",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.101 17.2"
+  },
+  {
+    "book": "pedsa-b17-2",
+    "live": "pedhd-resp-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.101 17.2"
+  },
+  {
+    "book": "pedsa-b17-3",
+    "live": "pedep2-res-3",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.101 17.3"
+  },
+  {
+    "book": "pedsa-b17-3",
+    "live": "pedhd-resp-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.101 17.3"
+  },
+  {
+    "book": "pedsa-b17-4",
+    "live": "pedep2-res-4",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.102 17.4"
+  },
+  {
+    "book": "pedsa-b17-4",
+    "live": "pedhd-resp-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.102 17.4"
+  },
+  {
+    "book": "pedsa-b17-5",
+    "live": "pedep2-res-5",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.102 17.5"
+  },
+  {
+    "book": "pedsa-b17-5",
+    "live": "pedhd-resp-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.102 17.5"
+  },
+  {
+    "book": "pedsa-b17-6",
+    "live": "pedep2-res-6",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.102 17.6"
+  },
+  {
+    "book": "pedsa-b17-6",
+    "live": "pedhd-resp-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.102 17.6"
+  },
+  {
+    "book": "pedsa-b17-7",
+    "live": "pedep2-mf2-67",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.102 17.7"
+  },
+  {
+    "book": "pedsa-b17-7",
+    "live": "pedep2-res-54",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.102 17.7"
+  },
+  {
+    "book": "pedsa-b17-7",
+    "live": "pedep2-res-7",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.102 17.7"
+  },
+  {
+    "book": "pedsa-b17-7",
+    "live": "pedhd-resp-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.102 17.7"
+  },
+  {
+    "book": "pedsa-b17-9",
+    "live": "pedep2-res-8",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.102 17.9"
+  },
+  {
+    "book": "pedsa-b17-9",
+    "live": "pedhd-resp-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.102 17.9"
+  },
+  {
+    "book": "pedsa-b18-1",
+    "live": "pedep2-car-1",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.110 18.1"
+  },
+  {
+    "book": "pedsa-b18-1",
+    "live": "pedhd-card-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.110 18.1"
+  },
+  {
+    "book": "pedsa-b18-2",
+    "live": "pedep2-car-2",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.110 18.2"
+  },
+  {
+    "book": "pedsa-b18-2",
+    "live": "pedhd-card-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.110 18.2"
+  },
+  {
+    "book": "pedsa-b18-3",
+    "live": "pedep2-car-3",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.110 18.3"
+  },
+  {
+    "book": "pedsa-b18-3",
+    "live": "pedhd-card-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.110 18.3"
+  },
+  {
+    "book": "pedsa-b18-4",
+    "live": "pedep2-car-4",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.110 18.4"
+  },
+  {
+    "book": "pedsa-b18-4",
+    "live": "pedhd-card-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.110 18.4"
+  },
+  {
+    "book": "pedsa-b18-5",
+    "live": "pedep2-car-5",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.110 18.5"
+  },
+  {
+    "book": "pedsa-b18-5",
+    "live": "pedhd-card-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.110 18.5"
+  },
+  {
+    "book": "pedsa-b18-7-1",
+    "live": "pedep2-car-11",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.111 18.7.1"
+  },
+  {
+    "book": "pedsa-b18-7-1",
+    "live": "pedhd-card-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.111 18.7.1"
+  },
+  {
+    "book": "pedsa-b18-7-2",
+    "live": "pedep2-car-12",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.112 18.7.2"
+  },
+  {
+    "book": "pedsa-b18-7-2",
+    "live": "pedhd-card-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.112 18.7.2"
+  },
+  {
+    "book": "pedsa-b18-7-4",
+    "live": "pedep2-car-13",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.112 18.7.4"
+  },
+  {
+    "book": "pedsa-b18-7-4",
+    "live": "pedhd-card-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.112 18.7.4"
+  },
+  {
+    "book": "pedsa-b18-8-1",
+    "live": "pedep2-car-14",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.112 18.8.1"
+  },
+  {
+    "book": "pedsa-b18-8-1",
+    "live": "pedhd-card-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.112 18.8.1"
+  },
+  {
+    "book": "pedsa-b18-8-2",
+    "live": "pedep2-car-15",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.112 18.8.2"
+  },
+  {
+    "book": "pedsa-b18-8-2",
+    "live": "pedhd-card-15",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.112 18.8.2"
+  },
+  {
+    "book": "pedsa-b18-8-3",
+    "live": "pedep2-car-16",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.112 18.8.3"
+  },
+  {
+    "book": "pedsa-b18-8-3",
+    "live": "pedep2-car-29",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.112 18.8.3"
+  },
+  {
+    "book": "pedsa-b18-8-3",
+    "live": "pedep2-car-59",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.112 18.8.3"
+  },
+  {
+    "book": "pedsa-b18-8-3",
+    "live": "pedhd-card-16",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.112 18.8.3"
+  },
+  {
+    "book": "pedsa-b18-8-4",
+    "live": "pedep2-car-17",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.112 18.8.4"
+  },
+  {
+    "book": "pedsa-b18-8-4",
+    "live": "pedep2-car-35",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.112 18.8.4"
+  },
+  {
+    "book": "pedsa-b18-8-4",
+    "live": "pedhd-card-17",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.112 18.8.4"
+  },
+  {
+    "book": "pedsa-b19-1",
+    "live": "pedep2-ren-1",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.116 19.1"
+  },
+  {
+    "book": "pedsa-b19-1",
+    "live": "pedhd-renal-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.116 19.1"
+  },
+  {
+    "book": "pedsa-b19-11-1",
+    "live": "pedep2-ren-10",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.118 19.11.1"
+  },
+  {
+    "book": "pedsa-b19-11-1",
+    "live": "pedhd-renal-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.118 19.11.1"
+  },
+  {
+    "book": "pedsa-b19-11-2",
+    "live": "pedep2-ren-11",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.118 19.11.2"
+  },
+  {
+    "book": "pedsa-b19-11-2",
+    "live": "pedep2-ren-43",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.118 19.11.2"
+  },
+  {
+    "book": "pedsa-b19-11-2",
+    "live": "pedhd-renal-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.118 19.11.2"
+  },
+  {
+    "book": "pedsa-b19-11-3",
+    "live": "pedep2-ren-12",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.118 19.11.3"
+  },
+  {
+    "book": "pedsa-b19-11-3",
+    "live": "pedhd-renal-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.118 19.11.3"
+  },
+  {
+    "book": "pedsa-b19-11-4",
+    "live": "pedep2-ren-13",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.118 19.11.4"
+  },
+  {
+    "book": "pedsa-b19-11-4",
+    "live": "pedep2-ren-35",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.118 19.11.4"
+  },
+  {
+    "book": "pedsa-b19-11-4",
+    "live": "pedhd-renal-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.118 19.11.4"
+  },
+  {
+    "book": "pedsa-b19-11-5",
+    "live": "pedep2-ren-14",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.118 19.11.5"
+  },
+  {
+    "book": "pedsa-b19-11-5",
+    "live": "pedhd-renal-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.118 19.11.5"
+  },
+  {
+    "book": "pedsa-b19-12-1",
+    "live": "pedep2-ren-15",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.118 19.12.1"
+  },
+  {
+    "book": "pedsa-b19-12-1",
+    "live": "pedhd-renal-15",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.118 19.12.1"
+  },
+  {
+    "book": "pedsa-b19-12-2",
+    "live": "pedep2-ren-16",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.118 19.12.2"
+  },
+  {
+    "book": "pedsa-b19-12-2",
+    "live": "pedhd-renal-16",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.118 19.12.2"
+  },
+  {
+    "book": "pedsa-b19-12-3",
+    "live": "pedep2-ren-17",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.119 19.12.3"
+  },
+  {
+    "book": "pedsa-b19-12-3",
+    "live": "pedhd-renal-17",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.119 19.12.3"
+  },
+  {
+    "book": "pedsa-b19-12-4",
+    "live": "pedep2-ren-18",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.119 19.12.4"
+  },
+  {
+    "book": "pedsa-b19-12-4",
+    "live": "pedhd-renal-18",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.119 19.12.4"
+  },
+  {
+    "book": "pedsa-b19-2",
+    "live": "pedep2-ren-2",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.116 19.2"
+  },
+  {
+    "book": "pedsa-b19-2",
+    "live": "pedep2-ren-28",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.116 19.2"
+  },
+  {
+    "book": "pedsa-b19-2",
+    "live": "pedhd-renal-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.116 19.2"
+  },
+  {
+    "book": "pedsa-b19-3",
+    "live": "pedep2-ren-3",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.116 19.3"
+  },
+  {
+    "book": "pedsa-b19-3",
+    "live": "pedhd-renal-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.116 19.3"
+  },
+  {
+    "book": "pedsa-b19-4",
+    "live": "pedep2-ren-4",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.116 19.4"
+  },
+  {
+    "book": "pedsa-b19-4",
+    "live": "pedhd-renal-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.116 19.4"
+  },
+  {
+    "book": "pedsa-b19-5",
+    "live": "pedep2-ren-5",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.116 19.5"
+  },
+  {
+    "book": "pedsa-b19-5",
+    "live": "pedhd-renal-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.116 19.5"
+  },
+  {
+    "book": "pedsa-b19-6",
+    "live": "pedep2-ren-6",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.117 19.6"
+  },
+  {
+    "book": "pedsa-b19-6",
+    "live": "pedhd-renal-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.117 19.6"
+  },
+  {
+    "book": "pedsa-b19-7",
+    "live": "pedep2-ren-7",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.117 19.7"
+  },
+  {
+    "book": "pedsa-b19-7",
+    "live": "pedhd-renal-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.117 19.7"
+  },
+  {
+    "book": "pedsa-b19-8",
+    "live": "pedep2-ren-42",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.117 19.8"
+  },
+  {
+    "book": "pedsa-b19-8",
+    "live": "pedep2-ren-8",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.117 19.8"
+  },
+  {
+    "book": "pedsa-b19-8",
+    "live": "pedhd-renal-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.117 19.8"
+  },
+  {
+    "book": "pedsa-b19-9",
+    "live": "pedep2-ren-9",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.117 19.9"
+  },
+  {
+    "book": "pedsa-b19-9",
+    "live": "pedhd-renal-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.117 19.9"
+  },
+  {
+    "book": "pedsa-b2-1",
+    "live": "pedep2-ra-1",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.9 2.1"
+  },
+  {
+    "book": "pedsa-b2-2",
+    "live": "pedep2-mf2-16",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.9 2.2"
+  },
+  {
+    "book": "pedsa-b2-3",
+    "live": "pedep2-neu-33",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.9 2.3"
+  },
+  {
+    "book": "pedsa-b2-7",
+    "live": "pedep2-mf2-52",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.10 2.7"
+  },
+  {
+    "book": "pedsa-b2-8-1",
+    "live": "pedep2-ra-5",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.11 2.8.1"
+  },
+  {
+    "book": "pedsa-b2-8-2",
+    "live": "pedep2-mf1-4",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.11 2.8.2"
+  },
+  {
+    "book": "pedsa-b2-8-3",
+    "live": "pedep2-mf1-15",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.11 2.8.3"
+  },
+  {
+    "book": "pedsa-b2-8-4",
+    "live": "pedep2-ra-8",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.12 2.8.4"
+  },
+  {
+    "book": "pedsa-b21-1",
+    "live": "pedep2-liv-1",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.126 21.1"
+  },
+  {
+    "book": "pedsa-b21-1",
+    "live": "pedhd-liv-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.126 21.1"
+  },
+  {
+    "book": "pedsa-b21-2",
+    "live": "pedep2-liv-2",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.126 21.2"
+  },
+  {
+    "book": "pedsa-b21-2",
+    "live": "pedhd-liv-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.126 21.2"
+  },
+  {
+    "book": "pedsa-b21-3",
+    "live": "pedep2-end-26",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.126 21.3"
+  },
+  {
+    "book": "pedsa-b21-3",
+    "live": "pedep2-liv-3",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.126 21.3"
+  },
+  {
+    "book": "pedsa-b21-3",
+    "live": "pedhd-liv-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.126 21.3"
+  },
+  {
+    "book": "pedsa-b21-4",
+    "live": "pedep2-liv-4",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.126 21.4"
+  },
+  {
+    "book": "pedsa-b21-4",
+    "live": "pedhd-liv-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.126 21.4"
+  },
+  {
+    "book": "pedsa-b21-5",
+    "live": "pedep2-liv-5",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.127 21.5"
+  },
+  {
+    "book": "pedsa-b21-5",
+    "live": "pedhd-liv-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.127 21.5"
+  },
+  {
+    "book": "pedsa-b21-6-1",
+    "live": "pedep2-liv-6",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.127 21.6.1"
+  },
+  {
+    "book": "pedsa-b21-6-1",
+    "live": "pedhd-liv-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.127 21.6.1"
+  },
+  {
+    "book": "pedsa-b21-6-2",
+    "live": "pedep2-liv-7",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.127 21.6.2"
+  },
+  {
+    "book": "pedsa-b21-6-2",
+    "live": "pedhd-liv-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.127 21.6.2"
+  },
+  {
+    "book": "pedsa-b21-6-3",
+    "live": "pedep2-liv-8",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.127 21.6.3"
+  },
+  {
+    "book": "pedsa-b21-6-3",
+    "live": "pedhd-liv-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.127 21.6.3"
+  },
+  {
+    "book": "pedsa-b21-6-4",
+    "live": "pedep2-liv-9",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.127 21.6.4"
+  },
+  {
+    "book": "pedsa-b21-6-4",
+    "live": "pedhd-liv-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.127 21.6.4"
+  },
+  {
+    "book": "pedsa-b22-1",
+    "live": "pedep2-mal-1",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.130 22.1"
+  },
+  {
+    "book": "pedsa-b22-1",
+    "live": "pedhd-mal-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.130 22.1"
+  },
+  {
+    "book": "pedsa-b22-10-1",
+    "live": "pedhd-mal-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.132 22.10.1"
+  },
+  {
+    "book": "pedsa-b22-10-2",
+    "live": "pedhd-mal-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.132 22.10.2"
+  },
+  {
+    "book": "pedsa-b22-10-3",
+    "live": "pedep2-mal-15",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.132 22.10.3"
+  },
+  {
+    "book": "pedsa-b22-10-3",
+    "live": "pedhd-mal-15",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.132 22.10.3"
+  },
+  {
+    "book": "pedsa-b22-10-4",
+    "live": "pedhd-mal-16",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.132 22.10.4"
+  },
+  {
+    "book": "pedsa-b22-10-5",
+    "live": "pedhd-mal-17",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.133 22.10.5"
+  },
+  {
+    "book": "pedsa-b22-10-6",
+    "live": "pedhd-mal-18",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.133 22.10.6"
+  },
+  {
+    "book": "pedsa-b22-2",
+    "live": "pedep2-mal-2",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.130 22.2"
+  },
+  {
+    "book": "pedsa-b22-2",
+    "live": "pedhd-mal-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.130 22.2"
+  },
+  {
+    "book": "pedsa-b22-3",
+    "live": "pedep2-mal-3",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.130 22.3"
+  },
+  {
+    "book": "pedsa-b22-3",
+    "live": "pedhd-mal-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.130 22.3"
+  },
+  {
+    "book": "pedsa-b22-4",
+    "live": "pedep2-mal-4",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.130 22.4"
+  },
+  {
+    "book": "pedsa-b22-4",
+    "live": "pedhd-mal-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.130 22.4"
+  },
+  {
+    "book": "pedsa-b22-5",
+    "live": "pedep2-mal-5",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.130 22.5"
+  },
+  {
+    "book": "pedsa-b22-5",
+    "live": "pedhd-mal-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.130 22.5"
+  },
+  {
+    "book": "pedsa-b22-6",
+    "live": "pedep2-mal-6",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.131 22.6"
+  },
+  {
+    "book": "pedsa-b22-6",
+    "live": "pedhd-mal-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.131 22.6"
+  },
+  {
+    "book": "pedsa-b22-7",
+    "live": "pedep2-mal-7",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.131 22.7"
+  },
+  {
+    "book": "pedsa-b22-7",
+    "live": "pedhd-mal-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.131 22.7"
+  },
+  {
+    "book": "pedsa-b22-8",
+    "live": "pedep2-mal-8",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.131 22.8"
+  },
+  {
+    "book": "pedsa-b22-8",
+    "live": "pedhd-mal-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.131 22.8"
+  },
+  {
+    "book": "pedsa-b22-9-1",
+    "live": "pedhd-mal-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.132 22.9.1"
+  },
+  {
+    "book": "pedsa-b22-9-2",
+    "live": "pedhd-mal-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.132 22.9.2"
+  },
+  {
+    "book": "pedsa-b22-9-3",
+    "live": "pedhd-mal-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.132 22.9.3"
+  },
+  {
+    "book": "pedsa-b22-9-4",
+    "live": "pedhd-mal-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.132 22.9.4"
+  },
+  {
+    "book": "pedsa-b23-1",
+    "live": "pedep2-hem-22",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.137 23.1"
+  },
+  {
+    "book": "pedsa-b23-1",
+    "live": "pedep2-hem-61",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.137 23.1"
+  },
+  {
+    "book": "pedsa-b23-1",
+    "live": "pedhd-haem-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.137 23.1"
+  },
+  {
+    "book": "pedsa-b23-2",
+    "live": "pedep2-hem-23",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.137 23.2"
+  },
+  {
+    "book": "pedsa-b23-2",
+    "live": "pedhd-haem-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.137 23.2"
+  },
+  {
+    "book": "pedsa-b23-3",
+    "live": "pedep2-hem-24",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.137 23.3"
+  },
+  {
+    "book": "pedsa-b23-3",
+    "live": "pedhd-haem-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.137 23.3"
+  },
+  {
+    "book": "pedsa-b23-4",
+    "live": "pedep2-hem-25",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.137 23.4"
+  },
+  {
+    "book": "pedsa-b23-4",
+    "live": "pedhd-haem-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.137 23.4"
+  },
+  {
+    "book": "pedsa-b23-5",
+    "live": "pedep2-hem-26",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.138 23.5"
+  },
+  {
+    "book": "pedsa-b23-5",
+    "live": "pedep2-hem-87",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.138 23.5"
+  },
+  {
+    "book": "pedsa-b23-5",
+    "live": "pedhd-haem-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.138 23.5"
+  },
+  {
+    "book": "pedsa-b23-6",
+    "live": "pedep2-hem-27",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.138 23.6"
+  },
+  {
+    "book": "pedsa-b23-6",
+    "live": "pedhd-haem-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.138 23.6"
+  },
+  {
+    "book": "pedsa-b23-7-1",
+    "live": "pedep2-hem-28",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.139 23.7.1"
+  },
+  {
+    "book": "pedsa-b23-7-1",
+    "live": "pedhd-haem-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.139 23.7.1"
+  },
+  {
+    "book": "pedsa-b23-7-2",
+    "live": "pedep2-hem-29",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.139 23.7.2"
+  },
+  {
+    "book": "pedsa-b23-7-2",
+    "live": "pedhd-haem-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.139 23.7.2"
+  },
+  {
+    "book": "pedsa-b23-7-3",
+    "live": "pedep2-hem-30",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.139 23.7.3"
+  },
+  {
+    "book": "pedsa-b23-7-3",
+    "live": "pedhd-haem-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.139 23.7.3"
+  },
+  {
+    "book": "pedsa-b23-7-4",
+    "live": "pedep2-hem-31",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.139 23.7.4"
+  },
+  {
+    "book": "pedsa-b23-7-4",
+    "live": "pedhd-haem-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.139 23.7.4"
+  },
+  {
+    "book": "pedsa-b23-8-1",
+    "live": "pedep2-hem-32",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.139 23.8.1"
+  },
+  {
+    "book": "pedsa-b23-8-1",
+    "live": "pedhd-haem-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.139 23.8.1"
+  },
+  {
+    "book": "pedsa-b23-8-2",
+    "live": "pedep2-hem-33",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.139 23.8.2"
+  },
+  {
+    "book": "pedsa-b23-8-2",
+    "live": "pedhd-haem-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.139 23.8.2"
+  },
+  {
+    "book": "pedsa-b23-8-3",
+    "live": "pedep2-hem-34",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.139 23.8.3"
+  },
+  {
+    "book": "pedsa-b23-8-3",
+    "live": "pedhd-haem-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.139 23.8.3"
+  },
+  {
+    "book": "pedsa-b23-8-4",
+    "live": "pedep2-hem-35",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.140 23.8.4"
+  },
+  {
+    "book": "pedsa-b23-8-4",
+    "live": "pedhd-haem-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.140 23.8.4"
+  },
+  {
+    "book": "pedsa-b23-8-5",
+    "live": "pedep2-hem-36",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.140 23.8.5"
+  },
+  {
+    "book": "pedsa-b23-8-5",
+    "live": "pedhd-haem-15",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.140 23.8.5"
+  },
+  {
+    "book": "pedsa-b26-1",
+    "live": "pedep2-end-1",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.156 26.1"
+  },
+  {
+    "book": "pedsa-b26-1",
+    "live": "pedhd-endo-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.156 26.1"
+  },
+  {
+    "book": "pedsa-b26-10",
+    "live": "pedep2-end-7",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.158 26.10"
+  },
+  {
+    "book": "pedsa-b26-10",
+    "live": "pedhd-endo-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.158 26.10"
+  },
+  {
+    "book": "pedsa-b26-11",
+    "live": "pedep2-end-8",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.159 26.11"
+  },
+  {
+    "book": "pedsa-b26-11",
+    "live": "pedhd-endo-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.159 26.11"
+  },
+  {
+    "book": "pedsa-b26-12-1",
+    "live": "pedep2-end-9",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.159 26.12.1"
+  },
+  {
+    "book": "pedsa-b26-12-1",
+    "live": "pedhd-endo-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.159 26.12.1"
+  },
+  {
+    "book": "pedsa-b26-12-2",
+    "live": "pedep2-end-10",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.159 26.12.2"
+  },
+  {
+    "book": "pedsa-b26-12-2",
+    "live": "pedhd-endo-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.159 26.12.2"
+  },
+  {
+    "book": "pedsa-b26-12-3",
+    "live": "pedep2-end-11",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.159 26.12.3"
+  },
+  {
+    "book": "pedsa-b26-12-3",
+    "live": "pedep2-mf3-34",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.159 26.12.3"
+  },
+  {
+    "book": "pedsa-b26-12-3",
+    "live": "pedhd-endo-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.159 26.12.3"
+  },
+  {
+    "book": "pedsa-b26-12-4",
+    "live": "pedep2-end-12",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.159 26.12.4"
+  },
+  {
+    "book": "pedsa-b26-12-4",
+    "live": "pedep2-mf2-26",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.159 26.12.4"
+  },
+  {
+    "book": "pedsa-b26-12-4",
+    "live": "pedhd-endo-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.159 26.12.4"
+  },
+  {
+    "book": "pedsa-b26-2",
+    "live": "pedep2-end-2",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.156 26.2"
+  },
+  {
+    "book": "pedsa-b26-2",
+    "live": "pedhd-endo-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.156 26.2"
+  },
+  {
+    "book": "pedsa-b26-3",
+    "live": "pedep2-end-3",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.156 26.3"
+  },
+  {
+    "book": "pedsa-b26-3",
+    "live": "pedhd-endo-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.156 26.3"
+  },
+  {
+    "book": "pedsa-b26-4",
+    "live": "pedep2-end-4",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.156 26.4"
+  },
+  {
+    "book": "pedsa-b26-4",
+    "live": "pedhd-endo-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.156 26.4"
+  },
+  {
+    "book": "pedsa-b26-5",
+    "live": "pedep2-end-5",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.157 26.5"
+  },
+  {
+    "book": "pedsa-b26-5",
+    "live": "pedhd-endo-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.157 26.5"
+  },
+  {
+    "book": "pedsa-b26-9",
+    "live": "pedep2-end-6",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.158 26.9"
+  },
+  {
+    "book": "pedsa-b26-9",
+    "live": "pedhd-endo-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.158 26.9"
+  },
+  {
+    "book": "pedsa-b29-1",
+    "live": "pedhd-neuro-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.174 29.1"
+  },
+  {
+    "book": "pedsa-b29-10",
+    "live": "pedep2-neu-7",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.176 29.10"
+  },
+  {
+    "book": "pedsa-b29-10",
+    "live": "pedhd-neuro-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.176 29.10"
+  },
+  {
+    "book": "pedsa-b29-11",
+    "live": "pedep2-neu-8",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.176 29.11"
+  },
+  {
+    "book": "pedsa-b29-11",
+    "live": "pedhd-neuro-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.176 29.11"
+  },
+  {
+    "book": "pedsa-b29-12",
+    "live": "pedep2-neu-9",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.176 29.12"
+  },
+  {
+    "book": "pedsa-b29-12",
+    "live": "pedhd-neuro-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.176 29.12"
+  },
+  {
+    "book": "pedsa-b29-13-1",
+    "live": "pedep2-neu-10",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.177 29.13.1"
+  },
+  {
+    "book": "pedsa-b29-13-1",
+    "live": "pedhd-neuro-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.177 29.13.1"
+  },
+  {
+    "book": "pedsa-b29-13-2",
+    "live": "pedep2-neu-11",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.177 29.13.2"
+  },
+  {
+    "book": "pedsa-b29-13-2",
+    "live": "pedhd-neuro-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.177 29.13.2"
+  },
+  {
+    "book": "pedsa-b29-13-4",
+    "live": "pedep2-neu-12",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.177 29.13.4"
+  },
+  {
+    "book": "pedsa-b29-13-4",
+    "live": "pedhd-neuro-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.177 29.13.4"
+  },
+  {
+    "book": "pedsa-b29-13-5",
+    "live": "pedep2-neu-13",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.177 29.13.5"
+  },
+  {
+    "book": "pedsa-b29-13-5",
+    "live": "pedhd-neuro-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.177 29.13.5"
+  },
+  {
+    "book": "pedsa-b29-14-1",
+    "live": "pedep2-neu-14",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.178 29.14.1"
+  },
+  {
+    "book": "pedsa-b29-14-1",
+    "live": "pedhd-neuro-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.178 29.14.1"
+  },
+  {
+    "book": "pedsa-b29-14-2",
+    "live": "pedep2-neu-15",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.178 29.14.2"
+  },
+  {
+    "book": "pedsa-b29-14-2",
+    "live": "pedhd-neuro-15",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.178 29.14.2"
+  },
+  {
+    "book": "pedsa-b29-14-3",
+    "live": "pedep2-neu-16",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.178 29.14.3"
+  },
+  {
+    "book": "pedsa-b29-14-3",
+    "live": "pedhd-neuro-16",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.178 29.14.3"
+  },
+  {
+    "book": "pedsa-b29-15-1",
+    "live": "pedep2-neu-17",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.178 29.15.1"
+  },
+  {
+    "book": "pedsa-b29-15-1",
+    "live": "pedhd-neuro-17",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.178 29.15.1"
+  },
+  {
+    "book": "pedsa-b29-15-2",
+    "live": "pedep2-neu-18",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.178 29.15.2"
+  },
+  {
+    "book": "pedsa-b29-15-2",
+    "live": "pedhd-neuro-18",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.178 29.15.2"
+  },
+  {
+    "book": "pedsa-b29-15-3",
+    "live": "pedep2-neu-19",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.178 29.15.3"
+  },
+  {
+    "book": "pedsa-b29-15-3",
+    "live": "pedhd-neuro-19",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.178 29.15.3"
+  },
+  {
+    "book": "pedsa-b29-15-5",
+    "live": "pedep2-neu-20",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.178 29.15.5"
+  },
+  {
+    "book": "pedsa-b29-15-5",
+    "live": "pedhd-neuro-20",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.178 29.15.5"
+  },
+  {
+    "book": "pedsa-b29-4",
+    "live": "pedep2-neu-2",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.174 29.4"
+  },
+  {
+    "book": "pedsa-b29-4",
+    "live": "pedhd-neuro-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.174 29.4"
+  },
+  {
+    "book": "pedsa-b29-5",
+    "live": "pedep2-neu-3",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.174 29.5"
+  },
+  {
+    "book": "pedsa-b29-5",
+    "live": "pedhd-neuro-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.174 29.5"
+  },
+  {
+    "book": "pedsa-b29-6",
+    "live": "pedep2-neu-4",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.175 29.6"
+  },
+  {
+    "book": "pedsa-b29-6",
+    "live": "pedhd-neuro-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.175 29.6"
+  },
+  {
+    "book": "pedsa-b29-7",
+    "live": "pedep2-neu-5",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.175 29.7"
+  },
+  {
+    "book": "pedsa-b29-7",
+    "live": "pedhd-neuro-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.175 29.7"
+  },
+  {
+    "book": "pedsa-b29-8",
+    "live": "pedep2-neu-6",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.175 29.8"
+  },
+  {
+    "book": "pedsa-b29-8",
+    "live": "pedhd-neuro-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.175 29.8"
+  },
+  {
+    "book": "pedsa-b3-1",
+    "live": "pedep2-nd-1",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.15 3.1"
+  },
+  {
+    "book": "pedsa-b3-1",
+    "live": "pedhd-dev-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.15 3.1"
+  },
+  {
+    "book": "pedsa-b3-4",
+    "live": "pedep2-nd-2",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.15 3.4"
+  },
+  {
+    "book": "pedsa-b3-4",
+    "live": "pedhd-dev-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.15 3.4"
+  },
+  {
+    "book": "pedsa-b3-5",
+    "live": "pedep2-nd-3",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.15 3.5"
+  },
+  {
+    "book": "pedsa-b3-5",
+    "live": "pedhd-dev-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.15 3.5"
+  },
+  {
+    "book": "pedsa-b3-7-1",
+    "live": "pedep2-nd-4",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.1"
+  },
+  {
+    "book": "pedsa-b3-7-1",
+    "live": "pedhd-dev-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.1"
+  },
+  {
+    "book": "pedsa-b3-7-10",
+    "live": "pedep2-nd-13",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.10"
+  },
+  {
+    "book": "pedsa-b3-7-10",
+    "live": "pedhd-dev-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.10"
+  },
+  {
+    "book": "pedsa-b3-7-2",
+    "live": "pedep2-nd-5",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.2"
+  },
+  {
+    "book": "pedsa-b3-7-2",
+    "live": "pedhd-dev-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.2"
+  },
+  {
+    "book": "pedsa-b3-7-3",
+    "live": "pedep2-nd-6",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.3"
+  },
+  {
+    "book": "pedsa-b3-7-3",
+    "live": "pedhd-dev-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.3"
+  },
+  {
+    "book": "pedsa-b3-7-4",
+    "live": "pedep2-nd-7",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.4"
+  },
+  {
+    "book": "pedsa-b3-7-4",
+    "live": "pedhd-dev-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.4"
+  },
+  {
+    "book": "pedsa-b3-7-5",
+    "live": "pedep2-nd-8",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.5"
+  },
+  {
+    "book": "pedsa-b3-7-5",
+    "live": "pedhd-dev-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.5"
+  },
+  {
+    "book": "pedsa-b3-7-6",
+    "live": "pedep2-nd-9",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.6"
+  },
+  {
+    "book": "pedsa-b3-7-6",
+    "live": "pedhd-dev-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.6"
+  },
+  {
+    "book": "pedsa-b3-7-7",
+    "live": "pedep2-nd-10",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.7"
+  },
+  {
+    "book": "pedsa-b3-7-7",
+    "live": "pedhd-dev-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.7"
+  },
+  {
+    "book": "pedsa-b3-7-8",
+    "live": "pedep2-nd-11",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.8"
+  },
+  {
+    "book": "pedsa-b3-7-8",
+    "live": "pedhd-dev-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.8"
+  },
+  {
+    "book": "pedsa-b3-7-9",
+    "live": "pedep2-nd-12",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.9"
+  },
+  {
+    "book": "pedsa-b3-7-9",
+    "live": "pedhd-dev-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.7.9"
+  },
+  {
+    "book": "pedsa-b3-8-1",
+    "live": "pedep2-nd-14",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.8.1"
+  },
+  {
+    "book": "pedsa-b3-8-1",
+    "live": "pedhd-dev-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.8.1"
+  },
+  {
+    "book": "pedsa-b3-8-2",
+    "live": "pedep2-nd-15",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.8.2"
+  },
+  {
+    "book": "pedsa-b3-8-2",
+    "live": "pedhd-dev-15",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.8.2"
+  },
+  {
+    "book": "pedsa-b3-8-3",
+    "live": "pedep2-nd-16",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.8.3"
+  },
+  {
+    "book": "pedsa-b3-8-3",
+    "live": "pedhd-dev-16",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.8.3"
+  },
+  {
+    "book": "pedsa-b3-8-4",
+    "live": "pedep2-nd-17",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.16 3.8.4"
+  },
+  {
+    "book": "pedsa-b3-8-4",
+    "live": "pedhd-dev-17",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.16 3.8.4"
+  },
+  {
+    "book": "pedsa-b4-1",
+    "live": "pedep2-dp-1",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.19 4.1"
+  },
+  {
+    "book": "pedsa-b4-1",
+    "live": "pedhd-devp-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.19 4.1"
+  },
+  {
+    "book": "pedsa-b4-10-1",
+    "live": "pedep2-dp-12",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.22 4.10.1"
+  },
+  {
+    "book": "pedsa-b4-10-1",
+    "live": "pedhd-devp-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.22 4.10.1"
+  },
+  {
+    "book": "pedsa-b4-10-2",
+    "live": "pedep2-dp-13",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.22 4.10.2"
+  },
+  {
+    "book": "pedsa-b4-10-2",
+    "live": "pedhd-devp-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.22 4.10.2"
+  },
+  {
+    "book": "pedsa-b4-10-3",
+    "live": "pedep2-dp-14",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.22 4.10.3"
+  },
+  {
+    "book": "pedsa-b4-10-3",
+    "live": "pedep2-mf1-80",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.22 4.10.3"
+  },
+  {
+    "book": "pedsa-b4-10-3",
+    "live": "pedhd-devp-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.22 4.10.3"
+  },
+  {
+    "book": "pedsa-b4-10-4",
+    "live": "pedep2-dp-15",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.22 4.10.4"
+  },
+  {
+    "book": "pedsa-b4-10-4",
+    "live": "pedep2-mf1-64",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.22 4.10.4"
+  },
+  {
+    "book": "pedsa-b4-10-4",
+    "live": "pedhd-devp-15",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.22 4.10.4"
+  },
+  {
+    "book": "pedsa-b4-10-5",
+    "live": "pedep2-dp-16",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.22 4.10.5"
+  },
+  {
+    "book": "pedsa-b4-10-5",
+    "live": "pedhd-devp-16",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.22 4.10.5"
+  },
+  {
+    "book": "pedsa-b4-2",
+    "live": "pedep2-dp-2",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.19 4.2"
+  },
+  {
+    "book": "pedsa-b4-2",
+    "live": "pedhd-devp-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.19 4.2"
+  },
+  {
+    "book": "pedsa-b4-3",
+    "live": "pedep2-dp-3",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.19 4.3"
+  },
+  {
+    "book": "pedsa-b4-3",
+    "live": "pedhd-devp-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.19 4.3"
+  },
+  {
+    "book": "pedsa-b4-4",
+    "live": "pedep2-dp-4",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.19 4.4"
+  },
+  {
+    "book": "pedsa-b4-4",
+    "live": "pedhd-devp-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.19 4.4"
+  },
+  {
+    "book": "pedsa-b4-5",
+    "live": "pedep2-dp-5",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.19 4.5"
+  },
+  {
+    "book": "pedsa-b4-5",
+    "live": "pedhd-devp-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.19 4.5"
+  },
+  {
+    "book": "pedsa-b4-8",
+    "live": "pedep2-dp-6",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.21 4.8"
+  },
+  {
+    "book": "pedsa-b4-8",
+    "live": "pedhd-devp-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.21 4.8"
+  },
+  {
+    "book": "pedsa-b4-9-1",
+    "live": "pedep2-dp-7",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.21 4.9.1"
+  },
+  {
+    "book": "pedsa-b4-9-1",
+    "live": "pedep2-neu-40",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.21 4.9.1"
+  },
+  {
+    "book": "pedsa-b4-9-1",
+    "live": "pedhd-devp-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.21 4.9.1"
+  },
+  {
+    "book": "pedsa-b4-9-2",
+    "live": "pedep2-dp-8",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.22 4.9.2"
+  },
+  {
+    "book": "pedsa-b4-9-2",
+    "live": "pedhd-devp-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.22 4.9.2"
+  },
+  {
+    "book": "pedsa-b4-9-3",
+    "live": "pedep2-dp-9",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.22 4.9.3"
+  },
+  {
+    "book": "pedsa-b4-9-3",
+    "live": "pedhd-devp-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.22 4.9.3"
+  },
+  {
+    "book": "pedsa-b4-9-4",
+    "live": "pedep2-dp-10",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.22 4.9.4"
+  },
+  {
+    "book": "pedsa-b4-9-4",
+    "live": "pedhd-devp-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.22 4.9.4"
+  },
+  {
+    "book": "pedsa-b4-9-5",
+    "live": "pedep2-dp-11",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.22 4.9.5"
+  },
+  {
+    "book": "pedsa-b4-9-5",
+    "live": "pedhd-devp-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.22 4.9.5"
+  },
+  {
+    "book": "pedsa-b6-1",
+    "live": "pedhd-emg-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.32 6.1"
+  },
+  {
+    "book": "pedsa-b6-10",
+    "live": "pedep2-res-65",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.34 6.10"
+  },
+  {
+    "book": "pedsa-b6-10",
+    "live": "pedep-emg-10",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.34 6.10"
+  },
+  {
+    "book": "pedsa-b6-10",
+    "live": "pedhd-emg-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.34 6.10"
+  },
+  {
+    "book": "pedsa-b6-11",
+    "live": "pedep-emg-11",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.34 6.11"
+  },
+  {
+    "book": "pedsa-b6-11",
+    "live": "pedep-emg-58",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.34 6.11"
+  },
+  {
+    "book": "pedsa-b6-11",
+    "live": "pedhd-emg-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.34 6.11"
+  },
+  {
+    "book": "pedsa-b6-12",
+    "live": "pedep-emg-12",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.34 6.12"
+  },
+  {
+    "book": "pedsa-b6-12",
+    "live": "pedep-emg-56",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.34 6.12"
+  },
+  {
+    "book": "pedsa-b6-12",
+    "live": "pedep-mf2-2",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.34 6.12"
+  },
+  {
+    "book": "pedsa-b6-12",
+    "live": "pedep-mf3-20",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.34 6.12"
+  },
+  {
+    "book": "pedsa-b6-12",
+    "live": "pedhd-emg-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.34 6.12"
+  },
+  {
+    "book": "pedsa-b6-13-1",
+    "live": "pedep-emg-13",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.34 6.13.1"
+  },
+  {
+    "book": "pedsa-b6-13-1",
+    "live": "pedhd-emg-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.34 6.13.1"
+  },
+  {
+    "book": "pedsa-b6-13-2",
+    "live": "pedep-emg-14",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.34 6.13.2"
+  },
+  {
+    "book": "pedsa-b6-13-2",
+    "live": "pedhd-emg-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.34 6.13.2"
+  },
+  {
+    "book": "pedsa-b6-13-3",
+    "live": "pedhd-emg-15",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.34 6.13.3"
+  },
+  {
+    "book": "pedsa-b6-13-4",
+    "live": "pedhd-emg-16",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.34 6.13.4"
+  },
+  {
+    "book": "pedsa-b6-13-5",
+    "live": "pedep-emg-17",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.35 6.13.5"
+  },
+  {
+    "book": "pedsa-b6-13-5",
+    "live": "pedhd-emg-17",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.35 6.13.5"
+  },
+  {
+    "book": "pedsa-b6-2",
+    "live": "pedep-emg-2",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.32 6.2"
+  },
+  {
+    "book": "pedsa-b6-2",
+    "live": "pedhd-emg-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.32 6.2"
+  },
+  {
+    "book": "pedsa-b6-3",
+    "live": "pedep-emg-3",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.33 6.3"
+  },
+  {
+    "book": "pedsa-b6-3",
+    "live": "pedhd-emg-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.33 6.3"
+  },
+  {
+    "book": "pedsa-b6-4",
+    "live": "pedep-emg-4",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.33 6.4"
+  },
+  {
+    "book": "pedsa-b6-4",
+    "live": "pedhd-emg-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.33 6.4"
+  },
+  {
+    "book": "pedsa-b6-5",
+    "live": "pedep-emg-5",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.33 6.5"
+  },
+  {
+    "book": "pedsa-b6-5",
+    "live": "pedhd-emg-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.33 6.5"
+  },
+  {
+    "book": "pedsa-b6-6",
+    "live": "pedep-emg-6",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.33 6.6"
+  },
+  {
+    "book": "pedsa-b6-6",
+    "live": "pedhd-emg-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.33 6.6"
+  },
+  {
+    "book": "pedsa-b6-7",
+    "live": "pedep-emg-7",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.33 6.7"
+  },
+  {
+    "book": "pedsa-b6-7",
+    "live": "pedhd-emg-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.33 6.7"
+  },
+  {
+    "book": "pedsa-b6-8",
+    "live": "pedep-emg-8",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.33 6.8"
+  },
+  {
+    "book": "pedsa-b6-8",
+    "live": "pedhd-emg-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.33 6.8"
+  },
+  {
+    "book": "pedsa-b6-9",
+    "live": "pedep-emg-9",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.34 6.9"
+  },
+  {
+    "book": "pedsa-b6-9",
+    "live": "pedhd-emg-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.34 6.9"
+  },
+  {
+    "book": "pedsa-b7-1",
+    "live": "pedhd-acc-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.39 7.1"
+  },
+  {
+    "book": "pedsa-b7-5",
+    "live": "pedep-acc-2",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.40 7.5"
+  },
+  {
+    "book": "pedsa-b7-5",
+    "live": "pedhd-acc-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.40 7.5"
+  },
+  {
+    "book": "pedsa-b7-8",
+    "live": "pedep-emg-33",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.40 7.8"
+  },
+  {
+    "book": "pedsa-b7-8",
+    "live": "pedhd-acc-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.40 7.8"
+  },
+  {
+    "book": "pedsa-b9-1",
+    "live": "pedep2-gen-8",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.51 9.1"
+  },
+  {
+    "book": "pedsa-b9-1",
+    "live": "pedhd-gen-1",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.51 9.1"
+  },
+  {
+    "book": "pedsa-b9-10",
+    "live": "pedep2-gen-21",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.52 9.10"
+  },
+  {
+    "book": "pedsa-b9-10",
+    "live": "pedhd-gen-10",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.52 9.10"
+  },
+  {
+    "book": "pedsa-b9-11",
+    "live": "pedep2-gen-37",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.53 9.11"
+  },
+  {
+    "book": "pedsa-b9-11",
+    "live": "pedhd-gen-11",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.53 9.11"
+  },
+  {
+    "book": "pedsa-b9-12",
+    "live": "pedep2-gen-38",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.53 9.12"
+  },
+  {
+    "book": "pedsa-b9-12",
+    "live": "pedhd-gen-12",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.53 9.12"
+  },
+  {
+    "book": "pedsa-b9-13",
+    "live": "pedep2-gen-22",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.53 9.13"
+  },
+  {
+    "book": "pedsa-b9-13",
+    "live": "pedhd-gen-13",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.53 9.13"
+  },
+  {
+    "book": "pedsa-b9-15-1",
+    "live": "pedep2-gen-23",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.54 9.15.1"
+  },
+  {
+    "book": "pedsa-b9-15-1",
+    "live": "pedhd-gen-14",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.54 9.15.1"
+  },
+  {
+    "book": "pedsa-b9-16-1",
+    "live": "pedep2-mf2-21",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.54 9.16.1"
+  },
+  {
+    "book": "pedsa-b9-2",
+    "live": "pedep2-gen-36",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.51 9.2"
+  },
+  {
+    "book": "pedsa-b9-2",
+    "live": "pedhd-gen-2",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.51 9.2"
+  },
+  {
+    "book": "pedsa-b9-3",
+    "live": "pedep2-gen-20",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.51 9.3"
+  },
+  {
+    "book": "pedsa-b9-3",
+    "live": "pedhd-gen-3",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.51 9.3"
+  },
+  {
+    "book": "pedsa-b9-4",
+    "live": "pedep2-gen-16",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.51 9.4"
+  },
+  {
+    "book": "pedsa-b9-4",
+    "live": "pedep2-mf1-24",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.51 9.4"
+  },
+  {
+    "book": "pedsa-b9-4",
+    "live": "pedhd-gen-4",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.51 9.4"
+  },
+  {
+    "book": "pedsa-b9-5",
+    "live": "pedep2-gen-17",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.52 9.5"
+  },
+  {
+    "book": "pedsa-b9-5",
+    "live": "pedhd-gen-5",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.52 9.5"
+  },
+  {
+    "book": "pedsa-b9-6",
+    "live": "pedep2-gen-18",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.52 9.6"
+  },
+  {
+    "book": "pedsa-b9-6",
+    "live": "pedep-gp-2",
+    "liveFile": "questions.peds.ep.js",
+    "cite": "Self Assessment Book.pdf p.52 9.6"
+  },
+  {
+    "book": "pedsa-b9-6",
+    "live": "pedhd-gen-6",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.52 9.6"
+  },
+  {
+    "book": "pedsa-b9-7",
+    "live": "pedep2-gen-19",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.52 9.7"
+  },
+  {
+    "book": "pedsa-b9-7",
+    "live": "pedhd-gen-7",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.52 9.7"
+  },
+  {
+    "book": "pedsa-b9-8",
+    "live": "pedep2-gen-14",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.52 9.8"
+  },
+  {
+    "book": "pedsa-b9-8",
+    "live": "pedhd-gen-8",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.52 9.8"
+  },
+  {
+    "book": "pedsa-b9-9",
+    "live": "pedep2-gen-15",
+    "liveFile": "questions.peds.ep2.js",
+    "cite": "Self Assessment Book.pdf p.52 9.9"
+  },
+  {
+    "book": "pedsa-b9-9",
+    "live": "pedhd-gen-9",
+    "liveFile": "questions.peds.js",
+    "cite": "Self Assessment Book.pdf p.52 9.9"
+  }
+]

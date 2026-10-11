@@ -1,0 +1,7 @@
+MENU	Read: shared option menu and keyed answer text but different scenario; paired, not folded
+pedsa-b14-8|pedep-gi-19
+pedsa-b14-8|pedhd-gastro-19
+pedsa-b17-13-4|pedep-gi-14
+pedsa-b17-13-4|pedep-mf2-56
+pedsa-b17-13-4|pedhd-gastro-14
+pedsa-b22-9-4|pedep2-neu-52

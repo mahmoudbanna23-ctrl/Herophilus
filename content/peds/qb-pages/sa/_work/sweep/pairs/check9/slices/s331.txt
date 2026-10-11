@@ -1,0 +1,99 @@
+=== n 331
+BOOK pedsa-b22-3
+  STEM: Mohammed is a 3-year-old boy who is reviewed in the Paediatric Assessment Unit. He has a history of weight loss and lethargy. His mother is also concerned as he keeps crying and complains of pain in his tummy. On examination of his abdomen he has an extensive mass. The doctor is worried he may have a childhood malignancy. Which of the following investigations would be the most useful in making the diagnosis? Select one answer only.
+  OPTIONS: Plasma ammonia | Plasma LDG (lactate dehydrogenase) | Serum α-fetoprotein | Serum beta-HCG (human chorionic gonadotrophin) | Urinary catecholamines
+  KEY: Urinary catecholamines
+OTHER pedhd-mal-3
+  STEM: Mohammed is a 3-year-old boy who is reviewed in the Paediatric Assessment Unit. He has a history of weight loss and lethargy. His mother is also concerned as he keeps crying and complains of pain in his tummy. On examination of his abdomen he has an extensive mass. The doctor is worried he may have a childhood malignancy. Which of the following investigations would be the most useful in making the diagnosis?
+  OPTIONS: Plasma ammonia | Plasma LDG (lactate dehydrogenase) | Serum α-fetoprotein | Serum beta-HCG (human chorionic gonadotrophin) | Urinary catecholamines
+  KEY: Urinary catecholamines
+
+=== n 332
+BOOK pedsa-b22-4
+  STEM: Josh is a 2-year-old boy who presents to the Emergency Department with weight loss and lethargy. On examination he has splenomegaly. You are worried that he has leukaemia. You perform an urgent full blood count. What are the most likely haematology results if he has leukaemia? Select one answer only.
+  OPTIONS: Low haemoglobin and low platelets | High haemoglobin and low platelets | Normal haemoglobin and normal platelets | High haemoglobin and raised platelets | Low haemoglobin and raised platelets
+  KEY: Low haemoglobin and low platelets
+OTHER pedep2-mal-4
+  STEM: Josh is a 2-year-old boy with weight loss, lethargy, and splenomegaly. You suspect leukaemia and perform a full blood count. What are the most likely haematological findings?
+  OPTIONS: Low haemoglobin and low platelets | High haemoglobin and low platelets | Normal haemoglobin and normal platelets | High haemoglobin and raised platelets | Low haemoglobin and raised platelets
+  KEY: Low haemoglobin and low platelets
+
+=== n 333
+BOOK pedsa-b22-4
+  STEM: Josh is a 2-year-old boy who presents to the Emergency Department with weight loss and lethargy. On examination he has splenomegaly. You are worried that he has leukaemia. You perform an urgent full blood count. What are the most likely haematology results if he has leukaemia? Select one answer only.
+  OPTIONS: Low haemoglobin and low platelets | High haemoglobin and low platelets | Normal haemoglobin and normal platelets | High haemoglobin and raised platelets | Low haemoglobin and raised platelets
+  KEY: Low haemoglobin and low platelets
+OTHER pedhd-mal-4
+  STEM: Josh is a 2-year-old boy who presents to the Emergency Department with weight loss and lethargy. On examination he has splenomegaly. You are worried that he has leukaemia. You perform an urgent full blood count. What are the most likely haematology results if he has leukaemia?
+  OPTIONS: Low haemoglobin and low platelets | High haemoglobin and low platelets | Normal haemoglobin and normal platelets | High haemoglobin and raised platelets | Low haemoglobin and raised platelets
+  KEY: Low haemoglobin and low platelets
+
+=== n 334
+BOOK pedsa-b22-5
+  STEM: Amy is a 2-year-old girl who presents to the outpatient department with a history of developmental regression. She was able to walk but has ‘gone off her legs’ in the last few weeks. Her parents are very worried about her. On further questioning she had been well with no preceding coryzal illness. On examination, she is very unsteady on her feet and her power is reduced in her lower limbs. She has no obvious visual problems and seems able to follow the picture book her mother has brought to clinic. A CT scan is obtained and is shown below in Fig. 22.1. What is the most likely underlying cause? Select one answer only.
+  OPTIONS: Cerebral abscess | Cortical astrocytoma | Craniopharyngioma | Medulloblastoma | Viral encephalitis
+  KEY: Medulloblastoma
+OTHER pedep2-mal-5
+  STEM: Amy, a 2-year-old girl, has developmental regression and unsteadiness on her feet. CT imaging reveals a posterior fossa mass. What is the most likely underlying cause?
+  OPTIONS: Cerebral abscess | Cortical astrocytoma | Craniopharyngioma | Medulloblastoma | Viral encephalitis
+  KEY: Medulloblastoma
+
+=== n 335
+BOOK pedsa-b22-5
+  STEM: Amy is a 2-year-old girl who presents to the outpatient department with a history of developmental regression. She was able to walk but has ‘gone off her legs’ in the last few weeks. Her parents are very worried about her. On further questioning she had been well with no preceding coryzal illness. On examination, she is very unsteady on her feet and her power is reduced in her lower limbs. She has no obvious visual problems and seems able to follow the picture book her mother has brought to clinic. A CT scan is obtained and is shown below in Fig. 22.1. What is the most likely underlying cause? Select one answer only.
+  OPTIONS: Cerebral abscess | Cortical astrocytoma | Craniopharyngioma | Medulloblastoma | Viral encephalitis
+  KEY: Medulloblastoma
+OTHER pedhd-mal-5
+  STEM: Amy is a 2-year-old girl who presents to the outpatient department with a history of developmental regression. She was able to walk but has ‘gone off her legs’ in the last few weeks. Her parents are very worried about her. On further questioning she had been well with no preceding coryzal illness. On examination, she is very unsteady on her feet and her power is reduced in her lower limbs. She has no obvious visual problems and seems able to follow the picture book her mother has brought to clinic. A CT scan is obtained and is shown in the opposite figure. What is the most likely underlying cause?
+  OPTIONS: Cerebral abscess | Cortical astrocytoma | Craniopharyngioma | Medulloblastoma | Viral encephalitis
+  KEY: Medulloblastoma
+
+=== n 336
+BOOK pedsa-b22-6
+  STEM: Mark, a 3-year-old boy, is currently receiving chemotherapy. His sister has developed the rash shown in Fig. 22.3 below. Mark is well and does not have a fever. Mark’s parents are worried and phone the oncology ward for advice. What information should they be given? Select one answer only.
+  OPTIONS: Advise them to see their general practitioner to check that he is all right | Mark needs urgent treatment to prevent him from becoming unwell | Monitor Mark and if he becomes unwell with a fever, bring him to the ward | Monitor Mark and if he has any signs of the rash, bring him to the ward | Reassurance – this is a common illness that most children get
+  KEY: Mark needs urgent treatment to prevent him from becoming unwell
+OTHER pedhd-mal-6
+  STEM: Mark, a 3-year-old boy, is currently receiving chemotherapy. His sister has developed the rash shown in the opposite figure. Mark is well and does not have a fever. Mark’s parents are worried and phone the oncology ward for advice. What information should they be given?
+  OPTIONS: Advise them to see their general practitioner to check that he is all right | Mark needs urgent treatment to prevent him from becoming unwell | Monitor Mark and if he becomes unwell with a fever, bring him to the ward | Monitor Mark and if he has any signs of the rash, bring him to the ward | Reassurance – this is a common illness that most children get
+  KEY: Mark needs urgent treatment to prevent him from becoming unwell
+
+=== n 337
+BOOK pedsa-b22-7
+  STEM: Essa is a 2-year-old boy whose parents have noticed his two eyes look different. He has no other medical history and is not currently on any medication. On examination, the movement of the eyes is normal and the pupils are equal and reactive to light. On checking his pupillary reflex you observe his left pupil looks red but the right looks white. His systemic examination is normal. What is the likely cause of this? Select one answer only.
+  OPTIONS: Congenital cataract | Glaucoma | Retinoblastoma | Allergic conjunctivitis | VI nerve palsy
+  KEY: Retinoblastoma
+OTHER pedep2-mal-7
+  STEM: Essa, a 2-year-old boy, presents with a white reflex in one eye (leukocoria). What is the likely cause?
+  OPTIONS: Congenital cataract | Glaucoma | Retinoblastoma | Allergic conjunctivitis | VI nerve palsy
+  KEY: Retinoblastoma
+
+=== n 338
+BOOK pedsa-b22-7
+  STEM: Essa is a 2-year-old boy whose parents have noticed his two eyes look different. He has no other medical history and is not currently on any medication. On examination, the movement of the eyes is normal and the pupils are equal and reactive to light. On checking his pupillary reflex you observe his left pupil looks red but the right looks white. His systemic examination is normal. What is the likely cause of this? Select one answer only.
+  OPTIONS: Congenital cataract | Glaucoma | Retinoblastoma | Allergic conjunctivitis | VI nerve palsy
+  KEY: Retinoblastoma
+OTHER pedhd-mal-7
+  STEM: Essa is a 2-year-old boy whose parents have noticed his two eyes look different. He has no other medical history and is not currently on any medication. On examination, the movement of the eyes is normal and the pupils are equal and reactive to light. On checking his pupillary reflex you observe his left pupil looks red but the right looks white. His systemic examination is normal. What is the likely cause of this?
+  OPTIONS: Congenital cataract | Glaucoma | Retinoblastoma | Allergic conjunctivitis | VI nerve palsy
+  KEY: Retinoblastoma
+
+=== n 339
+BOOK pedsa-b22-8
+  STEM: Brittney, aged 5 years, goes to her optician. She has needed glasses for 4 months but her mother thinks her prescription needs changing as she has been getting progressively worsening headaches. When the optician examines her eyes she finds the examination shown in Fig. 22.4. Both her eyes have a red reflex. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Craniopharyngioma | Concomitant squint | Optic glioma | Posterior fossa tumour | Retinoblastoma
+  KEY: Posterior fossa tumour
+OTHER pedep2-mal-8
+  STEM: Britney, aged 5 years, presents with progressive headaches and a normal red reflex. What is the most likely diagnosis?
+  OPTIONS: Craniopharyngioma | Concomitant squint | Optic glioma | Posterior fossa tumour | Retinoblastoma
+  KEY: Posterior fossa tumour
+
+=== n 340
+BOOK pedsa-b22-8
+  STEM: Brittney, aged 5 years, goes to her optician. She has needed glasses for 4 months but her mother thinks her prescription needs changing as she has been getting progressively worsening headaches. When the optician examines her eyes she finds the examination shown in Fig. 22.4. Both her eyes have a red reflex. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Craniopharyngioma | Concomitant squint | Optic glioma | Posterior fossa tumour | Retinoblastoma
+  KEY: Posterior fossa tumour
+OTHER pedhd-mal-8
+  STEM: Brittney, aged 5 years, goes to her optician. She has needed glasses for 4 months but her mother thinks her prescription needs changing as she has been getting progressively worsening headaches. When the optician examines her eyes she finds the examination shown in the figure below (next page). Both her eyes have a red reflex. What is the most likely diagnosis?
+  OPTIONS: Craniopharyngioma | Concomitant squint | Optic glioma | Posterior fossa tumour | Retinoblastoma
+  KEY: Posterior fossa tumour

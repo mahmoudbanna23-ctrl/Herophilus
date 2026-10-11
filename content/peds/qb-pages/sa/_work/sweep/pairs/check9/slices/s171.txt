@@ -1,0 +1,99 @@
+=== n 171
+BOOK pedsa-b15-5
+  STEM: John, a 2-year-old boy, is brought to the general practitioner by his mother. He has the skin rash shown in Fig. 15.2 on both his feet. He also has a few lesions on both hands. They are tender to touch. He is well in himself. What is the most likely cause from the list below? Select one answer only.
+  OPTIONS: Coxsackie A | Flea bites | Herpes zoster | Scabies | Varicella zoster
+  KEY: Coxsackie A
+OTHER pedep-inf-57
+  STEM: John, a 2-year-old boy, has a rash on both feet and tender lesions on his hands. He is otherwise well. What is the most likely cause?
+  OPTIONS: Coxsackie A | Flea bites | Herpes zoster | Scabies | Varicella zoster
+  KEY: Coxsackie A
+
+=== n 172
+BOOK pedsa-b15-5
+  STEM: John, a 2-year-old boy, is brought to the general practitioner by his mother. He has the skin rash shown in Fig. 15.2 on both his feet. He also has a few lesions on both hands. They are tender to touch. He is well in himself. What is the most likely cause from the list below? Select one answer only.
+  OPTIONS: Coxsackie A | Flea bites | Herpes zoster | Scabies | Varicella zoster
+  KEY: Coxsackie A
+OTHER pedhd-inf-5
+  STEM: John, a 2-year-old boy, is brought to the general practitioner by his mother. He has the skin rash shown on both his feet. He also has a few lesions on both hands. They are tender to touch. He is well in himself. What is the most likely cause from the list below?
+  OPTIONS: Coxsackie A | Flea bites | Herpes zoster | Scabies | Varicella zoster
+  KEY: Coxsackie A
+
+=== n 173
+BOOK pedsa-b15-7
+  STEM: Prince, a 4-month-old black African infant, who has recently moved to the UK from Swaziland with his mother is seen in the Paediatric Assessment Unit. He is feeding poorly and is breathless. He has had loose stools for the last 4 weeks and has not put on any weight since then. On examination he appears pale and has marked intercostal recession. His oxygen saturation in air is 82%. His chest X-ray is shown in Fig. 15.3 below. What is the most likely cause of his respiratory failure? Select one answer only.
+  OPTIONS: Influenza virus | Pneumocystis jiroveci (carinii) pneumonia | Respiratory syncytial virus | Rhinovirus | Staphylococcal pneumonia
+  KEY: Pneumocystis jiroveci (carinii) pneumonia
+OTHER pedep-mf1-37
+  STEM: A 4-month-old infant is seen in the Pediatric Assessment Unit. He is feeding poorly and is breathless. He has had loose stools for the last 4 weeks and has not put on any weight since then. On examination, he appears pale and has marked intercostal recession. His oxygen saturation in air is 82%. His chest X-ray shows diffuse bilateral infiltrates. What is the most likely diagnosis?
+  OPTIONS: Bruton's agammaglobulinemia | Severe combined immunodeficiency (SCID) | Complement deficiency | Staphylococcal pneumonia
+  KEY: Severe combined immunodeficiency (SCID)
+
+=== n 174
+BOOK pedsa-b15-8
+  STEM: Imran is a 3-year-old boy who moved to the UK from Bangladesh 4 months ago. He has not gained any weight for the last couple of months. He has a cough. The general practitioner has requested a chest X-ray (Fig. 15.4). What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Asthma | Neuroblastoma | Pertussis infection | Pneumonia | Tuberculosis
+  KEY: Tuberculosis
+OTHER pedep-inf-58
+  STEM: Imran, a 3-year-old boy who recently moved from Bangladesh, has not gained weight and presents with a cough. A chest X-ray is requested. What is the most likely diagnosis?
+  OPTIONS: Asthma | Neuroblastoma | Pertussis infection | Pneumonia | Tuberculosis
+  KEY: Tuberculosis
+
+=== n 175
+BOOK pedsa-b15-8
+  STEM: Imran is a 3-year-old boy who moved to the UK from Bangladesh 4 months ago. He has not gained any weight for the last couple of months. He has a cough. The general practitioner has requested a chest X-ray (Fig. 15.4). What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Asthma | Neuroblastoma | Pertussis infection | Pneumonia | Tuberculosis
+  KEY: Tuberculosis
+OTHER pedhd-inf-6
+  STEM: Imran is a 3-year-old boy who moved to the UK from Bangladesh 4 months ago. He has not gained any weight for the last couple of months. He has a cough. The general practitioner has requested a chest X-ray, shown. What is the most likely diagnosis?
+  OPTIONS: Asthma | Neuroblastoma | Pertussis infection | Pneumonia | Tuberculosis
+  KEY: Tuberculosis
+
+=== n 176
+BOOK pedsa-b15-9
+  STEM: You are in the baby clinic at a local general practice. One of the mothers is questioning whether or not she should get her baby immunized as she wonders if it is really necessary. He does not go to nursery and has no siblings so is not at risk of infection. What advice would you give? Select one answer only.
+  OPTIONS: As most other children are immunized it is not crucial for her child to be immunized as he is unlikely to be exposed to any of the infections in the immunization schedule | Immunization is important as a high proportion of children need to be immunized to remove the infections from the community | Immunization is important to provide immunity for her child from serious infections and to remove some of these infections from the community | It is her choice and you do not feel you should give an opinion | Vaccines are associated with side-effects, so you can understand her reasoning
+  KEY: Immunization is important to provide immunity for her child from serious infections and to remove some of these infections from the community
+OTHER pedhd-inf-7
+  STEM: You are in the baby clinic at a local general practice. One of the mothers is questioning whether or not she should get her baby immunized as she wonders if it is really necessary. He does not go to nursery and has no siblings so is not at risk of infection. What advice would you give?
+  OPTIONS: As most other children are immunized it is not crucial for her child to be immunized as he is unlikely to be exposed to any of the infections in the immunization schedule | Immunization is important as a high proportion of children need to be immunized to remove the infections from the community | Immunization is important to provide immunity for her child from serious infections and to remove some of these infections from the community | It is her choice and you do not feel you should give an opinion | Vaccines are associated with side-effects, so you can understand her reasoning
+  KEY: Immunization is important to provide immunity for her child from serious infections and to remove some of these infections from the community
+
+=== n 177
+BOOK pedsa-b16-1
+  STEM: Jonathan, aged 6 years, is brought to the Emergency Department after becoming unwell at a family party. He is unable to say more than a single word and he indicates that he is finding it hard to breathe. He is very anxious. He has a raised itchy rash that is spreading from his face down to his chest. He has never had an episode like this before, although his mother explains that he has asthma and he has been prescribed a salbutamol inhaler previously for wheezy episodes. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute asthma | Allergic reaction | Anaphylaxis | Idiopathic urticaria | Inhaled foreign body
+  KEY: Anaphylaxis
+OTHER pedep-alg-1
+  STEM: Jonathan, aged 6 years, is brought to the Emergency Department after becoming unwell at a family party. He is only able to say one word at a time and indicates that he is struggling to breathe. He appears very anxious and has a raised itchy rash spreading from his face down to his chest. This has never happened before. His mother says he has asthma and uses a salbutamol inhaler for wheezy episodes.What is the most likely diagnosis?
+  OPTIONS: Acute asthma | Allergic reaction | Anaphylaxis | Idiopathic urticaria | Inhaled foreign body
+  KEY: Anaphylaxis
+
+=== n 178
+BOOK pedsa-b16-1
+  STEM: Jonathan, aged 6 years, is brought to the Emergency Department after becoming unwell at a family party. He is unable to say more than a single word and he indicates that he is finding it hard to breathe. He is very anxious. He has a raised itchy rash that is spreading from his face down to his chest. He has never had an episode like this before, although his mother explains that he has asthma and he has been prescribed a salbutamol inhaler previously for wheezy episodes. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute asthma | Allergic reaction | Anaphylaxis | Idiopathic urticaria | Inhaled foreign body
+  KEY: Anaphylaxis
+OTHER pedhd-alg-1
+  STEM: Jonathan, aged 6 years, is brought to the Emergency Department after becoming unwell at a family party. He is unable to say more than a single word and he indicates that he is finding it hard to breathe. He is very anxious. He has a raised itchy rash that is spreading from his face down to his chest. He has never had an episode like this before, although his mother explains that he has asthma and he has been prescribed a salbutamol inhaler previously for wheezy episodes. What is the most likely diagnosis?
+  OPTIONS: Acute asthma | Allergic reaction | Anaphylaxis | Idiopathic urticaria | Inhaled foreign body
+  KEY: Anaphylaxis
+
+=== n 179
+BOOK pedsa-b16-2
+  STEM: What will be your first step in Johnathan’s management? Select one answer only.
+  OPTIONS: Administer a budesonide nebulizer | Assess his airway and give him high-flow oxygen | Give intramuscular benzylpenicillin | Insert an intravenous cannula | Lie him flat
+  KEY: Assess his airway and give him high-flow oxygen
+OTHER pedep-alg-2
+  STEM: What is the first step in Jonathan's management?
+  OPTIONS: Administer a budesonide nebulizer | Assess his airway and give high-flow oxygen | Give intramuscular benzylpenicillin | Insert an intravenous cannula | Lie him flat
+  KEY: Assess his airway and give high-flow oxygen
+
+=== n 180
+BOOK pedsa-b16-2
+  STEM: What will be your first step in Johnathan’s management? Select one answer only.
+  OPTIONS: Administer a budesonide nebulizer | Assess his airway and give him high-flow oxygen | Give intramuscular benzylpenicillin | Insert an intravenous cannula | Lie him flat
+  KEY: Assess his airway and give him high-flow oxygen
+OTHER pedhd-alg-2
+  STEM: What will be your first step in Johnathan’s management?
+  OPTIONS: Administer a budesonide nebulizer | Assess his airway and give him high-flow oxygen | Give intramuscular benzylpenicillin | Insert an intravenous cannula | Lie him flat
+  KEY: Assess his airway and give him high-flow oxygen

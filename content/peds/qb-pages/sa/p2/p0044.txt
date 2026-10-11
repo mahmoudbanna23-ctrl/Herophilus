@@ -1,0 +1,40 @@
+Block 7 · Kidney and Urinary Tract 18 QUESTIONS
+
+
+Then do Lissauer Self-Assessment Chapter 19 (p.110).
+
+
+
+7.1 · SINGLE BEST ANSWER
+
+Which statement about plasma creatinine in children is correct?
+
+ A. The normal range is the same at all ages
+ B. The normal range RISES through childhood with increasing muscle mass and height
+ C. It rises before urea in acute kidney injury
+ D. It is unaffected by muscle mass
+ E. It is the earliest marker of chronic kidney disease
+
+Answer: B.
+
+Urea rises before creatinine but is less specific. Urinary protein loss occurs before the GFR falls in
+chronic kidney disease. eGFR = 31 × height (cm) ÷ creatinine.
+
+
+
+
+7.2 · SINGLE BEST ANSWER
+
+What is the GFR of a term newborn, corrected for surface area?
+
+ A. 80–120 mL/min per 1.73 m²
+ B. 20–30 mL/min per 1.73 m², rising to adult values by 1–2 years
+ C. Identical to the adult value at birth
+ D. Zero for the first week
+ E. 50% of adult values at 28 weeks' gestation
+
+Answer: B.
+
+At 28 weeks' gestation the GFR is only 10% of the term infant's, which is why renally excreted drugs
+need such care in the preterm.
+

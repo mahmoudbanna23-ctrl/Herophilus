@@ -1,0 +1,99 @@
+=== n 201
+BOOK pedsa-b17-13-4
+  STEM: Below is a list of diagnoses (A–N) that result in tachypnoea in children. For each of the following patients with respiratory symptoms, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Fred is a normally well 4-year-old boy. He has had a runny nose and fever for 3 days. He has now developed a cough and difficulty breathing. On examination his temperature is 39° C. He watches you but sits quietly on his mother’s lap. He has a respiratory rate of 55 breaths/min. His breaths are rapid but shallow with some mild substernal recession. There is no wheeze on auscultation but some coarse crackles at the right base. His oxygen saturation is 91% in air.
+  OPTIONS: Acute asthma | Bronchitis | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis (whooping cough) | Pneumonia | Retropharyngeal abscess | Tuberculosis
+  KEY: Pneumonia
+OTHER pedep2-res-63
+  STEM: Aly is a previously healthy person who has now developed a cough and difficulty breathing. On examination, his temperature is 39°C. He has a respiratory rate of 55 breaths/min. His breaths are rapid but shallow with mild substernal recession. There is no wheeze on auscultation but some coarse crackles at the right base. His oxygen saturation is 91% in air. Select the most probable diagnosis for his respiratory symptoms:
+  OPTIONS: Acute asthma | Bronchiolitis | Chronic asthma | Laryngotracheobronchitis (Croup) | Pneumonia
+  KEY: Pneumonia
+
+=== n 202
+BOOK pedsa-b17-13-4
+  STEM: Below is a list of diagnoses (A–N) that result in tachypnoea in children. For each of the following patients with respiratory symptoms, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Fred is a normally well 4-year-old boy. He has had a runny nose and fever for 3 days. He has now developed a cough and difficulty breathing. On examination his temperature is 39° C. He watches you but sits quietly on his mother’s lap. He has a respiratory rate of 55 breaths/min. His breaths are rapid but shallow with some mild substernal recession. There is no wheeze on auscultation but some coarse crackles at the right base. His oxygen saturation is 91% in air.
+  OPTIONS: Acute asthma | Bronchitis | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis (whooping cough) | Pneumonia | Retropharyngeal abscess | Tuberculosis
+  KEY: Pneumonia
+OTHER pedhd-resp-16
+  STEM: Fred is a normally well 4-year-old boy. He has had a runny nose and fever for 3 days. He has now developed a cough and difficulty breathing. On examination his temperature is 39°C. He watches you but sits quietly on his mother's lap. He has a respiratory rate of 55 breaths/min. His breaths are rapid but shallow with some mild substernal recession. There is no wheeze on auscultation but some coarse crackles at the right base. His oxygen saturation is 91% in air. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Bronchiolitis | Pneumonia | Pertussis (whooping cough) | Bronchiolitis | Laryngotracheobronchitis (croup)
+  KEY: Pneumonia
+
+=== n 203
+BOOK pedsa-b17-13-5
+  STEM: Below is a list of diagnoses (A–N) that result in tachypnoea in children. For each of the following patients with respiratory symptoms, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Hannah is a 3-month-old infant who has had a cough for over 2 weeks. She has now developed prolonged bouts of coughing. She has started to vomit at the end of the bout of coughing. Her temperature is 38° C. Her respiratory rate is 25 breaths/min. On auscultation of her chest there are some scattered crackles.
+  OPTIONS: Acute asthma | Bronchitis | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis (whooping cough) | Pneumonia | Retropharyngeal abscess | Tuberculosis
+  KEY: Pertussis (whooping cough)
+OTHER pedep2-res-16
+  STEM: Hannah is a 3-month-old infant who has had a cough for over 2 weeks. She has now developed prolonged bouts of coughing. She has started to vomit at the end of the bout of coughing. Her temperature is 38°C. Her respiratory rate is 25 breaths/min. On auscultation of her chest, there are some scattered crackles. What is the most likely diagnosis?
+  OPTIONS: Bronchiolitis | Pneumonia | Pertussis (whooping cough) | Bronchiolitis
+  KEY: Pertussis (whooping cough)
+
+=== n 204
+BOOK pedsa-b17-13-5
+  STEM: Below is a list of diagnoses (A–N) that result in tachypnoea in children. For each of the following patients with respiratory symptoms, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Hannah is a 3-month-old infant who has had a cough for over 2 weeks. She has now developed prolonged bouts of coughing. She has started to vomit at the end of the bout of coughing. Her temperature is 38° C. Her respiratory rate is 25 breaths/min. On auscultation of her chest there are some scattered crackles.
+  OPTIONS: Acute asthma | Bronchitis | Bronchiolitis | Bronchopulmonary dysplasia (BPD) | Chronic asthma | Cystic fibrosis | Heart failure | Inhaled foreign body | Laryngotracheobronchitis (croup) | Obstructive sleep apnoea | Pertussis (whooping cough) | Pneumonia | Retropharyngeal abscess | Tuberculosis
+  KEY: Pertussis (whooping cough)
+OTHER pedhd-resp-17
+  STEM: Hannah is a 3-month-old infant who has had a cough for over 2 weeks. She has now developed prolonged bouts of coughing. She has started to vomit at the end of the bout of coughing. Her temperature is 38°C. Her respiratory rate is 25 breaths/min. On auscultation of her chest there are some scattered crackles. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Bronchiolitis | Pneumonia | Pertussis (whooping cough) | Bronchiolitis | Laryngotracheobronchitis (croup)
+  KEY: Pertussis (whooping cough)
+
+=== n 205
+BOOK pedsa-b17-14-1
+  STEM: Below is a list of management options (A–N). For each of the following patients with respiratory disease, select the next step in management. Each option may be used once, more than once, or not at all. Sara, an 8-month-old Asian girl, presents with a 3-day history of being unsettled. She has been coryzal and has had a mild fever. On examining the right ear canal you note a bulging red tympanic membrane. Her respiratory rate is 25 breaths/min and she does not have any chest recession.
+  OPTIONS: Continuous positive airway pressure (CPAP) | Endotracheal intubation and ventilation | Inhaled salbutamol via metered dose inhaler (MDI) | Inhaled salbutamol via MDI and spacer | Inhaled steroid via MDI | Inhaled steroid via MDI and spacer | Intravenous antibiotics | Nebulized adrenaline | Nebulized salbutamol | Nebulized steroid (budesonide) | Oxygen therapy | Oral antipyretic/analgesic | Oral antibiotics | Oral corticosteroids
+  KEY: Oral antipyretic/analgesic
+OTHER pedep2-res-17
+  STEM: Sara, an 8-month-old Asian girl, presents with a 3-day history of being unsettled. She has had coryzal symptoms and a mild fever. On examination of the right ear canal, you note a bulging red tympanic membrane. Her respiratory rate is 25 breaths/min, and there is no chest recession. Which of the following is the most appropriate next step in the management of this patient?
+  OPTIONS: Oral corticosteroid | Inhaled salbutamol via metered-dose inhaler and spacer | Oral antipyretic/analgesic | Continuous positive airway pressure (CPAP) | Endotracheal intubation and ventilation
+  KEY: Oral antipyretic/analgesic
+
+=== n 206
+BOOK pedsa-b17-14-1
+  STEM: Below is a list of management options (A–N). For each of the following patients with respiratory disease, select the next step in management. Each option may be used once, more than once, or not at all. Sara, an 8-month-old Asian girl, presents with a 3-day history of being unsettled. She has been coryzal and has had a mild fever. On examining the right ear canal you note a bulging red tympanic membrane. Her respiratory rate is 25 breaths/min and she does not have any chest recession.
+  OPTIONS: Continuous positive airway pressure (CPAP) | Endotracheal intubation and ventilation | Inhaled salbutamol via metered dose inhaler (MDI) | Inhaled salbutamol via MDI and spacer | Inhaled steroid via MDI | Inhaled steroid via MDI and spacer | Intravenous antibiotics | Nebulized adrenaline | Nebulized salbutamol | Nebulized steroid (budesonide) | Oxygen therapy | Oral antipyretic/analgesic | Oral antibiotics | Oral corticosteroids
+  KEY: Oral antipyretic/analgesic
+OTHER pedhd-resp-18
+  STEM: Sara, an 8-month-old Asian girl, presents with a 3-day history of being unsettled. She has been coryzal and has had a mild fever. On examining the right ear canal you note a bulging red tympanic membrane. Her respiratory rate is 25 breaths/min and she does not have any chest recession. Which of the following is the most appropriate next step in the management of that patient?
+  OPTIONS: Oral corticosteroid | Inhaled salbutamol via metered dose inhaler and spacer | Oral antipyretic/analgesic | Continuous positive airway pressure (CPAP) | Endotracheal intubation and ventilation
+  KEY: Oral antipyretic/analgesic
+
+=== n 207
+BOOK pedsa-b17-14-2
+  STEM: Below is a list of management options (A–N). For each of the following patients with respiratory disease, select the next step in management. Each option may be used once, more than once, or not at all. Chardonnay is a 6-year-old Caucasian girl who has asthma. Her mother smokes cigarettes and there is poor compliance with her preventative steroid therapy. She presents with a 2-day history of cough, runny nose, mild fever and ‘breathlessness’. Her mother cannot remember her previous peak-flow result. On examination she has a respiratory rate of 30 breaths/min, mild intercostal recession and oxygen saturation of 96% in air.
+  OPTIONS: Continuous positive airway pressure (CPAP) | Endotracheal intubation and ventilation | Inhaled salbutamol via metered dose inhaler (MDI) | Inhaled salbutamol via MDI and spacer | Inhaled steroid via MDI | Inhaled steroid via MDI and spacer | Intravenous antibiotics | Nebulized adrenaline | Nebulized salbutamol | Nebulized steroid (budesonide) | Oxygen therapy | Oral antipyretic/analgesic | Oral antibiotics | Oral corticosteroids
+  KEY: Inhaled salbutamol via MDI and spacer
+OTHER pedep2-res-18
+  STEM: Chardonnay is a 6-year-old Caucasian girl who has asthma. Her mother smokes cigarettes, and there is poor compliance with her preventative steroid therapy. She presents with a 2-day history of cough, runny nose, mild fever, and breathlessness. Her mother cannot recall her previous peak-flow result. On examination, she has a respiratory rate of 30 breaths/min, mild intercostal recession, and oxygen saturation of 96% in room air. Which of the following is the most appropriate next step in the management of this patient?
+  OPTIONS: Oral corticosteroid | Inhaled salbutamol via metered-dose inhaler and spacer | Oral antipyretic/analgesic | Continuous positive airway pressure (CPAP)
+  KEY: Inhaled salbutamol via metered-dose inhaler and spacer
+
+=== n 208
+BOOK pedsa-b17-14-2
+  STEM: Below is a list of management options (A–N). For each of the following patients with respiratory disease, select the next step in management. Each option may be used once, more than once, or not at all. Chardonnay is a 6-year-old Caucasian girl who has asthma. Her mother smokes cigarettes and there is poor compliance with her preventative steroid therapy. She presents with a 2-day history of cough, runny nose, mild fever and ‘breathlessness’. Her mother cannot remember her previous peak-flow result. On examination she has a respiratory rate of 30 breaths/min, mild intercostal recession and oxygen saturation of 96% in air.
+  OPTIONS: Continuous positive airway pressure (CPAP) | Endotracheal intubation and ventilation | Inhaled salbutamol via metered dose inhaler (MDI) | Inhaled salbutamol via MDI and spacer | Inhaled steroid via MDI | Inhaled steroid via MDI and spacer | Intravenous antibiotics | Nebulized adrenaline | Nebulized salbutamol | Nebulized steroid (budesonide) | Oxygen therapy | Oral antipyretic/analgesic | Oral antibiotics | Oral corticosteroids
+  KEY: Inhaled salbutamol via MDI and spacer
+OTHER pedhd-resp-19
+  STEM: Chardonnay is a 6-year-old Caucasian girl who has asthma. Her mother smokes cigarettes and there is poor compliance with her preventative steroid therapy. She presents with a 2-day history of cough, runny nose, mild fever and 'breathlessness'. Her mother cannot remember her previous peak-flow result. On examination she has a respiratory rate of 30 breaths/min, mild intercostal recession and oxygen saturation of 96% in air. Which of the following is the most appropriate next step in the management of that patient?
+  OPTIONS: Oral corticosteroid | Inhaled salbutamol via metered dose inhaler and spacer | Oral antipyretic/analgesic | Continuous positive airway pressure (CPAP) | Endotracheal intubation and ventilation
+  KEY: Inhaled salbutamol via metered dose inhaler and spacer
+
+=== n 209
+BOOK pedsa-b17-14-3
+  STEM: Below is a list of management options (A–N). For each of the following patients with respiratory disease, select the next step in management. Each option may be used once, more than once, or not at all. Jake, a 7-month-old infant, presents with a 2-day history of fever and runny nose. During the night he has developed a harsh cough in association with noisy inspiration. On examination, you note he has moderate stridor mainly on inspiration and mild intercostal and subcostal recession. His respiratory rate is 30 breaths/min. He has a temperature of 37.8° C. His capillary refill time is normal. His oxygen saturation is 96% in air.
+  OPTIONS: Continuous positive airway pressure (CPAP) | Endotracheal intubation and ventilation | Inhaled salbutamol via metered dose inhaler (MDI) | Inhaled salbutamol via MDI and spacer | Inhaled steroid via MDI | Inhaled steroid via MDI and spacer | Intravenous antibiotics | Nebulized adrenaline | Nebulized salbutamol | Nebulized steroid (budesonide) | Oxygen therapy | Oral antipyretic/analgesic | Oral antibiotics | Oral corticosteroids
+  KEY: Oral corticosteroids
+OTHER pedep2-res-19
+  STEM: Jake, a 7-month-old infant, presents with a 2-day history of fever and runny nose. During the night, he developed a harsh cough and noisy breathing on inspiration. On examination, he has moderate inspiratory stridor and mild intercostal and subcostal recession. His respiratory rate is 30 breaths/min, temperature is 37.8°C, capillary refill time is normal, and oxygen saturation is 96% in air. Which of the following is the most appropriate next step in the management of this patient?
+  OPTIONS: Oral corticosteroid | Inhaled salbutamol via metered-dose inhaler and spacer | Oral antipyretic/analgesic | Continuous positive airway pressure (CPAP) | Endotracheal intubation and ventilation
+  KEY: Oral corticosteroid
+
+=== n 210
+BOOK pedsa-b17-14-3
+  STEM: Below is a list of management options (A–N). For each of the following patients with respiratory disease, select the next step in management. Each option may be used once, more than once, or not at all. Jake, a 7-month-old infant, presents with a 2-day history of fever and runny nose. During the night he has developed a harsh cough in association with noisy inspiration. On examination, you note he has moderate stridor mainly on inspiration and mild intercostal and subcostal recession. His respiratory rate is 30 breaths/min. He has a temperature of 37.8° C. His capillary refill time is normal. His oxygen saturation is 96% in air.
+  OPTIONS: Continuous positive airway pressure (CPAP) | Endotracheal intubation and ventilation | Inhaled salbutamol via metered dose inhaler (MDI) | Inhaled salbutamol via MDI and spacer | Inhaled steroid via MDI | Inhaled steroid via MDI and spacer | Intravenous antibiotics | Nebulized adrenaline | Nebulized salbutamol | Nebulized steroid (budesonide) | Oxygen therapy | Oral antipyretic/analgesic | Oral antibiotics | Oral corticosteroids
+  KEY: Oral corticosteroids
+OTHER pedhd-resp-20
+  STEM: Jake, a 7-month-old infant, presents with a 2-day history of fever and runny nose. During the night he has developed a harsh cough in association with noisy inspiration. On examination, you note he has moderate stridor mainly on inspiration and mild intercostal and subcostal recession. His respiratory rate is 30 breaths/min. He has a temperature of 37.8°C. His capillary refill time is normal. His oxygen saturation is 96% in air. Which of the following is the most appropriate next step in the management of that patient?
+  OPTIONS: Oral corticosteroid | Inhaled salbutamol via metered dose inhaler and spacer | Oral antipyretic/analgesic | Continuous positive airway pressure (CPAP) | Endotracheal intubation and ventilation
+  KEY: Oral corticosteroid

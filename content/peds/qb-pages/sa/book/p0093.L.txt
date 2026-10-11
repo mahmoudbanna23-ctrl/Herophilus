@@ -1,0 +1,60 @@
+What is the most likely diagnosis?                   Q
+                                                     R
+Select one answer only.                              S
+A.   Asthma                                          T
+B.   Neuroblastoma                                   1
+C.   Pertussis infection                             H
+D.   Pneumonia                                       h
+E.   Tuberculosis                                    a
+                                                     c
+15.9                                                 F
+You are in the baby clinic at a local general
+practice. One of the mothers is questioning
+whether or not she should get her baby
+immunized as she wonders if it is really
+necessary. He does not go to nursery and has no
+siblings so is not at risk of infection.
+What advice would you give?
+Select one answer only.
+A. As most other children are immunized it is
+   not crucial for her child to be immunized as
+   he is unlikely to be exposed to any of the
+   infections in the immunization schedule
+B. Immunization is important as a high
+   proportion of children need to be
+   immunized to remove the infections from
+   the community
+C. Immunization is important to provide
+   immunity for her child from serious
+   infections and to remove some of these
+   infections from the community
+D. It is her choice and you do not feel you
+   should give an opinion
+E. Vaccines are associated with side-effects, so
+   you can understand her reasoning
+
+ Questions: Extended Matching
+                                                     F
+15.10
+The following (A–T) is a list of infectious agents   1
+seen in children. Select the organism that is most   M
+likely to be the causative agent in the clinical     g
+scenarios outlined below. Each option may be         f
+used once, more than once, or not at all.            i
+A.   Aspergillus fumigatus                           i
+B.   Chickenpox virus (varicella zoster virus)       f
+C.   Cytomegalovirus infection                       3
+D.   Epstein–Barr virus                              m
+E.   Herpes simplex virus                            1
+F.   Human immunodeficiency virus infection          J
+G.   Influenza virus                                 t
+H.   Lyme disease (Borrelia burgdorferi)             T
+I.   Malaria parasites (Plasmodium sp.)              m
+J.   Measles virus
+K.   Mumps virus                                     1
+L.   Parvovirus infection (fifth disease)            S
+M.   Pseudomonas aeruginosa                          f
+N.   Respiratory syncytial virus                     i
+O.   Rhinovirus                                      a
+P.   Roseola infantum (sixth disease)                s
+

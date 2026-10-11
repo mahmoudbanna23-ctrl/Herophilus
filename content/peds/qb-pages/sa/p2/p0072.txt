@@ -1,0 +1,17 @@
+10.16 · CLINICAL SCENARIO
+
+A 2-week-old boy is collapsed with vomiting and weight loss. Sodium 122 mmol/L, potassium 7.1
+mmol/L, glucose 1.9 mmol/L, with metabolic acidosis. What is the diagnosis and immediate treatment?
+
+ A. Pyloric stenosis — correct the alkalosis then operate
+ B. Salt-losing congenital adrenal hyperplasia — IV saline, glucose and hydrocortisone
+ C. Gastroenteritis — oral rehydration
+D. Duct-dependent coarctation — prostaglandin alone
+ E. Urinary tract infection — oral antibiotics
+
+Answer: B.
+
+Over 90% of CAH is 21-hydroxylase deficiency (about 1 in 15 000, autosomal recessive), confirmed by a
+markedly raised 17α-hydroxyprogesterone — but treatment must not wait for the result. Pyloric stenosis
+gives the opposite picture: hypochloraemic, hypokalaemic ALKALOSIS.
+

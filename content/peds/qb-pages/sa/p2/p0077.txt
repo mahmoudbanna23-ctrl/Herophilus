@@ -1,0 +1,34 @@
+11.9 · SINGLE BEST ANSWER
+
+What proportion of infants who acquire hepatitis B perinatally become chronic carriers?
+
+ A. Fewer than 10%
+ B. About 50%
+ C. At least 90%
+D. None — perinatal infection always clears
+ E. About 25%
+
+Answer: C.
+
+They are asymptomatic but become carriers, which is why vaccination (with immunoglobulin where
+advised) at birth matters so much. 30–50% of carrier children develop chronic liver disease, about 10%
+progressing to cirrhosis, with a long-term risk of hepatocellular carcinoma.
+
+
+
+
+11.10 · SINGLE BEST ANSWER
+
+A child's serology shows HBsAg negative, anti-HBs positive, anti-HBc positive. What does this mean?
+
+ A. Successful vaccination only
+ B. Past natural infection with recovery
+ C. Acute infection
+D. Chronic carrier with high infectivity
+ E. No exposure to hepatitis B
+
+Answer: B.
+
+Anti-HBc is produced only by real infection, never by vaccination. Vaccination gives anti-HBs alone.
+HBsAg = infectious now; HBeAg = highly transmissible; anti-HBc IgM = acute.
+

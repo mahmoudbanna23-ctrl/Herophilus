@@ -1,0 +1,110 @@
+[
+ {
+  "book": "pedsa-b11-1",
+  "other": "pedep-mf2-78",
+  "cls": "SAME",
+  "why": "same stem word for word; both key surfactant deficiency; live drops the X-ray and rewrites the distractors"
+ },
+ {
+  "book": "pedsa-b15-10-2",
+  "other": "pedep-inf-50",
+  "cls": "SAME",
+  "why": "same scenario and key (Rhinovirus); live prints 50-month for the book's 10-month; matching sub-item cut to 4 options"
+ },
+ {
+  "book": "pedsa-b18-8-3",
+  "other": "pedep2-car-29",
+  "cls": "SAME",
+  "why": "same child, same findings; key Normal = Normal innocent murmur"
+ },
+ {
+  "book": "pedsa-b22-10-3",
+  "other": "pedep2-mal-15",
+  "cls": "SAME",
+  "why": "same child and key (urine catecholamines); live is the book item shortened"
+ },
+ {
+  "book": "pedsa-b22-6",
+  "other": "pedep2-mal-6",
+  "cls": "SAME",
+  "why": "same child and keyed advice; live drops the figure"
+ },
+ {
+  "book": "pedsa-b26-12-4",
+  "other": "pedep2-end-12",
+  "cls": "SAME",
+  "why": "same child, same glucose, same key (IV normal saline)"
+ },
+ {
+  "book": "pedsa-b6-12",
+  "other": "pedep-emg-56",
+  "cls": "SAME",
+  "why": "five identical options, same key; stem reworded without the UK reference"
+ },
+ {
+  "book": "pedsa-b6-9",
+  "other": "pedep-emg-9",
+  "cls": "SAME",
+  "why": "same scenario, same five options, same key"
+ },
+ {
+  "book": "pedsa-b10-12",
+  "other": "pedep-mf1-32",
+  "cls": "DIFF",
+  "why": "two options replaced and the key differs (serious neonatal infection vs give VZIG)"
+ },
+ {
+  "book": "pedsa-b10-7",
+  "other": "pedep-inf-43",
+  "cls": "DIFF",
+  "why": "red reflex normal vs abnormal; key CMV vs congenital infection"
+ },
+ {
+  "book": "pedsa-b10-7",
+  "other": "pedep-mf3-48",
+  "cls": "DIFF",
+  "why": "red reflex normal vs abnormal; key CMV vs congenital infection"
+ },
+ {
+  "book": "pedsa-b10-7",
+  "other": "pedep-neo-30",
+  "cls": "DIFF",
+  "why": "red reflex normal vs abnormal; key CMV vs congenital infection"
+ },
+ {
+  "book": "pedsa-b2-8-1",
+  "other": "pedep2-res-28",
+  "cls": "DIFF",
+  "why": "bronchiolitis findings vs pneumonia findings; key differs"
+ },
+ {
+  "book": "pedsa-b2-8-2",
+  "other": "pedep2-res-28",
+  "cls": "DIFF",
+  "why": "live is a hybrid: 19-month-old with the lead-in of 2.8.1 and the findings of 2.8.2 (book child is 3 years, febrile); kept apart"
+ },
+ {
+  "book": "pedsa-b22-1",
+  "other": "pedep2-mf1-59",
+  "cls": "DIFF",
+  "why": "commonest cancer vs commonest solid cancer; key differs"
+ },
+ {
+  "book": "pedsa-b15-7",
+  "other": "pedep-mf1-37",
+  "cls": "DIFF",
+  "why": "same vignette, different question: book asks the cause of the respiratory failure (key Pneumocystis jiroveci pneumonia, 5 options); live asks the diagnosis (key SCID, 4 options). Found by the Codex check 7; ruled by Claude 2026-10-11."
+ },
+ {
+  "book": "pedsa-b18-8-4",
+  "other": "pedep2-car-35",
+  "cls": "SAME",
+  "why": "Codex check 9 called it DIFFERENT: book prints the murmur at the upper RIGHT sternal edge, the live Endpoint item says upper LEFT. Ruled SAME by Claude 2026-10-11: same vignette word for word otherwise, same ask, same key (Aortic stenosis). The left/right word is a printing difference in the live item, to be checked against its page; it does not make a second question."
+ },
+ {
+  "book": "pedsa-b2-8-3",
+  "other": "pedep2-mf1-15",
+  "cls": "SAME",
+  "why": "First reader DIFF, Codex check 9 SAME. Book gives the examination findings in Fig. 2.7; Codex check 10 read the figure text: Respiratory rate 36 breaths/min, reduced air entry on the left chest, percussion normal, heart apex beat displaced to right — exactly what the live item spells out. Same vignette, same ask, same key (Inhaled foreign body, left side). Ruled SAME by Claude 2026-10-11."
+ }
+]

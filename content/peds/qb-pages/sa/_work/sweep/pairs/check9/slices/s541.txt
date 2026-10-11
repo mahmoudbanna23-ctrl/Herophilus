@@ -1,0 +1,99 @@
+=== n 541
+BOOK pedsa-b6-4
+  STEM: You are called to see a 3-year-old boy with a high fever. The nurse is worried that he is very sleepy. As you walk into the resuscitation room he makes no spontaneous response. You try calling his name but he makes no response. On stimulation, his eyes open, he cries and he raises his hand and pushes your hand away. What is this child’s Glasgow Coma Score (GCS)? Select one answer only.
+  OPTIONS: 8 | 9 | 10 | 11 | 12
+  KEY: 9
+OTHER pedep-emg-4
+  STEM: You are called to assess a 3-year-old boy with a high fever. The nurse reports that he is very sleepy. On entering the resuscitation room, the child makes no spontaneous response. When his name is called, there is no response. On stimulation, his eyes open, he cries, raises his hand, and pushes your hand away. What is this child's Glasgow Coma Score (GCS)?
+  OPTIONS: 8 | 9 | 10 | 11 | 12
+  KEY: 9
+
+=== n 542
+BOOK pedsa-b6-4
+  STEM: You are called to see a 3-year-old boy with a high fever. The nurse is worried that he is very sleepy. As you walk into the resuscitation room he makes no spontaneous response. You try calling his name but he makes no response. On stimulation, his eyes open, he cries and he raises his hand and pushes your hand away. What is this child’s Glasgow Coma Score (GCS)? Select one answer only.
+  OPTIONS: 8 | 9 | 10 | 11 | 12
+  KEY: 9
+OTHER pedhd-emg-4
+  STEM: You are called to see a 3-year-old boy with a high fever. The nurse is worried that he is very sleepy. As you walk into the resuscitation room he makes no spontaneous response. You try calling his name but he makes no response. On stimulation, his eyes open, he cries and he raises his hand and pushes your hand away. What is this child's Glasgow Coma Score (GCS)?
+  OPTIONS: 8 | 9 | 10 | 11 | 12
+  KEY: 9
+
+=== n 543
+BOOK pedsa-b6-5
+  STEM: Ryan, aged 10 months, is rushed to the children’s emergency department after being found submerged in the bath. His mother runs screaming into the department saying ‘Help my baby, please’. Which is the next most appropriate step? Select one answer only.
+  OPTIONS: Commence chest compressions in a ratio of 15 : 2 | If the child is not breathing, commence bag and mask ventilation | Place the child onto the examination couch and put his head into the neutral position | Remove wet clothing/towels and dry the baby vigorously | Stimulate the baby and shout for help
+  KEY: Stimulate the baby and shout for help
+OTHER pedep-emg-5
+  STEM: Ryan, aged 10 months, is rushed to the children's emergency department after being found submerged in the bath. His mother runs in screaming, “Help my baby, please.” What is the next most appropriate step?
+  OPTIONS: Commence chest compressions in a ratio of 15:2 | If the child is not breathing, commence bag and mask ventilation | Place the child on the examination couch and position his head neutrally | Remove wet clothing/towels and dry the baby vigorously | Stimulate the baby and shout for help
+  KEY: Stimulate the baby and shout for help
+
+=== n 544
+BOOK pedsa-b6-5
+  STEM: Ryan, aged 10 months, is rushed to the children’s emergency department after being found submerged in the bath. His mother runs screaming into the department saying ‘Help my baby, please’. Which is the next most appropriate step? Select one answer only.
+  OPTIONS: Commence chest compressions in a ratio of 15 : 2 | If the child is not breathing, commence bag and mask ventilation | Place the child onto the examination couch and put his head into the neutral position | Remove wet clothing/towels and dry the baby vigorously | Stimulate the baby and shout for help
+  KEY: Stimulate the baby and shout for help
+OTHER pedhd-emg-5
+  STEM: Ryan, aged 10 months, is rushed to the children's emergency department after being found submerged in the bath. His mother runs screaming into the department saying 'Help my baby, please'. Which is the next most appropriate step?
+  OPTIONS: Commence chest compressions in a ratio of 15:2 | If the child is not breathing, commence bag and mask ventilation | Place the child onto the examination couch and put his head into the neutral position | Remove wet clothing/towels and dry the baby vigorously | Stimulate the baby and shout for help
+  KEY: Stimulate the baby and shout for help
+
+=== n 545
+BOOK pedsa-b6-6
+  STEM: Mohammed, aged 8 months, has been vomiting and off his feeds for 2 days. Initially, he had episodes of crying uncontrollably, drawing his legs up into his abdomen as if in pain, and appeared fractious. His mother gave him some oral rehydration solution, but his vomiting continued and he has become lethargic. On admission to hospital he is in shock. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Gastroenteritis | Intussusception | Malrotation and volvulus | Meckel diverticulum | Strangulated hernia
+  KEY: Intussusception
+OTHER pedep-emg-6
+  STEM: Mohammed, aged 8 months, has been vomiting and refusing feeds for 2 days. Initially, he had episodes of intense crying, drawing his legs up as if in pain, and appeared irritable. Despite oral rehydration, his vomiting continued and he became lethargic. On hospital admission, he is in shock. What is the most likely diagnosis?
+  OPTIONS: Gastroenteritis | Intussusception | Malrotation with volvulus | Meckel's diverticulum | Strangulated hernia
+  KEY: Intussusception
+
+=== n 546
+BOOK pedsa-b6-6
+  STEM: Mohammed, aged 8 months, has been vomiting and off his feeds for 2 days. Initially, he had episodes of crying uncontrollably, drawing his legs up into his abdomen as if in pain, and appeared fractious. His mother gave him some oral rehydration solution, but his vomiting continued and he has become lethargic. On admission to hospital he is in shock. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Gastroenteritis | Intussusception | Malrotation and volvulus | Meckel diverticulum | Strangulated hernia
+  KEY: Intussusception
+OTHER pedhd-emg-6
+  STEM: Mohammed, aged 8 months, has been vomiting and off his feeds for 2 days. Initially, he had episodes of crying uncontrollably, drawing his legs up into his abdomen as if in pain, and appeared fractious. His mother gave him some oral rehydration solution, but his vomiting continued and he has become lethargic. On admission to hospital he is in shock. What is the most likely diagnosis?
+  OPTIONS: Gastroenteritis | Intussusception | Malrotation and volvulus | Meckel diverticulum | Strangulated hernia
+  KEY: Intussusception
+
+=== n 547
+BOOK pedsa-b6-7
+  STEM: Mohammed, aged 8 months, presented with the clinical scenario described in question 6.7. He weighs 8 kg. He needs a bolus of normal saline 0.9% to treat his shock. What volume of fluid would you give initially? Select one answer only.
+  OPTIONS: 40 ml | 160 ml | 320 ml | 680 ml | 800 ml
+  KEY: 160 ml
+OTHER pedep-emg-7
+  STEM: Mohammed (8 months old, 8 kg) is in shock and requires a normal saline 0.9% bolus. What is the initial volume you would administer?
+  OPTIONS: 40 mL | 160 mL | 320 mL | 680 mL | 800 mL
+  KEY: 160 mL
+
+=== n 548
+BOOK pedsa-b6-7
+  STEM: Mohammed, aged 8 months, presented with the clinical scenario described in question 6.7. He weighs 8 kg. He needs a bolus of normal saline 0.9% to treat his shock. What volume of fluid would you give initially? Select one answer only.
+  OPTIONS: 40 ml | 160 ml | 320 ml | 680 ml | 800 ml
+  KEY: 160 ml
+OTHER pedhd-emg-7
+  STEM: Mohammed, aged 8 months, presented with the clinical scenario described above. He weighs 8 kg. He needs a bolus of normal saline 0.9% to treat his shock. What volume of fluid would you give initially?
+  OPTIONS: 40 ml | 160 ml | 320 ml | 680 ml | 800 ml
+  KEY: 160 ml
+
+=== n 549
+BOOK pedsa-b6-8
+  STEM: Mohammed, aged 8 months, has presented with the clinical scenario described in Questions 6.6 and 6.7. He has received the fluid bolus of normal saline 0.9%, which has improved his condition. From his presentation you suspect he is 10% dehydrated. You receive his laboratory results, which reveal a plasma sodium of 138 mmol/L (within the normal range). His continuing fluid loss from vomiting is small and can be ignored. What is Mohammed’s total fluid requirement for the initial 24 hours? He weighs 8 kg. Select one answer only.
+  OPTIONS: 160 ml | 320 ml | 800 ml | 880 ml | 1600 ml
+  KEY: 1600 ml
+OTHER pedep-emg-8
+  STEM: . Mohammed, aged 8 months, has presented with the clinical scenario described in the previous two questions. He has received the fluid bolus of normal saline 0.9%, which has improved his condition. From his presentation, you suspect he is 10% dehydrated. You receive his laboratory results, which reveal a plasma sodium of 138 mmol/L (within the normal range). His continuing fluid loss from vomiting is small and can be ignored. What is Mohammed's total fluid requirement for the initial 24 hours?
+  OPTIONS: 160 mL | 320 mL | 800 mL | 880 mL | 1600 mL
+  KEY: 1600 mL
+
+=== n 550
+BOOK pedsa-b6-8
+  STEM: Mohammed, aged 8 months, has presented with the clinical scenario described in Questions 6.6 and 6.7. He has received the fluid bolus of normal saline 0.9%, which has improved his condition. From his presentation you suspect he is 10% dehydrated. You receive his laboratory results, which reveal a plasma sodium of 138 mmol/L (within the normal range). His continuing fluid loss from vomiting is small and can be ignored. What is Mohammed’s total fluid requirement for the initial 24 hours? He weighs 8 kg. Select one answer only.
+  OPTIONS: 160 ml | 320 ml | 800 ml | 880 ml | 1600 ml
+  KEY: 1600 ml
+OTHER pedhd-emg-8
+  STEM: Mohammed, aged 8 months, has presented with the clinical scenario described in the previous 2 questions. He has received the fluid bolus of normal saline 0.9%, which has improved his condition. From his presentation you suspect he is 10% dehydrated. You receive his laboratory results, which reveal a plasma sodium of 138 mmol/L (within the normal range). His continuing fluid loss from vomiting is small and can be ignored. What is Mohammed’s total fluid requirement for the initial 24 hours? He weighs 8 kg.
+  OPTIONS: 160 ml | 320 ml | 800 ml | 880 ml | 1600 ml
+  KEY: 1600 ml

@@ -1,0 +1,99 @@
+=== n 81
+BOOK pedsa-b13-2
+  STEM: Sarah, a 9-year-old girl, is referred by the school nurse to the paediatric clinic because of her weight. She weighs 43 kg (98th centile) and is 141 cm tall (91st centile). She has followed her height centiles for the last 9 months but her weight centile has increased. Her body mass index is on the 97th centile. Her mother reports that she hardly eats at all and when she does she has a very healthy diet. Which of the following statements is most likely to be correct? Select one answer only.
+  OPTIONS: A calorie-restricted diet is the treatment of choice | Sarah’s adrenocortical axis should be checked to exclude Cushing syndrome | Sarah has a higher risk of an abnormal lipid profile and raised blood pressure in adult life | Sarah is obese | Sarah’s main problem is that she has a low metabolic rate
+  KEY: Sarah has a higher risk of an abnormal lipid profile and raised blood pressure in adult life
+OTHER pedep-nut-2
+  STEM: Sarah, a 9-year-old girl, is referred by the school nurse to the paediatric clinic because of her weight. She weighs 43 kg (98th centile) and is 141 cm tall (91st centile). She has followed her height centiles over the last 9 months, but her weight centile has increased. Her body mass index is at the 97th centile. Her mother reports that she hardly eats and, when she does, has a very healthy diet. Which of the following statements is most likely to be correct?
+  OPTIONS: A calorie-restricted diet is the treatment of choice | Sarah's adrenocortical axis should be checked to rule out Cushing syndrome | Sarah has a higher risk of an abnormal lipid profile and raised blood pressure in adult life | Sarah is obese
+  KEY: Sarah has a higher risk of an abnormal lipid profile and raised blood pressure in adult life
+
+=== n 82
+BOOK pedsa-b13-2
+  STEM: Sarah, a 9-year-old girl, is referred by the school nurse to the paediatric clinic because of her weight. She weighs 43 kg (98th centile) and is 141 cm tall (91st centile). She has followed her height centiles for the last 9 months but her weight centile has increased. Her body mass index is on the 97th centile. Her mother reports that she hardly eats at all and when she does she has a very healthy diet. Which of the following statements is most likely to be correct? Select one answer only.
+  OPTIONS: A calorie-restricted diet is the treatment of choice | Sarah’s adrenocortical axis should be checked to exclude Cushing syndrome | Sarah has a higher risk of an abnormal lipid profile and raised blood pressure in adult life | Sarah is obese | Sarah’s main problem is that she has a low metabolic rate
+  KEY: Sarah has a higher risk of an abnormal lipid profile and raised blood pressure in adult life
+OTHER pedhd-nutr-2
+  STEM: Sarah, a 9-year-old girl, is referred by the school nurse to the paediatric clinic because of her weight. She weighs 43 kg (98th centile) and is 141 cm tall (91st centile). She has followed her height centiles for the last 9 months but her weight centile has increased. Her body mass index is on the 97th centile. Her mother reports that she hardly eats at all and when she does she has a very healthy diet. Which of the following statements is most likely to be correct?
+  OPTIONS: A calorie-restricted diet is the treatment of choice | Sarah's adrenocortical axis should be checked to exclude Cushing syndrome | Sarah has a higher risk of an abnormal lipid profile and raised blood pressure in adult life | Sarah is obese | Sarah's main problem is that she has a low metabolic rate
+  KEY: Sarah has a higher risk of an abnormal lipid profile and raised blood pressure in adult life
+
+=== n 83
+BOOK pedsa-b13-3
+  STEM: Which of the following term newborns has the lowest risk of cardiovascular disease in later life? Select one answer only.
+  OPTIONS: 1.8 kg | 2.1 kg | 2.4 kg | 3.9 kg | 4.6 kg
+  KEY: 3.9 kg
+OTHER pedep-nut-3
+  STEM: Which of the following term newborns has the lowest risk of cardiovascular disease in later life?
+  OPTIONS: 1.8 kg | 2.1 kg | 2.4 kg | 3.9 kg | 4.6 kg
+  KEY: 3.9 kg
+
+=== n 84
+BOOK pedsa-b13-3
+  STEM: Which of the following term newborns has the lowest risk of cardiovascular disease in later life? Select one answer only.
+  OPTIONS: 1.8 kg | 2.1 kg | 2.4 kg | 3.9 kg | 4.6 kg
+  KEY: 3.9 kg
+OTHER pedhd-nutr-3
+  STEM: Which of the following term newborns has the lowest risk of cardiovascular disease in later life?
+  OPTIONS: 1.8 kg | 2.1 kg | 2.4 kg | 3.9 kg | 4.6 kg
+  KEY: 3.9 kg
+
+=== n 85
+BOOK pedsa-b13-4
+  STEM: A mother asks you whether there are any disadvantages to breastfeeding. Although you would prefer to inform her about the many advantages of breastfeeding, you wish to answer her question honestly. Which of the following is most likely to be a true potential disadvantage? Select one answer only.
+  OPTIONS: Breastfeeding will reduce her chance of having more children | The absence of cow’s milk protein in breast milk increases the risk that the child will develop milk allergy at weaning | The higher interferon level in breast milk increases the risk of severe bronchiolitis in children who develop respiratory syncytial virus infection | The lower vitamin K concentration in breast milk can result in life-threatening bleeding | The strong bond developed during breastfeeding will prevent paternal bonding
+  KEY: The lower vitamin K concentration in breast milk can result in life-threatening bleeding
+OTHER pedep-nut-4
+  STEM: A mother asks you whether there are any disadvantages to breastfeeding. Although you would prefer to inform her about the many advantages of breastfeeding, you wish to answer her question honestly. Which of the following is most likely to be a true potential disadvantage?
+  OPTIONS: Breastfeeding will reduce her chance of having more children | The absence of cow's milk protein in breast milk increases the risk that the child will develop a milk allergy when weaning | The higher interferon level in breast milk increases the risk of severe bronchiolitis in children who develop respiratory syncytial virus infection | The lower vitamin K concentration in breast milk can result in life-threatening bleeding
+  KEY: The lower vitamin K concentration in breast milk can result in life-threatening bleeding
+
+=== n 86
+BOOK pedsa-b13-4
+  STEM: A mother asks you whether there are any disadvantages to breastfeeding. Although you would prefer to inform her about the many advantages of breastfeeding, you wish to answer her question honestly. Which of the following is most likely to be a true potential disadvantage? Select one answer only.
+  OPTIONS: Breastfeeding will reduce her chance of having more children | The absence of cow’s milk protein in breast milk increases the risk that the child will develop milk allergy at weaning | The higher interferon level in breast milk increases the risk of severe bronchiolitis in children who develop respiratory syncytial virus infection | The lower vitamin K concentration in breast milk can result in life-threatening bleeding | The strong bond developed during breastfeeding will prevent paternal bonding
+  KEY: The lower vitamin K concentration in breast milk can result in life-threatening bleeding
+OTHER pedhd-nutr-4
+  STEM: A mother asks you whether there are any disadvantages to breastfeeding. Although you would prefer to inform her about the many advantages of breastfeeding, you wish to answer her question honestly. Which of the following is most likely to be a true potential disadvantage?
+  OPTIONS: Breastfeeding will reduce her chance of having more children | The absence of cow's milk protein in breast milk increases the risk that the child will develop milk allergy at weaning | The higher interferon level in breast milk increases the risk of severe bronchiolitis in children who develop respiratory syncytial virus infection | The lower vitamin K concentration in breast milk can result in life-threatening bleeding | The strong bond developed during breastfeeding will prevent paternal bonding
+  KEY: The lower vitamin K concentration in breast milk can result in life-threatening bleeding
+
+=== n 87
+BOOK pedsa-b13-5
+  STEM: Anil is a 2½-year-old boy who lives in India and attends the local health clinic near their village for a routine check. Both his parents are subsistence farmers. He is asymptomatic. On examination, he is very thin but his hair and skin appear normal and there is no oedema or other clinical abnormalities. His height is on the 5th centile but his weight is well below the 0.4th centile (z-score between −2 and −3 below the median). What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Kwashiorkor | Marasmus | Normal child | Rickets | Severe gastro-oesophageal reflux
+  KEY: Marasmus
+OTHER pedep-nut-23
+  STEM: A 2-year-old boy lives in a village and attends the local health clinic near their village for a routine check. Both his parents are farmers. He is asymptomatic. On examination, he is very thin, but his hair and skin appear normal and there is no edema or other clinical abnormalities. His height is on the 5th centile, but his weight is well below the 3rd centile (z-score between -2 and -3 below the median). What is the most likely diagnosis?
+  OPTIONS: Kwashiorkor | Marasmus | Normal child | Rickets | Severe gastro-esophageal reflux
+  KEY: Marasmus
+
+=== n 88
+BOOK pedsa-b13-5
+  STEM: Anil is a 2½-year-old boy who lives in India and attends the local health clinic near their village for a routine check. Both his parents are subsistence farmers. He is asymptomatic. On examination, he is very thin but his hair and skin appear normal and there is no oedema or other clinical abnormalities. His height is on the 5th centile but his weight is well below the 0.4th centile (z-score between −2 and −3 below the median). What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Kwashiorkor | Marasmus | Normal child | Rickets | Severe gastro-oesophageal reflux
+  KEY: Marasmus
+OTHER pedep-nut-5
+  STEM: Anil is a 2.5-year-old boy who lives in India and attends the local health clinic near their village for a routine check-up. Both his parents are subsistence farmers. He is asymptomatic. On examination, he is very thin, but his hair and skin appear normal, and there is no oedema or other clinical abnormalities. His height is on the 5th centile, but his weight is well below the 0.4th centile (z-score between -2 and -3 below the median).What is the most likely diagnosis?
+  OPTIONS: Kwashiorkor | Marasmus | Normal child | Rickets | Severe gastro-oesophageal reflux
+  KEY: Marasmus
+
+=== n 89
+BOOK pedsa-b13-5
+  STEM: Anil is a 2½-year-old boy who lives in India and attends the local health clinic near their village for a routine check. Both his parents are subsistence farmers. He is asymptomatic. On examination, he is very thin but his hair and skin appear normal and there is no oedema or other clinical abnormalities. His height is on the 5th centile but his weight is well below the 0.4th centile (z-score between −2 and −3 below the median). What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Kwashiorkor | Marasmus | Normal child | Rickets | Severe gastro-oesophageal reflux
+  KEY: Marasmus
+OTHER pedhd-nutr-5
+  STEM: Anil is a 2½-year-old boy who lives in India and attends the local health clinic near their village for a routine check. Both his parents are subsistence farmers. He is asymptomatic. On examination, he is very thin but his hair and skin appear normal and there is no oedema or other clinical abnormalities. His height is on the 5th centile but his weight is well below the 0.4th centile (z-score between –2 and –3 below the median). What is the most likely diagnosis?
+  OPTIONS: Kwashiorkor | Marasmus | Normal child | Rickets | Severe gastro-oesophageal reflux
+  KEY: Marasmus
+
+=== n 90
+BOOK pedsa-b13-6
+  STEM: Harry is a 13-year-old boy who attends the paediatric clinic because of obesity. His height is on the 98th centile and his weight is above the 99.6th centile. Which of the following is least likely to be associated with obesity? Select one answer only.
+  OPTIONS: Asthma | Hypertension | Low self-esteem | Slipped upper femoral epiphysis | Type 1 diabetes
+  KEY: Type 1 diabetes
+OTHER pedep-nut-6
+  STEM: Harry is a 13-year-old boy who attends the paediatric clinic because of obesity. His height is on the 98th centile and his weight is above the 99.6th centile. Which of the following is least likely to be associated with obesity?
+  OPTIONS: Asthma | Hypertension | Low self-esteem | Slipped upper femoral epiphysis | Type 1 diabetes
+  KEY: Type 1 diabetes

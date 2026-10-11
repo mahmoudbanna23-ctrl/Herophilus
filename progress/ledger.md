@@ -2126,3 +2126,61 @@ Half A (s1-21, PDF 6-1390) is `questions.ophtho.ep.js` (439). Half B (s22-27, PD
 - Within-endpoint duplicates left as separate entries: `ophep-conjunctiva-17`/`-26`, `ophep-glaucoma-13`/`-20`, `ophep-malignancies-eye-adnexa-2`/`-10` and `-3`/`-7`, `ophep-orbit-10`/`-12`/`ophep-optics-refraction-11`, `ophep-lacrimal-system-7`/`ophep-orbit-8`, `ophep-retina-12`/`ophep-ocular-systemic-diseases-17`, `ophep2-model-exam-4-49`/`ophep-ocular-trauma-16`.
 - `ophep-neuro-ophthalmology-19` option B (Anterior vs Arteritic); `ophep-vitreous-8` lacks a fifth option.
 - Push: the local commits are unpushed; owner decides.
+
+---
+
+## §23 — PEDIATRICS "SELF ASSESSMENT" SOURCE, fourth bank `selfassess` (2026-10-11)
+
+Three files in `Semester 8\Pedo\Questions\`, all with a text layer (no scan rendering for the words):
+`Self Assessment Book.pdf` (194 pp, printed book, 31 chapters, read whole: 452 questions and
+extended-matching sub-items), `Self assessment part 1.pdf` (70 pp, 165) and
+`Self assessment part 2.pdf` (89 pp, 188). Parts 1 and 2 are AUTHORED sets, not a printed bank; every
+one of their 353 entries ends its `explanation` with a "Written for this bank — an authored
+question from Self assessment part N" sentence. Page text is cached per page under
+`content\peds\qb-pages\sa\{book,p1,p2}\`; staging arrays `sa-book.array.js`, `sa-p1.array.js`,
+`sa-p2.array.js`; chapter map `sa-chapters.json`; build scripts `content\peds\qb-pages\sa\_build\`
+(`node build.js && node check.js` re-runs the whole build).
+
+**Reconciliation.** 805 printed = 353 written-set entries + 168 new book entries (file
+`app\data\questions.peds.sa.js`, 521) + 284 book questions already in the app. Those 284 took no
+second entry: 585 live entries gained `alsoIn:['selfassess']` and the book citation in `source`
+(`questions.peds.js` 272, `questions.peds.ep.js` 121, `questions.peds.ep2.js` 192; one book question
+can match several live printings). Pairs: 775 candidates from the sweep
+(`_work\sweep\pairs\book-pairs.json`: SAME 577, MENU 126, DIFF 57, UNSURE 15), first read Claude
+Sonnet, check Codex, 18 pairs ruled by Claude (`_work\sweep\pairs\claude-rulings.json`). Policy:
+same question and same key only; **the live wording stays**, the book's wording is not copied in.
+No fold between the three new files themselves.
+
+**Chapters.** No new chapter. The book's out-of-course topics went to the nearest existing chapter
+with the real topic named in `objective` (owner ruling 2026-10-11). The first sort had bulk errors
+(musculoskeletal to neuro-nm, skin to allergy, adolescent to mental); a free-seat second sort ended
+56% in disagreement with 131 missing, so a Claude Sonnet role ruled all 358 open items
+(`_work\chapters-rulings.jsonl`, 212 moved). First sort kept as `sa-chapters.first-sort.json`.
+
+**Pictures.** 50 files cut to `app\assets\q\q-pd-sa-*.jpg` (56 records in
+`_work\pics\pictures.json`), 48 entries carry one, each looked at by a helper and judged by Codex.
+Six files are on disk but unused (`q-pd-sa-12-1`, `-43`, `-59`, `-60`, `-170`, `-172`): figures of
+folded ids and figures printed with the answer only. Ruled NOT attached: `pedsa-b9-16-3`,
+`pedsa-b28-8`, `pedsa-b9-15-4` (answer-only figures), `pedsa-b18-7-3`, and the answer figures of
+`pedsa-b7-3`, `pedsa-b28-2`, `pedsa-b28-10`.
+
+**Notes that have no entry to live in (their ids folded into live entries).** Book 17.4: the key was
+taken from the bold heading only. Book 10.12: look-alike `pedep-mf1-32` carries a different key.
+Book 10.7: look-alikes `pedep-inf-43`, `pedep-mf3-48`, `pedep-neo-30` carry a different key.
+`pedep2-car-35` prints "upper left" where the book prints "upper right sternal edge": recorded, key
+not moved.
+
+**Checks.** Builder Codex, checker a Claude Sonnet refuter: two blockers found and fixed before the
+splice (`pedsa-b31-3` explanation ran into the book's index; `pedsa-b25-2` had lost its figure).
+`check-all` 4/4, boot QUESTIONS 7,477, 0 console errors; `validate-all` hard checks pass on
+`peds`, `peds.ep`, `peds.sa`; `image-check` clean; every Pediatrics array 0 holes.
+
+### Still owed (not blocking)
+- Superscripts and exponents in the three files come from the PDF text layer and were not checked
+  against page images.
+- `validate-all.js` never opens a file with a digit in its name (`questions.peds.ep2.js`,
+  `questions.ophtho.ep2.js`): its file regex is `[a-z.]+`. `check-all` does count them.
+- Option T cannot be chosen by keyboard (T toggles the theme); only `pedsa-b15-10-4` and
+  `pedsa-b15-10-6` reach 20 options, their keys are I and R, clicking works.
+- Weak but defensible chapter calls: `pedsa-b28-5`, `pedsa-b25-11-2`, `pedsa-b30-1`, `pedsa-b25-10`.
+- The book is a published title: whether it may sit on the live site is the owner's rights call.

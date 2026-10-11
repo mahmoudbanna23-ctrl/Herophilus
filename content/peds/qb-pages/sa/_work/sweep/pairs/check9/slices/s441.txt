@@ -1,0 +1,99 @@
+=== n 441
+BOOK pedsa-b29-8
+  STEM: Aparna is a 2-year-old girl of Indian ethnicity who lives in the UK. She presents to her general practitioner as she has been unsteady on her feet for a day, having had diarrhoea during the previous week. On examination she is afebrile, has reduced muscle power and tone and no tendon reflexes can be elicited in her lower limbs. She is referred urgently to the paediatric hospital and 6 hours later she is unable to stand and the tendon reflexes in her upper limbs are now absent. She has no other medical problems and has been fully immunized. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Guillain–Barré syndrome | Myasthenia gravis | Myotonic dystrophy | Poliomyelitis | Spinal muscular atrophy
+  KEY: Guillain–Barré syndrome
+OTHER pedhd-neuro-6
+  STEM: Aparna is a 2-year-old girl of Indian ethnicity who lives in the UK. She presents to her general practitioner as she has been unsteady on her feet for a day, having had diarrhoea during the previous week. On examination she is afebrile, has reduced muscle power and tone and no tendon reflexes can be elicited in her lower limbs. She is referred urgently to the paediatric hospital and 6 hours later she is unable to stand and the tendon reflexes in her upper limbs are now absent. She has no other medical problems and has been fully immunized. What is the most likely diagnosis?
+  OPTIONS: Guillain–Barré syndrome | Myasthenia gravis | Myotonic dystrophy | Poliomyelitis | Spinal muscular atrophy
+  KEY: Guillain–Barré syndrome
+
+=== n 442
+BOOK pedsa-b3-1
+  STEM: Steven has just had his first birthday party. During his party he commando crawled with great speed, although he cannot walk. He managed to pick off all the Smarties (round chocolate sweets) from his birthday cake. He can say two words with meaning. After his birthday party, he impressed his guests by waving goodbye. Which area of Steven’s development is delayed? Select one answer only.
+  OPTIONS: Fine motor and vision | Gross motor | Social, emotional and behavioural development | Speech and hearing | None – his development is within normal limits
+  KEY: None – his development is within normal limits
+OTHER pedep2-nd-1
+  STEM: Steven has just had his first birthday party. During his party, he commando crawled with great speed, although he cannot walk. He managed to pick off all the Smarties (round chocolate sweets) from his birthday cake. He can say two words with meaning. After his birthday party, he impressed his guests by waving goodbye. Which area of Steven's development is delayed?
+  OPTIONS: Fine motor and vision | Gross motor | Social, emotional, and behavioral development | Speech and hearing | None – his development is within normal limits
+  KEY: None – his development is within normal limits
+
+=== n 443
+BOOK pedsa-b3-1
+  STEM: Steven has just had his first birthday party. During his party he commando crawled with great speed, although he cannot walk. He managed to pick off all the Smarties (round chocolate sweets) from his birthday cake. He can say two words with meaning. After his birthday party, he impressed his guests by waving goodbye. Which area of Steven’s development is delayed? Select one answer only.
+  OPTIONS: Fine motor and vision | Gross motor | Social, emotional and behavioural development | Speech and hearing | None – his development is within normal limits
+  KEY: None – his development is within normal limits
+OTHER pedhd-dev-1
+  STEM: Steven has just had his first birthday party. During his party he commando crawled with great speed, although he cannot walk. He managed to pick off all the Smarties (round chocolate sweets) from his birthday cake. He can say two words with meaning. After his birthday party, he impressed his guests by waving goodbye. Which area of Steven's development is delayed?
+  OPTIONS: Fine motor and vision | Gross motor | Social, emotional and behavioural development | Speech and hearing | None – his development is within normal limits
+  KEY: None – his development is within normal limits
+
+=== n 444
+BOOK pedsa-b3-4
+  STEM: Sophie is a well 8-week-old baby who was born at term. She has come for a routine developmental check. Which of the following would you NOT expect her to be able to do? Select one answer only.
+  OPTIONS: Auditory brainstem response audiometry | Fix and follow a toy | Quieten to a loud noise | Raise her head when lying prone | Reach out and grasp an object
+  KEY: Reach out and grasp an object
+OTHER pedep2-nd-2
+  STEM: Sophie is a well-born 8-week-old baby who was born at term. She has come for a routine developmental check. Which of the following would you NOT expect her to be able to do?
+  OPTIONS: Auditory brainstem response audiometry | Fix and follow a toy | Quiet to a loud noise | Raise her head when lying prone | Reach out and grasp an object
+  KEY: Reach out and grasp an object
+
+=== n 445
+BOOK pedsa-b3-4
+  STEM: Sophie is a well 8-week-old baby who was born at term. She has come for a routine developmental check. Which of the following would you NOT expect her to be able to do? Select one answer only.
+  OPTIONS: Auditory brainstem response audiometry | Fix and follow a toy | Quieten to a loud noise | Raise her head when lying prone | Reach out and grasp an object
+  KEY: Reach out and grasp an object
+OTHER pedhd-dev-2
+  STEM: Sophie is a well 8-week-old baby who was born at term. She has come for a routine developmental check. Which of the following would you NOT expect her to be able to do?
+  OPTIONS: Auditory brainstem response audiometry | Fix and follow a toy | Quieten to a loud noise | Raise her head when lying prone | Reach out and grasp an object
+  KEY: Reach out and grasp an object
+
+=== n 446
+BOOK pedsa-b3-5
+  STEM: Joanna is an active toddler. She is just being potty trained and has had several days where she has remained dry. She enjoys pulling her clothes off to use the potty but cannot dress herself again. She enjoys playing by pretending to make her mother a cup of tea but does not play well with her older siblings, as she has not yet learnt how to take turns. She is very bossy and demands things by saying ‘give me’ or ‘me drink’. She can build a tower of six blocks and enjoys running and climbing on furniture. What developmental age is Joanna? Select one answer only.
+  OPTIONS: 12 months | 18 months | 24 months | 2.5 years | 3 years
+  KEY: 24 months
+OTHER pedep2-nd-3
+  STEM: Joanna is an active toddler. She is just being potty trained and has had several days where she has remained dry. She enjoys pulling her clothes off to use the potty but cannot dress herself again. She enjoys playing by pretending to make her mother a cup of tea but does not play well with her older siblings, as she has not yet learned how to take turns. She is very bossy and demands things by saying "give me" or "me drink". She can build a tower of six blocks and enjoys running and climbing on furniture. What developmental age is Joanna?
+  OPTIONS: 12 months | 18 months | 24 months | 2.5 years | 3 years
+  KEY: 24 months
+
+=== n 447
+BOOK pedsa-b3-5
+  STEM: Joanna is an active toddler. She is just being potty trained and has had several days where she has remained dry. She enjoys pulling her clothes off to use the potty but cannot dress herself again. She enjoys playing by pretending to make her mother a cup of tea but does not play well with her older siblings, as she has not yet learnt how to take turns. She is very bossy and demands things by saying ‘give me’ or ‘me drink’. She can build a tower of six blocks and enjoys running and climbing on furniture. What developmental age is Joanna? Select one answer only.
+  OPTIONS: 12 months | 18 months | 24 months | 2.5 years | 3 years
+  KEY: 24 months
+OTHER pedhd-dev-3
+  STEM: Joanna is an active toddler. She is just being potty trained and has had several days where she has remained dry. She enjoys pulling her clothes off to use the potty but cannot dress herself again. She enjoys playing by pretending to make her mother a cup of tea but does not play well with her older siblings, as she has not yet learnt how to take turns. She is very bossy and demands things by saying ‘give me’ or ‘me drink’. She can build a tower of six blocks and enjoys running and climbing on furniture. What developmental age is Joanna?
+  OPTIONS: 12 months | 18 months | 24 months | 2.5 years | 3 years
+  KEY: 24 months
+
+=== n 448
+BOOK pedsa-b3-6
+  STEM: Cordelia is a 4-month-old baby girl who is assessed by her general practitioner because of constant crying and poor feeding. She is fed by bottle on infant formula. Her mother tearfully complains that she is finding it very difficult to cope. She also has a 20-month-old son who has recently been referred to the speech and language therapist because of language delay. Charlotte’s development, growth and physical examination are normal. What is the likely cause of Cordelia’s problems? Select one answer only.
+  OPTIONS: An inherited genetic condition | Cow’s milk protein allergy | Down syndrome | Gastro-oesophageal reflux | Maternal postnatal depression/stress
+  KEY: Maternal postnatal depression/stress
+OTHER pedep-nut-72
+  STEM: A 4-month-old baby girl is assessed by her general practitioner because of constant crying and poor feeding. She is fed by bottle on infant formula. Her mother tearfully complains that she is finding it very difficult to cope. Her development, growth, and physical examination are normal, but her stools frequently contain streaks of blood. What is the likely cause of the girl’s problem?
+  OPTIONS: An inherited genetic condition | Cow’s milk protein allergy | Down syndrome | Gastroesophageal reflux | Cystic fibrosis
+  KEY: Cow’s milk protein allergy
+
+=== n 449
+BOOK pedsa-b3-7-1
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Rosette can build a three-cube tower and can point to her nose.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 18 months
+OTHER pedep2-nd-4
+  STEM: Rosette can build a three-cube tower and can point to her nose. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 weeks | 6 months | 8 months | 18 months | 12 months
+  KEY: 18 months
+
+=== n 450
+BOOK pedsa-b3-7-1
+  STEM: At what age would one expect children to achieve the milestones described in the scenarios (median age) described below? Each age can be used once, more than once, or not at all. Rosette can build a three-cube tower and can point to her nose.
+  OPTIONS: 6 weeks | 6 months | 8 months | 10 months | 12 months | 18 months | 2 years | 3 years | 4 years | 5 years
+  KEY: 18 months
+OTHER pedhd-dev-4
+  STEM: Rosette can build a three-cube tower and can point to her nose. At what age would one expect that child to achieve the milestones described in this scenario (median age)?
+  OPTIONS: 6 weeks | 6 months | 8 months | 18 months | 12 months
+  KEY: 18 months

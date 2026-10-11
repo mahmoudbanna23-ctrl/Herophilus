@@ -1,0 +1,41 @@
+    E.   Dextrocardia with situs solitus
+    F.   Mitral regurgitation
+    G.   Mitral stenosis
+    H.   Normal
+    I.   Persistent ductus arteriosus
+    J.   Pulmonary stenosis
+    K.   Tetralogy of Fallot
+    L.   Transposition of the great arteries
+    M.   Ventricular septal defect (VSD)
+    18.8.1
+    Anoushka, a 1-year-old girl, presents to the
+    Emergency Department with a respiratory tract
+    infection. She is pink and well-perfused. There is
+    a thrill and pansystolic murmur at the lower left
+    sternal edge.
+    18.8.2
+    Debbie, a 3-month-old female infant is being
+    reviewed in the paediatric outpatient clinic. She
+    was referred as on her 6-week check the general
+    practitioner heard a continuous murmur
+    throughout the praecordium. She is well and
+    thriving. All peripheral pulses are present and
+    easily palpable. Oxygen saturation is 96%
+a   post-ductal.
+
+r   18.8.3
+    Nada, a 5 month old female infant has a fever
+    and runny nose for 2 days. On examination she
+    has a fever of 38.3° C and a runny nose. Her
+    tongue is pink. Her breathing is normal. Pulse is
+    160 beats/min. Her heart sounds are normal but
+    she has a soft systolic murmur at the left sternal
+t   edge. Pulses are normal.
+    18.8.4
+    Robert, a 3-year-old boy, has had a runny nose
+    and wheeze for 3 days. On examination his pulse
+    is 100 beats/min. Pulses are normal. There is an
+    ejection systolic murmur heard loudest at the
+    upper right sternal edge, which can also be heard
+    over the carotid arteries but not at the back.
+

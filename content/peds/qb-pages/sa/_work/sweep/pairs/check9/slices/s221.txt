@@ -1,0 +1,99 @@
+=== n 221
+BOOK pedsa-b17-7
+  STEM: Zak, a 3-year-old boy, is seen by his general practitioner because of recurrent wheezing associated with upper respiratory tract infections. Which of the following features most supports the diagnosis of asthma? Select one answer only.
+  OPTIONS: Daytime cough | Finger clubbing | Peak-flow variability diary | Persistent moist cough | The presence of symptoms between coughs and colds
+  KEY: The presence of symptoms between coughs and colds
+OTHER pedep2-mf2-67
+  STEM: Which clinical feature strongly supports the diagnosis of asthma?
+  OPTIONS: Daytime cough | Finger clubbing | Peak-flow variability diary | Persistent moist cough | The presence of symptoms between coughs and colds
+  KEY: The presence of symptoms between coughs and colds
+
+=== n 222
+BOOK pedsa-b17-7
+  STEM: Zak, a 3-year-old boy, is seen by his general practitioner because of recurrent wheezing associated with upper respiratory tract infections. Which of the following features most supports the diagnosis of asthma? Select one answer only.
+  OPTIONS: Daytime cough | Finger clubbing | Peak-flow variability diary | Persistent moist cough | The presence of symptoms between coughs and colds
+  KEY: The presence of symptoms between coughs and colds
+OTHER pedep2-res-54
+  STEM: A 3-year-old boy is seen by his GP due to recurrent wheezing associated with upper respiratory tract infections. Which of the following features most supports a diagnosis of asthma?
+  OPTIONS: Daytime cough | Finger clubbing | Spasmodic cough | Persistent moist cough | The presence of symptoms between colds
+  KEY: The presence of symptoms between colds
+
+=== n 223
+BOOK pedsa-b17-7
+  STEM: Zak, a 3-year-old boy, is seen by his general practitioner because of recurrent wheezing associated with upper respiratory tract infections. Which of the following features most supports the diagnosis of asthma? Select one answer only.
+  OPTIONS: Daytime cough | Finger clubbing | Peak-flow variability diary | Persistent moist cough | The presence of symptoms between coughs and colds
+  KEY: The presence of symptoms between coughs and colds
+OTHER pedep2-res-7
+  STEM: Zak, a 3-year-old boy, is seen by his general practitioner because of recurrent wheezing associated with upper respiratory tract infections. Which of the following features most supports the diagnosis of asthma?
+  OPTIONS: Daytime cough | Finger clubbing | Peak-flow variability diary | Persistent moist cough | The presence of symptoms between coughs and colds
+  KEY: The presence of symptoms between coughs and colds
+
+=== n 224
+BOOK pedsa-b17-7
+  STEM: Zak, a 3-year-old boy, is seen by his general practitioner because of recurrent wheezing associated with upper respiratory tract infections. Which of the following features most supports the diagnosis of asthma? Select one answer only.
+  OPTIONS: Daytime cough | Finger clubbing | Peak-flow variability diary | Persistent moist cough | The presence of symptoms between coughs and colds
+  KEY: The presence of symptoms between coughs and colds
+OTHER pedhd-resp-7
+  STEM: Zak, a 3-year-old boy, is seen by his general practitioner because of recurrent wheezing associated with upper respiratory tract infections. Which of the following features most supports the diagnosis of asthma?
+  OPTIONS: Daytime cough | Finger clubbing | Peak-flow variability diary | Persistent moist cough | The presence of symptoms between coughs and colds
+  KEY: The presence of symptoms between coughs and colds
+
+=== n 225
+BOOK pedsa-b17-9
+  STEM: Norah, an 18-month-old girl, presents to her family doctor with coryza, cough and a mild fever for 3 days. She feeds poorly and is unsettled at night. Her respiratory rate is normal and there is no chest recession. What is the most likely diagnosis?
+  OPTIONS: Bronchiolitis | Frontal sinusitis | Pneumonia (lower respiratory tract infection) | Tonsillitis | Upper respiratory tract infection
+  KEY: Upper respiratory tract infection
+OTHER pedep2-res-8
+  STEM: Norah, an 18-month-old girl, presents to her family doctor with coryza, cough, and a mild fever for 3 days. She feeds poorly and is unsettled at night. Her respiratory rate is normal, and there is no chest recession. What is the most likely diagnosis?
+  OPTIONS: Bronchiolitis | Frontal sinusitis | Pneumonia (lower respiratory tract infection) | Tonsillitis | Upper respiratory tract infection
+  KEY: Upper respiratory tract infection
+
+=== n 226
+BOOK pedsa-b17-9
+  STEM: Norah, an 18-month-old girl, presents to her family doctor with coryza, cough and a mild fever for 3 days. She feeds poorly and is unsettled at night. Her respiratory rate is normal and there is no chest recession. What is the most likely diagnosis?
+  OPTIONS: Bronchiolitis | Frontal sinusitis | Pneumonia (lower respiratory tract infection) | Tonsillitis | Upper respiratory tract infection
+  KEY: Upper respiratory tract infection
+OTHER pedhd-resp-8
+  STEM: Norah, an 18-month-old girl, presents to her family doctor with coryza, cough and a mild fever for 3 days. She feeds poorly and is unsettled at night. Her respiratory rate is normal and there is no chest recession. What is the most likely diagnosis?
+  OPTIONS: Bronchiolitis | Frontal sinusitis | Pneumonia (lower respiratory tract infection) | Tonsillitis | Upper respiratory tract infection
+  KEY: Upper respiratory tract infection
+
+=== n 227
+BOOK pedsa-b18-1
+  STEM: Alan, a 4-month-old boy, sees his general practitioner for an ear infection. On listening to his chest a heart murmur is heard. Which one of the following features most suggests that it requires further investigation? Select one answer only.
+  OPTIONS: A thrill | Disappearance of murmur on lying flat | Murmur maximal at the left sternal edge | Sinus arrhythmia | Systolic murmur
+  KEY: A thrill
+OTHER pedep2-car-1
+  STEM: Alan, a 4-month-old boy, sees his general practitioner for an ear infection. On listening to his chest, a heart murmur is heard. Which one of the following features most suggests that it requires further investigation?
+  OPTIONS: A thrill | Disappearance of murmur when lying flat | Murmur maximal at the left sternal edge | Sinus arrhythmia | Systolic murmur
+  KEY: A thrill
+
+=== n 228
+BOOK pedsa-b18-1
+  STEM: Alan, a 4-month-old boy, sees his general practitioner for an ear infection. On listening to his chest a heart murmur is heard. Which one of the following features most suggests that it requires further investigation? Select one answer only.
+  OPTIONS: A thrill | Disappearance of murmur on lying flat | Murmur maximal at the left sternal edge | Sinus arrhythmia | Systolic murmur
+  KEY: A thrill
+OTHER pedhd-card-1
+  STEM: Alan, a 4-month-old boy, sees his general practitioner for an ear infection. On listening to his chest a heart murmur is heard. Which one of the following features most suggests that it requires further investigation?
+  OPTIONS: A thrill | Disappearance of murmur on lying flat | Murmur maximal at the left sternal edge | Sinus arrhythmia | Systolic murmur
+  KEY: A thrill
+
+=== n 229
+BOOK pedsa-b18-2
+  STEM: Which of the following is the most common type of congenital heart disease in the UK? Select one answer only.
+  OPTIONS: Atrial septal defect | Persistent arterial duct | Pulmonary stenosis | Tetralogy of Fallot | Ventricular septal defect
+  KEY: Ventricular septal defect
+OTHER pedep2-car-2
+  STEM: Which of the following is the most common congenital heart disease?
+  OPTIONS: Ventricular septal defect (VSD) | Atrial septal defect (ASD) | Patent ductus arteriosus (PDA) | Tetralogy of Fallot
+  KEY: Ventricular septal defect (VSD)
+
+=== n 230
+BOOK pedsa-b18-2
+  STEM: Which of the following is the most common type of congenital heart disease in the UK? Select one answer only.
+  OPTIONS: Atrial septal defect | Persistent arterial duct | Pulmonary stenosis | Tetralogy of Fallot | Ventricular septal defect
+  KEY: Ventricular septal defect
+OTHER pedhd-card-2
+  STEM: Which of the following is the most common type of congenital heart disease in the UK?
+  OPTIONS: Atrial septal defect | Persistent arterial duct | Pulmonary stenosis | Tetralogy of Fallot | Ventricular septal defect
+  KEY: Ventricular septal defect

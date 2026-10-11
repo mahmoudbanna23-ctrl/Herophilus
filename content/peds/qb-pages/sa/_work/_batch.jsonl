@@ -1,0 +1,28 @@
+{"id":"pedsa-b28-14-3","first":"neuro-nm","second":"normal-dev","final":"normal-dev","secondary":"musculoskeletal","why":"Flexible flat feet in toddler are a normal variant."}
+{"id":"pedsa-b28-14-4","first":"neuro-nm","second":"normal-dev","final":"normal-dev","secondary":"musculoskeletal","why":"Idiopathic toe walking with normal tone and reflexes is a normal variant."}
+{"id":"pedsa-b29-1","first":"neurological","second":"malignant-solid","final":"malignant-solid","secondary":"neurological","why":"Morning headache and vomiting from space-occupying lesion: brain tumour."}
+{"id":"pedsa-b29-2","first":"neurological","second":"genetics","final":"neuro-nm","secondary":"genetics","why":"Myotonic dystrophy, taught in motor disorders lecture; trinucleotide repeat test."}
+{"id":"pedsa-b29-4","first":"neurological","second":"infection","final":"neurological","secondary":"infection","why":"Febrile seizure in well child needs no investigation; keep first."}
+{"id":"pedsa-b29-6","first":"neurological","second":"perinatal","final":"perinatal","secondary":"neonatal-seiz","why":"Preterm intraventricular haemorrhage causing hydrocephalus and abnormal eye movements."}
+{"id":"pedsa-b29-8","first":"infection","second":"neuro-nm","final":"neuro-nm","secondary":"","why":"Guillain-Barre syndrome: ascending weakness with absent reflexes."}
+{"id":"pedsa-b29-9","first":"neurological","second":"genetics","final":"genetics","secondary":"neurological","why":"Neurofibromatosis: inherited, skin marks and axillary freckling."}
+{"id":"pedsa-b29-10","first":"neurological","second":"genetics","final":"genetics","secondary":"perinatal","why":"Neural tube defect prevented by periconceptual folic acid."}
+{"id":"pedsa-b29-13-1","first":"neurological","second":"accidents","final":"neurological","secondary":"","why":"Reflex anoxic seizure is a funny-turn differential of epilepsy; keep first."}
+{"id":"pedsa-b29-13-2","first":"neurological","second":"emergencies","final":"neurological","secondary":"","why":"Vasovagal syncope with prodrome is a funny-turn differential; keep first."}
+{"id":"pedsa-b29-13-3","first":"neurological","second":"cardiac","final":"cardiac-acq","secondary":"neurological","why":"Exertional collapse, father sudden death at 34: arrhythmia, myocardial lecture."}
+{"id":"pedsa-b29-15-2","first":"neurological","second":"neuro-cp","final":"neuro-cp","secondary":"","why":"Babinski sign with unilateral upper motor neurone signs after birth asphyxia: cerebral palsy."}
+{"id":"pedsa-b29-15-3","first":"neurological","second":"neuro-nm","final":"neuro-nm","secondary":"","why":"Romberg sign in slowly progressive ataxia with calf wasting."}
+{"id":"pedsa-b29-15-4","first":"neurological","second":"neuro-cp","final":"neuro-cp","secondary":"","why":"Fogs sign: associated movement in mild hemiplegia of prematurity."}
+{"id":"pedsa-b29-15-5","first":"neurological","second":"infection","final":"infection","secondary":"","why":"Kernig sign with photophobia and drowsiness: meningitis."}
+{"id":"pedsa-b30-1","first":"mental","second":null,"final":"puberty","secondary":"adolescent medicine","why":"Teenage motherhood incidence; no adolescent chapter, puberty lecture nearest."}
+{"id":"pedsa-b30-2","first":"mental","second":null,"final":"puberty","secondary":"adolescent medicine","why":"Contraception and confidentiality in sexually active 15-year-old; puberty nearest."}
+{"id":"pedsa-b30-3","first":"mental","second":null,"final":"accidents","secondary":"adolescent medicine","why":"Injury and poisoning is commonest cause of death at 15-19."}
+{"id":"pedsa-b30-4","first":"mental","second":null,"final":"puberty","secondary":"adolescent medicine","why":"Emergency contraception works up to 72 hours; puberty nearest."}
+{"id":"pedsa-b30-5-1","first":"mental","second":null,"final":"puberty","secondary":"adolescent medicine","why":"Pregnancy with morning vomiting and suprapubic mass in adolescent."}
+{"id":"pedsa-b30-5-2","first":"mental","second":null,"final":"mental","secondary":"adolescent medicine","why":"Depression with hopelessness and anhedonia in adolescent."}
+{"id":"pedsa-b30-5-3","first":"mental","second":null,"final":"malignant-solid","secondary":"adolescent medicine","why":"Morning headache, vomiting, sixth nerve palsy: posterior fossa brain tumour."}
+{"id":"pedsa-b30-5-4","first":"mental","second":null,"final":"mental","secondary":"adolescent medicine","why":"Recurrent non-specific headaches in well adolescent: somatic symptoms."}
+{"id":"pedsa-b30-5-5","first":"mental","second":null,"final":"mental","secondary":"adolescent medicine","why":"Risk-taking behaviour with suspected drug and alcohol use."}
+{"id":"pedsa-b31-1","first":"perinatal","second":null,"final":"perinatal","secondary":"global child health","why":"Prematurity is leading cause of under-five death; keep first."}
+{"id":"pedsa-b31-2","first":"perinatal","second":null,"final":"perinatal","secondary":"global child health","why":"Maternal education predicts neonatal mortality; keep first."}
+{"id":"pedsa-b31-3","first":"perinatal","second":null,"final":"accidents","secondary":"global child health","why":"Trauma is the cause of childhood death set to rise."}

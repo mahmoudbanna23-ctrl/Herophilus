@@ -1,0 +1,99 @@
+=== n 351
+BOOK pedsa-b23-3
+  STEM: Tom is a 5-year-old boy who presents to hospital with a recent history of bruising easily. Two weeks ago he had an upper respiratory tract infection which resolved spontaneously. On examination today he is afebrile but has many, widespread bruises with some scattered petechiae. Investigations reveal: • Hb (haemoglobin): 116 g/L • WBC (white blood cell count): 10.2 × 10⁹ /L • platelet count: 32 × 10⁹ /L • prothrombin time: 15 seconds (control: 12–15 s) • activated partial thromboplastin time: 30 seconds (control: 25–35 s) • fibrinogen: 2.5 g/L (normal: 2–4 g/L) What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute lymphoblastic leukaemia | Haemophilia A | Immune thrombocytopenic purpura | Non-accidental injury | Vitamin D deficiency
+  KEY: Immune thrombocytopenic purpura
+OTHER pedhd-haem-3
+  STEM: Tom is a 5-year-old boy who presents to hospital with a recent history of bruising easily. Two weeks ago he had an upper respiratory tract infection which resolved spontaneously. On examination today he is afebrile but has many, widespread bruises with some scattered petechiae. Investigations reveal: • Hb (haemoglobin): 116 g/L • WBC (white blood cell count): 10.2 × 10⁹/L • platelet count: 32 × 10⁹/L • prothrombin time: 15 seconds (control: 12–15 s) • activated partial thromboplastin time: 30 seconds (control: 25–35 s) • fibrinogen: 2.5 g/L (normal: 2–4 g/L) What is the most likely diagnosis?
+  OPTIONS: Acute lymphoblastic leukaemia | Haemophilia A | Immune thrombocytopenic purpura | Non-accidental injury | Vitamin D deficiency
+  KEY: Immune thrombocytopenic purpura
+
+=== n 352
+BOOK pedsa-b23-4
+  STEM: Amir is a 2-year-old Bangladeshi boy who has eczema. His general practitioner is undertaking a routine review of his care and notices that Amir is pale. The remainder of his examination is normal. His mother reports that he has been eating bits of carpet from his room recently. Investigations reveal: • Hb (haemoglobin): 66 g/L • WBC (white blood cell count): 10.2 × 10⁹ /L • platelet count: 350 × 10⁹ /L • MCV (mean cell volume): 60 fL (normal: 75–87 fL) What is the most appropriate treatment? Select one answer only.
+  OPTIONS: Dietary advice | Folic acid | Iron supplements | Multivitamin tablets | Vitamin B₁₂ injections
+  KEY: Iron supplements
+OTHER pedep2-hem-25
+  STEM: Amir is a 2-year-old Bangladeshi boy with eczema. During a routine review, his general practitioner notices he is pale. The rest of the examination is normal. His mother reports that he has been eating bits of carpet recently. Investigations reveal: Hb (hemoglobin): 66 g/L WBC (white blood cell count): 10.2 x 10^9/L Platelet count: 350 x 10^9/L MCV (mean cell volume): 60 fL (normal: 75–87 fL). What is the most appropriate treatment?
+  OPTIONS: Dietary advice | Folic acid | Iron supplements | Multivitamin tablets | Vitamin B12 injections
+  KEY: Iron supplements
+
+=== n 353
+BOOK pedsa-b23-4
+  STEM: Amir is a 2-year-old Bangladeshi boy who has eczema. His general practitioner is undertaking a routine review of his care and notices that Amir is pale. The remainder of his examination is normal. His mother reports that he has been eating bits of carpet from his room recently. Investigations reveal: • Hb (haemoglobin): 66 g/L • WBC (white blood cell count): 10.2 × 10⁹ /L • platelet count: 350 × 10⁹ /L • MCV (mean cell volume): 60 fL (normal: 75–87 fL) What is the most appropriate treatment? Select one answer only.
+  OPTIONS: Dietary advice | Folic acid | Iron supplements | Multivitamin tablets | Vitamin B₁₂ injections
+  KEY: Iron supplements
+OTHER pedhd-haem-4
+  STEM: Amir is a 2-year-old Bangladeshi boy who has eczema. His general practitioner is undertaking a routine review of his care and notices that Amir is pale. The remainder of his examination is normal. His mother reports that he has been eating bits of carpet from his room recently. Investigations reveal: • Hb (haemoglobin): 66 g/L • WBC (white blood cell count): 10.2 × 10⁹/L • platelet count: 350 × 10⁹/L • MCV (mean cell volume): 60 fL (normal: 75–87 fL) What is the most appropriate treatment?
+  OPTIONS: Dietary advice | Folic acid | Iron supplements | Multivitamin tablets | Vitamin B12 injections
+  KEY: Iron supplements
+
+=== n 354
+BOOK pedsa-b23-5
+  STEM: Joseph, a 2-year-old black Caribbean boy from London, is admitted to hospital for an elective repair of an inguinal hernia. He has no other medical problems. His pre-operative assessment reveals the following results and his blood film is shown below (Fig. 23.1): • Hb (haemoglobin): 86 g/L • MCV (mean cell volume): 68 fL (normal: 75–87 fL) • MCHC (mean corpuscular haemoglobin concentration): 22 g/dl (normal: 32–35 g/dl) • WBC (white blood cell count): 11.2 × 10⁹ /L • platelets: 262 × 10⁹ /L • HB electrophoresis: haemoglobin A (HbA) 98%; haemoglobin A₂ (HbA₂ ) 2% What is the most likely diagnosis? Select one answer only.
+  OPTIONS: β-Thalassaemia trait | Glucose-6-phosphate dehydrogenase deficiency | Iron-deficiency anaemia | Normal variation for age and ethnicity | Sickle cell trait
+  KEY: Iron-deficiency anaemia
+OTHER pedep2-hem-26
+  STEM: Joseph, a 2-year-old Black Caribbean boy from London, is admitted to the hospital for elective inguinal hernia repair. He has no other medical problems. His pre-operative assessment reveals the following results: Hb (hemoglobin): 86 g/L MCV (mean cell volume): 68 fL (normal: 75–87 fL) MCHC (mean corpuscular hemoglobin concentration): 22 g/dL (normal: 32–35 g/dL) WBC (white blood cell count): 11.2 x 10^9/L Platelet count: 262 x 10^9/L Hemoglobin electrophoresis: HbA 98%, HbA2 2% What is the most likely diagnosis?
+  OPTIONS: β-Thalassaemia trait | Glucose-6-phosphate dehydrogenase deficiency | Iron-deficiency anemia | Normal variation for age and ethnicity
+  KEY: Iron-deficiency anemia
+
+=== n 355
+BOOK pedsa-b23-5
+  STEM: Joseph, a 2-year-old black Caribbean boy from London, is admitted to hospital for an elective repair of an inguinal hernia. He has no other medical problems. His pre-operative assessment reveals the following results and his blood film is shown below (Fig. 23.1): • Hb (haemoglobin): 86 g/L • MCV (mean cell volume): 68 fL (normal: 75–87 fL) • MCHC (mean corpuscular haemoglobin concentration): 22 g/dl (normal: 32–35 g/dl) • WBC (white blood cell count): 11.2 × 10⁹ /L • platelets: 262 × 10⁹ /L • HB electrophoresis: haemoglobin A (HbA) 98%; haemoglobin A₂ (HbA₂ ) 2% What is the most likely diagnosis? Select one answer only.
+  OPTIONS: β-Thalassaemia trait | Glucose-6-phosphate dehydrogenase deficiency | Iron-deficiency anaemia | Normal variation for age and ethnicity | Sickle cell trait
+  KEY: Iron-deficiency anaemia
+OTHER pedep2-hem-87
+  STEM: A 2y old boy is admitted to hospital for an elective repair of an inguinal hernia. he has no other medical problems. His preoperative assessment reveals the following results: Hb: 8.6 g/dl, MCV: 58 fl (normal: 75-87 fl), MCHC: 22 g/dl (normal: 32-35 g/dl), WBC 11,200 /dl, platelets: 262.000/dl, HB electrophoresis: hemoglobin A (HbA) 98%; hemoglobin A2 (HbA2) 2%. What is the most likely diagnosis?
+  OPTIONS: Thalassemia trait | Glucose-6-phosphate dehydrogenase deficiency | Iron-deficiency anemia | Normal variation for age | Sickle cell trait
+  KEY: Iron-deficiency anemia
+
+=== n 356
+BOOK pedsa-b23-5
+  STEM: Joseph, a 2-year-old black Caribbean boy from London, is admitted to hospital for an elective repair of an inguinal hernia. He has no other medical problems. His pre-operative assessment reveals the following results and his blood film is shown below (Fig. 23.1): • Hb (haemoglobin): 86 g/L • MCV (mean cell volume): 68 fL (normal: 75–87 fL) • MCHC (mean corpuscular haemoglobin concentration): 22 g/dl (normal: 32–35 g/dl) • WBC (white blood cell count): 11.2 × 10⁹ /L • platelets: 262 × 10⁹ /L • HB electrophoresis: haemoglobin A (HbA) 98%; haemoglobin A₂ (HbA₂ ) 2% What is the most likely diagnosis? Select one answer only.
+  OPTIONS: β-Thalassaemia trait | Glucose-6-phosphate dehydrogenase deficiency | Iron-deficiency anaemia | Normal variation for age and ethnicity | Sickle cell trait
+  KEY: Iron-deficiency anaemia
+OTHER pedhd-haem-5
+  STEM: Joseph, a 2-year-old black Caribbean boy from London, is admitted to hospital for an elective repair of an inguinal hernia. He has no other medical problems. His pre-operative assessment reveals the following results and his blood film is shown in the opposite figure: • Hb (haemoglobin): 86 g/L • MCV (mean cell volume): 68 fL (normal: 75–87 fL) • MCHC (mean corpuscular haemoglobin concentration): 22 g/dl (normal: 32–35 g/dl) • WBC (white blood cell count): 11.2 × 10⁹/L • platelets: 262 × 109/L • HB electrophoresis: haemoglobin A (HbA) 98%; haemoglobin A2 (HbA2) 2% What is the most likely diagnosis?
+  OPTIONS: β-Thalassaemia trait | Glucose-6-phosphate dehydrogenase deficiency | Iron-deficiency anaemia | Normal variation for age and ethnicity | Sickle cell trait
+  KEY: Iron-deficiency anaemia
+
+=== n 357
+BOOK pedsa-b23-6
+  STEM: Peter, aged 9 months, presents to the Emergency Department. His family moved to the UK when Peter was 6 weeks old. He has a 6 hour history of pain in his fingers. He has had an upper respiratory tract infection for the past 24 hours. He has no other medical history and is not on any medication. The appearance of his left hand is shown in Fig. 23.2. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute lymphoblastic leukaemia | β-Thalassaemia major | Glucose-6-phosphate dehydrogenase deficiency | Haemophilia A | Sickle cell disease
+  KEY: Sickle cell disease
+OTHER pedep2-hem-27
+  STEM: Peter, aged 9 months, presents to the Emergency Department. His family moved to the UK when he was 6 weeks old. He has had pain in his fingers for the past 6 hours and an upper respiratory tract infection for the last 24 hours. He has no medical history and is not on any medications. The appearance of his left hand is shown in the figure What is the most likely diagnosis?
+  OPTIONS: Acute lymphoblastic leukaemia | β-Thalassaemia major | Glucose-6-phosphate dehydrogenase deficiency | Haemophilia A | Sickle cell disease
+  KEY: Sickle cell disease
+
+=== n 358
+BOOK pedsa-b23-6
+  STEM: Peter, aged 9 months, presents to the Emergency Department. His family moved to the UK when Peter was 6 weeks old. He has a 6 hour history of pain in his fingers. He has had an upper respiratory tract infection for the past 24 hours. He has no other medical history and is not on any medication. The appearance of his left hand is shown in Fig. 23.2. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute lymphoblastic leukaemia | β-Thalassaemia major | Glucose-6-phosphate dehydrogenase deficiency | Haemophilia A | Sickle cell disease
+  KEY: Sickle cell disease
+OTHER pedhd-haem-6
+  STEM: Peter, aged 9 months, presents to the Emergency Department. His family moved to the UK when Peter was 6 weeks old. He has a 6 hour history of pain in his fingers. He has had an upper respiratory tract infection for the past 24 hours. He has no other medical history and is not on any medication. The appearance of his left hand is shown in the opposite figure. What is the most likely diagnosis?
+  OPTIONS: Acute lymphoblastic leukaemia | β-Thalassaemia major | Glucose-6-phosphate dehydrogenase deficiency | Haemophilia A | Sickle cell disease
+  KEY: Sickle cell disease
+
+=== n 359
+BOOK pedsa-b23-7-1
+  STEM: Below is a list of possible diagnoses (A–R). For each of the following patients with haematological problems select the most likely diagnosis. Each option may be used once, more than once, or not at all. Shlomo is a 9-day-old Jewish boy who was born in the UK. He had a religious circumcision yesterday, but the wound will not stop bleeding. On examination he is pale and has tachycardia. There is oozing of blood around the circumcision wound. A cannula is inserted and a blood cross-match sent. There is now oozing around the cannula site. Investigation reveals: • Hb (haemoglobin): 84 g/L • WBC (white blood cell count): 12 × 10⁹ /L • platelet count: 322 × 10⁹ /L • prothrombin time: 16 seconds (control: 12–15 s) • activated partial thromboplastin time: >120 seconds (control: 25–35 s)
+  OPTIONS: Acute lymphoblastic leukaemia | Acute myeloid leukaemia | α-Thalassaemia major | α-Thalassaemia trait | β-Thalassaemia major | β-Thalassaemia trait | Glucose-6-phosphate dehydrogenase deficiency | Haemophilia A | Immune thrombocytopenic purpura | Infectious mononucleosis | Iron deficiency anaemia | Liver disease | Meningococcal disease | Normal variant | Sickle cell disease | Vitamin D deficiency | Vitamin K deficiency | von Willebrand disease
+  KEY: Haemophilia A
+OTHER pedep2-hem-28
+  STEM: Shlomo is a 9-day-old Jewish boy born in the UK. He underwent religious circumcision yesterday, but the wound has not stopped bleeding. On examination, he is pale and tachycardic. There is oozing of blood from the circumcision site and, later, from the cannula site after insertion. Investigations show: Hb (hemoglobin): 84 g/L WBC (white blood cell count): 12 x 10^9/L Platelet count: 322 x 10^9/L Prothrombin time: 16 seconds (control: 12–15 seconds) Activated partial thromboplastin time: >120 seconds (control: 25–35 seconds) What is the most likely diagnosis?
+  OPTIONS: β-Thalassaemia major | Liver disease | Hemophilia A | von Willebrand disease
+  KEY: Hemophilia A
+
+=== n 360
+BOOK pedsa-b23-7-1
+  STEM: Below is a list of possible diagnoses (A–R). For each of the following patients with haematological problems select the most likely diagnosis. Each option may be used once, more than once, or not at all. Shlomo is a 9-day-old Jewish boy who was born in the UK. He had a religious circumcision yesterday, but the wound will not stop bleeding. On examination he is pale and has tachycardia. There is oozing of blood around the circumcision wound. A cannula is inserted and a blood cross-match sent. There is now oozing around the cannula site. Investigation reveals: • Hb (haemoglobin): 84 g/L • WBC (white blood cell count): 12 × 10⁹ /L • platelet count: 322 × 10⁹ /L • prothrombin time: 16 seconds (control: 12–15 s) • activated partial thromboplastin time: >120 seconds (control: 25–35 s)
+  OPTIONS: Acute lymphoblastic leukaemia | Acute myeloid leukaemia | α-Thalassaemia major | α-Thalassaemia trait | β-Thalassaemia major | β-Thalassaemia trait | Glucose-6-phosphate dehydrogenase deficiency | Haemophilia A | Immune thrombocytopenic purpura | Infectious mononucleosis | Iron deficiency anaemia | Liver disease | Meningococcal disease | Normal variant | Sickle cell disease | Vitamin D deficiency | Vitamin K deficiency | von Willebrand disease
+  KEY: Haemophilia A
+OTHER pedhd-haem-7
+  STEM: Shlomo is a 9-day-old Jewish boy who was born in the UK. He had a religious circumcision yesterday, but the wound will not stop bleeding. On examination he is pale and has tachycardia. There is oozing of blood around the circumcision wound. A cannula is inserted and a blood cross-match sent. There is now oozing around the cannula site. Investigation reveals: • Hb (haemoglobin): 84 g/L • WBC (white blood cell count): 12 × 10⁹/L • platelet count: 322 × 10⁹/L • prothrombin time: 16 seconds (control: 12–15 s) • activated partial thromboplastin time: >120 seconds (control: 25–35 s) Which of the following is the most likely diagnosis?
+  OPTIONS: β-Thalassaemia major | Liver disease | Haemophilia A | von Willebrand disease | Immune thrombocytopenic purpura
+  KEY: Haemophilia A

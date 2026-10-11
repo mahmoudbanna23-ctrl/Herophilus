@@ -1,0 +1,19 @@
+SAME	Read (keyed text paraphrased or identical): live twin is same case with same answer in other words, e.g. 3 years = 36 months, croup = laryngotracheobronchitis, EBV spelt out; live content contained in the book stem
+pedsa-b17-13-1|pedep2-res-10
+pedsa-b17-7|pedep2-res-54
+pedsa-b15-10-3|pedep-inf-61
+pedsa-b15-10-3|pedhd-inf-10
+pedsa-b15-10-3|pedep-inf-42
+pedsa-b15-10-2|pedhd-inf-9
+pedsa-b15-10-2|pedep-inf-60
+pedsa-b15-10-1|pedep-inf-59
+pedsa-b10-13-1|pedhd-peri-10
+pedsa-b17-14-2|pedep2-res-18
+pedsa-b17-14-2|pedhd-resp-19
+pedsa-b23-7-4|pedep2-hem-31
+pedsa-b26-12-1|pedep2-end-9
+pedsa-b19-4|pedep2-ren-4
+pedsa-b6-12|pedep-emg-12
+pedsa-b15-7|pedep-mf1-37
+pedsa-b3-7-3|pedep2-nd-6
+pedsa-b3-7-3|pedhd-dev-6

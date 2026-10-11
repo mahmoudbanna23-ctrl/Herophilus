@@ -1,0 +1,99 @@
+=== n 71
+BOOK pedsa-b12-5
+  STEM: Tom, a 7-year-old boy, is referred by his general practitioner with concerns about his growth. He is an adopted child and no details are available about his biological father although his biological mother was ‘of average height’. Physical examination reveals a happy and playful boy with no dysmorphic features. His height is 110 cm which is just below the 0.4th centile. His weight is on the 0.4th centile. He has a normal physical examination. What is the most likely cause for his short stature? Select one answer only.
+  OPTIONS: Achondroplasia | Constitutional delay of growth and puberty | Familial short stature | Growth hormone deficiency | Vitamin D deficiency
+  KEY: Familial short stature
+OTHER pedep-gp-25
+  STEM: Tom, a 7-year-old boy, is referred by his GP due to concerns about his growth. He is adopted, with no details available about his biological father; his biological mother was of average height. He is a happy, playful boy with no dysmorphic features. His height is 110 cm (just below the 0.4th centile), and his weight is also on the 0.4th centile. Physical examination is normal. What is the most likely cause of his short stature?
+  OPTIONS: Achondroplasia | Constitutional delay of growth and puberty | Familial short stature | Growth hormone deficiency | Vitamin D deficiency
+  KEY: Familial short stature
+
+=== n 72
+BOOK pedsa-b12-5
+  STEM: Tom, a 7-year-old boy, is referred by his general practitioner with concerns about his growth. He is an adopted child and no details are available about his biological father although his biological mother was ‘of average height’. Physical examination reveals a happy and playful boy with no dysmorphic features. His height is 110 cm which is just below the 0.4th centile. His weight is on the 0.4th centile. He has a normal physical examination. What is the most likely cause for his short stature? Select one answer only.
+  OPTIONS: Achondroplasia | Constitutional delay of growth and puberty | Familial short stature | Growth hormone deficiency | Vitamin D deficiency
+  KEY: Familial short stature
+OTHER pedhd-gp-5
+  STEM: Tom, a 7-year-old boy, is referred by his general practitioner with concerns about his growth. He is an adopted child and no details are available about his biological father although his biological mother was ‘of average height’. Physical examination reveals a happy and playful boy with no dysmorphic features. His height is 110 cm which is just below the 0.4th centile. His weight is on the 0.4th centile. He has a normal physical examination. What is the most likely cause for his short stature?
+  OPTIONS: Achondroplasia | Constitutional delay of growth and puberty | Familial short stature | Growth hormone deficiency | Vitamin D deficiency
+  KEY: Familial short stature
+
+=== n 73
+BOOK pedsa-b12-6-1
+  STEM: The following (A–M) is a list of investigations for children referred with short stature. From the following clinical scenarios pick the investigation which is most likely lead to a correct diagnosis. Each answer may be used once, more than once, or not at all. May, a 14-year-old girl, is referred by her school nurse because she is found to be below the 0.4th centile for height. He mother is 167 cm tall and father is 175 cm tall. She was born at term, birth weight 3.2 kg. She says she has always been the shortest in the class. Physical examination reveals a girl in the early stages of puberty. Her previous history is unremarkable. Her blood pressure is 135/65 mmHg.
+  OPTIONS: Bone age (wrist X-ray) | Coeliac screen | C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR) | Creatinine and electrolytes | Full blood count | Growth hormone provocation tests | Insulin-like growth factor-1 (IGF-1) | Karyotype | MRI scan of the brain | Skeletal survey | Thyroid stimulating hormone (TSH) | Ultrasound scan of the uterus | Vitamin D levels
+  KEY: Karyotype
+OTHER pedep-gp-26
+  STEM: May, a 14-year-old girl, is referred by her school nurse because she is below the 0.4th centile for height. Her mother is 167 cm tall, and her father is 175 cm tall. She was born at term, birth weight 3.2 kg. She has always been the shortest in her class. On examination, she appears in early puberty. Her blood pressure is 135/65 mmHg. Which investigation is most likely to lead to a correct diagnosis?
+  OPTIONS: Coeliac screen | Thyroid stimulating hormone (TSH) | Full blood count | MRI scan of the brain | Karyotype
+  KEY: Karyotype
+
+=== n 74
+BOOK pedsa-b12-6-1
+  STEM: The following (A–M) is a list of investigations for children referred with short stature. From the following clinical scenarios pick the investigation which is most likely lead to a correct diagnosis. Each answer may be used once, more than once, or not at all. May, a 14-year-old girl, is referred by her school nurse because she is found to be below the 0.4th centile for height. He mother is 167 cm tall and father is 175 cm tall. She was born at term, birth weight 3.2 kg. She says she has always been the shortest in the class. Physical examination reveals a girl in the early stages of puberty. Her previous history is unremarkable. Her blood pressure is 135/65 mmHg.
+  OPTIONS: Bone age (wrist X-ray) | Coeliac screen | C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR) | Creatinine and electrolytes | Full blood count | Growth hormone provocation tests | Insulin-like growth factor-1 (IGF-1) | Karyotype | MRI scan of the brain | Skeletal survey | Thyroid stimulating hormone (TSH) | Ultrasound scan of the uterus | Vitamin D levels
+  KEY: Karyotype
+OTHER pedhd-gp-6
+  STEM: May, a 14-year-old girl, is referred by her school nurse because she is found to be below the 0.4th centile for height. He mother is 167 cm tall and father is 175 cm tall. She was born at term, birth weight 3.2 kg. She says she has always been the shortest in the class. Physical examination reveals a girl in the early stages of puberty. Her previous history is unremarkable. Her blood pressure is 135/65 mmHg. Which of the following is the investigation which will most likely lead to a correct diagnosis?
+  OPTIONS: Coeliac screen | Thyroid stimulating hormone (TSH) | Full blood count | MRI scan of the brain | Karyotype
+  KEY: Karyotype
+
+=== n 75
+BOOK pedsa-b12-6-2
+  STEM: The following (A–M) is a list of investigations for children referred with short stature. From the following clinical scenarios pick the investigation which is most likely lead to a correct diagnosis. Each answer may be used once, more than once, or not at all. Eleanor, a 7-year-old girl, is referred because of short stature. She is on the 5th centile for height and 25th centile for weight. Her growth chart shows that 9 months previously her height and weight were on the 15th centile. Her mother says that she has become lethargic, her school work has deteriorated and that she now refuses to do sport.
+  OPTIONS: Bone age (wrist X-ray) | Coeliac screen | C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR) | Creatinine and electrolytes | Full blood count | Growth hormone provocation tests | Insulin-like growth factor-1 (IGF-1) | Karyotype | MRI scan of the brain | Skeletal survey | Thyroid stimulating hormone (TSH) | Ultrasound scan of the uterus | Vitamin D levels
+  KEY: Thyroid stimulating hormone (TSH)
+OTHER pedep-gp-27
+  STEM: Eleanor, a 7-year-old girl, is referred for short stature. She is on the 5th centile for height and 25th centile for weight. Nine months ago, her height and weight were on the 15th centile. Her mother notes that she has become lethargic, her school performance has worsened, and she refuses to participate in sports. Which investigation is most likely to lead to a correct diagnosis?
+  OPTIONS: Coeliac screen | Thyroid stimulating hormone (TSH) | Full blood count | MRI scan of the brain | Karyotype
+  KEY: Thyroid stimulating hormone (TSH)
+
+=== n 76
+BOOK pedsa-b12-6-2
+  STEM: The following (A–M) is a list of investigations for children referred with short stature. From the following clinical scenarios pick the investigation which is most likely lead to a correct diagnosis. Each answer may be used once, more than once, or not at all. Eleanor, a 7-year-old girl, is referred because of short stature. She is on the 5th centile for height and 25th centile for weight. Her growth chart shows that 9 months previously her height and weight were on the 15th centile. Her mother says that she has become lethargic, her school work has deteriorated and that she now refuses to do sport.
+  OPTIONS: Bone age (wrist X-ray) | Coeliac screen | C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR) | Creatinine and electrolytes | Full blood count | Growth hormone provocation tests | Insulin-like growth factor-1 (IGF-1) | Karyotype | MRI scan of the brain | Skeletal survey | Thyroid stimulating hormone (TSH) | Ultrasound scan of the uterus | Vitamin D levels
+  KEY: Thyroid stimulating hormone (TSH)
+OTHER pedhd-gp-7
+  STEM: Eleanor, a 7-year-old girl, is referred because of short stature. She is on the 5th centile for height and 25th centile for weight. Her growth chart shows that 9 months previously her height and weight were on the 15th centile. Her mother says that she has become lethargic, her school work has deteriorated and that she now refuses to do sport. Which of the following is the investigation which will most likely lead to a correct diagnosis?
+  OPTIONS: Coeliac screen | Thyroid stimulating hormone (TSH) | Full blood count | MRI scan of the brain | Karyotype
+  KEY: Thyroid stimulating hormone (TSH)
+
+=== n 77
+BOOK pedsa-b12-6-3
+  STEM: The following (A–M) is a list of investigations for children referred with short stature. From the following clinical scenarios pick the investigation which is most likely lead to a correct diagnosis. Each answer may be used once, more than once, or not at all. Jake, a 5-year-old boy with Down syndrome has a check-up with his general practitioner. He is short but until 6 months ago was following his growth centiles. You note that his height has dropped one centile line and his weight two centile lines. His mother reports that he has become very irritable and difficult to manage. On direct questioning, his appetite has deteriorated, with meal times becoming problematic.
+  OPTIONS: Bone age (wrist X-ray) | Coeliac screen | C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR) | Creatinine and electrolytes | Full blood count | Growth hormone provocation tests | Insulin-like growth factor-1 (IGF-1) | Karyotype | MRI scan of the brain | Skeletal survey | Thyroid stimulating hormone (TSH) | Ultrasound scan of the uterus | Vitamin D levels
+  KEY: Coeliac screen
+OTHER pedep-gp-28
+  STEM: Jake, a 5-year-old boy with Down syndrome, presents for a routine check-up. He has dropped one centile in height and two centile lines in weight over the past 6 months. His mother reports increased irritability and poor appetite. Which investigation is most likely to lead to a correct diagnosis?
+  OPTIONS: Coeliac screen | Thyroid stimulating hormone (TSH) | Full blood count | MRI scan of the brain | Karyotype
+  KEY: Coeliac screen
+
+=== n 78
+BOOK pedsa-b12-6-3
+  STEM: The following (A–M) is a list of investigations for children referred with short stature. From the following clinical scenarios pick the investigation which is most likely lead to a correct diagnosis. Each answer may be used once, more than once, or not at all. Jake, a 5-year-old boy with Down syndrome has a check-up with his general practitioner. He is short but until 6 months ago was following his growth centiles. You note that his height has dropped one centile line and his weight two centile lines. His mother reports that he has become very irritable and difficult to manage. On direct questioning, his appetite has deteriorated, with meal times becoming problematic.
+  OPTIONS: Bone age (wrist X-ray) | Coeliac screen | C-reactive protein (CRP) and erythrocyte sedimentation rate (ESR) | Creatinine and electrolytes | Full blood count | Growth hormone provocation tests | Insulin-like growth factor-1 (IGF-1) | Karyotype | MRI scan of the brain | Skeletal survey | Thyroid stimulating hormone (TSH) | Ultrasound scan of the uterus | Vitamin D levels
+  KEY: Coeliac screen
+OTHER pedhd-gp-8
+  STEM: Jake, a 5-year-old boy with Down syndrome has a check-up with his general practitioner. He is short but until 6 months ago was following his growth centiles. You note that his height has dropped one centile line and his weight two centile lines. His mother reports that he has become very irritable and difficult to manage. On direct questioning, his appetite has deteriorated, with meal times becoming problematic. Which of the following is the investigation which will most likely lead to a correct diagnosis?
+  OPTIONS: Coeliac screen | Thyroid stimulating hormone (TSH) | Full blood count | MRI scan of the brain | Karyotype
+  KEY: Coeliac screen
+
+=== n 79
+BOOK pedsa-b13-1
+  STEM: Sunit, a 13-month-old boy, presents with faltering growth. He is still entirely breastfed. On examination, he is miserable and his wrist is shown in Fig. 13.1a. An X-ray is taken of his wrist is shown in Fig. 13.1b. (a) (b) What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Vitamin A deficiency | Vitamin B1 deficiency | Vitamin D deficiency | Vitamin E deficiency | Vitamin K deficiency
+  KEY: Vitamin D deficiency
+OTHER pedep-nut-1
+  STEM: Sunit, a 13-month-old boy, presents with faltering growth. He is still entirely breastfed. On examination, he is miserable and his wrist appears abnormal, as shown in the figure. An X-ray of his wrist is also provided. What is the most likely diagnosis?
+  OPTIONS: Vitamin A deficiency | Vitamin B1 deficiency | Vitamin D deficiency | Vitamin E deficiency | Vitamin K deficiency
+  KEY: Vitamin D deficiency
+
+=== n 80
+BOOK pedsa-b13-1
+  STEM: Sunit, a 13-month-old boy, presents with faltering growth. He is still entirely breastfed. On examination, he is miserable and his wrist is shown in Fig. 13.1a. An X-ray is taken of his wrist is shown in Fig. 13.1b. (a) (b) What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Vitamin A deficiency | Vitamin B1 deficiency | Vitamin D deficiency | Vitamin E deficiency | Vitamin K deficiency
+  KEY: Vitamin D deficiency
+OTHER pedhd-nutr-1
+  STEM: Sunit, a 13-month-old boy, presents with faltering growth. He is still entirely breastfed. On examination, he is miserable and his wrist is shown in the figure below on the left. An X-ray is taken of his wrist is shown in the figure below on the right. What is the most likely diagnosis?
+  OPTIONS: Vitamin A deficiency | Vitamin B1 deficiency | Vitamin D deficiency | Vitamin E deficiency | Vitamin K deficiency
+  KEY: Vitamin D deficiency

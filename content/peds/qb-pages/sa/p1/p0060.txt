@@ -1,0 +1,36 @@
+9.23 · SINGLE BEST ANSWER
+
+Which vaccine must NOT be given to a child known to be HIV-positive?
+
+ A. Inactivated polio
+ B. BCG
+ C. Hepatitis B
+ D. Pneumococcal conjugate
+ E. Influenza
+
+Answer: B.
+
+BCG is a live vaccine and risks dissemination. Live vaccines are also contraindicated in other
+immunocompromised children, those on or in contact with immunosuppressive therapy, and in
+pregnancy. Children with HIV should be vaccinated against influenza, hepatitis A and B, and varicella.
+
+
+
+
+9.24 · SINGLE BEST ANSWER
+
+A boy has had two episodes of meningococcal meningitis. Which investigation is most appropriate?
+
+ A. Immunoglobulin levels
+ B. Nitroblue tetrazolium test
+ C. Complement function testing (CH50 and AP50)
+ D. Lymphocyte subsets
+ E. Sweat test
+
+Answer: C.
+
+Recurrent neisserial infection = terminal complement component deficiency until proven otherwise.
+Compare: abscesses and granulomas → NBT test for chronic granulomatous disease; infections after 6
+months with bronchiectasis → antibody defect; severe early infections with thrush and diarrhoea → T-cell
+defect.
+

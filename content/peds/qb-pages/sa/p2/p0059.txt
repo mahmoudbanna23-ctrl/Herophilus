@@ -1,0 +1,36 @@
+8.14 · SINGLE BEST ANSWER
+
+What exactly is Gowers' sign, and when is it abnormal?
+
+ A. Climbing up the legs with the hands; abnormal at any age
+ B. The need to turn PRONE in order to rise from supine; normal until 3 years of age
+ C. Waddling gait; abnormal after 18 months
+ D. Toe walking; abnormal after 5 years
+ E. Inability to stand on one leg; abnormal after 4 years
+
+Answer: B.
+
+Turning prone is the early feature; climbing up the legs is the late one. Any child still doing this after 3
+years needs investigation — starting with a creatine kinase, which is markedly raised in Duchenne and
+Becker muscular dystrophy.
+
+
+
+
+8.15 · CLINICAL SCENARIO
+
+A 4-month-old is floppy with absent antigravity movements, absent tendon reflexes, tongue
+fasciculation and a frog-like posture, but is alert and socially responsive. Where is the lesion?
+
+ A. Cerebral cortex
+ B. Anterior horn cell
+ C. Basal ganglia
+ D. Cerebellum
+ E. Peripheral sensory nerves
+
+Answer: B.
+
+Floppy AND weak with absent reflexes = peripheral; fasciculation and an alert infant point to spinal
+muscular atrophy type 1 (Werdnig–Hoffmann). Floppy but STRONG with brisk reflexes = central —
+hypoxic–ischaemic injury, trisomy 21, Prader–Willi, hypothyroidism.
+

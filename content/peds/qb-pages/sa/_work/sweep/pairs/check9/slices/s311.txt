@@ -1,0 +1,99 @@
+=== n 311
+BOOK pedsa-b21-5
+  STEM: Summer, a 12-year-old girl, is seen in the Emergency Department. Her parents report that her school performance has been deteriorating and recently she has become confused and unsteady on her feet. Examination findings of her eyes are shown in Fig. 21.2. Select the most likely diagnosis. Select one answer only.
+  OPTIONS: Glaucoma | Hyperthyroidism | Illicit drug use | Intracranial tumour | Wilson disease
+  KEY: Wilson disease
+OTHER pedhd-liv-5
+  STEM: Summer, a 12-year-old girl, is seen in the Emergency Department. Her parents report that her school performance has been deteriorating and recently she has become confused and unsteady on her feet. Examination findings of her eyes are shown in the opposite figure. Select the most likely diagnosis.
+  OPTIONS: Glaucoma | Hyperthyroidism | Illicit drug use | Intracranial tumour | Wilson disease
+  KEY: Wilson disease
+
+=== n 312
+BOOK pedsa-b21-6-1
+  STEM: The following is a list of diagnoses (A–L). For each of the following patients with liver disease, select the most likely diagnosis from the list. Each option may be used once, more than once, or not at all. Jason, a 3-week-old boy, is still jaundiced. His mother is reassured that this is likely to be ‘breast milk’ jaundice as she is fully breastfeeding him. He presents 3 weeks later with poor feeding, vomiting and bruising on his forehead and limbs. He has pale stools. On examination the liver is palpable 4 cm below the costal margin.
+  OPTIONS: α₁-antitrypsin deficiency | Autoimmune hepatitis | Bacterial infection | Biliary atresia | Cystic fibrosis | Hepatitis A | Hepatitis B | Hepatitis C | Inflammatory bowel disease | Galactosaemia | Primary sclerosing cholangitis | Wilson disease
+  KEY: Biliary atresia
+OTHER pedep2-liv-6
+  STEM: Jason, a 3-week-old boy, is still jaundiced. His mother is reassured that this is likely to be 'breast milk' jaundice as she is fully breastfeeding him. He presents 3 weeks later with poor feeding, vomiting, and bruising on his forehead and limbs. He has pale stools. On examination, the liver is palpable 4 cm below the costal margin. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Hepatitis A | Hepatitis B | Biliary atresia | Galactosaemia | Primary sclerosing cholangitis
+  KEY: Biliary atresia
+
+=== n 313
+BOOK pedsa-b21-6-1
+  STEM: The following is a list of diagnoses (A–L). For each of the following patients with liver disease, select the most likely diagnosis from the list. Each option may be used once, more than once, or not at all. Jason, a 3-week-old boy, is still jaundiced. His mother is reassured that this is likely to be ‘breast milk’ jaundice as she is fully breastfeeding him. He presents 3 weeks later with poor feeding, vomiting and bruising on his forehead and limbs. He has pale stools. On examination the liver is palpable 4 cm below the costal margin.
+  OPTIONS: α₁-antitrypsin deficiency | Autoimmune hepatitis | Bacterial infection | Biliary atresia | Cystic fibrosis | Hepatitis A | Hepatitis B | Hepatitis C | Inflammatory bowel disease | Galactosaemia | Primary sclerosing cholangitis | Wilson disease
+  KEY: Biliary atresia
+OTHER pedhd-liv-6
+  STEM: Jason, a 3-week-old boy, is still jaundiced. His mother is reassured that this is likely to be 'breast milk' jaundice as she is fully breastfeeding him. He presents 3 weeks later with poor feeding, vomiting and bruising on his forehead and limbs. He has pale stools. On examination the liver is palpable 4 cm below the costal margin. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Hepatitis A | Hepatitis B | Biliary atresia | Galactosemia | Primary sclerosing cholangitis
+  KEY: Biliary atresia
+
+=== n 314
+BOOK pedsa-b21-6-2
+  STEM: The following is a list of diagnoses (A–L). For each of the following patients with liver disease, select the most likely diagnosis from the list. Each option may be used once, more than once, or not at all. Raj, a previously well 14-year-old Asian boy, is noted to be jaundiced. He has recently returned to the UK from India where he was visiting relatives in a rural village. He had a 10-day diarrhoea and vomiting illness whilst in India.
+  OPTIONS: α₁-antitrypsin deficiency | Autoimmune hepatitis | Bacterial infection | Biliary atresia | Cystic fibrosis | Hepatitis A | Hepatitis B | Hepatitis C | Inflammatory bowel disease | Galactosaemia | Primary sclerosing cholangitis | Wilson disease
+  KEY: Hepatitis A
+OTHER pedep2-liv-7
+  STEM: Raj, a previously well-to-do 14-year-old Asian boy, is noted to be jaundiced. He has recently returned to the UK from India, where he was visiting relatives in a rural village. He had a 10-day diarrhea and vomiting illness while in India. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Hepatitis A | Hepatitis B | Biliary atresia | Galactosaemia | Primary sclerosing cholangitis
+  KEY: Hepatitis A
+
+=== n 315
+BOOK pedsa-b21-6-2
+  STEM: The following is a list of diagnoses (A–L). For each of the following patients with liver disease, select the most likely diagnosis from the list. Each option may be used once, more than once, or not at all. Raj, a previously well 14-year-old Asian boy, is noted to be jaundiced. He has recently returned to the UK from India where he was visiting relatives in a rural village. He had a 10-day diarrhoea and vomiting illness whilst in India.
+  OPTIONS: α₁-antitrypsin deficiency | Autoimmune hepatitis | Bacterial infection | Biliary atresia | Cystic fibrosis | Hepatitis A | Hepatitis B | Hepatitis C | Inflammatory bowel disease | Galactosaemia | Primary sclerosing cholangitis | Wilson disease
+  KEY: Hepatitis A
+OTHER pedhd-liv-7
+  STEM: Raj, a previously well 14-year-old Asian boy, is noted to be jaundiced. He has recently returned to the UK from India where he was visiting relatives in a rural village. He had a 10-day diarrhoea and vomiting illness whilst in India. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Hepatitis A | Hepatitis B | Biliary atresia | Galactosemia | Primary sclerosing cholangitis
+  KEY: Hepatitis A
+
+=== n 316
+BOOK pedsa-b21-6-3
+  STEM: The following is a list of diagnoses (A–L). For each of the following patients with liver disease, select the most likely diagnosis from the list. Each option may be used once, more than once, or not at all. A 5-week-old southern Asian male infant born in the UK presents to the Paediatric Assessment Unit with vomiting. He has not gained weight since birth. On examination you find an infant who is jaundiced, lethargic and hypotonic. Cataracts are present.
+  OPTIONS: α₁-antitrypsin deficiency | Autoimmune hepatitis | Bacterial infection | Biliary atresia | Cystic fibrosis | Hepatitis A | Hepatitis B | Hepatitis C | Inflammatory bowel disease | Galactosaemia | Primary sclerosing cholangitis | Wilson disease
+  KEY: Galactosaemia
+OTHER pedep2-liv-8
+  STEM: A 5-week-old southern Asian male infant born in the UK presents to the Paediatric Assessment Unit with vomiting. He has not gained weight since birth. On examination, you find an infant who is jaundiced, lethargic, and hypotonic. Cataracts are present. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Hepatitis A | Hepatitis B | Biliary atresia | Galactosaemia | Primary sclerosing cholangitis
+  KEY: Galactosaemia
+
+=== n 317
+BOOK pedsa-b21-6-3
+  STEM: The following is a list of diagnoses (A–L). For each of the following patients with liver disease, select the most likely diagnosis from the list. Each option may be used once, more than once, or not at all. A 5-week-old southern Asian male infant born in the UK presents to the Paediatric Assessment Unit with vomiting. He has not gained weight since birth. On examination you find an infant who is jaundiced, lethargic and hypotonic. Cataracts are present.
+  OPTIONS: α₁-antitrypsin deficiency | Autoimmune hepatitis | Bacterial infection | Biliary atresia | Cystic fibrosis | Hepatitis A | Hepatitis B | Hepatitis C | Inflammatory bowel disease | Galactosaemia | Primary sclerosing cholangitis | Wilson disease
+  KEY: Galactosaemia
+OTHER pedhd-liv-8
+  STEM: A 5-week-old southern Asian male infant born in the UK presents to the Paediatric Assessment Unit with vomiting. He has not gained weight since birth. On examination you find an infant who is jaundiced, lethargic and hypotonic. Cataracts are present. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Hepatitis A | Hepatitis B | Biliary atresia | Galactosemia | Primary sclerosing cholangitis
+  KEY: Galactosemia
+
+=== n 318
+BOOK pedsa-b21-6-4
+  STEM: The following is a list of diagnoses (A–L). For each of the following patients with liver disease, select the most likely diagnosis from the list. Each option may be used once, more than once, or not at all. Lee is a 12-year-old Chinese boy who moved with his parents from China 2 years ago. He presents with episodes of vomiting which is blood-stained. On examination he is jaundiced, malnourished and has splenomegaly.
+  OPTIONS: α₁-antitrypsin deficiency | Autoimmune hepatitis | Bacterial infection | Biliary atresia | Cystic fibrosis | Hepatitis A | Hepatitis B | Hepatitis C | Inflammatory bowel disease | Galactosaemia | Primary sclerosing cholangitis | Wilson disease
+  KEY: Hepatitis B
+OTHER pedep2-liv-9
+  STEM: Lee is a 12-year-old Chinese boy who moved with his parents from China 2 years ago. He presents with episodes of vomiting which is blood-stained. On examination, he is jaundiced, malnourished, and has splenomegaly. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Hepatitis A | Hepatitis B | Biliary atresia | Galactosaemia | Primary sclerosing cholangitis
+  KEY: Hepatitis B
+
+=== n 319
+BOOK pedsa-b21-6-4
+  STEM: The following is a list of diagnoses (A–L). For each of the following patients with liver disease, select the most likely diagnosis from the list. Each option may be used once, more than once, or not at all. Lee is a 12-year-old Chinese boy who moved with his parents from China 2 years ago. He presents with episodes of vomiting which is blood-stained. On examination he is jaundiced, malnourished and has splenomegaly.
+  OPTIONS: α₁-antitrypsin deficiency | Autoimmune hepatitis | Bacterial infection | Biliary atresia | Cystic fibrosis | Hepatitis A | Hepatitis B | Hepatitis C | Inflammatory bowel disease | Galactosaemia | Primary sclerosing cholangitis | Wilson disease
+  KEY: Hepatitis B
+OTHER pedhd-liv-9
+  STEM: Lee is a 12-year-old Chinese boy who moved with his parents from China 2 years ago. He presents with episodes of vomiting which is blood-stained. On examination he is jaundiced, malnourished and has splenomegaly. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Hepatitis A | Hepatitis B | Biliary atresia | Galactosemia | Primary sclerosing cholangitis
+  KEY: Hepatitis B
+
+=== n 320
+BOOK pedsa-b22-1
+  STEM: Concerning the epidemiology of childhood cancer, which of the following types is most common in the UK? Select one answer only.
+  OPTIONS: Bone tumour | Brain tumour | Leukaemia | Neuroblastoma | Wilms tumour (nephroblastoma)
+  KEY: Leukaemia
+OTHER pedep2-mal-1
+  STEM: Concerning the epidemiology of childhood cancer, which of the following types is most common in the UK?
+  OPTIONS: Bone tumour | Brain tumour | Leukaemia | Neuroblastoma | Wilms tumour (nephroblastoma)
+  KEY: Leukaemia

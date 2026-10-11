@@ -1,0 +1,53 @@
+incoming 452  from sa-book.array.js
+corpus   165  from sa-p1.array.js
+
+G within-batch                pedsa-b3-7-1      pedsa-b3-7-2        dice 0.76
+G within-batch                pedsa-b3-7-1      pedsa-b3-7-9        dice 0.76
+G within-batch                pedsa-b3-7-1      pedsa-b3-7-10       dice 0.78
+G within-batch                pedsa-b3-7-2      pedsa-b3-7-3        dice 0.76
+G within-batch                pedsa-b3-7-2      pedsa-b3-7-5        dice 0.76
+G within-batch                pedsa-b3-7-2      pedsa-b3-7-6        dice 0.80
+G within-batch                pedsa-b3-7-2      pedsa-b3-7-8        dice 0.77
+G within-batch                pedsa-b3-7-2      pedsa-b3-7-9        dice 0.78
+G within-batch                pedsa-b3-7-2      pedsa-b3-7-10       dice 0.87
+G within-batch                pedsa-b3-7-3      pedsa-b3-7-9        dice 0.72
+G within-batch                pedsa-b3-7-3      pedsa-b3-7-10       dice 0.77
+G within-batch                pedsa-b3-7-5      pedsa-b3-7-10       dice 0.74
+G within-batch                pedsa-b3-7-6      pedsa-b3-7-8        dice 0.73
+G within-batch                pedsa-b3-7-6      pedsa-b3-7-10       dice 0.78
+G within-batch                pedsa-b3-7-8      pedsa-b3-7-10       dice 0.78
+G within-batch                pedsa-b3-7-9      pedsa-b3-7-10       dice 0.79
+G within-batch                pedsa-b3-8-1      pedsa-b3-8-2        dice 0.87
+G within-batch                pedsa-b3-8-1      pedsa-b3-8-3        dice 0.73
+G within-batch                pedsa-b3-8-1      pedsa-b3-8-4        dice 0.79
+G within-batch                pedsa-b3-8-1      pedsa-b3-8-5        dice 0.85
+G within-batch                pedsa-b3-8-2      pedsa-b3-8-3        dice 0.75
+G within-batch                pedsa-b3-8-2      pedsa-b3-8-4        dice 0.84
+G within-batch                pedsa-b3-8-2      pedsa-b3-8-5        dice 0.88
+G within-batch                pedsa-b3-8-3      pedsa-b3-8-5        dice 0.74
+G within-batch                pedsa-b3-8-4      pedsa-b3-8-5        dice 0.80
+G within-batch                pedsa-b5-6-1      pedsa-b5-6-2        dice 0.89
+G within-batch                pedsa-b5-6-1      pedsa-b5-6-3        dice 0.92
+G within-batch                pedsa-b5-6-1      pedsa-b5-6-4        dice 0.90
+G within-batch                pedsa-b5-6-1      pedsa-b5-6-5        dice 0.85
+G within-batch                pedsa-b5-6-2      pedsa-b5-6-3        dice 0.89
+G within-batch                pedsa-b5-6-2      pedsa-b5-6-4        dice 0.88
+G within-batch                pedsa-b5-6-2      pedsa-b5-6-5        dice 0.83
+G within-batch                pedsa-b5-6-3      pedsa-b5-6-4        dice 0.93
+G within-batch                pedsa-b5-6-3      pedsa-b5-6-5        dice 0.87
+G within-batch                pedsa-b5-6-4      pedsa-b5-6-5        dice 0.89
+G within-batch                pedsa-b10-13-3    pedsa-b10-13-5      dice 0.78
+G within-batch                pedsa-b15-3       pedsa-b15-4         dice 0.82
+G within-batch                pedsa-b18-6-1     pedsa-b18-6-2       dice 0.98
+G within-batch                pedsa-b18-6-1     pedsa-b18-6-3       dice 0.98
+G within-batch                pedsa-b18-6-1     pedsa-b18-6-4       dice 0.98
+G within-batch                pedsa-b18-6-1     pedsa-b18-6-5       dice 0.98
+G within-batch                pedsa-b18-6-2     pedsa-b18-6-3       dice 0.96
+G within-batch                pedsa-b18-6-2     pedsa-b18-6-4       dice 0.96
+G within-batch                pedsa-b18-6-2     pedsa-b18-6-5       dice 0.96
+G within-batch                pedsa-b18-6-3     pedsa-b18-6-4       dice 0.96
+G within-batch                pedsa-b18-6-3     pedsa-b18-6-5       dice 0.96
+G within-batch                pedsa-b18-6-4     pedsa-b18-6-5       dice 0.96
+G within-batch                pedsa-b18-7-3     pedsa-b18-7-4       dice 0.77
+
+48 candidates. NONE is a decision. Read both pages.

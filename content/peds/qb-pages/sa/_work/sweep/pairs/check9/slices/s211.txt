@@ -1,0 +1,99 @@
+=== n 211
+BOOK pedsa-b17-2
+  STEM: Mohammed, a 5-year-old refugee from Somalia, presents acutely unwell to the Emergency Department. He has a 1-day history of sore throat and a high temperature (40.1° C). Over the last 8 hours he has been having increasing difficulty breathing with quiet stridor. He has never been immunized. He is noted to be unable to swallow his saliva. Fig. 17.2 was taken when he was intubated. What is the most likely diagnosis? Select one answer only. Hint. When the question stem includes a child who is a refugee the question may be asking indirectly about a disease which is preventable by immunization.
+  OPTIONS: Bacterial tracheitis | Croup | Epiglottitis | Foreign body | Laryngomalacia
+  KEY: Epiglottitis
+OTHER pedep2-res-2
+  STEM: Mohammed, a 5-year-old refugee from Somalia, presents acutely unwell to the Emergency Department. He has a 1-day history of sore throat and a high temperature (40.1°C). Over the last 8 hours, he has been having increasing difficulty breathing with quiet stridor. He has never been immunized. He is noted to be unable to swallow his saliva. The opposite figure was taken when he was intubated. What is the most likely diagnosis?
+  OPTIONS: Bacterial tracheitis | Croup | Epiglottitis | Foreign body | Laryngomalacia
+  KEY: Epiglottitis
+
+=== n 212
+BOOK pedsa-b17-2
+  STEM: Mohammed, a 5-year-old refugee from Somalia, presents acutely unwell to the Emergency Department. He has a 1-day history of sore throat and a high temperature (40.1° C). Over the last 8 hours he has been having increasing difficulty breathing with quiet stridor. He has never been immunized. He is noted to be unable to swallow his saliva. Fig. 17.2 was taken when he was intubated. What is the most likely diagnosis? Select one answer only. Hint. When the question stem includes a child who is a refugee the question may be asking indirectly about a disease which is preventable by immunization.
+  OPTIONS: Bacterial tracheitis | Croup | Epiglottitis | Foreign body | Laryngomalacia
+  KEY: Epiglottitis
+OTHER pedhd-resp-2
+  STEM: Mohammed, a 5-year-old refugee from Somalia, presents acutely unwell to the Emergency Department. He has a 1-day history of sore throat and a high temperature (40.1°C). Over the last 8 hours he has been having increasing difficulty breathing with quiet stridor. He has never been immunized. He is noted to be unable to swallow his saliva. The opposite figure was taken when he was intubated. What is the most likely diagnosis?
+  OPTIONS: Bacterial tracheitis | Croup | Epiglottitis | Foreign body | Laryngomalacia
+  KEY: Epiglottitis
+
+=== n 213
+BOOK pedsa-b17-3
+  STEM: Amber, a 9-month-old girl, presents with a 4-day history of coughing spasms which are followed by vomiting. Whooping cough (Bordetella pertussis infection) is suspected. Which of the following tests would be most useful in confirming the diagnosis? Select one answer only.
+  OPTIONS: Blood culture | Chest X-ray | Full blood count and film | Nasopharyngeal aspirate | Pernasal swab
+  KEY: Pernasal swab
+OTHER pedep2-res-3
+  STEM: Amber, a 9-month-old girl, presents with a 4-day history of coughing spasms which are followed by vomiting. A whooping cough (Bordetella pertussis infection) is suspected. Which of the following tests would be most useful in confirming the diagnosis?
+  OPTIONS: Blood culture | Chest X-ray | Full blood count and film | Nasopharyngeal aspirate | Pernasal swab
+  KEY: Pernasal swab
+
+=== n 214
+BOOK pedsa-b17-3
+  STEM: Amber, a 9-month-old girl, presents with a 4-day history of coughing spasms which are followed by vomiting. Whooping cough (Bordetella pertussis infection) is suspected. Which of the following tests would be most useful in confirming the diagnosis? Select one answer only.
+  OPTIONS: Blood culture | Chest X-ray | Full blood count and film | Nasopharyngeal aspirate | Pernasal swab
+  KEY: Pernasal swab
+OTHER pedhd-resp-3
+  STEM: Amber, a 9-month-old girl, presents with a 4-day history of coughing spasms which are followed by vomiting. Whooping cough (Bordetella pertussis infection) is suspected. Which of the following tests would be most useful in confirming the diagnosis?
+  OPTIONS: Blood culture | Chest X-ray | Full blood count and film | Nasopharyngeal aspirate | Pernasal swab
+  KEY: Pernasal swab
+
+=== n 215
+BOOK pedsa-b17-4
+  STEM: Tak, a 3-year-old Asian boy, presents to his family doctor. He has a ‘hacking’ cough that started several weeks ago and has failed to respond to two courses of antibiotics. He is otherwise well and has had no previous chest problems. On examination there is decreased air entry in the right lower zone with normal percussion note. His growth is normal. Which is the most appropriate next step? Select one answer only.
+  OPTIONS: Admit for intravenous antibiotic therapy | Assess bronchodilator response | Organize for ultrasound-guided drainage of his pleural effusion | Request a chest X-ray | Request a sweat test and evaluation of immunoglobulins and functional antibodies
+  KEY: Request a chest X-ray
+OTHER pedep2-res-4
+  STEM: Tak, a 3-year-old Asian boy, presents to his family doctor. He has a 'hacking' cough that started several weeks ago and has failed to respond to two courses of antibiotics. He is otherwise well and has had no previous chest problems. On examination, there is decreased air entry in the right lower zone with normal percussion noted. His growth is normal. What is the most appropriate next step?
+  OPTIONS: Admit for intravenous antibiotic therapy | Assess bronchodilator response | Organize ultrasound-guided drainage of his pleural effusion | Request a chest X-ray | Request a sweat test and evaluation of immunoglobulins and functional antibodies
+  KEY: Request a chest X-ray
+
+=== n 216
+BOOK pedsa-b17-4
+  STEM: Tak, a 3-year-old Asian boy, presents to his family doctor. He has a ‘hacking’ cough that started several weeks ago and has failed to respond to two courses of antibiotics. He is otherwise well and has had no previous chest problems. On examination there is decreased air entry in the right lower zone with normal percussion note. His growth is normal. Which is the most appropriate next step? Select one answer only.
+  OPTIONS: Admit for intravenous antibiotic therapy | Assess bronchodilator response | Organize for ultrasound-guided drainage of his pleural effusion | Request a chest X-ray | Request a sweat test and evaluation of immunoglobulins and functional antibodies
+  KEY: Request a chest X-ray
+OTHER pedhd-resp-4
+  STEM: Tak, a 3-year-old Asian boy, presents to his family doctor. He has a ‘hacking’ cough that started several weeks ago and has failed to respond to two courses of antibiotics. He is otherwise well and has had no previous chest problems. On examination there is decreased air entry in the right lower zone with normal percussion note. His growth is normal. Which is the most appropriate next step?
+  OPTIONS: Admit for intravenous antibiotic therapy | Assess bronchodilator response | Organize for ultrasound-guided drainage of his pleural effusion | Request a chest X-ray | Request a sweat test and evaluation of immunoglobulins and functional antibodies
+  KEY: Request a chest X-ray
+
+=== n 217
+BOOK pedsa-b17-5
+  STEM: Amir, a 4-year-old boy, presents to his family doctor with a history of eczema, rhinitis, chronic nocturnal cough and intermittent wheeze. Asthma is suspected and a bronchodilator is prescribed. How should his bronchodilator be delivered? Select one answer only.
+  OPTIONS: Dry powder inhaler | Metered dose inhaler (MDI) | Metered dose inhaler with large-volume spacer | Nebulizer | Syrup
+  KEY: Metered dose inhaler with large-volume spacer
+OTHER pedep2-res-5
+  STEM: Amir, a 4-year-old boy, presents to his family doctor with a history of eczema, rhinitis, chronic nocturnal cough, and intermittent wheeze. Asthma is suspected, and a bronchodilator is prescribed. How should his bronchodilator be delivered?
+  OPTIONS: Dry powder inhaler | Metered-dose inhaler (MDI) | Metered-dose inhaler with large-volume spacer | Nebulizer | Syrup
+  KEY: Metered-dose inhaler with large-volume spacer
+
+=== n 218
+BOOK pedsa-b17-5
+  STEM: Amir, a 4-year-old boy, presents to his family doctor with a history of eczema, rhinitis, chronic nocturnal cough and intermittent wheeze. Asthma is suspected and a bronchodilator is prescribed. How should his bronchodilator be delivered? Select one answer only.
+  OPTIONS: Dry powder inhaler | Metered dose inhaler (MDI) | Metered dose inhaler with large-volume spacer | Nebulizer | Syrup
+  KEY: Metered dose inhaler with large-volume spacer
+OTHER pedhd-resp-5
+  STEM: Amir, a 4-year-old boy, presents to his family doctor with a history of eczema, rhinitis, chronic nocturnal cough and intermittent wheeze. Asthma is suspected and a bronchodilator is prescribed. How should his bronchodilator be delivered?
+  OPTIONS: Dry powder inhaler | Metered dose inhaler (MDI) | Metered dose inhaler with large-volumespacer | Nebulizer | Syrup
+  KEY: Metered dose inhaler with large-volumespacer
+
+=== n 219
+BOOK pedsa-b17-6
+  STEM: Sarah, a 10-year-old girl, has frequent attacks of asthma. She attends the Emergency Department with increasing difficulty in breathing over the last 12 hours. Initial observation shows that she is anxious, sitting upright, has a marked tracheal tug and is unable to complete a sentence. Which of the following statements is most likely to be correct? Select one answer only.
+  OPTIONS: Sarah’s asthma attack is of moderate severity | Sarah’s condition is likely to improve if she is encouraged to lie flat | Sarah’s oxygen saturation should be measured | Sarah should be taken promptly to the X-ray department for a chest X-ray | The lack of wheeze should make you consider a panic attack
+  KEY: Sarah’s oxygen saturation should be measured
+OTHER pedep2-res-6
+  STEM: Sarah, a 10-year-old girl, has frequent attacks of asthma. She attends the Emergency Department with increasing difficulty breathing over the last 12 hours. Initial observation shows that she is anxious, sitting upright, has a marked tracheal tug, and is unable to complete a sentence. Which of the following statements is most likely to be correct?
+  OPTIONS: Sarah’s asthma attack is of moderate severity | Sarah’s condition is likely to improve if she is encouraged to lie flat | Sarah’s oxygen saturation should be measured | Sarah should be taken promptly to the X-ray department for a chest X-ray | The lack of wheeze should make you consider a panic attack
+  KEY: Sarah’s oxygen saturation should be measured
+
+=== n 220
+BOOK pedsa-b17-6
+  STEM: Sarah, a 10-year-old girl, has frequent attacks of asthma. She attends the Emergency Department with increasing difficulty in breathing over the last 12 hours. Initial observation shows that she is anxious, sitting upright, has a marked tracheal tug and is unable to complete a sentence. Which of the following statements is most likely to be correct? Select one answer only.
+  OPTIONS: Sarah’s asthma attack is of moderate severity | Sarah’s condition is likely to improve if she is encouraged to lie flat | Sarah’s oxygen saturation should be measured | Sarah should be taken promptly to the X-ray department for a chest X-ray | The lack of wheeze should make you consider a panic attack
+  KEY: Sarah’s oxygen saturation should be measured
+OTHER pedhd-resp-6
+  STEM: Sarah, a 10-year-old girl, has frequent attacks of asthma. She attends the Emergency Department with increasing difficulty in breathing over the last 12 hours. Initial observation shows that she is anxious, sitting upright, has a marked tracheal tug and is unable to complete a sentence. Which of the following statements is most likely to be correct?
+  OPTIONS: Sarah's asthma attack is of moderate severity | Sarah's condition is likely to improve if she is encouraged to lie flat | Sarah's oxygen saturation should be measured | Sarah should be taken promptly to the X-ray department for a chest X-ray | The lack of wheeze should make you consider a panic attack
+  KEY: Sarah's oxygen saturation should be measured

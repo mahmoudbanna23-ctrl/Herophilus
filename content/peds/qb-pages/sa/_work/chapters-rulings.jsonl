@@ -1,0 +1,358 @@
+{"id":"pedsa1-1-4","first":"growth-puberty","second":"nutrition","final":"growth-puberty","secondary":"perinatal","why":"Plotting preterm growth at corrected age; both defensible, keep first for stability."}
+{"id":"pedsa1-3-5","first":"gi-abdopain","second":"perinatal","final":"gastroenterology","secondary":"perinatal","why":"Bilious vomiting in neonate (malrotation) is a vomiting presentation; Vomiting lecture covers bilious vomiting."}
+{"id":"pedsa1-3-14","first":"gi-diarrhoea","second":"emergencies","final":"gi-diarrhoea","secondary":"emergencies","why":"Maintenance fluid calculation appears in diarrhoea and shock lectures; both fit, keep first."}
+{"id":"pedsa1-3-15","first":"gi-diarrhoea","second":"gastroenterology","final":"gi-diarrhoea","secondary":"haematology","why":"Refractory iron deficiency plus short stature suggests coeliac disease (malabsorption); keep first."}
+{"id":"pedsa1-4-2","first":"accidents","second":"emergencies","final":"accidents","secondary":"emergencies","why":"Choking is an accident; first-aid back blows and chest thrusts; keep first."}
+{"id":"pedsa1-5-6","first":"infection","second":"haem-bleeding","final":"haem-bleeding","secondary":"infection","why":"Key tests DIC (bruising, prolonged clotting, falling platelets), a coagulation disorder."}
+{"id":"pedsa1-6-2","first":"perinatal","second":"neurological","final":"perinatal","secondary":"neurological","why":"Teratogenic risk of valproate in pregnancy; no antenatal chapter, nearest is perinatal."}
+{"id":"pedsa1-6-8","first":"infection","second":"infection-rash","final":"infection-rash","secondary":"perinatal","why":"Congenital rubella risk figures; rubella is taught in the maculopapular exanthems chapter."}
+{"id":"pedsa1-6-11","first":"perinatal","second":"perinatal-rd","final":"perinatal-rd","secondary":"perinatal","why":"Transient tachypnoea of newborn mechanism is neonatal respiratory distress."}
+{"id":"pedsa1-7-14","first":"neonatal-seiz","second":"neonatal","final":"neonatal","secondary":"neonatal-seiz","why":"Kernicterus is unconjugated bilirubin toxicity, a neonatal jaundice complication."}
+{"id":"pedsa1-m-3","first":"gi-diarrhoea","second":"emergencies","final":"gi-diarrhoea","secondary":"emergencies","why":"Same maintenance fluid calculation as pedsa1-3-14; kept consistent, keep first."}
+{"id":"pedsa1-m-9","first":"perinatal","second":"emergencies","final":"emergencies","secondary":"sudden unexpected death in infancy","why":"SUDI has no chapter; emergencies nearest, matching pedsa-b6-12 ruling."}
+{"id":"pedsa1-10-2","first":"gi-abdopain","second":"perinatal","final":"gastroenterology","secondary":"perinatal","why":"Green vomit in neonate keyed malrotation with volvulus; vomiting presentation, matches pedsa1-3-5."}
+{"id":"pedsa1-10-16","first":"genetics","second":"growth-puberty","final":"growth-puberty","secondary":"genetics","why":"Short girl with normal weight; Turner syndrome diagnosed as a cause of short stature."}
+{"id":"pedsa1-10-20","first":"nutrition","second":"growth-puberty","final":"growth-puberty","secondary":"nutrition","why":"Psychosocial deprivation is a cause of poor growth with catch-up; short stature lecture."}
+{"id":"pedsa1-10-23","first":"cardiac-cyan","second":"perinatal-rd","final":"perinatal-rd","secondary":"cardiac-cyan","why":"Persistent pulmonary hypertension of newborn is a neonatal respiratory distress cause."}
+{"id":"pedsa2-1-4","first":"normal-dev","second":"dev-problems","final":"dev-problems","secondary":"normal-dev","why":"Definition of global developmental delay is a developmental problem."}
+{"id":"pedsa2-1-6","first":"normal-dev","second":"perinatal","final":"normal-dev","secondary":"perinatal","why":"Newborn hearing screening sits in the hearing and vision block; keep first."}
+{"id":"pedsa2-1-8","first":"normal-dev","second":"malignant-solid","final":"normal-dev","secondary":"malignant-solid","why":"Absent red reflex is vision screening; retinoblastoma only one option; keep first."}
+{"id":"pedsa2-1-9","first":"normal-dev","second":"neurological","final":"normal-dev","secondary":"neurological","why":"Squint and amblyopia are vision assessment; keep first."}
+{"id":"pedsa2-2-6","first":"neuro-cp","second":null,"final":"neuro-cp","secondary":"dev-problems","why":"Early hand preference signals hemiplegic cerebral palsy; second sort invalid."}
+{"id":"pedsa2-5-3","first":"resp-bronch","second":"emergencies","final":"emergencies","secondary":"respiratory","why":"Recognising impending respiratory failure is an emergency skill; low confidence, asthma severity also plausible."}
+{"id":"pedsa2-5-11","first":"resp-bronch","second":"infection-bact","final":"infection-bact","secondary":"resp-bronch","why":"Pertussis (lymphocytosis, whoop-type paroxysms) is a bacterial vaccine-preventable infection."}
+{"id":"pedsa2-5-16","first":"resp-bronch","second":null,"final":"respiratory","secondary":"cystic fibrosis","why":"No cystic fibrosis chapter; nearest is chronic airway disease (Asthma); sweat test diagnosis."}
+{"id":"pedsa2-5-17","first":"resp-bronch","second":"respiratory","final":"respiratory","secondary":"cystic fibrosis","why":"No cystic fibrosis chapter; multisystem management, nearest is respiratory; nutrition secondary."}
+{"id":"pedsa2-5-18","first":"resp-bronch","second":"respiratory","final":"respiratory","secondary":"primary ciliary dyskinesia","why":"No chapter for primary ciliary dyskinesia; chronic wet cough nearest is respiratory."}
+{"id":"pedsa2-6-12","first":"cardiac-cyan","second":null,"final":"cardiac","secondary":"cardiac-cyan","why":"Eisenmenger complicates unrepaired VSD; taught in the acyanotic congenital heart lecture."}
+{"id":"pedsa2-7-3","first":"renal-cakut","second":"renal-uti","final":"renal-uti","secondary":"renal-cakut","why":"DMSA detects scars after UTI; taught in the UTI lecture."}
+{"id":"pedsa2-7-10","first":"renal","second":"renal-uti","final":"renal-uti","secondary":"","why":"UTI management in an infant is the UTI chapter."}
+{"id":"pedsa2-7-11","first":"renal","second":"renal-uti","final":"renal-uti","secondary":"","why":"Atypical UTI definition is the UTI chapter."}
+{"id":"pedsa2-7-12","first":"renal","second":"renal-cakut","final":"renal-cakut","secondary":"","why":"Ectopic ureter is a congenital urinary tract anomaly causing continuous wetting."}
+{"id":"pedsa2-7-18","first":"renal","second":null,"final":"renal","secondary":"emergencies","why":"Hyperkalaemia in acute kidney injury; kidney chapter, calcium gluconate first-line emergency step."}
+{"id":"pedsa2-8-11","first":"neurological","second":null,"final":"neurological","secondary":"","why":"Febrile seizure management belongs to seizures chapter."}
+{"id":"pedsa2-8-13","first":"neuro-nm","second":"neurological","final":"neuro-nm","secondary":"neurological","why":"Cerebellar versus pyramidal signs is motor examination; both defensible, keep first."}
+{"id":"pedsa2-9-1","first":"mental","second":"normal-dev","final":"mental","secondary":"normal-dev","why":"Normal infant crying within behavioural block; both defensible, keep first."}
+{"id":"pedsa2-9-3","first":"mental","second":"gastroenterology","final":"mental","secondary":"","why":"Management is maternal distress and reassurance, not colic pathology; keep first."}
+{"id":"pedsa2-9-5","first":"mental","second":null,"final":"mental","secondary":"neurological","why":"Night terror versus nightmare is a childhood sleep behaviour problem."}
+{"id":"pedsa2-9-7","first":"renal-cakut","second":"gi-diarrhoea","final":"gi-diarrhoea","secondary":"renal-cakut","why":"Soiling (constipation/encopresis) red flag for spinal abnormality; constipation chapter."}
+{"id":"pedsa2-9-8","first":"mental","second":"neurological","final":"mental","secondary":"neurological","why":"Tourette diagnostic criteria; tic disorder in behavioural block; keep first."}
+{"id":"pedsa2-11-1","first":"liver","second":"neonatal","final":"liver","secondary":"neonatal","why":"Prolonged jaundice beyond 14 days triggers cholestasis work-up; keep first."}
+{"id":"pedsa2-12-1","first":"malignant-solid","second":"malignant","final":"malignant","secondary":"malignant-solid","why":"General childhood cancer incidence; introductory Malignant Disease chapter. Low confidence, neither chapter specific."}
+{"id":"pedsa2-12-7","first":"malignant","second":null,"final":"malignant","secondary":"","why":"Intrathecal chemotherapy for CNS prophylaxis in acute lymphoblastic leukaemia."}
+{"id":"pedsa2-12-8","first":"malignant-solid","second":null,"final":"malignant-solid","secondary":"","why":"Distribution of childhood brain tumours."}
+{"id":"pedsa2-12-9","first":"malignant-solid","second":null,"final":"malignant-solid","secondary":"endocrine","why":"Craniopharyngioma with bitemporal field defect is a brain tumour."}
+{"id":"pedsa2-13-1","first":"cardiac","second":null,"final":"cardiac","secondary":"","why":"Secundum ASD murmur and ECG; acyanotic congenital heart disease."}
+{"id":"pedsa2-13-10","first":"renal","second":null,"final":"renal","secondary":"","why":"Orthostatic proteinuria in proteinuria and haematuria EMQ; glomerular disease chapter."}
+{"id":"pedsa2-13-11","first":"neurological","second":null,"final":"neurological","secondary":"","why":"Complex febrile seizure is a seizure classification question."}
+{"id":"pedsa-b1-3","first":"normal-dev","second":"perinatal","final":"perinatal","secondary":"child health epidemiology","why":"Mortality peaks under 1 year, mostly neonatal; no epidemiology chapter, nearest is perinatal."}
+{"id":"pedsa-b2-1","first":"dev-problems","second":"cardiac","final":"cardiac","secondary":"","why":"Hepatomegaly indicates heart failure from congenital heart disease."}
+{"id":"pedsa-b2-2","first":"dev-problems","second":"infection","final":"infection","secondary":"haematology","why":"Malaria is the key for splenomegaly in a child from endemic area."}
+{"id":"pedsa-b2-3","first":"dev-problems","second":"neuro-nm","final":"neuro-nm","secondary":"neuro-cp","why":"Localising upper versus lower motor neurone lesion from tone and reflexes."}
+{"id":"pedsa-b2-5","first":"dev-problems","second":"neuro-nm","final":"normal-dev","secondary":"","why":"Squint on cover test belongs with vision assessment, matching pedsa2-1-9."}
+{"id":"pedsa-b2-7","first":"resp-bronch","second":"genetics","final":"respiratory","secondary":"primary ciliary dyskinesia","why":"Negative sweat test, key primary ciliary dyskinesia; no chapter, nearest chronic airway disease."}
+{"id":"pedsa-b2-8-3","first":"infection","second":"accidents","final":"accidents","secondary":"respiratory","why":"Inhaled peanut foreign body is an accident."}
+{"id":"pedsa-b2-8-4","first":"infection","second":"resp-pneumonia","final":"resp-pneumonia","secondary":"","why":"Pleural effusion complicating pneumonia not responding to antibiotics."}
+{"id":"pedsa-b3-2","first":"normal-dev","second":"dev-problems","final":"normal-dev","secondary":"dev-problems","why":"Choosing a hearing test by age; hearing assessment sits with normal development; keep first."}
+{"id":"pedsa-b3-6","first":"normal-dev","second":"mental","final":"mental","secondary":"normal-dev","why":"Cause is maternal postnatal depression and stress in a crying baby."}
+{"id":"pedsa-b3-7-9","first":"normal-dev","second":null,"final":"normal-dev","secondary":"","why":"Median age of shoelace-tying milestone."}
+{"id":"pedsa-b3-8-1","first":"infection-vaccine","second":null,"final":"infection-vaccine","secondary":"normal-dev","why":"Age at first MMR immunisation."}
+{"id":"pedsa-b3-8-2","first":"normal-dev","second":null,"final":"normal-dev","secondary":"perinatal","why":"Timing of Guthrie test in child health surveillance; no newborn-screening chapter, keep first."}
+{"id":"pedsa-b3-8-3","first":"normal-dev","second":null,"final":"normal-dev","secondary":"accidents","why":"Age of first SIDS advice in surveillance programme; no second sort, first sort stands."}
+{"id":"pedsa-b3-8-4","first":"normal-dev","second":null,"final":"normal-dev","secondary":"","why":"Newborn hearing screen timing in surveillance programme; hearing and vision block."}
+{"id":"pedsa-b3-8-5","first":"normal-dev","second":null,"final":"normal-dev","secondary":"","why":"Preschool orthoptist vision assessment in surveillance programme."}
+{"id":"pedsa-b4-1","first":"dev-problems","second":null,"final":"dev-nd","secondary":"dev-problems","why":"Autism spectrum disorder diagnosis: poor eye contact, no words, repetitive play."}
+{"id":"pedsa-b4-2","first":"dev-problems","second":null,"final":"dev-nd","secondary":"dev-problems","why":"Age at which autism spectrum disorder becomes evident."}
+{"id":"pedsa-b4-3","first":"neuro-cp","second":null,"final":"neuro-cp","secondary":"","why":"Age of presentation of spastic bilateral cerebral palsy."}
+{"id":"pedsa-b4-4","first":"dev-problems","second":null,"final":"neuro-cp","secondary":"dev-problems","why":"Early hand preference signals hemiplegic cerebral palsy; matches pedsa2-2-6."}
+{"id":"pedsa-b4-5","first":"dev-problems","second":null,"final":"dev-problems","secondary":"normal-dev","why":"Isolated speech delay at 19 months: first exclude hearing loss."}
+{"id":"pedsa-b4-6","first":"dev-problems","second":null,"final":"dev-problems","secondary":"normal-dev","why":"Interpreting audiogram: conductive hearing loss as cause of speech delay."}
+{"id":"pedsa-b4-7","first":"dev-problems","second":null,"final":"dev-problems","secondary":"normal-dev","why":"Interpreting audiogram: severe sensorineural hearing loss with language delay."}
+{"id":"pedsa-b4-8","first":"dev-problems","second":null,"final":"dev-problems","secondary":"normal-dev","why":"Congenital cataract causing visual impairment in infant not following faces."}
+{"id":"pedsa-b4-9-1","first":"dev-problems","second":null,"final":"neuro-cp","secondary":"dev-problems","why":"Brain imaging for hemiplegic features (reduced power, increased tone, hand preference)."}
+{"id":"pedsa-b4-9-2","first":"dev-problems","second":null,"final":"genetics","secondary":"dev-problems","why":"Karyotype to confirm Down syndrome features in a hypotonic child."}
+{"id":"pedsa-b4-9-3","first":"dev-problems","second":null,"final":"infection","secondary":"dev-problems","why":"Congenital infection screen for cataracts, microcephaly, hepatosplenomegaly. Medium confidence."}
+{"id":"pedsa-b4-9-4","first":"dev-problems","second":null,"final":"neurological","secondary":"dev-problems","why":"EEG for infantile spasms with developmental regression."}
+{"id":"pedsa-b4-9-5","first":"dev-problems","second":null,"final":"neuro-nm","secondary":"dev-problems","why":"Creatine kinase for Duchenne-pattern proximal weakness and stair difficulty."}
+{"id":"pedsa-b4-10-1","first":"neuro-cp","second":null,"final":"neuro-cp","secondary":"","why":"Spastic quadriplegia type of cerebral palsy."}
+{"id":"pedsa-b4-10-2","first":"neuro-cp","second":null,"final":"neuro-cp","secondary":"neonatal","why":"Dyskinetic cerebral palsy after untreated neonatal jaundice."}
+{"id":"pedsa-b4-10-3","first":"neuro-cp","second":null,"final":"neuro-cp","secondary":"","why":"Spastic diplegia in an extreme preterm child."}
+{"id":"pedsa-b4-10-4","first":"neuro-cp","second":null,"final":"neuro-cp","secondary":"","why":"Spastic hemiplegia with early hand preference."}
+{"id":"pedsa-b4-10-5","first":"neuro-cp","second":null,"final":"neuro-cp","secondary":"","why":"Ataxic cerebral palsy with wide-based gait."}
+{"id":"pedsa-b4-11-1","first":"neurological","second":null,"final":"dev-problems","secondary":"neurological","why":"Tests which professional leads multidisciplinary care of disabled child with refractory epilepsy."}
+{"id":"pedsa-b4-11-2","first":"resp-pneumonia","second":null,"final":"dev-problems","secondary":"nutrition","why":"Tests speech and language therapist role in feeding difficulties of disabled child."}
+{"id":"pedsa-b4-11-3","first":"dev-problems","second":null,"final":"dev-problems","secondary":"nutrition","why":"Tests dietician role in disabled child care; faltering growth context."}
+{"id":"pedsa-b4-11-4","first":"dev-problems","second":null,"final":"dev-problems","secondary":"dev-nd","why":"Tests psychologist role for suspected Asperger syndrome."}
+{"id":"pedsa-b4-11-5","first":"neuro-nm","second":null,"final":"dev-problems","secondary":"neuro-nm","why":"Tests physio and occupational therapist role in disabled child with Duchenne."}
+{"id":"pedsa-b4-11-6","first":"dev-problems","second":null,"final":"dev-problems","secondary":"","why":"Tests speech and language therapist role for isolated speech delay."}
+{"id":"pedsa-b4-11-7","first":"dev-problems","second":null,"final":"dev-problems","secondary":"","why":"Tests occupational therapist role for newly disabled adolescent after spinal injury."}
+{"id":"pedsa-b4-11-8","first":"dev-problems","second":null,"final":"dev-problems","secondary":"accidents","why":"Tests specialist health visitor role in safeguarding after a burn."}
+{"id":"pedsa-b5-1","first":"emergencies","second":null,"final":"emergencies","secondary":"","why":"Hospital admission age; care of the sick child, nearest is emergencies; low confidence."}
+{"id":"pedsa-b5-2","first":"neuro-nm","second":null,"final":"neuro-nm","secondary":"communication of diagnosis","why":"Who breaks news of Duchenne diagnosis; no communication chapter, disease chapter nearest; keep first."}
+{"id":"pedsa-b5-3","first":"emergencies","second":null,"final":"emergencies","secondary":"communication","why":"Ward and communication scenario for acute admission; no matching chapter, nearest emergencies."}
+{"id":"pedsa-b5-4-1","first":"emergencies","second":null,"final":"emergencies","secondary":"neonatal-sepsis","why":"Drug administration route set; febrile neonate needs intravenous; nearest emergencies."}
+{"id":"pedsa-b5-4-2","first":"emergencies","second":null,"final":"emergencies","secondary":"resp-pneumonia","why":"Drug administration route set; oral liquid for mild pneumonia."}
+{"id":"pedsa-b5-4-3","first":"respiratory","second":null,"final":"emergencies","secondary":"respiratory","why":"Same route set kept together; nebulised salbutamol for wheeze exacerbation."}
+{"id":"pedsa-b5-4-4","first":"emergencies","second":null,"final":"emergencies","secondary":"perinatal","why":"Same route set kept together; intramuscular vitamin K at birth."}
+{"id":"pedsa-b5-4-5","first":"emergencies","second":null,"final":"emergencies","secondary":"allergy","why":"Same route set kept together; topical treatment for eczema."}
+{"id":"pedsa-b5-5-1","first":"infection-vaccine","second":null,"final":"emergencies","secondary":"infection-vaccine","why":"Pain management set (distraction); topic is analgesia, not vaccination; nearest emergencies."}
+{"id":"pedsa-b5-5-2","first":"emergencies","second":null,"final":"emergencies","secondary":"","why":"Pain management set; topical anaesthetic before blood test."}
+{"id":"pedsa-b5-5-3","first":"emergencies","second":null,"final":"emergencies","secondary":"","why":"Pain management set; nurse-controlled morphine after transplant surgery."}
+{"id":"pedsa-b5-5-4","first":"emergencies","second":null,"final":"emergencies","secondary":"","why":"Pain management set; regular paracetamol after hernia repair."}
+{"id":"pedsa-b5-5-5","first":"emergencies","second":null,"final":"emergencies","secondary":"accidents","why":"Pain management set; intranasal diamorphine for trauma without IV access."}
+{"id":"pedsa-b5-5-6","first":"emergencies","second":null,"final":"emergencies","secondary":"malignant-solid","why":"Pain management set; palliative opioid for metastatic Ewing sarcoma."}
+{"id":"pedsa-b5-5-7","first":"emergencies","second":null,"final":"emergencies","secondary":"haematology","why":"Pain management set; sickle cell pain after paracetamol fails."}
+{"id":"pedsa-b5-6-1","first":"emergencies","second":null,"final":"emergencies","secondary":"medical ethics","why":"Ethical principle (beneficence); no ethics chapter, nearest emergencies."}
+{"id":"pedsa-b5-6-2","first":"emergencies","second":null,"final":"emergencies","secondary":"medical ethics","why":"Ethical principle (non-maleficence); no ethics chapter, nearest emergencies."}
+{"id":"pedsa-b5-6-3","first":"emergencies","second":null,"final":"emergencies","secondary":"medical ethics","why":"Ethical principle (autonomy); no ethics chapter, nearest emergencies."}
+{"id":"pedsa-b5-6-4","first":"emergencies","second":null,"final":"emergencies","secondary":"medical ethics","why":"Ethical principle (truth-telling); no ethics chapter, nearest emergencies."}
+{"id":"pedsa-b5-6-5","first":"emergencies","second":null,"final":"emergencies","secondary":"medical ethics","why":"Ethical principle (duty); no ethics chapter, nearest emergencies."}
+{"id":"pedsa-b6-1","first":"emergencies","second":null,"final":"emergencies","secondary":"","why":"Chest compression position in infant resuscitation."}
+{"id":"pedsa-b6-2","first":"infection","second":null,"final":"infection","secondary":"emergencies","why":"Non-blanching rash with fever and drowsiness is meningococcal septicaemia."}
+{"id":"pedsa-b6-3","first":"emergencies","second":null,"final":"accidents","secondary":"emergencies","why":"Unconscious child with pinpoint pupils: opiate poisoning."}
+{"id":"pedsa-b6-4","first":"emergencies","second":null,"final":"emergencies","secondary":"","why":"Calculating Glasgow Coma Score in a drowsy child."}
+{"id":"pedsa-b6-5","first":"emergencies","second":null,"final":"emergencies","secondary":"accidents","why":"First step in paediatric basic life support after submersion."}
+{"id":"pedsa-b6-6","first":"emergencies","second":null,"final":"gi-abdopain","secondary":"emergencies","why":"Intussusception diagnosis: colicky pain, vomiting, shock at 8 months."}
+{"id":"pedsa-b6-7","first":"emergencies","second":null,"final":"emergencies","secondary":"","why":"Fluid bolus volume for shock in 8 kg infant."}
+{"id":"pedsa-b6-8","first":"emergencies","second":null,"final":"emergencies","secondary":"gi-diarrhoea","why":"24-hour fluid requirement after shock with 10% dehydration."}
+{"id":"pedsa-b6-9","first":"neurological","second":null,"final":"neurological","secondary":"emergencies","why":"Status epilepticus: check glucose after benzodiazepine; seizure management."}
+{"id":"pedsa-b6-10","first":"emergencies","second":null,"final":"allergy","secondary":"emergencies","why":"Mild urticarial reaction without respiratory compromise treated with antihistamine."}
+{"id":"pedsa-b6-11","first":"endo-thyroid","second":null,"final":"allergy","secondary":"emergencies","why":"Anaphylaxis with wheeze and angioedema: intramuscular adrenaline; first sort clearly wrong."}
+{"id":"pedsa-b6-12","first":"emergencies","second":null,"final":"emergencies","secondary":"sudden unexpected death in infancy","why":"Supine sleeping reduced cot death; SUDI has no chapter, book places it with emergencies."}
+{"id":"pedsa-b6-13-1","first":"emergencies","second":null,"final":"emergencies","secondary":"","why":"High-flow oxygen for hypoxic child still talking."}
+{"id":"pedsa-b6-13-2","first":"emergencies","second":null,"final":"emergencies","secondary":"","why":"Airway opening for unconscious gasping child."}
+{"id":"pedsa-b6-13-3","first":"emergencies","second":null,"final":"emergencies","secondary":"","why":"Cardiac compressions for infant bradycardia 40 despite ventilation."}
+{"id":"pedsa-b6-13-4","first":"emergencies","second":null,"final":"emergencies","secondary":"endocrine","why":"Check glucose in confused diabetic child; emergency step order."}
+{"id":"pedsa-b6-13-5","first":"neurological","second":null,"final":"neurological","secondary":"emergencies","why":"Post-seizure unresponsive child: check pupils; coma and seizure assessment."}
+{"id":"pedsa-b7-1","first":"accidents","second":null,"final":"accidents","secondary":"malignant","why":"Child mortality statistics (key malignant disease); no epidemiology chapter, block is accidents; keep first."}
+{"id":"pedsa-b7-2","first":"accidents","second":null,"final":"accidents","secondary":"","why":"Runny nose after head injury suggests CSF leak from skull base fracture."}
+{"id":"pedsa-b7-3","first":"accidents","second":null,"final":"accidents","secondary":"","why":"Parietal skull fracture on X-ray after fall."}
+{"id":"pedsa-b7-4","first":"accidents","second":null,"final":"accidents","secondary":"","why":"Neurosurgical referral for intracranial haemorrhage after head injury."}
+{"id":"pedsa-b7-5","first":"accidents","second":null,"final":"accidents","secondary":"emergencies","why":"Trauma primary survey: IV access after road traffic injury."}
+{"id":"pedsa-b7-6","first":"accidents","second":null,"final":"accidents","secondary":"","why":"Abdominal ultrasound for splenic injury with left lower rib fractures."}
+{"id":"pedsa-b7-7","first":"accidents","second":null,"final":"accidents","secondary":"","why":"Estimating burn surface area in toddler."}
+{"id":"pedsa-b7-8","first":"accidents","second":null,"final":"accidents","secondary":"emergencies","why":"First management step in major burn: intravenous saline."}
+{"id":"pedsa-b7-9","first":"accidents","second":null,"final":"accidents","secondary":"emergencies","why":"Burn shock from plasma loss through damaged vessels."}
+{"id":"pedsa-b7-10","first":"accidents","second":null,"final":"accidents","secondary":"","why":"Abdominal X-ray as first investigation for iron tablet ingestion."}
+{"id":"pedsa-b7-11","first":"accidents","second":null,"final":"accidents","secondary":"","why":"Desferrioxamine for significant iron poisoning."}
+{"id":"pedsa-b7-12","first":"resp-bronch","second":null,"final":"accidents","secondary":"gastroenterology","why":"Swallowed coin lodges at cricopharyngeus; foreign body ingestion is an accident."}
+{"id":"pedsa-b7-13-1","first":"accidents","second":null,"final":"accidents","secondary":"","why":"Alcohol poisoning with hypoglycaemia in adolescent."}
+{"id":"pedsa-b7-13-2","first":"accidents","second":null,"final":"accidents","secondary":"liver","why":"Paracetamol poisoning with jaundice and deranged clotting."}
+{"id":"pedsa-b7-13-3","first":"accidents","second":null,"final":"accidents","secondary":"","why":"Salicylate poisoning with hyperventilation and disorientation."}
+{"id":"pedsa-b7-13-4","first":"accidents","second":null,"final":"accidents","secondary":"","why":"Iron poisoning with black stools in toddler."}
+{"id":"pedsa-b7-13-5","first":"accidents","second":null,"final":"accidents","secondary":"","why":"Digoxin ingestion with arrhythmia."}
+{"id":"pedsa-b8-1","first":"dev-problems","second":null,"final":"accidents","secondary":"child protection","why":"Leg fracture after stair fall judged accidental; no child protection chapter, nearest accidents."}
+{"id":"pedsa-b8-2","first":"dev-problems","second":null,"final":"accidents","secondary":"child protection","why":"Disclosure of strap-mark bruising; no child protection chapter, nearest accidents."}
+{"id":"pedsa-b8-3","first":"dev-problems","second":null,"final":"accidents","secondary":"child protection","why":"Gonococcus on swab suggests sexual abuse; nearest chapter accidents."}
+{"id":"pedsa-b8-4","first":"dev-problems","second":null,"final":"accidents","secondary":"child protection","why":"Rib fractures with old bruises: child protection medical; nearest accidents."}
+{"id":"pedsa-b8-5-1","first":"dev-problems","second":null,"final":"accidents","secondary":"child protection","why":"Non-accidental injury diagnosis; no child protection chapter, nearest accidents."}
+{"id":"pedsa-b8-5-2","first":"dev-problems","second":null,"final":"infection-bact","secondary":"child protection","why":"Staphylococcal scalded skin syndrome with perioral infection; bacterial infection."}
+{"id":"pedsa-b8-5-3","first":"infection","second":null,"final":"haem-bleeding","secondary":"child protection","why":"Immune thrombocytopenic purpura after URTI with petechiae and bruises."}
+{"id":"pedsa-b8-5-4","first":"infection","second":null,"final":"infection","secondary":"child protection","why":"Non-blanching rash with fever and lethargy is meningococcal septicaemia."}
+{"id":"pedsa-b8-5-5","first":"dev-problems","second":null,"final":"accidents","secondary":"child protection","why":"Scald pattern keyed non-accidental injury; no child protection chapter, nearest accidents."}
+{"id":"pedsa-b9-1","first":"haem-bleeding","second":null,"final":"genetics","secondary":"haem-bleeding","why":"Pedigree with only males affected: X-linked recessive inheritance, tested as genetics."}
+{"id":"pedsa-b9-2","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Recurrence risk for a son from pedigree."}
+{"id":"pedsa-b9-3","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Nondisjunction as cause of Down syndrome."}
+{"id":"pedsa-b9-4","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Unbalanced Robertsonian translocation in Down syndrome."}
+{"id":"pedsa-b9-5","first":"genetics","second":null,"final":"genetics","secondary":"cardiac","why":"Atrioventricular septal defect as heart lesion in Down syndrome."}
+{"id":"pedsa-b9-6","first":"endo-thyroid","second":null,"final":"genetics","secondary":"endo-thyroid","why":"Down syndrome surveillance: thyroid function tests for growth faltering; set kept together."}
+{"id":"pedsa-b9-7","first":"malignant","second":null,"final":"genetics","secondary":"malignant","why":"Down syndrome carries increased risk of leukaemia; set kept together."}
+{"id":"pedsa-b9-8","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Autosomal recessive inheritance from pedigree."}
+{"id":"pedsa-b9-9","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Recurrence risk 1 in 4 for autosomal recessive disorder."}
+{"id":"pedsa-b9-10","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Carrier risk 2 in 3 for unaffected sibling."}
+{"id":"pedsa-b9-11","first":"resp-bronch","second":null,"final":"genetics","secondary":"respiratory","why":"Carrier-risk calculation for cystic fibrosis; genetic counselling arithmetic."}
+{"id":"pedsa-b9-12","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Autosomal dominant inheritance from pedigree."}
+{"id":"pedsa-b9-13","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Klinefelter karyotype 47,XXY."}
+{"id":"pedsa-b9-14","first":"genetics","second":null,"final":"genetics","secondary":"growth-puberty","why":"Noonan syndrome as cause of short stature with 46,XX karyotype."}
+{"id":"pedsa-b9-15-1","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Down syndrome diagnosis in hypotonic infant of older mother."}
+{"id":"pedsa-b9-15-2","first":"genetics","second":null,"final":"genetics","secondary":"growth-puberty","why":"Turner syndrome with short stature, coarctation signs, no puberty."}
+{"id":"pedsa-b9-15-3","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Patau syndrome: cleft lip and palate, scalp defect, polydactyly."}
+{"id":"pedsa-b9-15-4","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Fragile X syndrome: macrocephaly, long face, large ears, learning difficulty."}
+{"id":"pedsa-b9-15-5","first":"genetics","second":null,"final":"genetics","secondary":"puberty","why":"Klinefelter syndrome: tall, gynaecomastia, small firm testes."}
+{"id":"pedsa-b9-16-1","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Autosomal dominant inheritance in achondroplasia-type short stature."}
+{"id":"pedsa-b9-16-2","first":"infection","second":null,"final":"genetics","secondary":"haematology","why":"Sickle cell dactylitis is autosomal recessive; question tests inheritance."}
+{"id":"pedsa-b9-16-3","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Marfan-type tall stature is autosomal dominant."}
+{"id":"pedsa-b9-16-4","first":"genetics","second":null,"final":"genetics","secondary":"","why":"Prader-Willi by uniparental disomy imprinting."}
+{"id":"pedsa-b9-16-5","first":"genetics","second":null,"final":"genetics","secondary":"gastroenterology","why":"Pyloric stenosis has polygenic inheritance."}
+{"id":"pedsa-b10-2","first":"perinatal","second":"renal-cakut","final":"renal-cakut","secondary":"perinatal","why":"Oligohydramnios from poorly functioning fetal kidneys is a congenital kidney topic."}
+{"id":"pedsa-b10-5","first":"perinatal","second":"cardiac","final":"perinatal","secondary":"cardiac","why":"Newborn examination finding needing assessment; murmur only the key; keep first."}
+{"id":"pedsa-b10-6","first":"perinatal","second":"perinatal-rd","final":"perinatal-rd","secondary":"perinatal","why":"Infant of diabetic mother risk keyed respiratory distress syndrome."}
+{"id":"pedsa-b10-7","first":"perinatal","second":"infection","final":"perinatal","secondary":"infection","why":"Congenital CMV with hepatosplenomegaly, petechiae, deafness; no TORCH chapter; keep first."}
+{"id":"pedsa-b10-10","first":"neuro-nm","second":"perinatal","final":"perinatal","secondary":"genetics","why":"Newborn heel-prick screening panel; Duchenne not included."}
+{"id":"pedsa-b10-11","first":"neurological","second":"perinatal","final":"perinatal","secondary":"neonatal-seiz","why":"Neonatal abstinence from maternal opiates: jittery, sneezing, yawning at day 2."}
+{"id":"pedsa-b10-13-5","first":"perinatal","second":"normal-dev","final":"perinatal","secondary":"","why":"Mongolian blue spots found at routine newborn check; keep first."}
+{"id":"pedsa-b11-1","first":"neonatal","second":"perinatal-rd","final":"perinatal-rd","secondary":"perinatal","why":"Surfactant deficiency respiratory distress syndrome in 32-week preterm."}
+{"id":"pedsa-b11-3","first":"neonatal","second":"perinatal","final":"neonatal-sepsis","secondary":"perinatal","why":"Purulent neonatal conjunctivitis needs IV antibiotics; neonatal infection. Neither prior sort fits."}
+{"id":"pedsa-b11-4","first":"neonatal","second":"neonatal-sepsis","final":"neonatal-sepsis","secondary":"","why":"Group B streptococcus early-onset sepsis with pneumonia."}
+{"id":"pedsa-b11-5","first":"neonatal","second":"gastroenterology","final":"gastroenterology","secondary":"perinatal","why":"Bilious vomiting and no meconium: duodenal atresia, matches earlier bilious-vomiting rulings."}
+{"id":"pedsa-b11-6","first":"neonatal","second":"perinatal","final":"perinatal","secondary":"","why":"Umbilical granuloma is a routine newborn finding; neonatal jaundice chapter is wrong."}
+{"id":"pedsa-b11-7-1","first":"neonatal","second":"perinatal-rd","final":"perinatal-rd","secondary":"","why":"Pneumothorax causing newborn respiratory distress."}
+{"id":"pedsa-b11-7-2","first":"neonatal","second":"perinatal-rd","final":"perinatal-rd","secondary":"","why":"Diaphragmatic hernia causing newborn respiratory distress."}
+{"id":"pedsa-b11-7-3","first":"neonatal","second":"perinatal-rd","final":"perinatal-rd","secondary":"perinatal","why":"Bronchopulmonary dysplasia after ventilated 28-week preterm; also prematurity topic."}
+{"id":"pedsa-b11-9-1","first":"neonatal","second":"cardiac","final":"cardiac","secondary":"perinatal-rd","why":"Coarctation of aorta: absent femoral pulses in tachypnoeic newborn."}
+{"id":"pedsa-b11-9-2","first":"neonatal","second":"perinatal-rd","final":"perinatal-rd","secondary":"","why":"Transient tachypnoea after elective caesarean with normal X-ray."}
+{"id":"pedsa-b12-1","first":"growth-puberty","second":"nutrition","final":"growth-puberty","secondary":"nutrition","why":"Nutrition drives infant growth phase; growth phases chapter; keep first."}
+{"id":"pedsa-b12-3","first":"growth-puberty","second":"puberty","final":"puberty","secondary":"","why":"Idiopathic precocious puberty in 7-year-old with pelvic ultrasound changes."}
+{"id":"pedsa-b12-4","first":"growth-puberty","second":"puberty","final":"puberty","secondary":"","why":"Premature thelarche in 18-month-old with normal bone age."}
+{"id":"pedsa-b12-6-3","first":"growth-puberty","second":"nutrition","final":"growth-puberty","secondary":"gi-diarrhoea","why":"Coeliac screen as investigation of short stature; keep first."}
+{"id":"pedsa-b13-1","first":"nutrition","second":"nutrition-vit","final":"nutrition-vit","secondary":"","why":"Vitamin D deficiency rickets with wrist widening on X-ray."}
+{"id":"pedsa-b13-3","first":"nutrition","second":"growth-puberty","final":"nutrition","secondary":"perinatal","why":"Birthweight and later cardiovascular risk; growth and obesity programming; keep first."}
+{"id":"pedsa-b13-4","first":"haem-bleeding","second":"nutrition-feed","final":"nutrition-feed","secondary":"haem-bleeding","why":"Breastfeeding disadvantage question; low vitamin K in breast milk."}
+{"id":"pedsa-b13-5","first":"nutrition","second":"nutrition-pem","final":"nutrition-pem","secondary":"","why":"Marasmus: severe wasting with weight z-score below -2 and normal hair and skin."}
+{"id":"pedsa-b13-7-1","first":"nutrition","second":"nutrition-vit","final":"nutrition-vit","secondary":"","why":"Rickets from vitamin D deficiency with wide wrists."}
+{"id":"pedsa-b13-7-2","first":"haem-bleeding","second":"perinatal","final":"haem-bleeding","secondary":"nutrition-vit","why":"Vitamin K deficiency bleeding in unprophylaxed breastfed infant; keep first."}
+{"id":"pedsa-b13-7-3","first":"nutrition","second":"nutrition-pem","final":"nutrition-pem","secondary":"","why":"Kwashiorkor: oedema, distended abdomen, reddish hair, maize diet."}
+{"id":"pedsa-b13-7-4","first":"nutrition","second":"allergy","final":"allergy","secondary":"nutrition-feed","why":"Cow's milk protein allergy: loose stools, eczema, faltering growth on formula."}
+{"id":"pedsa-b13-7-5","first":"nutrition","second":"growth-puberty","final":"growth-puberty","secondary":"nutrition","why":"Normal small child following family centile; normal variant of growth."}
+{"id":"pedsa-b14-1","first":"gastroenterology","second":"gi-diarrhoea","final":"gi-diarrhoea","secondary":"","why":"Rotavirus acute gastroenteritis with watery diarrhoea."}
+{"id":"pedsa-b14-2","first":"gastroenterology","second":"nutrition","final":"gi-diarrhoea","secondary":"nutrition","why":"Coeliac disease with loose stools, distension, weight loss: malabsorption diarrhoea chapter."}
+{"id":"pedsa-b14-3","first":"gastroenterology","second":"gi-diarrhoea","final":"gi-diarrhoea","secondary":"","why":"Chronic non-specific (toddler) diarrhoea in thriving child."}
+{"id":"pedsa-b14-4","first":"gastroenterology","second":"gi-abdopain","final":"gi-diarrhoea","secondary":"gi-abdopain","why":"Constipation with overflow loose stools; constipation sits in the diarrhoea and constipation chapter."}
+{"id":"pedsa-b14-6","first":"gastroenterology","second":"gi-abdopain","final":"gi-abdopain","secondary":"","why":"Functional recurrent abdominal pain in a growing child."}
+{"id":"pedsa-b14-7","first":"gastroenterology","second":"gi-diarrhoea","final":"gi-diarrhoea","secondary":"","why":"Hypernatraemic dehydration fluid replacement in gastroenteritis."}
+{"id":"pedsa-b14-8","first":"gastroenterology","second":"perinatal","final":"gi-diarrhoea","secondary":"perinatal","why":"Hirschsprung: delayed meconium and constipation; lectures barely cover it. Medium confidence, neither sort fits."}
+{"id":"pedsa-b14-9-5","first":"gastroenterology","second":"neurological","final":"gastroenterology","secondary":"neurological","why":"Migraine as cause of vomiting in a vomiting-differential set; keep first."}
+{"id":"pedsa-b14-10-1","first":"gastroenterology","second":"gi-abdopain","final":"gi-abdopain","secondary":"","why":"Mesenteric adenitis with tonsillitis and abdominal pain."}
+{"id":"pedsa-b14-10-3","first":"gastroenterology","second":"gi-abdopain","final":"gi-abdopain","secondary":"","why":"Appendicitis with right iliac fossa tenderness."}
+{"id":"pedsa-b14-10-4","first":"gastroenterology","second":"gi-abdopain","final":"gi-abdopain","secondary":"gi-diarrhoea","why":"Inflammatory bowel disease with nocturnal stools, anaemia, raised CRP; abdominal pain set."}
+{"id":"pedsa-b14-10-5","first":"gastroenterology","second":"gi-diarrhoea","final":"gi-diarrhoea","secondary":"gi-abdopain","why":"Constipation with palpable left-sided faecal mass."}
+{"id":"pedsa-b15-1","first":"infection","second":"infection-bact","final":"infection","secondary":"infection-bact","why":"Meningococcal sepsis in febrile child; lecture is febrile child and life-threatening infections; keep first."}
+{"id":"pedsa-b15-2","first":"infection","second":"infection-bact","final":"infection","secondary":"infection-bact","why":"PCR confirms meningococcal sepsis; febrile child chapter; keep first."}
+{"id":"pedsa-b15-3","first":"infection","second":"infection-bact","final":"infection","secondary":"","why":"CSF with neutrophils and low glucose: bacterial meningitis."}
+{"id":"pedsa-b15-5","first":"infection","second":"infection-vesic","final":"infection-vesic","secondary":"","why":"Hand, foot and mouth disease from Coxsackie A with tender vesicles."}
+{"id":"pedsa-b15-6","first":"infection","second":"infection-bact","final":"infection-bact","secondary":"cardiac-acq","why":"Kawasaki disease: week of fever, red eyes, lymphadenopathy, peeling fingers."}
+{"id":"pedsa-b15-7","first":"resp-pneumonia","second":"infection-immunity","final":"infection-immunity","secondary":"resp-pneumonia","why":"Pneumocystis pneumonia in HIV-exposed infant from Swaziland points to immunodeficiency."}
+{"id":"pedsa-b15-8","first":"infection","second":"infection-bact","final":"infection-bact","secondary":"","why":"Tuberculosis in recent immigrant with cough and no weight gain."}
+{"id":"pedsa-b15-10-1","first":"infection","second":"infection-rash","final":"infection-rash","secondary":"","why":"Measles: cough, conjunctivitis and widespread rash."}
+{"id":"pedsa-b15-10-3","first":"infection","second":"infection-rash","final":"infection-rash","secondary":"","why":"EBV with amoxicillin-induced maculopapular rash."}
+{"id":"pedsa-b15-10-5","first":"infection","second":"infection-vesic","final":"infection-vesic","secondary":"","why":"Chickenpox with itchy widespread vesicular rash."}
+{"id":"pedsa-b15-10-6","first":"infection","second":"infection-bact","final":"infection-bact","secondary":"","why":"Staphylococcus aureus toxic shock after yellow-crusted skin infection."}
+{"id":"pedsa-b15-10-7","first":"infection","second":"infection-rash","final":"infection-rash","secondary":"","why":"Parvovirus slapped cheek (fifth disease)."}
+{"id":"pedsa-b15-11-1","first":"respiratory","second":"resp-pneumonia","final":"resp-pneumonia","secondary":"","why":"Oral antibiotic for mild community-acquired pneumonia."}
+{"id":"pedsa-b15-11-3","first":"infection","second":"gi-diarrhoea","final":"gi-diarrhoea","secondary":"","why":"Oral rehydration solution for dehydrating gastroenteritis."}
+{"id":"pedsa-b15-11-4","first":"infection","second":"resp-pneumonia","final":"resp-pneumonia","secondary":"","why":"IV antibiotics for pneumonia with pleural effusion signs."}
+{"id":"pedsa-b15-11-5","first":"infection","second":"infection-bact","final":"infection-bact","secondary":"cardiac-acq","why":"IV immunoglobulin for Kawasaki disease."}
+{"id":"pedsa-b16-1","first":"respiratory","second":"allergy","final":"allergy","secondary":"emergencies","why":"Anaphylaxis with respiratory compromise and spreading urticaria."}
+{"id":"pedsa-b16-4","first":"allergy","second":"gi-diarrhoea","final":"allergy","secondary":"gi-diarrhoea","why":"Post-gastroenteritis food hypersensitivity keyed non-allergic; allergy block; keep first."}
+{"id":"pedsa-b17-1","first":"respiratory","second":"infection-bact","final":"infection-bact","secondary":"","why":"Group A streptococcal tonsillitis."}
+{"id":"pedsa-b17-2","first":"infection-vaccine","second":"infection-bact","final":"infection-bact","secondary":"infection-vaccine","why":"Epiglottitis in unimmunised child; epiglottitis is in bacterial infection lecture."}
+{"id":"pedsa-b17-3","first":"respiratory","second":"infection-bact","final":"infection-bact","secondary":"resp-bronch","why":"Pernasal swab for pertussis; matches pedsa2-5-11."}
+{"id":"pedsa-b17-4","first":"respiratory","second":"resp-pneumonia","final":"resp-pneumonia","secondary":"infection-bact","why":"Persistent cough with focal signs unresponsive to antibiotics: chest X-ray. Tuberculosis possible."}
+{"id":"pedsa-b17-8","first":"resp-bronch","second":"genetics","final":"respiratory","secondary":"cystic fibrosis","why":"Sweat test for suspected cystic fibrosis; no chapter, nearest chronic airway disease."}
+{"id":"pedsa-b17-9","first":"respiratory","second":"infection","final":"infection","secondary":"resp-bronch","why":"Simple upper respiratory tract infection: coryza, normal respiratory rate, febrile child."}
+{"id":"pedsa-b17-11","first":"resp-bronch","second":"respiratory","final":"resp-bronch","secondary":"croup","why":"Croup has no chapter; viral airway infection nearest bronchiolitis; keep first."}
+{"id":"pedsa-b17-12-1","first":"resp-bronch","second":"genetics","final":"respiratory","secondary":"cystic fibrosis","why":"Cystic fibrosis with recurrent chest infections and poor growth; no chapter, nearest respiratory."}
+{"id":"pedsa-b17-12-2","first":"resp-bronch","second":"accidents","final":"accidents","secondary":"respiratory","why":"Inhaled foreign body with unilateral wheeze after choking episode."}
+{"id":"pedsa-b17-12-4","first":"respiratory","second":"perinatal","final":"perinatal-rd","secondary":"perinatal","why":"Bronchopulmonary dysplasia in 25-week preterm; lecture on newborn respiratory distress names it."}
+{"id":"pedsa-b17-13-3","first":"resp-bronch","second":"genetics","final":"respiratory","secondary":"cystic fibrosis","why":"Cystic fibrosis in chesty infant failing to thrive; no chapter, nearest respiratory."}
+{"id":"pedsa-b17-13-5","first":"respiratory","second":"infection-bact","final":"infection-bact","secondary":"resp-bronch","why":"Pertussis with post-tussive vomiting; matches earlier pertussis rulings."}
+{"id":"pedsa-b17-14-1","first":"respiratory","second":"infection-bact","final":"infection-bact","secondary":"","why":"Acute otitis media managed with analgesia; otitis media is in bacterial infection lecture."}
+{"id":"pedsa-b18-5","first":"cardiac","second":"emergencies","final":"cardiac-acq","secondary":"emergencies","why":"Supraventricular tachycardia vagal manoeuvre; arrhythmia is in myocardial diseases lecture. Medium confidence."}
+{"id":"pedsa-b18-7-4","first":"respiratory","second":"cardiac","final":"cardiac","secondary":"","why":"Fixed split second sound and ejection murmur: atrial septal defect."}
+{"id":"pedsa-b18-8-4","first":"respiratory","second":"cardiac","final":"cardiac","secondary":"","why":"Ejection systolic murmur radiating to carotids: aortic stenosis."}
+{"id":"pedsa-b19-1","first":"renal","second":"renal-uti","final":"renal-uti","secondary":"","why":"Urine collection method in suspected childhood UTI."}
+{"id":"pedsa-b19-2","first":"infection","second":"renal-uti","final":"renal-uti","secondary":"","why":"Cystitis with frequency in afebrile girl."}
+{"id":"pedsa-b19-3","first":"infection","second":"renal-cakut","final":"renal-cakut","secondary":"","why":"Renal stone with loin colic and haematuria; chapter covers stones."}
+{"id":"pedsa-b19-5","first":"renal","second":"renal-uti","final":"renal-uti","secondary":"","why":"IV antibiotics for UTI in 1-month-old with fever."}
+{"id":"pedsa-b19-9","first":"renal","second":"renal-cakut","final":"renal-cakut","secondary":"","why":"New secondary enuresis: first step urinary dipstick; chapter covers enuresis."}
+{"id":"pedsa-b19-10","first":"neuro-nm","second":"renal","final":"renal-cakut","secondary":"renal","why":"Chronic kidney disease from renal dysplasia, osteodystrophy prevention; CKD in CAKUT lecture."}
+{"id":"pedsa-b19-11-1","first":"renal","second":"renal-uti","final":"renal-uti","secondary":"","why":"Interpreting bag urine microscopy: perineal contamination versus UTI."}
+{"id":"pedsa-b19-11-3","first":"infection","second":"renal-uti","final":"renal-uti","secondary":"","why":"Interpreting mixed coliform culture as contamination."}
+{"id":"pedsa-b19-12-1","first":"neuro-cp","second":"renal-cakut","final":"renal-cakut","secondary":"","why":"Severe colic with haematuria suggests stone; renal ultrasound."}
+{"id":"pedsa-b19-12-2","first":"renal","second":"renal-uti","final":"renal-uti","secondary":"","why":"Urine microscopy and culture for febrile girl with positive dipstick."}
+{"id":"pedsa-b19-12-3","first":"renal","second":"renal-cakut","final":"renal-cakut","secondary":"","why":"Antenatal hydronephrosis and no urine passed: posterior urethral valves imaging."}
+{"id":"pedsa-b19-12-4","first":"renal-uti","second":"renal-cakut","final":"renal-cakut","secondary":"renal-uti","why":"Dysplastic kidneys, poor growth, hypertension: check plasma creatinine for CKD."}
+{"id":"pedsa-b20-1","first":"renal-cakut","second":"perinatal","final":"gi-abdopain","secondary":"renal-cakut","why":"Inguinal hernia management; hernia appears in abdominal pain lecture. Medium confidence."}
+{"id":"pedsa-b20-2","first":"renal-cakut","second":"emergencies","final":"renal-cakut","secondary":"emergencies","why":"Testicular torsion has no chapter; genitourinary nearest; keep first."}
+{"id":"pedsa-b20-3","first":"renal-cakut","second":"infection-bact","final":"renal-cakut","secondary":"infection-bact","why":"Balanitis of foreskin treated with antibiotics; genital disorder; keep first."}
+{"id":"pedsa-b21-1","first":"liver","second":"neonatal-sepsis","final":"liver","secondary":"neonatal-sepsis","why":"Neonate with hepatomegaly and coagulopathy: metabolic liver disease; check glucose; keep first."}
+{"id":"pedsa-b21-2","first":"liver","second":"neonatal","final":"liver","secondary":"neonatal","why":"Prolonged jaundice with pale stools: conjugated bilirubin first; cholestasis; keep first."}
+{"id":"pedsa-b21-5","first":"liver","second":"genetics","final":"liver-hep","secondary":"genetics","why":"Wilson disease with neuropsychiatric signs and Kayser-Fleischer rings; chronic liver disease chapter."}
+{"id":"pedsa-b21-6-2","first":"liver","second":"liver-hep","final":"liver-hep","secondary":"","why":"Hepatitis A after travel with diarrhoeal illness and jaundice."}
+{"id":"pedsa-b21-6-4","first":"liver","second":"liver-hep","final":"liver-hep","secondary":"","why":"Hepatitis B chronic liver disease with haematemesis and splenomegaly."}
+{"id":"pedsa-b22-2","first":"malignant","second":"infection","final":"malignant","secondary":"infection","why":"Febrile neutropenia during leukaemia chemotherapy; oncology emergency; keep first."}
+{"id":"pedsa-b22-3","first":"malignant","second":"malignant-solid","final":"malignant-solid","secondary":"","why":"Abdominal mass with urinary catecholamines: neuroblastoma."}
+{"id":"pedsa-b22-5","first":"malignant","second":"malignant-solid","final":"malignant-solid","secondary":"","why":"Medulloblastoma causing ataxia and regression."}
+{"id":"pedsa-b22-6","first":"malignant","second":"infection-vesic","final":"infection-vesic","secondary":"malignant","why":"Chickenpox exposure in child on chemotherapy needs urgent prophylaxis."}
+{"id":"pedsa-b22-7","first":"malignant","second":"malignant-solid","final":"malignant-solid","secondary":"","why":"Retinoblastoma with white pupillary reflex."}
+{"id":"pedsa-b22-8","first":"malignant","second":"malignant-solid","final":"malignant-solid","secondary":"","why":"Posterior fossa tumour with headaches and papilloedema."}
+{"id":"pedsa-b22-9-2","first":"malignant","second":"malignant-solid","final":"malignant-solid","secondary":"","why":"Wilms tumour: unilateral flank mass not crossing midline."}
+{"id":"pedsa-b22-9-3","first":"malignant","second":"malignant-solid","final":"malignant-solid","secondary":"","why":"Neuroblastoma: pallor, weight loss, irregular central abdominal mass."}
+{"id":"pedsa-b22-9-4","first":"malignant","second":"malignant-solid","final":"malignant-solid","secondary":"","why":"Brain tumour: morning vomiting, nocturnal headache, diplopia."}
+{"id":"pedsa-b22-10-2","first":"malignant","second":"malignant-solid","final":"malignant-solid","secondary":"","why":"Ultrasound abdomen for suspected Wilms tumour with haematuria."}
+{"id":"pedsa-b22-10-3","first":"malignant","second":"malignant-solid","final":"malignant-solid","secondary":"","why":"Urine catecholamines confirm neuroblastoma."}
+{"id":"pedsa-b22-10-4","first":"malignant","second":"malignant-solid","final":"malignant-solid","secondary":"","why":"MRI for suspected retinoblastoma with absent red reflex."}
+{"id":"pedsa-b22-10-5","first":"malignant","second":"malignant-solid","final":"malignant-solid","secondary":"","why":"MRI for suspected posterior fossa tumour with vomiting and abnormal eye movements."}
+{"id":"pedsa-b23-2","first":"infection","second":"haematology","final":"haematology","secondary":"","why":"G6PD deficiency haemolysis after broad bean meal."}
+{"id":"pedsa-b23-3","first":"infection","second":"haem-bleeding","final":"haem-bleeding","secondary":"","why":"Immune thrombocytopenic purpura: low platelets, normal clotting, post-viral."}
+{"id":"pedsa-b23-7-2","first":"haematology","second":"haem-bleeding","final":"haem-bleeding","secondary":"","why":"von Willebrand disease: prolonged APTT, low-normal factor VIII, normal platelets."}
+{"id":"pedsa-b23-8-3","first":"infection-vaccine","second":"haem-bleeding","final":"haem-bleeding","secondary":"","why":"Haemophilia: prolonged APTT, recombinant factor VIII treatment."}
+{"id":"pedsa-b24-1","first":"mental","second":"renal-cakut","final":"renal-cakut","secondary":"mental","why":"Nocturnal enuresis in 3-year-old: reassurance; chapter covers enuresis."}
+{"id":"pedsa-b24-3","first":"mental","second":"dev-nd","final":"mental","secondary":"dev-nd","why":"Behavioural problem managed first with parenting classes; keep first."}
+{"id":"pedsa-b24-4","first":"mental","second":"gi-abdopain","final":"gi-diarrhoea","secondary":"gi-abdopain","why":"Constipation with faecal mass and recurrent pain; constipation chapter."}
+{"id":"pedsa-b24-6","first":"infection","second":"mental","final":"mental","secondary":"","why":"Chronic fatigue syndrome with school absence in adolescent."}
+{"id":"pedsa-b25-1","first":"allergy","second":"infection-bact","final":"infection-bact","secondary":"dermatology","why":"Erythema nodosum from streptococcal infection; no dermatology chapter."}
+{"id":"pedsa-b25-2","first":"renal-uti","second":"allergy","final":"allergy","secondary":"dermatology","why":"Stevens-Johnson syndrome as drug hypersensitivity; no dermatology chapter."}
+{"id":"pedsa-b25-3","first":"allergy","second":"infection-rash","final":"infection","secondary":"dermatology","why":"Candida napkin rash is infective; no dermatology chapter, generic infection chapter nearest."}
+{"id":"pedsa-b25-4","first":"allergy","second":"infection-rash","final":"allergy","secondary":"dermatology","why":"Seborrhoeic dermatitis compared with itchy eczema-type rashes; non-infective; keep first."}
+{"id":"pedsa-b25-7","first":"allergy","second":"puberty","final":"puberty","secondary":"dermatology","why":"Adolescent acne treatment; pubertal skin disease; no dermatology chapter."}
+{"id":"pedsa-b25-8","first":"allergy","second":"infection","final":"infection","secondary":"dermatology","why":"Kerion is fungal scalp infection; no dermatology chapter."}
+{"id":"pedsa-b25-9","first":"allergy","second":"infection","final":"infection","secondary":"dermatology","why":"Neonatal axillary skin lesion keyed infection; no dermatology chapter."}
+{"id":"pedsa-b25-10","first":"resp-pneumonia","second":"infection-bact","final":"resp-pneumonia","secondary":"infection-bact","why":"Mycoplasma only taught in pneumonia lectures; keep first, both defensible."}
+{"id":"pedsa-b25-11-1","first":"infection","second":"haem-bleeding","final":"haem-bleeding","secondary":"","why":"Henoch-Schonlein purpura: non-blanching buttock rash, well child; covered in haemorrhagic disorders."}
+{"id":"pedsa-b25-11-2","first":"allergy","second":"infection-rash","final":"allergy","secondary":"dermatology","why":"Guttate psoriasis is non-infective skin disease; keep first, both defensible."}
+{"id":"pedsa-b25-11-3","first":"allergy","second":"infection","final":"infection","secondary":"dermatology","why":"Molluscum contagiosum is a viral skin infection."}
+{"id":"pedsa-b25-11-4","first":"allergy","second":"infection","final":"infection","secondary":"dermatology","why":"Scabies is a mite infestation; infective skin disease."}
+{"id":"pedsa-b26-7","first":"endocrine","second":"endo-thyroid","final":"endo-thyroid","secondary":"","why":"Cushingoid features from prednisolone; chapter covers adrenal disorders."}
+{"id":"pedsa-b26-8","first":"endocrine","second":"endo-thyroid","final":"endo-thyroid","secondary":"","why":"Addison disease: low sodium, high potassium, low cortisol; adrenal disorder."}
+{"id":"pedsa-b26-10","first":"endocrine","second":"genetics","final":"puberty","secondary":"genetics","why":"Ambiguous genitalia; CAH taught in puberty lecture; nearest chapter, low confidence."}
+{"id":"pedsa-b26-12-1","first":"endocrine","second":"endo-dka","final":"endo-dka","secondary":"","why":"Shocked diabetic child in DKA needs normal saline resuscitation."}
+{"id":"pedsa-b28-1","first":"neuro-nm","second":"infection-bact","final":"infection-bact","secondary":"musculoskeletal","why":"Osteomyelitis; Staphylococcus aureus is the commonest organism."}
+{"id":"pedsa-b28-2","first":"neuro-nm","second":"growth-puberty","final":"growth-puberty","secondary":"musculoskeletal","why":"Slipped capital femoral epiphysis in overweight adolescent; growth-related hip disorder."}
+{"id":"pedsa-b28-3","first":"infection","second":"puberty","final":"growth-puberty","secondary":"musculoskeletal","why":"Osgood-Schlatter is a growth-spurt traction apophysitis; growth chapter nearest."}
+{"id":"pedsa-b28-4","first":"neuro-nm","second":"infection-bact","final":"infection-bact","secondary":"musculoskeletal","why":"Septic arthritis: red swollen knee, fever, insect bite."}
+{"id":"pedsa-b28-5","first":"neuro-nm","second":"infection-immunity","final":"infection-immunity","secondary":"rheumatology","why":"Systemic-onset JIA: autoimmune, fever, negative ANA; no rheumatology chapter; medium."}
+{"id":"pedsa-b28-6","first":"haem-bleeding","second":"allergy","final":"haem-bleeding","secondary":"","why":"Henoch-Schonlein purpura with joint swelling; keep first, taught in haemorrhagic disorders."}
+{"id":"pedsa-b28-7","first":"neuro-nm","second":"infection","final":"infection","secondary":"musculoskeletal","why":"Transient synovitis follows a coryzal viral illness."}
+{"id":"pedsa-b28-8","first":"neuro-nm","second":"perinatal","final":"perinatal","secondary":"musculoskeletal","why":"Positional talipes in a 24-hour-old newborn, fully correctable."}
+{"id":"pedsa-b28-9","first":"infection","second":"genetics","final":"genetics","secondary":"accidents","why":"Osteogenesis imperfecta: recurrent fractures, affected sibling; inherited collagen disorder."}
+{"id":"pedsa-b28-10","first":"neuro-nm","second":"growth-puberty","final":"growth-puberty","secondary":"musculoskeletal","why":"Perthes disease: painful limp in 8-year-old, no fever; growth-age hip disorder."}
+{"id":"pedsa-b28-11","first":"neuro-nm","second":"genetics","final":"genetics","secondary":"musculoskeletal","why":"Pectus excavatum with tall stature, long fingers, arm span: Marfan features."}
+{"id":"pedsa-b28-12-1","first":"neuro-nm","second":"infection-bact","final":"infection-bact","secondary":"musculoskeletal","why":"Septic arthritis: hot swollen thigh held flexed, pain on movement."}
+{"id":"pedsa-b28-12-2","first":"neuro-nm","second":"accidents","final":"accidents","secondary":"musculoskeletal","why":"Fractured femur: apyrexial swollen thigh, cannot weight bear; injury."}
+{"id":"pedsa-b28-12-3","first":"infection","second":"infection-immunity","final":"infection","secondary":"musculoskeletal","why":"Transient synovitis after gastroenteritis; keep first, both defensible."}
+{"id":"pedsa-b28-13-1","first":"neuro-nm","second":"growth-puberty","final":"growth-puberty","secondary":"musculoskeletal","why":"Growing pains: nocturnal leg pain, normal examination."}
+{"id":"pedsa-b28-13-2","first":"neuro-nm","second":"neurological","final":"neuro-nm","secondary":"musculoskeletal","why":"Complex regional pain syndrome: allodynia, cold limb; keep first, both defensible."}
+{"id":"pedsa-b28-13-3","first":"neuro-nm","second":"growth-puberty","final":"growth-puberty","secondary":"musculoskeletal","why":"Chondromalacia patellae with flat feet in adolescent; growth-age knee pain."}
+{"id":"pedsa-b28-13-4","first":"neuro-nm","second":"growth-puberty","final":"growth-puberty","secondary":"musculoskeletal","why":"Osgood-Schlatter: tibial tuberosity swelling after football in adolescent."}
+{"id":"pedsa-b28-13-5","first":"neuro-nm","second":"malignant-solid","final":"malignant-solid","secondary":"musculoskeletal","why":"Osteoid osteoma is a benign bone tumour with night pain; nearest tumour chapter."}
+{"id":"pedsa-b28-14-1","first":"neuro-nm","second":"growth-puberty","final":"perinatal","secondary":"musculoskeletal","why":"Developmental dysplasia of hip: breech birth, skin-fold asymmetry; newborn screening topic."}
+{"id":"pedsa-b28-14-2","first":"neuro-nm","second":"nutrition-vit","final":"nutrition-vit","secondary":"musculoskeletal","why":"Bow legs with swollen wrists: rickets from vitamin D deficiency."}
+{"id":"pedsa-b28-14-3","first":"neuro-nm","second":"normal-dev","final":"normal-dev","secondary":"musculoskeletal","why":"Flexible flat feet in toddler are a normal variant."}
+{"id":"pedsa-b28-14-4","first":"neuro-nm","second":"normal-dev","final":"normal-dev","secondary":"musculoskeletal","why":"Idiopathic toe walking with normal tone and reflexes is a normal variant."}
+{"id":"pedsa-b29-1","first":"neurological","second":"malignant-solid","final":"malignant-solid","secondary":"neurological","why":"Morning headache and vomiting from space-occupying lesion: brain tumour."}
+{"id":"pedsa-b29-2","first":"neurological","second":"genetics","final":"neuro-nm","secondary":"genetics","why":"Myotonic dystrophy, taught in motor disorders lecture; trinucleotide repeat test."}
+{"id":"pedsa-b29-4","first":"neurological","second":"infection","final":"neurological","secondary":"infection","why":"Febrile seizure in well child needs no investigation; keep first."}
+{"id":"pedsa-b29-6","first":"neurological","second":"perinatal","final":"perinatal","secondary":"neonatal-seiz","why":"Preterm intraventricular haemorrhage causing hydrocephalus and abnormal eye movements."}
+{"id":"pedsa-b29-8","first":"infection","second":"neuro-nm","final":"neuro-nm","secondary":"","why":"Guillain-Barre syndrome: ascending weakness with absent reflexes."}
+{"id":"pedsa-b29-9","first":"neurological","second":"genetics","final":"genetics","secondary":"neurological","why":"Neurofibromatosis: inherited, skin marks and axillary freckling."}
+{"id":"pedsa-b29-10","first":"neurological","second":"genetics","final":"genetics","secondary":"perinatal","why":"Neural tube defect prevented by periconceptual folic acid."}
+{"id":"pedsa-b29-13-1","first":"neurological","second":"accidents","final":"neurological","secondary":"","why":"Reflex anoxic seizure is a funny-turn differential of epilepsy; keep first."}
+{"id":"pedsa-b29-13-2","first":"neurological","second":"emergencies","final":"neurological","secondary":"","why":"Vasovagal syncope with prodrome is a funny-turn differential; keep first."}
+{"id":"pedsa-b29-13-3","first":"neurological","second":"cardiac","final":"cardiac-acq","secondary":"neurological","why":"Exertional collapse, father sudden death at 34: arrhythmia, myocardial lecture."}
+{"id":"pedsa-b29-15-2","first":"neurological","second":"neuro-cp","final":"neuro-cp","secondary":"","why":"Babinski sign with unilateral upper motor neurone signs after birth asphyxia: cerebral palsy."}
+{"id":"pedsa-b29-15-3","first":"neurological","second":"neuro-nm","final":"neuro-nm","secondary":"","why":"Romberg sign in slowly progressive ataxia with calf wasting."}
+{"id":"pedsa-b29-15-4","first":"neurological","second":"neuro-cp","final":"neuro-cp","secondary":"","why":"Fogs sign: associated movement in mild hemiplegia of prematurity."}
+{"id":"pedsa-b29-15-5","first":"neurological","second":"infection","final":"infection","secondary":"","why":"Kernig sign with photophobia and drowsiness: meningitis."}
+{"id":"pedsa-b30-1","first":"mental","second":null,"final":"puberty","secondary":"adolescent medicine","why":"Teenage motherhood incidence; no adolescent chapter, puberty lecture nearest."}
+{"id":"pedsa-b30-2","first":"mental","second":null,"final":"puberty","secondary":"adolescent medicine","why":"Contraception and confidentiality in sexually active 15-year-old; puberty nearest."}
+{"id":"pedsa-b30-3","first":"mental","second":null,"final":"accidents","secondary":"adolescent medicine","why":"Injury and poisoning is commonest cause of death at 15-19."}
+{"id":"pedsa-b30-4","first":"mental","second":null,"final":"puberty","secondary":"adolescent medicine","why":"Emergency contraception works up to 72 hours; puberty nearest."}
+{"id":"pedsa-b30-5-1","first":"mental","second":null,"final":"puberty","secondary":"adolescent medicine","why":"Pregnancy with morning vomiting and suprapubic mass in adolescent."}
+{"id":"pedsa-b30-5-2","first":"mental","second":null,"final":"mental","secondary":"adolescent medicine","why":"Depression with hopelessness and anhedonia in adolescent."}
+{"id":"pedsa-b30-5-3","first":"mental","second":null,"final":"malignant-solid","secondary":"adolescent medicine","why":"Morning headache, vomiting, sixth nerve palsy: posterior fossa brain tumour."}
+{"id":"pedsa-b30-5-4","first":"mental","second":null,"final":"mental","secondary":"adolescent medicine","why":"Recurrent non-specific headaches in well adolescent: somatic symptoms."}
+{"id":"pedsa-b30-5-5","first":"mental","second":null,"final":"mental","secondary":"adolescent medicine","why":"Risk-taking behaviour with suspected drug and alcohol use."}
+{"id":"pedsa-b31-1","first":"perinatal","second":null,"final":"perinatal","secondary":"global child health","why":"Prematurity is leading cause of under-five death; keep first."}
+{"id":"pedsa-b31-2","first":"perinatal","second":null,"final":"perinatal","secondary":"global child health","why":"Maternal education predicts neonatal mortality; keep first."}
+{"id":"pedsa-b31-3","first":"perinatal","second":null,"final":"accidents","secondary":"global child health","why":"Trauma is the cause of childhood death set to rise."}

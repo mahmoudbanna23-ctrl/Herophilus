@@ -1,0 +1,9 @@
+incoming 165  from sa-p1.array.js
+corpus   188  from sa-p2.array.js
+
+D near stem                   pedsa1-9-2        pedsa2-6-18         dice 0.73
+D near stem                   pedsa1-9-2        pedsa2-7-1          dice 0.73
+G within-batch                pedsa1-3-5        pedsa1-10-2         dice 0.76
+G within-batch                pedsa1-3-14       pedsa1-m-3          dice 0.76
+
+4 candidates. NONE is a decision. Read both pages.

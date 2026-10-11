@@ -3,7 +3,7 @@
 const fs=require('fs'), path=require('path'), vm=require('vm');
 const ROOT=path.resolve(__dirname,'..','..');
 const APP=path.join(ROOT,'app');
-const KNOWN_BANKS=new Set(['endpoint','house','gradegain']);
+const KNOWN_BANKS=new Set(['endpoint','house','gradegain','selfassess']);
 function dataScripts(root){
  const html=fs.readFileSync(path.join(root,'index.html'),'utf8'), out=[];
  for(const m of html.matchAll(/<script\s+src=["']data\/([^"']+)["']/g)) out.push(m[1]);

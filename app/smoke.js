@@ -3,10 +3,10 @@
    the bank-badge check below exercises the app's own bankPills()/BANKS
    colour lookup instead of reimplementing it here. */
 (function(){
-  var out=document.getElementById('results'), EXPECTED_TOTAL=6956, pass=0, fail=0;
+  var out=document.getElementById('results'), EXPECTED_TOTAL=7477, pass=0, fail=0;
   function test(name,ok,detail){var li=document.createElement('li');li.textContent=(ok?'PASS ':'FAIL ')+name+(detail?' — '+detail:'');out.appendChild(li);if(ok)pass++;else fail++;}
   function holes(a){for(var i=0;i<a.length;i++)if(!(i in a))return true;return false}
-  var arrays=[Q_ENT,Q_PEDS,Q_PEDS_EP,Q_PEDS_EP2,Q_OPHTHO,Q_OPHTHO_EP,Q_OPHTHO_EP2,Q_NEURO,C_ENT,C_PEDS,C_OPHTHO,C_NEURO];
+  var arrays=[Q_ENT,Q_PEDS,Q_PEDS_EP,Q_PEDS_EP2,Q_PEDS_SA,Q_OPHTHO,Q_OPHTHO_EP,Q_OPHTHO_EP2,Q_NEURO,C_ENT,C_PEDS,C_OPHTHO,C_NEURO];
   var all=[].concat.apply([],arrays);
   test('fonts.js registered a stylesheet under file://',document.styleSheets.length>0);
   test('boot globals exist',typeof MODULES!=='undefined'&&typeof Q_ALL!=='undefined'&&typeof THEORY!=='undefined');
@@ -19,7 +19,9 @@
      actual pill through the app's own bankPills(), checking the hex it
      produces matches BANKS — not just that the bank has questions. */
   /* Literal, NOT read from BANKS: a wrong hex in BANKS must fail here. */
-  var BANK_HEX={endpoint:"#9a6b1f",house:"#2f6b8f",gradegain:"#8f3f5c"};
+  var BANK_HEX={endpoint:"#9a6b1f",house:"#2f6b8f",gradegain:"#8f3f5c",selfassess:"#5d4b8c"};
+  var SA=BANKS.find(function(x){return x.id==='selfassess'});
+  test('selfassess bank registered with its colour',!!SA&&SA.hex==='#5d4b8c'&&SA.name==='Self assessment');
   Object.keys(BANK_HEX).forEach(function(b){
     var q=all.find(function(x){return banksOf(x).indexOf(b)>=0});
     var html=q?bankPills(q):'';

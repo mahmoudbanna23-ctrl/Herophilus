@@ -1,0 +1,5 @@
+AGENTS.md loaded — Herophilus
+
+Wrote [small-print.md](D:\claude os\Medical school\Herophilus\content\peds\qb-pages\sa\_work\check6\small-print.md).
+
+FAIL: 351 fragments visually checked across 89 rendered pages; 7 mismatches recorded. Key issues: option-order drift in 6.11 and 7.10, plus contaminated 18.7 stems. No listed fragments were omitted.

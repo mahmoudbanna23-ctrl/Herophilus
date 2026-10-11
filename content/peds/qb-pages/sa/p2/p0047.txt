@@ -1,0 +1,36 @@
+7.8 · CLINICAL SCENARIO
+
+A 7-month-old has a fever of 39 °C with vomiting and no focus on examination. What is the single most
+important investigation?
+
+ A. Chest X-ray
+ B. Urine sample for microscopy and culture
+ C. Full blood count only
+ D. Abdominal ultrasound
+ E. Lumbar puncture in all cases
+
+Answer: B.
+
+Test the urine of any infant with an unexplained fever above 38 °C. The commonest error in childhood
+UTI is failing to establish the diagnosis properly in the first place — and with it the chance to prevent
+renal damage.
+
+
+
+
+7.9 · SINGLE BEST ANSWER
+
+Which urine result is diagnostic of infection regardless of colony count?
+
+ A. Any growth from a suprapubic aspirate
+ B. 10³ CFU/mL from a bag sample
+ C. Leucocytes on microscopy
+ D. Nitrites alone on a bag sample
+ E. 10⁴ CFU/mL from a clean catch
+
+Answer: A.
+
+For a clean-catch or midstream sample the threshold is >10⁵ CFU/mL of a single organism (90%
+probability, 95% if repeated). Urinary white cells are not reliable — they lyse on storage and occur in
+other illness.
+

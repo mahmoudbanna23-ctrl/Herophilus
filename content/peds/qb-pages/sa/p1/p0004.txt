@@ -1,0 +1,34 @@
+1.3 · CALCULATION
+
+A girl's father is 180 cm and her mother 164 cm. What is her mid-parental height?
+
+ A. 158 cm
+ B. 165 cm
+ C. 172 cm
+ D. 179 cm
+ E. 186 cm
+
+Answer: B.
+
+Mean = (180+164)/2 = 172 cm; she is a girl, so subtract 7 → 165 cm. The distractors are the unadjusted mean
+(172) and adding instead of subtracting (179).
+
+
+
+
+1.4 · SINGLE BEST ANSWER
+
+A baby born at 30 weeks' gestation is now 18 weeks old. Her weight plots below the 0.4th centile at
+actual age. What should be done before concluding she has faltering growth?
+
+ A. Repeat the measurement on different scales
+ B. Plot at corrected age by subtracting 10 weeks
+ C. Measure the parents' heights
+ D. Check thyroid function
+ E. Refer for a skeletal survey
+
+Answer: B.
+
+Correction for gestational age is used until 2 years. Corrected, she is likely between the 2nd and 9th centile
+— entirely different clinical picture.
+

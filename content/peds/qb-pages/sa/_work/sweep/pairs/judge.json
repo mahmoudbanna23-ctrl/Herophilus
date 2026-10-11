@@ -1,0 +1,118 @@
+{
+ "pedsa-b23-1|pedep2-hem-61": {
+  "cls": "SAME",
+  "why": "Read: same blood-count case, keyed Hereditary spherocytosis; live printing shows Hb 6mg/dl and counts as 8000/ml, 255,000/ml where book has Hb 60 g/L, 8 x10^9/L (units differ, live printing looks faulty)"
+ },
+ "pedsa-b17-13-2|pedep2-res-56": {
+  "cls": "SAME",
+  "why": "Read: same bronchiolitis case (RR 60, T 37.4); res-56 and res-14 are both live twins of this one book item, key Bronchiolitis in each"
+ },
+ "pedsa-b4-9-1|pedep2-dp-7": {
+  "cls": "SAME",
+  "why": "Read: same CT/MRI developmental-delay case; live twin has 4 options, keyed option CT or MRI scan of the brain survives"
+ },
+ "pedsa-b4-9-1|pedep2-neu-40": {
+  "cls": "SAME",
+  "why": "Read: same CT/MRI developmental-delay case; live twin has 5 options, keyed option survives"
+ },
+ "pedsa-b12-5|pedep-gp-8": {
+  "cls": "DIFF",
+  "why": "Read: different scenario (book Tom, adopted, height just below 0.4th centile; live boy brought by grandmother, parents' heights described, 3rd centile); only the keyed answer Familial short stature is shared; true twin is pedep-gp-25"
+ },
+ "pedsa-b15-3|pedep-inf-9": {
+  "cls": "DIFF",
+  "why": "Read: different scenario - book Henry, 4 years, 3-day fever; live 1-year-old, CSF 1200 neutrophils/mm3; same keyed diagnosis only (true twin pedep-inf-55)"
+ },
+ "pedsa-b26-9|pedep2-mf3-17": {
+  "cls": "DIFF",
+  "why": "Read: different scenario - book 2-week-old male, vomiting/diarrhoea, Na 112; live 7-day newborn, abnormal genitalia, Na 124, K 6; same keyed diagnosis only (true twin pedep2-end-6)"
+ },
+ "pedsa-b6-12|pedep-emg-56": {
+  "cls": "UNSURE",
+  "why": "asked differently: prevents vs decline"
+ },
+ "pedsa-b7-8|pedep-emg-33": {
+  "cls": "SAME",
+  "why": "Read: book stem is a back-reference to Q7.7 (Roberto, burn); live prints the whole burn scenario plus the same follow-up question; keyed Commence intravenous 0.9% saline in both; live is self-contained (fuller)"
+ },
+ "pedsa-b19-4|pedhd-renal-4": {
+  "cls": "SAME",
+  "why": "Read: book stem is only a back-reference to Q19.3; live prints the full recurrent-UTI case; keyed Proteus sp. in both"
+ },
+ "pedsa-b19-7|pedhd-renal-7": {
+  "cls": "SAME",
+  "why": "Read: book stem is a back-reference plus hint; live prints the full nephrotic case; keyed Oral prednisolone in both"
+ },
+ "pedsa-b15-2|pedhd-inf-2": {
+  "cls": "SAME",
+  "why": "Read: book stem is a back-reference; live prints the full case; keyed PCR in both"
+ },
+ "pedsa-b9-9|pedhd-gen-9": {
+  "cls": "SAME",
+  "why": "Read: book stem is a back-reference to the Fig 9 case; live prints the full case; keyed 1 in 4 in both"
+ },
+ "pedsa-b10-7|pedep-inf-43": {
+  "cls": "UNSURE",
+  "why": "key CMV vs Congenital infection"
+ },
+ "pedsa-b10-7|pedep-mf3-48": {
+  "cls": "UNSURE",
+  "why": "key CMV vs Congenital infection"
+ },
+ "pedsa-b10-7|pedep-neo-30": {
+  "cls": "UNSURE",
+  "why": "key CMV vs Congenital infection"
+ },
+ "pedsa-b11-1|pedep-mf2-78": {
+  "cls": "UNSURE",
+  "why": "same stem, keyed answers differ"
+ },
+ "pedsa-b15-10-2|pedep-inf-50": {
+  "cls": "UNSURE",
+  "why": "live scenario differs, key unverified"
+ },
+ "pedsa-b10-12|pedep-mf1-32": {
+  "cls": "UNSURE",
+  "why": "same topic, keyed text differs"
+ },
+ "pedsa-b22-6|pedep2-mal-6": {
+  "cls": "UNSURE",
+  "why": "live key worded differently"
+ },
+ "pedsa-b22-1|pedep2-mf1-59": {
+  "cls": "UNSURE",
+  "why": "commonest cancer vs commonest solid"
+ },
+ "pedsa-b6-9|pedep-emg-9": {
+  "cls": "UNSURE",
+  "why": "live key differs, stems alike"
+ },
+ "pedsa-b18-8-3|pedep2-car-29": {
+  "cls": "UNSURE",
+  "why": "keyed text differs, stems alike"
+ },
+ "pedsa-b2-8-1|pedep2-res-28": {
+  "cls": "UNSURE",
+  "why": "two book items, one live twin"
+ },
+ "pedsa-b2-8-2|pedep2-res-28": {
+  "cls": "UNSURE",
+  "why": "two book items, one live twin"
+ },
+ "pedsa-b22-10-3|pedep2-mal-15": {
+  "cls": "UNSURE",
+  "why": "live stem too short"
+ },
+ "pedsa-b26-12-4|pedep2-end-12": {
+  "cls": "UNSURE",
+  "why": "keyed text differs, scenario alike"
+ },
+ "pedsa-b10-7|pedep-per-7": {
+  "cls": "SAME",
+  "why": "Read: same newborn hepatosplenomegaly/petechiae case, keyed Cytomegalovirus (live adds (CMV)); live stem shortened"
+ },
+ "pedsa-b19-9|pedep2-ren-9": {
+  "cls": "SAME",
+  "why": "Read: same Jane 5-year-old bed-wetting case, keyed Urinary dipstick vs Urine dipstick (wording only)"
+ }
+}

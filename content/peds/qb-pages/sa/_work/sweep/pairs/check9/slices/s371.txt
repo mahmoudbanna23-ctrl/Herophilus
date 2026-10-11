@@ -1,0 +1,99 @@
+=== n 371
+BOOK pedsa-b23-8-3
+  STEM: Below is a list (A–K) of treatment options. For each of the following patients with haematological problems select the appropriate treatment. Each option may be used once, more than once, or not at all. George is a 3-month-old boy. He presents to the paediatric ward with a swollen leg. He had an immunization yesterday and there is now a large swelling at the injection site. Haematological investigation reveals: • Hb (haemoglobin): 102 g/L • WBC (white blood cell count): 9.0 × 10⁹ /L • platelet count: 312 × 10⁹ /L • prothrombin time: 13 seconds (control: 12–15 s) • activated partial thromboplastin time: 100 seconds (control: 25–35 s) There is currently no bleeding and he is haemodynamically stable. His two older brothers both suffer from a bleeding disorder but both his parents and his older sister do not.
+  OPTIONS: Blood transfusion | Chemotherapy | Desmopressin | Folic acid supplementation | Intravenous antibiotics | Iron supplementation | No action required at present | Oral antibiotics | Recombinant factor VIII | Vitamin D | Vitamin K
+  KEY: Recombinant factor VIII
+OTHER pedep2-hem-34
+  STEM: George is a 3-month-old boy. He presents to the paediatric ward with a swollen leg. He had an immunization yesterday and there is now a large swelling at the injection site. Hematological investigation reveals: Hb: 102 g/L WBC: 9.0 x 10^9/L Platelets: 312 x 10^9/L Prothrombin time: 13 seconds (control: 12–15 s) APTT: 100 seconds (control: 25–35 s) There is currently no bleeding and he is hemodynamically stable. His two older brothers both suffer from a bleeding disorder, but both his parents and older sister do not. Which of the following is the best treatment option?
+  OPTIONS: Vitamin K | Blood transfusion | Folic acid supplementation | Recombinant factor VIII
+  KEY: Recombinant factor VIII
+
+=== n 372
+BOOK pedsa-b23-8-3
+  STEM: Below is a list (A–K) of treatment options. For each of the following patients with haematological problems select the appropriate treatment. Each option may be used once, more than once, or not at all. George is a 3-month-old boy. He presents to the paediatric ward with a swollen leg. He had an immunization yesterday and there is now a large swelling at the injection site. Haematological investigation reveals: • Hb (haemoglobin): 102 g/L • WBC (white blood cell count): 9.0 × 10⁹ /L • platelet count: 312 × 10⁹ /L • prothrombin time: 13 seconds (control: 12–15 s) • activated partial thromboplastin time: 100 seconds (control: 25–35 s) There is currently no bleeding and he is haemodynamically stable. His two older brothers both suffer from a bleeding disorder but both his parents and his older sister do not.
+  OPTIONS: Blood transfusion | Chemotherapy | Desmopressin | Folic acid supplementation | Intravenous antibiotics | Iron supplementation | No action required at present | Oral antibiotics | Recombinant factor VIII | Vitamin D | Vitamin K
+  KEY: Recombinant factor VIII
+OTHER pedhd-haem-13
+  STEM: George is a 3-month-old boy. He presents to the paediatric ward with a swollen leg. He had an immunization yesterday and there is now a large swelling at the injection site. Haematological investigation reveals: • Hb (haemoglobin): 102 g/L • WBC (white blood cell count): 9.0 × 10⁹/L • platelet count: 312 × 10⁹/L • prothrombin time: 13 seconds (control: 12–15 s) • activated partial thromboplastin time: 100 seconds (control: 25–35 s) There is currently no bleeding and he is haemodynamically stable. His two older brothers both suffer from a bleeding disorder but both his parents and his older sister do not. Which of the following is the best treatment option for this patient?
+  OPTIONS: Vitamin K | Blood transfusion | Folic acid supplementation | Recombinant factor IIIV | No action required at present
+  KEY: Recombinant factor IIIV
+
+=== n 373
+BOOK pedsa-b23-8-4
+  STEM: Below is a list (A–K) of treatment options. For each of the following patients with haematological problems select the appropriate treatment. Each option may be used once, more than once, or not at all. Lizzie is a 9-year-old girl who presents to the paediatric clinic. She is known to have hereditary spherocytosis. Her mother is concerned that she is very pale. Three weeks ago Lizzie had an upper respiratory tract infection. Her mother reports that she had a fever and was very flushed with bright red cheeks. She is otherwise well and has fully recovered from her infection. Her mother informs you that she has a very good diet. A full blood count reveals a Hb 88 g/L. A blood film reveals a normochromic normocytic anaemia with no blast cells.
+  OPTIONS: Blood transfusion | Chemotherapy | Desmopressin | Folic acid supplementation | Intravenous antibiotics | Iron supplementation | No action required at present | Oral antibiotics | Recombinant factor VIII | Vitamin D | Vitamin K
+  KEY: No action required at present
+OTHER pedep2-hem-35
+  STEM: Lizzie is a 9-year-old girl who presents to the paediatric clinic. She is known to have hereditary spherocytosis. Her mother is concerned that she is very pale. Three weeks ago, Lizzie had an upper respiratory tract infection. Her mother reports that she had a fever and was very flushed with bright red cheeks. She is otherwise well and has fully recovered from her infection. Her mother informs you that she has a very good diet. A complete blood count reveals an Hb of 88 g/L. A blood film reveals a normochromic normocytic anemia with no blast cells. Which of the following is the best treatment option?
+  OPTIONS: Vitamin K | Blood transfusion | Folic acid supplementation | Recombinant factor VIII | No action required at present
+  KEY: No action required at present
+
+=== n 374
+BOOK pedsa-b23-8-4
+  STEM: Below is a list (A–K) of treatment options. For each of the following patients with haematological problems select the appropriate treatment. Each option may be used once, more than once, or not at all. Lizzie is a 9-year-old girl who presents to the paediatric clinic. She is known to have hereditary spherocytosis. Her mother is concerned that she is very pale. Three weeks ago Lizzie had an upper respiratory tract infection. Her mother reports that she had a fever and was very flushed with bright red cheeks. She is otherwise well and has fully recovered from her infection. Her mother informs you that she has a very good diet. A full blood count reveals a Hb 88 g/L. A blood film reveals a normochromic normocytic anaemia with no blast cells.
+  OPTIONS: Blood transfusion | Chemotherapy | Desmopressin | Folic acid supplementation | Intravenous antibiotics | Iron supplementation | No action required at present | Oral antibiotics | Recombinant factor VIII | Vitamin D | Vitamin K
+  KEY: No action required at present
+OTHER pedhd-haem-14
+  STEM: Lizzie is a 9-year-old girl who presents to the paediatric clinic. She is known to have hereditary spherocytosis. Her mother is concerned that she is very pale. Three weeks ago Lizzie had an upper respiratory tract infection. Her mother reports that she had a fever and was very flushed with bright red cheeks. She is otherwise well and has fully recovered from her infection. Her mother informs you that she has a very good diet. A full blood count reveals a Hb 88 g/L. A blood film reveals a normochromic normocytic anaemia with no blast cells. Which of the following is the best treatment option for this patient?
+  OPTIONS: Vitamin K | Blood transfusion | Folic acid supplementation | Recombinant factor IIIV | No action required at present
+  KEY: No action required at present
+
+=== n 375
+BOOK pedsa-b23-8-5
+  STEM: Below is a list (A–K) of treatment options. For each of the following patients with haematological problems select the appropriate treatment. Each option may be used once, more than once, or not at all. Angie is 6 weeks old. She was jaundiced at 24 hours of age, when her haemoglobin (Hb) was checked and was 150 g/L. At 2 months of age she presents with an upper respiratory tract infection. The full blood count is repeated and she has Hb 102 g/L.
+  OPTIONS: Blood transfusion | Chemotherapy | Desmopressin | Folic acid supplementation | Intravenous antibiotics | Iron supplementation | No action required at present | Oral antibiotics | Recombinant factor VIII | Vitamin D | Vitamin K
+  KEY: No action required at present
+OTHER pedep2-hem-36
+  STEM: Angie is 6 weeks old. She was jaundiced at 24 hours of age when her hemoglobin (Hb) was checked and found to be 150 g/L. At 2 months of age, she presents with an upper respiratory tract infection. The full blood count is repeated, and she has an Hb of 102 g/L. Which of the following is the best treatment option for this patient?
+  OPTIONS: Vitamin K | Blood transfusion | Folic acid supplementation | Recombinant factor VIII | No action required at present
+  KEY: No action required at present
+
+=== n 376
+BOOK pedsa-b23-8-5
+  STEM: Below is a list (A–K) of treatment options. For each of the following patients with haematological problems select the appropriate treatment. Each option may be used once, more than once, or not at all. Angie is 6 weeks old. She was jaundiced at 24 hours of age, when her haemoglobin (Hb) was checked and was 150 g/L. At 2 months of age she presents with an upper respiratory tract infection. The full blood count is repeated and she has Hb 102 g/L.
+  OPTIONS: Blood transfusion | Chemotherapy | Desmopressin | Folic acid supplementation | Intravenous antibiotics | Iron supplementation | No action required at present | Oral antibiotics | Recombinant factor VIII | Vitamin D | Vitamin K
+  KEY: No action required at present
+OTHER pedhd-haem-15
+  STEM: Angie is 6 weeks old. She was jaundiced at 24 hours of age, when her haemoglobin (Hb) was checked and was 150 g/L. At 2 months of age she presents with an upper respiratory tract infection. The full blood count is repeated and she has Hb 102 g/L. Which of the following is the best treatment option for this patient?
+  OPTIONS: Vitamin K | Blood transfusion | Folic acid supplementation | Recombinant factor IIIV | No action required at present
+  KEY: No action required at present
+
+=== n 377
+BOOK pedsa-b26-1
+  STEM: Ellie, a 7-year-old girl, is newly diagnosed with diabetes mellitus. She has been drinking lots of fluid and has had to pass urine frequently. She has a markedly raised blood glucose (20 mmol/L) and heavy glycosuria. Which of the following is most likely to be true about her diabetes? Select one answer only.
+  OPTIONS: Her diagnosis should be confirmed with an oral glucose tolerance test | She can be managed with oral hypoglycaemic agents and dietary modification | She will have gained weight in the last few weeks | The incidence in the UK is falling | There is autoimmune pancreatic β-cell damage
+  KEY: There is autoimmune pancreatic β-cell damage
+OTHER pedep2-end-1
+  STEM: Ellie, a 7-year-old girl, is newly diagnosed with diabetes mellitus. She has been drinking lots of fluids and has had to pass urine frequently. She has a markedly raised blood glucose (20 mmol/L) and heavy glycosuria. Which of the following is most likely to be true about her diabetes?
+  OPTIONS: Her diagnosis should be confirmed with an oral glucose tolerance test | She can be managed with oral hypoglycaemic agents and dietary modification | She will have gained weight in the last few weeks | The incidence in the UK is falling | There is autoimmune pancreatic β-cell damage
+  KEY: There is autoimmune pancreatic β-cell damage
+
+=== n 378
+BOOK pedsa-b26-1
+  STEM: Ellie, a 7-year-old girl, is newly diagnosed with diabetes mellitus. She has been drinking lots of fluid and has had to pass urine frequently. She has a markedly raised blood glucose (20 mmol/L) and heavy glycosuria. Which of the following is most likely to be true about her diabetes? Select one answer only.
+  OPTIONS: Her diagnosis should be confirmed with an oral glucose tolerance test | She can be managed with oral hypoglycaemic agents and dietary modification | She will have gained weight in the last few weeks | The incidence in the UK is falling | There is autoimmune pancreatic β-cell damage
+  KEY: There is autoimmune pancreatic β-cell damage
+OTHER pedhd-endo-1
+  STEM: Ellie, a 7-year-old girl, is newly diagnosed with diabetes mellitus. She has been drinking lots of fluid and has had to pass urine frequently. She has a markedly raised blood glucose (20 mmol/L) and heavy glycosuria. Which of the following is most likely to be true about her diabetes?
+  OPTIONS: Her diagnosis should be confirmed with an oral glucose tolerance test | She can be managed with oral hypoglycaemic agents and dietary modification | She will have gained weight in the last few weeks | The incidence in the UK is falling | There is autoimmune pancreatic β-cell damage
+  KEY: There is autoimmune pancreatic β-cell damage
+
+=== n 379
+BOOK pedsa-b26-10
+  STEM: A newborn baby has recently been delivered. The midwife requests an urgent paediatric review of the baby because she cannot tell if the baby is male or female (Fig. 26.3). The parents are asking what sex their baby is. What should you tell them? Select one answer only.
+  OPTIONS: You are unable to tell if the baby is male or female, and tell the parents it is likely to be a mixture of both sexes, i.e. ovotesticular disorder of sex development (DSD – or hermaphroditism) | You are unable to tell right now and a detailed assessment of the baby including scans and blood tests will be needed before a specialist can tell them | You are unable to tell right now but will be able to assign a sex as soon as you get the baby’s chromosomes back | You think it is likely to be a girl so tell them the baby should be named as a female on the birth certificate pending the results | You think it is likely to be a boy so tell them the child should be named as a male on the birth certificate pending the results
+  KEY: You are unable to tell right now and a detailed assessment of the baby including scans and blood tests will be needed before a specialist can tell them
+OTHER pedep2-end-7
+  STEM: A newborn baby has recently been delivered. The midwife requests an urgent paediatric review because she cannot determine if the baby is male or female. The parents are asking what sex their baby is. What should you tell them?
+  OPTIONS: You are unable to tell if the baby is male or female and tell the parents it is likely to be a mixture of both sexes (i.e., ovotesticular disorder of sex development). | You are unable to tell right now, and a detailed assessment, including scans and blood tests, will be needed before a specialist can tell them. | You are unable to tell right now, but you will be able to assign a sex as soon as the baby’s chromosomes are available. | You think it is likely to be a girl, so the baby should be named female on the birth certificate pending results. | You think it is likely to be a boy, so the baby should be named male on the birth certificate pending results.
+  KEY: You are unable to tell right now, and a detailed assessment, including scans and blood tests, will be needed before a specialist can tell them.
+
+=== n 380
+BOOK pedsa-b26-10
+  STEM: A newborn baby has recently been delivered. The midwife requests an urgent paediatric review of the baby because she cannot tell if the baby is male or female (Fig. 26.3). The parents are asking what sex their baby is. What should you tell them? Select one answer only.
+  OPTIONS: You are unable to tell if the baby is male or female, and tell the parents it is likely to be a mixture of both sexes, i.e. ovotesticular disorder of sex development (DSD – or hermaphroditism) | You are unable to tell right now and a detailed assessment of the baby including scans and blood tests will be needed before a specialist can tell them | You are unable to tell right now but will be able to assign a sex as soon as you get the baby’s chromosomes back | You think it is likely to be a girl so tell them the baby should be named as a female on the birth certificate pending the results | You think it is likely to be a boy so tell them the child should be named as a male on the birth certificate pending the results
+  KEY: You are unable to tell right now and a detailed assessment of the baby including scans and blood tests will be needed before a specialist can tell them
+OTHER pedhd-endo-7
+  STEM: A newborn baby has recently been delivered. The midwife requests an urgent paediatric review of the baby because she cannot tell if the baby is male or female (as shown in the opposite figure). The parents are asking what sex their baby is. What should you tell them?
+  OPTIONS: You are unable to tell if the baby is male or female, and tell the parents it is likely to be a mixture of both sexes, i.e. ovotesticular disorder of sex development (DSD – or hermaphroditism) | You are unable to tell right now and a detailed assessment of the baby including scans and blood tests will be needed before a specialist can tell them | You are unable to tell right now but will be able to assign a sex as soon as you get the baby's chromosomes back | You think it is likely to be a girl so tell them the baby should be named as a female on the birth certificate pending the results | You think it is likely to be a boy so tell them the child should be named as a male on the birth certificate pending the results
+  KEY: You are unable to tell right now and a detailed assessment of the baby including scans and blood tests will be needed before a specialist can tell them

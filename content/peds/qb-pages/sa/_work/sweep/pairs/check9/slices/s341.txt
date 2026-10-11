@@ -1,0 +1,99 @@
+=== n 341
+BOOK pedsa-b22-9-1
+  STEM: Below is a list (A–K) of possible diagnoses. For each of the clinical scenarios, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Natalia, a 4-year-old girl, presents to her general practitioner. This is her second bad episode of tonsillitis in the same month. She is tired and looks pale and has a number of bruises on her lower legs. On examination she has pallor, scattered purpuric skin lesions and hepatosplenomegaly.
+  OPTIONS: Acute lymphoblastic leukaemia | Bone tumour | Brain tumour | Burkitt lymphoma | Henoch–Schönlein purpura | Hodgkin disease | Immune thrombocytopenia purpura | Langerhans cell histiocytosis | Neuroblastoma | Retinoblastoma | Wilms tumour (nephroblastoma)
+  KEY: Acute lymphoblastic leukaemia
+OTHER pedhd-mal-9
+  STEM: Natalia, a 4-year-old girl, presents to her general practitioner. This is her second bad episode of tonsillitis in the same month. She is tired and looks pale and has a number of bruises on her lower legs. On examination she has pallor, scattered purpuric skin lesions and hepatosplenomegaly. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Neuroblastoma | Brain tumour | Wilms tumour (nephroblastoma) | Acute lymphoblastic leukaemia | Hodgkin disease
+  KEY: Acute lymphoblastic leukaemia
+
+=== n 342
+BOOK pedsa-b22-9-2
+  STEM: Below is a list (A–K) of possible diagnoses. For each of the clinical scenarios, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Angel, a 2-year-old boy, presents to his general practitioner with an abdominal mass noticed by his mother on dressing him. He has no other medical problems and is not on any medication. His stool pattern is regular. He is otherwise relatively well in himself. You examine his abdomen and feel a mass in his left abdomen, which does not cross the midline. There is no hepatosplenomegaly.
+  OPTIONS: Acute lymphoblastic leukaemia | Bone tumour | Brain tumour | Burkitt lymphoma | Henoch–Schönlein purpura | Hodgkin disease | Immune thrombocytopenia purpura | Langerhans cell histiocytosis | Neuroblastoma | Retinoblastoma | Wilms tumour (nephroblastoma)
+  KEY: Wilms tumour (nephroblastoma)
+OTHER pedhd-mal-10
+  STEM: Angel, a 2-year-old boy, presents to his general practitioner with an abdominal mass noticed by his mother on dressing him. He has no other medical problems and is not on any medication. His stool pattern is regular. He is otherwise relatively well in himself. You examine his abdomen and feel a mass in his left abdomen, which does not cross the midline. There is no hepatosplenomegaly. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Neuroblastoma | Brain tumour | Wilms tumour (nephroblastoma) | Acute lymphoblastic leukaemia | Hodgkin disease
+  KEY: Wilms tumour (nephroblastoma)
+
+=== n 343
+BOOK pedsa-b22-9-3
+  STEM: Below is a list (A–K) of possible diagnoses. For each of the clinical scenarios, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Kay, a 3-year-old girl, presents to the Paediatric Assessment Unit as her mother is worried she is pale, tired and ‘not quite right’. She has also lost 2 kg of weight in the last month. On examination the child looks unwell, has pallor and a large firm, irregular abdominal mass in the centre of her abdomen.
+  OPTIONS: Acute lymphoblastic leukaemia | Bone tumour | Brain tumour | Burkitt lymphoma | Henoch–Schönlein purpura | Hodgkin disease | Immune thrombocytopenia purpura | Langerhans cell histiocytosis | Neuroblastoma | Retinoblastoma | Wilms tumour (nephroblastoma)
+  KEY: Neuroblastoma
+OTHER pedhd-mal-11
+  STEM: Kay, a 3-year-old girl, presents to the Paediatric Assessment Unit as her mother is worried she is pale, tired and ‘not quite right’. She has also lost 2 kg of weight in the last month. On examination the child looks unwell, has pallor and a large firm, irregular abdominal mass in the centre of her abdomen. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Neuroblastoma | Brain tumour | Wilms tumour (nephroblastoma) | Acute lymphoblastic leukaemia | Hodgkin disease
+  KEY: Neuroblastoma
+
+=== n 344
+BOOK pedsa-b22-9-4
+  STEM: Below is a list (A–K) of possible diagnoses. For each of the clinical scenarios, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Douglas, a 7-year-old boy, visits his general practitioner with his mother. He has been getting headaches over the last 3–5 weeks which have increased in intensity. These have woken him from sleep. His mother reports that he has recently begun vomiting in the morning. His teachers have also commented his school work is getting worse. His mother thinks this may be because his sight has deteriorated as he keeps complaining of double vision.
+  OPTIONS: Acute lymphoblastic leukaemia | Bone tumour | Brain tumour | Burkitt lymphoma | Henoch–Schönlein purpura | Hodgkin disease | Immune thrombocytopenia purpura | Langerhans cell histiocytosis | Neuroblastoma | Retinoblastoma | Wilms tumour (nephroblastoma)
+  KEY: Brain tumour
+OTHER pedhd-mal-12
+  STEM: Douglas, a 7-year-old boy, visits his general practitioner with his mother. He has been getting headaches over the last 3–5 weeks which have increased in intensity. These have woken him from sleep. His mother reports that he has recently begun vomiting in the morning. His teachers have also commented his school work is getting worse. His mother thinks this may be because his sight has deteriorated as he keeps complaining of double vision. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Neuroblastoma | Brain tumour | Wilms tumour (nephroblastoma) | Acute lymphoblastic leukaemia | Hodgkin disease
+  KEY: Brain tumour
+
+=== n 345
+BOOK pedsa-b23-1
+  STEM: Tia is a 4-year-old Caucasian girl. She is referred to the paediatric ward by her general practitioner as her mother noted that she had a yellow tinge to her eyes since developing an upper respiratory tract infection. She is well in herself and has no history of weight loss. There is no family history of any blood disorders. On examination she was pale and her spleen was enlarged 3 cm below the costal margin. You perform a full blood count, which reveals: • Hb (haemoglobin): 60 g/L • WBC (white blood cell count): 8 × 10⁹ /L • platelet count: 255 × 10⁹ /L • blood film: small red cells • MCV (mean cell volume): 60 fL (normal: 75–87 fL) What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute lymphoblastic leukaemia | Glucose-6-phosphate dehydrogenase (G6PD) deficiency | Hereditary spherocytosis | Sickle cell disease | Thalassaemia
+  KEY: Hereditary spherocytosis
+OTHER pedep2-hem-22
+  STEM: Tia is a 4-year-old Caucasian girl referred to the paediatric ward by her general practitioner because her mother noticed a yellow tinge to her eyes after an upper respiratory tract infection. She is otherwise well and has no history of weight loss. There is no family history of blood disorders. On examination, she is pale, and her spleen is enlarged 3 cm below the costal margin. Full blood count results are: Hb (hemoglobin): 60 g/L WBC (white blood cell count): 8 x 10^9/L Platelet count: 255 x 10^9/L Blood film: small red cells MCV (mean cell volume): 60 fL (normal: 75–87 fL) What is the most likely diagnosis?
+  OPTIONS: Acute lymphoblastic leukaemia | Glucose-6-phosphate dehydrogenase (G6PD) deficiency | Hereditary spherocytosis | Sickle cell disease | Thalassaemia
+  KEY: Hereditary spherocytosis
+
+=== n 346
+BOOK pedsa-b23-1
+  STEM: Tia is a 4-year-old Caucasian girl. She is referred to the paediatric ward by her general practitioner as her mother noted that she had a yellow tinge to her eyes since developing an upper respiratory tract infection. She is well in herself and has no history of weight loss. There is no family history of any blood disorders. On examination she was pale and her spleen was enlarged 3 cm below the costal margin. You perform a full blood count, which reveals: • Hb (haemoglobin): 60 g/L • WBC (white blood cell count): 8 × 10⁹ /L • platelet count: 255 × 10⁹ /L • blood film: small red cells • MCV (mean cell volume): 60 fL (normal: 75–87 fL) What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute lymphoblastic leukaemia | Glucose-6-phosphate dehydrogenase (G6PD) deficiency | Hereditary spherocytosis | Sickle cell disease | Thalassaemia
+  KEY: Hereditary spherocytosis
+OTHER pedep2-hem-61
+  STEM: Tia is a 4-year-old girl. She is referred to the pediatric ward by her general practitioner as her mother noted that she had a yellow tinge to her eyes since developing an upper respiratory tract infection. She is well in herself and has no history of weight loss. There is no family history of any blood disorders. On examination she was pale and her spleen was enlarged 3 cm below the costal margin. You perform a full blood count, which reveals: Hb (6mg/dl) WBC (white blood cell count): 8000/ml Platelet count: 255,000/ml Blood film: small red cells MCV (mean cell volume): 60 fl (but normal: 75–87 fl) What is the most likely diagnosis?
+  OPTIONS: Acute lymphoblastic leukemia | Glucose-6-phosphate dehydrogenase (G6PD) deficiency | Hereditary spherocytosis | Thalassemia | Thalassemia
+  KEY: Hereditary spherocytosis
+
+=== n 347
+BOOK pedsa-b23-1
+  STEM: Tia is a 4-year-old Caucasian girl. She is referred to the paediatric ward by her general practitioner as her mother noted that she had a yellow tinge to her eyes since developing an upper respiratory tract infection. She is well in herself and has no history of weight loss. There is no family history of any blood disorders. On examination she was pale and her spleen was enlarged 3 cm below the costal margin. You perform a full blood count, which reveals: • Hb (haemoglobin): 60 g/L • WBC (white blood cell count): 8 × 10⁹ /L • platelet count: 255 × 10⁹ /L • blood film: small red cells • MCV (mean cell volume): 60 fL (normal: 75–87 fL) What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute lymphoblastic leukaemia | Glucose-6-phosphate dehydrogenase (G6PD) deficiency | Hereditary spherocytosis | Sickle cell disease | Thalassaemia
+  KEY: Hereditary spherocytosis
+OTHER pedhd-haem-1
+  STEM: Tia is a 4-year-old Caucasian girl. She is referred to the paediatric ward by her general practitioner as her mother noted that she had a yellow tinge to her eyes since developing an upper respiratory tract infection. She is well in herself and has no history of weight loss. There is no family history of any blood disorders. On examination she was pale and her spleen was enlarged 3 cm below the costal margin. You perform a full blood count, which reveals: • Hb (haemoglobin): 60 g/L • WBC (white blood cell count): 8 × 10⁹/L • platelet count: 255 × 10⁹/L • blood film: small red cells • MCV (mean cell volume): 60 fL (normal: 75–87 fL) What is the most likely diagnosis?
+  OPTIONS: Acute lymphoblastic leukaemia | Glucose-6-phosphate dehydrogenase (G6PD) deficiency | Hereditary spherocytosis | Sickle cell disease | Thalassaemia
+  KEY: Hereditary spherocytosis
+
+=== n 348
+BOOK pedsa-b23-2
+  STEM: Ahmed, whose parents come from Egypt, is a 10-year-old boy who presents to his general practitioner. This evening he is more lethargic than usual and his urine has become dark in colour. There is no history of excessive exercise or beetroot consumption; in fact, they had a festive meal of chicken, fish, broad beans and rice for lunch. His examination is normal and he is afebrile. He has no medical history of note. He has not had a recent upper respiratory tract infection. What is the most likely underlying cause of his new symptoms? Select one answer only.
+  OPTIONS: Acute lymphatic leukaemia | β-Thalassaemia trait | G6PD (Glucose-6-phosphate dehydrogenase) deficiency | Pyelonephritis | Sickle cell disease
+  KEY: G6PD (Glucose-6-phosphate dehydrogenase) deficiency
+OTHER pedep2-hem-23
+  STEM: Ahmed, a 10-year-old boy of Egyptian descent, presents to his general practitioner. This evening, he is more lethargic than usual, and his urine has turned dark. There is no history of excessive exercise or beetroot consumption; lunch consisted of chicken, fish, broad beans, and rice. His examination is normal except he is febrile. There is no recent upper respiratory tract infection and no significant past medical history. What is the most likely underlying cause of his new symptoms?
+  OPTIONS: Acute lymphoblastic leukaemia | Thalassemia trait | G6PD (Glucose-6-phosphate dehydrogenase) deficiency | Pyelonephritis | Sickle cell disease
+  KEY: G6PD (Glucose-6-phosphate dehydrogenase) deficiency
+
+=== n 349
+BOOK pedsa-b23-2
+  STEM: Ahmed, whose parents come from Egypt, is a 10-year-old boy who presents to his general practitioner. This evening he is more lethargic than usual and his urine has become dark in colour. There is no history of excessive exercise or beetroot consumption; in fact, they had a festive meal of chicken, fish, broad beans and rice for lunch. His examination is normal and he is afebrile. He has no medical history of note. He has not had a recent upper respiratory tract infection. What is the most likely underlying cause of his new symptoms? Select one answer only.
+  OPTIONS: Acute lymphatic leukaemia | β-Thalassaemia trait | G6PD (Glucose-6-phosphate dehydrogenase) deficiency | Pyelonephritis | Sickle cell disease
+  KEY: G6PD (Glucose-6-phosphate dehydrogenase) deficiency
+OTHER pedhd-haem-2
+  STEM: Ahmed, whose parents come from Egypt, is a 10-year-old boy who presents to his general practitioner. This evening he is more lethargic than usual and his urine has become dark in colour. There is no history of excessive exercise or beetroot consumption; in fact, they had a festive meal of chicken, fish, broad beans and rice for lunch. His examination is normal and he is afebrile. He has no medical history of note. He has not had a recent upper respiratory tract infection. What is the most likely underlying cause of his new symptoms?
+  OPTIONS: Acute lymphatic leukaemia | β-Thalassaemia trait | G6PD (Glucose-6-phosphate dehydrogenase) deficiency | Pyelonephritis | Sickle cell disease
+  KEY: G6PD (Glucose-6-phosphate dehydrogenase) deficiency
+
+=== n 350
+BOOK pedsa-b23-3
+  STEM: Tom is a 5-year-old boy who presents to hospital with a recent history of bruising easily. Two weeks ago he had an upper respiratory tract infection which resolved spontaneously. On examination today he is afebrile but has many, widespread bruises with some scattered petechiae. Investigations reveal: • Hb (haemoglobin): 116 g/L • WBC (white blood cell count): 10.2 × 10⁹ /L • platelet count: 32 × 10⁹ /L • prothrombin time: 15 seconds (control: 12–15 s) • activated partial thromboplastin time: 30 seconds (control: 25–35 s) • fibrinogen: 2.5 g/L (normal: 2–4 g/L) What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Acute lymphoblastic leukaemia | Haemophilia A | Immune thrombocytopenic purpura | Non-accidental injury | Vitamin D deficiency
+  KEY: Immune thrombocytopenic purpura
+OTHER pedep2-hem-24
+  STEM: Tom is a 5-year-old boy presenting with a recent history of easy bruising. Two weeks ago, he had an upper respiratory tract infection that resolved spontaneously. Today, he is afebrile but has many widespread bruises and scattered petechiae. Investigations reveal: Hb (hemoglobin): 116 g/L WBC (white blood cell count): 10.2 x 10^9/L Platelet count: 32 x 10^9/L Prothrombin time: 15 seconds (control: 12–15 seconds) Activated partial thromboplastin time: 30 seconds (control: 25–35 seconds) Fibrinogen: 2.5 g/L (normal: 2–4 g/L) What is the most likely diagnosis?
+  OPTIONS: Acute lymphoblastic leukaemia | Hemophilia A | Immune thrombocytopenic purpura | Non-accidental injury | Vitamin D deficiency
+  KEY: Immune thrombocytopenic purpura

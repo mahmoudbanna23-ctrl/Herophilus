@@ -1,0 +1,783 @@
+[
+ {
+  "id": "pedsa-b2-5",
+  "page": 10,
+  "ansPage": 13,
+  "figs": [
+   {
+    "label": "Fig. 2.2",
+    "page": 10,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b2-6",
+  "page": 10,
+  "ansPage": 13,
+  "figs": [
+   {
+    "label": "Fig. 2.3",
+    "page": 10,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b2-8-3",
+  "page": 11,
+  "ansPage": 14,
+  "figs": [
+   {
+    "label": "Fig. 2.7",
+    "page": 12,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b2-9-1",
+  "page": 12,
+  "ansPage": 14,
+  "figs": [
+   {
+    "label": "Fig. 2.9",
+    "page": 12,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b4-6",
+  "page": 20,
+  "ansPage": 24,
+  "figs": [
+   {
+    "label": "Fig. 4.1",
+    "page": 20,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b4-7",
+  "page": 20,
+  "ansPage": 25,
+  "figs": [
+   {
+    "label": "Fig. 4.2",
+    "page": 21,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b5-4-5",
+  "page": 28,
+  "ansPage": 31,
+  "figs": [
+   {
+    "label": "Fig. 5.1",
+    "page": 28,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b7-3",
+  "page": 39,
+  "ansPage": 43,
+  "figs": [
+   {
+    "label": "Fig. 7.1",
+    "page": 39,
+    "where": "question"
+   },
+   {
+    "label": "Fig. 7.5",
+    "page": 43,
+    "where": "answer"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b7-4",
+  "page": 39,
+  "ansPage": 43,
+  "figs": [
+   {
+    "label": "Fig. 7.2",
+    "page": 40,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b7-7",
+  "page": 40,
+  "ansPage": 44,
+  "figs": [
+   {
+    "label": "Fig. 7.3",
+    "page": 41,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b7-12",
+  "page": 42,
+  "ansPage": 45,
+  "figs": [
+   {
+    "label": "Fig. 7.4",
+    "page": 42,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b8-1",
+  "page": 46,
+  "ansPage": 49,
+  "figs": [
+   {
+    "label": "Fig. 8.1",
+    "page": 46,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b8-4",
+  "page": 47,
+  "ansPage": 49,
+  "figs": [
+   {
+    "label": "Fig. 8.2",
+    "page": 47,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b8-5-1",
+  "page": 47,
+  "ansPage": 50,
+  "figs": [
+   {
+    "label": "Fig. 8.3",
+    "page": 47,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b8-5-2",
+  "page": 48,
+  "ansPage": 50,
+  "figs": [
+   {
+    "label": "Fig. 8.4",
+    "page": 48,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b8-5-3",
+  "page": 48,
+  "ansPage": 50,
+  "figs": [
+   {
+    "label": "Fig. 8.5",
+    "page": 48,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b8-5-4",
+  "page": 48,
+  "ansPage": 50,
+  "figs": [
+   {
+    "label": "Fig. 8.6",
+    "page": 48,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b8-5-5",
+  "page": 48,
+  "ansPage": 50,
+  "figs": [
+   {
+    "label": "Fig. 8.7",
+    "page": 48,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b9-14",
+  "page": 53,
+  "ansPage": 58,
+  "figs": [
+   {
+    "label": "Fig. 9.6",
+    "page": 53,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b9-15-4",
+  "page": 54,
+  "ansPage": 59,
+  "figs": [
+   {
+    "label": "Fig. 9.8",
+    "page": 59,
+    "where": "answer"
+   }
+  ],
+  "inStem": false,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b9-16-3",
+  "page": 55,
+  "ansPage": 60,
+  "figs": [
+   {
+    "label": "Table 9.1",
+    "page": 60,
+    "where": "answer"
+   },
+   {
+    "label": "Fig. 9.9",
+    "page": 60,
+    "where": "answer"
+   }
+  ],
+  "inStem": false,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b11-6",
+  "page": 70,
+  "ansPage": 74,
+  "figs": [
+   {
+    "label": "Fig. 11.2",
+    "page": 70,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b15-7",
+  "page": 92,
+  "ansPage": 97,
+  "figs": [
+   {
+    "label": "Fig. 15.3",
+    "page": 92,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b15-10-4",
+  "page": 93,
+  "ansPage": 98,
+  "figs": [
+   {
+    "label": "Fig. 15.7",
+    "page": 94,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b17-12-1",
+  "page": 103,
+  "ansPage": 108,
+  "figs": [
+   {
+    "label": "Fig. 17.5",
+    "page": 103,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b17-12-4",
+  "page": 104,
+  "ansPage": 108,
+  "figs": [
+   {
+    "label": "Fig. 17.8",
+    "page": 104,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b18-6-1",
+  "page": 111,
+  "ansPage": 114,
+  "figs": [
+   {
+    "label": "Fig. 18.1",
+    "page": 111,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b18-6-2",
+  "page": 111,
+  "ansPage": 114,
+  "figs": [
+   {
+    "label": "Fig. 18.1",
+    "page": 111,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b18-6-3",
+  "page": 111,
+  "ansPage": 114,
+  "figs": [
+   {
+    "label": "Fig. 18.1",
+    "page": 111,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b18-6-4",
+  "page": 111,
+  "ansPage": 114,
+  "figs": [
+   {
+    "label": "Fig. 18.1",
+    "page": 111,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b18-6-5",
+  "page": 111,
+  "ansPage": 114,
+  "figs": [
+   {
+    "label": "Fig. 18.1",
+    "page": 111,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b18-7-3",
+  "page": 112,
+  "ansPage": 114,
+  "figs": [
+   {
+    "label": "Fig. 18.1",
+    "page": 111,
+    "where": "question"
+   }
+  ],
+  "inStem": false,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b20-1",
+  "page": 123,
+  "ansPage": 125,
+  "figs": [
+   {
+    "label": "Fig. 20.1",
+    "page": 123,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b20-4",
+  "page": 123,
+  "ansPage": 125,
+  "figs": [
+   {
+    "label": "Fig. 20.2",
+    "page": 124,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b25-1",
+  "page": 148,
+  "ansPage": 153,
+  "figs": [
+   {
+    "label": "Fig. 25.1",
+    "page": 148,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b25-2",
+  "page": 148,
+  "ansPage": 153,
+  "figs": [
+   {
+    "label": "Fig. 25.2",
+    "page": 148,
+    "where": "question"
+   },
+   {
+    "label": "Fig. 22.19",
+    "page": null,
+    "where": "answer"
+   }
+  ],
+  "inStem": true,
+  "noPic": true
+ },
+ {
+  "id": "pedsa-b25-3",
+  "page": 148,
+  "ansPage": 153,
+  "figs": [
+   {
+    "label": "Fig. 25.3",
+    "page": 149,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b25-7",
+  "page": 149,
+  "ansPage": 154,
+  "figs": [
+   {
+    "label": "Fig. 25.4",
+    "page": 149,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b25-8",
+  "page": 149,
+  "ansPage": 154,
+  "figs": [
+   {
+    "label": "Fig. 25.5",
+    "page": 150,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b25-9",
+  "page": 150,
+  "ansPage": 154,
+  "figs": [
+   {
+    "label": "Fig. 25.6",
+    "page": 150,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b25-10",
+  "page": 150,
+  "ansPage": 154,
+  "figs": [
+   {
+    "label": "Fig. 25.7",
+    "page": 150,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b25-11-1",
+  "page": 150,
+  "ansPage": 155,
+  "figs": [
+   {
+    "label": "Fig. 25.8",
+    "page": 151,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b25-11-2",
+  "page": 150,
+  "ansPage": 155,
+  "figs": [
+   {
+    "label": "Fig. 25.9",
+    "page": 151,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b25-11-3",
+  "page": 151,
+  "ansPage": 155,
+  "figs": [
+   {
+    "label": "Fig. 25.10",
+    "page": 151,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b25-11-4",
+  "page": 151,
+  "ansPage": 155,
+  "figs": [
+   {
+    "label": "Fig. 25.11",
+    "page": 151,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b25-11-5",
+  "page": 152,
+  "ansPage": 155,
+  "figs": [
+   {
+    "label": "Fig. 25.12",
+    "page": 152,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b26-7",
+  "page": 158,
+  "ansPage": 161,
+  "figs": [
+   {
+    "label": "Fig. 26.2",
+    "page": 158,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b28-2",
+  "page": 165,
+  "ansPage": 170,
+  "figs": [
+   {
+    "label": "Fig. 28.1",
+    "page": 165,
+    "where": "question"
+   },
+   {
+    "label": "Fig. 28.5",
+    "page": 170,
+    "where": "answer"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b28-6",
+  "page": 166,
+  "ansPage": 171,
+  "figs": [
+   {
+    "label": "Fig. 28.2",
+    "page": 166,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b28-8",
+  "page": 166,
+  "ansPage": 171,
+  "figs": [
+   {
+    "label": "Fig. 28.5",
+    "page": 170,
+    "where": "answer"
+   }
+  ],
+  "inStem": false,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b28-10",
+  "page": 167,
+  "ansPage": 172,
+  "figs": [
+   {
+    "label": "Fig. 28.3",
+    "page": 167,
+    "where": "question"
+   },
+   {
+    "label": "Fig. 28.6",
+    "page": 172,
+    "where": "answer"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b28-11",
+  "page": 167,
+  "ansPage": 172,
+  "figs": [
+   {
+    "label": "Fig. 28.4",
+    "page": 167,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b29-9",
+  "page": 175,
+  "ansPage": 180,
+  "figs": [
+   {
+    "label": "Fig. 29.2",
+    "page": 176,
+    "where": "question"
+   }
+  ],
+  "inStem": true,
+  "noPic": false
+ },
+ {
+  "id": "pedsa-b31-2",
+  "page": 186,
+  "ansPage": 187,
+  "figs": [
+   {
+    "label": "Fig. 31.3",
+    "page": null,
+    "where": "answer"
+   }
+  ],
+  "inStem": false,
+  "noPic": true
+ }
+]

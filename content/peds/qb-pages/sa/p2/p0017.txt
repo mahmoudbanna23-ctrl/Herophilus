@@ -1,0 +1,36 @@
+3.7 · SINGLE BEST ANSWER
+
+Which pattern best describes X-linked recessive inheritance?
+
+ A. Affected males, carrier females, no male-to-male transmission, affected boys are related through
+   the mother
+ B. Affected females only
+ C. Male-to-male transmission is typical
+ D. Every generation is affected in both sexes equally
+ E. Only maternal transmission to all offspring of both sexes
+
+Answer: A.
+
+Classic examples are Duchenne muscular dystrophy, haemophilia A and B, and G6PD deficiency.
+Carrier mothers pass the gene to half their sons (affected) and half their daughters (carriers); an affected
+father has no affected sons but all carrier daughters.
+
+
+
+
+3.8 · SINGLE BEST ANSWER
+
+A family has a disorder transmitted only by affected mothers to all of their children, both boys and
+girls. What is the inheritance?
+
+ A. Autosomal dominant
+ B. X-linked recessive
+ C. MITOCHONDRIAL
+ D. Autosomal recessive
+ E. Imprinting defect
+
+Answer: C.
+
+Mitochondria are inherited exclusively from the mother. Variable severity between siblings is explained
+by heteroplasmy — the proportion of abnormal mitochondria differs between cells and individuals.
+

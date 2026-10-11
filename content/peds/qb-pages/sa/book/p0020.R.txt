@@ -1,0 +1,44 @@
+                                                  Left ear
+                                      125 250 500 1000 2000 4000 8000
+0                                  -20                                -20
+0                                  -10                                -10
+    Hearing level (dB, Decibels)
+
+
+
+
+                                     0                                0
+0                                   10                                10
+0                                   20                                20
+0                                   30                                30
+0                                   40                                40
+0                                   50                                50
+0                                   60                                60
+0                                   70                                70
+0                                   80                                80
+0                                   90                                90
+00                                 100                                100
+                                      128 256 512 1024 2048 4096 8192
+                                               Frequency (Hz)
+                                      Left ear
+
+
+
+
+                            4.7
+                            Cruz is a 2-year-old boy. He has recently moved
+                            to the UK from Mexico. He attends the audiology
+                            department as he has marked problems with his
+                            language development. His audiogram is shown
+                            in Fig. 4.2.
+                            What type of hearing loss does he have?
+                            Select one answer only.
+                            A. Mild conductive hearing loss in both ears
+                            B. Mild sensorineural hearing loss in
+                               both ears
+                            C. Mixed hearing loss in both ears
+                            D. Severe conductive hearing loss in
+                               both ears
+                            E. Severe sensorineural hearing loss in
+                               both ears
+

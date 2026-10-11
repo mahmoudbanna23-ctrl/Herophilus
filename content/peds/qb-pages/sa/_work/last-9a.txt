@@ -1,0 +1,7 @@
+AGENTS.md loaded — Herophilus
+
+Highest n written: 100 · SAME 99 / DIFFERENT 1 / UNSURE 0.
+
+DIFFERENT: n 1 — pedsa-b1-1 / pedep2-mal-20.
+
+Stopped after completed file `s091.txt`; remaining slices begin at n 101.

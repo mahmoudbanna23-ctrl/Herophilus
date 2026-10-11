@@ -1,0 +1,37 @@
+6.16 · MANAGEMENT
+
+An infant has a narrow complex tachycardia at 280 beats/min with poor perfusion. Vagal manoeuvres
+have failed and IV access is in place. What is next?
+
+ A. Intravenous adenosine
+ B. Immediate DC shock at 4 J/kg
+ C. Oral digoxin
+D. Intravenous amiodarone as first line
+ E. Observation
+
+Answer: A.
+
+Ladder: circulatory and respiratory support → vagal manoeuvres (successful in about 80%) → IV
+adenosine in incrementally increasing doses → synchronised DC cardioversion 0.5–2 J/kg. Maintenance
+is with flecainide or sotalol; digoxin only if there is no delta wave.
+
+
+
+
+6.17 · SINGLE BEST ANSWER
+
+Which is a MINOR criterion in the Jones criteria for rheumatic fever?
+
+ A. Carditis
+ B. Migratory polyarthritis
+ C. Prolonged P-R interval
+D. Erythema marginatum
+ E. Subcutaneous nodules
+
+Answer: C.
+
+Minor criteria are FRPP — Fever, Raised acute-phase reactants, Polyarthralgia, Prolonged P-R interval.
+Diagnosis needs 2 major, or 1 major + 2 minor, PLUS evidence of preceding streptococcal infection.
+Secondary prophylaxis is monthly benzathine penicillin for 10 years or until age 21, whichever is
+longer.
+

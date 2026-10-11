@@ -1,0 +1,99 @@
+=== n 271
+BOOK pedsa-b19-12-3
+  STEM: Below is a list (A–J) of renal investigations. For each of the following cases which investigation would you perform next? Each option may be used once, more than once, or not at all. Usmaan is an 18-hour-old newborn baby boy who you are seeing for his routine discharge baby check. You read in his notes that he was found to have bilateral hydronephrosis and a distended bladder on his antenatal ultrasound scan. He mother is breastfeeding and does not feel she has started producing milk yet as Usmaan has not passed urine. He has a normal blood pressure for a neonate.
+  OPTIONS: Antistreptolysin O titre | CT scan of the abdomen | DMSA scan | MAG3 renogram | Micturating cystourethrogram (MCUG) | Plain abdominal X-ray | Plasma creatinine and electrolytes | Ultrasound of the kidneys and urinary tract | Urinary electrolytes | Urine microscopy and culture
+  KEY: Ultrasound of the kidneys and urinary tract
+OTHER pedep2-ren-17
+  STEM: Usmaan is an 18-hour-old newborn baby boy undergoing a routine discharge baby check. His notes mention bilateral hydronephrosis and a distended bladder on antenatal ultrasound. His mother is breastfeeding but reports he has not yet passed urine. Blood pressure is normal for a neonate. Which of the following investigations would you perform next?
+  OPTIONS: DMSA scan | Urinary electrolytes | Urine microscopy and culture | Ultrasound of the kidneys and urinary tract | Plasma creatinine and electrolytes
+  KEY: Ultrasound of the kidneys and urinary tract
+
+=== n 272
+BOOK pedsa-b19-12-3
+  STEM: Below is a list (A–J) of renal investigations. For each of the following cases which investigation would you perform next? Each option may be used once, more than once, or not at all. Usmaan is an 18-hour-old newborn baby boy who you are seeing for his routine discharge baby check. You read in his notes that he was found to have bilateral hydronephrosis and a distended bladder on his antenatal ultrasound scan. He mother is breastfeeding and does not feel she has started producing milk yet as Usmaan has not passed urine. He has a normal blood pressure for a neonate.
+  OPTIONS: Antistreptolysin O titre | CT scan of the abdomen | DMSA scan | MAG3 renogram | Micturating cystourethrogram (MCUG) | Plain abdominal X-ray | Plasma creatinine and electrolytes | Ultrasound of the kidneys and urinary tract | Urinary electrolytes | Urine microscopy and culture
+  KEY: Ultrasound of the kidneys and urinary tract
+OTHER pedhd-renal-17
+  STEM: Usmaan is an 18-hour-old newborn baby boy who you are seeing for his routine discharge baby check. You read in his notes that he was found to have bilateral hydronephrosis and a distended bladder on his antenatal ultrasound scan. His mother is breastfeeding and does not feel she has started producing milk yet as Usmaan has not passed urine. He has a normal blood pressure for a neonate. In light of the data given, which of the following investigations would you perform next?
+  OPTIONS: DMSA scan | Urinary electrolytes | Urine microscopy and culture | Ultrasound of the kidneys and urinary tract | Plasma creatinine and electrolytes
+  KEY: Ultrasound of the kidneys and urinary tract
+
+=== n 273
+BOOK pedsa-b19-12-4
+  STEM: Below is a list (A–J) of renal investigations. For each of the following cases which investigation would you perform next? Each option may be used once, more than once, or not at all. John is a 9-year-old boy. He has a history of numerous urinary tract infections. He has had an ultrasound scan, which reveals that his kidneys are dysplastic. You are seeing him in the routine paediatric follow-up clinic. His mother does not feel he is growing as well as his siblings. His blood pressure is 130/90 mmHg.
+  OPTIONS: Antistreptolysin O titre | CT scan of the abdomen | DMSA scan | MAG3 renogram | Micturating cystourethrogram (MCUG) | Plain abdominal X-ray | Plasma creatinine and electrolytes | Ultrasound of the kidneys and urinary tract | Urinary electrolytes | Urine microscopy and culture
+  KEY: Plasma creatinine and electrolytes
+OTHER pedep2-ren-18
+  STEM: John is a 9-year-old boy with a history of multiple urinary tract infections. An ultrasound shows dysplastic kidneys. At a routine paediatric follow-up, his mother reports he is not growing as well as his siblings. His blood pressure is 130/90 mmHg. Which of the following investigations would you perform next?
+  OPTIONS: DMSA scan | Urinary electrolytes | Urine microscopy and culture | Ultrasound of the kidneys and urinary tract | Plasma creatinine and electrolytes
+  KEY: Plasma creatinine and electrolytes
+
+=== n 274
+BOOK pedsa-b19-12-4
+  STEM: Below is a list (A–J) of renal investigations. For each of the following cases which investigation would you perform next? Each option may be used once, more than once, or not at all. John is a 9-year-old boy. He has a history of numerous urinary tract infections. He has had an ultrasound scan, which reveals that his kidneys are dysplastic. You are seeing him in the routine paediatric follow-up clinic. His mother does not feel he is growing as well as his siblings. His blood pressure is 130/90 mmHg.
+  OPTIONS: Antistreptolysin O titre | CT scan of the abdomen | DMSA scan | MAG3 renogram | Micturating cystourethrogram (MCUG) | Plain abdominal X-ray | Plasma creatinine and electrolytes | Ultrasound of the kidneys and urinary tract | Urinary electrolytes | Urine microscopy and culture
+  KEY: Plasma creatinine and electrolytes
+OTHER pedhd-renal-18
+  STEM: John is a 9-year-old boy. He has a history of numerous urinary tract infections. He has had an ultrasound scan, which reveals that his kidneys are dysplastic. You are seeing him in the routine paediatric follow-up clinic. His mother does not feel he is growing as well as his siblings. His blood pressure is 130/90 mmHg. In light of the data given, which of the following investigations would you perform next?
+  OPTIONS: DMSA scan | Urinary electrolytes | Urine microscopy and culture | Ultrasound of the kidneys and urinary tract | Plasma creatinine and electrolytes
+  KEY: Plasma creatinine and electrolytes
+
+=== n 275
+BOOK pedsa-b19-2
+  STEM: Becky is a 7-year-old girl. She is seen by her general practitioner with a 2-day history of fever and abdominal pain. Her mother has noted that she is going to the toilet to pass urine more often than usual. On examination she is now afebrile and has no abdominal tenderness. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Appendicitis | Cystitis | Diabetic ketoacidosis | Glomerulonephritis | Pyelonephritis
+  KEY: Cystitis
+OTHER pedep2-ren-2
+  STEM: Becky is a 7-year-old girl seen by her general practitioner with a 2-day history of fever and abdominal pain. Her mother has noticed increased urinary frequency. On examination, she is now afebrile with no abdominal tenderness.What is the most likely diagnosis?
+  OPTIONS: Appendicitis | Cystitis | Diabetic ketoacidosis | Glomerulonephritis | Pyelonephritis
+  KEY: Cystitis
+
+=== n 276
+BOOK pedsa-b19-2
+  STEM: Becky is a 7-year-old girl. She is seen by her general practitioner with a 2-day history of fever and abdominal pain. Her mother has noted that she is going to the toilet to pass urine more often than usual. On examination she is now afebrile and has no abdominal tenderness. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Appendicitis | Cystitis | Diabetic ketoacidosis | Glomerulonephritis | Pyelonephritis
+  KEY: Cystitis
+OTHER pedep2-ren-28
+  STEM: A 7-year-old girl is seen with a 2-day history of Lever and abdominal pain. Her mother has noted that she is going to the toilet to pass urine more often than usual. On examination she is now afebrile, has normal heart rate and respiratory rate and has no abdominal tenderness. What is the most likely diagnosis?
+  OPTIONS: Appendicitis | Cystitis | Diabetic ketoacidosis | Glomerulonephritis | Pyelonephritis
+  KEY: Cystitis
+
+=== n 277
+BOOK pedsa-b19-2
+  STEM: Becky is a 7-year-old girl. She is seen by her general practitioner with a 2-day history of fever and abdominal pain. Her mother has noted that she is going to the toilet to pass urine more often than usual. On examination she is now afebrile and has no abdominal tenderness. What is the most likely diagnosis? Select one answer only.
+  OPTIONS: Appendicitis | Cystitis | Diabetic ketoacidosis | Glomerulonephritis | Pyelonephritis
+  KEY: Cystitis
+OTHER pedhd-renal-2
+  STEM: Becky is a 7-year-old girl. She is seen by her general practitioner with a 2-day history of fever and abdominal pain. Her mother has noted that she is going to the toilet to pass urine more often than usual. On examination she is now afebrile and has no abdominal tenderness. What is the most likely diagnosis?
+  OPTIONS: Appendicitis | Cystitis | Diabetic ketoacidosis | Glomerulonephritis | Pyelonephritis
+  KEY: Cystitis
+
+=== n 278
+BOOK pedsa-b19-3
+  STEM: Jonathan is an 8-year-old boy. He has a medical history of urinary tract infections. On this occasion he presents to hospital with acute spasmodic pain on the left side of his abdomen. He says it is the worst pain he has ever experienced. He played football yesterday but had not hurt himself. On examination he is afebrile and his abdomen is soft with no guarding. He is tender in his left loin and there are no palpable masses. He has 2+ of haematuria on dipstick of his urine but no protein or leucocytes. He is not on any medication. What is the most likely cause of his pain? Select one answer only.
+  OPTIONS: Constipation | Glomerulonephritis | Renal stone | Trauma | Wilms tumour
+  KEY: Renal stone
+OTHER pedep2-ren-3
+  STEM: Jonathan is an 8-year-old boy with a history of urinary tract infections. He now presents with acute spasmodic pain in the left side of his abdomen, describing it as the worst pain he has ever felt. He played football yesterday but did not sustain any injury. On examination, he is afebrile, his abdomen is soft with no guarding, and he is tender over the left loin. Urinalysis reveals 2+ haematuria, but no protein or leucocytes. What is the most likely cause of his pain?
+  OPTIONS: Constipation | Glomerulonephritis | Renal stone | Trauma | Wilms tumor
+  KEY: Renal stone
+
+=== n 279
+BOOK pedsa-b19-3
+  STEM: Jonathan is an 8-year-old boy. He has a medical history of urinary tract infections. On this occasion he presents to hospital with acute spasmodic pain on the left side of his abdomen. He says it is the worst pain he has ever experienced. He played football yesterday but had not hurt himself. On examination he is afebrile and his abdomen is soft with no guarding. He is tender in his left loin and there are no palpable masses. He has 2+ of haematuria on dipstick of his urine but no protein or leucocytes. He is not on any medication. What is the most likely cause of his pain? Select one answer only.
+  OPTIONS: Constipation | Glomerulonephritis | Renal stone | Trauma | Wilms tumour
+  KEY: Renal stone
+OTHER pedhd-renal-3
+  STEM: Jonathan is an 8-year-old boy. He has a medical history of urinary tract infections. On this occasion he presents to hospital with acute spasmodic pain on the left side of his abdomen. He says it is the worst pain he has ever experienced. He played football yesterday but had not hurt himself. On examination he is afebrile and his abdomen is soft with no guarding. He is tender in his left loin and there are no palpable masses. He has 2+ of haematuria on dipstick of his urine but no protein or leucocytes. He is not on any medication. What is the most likely cause of his pain?
+  OPTIONS: Constipation | Glomerulonephritis | Renal stone | Trauma | Wilms tumour
+  KEY: Renal stone
+
+=== n 280
+BOOK pedsa-b19-4
+  STEM: In Johnathan’s particular case (Question 19.3), what is the most likely organism to have been the cause of his previous urinary tract infections? Select one answer only.
+  OPTIONS: Escherichia coli | Klebsiella sp. | Proteus sp. | Pseudomonas aeruginosa | Streptococcus faecalis
+  KEY: Proteus sp.
+OTHER pedep2-ren-4
+  STEM: In Jonathan’s case (see previous question), what is the most likely organism responsible for his previous urinary tract infections?.
+  OPTIONS: Escherichia coli | Klebsiella species | Proteus species | Pseudomonas aeruginosa | Streptococcus faecalis
+  KEY: Proteus species

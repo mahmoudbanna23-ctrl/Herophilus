@@ -1,0 +1,63 @@
+           9.11
+           A. 1 in 6
+           This would be the risk if Mark was known to be a
+           carrier but Gemma’s status was unknown. A
+ 9         more complicated pedigree where Mark already
+           has an affected child by another partner could
+           give this risk.
+Genetics
+
+
+
+           B. 1 in 37.5
+           This is roughly the risk that both parents are
+           carriers. As Gemma does not have the condition
+           there are three possible outcomes, one (33%) is
+           that she is not a carrier, the other two (66%) are
+           that she is a carrier, i.e. 2/3 × 1/25 = 1 in 37.5.
+           C. 1 in 100
+           This is a tempting option but incorrect. If Gemma
+           was known to be a carrier and she found a
+           partner from the general population, this would
+           be the chance that a pregnancy would result in
+           an affected child, i.e. 1/25 × 1/4 = 1/100.
+           D. 1 in 150
+           Correct. As Gemma does not have the condition
+           there are three possible outcomes, one (1 in 3) is
+           that she is not a carrier, the other two (2 in 3) are
+           that she is a carrier. The risk of Mark being an
+           unaffected carrier is the population frequency of
+           heterozygosity. The risk of two carriers having an
+           affected child is 1 in 4 per pregnancy. Therefore
+           the risk is roughly 2/3 × 1/25 × 1/4. This could be
+           refined slightly if Gemma’s status is known, but
+           this might not influence the couples decision
+           about screening. Checking whether Mark is a
+           carrier has a bigger influence on the risk.
+           E. 1 in 2500
+           This is incorrect but is the risk for Caucasian
+           couples having a child with cystic fibrosis in
+           the UK.
+
+           9.12
+           A. Autosomal dominant
+           Correct. This is the most common mode of
+           Mendelian inheritance. An affected individual
+           carries the abnormal gene in the heterozygous
+           state. Offspring have a 50% chance of inheriting
+           the abnormal gene.
+           B. Autosomal recessive
+           Providing that new partners came from outside
+           this family, the chance that this pattern is
+           autosomal recessive is extremely low.
+           C. Imprinting from uniparental disomy
+           Following meiosis, imprinting proceeds in a
+           ‘parent of origin’ specific manner. In general this
+           ‘resets’ the genetic information correctly and
+           therefore uniparental disomy is not heritable.
+           D. X-linked dominant
+           In X-linked dominant inheritance all the
+           daughters of an affected male have the
+   52      condition as he must pass on a copy of the gene
+           to any daughter.
+

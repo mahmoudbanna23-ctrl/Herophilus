@@ -1,0 +1,99 @@
+=== n 561
+BOOK pedsa-b9-10
+  STEM: A Bangladeshi couple are referred for genetic counselling. Both parents are carriers of a faulty gene PEX1; possession of two abnormal copies of this gene leads to death in infancy. They have lost two children who both died in the first 2 years of life. They have one healthy daughter, who is 3 years of age. What is the risk that their daughter is a carrier?
+  OPTIONS: None | 1 in 4 | 1 in 2 | 2 in 3 | 100%
+  KEY: 2 in 3
+OTHER pedhd-gen-10
+  STEM: A Bangladeshi couple are referred for genetic counselling. Both parents are carriers of a faulty gene PEX1; possession of two abnormal copies of this gene leads to death in infancy. They have lost two children who both died in the first 2 years of life. They have one healthy daughter, who is 3 years of age. What is the risk that their daughter is a carrier?
+  OPTIONS: None | 1 in 4 | 1 in 2 | 2 in 3 | 100%
+  KEY: 2 in 3
+
+=== n 562
+BOOK pedsa-b9-11
+  STEM: Gemma and Mark, who are both well, are planning to start a family. Gemma’s older brother has cystic fibrosis. There is no history of cystic fibrosis in Mark’s family. The family tree is shown in Fig. 9.4. What is the chance that they will have a child with cystic fibrosis? The carrier rate is 1 in 25 in their population. Select one answer only.
+  OPTIONS: 1 in 6 | 1 in 37.5 | 1 in 100 | 1 in 150 | 1 in 2500
+  KEY: 1 in 150
+OTHER pedep2-gen-37
+  STEM: Gemma and Mark, who are both well, are planning to start a family. Gemma's older brother has cystic fibrosis. There is no history of cystic fibrosis in Mark's family. The family tree is shown in the opposite figure. What is the chance that they will have a child with cystic fibrosis? The carrier rate in their population is 1 in 25. Select one answer only.
+  OPTIONS: 1 in 6 | 1 in 37.5 | 1 in 100 | 1 in 150 | 1 in 2,500
+  KEY: 1 in 150
+
+=== n 563
+BOOK pedsa-b9-11
+  STEM: Gemma and Mark, who are both well, are planning to start a family. Gemma’s older brother has cystic fibrosis. There is no history of cystic fibrosis in Mark’s family. The family tree is shown in Fig. 9.4. What is the chance that they will have a child with cystic fibrosis? The carrier rate is 1 in 25 in their population. Select one answer only.
+  OPTIONS: 1 in 6 | 1 in 37.5 | 1 in 100 | 1 in 150 | 1 in 2500
+  KEY: 1 in 150
+OTHER pedhd-gen-11
+  STEM: Gemma and Mark, who are both well, are planning to start a family. Gemma’s older brother has cystic fibrosis. There is no history of cystic fibrosis in Mark’s family. The family tree is shown in the opposite figure. What is the chance that they will have a child with cystic fibrosis? The carrier rate is 1 in 25 in their population.
+  OPTIONS: 1 in 6 | 1 in 37.5 | 1 in 100 | 1 in 150 | 1 in 2500
+  KEY: 1 in 150
+
+=== n 564
+BOOK pedsa-b9-12
+  STEM: A mother comes to see the geneticist. She has two children, Robert and Elizabeth. They both suffer from a genetic disorder. The geneticist takes a history and draws the family tree (Fig. 9.5). What is the likely pattern of inheritance in this disorder? Select one answer only.
+  OPTIONS: Autosomal dominant | Autosomal recessive | Imprinting from uniparental disomy | X-linked dominant | X-linked recessive
+  KEY: Autosomal dominant
+OTHER pedep2-gen-38
+  STEM: A mother comes to see the geneticist. She has two children, Robert and Elizabeth, both of whom suffer from a genetic disorder. The geneticist takes a history and draws a family tree (see opposite figure). What is the likely pattern of inheritance of this disorder?
+  OPTIONS: Autosomal dominant | Autosomal recessive | Imprinting from uniparental disomy | X-linked dominant | X-linked recessive
+  KEY: Autosomal dominant
+
+=== n 565
+BOOK pedsa-b9-12
+  STEM: A mother comes to see the geneticist. She has two children, Robert and Elizabeth. They both suffer from a genetic disorder. The geneticist takes a history and draws the family tree (Fig. 9.5). What is the likely pattern of inheritance in this disorder? Select one answer only.
+  OPTIONS: Autosomal dominant | Autosomal recessive | Imprinting from uniparental disomy | X-linked dominant | X-linked recessive
+  KEY: Autosomal dominant
+OTHER pedhd-gen-12
+  STEM: A mother comes to see the geneticist. She has two children, Robert and Elizabeth. They both suffer from a genetic disorder. The geneticist takes a history and draws the family tree (shown in the opposite figure). What is the likely pattern of inheritance in this disorder?
+  OPTIONS: Autosomal dominant | Autosomal recessive | Imprinting from uniparental disomy | X-linked dominant | X-linked recessive
+  KEY: Autosomal dominant
+
+=== n 566
+BOOK pedsa-b9-13
+  STEM: George has Klinefelter syndrome. What is his karyotype? Select one answer only.
+  OPTIONS: 46, XO | 46, XY | 45, XO | 45, XY | 47, XXY
+  KEY: 47, XXY
+OTHER pedep2-gen-22
+  STEM: George has Klinefelter syndrome. What is his karyotype?
+  OPTIONS: 46, XO | 46, XY | 45, XO | 45, XY | 47, XXY
+  KEY: 47, XXY
+
+=== n 567
+BOOK pedsa-b9-13
+  STEM: George has Klinefelter syndrome. What is his karyotype? Select one answer only.
+  OPTIONS: 46, XO | 46, XY | 45, XO | 45, XY | 47, XXY
+  KEY: 47, XXY
+OTHER pedhd-gen-13
+  STEM: George has Klinefelter syndrome. What is his karyotype?
+  OPTIONS: 46, XO | 46, XY | 45, XO | 45, XY | 47, XXY
+  KEY: 47, XXY
+
+=== n 568
+BOOK pedsa-b9-15-1
+  STEM: The following (A–N) is a list of genetic disorders. For each child described select the most likely genetic diagnosis from the list. Each answer may be used, more than once, or not at all. Rachael is a 3-month-old girl who attends the Emergency Department because of rapid breathing. She is the 5th infant born to a 39-year-old mother. When you take her developmental history, you find she smiled at 7 weeks but is unable to hold her head unsupported. On examination, she is tachypnoeic, sweaty and hypotonic. Her clinical appearance can be seen in Fig. 9.7. You plot her weight and she is below the 0.4th centile.
+  OPTIONS: Achondroplasia | Angelman syndrome | Cystic fibrosis | Down syndrome | Duchenne muscular dystrophy | Edward syndrome | Fragile X syndrome | Klinefelter syndrome | Neurofibromatosis | Noonan syndrome | Patau syndrome | Prader–Willi syndrome | Turner syndrome | Williams syndrome
+  KEY: Down syndrome
+OTHER pedep2-gen-23
+  STEM: Rachael is a 3-month-old girl who attends the Emergency Department because of rapid breathing. She is the seventh infant born to a 39-year-old mother. On developmental history, she smiled at 7 weeks but cannot yet hold her head unsupported. On examination, she is tachypnoeic, sweaty, and hypotonic. Her weight is below the 0.4th centile. What is the most likely diagnosis?
+  OPTIONS: Achondroplasia | Down syndrome | Turner syndrome | Klinefelter syndrome | Prader-Willi syndrome
+  KEY: Down syndrome
+
+=== n 569
+BOOK pedsa-b9-15-1
+  STEM: The following (A–N) is a list of genetic disorders. For each child described select the most likely genetic diagnosis from the list. Each answer may be used, more than once, or not at all. Rachael is a 3-month-old girl who attends the Emergency Department because of rapid breathing. She is the 5th infant born to a 39-year-old mother. When you take her developmental history, you find she smiled at 7 weeks but is unable to hold her head unsupported. On examination, she is tachypnoeic, sweaty and hypotonic. Her clinical appearance can be seen in Fig. 9.7. You plot her weight and she is below the 0.4th centile.
+  OPTIONS: Achondroplasia | Angelman syndrome | Cystic fibrosis | Down syndrome | Duchenne muscular dystrophy | Edward syndrome | Fragile X syndrome | Klinefelter syndrome | Neurofibromatosis | Noonan syndrome | Patau syndrome | Prader–Willi syndrome | Turner syndrome | Williams syndrome
+  KEY: Down syndrome
+OTHER pedhd-gen-14
+  STEM: Rachael is a 3-month-old girl who attends the Emergency Department because of rapid breathing. She is the 5th infant born to a 39-year-old mother. When you take her developmental history, you find she smiled at 7 weeks but is unable to hold her head unsupported. On examination, she is tachypnoeic, sweaty and hypotonic. Her clinical appearance can be seen in the opposite figure. You plot her weight and she is below the 0.4th centile. Which of the following is the most likely diagnosis?
+  OPTIONS: Achondroplasia | Down syndrome | Turner syndrome | Klinefelter syndrome | Prader–Willi syndrome
+  KEY: Down syndrome
+
+=== n 570
+BOOK pedsa-b9-16-1
+  STEM: For each of the case summaries below, select the most likely mode of genetic inheritance from the list (A–G) below. Each answer can be used once, more than once, or not at all. Jack is a 3-year-old boy whose father has a genetic disorder associated with short stature. Jack is also very short, has bowed legs and a very prominent forehead. His head is disproportionately large compared with his body size.
+  OPTIONS: Autosomal dominant disorder | Autosomal recessive disorder | Imprinting from uniparental disomy | Microdeletion | Polygenic | X-linked dominant | X-linked recessive
+  KEY: Autosomal dominant disorder
+OTHER pedep2-mf2-21
+  STEM: Jack is a 3-year-old boy whose father has a genetic disorder associated with short stature. Jack is also very short, has bowed legs and a very prominent forehead. His head is disproportionately large compared with his body size. Which of the following is the most likely mode of genetic inheritance of this disorder?
+  OPTIONS: Autosomal dominant disorder | Autosomal recessive disorder | X-linked dominant | X-linked recessive | Microdeletion
+  KEY: Autosomal dominant disorder

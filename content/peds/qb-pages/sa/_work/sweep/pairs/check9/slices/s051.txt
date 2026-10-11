@@ -1,0 +1,99 @@
+=== n 51
+BOOK pedsa-b11-8-2
+  STEM: The following is a list of diagnoses that are associated with jaundice in the newborn period. For each of the following scenarios pick the most likely cause of the jaundice. Each answer may be used once, more than once, or not at all. Alfie is a 3-week-old male infant whose mother is concerned that his stools are pale. He is breastfed. On examination he is jaundiced, has mild hepatomegaly and has only just regained his birthweight.
+  OPTIONS: ABO incompatibility | Biliary atresia | Breast milk jaundice | Congenital hypothyroidism | Congenital infection with cytomegalovirus | Crigler–Najjar syndrome | G6PD deficiency | Physiological jaundice | Rhesus haemolytic disease | Sepsis | Urinary tract infection
+  KEY: Biliary atresia
+OTHER pedhd-neo-9
+  STEM: Alfie is a 3-week-old male infant whose mother is concerned that his stools are pale. He is breastfed. On examination he is jaundiced, has mild hepatomegaly and has only just regained his birthweight. Which of the following is the most likely cause of the jaundice in that patient?
+  OPTIONS: ABO incompatibility | Biliary atresia | Breastmilk jaundice | Physiological jaundice | Rhesus hemolytic disease
+  KEY: Biliary atresia
+
+=== n 52
+BOOK pedsa-b11-8-3
+  STEM: The following is a list of diagnoses that are associated with jaundice in the newborn period. For each of the following scenarios pick the most likely cause of the jaundice. Each answer may be used once, more than once, or not at all. Poppy is 2 weeks old and is breastfed. She is thriving but is jaundiced. The midwife does a bilirubin which is moderately raised at 170 µmol/L, and is nearly all unconjugated. A urine dipstick is negative.
+  OPTIONS: ABO incompatibility | Biliary atresia | Breast milk jaundice | Congenital hypothyroidism | Congenital infection with cytomegalovirus | Crigler–Najjar syndrome | G6PD deficiency | Physiological jaundice | Rhesus haemolytic disease | Sepsis | Urinary tract infection
+  KEY: Breast milk jaundice
+OTHER pedep-neo-10
+  STEM: Poppy is a 2-week-old breastfed baby who is thriving but jaundiced. Her bilirubin level is 170 μmol/L and nearly all unconjugated. Urine dipstick is negative. What is the most likely cause?
+  OPTIONS: ABO incompatibility | Biliary atresia | Breastmilk jaundice | Physiological jaundice | Rhesus hemolytic disease
+  KEY: Breastmilk jaundice
+
+=== n 53
+BOOK pedsa-b11-8-3
+  STEM: The following is a list of diagnoses that are associated with jaundice in the newborn period. For each of the following scenarios pick the most likely cause of the jaundice. Each answer may be used once, more than once, or not at all. Poppy is 2 weeks old and is breastfed. She is thriving but is jaundiced. The midwife does a bilirubin which is moderately raised at 170 µmol/L, and is nearly all unconjugated. A urine dipstick is negative.
+  OPTIONS: ABO incompatibility | Biliary atresia | Breast milk jaundice | Congenital hypothyroidism | Congenital infection with cytomegalovirus | Crigler–Najjar syndrome | G6PD deficiency | Physiological jaundice | Rhesus haemolytic disease | Sepsis | Urinary tract infection
+  KEY: Breast milk jaundice
+OTHER pedep-neo-23
+  STEM: Talia is 2 weeks old and is breastfed. She is active and thriving but is jaundiced. Her bilirubin level is moderately raised at 10 mg/dl and is nearly all unconjugated. A urine dipstick is -VE. The following is a list of diagnoses that are associated with jaundice in the newborn period. Pick the most likely cause of the jaundice in this condition.
+  OPTIONS: ABO incompatibility | Biliary atresia | Breast milk jaundice | Congenital hypothyroidism | Neonatal infection
+  KEY: Breast milk jaundice
+
+=== n 54
+BOOK pedsa-b11-8-3
+  STEM: The following is a list of diagnoses that are associated with jaundice in the newborn period. For each of the following scenarios pick the most likely cause of the jaundice. Each answer may be used once, more than once, or not at all. Poppy is 2 weeks old and is breastfed. She is thriving but is jaundiced. The midwife does a bilirubin which is moderately raised at 170 µmol/L, and is nearly all unconjugated. A urine dipstick is negative.
+  OPTIONS: ABO incompatibility | Biliary atresia | Breast milk jaundice | Congenital hypothyroidism | Congenital infection with cytomegalovirus | Crigler–Najjar syndrome | G6PD deficiency | Physiological jaundice | Rhesus haemolytic disease | Sepsis | Urinary tract infection
+  KEY: Breast milk jaundice
+OTHER pedhd-neo-10
+  STEM: Poppy is 2 weeks old and is breastfed. She is thriving but is jaundiced. The midwife does a bilirubin which is moderately raised at 170 µmol/L, and is nearly all unconjugated. A urine dipstick is negative. Which of the following is the most likely cause of the jaundice in that patient?
+  OPTIONS: ABO incompatibility | Biliary atresia | Breastmilk jaundice | Physiological jaundice | Rhesus hemolytic disease
+  KEY: Breastmilk jaundice
+
+=== n 55
+BOOK pedsa-b11-8-4
+  STEM: The following is a list of diagnoses that are associated with jaundice in the newborn period. For each of the following scenarios pick the most likely cause of the jaundice. Each answer may be used once, more than once, or not at all. Dimitri is 20 hours old and is noted to be markedly jaundiced, needing intensive phototherapy. Maternal blood is group A rhesus positive. His blood group is group A rhesus positive. He has been breastfeeding well. On examination he is markedly jaundiced, but is alert and active.
+  OPTIONS: ABO incompatibility | Biliary atresia | Breast milk jaundice | Congenital hypothyroidism | Congenital infection with cytomegalovirus | Crigler–Najjar syndrome | G6PD deficiency | Physiological jaundice | Rhesus haemolytic disease | Sepsis | Urinary tract infection
+  KEY: G6PD deficiency
+OTHER pedep-neo-11
+  STEM: Dimitri is 20 hours old and markedly jaundiced, requiring intensive phototherapy. Both mother and baby are group A Rhesus positive. He is feeding well and is alert. What is the most likely cause?
+  OPTIONS: ABO incompatibility | Biliary atresia | Breastmilk jaundice | G6PD deficiency | Rhesus hemolytic disease
+  KEY: G6PD deficiency
+
+=== n 56
+BOOK pedsa-b11-8-4
+  STEM: The following is a list of diagnoses that are associated with jaundice in the newborn period. For each of the following scenarios pick the most likely cause of the jaundice. Each answer may be used once, more than once, or not at all. Dimitri is 20 hours old and is noted to be markedly jaundiced, needing intensive phototherapy. Maternal blood is group A rhesus positive. His blood group is group A rhesus positive. He has been breastfeeding well. On examination he is markedly jaundiced, but is alert and active.
+  OPTIONS: ABO incompatibility | Biliary atresia | Breast milk jaundice | Congenital hypothyroidism | Congenital infection with cytomegalovirus | Crigler–Najjar syndrome | G6PD deficiency | Physiological jaundice | Rhesus haemolytic disease | Sepsis | Urinary tract infection
+  KEY: G6PD deficiency
+OTHER pedhd-neo-11
+  STEM: Dimitri is 20 hours old and is noted to be markedly jaundiced, needing intensive phototherapy. Maternal blood is group A rhesus positive. His blood group is group A rhesus positive. He has been breastfeeding well. On examination he is markedly jaundiced, but is alert and active. Which of the following is the most likely cause of the jaundice in that patient?
+  OPTIONS: ABO incompatibility | Biliary atresia | Breastmilk jaundice | G6PD deficiency | Rhesus hemolytic disease
+  KEY: G6PD deficiency
+
+=== n 57
+BOOK pedsa-b11-9-1
+  STEM: The following is a list (A–L) of diagnoses that are associated with respiratory distress in the newborn period. For each of the following scenarios pick the most likely cause of the jaundice. Each answer may be used once, more than once or not at all. For each of the scenarios, choose the most likely diagnosis from the list. Rebecca was born 48 hours ago at term. She weighed 3.2 kg. You are asked to review her on the postnatal ward as she is breathing very quickly. She is not feeding. On examination she is breathing at 68 breaths/min and has mild chest recession. She looks unwell. You cannot confidently feel her femoral pulses. Her oxygen saturation is 85% in air.
+  OPTIONS: Anaemia | Bronchopulmonary dysplasia (BPD) | Coarctation of the aorta | Diaphragmatic hernia | Heart failure | Meconium aspiration | Persistent pulmonary hypertension of the newborn | Pneumonia | Pneumothorax | Respiratory distress syndrome | Tracheo-oesphageal fistula | Transient tachypnoea of the newborn
+  KEY: Coarctation of the aorta
+OTHER pedep2-mf1-73
+  STEM: A girl was born 48 hours ago at term. She weighed 3.2 kg. You are asked to review her on the postnatal ward as she is breathing very quickly. She is not feeding. On examination, she is breathing at 68 breaths/min and has mild chest recession. She looks unwell. You cannot confidently feel her femoral pulses. Her oxygen saturation is 85% in air. What is the most likely diagnosis?
+  OPTIONS: Heart failure | Fallot's tetralogy | Pneumonia | Coarctation of the aorta | Supraventricular tachycardia
+  KEY: Coarctation of the aorta
+
+=== n 58
+BOOK pedsa-b11-9-1
+  STEM: The following is a list (A–L) of diagnoses that are associated with respiratory distress in the newborn period. For each of the following scenarios pick the most likely cause of the jaundice. Each answer may be used once, more than once or not at all. For each of the scenarios, choose the most likely diagnosis from the list. Rebecca was born 48 hours ago at term. She weighed 3.2 kg. You are asked to review her on the postnatal ward as she is breathing very quickly. She is not feeding. On examination she is breathing at 68 breaths/min and has mild chest recession. She looks unwell. You cannot confidently feel her femoral pulses. Her oxygen saturation is 85% in air.
+  OPTIONS: Anaemia | Bronchopulmonary dysplasia (BPD) | Coarctation of the aorta | Diaphragmatic hernia | Heart failure | Meconium aspiration | Persistent pulmonary hypertension of the newborn | Pneumonia | Pneumothorax | Respiratory distress syndrome | Tracheo-oesphageal fistula | Transient tachypnoea of the newborn
+  KEY: Coarctation of the aorta
+OTHER pedep-neo-12
+  STEM: Rebecca was born 48 hours ago at term weighing 3.2 kg. She is breathing very quickly and not feeding. On examination, respiratory rate is 68 breaths/min, with mild chest recession. She appears unwell. Femoral pulses are weak, and oxygen saturation is 85% in air. What is the most likely diagnosis?
+  OPTIONS: Pneumonia | Transient tachypnoea of the newborn | Coarctation of the aorta | Respiratory distress syndrome | Anaemia
+  KEY: Coarctation of the aorta
+
+=== n 59
+BOOK pedsa-b11-9-1
+  STEM: The following is a list (A–L) of diagnoses that are associated with respiratory distress in the newborn period. For each of the following scenarios pick the most likely cause of the jaundice. Each answer may be used once, more than once or not at all. For each of the scenarios, choose the most likely diagnosis from the list. Rebecca was born 48 hours ago at term. She weighed 3.2 kg. You are asked to review her on the postnatal ward as she is breathing very quickly. She is not feeding. On examination she is breathing at 68 breaths/min and has mild chest recession. She looks unwell. You cannot confidently feel her femoral pulses. Her oxygen saturation is 85% in air.
+  OPTIONS: Anaemia | Bronchopulmonary dysplasia (BPD) | Coarctation of the aorta | Diaphragmatic hernia | Heart failure | Meconium aspiration | Persistent pulmonary hypertension of the newborn | Pneumonia | Pneumothorax | Respiratory distress syndrome | Tracheo-oesphageal fistula | Transient tachypnoea of the newborn
+  KEY: Coarctation of the aorta
+OTHER pedhd-neo-12
+  STEM: Rebecca was born 48 hours ago at term. She weighed 3.2 kg. You are asked to review her on the postnatal ward as she is breathing very quickly. She is not feeding. On examination she is breathing at 68 breaths/min and has mild chest recession. She looks unwell. You cannot confidently feel her femoral pulses. Her oxygen saturation is 85% in air. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Pneumonia | Transient tachypnoea of the newborn | Coarctation of the aorta | Respiratory distress syndrome | Anaemia
+  KEY: Coarctation of the aorta
+
+=== n 60
+BOOK pedsa-b11-9-2
+  STEM: The following is a list (A–L) of diagnoses that are associated with respiratory distress in the newborn period. For each of the following scenarios pick the most likely cause of the jaundice. Each answer may be used once, more than once or not at all. For each of the scenarios, choose the most likely diagnosis from the list. Zak, a full-term male infant, with a birth weight of 3.7 kg, is born by elective caesarean section. His mother was well during pregnancy and had normal blood glucose screen. Zak becomes tachypnoeic with indrawing between his ribs at 2 hours of age. Examination is otherwise normal. A chest X-ray looks normal.
+  OPTIONS: Anaemia | Bronchopulmonary dysplasia (BPD) | Coarctation of the aorta | Diaphragmatic hernia | Heart failure | Meconium aspiration | Persistent pulmonary hypertension of the newborn | Pneumonia | Pneumothorax | Respiratory distress syndrome | Tracheo-oesphageal fistula | Transient tachypnoea of the newborn
+  KEY: Transient tachypnoea of the newborn
+OTHER pedep-neo-13
+  STEM: Zak, a full-term male infant, weighing 3.7 kg, is born by elective caesarean section. He becomes tachypnoeic with indrawing at 2 hours of age. Examination and chest X-ray are otherwise normal. What is the most likely diagnosis?
+  OPTIONS: Pneumonia | Transient tachypnoea of the newborn | Coarctation of the aorta | Respiratory distress syndrome | Anaemia
+  KEY: Transient tachypnoea of the newborn

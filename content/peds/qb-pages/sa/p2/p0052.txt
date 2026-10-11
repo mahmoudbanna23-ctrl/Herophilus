@@ -1,0 +1,18 @@
+7.18 · MANAGEMENT
+
+A child with acute kidney injury has a potassium of 7.4 mmol/L with peaked T waves on the ECG.
+What is given FIRST?
+
+ A. Calcium gluconate
+ B. Salbutamol nebuliser
+ C. Glucose and insulin
+D. Calcium exchange resin
+ E. Dialysis
+
+Answer: A.
+
+Calcium gluconate protects the myocardium when there are ECG changes — it does not lower the
+potassium. Then salbutamol and glucose/insulin shift potassium into cells, and resin or dialysis
+removes it. Prerenal failure is the commonest AKI in children; HUS and acute tubular necrosis are the
+commonest renal causes.
+

@@ -1,0 +1,7 @@
+AGENTS.md loaded — Herophilus
+
+PASS-WITH-NOTES. Report written: [_work/refute-book.md](D:\claude os\Medical school\Herophilus\content\peds\qb-pages\sa\_work\refute-book.md).
+
+Faults by test: T1–T7: 0 confirmed; T8: 18 `figs` entries have no PDF page. Worst IDs: b4-9-4, b4-10-1, b6-7, b12-3, b13-3, b22-7, b23-1, b23-5, b23-6, b23-7-1.
+
+Could not establish in-book pages for figure/table citations that point to the external Illustrated Textbook; no page was guessed.

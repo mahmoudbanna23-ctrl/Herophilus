@@ -1,0 +1,99 @@
+=== n 91
+BOOK pedsa-b13-6
+  STEM: Harry is a 13-year-old boy who attends the paediatric clinic because of obesity. His height is on the 98th centile and his weight is above the 99.6th centile. Which of the following is least likely to be associated with obesity? Select one answer only.
+  OPTIONS: Asthma | Hypertension | Low self-esteem | Slipped upper femoral epiphysis | Type 1 diabetes
+  KEY: Type 1 diabetes
+OTHER pedhd-nutr-6
+  STEM: Harry is a 13-year-old boy who attends the paediatric clinic because of obesity. His height is on the 98th centile and his weight is above the 99.6th centile. Which of the following is least likely to be associated with obesity?
+  OPTIONS: Asthma | Hypertension | Low self-esteem | Slipped upper femoral epiphysis | Type 1 diabetes
+  KEY: Type 1 diabetes
+
+=== n 92
+BOOK pedsa-b13-7-1
+  STEM: For each of the following patients with nutritional problems select the most likely diagnosis from the list (A–J) below. Each option may be used once, more than once, or not at all. Ahmed is an 18-month-old Pakistani boy who was born in the UK with a weight of 3.2 kg. He is on a mixed diet. His height is on the 10th centile and his weight is on the 0.4th centile. He is noted to be miserable. On examination, his wrists also feel wider than normal.
+  OPTIONS: Cow’s milk protein allergy | Cystic fibrosis | Kwashiorkor | Marasmus | Normal | Obesity | Vitamin A deficiency | Vitamin C deficiency | Vitamin D deficiency | Vitamin K deficiency
+  KEY: Vitamin D deficiency
+OTHER pedep-nut-7
+  STEM: Ahmed is an 18-month-old Pakistani boy who was born in the UK with a weight of 3.2 kg. He is on a mixed diet. His height is on the 10th centile and his weight is on the 0.4th centile. He is noted to be miserable. On examination, his wrists feel wider than normal. Which of the following is the most likely diagnosis?
+  OPTIONS: Vitamin D deficiency | Vitamin K deficiency | Kwashiorkor | Marasmus | Cow's milk protein allergy
+  KEY: Vitamin D deficiency
+
+=== n 93
+BOOK pedsa-b13-7-1
+  STEM: For each of the following patients with nutritional problems select the most likely diagnosis from the list (A–J) below. Each option may be used once, more than once, or not at all. Ahmed is an 18-month-old Pakistani boy who was born in the UK with a weight of 3.2 kg. He is on a mixed diet. His height is on the 10th centile and his weight is on the 0.4th centile. He is noted to be miserable. On examination, his wrists also feel wider than normal.
+  OPTIONS: Cow’s milk protein allergy | Cystic fibrosis | Kwashiorkor | Marasmus | Normal | Obesity | Vitamin A deficiency | Vitamin C deficiency | Vitamin D deficiency | Vitamin K deficiency
+  KEY: Vitamin D deficiency
+OTHER pedhd-nutr-7
+  STEM: Ahmed is an 18-month-old Pakistani boy who was born in the UK with a weight of 3.2 kg. He is on a mixed diet. His height is on the 10th centile and his weight is on the 0.4th centile. He is noted to be miserable. On examination, his wrists also feel wider than normal. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Vitamin D deficiency | Vitamin K deficiency | Kwashiorkor | Marasmus | Cow's milk protein allergy
+  KEY: Vitamin D deficiency
+
+=== n 94
+BOOK pedsa-b13-7-2
+  STEM: For each of the following patients with nutritional problems select the most likely diagnosis from the list (A–J) below. Each option may be used once, more than once, or not at all. Harry is a 3-week-old infant who has been exclusively breastfed by his mother. He was born at home as his mother wanted ‘everything to be natural’ and declined all interventions. His birthweight was 3.4 kg. He presents to the hospital with severe rectal bleeding and shock.
+  OPTIONS: Cow’s milk protein allergy | Cystic fibrosis | Kwashiorkor | Marasmus | Normal | Obesity | Vitamin A deficiency | Vitamin C deficiency | Vitamin D deficiency | Vitamin K deficiency
+  KEY: Vitamin K deficiency
+OTHER pedep-nut-8
+  STEM: Harry is a 3-week-old infant who has been exclusively breastfed by his mother. He was born at home as his mother wanted “everything to be natural” and declined all interventions. His birthweight was 3.4 kg. He presents to the hospital with severe rectal bleeding and shock. Which of the following is the most likely diagnosis?
+  OPTIONS: Vitamin D deficiency | Vitamin K deficiency | Kwashiorkor | Marasmus | Cow's milk protein allergy
+  KEY: Vitamin K deficiency
+
+=== n 95
+BOOK pedsa-b13-7-2
+  STEM: For each of the following patients with nutritional problems select the most likely diagnosis from the list (A–J) below. Each option may be used once, more than once, or not at all. Harry is a 3-week-old infant who has been exclusively breastfed by his mother. He was born at home as his mother wanted ‘everything to be natural’ and declined all interventions. His birthweight was 3.4 kg. He presents to the hospital with severe rectal bleeding and shock.
+  OPTIONS: Cow’s milk protein allergy | Cystic fibrosis | Kwashiorkor | Marasmus | Normal | Obesity | Vitamin A deficiency | Vitamin C deficiency | Vitamin D deficiency | Vitamin K deficiency
+  KEY: Vitamin K deficiency
+OTHER pedhd-nutr-8
+  STEM: Harry is a 3-week-old infant who has been exclusively breastfed by his mother. He was born at home as his mother wanted ‘everything to be natural’ and declined all interventions. His birthweight was 3.4 kg. He presents to the hospital with severe rectal bleeding and shock. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Vitamin D deficiency | Vitamin K deficiency | Kwashiorkor | Marasmus | Cow's milk protein allergy
+  KEY: Vitamin K deficiency
+
+=== n 96
+BOOK pedsa-b13-7-3
+  STEM: For each of the following patients with nutritional problems select the most likely diagnosis from the list (A–J) below. Each option may be used once, more than once, or not at all. Jonas is an 18-month-old black African boy in KwaZulu Natal, South Africa. He was born weighing 3.2 kg. He was breastfed until 9 months of age when his sibling was born. He now mainly eats the traditional maize-based porridge, which is grown on the family farm. His weight is just below the 0.4th centile. He looks thin but has a distended abdomen. There is oedema around his eyes and the top of his feet. His hair has a red tinge.
+  OPTIONS: Cow’s milk protein allergy | Cystic fibrosis | Kwashiorkor | Marasmus | Normal | Obesity | Vitamin A deficiency | Vitamin C deficiency | Vitamin D deficiency | Vitamin K deficiency
+  KEY: Kwashiorkor
+OTHER pedep-mf3-15
+  STEM: An 18-month-old boy is brought to the pediatrician for a routine checkup. His birth weight was 3.2 kg and he was breastfed until 10 months of age when his mother gave birth to another baby. He now mainly eats a maize-based diet and his weight is below the 3rd centile. There is edema around his eyes and the dorsum of his feet. What is the most likely diagnosis?
+  OPTIONS: Vitamin A deficiency | Kwashiorkor | Marasmus | Normal | Vitamin D deficiency
+  KEY: Kwashiorkor
+
+=== n 97
+BOOK pedsa-b13-7-3
+  STEM: For each of the following patients with nutritional problems select the most likely diagnosis from the list (A–J) below. Each option may be used once, more than once, or not at all. Jonas is an 18-month-old black African boy in KwaZulu Natal, South Africa. He was born weighing 3.2 kg. He was breastfed until 9 months of age when his sibling was born. He now mainly eats the traditional maize-based porridge, which is grown on the family farm. His weight is just below the 0.4th centile. He looks thin but has a distended abdomen. There is oedema around his eyes and the top of his feet. His hair has a red tinge.
+  OPTIONS: Cow’s milk protein allergy | Cystic fibrosis | Kwashiorkor | Marasmus | Normal | Obesity | Vitamin A deficiency | Vitamin C deficiency | Vitamin D deficiency | Vitamin K deficiency
+  KEY: Kwashiorkor
+OTHER pedep-nut-9
+  STEM: Jonas is an 18-month-old Black African boy in KwaZulu-Natal, South Africa. He was born weighing 3.2 kg. He was breastfed until 9 months of age when his sibling was born. He now mainly eats traditional maize-based porridge, which is grown on the family farm. His weight is just below the 0.4th centile. He looks thin but has a distended abdomen. There is oedema around his eyes and feet. His hair has a red tinge. Which of the following is the most likely diagnosis?
+  OPTIONS: Vitamin D deficiency | Vitamin K deficiency | Kwashiorkor | Marasmus | Cow's milk protein allergy
+  KEY: Kwashiorkor
+
+=== n 98
+BOOK pedsa-b13-7-3
+  STEM: For each of the following patients with nutritional problems select the most likely diagnosis from the list (A–J) below. Each option may be used once, more than once, or not at all. Jonas is an 18-month-old black African boy in KwaZulu Natal, South Africa. He was born weighing 3.2 kg. He was breastfed until 9 months of age when his sibling was born. He now mainly eats the traditional maize-based porridge, which is grown on the family farm. His weight is just below the 0.4th centile. He looks thin but has a distended abdomen. There is oedema around his eyes and the top of his feet. His hair has a red tinge.
+  OPTIONS: Cow’s milk protein allergy | Cystic fibrosis | Kwashiorkor | Marasmus | Normal | Obesity | Vitamin A deficiency | Vitamin C deficiency | Vitamin D deficiency | Vitamin K deficiency
+  KEY: Kwashiorkor
+OTHER pedhd-nutr-9
+  STEM: Jonas is an 18-month-old black African boy in KwaZulu Natal, South Africa. He was born weighing 3.2 kg. He was breastfed until 9 months of age when his sibling was born. He now mainly eats the traditional maize-based porridge, which is grown on the family farm. His weight is just below the 0.4th centile. He looks thin but has a distended abdomen. There is oedema around his eyes and the top of his feet. His hair has a red tinge. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Vitamin D deficiency | Vitamin K deficiency | Kwashiorkor | Marasmus | Cow's milk protein allergy
+  KEY: Kwashiorkor
+
+=== n 99
+BOOK pedsa-b13-7-4
+  STEM: For each of the following patients with nutritional problems select the most likely diagnosis from the list (A–J) below. Each option may be used once, more than once, or not at all. Jamie is a 5-month-old male infant who was born with a weight of 3.5 kg (25th centile). He was initially breastfed and was growing well. His mother developed mastitis and so he was changed to formula milk feeds. He now weighs 5.0 kg (<0.4th centile). He has frequent loose stools and eczema.
+  OPTIONS: Cow’s milk protein allergy | Cystic fibrosis | Kwashiorkor | Marasmus | Normal | Obesity | Vitamin A deficiency | Vitamin C deficiency | Vitamin D deficiency | Vitamin K deficiency
+  KEY: Cow’s milk protein allergy
+OTHER pedep-nut-10
+  STEM: Jamie is a 5-month-old male infant who was born with a weight of 3.5 kg (25th centile). He was initially breastfed and was growing well. His mother developed mastitis, so he was changed to formula milk. He now weighs 5.0 kg (<0.4th centile). He has frequent loose stools and eczema. Which of the following is the most likely diagnosis?
+  OPTIONS: Vitamin D deficiency | Vitamin K deficiency | Kwashiorkor | Marasmus | Cow's milk protein allergy
+  KEY: Cow's milk protein allergy
+
+=== n 100
+BOOK pedsa-b13-7-4
+  STEM: For each of the following patients with nutritional problems select the most likely diagnosis from the list (A–J) below. Each option may be used once, more than once, or not at all. Jamie is a 5-month-old male infant who was born with a weight of 3.5 kg (25th centile). He was initially breastfed and was growing well. His mother developed mastitis and so he was changed to formula milk feeds. He now weighs 5.0 kg (<0.4th centile). He has frequent loose stools and eczema.
+  OPTIONS: Cow’s milk protein allergy | Cystic fibrosis | Kwashiorkor | Marasmus | Normal | Obesity | Vitamin A deficiency | Vitamin C deficiency | Vitamin D deficiency | Vitamin K deficiency
+  KEY: Cow’s milk protein allergy
+OTHER pedhd-nutr-10
+  STEM: Jamie is a 5-month-old male infant who was born with a weight of 3.5 kg (25th centile). He was initially breastfed and was growing well. His mother developed mastitis and so he was changed to formula milk feeds. He now weighs 5.0 kg (<0.4th centile). He has frequent loose stools and eczema. Which of the following is the most likely diagnosis of that patient?
+  OPTIONS: Vitamin D deficiency | Vitamin K deficiency | Kwashiorkor | Marasmus | Cow's milk protein allergy
+  KEY: Cow's milk protein allergy

@@ -1,0 +1,99 @@
+=== n 261
+BOOK pedsa-b19-11-3
+  STEM: Below is a list of possible diagnoses (A–H) for which urinalysis may be undertaken. For each of the following patients who have urine microscopy and culture sent from the Emergency Department, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Gary is a 6-month-old boy. He has been febrile for 1 day, is feeding poorly and has difficulty breathing. On examination he has a respiratory rate of 60 breaths/min, marked chest recession and on auscultation has widespread wheeze and fine crepitations. He needs admission for oxygen therapy. A urine sample was sent from the Emergency Department and you receive the following results: white blood cells <50/mm³ ; red blood cells, none seen; organisms, none seen; red cell casts, none seen; culture, mixed coliforms.
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection | Vulvovaginitis
+  KEY: Perineal contamination
+OTHER pedhd-renal-12
+  STEM: Gary is a 6-month-old boy. He has been febrile for 1 day, is feeding poorly and has difficulty breathing. On examination he has a respiratory rate of 60 breaths/min, marked chest recession and on auscultation has widespread wheeze and fine crepitations. He needs admission for oxygen therapy. A urine sample was sent from the Emergency Department and you receive the following results: white blood cells <50/mm³; red blood cells, none seen; organisms, none seen; red cell casts, none seen; culture, mixed coliforms. Which of the following is the most likely diagnosis?
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Perineal contamination | Urinary tract infection (UTI)
+  KEY: Perineal contamination
+
+=== n 262
+BOOK pedsa-b19-11-4
+  STEM: Below is a list of possible diagnoses (A–H) for which urinalysis may be undertaken. For each of the following patients who have urine microscopy and culture sent from the Emergency Department, select the most likely diagnosis. Each option may be used once, more than once, or not at all. George is a 7-year-old boy who presents to his family doctor with cloudy urine. He has no other symptoms and his examination is normal. You obtain the following result from the microscopy and culture: white blood cells 50–100/mm³ ; red blood cells, many seen; organisms, none seen; red cell casts seen; culture, negative at 48 hours.
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection | Vulvovaginitis
+  KEY: Glomerulonephritis
+OTHER pedep2-ren-13
+  STEM: George, a 7-year-old boy, presents to his family doctor with cloudy urine. He has no other symptoms, and his examination is normal. Urine microscopy and culture reveal: white blood cells 50–100/mm^2; red blood cells, many seen; organisms, none seen; red cell casts seen; culture, negative at 48 hours. Which of the following is the most likely diagnosis?
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Perineal contamination | Urinary tract infection (UTI)
+  KEY: Glomerulonephritis
+
+=== n 263
+BOOK pedsa-b19-11-4
+  STEM: Below is a list of possible diagnoses (A–H) for which urinalysis may be undertaken. For each of the following patients who have urine microscopy and culture sent from the Emergency Department, select the most likely diagnosis. Each option may be used once, more than once, or not at all. George is a 7-year-old boy who presents to his family doctor with cloudy urine. He has no other symptoms and his examination is normal. You obtain the following result from the microscopy and culture: white blood cells 50–100/mm³ ; red blood cells, many seen; organisms, none seen; red cell casts seen; culture, negative at 48 hours.
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection | Vulvovaginitis
+  KEY: Glomerulonephritis
+OTHER pedep2-ren-35
+  STEM: George is a 7-year-old boy who presents to his family doctor with cloudy urine. He has no other symptoms, and his examination is normal. You obtain the following result from the microscopy and culture: white blood cells 50-100/mm3; red blood cells, many seen; organisms, none seen; red cell casts seen; culture, negative at 48 hours. What is the most likely diagnosis?
+  OPTIONS: Glomerulonephritis | Urinary tract infection | Nephrotic syndrome | Kidney stones
+  KEY: Glomerulonephritis
+
+=== n 264
+BOOK pedsa-b19-11-4
+  STEM: Below is a list of possible diagnoses (A–H) for which urinalysis may be undertaken. For each of the following patients who have urine microscopy and culture sent from the Emergency Department, select the most likely diagnosis. Each option may be used once, more than once, or not at all. George is a 7-year-old boy who presents to his family doctor with cloudy urine. He has no other symptoms and his examination is normal. You obtain the following result from the microscopy and culture: white blood cells 50–100/mm³ ; red blood cells, many seen; organisms, none seen; red cell casts seen; culture, negative at 48 hours.
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection | Vulvovaginitis
+  KEY: Glomerulonephritis
+OTHER pedhd-renal-13
+  STEM: George is a 7-year-old boy who presents to his family doctor with cloudy urine. He has no other symptoms and his examination is normal. You obtain the following result from the microscopy and culture: white blood cells 50–100/mm³; red blood cells, many seen; organisms, none seen; red cell casts seen; culture, negative at 48 hours. Which of the following is the most likely diagnosis?
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Perineal contamination | Urinary tract infection (UTI)
+  KEY: Glomerulonephritis
+
+=== n 265
+BOOK pedsa-b19-11-5
+  STEM: Below is a list of possible diagnoses (A–H) for which urinalysis may be undertaken. For each of the following patients who have urine microscopy and culture sent from the Emergency Department, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Gregor is a 6-week-old baby who has recently moved to the UK from Estonia. He presents with fever and irritability. On examination he is clinically shocked. Because of the urgency to obtain a sample you take a catheter urine sample and start him immediately on intravenous antibiotics after a bolus of saline. You obtain the following result from the microscopy and culture: white blood cells >200/mm³ ; red blood cells, none seen; organisms seen on microscopy; red cell casts not seen; culture >10⁵ coliforms.
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection | Vulvovaginitis
+  KEY: Urinary tract infection
+OTHER pedep2-ren-14
+  STEM: Gregor is a 6-week-old baby who has recently moved to the UK from Estonia. He presents with fever and irritability. On examination, he is clinically shocked. A catheterized urine sample is taken urgently, and intravenous antibiotics are started after a saline bolus. Microscopy and culture results are: white blood cells >200/mm^2; red blood cells, none seen; organisms seen on microscopy; red cell casts not seen; culture, >10^5 coliforms. Which of the following is the most likely diagnosis?
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Perineal contamination | Urinary tract infection (UTI)
+  KEY: Urinary tract infection (UTI)
+
+=== n 266
+BOOK pedsa-b19-11-5
+  STEM: Below is a list of possible diagnoses (A–H) for which urinalysis may be undertaken. For each of the following patients who have urine microscopy and culture sent from the Emergency Department, select the most likely diagnosis. Each option may be used once, more than once, or not at all. Gregor is a 6-week-old baby who has recently moved to the UK from Estonia. He presents with fever and irritability. On examination he is clinically shocked. Because of the urgency to obtain a sample you take a catheter urine sample and start him immediately on intravenous antibiotics after a bolus of saline. You obtain the following result from the microscopy and culture: white blood cells >200/mm³ ; red blood cells, none seen; organisms seen on microscopy; red cell casts not seen; culture >10⁵ coliforms.
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Normal result | Perineal contamination | Renal stone (calculi) | Urinary tract infection | Vulvovaginitis
+  KEY: Urinary tract infection
+OTHER pedhd-renal-14
+  STEM: Gregor is a 6-week-old baby who has recently moved to the UK from Estonia. He presents with fever and irritability. On examination he is clinically shocked. Because of the urgency to obtain a sample you take a catheter urine sample and start him immediately on intravenous antibiotics after a bolus of saline. You obtain the following result from the microscopy and culture: white blood cells >200/mm³; red blood cells, none seen; organisms seen on microscopy; red cell casts not seen; culture >10⁵ coliforms. Which of the following is the most likely diagnosis?
+  OPTIONS: Balanitis | Glomerulonephritis | Nephrotic syndrome | Perineal contamination | Urinary tract infection (UTI)
+  KEY: Urinary tract infection (UTI)
+
+=== n 267
+BOOK pedsa-b19-12-1
+  STEM: Below is a list (A–J) of renal investigations. For each of the following cases which investigation would you perform next? Each option may be used once, more than once, or not at all. Max is a 12-year-old boy with cerebral palsy and epilepsy. He presents to the Emergency Department with severe right-sided colicky abdominal pain. He has had one episode of this previously, which ended as quickly as it started. Today the pain is so severe that he has needed morphine in the department. On examination you find a generally tender abdomen. He has a temperature of 37° C, heart rate of 160 beats/ min, and his blood pressure is 120/80 mmHg. Urine dipstick has been performed and reveals haematuria.
+  OPTIONS: Antistreptolysin O titre | CT scan of the abdomen | DMSA scan | MAG3 renogram | Micturating cystourethrogram (MCUG) | Plain abdominal X-ray | Plasma creatinine and electrolytes | Ultrasound of the kidneys and urinary tract | Urinary electrolytes | Urine microscopy and culture
+  KEY: Ultrasound of the kidneys and urinary tract
+OTHER pedep2-ren-15
+  STEM: Max, a 12-year-old boy with cerebral palsy and epilepsy, presents to the Emergency Department with severe right-sided colicky abdominal pain. He has had one similar episode previously that resolved spontaneously. Today, the pain is so severe that he requires morphine. On examination, his abdomen is generally tender. Temperature is 37°C, heart rate is 160 beats/min, and blood pressure is 120/80 mmHg. A urine dipstick reveals haematuria. Which of the following investigations would you perform next?
+  OPTIONS: DMSA scan | Urinary electrolytes | Urine microscopy and culture | Ultrasound of the kidneys and urinary tract
+  KEY: Ultrasound of the kidneys and urinary tract
+
+=== n 268
+BOOK pedsa-b19-12-1
+  STEM: Below is a list (A–J) of renal investigations. For each of the following cases which investigation would you perform next? Each option may be used once, more than once, or not at all. Max is a 12-year-old boy with cerebral palsy and epilepsy. He presents to the Emergency Department with severe right-sided colicky abdominal pain. He has had one episode of this previously, which ended as quickly as it started. Today the pain is so severe that he has needed morphine in the department. On examination you find a generally tender abdomen. He has a temperature of 37° C, heart rate of 160 beats/ min, and his blood pressure is 120/80 mmHg. Urine dipstick has been performed and reveals haematuria.
+  OPTIONS: Antistreptolysin O titre | CT scan of the abdomen | DMSA scan | MAG3 renogram | Micturating cystourethrogram (MCUG) | Plain abdominal X-ray | Plasma creatinine and electrolytes | Ultrasound of the kidneys and urinary tract | Urinary electrolytes | Urine microscopy and culture
+  KEY: Ultrasound of the kidneys and urinary tract
+OTHER pedhd-renal-15
+  STEM: Max is a 12-year-old boy with cerebral palsy and epilepsy. He presents to the Emergency Department with severe right-sided colicky abdominal pain. He has had one episode of this previously, which ended as quickly as it started. Today the pain is so severe that he has needed morphine in the department. On examination you find a generally tender abdomen. He has a temperature of 37°C, heart rate of 160 beats/min, and his blood pressure is 120/80 mmHg. Urine dipstick has been performed and reveals haematuria. In light of the data given, which of the following investigations would you perform next?
+  OPTIONS: DMSA scan | Urinary electrolytes | Urine microscopy and culture | Ultrasound of the kidneys and urinary tract | Plasma creatinine and electrolytes
+  KEY: Ultrasound of the kidneys and urinary tract
+
+=== n 269
+BOOK pedsa-b19-12-2
+  STEM: Below is a list (A–J) of renal investigations. For each of the following cases which investigation would you perform next? Each option may be used once, more than once, or not at all. Rosa, a 2-year-old girl, presents to her general practitioner. She has a 24-hour history of vomiting and fever. She has a temperature of 38° C. She has generalized tenderness of the abdomen. A dipstick reveals leucocytes and nitrites. Her blood pressure is 90/50 mmHg.
+  OPTIONS: Antistreptolysin O titre | CT scan of the abdomen | DMSA scan | MAG3 renogram | Micturating cystourethrogram (MCUG) | Plain abdominal X-ray | Plasma creatinine and electrolytes | Ultrasound of the kidneys and urinary tract | Urinary electrolytes | Urine microscopy and culture
+  KEY: Urine microscopy and culture
+OTHER pedep2-ren-16
+  STEM: Rosa, a 2-year-old girl, presents to her general practitioner with a 24-hour history of vomiting and fever. Her temperature is 38°C, and she has generalized abdominal tenderness. A dipstick reveals leucocytes and nitrites. Blood pressure is 90/50 mmHg. Which of the following investigations would you perform next?
+  OPTIONS: DMSA scan | Urinary electrolytes | Urine microscopy and culture | Ultrasound of the kidneys and urinary tract | Plasma creatinine and electrolytes
+  KEY: Urine microscopy and culture
+
+=== n 270
+BOOK pedsa-b19-12-2
+  STEM: Below is a list (A–J) of renal investigations. For each of the following cases which investigation would you perform next? Each option may be used once, more than once, or not at all. Rosa, a 2-year-old girl, presents to her general practitioner. She has a 24-hour history of vomiting and fever. She has a temperature of 38° C. She has generalized tenderness of the abdomen. A dipstick reveals leucocytes and nitrites. Her blood pressure is 90/50 mmHg.
+  OPTIONS: Antistreptolysin O titre | CT scan of the abdomen | DMSA scan | MAG3 renogram | Micturating cystourethrogram (MCUG) | Plain abdominal X-ray | Plasma creatinine and electrolytes | Ultrasound of the kidneys and urinary tract | Urinary electrolytes | Urine microscopy and culture
+  KEY: Urine microscopy and culture
+OTHER pedhd-renal-16
+  STEM: Rosa, a 2-year-old girl, presents to her general practitioner. She has a 24-hour history of vomiting and fever. She has a temperature of 38°C. She has generalized tenderness of the abdomen. A dipstick reveals leucocytes and nitrites. Her blood pressure is 90/50 mmHg. In light of the data given, which of the following investigations would you perform next?
+  OPTIONS: DMSA scan | Urinary electrolytes | Urine microscopy and culture | Ultrasound of the kidneys and urinary tract | Plasma creatinine and electrolytes
+  KEY: Urine microscopy and culture

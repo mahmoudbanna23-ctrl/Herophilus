@@ -1,0 +1,8 @@
+AGENTS.md loaded — Herophilus
+
+Partial staging result written under `content/peds/qb-pages/sa/`.
+
+- Parser, checker, array, and report created.
+- Array contains 178 items: 99 SBA, 79 EMQ.
+- `check-book.js` exits 0 for emitted items.
+- Completion proof is not met; 193 items remain unresolved, documented in `_work/parse-book.log` and [`report-2.md`](D:\claude os\Medical school\Herophilus\content\peds\qb-pages\sa\_work\report-2.md).
