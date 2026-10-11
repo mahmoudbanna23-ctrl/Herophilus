@@ -203,20 +203,24 @@ body.hall-on .ambient{display:none}
 }
 .alcove:not([aria-disabled="true"]):hover .plaque{translate:0 -2px}
 .pl-name{
-  font-family:var(--font-display);font-weight:700;font-size:clamp(10px,.95cqw,14px);
+  font-family:var(--font-display);font-weight:700;font-size:clamp(12px,1.1cqw,14px);
   letter-spacing:.045em;text-transform:uppercase;white-space:nowrap;
 }
 .pl-row{display:flex;align-items:center;gap:clamp(4px,.6cqw,10px);justify-content:center}
 .pl-meta{display:flex;flex-direction:column;align-items:flex-start;text-align:left}
-.pl-acc{font-size:clamp(10px,.95cqw,14px);font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
-.pl-count{font-size:clamp(10px,.8cqw,12px);font-weight:600;color:var(--ink-3);white-space:nowrap}
-.plaque .ring{width:clamp(26px,2.5cqw,38px)!important;height:clamp(26px,2.5cqw,38px)!important;flex:none}
+/* figures: the 1180-wide hall is drawn at about 0.87 of these pixels, so the floors are
+   set so the smallest figure still lands near 12 px on screen */
+.pl-acc{font-size:clamp(14px,1.25cqw,16px);font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.pl-count{font-size:14px;font-weight:600;color:var(--ink-3);white-space:nowrap}
+.plaque .ring{width:clamp(40px,3.3cqw,44px)!important;height:clamp(40px,3.3cqw,44px)!important;flex:none}
 .plaque .ring svg{width:100%;height:100%}
-.plaque .ring .rv{font-size:clamp(8px,.7cqw,11px)}
+.plaque .ring .rv{font-size:clamp(12px,1cqw,13px)}
 .plaque .ring .rv span{font-size:.75em!important}
 .alcove.locked .plaque{border-style:dashed}
 /* narrow halls: "12/345" without the word, the label still says it in full */
 @container hall (max-width:1100px){.pl-w{display:none}}
+/* wide halls keep the word, so the figure steps down one px to stay inside the plate */
+@container hall (min-width:1101px){.pl-count{font-size:13px}}
 
 /* 5. near columns — only if a picture is supplied; never catches a click */
 .hall-fore{

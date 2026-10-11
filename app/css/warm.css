@@ -284,4 +284,25 @@
    ink-3 read small and dim. A step larger and in ink-2. */
 .pill.ghost{font-size:13px;color:var(--ink-2)}
 
+/* ============================================================================
+   FIX PASS 3
+   ============================================================================ */
+
+/* A. Light look, answered question: the verdict text was a pale pastel made for the dark
+   ground (pink 1.4:1 and mint 1.12:1 on the tinted parchment). The text takes the deep
+   red / deep green tokens the light look already carries; the tint, border and glow stay,
+   so a wrong answer still reads red at a glance. */
+:root[data-theme="light"] .verdict.bad{color:var(--bad)}
+:root[data-theme="light"] .verdict.ok{color:var(--ok)}
+
+/* B. Dark look: the "How sure" card and the "Explain" row rest on a hairline; the gold
+   edge and glow come back on hover, keyboard focus and (explain) when it is open. */
+:root:not([data-theme="light"]) .conf,
+:root:not([data-theme="light"]) .explain{border-color:var(--line-2);box-shadow:none}
+:root:not([data-theme="light"]) .conf:hover,
+:root:not([data-theme="light"]) .conf:has(:focus-visible),
+:root:not([data-theme="light"]) .explain:hover,
+:root:not([data-theme="light"]) .explain:has(:focus-visible),
+:root:not([data-theme="light"]) .explain:has(.ex-head.open){border-color:var(--gold);box-shadow:var(--gold-glow)}
+
 }
