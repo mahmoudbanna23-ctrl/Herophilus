@@ -1,0 +1,7 @@
+AGENTS.md loaded — Herophilus
+q-pd-sa-12-1.jpg -> ATTACH pedep2-mf1-15
+q-pd-sa-43.jpg -> LEAVE (answer-side second figure)
+q-pd-sa-59.jpg -> LEAVE (answer-side figure)
+q-pd-sa-60.jpg -> LEAVE (wrong question / answer-side)
+q-pd-sa-170.jpg -> LEAVE (answer-side / wrong-question figure)
+q-pd-sa-172.jpg -> LEAVE (answer-side second figure)

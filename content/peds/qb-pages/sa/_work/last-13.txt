@@ -1,0 +1,4 @@
+AGENTS.md loaded — Herophilus
+q-pd-sa-12-1.jpg -> PASS
+q-pd-sa-59.jpg -> PASS
+q-pd-sa-60.jpg -> PASS

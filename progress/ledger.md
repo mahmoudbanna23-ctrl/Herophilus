@@ -2158,11 +2158,17 @@ with the real topic named in `objective` (owner ruling 2026-10-11). The first so
 (`_work\chapters-rulings.jsonl`, 212 moved). First sort kept as `sa-chapters.first-sort.json`.
 
 **Pictures.** 50 files cut to `app\assets\q\q-pd-sa-*.jpg` (56 records in
-`_work\pics\pictures.json`), 48 entries carry one, each looked at by a helper and judged by Codex.
-Six files are on disk but unused (`q-pd-sa-12-1`, `-43`, `-59`, `-60`, `-170`, `-172`): figures of
-folded ids and figures printed with the answer only. Ruled NOT attached: `pedsa-b9-16-3`,
-`pedsa-b28-8`, `pedsa-b9-15-4` (answer-only figures), `pedsa-b18-7-3`, and the answer figures of
-`pedsa-b7-3`, `pedsa-b28-2`, `pedsa-b28-10`.
+`_work\pics\pictures.json`), 50 new entries carry one, each looked at by a helper and judged by Codex.
+**Second pass 2026-10-11 on the six files first left unused** (trace `_work\unused-pictures-report.md`,
+independent check `_work\check-three-attaches.md`, 3/3 PASS): three attached, three left.
+Attached: `q-pd-sa-12-1` (Fig. 2.7, question side) to the live folded entry `pedep2-mf1-15`;
+`q-pd-sa-59` (Fig. 9.8) to `pedsa-b9-15-4` and `q-pd-sa-60` (Fig. 9.9) to `pedsa-b9-16-4`, both
+answer-side figures carried with `imgSpoils` so they stay blurred until the answer is shown. The
+Fig. 9.9 record had pointed at `pedsa-b9-16-3`; the page prints it under answer 9.16.4
+(`Self Assessment Book.pdf p.60`). Still unused, on disk: `q-pd-sa-43`, `-170`, `-172`, the answer
+figures of `pedsa-b7-3`, `pedsa-b28-2`, `pedsa-b28-10`, whose entries already show their
+question-side figure and the app holds one picture per question. Ruled NOT attached:
+`pedsa-b9-16-3`, `pedsa-b28-8`, `pedsa-b18-7-3`.
 
 **Notes that have no entry to live in (their ids folded into live entries).** Book 17.4: the key was
 taken from the bold heading only. Book 10.12: look-alike `pedep-mf1-32` carries a different key.

@@ -187,16 +187,18 @@
    "fig": "Fig. 9.8",
    "image": "q-pd-sa-59.jpg",
    "imgAlt": "Clinical photograph of a child's face, frontal view",
+   "spoils": true,
    "how": "crop",
    "looked": true,
    "note": "figure printed with the answer explanation only; parent decides whether it belongs on the question"
   },
   {
-   "id": "pedsa-b9-16-3",
+   "id": "pedsa-b9-16-4",
    "page": 60,
    "fig": "Fig. 9.9",
    "image": "q-pd-sa-60.jpg",
-   "imgAlt": "Diagram of chromosome 15 inheritance in two family pedigrees",
+   "imgAlt": "Diagram of chromosome inheritance from the parents in two families",
+   "spoils": true,
    "how": "crop",
    "looked": true,
    "note": "figure printed with the answer explanation only; parent decides whether it belongs on the question"

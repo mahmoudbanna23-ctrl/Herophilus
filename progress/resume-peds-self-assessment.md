@@ -238,3 +238,13 @@ whether its questions may sit on the live site.
   _build/build.js, rebuild, check.js, copy to app/data, check-all.
 - Seen in the look, existing styling, not this job: wrong-answer verdict is pink on pink (low
   contrast); the mascot's tip bubble covers the figure caption at 1366x768.
+
+## Changed since - 2026-10-11, the six unused pictures
+- Three now used: `q-pd-sa-12-1` on live `pedep2-mf1-15`; `q-pd-sa-59` on `pedsa-b9-15-4` and
+  `q-pd-sa-60` on `pedsa-b9-16-4`, both with `imgSpoils` (blurred until answered).
+- Three left on disk, unused: `q-pd-sa-43`, `-170`, `-172` (answer figures of entries that already
+  show a question-side figure; one picture per question). Using them needs a second-picture slot
+  in the app, not built.
+- Checks: build 521, pictures 50; check-all 4/4; image-check CLEAN; Codex check 3/3 PASS
+  (`_work/check-three-attaches.md`). Not looked at on screen after this change; the blur path is
+  the one already live for the ophtho entry that uses it.

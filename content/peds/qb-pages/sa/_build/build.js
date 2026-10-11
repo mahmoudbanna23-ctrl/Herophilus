@@ -32,7 +32,7 @@ for (const picture of picturesFile.pictures) {
   if (!pictureById.has(picture.id)) pictureById.set(picture.id, []);
   pictureById.get(picture.id).push(picture);
 }
-const excludedPictures = new Set(['pedsa-b9-16-3', 'pedsa-b28-8', 'pedsa-b18-7-3', 'pedsa-b9-15-4']);
+const excludedPictures = new Set(['pedsa-b9-16-3', 'pedsa-b28-8', 'pedsa-b18-7-3']);
 const explanationNotes = new Map([
   ['pedsa-b17-4', 'The key was taken from the bold heading only.'],
   ['pedsa-b10-12', 'A look-alike pedep-mf1-32 carries a different key.'],
@@ -50,7 +50,7 @@ function objectiveFor(q, chapter) {
   return `Test ${primary}${also ? `, including ${also}` : ''}${chapter.outOfCourse && chapter.note ? ` (outside the course list: ${chapter.note})` : ''}.`;
 }
 function pictureFor(q, questions) {
-  const choices = (pictureById.get(q.id) || []).filter(p => !/answer explanation only/.test(p.note || '') && !excludedPictures.has(q.id));
+  const choices = (pictureById.get(q.id) || []).filter(p => (p.spoils || !/answer explanation only/.test(p.note || '')) && !excludedPictures.has(q.id));
   if (choices.length > 1) {
     questions.push(`- ${q.id}: ${choices.length} eligible pictures; none attached because the schema holds one image.`);
     return null;
@@ -71,7 +71,9 @@ function buildQuestion(q, questions) {
     objective: objectiveFor(q, chapter), source: sourceFor(q) };
   if (q.src === 'book') {
     const picture = pictureFor(q, questions);
-    if (picture) { out.image = picture.image.replace(/\.jpg$/i, ''); out.imgAlt = picture.imgAlt; }
+    if (picture) { out.image = picture.image.replace(/\.jpg$/i, ''); out.imgAlt = picture.imgAlt;
+      // An answer-side figure: the app keeps it blurred until the answer is shown.
+      if (picture.spoils) out.imgSpoils = true; }
   }
   return out;
 }

@@ -8023,7 +8023,10 @@ var Q_PEDS_SA = [
     "answer": 6,
     "explanation": "G. Fragile X syndrome Fragile X is one of the most common causes of learning difficulties in boys. Characteristic features are a long face with large everted ears. Later medical problems • Delayed motor milestones • Learning difficulties – severity is variable, usually mild to moderate but may be severe • Short stature • Increased susceptibility to infections • Hearing impairment from secretory otitis media (75%) • Visual impairment from cataracts (15%), squints, myopia (50%) • Increased risk of leukaemia and solid tumours (<1%) • Acquired hip dislocation and atlanto-axial instability • Obstructive sleep apnoea (50–75%) • Increased risk of hypothyroidism (15%) and coeliac disease • Epilepsy • Early onset Alzheimer disease. The mandible is often prominent, with a broad forehead. They have macro-orchidism postpuberty. See Box 9.3 and Fig. 9.8. • Moderate–severe learning difficulty (IQ 20–80, mean 50) • Macrocephaly • Macro-orchidism – postpubertal • Characteristic facies – long face, large everted ears, prominent mandible, and broad forehead, most evident in affected adults • Other features – mitral valve prolapse, joint laxity, scoliosis, autism, hyperactivity.",
     "objective": "Test Genetics.",
-    "source": "Self Assessment Book.pdf p.54 9.15.4"
+    "source": "Self Assessment Book.pdf p.54 9.15.4",
+    "image": "q-pd-sa-59",
+    "imgAlt": "Clinical photograph of a child's face, frontal view",
+    "imgSpoils": true
   },
   {
     "id": "pedsa-b9-15-5",
@@ -8110,7 +8113,10 @@ var Q_PEDS_SA = [
     "answer": 2,
     "explanation": "C. Imprinting from uniparental disomy Uniparental disomy accounts for 10% of Prader–Willi syndrome. A child who inherits Imprinting from a uniparental disomy Chromosome 15 Prader-Willi syndrome high incidence of this condition in populations who originate from endemic areas as heterozygote status confers a survival benefit.",
     "objective": "Test Genetics.",
-    "source": "Self Assessment Book.pdf p.55 9.16.4"
+    "source": "Self Assessment Book.pdf p.55 9.16.4",
+    "image": "q-pd-sa-60",
+    "imgAlt": "Diagram of chromosome inheritance from the parents in two families",
+    "imgSpoils": true
   },
   {
     "id": "pedsa-b9-16-5",
