@@ -94,13 +94,6 @@ body.hall-on .ambient{display:none}
 }
 .wk-name{margin:0 0 var(--s-1);font-size:var(--fs-ui);font-weight:600;color:var(--ink-3);letter-spacing:.02em}
 .wk-text h1{margin:0;font-size:var(--fs-lg);color:var(--tx)}
-.wk-cue{
-  display:none;position:absolute;left:50%;bottom:var(--s-8);margin-left:-3.2rem;width:6.4rem;
-  box-sizing:border-box;padding:var(--s-3) 0 var(--s-2);text-align:center;
-  background:var(--card);color:var(--ink-3);border:1px solid var(--line-2);border-radius:var(--r-lg);
-  font-size:var(--fs-ui);font-weight:600;letter-spacing:.08em;text-transform:uppercase;
-}
-.wk-cue::after{content:"";display:block;width:1px;height:1.6rem;margin:var(--s-2) auto 0;background:var(--gold)}
 
 /* ---------- the hall painting box ----------
    Plain: never taller than the painting is at its own width (aspect-ratio 3:2, height
@@ -251,7 +244,6 @@ body.hall-clep .clep .cl-body{visibility:hidden}
   position:absolute;left:0;top:0;width:100%;height:100%;min-height:0;
   background:var(--wk-out) 0 0/100% 100% no-repeat;
 }
-.hall.walk .wk-cue{display:block}
 .hall.walk .wk-clip{
   position:absolute;inset:0;width:auto;aspect-ratio:auto;max-height:none;min-height:0;
   container:none;overflow:visible;background:none;

@@ -1,0 +1,182 @@
+/* ============================================================================
+   WARM SKIN (redesign round 2) — one concern: app-wide surface colour.
+   Loaded last (injected by hall.js after hall.css), so it wins by order at equal
+   specificity. Everything is inside @media screen: print.css forces its own
+   tokens for paper and none of this reaches it.
+
+   Why: the evening painting is warm stone and aged bronze; the app around it was
+   navy. Dark values were sampled from app/assets/hall/hall-dark.jpg (darkest
+   quartile averages rgb 52,23,5 .. 68,36,12 — more saturated than a UI ground can
+   carry, so the surfaces below keep the painting's hue, about 27-30 degrees, at a
+   third of its saturation). Text tokens, --line*, subject colours, --gold, --r-*
+   and the fonts are NOT restated here. Three token families stay separate.
+
+   The box edge was light blue (--neon). It is warm gold now — lamp light on brass.
+   Every card, option and verdict already reads var(--neon), so the token alone moves
+   all of them.
+   ============================================================================ */
+@media screen {
+
+/* ---- dark: tokens ---------------------------------------------------------- */
+:root{
+  --bg:#15100a;
+  --bg-2:#1e150d;
+  --card:#241a11;
+  --fill:#3f2c1b;
+  --glass:rgba(36,26,17,.78);
+  --glass-2:rgba(22,15,9,.86);
+
+  --neon:#e8c26a;
+  --neon-glow:0 0 10px rgba(232,194,106,.5);
+
+  --rail:#110b07;
+  --rail-2:#2a1d12;
+  --rail-3:#402c18;
+}
+
+/* ---- light: only the edge, and the blue that leaked into parchment ---------- */
+:root[data-theme="light"]{
+  --neon:#86580f;
+  --neon-glow:0 0 10px rgba(134,88,15,.42);
+}
+
+/* ---- dark: ground ------------------------------------------------------------ */
+/* the three orbs of colour: bronze, ember, olive (was purple, lapis, olive) */
+:root:not([data-theme="light"]) body{
+  background-image:
+    radial-gradient(1200px 700px at 8% -10%, rgba(150,96,34,.26), transparent 60%),
+    radial-gradient(1000px 620px at 100% 0%, rgba(180,71,47,.16), transparent 58%),
+    radial-gradient(900px 600px at 50% 110%, rgba(92,122,82,.18), transparent 60%);
+}
+:root:not([data-theme="light"]) .ambient .o1{background:radial-gradient(circle,#96601f,transparent 68%)}
+:root:not([data-theme="light"]) .ambient .o2{background:radial-gradient(circle,var(--ent),transparent 68%)}
+
+/* film scrims: navy veil to warm-black veil (same alphas, so contrast is unchanged) */
+:root:not([data-theme="light"]) .ambient .film-scrim,
+:root:not([data-theme="light"]) .gate-amb .film-scrim{
+  background:
+    linear-gradient(180deg,
+      rgba(14,9,5,.88) 0%, rgba(14,9,5,.44) 18%,
+      rgba(14,9,5,.26) 50%, rgba(14,9,5,.64) 100%),
+    radial-gradient(150% 105% at 50% 48%, transparent 38%, rgba(14,9,5,.46) 100%);
+}
+@media (max-aspect-ratio:5/4){
+  :root:not([data-theme="light"]) .ambient .film-scrim,
+  :root:not([data-theme="light"]) .gate-amb .film-scrim{
+    background:
+      linear-gradient(180deg,
+        rgba(14,9,5,.78) 0%, rgba(14,9,5,.28) 14%,
+        rgba(14,9,5,.14) 48%, rgba(14,9,5,.52) 100%),
+      radial-gradient(170% 95% at 50% 45%, transparent 50%, rgba(14,9,5,.34) 100%);
+  }
+}
+:root:not([data-theme="light"]) .gate-amb .film-scrim::after{
+  background:radial-gradient(46% 42% at 50% 52%,
+    rgba(14,9,5,.88) 0%, rgba(14,9,5,.72) 45%, transparent 78%);
+}
+
+/* ---- pop-ups, notices, zoom ---------------------------------------------------- */
+:root:not([data-theme="light"]) .modal{
+  background:linear-gradient(160deg,rgba(46,33,20,.97),rgba(28,19,11,.98));
+  border-color:rgba(232,194,106,.30);
+}
+:root:not([data-theme="light"]) .modal-bg{background:rgba(10,6,3,.68)}
+.toast{background:linear-gradient(160deg,#3b2a1a,#241810)}
+:root:not([data-theme="light"]) .qzoom{background:rgba(10,6,3,.88)}
+
+/* the three purple-over-lapis callouts: a bronze tint, same border (subject colour) */
+:root:not([data-theme="light"]) .objective,
+:root:not([data-theme="light"]) .th-intro,
+:root:not([data-theme="light"]) .readtheory{
+  background:linear-gradient(135deg,rgba(217,180,74,.08),rgba(180,71,47,.10));
+}
+:root:not([data-theme="light"]) .th-intro{box-shadow:var(--pop) rgba(0,0,0,.35)}
+:root:not([data-theme="light"]) .readtheory{box-shadow:var(--pop) rgba(0,0,0,.35)}
+:root:not([data-theme="light"]) .readtheory:hover{background:var(--bg-2);box-shadow:var(--pop-lg) rgba(0,0,0,.45)}
+:root:not([data-theme="light"]) .conf-b:hover{box-shadow:0 7px 18px rgba(8,4,2,.35)}
+:root:not([data-theme="light"]) .colb.on{box-shadow:0 9px 22px rgba(8,4,2,.4)}
+
+/* ---- light: blue leaks on parchment ------------------------------------------- */
+:root[data-theme="light"] body{
+  background-image:
+    radial-gradient(1200px 700px at 8% -10%, rgba(154,107,31,.14), transparent 60%),
+    radial-gradient(1000px 620px at 100% 0%, rgba(180,71,47,.09), transparent 58%),
+    radial-gradient(900px 600px at 50% 110%, rgba(154,107,31,.14), transparent 60%);
+}
+:root[data-theme="light"] .ambient .o1{background:radial-gradient(circle,#96601f,transparent 68%)}
+:root[data-theme="light"] .ambient .o2{background:radial-gradient(circle,var(--ent),transparent 68%)}
+:root[data-theme="light"] .modal{
+  background:linear-gradient(160deg,rgba(252,246,232,.98),rgba(243,233,212,.97));
+  box-shadow:0 30px 80px rgba(74,56,34,.24),var(--glow);
+}
+:root[data-theme="light"] .modal-bg{background:rgba(60,44,28,.38)}
+:root[data-theme="light"] .toast{box-shadow:0 18px 44px rgba(74,56,34,.32)}
+:root[data-theme="light"] .gsign{border-color:rgba(60,44,28,.18);box-shadow:0 6px 18px rgba(74,56,34,.14)}
+:root[data-theme="light"] .gsign:hover{box-shadow:0 12px 28px rgba(74,56,34,.2)}
+:root[data-theme="light"] .gsign::after{background:linear-gradient(100deg,transparent,rgba(122,84,16,.14),transparent)}
+:root[data-theme="light"] .mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(60,44,28,.10)}
+:root[data-theme="light"] .pill{box-shadow:0 4px 14px rgba(74,56,34,.2)}
+:root[data-theme="light"] .rail{border-right-color:rgba(122,84,16,.30)}
+:root[data-theme="light"] .objective,
+:root[data-theme="light"] .th-intro,
+:root[data-theme="light"] .readtheory{
+  background:linear-gradient(135deg,rgba(154,107,31,.10),rgba(180,71,47,.08));
+}
+
+/* ============================================================================
+   LEFT RAIL — a stone column with a bronze edge. CSS only: same markup, same
+   buttons, same order. The light look keeps its parchment column (its own
+   overrides in views.css have higher specificity and are not repeated); the
+   trim below (hairline, key band, plaque) reads on both.
+   ============================================================================ */
+:root:not([data-theme="light"]) .rail{
+  /* the dim rail text, lifted from #8c7f6a so it stays AA (5.0:1 or better) on the
+     warm rail, its hover chip and the sync chip; measured in the build report */
+  --rail-dim:#9a8d77;
+  background:
+    linear-gradient(180deg,rgba(217,180,74,.05),transparent 140px),
+    linear-gradient(180deg,#1b120b 0%,#130d08 55%,#0e0905 100%);
+  border-right:1px solid rgba(217,180,74,.42);
+  box-shadow:inset -1px 0 0 rgba(0,0,0,.55),inset -6px 0 14px -8px rgba(217,180,74,.10);
+}
+
+/* Greek key band: one small inline SVG tile, low alpha — trim, not a poster */
+.rail-head::after,
+.rail::after{
+  content:"";display:block;flex:none;height:10px;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='10' viewBox='0 0 14 10'><path d='M0 9.5H14M0 .5H14M2 9V2H11V6.5H5.5V4.2H8' fill='none' stroke='%23d9b44a' stroke-opacity='.42' stroke-width='1'/></svg>") 0 0/14px 10px repeat-x;
+}
+.rail-head::after{margin-top:var(--s-4)}
+.rail::after{margin:var(--s-3) var(--s-8) var(--s-6)}
+/* the rail scrolls on short screens: a thin brass thumb, not the system grey bar */
+.rail{scrollbar-width:thin;scrollbar-color:rgba(217,180,74,.35) transparent}
+:root[data-theme="light"] .rail-head::after,
+:root[data-theme="light"] .rail::after{
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='10' viewBox='0 0 14 10'><path d='M0 9.5H14M0 .5H14M2 9V2H11V6.5H5.5V4.2H8' fill='none' stroke='%237a5410' stroke-opacity='.45' stroke-width='1'/></svg>");
+}
+
+/* section labels: small engraved caption with a fading brass rule */
+.nav-label{display:flex;align-items:center;gap:var(--s-4);letter-spacing:.18em}
+.nav-label::after{
+  content:"";flex:1;height:1px;
+  background:linear-gradient(90deg,rgba(217,180,74,.38),transparent);
+}
+:root:not([data-theme="light"]) .nav-label{text-shadow:0 1px 0 rgba(0,0,0,.7)}
+:root[data-theme="light"] .nav-label::after{background:linear-gradient(90deg,rgba(122,84,16,.38),transparent)}
+
+/* the chosen page: a lit bronze plaque (gold bar kept, faint gold inner line) */
+.nav-item.on{
+  box-shadow:inset 3px 0 0 var(--gold),inset 0 0 0 1px rgba(217,180,74,.28);
+}
+:root:not([data-theme="light"]) .nav-item.on{
+  background:linear-gradient(90deg,rgba(217,180,74,.10),rgba(217,180,74,.03) 70%),var(--rail-3);
+  box-shadow:inset 3px 0 0 var(--gold),inset 0 0 0 1px rgba(217,180,74,.28),0 0 14px rgba(217,180,74,.10);
+}
+:root:not([data-theme="light"]) .nav-item:hover{background:var(--rail-2);box-shadow:inset 0 0 0 1px rgba(217,180,74,.12)}
+
+/* profile and sync chips: bronze edge; the sync line drops its lilac */
+:root:not([data-theme="light"]) .railprof{box-shadow:inset 0 0 0 1px rgba(217,180,74,.20)}
+:root:not([data-theme="light"]) .railprof:hover{box-shadow:inset 0 0 0 1px rgba(217,180,74,.34)}
+:root:not([data-theme="light"]) .railsync{color:var(--rail-dim);background:rgba(217,180,74,.06)}
+
+}

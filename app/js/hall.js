@@ -38,6 +38,9 @@
   const link=document.createElement('link');
   link.rel='stylesheet'; link.href='css/hall.css';
   document.head.appendChild(link);
+  const warm=document.createElement('link');
+  warm.rel='stylesheet'; warm.href='css/warm.css';
+  document.head.appendChild(warm);
 
   /* Left to right on the painting. The order is fixed here, by module id — never
      taken from the order activeModules() returns. */
@@ -231,7 +234,6 @@
       `<div class="hall-view">
          <div class="wk-out" aria-hidden="true"></div>
          <div class="wk-text"></div>
-         <div class="wk-cue" aria-hidden="true">Scroll</div>
          <div class="wk-clip"><div class="hall-push"><div class="hall-stage">
            <div class="hall-back"></div>
            <div class="hall-glow hall-frame">${glows}</div>
@@ -328,7 +330,6 @@
     const view_=hall.querySelector('.hall-view');
     const out=hall.querySelector('.wk-out');
     const text=hall.querySelector('.wk-text');
-    const cue=hall.querySelector('.wk-cue');
     const clip=hall.querySelector('.wk-clip');
     const stage=hall.querySelector('.hall-stage');
     const plaques=Array.from(hall.querySelectorAll('.plaque'));
@@ -346,8 +347,6 @@
     const setOut=v=>g.set(out,{scale:v});
     const setStage=v=>g.set(stage,{scale:v});
     const setTx=g.quickSetter(text,'x','px'), setTy=g.quickSetter(text,'y','px');
-    const setCx=g.quickSetter(cue,'x','px'), setCy=g.quickSetter(cue,'y','px');
-
     /* Geometry. Runs on build and again on every ScrollTrigger refresh (resize,
        orientation change) — the only place layout is read. */
     function layout(){
@@ -379,8 +378,7 @@
       const fwC=Math.min(Math.max(W,1.5*H),2.08*H), fwT=Math.min(W/.94,2.2*H);
       const pb=Math.min(1,fwT/fwC);
       const tr=text.getBoundingClientRect?{x:text.offsetLeft+text.offsetWidth/2,y:text.offsetTop+text.offsetHeight/2}:{x:0,y:0};
-      const cr={x:cue.offsetLeft+cue.offsetWidth/2,y:cue.offsetTop+cue.offsetHeight/2};
-      Object.assign(G,{W,H,Px,Py,d,S,R,pb,tr,cr,top:bar?bar.offsetHeight:64});
+      Object.assign(G,{W,H,Px,Py,d,S,R,pb,tr,top:bar?bar.offsetHeight:64});
       out.style.left=ox+'px'; out.style.top=oy+'px';
       out.style.width=Wo+'px'; out.style.height=Ho+'px';
       g.set(out,{transformOrigin:(Px-ox)+'px '+(Py-oy)+'px'});
@@ -405,9 +403,7 @@
       setStage(Math.min(1,G.R*so)*(1+(G.pb-1)*P.q));
       clip.style.clipPath=u>=1?'none':clipFor(so);
       const f=so-1;
-      setTx((G.tr.x-G.Px)*f); setTy((G.tr.y-G.Py)*f);
-      setCx((G.cr.x-G.Px)*f); setCy((G.cr.y-G.Py)*f);
-      const open=P.p>=.985;
+      setTx((G.tr.x-G.Px)*f); setTy((G.tr.y-G.Py)*f);      const open=P.p>=.985;
       if(open!==st.gate){
         st.gate=open;
         hall.classList.toggle('open',open);
