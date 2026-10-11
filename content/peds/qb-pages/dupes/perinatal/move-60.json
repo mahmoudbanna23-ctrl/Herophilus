@@ -1,0 +1,774 @@
+[
+ {
+  "id": "pedhd-peri-1",
+  "from": "perinatal",
+  "stem": "A mother has just found out she is pregnant and asks for advice about how to look after her health and nutrition during pregnancy. She smokes 15 cigarettes a day. You recommend she gives up smoking. If she continues to smoke despite your advice the baby is at increased risk of which of the following health problems?",
+  "options": [
+   "Growth restriction",
+   "Dysmorphic syndromes",
+   "Neural tube defects",
+   "Shoulder dystocia",
+   "Vitamin D deficiency"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "pedhd-peri-2",
+  "from": "perinatal",
+  "stem": "A mother has her routine 20-week antenatal scan. The sonographer finds the fetal abdominal and head circumference measurements are normal, but is concerned that there is an abnormally small amount of amniotic fluid (oligohydramnios). What is the most likely cause for this.",
+  "options": [
+   "Duodenal atresia",
+   "Gastroschisis",
+   "Maternal diabetes",
+   "Poorly functioning fetal kidneys",
+   "Severe intrauterine growth restriction"
+  ],
+  "answer": 3
+ },
+ {
+  "id": "pedhd-peri-4",
+  "from": "perinatal",
+  "stem": "A mother has just found out she is pregnant with twins. Her antenatal scan reveals dichorionic, diamniotic twins. Which condition carries the biggest increased risk in her twin pregnancy?",
+  "options": [
+   "Congenital abnormalities",
+   "Gestational diabetes",
+   "Macrosomia",
+   "Post-term gestation",
+   "Twin-to-twin transfusion"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "pedhd-peri-5",
+  "from": "perinatal",
+  "stem": "You perform a routine newborn examination on a baby who is 20 hours old. Which one of the following features requires further immediate assessment?",
+  "options": [
+   "Acrocyanosis (cyanosis of the hands and feet)",
+   "A heart murmur",
+   "An undescended testis",
+   "Breast enlargement",
+   "Subconjunctival haemorrhages"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedhd-peri-7",
+  "from": "neonatal-sepsis",
+  "stem": "Jonathan, a newborn baby, is noted to have hepatosplenomegaly and a petechial rash. His red eye reflex is normal and there is no heart murmur. He fails his newborn screening hearing test. His mother is from the UK and her antenatal screening bloods were all normal. What is the most likely congenital infection that has caused these symptoms?",
+  "options": [
+   "Cytomegalovirus",
+   "Rubella",
+   "Syphilis",
+   "Toxoplasmosis",
+   "Varicella zoster"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "pedhd-peri-8",
+  "from": "perinatal",
+  "stem": "A male infant is born at term. At 1 minute of age he is breathing regularly and has a heart rate of 140 beats/min. He is grimacing but has not yet cried. He is pink centrally but still blue around his extremities and his tone is reduced although he has good limb flexion but is not actively moving his limbs. What is his Apgar score at one minute?",
+  "options": [
+   "10",
+   "9",
+   "8",
+   "7",
+   "6"
+  ],
+  "answer": 3
+ },
+ {
+  "id": "pedhd-peri-10",
+  "from": "perinatal",
+  "stem": "George, a 2-day-old baby boy, is reviewed by the paediatric doctor at the request of the midwife. He was born by forceps delivery and has been feeding well. There were no risk factors for sepsis and mother was well during her pregnancy. When examined, he appears very well but has the rash shown in the opposite figure. His mother reports the rash keeps moving around his body. What is the diagnosis that fits best with the attached clinical description and picture?",
+  "options": [
+   "Bruising",
+   "Milia",
+   "Erythema toxicum",
+   "Mongolian blue spots",
+   "Neonatal varicella zoster"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "pedhd-peri-11",
+  "from": "perinatal",
+  "stem": "Anna, a month-old infant, is reviewed by the general practitioner. She was born by normal vaginal delivery, and was well during and after delivery. Her mother is worried about the mark on her face (shown in the opposite figure). It has not changed in appearance since birth. What is the diagnosis that fits best with the attached clinical description and picture?",
+  "options": [
+   "Bruising",
+   "Milia",
+   "Erythema toxicum",
+   "Port wine stain (naevus flammeus)",
+   "Strawberry naevus (cavernous haemangioma)"
+  ],
+  "answer": 3
+ },
+ {
+  "id": "pedhd-peri-12",
+  "from": "perinatal",
+  "stem": "Oliver, a 4-day-old infant, is having a routine newborn check by the junior paediatric doctor. The doctor notices some small white spots on Oliver’s nose and cheeks (shown in the opposite figure). Oliver was born by normal vaginal delivery and is currently feeding well. What is the diagnosis that fits best with the attached clinical description and picture?",
+  "options": [
+   "Group B streptococcal infection",
+   "Milia",
+   "Erythema toxicum",
+   "Mongolian blue spots",
+   "Neonatal varicella zoster"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedhd-peri-13",
+  "from": "perinatal",
+  "stem": "Jessica, a 2-month-old infant, presents to her family doctor with a mass on her forehead as shown in the opposite figure. It was not present at birth, and has been gradually increasing in size since it was first noticed when Jessica was about 3 weeks old. Jessica is well. The only past medical history of note is an uncomplicated premature delivery at 33 weeks gestation. What is the diagnosis that fits best with the attached clinical description and picture?",
+  "options": [
+   "Bruising",
+   "Milia",
+   "Erythema toxicum",
+   "Port wine stain (naevus flammeus)",
+   "Strawberry naevus (cavernous haemangioma)"
+  ],
+  "answer": 4
+ },
+ {
+  "id": "pedhd-peri-14",
+  "from": "perinatal",
+  "stem": "Adam, a 3-day-old black infant, has his routine newborn check. The paediatric doctor notices blue and black macules on his back and buttocks (shown in the opposite figure). Adam was born by normal vaginal delivery and has been feeding well since birth. What is the diagnosis that fits best with the attached clinical description and picture?",
+  "options": [
+   "Bruising",
+   "Milia",
+   "Erythema toxicum",
+   "Mongolian blue spots",
+   "Neonatal varicella zoster"
+  ],
+  "answer": 3
+ },
+ {
+  "id": "pedhd-neuro-7",
+  "from": "genetics",
+  "stem": "Gregor is born at term. It was a normal pregnancy though the mother did not have any antenatal ultrasound examinations as she was against medical procedures. He was born by vaginal delivery. Immediately, the midwife noticed the lesion shown in the opposite figure. Which of the supplements listed would have reduced the risk of this problem if taken by the mother periconceptually?",
+  "options": [
+   "Folic acid",
+   "Iron",
+   "Vitamin A",
+   "Vitamin B12",
+   "Vitamin D"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "pedep-gp-35",
+  "from": "perinatal",
+  "stem": "Which of the following is the most important cause of failure to establish breathing and the requirement of resuscitation at birth?",
+  "options": [
+   "Congenital lung anomalies",
+   "Birth trauma",
+   "Birth asphyxia",
+   "Retained lung fluid"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "pedep-emg-41",
+  "from": "emergencies",
+  "stem": "A 37-week gestation boy is born after an uncomplicated pregnancy to a 33-year-old mother. At birth he was lethargic and had an HR of 40. Oxygen was administered via bag and mask, and he was intubated; his HR remained at 40 beats/min. Which of the following is the most appropriate next step?",
+  "options": [
+   "Administer IV bicarbonate.",
+   "Administer IV atropine.",
+   "Administer IV epinephrine.",
+   "Administer IV calcium chloride.",
+   "Begin chest compressions."
+  ],
+  "answer": 4
+ },
+ {
+  "id": "pedep-per-1",
+  "from": "perinatal",
+  "stem": "A mother has just found out she is pregnant and asks for advice about how to look after her health and nutrition during pregnancy. She smokes 15 cigarettes a day. You recommend she gives up smoking. If she continues to smoke despite your advice, the baby is at increased risk of which of the following health problems?",
+  "options": [
+   "Growth restriction",
+   "Dysmorphic syndromes",
+   "Neural tube defects",
+   "Shoulder dystocia",
+   "Vitamin D deficiency"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "pedep-per-2",
+  "from": "perinatal",
+  "stem": "At the 20-week routine antenatal scan, the sonographer notes normal abdominal and head circumferences but an abnormally small amount of amniotic fluid (oligohydramnios). What is the most likely cause?",
+  "options": [
+   "Duodenal atresia",
+   "Gastroschisis",
+   "Maternal diabetes",
+   "Poorly functioning fetal kidneys",
+   "Severe intrauterine growth restriction"
+  ],
+  "answer": 3
+ },
+ {
+  "id": "pedep-per-4",
+  "from": "perinatal",
+  "stem": "A mother is pregnant with dichorionic, diamniotic twins. Which condition carries the greatest increased risk in this pregnancy?",
+  "options": [
+   "Congenital abnormalities",
+   "Gestational diabetes",
+   "Macrosomia",
+   "Post-term gestation",
+   "Twin-to-twin transfusion"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "pedep-per-5",
+  "from": "perinatal",
+  "stem": "During a routine newborn examination at 20 hours old, which of the following findings requires further immediate assessment?",
+  "options": [
+   "Acrocyanosis (cyanosis of hands and feet)",
+   "A heart murmur",
+   "An undescended testis",
+   "Breast enlargement",
+   "Subconjunctival haemorrhages"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedep-per-7",
+  "from": "perinatal",
+  "stem": "A newborn has hepatosplenomegaly, petechial rash, and fails the hearing screen. Red reflex and cardiac exam are normal. The mother's antenatal bloods were normal. What is the most likely congenital infection?",
+  "options": [
+   "Cytomegalovirus (CMV)",
+   "Rubella",
+   "Syphilis",
+   "Toxoplasmosis",
+   "Varicella zoster"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "pedep-per-8",
+  "from": "perinatal-hie",
+  "stem": "A male infant is born at term. At 1 minute of age he is breathing regularly and has a heart rate of 140 beats/min. He is grimacing but has not yet cried. He is pink centrally but still blue around his extremities and his tone is reduced although he has good limb flexion but is not actively moving his limbs. What is his Apgar score at one minute?",
+  "options": [
+   "10",
+   "9",
+   "8",
+   "7",
+   "6"
+  ],
+  "answer": 3
+ },
+ {
+  "id": "pedep-per-10",
+  "from": "perinatal",
+  "stem": "A well 2-day-old forceps-delivered baby has a rash that moves around the body. What is the most likely diagnosis?",
+  "options": [
+   "Bruising",
+   "Milia",
+   "Erythema toxicum",
+   "Mongolian blue spots",
+   "Neonatal varicella zoster"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "pedep-per-11",
+  "from": "perinatal",
+  "stem": "A 1-month-old has a red mark on her face that has not changed since birth. What is the most likely diagnosis?",
+  "options": [
+   "Bruising",
+   "Milia",
+   "Erythema toxicum",
+   "Port-wine stain (naevus flammeus)",
+   "Strawberry naevus (cavernous haemangioma)"
+  ],
+  "answer": 3
+ },
+ {
+  "id": "pedep-per-12",
+  "from": "perinatal",
+  "stem": "A 4-day-old infant has small white spots on the nose and cheeks. Feeding well. Most likely diagnosis?",
+  "options": [
+   "Group B streptococcal infection",
+   "Milia",
+   "Erythema toxicum",
+   "Mongolian blue spots",
+   "Neonatal varicella zoster"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedep-per-13",
+  "from": "perinatal",
+  "stem": "A 2-month-old ex-preterm has a growing soft red mass on her forehead, first noted at 3 weeks. What is the diagnosis?",
+  "options": [
+   "Bruising",
+   "Milia",
+   "Erythema toxicum",
+   "Port-wine stain",
+   "Strawberry naevus (cavernous haemangioma)"
+  ],
+  "answer": 4
+ },
+ {
+  "id": "pedep-per-14",
+  "from": "perinatal",
+  "stem": "A 3-day-old Black infant has blue/black macules on the back and buttocks. What is the diagnosis?",
+  "options": [
+   "Bruising",
+   "Milia",
+   "Erythema toxicum",
+   "Mongolian blue spots",
+   "Neonatal varicella zoster"
+  ],
+  "answer": 3
+ },
+ {
+  "id": "pedep-per-20",
+  "from": "dev-problems",
+  "stem": "A 13-month-old child is noted to be at the 25th percentile for weight, the 10th percentile for height, and less than the 5th percentile for head circumference. She was born at term. She was noted to have a small head at birth, be developmentally delayed throughout her life, and have required cataract surgery shortly after birth. She currently takes phenobarbital for seizures. Caloric intake has been deemed appropriate by history, and neither frequent emesis nor excessive stooling is reported. Her examination is remarkable for a small head and liver enlargement on abdominal palpation. Which of the following would most likely explain this child's small size?",
+  "options": [
+   "Congenital infection",
+   "Chromosomal abnormality",
+   "Metabolic disorder",
+   "Gastrointestinal dysmotility",
+   "Increased intracranial pressure"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "pedep-neo-30",
+  "from": "neonatal",
+  "stem": "Naser, a newborn baby, is noted to have hepatosplenomegaly and a petechial rash. His red eye reflex is abnormal and there is no heart murmur. He fails his newborn screening hearing test. His mother's antenatal screening bloods were all normal. What is the most likely condition that has caused these symptoms?",
+  "options": [
+   "Dysmorphic syndrome",
+   "Congenital infection",
+   "Infant of diabetic mother",
+   "Cranial abnormality",
+   "Neonatal infection"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedep-neo-31",
+  "from": "neonatal",
+  "stem": "During a normal term newborn resuscitation, which of the following should be performed first?",
+  "options": [
+   "The infant should be dried and kept warm under a radiant heater",
+   "The heart rate should be auscultated.",
+   "Breath sounds should be auscultated.",
+   "The nose and oropharynx should be suctioned"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "pedep-neo-35",
+  "from": "neonatal",
+  "stem": "You perform a routine newborn examination on a baby who is 72 hours old. Which one of the following features requires further immediate assessment?",
+  "options": [
+   "Acrocyanosis (cyanosis of the hands and feet)",
+   "A heart murmur",
+   "White vaginal discharge",
+   "Breast enlargement",
+   "Subconjunctival hemorrhages"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedep-neo-36",
+  "from": "neonatal",
+  "stem": "The most important and effective action in neonatal resuscitation if the baby does not start to breathe after delivery is:",
+  "options": [
+   "Provide oxygen",
+   "Perform chest compressions",
+   "Ventilate the lungs",
+   "Give epinephrine",
+   "Tracheal intubation"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "pedep-neo-42",
+  "from": "neonatal",
+  "stem": "Which requires further immediate investigation in a newborn?",
+  "options": [
+   "heart murmur",
+   "undescended testes",
+   "subconjunctival hemorrhage",
+   "breast enlargement"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "pedep-neo-48",
+  "from": "neonatal",
+  "stem": "In neonatal resuscitation, which is the FIRST most important step?",
+  "options": [
+   "Suction of the mouth and throat",
+   "Drying, warming, and ensuring airway",
+   "Administration of drugs",
+   "Immediate chest compressions"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedep-neo-53",
+  "from": "neonatal",
+  "stem": "Which clinical condition is left without further intervention on neonatal examination?",
+  "options": [
+   "Central cyanosis",
+   "Heart murmur",
+   "Inguinal hernia",
+   "Umbilical hernia",
+   "Jaundice at 24 hours of age"
+  ],
+  "answer": 3
+ },
+ {
+  "id": "pedep-inf-43",
+  "from": "infection",
+  "stem": "Naser, a newborn baby, is noted to have hepatosplenomegaly and a petechial rash. His red reflex is abnormal, and he fails his newborn hearing screen. There is no heart murmur. His mother's antenatal screening bloods were normal. What is the most likely diagnosis?",
+  "options": [
+   "Dysmorphic syndrome",
+   "Congenital infection",
+   "Infant of diabetic mother",
+   "Cranial abnormality",
+   "Neonatal infection"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedep-mf1-14",
+  "from": "neonatal",
+  "stem": "Which of the following lesions in the newborn resolve spontaneously?",
+  "options": [
+   "Meningocele",
+   "Umbilical hernia",
+   "Inguinal hernia",
+   "Cataract"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedep-mf2-11",
+  "from": "perinatal",
+  "stem": "Which one of the following maternal infections may be associated with microcephaly in the fetus?",
+  "options": [
+   "Parvovirus B19",
+   "Cytomegalovirus",
+   "Hepatitis B",
+   "Measles",
+   "Enteroviruses"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedep-mf3-21",
+  "from": "perinatal",
+  "stem": "In neonatal resuscitation, what is the next step to do if the baby doesn't start to breathe after delivery?",
+  "options": [
+   "Perform chest compressions",
+   "Ventilate the lungs",
+   "Give epinephrine",
+   "Tracheal intubation"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedep-mf3-48",
+  "from": "neonatal-sepsis",
+  "stem": "A newborn baby is noted to have hepatosplenomegaly and a petechial rash. His red eye reflex is abnormal and there is no heart murmur. He fails his newborn screening hearing test. His mother's antenatal screening bloods were all normal. What is the most likely condition that has caused these symptoms?",
+  "options": [
+   "Dysmorphic syndrome",
+   "Congenital infection",
+   "Infant of diabetic mother",
+   "Cranial abnormality",
+   "Neonatal infection"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedep-mf3-49",
+  "from": "perinatal-hie",
+  "stem": "What is the most important and effective action in neonatal resuscitation if the baby does not start to breathe after delivery?",
+  "options": [
+   "Provide oxygen.",
+   "Perform chest compressions.",
+   "Ventilate the lungs.",
+   "Give epinephrine.",
+   "Tracheal intubation."
+  ],
+  "answer": 2
+ },
+ {
+  "id": "pedep-mf4-2",
+  "from": "neonatal",
+  "stem": "Which of the following neonatal conditions is known to resolve spontaneously?",
+  "options": [
+   "Talipes equinovarus",
+   "Port-Wine stain",
+   "Infantile hemangioma",
+   "Umbilical hernia"
+  ],
+  "answer": 3
+ },
+ {
+  "id": "pedep-tr2-8",
+  "from": "perinatal-hie",
+  "stem": "At one minute of age, an infant exhibits central and peripheral cyanosis, floppy tone, gasping respiration, and a weak cry. The HR is 70 beats/min, and facial grimacing is observed but no crying is elicited by a nasal catheter.\nThe one-minute Apgar score for this neonate is:",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedep2-gen-35",
+  "from": "genetics",
+  "stem": "Jane, a 40-year-old pregnant woman at 14w gestation underwent routine screening maternal serum screening (triple screen examination). She has been taking folic acid 1m before conception till now. Results show elevated alpha-fetoprotein (AFP). These are the likely causes of increased alpha-fetoprotein in Jane EXCEPT:",
+  "options": [
+   "Anencephaly",
+   "Liver necrosis",
+   "Sacrococcygeal teratoma",
+   "Spina bifida",
+   "Trisomy 21"
+  ],
+  "answer": 4
+ },
+ {
+  "id": "pedep2-hem-88",
+  "from": "haematology",
+  "stem": "Which of the following is NOT a cause of hydrops fetalis?",
+  "options": [
+   "Rh incompatibility",
+   "ABO incompatibility",
+   "Alpha thalassemia major",
+   "Beta thalassemia major"
+  ],
+  "answer": 3
+ },
+ {
+  "id": "pedep2-neu-7",
+  "from": "genetics",
+  "stem": "Gregor was born at term. It was a normal pregnancy, though the mother did not have any antenatal ultrasound examinations as she was against medical procedures. He was born by vaginal delivery. Immediately, the midwife noticed the lesion shown in the opposite figure. Which of the supplements listed would have reduced the risk of this problem if taken by the mother periconceptually?",
+  "options": [
+   "Folic acid",
+   "Iron",
+   "Vitamin A",
+   "Vitamin B12",
+   "Vitamin D"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "pedsa1-6-1",
+  "from": "perinatal",
+  "stem": "How is the perinatal mortality rate defined?",
+  "options": [
+   "Deaths in the first 4 weeks per 1000 live births",
+   "Stillbirths plus deaths in the first week per 1000 live births and stillbirths",
+   "Deaths under 1 year per 1000 live births",
+   "Stillbirths per 1000 pregnancies",
+   "Deaths in the first 24 hours per 1000 deliveries"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedsa1-6-2",
+  "from": "perinatal",
+  "stem": "Which drug should not be prescribed to females of child-bearing age because of a 10% risk of congenital anomaly and a 30–40% risk of developmental delay?",
+  "options": [
+   "Carbamazepine",
+   "Sodium valproate",
+   "Lamotrigine",
+   "Levetiracetam",
+   "Phenytoin"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedsa1-6-3",
+  "from": "renal-cakut",
+  "stem": "A 20-week scan shows severe oligohydramnios. Which fetal abnormality is most likely to be responsible?",
+  "options": [
+   "Duodenal atresia",
+   "Oesophageal atresia",
+   "Bilateral renal dysplasia",
+   "Anencephaly",
+   "Exomphalos"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "pedsa1-6-5",
+  "from": "perinatal",
+  "stem": "Fetal anaemia from rhesus isoimmunisation is detected non-invasively by:",
+  "options": [
+   "Amniocentesis",
+   "Doppler velocimetry of the fetal middle cerebral artery",
+   "Cordocentesis",
+   "Maternal haemoglobin measurement",
+   "Fetal MRI"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedsa1-6-8",
+  "from": "infection-rash",
+  "stem": "Maternal rubella infection at 6 weeks' gestation carries a risk of cataracts, deafness and congenital heart disease of approximately:",
+  "options": [
+   "5%",
+   "20%",
+   "50%",
+   "Over 80%",
+   "Minimal"
+  ],
+  "answer": 3
+ },
+ {
+  "id": "pedsa1-6-9",
+  "from": "infection",
+  "stem": "Which is the most common congenital infection and the commonest non-genetic cause of sensorineural hearing loss?",
+  "options": [
+   "Rubella",
+   "Toxoplasmosis",
+   "Cytomegalovirus",
+   "Syphilis",
+   "Parvovirus B19"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "pedsa1-6-10",
+  "from": "infection",
+  "stem": "A newborn has chorioretinitis, hydrocephalus and intracranial calcification. The mother ate undercooked meat during pregnancy. What is the treatment?",
+  "options": [
+   "Ganciclovir for 6 weeks",
+   "Pyrimethamine and sulfadiazine for 1 year",
+   "Benzylpenicillin for 10 days",
+   "Aciclovir for 3 weeks",
+   "No treatment is available"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedsa1-6-12",
+  "from": "perinatal",
+  "stem": "What is the first step in newborn resuscitation?",
+  "options": [
+   "Suction the airway",
+   "Give 5 inflation breaths",
+   "Dry the baby and keep it warm",
+   "Start chest compressions",
+   "Give adrenaline"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "pedsa1-6-13",
+  "from": "perinatal",
+  "stem": "After 5 inflation breaths and 30 seconds of effective ventilation with good chest movement, a newborn's heart rate is 45/min. What is the next step?",
+  "options": [
+   "Repeat the inflation breaths",
+   "Chest compressions at 3 : 1 with ventilation and increase oxygen to 100%",
+   "Give IV sodium bicarbonate",
+   "Stop resuscitation",
+   "Give a 20 ml/kg fluid bolus"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedsa1-6-14",
+  "from": "genetics",
+  "stem": "Which condition is screened for by the newborn blood spot test taken on day 5?",
+  "options": [
+   "Developmental dysplasia of the hip",
+   "Congenital cataract",
+   "Medium-chain acyl-CoA dehydrogenase (MCAD) deficiency",
+   "Congenital heart disease",
+   "Hearing loss"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "pedsa1-m-1",
+  "from": "perinatal",
+  "stem": "Which is the correct compression-to-ventilation ratio in newborn resuscitation?",
+  "options": [
+   "15 : 2",
+   "30 : 2",
+   "3 : 1",
+   "5 : 1",
+   "Continuous compressions"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "pedsa-b10-10",
+  "from": "perinatal",
+  "stem": "In the UK all newborn babies have a heel-prick blood sample taken at 5–7 days of age for biochemical screening. Which of the following is not tested for in the UK? Select one answer only.",
+  "options": [
+   "Cystic fibrosis",
+   "Duchenne muscular dystrophy",
+   "Hypothyroidism",
+   "Phenylketonuria",
+   "Sickle cell disease"
+  ],
+  "answer": 1
+ },
+ {
+  "id": "pedsa-b10-11",
+  "from": "perinatal",
+  "stem": "Sam, a two-day-old infant, weighs 3.6 kg at birth. He was born by vaginal delivery with Apgar scores of 7 at 1 minute and 10 at 5 minutes. On day 2 he is reported to be jittery, crying inconsolably and feeding poorly. He sneezes and yawns, and is thought to have some abnormal movements, possibly seizures. No dysmorphic features are present and he is not jaundiced. What is the most likely explanation for his problems? Select one answer only.",
+  "options": [
+   "Congenital rubella syndrome",
+   "Hypoxic-ischaemic encephalopathy",
+   "Fetal alcohol syndrome",
+   "Kernicterus",
+   "Maternal opiate use"
+  ],
+  "answer": 4
+ },
+ {
+  "id": "pedsa-b11-6",
+  "from": "perinatal",
+  "stem": "Aaron was born at term, birth weight 3.2 kg. He is now 2 weeks old, and his mother is concerned that his umbilicus looks abnormal. A photo is shown in Fig. 11.2. Select the most likely diagnosis. Select one answer only.",
+  "options": [
+   "Exomphalos",
+   "Gastroschisis",
+   "Umbilical granuloma",
+   "Umbilical hernia",
+   "Umbilical infection (omphalitis)"
+  ],
+  "answer": 2
+ },
+ {
+  "id": "pedsa-b28-8",
+  "from": "perinatal",
+  "stem": "You are asked to review Huw, a baby who is 24 hours old. He was born by vaginal delivery following a normal pregnancy. The midwife has noted that the baby’s feet look abnormal. On examination the feet are turned inwards but appear to be of a normal size. On passive movement of the foot you are able to manipulate it so that it can be fully dorsiflexed to touch the front of the lower leg (neutral position). What is the most likely diagnosis from the list given below? Select one answer only.",
+  "options": [
+   "Positional talipes equinovarus",
+   "Talipes calcaneovalgus",
+   "Talipes equinovarus",
+   "Tarsal coalition",
+   "Vertical talus"
+  ],
+  "answer": 0
+ },
+ {
+  "id": "pedsa-b31-2",
+  "from": "perinatal",
+  "stem": "Worldwide, which of the following factors is most important in predicting neonatal mortality? Select one answer only.",
+  "options": [
+   "Birth order",
+   "Household wealth",
+   "Maternal educational achievement",
+   "Paternal educational achievement",
+   "Urban versus rural residency"
+  ],
+  "answer": 2
+ }
+]

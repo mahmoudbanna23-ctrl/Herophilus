@@ -1319,7 +1319,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-peri-1', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal',
+  id:'pedhd-peri-1', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal-med',
   stem:'A mother has just found out she is pregnant and asks for advice about how to look after her health and nutrition during pregnancy. She smokes 15 cigarettes a day. You recommend she gives up smoking. If she continues to smoke despite your advice the baby is at increased risk of which of the following health problems?',
   options:['Growth restriction','Dysmorphic syndromes','Neural tube defects','Shoulder dystocia','Vitamin D deficiency'],
   answer:0,
@@ -1329,7 +1329,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-peri-2', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal',
+  id:'pedhd-peri-2', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal-med',
   stem:'A mother has her routine 20-week antenatal scan. The sonographer finds the fetal abdominal and head circumference measurements are normal, but is concerned that there is an abnormally small amount of amniotic fluid (oligohydramnios). What is the most likely cause for this.',
   options:['Duodenal atresia','Gastroschisis','Maternal diabetes','Poorly functioning fetal kidneys','Severe intrauterine growth restriction'],
   answer:3,
@@ -1349,7 +1349,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-peri-4', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal',
+  id:'pedhd-peri-4', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal-med',
   stem:'A mother has just found out she is pregnant with twins. Her antenatal scan reveals dichorionic, diamniotic twins. Which condition carries the biggest increased risk in her twin pregnancy?',
   options:['Congenital abnormalities','Gestational diabetes','Macrosomia','Post-term gestation','Twin-to-twin transfusion'],
   answer:0,
@@ -1359,7 +1359,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-peri-5', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal',
+  id:'pedhd-peri-5', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal-med',
   stem:'You perform a routine newborn examination on a baby who is 20 hours old. Which one of the following features requires further immediate assessment?',
   options:['Acrocyanosis (cyanosis of the hands and feet)','A heart murmur','An undescended testis','Breast enlargement','Subconjunctival haemorrhages'],
   answer:1,
@@ -1379,7 +1379,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-peri-7', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'neonatal-sepsis',
+  id:'pedhd-peri-7', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal-med',
   stem:'Jonathan, a newborn baby, is noted to have hepatosplenomegaly and a petechial rash. His red eye reflex is normal and there is no heart murmur. He fails his newborn screening hearing test. His mother is from the UK and her antenatal screening bloods were all normal. What is the most likely congenital infection that has caused these symptoms?',
   options:['Cytomegalovirus','Rubella','Syphilis','Toxoplasmosis','Varicella zoster'],
   answer:0,
@@ -1389,7 +1389,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-peri-8', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal',
+  id:'pedhd-peri-8', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal-med',
   stem:'A male infant is born at term. At 1 minute of age he is breathing regularly and has a heart rate of 140 beats/min. He is grimacing but has not yet cried. He is pink centrally but still blue around his extremities and his tone is reduced although he has good limb flexion but is not actively moving his limbs. What is his Apgar score at one minute?',
   options:['10','9','8','7','6'],
   answer:3,
@@ -1409,7 +1409,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-peri-10', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal',
+  id:'pedhd-peri-10', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal-med',
   image:'q-pd-hd-51',
   imgAlt:'Colour clinical photograph of a newborn lying on a white sheet, trunk and limbs in view.',
   stem:'George, a 2-day-old baby boy, is reviewed by the paediatric doctor at the request of the midwife. He was born by forceps delivery and has been feeding well. There were no risk factors for sepsis and mother was well during her pregnancy. When examined, he appears very well but has the rash shown in the opposite figure. His mother reports the rash keeps moving around his body. What is the diagnosis that fits best with the attached clinical description and picture?',
@@ -1421,7 +1421,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-peri-11', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal',
+  id:'pedhd-peri-11', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal-med',
   image:'q-pd-hd-52a',
   imgAlt:'Colour clinical photograph of an infant\'s face, viewed head-on.',
   stem:'Anna, a month-old infant, is reviewed by the general practitioner. She was born by normal vaginal delivery, and was well during and after delivery. Her mother is worried about the mark on her face (shown in the opposite figure). It has not changed in appearance since birth. What is the diagnosis that fits best with the attached clinical description and picture?',
@@ -1433,7 +1433,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-peri-12', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal',
+  id:'pedhd-peri-12', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal-med',
   image:'q-pd-hd-52b',
   imgAlt:'Close-up colour clinical photograph of a neonate\'s nose, cheek and mouth.',
   stem:'Oliver, a 4-day-old infant, is having a routine newborn check by the junior paediatric doctor. The doctor notices some small white spots on Oliver’s nose and cheeks (shown in the opposite figure). Oliver was born by normal vaginal delivery and is currently feeding well. What is the diagnosis that fits best with the attached clinical description and picture?',
@@ -1445,7 +1445,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-peri-13', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal',
+  id:'pedhd-peri-13', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal-med',
   image:'q-pd-hd-52c',
   imgAlt:'Colour clinical photograph of an infant lying on her side wrapped in a blanket, forehead in view.',
   stem:'Jessica, a 2-month-old infant, presents to her family doctor with a mass on her forehead as shown in the opposite figure. It was not present at birth, and has been gradually increasing in size since it was first noticed when Jessica was about 3 weeks old. Jessica is well. The only past medical history of note is an uncomplicated premature delivery at 33 weeks gestation. What is the diagnosis that fits best with the attached clinical description and picture?',
@@ -1457,7 +1457,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-peri-14', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal',
+  id:'pedhd-peri-14', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal-med',
   image:'q-pd-hd-53',
   imgAlt:'Colour clinical photograph of a naked infant held prone, back and buttocks toward the camera.',
   stem:'Adam, a 3-day-old black infant, has his routine newborn check. The paediatric doctor notices blue and black macules on his back and buttocks (shown in the opposite figure). Adam was born by normal vaginal delivery and has been feeding well since birth. What is the diagnosis that fits best with the attached clinical description and picture?',
@@ -2573,7 +2573,7 @@ var Q_PEDS = [
 },
 
 {
-  id:'pedhd-neuro-7', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'genetics',
+  id:'pedhd-neuro-7', alsoIn:['selfassess'], bank:'house', module:'pediatrics', chapter:'perinatal-med',
   image:'q-pd-hd-92',
   imgAlt:'Colour clinical close-up photograph of the back/top of a newborn\'s scalp.',
   stem:'Gregor is born at term. It was a normal pregnancy though the mother did not have any antenatal ultrasound examinations as she was against medical procedures. He was born by vaginal delivery. Immediately, the midwife noticed the lesion shown in the opposite figure. Which of the supplements listed would have reduced the risk of this problem if taken by the mother periconceptually?',

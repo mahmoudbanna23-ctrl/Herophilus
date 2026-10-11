@@ -1191,7 +1191,7 @@ var Q_PEDS_SA = [
     "id": "pedsa1-6-1",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "perinatal",
+    "chapter": "perinatal-med",
     "stem": "How is the perinatal mortality rate defined?",
     "options": [
       "Deaths in the first 4 weeks per 1000 live births",
@@ -1209,7 +1209,7 @@ var Q_PEDS_SA = [
     "id": "pedsa1-6-2",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "perinatal",
+    "chapter": "perinatal-med",
     "stem": "Which drug should not be prescribed to females of child-bearing age because of a 10% risk of congenital anomaly and a 30–40% risk of developmental delay?",
     "options": [
       "Carbamazepine",
@@ -1227,7 +1227,7 @@ var Q_PEDS_SA = [
     "id": "pedsa1-6-3",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "renal-cakut",
+    "chapter": "perinatal-med",
     "stem": "A 20-week scan shows severe oligohydramnios. Which fetal abnormality is most likely to be responsible?",
     "options": [
       "Duodenal atresia",
@@ -1263,7 +1263,7 @@ var Q_PEDS_SA = [
     "id": "pedsa1-6-5",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "perinatal",
+    "chapter": "perinatal-med",
     "stem": "Fetal anaemia from rhesus isoimmunisation is detected non-invasively by:",
     "options": [
       "Amniocentesis",
@@ -1317,7 +1317,7 @@ var Q_PEDS_SA = [
     "id": "pedsa1-6-8",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "infection-rash",
+    "chapter": "perinatal-med",
     "stem": "Maternal rubella infection at 6 weeks' gestation carries a risk of cataracts, deafness and congenital heart disease of approximately:",
     "options": [
       "5%",
@@ -1335,7 +1335,7 @@ var Q_PEDS_SA = [
     "id": "pedsa1-6-9",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "infection",
+    "chapter": "perinatal-med",
     "stem": "Which is the most common congenital infection and the commonest non-genetic cause of sensorineural hearing loss?",
     "options": [
       "Rubella",
@@ -1353,7 +1353,7 @@ var Q_PEDS_SA = [
     "id": "pedsa1-6-10",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "infection",
+    "chapter": "perinatal-med",
     "stem": "A newborn has chorioretinitis, hydrocephalus and intracranial calcification. The mother ate undercooked meat during pregnancy. What is the treatment?",
     "options": [
       "Ganciclovir for 6 weeks",
@@ -1389,7 +1389,7 @@ var Q_PEDS_SA = [
     "id": "pedsa1-6-12",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "perinatal",
+    "chapter": "perinatal-med",
     "stem": "What is the first step in newborn resuscitation?",
     "options": [
       "Suction the airway",
@@ -1407,7 +1407,7 @@ var Q_PEDS_SA = [
     "id": "pedsa1-6-13",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "perinatal",
+    "chapter": "perinatal-med",
     "stem": "After 5 inflation breaths and 30 seconds of effective ventilation with good chest movement, a newborn's heart rate is 45/min. What is the next step?",
     "options": [
       "Repeat the inflation breaths",
@@ -1425,7 +1425,7 @@ var Q_PEDS_SA = [
     "id": "pedsa1-6-14",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "genetics",
+    "chapter": "perinatal-med",
     "stem": "Which condition is screened for by the newborn blood spot test taken on day 5?",
     "options": [
       "Developmental dysplasia of the hip",
@@ -2343,7 +2343,7 @@ var Q_PEDS_SA = [
     "id": "pedsa1-m-1",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "perinatal",
+    "chapter": "perinatal-med",
     "stem": "Which is the correct compression-to-ventilation ratio in newborn resuscitation?",
     "options": [
       "15 : 2",
@@ -8142,7 +8142,7 @@ var Q_PEDS_SA = [
     "id": "pedsa-b10-10",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "perinatal",
+    "chapter": "perinatal-med",
     "stem": "In the UK all newborn babies have a heel-prick blood sample taken at 5–7 days of age for biochemical screening. Which of the following is not tested for in the UK? Select one answer only.",
     "options": [
       "Cystic fibrosis",
@@ -8160,7 +8160,7 @@ var Q_PEDS_SA = [
     "id": "pedsa-b10-11",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "perinatal",
+    "chapter": "perinatal-med",
     "stem": "Sam, a two-day-old infant, weighs 3.6 kg at birth. He was born by vaginal delivery with Apgar scores of 7 at 1 minute and 10 at 5 minutes. On day 2 he is reported to be jittery, crying inconsolably and feeding poorly. He sneezes and yawns, and is thought to have some abnormal movements, possibly seizures. No dysmorphic features are present and he is not jaundiced. What is the most likely explanation for his problems? Select one answer only.",
     "options": [
       "Congenital rubella syndrome",
@@ -8196,7 +8196,7 @@ var Q_PEDS_SA = [
     "id": "pedsa-b11-6",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "perinatal",
+    "chapter": "perinatal-med",
     "stem": "Aaron was born at term, birth weight 3.2 kg. He is now 2 weeks old, and his mother is concerned that his umbilicus looks abnormal. A photo is shown in Fig. 11.2. Select the most likely diagnosis. Select one answer only.",
     "options": [
       "Exomphalos",
@@ -9461,7 +9461,7 @@ var Q_PEDS_SA = [
     "id": "pedsa-b28-8",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "perinatal",
+    "chapter": "perinatal-med",
     "stem": "You are asked to review Huw, a baby who is 24 hours old. He was born by vaginal delivery following a normal pregnancy. The midwife has noted that the baby’s feet look abnormal. On examination the feet are turned inwards but appear to be of a normal size. On passive movement of the foot you are able to manipulate it so that it can be fully dorsiflexed to touch the front of the lower leg (neutral position). What is the most likely diagnosis from the list given below? Select one answer only.",
     "options": [
       "Positional talipes equinovarus",
@@ -10141,7 +10141,7 @@ var Q_PEDS_SA = [
     "id": "pedsa-b31-2",
     "bank": "selfassess",
     "module": "pediatrics",
-    "chapter": "perinatal",
+    "chapter": "perinatal-med",
     "stem": "Worldwide, which of the following factors is most important in predicting neonatal mortality? Select one answer only.",
     "options": [
       "Birth order",

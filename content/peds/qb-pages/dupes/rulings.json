@@ -1,0 +1,223 @@
+{
+ "1": {
+  "merge": false,
+  "why": "same stem, different figure (pedep2-car-6 / pedep2-car-8)"
+ },
+ "5": {
+  "merge": false,
+  "why": "same stem, different figure (pedhd-card-6..10 set, never folded)"
+ },
+ "7": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "15": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "24": {
+  "merge": false,
+  "why": "different statement keyed and different options"
+ },
+ "61": {
+  "merge": true,
+  "keep": "pedhd-emg-19",
+  "why": "same case and key; House copy adds the gas numbers and a fifth option"
+ },
+ "63": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "67": {
+  "merge": false,
+  "why": "first step vs best management, different option sets"
+ },
+ "69": {
+  "merge": false,
+  "why": "options are mechanisms in one and diagnoses in the other"
+ },
+ "88": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "103": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "104": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "105": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "117": {
+  "merge": true,
+  "keep": "pedhd-renal-12",
+  "why": "same case and key; A drops the UTI option and prints mm^2 (unit slip), B is the fuller printing with mm3"
+ },
+ "128": {
+  "merge": false,
+  "why": "A asks diagnosis plus why timing matters (5 options); B is a 10-option matching item asking diagnosis only"
+ },
+ "135": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "136": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "137": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "138": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "139": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "145": {
+  "merge": false,
+  "why": "three of four options differ medically (>4 s vs >3 s threshold, compensated shock, pressure time)"
+ },
+ "151": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "181": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "187": {
+  "merge": false,
+  "why": "one wrong option differs (Testosterone / Genetics): removing either copy loses an option, both stay"
+ },
+ "191": {
+  "merge": false,
+  "why": "option E differs (Premature puberty / Premature pubarche): different terms, both stay"
+ },
+ "206": {
+  "merge": true,
+  "why": "same case and key; rash wording only"
+ },
+ "208": {
+  "merge": false,
+  "why": "two wrong options differ (Drug reaction, Enteroviral / Varicella, Scarlet fever): both stay"
+ },
+ "226": {
+  "merge": false,
+  "why": "doses offered differ: 10 mL/kg keyed with no 20 option vs 20 mL/kg keyed; something medical differs, both stay"
+ },
+ "231": {
+  "merge": true,
+  "keep": "pedhd-inf-23",
+  "why": "same case and key; House copy adds ALT 190"
+ },
+ "234": {
+  "merge": false,
+  "why": "options are mechanisms in one and diagnoses in the other"
+ },
+ "251": {
+  "merge": false,
+  "why": "different statement keyed in each (right-sided vs repair within 48 hours)"
+ },
+ "267": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "342": {
+  "merge": false,
+  "why": "milestone differs (makes loud noises / startles to loud noises)"
+ },
+ "346": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "349": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "382": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "384": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "395": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "428": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "451": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "458": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "470": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ },
+ "516": {
+  "merge": false,
+  "why": "different question asked (best prevention / factor behind the UK decline)"
+ },
+ "519": {
+  "merge": false,
+  "why": "centiles differ (3rd / 0.4th) and family history differs"
+ },
+ "538": {
+  "merge": false,
+  "why": "different question asked (not systolic / diastolic)"
+ },
+ "540": {
+  "merge": false,
+  "why": "exam copy says upper limbs stiff, topic copy says right limbs: finding differs"
+ },
+ "562": {
+  "merge": false,
+  "why": "exam copy says upper limbs stiff, House copy says right limbs: finding differs"
+ },
+ "_about": "Claude's rulings on read pairs (key = pair number n in pairs/judged/all.json). merge:false = both stay. keep overrides the first reader's keep. A pair with no ruling here follows the first reader only if the second reader agreed.",
+ "pedep2-gen-27|pedhd-gen-18": {
+  "merge": true,
+  "force": true,
+  "why": "same question, same options and key; wording, abbreviation or print variant only (read by Claude)"
+ }
+}

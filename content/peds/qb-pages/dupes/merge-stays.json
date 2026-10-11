@@ -1,0 +1,6155 @@
+[
+ {
+  "pair": "auto",
+  "a": "pedep-emg-10",
+  "b": "pedep-emg-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-10",
+  "b": "pedep-emg-58",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-10",
+  "b": "pedhd-emg-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-11",
+  "b": "pedep2-res-65",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-11",
+  "b": "pedhd-emg-10",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-13",
+  "b": "pedep-emg-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-13",
+  "b": "pedep-emg-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-13",
+  "b": "pedep-emg-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-13",
+  "b": "pedep-emg-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-14",
+  "b": "pedep-emg-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-14",
+  "b": "pedep-emg-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-14",
+  "b": "pedep-emg-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-15",
+  "b": "pedep-emg-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-15",
+  "b": "pedep-emg-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-16",
+  "b": "pedep-emg-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-58",
+  "b": "pedep2-res-65",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-emg-58",
+  "b": "pedhd-emg-10",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-10",
+  "b": "pedep-gi-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-10",
+  "b": "pedep-gi-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-10",
+  "b": "pedhd-gastro-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-10",
+  "b": "pedhd-gastro-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-11",
+  "b": "pedep-gi-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-11",
+  "b": "pedhd-gastro-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-12",
+  "b": "pedhd-gastro-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-13",
+  "b": "pedep-gi-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-13",
+  "b": "pedep-gi-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-13",
+  "b": "pedep-gi-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-13",
+  "b": "pedhd-gastro-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-13",
+  "b": "pedhd-gastro-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-13",
+  "b": "pedhd-gastro-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-14",
+  "b": "pedep-gi-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-14",
+  "b": "pedep-gi-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-14",
+  "b": "pedhd-gastro-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-14",
+  "b": "pedhd-gastro-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-14",
+  "b": "pedhd-gastro-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-15",
+  "b": "pedep-gi-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-15",
+  "b": "pedhd-gastro-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-15",
+  "b": "pedhd-gastro-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-15",
+  "b": "pedhd-gastro-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-16",
+  "b": "pedhd-gastro-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-16",
+  "b": "pedhd-gastro-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-16",
+  "b": "pedhd-gastro-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-8",
+  "b": "pedep-gi-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-8",
+  "b": "pedhd-gastro-10",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-8",
+  "b": "pedhd-gastro-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-9",
+  "b": "pedhd-gastro-10",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gi-9",
+  "b": "pedhd-gastro-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gp-26",
+  "b": "pedep-gp-27",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gp-26",
+  "b": "pedep-gp-28",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gp-26",
+  "b": "pedhd-gp-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gp-26",
+  "b": "pedhd-gp-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gp-27",
+  "b": "pedep-gp-28",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gp-27",
+  "b": "pedhd-gp-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gp-27",
+  "b": "pedhd-gp-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gp-28",
+  "b": "pedhd-gp-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-gp-28",
+  "b": "pedhd-gp-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-inf-11",
+  "b": "pedep-mf1-35",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-inf-2",
+  "b": "pedep-inf-44",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-inf-40",
+  "b": "pedep-inf-44",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-mf1-35",
+  "b": "pedep-mf2-71",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-mf3-18",
+  "b": "pedep-neo-52",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-10",
+  "b": "pedep-neo-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-10",
+  "b": "pedep-neo-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-10",
+  "b": "pedhd-neo-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-10",
+  "b": "pedhd-neo-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-12",
+  "b": "pedep-neo-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-12",
+  "b": "pedhd-neo-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-13",
+  "b": "pedhd-neo-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-6",
+  "b": "pedep-neo-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-6",
+  "b": "pedhd-neo-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-7",
+  "b": "pedhd-neo-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-8",
+  "b": "pedep-neo-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-8",
+  "b": "pedhd-neo-10",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-8",
+  "b": "pedhd-neo-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-9",
+  "b": "pedhd-neo-10",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-neo-9",
+  "b": "pedhd-neo-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-10",
+  "b": "pedep-nut-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-10",
+  "b": "pedep-nut-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-10",
+  "b": "pedep-nut-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-10",
+  "b": "pedhd-nutr-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-10",
+  "b": "pedhd-nutr-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-10",
+  "b": "pedhd-nutr-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-7",
+  "b": "pedep-nut-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-7",
+  "b": "pedep-nut-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-7",
+  "b": "pedhd-nutr-10",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-7",
+  "b": "pedhd-nutr-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-7",
+  "b": "pedhd-nutr-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-8",
+  "b": "pedep-nut-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-8",
+  "b": "pedhd-nutr-10",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-8",
+  "b": "pedhd-nutr-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-8",
+  "b": "pedhd-nutr-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-9",
+  "b": "pedhd-nutr-10",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-9",
+  "b": "pedhd-nutr-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-nut-9",
+  "b": "pedhd-nutr-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-per-10",
+  "b": "pedep-per-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-per-10",
+  "b": "pedhd-peri-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-per-11",
+  "b": "pedhd-peri-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep-per-14",
+  "b": "pedhd-peri-10",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-car-11",
+  "b": "pedep2-car-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-car-11",
+  "b": "pedhd-card-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-car-11",
+  "b": "pedhd-card-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-car-17",
+  "b": "pedhd-card-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-car-17",
+  "b": "pedhd-card-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-car-22",
+  "b": "pedep2-car-24",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-car-22",
+  "b": "pedhd-card-24",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-car-61",
+  "b": "pedep2-car-66",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-10",
+  "b": "pedhd-devp-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-11",
+  "b": "pedep2-dp-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-11",
+  "b": "pedep2-neu-40",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-11",
+  "b": "pedhd-devp-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-11",
+  "b": "pedhd-devp-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-12",
+  "b": "pedep2-dp-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-12",
+  "b": "pedep2-dp-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-12",
+  "b": "pedep2-dp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-12",
+  "b": "pedep2-dp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-12",
+  "b": "pedep2-mf1-64",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-12",
+  "b": "pedhd-devp-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-12",
+  "b": "pedhd-devp-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-12",
+  "b": "pedhd-devp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-12",
+  "b": "pedhd-devp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-13",
+  "b": "pedep2-dp-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-13",
+  "b": "pedep2-dp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-13",
+  "b": "pedep2-dp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-13",
+  "b": "pedep2-mf1-64",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-13",
+  "b": "pedhd-devp-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-13",
+  "b": "pedhd-devp-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-13",
+  "b": "pedhd-devp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-13",
+  "b": "pedhd-devp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-14",
+  "b": "pedep2-dp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-14",
+  "b": "pedep2-dp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-14",
+  "b": "pedep2-mf1-64",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-14",
+  "b": "pedhd-devp-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-14",
+  "b": "pedhd-devp-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-14",
+  "b": "pedhd-devp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-14",
+  "b": "pedhd-devp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-15",
+  "b": "pedep2-dp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-15",
+  "b": "pedhd-devp-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-15",
+  "b": "pedhd-devp-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-15",
+  "b": "pedhd-devp-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-15",
+  "b": "pedhd-devp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-16",
+  "b": "pedep2-mf1-64",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-16",
+  "b": "pedhd-devp-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-16",
+  "b": "pedhd-devp-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-16",
+  "b": "pedhd-devp-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-16",
+  "b": "pedhd-devp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-2",
+  "b": "pedep2-dp-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-2",
+  "b": "pedhd-devp-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-3",
+  "b": "pedhd-devp-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-8",
+  "b": "pedep2-nd-25",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-9",
+  "b": "pedep2-neu-40",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-9",
+  "b": "pedhd-devp-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-dp-9",
+  "b": "pedhd-devp-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-end-10",
+  "b": "pedep2-end-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-end-10",
+  "b": "pedep2-end-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-end-10",
+  "b": "pedep2-end-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-end-11",
+  "b": "pedep2-end-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-end-11",
+  "b": "pedep2-end-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-end-12",
+  "b": "pedep2-end-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-gen-14",
+  "b": "pedep2-gen-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-gen-14",
+  "b": "pedhd-gen-1",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-gen-8",
+  "b": "pedhd-gen-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-hem-33",
+  "b": "pedhd-haem-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-liv-6",
+  "b": "pedep2-liv-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-liv-6",
+  "b": "pedep2-liv-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-liv-6",
+  "b": "pedep2-liv-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-liv-7",
+  "b": "pedep2-liv-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-liv-7",
+  "b": "pedep2-liv-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-liv-8",
+  "b": "pedep2-liv-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mal-10",
+  "b": "pedep2-mal-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mal-10",
+  "b": "pedep2-mal-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mal-10",
+  "b": "pedep2-mal-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mal-11",
+  "b": "pedep2-mal-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mal-11",
+  "b": "pedep2-mal-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mal-12",
+  "b": "pedep2-mal-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mal-14",
+  "b": "pedep2-mal-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mal-14",
+  "b": "pedep2-mal-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mal-14",
+  "b": "pedep2-mal-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mal-15",
+  "b": "pedep2-mal-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mal-15",
+  "b": "pedep2-mal-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mf1-48",
+  "b": "pedep2-mf3-35",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mf1-64",
+  "b": "pedhd-devp-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mf1-64",
+  "b": "pedhd-devp-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mf1-64",
+  "b": "pedhd-devp-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mf1-64",
+  "b": "pedhd-devp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mf2-26",
+  "b": "pedhd-endo-10",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mf2-26",
+  "b": "pedhd-endo-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mf2-26",
+  "b": "pedhd-endo-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-mf4-67",
+  "b": "pedsa2-1-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-12",
+  "b": "pedep2-nd-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-12",
+  "b": "pedhd-dev-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-13",
+  "b": "pedep2-nd-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-13",
+  "b": "pedhd-dev-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-15",
+  "b": "pedep2-nd-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-15",
+  "b": "pedep2-nd-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-15",
+  "b": "pedhd-dev-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-15",
+  "b": "pedhd-dev-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-16",
+  "b": "pedhd-dev-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-17",
+  "b": "pedhd-dev-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-19",
+  "b": "pedep2-nd-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-19",
+  "b": "pedhd-dev-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-20",
+  "b": "pedhd-dev-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-4",
+  "b": "pedep2-nd-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-4",
+  "b": "pedhd-dev-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-5",
+  "b": "pedhd-dev-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-8",
+  "b": "pedhd-dev-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-nd-9",
+  "b": "pedhd-dev-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-10",
+  "b": "pedep2-neu-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-13",
+  "b": "pedhd-neuro-10",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-13",
+  "b": "pedhd-neuro-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-14",
+  "b": "pedep2-neu-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-15",
+  "b": "pedep2-neu-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-15",
+  "b": "pedep2-neu-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-17",
+  "b": "pedep2-neu-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-17",
+  "b": "pedep2-neu-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-17",
+  "b": "pedhd-neuro-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-17",
+  "b": "pedhd-neuro-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-17",
+  "b": "pedhd-neuro-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-18",
+  "b": "pedep2-neu-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-18",
+  "b": "pedhd-neuro-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-18",
+  "b": "pedhd-neuro-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-18",
+  "b": "pedhd-neuro-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-20",
+  "b": "pedhd-neuro-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-20",
+  "b": "pedhd-neuro-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-20",
+  "b": "pedhd-neuro-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-40",
+  "b": "pedhd-devp-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-40",
+  "b": "pedhd-devp-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-40",
+  "b": "pedhd-devp-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-neu-8",
+  "b": "pedep2-neu-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-13",
+  "b": "pedep2-ren-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-13",
+  "b": "pedhd-renal-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-13",
+  "b": "pedhd-renal-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-14",
+  "b": "pedhd-renal-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-14",
+  "b": "pedhd-renal-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-16",
+  "b": "pedep2-ren-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-16",
+  "b": "pedep2-ren-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-16",
+  "b": "pedhd-renal-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-16",
+  "b": "pedhd-renal-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-16",
+  "b": "pedhd-renal-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-17",
+  "b": "pedep2-ren-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-17",
+  "b": "pedhd-renal-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-17",
+  "b": "pedhd-renal-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-18",
+  "b": "pedhd-renal-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-18",
+  "b": "pedhd-renal-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-ren-18",
+  "b": "pedhd-renal-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-11",
+  "b": "pedep2-res-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-11",
+  "b": "pedhd-resp-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-12",
+  "b": "pedhd-resp-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-13",
+  "b": "pedep2-res-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-13",
+  "b": "pedep2-res-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-13",
+  "b": "pedhd-resp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-13",
+  "b": "pedhd-resp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-13",
+  "b": "pedhd-resp-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-14",
+  "b": "pedep2-res-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-14",
+  "b": "pedhd-resp-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-14",
+  "b": "pedhd-resp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-14",
+  "b": "pedhd-resp-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-15",
+  "b": "pedhd-resp-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-15",
+  "b": "pedhd-resp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-15",
+  "b": "pedhd-resp-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-17",
+  "b": "pedep2-res-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-17",
+  "b": "pedhd-resp-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-17",
+  "b": "pedhd-resp-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-19",
+  "b": "pedhd-resp-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-19",
+  "b": "pedhd-resp-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedep2-res-65",
+  "b": "pedhd-emg-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-card-11",
+  "b": "pedhd-card-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-card-11",
+  "b": "pedhd-card-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-card-12",
+  "b": "pedhd-card-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-dev-12",
+  "b": "pedhd-dev-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-dev-13",
+  "b": "pedhd-dev-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-dev-15",
+  "b": "pedhd-dev-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-dev-15",
+  "b": "pedhd-dev-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-dev-19",
+  "b": "pedhd-dev-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-dev-4",
+  "b": "pedhd-dev-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-10",
+  "b": "pedhd-devp-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-11",
+  "b": "pedhd-devp-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-11",
+  "b": "pedhd-devp-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-12",
+  "b": "pedhd-devp-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-12",
+  "b": "pedhd-devp-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-12",
+  "b": "pedhd-devp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-12",
+  "b": "pedhd-devp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-13",
+  "b": "pedhd-devp-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-13",
+  "b": "pedhd-devp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-13",
+  "b": "pedhd-devp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-14",
+  "b": "pedhd-devp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-14",
+  "b": "pedhd-devp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-15",
+  "b": "pedhd-devp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-2",
+  "b": "pedhd-devp-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-devp-8",
+  "b": "pedhd-devp-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-emg-10",
+  "b": "pedhd-emg-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-emg-13",
+  "b": "pedhd-emg-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-emg-13",
+  "b": "pedhd-emg-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-emg-13",
+  "b": "pedhd-emg-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-emg-13",
+  "b": "pedhd-emg-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-emg-14",
+  "b": "pedhd-emg-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-emg-14",
+  "b": "pedhd-emg-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-emg-14",
+  "b": "pedhd-emg-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-emg-15",
+  "b": "pedhd-emg-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-emg-15",
+  "b": "pedhd-emg-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-emg-16",
+  "b": "pedhd-emg-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-endo-10",
+  "b": "pedhd-endo-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-endo-10",
+  "b": "pedhd-endo-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-endo-10",
+  "b": "pedhd-endo-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-endo-11",
+  "b": "pedhd-endo-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-endo-11",
+  "b": "pedhd-endo-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-endo-12",
+  "b": "pedhd-endo-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gastro-10",
+  "b": "pedhd-gastro-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gastro-10",
+  "b": "pedhd-gastro-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gastro-11",
+  "b": "pedhd-gastro-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gastro-13",
+  "b": "pedhd-gastro-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gastro-13",
+  "b": "pedhd-gastro-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gastro-13",
+  "b": "pedhd-gastro-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gastro-14",
+  "b": "pedhd-gastro-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gastro-14",
+  "b": "pedhd-gastro-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gastro-15",
+  "b": "pedhd-gastro-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gastro-8",
+  "b": "pedhd-gastro-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gen-1",
+  "b": "pedhd-gen-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gp-6",
+  "b": "pedhd-gp-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gp-6",
+  "b": "pedhd-gp-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-gp-7",
+  "b": "pedhd-gp-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-haem-11",
+  "b": "pedhd-haem-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-haem-13",
+  "b": "pedhd-haem-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-haem-13",
+  "b": "pedhd-haem-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-liv-6",
+  "b": "pedhd-liv-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-liv-6",
+  "b": "pedhd-liv-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-liv-6",
+  "b": "pedhd-liv-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-liv-7",
+  "b": "pedhd-liv-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-liv-7",
+  "b": "pedhd-liv-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-liv-8",
+  "b": "pedhd-liv-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-mal-10",
+  "b": "pedhd-mal-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-mal-10",
+  "b": "pedhd-mal-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-mal-10",
+  "b": "pedhd-mal-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-mal-11",
+  "b": "pedhd-mal-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-mal-11",
+  "b": "pedhd-mal-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-mal-12",
+  "b": "pedhd-mal-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-mal-14",
+  "b": "pedhd-mal-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-mal-14",
+  "b": "pedhd-mal-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-mal-14",
+  "b": "pedhd-mal-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-mal-15",
+  "b": "pedhd-mal-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-mal-15",
+  "b": "pedhd-mal-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neo-10",
+  "b": "pedhd-neo-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neo-10",
+  "b": "pedhd-neo-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neo-12",
+  "b": "pedhd-neo-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neo-6",
+  "b": "pedhd-neo-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neo-8",
+  "b": "pedhd-neo-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-10",
+  "b": "pedhd-neuro-11",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-10",
+  "b": "pedhd-neuro-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-11",
+  "b": "pedhd-neuro-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-14",
+  "b": "pedhd-neuro-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-14",
+  "b": "pedhd-neuro-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-14",
+  "b": "pedhd-neuro-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-14",
+  "b": "pedhd-neuro-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-15",
+  "b": "pedhd-neuro-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-15",
+  "b": "pedhd-neuro-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-15",
+  "b": "pedhd-neuro-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-16",
+  "b": "pedhd-neuro-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-16",
+  "b": "pedhd-neuro-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-17",
+  "b": "pedhd-neuro-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-17",
+  "b": "pedhd-neuro-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-17",
+  "b": "pedhd-neuro-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-18",
+  "b": "pedhd-neuro-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-18",
+  "b": "pedhd-neuro-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-19",
+  "b": "pedhd-neuro-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-neuro-8",
+  "b": "pedhd-neuro-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-nutr-10",
+  "b": "pedhd-nutr-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-nutr-10",
+  "b": "pedhd-nutr-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-nutr-10",
+  "b": "pedhd-nutr-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-nutr-7",
+  "b": "pedhd-nutr-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-nutr-7",
+  "b": "pedhd-nutr-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-nutr-8",
+  "b": "pedhd-nutr-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-peri-10",
+  "b": "pedhd-peri-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-peri-11",
+  "b": "pedhd-peri-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-renal-12",
+  "b": "pedhd-renal-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-renal-12",
+  "b": "pedhd-renal-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-renal-13",
+  "b": "pedhd-renal-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-renal-15",
+  "b": "pedhd-renal-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-renal-15",
+  "b": "pedhd-renal-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-renal-16",
+  "b": "pedhd-renal-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-renal-16",
+  "b": "pedhd-renal-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-renal-17",
+  "b": "pedhd-renal-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-resp-12",
+  "b": "pedhd-resp-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-resp-14",
+  "b": "pedhd-resp-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-resp-14",
+  "b": "pedhd-resp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-resp-14",
+  "b": "pedhd-resp-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-resp-15",
+  "b": "pedhd-resp-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-resp-15",
+  "b": "pedhd-resp-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-resp-16",
+  "b": "pedhd-resp-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-resp-18",
+  "b": "pedhd-resp-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-resp-18",
+  "b": "pedhd-resp-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedhd-resp-19",
+  "b": "pedhd-resp-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b15-10-4",
+  "b": "pedsa-b15-10-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b17-12-1",
+  "b": "pedsa-b17-12-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b24-8-1",
+  "b": "pedsa-b24-8-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b24-8-1",
+  "b": "pedsa-b24-8-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b24-8-2",
+  "b": "pedsa-b24-8-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b25-11-1",
+  "b": "pedsa-b25-11-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b25-11-1",
+  "b": "pedsa-b25-11-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b25-11-1",
+  "b": "pedsa-b25-11-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b25-11-1",
+  "b": "pedsa-b25-11-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b25-11-2",
+  "b": "pedsa-b25-11-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b25-11-2",
+  "b": "pedsa-b25-11-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b25-11-2",
+  "b": "pedsa-b25-11-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b25-11-3",
+  "b": "pedsa-b25-11-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b25-11-3",
+  "b": "pedsa-b25-11-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b25-11-4",
+  "b": "pedsa-b25-11-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-12-1",
+  "b": "pedsa-b28-12-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-12-1",
+  "b": "pedsa-b28-12-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-12-2",
+  "b": "pedsa-b28-12-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-13-1",
+  "b": "pedsa-b28-13-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-13-1",
+  "b": "pedsa-b28-13-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-13-1",
+  "b": "pedsa-b28-13-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-13-1",
+  "b": "pedsa-b28-13-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-13-2",
+  "b": "pedsa-b28-13-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-13-2",
+  "b": "pedsa-b28-13-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-13-2",
+  "b": "pedsa-b28-13-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-13-3",
+  "b": "pedsa-b28-13-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-13-3",
+  "b": "pedsa-b28-13-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-13-4",
+  "b": "pedsa-b28-13-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-14-1",
+  "b": "pedsa-b28-14-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-14-1",
+  "b": "pedsa-b28-14-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-14-1",
+  "b": "pedsa-b28-14-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-14-2",
+  "b": "pedsa-b28-14-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-14-2",
+  "b": "pedsa-b28-14-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b28-2",
+  "b": "pedsa-b28-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b30-5-1",
+  "b": "pedsa-b30-5-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b30-5-1",
+  "b": "pedsa-b30-5-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b30-5-1",
+  "b": "pedsa-b30-5-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b30-5-1",
+  "b": "pedsa-b30-5-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b30-5-2",
+  "b": "pedsa-b30-5-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b30-5-2",
+  "b": "pedsa-b30-5-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b30-5-2",
+  "b": "pedsa-b30-5-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b30-5-3",
+  "b": "pedsa-b30-5-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b30-5-3",
+  "b": "pedsa-b30-5-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b30-5-4",
+  "b": "pedsa-b30-5-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-1",
+  "b": "pedsa-b4-11-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-1",
+  "b": "pedsa-b4-11-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-1",
+  "b": "pedsa-b4-11-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-1",
+  "b": "pedsa-b4-11-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-1",
+  "b": "pedsa-b4-11-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-1",
+  "b": "pedsa-b4-11-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-1",
+  "b": "pedsa-b4-11-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-2",
+  "b": "pedsa-b4-11-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-2",
+  "b": "pedsa-b4-11-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-2",
+  "b": "pedsa-b4-11-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-2",
+  "b": "pedsa-b4-11-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-2",
+  "b": "pedsa-b4-11-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-3",
+  "b": "pedsa-b4-11-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-3",
+  "b": "pedsa-b4-11-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-3",
+  "b": "pedsa-b4-11-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-3",
+  "b": "pedsa-b4-11-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-3",
+  "b": "pedsa-b4-11-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-4",
+  "b": "pedsa-b4-11-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-4",
+  "b": "pedsa-b4-11-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-4",
+  "b": "pedsa-b4-11-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-4",
+  "b": "pedsa-b4-11-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-5",
+  "b": "pedsa-b4-11-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-5",
+  "b": "pedsa-b4-11-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-5",
+  "b": "pedsa-b4-11-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-6",
+  "b": "pedsa-b4-11-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-6",
+  "b": "pedsa-b4-11-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b4-11-7",
+  "b": "pedsa-b4-11-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-4-1",
+  "b": "pedsa-b5-4-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-4-1",
+  "b": "pedsa-b5-4-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-4-1",
+  "b": "pedsa-b5-4-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-4-1",
+  "b": "pedsa-b5-4-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-4-2",
+  "b": "pedsa-b5-4-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-4-2",
+  "b": "pedsa-b5-4-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-4-2",
+  "b": "pedsa-b5-4-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-4-3",
+  "b": "pedsa-b5-4-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-4-3",
+  "b": "pedsa-b5-4-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-4-4",
+  "b": "pedsa-b5-4-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-1",
+  "b": "pedsa-b5-5-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-1",
+  "b": "pedsa-b5-5-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-1",
+  "b": "pedsa-b5-5-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-1",
+  "b": "pedsa-b5-5-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-1",
+  "b": "pedsa-b5-5-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-1",
+  "b": "pedsa-b5-5-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-2",
+  "b": "pedsa-b5-5-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-2",
+  "b": "pedsa-b5-5-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-2",
+  "b": "pedsa-b5-5-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-2",
+  "b": "pedsa-b5-5-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-2",
+  "b": "pedsa-b5-5-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-3",
+  "b": "pedsa-b5-5-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-3",
+  "b": "pedsa-b5-5-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-3",
+  "b": "pedsa-b5-5-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-3",
+  "b": "pedsa-b5-5-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-4",
+  "b": "pedsa-b5-5-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-4",
+  "b": "pedsa-b5-5-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-4",
+  "b": "pedsa-b5-5-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-5",
+  "b": "pedsa-b5-5-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-5",
+  "b": "pedsa-b5-5-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b5-5-6",
+  "b": "pedsa-b5-5-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b7-13-1",
+  "b": "pedsa-b7-13-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b7-13-1",
+  "b": "pedsa-b7-13-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b7-13-1",
+  "b": "pedsa-b7-13-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b7-13-1",
+  "b": "pedsa-b7-13-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b7-13-2",
+  "b": "pedsa-b7-13-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b7-13-2",
+  "b": "pedsa-b7-13-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b7-13-2",
+  "b": "pedsa-b7-13-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b7-13-3",
+  "b": "pedsa-b7-13-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b7-13-3",
+  "b": "pedsa-b7-13-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b7-13-4",
+  "b": "pedsa-b7-13-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b8-5-1",
+  "b": "pedsa-b8-5-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b8-5-1",
+  "b": "pedsa-b8-5-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b8-5-1",
+  "b": "pedsa-b8-5-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b8-5-2",
+  "b": "pedsa-b8-5-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b8-5-2",
+  "b": "pedsa-b8-5-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b8-5-2",
+  "b": "pedsa-b8-5-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b8-5-3",
+  "b": "pedsa-b8-5-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b8-5-3",
+  "b": "pedsa-b8-5-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b8-5-4",
+  "b": "pedsa-b8-5-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b9-15-2",
+  "b": "pedsa-b9-15-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b9-15-2",
+  "b": "pedsa-b9-15-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b9-15-2",
+  "b": "pedsa-b9-15-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b9-15-3",
+  "b": "pedsa-b9-15-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b9-15-3",
+  "b": "pedsa-b9-15-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b9-15-4",
+  "b": "pedsa-b9-15-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b9-16-2",
+  "b": "pedsa-b9-16-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b9-16-2",
+  "b": "pedsa-b9-16-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b9-16-2",
+  "b": "pedsa-b9-16-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b9-16-3",
+  "b": "pedsa-b9-16-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b9-16-3",
+  "b": "pedsa-b9-16-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa-b9-16-4",
+  "b": "pedsa-b9-16-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-1",
+  "b": "pedsa1-10-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-1",
+  "b": "pedsa1-10-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-1",
+  "b": "pedsa1-10-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-1",
+  "b": "pedsa1-10-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-10",
+  "b": "pedsa1-10-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-10",
+  "b": "pedsa1-10-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-10",
+  "b": "pedsa1-10-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-10",
+  "b": "pedsa1-10-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-11",
+  "b": "pedsa1-10-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-11",
+  "b": "pedsa1-10-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-11",
+  "b": "pedsa1-10-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-11",
+  "b": "pedsa1-10-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-12",
+  "b": "pedsa1-10-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-12",
+  "b": "pedsa1-10-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-12",
+  "b": "pedsa1-10-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-13",
+  "b": "pedsa1-10-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-13",
+  "b": "pedsa1-10-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-14",
+  "b": "pedsa1-10-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-16",
+  "b": "pedsa1-10-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-16",
+  "b": "pedsa1-10-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-16",
+  "b": "pedsa1-10-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-16",
+  "b": "pedsa1-10-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-17",
+  "b": "pedsa1-10-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-17",
+  "b": "pedsa1-10-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-17",
+  "b": "pedsa1-10-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-18",
+  "b": "pedsa1-10-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-18",
+  "b": "pedsa1-10-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-19",
+  "b": "pedsa1-10-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-2",
+  "b": "pedsa1-10-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-2",
+  "b": "pedsa1-10-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-2",
+  "b": "pedsa1-10-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-21",
+  "b": "pedsa1-10-22",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-21",
+  "b": "pedsa1-10-23",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-21",
+  "b": "pedsa1-10-24",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-21",
+  "b": "pedsa1-10-25",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-22",
+  "b": "pedsa1-10-23",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-22",
+  "b": "pedsa1-10-24",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-22",
+  "b": "pedsa1-10-25",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-23",
+  "b": "pedsa1-10-24",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-23",
+  "b": "pedsa1-10-25",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-24",
+  "b": "pedsa1-10-25",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-3",
+  "b": "pedsa1-10-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-3",
+  "b": "pedsa1-10-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-4",
+  "b": "pedsa1-10-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-6",
+  "b": "pedsa1-10-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-6",
+  "b": "pedsa1-10-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-6",
+  "b": "pedsa1-10-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-7",
+  "b": "pedsa1-10-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-7",
+  "b": "pedsa1-10-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa1-10-8",
+  "b": "pedsa1-10-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-1",
+  "b": "pedsa2-13-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-1",
+  "b": "pedsa2-13-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-1",
+  "b": "pedsa2-13-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-1",
+  "b": "pedsa2-13-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-10",
+  "b": "pedsa2-13-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-10",
+  "b": "pedsa2-13-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-10",
+  "b": "pedsa2-13-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-10",
+  "b": "pedsa2-13-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-11",
+  "b": "pedsa2-13-12",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-11",
+  "b": "pedsa2-13-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-11",
+  "b": "pedsa2-13-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-11",
+  "b": "pedsa2-13-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-12",
+  "b": "pedsa2-13-13",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-12",
+  "b": "pedsa2-13-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-12",
+  "b": "pedsa2-13-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-13",
+  "b": "pedsa2-13-14",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-13",
+  "b": "pedsa2-13-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-14",
+  "b": "pedsa2-13-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-16",
+  "b": "pedsa2-13-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-16",
+  "b": "pedsa2-13-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-16",
+  "b": "pedsa2-13-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-16",
+  "b": "pedsa2-13-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-17",
+  "b": "pedsa2-13-18",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-17",
+  "b": "pedsa2-13-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-17",
+  "b": "pedsa2-13-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-18",
+  "b": "pedsa2-13-19",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-18",
+  "b": "pedsa2-13-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-19",
+  "b": "pedsa2-13-20",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-2",
+  "b": "pedsa2-13-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-2",
+  "b": "pedsa2-13-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-2",
+  "b": "pedsa2-13-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-3",
+  "b": "pedsa2-13-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-3",
+  "b": "pedsa2-13-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-4",
+  "b": "pedsa2-13-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-6",
+  "b": "pedsa2-13-7",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-6",
+  "b": "pedsa2-13-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-6",
+  "b": "pedsa2-13-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-7",
+  "b": "pedsa2-13-8",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-7",
+  "b": "pedsa2-13-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "auto",
+  "a": "pedsa2-13-8",
+  "b": "pedsa2-13-9",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=1",
+  "a": "pedep2-car-6",
+  "b": "pedep2-car-8",
+  "class": "clash",
+  "why": "ruled: same stem, different figure (pedep2-car-6 / pedep2-car-8)"
+ },
+ {
+  "pair": "n=5",
+  "a": "pedhd-card-6",
+  "b": "pedhd-card-8",
+  "class": "clash",
+  "why": "ruled: same stem, different figure (pedhd-card-6..10 set, never folded)"
+ },
+ {
+  "pair": "n=6",
+  "a": "pedep-emg-24",
+  "b": "pedhd-emg-24",
+  "class": "exact",
+  "why": "lossy both ways: option not in kept copy: Intravenous adrenaline (epinephrine), 1 microgram/kg (1:10 000) // option not in kept copy: Intravenous adrenaline (epinephrine), 1 microgram/kg (1:10,000)"
+ },
+ {
+  "pair": "n=9",
+  "a": "pedep-neo-40",
+  "b": "pedhd-peri-6",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Neonatal bacterial infection | Neonatal type 1 diabetes mellitus // option not in kept copy: Hypocalcemia"
+ },
+ {
+  "pair": "n=14",
+  "a": "pedep2-gen-8",
+  "b": "pedhd-gen-1",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=21",
+  "a": "pedep-gi-30",
+  "b": "pedep-gi-49",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=23",
+  "a": "pedep-gp-79",
+  "b": "pedhd-gastro-22",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Inflammatory markers and liver function tests // option not in kept copy: Liver function tests"
+ },
+ {
+  "pair": "n=24",
+  "a": "pedep-mf1-31",
+  "b": "pedep-neo-47",
+  "class": "near",
+  "why": "ruled: different statement keyed and different options"
+ },
+ {
+  "pair": "n=25",
+  "a": "pedep-mf3-28",
+  "b": "pedep-mf4-53",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Pneumonia | Coarctation of the aorta | Anaemia // option not in kept copy: Pneumothorax | Meconium aspiration syndrome"
+ },
+ {
+  "pair": "n=26",
+  "a": "pedep-neo-37",
+  "b": "pedhd-peri-9",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Hypercalcaemia // option not in kept copy: Hyperglycemia"
+ },
+ {
+  "pair": "n=29",
+  "a": "pedep2-car-10",
+  "b": "pedep2-car-6",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=30",
+  "a": "pedep2-car-10",
+  "b": "pedep2-car-7",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=31",
+  "a": "pedep2-car-10",
+  "b": "pedep2-car-8",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=32",
+  "a": "pedep2-car-10",
+  "b": "pedep2-car-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=34",
+  "a": "pedep2-car-6",
+  "b": "pedep2-car-7",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=35",
+  "a": "pedep2-car-6",
+  "b": "pedep2-car-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=36",
+  "a": "pedep2-car-7",
+  "b": "pedep2-car-8",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=37",
+  "a": "pedep2-car-7",
+  "b": "pedep2-car-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=38",
+  "a": "pedep2-car-8",
+  "b": "pedep2-car-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=47",
+  "a": "pedhd-card-10",
+  "b": "pedhd-card-6",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=48",
+  "a": "pedhd-card-10",
+  "b": "pedhd-card-7",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=49",
+  "a": "pedhd-card-10",
+  "b": "pedhd-card-8",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=50",
+  "a": "pedhd-card-10",
+  "b": "pedhd-card-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=51",
+  "a": "pedhd-card-6",
+  "b": "pedhd-card-7",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=52",
+  "a": "pedhd-card-6",
+  "b": "pedhd-card-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=53",
+  "a": "pedhd-card-7",
+  "b": "pedhd-card-8",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=54",
+  "a": "pedhd-card-7",
+  "b": "pedhd-card-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=55",
+  "a": "pedhd-card-8",
+  "b": "pedhd-card-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=56",
+  "a": "pedep-alg-1",
+  "b": "pedep-mf4-61",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=57",
+  "a": "pedep-emg-23",
+  "b": "pedep-mf2-24",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=59",
+  "a": "pedep-emg-24",
+  "b": "pedep-mf4-62",
+  "class": "near",
+  "why": "lossy both ways: key text differs // key text differs"
+ },
+ {
+  "pair": "n=60",
+  "a": "pedep-emg-52",
+  "b": "pedep-mf1-8",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=62",
+  "a": "pedep-inf-28",
+  "b": "pedep-mf3-44",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=64",
+  "a": "pedep-mf1-31",
+  "b": "pedep-neo-32",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=65",
+  "a": "pedep-mf1-34",
+  "b": "pedep-per-19",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=66",
+  "a": "pedep-mf1-37",
+  "b": "pedsa-b15-7",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=67",
+  "a": "pedep-mf1-42",
+  "b": "pedep-mf4-61",
+  "class": "near",
+  "why": "ruled: first step vs best management, different option sets"
+ },
+ {
+  "pair": "n=68",
+  "a": "pedep-mf2-49",
+  "b": "pedhd-alg-5",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=69",
+  "a": "pedep-mf2-78",
+  "b": "pedep-neo-1",
+  "class": "near",
+  "why": "ruled: options are mechanisms in one and diagnoses in the other"
+ },
+ {
+  "pair": "n=71",
+  "a": "pedep-mf3-41",
+  "b": "pedep-neo-3",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Herpes simplex virus (HSV) // option not in kept copy: Staphylococcus aureus | Streptococcus pneumoniae"
+ },
+ {
+  "pair": "n=72",
+  "a": "pedep-mf3-6",
+  "b": "pedhd-neo-3",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Herpes simplex virus (HSV) infection | Listeria monocytogenes // option not in kept copy: Streptococcus pneumoniae"
+ },
+ {
+  "pair": "n=73",
+  "a": "pedep-mf3-8",
+  "b": "pedep-tr2-1",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=74",
+  "a": "pedep-mf4-61",
+  "b": "pedhd-alg-1",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=75",
+  "a": "pedep-mf4-62",
+  "b": "pedhd-emg-24",
+  "class": "near",
+  "why": "lossy both ways: key text differs // key text differs"
+ },
+ {
+  "pair": "n=76",
+  "a": "pedep-neo-1",
+  "b": "pedhd-neo-1",
+  "class": "near",
+  "why": "picture not compared yet"
+ },
+ {
+  "pair": "n=77",
+  "a": "pedep-neo-3",
+  "b": "pedhd-neo-3",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Herpes simplex virus (HSV) infection | Staphylococcus aureus // option not in kept copy: Herpes simplex virus (HSV)"
+ },
+ {
+  "pair": "n=78",
+  "a": "pedep-neo-32",
+  "b": "pedep-neo-47",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=79",
+  "a": "pedep-neo-5",
+  "b": "pedhd-neo-5",
+  "class": "near",
+  "why": "picture not compared yet"
+ },
+ {
+  "pair": "n=81",
+  "a": "pedep-nut-20",
+  "b": "pedep-nut-65",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=83",
+  "a": "pedep2-car-16",
+  "b": "pedep2-car-29",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=85",
+  "a": "pedep2-car-2",
+  "b": "pedhd-card-2",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Persistent arterial duct | Pulmonary stenosis // option not in kept copy: Patent ductus arteriosus (PDA)"
+ },
+ {
+  "pair": "n=86",
+  "a": "pedep2-car-29",
+  "b": "pedep2-car-59",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=87",
+  "a": "pedep2-car-29",
+  "b": "pedhd-card-16",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=89",
+  "a": "pedep2-dp-22",
+  "b": "pedep2-dp-26",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=90",
+  "a": "pedep2-dp-25",
+  "b": "pedep2-neu-36",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=92",
+  "a": "pedep2-dp-7",
+  "b": "pedep2-neu-40",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Chromosome karyotype | Creatine kinase | Thyroid function tests // option not in kept copy: Cranial ultrasound scan | EEG"
+ },
+ {
+  "pair": "n=97",
+  "a": "pedep2-hem-26",
+  "b": "pedhd-haem-5",
+  "class": "near",
+  "why": "picture not compared yet"
+ },
+ {
+  "pair": "n=106",
+  "a": "pedep2-hem-81",
+  "b": "pedep2-mf2-10",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: CBC | Hormonal assay // option not in kept copy: Bone marrow examination | Coombs test | RBC enzyme Assay"
+ },
+ {
+  "pair": "n=107",
+  "a": "pedep2-mal-23",
+  "b": "pedep2-mf2-47",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=108",
+  "a": "pedep2-mf1-35",
+  "b": "pedep2-neu-45",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=116",
+  "a": "pedep2-ren-11",
+  "b": "pedep2-ren-43",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Normal result | Renal stone (calculi) // option not in kept copy: Balanitis | Glomerulonephritis | Renal stone"
+ },
+ {
+  "pair": "n=118",
+  "a": "pedep2-ren-13",
+  "b": "pedep2-ren-35",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Kidney stones // option not in kept copy: Balanitis | Perineal contamination"
+ },
+ {
+  "pair": "n=120",
+  "a": "pedep2-ren-35",
+  "b": "pedhd-renal-13",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Balanitis | Perineal contamination // option not in kept copy: Kidney stones"
+ },
+ {
+  "pair": "n=121",
+  "a": "pedep2-ren-41",
+  "b": "pedep2-ren-54",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=122",
+  "a": "pedep2-ren-43",
+  "b": "pedhd-renal-11",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Balanitis | Glomerulonephritis | Renal stone // option not in kept copy: Normal result | Renal stone (calculi)"
+ },
+ {
+  "pair": "n=125",
+  "a": "pedep2-res-39",
+  "b": "pedep2-res-59",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=126",
+  "a": "pedep2-res-44",
+  "b": "pedsa2-5-3",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=127",
+  "a": "pedsa1-10-2",
+  "b": "pedsa1-3-5",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=128",
+  "a": "pedsa2-11-3",
+  "b": "pedsa2-13-16",
+  "class": "near",
+  "why": "ruled: A asks diagnosis plus why timing matters (5 options); B is a 10-option matching item asking diagnosis only"
+ },
+ {
+  "pair": "n=129",
+  "a": "pedsa2-13-1",
+  "b": "pedsa2-6-4",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=130",
+  "a": "pedsa2-13-18",
+  "b": "pedsa2-4-5",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Hereditary spherocytosis | Autoimmune haemolytic anaemia | Iron deficiency | Aplastic crisis // option not in kept copy: Biliary atresia | Breast-milk jaundice | Congenital hypothyroidism | Galactosaemia | α1-antitrypsin deficiency | Acute lymphoblastic leukaemia | Iron deficiency anaemia | Nephrotic syndrome | Cirrhosis with portal hypertension"
+ },
+ {
+  "pair": "n=131",
+  "a": "pedsa2-13-20",
+  "b": "pedsa2-7-14",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=142",
+  "a": "pedep-emg-25",
+  "b": "pedhd-emg-25",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=145",
+  "a": "pedep-emg-32",
+  "b": "pedep-mf3-25",
+  "class": "near",
+  "why": "ruled: three of four options differ medically (>4 s vs >3 s threshold, compensated shock, pressure time)"
+ },
+ {
+  "pair": "n=146",
+  "a": "pedep-emg-33",
+  "b": "pedsa-b7-7",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=150",
+  "a": "pedep-emg-59",
+  "b": "pedhd-inf-15",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Intravenous antibiotics // option not in kept copy: Antipyretic/analgesia"
+ },
+ {
+  "pair": "n=152",
+  "a": "pedep-emg-61",
+  "b": "pedep-mf3-54",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=153",
+  "a": "pedep-emg-8",
+  "b": "pedhd-emg-8",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=159",
+  "a": "pedep-gi-14",
+  "b": "pedep-mf2-56",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Hepatitis // option not in kept copy: Constipation"
+ },
+ {
+  "pair": "n=160",
+  "a": "pedep-gi-14",
+  "b": "pedhd-gastro-14",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=166",
+  "a": "pedep-gi-2",
+  "b": "pedep-gi-63",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Post-gastroenteritis syndrome // option not in kept copy: Coeliac disease"
+ },
+ {
+  "pair": "n=174",
+  "a": "pedep-gi-3",
+  "b": "pedep-mf1-49",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=175",
+  "a": "pedep-gi-3",
+  "b": "pedhd-gastro-3",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Inguinal hernia | Wilms tumour // option not in kept copy: Intussusception | Hirschsprung's disease"
+ },
+ {
+  "pair": "n=176",
+  "a": "pedep-gi-30",
+  "b": "pedep-inf-34",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=177",
+  "a": "pedep-gi-4",
+  "b": "pedep-gi-59",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Gastroenteritis // option not in kept copy: Helicobacter pylori infection"
+ },
+ {
+  "pair": "n=179",
+  "a": "pedep-gi-46",
+  "b": "pedep-gi-7",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Rectal atresia // option not in kept copy: Malrotation"
+ },
+ {
+  "pair": "n=180",
+  "a": "pedep-gi-46",
+  "b": "pedhd-gastro-7",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Rectal atresia // option not in kept copy: Malrotation"
+ },
+ {
+  "pair": "n=182",
+  "a": "pedep-gi-59",
+  "b": "pedhd-gastro-4",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Helicobacter pylori infection // option not in kept copy: Gastroenteritis"
+ },
+ {
+  "pair": "n=183",
+  "a": "pedep-gi-63",
+  "b": "pedhd-gastro-2",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Coeliac disease // option not in kept copy: Post-gastroenteritis syndrome"
+ },
+ {
+  "pair": "n=187",
+  "a": "pedep-gp-10",
+  "b": "pedep-mf3-30",
+  "class": "near",
+  "why": "ruled: one wrong option differs (Testosterone / Genetics): removing either copy loses an option, both stay"
+ },
+ {
+  "pair": "n=191",
+  "a": "pedep-gp-24",
+  "b": "pedhd-gp-4",
+  "class": "near",
+  "why": "ruled: option E differs (Premature puberty / Premature pubarche): different terms, both stay"
+ },
+ {
+  "pair": "n=192",
+  "a": "pedep-gp-25",
+  "b": "pedep-gp-8",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=197",
+  "a": "pedep-gp-3",
+  "b": "pedep-gp-75",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: It is a pathological condition. | It occurs only in girls. | There is a lower final height. | It presents early in infancy. // option not in kept copy: Adequate bone age | More common in girls | Anal height is affected | Presentation is in infancy"
+ },
+ {
+  "pair": "n=203",
+  "a": "pedep-gp-37",
+  "b": "pedep-nut-11",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=204",
+  "a": "pedep-gp-37",
+  "b": "pedhd-nutr-11",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=207",
+  "a": "pedep-inf-26",
+  "b": "pedep-mf2-50",
+  "class": "near",
+  "why": "lossy both ways: kept stem shorter // kept copy is the exam copy"
+ },
+ {
+  "pair": "n=208",
+  "a": "pedep-inf-30",
+  "b": "pedep-mf1-35",
+  "class": "near",
+  "why": "ruled: two wrong options differ (Drug reaction, Enteroviral / Varicella, Scarlet fever): both stay"
+ },
+ {
+  "pair": "n=210",
+  "a": "pedep-inf-42",
+  "b": "pedep-inf-61",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Mumps virus | Measles virus | RSV | Rhinovirus // option not in kept copy: Cytomegalovirus | Parvovirus | Roseola infantum | Group A Streptococcus"
+ },
+ {
+  "pair": "n=211",
+  "a": "pedep-inf-42",
+  "b": "pedhd-inf-10",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Mumps virus | Measles virus | RSV | Rhinovirus // option not in kept copy: Cytomegalovirus | Parvovirus | Roseola infantum | Group A Streptococcus"
+ },
+ {
+  "pair": "n=214",
+  "a": "pedep-inf-43",
+  "b": "pedhd-peri-7",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=220",
+  "a": "pedep-mf1-19",
+  "b": "pedep-mf4-7",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Postmaturity | None of the above // option not in kept copy: Intermittent positive-pressure ventilation | Hypoxic-ischemic encephalopathy"
+ },
+ {
+  "pair": "n=221",
+  "a": "pedep-mf1-36",
+  "b": "pedhd-inf-4",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=222",
+  "a": "pedep-mf1-42",
+  "b": "pedhd-alg-1",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=223",
+  "a": "pedep-mf1-49",
+  "b": "pedhd-gastro-3",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=224",
+  "a": "pedep-mf1-70",
+  "b": "pedep2-hem-72",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=225",
+  "a": "pedep-mf2-2",
+  "b": "pedep-mf3-20",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Introducing Folic acid early in pregnancy | Keeping the room warmer // option not in kept copy: Feet to foot of cot | Keeping room cool to prevent overheating"
+ },
+ {
+  "pair": "n=226",
+  "a": "pedep-mf2-24",
+  "b": "pedhd-emg-23",
+  "class": "clash",
+  "why": "ruled: doses offered differ: 10 mL/kg keyed with no 20 option vs 20 mL/kg keyed; something medical differs, both stay"
+ },
+ {
+  "pair": "n=230",
+  "a": "pedep-mf2-56",
+  "b": "pedhd-gastro-14",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=232",
+  "a": "pedep-mf2-59",
+  "b": "pedhd-inf-20",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=233",
+  "a": "pedep-mf2-60",
+  "b": "pedep-mf3-8",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=234",
+  "a": "pedep-mf2-78",
+  "b": "pedhd-neo-1",
+  "class": "near",
+  "why": "ruled: options are mechanisms in one and diagnoses in the other"
+ },
+ {
+  "pair": "n=237",
+  "a": "pedep-mf3-20",
+  "b": "pedhd-emg-12",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Feet to foot of cot | Keeping room cool to prevent overheating // option not in kept copy: Introducing Folic acid early in pregnancy | Keeping the room warmer"
+ },
+ {
+  "pair": "n=238",
+  "a": "pedep-mf3-40",
+  "b": "pedep-mf4-58",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Mumps virus | Cytomegalovirus infection // option not in kept copy: Chickenpox virus (varicella-zoster virus) | Herpes simplex virus"
+ },
+ {
+  "pair": "n=239",
+  "a": "pedep-mf3-40",
+  "b": "pedhd-inf-12",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Mumps virus | Cytomegalovirus infection // option not in kept copy: Chickenpox virus (varicella-zoster virus) | Herpes simplex virus"
+ },
+ {
+  "pair": "n=240",
+  "a": "pedep-mf3-41",
+  "b": "pedhd-neo-3",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Herpes simplex virus (HSV) infection // option not in kept copy: Streptococcus pneumoniae"
+ },
+ {
+  "pair": "n=243",
+  "a": "pedep-mf3-48",
+  "b": "pedhd-peri-7",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=246",
+  "a": "pedep-mf3-6",
+  "b": "pedep-neo-3",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Herpes simplex virus (HSV) | Listeria monocytogenes // option not in kept copy: Staphylococcus aureus | Streptococcus pneumoniae"
+ },
+ {
+  "pair": "n=247",
+  "a": "pedep-mf3-62",
+  "b": "pedep-mf3-76",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=248",
+  "a": "pedep-mf3-64",
+  "b": "pedep-mf3-80",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=249",
+  "a": "pedep-mf3-65",
+  "b": "pedep-mf3-77",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=250",
+  "a": "pedep-mf3-65",
+  "b": "pedep-mf3-80",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=251",
+  "a": "pedep-mf3-65",
+  "b": "pedep-mf4-64",
+  "class": "clash",
+  "why": "ruled: different statement keyed in each (right-sided vs repair within 48 hours)"
+ },
+ {
+  "pair": "n=252",
+  "a": "pedep-mf3-7",
+  "b": "pedep-nut-18",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=253",
+  "a": "pedep-mf3-7",
+  "b": "pedep-nut-62",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=254",
+  "a": "pedep-mf3-7",
+  "b": "pedep-nut-71",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=255",
+  "a": "pedep-mf3-77",
+  "b": "pedep-mf3-80",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=256",
+  "a": "pedep-mf3-77",
+  "b": "pedep-mf4-64",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=257",
+  "a": "pedep-mf4-63",
+  "b": "pedep-tr1-5",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=259",
+  "a": "pedep-neo-12",
+  "b": "pedep2-mf1-73",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Heart failure | Fallot's tetralogy | Supraventricular tachycardia // option not in kept copy: Transient tachypnoea of the newborn | Respiratory distress syndrome | Anaemia"
+ },
+ {
+  "pair": "n=261",
+  "a": "pedep-neo-13",
+  "b": "pedep-neo-43",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: aspiration of meconium | bronchopulmonary dysplasia // option not in kept copy: Coarctation of the aorta | Anaemia"
+ },
+ {
+  "pair": "n=268",
+  "a": "pedep-neo-20",
+  "b": "pedhd-neo-20",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=269",
+  "a": "pedep-neo-21",
+  "b": "pedhd-neo-21",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=270",
+  "a": "pedep-neo-30",
+  "b": "pedhd-peri-7",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=271",
+  "a": "pedep-neo-35",
+  "b": "pedhd-peri-5",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=273",
+  "a": "pedep-neo-43",
+  "b": "pedhd-neo-13",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Coarctation of the aorta | Anaemia // option not in kept copy: aspiration of meconium | bronchopulmonary dysplasia"
+ },
+ {
+  "pair": "n=278",
+  "a": "pedep-nut-1",
+  "b": "pedhd-nutr-1",
+  "class": "near",
+  "why": "picture not compared yet"
+ },
+ {
+  "pair": "n=283",
+  "a": "pedep-nut-18",
+  "b": "pedep-nut-71",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=284",
+  "a": "pedep-nut-23",
+  "b": "pedep-nut-5",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=285",
+  "a": "pedep-nut-23",
+  "b": "pedhd-nutr-5",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=289",
+  "a": "pedep-nut-62",
+  "b": "pedep-nut-71",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=291",
+  "a": "pedep-nut-72",
+  "b": "pedsa-b3-6",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=296",
+  "a": "pedep2-car-10",
+  "b": "pedhd-card-6",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=297",
+  "a": "pedep2-car-10",
+  "b": "pedhd-card-7",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=298",
+  "a": "pedep2-car-10",
+  "b": "pedhd-card-8",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=299",
+  "a": "pedep2-car-10",
+  "b": "pedhd-card-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=302",
+  "a": "pedep2-car-16",
+  "b": "pedep2-car-59",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=304",
+  "a": "pedep2-car-17",
+  "b": "pedep2-car-35",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=308",
+  "a": "pedep2-car-34",
+  "b": "pedep2-car-41",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=309",
+  "a": "pedep2-car-35",
+  "b": "pedhd-card-17",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=311",
+  "a": "pedep2-car-59",
+  "b": "pedhd-card-16",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=312",
+  "a": "pedep2-car-6",
+  "b": "pedhd-card-10",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=313",
+  "a": "pedep2-car-6",
+  "b": "pedhd-card-6",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=314",
+  "a": "pedep2-car-6",
+  "b": "pedhd-card-7",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=315",
+  "a": "pedep2-car-6",
+  "b": "pedhd-card-8",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=316",
+  "a": "pedep2-car-6",
+  "b": "pedhd-card-9",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=317",
+  "a": "pedep2-car-7",
+  "b": "pedhd-card-10",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=318",
+  "a": "pedep2-car-7",
+  "b": "pedhd-card-6",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=319",
+  "a": "pedep2-car-7",
+  "b": "pedhd-card-7",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=320",
+  "a": "pedep2-car-7",
+  "b": "pedhd-card-8",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=321",
+  "a": "pedep2-car-7",
+  "b": "pedhd-card-9",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=322",
+  "a": "pedep2-car-8",
+  "b": "pedhd-card-10",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=323",
+  "a": "pedep2-car-8",
+  "b": "pedhd-card-6",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=324",
+  "a": "pedep2-car-8",
+  "b": "pedhd-card-7",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=325",
+  "a": "pedep2-car-8",
+  "b": "pedhd-card-8",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=326",
+  "a": "pedep2-car-8",
+  "b": "pedhd-card-9",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=327",
+  "a": "pedep2-car-9",
+  "b": "pedhd-card-10",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=328",
+  "a": "pedep2-car-9",
+  "b": "pedhd-card-6",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=329",
+  "a": "pedep2-car-9",
+  "b": "pedhd-card-7",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=330",
+  "a": "pedep2-car-9",
+  "b": "pedhd-card-8",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=331",
+  "a": "pedep2-car-9",
+  "b": "pedhd-card-9",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=336",
+  "a": "pedep2-dp-14",
+  "b": "pedhd-devp-14",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=342",
+  "a": "pedep2-dp-6",
+  "b": "pedhd-devp-6",
+  "class": "near",
+  "why": "ruled: milestone differs (makes loud noises / startles to loud noises)"
+ },
+ {
+  "pair": "n=355",
+  "a": "pedep2-gen-14",
+  "b": "pedhd-gen-8",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=356",
+  "a": "pedep2-gen-14",
+  "b": "pedhd-gen-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=361",
+  "a": "pedep2-gen-23",
+  "b": "pedhd-gen-14",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=366",
+  "a": "pedep2-gen-36",
+  "b": "pedhd-gen-2",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=367",
+  "a": "pedep2-gen-37",
+  "b": "pedhd-gen-11",
+  "class": "near",
+  "why": "pictures differ"
+ },
+ {
+  "pair": "n=369",
+  "a": "pedep2-hem-1",
+  "b": "pedep2-hem-2",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=370",
+  "a": "pedep2-hem-22",
+  "b": "pedep2-hem-61",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=372",
+  "a": "pedep2-hem-23",
+  "b": "pedhd-haem-2",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=386",
+  "a": "pedep2-hem-52",
+  "b": "pedep2-hem-83",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=387",
+  "a": "pedep2-hem-55",
+  "b": "pedep2-mf2-10",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: CBC | Hormonal assay // option not in kept copy: Bone marrow examination | Coombs test"
+ },
+ {
+  "pair": "n=388",
+  "a": "pedep2-hem-61",
+  "b": "pedhd-haem-1",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=389",
+  "a": "pedep2-hem-8",
+  "b": "pedep2-hem-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=391",
+  "a": "pedep2-liv-18",
+  "b": "pedep2-liv-19",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=396",
+  "a": "pedep2-mf1-4",
+  "b": "pedep2-res-28",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=397",
+  "a": "pedep2-mf1-73",
+  "b": "pedhd-neo-12",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Transient tachypnoea of the newborn | Respiratory distress syndrome | Anaemia // option not in kept copy: Heart failure | Fallot's tetralogy | Supraventricular tachycardia"
+ },
+ {
+  "pair": "n=398",
+  "a": "pedep2-mf2-1",
+  "b": "pedep2-mf4-25",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=399",
+  "a": "pedep2-mf2-1",
+  "b": "pedhd-dev-21",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=400",
+  "a": "pedep2-mf2-2",
+  "b": "pedep2-mf2-55",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=402",
+  "a": "pedep2-mf3-10",
+  "b": "pedhd-haem-22",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=404",
+  "a": "pedep2-nd-13",
+  "b": "pedep2-nd-5",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=405",
+  "a": "pedep2-nd-13",
+  "b": "pedhd-dev-5",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=406",
+  "a": "pedep2-nd-14",
+  "b": "pedep2-nd-15",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=415",
+  "a": "pedep2-nd-5",
+  "b": "pedep2-nd-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=416",
+  "a": "pedep2-nd-5",
+  "b": "pedhd-dev-13",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=417",
+  "a": "pedep2-nd-5",
+  "b": "pedhd-dev-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=420",
+  "a": "pedep2-nd-9",
+  "b": "pedhd-dev-5",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=431",
+  "a": "pedep2-neu-40",
+  "b": "pedhd-devp-7",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Cranial ultrasound scan | EEG // option not in kept copy: Chromosome karyotype | Creatine kinase"
+ },
+ {
+  "pair": "n=432",
+  "a": "pedep2-neu-51",
+  "b": "pedep2-neu-6",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=433",
+  "a": "pedep2-neu-51",
+  "b": "pedhd-neuro-6",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=434",
+  "a": "pedep2-neu-53",
+  "b": "pedep2-res-59",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=435",
+  "a": "pedep2-neu-6",
+  "b": "pedhd-neuro-6",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=436",
+  "a": "pedep2-neu-7",
+  "b": "pedhd-neuro-7",
+  "class": "figure",
+  "why": "class figure"
+ },
+ {
+  "pair": "n=457",
+  "a": "pedep2-res-10",
+  "b": "pedep2-res-13",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=461",
+  "a": "pedep2-res-13",
+  "b": "pedhd-resp-14",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=462",
+  "a": "pedep2-res-14",
+  "b": "pedep2-res-56",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Acute asthma | Heart failure // option not in kept copy: Pertussis (whooping cough)"
+ },
+ {
+  "pair": "n=473",
+  "a": "pedep2-res-54",
+  "b": "pedep2-res-7",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Peak-flow variability diary // option not in kept copy: Spasmodic cough"
+ },
+ {
+  "pair": "n=474",
+  "a": "pedep2-res-54",
+  "b": "pedhd-resp-7",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Peak-flow variability diary // option not in kept copy: Spasmodic cough"
+ },
+ {
+  "pair": "n=475",
+  "a": "pedep2-res-56",
+  "b": "pedhd-resp-15",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Pertussis (whooping cough) // option not in kept copy: Acute asthma | Heart failure"
+ },
+ {
+  "pair": "n=476",
+  "a": "pedep2-res-63",
+  "b": "pedhd-resp-16",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Pertussis (whooping cough) // option not in kept copy: Acute asthma | Chronic asthma"
+ },
+ {
+  "pair": "n=477",
+  "a": "pedep2-res-64",
+  "b": "pedhd-inf-14",
+  "class": "near",
+  "why": "lossy both ways: option not in kept copy: Nasogastric rehydration therapy // option not in kept copy: Intravenous aciclovir"
+ },
+ {
+  "pair": "n=478",
+  "a": "pedhd-dev-13",
+  "b": "pedhd-dev-5",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=479",
+  "a": "pedhd-dev-14",
+  "b": "pedhd-dev-15",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=480",
+  "a": "pedhd-dev-5",
+  "b": "pedhd-dev-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=481",
+  "a": "pedhd-gen-8",
+  "b": "pedhd-gen-9",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=482",
+  "a": "pedhd-inf-3",
+  "b": "pedhd-inf-4",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=483",
+  "a": "pedsa-b18-6-1",
+  "b": "pedsa-b18-6-2",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=484",
+  "a": "pedsa-b18-6-1",
+  "b": "pedsa-b18-6-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=485",
+  "a": "pedsa-b18-6-1",
+  "b": "pedsa-b18-6-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=486",
+  "a": "pedsa-b18-6-1",
+  "b": "pedsa-b18-6-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=487",
+  "a": "pedsa-b18-6-2",
+  "b": "pedsa-b18-6-3",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=488",
+  "a": "pedsa-b18-6-2",
+  "b": "pedsa-b18-6-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=489",
+  "a": "pedsa-b18-6-2",
+  "b": "pedsa-b18-6-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=490",
+  "a": "pedsa-b18-6-3",
+  "b": "pedsa-b18-6-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=491",
+  "a": "pedsa-b18-6-3",
+  "b": "pedsa-b18-6-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=492",
+  "a": "pedsa-b18-6-4",
+  "b": "pedsa-b18-6-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=493",
+  "a": "pedsa-b5-6-1",
+  "b": "pedsa-b5-6-2",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=494",
+  "a": "pedsa-b5-6-1",
+  "b": "pedsa-b5-6-3",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=495",
+  "a": "pedsa-b5-6-1",
+  "b": "pedsa-b5-6-4",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=496",
+  "a": "pedsa-b5-6-1",
+  "b": "pedsa-b5-6-5",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=497",
+  "a": "pedsa-b5-6-2",
+  "b": "pedsa-b5-6-3",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=498",
+  "a": "pedsa-b5-6-2",
+  "b": "pedsa-b5-6-4",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=499",
+  "a": "pedsa-b5-6-2",
+  "b": "pedsa-b5-6-5",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=500",
+  "a": "pedsa-b5-6-3",
+  "b": "pedsa-b5-6-4",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=501",
+  "a": "pedsa-b5-6-3",
+  "b": "pedsa-b5-6-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=502",
+  "a": "pedsa-b5-6-4",
+  "b": "pedsa-b5-6-5",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=503",
+  "a": "pedsa1-3-14",
+  "b": "pedsa1-m-3",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=504",
+  "a": "pedsa1-9-2",
+  "b": "pedsa2-6-18",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=505",
+  "a": "pedsa1-9-2",
+  "b": "pedsa2-7-1",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=506",
+  "a": "pedsa2-10-9",
+  "b": "pedsa2-8-11",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=516",
+  "a": "pedep-emg-56",
+  "b": "pedhd-emg-12",
+  "class": "near",
+  "why": "ruled: different question asked (best prevention / factor behind the UK decline)"
+ },
+ {
+  "pair": "n=519",
+  "a": "pedep-gp-8",
+  "b": "pedhd-gp-5",
+  "class": "near",
+  "why": "ruled: centiles differ (3rd / 0.4th) and family history differs"
+ },
+ {
+  "pair": "n=520",
+  "a": "pedep-inf-11",
+  "b": "pedep-mf2-71",
+  "class": "near",
+  "why": "lossy both ways: kept stem shorter // kept copy is the exam copy"
+ },
+ {
+  "pair": "n=522",
+  "a": "pedep-inf-57",
+  "b": "pedhd-inf-5",
+  "class": "near",
+  "why": "picture not compared yet"
+ },
+ {
+  "pair": "n=523",
+  "a": "pedep-inf-62",
+  "b": "pedhd-inf-11",
+  "class": "near",
+  "why": "picture not compared yet"
+ },
+ {
+  "pair": "n=537",
+  "a": "pedep2-car-28",
+  "b": "pedep2-mf2-72",
+  "class": "near",
+  "why": "lossy both ways: kept stem shorter // kept copy is the exam copy"
+ },
+ {
+  "pair": "n=538",
+  "a": "pedep2-car-37",
+  "b": "pedep2-mf1-70",
+  "class": "near",
+  "why": "ruled: different question asked (not systolic / diastolic)"
+ },
+ {
+  "pair": "n=540",
+  "a": "pedep2-dp-15",
+  "b": "pedep2-mf1-64",
+  "class": "near",
+  "why": "ruled: exam copy says upper limbs stiff, topic copy says right limbs: finding differs"
+ },
+ {
+  "pair": "n=543",
+  "a": "pedep2-end-6",
+  "b": "pedep2-mf3-17",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=546",
+  "a": "pedep2-hem-35",
+  "b": "pedep2-hem-36",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=549",
+  "a": "pedep2-mal-16",
+  "b": "pedep2-mal-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=562",
+  "a": "pedep2-mf1-64",
+  "b": "pedhd-devp-15",
+  "class": "near",
+  "why": "ruled: exam copy says upper limbs stiff, House copy says right limbs: finding differs"
+ },
+ {
+  "pair": "n=566",
+  "a": "pedep2-mf3-17",
+  "b": "pedhd-endo-6",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=567",
+  "a": "pedep2-nd-16",
+  "b": "pedep2-nd-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=568",
+  "a": "pedep2-nd-16",
+  "b": "pedhd-dev-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=569",
+  "a": "pedep2-nd-17",
+  "b": "pedhd-dev-16",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=570",
+  "a": "pedep2-nd-21",
+  "b": "pedep2-nd-28",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=572",
+  "a": "pedep2-ren-17",
+  "b": "pedhd-renal-15",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=575",
+  "a": "pedhd-dev-16",
+  "b": "pedhd-dev-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=576",
+  "a": "pedhd-haem-14",
+  "b": "pedhd-haem-15",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=577",
+  "a": "pedhd-mal-16",
+  "b": "pedhd-mal-17",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=578",
+  "a": "pedhd-renal-15",
+  "b": "pedhd-renal-17",
+  "class": "different",
+  "why": "class different"
+ },
+ {
+  "pair": "n=579",
+  "a": "pedsa-b28-14-3",
+  "b": "pedsa-b28-14-4",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=580",
+  "a": "pedsa-b4-11-2",
+  "b": "pedsa-b4-11-6",
+  "class": "menu",
+  "why": "class menu"
+ },
+ {
+  "pair": "n=581",
+  "a": "pedsa-b8-5-1",
+  "b": "pedsa-b8-5-5",
+  "class": "menu",
+  "why": "class menu"
+ }
+]

@@ -1,0 +1,4151 @@
+[
+ {
+  "id": "pedhd-inf-18",
+  "bank": "house",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedhd-renal-17",
+  "bank": "house",
+  "chapter": "renal-cakut",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "taught in the CAKUT lecture, not a newborn one",
+  "lecture": "40)Congenital anomalies of the kidneys and the urinary tracts 5 th year (antenatal hydronephrosis)"
+ },
+ {
+  "id": "pedhd-renal-26",
+  "bank": "house",
+  "chapter": "renal-cakut",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter renal-cakut"
+ },
+ {
+  "id": "pedhd-card-12",
+  "bank": "house",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedhd-card-15",
+  "bank": "house",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedhd-card-22",
+  "bank": "house",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedhd-haem-4",
+  "bank": "house",
+  "chapter": "haematology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haematology"
+ },
+ {
+  "id": "pedhd-haem-10",
+  "bank": "house",
+  "chapter": "haematology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haematology"
+ },
+ {
+  "id": "pedhd-haem-13",
+  "bank": "house",
+  "chapter": "haem-bleeding",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haem-bleeding"
+ },
+ {
+  "id": "pedhd-haem-14",
+  "bank": "house",
+  "chapter": "haematology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haematology"
+ },
+ {
+  "id": "pedhd-haem-15",
+  "bank": "house",
+  "chapter": "haematology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haematology"
+ },
+ {
+  "id": "pedhd-haem-16",
+  "bank": "house",
+  "chapter": "haematology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haematology"
+ },
+ {
+  "id": "pedhd-gen-7",
+  "bank": "house",
+  "chapter": "genetics",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter genetics"
+ },
+ {
+  "id": "pedhd-gen-20",
+  "bank": "house",
+  "chapter": "gastroenterology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter gastroenterology"
+ },
+ {
+  "id": "pedhd-peri-1",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedhd-peri-2",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedhd-peri-3",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "SGA/LGA/IUGR taught in L7",
+  "lecture": "7) Intro to neonatology pp.48-53 (SGA/LGA)"
+ },
+ {
+  "id": "pedhd-peri-4",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedhd-peri-5",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedhd-peri-6",
+  "bank": "house",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedhd-peri-7",
+  "bank": "house",
+  "chapter": "neonatal-sepsis",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedhd-peri-8",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedhd-peri-9",
+  "bank": "house",
+  "chapter": "neonatal-seiz",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "SGA/LGA/IUGR taught in L7",
+  "lecture": "7) Intro to neonatology pp.48-53 (SGA/LGA)"
+ },
+ {
+  "id": "pedhd-peri-10",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedhd-peri-11",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedhd-peri-12",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedhd-peri-13",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedhd-peri-14",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedhd-neo-1",
+  "bank": "house",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-2",
+  "bank": "house",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-3",
+  "bank": "house",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-5",
+  "bank": "house",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-6",
+  "bank": "house",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-7",
+  "bank": "house",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-8",
+  "bank": "house",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-9",
+  "bank": "house",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-10",
+  "bank": "house",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-11",
+  "bank": "house",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-12",
+  "bank": "house",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-13",
+  "bank": "house",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-14",
+  "bank": "house",
+  "chapter": "perinatal-hie",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "12) HIE (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-15",
+  "bank": "house",
+  "chapter": "perinatal-hie",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "12) HIE (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-16",
+  "bank": "house",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-17",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-18",
+  "bank": "house",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neo-21",
+  "bank": "house",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedhd-dev-14",
+  "bank": "house",
+  "chapter": "normal-dev",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter normal-dev"
+ },
+ {
+  "id": "pedhd-devp-7",
+  "bank": "house",
+  "chapter": "dev-problems",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter dev-problems"
+ },
+ {
+  "id": "pedhd-devp-8",
+  "bank": "house",
+  "chapter": "dev-problems",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter dev-problems"
+ },
+ {
+  "id": "pedhd-devp-9",
+  "bank": "house",
+  "chapter": "dev-problems",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "work-up of developmental delay",
+  "lecture": "2) developmental problems (congenital infection screen)"
+ },
+ {
+  "id": "pedhd-devp-10",
+  "bank": "house",
+  "chapter": "dev-problems",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter dev-problems"
+ },
+ {
+  "id": "pedhd-devp-11",
+  "bank": "house",
+  "chapter": "dev-problems",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter dev-problems"
+ },
+ {
+  "id": "pedhd-gastro-2",
+  "bank": "house",
+  "chapter": "gi-diarrhoea",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter gi-diarrhoea"
+ },
+ {
+  "id": "pedhd-neuro-2",
+  "bank": "house",
+  "chapter": "neurological",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter neurological"
+ },
+ {
+  "id": "pedhd-neuro-4",
+  "bank": "house",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedhd-neuro-7",
+  "bank": "house",
+  "chapter": "genetics",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedhd-neuro-18",
+  "bank": "house",
+  "chapter": "neuro-cp",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter neuro-cp"
+ },
+ {
+  "id": "pedhd-resp-25",
+  "bank": "house",
+  "chapter": "infection",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection"
+ },
+ {
+  "id": "pedhd-endo-3",
+  "bank": "house",
+  "chapter": "endocrine",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endocrine"
+ },
+ {
+  "id": "pedhd-endo-9",
+  "bank": "house",
+  "chapter": "endo-dka",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-dka"
+ },
+ {
+  "id": "pedhd-endo-10",
+  "bank": "house",
+  "chapter": "endocrine",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endocrine"
+ },
+ {
+  "id": "pedhd-endo-11",
+  "bank": "house",
+  "chapter": "endocrine",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endocrine"
+ },
+ {
+  "id": "pedhd-endo-12",
+  "bank": "house",
+  "chapter": "endo-dka",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-dka"
+ },
+ {
+  "id": "pedhd-endo-14",
+  "bank": "house",
+  "chapter": "endo-thyroid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-thyroid"
+ },
+ {
+  "id": "pedhd-endo-16",
+  "bank": "house",
+  "chapter": "endo-thyroid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-thyroid"
+ },
+ {
+  "id": "pedhd-alg-3",
+  "bank": "house",
+  "chapter": "allergy",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter allergy"
+ },
+ {
+  "id": "pedhd-emg-1",
+  "bank": "house",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedhd-emg-4",
+  "bank": "house",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedhd-emg-5",
+  "bank": "house",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedhd-emg-9",
+  "bank": "house",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedhd-emg-14",
+  "bank": "house",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedhd-emg-15",
+  "bank": "house",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedhd-emg-19",
+  "bank": "house",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedhd-emg-22",
+  "bank": "house",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedhd-liv-3",
+  "bank": "house",
+  "chapter": "liver",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter liver"
+ },
+ {
+  "id": "pedhd-liv-4",
+  "bank": "house",
+  "chapter": "liver-hep",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter liver-hep"
+ },
+ {
+  "id": "pedhd-mal-8",
+  "bank": "house",
+  "chapter": "malignant-solid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter malignant-solid"
+ },
+ {
+  "id": "pedhd-mal-16",
+  "bank": "house",
+  "chapter": "malignant-solid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter malignant-solid"
+ },
+ {
+  "id": "pedhd-mal-22",
+  "bank": "house",
+  "chapter": "malignant-solid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter malignant-solid"
+ },
+ {
+  "id": "pedep-gp-8",
+  "bank": "endpoint",
+  "chapter": "growth-puberty",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter growth-puberty"
+ },
+ {
+  "id": "pedep-gp-9",
+  "bank": "endpoint",
+  "chapter": "growth-puberty",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter growth-puberty"
+ },
+ {
+  "id": "pedep-gp-15",
+  "bank": "endpoint",
+  "chapter": "growth-puberty",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter growth-puberty"
+ },
+ {
+  "id": "pedep-gp-35",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-gp-41",
+  "bank": "endpoint",
+  "chapter": "growth-puberty",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter growth-puberty"
+ },
+ {
+  "id": "pedep-gp-58",
+  "bank": "endpoint",
+  "chapter": "growth-puberty",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter growth-puberty"
+ },
+ {
+  "id": "pedep-gp-67",
+  "bank": "endpoint",
+  "chapter": "growth-puberty",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter growth-puberty"
+ },
+ {
+  "id": "pedep-gp-70",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "SGA/LGA/IUGR taught in L7",
+  "lecture": "7) Intro to neonatology pp.48-53 (SGA/LGA)"
+ },
+ {
+  "id": "pedep-gp-87",
+  "bank": "endpoint",
+  "chapter": "growth-puberty",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter growth-puberty"
+ },
+ {
+  "id": "pedep-nut-17",
+  "bank": "endpoint",
+  "chapter": "nutrition-vit",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter nutrition-vit"
+ },
+ {
+  "id": "pedep-nut-22",
+  "bank": "endpoint",
+  "chapter": "nutrition-pem",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter nutrition-pem"
+ },
+ {
+  "id": "pedep-nut-58",
+  "bank": "endpoint",
+  "chapter": "nutrition-vit",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter nutrition-vit"
+ },
+ {
+  "id": "pedep-nut-70",
+  "bank": "endpoint",
+  "chapter": "nutrition-vit",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter nutrition-vit"
+ },
+ {
+  "id": "pedep-gi-2",
+  "bank": "endpoint",
+  "chapter": "gi-diarrhoea",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter gi-diarrhoea"
+ },
+ {
+  "id": "pedep-gi-28",
+  "bank": "endpoint",
+  "chapter": "gi-abdopain",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter gi-abdopain"
+ },
+ {
+  "id": "pedep-gi-33",
+  "bank": "endpoint",
+  "chapter": "gastroenterology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter gastroenterology"
+ },
+ {
+  "id": "pedep-gi-39",
+  "bank": "endpoint",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedep-gi-51",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-gi-58",
+  "bank": "endpoint",
+  "chapter": "gi-diarrhoea",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter gi-diarrhoea"
+ },
+ {
+  "id": "pedep-gi-63",
+  "bank": "endpoint",
+  "chapter": "gi-diarrhoea",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter gi-diarrhoea"
+ },
+ {
+  "id": "pedep-emg-1",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "resuscitation",
+  "why": "meconium aspiration and its delivery-room care in L9",
+  "lecture": "9) Respiratory distress in newborn pp.44-55 (MAS)"
+ },
+ {
+  "id": "pedep-emg-4",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-emg-5",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-emg-9",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-emg-13",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-emg-14",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-emg-15",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-emg-16",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-emg-17",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-emg-22",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-emg-31",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-emg-36",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-emg-40",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "resuscitation",
+  "why": "CDH taught in L9",
+  "lecture": "9) Respiratory distress in newborn pp.63-65 (CDH)"
+ },
+ {
+  "id": "pedep-emg-41",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-emg-43",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-emg-46",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "resuscitation",
+  "why": "meconium aspiration and its delivery-room care in L9",
+  "lecture": "9) Respiratory distress in newborn pp.44-55 (MAS)"
+ },
+ {
+  "id": "pedep-emg-47",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "resuscitation",
+  "why": "RDS and surfactant taught in L9",
+  "lecture": "9) Respiratory distress in newborn pp.30-34 (RDS)"
+ },
+ {
+  "id": "pedep-emg-52",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedep-emg-57",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-per-1",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-per-2",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-per-3",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "SGA/LGA/IUGR taught in L7",
+  "lecture": "7) Intro to neonatology pp.48-53 (SGA/LGA)"
+ },
+ {
+  "id": "pedep-per-4",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-per-5",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-per-6",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedep-per-7",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-per-8",
+  "bank": "endpoint",
+  "chapter": "perinatal-hie",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-per-9",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "SGA/LGA/IUGR taught in L7",
+  "lecture": "7) Intro to neonatology pp.48-53 (SGA/LGA)"
+ },
+ {
+  "id": "pedep-per-10",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-per-11",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-per-12",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-per-13",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-per-14",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-per-16",
+  "bank": "endpoint",
+  "chapter": "neonatal-seiz",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "10) new Seizures . Birth injuries , Hpoglycemia 2 (chapter lecture)"
+ },
+ {
+  "id": "pedep-per-18",
+  "bank": "endpoint",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "fetal circulation taught in the cardiac lecture",
+  "lecture": "33)Congenital acyanotic heart disease_ (Fetal circulation)"
+ },
+ {
+  "id": "pedep-per-19",
+  "bank": "endpoint",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedep-per-20",
+  "bank": "endpoint",
+  "chapter": "dev-problems",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-per-22",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedep-per-23",
+  "bank": "endpoint",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "fetal circulation taught in the cardiac lecture",
+  "lecture": "33)Congenital acyanotic heart disease_ (Fetal circulation)"
+ },
+ {
+  "id": "pedep-neo-1",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-2",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-3",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-4",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-5",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-6",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-7",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-8",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-9",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-10",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-11",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-12",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-13",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-14",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-15",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-16",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-17",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-18",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-19",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-20",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-21",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-23",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-24",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedep-neo-25",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-26",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-27",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-28",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-29",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-30",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-neo-31",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-neo-32",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-33",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedep-neo-34",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-35",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-neo-36",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-neo-37",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "SGA/LGA/IUGR taught in L7",
+  "lecture": "7) Intro to neonatology pp.48-53 (SGA/LGA)"
+ },
+ {
+  "id": "pedep-neo-38",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-39",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-40",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedep-neo-41",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-42",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-neo-43",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-44",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-45",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedep-neo-46",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-47",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-48",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-neo-49",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-50",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-51",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-52",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-neo-53",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-alg-3",
+  "bank": "endpoint",
+  "chapter": "allergy",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter allergy"
+ },
+ {
+  "id": "pedep-inf-2",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-inf-10",
+  "bank": "endpoint",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedep-inf-11",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-inf-12",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-inf-13",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-inf-15",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-inf-18",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-inf-22",
+  "bank": "endpoint",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedep-inf-29",
+  "bank": "endpoint",
+  "chapter": "infection-vaccine",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-vaccine"
+ },
+ {
+  "id": "pedep-inf-30",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-inf-40",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-inf-43",
+  "bank": "endpoint",
+  "chapter": "infection",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-inf-44",
+  "bank": "endpoint",
+  "chapter": "infection",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection"
+ },
+ {
+  "id": "pedep-inf-46",
+  "bank": "endpoint",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedep-inf-49",
+  "bank": "endpoint",
+  "chapter": "infection-vaccine",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-vaccine"
+ },
+ {
+  "id": "pedep-inf-69",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-inf-92",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-inf-93",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-mf1-8",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedep-mf1-14",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-mf1-19",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf1-26",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf1-31",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf1-32",
+  "bank": "endpoint",
+  "chapter": "infection-vesic",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-vesic"
+ },
+ {
+  "id": "pedep-mf1-33",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf1-34",
+  "bank": "endpoint",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf1-35",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-mf1-51",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "newborn-exam",
+  "why": "birth injuries and scalp swellings taught in L10",
+  "lecture": "10) new Seizures . Birth injuries , Hpoglycemia 2 pp.37-46"
+ },
+ {
+  "id": "pedep-mf1-54",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf1-56",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf1-57",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf1-58",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf1-59",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf1-60",
+  "bank": "endpoint",
+  "chapter": "renal-cakut",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter renal-cakut"
+ },
+ {
+  "id": "pedep-mf1-61",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf1-73",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf1-76",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf2-11",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-mf2-14",
+  "bank": "endpoint",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "fetal circulation taught in the cardiac lecture",
+  "lecture": "33)Congenital acyanotic heart disease_ (Fetal circulation)"
+ },
+ {
+  "id": "pedep-mf2-24",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-mf2-29",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf2-34",
+  "bank": "endpoint",
+  "chapter": "gastroenterology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter gastroenterology"
+ },
+ {
+  "id": "pedep-mf2-35",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf2-36",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf2-37",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf2-44",
+  "bank": "endpoint",
+  "chapter": "infection-vaccine",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-vaccine"
+ },
+ {
+  "id": "pedep-mf2-51",
+  "bank": "endpoint",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf2-63",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf2-64",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf2-66",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf2-67",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf2-71",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-mf2-77",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf2-78",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-1",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-2",
+  "bank": "endpoint",
+  "chapter": "perinatal-hie",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "12) HIE (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-6",
+  "bank": "endpoint",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-8",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-mf3-16",
+  "bank": "endpoint",
+  "chapter": "neonatal-seiz",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "SGA/LGA/IUGR taught in L7",
+  "lecture": "7) Intro to neonatology pp.48-53 (SGA/LGA)"
+ },
+ {
+  "id": "pedep-mf3-18",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-20",
+  "bank": "endpoint",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedep-mf3-21",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-mf3-28",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-33",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-38",
+  "bank": "endpoint",
+  "chapter": "infection-vesic",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-vesic"
+ },
+ {
+  "id": "pedep-mf3-41",
+  "bank": "endpoint",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-43",
+  "bank": "endpoint",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-45",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-48",
+  "bank": "endpoint",
+  "chapter": "neonatal-sepsis",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-mf3-49",
+  "bank": "endpoint",
+  "chapter": "perinatal-hie",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-mf3-51",
+  "bank": "endpoint",
+  "chapter": "neonatal-seiz",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "10) new Seizures . Birth injuries , Hpoglycemia 2 (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-55",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedep-mf3-65",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-69",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-71",
+  "bank": "endpoint",
+  "chapter": "renal-cakut",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter renal-cakut"
+ },
+ {
+  "id": "pedep-mf3-72",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-76",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-77",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf3-78",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-2",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-mf4-7",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-17",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-21",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-24",
+  "bank": "endpoint",
+  "chapter": "infection-vesic",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-vesic"
+ },
+ {
+  "id": "pedep-mf4-50",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-51",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedep-mf4-53",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-63",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-64",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-65",
+  "bank": "endpoint",
+  "chapter": "renal-cakut",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter renal-cakut"
+ },
+ {
+  "id": "pedep-mf4-71",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-72",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-73",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-74",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-75",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-76",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-77",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-78",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-79",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-mf4-80",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr1-2",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr1-3",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr1-5",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr1-6",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr1-9",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr1-11",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr1-13",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr1-16",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr1-18",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr1-28",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr1-29",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr1-30",
+  "bank": "endpoint",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr2-1",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-tr2-4",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-tr2-5",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-tr2-8",
+  "bank": "endpoint",
+  "chapter": "perinatal-hie",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedep-tr2-9",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep-tr2-10",
+  "bank": "endpoint",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedep-tr2-11",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep2-nd-14",
+  "bank": "endpoint",
+  "chapter": "normal-dev",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter normal-dev"
+ },
+ {
+  "id": "pedep2-nd-25",
+  "bank": "endpoint",
+  "chapter": "normal-dev",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter normal-dev"
+ },
+ {
+  "id": "pedep2-dp-7",
+  "bank": "endpoint",
+  "chapter": "dev-problems",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter dev-problems"
+ },
+ {
+  "id": "pedep2-dp-8",
+  "bank": "endpoint",
+  "chapter": "dev-problems",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter dev-problems"
+ },
+ {
+  "id": "pedep2-dp-9",
+  "bank": "endpoint",
+  "chapter": "dev-problems",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "work-up of developmental delay",
+  "lecture": "2) developmental problems (congenital infection screen)"
+ },
+ {
+  "id": "pedep2-dp-10",
+  "bank": "endpoint",
+  "chapter": "dev-problems",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter dev-problems"
+ },
+ {
+  "id": "pedep2-dp-11",
+  "bank": "endpoint",
+  "chapter": "dev-problems",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter dev-problems"
+ },
+ {
+  "id": "pedep2-gen-10",
+  "bank": "endpoint",
+  "chapter": "genetics",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "chromosome testing taught in genetics lecture",
+  "lecture": "6) Genetically determined disease_"
+ },
+ {
+  "id": "pedep2-gen-19",
+  "bank": "endpoint",
+  "chapter": "genetics",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter genetics"
+ },
+ {
+  "id": "pedep2-gen-29",
+  "bank": "endpoint",
+  "chapter": "genetics",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter genetics"
+ },
+ {
+  "id": "pedep2-gen-33",
+  "bank": "endpoint",
+  "chapter": "genetics",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "taught in genetics lecture",
+  "lecture": "6) Genetically determined disease_ (prenatal diagnosis of DS, cell-free DNA)"
+ },
+ {
+  "id": "pedep2-gen-34",
+  "bank": "endpoint",
+  "chapter": "genetics",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter genetics"
+ },
+ {
+  "id": "pedep2-gen-35",
+  "bank": "endpoint",
+  "chapter": "genetics",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedep2-hem-25",
+  "bank": "endpoint",
+  "chapter": "haematology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haematology"
+ },
+ {
+  "id": "pedep2-hem-31",
+  "bank": "endpoint",
+  "chapter": "haematology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haematology"
+ },
+ {
+  "id": "pedep2-hem-34",
+  "bank": "endpoint",
+  "chapter": "haem-bleeding",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haem-bleeding"
+ },
+ {
+  "id": "pedep2-hem-35",
+  "bank": "endpoint",
+  "chapter": "haematology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haematology"
+ },
+ {
+  "id": "pedep2-hem-36",
+  "bank": "endpoint",
+  "chapter": "haematology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haematology"
+ },
+ {
+  "id": "pedep2-hem-37",
+  "bank": "endpoint",
+  "chapter": "haematology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haematology"
+ },
+ {
+  "id": "pedep2-hem-88",
+  "bank": "endpoint",
+  "chapter": "haematology",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedep2-res-24",
+  "bank": "endpoint",
+  "chapter": "infection",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection"
+ },
+ {
+  "id": "pedep2-car-12",
+  "bank": "endpoint",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedep2-car-15",
+  "bank": "endpoint",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedep2-car-22",
+  "bank": "endpoint",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedep2-car-38",
+  "bank": "endpoint",
+  "chapter": "cardiac-acq",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac-acq"
+ },
+ {
+  "id": "pedep2-car-45",
+  "bank": "endpoint",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedep2-car-55",
+  "bank": "endpoint",
+  "chapter": "cardiac-cyan",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac-cyan"
+ },
+ {
+  "id": "pedep2-car-63",
+  "bank": "endpoint",
+  "chapter": "cardiac-cyan",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac-cyan"
+ },
+ {
+  "id": "pedep2-car-64",
+  "bank": "endpoint",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedep2-car-66",
+  "bank": "endpoint",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedep2-car-76",
+  "bank": "endpoint",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedep2-ren-17",
+  "bank": "endpoint",
+  "chapter": "renal-cakut",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "taught in the CAKUT lecture, not a newborn one",
+  "lecture": "40)Congenital anomalies of the kidneys and the urinary tracts 5 th year (antenatal hydronephrosis)"
+ },
+ {
+  "id": "pedep2-ren-26",
+  "bank": "endpoint",
+  "chapter": "renal-cakut",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter renal-cakut"
+ },
+ {
+  "id": "pedep2-ren-34",
+  "bank": "endpoint",
+  "chapter": "renal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter renal"
+ },
+ {
+  "id": "pedep2-ren-54",
+  "bank": "endpoint",
+  "chapter": "renal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter renal"
+ },
+ {
+  "id": "pedep2-neu-2",
+  "bank": "endpoint",
+  "chapter": "neurological",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter neurological"
+ },
+ {
+  "id": "pedep2-neu-4",
+  "bank": "endpoint",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedep2-neu-7",
+  "bank": "endpoint",
+  "chapter": "genetics",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedep2-neu-18",
+  "bank": "endpoint",
+  "chapter": "neuro-nm",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter neuro-nm"
+ },
+ {
+  "id": "pedep2-neu-40",
+  "bank": "endpoint",
+  "chapter": "neuro-cp",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter neuro-cp"
+ },
+ {
+  "id": "pedep2-end-3",
+  "bank": "endpoint",
+  "chapter": "endocrine",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endocrine"
+ },
+ {
+  "id": "pedep2-end-9",
+  "bank": "endpoint",
+  "chapter": "endo-dka",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-dka"
+ },
+ {
+  "id": "pedep2-end-10",
+  "bank": "endpoint",
+  "chapter": "endocrine",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endocrine"
+ },
+ {
+  "id": "pedep2-end-11",
+  "bank": "endpoint",
+  "chapter": "endocrine",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endocrine"
+ },
+ {
+  "id": "pedep2-end-12",
+  "bank": "endpoint",
+  "chapter": "endo-dka",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-dka"
+ },
+ {
+  "id": "pedep2-end-14",
+  "bank": "endpoint",
+  "chapter": "endo-thyroid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-thyroid"
+ },
+ {
+  "id": "pedep2-end-16",
+  "bank": "endpoint",
+  "chapter": "endo-thyroid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-thyroid"
+ },
+ {
+  "id": "pedep2-end-26",
+  "bank": "endpoint",
+  "chapter": "endo-thyroid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-thyroid"
+ },
+ {
+  "id": "pedep2-liv-3",
+  "bank": "endpoint",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedep2-liv-4",
+  "bank": "endpoint",
+  "chapter": "liver-hep",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter liver-hep"
+ },
+ {
+  "id": "pedep2-mal-8",
+  "bank": "endpoint",
+  "chapter": "malignant-solid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter malignant-solid"
+ },
+ {
+  "id": "pedep2-mal-16",
+  "bank": "endpoint",
+  "chapter": "malignant-solid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter malignant-solid"
+ },
+ {
+  "id": "pedep2-mal-22",
+  "bank": "endpoint",
+  "chapter": "malignant-solid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter malignant-solid"
+ },
+ {
+  "id": "pedep2-mf1-16",
+  "bank": "endpoint",
+  "chapter": "genetics",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter genetics"
+ },
+ {
+  "id": "pedep2-mf1-36",
+  "bank": "endpoint",
+  "chapter": "endo-thyroid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-thyroid"
+ },
+ {
+  "id": "pedep2-mf1-44",
+  "bank": "endpoint",
+  "chapter": "neuro-cp",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter neuro-cp"
+ },
+ {
+  "id": "pedep2-mf1-79",
+  "bank": "endpoint",
+  "chapter": "neuro-cp",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter neuro-cp"
+ },
+ {
+  "id": "pedep2-mf2-26",
+  "bank": "endpoint",
+  "chapter": "endocrine",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endocrine"
+ },
+ {
+  "id": "pedep2-mf2-50",
+  "bank": "endpoint",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedep2-mf2-53",
+  "bank": "endpoint",
+  "chapter": "neuro-nm",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter neuro-nm"
+ },
+ {
+  "id": "pedep2-mf2-69",
+  "bank": "endpoint",
+  "chapter": "malignant",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter malignant"
+ },
+ {
+  "id": "pedep2-mf3-48",
+  "bank": "endpoint",
+  "chapter": "haem-bleeding",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haem-bleeding"
+ },
+ {
+  "id": "pedep2-mf3-53",
+  "bank": "endpoint",
+  "chapter": "neuro-cp",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter neuro-cp"
+ },
+ {
+  "id": "pedep2-mf3-63",
+  "bank": "endpoint",
+  "chapter": "haematology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haematology"
+ },
+ {
+  "id": "pedep2-mf3-67",
+  "bank": "endpoint",
+  "chapter": "liver-hep",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter liver-hep"
+ },
+ {
+  "id": "pedep2-mf3-68",
+  "bank": "endpoint",
+  "chapter": "neuro-nm",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter neuro-nm"
+ },
+ {
+  "id": "pedep2-mf3-73",
+  "bank": "endpoint",
+  "chapter": "renal-cakut",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "taught in the CAKUT lecture, not a newborn one",
+  "lecture": "40)Congenital anomalies of the kidneys and the urinary tracts 5 th year (antenatal hydronephrosis)"
+ },
+ {
+  "id": "pedsa1-1-1",
+  "bank": "selfassess",
+  "chapter": "growth-puberty",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter growth-puberty"
+ },
+ {
+  "id": "pedsa1-1-2",
+  "bank": "selfassess",
+  "chapter": "growth-puberty",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter growth-puberty"
+ },
+ {
+  "id": "pedsa1-2-2",
+  "bank": "selfassess",
+  "chapter": "nutrition-feed",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter nutrition-feed"
+ },
+ {
+  "id": "pedsa1-3-4",
+  "bank": "selfassess",
+  "chapter": "gi-abdopain",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter gi-abdopain"
+ },
+ {
+  "id": "pedsa1-4-2",
+  "bank": "selfassess",
+  "chapter": "accidents",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter accidents"
+ },
+ {
+  "id": "pedsa1-4-3",
+  "bank": "selfassess",
+  "chapter": "accidents",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter accidents"
+ },
+ {
+  "id": "pedsa1-5-13",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-6-1",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "other",
+  "why": "no lecture teaches this topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa1-6-2",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa1-6-3",
+  "bank": "selfassess",
+  "chapter": "renal-cakut",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa1-6-4",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "antenatal steroids taught in L7 prevention slide",
+  "lecture": "7) Intro to neonatology p.10"
+ },
+ {
+  "id": "pedsa1-6-5",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa1-6-6",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedsa1-6-7",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "infant of diabetic mother is taught in L7",
+  "lecture": "7) Intro to neonatology pp.50-53 (IDM)"
+ },
+ {
+  "id": "pedsa1-6-8",
+  "bank": "selfassess",
+  "chapter": "infection-rash",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa1-6-9",
+  "bank": "selfassess",
+  "chapter": "infection",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa1-6-10",
+  "bank": "selfassess",
+  "chapter": "infection",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa1-6-11",
+  "bank": "selfassess",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "TTN taught in L9",
+  "lecture": "9) Respiratory distress in newborn pp.35-42 (TTN)"
+ },
+ {
+  "id": "pedsa1-6-12",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa1-6-13",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa1-6-14",
+  "bank": "selfassess",
+  "chapter": "genetics",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa1-7-1",
+  "bank": "selfassess",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-2",
+  "bank": "selfassess",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-3",
+  "bank": "selfassess",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-4",
+  "bank": "selfassess",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-5",
+  "bank": "selfassess",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-6",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-9",
+  "bank": "selfassess",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-11",
+  "bank": "selfassess",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-12",
+  "bank": "selfassess",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-13",
+  "bank": "selfassess",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-14",
+  "bank": "selfassess",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-15",
+  "bank": "selfassess",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-16",
+  "bank": "selfassess",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-17",
+  "bank": "selfassess",
+  "chapter": "perinatal-hie",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "12) HIE (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-7-18",
+  "bank": "selfassess",
+  "chapter": "neonatal-seiz",
+  "class": "stay",
+  "theme": "newborn-exam",
+  "why": "birth injuries and scalp swellings taught in L10",
+  "lecture": "10) new Seizures . Birth injuries , Hpoglycemia 2 pp.37-46"
+ },
+ {
+  "id": "pedsa1-9-13",
+  "bank": "selfassess",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedsa1-9-17",
+  "bank": "selfassess",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedsa1-m-1",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "resuscitation",
+  "why": "no lecture teaches newborn resuscitation or Apgar",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa1-10-3",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-10-6",
+  "bank": "selfassess",
+  "chapter": "infection-bact",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-bact"
+ },
+ {
+  "id": "pedsa1-10-7",
+  "bank": "selfassess",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedsa1-10-8",
+  "bank": "selfassess",
+  "chapter": "infection-rash",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-rash"
+ },
+ {
+  "id": "pedsa1-10-9",
+  "bank": "selfassess",
+  "chapter": "infection",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection"
+ },
+ {
+  "id": "pedsa1-10-10",
+  "bank": "selfassess",
+  "chapter": "infection-vesic",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-vesic"
+ },
+ {
+  "id": "pedsa1-10-11",
+  "bank": "selfassess",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-10-12",
+  "bank": "selfassess",
+  "chapter": "liver",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter liver"
+ },
+ {
+  "id": "pedsa1-10-13",
+  "bank": "selfassess",
+  "chapter": "neonatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "8) COMMON PROBLEMS IN THE TERM NEWBORN (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-10-14",
+  "bank": "selfassess",
+  "chapter": "endo-thyroid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-thyroid"
+ },
+ {
+  "id": "pedsa1-10-15",
+  "bank": "selfassess",
+  "chapter": "haematology",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter haematology"
+ },
+ {
+  "id": "pedsa1-10-21",
+  "bank": "selfassess",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-10-22",
+  "bank": "selfassess",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-10-23",
+  "bank": "selfassess",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-10-24",
+  "bank": "selfassess",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedsa1-10-25",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedsa2-1-8",
+  "bank": "selfassess",
+  "chapter": "normal-dev",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter normal-dev"
+ },
+ {
+  "id": "pedsa2-2-2",
+  "bank": "selfassess",
+  "chapter": "neuro-cp",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter neuro-cp"
+ },
+ {
+  "id": "pedsa2-2-6",
+  "bank": "selfassess",
+  "chapter": "neuro-cp",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter neuro-cp"
+ },
+ {
+  "id": "pedsa2-3-2",
+  "bank": "selfassess",
+  "chapter": "genetics",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter genetics"
+ },
+ {
+  "id": "pedsa2-6-7",
+  "bank": "selfassess",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedsa2-7-4",
+  "bank": "selfassess",
+  "chapter": "renal-cakut",
+  "class": "stay",
+  "theme": "antenatal-fetal",
+  "why": "taught in the CAKUT lecture, not a newborn one",
+  "lecture": "40)Congenital anomalies of the kidneys and the urinary tracts 5 th year (antenatal hydronephrosis)"
+ },
+ {
+  "id": "pedsa2-10-14",
+  "bank": "selfassess",
+  "chapter": "endo-thyroid",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-thyroid"
+ },
+ {
+  "id": "pedsa2-11-4",
+  "bank": "selfassess",
+  "chapter": "liver",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter liver"
+ },
+ {
+  "id": "pedsa2-m-22",
+  "bank": "selfassess",
+  "chapter": "endo-dka",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter endo-dka"
+ },
+ {
+  "id": "pedsa2-13-2",
+  "bank": "selfassess",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedsa-b1-3",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedsa-b3-6",
+  "bank": "selfassess",
+  "chapter": "mental",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter mental"
+ },
+ {
+  "id": "pedsa-b5-5-1",
+  "bank": "selfassess",
+  "chapter": "emergencies",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter emergencies"
+ },
+ {
+  "id": "pedsa-b7-4",
+  "bank": "selfassess",
+  "chapter": "accidents",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter accidents"
+ },
+ {
+  "id": "pedsa-b9-15-3",
+  "bank": "selfassess",
+  "chapter": "genetics",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter genetics"
+ },
+ {
+  "id": "pedsa-b10-10",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa-b10-11",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "antenatal-fetal",
+  "why": "no lecture teaches this antenatal topic",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa-b11-3",
+  "bank": "selfassess",
+  "chapter": "neonatal-sepsis",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "11) Neonatal sepsis (chapter lecture)"
+ },
+ {
+  "id": "pedsa-b11-6",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa-b15-10-4",
+  "bank": "selfassess",
+  "chapter": "infection",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection"
+ },
+ {
+  "id": "pedsa-b15-10-6",
+  "bank": "selfassess",
+  "chapter": "infection-bact",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter infection-bact"
+ },
+ {
+  "id": "pedsa-b17-12-4",
+  "bank": "selfassess",
+  "chapter": "perinatal-rd",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "9) Respiratory distress in newborn (chapter lecture)"
+ },
+ {
+  "id": "pedsa-b18-7-3",
+  "bank": "selfassess",
+  "chapter": "cardiac",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter cardiac"
+ },
+ {
+  "id": "pedsa-b27-3",
+  "bank": "selfassess",
+  "chapter": "genetics",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter genetics"
+ },
+ {
+  "id": "pedsa-b28-8",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "newborn-exam",
+  "why": "no lecture teaches the newborn examination",
+  "lecture": ""
+ },
+ {
+  "id": "pedsa-b28-14-1",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedsa-b29-3",
+  "bank": "selfassess",
+  "chapter": "renal-uti",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "other lecture: chapter renal-uti"
+ },
+ {
+  "id": "pedsa-b31-1",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "stay",
+  "theme": "other",
+  "why": "newborn or non-perinatal topic taught by its own lecture",
+  "lecture": "7) Intro to neonatology (chapter lecture)"
+ },
+ {
+  "id": "pedsa-b31-2",
+  "bank": "selfassess",
+  "chapter": "perinatal",
+  "class": "unsure",
+  "theme": "other",
+  "why": "no lecture teaches this topic",
+  "lecture": ""
+ }
+]
