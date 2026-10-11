@@ -158,3 +158,257 @@ Still open: the idle portrait arcs over neighbour covers (above). The blocky sha
 Not re-measured this round: fps with the forecast running (up to 9 pose evaluations and about 180
 raycasts per frame while tweens run; none when idle). The pop5 runs sampled about 110 frames/s,
 probe included.
+
+## Graphics stage 1 (2026-09-27, brief `p5/desk3d-gfx1-brief.md` + owner ruling of the same day)
+
+### Deviations from the brief — read first
+- **Nothing was vendored: 0 files, 0 bytes.** The granted jsDelivr download (r147 `examples/js`) was
+  refused by the local permission system, twice (loop and single file). No workaround was attempted and
+  no local copy exists. Instead two in-house files, plain three core only:
+  `post.js` (8,266 B: HDR target, bloom, final pass, FXAA) and `gfx.js` (17,218 B: materials,
+  bevelled geometry, IBL room, backdrop room, contact bake, AO strip, motes).
+- **SAO: skipped** (no SAOPass without the download). **SMAA: replaced** by hardware MSAA x2 on the HDR
+  target (high tier). The AO strip + baked contact shadows carry the grounding SAO would have added.
+- **Matte plate: rejected, procedural room used.** `painted-codex-3.png` is 1916x821 and is a desk with
+  props, not a room. Spread over a 1280-px-wide wall it gives 1.5 plate px per screen px at DPR 1 and 1.0
+  at DPR 1.5, so it fails the 2x rule (needs >= 2). Fallback per the brief: a self-lit shader wall (warm
+  lamp pool left, cool window spill right, soft panel seams), merged shelf of spines, window with a night
+  pane (moon, tree line), oil lamp flame + additive halo; linear fog set each frame from camera distance.
+- **Tier pick in headless is not trustworthy.** Idle frames in headless Chrome pace at ~40 fps whatever
+  the CPU throttle (pick read 40.3 at 1x and 39.8 at 6x), so auto always picks medium there. All tier fps
+  below are with the tier forced. The pick needs a real laptop/iPad check (Stage 1 debt).
+- **No clean old-light vs new-light A/B.** Only whole-chain numbers exist: R6 was 104 fps at 1x.
+
+### What changed
+- Renderer: `antialias:false`, ACES + `physicallyCorrectLights`; tone mapping and sRGB applied once, in
+  `post.js` FINAL (r147 render targets skip both). Warm grade (1.03, 1.0, 0.95), vignette 0.42, grain 0.022.
+- Bloom: bright pass threshold 2.2 with 0.6 knee (exposure-scaled), 3-level separable gaussian, weights
+  0.45/0.35/0.30, strength 0.9. Page text never blooms (pages sit far under threshold; contrast below).
+- IBL: PMREM of a small warm emissive-panel room (`GFX.envMap`); gold metalness 1, roughness 0.3, env 1.2.
+- Lights: SpotLight key 0xffd2a0, 115 cd, angle 0.85, penumbra 0.6, 2048 PCFSoft (bias -0.00025, normalBias
+  0.012); warm PointLight fill 0xff9a50, 9 cd, lamp side; cool Directional rim 0x8aa8ff 2.2, raised to
+  (2.6, 6, -3.6) so its desk glint falls past the far edge; hemisphere 0.35. The cone was widened from
+  0.62 to 0.85 because at 390x844 the open pages fell outside it (Lectures contrast 2.52, now 5.06).
+- Contact shadows: per book, baked once (ortho depth from below, blurred twice, 128 px, 1.0 m); plane
+  follows the book, scale 1 + 4.5 x lift, opacity 0.85 x max(0.3, 1 - 5.5 x lift). AO strips under rows.
+- Form: bevelled covers (`GFX.slab`), rounded fore-edge page block, domed bands with gold hairlines, raised
+  gilt frame, bullnose desk front, wood roughness 0.38, leather MeshPhysical with clearcoat + noise scuffs.
+- Life: flicker on key, fill, flame, halo and wall glow; 300 GPU motes (150 medium), brighter in the key
+  cone; both off under reduced motion.
+- Occlusion: `boxHits()` ray vs local bounding box per occluder (inverse matrix cached per `poseGen`).
+- Tiers: high pr<=1.5, shadow 2048, MSAA 2, bloom at 1/2, 300 motes · medium pr 1, shadow 1024, FXAA,
+  bloom at 1/4, 150 motes · low = medium without bloom or motes, logs `plate fallback — step 4`.
+  Pick: median frame time over 1-3 s after start, >= 55 high else medium. Drop: in motion, 12-frame mean
+  under floor (high 50, medium 30) for 1 s drops one tier. `wardround.gfxTier` forces a tier.
+  Test-only: `index.html#{"msaa":0}` merges into the tier for A/B runs.
+- Harness: `lib4.mjs` (dpr, tier, throttle, hash), `stills.mjs`, `fpsvar.mjs`, `owner4.mjs` (R6 shot list).
+
+### Numbers (own runs, headless Chrome, frames in `D:/tmp-desk3d-gfx1/`)
+- fps in motion (open ENT/Back/open Peds/Back/open ENT/Back), forced tier:
+  - high 1280x800 1x: 53.7 / 54.8 (MSAA 4 was 50.5; MSAA 2 A/B 61.4; MSAA 0 + FXAA 68.0; shadow 1024
+    65.5; runs vary about +-8). **Below the >= 60 target.**
+  - iPad proxy 1180x820 DPR 2 4x throttle: high 29.2 (min 12-frame 23.2) — **below the 50 floor**, so
+    the tier logic drops it; medium there 53.5 (min 36.9); auto picked medium and held 64.6.
+  - medium 1280x800 6x throttle: 30.0 (min 25.3) — at the >= 30 target, no margin.
+- Label contrast: 1280 high Lectures 6.90, Questions 7.03, Mocks 9.55 · 390 medium DPR 3 5.06 / 5.39 /
+  8.73, Neuropsychiatry title 10.48. Page RGB 1280 L [218,201,164] R [219,203,169] (ENDPAPER_K holds).
+- R6 regression `check-fix2.mjs` at 1280x800, 1024x768, 820x1180, 390x844, 320x640, 1180x820, 1366x1024,
+  1024x1366 (`regress-check.txt`): 32/32 right book, 32/32 closed, return diff 0, ix 0 on every open,
+  clip [] everywhere, errs 0, net 0.
+- pop5 (5 runs each, auto tier = medium in headless, `run-late.txt`): 1280x800 title step 0.18-0.26
+  (R6 0.18, **up to 0.08 worse**), pages step 0.18-0.26, flicker<400ms 0, fsUnequal 0, Mocks 4/4, errs 0;
+  390x844 title step 0.09-0.18 (R6 0.09), pages 0.09-0.20, flicker 0, Mocks 4/4; arc overlap only at
+  path 0.00 (34-36 frames, R6 36-38, pre-existing portrait layout), 0 with the book off the desk.
+- Word sweep 320->1600: 387 sizes, 0 bad, font 14-18.
+- Drop test **not demonstrated**: auto at 1180x820 DPR 2 6x throttle picked medium (39.8) and held
+  43.7 mean / 31.3 min, never under the 30 floor for 1 s, so no drop fired. Forced tiers never change
+  by design. A drop test needs a heavier load or a real slow device.
+- Films (libx264 crf 28, 30 fps, R6 shot list, `owner4.mjs`): `owner-1280x800.mp4` (high, 761,490 B,
+  19.3 s), `owner-1180x820.mp4` (high, 745,490 B, 18.9 s), `owner-390x844.mp4` (medium, 334,077 B,
+  17.5 s); all errs 0, net 0. Films not viewed frame by frame by the drafter.
+
+### Stills
+- Idle/open 1280 high: `b1-1280x800-high-idle.png`, `-open.png`; 390 medium: `b2-390x844-medium-*.png`.
+- Before/after, same idle camera: before `D:/tmp-desk3d-ref6/s1280x800-1-idle.png` (R6), after
+  `b1-1280x800-high-idle.png`.
+
+### Still looks cheap (against `ref-frames/beat-4.png`)
+- Leather is procedural noise: no real grain, creases or worn corners — Stage 2 (scanned leather).
+- Desk wood grain reads as regular stripes in the lamp sheen — Stage 2 (scanned wood + roughness map).
+- Page block is a flat tint with line noise; no deckle or cream variation — Stage 2.
+- Wall and shelf are flat and blocky; no depth of field, so the room is not truly out of focus — Stage 3
+  (painted backdrop at >= 2x) or a DOF pass in a later stage.
+- Window trees are hard sine silhouettes — Stage 3 (painted pane).
+- Lamp is a sphere + sprite; no glass chimney or brass — Stage 3 (modelled prop).
+- Gold is not tooled (no fillets, no title panel relief) — Stage 3 (bespoke cover art / normal maps).
+- Books stand upright on the desk; the reference floats them at angles with warm under-glow — a staging
+  decision for the owner, not a graphics fix.
+- Motes read as stars against the dark wall outside the beam — Stage 2 tuning (depth-soft sprites).
+
+## Model step 1 — Part A (2026-09-27, brief `p5/desk3d-model1-brief.md`) — DONE, awaiting owner
+- **Script** `blender/build_desk.py` (headless bpy, Blender 5.2.1): `blender.exe --background --factory-startup
+  --python blender/build_desk.py [-- quick] [-- norender]`. Resets to an empty factory scene, fixed seeds, Cycles
+  seed 0, OptiX GPU. `quick` = 1/8 textures to `blender/tex-quick/` + `desk-quick.glb` (smoke test only).
+  Full run 343 s end to end. It ran twice from empty (the second after fixes) with 0 errors.
+  Helpers: `blender/readcam.mjs` (reads the app's idle/open cameras headless -> `D:/tmp-desk3d-model1/cams.json`),
+  `blender/verify_glb.py` (re-imports the glb in a fresh Blender), `blender/probe.py` (env probe),
+  `blender/bake-report.json` (every number below, machine-written).
+- **Cameras** (from the live app): idle 1280x800 cam (-0.0426, 1.5729, 3.8052) look (-0.0426, 0.6242, 0.0002);
+  1180x820 cam (-0.0423, 1.6726, 4.2100); open cam (-0.21, 1.04, 3.18), book 2.372 m away. VFOV 42.
+- **Axes**: authored in app coordinates (m, +Y up), converted app (x,y,z) -> Blender (x,-z,y); the exporter's
+  +Y-up maps back, so glb coordinates = app coordinates. Book roots sit at the landscape rest pose
+  (x = (i-1.5)*1.18, y = REST_Y, z = 0, rotY = (i-1.5)*-0.09). The desk top is y = 0, z -7..5, bullnose r 0.125 at z = 5.
+
+### Node map (glb node names; `{id}` = ent / ophtho / neuro / peds)
+```
+desk                         mesh, material desk; UVMap (TEXCOORD_0, tiled wood) + UVLight (TEXCOORD_1, lightmap/AO)
+{id}.root                    empty = buildBook root (book centre)
+  {id}.block                 page block (mesh shared by all four), material pages
+  {id}.face                  page-leaf plane, material leaf
+  {id}.back                  back board, {id}.leather
+  {id}.spine                 half-cylinder spine, {id}.leather
+  {id}.bands                 the 4 raised bands (one mesh), {id}.leather
+  {id}.bandGilt              the 8 gold hairlines (one mesh, shared), gilt
+  {id}.pivot                 empty = cover hinge; app animates pivot.rotation.y
+    {id}.front               front board, {id}.leather
+    {id}.frame               raised gilt frame + 4 corner bosses (one mesh, shared), gilt
+    {id}.endp                endpaper plane (rotY pi, as in the app), leaf
+  {id}.paper                 empty at paperPose IN (-0.02, 0.12, -0.015); app sets its pose as today
+    {id}.sheet               mocks sheet 0.40 x 0.52 x 0.004, paper
+    {id}.seal                wax seal, seal. Origin = app seal position; geometry is already face-on:
+                             Part B must NOT apply the app's seal rotation.x = PI/2.
+```
+Not in the glb (stay app-built): progress `track`/`arc` rings, labels, contact-shadow planes, lights, camera.
+Geometry changes vs buildBook: separate `bands`/`bandGilt` meshes replace the app's 4+8 torus meshes
+(joined per book, same places); the frame is one mesh instead of 4 strips. 57 nodes, 45 meshes, 38.5k tris.
+
+### Textures (`blender/tex/`, all baked from procedural node trees, no downloads)
+| file | size | bytes |
+|---|---|---|
+| desk-base.jpg | 4096 | 829,152 |
+| desk-rough.jpg | 4096 | 1,123,531 |
+| desk-normal.png | 4096 | 6,331,142 |
+| desk-ao.jpg (UVLight, books present) | 2048 | 80,670 |
+| desk-lightmap.png (UVLight, books present, not in glb) | 2048 | 3,873,218 |
+| desk-lightmap-nobooks.png (not in glb) | 2048 | 3,708,218 |
+| {ent,ophtho,neuro,peds}-leather-base.jpg | 2048 | 380,217 / 382,169 / 355,209 / 354,316 |
+| {…}-leather-orm.jpg (R AO, G rough, B 0) | 2048 | 814,639 / 818,014 / 819,782 / 822,184 |
+| {…}-leather-normal.png | 2048 | 5,040,420 / 5,035,617 / 5,045,094 / 5,037,545 |
+| pages-base.jpg / pages-orm.jpg / pages-normal.png | 2048 | 263,378 / 365,654 / 2,645,518 |
+| paper-base.jpg / paper-orm.jpg / paper-normal.png | 1024 | 34,103 / 35,899 / 1,712,257 |
+| seal-base.jpg / seal-orm.jpg / seal-normal.png | 1024 | 59,347 / 97,470 / 626,218 |
+
+JPEG q85 colour/rough/AO, PNG normals, as briefed. Desk wood is one seamless 2.36 m tile (4D torus noise,
+integer ring counts) repeated on UVMap. Lightmap = Cycles DIFFUSE direct+indirect with colour off, sRGB-encoded
+8-bit; linear value = decoded texel x **1.6323** (scale in `bake-report.json`), region app x -7..7, z -7..3.2.
+
+### 2x measurement (texels per CSS px at the nearest the surface ever gets; p10 over visible faces)
+Nearest distances from the app's own cameras: book surfaces 2.072 m (open pose, 2.372 m minus 0.3 m depth),
+desk 1.832 m (open camera ray at pitch 11 + half-FOV). px/m = H / (2 tan21 d).
+| surface | maps | texels/m | 1280x800 | 1180x820 | pass |
+|---|---|---|---|---|---|
+| desk top | desk-* 4096 | 1736 | 3.05 | 2.98 | yes |
+| cover front | leather 2048 | 1094 | 2.17 | 2.12 | yes |
+| spine | leather 2048 | 1080 | 2.15 | 2.10 | yes |
+| bands | leather 2048 | 1082 | 2.15 | 2.10 | yes |
+| board edges | leather 2048 | 1081 | 2.15 | 2.10 | yes |
+| page-block edges | pages 2048 | 2273 | 4.52 | 4.41 | yes |
+| mocks sheet | paper 1024 | 2245 | 4.46 | 4.36 | yes |
+| page leaf / endpaper | paper 1024 | 1198 / 1151 | 2.38 / 2.29 | 2.32 / 2.23 | yes |
+| seal | seal 1024 | 9501 | 18.89 | 18.43 | yes (could be 256) |
+Leather passes by only ~5-6 %; do not shrink the book atlases. Lightmap/AO exempt; the render shows no stepping.
+
+### Bake and render times (RTX 3050 Laptop, OptiX; every bake far under the 5-min cap)
+Desk tile 4096 base/rough/normal 13.9/13.4/14.8 s. Each leather atlas 2048: base 7.5, rough 7.3, normal 7.6,
+AO (128 spp, self-only: desk, other books and papers hidden) ~18 s. Pages 2.4/2.4/2.6/AO 10.4 s. Paper and seal
+1024 ~1 s each, AO 2.5-3.6 s. Desk AO 2048 256 spp 10.1 s; lightmaps 2048 512 spp 14.6 s (books) / 13.7 s (no
+books). Longest single bake 18.8 s. First run of a session adds ~130 s of OptiX kernel compile on the first bake.
+Renders: owner 2560x1600 256 spp + OIDN 33.1 s; close-ups 1600x1000 128 spp 12.2 / 11.5 s.
+
+### glb
+`blender/desk.glb` **39,898,492 B**: GLB, +Y up, embedded, no Draco/KTX2/meshopt (`extensionsUsed` empty), all
+materials single-sided. Verified by `verify_glb.py` in a fresh Blender: 57 nodes, 45 meshes, 10 materials,
+26 images at the sizes above, desk keeps 2 UV sets, ent hierarchy parents as mapped. Of the payload, 31.5 MB is
+the PNG normal maps, 7.7 MB the JPEGs. The exporter re-encodes any image read through a Separate Color node as
+PNG (62.7 MB first export), so the script swaps the baked files back into the glb after export.
+Duplicate: `paper-orm` is embedded twice (leaf has no occlusion, the exporter splits it), 36 KB.
+**Part B budget warning:** the 16 MB page-payload line is passed ~2.5x, and base64 adds a third. Cheapest cuts, not
+made here because the brief fixes the formats: one shared leather normal for all four books (-15 MB), normals as
+JPEG q90 (brief says PNG), seal to 256. Owner/parent call.
+
+### Renders
+`D:/tmp-desk3d-model1/owner-test-render.png` (2560x1600, idle 1280x800 camera, the app's key/fill/rim, papers
+hidden, view transform AgX: Blender 5.2 lists no ACES, the app uses ACES). Builder-only close-ups:
+`closeup-corner.png`, `closeup-seal.png` (ENT sheet pulled to OUT). Diagnostic run log `progress.log`.
+
+### Still looks cheap (against beat-4.png)
+- Desk grain reads as regular wavy horizontal lines across the whole width, too even and too cartoon; no plank
+  seams visible at idle distance; no wear patches visible; the sheen is one flat gloss.
+- Leather reads as smooth plastic at idle distance: pebble grain only shows in close-up, and the mottling shows as
+  small pale blotches like stains. No sheen variation, no darkened edges; corner wear too faint to see.
+- Covers are flat boards; beat-4 has padded, domed boards and a proud gilt frame. The frame is the app's 11 mm
+  strip and reads as a thin wire; the corner fillets and bosses only read close up.
+- The spine reads as a plain cylinder with thin rings; beat-4 has fat raised bands and a gilt-tooled spine.
+- Page block barely shows (only a thin top line) because the books stand face-on.
+- The mocks sheet is plain flat card; the seal is a good blob but has a smooth, even face.
+- Wear patches in the wood tile repeat every 1.18 m and at z = +/-2.36, and they and the lightmap book shadows are
+  valid only for the landscape rest layout; they stay behind when a book moves (the no-books lightmap is the
+  fallback).
+- Empty black void behind the desk (no room yet, by brief).
+
+### Deviations from the brief
+- The lightmap is a separate PNG, not in the glb: glTF has no lightmap slot. Part B loads it as `lightMap`
+  on uv2 = TEXCOORD_1, and must multiply by the scale above. r147 lightMap is additive irradiance.
+- The view transform is AgX, not ACES (not offered by this Blender).
+- The glb is 39.9 MB (see the budget warning above).
+- Joined band/hairline/frame meshes; the seal is authored face-on (see the node map).
+
+## Max glTF test (2026-09-27)
+
+Verdict: **PARTIAL PASS**. Names, hierarchy, base-colour/roughness/normal texture slots and scale all
+survive both importers. **Animation does not export** via the scripted path — a real gap, not yet
+worked around.
+
+Setup: 3ds Max 2024 (26.0.0.940), `3dsmaxbatch.exe`, exporter class `GLTF_Export` (only creatable via
+`exportFile <path> #noPrompt using:GLTF_Export`; `GLTF_Export()` itself is "Not creatable" and no
+maxscript-exposed options object was found — `GLTFExporter` global exists but is `UndefinedClass`, and
+`apropos`/`getPropNames globalVars` found nothing gltf-specific). Export ran with **exporter defaults
+only** — no option was set explicitly.
+
+Test scene: `book_root` (Dummy) parenting `pages` (Box, Standardmaterial plain colour) and `cover`
+(ChamferBox, PhysicalMaterial with `base_color_map` / `Roughness_Map` / `bump_map` via a `Normal_Bump`
+map holding `normal_map`), pivot on `cover` offset to the spine edge (hinge), 2-key rotation (frame
+0 -> 30, confirmed `numKeys` = 2 on the `Euler_XYZ` controller before export).
+
+Blender 5.2.1 (`import_scene.gltf`) findings:
+- Hierarchy: `book_root`'s own name is **lost** — imported as an unnamed Empty (`Node_1`); a **second**
+  unnamed Empty (`Node_3`) appears above `cover`, inserted by the exporter to carry the pivot/hinge
+  offset. `pages` and `cover` mesh names survive.
+- Materials: `cover_mat` has 3 image textures wired in (base colour PNG, a combined
+  metallic-roughness PNG the exporter repacked, and the normal PNG via a Normal Map node) — all three
+  slots present.
+- Scale: `scene_unit_scale` 1.0; cover dimensions 3.81 x 0.20 x 5.08 m for a 200x8x150 mm box — Max cm
+  default became metres 1:1 numerically (a 10x unit mismatch, not yet reconciled against the app's
+  own unit convention).
+- Animation: **`bpy.data.actions` is empty** — no keyframes imported.
+
+three r147 (classic `THREE.GLTFLoader`, `.parse()` from an embedded base64 ArrayBuffer, headless
+Chrome `--dump-dom`, 0 console errors) findings:
+- Scene graph: `Group` -> unnamed `Object3D` -> `pages` (Mesh) and a second unnamed `Object3D` ->
+  `cover` (Mesh) — same lost-name/extra-node shape as Blender.
+- `cover.material` is `MeshStandardMaterial` with `map`, `roughnessMap`, `metalnessMap` and
+  `normalMap` all truthy; `pages.material` is `MeshStandardMaterial` with no maps, as authored.
+- `gltf.animations.length` = **0**, confirmed against the raw glb JSON chunk directly
+  (`"animations": null` in both the full test export and a second minimal one-mesh export built solely
+  to isolate this — same result, so it is not the hinge/pivot node causing it).
+- Bounding box read back matches the Blender dimensions.
+
+Files: `D:/tmp-max-gltf/inspect.ms`, `build_export.ms`, `probe2.ms`, `make_textures.py`,
+`blender_check.py`, `check.html`, `max-test.glb`, `anim-test.glb`, `blender-report.json`,
+`inspect-out.txt`, `build-out.txt`, `probe2-out.txt`, `dump3.html`.
+
+Unverified / not chased further (budget): whether a Max-side MAXScript route exists to force
+"Export Animations" on without opening the GUI (a saved exporter-preset file loaded by path is the
+likely next thing to try, not attempted here); whether the lost dummy name and extra pivot-offset
+node can be avoided by not offsetting the pivot in script, or by an exporter option; the 10x unit
+scale needs reconciling against the app's own metre convention before this feeds the real desk scene.

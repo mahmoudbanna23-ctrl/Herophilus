@@ -1,5 +1,29 @@
 # Fix brief: Google sign-in returns to the sign-in step (bug 1)
 
+> ⚠️ STATUS 2026-09-20 — **THIS BRIEF IS ALREADY APPLIED IN CODE, BUG STILL REPROS.**
+> Verified on disk: `authDomain: "herophilus.pages.dev"` (index.html line 2916) + proxy comment
+> line 2915; `app\_worker.js` exists and matches the block below; popup-closed toast in at
+> line 4246; `getRedirectResult` `console.warn` in at line 4489. All four edits present.
+> Owner reports the bug UNCHANGED today (normal tab, not PWA): Google chooser completes, app
+> bounces to the sign-in gate.
+>
+> So the code brief below is DONE — do NOT re-apply it. The live cause is now one of:
+> (a) `_worker.js` not actually deployed — advanced-mode worker must sit at the Pages **build
+>     output root**; if the publish dir isn't `app/`, `app/_worker.js` never ships, or the deploy
+>     is stale (committed, not redeployed);
+> (b) the naive hostname-swap proxy is insufficient — Firebase's `/__/auth/handler` bakes the
+>     authDomain into its returned HTML/JS and sets cookies for firebaseapp.com, so a bare
+>     `fetch` reproxy can still fail the popup handoff.
+> **Next step is a LIVE test, not a code edit:** fetch `https://herophilus.pages.dev/__/auth/handler`
+> — Firebase handler HTML = proxy live (cause b); 404 or the app's index = proxy not deployed
+> (cause a). Decide (a) vs (b) first, then fix. This is astra's must-be-right target.
+>
+> (Popup-path note confirmed by code read: on `signInWithPopup` success `afterSignIn` goes to
+> `showGate('profiles')` at line 4262 — a bounce to the gate means the popup REJECTED into the
+> catch at 4244, consistent with a broken auth-handler handoff.)
+
+---
+
 Goal: after Google sign-in on https://herophilus.pages.dev the app must reach the profile step.
 Edit only `app\index.html` and create `app\_worker.js`. Never open `app\data\*`. No other change.
 

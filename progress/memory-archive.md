@@ -1235,3 +1235,70 @@ time; superseded by §14 (Ch.7 Substance-related disorders + Ch.8 Cranial nerve 
 - Superseded-by lines added atop `PLAN-app-replan-2026-09-17.md` and `research-living-scene\DECISION-2026-09-21.md` (both untracked).
 - NEXT (was): P3 closed; start P4 (look system: painted desk, neon default, Q1 B, R1 A) + final painted plate art.
 - P3: OWNER PICKED 2026-09-25 painted desk · Q1 B · R1 A (neon edges = DEFAULT, owner 2026-09-25; plan §2 updated); mocks pass review (fix rounds 1-6 in `mocks/p3-fix-brief.md` + NOTES). Round-2 plates owed left-third calm (painted) + level lines (photo) — made in round 3 (`plates/<kind>-codex-3.png`).
+
+## Pruned from MEMORY.md - 2026-10-10 (session story: review-deck reset, neuro exam rows, exam-day quiz)
+
+**Moved out of the Resume block (verbatim):** Owner answered 2026-09-25 (plan §6): Meshy CC BY
+approved, Peds tag plain, lab values source-then-tagged, screenshots dropped, candle desk = P3 mocks
+photo vs painted plate, water level = every answer counts, 100/day, midnight reset. Deploy freeze R9
+dates 09-26..27 and 10-02..03 have passed; only 10-17..19 remains.
+
+**Shipped this session, all live at herophilus.pages.dev:**
+- `e8bb1422` — the six endpoint Model Final Exams shown as chapter rows in neuropsych.
+- `7bb76ca8` — "Practise all" split into Neurology and Psychiatry. The app spells "Practise" with an s.
+- `a4a9d073` (2026-10-10) — "Reset deck" button on the review deck.
+
+**Review-deck reset — what was decided and why.** The owner asked for a button to wipe the deck on
+purpose and chose "empty it, keep my scores" over "forget the answers" and over "keep the questions,
+restart the timing". The deck is not a stored list: `inDeck(q)` in `app/js/utils.js` derives it from
+`S.answers`, and `mergeStates` in `app/js/gate.js` unions answers by id, so a plain delete would
+either cost the scores or be undone by sync. The fix is one stamp, `S.deckResetAt`: `inDeck` ignores
+an answer whose `at` is at or before it; `mergeStates` keeps the larger stamp; `bakRestore`
+(`app/js/boot.js`) carries it across a snapshot restore; `setConf` restamps a correct pre-reset
+answer rated guess/unsure so its toast stays true. The first draft of the guard
+(`(at||0)<=(deckResetAt||0)`) read `0<=0` as true and emptied the deck for every legacy answer with
+no reset at all; the builder's own self-check caught it (`D:\scratch 2026\deck-reset-check.js`).
+Scope ruled out: per-subject reset (one button, whole deck); clearing `S.srs` alone (a missing entry
+counts as due, so the deck would stay full).
+
+**Checking:** builder `lean-drafter` (gateway down, `ROUTE-OK`), then `refuter` twice: FAIL
+(restore undid the reset; false toast; junk stamp gave NaN), then PASS-WITH-NOTES after three
+one-line fixes. Not tested: live Firestore, two real devices, a stale cached client.
+
+**Accepted leftovers, all low, none fixed:**
+1. A device whose clock runs ahead stamps the future; `Math.max` never lowers it. A lagging device's
+   wrong answers inside the skew window never enter the deck.
+2. A WRONG pre-reset answer rated "Guessed" after the reset toasts "back tomorrow" but stays out
+   (`app/js/quiz.js` `setConf`). Reachable only when a reset arrives by sync over an open question.
+3. The `setConf` restamp can beat a genuinely newer answer from an unsynced second device in the merge.
+4. `app/js/clepsydra.js:546` (read, not run): a restamped answer counts in a session started after it.
+5. `checkedProgressState` does not validate the stamp (inert since the merge coerces to a number).
+6. The auto-rescue path in `loadState` has no stamp to carry when the live state is missing.
+7. `app/js/desk-data.js:20` mirrors `inDeck` without the stamp; it is not loaded yet. Fix it when the
+   3D desk is wired (P5).
+
+**Deploy route that worked (wrangler signed in by OAuth):** `node tools/build-launch.js`, then
+`npx wrangler pages deploy dist --project-name herophilus --branch main --commit-dirty=true`.
+Verify the live files through the built-in browser; a compound shell command with `curl` is denied.
+
+**Exam-day quiz (chat only, no project file).** On 2026-10-03 the owner asked for the hardest
+predicted Neurology and Psychiatry questions, then to be quizzed through chat widgets. Plan: 40
+questions, 27 neurology / 13 psychiatry, four sets of 10, right answer lit green and wrong red.
+Set 1 was delivered (Weber syndrome; conus vs cauda; juvenile myoclonic epilepsy; alteplase and INR;
+paroxysmal hemicrania; Lambert-Eaton; Guillain-Barre vital capacity; delusional perception;
+serotonin syndrome; lithium poisoning). He never sent a set 1 score, so sets 2-4 were not written.
+The neuro exam date has passed; treat the quiz as closed unless he asks again.
+
+**P5 is PAUSED by the owner** ("stop all the tasks ... until I report back"). Parked: rig 5s
+re-launch + refuter, toon round 2 with the refuter's fixes
+(`D:/scratch 2026/world-c4/toon1-refute/REFUTE.md`), her cartoon-look round, merging `face_rig` into
+`rig_her.py`. State: `progress/app-replan/p5/RESUME-p5.md` top and `p5/story/her/NOTES.md` "Rig 5s".
+
+**Environment that night:** the OmniRoute gateway was unreachable at localhost:20128, so no fleet
+seat was used. `storage.js:282` speed fix was offered and never taken up.
+
+## Pruned from MEMORY.md - 2026-10-11
+
+- **App redesign:** Phase 1 (depth `ae9a7b9`, warm grounds + subject colour `ea75502`) pushed
+  2026-09-08 (`progress\resume-2026-09-08-depth-and-colour.md` "Changed since"). Look work now runs
+  under the APP RE-PLAN above; `redesign-spec-2026-09-07-owner-interview.md` is input, not the plan.

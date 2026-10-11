@@ -236,3 +236,48 @@ Order follows the parent plan: B1 → B2a/b/c → B11 → B3 → B4 → B5 …
   `progress/app-replan/shots/b1-type-{home,module,question}.png`. Not checked: gate/profile
   screen (`drawProfileEditor(false)` throws under the b1-shots stub on baseline too); light theme
   was forced by attribute. Still owed: the owner's look, then commit. No second refuter needed.
+- OWNER RULINGS 2026-09-21 (later session). Big front card = last-used subject: APPROVED.
+  M10 painting: leaves the home screen; home = photo-real desk plus a simple ANIMATED CANDLE
+  (owner's words: "animated candle or something simple as that") - to be built in B4, vanilla
+  CSS/JS, offline; must respect prefers-reduced-motion. Not yet checked: whether the desk image
+  already holds a candle to animate over, or a variant with one must be generated.
+  `--ease-spring`: owner cannot judge until he SEES it - show a side-by-side demo (spring vs plain
+  ease-out) before any keep/replace; still no ignore written. Play icon: question was unclear to
+  the owner, unanswered. B3a-3 type-scale look: verdict NOT yet given, nothing committed.
+- OWNER RULING 2026-09-21 (easing): chose option 1 "Gentle spring" from the six-row demo
+  (`ease-demo-2.html`, built by Codex terra; the first demo showed no visible difference because
+  the spring overshoots only ~10% of a move). Change: `--ease-spring` at `tokens.css:148` from
+  `cubic-bezier(.34,1.56,.64,1)` to `cubic-bezier(.34,1.2,.64,1)`, ONE line, own commit AFTER the
+  B3a-3 type-scale commit (tokens.css holds both changes). Not yet checked: whether the impeccable
+  hook still flags a 1.2 overshoot; if it does, the ignore now carries this owner ruling.
+  Codex terra was NOT out of quota (owner corrected the handoff note); it ran fine 2026-09-21.
+- 2026-09-21 DONE: owner said the type-scale look is fine. Committed `0e72ac8` (five css files,
+  by explicit path) and `c91e94d` (`--ease-spring` to `cubic-bezier(.34,1.2,.64,1)`, one line; the
+  design hook no longer flags it, no ignore written). boot-check after: 4049/81/4/156, 0 errors.
+  Neither commit pushed. NEXT: talk to the owner about the buttons ("Practice all", filter chips)
+  BEFORE B3b; then B4 = one desk home, neon edges, photo-real desk + animated candle (scout says a
+  lit candle already sits ~15% left / 20% top of `generated/home-dir-c-desk/image-v2.png`, clear of
+  the cards - one Haiku read, unconfirmed); add the owner-exception note to `style/greek.md` first.
+- 2026-09-21 DONE: owner said the type-scale look is fine. Committed `0e72ac8` (five css files,
+  by explicit path) and `c91e94d` (`--ease-spring` to `cubic-bezier(.34,1.2,.64,1)`, one line; the
+  design hook no longer flags it, no ignore written). boot-check after: 4049/81/4/156, 0 errors.
+  Neither commit pushed. NEXT: talk to the owner about the buttons ("Practice all", filter chips)
+  BEFORE B3b; then B4 = one desk home, neon edges, photo-real desk + animated candle (scout says a
+  lit candle already sits ~15% left / 20% top of `generated/home-dir-c-desk/image-v2.png`, clear of
+  the cards - one Haiku read, unconfirmed); add the owner-exception note to `style/greek.md` first.
+- CORRECTION 2026-09-21: the line above (and the `c91e94d` message) say the design hook no longer
+  flags `--ease-spring`. Wrong: the per-edit hook passed, the Stop hook still flagged `bounce-easing`
+  at `tokens.css:148`. Owner had chosen Gentle spring, so a narrow ignore was written:
+  `ignore-value bounce-easing "cubic-bezier(.34, 1.2, .64, 1)"` in `.impeccable\config.json`
+  (reason: owner chose it from the six-variant demo). Any other bounce curve still flags.
+
+### B3b state, 2026-09-21 (late)
+- Owner ruling: Travelling light stays for buttons (primary, secondary, icon). It is NOT the look for filter chips: "not for triggering of a filter".
+- Round 4 page shown: scratchpad `buttons-demo-4.html` = Travelling-light buttons plus five chip styles (A Ember fill, B Ink mark, C Candle flare, D Shutter bar, E Meander strip). Recommended: A or B (stable on/off readable without motion). Owner has NOT picked a chip style yet.
+- Still owed by owner: chip style pick; play icon outline vs filled; whether "Peds" status stays a boxed tag.
+- Page verified by screenshot only (dark, one view); the ink-chip patch and the mix composition have no refuter pass. Demo files live in the session scratchpad, not in the project: copy the chosen CSS into the B3b brief before ending the session.
+- Nothing in app/ touched for B3b. B4 not started.
+- OWNER RULINGS 2026-09-21 (next session): chip style = B Ink mark. Play icon = outline. "Peds" status stays a boxed tag. Demo page rescued out of another project's scratchpad into `progress/app-replan/b3b/buttons-demo-4.html` (offline, no external links) - it is the CSS source for buttons (Travelling light) and chips (B). Brief: `progress/app-replan/b3b/b3b-buttons-chips-brief.md`.
+
+### Living-scene research: debate step, 2026-09-21
+Owner ruling: after the six research jobs (`research-living-scene\`) and the plan draft, DEBATE the plan with Astra (`gpt-6-astra`, Codex own login) and Fable 5.1 before showing it or building anything. Two rounds max: independent critique in parallel, then each rebuts the other. Main chat reads verdicts only, records the decision, shows the owner the disagreements. No app build before the Neuro question banks are done.

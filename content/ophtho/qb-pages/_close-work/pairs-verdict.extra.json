@@ -318,5 +318,21 @@
     "same_key": true,
     "difference": "",
     "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-28",
+    "house": "opmcq-c4-1",
+    "same_question": true,
+    "same_key": true,
+    "difference": "",
+    "servedBy": "openai/gpt-oss-120b"
+  },
+  {
+    "ep": "ophep2-summer-exam-13",
+    "house": "opqb-t22-11",
+    "same_question": true,
+    "same_key": false,
+    "difference": "Correct answer listed as option 1 in A, option 3 in B",
+    "servedBy": "openai/gpt-oss-120b"
   }
 ]

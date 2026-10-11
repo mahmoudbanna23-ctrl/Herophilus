@@ -70,55 +70,85 @@
   function busy(target) { for (var i = 0; i < tweens.length; i++) if (tweens[i].target === target) return true; return false; }
 
   // ---- renderer / scene / camera ----
-  var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
-  renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
+  // graphics stage 1: the canvas is only the last post pass, so it needs no MSAA of its own
+  var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: false, powerPreference: 'high-performance' });
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   renderer.outputEncoding = THREE.sRGBEncoding;
+  // ACES + sRGB are applied ONCE, in post.js's final pass (r147 render targets skip both); these two
+  // settings name the curve and carry the exposure the final pass reads
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.0;
+  renderer.physicallyCorrectLights = true;
+  var post = window.DeskPost(renderer), GFX = window.DeskGfx;
+
+  // ---- quality tiers (device key wardround.gfxTier: a stored value forces the tier) ----
+  var TIER_KEY = 'wardround.gfxTier';
+  var TIERS = {
+    high: { name: 'high', pr: 1.5, shadow: 2048, msaa: 2, bloom: true, bloomDiv: 2, bloomStrength: 0.9, fxaa: false, motes: 300 },
+    medium: { name: 'medium', pr: 1.0, shadow: 1024, msaa: 0, bloom: true, bloomDiv: 4, bloomStrength: 0.9, fxaa: true, motes: 150 },
+    // low: stub until step 4 (painted plate + hotspots); renders the medium chain without bloom or motes
+    low: { name: 'low', pr: 1.0, shadow: 1024, msaa: 0, bloom: false, bloomDiv: 4, bloomStrength: 0, fxaa: true, motes: 0 }
+  };
+  var forcedTier = null;
+  try { forcedTier = localStorage.getItem(TIER_KEY); } catch (e) { }
+  if (!TIERS[forcedTier]) forcedTier = null;
+  window.__gfx = { tier: forcedTier || 'high', forced: !!forcedTier, pickMean: null, changes: [] };
 
   var scene = new THREE.Scene();
   scene.background = new THREE.Color(0x120c0a);
+  // depth haze: set each frame from the camera's distance to its target, so the books never haze
+  scene.fog = new THREE.Fog(0x1c120b, 6, 18);
 
   var VFOV = 42;
   var camera = new THREE.PerspectiveCamera(VFOV, innerWidth / innerHeight, 0.05, 60);
   var cam = { px: 0, py: 1.7, pz: 6, lx: 0, ly: 0.5, lz: 0 }; // tweened; applied each frame
 
-  // ---- lights ----
-  scene.add(new THREE.HemisphereLight(0xa08a78, 0x2a1c14, 0.55));
-  scene.add(new THREE.AmbientLight(0x6a5646, 0.45));
-  var key = new THREE.PointLight(0xffdcae, 3.6, 26, 2); // warm oil-lamp key, from the right
+  // ---- light: IBL (warm, low) + warm spot key + warm lamp fill + cool window rim ----
+  scene.environment = GFX.envMap(renderer);
+  scene.add(new THREE.HemisphereLight(0x8a7060, 0x20140c, 0.35));
+  // physical units: the spot is in candela (1/d^2), the directional in lux-like units (no pi factor)
+  var KEY_I = 115, FILL_I = 9;
+  var key = new THREE.SpotLight(0xffd2a0, KEY_I, 0, 0.85, 0.6, 2); // warm key, from the right front (the same place as before)
   key.position.set(3.4, 2.8, 3.0);
+  key.target.position.set(-0.2, 0.2, -0.3);
   key.castShadow = true;
-  key.shadow.mapSize.set(1024, 1024);
-  key.shadow.radius = 4;
-  key.shadow.bias = -0.0015;
-  key.shadow.normalBias = 0.02;
-  scene.add(key);
-  var rim = new THREE.DirectionalLight(0x88aaff, 0.6); // cool rim, from behind
-  rim.position.set(-2.2, 2.4, -3.4);
+  key.shadow.mapSize.set(2048, 2048);
+  key.shadow.camera.near = 2; key.shadow.camera.far = 12;
+  key.shadow.bias = -0.00025;
+  key.shadow.normalBias = 0.012;
+  scene.add(key); scene.add(key.target);
+  var room = GFX.room(); scene.add(room.group);
+  var fill = new THREE.PointLight(0xff9a50, FILL_I, 0, 2); // the oil lamp at left: low warm fill on spines
+  fill.position.copy(room.lampPos).add(new V3(0.6, 0.9, 1.6));
+  scene.add(fill);
+  var rim = new THREE.DirectionalLight(0x8aa8ff, 2.2); // cool rim from the window, behind right
+  rim.position.set(2.6, 6.0, -3.6); // high enough that its desk glint falls past the far edge
   scene.add(rim);
 
-  // ---- desk (deep enough that a steep portrait camera sees desk, not void) + back wall ----
-  var desk = new THREE.Mesh(new THREE.BoxGeometry(18, 0.25, 12),
-    new THREE.MeshStandardMaterial({ color: 0x4a2d1c, roughness: 0.72, metalness: 0.03 }));
+  // ---- desk: low roughness, a faint lamp reflection; bevelled (bullnose) front edge ----
+  var deskMat = GFX.wood(0x4a2a17);
+  var desk = new THREE.Mesh(new THREE.BoxGeometry(18, 0.25, 12), deskMat);
   desk.position.set(0, -0.125, -1);
   desk.receiveShadow = true;
   scene.add(desk);
-  var wall = new THREE.Mesh(new THREE.PlaneGeometry(40, 14),
-    new THREE.MeshStandardMaterial({ color: 0x2e1f16, roughness: 0.95 }));
-  wall.position.set(0, 5, -7);
-  scene.add(wall);
+  var nose = new THREE.Mesh(new THREE.CylinderGeometry(0.125, 0.125, 18, 20, 1, false, 0, Math.PI), deskMat);
+  nose.rotation.z = Math.PI / 2; nose.position.set(0, -0.125, 5);
+  scene.add(nose);
 
   function darken(hex, amt) { var c = new THREE.Color(hex); c.multiplyScalar(1 - amt); return c.getHex(); }
-  function leather(hex) { return new THREE.MeshStandardMaterial({ color: hex, roughness: 0.55, metalness: 0.05 }); }
-  var goldMat = new THREE.MeshStandardMaterial({ color: 0xd4af37, roughness: 0.38, metalness: 0.65 });
+  var leather = GFX.leather;
+  var goldMat = new THREE.MeshStandardMaterial({ color: 0xd4af37, roughness: 0.3, metalness: 1.0, envMapIntensity: 1.2 });
+  // the progress arcs are gilt that glows: emissive enough to reach the bloom threshold
+  var arcMat = new THREE.MeshStandardMaterial({ color: 0xd4af37, roughness: 0.3, metalness: 1.0, envMapIntensity: 1.2,
+    emissive: 0xffb040, emissiveIntensity: 2.6 });
   var ENDPAPER_K = { land: 0.72, portrait: 0.53 }; // measured per layout (fix-5): the lamp angle differs
   var paperMat = new THREE.MeshStandardMaterial({ color: 0xf1e7cc, roughness: 0.92 });
   // the left page is the same paper, but the open cover turns it ~24 deg toward the lamp (key light
   // cos 0.72 vs 0.46 on the right page), so it rendered lemon-bright. Same hue, albedo scaled down so
   // both pages of the open spread render the same colour (measured by __pageRGB, NOTES round 4).
   var endMat = paperMat.clone(); endMat.color.multiplyScalar(ENDPAPER_K.land);
-  var blockMat = new THREE.MeshStandardMaterial({ color: 0xe6dbbd, roughness: 0.92 });
+  var blockMat = GFX.pageEdge(0xe6dbbd);
   var sealMat = new THREE.MeshStandardMaterial({ color: 0x8a1f1c, roughness: 0.5, metalness: 0.05 });
 
   // ---- book geometry (root origin = book centre) ----
@@ -130,6 +160,14 @@
   var OPEN_ANGLE = -2.72;       // cover swings on the spine toward the viewer, ~156 deg: a V spread
   var PW = 0.40, PH = 0.52;     // mocks sheet
 
+  // shared geometry: outer extents equal the old boxes, so fits, colliders and probes are unchanged
+  var GEO = {
+    cover: GFX.slab(W, H, CT, 0.006, 0.014),
+    block: GFX.pageBlock(BLOCK_X1 - BLOCK_X0, H - SQ, BLOCK_D, 0.014),
+    spine: new THREE.CylinderGeometry(T / 2, T / 2, H, 24, 1, false, Math.PI, Math.PI),
+    rib: new THREE.TorusGeometry(T / 2 + 0.002, 0.012, 8, 20, Math.PI),
+    hair: new THREE.TorusGeometry(T / 2 + 0.003, 0.0022, 4, 20, Math.PI)
+  };
   var occluders = [];   // meshes that can hide a label (arcs/bands/trim are too thin to count)
   var pickables = [];   // meshes a pointer ray can hit
 
@@ -145,7 +183,7 @@
     }
     var dark = darken(s.color, 0.28);
 
-    var block = part(new THREE.Mesh(new THREE.BoxGeometry(BLOCK_X1 - BLOCK_X0, H - SQ, BLOCK_D), blockMat), 'block', true);
+    var block = part(new THREE.Mesh(GEO.block, blockMat), 'block', true);
     block.position.x = (BLOCK_X0 + BLOCK_X1) / 2;
     root.add(block); b.block = block;
 
@@ -153,35 +191,47 @@
     var face = part(new THREE.Mesh(new THREE.PlaneGeometry(BLOCK_X1 - BLOCK_X0 - 0.03, H - SQ - 0.03), paperMat), 'page', true);
     face.castShadow = false;
     face.position.set((BLOCK_X0 + BLOCK_X1) / 2 + 0.012, 0, FACE_Z + 0.0015);
+    face.userData.plane = true;
     root.add(face); b.face = face;
 
-    var back = part(new THREE.Mesh(new THREE.BoxGeometry(W, H, CT), leather(dark)), 'back', true);
+    var darkMat = leather(dark), coverMat = leather(s.color);
+    var back = part(new THREE.Mesh(GEO.cover, darkMat), 'back', true);
     back.position.z = -(T / 2 - CT / 2);
     root.add(back); b.back = back;
 
-    var spine = part(new THREE.Mesh(new THREE.CylinderGeometry(T / 2, T / 2, H, 18, 1, false, Math.PI, Math.PI), leather(dark)), 'spine', true);
+    var spine = part(new THREE.Mesh(GEO.spine, darkMat), 'spine', true);
     spine.position.x = -W / 2;
     root.add(spine); b.spine = spine;
+    // raised bands: domed leather ribs, each between two gilt hairlines
     for (var k = 0; k < 4; k++) {
-      var band = new THREE.Mesh(new THREE.TorusGeometry(T / 2 + 0.004, 0.008, 6, 16, Math.PI), goldMat);
+      var by = H / 2 - 0.13 - k * (H - 0.26) / 3;
+      var band = new THREE.Mesh(GEO.rib, darkMat);
       band.rotation.set(Math.PI / 2, 0, Math.PI / 2);
-      band.position.set(-W / 2, H / 2 - 0.13 - k * (H - 0.26) / 3, 0);
+      band.scale.z = 0.8; // flatter dome along the spine
+      band.position.set(-W / 2, by, 0);
+      band.castShadow = true;
       root.add(band);
+      for (var e = -1; e <= 1; e += 2) {
+        var line = new THREE.Mesh(GEO.hair, goldMat);
+        line.rotation.copy(band.rotation);
+        line.position.set(-W / 2, by + e * 0.021, 0);
+        root.add(line);
+      }
     }
 
     // front cover on a pivot that sits ON the spine edge
     var pivot = new THREE.Object3D();
     pivot.position.set(-W / 2, 0, T / 2 - CT / 2);
     root.add(pivot); b.pivot = pivot;
-    var front = part(new THREE.Mesh(new THREE.BoxGeometry(W, H, CT), leather(s.color)), 'cover', true);
+    var front = part(new THREE.Mesh(GEO.cover, coverMat), 'cover', true);
     front.position.x = W / 2;
     pivot.add(front); b.front = front;
-    // gilt frame on the outside of the cover
+    // gilt frame on the outside of the cover: a raised, bevelled strip
     var gi = 0.045, gw = 0.011;
     [[W / 2, H / 2 - gi, W - 2 * gi, gw], [W / 2, -H / 2 + gi, W - 2 * gi, gw],
      [gi, 0, gw, H - 2 * gi], [W - gi, 0, gw, H - 2 * gi]].forEach(function (g) {
-      var m = new THREE.Mesh(new THREE.BoxGeometry(g[2], g[3], 0.003), goldMat);
-      m.position.set(g[0], g[1], CT / 2 + 0.0015);
+      var m = new THREE.Mesh(GFX.slab(g[2], g[3], 0.005, 0.0018, 0.001), goldMat);
+      m.position.set(g[0], g[1], CT / 2 + 0.0022);
       pivot.add(m);
     });
     // the left page of the spread: paper endpaper pasted inside the cover, carries Lectures
@@ -189,6 +239,7 @@
     endp.castShadow = false;
     endp.rotation.y = Math.PI; // faces the pages while shut, the viewer once the cover swings
     endp.position.set(W / 2 + 0.006, 0, -CT / 2 - 0.0008);
+    endp.userData.plane = true;
     pivot.add(endp); b.endp = endp;
 
     // Mocks: a sealed sheet tucked BETWEEN the leaves (inside the block volume). Invisible while
@@ -213,7 +264,7 @@
     track.position.set(0, H / 2 + 0.2, 0);
     track.rotation.set(0, Math.PI, Math.PI / 2); // same start as the arc, so both rewind to 12 o'clock
     root.add(track); b.track = track;
-    var arc = new THREE.Mesh(new THREE.TorusGeometry(arcR, 0.008, 8, 64, Math.PI * 2 * s.pct), [goldMat]);
+    var arc = new THREE.Mesh(new THREE.TorusGeometry(arcR, 0.008, 8, 64, Math.PI * 2 * s.pct), [arcMat]);
     arc.rotation.set(0, Math.PI, Math.PI / 2); // start at 12 o'clock, run clockwise
     arc.position.copy(track.position);
     root.add(arc); b.arc = arc;
@@ -226,6 +277,57 @@
 
   var books = SUBJECTS.map(buildBook);
   books.forEach(function (b) { scene.add(b.root); });
+
+  // ---- baked contact shadows: one soft footprint per book, rendered once from below at load.
+  // The plane lies on the desk and follows the book; as the book lifts it spreads and lightens.
+  var CONTACT = { size: 1.0, res: 128, alpha: 0.85 };
+  books.forEach(function (b) {
+    b.root.position.set(0, REST_Y, 0);
+    b.contact = GFX.bakeContact(renderer, post, b.root, CONTACT.size, CONTACT.res, [b.arc, b.track, b.paper]);
+    scene.add(b.contact);
+  });
+  function updateContact(b) {
+    var lift = Math.max(0, b.root.position.y - REST_Y), s = 1 + lift * 4.5, c = b.contact;
+    c.position.set(b.root.position.x, 0.0015, b.root.position.z);
+    c.rotation.y = b.root.rotation.y;
+    c.scale.set(s, -1, s);
+    c.material.opacity = CONTACT.alpha * Math.max(0.3, 1 - lift * 5.5);
+  }
+  // baked AO darkening under each row of books (one row landscape, two rows portrait)
+  var aoStrips = [GFX.aoStrip(), GFX.aoStrip()];
+  aoStrips.forEach(function (m) { m.position.y = 0.0008; m.renderOrder = 1; scene.add(m); });
+
+  // ---- dust motes in the key's beam (off under reduced motion) ----
+  var motes = GFX.motes(TIERS.high.motes, [-3.6, 0.05, -3.2, 3.6, 2.7, 0.4], key.position,
+    key.target.position.clone().sub(key.position));
+  motes.visible = !reduce;
+  scene.add(motes);
+
+  // test-only: index.html#{"msaa":2} overrides tier fields for fps A/B runs (never read from storage)
+  var TUNE = {};
+  try { TUNE = JSON.parse(decodeURIComponent(location.hash.slice(1)) || '{}'); } catch (e) { TUNE = {}; }
+  function applyTier(name, why) {
+    var c = Object.assign({}, TIERS[name], TUNE);
+    window.__gfx.cfg = c;
+    window.__gfx.tier = name;
+    window.__gfx.changes.push({ to: name, why: why, t: Math.round(performance.now()) });
+    post.configure(c);
+    key.shadow.mapSize.set(c.shadow, c.shadow);
+    if (key.shadow.map) { key.shadow.map.dispose(); key.shadow.map = null; }
+    motes.geometry.setDrawRange(0, c.motes);
+    motes.visible = !reduce && c.motes > 0;
+    if (name === 'low') console.log('plate fallback — step 4');
+    sizeBuffers();
+  }
+  function sizeBuffers() {
+    renderer.setPixelRatio(Math.min(devicePixelRatio || 1, window.__gfx.cfg.pr));
+    renderer.setSize(innerWidth, innerHeight, false);
+    var db = renderer.getDrawingBufferSize(new THREE.Vector2());
+    post.setSize(db.x, db.y);
+    motes.material.uniforms.px.value = db.y / (2 * Math.tan(THREE.MathUtils.degToRad(VFOV) / 2)) / 1000;
+  }
+  // every frame's picture goes through the post chain; the probes below call this too
+  function draw(now) { post.render(scene, camera, now); }
 
   // ---- HTML labels: book titles are the book buttons ----
   books.forEach(function (b) {
@@ -261,6 +363,12 @@
         b.baseX = (i - 1.5) * 1.18; b.baseZ = 0; b.baseRotY = (i - 1.5) * -0.09;
       }
     });
+    if (portrait) {
+      aoStrips[0].position.set(0, 0.0008, -1.15); aoStrips[0].scale.set(2.7, 1, 0.62);
+      aoStrips[1].position.set(0, 0.0008, 0.55); aoStrips[1].scale.set(2.7, 1, 0.62); aoStrips[1].visible = true;
+    } else {
+      aoStrips[0].position.set(0, 0.0008, 0); aoStrips[0].scale.set(5.3, 1, 0.66); aoStrips[1].visible = false;
+    }
     var frontZ = portrait ? 0.55 : 0;
     state.reading = { x: portrait ? 0 : 0.13, y: REST_Y, z: frontZ + (portrait ? 1.4 : 0.9) };
     books.forEach(buildPath);
@@ -411,7 +519,7 @@
   function resize() {
     camera.aspect = innerWidth / innerHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize(innerWidth, innerHeight, false);
+    sizeBuffers();
     layoutBooks();
     books.forEach(applyPose);
     scene.updateMatrixWorld(true);
@@ -547,6 +655,26 @@
     closeBook();
   });
 
+  // ---- label occlusion rays test each occluder's own bounding box (its OBB in world), never its
+  // triangles: the bevelled covers carry far more triangles than the old boxes. Inverse matrices are
+  // cached per pose generation (poseGen bumps whenever the forecast or the frame moves anything).
+  var poseGen = 0, _ir = new THREE.Ray(), _ip = new V3();
+  occluders.forEach(function (m) { if (!m.geometry.boundingBox) m.geometry.computeBoundingBox(); });
+  function boxHits(r, far) {
+    var out = [];
+    for (var i = 0; i < occluders.length; i++) {
+      var m = occluders[i];
+      if (m._g !== poseGen) { m._inv = (m._inv || new THREE.Matrix4()).copy(m.matrixWorld).invert(); m._g = poseGen; }
+      _ir.copy(r).applyMatrix4(m._inv);
+      // a plane is one-sided, like the FrontSide mesh raycast it replaces: hit only against its normal
+      if (m.userData.plane && _ir.direction.z >= 0) continue;
+      if (_ir.intersectBox(m.geometry.boundingBox, _ip) === null) continue;
+      var d = _ip.applyMatrix4(m.matrixWorld).distanceTo(r.origin);
+      if (d <= far) out.push({ object: m, distance: d });
+    }
+    return out.sort(function (a, b) { return a.distance - b.distance; });
+  }
+
   // ---- labels: project an anchor, hide when facing away / occluded / off-screen ----
   var aW = new V3(), nW = new V3(), toCam = new V3(), lray = new THREE.Raycaster(), nm = new THREE.Matrix3();
   function anchorView(mesh, local, normalLocal) {
@@ -562,7 +690,7 @@
     if (on) {
       lray.set(camera.position, toCam.clone().negate());
       lray.far = dist + 0.01;
-      var hits = lray.intersectObjects(occluders, false);
+      var hits = boxHits(lray.ray, lray.far);
       for (var i = 0; i < hits.length; i++) {
         var o = hits[i].object;
         if (!visibleChain(o) || o === mesh) continue;
@@ -579,7 +707,7 @@
     for (var k = 0; k < 4; k++) {
       eN.set(((x + (k & 1 ? hw : -hw)) / innerWidth) * 2 - 1, -((y + (k & 2 ? hh : -hh)) / innerHeight) * 2 + 1);
       eray.setFromCamera(eN, camera);
-      var hits = eray.intersectObjects(occluders, false);
+      var hits = boxHits(eray.ray, Infinity);
       for (var i = 0; i < hits.length; i++) {
         if (!visibleChain(hits[i].object)) continue;
         if (hits[i].object.userData.book !== b && hits[i].distance < dist) return false;
@@ -601,6 +729,7 @@
     return Math.abs(ndc.x - a) * 0.5 * innerWidth;
   }
   function updateLabels(now) {
+    poseGen++;
     // ONE shared title size (fix-5 decision 3): the largest at which every resting book's title fits
     // its own cover on one line, clamped to [16 desktop / 14 phone, 22]. The open book is left out:
     // it is lifting toward the camera, so its cover only grows.
@@ -711,13 +840,13 @@
       });
       books.forEach(applyPose);
       camera.position.set(cam.px, cam.py, cam.pz); camera.lookAt(cam.lx, cam.ly, cam.lz);
-      scene.updateMatrixWorld(true); camera.updateMatrixWorld();
+      scene.updateMatrixWorld(true); camera.updateMatrixWorld(); poseGen++;
       books.forEach(function (b, i) { out[i].push(titleVis(b)); });
     }
     tweens.forEach(function (tw, j) { tw.target[tw.prop] = saved[j]; });
     books.forEach(applyPose);
     camera.position.set(cam.px, cam.py, cam.pz); camera.lookAt(cam.lx, cam.ly, cam.lz);
-    scene.updateMatrixWorld(true); camera.updateMatrixWorld();
+    scene.updateMatrixWorld(true); camera.updateMatrixWorld(); poseGen++;
     return out;
   }
 
@@ -761,10 +890,49 @@
     camera.updateMatrixWorld();
     if (window.__ix.on) probeIntersections();
     updateLabels(now);
-    renderer.render(scene, camera);
+    books.forEach(updateContact);
+    // depth haze starts just past the camera's target, so it softens the room and never the books
+    var cd = Math.hypot(cam.px - cam.lx, cam.py - cam.ly, cam.pz - cam.lz);
+    scene.fog.near = cd + 1.5; scene.fog.far = cd + 15;
+    if (!reduce) {
+      // lamp flicker: small incommensurate sines on the key and the fill (off under reduced motion)
+      var ts = now / 1000, fl = 1 + 0.022 * Math.sin(ts * 7.3) + 0.014 * Math.sin(ts * 13.1 + 1.3) + 0.01 * Math.sin(ts * 23.7 + 0.4);
+      key.intensity = KEY_I * fl; fill.intensity = FILL_I * (fl + 0.04 * Math.sin(ts * 17.9));
+      room.flame.scale.set(1, 1.6 * fl, 1); room.wall.material.uniforms.glow.value = fl; room.halo.material.opacity = 0.85 + 4 * (fl - 1);
+      motes.material.uniforms.t.value = ts;
+    }
+    tierWatch(now, dt);
+    draw(now);
+  }
+
+  // tier pick (mean fps over the first 2 s) and drop (motion fps under the floor for 1 s)
+  var tw0 = null, twN = 0, twSum = 0, below = 0, FLOOR = { high: 50, medium: 30 };
+  function tierWatch(now, dt) {
+    var G = window.__gfx;
+    if (G.forced) return;
+    if (G.pickMean === null) {
+      if (tw0 === null) { tw0 = now; return; }
+      if (now - tw0 < 1000) return;            // skip the first second: shader compile, PMREM, bakes
+      twN++; twSum += dt; (G.pickDts = G.pickDts || []).push(dt);
+      if (now - tw0 >= 3000) {
+        // median frame time, so shader-compile and bake hitches in the first seconds cannot sink the pick;
+        // the pick runs at high, so it only decides high vs medium: medium's own floor drops it to low
+        var ds = G.pickDts.slice().sort(function (a, b) { return a - b; });
+        G.pickMean = +(1000 / ds[ds.length >> 1]).toFixed(1); G.pickDts = null;
+        var pick = G.pickMean >= 55 ? 'high' : 'medium';
+        if (pick !== G.tier) applyTier(pick, 'pick ' + G.pickMean);
+      }
+      return;
+    }
+    var fl = FLOOR[G.tier], s = window.__fps.samples, n = Math.min(12, s.length), m = 0;
+    if (!fl || !tweens.length) { below = 0; return; }
+    for (var i = s.length - n; i < s.length; i++) m += s[i];
+    if (1000 / (m / n) < fl) below += dt; else below = 0;
+    if (below >= 1000) { below = 0; applyTier(G.tier === 'high' ? 'medium' : 'low', 'drop'); }
   }
 
   window.addEventListener('resize', resize);
+  applyTier(window.__gfx.tier, window.__gfx.forced ? 'forced' : 'start');
   resize();
   requestAnimationFrame(frame);
 
@@ -810,7 +978,7 @@
   // contrast probe (verification only): text colour vs the darkest and lightest rendered pixel under
   // each visible label's text box. WCAG relative luminance on the sRGB canvas output.
   window.__contrast = function () {
-    renderer.render(scene, camera);
+    draw(performance.now());
     var gl = renderer.getContext(), W0 = gl.drawingBufferWidth, H0 = gl.drawingBufferHeight, pr = W0 / innerWidth;
     var px = new Uint8Array(W0 * H0 * 4); gl.readPixels(0, 0, W0, H0, gl.RGBA, gl.UNSIGNED_BYTE, px);
     function lin(c) { c /= 255; return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); }
@@ -849,7 +1017,7 @@
   };
   // page-colour probe: mean rendered sRGB of a 30x16 px patch 30 px below the Lectures and Questions labels
   window.__pageRGB = function () {
-    renderer.render(scene, camera);
+    draw(performance.now());
     var gl = renderer.getContext(), W0 = gl.drawingBufferWidth, H0 = gl.drawingBufferHeight, pr = W0 / innerWidth;
     var px = new Uint8Array(W0 * H0 * 4); gl.readPixels(0, 0, W0, H0, gl.RGBA, gl.UNSIGNED_BYTE, px);
     var out = {};
@@ -863,7 +1031,7 @@
     return out;
   };
   window.__band = function () {
-    renderer.render(scene, camera);
+    draw(performance.now());
     var gl = renderer.getContext(), w = gl.drawingBufferWidth, h = gl.drawingBufferHeight, px = new Uint8Array(w * h * 4);
     gl.readPixels(0, 0, w, h, gl.RGBA, gl.UNSIGNED_BYTE, px);
     var empty = 0, top = 0, bottom = 0, seenTop = false;

@@ -30,17 +30,17 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
 `CLAUDE.md` was trimmed 2026-09-02 into `reference.md` (`## Moved from CLAUDE.md - 2026-09-02`);
 **no live rule left it.**
 
-## Resume here — state at 2026-09-25
+## Resume here — state at 2026-10-10
 - **APP MASTER PLAN — APPROVED 2026-09-25: `progress\PLAN-app-master-2026-09.md`**
   (phases P0-P12, P7/P8/P9 split a/b; J9 team talk + Opus refuter folded in,
   `progress\app-replan\j9-team-talk\minutes.md`). Fork 5: P3 mocks beside P0/P1. P4a DONE `10b2684`
   (tag `pre-p4-2026-09-25`, `p4\p4a-report.md`); final plate = `painted-codex-3.png` (owner). P4b (Q1 B/R1 A)
-  DONE (tag `pre-p4b-2026-09-25`). P5 = living desk, plan `p5\PLAN-living-desk-2026-09-26.md`, tag `pre-p5-scene-2026-09-26`; NEXT: `p5\RESUME-p5.md`. P10 debt: focus ring `--neuro` 2.71:1 dark (`base.css:16`); impeccable flags: 7 side-tabs, `.gate::before` grid bg, `.bk-prog` width anim. Rollback tag `pre-master-replan`
-  (local). Owner answered 2026-09-25 (plan §6): Meshy CC BY approved, Peds tag plain, lab values
-  source-then-tagged, screenshots dropped, candle desk = P3 mocks photo vs painted plate, water level
-  = every answer counts, 100/day, midnight reset. Plan §6 gen map + audio P6b; §8 = Codex gap review (P1 sync exit conditions; P9c Firestore-only, per-subject — owner ruling; D1 DROPPED).
+  DONE (tag `pre-p4b-2026-09-25`). P5 = story scene `p5\PLAN-story-scene-2026-09-27.md`, tag `pre-p5-scene-2026-09-26`; NEXT: `p5\RESUME-p5.md` top. P10 debt: focus ring `--neuro` 2.71:1 dark (`base.css:16`); impeccable flags: 7 side-tabs, `.gate::before` grid bg, `.bk-prog` width anim. Rollback tag `pre-master-replan`
+  (local). Owner's 2026-09-25 answers, gen map, audio P6b: plan §6; §8 = Codex gap review (P1 sync exit conditions; P9c Firestore-only, per-subject — owner ruling; D1 DROPPED).
+  **2026-10-10: review-deck reset LIVE `a4a9d073`; neuro exam rows + split Practise-all live `7bb76ca8`. P5 PAUSED by owner, only his word restarts it.
+  Upload route, reset leftovers, parked P5: archive `## Pruned from MEMORY.md - 2026-10-10`.**
   Owed by owner: backup (a) paid daily export vs (b) $0 no guarantee · rights attestation · report address · students/yr · privacy wording · Astra baseline go?. Push freely, no asking (owner 2026-09-26). P0 DONE `77372af` (slow-3G UNCONFIRMED; 2 latent lock-check flaws in `p0/REFUTE-round2.md`). P3: owner picked painted desk · Q1 B · R1 A, neon edges DEFAULT; `shoot.mjs` runs only OUTSIDE Codex sandbox (CDP). Plates: Codex image gen (Gemini image 429 on this key); ONE Codex job at a time (sandbox acct lockout 1909).
-  Deploy freeze R9: no Pages upload 09-26..27, 10-02..03, 10-17..19. Superseded resume bullets:
+  Deploy freeze R9: no Pages upload 10-17..19. Superseded resume bullets:
   archive `## Pruned from MEMORY.md - 2026-09-25`.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
 boots; all 3 carried debts cleared. Close-out: `progress\resume-ophtho.md`. ⚠️ **The ophtho
@@ -66,9 +66,9 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
   PDF 6–98 ONLY; SKIP 99–140.**
 - **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->** archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding.
 
-- **App redesign:** Phase 1 (depth `ae9a7b9`, warm grounds + subject colour `ea75502`) pushed
-  2026-09-08 (`progress\resume-2026-09-08-depth-and-colour.md` "Changed since"). Look work now runs
-  under the APP RE-PLAN above; `redesign-spec-2026-09-07-owner-interview.md` is input, not the plan.
+- ✅ **PEDS SELF ASSESSMENT IN 2026-10-11** — 4th bank `selfassess`: 521 new + 585 live tagged `alsoIn`. `ledger.md` §23.
+- NEXT (approved 2026-10-11, not run): `progress\resume-peds-dupes.md`.
+- **App redesign:** PRUNED 2026-10-11 -> archive, `## Pruned from MEMORY.md - 2026-10-11`.
 
 ## The watch — oversight every ~12 h (set up 2026-09-02)
 - **PRUNED 2026-09-20 ->** archive. Binding: a watch chat runs `progress\WATCH.md`, reports, never
@@ -129,7 +129,7 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
   `for i… if(!(i in A))`, **zero holes, every file `eval`s clean**): ENT **2,322** (2,240 q + 82 c) ·
   **Ophtho 1,598** · Neuro **304** (297 q + 7 c) · Peds House **393** · Peds endpoint **1,334**
   (p1 704 + p2 630, both CLOSED). ⚠️ **The case arrays are `C_ENT`/`C_NEURO`/`C_OPHTHO`/`C_PEDS`, not
-  `CASES_*`** (ophtho and peds hold 0). **5,951 is a STALE pre-neuro-endpoint corpus figure, not current** — `LOCKED_MODULES` is now `[]` (neuropsych unlocked 2026-09-22, ophtho unlocked 2026-09-21); only `THEORY_LOCKED` still holds chapters out. **RECOUNT 2026-09-25 (vm-load, holes indexed): 6,956, 0 holes, 12 files parse** — ENT 2,240+82c · neuro 1,047+7c · ophtho 1,273+433+147 · peds 393+704+630.
+  `CASES_*`** (ophtho and peds hold 0). **5,951 is a STALE pre-neuro-endpoint corpus figure, not current** — `LOCKED_MODULES` is now `[]` (neuropsych unlocked 2026-09-22, ophtho unlocked 2026-09-21); only `THEORY_LOCKED` still holds chapters out. **RECOUNT 2026-10-11 (boot QUESTIONS; peds arrays re-loaded, 0 holes): 7,477** — ENT 2,240+82c · neuro 1,047+7c · ophtho 1,273+433+147 · peds 393+704+630+521.
   ✅ **BOOTED `file://` 2026-09-07, 0 errors**: `QUESTIONS 4049 · THEORY 81 · MODULES 4 · 153 chapter rows, 80 with questions`; per module ent 30 · ophtho 36 · neuropsych 36 · pediatrics 51. Keys `ent`, `ophtho`, `pediatrics`, `neuropsych`; options 2–10 coexist (2:10 · 3:67 · 4:3836 · 5:1365 · 8:1 · 9:1 · 10:6).
   ⚠️ **`grep -c "^  { id:"` UNDERCOUNTS `questions.ophtho.js` BY ~440 — load the array.**
 - **✅ THE BOOT CHECK IS NOW A REPO TOOL: `node tools\boot-check\boot-check.js`** (2026-09-02) —
