@@ -188,6 +188,19 @@ end up doing:
 
 ## In flight when this note was last written
 
+- **Owner 2026-10-11: "yes, go ahead with it make it smoother and redesign it"** — the borrowed
+  scroll-through technique (lead 1 below) is approved, to be made ours. `outside-dark` / `outside-light`
+  painted (6 of 8 pictures used), converted to `app/assets/hall/outside-*.jpg` (UNCOMMITTED until the
+  build is checked), raw PNGs sent to him; no verdict on them yet. Doorway box and known look faults:
+  bottom of `briefs/build-walkin.md`. A Claude builder is running that brief (edits `app/js/hall.js`,
+  `app/css/hall.css`, adds `app/js/lib/`, stills `shots/walkin-*`). After its report: footprint check
+  (three dots), Codex different-house check, stills to the owner, AND open the live page for him with
+  PowerShell `Start-Process` (motion cannot be judged from stills). M1 (alcove opens into the subject
+  page) and the two upright hall paintings are NOT in this round.
+- Inventory list of scroll and object moves given to the owner in chat (ready: M1-M6, hold-still
+  scene, slide-in rows, snap panels, count-up, 237 hover buttons; shelf has no dust, tilt, card flip
+  or pointer trail). Asked whether to fetch any not-yet-brought-in one; unanswered.
+
 - Researcher report read 2026-10-11: no whole doorway walk-in page found that can be taken as is
   (CodePen and Codrops refused its fetches; both Codrops demos need a smooth-scroll hijack = banned).
   Three CodePen leads then opened in the built-in browser and confirmed real:
