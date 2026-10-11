@@ -39,7 +39,7 @@ Where this file and the archive disagree, this file wins. ⚠️ **Before openin
   (local). Owner's 2026-09-25 answers, gen map, audio P6b: plan §6; §8 = Codex gap review (P1 sync exit conditions; P9c Firestore-only, per-subject — owner ruling; D1 DROPPED).
   **2026-10-10: review-deck reset LIVE `a4a9d073`; neuro exam rows + split Practise-all live `7bb76ca8`. P5 PAUSED by owner, only his word restarts it.
   Upload route, reset leftovers, parked P5: archive `## Pruned from MEMORY.md - 2026-10-10`.**
-  Owed by owner: backup (a) paid daily export vs (b) $0 no guarantee · rights attestation · report address · students/yr · privacy wording · Astra baseline go?. Push freely, no asking (owner 2026-09-26). P0 DONE `77372af` (slow-3G UNCONFIRMED; 2 latent lock-check flaws in `p0/REFUTE-round2.md`). P3: owner picked painted desk · Q1 B · R1 A, neon edges DEFAULT; `shoot.mjs` runs only OUTSIDE Codex sandbox (CDP). Plates: Codex image gen (Gemini image 429 on this key); ONE Codex job at a time (sandbox acct lockout 1909).
+  Backup RULED 2026-10-11: free, no guarantee. Owed by owner: rights attestation · report address · students/yr · privacy wording · Astra baseline go?. Push freely, no asking (owner 2026-09-26). P0 DONE `77372af` (slow-3G UNCONFIRMED; 2 latent lock-check flaws in `p0/REFUTE-round2.md`). P3: owner picked painted desk · Q1 B · R1 A, neon edges DEFAULT; `shoot.mjs` runs only OUTSIDE Codex sandbox (CDP). Plates: Codex image gen (Gemini image 429 on this key); ONE Codex job at a time (sandbox acct lockout 1909).
   Deploy freeze R9: no Pages upload 10-17..19. Superseded resume bullets:
   archive `## Pruned from MEMORY.md - 2026-09-25`.
 ✅ ENT CLOSED (`ledger.md` §15–§16). ✅ **OPHTHO CLOSED 2026-09-02** — **1,598**, 0 holes, CLEAN,
@@ -67,7 +67,7 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
 - **Five-option cap settled; OSCE skipped by user ruling 2026-08-31** — both **PRUNED 2026-09-08 ->** archive, `## Pruned from MEMORY.md - 2026-09-08`. Still binding.
 
 - ✅ **PEDS SELF ASSESSMENT IN 2026-10-11** — 4th bank `selfassess`: 521 new + 585 live tagged `alsoIn`. `ledger.md` §23.
-- NEXT (approved 2026-10-11, not run): `progress\resume-peds-dupes.md`.
+- PEDS REPEATS: 350 listed, NOT merged yet. NEXT: `progress\resume-peds-dupes.md`.
 - **App redesign:** PRUNED 2026-10-11 -> archive, `## Pruned from MEMORY.md - 2026-10-11`.
 
 ## The watch — oversight every ~12 h (set up 2026-09-02)
