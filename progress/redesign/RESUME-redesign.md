@@ -367,3 +367,29 @@ Gilda, GFS Didot; files unmodified). Glyph check by cmap parse:
 5. Show the owner: home (doors shut, opening, hall, below), a subject page, a question, the
    theory page, at laptop and both iPad sizes, both looks; and the lettering page. One question
    at a time. Still unanswered from earlier: the button pick (suggested 139 main, 21 quiet).
+
+### 2026-10-11, late — LETTERING PICKED: pair 5
+
+- Owner saw the six pair pictures one by one and answered (verbatim): "5".
+  Pair 5 = GFS Didot (titles) + Libre Caslon Text (reading).
+- Known gap in this pair, from the cmap check: Libre Caslon Text has no less-or-equal, no
+  greater-or-equal and no Greek. Main chat's decision (told to the owner, not asked): the
+  reading stack is `'Libre Caslon Text', 'Gentium Book Plus', <existing fallbacks>` with BOTH
+  embedded, so the missing signs and Greek always come from the same known face on every
+  device, never from a system stand-in. Gentium Book Plus covered the whole dose test line.
+  Check before trusting: GFS Didot's cover of digits and the signs used in titles and plaques;
+  whether Libre Caslon's italic "st" ligature shows in running text (turn it off with
+  `font-variant-ligatures: no-discretionary-ligatures` if it does); superscript and subscript
+  digits (cmap said only the inequality signs and Greek are missing, so they should be present:
+  verify on a real theory page).
+- To build (one Sonnet builder, brief not written yet): `app/css/type.css`, screen only, base64
+  `@font-face` for GFS Didot regular, Libre Caslon Text regular/italic/bold, Gentium Book Plus
+  regular/italic/bold; injected by the hall script after `warm.css`; overrides `--font-display`
+  and `--font-body` only. Zero lines in `data/fonts.js`, `tokens.css`, `index.html`.
+  Subsetting is allowed only if no tooling has to be installed; otherwise embed whole files and
+  report the page weight. Typography rules from plan section 6. Then: theory A4 page count on
+  two long chapters before and after, one printed theory page before and after (print sheet is
+  not edited, so print keeps today's lettering unless the owner asks otherwise: tell him),
+  stills of home, a subject page, a question and a theory page at the three sizes.
+- Reserved Font Name applies to GFS Didot and Gentium: embed the files unmodified, or rename
+  the family if a subset is made.
