@@ -1148,10 +1148,11 @@ function vReview(p){
     <button class="btn sec" onclick="resetDeck()">Reset deck</button></div>`;
   }
 
+  const dueSet=new Set(due);
   activeModules().forEach(m=>{
     const md_=deck.filter(q=>q.module===m.id);
     if(!md_.length)return;
-    const mdue=md_.filter(q=>due.includes(q));
+    const mdue=md_.filter(q=>dueSet.has(q));
     h+=`<div class="grouphdr">${ico(m.icon,15)} ${m.name} — ${md_.length}${mdue.length?` · ${mdue.length} due`:''}</div>`;
     h+=`<div class="filterbar">
       ${mdue.length?`<button class="chip on" style="--c:${m.hex}" onclick="startQuiz(${JSON.stringify(mdue.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — due')">${ico('play')} ${mdue.length} due now</button>`:''}

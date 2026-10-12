@@ -47,10 +47,12 @@
      Source order IS the stacking order here (all children are absolute, none
      carries a z-index): film at the back, orbs tinting it, scrim over both. -->
 <div class="ambient" aria-hidden="true">
-  <!-- muted + playsinline are what make autoplay legal at all; without both,
-       iOS Safari refuses and we fall back to the poster frame, which is a
-       perfectly good still. A failure here costs atmosphere, never function. -->
-  <video class="film" autoplay muted loop playsinline preload="auto"
+  <!-- No autoplay attribute: the gate covers this film at first load, so it
+       starts only when syncFilm() calls play(). muted + playsinline are what
+       make that call legal at all; without both, iOS Safari refuses and we
+       fall back to the poster frame, which is a perfectly good still. A
+       failure here costs atmosphere, never function. -->
+  <video class="film" muted loop playsinline preload="auto"
          poster="assets/ambient-library.jpg" tabindex="-1">
     <source src="assets/ambient-library.mp4" type="video/mp4">
   </video>

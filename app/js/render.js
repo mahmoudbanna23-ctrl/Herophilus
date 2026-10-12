@@ -36,14 +36,17 @@ function setFilm(f,on){
 }
 function syncFilm(){
   const reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  /* While the gate is up it covers the page with its own copy of the film, so
+     the main one waits: two decoders for one visible picture otherwise. */
+  const g=$('gate');
+  const gateUp=!!g && !g.classList.contains('hide');
   setFilm(document.querySelector('.ambient .film'),
-          !reduce && !STILL_VIEWS.includes(view.name));
+          !reduce && !gateUp && !STILL_VIEWS.includes(view.name));
   /* The gate's copy. A hidden <video> keeps decoding — display:none does not
      stop it — so it has to be paused explicitly the moment the gate closes,
      or it runs for the whole session behind a screen nobody is looking at. */
-  const g=$('gate');
   setFilm(document.querySelector('.gate-amb .film'),
-          !reduce && !!g && !g.classList.contains('hide'));
+          !reduce && gateUp);
 }
 
 function render(){

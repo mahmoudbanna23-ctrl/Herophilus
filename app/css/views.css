@@ -231,6 +231,13 @@ body[data-view="results"] .orb,
 body[data-view="mock"] .orb,
 body[data-view="review"] .orb,
 body[data-view="theory"] .orb{animation-play-state:paused}
+/* The button ring animates a registered custom property, which restyles every
+   .btn on every frame. Off, not paused, so the light rests in one known place. */
+body[data-view="quiz"] .btn::before,
+body[data-view="results"] .btn::before,
+body[data-view="mock"] .btn::before,
+body[data-view="review"] .btn::before,
+body[data-view="theory"] .btn::before{animation:none}
 
 /* ---- glass on the fixed furniture only ---------------------------------- */
 /* Deliberately NOT on cards, chapter rows or question options: backdrop-filter
