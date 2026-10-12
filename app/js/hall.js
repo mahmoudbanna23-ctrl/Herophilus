@@ -1,9 +1,9 @@
 /* The home screen as a library: seen from outside first, then walked into.
 
-   The four subject cards are replaced by one painted hall whose four alcoves
-   are the four subjects. This file touches NO existing script: it wraps the
-   three functions it needs by name (render.js looks them up at call time) and
-   builds the hall around whatever vHome already wrote.
+   The four subject cards are replaced by one round hall of five walls: a statue wall
+   and one wall per subject, each a button holding that subject's carved card. This file
+   touches NO existing script: it wraps the three functions it needs by name (render.js
+   looks them up at call time) and builds the hall around whatever vHome already wrote.
 
      vHome        — after it runs, everything it made moves into .hall-below, the
                     old "Subjects" heading and .mod-grid are dropped, and the
@@ -16,21 +16,27 @@
                     the page; the button is tucked into .hall-below so the hall
                     stays the first thing on screen.
 
-   THE WALK-IN. Home opens on the outside painting (assets/hall/outside-*.jpg).
-   A pinned, scroll-scrubbed section scales that painting about the doorway while
-   the hall painting, clipped to the doorway's shape, is seen through it from the
-   first pixel; the opening grows with the building until it covers the screen.
-   The view then holds while plaques travel into place and their rings draw, and
-   the rest of home laps up over the hall's lower edge with the hall moving a
-   little slower. Only transform and clip-path are animated. GSAP, ScrollTrigger
-   and DrawSVG are classic scripts in js/lib/, loaded from here, never from
-   index.html, and never allowed to strand the boot: if they are missing, or take
-   over 3 s, or motion is reduced, the plain stacked version stays — outside with
-   its welcome card, the hall with plaques in place and rings full — no pin, no
-   scrub, no timers.
+   THE WALK-IN AND THE RING. Home opens on the outside painting (assets/hall/outside-*.jpg).
+   A pinned, scroll-scrubbed section scales that painting about the doorway while the hall,
+   clipped to the doorway's shape, is seen through it from the first pixel; the opening grows
+   with the building until it covers the screen. The hall is then a ring: five flat walls
+   (.wall, each 1.3x the 3:2 plate in height, the plate in .wall-frame) stand on a regular
+   pentagon, the eye at its middle (each wall's transform carries perspective = the apothem and
+   turns about the eye). Scrolling turns the room on the spot: four turns of 72
+   degrees (.6 turn + .3 hold each), snapping to the nearest wall once the walk-in is over.
+   R (0..4) is the one scrubbed value of the ring; only the wall in view and its neighbours
+   stand on the ring, the others are parked flat off to the left so their buttons stay
+   focusable, and focusing a subject button turns the room to its wall. When R is past wall 4
+   the rest of home laps up over the hall's lower edge, the hall drifting a little slower.
+   Only transform, opacity and clip-path are animated. GSAP, ScrollTrigger and DrawSVG are
+   classic scripts in js/lib/, loaded from here, never from index.html, and never allowed to
+   strand the boot: if they are missing, or take over 3 s, or 3D transforms are unsupported,
+   or motion is reduced, the plain stack stays — outside with its welcome card, the statue
+   block, then the four subject walls as a grid, plaques in place and rings full — no pin,
+   no scrub, no timers.
 
-   Coming back to home from another view lands in the hall, past the door; a
-   fresh load starts outside. That is one in-memory variable (prev), never storage.
+   Coming back to home from another view lands in the hall on the wall the student left
+   (lastWall); a fresh load starts outside. That is one in-memory variable, never storage.
    Alcove click keeps the push-in; reduced motion: none of it. */
 (function(){
   'use strict';
@@ -51,6 +57,10 @@
   /* Left to right on the painting. The order is fixed here, by module id — never
      taken from the order activeModules() returns. */
   const ORDER=['ent','ophtho','neuropsych','pediatrics'];
+  /* The five walls of the ring, in turning order. Wall 0 is the statue wall; wall n
+     (1..4) carries ORDER[n-1]. */
+  const WALLS=['statue','ent','ophtho','neuropsych','pediatrics'];
+  const STEP=72;          // degrees between neighbouring walls (a regular pentagon)
   /* The doorway, as fractions of the 1536x1024 outside painting (pixel-scanned
      by the painter; the two themes agree within 0.3%). */
   const DOOR={cx:.498,cy:.528,l:.412,t:.326,w:.173,h:.404,arch:.425,inset:.004};
@@ -60,6 +70,8 @@
   let returned=false;     // this render entered home from another view
   let keepY=0;            // scroll position to keep when home re-renders in place
   let pushing=false;      // one-shot guard: a push-in is under way
+  let pushTimer=0;        // the 450 ms push-in timer; killWalk cancels it
+  let lastWall=0;         // the wall (0..4) the student left from; startWalk lands there on return
   let hallObs=null;       // watches the hall to pause loops and swap the Clepsydra
   let walk=null;          // the live walk-in: {kill()}
   let buildToken=0;       // bumped on every kill; a late async upgrade checks it
@@ -70,6 +82,8 @@
   const reduced=()=>matchMedia('(prefers-reduced-motion:reduce)').matches;
   const tall=()=>matchMedia('(orientation:portrait)').matches;   // same test as hall.css: upright window, tall painting
   const body=()=>document.body;
+  /* The ring needs real 3D. Without it the plain stack stays (no pin, no doors). */
+  const can3d=()=>!!(window.CSS&&CSS.supports&&CSS.supports('transform-style','preserve-3d')&&CSS.supports('perspective','1px'));
   const theme=()=>document.documentElement.getAttribute('data-theme')==='light'?'light':'dark';
 
   function unwatch(){
@@ -108,7 +122,8 @@
 
   function decodePaintings(){
     const th=theme();
-    return Promise.all(['outside-'+th+'.jpg','hall-'+th+(tall()?'-tall':'')+'.jpg','door-l.png','door-r.png'].map(n=>{
+    /* the wall plates are not decoded here yet: the ring runs on CSS stand-ins */
+    return Promise.all(['outside-'+th+'.jpg','door-l.png','door-r.png'].map(n=>{
       const im=new Image();
       im.src='assets/hall/'+n;
       return im.decode?im.decode().catch(()=>{}):Promise.resolve();
@@ -243,24 +258,26 @@
 
     /* One slot per painted alcove. A subject missing from the data leaves its
        alcove dimmed and inert; it never moves the others. */
-    let alcoves='',glows='';
+    const inner=[`<div class="wall-card"></div>`];   // what each wall's frame holds; wall 0 = the statue wall
     ORDER.forEach((id,i)=>{
       const m=byId[id], n=i+1;
-      if(!m){glows+=`<i class="veil" data-i="${n}"></i>`;return}
+      let alcoves='',glows='';
+      inner[n]='';
+      if(!m){inner[n]=`<i class="veil"></i>`;return}
       const locked=isLocked(m.id);
       const qs=qsInModule(m.id);
       const d=qs.filter(q=>isAnswered(q.id)).length;
       const a=accuracy(qs);
       const chs=m.groups.reduce((k,g)=>k+g.chapters.length,0);
       if(locked){
-        glows+=`<i class="veil" data-i="${n}"></i>`;
+        glows+=`<i class="veil"></i>`;
         alcoves+=`<button class="alcove locked" type="button" data-i="${n}" data-id="${m.id}"
           style="--hex:${m.hex}" aria-disabled="true" aria-label="${esc(m.name)}, coming soon">
           <span class="plaque"><span class="pl-name">${esc(m.name)}</span>
           <span class="pl-count">Coming soon</span></span></button>`;
+        inner[n]=glows+alcoves;
         return;
       }
-      glows+=`<i class="glow" data-i="${n}"></i>`;
       const pct=qs.length?d/qs.length*100:0;
       const foot=d===0
         ?`<span class="pl-count">Start studying</span>`
@@ -272,7 +289,11 @@
       alcoves+=`<button class="alcove" type="button" data-i="${n}" data-id="${m.id}"
         style="--hex:${m.hex}" aria-label="${esc(say)}">
         <span class="plaque"><span class="pl-name">${esc(m.name)}</span>${foot}</span></button>`;
+      inner[n]=glows+alcoves;
     });
+    /* five walls; each frame is the 3:2 plate box holding that wall's content */
+    const wallsHtml=WALLS.map((w,i)=>
+      `<div class="wall" data-i="${i}" data-w="${w}"><div class="wall-frame" data-name="${w}">${inner[i]||''}</div></div>`).join('');
 
     let dust='';
     for(let i=0;i<30;i++){
@@ -285,16 +306,14 @@
     const hall=document.createElement('section');
     hall.className='hall';
     hall.setAttribute('aria-label','Subjects');
-    const doorsOn=!reduced()&&libState!=='fail';
+    const doorsOn=!reduced()&&libState!=='fail'&&can3d();
     hall.innerHTML=
       `<div class="hall-view">
          <div class="wk-out" aria-hidden="true"></div>
          <div class="wk-text"></div>
          <div class="wk-clip"><div class="hall-push"><div class="hall-stage">
-           <div class="hall-back"></div>
-           <div class="hall-glow hall-frame">${glows}</div>
+           <div class="hall-prism">${wallsHtml}</div>
            <div class="hall-dust" aria-hidden="true">${dust}</div>
-           <div class="hall-alcoves hall-frame">${alcoves}</div>
            <div class="hall-fore" aria-hidden="true"></div>
            <div class="hall-greet"></div>
          </div></div></div>
@@ -336,8 +355,6 @@
       choose(hall,b,e.detail===0);
     });
 
-    if(matchMedia('(pointer:fine)').matches&&!reduced()) parallax(hall);
-
     if('IntersectionObserver' in window){
       hallObs=new IntersectionObserver(es=>{
         st.vis=es[es.length-1].isIntersecting;
@@ -351,9 +368,11 @@
 
     /* Motion: only when allowed, and only once the libraries and both paintings
        are ready. Anything less leaves the plain stacked version as built above. */
+    const landed=returned;
+    returned=false;                      // consumed here, whatever path follows
     if(!reduced()){
       const token=++buildToken;
-      const go_=()=>{ if(token===buildToken&&hall.isConnected) startWalk(hall,below,st,returned,keepY) };
+      const go_=()=>{ if(token===buildToken&&hall.isConnected) startWalk(hall,below,st,landed,keepY) };
       if(motionNow()) go_();
       else motionReady().then(ok=>{ if(ok) go_(); else dropDoors(hall) });
     }
@@ -371,6 +390,8 @@
   /* ---- the walk-in ---------------------------------------------------- */
   function killWalk(){
     buildToken++;
+    clearTimeout(pushTimer);
+    pushing=false;
     if(!walk) return;
     const w=walk;
     walk=null;
@@ -379,7 +400,7 @@
 
   function startWalk(hall,below,st,landed,y0){
     const g=window.gsap, ST=window.ScrollTrigger;
-    if(!g||!ST||walk){ dropDoors(hall); return }
+    if(!g||!ST||walk||!can3d()){ dropDoors(hall); return }
     g.registerPlugin(ST);
     const hasDraw=!!window.DrawSVGPlugin;
     if(hasDraw) g.registerPlugin(window.DrawSVGPlugin);
@@ -390,6 +411,8 @@
     const text=hall.querySelector('.wk-text');
     const clip=hall.querySelector('.wk-clip');
     const stage=hall.querySelector('.hall-stage');
+    const prism=hall.querySelector('.hall-prism');
+    const wallEls=Array.from(hall.querySelectorAll('.wall'));
     /* The bronze doors: two leaves in a box that sits exactly on the painted doorway,
        on top of the hall (which is already behind it). The layer is placed and scaled
        like the outside painting, so it grows with it. buildHall put it in the first
@@ -399,15 +422,14 @@
     const doors=view_.querySelector('.wk-doors');
     const dbox=doors.firstElementChild, shade=dbox.querySelector('.wk-shade');
     const leafL=dbox.querySelector('.wk-leaf.l'), leafR=dbox.querySelector('.wk-leaf.r');
-    const plaques=Array.from(hall.querySelectorAll('.plaque'));
-    const rings=Array.from(hall.querySelectorAll('.plaque .ring svg circle:nth-of-type(2)'));
 
     hall.classList.add('walk');
     below.classList.add('lap');
     clip.inert=true;
     st.gate=false;
 
-    const P={p:0,q:0};        // walk-in progress, pull-back progress (both 0..1)
+    const P={p:0};            // walk-in progress, 0..1
+    const RG={v:0};           // where the ring stands: 0 = wall 0 faces you .. 4 = wall 4; 0.5 = half-way to wall 1
     const DR={a:0};           // door swing, 0 shut .. 1 fully open (the first beat, before the walk-in)
     const SWING=100;          // degrees of the open leaf; past 90 it is edge-on and hidden
     let shown=true;           // are the leaves currently displayed
@@ -416,6 +438,20 @@
 
     const setOut=v=>g.set([out,doors],{scale:v});
     const setStage=v=>g.set(stage,{scale:v});
+    /* The ring. Eye at the middle of the pentagon: each wall carries its own perspective(r),
+       is pushed forward by the apothem r, turned (i-R)*72 and pushed back r (no shared
+       preserve-3d prism: its depth sort split the face at the view edge). Only
+       the wall in view and its neighbours stand on the ring (|i-R| <= 1); the others are
+       parked flat, off to the left, so the park never moves. */
+    function placeRing(){
+      const R=RG.v, r=G.r, wf=G.wf;
+      for(let i=0;i<wallEls.length;i++){
+        wallEls[i].style.transform=Math.abs(i-R)<=1.0001
+          ?'perspective('+r.toFixed(2)+'px) translateZ('+r.toFixed(2)+'px) rotateY('+((i-R)*STEP).toFixed(3)+'deg) translateZ('+(-r).toFixed(2)+'px)'
+          :'translate3d('+(-3*wf).toFixed(1)+'px,0,0)';
+      }
+      hall.dataset.ring=R.toFixed(3);
+    }
     const setTx=g.quickSetter(text,'x','px'), setTy=g.quickSetter(text,'y','px');
     /* Geometry. Runs on build and again on every ScrollTrigger refresh (resize,
        orientation change) — the only place layout is read. */
@@ -443,13 +479,13 @@
       for(let i=0;i<60&&!(inside(0,0,S)&&inside(W,0,S));i++) S*=1.02;
       /* the hall's own scale at the start: the smallest that still covers the doorway */
       const R=Math.min(1,Math.max((Px-d.l)/Px,(d.r-Px)/(W-Px),(Py-d.t)/Py,(d.b-Py)/(H-Py))*1.04);
-      /* the pull-back: cover (what the door shows) down to the width that fits all
-         four alcoves (painting x 3.5-97, y 10-77). 1 when cover already fits. */
-      const fwC=tall()?Math.min(Math.max(W,H*2/3),1.08*W):Math.min(Math.max(W,1.5*H),2.08*H);
-      const fwT=tall()?W/.95:Math.min(W/.94,2.2*H);   // tall: alcoves span x 2.4-98
-      const pb=Math.min(1,fwT/fwC);
+      /* the ring: a face is Wf wide (it covers the view, plate 3:2), the apothem of a
+         regular pentagon with that side is r, and the eye sits r back from the plate */
+      const wf=Math.max(W,1.5*H)+10, r=wf/(2*Math.tan(Math.PI/5));
+      stage.style.setProperty('--wf',wf.toFixed(2)+'px');
+      stage.style.setProperty('--ring-r',r.toFixed(2)+'px');
       const tr=text.getBoundingClientRect?{x:text.offsetLeft+text.offsetWidth/2,y:text.offsetTop+text.offsetHeight/2}:{x:0,y:0};
-      Object.assign(G,{W,H,Px,Py,d,S,R,pb,tr,top:bar?bar.offsetHeight:64});
+      Object.assign(G,{W,H,Px,Py,d,S,R,wf,r,tr,top:bar?bar.offsetHeight:64});
       out.style.left=ox+'px'; out.style.top=oy+'px';
       out.style.width=Wo+'px'; out.style.height=Ho+'px';
       g.set([out,doors],{transformOrigin:(Px-ox)+'px '+(Py-oy)+'px'});
@@ -481,7 +517,8 @@
       const u=Math.pow(P.p,1.5);
       const so=Math.pow(G.S,u);
       setOut(so);
-      setStage(Math.min(1,G.R*so)*(1+(G.pb-1)*P.q));
+      setStage(Math.min(1,G.R*so));
+      placeRing();
       clip.style.clipPath=u>=1?'none':clipFor(so);
       const f=so-1;
       setTx((G.tr.x-G.Px)*f); setTy((G.tr.y-G.Py)*f);      const open=P.p>=.985;
@@ -496,26 +533,47 @@
     layout();
 
     /* The scrubbed timeline: the doors swing open (the first beat), then 2 units of
-       walk-in, then the hold. Eased "none" except the door swing. */
-    const T0=.9;
+       walk-in, then four turns of the ring (.6 turn + .3 hold each). Labels w0..w4 mark
+       the walls: w0 as the walk-in ends, wk as turn k ends. Eased "none" except the door
+       swing. Each plaque rises and its ring draws as its wall arrives. */
+    const T0=.9, TW=T0+2, TURN=.6, HOLD=.3;
     const tl=g.timeline({paused:true,defaults:{ease:'none'}});
     tl.to(DR,{a:1,duration:T0,ease:'power2.inOut',onUpdate:apply},0);
     tl.to(P,{p:1,duration:2,onUpdate:apply},T0);
-    tl.to(P,{q:1,duration:.6,onUpdate:apply},T0+2);
-    if(plaques.length) tl.fromTo(plaques,{yPercent:130},{yPercent:0,duration:.45,stagger:.1},T0+2.15);
-    rings.forEach((c,i)=>{
-      const len=parseFloat(c.getAttribute('stroke-dasharray'))||0;
-      const off=parseFloat(c.getAttribute('stroke-dashoffset'))||0;
-      const pct=len?Math.max(0,Math.min(100,(1-off/len)*100)):0;
-      if(hasDraw) tl.fromTo(c,{drawSVG:'0% 0%'},{drawSVG:'0% '+pct.toFixed(2)+'%',duration:.5},T0+2.45+i*.1);
-      else tl.fromTo(c,{attr:{'stroke-dashoffset':len}},{attr:{'stroke-dashoffset':off},duration:.5},T0+2.45+i*.1);
-    });
+    tl.addLabel('w0',TW);
+    for(let k=1;k<=4;k++){
+      const t0=TW+(k-1)*(TURN+HOLD);
+      tl.to(RG,{v:k,duration:TURN,onUpdate:apply},t0);
+      tl.addLabel('w'+k,t0+TURN);
+      const pl=wallEls[k].querySelector('.plaque');
+      if(pl) tl.fromTo(pl,{yPercent:130},{yPercent:0,duration:.3},t0+.2);
+      const c=wallEls[k].querySelector('.plaque .ring svg circle:nth-of-type(2)');
+      if(c){
+        const len=parseFloat(c.getAttribute('stroke-dasharray'))||0;
+        const off=parseFloat(c.getAttribute('stroke-dashoffset'))||0;
+        const pct=len?Math.max(0,Math.min(100,(1-off/len)*100)):0;
+        if(hasDraw) tl.fromTo(c,{drawSVG:'0% 0%'},{drawSVG:'0% '+pct.toFixed(2)+'%',duration:.35},t0+.25);
+        else tl.fromTo(c,{attr:{'stroke-dashoffset':len}},{attr:{'stroke-dashoffset':off},duration:.35},t0+.25);
+      }
+    }
+    /* snap: free during the walk-in, the nearest wall after it */
+    const snapAt=v=>{
+      const dur=tl.duration(), p0=tl.labels.w0/dur;
+      if(v<p0-.0005) return v;
+      /* nearest by ring angle, not by timeline time: the hold follows each wall but the first,
+         so the halfway point of a turn (R = k+.5) is the dividing line */
+      const t=v*dur;
+      let k=0;
+      while(k<4 && t>tl.labels['w'+k]+(k?HOLD:0)+TURN/2) k++;
+      return tl.labels['w'+k]/dur;
+    };
 
     const pin=ST.create({
       trigger:hall,
       start:()=>'top '+G.top+'px',
       end:()=>'+='+Math.round(G.H*tl.duration()),
       pin:true,pinSpacing:true,scrub:.8,anticipatePin:1,animation:tl,
+      snap:{snapTo:snapAt,inertia:false,directional:false,duration:{min:.2,max:.7},delay:.12,ease:'power1.inOut'},
       onToggle:self=>hall.classList.toggle('pinned',self.isActive)
     });
 
@@ -540,16 +598,32 @@
       if(pin.scrubTween) pin.scrubTween.progress(1);
       apply();
     };
-    /* Past the door when coming back to home; the same place on an in-place re-render. */
+    /* scroll position of a wall's label */
+    const posOf=i=>pin.start+(tl.labels['w'+i]/tl.duration())*(pin.end-pin.start);
+    /* Back on the wall the student left; the same place on an in-place re-render. */
     if(landed||y0>0){
-      const run=()=>{ if(walk&&walk.hall===hall) jumpTo(landed?Math.max(0,pin.end-1):y0) };
+      const run=()=>{ if(walk&&walk.hall===hall) jumpTo(landed?posOf(lastWall):y0) };
       Promise.resolve().then(run);
     }
+    /* Tab into a subject button turns the room to its wall. The browser also scrolls the
+       overflow:hidden boxes to show the button; put them back. */
+    const onFocus=e=>{
+      const b=e.target&&e.target.closest?e.target.closest('.alcove'):null;
+      const w=b&&b.closest('.wall');
+      if(!w||!walk||walk.hall!==hall) return;
+      const i=Number(w.dataset.i);
+      const turn=()=>{ if(Math.round(RG.v)!==i) window.scrollTo(0,posOf(i)) };
+      turn();
+      /* the browser scrolls a focused box into view after this handler: ask again once it has */
+      requestAnimationFrame(()=>{ turn(); setTimeout(turn,60) });
+    };
+    hall.addEventListener('focusin',onFocus);
 
     walk={
       hall,
       kill(){
         ST.removeEventListener('refreshInit',relayout);
+        hall.removeEventListener('focusin',onFocus);
         try{depth.kill(true)}catch(e){}
         try{pin.kill(true)}catch(e){}
         try{tl.kill();depthTween.kill()}catch(e){}
@@ -576,32 +650,13 @@
   function choose(hall,b,kbd){
     if(pushing) return;
     const id=b.dataset.id;
+    const wl=b.closest('.wall');
+    if(wl) lastWall=Number(wl.dataset.i)||0;
     if(kbd||reduced()){go({name:'module',id});return}
     pushing=true;
     setOrigin(hall,b);
     b.classList.add('pick');
     hall.classList.add('pushing');
-    setTimeout(()=>{pushing=false;go({name:'module',id})},450);
-  }
-
-  /* One listener, two custom properties, written inside a frame. */
-  function parallax(hall){
-    let raf=0,nx=0,ny=0;
-    const write=()=>{
-      raf=0;
-      hall.style.setProperty('--mx',nx.toFixed(3));
-      hall.style.setProperty('--my',ny.toFixed(3));
-    };
-    hall.addEventListener('pointermove',e=>{
-      const r=hall.getBoundingClientRect();
-      if(!r.width||!r.height) return;
-      nx=((e.clientX-r.left)/r.width-.5)*2;
-      ny=((e.clientY-r.top)/r.height-.5)*2;
-      if(!raf) raf=requestAnimationFrame(write);
-    });
-    hall.addEventListener('pointerleave',()=>{
-      nx=0;ny=0;
-      if(!raf) raf=requestAnimationFrame(write);
-    });
+    pushTimer=setTimeout(()=>{pushing=false;go({name:'module',id})},450);
   }
 })();

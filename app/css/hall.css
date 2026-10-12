@@ -5,65 +5,54 @@
                   box (one screen under the top bar) holding three layers: the outside
                   painting (.wk-out), the welcome card (.wk-text) and the hall, which is
                   clipped to the doorway's shape and grows with it (.wk-clip). js/hall.js
-                  drives only transform and clip-path.
-     .hall (plain) the same layers stacked: outside with its welcome card, then the hall
-                  at the painting's own 3:2 shape. This is what reduced motion gets, and
-                  what stays if the motion libraries do not load.
+                  drives only transform, opacity and clip-path.
+     .hall (plain) the same layers stacked: outside with its welcome card, then the five
+                  walls as a plain stack (statue block, then the four subject walls as a
+                  2x2 grid, 4 across when wide). This is what reduced motion gets, what
+                  stays if the motion libraries do not load, and what a browser without
+                  3D keeps.
 
-   ALCOVE BOXES AND PLAQUES. Tuned to the two approved paintings, in PAINTING
-   coordinates: every number is a percent of the painting (left / top / width /
-   height), never of the screen. .hall-frame is cut to the painting's own 3:2
-   shape and sized to cover the hall exactly the way background-size:cover sizes
-   the picture, so a button always lands on its alcove whatever shape the window
-   is. Unitless on purpose: the plaque's place inside its button is worked out
-   from these by calc().
-     --aN-*  the alcove: its whole arched niche down to the foot of the lower
-             panel. This is the button's hit area, and the dimming veil.
-     --pN-*  the plaque: sits inside the EMPTY LOWER PANEL of that alcove.
-   Left to right: ear trumpet (ENT), crystal sphere (Ophthalmology), marble brain
-   (Neuropsychiatry), toy horse (Pediatrics). hall.js fixes the order by module id
-   (ent, ophtho, neuropsych, pediatrics), never by the order the data arrives in.
-   Dark = the evening painting (assets/hall/hall-dark.jpg), light = the daylight
-   one. Read off the paintings: lower panels y 58-72 (dark), 62-77 (light).
-   UPRIGHT WINDOWS (orientation:portrait) use the tall 2:3 paintings, a 2x2 grid of
-   alcoves, with their own boxes in the portrait block below: ear trumpet top left,
-   crystal sphere top right, marble brain bottom left, toy horse bottom right (the
-   same ent, ophtho, neuropsych, pediatrics order). Read off the tall paintings:
-   top panels y 37-41 (dark) / 36-42 (light), bottom panels y 72-79 / 76-85. */
+   THE RING. The hall is five walls on a real 3D ring, the eye at the middle of the
+   pentagon:  .hall-stage > .hall-prism (flat) > .wall[data-i] (own perspective) >
+   .wall-frame. The wall is a face 1.3x the plate's height (flat stone above and below, so
+   the corners never show a gap mid-turn); the frame is the 3:2 plate box. hall.js writes
+   --wf (the face width) and --ring-r (the apothem, also the perspective) on the stage and
+   all the transforms. One layout serves every wall: the niche box and the panel box below
+   are percentages of the frame, the same on all five plates.
+
+   WALL PLATES. Today every wall is a CSS stand-in (marked STAND-IN): one gradient per
+   wall, per look, in the --wall-<id> variables of the first two blocks, plus two outlined
+   boxes. To swap in a painted plate, set each --wall-<id> to
+   url("../assets/hall/wall-<id>-<dark|light>.jpg") and delete the STAND-IN rules. */
 
 @media screen{
 
 :root{
-  --hall-wide:url("../assets/hall/hall-dark.jpg");
-  --hall-tall:url("../assets/hall/hall-dark-tall.jpg");
-  --hall-fore:none;               /* no foreground-columns picture: the paintings carry their own */
-  --hall-fore-filter:none;
   --wk-out:url("../assets/hall/outside-dark.jpg");
+  --hall-fore:none;               /* no foreground-columns picture */
+  --hall-fore-filter:none;
   --wk-lap:48px;                  /* how far the rest of home laps over the hall's lower edge */
+  --stone-1:#2b2520; --stone-2:#16120f;   /* the flat stone above and below a plate */
+  --stone-edge:#0f0c0a;
 
-  --a1-l:5;    --a1-t:10; --a1-w:20.4; --a1-h:63;
-  --a2-l:28.2; --a2-t:10; --a2-w:20.4; --a2-h:63;
-  --a3-l:51.5; --a3-t:10; --a3-w:20.4; --a3-h:63;
-  --a4-l:74.8; --a4-t:10; --a4-w:20.4; --a4-h:63;
-  --p1-l:7.4;  --p1-t:59.2; --p1-w:15.6; --p1-h:11.8;
-  --p2-l:30.6; --p2-t:59.2; --p2-w:15.6; --p2-h:11.8;
-  --p3-l:53.9; --p3-t:59.2; --p3-w:15.6; --p3-h:11.8;
-  --p4-l:77.2; --p4-t:59.2; --p4-w:15.6; --p4-h:11.8;
+  /* STAND-IN plates, dark look: one hue per wall */
+  --wall-statue:linear-gradient(160deg,hsl(270 38% 30%),hsl(270 45% 14%));
+  --wall-ent:linear-gradient(160deg,hsl(12 55% 34%),hsl(12 60% 15%));
+  --wall-ophtho:linear-gradient(160deg,hsl(205 55% 32%),hsl(205 62% 14%));
+  --wall-neuropsych:linear-gradient(160deg,hsl(140 42% 28%),hsl(140 50% 12%));
+  --wall-pediatrics:linear-gradient(160deg,hsl(48 62% 34%),hsl(48 66% 15%));
 }
 :root[data-theme="light"]{
-  --hall-wide:url("../assets/hall/hall-light.jpg");
-  --hall-tall:url("../assets/hall/hall-light-tall.jpg");
-  --hall-fore-filter:none;
   --wk-out:url("../assets/hall/outside-light.jpg");
+  --stone-1:#d8cdb8; --stone-2:#bdb099;
+  --stone-edge:#a89b82;
 
-  --a1-l:3.5;  --a1-t:10.5; --a1-w:20; --a1-h:66.5;
-  --a2-l:28;   --a2-t:10.5; --a2-w:20; --a2-h:66.5;
-  --a3-l:52.2; --a3-t:10.5; --a3-w:20; --a3-h:66.5;
-  --a4-l:76.6; --a4-t:10.5; --a4-w:20; --a4-h:66.5;
-  --p1-l:5;    --p1-t:64; --p1-w:16.8; --p1-h:11.6;
-  --p2-l:29.6; --p2-t:64; --p2-w:16.8; --p2-h:11.6;
-  --p3-l:54;   --p3-t:64; --p3-w:16.8; --p3-h:11.6;
-  --p4-l:78.6; --p4-t:64; --p4-w:16.8; --p4-h:11.6;
+  /* STAND-IN plates, light look */
+  --wall-statue:linear-gradient(160deg,hsl(270 40% 82%),hsl(270 36% 66%));
+  --wall-ent:linear-gradient(160deg,hsl(12 62% 82%),hsl(12 55% 66%));
+  --wall-ophtho:linear-gradient(160deg,hsl(205 62% 82%),hsl(205 52% 64%));
+  --wall-neuropsych:linear-gradient(160deg,hsl(140 45% 80%),hsl(140 38% 62%));
+  --wall-pediatrics:linear-gradient(160deg,hsl(48 70% 80%),hsl(48 58% 62%));
 }
 
 /* ---------- page: the hall runs edge to edge, the rest keeps its measure ----------
@@ -98,70 +87,55 @@ body.hall-on .ambient{display:none}
 .wk-name{margin:0 0 var(--s-1);font-size:var(--fs-ui);font-weight:600;color:var(--ink-3);letter-spacing:.02em}
 .wk-text h1{margin:0;font-size:var(--fs-lg);color:var(--tx)}
 
-/* ---------- the hall painting box ----------
-   Plain: never taller than the painting is at its own width (aspect-ratio 3:2, height
-   clamped), so in a narrow or upright window every alcove and the floor strip stays in
-   view. Walk: the .hall-view box is the container instead (see .hall.walk below). */
-.wk-clip{
-  position:relative;width:100%;aspect-ratio:3/2;
-  max-height:calc(100svh - var(--hall-top,64px));min-height:420px;
-  container:hall / size;overflow:hidden;
-  background:linear-gradient(var(--bg-2),var(--bg));
+/* ---------- 1. the walls: the plain stack (every shape starts here) ----------
+   The clip box is just a container here; the stage is a grid of five plates. */
+.wk-clip{position:relative;width:100%;container:hall / inline-size;background:linear-gradient(var(--bg-2),var(--bg))}
+.hall-push{position:relative;transform-origin:var(--ox,50%) var(--oy,50%)}
+.hall-stage{
+  position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:var(--s-4);padding:var(--s-6);
 }
-.hall-push{position:absolute;inset:0;transform-origin:var(--ox,50%) var(--oy,50%)}
-.hall-stage{position:absolute;inset:0}
-
-/* The frame is the painting's own shape, covering the stage (capped so a very
-   wide window never crops the alcoves off the top). 28px of spare width is the
-   most any layer travels in parallax, so no edge ever shows. */
-.hall-stage{--fw:calc(min(max(100cqw,150cqh),208cqh) + 28px)}
-.hall-frame,.hall-back{
-  position:absolute;left:50%;top:50%;width:var(--fw);aspect-ratio:3/2;
+.hall-prism{display:contents}
+.wall{position:relative;aspect-ratio:3/2;border-radius:var(--r-lg);overflow:hidden;background:var(--stone-1)}
+.wall:first-child{grid-column:1/-1;justify-self:center;width:min(100%,640px)}
+/* the frame is the size container: every size on a wall is a share of the plate width (cqw) */
+.wall-frame{position:absolute;inset:0;background:var(--wall-bg);container:wf / inline-size}
+.wall[data-w="statue"]{--wall-bg:var(--wall-statue)}
+.wall[data-w="ent"]{--wall-bg:var(--wall-ent)}
+.wall[data-w="ophtho"]{--wall-bg:var(--wall-ophtho)}
+.wall[data-w="neuropsych"]{--wall-bg:var(--wall-neuropsych)}
+.wall[data-w="pediatrics"]{--wall-bg:var(--wall-pediatrics)}
+@container hall (min-width:1700px){
+  .hall-stage{grid-template-columns:repeat(4,minmax(0,1fr))}
 }
-/* The painting and its buttons move as ONE sheet, so a plaque never drifts off
-   its panel; the dust floats in front and carries the depth. */
-.hall-frame,.hall-back{transform:translate(calc(-50% + var(--mx,0)*-6px),calc(-50% + var(--my,0)*-6px))}
-
-/* 1. the painting */
-.hall-back{background:var(--hall-wide) center/cover no-repeat}
-
-/* the layers sharing the frame sit on the same alcove boxes */
-.hall [data-i="1"]{--l:var(--a1-l);--t:var(--a1-t);--w:var(--a1-w);--h:var(--a1-h);--pl:var(--p1-l);--pt:var(--p1-t);--pw:var(--p1-w);--ph:var(--p1-h)}
-.hall [data-i="2"]{--l:var(--a2-l);--t:var(--a2-t);--w:var(--a2-w);--h:var(--a2-h);--pl:var(--p2-l);--pt:var(--p2-t);--pw:var(--p2-w);--ph:var(--p2-h)}
-.hall [data-i="3"]{--l:var(--a3-l);--t:var(--a3-t);--w:var(--a3-w);--h:var(--a3-h);--pl:var(--p3-l);--pt:var(--p3-t);--pw:var(--p3-w);--ph:var(--p3-h)}
-.hall [data-i="4"]{--l:var(--a4-l);--t:var(--a4-t);--w:var(--a4-w);--h:var(--a4-h);--pl:var(--p4-l);--pt:var(--p4-t);--pw:var(--p4-w);--ph:var(--p4-h)}
-.hall .glow,.hall .veil,.hall .alcove{
-  position:absolute;left:calc(var(--l)*1%);top:calc(var(--t)*1%);
-  width:calc(var(--w)*1%);height:calc(var(--h)*1%);
+/* a narrow screen gets one wall per row, so the carved card keeps room for its lines */
+@container hall (max-width:900px){
+  .hall-stage{grid-template-columns:minmax(0,1fr)}
 }
 
-/* 2. lamp glow — dark theme only, one soft pool round each alcove's lamp */
-.hall-glow{pointer-events:none}
-.glow{
-  background:radial-gradient(ellipse 60% 34% at 50% 17%,rgba(255,196,110,.30),rgba(255,160,70,.10) 55%,transparent 80%);
-  transition:filter var(--dur-3,.2s);
-  animation:hallFlicker 7s linear infinite;
+/* The two boxes every plate shares, in percent of the frame. The niche is the arched
+   recess (x 36-64, y 8-62); the panel is the blank lower plate (x 32-68, y 66-88). The
+   subject button covers both (x 32-68, y 8-88) and its plaque sits on the panel. */
+/* STAND-IN: outlined boxes and the wall's name. Delete with the stand-in gradients. */
+.wall-frame::before{
+  content:"";position:absolute;left:36%;top:8%;width:28%;height:54%;box-sizing:border-box;
+  border:2px solid rgba(255,255,255,.55);border-radius:999px 999px 0 0;
 }
-.glow[data-i="2"]{animation-duration:9.3s;animation-delay:-2.1s}
-.glow[data-i="3"]{animation-duration:6.4s;animation-delay:-4.6s}
-.glow[data-i="4"]{animation-duration:8.1s;animation-delay:-1.3s}
-:root[data-theme="light"] .hall-glow .glow{display:none}
-/* a subject missing from the data (or locked): its alcove dimmed, that box only */
-.veil{background:var(--bg);opacity:.55;border-radius:var(--r-lg)}
-.hall:has(.alcove[data-i="1"]:is(:hover,:focus-visible)) .glow[data-i="1"],
-.hall:has(.alcove[data-i="2"]:is(:hover,:focus-visible)) .glow[data-i="2"],
-.hall:has(.alcove[data-i="3"]:is(:hover,:focus-visible)) .glow[data-i="3"],
-.hall:has(.alcove[data-i="4"]:is(:hover,:focus-visible)) .glow[data-i="4"]{filter:brightness(1.5)}
-@keyframes hallFlicker{
-  0%{opacity:.86} 11%{opacity:.97} 23%{opacity:.8} 34%{opacity:.93} 47%{opacity:.88}
-  58%{opacity:1} 69%{opacity:.82} 83%{opacity:.95} 100%{opacity:.86}
+.wall-frame::after{
+  content:attr(data-name);position:absolute;left:32%;top:66%;width:36%;height:22%;box-sizing:border-box;
+  border:2px solid rgba(255,255,255,.55);padding:3px 6px;text-align:left;
+  font:600 11px/1.1 var(--font-ui,system-ui,sans-serif);letter-spacing:.08em;text-transform:uppercase;
+  color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.7);pointer-events:none;
 }
+:root[data-theme="light"] .wall-frame::before,:root[data-theme="light"] .wall-frame::after{border-color:rgba(0,0,0,.5)}
+:root[data-theme="light"] .wall-frame::after{color:#111;text-shadow:none}
 
-/* 3. dust — transform only; it hangs in the air in front of the paint */
-.hall-dust{
-  position:absolute;inset:-12px;pointer-events:none;
-  transform:translate(calc(var(--mx,0)*10px),calc(var(--my,0)*10px));
-}
+.wall-card{position:absolute;left:32%;top:66%;width:36%;height:22%}
+/* a subject missing from the data (or locked): its whole wall dimmed */
+.veil{position:absolute;inset:0;background:var(--bg);opacity:.55;pointer-events:none}
+
+/* 2. dust — transform only; it hangs in the air in front of the wall */
+.hall-dust{position:absolute;inset:-12px;pointer-events:none}
 .hall-dust i{
   position:absolute;left:var(--x);top:var(--y);width:var(--s);height:var(--s);
   border-radius:var(--r-lg);background:var(--gold);opacity:.45;
@@ -173,76 +147,72 @@ body.hall-on .ambient{display:none}
   to{transform:translate(var(--dx),var(--dy))}
 }
 
-/* 4. alcoves — the button is the whole niche; the plaque is placed on its panel */
-.hall-alcoves{pointer-events:none}
+/* 3. subject buttons — the button is niche + panel; the plaque is placed on the panel */
 .alcove{
-  pointer-events:auto;display:block;padding:0;margin:0;border:0;background:none;
-  font:inherit;color:var(--tx);cursor:pointer;overflow:hidden;
+  position:absolute;left:32%;top:8%;width:36%;height:80%;
+  display:block;padding:0;margin:0;border:0;background:none;
+  font:inherit;color:var(--tx);cursor:pointer;overflow:clip;
   border-radius:var(--r-lg);
 }
 .alcove[aria-disabled="true"]{cursor:default}
 .alcove:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
 .alcove:focus-visible .plaque{outline:2px solid var(--tx);outline-offset:2px}
 
-/* The plaque is opaque (--card) so its text never depends on the paint behind it.
-   Its box comes from --pl/--pt/--pw/--ph (painting %) turned into this button's %.
+/* The plaque is opaque (--card) so its text never depends on the paint behind it. It
+   fills the panel box: panel y 66-88 inside the button's y 8-88 = 72.5% down, 27.5% high.
    Hover lifts it with the separate `translate` property, so it never fights the
    transform the walk-in writes. */
 .plaque{
-  position:absolute;box-sizing:border-box;
-  left:calc((var(--pl) - var(--l)) / var(--w) * 100%);
-  top:calc((var(--pt) - var(--t)) / var(--h) * 100%);
-  width:calc(var(--pw) / var(--w) * 100%);
-  height:calc(var(--ph) / var(--h) * 100%);
+  position:absolute;box-sizing:border-box;left:0;top:72.5%;width:100%;height:27.5%;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:clamp(2px,.4cqw,6px);text-align:center;overflow:hidden;
-  padding:clamp(2px,.4cqw,8px) clamp(4px,.8cqw,12px);
+  gap:.5cqw;text-align:center;overflow:hidden;min-width:0;
+  padding:.6cqw 1cqw;
   background:var(--card);color:var(--tx);
   border:1px solid var(--line-2);border-radius:var(--r-md);
   transition:translate .2s var(--ease-soft);
 }
 .alcove:not([aria-disabled="true"]):hover .plaque{translate:0 -2px}
+/* The panel is 36 cqw wide and 14.67 cqw high; every size below is a share of that, so the
+   card fits at any wall width. The longest name (NEUROPSYCHIATRY) is about 11 em wide. */
 .pl-name{
-  font-family:var(--font-display);font-weight:700;font-size:clamp(12px,1.1cqw,14px);
-  letter-spacing:.045em;text-transform:uppercase;white-space:nowrap;
+  font-family:var(--font-display);font-weight:700;font-size:max(9px,2.3cqw);line-height:1.15;
+  letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;max-width:100%;
 }
-.pl-row{display:flex;align-items:center;gap:clamp(4px,.6cqw,10px);justify-content:center}
-.pl-meta{display:flex;flex-direction:column;align-items:flex-start;text-align:left}
-/* figures: the 1180-wide hall is drawn at about 0.87 of these pixels, so the floors are
-   set so the smallest figure still lands near 12 px on screen */
-.pl-acc{font-size:clamp(14px,1.25cqw,16px);font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
-.pl-count{font-size:14px;font-weight:600;color:var(--ink-3);white-space:nowrap}
-.plaque .ring{width:clamp(40px,3.3cqw,44px)!important;height:clamp(40px,3.3cqw,44px)!important;flex:none}
+.pl-row{display:flex;align-items:center;gap:1.2cqw;justify-content:center;max-width:100%}
+.pl-meta{display:flex;flex-direction:column;align-items:flex-start;text-align:left;min-width:0}
+.pl-acc{font-size:max(9px,2.1cqw);font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.pl-count{font-size:max(9px,1.8cqw);line-height:1.2;font-weight:600;color:var(--ink-3);white-space:nowrap}
+.plaque .ring{width:max(22px,5.6cqw)!important;height:max(22px,5.6cqw)!important;flex:none}
 .plaque .ring svg{width:100%;height:100%}
-.plaque .ring .rv{font-size:clamp(12px,1cqw,13px)}
+.plaque .ring .rv{font-size:max(7px,1.8cqw)}
 .plaque .ring .rv span{font-size:.75em!important}
 .alcove.locked .plaque{border-style:dashed}
-/* narrow halls: "12/345" without the word, the label still says it in full */
-@container hall (max-width:1100px){.pl-w{display:none}}
-/* wide halls keep the word, so the figure steps down one px to stay inside the plate */
-@container hall (min-width:1101px){.pl-count{font-size:13px}}
+/* a small plate: "12/345" without the word, the label still says it in full */
+@container wf (max-width:420px){.pl-w{display:none}}
 
-/* 5. near columns — only if a picture is supplied; never catches a click */
+/* 4. near columns — only if a picture is supplied; never catches a click */
 .hall-fore{
   position:absolute;inset:-28px;pointer-events:none;
   background:var(--hall-fore) center/cover no-repeat;filter:var(--hall-fore-filter);
-  transform:translate(calc(var(--mx,0)*-22px),calc(var(--my,0)*-22px));
 }
 
-/* 6. the Clepsydra's greeting — her existing picture, bottom left of the hall. The
+/* 5. the Clepsydra's greeting — her existing picture, bottom left of the hall. The
    welcome line itself lives on the outside painting (.wk-text). */
 .hall-greet{
   position:absolute;left:max(var(--s-10),4cqw);bottom:var(--s-4);max-width:60%;
   display:flex;align-items:flex-end;gap:var(--s-6);pointer-events:none;
 }
 .hall-clep{display:block;height:min(180px,16cqh);width:auto;order:-1}
+/* plain stack: she stands in the flow under the walls, never over a card */
+.hall:not(.walk) .hall-stage>.hall-greet{position:static;grid-column:1/-1;justify-self:start;padding:var(--s-2) var(--s-4)}
+.hall:not(.walk) .hall-clep{height:84px}
 /* She stands in the hall, so the corner figure steps aside while the hall shows. */
 body.hall-clep .clep .cl-body{visibility:hidden}
 
 /* ---------- the walk shape ---------- */
 .hall.walk .hall-view{
   height:calc(100svh - var(--hall-top,64px));min-height:420px;
-  container:hall / size;overflow:hidden;
+  container:hall / size;overflow:clip;
   background:linear-gradient(var(--bg-2),var(--bg));
 }
 /* the outside painting is sized and placed in pixels by hall.js (cover, doorway
@@ -252,25 +222,37 @@ body.hall-clep .clep .cl-body{visibility:hidden}
   background:var(--wk-out) 0 0/100% 100% no-repeat;
 }
 .hall.walk .wk-clip{
-  position:absolute;inset:0;width:auto;aspect-ratio:auto;max-height:none;min-height:0;
-  container:none;overflow:visible;background:none;
+  position:absolute;inset:0;width:auto;container:none;overflow:visible;background:none;
 }
-/* Where the pulled-back hall is shorter than the view, the strip above and below it is
-   the painting itself, blurred and darkened, never a flat colour. It lies under every
-   other layer, so it only shows once the outside painting is hidden (hall open). */
-.hall.walk .hall-view::before{
-  content:"";position:absolute;inset:-60px;pointer-events:none;
-  background:var(--hall-wide) center/cover no-repeat;
-  filter:blur(18px) brightness(1) saturate(1);
+.hall.walk .hall-push{position:absolute;inset:0}
+/* The eye is at the stage's middle: every wall carries its own perspective(--ring-r) in its
+   transform, NOT a shared preserve-3d prism (Chrome's 3D sort split the face and left a 6px hole
+   at the view edge mid-turn, measured). The walls never overlap seen from the middle, so no sort is needed; a wall is a face 1.3x the plate's height, centred on the stage. */
+.hall.walk .hall-stage{position:absolute;inset:0;display:block;padding:0;gap:0}
+.hall.walk .hall-prism{display:block;position:absolute;inset:0}
+.hall.walk .wall{
+  position:absolute;left:50%;top:50%;
+  width:var(--wf,100%);height:calc(var(--wf,100%) / 1.5 * 1.3);aspect-ratio:auto;
+  margin-left:calc(var(--wf,0px) / -2);margin-top:calc(var(--wf,0px) / 1.5 * 1.3 / -2);
+  border-radius:0;overflow:visible;justify-self:auto;
+  background:linear-gradient(var(--stone-1),var(--stone-2) 50%,var(--stone-1));
+  backface-visibility:hidden;
 }
-/* will-change only on the two moving layers, only while the section is pinned */
+.hall.walk .wall:first-child{grid-column:auto}
+/* the plate: 3:2, centred in the taller face */
+.hall.walk .wall-frame{inset:11.5385% 0}
+/* The stone strip on each face edge hides the hairline where two faces meet. It is painted
+   INSIDE the face (an inset shadow, no child sticking out: a child past a face's edge broke
+   Chrome's 3D depth sort, measured), so hall.js makes every face 10px wider than the view. */
+.hall.walk .wall,.hall.walk .wall-frame{box-shadow:inset 5px 0 0 var(--stone-edge),inset -5px 0 0 var(--stone-edge)}
+/* will-change only on the moving layers, only while the section is pinned */
 .hall.walk.pinned .wk-out,.hall.walk.pinned .hall-stage{will-change:transform}
 .hall.walk.pinned .wk-clip{will-change:clip-path}
 /* her picture stays hidden until the door is passed, so the corner figure and she
    are never both on screen */
 .hall.walk:not(.open) .hall-clep{visibility:hidden}
 /* once the doorway has filled the screen the outside is fully behind the hall; hiding it
-   keeps its enlarged doorway glow from showing as bands round a pulled-back hall */
+   keeps its enlarged doorway glow from showing as bands */
 .hall.walk.open .wk-out{visibility:hidden}
 
 /* the bronze doors: a layer placed and scaled like .wk-out by hall.js, a box on the
@@ -297,69 +279,31 @@ body.hall-clep .clep .cl-body{visibility:hidden}
 :root[data-theme="light"] .wk-leaf{filter:brightness(1.5) contrast(.76) sepia(.85) saturate(1.7)}
 .hall.walk.pinned .wk-leaf{will-change:transform}
 @media print{.wk-doors{display:none}}
-/* clear of the lip the rest of home laps over the hall */
-.hall.walk .hall-greet{bottom:calc(var(--s-4) + var(--wk-lap))}
-
-/* ---------- upright windows: the tall 2:3 painting, 2x2 alcoves ----------
-   Same variables, tall numbers (percent of the 1024x1536 painting). Order is
-   still 1 ent, 2 ophtho, 3 neuropsych, 4 pediatrics: top row, then bottom row. */
-@media (orientation:portrait){
-  :root{
-    --a1-l:2.4;  --a1-t:8.8;  --a1-w:46.2; --a1-h:32.4;
-    --a2-l:51.5; --a2-t:8.8;  --a2-w:46.2; --a2-h:32.4;
-    --a3-l:2.4;  --a3-t:43.6; --a3-w:46.2; --a3-h:36;
-    --a4-l:51.5; --a4-t:43.6; --a4-w:46.2; --a4-h:36;
-    --p1-l:5.5;  --p1-t:37.4; --p1-w:40;   --p1-h:3.8;
-    --p2-l:55;   --p2-t:37.4; --p2-w:40;   --p2-h:3.8;
-    --p3-l:5.5;  --p3-t:72.8; --p3-w:40;   --p3-h:5.2;
-    --p4-l:55;   --p4-t:72.8; --p4-w:40;   --p4-h:5.2;
-  }
-  :root[data-theme="light"]{
-    --a1-l:2.9;  --a1-t:6.5;  --a1-w:45.4; --a1-h:36.6;
-    --a2-l:51;   --a2-t:6.5;  --a2-w:45.9; --a2-h:36.6;
-    --a3-l:2.9;  --a3-t:46.7; --a3-w:45.4; --a3-h:40;
-    --a4-l:51;   --a4-t:46.7; --a4-w:45.9; --a4-h:40;
-    --p1-l:8;    --p1-t:35.9; --p1-w:36;   --p1-h:6.2;
-    --p2-l:56;   --p2-t:35.9; --p2-w:36;   --p2-h:6.2;
-    --p3-l:8;    --p3-t:76.4; --p3-w:36;   --p3-h:6.2;
-    --p4-l:56;   --p4-t:76.4; --p4-w:36;   --p4-h:6.2;
-  }
-  /* The frame is 2:3 and covers the stage, capped at 108% of the width so a very
-     narrow window never crops the outer alcoves away. */
-  .hall-stage{--fw:calc(min(max(100cqw,66.667cqh),108cqw) + 28px)}
-  .hall-frame,.hall-back{aspect-ratio:2/3}
-  .hall-back,.hall.walk .hall-view::before{background:var(--hall-tall) center/cover no-repeat}
-  .wk-clip{aspect-ratio:2/3}
-  /* the tall niches hang their lamp lower than the wide ones */
-  .glow{background:radial-gradient(ellipse 60% 30% at 50% 27%,rgba(255,196,110,.30),rgba(255,160,70,.10) 55%,transparent 80%)}
-  /* The tall plaque panels are shallow: name and figures side by side. The stage is
-     not pulled back with the tall painting (scale 1), so the type is set in plain
-     pixels here; the .hall prefix outranks warm.css section 3, whose bigger sizes
-     were made for the pulled-back wide painting. */
-  .hall .plaque{flex-direction:row;gap:clamp(6px,1.3cqw,14px);padding:clamp(2px,.3cqw,4px) clamp(4px,.8cqw,10px)}
-  .hall .plaque .pl-name{font-size:clamp(12px,1.6cqw,17px);letter-spacing:.06em}
-  .hall .plaque .pl-acc{font-size:clamp(12px,1.55cqw,16px)}
-  .hall .plaque .pl-count{font-size:clamp(11px,1.4cqw,14px)}
-  .hall .plaque .ring{width:clamp(28px,3.6cqw,40px)!important;height:clamp(28px,3.6cqw,40px)!important}
-  .hall .plaque .ring .rv{font-size:clamp(8px,1cqw,11px)}
-  /* The floor under the lower plaques is shallow here (shallower still in the light
-     painting), so she is smaller, and she stands behind the plaque layer: if the
-     floor runs out she goes behind a plaque, never over its text. Her picture is
-     only resized, never altered. */
-  .hall-greet{z-index:0}
-  .hall-alcoves{z-index:1}
-  .hall-clep{height:min(96px,8.5cqh)}
+/* The floor strip (frame y 88-100, the plate's lowest 12 %) is H/2 - .2533 wf high at the view's
+   foot; she stands in it, bottom left, clear of the panel and the niche. */
+.hall.walk .hall-greet{left:12px;bottom:6px;max-width:none}
+.hall.walk .hall-clep{height:clamp(64px,calc(50cqh - .2533 * var(--wf,1230px) - 14px),120px)}
+/* Her speech bubble (the corner furniture's .cl-say): while she stands in the hall the corner
+   figure is hidden and the bubble is moved clear of the panel. Landscape: to the right of the
+   panel, in the free wall. Portrait: no room beside the panel, so into the floor strip. */
+body.hall-clep .clep{left:auto!important;top:auto!important;right:12px!important;bottom:8px!important}
+body.hall-clep .clep .cl-body{display:none}
+body.hall-clep .clep .cl-say{max-width:min(270px,calc(50vw - .18 * max(100vw,150vh) - 44px))}
+@media (max-aspect-ratio:1/1){
+  body.hall-clep .clep .cl-col{flex-direction:row-reverse;align-items:flex-end}
+  body.hall-clep .clep .cl-say{max-width:min(270px,calc(100vw - 280px));max-height:calc(50vh - .2533 * max(100vw,150vh) - 14px);overflow:auto}
 }
+/* the plain stack has no pin: her bubble would float over the cards, so it stays quiet there */
+body.hall-clep:not(:has(.hall.walk)) .clep .cl-say{display:none}
 
 /* ---------- motion ---------- */
 .hall.pushing .hall-push{transform:scale(1.9);transition:transform .45s var(--ease-soft)}
 .hall.pushing .alcove:not(.pick) .plaque{translate:0 300%;transition:translate .3s var(--ease-soft)}
-.hall:not(.live) .glow,.hall:not(.live) .hall-dust i{animation-play-state:paused}
+.hall:not(.live) .hall-dust i{animation-play-state:paused}
 
 @media (prefers-reduced-motion:reduce){
   .hall,.hall *{animation:none!important;transition:none!important}
   .hall-dust{display:none}
-  .hall-back,.hall-frame,.hall-fore,.hall-dust{--mx:0!important;--my:0!important}
 }
 
 }/* end @media screen */
