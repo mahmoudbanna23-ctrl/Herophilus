@@ -38,6 +38,9 @@
   const link=document.createElement('link');
   link.rel='stylesheet'; link.href='css/hall.css';
   document.head.appendChild(link);
+  const rooms=document.createElement('link');
+  rooms.rel='stylesheet'; rooms.href='css/rooms.css';
+  document.head.appendChild(rooms);
   const warm=document.createElement('link');
   warm.rel='stylesheet'; warm.href='css/warm.css';
   document.head.appendChild(warm);
@@ -184,6 +187,10 @@
     }
     return r;
   };
+  /* Painted rooms wrap syncFilm once more, so rooms.js loads after the wrap above. */
+  const roomsJs=document.createElement('script');
+  roomsJs.src='js/rooms.js';
+  document.body.appendChild(roomsJs);
 
   const _vHome=vHome;
   vHome=function(p){
