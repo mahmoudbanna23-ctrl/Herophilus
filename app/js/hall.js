@@ -74,6 +74,7 @@
   let lastWall=0;         // the wall (0..4) the student left from; startWalk lands there on return
   let hallObs=null;       // watches the hall to pause loops and swap the Clepsydra
   let walk=null;          // the live walk-in: {kill()}
+  let gateSeen=false;     // the opening gate has started once in this page life (memory only, no storage)
   let buildToken=0;       // bumped on every kill; a late async upgrade checks it
   let libState='idle';    // 'idle' | 'loading' | 'ok' | 'fail'
   let libPromise=null;
@@ -147,9 +148,14 @@
      seen empty. They exist only while motion may still start: reduced motion and a
      failed library never get them, and the 3 s fallback takes them out again (a shut
      door that cannot open is forbidden). */
+  /* Each leaf is a box (it turns, and carries the ruin overlay) round its painting. The
+     .wk-fx layer beside the door box holds the grit and dust of the opening gate; the
+     door box has an arch clip that would cut them. */
   const DOORS_HTML='<div class="wk-doors" aria-hidden="true"><div class="wk-dbox"><i class="wk-shade"></i>'+
-    '<img class="wk-leaf l" src="assets/hall/door-l.png" alt="">'+
-    '<img class="wk-leaf r" src="assets/hall/door-r.png" alt=""></div></div>';
+    '<div class="wk-leaf l"><img src="assets/hall/door-l.png" alt=""></div>'+
+    '<div class="wk-leaf r"><img src="assets/hall/door-r.png" alt=""></div></div>'+
+    '<div class="wk-fx">'+[8,17,26,35,44,53,62,71,80,90].map(x=>'<i class="g" style="left:'+x+'%"></i>').join('')+
+    '<i class="p a"></i><i class="p b"></i></div></div>';
   function dropDoors(hall){
     const d=hall&&hall.querySelector('.wk-doors');
     if(d) d.remove();
@@ -170,6 +176,8 @@
     dbox.style.width=bw.toFixed(2)+'px'; dbox.style.height=bh.toFixed(2)+'px';
     dbox.style.perspective=(bw*2.4).toFixed(0)+'px';
     dbox.style.clipPath='inset(0 round '+(bw/2).toFixed(2)+'px '+(bw/2).toFixed(2)+'px 0 0 / '+bry.toFixed(2)+'px '+bry.toFixed(2)+'px 0 0)';
+    const fx=doors.querySelector('.wk-fx');   // same box, no clip; --u = 1 % of the door width
+    if(fx){ Object.assign(fx.style,{left:dbox.style.left,top:dbox.style.top,width:dbox.style.width,height:dbox.style.height}); fx.style.setProperty('--u',(bw/100).toFixed(3)+'px'); }
   }
   /* Before the walk: the outside painting is a screen-tall block (background cover,
      centred across, 56% down), and the leaves sit on its doorway there. */
@@ -430,7 +438,8 @@
 
     const P={p:0};            // walk-in progress, 0..1
     const RG={v:0};           // where the ring stands: 0 = wall 0 faces you .. 4 = wall 4; 0.5 = half-way to wall 1
-    const DR={a:0};           // door swing, 0 shut .. 1 fully open (the first beat, before the walk-in)
+    const DR={l:0,r:0};       // door swing per leaf, 0 shut .. 1 fully open; written only by the gate
+    let gateDone=false;       // until the gate has ended, apply() holds the walk-in and ring at 0
     const SWING=100;          // degrees of the open leaf; past 90 it is edge-on and hidden
     let shown=true;           // are the leaves currently displayed
     const G={};               // geometry, rebuilt on every refresh
@@ -443,8 +452,8 @@
        preserve-3d prism: its depth sort split the face at the view edge). Only
        the wall in view and its neighbours stand on the ring (|i-R| <= 1); the others are
        parked flat, off to the left, so the park never moves. */
-    function placeRing(){
-      const R=RG.v, r=G.r, wf=G.wf;
+    function placeRing(R){
+      const r=G.r, wf=G.wf;
       for(let i=0;i<wallEls.length;i++){
         wallEls[i].style.transform=Math.abs(i-R)<=1.0001
           ?'perspective('+r.toFixed(2)+'px) translateZ('+r.toFixed(2)+'px) rotateY('+((i-R)*STEP).toFixed(3)+'deg) translateZ('+(-r).toFixed(2)+'px)'
@@ -507,21 +516,23 @@
        last part of the growth is the quick part of the scroll (u = p^1.5), so the
        enlarged outside painting is on screen for as little time as possible. */
     function apply(){
-      const ang=DR.a*SWING, vis=DR.a<1;
+      const vis=DR.l<1||DR.r<1;
       if(vis!==shown){shown=vis;doors.style.visibility=vis?'':'hidden'}
       if(vis){
-        leafL.style.transform='rotateY('+ang.toFixed(2)+'deg)';
-        leafR.style.transform='rotateY('+(-ang).toFixed(2)+'deg)';
-        shade.style.transform='scaleY('+(1-DR.a).toFixed(3)+')';   /* the interior glaze shrinks to the threshold as the leaves open */
+        leafL.style.transform='rotateY('+(DR.l*SWING).toFixed(2)+'deg)';
+        leafR.style.transform='rotateY('+(-DR.r*SWING).toFixed(2)+'deg)';
+        shade.style.transform='scaleY('+(1-(DR.l+DR.r)/2).toFixed(3)+')';   /* the interior glaze shrinks to the threshold as the leaves open */
       }
-      const u=Math.pow(P.p,1.5);
+      const pp=gateDone?P.p:0;      // the gate holds the scene at the door; the scrub catches up when it ends
+      const u=Math.pow(pp,1.5);
       const so=Math.pow(G.S,u);
       setOut(so);
       setStage(Math.min(1,G.R*so));
-      placeRing();
+      placeRing(gateDone?RG.v:0);
       clip.style.clipPath=u>=1?'none':clipFor(so);
       const f=so-1;
-      setTx((G.tr.x-G.Px)*f); setTy((G.tr.y-G.Py)*f);      const open=P.p>=.985;
+      setTx((G.tr.x-G.Px)*f); setTy((G.tr.y-G.Py)*f);
+      const open=pp>=.985;
       if(open!==st.gate){
         st.gate=open;
         hall.classList.toggle('open',open);
@@ -532,14 +543,13 @@
 
     layout();
 
-    /* The scrubbed timeline: the doors swing open (the first beat), then 2 units of
-       walk-in, then four turns of the ring (.6 turn + .3 hold each). Labels w0..w4 mark
-       the walls: w0 as the walk-in ends, wk as turn k ends. Eased "none" except the door
-       swing. Each plaque rises and its ring draws as its wall arrives. */
-    const T0=.9, TW=T0+2, TURN=.6, HOLD=.3;
+    /* The scrubbed timeline: 2 units of walk-in, then four turns of the ring (.6 turn + .3
+       hold each). Labels w0..w4 mark the walls: w0 as the walk-in ends, wk as turn k ends.
+       Eased "none". Each plaque rises and its ring draws as its wall arrives. The doors are
+       not in it: the gate (below) opens them on its own clock. */
+    const TW=2, TURN=.6, HOLD=.3;
     const tl=g.timeline({paused:true,defaults:{ease:'none'}});
-    tl.to(DR,{a:1,duration:T0,ease:'power2.inOut',onUpdate:apply},0);
-    tl.to(P,{p:1,duration:2,onUpdate:apply},T0);
+    tl.to(P,{p:1,duration:2,onUpdate:apply},0);
     tl.addLabel('w0',TW);
     for(let k=1;k<=4;k++){
       const t0=TW+(k-1)*(TURN+HOLD);
@@ -587,10 +597,58 @@
       scrub:true,animation:depthTween,invalidateOnRefresh:true
     });
 
+    /* The gate: a paused clock of its own (~2.4 s, never scrubbed, never locks scroll). The
+       ruined doors strain, stall, one leaf drags, then both swing. It starts on the first
+       input or 0.8 s after the walk is ready; any input while it plays runs it five times
+       faster. Until it ends apply() holds the scene at the door; then the scrub catches up
+       to wherever the page is scrolled. Back from a subject, a scrolled page, or a gate
+       already seen in this page life: doors set open, no gate. */
+    const gate=g.timeline({paused:true,id:'gate',defaults:{ease:'none'},onComplete:endGate});
+    const fx=doors.querySelector('.wk-fx');
+    const dd=(t,o)=>gate.to(DR,Object.assign({onUpdate:apply},o),t);
+    // 1. strain 0-.5: the leaves rock about 1.5 deg twice; plate and doors jitter; grit falls
+    dd(0,{l:.015,r:.013,duration:.125,ease:'sine.inOut'}); dd(.125,{l:.004,r:.006,duration:.125,ease:'sine.inOut'});
+    dd(.25,{l:.016,r:.015,duration:.125,ease:'sine.inOut'}); dd(.375,{l:.01,r:.008,duration:.125,ease:'sine.inOut'});
+    [[1.5,-1],[-1,1.5],[2,.5],[-1.5,-1],[1,-.5],[-2,1],[1,1.5],[0,0]].forEach((v,i)=>gate.to([out,doors],{x:v[0],y:v[1],duration:.0625},i*.0625));
+    if(fx){
+      fx.querySelectorAll('.g').forEach((s,i)=>{
+        const t=i*.045+((i*7)%3)*.02;
+        gate.fromTo(s,{yPercent:0},{yPercent:4000+(i%4)*600,duration:.55+(i%3)*.08,ease:'power1.in'},t);
+        gate.to(s,{opacity:.9,duration:.06},t);
+        gate.to(s,{opacity:0,duration:.18},t+.4);
+      });
+      // dust: the first puff at the threshold as the leaves slip shut, the second as the left one drags
+      const puff=(p,t,s1,fade)=>{
+        gate.fromTo(p,{scale:.35},{scale:s1,duration:.8,ease:'power2.out'},t);
+        gate.to(p,{opacity:.8,duration:.1},t);
+        gate.to(p,{opacity:0,duration:fade},t+.2);
+      };
+      puff(fx.querySelector('.p.a'),.55,1.5,.6); puff(fx.querySelector('.p.b'),.95,1.8,.7);
+    }
+    // 2. stall .5-.8: the leaves slip back shut
+    dd(.5,{l:0,r:0,duration:.12,ease:'power3.in'});
+    // 3. .8-1.6: the left leaf drags to 30 %, the right stays shut
+    dd(.8,{l:.3,duration:.8,ease:'power2.inOut'});
+    // 4. 1.6-2.4: both swing, the right 0.25 s late
+    dd(1.6,{l:1,duration:.8,ease:'power2.inOut'}); dd(1.85,{r:1,duration:.55,ease:'power2.inOut'});
+
+    let started=false, gateTimer=0;
+    const inputs=['wheel','touchstart','keydown','pointerdown'];
+    const unlisten=()=>{ inputs.forEach(n=>removeEventListener(n,onInput,true)); clearTimeout(gateTimer) };
+    function onInput(){ if(!started) startGate(); else if(!gateDone) gate.timeScale(5) }
+    function startGate(){ if(started) return; started=true; gateSeen=true; clearTimeout(gateTimer); gate.play() }
+    function endGate(){ gateDone=true; unlisten(); apply() }
+
     const relayout=()=>{layout();apply()};
     ST.addEventListener('refreshInit',relayout);
+    if(landed||y0>0||(window.scrollY||0)>2||gateSeen){
+      DR.l=DR.r=1; gateDone=true; started=true;
+    }else{
+      inputs.forEach(n=>addEventListener(n,onInput,{capture:true,passive:true}));
+    }
     apply();
     ST.refresh();
+    if(!gateDone) gateTimer=setTimeout(()=>{ if(!started) startGate() },800);
 
     const jumpTo=yy=>{
       window.scrollTo(0,yy);
@@ -626,6 +684,8 @@
         hall.removeEventListener('focusin',onFocus);
         try{depth.kill(true)}catch(e){}
         try{pin.kill(true)}catch(e){}
+        unlisten();
+        try{gate.kill()}catch(e){}
         try{tl.kill();depthTween.kill()}catch(e){}
         doors.remove();
         hall.classList.remove('walk','pinned','open');
