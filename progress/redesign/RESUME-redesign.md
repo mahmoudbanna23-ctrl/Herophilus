@@ -619,3 +619,33 @@ then step 3 (ring spike with stand-in walls) and **judge the turn before buildin
 Paintings may start 2026-10-13: statue dark first, shown to the owner for a yes before the other
 walls. Owner picked "Turn on the spot". Open owner questions, one at a time, after he tests: mascot
 bubble over row ends; bubble colour; upright-iPad notes sheet size.
+
+## 2026-10-12 LATE — plan steps 1-3 built; the turn waits for the owner's eye
+
+Supersedes "Nothing of it is built yet" in the section above. Branch `redesign/factory-2026-10`, pushed.
+
+- **Step 1, strip — DONE `735062cd`** (`warm.css` only). Each chip opens alone on hover or keyboard
+  focus. Not tested: a real touch screen, device scale factor 2. Ask the owner to tap it on the iPad.
+- **Step 2, wall prompts — DONE `7777eb15`.** `paint/prompts-walls.md` (ten sections) and the two paint
+  scripts take `PROMPTS_FILE` / `COMMON_SECTION`; `paint-room.sh` also takes `EXTRA_REF` (the bust).
+  Commands are at the top of `prompts-walls.md`. Nothing painted.
+- **Step 3, ring spike — BUILT `3c30a85`** (`hall.js`, `hall.css`; CSS stand-in walls, no plates).
+  Independent check: PASS WITH FAULTS. Reports and stills: `D:\scratch 2026\redesign\ring8\`
+  (`report-debug.md`, `report-refute.md`, `out3\` mid-turn, `out4\` at rest and fallback).
+  - **Deviation from plan part D, measured necessity:** no shared `preserve-3d` prism. Each wall
+    carries `perspective(r) translateZ(r) rotateY((i-R)*72deg) translateZ(-r)` itself. The shared prism
+    made Chrome drop a strip of the facing wall mid-turn at 1180x820. Do not go back to the prism.
+  - **Probe that sees a hole:** paint `.hall-view` magenta and count magenta over the stage. A
+    palette test alone misses it. Wall bounding rects are useless mid-turn; judge by pixels.
+  - **Faults carried into step 4:** (1) 820x1180, the mascot's bubble shows a horizontal scrollbar;
+    (2) 820x1180 fallback is one column, the plan asks 2x2 (the repair moved the breakpoint to 900px
+    because the plaque overflowed; fix the plaque, restore 2x2); (3) mid-turn her bubble crosses a box
+    corner and 1-2 stray background pixels show, passing moment only.
+  - Not tested: light theme, forced no-3D, slow load, touch.
+- **NEXT:** the owner tries the turn in the trial copy and says yes or no. Only then step 4 (gate,
+  statue text, carved plaque; fresh Sonnet builder; its brief carries faults 1-2). Two builder tries
+  on one job, then a different role, never a third.
+- **2026-10-13 paintings (cap 8 a day):** `wall-statue-dark` first, with `EXTRA_REF`; a looker
+  describes it; the owner says yes or redo before the four other dark walls. Still owed:
+  `room-neuropsych-light`.
+- No merge to `main`, no Pages upload, the live `Herophilus` folder untouched.
