@@ -8,15 +8,15 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 name="$1"; size="1536x1024"
-src="prompts-rooms.md"
-id="${name#room-}"; id="${id%-light}"
-ref="room-$id-dark.png"
+src="${PROMPTS_FILE:-prompts-rooms.md}"; common="${COMMON_SECTION:-common-room-light}"
+id="${name#*-}"; id="${id%-light}"
+ref="${name%%-*}-$id-dark.png"
 grep -qx "## $name" "$src" || { echo "no section '## $name' in $src" >&2; exit 1; }
 [ -e "$name.png" ] && { echo "$name.png exists; rename it or pick another name" >&2; exit 1; }
 [ -f "$ref" ] || { echo "reference $ref not found" >&2; exit 1; }
 
 section() { awk -v n="$1" '$0=="## "n{f=1;next} /^## /{f=0} f' "$src"; }
-{ section "$name"; echo; section common-room-light; } > "prompt-$name.txt"
+{ section "$name"; echo; section "$common"; } > "prompt-$name.txt"
 
 busy() {
   powershell -NoProfile -Command "@(Get-CimInstance Win32_Process | Where-Object { \$_.Name -eq 'codex.exe' -and \$_.CommandLine -like '* exec *' }).Count" | tr -d '\r '
