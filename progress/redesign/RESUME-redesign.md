@@ -649,3 +649,34 @@ Supersedes "Nothing of it is built yet" in the section above. Branch `redesign/f
   describes it; the owner says yes or redo before the four other dark walls. Still owed:
   `room-neuropsych-light`.
 - No merge to `main`, no Pages upload, the live `Herophilus` folder untouched.
+
+## 2026-10-12 NIGHT - plan step 4 built and saved; paintings are next
+
+- Owner tried the ring turn and said yes ("turn feels right"). Step 3 is closed.
+- Step 4a, the gate: commit 6dd14c15. Plays once by itself (about 2.4 s), any input hurries it,
+  scroll is never locked, skipped on return. Independent check PASS.
+- Step 4b, statue text + carved lettering + four leftovers: commit f0d8e5f4. Independent check
+  PASS WITH FAULTS. Reports: D:/scratch 2026/redesign/carve10/report-carve.md and report-refute.md.
+- Both pushed to the private remote. No merge, no upload, live app untouched.
+
+Faults carried into step 5 (the builder who wires the plates fixes them in the same pass):
+- reduced motion, 820x1180, dark: ring figure on a plaque is 6px, its percent sign 4.5px at 3.55:1.
+  Raise the floors.
+- focus ring contrast lowest on pediatrics dark, 3.36:1.
+- plain stacked layout at 820 wide: the left strip touches the first subject tile; tile text small.
+- a looker read the lettering as flat, not cut, and saw no distinct button on subject walls (the
+  whole plaque is the button). Judge again on real plates before changing anything.
+- the max-aspect-ratio 5/4 media count is 4 in this copy, not 3; the fourth is warm.css line 75
+  and predates step 4. Check it is meant before the final script checks.
+
+Not tested yet: real touch screen (left strip tap, gate), slow load, mid-gate resize, light-look
+focus ring at 1440 and 1180.
+
+NEXT (2026-10-13, plan step 5): paint wall-statue-dark FIRST with the EXTRA_REF command in
+paint/prompts-walls.md; a looker describes it (text? figure only on the statue? panel blank and
+flat? percent boxes hit?); show the owner, yes or redo, BEFORE the four other dark walls. Cap 8
+paintings a day. Then wire the dark plates, owner tries. Light plates on day 2. Owed plate from
+before: room-neuropsych-light.
+
+Open questions for the owner, one at a time: mascot bubble over row ends; bubble colour; notes
+sheet size on an upright iPad.
