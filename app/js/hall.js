@@ -256,6 +256,9 @@
     const below=document.createElement('div');
     below.className='hall-below';
     while(p.firstChild) below.appendChild(p.firstChild);
+    /* the three lines of the statue block go to wall 0; the rest of the old panel goes with it */
+    const hero=below.querySelector('.hero-panel');
+    const heroLines=hero?['.hp-kicker','.hp-name','.hp-sub'].map(c=>hero.querySelector(c)).filter(Boolean):[];
     const h1=below.querySelector('h1');
     const grid=below.querySelector('.mod-grid');
     if(grid){
@@ -327,6 +330,10 @@
          </div></div></div>
          ${doorsOn?DOORS_HTML:''}
        </div>`;
+
+    const wcard=hall.querySelector('.wall-card');
+    if(wcard) heroLines.forEach(el=>wcard.appendChild(el));
+    if(hero) hero.remove();
 
     /* The welcome line and the student's name: real text on the outside painting. */
     const wk=hall.querySelector('.wk-text');
@@ -612,7 +619,7 @@
     [[1.5,-1],[-1,1.5],[2,.5],[-1.5,-1],[1,-.5],[-2,1],[1,1.5],[0,0]].forEach((v,i)=>gate.to([out,doors],{x:v[0],y:v[1],duration:.0625},i*.0625));
     if(fx){
       fx.querySelectorAll('.g').forEach((s,i)=>{
-        const t=i*.045+((i*7)%3)*.02;
+        const t=i*.03+((i*7)%3)*.015;   // the grit starts within the first .3 s, so it can be seen at once
         gate.fromTo(s,{yPercent:0},{yPercent:4000+(i%4)*600,duration:.55+(i%3)*.08,ease:'power1.in'},t);
         gate.to(s,{opacity:.9,duration:.06},t);
         gate.to(s,{opacity:0,duration:.18},t+.4);

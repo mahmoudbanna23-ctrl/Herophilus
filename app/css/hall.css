@@ -93,7 +93,7 @@ body.hall-on .ambient{display:none}
 .hall-push{position:relative;transform-origin:var(--ox,50%) var(--oy,50%)}
 .hall-stage{
   position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:var(--s-4);padding:var(--s-6);
+  gap:var(--s-3);padding:var(--s-3);
 }
 .hall-prism{display:contents}
 .wall{position:relative;aspect-ratio:3/2;border-radius:var(--r-lg);overflow:hidden;background:var(--stone-1)}
@@ -105,11 +105,11 @@ body.hall-on .ambient{display:none}
 .wall[data-w="ophtho"]{--wall-bg:var(--wall-ophtho)}
 .wall[data-w="neuropsych"]{--wall-bg:var(--wall-neuropsych)}
 .wall[data-w="pediatrics"]{--wall-bg:var(--wall-pediatrics)}
-@container hall (min-width:1700px){
+@container hall (min-width:1360px){
   .hall-stage{grid-template-columns:repeat(4,minmax(0,1fr))}
 }
 /* a narrow screen gets one wall per row, so the carved card keeps room for its lines */
-@container hall (max-width:900px){
+@container hall (max-width:559px){
   .hall-stage{grid-template-columns:minmax(0,1fr)}
 }
 
@@ -122,15 +122,41 @@ body.hall-on .ambient{display:none}
   border:2px solid rgba(255,255,255,.55);border-radius:999px 999px 0 0;
 }
 .wall-frame::after{
-  content:attr(data-name);position:absolute;left:32%;top:66%;width:36%;height:22%;box-sizing:border-box;
-  border:2px solid rgba(255,255,255,.55);padding:3px 6px;text-align:left;
-  font:600 11px/1.1 var(--font-ui,system-ui,sans-serif);letter-spacing:.08em;text-transform:uppercase;
-  color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.7);pointer-events:none;
+  content:"";position:absolute;left:32%;top:66%;width:36%;height:22%;box-sizing:border-box;
+  border:2px solid rgba(255,255,255,.55);pointer-events:none;
 }
 :root[data-theme="light"] .wall-frame::before,:root[data-theme="light"] .wall-frame::after{border-color:rgba(0,0,0,.5)}
-:root[data-theme="light"] .wall-frame::after{color:#111;text-shadow:none}
 
-.wall-card{position:absolute;left:32%;top:66%;width:36%;height:22%}
+/* CARVED WALL TEXT. Real, selectable text cut into the plate's blank panel: gilt on dark
+   stone with a 1px dark lip (dark look), dark incised ink with a 1px pale lower edge (light
+   look). A faint tone sits under the text block as contrast insurance whatever the paint
+   does. Static; nothing here animates. All sizes are shares of the plate width (cqw). */
+:root{
+  --carve:var(--gold); --carve-dim:#c9a548;
+  --carve-lip:0 1px 0 rgba(6,4,2,.9);
+  --carve-tone:rgba(7,10,22,.4);
+}
+:root[data-theme="light"]{
+  --carve:#2a1c0d; --carve-dim:#4a3820;
+  --carve-lip:0 1px 0 rgba(255,250,236,.8);
+  --carve-tone:rgba(255,248,230,.42);
+}
+/* wall 0: the statue block's three lines, in the panel box (x 32-68, y 66-88) */
+.wall-card{
+  position:absolute;left:32%;top:66%;width:36%;height:22%;box-sizing:border-box;isolation:isolate;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.35cqw;
+  padding:.6cqw 1.2cqw;text-align:center;color:var(--carve);text-shadow:var(--carve-lip);
+}
+.wall-card::before,.plaque::before{
+  content:"";position:absolute;inset:.5cqw .6cqw;z-index:-1;pointer-events:none;
+  background:var(--carve-tone);border-radius:1cqw;box-shadow:0 0 1.4cqw .8cqw var(--carve-tone);
+}
+.wall-card .hp-kicker,.wall-card .hp-name,.wall-card .hp-sub{
+  margin:0;max-width:100%;color:inherit;text-wrap:balance;overflow-wrap:break-word;
+}
+.wall-card .hp-kicker{font-size:max(8px,1.35cqw);letter-spacing:.1em;line-height:1.2;font-weight:700}
+.wall-card .hp-name{font-size:max(12px,3.5cqw);letter-spacing:.1em;line-height:1.05}
+.wall-card .hp-sub{font-size:max(8px,1.75cqw);letter-spacing:.17em;line-height:1.15;font-weight:600}
 /* a subject missing from the data (or locked): its whole wall dimmed */
 .veil{position:absolute;inset:0;background:var(--bg);opacity:.55;pointer-events:none}
 
@@ -156,37 +182,38 @@ body.hall-on .ambient{display:none}
 }
 .alcove[aria-disabled="true"]{cursor:default}
 .alcove:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
-.alcove:focus-visible .plaque{outline:2px solid var(--tx);outline-offset:2px}
+.alcove:focus-visible .plaque{outline:2px solid var(--carve);outline-offset:-6px}
+:root[data-theme="light"] .alcove:focus-visible{outline-color:#2a1c0d}
 
-/* The plaque is opaque (--card) so its text never depends on the paint behind it. It
-   fills the panel box: panel y 66-88 inside the button's y 8-88 = 72.5% down, 27.5% high.
-   Hover lifts it with the separate `translate` property, so it never fights the
-   transform the walk-in writes. */
+/* The plaque is carved text on the panel box: no card, no border. It fills the panel: panel
+   y 66-88 inside the button's y 8-88 = 72.5% down, 27.5% high. Hover lifts it with the
+   separate translate property, so it never fights the transform the walk-in writes. */
 .plaque{
-  position:absolute;box-sizing:border-box;left:0;top:72.5%;width:100%;height:27.5%;
+  position:absolute;box-sizing:border-box;left:0;top:72.5%;width:100%;height:27.5%;isolation:isolate;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   gap:.5cqw;text-align:center;overflow:hidden;min-width:0;
-  padding:.6cqw 1cqw;
-  background:var(--card);color:var(--tx);
-  border:1px solid var(--line-2);border-radius:var(--r-md);
+  padding:.6cqw 1.2cqw;
+  background:none;color:var(--carve);text-shadow:var(--carve-lip);
   transition:translate .2s var(--ease-soft);
 }
 .alcove:not([aria-disabled="true"]):hover .plaque{translate:0 -2px}
 /* The panel is 36 cqw wide and 14.67 cqw high; every size below is a share of that, so the
    card fits at any wall width. The longest name (NEUROPSYCHIATRY) is about 11 em wide. */
-.pl-name{
-  font-family:var(--font-display);font-weight:700;font-size:max(9px,2.3cqw);line-height:1.15;
+.plaque .pl-name{
+  font-family:var(--font-display);font-weight:700;font-size:max(8px,2.3cqw);line-height:1.15;
   letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;max-width:100%;
 }
 .pl-row{display:flex;align-items:center;gap:1.2cqw;justify-content:center;max-width:100%}
 .pl-meta{display:flex;flex-direction:column;align-items:flex-start;text-align:left;min-width:0}
-.pl-acc{font-size:max(9px,2.1cqw);font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
-.pl-count{font-size:max(9px,1.8cqw);line-height:1.2;font-weight:600;color:var(--ink-3);white-space:nowrap}
-.plaque .ring{width:max(22px,5.6cqw)!important;height:max(22px,5.6cqw)!important;flex:none}
+.plaque .pl-acc{font-size:max(8px,2.1cqw);font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.plaque .pl-count{font-size:max(8px,1.8cqw);line-height:1.2;font-weight:600;color:var(--carve-dim);white-space:nowrap}
+/* the accuracy tint is inline; on stone it gives way to the carved ink (the number says it) */
+.plaque .pl-acc{color:var(--carve)!important}
+.alcove .plaque .ring{width:max(18px,6.4cqw)!important;height:max(18px,6.4cqw)!important;flex:none}
 .plaque .ring svg{width:100%;height:100%}
-.plaque .ring .rv{font-size:max(7px,1.8cqw)}
-.plaque .ring .rv span{font-size:.75em!important}
-.alcove.locked .plaque{border-style:dashed}
+.alcove .plaque .ring .rv{font-size:max(6px,1.4cqw);color:var(--carve);text-shadow:none}
+.alcove .plaque .ring .rv span{font-size:.75em!important}
+.alcove.locked .plaque{opacity:.8}.alcove.locked .plaque{border-style:dashed}
 /* a small plate: "12/345" without the word, the label still says it in full */
 @container wf (max-width:420px){.pl-w{display:none}}
 
@@ -298,10 +325,14 @@ body.hall-clep .clep .cl-body{visibility:hidden}
 .wk-fx i{position:absolute;opacity:0;pointer-events:none}
 .wk-fx .g{
   top:calc(var(--u,2px) * -3);width:calc(var(--u,2px) * 1.5);height:calc(var(--u,2px) * 2.4);
-  border-radius:50%;background:radial-gradient(circle,rgba(206,186,150,1) 0,rgba(150,128,96,.75) 55%,transparent 75%);
 }
-.wk-fx .g:nth-child(3n){width:calc(var(--u,2px) * 2.2);height:calc(var(--u,2px) * 3.4)}
-.wk-fx .g:nth-child(4n+1){width:calc(var(--u,2px) * 1);height:calc(var(--u,2px) * 1.6)}
+/* the visible speck is a small fixed dot (2-4 px) in the box's top; the box sets how far it falls */
+.wk-fx .g::before{
+  content:"";position:absolute;left:50%;top:0;width:3px;height:3px;margin-left:-1.5px;border-radius:50%;
+  background:rgb(232,214,176);box-shadow:0 0 0 1px rgba(8,6,3,.5);
+}
+.wk-fx .g:nth-child(3n)::before{width:4px;height:4px;margin-left:-2px}
+.wk-fx .g:nth-child(4n+1)::before{width:2px;height:2px;margin-left:-1px}
 .wk-fx .p{
   bottom:calc(var(--u,2px) * -3);width:calc(var(--u,2px) * 30);height:calc(var(--u,2px) * 15);
   transform-origin:50% 100%;
@@ -309,7 +340,7 @@ body.hall-clep .clep .cl-body{visibility:hidden}
 }
 .wk-fx .p.a{left:calc(var(--u,2px) * 20)}
 .wk-fx .p.b{left:calc(var(--u,2px) * -8)}
-:root[data-theme="light"] .wk-fx .g{background:radial-gradient(circle,rgba(96,76,50,1) 0,rgba(70,54,34,.75) 55%,transparent 75%)}
+:root[data-theme="light"] .wk-fx .g::before{background:rgb(58,42,24);box-shadow:0 0 0 1px rgba(246,236,214,.5)}
 :root[data-theme="light"] .wk-fx .p{background:radial-gradient(ellipse at 50% 70%,rgba(120,100,70,.7) 0,rgba(140,118,84,.42) 38%,transparent 70%)}
 
 /* ruin, phase 1, outside: soot over the lintel, a dusty threshold and cracks running from
@@ -319,9 +350,24 @@ body.hall-clep .clep .cl-body{visibility:hidden}
 .hall.walk .wk-out::after{
   content:"";position:absolute;inset:0;pointer-events:none;
   background:
-    linear-gradient(112deg,transparent 46.5%,rgba(10,7,4,.55) 47.2%,transparent 48.2%) 36% 22%/9% 18% no-repeat,
-    linear-gradient(66deg,transparent 46.5%,rgba(10,7,4,.5) 47.2%,transparent 48.2%) 55% 20%/9% 22% no-repeat,
-    linear-gradient(98deg,transparent 46.8%,rgba(10,7,4,.45) 47.4%,transparent 48.2%) 59% 52%/7% 26% no-repeat,
+    linear-gradient(50deg,transparent calc(50% - .9px),rgba(10,7,4,0.6) calc(50% - .2px),transparent calc(50% + .8px)) 40.10% 30.60%/0.90% 1.60% no-repeat,
+    linear-gradient(72deg,transparent calc(50% - .9px),rgba(10,7,4,0.5) calc(50% - .2px),transparent calc(50% + .8px)) 39.70% 28.90%/0.30% 1.40% no-repeat,
+    linear-gradient(27deg,transparent calc(50% - .9px),rgba(10,7,4,0.55) calc(50% - .2px),transparent calc(50% + .8px)) 38.00% 27.30%/1.20% 0.90% no-repeat,
+    linear-gradient(72deg,transparent calc(50% - .9px),rgba(10,7,4,0.4) calc(50% - .2px),transparent calc(50% + .8px)) 37.30% 25.20%/0.30% 1.40% no-repeat,
+    linear-gradient(130deg,transparent calc(50% - .9px),rgba(10,7,4,0.58) calc(50% - .2px),transparent calc(50% + .8px)) 58.60% 30.20%/1.00% 1.80% no-repeat,
+    linear-gradient(109deg,transparent calc(50% - .9px),rgba(10,7,4,0.5) calc(50% - .2px),transparent calc(50% + .8px)) 59.90% 28.20%/0.40% 1.70% no-repeat,
+    linear-gradient(159deg,transparent calc(50% - .9px),rgba(10,7,4,0.45) calc(50% - .2px),transparent calc(50% + .8px)) 60.90% 26.80%/1.20% 0.70% no-repeat,
+    linear-gradient(50deg,transparent calc(50% - .9px),rgba(10,7,4,0.5) calc(50% - .2px),transparent calc(50% + .8px)) 59.00% 52.00%/0.90% 1.60% no-repeat,
+    linear-gradient(84deg,transparent calc(50% - .9px),rgba(10,7,4,0.42) calc(50% - .2px),transparent calc(50% + .8px)) 60.03% 54.00%/0.25% 1.40% no-repeat,
+    linear-gradient(27deg,transparent calc(50% - .9px),rgba(10,7,4,0.38) calc(50% - .2px),transparent calc(50% + .8px)) 60.60% 56.20%/0.90% 0.70% no-repeat,
+    linear-gradient(131deg,transparent calc(50% - .9px),rgba(10,7,4,0.46) calc(50% - .2px),transparent calc(50% + .8px)) 39.90% 60.40%/0.70% 1.20% no-repeat,
+    linear-gradient(97deg,transparent calc(50% - .9px),rgba(10,7,4,0.36) calc(50% - .2px),transparent calc(50% + .8px)) 39.42% 62.00%/0.25% 1.30% no-repeat,
+    radial-gradient(circle 1.6px at 39.4% 29.6%,rgba(8,6,4,.55) 0 60%,transparent 100%),
+    radial-gradient(circle 1.6px at 60.6% 29.2%,rgba(8,6,4,.55) 0 60%,transparent 100%),
+    radial-gradient(circle 1.6px at 38.4% 28.1%,rgba(8,6,4,.55) 0 60%,transparent 100%),
+    radial-gradient(circle 1.6px at 61.1% 27.9%,rgba(8,6,4,.55) 0 60%,transparent 100%),
+    radial-gradient(circle 1.6px at 59.7% 55%,rgba(8,6,4,.55) 0 60%,transparent 100%),
+    radial-gradient(circle 1.6px at 40.2% 62.6%,rgba(8,6,4,.55) 0 60%,transparent 100%),
     radial-gradient(ellipse 12% 7% at 49.8% 72%,rgba(190,170,132,.34),transparent 72%),
     radial-gradient(ellipse 14% 12% at 49.8% 31%,rgba(6,5,3,.38),transparent 75%),
     radial-gradient(circle at 40% 60%,rgba(8,6,4,.22) 0 1px,transparent 1.6px) 0 0/19px 23px;
@@ -338,9 +384,15 @@ body.hall-clep .clep .cl-body{visibility:hidden}
 body.hall-clep .clep{left:auto!important;top:auto!important;right:12px!important;bottom:8px!important}
 body.hall-clep .clep .cl-body{display:none}
 body.hall-clep .clep .cl-say{max-width:min(270px,calc(50vw - .18 * max(100vw,150vh) - 44px))}
+/* The bubble body is drawn by ::before, inset 7px from the right, so the tail (::after) sits inside the
+   box: the box has no sideways overflow and cannot grow a horizontal scrollbar. */
+body.hall-clep .clep .cl-say:not(.left){background:none;border:0;box-shadow:none;isolation:isolate;padding:calc(var(--s-5) + 1px) calc(var(--s-11) + 8px) calc(var(--s-6) + 1px) calc(var(--s-7) + 1px)}
+body.hall-clep .clep .cl-say:not(.left)::before{content:"";position:absolute;inset:0 7px 0 0;z-index:-1;pointer-events:none;background:var(--cl-panel);border:1px solid var(--cl-edge);border-radius:var(--r-lg);box-shadow:0 12px 32px var(--sh-deep),0 0 20px rgba(255,150,50,.14)}
+body.hall-clep .clep .cl-say:not(.left)::after{right:3px}
 @media (max-aspect-ratio:1/1){
   body.hall-clep .clep .cl-col{flex-direction:row-reverse;align-items:flex-end}
-  body.hall-clep .clep .cl-say{max-width:min(270px,calc(100vw - 280px));max-height:calc(50vh - .2533 * max(100vw,150vh) - 14px);overflow:auto}
+  body.hall-clep .clep .cl-say{max-width:min(270px,calc(100vw - 280px));overflow:visible}
+  body.hall-clep .clep .cl-say #clepTxt{display:block;max-height:calc(50vh - .2533 * max(100vw,150vh) - 46px);overflow-y:auto;overflow-x:hidden}
 }
 /* the plain stack has no pin: her bubble would float over the cards, so it stays quiet there */
 body.hall-clep:not(:has(.hall.walk)) .clep .cl-say{display:none}
