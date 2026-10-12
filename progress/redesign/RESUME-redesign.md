@@ -589,3 +589,33 @@ Commits since, pushed: `b55fce7b` doors · `0b05d70d` doors fix.
   below it under a coarse pointer, so they never overlap); coarse strip is 56px by design; the
   bare-`:root` dark token block predates this work; open strip covers page text by design.
   Not re-checked by an outside house after the fix; sync chip never seen in a still (signed out).
+
+## Painted room per subject — built 2026-10-12 (`baa2e30e`)
+
+- **What:** `app/js/rooms.js` + `app/css/rooms.css` put a painted plate behind every page, picked by
+  subject (module, theory chapter, one-subject set), hall plate elsewhere. Scroll drifts the plate
+  deeper; reading views freeze it; reduced motion shows a still. The background video is stripped
+  at run time (element kept); the sign-in screen shows the outside plate as a still. `hall.js` only
+  gained the hook that loads the two files.
+- **Plates:** `app/assets/hall/room-<subject>-<look>.jpg` — four dark, three light. **Owed:**
+  `room-neuropsych-light` (light look still shows the light hall plate):
+  `bash progress/redesign/paint/paint-room-light.sh room-neuropsych-light`, convert to JPG under
+  399 KB, point the plate variable at it. Prompts `paint/prompts-rooms.md`; scripts `paint-room.sh`,
+  `paint-room-light.sh`. Painting cap 8 a day, all 8 used on 2026-10-12.
+- **Owner:** approved all four dark rooms, then tested the trial himself. Not answered: is the room
+  drift right or too faint.
+- **Stills:** `r7-<size>-<look>-<subject>-top|mid`, `-notes`, `-question`, `-signin` (66, three
+  sizes, both looks); clips `r7m-ent.mp4`, `r7m-pediatrics.mp4`. `r7-*-module-*` and
+  `r7-*-timetable` (24) are from before the per-subject pick: stale, not committed; GIFs not
+  committed.
+- **Not done:** outside check (Codex, read-only) of the room work.
+
+## NEXT — statue hall, turning walls, ruined gate, pop-out strip (approved 2026-10-12)
+
+**The approved plan is `progress/redesign/PLAN-statue-hall-2026-10-12.md` — read it whole before
+anything; it carries the owner's words, the limits, line anchors and the order of work.** Nothing of
+it is built yet. Start at its "Order of work" step 1 (strip) and step 2 (wall prompts) in parallel,
+then step 3 (ring spike with stand-in walls) and **judge the turn before building on it**.
+Paintings may start 2026-10-13: statue dark first, shown to the owner for a yes before the other
+walls. Owner picked "Turn on the spot". Open owner questions, one at a time, after he tests: mascot
+bubble over row ends; bubble colour; upright-iPad notes sheet size.
