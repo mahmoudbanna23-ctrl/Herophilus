@@ -605,7 +605,7 @@ Commits since, pushed: `b55fce7b` doors · `0b05d70d` doors fix.
 - **Owner:** approved all four dark rooms, then tested the trial himself. Not answered: is the room
   drift right or too faint.
 - **Stills:** `r7-<size>-<look>-<subject>-top|mid`, `-notes`, `-question`, `-signin` (66, three
-  sizes, both looks); clips `r7m-ent.mp4`, `r7m-pediatrics.mp4`. `r7-*-module-*` and
+  sizes, both looks); clips `r7m-ent-dark.mp4`, `r7m-pediatrics-dark.mp4`. `r7-*-module-*` and
   `r7-*-timetable` (24) are from before the per-subject pick: stale, not committed; GIFs not
   committed.
 - **Not done:** outside check (Codex, read-only) of the room work.
