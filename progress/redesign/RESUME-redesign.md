@@ -680,3 +680,29 @@ before: room-neuropsych-light.
 
 Open questions for the owner, one at a time: mascot bubble over row ends; bubble colour; notes
 sheet size on an upright iPad.
+
+## 2026-10-13 - STATUE HALL REJECTED. FROM-ZERO PLAN APPROVED: CITY OF ALEXANDRIA
+
+The owner tried the statue hall (steps 1-4, `4a445170`) and rejected it on all four counts: still
+the old app underneath, not alive enough, wrong world, looks cheap. Every "NEXT" above this
+section is STALE, including the wall paintings (`wall-statue-dark` and the rest): do not paint them.
+
+New plan, approved the same day after a nine-question interview and a two-round Codex debate:
+**`progress/redesign/PLAN-city-2026-10-13.md`**. Read it whole before any work. Rollback tag:
+`pre-city-2026-10-13`.
+
+Short form: home is a filmed dive over a painted Alexandria (three offline Blender shots joined
+in cloud, frames drawn on one canvas, scroll picks the frame); the city is the menu (lighthouse =
+ophtho, theatre = ENT, temple = neuropsych, garden = pediatrics); each building opens one room
+with four objects to pick; question and reading screens are quiet with the room dim behind.
+Night in the dark theme, dawn in the light theme.
+
+Unchanged: trial copy only, live folder never touched, no merge to `main`, no Pages upload
+without the owner's yes; data, question logic, grading and storage untouched; mascot artwork
+untouched.
+
+### NEXT
+
+Plan "Order of work", slice 1: the kill test. One painted plate, one projected solid, twelve
+frames across the largest camera move, forward and back at 1440x900 and the upright crop, shown
+to the owner as a clip. If it reads as sliding cardboard, stop and fall back to landing-only.
