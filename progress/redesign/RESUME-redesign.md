@@ -706,3 +706,17 @@ untouched.
 Plan "Order of work", slice 1: the kill test. One painted plate, one projected solid, twelve
 frames across the largest camera move, forward and back at 1440x900 and the upright crop, shown
 to the owner as a clip. If it reads as sliding cardboard, stop and fall back to landing-only.
+
+## 2026-10-13 (late) - slice 1 kill test BUILT, waiting on the owner's eye
+
+- Plates, prompts, paint script: commit 6e290435. Blender script: commit 7fcd53a9
+  (tools/city-film/kill_test.py, re-runs in about 40 s; output in "D:/scratch 2026/city-kill").
+- Numbers: edge leak 0 in 24 frames; tower shift vs far shore 18.8% landscape, 41.6% upright;
+  0.80 / 0.71 source px per output px. Version B (water plane) not built.
+- Looker on stills: landscape holds as a solid; upright shows a light strip beside the top tier,
+  crops the top in the last frame and loses the city; stonework reads regular and CG-like.
+- Clips sent to the owner (kill-land-12fps.mp4, kill-up-12fps.mp4). NO VERDICT YET.
+
+### NEXT
+Owner's answer on the motion. Real camera -> slice 2 (city plate + framing, upright gets its own
+plate). Sliding cardboard -> stop, fall back to landing-only and say so.
