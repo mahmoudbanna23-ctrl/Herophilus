@@ -33,6 +33,19 @@ harbour water, the causeway, the far shore, the city and the sky continue natura
 completely, as if the tower had never been there. Nothing new is added in its place: no other
 tower, no ship, no rock. Everything else stays where it is.
 
+## kill-pharos-dark-v2
+
+The same view exactly, with ONE change: the lighthouse is repainted with far richer, older,
+hand-painted stonework. Its outline, size, position, three tiers and fire glow stay exactly where
+they are.
+
+The stone is ancient and hand-laid: blocks of clearly uneven size and tone, some darker, a few
+paler replacements, chipped and rounded corners, hairline cracks, dark soot streaks under each
+window slit, pale salt stains near the top, green-black damp at the lowest courses, mortar lines
+that wander. No regular grid, no repeated pattern, no clean computer-made surface. Carved
+mouldings mark the ledge between tiers, worn and broken in places. Painted with confident visible
+brushwork, like a film matte painting. The warm fire glow spills softly down the upper stone.
+
 ## common-city
 
 STYLE. The same painted world as the style reference image: smooth, glossy, soft-lit, hand-painted

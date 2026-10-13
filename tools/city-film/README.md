@@ -51,3 +51,32 @@ No numeric test of this was run.
 - The patch tracker picks the most textured patch itself; the silhouette-edge measure was dropped (rows hit
   different tower tiers between frames) and replaced by the analytic cross-check.
 - Leak margins were tuned by magenta count per size; change the camera move and re-check.
+
+## Round two (kill_test2.py)
+
+Round one verdict from the owner: flat, nothing alive, cheap. Round two keeps the camera travel and fixes those three.
+
+Re-run (about 3 min, one command):
+
+    "C:\Program Files\Blender Foundation\Blender 5.2\blender.exe" --background --python tools\city-film\kill_test2.py
+
+`KT_PREVIEW=1` renders 3 low-res frames to `round2\preview` only. `KT_TOWER=v1|v2` forces the tower plate (default: `kill-pharos-dark-v2.png`
+if it exists, else the original). Output: `D:\scratch 2026\city-kill\round2\` (`frames\f001..f072.png` 16-bit, `kill2-land.mp4`,
+`contact2-land.png`, `report2.json`, `tower-tex.png`).
+
+What changed:
+- Background is three solids, all projected from P with the CLEAN plate: sky card at 3500; a water plane tilted so its horizon is plate
+  row 128 (P is 40 units above it); a shore strip whose depth per column equals the water plane's depth at the shoreline row, so
+  strip and plane meet exactly (no seam by construction). Strip top fades to alpha 0 over plate rows 100..124 into the sky.
+- Tower: matte = |plate - clean| inside the dilated solid silhouette; colours are grown outward past the matte, so geometry wider
+  than the paint carries stone colour, not sky. Dome rebuilt as a lathe on the painted profile (stem and ball included); round
+  one's cone was the source of the sky-coloured hat.
+- Air: 3 mist planes (noise alpha, peak 0.25/0.24/0.16, edges fade to 0, drift at different speeds and directions), 4 additive
+  fire glows (+-25 % smooth flicker), water shimmer in the water shader (+-8 % on bright streaks, fades out beyond about 400 units).
+- Haze: water ramps toward a cool blue with depth (max 0.22), shore strip flat 0.08, tower and sky untouched.
+- Camera: 72 frames, smoothstep ease, same travel as round one frames 1..12, plus a 0.9 unit arc, slight yaw and 0.25 deg roll.
+  1440x900, 64 samples, 16-bit PNG, error-diffusion dither into yuv420p. Clip = move, hold 1 s, reversed move, hold 1 s, x3 (573 frames).
+
+Measured and flaws: see `round2\report2.json`. Known: the right-hand flank of the lantern drum and octagon, seen from the far end of
+the move, is the plate's edge colours stretched (reads as a shaded side, not a correct one); the finial ball is faceted; the breakwater,
+ships and pier are painted on the water plane, so they slide as ground, not as objects; the sky parallax number includes the yaw.
