@@ -1,0 +1,24 @@
+
+The same view exactly, with ONE change: the lighthouse is gone. Where the tower stood, the
+harbour water, the causeway, the far shore, the city and the sky continue naturally and
+completely, as if the tower had never been there. Nothing new is added in its place: no other
+tower, no ship, no rock. Everything else stays where it is.
+
+
+
+STYLE. The same painted world as the style reference image: smooth, glossy, soft-lit, hand-painted
+3D finish, calm and cinematic, rich in small believable detail (worn stone edges, individual
+blocks, roof tiles, ripples, rigging). Painterly, never photographic, never flat vector.
+
+SETTING. Ancient Alexandria, about 300 BC, at night, seen from the air. Normal lens, no fisheye,
+no tilt: vertical lines stay vertical and parallel.
+
+LIGHT. Moonlight and small fires only. Cool night-blue shadows (deep blue, never brown, never pure
+black, every surface keeps visible detail) with small warm amber points of lamp and fire light.
+
+HARD RULES.
+- No text of any kind: no letters, numerals, inscriptions, labels, signage or carved writing.
+- No people, no figures, no statues of people, no faces, no hands, no living animals.
+- No frame, no border, no vignette, no watermark, no signature, no neon, no lens flare, no light
+  beam sweeping the sky.
+- No modern objects: nothing electric, printed, plastic or machine-made.
