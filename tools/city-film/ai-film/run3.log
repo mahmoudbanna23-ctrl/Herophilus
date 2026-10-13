@@ -1,0 +1,80 @@
+[     0s] nvidia-smi: name, memory.total [MiB], memory.used [MiB]
+Tesla T4, 15360 MiB, 0 MiB
+Tesla T4, 15360 MiB, 0 MiB
+[     0s] free RAM: total        used        free      shared  buff/cache   available
+Mem:              31           1          25           0           4          30
+[     0s] disk: df: /kaggle/temp: No such file or directory
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/loop2       20G  140K   20G   1% /kaggle/working
+[     0s] pip install ...
+[    30s] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 846.4/846.4 kB 32.5 MB/s eta 0:00:00
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+moviepy 1.0.3 requires decorator<5.0,>=4.0.2, but you have decorator 5.3.1 which is incompatible.
+[    31s] Uninstalling torchao-0.10.0:
+  Successfully uninstalled torchao-0.10.0
+[    31s] disk /tmp: overlay         8.0T  7.0T  1.1T  87% /
+[    58s] torch 2.11.0+cu128 diffusers 0.41.0 transformers 5.19.0
+[    58s] cuda True ['Tesla T4', 'Tesla T4'] [14.6, 14.6] GiB
+[    58s] input candidates: ['/kaggle/input/datasets/mahmoudelbanna23/hero-city-ai-film-in/pharos-dark.jpg']
+[    58s] source size (1536, 1024)
+[    65s] loading Wan components, transformer dtype torch.float16
+[   304s] Wan loaded
+[   385s]   smoke step 1/8, 81.3s
+[   413s]   smoke step 6/8, 5.8s
+[   573s] smoke: total 269s, steady step 5.7s, frames ok=True
+[   575s] VAE decode in smoke 143s, 1.08e-05 s per pixel-frame
+[   575s] effective throughput 13.9 TFLOP/s
+[   575s]   ladder 1280x704 f=121 s=30 tokens=27280 predicted 5110s limit 3600s
+[   575s]   ladder 1280x704 f=81 s=30 tokens=18480 predicted 3135s limit 3600s
+[   575s] clip 1: 1280x704 frames=81 steps=30 seed=1
+[   599s] OOM at (1280, 704, 81, 30) OutOfMemoryError('CUDA out of memory. Tried to allocate 1.27 GiB. GPU 0 has a total capacity of 14.56 GiB of which 204.81 MiB is free. Including non-PyTorch memory, this process has 14.36 GiB memory i
+[   599s] clip 1: 832x480 frames=121 steps=30 seed=1
+[   600s] OOM at (832, 480, 121, 30) OutOfMemoryError('CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 4.81 MiB is free. Including non-PyTorch memory, this process has 14.55 GiB memory in
+[   600s] clip 1: 832x480 frames=81 steps=30 seed=1
+[   601s] OOM at (832, 480, 81, 30) OutOfMemoryError('CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 4.81 MiB is free. Including non-PyTorch memory, this process has 14.55 GiB memory in
+[   601s] clip 1: 832x480 frames=49 steps=30 seed=1
+[   601s] OOM at (832, 480, 49, 30) OutOfMemoryError('CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 4.81 MiB is free. Including non-PyTorch memory, this process has 14.55 GiB memory in
+[   601s] clip 1: 832x480 frames=49 steps=20 seed=1
+[   601s] OOM at (832, 480, 49, 20) OutOfMemoryError('CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 4.81 MiB is free. Including non-PyTorch memory, this process has 14.55 GiB memory in
+[   601s]   ladder 1280x704 f=121 s=30 tokens=27280 predicted 5110s limit 5399s
+[   601s] clip 2: 1280x704 frames=121 steps=30 seed=2
+[   601s] OOM at (1280, 704, 121, 30) OutOfMemoryError('CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 4.81 MiB is free. Including non-PyTorch memory, this process has 14.55 GiB memory in
+[   602s] clip 2: 1280x704 frames=81 steps=30 seed=2
+[   602s] OOM at (1280, 704, 81, 30) OutOfMemoryError('CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 4.81 MiB is free. Including non-PyTorch memory, this process has 14.55 GiB memory in
+[   602s] clip 2: 832x480 frames=121 steps=30 seed=2
+[   602s] OOM at (832, 480, 121, 30) OutOfMemoryError('CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 4.81 MiB is free. Including non-PyTorch memory, this process has 14.55 GiB memory in
+[   602s] clip 2: 832x480 frames=81 steps=30 seed=2
+[   603s] OOM at (832, 480, 81, 30) OutOfMemoryError('CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 4.81 MiB is free. Including non-PyTorch memory, this process has 14.55 GiB memory in
+[   603s] clip 2: 832x480 frames=49 steps=30 seed=2
+[   603s] OOM at (832, 480, 49, 30) OutOfMemoryError('CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 4.81 MiB is free. Including non-PyTorch memory, this process has 14.55 GiB memory in
+[   603s] clip 2: 832x480 frames=49 steps=20 seed=2
+[   603s] OOM at (832, 480, 49, 20) OutOfMemoryError('CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 4.81 MiB is free. Including non-PyTorch memory, this process has 14.55 GiB memory in
+[   605s] FALLBACK: LTX-Video
+[   853s] LTX fallback failed too: OutOfMemoryError('CUDA out of memory. Tried to allocate 6.65 GiB. GPU 0 has a total capacity of 14.56 GiB of which 2.06 GiB is free. Including non-PyTorch memory, this process has 12.50 GiB memory in use. Of the allocated memory 12.24 GiB is allocated by PyTorch, and 93.83 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')
+[   853s]  image_rotary_emb=image_rotary_emb,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/diffusers/models/transformers/transformer_ltx.py", line 176, in forward
+    return self.processor(self, hidden_states, encoder_hidden_states, attention_mask, image_rotary_emb, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/diffusers/models/transformers/transformer_ltx.py", line 97, in __call__
+    hidden_states = dispatch_attention_fn(
+        query,
+    ...<6 lines>...
+        parallel_config=self._parallel_config,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/diffusers/models/attention_dispatch.py", line 449, in dispatch_attention_fn
+    return backend_fn(**kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/diffusers/models/attention_dispatch.py", line 3751, in _native_attention
+    out = torch.nn.functional.scaled_dot_product_attention(
+        query=query,
+    ...<6 lines>...
+        enable_gqa=enable_gqa,
+    )
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 6.65 GiB. GPU 0 has a total capacity of 14.56 GiB of which 2.06 GiB is free. Including non-PyTorch memory, this process has 12.50 GiB memory in use. Of the allocated memory 12.24 GiB is allocated by PyTorch, and 93.83 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+[   853s] done; outputs: ['ai-smoke.mp4', 'run.log', 'settings.json']

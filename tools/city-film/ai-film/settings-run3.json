@@ -1,0 +1,29 @@
+{
+  "prompt": "Slow, smooth cinematic aerial shot. The camera glides forward and gently descends past the ancient stone lighthouse toward the harbour city at night. Thin mist drifts over the dark water, gentle waves and moving reflections, the fire at the top of the lighthouse flickers, small lamp lights glimmer in the far city, thin clouds drift. Hand-painted 3D animation film style, rich detail, stable architecture.",
+  "negative_prompt": "people, figures, text, letters, watermark, morphing, warping buildings, flicker, jitter, fast motion, cuts, zoom blur, lens flare, light beam",
+  "runs": [],
+  "notes": [
+    "OOM at (1280, 704, 81, 30)",
+    "OOM at (832, 480, 121, 30)",
+    "OOM at (832, 480, 81, 30)",
+    "OOM at (832, 480, 49, 30)",
+    "OOM at (832, 480, 49, 20)",
+    "OOM at (1280, 704, 121, 30)",
+    "OOM at (1280, 704, 81, 30)",
+    "OOM at (832, 480, 121, 30)",
+    "OOM at (832, 480, 81, 30)",
+    "OOM at (832, 480, 49, 30)",
+    "OOM at (832, 480, 49, 20)",
+    "Wan 2.2 failed; fell back to LTX-Video"
+  ],
+  "transformer_dtype": "torch.float16",
+  "smoke": {
+    "w": 832,
+    "h": 480,
+    "frames": 33,
+    "steps": 8,
+    "steady_step_s": 5.705192565917969,
+    "total_s": 268.9774627685547,
+    "tflops": 13.896702418359697
+  }
+}

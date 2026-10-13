@@ -1,0 +1,8 @@
+{
+  "slug": "hero-city-ai-film",
+  "script": "ai_film.py",
+  "inputs": ["pharos-dark.jpg"],
+  "gpu": true,
+  "internet": true,
+  "timeoutSec": 8400
+}

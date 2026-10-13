@@ -1,0 +1,109 @@
+{
+  "clips": {
+    "a": "main",
+    "b": "main",
+    "c": "s30"
+  },
+  "elapsed_s": 4420.111447572708,
+  "settings": {
+    "a": {
+      "name": "a",
+      "variant": "main",
+      "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+      "w": 832,
+      "h": 480,
+      "frames": 81,
+      "fps": 24,
+      "steps": 30,
+      "guidance_scale": 5.0,
+      "seed": 101,
+      "transformer_dtype": "fp16",
+      "mode": "std",
+      "prompt": "The camera flies slowly forward and descends past the ancient stone lighthouse toward the harbour city at night, smooth continuous aerial tracking shot with clear parallax between the near tower and the far city. Thin mist drifts over the dark water, waves move and reflections shimmer, the fire at the top of the lighthouse flickers, lamp lights glimmer, clouds drift. Hand-painted 3D animation film style, rich detail, stable architecture.",
+      "negative_prompt": "static camera, still image, people, figures, text, letters, watermark, morphing, warping buildings, flicker, jitter, cuts, lens flare, light beam",
+      "gpus": 2,
+      "load_s": 235.56928515434265,
+      "gen_seconds": 819.6580400466919,
+      "steady_step_s": 14.697038642291364,
+      "decode_s": 303.9860634803772,
+      "peak_gpu_gib": [
+        13.68,
+        0.0
+      ],
+      "sdpa_calls": {
+        "calls": 3969,
+        "chunked": 1800
+      },
+      "frames_ok": true,
+      "mean_abs_diff_first_last_0_255": 22.3055362701416,
+      "file": "ai-film-a.mp4",
+      "bytes": 716235
+    },
+    "b": {
+      "name": "b",
+      "variant": "main",
+      "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+      "w": 832,
+      "h": 480,
+      "frames": 81,
+      "fps": 24,
+      "steps": 30,
+      "guidance_scale": 5.0,
+      "seed": 202,
+      "transformer_dtype": "fp16",
+      "mode": "std",
+      "prompt": "Dynamic drone shot: the camera sweeps forward and down in an arc around the ancient stone lighthouse, the tower passing close by on the left, then on toward the harbour city at night, smooth continuous aerial tracking shot with clear parallax between the near tower and the far city. Thin mist drifts over the dark water, waves move and reflections shimmer, the fire at the top of the lighthouse flickers, lamp lights glimmer, clouds drift. Hand-painted 3D animation film style, rich detail, stable architecture.",
+      "negative_prompt": "static camera, still image, people, figures, text, letters, watermark, morphing, warping buildings, flicker, jitter, cuts, lens flare, light beam",
+      "gpus": 2,
+      "load_s": 83.61119532585144,
+      "gen_seconds": 824.1477761268616,
+      "steady_step_s": 14.82042332353263,
+      "decode_s": 304.6951289176941,
+      "peak_gpu_gib": [
+        13.68,
+        0.0
+      ],
+      "sdpa_calls": {
+        "calls": 3969,
+        "chunked": 1800
+      },
+      "frames_ok": true,
+      "mean_abs_diff_first_last_0_255": 27.6552677154541,
+      "file": "ai-film-b.mp4",
+      "bytes": 779229
+    },
+    "c": {
+      "name": "c",
+      "variant": "s30",
+      "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+      "w": 1280,
+      "h": 704,
+      "frames": 81,
+      "fps": 24,
+      "steps": 30,
+      "guidance_scale": 5.0,
+      "seed": 303,
+      "transformer_dtype": "fp16",
+      "mode": "offload",
+      "prompt": "Dynamic drone shot: the camera sweeps forward and down in an arc around the ancient stone lighthouse, the tower passing close by on the left, then on toward the harbour city at night, smooth continuous aerial tracking shot with clear parallax between the near tower and the far city. Thin mist drifts over the dark water, waves move and reflections shimmer, the fire at the top of the lighthouse flickers, lamp lights glimmer, clouds drift. Hand-painted 3D animation film style, rich detail, stable architecture.",
+      "negative_prompt": "static camera, still image, people, figures, text, letters, watermark, morphing, warping buildings, flicker, jitter, cuts, lens flare, light beam",
+      "gpus": 2,
+      "load_s": 158.2243676185608,
+      "gen_seconds": 2117.4147198200226,
+      "steady_step_s": 47.63457566294177,
+      "decode_s": 684.0274660587311,
+      "peak_gpu_gib": [
+        6.97,
+        10.85
+      ],
+      "sdpa_calls": {
+        "calls": 4244,
+        "chunked": 1800
+      },
+      "frames_ok": true,
+      "mean_abs_diff_first_last_0_255": 33.312904357910156,
+      "file": "ai-film-c.mp4",
+      "bytes": 1488334
+    }
+  }
+}

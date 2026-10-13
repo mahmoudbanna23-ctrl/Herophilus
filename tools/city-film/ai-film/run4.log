@@ -1,0 +1,76 @@
+[     0s] nvidia-smi: name, memory.total [MiB], memory.used [MiB]
+Tesla T4, 15360 MiB, 0 MiB
+Tesla T4, 15360 MiB, 0 MiB
+[     0s] GPU list: GPU 0: Tesla T4 (UUID: GPU-18a548fb-b4d8-c09d-261e-0b0ded38a3aa)
+GPU 1: Tesla T4 (UUID: GPU-533c4cc4-5f8c-b58a-8e84-383cd143dec1)
+[     0s] free RAM: total        used        free      shared  buff/cache   available
+Mem:              31           1          25           0           4          30
+[     0s] disk: Filesystem      Size  Used Avail Use% Mounted on
+/dev/loop2       20G  148K   20G   1% /kaggle/working
+overlay         8.0T  7.0T  1.1T  87% /
+[     0s] pip install ...
+[    32s] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 846.4/846.4 kB 37.2 MB/s eta 0:00:00
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+moviepy 1.0.3 requires decorator<5.0,>=4.0.2, but you have decorator 5.3.1 which is incompatible.
+[    33s] Uninstalling torchao-0.10.0:
+  Successfully uninstalled torchao-0.10.0
+[    35s] accelerate                            1.15.0
+diffusers                             0.41.0
+torch                                 2.11.0+cu128
+transformers                          5.19.0
+[    35s] === launching a/main in a fresh process, timeout 3000s
+[    67s] worker a/main start: 832x480 f=81 steps=30 seed=101 tdtype=fp16 mode=std
+[    68s] source (1536, 1024) crop (1536, 886) -> (832, 480)
+[   303s] pipeline ready, load 236s
+[   393s]   a step 1/30, 89.5s
+[   434s]   a step 4/30, 13.9s
+[   479s]   a step 7/30, 15.4s
+[   523s]   a step 10/30, 14.6s
+[   567s]   a step 13/30, 14.9s
+[   612s]   a step 16/30, 14.8s
+[   656s]   a step 19/30, 14.8s
+[   700s]   a step 22/30, 14.8s
+[   745s]   a step 25/30, 14.8s
+[   789s]   a step 28/30, 14.8s
+[  1123s] a generated in 820s, steady step 14.7s, post-step (VAE decode) 304s
+[  1126s] saved /kaggle/working/ai-film-a.mp4 ok=True first-last diff 22.3 peak GiB [13.68, 0.0] sdpa {'calls': 3969, 'chunked': 1800}
+[  1129s] === worker a/main exit=0 clip_exists=True in 1094s
+[  1134s] === launching b/main in a fresh process, timeout 3000s
+[  1164s] worker b/main start: 832x480 f=81 steps=30 seed=202 tdtype=fp16 mode=std
+[  1164s] source (1536, 1024) crop (1536, 886) -> (832, 480)
+[  1248s] pipeline ready, load 84s
+[  1337s]   b step 1/30, 89.7s
+[  1383s]   b step 4/30, 15.3s
+[  1427s]   b step 7/30, 14.6s
+[  1472s]   b step 10/30, 14.9s
+[  1516s]   b step 13/30, 14.7s
+[  1560s]   b step 16/30, 14.8s
+[  1605s]   b step 19/30, 14.8s
+[  1649s]   b step 22/30, 14.8s
+[  1693s]   b step 25/30, 14.8s
+[  1738s]   b step 28/30, 14.8s
+[  2072s] b generated in 824s, steady step 14.8s, post-step (VAE decode) 305s
+[  2075s] saved /kaggle/working/ai-film-b.mp4 ok=True first-last diff 27.7 peak GiB [13.68, 0.0] sdpa {'calls': 3969, 'chunked': 1800}
+[  2078s] === worker b/main exit=0 clip_exists=True in 944s
+[  2083s] REACH check: tokens=18480 steps=30 predicted 3227s (step 58s, decode 686s, load 296s), time left 5417s
+[  2083s] === launching c/s30 in a fresh process, timeout 5387s
+[  2113s] worker c/s30 start: 1280x704 f=81 steps=30 seed=303 tdtype=fp16 mode=offload
+[  2113s] source (1536, 1024) crop (1536, 845) -> (1280, 704)
+[  2113s] encoding prompts on cuda:1
+[  2165s] prompt embeds (1, 512, 4096) (1, 512, 4096)
+[  2271s] group offload: block_level x2, streamed
+[  2271s] pipeline ready, load 158s
+[  2323s]   c step 1/30, 52.0s
+[  2466s]   c step 4/30, 47.5s
+[  2609s]   c step 7/30, 47.7s
+[  2752s]   c step 10/30, 47.9s
+[  2896s]   c step 13/30, 47.8s
+[  3039s]   c step 16/30, 47.6s
+[  3182s]   c step 19/30, 47.5s
+[  3325s]   c step 22/30, 47.6s
+[  3467s]   c step 25/30, 47.6s
+[  3610s]   c step 28/30, 47.4s
+[  4388s] c generated in 2117s, steady step 47.6s, post-step (VAE decode) 684s
+[  4411s] saved /kaggle/working/ai-film-c.mp4 ok=True first-last diff 33.3 peak GiB [6.97, 10.85] sdpa {'calls': 4244, 'chunked': 1800}
+[  4415s] === worker c/s30 exit=0 clip_exists=True in 2332s
+[  4420s] done; outputs: ['ai-film-a.mp4', 'ai-film-b.mp4', 'ai-film-c.mp4', 'frame-a-first.png', 'frame-a-last.png', 'frame-a-mid.png', 'frame-b-first.png', 'frame-b-last.png', 'frame-b-mid.png', 'frame-c-first.png', 'frame-c-last.png', 'frame-c-mid.png', 'run.log', 'settings-a.json', 'settings-all.json', 'settings-b.json', 'settings-c.json']
