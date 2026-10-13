@@ -720,3 +720,17 @@ to the owner as a clip. If it reads as sliding cardboard, stop and fall back to 
 ### NEXT
 Owner's answer on the motion. Real camera -> slice 2 (city plate + framing, upright gets its own
 plate). Sliding cardboard -> stop, fall back to landing-only and say so.
+
+## 2026-10-13 (night) - kill test ROUND TWO built, waiting on the owner's eye
+
+- Owner on round one: "doesn't feel yet" = still flat + nothing alive + looks cheap (move size fine).
+- Round two, commit b65f7eb1: tools/city-film/kill_test2.py (water plane + shore card + sky card,
+  three mist planes, fire flicker, water shimmer, edge fill, 72 eased frames 1440x900, landscape
+  only), tower from kill-pharos-dark-v2.png. Output "D:/scratch 2026/city-kill/round2".
+- Numbers: leak 0 in 72 frames; tower vs city 17.6%, city vs sky 4.1%. Flaw: breakwater, ships,
+  pier flat on the water. Looker: better than round one, tower courses still a little regular.
+- Clip sent (kill2-land-small.mp4). NO VERDICT YET. Paintings used today: 3 of 8.
+
+### NEXT
+Owner's answer. Yes -> slice 2. No -> this method is finished (owner was told round two is the
+last try): stop, bring a different way to make the dive, do not build a round three.
