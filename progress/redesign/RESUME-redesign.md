@@ -734,3 +734,23 @@ plate). Sliding cardboard -> stop, fall back to landing-only and say so.
 ### NEXT
 Owner's answer. Yes -> slice 2. No -> this method is finished (owner was told round two is the
 last try): stop, bring a different way to make the dive, do not build a round three.
+
+## 2026-10-13 (later) - round two rejected; hand-built projection CLOSED; AI film on trial
+
+- Owner on round two: "still not there, show me the other way". Blender camera projection is
+  finished as a method. No round three.
+- Other way on trial: AI image-to-video from the painting, free on Kaggle (T4, private, names
+  prefixed hero-city-). Files: tools/city-film/ai-film/ (ai_film.py, item.json, README.md with
+  every measured number and the fix list). Output "D:/scratch 2026/city-ai".
+- Dispatch 1 (3 launches, 0.53 GPU h): Wan 2.2 TI2V-5B loads and runs at 832x480, but only a
+  1.4 s smoke clip came out (1280x704 x 81 frames ran out of memory and poisoned the ladder).
+  Almost no camera motion in it; not shown to the owner as a verdict clip.
+- Dispatch 2 (running when this was written): each config in its own process, 832x480 x 81
+  frames first, camera-first prompt, then a 1280x704 reach. Cap 2 launches, 3.4 GPU h.
+
+### NEXT
+Dispatch 2 result -> Haiku looker on the contact sheet -> clip to the owner, one question (does
+this feel like a real place?). If dispatch 2 also fails: STOP the free route (no third try) and
+ask the owner one plain question: paid film machine (needs his yes + credit; factory
+ideas-parking.md says the AI video machine is OFF until then) or the plan's landing-only still.
+ai-film/ is NOT committed until dispatch 2 returns (a builder is editing it).
