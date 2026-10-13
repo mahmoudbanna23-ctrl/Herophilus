@@ -754,3 +754,16 @@ this feel like a real place?). If dispatch 2 also fails: STOP the free route (no
 ask the owner one plain question: paid film machine (needs his yes + credit; factory
 ideas-parking.md says the AI video machine is OFF until then) or the plan's landing-only still.
 ai-film/ is NOT committed until dispatch 2 returns (a builder is editing it).
+
+## 2026-10-14 - AI film dispatch 2 landed; free route CLOSED; owner asked
+
+- Three full clips (commit 8d41989e, tools/city-film/ai-film/README.md "Run 4"): a = whole but
+  barely moves; b, c = move but the tower breaks and smoke appears. GPU used about 1.78 h.
+- Sent to owner: ai-film-a-pingpong.mp4 and ai-film-b-pingpong.mp4 ("D:/scratch 2026/city-ai").
+- Free Kaggle route is closed (two dispatches). Do NOT launch a third.
+
+### NEXT
+Owner's answer to one question: (1) paid film machine (needs his yes + credit; factory
+ideas-parking.md keeps it OFF until then), or (2) the plan's fallback: no filmed dive, a still
+city painting with slow mist and a breathing lighthouse glow, then slice 2. Nothing is built
+until he answers.
