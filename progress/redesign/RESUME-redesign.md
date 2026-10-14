@@ -816,3 +816,30 @@ owner: yes / redo. Then upright plate, then slice 3.
 ### NEXT
 Upright plate: section city-dark-tall, 1024x1536, SCENE_REF=city-dark-3.png, matte common ->
 looker -> owner yes/redo. Then slice 3 (one whole route, eyes).
+
+## 2026-10-14 - SLICE 2 DONE (both city plates approved); slice 3 started
+
+- Owner on city-dark-tall.png: "good, go on". Plates: paint/city-dark-3.png (1536x1024) and
+  paint/city-dark-tall.png (1024x1536). 4 paintings used today of 8.
+- Tall boxes from the looker (percent, +-5): lighthouse 20,1,48,29 - theatre 55,33,97,49 -
+  garden 3,56,57,74 - temple 53,64,93,89.
+- KNOWN: in both plates the lighthouse fire is 1-6% from the top edge. A 1440x900 screen crops
+  3% off top and bottom of a 3:2 plate and the top bar sits there too. Fix at build time: anchor
+  the picture to its top edge, and if the bar still covers the fire, one same-view repaint with a
+  strip of sea added above the tower. Told the owner.
+- Film size: the plate is 3:2, so the landing is generated at 720x480 (not 832x480) to use the
+  whole plate without cropping.
+
+### Slice 3 jobs (one whole route, night, eyes)
+1. Landing film: from city-dark-3, generate a rise-into-cloud clip, play it reversed so it ends
+   on the plate. Builder job, folder tools/city-film/ai-film/landing/, clips in
+   D:\scratch 2026\city-ai\landing\. Status file: landing/STATUS.md.
+2. Lighthouse room: looker checks the existing eyes room plate for shelf, desk, sand-glass,
+   chest; repaint if unclear.
+3. Page code: city.js, city.css, ui.css per the plan (builder brief not yet written).
+4. Sharpen the 480-line film for a 900-line screen (not yet tried).
+5. Looker + refuter, then the owner tries the route.
+
+### NEXT
+Read landing/STATUS.md and the room looker's answer (in the chat only - re-run it if lost), then
+write the page-code brief.
