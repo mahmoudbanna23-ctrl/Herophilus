@@ -903,3 +903,19 @@ one sheet). Then job 3: one question screen on the seven ui.css parts.
   down"; looker = Haiku scout, foreground, text only; checker = refuter. Screenshots via CDP
   Emulation.setDeviceMetricsOverride (window-size clamps near 500 wide). Scratch in
   D:\scratch 2026\<job>\. Git only from main chat with git -C (cd && git is denied).
+
+## 2026-10-14 - slice 3 job 3 DONE: eyes question screen
+- `app/css/ui.css` (+ stage, folio, plaque; option rows, gold rule, Correct/Wrong marks, light
+  focus ring on --tx, quiz-view clock band), `app/js/quiz.js` (vQuiz markup + `ruleFresh` so the
+  rule draws only on the pick), `app/js/room.js` (clepSay wrapper toasts on the quiz view).
+  Brief + status: `progress/redesign/build/city-question-BRIEF.md`, `city-question-STATUS.md`.
+- Clepsydra figure + bubble hidden on data-view="quiz" (plan: mascot hidden on calm views);
+  clock stays as a bottom band; her lines become toasts. mock/review/results not covered yet.
+- Checks: boot-check 0 errors; D:\scratch 2026\city-question\q-test.js 64 pass. Refuter round 1
+  REFUTED (light ring 1.4:1, session cues lost, rule replay) -> fixed; round 2 CONFIRMED. Looker
+  round 2 PASS. Owner calls open: rounded toast box at the bottom; round icon buttons on rail/bar.
+- Low, left: first quiz visit toasts the ~160-char quiz tip for 2.5 s.
+
+### NEXT
+Owner tries the whole route (city, lighthouse, room, list, question): screenshots/recording to
+him, then his verdict. Slice 3 item 4 (sharpen the 480-line film) still not tried.

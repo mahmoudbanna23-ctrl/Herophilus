@@ -508,4 +508,21 @@
     if(view.name==='module'&&me) mount(); else { ghost=null; irisFrom=null }
     return r;
   };
+
+  /* ---- the question view has no figure, so what she would say is a toast ---------------------
+     css/ui.css hides her figure, bubble and tools on body[data-view=quiz]. A phase change
+     (advancePhase) or a set-complete line would then show nothing, so while that view is up the
+     same text also goes out through the app's own toast(). Her logic runs untouched: the wrapper
+     calls the original first and mirrors its own gate (on, text, muted/collapsed unless forced). */
+  const _say=clepSay;
+  clepSay=function(text,opt){
+    const r=_say.apply(this,arguments);
+    try{
+      const o=opt||{};
+      if(view.name==='quiz'&&CLEP.on&&text&&((!CLEP.muted&&!CLEP.mini)||o.force)){
+        toast(String(text).replace(/\*\*/g,'').replace(/\s+/g,' ').trim());
+      }
+    }catch(e){}
+    return r;
+  };
 })();

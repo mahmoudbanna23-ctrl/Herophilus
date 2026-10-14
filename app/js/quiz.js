@@ -323,6 +323,8 @@ const OPT_LETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 /* Deliberately outside Q and S: eliminations are a disposable reading aid.
    A redraw of this question keeps them; rendering another question clears them. */
 let strikeQuestion=null;
+/* the gold rule draws only on the render that follows an actual pick; Flag, Skip-back and other re-renders show it already drawn */
+let ruleFresh=false;
 let strikes=new Set();
 function toggleStrike(i,e){
   e.stopPropagation();
@@ -343,6 +345,7 @@ function vQuiz(p){
   if(strikeQuestion!==q.id){strikeQuestion=q.id;strikes=new Set()}
   if(q.type==='case'){vCase(p,q,m,prev);return}
   const flagged=!!S.flags[q.id];
+  const drawRule=ruleFresh; ruleFresh=false;
 
   const qhead=`<div class="qreading-head"><span>${esc(chapterName(q.chapter))}</span>
      <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length}</button>
@@ -350,11 +353,13 @@ function vQuiz(p){
     </div>`;
   const qtools=`<div class="qtools"><div class="qhead">
     <button class="tb-btn" style="padding-left:0" onclick="go({name:'module',id:'${q.module}'})">←</button>
-    <span class="pill" style="background:${m.hex}">${esc(chapterName(q.chapter))}</span>
+    <span class="folio-ch" style="--mod:${m.hex}">${esc(chapterName(q.chapter))}</span>
     ${bankPills(q)}
     ${q.source?`<span class="pill ghost">${mdInline(q.source)}</span>`:''}
     </div></div>`;
-  let h=`<div class="qwrap">${qhead}<div class="qcard">
+  /* stage = the dim, still plate behind the page (the eyes room only; every other subject gets the
+     plain veil); folio = the text column. Styles: css/ui.css. */
+  let h=`<div class="qwrap"><div class="stage${q.module==='ophtho'?' stage-eyes':''}" aria-hidden="true"></div>${qhead}<div class="qcard folio">
     <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
     <div class="stem-tools">${markbar(q.id)}</div>
     ${qFigure(q)}
@@ -366,11 +371,14 @@ function vQuiz(p){
     const answered=Q.shown||Q.sel!==null||(Q.exam&&Object.prototype.hasOwnProperty.call(Q.exam.picked,q.id));
     const struck=!answered&&strikes.has(i);
     if(struck)cls+=' struck';
-    const mark=Q.shown?(i===q.answer?'<span class="mark">\u2713</span>':(i===Q.sel?'<span class="mark">\u00d7</span>':'')):'';
-    h+=`<div class="${cls}">
+    /* the mark is a glyph AND a word, so right/wrong never rests on colour alone */
+    const mark=Q.shown?(i===q.answer?'<span class="mark"><span aria-hidden="true">\u2713</span> Correct</span>':(i===Q.sel?'<span class="mark"><span aria-hidden="true">\u00d7</span> Wrong</span>':'')):'';
+    /* the gold rule: drawn when the pick is made, simply there once the answer is shown */
+    const rule=(i===Q.sel)?`<i class="rule${drawRule&&!Q.shown?' draw':''}" aria-hidden="true"></i>`:'';
+    h+=`<div class="${cls} row">
       <button type="button" class="opt-answer" ${Q.shown?'disabled':''} onclick="pick(${i},event.detail===0)">
       <span class="ltr">${OPT_LETTERS[i]}</span><span class="opt-text">${esc(o)}</span>${mark}</button>
-      ${answered?'':`<button type="button" class="strike-btn" aria-label="${struck?'Restore option':'Strike out option'}" aria-pressed="${struck}" onclick="toggleStrike(${i},event)" onkeydown="if(event.key==='Enter'||event.key===' '||(/^[A-Za-z]$/.test(event.key)&&OPT_LETTERS.indexOf(event.key.toUpperCase())<${q.options.length}))event.stopPropagation()">${ico('strike',16)}</button>`}</div>`;
+      ${answered?'':`<button type="button" class="strike-btn" aria-label="${struck?'Restore option':'Strike out option'}" aria-pressed="${struck}" onclick="toggleStrike(${i},event)" onkeydown="if(event.key==='Enter'||event.key===' '||(/^[A-Za-z]$/.test(event.key)&&OPT_LETTERS.indexOf(event.key.toUpperCase())<${q.options.length}))event.stopPropagation()">${ico('strike',16)}</button>`}${rule}</div>`;
   });
   h+=`</div>`;
   /* Under exam conditions the previous attempt is somebody else's paper. */
@@ -386,20 +394,20 @@ function vQuiz(p){
     const last=Q.i+1>=Q.ids.length;
     const left=Q.ids.filter(id=>!(id in Q.exam.picked)).length;
     h+=`<div class="qactions">
-      <div class="qaction-primary"><button class="btn go" onclick="navQ(1)">${last?'Last one — hand in':'Next'} →</button></div>
+      <div class="qaction-primary"><button type="button" class="act act-go" onclick="navQ(1)">${last?'Last one — hand in':'Next'} →</button></div>
       <div class="qaction-secondary">
-        ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
-        <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
+        ${Q.i>0?'<button type="button" class="act" aria-label="Previous question" onclick="navQ(-1)">←</button>':''}
+        <button type="button" class="act flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
         <span class="ch-count">${left} unanswered</span>
-        <button class="btn sec" onclick="examConfirmFinish()">Hand in</button>
+        <button type="button" class="act" onclick="examConfirmFinish()">Hand in</button>
       </div></div>`;
   }else if(!Q.shown){
     h+=`<div class="qactions">
-      <div class="qaction-primary"><button class="btn go" ${Q.sel===null?'disabled':''} onclick="reveal()">Check answer</button></div>
+      <div class="qaction-primary"><button type="button" class="act act-go" ${Q.sel===null?'disabled':''} onclick="reveal()">Check answer</button></div>
       <div class="qaction-secondary">
-        <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
-        ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
-        <button class="btn sec" onclick="navQ(1)">Skip →</button>
+        <button type="button" class="act flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
+        ${Q.i>0?'<button type="button" class="act" aria-label="Previous question" onclick="navQ(-1)">←</button>':''}
+        <button type="button" class="act" onclick="navQ(1)">Skip →</button>
       </div></div>`;
   }else{
     const ok=Q.sel===q.answer;
@@ -446,10 +454,10 @@ function vQuiz(p){
     }
 
     h+=`<div class="qactions">
-      <div class="qaction-primary"><button class="btn go" onclick="navQ(1)">${Q.i===Q.ids.length-1?'Finish':'Next →'}</button></div>
+      <div class="qaction-primary"><button type="button" class="act act-go" onclick="navQ(1)">${Q.i===Q.ids.length-1?'Finish':'Next →'}</button></div>
       <div class="qaction-secondary">
-        <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
-        ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
+        <button type="button" class="act flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
+        ${Q.i>0?'<button type="button" class="act" aria-label="Previous question" onclick="navQ(-1)">←</button>':''}
       </div></div>`;
   }
   h+=`${qtools}</div></div>`;
@@ -464,7 +472,7 @@ function vQuiz(p){
 function pick(i,byKey){
   if(Q.shown||(Q.exam&&Q.exam.done))return;
   if(Q.exam&&examLeft()<=0){examFinish(true);return}
-  Q.sel=i;
+  Q.sel=i; ruleFresh=true;
   /* In a paper the answer is committed to storage the moment it is chosen,
      because there is no Check answer to commit it later and a reload mid-exam
      must not cost the student the work they have already done. What is NOT
