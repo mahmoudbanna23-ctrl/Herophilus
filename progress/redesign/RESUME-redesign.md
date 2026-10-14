@@ -916,6 +916,9 @@ one sheet). Then job 3: one question screen on the seven ui.css parts.
   round 2 PASS. Owner calls open: rounded toast box at the bottom; round icon buttons on rail/bar.
 - Low, left: first quiz visit toasts the ~160-char quiz tip for 2.5 s.
 
+- Route video sent (D:/scratch 2026/city-route/route-1440x900.mp4, 28 s, + step PNGs; script
+  route.js there). OWNER 2026-10-14: "yes, go on" -> SLICE 3 APPROVED.
+
 ### NEXT
-Owner tries the whole route (city, lighthouse, room, list, question): screenshots/recording to
-him, then his verdict. Slice 3 item 4 (sharpen the 480-line film) still not tried.
+Slice 3 item 4: sharpen the 720x480 landing film for 1440x900 (ffmpeg first, AI upscale only if
+needed). Then slice 4: shots 1-2 and their cloud joins, one join proved first.
