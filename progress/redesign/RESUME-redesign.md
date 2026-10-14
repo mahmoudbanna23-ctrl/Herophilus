@@ -800,3 +800,19 @@ the plan's still-landing fallback. Paid machine still needs his yes.
 ### NEXT
 Paint city-dark -> Haiku looker (are all four landmarks clear and inside the safe area?) ->
 owner: yes / redo. Then upright plate, then slice 3.
+
+## 2026-10-14 - slice 2: landscape city APPROVED (city-dark-3)
+
+- Three paintings today (3 of the 8-a-day cap). city-dark: failed the looker (lighthouse and
+  theatre at the edges, garden cut). city-dark-2: layout by quarters, owner said "redo,
+  lighthouse bigger and less glossy". city-dark-3 (SCENE_REF=city-dark-2.png,
+  COMMON_SECTION=common-city-matte): owner said "good". **city-dark-3.png is the landscape city.**
+- Known faults he accepted: lighthouse about 1.5x not 2x, fire about 6% from the top edge (tight
+  for the top bar - check when the bar is built), stone and lamps still crisp. The matte common
+  section is now the look for every city painting.
+- Boxes from the looker (percent, eyeballed +-5): lighthouse 10,0.5,32,43 - theatre 68,20,95,39 -
+  temple 71,55,86,76 - garden 6,59,47,89. Re-measure before placing hot-spots.
+
+### NEXT
+Upright plate: section city-dark-tall, 1024x1536, SCENE_REF=city-dark-3.png, matte common ->
+looker -> owner yes/redo. Then slice 3 (one whole route, eyes).

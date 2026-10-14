@@ -77,6 +77,43 @@ moonlit stone quay with nothing on it. Beside each landmark there is a small are
 simple ground or water (room for a caption to be laid over the picture later; do not paint any
 caption, sign or plaque).
 
+## city-dark-2
+
+(Second try. The first put the lighthouse and theatre at the edges, cut the garden, and let the
+temple dominate. This one fixes the layout by quarters.)
+
+The harbour city of Alexandria at night seen from high in the air, looking steeply down, about
+fifty-five degrees, like a painted bird's-eye map of a place. Only a thin band of sea and night
+sky shows along the very top edge. The picture is a MAP WITH FOUR LANDMARKS. Imagine the picture
+cut into four equal quarters: ONE landmark sits in the middle of EACH quarter. Each landmark is
+large, about one quarter of the picture's width, complete, uncut, and none overlaps another. All
+four have the same importance and the same brightness. Everything between them is low, dark,
+plain and quiet, so the four stand out like four lit islands.
+
+- UPPER LEFT quarter: THE LIGHTHOUSE. It stands on a small rocky island in dark harbour water,
+  joined to the shore by a straight stone causeway. Three tiers: tall square lower tier of pale
+  limestone, shorter eight-sided middle tier, small round top tier with an open ring of columns
+  holding a warm fire glow. Seen whole from rock to fire. Its top is clearly below the top edge.
+  Calm dark water all around it.
+- UPPER RIGHT quarter: THE THEATRE. An open-air Greek theatre seen from above: a clean, crisp
+  half-circle of stepped stone seating, a flat round floor at its centre, a straight low stage
+  wall with a row of columns. A ring of small oil lamps along the top row. Empty. Nothing in
+  front of it, no trees hiding it.
+- LOWER LEFT quarter: THE GARDEN. A square walled garden, clearly a garden and not a building:
+  a plain low wall around it, a square pool in the middle reflecting lamplight, date palms and
+  dark cypress in neat rows, flowering shrubs, hanging lamps. No columns, no pediment, no
+  temple-like gate. The whole wall is visible, well inside the picture.
+- LOWER RIGHT quarter: THE TEMPLE. One columned temple with a triangular pediment and tiled
+  roof on a broad raised stone platform with wide steps, two fire bowls at the foot of the steps.
+
+Between them: low flat-roofed houses kept dark with only a few small amber windows, narrow paved
+streets, a curved quay with two or three anchored wooden ships near the causeway. Thin low mist in
+the streets and on the water. Open plain paved squares and dark water beside each landmark.
+
+LAYOUT RULES. Nothing important within the outer tenth of the picture on any side. Along the
+whole bottom edge runs a plain, calm, empty strip of dark paved quay. Only ONE lighthouse, ONE
+theatre, ONE temple, ONE garden: no second tower, no second temple front anywhere.
+
 ## common-city
 
 STYLE. The same painted world as the style reference image: smooth, glossy, soft-lit, hand-painted
@@ -95,3 +132,75 @@ HARD RULES.
 - No frame, no border, no vignette, no watermark, no signature, no neon, no lens flare, no light
   beam sweeping the sky.
 - No modern objects: nothing electric, printed, plastic or machine-made.
+
+## city-dark-3
+
+(Owner on city-dark-2: "redo, lighthouse bigger and less glossy". Painted with
+SCENE_REF=city-dark-2.png and COMMON_SECTION=common-city-matte.)
+
+The same city, the same four landmarks in the same four quarters, with THREE changes.
+
+1. THE LIGHTHOUSE IS MUCH BIGGER. It is now the tallest and most striking thing in the picture:
+   about twice as tall and twice as wide as before, filling most of the upper left quarter. Its
+   rocky island and causeway grow with it. It still shows whole, from rock to fire, and there is
+   a clear band of dark sea between its fire and the top edge of the picture: the fire is at
+   least one tenth of the picture height below the top edge. Its three tiers read clearly: tall
+   square lower tier, shorter eight-sided middle tier, small round columned top tier with the
+   warm fire glow.
+2. THE TEMPLE IS A LITTLE SMALLER AND CALMER, no brighter than the theatre, so that the
+   lighthouse leads and the other three are equal.
+3. THE WHOLE PICTURE IS REPAINTED BY HAND IN A MATTE FINISH. See the style notes below. The
+   water in particular is flat dark paint with a few soft brushed reflections, not a shiny
+   mirror with glitter specks.
+
+Everything else stays where it is: theatre upper right, garden lower left, temple lower right,
+low dark houses and streets between, ships by the causeway, thin mist.
+
+## common-city-matte
+
+STYLE. A hand-painted film matte painting in gouache and oil: MATTE, dry, chalky surfaces,
+visible confident brushstrokes, soft broken edges, slightly uneven hand-mixed colour. NOT glossy,
+NOT shiny, NOT wet-looking, NOT plastic, no specular highlights, no bloom, no glow halos, no
+computer-game or 3D-render look, not photographic, not flat vector. Use the style reference image
+for its colours, mood and world only, not for its shine. Rich in small believable detail (worn
+stone edges, individual blocks, roof tiles, rigging), painted loosely rather than modelled.
+
+SETTING. Ancient Alexandria, about 300 BC, at night, seen from the air. Normal lens, no fisheye,
+no tilt: vertical lines stay vertical and parallel.
+
+LIGHT. Moonlight and small fires only. Cool night-blue shadows (deep blue, never brown, never pure
+black, every surface keeps visible detail) with small warm amber points of lamp and fire light,
+painted as soft dabs of warm colour, not as glowing bulbs.
+
+HARD RULES.
+- No text of any kind: no letters, numerals, inscriptions, labels, signage or carved writing.
+- No people, no figures, no statues of people, no faces, no hands, no living animals.
+- No frame, no border, no vignette, no watermark, no signature, no neon, no lens flare, no light
+  beam sweeping the sky.
+- No modern objects: nothing electric, printed, plastic or machine-made.
+- Only ONE lighthouse, ONE theatre, ONE temple, ONE garden.
+
+## city-dark-tall
+
+(Upright iPad plate, 1024x1536. Owner approved city-dark-3 as the landscape city. Painted with
+SCENE_REF=city-dark-3.png and COMMON_SECTION=common-city-matte.)
+
+The SAME CITY as the reference picture, the same four landmarks painted the same way, the same
+night, the same finish, but RE-ARRANGED FOR A TALL UPRIGHT PAGE. Do not crop the wide picture and
+do not add bars: recompose it so the city fills the tall page from top to bottom. The camera is
+the same height and looks down the same way; the four landmarks have simply been brought closer
+together sideways and spread further apart up and down.
+
+From top to bottom, in a gentle zig-zag:
+- TOP, left of centre: THE LIGHTHOUSE, the largest and leading landmark, on its rocky island with
+  the causeway, shown whole. A clear band of dark sea lies between its fire and the top edge.
+- UPPER MIDDLE, right of centre: THE THEATRE, the crisp half-circle of stone seating with its
+  stage wall and ring of lamps, whole, nothing hiding it.
+- LOWER MIDDLE, left of centre: THE GARDEN, the square walled garden with its pool, palms and
+  cypress, whole.
+- LOWER, right of centre: THE TEMPLE on its stepped platform with two fire bowls, whole, no
+  brighter than the theatre.
+
+All four sit fully inside the picture: nothing important within the outer tenth on any side.
+Between them the same low dark houses, narrow streets, quay and two or three anchored ships, thin
+mist. Along the whole bottom edge a plain, calm strip of dark paved quay.
