@@ -866,3 +866,20 @@ write the page-code brief.
 ### NEXT
 Slice 3 page code in three builder jobs, in order: (1) city home: still + landing film + mist +
 four hot-spots; (2) lighthouse room + sheet; (3) one question screen on the seven parts.
+
+## 2026-10-14 - slice 3 job 1 DONE: city home
+
+- city.js + city.css, plates and landing film in app/assets/city/ (jpg 456K + 499K, mp4 874K).
+  Detail and test scripts: progress/redesign/build/city-home-STATUS.md (+ "Fix round 1").
+- Checked: boot-check 0 errors, 7477 q; refuter round 1 REFUTED (glow under reduced motion, film
+  cut by cloud-sync re-render, phone labels) -> fixed; refuter round 2 CONFIRMED; one latent
+  inert/playing reset added to destroy() by main chat.
+- Probe fault: headless --window-size clamps at ~500 wide, so its phone shots were false. Phone
+  shots need CDP Emulation.setDeviceMetricsOverride (D:\scratch 2026\city-home\shoot-phone.js).
+- Phone nits left for slice 7: hard dark band below the painting at 390x844; guide's speech
+  bubble text cut at 390x844. Upright iPad: still only, no film (upright film = slice 7).
+- Guide (mascot) overlaps the temple steps at 1440x900 - placement belongs to the room/guide job.
+
+### NEXT
+Job 2: lighthouse room (iris from the lighthouse, room-pharos-dark plate, four object hot-spots,
+one sheet). Then job 3: one question screen on the seven ui.css parts.

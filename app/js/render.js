@@ -238,12 +238,14 @@ function vHome(p){
   </section>`;
 
   let modsHTML=`<h2>${fresh?'Subjects':'Modules'}</h2><div class="grid g3 mod-grid">`;
+  const cityItems=[];   // the same numbers, for the painted city's four hot-spots (city.js)
   activeModules().forEach(m=>{
     const qs=qsInModule(m.id);
     const d=qs.filter(q=>isAnswered(q.id)).length;
     const a=accuracy(qs);
     const pct=qs.length?d/qs.length*100:0;
     const chs=m.groups.reduce((n,g)=>n+g.chapters.length,0);
+    cityItems.push({id:m.id,name:m.name,locked:isLocked(m.id),done:d,total:qs.length,acc:a});
     /* A locked subject keeps its card and its artwork — dropping it would read
        as an app that only covers two subjects — but shows no counts and no
        progress ring, because both would be zero and a zero reads as broken. */
@@ -283,6 +285,12 @@ function vHome(p){
   /* The biography sits above the subjects on every run. A first run once led
      with the subjects and kept it as a closing note, which buried the card the
      app is named after at the foot of the page. */
+  /* The four subjects are the buildings of the painted city (city.js); everything else the
+     dashboard says sits on a plain sheet under it. Without city.js the old grid stays. */
+  if(typeof cityStageHTML==='function'){
+    p.innerHTML=cityStageHTML(cityItems,done)+`<div class="city-below">${h+todayHTML+heroHTML}</div>`;
+    return;
+  }
   h+=todayHTML+heroHTML+modsHTML;
   p.innerHTML=h;
 }

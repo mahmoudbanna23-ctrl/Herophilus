@@ -1,0 +1,156 @@
+/* city.css - the home screen as a painted night city (redesign trial, slice 3).
+   Built by js/city.js (cityStageHTML, called from vHome). One stage box holds the plate, the
+   landing film, the mist, the lighthouse glow and the four hot-spots. The box has the plate's
+   exact aspect ratio, so every hot-spot percent maps straight onto the painting. It is sized to
+   COVER the area under the top bar and anchored to the TOP centre: the lighthouse fire sits 1-6%
+   from the top edge, so extra height is cropped from the bottom, never the top.
+   Landscape window: city-dark.jpg (3:2). Taller than wide: city-dark-tall.jpg (2:3) with its own
+   boxes (--u* variables). Only transform, opacity and clip-path animate. No hover lift, no pulse.
+   Everything lives in @media screen; print hides the stage. Loaded after warm.css. */
+@media screen{
+
+/* ---- the stage ------------------------------------------------------------------------ */
+body.city-on[data-view="home"] .page{max-width:none;padding:0}
+/* the ambient colour field belongs to browse screens; the city is its own picture */
+body.city-on[data-view="home"] .ambient{display:none}
+
+.city{
+  --city-h:calc(100vh - var(--city-top,0px));
+  position:relative;overflow:hidden;width:100%;
+  height:var(--city-h);
+  background:#070d16;
+}
+@supports (height:100svh){
+  .city{--city-h:calc(100svh - var(--city-top,0px))}
+}
+.city-box{
+  position:absolute;top:0;left:50%;
+  width:max(100%,calc(var(--city-h)*1.5));
+  aspect-ratio:3/2;
+  transform:translateX(-50%);
+}
+.city-plate,.city-plate img{display:block;position:absolute;inset:0;width:100%;height:100%}
+.city-plate img{object-fit:cover;user-select:none;-webkit-user-drag:none}
+
+/* ---- the landing film (added and removed by city.js) ------------------------------------ */
+.city-film{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:1;transition:opacity .4s linear;pointer-events:none;
+}
+.city-film.out{opacity:0}
+
+/* ---- alive at rest: two mist layers and one breathing glow ------------------------------ */
+.city-mist{
+  position:absolute;left:-20%;width:140%;pointer-events:none;
+  opacity:.7;transition:opacity .6s ease-out;
+  will-change:transform;
+}
+.city-mist.a{
+  top:46%;height:26%;
+  background:
+    radial-gradient(ellipse 22% 46% at 18% 50%,rgba(176,196,222,.20),transparent 72%),
+    radial-gradient(ellipse 26% 40% at 56% 56%,rgba(176,196,222,.16),transparent 72%),
+    radial-gradient(ellipse 20% 44% at 88% 46%,rgba(176,196,222,.18),transparent 72%);
+  animation:cityMistA 95s ease-in-out infinite alternate;
+}
+.city-mist.b{
+  top:66%;height:28%;
+  background:
+    radial-gradient(ellipse 24% 44% at 30% 50%,rgba(176,196,222,.16),transparent 72%),
+    radial-gradient(ellipse 22% 38% at 70% 52%,rgba(176,196,222,.18),transparent 72%);
+  animation:cityMistB 130s ease-in-out infinite alternate;
+}
+@keyframes cityMistA{from{transform:translateX(-7%)}to{transform:translateX(7%)}}
+@keyframes cityMistB{from{transform:translateX(6%)}to{transform:translateX(-6%)}}
+
+/* the glow over the lighthouse fire: left/top are the fire's place on the painting */
+.city-glow{
+  position:absolute;left:21.1%;top:4.7%;width:11%;aspect-ratio:1;
+  transform:translate(-50%,-50%);pointer-events:none;
+  opacity:1;transition:opacity .6s ease-out;
+}
+.city-glow i{
+  display:block;width:100%;height:100%;
+  background:radial-gradient(circle,rgba(255,200,120,.55),rgba(255,160,70,.18) 40%,transparent 70%);
+  animation:cityGlow 7s ease-in-out infinite alternate;
+}
+@keyframes cityGlow{from{opacity:.5}to{opacity:1}}
+
+/* while the landing film plays the still's furniture waits; it comes back by opacity */
+.city-box.playing .city-mist,.city-box.playing .city-glow{opacity:0}
+
+/* ---- the four hot-spots: real buttons, labels always visible ------------------------------ */
+.city-spots{position:absolute;inset:0}
+.city-spot{
+  position:absolute;left:var(--l);top:var(--t);width:var(--w);height:var(--h);
+  margin:0;padding:0;border:0;background:none;
+  font:inherit;color:#f5efe0;text-align:left;cursor:pointer;
+  border-radius:6px;
+}
+.city-spot[disabled]{cursor:default}
+.city-spot:focus-visible{outline:2px solid #f0c75e;outline-offset:2px}
+.city-tag{
+  position:absolute;left:8px;width:max-content;
+  max-width:calc(100% - 16px);
+  /* never narrower than its longest word (min-width beats max-width): a small box cannot make a name spill out of its label; fitLabels keeps the label on screen */
+  min-width:min-content;
+  display:flex;flex-direction:column;gap:2px;
+  padding:7px 11px 8px;
+  background:rgba(8,13,24,.88);
+  border:1px solid rgba(240,199,94,.38);
+  border-radius:var(--r-sm,4px);
+  color:#f5efe0;
+  transform:translateX(var(--sx,0px));
+}
+.city-spot[data-la="t"] .city-tag{top:8px}
+.city-spot[data-la="b"] .city-tag{bottom:8px}
+.city-spot:hover .city-tag,.city-spot:focus-visible .city-tag{border-color:#f0c75e}
+.city-tag .mod-name{
+  display:block;font-size:clamp(13px,1.15vw,16px);font-weight:700;line-height:1.2;color:#f5efe0;
+}
+.city-tag .city-meta{
+  display:block;font-size:12px;line-height:1.3;font-weight:600;color:#d6cdb8;
+  font-variant-numeric:tabular-nums;
+}
+.city-tag .city-meta.go{letter-spacing:.04em}
+
+/* ---- the rest of the dashboard sits under the stage, on a plain sheet ------------------------- */
+.city-below{
+  background:var(--bg);
+  padding:var(--s-11) max(var(--s-11),calc((100% - 936px)/2));
+}
+
+/* ---- upright window: the tall plate and its own boxes ------------------------------------ */
+@media (max-aspect-ratio:1/1){
+  .city-box{width:max(100%,calc(var(--city-h)*.6667));aspect-ratio:2/3}
+  .city-spot{left:var(--ul);top:var(--ut);width:var(--uw);height:var(--uh)}
+  .city-spot[data-la="t"] .city-tag{top:auto;bottom:auto}
+  .city-spot[data-pa="t"] .city-tag{top:8px;bottom:auto}
+  .city-spot[data-pa="b"] .city-tag{bottom:8px;top:auto}
+  .city-glow{left:34.3%;top:4.3%;width:14%}
+}
+
+/* ---- upright phone: the whole painting, edge to edge ----------------------------------------
+   The box is the window's width, so all four buildings and their labels are on screen. The tall
+   plate is 2:3, so it ends above the window's bottom edge; the stage keeps its height and the
+   painting's own dark sea (sampled from the bottom rows of the plate) carries on below it. If the
+   window is short the stage grows to the plate's height and the page scrolls. */
+@media (max-width:767.98px) and (max-aspect-ratio:1/1){
+  .city{
+    height:max(var(--city-h),150vw);
+    background:linear-gradient(90deg,#021a34,#001429);
+  }
+  .city-box{width:100%}
+}
+
+/* ---- calm: no mist, no breathing under reduced motion; none of it off the home view --------- */
+@media (prefers-reduced-motion:reduce){
+  .city-mist{display:none;animation:none}
+  .city-glow{display:none}
+  .city-film{display:none}
+}
+body[data-view="quiz"] .city-mist,body[data-view="case"] .city-mist,body[data-view="mock"] .city-mist,
+body[data-view="review"] .city-mist,body[data-view="results"] .city-mist,body[data-view="theory"] .city-mist{display:none}
+
+}
+@media print{.city{display:none}}
