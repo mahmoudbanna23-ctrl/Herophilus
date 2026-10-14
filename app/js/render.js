@@ -298,6 +298,11 @@ function vHome(p){
 /* ============ MODULE ============ */
 function vModule(p){
   const m=moduleOf(view.id);
+  /* A subject with a painted room (room.js) shows the room; the others keep this view. */
+  if(typeof roomStageHTML==='function'){
+    const rh=roomStageHTML(m);
+    if(rh){p.innerHTML=rh;return}
+  }
   const qs=qsInModule(m.id);
   const a=accuracy(qs);
   let h=`<button class="tb-btn" style="padding-left:0;margin-bottom:8px" onclick="go({name:'home'})">← Dashboard</button>

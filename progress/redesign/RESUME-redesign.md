@@ -883,3 +883,17 @@ four hot-spots; (2) lighthouse room + sheet; (3) one question screen on the seve
 ### NEXT
 Job 2: lighthouse room (iris from the lighthouse, room-pharos-dark plate, four object hot-spots,
 one sheet). Then job 3: one question screen on the seven ui.css parts.
+
+## 2026-10-14 - slice 3 job 2 DONE: lighthouse room
+- `app/js/room.js` (new), `app/css/ui.css` (new: sheet, row, rule, act), city.css "THE ROOM"
+  block, vModule hook in render.js, `assets/city/room-ophtho-dark.jpg`. Status file:
+  `progress/redesign/build/city-room-STATUS.md`.
+- Refuter round 1 faults (modal Escape, Tab escape, re-render scroll/focus, iris transitionend)
+  and looker round 1 faults all fixed. Last two nits fixed in main chat: upright menu clears the
+  icon strip from 601 px up; landscape guide bubble widened so text is not clipped. Looker: PASS.
+- Checks: boot-check 0 errors; room-test-r1.js in the scratch city-room folder: 119 pass,
+  1 known fail. Shots room-*-r1.png, desk-sheet-*-r1.png at 1440x900, 1180x820, 820x1180, 390x844.
+- Theory is locked app-wide, so the shelf sheet reads "Lecture notes are not open yet".
+- Deferred to slice 7: the guide has no bubble in the upright room.
+- NEXT: job 3, one question screen on the seven ui.css parts (plan "Quiet screens"), then
+  looker + refuter, then the owner tries the whole route.

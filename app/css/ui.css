@@ -1,0 +1,94 @@
+/* ui.css - shared parts for the quiet screens (redesign trial, slice 3).
+   Built so far: sheet, row, rule, act. The next job adds stage, folio and plaque.
+   Plain classes, no framework. Only transform, opacity and clip-path ever animate; there is no hover
+   lift, no pulse, no pill and no emoji. Colour comes from the token families already in tokens.css:
+   --tx / --ink-* for text, --line* for hairlines, --gold for the one accent.
+   Loaded after views.css and warm.css. Screen only; print never shows these. */
+@media screen{
+
+/* ---- sheet: a plain scrolling ledger that opens from the thing that was picked ---------------
+   js sets clip-path inline (a circle that grows from the picked object) and removes it when done;
+   with reduced motion it never sets one. */
+.sheet{
+  display:flex;flex-direction:column;
+  background:var(--bg);color:var(--tx);
+  border:1px solid var(--line-2,rgba(255,255,255,.14));
+  border-radius:var(--r-sm,4px);
+  box-shadow:0 18px 60px rgba(0,0,0,.55);
+  outline:none;
+}
+.sheet[hidden]{display:none}
+.sheet-head{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:18px 20px 12px;
+  border-bottom:1px solid var(--line-2,rgba(255,255,255,.14));
+}
+.sheet-head > div{flex:1;min-width:0}
+.sheet-title{margin:0;font-size:20px;line-height:1.2;font-weight:800;color:var(--tx)}
+.sheet-sub{margin:4px 0 0;font-size:13px;line-height:1.45;color:var(--ink-3)}
+.sheet-close{
+  flex:none;min-width:44px;min-height:44px;margin:-6px -8px 0 0;padding:0 12px;
+  background:none;border:0;border-radius:var(--r-sm,4px);
+  font:inherit;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-2,var(--tx));cursor:pointer;
+}
+.sheet-close:hover{color:var(--gold)}
+.sheet-close:focus-visible,.act:focus-visible,.sheet:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.sheet-body{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:4px 20px 22px}
+.sheet-note{margin:14px 0 0;font-size:14px;line-height:1.55;color:var(--ink-3)}
+.sheet-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:14px 0 4px}
+
+/* ---- rule: a hairline that draws itself by scaleX ------------------------------------------- */
+.rule{
+  display:block;height:1px;margin:0;border:0;
+  background:var(--line-2,rgba(255,255,255,.14));
+  transform-origin:left center;
+}
+.rule.draw{animation:uiRule .5s ease-out both}
+@keyframes uiRule{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* ---- group heading inside a ledger ----------------------------------------------------------- */
+.row-group{
+  margin:20px 0 0;padding:0 0 8px;
+  font-size:11.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);
+}
+
+/* ---- row: one hairline ledger row = title, counts, action ---------------------------------- */
+.row{
+  position:relative;
+  display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;column-gap:16px;
+  padding:12px 0;
+  border-top:1px solid var(--line-2,rgba(255,255,255,.14));
+}
+.row:last-child{border-bottom:1px solid var(--line-2,rgba(255,255,255,.14))}
+.row-title{min-width:0;font-size:15px;line-height:1.35;font-weight:700;color:var(--tx)}
+.row-title small{display:block;margin-top:2px;font-size:12px;font-weight:600;color:var(--ink-3)}
+.row-count{font-size:13px;font-weight:600;color:var(--ink-3);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.row-acc{font-weight:800;font-variant-numeric:tabular-nums}
+.row.is-off .row-title{color:var(--ink-3)}
+.row.is-empty{display:block;border-top:0;padding:14px 0 4px}
+
+/* ---- act: the lettered action at the end of a row; its box stretches over the whole row ------- */
+.act{
+  min-height:44px;margin:-8px 0;padding:0 2px 0 10px;
+  background:none;border:0;border-radius:var(--r-sm,4px);
+  font:inherit;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--gold);cursor:pointer;text-align:right;
+}
+.act::after{content:"";position:absolute;inset:0}
+.act:hover{text-decoration:underline;text-underline-offset:4px}
+.act[disabled]{color:var(--ink-4,var(--ink-3));cursor:default;text-decoration:none}
+/* an action that sits alone in a bar (Practise all, Unanswered) is a plain button, not a row stretch */
+.sheet-bar .act{position:relative;margin:0;padding:0 14px;border:1px solid var(--gold);text-align:center}
+.sheet-bar .act::after{display:none}
+
+@media (max-width:520px){
+  .row{grid-template-columns:minmax(0,1fr) auto;row-gap:2px}
+  .row-count{grid-column:1;text-align:left;white-space:normal}
+  .row .act{grid-column:2;grid-row:1 / span 2}
+}
+@media (prefers-reduced-motion:reduce){
+  .rule.draw{animation:none}
+}
+}
+@media print{.sheet{display:none}}
