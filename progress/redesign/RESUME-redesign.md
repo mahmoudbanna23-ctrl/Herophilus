@@ -897,3 +897,9 @@ one sheet). Then job 3: one question screen on the seven ui.css parts.
 - Deferred to slice 7: the guide has no bubble in the upright room.
 - NEXT: job 3, one question screen on the seven ui.css parts (plan "Quiet screens"), then
   looker + refuter, then the owner tries the whole route.
+- Boot-check now reports ophtho 0 chapter rows (123 total, was 162): EXPECTED, the room
+  replaces the eyes chapter list. 0 console errors is the bar.
+- Working rules for job 3: builder = Sonnet lean-drafter, prompt opens "ROUTE-OK: gateway
+  down"; looker = Haiku scout, foreground, text only; checker = refuter. Screenshots via CDP
+  Emulation.setDeviceMetricsOverride (window-size clamps near 500 wide). Scratch in
+  D:\scratch 2026\<job>\. Git only from main chat with git -C (cd && git is denied).
