@@ -1,0 +1,968 @@
+{
+ "neutral_geometry_max_dev_mm": {
+  "eye_L": 0.0,
+  "eye_R": 0.0,
+  "lash_L": 0.0,
+  "lash_R": 0.0,
+  "mouth": 0.0
+ },
+ "neutral_pixels": {
+  "vs_prerig_cycles": {
+   "px_over_12": 0,
+   "max": 0,
+   "size": [
+    700,
+    600
+   ]
+  },
+  "vs_test8_eevee": {
+   "px_over_12": 45248,
+   "max": 185,
+   "size": [
+    700,
+    600
+   ]
+  }
+ },
+ "non_face_meshes_with_keys": [],
+ "keys": {
+  "eye_L:AU1_inner_brow_raiser_L": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 7.8,
+   "moved": 1474,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_L:AU2_outer_brow_raiser_L": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 7.8,
+   "moved": 1471,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_L:AU4_brow_lowerer_L": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 20.58,
+   "moved": 1527,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_L:AU5_upper_lid_raiser_L": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 14.16,
+   "moved": 1527,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_L:AU6_cheek_raiser_L": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 48.86,
+   "moved": 2701,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_L:AU7_lid_tightener_L": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 30.86,
+   "moved": 2700,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_L:blink_L": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 161.05,
+   "moved": 2742,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_L:lid_lo_raise_L": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 57.86,
+   "moved": 1174,
+   "max_disc_radius_frac": 0.588
+  },
+  "eye_L:look_L": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 22.36,
+   "moved": 604,
+   "max_disc_radius_frac": 0.551
+  },
+  "eye_L:look_R": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 22.75,
+   "moved": 604,
+   "max_disc_radius_frac": 0.551
+  },
+  "eye_L:look_up": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 20.2,
+   "moved": 1652,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_L:look_down": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 35.22,
+   "moved": 604,
+   "max_disc_radius_frac": 0.551
+  },
+  "eye_R:AU1_inner_brow_raiser_R": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 7.8,
+   "moved": 1474,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_R:AU2_outer_brow_raiser_R": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 7.8,
+   "moved": 1471,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_R:AU4_brow_lowerer_R": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 20.58,
+   "moved": 1527,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_R:AU5_upper_lid_raiser_R": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 14.16,
+   "moved": 1527,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_R:AU6_cheek_raiser_R": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 48.86,
+   "moved": 2700,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_R:AU7_lid_tightener_R": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 30.86,
+   "moved": 2700,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_R:blink_R": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 161.04,
+   "moved": 2742,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_R:lid_lo_raise_R": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 57.86,
+   "moved": 1173,
+   "max_disc_radius_frac": 0.589
+  },
+  "eye_R:look_L": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 22.75,
+   "moved": 604,
+   "max_disc_radius_frac": 0.551
+  },
+  "eye_R:look_R": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 22.36,
+   "moved": 604,
+   "max_disc_radius_frac": 0.551
+  },
+  "eye_R:look_up": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 20.2,
+   "moved": 1652,
+   "max_disc_radius_frac": 0.641
+  },
+  "eye_R:look_down": {
+   "verts": 2742,
+   "basis": 2742,
+   "max_mm": 35.22,
+   "moved": 604,
+   "max_disc_radius_frac": 0.551
+  },
+  "lash_L:AU1_inner_brow_raiser_L": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 19.85,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_L:AU2_outer_brow_raiser_L": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 25.13,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_L:AU4_brow_lowerer_L": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 32.88,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_L:AU5_upper_lid_raiser_L": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 13.79,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_L:AU6_cheek_raiser_L": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 5.01,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_L:AU7_lid_tightener_L": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 20.05,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_L:blink_L": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 154.94,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_R:AU1_inner_brow_raiser_R": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 19.85,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_R:AU2_outer_brow_raiser_R": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 25.13,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_R:AU4_brow_lowerer_R": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 32.88,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_R:AU5_upper_lid_raiser_R": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 13.79,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_R:AU6_cheek_raiser_R": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 5.01,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_R:AU7_lid_tightener_R": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 20.05,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "lash_R:blink_R": {
+   "verts": 201,
+   "basis": 201,
+   "max_mm": 154.94,
+   "moved": 201,
+   "max_disc_radius_frac": 0.776
+  },
+  "mouth:AU10_upper_lip_raiser_L": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 9.67,
+   "moved": 60,
+   "max_disc_radius_frac": 0.474,
+   "toga_clear_mm": 11.8
+  },
+  "mouth:AU10_upper_lip_raiser_R": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 9.67,
+   "moved": 60,
+   "max_disc_radius_frac": 0.474,
+   "toga_clear_mm": 11.8
+  },
+  "mouth:AU12_lip_corner_puller_L": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 20.59,
+   "moved": 74,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 11.62
+  },
+  "mouth:AU12_lip_corner_puller_R": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 20.59,
+   "moved": 74,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 11.8
+  },
+  "mouth:AU14_dimpler_L": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 10.98,
+   "moved": 70,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 12.77
+  },
+  "mouth:AU14_dimpler_R": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 10.98,
+   "moved": 70,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 11.8
+  },
+  "mouth:AU15_lip_corner_depressor_L": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 30.17,
+   "moved": 75,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 5.73
+  },
+  "mouth:AU15_lip_corner_depressor_R": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 30.17,
+   "moved": 75,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 11.8
+  },
+  "mouth:AU16_lower_lip_depressor_L": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 11.58,
+   "moved": 56,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 1.1
+  },
+  "mouth:AU16_lower_lip_depressor_R": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 11.58,
+   "moved": 56,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 11.8
+  },
+  "mouth:AU20_lip_stretcher_L": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 17.91,
+   "moved": 74,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 12.87
+  },
+  "mouth:AU20_lip_stretcher_R": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 17.91,
+   "moved": 74,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 11.8
+  },
+  "mouth:AU17_chin_raiser": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 16.02,
+   "moved": 115,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 25.54
+  },
+  "mouth:AU18_lip_pucker": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 42.85,
+   "moved": 125,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 26.76
+  },
+  "mouth:AU22_lip_funneler": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 37.27,
+   "moved": 125,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 7.92
+  },
+  "mouth:AU23_lip_tightener": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 17.02,
+   "moved": 124,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 29.32
+  },
+  "mouth:AU24_lip_presser": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 31.54,
+   "moved": 124,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 35.91
+  },
+  "mouth:AU25_lips_part": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 7.01,
+   "moved": 115,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 5.79
+  },
+  "mouth:jaw_open": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 10.05,
+   "moved": 124,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 7.2
+  },
+  "mouth:jaw_side_L": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 10.01,
+   "moved": 100,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 8.88
+  },
+  "mouth:jaw_side_R": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 10.01,
+   "moved": 100,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 15.4
+  },
+  "mouth:A": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 31.54,
+   "moved": 124,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 35.91
+  },
+  "mouth:B": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 7.55,
+   "moved": 125,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 11.3
+  },
+  "mouth:C": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 5.46,
+   "moved": 125,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 6.35
+  },
+  "mouth:D": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 16.56,
+   "moved": 125,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 2.05
+  },
+  "mouth:E": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 31.69,
+   "moved": 125,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 7.75
+  },
+  "mouth:F": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 52.52,
+   "moved": 125,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 26.94
+  },
+  "mouth:G": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 13.24,
+   "moved": 123,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 20.21
+  },
+  "mouth:H": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 9.4,
+   "moved": 125,
+   "max_disc_radius_frac": 0.497,
+   "toga_clear_mm": 3.15
+  },
+  "mouth:X": {
+   "verts": 125,
+   "basis": 125,
+   "max_mm": 0.0,
+   "moved": 0,
+   "max_disc_radius_frac": 0,
+   "toga_clear_mm": 11.8
+  }
+ },
+ "key_count": {
+  "eye_L": 12,
+  "eye_R": 12,
+  "lash_L": 7,
+  "lash_R": 7,
+  "mouth": 30
+ },
+ "all_counts_equal_basis": true,
+ "max_region_radius_frac": 0.776,
+ "symmetry_max_mm": {
+  "eye_glint_verts_excluded": 218,
+  "basis_mirror_err_mm_eye_L": 0.61,
+  "eye_L:AU1_inner_brow_raiser": 0.05,
+  "eye_L:AU2_outer_brow_raiser": 0.05,
+  "eye_L:AU4_brow_lowerer": 0.09,
+  "eye_L:AU5_upper_lid_raiser": 0.05,
+  "eye_L:AU6_cheek_raiser": 0.23,
+  "eye_L:AU7_lid_tightener": 0.14,
+  "eye_L:blink": 0.56,
+  "eye_L:lid_lo_raise": 0.27,
+  "eye_L:look": 0.0,
+  "eye:look_L~look_R": 0.0,
+  "eye:look_R~look_L": 0.0,
+  "eye:look_up~look_up": 0.02,
+  "eye:look_down~look_down": 0.0,
+  "basis_mirror_err_mm_lash_L": 0.0,
+  "lash_L:AU1_inner_brow_raiser": 0.0,
+  "lash_L:AU2_outer_brow_raiser": 0.0,
+  "lash_L:AU4_brow_lowerer": 0.0,
+  "lash_L:AU5_upper_lid_raiser": 0.0,
+  "lash_L:AU6_cheek_raiser": 0.0,
+  "lash_L:AU7_lid_tightener": 0.0,
+  "lash_L:blink": 0.0,
+  "basis_mirror_err_mm_mouth": 0.0,
+  "mouth:AU10_upper_lip_raiser": 0.0,
+  "mouth:AU12_lip_corner_puller": 0.0,
+  "mouth:AU14_dimpler": 0.0,
+  "mouth:AU15_lip_corner_depressor": 0.0,
+  "mouth:AU16_lower_lip_depressor": 0.0,
+  "mouth:AU20_lip_stretcher": 0.0,
+  "mouth:jaw_side": 0.0
+ },
+ "lid_pupil_min_gap_mm": {
+  "rest": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU1_inner_brow_raiser_L": {
+   "L": 4.35,
+   "R": 1.24
+  },
+  "AU1_inner_brow_raiser_R": {
+   "L": 1.24,
+   "R": 4.35
+  },
+  "AU2_outer_brow_raiser_L": {
+   "L": 2.18,
+   "R": 1.24
+  },
+  "AU2_outer_brow_raiser_R": {
+   "L": 1.24,
+   "R": 2.18
+  },
+  "AU4_brow_lowerer_L": {
+   "L": -0.39,
+   "R": 1.24
+  },
+  "AU4_brow_lowerer_R": {
+   "L": 1.24,
+   "R": -0.39
+  },
+  "AU5_upper_lid_raiser_L": {
+   "L": 6.69,
+   "R": 1.24
+  },
+  "AU5_upper_lid_raiser_R": {
+   "L": 1.24,
+   "R": 6.69
+  },
+  "AU6_cheek_raiser_L": {
+   "L": 1.55,
+   "R": 1.24
+  },
+  "AU6_cheek_raiser_R": {
+   "L": 1.24,
+   "R": 1.55
+  },
+  "AU7_lid_tightener_L": {
+   "L": 1.6,
+   "R": 1.24
+  },
+  "AU7_lid_tightener_R": {
+   "L": 1.24,
+   "R": 1.6
+  },
+  "AU10_upper_lip_raiser_L": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU10_upper_lip_raiser_R": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU12_lip_corner_puller_L": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU12_lip_corner_puller_R": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU14_dimpler_L": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU14_dimpler_R": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU15_lip_corner_depressor_L": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU15_lip_corner_depressor_R": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU16_lower_lip_depressor_L": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU16_lower_lip_depressor_R": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU20_lip_stretcher_L": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU20_lip_stretcher_R": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU17_chin_raiser": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU18_lip_pucker": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU22_lip_funneler": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU23_lip_tightener": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU24_lip_presser": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "AU25_lips_part": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "bone jaw_open (AU26/27) 35deg": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "bone jaw_side_L 8deg": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "bone jaw_side_R": {
+   "L": 1.24,
+   "R": 1.24
+  },
+  "bone lid_up_L: blink_L 40deg": {
+   "L": -11.89,
+   "R": 1.24
+  },
+  "bone lid_up_R: blink_R": {
+   "L": 1.24,
+   "R": -11.78
+  },
+  "bone lid_lo_L: lid_lo_raise_L": {
+   "L": 1.56,
+   "R": 1.24
+  },
+  "bone lid_lo_R": {
+   "L": 1.24,
+   "R": 1.56
+  },
+  "bone eyes: look_L 35deg": {
+   "L": 1.97,
+   "R": -3.06
+  },
+  "bone eyes: look_R": {
+   "L": -3.06,
+   "R": 1.99
+  },
+  "bone eyes: look_up 25deg": {
+   "L": -1.4,
+   "R": -1.4
+  },
+  "bone eyes: look_down 30deg": {
+   "L": 6.98,
+   "R": 6.97
+  },
+  "preset happy": {
+   "L": -0.31,
+   "R": -0.31
+  },
+  "preset warm_smile": {
+   "L": 2.58,
+   "R": 2.09
+  },
+  "preset surprise": {
+   "L": 3.81,
+   "R": 3.81
+  },
+  "preset frown_concern": {
+   "L": 1.65,
+   "R": 1.64
+  },
+  "preset thinking": {
+   "L": -3.35,
+   "R": 10.13
+  },
+  "preset sad": {
+   "L": 8.92,
+   "R": 8.9
+  },
+  "preset wink": {
+   "L": -25.21,
+   "R": 1.67
+  }
+ },
+ "lid_pupil_worst_open_eye_mm": -3.35,
+ "preset_toga_clear_mm": {
+  "happy": 6.86,
+  "warm_smile": 22.37,
+  "surprise": 0.62,
+  "frown_concern": 9.21,
+  "thinking": 27.09,
+  "sad": 7.57,
+  "wink": 11.91
+ },
+ "bone_to_key": {
+  "bone jaw_open (AU26/27) 35deg | mouth": {
+   "moved_mm": 10.05,
+   "matches_key_at_1": [
+    "jaw_open"
+   ]
+  },
+  "bone jaw_side_L 8deg | mouth": {
+   "moved_mm": 10.01,
+   "matches_key_at_1": [
+    "jaw_side_L"
+   ]
+  },
+  "bone jaw_side_R | mouth": {
+   "moved_mm": 10.01,
+   "matches_key_at_1": [
+    "jaw_side_R"
+   ]
+  },
+  "bone lid_up_L: blink_L 40deg | eye_L": {
+   "moved_mm": 161.05,
+   "matches_key_at_1": [
+    "blink_L"
+   ]
+  },
+  "bone lid_up_L: blink_L 40deg | lash_L": {
+   "moved_mm": 154.94,
+   "matches_key_at_1": [
+    "blink_L"
+   ]
+  },
+  "bone lid_up_R: blink_R | eye_R": {
+   "moved_mm": 161.04,
+   "matches_key_at_1": [
+    "blink_R"
+   ]
+  },
+  "bone lid_up_R: blink_R | lash_R": {
+   "moved_mm": 154.94,
+   "matches_key_at_1": [
+    "blink_R"
+   ]
+  },
+  "bone lid_lo_L: lid_lo_raise_L | eye_L": {
+   "moved_mm": 57.86,
+   "matches_key_at_1": [
+    "lid_lo_raise_L"
+   ]
+  },
+  "bone lid_lo_R | eye_R": {
+   "moved_mm": 57.86,
+   "matches_key_at_1": [
+    "lid_lo_raise_R"
+   ]
+  },
+  "bone eyes: look_L 35deg | eye_L": {
+   "moved_mm": 22.36,
+   "matches_key_at_1": [
+    "look_L"
+   ]
+  },
+  "bone eyes: look_L 35deg | eye_R": {
+   "moved_mm": 22.75,
+   "matches_key_at_1": [
+    "look_L"
+   ]
+  },
+  "bone eyes: look_R | eye_L": {
+   "moved_mm": 22.75,
+   "matches_key_at_1": [
+    "look_R"
+   ]
+  },
+  "bone eyes: look_R | eye_R": {
+   "moved_mm": 22.36,
+   "matches_key_at_1": [
+    "look_R"
+   ]
+  },
+  "bone eyes: look_up 25deg | eye_L": {
+   "moved_mm": 22.89,
+   "matches_key_at_1": []
+  },
+  "bone eyes: look_up 25deg | eye_R": {
+   "moved_mm": 22.89,
+   "matches_key_at_1": []
+  },
+  "bone eyes: look_down 30deg | eye_L": {
+   "moved_mm": 65.91,
+   "matches_key_at_1": []
+  },
+  "bone eyes: look_down 30deg | eye_R": {
+   "moved_mm": 65.91,
+   "matches_key_at_1": []
+  },
+  "bone eyes: look_down 30deg | lash_L": {
+   "moved_mm": 34.86,
+   "matches_key_at_1": []
+  },
+  "bone eyes: look_down 30deg | lash_R": {
+   "moved_mm": 34.86,
+   "matches_key_at_1": []
+  }
+ },
+ "rom_readback_deg": {
+  "eye far left": {
+   "pitch": -0.0,
+   "yaw": 35.0
+  },
+  "eye far right": {
+   "pitch": 0.0,
+   "yaw": -35.0
+  },
+  "eye far up": {
+   "pitch": 25.0,
+   "yaw": 0.0
+  },
+  "eye far down": {
+   "pitch": -30.0,
+   "yaw": -0.0
+  },
+  "jaw 2x open": [
+   -35.0,
+   -0.0,
+   -0.0
+  ],
+  "jaw 2x side": [
+   0.0,
+   0.0,
+   8.0
+  ],
+  "lid_up 2x close": [
+   -40.0,
+   -0.0,
+   0.0
+  ],
+  "lid_lo 2x raise": [
+   25.0,
+   -0.0,
+   0.0
+  ],
+  "lid follow: eye down 25 -> lid_up_L x": -7.5,
+  "lip_corner_L 50mm push -> local mm": [
+   12.0,
+   0.0,
+   12.0
+  ]
+ },
+ "bones": [
+  "face_root",
+  "jaw",
+  "eye_target",
+  "eye_target_L",
+  "eye_target_R",
+  "eye_L",
+  "lid_up_L",
+  "lid_lo_L",
+  "lip_corner_L",
+  "eye_R",
+  "lid_up_R",
+  "lid_lo_R",
+  "lip_corner_R"
+ ],
+ "glb": {
+  "file": "D:/scratch 2026/her-c2/face1/face1.glb",
+  "import": "ok",
+  "morph_count": {
+   "eye_L": 12,
+   "eye_R": 12,
+   "lash_L": 7,
+   "lash_R": 7,
+   "mouth": 30
+  },
+  "missing": {},
+  "armatures": [
+   [
+    "face_rig",
+    13
+   ]
+  ],
+  "glb_bytes": 5653992
+ }
+}

@@ -1,0 +1,800 @@
+{
+ "objects": [
+  "arm_L",
+  "arm_R",
+  "backdrop_floor",
+  "body_disc",
+  "eye_L",
+  "eye_R",
+  "face_marks",
+  "glove_L",
+  "glove_R",
+  "lash_L",
+  "lash_R",
+  "leg_L",
+  "leg_R",
+  "mouth",
+  "nose",
+  "sandal_L",
+  "sandal_R",
+  "shoulder_knot",
+  "skirt",
+  "toga",
+  "toga_trim",
+  "waist_cord",
+  "wreath",
+  "wreath_ornament"
+ ],
+ "face_obj_identity": {
+  "eye_L": true,
+  "eye_R": true,
+  "lash_L": true,
+  "lash_R": true,
+  "mouth": true
+ },
+ "free_keys": 39,
+ "driven_keys": [
+  "blink_L",
+  "blink_R",
+  "jaw_open",
+  "jaw_side_L",
+  "jaw_side_R",
+  "lid_lo_raise_L",
+  "lid_lo_raise_R",
+  "look_L",
+  "look_R",
+  "look_down",
+  "look_up"
+ ],
+ "targeted": {
+  "rest": {
+   "rad": 0.776,
+   "lift_mm": 0,
+   "sink_mm": 0,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 257.1,
+    "eye_R": 0,
+    "eye_R_open_mm": 257.1
+   }
+  },
+  "ALL free keys=1": {
+   "rad": 0.764,
+   "lift_mm": 18.86,
+   "sink_mm": 0.33,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ],
+    "mouth": [
+     "toga"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 159.7,
+    "eye_R": 0,
+    "eye_R_open_mm": 159.7
+   }
+  },
+  "ALL free=1 + bones 2x": {
+   "rad": 0.67,
+   "lift_mm": 18.89,
+   "sink_mm": 8.31,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ],
+    "mouth": [
+     "toga"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 65.84,
+    "eye_L_open_mm": 142.5,
+    "eye_R": 52.63,
+    "eye_R_open_mm": 142.5
+   }
+  },
+  "AU15+AU16+D at 2.0": {
+   "rad": 0.776,
+   "lift_mm": 0.09,
+   "sink_mm": 0.01,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 257.1,
+    "eye_R": 0,
+    "eye_R_open_mm": 257.1
+   }
+  },
+  "D + jaw bone 1": {
+   "rad": 0.776,
+   "lift_mm": 0.07,
+   "sink_mm": 0.0,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 257.1,
+    "eye_R": 0,
+    "eye_R_open_mm": 257.1
+   }
+  },
+  "surprise + jaw1 + AU16": {
+   "rad": 0.857,
+   "lift_mm": 2.18,
+   "sink_mm": 0.02,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc",
+     "face_marks"
+    ],
+    "lash_R": [
+     "body_disc",
+     "face_marks"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 282.8,
+    "eye_R": 0,
+    "eye_R_open_mm": 282.8
+   }
+  },
+  "AU15+AU16+AU25 + jaw1": {
+   "rad": 0.776,
+   "lift_mm": 0.1,
+   "sink_mm": 0.01,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 257.1,
+    "eye_R": 0,
+    "eye_R_open_mm": 257.1
+   }
+  },
+  "AU12+AU10+AU20 + jaw1": {
+   "rad": 0.776,
+   "lift_mm": 0.01,
+   "sink_mm": 0.06,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 257.1,
+    "eye_R": 0,
+    "eye_R_open_mm": 257.1
+   }
+  },
+  "AU1+AU2+AU5": {
+   "rad": 0.857,
+   "lift_mm": 2.18,
+   "sink_mm": 0.02,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc",
+     "face_marks"
+    ],
+    "lash_R": [
+     "body_disc",
+     "face_marks"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 282.8,
+    "eye_R": 0,
+    "eye_R_open_mm": 282.8
+   }
+  },
+  "blink + look (35, 0)": {
+   "rad": 0.605,
+   "lift_mm": 4.61,
+   "sink_mm": 6.65,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 15.4,
+    "eye_R": 2.62,
+    "eye_R_open_mm": 15.4
+   }
+  },
+  "open look (35, 0)": {
+   "rad": 0.776,
+   "lift_mm": 4.61,
+   "sink_mm": 6.65,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 257.1,
+    "eye_R": 0,
+    "eye_R_open_mm": 257.1
+   }
+  },
+  "blink + look (-35, 0)": {
+   "rad": 0.605,
+   "lift_mm": 4.61,
+   "sink_mm": 6.65,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 2.62,
+    "eye_L_open_mm": 15.4,
+    "eye_R": 0,
+    "eye_R_open_mm": 15.4
+   }
+  },
+  "open look (-35, 0)": {
+   "rad": 0.776,
+   "lift_mm": 4.61,
+   "sink_mm": 6.65,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 257.1,
+    "eye_R": 0,
+    "eye_R_open_mm": 257.1
+   }
+  },
+  "blink + look (0, 25)": {
+   "rad": 0.619,
+   "lift_mm": 0.67,
+   "sink_mm": 2.96,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 7.33,
+    "eye_L_open_mm": 57.2,
+    "eye_R": 7.34,
+    "eye_R_open_mm": 57.2
+   }
+  },
+  "open look (0, 25)": {
+   "rad": 0.776,
+   "lift_mm": 0.67,
+   "sink_mm": 1.95,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 253.6,
+    "eye_R": 0,
+    "eye_R_open_mm": 253.6
+   }
+  },
+  "blink + look (0, -30)": {
+   "rad": 0.605,
+   "lift_mm": 3.93,
+   "sink_mm": 1.97,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 29.85,
+    "eye_L_open_mm": 15.4,
+    "eye_R": 29.85,
+    "eye_R_open_mm": 15.4
+   }
+  },
+  "open look (0, -30)": {
+   "rad": 0.72,
+   "lift_mm": 2.48,
+   "sink_mm": 1.98,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 202.7,
+    "eye_R": 0,
+    "eye_R_open_mm": 202.7
+   }
+  },
+  "blink + look (35, 25)": {
+   "rad": 0.616,
+   "lift_mm": 3.58,
+   "sink_mm": 6.83,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 5.87,
+    "eye_L_open_mm": 50.6,
+    "eye_R": 5.87,
+    "eye_R_open_mm": 50.6
+   }
+  },
+  "open look (35, 25)": {
+   "rad": 0.776,
+   "lift_mm": 4.11,
+   "sink_mm": 6.24,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 254.1,
+    "eye_R": 0,
+    "eye_R_open_mm": 254.1
+   }
+  },
+  "blink + look (-35, -30)": {
+   "rad": 0.605,
+   "lift_mm": 6.93,
+   "sink_mm": 7.15,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 30.89,
+    "eye_L_open_mm": 15.4,
+    "eye_R": 24.64,
+    "eye_R_open_mm": 15.4
+   }
+  },
+  "open look (-35, -30)": {
+   "rad": 0.728,
+   "lift_mm": 5.79,
+   "sink_mm": 7.29,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 210.8,
+    "eye_R": 0,
+    "eye_R_open_mm": 210.8
+   }
+  },
+  "blink + AU5": {
+   "rad": 0.609,
+   "lift_mm": 1.11,
+   "sink_mm": 0.67,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc"
+    ],
+    "lash_R": [
+     "body_disc"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 29.6,
+    "eye_R": 0,
+    "eye_R_open_mm": 29.6
+   }
+  },
+  "blink + lid_lo + AU6 + AU7": {
+   "rad": 0.6,
+   "lift_mm": 5.03,
+   "sink_mm": 0.1,
+   "hits": {
+    "eye_L": [
+     "body_disc"
+    ],
+    "eye_R": [
+     "body_disc"
+    ],
+    "lash_L": [
+     "body_disc",
+     "face_marks"
+    ],
+    "lash_R": [
+     "body_disc",
+     "face_marks"
+    ]
+   },
+   "pupil_outside_rim_mm": {
+    "eye_L": 0,
+    "eye_L_open_mm": 147.8,
+    "eye_R": 0,
+    "eye_R_open_mm": 147.8
+   }
+  }
+ },
+ "random_worst": {
+  "rad": 0.82,
+  "lift_mm": 17.18,
+  "sink_mm": 7.7,
+  "n_with_hits": 120,
+  "hit_examples": [
+   [
+    0,
+    {
+     "eye_L": [
+      "body_disc"
+     ],
+     "eye_R": [
+      "body_disc"
+     ],
+     "lash_L": [
+      "body_disc"
+     ],
+     "lash_R": [
+      "body_disc"
+     ],
+     "mouth": [
+      "body_disc"
+     ]
+    }
+   ],
+   [
+    1,
+    {
+     "eye_L": [
+      "body_disc"
+     ],
+     "eye_R": [
+      "body_disc"
+     ],
+     "lash_L": [
+      "body_disc"
+     ],
+     "lash_R": [
+      "body_disc"
+     ],
+     "mouth": [
+      "body_disc"
+     ]
+    }
+   ],
+   [
+    2,
+    {
+     "eye_L": [
+      "body_disc"
+     ],
+     "eye_R": [
+      "body_disc"
+     ],
+     "lash_L": [
+      "body_disc"
+     ],
+     "lash_R": [
+      "body_disc"
+     ],
+     "mouth": [
+      "body_disc"
+     ]
+    }
+   ],
+   [
+    3,
+    {
+     "eye_L": [
+      "body_disc"
+     ],
+     "eye_R": [
+      "body_disc"
+     ],
+     "lash_L": [
+      "body_disc"
+     ],
+     "lash_R": [
+      "body_disc"
+     ],
+     "mouth": [
+      "body_disc"
+     ]
+    }
+   ],
+   [
+    4,
+    {
+     "eye_L": [
+      "body_disc"
+     ],
+     "eye_R": [
+      "body_disc"
+     ],
+     "lash_L": [
+      "body_disc"
+     ],
+     "lash_R": [
+      "body_disc"
+     ]
+    }
+   ],
+   [
+    5,
+    {
+     "eye_L": [
+      "body_disc"
+     ],
+     "eye_R": [
+      "body_disc"
+     ],
+     "lash_L": [
+      "body_disc"
+     ],
+     "lash_R": [
+      "body_disc"
+     ],
+     "mouth": [
+      "body_disc"
+     ]
+    }
+   ],
+   [
+    6,
+    {
+     "eye_L": [
+      "body_disc"
+     ],
+     "eye_R": [
+      "body_disc"
+     ],
+     "lash_L": [
+      "body_disc"
+     ],
+     "lash_R": [
+      "body_disc"
+     ],
+     "mouth": [
+      "body_disc"
+     ]
+    }
+   ],
+   [
+    7,
+    {
+     "eye_L": [
+      "body_disc"
+     ],
+     "eye_R": [
+      "body_disc"
+     ],
+     "lash_L": [
+      "body_disc"
+     ],
+     "lash_R": [
+      "body_disc"
+     ]
+    }
+   ]
+  ]
+ }
+}

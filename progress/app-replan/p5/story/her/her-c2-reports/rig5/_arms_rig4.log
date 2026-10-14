@@ -1,0 +1,21 @@
+00:10.391  blend            | Read blend: "D:\scratch 2026\her-c2\rig4\her-rig4.blend"
+00:15.938  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_rest_front.png'
+00:18.188  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_rest_side.png'
+00:20.031  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_rest_tq.png'
+00:21.703  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_swing_fwd_front.png'
+00:23.656  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_swing_fwd_side.png'
+00:25.516  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_swing_fwd_tq.png'
+00:27.156  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_swing_back_front.png'
+00:29.125  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_swing_back_side.png'
+00:30.797  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_swing_back_tq.png'
+00:32.422  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_wave_top_front.png'
+00:34.281  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_wave_top_side.png'
+00:35.891  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_wave_top_tq.png'
+00:37.625  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_wave_side_front.png'
+00:39.734  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_wave_side_side.png'
+00:41.266  render           | Saved: 'D:\scratch 2026\her-c2\rig5\_arms\rig4_wave_side_tq.png'
+ARMS probe frames {'rest': None, 'swing_fwd': 45, 'swing_back': 57, 'wave_top': 140, 'wave_side': 137}
+ARMS done
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

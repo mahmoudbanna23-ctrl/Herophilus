@@ -1,0 +1,9 @@
+00:01.766  blend            | Read blend: "D:\scratch 2026\her-c2\rig5h\her-rig5h.blend"
+D:\claude os\Medical school\Herophilus\progress\app-replan\p5\story\her\rig_her.py:1404: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new('studio_floor_warm'); m.use_nodes = True
+00:09.891  render           | Saved: 'D:\scratch 2026\her-c2\rig5h\wave_peak_front.png'
+00:17.359  render           | Saved: 'D:\scratch 2026\her-c2\rig5h\wave_peak_tq.png'
+RIG peak frame 139
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

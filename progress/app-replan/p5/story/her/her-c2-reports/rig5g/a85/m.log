@@ -1,0 +1,16 @@
+00:02.484  blend            | Read blend: "D:\scratch 2026\her-c2\rig5g\a85\her-rig5g.blend"
+D:\claude os\Medical school\Herophilus\progress\app-replan\p5\story\her\rig_her.py:1321: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new('studio_floor_warm'); m.use_nodes = True
+00:05.547  render           | Saved: 'D:\scratch 2026\her-c2\rig5g\a85\frames_wave\0170.png'
+00:06.297  render           | Saved: 'D:\scratch 2026\her-c2\rig5g\a85\frames_wave\0171.png'
+00:06.984  render           | Saved: 'D:\scratch 2026\her-c2\rig5g\a85\frames_wave\0172.png'
+00:07.625  render           | Saved: 'D:\scratch 2026\her-c2\rig5g\a85\frames_wave\0173.png'
+00:08.281  render           | Saved: 'D:\scratch 2026\her-c2\rig5g\a85\frames_wave\0174.png'
+00:08.906  render           | Saved: 'D:\scratch 2026\her-c2\rig5g\a85\frames_wave\0175.png'
+00:09.515  render           | Saved: 'D:\scratch 2026\her-c2\rig5g\a85\frames_wave\0176.png'
+00:10.156  render           | Saved: 'D:\scratch 2026\her-c2\rig5g\a85\frames_wave\0177.png'
+RIG fit_cam yaw -35 d 1.35 target (-0.492, -1.2, 0.584)
+RIG movie wave: 8 frames 7.1s (0.89 s/frame), engine BLENDER_EEVEE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -1,0 +1,383 @@
+[
+ [
+  "#5 pupil 3.1 toga 36.9 inv 0",
+  {
+   "keys": {
+    "AU12_lip_corner_puller_L": 1.0,
+    "AU14_dimpler_L": 1.0,
+    "AU14_dimpler_R": 0.73,
+    "AU17_chin_raiser": 1.0,
+    "AU1_inner_brow_raiser_R": 0.79,
+    "AU22_lip_funneler": 1.0,
+    "AU23_lip_tightener": 0.04,
+    "AU4_brow_lowerer_R": 1.0,
+    "AU5_upper_lid_raiser_L": 1.0,
+    "AU6_cheek_raiser_R": 0.06,
+    "AU7_lid_tightener_L": 1.0,
+    "A": 0.86
+   },
+   "jaw": 0.35982867465633295,
+   "jaw_side": -0.2918546060297351,
+   "look": [
+    -6.886714004792154,
+    -13.136310024127607
+   ],
+   "lid_up": {
+    "L": 1,
+    "R": 0.9762135985379969
+   },
+   "lid_lo": {
+    "L": 0.7381497979262928,
+    "R": 0.20759760353006396
+   }
+  }
+ ],
+ [
+  "#15 pupil 3.1 toga 28.1 inv 0",
+  {
+   "keys": {
+    "AU12_lip_corner_puller_L": 0.11,
+    "AU12_lip_corner_puller_R": 0.85,
+    "AU14_dimpler_L": 0.03,
+    "AU14_dimpler_R": 1.0,
+    "AU16_lower_lip_depressor_L": 0.64,
+    "AU18_lip_pucker": 0.76,
+    "AU1_inner_brow_raiser_L": 1.0,
+    "AU20_lip_stretcher_L": 1.0,
+    "AU24_lip_presser": 0.92,
+    "AU2_outer_brow_raiser_L": 0.22,
+    "AU5_upper_lid_raiser_L": 0.74,
+    "AU6_cheek_raiser_R": 1.0
+   },
+   "jaw": 0.08965449522517566,
+   "jaw_side": 0.5817103579877272,
+   "look": [
+    36.76947784506051,
+    -18.803904227500368
+   ],
+   "lid_up": {
+    "L": 1,
+    "R": 0.8928674556573962
+   },
+   "lid_lo": {
+    "L": 0.42259875880396824,
+    "R": 0.5920848455520498
+   }
+  }
+ ],
+ [
+  "#39 pupil 3.1 toga 30.3 inv 0",
+  {
+   "keys": {
+    "AU10_upper_lip_raiser_L": 1.0,
+    "AU12_lip_corner_puller_L": 0.73,
+    "AU12_lip_corner_puller_R": 0.96,
+    "AU14_dimpler_L": 1.0,
+    "AU15_lip_corner_depressor_L": 1.0,
+    "AU16_lower_lip_depressor_L": 1.0,
+    "AU23_lip_tightener": 0.46,
+    "AU24_lip_presser": 0.92,
+    "AU2_outer_brow_raiser_L": 0.46,
+    "AU2_outer_brow_raiser_R": 1.0,
+    "AU5_upper_lid_raiser_L": 1.0,
+    "AU6_cheek_raiser_L": 1.0
+   },
+   "jaw": 0.7665711335079035,
+   "jaw_side": -0.630647951775555,
+   "look": [
+    -29.63758812765951,
+    -27.192039127179175
+   ],
+   "lid_up": {
+    "L": 0.8309396989856584,
+    "R": 0.9612810560745431
+   },
+   "lid_lo": {
+    "L": 0.2920476023253171,
+    "R": 0.9831518073559842
+   }
+  }
+ ],
+ [
+  "#54 pupil 3.1 toga 9.9 inv 0",
+  {
+   "keys": {
+    "AU10_upper_lip_raiser_R": 0.08,
+    "AU12_lip_corner_puller_R": 0.91,
+    "AU14_dimpler_R": 1.0,
+    "AU15_lip_corner_depressor_R": 0.29,
+    "AU16_lower_lip_depressor_L": 0.26,
+    "AU20_lip_stretcher_L": 0.44,
+    "AU2_outer_brow_raiser_R": 1.0,
+    "AU5_upper_lid_raiser_L": 1.0,
+    "AU5_upper_lid_raiser_R": 0.3,
+    "C": 0.52
+   },
+   "jaw": 0,
+   "jaw_side": -0.23831153789919401,
+   "look": [
+    32.17309585661526,
+    -25.317966810025737
+   ],
+   "lid_up": {
+    "L": 0.779638342750211,
+    "R": 0.9749831054635076
+   },
+   "lid_lo": {
+    "L": 0.38992288039163514,
+    "R": 0.6793428093405404
+   }
+  }
+ ],
+ [
+  "#83 pupil 3.1 toga 31.2 inv 0",
+  {
+   "keys": {
+    "AU10_upper_lip_raiser_L": 0.56,
+    "AU10_upper_lip_raiser_R": 1.0,
+    "AU16_lower_lip_depressor_L": 0.11,
+    "AU1_inner_brow_raiser_R": 1.0,
+    "AU20_lip_stretcher_R": 1.0,
+    "AU22_lip_funneler": 0.41,
+    "AU23_lip_tightener": 1.0,
+    "AU2_outer_brow_raiser_R": 0.34,
+    "AU4_brow_lowerer_R": 1.0,
+    "AU5_upper_lid_raiser_R": 0.23,
+    "AU6_cheek_raiser_R": 0.6,
+    "A": 0.93
+   },
+   "jaw": 0,
+   "jaw_side": -0.377432331590154,
+   "look": [
+    29.231814851127822,
+    -15.015833892588574
+   ],
+   "lid_up": {
+    "L": 0,
+    "R": 0.9633484936579816
+   },
+   "lid_lo": {
+    "L": 0.1374333017084458,
+    "R": 0.692353162650569
+   }
+  }
+ ],
+ [
+  "#84 pupil 3.1 toga 21.2 inv 0",
+  {
+   "keys": {
+    "AU10_upper_lip_raiser_L": 1.0,
+    "AU10_upper_lip_raiser_R": 0.53,
+    "AU14_dimpler_L": 1.0,
+    "AU15_lip_corner_depressor_L": 0.62,
+    "AU15_lip_corner_depressor_R": 1.0,
+    "AU16_lower_lip_depressor_L": 1.0,
+    "AU16_lower_lip_depressor_R": 1.0,
+    "AU25_lips_part": 0.05,
+    "AU4_brow_lowerer_L": 1.0,
+    "AU4_brow_lowerer_R": 0.91,
+    "AU5_upper_lid_raiser_L": 0.23,
+    "X": 0.87
+   },
+   "jaw": 0,
+   "jaw_side": 0.031947107659805685,
+   "look": [
+    -21.31285518950201,
+    -32.63194606278521
+   ],
+   "lid_up": {
+    "L": 1,
+    "R": 0.8455079163136743
+   },
+   "lid_lo": {
+    "L": 0.02803325705278037,
+    "R": 0.31797544499052277
+   }
+  }
+ ],
+ [
+  "#410 pupil 1.9 toga -1.4 inv 0",
+  {
+   "keys": {
+    "AU10_upper_lip_raiser_R": 0.07,
+    "AU15_lip_corner_depressor_L": 1.0,
+    "AU1_inner_brow_raiser_L": 1.0,
+    "AU20_lip_stretcher_L": 1.0,
+    "AU20_lip_stretcher_R": 1.0,
+    "AU2_outer_brow_raiser_L": 0.45,
+    "AU2_outer_brow_raiser_R": 1.0,
+    "AU4_brow_lowerer_L": 0.85,
+    "AU4_brow_lowerer_R": 1.0,
+    "AU5_upper_lid_raiser_L": 0.67,
+    "AU6_cheek_raiser_R": 1.0,
+    "AU7_lid_tightener_R": 1.0,
+    "G": 0.48
+   },
+   "jaw": 0,
+   "jaw_side": 0.07126415579847523,
+   "look": [
+    -27.381358470532675,
+    2.899328913576781
+   ],
+   "lid_up": {
+    "L": 1,
+    "R": 0.3813209626216645
+   },
+   "lid_lo": {
+    "L": 0.8794128487096897,
+    "R": 0.5884296421425189
+   }
+  }
+ ],
+ [
+  "#237 pupil 0.1 toga -0.5 inv 0",
+  {
+   "keys": {
+    "AU14_dimpler_L": 0.47,
+    "AU16_lower_lip_depressor_L": 0.48,
+    "AU16_lower_lip_depressor_R": 0.52,
+    "AU20_lip_stretcher_R": 1.0,
+    "AU22_lip_funneler": 0.88,
+    "AU25_lips_part": 1.0,
+    "AU4_brow_lowerer_L": 1.0,
+    "AU4_brow_lowerer_R": 1.0,
+    "AU6_cheek_raiser_R": 0.82,
+    "X": 0.05
+   },
+   "jaw": 0.46515008923143986,
+   "jaw_side": 0.9188299127145971,
+   "look": [
+    -37.67472918737663,
+    23.820374205570758
+   ],
+   "lid_up": {
+    "L": 0.573339614093862,
+    "R": 0.5394527194318517
+   },
+   "lid_lo": {
+    "L": 0.2542238110219409,
+    "R": 0.040852408169333665
+   }
+  }
+ ],
+ [
+  "#234 pupil 3.1 toga 0.8 inv 0",
+  {
+   "keys": {
+    "AU12_lip_corner_puller_R": 0.16,
+    "AU16_lower_lip_depressor_R": 0.53,
+    "AU1_inner_brow_raiser_L": 0.05,
+    "AU1_inner_brow_raiser_R": 1.0,
+    "AU25_lips_part": 0.52,
+    "AU2_outer_brow_raiser_R": 1.0,
+    "AU4_brow_lowerer_L": 0.69,
+    "AU5_upper_lid_raiser_L": 0.51,
+    "AU6_cheek_raiser_L": 0.42,
+    "AU6_cheek_raiser_R": 0.73,
+    "C": 0.82
+   },
+   "jaw": 0.7450452126542503,
+   "jaw_side": 0.7040727285067894,
+   "look": [
+    -35.74798370030089,
+    -11.558668285721978
+   ],
+   "lid_up": {
+    "L": 1,
+    "R": 0.9615044307308049
+   },
+   "lid_lo": {
+    "L": 0.07412660357665601,
+    "R": 0.7420600173117774
+   }
+  }
+ ],
+ [
+  "#317 pupil -9.0 toga 1.9 inv 0",
+  {
+   "keys": {
+    "AU12_lip_corner_puller_L": 0.41,
+    "AU12_lip_corner_puller_R": 1.0,
+    "AU16_lower_lip_depressor_R": 0.64,
+    "AU1_inner_brow_raiser_L": 1.0,
+    "AU25_lips_part": 1.0,
+    "AU2_outer_brow_raiser_R": 1.0,
+    "AU5_upper_lid_raiser_R": 0.61,
+    "AU7_lid_tightener_R": 0.57
+   },
+   "jaw": 0,
+   "jaw_side": 0.8552838775340017,
+   "look": [
+    -35.92827697846693,
+    -24.526843604647716
+   ],
+   "lid_up": {
+    "L": 0,
+    "R": 0.3813838891399812
+   },
+   "lid_lo": {
+    "L": 0.7778844983256283,
+    "R": 0.6512223853000824
+   }
+  }
+ ],
+ [
+  "#171 pupil 0.0 toga 2.1 inv 0",
+  {
+   "keys": {
+    "AU10_upper_lip_raiser_R": 0.41,
+    "AU12_lip_corner_puller_L": 0.51,
+    "AU1_inner_brow_raiser_R": 0.21,
+    "AU20_lip_stretcher_R": 0.59,
+    "AU2_outer_brow_raiser_L": 1.0,
+    "AU4_brow_lowerer_L": 1.0,
+    "AU4_brow_lowerer_R": 0.1,
+    "AU6_cheek_raiser_R": 0.91
+   },
+   "jaw": 0.72496053627616,
+   "jaw_side": 0.9775992283709569,
+   "look": [
+    13.682815484975535,
+    9.136357217065502
+   ],
+   "lid_up": {
+    "L": 0.846288991216969,
+    "R": 0.10186935274720055
+   },
+   "lid_lo": {
+    "L": 0.6315017157171654,
+    "R": 0.6289648634621906
+   }
+  }
+ ],
+ [
+  "#129 pupil 1.9 toga 2.2 inv 0",
+  {
+   "keys": {
+    "AU12_lip_corner_puller_L": 1.0,
+    "AU12_lip_corner_puller_R": 1.0,
+    "AU14_dimpler_R": 1.0,
+    "AU16_lower_lip_depressor_R": 1.0,
+    "AU1_inner_brow_raiser_R": 0.07,
+    "AU2_outer_brow_raiser_L": 1.0,
+    "AU2_outer_brow_raiser_R": 0.89,
+    "AU5_upper_lid_raiser_L": 1.0,
+    "AU7_lid_tightener_R": 1.0
+   },
+   "jaw": 0.5662829147333476,
+   "jaw_side": 0.6947377268396784,
+   "look": [
+    11.21803441584084,
+    -22.16124027112472
+   ],
+   "lid_up": {
+    "L": 1,
+    "R": 0.6754066638993881
+   },
+   "lid_lo": {
+    "L": 0.8026978471395426,
+    "R": 0.49374358110779015
+   }
+  }
+ ]
+]

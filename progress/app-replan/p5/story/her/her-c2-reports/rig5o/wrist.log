@@ -1,0 +1,641 @@
+00:02.032  blend            | Read blend: "D:\scratch 2026\her-c2\rig5o\her-rig5o.blend"
+D:\claude os\Medical school\Herophilus\progress\app-replan\p5\story\her\rig_her.py:1674: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new('studio_floor_warm'); m.use_nodes = True
+00:05.469  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\rest_front_close.png'
+00:06.907  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\rest_3q.png'
+00:08.360  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\rest_side.png'
+00:10.313  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0000.png'
+00:12.422  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+00:14.141  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0000.png'
+00:16.188  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+00:18.125  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0001.png'
+00:20.125  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+00:21.985  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0001.png'
+00:24.094  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+00:26.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0002.png'
+00:28.188  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+00:30.110  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0002.png'
+00:32.453  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+00:34.407  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0003.png'
+00:36.500  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+00:38.532  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0003.png'
+00:40.688  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+00:42.813  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0004.png'
+00:44.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+00:47.125  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0004.png'
+00:49.688  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+00:51.844  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0005.png'
+00:54.047  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+00:56.172  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0005.png'
+00:58.391  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:00.422  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0006.png'
+01:02.469  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:04.547  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0006.png'
+01:06.750  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:08.578  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0007.png'
+01:10.469  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:12.282  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0007.png'
+01:14.344  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:16.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0008.png'
+01:18.063  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:19.797  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0008.png'
+01:21.672  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:23.563  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0009.png'
+01:25.438  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:27.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0009.png'
+01:29.141  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:30.938  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0010.png'
+01:32.719  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:34.532  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0010.png'
+01:36.672  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:38.594  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0011.png'
+01:40.391  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:42.141  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0011.png'
+01:44.188  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:46.110  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0012.png'
+01:47.985  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:49.797  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0012.png'
+01:51.688  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:53.516  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0013.png'
+01:55.360  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+01:57.047  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0013.png'
+01:59.110  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:01.032  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0014.png'
+02:02.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:04.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0014.png'
+02:07.063  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:09.047  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0015.png'
+02:10.938  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:12.828  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0015.png'
+02:14.844  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:16.813  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0016.png'
+02:18.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:20.407  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0016.png'
+02:22.297  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:24.203  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0017.png'
+02:26.047  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:27.782  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0017.png'
+02:29.782  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:31.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0018.png'
+02:33.797  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:35.578  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0018.png'
+02:37.500  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:39.344  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0019.png'
+02:41.125  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:42.922  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0019.png'
+02:44.875  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:46.703  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0020.png'
+02:48.453  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:50.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0020.png'
+02:52.172  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:53.953  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0021.png'
+02:55.813  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+02:57.625  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0021.png'
+02:59.719  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:01.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0022.png'
+03:03.563  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:05.297  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0022.png'
+03:07.203  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:08.953  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0023.png'
+03:10.844  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:12.563  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0023.png'
+03:14.375  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:16.078  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0024.png'
+03:17.985  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:19.657  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0024.png'
+03:21.422  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:23.063  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0025.png'
+03:25.016  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:26.782  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0025.png'
+03:28.453  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:30.235  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0026.png'
+03:32.063  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:33.703  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0026.png'
+03:35.328  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:37.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0027.png'
+03:38.985  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:40.578  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0027.png'
+03:42.235  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:44.125  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0028.png'
+03:45.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:47.797  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0028.png'
+03:49.610  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:51.782  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0029.png'
+03:53.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:55.953  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0029.png'
+03:57.813  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+03:59.844  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0030.png'
+04:01.985  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:03.813  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0030.png'
+04:05.813  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:07.782  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0031.png'
+04:09.875  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:11.703  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0031.png'
+04:13.610  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:15.532  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0032.png'
+04:17.578  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:19.422  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0032.png'
+04:21.422  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:23.360  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0033.png'
+04:25.297  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:27.141  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0033.png'
+04:29.047  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:30.875  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0034.png'
+04:32.907  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:34.719  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0034.png'
+04:36.719  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:38.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0035.png'
+04:40.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:42.625  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0035.png'
+04:44.563  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:46.422  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0036.png'
+04:48.391  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:50.282  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0036.png'
+04:52.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:54.125  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0037.png'
+04:56.078  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+04:57.922  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0037.png'
+04:59.938  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:01.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0038.png'
+05:03.797  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:05.782  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0038.png'
+05:07.688  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:09.610  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0039.png'
+05:11.625  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:13.563  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0039.png'
+05:15.532  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:17.516  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0040.png'
+05:19.625  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:21.500  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0040.png'
+05:23.469  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:25.344  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0041.png'
+05:27.438  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:29.282  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0041.png'
+05:31.297  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:33.157  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0042.png'
+05:35.360  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:37.188  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0042.png'
+05:39.016  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:40.891  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0043.png'
+05:42.844  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:44.625  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0043.png'
+05:46.563  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:48.578  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0044.png'
+05:50.735  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:52.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0044.png'
+05:54.563  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+05:56.422  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0045.png'
+05:58.422  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:00.078  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0045.png'
+06:01.828  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:03.578  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0046.png'
+06:05.578  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:07.188  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0046.png'
+06:09.016  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:10.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0047.png'
+06:12.657  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:14.391  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0047.png'
+06:16.375  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:18.063  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0048.png'
+06:20.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:21.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0048.png'
+06:23.532  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:25.375  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0049.png'
+06:27.235  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:28.907  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0049.png'
+06:30.719  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:32.453  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0050.png'
+06:34.328  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:35.844  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0050.png'
+06:37.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:39.391  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0051.png'
+06:41.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:42.782  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0051.png'
+06:44.547  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:46.203  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0052.png'
+06:48.203  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:49.688  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0052.png'
+06:51.203  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:52.797  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0053.png'
+06:54.657  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:56.063  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0053.png'
+06:57.563  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+06:59.141  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0054.png'
+07:01.047  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:02.500  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0054.png'
+07:04.063  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:05.828  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0055.png'
+07:07.703  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:09.203  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0055.png'
+07:10.860  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:12.469  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0056.png'
+07:14.360  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:15.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0056.png'
+07:17.344  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:19.032  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0057.png'
+07:20.953  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:22.469  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0057.png'
+07:24.188  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:25.891  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0058.png'
+07:27.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:29.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0058.png'
+07:30.688  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:32.375  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0059.png'
+07:34.235  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:35.672  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0059.png'
+07:37.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:39.078  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0060.png'
+07:40.953  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:42.438  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0060.png'
+07:44.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:45.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0061.png'
+07:47.657  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:49.250  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0061.png'
+07:50.938  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:52.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0062.png'
+07:54.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:56.375  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0062.png'
+07:58.157  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+07:59.907  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0063.png'
+08:01.907  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:03.735  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0063.png'
+08:05.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:07.453  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0064.png'
+08:09.344  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:11.078  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0064.png'
+08:13.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:14.782  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0065.png'
+08:16.703  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:18.438  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0065.png'
+08:20.360  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:22.094  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0066.png'
+08:23.985  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:25.703  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0066.png'
+08:27.578  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:29.344  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0067.png'
+08:31.157  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:32.797  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0067.png'
+08:34.703  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:36.375  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0068.png'
+08:38.125  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:39.672  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0068.png'
+08:41.719  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:43.407  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0069.png'
+08:45.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:46.844  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0069.png'
+08:48.750  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:50.469  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0070.png'
+08:52.250  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:53.907  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0070.png'
+08:55.797  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+08:57.532  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0071.png'
+08:59.375  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:01.125  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0071.png'
+09:03.032  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:04.844  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0072.png'
+09:06.672  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:08.407  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0072.png'
+09:10.485  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:12.250  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0073.png'
+09:14.032  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:15.719  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0073.png'
+09:17.813  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:19.594  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0074.png'
+09:21.485  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:23.328  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0074.png'
+09:25.235  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:27.157  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0075.png'
+09:29.172  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:30.985  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0075.png'
+09:33.032  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:34.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0076.png'
+09:37.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:38.735  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0076.png'
+09:40.688  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:42.516  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0077.png'
+09:44.563  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:46.344  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0077.png'
+09:48.344  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:50.188  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0078.png'
+09:52.172  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:53.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0078.png'
+09:55.875  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+09:57.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0079.png'
+09:59.828  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:01.532  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0079.png'
+10:03.610  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:05.625  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0080.png'
+10:07.657  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:09.469  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0080.png'
+10:11.532  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:13.500  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0081.png'
+10:15.563  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:17.469  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0081.png'
+10:19.578  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:21.469  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0082.png'
+10:23.453  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:25.250  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0082.png'
+10:27.063  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:28.844  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0083.png'
+10:30.860  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:32.875  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0083.png'
+10:34.875  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:36.625  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0084.png'
+10:38.485  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:40.375  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0084.png'
+10:42.594  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:44.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0085.png'
+10:46.828  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:48.672  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0085.png'
+10:50.672  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:52.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0086.png'
+10:54.516  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+10:56.360  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0086.png'
+10:58.172  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:00.032  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0087.png'
+11:01.875  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:03.516  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0087.png'
+11:05.391  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:07.188  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0088.png'
+11:08.985  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:10.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0088.png'
+11:12.688  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:15.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0089.png'
+11:17.532  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:19.391  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0089.png'
+11:21.266  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:23.282  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0090.png'
+11:25.703  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:27.532  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0090.png'
+11:29.469  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:31.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0091.png'
+11:33.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:35.016  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0091.png'
+11:36.938  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:38.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0092.png'
+11:40.735  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:42.516  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0092.png'
+11:44.438  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:46.360  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0093.png'
+11:48.469  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:50.266  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0093.png'
+11:52.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:54.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0094.png'
+11:56.094  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+11:57.719  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0094.png'
+11:59.563  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:01.422  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0095.png'
+12:03.375  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:05.282  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0095.png'
+12:07.157  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:08.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0096.png'
+12:10.938  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:12.563  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0096.png'
+12:14.297  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:16.016  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0097.png'
+12:17.953  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:19.672  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0097.png'
+12:21.610  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:23.407  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0098.png'
+12:25.328  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:26.922  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0098.png'
+12:28.657  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:30.391  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0099.png'
+12:32.360  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:34.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0099.png'
+12:35.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:37.610  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0100.png'
+12:39.516  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:41.297  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0100.png'
+12:43.141  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:45.094  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0101.png'
+12:47.203  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:48.938  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0101.png'
+12:50.938  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:52.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0102.png'
+12:54.625  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:56.297  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0102.png'
+12:58.141  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+12:59.891  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0103.png'
+13:01.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:03.344  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0103.png'
+13:05.250  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:06.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0104.png'
+13:08.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:10.578  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0104.png'
+13:12.532  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:14.250  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0105.png'
+13:15.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:17.672  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0105.png'
+13:19.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:21.610  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0106.png'
+13:23.532  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:25.391  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0106.png'
+13:27.282  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:29.063  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0107.png'
+13:30.922  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:32.594  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0107.png'
+13:34.407  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:36.141  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0108.png'
+13:37.953  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:39.516  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0108.png'
+13:41.453  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:43.641  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0109.png'
+13:46.032  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:47.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0109.png'
+13:49.907  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:51.953  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0110.png'
+13:53.953  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:55.547  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0110.png'
+13:57.407  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+13:59.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0111.png'
+14:01.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:02.985  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0111.png'
+14:04.735  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:06.547  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0112.png'
+14:08.500  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:10.219  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0112.png'
+14:11.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:13.703  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0113.png'
+14:15.453  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:16.844  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0113.png'
+14:18.391  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:20.016  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0114.png'
+14:21.953  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:23.547  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0114.png'
+14:25.078  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:26.907  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0115.png'
+14:28.750  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:30.407  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0115.png'
+14:32.110  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:33.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0116.png'
+14:35.797  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:37.407  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0116.png'
+14:39.141  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:41.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0117.png'
+14:42.969  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:44.672  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0117.png'
+14:46.360  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:48.297  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0118.png'
+14:50.266  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:52.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0118.png'
+14:53.860  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:55.797  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0119.png'
+14:57.735  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+14:59.578  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0119.png'
+15:01.407  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+15:03.297  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0120.png'
+15:05.344  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+15:07.094  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0120.png'
+15:08.953  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+15:10.860  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0121.png'
+15:12.907  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+15:14.688  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0121.png'
+15:16.594  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+15:18.375  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0122.png'
+15:20.328  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+15:22.157  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0122.png'
+15:23.938  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+15:25.875  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0123.png'
+15:27.750  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+15:29.485  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0123.png'
+15:31.313  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+15:33.188  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0124.png'
+15:35.063  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+15:36.813  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0124.png'
+15:38.547  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+15:40.391  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_front\0125.png'
+15:42.266  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+15:44.125  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\frames_wrist_tq\0125.png'
+15:46.063  render           | Saved: 'D:\scratch 2026\her-c2\rig5o\_noarm.png'
+RIG seen at rest {"front": [5, [44.5, 42.7, 44.5, 44.5, 44.5]], "tq": [5, [44.5, 44.4, 44.5, 44.5, 44.5]], "side": [0, []]}
+RIG seen 0 sup 0.0 front 5 [43.7, 43.7, 43.8, 43.8, 43.9]
+RIG seen 1 sup 0.0 front 4 [41.6, 44.1, 44.1, 44.2]
+RIG seen 2 sup 0.0 front 2 [41.8, 44.5]
+RIG seen 3 sup 0.0 front 1 [43.4]
+RIG seen 12 sup 0.0 front 2 [30.5, 33.9]
+RIG seen 21 sup 0.0 front 1 [43.4]
+RIG seen 22 sup 0.0 front 2 [41.8, 44.5]
+RIG seen 23 sup 0.0 front 4 [41.6, 44.1, 44.1, 44.2]
+RIG seen 24 sup 0.0 front 5 [43.7, 43.7, 43.8, 43.8, 43.9]
+RIG seen 25 sup 0.0 front 6 [42.6, 43.4, 43.4, 43.4, 43.4, 44.0]
+RIG seen 26 sup 0.0 front 4 [38.2, 42.3, 43.7, 43.7]
+RIG seen 27 sup 0.0 front 2 [37.7, 43.3]
+RIG seen 29 sup 0.0 tq 2 [40.2, 42.8]
+RIG seen 30 sup 0.0 front 1 [38.2]
+RIG seen 30 sup 0.0 tq 3 [39.9, 42.6, 44.0]
+RIG seen 31 sup 0.0 front 1 [38.0]
+RIG seen 31 sup 0.0 tq 2 [39.9, 43.7]
+RIG seen 32 sup 0.0 front 3 [37.9, 37.9, 37.9]
+RIG seen 32 sup 0.0 tq 2 [39.4, 39.5]
+RIG seen 40 sup 0.0 front 3 [37.9, 37.9, 37.9]
+RIG seen 40 sup 0.0 tq 2 [39.4, 39.5]
+RIG seen 41 sup 0.0 front 1 [38.0]
+RIG seen 41 sup 0.0 tq 2 [39.9, 43.7]
+RIG seen 42 sup 0.0 front 1 [38.2]
+RIG seen 42 sup 0.0 tq 3 [39.9, 42.6, 44.0]
+RIG seen 43 sup 0.0 tq 2 [40.2, 42.8]
+RIG seen 45 sup 0.0 front 2 [37.7, 43.3]
+RIG seen 46 sup 0.0 front 4 [38.2, 42.3, 43.7, 43.7]
+RIG seen 47 sup 0.0 front 6 [42.6, 43.4, 43.4, 43.4, 43.4, 44.0]
+RIG seen 48 flex 0.0 front 5 [43.7, 43.7, 43.8, 43.8, 43.9]
+RIG seen 49 flex 14.6 front 3 [44.0, 44.0, 44.0]
+RIG seen 50 flex 28.5 front 2 [44.2, 44.2]
+RIG seen 51 flex 41.1 front 3 [40.8, 44.2, 44.3]
+RIG seen 52 flex 52.0 front 3 [41.0, 44.2, 44.3]
+RIG seen 53 flex 60.6 front 4 [40.8, 40.9, 44.2, 44.2]
+RIG seen 54 flex 66.6 front 2 [44.2, 44.2]
+RIG seen 55 flex 69.6 front 3 [40.9, 44.2, 44.2]
+RIG seen 56 flex 69.6 front 3 [40.9, 44.2, 44.2]
+RIG seen 57 flex 66.6 front 2 [44.2, 44.2]
+RIG seen 58 flex 60.6 front 4 [40.8, 40.9, 44.2, 44.2]
+RIG seen 59 flex 52.0 front 3 [41.0, 44.2, 44.3]
+RIG seen 60 flex 41.1 front 3 [40.8, 44.2, 44.3]
+RIG seen 61 flex 28.5 front 2 [44.2, 44.2]
+RIG seen 62 flex 14.6 front 3 [44.0, 44.0, 44.0]
+RIG seen 63 flex 0.0 front 5 [43.7, 43.7, 43.8, 43.8, 43.9]
+RIG seen 64 flex -14.6 front 9 [38.7, 41.1, 42.5, 43.4, 43.4, 43.4, 43.4, 43.5, 44.1]
+RIG seen 65 flex -28.5 front 8 [40.7, 42.1, 42.2, 42.9, 42.9, 43.0, 43.1, 43.7]
+RIG seen 65 flex -28.5 tq 1 [42.0]
+RIG seen 66 flex -41.1 front 11 [38.8, 40.1, 40.4, 41.6, 41.8, 42.4, 42.4, 42.5, 42.5, 42.7, 43.3]
+RIG seen 66 flex -41.1 tq 1 [41.4]
+RIG seen 67 flex -52.0 front 11 [38.2, 39.6, 39.9, 41.1, 41.3, 41.9, 41.9, 42.0, 42.0, 42.2, 42.9]
+RIG seen 67 flex -52.0 tq 3 [40.6, 40.8, 42.3]
+RIG seen 68 flex -60.6 front 14 [31.8, 37.7, 38.2, 39.1, 39.5, 40.6, 40.9, 41.5, 41.5, 41.6, 41.6, 41.9, 42.2, 42.5]
+RIG seen 68 flex -60.6 tq 3 [40.0, 40.3, 41.8]
+RIG seen 69 flex -66.6 front 15 [30.7, 30.7, 30.9, 37.6, 38.0, 38.9, 39.4, 40.4, 40.8, 41.4, 41.4, 41.5, 41.7, 42.1, 42.4]
+RIG seen 69 flex -66.6 tq 4 [38.2, 39.8, 40.1, 41.6]
+RIG seen 70 flex -69.6 front 12 [37.6, 38.0, 38.9, 39.3, 40.4, 40.8, 41.3, 41.3, 41.4, 41.7, 42.1, 42.3]
+RIG seen 70 flex -69.6 tq 4 [38.1, 39.7, 40.0, 41.5]
+RIG seen 71 flex -69.6 front 12 [37.6, 38.0, 38.9, 39.3, 40.4, 40.8, 41.3, 41.3, 41.4, 41.7, 42.1, 42.3]
+RIG seen 71 flex -69.6 tq 4 [38.1, 39.7, 40.0, 41.5]
+RIG seen 72 flex -66.6 front 15 [30.7, 30.7, 30.9, 37.6, 38.0, 38.9, 39.4, 40.4, 40.8, 41.4, 41.4, 41.5, 41.7, 42.1, 42.4]
+RIG seen 72 flex -66.6 tq 4 [38.2, 39.8, 40.1, 41.6]
+RIG seen 73 flex -60.6 front 14 [31.8, 37.7, 38.2, 39.1, 39.5, 40.6, 40.9, 41.5, 41.5, 41.6, 41.6, 41.9, 42.2, 42.5]
+RIG seen 73 flex -60.6 tq 3 [40.0, 40.3, 41.8]
+RIG seen 74 flex -52.0 front 11 [38.2, 39.6, 39.9, 41.1, 41.3, 41.9, 41.9, 42.0, 42.0, 42.2, 42.9]
+RIG seen 74 flex -52.0 tq 3 [40.6, 40.8, 42.3]
+RIG seen 75 flex -41.1 front 11 [38.8, 40.1, 40.4, 41.6, 41.8, 42.4, 42.4, 42.5, 42.5, 42.7, 43.3]
+RIG seen 75 flex -41.1 tq 1 [41.4]
+RIG seen 76 flex -28.5 front 8 [40.7, 42.1, 42.2, 42.9, 42.9, 43.0, 43.1, 43.7]
+RIG seen 76 flex -28.5 tq 1 [42.0]
+RIG seen 77 flex -14.6 front 9 [38.7, 41.1, 42.5, 43.4, 43.4, 43.4, 43.4, 43.5, 44.1]
+RIG seen 78 dev 0.0 front 5 [43.7, 43.7, 43.8, 43.8, 43.9]
+RIG seen 79 dev 0.0 front 7 [41.2, 42.6, 43.6, 43.6, 43.7, 43.8, 44.1]
+RIG seen 80 dev 0.0 front 7 [40.9, 42.4, 43.4, 43.4, 43.5, 43.7, 43.9]
+RIG seen 81 dev 0.0 front 8 [40.7, 42.1, 42.2, 43.2, 43.3, 43.4, 43.6, 43.7]
+RIG seen 82 dev 0.0 front 9 [40.5, 42.0, 42.0, 43.1, 43.1, 43.2, 43.3, 43.5, 43.5]
+RIG seen 83 dev 0.0 front 9 [40.3, 41.8, 41.9, 43.0, 43.0, 43.1, 43.2, 43.4, 43.4]
+RIG seen 84 dev 0.0 front 9 [40.3, 41.8, 41.9, 43.0, 43.0, 43.1, 43.2, 43.4, 43.4]
+RIG seen 85 dev 0.0 front 9 [40.3, 41.8, 41.9, 43.0, 43.0, 43.1, 43.2, 43.4, 43.4]
+RIG seen 86 dev 0.0 front 9 [40.5, 42.0, 42.0, 43.1, 43.1, 43.2, 43.3, 43.5, 43.5]
+RIG seen 87 dev 0.0 front 8 [40.7, 42.1, 42.2, 43.2, 43.3, 43.4, 43.6, 43.7]
+RIG seen 88 dev 0.0 front 7 [40.9, 42.4, 43.4, 43.4, 43.5, 43.7, 43.9]
+RIG seen 89 dev 0.0 front 7 [41.2, 42.6, 43.6, 43.6, 43.7, 43.8, 44.1]
+RIG seen 90 dev 0.0 front 5 [43.7, 43.7, 43.8, 43.8, 43.9]
+RIG seen 91 dev 0.0 front 5 [38.9, 43.9, 44.0, 44.0, 44.0]
+RIG seen 92 dev 0.0 front 3 [44.1, 44.1, 44.1]
+RIG seen 93 dev 0.0 front 3 [44.1, 44.2, 44.2]
+RIG seen 94 dev 0.0 front 3 [44.2, 44.2, 44.3]
+RIG seen 95 dev 0.0 front 3 [44.2, 44.2, 44.3]
+RIG seen 96 dev 0.0 front 3 [44.2, 44.2, 44.3]
+RIG seen 97 dev 0.0 front 3 [44.2, 44.2, 44.3]
+RIG seen 98 dev 0.0 front 3 [44.2, 44.2, 44.3]
+RIG seen 99 dev 0.0 front 3 [44.1, 44.2, 44.2]
+RIG seen 100 dev 0.0 front 3 [44.1, 44.1, 44.1]
+RIG seen 101 dev 0.0 front 5 [38.9, 43.9, 44.0, 44.0, 44.0]
+RIG seen 102 combo 0.0 front 12 [38.6, 38.7, 40.1, 41.6, 41.7, 41.8, 42.9, 42.9, 42.9, 43.1, 43.3, 43.3]
+RIG seen 103 combo 5.7 front 9 [40.3, 41.8, 41.8, 41.9, 43.0, 43.1, 43.2, 43.4, 43.4]
+RIG seen 104 combo 11.0 front 10 [40.4, 41.9, 41.9, 41.9, 43.1, 43.2, 43.2, 43.4, 43.5, 43.5]
+RIG seen 105 combo 15.6 front 9 [40.5, 42.0, 42.0, 42.0, 43.3, 43.4, 43.5, 43.6, 43.7]
+RIG seen 106 combo 19.1 front 7 [40.6, 42.1, 43.4, 43.5, 43.6, 43.6, 43.7]
+RIG seen 107 combo 21.3 front 5 [42.7, 43.8, 43.8, 43.9, 44.0]
+RIG seen 108 combo 22.0 front 2 [44.1, 44.1]
+RIG seen 109 combo 21.3 front 2 [44.3, 44.3]
+RIG seen 110 combo 19.1 front 2 [44.4, 44.4]
+RIG seen 111 combo 15.6 front 1 [44.4]
+RIG seen 112 combo 11.0 front 1 [44.4]
+RIG seen 113 combo 5.7 front 3 [44.3, 44.3, 44.4]
+RIG seen 114 combo 0.0 front 3 [44.2, 44.2, 44.3]
+RIG seen 115 combo -5.7 front 3 [44.1, 44.2, 44.2]
+RIG seen 116 combo -11.0 front 3 [44.1, 44.1, 44.2]
+RIG seen 117 combo -15.6 front 5 [39.0, 43.9, 43.9, 44.0, 44.0]
+RIG seen 118 combo -19.1 front 5 [43.7, 43.7, 43.8, 43.8, 43.9]
+RIG seen 119 combo -21.3 front 8 [38.8, 41.4, 41.6, 43.5, 43.5, 43.5, 43.6, 43.6]
+RIG seen 120 combo -22.0 front 9 [40.9, 42.3, 42.4, 43.1, 43.1, 43.2, 43.2, 43.3, 43.9]
+RIG seen 121 combo -21.3 front 9 [39.0, 40.3, 41.8, 41.9, 42.8, 42.8, 42.9, 43.1, 43.4]
+RIG seen 121 combo -21.3 tq 1 [41.9]
+RIG seen 122 combo -19.1 front 11 [38.4, 39.8, 40.0, 41.3, 41.5, 42.4, 42.5, 42.5, 42.6, 42.8, 43.0]
+RIG seen 122 combo -19.1 tq 1 [41.6]
+RIG seen 123 combo -15.6 front 10 [38.4, 39.8, 40.0, 41.3, 41.5, 42.5, 42.5, 42.7, 42.9, 43.1]
+RIG seen 123 combo -15.6 tq 1 [41.7]
+RIG seen 124 combo -11.0 front 10 [38.5, 39.9, 40.1, 41.4, 41.6, 42.6, 42.7, 42.8, 43.0, 43.1]
+RIG seen 125 combo -5.7 front 12 [38.6, 40.0, 40.2, 41.4, 41.5, 41.7, 42.7, 42.7, 42.8, 42.9, 43.1, 43.2]
+RIG gate 5l {"seam_open_max_mm": 0.528, "seam_open_sup_max_mm": 0.392, "seen_front_max": 15, "seen_tq_max": 4, "seen_pts_min": 865, "mouth_verts": 12, "rim_verts": 12, "rest_seam_mm_max": 19.95, "worst_seam_frame": 53, "gate_seam_mm": 1.0, "gate_seen": 0, "pass": false, "seen_rest": {"front": 5, "tq": 5, "side": 0}}
+RIG orange gate 5k {"sup": {"frames": 23, "front_max": 3069, "tq_max": 537, "sup_range_deg": [11.1, 85.0]}, "pron": {"frames": 23, "front_max": 0, "tq_max": 1, "sup_range_deg": [-85.0, -11.1]}, "all_frames_front_max": 3069, "all_frames_tq_max": 537, "gate_px": 2, "pass": false}
+RIG poke {"arm_past_cap_max": 35, "arm_past_cap_max_mm": 36.343, "orange_front_max": 3069, "orange_tq_max": 537, "orange_gate_5k": {"sup": {"frames": 23, "front_max": 3069, "tq_max": 537, "sup_range_deg": [11.1, 85.0]}, "pron": {"frames": 23, "front_max": 0, "tq_max": 1, "sup_range_deg": [-85.0, -11.1]}, "all_frames_front_max": 3069, "all_frames_tq_max": 537, "gate_px": 2, "pass": false}, "gate_5l": {"seam_open_max_mm": 0.528, "seam_open_sup_max_mm": 0.392, "seen_front_max": 15, "seen_tq_max": 4, "seen_pts_min": 865, "mouth_verts": 12, "rim_verts": 12, "rest_seam_mm_max": 19.95, "worst_seam_frame": 53, "gate_seam_mm": 1.0, "gate_seen": 0, "pass": false, "seen_rest": {"front": 5, "tq": 5, "side": 0}}}
+RIG wrist metrics {"sup": {"frames": 48, "fold_pairs_max": 0, "pinch_faces_max": 0, "stretch_faces_max": 0}, "flex": {"frames": 30, "fold_pairs_max": 1, "pinch_faces_max": 4, "stretch_faces_max": 0}, "dev": {"frames": 24, "fold_pairs_max": 0, "pinch_faces_max": 0, "stretch_faces_max": 0}, "combo": {"frames": 24, "fold_pairs_max": 0, "pinch_faces_max": 0, "stretch_faces_max": 0}, "worst_fold_frame": 68, "poke": {"arm_past_cap_max": 35, "arm_past_cap_max_mm": 36.343, "orange_front_max": 3069, "orange_tq_max": 537, "series": {"arm_past_cap": [32, 34, 34, 34, 34, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 34, 34, 34, 34, 32, 32, 32, 32, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 32, 32, 32, 32, 31, 30, 29, 29, 30, 30, 31, 31, 30, 30, 29, 29, 30, 31, 32, 34, 34, 34, 33, 35, 34, 34, 34, 34, 35, 33, 34, 34, 34, 32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 32, 33, 32, 31, 31, 31, 31, 31, 31, 31, 32, 33, 33, 33, 33, 33, 33, 32, 31, 30, 30, 30, 29, 29, 30, 30, 29, 30, 32, 33, 34, 34, 34, 34, 34, 34], "arm_past_cap_max_mm": [33.35, 33.425, 33.5, 33.567, 33.626, 33.675, 33.717, 33.75, 33.776, 33.796, 33.809, 33.817, 33.82, 33.817, 33.809, 33.796, 33.776, 33.75, 33.717, 33.675, 33.626, 33.567, 33.5, 33.425, 33.35, 33.413, 33.47, 33.52, 33.562, 33.597, 33.625, 33.647, 33.663, 33.675, 33.678, 33.678, 33.678, 33.678, 33.678, 33.675, 33.663, 33.647, 33.625, 33.597, 33.562, 33.52, 33.47, 33.413, 33.35, 33.236, 33.197, 33.227, 33.305, 33.398, 33.476, 33.519, 33.519, 33.476, 33.398, 33.305, 33.227, 33.197, 33.236, 33.35, 34.545, 35.469, 36.05, 36.311, 36.343, 36.334, 36.333, 36.333, 36.334, 36.343, 36.311, 36.05, 35.469, 34.545, 33.35, 33.961, 34.468, 34.853, 35.117, 35.269, 35.318, 35.269, 35.117, 34.853, 34.468, 33.961, 33.35, 32.601, 31.789, 31.005, 30.355, 29.927, 29.778, 29.927, 30.355, 31.005, 31.789, 32.601, 35.363, 35.406, 35.428, 35.417, 35.382, 34.52, 33.206, 31.579, 29.814, 28.158, 27.982, 28.482, 28.997, 29.494, 30.349, 31.806, 33.166, 34.283, 35.072, 35.519, 35.667, 35.636, 35.47, 35.297], "orange_front": [0, 0, 0, 26, 790, 1547, 1871, 2365, 2651, 2853, 2986, 3048, 3069, 3048, 2987, 2853, 2651, 2365, 1871, 1547, 790, 26, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "orange_tq": [0, 0, 1, 141, 378, 515, 537, 488, 406, 292, 199, 155, 145, 155, 199, 293, 406, 488, 537, 515, 378, 141, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 2, 5, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 4, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0], "seam_open_mm": [0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.392, 0.376, 0.32, 0.419, 0.513, 0.528, 0.51, 0.493, 0.493, 0.51, 0.528, 0.513, 0.419, 0.32, 0.376, 0.392, 0.454, 0.412, 0.274, 0.174, 0.137, 0.126, 0.123, 0.123, 0.126, 0.137, 0.174, 0.274, 0.412, 0.454, 0.392, 0.41, 0.417, 0.418, 0.413, 0.409, 0.406, 0.409, 0.413, 0.418, 0.417, 0.41, 0.392, 0.352, 0.335, 0.321, 0.31, 0.302, 0.299, 0.302, 0.31, 0.321, 0.335, 0.352, 0.422, 0.431, 0.455, 0.465, 0.466, 0.43, 0.351, 0.248, 0.145, 0.088, 0.151, 0.212, 0.264, 0.306, 0.341, 0.373, 0.401, 0.426, 0.447, 0.466, 0.484, 0.497, 0.497, 0.475], "seen_front": [5, 4, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 4, 5, 6, 4, 2, 0, 0, 1, 1, 3, 0, 0, 0, 0, 0, 0, 0, 3, 1, 1, 0, 0, 2, 4, 6, 5, 3, 2, 3, 3, 4, 2, 3, 3, 2, 4, 3, 3, 2, 3, 5, 9, 8, 11, 11, 14, 15, 12, 12, 15, 14, 11, 11, 8, 9, 5, 7, 7, 8, 9, 9, 9, 9, 9, 8, 7, 7, 5, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 12, 9, 10, 9, 7, 5, 2, 2, 2, 1, 1, 3, 3, 3, 3, 5, 5, 8, 9, 9, 11, 10, 10, 12], "seen_tq": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 2, 2, 0, 0, 0, 0, 0, 0, 0, 2, 2, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3, 3, 4, 4, 4, 4, 3, 3, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0], "seen_pts": [897, 897, 895, 895, 896, 896, 893, 893, 891, 891, 882, 882, 881, 881, 883, 883, 883, 883, 884, 884, 883, 883, 883, 883, 882, 882, 883, 883, 883, 883, 884, 884, 883, 883, 883, 883, 881, 881, 882, 882, 891, 891, 893, 893, 896, 896, 895, 895, 897, 897, 898, 898, 898, 898, 900, 900, 899, 899, 893, 893, 894, 894, 898, 898, 898, 898, 896, 896, 897, 897, 897, 897, 897, 897, 897, 897, 897, 897, 896, 896, 898, 898, 898, 898, 894, 894, 893, 893, 899, 899, 900, 900, 898, 898, 898, 898, 897, 897, 888, 888, 885, 885, 879, 879, 875, 875, 868, 868, 865, 865, 865, 865, 865, 865, 865, 865, 868, 868, 875, 875, 879, 879, 885, 885, 888, 888, 897, 897, 907, 907, 910, 910, 919, 919, 921, 921, 926, 926, 926, 926, 926, 926, 926, 926, 926, 926, 926, 926, 921, 921, 919, 919, 910, 910, 907, 907, 897, 897, 900, 900, 904, 904, 905, 905, 908, 908, 908, 908, 908, 908, 908, 908, 908, 908, 905, 905, 904, 904, 900, 900, 897, 897, 893, 893, 889, 889, 885, 885, 881, 881, 877, 877, 877, 877, 877, 877, 881, 881, 885, 885, 889, 889, 893, 893, 913, 913, 908, 908, 908, 908, 905, 905, 901, 901, 895, 895, 889, 889, 880, 880, 875, 875, 874, 874, 876, 876, 872, 872, 878, 878, 880, 880, 884, 884, 889, 889, 892, 892, 897, 897, 905, 905, 915, 915, 921, 921, 920, 920, 916, 916, 914, 914]}, "sup": [0.0, 11.1, 22.0, 32.5, 42.5, 51.7, 60.1, 67.4, 73.6, 78.5, 82.1, 84.3, 85.0, 84.3, 82.1, 78.5, 73.6, 67.4, 60.1, 51.7, 42.5, 32.5, 22.0, 11.1, 0.0, -11.1, -22.0, -32.5, -42.5, -51.7, -60.1, -67.4, -73.6, -78.5, -82.1, -84.3, -85.0, -84.3, -82.1, -78.5, -73.6, -67.4, -60.1, -51.7, -42.5, -32.5, -22.0, -11.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "kind": ["sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "sup", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "flex", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "dev", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo", "combo"], "orange_gate_5k": {"sup": {"frames": 23, "front_max": 3069, "tq_max": 537, "sup_range_deg": [11.1, 85.0]}, "pron": {"frames": 23, "front_max": 0, "tq_max": 1, "sup_range_deg": [-85.0, -11.1]}, "all_frames_front_max": 3069, "all_frames_tq_max": 537, "gate_px": 2, "pass": false}, "gate_5l": {"seam_open_max_mm": 0.528, "seam_open_sup_max_mm": 0.392, "seen_front_max": 15, "seen_tq_max": 4, "seen_pts_min": 865, "mouth_verts": 12, "rim_verts": 12, "rest_seam_mm_max": 19.95, "worst_seam_frame": 53, "gate_seam_mm": 1.0, "gate_seen": 0, "pass": false, "seen_rest": {"front": 5, "tq": 5, "side": 0}}}}
+RIG wrist sweep: 126 frames
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -1,0 +1,100 @@
+[
+ {
+  "tag": "swingZ+0_clavz+0",
+  "glove_gap_mm": 29.7,
+  "forearm_gap_mm": 0.0,
+  "upperarm_to_view_deg": 19.3,
+  "upperarm_proj_px600": 22.6,
+  "foreshorten_ratio": 0.33,
+  "elbow": [
+   -0.458,
+   -1.182,
+   0.688
+  ],
+  "elbow_above_shoulder_mm": -19
+ },
+ {
+  "tag": "swingZ-15_clavz+0",
+  "glove_gap_mm": 44.0,
+  "forearm_gap_mm": 0.0,
+  "upperarm_to_view_deg": 32.8,
+  "upperarm_proj_px600": 36.9,
+  "foreshorten_ratio": 0.54,
+  "elbow": [
+   -0.474,
+   -1.147,
+   0.688
+  ],
+  "elbow_above_shoulder_mm": -19
+ },
+ {
+  "tag": "swingZ+15_clavz+0",
+  "glove_gap_mm": 17.4,
+  "forearm_gap_mm": 0.0,
+  "upperarm_to_view_deg": 10.9,
+  "upperarm_proj_px600": 12.9,
+  "foreshorten_ratio": 0.19,
+  "elbow": [
+   -0.433,
+   -1.212,
+   0.688
+  ],
+  "elbow_above_shoulder_mm": -19
+ },
+ {
+  "tag": "swingZ-25_clavz+0",
+  "glove_gap_mm": 53.1,
+  "forearm_gap_mm": 0.0,
+  "upperarm_to_view_deg": 42.3,
+  "upperarm_proj_px600": 45.6,
+  "foreshorten_ratio": 0.67,
+  "elbow": [
+   -0.479,
+   -1.122,
+   0.688
+  ],
+  "elbow_above_shoulder_mm": -19
+ },
+ {
+  "tag": "swingZ-15_clavz+10",
+  "glove_gap_mm": 68.8,
+  "forearm_gap_mm": 0.0,
+  "upperarm_to_view_deg": 35.5,
+  "upperarm_proj_px600": 39.5,
+  "foreshorten_ratio": 0.58,
+  "elbow": [
+   -0.473,
+   -1.149,
+   0.651
+  ],
+  "elbow_above_shoulder_mm": -41
+ },
+ {
+  "tag": "swingZ-25_clavz+10",
+  "glove_gap_mm": 76.7,
+  "forearm_gap_mm": 0.0,
+  "upperarm_to_view_deg": 44.1,
+  "upperarm_proj_px600": 47.1,
+  "foreshorten_ratio": 0.7,
+  "elbow": [
+   -0.478,
+   -1.124,
+   0.651
+  ],
+  "elbow_above_shoulder_mm": -41
+ },
+ {
+  "tag": "swingZ-35_clavz+10",
+  "glove_gap_mm": 82.7,
+  "forearm_gap_mm": 0.0,
+  "upperarm_to_view_deg": 53.1,
+  "upperarm_proj_px600": 53.9,
+  "foreshorten_ratio": 0.8,
+  "elbow": [
+   -0.479,
+   -1.099,
+   0.651
+  ],
+  "elbow_above_shoulder_mm": -41
+ }
+]

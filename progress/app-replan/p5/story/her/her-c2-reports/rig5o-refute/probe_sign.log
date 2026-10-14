@@ -1,0 +1,37 @@
+00:02.656  blend            | Read blend: "D:\scratch 2026\her-c2\rig5o\her-rig5o.blend"
+D:/claude os/Medical school/Herophilus/progress/app-replan/p5/story/her/rig_her.py:1674: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new('studio_floor_warm'); m.use_nodes = True
+00:05.750  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_ext30_front.png'
+00:07.625  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_ext30_front_noarm.png'
+DIAG mods glove [('rig', 'ARMATURE', None, None, None), ('subd', 'SUBSURF', 1, 2, None), ('outline_hull', 'SOLIDIFY', None, None, 0.004999999888241291)]
+DIAG mods arm [('rig', 'ARMATURE', None, None, None), ('subd', 'SUBSURF', 1, 2, None), ('outline_hull', 'SOLIDIFY', None, None, 0.004999999888241291)]
+DIAG mats glove [('her_glove', False), ('her_outline', True)]
+DIAG ext30 front {"probe5m": [1, 116], "render_geo": [0, 886], "diag3_sign": 0, "sleeve_sign": 2, "pixel_truth": 5}
+00:09.547  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_ext30_tq.png'
+00:11.562  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_ext30_tq_noarm.png'
+DIAG ext30 tq {"probe5m": [0, 449], "render_geo": [0, 886], "diag3_sign": 0, "sleeve_sign": 0, "pixel_truth": 20}
+00:13.656  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_rest_tq.png'
+00:15.328  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_rest_tq_noarm.png'
+DIAG rest tq {"probe5m": [5, 440], "render_geo": [0, 862], "diag3_sign": 0, "sleeve_sign": 5, "pixel_truth": 28}
+00:17.672  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_rest_front.png'
+00:19.687  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_rest_front_noarm.png'
+DIAG rest front {"probe5m": [4, 440], "render_geo": [0, 862], "diag3_sign": 0, "sleeve_sign": 5, "pixel_truth": 4}
+00:21.734  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_neu_front.png'
+00:23.906  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_neu_front_noarm.png'
+DIAG neu front {"probe5m": [5, 459], "render_geo": [0, 897], "diag3_sign": 0, "sleeve_sign": 5, "pixel_truth": 9}
+00:26.156  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_neu_tq.png'
+00:28.125  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_neu_tq_noarm.png'
+DIAG neu tq {"probe5m": [0, 459], "render_geo": [0, 897], "diag3_sign": 0, "sleeve_sign": 0, "pixel_truth": 1}
+00:29.906  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_ext50_front.png'
+00:31.859  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_ext50_front_noarm.png'
+DIAG ext50 front {"probe5m": [2, 441], "render_geo": [0, 876], "diag3_sign": 0, "sleeve_sign": 2, "pixel_truth": 19}
+00:33.531  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_ext50_tq.png'
+00:35.375  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_ext50_tq_noarm.png'
+DIAG ext50 tq {"probe5m": [0, 441], "render_geo": [0, 876], "diag3_sign": 0, "sleeve_sign": 0, "pixel_truth": 11}
+00:37.703  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_ext70_front.png'
+00:39.562  render           | Saved: 'D:\scratch 2026\her-c2\rig5o-refute\_d_ext70_front_noarm.png'
+DIAG ext70 front {"probe5m": [2, 431], "render_geo": [0, 865], "diag3_sign": 0, "sleeve_sign": 3, "pixel_truth": 18}
+DIAG3 {"ext30_front": {"probe5m": [1, 116], "render_geo": [0, 886], "diag3_sign": 0, "sleeve_sign": 2, "pixel_truth": 5}, "ext30_tq": {"probe5m": [0, 449], "render_geo": [0, 886], "diag3_sign": 0, "sleeve_sign": 0, "pixel_truth": 20}, "rest_tq": {"probe5m": [5, 440], "render_geo": [0, 862], "diag3_sign": 0, "sleeve_sign": 5, "pixel_truth": 28}, "rest_front": {"probe5m": [4, 440], "render_geo": [0, 862], "diag3_sign": 0, "sleeve_sign": 5, "pixel_truth": 4}, "neu_front": {"probe5m": [5, 459], "render_geo": [0, 897], "diag3_sign": 0, "sleeve_sign": 5, "pixel_truth": 9}, "neu_tq": {"probe5m": [0, 459], "render_geo": [0, 897], "diag3_sign": 0, "sleeve_sign": 0, "pixel_truth": 1}, "ext50_front": {"probe5m": [2, 441], "render_geo": [0, 876], "diag3_sign": 0, "sleeve_sign": 2, "pixel_truth": 19}, "ext50_tq": {"probe5m": [0, 441], "render_geo": [0, 876], "diag3_sign": 0, "sleeve_sign": 0, "pixel_truth": 11}, "ext70_front": {"probe5m": [2, 431], "render_geo": [0, 865], "diag3_sign": 0, "sleeve_sign": 3, "pixel_truth": 18}}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

@@ -1,0 +1,21 @@
+== base () rc 0
+RIG ik clamps (legs could not reach): 0 ; pelvis safety drop max mm 0.00
+RIG ankle ROM guard frames: 14 {'L80': 0.72, 'L81': 3.14, 'L82': 8.08, 'L83': 13.65, 'L84': 16.75, 'L85': 17.94, 'L86': 18.05, 'L87': 17.85, 'L88': 15.98, 'L89': 12.23, 'L90': 5.81, 'L91': 2.4, 'L92': 0.4, 'L93': 0.13}
+RIG design: sole jump mm {'R': 2.76, 'L': 2.76} | min sole mm {'R': -0.0, 'L': -0.0} | knee max {'R': 59.84713520583806, 'L': 66.52618594989677} | thigh x range {'R': [-16.7, 33.2], 'L': [-16.7, 28.5]} | pelvis z range mm (31-91) 10.6 | clip max (slab) 0
+== straight (--k45 4 --kmid 1 --kts 1) rc 0
+RIG ik clamps (legs could not reach): 0 ; pelvis safety drop max mm 0.00
+RIG ankle ROM guard frames: 14 {'L80': 0.64, 'L81': 2.91, 'L82': 7.56, 'L83': 13.01, 'L84': 16.06, 'L85': 17.27, 'L86': 17.38, 'L87': 17.17, 'L88': 15.33, 'L89': 11.64, 'L90': 5.41, 'L91': 2.14, 'L92': 0.31, 'L93': 0.1}
+RIG design: sole jump mm {'R': 2.76, 'L': 2.76} | min sole mm {'R': -0.0, 'L': -0.0} | knee max {'R': 59.07384850876589, 'L': 65.44464598539275} | thigh x range {'R': [-16.7, 33.2], 'L': [-16.6, 28.1]} | pelvis z range mm (31-91) 10.7 | clip max (slab) 0
+== load18 (--kl 18 --k3 10 --k45 4 --kmid 1 --kts 1) rc 0
+RIG ik clamps (legs could not reach): 0 ; pelvis safety drop max mm 0.00
+RIG ankle ROM guard frames: 14 {'L80': 0.64, 'L81': 2.92, 'L82': 7.56, 'L83': 12.99, 'L84': 16.01, 'L85': 17.2, 'L86': 17.3, 'L87': 17.09, 'L88': 15.25, 'L89': 11.57, 'L90': 5.38, 'L91': 2.13, 'L92': 0.31, 'L93': 0.1}
+RIG design: sole jump mm {'R': 2.76, 'L': 2.76} | min sole mm {'R': -0.0, 'L': -0.0} | knee max {'R': 61.77257236305382, 'L': 65.5782239949907} | thigh x range {'R': [-16.7, 33.2], 'L': [-16.6, 29.3]} | pelvis z range mm (31-91) 9.8 | clip max (slab) 0
+== lag12 (--lag 0.12 --kl 18 --k3 10 --k45 4 --kmid 1 --kts 1) rc 0
+RIG ik clamps (legs could not reach): 0 ; pelvis safety drop max mm 0.00
+RIG ankle ROM guard frames: 55 {'R38': 1.26, 'R39': 3.79, 'R40': 8.84, 'R41': 13.04, 'R42': 12.63, 'R43': 12.17, 'R44': 10.44, 'R45': 7.0, 'R46': 2.87, 'R47': 0.8, 'L50': 1.2, 'L51': 3.6, 'L52': 8.39, 'L53': 11.4, 'L54': 11.98, 'L55': 11.59, 'L56': 10.0, 'L57': 6.81, 'L58': 2.8, 'L59': 0.8, 'R62': 1.19, 'R63': 3.57, 'R64': 8.34, 'R65': 11.35, 'R66': 11.91, 'R67': 11.52, 'R68': 9.94, 'R69': 7.0, 'R
+RIG design: sole jump mm {'R': 3.12, 'L': 3.33} | min sole mm {'R': -0.0, 'L': -0.0} | knee max {'R': 57.622440140327356, 'L': 68.68988059593008} | thigh x range {'R': [-11.2, 33.9], 'L': [-11.2, 32.4]} | pelvis z range mm (31-91) 13.7 | clip max (slab) 0
+== lag13 (--lag 0.13 --kl 18 --k3 10 --k45 4 --kmid 1 --kts 1) rc 0
+RIG ik clamps (legs could not reach): 0 ; pelvis safety drop max mm 0.00
+RIG ankle ROM guard frames: 73 {'R36': 0.94, 'R37': 3.57, 'R38': 9.06, 'R39': 14.38, 'R40': 17.69, 'R41': 18.88, 'R42': 19.1, 'R43': 18.86, 'R44': 17.93, 'R45': 15.41, 'R46': 11.55, 'R47': 7.2, 'R48': 4.24, 'L48': 0.97, 'R49': 2.99, 'L49': 3.64, 'R50': 2.42, 'L50': 9.18, 'R51': 1.88, 'L51': 14.45, 'R52': 0.81, 'L52': 17.7, 'R53': 0.27, 'L53': 18.83, 'L54': 19.03, 'L55': 18.8, 'L56': 17.82, 'L57': 
+RIG design: sole jump mm {'R': 3.26, 'L': 3.5600000000000005} | min sole mm {'R': -0.0, 'L': -0.0} | knee max {'R': 60.29410278512369, 'L': 70.49681397104612} | thigh x range {'R': [-5.9, 33.9], 'L': [-4.7, 33.8]} | pelvis z range mm (31-91) 14.8 | clip max (slab) 0
+SWEEP DONE

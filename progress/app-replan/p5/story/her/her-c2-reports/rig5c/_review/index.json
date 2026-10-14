@@ -1,0 +1,54 @@
+{
+ "deform": [
+  [
+   "R shoulder: max elevation 86 deg",
+   132,
+   0
+  ],
+  [
+   "R elbow: max flexion 98 deg",
+   143,
+   1
+  ],
+  [
+   "R forearm: max twist -100 deg",
+   129,
+   2
+  ],
+  [
+   "L forearm: max twist 111 deg",
+   28,
+   3
+  ],
+  [
+   "R wrist: max flex/ext 25 deg",
+   140,
+   4
+  ],
+  [
+   "R shoulder: walk swing forward",
+   68,
+   5
+  ],
+  [
+   "R shoulder: walk swing back",
+   56,
+   6
+  ]
+ ],
+ "walk": [
+  55,
+  57,
+  59,
+  61,
+  63,
+  65,
+  67,
+  69,
+  71,
+  73,
+  75,
+  77,
+  79
+ ]
+}

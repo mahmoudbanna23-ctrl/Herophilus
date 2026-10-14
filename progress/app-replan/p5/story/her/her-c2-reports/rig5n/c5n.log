@@ -1,0 +1,18 @@
+build 0
+wrist 0
+enc wf.mp4
+enc wt.mp4
+enc wrist_close
+cuff 0
+enc cuff_close
+check 3
+movie tq 0
+enc move.mp4
+movie side 0
+enc move_side.mp4
+movie front 0
+enc move_front.mp4
+movie wave 0
+enc wave_close.mp4
+peak 0
+C2DONE

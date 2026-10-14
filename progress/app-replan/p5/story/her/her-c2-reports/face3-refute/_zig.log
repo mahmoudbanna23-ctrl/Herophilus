@@ -1,0 +1,18 @@
+00:02.062  blend            | Read blend: "D:\scratch 2026\her-c2\face3\face3.blend"
+00:04.515  render           | Saved: 'D:\scratch 2026\her-c2\face3-refute\zig_tiles\00.png'
+00:06.437  render           | Saved: 'D:\scratch 2026\her-c2\face3-refute\zig_tiles\01.png'
+00:08.297  render           | Saved: 'D:\scratch 2026\her-c2\face3-refute\zig_tiles\02.png'
+00:10.359  render           | Saved: 'D:\scratch 2026\her-c2\face3-refute\zig_tiles\03.png'
+00:12.500  render           | Saved: 'D:\scratch 2026\her-c2\face3-refute\zig_tiles\04.png'
+00:14.453  render           | Saved: 'D:\scratch 2026\her-c2\face3-refute\zig_tiles\05.png'
+00:16.500  render           | Saved: 'D:\scratch 2026\her-c2\face3-refute\zig_tiles\06.png'
+00:18.547  render           | Saved: 'D:\scratch 2026\her-c2\face3-refute\zig_tiles\07.png'
+00:20.500  render           | Saved: 'D:\scratch 2026\her-c2\face3-refute\zig_tiles\08.png'
+00:22.500  render           | Saved: 'D:\scratch 2026\her-c2\face3-refute\zig_tiles\09.png'
+00:24.422  render           | Saved: 'D:\scratch 2026\her-c2\face3-refute\zig_tiles\10.png'
+CAL [('cal #38', 3), ('cal #75', 3), ('cal #102', 2), ('cal #74', 0), ('cal #56', 0)]
+FLAGGED 3 ['side AU20_L=1', 'side AU12_L=1,AU15_R=1', 'side AU15_L=1,AU17er=1,AU20_R=1']
+DONE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

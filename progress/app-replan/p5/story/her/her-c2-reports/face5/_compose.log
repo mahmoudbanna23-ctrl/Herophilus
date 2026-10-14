@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\claude os\Medical school\Herophilus\progress\app-replan\p5\story\her\face_rig.py", line 1583, in <module>
+    {'build': stage_build, 'render': stage_render, 'export': stage_export}[st](argv)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'compose'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

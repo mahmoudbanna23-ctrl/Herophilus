@@ -1,0 +1,31 @@
+00:02.188  blend            | Read blend: "D:\scratch 2026\her-c2\rig2\her-rig2.blend"
+10:24:10 | INFO: Data are loaded, start creating Blender stuff
+10:24:10 | INFO: Blender create Mesh node arm_L
+10:24:10 | INFO: Blender create Mesh node arm_R
+10:24:10 | INFO: Blender create Mesh node body_disc
+10:24:10 | INFO: Blender create Mesh node face_marks
+10:24:10 | INFO: Blender create Mesh node glove_L
+10:24:10 | INFO: Blender create Mesh node glove_R
+10:24:10 | INFO: Blender create Mesh node leg_L
+10:24:10 | INFO: Blender create Mesh node leg_R
+10:24:10 | INFO: Blender create Mesh node mouth
+10:24:10 | INFO: Blender create Mesh node nose
+10:24:10 | INFO: Blender create Mesh node sandal_L
+10:24:10 | INFO: Blender create Mesh node sandal_R
+10:24:10 | INFO: Blender create Mesh node shoulder_knot
+10:24:10 | INFO: Blender create Mesh node skirt
+10:24:10 | INFO: Blender create Mesh node toga
+10:24:10 | INFO: Blender create Mesh node toga_trim
+10:24:10 | INFO: Blender create Mesh node waist_cord
+10:24:10 | INFO: Blender create Mesh node wreath
+10:24:10 | INFO: Blender create Mesh node wreath_ornament
+10:24:10 | INFO: Blender create Mesh node eye_L
+10:24:10 | INFO: Blender create Mesh node eye_R
+10:24:10 | INFO: Blender create Mesh node lash_L
+10:24:10 | INFO: Blender create Mesh node lash_R
+10:24:10 | INFO: glTF import finished in 0.68s
+CHECKS {"foot_drift": {"stances": [{"side": "R", "plant": 0, "frames": [0, 22], "heel_drift_mm": 0.0, "ball_drift_mm": 3.405, "mesh_foot_drift_flat_mm": 0.0, "mesh_toe_drift_to_peel_mm": 0.055, "max_mm": 3.405}, {"side": "R", "plant": 1, "frames": [31, 46], "heel_drift_mm": 0.0, "ball_drift_mm": 3.405, "mesh_foot_drift_flat_mm": 0.0, "mesh_toe_drift_to_peel_mm": 0.055, "max_mm": 3.405}, {"side": "R", "plant": 2, "frames": [55, 70], "heel_drift_mm": 0.0, "ball_drift_mm": 3.405, "mesh_foot_drift_flat_mm": 0.0, "mesh_toe_drift_to_peel_mm": 0.055, "max_mm": 3.405}, {"side": "R", "plant": 3, "frames": [79, 191], "heel_drift_mm": 0.0, "ball_drift_mm": 0.0, "mesh_foot_drift_flat_mm": 0.0, "mesh_toe_drift_to_peel_mm": 0.0, "max_mm": 0.0}, {"side": "L", "plant": 0, "frames": [0, 34], "heel_drift_mm": 0.0, "ball_drift_mm": 3.405, "mesh_foot_drift_flat_mm": 0.0, "mesh_toe_drift_to_peel_mm": 0.055, "max_mm": 3.405}, {"side": "L", "plant": 1, "frames": [43, 58], "heel_drift_mm": 0.0, "ball_drift_mm": 3.405, "mesh_foot_drift_flat_mm": 0.0, "mesh_toe_drift_to_peel_mm": 0.055, "max_mm": 3.405}, {"side": "L", "plant": 2, "frames": [67, 82], "heel_drift_mm": 0.0, "ball_drift_mm": 3.405, "mesh_foot_drift_flat_mm": 0.0, "mesh_toe_drift_to_peel_mm": 0.055, "max_mm": 3.405}, {"side": "L", "plant": 3, "frames": [91, 191], "heel_drift_mm": 0.0, "ball_drift_mm": 0.0, "mesh_foot_drift_flat_mm": 0.0, "mesh_toe_drift_to_peel_mm": 0.0, "max_mm": 0.0}], "max_mm": 3.405, "target_mm": 5.0, "mesh_max_mm": 0.055}, "mesh_sole_jump": {"per_side": {"R": {"max_abs_mm": 2.761, "at_frame": 72, "over_6mm_frames": [], "min_mm": -0.0}, "L": {"max_abs_mm": 2.761, "at_frame": 36, "over_6mm_frames": [], "min_mm": -0.0}}, "target_mm": 6.0, "max_mm": 2.761}, "mesh_floor_min_mm": {"mm": -0.0, "frame": 15}, "disc_clip_verts": {"names": ["arm_R", "arm_L", "glove_R", "glove_L"], "max_per_mesh": [0, 0, 0, 0], "frames_nonzero": [], "socket_exempt": {"arm_R": 96, "arm_L": 96, "glove_R": 0, "glove_L": 0}, "target": 0}, "pelvis_31_91_mm": {"rise_fall_z": 13.6, "lateral_x": 30.0}, "knee_flexion_deg": {"R": {"min": 0.86, "max": 66.905, "geometric_min": 6.391, "geometric_max": 72.436}, "L": {"min": 0.859, "max": 69.054, "geometric_min": 6.391, "geometric_max": 74.586}}, "scale_not_1": {"count": 0, "first": []}, "limit_violations": {"count": 0, "first": [], "tolerance_deg": 0.05}, "rest_diff": {"changed_px": 2, "max_diff_255": 16.999998092651367, "size": [1600, 1600]}}
+GLB {"import": "ok", "missing": {}, "unique_keys_glb": ["A", "B", "C", "D", "E", "F", "G", "H", "X", "blink_L", "blink_R", "brow_down", "brow_up", "look_L", "look_R", "look_down", "look_up"], "morph_targets": {"eye_L.001": ["blink_L", "brow_up", "brow_down", "look_L", "look_R", "look_up", "look_down"], "eye_R.001": ["blink_R", "brow_up", "brow_down", "look_L", "look_R", "look_up", "look_down"], "lash_L.001": ["blink_L", "brow_up", "brow_down"], "lash_R.001": ["blink_R", "brow_up", "brow_down"], "mouth": ["A", "B", "C", "D", "E", "F", "G", "H", "X"]}}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

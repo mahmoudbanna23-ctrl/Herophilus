@@ -1,0 +1,30 @@
+00:01.766  blend            | Read blend: "D:\scratch 2026\her-c2\face9\face9.blend"
+22:02:22 | INFO: Data are loaded, start creating Blender stuff
+22:02:22 | INFO: Blender create Mesh node arm_L
+22:02:22 | INFO: Blender create Mesh node arm_R
+22:02:22 | INFO: Blender create Mesh node body_disc
+22:02:22 | INFO: Blender create Mesh node face_marks
+22:02:22 | INFO: Blender create Mesh node eye_L
+22:02:22 | INFO: Blender create Mesh node eye_R
+22:02:22 | INFO: Blender create Mesh node lash_L
+22:02:22 | INFO: Blender create Mesh node lash_R
+22:02:22 | INFO: Blender create Mesh node mouth
+22:02:22 | INFO: Blender create Mesh node nose
+22:02:22 | INFO: Blender create Mesh node glove_L
+22:02:22 | INFO: Blender create Mesh node glove_R
+22:02:22 | INFO: Blender create Mesh node leg_L
+22:02:22 | INFO: Blender create Mesh node leg_R
+22:02:22 | INFO: Blender create Mesh node sandal_L
+22:02:22 | INFO: Blender create Mesh node sandal_R
+22:02:22 | INFO: Blender create Mesh node shoulder_knot
+22:02:22 | INFO: Blender create Mesh node skirt
+22:02:22 | INFO: Blender create Mesh node toga
+22:02:22 | INFO: Blender create Mesh node toga_trim
+22:02:22 | INFO: Blender create Mesh node waist_cord
+22:02:22 | INFO: Blender create Mesh node wreath
+22:02:22 | INFO: Blender create Mesh node wreath_ornament
+22:02:22 | INFO: glTF import finished in 0.36s
+CHECKS_FACE_DONE D:/scratch 2026/her-c2/face9-refute\checks_face_seed1234.json
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

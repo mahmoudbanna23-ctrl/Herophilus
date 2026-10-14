@@ -1,0 +1,63 @@
+00:01.781  blend            | Read blend: "D:\scratch 2026\her-c2\face3\face3.blend"
+00:01.843  blend            | Read blend: "D:\scratch 2026\her-c2\face3\face3.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+15:43:10 | INFO: Starting glTF 2.0 export
+15:43:10 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+15:43:10 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+15:43:10 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+15:43:10 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+15:43:10 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+15:43:10 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+15:43:10 | INFO: Extracting primitive: arm_L
+15:43:10 | INFO: Primitives created: 2
+15:43:10 | INFO: Extracting primitive: arm_R
+15:43:10 | INFO: Primitives created: 2
+15:43:10 | INFO: Extracting primitive: body_disc
+15:43:10 | INFO: Primitives created: 1
+15:43:10 | INFO: Extracting primitive: eye_L
+15:43:11 | INFO: Primitives created: 4
+15:43:11 | INFO: Extracting primitive: eye_R
+15:43:11 | INFO: Primitives created: 4
+15:43:11 | INFO: Extracting primitive: face_marks
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: glove_L
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: glove_R
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: lash_L
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: lash_R
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: leg_L
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: leg_R
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: mouth
+15:43:11 | INFO: Primitives created: 2
+15:43:11 | INFO: Extracting primitive: nose
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: sandal_L
+15:43:11 | INFO: Primitives created: 2
+15:43:11 | INFO: Extracting primitive: sandal_R
+15:43:11 | INFO: Primitives created: 2
+15:43:11 | INFO: Extracting primitive: shoulder_knot
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: skirt
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: toga
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: toga_trim
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: waist_cord
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: wreath
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Extracting primitive: wreath_ornament
+15:43:11 | INFO: Primitives created: 1
+15:43:11 | INFO: Finished glTF 2.0 export in 0.6574387550354004 s
+
+FACE glb D:/scratch 2026/her-c2/face3/face3.glb 6856824
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

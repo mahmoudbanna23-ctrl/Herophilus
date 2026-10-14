@@ -1,0 +1,69 @@
+00:01.688  blend            | Read blend: "D:\scratch 2026\her-c2\face9\face9.blend"
+00:04.406  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sf_surprise.png'
+SHOT sf_surprise
+00:05.813  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sm_surprise.png'
+SHOT sm_surprise
+00:08.375  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sf_surprise+B.png'
+SHOT sf_surprise+B
+00:09.844  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sm_surprise+B.png'
+SHOT sm_surprise+B
+00:12.500  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sf_surprise+E.png'
+SHOT sf_surprise+E
+00:13.969  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sm_surprise+E.png'
+SHOT sm_surprise+E
+00:16.578  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sf_surprise+X.png'
+SHOT sf_surprise+X
+00:18.000  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sm_surprise+X.png'
+SHOT sm_surprise+X
+00:20.672  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sf_happy_5050_surprise.png'
+SHOT sf_happy_5050_surprise
+00:22.141  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sm_happy_5050_surprise.png'
+SHOT sm_happy_5050_surprise
+00:24.797  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sf_warm_smile_5050_surprise.png'
+SHOT sf_warm_smile_5050_surprise
+00:26.234  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sm_warm_smile_5050_surprise.png'
+SHOT sm_warm_smile_5050_surprise
+00:28.906  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sf_frown_concern_5050_surprise.png'
+SHOT sf_frown_concern_5050_surprise
+00:30.344  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sm_frown_concern_5050_surprise.png'
+SHOT sm_frown_concern_5050_surprise
+00:33.078  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sf_thinking_5050_surprise.png'
+SHOT sf_thinking_5050_surprise
+00:34.594  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sm_thinking_5050_surprise.png'
+SHOT sm_thinking_5050_surprise
+00:37.281  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sf_sad_5050_surprise.png'
+SHOT sf_sad_5050_surprise
+00:38.734  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sm_sad_5050_surprise.png'
+SHOT sm_sad_5050_surprise
+00:41.500  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sf_wink_5050_surprise.png'
+SHOT sf_wink_5050_surprise
+00:42.953  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\sm_wink_5050_surprise.png'
+SHOT sm_wink_5050_surprise
+00:44.438  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\k_AU15_lip_corner_depressor_L.png'
+SHOT k_AU15_lip_corner_depressor_L
+00:45.922  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\k_AU15_lip_corner_depressor_R.png'
+SHOT k_AU15_lip_corner_depressor_R
+00:47.406  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\k_AU20_lip_stretcher_L.png'
+SHOT k_AU20_lip_stretcher_L
+00:48.875  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\k_AU20_lip_stretcher_R.png'
+SHOT k_AU20_lip_stretcher_R
+00:50.359  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\k_AU17_chin_raiser.png'
+SHOT k_AU17_chin_raiser
+00:53.094  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\k_AU17_face.png'
+SHOT k_AU17_face
+00:55.969  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\p_sad.png'
+SHOT p_sad
+00:58.719  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\p_frown_concern.png'
+SHOT p_frown_concern
+01:03.063  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\eye_lookup_blink05.png'
+SHOT eye_lookup_blink05
+01:07.109  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\eye_sad.png'
+SHOT eye_sad
+01:11.188  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\eye_frown.png'
+SHOT eye_frown
+01:15.297  render           | Saved: 'D:\scratch 2026\her-c2\face9-refute\t\eye_AU7L_up40.png'
+SHOT eye_AU7L_up40
+RND_DONE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

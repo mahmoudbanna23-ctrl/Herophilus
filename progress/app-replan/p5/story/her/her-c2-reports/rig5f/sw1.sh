@@ -1,0 +1,1 @@
+for c in "g0 --wavepl 32 --wavece 16.7" "g1 --wavepl 12 --wavece 6.7" "g2 --wavepl 8 --wavece 6.7" "g3 --wavepl 16 --wavece 6.7" "g4 --wavepl 12 --wavece 11"; do echo "== $c"; sh sweep.sh $c --waveel 80 --gap 0.025 2>&1 | cut -c1-260; done; echo SWDONE

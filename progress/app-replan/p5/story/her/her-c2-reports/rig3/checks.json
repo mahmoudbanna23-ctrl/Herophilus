@@ -1,0 +1,884 @@
+{
+ "frames": [
+  0,
+  191
+ ],
+ "foot_drift": {
+  "stances": [
+   {
+    "side": "R",
+    "plant": 0,
+    "frames": [
+     0,
+     22
+    ],
+    "heel_drift_mm": 0.0,
+    "ball_drift_mm": 3.405,
+    "mesh_foot_drift_flat_mm": 0.0,
+    "mesh_toe_drift_to_peel_mm": 0.026,
+    "max_mm": 3.405
+   },
+   {
+    "side": "R",
+    "plant": 1,
+    "frames": [
+     31,
+     46
+    ],
+    "heel_drift_mm": 0.0,
+    "ball_drift_mm": 3.405,
+    "mesh_foot_drift_flat_mm": 0.0,
+    "mesh_toe_drift_to_peel_mm": 0.055,
+    "max_mm": 3.405
+   },
+   {
+    "side": "R",
+    "plant": 2,
+    "frames": [
+     55,
+     70
+    ],
+    "heel_drift_mm": 0.0,
+    "ball_drift_mm": 3.405,
+    "mesh_foot_drift_flat_mm": 0.0,
+    "mesh_toe_drift_to_peel_mm": 0.055,
+    "max_mm": 3.405
+   },
+   {
+    "side": "R",
+    "plant": 3,
+    "frames": [
+     79,
+     191
+    ],
+    "heel_drift_mm": 0.0,
+    "ball_drift_mm": 0.0,
+    "mesh_foot_drift_flat_mm": 0.0,
+    "mesh_toe_drift_to_peel_mm": 0.0,
+    "max_mm": 0.0
+   },
+   {
+    "side": "L",
+    "plant": 0,
+    "frames": [
+     0,
+     34
+    ],
+    "heel_drift_mm": 0.0,
+    "ball_drift_mm": 3.405,
+    "mesh_foot_drift_flat_mm": 0.0,
+    "mesh_toe_drift_to_peel_mm": 0.025,
+    "max_mm": 3.405
+   },
+   {
+    "side": "L",
+    "plant": 1,
+    "frames": [
+     43,
+     58
+    ],
+    "heel_drift_mm": 0.0,
+    "ball_drift_mm": 3.405,
+    "mesh_foot_drift_flat_mm": 0.0,
+    "mesh_toe_drift_to_peel_mm": 0.055,
+    "max_mm": 3.405
+   },
+   {
+    "side": "L",
+    "plant": 2,
+    "frames": [
+     67,
+     82
+    ],
+    "heel_drift_mm": 0.0,
+    "ball_drift_mm": 3.405,
+    "mesh_foot_drift_flat_mm": 0.0,
+    "mesh_toe_drift_to_peel_mm": 0.052,
+    "max_mm": 3.405
+   },
+   {
+    "side": "L",
+    "plant": 3,
+    "frames": [
+     91,
+     191
+    ],
+    "heel_drift_mm": 0.0,
+    "ball_drift_mm": 0.0,
+    "mesh_foot_drift_flat_mm": 0.0,
+    "mesh_toe_drift_to_peel_mm": 0.0,
+    "max_mm": 0.0
+   }
+  ],
+  "max_mm": 3.405,
+  "target_mm": 5.0,
+  "mesh_max_mm": 0.055
+ },
+ "mesh_sole_jump": {
+  "per_side": {
+   "R": {
+    "max_abs_mm": 2.872,
+    "at_frame": 27,
+    "over_6mm_frames": [],
+    "min_mm": -0.0
+   },
+   "L": {
+    "max_abs_mm": 3.491,
+    "at_frame": 40,
+    "over_6mm_frames": [],
+    "min_mm": -0.0
+   }
+  },
+  "target_mm": 6.0,
+  "max_mm": 3.491
+ },
+ "mesh_floor_min_mm": {
+  "mm": -0.0,
+  "frame": 85
+ },
+ "disc_clip_verts": {
+  "names": [
+   "arm_R",
+   "arm_L",
+   "glove_R",
+   "glove_L"
+  ],
+  "max_per_mesh": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "frames_nonzero": [],
+  "socket_exempt": {
+   "arm_R": 96,
+   "arm_L": 96,
+   "glove_R": 0,
+   "glove_L": 0
+  },
+  "target": 0
+ },
+ "pelvis_31_91_mm": {
+  "rise_fall_z": 19.6,
+  "lateral_x": 30.0
+ },
+ "step_m": 0.245,
+ "sole_min_z_mm": -5.285,
+ "sole_lowest_frames": [
+  [
+   -5.29,
+   22,
+   "R",
+   -5.29
+  ],
+  [
+   -5.29,
+   34,
+   "L",
+   -5.29
+  ],
+  [
+   -5.29,
+   46,
+   "R",
+   -5.29
+  ],
+  [
+   -5.29,
+   58,
+   "L",
+   -5.29
+  ],
+  [
+   -5.29,
+   70,
+   "R",
+   -5.29
+  ],
+  [
+   -5.29,
+   82,
+   "L",
+   -5.29
+  ]
+ ],
+ "knee_flexion_deg": {
+  "R": {
+   "min": 0.001,
+   "max": 62.574,
+   "geometric_min": 5.532,
+   "geometric_max": 68.106
+  },
+  "L": {
+   "min": 0.001,
+   "max": 69.693,
+   "geometric_min": 5.532,
+   "geometric_max": 75.224
+  }
+ },
+ "elbow_flexion_deg": {
+  "R": {
+   "min": 10.0,
+   "max": 96.074
+  },
+  "L": {
+   "min": 10.0,
+   "max": 15.76
+  }
+ },
+ "scale_not_1": {
+  "count": 0,
+  "first": []
+ },
+ "limit_violations": {
+  "count": 0,
+  "first": [],
+  "tolerance_deg": 0.05
+ },
+ "rotation_used_deg": {
+  "chest.x": [
+   -0.02,
+   1.87,
+   "limit",
+   -15.0,
+   25.0
+  ],
+  "chest.y": [
+   -3.6,
+   3.6,
+   "limit",
+   -20.0,
+   20.0
+  ],
+  "chest.z": [
+   -1.13,
+   1.14,
+   "limit",
+   -15.0,
+   15.0
+  ],
+  "foot_L.x": [
+   -20.86,
+   19.7,
+   "limit",
+   -50.0,
+   20.0
+  ],
+  "foot_L.y": [
+   -5.54,
+   3.28,
+   "limit",
+   -15.0,
+   15.0
+  ],
+  "foot_L.z": [
+   -15.92,
+   7.28,
+   "limit",
+   -20.0,
+   20.0
+  ],
+  "foot_R.x": [
+   -24.95,
+   19.7,
+   "limit",
+   -50.0,
+   20.0
+  ],
+  "foot_R.y": [
+   -3.94,
+   6.83,
+   "limit",
+   -15.0,
+   15.0
+  ],
+  "foot_R.z": [
+   -7.28,
+   15.84,
+   "limit",
+   -20.0,
+   20.0
+  ],
+  "forearm_L.x": [
+   10.0,
+   15.76,
+   "limit",
+   0.0,
+   145.0
+  ],
+  "forearm_R.x": [
+   10.0,
+   96.07,
+   "limit",
+   0.0,
+   145.0
+  ],
+  "hand_R.x": [
+   -8.16,
+   8.18,
+   "limit",
+   -70.0,
+   70.0
+  ],
+  "hand_R.y": [
+   -0.0,
+   0.1,
+   "limit",
+   -5.0,
+   5.0
+  ],
+  "hand_R.z": [
+   -1.37,
+   1.36,
+   "limit",
+   -30.0,
+   30.0
+  ],
+  "head.z": [
+   -3.27,
+   0.27,
+   "limit",
+   -10.0,
+   10.0
+  ],
+  "pelvis.x": [
+   -0.13,
+   0.11,
+   "limit",
+   -15.0,
+   15.0
+  ],
+  "pelvis.y": [
+   -6.0,
+   6.0,
+   "limit",
+   -15.0,
+   15.0
+  ],
+  "pelvis.z": [
+   -2.5,
+   2.5,
+   "limit",
+   -15.0,
+   15.0
+  ],
+  "shin_L.x": [
+   -69.69,
+   -0.0,
+   "limit",
+   -140.0,
+   0.0
+  ],
+  "shin_R.x": [
+   -62.57,
+   -0.0,
+   "limit",
+   -140.0,
+   0.0
+  ],
+  "spine.x": [
+   -0.02,
+   1.87,
+   "limit",
+   -15.0,
+   30.0
+  ],
+  "spine.y": [
+   -3.6,
+   3.6,
+   "limit",
+   -15.0,
+   15.0
+  ],
+  "spine.z": [
+   -1.13,
+   1.14,
+   "limit",
+   -15.0,
+   15.0
+  ],
+  "thigh_L.x": [
+   -14.03,
+   37.3,
+   "limit",
+   -20.0,
+   120.0
+  ],
+  "thigh_L.y": [
+   -0.26,
+   0.46,
+   "limit",
+   -40.0,
+   40.0
+  ],
+  "thigh_L.z": [
+   -5.95,
+   10.52,
+   "limit",
+   -30.0,
+   30.0
+  ],
+  "thigh_R.x": [
+   -14.18,
+   36.73,
+   "limit",
+   -20.0,
+   120.0
+  ],
+  "thigh_R.y": [
+   -0.44,
+   0.27,
+   "limit",
+   -40.0,
+   40.0
+  ],
+  "thigh_R.z": [
+   -9.93,
+   6.06,
+   "limit",
+   -30.0,
+   30.0
+  ],
+  "toe_L.x": [
+   -0.0,
+   35.0,
+   "limit",
+   -40.0,
+   70.0
+  ],
+  "toe_R.x": [
+   -0.0,
+   35.0,
+   "limit",
+   -40.0,
+   70.0
+  ],
+  "upperarm_L.x": [
+   -11.95,
+   11.83,
+   "limit",
+   -50.0,
+   170.0
+  ],
+  "upperarm_L.y": [
+   -8.2,
+   8.08,
+   "limit",
+   -90.0,
+   70.0
+  ],
+  "upperarm_L.z": [
+   -0.19,
+   1.91,
+   "limit",
+   -40.0,
+   150.0
+  ],
+  "upperarm_R.x": [
+   -12.35,
+   12.88,
+   "limit",
+   -50.0,
+   170.0
+  ],
+  "upperarm_R.y": [
+   -5.58,
+   80.47,
+   "limit",
+   -70.0,
+   90.0
+  ],
+  "upperarm_R.z": [
+   -64.02,
+   9.81,
+   "limit",
+   -150.0,
+   40.0
+  ]
+ },
+ "ik_clamps": 0,
+ "ankle_rom_guard_frames": 18,
+ "rest_diff": {
+  "changed_px": 2,
+  "max_diff_255": 16.999998092651367,
+  "size": [
+   1600,
+   1600
+  ]
+ },
+ "blend_shape_keys": {
+  "eye_L": [
+   "blink_L",
+   "brow_up",
+   "brow_down",
+   "look_L",
+   "look_R",
+   "look_up",
+   "look_down"
+  ],
+  "eye_R": [
+   "blink_R",
+   "brow_up",
+   "brow_down",
+   "look_L",
+   "look_R",
+   "look_up",
+   "look_down"
+  ],
+  "lash_L": [
+   "blink_L",
+   "brow_up",
+   "brow_down"
+  ],
+  "lash_R": [
+   "blink_R",
+   "brow_up",
+   "brow_down"
+  ],
+  "mouth": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G",
+   "H",
+   "X"
+  ]
+ },
+ "gait_rig3": {
+  "stance_knee": [
+   {
+    "side": "R",
+    "strike": 31,
+    "contact": 2.0,
+    "loading_peak": 14.3,
+    "loading_peak_u": 1,
+    "midstance_min": 3.3
+   },
+   {
+    "side": "L",
+    "strike": 43,
+    "contact": 2.0,
+    "loading_peak": 16.5,
+    "loading_peak_u": 1,
+    "midstance_min": 0.9
+   },
+   {
+    "side": "R",
+    "strike": 55,
+    "contact": 2.0,
+    "loading_peak": 16.4,
+    "loading_peak_u": 1,
+    "midstance_min": 0.9
+   },
+   {
+    "side": "L",
+    "strike": 67,
+    "contact": 2.0,
+    "loading_peak": 16.1,
+    "loading_peak_u": 1,
+    "midstance_min": 0.9
+   },
+   {
+    "side": "R",
+    "strike": 79,
+    "contact": 2.0,
+    "loading_peak": 18.0,
+    "loading_peak_u": 1,
+    "midstance_min": 0.9
+   },
+   {
+    "side": "L",
+    "strike": 91,
+    "contact": 20.2,
+    "loading_peak": 22.5,
+    "loading_peak_u": 5,
+    "midstance_min": 10.5
+   }
+  ],
+  "swing": [
+   {
+    "side": "R",
+    "off": 22,
+    "strike": 31,
+    "knee_peak": 51.1,
+    "hip_flex_peak": 39.6,
+    "clearance_min_mm": 5.0,
+    "clearance_mid_third_mm": 7.3
+   },
+   {
+    "side": "L",
+    "off": 34,
+    "strike": 43,
+    "knee_peak": 64.3,
+    "hip_flex_peak": 39.9,
+    "clearance_min_mm": 5.0,
+    "clearance_mid_third_mm": 6.9
+   },
+   {
+    "side": "R",
+    "off": 46,
+    "strike": 55,
+    "knee_peak": 62.6,
+    "hip_flex_peak": 28.8,
+    "clearance_min_mm": 4.2,
+    "clearance_mid_third_mm": 5.9
+   },
+   {
+    "side": "L",
+    "off": 58,
+    "strike": 67,
+    "knee_peak": 61.6,
+    "hip_flex_peak": 28.8,
+    "clearance_min_mm": 4.2,
+    "clearance_mid_third_mm": 5.9
+   },
+   {
+    "side": "R",
+    "off": 70,
+    "strike": 79,
+    "knee_peak": 60.4,
+    "hip_flex_peak": 27.5,
+    "clearance_min_mm": 4.2,
+    "clearance_mid_third_mm": 5.9
+   },
+   {
+    "side": "L",
+    "off": 82,
+    "strike": 91,
+    "knee_peak": 69.7,
+    "hip_flex_peak": 24.1,
+    "clearance_min_mm": 4.2,
+    "clearance_mid_third_mm": 5.9
+   }
+  ],
+  "pelvis_per_step": [
+   {
+    "from_strike": [
+     "R",
+     31
+    ],
+    "to": 43,
+    "low_u": 12,
+    "high_u": 7,
+    "low_pct": 100,
+    "high_pct": 58,
+    "range_mm": 12.3
+   },
+   {
+    "from_strike": [
+     "L",
+     43
+    ],
+    "to": 55,
+    "low_u": 2,
+    "high_u": 7,
+    "low_pct": 17,
+    "high_pct": 58,
+    "range_mm": 13.4
+   },
+   {
+    "from_strike": [
+     "R",
+     55
+    ],
+    "to": 67,
+    "low_u": 2,
+    "high_u": 7,
+    "low_pct": 17,
+    "high_pct": 58,
+    "range_mm": 12.6
+   },
+   {
+    "from_strike": [
+     "L",
+     67
+    ],
+    "to": 79,
+    "low_u": 2,
+    "high_u": 7,
+    "low_pct": 17,
+    "high_pct": 58,
+    "range_mm": 12.7
+   },
+   {
+    "from_strike": [
+     "R",
+     79
+    ],
+    "to": 91,
+    "low_u": 2,
+    "high_u": 12,
+    "low_pct": 17,
+    "high_pct": 100,
+    "range_mm": 19.6
+   }
+  ],
+  "hip_flexion_peak_deg": {
+   "R": 39.6,
+   "L": 39.9
+  },
+  "swing_clearance_min_mm": 4.2,
+  "wave_glove_disc_min_mm": {
+   "frames_100_end": 37.8,
+   "at_frame": 143,
+   "all_frames": 37.8,
+   "target_mm": 10.0
+  }
+ },
+ "glb": {
+  "file": "D:/scratch 2026/her-c2/rig3/her-rig3.glb",
+  "import": "ok",
+  "morph_targets": {
+   "eye_L.001": [
+    "blink_L",
+    "brow_up",
+    "brow_down",
+    "look_L",
+    "look_R",
+    "look_up",
+    "look_down"
+   ],
+   "eye_R.001": [
+    "blink_R",
+    "brow_up",
+    "brow_down",
+    "look_L",
+    "look_R",
+    "look_up",
+    "look_down"
+   ],
+   "lash_L.001": [
+    "blink_L",
+    "brow_up",
+    "brow_down"
+   ],
+   "lash_R.001": [
+    "blink_R",
+    "brow_up",
+    "brow_down"
+   ],
+   "mouth": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "X"
+   ]
+  },
+  "meshes": [
+   "Icosphere",
+   "arm_L",
+   "arm_R",
+   "body_disc",
+   "eye_L.001",
+   "eye_R.001",
+   "face_marks",
+   "glove_L",
+   "glove_R",
+   "lash_L.001",
+   "lash_R.001",
+   "leg_L",
+   "leg_R",
+   "mouth",
+   "nose",
+   "sandal_L",
+   "sandal_R",
+   "shoulder_knot",
+   "skirt",
+   "toga",
+   "toga_trim",
+   "waist_cord",
+   "wreath",
+   "wreath_ornament"
+  ],
+  "missing": {},
+  "unique_keys_blend": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G",
+   "H",
+   "X",
+   "blink_L",
+   "blink_R",
+   "brow_down",
+   "brow_up",
+   "look_L",
+   "look_R",
+   "look_down",
+   "look_up"
+  ],
+  "unique_keys_glb": [
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G",
+   "H",
+   "X",
+   "blink_L",
+   "blink_R",
+   "brow_down",
+   "brow_up",
+   "look_L",
+   "look_R",
+   "look_down",
+   "look_up"
+  ],
+  "armatures": [
+   [
+    "her_rig",
+    26
+   ]
+  ],
+  "actions": [
+   [
+    "eye_LAction",
+    [
+     0.0,
+     158.0
+    ]
+   ],
+   [
+    "eye_RAction",
+    [
+     0.0,
+     158.0
+    ]
+   ],
+   [
+    "her_rigAction",
+    [
+     0.0,
+     191.0
+    ]
+   ],
+   [
+    "lash_LAction",
+    [
+     0.0,
+     158.0
+    ]
+   ],
+   [
+    "lash_RAction",
+    [
+     0.0,
+     158.0
+    ]
+   ]
+  ]
+ }
+}

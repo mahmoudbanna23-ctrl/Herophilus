@@ -1,0 +1,13 @@
+00:02.063  blend            | Read blend: "D:\scratch 2026\her-c2\rig5c\her-rig5c.blend"
+00:06.656  render           | Saved: 'D:\scratch 2026\her-c2\rig5c-refute\togaL_back_f0.png'
+00:10.453  render           | Saved: 'D:\scratch 2026\her-c2\rig5c-refute\togaL_back_f40.png'
+00:14.188  render           | Saved: 'D:\scratch 2026\her-c2\rig5c-refute\togaL_back_f64.png'
+00:17.484  render           | Saved: 'D:\scratch 2026\her-c2\rig5c-refute\togaL_left_f40.png'
+TOGA f0 tris 287 maxdist 0.091 of chain 0.247  y-range -0.042..0.027 z 0.587..0.697 gh (0.336, -0.005, 0.674)
+TOGA f40 tris 331 maxdist 0.116 of chain 0.247  y-range -0.228..-0.145 z 0.561..0.685 gh (0.332, -0.202, 0.666)
+TOGA f52 tris 328 maxdist 0.117 of chain 0.247  y-range -0.505..-0.433 z 0.557..0.686 gh (0.34, -0.471, 0.669)
+TOGA f64 tris 331 maxdist 0.114 of chain 0.247  y-range -0.728..-0.647 z 0.562..0.687 gh (0.332, -0.703, 0.668)
+TOGA f76 tris 328 maxdist 0.117 of chain 0.247  y-range -0.999..-0.927 z 0.558..0.687 gh (0.34, -0.965, 0.67)
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

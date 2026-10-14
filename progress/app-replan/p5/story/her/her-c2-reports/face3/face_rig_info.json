@@ -1,0 +1,2245 @@
+{
+ "keys": {
+  "eye_L": [
+   "AU1_inner_brow_raiser_L",
+   "AU2_outer_brow_raiser_L",
+   "AU4_brow_lowerer_L",
+   "AU5_upper_lid_raiser_L",
+   "AU6_cheek_raiser_L",
+   "AU7_lid_tightener_L",
+   "blink_L",
+   "blink_ib20_L",
+   "blink_ib40_L",
+   "blink_ib60_L",
+   "blink_ib80_L",
+   "lid_lo_raise_L",
+   "look_L",
+   "look_R",
+   "look_up",
+   "look_down",
+   "blink_x_AU1_inner_brow_raiser_L",
+   "blink_x_AU2_outer_brow_raiser_L",
+   "blink_x_AU4_brow_lowerer_L",
+   "blink_x_AU5_upper_lid_raiser_L",
+   "blink_x_AU6_cheek_raiser_L",
+   "blink_x_AU7_lid_tightener_L",
+   "blink_x_lid_lo_raise_L"
+  ],
+  "lash_L": [
+   "AU1_inner_brow_raiser_L",
+   "AU2_outer_brow_raiser_L",
+   "AU4_brow_lowerer_L",
+   "AU5_upper_lid_raiser_L",
+   "AU6_cheek_raiser_L",
+   "AU7_lid_tightener_L",
+   "blink_L",
+   "blink_ib20_L",
+   "blink_ib40_L",
+   "blink_ib60_L",
+   "blink_ib80_L",
+   "blink_x_AU1_inner_brow_raiser_L",
+   "blink_x_AU2_outer_brow_raiser_L",
+   "blink_x_AU4_brow_lowerer_L",
+   "blink_x_AU5_upper_lid_raiser_L",
+   "blink_x_AU6_cheek_raiser_L",
+   "blink_x_AU7_lid_tightener_L"
+  ],
+  "eye_R": [
+   "AU1_inner_brow_raiser_R",
+   "AU2_outer_brow_raiser_R",
+   "AU4_brow_lowerer_R",
+   "AU5_upper_lid_raiser_R",
+   "AU6_cheek_raiser_R",
+   "AU7_lid_tightener_R",
+   "blink_R",
+   "blink_ib20_R",
+   "blink_ib40_R",
+   "blink_ib60_R",
+   "blink_ib80_R",
+   "lid_lo_raise_R",
+   "look_L",
+   "look_R",
+   "look_up",
+   "look_down",
+   "blink_x_AU1_inner_brow_raiser_R",
+   "blink_x_AU2_outer_brow_raiser_R",
+   "blink_x_AU4_brow_lowerer_R",
+   "blink_x_AU5_upper_lid_raiser_R",
+   "blink_x_AU6_cheek_raiser_R",
+   "blink_x_AU7_lid_tightener_R",
+   "blink_x_lid_lo_raise_R"
+  ],
+  "lash_R": [
+   "AU1_inner_brow_raiser_R",
+   "AU2_outer_brow_raiser_R",
+   "AU4_brow_lowerer_R",
+   "AU5_upper_lid_raiser_R",
+   "AU6_cheek_raiser_R",
+   "AU7_lid_tightener_R",
+   "blink_R",
+   "blink_ib20_R",
+   "blink_ib40_R",
+   "blink_ib60_R",
+   "blink_ib80_R",
+   "blink_x_AU1_inner_brow_raiser_R",
+   "blink_x_AU2_outer_brow_raiser_R",
+   "blink_x_AU4_brow_lowerer_R",
+   "blink_x_AU5_upper_lid_raiser_R",
+   "blink_x_AU6_cheek_raiser_R",
+   "blink_x_AU7_lid_tightener_R"
+  ],
+  "mouth": [
+   "AU10_upper_lip_raiser_L",
+   "AU10_upper_lip_raiser_R",
+   "AU12_lip_corner_puller_L",
+   "AU12_lip_corner_puller_R",
+   "AU14_dimpler_L",
+   "AU14_dimpler_R",
+   "AU15_lip_corner_depressor_L",
+   "AU15_lip_corner_depressor_R",
+   "AU16_lower_lip_depressor_L",
+   "AU16_lower_lip_depressor_R",
+   "AU20_lip_stretcher_L",
+   "AU20_lip_stretcher_R",
+   "AU17_chin_raiser",
+   "AU18_lip_pucker",
+   "AU22_lip_funneler",
+   "AU23_lip_tightener",
+   "AU24_lip_presser",
+   "AU25_lips_part",
+   "jaw_open",
+   "jaw_side_L",
+   "jaw_side_R",
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G",
+   "H",
+   "X"
+  ]
+ },
+ "bones": [
+  "face_root",
+  "jaw",
+  "eye_target",
+  "eye_L",
+  "lid_up_L",
+  "lid_lo_L",
+  "eye_target_L",
+  "lip_corner_L",
+  "eye_R",
+  "lid_up_R",
+  "lid_lo_R",
+  "eye_target_R",
+  "lip_corner_R"
+ ],
+ "drivers": 382,
+ "skipped": {
+  "AU9_nose_wrinkler": "her nose is a rigid dot with no skin around it to wrinkle",
+  "AU11_nasolabial_deepener": "no nasolabial furrow geometry; its upper-lip lift is AU10",
+  "AU13_cheek_puffer / AU14 dimple / AU6 cheek bulge": "no cheek geometry - the cheeks are the rigid clock face (body_disc, shared with the torso, carries ticks); deforming it would bend the clock",
+  "AU19 tongue, AU28 lip suck, AU38/39 nostrils": "no tongue, no lip thickness, no nostrils in her mesh",
+  "AU29 jaw thrust": "bone slide allowed (0-5 mm) but drives no key: a depth-only move is invisible on a decal mouth",
+  "AU43 separate key": "AU43/45 is blink_L/R (lid bone), not duplicated"
+ },
+ "signs": {
+  "yaw": 1.0,
+  "pitch": 1.0,
+  "jaw_open": -1.0,
+  "jaw_side": 1.0,
+  "lid": 1.0
+ },
+ "toga_top_z_centre": 0.555,
+ "lip_room_mm": 21.0,
+ "jaw_drop_mm": 10.0,
+ "jaw_fwd_axis": "z",
+ "look_pupil_verts_flattened": {
+  "look_L_L": 0,
+  "look_R_L": 250,
+  "look_up_L": 114,
+  "look_down_L": 0,
+  "look_L_R": 103,
+  "look_R_R": 0,
+  "look_up_R": 42,
+  "look_down_R": 0
+ },
+ "look_fade_b0_b1": {
+  "look_L_L": [
+   0.0,
+   0.2662
+  ],
+  "look_R_L": [
+   0.0,
+   0.282
+  ],
+  "look_up_L": [
+   0.0,
+   0.2353
+  ],
+  "look_down_L": [
+   0.0,
+   1.0
+  ],
+  "look_L_R": [
+   0.0,
+   0.282
+  ],
+  "look_R_R": [
+   0.0,
+   0.2662
+  ],
+  "look_up_R": [
+   0.0,
+   0.2353
+  ],
+  "look_down_R": [
+   0.0,
+   1.0
+  ]
+ },
+ "look_fade_close_weights": {
+  "L": {
+   "up": {
+    "AU4_brow_lowerer": 0.1627,
+    "AU6_cheek_raiser": 0.0325,
+    "AU7_lid_tightener": 0.1302
+   },
+   "lo": {
+    "AU6_cheek_raiser": 0.6422,
+    "AU7_lid_tightener": 0.4056,
+    "lid_lo_raise": 0.7604
+   }
+  },
+  "R": {
+   "up": {
+    "AU4_brow_lowerer": 0.1627,
+    "AU6_cheek_raiser": 0.0325,
+    "AU7_lid_tightener": 0.1302
+   },
+   "lo": {
+    "AU6_cheek_raiser": 0.6422,
+    "AU7_lid_tightener": 0.4056,
+    "lid_lo_raise": 0.7605
+   }
+  }
+ },
+ "face_caps": {
+  "version": "face rig 3 (2026-09-29)",
+  "how": "Set every input (0..1) and read the bone channels; evaluate \"steps\" IN ORDER (each is a plain expression over inputs, bone channels and earlier steps; only max/min/+-*/); then every morph weight = its \"keys\" expression. Same strings drive Blender.",
+  "inputs": [
+   "AU1_inner_brow_raiser_L",
+   "AU2_outer_brow_raiser_L",
+   "AU4_brow_lowerer_L",
+   "AU5_upper_lid_raiser_L",
+   "AU6_cheek_raiser_L",
+   "AU7_lid_tightener_L",
+   "AU1_inner_brow_raiser_R",
+   "AU2_outer_brow_raiser_R",
+   "AU4_brow_lowerer_R",
+   "AU5_upper_lid_raiser_R",
+   "AU6_cheek_raiser_R",
+   "AU7_lid_tightener_R",
+   "AU10_upper_lip_raiser_L",
+   "AU10_upper_lip_raiser_R",
+   "AU12_lip_corner_puller_L",
+   "AU12_lip_corner_puller_R",
+   "AU14_dimpler_L",
+   "AU14_dimpler_R",
+   "AU15_lip_corner_depressor_L",
+   "AU15_lip_corner_depressor_R",
+   "AU16_lower_lip_depressor_L",
+   "AU16_lower_lip_depressor_R",
+   "AU20_lip_stretcher_L",
+   "AU20_lip_stretcher_R",
+   "AU17_chin_raiser",
+   "AU18_lip_pucker",
+   "AU22_lip_funneler",
+   "AU23_lip_tightener",
+   "AU24_lip_presser",
+   "AU25_lips_part",
+   "A",
+   "B",
+   "C",
+   "D",
+   "E",
+   "F",
+   "G",
+   "H",
+   "X"
+  ],
+  "bones": {
+   "rx_lid_up_L": {
+    "bone": "lid_up_L",
+    "channel": "ROT_X",
+    "value": "pose-bone local euler (XYZ, radians), after constraints"
+   },
+   "rx_lid_lo_L": {
+    "bone": "lid_lo_L",
+    "channel": "ROT_X",
+    "value": "pose-bone local euler (XYZ, radians), after constraints"
+   },
+   "rz_eye_L": {
+    "bone": "eye_L",
+    "channel": "ROT_Z",
+    "value": "pose-bone local euler (XYZ, radians), after constraints"
+   },
+   "rx_eye_L": {
+    "bone": "eye_L",
+    "channel": "ROT_X",
+    "value": "pose-bone local euler (XYZ, radians), after constraints"
+   },
+   "rx_lid_up_R": {
+    "bone": "lid_up_R",
+    "channel": "ROT_X",
+    "value": "pose-bone local euler (XYZ, radians), after constraints"
+   },
+   "rx_lid_lo_R": {
+    "bone": "lid_lo_R",
+    "channel": "ROT_X",
+    "value": "pose-bone local euler (XYZ, radians), after constraints"
+   },
+   "rz_eye_R": {
+    "bone": "eye_R",
+    "channel": "ROT_Z",
+    "value": "pose-bone local euler (XYZ, radians), after constraints"
+   },
+   "rx_eye_R": {
+    "bone": "eye_R",
+    "channel": "ROT_X",
+    "value": "pose-bone local euler (XYZ, radians), after constraints"
+   },
+   "rx_jaw": {
+    "bone": "jaw",
+    "channel": "ROT_X",
+    "value": "pose-bone local euler (XYZ, radians), after constraints"
+   },
+   "rz_jaw": {
+    "bone": "jaw",
+    "channel": "ROT_Z",
+    "value": "pose-bone local euler (XYZ, radians), after constraints"
+   }
+  },
+  "steps": [
+   {
+    "name": "b_L",
+    "expr": "max(0.0, min(1.0, rx_lid_up_L * -1.432394))"
+   },
+   {
+    "name": "lo_L",
+    "expr": "max(0.0, min(1.0, rx_lid_lo_L * 2.291831))"
+   },
+   {
+    "name": "fu_L",
+    "expr": "1.0 / max(1.0, AU4_brow_lowerer_L + AU6_cheek_raiser_L + AU7_lid_tightener_L)"
+   },
+   {
+    "name": "fl_L",
+    "expr": "1.0 / max(1.0, AU6_cheek_raiser_L + AU7_lid_tightener_L + lo_L)"
+   },
+   {
+    "name": "fm_L",
+    "expr": "min(fu_L, fl_L)"
+   },
+   {
+    "name": "e_AU4_L",
+    "expr": "AU4_brow_lowerer_L * fu_L"
+   },
+   {
+    "name": "e_AU6_L",
+    "expr": "AU6_cheek_raiser_L * fm_L"
+   },
+   {
+    "name": "e_AU7_L",
+    "expr": "AU7_lid_tightener_L * fm_L"
+   },
+   {
+    "name": "e_lid_L",
+    "expr": "lo_L * fl_L"
+   },
+   {
+    "name": "A_L",
+    "expr": "(1.0 - b_L) * max(e_AU4_L + e_AU6_L + e_AU7_L, e_AU6_L + e_AU7_L + e_lid_L)"
+   },
+   {
+    "name": "Wb_L",
+    "expr": "1.0 - A_L"
+   },
+   {
+    "name": "Bu_L",
+    "expr": "Wb_L * b_L + (1.0 - b_L) * (0.0325 * e_AU6_L + 0.1302 * e_AU7_L + 0.1627 * e_AU4_L)"
+   },
+   {
+    "name": "Bd_L",
+    "expr": "Wb_L * b_L + (1.0 - b_L) * (0.4056 * e_AU7_L + 0.6422 * e_AU6_L + 0.7604 * e_lid_L)"
+   },
+   {
+    "name": "Bs_L",
+    "expr": "Wb_L * b_L + (1.0 - b_L) * (0.1627 * e_AU4_L + 0.4056 * e_AU7_L + 0.6422 * e_AU6_L + 0.7604 * e_lid_L)"
+   },
+   {
+    "name": "lkL_L",
+    "expr": "max(0.0, min(1.0, rz_eye_L * 1.637022))"
+   },
+   {
+    "name": "lkR_L",
+    "expr": "max(0.0, min(1.0, rz_eye_L * -1.637022))"
+   },
+   {
+    "name": "lkup_L",
+    "expr": "max(0.0, min(1.0, rx_eye_L * 2.291831))"
+   },
+   {
+    "name": "lkdown_L",
+    "expr": "max(0.0, min(1.0, rx_eye_L * -1.909859))"
+   },
+   {
+    "name": "b_R",
+    "expr": "max(0.0, min(1.0, rx_lid_up_R * -1.432394))"
+   },
+   {
+    "name": "lo_R",
+    "expr": "max(0.0, min(1.0, rx_lid_lo_R * 2.291831))"
+   },
+   {
+    "name": "fu_R",
+    "expr": "1.0 / max(1.0, AU4_brow_lowerer_R + AU6_cheek_raiser_R + AU7_lid_tightener_R)"
+   },
+   {
+    "name": "fl_R",
+    "expr": "1.0 / max(1.0, AU6_cheek_raiser_R + AU7_lid_tightener_R + lo_R)"
+   },
+   {
+    "name": "fm_R",
+    "expr": "min(fu_R, fl_R)"
+   },
+   {
+    "name": "e_AU4_R",
+    "expr": "AU4_brow_lowerer_R * fu_R"
+   },
+   {
+    "name": "e_AU6_R",
+    "expr": "AU6_cheek_raiser_R * fm_R"
+   },
+   {
+    "name": "e_AU7_R",
+    "expr": "AU7_lid_tightener_R * fm_R"
+   },
+   {
+    "name": "e_lid_R",
+    "expr": "lo_R * fl_R"
+   },
+   {
+    "name": "A_R",
+    "expr": "(1.0 - b_R) * max(e_AU4_R + e_AU6_R + e_AU7_R, e_AU6_R + e_AU7_R + e_lid_R)"
+   },
+   {
+    "name": "Wb_R",
+    "expr": "1.0 - A_R"
+   },
+   {
+    "name": "Bu_R",
+    "expr": "Wb_R * b_R + (1.0 - b_R) * (0.0325 * e_AU6_R + 0.1302 * e_AU7_R + 0.1627 * e_AU4_R)"
+   },
+   {
+    "name": "Bd_R",
+    "expr": "Wb_R * b_R + (1.0 - b_R) * (0.4056 * e_AU7_R + 0.6422 * e_AU6_R + 0.7605 * e_lid_R)"
+   },
+   {
+    "name": "Bs_R",
+    "expr": "Wb_R * b_R + (1.0 - b_R) * (0.1627 * e_AU4_R + 0.4056 * e_AU7_R + 0.6422 * e_AU6_R + 0.7605 * e_lid_R)"
+   },
+   {
+    "name": "lkL_R",
+    "expr": "max(0.0, min(1.0, rz_eye_R * 1.637022))"
+   },
+   {
+    "name": "lkR_R",
+    "expr": "max(0.0, min(1.0, rz_eye_R * -1.637022))"
+   },
+   {
+    "name": "lkup_R",
+    "expr": "max(0.0, min(1.0, rx_eye_R * 2.291831))"
+   },
+   {
+    "name": "lkdown_R",
+    "expr": "max(0.0, min(1.0, rx_eye_R * -1.909859))"
+   },
+   {
+    "name": "jaw",
+    "expr": "max(0.0, min(1.0, rx_jaw * -1.637022))"
+   },
+   {
+    "name": "js_L",
+    "expr": "max(0.0, min(1.0, rz_jaw * 7.161972))"
+   },
+   {
+    "name": "js_R",
+    "expr": "max(0.0, min(1.0, rz_jaw * -7.161972))"
+   },
+   {
+    "name": "sd0_p0",
+    "expr": "0.0331 * AU14_dimpler_R + 0.3871 * AU15_lip_corner_depressor_R + 0.0197 * AU20_lip_stretcher_R + 0.3256 * AU18_lip_pucker + 0.2424 * AU22_lip_funneler + 0.0768 * AU23_lip_tightener + 0.1292 * AU24_lip_presser + 0.1117 * jaw"
+   },
+   {
+    "name": "sd0_p1",
+    "expr": "0.0796 * js_L + 0.1292 * A + 0.0309 * B + 0.0332 * C + 0.1058 * D + 0.2030 * E + 0.3676 * F + 0.0332 * H"
+   },
+   {
+    "name": "fd0",
+    "expr": "1.0 / max(1.0, (sd0_p0 + sd0_p1))"
+   },
+   {
+    "name": "sd1_p0",
+    "expr": "0.0078 * AU10_upper_lip_raiser_R + 0.2418 * AU15_lip_corner_depressor_R + 0.0438 * AU16_lower_lip_depressor_R + 0.2782 * AU18_lip_pucker + 0.4025 * AU22_lip_funneler + 0.0494 * AU24_lip_presser + 0.0177 * AU25_lips_part + 0.0329 * jaw"
+   },
+   {
+    "name": "sd1_p1",
+    "expr": "0.0494 * A + 0.0408 * C + 0.0466 * D + 0.1901 * E + 0.3457 * F + 0.0421 * H"
+   },
+   {
+    "name": "fd1",
+    "expr": "1.0 / max(1.0, (sd1_p0 + sd1_p1))"
+   },
+   {
+    "name": "sd2_p0",
+    "expr": "0.0125 * AU10_upper_lip_raiser_R + 0.1706 * AU15_lip_corner_depressor_R + 0.0707 * AU16_lower_lip_depressor_R + 0.2534 * AU18_lip_pucker + 0.4192 * AU22_lip_funneler + 0.0421 * AU24_lip_presser + 0.0326 * AU25_lips_part + 0.0525 * jaw"
+   },
+   {
+    "name": "sd2_p1",
+    "expr": "0.0421 * A + 0.0390 * B + 0.0541 * C + 0.0824 * D + 0.3553 * E + 0.3239 * F + 0.0635 * H"
+   },
+   {
+    "name": "fd2",
+    "expr": "1.0 / max(1.0, (sd2_p0 + sd2_p1))"
+   },
+   {
+    "name": "sd3_p0",
+    "expr": "0.0166 * AU10_upper_lip_raiser_R + 0.1075 * AU15_lip_corner_depressor_R + 0.0954 * AU16_lower_lip_depressor_R + 0.0469 * AU20_lip_stretcher_R + 0.2227 * AU18_lip_pucker + 0.4246 * AU22_lip_funneler + 0.0352 * AU24_lip_presser + 0.0472 * AU25_lips_part"
+   },
+   {
+    "name": "sd3_p1",
+    "expr": "0.0735 * jaw + 0.0352 * A + 0.0366 * B + 0.0649 * C + 0.1169 * D + 0.3679 * E + 0.2931 * F + 0.0829 * H"
+   },
+   {
+    "name": "fd3",
+    "expr": "1.0 / max(1.0, (sd3_p0 + sd3_p1))"
+   },
+   {
+    "name": "sd4_p0",
+    "expr": "0.0203 * AU10_upper_lip_raiser_R + 0.0523 * AU15_lip_corner_depressor_R + 0.1192 * AU16_lower_lip_depressor_R + 0.0381 * AU20_lip_stretcher_R + 0.1887 * AU18_lip_pucker + 0.4244 * AU22_lip_funneler + 0.1696 * AU24_lip_presser + 0.0618 * AU25_lips_part"
+   },
+   {
+    "name": "sd4_p1",
+    "expr": "0.0940 * jaw + 0.1865 * js_L + 0.1696 * A + 0.0319 * B + 0.0741 * C + 0.1511 * D + 0.3766 * E + 0.2576 * F"
+   },
+   {
+    "name": "sd4_p2",
+    "expr": "0.1012 * H"
+   },
+   {
+    "name": "fd4",
+    "expr": "1.0 / max(1.0, (sd4_p0 + sd4_p1 + sd4_p2))"
+   },
+   {
+    "name": "sd5_p0",
+    "expr": "0.0282 * AU10_upper_lip_raiser_R + 0.0054 * AU15_lip_corner_depressor_R + 0.1780 * AU16_lower_lip_depressor_R + 0.0273 * AU18_lip_pucker + 0.2754 * AU22_lip_funneler + 0.0262 * AU24_lip_presser + 0.0956 * AU25_lips_part + 0.1428 * jaw"
+   },
+   {
+    "name": "sd5_p1",
+    "expr": "0.0262 * A + 0.1025 * C + 0.2312 * D + 0.2277 * E + 0.1483 * H"
+   },
+   {
+    "name": "fd5",
+    "expr": "1.0 / max(1.0, (sd5_p0 + sd5_p1))"
+   },
+   {
+    "name": "sd6_p0",
+    "expr": "0.0320 * AU10_upper_lip_raiser_R + 0.2094 * AU16_lower_lip_depressor_R + 0.0263 * AU20_lip_stretcher_R + 0.2553 * AU22_lip_funneler + 0.0198 * AU24_lip_presser + 0.1154 * AU25_lips_part + 0.1702 * jaw + 0.0198 * A"
+   },
+   {
+    "name": "sd6_p1",
+    "expr": "0.0221 * B + 0.1129 * C + 0.2770 * D + 0.2196 * E + 0.1716 * H"
+   },
+   {
+    "name": "fd6",
+    "expr": "1.0 / max(1.0, (sd6_p0 + sd6_p1))"
+   },
+   {
+    "name": "sd7_p0",
+    "expr": "0.0354 * AU10_upper_lip_raiser_R + 0.0041 * AU12_lip_corner_puller_R + 0.2399 * AU16_lower_lip_depressor_R + 0.0187 * AU20_lip_stretcher_R + 0.0141 * AU24_lip_presser + 0.1347 * AU25_lips_part + 0.1969 * jaw + 0.0141 * A"
+   },
+   {
+    "name": "sd7_p1",
+    "expr": "0.0114 * B + 0.1221 * C + 0.3217 * D + 0.2102 * E + 0.1938 * H"
+   },
+   {
+    "name": "fd7",
+    "expr": "1.0 / max(1.0, (sd7_p0 + sd7_p1))"
+   },
+   {
+    "name": "sd8_p0",
+    "expr": "0.0382 * AU10_upper_lip_raiser_R + 0.0373 * AU12_lip_corner_puller_R + 0.2682 * AU16_lower_lip_depressor_R + 0.0122 * AU20_lip_stretcher_R + 0.0092 * AU24_lip_presser + 0.1528 * AU25_lips_part + 0.2217 * jaw + 0.0092 * A"
+   },
+   {
+    "name": "sd8_p1",
+    "expr": "0.0035 * B + 0.1300 * C + 0.3633 * D + 0.2163 * F + 0.2142 * H"
+   },
+   {
+    "name": "fd8",
+    "expr": "1.0 / max(1.0, (sd8_p0 + sd8_p1))"
+   },
+   {
+    "name": "sd9_p0",
+    "expr": "0.0293 * AU10_upper_lip_raiser_R + 0.0428 * AU12_lip_corner_puller_R + 0.1882 * AU16_lower_lip_depressor_R + 0.2389 * AU20_lip_stretcher_R + 0.4276 * AU18_lip_pucker + 0.7473 * AU22_lip_funneler + 0.0040 * AU24_lip_presser + 0.1084 * AU25_lips_part"
+   },
+   {
+    "name": "sd9_p1",
+    "expr": "0.1564 * jaw + 0.6232 * js_L + 0.3572 * js_R + 0.0040 * A + 0.0878 * C + 0.2569 * D + 0.1233 * E + 0.4743 * F"
+   },
+   {
+    "name": "sd9_p2",
+    "expr": "0.1490 * H"
+   },
+   {
+    "name": "fd9",
+    "expr": "1.0 / max(1.0, (sd9_p0 + sd9_p1 + sd9_p2))"
+   },
+   {
+    "name": "sd10_p0",
+    "expr": "0.0580 * AU10_upper_lip_raiser_R + 0.0108 * AU16_lower_lip_depressor_L + 0.5376 * AU16_lower_lip_depressor_R + 0.3124 * AU22_lip_funneler + 0.0031 * AU24_lip_presser + 0.3181 * AU25_lips_part + 0.4574 * jaw + 0.0031 * A"
+   },
+   {
+    "name": "sd10_p1",
+    "expr": "0.7526 * D + 0.3247 * E + 0.4312 * H"
+   },
+   {
+    "name": "fd10",
+    "expr": "1.0 / max(1.0, (sd10_p0 + sd10_p1))"
+   },
+   {
+    "name": "sd11_p0",
+    "expr": "0.0074 * AU10_upper_lip_raiser_L + 0.0436 * AU10_upper_lip_raiser_R + 0.0385 * AU12_lip_corner_puller_L + 0.1487 * AU12_lip_corner_puller_R + 0.1196 * AU16_lower_lip_depressor_L + 0.4619 * AU16_lower_lip_depressor_R + 0.3007 * AU22_lip_funneler + 0.3387 * AU25_lips_part"
+   },
+   {
+    "name": "sd11_p1",
+    "expr": "0.4859 * jaw + 0.2591 * C + 0.8003 * D + 0.3229 * E + 0.4553 * H"
+   },
+   {
+    "name": "fd11",
+    "expr": "1.0 / max(1.0, (sd11_p0 + sd11_p1))"
+   },
+   {
+    "name": "sd12_p0",
+    "expr": "0.0228 * AU10_upper_lip_raiser_L + 0.0228 * AU10_upper_lip_raiser_R + 0.0989 * AU12_lip_corner_puller_L + 0.0989 * AU12_lip_corner_puller_R + 0.2965 * AU16_lower_lip_depressor_L + 0.2965 * AU16_lower_lip_depressor_R + 0.2965 * AU22_lip_funneler + 0.3459 * AU25_lips_part"
+   },
+   {
+    "name": "sd12_p1",
+    "expr": "0.4960 * jaw + 0.2628 * C + 0.8171 * D + 0.3222 * E + 0.4638 * H"
+   },
+   {
+    "name": "fd12",
+    "expr": "1.0 / max(1.0, (sd12_p0 + sd12_p1))"
+   },
+   {
+    "name": "sd13_p0",
+    "expr": "0.0436 * AU10_upper_lip_raiser_L + 0.0074 * AU10_upper_lip_raiser_R + 0.1487 * AU12_lip_corner_puller_L + 0.0385 * AU12_lip_corner_puller_R + 0.4619 * AU16_lower_lip_depressor_L + 0.1196 * AU16_lower_lip_depressor_R + 0.3007 * AU22_lip_funneler + 0.3387 * AU25_lips_part"
+   },
+   {
+    "name": "sd13_p1",
+    "expr": "0.4859 * jaw + 0.2591 * C + 0.8003 * D + 0.3229 * E + 0.4553 * H"
+   },
+   {
+    "name": "fd13",
+    "expr": "1.0 / max(1.0, (sd13_p0 + sd13_p1))"
+   },
+   {
+    "name": "sd14_p0",
+    "expr": "0.0580 * AU10_upper_lip_raiser_L + 0.5376 * AU16_lower_lip_depressor_L + 0.0108 * AU16_lower_lip_depressor_R + 0.3124 * AU22_lip_funneler + 0.0031 * AU24_lip_presser + 0.3181 * AU25_lips_part + 0.4574 * jaw + 0.8041 * js_L"
+   },
+   {
+    "name": "sd14_p1",
+    "expr": "0.0031 * A + 0.7526 * D + 0.3247 * E + 0.4312 * H"
+   },
+   {
+    "name": "fd14",
+    "expr": "1.0 / max(1.0, (sd14_p0 + sd14_p1))"
+   },
+   {
+    "name": "sd15_p0",
+    "expr": "0.0207 * AU10_upper_lip_raiser_L + 0.0279 * AU12_lip_corner_puller_L + 0.1225 * AU16_lower_lip_depressor_L + 0.8143 * AU20_lip_stretcher_L + 0.6274 * AU18_lip_pucker + 0.8355 * AU22_lip_funneler + 0.0030 * AU24_lip_presser + 0.0706 * AU25_lips_part"
+   },
+   {
+    "name": "sd15_p1",
+    "expr": "0.1019 * jaw + 0.9383 * js_L + 0.7547 * js_R + 0.0030 * A + 0.0572 * C + 0.1673 * D + 0.0803 * E + 0.6577 * F"
+   },
+   {
+    "name": "sd15_p2",
+    "expr": "0.0970 * H"
+   },
+   {
+    "name": "fd15",
+    "expr": "1.0 / max(1.0, (sd15_p0 + sd15_p1 + sd15_p2))"
+   },
+   {
+    "name": "sd16_p0",
+    "expr": "0.0897 * AU10_upper_lip_raiser_L + 0.1926 * AU12_lip_corner_puller_L + 1.3841 * AU16_lower_lip_depressor_L + 0.0226 * AU20_lip_stretcher_L + 0.0170 * AU24_lip_presser + 0.7886 * AU25_lips_part + 1.1441 * jaw + 0.0170 * A"
+   },
+   {
+    "name": "sd16_p1",
+    "expr": "0.0082 * B + 0.6711 * C + 1.8755 * D + 1.1055 * H"
+   },
+   {
+    "name": "fd16",
+    "expr": "1.0 / max(1.0, (sd16_p0 + sd16_p1))"
+   },
+   {
+    "name": "sd17_p0",
+    "expr": "0.0792 * AU10_upper_lip_raiser_L + 0.0165 * AU12_lip_corner_puller_L + 0.9730 * AU16_lower_lip_depressor_L + 0.0341 * AU20_lip_stretcher_L + 0.0256 * AU24_lip_presser + 0.5463 * AU25_lips_part + 0.7985 * jaw + 0.0256 * A"
+   },
+   {
+    "name": "sd17_p1",
+    "expr": "0.0459 * B + 0.4951 * C + 1.3048 * D + 0.8527 * E + 0.7862 * H"
+   },
+   {
+    "name": "fd17",
+    "expr": "1.0 / max(1.0, (sd17_p0 + sd17_p1))"
+   },
+   {
+    "name": "sd18_p0",
+    "expr": "0.0683 * AU10_upper_lip_raiser_L + 0.6915 * AU16_lower_lip_depressor_L + 0.0472 * AU20_lip_stretcher_L + 0.8429 * AU22_lip_funneler + 0.0354 * AU24_lip_presser + 0.3808 * AU25_lips_part + 0.5620 * jaw + 0.0354 * A"
+   },
+   {
+    "name": "sd18_p1",
+    "expr": "0.0727 * B + 0.3727 * C + 0.9147 * D + 0.7249 * E + 0.5666 * H"
+   },
+   {
+    "name": "fd18",
+    "expr": "1.0 / max(1.0, (sd18_p0 + sd18_p1))"
+   },
+   {
+    "name": "sd19_p0",
+    "expr": "0.0572 * AU10_upper_lip_raiser_L + 0.0095 * AU15_lip_corner_depressor_L + 0.4944 * AU16_lower_lip_depressor_L + 0.0479 * AU18_lip_pucker + 0.7649 * AU22_lip_funneler + 0.0460 * AU24_lip_presser + 0.2654 * AU25_lips_part + 0.3967 * jaw"
+   },
+   {
+    "name": "sd19_p1",
+    "expr": "0.0460 * A + 0.2847 * C + 0.6422 * D + 0.6324 * E + 0.4118 * H"
+   },
+   {
+    "name": "fd19",
+    "expr": "1.0 / max(1.0, (sd19_p0 + sd19_p1))"
+   },
+   {
+    "name": "sd20_p0",
+    "expr": "0.0338 * AU10_upper_lip_raiser_L + 0.0811 * AU15_lip_corner_depressor_L + 0.2247 * AU16_lower_lip_depressor_L + 0.7300 * AU20_lip_stretcher_L + 0.3660 * AU18_lip_pucker + 0.8104 * AU22_lip_funneler + 0.2695 * AU24_lip_presser + 0.1165 * AU25_lips_part"
+   },
+   {
+    "name": "sd20_p1",
+    "expr": "0.1772 * jaw + 0.7699 * js_L + 0.3617 * js_R + 0.2695 * A + 0.0600 * B + 0.1397 * C + 0.2848 * D + 0.7201 * E"
+   },
+   {
+    "name": "sd20_p2",
+    "expr": "0.4959 * F + 0.1908 * H"
+   },
+   {
+    "name": "fd20",
+    "expr": "1.0 / max(1.0, (sd20_p0 + sd20_p1 + sd20_p2))"
+   },
+   {
+    "name": "fd21",
+    "expr": "1.0 / max(1.0, (0.0578 * AU10_upper_lip_raiser_L + 0.5041 * AU16_lower_lip_depressor_L + 0.1325 * AU20_lip_stretcher_L + 0.2773 * AU22_lip_funneler + 0.2493 * AU25_lips_part + 0.1935 * B + 0.3430 * C + 0.4381 * H))"
+   },
+   {
+    "name": "sd22_p0",
+    "expr": "0.0387 * AU10_upper_lip_raiser_L + 0.4579 * AU15_lip_corner_depressor_L + 0.2771 * AU16_lower_lip_depressor_L + 0.6929 * AU20_lip_stretcher_L + 0.3029 * AU22_lip_funneler + 0.1130 * AU24_lip_presser + 0.1275 * AU25_lips_part + 0.2059 * jaw"
+   },
+   {
+    "name": "sd22_p1",
+    "expr": "0.5215 * js_L + 0.1130 * A + 0.1530 * B + 0.2120 * C + 0.3231 * D + 0.0523 * E + 0.2488 * H"
+   },
+   {
+    "name": "fd22",
+    "expr": "1.0 / max(1.0, (sd22_p0 + sd22_p1))"
+   },
+   {
+    "name": "sd23_p0",
+    "expr": "0.0214 * AU10_upper_lip_raiser_L + 0.6540 * AU15_lip_corner_depressor_L + 0.1369 * AU16_lower_lip_depressor_L + 0.5866 * AU20_lip_stretcher_L + 0.2820 * AU22_lip_funneler + 0.1258 * AU24_lip_presser + 0.0553 * AU25_lips_part + 0.0953 * jaw"
+   },
+   {
+    "name": "sd23_p1",
+    "expr": "0.3801 * js_L + 0.1258 * A + 0.4998 * B + 0.1277 * C + 0.1458 * D + 0.1043 * F + 0.1316 * H"
+   },
+   {
+    "name": "fd23",
+    "expr": "1.0 / max(1.0, (sd23_p0 + sd23_p1))"
+   },
+   {
+    "name": "fd24",
+    "expr": "1.0 / max(1.0, (0.0011 * AU10_upper_lip_raiser_L + 0.8034 * AU15_lip_corner_depressor_L + 0.5642 * AU20_lip_stretcher_L + 0.1175 * B + 0.1169 * C + 0.1169 * H))"
+   },
+   {
+    "name": "sc0_p0",
+    "expr": "0.6579 * AU14_dimpler_R + 0.5264 * AU23_lip_tightener + 0.3948 * AU24_lip_presser + 0.6579 * jaw + 0.3948 * A + 0.2961 * C + 0.4987 * D + 0.0132 * E"
+   },
+   {
+    "name": "sc0_p1",
+    "expr": "0.4277 * H"
+   },
+   {
+    "name": "fc0",
+    "expr": "1.0 / max(1.0, (sc0_p0 + sc0_p1))"
+   },
+   {
+    "name": "fc1",
+    "expr": "1.0 / max(1.0, (0.2307 * AU14_dimpler_R + 0.5262 * AU15_lip_corner_depressor_R + 0.0651 * AU20_lip_stretcher_R + 0.2846 * AU17_chin_raiser + 0.5094 * AU23_lip_tightener + 0.7854 * AU24_lip_presser + 0.0543 * jaw + 0.7854 * A))"
+   },
+   {
+    "name": "fc2",
+    "expr": "1.0 / max(1.0, (0.1095 * AU14_dimpler_R + 0.5951 * AU15_lip_corner_depressor_R + 0.1239 * AU20_lip_stretcher_R + 0.3227 * AU17_chin_raiser + 0.0366 * AU18_lip_pucker + 0.5065 * AU23_lip_tightener + 0.8509 * AU24_lip_presser + 0.8509 * A))"
+   },
+   {
+    "name": "fc3",
+    "expr": "1.0 / max(1.0, (0.0575 * AU14_dimpler_R + 0.6215 * AU15_lip_corner_depressor_R + 0.1769 * AU20_lip_stretcher_R + 0.3375 * AU17_chin_raiser + 0.1170 * AU18_lip_pucker + 0.5052 * AU23_lip_tightener + 0.8808 * AU24_lip_presser + 0.8808 * A))"
+   },
+   {
+    "name": "sc4_p0",
+    "expr": "0.0307 * AU14_dimpler_R + 0.6344 * AU15_lip_corner_depressor_R + 0.2242 * AU20_lip_stretcher_R + 0.3449 * AU17_chin_raiser + 0.1703 * AU18_lip_pucker + 0.5045 * AU23_lip_tightener + 0.8980 * AU24_lip_presser + 0.8980 * A"
+   },
+   {
+    "name": "sc4_p1",
+    "expr": "0.0038 * F"
+   },
+   {
+    "name": "fc4",
+    "expr": "1.0 / max(1.0, (sc4_p0 + sc4_p1))"
+   },
+   {
+    "name": "sc5_p0",
+    "expr": "0.0161 * AU14_dimpler_R + 0.6414 * AU15_lip_corner_depressor_R + 0.2660 * AU20_lip_stretcher_R + 0.3490 * AU17_chin_raiser + 0.2080 * AU18_lip_pucker + 0.5040 * AU23_lip_tightener + 0.9092 * AU24_lip_presser + 0.9092 * A"
+   },
+   {
+    "name": "sc5_p1",
+    "expr": "0.0555 * F"
+   },
+   {
+    "name": "fc5",
+    "expr": "1.0 / max(1.0, (sc5_p0 + sc5_p1))"
+   },
+   {
+    "name": "sc6_p0",
+    "expr": "0.0080 * AU14_dimpler_R + 0.6454 * AU15_lip_corner_depressor_R + 0.3022 * AU20_lip_stretcher_R + 0.3515 * AU17_chin_raiser + 0.2357 * AU18_lip_pucker + 0.5037 * AU23_lip_tightener + 0.9168 * AU24_lip_presser + 0.9168 * A"
+   },
+   {
+    "name": "sc6_p1",
+    "expr": "0.0938 * F"
+   },
+   {
+    "name": "fc6",
+    "expr": "1.0 / max(1.0, (sc6_p0 + sc6_p1))"
+   },
+   {
+    "name": "sc7_p0",
+    "expr": "0.0036 * AU14_dimpler_R + 0.6478 * AU15_lip_corner_depressor_R + 0.3328 * AU20_lip_stretcher_R + 0.3530 * AU17_chin_raiser + 0.2563 * AU18_lip_pucker + 0.5034 * AU23_lip_tightener + 0.9222 * AU24_lip_presser + 0.9222 * A"
+   },
+   {
+    "name": "sc7_p1",
+    "expr": "0.1223 * F"
+   },
+   {
+    "name": "fc7",
+    "expr": "1.0 / max(1.0, (sc7_p0 + sc7_p1))"
+   },
+   {
+    "name": "sc8_p0",
+    "expr": "0.0014 * AU14_dimpler_R + 0.6492 * AU15_lip_corner_depressor_R + 0.3579 * AU20_lip_stretcher_R + 0.3539 * AU17_chin_raiser + 0.2716 * AU18_lip_pucker + 0.5033 * AU23_lip_tightener + 0.9261 * AU24_lip_presser + 0.9261 * A"
+   },
+   {
+    "name": "sc8_p1",
+    "expr": "0.1436 * F"
+   },
+   {
+    "name": "fc8",
+    "expr": "1.0 / max(1.0, (sc8_p0 + sc8_p1))"
+   },
+   {
+    "name": "fc9",
+    "expr": "1.0 / max(1.0, (0.6501 * AU15_lip_corner_depressor_R + 0.3774 * AU20_lip_stretcher_R + 0.3545 * AU17_chin_raiser + 0.2827 * AU18_lip_pucker + 0.5031 * AU23_lip_tightener + 0.9288 * AU24_lip_presser + 0.9288 * A + 0.1590 * F))"
+   },
+   {
+    "name": "sc10_p0",
+    "expr": "0.0129 * AU15_lip_corner_depressor_L + 0.6378 * AU15_lip_corner_depressor_R + 0.0077 * AU20_lip_stretcher_L + 0.3836 * AU20_lip_stretcher_R + 0.3548 * AU17_chin_raiser + 0.2901 * AU18_lip_pucker + 0.5031 * AU23_lip_tightener + 0.9306 * AU24_lip_presser"
+   },
+   {
+    "name": "sc10_p1",
+    "expr": "0.9306 * A + 0.1694 * F"
+   },
+   {
+    "name": "fc10",
+    "expr": "1.0 / max(1.0, (sc10_p0 + sc10_p1))"
+   },
+   {
+    "name": "sc11_p0",
+    "expr": "0.1338 * AU15_lip_corner_depressor_L + 0.5171 * AU15_lip_corner_depressor_R + 0.0822 * AU20_lip_stretcher_L + 0.3175 * AU20_lip_stretcher_R + 0.3550 * AU17_chin_raiser + 0.2945 * AU18_lip_pucker + 0.5030 * AU23_lip_tightener + 0.9317 * AU24_lip_presser"
+   },
+   {
+    "name": "sc11_p1",
+    "expr": "0.9317 * A + 0.1755 * F"
+   },
+   {
+    "name": "fc11",
+    "expr": "1.0 / max(1.0, (sc11_p0 + sc11_p1))"
+   },
+   {
+    "name": "sc12_p0",
+    "expr": "0.3255 * AU15_lip_corner_depressor_L + 0.3255 * AU15_lip_corner_depressor_R + 0.2012 * AU20_lip_stretcher_L + 0.2012 * AU20_lip_stretcher_R + 0.3551 * AU17_chin_raiser + 0.2959 * AU18_lip_pucker + 0.5030 * AU23_lip_tightener + 0.9320 * AU24_lip_presser"
+   },
+   {
+    "name": "sc12_p1",
+    "expr": "0.9320 * A + 0.1775 * F"
+   },
+   {
+    "name": "fc12",
+    "expr": "1.0 / max(1.0, (sc12_p0 + sc12_p1))"
+   },
+   {
+    "name": "sc13_p0",
+    "expr": "0.5171 * AU15_lip_corner_depressor_L + 0.1338 * AU15_lip_corner_depressor_R + 0.3175 * AU20_lip_stretcher_L + 0.0822 * AU20_lip_stretcher_R + 0.3550 * AU17_chin_raiser + 0.2945 * AU18_lip_pucker + 0.5030 * AU23_lip_tightener + 0.9317 * AU24_lip_presser"
+   },
+   {
+    "name": "sc13_p1",
+    "expr": "0.9317 * A + 0.1755 * F"
+   },
+   {
+    "name": "fc13",
+    "expr": "1.0 / max(1.0, (sc13_p0 + sc13_p1))"
+   },
+   {
+    "name": "sc14_p0",
+    "expr": "0.6378 * AU15_lip_corner_depressor_L + 0.0129 * AU15_lip_corner_depressor_R + 0.3836 * AU20_lip_stretcher_L + 0.0077 * AU20_lip_stretcher_R + 0.3548 * AU17_chin_raiser + 0.2901 * AU18_lip_pucker + 0.5031 * AU23_lip_tightener + 0.9306 * AU24_lip_presser"
+   },
+   {
+    "name": "sc14_p1",
+    "expr": "0.9306 * A + 0.1694 * F"
+   },
+   {
+    "name": "fc14",
+    "expr": "1.0 / max(1.0, (sc14_p0 + sc14_p1))"
+   },
+   {
+    "name": "fc15",
+    "expr": "1.0 / max(1.0, (0.6501 * AU15_lip_corner_depressor_L + 0.3774 * AU20_lip_stretcher_L + 0.3545 * AU17_chin_raiser + 0.2827 * AU18_lip_pucker + 0.5031 * AU23_lip_tightener + 0.9288 * AU24_lip_presser + 0.9288 * A + 0.1590 * F))"
+   },
+   {
+    "name": "sc16_p0",
+    "expr": "0.0014 * AU14_dimpler_L + 0.6492 * AU15_lip_corner_depressor_L + 0.3579 * AU20_lip_stretcher_L + 0.3539 * AU17_chin_raiser + 0.2716 * AU18_lip_pucker + 0.5033 * AU23_lip_tightener + 0.9261 * AU24_lip_presser + 0.9261 * A"
+   },
+   {
+    "name": "sc16_p1",
+    "expr": "0.1436 * F"
+   },
+   {
+    "name": "fc16",
+    "expr": "1.0 / max(1.0, (sc16_p0 + sc16_p1))"
+   },
+   {
+    "name": "sc17_p0",
+    "expr": "0.0036 * AU14_dimpler_L + 0.6478 * AU15_lip_corner_depressor_L + 0.3328 * AU20_lip_stretcher_L + 0.3530 * AU17_chin_raiser + 0.2563 * AU18_lip_pucker + 0.5034 * AU23_lip_tightener + 0.9222 * AU24_lip_presser + 0.9222 * A"
+   },
+   {
+    "name": "sc17_p1",
+    "expr": "0.1223 * F"
+   },
+   {
+    "name": "fc17",
+    "expr": "1.0 / max(1.0, (sc17_p0 + sc17_p1))"
+   },
+   {
+    "name": "sc18_p0",
+    "expr": "0.0080 * AU14_dimpler_L + 0.6454 * AU15_lip_corner_depressor_L + 0.3022 * AU20_lip_stretcher_L + 0.3515 * AU17_chin_raiser + 0.2357 * AU18_lip_pucker + 0.5037 * AU23_lip_tightener + 0.9168 * AU24_lip_presser + 0.9168 * A"
+   },
+   {
+    "name": "sc18_p1",
+    "expr": "0.0938 * F"
+   },
+   {
+    "name": "fc18",
+    "expr": "1.0 / max(1.0, (sc18_p0 + sc18_p1))"
+   },
+   {
+    "name": "sc19_p0",
+    "expr": "0.0161 * AU14_dimpler_L + 0.6414 * AU15_lip_corner_depressor_L + 0.2660 * AU20_lip_stretcher_L + 0.3490 * AU17_chin_raiser + 0.2080 * AU18_lip_pucker + 0.5040 * AU23_lip_tightener + 0.9092 * AU24_lip_presser + 0.9092 * A"
+   },
+   {
+    "name": "sc19_p1",
+    "expr": "0.0555 * F"
+   },
+   {
+    "name": "fc19",
+    "expr": "1.0 / max(1.0, (sc19_p0 + sc19_p1))"
+   },
+   {
+    "name": "sc20_p0",
+    "expr": "0.0307 * AU14_dimpler_L + 0.6344 * AU15_lip_corner_depressor_L + 0.2242 * AU20_lip_stretcher_L + 0.3449 * AU17_chin_raiser + 0.1703 * AU18_lip_pucker + 0.5045 * AU23_lip_tightener + 0.8980 * AU24_lip_presser + 0.8980 * A"
+   },
+   {
+    "name": "sc20_p1",
+    "expr": "0.0038 * F"
+   },
+   {
+    "name": "fc20",
+    "expr": "1.0 / max(1.0, (sc20_p0 + sc20_p1))"
+   },
+   {
+    "name": "fc21",
+    "expr": "1.0 / max(1.0, (0.0575 * AU14_dimpler_L + 0.6215 * AU15_lip_corner_depressor_L + 0.1769 * AU20_lip_stretcher_L + 0.3375 * AU17_chin_raiser + 0.1170 * AU18_lip_pucker + 0.5052 * AU23_lip_tightener + 0.8808 * AU24_lip_presser + 0.8808 * A))"
+   },
+   {
+    "name": "fc22",
+    "expr": "1.0 / max(1.0, (0.1095 * AU14_dimpler_L + 0.5951 * AU15_lip_corner_depressor_L + 0.1239 * AU20_lip_stretcher_L + 0.3227 * AU17_chin_raiser + 0.0366 * AU18_lip_pucker + 0.5065 * AU23_lip_tightener + 0.8509 * AU24_lip_presser + 0.8509 * A))"
+   },
+   {
+    "name": "fc23",
+    "expr": "1.0 / max(1.0, (0.2307 * AU14_dimpler_L + 0.5262 * AU15_lip_corner_depressor_L + 0.0651 * AU20_lip_stretcher_L + 0.2846 * AU17_chin_raiser + 0.5094 * AU23_lip_tightener + 0.7854 * AU24_lip_presser + 0.0543 * jaw + 0.7854 * A))"
+   },
+   {
+    "name": "sc24_p0",
+    "expr": "0.6579 * AU14_dimpler_L + 0.5264 * AU23_lip_tightener + 0.3948 * AU24_lip_presser + 0.6579 * jaw + 0.3948 * A + 0.2961 * C + 0.4987 * D + 0.0132 * E"
+   },
+   {
+    "name": "sc24_p1",
+    "expr": "0.4277 * H"
+   },
+   {
+    "name": "fc24",
+    "expr": "1.0 / max(1.0, (sc24_p0 + sc24_p1))"
+   },
+   {
+    "name": "m0_p0",
+    "expr": "min(fd11, min(fd12, min(fd13, min(fd14, min(fd15, min(fd16, min(fd17, fd18)))))))"
+   },
+   {
+    "name": "m0_p1",
+    "expr": "min(fd19, min(fd20, min(fd21, min(fd22, min(fd23, fd24)))))"
+   },
+   {
+    "name": "m0",
+    "expr": "min(m0_p0, m0_p1)"
+   },
+   {
+    "name": "m1_p0",
+    "expr": "min(fd1, min(fd10, min(fd11, min(fd12, min(fd13, min(fd2, min(fd3, fd4)))))))"
+   },
+   {
+    "name": "m1_p1",
+    "expr": "min(fd5, min(fd6, min(fd7, min(fd8, fd9))))"
+   },
+   {
+    "name": "m1",
+    "expr": "min(m1_p0, m1_p1)"
+   },
+   {
+    "name": "m2_p0",
+    "expr": "min(fd11, min(fd12, min(fd13, min(fd15, min(fd16, fd17)))))"
+   },
+   {
+    "name": "m3_p0",
+    "expr": "min(fd11, min(fd12, min(fd13, min(fd7, min(fd8, fd9)))))"
+   },
+   {
+    "name": "m4_p0",
+    "expr": "min(fc16, min(fc17, min(fc18, min(fc19, min(fc20, min(fc21, min(fc22, fc23)))))))"
+   },
+   {
+    "name": "m4_p1",
+    "expr": "fc24"
+   },
+   {
+    "name": "m4",
+    "expr": "min(m4_p0, m4_p1)"
+   },
+   {
+    "name": "m5_p0",
+    "expr": "min(fc0, min(fc1, min(fc2, min(fc3, min(fc4, min(fc5, min(fc6, fc7)))))))"
+   },
+   {
+    "name": "m5_p1",
+    "expr": "min(fc8, fd0)"
+   },
+   {
+    "name": "m5",
+    "expr": "min(m5_p0, m5_p1)"
+   },
+   {
+    "name": "m6_p0",
+    "expr": "min(fc10, min(fc11, min(fc12, min(fc13, min(fc14, min(fc15, min(fc16, fc17)))))))"
+   },
+   {
+    "name": "m6_p1",
+    "expr": "min(fc18, min(fc19, min(fc20, min(fc21, min(fc22, min(fc23, min(fd19, fd20)))))))"
+   },
+   {
+    "name": "m6_p2",
+    "expr": "min(fd22, min(fd23, fd24))"
+   },
+   {
+    "name": "m6",
+    "expr": "min(m6_p0, min(m6_p1, m6_p2))"
+   },
+   {
+    "name": "m7_p0",
+    "expr": "min(fc1, min(fc10, min(fc11, min(fc12, min(fc13, min(fc14, min(fc2, fc3)))))))"
+   },
+   {
+    "name": "m7_p1",
+    "expr": "min(fc4, min(fc5, min(fc6, min(fc7, min(fc8, min(fc9, min(fd0, fd1)))))))"
+   },
+   {
+    "name": "m7_p2",
+    "expr": "min(fd2, min(fd3, min(fd4, fd5)))"
+   },
+   {
+    "name": "m7",
+    "expr": "min(m7_p0, min(m7_p1, m7_p2))"
+   },
+   {
+    "name": "m8_p0",
+    "expr": "min(fd10, min(fd11, min(fd12, min(fd13, min(fd14, min(fd15, min(fd16, fd17)))))))"
+   },
+   {
+    "name": "m8_p1",
+    "expr": "min(fd18, min(fd19, min(fd20, min(fd21, min(fd22, fd23)))))"
+   },
+   {
+    "name": "m8",
+    "expr": "min(m8_p0, m8_p1)"
+   },
+   {
+    "name": "m9_p0",
+    "expr": "min(fd1, min(fd10, min(fd11, min(fd12, min(fd13, min(fd14, min(fd2, fd3)))))))"
+   },
+   {
+    "name": "m9_p1",
+    "expr": "min(fd4, min(fd5, min(fd6, min(fd7, min(fd8, fd9)))))"
+   },
+   {
+    "name": "m9",
+    "expr": "min(m9_p0, m9_p1)"
+   },
+   {
+    "name": "m10_p0",
+    "expr": "min(fc10, min(fc11, min(fc12, min(fc13, min(fc14, min(fc15, min(fc16, fc17)))))))"
+   },
+   {
+    "name": "m10_p1",
+    "expr": "min(fc18, min(fc19, min(fc20, min(fc21, min(fc22, min(fc23, min(fd15, fd16)))))))"
+   },
+   {
+    "name": "m10_p2",
+    "expr": "min(fd17, min(fd18, min(fd20, min(fd21, min(fd22, min(fd23, fd24))))))"
+   },
+   {
+    "name": "m10",
+    "expr": "min(m10_p0, min(m10_p1, m10_p2))"
+   },
+   {
+    "name": "m11_p0",
+    "expr": "min(fc1, min(fc10, min(fc11, min(fc12, min(fc13, min(fc14, min(fc2, fc3)))))))"
+   },
+   {
+    "name": "m11_p1",
+    "expr": "min(fc4, min(fc5, min(fc6, min(fc7, min(fc8, min(fc9, min(fd0, fd3)))))))"
+   },
+   {
+    "name": "m11_p2",
+    "expr": "min(fd4, min(fd6, min(fd7, min(fd8, fd9))))"
+   },
+   {
+    "name": "m11",
+    "expr": "min(m11_p0, min(m11_p1, m11_p2))"
+   },
+   {
+    "name": "m12_p0",
+    "expr": "min(fc1, min(fc10, min(fc11, min(fc12, min(fc13, min(fc14, min(fc15, fc16)))))))"
+   },
+   {
+    "name": "m12_p1",
+    "expr": "min(fc17, min(fc18, min(fc19, min(fc2, min(fc20, min(fc21, min(fc22, fc23)))))))"
+   },
+   {
+    "name": "m12_p2",
+    "expr": "min(fc3, min(fc4, min(fc5, min(fc6, min(fc7, min(fc8, fc9))))))"
+   },
+   {
+    "name": "m12",
+    "expr": "min(m12_p0, min(m12_p1, m12_p2))"
+   },
+   {
+    "name": "m13_p0",
+    "expr": "min(fc10, min(fc11, min(fc12, min(fc13, min(fc14, min(fc15, min(fc16, fc17)))))))"
+   },
+   {
+    "name": "m13_p1",
+    "expr": "min(fc18, min(fc19, min(fc2, min(fc20, min(fc21, min(fc22, min(fc3, fc4)))))))"
+   },
+   {
+    "name": "m13_p2",
+    "expr": "min(fc5, min(fc6, min(fc7, min(fc8, min(fc9, min(fd0, min(fd1, fd15)))))))"
+   },
+   {
+    "name": "m13_p3",
+    "expr": "min(fd19, min(fd2, min(fd20, min(fd3, min(fd4, min(fd5, fd9))))))"
+   },
+   {
+    "name": "m13",
+    "expr": "min(m13_p0, min(m13_p1, min(m13_p2, m13_p3)))"
+   },
+   {
+    "name": "m14_p0",
+    "expr": "min(fd0, min(fd1, min(fd10, min(fd11, min(fd12, min(fd13, min(fd14, fd15)))))))"
+   },
+   {
+    "name": "m14_p1",
+    "expr": "min(fd18, min(fd19, min(fd2, min(fd20, min(fd21, min(fd22, min(fd23, fd3)))))))"
+   },
+   {
+    "name": "m14_p2",
+    "expr": "min(fd4, min(fd5, min(fd6, fd9)))"
+   },
+   {
+    "name": "m14",
+    "expr": "min(m14_p0, min(m14_p1, m14_p2))"
+   },
+   {
+    "name": "m15_p0",
+    "expr": "min(fc0, min(fc1, min(fc10, min(fc11, min(fc12, min(fc13, min(fc14, fc15)))))))"
+   },
+   {
+    "name": "m15_p1",
+    "expr": "min(fc16, min(fc17, min(fc18, min(fc19, min(fc2, min(fc20, min(fc21, fc22)))))))"
+   },
+   {
+    "name": "m15_p2",
+    "expr": "min(fc23, min(fc24, min(fc3, min(fc4, min(fc5, min(fc6, min(fc7, fc8)))))))"
+   },
+   {
+    "name": "m15_p3",
+    "expr": "min(fc9, fd0)"
+   },
+   {
+    "name": "m15",
+    "expr": "min(m15_p0, min(m15_p1, min(m15_p2, m15_p3)))"
+   },
+   {
+    "name": "m16_p0",
+    "expr": "min(fc0, min(fc1, min(fc10, min(fc11, min(fc12, min(fc13, min(fc14, fc15)))))))"
+   },
+   {
+    "name": "m16_p1",
+    "expr": "min(fc16, min(fc17, min(fc18, min(fc19, min(fc2, min(fc20, min(fc21, fc22)))))))"
+   },
+   {
+    "name": "m16_p2",
+    "expr": "min(fc23, min(fc24, min(fc3, min(fc4, min(fc5, min(fc6, min(fc7, fc8)))))))"
+   },
+   {
+    "name": "m16_p3",
+    "expr": "min(fc9, min(fd0, min(fd1, min(fd10, min(fd14, min(fd15, min(fd16, fd17)))))))"
+   },
+   {
+    "name": "m16_p4",
+    "expr": "min(fd18, min(fd19, min(fd2, min(fd20, min(fd22, min(fd23, min(fd3, fd4)))))))"
+   },
+   {
+    "name": "m16_p5",
+    "expr": "min(fd5, min(fd6, min(fd7, min(fd8, fd9))))"
+   },
+   {
+    "name": "m16",
+    "expr": "min(m16_p0, min(m16_p1, min(m16_p2, min(m16_p3, min(m16_p4, m16_p5)))))"
+   },
+   {
+    "name": "m17_p0",
+    "expr": "min(fd1, min(fd10, min(fd11, min(fd12, min(fd13, min(fd14, min(fd15, fd16)))))))"
+   },
+   {
+    "name": "m17_p1",
+    "expr": "min(fd17, min(fd18, min(fd19, min(fd2, min(fd20, min(fd21, min(fd22, fd23)))))))"
+   },
+   {
+    "name": "m17_p2",
+    "expr": "min(fd3, min(fd4, min(fd5, min(fd6, min(fd7, min(fd8, fd9))))))"
+   },
+   {
+    "name": "m17",
+    "expr": "min(m17_p0, min(m17_p1, m17_p2))"
+   },
+   {
+    "name": "m18_p0",
+    "expr": "min(fc0, min(fc1, min(fc23, min(fc24, min(fd0, min(fd1, min(fd10, fd11)))))))"
+   },
+   {
+    "name": "m18_p1",
+    "expr": "min(fd12, min(fd13, min(fd14, min(fd15, min(fd16, min(fd17, min(fd18, fd19)))))))"
+   },
+   {
+    "name": "m18_p2",
+    "expr": "min(fd2, min(fd20, min(fd22, min(fd23, min(fd3, min(fd4, min(fd5, fd6)))))))"
+   },
+   {
+    "name": "m18_p3",
+    "expr": "min(fd7, min(fd8, fd9))"
+   },
+   {
+    "name": "m18",
+    "expr": "min(m18_p0, min(m18_p1, min(m18_p2, m18_p3)))"
+   },
+   {
+    "name": "m19_p0",
+    "expr": "min(fd0, min(fd14, min(fd15, min(fd20, min(fd22, min(fd23, min(fd4, fd9)))))))"
+   },
+   {
+    "name": "m20_p0",
+    "expr": "min(fd15, min(fd20, fd9))"
+   },
+   {
+    "name": "m21_p0",
+    "expr": "min(fd0, min(fd16, min(fd17, min(fd18, min(fd2, min(fd20, min(fd21, fd22)))))))"
+   },
+   {
+    "name": "m21_p1",
+    "expr": "min(fd23, min(fd24, min(fd3, min(fd4, min(fd6, min(fd7, fd8))))))"
+   },
+   {
+    "name": "m21",
+    "expr": "min(m21_p0, m21_p1)"
+   },
+   {
+    "name": "m22_p0",
+    "expr": "min(fc0, min(fc24, min(fd0, min(fd1, min(fd11, min(fd12, min(fd13, fd15)))))))"
+   },
+   {
+    "name": "m22_p1",
+    "expr": "min(fd16, min(fd17, min(fd18, min(fd19, min(fd2, min(fd20, min(fd21, fd22)))))))"
+   },
+   {
+    "name": "m22_p2",
+    "expr": "min(fd23, min(fd24, min(fd3, min(fd4, min(fd5, min(fd6, min(fd7, fd8)))))))"
+   },
+   {
+    "name": "m22_p3",
+    "expr": "fd9"
+   },
+   {
+    "name": "m22",
+    "expr": "min(m22_p0, min(m22_p1, min(m22_p2, m22_p3)))"
+   },
+   {
+    "name": "m23_p0",
+    "expr": "min(fc0, min(fc24, min(fd0, min(fd1, min(fd10, min(fd11, min(fd12, fd13)))))))"
+   },
+   {
+    "name": "m23_p1",
+    "expr": "min(fd14, min(fd15, min(fd16, min(fd17, min(fd18, min(fd19, min(fd2, fd20)))))))"
+   },
+   {
+    "name": "m23_p2",
+    "expr": "min(fd22, min(fd23, min(fd3, min(fd4, min(fd5, min(fd6, min(fd7, fd8)))))))"
+   },
+   {
+    "name": "m23_p3",
+    "expr": "fd9"
+   },
+   {
+    "name": "m23",
+    "expr": "min(m23_p0, min(m23_p1, min(m23_p2, m23_p3)))"
+   },
+   {
+    "name": "m24_p0",
+    "expr": "min(fc0, min(fc24, min(fd0, min(fd1, min(fd10, min(fd11, min(fd12, fd13)))))))"
+   },
+   {
+    "name": "m24_p1",
+    "expr": "min(fd14, min(fd15, min(fd17, min(fd18, min(fd19, min(fd2, min(fd20, fd22)))))))"
+   },
+   {
+    "name": "m24_p2",
+    "expr": "min(fd3, min(fd4, min(fd5, min(fd6, min(fd7, fd9)))))"
+   },
+   {
+    "name": "m24",
+    "expr": "min(m24_p0, min(m24_p1, m24_p2))"
+   },
+   {
+    "name": "m25_p0",
+    "expr": "min(fc10, min(fc11, min(fc12, min(fc13, min(fc14, min(fc15, min(fc16, fc17)))))))"
+   },
+   {
+    "name": "m25_p1",
+    "expr": "min(fc18, min(fc19, min(fc20, min(fc4, min(fc5, min(fc6, min(fc7, fc8)))))))"
+   },
+   {
+    "name": "m25_p2",
+    "expr": "min(fc9, min(fd0, min(fd1, min(fd15, min(fd2, min(fd20, min(fd23, fd3)))))))"
+   },
+   {
+    "name": "m25_p3",
+    "expr": "min(fd4, min(fd8, fd9))"
+   },
+   {
+    "name": "m25",
+    "expr": "min(m25_p0, min(m25_p1, min(m25_p2, m25_p3)))"
+   },
+   {
+    "name": "m26_p0",
+    "expr": "min(fc0, min(fc24, min(fd0, min(fd1, min(fd10, min(fd11, min(fd12, fd13)))))))"
+   },
+   {
+    "name": "m26_p1",
+    "expr": "min(fd14, min(fd15, min(fd16, min(fd17, min(fd18, min(fd19, min(fd2, fd20)))))))"
+   },
+   {
+    "name": "m26_p2",
+    "expr": "min(fd21, min(fd22, min(fd23, min(fd24, min(fd3, min(fd4, min(fd5, fd6)))))))"
+   },
+   {
+    "name": "m26_p3",
+    "expr": "min(fd7, min(fd8, fd9))"
+   },
+   {
+    "name": "m26",
+    "expr": "min(m26_p0, min(m26_p1, min(m26_p2, m26_p3)))"
+   }
+  ],
+  "keys": {
+   "eye_L": {
+    "AU1_inner_brow_raiser_L": "AU1_inner_brow_raiser_L",
+    "blink_x_AU1_inner_brow_raiser_L": "AU1_inner_brow_raiser_L * b_L",
+    "AU2_outer_brow_raiser_L": "AU2_outer_brow_raiser_L",
+    "blink_x_AU2_outer_brow_raiser_L": "AU2_outer_brow_raiser_L * b_L",
+    "AU4_brow_lowerer_L": "e_AU4_L",
+    "blink_x_AU4_brow_lowerer_L": "e_AU4_L * b_L",
+    "AU5_upper_lid_raiser_L": "AU5_upper_lid_raiser_L",
+    "blink_x_AU5_upper_lid_raiser_L": "AU5_upper_lid_raiser_L * b_L",
+    "AU6_cheek_raiser_L": "e_AU6_L",
+    "blink_x_AU6_cheek_raiser_L": "e_AU6_L * b_L",
+    "AU7_lid_tightener_L": "e_AU7_L",
+    "blink_x_AU7_lid_tightener_L": "e_AU7_L * b_L",
+    "blink_L": "b_L * Wb_L",
+    "blink_ib20_L": "max(0.0, min((b_L - 0.000) / 0.200, (0.400 - b_L) / 0.200)) * Wb_L",
+    "blink_ib40_L": "max(0.0, min((b_L - 0.200) / 0.200, (0.600 - b_L) / 0.200)) * Wb_L",
+    "blink_ib60_L": "max(0.0, min((b_L - 0.400) / 0.200, (0.800 - b_L) / 0.200)) * Wb_L",
+    "blink_ib80_L": "max(0.0, min((b_L - 0.600) / 0.200, (1.000 - b_L) / 0.200)) * Wb_L",
+    "lid_lo_raise_L": "e_lid_L",
+    "blink_x_lid_lo_raise_L": "e_lid_L * b_L",
+    "look_L": "lkL_L * max(0.0, min(1.0, (0.2662 - Bs_L) / 0.2662))",
+    "look_R": "lkR_L * max(0.0, min(1.0, (0.2820 - Bs_L) / 0.2820))",
+    "look_up": "lkup_L * max(0.0, min(1.0, (0.2353 - Bu_L) / 0.2353))",
+    "look_down": "lkdown_L * max(0.0, min(1.0, (1.0000 - Bd_L) / 1.0000))"
+   },
+   "eye_R": {
+    "AU1_inner_brow_raiser_R": "AU1_inner_brow_raiser_R",
+    "blink_x_AU1_inner_brow_raiser_R": "AU1_inner_brow_raiser_R * b_R",
+    "AU2_outer_brow_raiser_R": "AU2_outer_brow_raiser_R",
+    "blink_x_AU2_outer_brow_raiser_R": "AU2_outer_brow_raiser_R * b_R",
+    "AU4_brow_lowerer_R": "e_AU4_R",
+    "blink_x_AU4_brow_lowerer_R": "e_AU4_R * b_R",
+    "AU5_upper_lid_raiser_R": "AU5_upper_lid_raiser_R",
+    "blink_x_AU5_upper_lid_raiser_R": "AU5_upper_lid_raiser_R * b_R",
+    "AU6_cheek_raiser_R": "e_AU6_R",
+    "blink_x_AU6_cheek_raiser_R": "e_AU6_R * b_R",
+    "AU7_lid_tightener_R": "e_AU7_R",
+    "blink_x_AU7_lid_tightener_R": "e_AU7_R * b_R",
+    "blink_R": "b_R * Wb_R",
+    "blink_ib20_R": "max(0.0, min((b_R - 0.000) / 0.200, (0.400 - b_R) / 0.200)) * Wb_R",
+    "blink_ib40_R": "max(0.0, min((b_R - 0.200) / 0.200, (0.600 - b_R) / 0.200)) * Wb_R",
+    "blink_ib60_R": "max(0.0, min((b_R - 0.400) / 0.200, (0.800 - b_R) / 0.200)) * Wb_R",
+    "blink_ib80_R": "max(0.0, min((b_R - 0.600) / 0.200, (1.000 - b_R) / 0.200)) * Wb_R",
+    "lid_lo_raise_R": "e_lid_R",
+    "blink_x_lid_lo_raise_R": "e_lid_R * b_R",
+    "look_L": "lkL_R * max(0.0, min(1.0, (0.2820 - Bs_R) / 0.2820))",
+    "look_R": "lkR_R * max(0.0, min(1.0, (0.2662 - Bs_R) / 0.2662))",
+    "look_up": "lkup_R * max(0.0, min(1.0, (0.2353 - Bu_R) / 0.2353))",
+    "look_down": "lkdown_R * max(0.0, min(1.0, (1.0000 - Bd_R) / 1.0000))"
+   },
+   "lash_L": {
+    "AU1_inner_brow_raiser_L": "AU1_inner_brow_raiser_L",
+    "blink_x_AU1_inner_brow_raiser_L": "AU1_inner_brow_raiser_L * b_L",
+    "AU2_outer_brow_raiser_L": "AU2_outer_brow_raiser_L",
+    "blink_x_AU2_outer_brow_raiser_L": "AU2_outer_brow_raiser_L * b_L",
+    "AU4_brow_lowerer_L": "e_AU4_L",
+    "blink_x_AU4_brow_lowerer_L": "e_AU4_L * b_L",
+    "AU5_upper_lid_raiser_L": "AU5_upper_lid_raiser_L",
+    "blink_x_AU5_upper_lid_raiser_L": "AU5_upper_lid_raiser_L * b_L",
+    "AU6_cheek_raiser_L": "e_AU6_L",
+    "blink_x_AU6_cheek_raiser_L": "e_AU6_L * b_L",
+    "AU7_lid_tightener_L": "e_AU7_L",
+    "blink_x_AU7_lid_tightener_L": "e_AU7_L * b_L",
+    "blink_L": "b_L * Wb_L",
+    "blink_ib20_L": "max(0.0, min((b_L - 0.000) / 0.200, (0.400 - b_L) / 0.200)) * Wb_L",
+    "blink_ib40_L": "max(0.0, min((b_L - 0.200) / 0.200, (0.600 - b_L) / 0.200)) * Wb_L",
+    "blink_ib60_L": "max(0.0, min((b_L - 0.400) / 0.200, (0.800 - b_L) / 0.200)) * Wb_L",
+    "blink_ib80_L": "max(0.0, min((b_L - 0.600) / 0.200, (1.000 - b_L) / 0.200)) * Wb_L"
+   },
+   "lash_R": {
+    "AU1_inner_brow_raiser_R": "AU1_inner_brow_raiser_R",
+    "blink_x_AU1_inner_brow_raiser_R": "AU1_inner_brow_raiser_R * b_R",
+    "AU2_outer_brow_raiser_R": "AU2_outer_brow_raiser_R",
+    "blink_x_AU2_outer_brow_raiser_R": "AU2_outer_brow_raiser_R * b_R",
+    "AU4_brow_lowerer_R": "e_AU4_R",
+    "blink_x_AU4_brow_lowerer_R": "e_AU4_R * b_R",
+    "AU5_upper_lid_raiser_R": "AU5_upper_lid_raiser_R",
+    "blink_x_AU5_upper_lid_raiser_R": "AU5_upper_lid_raiser_R * b_R",
+    "AU6_cheek_raiser_R": "e_AU6_R",
+    "blink_x_AU6_cheek_raiser_R": "e_AU6_R * b_R",
+    "AU7_lid_tightener_R": "e_AU7_R",
+    "blink_x_AU7_lid_tightener_R": "e_AU7_R * b_R",
+    "blink_R": "b_R * Wb_R",
+    "blink_ib20_R": "max(0.0, min((b_R - 0.000) / 0.200, (0.400 - b_R) / 0.200)) * Wb_R",
+    "blink_ib40_R": "max(0.0, min((b_R - 0.200) / 0.200, (0.600 - b_R) / 0.200)) * Wb_R",
+    "blink_ib60_R": "max(0.0, min((b_R - 0.400) / 0.200, (0.800 - b_R) / 0.200)) * Wb_R",
+    "blink_ib80_R": "max(0.0, min((b_R - 0.600) / 0.200, (1.000 - b_R) / 0.200)) * Wb_R"
+   },
+   "mouth": {
+    "AU10_upper_lip_raiser_L": "AU10_upper_lip_raiser_L * m0",
+    "AU10_upper_lip_raiser_R": "AU10_upper_lip_raiser_R * m1",
+    "AU12_lip_corner_puller_L": "AU12_lip_corner_puller_L * m2_p0",
+    "AU12_lip_corner_puller_R": "AU12_lip_corner_puller_R * m3_p0",
+    "AU14_dimpler_L": "AU14_dimpler_L * m4",
+    "AU14_dimpler_R": "AU14_dimpler_R * m5",
+    "AU15_lip_corner_depressor_L": "AU15_lip_corner_depressor_L * m6",
+    "AU15_lip_corner_depressor_R": "AU15_lip_corner_depressor_R * m7",
+    "AU16_lower_lip_depressor_L": "AU16_lower_lip_depressor_L * m8",
+    "AU16_lower_lip_depressor_R": "AU16_lower_lip_depressor_R * m9",
+    "AU20_lip_stretcher_L": "AU20_lip_stretcher_L * m10",
+    "AU20_lip_stretcher_R": "AU20_lip_stretcher_R * m11",
+    "AU17_chin_raiser": "AU17_chin_raiser * m12",
+    "AU18_lip_pucker": "AU18_lip_pucker * m13",
+    "AU22_lip_funneler": "AU22_lip_funneler * m14",
+    "AU23_lip_tightener": "AU23_lip_tightener * m15",
+    "AU24_lip_presser": "AU24_lip_presser * m16",
+    "AU25_lips_part": "AU25_lips_part * m17",
+    "jaw_open": "jaw * m18",
+    "jaw_side_L": "js_L * m19_p0",
+    "jaw_side_R": "js_R * m20_p0",
+    "A": "A * m16",
+    "B": "B * m21",
+    "C": "C * m22",
+    "D": "D * m23",
+    "E": "E * m24",
+    "F": "F * m25",
+    "G": "G",
+    "H": "H * m26",
+    "X": "X"
+   }
+  },
+  "meta": {
+   "L": {
+    "close_on_upper_lid": [
+     "AU4_brow_lowerer",
+     "AU6_cheek_raiser",
+     "AU7_lid_tightener"
+    ],
+    "close_on_lower_lid": [
+     "AU6_cheek_raiser",
+     "AU7_lid_tightener",
+     "lid_lo_raise"
+    ]
+   },
+   "R": {
+    "close_on_upper_lid": [
+     "AU4_brow_lowerer",
+     "AU6_cheek_raiser",
+     "AU7_lid_tightener"
+    ],
+    "close_on_lower_lid": [
+     "AU6_cheek_raiser",
+     "AU7_lid_tightener",
+     "lid_lo_raise"
+    ]
+   },
+   "mouth_drop_share": {
+    "AU10_upper_lip_raiser_L": {
+     "11": 0.0074,
+     "12": 0.0228,
+     "13": 0.0436,
+     "14": 0.058,
+     "15": 0.0207,
+     "16": 0.0897,
+     "17": 0.0792,
+     "18": 0.0683,
+     "19": 0.0572,
+     "20": 0.0338,
+     "21": 0.0578,
+     "22": 0.0387,
+     "23": 0.0214,
+     "24": 0.0011
+    },
+    "AU10_upper_lip_raiser_R": {
+     "1": 0.0078,
+     "2": 0.0125,
+     "3": 0.0166,
+     "4": 0.0203,
+     "5": 0.0282,
+     "6": 0.032,
+     "7": 0.0354,
+     "8": 0.0382,
+     "9": 0.0293,
+     "10": 0.058,
+     "11": 0.0436,
+     "12": 0.0228,
+     "13": 0.0074
+    },
+    "AU12_lip_corner_puller_L": {
+     "11": 0.0385,
+     "12": 0.0989,
+     "13": 0.1487,
+     "15": 0.0279,
+     "16": 0.1926,
+     "17": 0.0165
+    },
+    "AU12_lip_corner_puller_R": {
+     "7": 0.0041,
+     "8": 0.0373,
+     "9": 0.0428,
+     "11": 0.1487,
+     "12": 0.0989,
+     "13": 0.0385
+    },
+    "AU14_dimpler_R": {
+     "0": 0.0331
+    },
+    "AU15_lip_corner_depressor_L": {
+     "19": 0.0095,
+     "20": 0.0811,
+     "22": 0.4579,
+     "23": 0.654,
+     "24": 0.8034
+    },
+    "AU15_lip_corner_depressor_R": {
+     "0": 0.3871,
+     "1": 0.2418,
+     "2": 0.1706,
+     "3": 0.1075,
+     "4": 0.0523,
+     "5": 0.0054
+    },
+    "AU16_lower_lip_depressor_L": {
+     "10": 0.0108,
+     "11": 0.1196,
+     "12": 0.2965,
+     "13": 0.4619,
+     "14": 0.5376,
+     "15": 0.1225,
+     "16": 1.3841,
+     "17": 0.973,
+     "18": 0.6915,
+     "19": 0.4944,
+     "20": 0.2247,
+     "21": 0.5041,
+     "22": 0.2771,
+     "23": 0.1369
+    },
+    "AU16_lower_lip_depressor_R": {
+     "1": 0.0438,
+     "2": 0.0707,
+     "3": 0.0954,
+     "4": 0.1192,
+     "5": 0.178,
+     "6": 0.2094,
+     "7": 0.2399,
+     "8": 0.2682,
+     "9": 0.1882,
+     "10": 0.5376,
+     "11": 0.4619,
+     "12": 0.2965,
+     "13": 0.1196,
+     "14": 0.0108
+    },
+    "AU20_lip_stretcher_L": {
+     "15": 0.8143,
+     "16": 0.0226,
+     "17": 0.0341,
+     "18": 0.0472,
+     "20": 0.73,
+     "21": 0.1325,
+     "22": 0.6929,
+     "23": 0.5866,
+     "24": 0.5642
+    },
+    "AU20_lip_stretcher_R": {
+     "0": 0.0197,
+     "3": 0.0469,
+     "4": 0.0381,
+     "6": 0.0263,
+     "7": 0.0187,
+     "8": 0.0122,
+     "9": 0.2389
+    },
+    "AU18_lip_pucker": {
+     "0": 0.3256,
+     "1": 0.2782,
+     "2": 0.2534,
+     "3": 0.2227,
+     "4": 0.1887,
+     "5": 0.0273,
+     "9": 0.4276,
+     "15": 0.6274,
+     "19": 0.0479,
+     "20": 0.366
+    },
+    "AU22_lip_funneler": {
+     "0": 0.2424,
+     "1": 0.4025,
+     "2": 0.4192,
+     "3": 0.4246,
+     "4": 0.4244,
+     "5": 0.2754,
+     "6": 0.2553,
+     "9": 0.7473,
+     "10": 0.3124,
+     "11": 0.3007,
+     "12": 0.2965,
+     "13": 0.3007,
+     "14": 0.3124,
+     "15": 0.8355,
+     "18": 0.8429,
+     "19": 0.7649,
+     "20": 0.8104,
+     "21": 0.2773,
+     "22": 0.3029,
+     "23": 0.282
+    },
+    "AU23_lip_tightener": {
+     "0": 0.0768
+    },
+    "AU24_lip_presser": {
+     "0": 0.1292,
+     "1": 0.0494,
+     "2": 0.0421,
+     "3": 0.0352,
+     "4": 0.1696,
+     "5": 0.0262,
+     "6": 0.0198,
+     "7": 0.0141,
+     "8": 0.0092,
+     "9": 0.004,
+     "10": 0.0031,
+     "14": 0.0031,
+     "15": 0.003,
+     "16": 0.017,
+     "17": 0.0256,
+     "18": 0.0354,
+     "19": 0.046,
+     "20": 0.2695,
+     "22": 0.113,
+     "23": 0.1258
+    },
+    "AU25_lips_part": {
+     "1": 0.0177,
+     "2": 0.0326,
+     "3": 0.0472,
+     "4": 0.0618,
+     "5": 0.0956,
+     "6": 0.1154,
+     "7": 0.1347,
+     "8": 0.1528,
+     "9": 0.1084,
+     "10": 0.3181,
+     "11": 0.3387,
+     "12": 0.3459,
+     "13": 0.3387,
+     "14": 0.3181,
+     "15": 0.0706,
+     "16": 0.7886,
+     "17": 0.5463,
+     "18": 0.3808,
+     "19": 0.2654,
+     "20": 0.1165,
+     "21": 0.2493,
+     "22": 0.1275,
+     "23": 0.0553
+    },
+    "jaw_open": {
+     "0": 0.1117,
+     "1": 0.0329,
+     "2": 0.0525,
+     "3": 0.0735,
+     "4": 0.094,
+     "5": 0.1428,
+     "6": 0.1702,
+     "7": 0.1969,
+     "8": 0.2217,
+     "9": 0.1564,
+     "10": 0.4574,
+     "11": 0.4859,
+     "12": 0.496,
+     "13": 0.4859,
+     "14": 0.4574,
+     "15": 0.1019,
+     "16": 1.1441,
+     "17": 0.7985,
+     "18": 0.562,
+     "19": 0.3967,
+     "20": 0.1772,
+     "22": 0.2059,
+     "23": 0.0953
+    },
+    "jaw_side_L": {
+     "0": 0.0796,
+     "4": 0.1865,
+     "9": 0.6232,
+     "14": 0.8041,
+     "15": 0.9383,
+     "20": 0.7699,
+     "22": 0.5215,
+     "23": 0.3801
+    },
+    "jaw_side_R": {
+     "9": 0.3572,
+     "15": 0.7547,
+     "20": 0.3617
+    },
+    "A": {
+     "0": 0.1292,
+     "1": 0.0494,
+     "2": 0.0421,
+     "3": 0.0352,
+     "4": 0.1696,
+     "5": 0.0262,
+     "6": 0.0198,
+     "7": 0.0141,
+     "8": 0.0092,
+     "9": 0.004,
+     "10": 0.0031,
+     "14": 0.0031,
+     "15": 0.003,
+     "16": 0.017,
+     "17": 0.0256,
+     "18": 0.0354,
+     "19": 0.046,
+     "20": 0.2695,
+     "22": 0.113,
+     "23": 0.1258
+    },
+    "B": {
+     "0": 0.0309,
+     "2": 0.039,
+     "3": 0.0366,
+     "4": 0.0319,
+     "6": 0.0221,
+     "7": 0.0114,
+     "8": 0.0035,
+     "16": 0.0082,
+     "17": 0.0459,
+     "18": 0.0727,
+     "20": 0.06,
+     "21": 0.1935,
+     "22": 0.153,
+     "23": 0.4998,
+     "24": 0.1175
+    },
+    "C": {
+     "0": 0.0332,
+     "1": 0.0408,
+     "2": 0.0541,
+     "3": 0.0649,
+     "4": 0.0741,
+     "5": 0.1025,
+     "6": 0.1129,
+     "7": 0.1221,
+     "8": 0.13,
+     "9": 0.0878,
+     "11": 0.2591,
+     "12": 0.2628,
+     "13": 0.2591,
+     "15": 0.0572,
+     "16": 0.6711,
+     "17": 0.4951,
+     "18": 0.3727,
+     "19": 0.2847,
+     "20": 0.1397,
+     "21": 0.343,
+     "22": 0.212,
+     "23": 0.1277,
+     "24": 0.1169
+    },
+    "D": {
+     "0": 0.1058,
+     "1": 0.0466,
+     "2": 0.0824,
+     "3": 0.1169,
+     "4": 0.1511,
+     "5": 0.2312,
+     "6": 0.277,
+     "7": 0.3217,
+     "8": 0.3633,
+     "9": 0.2569,
+     "10": 0.7526,
+     "11": 0.8003,
+     "12": 0.8171,
+     "13": 0.8003,
+     "14": 0.7526,
+     "15": 0.1673,
+     "16": 1.8755,
+     "17": 1.3048,
+     "18": 0.9147,
+     "19": 0.6422,
+     "20": 0.2848,
+     "22": 0.3231,
+     "23": 0.1458
+    },
+    "E": {
+     "0": 0.203,
+     "1": 0.1901,
+     "2": 0.3553,
+     "3": 0.3679,
+     "4": 0.3766,
+     "5": 0.2277,
+     "6": 0.2196,
+     "7": 0.2102,
+     "9": 0.1233,
+     "10": 0.3247,
+     "11": 0.3229,
+     "12": 0.3222,
+     "13": 0.3229,
+     "14": 0.3247,
+     "15": 0.0803,
+     "17": 0.8527,
+     "18": 0.7249,
+     "19": 0.6324,
+     "20": 0.7201,
+     "22": 0.0523
+    },
+    "F": {
+     "0": 0.3676,
+     "1": 0.3457,
+     "2": 0.3239,
+     "3": 0.2931,
+     "4": 0.2576,
+     "8": 0.2163,
+     "9": 0.4743,
+     "15": 0.6577,
+     "20": 0.4959,
+     "23": 0.1043
+    },
+    "H": {
+     "0": 0.0332,
+     "1": 0.0421,
+     "2": 0.0635,
+     "3": 0.0829,
+     "4": 0.1012,
+     "5": 0.1483,
+     "6": 0.1716,
+     "7": 0.1938,
+     "8": 0.2142,
+     "9": 0.149,
+     "10": 0.4312,
+     "11": 0.4553,
+     "12": 0.4638,
+     "13": 0.4553,
+     "14": 0.4312,
+     "15": 0.097,
+     "16": 1.1055,
+     "17": 0.7862,
+     "18": 0.5666,
+     "19": 0.4118,
+     "20": 0.1908,
+     "21": 0.4381,
+     "22": 0.2488,
+     "23": 0.1316,
+     "24": 0.1169
+    }
+   },
+   "mouth_close_share": {
+    "AU14_dimpler_L": {
+     "16": 0.0014,
+     "17": 0.0036,
+     "18": 0.008,
+     "19": 0.0161,
+     "20": 0.0307,
+     "21": 0.0575,
+     "22": 0.1095,
+     "23": 0.2307,
+     "24": 0.6579
+    },
+    "AU14_dimpler_R": {
+     "0": 0.6579,
+     "1": 0.2307,
+     "2": 0.1095,
+     "3": 0.0575,
+     "4": 0.0307,
+     "5": 0.0161,
+     "6": 0.008,
+     "7": 0.0036,
+     "8": 0.0014
+    },
+    "AU15_lip_corner_depressor_L": {
+     "10": 0.0129,
+     "11": 0.1338,
+     "12": 0.3255,
+     "13": 0.5171,
+     "14": 0.6378,
+     "15": 0.6501,
+     "16": 0.6492,
+     "17": 0.6478,
+     "18": 0.6454,
+     "19": 0.6414,
+     "20": 0.6344,
+     "21": 0.6215,
+     "22": 0.5951,
+     "23": 0.5262
+    },
+    "AU15_lip_corner_depressor_R": {
+     "1": 0.5262,
+     "2": 0.5951,
+     "3": 0.6215,
+     "4": 0.6344,
+     "5": 0.6414,
+     "6": 0.6454,
+     "7": 0.6478,
+     "8": 0.6492,
+     "9": 0.6501,
+     "10": 0.6378,
+     "11": 0.5171,
+     "12": 0.3255,
+     "13": 0.1338,
+     "14": 0.0129
+    },
+    "AU20_lip_stretcher_L": {
+     "10": 0.0077,
+     "11": 0.0822,
+     "12": 0.2012,
+     "13": 0.3175,
+     "14": 0.3836,
+     "15": 0.3774,
+     "16": 0.3579,
+     "17": 0.3328,
+     "18": 0.3022,
+     "19": 0.266,
+     "20": 0.2242,
+     "21": 0.1769,
+     "22": 0.1239,
+     "23": 0.0651
+    },
+    "AU20_lip_stretcher_R": {
+     "1": 0.0651,
+     "2": 0.1239,
+     "3": 0.1769,
+     "4": 0.2242,
+     "5": 0.266,
+     "6": 0.3022,
+     "7": 0.3328,
+     "8": 0.3579,
+     "9": 0.3774,
+     "10": 0.3836,
+     "11": 0.3175,
+     "12": 0.2012,
+     "13": 0.0822,
+     "14": 0.0077
+    },
+    "AU17_chin_raiser": {
+     "1": 0.2846,
+     "2": 0.3227,
+     "3": 0.3375,
+     "4": 0.3449,
+     "5": 0.349,
+     "6": 0.3515,
+     "7": 0.353,
+     "8": 0.3539,
+     "9": 0.3545,
+     "10": 0.3548,
+     "11": 0.355,
+     "12": 0.3551,
+     "13": 0.355,
+     "14": 0.3548,
+     "15": 0.3545,
+     "16": 0.3539,
+     "17": 0.353,
+     "18": 0.3515,
+     "19": 0.349,
+     "20": 0.3449,
+     "21": 0.3375,
+     "22": 0.3227,
+     "23": 0.2846
+    },
+    "AU18_lip_pucker": {
+     "2": 0.0366,
+     "3": 0.117,
+     "4": 0.1703,
+     "5": 0.208,
+     "6": 0.2357,
+     "7": 0.2563,
+     "8": 0.2716,
+     "9": 0.2827,
+     "10": 0.2901,
+     "11": 0.2945,
+     "12": 0.2959,
+     "13": 0.2945,
+     "14": 0.2901,
+     "15": 0.2827,
+     "16": 0.2716,
+     "17": 0.2563,
+     "18": 0.2357,
+     "19": 0.208,
+     "20": 0.1703,
+     "21": 0.117,
+     "22": 0.0366
+    },
+    "AU23_lip_tightener": {
+     "0": 0.5264,
+     "1": 0.5094,
+     "2": 0.5065,
+     "3": 0.5052,
+     "4": 0.5045,
+     "5": 0.504,
+     "6": 0.5037,
+     "7": 0.5034,
+     "8": 0.5033,
+     "9": 0.5031,
+     "10": 0.5031,
+     "11": 0.503,
+     "12": 0.503,
+     "13": 0.503,
+     "14": 0.5031,
+     "15": 0.5031,
+     "16": 0.5033,
+     "17": 0.5034,
+     "18": 0.5037,
+     "19": 0.504,
+     "20": 0.5045,
+     "21": 0.5052,
+     "22": 0.5065,
+     "23": 0.5094,
+     "24": 0.5264
+    },
+    "AU24_lip_presser": {
+     "0": 0.3948,
+     "1": 0.7854,
+     "2": 0.8509,
+     "3": 0.8808,
+     "4": 0.898,
+     "5": 0.9092,
+     "6": 0.9168,
+     "7": 0.9222,
+     "8": 0.9261,
+     "9": 0.9288,
+     "10": 0.9306,
+     "11": 0.9317,
+     "12": 0.932,
+     "13": 0.9317,
+     "14": 0.9306,
+     "15": 0.9288,
+     "16": 0.9261,
+     "17": 0.9222,
+     "18": 0.9168,
+     "19": 0.9092,
+     "20": 0.898,
+     "21": 0.8808,
+     "22": 0.8509,
+     "23": 0.7854,
+     "24": 0.3948
+    },
+    "jaw_open": {
+     "0": 0.6579,
+     "1": 0.0543,
+     "23": 0.0543,
+     "24": 0.6579
+    },
+    "A": {
+     "0": 0.3948,
+     "1": 0.7854,
+     "2": 0.8509,
+     "3": 0.8808,
+     "4": 0.898,
+     "5": 0.9092,
+     "6": 0.9168,
+     "7": 0.9222,
+     "8": 0.9261,
+     "9": 0.9288,
+     "10": 0.9306,
+     "11": 0.9317,
+     "12": 0.932,
+     "13": 0.9317,
+     "14": 0.9306,
+     "15": 0.9288,
+     "16": 0.9261,
+     "17": 0.9222,
+     "18": 0.9168,
+     "19": 0.9092,
+     "20": 0.898,
+     "21": 0.8808,
+     "22": 0.8509,
+     "23": 0.7854,
+     "24": 0.3948
+    },
+    "C": {
+     "0": 0.2961,
+     "24": 0.2961
+    },
+    "D": {
+     "0": 0.4987,
+     "24": 0.4987
+    },
+    "E": {
+     "0": 0.0132,
+     "24": 0.0132
+    },
+    "F": {
+     "4": 0.0038,
+     "5": 0.0555,
+     "6": 0.0938,
+     "7": 0.1223,
+     "8": 0.1436,
+     "9": 0.159,
+     "10": 0.1694,
+     "11": 0.1755,
+     "12": 0.1775,
+     "13": 0.1755,
+     "14": 0.1694,
+     "15": 0.159,
+     "16": 0.1436,
+     "17": 0.1223,
+     "18": 0.0938,
+     "19": 0.0555,
+     "20": 0.0038
+    },
+    "H": {
+     "0": 0.4277,
+     "24": 0.4277
+    }
+   },
+   "mouth_margins_mm": {
+    "toga": 0.8,
+    "gap": 0.2
+   }
+  }
+ },
+ "armature": "face_rig",
+ "char": [
+  "body_disc",
+  "face_marks",
+  "eye_L",
+  "lash_L",
+  "eye_R",
+  "lash_R",
+  "nose",
+  "mouth",
+  "wreath",
+  "wreath_ornament",
+  "toga",
+  "skirt",
+  "toga_trim",
+  "shoulder_knot",
+  "waist_cord",
+  "arm_R",
+  "arm_L",
+  "glove_R",
+  "glove_L",
+  "leg_L",
+  "sandal_L",
+  "leg_R",
+  "sandal_R"
+ ]
+}

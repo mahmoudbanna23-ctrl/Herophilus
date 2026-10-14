@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\claude os\Medical school\Herophilus\progress\app-replan\p5\story\her\rig_her.py", line 2161, in <module>
+    {'build': stage_build, 'sheets': stage_sheets, 'movie': stage_movie, 'review': stage_review, 'peak': stage_peak, 'wrist': stage_wrist}[STAGE]()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\claude os\Medical school\Herophilus\progress\app-replan\p5\story\her\rig_her.py", line 1830, in stage_wrist
+    scene, cam, arm = open_blend()
+                      ~~~~~~~~~~^^
+  File "D:\claude os\Medical school\Herophilus\progress\app-replan\p5\story\her\rig_her.py", line 1672, in open_blend
+    bpy.ops.wm.open_mainfile(filepath=BLEND)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+RuntimeError: Error: Cannot read file "D:\scratch 2026\her-c2\rig5q\nothumb\her-rig5q.blend": No such file or directory
+
+Error: Cannot read file "D:\scratch 2026\her-c2\rig5q\nothumb\her-rig5q.blend": No such file or directory
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

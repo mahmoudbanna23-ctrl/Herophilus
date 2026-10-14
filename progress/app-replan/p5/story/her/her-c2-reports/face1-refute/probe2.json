@@ -1,0 +1,257 @@
+{
+ "rest": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU10_upper_lip_raiser_L": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU10_upper_lip_raiser_R": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU12_lip_corner_puller_L": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU12_lip_corner_puller_R": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU14_dimpler_L": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU14_dimpler_R": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU15_lip_corner_depressor_L": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU15_lip_corner_depressor_R": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU16_lower_lip_depressor_L": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU16_lower_lip_depressor_R": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU20_lip_stretcher_L": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU20_lip_stretcher_R": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU17_chin_raiser": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU18_lip_pucker": {
+  "disc_hit": true,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -6.5
+ },
+ "AU22_lip_funneler": {
+  "disc_hit": true,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -7.5
+ },
+ "AU23_lip_tightener": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU24_lip_presser": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "AU25_lips_part": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "jaw_open": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "jaw_side_L": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "jaw_side_R": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "A": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "B": {
+  "disc_hit": false,
+  "max_surf_mm": -2.48,
+  "min_surf_mm": -2.5
+ },
+ "C": {
+  "disc_hit": false,
+  "max_surf_mm": -2.48,
+  "min_surf_mm": -2.5
+ },
+ "D": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.52
+ },
+ "E": {
+  "disc_hit": true,
+  "max_surf_mm": -2.49,
+  "min_surf_mm": -6.1
+ },
+ "F": {
+  "disc_hit": true,
+  "max_surf_mm": -2.6,
+  "min_surf_mm": -7.75
+ },
+ "G": {
+  "disc_hit": false,
+  "max_surf_mm": -2.49,
+  "min_surf_mm": -2.52
+ },
+ "H": {
+  "disc_hit": false,
+  "max_surf_mm": -2.49,
+  "min_surf_mm": -2.5
+ },
+ "X": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "jaw bone 1": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "jaw side +1": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "jaw side -1": {
+  "disc_hit": false,
+  "max_surf_mm": -2.5,
+  "min_surf_mm": -2.5
+ },
+ "jaw side +1 + jaw 1": {
+  "disc_hit": false,
+  "max_surf_mm": -2.48,
+  "min_surf_mm": -2.52
+ },
+ "AU20 both + jaw_side": {
+  "disc_hit": false,
+  "max_surf_mm": -2.45,
+  "min_surf_mm": -2.55
+ },
+ "AU12 both + AU20 both": {
+  "disc_hit": false,
+  "max_surf_mm": -2.49,
+  "min_surf_mm": -2.52
+ },
+ "glb_eval_max_mm": {
+  "eye_L:AU1_inner_brow_raiser_L": 7.8,
+  "eye_L:AU2_outer_brow_raiser_L": 7.8,
+  "eye_L:AU4_brow_lowerer_L": 20.58,
+  "eye_L:AU5_upper_lid_raiser_L": 14.16,
+  "eye_L:AU6_cheek_raiser_L": 48.86,
+  "eye_L:AU7_lid_tightener_L": 30.86,
+  "eye_L:blink_L": 161.05,
+  "eye_L:lid_lo_raise_L": 57.86,
+  "eye_L:look_L": 22.36,
+  "eye_L:look_R": 22.75,
+  "eye_L:look_up": 20.2,
+  "eye_L:look_down": 35.22,
+  "eye_R:AU1_inner_brow_raiser_R": 7.8,
+  "eye_R:AU2_outer_brow_raiser_R": 7.8,
+  "eye_R:AU4_brow_lowerer_R": 20.58,
+  "eye_R:AU5_upper_lid_raiser_R": 14.16,
+  "eye_R:AU6_cheek_raiser_R": 48.86,
+  "eye_R:AU7_lid_tightener_R": 30.86,
+  "eye_R:blink_R": 161.04,
+  "eye_R:lid_lo_raise_R": 57.86,
+  "eye_R:look_L": 22.75,
+  "eye_R:look_R": 22.36,
+  "eye_R:look_up": 20.2,
+  "eye_R:look_down": 35.22,
+  "lash_L:AU1_inner_brow_raiser_L": 19.85,
+  "lash_L:AU2_outer_brow_raiser_L": 25.13,
+  "lash_L:AU4_brow_lowerer_L": 32.88,
+  "lash_L:AU5_upper_lid_raiser_L": 13.79,
+  "lash_L:AU6_cheek_raiser_L": 5.01,
+  "lash_L:AU7_lid_tightener_L": 20.05,
+  "lash_L:blink_L": 154.94,
+  "lash_R:AU1_inner_brow_raiser_R": 19.85,
+  "lash_R:AU2_outer_brow_raiser_R": 25.13,
+  "lash_R:AU4_brow_lowerer_R": 32.88,
+  "lash_R:AU5_upper_lid_raiser_R": 13.79,
+  "lash_R:AU6_cheek_raiser_R": 5.01,
+  "lash_R:AU7_lid_tightener_R": 20.05,
+  "lash_R:blink_R": 154.94,
+  "mouth:AU10_upper_lip_raiser_L": 9.67,
+  "mouth:AU10_upper_lip_raiser_R": 9.67,
+  "mouth:AU12_lip_corner_puller_L": 20.59,
+  "mouth:AU12_lip_corner_puller_R": 20.59,
+  "mouth:AU14_dimpler_L": 10.98,
+  "mouth:AU14_dimpler_R": 10.98,
+  "mouth:AU15_lip_corner_depressor_L": 30.17,
+  "mouth:AU15_lip_corner_depressor_R": 30.17,
+  "mouth:AU16_lower_lip_depressor_L": 11.58,
+  "mouth:AU16_lower_lip_depressor_R": 11.58,
+  "mouth:AU20_lip_stretcher_L": 17.91,
+  "mouth:AU20_lip_stretcher_R": 17.91,
+  "mouth:AU17_chin_raiser": 16.02,
+  "mouth:AU18_lip_pucker": 42.85,
+  "mouth:AU22_lip_funneler": 37.27,
+  "mouth:AU23_lip_tightener": 17.02,
+  "mouth:AU24_lip_presser": 31.54,
+  "mouth:AU25_lips_part": 7.01,
+  "mouth:jaw_open": 10.05,
+  "mouth:jaw_side_L": 10.01,
+  "mouth:jaw_side_R": 10.01,
+  "mouth:A": 31.54,
+  "mouth:B": 7.55,
+  "mouth:C": 5.46,
+  "mouth:D": 16.56,
+  "mouth:E": 31.69,
+  "mouth:F": 52.52,
+  "mouth:G": 13.24,
+  "mouth:H": 9.4,
+  "mouth:X": 0.0
+ }
+}

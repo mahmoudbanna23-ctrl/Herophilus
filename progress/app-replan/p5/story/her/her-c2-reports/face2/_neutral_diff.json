@@ -1,0 +1,18 @@
+{
+ "vs_prerig_cycles": {
+  "px_over_12": 0,
+  "max": 0,
+  "size": [
+   700,
+   600
+  ]
+ },
+ "vs_test8_eevee": {
+  "px_over_12": 45248,
+  "max": 185,
+  "size": [
+   700,
+   600
+  ]
+ }
+}

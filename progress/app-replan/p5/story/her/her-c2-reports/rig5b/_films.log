@@ -1,0 +1,10 @@
+movie tq rc 0
+encoded move.mp4
+movie side rc 0
+encoded move_side.mp4
+movie wave rc 0
+[in#0 @ 00000228465f0100] Could find no file or sequence with path 'frames_wave/%04d.png' and index in the range 104-108
+[in#0 @ 00000228465efcc0] Error opening input: No such file or directory
+Error opening input file frames_wave/%04d.png.
+Error opening input files: No such file or directory
+FILMS DONE

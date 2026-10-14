@@ -1,0 +1,5 @@
+00:01.734  blend            | Read blend: "D:\scratch 2026\her-c2\rig4\her-rig4.blend"
+PROBE done {'arm_L': 372, 'arm_R': 372, 'backdrop_floor': 4, 'body_disc': 834, 'eye_L': 2742, 'eye_R': 2742, 'face_marks': 96, 'glove_L': 498, 'glove_R': 498, 'lash_L': 201, 'lash_R': 201, 'leg_L': 150, 'leg_R': 150, 'mouth': 125, 'nose': 98, 'sandal_L': 98, 'sandal_R': 98, 'shoulder_knot': 3304, 'skirt': 1056, 'toga': 1824, 'toga_trim': 582, 'waist_cord': 5608, 'wreath': 29302, 'wreath_ornament': 756}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

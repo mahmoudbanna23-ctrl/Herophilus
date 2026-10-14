@@ -1,0 +1,15 @@
+{
+ "deform": [
+  [
+   "R elbow: max flexion 98 deg",
+   143,
+   1
+  ],
+  [
+   "R forearm: max twist -100 deg",
+   129,
+   2
+  ]
+ ],
+ "walk": []
+}

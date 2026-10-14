@@ -1,0 +1,89 @@
+HER_SUMMARY {"engine": "BLENDER_EEVEE", "look": "None", "bbox_min": [-0.6456359028816223, -0.17066624760627747, -0.004999999888241291], "bbox_max": [0.4259707033634186, 0.14781054854393005, 1.2083889245986938], "height_m": 1.2133889244869351, "renders": [], "parts": ["arm_L", "arm_R", "body_disc", "eye_L", "eye_R", "face_marks", "glove_L", "glove_R", "lash_L", "lash_R", "leg_L", "leg_R", "mouth", "nose", "sandal_L", "sandal_R", "shoulder_knot", "skirt", "toga", "toga_trim", "waist_cord", "wreath", "wreath_ornament"]}
+RIG wave pick {'abd_peak': 65, 'flex_peak': 20, 'osc_amp': 16, 'elbow_ctr': 90, 'hang_deg': 9, 'tried': 52} [0.97, None] hang 9 4.9s
+RIG ik clamps (legs could not reach): 0 ; pelvis safety drop max mm 0.00
+RIG ankle ROM guard frames: 19 {'R40': 6.65, 'R41': 8.68, 'R42': 4.61, 'R49': 1.39, 'L53': 4.64, 'L54': 3.62, 'L61': 2.08, 'R65': 4.55, 'R66': 3.51, 'R73': 4.94, 'R74': 3.11, 'L76': 1.72, 'L77': 2.69, 'L85': 6.69, 'L86': 15.46, 'L87': 17.47, 'L88': 6.12, 'L89': 5.55, 'L90': 0.7}
+RIG design: sole jump mm {'R': 2.76, 'L': 2.76} | min sole mm {'R': -0.0, 'L': -0.0} | knee max {'R': 58.903817779567596, 'L': 68.97601771082942} | thigh x range {'R': [-5.2, 40.0], 'L': [-4.7, 42.0]} | pelvis z range mm (31-91) 17.1 | clip max (slab) 0
+TAB 20 z 346.9 zm 347.0 | R knee 50 thigh 36 sole 0.0 | L knee 1 thigh -0 sole -0.0
+TAB 21 z 347.0 zm 347.1 | R knee 49 thigh 39 sole 0.0 | L knee 1 thigh -0 sole -0.0
+TAB 22 z 347.2 zm 347.3 | R knee 48 thigh 40 sole 0.0 | L knee 1 thigh -1 sole -0.0
+TAB 23 z 347.5 zm 347.6 | R knee 52 thigh 43 sole 2.2 | L knee 1 thigh -1 sole -0.0
+TAB 24 z 347.8 zm 347.9 | R knee 54 thigh 43 sole 5.0 | L knee 1 thigh -1 sole -0.0
+TAB 25 z 348.2 zm 348.3 | R knee 46 thigh 40 sole 7.4 | L knee 1 thigh -1 sole -0.0
+TAB 26 z 347.9 zm 348.7 | R knee 30 thigh 32 sole 7.3 | L knee 5 thigh 1 sole -0.0
+TAB 27 z 344.7 zm 344.8 | R knee 1 thigh 19 sole 6.8 | L knee 21 thigh 8 sole -0.0
+TAB 28 z 344.6 zm 344.8 | R knee 2 thigh 20 sole 5.9 | L knee 31 thigh 14 sole -0.0
+TAB 29 z 343.7 zm 343.8 | R knee 1 thigh 19 sole 4.2 | L knee 42 thigh 20 sole -0.0
+TAB 30 z 342.7 zm 342.8 | R knee 1 thigh 19 sole 2.3 | L knee 49 thigh 27 sole -0.0
+TAB 31 z 344.1 zm 345.4 | R knee 7 thigh 22 sole 4.1 | L knee 52 thigh 31 sole -0.0
+TAB 32 z 340.9 zm 342.9 | R knee 10 thigh 24 sole 3.7 | L knee 57 thigh 36 sole 0.0
+TAB 33 z 334.8 zm 337.1 | R knee 11 thigh 25 sole 1.7 | L knee 64 thigh 40 sole 0.0
+TAB 34 z 332.4 zm 335.8 | R knee 14 thigh 25 sole -0.0 | L knee 68 thigh 40 sole -0.0
+TAB 35 z 336.0 zm 339.9 | R knee 15 thigh 22 sole -0.0 | L knee 69 thigh 42 sole 2.2
+TAB 36 z 340.6 zm 343.4 | R knee 13 thigh 16 sole -0.0 | L knee 67 thigh 42 sole 5.0
+TAB 37 z 344.1 zm 346.0 | R knee 10 thigh 10 sole -0.0 | L knee 57 thigh 39 sole 7.4
+TAB 38 z 345.1 zm 347.3 | R knee 11 thigh 5 sole -0.0 | L knee 37 thigh 35 sole 7.3
+TAB 39 z 340.9 zm 341.0 | R knee 24 thigh 6 sole 0.0 | L knee 1 thigh 22 sole 6.8
+TAB 40 z 336.8 zm 337.0 | R knee 46 thigh 14 sole 0.0 | L knee 2 thigh 25 sole 5.9
+TAB 41 z 332.2 zm 332.3 | R knee 57 thigh 15 sole -0.0 | L knee 1 thigh 26 sole 4.2
+TAB 42 z 332.6 zm 332.7 | R knee 56 thigh 11 sole -0.0 | L knee 1 thigh 25 sole 2.3
+TAB 43 z 339.4 zm 340.7 | R knee 47 thigh 3 sole -0.0 | L knee 7 thigh 25 sole 4.1
+TAB 44 z 341.3 zm 343.6 | R knee 47 thigh 2 sole 0.0 | L knee 11 thigh 24 sole 3.7
+TAB 45 z 338.6 zm 341.2 | R knee 49 thigh 1 sole 0.0 | L knee 12 thigh 23 sole 1.7
+TAB 46 z 337.5 zm 341.2 | R knee 46 thigh -4 sole 0.0 | L knee 15 thigh 21 sole -0.0
+TAB 47 z 340.4 zm 344.4 | R knee 53 thigh 1 sole 2.2 | L knee 16 thigh 17 sole -0.0
+TAB 48 z 343.4 zm 346.2 | R knee 57 thigh 6 sole 5.0 | L knee 13 thigh 11 sole -0.0
+TAB 49 z 345.1 zm 347.0 | R knee 58 thigh 14 sole 7.4 | L knee 9 thigh 5 sole -0.0
+TAB 50 z 345.5 zm 346.8 | R knee 49 thigh 22 sole 7.3 | L knee 7 thigh -0 sole -0.0
+TAB 51 z 344.5 zm 347.9 | R knee 28 thigh 22 sole 6.8 | L knee 14 thigh -1 sole -0.0
+TAB 52 z 342.3 zm 348.6 | R knee 20 thigh 26 sole 5.9 | L knee 27 thigh 1 sole -0.0
+TAB 53 z 338.5 zm 338.7 | R knee 1 thigh 23 sole 4.2 | L knee 46 thigh 8 sole -0.0
+TAB 54 z 334.2 zm 334.3 | R knee 1 thigh 24 sole 2.3 | L knee 53 thigh 9 sole -0.0
+TAB 55 z 339.7 zm 340.7 | R knee 6 thigh 24 sole 4.1 | L knee 46 thigh 3 sole -0.0
+TAB 56 z 341.5 zm 343.8 | R knee 11 thigh 24 sole 3.7 | L knee 46 thigh 1 sole 0.0
+TAB 57 z 338.9 zm 341.6 | R knee 12 thigh 22 sole 1.7 | L knee 48 thigh -0 sole 0.0
+TAB 58 z 337.8 zm 341.5 | R knee 15 thigh 21 sole -0.0 | L knee 45 thigh -5 sole -0.0
+TAB 59 z 340.7 zm 344.7 | R knee 16 thigh 17 sole -0.0 | L knee 52 thigh 0 sole 2.2
+TAB 60 z 343.6 zm 346.4 | R knee 13 thigh 11 sole -0.0 | L knee 56 thigh 5 sole 5.0
+TAB 61 z 345.2 zm 347.0 | R knee 9 thigh 5 sole -0.0 | L knee 58 thigh 13 sole 7.4
+TAB 62 z 345.4 zm 346.6 | R knee 7 thigh -1 sole -0.0 | L knee 49 thigh 21 sole 7.3
+TAB 63 z 344.2 zm 347.6 | R knee 14 thigh -2 sole 0.0 | L knee 29 thigh 22 sole 6.8
+TAB 64 z 342.1 zm 349.0 | R knee 26 thigh 1 sole -0.0 | L knee 22 thigh 26 sole 5.9
+TAB 65 z 338.8 zm 339.1 | R knee 45 thigh 8 sole 0.0 | L knee 2 thigh 23 sole 4.2
+TAB 66 z 334.5 zm 334.6 | R knee 52 thigh 9 sole -0.0 | L knee 1 thigh 24 sole 2.3
+TAB 67 z 339.8 zm 340.7 | R knee 46 thigh 3 sole -0.0 | L knee 5 thigh 24 sole 4.1
+TAB 68 z 341.4 zm 343.7 | R knee 46 thigh 2 sole 0.0 | L knee 11 thigh 24 sole 3.7
+TAB 69 z 339.0 zm 341.6 | R knee 48 thigh -0 sole 0.0 | L knee 12 thigh 22 sole 1.7
+TAB 70 z 338.0 zm 341.8 | R knee 44 thigh -5 sole 0.0 | L knee 15 thigh 21 sole -0.0
+TAB 71 z 341.0 zm 345.0 | R knee 50 thigh -1 sole 2.2 | L knee 16 thigh 16 sole -0.0
+TAB 72 z 343.7 zm 346.6 | R knee 54 thigh 2 sole 5.0 | L knee 13 thigh 10 sole -0.0
+TAB 73 z 345.2 zm 347.0 | R knee 59 thigh 11 sole 7.4 | L knee 10 thigh 4 sole -0.0
+TAB 74 z 345.2 zm 346.4 | R knee 53 thigh 20 sole 7.3 | L knee 7 thigh -1 sole -0.0
+TAB 75 z 343.7 zm 347.3 | R knee 33 thigh 21 sole 6.8 | L knee 15 thigh -2 sole -0.0
+TAB 76 z 341.7 zm 351.6 | R knee 29 thigh 26 sole 5.9 | L knee 31 thigh 3 sole -0.0
+TAB 77 z 340.0 zm 344.6 | R knee 17 thigh 26 sole 4.2 | L knee 42 thigh 7 sole -0.0
+TAB 78 z 339.2 zm 339.3 | R knee 1 thigh 22 sole 2.3 | L knee 46 thigh 7 sole -0.0
+TAB 79 z 341.6 zm 342.6 | R knee 6 thigh 23 sole 4.1 | L knee 49 thigh 8 sole -0.0
+TAB 80 z 340.3 zm 342.6 | R knee 11 thigh 24 sole 3.7 | L knee 54 thigh 11 sole 0.0
+TAB 81 z 334.8 zm 337.4 | R knee 12 thigh 25 sole 1.7 | L knee 61 thigh 14 sole 0.0
+TAB 82 z 331.6 zm 335.2 | R knee 14 thigh 26 sole -0.0 | L knee 65 thigh 14 sole -0.0
+TAB 83 z 333.5 zm 337.5 | R knee 15 thigh 24 sole -0.0 | L knee 67 thigh 15 sole 2.2
+TAB 84 z 336.7 zm 339.3 | R knee 12 thigh 20 sole -0.0 | L knee 67 thigh 15 sole 5.0
+TAB 85 z 339.8 zm 341.1 | R knee 7 thigh 16 sole -0.0 | L knee 66 thigh 17 sole 7.4
+TAB 86 z 342.6 zm 342.9 | R knee 2 thigh 12 sole -0.0 | L knee 66 thigh 20 sole 7.3
+TAB 87 z 344.6 zm 344.7 | R knee 1 thigh 10 sole -0.0 | L knee 59 thigh 21 sole 6.8
+TAB 88 z 346.3 zm 346.4 | R knee 1 thigh 8 sole -0.0 | L knee 28 thigh 10 sole 5.9
+TAB 89 z 347.7 zm 347.9 | R knee 1 thigh 7 sole -0.0 | L knee 25 thigh 11 sole 4.2
+TAB 90 z 348.7 zm 348.9 | R knee 1 thigh 6 sole -0.0 | L knee 20 thigh 9 sole 2.3
+TAB 91 z 348.9 zm 349.4 | R knee 4 thigh 6 sole -0.0 | L knee 21 thigh 9 sole 3.3
+TAB 92 z 347.4 zm 349.7 | R knee 11 thigh 8 sole -0.0 | L knee 21 thigh 9 sole 2.3
+TAB 93 z 345.5 zm 349.9 | R knee 17 thigh 9 sole -0.0 | L knee 20 thigh 9 sole 0.8
+TAB 94 z 344.1 zm 350.0 | R knee 20 thigh 10 sole -0.0 | L knee 20 thigh 9 sole -0.0
+TAB 95 z 343.2 zm 350.0 | R knee 22 thigh 10 sole -0.0 | L knee 22 thigh 10 sole -0.0
+TAB 96 z 343.0 zm 350.0 | R knee 22 thigh 10 sole -0.0 | L knee 22 thigh 9 sole -0.0
+TAB 97 z 343.4 zm 350.0 | R knee 22 thigh 9 sole -0.0 | L knee 21 thigh 9 sole -0.0
+TAB 98 z 344.4 zm 350.0 | R knee 19 thigh 8 sole -0.0 | L knee 19 thigh 8 sole -0.0
+TAB 99 z 345.9 zm 350.0 | R knee 16 thigh 6 sole -0.0 | L knee 16 thigh 6 sole -0.0
+RIG built in 6.2s; signs {'abd_R': -1, 'abd_L': 1, 'ext_R': 1, 'ext_L': -1}; ext_sg 1; markers {'R_contact': 55, 'R_down': 58, 'R_passing': 61, 'R_up': 62, 'L_contact': 67, 'L_down': 70, 'L_passing': 73, 'L_up': 73, 'stop': 91, 'wave_anticipation': 110, 'wave_raise': 117, 'wave': (128, 164), 'blink': 144, 'brow_up': (124, 158)}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

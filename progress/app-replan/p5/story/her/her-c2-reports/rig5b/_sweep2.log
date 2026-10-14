@@ -1,0 +1,13 @@
+== lag11k18 (--lag 0.11 --kl 18 --k3 10 --k45 4 --kmid 1 --kts 1) rc 0
+RIG ik clamps (legs could not reach): 0 ; pelvis safety drop max mm 0.00
+RIG ankle ROM guard frames: 17 {'L77': 0.17, 'L78': 0.5, 'L79': 1.31, 'L80': 2.79, 'L81': 6.04, 'L82': 11.29, 'L83': 16.25, 'L84': 18.65, 'L85': 19.43, 'L86': 19.43, 'L87': 19.16, 'L88': 17.07, 'L89': 12.91, 'L90': 6.08, 'L91': 2.46, 'L92': 0.4, 'L93': 0.13}
+RIG design: sole jump mm {'R': 2.92, 'L': 3.0} | min sole mm {'R': -0.0, 'L': -0.0} | knee max {'R': 59.3799912477442, 'L': 66.81812872559063} | thigh x range {'R': [-15.8, 33.9], 'L': [-15.7, 31.0]} | pelvis z range mm (31-91) 13.6 | clip max (slab) 0
+== lag11k20 (--lag 0.11 --kl 20 --k3 11 --k45 4 --kmid 1 --kts 1 --k0 0) rc 0
+RIG ik clamps (legs could not reach): 0 ; pelvis safety drop max mm 0.00
+RIG ankle ROM guard frames: 17 {'L77': 0.18, 'L78': 0.55, 'L79': 1.43, 'L80': 2.94, 'L81': 6.18, 'L82': 11.4, 'L83': 16.34, 'L84': 18.73, 'L85': 19.5, 'L86': 19.5, 'L87': 19.23, 'L88': 17.13, 'L89': 12.95, 'L90': 6.1, 'L91': 2.47, 'L92': 0.4, 'L93': 0.13}
+RIG design: sole jump mm {'R': 2.97, 'L': 3.0} | min sole mm {'R': -0.0, 'L': -0.0} | knee max {'R': 58.58943100226108, 'L': 66.80062978093704} | thigh x range {'R': [-15.8, 33.9], 'L': [-15.7, 31.0]} | pelvis z range mm (31-91) 13.8 | clip max (slab) 0
+== lag12k20 (--lag 0.12 --kl 20 --k3 11 --k45 4 --kmid 1 --kts 1 --k0 0 --ktsc 1.2) rc 0
+RIG ik clamps (legs could not reach): 0 ; pelvis safety drop max mm 0.00
+RIG ankle ROM guard frames: 52 {'R38': 1.2, 'R39': 3.59, 'R40': 8.38, 'R41': 12.58, 'R42': 11.98, 'R43': 11.47, 'R44': 9.83, 'R45': 6.48, 'R46': 2.81, 'R47': 0.8, 'R48': 0.05, 'L50': 1.11, 'L51': 3.33, 'L52': 7.78, 'L53': 10.54, 'L54': 11.11, 'L55': 10.7, 'L56': 9.18, 'L57': 6.14, 'L58': 2.56, 'L59': 0.72, 'L60': 0.01, 'R62': 1.1, 'R63': 3.31, 'R64': 7.71, 'R65': 10.45, 'R66': 11.02, 'R67': 10.61,
+RIG design: sole jump mm {'R': 3.44, 'L': 3.37} | min sole mm {'R': -0.0, 'L': -0.0} | knee max {'R': 59.85492845168104, 'L': 67.86721163115872} | thigh x range {'R': [-7.3, 33.9], 'L': [-7.0, 32.3]} | pelvis z range mm (31-91) 13.9 | clip max (slab) 0
+SWEEP DONE

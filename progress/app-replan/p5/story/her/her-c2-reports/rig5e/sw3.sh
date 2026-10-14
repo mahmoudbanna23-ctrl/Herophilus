@@ -1,0 +1,1 @@
+for c in "e1 --waveel 80 --wavepl 36 --wavesup -32" "e2 --waveel 80 --wavepl 32 --wavesup -30" "e3 --waveel 82 --wavepl 38 --wavesup -34 --wflex 88"; do echo "== $c"; sh sweep.sh $c --envo 12 --envo2 0 --gap 0.025 2>&1 | grep -a "^DG\|pick\|NEVER" | cut -c1-200; done; echo SWDONE

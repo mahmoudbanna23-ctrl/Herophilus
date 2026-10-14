@@ -1,0 +1,12 @@
+00:04.594  blend            | Read blend: "D:\scratch 2026\her-c2\rig5c\probe_w14\her-rig5c.blend"
+00:04.797  blend            | Read blend: "D:\scratch 2026\her-c2\rig5c\probe_w14\her-rig5c.blend"
+D:\claude os\Medical school\Herophilus\progress\app-replan\p5\story\her\rig_her.py:1289: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m = bpy.data.materials.new('studio_floor_warm'); m.use_nodes = True
+00:14.672  render           | Saved: 'D:\scratch 2026\her-c2\rig5c\probe_w14\_review\deform_01_front.png'
+00:16.766  render           | Saved: 'D:\scratch 2026\her-c2\rig5c\probe_w14\_review\deform_01_side.png'
+00:19.234  render           | Saved: 'D:\scratch 2026\her-c2\rig5c\probe_w14\_review\deform_02_front.png'
+00:21.047  render           | Saved: 'D:\scratch 2026\her-c2\rig5c\probe_w14\_review\deform_02_side.png'
+RIG review {'deform': [['R elbow: max flexion 98 deg', 143, 1], ['R forearm: max twist -100 deg', 129, 2]], 'walk': []}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

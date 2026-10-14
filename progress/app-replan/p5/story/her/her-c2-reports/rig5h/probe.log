@@ -1,0 +1,9 @@
+00:01.781  blend            | Read blend: "D:\scratch 2026\her-c2\rig5h\her-rig5h.blend"
+FRONT <Vector (0.0000, -1.0000, 0.0000)>
+PCA R [np.float64(1.12913), np.float64(6.31782), np.float64(10.13748)] <Vector (-0.1175, -0.0686, 0.9907)>
+PCA L [np.float64(1.26183), np.float64(6.32943), np.float64(9.24505)] <Vector (0.0989, -0.2106, 0.9726)>
+REST palm.front R 0.858 L 0.52 cR -0.995
+HITS {'arm_L|toga': (192, 0, 191, 255)}
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

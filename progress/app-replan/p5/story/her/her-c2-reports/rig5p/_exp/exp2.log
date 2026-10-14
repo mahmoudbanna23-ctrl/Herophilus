@@ -1,0 +1,20 @@
+00:01.906  blend            | Read blend: "D:\scratch 2026\her-c2\rig5o\her-rig5o.blend"
+00:02.109  blend            | Read blend: "D:\scratch 2026\her-c2\rig5p\_exp\_tmp.blend"
+00:05.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5p\_exp\v4_rest_front.png'
+00:06.578  render           | Saved: 'D:\scratch 2026\her-c2\rig5p\_exp\v4_rest_tq.png'
+00:07.890  render           | Saved: 'D:\scratch 2026\her-c2\rig5p\_exp\v4_f173_front.png'
+00:09.156  render           | Saved: 'D:\scratch 2026\her-c2\rig5p\_exp\v4_f173_tq.png'
+00:09.187  blend            | Read blend: "D:\scratch 2026\her-c2\rig5p\_exp\_tmp.blend"
+00:11.234  render           | Saved: 'D:\scratch 2026\her-c2\rig5p\_exp\v5_rest_front.png'
+00:12.953  render           | Saved: 'D:\scratch 2026\her-c2\rig5p\_exp\v5_rest_tq.png'
+00:14.609  render           | Saved: 'D:\scratch 2026\her-c2\rig5p\_exp\v5_f173_front.png'
+00:16.000  render           | Saved: 'D:\scratch 2026\her-c2\rig5p\_exp\v5_f173_tq.png'
+Info: Saved copy as "_tmp.blend"
+EXP custom normals R 12 ['ARMATURE', 'SUBSURF']
+EXP custom normals L 12 ['ARMATURE', 'SUBSURF']
+EXP custom normals R 12 ['ARMATURE', 'SUBSURF']
+EXP custom normals L 12 ['ARMATURE', 'SUBSURF']
+EXPDONE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

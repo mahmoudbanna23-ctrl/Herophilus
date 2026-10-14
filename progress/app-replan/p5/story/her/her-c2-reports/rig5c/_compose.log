@@ -1,0 +1,5 @@
+D:\scratch 2026\her-c2\rig5c\compose_5c.py:45: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  n12 = sum(1 for p in dmax.getdata() if p > 12); mx = max(dmax.getdata())
+arm_deform_close (840, 2980)
+walk_contact_sheet (3900, 640)
+rest_front_diff (2100, 744) 2 17

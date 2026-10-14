@@ -98,7 +98,36 @@ Budget: about 3 GPU h.
 - Exported model files go into the app only; nothing is uploaded live.
 - A refuter checks it, then the owner looks.
 
-### Phase 7: the whole run, end to end
+### Phase 7: polish from public design guides (page code, local; owner yes 2026-10-15)
+
+Source, values and links: `progress/redesign/research/design-systems-RESEARCH.md`. Five items:
+
+1. **Motion scale** (Material 3): durations of 100, 200, 300, 400 and 500 ms.
+   - Entrance easing: `cubic-bezier(0.05,0.7,0.1,1)`.
+   - Exit easing: `cubic-bezier(0.3,0,0.8,0.15)`.
+   - Reduced motion: changes are instant, or a fade only.
+2. **Focus ring**: 3px (GOV.UK), with an inset contrast colour (Carbon).
+   - A transparent-outline fallback for forced-colours mode.
+   - At least 3:1 against every painted ground. This clears the P10 debt of `--neuro` at 2.71:1.
+3. **Touch targets** (Apple HIG): 44x44 pt by default, with 28 pt as the floor.
+   - Spacing around targets: 12 pt for shaped controls, 24 pt for bare ones.
+4. **Token tiers** (Carbon): reference, then theme, then component.
+   - Depth comes from stacked fills and hairlines, not shadows.
+   - The three token families (`--tx`/`--ink`, `--line*`, `--fill`) stay separate.
+5. **Text** (Xbox Accessibility Guidelines):
+   - It survives 200% zoom.
+   - Lines are at most 80 characters, with line-height of at least 1.5.
+   - No text is baked into paintings.
+   - Nothing flashes more than 3 times per second.
+
+Avoid stock looks: no Material ripples, no Fluent acrylic, no Shopify Polaris copying (its licence forbids it).
+
+Checks:
+- A refuter runs the harnesses at 4 sizes, dark and light.
+- Contrast is measured, and the print test is run.
+- Then the owner looks.
+
+### Phase 8: the whole run, end to end
 
 - One recording: shot 1, shot 2, mist, city, welcome, a building, a room.
 - Boot-check, then the owner's final yes on the trial branch.
