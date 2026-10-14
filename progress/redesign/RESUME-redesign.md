@@ -784,3 +784,19 @@ until he answers.
 Owner's eye on the motion. Yes -> this is the method for the dive: slice 2 (city plate and
 framing), then shots made this way, upscaled for 1440x900. No -> ask him what is missing, or
 the plan's still-landing fallback. Paid machine still needs his yes.
+
+## 2026-10-14 - KILL TEST PASSED; slice 2 started
+
+- Owner on ai-film-big-b: "yes, first clip feels right, go on". The dive is made by AI
+  image-to-video from a painting (Wan 2.2 I2V-A14B GGUF + 4-step LoRA on Kaggle, free), prompt B
+  style ("smooth crane shot ... glides forward and sinks down"). Blender projection stays closed.
+- Consequences for the plan: a shot = painting + film model, not solids. The model starts FROM
+  the painting, so a shot that must END on a still (the landing) is generated as a pull-back
+  from the still and played in reverse. Clips are 832x480: sharpening/upscaling to 1440x900 is
+  an open job, not yet tried. Joins inside cloud still to be proved (one join first).
+- Slice 2: section "city-dark" added to paint/prompts-city.md (four landmarks, landscape
+  1536x1024). Upright plate waits for the owner's yes on the landscape one.
+
+### NEXT
+Paint city-dark -> Haiku looker (are all four landmarks clear and inside the safe area?) ->
+owner: yes / redo. Then upright plate, then slice 3.
