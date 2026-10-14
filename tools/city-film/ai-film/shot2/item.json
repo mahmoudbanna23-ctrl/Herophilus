@@ -1,0 +1,8 @@
+{
+  "slug": "hero-city-shot2",
+  "script": "shot2.py",
+  "inputs": ["shot2-pharos-dark-r2-720x480.jpg"],
+  "gpu": true,
+  "internet": true,
+  "timeoutSec": 4500
+}
