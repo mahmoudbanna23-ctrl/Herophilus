@@ -767,3 +767,20 @@ Owner's answer to one question: (1) paid film machine (needs his yes + credit; f
 ideas-parking.md keeps it OFF until then), or (2) the plan's fallback: no filmed dive, a still
 city painting with slow mist and a breathing lighthouse glow, then slice 2. Nothing is built
 until he answers.
+
+## 2026-10-14 (later) - big film model on Kaggle WORKED; clips with owner, no verdict yet
+
+- Owner asked "what about kaggle" and picked one more free try with the big model.
+- Recipe that ran (tools/city-film/ai-film/README.md, Run 5 and Run 6): Wan 2.2 I2V-A14B, GGUF
+  Q4_K_M, lightx2v 4-step LoRAs, 832x480 x 81 frames, two T4s, about 875 s per clip. About
+  1.5 GPU h this dispatch (job total about 3.3 h of the week's 30).
+- Clips "D:/scratch 2026/city-ai": ai-film-big-a (tower grows about 1.5x, a zoom-in) and
+  ai-film-big-b (tower grows about 1.7x and slides toward centre, real parallax). Tower keeps
+  three tiers in both. Independent looker on stills: b better; doubts = sky and far city
+  hardly move, finish a little smooth/digital, thin spike on top in late frames.
+- Sent to owner: ai-film-big-b-pingpong.mp4 and ai-film-big-a-pingpong.mp4.
+
+### NEXT
+Owner's eye on the motion. Yes -> this is the method for the dive: slice 2 (city plate and
+framing), then shots made this way, upscaled for 1440x900. No -> ask him what is missing, or
+the plan's still-landing fallback. Paid machine still needs his yes.

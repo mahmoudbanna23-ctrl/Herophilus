@@ -4,5 +4,5 @@
   "inputs": ["pharos-dark.jpg"],
   "gpu": true,
   "internet": true,
-  "timeoutSec": 8400
+  "timeoutSec": 10800
 }

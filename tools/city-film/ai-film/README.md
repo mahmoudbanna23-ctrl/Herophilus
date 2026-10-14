@@ -41,3 +41,43 @@ as `ai-film-a/b/c.mp4`, each with a `-pingpong` version and a `contact-ai-*.png`
 Reading: on this model the picture either stays whole and still, or moves and breaks. The
 free route is closed after two dispatches. The README above this section was written before
 run 4; the builder died (usage limit) before updating it, so this section was added by hand.
+
+## Run 5 (2026-10-14) - BIG model route: Wan 2.2 I2V-A14B GGUF Q4_K_M + lightx2v 4-step LoRAs (launch 1 of max 3)
+
+Script `ai_film.py` is rewritten (the run-4 5B script is kept as `ai_film_run4_5B.py`). Plan, before launch:
+- Model: Wan-AI/Wan2.2-I2V-A14B-Diffusers skeleton (VAE, tokenizer, UMT5) + two QuantStack GGUF transformers
+  (HighNoise and LowNoise, Q4_K_M, 9.65 GB each) loaded with `WanTransformer3DModel.from_single_file` +
+  `GGUFQuantizationConfig(compute_dtype=fp16)`. LoRAs: lightx2v `wan2.2_i2v_A14b_{high,low}_noise_lora_rank64_lightx2v_4step_1022`
+  (high into `transformer`, low into `transformer_2` via `load_into_transformer_2=True`). Verified on the web: diffusers docs
+  (from_single_file for WanTransformer3DModel, two denoisers, boundary_ratio, guidance_scale_2), file names/sizes through the HF API.
+  NOT verified: GGUF + from_single_file + LoRA together for Wan (no example found); that is what the smoke clip tests.
+- Settings: 832x480, guidance 1.0 (negative prompt ignored), 4 passes, FlowMatchEuler shift 5 with sigmas 1/.75/.5/.25
+  (= timesteps 1000/937/833/625, the lightx2v schedule), boundary 0.9 (2 high + 2 low), 16 fps (native for A14B).
+- Memory: high-noise transformer on cuda:0 (moved there only after the VAE has encoded the image), low-noise on cuda:1,
+  prompts encoded once in a separate process and the text encoder deleted from disk, query-chunked attention (512),
+  denoise returns latents, both transformers are freed, VAE decodes tiled in fp32 on cuda:0.
+- Ladder (one fresh process each): enc -> smoke (33 frames, prompt A, seed 11) -> a (81 f, prompt A, seed 11; retry with Q3_K_M)
+  -> b (81 f, prompt B, seed 22) -> fb (Wan 2.1 I2V-14B-480P Q3_K_M GGUF + Kijai lightx2v rank64 LoRA) only if a failed.
+- Item: timeout 10800 s; HARD stop inside the script at 9900 s. Budget passed to the runner: 8 h.
+- My arithmetic (to be checked against the log): about 1.8e15 FLOP per pass at 81 frames, expect 150-400 s per pass.
+
+
+### Run 5 results (2026-10-14, launch 1 of max 3) - BIG model route WORKED end to end
+- Launched: Wan 2.2 I2V-A14B, GGUF Q4_K_M (both experts) + lightx2v 4-step rank-64 LoRAs, guidance 1.0, 4 passes,
+  832x480, 16 fps, two T4 (expert split across GPUs). Runner finished ok, 2574 s wall (about 0.72 GPU hours, two T4 on one kernel).
+- Came back: bigsmoke-smoke.mp4 (33 f, 609,899 bytes), ai-film-big-a.mp4 (81 f, prompt A seed 11, 1,561,686 bytes),
+  ai-film-big-b.mp4 (81 f, prompt B seed 22, 1,963,564 bytes). All frame checks ok, no BAD suffix, no OOM, no fallback needed.
+- Measured seconds per pass, 81 frames: 239.7 / 173.1 / 132.2 / 135.8 (first pass slow: warm-up and expert move). Smoke 33 f: 65.0 / 42.5 / 33.9 / 34.9.
+  Denoise 681 s, decode 170 s, load 88 s, worker total 943 s per 81-frame clip. Peak GPU memory 13.5 GiB of 15.
+- Prediction check: predicted 120 s/pass for 81 f, measured mean after first about 147 s. Prediction was about 20 percent low.
+- Failed: nothing. Ladder items fb (Wan 2.1 fallback) and Q3 retry were not needed and did not run.
+- Quality judgement of the clips: see the dispatch report (contact sheets viewed once each).
+
+- BUG FOUND after download (run 5): the saved mp4 files had inverted colours. Cause: export_to_video got uint8 numpy frames and multiplies by 255 again, which wraps (x*255 mod 256 = 256-x). The frame PNGs saved by PIL were correct (mean RGB 54,61,80 matches the source). Wrapped mp4 cannot be restored exactly (pure-black pixels land on 0 not 255, so negate leaves red patches; confirmed by two ffmpeg repair tries). Clips from launch 1 are therefore NOT usable as shown. Fix in ai_film.py: pass PIL Images to export_to_video. The model output itself (structure, motion) looked good in the negated sheets.
+- Launch 2 of 3 planned: same script, same seeds, to regenerate smoke, a, b with the export fixed. About 0.72 GPU hours again; total this dispatch about 1.44 h.
+
+### Run 6 results (2026-10-14, launch 2 of max 3) - same recipe, export bug fixed
+- Launched: ai_film.py with PIL-frame export. Runner ok, 2826 s wall (about 0.79 GPU hours). Total this dispatch about 1.5 GPU hours over 2 launches.
+- Came back: bigsmoke-smoke.mp4 (416,423 bytes), ai-film-big-a.mp4 (81 f, 981,477 bytes), ai-film-big-b.mp4 (81 f, 1,017,418 bytes). Colours now match the source (first frame mean RGB 54,61,79).
+- Seconds per pass, 81 f: 233 / 168 / 149 / 159 for both clips. Denoise about 710 s, decode 165 s per clip. Smoke 65/43/35/38.
+- Failed: nothing in the run. Contact sheets viewed once each; findings are in the dispatch report. Launch 3 not used.
