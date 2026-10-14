@@ -276,6 +276,34 @@ anything; just paint one image.
    sharp 3D-render finish. The same cool moonlight from the same side as the reference, with warm
    amber lamps in a few window slits.
 
+## shot1-sky-dark
+
+(First frame of the whole film: a very high view over the sea. Painted with
+SCENE_REF=city-dark-3.png and COMMON_SECTION=common-city-matte, so the matte gouache finish,
+night palette and warm lamp colour carry over.)
+
+The same night, the same hand-painted matte finish and palette as the reference picture, seen from
+a NEW CAMERA, painted with HEAVY visible gouache brushwork. The camera hangs very high in the night
+air over the open sea, looking out and slightly down toward the far coast of Alexandria.
+
+PRECEDENCE: the new camera IS the change asked for. Where this prompt moves the camera or
+re-places an element, this prompt wins over the reference picture. The reference gives only the
+style, palette, light and matte finish. Do not ask anything; just paint one image.
+
+1. THE SKY fills the top 55 percent of the picture: deep blue night in broad visible brush strokes,
+   a few small stars, and soft layered banks of cloud, lit faintly from below by the cool night
+   light. Matte and chalky, no glow, no moon disc.
+2. A THICK CLOUD BANK lies low across the middle distance, full width, heavy and opaque, painted in
+   thick dry chalky strokes with a soft rolling top edge. It is the nearest and most important
+   mass below the sky, and the film will dive into it.
+3. THE SEA lies below and beyond the cloud: dark flat paint with visible directional brush marks
+   and a few soft brushed reflections, no smooth gradient, no mirror finish.
+4. THE COAST is low and far away, a thin dark line along the horizon just below the cloud bank,
+   with a scatter of tiny warm amber lamps painted as soft dabs. THE LIGHTHOUSE is only a small
+   warm spark of fire on that coast, on the LEFT side of the picture, in the left third, as in the
+   reference picture. No tower detail is visible, just the small warm fire.
+5. Nothing else: no ships, no birds, no people, no moon, no lens flare, no text.
+
 ## room-pharos-dark
 
 (The eyes room, inside the lighthouse. The existing plate app/assets/rooms/ophtho-dark.jpg has
