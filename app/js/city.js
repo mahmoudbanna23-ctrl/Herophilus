@@ -14,7 +14,7 @@
      inkMarkChips - runs right after the view function: the new stage is mounted here.
    The Tab order is the DOM order: lighthouse, theatre, temple, garden.
 
-   THE LANDING FILM (landing-dark.mp4, 81 frames, 720x480, the end is a softer copy of the
+   THE LANDING FILM (landing-dark.mp4, 81 frames, 1350x900 (720x480 source, lanczos + unsharp), the end is a softer copy of the
    still). Once per page load, only when the very first view is home, the student has answered
    at least one question, motion is not reduced, the window is landscape and >= 768 wide. A
    muted <video> goes in above the still; if it cannot play through within 1000 ms it is

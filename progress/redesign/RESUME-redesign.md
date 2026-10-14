@@ -919,6 +919,14 @@ one sheet). Then job 3: one question screen on the seven ui.css parts.
 - Route video sent (D:/scratch 2026/city-route/route-1440x900.mp4, 28 s, + step PNGs; script
   route.js there). OWNER 2026-10-14: "yes, go on" -> SLICE 3 APPROVED.
 
+- Slice 3 item 4 DONE (ffmpeg only): landing-dark.mp4 now 1350x900, lanczos + unsharp
+  5:5:0.7, crf 19, 2.41 MB (was 875 KB). Gain is modest: the 720x480 source has no more detail,
+  and the film's last frame is a redrawn, not a softer, copy of the still (boat missing, houses
+  redrawn); the 400 ms fade hides it. Work: D:/scratch 2026/city-sharpen/STATUS.md. AI upscale
+  (Kaggle) not run - test it with the slice 4 shots, which need it more. Bigger file = the
+  1000 ms play-through rule skips the film more often on slow links (by design).
+
 ### NEXT
-Slice 3 item 4: sharpen the 720x480 landing film for 1440x900 (ffmpeg first, AI upscale only if
-needed). Then slice 4: shots 1-2 and their cloud joins, one join proved first.
+Slice 4: shots 1-2 (aerial approach, lighthouse pass) and their cloud joins, one join proved
+first. Paint plates (Codex image seat, cap 8/day), Kaggle Wan 2.2 film (quota refresh
+2026-10-17), AI-upscale test on the same run.
