@@ -1,0 +1,8 @@
+{
+  "slug": "hero-city-landing",
+  "script": "landing.py",
+  "inputs": ["city-dark-3-720x480.jpg"],
+  "gpu": true,
+  "internet": true,
+  "timeoutSec": 5400
+}

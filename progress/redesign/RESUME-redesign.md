@@ -843,3 +843,26 @@ looker -> owner yes/redo. Then slice 3 (one whole route, eyes).
 ### NEXT
 Read landing/STATUS.md and the room looker's answer (in the chat only - re-run it if lost), then
 write the page-code brief.
+
+## 2026-10-14 - eyes room + landing film APPROVED
+
+- Owner: "room good, second film feels right, go on".
+- Room: paint/room-pharos-dark.png (1536x1024, SCENE_REF = old app/assets/rooms/ophtho-dark.jpg,
+  common-room-matte). Looker boxes (percent, +-2): shelf 25,12,42,58 - desk+stool 1,47,36,88 -
+  sand-glass with pedestal 65,21,75,61 - chest 74,53,99,84 - free floor 37,60,72,96. Accepted
+  faults: sand-glass smallest (hot-spot must be padded), desk and chest near the edges, two glass
+  balls high on the ledge. 5 paintings used today.
+- paint-city.sh: SCENE_REF wording now allows several named changes (the painter had refused a
+  three-change prompt as "only the one change").
+- Landing film: the "second film" sent to him was landing-a (sent order: b then a) = RISE-A
+  reversed, seed 11, the gentler fog-clearing one. D:\scratch 2026\city-ai\landing\landing-a.mp4,
+  raw rise-a.mp4, 720x480, 81 frames + 1.5 s hold. Recipe and timings:
+  tools/city-film/ai-film/landing/STATUS.md (709 s per clip, 0.56 GPU h; quota now 3.79 h used
+  of 30, refresh 2026-10-17).
+- Slip by the film builder: one stray dataset-metadata.json written into the LIVE folder,
+  deleted by it; checked gone. Every Kaggle CLI call in a brief must run with an explicit
+  directory inside the trial copy.
+
+### NEXT
+Slice 3 page code in three builder jobs, in order: (1) city home: still + landing film + mist +
+four hot-spots; (2) lighthouse room + sheet; (3) one question screen on the seven parts.

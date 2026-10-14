@@ -29,7 +29,7 @@ done
 echo "$name: Codex free after ${waited}s, painting"
 
 if [ -n "${SCENE_REF:-}" ]; then
-  look="First look at the image file $SCENE_REF: it is the SAME SCENE. Repaint exactly that view, with the same camera, framing, palette, light and every element in the same place, making only the one change the prompt names."
+  look="First look at the image file $SCENE_REF: it is the SAME SCENE. Repaint exactly that view, with the same camera, framing, palette, light and every element in the same place, making only the changes the prompt names (it may name one or several; apply them all)."
 else
   look="First look at the image file $ref: it is a STYLE REFERENCE ONLY (finish, palette, quality of light) and its subject must not be copied."
 fi
