@@ -7,6 +7,18 @@ for the Pediatrics chat to finish.** Push the branch freely, never `--force`.
 
 This file is the branch's only state file. `MEMORY.md` and `CLAUDE.md` are not edited here.
 
+## ⚠️ RESUME HERE — 2026-10-14: work runs in 7 phases, one at a time
+Plan: `progress/redesign/PLAN-phases-2026-10-14.md` (owner asked: phases, no overlap, all
+pixel-rendering design work — paintings, Blender renders, films — on Kaggle; her 3D model may go to
+Kaggle as a PRIVATE dataset, owner OK 2026-10-14). Everything below this block is history.
+- Phase 1 DONE 2026-10-14: city = welcome (9 lines) + dashboard (plaque lamps, door fire, her
+  line). Owner "good as is". Refuter PASS twice (`build/city-dash-REFUTE.md`). Known: boot-check
+  counts ophtho 0 rows on this branch because the module view returns the room (by design,
+  `room.js:30`, `render.js:316`) — needs a room-aware count before merge. Neuropsych plaque grazes
+  the temple roof at 820x1180 (minor).
+- Phase 2 NEXT: brief `build/kaggle-paint-BRIEF.md` (Kaggle painting kit, shot 1 plate redo, model
+  choice in `build/kaggle-paint-RESEARCH.md`), then shot 1 film + 3-film join.
+
 ## The approved design (owner, 2026-10-11)
 
 Home becomes one painted hall of the Alexandria library filling the first screen. Four subjects = four

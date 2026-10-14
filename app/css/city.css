@@ -118,7 +118,7 @@ body.city-on[data-view="home"] .ambient{display:none}
   padding:7px 11px 8px;
   background:rgba(8,13,24,.88);
   border:1px solid rgba(240,199,94,.38);
-  border-radius:var(--r-sm,4px);
+  border-radius:0;
   color:#f5efe0;
   transform:translateX(var(--sx,0px));
 }
@@ -134,10 +134,83 @@ body.city-on[data-view="home"] .ambient{display:none}
 }
 .city-tag .city-meta.go{letter-spacing:.04em}
 
-/* ---- the rest of the dashboard sits under the stage, on a plain sheet ------------------------- */
-.city-below{
-  background:var(--bg);
-  padding:var(--s-11) max(var(--s-11),calc((100% - 936px)/2));
+/* ---- what the plain block under the stage used to say, now in the picture ------------------- */
+/* each plaque: name + door fire, a row of five lamps (+ the cards due, carved small), then the
+   existing accuracy and answered text. Carved stone: square corners, gold hairline. */
+.city-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.city-row{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:11px}
+.city-lamps{display:inline-flex;gap:3px}
+.city-lamps i{display:block;width:6px;height:9px;border:1px solid #8c8470;background:transparent}
+.city-lamps i.on{background:#f0c75e;border-color:#f0c75e;box-shadow:0 0 4px rgba(240,199,94,.55)}
+.city-due{font-size:12px;line-height:1.2;font-weight:700;color:#f2b866;font-variant-numeric:tabular-nums}
+/* the door fire: cold (an empty outline) until that subject has cards due */
+.city-fire{display:inline-flex;flex:0 0 auto}
+.city-fire svg{display:block}
+.city-fire .fo{fill:none;stroke:#8c8470;stroke-width:1}
+.city-fire .fi{display:none}
+.city-fire.lit .fo{fill:#e07a22;stroke:#f0c75e}
+.city-fire.lit .fi{display:block;fill:#ffd98a;transform-box:fill-box;transform-origin:50% 100%;
+  animation:cityFlame 1.9s ease-in-out infinite alternate}
+@keyframes cityFlame{from{opacity:.7;transform:scaleY(.88)}to{opacity:1;transform:scaleY(1.06)}}
+.city-box.playing .city-fire.lit .fi{animation:none}
+/* the welcome names a building: a gold rim on its plaque fades in, nothing moves */
+.city-tag::after{
+  content:"";position:absolute;inset:-4px;border:2px solid #f0c75e;
+  opacity:0;pointer-events:none;transition:opacity .3s linear;
+}
+.city-tag.glow::after{opacity:1}
+
+/* the term and the count, carved on the sky at the top left of the stage */
+.city-term{
+  /* landscape: top centre, over open sea - clear of the lantern, the rail and the top-right tools */
+  position:absolute;z-index:3;left:50%;transform:translateX(-50%);top:12px;
+  display:flex;flex-direction:column;gap:1px;padding:6px 10px 7px;max-width:176px;
+  background:rgba(8,13,24,.88);border:1px solid rgba(240,199,94,.38);color:#f5efe0;
+  pointer-events:none;
+}
+.city-term .ct-name{font-size:12px;line-height:1.3;font-weight:700;letter-spacing:.04em}
+.city-term .ct-count{font-size:12px;line-height:1.3;font-weight:600;color:#d6cdb8;font-variant-numeric:tabular-nums}
+
+/* her line: one carved plate standing beside her figure (the fixed corner #clep). city.js sets
+   --sr / --sb / --sw from where she stands. On this view the plate is her voice, so her own
+   bubble stays shut. */
+body.city-on[data-view="home"] .clep .cl-say{display:none}
+.city-say{
+  position:fixed;z-index:140;right:var(--sr,20px);bottom:var(--sb,18px);width:var(--sw,300px);
+  max-height:45vh;overflow-y:auto;overscroll-behavior:contain;
+  padding:12px 14px;background:rgba(8,13,24,.92);border:1px solid rgba(240,199,94,.5);
+  color:#f5efe0;font-size:14px;line-height:1.5;
+}
+.city-say.wait{visibility:hidden}
+.city-say .cs-line{display:block;margin:0 0 10px;padding:0;text-align:left;font:inherit;color:#f5efe0}
+.city-say .cs-act{
+  width:100%;background:none;border:0;cursor:pointer;
+  text-decoration:underline;text-decoration-color:rgba(240,199,94,.6);text-underline-offset:3px;
+}
+.city-say .cs-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.city-say .cs-step{font-size:12px;font-weight:600;color:#d6cdb8;font-variant-numeric:tabular-nums;margin-right:auto}
+.city-say .cs-btn{
+  min-height:32px;padding:0 12px;background:none;border:1px solid rgba(240,199,94,.5);border-radius:0;
+  font:inherit;font-size:13px;font-weight:700;color:#f0c75e;cursor:pointer;
+}
+@media (pointer:coarse){.city-say .cs-btn{min-height:44px}}
+.city-say .cs-btn:hover,.city-say .cs-btn:focus-visible{border-color:#f0c75e}
+.city-say button:focus-visible{outline:2px solid #f0c75e;outline-offset:2px}
+.city-say .cs-extra{margin-top:8px}
+.city-say .cs-extra:empty{display:none}
+.city-say .cs-extra p{margin:0}
+/* upright: the tower stands left of centre and the tool buttons float top right (wider than a phone),
+   so the term plate sits right of the middle, between them; on a phone the header bar is above the
+   stage and the plate goes to the top right */
+@media (max-aspect-ratio:1/1){
+  .city-term{left:calc(50% + 20px);transform:none}
+}
+@media (max-width:600px){
+  .city-term{left:auto;right:12px;text-align:right}
+}
+/* phone: the Ophthalmology plaque stands right of the tower, not across it */
+@media (max-width:767.98px) and (max-aspect-ratio:1/1){
+  .city-spot[data-mod="ophtho"] .city-tag{left:calc(100% - 15px)}
 }
 
 /* ---- upright window: the tall plate and its own boxes ------------------------------------ */
@@ -168,11 +241,15 @@ body.city-on[data-view="home"] .ambient{display:none}
   .city-mist{display:none;animation:none}
   .city-glow{display:none}
   .city-film,.city-cover{display:none}
+  .city-fire.lit .fi{animation:none}
+  .city-tag::after{transition:none}
 }
 body[data-view="quiz"] .city-mist,body[data-view="case"] .city-mist,body[data-view="mock"] .city-mist,
 body[data-view="review"] .city-mist,body[data-view="results"] .city-mist,body[data-view="theory"] .city-mist,
 body[data-view="quiz"] .city-cover,body[data-view="case"] .city-cover,body[data-view="mock"] .city-cover,
 body[data-view="review"] .city-cover,body[data-view="results"] .city-cover,body[data-view="theory"] .city-cover{display:none}
+body[data-view="quiz"] .city-fire .fi,body[data-view="case"] .city-fire .fi,body[data-view="mock"] .city-fire .fi,
+body[data-view="review"] .city-fire .fi,body[data-view="results"] .city-fire .fi,body[data-view="theory"] .city-fire .fi{animation:none}
 
 /* =====================================================================================================
    THE ROOM (js/room.js, the Eyes subject): a painted room with four things to pick. Same stage-box idea

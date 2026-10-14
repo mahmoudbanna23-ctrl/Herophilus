@@ -175,7 +175,8 @@ function vHome(p){
   const total=QUESTIONS.length;
   const done=QUESTIONS.filter(q=>isAnswered(q.id)).length;
   const acc=accuracy(QUESTIONS);
-  const due=dueNow().length;
+  const dueList=dueNow();
+  const due=dueList.length;
   /* A profile that has answered nothing has nothing to stand on, and the four
      stat tiles say so in the bluntest possible way: 0 / — / 0 / 0. That is an
      empty scoreboard shown to somebody who has not played yet, and it was the
@@ -245,7 +246,10 @@ function vHome(p){
     const a=accuracy(qs);
     const pct=qs.length?d/qs.length*100:0;
     const chs=m.groups.reduce((n,g)=>n+g.chapters.length,0);
-    cityItems.push({id:m.id,name:m.name,locked:isLocked(m.id),done:d,total:qs.length,acc:a});
+    /* due cards per subject: the same dueNow() list, cut by this subject's questions */
+    const inMod=new Set(qs.map(q=>q.id));
+    const dueIds=dueList.filter(q=>inMod.has(q.id)).map(q=>q.id);
+    cityItems.push({id:m.id,name:m.name,locked:isLocked(m.id),done:d,total:qs.length,acc:a,due:dueIds.length,dueIds:dueIds});
     /* A locked subject keeps its card and its artwork — dropping it would read
        as an app that only covers two subjects — but shows no counts and no
        progress ring, because both would be zero and a zero reads as broken. */
@@ -288,7 +292,17 @@ function vHome(p){
   /* The four subjects are the buildings of the painted city (city.js); everything else the
      dashboard says sits on a plain sheet under it. Without city.js the old grid stays. */
   if(typeof cityStageHTML==='function'){
-    p.innerHTML=cityStageHTML(cityItems,done)+`<div class="city-below">${h+todayHTML+heroHTML}</div>`;
+    /* Everything the plain block under the city used to say now lives in the picture (city.js):
+       the term and the count, her one line (reviews due, today's plan, where you stopped) and
+       the welcome. The numbers are the ones computed above; nothing is worked out a second way. */
+    const dash={term:termName(),total:total,done:done};
+    if(today&&today.items&&today.items.length){
+      dash.today=today.items.map(it=>(it.label?it.label+': ':'')+it.text).join(' · ');
+    }
+    if(recent){
+      dash.cont={cid:recent,finished:!!S.resumeByChapter[recent].finished,name:chapterName(recent)};
+    }
+    p.innerHTML=cityStageHTML(cityItems,done,dash);
     return;
   }
   h+=todayHTML+heroHTML+modsHTML;

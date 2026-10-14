@@ -65,10 +65,52 @@
     return '--'+pre+'l:'+pct(b[0])+';--'+pre+'t:'+pct(b[1])+
            ';--'+pre+'w:'+pct(b[2]-b[0])+';--'+pre+'h:'+pct(b[3]-b[1]);
   }
-  /* items: [{id,name,locked,done,total,acc}] in any order; the painting fixes the order. */
-  window.cityStageHTML=function(items,answered){
+  /* ---- what the picture says besides the four buildings (slice 4b) ------------------------- */
+  const BUILDING={ophtho:'lighthouse',ent:'theatre',neuropsych:'temple',pediatrics:'garden'};
+  const LAMPS=5;
+  /* a row of five lamps lit in step with done/total: none at 0, one as soon as anything is done,
+     all five only at 100% (rounded down) */
+  const lampsLit=(done,total)=>(!total||done<=0)?0:Math.max(1,Math.min(LAMPS,Math.floor(LAMPS*done/total)));
+  const FIRE='<svg viewBox="0 0 12 16" width="14" height="18" aria-hidden="true" focusable="false">'+
+    '<path class="fo" d="M6 1C6.5 4 10.5 6 10.5 10.2 10.5 13.2 8.5 15 6 15 3.5 15 1.5 13.2 1.5 10.2 1.5 8 2.8 6.8 3.8 5.4 4.2 7 4.8 7.4 5.2 7.4 5.6 5 5.4 3 6 1Z"/>'+
+    '<path class="fi" d="M6 8.2C6.3 9.4 8 10.2 8 11.8 8 13 7.1 13.8 6 13.8 4.9 13.8 4 13 4 11.8 4 10.6 5.4 10 6 8.2Z"/></svg>';
+  /* the welcome, owner-approved wording; lines 5-8 name a building (its plaque glows) */
+  const WELCOME=[
+    {t:'Alexandria, about 300 BC. A doctor named Herophilus was the first to look inside the human body.'},
+    {t:'He traced the nerves to the brain, named the duodenum, and studied the eye.'},
+    {t:'He timed the pulse with a water clock. That clock was me.'},
+    {t:'Now his city is yours to study.'},
+    {t:'The lighthouse keeps the eyes.',m:'ophtho'},
+    {t:'The theatre keeps the ear, nose and throat.',m:'ent'},
+    {t:'The temple keeps the mind.',m:'neuropsych'},
+    {t:'The garden keeps the children.',m:'pediatrics'},
+    {t:'Lamps light up as you learn. A fire at a door means cards are waiting for you.'}
+  ];
+  let itemsBy={};          // this render's per-subject numbers
+  let lines=[];            // her dashboard lines, in priority order: {text, act, ...}
+  let lineAt=0;            // which of them she is showing
+  const welcome={on:false,i:0,seen:false};   // in memory only; no storage key
+  let settleT=0;
+
+  function buildLines(items,dash){
+    const out=[];
+    items.filter(it=>!it.locked&&it.due>0).sort((a,b)=>b.due-a.due).forEach(it=>{
+      out.push({text:it.due+(it.due===1?' card waits':' cards wait')+' in the '+(BUILDING[it.id]||it.name)+'.',act:'review',mod:it.id});
+    });
+    if(dash&&dash.today) out.push({text:'On today: '+dash.today,act:'today'});
+    if(dash&&dash.cont) out.push({text:(dash.cont.finished?'Restart':'Continue')+' — '+dash.cont.name,act:'cont',cid:dash.cont.cid});
+    if(!out.length) out.push({text:dash&&dash.done>0?'Choose a building to continue.':'Choose a building to begin.'});
+    return out;
+  }
+
+  /* items: [{id,name,locked,done,total,acc,due,dueIds}] in any order; the painting fixes the order.
+     dash: {term,total,done,today,cont} - the numbers vHome already worked out. */
+  window.cityStageHTML=function(items,answered,dash){
     const by={};
     (items||[]).forEach(it=>{by[it.id]=it});
+    itemsBy=by;
+    lines=buildLines(items||[],dash);
+    lineAt=0;
     let spots='';
     SPOTS.forEach(sp=>{
       const it=by[sp.id];
@@ -79,19 +121,160 @@
           ?'Start studying'
           :(it.acc===null?'—':it.acc+'%')+' · '+it.done+'/'+it.total+' answered');
       const style=boxVars(sp.land,'')+';'+boxVars(sp.up,'u');
+      let label=it.name;
+      let lamps='', fire='', due='';
+      if(it.locked){
+        label+='. Coming soon';
+      }else{
+        const lit=lampsLit(it.done,it.total);
+        for(let k=0;k<LAMPS;k++) lamps+='<i'+(k<lit?' class="on"':'')+'></i>';
+        fire='<span class="city-fire'+(it.due>0?' lit':'')+'" aria-hidden="true">'+FIRE+'</span>';
+        if(it.due>0) due='<span class="city-due">'+it.due+' due</span>';
+        const exact=it.total?Math.round(it.done/it.total*1000)/10:0;
+        label+='. '+it.done+' of '+it.total+' answered ('+exact+'%), accuracy '+(it.acc===null?'none yet':it.acc+'%')+
+          ', '+lit+' of '+LAMPS+' lamps lit, '+(it.due>0?it.due+(it.due===1?' card':' cards')+' due for review':'no cards due for review');
+      }
       const go=it.locked?' disabled aria-disabled="true"':` onclick="go({name:'module',id:'${sp.id}'})"`;
-      spots+=`<button type="button" class="city-spot" data-mod="${sp.id}" data-la="${sp.la}" data-pa="${sp.pa}" style="${style}"${go}>`+
-        `<span class="city-tag"><span class="mod-name">${esc(it.name)}</span>`+
+      spots+=`<button type="button" class="city-spot" data-mod="${sp.id}" data-la="${sp.la}" data-pa="${sp.pa}" style="${style}" aria-label="${esc(label)}"${go}>`+
+        `<span class="city-tag"><span class="city-head"><span class="mod-name">${esc(it.name)}</span>${fire}</span>`+
+        (it.locked?'':`<span class="city-row"><span class="city-lamps" aria-hidden="true">${lamps}</span>${due}</span>`)+
         `<span class="city-meta${it.done===0&&!it.locked?' go':''}">${meta}</span></span></button>`;
     });
+    const term=dash?`<div class="city-term"><span class="ct-name">${esc(dash.term)}</span>`+
+      `<span class="ct-count">${dash.total} questions</span></div>`:'';
     return `<section class="city" aria-label="Choose a subject">`+
       `<div class="city-box" data-done="${answered|0}">`+
       `<picture class="city-plate"><source media="(max-aspect-ratio:1/1)" srcset="${PLATE_TALL}">`+
       `<img src="${PLATE_LAND}" alt="" draggable="false"></picture>`+
       `<span class="city-mist a" aria-hidden="true"></span><span class="city-mist b" aria-hidden="true"></span>`+
       `<span class="city-glow" aria-hidden="true"><i></i></span>`+
-      `<div class="city-spots">${spots}</div></div></section>`;
+      `<div class="city-spots">${spots}</div></div>`+
+      term+
+      `<div class="city-say" role="region" aria-label="The Clepsydra" aria-live="polite">`+
+      `<div class="cs-main"></div><div class="cs-extra"></div></div></section>`;
   };
+
+  /* ---- her speech plate: the welcome, or one dashboard line ------------------------------------ */
+  function plateInner(){
+    if(welcome.on){
+      const w=WELCOME[welcome.i];
+      return `<p class="cs-line">${esc(w.t)}</p>`+
+        `<div class="cs-bar"><span class="cs-step">${welcome.i+1} of ${WELCOME.length}</span>`+
+        `<button type="button" class="cs-btn" data-cs="next">Next</button>`+
+        `<button type="button" class="cs-btn" data-cs="skip">Skip</button></div>`;
+    }
+    const L=lines[lineAt]||lines[0];
+    if(!L) return '';
+    if(sayHTML){
+      let sb='';
+      if(lines.length>1) sb+=`<button type="button" class="cs-btn" data-cs="more">More (${lineAt+1} of ${lines.length})</button>`;
+      sb+=`<button type="button" class="cs-btn" data-cs="about">About Herophilus</button>`;
+      return `<p class="cs-line">${sayHTML}</p><div class="cs-bar">${sb}</div>`;
+    }
+    const line=L.act
+      ?`<button type="button" class="cs-line cs-act" data-cs="act">${esc(L.text)}</button>`
+      :`<p class="cs-line">${esc(L.text)}</p>`;
+    let bar='';
+    if(lines.length>1) bar+=`<button type="button" class="cs-btn" data-cs="more">More (${lineAt+1} of ${lines.length})</button>`;
+    bar+=`<button type="button" class="cs-btn" data-cs="about">About Herophilus</button>`;
+    return line+`<div class="cs-bar">${bar}</div>`;
+  }
+  function paintPlate(){
+    const say=document.querySelector('.city-say');
+    if(!say) return;
+    const main=say.querySelector('.cs-main');
+    const had=say.contains(document.activeElement);
+    const key=had&&document.activeElement.dataset?document.activeElement.dataset.cs:null;
+    main.innerHTML=plateInner();
+    /* lines 5-8 make that building's plaque glow */
+    const w=welcome.on?WELCOME[welcome.i]:null;
+    document.querySelectorAll('.city-spot').forEach(sp=>{
+      const t=sp.querySelector('.city-tag');
+      if(t) t.classList.toggle('glow',!!(w&&w.m&&sp.dataset.mod===w.m));
+    });
+    if(had){
+      const el=main.querySelector('[data-cs="'+key+'"]')||main.querySelector('[data-cs="about"]')||main.querySelector('[data-cs]');
+      if(el) el.focus();
+    }
+  }
+  function startWelcome(){ clearSay(); welcome.on=true; welcome.seen=true; welcome.i=0; paintPlate(); }
+  function endWelcome(){ if(!welcome.on) return; welcome.on=false; paintPlate(); }
+  function nextWelcome(){ if(welcome.i>=WELCOME.length-1) endWelcome(); else{ welcome.i++; paintPlate() } }
+  /* Escape is only the welcome's when nothing else is open (the shortcuts/confirm modal, the search
+     results, the sign-in gate). Capture phase, so the state is read BEFORE another handler closes
+     the overlay in the same keypress - otherwise closing a modal would also end the welcome. */
+  function overlayOpen(){
+    const mb=document.getElementById('modalBg');
+    if(mb&&mb.classList.contains('show')) return true;
+    const rs=document.getElementById('results');
+    if(rs&&rs.classList.contains('show')) return true;
+    const g=document.getElementById('gate');
+    if(g&&!g.classList.contains('hide')&&g.childElementCount>0) return true;
+    const sp=document.getElementById('splash');
+    if(sp&&!sp.classList.contains('hide')) return true;
+    return false;
+  }
+  document.addEventListener('keydown',function(e){
+    if(!welcome.on||e.key!=='Escape'||e.defaultPrevented||overlayOpen()) return;
+    e.preventDefault(); endWelcome();
+  },true);
+
+  /* Her voice on this screen. Her own bubble is shut on the home city, so what she says
+     (the "?" tool, a tap on her, idle facts, timer lines) goes into the plate for a few seconds, then
+     the dashboard line comes back. It never interrupts the welcome: while that plays, it is dropped. */
+  let sayHTML=null, sayT=0;
+  const homeCity=()=>!!(live&&view.name==='home'&&document.querySelector('.city-say'));
+  function clearSay(){ sayHTML=null; clearTimeout(sayT) }
+  /* her own dwell runs 4.5-15 s; the plate gives the dashboard line back sooner (2.5 s + 40 ms a character, 6 s at most) */
+  function holdSay(len){
+    clearTimeout(sayT);
+    sayT=setTimeout(function(){ if(sayHTML){ sayHTML=null; paintPlate() } },Math.min(6000,2500+len*40));
+  }
+  function runLine(){
+    const L=lines[lineAt]||lines[0];
+    if(!L||!L.act) return;
+    if(L.act==='review'){
+      const it=itemsBy[L.mod];
+      if(it&&it.dueIds&&it.dueIds.length) startQuiz(it.dueIds,'Review — '+it.name+', due today');
+    }else if(L.act==='today') go({name:'schedule'});
+    else if(L.act==='cont') startChapter(L.cid);
+  }
+  function bindPlate(say){
+    say.addEventListener('click',function(e){
+      const b=e.target.closest('[data-cs]');
+      if(b){
+        const k=b.dataset.cs;
+        if(k==='next') nextWelcome();
+        else if(k==='skip') endWelcome();
+        else if(k==='more'){ if(sayHTML) clearSay(); else lineAt=(lineAt+1)%lines.length; paintPlate() }
+        else if(k==='about'){ startWelcome() }
+        else if(k==='act') runLine();
+        return;
+      }
+      if(welcome.on&&!e.target.closest('button,a,.cs-extra')) nextWelcome();
+    });
+  }
+  /* she is a fixed corner figure (#clep) the student may drag; the plate stands just left of her
+     body, above her small tool row, and follows her */
+  function placePlate(){
+    const say=document.querySelector('.city-say');
+    if(!say) return;
+    const c=document.getElementById('clep');
+    let r=null;
+    if(c&&!c.hidden){
+      const b=c.querySelector('.cl-body'), m=c.querySelector('.cl-mini');
+      const rb=b&&b.getBoundingClientRect(), rm=m&&m.getBoundingClientRect();
+      r=rb&&rb.width?rb:(rm&&rm.width?rm:null);
+    }
+    const W=window.innerWidth, H=window.innerHeight;
+    const right=r?Math.max(8,W-r.left+10):20;
+    const bottom=r?Math.max(8,H-r.bottom+32):18;
+    const strip=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--strip-w'))||0;
+    const avail=Math.max(160,W-right-Math.max(strip,0)-12);
+    say.style.setProperty('--sr',Math.round(right)+'px');
+    say.style.setProperty('--sb',Math.round(bottom)+'px');
+    say.style.setProperty('--sw',Math.round(Math.min(340,avail))+'px');
+  }
 
   /* ---- state, all in memory ------------------------------------------------------------ */
   let seenFirst=false;     // the first render of this page life has happened
@@ -381,23 +564,23 @@
     let raf=0;
     const onResize=()=>{
       cancelAnimationFrame(raf);
-      raf=requestAnimationFrame(()=>{ setTop(); fitLabels(page) });
+      raf=requestAnimationFrame(()=>{ setTop(); fitLabels(page); placePlate() });
     };
     window.addEventListener('resize',onResize);
     const m={box,cleanup(){
       cancelAnimationFrame(raf);
+      clearInterval(settleT);
       window.removeEventListener('resize',onResize);
     }};
     live=m;
-    /* the saved-mock button render() puts in front of the page goes under the stage */
+    /* the saved-mock button render() puts in front of the page goes into her plate */
     const city=page.querySelector('.city');
-    const below=page.querySelector('.city-below');
-    if(city&&below){
-      const strays=[];
-      for(const el of Array.from(page.children)){ if(el===city) break; strays.push(el) }
-      const first=below.firstChild;
-      strays.forEach(el=>below.insertBefore(el,first));
+    const extra=page.querySelector('.cs-extra');
+    if(city&&extra){
+      for(const el of Array.from(page.children)){ if(el===city) break; extra.appendChild(el) }
     }
+    const say=page.querySelector('.city-say');
+    if(say){ bindPlate(say); paintPlate(); placePlate() }
     /* fonts and layout settle after first paint */
     if(document.fonts&&document.fonts.ready) document.fonts.ready.then(()=>{ if(live===m) fitLabels(page) });
 
@@ -411,6 +594,25 @@
         filmGone=true;   // the one chance of this load went by without a film
       }
     }
+    armSettle(box,say);
+  }
+
+  /* Her plate waits out a film; once the city has settled (film over, skipped, dropped, or never
+     offered) it shows, and a first visit (nothing answered) gets the welcome once per page load. */
+  function armSettle(box,say){
+    clearInterval(settleT);
+    if(!say) return;
+    const settle=()=>{
+      say.classList.remove('wait');
+      if(!welcome.on&&!welcome.seen&&parseInt(box.dataset.done,10)===0) startWelcome();
+    };
+    if(!film&&!box.classList.contains('playing')){ settle(); return }
+    say.classList.add('wait');
+    settleT=setInterval(()=>{
+      if(!box.isConnected){ clearInterval(settleT); return }
+      if(film||box.classList.contains('playing')) return;
+      clearInterval(settleT); settle();
+    },120);
   }
 
   /* ---- wraps ----------------------------------------------------------------------------- */
@@ -422,9 +624,30 @@
     if(!me) return _syncFilm.apply(this,arguments);
     if(!seenFirst){ seenFirst=true; firstWasHome=view.name==='home' }
     else if(view.name!=='home'){ filmGone=true }
+    if(view.name!=='home'){ welcome.on=false; clearSay() }
     if(film){ if(view.name==='home') film.park(); else film.destroy() }
     return _syncFilm.apply(this,arguments);
   };
+  const _cs=clepSay;
+  clepSay=function(text,opt){
+    const r=_cs.apply(this,arguments);
+    const o=opt||{};
+    /* same gate as her own bubble; a welcome in progress is never interrupted */
+    if(text&&homeCity()&&!welcome.on&&CLEP.on&&!((CLEP.muted||CLEP.mini)&&!o.force)){
+      sayHTML=clepPartial(clepSegs(String(text)),1e6);
+      holdSay(String(text).length);
+      paintPlate();
+    }
+    return r;
+  };
+  const _cd=clepDismiss;
+  clepDismiss=function(){
+    const r=_cd.apply(this,arguments);
+    if(sayHTML){ clearSay(); paintPlate() }
+    return r;
+  };
+  const _cp=clepPlace;
+  clepPlace=function(){ const r=_cp.apply(this,arguments); if(live) placePlate(); return r };
   const _ink=inkMarkChips;
   inkMarkChips=function(root){
     const r=_ink.apply(this,arguments);
