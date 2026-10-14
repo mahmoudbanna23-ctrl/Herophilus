@@ -1,0 +1,61 @@
+
+(Revision of shot2-pharos-dark after the looker. Painted with SCENE_REF=city-dark-3.png and
+COMMON_SECTION=common-city-matte.)
+
+The same night and the same city as the reference picture, seen from a NEW CAMERA, painted with
+HEAVY visible gouache brushwork. The camera hangs near the lighthouse at about the height of its
+middle tiers, looking slightly down and across the harbour. Five changes.
+
+PRECEDENCE: the new camera IS the first change asked for. Where this prompt moves the camera or
+re-places an element, this prompt wins over the reference picture. The reference gives only the
+style, palette, light, the architecture of the buildings and the matte finish. Do not ask
+anything; just paint one image.
+
+1. THE LIGHTHOUSE IS LARGE AND NEAR BUT FITS THE PICTURE. It stands left of centre, its middle
+   about a quarter of the way in from the left edge. It rises to about 60 to 65 percent of the
+   picture height, no more. Above its warm fire and its small domed cap there is a wide band of
+   open night sky, at least one fifth of the picture height. No part of the tower touches or
+   crosses the top edge. Its three tiers read clearly: tall square lower tier, shorter
+   eight-sided middle tier, small round columned top tier with the warm fire glow. Straight
+   edges, vertical sides.
+2. THE MIST BANK. A thick, opaque, heavy bank of pale blue-grey sea mist fills the lowest 35 to 40
+   percent of the picture across its full width, its top edge a soft rolling line. It completely
+   swallows the foot and the whole lower tier of the tower: the tower emerges out of the mist
+   with no stone, rock or wall visible inside the bank. Nothing floats in or on the mist: no
+   wall piece, no tower base, no rock, no ship. The mist is painted in thick dry chalky strokes,
+   not wisps and not smoke.
+3. THE CITY AND HARBOUR ARE SMALL, at the lower right, seen over the mist, partly veiled by it:
+   dark harbour water, the causeway, one or two ships, low houses, the theatre and the temple,
+   with their small warm amber lamps.
+4. THE SKY AND SEA ARE PAINTED, NOT RENDERED. Sky: deep night blue in broad visible brush
+   strokes with a few stars and thin cloud. Sea: dark flat paint with clearly visible directional
+   brush marks and a few soft brushed reflections, no smooth gradient, no mirror finish.
+5. THE STONE IS PAINTED IN LOOSE GOUACHE: individual blocks marked with visible dabs and dragged
+   strokes, uneven tone, rough chalky surface, no clean computer-made texture, no gloss, no
+   sharp 3D-render finish. The same cool moonlight from the same side as the reference, with warm
+   amber lamps in a few window slits.
+
+
+
+STYLE. A hand-painted film matte painting in gouache and oil: MATTE, dry, chalky surfaces,
+visible confident brushstrokes, soft broken edges, slightly uneven hand-mixed colour. NOT glossy,
+NOT shiny, NOT wet-looking, NOT plastic, no specular highlights, no bloom, no glow halos, no
+computer-game or 3D-render look, not photographic, not flat vector. Use the style reference image
+for its colours, mood and world only, not for its shine. Rich in small believable detail (worn
+stone edges, individual blocks, roof tiles, rigging), painted loosely rather than modelled.
+
+SETTING. Ancient Alexandria, about 300 BC, at night, seen from the air. Normal lens, no fisheye,
+no tilt: vertical lines stay vertical and parallel.
+
+LIGHT. Moonlight and small fires only. Cool night-blue shadows (deep blue, never brown, never pure
+black, every surface keeps visible detail) with small warm amber points of lamp and fire light,
+painted as soft dabs of warm colour, not as glowing bulbs.
+
+HARD RULES.
+- No text of any kind: no letters, numerals, inscriptions, labels, signage or carved writing.
+- No people, no figures, no statues of people, no faces, no hands, no living animals.
+- No frame, no border, no vignette, no watermark, no signature, no neon, no lens flare, no light
+  beam sweeping the sky.
+- No modern objects: nothing electric, printed, plastic or machine-made.
+- Only ONE lighthouse, ONE theatre, ONE temple, ONE garden.
+

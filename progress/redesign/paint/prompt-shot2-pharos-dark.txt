@@ -1,0 +1,51 @@
+
+(First frame of dive shot 2, the lighthouse pass. Painted with SCENE_REF=city-dark-3.png and
+COMMON_SECTION=common-city-matte, so the matte finish, night palette and light carry over.)
+
+The same night, the same city, the same hand-painted matte finish, seen from a NEW CAMERA. The
+camera has dropped and moved close to the lighthouse and hangs just above the level of its middle
+tiers, looking slightly down and across the harbour. Four changes.
+
+1. THE LIGHTHOUSE IS NOW HUGE AND NEAR. It stands left of centre and dominates the picture: its
+   tall square lower tier runs from the bottom of the picture up past the middle, the eight-sided
+   middle tier and the small round columned top tier with the warm fire glow rise above it, and
+   the whole tower fills about two thirds of the picture height and about a third of its width.
+   Its edges are straight and its sides vertical. The pale limestone blocks are large, uneven,
+   worn and matte; a few dark window slits carry small warm lamps. The fire is at least one tenth
+   of the picture height below the top edge. The foot of the tower is hidden in mist.
+2. THE CITY AND HARBOUR ARE BELOW AND BEHIND. To the right and lower, the same dark harbour water,
+   the same causeway, the same ships, and the same low houses, theatre and temple, smaller and
+   further away, still lit by their small warm amber lamps. Nothing touches or hides the tower.
+3. SEA MIST LIES LOW ACROSS THE LOWER THIRD. A soft, thick, painted band of pale blue-grey mist
+   runs the full width of the picture over the bottom third, drifting across the foot of the
+   tower and half-hiding the lower city and water. It is matte and chalky like the rest, with soft
+   brushed edges and no glow. The upper two thirds are clear. The mist is brightest and densest
+   along the bottom edge.
+4. THE SKY ABOVE THE TOWER IS DEEP NIGHT BLUE with a few stars and thin drifting cloud, the same
+   blue as the reference. The light comes from the same direction as in the reference: faint cool
+   moonlight, with the warm amber lamps and fire.
+
+
+
+STYLE. A hand-painted film matte painting in gouache and oil: MATTE, dry, chalky surfaces,
+visible confident brushstrokes, soft broken edges, slightly uneven hand-mixed colour. NOT glossy,
+NOT shiny, NOT wet-looking, NOT plastic, no specular highlights, no bloom, no glow halos, no
+computer-game or 3D-render look, not photographic, not flat vector. Use the style reference image
+for its colours, mood and world only, not for its shine. Rich in small believable detail (worn
+stone edges, individual blocks, roof tiles, rigging), painted loosely rather than modelled.
+
+SETTING. Ancient Alexandria, about 300 BC, at night, seen from the air. Normal lens, no fisheye,
+no tilt: vertical lines stay vertical and parallel.
+
+LIGHT. Moonlight and small fires only. Cool night-blue shadows (deep blue, never brown, never pure
+black, every surface keeps visible detail) with small warm amber points of lamp and fire light,
+painted as soft dabs of warm colour, not as glowing bulbs.
+
+HARD RULES.
+- No text of any kind: no letters, numerals, inscriptions, labels, signage or carved writing.
+- No people, no figures, no statues of people, no faces, no hands, no living animals.
+- No frame, no border, no vignette, no watermark, no signature, no neon, no lens flare, no light
+  beam sweeping the sky.
+- No modern objects: nothing electric, printed, plastic or machine-made.
+- Only ONE lighthouse, ONE theatre, ONE temple, ONE garden.
+

@@ -205,6 +205,77 @@ All four sit fully inside the picture: nothing important within the outer tenth 
 Between them the same low dark houses, narrow streets, quay and two or three anchored ships, thin
 mist. Along the whole bottom edge a plain, calm strip of dark paved quay.
 
+## shot2-pharos-dark
+
+(v1, 2026-10-14, SUPERSEDED by shot2-pharos-dark-r2 below. Looker: tower too big and touching the
+top edge, render-smooth surfaces, mist wispy and too high, a wall piece floating in the mist.
+Text kept unchanged for the record; paint-city.sh needs section name = output name, so the revision
+is its own section.)
+
+(First frame of dive shot 2, the lighthouse pass. Painted with SCENE_REF=city-dark-3.png and
+COMMON_SECTION=common-city-matte, so the matte finish, night palette and light carry over.)
+
+The same night, the same city, the same hand-painted matte finish, seen from a NEW CAMERA. The
+camera has dropped and moved close to the lighthouse and hangs just above the level of its middle
+tiers, looking slightly down and across the harbour. Four changes.
+
+1. THE LIGHTHOUSE IS NOW HUGE AND NEAR. It stands left of centre and dominates the picture: its
+   tall square lower tier runs from the bottom of the picture up past the middle, the eight-sided
+   middle tier and the small round columned top tier with the warm fire glow rise above it, and
+   the whole tower fills about two thirds of the picture height and about a third of its width.
+   Its edges are straight and its sides vertical. The pale limestone blocks are large, uneven,
+   worn and matte; a few dark window slits carry small warm lamps. The fire is at least one tenth
+   of the picture height below the top edge. The foot of the tower is hidden in mist.
+2. THE CITY AND HARBOUR ARE BELOW AND BEHIND. To the right and lower, the same dark harbour water,
+   the same causeway, the same ships, and the same low houses, theatre and temple, smaller and
+   further away, still lit by their small warm amber lamps. Nothing touches or hides the tower.
+3. SEA MIST LIES LOW ACROSS THE LOWER THIRD. A soft, thick, painted band of pale blue-grey mist
+   runs the full width of the picture over the bottom third, drifting across the foot of the
+   tower and half-hiding the lower city and water. It is matte and chalky like the rest, with soft
+   brushed edges and no glow. The upper two thirds are clear. The mist is brightest and densest
+   along the bottom edge.
+4. THE SKY ABOVE THE TOWER IS DEEP NIGHT BLUE with a few stars and thin drifting cloud, the same
+   blue as the reference. The light comes from the same direction as in the reference: faint cool
+   moonlight, with the warm amber lamps and fire.
+
+## shot2-pharos-dark-r2
+
+(Revision of shot2-pharos-dark after the looker. Painted with SCENE_REF=city-dark-3.png and
+COMMON_SECTION=common-city-matte.)
+
+The same night and the same city as the reference picture, seen from a NEW CAMERA, painted with
+HEAVY visible gouache brushwork. The camera hangs near the lighthouse at about the height of its
+middle tiers, looking slightly down and across the harbour. Five changes.
+
+PRECEDENCE: the new camera IS the first change asked for. Where this prompt moves the camera or
+re-places an element, this prompt wins over the reference picture. The reference gives only the
+style, palette, light, the architecture of the buildings and the matte finish. Do not ask
+anything; just paint one image.
+
+1. THE LIGHTHOUSE IS LARGE AND NEAR BUT FITS THE PICTURE. It stands left of centre, its middle
+   about a quarter of the way in from the left edge. It rises to about 60 to 65 percent of the
+   picture height, no more. Above its warm fire and its small domed cap there is a wide band of
+   open night sky, at least one fifth of the picture height. No part of the tower touches or
+   crosses the top edge. Its three tiers read clearly: tall square lower tier, shorter
+   eight-sided middle tier, small round columned top tier with the warm fire glow. Straight
+   edges, vertical sides.
+2. THE MIST BANK. A thick, opaque, heavy bank of pale blue-grey sea mist fills the lowest 35 to 40
+   percent of the picture across its full width, its top edge a soft rolling line. It completely
+   swallows the foot and the whole lower tier of the tower: the tower emerges out of the mist
+   with no stone, rock or wall visible inside the bank. Nothing floats in or on the mist: no
+   wall piece, no tower base, no rock, no ship. The mist is painted in thick dry chalky strokes,
+   not wisps and not smoke.
+3. THE CITY AND HARBOUR ARE SMALL, at the lower right, seen over the mist, partly veiled by it:
+   dark harbour water, the causeway, one or two ships, low houses, the theatre and the temple,
+   with their small warm amber lamps.
+4. THE SKY AND SEA ARE PAINTED, NOT RENDERED. Sky: deep night blue in broad visible brush
+   strokes with a few stars and thin cloud. Sea: dark flat paint with clearly visible directional
+   brush marks and a few soft brushed reflections, no smooth gradient, no mirror finish.
+5. THE STONE IS PAINTED IN LOOSE GOUACHE: individual blocks marked with visible dabs and dragged
+   strokes, uneven tone, rough chalky surface, no clean computer-made texture, no gloss, no
+   sharp 3D-render finish. The same cool moonlight from the same side as the reference, with warm
+   amber lamps in a few window slits.
+
 ## room-pharos-dark
 
 (The eyes room, inside the lighthouse. The existing plate app/assets/rooms/ophtho-dark.jpg has
