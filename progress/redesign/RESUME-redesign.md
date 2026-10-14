@@ -930,3 +930,20 @@ one sheet). Then job 3: one question screen on the seven ui.css parts.
 Slice 4: shots 1-2 (aerial approach, lighthouse pass) and their cloud joins, one join proved
 first. Paint plates (Codex image seat, cap 8/day), Kaggle Wan 2.2 film (quota refresh
 2026-10-17), AI-upscale test on the same run.
+
+## 2026-10-14 - slice 4: shot 2 plate + film approved; cloud join being built
+
+- Plate: paint/shot2-pharos-dark-r2.png (v1 failed the looker: tower 88% tall and cropped,
+  glossy). r2 also failed the looker (mist thin, tower ~75% tall, city fills right half) but the
+  owner said "use it, make the film". 7 of 8 paintings used 2026-10-14.
+- Film: tools/city-film/ai-film/shot2/ (STATUS.md, shot2.py). Two Wan 2.2 clips, seed 23 (b)
+  better. Real-ESRGAN realesr-animevideov3 x2 WORKED on Kaggle (1440x960, 22 s per clip).
+  Quota 4.33 h of 30 used. Clips in "D:/scratch 2026/city-ai/shot2/".
+- The film's mist never hides the tower; a crossfade into the landing ghosts it (mean abs diff
+  37). Owner approved the drop and said "yes, do the mist cover-up": a page-drawn mist layer,
+  fully opaque at the swap. Brief: build/cloud-join-BRIEF.md; status build/cloud-join-STATUS.md.
+  Interim: done==0 visitors get shot 2 + cover + landing on a timer until shot 1 and scroll exist.
+
+### NEXT
+Read build/cloud-join-STATUS.md -> refuter -> send the owner the join recording. Then shot 1
+(aerial approach) plate + film, then scroll-driven dive.

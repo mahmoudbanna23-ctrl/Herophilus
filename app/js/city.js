@@ -22,8 +22,17 @@
    While it plays, the spots are inert; any key, or a click anywhere, skips to the faded-out end,
    and a click on the stage itself does not also open a subject. A click elsewhere (the menu,
    say) skips AND goes through - navigation never waits for the film. Later visits to home in
-   the same page life: the still only. A student with nothing answered: the still only (the
-   scroll dive is a later slice). In-memory flags only; nothing here touches storage. */
+   the same page life: the still only.
+
+   THE FIRST CLOUD JOIN (interim, until shot 1 and the scroll dive exist). A student with nothing
+   answered gets, under the same rules (landscape, >= 768 wide, motion not reduced, first view is
+   home, shot 2 playable through within 1000 ms, any click or key skips): shot2-dark.mp4 (the
+   lighthouse drop, fetched only for them), then a painted cloud cover (.city-cover, one layer above
+   the films, below the spots) that rises to full opacity over the last 0.8 s, a hard swap to the
+   landing under it (the landing is asked for once shot 2 plays and waits paused on frame 0 until it
+   can play), a 0.2 s hold, and a 0.9 s clear as the landing plays. The film's own mist never hides
+   the tower, so a plain crossfade would ghost it and jump in brightness; the cover hides the cut.
+   In-memory flags only; nothing here touches storage. */
 (function(){
   'use strict';
 
@@ -39,8 +48,13 @@
   const PLATE_LAND='assets/city/city-dark.jpg';
   const PLATE_TALL='assets/city/city-dark-tall.jpg';
   const FILM='assets/city/landing-dark.mp4';
+  const LEAD='assets/city/shot2-dark.mp4';   // shot 2, the lighthouse drop (nothing-answered visitors only)
   const FILM_DEADLINE=1000;   // ms to reach canplaythrough, else no film this load
   const FADE_MS=400;
+  const RISE_MS=800;          // the cloud cover rises over the last of shot 2
+  const HOLD_MS=200;          // ...stays full this long once the landing runs
+  const CLEAR_MS=900;         // ...then clears as the landing plays
+  const LAND_WAIT_MS=4000;    // the landing not ready this long after the swap: give up to the still
 
   const reduced=()=>matchMedia('(prefers-reduced-motion:reduce)').matches;
   const upright=()=>matchMedia('(max-aspect-ratio:1/1)').matches;
@@ -117,39 +131,98 @@
   }
 
   /* ---- the landing film ------------------------------------------------------------------ */
+  /* false = no film this load; 'land' = the landing only (the student has answered something);
+     'lead' = shot 2 (the lighthouse drop), the cloud cover, then the landing (nothing answered yet) */
   function eligible(box){
     if(filmGone||!firstWasHome) return false;
-    if(!(parseInt(box.dataset.done,10)>=1)) return false;
     if(reduced()||window.innerWidth<768||upright()) return false;
-    return true;
+    return parseInt(box.dataset.done,10)>=1?'land':'lead';
   }
   /* The film in flight, or null. It outlives a re-render: render() also runs on cloud-sync merges,
      and a student watching must not see a restart or a cut. So when the next view is home again,
      the SAME <video> is parked in <body> (still in the document, so it keeps playing) while the page
      is rebuilt, and mount() sets it into the new box in the same task, before anything is painted.
-     When the next view is anything else it is torn down at once. */
+     When the next view is anything else it is torn down at once. The cloud cover is parked and
+     adopted the same way; its motion is a Web Animation on the element itself, which carries on
+     across the move (a CSS transition would restart). */
   let film=null;   // {park(), adopt(box), destroy()}
 
-  function startFilm(box){
+  function makeVideo(cls){
     const v=document.createElement('video');
-    v.className='city-film';
+    v.className=cls;
     v.muted=true; v.defaultMuted=true; v.playsInline=true; v.preload='auto'; v.tabIndex=-1;
     v.setAttribute('muted',''); v.setAttribute('playsinline',''); v.setAttribute('aria-hidden','true');
-    v.src=FILM;
+    return v;
+  }
+
+  /* The cloud cover: one full-frame painted mist, opaque once risen. It sits above the films and
+     the still's furniture and below the hot-spots. opacity + a slight upward translate only. */
+  function makeCover(){
+    const el=document.createElement('span');
+    el.className='city-cover';
+    el.setAttribute('aria-hidden','true');
+    const anims=[];
+    /* never cancelled until kill(): a later animation sets only what it names, and the earlier one's
+       fill keeps the rest (e.g. a quick fade keeps the translate the rise ended on) */
+    function go(frames,ms,ease){
+      if(!el.animate){
+        const last=frames[frames.length-1];
+        el.style.opacity=last.opacity;
+        return Promise.resolve();
+      }
+      const a=el.animate(frames,{duration:ms,easing:ease,fill:'forwards'});
+      anims.push(a);
+      return a.finished.catch(()=>{});
+    }
+    return {
+      el,
+      alive:true,
+      rise(ms){ return go([{opacity:0,transform:'translateY(8%)'},{opacity:1,transform:'translateY(0)'}],ms,'ease-in') },
+      clear(ms){ return go([{opacity:1,transform:'translateY(0)'},{opacity:0,transform:'translateY(-4%)'}],ms,'ease-out') },
+      fade(ms){ return go([{opacity:parseFloat(getComputedStyle(el).opacity)||0},{opacity:0}],ms,'linear') },
+      kill(){
+        this.alive=false;
+        anims.forEach(a=>{ try{a.cancel()}catch(e){} });
+        el.remove();
+      }
+    };
+  }
+
+  function startFilm(box,withLead){
+    const v=makeVideo('city-film'+(withLead?' queued':''));    // the landing
+    const L=withLead?makeVideo('city-film'):null;               // shot 2, the lighthouse drop
+    const cov=withLead?makeCover():null;
+    const first=L||v;                                           // the one that must be ready to begin
     let host=box;                                   // the box the film sits in now
     let spots=box.querySelector('.city-spots');
     host.insertBefore(v,host.querySelector('.city-plate').nextSibling);
+    if(L) host.insertBefore(L,v.nextSibling);
+    if(cov) host.insertBefore(cov.el,spots);
+    /* the lead is fetched first and alone; the landing is only asked for once the lead is playing,
+       so it cannot slow the lead's one-second chance */
+    (L||v).src=L?LEAD:FILM;
 
-    let timer=0, state='wait';   // wait -> play -> out; or wait -> dropped; destroy() -> gone
-    let parked=false;
+    let timer=0, holdT=0, landT=0, raf=0;
+    let state='wait';   // wait -> play -> out; or wait -> dropped; destroy() -> gone
+                        // with a lead: wait -> lead -> swap -> play -> out
+    let parked=false, rising=false, landReady=false, landWaiting=false, leadIn=!!L;
     const cleanListeners=()=>{
-      clearTimeout(timer);
+      clearTimeout(timer); clearTimeout(holdT); clearTimeout(landT);
+      cancelAnimationFrame(raf);
       document.removeEventListener('click',onClick,true);
       document.removeEventListener('keydown',onKey,true);
     };
+    function dropLead(){
+      if(!leadIn) return;
+      leadIn=false;
+      L.removeAttribute('src'); try{L.load()}catch(e){}
+      L.remove();
+    }
     function unload(){
+      dropLead();
       v.removeAttribute('src'); try{v.load()}catch(e){}
       v.remove();
+      if(cov) cov.kill();
       if(film===api) film=null;
     }
     function drop(){
@@ -158,13 +231,17 @@
       cleanListeners();
       unload();
     }
+    const live=()=>state==='play'||state==='lead'||state==='swap';
     /* Fade to the sharp still, then remove. */
     function finish(){
-      if(state!=='play') return;
+      if(!live()) return;
       state='out';
       cleanListeners();
       try{v.pause()}catch(e){}
+      if(L) try{L.pause()}catch(e){}
       v.classList.add('out');
+      if(leadIn) L.classList.add('out');
+      if(cov&&cov.alive) cov.fade(FADE_MS);
       host.classList.remove('playing');
       setTimeout(()=>{
         if(state!=='out') return;
@@ -173,26 +250,82 @@
       },FADE_MS+40);
     }
     function onClick(e){
-      if(state!=='play') return;
+      if(!live()) return;
       const onStage=!!(e.target&&e.target.closest&&e.target.closest('.city'));
       if(onStage){ e.preventDefault(); e.stopPropagation() }
       finish();
     }
-    function onKey(){ if(state==='play') finish() }
+    function onKey(){ if(live()) finish() }
+    function onError(){
+      if(state==='wait') drop();
+      else if(L&&live()) finish();
+    }
+
+    /* ---- with a lead: shot 2 -> cover rises to full -> hard swap -> landing -> cover clears ---- */
+    let risePromise=null;
+    function startRise(){
+      if(rising) return;
+      rising=true;
+      risePromise=cov.rise(RISE_MS);
+    }
+    function watch(){
+      raf=requestAnimationFrame(watch);
+      if(state!=='lead') return;
+      if(L.duration&&L.currentTime>=L.duration-RISE_MS/1000) startRise();
+    }
+    function leadEnded(){
+      if(state!=='lead') return;
+      state='swap';
+      cancelAnimationFrame(raf);
+      startRise();
+      /* the swap waits for the cover to be fully opaque (the rise's own end) */
+      risePromise.then(()=>{ if(state==='swap') swap() });
+    }
+    function swap(){
+      dropLead();                         // hard swap, under the opaque cover
+      v.classList.remove('queued');
+      landStart();
+    }
+    function landStart(){
+      if(state!=='swap') return;
+      if(!landReady){
+        landWaiting=true;
+        landT=setTimeout(()=>{ if(state==='swap') finish() },LAND_WAIT_MS);
+        return;
+      }
+      landWaiting=false;
+      clearTimeout(landT);
+      const pr=v.play();
+      const go=()=>{
+        if(state!=='swap') return;
+        state='play';
+        holdT=setTimeout(()=>{ if(state==='play'&&cov.alive) cov.clear(CLEAR_MS).then(()=>{ if(cov.alive&&state==='play') cov.kill() }) },HOLD_MS);
+      };
+      if(pr&&pr.then) pr.then(go,()=>{ if(state==='swap') finish() }); else go();
+    }
 
     v.addEventListener('ended',finish);
-    v.addEventListener('error',drop);
-    v.addEventListener('canplaythrough',function(){
+    v.addEventListener('error',L?onError:drop);
+    if(L){
+      L.addEventListener('ended',leadEnded);
+      L.addEventListener('error',onError);
+      v.addEventListener('canplaythrough',function(){
+        landReady=true;
+        if(landWaiting) landStart();
+      },{once:true});
+    }
+    first.addEventListener('canplaythrough',function(){
       if(state!=='wait') return;
       clearTimeout(timer);
-      const pr=v.play();
+      const pr=first.play();
       const begin=()=>{
         if(state!=='wait') return;
-        state='play'; filmGone=true;
+        state=L?'lead':'play'; filmGone=true;
         host.classList.add('playing');
         spots.inert=true;
         document.addEventListener('click',onClick,true);
         document.addEventListener('keydown',onKey,true);
+        if(L){ v.src=FILM; raf=requestAnimationFrame(watch) }
       };
       if(pr&&pr.then) pr.then(begin,drop); else begin();
     },{once:true});
@@ -205,6 +338,8 @@
         if(parked||state==='gone') return;
         parked=true;
         document.body.appendChild(v);
+        if(leadIn) document.body.appendChild(L);
+        if(cov&&cov.alive) document.body.appendChild(cov.el);
         queueMicrotask(()=>{ if(parked) api.destroy() });
       },
       /* the rebuilt home: set the same element into the new box and carry the state over */
@@ -212,7 +347,9 @@
         parked=false;
         host=nb; spots=nb.querySelector('.city-spots');
         nb.insertBefore(v,nb.querySelector('.city-plate').nextSibling);
-        if(state==='play'){ nb.classList.add('playing'); spots.inert=true }
+        if(leadIn) nb.insertBefore(L,v.nextSibling);
+        if(cov&&cov.alive) nb.insertBefore(cov.el,spots);
+        if(live()){ nb.classList.add('playing'); spots.inert=true }
       },
       /* nothing waits for the film: stop at once, drop it for this load */
       destroy(){
@@ -220,6 +357,7 @@
         if(state==='wait') filmGone=true;
         state='gone';
         try{v.pause()}catch(e){}
+        if(L) try{L.pause()}catch(e){}
         if(spots) spots.inert=false;
         if(host) host.classList.remove('playing');
         unload();
@@ -266,8 +404,9 @@
     if(film){
       film.adopt(box);   // a re-render of home mid-film: the same element carries on
     }else if(firstWasHome&&!filmGone){
-      if(eligible(box)){
-        startFilm(box);
+      const mode=eligible(box);
+      if(mode){
+        startFilm(box,mode==='lead');
       }else{
         filmGone=true;   // the one chance of this load went by without a film
       }

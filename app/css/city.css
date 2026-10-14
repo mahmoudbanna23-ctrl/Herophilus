@@ -1,6 +1,6 @@
 /* city.css - the home screen as a painted night city (redesign trial, slice 3).
    Built by js/city.js (cityStageHTML, called from vHome). One stage box holds the plate, the
-   landing film, the mist, the lighthouse glow and the four hot-spots. The box has the plate's
+   landing film, the cloud cover, the mist, the lighthouse glow and the four hot-spots. The box has the plate's
    exact aspect ratio, so every hot-spot percent maps straight onto the painting. It is sized to
    COVER the area under the top bar and anchored to the TOP centre: the lighthouse fire sits 1-6%
    from the top edge, so extra height is cropped from the bottom, never the top.
@@ -38,6 +38,26 @@ body.city-on[data-view="home"] .ambient{display:none}
   opacity:1;transition:opacity .4s linear;pointer-events:none;
 }
 .city-film.out{opacity:0}
+/* a landing waiting its turn behind shot 2 is not shown (it still loads) */
+.city-film.queued{visibility:hidden}
+
+/* ---- the cloud cover (added and removed by city.js, nothing-answered visitors only) ------------
+   One full-frame layer above the films and the still's furniture, below the hot-spots. It is
+   OPAQUE wherever it is shown: soft layered radial gradients over a solid base, every colour taken
+   from the landing film's first frame (mean rgb 80,104,144; lighter sky-side blotches, darker low
+   ones) so it clears into the landing without a brightness jump. It is taller than the stage so
+   its upward travel (translateY, driven by the Web Animations API) never opens a gap. */
+.city-cover{
+  position:absolute;left:0;right:0;top:-12%;height:124%;
+  pointer-events:none;opacity:0;will-change:opacity,transform;
+  background:
+    radial-gradient(ellipse 46% 26% at 24% 22%,rgba(104,124,160,.85),rgba(104,124,160,0) 72%),
+    radial-gradient(ellipse 40% 24% at 74% 30%,rgba(100,120,158,.80),rgba(100,120,158,0) 72%),
+    radial-gradient(ellipse 52% 22% at 50% 52%,rgba(92,114,152,.70),rgba(92,114,152,0) 74%),
+    radial-gradient(ellipse 44% 24% at 18% 74%,rgba(62,90,134,.75),rgba(62,90,134,0) 72%),
+    radial-gradient(ellipse 50% 22% at 82% 84%,rgba(52,82,128,.75),rgba(52,82,128,0) 72%),
+    linear-gradient(180deg,#5a7098 0%,#50688f 48%,#46608a 100%);
+}
 
 /* ---- alive at rest: two mist layers and one breathing glow ------------------------------ */
 .city-mist{
@@ -147,10 +167,12 @@ body.city-on[data-view="home"] .ambient{display:none}
 @media (prefers-reduced-motion:reduce){
   .city-mist{display:none;animation:none}
   .city-glow{display:none}
-  .city-film{display:none}
+  .city-film,.city-cover{display:none}
 }
 body[data-view="quiz"] .city-mist,body[data-view="case"] .city-mist,body[data-view="mock"] .city-mist,
-body[data-view="review"] .city-mist,body[data-view="results"] .city-mist,body[data-view="theory"] .city-mist{display:none}
+body[data-view="review"] .city-mist,body[data-view="results"] .city-mist,body[data-view="theory"] .city-mist,
+body[data-view="quiz"] .city-cover,body[data-view="case"] .city-cover,body[data-view="mock"] .city-cover,
+body[data-view="review"] .city-cover,body[data-view="results"] .city-cover,body[data-view="theory"] .city-cover{display:none}
 
 /* =====================================================================================================
    THE ROOM (js/room.js, the Eyes subject): a painted room with four things to pick. Same stage-box idea
