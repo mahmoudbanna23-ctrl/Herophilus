@@ -1,0 +1,61 @@
+
+(Sharper repaint of the shot 1 base plate, 2026-10-15. Owner: "try a sharper one". Painted with
+SCENE_REF=shot1-sky-dark-c.png (the layout), STYLE_REF2=city-dark-3.png (the finish) and
+COMMON_SECTION=common-city-matte, script paint-city-2ref.sh. Overrides inside this section, because
+common-city-matte pushes softness: "soft broken edges", "painted loosely rather than modelled",
+"painted as soft dabs of warm colour".)
+
+Repaint the layout of the FIRST image as a hand-painted matte gouache and oil painting in exactly
+the finish, palette, crispness and detail density of the SECOND image (the city plate). Keep the
+layout of the first image: the horizon about 40 percent down from the top, a large night sky above
+it, a lighthouse with a small warm fire far to the left on the horizon at about 19 percent from
+the left edge, a thin dark coast line with a few small warm amber lamps trailing to the right of
+it, a low orange glow on the horizon at the right where the city lies beyond, and a thick
+lavender-grey cloud bank filling the lower 45 percent of the picture below the horizon.
+
+PRECEDENCE: where this prompt differs from the first image, this prompt wins; the first image
+gives only the layout, the second gives the finish. Where this prompt differs from the style
+rules below (soft broken edges, painted loosely, soft dabs), this prompt wins: this picture is
+SHARP. Do not ask anything; just paint one image.
+
+FINISH. Crisp, defined brush edges everywhere, fine painted detail, high detail density like the
+second image. NOT soft blurred dabs, NOT blocky smudges, NOT airbrushed, NOT out of focus, NOT
+low-resolution looking. Still matte, dry and chalky, no gloss, no glow halos.
+
+1. THE SKY is deep blue night in confident visible brush strokes with sharp small dot stars, each
+   one a crisp tiny point, and a few crisp thin cloud streaks.
+2. THE LIGHTHOUSE is small but finely painted: individual stone blocks in its tower, a defined
+   fire at the top as a crisp small flame in warm amber, no halo.
+3. THE COAST is a thin dark line with fine detail, and each coast lamp a crisp small amber point
+   with its own tiny reflection on the water, individual lamps, not a smear.
+4. THE WATER at the horizon and between coast and cloud carries fine crisp wave glints in
+   lavender and amber where it shows.
+5. THE CLOUD BANK has sculpted, clearly lit tops with crisp painted edges: lit amber from below,
+   lavender-grey on top, rolling billows with defined highlights and shadows, edges cleanly cut
+   against the sky, not blurred.
+6. The orange glow at the right stays modest and low, painted with defined strokes, not a dawn.
+7. Nothing else: no ships, no birds, no people, no moon, no lens flare, no text.
+
+
+STYLE. A hand-painted film matte painting in gouache and oil: MATTE, dry, chalky surfaces,
+visible confident brushstrokes, soft broken edges, slightly uneven hand-mixed colour. NOT glossy,
+NOT shiny, NOT wet-looking, NOT plastic, no specular highlights, no bloom, no glow halos, no
+computer-game or 3D-render look, not photographic, not flat vector. Use the style reference image
+for its colours, mood and world only, not for its shine. Rich in small believable detail (worn
+stone edges, individual blocks, roof tiles, rigging), painted loosely rather than modelled.
+
+SETTING. Ancient Alexandria, about 300 BC, at night, seen from the air. Normal lens, no fisheye,
+no tilt: vertical lines stay vertical and parallel.
+
+LIGHT. Moonlight and small fires only. Cool night-blue shadows (deep blue, never brown, never pure
+black, every surface keeps visible detail) with small warm amber points of lamp and fire light,
+painted as soft dabs of warm colour, not as glowing bulbs.
+
+HARD RULES.
+- No text of any kind: no letters, numerals, inscriptions, labels, signage or carved writing.
+- No people, no figures, no statues of people, no faces, no hands, no living animals.
+- No frame, no border, no vignette, no watermark, no signature, no neon, no lens flare, no light
+  beam sweeping the sky.
+- No modern objects: nothing electric, printed, plastic or machine-made.
+- Only ONE lighthouse, ONE theatre, ONE temple, ONE garden.
+

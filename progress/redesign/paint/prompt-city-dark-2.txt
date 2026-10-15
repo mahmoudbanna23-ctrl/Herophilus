@@ -1,0 +1,54 @@
+
+(Second try. The first put the lighthouse and theatre at the edges, cut the garden, and let the
+temple dominate. This one fixes the layout by quarters.)
+
+The harbour city of Alexandria at night seen from high in the air, looking steeply down, about
+fifty-five degrees, like a painted bird's-eye map of a place. Only a thin band of sea and night
+sky shows along the very top edge. The picture is a MAP WITH FOUR LANDMARKS. Imagine the picture
+cut into four equal quarters: ONE landmark sits in the middle of EACH quarter. Each landmark is
+large, about one quarter of the picture's width, complete, uncut, and none overlaps another. All
+four have the same importance and the same brightness. Everything between them is low, dark,
+plain and quiet, so the four stand out like four lit islands.
+
+- UPPER LEFT quarter: THE LIGHTHOUSE. It stands on a small rocky island in dark harbour water,
+  joined to the shore by a straight stone causeway. Three tiers: tall square lower tier of pale
+  limestone, shorter eight-sided middle tier, small round top tier with an open ring of columns
+  holding a warm fire glow. Seen whole from rock to fire. Its top is clearly below the top edge.
+  Calm dark water all around it.
+- UPPER RIGHT quarter: THE THEATRE. An open-air Greek theatre seen from above: a clean, crisp
+  half-circle of stepped stone seating, a flat round floor at its centre, a straight low stage
+  wall with a row of columns. A ring of small oil lamps along the top row. Empty. Nothing in
+  front of it, no trees hiding it.
+- LOWER LEFT quarter: THE GARDEN. A square walled garden, clearly a garden and not a building:
+  a plain low wall around it, a square pool in the middle reflecting lamplight, date palms and
+  dark cypress in neat rows, flowering shrubs, hanging lamps. No columns, no pediment, no
+  temple-like gate. The whole wall is visible, well inside the picture.
+- LOWER RIGHT quarter: THE TEMPLE. One columned temple with a triangular pediment and tiled
+  roof on a broad raised stone platform with wide steps, two fire bowls at the foot of the steps.
+
+Between them: low flat-roofed houses kept dark with only a few small amber windows, narrow paved
+streets, a curved quay with two or three anchored wooden ships near the causeway. Thin low mist in
+the streets and on the water. Open plain paved squares and dark water beside each landmark.
+
+LAYOUT RULES. Nothing important within the outer tenth of the picture on any side. Along the
+whole bottom edge runs a plain, calm, empty strip of dark paved quay. Only ONE lighthouse, ONE
+theatre, ONE temple, ONE garden: no second tower, no second temple front anywhere.
+
+
+
+STYLE. The same painted world as the style reference image: smooth, glossy, soft-lit, hand-painted
+3D finish, calm and cinematic, rich in small believable detail (worn stone edges, individual
+blocks, roof tiles, ripples, rigging). Painterly, never photographic, never flat vector.
+
+SETTING. Ancient Alexandria, about 300 BC, at night, seen from the air. Normal lens, no fisheye,
+no tilt: vertical lines stay vertical and parallel.
+
+LIGHT. Moonlight and small fires only. Cool night-blue shadows (deep blue, never brown, never pure
+black, every surface keeps visible detail) with small warm amber points of lamp and fire light.
+
+HARD RULES.
+- No text of any kind: no letters, numerals, inscriptions, labels, signage or carved writing.
+- No people, no figures, no statues of people, no faces, no hands, no living animals.
+- No frame, no border, no vignette, no watermark, no signature, no neon, no lens flare, no light
+  beam sweeping the sky.
+- No modern objects: nothing electric, printed, plastic or machine-made.

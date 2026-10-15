@@ -1,6 +1,6 @@
 /* city.css - the home screen as a painted night city (redesign trial, slice 3).
    Built by js/city.js (cityStageHTML, called from vHome). One stage box holds the plate, the
-   landing film, the cloud cover, the mist, the lighthouse glow and the four hot-spots. The box has the plate's
+   landing film, shot 1, the cloud cover, the mist, the lighthouse glow and the four hot-spots. The box has the plate's
    exact aspect ratio, so every hot-spot percent maps straight onto the painting. It is sized to
    COVER the area under the top bar and anchored to the TOP centre: the lighthouse fire sits 1-6%
    from the top edge, so extra height is cropped from the bottom, never the top.
@@ -40,6 +40,22 @@ body.city-on[data-view="home"] .ambient{display:none}
 .city-film.out{opacity:0}
 /* a landing waiting its turn behind shot 2 is not shown (it still loads) */
 .city-film.queued{visibility:hidden}
+
+/* ---- shot 1: the in-page camera glide (added and removed by city.js, nothing-answered visitors only)
+   A clipped box the size of the stage holding the painted plate and one painted cloud layer; both
+   fill the stage exactly as the films do (cover fit), so every aspect crops the same way. The motion
+   is Web Animations on the two pictures (transform only); the near layer scales about its bottom
+   centre. Sits above the films, below the cloud cover. */
+.city-s1{
+  position:absolute;inset:0;overflow:hidden;
+  opacity:1;transition:opacity .4s linear;pointer-events:none;
+}
+.city-s1.out{opacity:0}
+.city-s1 img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  user-select:none;-webkit-user-drag:none;will-change:transform;
+}
+.city-s1 .s1-near{transform-origin:50% 100%;transform:translateY(35%)}
 
 /* ---- the cloud cover (added and removed by city.js, nothing-answered visitors only) ------------
    One full-frame layer above the films and the still's furniture, below the hot-spots. It is
@@ -240,7 +256,7 @@ body.city-on[data-view="home"] .clep .cl-say{display:none}
 @media (prefers-reduced-motion:reduce){
   .city-mist{display:none;animation:none}
   .city-glow{display:none}
-  .city-film,.city-cover{display:none}
+  .city-film,.city-cover,.city-s1{display:none}
   .city-fire.lit .fi{animation:none}
   .city-tag::after{transition:none}
 }

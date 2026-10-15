@@ -1,0 +1,54 @@
+
+(The eyes room, inside the lighthouse. The existing plate app/assets/rooms/ophtho-dark.jpg has
+none of the four objects - looker 2026-10-14. Painted with SCENE_REF=that file and
+COMMON_SECTION=common-room-matte.)
+
+The same stone room inside the lighthouse at night, the same arched window in the back wall
+showing the night harbour, the same wall lamps, the same camera. THREE changes.
+
+1. FOUR OBJECTS ARE ADDED. Each is large, complete, standing on its own with clear empty floor or
+   wall around it, lit by its own small warm lamp, and recognisable in one glance. None overlaps
+   another. They are the four things a visitor can pick, so they are the stars of the room:
+   - BACK WALL, LEFT of the window: A TALL WOODEN SHELF OF SCROLLS. Open pigeon-hole shelving
+     from floor to above head height, every hole holding rolled papyrus scrolls, their round ends
+     facing us, a few with hanging ribbon ties.
+   - FRONT LEFT, on the floor: A WRITING DESK. A sturdy low wooden table seen at three-quarter
+     angle, with one open papyrus sheet, a reed pen, an ink pot and a small oil lamp on it, and a
+     simple stool beside it.
+   - BACK WALL, RIGHT of the window: A SAND-GLASS ON A STAND. A large hourglass, two clear glass
+     bulbs joined at a narrow neck, pale sand running, held in a turned wooden frame with three
+     posts, on a waist-high stone pedestal.
+   - FRONT RIGHT, on the floor: A CHEST. A big wooden chest with bronze bands and a curved lid,
+     closed, a small lamp on the floor beside it.
+2. THE OLD ORNAMENTS STEP BACK. The round brass mirrors and glass spheres stay only as a few small
+   quiet pieces high on the top shelf and at the far side walls. They must not compete with the
+   four objects, and no glass sphere stands anywhere near the sand-glass.
+3. THE WHOLE ROOM IS REPAINTED BY HAND IN A MATTE FINISH. See the style notes below. The floor is
+   dry worn stone, not a polished mirror.
+
+The middle of the floor, in front of the window, stays completely empty and calm. Nothing
+important within the outer tenth of the picture on any side.
+
+
+
+STYLE. A hand-painted film matte painting in gouache and oil: MATTE, dry, chalky surfaces,
+visible confident brushstrokes, soft broken edges, slightly uneven hand-mixed colour. NOT glossy,
+NOT shiny, NOT wet-looking, NOT plastic, no specular highlights, no bloom, no glow halos, no
+computer-game or 3D-render look, not photographic, not flat vector. Rich in small believable
+detail (worn stone edges, wood grain, frayed papyrus), painted loosely rather than modelled.
+
+SETTING. A room inside the great lighthouse of ancient Alexandria, about 300 BC, at night. Seen
+from standing height, straight on. Normal lens, no fisheye, no tilt: vertical lines stay vertical.
+
+LIGHT. Moonlight through the window and small oil lamps only. Cool night-blue shadows (deep blue,
+never brown, never pure black, every surface keeps visible detail) with small warm amber pools of
+lamp light, painted as soft dabs of warm colour, not as glowing bulbs.
+
+HARD RULES.
+- No text of any kind: no letters, numerals, inscriptions, labels, or writing on the scrolls or
+  the papyrus sheet.
+- No people, no figures, no statues of people, no faces, no hands, no living animals.
+- No frame, no border, no vignette, no watermark, no signature, no neon, no lens flare.
+- No modern objects: nothing electric, printed, plastic or machine-made. No books with spines:
+  scrolls only.
+- Exactly ONE shelf of scrolls, ONE desk, ONE sand-glass, ONE chest.

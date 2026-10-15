@@ -1,0 +1,44 @@
+{
+ "probe": {
+  "wrong": {
+   "bg": "rgb(15, 22, 38)",
+   "bgi": "linear-gradient(rgba(240, 64, 76, 0.17), rgba(240, 64, 76, 0.12)), none",
+   "col": "rgb(242, 232, 213)",
+   "bd": "rgb(229, 72, 90)",
+   "sh": "rgba(229, 72, 90, 0.32) 0px 0px 0px 1px, rgba(229, 72, 90, 0.22) 0px 0px 14px 0px"
+  },
+  "verdict": {
+   "bg": "rgb(15, 22, 38)",
+   "bgi": "linear-gradient(rgba(240, 64, 76, 0.17), rgba(240, 64, 76, 0.12)), none",
+   "col": "rgb(255, 154, 162)",
+   "bd": "rgb(229, 72, 90)",
+   "sh": "rgba(229, 72, 90, 0.26) 0px 7px 18px 0px, rgba(229, 72, 90, 0.32) 0px 0px 0px 1px"
+  },
+  "ltr": {
+   "bg": "rgb(207, 53, 72)",
+   "bgi": "none",
+   "col": "rgb(255, 255, 255)",
+   "bd": "rgb(207, 53, 72)",
+   "sh": "none"
+  },
+  "mark": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "bgi": "none",
+   "col": "rgb(255, 122, 136)",
+   "bd": "rgb(255, 122, 136)",
+   "sh": "none"
+  },
+  "correct": {
+   "bg": "rgba(127, 174, 111, 0.15)",
+   "bgi": "none",
+   "col": "rgb(242, 232, 213)",
+   "bd": "rgb(127, 174, 111)",
+   "sh": "rgba(232, 194, 106, 0.5) 0px 0px 10px 0px"
+  },
+  "vok": null,
+  "card": "rgb(15, 22, 38)",
+  "bad": "#e5485a",
+  "badbg": "rgba(240,64,76,.17)"
+ },
+ "errs": []
+}

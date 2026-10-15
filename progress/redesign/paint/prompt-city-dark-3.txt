@@ -1,0 +1,45 @@
+
+(Owner on city-dark-2: "redo, lighthouse bigger and less glossy". Painted with
+SCENE_REF=city-dark-2.png and COMMON_SECTION=common-city-matte.)
+
+The same city, the same four landmarks in the same four quarters, with THREE changes.
+
+1. THE LIGHTHOUSE IS MUCH BIGGER. It is now the tallest and most striking thing in the picture:
+   about twice as tall and twice as wide as before, filling most of the upper left quarter. Its
+   rocky island and causeway grow with it. It still shows whole, from rock to fire, and there is
+   a clear band of dark sea between its fire and the top edge of the picture: the fire is at
+   least one tenth of the picture height below the top edge. Its three tiers read clearly: tall
+   square lower tier, shorter eight-sided middle tier, small round columned top tier with the
+   warm fire glow.
+2. THE TEMPLE IS A LITTLE SMALLER AND CALMER, no brighter than the theatre, so that the
+   lighthouse leads and the other three are equal.
+3. THE WHOLE PICTURE IS REPAINTED BY HAND IN A MATTE FINISH. See the style notes below. The
+   water in particular is flat dark paint with a few soft brushed reflections, not a shiny
+   mirror with glitter specks.
+
+Everything else stays where it is: theatre upper right, garden lower left, temple lower right,
+low dark houses and streets between, ships by the causeway, thin mist.
+
+
+
+STYLE. A hand-painted film matte painting in gouache and oil: MATTE, dry, chalky surfaces,
+visible confident brushstrokes, soft broken edges, slightly uneven hand-mixed colour. NOT glossy,
+NOT shiny, NOT wet-looking, NOT plastic, no specular highlights, no bloom, no glow halos, no
+computer-game or 3D-render look, not photographic, not flat vector. Use the style reference image
+for its colours, mood and world only, not for its shine. Rich in small believable detail (worn
+stone edges, individual blocks, roof tiles, rigging), painted loosely rather than modelled.
+
+SETTING. Ancient Alexandria, about 300 BC, at night, seen from the air. Normal lens, no fisheye,
+no tilt: vertical lines stay vertical and parallel.
+
+LIGHT. Moonlight and small fires only. Cool night-blue shadows (deep blue, never brown, never pure
+black, every surface keeps visible detail) with small warm amber points of lamp and fire light,
+painted as soft dabs of warm colour, not as glowing bulbs.
+
+HARD RULES.
+- No text of any kind: no letters, numerals, inscriptions, labels, signage or carved writing.
+- No people, no figures, no statues of people, no faces, no hands, no living animals.
+- No frame, no border, no vignette, no watermark, no signature, no neon, no lens flare, no light
+  beam sweeping the sky.
+- No modern objects: nothing electric, printed, plastic or machine-made.
+- Only ONE lighthouse, ONE theatre, ONE temple, ONE garden.

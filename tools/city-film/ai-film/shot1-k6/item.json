@@ -1,0 +1,8 @@
+{
+  "slug": "hero-city-shot1-k6",
+  "script": "shot1.py",
+  "inputs": ["shot1-sky-dark-k6-720x480.jpg"],
+  "gpu": true,
+  "internet": true,
+  "timeoutSec": 4500
+}

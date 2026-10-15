@@ -359,3 +359,112 @@ HARD RULES.
 - No modern objects: nothing electric, printed, plastic or machine-made. No books with spines:
   scrolls only.
 - Exactly ONE shelf of scrolls, ONE desk, ONE sand-glass, ONE chest.
+
+## shot1-sky-dark-c
+
+(Base plate of shot 1 for the layered camera move, 2026-10-15. Painted with
+SCENE_REF=kaggle/shot1-sky-dark-k8.png (the layout), STYLE_REF2=city-dark-3.png (the finish) and
+COMMON_SECTION=common-city-matte, script paint-city-2ref.sh.)
+
+Repaint the layout of the FIRST image as a hand-painted matte gouache and oil painting in exactly
+the finish, palette and brushwork of the SECOND image (the city plate): the same chalky dry paint,
+the same confident visible strokes, the same deep blue night and the same soft amber dabs. Keep
+the layout of the first image: the horizon about 40 percent down from the top, a large night sky
+above it with about ten plain dot stars, a very small warm spark of fire far to the left on the
+horizon at about 19 percent from the left edge, a thin dark coast line with a few small warm amber
+lamps trailing to the right of the spark, a soft orange glow low on the horizon at the right where
+the city lies beyond, and a thick lavender-grey cloud bank filling the lower 45 percent of the
+picture below the horizon.
+
+PRECEDENCE: where this prompt differs from the first image, this prompt wins; the first image
+gives only the layout, the second gives the finish. Do not ask anything; just paint one image.
+
+1. THE SKY is deep blue night in broad visible brush strokes, a few plain dot stars, a few faint
+   soft cloud streaks, matte and chalky, no glow, no moon disc.
+2. THE CLOUD BANK has a TOP EDGE THAT IS SOFT AND BROKEN, torn and rolling, with wisps lifting off
+   it and no hard line, because other cloud layers will later be laid over this edge. Lit faintly
+   from below by warm amber, lavender-grey on top.
+3. THE SPARK is small and warm, a soft dab of fire only, no tower detail, no halo.
+4. The orange glow at the right stays modest, a low warm smudge, not a dawn.
+5. Nothing else: no ships, no birds, no people, no moon, no lens flare, no text.
+
+## shot1-cloud-mid
+
+(Middle cloud layer for shot 1, to be laid over the base plate, 2026-10-15. Painted with
+ROOM_REF=shot1-sky-dark-c.png as palette and brushwork reference and
+COMMON_SECTION=common-city-matte.)
+
+ONLY CLOUD, on a FLAT PURE BLACK BACKGROUND (every pixel that is not cloud is pure black,
+#000000, with no stars, no sea, no coast, no sky colour, no gradient). Match the finish, palette
+and brushwork of the reference picture: matte chalky gouache, lavender-grey cloud lit faintly
+from below by warm amber, in the same night light. Do not ask anything; just paint one image.
+
+One broad cloud bank running the full width of the picture, rolling and heavy. Its TOP EDGE sits
+about 45 percent of the way down from the top of the picture, SOFT AND BROKEN, with torn rolling
+shapes and a few loose wisps lifting off it, never a hard line. Below that edge the bank is
+dense and fills the picture down to the bottom edge, darkening slightly toward the bottom. The
+bank is a separate layer: it is the cloud only, with the black background above its top edge
+showing through everywhere there is no cloud.
+
+Nothing else: no stars, no sea, no coast, no lamps, no ships, no birds, no people, no moon, no
+lens flare, no text.
+
+## shot1-cloud-near
+
+(Near cloud layer for shot 1, rises to cover the whole frame, 2026-10-15. Painted with
+ROOM_REF=shot1-sky-dark-c.png as palette and brushwork reference and
+COMMON_SECTION=common-city-matte.)
+
+ONLY CLOUD, on a FLAT PURE BLACK BACKGROUND (every pixel that is not cloud is pure black,
+#000000, with no stars, no sea, no coast, no sky colour, no gradient). Match the finish, palette
+and brushwork of the reference picture: matte chalky gouache, lavender-grey cloud lit faintly
+from below by warm amber, in the same night light. Do not ask anything; just paint one image.
+
+Big soft wisps and billows of cloud, much larger and closer to the viewer than a distant bank,
+filling the LOWER HALF of the picture. Sparse at about the middle of the picture, with torn soft
+broken edges and black showing between the wisps, and growing steadily DENSER toward the bottom,
+until the bottom third is solid cloud with no black showing. This layer will rise and cover the
+whole frame, so the cloud must be thick and opaque at the bottom and soft, feathery and see-through
+toward its upper edge.
+
+Nothing else: no stars, no sea, no coast, no lamps, no ships, no birds, no people, no moon, no
+lens flare, no text.
+
+## shot1-sky-dark-d
+
+(Sharper repaint of the shot 1 base plate, 2026-10-15. Owner: "try a sharper one". Painted with
+SCENE_REF=shot1-sky-dark-c.png (the layout), STYLE_REF2=city-dark-3.png (the finish) and
+COMMON_SECTION=common-city-matte, script paint-city-2ref.sh. Overrides inside this section, because
+common-city-matte pushes softness: "soft broken edges", "painted loosely rather than modelled",
+"painted as soft dabs of warm colour".)
+
+Repaint the layout of the FIRST image as a hand-painted matte gouache and oil painting in exactly
+the finish, palette, crispness and detail density of the SECOND image (the city plate). Keep the
+layout of the first image: the horizon about 40 percent down from the top, a large night sky above
+it, a lighthouse with a small warm fire far to the left on the horizon at about 19 percent from
+the left edge, a thin dark coast line with a few small warm amber lamps trailing to the right of
+it, a low orange glow on the horizon at the right where the city lies beyond, and a thick
+lavender-grey cloud bank filling the lower 45 percent of the picture below the horizon.
+
+PRECEDENCE: where this prompt differs from the first image, this prompt wins; the first image
+gives only the layout, the second gives the finish. Where this prompt differs from the style
+rules below (soft broken edges, painted loosely, soft dabs), this prompt wins: this picture is
+SHARP. Do not ask anything; just paint one image.
+
+FINISH. Crisp, defined brush edges everywhere, fine painted detail, high detail density like the
+second image. NOT soft blurred dabs, NOT blocky smudges, NOT airbrushed, NOT out of focus, NOT
+low-resolution looking. Still matte, dry and chalky, no gloss, no glow halos.
+
+1. THE SKY is deep blue night in confident visible brush strokes with sharp small dot stars, each
+   one a crisp tiny point, and a few crisp thin cloud streaks.
+2. THE LIGHTHOUSE is small but finely painted: individual stone blocks in its tower, a defined
+   fire at the top as a crisp small flame in warm amber, no halo.
+3. THE COAST is a thin dark line with fine detail, and each coast lamp a crisp small amber point
+   with its own tiny reflection on the water, individual lamps, not a smear.
+4. THE WATER at the horizon and between coast and cloud carries fine crisp wave glints in
+   lavender and amber where it shows.
+5. THE CLOUD BANK has sculpted, clearly lit tops with crisp painted edges: lit amber from below,
+   lavender-grey on top, rolling billows with defined highlights and shadows, edges cleanly cut
+   against the sky, not blurred.
+6. The orange glow at the right stays modest and low, painted with defined strokes, not a dawn.
+7. Nothing else: no ships, no birds, no people, no moon, no lens flare, no text.

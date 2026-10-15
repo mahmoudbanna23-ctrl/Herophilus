@@ -1,0 +1,148 @@
+{
+  "elapsed_s": 491.3606414794922,
+  "jobs": {
+    "shot1-sky-dark-k5": {
+      "name": "shot1-sky-dark-k5",
+      "rung": "klein-fp16",
+      "model": "black-forest-labs/FLUX.2-klein-4B",
+      "prompt": "Paint a NEW picture. Two reference pictures are given. Take from them only the painting style, the colour palette and the matte finish. Do NOT copy the layout of either: this picture has no city, no harbour and no near tall tower. Palette as in the references: deep indigo and navy sky painted in broad dry gouache strokes with clearly visible stroke direction, warm amber lamp light, and soft lavender-grey and slate tones in the cloud, never one flat cold blue. A hand-painted film matte painting in gouache of ancient Alexandria, about 300 BC, at night, seen from a very high camera hanging in the night air far above the open sea, looking out and down toward the far coast. The horizon is HIGH in the frame, about 40 percent down from the top edge. Sky: indigo and navy with visible brush direction, faint soft layered cloud, a few stars that are plain tiny round dots only, no cross shapes, no sparkles, no moon disc. The distant coast is only a thin, dark, low line along the horizon, with a faint warm amber haze lying along it. A few tiny warm amber lamps sit on the coast as plain round dabs of different sizes, irregularly spaced, clustered closer together toward the lighthouse on the left and sparser toward the right. In the left third of the coast, one small warm amber lighthouse with a faint glow. Just below the coast line, a narrow band of dark flat sea. Below that, filling the lower half of the picture and lying between the camera and the coast, a thick bank of cloud made of broad, soft, rounded gouache masses, lavender-grey and slate-blue with warm grey where the coast glow touches them, softly blended edges, no outlines, no curls, no swirls, no scalloped waves. MATTE, dry, chalky, visible confident brushstrokes. Nothing else. Avoid: photo, 3D render, glossy, oil pastel, cartoon, curls, swirls, scalloped clouds, cross-shaped star glints, sparkles, evenly spaced beads of lights, text, birds, moon disc, lens flare, people, ships.",
+      "ref": [
+        "city-dark-3.png",
+        "shot2-pharos-dark-r2.png"
+      ],
+      "seed": 5,
+      "w": 1536,
+      "h": 1024,
+      "steps": 4,
+      "guidance_scale": 1.0,
+      "transformer_dtype": "fp16",
+      "vae_dtype": "fp16",
+      "ok": true,
+      "denoise_s": 51.51400399208069,
+      "pass_seconds": [
+        2.501008987426758,
+        11.404181480407715,
+        11.916845321655273,
+        12.489650249481201
+      ],
+      "latent_finite": true,
+      "decode_finite": true,
+      "size": [
+        1536,
+        1024
+      ],
+      "mean": 67.65863037109375,
+      "std": 35.97953414916992,
+      "total_s": 63.12018322944641,
+      "peak_gpu_gib": 9.22
+    },
+    "shot1-sky-dark-k6": {
+      "name": "shot1-sky-dark-k6",
+      "rung": "klein-fp16",
+      "model": "black-forest-labs/FLUX.2-klein-4B",
+      "prompt": "Paint a NEW picture. Two reference pictures are given. Take from them only the painting style, the colour palette and the matte finish. Do NOT copy the layout of either: this picture has no city, no harbour and no near tall tower. Palette as in the references: deep indigo and navy sky painted in broad dry gouache strokes with clearly visible stroke direction, warm amber lamp light, and soft lavender-grey and slate tones in the cloud, never one flat cold blue. A hand-painted film matte painting in gouache of ancient Alexandria, about 300 BC, at night, seen from a very high camera hanging in the night air far above the open sea, looking out and down toward the far coast. The horizon is HIGH in the frame, about 40 percent down from the top edge. Sky: indigo and navy with visible brush direction, faint soft layered cloud, a few stars that are plain tiny round dots only, no cross shapes, no sparkles, no moon disc. The distant coast is only a thin, dark, low line along the horizon, with a faint warm amber haze lying along it. A few tiny warm amber lamps sit on the coast as plain round dabs of different sizes, irregularly spaced, clustered closer together toward the lighthouse on the left and sparser toward the right. In the left third of the coast, one small warm amber lighthouse with a faint glow. Just below the coast line, a narrow band of dark flat sea. Below that, filling the lower half of the picture and lying between the camera and the coast, a thick bank of cloud made of broad, soft, rounded gouache masses, lavender-grey and slate-blue with warm grey where the coast glow touches them, softly blended edges, no outlines, no curls, no swirls, no scalloped waves. MATTE, dry, chalky, visible confident brushstrokes. Nothing else. Avoid: photo, 3D render, glossy, oil pastel, cartoon, curls, swirls, scalloped clouds, cross-shaped star glints, sparkles, evenly spaced beads of lights, text, birds, moon disc, lens flare, people, ships.",
+      "ref": [
+        "city-dark-3.png",
+        "shot2-pharos-dark-r2.png"
+      ],
+      "seed": 6,
+      "w": 1536,
+      "h": 1024,
+      "steps": 4,
+      "guidance_scale": 1.0,
+      "transformer_dtype": "fp16",
+      "vae_dtype": "fp16",
+      "ok": true,
+      "denoise_s": 59.476901054382324,
+      "pass_seconds": [
+        2.1033120155334473,
+        13.66970181465149,
+        13.979734182357788,
+        15.39046049118042
+      ],
+      "latent_finite": true,
+      "decode_finite": true,
+      "size": [
+        1536,
+        1024
+      ],
+      "mean": 67.02867126464844,
+      "std": 34.611263275146484,
+      "total_s": 71.36072182655334,
+      "peak_gpu_gib": 9.23
+    },
+    "shot1-sky-dark-k7": {
+      "name": "shot1-sky-dark-k7",
+      "rung": "klein-fp16",
+      "model": "black-forest-labs/FLUX.2-klein-4B",
+      "prompt": "Paint a NEW picture. Two reference pictures are given. Take from them only the painting style, the colour palette and the matte finish. Do NOT copy the layout of either: this picture has no city, no harbour and no near tall tower. Palette as in the references: deep indigo and navy sky painted in broad dry gouache strokes with clearly visible stroke direction, warm amber lamp light, and soft lavender-grey and slate tones in the cloud, never one flat cold blue. A hand-painted film matte painting in gouache of ancient Alexandria, about 300 BC, at night, seen from a very high camera hanging in the night air far above the open sea, looking out and down toward the far coast. The horizon is HIGH in the frame, about 40 percent down from the top edge. Sky: indigo and navy with visible brush direction, faint soft layered cloud, a few stars that are plain tiny round dots only, no cross shapes, no sparkles, no moon disc. The distant coast is only a thin, dark, low line along the horizon, with a faint warm amber haze lying along it. A few tiny warm amber lamps sit on the coast as plain round dabs of different sizes, irregularly spaced, clustered closer together toward the lighthouse on the left and sparser toward the right. In the left third of the coast, one small warm amber lighthouse with a faint glow. Just below the coast line, a narrow band of dark flat sea. Below that, filling the lower half of the picture and lying between the camera and the coast, a thick bank of cloud made of broad, soft, rounded gouache masses, lavender-grey and slate-blue with warm grey where the coast glow touches them, softly blended edges, no outlines, no curls, no swirls, no scalloped waves. MATTE, dry, chalky, visible confident brushstrokes. Nothing else. Avoid: photo, 3D render, glossy, oil pastel, cartoon, curls, swirls, scalloped clouds, cross-shaped star glints, sparkles, evenly spaced beads of lights, text, birds, moon disc, lens flare, people, ships.",
+      "ref": [
+        "city-dark-3.png",
+        "shot2-pharos-dark-r2.png"
+      ],
+      "seed": 7,
+      "w": 1536,
+      "h": 1024,
+      "steps": 4,
+      "guidance_scale": 1.0,
+      "transformer_dtype": "fp16",
+      "vae_dtype": "fp16",
+      "ok": true,
+      "denoise_s": 60.73105430603027,
+      "pass_seconds": [
+        2.1432788372039795,
+        13.677245616912842,
+        15.371861696243286,
+        15.112102270126343
+      ],
+      "latent_finite": true,
+      "decode_finite": true,
+      "size": [
+        1536,
+        1024
+      ],
+      "mean": 65.50418090820312,
+      "std": 30.966093063354492,
+      "total_s": 72.31242656707764,
+      "peak_gpu_gib": 9.23
+    },
+    "shot1-sky-dark-k8": {
+      "name": "shot1-sky-dark-k8",
+      "rung": "klein-fp16",
+      "model": "black-forest-labs/FLUX.2-klein-4B",
+      "prompt": "Paint a NEW picture. Two reference pictures are given. Take from them only the painting style, the colour palette and the matte finish. Do NOT copy the layout of either: this picture has no city, no harbour and no near tall tower. Palette as in the references: deep indigo and navy sky painted in broad dry gouache strokes with clearly visible stroke direction, warm amber lamp light, and soft lavender-grey and slate tones in the cloud, never one flat cold blue. A hand-painted film matte painting in gouache of ancient Alexandria, about 300 BC, at night, seen from a very high camera hanging in the night air far above the open sea, looking out and down toward the far coast. The horizon is HIGH in the frame, about 40 percent down from the top edge. Sky: indigo and navy with visible brush direction, faint soft layered cloud, a few stars that are plain tiny round dots only, no cross shapes, no sparkles, no moon disc. The distant coast is only a thin, dark, low line along the horizon, with a faint warm amber haze lying along it. A few tiny warm amber lamps sit on the coast as plain round dabs of different sizes, irregularly spaced, clustered closer together toward the lighthouse on the left and sparser toward the right. In the left third of the coast, one small warm amber lighthouse with a faint glow. Just below the coast line, a narrow band of dark flat sea. Below that, filling the lower half of the picture and lying between the camera and the coast, a thick bank of cloud made of broad, soft, rounded gouache masses, lavender-grey and slate-blue with warm grey where the coast glow touches them, softly blended edges, no outlines, no curls, no swirls, no scalloped waves. MATTE, dry, chalky, visible confident brushstrokes. Nothing else. Avoid: photo, 3D render, glossy, oil pastel, cartoon, curls, swirls, scalloped clouds, cross-shaped star glints, sparkles, evenly spaced beads of lights, text, birds, moon disc, lens flare, people, ships.",
+      "ref": [
+        "city-dark-3.png",
+        "shot2-pharos-dark-r2.png"
+      ],
+      "seed": 8,
+      "w": 1536,
+      "h": 1024,
+      "steps": 4,
+      "guidance_scale": 1.0,
+      "transformer_dtype": "fp16",
+      "vae_dtype": "fp16",
+      "ok": true,
+      "denoise_s": 59.173003911972046,
+      "pass_seconds": [
+        2.1122093200683594,
+        13.80690050125122,
+        14.961599349975586,
+        14.332456111907959
+      ],
+      "latent_finite": true,
+      "decode_finite": true,
+      "size": [
+        1536,
+        1024
+      ],
+      "mean": 72.38063049316406,
+      "std": 30.829118728637695,
+      "total_s": 70.62838768959045,
+      "peak_gpu_gib": 9.23
+    }
+  },
+  "rung_used": "klein-fp16",
+  "model": "black-forest-labs/FLUX.2-klein-4B, diffusers 0.41.0 Flux2KleinPipeline, 2 references",
+  "kaggle_run": "hero-paint launch 2, 2026-10-14, 581 s wall"
+}

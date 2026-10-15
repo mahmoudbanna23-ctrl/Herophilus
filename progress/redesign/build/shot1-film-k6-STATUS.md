@@ -1,0 +1,4 @@
+# Shot 1 film from plate k6 - STATUS
+- 2026-10-15 folder tools/city-film/ai-film/shot1-k6 made from shot1 (no out/). Plate k6 resized 1536x1024 -> 720x480 (lanczos, q95). shot1.py: plate name + prompt changed, seeds 11/24 kept. item.json slug hero-city-shot1-k6.
+- Quota before launch: used 5.17 h. Launch 1 of 2: cap arg 6.45 (=used+1.25 worst case; expected spend ~0.63). out = shot1-k6/out, runner.log there.
+- Launch 1 finished ok. Launches used 1 of 2. Outputs in tools/city-film/ai-film/shot1-k6/out/: up2x-a.mp4 / up2x-b.mp4 (1440x960, 81 f, 24 fps), preview-{a,b}-720.mp4 (re-encoded from raw-rise), still-up-{a,b}-{first,mid,last}.png (frames 0/40/80 of up2x). Luma YAVG f0/20/40/60/80: a 71.6/76.3/79.6/85.8/90.0, b 71.2/76.8/80.4/86.5/91.6 (rising, not black); first-vs-last mean abs diff a 26.8 (not frozen). Looker judges the rest.

@@ -1,0 +1,43 @@
+{
+  "_note": "Round 2 of shot1-sky-dark (looker verdict shot1-kaggle-LOOK.md): keep k1 layout; fix palette (indigo/navy + warm amber + faint amber haze on the far coast), clouds as broad soft gouache masses not curls, stars and lamps as plain dots, lamps irregular and clustered toward the Pharos side. Two references: city-dark-3 (style) and shot2-pharos-dark-r2 (the plate must cut into shot 2). Round 1 job list: jobs-round1.json.",
+  "jobs": [
+    {
+      "name": "shot1-sky-dark-k5",
+      "ref": ["city-dark-3.png", "shot2-pharos-dark-r2.png"],
+      "seed": 5,
+      "w": 1536,
+      "h": 1024,
+      "steps": 4,
+      "prompt": "Paint a NEW picture. Two reference pictures are given. Take from them only the painting style, the colour palette and the matte finish. Do NOT copy the layout of either: this picture has no city, no harbour and no near tall tower. Palette as in the references: deep indigo and navy sky painted in broad dry gouache strokes with clearly visible stroke direction, warm amber lamp light, and soft lavender-grey and slate tones in the cloud, never one flat cold blue. A hand-painted film matte painting in gouache of ancient Alexandria, about 300 BC, at night, seen from a very high camera hanging in the night air far above the open sea, looking out and down toward the far coast. The horizon is HIGH in the frame, about 40 percent down from the top edge. Sky: indigo and navy with visible brush direction, faint soft layered cloud, a few stars that are plain tiny round dots only, no cross shapes, no sparkles, no moon disc. The distant coast is only a thin, dark, low line along the horizon, with a faint warm amber haze lying along it. A few tiny warm amber lamps sit on the coast as plain round dabs of different sizes, irregularly spaced, clustered closer together toward the lighthouse on the left and sparser toward the right. In the left third of the coast, one small warm amber lighthouse with a faint glow. Just below the coast line, a narrow band of dark flat sea. Below that, filling the lower half of the picture and lying between the camera and the coast, a thick bank of cloud made of broad, soft, rounded gouache masses, lavender-grey and slate-blue with warm grey where the coast glow touches them, softly blended edges, no outlines, no curls, no swirls, no scalloped waves. MATTE, dry, chalky, visible confident brushstrokes. Nothing else.",
+      "prompt_short": "hand-painted matte gouache night painting, very high camera, high horizon, indigo navy sky with visible brush strokes, thin dark distant coast with faint amber haze and a few tiny irregular warm amber lamps clustered at left, small lighthouse at left, thick broad soft lavender-grey cloud masses in the lower half",
+      "negative": "photo, 3D render, glossy, oil pastel, cartoon, curls, swirls, scalloped clouds, cross-shaped star glints, sparkles, evenly spaced beads of lights, text, birds, moon disc, lens flare, people, ships"
+    },
+    {
+      "name": "shot1-sky-dark-k6",
+      "ref": ["city-dark-3.png", "shot2-pharos-dark-r2.png"],
+      "seed": 6,
+      "w": 1536,
+      "h": 1024,
+      "steps": 4,
+      "same_as": "shot1-sky-dark-k5"
+    },
+    {
+      "name": "shot1-sky-dark-k7",
+      "ref": ["city-dark-3.png", "shot2-pharos-dark-r2.png"],
+      "seed": 7,
+      "w": 1536,
+      "h": 1024,
+      "steps": 4,
+      "same_as": "shot1-sky-dark-k5"
+    },
+    {
+      "name": "shot1-sky-dark-k8",
+      "ref": ["city-dark-3.png", "shot2-pharos-dark-r2.png"],
+      "seed": 8,
+      "w": 1536,
+      "h": 1024,
+      "steps": 4,
+      "same_as": "shot1-sky-dark-k5"
+    }
+  ]
+}

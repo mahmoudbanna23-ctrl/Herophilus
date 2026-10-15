@@ -1,0 +1,51 @@
+
+(Base plate of shot 1 for the layered camera move, 2026-10-15. Painted with
+SCENE_REF=kaggle/shot1-sky-dark-k8.png (the layout), STYLE_REF2=city-dark-3.png (the finish) and
+COMMON_SECTION=common-city-matte, script paint-city-2ref.sh.)
+
+Repaint the layout of the FIRST image as a hand-painted matte gouache and oil painting in exactly
+the finish, palette and brushwork of the SECOND image (the city plate): the same chalky dry paint,
+the same confident visible strokes, the same deep blue night and the same soft amber dabs. Keep
+the layout of the first image: the horizon about 40 percent down from the top, a large night sky
+above it with about ten plain dot stars, a very small warm spark of fire far to the left on the
+horizon at about 19 percent from the left edge, a thin dark coast line with a few small warm amber
+lamps trailing to the right of the spark, a soft orange glow low on the horizon at the right where
+the city lies beyond, and a thick lavender-grey cloud bank filling the lower 45 percent of the
+picture below the horizon.
+
+PRECEDENCE: where this prompt differs from the first image, this prompt wins; the first image
+gives only the layout, the second gives the finish. Do not ask anything; just paint one image.
+
+1. THE SKY is deep blue night in broad visible brush strokes, a few plain dot stars, a few faint
+   soft cloud streaks, matte and chalky, no glow, no moon disc.
+2. THE CLOUD BANK has a TOP EDGE THAT IS SOFT AND BROKEN, torn and rolling, with wisps lifting off
+   it and no hard line, because other cloud layers will later be laid over this edge. Lit faintly
+   from below by warm amber, lavender-grey on top.
+3. THE SPARK is small and warm, a soft dab of fire only, no tower detail, no halo.
+4. The orange glow at the right stays modest, a low warm smudge, not a dawn.
+5. Nothing else: no ships, no birds, no people, no moon, no lens flare, no text.
+
+
+
+STYLE. A hand-painted film matte painting in gouache and oil: MATTE, dry, chalky surfaces,
+visible confident brushstrokes, soft broken edges, slightly uneven hand-mixed colour. NOT glossy,
+NOT shiny, NOT wet-looking, NOT plastic, no specular highlights, no bloom, no glow halos, no
+computer-game or 3D-render look, not photographic, not flat vector. Use the style reference image
+for its colours, mood and world only, not for its shine. Rich in small believable detail (worn
+stone edges, individual blocks, roof tiles, rigging), painted loosely rather than modelled.
+
+SETTING. Ancient Alexandria, about 300 BC, at night, seen from the air. Normal lens, no fisheye,
+no tilt: vertical lines stay vertical and parallel.
+
+LIGHT. Moonlight and small fires only. Cool night-blue shadows (deep blue, never brown, never pure
+black, every surface keeps visible detail) with small warm amber points of lamp and fire light,
+painted as soft dabs of warm colour, not as glowing bulbs.
+
+HARD RULES.
+- No text of any kind: no letters, numerals, inscriptions, labels, signage or carved writing.
+- No people, no figures, no statues of people, no faces, no hands, no living animals.
+- No frame, no border, no vignette, no watermark, no signature, no neon, no lens flare, no light
+  beam sweeping the sky.
+- No modern objects: nothing electric, printed, plastic or machine-made.
+- Only ONE lighthouse, ONE theatre, ONE temple, ONE garden.
+

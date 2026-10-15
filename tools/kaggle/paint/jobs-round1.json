@@ -1,0 +1,43 @@
+{
+  "_note": "shot1-sky-dark, camera raised per looker 2026-10-14 (shot1-plate-LOOK.md): horizon 40-45% from top, thin dark coast with few tiny lamps, Pharos a small warm spark on the LEFT, thick cloud bank BELOW the horizon between camera and coast. Style words from prompts-city.md common-city-matte.",
+  "jobs": [
+    {
+      "name": "shot1-sky-dark-k1",
+      "ref": "city-dark-3.png",
+      "seed": 1,
+      "w": 1536,
+      "h": 1024,
+      "steps": 4,
+      "prompt": "Paint a NEW picture. Use the reference picture only for its painting style, night palette, lamp colour and matte finish, not for its composition: nothing in the reference is to be copied, there is no city, no harbour and no tall tower in this picture. A hand-painted film matte painting in gouache and oil of ancient Alexandria, about 300 BC, at night, seen from a very high camera hanging in the night air far above the open sea, looking out and down toward the far coast. The horizon is HIGH in the frame, about 40 to 45 percent down from the top edge. Above it, deep night-blue sky in broad visible brush strokes, a few small stars, faint soft layered cloud, no moon disc. On the horizon the distant coast is only a thin, dark, low line with a few tiny warm amber lamps along it, painted as soft dabs, not a lit city. In the left third of that coast, one small warm amber spark of fire is the lighthouse, tiny, with no tower detail. Just below the coast line lies a narrow band of dark flat sea. Below that, filling the whole lower half of the picture and lying between the camera and the coast, is a thick, heavy, opaque bank of cloud, full width, painted in thick dry chalky strokes with a soft rolling top edge and cool blue-grey shadows. MATTE, dry, chalky surfaces, visible confident gouache brushstrokes, soft broken edges, slightly uneven hand-mixed colour, cool night-blue shadows, warm amber only in the tiny lamps. Nothing else: no ships, no people, no text.",
+      "prompt_short": "hand-painted matte gouache painting, night, very high camera, high horizon, thin dark distant coast with a few tiny warm amber lamps, one small warm fire spark of a lighthouse at left, thick heavy cloud bank filling the lower half, deep blue night sky with few stars, chalky brushstrokes",
+      "negative": "photo, photograph, 3D render, glossy, shiny, text, letters, birds, moon disc, full moon, lens flare, people, ships, bright lit city, tall tower, harbour"
+    },
+    {
+      "name": "shot1-sky-dark-k2",
+      "ref": "city-dark-3.png",
+      "seed": 2,
+      "w": 1536,
+      "h": 1024,
+      "steps": 4,
+      "same_as": "shot1-sky-dark-k1"
+    },
+    {
+      "name": "shot1-sky-dark-k3",
+      "ref": "city-dark-3.png",
+      "seed": 3,
+      "w": 1536,
+      "h": 1024,
+      "steps": 4,
+      "same_as": "shot1-sky-dark-k1"
+    },
+    {
+      "name": "shot1-sky-dark-k4",
+      "ref": "city-dark-3.png",
+      "seed": 4,
+      "w": 1536,
+      "h": 1024,
+      "steps": 4,
+      "same_as": "shot1-sky-dark-k1"
+    }
+  ]
+}

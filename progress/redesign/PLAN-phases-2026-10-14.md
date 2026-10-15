@@ -48,6 +48,11 @@ What is open right now:
    - **Trial gate:** if no Kaggle plate matches the city's painted look, paintings fall back to Codex (8 a day). The owner is told plainly.
 3. **Owner picks** the plate.
 4. **Shot 1 film:** two seeds, then Real-ESRGAN x2. The owner picks the seed.
+   - **2026-10-15, superseded:** the owner rejected the films from both k8 and k6. Style and sharpness are far from the city painting, so the paint gate failed.
+   - **New route (owner yes):**
+     - Codex paints a base plate plus two cloud layers at full size. Brief: `build/shot1-layers-paint-BRIEF.md`.
+     - The page glides a camera over these layers, then the existing cloud cover hands over to shot 2.
+     - There is no AI film for shot 1.
 5. **Join (page code, local):**
    - Encode `app/assets/city/shot1-dark.mp4` at 1350x900.
    - Generalise the cover chain in `city.js` to a list of films. Fix the stale comment at `city.js:15`.

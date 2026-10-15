@@ -1,0 +1,43 @@
+
+A reading hall inside the ancient Library of Alexandria, late morning, seen straight-on from the
+middle of the floor. The far wall fills the whole picture.
+
+The far wall holds FOUR tall arched alcoves in ONE evenly spaced row: identical size, identical
+gaps, perfectly symmetric about the centre line, all four fully visible with a clear margin of wall
+at the far left and far right. Slim engaged stone pilasters stand between the alcoves.
+
+Each alcove, top to bottom:
+1. a round arch;
+2. a small unlit bronze oil lamp hanging in the arch;
+3. the upper half: pigeonhole shelves packed with papyrus scrolls;
+4. at mid height a stone ledge carrying ONE object, clearly lit;
+5. the lower third: a plain, smooth, empty stone panel in mid-tone sand, evenly lit, with no
+   carving, no object and no pattern. It must stay empty — a label is added later in code.
+
+The four objects, left to right:
+1. a bronze ear trumpet (a flared listening horn) lying beside a small bronze speculum;
+2. a clear crystal reading sphere on a small bronze stand, catching the sun;
+3. a carved white marble anatomical model of a human brain on a low plinth;
+4. a child's painted wooden toy horse on four wheels beside a small terracotta feeding cup.
+
+Above the arches runs a plain band of calm, unadorned stone (about the top 14% of the picture).
+Below the alcoves is a polished pale stone floor with soft reflections (about the bottom 14%).
+There is NOTHING in the near foreground: no columns, no furniture, no objects in front of the wall.
+
+Light: golden daylight pouring diagonally from high windows that are out of frame at the upper
+left; a few soft visible shafts of light crossing the wall. Warm cream limestone, honey and pale
+gold. Bright and airy but never washed out: no blown white areas, full detail in the highlights.
+
+
+
+STYLE. The same painted world as the style reference image: smooth, glossy, soft-lit, hand-painted
+3D finish, warm palette, calm and cinematic, rich in small believable detail (worn stone edges,
+individual scroll ends, grain, dust on ledges). Painterly, never photographic, never flat vector.
+
+HARD RULES.
+- No text of any kind: no letters, numerals, inscriptions, labels, signage or carved writing.
+- No people, no figures, no statues of people, no faces, no hands, no animals that are alive.
+- No neon, no lens flare, no frame, no border, no vignette frame, no watermark, no signature.
+- Straight-on view: the camera faces the far wall squarely, eye level, vertical lines stay vertical.
+- Nothing cropped by the picture edge that is described as "fully visible".
+

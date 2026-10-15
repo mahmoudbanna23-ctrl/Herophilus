@@ -1,0 +1,8 @@
+{
+  "slug": "hero-paint",
+  "script": "paint.py",
+  "inputs": ["jobs.json", "city-dark-3.png", "shot2-pharos-dark-r2.png"],
+  "gpu": true,
+  "internet": true,
+  "timeoutSec": 1800
+}

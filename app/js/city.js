@@ -24,15 +24,18 @@
    say) skips AND goes through - navigation never waits for the film. Later visits to home in
    the same page life: the still only.
 
-   THE FIRST CLOUD JOIN (interim, until shot 1 and the scroll dive exist). A student with nothing
-   answered gets, under the same rules (landscape, >= 768 wide, motion not reduced, first view is
-   home, shot 2 playable through within 1000 ms, any click or key skips): shot2-dark.mp4 (the
-   lighthouse drop, fetched only for them), then a painted cloud cover (.city-cover, one layer above
-   the films, below the spots) that rises to full opacity over the last 0.8 s, a hard swap to the
-   landing under it (the landing is asked for once shot 2 plays and waits paused on frame 0 until it
-   can play), a 0.2 s hold, and a 0.9 s clear as the landing plays. The film's own mist never hides
-   the tower, so a plain crossfade would ghost it and jump in brightness; the cover hides the cut.
-   In-memory flags only; nothing here touches storage. */
+   THE FIRST INTRO (nothing answered yet). A student with nothing answered gets, under the same rules
+   (landscape, >= 768 wide, motion not reduced, first view is home, shot 2 playable through within
+   1000 ms, any click or key skips), an ordered chain of three stages: shot 1 (the painted plate with
+   a 5 s camera glide done in the page - a slow push-in plus one painted cloud layer rising over it -
+   from shot1-base.jpg and shot1-near.webp; skipped for this load if both are not decoded within
+   4 s), shot 2 (shot2-dark.mp4, the lighthouse drop, fetched only for them), then the landing.
+   Between two stages a painted cloud cover (.city-cover, one layer above the stages, below the
+   spots) rises to full opacity over the last 0.8 s of the stage, a hard swap to the next stage
+   happens under it (the landing is asked for once the intro begins and waits paused on frame 0 until
+   it can play), a 0.2 s hold, and a 0.9 s clear as the next stage plays. The film's own mist never
+   hides the tower, so a plain crossfade would ghost it and jump in brightness; the cover hides the
+   cut. Reduced motion gets none of it. In-memory flags only; nothing here touches storage. */
 (function(){
   'use strict';
 
@@ -49,6 +52,10 @@
   const PLATE_TALL='assets/city/city-dark-tall.jpg';
   const FILM='assets/city/landing-dark.mp4';
   const LEAD='assets/city/shot2-dark.mp4';   // shot 2, the lighthouse drop (nothing-answered visitors only)
+  const S1_BASE='assets/city/shot1-base.jpg';   // shot 1: the painted plate, pushed in slowly
+  const S1_NEAR='assets/city/shot1-near.webp';  // ...and one painted cloud layer that rises over it
+  const S1_MS=5000;           // shot 1 runs this long
+  const S1_DEADLINE=4000;     // ms for both shot 1 pictures, else no shot 1 this load
   const FILM_DEADLINE=1000;   // ms to reach canplaythrough, else no film this load
   const FADE_MS=400;
   const RISE_MS=800;          // the cloud cover rises over the last of shot 2
@@ -315,7 +322,7 @@
 
   /* ---- the landing film ------------------------------------------------------------------ */
   /* false = no film this load; 'land' = the landing only (the student has answered something);
-     'lead' = shot 2 (the lighthouse drop), the cloud cover, then the landing (nothing answered yet) */
+     'lead' = shot 1, shot 2 and the landing joined by the cloud cover (nothing answered yet) */
   function eligible(box){
     if(filmGone||!firstWasHome) return false;
     if(reduced()||window.innerWidth<768||upright()) return false;
@@ -371,26 +378,79 @@
     };
   }
 
+  /* Shot 1: the painted plate with a slow camera glide, done in the page (no film). Two stacked
+     pictures in one clipped box: the base (a slow push-in 1.00 -> 1.16 with a 5% downward tilt) and one
+     painted cloud layer that rises over it and swells, faster toward the end, so it reads as
+     diving into cloud. transform only. The images are fetched with the intro; if they are not both
+     decoded within S1_DEADLINE (or fail), there is no shot 1 this load. */
+  function makeGlide(){
+    const el=document.createElement('span');
+    el.className='city-s1';
+    el.setAttribute('aria-hidden','true');
+    const base=new Image(), near=new Image();
+    base.className='s1-base'; near.className='s1-near';
+    [base,near].forEach(im=>{ im.alt=''; im.draggable=false; el.appendChild(im) });
+    const anims=[];
+    const pic=(im,src)=>new Promise((ok,no)=>{
+      im.onload=()=>{ (im.decode?im.decode():Promise.resolve()).then(ok,ok) };
+      im.onerror=()=>no(new Error('shot 1 image'));
+      im.src=src;
+    });
+    /* the near layer: translateY(35%) -> 0 and scale 1 -> 1.15 about the bottom centre, on a squared
+       ease-in (t=0,.25,.5,.75,1 sampled), so the last third covers over half the travel */
+    const nearFrames=[0,.25,.5,.75,1].map(t=>{
+      const p=t*t;
+      return {offset:t,transform:'translateY('+(35*(1-p)).toFixed(2)+'%) scale('+(1+.15*p).toFixed(4)+')'};
+    });
+    return {
+      el,
+      alive:true,
+      loaded:Promise.all([pic(base,S1_BASE),pic(near,S1_NEAR)]),
+      /* returns a promise that settles when the glide has run its course */
+      start(){
+        const a=base.animate(
+          [{transform:'translateY(0) scale(1)'},{transform:'translateY(5%) scale(1.16)'}],
+          {duration:S1_MS,easing:'ease-in-out',fill:'forwards'});
+        const b=near.animate(nearFrames,{duration:S1_MS,easing:'linear',fill:'forwards'});
+        anims.push(a,b);
+        this.clock=a;
+        return a.finished;
+      },
+      clock:null,
+      left(){ return this.clock?S1_MS-Number(this.clock.currentTime||0):S1_MS },
+      kill(){
+        this.alive=false;
+        anims.forEach(a=>{ try{a.cancel()}catch(e){} });
+        el.remove();
+      }
+    };
+  }
+
+  /* The intro is an ordered list of stages: [shot 1 glide,] shot 2 film, landing film. Between two
+     stages the painted cloud cover rises over the end of the one that is playing, the swap happens
+     under it while it is opaque, then it clears over the next. After the last stage it is removed. */
   function startFilm(box,withLead){
     const v=makeVideo('city-film'+(withLead?' queued':''));    // the landing
-    const L=withLead?makeVideo('city-film'):null;               // shot 2, the lighthouse drop
+    const L=withLead?makeVideo('city-film queued'):null;        // shot 2, the lighthouse drop
     const cov=withLead?makeCover():null;
-    const first=L||v;                                           // the one that must be ready to begin
+    const g=(withLead&&Element.prototype.animate)?makeGlide():null;   // shot 1
     let host=box;                                   // the box the film sits in now
     let spots=box.querySelector('.city-spots');
     host.insertBefore(v,host.querySelector('.city-plate').nextSibling);
     if(L) host.insertBefore(L,v.nextSibling);
     if(cov) host.insertBefore(cov.el,spots);
-    /* the lead is fetched first and alone; the landing is only asked for once the lead is playing,
+    /* the lead is fetched first and alone; the landing is only asked for once the intro has begun,
        so it cannot slow the lead's one-second chance */
     (L||v).src=L?LEAD:FILM;
 
-    let timer=0, holdT=0, landT=0, raf=0;
-    let state='wait';   // wait -> play -> out; or wait -> dropped; destroy() -> gone
-                        // with a lead: wait -> lead -> swap -> play -> out
-    let parked=false, rising=false, landReady=false, landWaiting=false, leadIn=!!L;
+    let timer=0, holdT=0, waitT=0, s1T=0, raf=0;
+    let state='wait';   // wait -> run <-> swap -> out; or wait -> dropped; destroy() -> gone
+                        // run = a stage is playing, swap = the cover is rising / the next stage is entering
+    let parked=false, rising=false, waiting=false, leadIn=!!L, landReady=false, firstReady=false, gIn=false;
+    let s1State=g?'pending':'none';   // pending -> ok | none
+    let stages=[], idx=0;
     const cleanListeners=()=>{
-      clearTimeout(timer); clearTimeout(holdT); clearTimeout(landT);
+      clearTimeout(timer); clearTimeout(holdT); clearTimeout(waitT); clearTimeout(s1T);
       cancelAnimationFrame(raf);
       document.removeEventListener('click',onClick,true);
       document.removeEventListener('keydown',onKey,true);
@@ -401,7 +461,9 @@
       L.removeAttribute('src'); try{L.load()}catch(e){}
       L.remove();
     }
+    function dropGlide(){ gIn=false; if(g&&g.alive) g.kill() }
     function unload(){
+      dropGlide();
       dropLead();
       v.removeAttribute('src'); try{v.load()}catch(e){}
       v.remove();
@@ -414,7 +476,7 @@
       cleanListeners();
       unload();
     }
-    const live=()=>state==='play'||state==='lead'||state==='swap';
+    const live=()=>state==='run'||state==='swap';
     /* Fade to the sharp still, then remove. */
     function finish(){
       if(!live()) return;
@@ -424,6 +486,7 @@
       if(L) try{L.pause()}catch(e){}
       v.classList.add('out');
       if(leadIn) L.classList.add('out');
+      if(gIn&&g.alive) g.el.classList.add('out');
       if(cov&&cov.alive) cov.fade(FADE_MS);
       host.classList.remove('playing');
       setTimeout(()=>{
@@ -444,7 +507,26 @@
       else if(L&&live()) finish();
     }
 
-    /* ---- with a lead: shot 2 -> cover rises to full -> hard swap -> landing -> cover clears ---- */
+    /* ---- the stages. show() starts one (it may return a promise that settles when it is playing),
+       hide() removes it under the cover, left() is the ms it has still to run ---- */
+    const glideStage={
+      show(){ g.start().then(()=>endOf(glideStage),()=>{}) },
+      hide:dropGlide,
+      left:()=>g.left()
+    };
+    const leadStage={
+      show(){ L.classList.remove('queued'); return L.play() },
+      hide:dropLead,
+      left:()=>L.duration?(L.duration-L.currentTime)*1000:Infinity
+    };
+    const landStage={
+      show(){ v.classList.remove('queued'); return v.play() },
+      hide(){},
+      left:()=>Infinity,
+      ready:()=>landReady
+    };
+
+    /* ---- the chain: stage -> cover rises -> hard swap -> next stage -> cover clears ---- */
     let risePromise=null;
     function startRise(){
       if(rising) return;
@@ -453,65 +535,92 @@
     }
     function watch(){
       raf=requestAnimationFrame(watch);
-      if(state!=='lead') return;
-      if(L.duration&&L.currentTime>=L.duration-RISE_MS/1000) startRise();
+      if(state!=='run'||idx>=stages.length-1) return;
+      if(stages[idx].left()<=RISE_MS) startRise();
     }
-    function leadEnded(){
-      if(state!=='lead') return;
+    function endOf(s){
+      if(state!=='run'||stages[idx]!==s||idx>=stages.length-1) return;
       state='swap';
-      cancelAnimationFrame(raf);
       startRise();
       /* the swap waits for the cover to be fully opaque (the rise's own end) */
-      risePromise.then(()=>{ if(state==='swap') swap() });
+      risePromise.then(()=>{ if(state==='swap'&&stages[idx]===s) swap() });
     }
     function swap(){
-      dropLead();                         // hard swap, under the opaque cover
-      v.classList.remove('queued');
-      landStart();
+      stages[idx].hide();                 // hard swap, under the opaque cover
+      idx++;
+      enter();
     }
-    function landStart(){
+    function enter(){
       if(state!=='swap') return;
-      if(!landReady){
-        landWaiting=true;
-        landT=setTimeout(()=>{ if(state==='swap') finish() },LAND_WAIT_MS);
+      const s=stages[idx];
+      if(s.ready&&!s.ready()){
+        waiting=true;
+        waitT=setTimeout(()=>{ if(state==='swap') finish() },LAND_WAIT_MS);
         return;
       }
-      landWaiting=false;
-      clearTimeout(landT);
-      const pr=v.play();
+      waiting=false;
+      clearTimeout(waitT);
+      const pr=s.show();
       const go=()=>{
         if(state!=='swap') return;
-        state='play';
-        holdT=setTimeout(()=>{ if(state==='play'&&cov.alive) cov.clear(CLEAR_MS).then(()=>{ if(cov.alive&&state==='play') cov.kill() }) },HOLD_MS);
+        state='run'; rising=false;
+        const last=idx===stages.length-1;
+        holdT=setTimeout(()=>{
+          if(state==='run'&&cov.alive) cov.clear(CLEAR_MS).then(()=>{ if(cov.alive&&state==='run'&&last) cov.kill() });
+        },HOLD_MS);
       };
       if(pr&&pr.then) pr.then(go,()=>{ if(state==='swap') finish() }); else go();
     }
 
+    /* ---- the first stage: begin once the first video can play through and shot 1's pictures have
+       either arrived or been given up on ---- */
+    function begin(){
+      if(state!=='wait') return;
+      state='run'; filmGone=true;
+      host.classList.add('playing');
+      spots.inert=true;
+      document.addEventListener('click',onClick,true);
+      document.addEventListener('keydown',onKey,true);
+      if(L){ v.src=FILM; raf=requestAnimationFrame(watch) }
+    }
+    function tryBegin(){
+      if(state!=='wait'||!firstReady||s1State==='pending') return;
+      stages=L?(s1State==='ok'?[glideStage,leadStage,landStage]:[leadStage,landStage]):[landStage];
+      if(stages[0]===glideStage){
+        gIn=true;
+        host.insertBefore(g.el,cov.el);
+        begin();
+        glideStage.show();
+      }else{
+        const pr=stages[0].show();
+        if(pr&&pr.then) pr.then(begin,drop); else begin();
+      }
+    }
+    function s1Settled(ok){
+      if(s1State!=='pending') return;
+      clearTimeout(s1T);
+      s1State=ok?'ok':'none';
+      if(!ok&&g.alive) g.kill();
+      tryBegin();
+    }
+
     v.addEventListener('ended',finish);
     v.addEventListener('error',L?onError:drop);
-    if(L){
-      L.addEventListener('ended',leadEnded);
-      L.addEventListener('error',onError);
-      v.addEventListener('canplaythrough',function(){
-        landReady=true;
-        if(landWaiting) landStart();
-      },{once:true});
-    }
-    first.addEventListener('canplaythrough',function(){
-      if(state!=='wait') return;
-      clearTimeout(timer);
-      const pr=first.play();
-      const begin=()=>{
-        if(state!=='wait') return;
-        state=L?'lead':'play'; filmGone=true;
-        host.classList.add('playing');
-        spots.inert=true;
-        document.addEventListener('click',onClick,true);
-        document.addEventListener('keydown',onKey,true);
-        if(L){ v.src=FILM; raf=requestAnimationFrame(watch) }
-      };
-      if(pr&&pr.then) pr.then(begin,drop); else begin();
+    v.addEventListener('canplaythrough',function(){
+      landReady=true;
+      if(!L){ clearTimeout(timer); firstReady=true; tryBegin() }
+      else if(waiting) enter();
     },{once:true});
+    if(L){
+      L.addEventListener('ended',()=>endOf(leadStage));
+      L.addEventListener('error',onError);
+      /* the 1 s chance is for the first video alone: once it can play, only shot 1's own 4 s limit decides */
+      L.addEventListener('canplaythrough',function(){ clearTimeout(timer); firstReady=true; tryBegin() },{once:true});
+    }
+    if(g){
+      s1T=setTimeout(()=>s1Settled(false),S1_DEADLINE);
+      g.loaded.then(()=>s1Settled(true),()=>s1Settled(false));
+    }
     timer=setTimeout(drop,FILM_DEADLINE);
 
     const api={
@@ -522,6 +631,7 @@
         parked=true;
         document.body.appendChild(v);
         if(leadIn) document.body.appendChild(L);
+        if(gIn&&g.alive) document.body.appendChild(g.el);
         if(cov&&cov.alive) document.body.appendChild(cov.el);
         queueMicrotask(()=>{ if(parked) api.destroy() });
       },
@@ -531,6 +641,7 @@
         host=nb; spots=nb.querySelector('.city-spots');
         nb.insertBefore(v,nb.querySelector('.city-plate').nextSibling);
         if(leadIn) nb.insertBefore(L,v.nextSibling);
+        if(gIn&&g.alive) nb.insertBefore(g.el,spots);
         if(cov&&cov.alive) nb.insertBefore(cov.el,spots);
         if(live()){ nb.classList.add('playing'); spots.inert=true }
       },

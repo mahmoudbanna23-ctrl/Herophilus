@@ -1,0 +1,44 @@
+
+(Middle cloud layer for shot 1, to be laid over the base plate, 2026-10-15. Painted with
+ROOM_REF=shot1-sky-dark-c.png as palette and brushwork reference and
+COMMON_SECTION=common-city-matte.)
+
+ONLY CLOUD, on a FLAT PURE BLACK BACKGROUND (every pixel that is not cloud is pure black,
+#000000, with no stars, no sea, no coast, no sky colour, no gradient). Match the finish, palette
+and brushwork of the reference picture: matte chalky gouache, lavender-grey cloud lit faintly
+from below by warm amber, in the same night light. Do not ask anything; just paint one image.
+
+One broad cloud bank running the full width of the picture, rolling and heavy. Its TOP EDGE sits
+about 45 percent of the way down from the top of the picture, SOFT AND BROKEN, with torn rolling
+shapes and a few loose wisps lifting off it, never a hard line. Below that edge the bank is
+dense and fills the picture down to the bottom edge, darkening slightly toward the bottom. The
+bank is a separate layer: it is the cloud only, with the black background above its top edge
+showing through everywhere there is no cloud.
+
+Nothing else: no stars, no sea, no coast, no lamps, no ships, no birds, no people, no moon, no
+lens flare, no text.
+
+
+
+STYLE. A hand-painted film matte painting in gouache and oil: MATTE, dry, chalky surfaces,
+visible confident brushstrokes, soft broken edges, slightly uneven hand-mixed colour. NOT glossy,
+NOT shiny, NOT wet-looking, NOT plastic, no specular highlights, no bloom, no glow halos, no
+computer-game or 3D-render look, not photographic, not flat vector. Use the style reference image
+for its colours, mood and world only, not for its shine. Rich in small believable detail (worn
+stone edges, individual blocks, roof tiles, rigging), painted loosely rather than modelled.
+
+SETTING. Ancient Alexandria, about 300 BC, at night, seen from the air. Normal lens, no fisheye,
+no tilt: vertical lines stay vertical and parallel.
+
+LIGHT. Moonlight and small fires only. Cool night-blue shadows (deep blue, never brown, never pure
+black, every surface keeps visible detail) with small warm amber points of lamp and fire light,
+painted as soft dabs of warm colour, not as glowing bulbs.
+
+HARD RULES.
+- No text of any kind: no letters, numerals, inscriptions, labels, signage or carved writing.
+- No people, no figures, no statues of people, no faces, no hands, no living animals.
+- No frame, no border, no vignette, no watermark, no signature, no neon, no lens flare, no light
+  beam sweeping the sky.
+- No modern objects: nothing electric, printed, plastic or machine-made.
+- Only ONE lighthouse, ONE theatre, ONE temple, ONE garden.
+

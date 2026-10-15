@@ -1,0 +1,47 @@
+
+(Upright iPad plate, 1024x1536. Owner approved city-dark-3 as the landscape city. Painted with
+SCENE_REF=city-dark-3.png and COMMON_SECTION=common-city-matte.)
+
+The SAME CITY as the reference picture, the same four landmarks painted the same way, the same
+night, the same finish, but RE-ARRANGED FOR A TALL UPRIGHT PAGE. Do not crop the wide picture and
+do not add bars: recompose it so the city fills the tall page from top to bottom. The camera is
+the same height and looks down the same way; the four landmarks have simply been brought closer
+together sideways and spread further apart up and down.
+
+From top to bottom, in a gentle zig-zag:
+- TOP, left of centre: THE LIGHTHOUSE, the largest and leading landmark, on its rocky island with
+  the causeway, shown whole. A clear band of dark sea lies between its fire and the top edge.
+- UPPER MIDDLE, right of centre: THE THEATRE, the crisp half-circle of stone seating with its
+  stage wall and ring of lamps, whole, nothing hiding it.
+- LOWER MIDDLE, left of centre: THE GARDEN, the square walled garden with its pool, palms and
+  cypress, whole.
+- LOWER, right of centre: THE TEMPLE on its stepped platform with two fire bowls, whole, no
+  brighter than the theatre.
+
+All four sit fully inside the picture: nothing important within the outer tenth on any side.
+Between them the same low dark houses, narrow streets, quay and two or three anchored ships, thin
+mist. Along the whole bottom edge a plain, calm strip of dark paved quay.
+
+
+STYLE. A hand-painted film matte painting in gouache and oil: MATTE, dry, chalky surfaces,
+visible confident brushstrokes, soft broken edges, slightly uneven hand-mixed colour. NOT glossy,
+NOT shiny, NOT wet-looking, NOT plastic, no specular highlights, no bloom, no glow halos, no
+computer-game or 3D-render look, not photographic, not flat vector. Use the style reference image
+for its colours, mood and world only, not for its shine. Rich in small believable detail (worn
+stone edges, individual blocks, roof tiles, rigging), painted loosely rather than modelled.
+
+SETTING. Ancient Alexandria, about 300 BC, at night, seen from the air. Normal lens, no fisheye,
+no tilt: vertical lines stay vertical and parallel.
+
+LIGHT. Moonlight and small fires only. Cool night-blue shadows (deep blue, never brown, never pure
+black, every surface keeps visible detail) with small warm amber points of lamp and fire light,
+painted as soft dabs of warm colour, not as glowing bulbs.
+
+HARD RULES.
+- No text of any kind: no letters, numerals, inscriptions, labels, signage or carved writing.
+- No people, no figures, no statues of people, no faces, no hands, no living animals.
+- No frame, no border, no vignette, no watermark, no signature, no neon, no lens flare, no light
+  beam sweeping the sky.
+- No modern objects: nothing electric, printed, plastic or machine-made.
+- Only ONE lighthouse, ONE theatre, ONE temple, ONE garden.
+
