@@ -41,3 +41,26 @@ no idle loops, prefers-reduced-motion stops every one.
 Not chosen by the owner (invisible, my call): keep the vanilla engine; no build step until step 4 needs one.
 Staged files: `D:\scratch 2026\clean-vendor\` (fonts + licences, Open Props sheets, Tabler outline set).
 Licences: Geist OFL-1.1, Newsreader OFL-1.1, Open Props MIT, Tabler MIT.
+
+## Ready-made animations (owner 2026-10-16, picked from the live shelf https://claude.ai/artifact/PF5cPLVPCR8sJu73shVYU8)
+
+Files staged in `progress/redesign-clean/anim-picks/` (Lottie JSON), licences in `anim-picks/LICENCES.md`.
+Shelf of all 37 candidates + manifest: `D:\scratch 2026\anim-shelf\`.
+
+| # | Picked | File | Likely use |
+|---|---|---|---|
+| 7 | Time hourglass | time-hourglass-H3UkbK6hVS.json | exam clock / timed mode |
+| 14 | Calm flame | calm-flame-oIGx0ljGQN.json | streak (step 2 Today) |
+| 20 | Book open | bookOpen.json (line icon) | subject / chapter open |
+| 22 | Checkmark | checkmark-UaMrRzGt3G.json | right answer (1a part B, beside or instead of N4) |
+| 24 | Cross | cross-close-cancel-icon-animation-imJWR2OMg7.json | wrong answer (1a part B, with M5) |
+| 28 | Visibility eye | visibility.json (line icon) | show explanation / reveal |
+| 32 | Loading v2 | loading2.json (line icon) | loading / sync |
+| 33 | Search | search-imm-xZN2Dotxbr.json | search empty / searching |
+| 35 | Bell | bell-notification-ZkcfxiLlPr.json | due-review reminder |
+| 36 | Empty state | empty-state-EfSeWUwwKs.json | empty pages (step 5, beside the Clepsydra helper) |
+| 37 | Success celebration | success-celebration-Sn1bJRj6pz.json | set / chapter finished (step 5) |
+
+Open for the builder: these need a Lottie player in the app (lottie-web `lottie_light` svg build, served from our own
+site per CLAUDE.md §2) - the one exception to "browser built-in motion". Colours must be re-tinted to our tokens;
+line icons recoloured for dark. Reduced motion shows the last frame, no play. Placement above is my proposal, not the owner's.
