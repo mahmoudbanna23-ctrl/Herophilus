@@ -1302,3 +1302,9 @@ seat was used. `storage.js:282` speed fix was offered and never taken up.
 - **App redesign:** Phase 1 (depth `ae9a7b9`, warm grounds + subject colour `ea75502`) pushed
   2026-09-08 (`progress\resume-2026-09-08-depth-and-colour.md` "Changed since"). Look work now runs
   under the APP RE-PLAN above; `redesign-spec-2026-09-07-owner-interview.md` is input, not the plan.
+
+## Pruned from MEMORY.md - 2026-10-16
+
+- ⚠️ **Two chats share one WPS account, so the account-wide request rate is DOUBLE what either
+  driver thinks it is issuing.** Pace as if you own half. This is what produces the 429s.
+- **App redesign:** PRUNED 2026-10-11 -> archive, `## Pruned from MEMORY.md - 2026-10-11`.

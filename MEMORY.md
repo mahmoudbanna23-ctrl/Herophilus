@@ -68,7 +68,7 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
 
 - ✅ **PEDS SELF ASSESSMENT IN 2026-10-11** — 4th bank `selfassess`: 521 new + 585 live tagged `alsoIn`. `ledger.md` §23.
 - ✅ PEDS REPEATS MERGED+LIVE 2026-10-11 (351). NEXT: `progress\resume-peds-dupes.md`.
-- **App redesign:** PRUNED 2026-10-11 -> archive, `## Pruned from MEMORY.md - 2026-10-11`.
+- **App redesign:** CLEAN REBUILD 2026-10-16, city dropped. Resume `..\Herophilus-redesign\progress\redesign-clean\RESUME-clean.md`; older: archive 2026-10-11/16.
 
 ## The watch — oversight every ~12 h (set up 2026-09-02)
 - **PRUNED 2026-09-20 ->** archive. Binding: a watch chat runs `progress\WATCH.md`, reports, never
@@ -77,8 +77,7 @@ Detail (twin merges, owed items, coverage tools): archive `## Pruned from MEMORY
 
 ## Running three chats in parallel — what it actually costs and breaks
 - **MOVED 2026-09-01 ->** the ~75k-token boot cost per chat and the four-chat endpoint plan. Reach any `MOVED`/`PRUNED` block with `grep -n "Pruned from MEMORY" progress\memory-archive.md` then `sed`.
-- ⚠️ **Two chats share one WPS account, so the account-wide request rate is DOUBLE what either
-  driver thinks it is issuing.** Pace as if you own half. This is what produces the 429s.
+- WPS two-chat pacing: archive 2026-10-16.
 - ✅ **Keep in every parallel brief:** image work in subagents only, **commit with an explicit
   pathspec** (see Environment — `git add -A` alone was found insufficient), no writes to
   `MEMORY.md`/`ledger.md` mid-run, no cross-module writes.

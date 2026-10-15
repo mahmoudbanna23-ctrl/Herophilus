@@ -23,8 +23,8 @@ folder and what lives in it — is `reference.md` §1; the prose inventory that 
 
 ## 2. Code constraints
 
-Vanilla HTML/CSS/JS. **No framework, no build step, no bundler, no npm** — this is what lets the
-app run from `file://`, deploy by drag-and-drop, and work offline.
+**Libraries + build step ALLOWED; ONLINE-ONLY, offline/`file://` no longer required (owner 2026-10-16,
+overrides workspace §7 here).** Serve libraries from our own site; an outside CDN only if measured reachable on TE Data.
 
 - **Data files are classic scripts, not ES modules** (ES modules die on CORS over `file://`).
   Per-subject files use `var` so aggregators read them off `window` and degrade to empty rather
