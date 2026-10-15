@@ -22,35 +22,10 @@
 @media screen {
 
 /* ---- dark: tokens ---------------------------------------------------------- */
-:root{
-  --bg:#0a0f1a;
-  --bg-2:#111a2b;
-  --card:#0f1626;
-  --fill:#1b263c;
-  --glass:rgba(15,22,38,.78);
-  --glass-2:rgba(9,14,24,.86);
-  --tint:rgba(226,233,246,.045);
-  --tint-2:rgba(226,233,246,.05);
-  --sheen:linear-gradient(160deg,rgba(226,233,246,.05),rgba(226,233,246,.012));
-  --glow:0 0 0 1px rgba(226,233,246,.07);
-
-  /* hairlines: cool ivory, low alpha */
-  --line:rgba(226,233,246,.09);
-  --line-2:rgba(226,233,246,.17);
-
-  --neon:#e8c26a;
-  --neon-glow:0 0 10px rgba(232,194,106,.5);
-
-  --rail:#070b13;
-  --rail-2:#121b2c;
-  --rail-3:#1d2a44;
-}
+/* Palette declarations now live in tokens.css. */
 
 /* ---- light: only the edge, and the blue that leaked into parchment ---------- */
-:root[data-theme="light"]{
-  --neon:#86580f;
-  --neon-glow:0 0 10px rgba(134,88,15,.42);
-}
+/* Palette declarations now live in tokens.css. */
 
 /* ---- dark: ground ------------------------------------------------------------ */
 /* the three orbs of colour: night blue, deep blue, sea teal */
@@ -342,10 +317,7 @@
    over night blue, and the wrong row / verdict also wore the gold edge and gold glow.
    Dark look restates the pair as a cool crimson; every --bad user (option letter chip
    and mark, quiz grid cell, feedback box, banners, exam clock, danger buttons) follows. */
-:root:not([data-theme="light"]){
-  --bad:#e5485a;
-  --bad-bg:rgba(240,64,76,.17);
-}
+/* Palette declarations now live in tokens.css. */
 :root:not([data-theme="light"]) .opt.wrong{
   border-color:var(--bad);
   background:linear-gradient(180deg,rgba(255,28,40,.32),rgba(255,28,40,.24)),var(--card);

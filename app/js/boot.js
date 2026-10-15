@@ -1,5 +1,35 @@
-function showModal(html,wide){const m=$('modal');m.innerHTML=html;if(m.classList){wide?m.classList.add('wide'):m.classList.remove('wide')}$('modalBg').classList.add('show')}
-function closeModal(){$('modalBg').classList.remove('show')}
+let questionPanelReturn=null;
+function showModal(html,wide,kind){
+  const m=$('modal'),bg=$('modalBg');
+  if(bg.classList.contains('question-panel')&&kind!=='questions'){
+    document.querySelector('.app').inert=false;questionPanelReturn=null;
+  }
+  m.innerHTML=html;m.classList.toggle('wide',!!wide);
+  bg.classList.toggle('question-panel',kind==='questions');
+  if(kind==='questions'){
+    questionPanelReturn=$('questionsButton');
+    m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');m.setAttribute('aria-labelledby','questionsTitle');
+    document.querySelector('.app').inert=true;
+  }else{m.removeAttribute('role');m.removeAttribute('aria-modal');m.removeAttribute('aria-labelledby')}
+  bg.classList.add('show');
+}
+function closeModal(){
+  const bg=$('modalBg'),panel=bg.classList.contains('question-panel');
+  bg.classList.remove('show','question-panel');
+  if(panel){document.querySelector('.app').inert=false;const target=$('questionsButton')||questionPanelReturn;if(target&&target.isConnected)target.focus({preventScroll:true});questionPanelReturn=null}
+}
+/* Capture before the global typing-input guard: Escape also works in jumpNum. */
+document.addEventListener('keydown',e=>{
+  if(!$('modalBg').matches('.show.question-panel'))return;
+  if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();closeModal();return}
+  if(e.key!=='Tab')return;
+  const all=Array.from($('modal').querySelectorAll('button:not(:disabled),input:not(:disabled),[tabindex="0"]')).filter(el=>el.getClientRects().length);
+  if(!all.length)return;
+  const first=all[0],last=all[all.length-1];
+  if(e.shiftKey&&(document.activeElement===first||!$('modal').contains(document.activeElement))){e.preventDefault();last.focus()}
+  else if(!e.shiftKey&&(document.activeElement===last||!$('modal').contains(document.activeElement))){e.preventDefault();first.focus()}
+},true);
+
 function showShortcuts(){
   showModal(`<h3>${ico('keys',19)} Shortcuts</h3>
    <div class="shortcuts">
@@ -319,6 +349,8 @@ document.addEventListener('keydown',e=>{
     if(e.key==='Escape'){closeModal();return}
     return;
   }
+  /* Native button activation must not also check or advance the underlying quiz. */
+  if(view.name==='quiz'&&e.target.closest&&e.target.closest('button,a,summary')&&(e.key==='Enter'||e.key===' '))return;
   /* The search results listbox is a different case and belongs to doSearch(): a
      focused result button answers its own keys (ArrowDown/Up/Enter/Escape) via
      the keydown listener attached at render time. If focus is on a result while

@@ -1,237 +1,88 @@
-/* ============================================================================
-   THE GREEK PALETTE — rebuilt 2026-07-28 from the artwork the user supplied.
+/* Semantic palette. Dark is the default; theme.js owns the light attribute.
+   Loaded after legacy skins so old names resolve through these aliases.
 
-   The reference is their own image set: classical figures in ochre and brass on
-   parchment, and a set of icon studies in ink navy, cream and gold. Both themes
-   are drawn from those, not invented:
-
-     dark  = the library at night — ink navy ground, parchment text, gold leaf
-     light = the page itself      — true parchment, warm ink, sienna
-
-   ONE RULE ABOVE THE OTHERS: no cool white and no blue-grey anywhere in the
-   text ramp. Beside terracotta and bronze, a blue-white reads as a different
-   and colder design pasted on top. Every neutral here carries warmth.
-
-   The three token families still must not re-merge — see CLAUDE.md §6. What
-   changed is only their colour: --line* are now translucent PARCHMENT rather
-   than translucent white.
-
-   MODULE COLOURS WERE REPLACED (user's decision, 2026-07-28). They were locked
-   because the Notion board and the PDF schedule share them; the user chose the
-   full Greek palette knowing those two will no longer match until updated. The
-   old values are in archive\index.pre-greek-2026-07-28.html.
-
-     ENT     #ff5a5f -> #b4472f  terracotta
-     Ophtho  #00b37e -> #5c7a52  olive
-     Neuro   #8b5cf6 -> #6d4c7d  tyrian purple
-     Peds    #3b82f6 -> #2e5f8a  lapis
-
-   A happy consequence, measured not hoped for: all four are dark enough that
-   WHITE text on them now passes AA (4.8-7.1:1). The old set failed at
-   3.05-4.23:1 and that failure had to be left standing. The same move fixes the
-   bank colours, so .bankchip.on and .pill.bankpill go back to white text.
-   ============================================================================ */
+   Values come from Open Props 1.7.16 (MIT, assets/licences/open-props-LICENSE.txt): the gray ladder
+   for surfaces, text and lines, the blue ladder for the one accent. The hue steps below are copied,
+   not linked. Every text pair was measured (progress/redesign-clean/step1a-notes.md): text on any
+   surface 4.5:1 or better, accent and on-accent 4.5:1 or better, lines on controls 3:1 or better.
+   Light accent is blue-8, not the owner's blue-7: blue-7 on white measures 4.20, below AA. */
 :root{
-  /* ---- type ---------------------------------------------------------------
-     Cinzel and EB Garamond are embedded in data/fonts.js. The fallbacks matter:
-     if that file is ever missing the app must still read, so each stack ends in
-     a real system serif rather than in `serif`. */
-  --font-display:'Cinzel','Trajan Pro','Palatino Linotype','Book Antiqua',Georgia,serif;
-  --font-body:'EB Garamond','Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
-
-  /* text ramp — warm parchment on ink */
-  --tx:#f2e8d5;
-  --ink:#f2e8d5;
-  --ink-2:#cfc0a5;
-  --ink-3:#ab9a80;
-  --ink-4:#9c8b71;   /* the 10-11px ramp; 5.2:1 on --card, audited */
-
-  /* ground and surfaces */
-  --bg:#0a1017;
-  --bg-2:#151f2d;
-  --card:#121a27;
-  --fill:#2b3a4f;
-  --glass:rgba(18,27,40,.76);
-  --glass-2:rgba(11,17,26,.84);
-
-  /* hairlines — parchment, not white */
-  --line:rgba(242,232,213,.085);
-  --line-2:rgba(242,232,213,.16);
-
-  /* Static cyan card edge, taken from the selected P3 neon specimen. */
-  --neon:#66d9ff;
-  --neon-glow:0 0 10px rgba(102,217,255,.65);
-  --gold-glow:0 0 10px rgba(217,180,74,.65);
-
-  --rail:#080d14;
-  --rail-2:#16202e;
-  --rail-3:#27364b;
-  --rail-text:#b9a88d;
-  /* Secondary text in the rail — the subtitle, the section labels, the counts,
-     the streak caption. Five rules each carried their own hardcoded lavender
-     (#a79ddb, #a89fd4, #9c92cc, #c2bbe4), left over from a palette this app no
-     longer uses: a cool purple secondary sitting underneath a warm sand
-     primary, which is the seam that makes a rail read as two designs stacked.
-     Warm, and one value. Measured 4.87:1 against the rail's darker gradient
-     stop, so the small uppercase labels clear AA on their own. */
-  --rail-dim:#8c7f6a;
-
-  /* module colours — the Greek set */
-  --ent:#b4472f;
-  --ophtho:#5c7a52;
-  --neuro:#6d4c7d;
-  --peds:#2e5f8a;
-  --peds-hi:#71b8e8;
-  --revision:#7a6a55;
-  --buffer:#9a6b1f;
-
-  /* state colours */
-  --ok:#7fae6f;
-  --ok-bg:rgba(127,174,111,.15);
-  --bad:#d4674f;
-  --bad-bg:rgba(212,103,79,.15);
-  --gold:#d9b44a;
-  --gold-bg:rgba(217,180,74,.15);
-  --warn:#d1a03c;
-  --on-accent:#12100b;   /* text ON gold and other bright fills */
-  --gold-text:#d9b44a;   /* gold used AS TEXT. Separate from --gold because on
-                            parchment the background gold measures 1.6:1. */
-
-  /* Radius scale — replan 2026-09-21 (owner ruling 2026-09-20): small and
-     classical, base 4px, three steps, nothing larger, no pills anywhere.
-     Replaces the old four-step-plus-pill scale (--r-1..--r-3, --r, --r-pill). */
-  --r-sm:2px;             /* swatches, marks, thin inline bits */
-  --r-md:4px;             /* small tiles, icon buttons, inputs */
-  --r-lg:8px;             /* rows, cards, buttons, modals — the ceiling */
-  --pop:0 7px 18px;
-  --pop-lg:0 14px 34px;
-  /* Shadow shape steps — replan 2026-09-21, pulled from duplicate raw
-     box-shadow shapes already in base/layout/components/views (colour part
-     stays raw or in --sh*, never merged into these). */
-  --pop-xs:0 5px 14px;    /* 10 raw uses before this pass — the commonest shape */
-  --pop-sm:0 6px 18px;    /* 2 raw uses */
-  --pop-md:0 8px 22px;    /* 2 raw uses, usually paired with --sh-soft */
-  --pop-xl:0 18px 44px;   /* 2 raw uses */
-  --pop-2xl:0 30px 80px;  /* 2 raw uses */
-  --glow:0 0 0 1px rgba(242,232,213,.07);
-
-  /* Type scale — replan 2026-09-21, job 3. 9-step ladder with a visible
-     ratio, replacing the flat 10.5-14px half-px steps above. */
-  --fs-xs:11px;
-  --fs-sm:12px;
-  --fs-md:13px;
-  --fs-ui:14px;
-  --fs-body:16.5px;
-  --fs-lg:19px;
-  --fs-xl:24px;
-  --fs-2xl:32px;
-  --fs-3xl:44px;
-
-  /* Spacing ladder — replan 2026-09-21. 4px base, 2px smallest step, 12 steps,
-     picked from the padding sides used most across base/layout/components/views. */
-  --s-1:2px;
-  --s-2:4px;
-  --s-3:6px;
-  --s-4:8px;
-  --s-5:10px;
-  --s-6:12px;
-  --s-7:14px;
-  --s-8:16px;
-  --s-9:20px;
-  --s-10:24px;
-  --s-11:28px;
-  --s-12:32px;
-
-  /* Motion — replan 2026-09-21. 4 durations, the 4 most-used raw values.
-     Easings: the cubic-bezier() curves already in use, named; the keyword
-     easings (linear/ease/ease-in-out/ease-out) stay literal — they are
-     already minimal. */
-  --dur-1:.12s;
-  --dur-2:.13s;
-  --dur-3:.14s;
-  --dur-4:.18s;
-  --ease-standard:cubic-bezier(.22,1,.36,1);
-  --ease-soft:cubic-bezier(.3,.9,.3,1);
-
-  /* z-index — replan 2026-09-21. Only the five values named in the brief;
-     small local stacking (0-60, 210) stays raw by design. */
-  --z-150:150;
-  --z-200:200;
-  --z-250:250;
-  --z-300:300;
-  --z-400:400;
-
-  --sh:rgba(0,0,0,.5);
-  --sh-soft:rgba(0,0,0,.3);
-  --sh-deep:rgba(0,0,0,.65);
-  --sheen:linear-gradient(160deg,rgba(242,232,213,.05),rgba(242,232,213,.012));
-  --tint:rgba(242,232,213,.045);
-  --tint-2:rgba(242,232,213,.075);
-
-  /* the clinical reading surface */
-  --stem:#f5ecdb;
-  --prose:#d8c9ae;
-  --strong:#fff8ea;
+  /* surfaces: gray-12, gray-11, gray-10, gray-9 */
+  --surface-0:#030507; --surface-1:#0d0f12; --surface-2:#16191d; --surface-3:#212529;
+  /* text: gray-0, gray-4, gray-5, gray-6 */
+  --text-1:#f8f9fa; --text-2:#ced4da; --text-3:#adb5bd; --text-4:#868e96;
+  /* lines: gray-8 hairline; gray-6 for control edges that must be seen */
+  --hairline:#343a40; --hairline-strong:#868e96;
+  /* the one brand accent: blue-4. Actions only. */
+  --accent:#4dabf7; --on-accent:#030507;
+  /* subject identity tints: red-5, teal-5, violet-5, orange-5 at 16% over surface-1. Identity only. */
+  --subject-ent:#341e20; --subject-ophtho:#102d27; --subject-neuro:#201c37; --subject-peds:#342416;
+  /* status: green-3, red-3, yellow-3 on a 18% wash of the same hue */
+  --ok:#8ce99a; --ok-bg:#24362a; --bad:#ffa8a8; --bad-bg:#392b2d; --warn:#ffe066; --warn-bg:#393521;
+  --focus-ring:#74c0fc; --selected:#172837; --disabled:#868e96; --disabled-bg:#16191d;
+  --shadow-1:0 4px 16px #00000040; --shadow-2:0 16px 48px #00000080;
+  --radius-1:6px; --radius-2:10px; --radius-3:14px;
+  --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px;
+  --space-5:20px; --space-6:24px; --space-8:32px; --space-10:40px; --space-12:48px; --space-16:64px;
+  --motion-fast:120ms; --motion-normal:200ms; --motion-slow:320ms;
+  --ease-out:cubic-bezier(.2,.8,.2,1);
+  /* Geist = UI, stems, options, buttons. Newsreader = titles and long reading (explanations, lessons).
+     Both are embedded in fonts-ui.css. GFS Didot and Libre Caslon (type.css) are retired on screen. */
+  --font-body:'Geist','Segoe UI Variable',-apple-system,system-ui,sans-serif;
+  --font-display:'Newsreader',Georgia,serif;
+  --font-read:'Newsreader',Georgia,serif;
+  /* Compatibility for screens still awaiting rebuilding. Subject solid fills
+     retain their contrasting white labels; the new slice uses only tints. */
+  --ent:#963f3a; --ophtho:#3c694e; --neuro:#655082; --peds:#3a6086; --peds-hi:var(--text-2);
+  --revision:#665e55; --buffer:#79561e;
+  --tx:var(--text-1); --ink:var(--text-1); --ink-2:var(--text-2); --ink-3:var(--text-3); --ink-4:var(--text-4);
+  --bg:var(--surface-0); --bg-2:var(--surface-2); --card:var(--surface-1); --fill:var(--surface-3);
+  --glass:var(--surface-1); --glass-2:var(--surface-2); --line:var(--hairline); --line-2:var(--hairline-strong);
+  --rail:#0d0f12; --rail-2:#16191d; --rail-3:#212529; --rail-text:#ced4da; --rail-dim:#adb5bd;
+  --gold:var(--accent); --gold-text:var(--accent); --gold-bg:var(--selected); --neon:var(--hairline-strong);
+  --neon-glow:none; --gold-glow:none; --glow:none;
+  --r-sm:var(--radius-1); --r-md:var(--radius-2); --r-lg:var(--radius-3);
+  --pop:0 4px 16px; --pop-lg:0 16px 48px;
+  --pop-xs:var(--pop); --pop-sm:var(--pop); --pop-md:var(--pop); --pop-xl:var(--pop-lg); --pop-2xl:var(--pop-lg);
+  --sh:#00000040; --sh-soft:#00000020; --sh-deep:#00000040;
+  --sheen:linear-gradient(transparent,transparent); --tint:#ffffff06; --tint-2:#ffffff0c;
+  --stem:var(--text-1); --prose:var(--text-2); --strong:var(--text-1);
+  --fs-xs:11px; --fs-sm:12px; --fs-md:13px; --fs-ui:14px; --fs-body:16px;
+  --fs-lg:20px; --fs-xl:24px; --fs-2xl:32px; --fs-3xl:44px;
+  --s-1:4px; --s-2:4px; --s-3:8px; --s-4:8px; --s-5:12px; --s-6:12px;
+  --s-7:16px; --s-8:16px; --s-9:20px; --s-10:24px; --s-11:28px; --s-12:32px;
+  --dur-1:var(--motion-fast); --dur-2:var(--motion-normal); --dur-3:var(--motion-normal); --dur-4:var(--motion-slow);
+  --ease-standard:var(--ease-out); --ease-soft:var(--ease-out);
+  --z-150:150; --z-200:200; --z-250:250; --z-300:300; --z-400:400;
+}
+:root[data-theme="light"]{
+  /* surfaces: gray-0, white, gray-1, gray-2 */
+  --surface-0:#f8f9fa; --surface-1:#ffffff; --surface-2:#f1f3f5; --surface-3:#e9ecef;
+  /* text: gray-9, gray-7, then two steps between gray-7 and gray-6 darkened to hold 4.5:1 on surface-2 */
+  --text-1:#212529; --text-2:#495057; --text-3:#5c636a; --text-4:#626a73;
+  /* lines: gray-3 hairline; gray-6 control edge (3.3:1 on white) */
+  --hairline:#dee2e6; --hairline-strong:#868e96;
+  /* blue-8. On-accent white measures 5.0:1. */
+  --accent:#1971c2; --on-accent:#ffffff;
+  /* red-6, teal-6, violet-6, orange-6 at 12% over white */
+  --subject-ent:#feeaea; --subject-ophtho:#e3f6f0; --subject-neuro:#efeafd; --subject-peds:#fff0e3;
+  /* green-10, red-10, yellow-11 */
+  --ok:#237032; --ok-bg:#e0ebe2; --bad:#b02525; --bad-bg:#f4e0e0; --warn:#804200; --warn-bg:#ede5db;
+  --focus-ring:#1971c2; --selected:#eef5fc; --disabled:#868e96; --disabled-bg:#e9ecef;
+  --shadow-1:0 4px 16px #2125290f; --shadow-2:0 16px 48px #21252926;
+  --sh:#21252926; --sh-soft:#2125290f; --sh-deep:#21252926; --tint:#21252906; --tint-2:#2125290c;
 }
 
-/* ============================================================================
-   LIGHT — parchment. Sampled from the user's "Father of Anatomy" card: an aged
-   page, warm ink, sienna rule lines. Only tokens are restated; the rules are
-   shared with dark.
+/* ---- Type, app-wide. GFS Didot's tracked capitals and small caps (type.css) were drawn for that face;
+   Newsreader and Geist take sentence case and no extra tracking. Numbers in counts and clocks are tabular. */
+html{font-optical-sizing:auto}
+h1,h2,.logo,.hp-name,.mod-name,.pl-name,.grouphdr{letter-spacing:0;font-weight:600}
+h2{font-variant-caps:normal}
+.eyebrow,.nav-label{letter-spacing:.06em}
+.stat .n,.score,.sr-time,.pl-acc,.ch-acc,.ch-count,.nav-item .cnt,.qprog,.exam-clock,.day-d{font-variant-numeric:tabular-nums}
+.page-sub,.hp-sub{font-variant-numeric:normal;letter-spacing:0}
 
-   The two asymmetries from the previous theme still hold and still matter:
-     1. THE RAIL STAYS DARK — it is a carved plinth in both themes, and the ~12
-        hardcoded #fff values inside it stay correct.
-     2. --gold STAYS BRIGHT — it is a background in 7 places and a text colour
-        in none. --ok and --bad DO darken, because accColor() returns them as
-        text.
-   ============================================================================ */
-:root[data-theme="light"]{
-  --tx:#241c14;
-  --ink:#241c14;
-  --ink-2:#463726;
-  --ink-3:#5e4c37;
-  --ink-4:#5c4b36;   /* 5.2:1 on --bg-2, the DARKEST surface it lands on — measuring
-                        against --card alone put this at 4.11:1 in real use */
-
-  --bg:#e6d9be;
-  --bg-2:#dbcbab;
-  --card:#f7efe0;
-  --fill:#2b2118;    /* dark ink solid — buttons stay dark on the page */
-  --glass:rgba(247,239,224,.78);
-  --glass-2:rgba(247,239,224,.85);
-
-  --line:rgba(60,44,28,.13);
-  --line-2:rgba(60,44,28,.22);
-
-  /* 4.95:1 against --card; the light-theme equivalent remains legible. */
-  --neon:#00708f;
-  --neon-glow:0 0 10px rgba(0,112,143,.48);
-  --gold-glow:0 0 10px rgba(122,84,16,.55);
-  --peds-hi:#166a9e;
-
-  /* rail unchanged — see note 1 above */
-
-  --ok:#2f5426;
-  --ok-bg:rgba(47,84,38,.13);
-  --bad:#9c3620;
-  --bad-bg:rgba(156,54,32,.11);
-  --gold:#d9b44a;              /* unchanged — see note 2 above */
-  --gold-bg:rgba(154,107,31,.17);
-  --warn:#8a5a12;
-  --on-accent:#1a150e;
-  --gold-text:#7a5410;   /* bronze. The background gold measures 1.6:1 as text
-                            on parchment — unreadable. See the dark block. */
-
-  --glow:0 0 0 1px rgba(74,56,34,.06);
-  --sh:rgba(74,56,34,.16);
-  --sh-soft:rgba(74,56,34,.10);
-  --sh-deep:rgba(74,56,34,.24);
-  --sheen:linear-gradient(160deg,rgba(74,56,34,.02),rgba(74,56,34,.05));
-  --tint:rgba(74,56,34,.045);
-  --tint-2:rgba(74,56,34,.075);
-
-  --stem:#1c150e;
-  --prose:#33281c;
-  --strong:#000000;
+/* motion is a user setting first: this stops every transition and animation on the rebuilt screens too */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
 }

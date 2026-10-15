@@ -516,6 +516,7 @@
      calls the original first and mirrors its own gate (on, text, muted/collapsed unless forced). */
   const _say=clepSay;
   clepSay=function(text,opt){
+    if(['quiz','results'].includes(view.name))return;
     const r=_say.apply(this,arguments);
     try{
       const o=opt||{};

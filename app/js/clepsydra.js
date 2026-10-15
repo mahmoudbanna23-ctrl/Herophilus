@@ -39,6 +39,7 @@ function clepFigure(){
    changes and a second swap inside .46s simply does nothing. */
 const CL_SWAP_MS=460;
 function clepPose(name,opt){
+  if(['quiz','results'].includes(view.name))return;
   opt=opt||{};
   const el=$('clep'), fig=$('clepFig'), gh=$('clepGhost');
   if(!el||!fig)return;
@@ -296,6 +297,7 @@ function clepPartial(segs,n){
   return h;
 }
 function clepSay(text,opt){
+  if(['quiz','results'].includes(view.name))return;
   opt=opt||{};
   if(!CLEP.on||!text)return;
   if((CLEP.muted||CLEP.mini)&&!opt.force)return;
@@ -436,6 +438,7 @@ function clepAsk(){
 }
 let _clLastView='';
 function clepOnView(){
+  if(['quiz','results'].includes(view.name))return;
   const k=clepViewKey()+(view.name==='module'?':'+view.id:'');
   if(k===_clLastView)return;
   _clLastView=k;
@@ -488,6 +491,7 @@ function clMMSS(ms){
   return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
 }
 function clepPaint(){
+  if(['quiz','results'].includes(view.name))return;
   const el=$('clep'); if(!el||el.hidden)return;
   const s=sess();
   el.classList.toggle('timed',!!s);

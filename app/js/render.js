@@ -78,11 +78,12 @@ function render(){
   if((view.name==='home'||view.name==='mock')&&hasSavedMock()){
     p.insertAdjacentHTML('afterbegin','<p><button class="btn sec" onclick="offerMockResume()">Open saved mock exam</button></p>');
   }
-  inkMarkChips(p);
-  revealOnScroll(p);
+  const focusView=['quiz','results'].includes(view.name);
+  if(!focusView){inkMarkChips(p);revealOnScroll(p)}
+  else if(_revealObs){_revealObs.disconnect();_revealObs=null}
   /* The companion travels with the view: she repaints her readout and, the
      first time she meets a screen, explains it. */
-  clepPaint(); clepPlace(); clepOnView();
+  if(!focusView){clepPaint();clepPlace();clepOnView()}
 }
 
 /* Fade cards up as they enter the viewport — browse screens only. Reading

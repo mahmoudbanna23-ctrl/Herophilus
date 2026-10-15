@@ -34,11 +34,9 @@
      face and then reflow. See data/fonts.js for why they are base64 and not
      .woff2 files sitting next door. -->
 <script src="data/fonts.js"></script>
-<link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/print.css">
 <link rel="stylesheet" href="css/views.css">
 <!-- These four were injected by js/hall.js (rooms, warm skin, fonts). hall.js no longer
      mounts, so they are linked here, same order. type.css = the fonts: hall.js was the only link. -->
@@ -47,6 +45,10 @@
 <link rel="stylesheet" href="css/type.css">
 <link rel="stylesheet" href="css/city.css">
 <link rel="stylesheet" href="css/ui.css">
+<link rel="stylesheet" href="css/fonts-ui.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/focus.css" media="screen">
+<link rel="stylesheet" href="css/print.css">
 </head>
 <body>
 <!-- Ambient colour field. Fixed and non-interactive, sits behind .app.
@@ -141,6 +143,7 @@
 <script src="data/theory.js"></script>
 <script src="js/storage.js"></script>
 <script src="js/icons.js"></script>
+<script src="js/ui-icons.js"></script>
 <script src="js/theme.js"></script>
 <script src="js/utils.js"></script>
 <script src="js/theory.js"></script>

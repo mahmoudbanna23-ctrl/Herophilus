@@ -134,6 +134,7 @@
 
   /* ---- wire in ------------------------------------------------------------ */
   function apply(){
+    if(['quiz','results'].includes(curView().name)){filmsOff();return}
     const id=roomFor();
     document.body.dataset.room=id;
     plate(id);

@@ -200,8 +200,6 @@ function revealCase(){
      attempt made in this sitting, and the set's score is about the sitting. */
   Q.did[q.id]=g.ok;
   markDayActive();save();render();
-  /* a case is graded got/total, so partly right gets its own reading */
-  clepPose(g.ok?'dancing':(g.got>0?'thinking':'surprised')); clepSettle(3200);
 }
 /* Deliberate escape hatch for a learner who is stuck. It is never automatic,
    it scores nothing and it records no answer — otherwise a case with no
@@ -212,105 +210,13 @@ function peekCase(){
   render();
 }
 function vCase(p,q,m,prev){
-  /* A case is NEVER auto-revealed, not even one answered before — the whole
-     point is to type the diagnosis first (user's instruction, 2026-07-26).
-     A new run starts blank; movement within a run keeps its attempt. The
-     previous score is shown as a chip so the earlier score is not lost. */
-  const flagged=!!S.flags[q.id];
-  const g=(Q.shown&&!Q.peek)?gradeCase(q,Q.txt):null;
-  const verdict=Q.peek?['bad',ico('eye',18),'Revealed — not scored']
-    :!g?null:(g.ok?['ok',ico('target',18),'Spot on']
-    :g.got>0?['part',ico('hourglass',18),'Partly right — '+g.got+' of '+g.total+' key points']
-    :['bad',ico('laurel',18),'Not quite']);
-
-  const qhead=`<div class="qreading-head"><span>${esc(chapterName(q.chapter))}</span>
-    <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length}</button></div>`;
-  const qtools=`<div class="qtools qcase-tools"><div class="qhead">
-    <button class="tb-btn" style="padding-left:0" onclick="go({name:'module',id:'${q.module}'})">←</button>
-    <span class="pill" style="background:${m.hex}">${esc(chapterName(q.chapter))}</span>
-    <span class="pill ghost">${ico('stylus',13)} Case</span>
-    ${bankPills(q)}
-    ${q.source?`<span class="pill ghost">${mdInline(q.source)}</span>`:''}
-    </div></div>`;
-  let h=`<div class="qwrap">${qhead}<div class="qcard">
-     <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
-     <div class="stem-tools">${markbar(q.id)}</div>
-    ${qFigure(q)}
-    <div class="caseask">${ico('asclepius',17)} What is your diagnosis?</div>
-    <textarea id="caseInput" class="caseinput" rows="3" ${Q.shown?'disabled':''}
-      placeholder="Type the diagnosis in your own words — wording is not marked, the concepts are."
-      oninput="Q.txt=this.value;Q.caret=this.selectionStart"
-      >${esc(Q.txt||'')}</textarea>`;
-
-  if(!Q.shown&&prev&&prev.text){
-    h+=`<div class="lastgo">${ico('hourglass',15)} You answered this before — ${prev.got} of ${prev.total} key points. Have another go.</div>`;
-  }
-
-  if(!Q.shown){
-    h+=`<div class="qactions"><div class="qaction-primary">
-      <button class="btn go" onclick="revealCase()">Check my answer</button></div>
-      <div class="qaction-secondary"><button class="btn sec" onclick="peekCase()">${ico('eye',15)} Reveal</button>
-      <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
-      <div style="margin-left:auto;display:flex;gap:9px">
-        ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
-        <button class="btn sec" onclick="navQ(1)">Skip →</button>
-      </div></div></div>`;
-  }else{
-    h+=`<div class="verdict ${verdict[0]}"><span class="big">${verdict[1]}</span>${verdict[2]}</div>`;
-    h+=`<div class="modelans"><b>The source's diagnosis</b><div>${md(q.answer)}</div></div>`;
-    if((q.keys||[]).length){
-      h+=`<div class="keys"><div class="keys-h">What was being looked for</div>`;
-      q.keys.forEach((k,i)=>{
-        const hit=g?g.hits[i]:false;
-        h+=`<div class="key ${g?(hit?'hit':'miss'):''}"><span>${g?(hit?'\u2713':'\u00d7'):'\u2022'}</span>
-            <span>${esc(k.label)}</span></div>`;
-      });
-      h+=`</div>`;
-    }
-    if(!Q.peek&&(!prev||prev.conf===undefined)){
-      h+=`<div class="conf"><div class="conf-q">${ico('target',15)} How sure were you? This sets when it comes back.</div>
-       <div class="conf-btns">
-        <button class="conf-b" onclick="setConf('${q.id}',0)">Guessed</button>
-        <button class="conf-b" onclick="setConf('${q.id}',1)">Unsure</button>
-        <button class="conf-b" onclick="setConf('${q.id}',2)">Confident</button>
-       </div></div>`;
-    }
-    const hasExp=q.explanation&&q.explanation.trim().length>0;
-    h+=`<div class="explain">
-      <button class="ex-head" onclick="toggleExp(this)">${ico('lamp',16)} Explain this case<span class="chev">▾</span></button>
-      <div class="ex-body">${hasExp?md(q.explanation):'<div class="noexp">No explanation came with this case.</div>'}
-      ${q.objective?`<div class="objective"><b>${ico('laurel',15)} Educational objective</b>${md(q.objective).replace(/<\/?p>/g,'')}</div>`:''}
-      </div></div>`;
-    const th=THEORY_LOCKED?null:qTheory(q.id);
-    if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">
-      ${ico('scroll',16)} <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
-      <span style="margin-left:auto">&rarr;</span></button>`;
-    h+=`<div class="qactions">
-      <button class="btn sec flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
-      <div style="margin-left:auto;display:flex;gap:9px">
-        ${Q.i>0?'<button class="btn sec" onclick="navQ(-1)">←</button>':''}
-        <button class="btn go" onclick="navQ(1)">${Q.i===Q.ids.length-1?'Finish':'Next →'}</button>
-      </div></div>`;
-  }
-   h+=`${qtools}</div></div>`;
-  p.innerHTML=h;
-  const stemEl=p.querySelector('.stem');
-  if(stemEl){
-    applyHighlights(stemEl,S.hl[q.id]||[]);
-    stemEl.addEventListener('mouseup',onStemSelect);
-    stemEl.addEventListener('touchend',onStemSelect);
-  }
-  /* The box is rebuilt from Q.txt by every render, and a render happens under
-     the student's hands whenever they flag the question or pick a highlighter.
-     Q.txt is kept current on the keystroke (see the textarea's oninput), so the
-     words survive; the caret has to be put back by hand, or a half-typed answer
-     restarts from the beginning of the line. */
-  const inp=document.getElementById('caseInput');
+  renderFocusQuestion(p,q,prev,true);
+  const inp=$('caseInput');
   if(inp&&!Q.shown){
-    inp.focus();
+    inp.focus({preventScroll:true});
     const c=Q.caret==null?inp.value.length:Math.min(Q.caret,inp.value.length);
-    try{inp.setSelectionRange(c,c)}catch(e){}
-    inp.addEventListener('keydown',e=>{        // Ctrl/Cmd+Enter submits
+    inp.setSelectionRange(c,c);
+    inp.addEventListener('keydown',e=>{
       if(e.key==='Enter'&&(e.ctrlKey||e.metaKey)){e.preventDefault();revealCase()}
     });
   }
@@ -335,139 +241,98 @@ function toggleStrike(i,e){
   if(btn&&btn.focus)btn.focus();
 }
 
+/* Explanation-only rendering: three explicit debris patterns. Stored text and
+   stem/option renderers are untouched. md still owns paragraphs and tables. */
+function explanationHTML(text){
+  const inline=s=>md(s).replace(/`([^`\n]+)`/g,'<code>$1</code>');
+  let out='',plain=[];
+  const flush=()=>{if(plain.length){out+=inline(plain.join('\n'));plain=[]}};
+  String(text||'').split('\n').forEach(line=>{
+    if(line.startsWith('> ')){flush();out+='<blockquote>'+inline(line.slice(2))+'</blockquote>'}
+    else if(line.includes(' • ')){flush();out+='<ul>'+line.split(' • ').map(s=>'<li>'+inline(s)+'</li>').join('')+'</ul>'}
+    else plain.push(line);
+  });
+  flush();return out;
+}
+function focusHeader(q){
+  return `<header class="focus-header">
+    <button class="tb-btn focus-btn" onclick="go({name:'module',id:'${q.module}'})">← Exit</button>
+    <div class="focus-context"><span class="focus-label">${Q.exam?'Timed exam':q.type==='case'?'Case practice':'Question practice'}</span><span>${esc(chapterName(q.chapter))}</span></div>
+    <span class="focus-position">${Q.i+1} / ${Q.ids.length}</span>
+    ${Q.exam?`<span class="exam-clock ${examClockClass()}" id="examClock" aria-label="Time remaining">${examClockText()}</span>`:''}
+    <button class="focus-btn" id="questionsButton" aria-haspopup="dialog" onclick="openJump()">Questions <kbd>J</kbd></button>
+  </header>`;
+}
+function focusNotes(q){
+  const note=(S.notes||{})[q.id];
+  return `<div class="focus-notes"><button class="focus-btn" onclick="toggleNote('${q.id}')">${note&&note.txt?'Your note':'Notes'}</button>
+    ${Q.shown?`<button class="focus-btn" onclick="openReport('${q.id}')">Report a problem</button>`:''}</div>
+    ${Q.noteOpen===q.id?`<div class="qnote"><label for="qNote">Your private note</label><textarea class="caseinput" id="qNote" rows="3" oninput="saveNote('${q.id}',this.value)">${esc(note?note.txt:'')}</textarea><span id="qNoteSay">${note&&note.txt?'Saved '+bakWhen(note.at):''}</span></div>`:''}`;
+}
+function focusFeedback(q,prev,isCase){
+  if(!Q.shown||Q.exam)return '';
+  const g=isCase&&!Q.peek?gradeCase(q,Q.txt):null;
+  const ok=isCase?g&&g.ok:Q.sel===q.answer;
+  const verdict=Q.peek?'Revealed — not scored':isCase?(ok?'Correct':g.got?'Partly correct — '+g.got+' / '+g.total+' key points':'Not correct'):(ok?'Correct':'Incorrect — correct answer: '+OPT_LETTERS[q.answer]);
+  let h=`<section class="focus-feedback" aria-label="Answer feedback"><p class="focus-verdict ${ok?'ok':'bad'}" role="status">${Q.peek?'':ok?'✓ ':'× '}${verdict}</p>`;
+  if(isCase){
+    h+=`<div class="modelans"><b>The source's diagnosis</b>${md(q.answer)}</div>`;
+    if((q.keys||[]).length)h+=`<ul class="focus-keys">${q.keys.map((k,i)=>`<li>${g?(g.hits[i]?'✓ ':'× '):''}${esc(k.label)}</li>`).join('')}</ul>`;
+  }
+  h+=`<div class="explain"><button class="ex-head open" aria-expanded="true" onclick="toggleExp(this)">Explanation <span class="chev">⌄</span></button>
+    <div class="ex-body open">${q.explanation&&q.explanation.trim()?explanationHTML(q.explanation):'<p class="noexp">No explanation was provided for this '+(isCase?'case':'question')+'.</p>'}
+    ${q.objective?`<div class="objective"><b>Educational objective</b>${explanationHTML(q.objective)}</div>`:''}</div></div>`;
+  if(!Q.peek){
+    const conf=prev&&prev.conf;
+    h+=`<div class="conf"><div class="conf-q">How sure were you? <span>This sets your review interval.</span></div><div class="conf-btns">${['Guessed','Unsure','Confident'].map((label,i)=>`<button class="conf-b ${conf===i?'on':''}" aria-pressed="${conf===i}" onclick="setConf('${q.id}',${i})">${label}</button>`).join('')}</div></div>`;
+  }
+  const th=THEORY_LOCKED?null:qTheory(q.id);
+  if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">Read the notes: ${esc(th.h)} →</button>`;
+  return h+'</section>';
+}
+function renderFocusQuestion(p,q,prev,isCase){
+  const flagged=!!S.flags[q.id];
+  let h=`<div class="focus-quiz" data-subject="${q.module}">${focusHeader(q)}<article class="focus-reading">
+    <div class="focus-meta"><span class="subject-tint">${esc((moduleOf(q.module)||{}).name||q.module)}</span>${bankPills(q)}${q.source?`<span>${mdInline(q.source)}</span>`:''}</div>
+    <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
+    ${qFigure(q)}
+    <div class="focus-marker">${markbar(q.id)}</div>`;
+  if(isCase){
+    h+=`<label class="caseask" for="caseInput">What is your diagnosis?</label><textarea id="caseInput" class="caseinput" rows="3" ${Q.shown?'disabled':''} placeholder="Type your diagnosis" oninput="Q.txt=this.value;Q.caret=this.selectionStart">${esc(Q.txt||'')}</textarea>`;
+  }else{
+    h+='<div class="opts" aria-label="Answer options">';
+    const answered=Q.shown||Q.sel!==null;
+    q.options.forEach((o,i)=>{
+      const state=Q.shown?(i===q.answer?'correct':i===Q.sel?'wrong':''):i===Q.sel?'sel':'';
+      const struck=!answered&&strikes.has(i);
+      const label=state==='correct'?'✓ Correct':state==='wrong'?'× Wrong':state==='sel'?'Selected':'';
+      h+=`<div class="opt ${state} ${struck?'struck':''}"><button type="button" class="opt-answer" aria-pressed="${i===Q.sel}" ${Q.shown?'disabled':''} onclick="pick(${i},event.detail===0)"><span class="ltr">${OPT_LETTERS[i]}</span><span class="opt-text">${esc(o)}</span><span class="mark">${label}</span></button><button type="button" class="strike-btn" ${answered?'disabled tabindex="-1"':''} aria-label="${struck?'Restore':'Strike out'} option ${OPT_LETTERS[i]}" aria-pressed="${struck}" onclick="toggleStrike(${i},event)" onkeydown="if(event.key==='Enter'||event.key===' '||(/^[A-Za-z]$/.test(event.key)&&OPT_LETTERS.indexOf(event.key.toUpperCase())<${q.options.length}))event.stopPropagation()">${ico('strike',16)}</button></div>`;
+    });
+    h+='</div>';
+  }
+  const next=Q.i===Q.ids.length-1?(Q.exam?'Hand in paper':'Finish set'):'Next question →';
+  h+=`<div class="focus-actions"><button class="focus-btn" onclick="navQ(-1)" ${Q.i===0?'disabled':''}>← Previous</button>
+    <button class="focus-btn flag ${flagged?'on':''}" aria-pressed="${flagged}" onclick="toggleFlag('${q.id}')">${flagged?'Flagged':'Flag'} <kbd>F</kbd></button>
+    ${!Q.shown?`<button class="focus-btn" onclick="navQ(1)">Skip</button>${isCase?'<button class="focus-btn" onclick="peekCase()">Reveal</button>':''}`:'<span class="focus-action-spacer"></span>'}
+    <button class="focus-btn primary" ${!isCase&&!Q.exam&&!Q.shown&&Q.sel===null?'disabled':''} onclick="${Q.exam||Q.shown?'navQ(1)':isCase?'revealCase()':'reveal()'}">${Q.exam||Q.shown?next:'Check answer'}</button></div>`;
+  if(Q.exam)h+=`<div class="focus-exam-footer"><span>${Q.ids.filter(id=>!(id in Q.exam.picked)).length} unanswered</span><button class="focus-btn" onclick="examConfirmFinish()">Hand in paper</button></div>`;
+  h+=focusFeedback(q,prev,isCase)+focusNotes(q);
+  if(!Q.shown&&!Q.exam&&prev){
+    if(isCase&&prev.text)h+=`<details class="focus-previous"><summary>Previous attempt</summary>${prev.got} / ${prev.total} key points</details>`;
+    else if(Number.isInteger(prev.pick)&&prev.pick>=0&&prev.pick<q.options.length)h+=`<details class="focus-previous"><summary>Previous choice</summary>${OPT_LETTERS[prev.pick]} · ${esc(q.options[prev.pick])}</details>`;
+  }
+  p.innerHTML=h+'</article></div>';
+  const stem=p.querySelector('.stem');
+  applyHighlights(stem,S.hl[q.id]||[]);
+  stem.addEventListener('mouseup',onStemSelect);stem.addEventListener('touchend',onStemSelect);
+}
 function vQuiz(p){
   const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
-  /* backticks, not quotes: ico() contains single quotes, which would close a
-     single-quoted string and take the whole script down with it */
-  if(!q){p.innerHTML=`<div class="empty"><div class="big">${ico('laurel',46)}</div><h3>Set complete</h3></div>`;return}
-  const m=moduleOf(q.module)||{hex:'#7a6a55'};
-  const prev=S.answers[q.id];
+  if(!q){p.innerHTML='<p>Set complete</p>';return}
   if(strikeQuestion!==q.id){strikeQuestion=q.id;strikes=new Set()}
-  if(q.type==='case'){vCase(p,q,m,prev);return}
-  const flagged=!!S.flags[q.id];
-  const drawRule=ruleFresh; ruleFresh=false;
-
-  const qhead=`<div class="qreading-head"><span>${esc(chapterName(q.chapter))}</span>
-     <button class="qprog" title="Jump to a question (J)" onclick="openJump()">${Q.i+1} / ${Q.ids.length}</button>
-     ${Q.exam?`<span class="exam-clock ${examClockClass()}" id="examClock" title="Time left in this paper">${examClockText()}</span>`:''}
-    </div>`;
-  const qtools=`<div class="qtools"><div class="qhead">
-    <button class="tb-btn" style="padding-left:0" onclick="go({name:'module',id:'${q.module}'})">←</button>
-    <span class="folio-ch" style="--mod:${m.hex}">${esc(chapterName(q.chapter))}</span>
-    ${bankPills(q)}
-    ${q.source?`<span class="pill ghost">${mdInline(q.source)}</span>`:''}
-    </div></div>`;
-  /* stage = the dim, still plate behind the page (the eyes room only; every other subject gets the
-     plain veil); folio = the text column. Styles: css/ui.css. */
-  let h=`<div class="qwrap"><div class="stage${q.module==='ophtho'?' stage-eyes':''}" aria-hidden="true"></div>${qhead}<div class="qcard folio">
-    <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
-    <div class="stem-tools">${markbar(q.id)}</div>
-    ${qFigure(q)}
-    <div class="opts">`;
-  q.options.forEach((o,i)=>{
-    let cls='opt';
-    if(Q.shown){ if(i===q.answer)cls+=' correct'; else if(i===Q.sel)cls+=' wrong' }
-    else if(i===Q.sel)cls+=' sel';
-    const answered=Q.shown||Q.sel!==null||(Q.exam&&Object.prototype.hasOwnProperty.call(Q.exam.picked,q.id));
-    const struck=!answered&&strikes.has(i);
-    if(struck)cls+=' struck';
-    /* the mark is a glyph AND a word, so right/wrong never rests on colour alone */
-    const mark=Q.shown?(i===q.answer?'<span class="mark"><span aria-hidden="true">\u2713</span> Correct</span>':(i===Q.sel?'<span class="mark"><span aria-hidden="true">\u00d7</span> Wrong</span>':'')):'';
-    /* the gold rule: drawn when the pick is made, simply there once the answer is shown */
-    const rule=(i===Q.sel)?`<i class="rule${drawRule&&!Q.shown?' draw':''}" aria-hidden="true"></i>`:'';
-    h+=`<div class="${cls} row">
-      <button type="button" class="opt-answer" ${Q.shown?'disabled':''} onclick="pick(${i},event.detail===0)">
-      <span class="ltr">${OPT_LETTERS[i]}</span><span class="opt-text">${esc(o)}</span>${mark}</button>
-      ${answered?'':`<button type="button" class="strike-btn" aria-label="${struck?'Restore option':'Strike out option'}" aria-pressed="${struck}" onclick="toggleStrike(${i},event)" onkeydown="if(event.key==='Enter'||event.key===' '||(/^[A-Za-z]$/.test(event.key)&&OPT_LETTERS.indexOf(event.key.toUpperCase())<${q.options.length}))event.stopPropagation()">${ico('strike',16)}</button>`}${rule}</div>`;
-  });
-  h+=`</div>`;
-  /* Under exam conditions the previous attempt is somebody else's paper. */
-  if(!Q.shown&&!Q.exam&&prev&&Number.isInteger(prev.pick)&&prev.pick>=0&&prev.pick<q.options.length){
-    h+=`<details class="lastgo"><summary>Previous choice</summary>${OPT_LETTERS[prev.pick]} &middot; ${esc(q.options[prev.pick])}</details>`;
-  }
-
-  if(Q.exam){
-    /* No Check answer here, and that is the whole point: Q.shown stays false
-       for the length of the paper, so the verdict, the confidence rating, the
-       explanation and the theory link below are never built at all. Moving on
-       is the only thing this row does. */
-    const last=Q.i+1>=Q.ids.length;
-    const left=Q.ids.filter(id=>!(id in Q.exam.picked)).length;
-    h+=`<div class="qactions">
-      <div class="qaction-primary"><button type="button" class="act act-go" onclick="navQ(1)">${last?'Last one — hand in':'Next'} →</button></div>
-      <div class="qaction-secondary">
-        ${Q.i>0?'<button type="button" class="act" aria-label="Previous question" onclick="navQ(-1)">←</button>':''}
-        <button type="button" class="act flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
-        <span class="ch-count">${left} unanswered</span>
-        <button type="button" class="act" onclick="examConfirmFinish()">Hand in</button>
-      </div></div>`;
-  }else if(!Q.shown){
-    h+=`<div class="qactions">
-      <div class="qaction-primary"><button type="button" class="act act-go" ${Q.sel===null?'disabled':''} onclick="reveal()">Check answer</button></div>
-      <div class="qaction-secondary">
-        <button type="button" class="act flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
-        ${Q.i>0?'<button type="button" class="act" aria-label="Previous question" onclick="navQ(-1)">←</button>':''}
-        <button type="button" class="act" onclick="navQ(1)">Skip →</button>
-      </div></div>`;
-  }else{
-    const ok=Q.sel===q.answer;
-    h+=`<div class="verdict ${ok?'ok':'bad'}"><span class="big">${ok?ico('target',26):ico('laurel',26)}</span>
-      ${ok?'Correct.':'Not quite — the answer is '+OPT_LETTERS[q.answer]}</div>`;
-
-    if(!prev||prev.conf===undefined){
-      h+=`<div class="conf"><div class="conf-q">${ico('target',15)} How sure were you? This sets when it comes back.</div>
-       <div class="conf-btns">
-        <button class="conf-b" onclick="setConf('${q.id}',0)">Guessed</button>
-        <button class="conf-b" onclick="setConf('${q.id}',1)">Unsure</button>
-        <button class="conf-b" onclick="setConf('${q.id}',2)">Confident</button>
-       </div></div>`;
-    }
-
-    const hasExp=q.explanation&&q.explanation.trim().length>0;
-    h+=`<div class="explain">
-      <button class="ex-head" onclick="toggleExp(this)">${ico('lamp',16)} Explain this answer<span class="chev">▾</span></button>
-      <div class="ex-body">${hasExp?md(q.explanation):'<div class="noexp">No explanation came with this question.</div>'}
-      ${q.objective?`<div class="objective"><b>${ico('laurel',15)} Educational objective</b>${md(q.objective).replace(/<\/?p>/g,'')}</div>`:''}
-      </div></div>`;
-
-    const th=THEORY_LOCKED?null:qTheory(q.id);
-    if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">
-      ${ico('scroll',16)} <span>Read the notes on this &mdash; <b>${esc(th.h)}</b></span>
-      <span style="margin-left:auto">&rarr;</span></button>`;
-
-    /* An emptied note is kept as a stamped blank so it can win a merge (see
-       saveNote), which means a record with no text is not a note. */
-    const noteRec=(S.notes||{})[q.id];
-    const note=(noteRec&&noteRec.txt)?noteRec:null;
-    const reported=!!(S.reports||{})[q.id];
-    h+=`<div class="qfoot">
-      <button class="lnk ${note?'has':''}" onclick="toggleNote('${q.id}')">${note?'Your note':'Write a note on this'}</button>
-      <button class="lnk ${reported?'has':''}" onclick="openReport('${q.id}')">${reported?'You reported this':'Something wrong here?'}</button>
-     </div>`;
-    if(note||Q.noteOpen===q.id){
-      h+=`<div class="qnote">
-        <span class="lb">Your note &mdash; only you see this</span>
-        <textarea class="caseinput" id="qNote" rows="3" placeholder="Why you got it wrong, the bit you keep forgetting, a mnemonic…"
-          oninput="saveNote('${q.id}',this.value)">${esc(note?note.txt:'')}</textarea>
-        <div class="say" id="qNoteSay">${note?'Saved '+bakWhen(note.at):''}</div>
-       </div>`;
-    }
-
-    h+=`<div class="qactions">
-      <div class="qaction-primary"><button type="button" class="act act-go" onclick="navQ(1)">${Q.i===Q.ids.length-1?'Finish':'Next →'}</button></div>
-      <div class="qaction-secondary">
-        <button type="button" class="act flag ${flagged?'on':''}" onclick="toggleFlag('${q.id}')">${ico('laurel',15)} ${flagged?'Flagged':'Flag'}</button>
-        ${Q.i>0?'<button type="button" class="act" aria-label="Previous question" onclick="navQ(-1)">←</button>':''}
-      </div></div>`;
-  }
-  h+=`${qtools}</div></div>`;
-  p.innerHTML=h;
-  const stemEl=p.querySelector('.stem');
-  if(stemEl){
-    applyHighlights(stemEl,S.hl[q.id]||[]);
-    stemEl.addEventListener('mouseup',onStemSelect);
-    stemEl.addEventListener('touchend',onStemSelect);
-  }
+  ruleFresh=false;
+  if(q.type==='case'){vCase(p,q,moduleOf(q.module),S.answers[q.id]);return}
+  renderFocusQuestion(p,q,S.answers[q.id],false);
 }
 function pick(i,byKey){
   if(Q.shown||(Q.exam&&Q.exam.done))return;
@@ -513,8 +378,6 @@ function reveal(){
   Q.did[q.id]=ok;                         /* what THIS sitting scored — see finishSet */
   scheduleSRS(q.id,ok);
   markDayActive();save();render();
-  /* she reacts, then settles back to the screen's own pose */
-  clepPose(ok?'dancing':'surprised'); clepSettle(3200);
 }
 /* The three ratings have to differ in what they DO, not only in what they
    store, or the heading above them — "this sets when it comes back" — is a
@@ -555,9 +418,6 @@ function navQ(d){
   if(n<0)return;
   if(n>=Q.ids.length){finishSet();return}
   moveQ(n);render();
-  /* a new question: back to the screen's own pose. clepOnView cannot do this —
-     the view key has not changed, so its dedupe returns early. */
-  clearTimeout(CLEP.settleT); clepPose(clepViewPose());
 }
 /* ⚠️ THIS SCORES THE SITTING, NOT THE CHAPTER. It used to count Q.ids through
    isAnswered/isCorrect, which read S.answers — lifetime state. So a student who
@@ -574,13 +434,11 @@ function finishSet(){
   const right=ids.filter(id=>Q.did[id]).length;
   const missed=done-right;
   const mins=Math.round((Date.now()-Q.t0)/60000);
-  const pct=done?Math.round(right/done*100):0;
 
   /* Nothing answered is not a score of zero — it is not a score at all, and
      dressing it as one is how the end of a set started reading as a machine
      talking to itself. */
   if(!done){
-    clepPose('presenting'); clepSettle(5000);
     showModal(`<h3>${ico('scroll',40)} End of the set</h3>
      <p>You reached the end without answering anything, so there is nothing to score. Everything here is still waiting whenever you want it.</p>
      <div class="modal-actions">
@@ -590,9 +448,6 @@ function finishSet(){
     return;
   }
 
-  if(pct>=80&&done>=3)confetti();
-  /* the end of a set is the one moment she gets to jump */
-  clepPose(pct>=80&&done>=3?'jumping':'presenting'); clepSettle(5000);
   const skipped=Q.ids.length-done;
   const wrong=ids.filter(id=>!Q.did[id]);
   go({name:'results',result:{done:done,right:right,missed:missed,skipped:skipped,mins:mins,wrong:wrong}});
@@ -600,19 +455,23 @@ function finishSet(){
 function vResults(p){
   const r=view.result;
   if(!r){go({name:'home'});return}
-  const quiet=r.missed
-    ?`${r.missed} answer${r.missed===1?' is':'s'} waiting for review.${r.skipped?` ${r.skipped} skipped, still unanswered.`:''}`
-    :`No wrong answers in this session.${r.skipped?` ${r.skipped} skipped, still unanswered.`:''}`;
-  let h=`<section class="session-results"><h1>Session result</h1><div class="result-grid"><section class="result-account"><div class="score">${r.right} / ${r.done}</div>
-    <p class="quiet">${quiet}</p><div class="result-actions"><button class="btn go" onclick="go({name:'quiz'})">Continue</button>
-    <button class="btn sec" onclick="go({name:'home'})">Return home</button></div>${r.mins?`<p class="quiet result-mins">${r.mins} minute${r.mins===1?'':'s'} taken</p>`:''}</section>`;
-  if(r.wrong.length)h+=`<section class="wrong-queue"><h2>Wrong answers${r.missed?` (${r.missed})`:''}</h2>`;
-  if(r.wrong.length){
-    h+=`<div class="wrong-list">${r.wrong.map(id=>{const q=QUESTIONS.find(x=>x.id===id);return `<div class="wrong-row">${q?mdInline(q.stem):'Question'}</div>`}).join('')}</div>
-      <button class="btn go" onclick="startQuiz(${JSON.stringify(r.wrong).replace(/"/g,'&quot;')},'Session review — wrong answers')">Review wrong answers</button>`;
-  }
-  if(r.wrong.length)h+=`</section>`;
-  p.innerHTML=h+`</div></section>`;
+  const current=QUESTIONS.find(q=>q.id===Q.ids[Q.i]);
+  const mod=current&&moduleOf(current.module);
+  const history=Q.ids.filter(id=>isAnswered(id));
+  const historicalRight=history.filter(id=>isCorrect(id)).length;
+  const wrong=r.wrong||[];
+  p.innerHTML=`<section class="focus-results">
+    <div class="focus-label">Practice complete</div><h1>Session results</h1><p class="result-title">${esc(Q.title)}</p>
+    <div class="focus-scores"><section><h2>Set score</h2><div class="focus-score">${Math.round(r.right/r.done*100)}<small>%</small></div><p>${r.right} correct / ${r.done} submitted</p><p class="focus-muted">${r.skipped} skipped · ${r.mins} min</p></section>
+    <section><h2>Historical accuracy</h2><div class="focus-score secondary">${history.length?Math.round(historicalRight/history.length*100)+'<small>%</small>':'—'}</div><p>${historicalRight} correct / ${history.length} answered</p><p class="focus-muted">Latest saved answers across this set,<br>including this session.</p></section></div>
+    <nav class="focus-next" aria-label="Next steps">
+      <button class="focus-next-action" onclick="go({name:'module',id:'${current?current.module:''}'})"><span class="focus-next-ic">${uiIco('arrow-left',18)}</span><span class="focus-next-tx">Back to subject<small>${esc(mod?mod.name:'Subject')}</small></span><span class="focus-next-go">${uiIco('chevron-right',16)}</span></button>
+      <button class="focus-next-action" ${wrong.length?'':'disabled'} onclick="startQuiz(${JSON.stringify(wrong).replace(/"/g,'&quot;')},'Review wrong answers')"><span class="focus-next-ic">${uiIco('rotate',18)}</span><span class="focus-next-tx">Review wrong answers<small>${wrong.length?wrong.length+' question'+(wrong.length===1?'':'s')+' from this session':'No wrong answers to review'}</small></span><span class="focus-next-go">${uiIco('chevron-right',16)}</span></button>
+      <button class="focus-next-action" onclick="go({name:'home'})"><span class="focus-next-ic">${uiIco('home',18)}</span><span class="focus-next-tx">Home<small>Return to your dashboard</small></span><span class="focus-next-go">${uiIco('chevron-right',16)}</span></button>
+    </nav>
+    <button class="focus-btn result-continue" onclick="go({name:'quiz'})">${uiIco('chevron-left',16)}Return to this set</button>
+    ${wrong.length?`<details class="focus-wrong"><summary>Wrong answers (${wrong.length})</summary>${wrong.map(id=>{const q=QUESTIONS.find(x=>x.id===id);return `<div>${q?md(q.stem):'Question'}</div>`}).join('')}</details>`:''}
+  </section>`;
 }
 /* ---- Exam conditions ----------------------------------------------------
    The mock page has always promised three things: random order, a running
@@ -693,8 +552,6 @@ function examFinish(byClock){
   const mins=Math.floor(secs/60), rem=secs%60;
   const taken=mins?`${mins} min ${rem} s`:`${rem} s`;
   const blank=ids.length-answered.length;
-  if(pct>=80)confetti();
-  clepPose(pct>=80?'jumping':'presenting'); clepSettle(5000);
   const face=ico(pct>=90?'laurel':pct>=75?'target':pct>=50?'hourglass':'scroll',40);
   showModal(`<h3>${face} ${pct}%</h3>
    <p>${byClock?'Time is up. ':''}<strong>${right}</strong> right out of <strong>${ids.length}</strong>, in ${taken}.${blank?` <strong>${blank}</strong> left blank, counted as wrong.`:''}</p>
@@ -847,7 +704,7 @@ function copyReport(qid){
 }
 
 function toggleFlag(id){S.flags[id]=!S.flags[id];save();render();toast(S.flags[id]?'Flagged':'Flag removed')}
-function toggleExp(b){b.classList.toggle('open');b.nextElementSibling.classList.toggle('open')}
+function toggleExp(b){const open=b.classList.toggle('open');b.setAttribute('aria-expanded',String(open));b.nextElementSibling.classList.toggle('open')}
 
 
 
@@ -855,23 +712,23 @@ function toggleExp(b){b.classList.toggle('open');b.nextElementSibling.classList.
 /* ============ JUMP NAVIGATOR ============ */
 function openJump(){
   const n=Q.ids.length;
-  let h=`<h3>${ico('target',19)} Go to question</h3>
+  let h=`<h3 id="questionsTitle">Questions</h3>
    <p style="margin-bottom:15px">${n} question${n===1?'':'s'} in this set. Type a number or pick one from the grid.</p>
    <div class="jumprow">
-     <input class="jumpin" id="jumpNum" type="number" min="1" max="${n}" placeholder="e.g. ${Math.min(100,n)}"
+     <input class="jumpin" id="jumpNum" aria-label="Question number" type="number" min="1" max="${n}" placeholder="e.g. ${Math.min(100,n)}"
        onkeydown="if(event.key==='Enter'){event.preventDefault();jumpGo()}">
      <button class="btn go" onclick="jumpGo()">Go</button>
      <button class="btn sec" onclick="jumpNextUnanswered()">Next unanswered</button>
      ${Q.exam?'':'<button class="btn sec" onclick="jumpFirstWrong()">First wrong</button>'}
    </div>
    <div class="jumpkey">
-     <span class="k"><span class="sw" style="background:var(--neuro)"></span>Current</span>
+     <span class="k"><span class="sw" style="background:var(--selected);border-color:var(--text-2)"></span>Current</span>
      ${Q.exam
        ? `<span class="k"><span class="sw" style="background:var(--fill);border-color:var(--tx)"></span>Answered</span>`
        : `<span class="k"><span class="sw" style="background:var(--ok-bg);border-color:var(--ok)"></span>Correct</span>
      <span class="k"><span class="sw" style="background:var(--bad-bg);border-color:var(--bad)"></span>Wrong</span>`}
      <span class="k"><span class="sw" style="background:var(--card)"></span>Not answered</span>
-     <span class="k"><span class="sw" style="background:var(--gold)"></span>Flagged</span>
+     <span class="k"><span class="sw" style="background:var(--surface-3)"></span>Flagged</span>
    </div>
    <div class="qgrid" id="qgrid">`;
   Q.ids.forEach((id,i)=>{
@@ -883,11 +740,12 @@ function openJump(){
     else if(Q.exam){ if(id in Q.exam.picked)cls.push('done') }
     else if(isAnswered(id))cls.push(isCorrect(id)?'ok':'bad');
     if(S.flags[id])cls.push('flagged');
-    h+=`<button class="${cls.join(' ')}" onclick="jumpTo(${i})">${i+1}</button>`;
+    const status=Q.exam?(id in Q.exam.picked?'Answered':'Not answered'):isAnswered(id)?(isCorrect(id)?'Correct':'Wrong'):'Not answered';
+    h+=`<button class="${cls.join(' ')}" aria-label="Question ${i+1}, ${status}${S.flags[id]?', flagged':''}" ${i===Q.i?'aria-current="true"':''} onclick="jumpTo(${i})">${i+1}<small>${Q.exam?(id in Q.exam.picked?'✓':''):isAnswered(id)?(isCorrect(id)?'✓':'×'):''}${S.flags[id]?' F':''}</small></button>`;
   });
   h+=`</div><div class="modal-actions" style="margin-top:18px">
      <button class="btn sec" onclick="closeModal()">Close</button></div>`;
-  showModal(h,true);
+  showModal(h,true,'questions');
   setTimeout(()=>{
     const inp=$('jumpNum');if(inp&&inp.focus)inp.focus();
     const cur=document.querySelector('.qg.cur');
@@ -897,7 +755,7 @@ function openJump(){
 function jumpTo(i){
   if(i<0||i>=Q.ids.length)return;
   moveQ(i);
-  closeModal();render();window.scrollTo(0,0);
+  closeModal();render();window.scrollTo(0,0);$('questionsButton')?.focus({preventScroll:true});
 }
 function jumpGo(){
   const inp=$('jumpNum');
@@ -1018,8 +876,8 @@ function clearHl(){
 function markbar(qid){
   const n=(S.hl[qid]||[]).length;
   let h=`<div class="mkbar"><span class="lb">${ico('stylus',14)} Marker</span>`;
-  PENS.forEach(([c,name])=>{
-    h+=`<button class="pen ${c} ${armed===c?'on':''}" title="${name} highlighter" onclick="setPen('${c}')"></button>`;
+  PENS.forEach(([c,name],i)=>{
+    h+=`<button class="pen ${c} ${armed===c?'on':''}" title="${name} highlighter (${i+1})" aria-label="${name} highlighter (${i+1})" aria-pressed="${armed===c}" onclick="setPen('${c}')">${i+1}</button>`;
   });
   h+=`<button class="pen er ${armed==='er'?'on':''}" title="Eraser" onclick="setPen('er')">&#9003;</button>`;
   if(n)h+=`<button class="clr" onclick="clearHl()">Clear all</button>`;
