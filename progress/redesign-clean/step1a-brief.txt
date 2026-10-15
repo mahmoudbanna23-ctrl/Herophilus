@@ -1,0 +1,76 @@
+WRITE GRANT (overrides AGENTS.md read-only default, this job only): edit/create files under
+  D:\claude os\Medical school\Herophilus-redesign\app\  (EXCEPT the frozen files below)
+  D:\claude os\Medical school\Herophilus-redesign\progress\redesign-clean\
+No git writes. Never touch D:\claude os\Medical school\Herophilus (the live copy).
+FROZEN, never edit: app\data\*, app\js\storage.js, app\js\utils.js, app\js\theme.js, app\js\icons.js, app\js\lib\*, app\css\print.css.
+Keep these class names on the elements that carry them today (print.css targets them): .th-* .bk-* .stem .rail .topbar .clep
+.mod-art .tb-btn .filterbar .toast.
+
+WHAT WE ARE BUILDING
+Herophilus (vanilla JS medical question bank, app\index.html) is being
+rebuilt as a calm, premium, 2026 question bank: Linear / Vercel register, dark first with a real light theme. The painted Greek
+city, rooms and films are DROPPED. Same engine: questions, progress, storage, quiz logic stay; only the look and the screen
+markup change. Read progress\redesign-clean\CONTRACT.md first: every behaviour there must survive.
+Plan context: C:\Users\Alfa388\.claude\plans\moonlit-skipping-summit.md (Step 1). This job = Step 1a.
+
+OWNER'S PICKS (2026-10-16, chosen from live previews - binding):
+- Colours: Open Props defaults - its gray ladder for surfaces/text/lines, its blue as the one accent. Take the VALUES into our
+  own semantic tokens in tokens.css (do not link open-props.min.css; we use ~25 of its 1000+ props). Dark reference: surfaces
+  gray-12 #030507 / gray-11 #0d0f12 / gray-10 #16191d, line gray-8 #343a40, text gray-0 #f8f9fa / gray-5 #adb5bd, accent blue-4
+  #4dabf7. Light: gray-0 #f8f9fa / gray-1 #f1f3f5 / white, line gray-3 #dee2e6, text gray-9 #212529 / gray-7 #495057, accent blue-7
+  #1c7ed6. Exact ladders are in D:\scratch 2026\clean-vendor\open-props\ (gray.min.css, blue.min.css). Subject tints: pick from
+  the same Open Props hue files, kept subtle. Measure every text/accent pair for AA and adjust the step, not the hue.
+- Icons: Tabler outline, 24x24 stroke, currentColor. Source SVGs: D:\scratch 2026\clean-vendor\tabler-outline\ (drop the first
+  empty <path stroke="none" .../>). Put the ones you use inline into ONE new file (e.g. app\js\ui-icons.js); app\js\icons.js is
+  frozen, leave it alone. Licence: tabler-outline-LICENSE.txt (MIT) - copy into app\assets\licences\.
+- Fonts: D:\scratch 2026\clean-vendor\fonts\ (Geist-Variable.woff2, newsreader-latin-opsz-normal/italic.woff2, OFL licences).
+  The test harness opens the app from file://, where Chrome blocks url() font loads as CORS errors (counted as console errors).
+  So embed them base64 in @font-face (follow how the repo already embeds GFS Didot - find it) and copy the licences into
+  app\assets\licences\.
+- App motion: the browser's own CSS (transitions, @starting-style, View Transitions where useful). No motion library in the app.
+- Panels: native <dialog> / popover, styled by us. No component kit.
+- (Front page later, step 4: GSAP + ScrollTrigger + Lenis. NOT in this job.)
+- The site is now online-only (owner rule change 2026-10-16), but this job adds no CDN link and no build step: everything it needs
+  is staged above. Keep the app booting from file:// so the checks below still run.
+
+STEP 1a SCOPE: design tokens + the focus quiz + the results screen. (Subject page, Today, sidebar, other screens come later -
+leave them working as they are.)
+
+1. Tokens. Paired dark/light semantic tokens in app\css\tokens.css: surfaces (4 levels), text (4), hairlines, one brand accent
+   (actions only), four subject tints (identity only, subtle), ok / bad / warn, focus ring, selected, disabled. Radius scale
+   6/10/14 ONLY. 4-pt spacing scale. Two shadows. Motion 120/200/320 ms, one ease-out curve. Text on any accent measured AA.
+   Old screens still read the old token names: keep them working (alias old names to new values, or keep them) until their
+   screen is rebuilt. Dark = bare :root; light restates tokens only under :root[data-theme="light"] (theme.js sets it).
+2. Type. Geist (variable) = the UI and question font: menus, stems, options, buttons. Newsreader (variable, opsz axis) = titles
+   AND long reading (explanations, later the lesson pages). GFS Didot is no longer used on rebuilt screens. Tabular numbers for
+   counts and clocks. Fallbacks: Geist -> "Segoe UI Variable", -apple-system, system-ui; Newsreader -> Georgia, serif.
+   Question wording, case, units, notation are never changed.
+3. Focus quiz (vQuiz, vCase). Centred reading column (~68ch). Top: visible exit, chapter name, position "12 / 84", a timer only in
+   exam mode, a "Questions" button. Full-width option rows with a letter (A-E), clear selected / correct / wrong states that do
+   not rely on colour alone. Check -> explanation appears BELOW with no layout jump. Exam mode still suppresses explanations.
+   Confidence, flag (F), notes, strike, highlighter pens (1-4) all still work and are reachable but quiet. The question panel
+   (openJump, key J and the "Questions" button) slides in from the side: focus-trapped, Escape closes, focus returns to the
+   button. Must look right with: long stem, a figure (image between stem and options), a case question (type:'case'),
+   a missing explanation, exam mode, 2 to 10 options.
+4. Explanations: typography and spacing only (comfortable line height, paragraphs, tables styled, lists). ONE bounded render
+   rule for markup debris seen in the walk: a line starting with "> " renders as a quote block; " • " runs joined on one line
+   render as a list; `text in backticks` renders as inline code. Nothing else, NO case changes, never edit stored text.
+5. Results (vResults). Set score and historical accuracy shown as two different things, labelled. Three next actions, each saying
+   where it goes: back to the subject, review the wrong ones, home. Today both buttons go home (CONTRACT) - fix that.
+6. Cut the couplings on the screens you rebuild: no film, no clepsydra pose/paint, no reveal-on-scroll on quiz/results. Only
+   unlink a CSS/JS file from index.html when nothing left on screen uses it; list what you unlinked and what still depends on
+   what (progress\redesign-clean\step1a-notes.md).
+7. Motion: transform / opacity / clip-path only, 120-320 ms. No hover lift, no idle pulse, no pills, no emoji, no glow.
+   prefers-reduced-motion stops all of it. Must not read as AI-built: one radius scale, plain sober copy.
+
+CHECKS YOU MUST RUN AND PASS before you finish (from the trial-copy root):
+  node tools\boot-check\boot-check.js           -> 0 console errors
+  node tools\ui-tasks\tasks.js                  -> 7 PASS (if a click selector moved, update ONLY the labelled selectors object)
+  node tools\ui-tasks\frozen.js 8bd99322        -> 0 mismatches
+Then take headless screenshots (reuse tools\boot-check harness pattern; temp dir under os.tmpdir(), never a path containing "--")
+into D:\scratch 2026\clean-1a\ : quiz unanswered, quiz answered with explanation, long-stem + figure question, case question,
+exam mode, question panel open, results - each in dark and light, at 1440x900 and 1180x820. Look at them yourself and fix
+what looks wrong before finishing.
+
+FINAL MESSAGE (under 250 words): files changed, what was unlinked, the three check outputs verbatim, screenshot folder, anything
+you could not do.
