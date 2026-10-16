@@ -1,0 +1,45 @@
+STRIP FOLLOW-UP FIXES - brief 2026-10-16, after the city strip (commit 482ef7db).
+Source: looker report on D:\scratch 2026\clean-strip\s-*.png (index s-index.txt there; capture script
+capture-strip.js there re-shoots all 38).
+
+WRITE GRANT (this job only): D:\claude os\Medical school\Herophilus-redesign\app\ (EXCEPT frozen files) and
+progress\redesign-clean\. No git writes. Never touch D:\claude os\Medical school\Herophilus (live copy).
+FROZEN, never edit: app\data\*, app\js\storage.js, utils.js, theme.js, icons.js, app\js\lib\*, app\css\print.css.
+No new storage key. Theory stays locked. Do not open images (a separate looker does that).
+Banned in anything you add: emoji, pills, hover lift, idle pulse, confetti, hand-written animation/keyframes/timing.
+THE CLEPSYDRA MASCOT IS THE OWNER'S OWN ARTWORK: never redraw her, never draw onto her, never change her image
+files or her animation. You may only move where she and her speech bubble sit, or reserve page space for them.
+
+FIX
+1. Overlap. Her speech bubble covers the count column of the bottom 2-3 chapter rows on all four subject pages at
+   1440x900 (s-02..05, s-11..14) and at 1180x820 (s-20, 21, 29, 30); at 1180x820 she herself sits on the count
+   column (s-20..23, s-29..32). On light home 1440 (s-10) the bubble covers part of the Eyes card art.
+   Fix by layout only: reserve space so no row, count or card ever sits under her or her bubble (e.g. bottom
+   padding on the page equal to her footprint, or a right gutter where she lives). Must hold at 1440x900,
+   1180x820, 820x1180 and 390x844. Prove it with getBoundingClientRect: no .ch-row / count / card rect
+   intersects her rect or the bubble rect, at all four sizes, after scrolling to the bottom.
+2. Light home: the "4TH YEAR · 2ND SEMESTER" chip text is near-invisible (white on pale). Fix the colour; measure
+   contrast >= 4.5:1 against the actual background, both themes.
+3. Pills are banned. Every fully-rounded chip (home year chip, module-name chips ENT/OPHTHALMOLOGY..., YOUR PLAN,
+   EXAM CONDITIONS, SPACED REPETITION, source count chips) becomes a plain small-radius tag or bare text, using
+   existing radius tokens. Keep class names (print.css depends on them).
+4. Light subject pages show source counts (697, 779...) as grey pills; dark shows bare numbers. Make both themes
+   match (bare numbers).
+5. Light profile modal backdrop is a muddy brown-grey scrim: use a themed token so it fits the cream modal.
+6. Gate: drop the decorative grid background (.gate::before grid; also listed as old debt). Grid lines run through
+   the footnote text in dark.
+7. The bubble on schedule/mock/review (s-06..08, s-15..17, s-19) shows another view's tip. Find out whether that
+   is a real one-view lag in the app or only the capture shooting too early. Fix if real; report either way.
+
+CHECKS - run from D:\claude os\Medical school\Herophilus-redesign and paste outputs verbatim:
+  node tools\boot-check\boot-check.js        -> 0 console errors, 4 module cards
+  node tools\ui-tasks\tasks.js               -> 7 PASS
+  node tools\ui-tasks\frozen.js 8bd99322     -> 0 mismatches
+  node progress\redesign-clean\check-explanation-render.js app -> 0 empty items, 0 throws
+  the overlap proof from fix 1 (all four sizes, both themes) and the contrast numbers from fix 2.
+Then re-run D:\scratch 2026\clean-strip\capture-strip.js into D:\scratch 2026\clean-strip\fix\ (same names).
+Append a "strip follow-up" section to step1a-notes.md as you go.
+
+BUDGET: close out at 60 tool calls, hand back by 75 even if unfinished. A partial pass reported honestly is a success.
+FINAL MESSAGE (under 250 words): each fix DONE/NOT with file:line, the overlap proof numbers, contrast numbers,
+check outputs verbatim, capture count, anything not done.

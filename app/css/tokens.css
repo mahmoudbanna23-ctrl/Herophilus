@@ -46,6 +46,7 @@
   --pop:0 4px 16px; --pop-lg:0 16px 48px;
   --pop-xs:var(--pop); --pop-sm:var(--pop); --pop-md:var(--pop); --pop-xl:var(--pop-lg); --pop-2xl:var(--pop-lg);
   --sh:#00000040; --sh-soft:#00000020; --sh-deep:#00000040;
+  --scrim:#030507ad;   /* behind a modal: surface-0 at 68% */
   --sheen:linear-gradient(transparent,transparent); --tint:#ffffff06; --tint-2:#ffffff0c;
   --stem:var(--text-1); --prose:var(--text-2); --strong:var(--text-1);
   --fs-xs:11px; --fs-sm:12px; --fs-md:13px; --fs-ui:14px; --fs-body:16px;
@@ -73,6 +74,7 @@
   --shadow-1:0 4px 16px #2125290f; --shadow-2:0 16px 48px #21252926;
   --neu-dark:#21252940; --neu-light:#ffffffe6;
   --sh:#21252926; --sh-soft:#2125290f; --sh-deep:#21252926; --tint:#21252906; --tint-2:#2125290c;
+  --scrim:#21252961;   /* behind a modal: text-1 at 38%, same hue family as the light surfaces */
 }
 
 /* ---- Type, app-wide. GFS Didot's tracked capitals and small caps (type.css) were drawn for that face;

@@ -420,17 +420,7 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 }
 .gate.hide{display:none}
 
-/* A faint grid, masked to fade out at the edges. Without it four big blurs on
-   a flat ground read as soup; the straight lines give the blur something to be
-   soft against. */
-.gate::before{
-  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-  background-image:linear-gradient(var(--line) 1px,transparent 1px),
-                   linear-gradient(90deg,var(--line) 1px,transparent 1px);
-  background-size:64px 64px;
-  -webkit-mask-image:radial-gradient(ellipse 78% 62% at 50% 44%,#000 18%,transparent 76%);
-          mask-image:radial-gradient(ellipse 78% 62% at 50% 44%,#000 18%,transparent 76%);
-}
+/* (the faint masked grid that sat behind the gate is gone: its lines ran through the footnote text) */
 
 .gstep{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;width:100%;max-width:780px}
 .gate-theme{position:absolute;top:16px;right:16px;z-index:3;font-size:var(--fs-ui)}

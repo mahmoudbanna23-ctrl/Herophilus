@@ -305,6 +305,7 @@ function clepSay(text,opt){
   if(!box||!t)return;
   clearTimeout(CLEP.hideT); clearInterval(CLEP.typer);
   CLEP.lastSay=Date.now();
+  CLEP.tipK=opt.tipK||null;   /* which screen this line describes; null = about no screen */
   const segs=clepSegs(text);
   const total=segs.reduce((n,s)=>n+s.t.length,0);
   box.classList.add('show');
@@ -434,7 +435,7 @@ function clepTip(){
 function clepAsk(){
   if(CLEP.mini){clepMini();return}
   const t=clepTip();
-  clepSay(t||clPick(clepFacts()),{force:true});
+  clepSay(t||clPick(clepFacts()),{force:true,tipK:t?clepViewKey()+(view.name==='module'?':'+view.id:''):null});
 }
 let _clLastView='';
 function clepOnView(){
@@ -442,6 +443,9 @@ function clepOnView(){
   const k=clepViewKey()+(view.name==='module'?':'+view.id:'');
   if(k===_clLastView)return;
   _clLastView=k;
+  /* A tip belongs to the screen it described. Arriving somewhere else takes it down; a timer
+     message (no tipK) is about the block, not the screen, and stays. */
+  if(CLEP.tipK&&CLEP.tipK!==k)clepDismiss();
   /* The pose follows the screen even when she is muted: muting silences her,
      it does not freeze her. It sits ABOVE the mute check for that reason. */
   clearTimeout(CLEP.settleT);
@@ -449,9 +453,16 @@ function clepOnView(){
   if(!CLEP.on||CLEP.muted||CLEP.mini)return;
   const seenKey=clepViewKey();
   if(CLEP.seen[seenKey])return;
-  CLEP.seen[seenKey]=1;
   const t=clepTip();
-  if(t)setTimeout(()=>clepSay(t),620);   /* let the page entrance land first */
+  /* let the page entrance land first; if the reader has moved on by then the tip is stale, so it
+     is dropped and the screen stays unseen (its tip comes on the next visit) */
+  if(t){
+    CLEP.seen[seenKey]=1;
+    setTimeout(()=>{
+      if(_clLastView!==k){ CLEP.seen[seenKey]=0; return }
+      clepSay(t,{tipK:k});
+    },620);
+  }
 }
 /* Idle chatter is the one thing held back from the reading screens. A tip you
    asked for by arriving is welcome mid-question; an unprompted aside about the
