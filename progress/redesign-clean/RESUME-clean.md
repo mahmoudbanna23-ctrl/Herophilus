@@ -30,11 +30,17 @@ Done:
   Owner recording D:\scratch 2026\clean-1a\rec\step1a-*.mp4 (4 videos, record-step1a.js), sent 2026-10-16, no reply yet.
   Checks at close: boot 0 errors · ui-tasks 7 PASS · frozen 0 mismatches.
 
+- City strip DONE 2026-10-16 (owner: "everywhere, now"), commits 482ef7db + 1e1f4c03. City/room/hall/scene/films and
+  assets gone (~12 MB); warm.css generic rules -> skin.css; ui.css deleted (rules sat under unused .folio). Follow-ups:
+  240px end-of-page reserve for the mascot (overlap-proof.js 64/64 clean), no pill chips, --scrim token, gate grid gone,
+  stale-tip bug fixed in clepsydra.js (bubble logic only). Refuters DONE x2. Pictures D:\scratch 2026\clean-strip\fix\,
+  8 sent to owner. mod-*.jpg = 2026-07-28 design, not city (kept).
+
 Next — step 1b subject page (M1 M2 A3 A4, big pick 3D stacked cards), steps 2-5 per plan. Carry into 1b:
 - Yellow ⚠ in stored explanations reads as an emoji (banned): swap at render time for the ui-icons warning icon.
-- Dashboard pills: red "ENT" tag by "Dashboard", grey count chips (light). Mascot bubble covers dashboard counts.
+- Mid-page (scroll 0) her bubble still covers light home Eyes card (s-10) and ENT 0/84 counts (s-11); end of page
+  is clear. 1b layout must give her a lane. views.css:149,289 dead .modal-bg colour rules (blur source) - tidy.
 - " - " run-in lists inside paragraphs (stored text) stay inline; rule covers " • " only - owner call if wanted.
-- Boot-check per-module line shows ophtho 0 chapter rows (since part A) - investigate.
 - --neu-* token contrast unmeasured; disabled Check/Previous faint in light (disabled, likely fine).
 - Case questions get no tick/cross (no option rows) - builder drop.
 Rules: never edit the live Herophilus folder, no merge, no upload without owner yes; push this branch freely, never
