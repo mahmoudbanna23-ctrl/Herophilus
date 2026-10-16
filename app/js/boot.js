@@ -6,6 +6,8 @@ function showModal(html,wide){
 }
 function closeModal(){
   $('modalBg').classList.remove('show');
+  /* closeModal used to close the question panel too; keep that, so no caller can leave the dialog open behind another screen */
+  if(typeof closeQuestionPanel==='function')closeQuestionPanel();
 }
 
 function showShortcuts(){

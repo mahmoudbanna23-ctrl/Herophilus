@@ -112,5 +112,15 @@ with `motion`: wrong / right motion mounts once, redraw does not replay, dialog 
 J returns focus to the option, grid click jumps, explanation render escapes HTML, exam mode has no motion and no Check button.
 NOT done: no screenshots (separate job), so tint legibility, grid layout and long-stem / figure / 10-option looks are unseen.
 
+## Part B, looker round (same day)
+- A. Panel in every shot: cause was capture state leaking, and our regression. `closeModal()` stopped closing the question panel when it became a native dialog, so `capture-step1b.js` left it open after state 7. Fixed in both places: `capture-step1b.js` closes the dialog before each state and flags `DIALOG-OPEN-LEAK` / `DIALOG-MISSING` in `b-index.txt` (0 leaks, 4 panel shots); `boot.js` `closeModal()` again closes the panel. The app never opened it by itself.
+- B. `explanationHTML` (quiz.js): a quote line holding ` • ` renders as a list inside the quote (same two rules combined). The stray `"•` is in the stored text (e.g. entqb-thr9-469 `> "• **Flaccid...`), not our split; left alone. Long inline code wraps (`overflow-wrap:anywhere`).
+- C. Strike control hidden at rest under `@media(hover:hover)`, shown on row hover, focus-within, or when struck. Touch devices keep it visible. Stays tabbable (opacity only).
+- D. Figure centred, frame removed, caption 14px `--text-2`, centred.
+- E. The notes are the `source` field (a citation), not stem text. Now `<details class="focus-source"><summary>Source</summary>` collapsed, and not rendered in exam mode.
+- F. Tag now 13px with line-height matching the option text, column 88px. Exam "Selected" label exists in markup and is visible in both themes (probe task 7). Empty-explanation line: `.noexp` padding removed (components.css gave it 20px). Legend glyph boxes 26px, 15px type.
+- Kept: grid shapes and shadow, the warning glyph, run-on explanations, four pens.
+- Probe `fx-probe.js` now 8 tasks (list in quote, exam Selected both themes, source collapsed, strike hidden/focus), 8/8 in both modes. Not seen: images (not opened by rule).
+
 ## Left for next job
-Screenshots of all states, both themes, 1440x900 and 1180x820; visual fixes from them.
+Look at the re-captured `b-*.png` in `D:\scratch 2026\clean-1a\`.

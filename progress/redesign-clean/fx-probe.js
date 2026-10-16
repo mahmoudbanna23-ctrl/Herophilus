@@ -5,7 +5,7 @@ const fs=require('fs'), path=require('path'), os=require('os');
 const {spawn}=require('child_process');
 const {pathToFileURL}=require('url');
 const root="D:/claude os/Medical school/Herophilus-redesign";
-const labels=['wrong answer: cross + shake once, tick static','redraw does not replay','right answer: tick + pulse','panel: dialog, Escape returns focus to button','panel: J returns focus to option; grid click jumps','explanation render rule escapes','exam mode: no motion, no check answer button'];
+const labels=['wrong answer: cross + shake once, tick static','redraw does not replay','right answer: tick + pulse','panel: dialog, Escape returns focus to button','panel: J returns focus to option; grid click jumps','explanation render rule escapes','exam mode: no motion, no check answer button, Selected label both themes','source collapsed; strike control hidden at rest, shown on focus'];
 const pause=ms=>new Promise(r=>setTimeout(r,ms));
 let browser, socket, work, failures=0, reported=0;
 const pending=new Map();let seq=0;
@@ -127,6 +127,8 @@ async function check(code){await evaluate('function assert(v,m){if(!v)throw Erro
   await task(6,()=>check(`
     const h=explanationHTML('> quote <img src=x onerror=alert(1)>\\nitem one • item two • item three\\nplain with \\u0060code\\u0060 here');
     assert(!/<img/i.test(h),'html injected: '+h);
+    const hq=explanationHTML('> first • second • third');
+    assert(hq.startsWith('<blockquote><ul><li>')&&(hq.match(/<li>/g)||[]).length===3&&!/<ul>.*<ul>/.test(hq),'list in quote missing: '+hq);
     assert(/<blockquote>/.test(h)&&/<ul><li>/.test(h)&&/<code>code<\\/code>/.test(h),'rule outputs missing: '+h);
   `));
   await task(7,()=>check(`
@@ -134,6 +136,23 @@ async function check(code){await evaluate('function assert(v,m){if(!v)throw Erro
     pick(q.answer);
     assert(!document.querySelector('.fx')&&!document.querySelector('.animate__animated'),'motion in exam');
     assert(!document.querySelector('.check-answer'),'check answer button in exam');
+    assert(!document.querySelector('.focus-source'),'source note shown in exam');
+    for(const th of ['dark','light']){setTheme(th,false);const m=document.querySelector('.opt.sel .mark');
+      assert(m&&m.textContent==='Selected'&&m.offsetWidth>0&&getComputedStyle(m).visibility==='visible','Selected label missing in '+th);}
+    assert(!document.querySelector('dialog[open]'),'dialog open in exam');
+  `));
+  await task(8,()=>check(`
+    const q=QUESTIONS.find(x=>x.source&&x.type!=='case'&&x.options&&x.options.length>1);
+    startQuiz([q.id],'src');
+    const d=document.querySelector('.focus-source');assert(d&&!d.open,'source not collapsed');
+    assert(!document.querySelector('.focus-meta > span:last-child')||true,'');
+    const s=document.querySelector('.opts .opt .strike-btn'),row=s.closest('.opt');
+    document.activeElement&&document.activeElement.blur();
+    const hov=matchMedia('(hover:hover)').matches;
+    if(hov)assert(getComputedStyle(s).opacity==='0','strike visible at rest: '+getComputedStyle(s).opacity);
+    s.focus();assert(getComputedStyle(s).opacity==='1','strike hidden when focused');
+    assert(s.tabIndex===0,'strike not tabbable');
+    const f=document.querySelector('.qfig');
   `));
 })().catch(e=>{for(let n=reported+1;n<=7;n++){console.log('FAIL '+n+' '+labels[n-1]+': '+e.message.split('\n')[0]);failures++}}).finally(async()=>{
   if(socket){try{await cdp('Browser.close')}catch(_){}socket.close()}

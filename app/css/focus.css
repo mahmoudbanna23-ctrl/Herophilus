@@ -214,3 +214,25 @@ dialog.question-panel .radio-input input:focus-visible + .check{outline:2px soli
   .focus-score{font-size:48px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Step 1b fixes (looker round) */
+/* Strike control: shown on row hover / focus-within, always where there is no hover (touch). Still focusable by keyboard. */
+@media(hover:hover){#page .focus-reading .opt:not(:hover):not(:focus-within):not(.struck) .strike-btn{opacity:0}}
+/* Figure: centred, no frame, readable caption */
+.focus-reading .qfig{align-items:center;border:0;padding:0;background:none;margin:24px 0;text-align:center}
+.focus-reading .qfig-media{display:flex;justify-content:center}
+.focus-reading .qfig figcaption{font:14px/1.6 var(--font-body);letter-spacing:0;color:var(--text-2);text-align:center;max-width:56ch}
+/* Source note: collapsed citation */
+.focus-meta .focus-source{flex-basis:100%;font-size:12px;line-height:1.6;color:var(--text-3)}
+.focus-meta .focus-source summary{cursor:pointer;width:max-content}
+.focus-meta .focus-source div{margin-top:8px;max-width:68ch;overflow-wrap:anywhere}
+/* Explanation: long inline code wraps; empty-explanation line aligns with its heading */
+.focus-reading .ex-body{overflow-wrap:break-word}
+.focus-reading .ex-body code{overflow-wrap:anywhere}
+.focus-reading .ex-body blockquote ul{margin:8px 0}
+#page .focus-reading .noexp{padding:0;margin:0}
+/* Right/Wrong/Selected tag: same baseline as the option text, 13px */
+#page .focus-reading .opt-answer{grid-template-columns:24px minmax(0,1fr) 88px}
+#page .focus-reading .mark{font:500 13px/24.75px var(--font-body)}
+/* Panel legend glyphs */
+dialog.question-panel .jumpkey span{width:26px;height:26px;font:600 15px var(--font-body)}

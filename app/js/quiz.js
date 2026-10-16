@@ -250,8 +250,9 @@ function explanationHTML(text){
   let out='',plain=[];
   const flush=()=>{if(plain.length){out+=inline(plain.join('\n'));plain=[]}};
   String(text||'').split('\n').forEach(line=>{
-    if(line.startsWith('> ')){flush();out+='<blockquote>'+inline(line.slice(2))+'</blockquote>'}
-    else if(line.includes(' • ')){flush();out+='<ul>'+line.split(' • ').map(s=>'<li>'+inline(s)+'</li>').join('')+'</ul>'}
+    const list=s=>'<ul>'+s.split(' • ').map(x=>'<li>'+inline(x)+'</li>').join('')+'</ul>';
+    if(line.startsWith('> ')){flush();const body=line.slice(2);out+='<blockquote>'+(body.includes(' • ')?list(body):inline(body))+'</blockquote>'}
+    else if(line.includes(' • ')){flush();out+=list(line)}
     else plain.push(line);
   });
   flush();return out;
@@ -295,7 +296,7 @@ function focusFeedback(q,prev,isCase){
 function renderFocusQuestion(p,q,prev,isCase){
   const flagged=!!S.flags[q.id];
   let h=`<div class="focus-quiz" data-subject="${q.module}">${focusHeader(q)}<article class="focus-reading">
-    <div class="focus-meta"><span class="subject-tint">${esc((moduleOf(q.module)||{}).name||q.module)}</span>${bankPills(q)}${q.source?`<span>${mdInline(q.source)}</span>`:''}</div>
+    <div class="focus-meta"><span class="subject-tint">${esc((moduleOf(q.module)||{}).name||q.module)}</span>${bankPills(q)}${q.source&&!Q.exam?`<details class="focus-source"><summary>Source</summary><div>${mdInline(q.source)}</div></details>`:''}</div>
     <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
     ${qFigure(q)}
     <div class="focus-marker">${markbar(q.id)}</div>`;
