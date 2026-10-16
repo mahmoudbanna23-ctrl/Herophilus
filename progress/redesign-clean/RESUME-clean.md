@@ -13,15 +13,13 @@ Done:
 - 2026-10-16 owner: "Never recreate just copy" (memory copy-motion-never-recreate). Hand-built 45-move page VOID.
   Small copied page (35 MIT pieces, 11 screens): PUBLISHED https://claude.ai/artifact/2iU2kqb5HGa4UKsHGButBh,
   file D:\scratch 2026\motion-copied\herophilus-motion-copied.html (build.cjs + MANIFEST.md beside it; text/colour
-  fixes applied straight to the html, not yet back in build.cjs). Big-moves page (19 pieces, Codrops/Atropos/
-  vanilla-tilt/Lenis): check-and-fix agent stopped PARTIAL at its call limit. State: fix\page.html 394,664 B (over
-  300 KB target; next = pull shared head out of each card), 6 libs moved to pinned jsdelivr (byte-identical).
-  OPEN: card 7 console error "Uncaught TypeError: I is not a function" (gsap@3.11.5 + Flip, cause unknown, original
-  untested); card 11 text overlap + overflow 686/578; cards 14-15 click changes nothing; cards 1-6 dark mode unchecked
-  (2 glaring panels, 3 static, 5 blank, 6 near-invisible text); card 16 loud orange; banned-design scan, card
-  how-to-play text, CDN URL fetch check, MANIFEST.md all NOT done. Delete a card rather than edit its motion.
-  Tools: motion-big\tools\{slim,assemble,check,sheet2}.mjs; dark shots fix\d1-*; originals fix\orig. Next: one fresh
-  builder (sonnet, ROUTE-OK) for these, then refuter, then read whole page and publish, owner picks into PICKS.md.
+  fixes applied straight to the html, not yet back in build.cjs). Big-moves page: PUBLISHED 2026-10-16
+  https://claude.ai/artifact/GAE4sfawZdujmHdhY4bKP4, file D:\scratch 2026\motion-big\fix\page.html (17 cards,
+  353,513 B). 0 console errors in 4 views (dark/light x 1440/390, fix\f1..f4). Refuter: fidelity PASS. Deleted
+  (motion would have needed changing): p06-scrolltext, p13-gooey (fix\deleted.json). Card 1 arrow restored (patch
+  removed). Known: card 14 click does nothing at 390 wide (phones secondary, accepted). Cards 15-17 = unmodified
+  library code on our own small demo markup — owner asked keep or drop. Patches: motion-big\tools\patches.mjs.
+  NEXT: owner picks into PICKS.md "Big motion picks", commit, push.
   Small-page picks DONE 2026-10-16: 9 of 35, PICKS.md "Small motion picks" (commit 1e224775).
 
 Next — step 1a part B (one builder, then refuter + looker, then recording for owner):
