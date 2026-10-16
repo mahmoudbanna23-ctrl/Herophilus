@@ -38,7 +38,79 @@ Every screen but vResults and the quiz: legacy names (`--tx`, `--ink-*`, `--card
 type.css, city.css, rooms.css, warm.css, ui.css stay linked: home, module, schedule etc. still use the film,
 Clepsydra and rooms. GFS Didot and Libre Caslon still ship inside type.css (about 4 MB) for those screens.
 
-## Left for Part B
-Quiz screen (vQuiz, vCase): top bar with uiIco icons, option rows, explanation rule for `> ` quotes,
-` • ` lists and backticks, question panel as native dialog, long stem / figure / case / exam / 2-10 option
-checks, screenshots of all states in dark and light at 1440x900 and 1180x820.
+## Part B (2026-10-16, same day, copy-only motion rule)
+Owner rule: "Never recreate, just copy." No hand-written keyframes, easing or timing anywhere in Part B.
+
+### Changed
+- `app/index.html`: added `<dialog id="questionPanel" class="question-panel">`, links `css/animate-picks.css`,
+  `vendor/lottie_light.min.js`, `vendor/lottie-fx-data.js`, `js/answer-fx.js`.
+- `app/js/quiz.js`: `openJump` rebuilt on the native dialog (`showModal()`: focus trapped, page inert, Escape native).
+  Focus is recorded on open (button, or the element J was pressed on) and put back on `close`; the question card
+  is rebuilt after a jump so a saved option index / the new Questions button is used. Grid = radio group; mouse
+  click on a cell or Enter jumps; arrows and Space only move the cursor. `jumpTo` closes the dialog.
+  Option badge `.ltr` now holds the Lottie after a check; letter stays in the DOM (visually clipped) for screen readers.
+  `fxFresh` flag: motion plays on the render after `reveal()` only; any later redraw (flag, confidence, back) shows end state.
+  Check button class `check-answer` (pick 11) before the check; Next / Finish keep `focus-btn primary`.
+- `app/js/boot.js`: question-panel branch removed from `showModal`/`closeModal`, its capture-phase Tab/Escape trap removed
+  (native dialog does both); global keys return while the dialog is open.
+- `app/js/answer-fx.js` (new): mounts lottie-web, tints fill/stroke colour values from `--ok` / `--bad` / `--surface-0`
+  (so both themes read), applies `animate__headShake` to the chosen wrong row, `animate__pulse` to the correct row on a right pick.
+  Reduced motion: Lottie jumps to its last frame, no animate class. Exam mode never reaches it.
+- `app/css/focus.css`: panel + grid + check-button + badge rules; old `#modalBg.question-panel` rules and the hand-built
+  `@keyframes question-panel-in` slide deleted. Blanket `animation:none` / `transition:none` now skip `.animate__animated`
+  and the hover reset skips `.check-answer`.
+- `app/css/tokens.css`: two new tokens `--neu-dark`, `--neu-light` (the pick 10 shadows, per theme).
+- `app/css/animate-picks.css`, `app/vendor/*`, `app/assets/licences/{lottie-web,animate-css,lottiefiles}-LICENSE.txt` (new).
+  Built by `progress/redesign-clean/build-fx-vendor.js` from the pinned packs in `D:\scratch 2026\clean-vendor\pack`.
+- `tools/ui-tasks/tasks.js`: only the labelled `selectors.modal` changed to `#questionPanel` (the dialog carries `.show` while open).
+- Explanation rule (`explanationHTML`, `> ` quote, ` • ` list, backticks) was already in place from the earlier pass;
+  verified escaped-first (md escapes before the three rules; `<img onerror>` test) and unchanged. No code change.
+
+### Copied pieces (source, version, licence)
+| Piece | Source | Version | Licence |
+|---|---|---|---|
+| Question number grid (pick 10) | https://uiverse.io/AmIt-DasIT/neat-turkey-32 | as published, copy in `D:\scratch 2026\motion-copied\src` | MIT (Uiverse.io galaxy) |
+| Check answer button (pick 11) | https://uiverse.io/adamgiebl/rude-bear-14 | as published | MIT (Uiverse.io galaxy) |
+| Tick (pick 22) | LottieFiles `checkmark-UaMrRzGt3G` | file unchanged | Lottie Simple License |
+| Cross (pick 24) | LottieFiles `cross-close-cancel-icon-animation-imJWR2OMg7` | file unchanged | Lottie Simple License |
+| Player | https://github.com/airbnb/lottie-web | lottie-web 5.12.2, `build/player/lottie_light.min.js`, byte copy | MIT |
+| Shake / bounce | https://github.com/animate-css/animate.css | 4.1.1, base rules + headShake + pulse cut verbatim | MIT |
+Edits to pick 10: colours (shadows to tokens), size (30px to 44px, gap 20px to 12px, wrap), the input is clipped instead of
+`display:none` (a hidden input cannot take keyboard focus), number and state marks inside `.check`. Radius stays the published 50%.
+Edits to pick 11: colours, padding / font size / min-width, text, a disabled look (the original has none). Transition `ease-out 0.5s`,
+hover fill and `:active scale(0.9)` as published. CORRECTION (refuter fix): the first pass did NOT keep the transition live: the
+focus.css line 16 blanket `transition:none` (specificity 0,2,0) beat `.check-answer` (0,1,0), so computed duration was 0s. Line 16 now
+excludes `.check-answer` (`:not(.animate__animated):not(.check-answer)`); computed `transition-duration` measured `0.5s` in headless
+Chrome (fx-probe task 1, motion mode). Under reduced motion the global rule still sets 0s on purpose. The grid `.check` (0,4,1, and the
+dialog sits outside `.focus-quiz`) is not hit by line 16 (reasoned, not measured). Tint fix: `answer-fx.js` re-mounts icons at their last
+frame when `data-theme` changes (colour only; probe task 2). Licences: `uiverse-LICENSE.txt` has both piece URLs and authors but NOT the
+licence text (fetch refused by the shell permissions); paste it before going public. Lottie source page URLs added to `lottiefiles-LICENSE.txt`. Licence texts: `app/assets/licences/`. Licence of the two Lottie files was
+taken from the shelf researcher's record (`anim-picks/LICENCES.md`), not re-fetched.
+
+### Question panel movement (owner to be told)
+The copied number grid carries no open/close movement, so the dialog has none: it appears the way the browser opens a dialog.
+The old hand-built slide was deleted. The only motion in the panel is the grid's own published 0.3s press transition.
+
+### Dropped
+- The hand-built slide-in, N4 ring, M5 shake and M6 bounce (voided by the copy rule; replaced by the library pieces above).
+- Motion on case questions: they have no option rows, so no tick / cross / shake / pulse there. Their verdict line is unchanged.
+- Lottie in the correct row when the student was wrong: it shows the tick at its last frame (no play); only the chosen wrong row plays.
+
+### Unlinked: nothing
+Quiz screens already call no film / clepsydra / reveal code (render.js skips them on focus views; quiz.js has no `clep*` calls).
+`syncFilm()` still runs on every render and pauses the film on STILL_VIEWS. city.css, rooms.css, warm.css, type.css, ui.css
+stay linked because home, module, schedule etc. still use them. The hidden `<video class="film" preload="auto">` still downloads on
+quiz screens; it can only be removed with the old home/module stages.
+
+### Still depends on
+`#modalBg` modal (shortcuts, hand-in, results prompts, backup) untouched. Quiz still reads old `.btn`, `.jumpin`, `.modal-actions`
+classes inside the dialog, restyled in focus.css. Print: `.stem`, `.rail`, `.topbar` etc. keep their classes; `print.css` untouched.
+
+### Checks and probe
+`progress/redesign-clean/fx-probe.js` (built by `make-fx-probe.js`, same harness as tools/ui-tasks) 7/7 PASS, in reduced-motion and
+with `motion`: wrong / right motion mounts once, redraw does not replay, dialog is modal, Escape returns focus to the button,
+J returns focus to the option, grid click jumps, explanation render escapes HTML, exam mode has no motion and no Check button.
+NOT done: no screenshots (separate job), so tint legibility, grid layout and long-stem / figure / 10-option looks are unseen.
+
+## Left for next job
+Screenshots of all states, both themes, 1440x900 and 1180x820; visual fixes from them.

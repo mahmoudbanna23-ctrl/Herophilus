@@ -47,6 +47,7 @@
 <link rel="stylesheet" href="css/ui.css">
 <link rel="stylesheet" href="css/fonts-ui.css">
 <link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/animate-picks.css">
 <link rel="stylesheet" href="css/focus.css" media="screen">
 <link rel="stylesheet" href="css/print.css">
 </head>
@@ -113,6 +114,8 @@
      JS beside the maths that places it. -->
 <div class="clep" id="clep" hidden></div>
 <div class="toast" id="toast"></div>
+<!-- Question panel (J / Questions button): native dialog, filled by openJump() in js/quiz.js. -->
+<dialog class="question-panel" id="questionPanel" aria-labelledby="questionsTitle"></dialog>
 <div class="modal-bg" id="modalBg" onclick="if(event.target===this)closeModal()">
   <div class="modal" id="modal"></div>
 </div>
@@ -144,6 +147,10 @@
 <script src="js/storage.js"></script>
 <script src="js/icons.js"></script>
 <script src="js/ui-icons.js"></script>
+<!-- Answer motion: lottie-web 5.12.2 light player and the two owner-picked Lottie files, wrapped as classic scripts (see vendor/ and assets/licences/). -->
+<script src="vendor/lottie_light.min.js"></script>
+<script src="vendor/lottie-fx-data.js"></script>
+<script src="js/answer-fx.js"></script>
 <script src="js/theme.js"></script>
 <script src="js/utils.js"></script>
 <script src="js/theory.js"></script>

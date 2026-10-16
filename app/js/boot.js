@@ -1,34 +1,12 @@
-let questionPanelReturn=null;
-function showModal(html,wide,kind){
-  const m=$('modal'),bg=$('modalBg');
-  if(bg.classList.contains('question-panel')&&kind!=='questions'){
-    document.querySelector('.app').inert=false;questionPanelReturn=null;
-  }
+/* The question panel is no longer a modal: it is a native <dialog> (openJump in quiz.js), which traps focus and closes on Escape itself. */
+function showModal(html,wide){
+  const m=$('modal');
   m.innerHTML=html;m.classList.toggle('wide',!!wide);
-  bg.classList.toggle('question-panel',kind==='questions');
-  if(kind==='questions'){
-    questionPanelReturn=$('questionsButton');
-    m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');m.setAttribute('aria-labelledby','questionsTitle');
-    document.querySelector('.app').inert=true;
-  }else{m.removeAttribute('role');m.removeAttribute('aria-modal');m.removeAttribute('aria-labelledby')}
-  bg.classList.add('show');
+  $('modalBg').classList.add('show');
 }
 function closeModal(){
-  const bg=$('modalBg'),panel=bg.classList.contains('question-panel');
-  bg.classList.remove('show','question-panel');
-  if(panel){document.querySelector('.app').inert=false;const target=$('questionsButton')||questionPanelReturn;if(target&&target.isConnected)target.focus({preventScroll:true});questionPanelReturn=null}
+  $('modalBg').classList.remove('show');
 }
-/* Capture before the global typing-input guard: Escape also works in jumpNum. */
-document.addEventListener('keydown',e=>{
-  if(!$('modalBg').matches('.show.question-panel'))return;
-  if(e.key==='Escape'){e.preventDefault();e.stopImmediatePropagation();closeModal();return}
-  if(e.key!=='Tab')return;
-  const all=Array.from($('modal').querySelectorAll('button:not(:disabled),input:not(:disabled),[tabindex="0"]')).filter(el=>el.getClientRects().length);
-  if(!all.length)return;
-  const first=all[0],last=all[all.length-1];
-  if(e.shiftKey&&(document.activeElement===first||!$('modal').contains(document.activeElement))){e.preventDefault();last.focus()}
-  else if(!e.shiftKey&&(document.activeElement===last||!$('modal').contains(document.activeElement))){e.preventDefault();first.focus()}
-},true);
 
 function showShortcuts(){
   showModal(`<h3>${ico('keys',19)} Shortcuts</h3>
@@ -345,6 +323,9 @@ document.addEventListener('keydown',e=>{
      — the toast is transient and non-blocking, the gate covers the page before
      any quiz view, and the rail slides alongside. While the modal is open,
      Escape still has to close it (already wired below); nothing else does. */
+  /* The question panel (native dialog) owns every key while it is open; Escape is handled by the browser. */
+  const qp=$('questionPanel');
+  if(qp&&qp.open)return;
   if($('modalBg').classList.contains('show')){
     if(e.key==='Escape'){closeModal();return}
     return;

@@ -1,6 +1,6 @@
 'use strict';
 // selectors - update when the UI changes
-const selectors = {modal:'#modalBg', jump:'#jumpNum', resume:'#mockContinue', sync:'#railSync', page:'#page'};
+const selectors = {modal:'#questionPanel', jump:'#jumpNum', resume:'#mockContinue', sync:'#railSync', page:'#page'};
 const fs=require('fs'), path=require('path'), os=require('os');
 const {spawn}=require('child_process');
 const {pathToFileURL}=require('url');

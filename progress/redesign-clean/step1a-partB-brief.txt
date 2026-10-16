@@ -1,0 +1,80 @@
+STEP 1a PART B - focus quiz, question panel, explanation rule, answer motion. Brief 2026-10-16.
+
+WRITE GRANT (this job only): edit/create files under
+  D:\claude os\Medical school\Herophilus-redesign\app\  (EXCEPT the frozen files below)
+  D:\claude os\Medical school\Herophilus-redesign\progress\redesign-clean\
+  D:\scratch 2026\clean-vendor\  (vendor staging only)
+No git writes. Never touch D:\claude os\Medical school\Herophilus (the live copy).
+FROZEN, never edit: app\data\*, app\js\storage.js, app\js\utils.js, app\js\theme.js, app\js\icons.js, app\js\lib\*, app\css\print.css.
+Keep print class names on the elements that carry them: .th-* .bk-* .stem .rail .topbar .clep .mod-art .tb-btn .filterbar .toast.
+No new storage key. Theory stays locked.
+
+READ FIRST, in order (all in progress\redesign-clean\):
+  CONTRACT.md (every behaviour that must survive) - step1a-brief.txt (items 2, 3, 4, 7 are THIS job; item 1 tokens + item 5
+  results were done in part A, commit 650bf39c) - step1a-notes.md (what part A changed/unlinked) - PICKS.md.
+Superseded in step1a-brief.txt: "Keep the app booting from file://" stays true for the CHECKS, but the site is online-only.
+Build on part A's tokens.css, fonts and ui-icons.js; do not re-do them.
+
+THE OWNER'S MOTION RULE (binding, 2026-10-16): "Never recreate, just copy." Every motion is the REAL published open-licence
+code or file. You may change only colours, text and size - never timing, easing, keyframes or duration. A piece that would
+need its motion changed is DROPPED, not adjusted. Do NOT hand-write any @keyframes, transition timing, or JS animation.
+Record source URL + version + licence for every copied piece in app\assets\licences\ and in step1a-notes.md.
+
+SCOPE
+
+1. Focus quiz (vQuiz, vCase) - step1a-brief.txt item 3, all of it. Centred ~68ch column; top bar with visible exit, chapter
+   name, position "12 / 84", timer only in exam mode, a "Questions" button. Full-width option rows with letters, selected /
+   correct / wrong states not relying on colour alone (icon or text too). Explanation appears BELOW with no layout jump.
+   Exam mode still suppresses explanations. Confidence, flag (F), notes, strike, highlighter pens (1-4) still work, reachable,
+   quiet. Must look right with: long stem, figure, case question, missing explanation, exam mode, 2 to 10 options.
+
+2. Question panel (openJump; key J; the "Questions" button). Native <dialog> (showModal) docked to the side: focus stays
+   inside while open, Escape closes, focus returns to the button that opened it, and to J's last focus when opened by key.
+   Its number grid = owner pick #10 "Question number panel", copied from https://uiverse.io/AmIt-DasIT/neat-turkey-32 (MIT).
+   The copy with our colours already applied is in D:\scratch 2026\motion-copied\herophilus-motion-copied.html (find it via
+   MANIFEST.md beside it; build.cjs too). Keep its CSS as published except colours/size; states map to: current, answered,
+   flagged, unanswered (not colour alone).
+   The panel's own open/close movement: NO hand-built slide. If the copied piece carries none, the dialog simply appears
+   (browser default). Say so in the notes - the owner will be told.
+
+3. Check answer button = owner pick #11, copied from https://uiverse.io/adamgiebl/rude-bear-14 (MIT), same source file as
+   above. Text "Check answer". Keep as published except colours/size/text.
+
+4. Explanation render rule - step1a-brief.txt item 4 exactly: a line starting "> " becomes a quote block; " • " runs on one
+   line become a list; `backticks` become inline code. Nothing else. No case changes. Stored text never edited. Applied at
+   render time only, escaped first (no HTML injection from data). Typography/spacing: Newsreader, comfortable line height,
+   tables and lists styled.
+
+5. Answer motion (replaces the hand-built N4/M5/M6, which the copy rule voids):
+   - Right answer: Lottie checkmark, anim-picks\checkmark-UaMrRzGt3G.json (owner pick #22), plays once in the correct row's
+     letter badge. This IS move N4 now (ring becomes tick).
+   - Wrong answer: Lottie cross, anim-picks\cross-close-cancel-icon-animation-imJWR2OMg7.json (owner pick #24), plays once in
+     the chosen wrong row's badge.
+   - M5 small shake on wrong: animate.css 4.1.1 (MIT, https://github.com/animate-css/animate.css) class headShake, once, on
+     the chosen wrong row. M6 small bounce on right: animate.css class pulse, once, on the correct row. Use the library's own
+     published classes and its default duration; do not override --animate-duration. Copy only the base rules + those two
+     keyframes into ONE app css file with the licence header kept; do not link the whole library.
+   - Player: lottie-web 5.12.2 lottie_light.min.js (MIT, svg renderer). Stage: in D:\scratch 2026\clean-vendor\ run
+     `npm pack lottie-web@5.12.2` and `npm pack animate.css@4.1.1` (exactly these two, pinned), extract, copy only the files
+     you use into a NEW folder app\vendor\ (app\js\lib is frozen). Load it as a classic <script>.
+     Lottie JSON must load under file:// - wrap each used JSON as a classic script assigning a var (no fetch). Tint the
+     animation colours to our tokens (colour values only; dark and light both readable).
+   - prefers-reduced-motion: Lottie shows its LAST frame, no play; animate.css classes not applied.
+   - Exam mode: no right/wrong motion (nothing is revealed).
+   - Every one plays once per check. No idle loops, no hover lift, no glow, no pills, no emoji, no confetti.
+
+6. Cut couplings on quiz/case: no film, no clepsydra pose/paint, no reveal-on-scroll. Unlink a CSS/JS file from index.html only
+   when nothing left on screen uses it. Append to step1a-notes.md: what changed, what was unlinked, what still depends on what,
+   every copied piece with source + licence, anything dropped and why.
+
+CHECKS - run from D:\claude os\Medical school\Herophilus-redesign and paste outputs verbatim in your final message:
+  node tools\boot-check\boot-check.js        -> 0 console errors
+  node tools\ui-tasks\tasks.js               -> 7 PASS (if a click selector moved, update ONLY its labelled selectors object)
+  node tools\ui-tasks\frozen.js 8bd99322     -> 0 mismatches
+Do NOT take or open screenshots - a separate job does that. Do not open image files.
+
+BUDGET: close out at 60 tool calls, hand back by 75 even if unfinished. Write step1a-notes.md as you go so a replacement can
+resume. A partial pass reported honestly is a success.
+
+FINAL MESSAGE (under 250 words): files changed/created, what was unlinked, copied pieces + licences, anything dropped, the
+three check outputs verbatim, anything not done.

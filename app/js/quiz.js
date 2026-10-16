@@ -231,6 +231,8 @@ const OPT_LETTERS='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 let strikeQuestion=null;
 /* the gold rule draws only on the render that follows an actual pick; Flag, Skip-back and other re-renders show it already drawn */
 let ruleFresh=false;
+/* id of the question just checked: lets answer-fx.js play its motion on that one render only */
+let fxFresh=null;
 let strikes=new Set();
 function toggleStrike(i,e){
   e.stopPropagation();
@@ -306,7 +308,11 @@ function renderFocusQuestion(p,q,prev,isCase){
       const state=Q.shown?(i===q.answer?'correct':i===Q.sel?'wrong':''):i===Q.sel?'sel':'';
       const struck=!answered&&strikes.has(i);
       const label=state==='correct'?'✓ Correct':state==='wrong'?'× Wrong':state==='sel'?'Selected':'';
-      h+=`<div class="opt ${state} ${struck?'struck':''}"><button type="button" class="opt-answer" aria-pressed="${i===Q.sel}" ${Q.shown?'disabled':''} onclick="pick(${i},event.detail===0)"><span class="ltr">${OPT_LETTERS[i]}</span><span class="opt-text">${esc(o)}</span><span class="mark">${label}</span></button><button type="button" class="strike-btn" ${answered?'disabled tabindex="-1"':''} aria-label="${struck?'Restore':'Strike out'} option ${OPT_LETTERS[i]}" aria-pressed="${struck}" onclick="toggleStrike(${i},event)" onkeydown="if(event.key==='Enter'||event.key===' '||(/^[A-Za-z]$/.test(event.key)&&OPT_LETTERS.indexOf(event.key.toUpperCase())<${q.options.length}))event.stopPropagation()">${ico('strike',16)}</button></div>`;
+      /* Tick / cross live in the letter badge (answer-fx.js). The letter stays in the DOM for screen readers. */
+      const fxKind=(Q.shown&&!Q.exam)?(state==='correct'?'check':state==='wrong'?'cross':''):'';
+      const fxPlay=fxFresh===q.id&&(state==='wrong'||(state==='correct'&&Q.sel===q.answer));
+      const ltr=fxKind?`<span class="ltr has-fx"><span class="ltr-l">${OPT_LETTERS[i]}</span><span class="fx" aria-hidden="true" data-fx="${fxKind}"${fxPlay?' data-play':''}></span></span>`:`<span class="ltr">${OPT_LETTERS[i]}</span>`;
+      h+=`<div class="opt ${state} ${struck?'struck':''}"><button type="button" class="opt-answer" aria-pressed="${i===Q.sel}" ${Q.shown?'disabled':''} onclick="pick(${i},event.detail===0)">${ltr}<span class="opt-text">${esc(o)}</span><span class="mark">${label}</span></button><button type="button" class="strike-btn" ${answered?'disabled tabindex="-1"':''} aria-label="${struck?'Restore':'Strike out'} option ${OPT_LETTERS[i]}" aria-pressed="${struck}" onclick="toggleStrike(${i},event)" onkeydown="if(event.key==='Enter'||event.key===' '||(/^[A-Za-z]$/.test(event.key)&&OPT_LETTERS.indexOf(event.key.toUpperCase())<${q.options.length}))event.stopPropagation()">${ico('strike',16)}</button></div>`;
     });
     h+='</div>';
   }
@@ -314,7 +320,7 @@ function renderFocusQuestion(p,q,prev,isCase){
   h+=`<div class="focus-actions"><button class="focus-btn" onclick="navQ(-1)" ${Q.i===0?'disabled':''}>← Previous</button>
     <button class="focus-btn flag ${flagged?'on':''}" aria-pressed="${flagged}" onclick="toggleFlag('${q.id}')">${flagged?'Flagged':'Flag'} <kbd>F</kbd></button>
     ${!Q.shown?`<button class="focus-btn" onclick="navQ(1)">Skip</button>${isCase?'<button class="focus-btn" onclick="peekCase()">Reveal</button>':''}`:'<span class="focus-action-spacer"></span>'}
-    <button class="focus-btn primary" ${!isCase&&!Q.exam&&!Q.shown&&Q.sel===null?'disabled':''} onclick="${Q.exam||Q.shown?'navQ(1)':isCase?'revealCase()':'reveal()'}">${Q.exam||Q.shown?next:'Check answer'}</button></div>`;
+    <button class="${Q.exam||Q.shown?'focus-btn primary':'check-answer'}" ${!isCase&&!Q.exam&&!Q.shown&&Q.sel===null?'disabled':''} onclick="${Q.exam||Q.shown?'navQ(1)':isCase?'revealCase()':'reveal()'}">${Q.exam||Q.shown?next:'Check answer'}</button></div>`;
   if(Q.exam)h+=`<div class="focus-exam-footer"><span>${Q.ids.filter(id=>!(id in Q.exam.picked)).length} unanswered</span><button class="focus-btn" onclick="examConfirmFinish()">Hand in paper</button></div>`;
   h+=focusFeedback(q,prev,isCase)+focusNotes(q);
   if(!Q.shown&&!Q.exam&&prev){
@@ -325,6 +331,8 @@ function renderFocusQuestion(p,q,prev,isCase){
   const stem=p.querySelector('.stem');
   applyHighlights(stem,S.hl[q.id]||[]);
   stem.addEventListener('mouseup',onStemSelect);stem.addEventListener('touchend',onStemSelect);
+  /* Answer motion plays once, on the render that follows a check; any later redraw shows the end state. */
+  fxRun(p,fxFresh===q.id&&Q.shown&&!Q.exam);fxFresh=null;
 }
 function vQuiz(p){
   const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
@@ -377,6 +385,7 @@ function reveal(){
   S.answers[q.id]={pick:Q.sel,ok:ok,at:Date.now()};
   Q.did[q.id]=ok;                         /* what THIS sitting scored — see finishSet */
   scheduleSRS(q.id,ok);
+  fxFresh=q.id;
   markDayActive();save();render();
 }
 /* The three ratings have to differ in what they DO, not only in what they
@@ -710,10 +719,20 @@ function toggleExp(b){const open=b.classList.toggle('open');b.setAttribute('aria
 
 
 /* ============ JUMP NAVIGATOR ============ */
+/* The panel is a native <dialog> opened with showModal(): the browser traps focus inside it, makes the page behind it inert and
+   closes it on Escape. Where focus goes back to is recorded here, because the question card is rebuilt after a jump and the
+   element that held focus no longer exists by then. */
+let panelOpener=null;
 function openJump(){
+  const dlg=$('questionPanel');
+  if(!dlg||dlg.open)return;
+  const el=document.activeElement;
+  panelOpener={el:el,btn:!!(el&&el.id==='questionsButton'),opt:Array.from(document.querySelectorAll('.opts .opt-answer')).indexOf(el)};
   const n=Q.ids.length;
+  /* state glyphs: colour is never the only signal */
+  const glyph=(id,i)=>Q.exam?(id in Q.exam.picked?'✓':''):isAnswered(id)?(isCorrect(id)?'✓':'×'):'';
   let h=`<h3 id="questionsTitle">Questions</h3>
-   <p style="margin-bottom:15px">${n} question${n===1?'':'s'} in this set. Type a number or pick one from the grid.</p>
+   <p class="qp-sub">${n} question${n===1?'':'s'} in this set. Type a number or pick one from the grid.</p>
    <div class="jumprow">
      <input class="jumpin" id="jumpNum" aria-label="Question number" type="number" min="1" max="${n}" placeholder="e.g. ${Math.min(100,n)}"
        onkeydown="if(event.key==='Enter'){event.preventDefault();jumpGo()}">
@@ -721,41 +740,52 @@ function openJump(){
      <button class="btn sec" onclick="jumpNextUnanswered()">Next unanswered</button>
      ${Q.exam?'':'<button class="btn sec" onclick="jumpFirstWrong()">First wrong</button>'}
    </div>
-   <div class="jumpkey">
-     <span class="k"><span class="sw" style="background:var(--selected);border-color:var(--text-2)"></span>Current</span>
-     ${Q.exam
-       ? `<span class="k"><span class="sw" style="background:var(--fill);border-color:var(--tx)"></span>Answered</span>`
-       : `<span class="k"><span class="sw" style="background:var(--ok-bg);border-color:var(--ok)"></span>Correct</span>
-     <span class="k"><span class="sw" style="background:var(--bad-bg);border-color:var(--bad)"></span>Wrong</span>`}
-     <span class="k"><span class="sw" style="background:var(--card)"></span>Not answered</span>
-     <span class="k"><span class="sw" style="background:var(--surface-3)"></span>Flagged</span>
-   </div>
-   <div class="qgrid" id="qgrid">`;
+   <ul class="jumpkey" aria-label="Key">
+     <li><span class="k-cur"></span>Current</li>
+     <li><span class="k-ans">✓</span>${Q.exam?'Answered':'Right'}</li>
+     ${Q.exam?'':'<li><span class="k-ans">×</span>Wrong</li>'}
+     <li><span class="k-flag">F</span>Flagged</li>
+     <li><span class="k-none"></span>Not answered</li>
+   </ul>
+   <p class="qp-hint">Arrow keys move through the grid. Enter opens the question.</p>
+   <div class="radio-input" id="qgrid" role="radiogroup" aria-label="Questions">`;
   Q.ids.forEach((id,i)=>{
-    const cls=['qg'];
-    if(i===Q.i)cls.push('cur');
-    /* Q.exam.picked, not isAnswered — isAnswered reads S.answers, which also
-       holds every attempt at this question from every earlier session, so it
-       would light a question green before the student had even reached it. */
-    else if(Q.exam){ if(id in Q.exam.picked)cls.push('done') }
-    else if(isAnswered(id))cls.push(isCorrect(id)?'ok':'bad');
-    if(S.flags[id])cls.push('flagged');
-    const status=Q.exam?(id in Q.exam.picked?'Answered':'Not answered'):isAnswered(id)?(isCorrect(id)?'Correct':'Wrong'):'Not answered';
-    h+=`<button class="${cls.join(' ')}" aria-label="Question ${i+1}, ${status}${S.flags[id]?', flagged':''}" ${i===Q.i?'aria-current="true"':''} onclick="jumpTo(${i})">${i+1}<small>${Q.exam?(id in Q.exam.picked?'✓':''):isAnswered(id)?(isCorrect(id)?'✓':'×'):''}${S.flags[id]?' F':''}</small></button>`;
+    const status=Q.exam?(id in Q.exam.picked?'Answered':'Not answered'):isAnswered(id)?(isCorrect(id)?'Right':'Wrong'):'Not answered';
+    const flagged=!!S.flags[id];
+    const g=glyph(id,i);
+    h+=`<label class="label"><input type="radio" name="qpanel-q" value="${i}" ${i===Q.i?'checked aria-current="true"':''} aria-label="Question ${i+1}, ${status}${flagged?', flagged':''}${i===Q.i?', current':''}"><span class="check" onclick="jumpTo(${i})" data-state="${i===Q.i?'current':g?'answered':'unanswered'}"${flagged?' data-flag="1"':''}>${i+1}${g?`<small class="g">${g}</small>`:''}${flagged?'<small class="f">F</small>':''}</span></label>`;
   });
-  h+=`</div><div class="modal-actions" style="margin-top:18px">
-     <button class="btn sec" onclick="closeModal()">Close</button></div>`;
-  showModal(h,true,'questions');
-  setTimeout(()=>{
-    const inp=$('jumpNum');if(inp&&inp.focus)inp.focus();
-    const cur=document.querySelector('.qg.cur');
-    if(cur&&cur.scrollIntoView)cur.scrollIntoView({block:'center'});
-  },40);
+  h+=`</div><div class="modal-actions"><button class="btn sec" onclick="closeQuestionPanel()">Close</button></div>`;
+  dlg.innerHTML=h;
+  dlg.classList.add('show');
+  dlg.showModal();
+  const cur=dlg.querySelector('.radio-input input:checked');
+  if(cur){const c=cur.nextElementSibling;if(c&&c.scrollIntoView)c.scrollIntoView({block:'center'})}
+  const inp=$('jumpNum');if(inp&&inp.focus)inp.focus();
 }
+function closeQuestionPanel(){const dlg=$('questionPanel');if(dlg&&dlg.open)dlg.close()}
+/* Enter on a grid cell opens that question (Space and the arrows only move the cursor). */
+document.addEventListener('keydown',e=>{
+  const t=e.target;
+  if(e.key==='Enter'&&t&&t.matches&&t.matches('#questionPanel .radio-input input')){e.preventDefault();jumpTo(+t.value)}
+});
+(function(){
+  const dlg=document.getElementById('questionPanel');
+  if(!dlg)return;
+  dlg.addEventListener('close',()=>{
+    dlg.classList.remove('show');
+    const t=panelOpener;panelOpener=null;
+    if(!t)return;
+    let el=t.el&&t.el.isConnected&&t.el!==document.body?t.el:null;
+    if(!el&&t.btn)el=$('questionsButton');
+    if(!el&&t.opt>=0)el=document.querySelectorAll('.opts .opt-answer')[t.opt]||null;
+    if(el&&el.focus)el.focus({preventScroll:true});
+  });
+})();
 function jumpTo(i){
   if(i<0||i>=Q.ids.length)return;
   moveQ(i);
-  closeModal();render();window.scrollTo(0,0);$('questionsButton')?.focus({preventScroll:true});
+  closeQuestionPanel();render();window.scrollTo(0,0);
 }
 function jumpGo(){
   const inp=$('jumpNum');

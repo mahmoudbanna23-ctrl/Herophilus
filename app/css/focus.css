@@ -12,9 +12,9 @@ body:is([data-view="quiz"],[data-view="results"]) .topbar .mobile-only{display:n
 body:is([data-view="quiz"],[data-view="results"]) #page{width:100%;max-width:none;margin:0;padding:0 32px 64px;animation:none;background:none;overflow-anchor:none}
 body:is([data-view="quiz"],[data-view="results"]) :is(button,a,input,textarea,summary):focus-visible{outline:2px solid var(--focus-ring);outline-offset:3px}
 :root body:is([data-view="quiz"],[data-view="results"]) .toast{background:var(--surface-2);color:var(--text-1);border:1px solid var(--hairline);border-radius:var(--radius-2);box-shadow:var(--shadow-1);font:13px/1.6 var(--font-body);bottom:24px;transition:opacity var(--motion-fast) var(--ease-out),transform var(--motion-fast) var(--ease-out)}
-/* No inherited lifts, pulses, decorative pseudo-elements, or layout animation. */
-:is(.focus-quiz,.focus-results) *,body:is([data-view="quiz"],[data-view="results"]) .topbar *{animation:none!important;transition:none;text-shadow:none}
-:is(.focus-quiz,.focus-results) button:hover{transform:none;box-shadow:none}
+/* No inherited lifts, pulses, decorative pseudo-elements, or layout animation. Exempt: rows carrying the two copied animate.css classes. */
+:is(.focus-quiz,.focus-results) *:not(.animate__animated):not(.check-answer),body:is([data-view="quiz"],[data-view="results"]) .topbar *{animation:none!important;transition:none;text-shadow:none}
+:is(.focus-quiz,.focus-results) button:not(.check-answer):hover{transform:none;box-shadow:none}
 .focus-quiz{max-width:1104px;margin:auto;font-size:15px}
 .focus-header{display:flex;align-items:center;gap:24px;min-height:88px;border-bottom:1px solid var(--hairline)}
 .focus-context{display:flex;flex-direction:column;gap:4px;flex:1;min-width:0;color:var(--text-2);font-size:14px}
@@ -148,27 +148,55 @@ body:is([data-view="quiz"],[data-view="results"]) :is(button,a,input,textarea,su
 .focus-wrong{margin-top:24px;color:var(--text-2);font-size:14px}
 .focus-wrong summary{cursor:pointer}
 .focus-wrong>div{padding:16px 0;border-bottom:1px solid var(--hairline)}
-/* Navigator: modal ownership is retained, with an accessible side panel. */
-#modalBg.question-panel{align-items:stretch;justify-content:flex-end;padding:0;background:#00000066;backdrop-filter:none}
-#modalBg.question-panel .modal{width:440px;max-width:100%;max-height:100dvh;height:100dvh;margin:0;overflow-y:auto;border:0;border-left:1px solid var(--hairline);border-radius:0;padding:32px;background:var(--surface-1);color:var(--text-1);box-shadow:var(--shadow-2);font:14px/1.7 var(--font-body);animation:question-panel-in var(--motion-normal) var(--ease-out)}
-#modalBg.question-panel h3{font:400 32px/1.3 var(--font-display);text-transform:none;letter-spacing:0;margin:0 0 16px;color:var(--text-1)}
-#modalBg.question-panel p{color:var(--text-3);font:14px/1.7 var(--font-body)}
-#modalBg.question-panel :is(.btn,.jumpin){font:13px var(--font-body);border:1px solid var(--hairline);border-radius:var(--radius-1);background:var(--surface-2);color:var(--text-1);padding:12px;min-height:40px;box-shadow:none;transform:none;transition:none}
-#modalBg.question-panel .btn.go{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
-#modalBg.question-panel .btn::before,#modalBg.question-panel .btn::after{display:none}
-#modalBg.question-panel .jumprow{display:flex;flex-wrap:wrap;gap:8px}
-#modalBg.question-panel .jumpin{width:88px}
-#modalBg.question-panel .jumpkey{display:flex;flex-wrap:wrap;gap:8px 16px;margin:24px 0;color:var(--text-3);font-size:12px}
-#modalBg.question-panel .sw{border-radius:var(--radius-1)}
-#modalBg.question-panel .qgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;max-height:none;overflow:visible}
-#modalBg.question-panel .qg{display:flex;align-items:center;justify-content:center;gap:4px;min-height:48px;width:auto;border:1px solid var(--hairline);border-radius:var(--radius-1);font:14px var(--font-body);font-variant-numeric:tabular-nums;background:var(--surface-1);color:var(--text-2);box-shadow:none;transform:none;transition:none}
-#modalBg.question-panel .qg small{font:10px var(--font-body)}
-#modalBg.question-panel .qg.cur{outline:2px solid var(--text-2);outline-offset:-2px;background:var(--selected);color:var(--text-1)}
-#modalBg.question-panel .qg.ok{background:var(--ok-bg);color:var(--ok)}
-#modalBg.question-panel .qg.bad{background:var(--bad-bg);color:var(--bad)}
-#modalBg.question-panel .qg.flagged::after{display:none}
-#modalBg.question-panel :focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
-@keyframes question-panel-in{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}
+/* Question panel: a native <dialog> docked to the right. It carries no slide of its own (a hand-built one would break the
+   copy-only motion rule), so it appears the way the browser opens a dialog. */
+dialog.question-panel{margin:0 0 0 auto;padding:32px;width:440px;max-width:100%;height:100dvh;max-height:100dvh;border:0;border-left:1px solid var(--hairline);border-radius:0;background:var(--surface-1);color:var(--text-1);font:14px/1.7 var(--font-body);overflow-y:auto;box-shadow:var(--shadow-2)}
+dialog.question-panel::backdrop{background:#00000066}
+dialog.question-panel h3{font:400 32px/1.3 var(--font-display);text-transform:none;letter-spacing:0;margin:0 0 16px;color:var(--text-1)}
+dialog.question-panel p{color:var(--text-3);font:14px/1.7 var(--font-body);margin:0 0 16px}
+dialog.question-panel :is(.btn,.jumpin){font:13px var(--font-body);border:1px solid var(--hairline);border-radius:var(--radius-1);background:var(--surface-2);color:var(--text-1);padding:12px;min-height:40px;box-shadow:none;transform:none;transition:none}
+dialog.question-panel .btn.go{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+dialog.question-panel .btn::before,dialog.question-panel .btn::after{display:none}
+dialog.question-panel .jumprow{display:flex;flex-wrap:wrap;gap:8px}
+dialog.question-panel .jumpin{width:88px}
+dialog.question-panel .jumpkey{display:flex;flex-wrap:wrap;gap:8px 16px;margin:24px 0 8px;padding:0;list-style:none;color:var(--text-3);font-size:12px}
+dialog.question-panel .jumpkey li{display:inline-flex;align-items:center;gap:6px}
+dialog.question-panel .jumpkey span{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;font:600 11px var(--font-body);color:var(--text-2)}
+dialog.question-panel .k-cur{border:2px solid var(--text-2);border-radius:50%}
+dialog.question-panel .k-none{border:2px dashed var(--hairline-strong);border-radius:50%}
+dialog.question-panel .modal-actions{margin-top:24px}
+dialog.question-panel :focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+/* Question number grid: owner pick 10, "Question number panel".
+   Copied from https://uiverse.io/AmIt-DasIT/neat-turkey-32 (MIT, Uiverse.io galaxy). Kept as published except:
+   colours (the two neumorphic shadows read tokens), size (30px to 44px so a number fits; gap 20px to 12px, wrap),
+   the input is hidden by clipping instead of display:none so it can take keyboard focus, and the number plus state marks inside .check. */
+dialog.question-panel .radio-input .label input{position:absolute;width:1px;height:1px;margin:0;opacity:0;pointer-events:none}
+dialog.question-panel .radio-input{display:flex;flex-wrap:wrap;gap:12px}
+dialog.question-panel .radio-input .label{display:flex;position:relative}
+dialog.question-panel .radio-input .label .check{width:44px;height:44px;display:flex;flex-direction:column;justify-content:center;align-items:center;border-radius:50%;cursor:pointer;transition:0.3s;border:3px solid transparent;box-shadow:3px 3px 6px var(--neu-dark),
+   -1px -1px 4px var(--neu-light);font:13px/1.15 var(--font-body);font-variant-numeric:tabular-nums;color:var(--text-2)}
+dialog.question-panel .radio-input .label input:checked + .check{box-shadow:3px 3px 6px var(--neu-dark),
+   -1px -1px 4px var(--neu-light),
+   inset 3px 3px 6px var(--neu-dark),
+   inset -1px -1px 4px var(--neu-light);transform:scale(1.1)}
+/* state marks that are not colour: ring (current), dashed edge (not answered), glyphs (answered, flagged) */
+dialog.question-panel .check[data-state="current"]{border-color:var(--text-2);color:var(--text-1);font-weight:700}
+dialog.question-panel .check[data-state="unanswered"]{border-style:dashed;border-color:var(--hairline-strong)}
+dialog.question-panel .check small{font:600 9px/1.1 var(--font-body)}
+dialog.question-panel .check small.g{color:var(--text-1)}
+dialog.question-panel .radio-input input:focus-visible + .check{outline:2px solid var(--focus-ring);outline-offset:3px}
+/* Check answer button: owner pick 11. Copied from https://uiverse.io/adamgiebl/rude-bear-14 (MIT, Uiverse.io galaxy).
+   Kept as published except colours (accent tokens), size (padding, font-size, min-width), text, and a disabled look the original lacks. */
+.check-answer{position:relative;display:inline-block;margin:0 0 0 auto;padding:12px 28px;min-width:160px;text-align:center;font:500 16px var(--font-body);letter-spacing:1px;text-decoration:none;color:var(--accent);background:transparent;cursor:pointer;transition:ease-out 0.5s;border:2px solid var(--accent);border-radius:var(--radius-2);box-shadow:inset 0 0 0 0 var(--accent)}
+.check-answer:hover:not(:disabled){color:var(--on-accent);box-shadow:inset 0 -100px 0 0 var(--accent)}
+.check-answer:active:not(:disabled){transform:scale(0.9)}
+.check-answer:disabled{color:var(--disabled);border-color:var(--hairline);cursor:default}
+/* Letter badge: holds the letter, or the Lottie tick / cross after a check (answer-fx.js). */
+#page .focus-reading .opt-answer{align-items:start}
+#page .focus-reading .ltr{position:relative;display:grid;place-items:center;width:24px;height:24px;line-height:1}
+#page .focus-reading .ltr-l{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#page .focus-reading .fx{position:absolute;inset:0}
+#page .focus-reading .fx svg{display:block;width:100%;height:100%}
 @media(max-width:700px){
   body:is([data-view="quiz"],[data-view="results"]) #page{padding:0 16px 40px}
   body:is([data-view="quiz"],[data-view="results"]) .topbar{padding:12px 16px}

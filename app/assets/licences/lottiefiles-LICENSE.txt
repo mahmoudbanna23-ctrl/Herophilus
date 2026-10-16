@@ -1,0 +1,17 @@
+LottieFiles free animations - Lottie Simple License
+https://lottiefiles.com/page/license
+
+Used in Herophilus (copied unchanged, tinted at play time):
+  checkmark-UaMrRzGt3G.json                           owner pick 22, right-answer tick
+  cross-close-cancel-icon-animation-imJWR2OMg7.json   owner pick 24, wrong-answer cross
+
+Source pages:
+  checkmark-UaMrRzGt3G  "Checkmark Animation" by Brian
+    https://lottiefiles.com/free-animation/checkmark-UaMrRzGt3G
+  cross-close-cancel-icon-animation-imJWR2OMg7  "Cross, Close, Cancel Icon Animation" by Mujahid Islam
+    https://lottiefiles.com/free-animation/cross-close-cancel-icon-animation-imJWR2OMg7
+
+Terms as recorded from each animation page (JSON-LD) on 2026-10-16 by the shelf researcher
+(progress/redesign-clean/anim-picks/LICENCES.md; source pages in D:\scratch 2026\anim-shelf\manifest.json):
+commercial use allowed, attribution not required, redistributed or modified copies keep the same terms.
+The licence text itself was not downloaded; it lives at the URL above.
