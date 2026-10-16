@@ -124,3 +124,12 @@ NOT done: no screenshots (separate job), so tint legibility, grid layout and lon
 
 ## Left for next job
 Look at the re-captured `b-*.png` in `D:\scratch 2026\clean-1a\`.
+
+## Part B polish + recording (2026-10-16)
+Fixes (focus.css, quiz.js only; measured in headless Chrome 1440x900, no images opened):
+- a. Tag flush: `.mark` gets `margin-right:-48px` above 700px (the hidden strike column 40px + 8px gap). Gap from text end to row edge was 65px, now 17px (1px border + 16px padding). Strike control is hidden whenever a tag shows, so no overlap.
+- b. Explanation chevron: the `⌄` text glyph (rotated to `^` when open) replaced by the existing `uiIco('chevron-down',16)` SVG in `.chev`, 1.2em box, centred on the heading text (box middle equals text middle, measured). The old rotate rule in components.css is untouched.
+- c. Legend `x`: new class `k-x` on the legend span only, 24px font. Ink at 15px measured by canvas: tick 13x13, F 9x11, cross 8x7. Grid buttons untouched.
+- d. Caption stop: `focusFigure(q)` in quiz.js adds a full stop after a caption that lacks one, just before the hint, at render time. Stored text and storage.js untouched.
+Recording: `record-step1a.js` (CDP screencast + ffmpeg, no animation kill, real clicks and keys). Output `D:\scratch 2026\clean-1a\rec\step1a-{dark,light}-{1440x900,1180x820}.mp4` + `-sheet.jpg` (12 tiles each), ~59 s each, 0 console errors, fx confirmed in DOM (cross + headShake on wrong, tick + pulse on right).
+Walk deviations: chapter `ent-swallow`; `entqb-thr11-576` is the FIRST question of that chapter (so it shows the quote/list explanation on the wrong pick) and the jump goes to the 6th (`entqb-thr11-584`, chosen by script as a later quote+list question). Before J the script presses Tab to reach the Next button (after Check the focus is on the page body, and Escape would have nowhere to return to). Videos not watched by me.

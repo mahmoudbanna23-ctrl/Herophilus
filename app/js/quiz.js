@@ -282,7 +282,7 @@ function focusFeedback(q,prev,isCase){
     h+=`<div class="modelans"><b>The source's diagnosis</b>${md(q.answer)}</div>`;
     if((q.keys||[]).length)h+=`<ul class="focus-keys">${q.keys.map((k,i)=>`<li>${g?(g.hits[i]?'✓ ':'× '):''}${esc(k.label)}</li>`).join('')}</ul>`;
   }
-  h+=`<div class="explain"><button class="ex-head open" aria-expanded="true" onclick="toggleExp(this)">Explanation <span class="chev">⌄</span></button>
+  h+=`<div class="explain"><button class="ex-head open" aria-expanded="true" onclick="toggleExp(this)">Explanation <span class="chev" aria-hidden="true">${uiIco('chevron-down',16)}</span></button>
     <div class="ex-body open">${q.explanation&&q.explanation.trim()?explanationHTML(q.explanation):'<p class="noexp">No explanation was provided for this '+(isCase?'case':'question')+'.</p>'}
     ${q.objective?`<div class="objective"><b>Educational objective</b>${explanationHTML(q.objective)}</div>`:''}</div></div>`;
   if(!Q.peek){
@@ -293,12 +293,15 @@ function focusFeedback(q,prev,isCase){
   if(th)h+=`<button class="readtheory" onclick="openTheoryFor('${q.id}')">Read the notes: ${esc(th.h)} →</button>`;
   return h+'</section>';
 }
+/* Caption and "Tap to enlarge." run together in storage.js (frozen). Here, at render time only, end the caption with a stop
+   when it has none. Stored text is never edited. */
+function focusFigure(q){return qFigure(q).replace(/([^.!?\s])(\s+<span class="qfig-hint">)/,'$1.$2');}
 function renderFocusQuestion(p,q,prev,isCase){
   const flagged=!!S.flags[q.id];
   let h=`<div class="focus-quiz" data-subject="${q.module}">${focusHeader(q)}<article class="focus-reading">
     <div class="focus-meta"><span class="subject-tint">${esc((moduleOf(q.module)||{}).name||q.module)}</span>${bankPills(q)}${q.source&&!Q.exam?`<details class="focus-source"><summary>Source</summary><div>${mdInline(q.source)}</div></details>`:''}</div>
     <div class="stem${armed?' arm':''}">${md(q.stem)}</div>
-    ${qFigure(q)}
+    ${focusFigure(q)}
     <div class="focus-marker">${markbar(q.id)}</div>`;
   if(isCase){
     h+=`<label class="caseask" for="caseInput">What is your diagnosis?</label><textarea id="caseInput" class="caseinput" rows="3" ${Q.shown?'disabled':''} placeholder="Type your diagnosis" oninput="Q.txt=this.value;Q.caret=this.selectionStart">${esc(Q.txt||'')}</textarea>`;
@@ -744,7 +747,7 @@ function openJump(){
    <ul class="jumpkey" aria-label="Key">
      <li><span class="k-cur"></span>Current</li>
      <li><span class="k-ans">✓</span>${Q.exam?'Answered':'Right'}</li>
-     ${Q.exam?'':'<li><span class="k-ans">×</span>Wrong</li>'}
+     ${Q.exam?'':'<li><span class="k-ans k-x">×</span>Wrong</li>'}
      <li><span class="k-flag">F</span>Flagged</li>
      <li><span class="k-none"></span>Not answered</li>
    </ul>

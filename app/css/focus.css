@@ -236,3 +236,12 @@ dialog.question-panel .radio-input input:focus-visible + .check{outline:2px soli
 #page .focus-reading .mark{font:500 13px/24.75px var(--font-body)}
 /* Panel legend glyphs */
 dialog.question-panel .jumpkey span{width:26px;height:26px;font:600 15px var(--font-body)}
+
+/* Part B polish (design review) */
+/* Tag flush with the row's right padding: the strike control is hidden whenever a tag shows, so the tag may use its column (40px strike column + 8px gap = 48px). */
+@media(min-width:701px){#page .focus-reading .mark{margin-right:-48px}}
+/* Legend: the multiplication sign is a small glyph; scale it up to the visual size of the tick and F (ink measured in Chrome: tick 13x13, F 9x11, cross 8x7 at 15px) */
+dialog.question-panel .jumpkey .k-x{font-size:24px;line-height:1}
+/* Explanation chevron: an icon sized to the heading text, centred on it */
+#page .focus-reading .ex-head .chev{display:inline-flex;align-items:center;justify-content:center;width:1.2em;height:1.2em;margin-left:auto;color:var(--text-2)}
+#page .focus-reading .ex-head .chev svg{width:100%;height:100%;display:block}
