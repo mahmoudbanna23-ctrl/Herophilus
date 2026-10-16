@@ -19,7 +19,7 @@ Done:
   (motion would have needed changing): p06-scrolltext, p13-gooey (fix\deleted.json). Card 1 arrow restored (patch
   removed). Known: card 14 click does nothing at 390 wide (phones secondary, accepted). Cards 15-17 = unmodified
   library code on our own small demo markup — owner asked keep or drop. Patches: motion-big\tools\patches.mjs.
-  NEXT: owner picks into PICKS.md "Big motion picks", commit, push.
+  Owner picked 2 of 17 (cards 1 + 11), PICKS.md "Big motion picks". Motion picking DONE; next = step 1a part B.
   Small-page picks DONE 2026-10-16: 9 of 35, PICKS.md "Small motion picks" (commit 1e224775).
 
 Next — step 1a part B (one builder, then refuter + looker, then recording for owner):

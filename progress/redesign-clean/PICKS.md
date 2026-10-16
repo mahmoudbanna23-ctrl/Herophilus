@@ -106,4 +106,18 @@ herophilus-motion-copied.html, MANIFEST.md beside it). All MIT. Copy as publishe
 | 27 | Search field | Navigation | https://uiverse.io/alexruix/slippery-snail-18 | alexruix |
 | 28 | Email field | Sign-in and profile | https://uiverse.io/SanthoshSJ-Dev/mean-wolverine-8 | SanthoshSJ-Dev |
 
-Not picked: the other 26 on that page. Big-moves page still owed (RESUME-clean.md).
+Not picked: the other 26 on that page.
+
+## Big motion picks - owner 2026-10-16 (2 of 17)
+From the big-moves pick-page (https://claude.ai/artifact/GAE4sfawZdujmHdhY4bKP4; file D:\scratch 2026\motion-big\fix\page.html,
+MANIFEST.md + tools\patches.mjs beside it; clones in motion-big\src\). Both MIT, Codrops. Copy as published; only colours,
+text, size, photo-to-panel swaps may change. Timing, easing, keyframes never.
+
+| # | Move | Screen | Source | Author |
+|---|---|---|---|---|
+| 1 | 3D stacked cards | Subject page | https://github.com/codrops/3DStackMotion | Codrops |
+| 11 | Layered colour wipe between screens | Between screens | https://github.com/codrops/LayersAnimation | Codrops |
+
+Not picked: the other 15, including the three library-on-our-markup cards (15 Atropos, 16 vanilla-tilt, 17 Lenis) -
+so the keep-or-drop question on those is closed by omission. Note: Lenis smooth scroll is still in the plan's GSAP + Lenis
+front-page pick above; this pick-page only declined its demo card.
