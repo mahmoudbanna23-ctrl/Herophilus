@@ -75,3 +75,7 @@ Direction, owner's own words: "things like what you find on motion UI" - referen
 (Motion library examples: cards stacking/fanning, layout morphs, a card growing into a page, springy panels, scroll-linked
 reveals). Read: the app's own pieces moving big, not ambient art. Next: a showcase of motion.dev-style moves built from our
 own question cards, panels and progress, for the owner to pick from. Unbuilt as of this entry.
+Owner correction 2026-10-16: "not just questions cards all the site" - motion.dev-style motion runs across EVERY screen
+(front page, Today, subject pages, quiz, results, review, exams, schedule, menus, sign-in), not only on question cards.
+Showcase must show moves for each screen. Still binding: reading surfaces (quiz stem, explanation, theory) stay still
+while being read; motion happens on change of screen/state; reduced motion stops all.

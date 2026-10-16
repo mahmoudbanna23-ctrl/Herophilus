@@ -8,8 +8,8 @@ Done:
   screen. Refuter PARTIAL-harmless (4 index.html link edits, extra "Return to this set" button, "Review wrong answers" title).
 - Ready-made animations: owner picked 11 of 37 (commit 749e6372), files in anim-picks/, table in PICKS.md.
 - Big motion: owner picked Flying question cards (front page hero) and named https://motion.dev/ as the style he wants
-  ("motion UI"). PICKS.md "Big motion - direction". Owed: a motion.dev-style showcase built from our own cards/panels,
-  owner picks, before step 4. Can run beside step 1a part B.
+  ("motion UI"). PICKS.md "Big motion - direction". Owed: a motion.dev-style showcase covering EVERY screen of the site (owner: not just
+  question cards), owner picks, before step 4. Can run beside step 1a part B.
 
 Next — step 1a part B (one builder, then refuter + looker, then recording for owner):
 - Focus quiz vQuiz/vCase per step1a-brief.txt item 3 (in this folder; its file:// line is superseded by the online-only rule).
