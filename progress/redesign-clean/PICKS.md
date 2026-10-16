@@ -84,3 +84,8 @@ reference, not the limit. The showcase scouts every current modern web-motion st
 and pinned scenes, layout/shared-element morphs, view transitions, text reveals, number counters, clip/mask wipes, magnetic
 and cursor-follow, marquee, parallax depth, staggered grids, blur/gradient-mesh accents, 3D tilt, Lottie/Rive, WebGL
 backgrounds, etc.), sources each (site + licence), and shows them on our own screens for the owner to pick.
+Owner ruling 2026-10-16: "Never recreate just copy" - every motion is the REAL published code/file from its source, never a
+hand-built look-alike. Open licence only (MIT, Apache, ISC, CC0, CodePen public = MIT, uiverse = MIT, Magic UI = MIT ...),
+source URL + licence recorded per piece. Company sites (Apple, Linear, Stripe, Vercel) are not copyable: open-licence
+equivalent or leave out, owner told which. Edits allowed: colours, text, size - not the motion. The 45-move hand-built
+showcase (scratchpad herophilus-motion-ui.html) is VOID under this rule and was never shown to the owner.
