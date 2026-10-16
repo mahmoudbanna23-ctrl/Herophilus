@@ -21,8 +21,8 @@ Done:
   (2 glaring panels, 3 static, 5 blank, 6 near-invisible text); card 16 loud orange; banned-design scan, card
   how-to-play text, CDN URL fetch check, MANIFEST.md all NOT done. Delete a card rather than edit its motion.
   Tools: motion-big\tools\{slim,assemble,check,sheet2}.mjs; dark shots fix\d1-*; originals fix\orig. Next: one fresh
-  builder (sonnet, ROUTE-OK) for these, then refuter, then read whole page and publish. Then owner picks from both
-  into PICKS.md, commit.
+  builder (sonnet, ROUTE-OK) for these, then refuter, then read whole page and publish, owner picks into PICKS.md.
+  Small-page picks DONE 2026-10-16: 9 of 35, PICKS.md "Small motion picks" (commit 1e224775).
 
 Next — step 1a part B (one builder, then refuter + looker, then recording for owner):
 - Focus quiz vQuiz/vCase per step1a-brief.txt item 3 (in this folder; its file:// line is superseded by the online-only rule).
