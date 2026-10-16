@@ -247,15 +247,29 @@ function toggleStrike(i,e){
    stem/option renderers are untouched. md still owns paragraphs and tables. */
 function explanationHTML(text){
   const inline=s=>md(s).replace(/`([^`\n]+)`/g,'<code>$1</code>');
-  let out='',plain=[];
-  const flush=()=>{if(plain.length){out+=inline(plain.join('\n'));plain=[]}};
+  // List content: a line opening with "•" (an opening quote mark may precede it) or carrying " • " runs.
+  const isList=l=>/^"?•\s/.test(l)||l.includes(' • ');
+  const items=l=>l.replace(/^("?)•\s+/,'$1').split(' • ').filter(x=>x.trim()).map(x=>'<li>'+inline(x)+'</li>').join('');
+  // Consecutive list lines share one <ul>; other lines go to md() together.
+  const block=lines=>{
+    let html='',plain=[],ul='';
+    lines.forEach(l=>{
+      if(isList(l)){if(plain.length){html+=inline(plain.join('\n'));plain=[]}ul+=items(l)}
+      else{if(ul){html+='<ul>'+ul+'</ul>';ul=''}plain.push(l)}
+    });
+    if(plain.length)html+=inline(plain.join('\n'));
+    if(ul)html+='<ul>'+ul+'</ul>';
+    return html;
+  };
+  // Consecutive "> " lines form ONE quote block.
+  let out='',run=[],quote=[];
+  const flushRun=()=>{if(run.length){out+=block(run);run=[]}};
+  const flushQuote=()=>{if(quote.length){out+='<blockquote>'+block(quote)+'</blockquote>';quote=[]}};
   String(text||'').split('\n').forEach(line=>{
-    const list=s=>'<ul>'+s.split(' • ').map(x=>'<li>'+inline(x)+'</li>').join('')+'</ul>';
-    if(line.startsWith('> ')){flush();const body=line.slice(2);out+='<blockquote>'+(body.includes(' • ')?list(body):inline(body))+'</blockquote>'}
-    else if(line.includes(' • ')){flush();out+=list(line)}
-    else plain.push(line);
+    if(line.startsWith('> ')){flushRun();quote.push(line.slice(2))}
+    else{flushQuote();run.push(line)}
   });
-  flush();return out;
+  flushRun();flushQuote();return out;
 }
 function focusHeader(q){
   return `<header class="focus-header">
