@@ -64,3 +64,14 @@ Shelf of all 37 candidates + manifest: `D:\scratch 2026\anim-shelf\`.
 Open for the builder: these need a Lottie player in the app (lottie-web `lottie_light` svg build, served from our own
 site per CLAUDE.md §2) - the one exception to "browser built-in motion". Colours must be re-tinted to our tokens;
 line icons recoloured for dark. Reduced motion shows the last frame, no play. Placement above is my proposal, not the owner's.
+
+## Big motion - direction (owner 2026-10-16)
+
+Showcases rejected: 12 texture/gradient scenes (https://claude.ai/artifact/H3HEq89hYEooZFVt5ENbBS) - "textures or fades
+not objects"; anatomy 3D objects (https://claude.ai/artifact/CP52722jnsgp5d1xZLsSqU) - all but one.
+Picked: scene 8, Flying question cards (three.js: subject-tinted question cards flying toward the camera, mouse steers,
+scroll boosts). Likely use: front page hero (step 4).
+Direction, owner's own words: "things like what you find on motion UI" - reference site he named: https://motion.dev/
+(Motion library examples: cards stacking/fanning, layout morphs, a card growing into a page, springy panels, scroll-linked
+reveals). Read: the app's own pieces moving big, not ambient art. Next: a showcase of motion.dev-style moves built from our
+own question cards, panels and progress, for the owner to pick from. Unbuilt as of this entry.
