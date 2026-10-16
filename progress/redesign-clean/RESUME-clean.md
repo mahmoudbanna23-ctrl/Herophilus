@@ -22,16 +22,21 @@ Done:
   Owner picked 2 of 17 (cards 1 + 11), PICKS.md "Big motion picks". Motion picking DONE; next = step 1a part B.
   Small-page picks DONE 2026-10-16: 9 of 35, PICKS.md "Small motion picks" (commit 1e224775).
 
-Next — step 1a part B (one builder, then refuter + looker, then recording for owner):
-- Focus quiz vQuiz/vCase per step1a-brief.txt item 3 (in this folder; its file:// line is superseded by the online-only rule).
-  question panel slide (J / Questions button, focus trap, Escape, focus return).
-- Explanation render rule: "> " quote, " • " list, backticks inline code. Nothing else.
-- Moves N4, M5, M6 + picked checkmark (#22) / cross (#24): decide whether the Lottie tick replaces N4 or follows it.
-  Needs lottie-web lottie_light served from our own site; reduced motion = last frame.
-- Screenshots to D:\scratch 2026\clean-1a\ (dark+light, 1440x900 and 1180x820).
-- Checks from the trial-copy root: boot-check 0 errors · ui-tasks 7 PASS · frozen.js 8bd99322 0 mismatches.
+- Step 1a part B DONE 2026-10-16, commits 7439efcf, da9a8736, c1759850, 4c330dc1. Brief step1a-partB-brief.txt,
+  detail step1a-notes.md. Focus quiz, native <dialog> question panel (no slide: copied piece carries none, owner told),
+  picks #10 grid + #11 check button, Lottie tick/cross (#22/#24) + animate.css headShake/pulse. Explanation rule
+  widened: consecutive "> " lines = one quote, line-leading "•" joins the list (check-explanation-render.js:
+  7388 explanations, 0 empty items, 0 throws). Screenshots D:\scratch 2026\clean-1a\b-*.png (looker GOOD).
+  Owner recording D:\scratch 2026\clean-1a\rec\step1a-*.mp4 (4 videos, record-step1a.js), sent 2026-10-16, no reply yet.
+  Checks at close: boot 0 errors · ui-tasks 7 PASS · frozen 0 mismatches.
 
-Then: step 1b subject page (M1 M2 A3 A4), steps 2-5 per plan.
+Next — step 1b subject page (M1 M2 A3 A4, big pick 3D stacked cards), steps 2-5 per plan. Carry into 1b:
+- Yellow ⚠ in stored explanations reads as an emoji (banned): swap at render time for the ui-icons warning icon.
+- Dashboard pills: red "ENT" tag by "Dashboard", grey count chips (light). Mascot bubble covers dashboard counts.
+- " - " run-in lists inside paragraphs (stored text) stay inline; rule covers " • " only - owner call if wanted.
+- Boot-check per-module line shows ophtho 0 chapter rows (since part A) - investigate.
+- --neu-* token contrast unmeasured; disabled Check/Previous faint in light (disabled, likely fine).
+- Case questions get no tick/cross (no option rows) - builder drop.
 Rules: never edit the live Herophilus folder, no merge, no upload without owner yes; push this branch freely, never
 --force; do not commit tools/city-film or tools/kaggle (unrelated, untracked).
 Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before dispatch.
