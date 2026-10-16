@@ -89,3 +89,21 @@ hand-built look-alike. Open licence only (MIT, Apache, ISC, CC0, CodePen public 
 source URL + licence recorded per piece. Company sites (Apple, Linear, Stripe, Vercel) are not copyable: open-licence
 equivalent or leave out, owner told which. Edits allowed: colours, text, size - not the motion. The 45-move hand-built
 showcase (scratchpad herophilus-motion-ui.html) is VOID under this rule and was never shown to the owner.
+
+## Small motion picks - owner 2026-10-16 (9 of 35)
+From the copied pick-page (https://claude.ai/artifact/2iU2kqb5HGa4UKsHGButBh; file D:\scratch 2026\motion-copied\
+herophilus-motion-copied.html, MANIFEST.md beside it). All MIT. Copy as published; only colours, text, size may change.
+
+| # | Move | Screen | Source | Author |
+|---|---|---|---|---|
+| 1 | Question counter | Front page | https://github.com/HubSpot/odometer | HubSpot |
+| 6 | Chapter progress ring | Subject page | https://github.com/kimmobrunfeldt/progressbar.js | Kimmo Brunfeldt |
+| 10 | Question number panel | Quiz | https://uiverse.io/AmIt-DasIT/neat-turkey-32 | AmIt-DasIT |
+| 11 | Check answer button | Quiz | https://uiverse.io/adamgiebl/rude-bear-14 | adamgiebl |
+| 13 | Score ring | Results | https://github.com/chartjs/Chart.js (doughnut) | Chart.js contributors |
+| 23 | Add to schedule button | Schedule | https://uiverse.io/andrew-demchenk0/giant-termite-81 | andrew-demchenk0 |
+| 24 | Menu icon, folding | Navigation | https://uiverse.io/JulanDeAlb/tall-swan-6 | JulanDeAlb |
+| 27 | Search field | Navigation | https://uiverse.io/alexruix/slippery-snail-18 | alexruix |
+| 28 | Email field | Sign-in and profile | https://uiverse.io/SanthoshSJ-Dev/mean-wolverine-8 | SanthoshSJ-Dev |
+
+Not picked: the other 26 on that page. Big-moves page still owed (RESUME-clean.md).
