@@ -79,3 +79,8 @@ Owner correction 2026-10-16: "not just questions cards all the site" - motion.de
 (front page, Today, subject pages, quiz, results, review, exams, schedule, menus, sign-in), not only on question cards.
 Showcase must show moves for each screen. Still binding: reading surfaces (quiz stem, explanation, theory) stay still
 while being read; motion happens on change of screen/state; reduced motion stops all.
+Owner widening 2026-10-16: "not just spring motions look for anything that might fit and look modern" - motion.dev is ONE
+reference, not the limit. The showcase scouts every current modern web-motion style that could fit (springs, scroll-linked
+and pinned scenes, layout/shared-element morphs, view transitions, text reveals, number counters, clip/mask wipes, magnetic
+and cursor-follow, marquee, parallax depth, staggered grids, blur/gradient-mesh accents, 3D tilt, Lottie/Rive, WebGL
+backgrounds, etc.), sources each (site + licence), and shows them on our own screens for the owner to pick.
