@@ -14,8 +14,15 @@ Done:
   Small copied page (35 MIT pieces, 11 screens): PUBLISHED https://claude.ai/artifact/2iU2kqb5HGa4UKsHGButBh,
   file D:\scratch 2026\motion-copied\herophilus-motion-copied.html (build.cjs + MANIFEST.md beside it; text/colour
   fixes applied straight to the html, not yet back in build.cjs). Big-moves page (19 pieces, Codrops/Atropos/
-  vanilla-tilt/Lenis): check-and-fix agent was running, output D:\scratch 2026\motion-big\fix\ - read it fully, fix,
-  publish. Then owner picks from both into PICKS.md, commit.
+  vanilla-tilt/Lenis): check-and-fix agent stopped PARTIAL at its call limit. State: fix\page.html 394,664 B (over
+  300 KB target; next = pull shared head out of each card), 6 libs moved to pinned jsdelivr (byte-identical).
+  OPEN: card 7 console error "Uncaught TypeError: I is not a function" (gsap@3.11.5 + Flip, cause unknown, original
+  untested); card 11 text overlap + overflow 686/578; cards 14-15 click changes nothing; cards 1-6 dark mode unchecked
+  (2 glaring panels, 3 static, 5 blank, 6 near-invisible text); card 16 loud orange; banned-design scan, card
+  how-to-play text, CDN URL fetch check, MANIFEST.md all NOT done. Delete a card rather than edit its motion.
+  Tools: motion-big\tools\{slim,assemble,check,sheet2}.mjs; dark shots fix\d1-*; originals fix\orig. Next: one fresh
+  builder (sonnet, ROUTE-OK) for these, then refuter, then read whole page and publish. Then owner picks from both
+  into PICKS.md, commit.
 
 Next — step 1a part B (one builder, then refuter + looker, then recording for owner):
 - Focus quiz vQuiz/vCase per step1a-brief.txt item 3 (in this folder; its file:// line is superseded by the online-only rule).
