@@ -1,0 +1,54 @@
+STRIP THE CITY - remove every trace of the old painted city from the whole site. Brief 2026-10-16.
+Owner ruling 2026-10-16: "Both / everywhere" - strip it all now, not screen by screen (overrides plan step 1's
+"unlink only as each consumer is replaced"). Screens not yet rebuilt (home, subject page, schedule...) must keep
+WORKING on the plain new look (tokens.css, base.css, focus.css styles) until their own step rebuilds them.
+
+WRITE GRANT (this job only): D:\claude os\Medical school\Herophilus-redesign\app\ (EXCEPT frozen files) and
+progress\redesign-clean\. No git writes (main chat commits; deleting files on disk is fine, git records it).
+Never touch D:\claude os\Medical school\Herophilus (the live copy).
+FROZEN, never edit: app\data\*, app\js\storage.js, utils.js, theme.js, icons.js, app\js\lib\*, app\css\print.css.
+No new storage key. Theory stays locked. Do not open images or videos.
+Banned in anything you add: emoji, pills, hover lift, idle pulse, confetti, hand-written animation/keyframes/timing.
+
+WHAT IS CITY (inventory by a scout, verify each before acting):
+- index.html: rooms.css :43, warm.css :44, city.css :46, ui.css :47; rooms.js :163, city.js :164, room.js :165;
+  ambient film <video> + scrim :63-69. hall.css / hall.js already unlinked.
+- JS: cityStageHTML city.js:115 (called render.js:295-306, vHome); roomStageHTML room.js:76 (render.js:317-318,
+  vModule, Eyes); film: setFilm render.js:31, syncFilm render.js:37 (callers render.js:72, gate.js:576/578;
+  wrappers city.js:730, room.js:485, rooms.js:145, hall.js:194); STILL_VIEWS render.js:19 (also clepsydra.js:463/479);
+  gate film markup gate.js:550-556; plate()/roomFor rooms.js.
+- Assets: app\assets\city\ (7), rooms\ (7), hall\ (8, unlinked), scene\ (12, zero code refs), the ambient film
+  files (ambient-library.mp4/.jpg - grep for every ambient* file and its refs).
+- CSS: city.css, rooms.css, hall.css = city only (rooms.css .gate-amb :89-90 is the gate film). warm.css MIXED:
+  generic live rules (.modal, .toast, .readtheory, .colb, ~:66-86) must survive. ui.css :1-110 room only,
+  :111-273 live quiz (.qwrap, #page .folio, .clep) must survive. type.css = fonts, keep.
+- focus.css:3 hides .room/.ambient in quiz - drop once those elements are gone.
+
+DO
+1. Remove the ambient/gate film, city stage, room stage, plates, hall, scene: markup, JS, CSS, asset files.
+   Delete the dead files (city.js, room.js, rooms.js, hall.js, city.css, rooms.css, hall.css and the asset folders)
+   once nothing references them. Move the generic survivors of warm.css and ui.css into the file that fits
+   (warm generic -> base.css; ui.css quiz part -> focus.css) so the mixed files can go too. Keep their selectors and
+   print class names (.th-* .bk-* .stem .rail .topbar .clep .mod-art .tb-btn .filterbar .toast).
+2. vHome and vModule: render their existing non-city content (module cards, counts, chapter rows, filters, buttons)
+   on plain tokens - a calm, readable, simple layout, both themes. Not a redesign: the real home/subject redesign is
+   steps 1b/2. No layout overlap (the mascot's speech bubble must not cover the subject counts).
+3. The Clepsydra mascot is the OWNER'S OWN ARTWORK and STAYS: never redraw her, never draw onto her, never change her
+   image files. Her placement is tangled with city.js:761 (clepPlace, clepsydra.js:159/262) and STILL_VIEWS - keep her
+   showing where she shows today, with plain positioning. If keeping her needs a judgement you cannot make, STOP
+   and report it; do not guess.
+4. Grep the whole app\ afterwards for city|room|hall|warm|plate|film|ambient|mist|lighthouse|scene and list every
+   surviving hit with why it stays (e.g. frozen data prose, print.css comments, .bk-stage theory).
+5. Append a "strip the city" section to step1a-notes.md: what was removed, moved, kept and why.
+
+CHECKS - run from D:\claude os\Medical school\Herophilus-redesign and paste outputs verbatim:
+  node tools\boot-check\boot-check.js        -> 0 console errors, 4 module cards
+  node tools\ui-tasks\tasks.js               -> 7 PASS (update ONLY its labelled selectors object if one moved)
+  node tools\ui-tasks\frozen.js 8bd99322     -> 0 mismatches
+  node progress\redesign-clean\check-explanation-render.js app -> 0 empty items, 0 throws
+Also report: total bytes removed from app\ (before/after du).
+
+BUDGET: close out at 60 tool calls, hand back by 75 even if unfinished. Write notes as you go. A partial pass
+reported honestly is a success.
+FINAL MESSAGE (under 250 words): files deleted / changed / moved-into, surviving grep hits with reasons, mascot
+handling, check outputs verbatim, bytes removed, anything not done.

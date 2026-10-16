@@ -133,3 +133,19 @@ Fixes (focus.css, quiz.js only; measured in headless Chrome 1440x900, no images 
 - d. Caption stop: `focusFigure(q)` in quiz.js adds a full stop after a caption that lacks one, just before the hint, at render time. Stored text and storage.js untouched.
 Recording: `record-step1a.js` (CDP screencast + ffmpeg, no animation kill, real clicks and keys). Output `D:\scratch 2026\clean-1a\rec\step1a-{dark,light}-{1440x900,1180x820}.mp4` + `-sheet.jpg` (12 tiles each), ~59 s each, 0 console errors, fx confirmed in DOM (cross + headShake on wrong, tick + pulse on right).
 Walk deviations: chapter `ent-swallow`; `entqb-thr11-576` is the FIRST question of that chapter (so it shows the quote/list explanation on the wrong pick) and the jump goes to the 6th (`entqb-thr11-584`, chosen by script as a later quote+list question). Before J the script presses Tab to reach the Next button (after Check the focus is on the page body, and Escape would have nowhere to return to). Videos not watched by me.
+
+## Strip the city (2026-10-16, owner: "both / everywhere")
+Removed from the live path (all verified by grep before acting):
+- index.html: links to rooms.css, warm.css, city.css, ui.css; scripts rooms.js, city.js, room.js; the `.ambient` block (film video, 4 orbs, scrim). Link `skin.css` added where warm.css sat.
+- gate.js: `gateChrome()` no longer writes `.gate-amb` (gate film, scrim, 4 orbs); `syncFilm()` calls gone. Theme button stays.
+- render.js: `setFilm`/`syncFilm` and the call in `render()` gone; `vHome` and `vModule` city/room branches and `cityItems` gone, so both run their existing plain code (module cards, hero panel, today card, chapter rows, filters). `STILL_VIEWS` kept (revealOnScroll, clepsydra.js).
+- views.css: `.ambient`, orbs, drift keyframes, `.film`, `.film-scrim`, gate-film rules, the reduced-motion lines for them. components.css: `.gate-amb` block and gd1-3 keyframes (`.gate::before` grid kept, already on the P10 debt list). focus.css:3 now `:is(.clep)` only.
+- warm.css -> `css/skin.css`: all live rules kept (modals, toast, callouts, rail strip, option/verdict tints, page gutters); dropped ambient orbs, film scrims/filters, hall plaque sizes, `.wk-text`.
+- Deleted files: see "Not done" (deletion was denied by the permission system).
+Deviations from the brief:
+- Survivors went to a NEW `skin.css`, not base.css: warm.css relied on loading after views.css/components.css; base.css loads first, so folding in would lose every equal-specificity override. skin.css takes warm's old slot in index.html.
+- ui.css deleted whole, not moved into focus.css. Checked: no JS emits `folio`, `qwrap`, `stage`, `sheet`, `row`, `act`, `rule`, `lastgo` or `plaque` markup; its `.clep` quiz band is already shadowed by focus.css:3 `display:none!important`; the quiz uses `.focus-reading`. If a screen turns out to need any of it, it is in git history.
+- room.js's clepSay-to-toast wrapper not carried over: it sat behind an early `return` on quiz/results that clepsydra.js's own `clepSay` already has, so it never ran.
+Mascot: untouched. `clepPlace`, `clepOnView`, drag, dock and `STILL_VIEWS` use live in clepsydra.js; city.js only wrapped `clepPlace` and `clepSay`, and city.css hid her bubble on home. With those gone she shows exactly as on every other browse screen (fixed bottom-right, left dock on quiz/mock/review).
+Layout probe (headless, reduced motion, both themes, her bubble forced open): 1440x900 and 1180x820 home: no bubble/figure overlap with module counts. 820x1180 and 390x844 home: bubble (and figure at 820) overlaps the lower subject cards' counts while the bubble is up; module pages overlap chapter rows at 1180x820 and below, same as every other browse screen. NOT fixed: needs an owner judgement (see report).
+Left: stale comments in views.css (CINEMATIC LAYER header), skin.css (`body.hall-on`), print.css `.ambient` rule (frozen, harmless). `js/desk-data.js` left alone (not loaded, not city).

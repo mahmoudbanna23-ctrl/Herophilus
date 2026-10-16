@@ -130,107 +130,7 @@ body{
   background-attachment:fixed;
 }
 
-/* Slow-moving colour behind everything. Fixed, non-interactive, z-index 0;
-   .app sits at z-index 1. Blur is on an element that never scrolls and never
-   repaints, which is the only place a 90px blur is affordable. */
-.ambient{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;contain:strict}
-/* Pulled back from .55 when the film moved in underneath. Two ambient systems
-   at full strength cancel each other out — the orbs are a 90px blur, so at
-   their old weight they simply fogged the room away. They are a tint over the
-   film now, not the atmosphere in their own right. */
-.ambient .orb{
-  position:absolute;border-radius:50%;filter:blur(90px);opacity:.38;
-  will-change:transform;
-}
-.ambient .o1{width:46vw;height:46vw;left:-12vw;top:-14vh;background:radial-gradient(circle,var(--neuro),transparent 68%);animation:drift1 34s ease-in-out infinite}
-.ambient .o2{width:40vw;height:40vw;right:-10vw;top:4vh;background:radial-gradient(circle,var(--peds),transparent 68%);animation:drift2 41s ease-in-out infinite}
-.ambient .o3{width:38vw;height:38vw;left:26vw;bottom:-18vh;background:radial-gradient(circle,var(--ophtho),transparent 70%);animation:drift3 47s ease-in-out infinite}
-.ambient .o4{width:26vw;height:26vw;right:16vw;bottom:-10vh;background:radial-gradient(circle,var(--gold),transparent 72%);opacity:.28;animation:drift1 52s ease-in-out infinite reverse}
-@keyframes drift1{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(6vw,5vh,0) scale(1.12)}}
-@keyframes drift2{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-7vw,7vh,0) scale(1.09)}}
-@keyframes drift3{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(5vw,-6vh,0) scale(1.14)}}
-
-/* ---- the film ------------------------------------------------------------ */
-/* A candlelit scholar's desk, playing under the whole app. It is the BOTTOM
-   layer of .ambient: the orbs drift OVER it and the scrim sits over both, so
-   the film reads as the deepest part of the colour field rather than as a
-   video pasted behind the page.
-
-   Everything that keeps it out of the way of reading:
-     · the scrim, which is what actually guarantees contrast — the film never
-       touches the page unmediated;
-     · body[data-view], which fades .ambient to .3 on the four reading screens,
-       and syncFilm(), which calls pause() so the frames stop decoding too;
-     · prefers-reduced-motion, which drops it entirely — poster and all;
-     · the print block above, whose `.ambient *` rule already covers it.
-
-   The clip is a PING-PONG loop, forward then reverse, cut in ffmpeg. The source
-   slowly pushes in, so a plain loop snapped back to the wide framing every six
-   seconds — the one thing a background must never do. Reversed, the push-in
-   becomes a slow breath with no seam at either end. */
-/* .gate-amb rides on every one of these rules. The gate is opaque and sits at
-   z-index 200 above .app, so the page's film is unreachable from behind it and
-   it carries its own copy — but it must never drift out of step with this one,
-   so the selectors are shared rather than duplicated. */
-.ambient .film,.gate-amb .film{
-  position:absolute;inset:0;width:100%;height:100%;
-  object-fit:cover;object-position:50% 42%;
-  opacity:.48;
-  /* the source is warm amber against a navy ground; pulling the saturation
-     back and easing the brightness settles it without draining the lamp */
-  filter:saturate(.70) contrast(1.05) brightness(.82);
-}
-/* The scrim is the contrast guarantee, not a mood effect. It is heaviest top
-   and bottom — behind the top bar and below the fold — and lightest across the
-   middle band where the lamp and the figure actually are. */
-.ambient .film-scrim,.gate-amb .film-scrim{
-  position:absolute;inset:0;
-  background:
-    linear-gradient(180deg,
-      rgba(7,13,22,.88) 0%, rgba(7,13,22,.44) 18%,
-      rgba(7,13,22,.26) 50%, rgba(7,13,22,.64) 100%),
-    radial-gradient(150% 105% at 50% 48%, transparent 38%, rgba(7,13,22,.46) 100%);
-}
-
-/* PORTRAIT IS A DIFFERENT PICTURE, not the same one narrower.
-   object-fit:cover crops to the middle of the frame, and on a tall viewport
-   that middle is only about 39% of a 16:9 source. For this clip the middle
-   band is the scholar's unlit back; the oil lamp — the one bright, legible
-   thing in the shot — sits ~14% from the left and is cropped away entirely.
-   The result on an iPad in portrait was an apparently blank navy page.
-
-   So the framing moves toward the lamp rather than the figure, and the film
-   lifts to carry a crop that is inherently darker. Found by rendering at
-   820x1180; it is invisible in the CSS and invisible on a desktop window.
-
-   And it needs a harder push than a wider screen does, because in portrait the
-   cards run nearly edge to edge: the only film left showing is the strip above
-   the first card and the gaps between sections. What survives has to carry the
-   whole effect, so the film runs brighter here than it ever does on a desktop. */
-@media (max-aspect-ratio:5/4){
-  .ambient .film,.gate-amb .film{object-position:18% 45%;opacity:.72}
-  .ambient .film-scrim,.gate-amb .film-scrim{
-    background:
-      linear-gradient(180deg,
-        rgba(7,13,22,.78) 0%, rgba(7,13,22,.28) 14%,
-        rgba(7,13,22,.14) 48%, rgba(7,13,22,.52) 100%),
-      radial-gradient(170% 95% at 50% 45%, transparent 50%, rgba(7,13,22,.34) 100%);
-  }
-}
-
 .app{position:relative;z-index:1}
-
-/* ---- the gate: still while reading -------------------------------------- */
-body[data-view="quiz"] .ambient,
-body[data-view="results"] .ambient,
-body[data-view="mock"] .ambient,
-body[data-view="review"] .ambient,
-body[data-view="theory"] .ambient{opacity:.3;transition:opacity .5s ease}
-body[data-view="quiz"] .orb,
-body[data-view="results"] .orb,
-body[data-view="mock"] .orb,
-body[data-view="review"] .orb,
-body[data-view="theory"] .orb{animation-play-state:paused}
 
 /* ---- glass on the fixed furniture only ---------------------------------- */
 /* Deliberately NOT on cards, chapter rows or question options: backdrop-filter
@@ -318,19 +218,10 @@ button.card:active:not(:disabled){border-color:var(--gold)}
 .reveal.in{opacity:1;transform:none;transition:opacity .5s var(--ease-standard),transform .5s var(--ease-standard)}
 
 /* ---- accessibility ------------------------------------------------------ */
-/* The original rule already killed animation and transition. Ambient orbs are
-   background-position/transform loops, so they need explicitly stopping too. */
+/* The original rule already killed animation and transition. */
 @media (prefers-reduced-motion:reduce){
-  .ambient .orb{animation:none!important}
-  /* The film is the most insistent motion on the page, so it goes entirely —
-     poster included. Its scrim goes with it, or the page keeps a dark wash
-     that is now shading nothing. */
-  .ambient .film,.ambient .film-scrim,
-  .gate-amb .film,.gate-amb .film-scrim{display:none!important}
   .reveal{opacity:1!important;transform:none!important}
-  /* the gate is the most animated screen in the app, so it needs the most
-     thorough opt-out: orbs, staggered entrances, the halo and the sheen */
-  .gate-amb .gorb{animation:none!important}
+  /* the gate is the most animated screen: staggered entrances, the halo and the sheen */
   .gstep>*,.pcard,.gtitle{animation:none!important}
   .gmark::after,.gsign::after{animation:none!important;opacity:0}
 }
@@ -354,56 +245,6 @@ button.card:active:not(:disabled){border-color:var(--gold)}
     radial-gradient(1000px 620px at 100% 0%, rgba(46,95,138,.11), transparent 58%),
     radial-gradient(900px 600px at 50% 110%, rgba(154,107,31,.14), transparent 60%);
 }
-:root[data-theme="light"] .ambient .orb{opacity:.20}
-:root[data-theme="light"] .ambient .o4{opacity:.13}
-
-/* The film is a night scene and this is the page in daylight, so it cannot
-   simply run dimmer here — a dark image at low opacity on parchment is a grey
-   smudge, and at .14 it was invisible altogether, which is how it first
-   shipped. The trick is to BRIGHTEN IT INTO A PALE PRINT rather than show a
-   dark photograph faintly: brightness well above 1 lifts the shadows off the
-   floor, low contrast keeps them there, and the warmth that survives reads as
-   a faded fresco on the page rather than a window onto a dark room.
-   Higher opacity than dark mode, therefore, not lower. */
-:root[data-theme="light"] .ambient .film,
-:root[data-theme="light"] .gate-amb .film{
-  /* .42 -> .55 at the user's request: at .42 it was present but easy to miss.
-     The brightening does the work, not the opacity — see the note above. */
-  opacity:.55;filter:saturate(.58) contrast(.66) brightness(1.82);
-}
-:root[data-theme="light"] .ambient .film-scrim,
-:root[data-theme="light"] .gate-amb .film-scrim{
-  background:
-    linear-gradient(180deg,
-      rgba(247,244,236,.64) 0%, rgba(247,244,236,.34) 22%,
-      rgba(247,244,236,.26) 55%, rgba(247,244,236,.58) 100%),
-    radial-gradient(140% 100% at 50% 50%, rgba(247,244,236,.08) 34%, rgba(247,244,236,.50) 100%);
-}
-/* Light mode's selector outranks the portrait media query, so portrait needs
-   saying again here or it silently keeps the wide-screen values. */
-@media (max-aspect-ratio:5/4){
-  :root[data-theme="light"] .ambient .film,
-  :root[data-theme="light"] .gate-amb .film{opacity:.68}
-}
-
-/* ---- the gate runs the film harder than the app does ----------------------
-   The user asked for it to be more obvious on the sign-in screen, and the gate
-   can carry it: it is a five-second screen with nothing to read on it, so the
-   calm-to-read half of the rule does not apply. What keeps the type legible is
-   .film-scrim::after, the pool under the centre column — NOT the film opacity.
-   Both were re-measured together after this change; raising one without
-   checking the other is how the type would quietly slip below AA.
-
-   Placed after every shared rule on purpose: these match the shared selectors'
-   specificity exactly, so they win on source order alone. Moving this block
-   higher silently disables it. */
-.gate-amb .film{opacity:.66}
-:root[data-theme="light"] .gate-amb .film{opacity:.62}
-@media (max-aspect-ratio:5/4){
-  .gate-amb .film{opacity:.86}
-  :root[data-theme="light"] .gate-amb .film{opacity:.78}
-}
-
 /* ---- the rail follows the theme (2026-07-28, user's request) --------------
    It used to stay dark in light mode on purpose. The user asked for it to
    change with the theme, so it does — but the rail was built on the assumption

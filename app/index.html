@@ -38,13 +38,8 @@
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/views.css">
-<!-- These four were injected by js/hall.js (rooms, warm skin, fonts). hall.js no longer
-     mounts, so they are linked here, same order. type.css = the fonts: hall.js was the only link. -->
-<link rel="stylesheet" href="css/rooms.css">
-<link rel="stylesheet" href="css/warm.css">
+<link rel="stylesheet" href="css/skin.css">
 <link rel="stylesheet" href="css/type.css">
-<link rel="stylesheet" href="css/city.css">
-<link rel="stylesheet" href="css/ui.css">
 <link rel="stylesheet" href="css/fonts-ui.css">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/animate-picks.css">
@@ -52,22 +47,6 @@
 <link rel="stylesheet" href="css/print.css">
 </head>
 <body>
-<!-- Ambient colour field. Fixed and non-interactive, sits behind .app.
-     Its motion is paused by CSS on the reading views — see the cinematic layer.
-     Source order IS the stacking order here (all children are absolute, none
-     carries a z-index): film at the back, orbs tinting it, scrim over both. -->
-<div class="ambient" aria-hidden="true">
-  <!-- muted + playsinline are what make autoplay legal at all; without both,
-       iOS Safari refuses and we fall back to the poster frame, which is a
-       perfectly good still. A failure here costs atmosphere, never function. -->
-  <video class="film" autoplay muted loop playsinline preload="auto"
-         poster="assets/ambient-library.jpg" tabindex="-1">
-    <source src="assets/ambient-library.mp4" type="video/mp4">
-  </video>
-  <span class="orb o1"></span><span class="orb o2"></span>
-  <span class="orb o3"></span><span class="orb o4"></span>
-  <span class="film-scrim"></span>
-</div>
 <div class="app">
   <aside class="rail" id="rail">
     <div class="rail-head">
@@ -159,10 +138,6 @@
 <script src="js/quiz.js"></script>
 <script src="js/sessions.js"></script>
 <script src="js/clepsydra.js"></script>
-<!-- js/hall.js (the rejected statue hall) is no longer loaded; its files stay until the owner approves deletion. -->
-<script src="js/rooms.js"></script>
-<script src="js/city.js"></script>
-<script src="js/room.js"></script>
 <script src="js/boot.js"></script>
 </body>
 </html>

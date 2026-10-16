@@ -1,6 +1,6 @@
 /* Step 1a: isolated reading and results surfaces. Legacy browse screens remain. */
 body:is([data-view="quiz"],[data-view="results"]){background:var(--surface-0)!important;color:var(--text-1);font-family:var(--font-body)}
-body:is([data-view="quiz"],[data-view="results"]) :is(.ambient,.room,.room-glow,.clep){display:none!important}
+body:is([data-view="quiz"],[data-view="results"]) :is(.clep){display:none!important}
 body:is([data-view="quiz"],[data-view="results"]) .rail{display:none!important}
 body:is([data-view="quiz"],[data-view="results"]) .main{margin:0!important;width:100%;min-width:0}
 body:is([data-view="quiz"],[data-view="results"]) .app{display:block;margin:0;padding:0}

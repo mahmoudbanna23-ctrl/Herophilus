@@ -13,38 +13,9 @@ function go(v){
      Q.ids.some(id=>!QUESTIONS.some(q=>q.id===id))))v={name:'home'};
   view=v;render();window.scrollTo(0,0);closeRail();
 }
-/* Screens where the learner READS for minutes at a time. The cinematic layer
-   pauses the ambient orbs on these, so nothing drifts beside a clinical stem.
-   Everything else is a browse screen and stays alive. */
+/* Screens where the learner READS for minutes at a time: no entrance motion on these
+   (revealOnScroll) and the Clepsydra stays quiet (clepsydra.js). Everything else is a browse screen. */
 const STILL_VIEWS=['quiz','results','mock','review','theory'];
-
-/* The ambient film obeys the same gate as the orbs, but CSS can only fade it —
-   a paused <video> is the difference between a still picture and a decoder
-   running behind a clinical stem, which costs battery and, on a slow machine,
-   frames the reader can feel. So the opacity is CSS and the pause is here.
-
-   Reduced motion is checked live rather than cached: the CSS already hides the
-   film, and pausing as well means a viewer who flips the OS setting mid-session
-   is not left with an invisible video still decoding. Every failure path is
-   silent — play() rejects whenever autoplay is blocked, and that is a
-   perfectly acceptable outcome that must never surface as an error. */
-function setFilm(f,on){
-  if(!f) return;
-  if(!on){ f.pause(); return }
-  const p=f.play();
-  if(p&&p.catch) p.catch(()=>{});
-}
-function syncFilm(){
-  const reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
-  setFilm(document.querySelector('.ambient .film'),
-          !reduce && !STILL_VIEWS.includes(view.name));
-  /* The gate's copy. A hidden <video> keeps decoding — display:none does not
-     stop it — so it has to be paused explicitly the moment the gate closes,
-     or it runs for the whole session behind a screen nobody is looking at. */
-  const g=$('gate');
-  setFilm(document.querySelector('.gate-amb .film'),
-          !reduce && !!g && !g.classList.contains('hide'));
-}
 
 function render(){
   /* Imports, snapshots and cloud merges can replace S without entering a
@@ -69,7 +40,6 @@ function render(){
      to whatever view comes next and clip it. Clearing here means only the
      chapter view can ever turn it back on. */
   document.body.classList.remove('bk-on');
-  syncFilm();
   const emptyCourse=activeModules().length===0&&
     ['home','module','quiz','review','theory','flagged','mock','weak'].indexOf(view.name)>=0;
   if(emptyCourse)vEmptyTerm(p);
@@ -240,17 +210,12 @@ function vHome(p){
   </section>`;
 
   let modsHTML=`<h2>${fresh?'Subjects':'Modules'}</h2><div class="grid g3 mod-grid">`;
-  const cityItems=[];   // the same numbers, for the painted city's four hot-spots (city.js)
   activeModules().forEach(m=>{
     const qs=qsInModule(m.id);
     const d=qs.filter(q=>isAnswered(q.id)).length;
     const a=accuracy(qs);
     const pct=qs.length?d/qs.length*100:0;
     const chs=m.groups.reduce((n,g)=>n+g.chapters.length,0);
-    /* due cards per subject: the same dueNow() list, cut by this subject's questions */
-    const inMod=new Set(qs.map(q=>q.id));
-    const dueIds=dueList.filter(q=>inMod.has(q.id)).map(q=>q.id);
-    cityItems.push({id:m.id,name:m.name,locked:isLocked(m.id),done:d,total:qs.length,acc:a,due:dueIds.length,dueIds:dueIds});
     /* A locked subject keeps its card and its artwork — dropping it would read
        as an app that only covers two subjects — but shows no counts and no
        progress ring, because both would be zero and a zero reads as broken. */
@@ -287,25 +252,6 @@ function vHome(p){
   });
   modsHTML+=`</div>`;
 
-  /* The biography sits above the subjects on every run. A first run once led
-     with the subjects and kept it as a closing note, which buried the card the
-     app is named after at the foot of the page. */
-  /* The four subjects are the buildings of the painted city (city.js); everything else the
-     dashboard says sits on a plain sheet under it. Without city.js the old grid stays. */
-  if(typeof cityStageHTML==='function'){
-    /* Everything the plain block under the city used to say now lives in the picture (city.js):
-       the term and the count, her one line (reviews due, today's plan, where you stopped) and
-       the welcome. The numbers are the ones computed above; nothing is worked out a second way. */
-    const dash={term:termName(),total:total,done:done};
-    if(today&&today.items&&today.items.length){
-      dash.today=today.items.map(it=>(it.label?it.label+': ':'')+it.text).join(' · ');
-    }
-    if(recent){
-      dash.cont={cid:recent,finished:!!S.resumeByChapter[recent].finished,name:chapterName(recent)};
-    }
-    p.innerHTML=cityStageHTML(cityItems,done,dash);
-    return;
-  }
   h+=todayHTML+heroHTML+modsHTML;
   p.innerHTML=h;
 }
@@ -313,11 +259,6 @@ function vHome(p){
 /* ============ MODULE ============ */
 function vModule(p){
   const m=moduleOf(view.id);
-  /* A subject with a painted room (room.js) shows the room; the others keep this view. */
-  if(typeof roomStageHTML==='function'){
-    const rh=roomStageHTML(m);
-    if(rh){p.innerHTML=rh;return}
-  }
   const qs=qsInModule(m.id);
   const a=accuracy(qs);
   let h=`<button class="tb-btn" style="padding-left:0;margin-bottom:8px" onclick="go({name:'home'})">← Dashboard</button>

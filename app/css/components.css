@@ -411,50 +411,14 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
    at a time and re-writes innerHTML to move between them, which is also what
    replays the entrance animations — new elements, so they run again.
 
-   The gate sits at z-index 200, ABOVE .app, so the page's ambient orb field is
-   hidden behind it and it needs its own. Tuned brighter and faster than the
-   page's: this is a five-second screen, not one you read on, so the
-   CALM-TO-READ half of the rule does not apply here.                          */
+   The gate sits at z-index 200, ABOVE .app. It is a five-second screen, not one you
+   read on.                                                                    */
 .gate{
   position:fixed;inset:0;z-index:var(--z-200);background:var(--bg);
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   padding:var(--s-11) var(--s-9);overflow-y:auto;isolation:isolate;
 }
 .gate.hide{display:none}
-
-.gate-amb{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
-/* .5 before the film went in behind them. Same lesson as the page's orbs: two
-   ambient systems at full strength cancel, and an 80px blur at half opacity
-   simply fogs the room away. */
-.gate-amb .gorb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.34;will-change:transform}
-/* one orb per module, in the module's own colour — the four colours of the app
-   are the first thing you see */
-.gate-amb .g1{width:44vw;height:44vw;left:-10vw;top:-16vh;background:radial-gradient(circle,var(--neuro),transparent 68%);animation:gd1 26s ease-in-out infinite}
-.gate-amb .g2{width:38vw;height:38vw;right:-8vw;top:-6vh;background:radial-gradient(circle,var(--ent),transparent 68%);animation:gd2 31s ease-in-out infinite}
-.gate-amb .g3{width:40vw;height:40vw;left:14vw;bottom:-22vh;background:radial-gradient(circle,var(--peds),transparent 70%);animation:gd3 37s ease-in-out infinite}
-.gate-amb .g4{width:26vw;height:26vw;right:12vw;bottom:-14vh;background:radial-gradient(circle,var(--ophtho),transparent 72%);opacity:.34;animation:gd1 43s ease-in-out infinite reverse}
-@keyframes gd1{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(7vw,6vh,0) scale(1.14)}}
-@keyframes gd2{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-8vw,8vh,0) scale(1.1)}}
-@keyframes gd3{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(6vw,-7vh,0) scale(1.16)}}
-:root[data-theme="light"] .gate-amb .gorb{opacity:.26}
-:root[data-theme="light"] .gate-amb .g4{opacity:.18}
-
-/* THE GATE IS THE ONE PLACE TEXT SITS DIRECTLY ON THE FILM.
-   Everywhere else in the app the type is on an opaque card, which is why the
-   film cost nothing in contrast — measured, twice. Here there is no card, and
-   the ground underneath MOVES: the scholar's pale robe drifts behind the small
-   print, so contrast would rise and fall frame by frame and the worst frame is
-   the one that matters. This pool fixes a constant ground under the centre
-   column while leaving the lamp and the edges of the room fully visible. */
-.gate-amb .film-scrim::after{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(46% 42% at 50% 52%,
-    rgba(7,13,22,.88) 0%, rgba(7,13,22,.72) 45%, transparent 78%);
-}
-:root[data-theme="light"] .gate-amb .film-scrim::after{
-  background:radial-gradient(46% 42% at 50% 52%,
-    rgba(247,244,236,.92) 0%, rgba(247,244,236,.78) 45%, transparent 78%);
-}
 
 /* A faint grid, masked to fade out at the edges. Without it four big blurs on
    a flat ground read as soup; the straight lines give the blur something to be

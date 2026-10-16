@@ -1,7 +1,6 @@
 /* ============================================================================
-   WARM SKIN (redesign round 2) — one concern: app-wide surface colour.
-   Loaded last (injected by hall.js after hall.css), so it wins by order at equal
-   specificity. Everything is inside @media screen: print.css forces its own
+   APP SURFACE SKIN (was warm.css, city rules stripped) — app-wide surface colour.
+   Linked after views.css so it wins by order at equal specificity. Everything is inside @media screen: print.css forces its own
    tokens for paper and none of this reaches it.
 
    DARK LOOK = NIGHT BLUE (owner pick, round 4). The first dark values were brown,
@@ -35,33 +34,6 @@
     radial-gradient(1000px 620px at 100% 0%, rgba(40,70,130,.14), transparent 58%),
     radial-gradient(900px 600px at 50% 110%, rgba(40,80,110,.10), transparent 60%);
 }
-:root:not([data-theme="light"]) .ambient .o1{background:radial-gradient(circle,#2a4a8a,transparent 68%)}
-:root:not([data-theme="light"]) .ambient .o2{background:radial-gradient(circle,var(--peds),transparent 68%)}
-
-/* film scrims: cool-black veil (same alphas, so contrast is unchanged) */
-:root:not([data-theme="light"]) .ambient .film-scrim,
-:root:not([data-theme="light"]) .gate-amb .film-scrim{
-  background:
-    linear-gradient(180deg,
-      rgba(6,10,18,.88) 0%, rgba(6,10,18,.44) 18%,
-      rgba(6,10,18,.26) 50%, rgba(6,10,18,.64) 100%),
-    radial-gradient(150% 105% at 50% 48%, transparent 38%, rgba(6,10,18,.46) 100%);
-}
-@media (max-aspect-ratio:5/4){
-  :root:not([data-theme="light"]) .ambient .film-scrim,
-  :root:not([data-theme="light"]) .gate-amb .film-scrim{
-    background:
-      linear-gradient(180deg,
-        rgba(6,10,18,.78) 0%, rgba(6,10,18,.28) 14%,
-        rgba(6,10,18,.14) 48%, rgba(6,10,18,.52) 100%),
-      radial-gradient(170% 95% at 50% 45%, transparent 50%, rgba(6,10,18,.34) 100%);
-  }
-}
-:root:not([data-theme="light"]) .gate-amb .film-scrim::after{
-  background:radial-gradient(46% 42% at 50% 52%,
-    rgba(6,10,18,.88) 0%, rgba(6,10,18,.72) 45%, transparent 78%);
-}
-
 /* ---- pop-ups, notices, zoom ---------------------------------------------------- */
 :root:not([data-theme="light"]) .modal{
   background:linear-gradient(160deg,rgba(22,32,52,.97),rgba(11,17,30,.98));
@@ -92,8 +64,6 @@
     radial-gradient(1000px 620px at 100% 0%, rgba(180,71,47,.09), transparent 58%),
     radial-gradient(900px 600px at 50% 110%, rgba(154,107,31,.14), transparent 60%);
 }
-:root[data-theme="light"] .ambient .o1{background:radial-gradient(circle,#96601f,transparent 68%)}
-:root[data-theme="light"] .ambient .o2{background:radial-gradient(circle,var(--ent),transparent 68%)}
 :root[data-theme="light"] .modal{
   background:linear-gradient(160deg,rgba(252,246,232,.98),rgba(243,233,212,.97));
   box-shadow:0 30px 80px rgba(74,56,34,.24),var(--glow);
@@ -222,23 +192,6 @@
   .nav-item{padding-block:var(--s-2)}
 }
 
-/* 3. Subject plaques in the hall when the picture is pulled back to fit all four
-   alcoves (tall or narrow windows): the stage is scaled to about 0.5, so 10 px type
-   drew at 5 px. Sizes below are in the stage's own pixels; hall.js owns the scale,
-   so these steps follow the window's shape. */
-@media (max-aspect-ratio:3/4){
-  .pl-name{font-size:19px;letter-spacing:.03em}
-  .pl-acc,.pl-count{font-size:18px}
-  .plaque .ring{width:46px!important;height:46px!important}
-  .plaque .ring .rv{font-size:14px}
-}
-@media (min-aspect-ratio:3/4) and (max-aspect-ratio:19/20){
-  .pl-name{font-size:15px;letter-spacing:.03em}
-  .pl-acc,.pl-count{font-size:14px}
-  .plaque .ring{width:36px!important;height:36px!important}
-  .plaque .ring .rv{font-size:11px}
-}
-
 /* ============================================================================
    FIX PASS 2
    ============================================================================ */
@@ -339,16 +292,6 @@
 :root:not([data-theme="light"]) .qg.bad{background:rgba(240,64,76,.17)}
 :root:not([data-theme="light"]) .fb.n{background:rgba(240,64,76,.14)}
 
-/* B. The film behind the pages (.ambient .film, views.css): amber source, only slightly
-   desaturated there. Dark look takes it nearly to grey and lays a night-blue wash over
-   it; the picture is still there. Static filter only, no opacity or animation touched. */
-:root:not([data-theme="light"]) .ambient .film{
-  filter:saturate(.16) contrast(1.05) brightness(.9);
-}
-:root:not([data-theme="light"]) .ambient .film-scrim::before{
-  content:"";position:absolute;inset:0;background:rgba(30,56,110,.22);
-}
-
 /* STRIP — slim floating rail */
 /* The left bar is a thin column of chips floating over the page. Pointing at (only where a
    pointer can hover) or tabbing to ONE chip opens that chip alone (its name grows out to the
@@ -395,8 +338,7 @@
 }
 /* page room (final): the left gutter keeps content 16 px clear of the strip; where the
    centred column already leaves more than that (wide windows) the base 28 px stays.
-   Top padding clears the band of floating buttons (STRIP B below). The hall home is
-   full-bleed and still wins: body.hall-on[data-view="home"] .page is more specific. */
+   Top padding clears the band of floating buttons (STRIP B below). */
 :root{--strip-clear:calc(var(--strip-w) + 16px)}
 :root .page{
   --page-pl:max(var(--s-11), calc(var(--strip-clear) - max(0px, (100vw - 1180px) / 2)));
@@ -648,8 +590,6 @@
 :root body[data-view="home"] #saveWarning,:root body[data-view="home"] #dataWarning{
   margin-left:max(var(--strip-clear), calc((100% - 880px) / 2));
 }
-/* the hall's welcome card keeps off the strip */
-:root .wk-text{left:max(var(--s-10), 4vw, var(--strip-clear))}
 
 @media (prefers-reduced-motion:reduce){
   :root .search-wrap{transition:none}
