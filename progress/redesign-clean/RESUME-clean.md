@@ -10,6 +10,12 @@ Done:
 - Big motion: owner picked Flying question cards (front page hero) and named https://motion.dev/ as the style he wants
   ("motion UI"). PICKS.md "Big motion - direction". Owed: a motion.dev-style showcase covering EVERY screen of the site (owner: not just
   question cards), owner picks, before step 4. Can run beside step 1a part B.
+- 2026-10-16 owner: "Never recreate just copy" (memory copy-motion-never-recreate). Hand-built 45-move page VOID.
+  Small copied page (35 MIT pieces, 11 screens): PUBLISHED https://claude.ai/artifact/2iU2kqb5HGa4UKsHGButBh,
+  file D:\scratch 2026\motion-copied\herophilus-motion-copied.html (build.cjs + MANIFEST.md beside it; text/colour
+  fixes applied straight to the html, not yet back in build.cjs). Big-moves page (19 pieces, Codrops/Atropos/
+  vanilla-tilt/Lenis): check-and-fix agent was running, output D:\scratch 2026\motion-big\fix\ - read it fully, fix,
+  publish. Then owner picks from both into PICKS.md, commit.
 
 Next — step 1a part B (one builder, then refuter + looker, then recording for owner):
 - Focus quiz vQuiz/vCase per step1a-brief.txt item 3 (in this folder; its file:// line is superseded by the online-only rule).
