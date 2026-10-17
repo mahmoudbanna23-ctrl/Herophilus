@@ -36,6 +36,8 @@
 .shortcuts .d{color:var(--ink-3);font-weight:600}
 
 .filterbar{display:flex;gap:9px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
+.mockch{margin:0 0 18px;border-bottom:1px solid var(--line-2);color:var(--tx)}
+.mockch summary{cursor:pointer;padding:var(--s-4) 0;margin-bottom:12px;color:var(--tx);font-weight:800}
 /* Source filter — which of the four question banks (endpoint, house, gradegain, selfassess) a module draws from. */
 .bankbar{display:flex;gap:8px;margin:0 0 16px;flex-wrap:wrap;align-items:center}
 .bank-lbl{font-size:var(--fs-sm);font-weight:900;letter-spacing:.08em;text-transform:uppercase;

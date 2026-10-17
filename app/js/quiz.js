@@ -1214,31 +1214,64 @@ function vFlagged(p){
 }
 
 /* ============ MOCK — CHANGE 3: by module ============ */
-let mockMods={};
+let mockMods={},mockChOff={},mockBankOff={},mockOpen={};
 /* Free-text cases stay out of a paper. They reveal themselves through vCase's
    own path, which exam mode does not intercept, so one in the pool would be a
    hole in the no-peeking promise. Both the pool and the counts beside the
    module chips have to use this, or the chip promises questions the paper
-   will not contain. Both pools must also use bankOn, as the chip counts do,
-   or the paper can include questions from sources the student switched off. */
+   will not contain. The mock has its own source picker, separate from the
+   module-page filter. */
 function mockable(q){ return q.type!=='case' }
+function mockPool(){return QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)&&!mockChOff[q.chapter]&&banksOf(q).some(b=>!mockBankOff[b]))}
 function vMock(p){
-  activeModules().forEach(m=>{if(mockMods[m.id]===undefined)mockMods[m.id]=qsInModule(m.id).filter(mockable).length>0});
-  const pool=QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)&&bankOn(q));
+  activeModules().forEach(m=>{if(mockMods[m.id]===undefined)mockMods[m.id]=QUESTIONS.filter(q=>q.module===m.id&&mockable(q)).length>0});
+  const pool=mockPool();
   let h=`<div class="eyebrow" style="background:var(--neuro)">Exam conditions</div><h1>${ico('amphora',26)} Mock exam</h1>
-  <p class="page-sub">Pick your modules, pick a length. Random order, a clock you can see, and no explanations until you hand the paper in. Anything left blank counts as wrong.</p>
+  <p class="page-sub">Pick your modules, chapters, sources and a length. Random order, a clock you can see, and no explanations until you hand the paper in. Anything left blank counts as wrong.</p>
   <h2>1 · Choose modules</h2><div class="filterbar">`;
   openModules().forEach(m=>{
-    const n=qsInModule(m.id).filter(mockable).length;
+    const n=QUESTIONS.filter(q=>q.module===m.id&&mockable(q)).length;
     h+=`<button class="chip ${mockMods[m.id]&&n?'on':''}" style="--c:${m.hex};${n?'':'opacity:.4'}" aria-pressed="${!!(mockMods[m.id]&&n)}"
       ${n?`onclick="mockMods['${m.id}']=!mockMods['${m.id}'];render()"`:'disabled'}>
       ${ico(m.icon,15)} ${m.name} <span style="opacity:.7">${n}</span></button>`;
   });
   h+=`</div>`;
-  h+=`<h2>2 · Choose length</h2>`;
+  h+=`<h2>2 · Choose chapters</h2>`;
+  openModules().forEach(m=>{
+    if(!mockMods[m.id])return;
+    const mq=QUESTIONS.filter(q=>q.module===m.id&&mockable(q));
+    if(!mq.length)return;
+    const cs=m.groups.reduce((a,g)=>a.concat(g.chapters.filter(c=>mq.some(q=>q.chapter===c[0]))),[]);
+    const on=cs.filter(c=>!mockChOff[c[0]]).length;
+    h+=`<details class="mockch" ${mockOpen[m.id]?'open':''} ontoggle="mockOpen['${m.id}']=this.open"><summary>${ico(m.icon,15)} ${m.name} · ${on} of ${cs.length} chapters</summary>
+      <div class="filterbar"><button class="chip" style="--c:${m.hex}" onclick="MODULES.find(x=>x.id==='${m.id}').groups.forEach(g=>g.chapters.forEach(c=>delete mockChOff[c[0]]));render()">All</button>
+      <button class="chip" style="--c:${m.hex}" onclick="MODULES.find(x=>x.id==='${m.id}').groups.forEach(g=>g.chapters.forEach(c=>mockChOff[c[0]]=true));render()">None</button></div>`;
+    m.groups.forEach(g=>{
+      const gc=g.chapters.filter(c=>mq.some(q=>q.chapter===c[0]));
+      if(!gc.length)return;
+      h+=`<div class="grouphdr">${g.name}</div><div class="filterbar">${gc.map(c=>{
+        const n=mq.filter(q=>q.chapter===c[0]).length, on=!mockChOff[c[0]];
+        return `<button class="chip ${on?'on':''}" style="--c:${m.hex}" aria-pressed="${on}" onclick="if(mockChOff['${c[0]}'])delete mockChOff['${c[0]}'];else mockChOff['${c[0]}']=true;render()"><span class="chiplabel">${c[1]}</span> <span style="opacity:.7">${n}</span></button>`;
+      }).join('')}</div>`;
+    });
+    h+=`</details>`;
+  });
+  const sourceQs=QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)&&!mockChOff[q.chapter]);
+  const banks=BANKS.filter(b=>sourceQs.some(q=>banksOf(q).indexOf(b.id)>=0));
+  /* Also shown while a listed source is off, or a lone switched-off source leaves no way back. */
+  if(banks.length>1||banks.some(b=>mockBankOff[b.id])){
+    h+=`<h2>3 · Choose sources</h2><div class="bankbar"><span class="bank-lbl">Source</span>${banks.map(b=>{
+      const on=!mockBankOff[b.id],n=sourceQs.filter(q=>banksOf(q).indexOf(b.id)>=0).length;
+      return `<button class="bankchip ${on?'on':''}" style="--bk:${b.hex}" onclick="if(mockBankOff['${b.id}'])delete mockBankOff['${b.id}'];else mockBankOff['${b.id}']=true;render()" aria-pressed="${on}"><span class="banklabel">${b.name}</span><span class="bankn">${n}</span></button>`;
+    }).join('')}</div>`;
+  }
+  h+=`<h2>4 · Choose length</h2>`;
   if(!pool.length){
-    const filtered=QUESTIONS.some(q=>mockMods[q.module]&&mockable(q));
-    h+=`<div class="empty"><div class="big">${ico('amphora',46)}</div><h3>${filtered?'No questions match your source filter':'Nothing selected'}</h3><p>${filtered?'Your source filter hides all questions in the selected modules. Change it on the module page.':'Pick at least one module that has questions loaded.'}</p></div>`;
+    const mods=QUESTIONS.some(q=>mockMods[q.module]&&mockable(q));
+    const ch=QUESTIONS.some(q=>mockMods[q.module]&&mockable(q)&&!mockChOff[q.chapter]);
+    const title=!mods?'No module picked':!ch?'No chapter picked':'No source picked';
+    const text=!mods?'Pick at least one module above that has questions loaded.':!ch?'Pick at least one chapter above.':'Pick at least one source above.';
+    h+=`<div class="empty"><div class="big">${ico('amphora',46)}</div><h3>${title}</h3><p>${text}</p></div>`;
   }else{
     h+=`<p class="page-sub" style="margin-bottom:14px">${pool.length} question${pool.length===1?'':'s'} in the selected pool.</p><div class="grid g3" style="max-width:780px">`;
     [10,20,40].forEach(n=>{
@@ -1264,7 +1297,7 @@ function runMock(n){
     toast('A saved paper belongs to another semester. Switch back to resume or discard it before starting another.');
     return;
   }
-  const pool=QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)&&bankOn(q)).slice();
+  const pool=mockPool().slice();
   for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]]}
   const mins=examMins(n);
   startQuiz(pool.slice(0,n).map(q=>q.id),'Mock exam',null,null,

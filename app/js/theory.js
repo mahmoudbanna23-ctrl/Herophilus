@@ -25,7 +25,7 @@ function activateTerm(id,force=false){
   rebuildQuestions(id);
   rebuildTheory(id);
   QTHEORY=null;
-  mockMods={};
+  mockMods={};mockChOff={};mockBankOff={};mockOpen={};
   sessDraft.scope='all';
   $('search').value='';
   $('results').innerHTML='';
