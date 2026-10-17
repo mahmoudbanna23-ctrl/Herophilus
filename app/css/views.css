@@ -36,8 +36,15 @@
 .shortcuts .d{color:var(--ink-3);font-weight:600}
 
 .filterbar{display:flex;gap:9px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
-.mockch{margin:0 0 18px;border-bottom:1px solid var(--line-2);color:var(--tx)}
-.mockch summary{cursor:pointer;padding:var(--s-4) 0;margin-bottom:12px;color:var(--tx);font-weight:800}
+.mocksubject{display:flex;flex-direction:column;align-items:flex-start;gap:var(--s-2)}
+.mockadjust{padding:0 var(--s-4);border:0;background:transparent;color:var(--ink-2);font:inherit;font-size:var(--fs-sm);font-weight:700;cursor:pointer}
+.mockadjust:hover{color:var(--tx)}
+.mock-modal{max-height:calc(100vh - 2*var(--s-9) - 2*var(--s-11));overflow-y:auto;overscroll-behavior:contain}
+.mockhead{display:flex;gap:var(--s-6);align-items:center;justify-content:space-between;margin-bottom:var(--s-8)}
+.mockhead h3{margin:0}.mocktopicbar,.mocktopicrow{display:flex;gap:var(--s-4);align-items:center;flex-wrap:wrap}
+.mocktopicbar{margin-bottom:var(--s-6)}.mocktopic{padding:var(--s-5) 0;border-top:1px solid var(--line-2)}
+.mockmore{border:0;background:transparent;color:var(--ink-2);font:inherit;font-size:var(--fs-lg);font-weight:900;cursor:pointer}
+.mockmore:hover{color:var(--tx)}.mockchapters{margin:var(--s-4) 0 0 var(--s-8)}
 /* Source filter — which of the four question banks (endpoint, house, gradegain, selfassess) a module draws from. */
 .bankbar{display:flex;gap:8px;margin:0 0 16px;flex-wrap:wrap;align-items:center}
 .bank-lbl{font-size:var(--fs-sm);font-weight:900;letter-spacing:.08em;text-transform:uppercase;
@@ -67,6 +74,7 @@
 .bankchip.on{color:var(--tx)}
 .bankchip.on:hover{color:var(--gold-text)}
 .bankchip.on > .banklabel::after,.chip.on[aria-pressed] > .chiplabel::after{content:"";position:absolute;left:-2px;right:-2px;bottom:-3px;height:1px;background:var(--gold)}
+.chip.on[aria-pressed="mixed"]::before{display:block;transform:translateY(-50%);width:7px;height:0;border-left:0;border-bottom:1px solid var(--neon)}
 /* Off source chips: solid --ink-2, not opacity — opacity composited the
    fill against the page ground and fell to 3.0:1 (light) / hover 3.18 dark,
    2.02 light. Fix round 2 item 1. */

@@ -1222,55 +1222,56 @@ let mockMods={},mockChOff={},mockBankOff={},mockOpen={};
    will not contain. The mock has its own source picker, separate from the
    module-page filter. */
 function mockable(q){ return q.type!=='case' }
-function mockPool(){return QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)&&!mockChOff[q.chapter]&&banksOf(q).some(b=>!mockBankOff[b]))}
+function mockPool(){return QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)&&!mockChOff[q.chapter]&&banksOf(q).some(b=>!mockBankOff[q.module+'|'+b]))}
+function mockGroup(id,i,on){
+  const m=MODULES.find(x=>x.id===id),mq=QUESTIONS.filter(q=>q.module===id&&mockable(q));
+  m.groups[i].chapters.filter(c=>mq.some(q=>q.chapter===c[0])).forEach(c=>{if(on)delete mockChOff[c[0]];else mockChOff[c[0]]=true});
+}
+function mockAdjust(id){
+  const m=MODULES.find(x=>x.id===id),mq=QUESTIONS.filter(q=>q.module===id&&mockable(q));
+  if(!m)return;
+  const banks=BANKS.filter(b=>mq.some(q=>banksOf(q).indexOf(b.id)>=0));
+  let h=`<div class="mock-modal"><div class="mockhead"><h3>${ico(m.icon,19)} ${m.name}</h3><button class="btn go" onclick="closeModal();render()">Done</button></div>`;
+  if(banks.length>1||banks.some(b=>mockBankOff[id+'|'+b.id]))h+=`<div class="bankbar"><span class="bank-lbl">Sources</span>${banks.map(b=>{
+    const on=!mockBankOff[id+'|'+b.id],n=mq.filter(q=>banksOf(q).indexOf(b.id)>=0).length;
+    return `<button class="bankchip ${on?'on':''}" style="--bk:${b.hex}" onclick="if(mockBankOff['${id}|${b.id}'])delete mockBankOff['${id}|${b.id}'];else mockBankOff['${id}|${b.id}']=true;mockAdjust('${id}');render()" aria-pressed="${on}"><span class="banklabel">${b.name}</span><span class="bankn">${n}</span></button>`;
+  }).join('')}</div>`;
+  h+=`<div class="mocktopics"><div class="mocktopicbar"><span class="bank-lbl">Topics</span><button class="chip" style="--c:${m.hex}" onclick="MODULES.find(x=>x.id==='${id}').groups.forEach(g=>g.chapters.forEach(c=>delete mockChOff[c[0]]));mockAdjust('${id}');render()">All</button><button class="chip" style="--c:${m.hex}" onclick="MODULES.find(x=>x.id==='${id}').groups.forEach(g=>g.chapters.forEach(c=>mockChOff[c[0]]=true));mockAdjust('${id}');render()">None</button></div>`;
+  m.groups.forEach((g,i)=>{
+    const gc=g.chapters.filter(c=>mq.some(q=>q.chapter===c[0]));
+    if(!gc.length)return;
+    const on=gc.filter(c=>!mockChOff[c[0]]).length,pressed=on===gc.length?'true':on?'mixed':'false',open=mockOpen[id+'|'+i];
+    h+=`<div class="mocktopic"><div class="mocktopicrow"><button class="chip ${on?'on':''}" style="--c:${m.hex}" aria-pressed="${pressed}" onclick="mockGroup('${id}',${i},${on!==gc.length});mockAdjust('${id}');render()"><span class="chiplabel">${g.name}</span> <span style="opacity:.7">${gc.reduce((n,c)=>n+mq.filter(q=>q.chapter===c[0]).length,0)}</span></button>${gc.length>1?`<button class="mockmore" aria-label="${open?'Hide':'Show'} ${g.name} topics" onclick="mockOpen['${id}|${i}']=!mockOpen['${id}|${i}'];mockAdjust('${id}');render()">›</button>`:''}</div>`;
+    if(open&&gc.length>1)h+=`<div class="filterbar mockchapters">${gc.map(c=>{
+      const n=mq.filter(q=>q.chapter===c[0]).length,on=!mockChOff[c[0]];
+      return `<button class="chip ${on?'on':''}" style="--c:${m.hex}" aria-pressed="${on}" onclick="if(mockChOff['${c[0]}'])delete mockChOff['${c[0]}'];else mockChOff['${c[0]}']=true;mockAdjust('${id}');render()"><span class="chiplabel">${c[1]}</span> <span style="opacity:.7">${n}</span></button>`;
+    }).join('')}</div>`;
+    h+=`</div>`;
+  });
+  showModal(h+`</div>`);
+}
 function vMock(p){
   activeModules().forEach(m=>{if(mockMods[m.id]===undefined)mockMods[m.id]=QUESTIONS.filter(q=>q.module===m.id&&mockable(q)).length>0});
   const pool=mockPool();
   let h=`<div class="eyebrow" style="background:var(--neuro)">Exam conditions</div><h1>${ico('amphora',26)} Mock exam</h1>
-  <p class="page-sub">Pick your modules, chapters, sources and a length. Random order, a clock you can see, and no explanations until you hand the paper in. Anything left blank counts as wrong.</p>
+  <p class="page-sub">Pick your modules and a length. Tap a subject line to choose its chapters and sources. Random order, a clock you can see, and no explanations until you hand the paper in. Anything left blank counts as wrong.</p>
   <h2>1 · Choose modules</h2><div class="filterbar">`;
   openModules().forEach(m=>{
-    const n=QUESTIONS.filter(q=>q.module===m.id&&mockable(q)).length;
-    h+=`<button class="chip ${mockMods[m.id]&&n?'on':''}" style="--c:${m.hex};${n?'':'opacity:.4'}" aria-pressed="${!!(mockMods[m.id]&&n)}"
+    const mq=QUESTIONS.filter(q=>q.module===m.id&&mockable(q)),n=mq.length;
+    const cs=m.groups.reduce((a,g)=>a.concat(g.chapters.filter(c=>mq.some(q=>q.chapter===c[0]))),[]);
+    const on=cs.filter(c=>!mockChOff[c[0]]).length,banks=BANKS.filter(b=>mq.some(q=>banksOf(q).indexOf(b.id)>=0)),live=banks.filter(b=>!mockBankOff[m.id+'|'+b.id]).length;
+    const summary=on===cs.length&&live===banks.length?'All chapters · all sources ›':`${on} of ${cs.length} chapters${live===banks.length?'':` · ${live} of ${banks.length} sources`} ›`;
+    h+=`<div class="mocksubject"><button class="chip ${mockMods[m.id]&&n?'on':''}" style="--c:${m.hex};${n?'':'opacity:.4'}" aria-pressed="${!!(mockMods[m.id]&&n)}"
       ${n?`onclick="mockMods['${m.id}']=!mockMods['${m.id}'];render()"`:'disabled'}>
-      ${ico(m.icon,15)} ${m.name} <span style="opacity:.7">${n}</span></button>`;
+      ${ico(m.icon,15)} ${m.name} <span style="opacity:.7">${n}</span></button>${mockMods[m.id]&&n?`<button class="mockadjust" onclick="mockAdjust('${m.id}')">${summary}</button>`:''}</div>`;
   });
   h+=`</div>`;
-  h+=`<h2>2 · Choose chapters</h2>`;
-  openModules().forEach(m=>{
-    if(!mockMods[m.id])return;
-    const mq=QUESTIONS.filter(q=>q.module===m.id&&mockable(q));
-    if(!mq.length)return;
-    const cs=m.groups.reduce((a,g)=>a.concat(g.chapters.filter(c=>mq.some(q=>q.chapter===c[0]))),[]);
-    const on=cs.filter(c=>!mockChOff[c[0]]).length;
-    h+=`<details class="mockch" ${mockOpen[m.id]?'open':''} ontoggle="mockOpen['${m.id}']=this.open"><summary>${ico(m.icon,15)} ${m.name} · ${on} of ${cs.length} chapters</summary>
-      <div class="filterbar"><button class="chip" style="--c:${m.hex}" onclick="MODULES.find(x=>x.id==='${m.id}').groups.forEach(g=>g.chapters.forEach(c=>delete mockChOff[c[0]]));render()">All</button>
-      <button class="chip" style="--c:${m.hex}" onclick="MODULES.find(x=>x.id==='${m.id}').groups.forEach(g=>g.chapters.forEach(c=>mockChOff[c[0]]=true));render()">None</button></div>`;
-    m.groups.forEach(g=>{
-      const gc=g.chapters.filter(c=>mq.some(q=>q.chapter===c[0]));
-      if(!gc.length)return;
-      h+=`<div class="grouphdr">${g.name}</div><div class="filterbar">${gc.map(c=>{
-        const n=mq.filter(q=>q.chapter===c[0]).length, on=!mockChOff[c[0]];
-        return `<button class="chip ${on?'on':''}" style="--c:${m.hex}" aria-pressed="${on}" onclick="if(mockChOff['${c[0]}'])delete mockChOff['${c[0]}'];else mockChOff['${c[0]}']=true;render()"><span class="chiplabel">${c[1]}</span> <span style="opacity:.7">${n}</span></button>`;
-      }).join('')}</div>`;
-    });
-    h+=`</details>`;
-  });
-  const sourceQs=QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)&&!mockChOff[q.chapter]);
-  const banks=BANKS.filter(b=>sourceQs.some(q=>banksOf(q).indexOf(b.id)>=0));
-  /* Also shown while a listed source is off, or a lone switched-off source leaves no way back. */
-  if(banks.length>1||banks.some(b=>mockBankOff[b.id])){
-    h+=`<h2>3 · Choose sources</h2><div class="bankbar"><span class="bank-lbl">Source</span>${banks.map(b=>{
-      const on=!mockBankOff[b.id],n=sourceQs.filter(q=>banksOf(q).indexOf(b.id)>=0).length;
-      return `<button class="bankchip ${on?'on':''}" style="--bk:${b.hex}" onclick="if(mockBankOff['${b.id}'])delete mockBankOff['${b.id}'];else mockBankOff['${b.id}']=true;render()" aria-pressed="${on}"><span class="banklabel">${b.name}</span><span class="bankn">${n}</span></button>`;
-    }).join('')}</div>`;
-  }
-  h+=`<h2>4 · Choose length</h2>`;
+  h+=`<h2>2 · Choose length</h2>`;
   if(!pool.length){
     const mods=QUESTIONS.some(q=>mockMods[q.module]&&mockable(q));
     const ch=QUESTIONS.some(q=>mockMods[q.module]&&mockable(q)&&!mockChOff[q.chapter]);
     const title=!mods?'No module picked':!ch?'No chapter picked':'No source picked';
-    const text=!mods?'Pick at least one module above that has questions loaded.':!ch?'Pick at least one chapter above.':'Pick at least one source above.';
+    const text=!mods?'Pick at least one module above that has questions loaded.':!ch?'Tap the line under a subject and pick at least one chapter.':'Tap the line under a subject and pick at least one source.';
     h+=`<div class="empty"><div class="big">${ico('amphora',46)}</div><h3>${title}</h3><p>${text}</p></div>`;
   }else{
     h+=`<p class="page-sub" style="margin-bottom:14px">${pool.length} question${pool.length===1?'':'s'} in the selected pool.</p><div class="grid g3" style="max-width:780px">`;
