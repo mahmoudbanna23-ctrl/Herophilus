@@ -340,9 +340,15 @@ function vModule(p){
       const gq=qs.filter(q=>ids.indexOf(q.chapter)>=0);
       return `<button class="btn go" onclick="startQuiz(${JSON.stringify(gq.map(q=>q.id)).replace(/"/g,'&quot;')},'${g.name} — all')">${ico('play')} Practise all ${g.name} ${gq.length}</button>`;
     }).join('\n      '):`<button class="btn go" onclick="startQuiz(${JSON.stringify(qs.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — all')">${ico('play')} Practise all ${qs.length}</button>`;
+    const unBtn=(list,name,label)=>list.length?`<button class="btn sec" onclick="startQuiz(${JSON.stringify(list.map(q=>q.id)).replace(/"/g,'&quot;')},'${name} — new')">${label} (${list.length})</button>`:'';
+    /* Pediatrics also splits "Unanswered" per paper (owner 2026-10-18). */
+    const unBtns=m.id==='pediatrics'&&halves.length===2?halves.map(g=>{
+      const ids=g.chapters.map(c=>c[0]);
+      return unBtn(un.filter(q=>ids.indexOf(q.chapter)>=0),g.name,'Unanswered '+g.name);
+    }).join('\n      '):unBtn(un,m.name,'Unanswered');
     h+=`<div class="filterbar">
       ${allBtn}
-      ${un.length?`<button class="btn sec" onclick="startQuiz(${JSON.stringify(un.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — new')">Unanswered (${un.length})</button>`:''}
+      ${unBtns}
     </div>`;
   }
 
