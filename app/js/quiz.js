@@ -1214,7 +1214,7 @@ function vFlagged(p){
 }
 
 /* ============ MOCK — CHANGE 3: by module ============ */
-let mockMods={},mockChOff={},mockBankOff={},mockOpen={};
+let mockMods={},mockChOff={},pracChOff={},mockBankOff={},mockOpen={};
 /* Free-text cases stay out of a paper. They reveal themselves through vCase's
    own path, which exam mode does not intercept, so one in the pool would be a
    hole in the no-peeking promise. Both the pool and the counts beside the
@@ -1223,28 +1223,28 @@ let mockMods={},mockChOff={},mockBankOff={},mockOpen={};
    module-page filter. */
 function mockable(q){ return q.type!=='case' }
 function mockPool(){return QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)&&!mockChOff[q.chapter]&&banksOf(q).some(b=>!mockBankOff[q.module+'|'+b]))}
-function mockGroup(id,i,on){
-  const m=MODULES.find(x=>x.id===id),mq=QUESTIONS.filter(q=>q.module===id&&mockable(q));
-  m.groups[i].chapters.filter(c=>mq.some(q=>q.chapter===c[0])).forEach(c=>{if(on)delete mockChOff[c[0]];else mockChOff[c[0]]=true});
+function mockGroup(id,i,on,mode){
+  const m=MODULES.find(x=>x.id===id),mq=mode==='prac'?qsInModule(id):QUESTIONS.filter(q=>q.module===id&&mockable(q)),off=mode==='prac'?pracChOff:mockChOff;
+  m.groups[i].chapters.filter(c=>mq.some(q=>q.chapter===c[0])).forEach(c=>{if(on)delete off[c[0]];else off[c[0]]=true});
 }
-function mockAdjust(id){
-  const m=MODULES.find(x=>x.id===id),mq=QUESTIONS.filter(q=>q.module===id&&mockable(q));
+function mockAdjust(id,mode){
+  const m=MODULES.find(x=>x.id===id),mq=mode==='prac'?qsInModule(id):QUESTIONS.filter(q=>q.module===id&&mockable(q)),off=mode==='prac'?pracChOff:mockChOff,offName=mode==='prac'?'pracChOff':'mockChOff',openPre=mode==='prac'?'prac|':'';
   if(!m)return;
-  const banks=BANKS.filter(b=>mq.some(q=>banksOf(q).indexOf(b.id)>=0));
+  const banks=mode==='prac'?[]:BANKS.filter(b=>mq.some(q=>banksOf(q).indexOf(b.id)>=0));
   let h=`<div class="mock-modal"><div class="mockhead"><h3>${ico(m.icon,19)} ${m.name}</h3><button class="btn go" onclick="closeModal();render()">Done</button></div>`;
-  if(banks.length>1||banks.some(b=>mockBankOff[id+'|'+b.id]))h+=`<div class="bankbar"><span class="bank-lbl">Sources</span>${banks.map(b=>{
+  if(!mode&&(banks.length>1||banks.some(b=>mockBankOff[id+'|'+b.id])))h+=`<div class="bankbar"><span class="bank-lbl">Sources</span>${banks.map(b=>{
     const on=!mockBankOff[id+'|'+b.id],n=mq.filter(q=>banksOf(q).indexOf(b.id)>=0).length;
     return `<button class="bankchip ${on?'on':''}" style="--bk:${b.hex}" onclick="if(mockBankOff['${id}|${b.id}'])delete mockBankOff['${id}|${b.id}'];else mockBankOff['${id}|${b.id}']=true;mockAdjust('${id}');render()" aria-pressed="${on}"><span class="banklabel">${b.name}</span><span class="bankn">${n}</span></button>`;
   }).join('')}</div>`;
-  h+=`<div class="mocktopics"><div class="mocktopicbar"><span class="bank-lbl">Topics</span><button class="chip" style="--c:${m.hex}" onclick="MODULES.find(x=>x.id==='${id}').groups.forEach(g=>g.chapters.forEach(c=>delete mockChOff[c[0]]));mockAdjust('${id}');render()">All</button><button class="chip" style="--c:${m.hex}" onclick="MODULES.find(x=>x.id==='${id}').groups.forEach(g=>g.chapters.forEach(c=>mockChOff[c[0]]=true));mockAdjust('${id}');render()">None</button></div>`;
+  h+=`<div class="mocktopics"><div class="mocktopicbar"><span class="bank-lbl">Topics</span><button class="chip" style="--c:${m.hex}" onclick="MODULES.find(x=>x.id==='${id}').groups.forEach(g=>g.chapters.forEach(c=>delete ${offName}[c[0]]));mockAdjust('${id}'${mode?',\'prac\'':''});render()">All</button><button class="chip" style="--c:${m.hex}" onclick="MODULES.find(x=>x.id==='${id}').groups.forEach(g=>g.chapters.forEach(c=>${offName}[c[0]]=true));mockAdjust('${id}'${mode?',\'prac\'':''});render()">None</button></div>`;
   m.groups.forEach((g,i)=>{
     const gc=g.chapters.filter(c=>mq.some(q=>q.chapter===c[0]));
     if(!gc.length)return;
-    const on=gc.filter(c=>!mockChOff[c[0]]).length,pressed=on===gc.length?'true':on?'mixed':'false',open=mockOpen[id+'|'+i];
-    h+=`<div class="mocktopic"><div class="mocktopicrow"><button class="chip ${on?'on':''}" style="--c:${m.hex}" aria-pressed="${pressed}" onclick="mockGroup('${id}',${i},${on!==gc.length});mockAdjust('${id}');render()"><span class="chiplabel">${g.name}</span> <span style="opacity:.7">${gc.reduce((n,c)=>n+mq.filter(q=>q.chapter===c[0]).length,0)}</span></button>${gc.length>1?`<button class="mockmore" aria-label="${open?'Hide':'Show'} ${g.name} topics" onclick="mockOpen['${id}|${i}']=!mockOpen['${id}|${i}'];mockAdjust('${id}');render()">›</button>`:''}</div>`;
+    const on=gc.filter(c=>!off[c[0]]).length,pressed=on===gc.length?'true':on?'mixed':'false',open=mockOpen[openPre+id+'|'+i];
+    h+=`<div class="mocktopic"><div class="mocktopicrow"><button class="chip ${on?'on':''}" style="--c:${m.hex}" aria-pressed="${pressed}" onclick="mockGroup('${id}',${i},${on!==gc.length}${mode?',\'prac\'':''});mockAdjust('${id}'${mode?',\'prac\'':''});render()"><span class="chiplabel">${g.name}</span> <span style="opacity:.7">${gc.reduce((n,c)=>n+mq.filter(q=>q.chapter===c[0]).length,0)}</span></button>${gc.length>1?`<button class="mockmore" aria-label="${open?'Hide':'Show'} ${g.name} topics" onclick="mockOpen['${openPre+id+'|'+i}']=!mockOpen['${openPre+id+'|'+i}'];mockAdjust('${id}'${mode?',\'prac\'':''});render()">›</button>`:''}</div>`;
     if(open&&gc.length>1)h+=`<div class="filterbar mockchapters">${gc.map(c=>{
-      const n=mq.filter(q=>q.chapter===c[0]).length,on=!mockChOff[c[0]];
-      return `<button class="chip ${on?'on':''}" style="--c:${m.hex}" aria-pressed="${on}" onclick="if(mockChOff['${c[0]}'])delete mockChOff['${c[0]}'];else mockChOff['${c[0]}']=true;mockAdjust('${id}');render()"><span class="chiplabel">${c[1]}</span> <span style="opacity:.7">${n}</span></button>`;
+      const n=mq.filter(q=>q.chapter===c[0]).length,on=!off[c[0]];
+      return `<button class="chip ${on?'on':''}" style="--c:${m.hex}" aria-pressed="${on}" onclick="if(${offName}['${c[0]}'])delete ${offName}['${c[0]}'];else ${offName}['${c[0]}']=true;mockAdjust('${id}'${mode?',\'prac\'':''});render()"><span class="chiplabel">${c[1]}</span> <span style="opacity:.7">${n}</span></button>`;
     }).join('')}</div>`;
     h+=`</div>`;
   });

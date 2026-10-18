@@ -325,7 +325,7 @@ function vModule(p){
   }
 
   if(qs.length){
-    const un=qs.filter(q=>!isAnswered(q.id));
+    const pq=qs.filter(q=>!pracChOff[q.chapter]),un=pq.filter(q=>!isAnswered(q.id));
     /* Neuropsychiatry is two subjects examined apart (owner 2026-10-02): one
        "practise all" per half, by the question's topic chapter. */
     let halves=m.id==='neuropsych'?m.groups.filter(g=>g.name==='Neurology'||g.name==='Psychiatry'):[];
@@ -335,20 +335,25 @@ function vModule(p){
       const pp=[1,2].map(n=>({name:'Paper '+n,chapters:m.groups.filter(g=>g.paper===n).reduce((a,g)=>a.concat(g.chapters),[])}));
       if(pp.every(x=>x.chapters.length))halves=pp;
     }
-    const allBtn=halves.length===2?halves.map(g=>{
+    let allBtn=halves.length===2?halves.map(g=>{
       const ids=g.chapters.map(c=>c[0]);
-      const gq=qs.filter(q=>ids.indexOf(q.chapter)>=0);
+      const gq=pq.filter(q=>ids.indexOf(q.chapter)>=0);
+      if(!gq.length)return '';
       return `<button class="btn go" onclick="startQuiz(${JSON.stringify(gq.map(q=>q.id)).replace(/"/g,'&quot;')},'${g.name} — all')">${ico('play')} Practise all ${g.name} ${gq.length}</button>`;
-    }).join('\n      '):`<button class="btn go" onclick="startQuiz(${JSON.stringify(qs.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — all')">${ico('play')} Practise all ${qs.length}</button>`;
+    }).join('\n      '):`<button class="btn go" onclick="startQuiz(${JSON.stringify(pq.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — all')">${ico('play')} Practise all ${pq.length}</button>`;
     const unBtn=(list,name,label)=>list.length?`<button class="btn sec" onclick="startQuiz(${JSON.stringify(list.map(q=>q.id)).replace(/"/g,'&quot;')},'${name} — new')">${label} (${list.length})</button>`:'';
+    if(!pq.length)allBtn='';
     /* Pediatrics also splits "Unanswered" per paper (owner 2026-10-18). */
     const unBtns=m.id==='pediatrics'&&halves.length===2?halves.map(g=>{
       const ids=g.chapters.map(c=>c[0]);
       return unBtn(un.filter(q=>ids.indexOf(q.chapter)>=0),g.name,'Unanswered '+g.name);
     }).join('\n      '):unBtn(un,m.name,'Unanswered');
+    const topics=m.groups.map(g=>g.chapters.filter(c=>qs.some(q=>q.chapter===c[0]))).filter(g=>g.length);
+    const topicOn=topics.filter(g=>g.some(c=>!pracChOff[c[0]])).length;
+    const topicLabel=topicOn===topics.length?'All topics ›':`${topicOn} of ${topics.length} topics ›`;
     h+=`<div class="filterbar">
-      ${allBtn}
-      ${unBtns}
+      ${pq.length?allBtn+unBtns:'<span style="color:var(--ink-2)">No topic picked</span>'}
+      <button class="mockadjust" onclick="mockAdjust('${m.id}','prac')">${topicLabel}</button>
     </div>`;
   }
 
