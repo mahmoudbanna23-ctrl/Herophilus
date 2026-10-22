@@ -36,12 +36,20 @@ Done:
   stale-tip bug fixed in clepsydra.js (bubble logic only). Refuters DONE x2. Pictures D:\scratch 2026\clean-strip\fix\,
   8 sent to owner. mod-*.jpg = 2026-07-28 design, not city (kept).
 
-Next — step 1b subject page (M1 M2 A3 A4, big pick 3D stacked cards), steps 2-5 per plan. Carry into 1b:
-- Yellow ⚠ in stored explanations reads as an emoji (banned): swap at render time for the ui-icons warning icon.
-- Mid-page (scroll 0) her bubble still covers light home Eyes card (s-10) and ENT 0/84 counts (s-11); end of page
-  is clear. 1b layout must give her a lane. views.css:149,289 dead .modal-bg colour rules (blur source) - tidy.
+- Step 1b subject page DONE 2026-10-22, commit afc5d2dc (pushed). Brief step1b-brief.txt + step1b-fix-brief.txt;
+  build/fix detail step1a-notes.md "step 1b part 1-3", "Step 1b fix", "step 1b fix 2". 3DStackMotion effect-1 on
+  top, list below; progressbar ring per row; M1/M2 browser View Transitions; mascot right gutter >=1180, page end
+  below. A3 + A4 underline DROPPED (copy rule). GSAP licence = GreenSock standard, not MIT (owner told).
+  Refuter PASS; looker x2. Checks: boot 0 errors, 7 PASS, frozen 0, overlap 192/192 clean x2, leaks flat.
+  Shots D:\scratch 2026\clean-1b\shots (144), reports looker-report*.md; recording D:\scratch 2026\clean-1b\rec.
+  OPEN owner question: iPad portrait (820x1180) shows ~850px blank above the deck (demo's own 100vh box) - keep
+  deck or list-only there like <=700? Left as demo: cards flying off-screen mid-scroll, start-pose sliver at left.
+  Carry-overs: ~1540 ⚠ in non-explanation fields untouched; Lenis vs modals untested; drag below 1180 is sideways
+  only; "Grade Gain" tag wraps alone at 390; back-card text still covered at 820 mid-stack.
+
+Next — steps 2-5 per plan.
 - " - " run-in lists inside paragraphs (stored text) stay inline; rule covers " • " only - owner call if wanted.
-- --neu-* token contrast unmeasured; disabled Check/Previous faint in light (disabled, likely fine).
+- --neu-* shadows measured 1.00-1.67 (decorative); disabled Check/Previous faint in light (disabled, likely fine).
 - Case questions get no tick/cross (no option rows) - builder drop.
 Rules: never edit the live Herophilus folder, no merge, no upload without owner yes; push this branch freely, never
 --force; do not commit tools/city-film or tools/kaggle (unrelated, untracked).
