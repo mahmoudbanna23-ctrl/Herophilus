@@ -1,6 +1,8 @@
 'use strict';
 // Overlap proof for strip-fix #1 (and probe for #2/#4 numbers when asked).
 // node progress\redesign-clean\overlap-proof.js [overlap|contrast|lag]
+// Step 1b: overlap mode tests scroll TOP, MIDDLE and BOTTOM. Env MOTION=1 runs with motion on (3D stack present);
+// default emulates prefers-reduced-motion (list only).
 // Headless Chrome via CDP on a COPY of app\ (same harness shape as D:\scratch 2026\clean-strip\capture-strip.js).
 const fs=require('fs'), path=require('path'), os=require('os');
 const {spawn}=require('child_process');
@@ -8,6 +10,8 @@ const {pathToFileURL}=require('url');
 const root=path.resolve(__dirname,'..','..');
 const pause=ms=>new Promise(r=>setTimeout(r,ms));
 const MODE=process.argv[2]||'overlap';
+const MOTION=!!process.env.MOTION;
+const POSITIONS=['top','middle','bottom'];
 
 const SIZES=[[1440,900],[1180,820],[820,1180],[390,844]];
 const VIEWS=[['home',"go({name:'home'})"],['ent',"go({name:'module',id:'ent'})"],['ophtho',"go({name:'module',id:'ophtho'})"],
@@ -24,8 +28,8 @@ overlap: `
   const c=document.querySelector('.clep');
   c.classList.add('timed');const hud=document.getElementById('clepHud');if(hud)hud.textContent='FOCUS 25:00';
   await new Promise(r=>setTimeout(r,500));
-  window.scrollTo(0,1e7);
-  await new Promise(r=>setTimeout(r,400));
+  window.scrollTo(0,POS==='top'?0:POS==='middle'?Math.round(Math.max(0,document.documentElement.scrollHeight-innerHeight)/2):1e7);
+  await new Promise(r=>setTimeout(r,MOTION?1800:400));
   const cr=c.getBoundingClientRect();
   const sayEl=document.getElementById('clepSay');const sr=sayEl.getBoundingClientRect();
   const body=document.getElementById('clepBody').getBoundingClientRect();
@@ -46,7 +50,7 @@ overlap: `
   }
   return {view:view.name,disp:getComputedStyle(c).display,clep:[Math.round(cr.left),Math.round(cr.top),Math.round(cr.width),Math.round(cr.height)],
     say:[Math.round(sr.left),Math.round(sr.top),Math.round(sr.width),Math.round(sr.height)],
-    checked:n,hits:hits.length,sample:hits.slice(0,3),scrollY:Math.round(scrollY),atBottom:Math.round(scrollY+innerHeight)>=document.documentElement.scrollHeight-1,
+    checked:n,hits:hits.length,sample:hits.slice(0,3),scrollY:Math.round(scrollY),atBottom:Math.round(scrollY+innerHeight)>=document.documentElement.scrollHeight-1,atTop:scrollY<2,
     scrollH:document.documentElement.scrollHeight,vw:innerWidth};
 `};
 
@@ -81,7 +85,7 @@ async function main(){
       else if(m.method==='Runtime.consoleAPICalled'&&m.params.type==='error')consoleErrors.push('console.error: '+m.params.args.map(a=>a.value??a.description).join(' ').slice(0,200));};
     await cdp('Page.enable');await cdp('Runtime.enable');await cdp('Network.enable');
     await cdp('Network.setBlockedURLs',{urls:['http://*','https://*']});
-    await cdp('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});
+    await cdp('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:MOTION?'no-preference':'reduce'}]});
     await cdp('Page.navigate',{url:pathToFileURL(path.join(app,'index.html')).href});
     await until(()=>evaluate('return document.readyState==="complete" && typeof enterProfile==="function";'));
     await evaluate("await enterProfile({id:'uiTask',name:'UI Task',av:0,col:0});if(!S.term){S.term={id:'y4s2',at:Date.now()};await save();finishProfileEntry();}return 1;");
@@ -92,17 +96,19 @@ async function main(){
         await cdp('Emulation.setDeviceMetricsOverride',{width:w,height:h,deviceScaleFactor:1,mobile:false});
         for(const theme of ['dark','light']){
           for(const [name,code] of VIEWS){
-            await evaluate("closeModal&&closeModal();setTheme('"+theme+"');"+code+";window.scrollTo(0,0);");
-            await pause(700);
-            const r=await evaluate(PAGE_JS.overlap);
-            rows.push({size:w+'x'+h,theme,screen:name,...r});
+            for(const pos of POSITIONS){
+              await evaluate("closeModal&&closeModal();setTheme('"+theme+"');"+code+";window.scrollTo(0,0);");
+              await pause(MOTION?1200:700);
+              const r=await evaluate('const POS='+JSON.stringify(pos)+';const MOTION='+MOTION+';'+PAGE_JS.overlap);
+              rows.push({size:w+'x'+h,theme,screen:name,pos,...r});
+            }
           }
         }
       }
       let bad=0;
-      for(const r of rows){ if(r.hits||r.disp==='none'||!r.atBottom)bad++; }
-      for(const r of rows)console.log(r.size,r.theme,r.screen.padEnd(8),'clep',r.clep.join(','),'say',r.say.join(','),'checked',r.checked,'hits',r.hits,r.hits?JSON.stringify(r.sample):'', r.atBottom?'':'NOT-AT-BOTTOM', r.disp==='none'?'CLEP-HIDDEN':'');
-      console.log('TOTAL',rows.length,'combos; failing',bad,'; console errors',consoleErrors.length);
+      for(const r of rows){ if(r.hits||r.disp==='none'||(r.pos==='bottom'&&!r.atBottom)||(r.pos==='top'&&!r.atTop))bad++; }
+      for(const r of rows)console.log(r.size,r.theme,r.screen.padEnd(8),r.pos.padEnd(6),'clep',r.clep.join(','),'say',r.say.join(','),'checked',r.checked,'hits',r.hits,r.hits?JSON.stringify(r.sample):'', (r.pos==='bottom'&&!r.atBottom)?'NOT-AT-BOTTOM':'',(r.pos==='top'&&!r.atTop)?'NOT-AT-TOP':'', r.disp==='none'?'CLEP-HIDDEN':'');
+      console.log('TOTAL',rows.length,'combos ('+SIZES.length+' sizes x 2 themes x '+VIEWS.length+' views x '+POSITIONS.length+' scroll positions, motion '+(MOTION?'ON':'reduced')+'); failing',bad,'; hits total',rows.reduce((a,r)=>a+r.hits,0),'; console errors',consoleErrors.length);
     } else if(MODE==='matched'){
       await cdp('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:false});
       await evaluate("go({name:'module',id:'ent'})");await pause(600);

@@ -36,45 +36,13 @@
 .shortcuts .d{color:var(--ink-3);font-weight:600}
 
 .filterbar{display:flex;gap:9px;margin-bottom:20px;flex-wrap:wrap;align-items:center}
-/* Source filter — which of the four question banks (endpoint, house, gradegain, selfassess) a module draws from. */
-.bankbar{display:flex;gap:8px;margin:0 0 16px;flex-wrap:wrap;align-items:center}
-.bank-lbl{font-size:var(--fs-sm);font-weight:900;letter-spacing:.08em;text-transform:uppercase;
-  color:var(--ink-2);margin-right:2px}
-.bankchip{position:relative;display:inline-flex;align-items:center;gap:7px;padding:var(--s-3) var(--s-6) var(--s-3) var(--s-10);cursor:pointer;
-  border:0;border-radius:var(--r-md);background:transparent;color:var(--tx);font-family:inherit;font-size:var(--fs-md);font-weight:800;
-  transition:color var(--dur-2) var(--ease-standard)}
-.bankchip:hover{color:var(--gold-text)}
-/* Off-state is deliberately flat and grey: which sources are live must be
-   readable at a glance, or you sit an exam on a filtered set without noticing. */
-/* White text is correct again as of the Greek palette: bronze #9a6b1f, aegean
-   #2f6b8f and madder #8f3f5c are all dark enough that white clears 4.6-6.9:1.
-   Under the OLD bright bank colours it did not — white on amber #f59e0b
-   measured 2.15:1, the worst reading in the app, and this rule had to carry
-   dark text instead. Recheck by measurement if the bank colours ever change.
-
-   The glow was `var(--ink)`, which is TEXT colour — parchment-white, so the
-   chip wore a pale halo. That is the exact re-merge the token contract forbids. */
-/* .chip only gets the tick/strike/underline treatment when it carries
-   aria-pressed — a real on/off toggle. An action chip (Review "All N", the
-   bank-filter "Show all" reset) renders plain: fix round 2 item 4,
-   the strike was reading a "Start quiz" button as a disabled toggle. */
-.bankchip::before,.chip[aria-pressed]::before{content:"";position:absolute;left:var(--s-4);top:50%;width:8px;height:4px;border-left:1px solid var(--neon);border-bottom:1px solid var(--neon);transform:translateY(-65%) rotate(-45deg);display:none}
-.bankchip.on::before,.chip.on[aria-pressed]::before{display:block}
-.bankchip > .banklabel,.chip[aria-pressed] > .chiplabel{position:relative}
-.bankchip[aria-pressed]:not(.on) > .banklabel::after,.chip[aria-pressed]:not(.on) > .chiplabel::after{content:"";position:absolute;left:-2px;right:-2px;top:55%;height:1px;background:var(--neon)}
-.bankchip.on{color:var(--tx)}
-.bankchip.on:hover{color:var(--gold-text)}
-.bankchip.on > .banklabel::after,.chip.on[aria-pressed] > .chiplabel::after{content:"";position:absolute;left:-2px;right:-2px;bottom:-3px;height:1px;background:var(--gold)}
-/* Off source chips: solid --ink-2, not opacity — opacity composited the
-   fill against the page ground and fell to 3.0:1 (light) / hover 3.18 dark,
-   2.02 light. Fix round 2 item 1. */
-.bankchip[aria-pressed]:not(.on){color:var(--ink-2)}
-.bankchip[aria-pressed]:not(.on):hover{color:var(--gold-text)}
-.bankn{font-size:var(--fs-xs);font-weight:900;padding:var(--s-1) var(--s-3);border-radius:var(--r-lg);
-  background:rgba(0,0,0,.18)}
-.bankchip.on .bankn{background:rgba(0,0,0,.26)}
-.bankchip:not(.on) .bankn{background:rgba(0,0,0,.08)}
-.bankchip.reset{border-style:dashed;opacity:1;text-decoration:none;font-weight:700}
+/* Source filter moved to subject.css 2026-10-22 (step 1b). Only the shared .chip toggle marks stay here: a .chip with aria-pressed is a real on/off toggle;
+   an action chip renders plain. */
+.chip[aria-pressed]::before{content:"";position:absolute;left:var(--s-4);top:50%;width:8px;height:4px;border-left:1px solid var(--neon);border-bottom:1px solid var(--neon);transform:translateY(-65%) rotate(-45deg);display:none}
+.chip.on[aria-pressed]::before{display:block}
+.chip[aria-pressed] > .chiplabel{position:relative}
+.chip[aria-pressed]:not(.on) > .chiplabel::after{content:"";position:absolute;left:-2px;right:-2px;top:55%;height:1px;background:var(--neon)}
+.chip.on[aria-pressed] > .chiplabel::after{content:"";position:absolute;left:-2px;right:-2px;bottom:-3px;height:1px;background:var(--gold)}
 /* Which of the four banks (incl. selfassess) this question came from, on the question itself. */
 /* white again, for the same reason as .bankchip.on — the Greek bank colours are
    dark. This pill sits right beside a question stem, so it is the one to
@@ -96,8 +64,10 @@
 
 .mobile-only{display:none}
 @media(max-width:860px){
-  .rail{position:fixed;left:-238px;z-index:60;transition:left .24s;box-shadow:8px 0 30px rgba(0,0,0,.3)}
-  .rail.open{left:0}
+  /* The drawer's shadow belongs to the open state only: parked at left:-238px it still threw 8px+30px blur
+     into the screen, a grey smear down the left edge in the light theme (measured 2026-10-22). */
+  .rail{position:fixed;left:-238px;z-index:60;transition:left .24s}
+  .rail.open{left:0;box-shadow:8px 0 30px rgba(0,0,0,.3)}
   .mobile-only{display:block}
   .page{padding:var(--s-8) var(--s-7)}
   #saveWarning, #dataWarning{width:calc(100% - 28px)}   /* the page's gutter halves here; the notice follows it */
@@ -146,7 +116,7 @@ body{
   backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
   border:1px solid var(--line-2);box-shadow:0 30px 80px rgba(0,0,0,.6),var(--glow);
 }
-.modal-bg{background:rgba(3,7,14,.66);backdrop-filter:blur(5px)}
+.modal-bg{backdrop-filter:blur(5px)}   /* colour lives in skin.css (--scrim); only the blur stays here */
 .results{background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--line-2)}
 .gate,.splash{background:var(--bg);background-image:inherit}
 
@@ -286,7 +256,6 @@ button.card:active:not(:disabled){border-color:var(--gold)}
   border:1px solid var(--line-2);
   box-shadow:0 30px 80px rgba(23,38,66,.22),var(--glow);
 }
-:root[data-theme="light"] .modal-bg{background:rgba(28,42,66,.38);backdrop-filter:blur(5px)}
 :root[data-theme="light"] .results{background:var(--card)}
 :root[data-theme="light"] .toast{
   /* stays dark — a light toast on a light page has no presence */

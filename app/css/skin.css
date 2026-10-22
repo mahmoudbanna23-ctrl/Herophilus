@@ -609,11 +609,43 @@
   }
 }
 
+/* her lane (step 1b): on a window 1180 px or wider she gets a right gutter of her own, so at ANY scroll
+   position (not just the bottom) the page content ends left of her figure and bubble. Same shape as the
+   left rule above: the centred column's own margin counts toward the gutter. --clep-lane = her measured
+   worst case (391 px wide, 18 px from the edge) plus room for the scrollbar. Below 1180 px the 240 px
+   end reserve above stays the only provision. Layout only; nothing of hers is touched. */
+@media screen and (min-width:1180px){
+  :root{--clep-lane:432px;--page-mw:1180px}
+  :root body[data-view="home"]{--page-mw:936px}
+  :root body:not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]) .page{
+    padding-right:max(var(--s-11), calc(var(--clep-lane) - max(0px, (100vw - var(--page-mw)) / 2)));
+  }
+  /* mock and review dock her bottom-LEFT (clepsydra.js CL_LEFT_VIEWS), so their lane is the left gutter */
+  :root body:is([data-view="mock"],[data-view="review"]):not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]) .page{   /* the :not() chain only matches the rule above in weight */
+    padding-right:var(--s-11);
+    padding-left:max(var(--page-pl), calc(var(--clep-lane) + var(--strip-w) - max(0px, (100vw - var(--page-mw)) / 2)));
+  }
+}
+
+/* her place on a narrow window (step 1b part 3): below 1180 px there is no lane, so she stops riding the
+   viewport. She is pinned to the bottom of the PAGE (body is the containing block, body height = the whole
+   page) and so sits inside the end reserve above, after the last row, at every scroll position. Placement
+   only: her figure, bubble, animation and timing are untouched. Horizontal side stays whatever clepsydra.js
+   and .clep / .clep.left decide (bottom-right, bottom-left on mock/review, her rail clearance); top and
+   bottom are forced because a dragged position writes a viewport top that would float her mid-page. */
+@media screen and (max-width:1179.98px){
+  :root body:not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]){position:relative}
+  :root body:not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]) .clep{
+    position:absolute;top:auto!important;bottom:18px!important;
+  }
+}
+@media screen and (max-width:700px){
+  :root body:not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]) .clep{bottom:12px!important}
+}
+
 /* pills are out: the label above a page title and the source counts are plain text, not
    fully-rounded chips. Class names stay (print.css styles .eyebrow). The old white-on-fill
    colour vanished on the light fill. */
 @media screen{
   :root .eyebrow{background:none!important;border:0;border-radius:0;padding:var(--s-2) 0;color:var(--ink-2)!important}   /* !important: render.js paints most of them with an inline module colour */
-  :root .bankn{background:none;border-radius:0;padding:0}
-  :root .bankchip.on .bankn,:root .bankchip:not(.on) .bankn{background:none}
 }

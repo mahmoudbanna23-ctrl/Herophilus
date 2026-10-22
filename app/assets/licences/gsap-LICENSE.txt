@@ -1,0 +1,18 @@
+GSAP 3.12.5 (gsap.min.js, ScrollTrigger.min.js) - GreenSock Standard "No Charge" License. NOT MIT.
+
+Files: app/vendor/gsap.min.js and app/vendor/ScrollTrigger.min.js, copied unchanged from the
+copies shipped inside https://github.com/codrops/3DStackMotion (js/gsap.min.js, js/ScrollTrigger.min.js).
+
+What the file headers say (copied from the top of gsap.min.js):
+  GSAP 3.12.5 - https://gsap.com
+  @license Copyright 2024, GreenSock. All rights reserved.
+  Subject to the terms at https://gsap.com/standard-license or for Club GSAP members, the
+  agreement issued with that membership.
+  @author: Jack Doyle, jack@greensock.com
+
+The terms live at https://gsap.com/standard-license. GSAP is free to use, including in
+commercial projects, under that licence; it is a proprietary free-use licence, not an open-source
+(MIT) licence, and its text is not reproduced here (not retrieved while building). Read the
+licence at the address above before any change of use.
+
+Used by: the 3D chapter stack at the top of each subject page (app/js/subject-fx.js).

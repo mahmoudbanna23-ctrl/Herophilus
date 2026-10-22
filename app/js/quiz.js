@@ -269,7 +269,11 @@ function explanationHTML(text){
     if(line.startsWith('> ')){flushRun();quote.push(line.slice(2))}
     else{flushQuote();run.push(line)}
   });
-  flushRun();flushQuote();return out;
+  flushRun();flushQuote();
+  // The stored text carries the yellow warning-sign emoji; at render time it becomes the Tabler warning icon
+  // (ui-icons.js). Stored text is untouched. The wrapper keeps it inline (.ui-ico is display:block).
+  if(typeof uiIco==='function')out=out.replace(/⚠️?/g,'<span class="warn-ico">'+uiIco('alert-triangle',16)+'</span>');
+  return out;
 }
 function focusHeader(q){
   return `<header class="focus-header">

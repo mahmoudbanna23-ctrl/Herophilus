@@ -1,0 +1,75 @@
+STEP 1b - SUBJECT PAGE - brief 2026-10-21. Plan: C:\Users\Alfa388\.claude\plans\snoopy-drifting-spring.md (approved).
+Trial copy: D:\claude os\Medical school\Herophilus-redesign, branch redesign/clean-2026-10.
+
+WRITE GRANT (this job only): Herophilus-redesign\app\ (EXCEPT frozen files) and progress\redesign-clean\, plus new
+files under D:\scratch 2026\clean-1b\. No git writes. Never touch D:\claude os\Medical school\Herophilus (live copy).
+FROZEN, never edit: app\data\*, app\js\storage.js, utils.js, theme.js, icons.js, app\js\lib\*, app\css\print.css.
+No new storage key. Theory stays locked. Do not open images (a separate looker does that).
+Banned in anything you add: emoji, pills (fully rounded chips), hover lift, idle pulse, confetti.
+THE CLEPSYDRA MASCOT IS THE OWNER'S OWN ARTWORK: never redraw her, never draw onto her, never change her image
+files or her animation. You may only move where she and her speech bubble sit, or reserve page space for them.
+
+OWNER'S MOTION RULE - "copy, never recreate": every motion is the real published open-licence code, copied as
+published. Only colours, text and size may change - never timing, easing, keyframes, durations or scroll ranges.
+You write NO animation, keyframes, transition timing or easing of your own. If a piece only works with a motion
+change, drop it and report it.
+
+READ FIRST
+- app\js\render.js vModule (~:260-326) - the current subject page. Keep every behaviour and class name:
+  .tb-btn .eyebrow .bankbar .bankchip .banklabel .bankn .filterbar .grouphdr .ch-row .ch-dot .ch-name .ch-count
+  .ch-acc ; calls startChapter(cid), startQuiz(...), toggleBank, clearBanks ; neuropsych's split "Practise all" pair;
+  the note that bank counts sum over the total by design. tools\ui-tasks\tasks.js relies on button.ch-row (flagged page).
+- CSS now serving it: layout.css ~161-162, 222-238; views.css ~38-80, 156-165, 207-210, 333-339; skin.css ~147-150,
+  218, 613-618; components.css ~858. print.css (frozen) hides .filterbar/.tb-btn and styles .eyebrow.
+- Copy sources:
+  * 3D stack: D:\scratch 2026\motion-big\src\3DStackMotion-repo\ (MIT, Codrops). js\gsap.min.js + js\ScrollTrigger.min.js
+    are GSAP 3.12.5; js\lenis.js, js\smoothscroll.js, js\effect-1..3\stackMotionEffect.js, css\. The owner picked the
+    version on D:\scratch 2026\motion-big\fix\base\p01-stack3d.html (its patch list: motion-big\tools\patches.mjs) -
+    find which effect-N that page carries and use that one, verbatim.
+  * Ring: D:\scratch 2026\motion-copied\src\progressbar\progressbar.min.js + LICENSE (progressbar.js 1.1.0, MIT);
+    the exact options in D:\scratch 2026\motion-copied\build.cjs:119-126.
+- Vendoring pattern: progress\redesign-clean\build-fx-vendor.js (copies into app\vendor\, licences to app\assets\licences\).
+
+SCOPE
+1. Subject page layout. Rebuild vModule: subject-tinted header (Newsreader title, counts in tabular numbers),
+   source filter as plain small-radius tags (existing radius tokens), Practise all / Unanswered, group headers,
+   chapter rows on tokens. New file app\css\subject.css, linked in index.html; delete the old rules it replaces
+   (list each deletion in your notes).
+2. Chapter ring. progressbar.js Circle per chapter row showing answered/total, options exactly as build.cjs:119-126
+   (strokeWidth 6, easing 'easeInOut', duration 1400). Only colour (subject tint; trail = a hairline token) and size
+   may change. Reduced motion: bar.set(value), never animate. Vendor to app\vendor\, licence to app\assets\licences\.
+3. 3D stack at the top of the subject page, then the plain list below. Cards = this subject's chapters that have
+   questions, using the demo's card count per stack (if fewer chapters, fewer cards; say how you handled it).
+   A card shows chapter name + done/total; click = startChapter(id). Vendor GSAP + ScrollTrigger 3.12.5, Lenis and
+   the effect file to app\vendor\ (app\js\lib\gsap is 3.15.0 and frozen - do not use or edit it). imagesloaded is
+   dropped (no photos; cards are colour panels). Lenis runs only while a subject page is shown and is destroyed on
+   leaving; every ScrollTrigger/timeline is killed when render() replaces the view. Reduced motion: no stack, list only.
+   Subject pages only - never quiz, results, theory.
+4. M1 / M2 with the browser's own View Transitions, default animation only (no ::view-transition keyframes, no
+   duration/easing written by you): home subject card -> subject header (M1); chapter row -> quiz header (M2), via
+   document.startViewTransition + view-transition-name. No API = plain swap. Reduced motion = plain swap.
+5. Mascot lane. At scroll 0 her bubble covers ENT counts on subject pages and the light-home Eyes card. Give her a
+   lane by layout only: right gutter at >=1180px wide, the existing 240px end reserve below that. Extend
+   progress\redesign-clean\overlap-proof.js to test scroll top, middle and bottom.
+6. Carry-overs: (a) the yellow warning sign in stored explanation text becomes the Tabler warning icon (ui-icons) at
+   render time in explanationHTML (app\js\quiz.js) - stored text untouched; report the count swapped. (b) delete the
+   dead .modal-bg colour rules (views.css ~149, ~289). (c) measure --neu-* token contrast both themes, report numbers.
+7. Licences: add app\assets\licences\ entries for progressbar.js (MIT), 3DStackMotion (MIT), Lenis (its licence),
+   and GSAP (GreenSock standard licence - free use, NOT MIT; say so in the file).
+
+CHECKS - run from the trial root and paste outputs verbatim:
+  node tools\boot-check\boot-check.js        -> 0 console errors, 4 module cards
+  node tools\ui-tasks\tasks.js               -> 7 PASS
+  node tools\ui-tasks\frozen.js 8bd99322     -> 0 mismatches
+  node progress\redesign-clean\check-explanation-render.js app -> 0 empty items, 0 throws
+  overlap-proof.js -> 3 scroll positions x 4 sizes (1440x900, 1180x820, 820x1180, 390x844) x 2 themes, 0 hits
+  leak check (script it): open a subject, start a chapter, back - 5 times; ScrollTrigger.getAll().length and the
+  number of live Lenis instances must stay flat. Paste the numbers.
+Then write D:\scratch 2026\clean-1b\capture-step1b-subject.js (pattern: D:\scratch 2026\clean-strip\capture-strip.js)
+shooting 4 subjects x dark/light x the 4 sizes x (top, mid-stack, list) + one reduced-motion set, with an index txt.
+Run it. Headless Chrome only, never under a path containing "--".
+Append a "step 1b" section to progress\redesign-clean\step1a-notes.md as you go.
+
+BUDGET: close out at 60 tool calls, hand back by 75 even if unfinished. A partial pass reported honestly is a success.
+FINAL MESSAGE (under 250 words): each scope item DONE/NOT with file:line, which effect-N you copied, every file
+vendored, check outputs verbatim, leak numbers, overlap numbers, contrast numbers, capture count, anything not done.

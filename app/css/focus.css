@@ -141,6 +141,7 @@ body:is([data-view="quiz"],[data-view="results"]) :is(button,a,input,textarea,su
 .focus-next-action:hover:not(:disabled) :is(.focus-next-ic,.focus-next-go){color:var(--text-1)}
 .focus-next-action:disabled :is(.focus-next-ic,.focus-next-go){color:var(--disabled)}
 .ui-ico{flex:none;display:block}
+.warn-ico{display:inline-flex;vertical-align:-.2em;color:var(--warn)}   /* the warning sign in explanation text (quiz.js explanationHTML) */
 .focus-next-action small{display:block;font-size:12px;font-weight:400;color:var(--text-3);margin-top:4px}
 .focus-next-action:hover:not(:disabled){border-color:var(--hairline-strong);background:var(--surface-2)}
 .focus-next-action:disabled{color:var(--disabled);background:var(--disabled-bg);cursor:default}

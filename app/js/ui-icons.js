@@ -17,7 +17,8 @@ var UI_ICONS={
   'chevron-left':'<path d="M15 6l-6 6l6 6"/>',
   'chevron-right':'<path d="M9 6l6 6l-6 6"/>',
   'chevron-down':'<path d="M6 9l6 6l6 -6"/>',
-  'chevron-up':'<path d="M6 15l6 -6l6 6"/>'
+  'chevron-up':'<path d="M6 15l6 -6l6 6"/>',
+  'alert-triangle':'<path d="M12 9v4"/><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0"/><path d="M12 16h.01"/>'
 };
 function uiIco(name,size){
   var s=size||18, body=UI_ICONS[name]||"";

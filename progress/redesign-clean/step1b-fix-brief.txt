@@ -1,0 +1,48 @@
+STEP 1b FIX - subject page deck layout - brief 2026-10-22. Parent brief: progress\redesign-clean\step1b-brief.txt
+(its WRITE GRANT, FROZEN list, mascot rule, motion rule and banned list ALL still bind - read lines 1-15 of it first).
+Trial copy: D:\claude os\Medical school\Herophilus-redesign, branch redesign/clean-2026-10. No git writes.
+
+Refuter verdict on parts 1-3: PASS, nothing must-fix. Looker report: D:\scratch 2026\clean-1b\looker-report.md
+(read it - it names the shots). You may NOT open images yourself; measure with headless Chrome (getBoundingClientRect,
+scrollWidth, computed style) instead. Builder notes so far: step1a-notes.md sections "step 1b part 1/2/3".
+
+MOTION RULE REMINDER: you may change layout, size, colour, text, and which screens get the stack. You may NOT change
+timing, easing, durations, keyframes, ScrollTrigger start/end/scrub, or anything inside app\vendor\stack-motion.js.
+If a fix only works by changing one of those, do not do it - report it.
+
+FIX
+1. Deck cropped right and bottom (1440, 1180, 820): cards hit the content column edge / an overflow clip and sit
+   off-centre. Find the clipping ancestor (overflow hidden/clip, contain, width) and give the stack the room the demo
+   gives it (the demo's stack is full-bleed; compare D:\scratch 2026\motion-big\src\3DStackMotion-repo\css\ and its
+   index html). Centre the deck. Card size may change so the whole card fits the viewport at each size.
+2. Card title clipped by the next card (1440, 1180, 820): place the name/count where the demo's card shows its own
+   content so the visible strip of each card shows the chapter name. Size/position only.
+3. Narrow screens (<= 700px wide, so 390x844): the deck collapses to an unreadable ribbon. Do not show the stack there -
+   list only, same path as reduced motion (no GSAP/Lenis started). Leak counts at 390 must then be 0.
+4. Big empty gap below the buttons at scroll 0 (450-850px) on every motion top shot, and ~170px gap stack->list at
+   820/390. Diagnose: is it the demo's own pin spacer / intro height (motion structure) or our CSS (margins, min-height,
+   100vh wrappers)? Remove ours. If the gap is the demo's own scroll range, leave it and say so in your notes with the
+   measured number. Option allowed: put the plain list's header + first rows ABOVE the deck is NOT allowed (owner ruled
+   "Top, then list").
+5. Light theme 390: grey shadow smear down the left edge (m-neuro-light-390x844-top.png). Find which shadow (likely a
+   --neu-* or card box-shadow bleeding past the gutter) and contain it.
+6. 820x1180 list shot: top-right icon cluster sits on the "EAR" group header line - give the header clearance.
+7. Minor, do if cheap: "Unanswered" button border fades/bleeds on the right; button row orphans "Unanswered" at 1180
+   (keep the pair together); subject title icon below the title baseline; row counts not right-aligned.
+
+THEN
+- Extend D:\scratch 2026\clean-1b\capture-step1b-subject.js: add an "end" scroll position (page bottom, so the narrow
+  mascot spot is visible) and seed progress so some rings show non-zero arcs (seed through the app's own state in the
+  page, never a new storage key and never edit app\data). Re-run it; update the index.
+- Re-run and paste verbatim: node tools\boot-check\boot-check.js ; node tools\ui-tasks\tasks.js ;
+  node tools\ui-tasks\frozen.js 8bd99322 ; node progress\redesign-clean\check-explanation-render.js app ;
+  node progress\redesign-clean\overlap-proof.js (plain and MOTION=1) ; the leak check (5 loops, 1440 and 390).
+- Measured proof per fix: for 1-2, every card rect inside the viewport and title rect not covered (elementFromPoint at
+  the title's centre returns the title or its card) at mid-stack for 1440/1180/820 x both themes; for 4, the gap px
+  before/after; for 5, the shadow source and its new extent.
+- Append section "step 1b fix" to progress\redesign-clean\step1a-notes.md as you go.
+Headless Chrome only, never under a path containing "--".
+
+BUDGET: close out at 50 tool calls, hand back by 60 even if unfinished. A partial pass reported honestly is a success.
+FINAL MESSAGE (under 250 words): each fix DONE/NOT/LEFT-AS-DEMO with file:line and the measured number, check outputs
+verbatim, leak numbers, capture count, anything left.

@@ -17,7 +17,10 @@ function go(v){
    (revealOnScroll) and the Clepsydra stays quiet (clepsydra.js). Everything else is a browse screen. */
 const STILL_VIEWS=['quiz','results','mock','review','theory'];
 
-function render(){
+/* render() runs through SubjFx.vt (js/subject-fx.js): when a home subject card or a subject chapter row was just clicked and the browser has View Transitions, the swap is wrapped in the browser's own default transition; otherwise it is the plain swap. */
+function render(){if(SubjFx.vt(renderNow))return;renderNow()}
+function renderNow(){
+  SubjFx.destroy();
   /* Imports, snapshots and cloud merges can replace S without entering a
      profile again. Reconcile here before any page reads its question pool. */
   if(me){
@@ -45,6 +48,7 @@ function render(){
   if(emptyCourse)vEmptyTerm(p);
   else ({home:vHome,module:vModule,quiz:vQuiz,results:vResults,review:vReview,schedule:vSchedule,theory:vTheory,
     moved:vMoved,flagged:vFlagged,mock:vMock,session:vSession,weak:vWeak}[view.name]||vHome)(p);
+  if(view.name==='module'&&!emptyCourse)SubjFx.init(p);
   if((view.name==='home'||view.name==='mock')&&hasSavedMock()){
     p.insertAdjacentHTML('afterbegin','<p><button class="btn sec" onclick="offerMockResume()">Open saved mock exam</button></p>');
   }
@@ -64,7 +68,7 @@ function revealOnScroll(root){
   if(_revealObs){_revealObs.disconnect();_revealObs=null}
   if(STILL_VIEWS.includes(view.name)) return;
   if(matchMedia('(prefers-reduced-motion:reduce)').matches) return;
-  const items=root.querySelectorAll('.card,.stat,.ch-row,.th-ch,.day');
+  const items=root.querySelectorAll('.card:not(.sk-card),.stat,.ch-row,.th-ch,.day');
   if(!items.length||!('IntersectionObserver' in window)) return;
   _revealObs=new IntersectionObserver((entries,obs)=>{
     entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)} });
@@ -257,14 +261,20 @@ function vHome(p){
 }
 
 /* ============ MODULE ============ */
+/* Subject page (step 1b, 2026-10-22). Order: tinted header, source tags, Practise buttons, then the 3D stack
+   of this subject's chapters (js/subject-fx.js; absent under reduced motion), then the plain list with a
+   progress ring per row. Class names of the old page are kept: print.css, tasks.js and boot-check use them. */
 function vModule(p){
   const m=moduleOf(view.id);
   const qs=qsInModule(m.id);
   const a=accuracy(qs);
-  let h=`<button class="tb-btn" style="padding-left:0;margin-bottom:8px" onclick="go({name:'home'})">← Dashboard</button>
-  <div class="eyebrow" style="background:${m.hex}">${m.name}</div>
-  <h1>${ico(m.icon,26)} ${m.name}</h1>
-  <p class="page-sub">${qs.length} question${qs.length===1?'':'s'} · ${qs.filter(q=>isAnswered(q.id)).length} answered${a!==null?` · <b style="color:${accColor(a)}">${a}% accuracy</b>`:''}</p>`;
+  let h=`<div class="subj" style="--sj:${m.hex}">
+  <button class="tb-btn" style="padding-left:0;margin-bottom:8px" onclick="go({name:'home'})">← Dashboard</button>
+  <header class="subj-head">
+    <div class="eyebrow">Subject</div>
+    <h1>${ico(m.icon,26)} ${m.name}</h1>
+    <p class="page-sub subj-counts"><b>${qs.length}</b> question${qs.length===1?'':'s'} · <b>${qs.filter(q=>isAnswered(q.id)).length}</b> answered${a!==null?` · <b style="color:${accColor(a)}">${a}% accuracy</b>`:''}</p>
+  </header>`;
 
   /* Source filter. Only rendered for banks this module actually has questions
      from, so an empty module does not offer four dead toggles. */
@@ -276,7 +286,7 @@ function vModule(p){
     h+=`<div class="bankbar">
       <span class="bank-lbl">Source</span>
       ${present.map(b=>{
-        /* A shared question counts for EVERY bank it is in, so these chips can
+        /* A shared question counts for EVERY bank it is in, so these tags can
            sum to more than the module's question count. That is the honest
            reading — the question really is in both banks — and it is the
            user's choice (2026-08-03). Do not "fix" it by counting origins. */
@@ -306,22 +316,41 @@ function vModule(p){
     </div>`;
   }
 
+  /* Rows first as data: the stack and the list read the same numbers. */
+  const rows=[];
+  m.groups.forEach(g=>g.chapters.forEach(([cid,cname])=>{
+    const cq=qsIn(cid);
+    rows.push({cid,cname,cq,ca:accuracy(cq),cd:cq.filter(q=>isAnswered(q.id)).length});
+  }));
+
+  /* 3D stack: this subject's chapters that have questions, one card each, the demo's 27 cards at most.
+     Subjects with fewer chapters get fewer cards; beyond 27 the first 27 in course order are used and
+     the list below still holds every chapter. Decorative duplicate of the list, so it is hidden from
+     assistive tech and the tab order. */
+  const stackRows=rows.filter(r=>r.cq.length).slice(0,SubjFx.CARDS);
+  if(stackRows.length&&SubjFx.stackOn()){
+    h+=`<section class="subj-stack" aria-hidden="true"><div class="wrap"><div data-stack-1 class="wrap__inner"><div class="content content--1">
+      ${stackRows.map(r=>`<button class="card sk-card" tabindex="-1" onclick="startChapter('${r.cid}')"><span class="sk-name">${r.cname}</span><span class="sk-n">${r.cd}/${r.cq.length}</span></button>`).join('')}
+    </div></div></div></section>`;
+  }
+
+  let gi=0;
   m.groups.forEach(g=>{
     h+=`<div class="grouphdr">${g.name}</div>`;
     g.chapters.forEach(([cid,cname])=>{
-      const cq=qsIn(cid);
-      const ca=accuracy(cq);
-      const cd=cq.filter(q=>isAnswered(q.id)).length;
-      const dot=cq.length?(ca===null?'#fff':accColor(ca)):'transparent';
+      const r=rows[gi++];
+      const cq=r.cq,ca=r.ca,cd=r.cd;
       const resume=(S.resumeByChapter||{})[cid];
+      /* .ch-dot is now the ring's host (progressbar.js Circle, drawn by SubjFx.init); data-v is the answered share. */
       h+=`<button class="ch-row" ${cq.length?'':'disabled'} onclick="startChapter('${cid}')">
-        <span class="ch-dot" style="background:${dot}"></span>
+        <span class="ch-dot" ${cq.length?`data-v="${cd/cq.length}" data-c="${m.hex}"`:''}></span>
         <span class="ch-name">${cname}${resume?` &middot; ${resume.finished?'Restart':'Continue'}`:''}</span>
         <span class="ch-count">${cq.length?`${cd}/${cq.length}`:'no questions yet'}</span>
         <span class="ch-acc" style="color:${accColor(ca)}">${ca===null?'':ca+'%'}</span>
       </button>`;
     });
   });
+  h+=`</div>`;
   p.innerHTML=h;
 }
 
