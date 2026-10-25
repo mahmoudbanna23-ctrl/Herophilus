@@ -55,7 +55,7 @@ Rules: never edit the live Herophilus folder, no merge, no upload without owner 
 --force; do not commit tools/city-film or tools/kaggle (unrelated, untracked).
 Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before dispatch.
 
-## App background - state 2026-10-25 (scratch only, nothing in the trial app or git)
+## App background - state 2026-10-25 (lean-in now in the trial app; not merged, not uploaded)
 - Owner ruled on the step 1b iPad portrait question: KEEP the deck there.
 - Fourteen idle full-screen wallpapers rejected (list: bg-codex-consult-prompt.md "Already tried").
 - Research pick 2026-10-23, plan bg-plan-mix-2026-10-23.md: calm grain ground everywhere + one Paper Shaders
@@ -74,6 +74,16 @@ Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before d
   3832x1642, Dolly (MIT, commit 380edf6) unchanged - painting `zoom` (default 1.12), heading `fly`, cards
   `tilt-up` + stagger. Refuter round 2 PASS: cards opacity 1 at scene end, card text >=5.89, heading >=12.86,
   0 errors, no added motion. Four films sent to owner.
-- OPEN: owner verdict on the films · stronger push needs `--dolly-zoom` (scale = owner call, not yet asked)
+- 2026-10-25 owner: films "fine" but light and dark looked the same -> picked a DAYTIME plate for light theme.
+  Codex gpt-image edit of the night plate, v2 approved as is (D:\scratch 2026\lean-in\plate\day\, looker-v1/v2.md),
+  EDSR 2x 3072x1316. Light ink #1c130b + pale heading wash (r 2svh) + label tag (r 6px): builder addition, owner
+  KEPT them. Theme switch = browser default View Transition between plates (owner asked "light the candle");
+  lamp-first timing / flicker declined (copy rule, idle pulse). Refuter r3 (refute\r3\verdict.md): A-E PASS.
+  Fade cannot be filmed (screencast stalls ~300 ms at the swap); measured live instead (~7 frames, luma 131->35),
+  owner watched it: "it works, put it in the trial app".
+- 2026-10-25 PORTED to the trial app (scene, both plates, Dolly, fade). theme.js is FROZEN, so the fade wraps
+  toggleTheme in js/theme-fade.js instead of editing theme.js (scratch copy still edits theme.js). Checks: boot
+  0 errors · ui-tasks 7 PASS · frozen 0. Refuter r4: D:\scratch 2026\lean-in\refute\r4\verdict.md.
+- OPEN: stronger push needs `--dolly-zoom` (scale = owner call, not yet asked)
   · card block starts y 8-10% (brief said 15%) · returning profiles now see stats after the scene ·
-  55 leftover hlean-* test copies (5.7 GB) in the user temp folder, deletion was denied - owner to clear.
+  49 leftover hlean-* test copies in the user temp folder, deletion was denied - owner to clear.

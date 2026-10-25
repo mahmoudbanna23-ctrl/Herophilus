@@ -68,7 +68,7 @@ function revealOnScroll(root){
   if(_revealObs){_revealObs.disconnect();_revealObs=null}
   if(STILL_VIEWS.includes(view.name)) return;
   if(matchMedia('(prefers-reduced-motion:reduce)').matches) return;
-  const items=root.querySelectorAll('.card:not(.sk-card),.stat,.ch-row,.th-ch,.day');
+  const items=root.querySelectorAll('.card:not(.sk-card):not([data-dolly]),.stat,.ch-row,.th-ch,.day');
   if(!items.length||!('IntersectionObserver' in window)) return;
   _revealObs=new IntersectionObserver((entries,obs)=>{
     entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target)} });
@@ -168,6 +168,8 @@ function vHome(p){
     :`<h1>Where you stand</h1>
       <p class="page-sub">${total} questions loaded. Work through them by chapter, by module, or build a custom set.</p>`;
 
+  /* lean-in: the heading block ends here; everything else in h goes after the scene. */
+  const headHTML=h;h="";
   if(!fresh){
     h+=`<div class="grid g4" style="margin-bottom:30px">
     <div class="stat"><span class="emo">${ico('stylus',20)}</span><div class="n">${done}<span style="font-size:15px;color:var(--ink-4)">/${total}</span></div><div class="l">Answered</div></div>
@@ -213,7 +215,7 @@ function vHome(p){
     </div>
   </section>`;
 
-  let modsHTML=`<h2>${fresh?'Subjects':'Modules'}</h2><div class="grid g3 mod-grid">`;
+  let modsHTML=`<h2 class="lean-h2">${fresh?'Subjects':'Modules'}</h2><div class="grid g3 mod-grid" data-dolly-stagger>`;
   activeModules().forEach(m=>{
     const qs=qsInModule(m.id);
     const d=qs.filter(q=>isAnswered(q.id)).length;
@@ -224,7 +226,7 @@ function vHome(p){
        as an app that only covers two subjects — but shows no counts and no
        progress ring, because both would be zero and a zero reads as broken. */
     if(isLocked(m.id)){
-      modsHTML+=`<div class="card mod-card locked" style="--c:${m.color}" aria-disabled="true">
+      modsHTML+=`<div class="card mod-card locked" data-dolly="tilt-up" style="--c:${m.color}" aria-disabled="true">
         ${(m.art||MOD_ART[m.id])?`<span class="mod-art" style="--art:url('../assets/${m.art||MOD_ART[m.id]}.jpg')"></span>`:''}
         <span class="soon">Coming soon</span>
         <div class="mod-info">
@@ -245,7 +247,7 @@ function vHome(p){
       :`<div class="ringrow">${ring(pct,m.hex)}
           <div class="ringmeta"><div class="a" style="color:${accColor(a)}">${a===null?'—':a+'%'}</div>
           <div class="b">${d}/${qs.length} answered</div></div></div>`;
-    modsHTML+=`<button class="card mod-card" style="--c:${m.color}" onclick="go({name:'module',id:'${m.id}'})">
+    modsHTML+=`<button class="card mod-card" data-dolly="tilt-up" style="--c:${m.color}" onclick="go({name:'module',id:'${m.id}'})">
       ${(m.art||MOD_ART[m.id])?`<span class="mod-art" style="--art:url('../assets/${m.art||MOD_ART[m.id]}.jpg')"></span>`:''}
       <div class="mod-info">
         <div class="mod-top"><span class="mod-ic">${ico(m.icon,25)}</span><span class="mod-name">${m.name}</span></div>
@@ -256,8 +258,19 @@ function vHome(p){
   });
   modsHTML+=`</div>`;
 
-  h+=todayHTML+heroHTML+modsHTML;
-  p.innerHTML=h;
+  /* lean-in: Dolly scene = pinned painting (zoom), heading (fly), cards (tilt-up); the rest of the dashboard follows the scene. */
+  const plate="assets/lean/painted-codex-3@2x",plateDay="assets/lean/painted-day-v2@2x"; /* night plate (dark) and day plate (light); lean.css shows one, hides the other */
+  const lightNow=document.documentElement.getAttribute("data-theme")==="light",lzNight=lightNow?' loading="lazy"':"",lzDay=lightNow?"":' loading="lazy"'; /* only a loading hint for the plate not showing now; a later theme switch still works (lazy loads when shown) */
+  p.innerHTML=`<div class="lean" data-dolly-scene>
+    <div class="lean-pin" data-dolly-pin>
+      <div class="lean-plate" data-dolly="zoom" data-dolly-on="scene"><picture class="plate-night"><source type="image/webp" srcset="${plate}.webp"><img src="${plate}.png" alt="" width="3832" height="1642" decoding="async"${lzNight}></picture><picture class="plate-day"><source type="image/webp" srcset="${plateDay}.webp"><img src="${plateDay}.png" alt="" width="3072" height="1316" decoding="async"${lzDay}></picture></div>
+    </div>
+    <div class="lean-copy">
+      <div class="lean-head" data-dolly-space><div class="lean-head-in" data-dolly="fly"><div class="lean-head-txt">${headHTML}</div></div></div>
+      <div class="lean-cards">${modsHTML}</div>
+    </div>
+  </div>
+  <div class="lean-after">${h}${todayHTML}${heroHTML}</div>`;
 }
 
 /* ============ MODULE ============ */

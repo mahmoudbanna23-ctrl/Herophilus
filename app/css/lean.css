@@ -1,0 +1,95 @@
+/* lean-in (scratch test). LAYOUT AND COLOUR ONLY.
+   Every bit of motion on the home page comes from vendor/dolly/dolly.css (MIT, byte-for-byte copy),
+   switched on by data-dolly attributes in js/render.js. This file sets no animation, transition,
+   keyframes, timeline, range, easing or scale amount, and overrides none of Dolly's. */
+
+@media screen {
+  /* Home only: the painting runs edge to edge, so the page's own padding moves onto the inner blocks. */
+  body[data-view="home"] .page { max-width: none !important; padding: 0 !important; }
+}
+
+:root { --lean-ink: #f4ead8; --lean-top: 0px; --lean-left: calc(var(--strip-w, 52px) + max(16px, 2%)); }
+
+/* Scene: one grid cell holds both the pinned painting and the copy that scrolls over it.
+   The cell is as tall as Dolly's track (its own min-height); the pin sticks inside it. */
+.lean { display: grid; margin-top: calc(-1 * var(--lean-top)); }
+.lean-pin, .lean-copy { grid-area: 1 / 1; min-width: 0; }
+
+/* The painting. Origin left of the desk (focal papyrus x 62% y 62%) so the dark left wall stays on screen.
+   Which part of the image shows is a positioning choice only. */
+.lean-plate {
+  position: relative; width: 100%; height: 100svh; align-self: start;
+  transform-origin: var(--lean-ox, 18%) var(--lean-oy, 62%);
+  background: #0b0705;
+}
+.lean-plate picture { display: contents; }
+/* Two plates, one per theme: night (dark), day (light). The hidden one is display:none, so it is not drawn. */
+.lean-plate .plate-day { display: none; }
+:root[data-theme="light"] .lean-plate .plate-night { display: none; }
+:root[data-theme="light"] .lean-plate .plate-day { display: contents; }
+.lean-plate img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: var(--lean-px-img, 10%) 50%;
+}
+
+.lean-copy { position: relative; z-index: 1; display: flex; flex-direction: column; }
+
+/* Heading: dark left wall, x 3-42%, y 18-52% of the first screen. */
+.lean-head { height: 100svh; box-sizing: border-box; padding: 18svh 0 0 var(--lean-left); }
+.lean-head-in { max-width: min(39%, 36rem); min-height: 34svh; } /* box y 18-52%: where the fly move starts it in the hold phase, not faded */
+:root[data-theme] body[data-view="home"] .lean-head-in .eyebrow { color: var(--lean-ink) !important; }
+:root[data-theme] body[data-view="home"] .lean-head-in h1,
+:root[data-theme] body[data-view="home"] .lean-head-in .page-sub { color: var(--lean-ink); }
+/* the Subjects label sits on the painting only while the pinned scene runs; otherwise it is on the plain ground and keeps its token colour.
+   (same two conditions Dolly itself uses to switch the scene off) */
+@supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) {
+  :root .lean-cards .lean-h2 { color: var(--lean-ink); }
+  :root .lean-cards { margin-bottom: 46svh; } /* runway: the cards sit high enough that the last one has finished arriving at the end of the scene */
+} }
+:root .lean-head-in h1 { margin-bottom: 10px; font-size: clamp(1.9rem, 3.1vw, 3rem); }
+:root .lean-head-in .page-sub { font-size: clamp(1rem, 1.3vw, 1.25rem); }
+:root .lean-head-in .eyebrow { font-size: clamp(.8rem, 1vw, .95rem); }
+
+/* Cards: left wall area, x 2-44%, y 15-75% of the final screen. */
+.lean-cards { margin: auto 0 var(--s-11, 28px) var(--lean-left); width: calc(51% - var(--lean-left)); } /* wide enough that ophthalmology / neuropsychiatry fit on one line at 1180 */
+.lean-cards .lean-h2 { margin-top: 0; }
+.lean-cards .mod-art { aspect-ratio: 6 / 1; } /* size only: four cards must fit above the runway */
+.lean-cards .mod-card .startrow { min-height: 36px; }
+
+/* The rest of the dashboard follows the scene on the plain ground. */
+.lean-after {
+  max-width: 936px; margin: 0 auto; box-sizing: border-box;
+  padding: var(--s-11, 28px) var(--s-11, 28px) var(--clep-reserve, 240px) var(--page-pl, 68px);
+}
+@media screen and (min-width: 1180px) {
+  .lean-after { padding-right: max(var(--s-11, 28px), calc(432px - max(0px, (100vw - 936px) / 2))); }
+}
+
+/* Narrow or tall windows: the cards use the whole width (they are opaque, the painting shows around them). */
+@media (max-aspect-ratio: 1/1), (max-width: 900px) {
+  .lean { --lean-px-img: 30%; }
+  .lean-head-in { max-width: 80%; }
+  .lean-cards { width: auto; margin-right: max(2%, 16px); }
+}
+@media print { .lean-pin { display: none; } }
+
+/* Light theme: the icon's colour glow (0 8px 22px) spills under the "chapters / questions" line and takes it to 2.65:1.
+   Keep the ring, drop the glow, inside the lean cards only. */
+:root[data-theme="light"] .lean-cards .mod-ic { box-shadow: 0 0 0 1px rgba(16, 27, 45, .08); }
+
+/* Light theme: text on the day plate turns dark warm brown (dark theme keeps --lean-ink cream).
+   The plaster is not light enough everywhere (portrait: darkest pixel under the heading is lum 0.25), so the heading gets a
+   soft pale wash behind its text block (feathered box-shadow, static) and the Subjects label a pale tag, because it travels up
+   across the dark floor at the bottom of the painting before it reaches the wall. */
+:root[data-theme="light"] { --lean-ink-day: #1c130b; --lean-wash: rgba(247, 239, 224, .66); }
+:root[data-theme="light"] body[data-view="home"] .lean-head-in .eyebrow { color: var(--lean-ink-day) !important; }
+:root[data-theme="light"] body[data-view="home"] .lean-head-in h1,
+:root[data-theme="light"] body[data-view="home"] .lean-head-in .page-sub { color: var(--lean-ink-day); }
+.lean-head-txt { /* plain wrapper; only the light theme gives it a look */ }
+:root[data-theme="light"] .lean-head-txt {
+  width: fit-content; max-width: 100%; box-sizing: border-box; padding: 1.2svh 1.8svh; margin: -1.2svh -1.8svh;
+  background: var(--lean-wash); border-radius: 2svh; box-shadow: 0 0 4svh 2.5svh var(--lean-wash);
+}
+@supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) {
+  :root[data-theme="light"] .lean-cards .lean-h2 { color: var(--lean-ink-day); background: rgba(247, 239, 224, .94); width: fit-content; padding: 4px 12px; border-radius: 6px; }
+} }

@@ -1,0 +1,5 @@
+Dolly - CSS scroll camera moves
+Repo: https://github.com/eakbulut/dolly  (commit 380edf6869e625b5cb043c69010f28038aadb0d8, fetched 2026-10-25)
+Files: src/dolly.css (30356 bytes), LICENSE (1070 bytes) - unchanged
+Licence: MIT, Copyright (c) 2026 Erkan Akbulut
+Rule: copied unchanged; only colours, text, sizes and our own images may differ.
