@@ -54,3 +54,21 @@ Next — steps 2-5 per plan.
 Rules: never edit the live Herophilus folder, no merge, no upload without owner yes; push this branch freely, never
 --force; do not commit tools/city-film or tools/kaggle (unrelated, untracked).
 Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before dispatch.
+
+## App background - state 2026-10-25 (scratch only, nothing in the trial app or git)
+- Owner ruled on the step 1b iPad portrait question: KEEP the deck there.
+- Fourteen idle full-screen wallpapers rejected (list: bg-codex-consult-prompt.md "Already tried").
+- Research pick 2026-10-23, plan bg-plan-mix-2026-10-23.md: calm grain ground everywhere + one Paper Shaders
+  scene at home top (nerves / liquid) + mouse-animations Flashlight cursor light. Built in
+  D:\scratch 2026\clean-glow7\app-mix (licences\, notes.md, code\, results\). 8 films rec\mix-*.mp4, the four
+  1440 ones sent. Checks: 0 console errors, stopped states pass, light contrast 4.60, dark >=5.84.
+  Flag: the static CSS mask over the Flashlight edge goes past "colour only". Owner verdict: "not there yet".
+- Codex consult (gpt-6-astra, read-only): bg-codex-consult-answer.md. Diagnosis: the painted world is the
+  missing piece, shaders read as tech/electricity, painting shrunk to an inset, Clepsydra reads as chat mascot.
+- OWNER PICK 2026-10-25: "The journey" - home opens on a wide view of his painted world; scrolling carries you
+  past a foreground edge into the room where the subjects are; the heading belongs to the opening view;
+  reading views bypass it. The mix (clean-glow7) is superseded.
+- NEXT (fresh chat, plan mode): locate the owner's painted plate and any layers (painted-codex-3.png per
+  MEMORY - path in this repo not yet found); researcher finds an open-licence scroll-scene piece to copy
+  unchanged (Codex named basicScroll, Parallax.js, PixiJS, Motion - all unverified for the copy rule; reject
+  scroll hijack or anything needing retiming); then builder in scratch, films, looker + refuter, owner pick.
