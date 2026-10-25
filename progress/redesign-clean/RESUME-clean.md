@@ -68,7 +68,12 @@ Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before d
 - OWNER PICK 2026-10-25: "The journey" - home opens on a wide view of his painted world; scrolling carries you
   past a foreground edge into the room where the subjects are; the heading belongs to the opening view;
   reading views bypass it. The mix (clean-glow7) is superseded.
-- NEXT (fresh chat, plan mode): locate the owner's painted plate and any layers (painted-codex-3.png per
-  MEMORY - path in this repo not yet found); researcher finds an open-licence scroll-scene piece to copy
-  unchanged (Codex named basicScroll, Parallax.js, PixiJS, Motion - all unverified for the copy rule; reject
-  scroll hijack or anything needing retiming); then builder in scratch, films, looker + refuter, owner pick.
+- 2026-10-25: plate has NO layers and is a desk close-up, not a wide world; owner picked "lean in" (keep
+  painted-codex-3, scroll pushes toward the desk) over a new doorway painting. Findings, licences, upscale:
+  bg-journey-notes-2026-10-25.md. Built in D:\scratch 2026\lean-in (notes.md there): EDSR 2x plate
+  3832x1642, Dolly (MIT, commit 380edf6) unchanged - painting `zoom` (default 1.12), heading `fly`, cards
+  `tilt-up` + stagger. Refuter round 2 PASS: cards opacity 1 at scene end, card text >=5.89, heading >=12.86,
+  0 errors, no added motion. Four films sent to owner.
+- OPEN: owner verdict on the films · stronger push needs `--dolly-zoom` (scale = owner call, not yet asked)
+  · card block starts y 8-10% (brief said 15%) · returning profiles now see stats after the scene ·
+  55 leftover hlean-* test copies (5.7 GB) in the user temp folder, deletion was denied - owner to clear.
