@@ -84,6 +84,12 @@ Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before d
 - 2026-10-25 PORTED to the trial app (scene, both plates, Dolly, fade). theme.js is FROZEN, so the fade wraps
   toggleTheme in js/theme-fade.js instead of editing theme.js (scratch copy still edits theme.js). Checks: boot
   0 errors · ui-tasks 7 PASS · frozen 0. Refuter r4: D:\scratch 2026\lean-in\refute\r4\verdict.md.
-- OPEN: stronger push needs `--dolly-zoom` (scale = owner call, not yet asked)
-  · card block starts y 8-10% (brief said 15%) · returning profiles now see stats after the scene ·
+- 2026-10-26 PORTED: deeper push (`--dolly-zoom: 1.3`, owner "push in deeper") + "painting melts into page"
+  (owner pick): home ground + panels from the plates, lean.css only. Dark: ground #0b0707, panels #1d1411.
+  Light: owner ruled CREAM (not the dark day floor): painting fades straight to #e2cdaf (90th pct day plaster),
+  panels #eddfc4; brass Continue; hero stripe brass; stat numbers re-picked. Min text contrast 4.82. Detail:
+  D:\scratch 2026\lean-in\notes.md "Melt*"; lookers looker-melt*.md (r3 GOOD); refuter refute\r5\verdict.md PASS.
+  Owner saw films rec\melt-*.mp4, said yes. Left as is (not asked): subject cards over the painting stay
+  white/navy, mascot bubble navy in dark; 820 day plate floor reads a little dark (painting's own).
+- OPEN: card block starts y 8-10% (brief said 15%) · returning profiles now see stats after the scene ·
   49 leftover hlean-* test copies in the user temp folder, deletion was denied - owner to clear.

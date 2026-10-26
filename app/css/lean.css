@@ -1,7 +1,7 @@
 /* lean-in (scratch test). LAYOUT AND COLOUR ONLY.
    Every bit of motion on the home page comes from vendor/dolly/dolly.css (MIT, byte-for-byte copy),
    switched on by data-dolly attributes in js/render.js. This file sets no animation, transition,
-   keyframes, timeline, range, easing or scale amount, and overrides none of Dolly's. */
+   keyframes, timeline, range or easing, and overrides none of Dolly's. The one size it sets is the push depth (--dolly-zoom). */
 
 @media screen {
   /* Home only: the painting runs edge to edge, so the page's own padding moves onto the inner blocks. */
@@ -20,6 +20,7 @@
 .lean-plate {
   position: relative; width: 100%; height: 100svh; align-self: start;
   transform-origin: var(--lean-ox, 18%) var(--lean-oy, 62%);
+  --dolly-zoom: 1.3; /* owner 2026-10-25: push in deeper. Dolly's own documented size knob (default 1.12); timing and easing untouched */
   background: #0b0705;
 }
 .lean-plate picture { display: contents; }
@@ -93,3 +94,115 @@
 @supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) {
   :root[data-theme="light"] .lean-cards .lean-h2 { color: var(--lean-ink-day); background: rgba(247, 239, 224, .94); width: fit-content; padding: 4px 12px; border-radius: 6px; }
 } }
+
+/* ===== Melt 2026-10-26: the painting melts into the page. COLOUR AND LAYOUT ONLY (no motion of any kind). =====
+   Home only. Ground = median RGB of the bottom 6% rows of each plate, measured with code/ground.py:
+   night plate (painted-codex-3@2x.png) #0b0707, day plate (painted-day-v2@2x.png) #271a13 (its floor is dark, not cream).
+   Dark theme: ground = floor. Light theme (owner 2026-10-26, cream page; r3: no dark stop): cream of the day plate's lit plaster wall fades in over the
+   painting (35svh). See the light block below for the measured value.
+   Brass = median of the saturated amber pixels (hue 28-48, S>.5, V>.55) of the night plate, code/brass.py. */
+:root {
+  --lean-ground: #0b0707;
+  --lean-floor: #0b0707;   /* colour the painting ends in; the page ground below the fade */
+  --lean-fade: 0px;        /* extra fade from floor to ground, below the melt (light theme only) */
+  --lean-brass-text: #e68f3f;
+  --lean-panel: #1d1411;   /* dark warm wood, a little lighter than the ground */
+  --lean-line: #4a3828;    /* warm hairline */
+  --lean-ink-2: #cdbea4;   /* secondary text (--lean-ink, the cream, is defined above) */
+  --lean-ok: #8ce99a; --lean-warn: #ffe066; --lean-bad: #ffa8a8;  /* the dark theme's own status colours, light twins for the panel */
+  --lean-brass: #e68f3f;
+  --lean-on-brass: #1a1008;
+  --lean-melt: 25svh;      /* depth of the fade; inside the 46svh runway under the cards */
+  --lean-melt-grad: linear-gradient(to bottom,
+    color-mix(in srgb, var(--lean-floor) 0%, transparent) 0%,
+    color-mix(in srgb, var(--lean-floor) 10%, transparent) 20%,
+    color-mix(in srgb, var(--lean-floor) 35%, transparent) 40%,
+    color-mix(in srgb, var(--lean-floor) 65%, transparent) 60%,
+    color-mix(in srgb, var(--lean-floor) 90%, transparent) 80%,
+    var(--lean-floor) 100%);
+}
+:root[data-theme="light"] {
+  /* r3 2026-10-26: no dark stop. The overlay is the cream itself, transparent at the top, so the painting is never tinted dark.
+     Cream = 90th percentile (by luminance) of the day plate's bright low-saturation warm wall pixels (V>.75, S .08-.30, H 20-50, n=37863), code/cream3.py = #e2cdaf. */
+  --lean-ground: #e2cdaf; --lean-floor: #e2cdaf; --lean-fade: 0px; --lean-melt: 35svh;
+  --lean-panel: #eddfc4;   /* parchment, a step lighter and warmer than the plaster */
+  --lean-line: #b89c72;    /* warm tan hairline */
+  --lean-ink: #1c130b; --lean-ink-2: #4f3b26;
+  --lean-brass-text: #7f4d0c;
+  --lean-ok: #1d5c2a; --lean-warn: #7a3f00; --lean-bad: #a01f1f;
+  /* 35svh box. The painting's last ~22svh is its dark floor, so the cream must be opaque by 21svh (smoothstep, 3svh stops) and stay opaque to the end;
+     the table face above it keeps its colours and only warms toward cream. */
+  --lean-melt-grad: linear-gradient(to bottom,
+    color-mix(in srgb, var(--lean-ground) 0%, transparent) 0,
+    color-mix(in srgb, var(--lean-ground) 5.8%, transparent) 3svh,
+    color-mix(in srgb, var(--lean-ground) 21%, transparent) 6svh,
+    color-mix(in srgb, var(--lean-ground) 39.4%, transparent) 9svh,
+    color-mix(in srgb, var(--lean-ground) 60.6%, transparent) 12svh,
+    color-mix(in srgb, var(--lean-ground) 79%, transparent) 15svh,
+    color-mix(in srgb, var(--lean-ground) 94.2%, transparent) 18svh,
+    var(--lean-ground) 21svh);
+}
+
+@media screen {
+  /* 2. ground */
+  body[data-view="home"], body[data-view="home"] .page { background-color: var(--lean-ground); background-image: none; }
+
+  /* 3. the melt, pinned mode: .lean-after reaches up over the foot of the scene and fades in from nothing.
+     Its padding grows by the same amount, so the content still starts below the fade, on the pure ground. */
+  @supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) {
+    body[data-view="home"] .lean-after {
+      margin-top: calc(-1 * var(--lean-melt));
+      padding-top: calc(var(--lean-melt) + var(--lean-fade) + var(--s-11, 28px));
+      background-image: var(--lean-melt-grad); background-size: 100% calc(var(--lean-melt) + var(--lean-fade)); background-repeat: no-repeat;
+      /* The fade must run edge to edge, but .lean-after is a 936px centred column. Same column, restated: the box takes the
+         full width and the old side margins move into the padding, so the content sits exactly where it did. */
+      max-width: none; margin-left: 0; margin-right: 0;
+      padding-left: calc(max(0px, (100% - 936px) / 2) + var(--page-pl, 68px));
+      padding-right: calc(max(0px, (100% - 936px) / 2) + var(--s-11, 28px));
+    }
+    @media (min-width: 1180px) {
+      body[data-view="home"] .lean-after { padding-right: calc(max(0px, (100% - 936px) / 2) + max(var(--s-11, 28px), calc(432px - max(0px, (100vw - 936px) / 2)))); }
+    }
+  } }
+  body[data-view="home"] .lean-after { position: relative; z-index: 2; } /* above the painting's fade in every mode */
+  /* 3b. fallback (no scroll timeline, or reduced motion): the pin is static, the painting ends after its first screen. Fade that edge instead. */
+  @supports not (animation-timeline: view()) {
+    body[data-view="home"] .lean-plate::after { content: ""; position: absolute; left: 0; right: 0; top: calc(100% - var(--lean-melt)); height: calc(var(--lean-melt) + var(--lean-fade)); background: var(--lean-melt-grad); }
+    body[data-view="home"] .lean-cards .lean-h2 { color: var(--lean-ink); }
+    :root[data-theme="light"] body[data-view="home"] .lean-cards .lean-h2 { background: rgba(247, 239, 224, .94); width: fit-content; padding: 4px 12px; border-radius: 6px; } /* it sits on the fade: same pale tag the pinned scene gives it */
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body[data-view="home"] .lean-plate::after { content: ""; position: absolute; left: 0; right: 0; top: calc(100% - var(--lean-melt)); height: calc(var(--lean-melt) + var(--lean-fade)); background: var(--lean-melt-grad); }
+    body[data-view="home"] .lean-cards .lean-h2 { color: var(--lean-ink); }
+    :root[data-theme="light"] body[data-view="home"] .lean-cards .lean-h2 { background: rgba(247, 239, 224, .94); width: fit-content; padding: 4px 12px; border-radius: 6px; } /* it sits on the fade: same pale tag the pinned scene gives it */
+  }
+
+  /* 4. panels */
+  body[data-view="home"] .lean-after { color: var(--lean-ink); }
+  body[data-view="home"] .lean-after h2 { color: var(--lean-ink); }
+  body[data-view="home"] .lean-after .stat,
+  body[data-view="home"] .lean-after .card,
+  body[data-view="home"] .lean-after .hero-panel {
+    background: var(--lean-panel); border-color: var(--lean-line); box-shadow: none; color: var(--lean-ink);
+  }
+  body[data-view="home"] .lean-after .stat .l { color: var(--lean-ink-2); }
+  body[data-view="home"] .lean-after .stat .emo { color: var(--lean-ink-2); }
+  /* Stat numbers carry inline colours from render.js (accColor / due). Those tokens are dark in the light theme
+     (--ok #237032, --bad #b02525, --warn #804200) and --ent #963f3a is 2.9:1 on the dark panel, so each inline token is
+     mapped to a light twin on the panel. !important is needed to beat the inline style; scoped to the stat numbers only. */
+  body[data-view="home"] .lean-after .stat .n[style*="var(--ok)"] { color: var(--lean-ok) !important; }
+  body[data-view="home"] .lean-after .stat .n[style*="var(--warn)"] { color: var(--lean-warn) !important; }
+  body[data-view="home"] .lean-after .stat .n[style*="var(--bad)"],
+  body[data-view="home"] .lean-after .stat .n[style*="var(--ent)"] { color: var(--lean-bad) !important; }
+  body[data-view="home"] .lean-after .stat .n[style*="var(--ink-4)"],
+  body[data-view="home"] .lean-after .stat .n > span { color: var(--lean-ink-2) !important; } /* "/total" and the no-data dash: inline --ink-4 */
+  body[data-view="home"] .lean-after .hp-art img { border-color: var(--lean-line); box-shadow: none; }
+  body[data-view="home"] .lean-after .hp-kicker { color: var(--lean-ink-2); }
+  body[data-view="home"] .lean-after .hp-name { color: var(--lean-ink); }
+  body[data-view="home"] .lean-after .hp-sub { color: var(--lean-brass-text); }
+  /* the gold rule down the spine takes --gold, which is the app's accent BLUE (#4dabf7 dark, #1971c2 light): brass instead */
+  body[data-view="home"] .lean-after .hero-panel::after { background: linear-gradient(180deg, transparent, var(--lean-brass-text), transparent); }
+  body[data-view="home"] .lean-after .hp-txt p,
+  body[data-view="home"] .lean-after .hp-txt p:last-child { color: var(--lean-ink-2); }
+  body[data-view="home"] .lean-after .filterbar .btn.go { background: var(--lean-brass); color: var(--lean-on-brass); box-shadow: none; }
+}
