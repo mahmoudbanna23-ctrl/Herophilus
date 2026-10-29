@@ -1,0 +1,52 @@
+STEP 3 - THE REMAINING SCREENS - brief 2026-10-29. Plan: C:\Users\Alfa388\.claude\plans\moonlit-skipping-summit.md step 3.
+Trial copy D:\claude os\Medical school\Herophilus-redesign, branch redesign/clean-2026-10. Run as THREE parts (A, B, C),
+one builder run each, in order. This brief names the part you run in its first line when dispatched.
+
+RULES: identical to progress\redesign-clean\step2-brief.txt "WRITE GRANT" through "Vanilla HTML/CSS/JS" (read it):
+write grant app\ (except frozen) + D:\scratch 2026\clean-3\; no git; never the live folder; frozen files byte-checked
+vs 8bd99322; no new storage key or S field; theory locked; do not open images; no emoji, pills, hover lift, idle pulse,
+confetti; Clepsydra mascot + her bubble + her motion untouched; MOTION "copy, never recreate" - no animation, keyframes,
+transition timing or easing of your own; the only motion you may add is a picked piece named below, copied as published
+(only colours, text, size change). Every behaviour in progress\redesign-clean\CONTRACT.md that touches your screens must
+still work - same functions, same onclicks, same keys.
+Screen map with file:line for every screen: D:\scratch 2026\clean-3\map.md (read it first).
+
+LOOK: match what steps 1-2 built - tokens in app\css\tokens.css, radius 6/10/14, the subject page / focus quiz / results
+panels, buttons and rows, the home secondary row. Calm dark pro, light too; one brand accent for actions, subject tints for
+identity only. Reuse existing components; add any new one to app\style.html (both themes). Replace old-look rules rather than
+stacking overrides; delete rules you made dead. Every screen must render cleanly in its empty state with one plain line and
+one action (the Clepsydra empty-state helper is step 5 - do not add her). Text contrast >= 4.5:1 both themes. Mascot
+gutter: content stays clear of her (skin.css lane rules incl. --lane-rail).
+
+PART A - lists and exams: Review deck (vReview + resetDeck), Weak chapters (vWeak), Flagged (vFlagged), Mock setup (vMock,
+runMock, offerMockResume) + exam clock (paintExamClock). States: empty deck, deck reset modal, no weak chapters, no flags,
+saved mock present, clock normal / low time. Picked motion: #7 Time hourglass (Lottie, progress\redesign-clean\anim-picks\
+time-hourglass-H3UkbK6hVS.json) beside the exam clock, plays once when the exam starts, last frame under reduced motion,
+re-tinted to tokens; reuse the Lottie player step 1a part B already loads.
+
+PART B - planning: Schedule (vSchedule, editing, resetSchedule), Rescheduled (vMoved), Study session (vSession, sessRing,
+paintSessionLive - 1 s tick repaints via paintSessionLive, never render(); timestamps, never countdowns). States: no plan
+yet, plan with today/past/future days, editing a day, nothing moved, session running / stopped. Picked motion: #23 "Add to
+schedule button" (uiverse andrew-demchenk0/giant-termite-81; the copied code is in D:\scratch 2026\motion-copied\
+herophilus-motion-copied.html, MANIFEST.md beside it) on the schedule's add/build action.
+
+PART C - shell: modal helper (showModal/closeModal) and how every caller in map.md item 7 reads in it; shortcuts sheet;
+backup (paintBakBtn, showBackup, restore, export, import); term picker; gate - sign-in step, profile step, PIN, profile
+editor, delete/manage profile; sync light (setSync/drawRailSync) with its offline and failure text readable and plain.
+KEEP: the gate is two steps and gateSignInStep() detects file: and swaps the button order (Google sign-in cannot work
+over file://) - do not remove the swap; enterProfile() stays the only place a cloud profile is entered. Modals: focus
+moves in, Esc closes, focus returns. Picked motion: #28 "Email field" (uiverse SanthoshSJ-Dev/mean-wolverine-8, copied
+code in the same herophilus-motion-copied.html) on the gate's email / name field; #32 Loading v2 (Lottie, anim-picks\
+loading2.json) only while sync is busy, static under reduced motion.
+
+VERIFY each part (paste tails into the report):
+- node tools\boot-check\boot-check.js -> 0 errors
+- node tools\ui-tasks\tasks.js -> 7 PASS
+- node tools\ui-tasks\frozen.js 8bd99322 -> 0 mismatches
+- node progress\redesign-clean\overlap-proof.js -> no NEW hits vs D:\scratch 2026\clean-2\op-fix.txt (24 home hits are old)
+- headless shots of every screen and state of your part at 1440x900, 1180x820, 820x1180, 390x844, dark + light ->
+  D:\scratch 2026\clean-3\shots-<part>\ (harness pattern D:\scratch 2026\lean-in\code\lib.js; never a --user-data-dir under
+  a path containing "--"); 0 console errors; no horizontal scroll (scrollWidth == clientWidth) in every run.
+- prefers-reduced-motion: screens complete, picked motion shows its last frame.
+OUTPUT: D:\scratch 2026\clean-3\report-<part>.md, max 150 words: files changed (one line each), check tails, states shot,
+anything dropped and why. Write it as you go so a cut-off run leaves a usable file. Stop at ~60 tool calls, report, stop.

@@ -425,7 +425,7 @@
   /* mock and review dock her bottom-LEFT (clepsydra.js CL_LEFT_VIEWS), so their lane is the left gutter */
   :root body:is([data-view="mock"],[data-view="review"]):not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]) .page{   /* the :not() chain only matches the rule above in weight */
     padding-right:var(--s-11);
-    padding-left:max(var(--page-pl), calc(var(--clep-lane) + var(--strip-w) - max(0px, (100vw - var(--page-mw)) / 2)));
+    padding-left:max(var(--page-pl), calc(var(--clep-lane) + var(--strip-w) - max(0px, (100vw - var(--rail-open) - var(--page-mw)) / 2)));
   }
 }
 

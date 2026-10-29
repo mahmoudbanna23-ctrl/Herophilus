@@ -51,7 +51,7 @@ function offerMockResume(){
   const message=problem||(expired
     ?'The time limit passed while you were away. Nothing has been handed in. You can hand in the saved answers now, keep the paper for later, or discard it.'
     :'Your question order, choices and place are saved. The clock has kept running. Resuming continues the original time limit and hands in automatically when it ends.');
-  showModal('<h3>Saved mock exam</h3><p>'+message+'</p><div class="modal-actions">'+
+  showModal('<h3>Saved mock exam</h3><p>'+message+'</p><div class="modal-actions lst-m">'+
     '<button class="btn sec" onclick="closeModal()">Keep for later</button>'+
     '<button class="btn sec" onclick="exportData()">Download a copy</button>'+
     '<button class="btn sec" id="mockDiscard">Discard paper</button>'+
@@ -280,7 +280,7 @@ function focusHeader(q){
     <button class="tb-btn focus-btn" onclick="go({name:'module',id:'${q.module}'})">← Exit</button>
     <div class="focus-context"><span class="focus-label">${Q.exam?'Timed exam':q.type==='case'?'Case practice':'Question practice'}</span><span>${esc(chapterName(q.chapter))}</span></div>
     <span class="focus-position">${Q.i+1} / ${Q.ids.length}</span>
-    ${Q.exam?`<span class="exam-clock ${examClockClass()}" id="examClock" aria-label="Time remaining">${examClockText()}</span>`:''}
+    ${Q.exam?`<span class="exam-hg" aria-hidden="true"></span><span class="exam-clock ${examClockClass()}" id="examClock" aria-label="Time remaining">${examClockText()}</span>`:''}
     <button class="focus-btn" id="questionsButton" aria-haspopup="dialog" onclick="openJump()">Questions <kbd>J</kbd></button>
   </header>`;
 }
@@ -355,6 +355,7 @@ function renderFocusQuestion(p,q,prev,isCase){
   stem.addEventListener('mouseup',onStemSelect);stem.addEventListener('touchend',onStemSelect);
   /* Answer motion plays once, on the render that follows a check; any later redraw shows the end state. */
   fxRun(p,fxFresh===q.id&&Q.shown&&!Q.exam);fxFresh=null;
+  examHgRun(p);
 }
 function vQuiz(p){
   const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
@@ -992,12 +993,12 @@ function vWeak(p){
   const all=weakChapters();
   const ranked=all.filter(c=>c.done>=WEAK_MIN);
   const early=all.filter(c=>c.done<WEAK_MIN);
-  let h=`<div class="eyebrow" style="background:var(--bad)">Where it hurts</div><h1>${ico('target',26)} Weakest chapters</h1>
-  <p class="page-sub">Every chapter you have started, worst score first. A chapter is only ranked once you have answered ${WEAK_MIN} of its questions &mdash; below that the percentage says more about luck than about you.</p>`;
+  let h=`<div class="lst"><header class="lst-head"><div class="eyebrow">Where it hurts</div><h1>Weakest chapters</h1>
+  <p class="page-sub">Every chapter you have started, worst score first. A chapter is only ranked once you have answered ${WEAK_MIN} of its questions &mdash; below that the percentage says more about luck than about you.</p></header>`;
 
   if(!all.length){
-    h+=`<div class="empty"><div class="big">${ico('target',46)}</div><h3>Nothing to rank yet</h3>
-     <p>Answer a few questions and this page will tell you where to spend your time.</p></div>`;
+    h+=`<div class="empty"><p class="empty-line">Nothing to rank yet. Answer a few questions and this page will show where to spend your time.</p>
+     <button class="btn go" onclick="go({name:'home'})">Choose a subject</button></div></div>`;
     p.innerHTML=h;return;
   }
 
@@ -1020,46 +1021,46 @@ function vWeak(p){
       </button>`;
     });
   }else{
-    h+=`<p class="page-sub">No chapter has ${WEAK_MIN} answered questions yet, so nothing is ranked. The chapters you have started are below.</p>`;
+    h+=`<p class="pool-line">No chapter has ${WEAK_MIN} answered questions yet, so nothing is ranked. The chapters you have started are below.</p>`;
   }
 
   if(early.length){
     h+=`<div class="grouphdr">Too early to tell</div>`;
     early.forEach(c=>{
       h+=`<button class="ch-row" onclick="startChapter('${c.cid}')">
-        <span class="ch-dot" style="background:var(--line-2)"></span>
+        <span class="ch-dot"></span>
         <span class="ch-name">${c.name}<span class="wk-mod">${c.mod.name}</span></span>
         <span class="ch-count">${c.done} of ${c.total} answered</span>
-        <span class="ch-acc" style="color:var(--ink-4)">&mdash;</span>
+        <span class="ch-acc">&mdash;</span>
       </button>`;
     });
   }
-  p.innerHTML=h;
+  p.innerHTML=h+'</div>';
 }
 
 /* ============ REVIEW DECK — CHANGE 3: by module ============ */
 function vReview(p){
   const deck=deckAll();
   const due=dueNow();
-  let h=`<div class="eyebrow" style="background:var(--ent)">Spaced repetition</div><h1>${ico('hourglass',26)} Review deck</h1>
-  <p class="page-sub">Anything you got wrong, or got right but marked as a guess or as unsure, lands here. A guess comes back tomorrow, an unsure one in three days, then 7, 21, 60. Right answer moves it out a step; wrong resets it.</p>`;
+  let h=`<div class="lst"><header class="lst-head"><div class="eyebrow">Spaced repetition</div><h1>Review deck</h1>
+  <p class="page-sub">Anything you got wrong, or got right but marked as a guess or as unsure, lands here. A guess comes back tomorrow, an unsure one in three days, then 7, 21, 60. Right answer moves it out a step; wrong resets it.</p></header>`;
   if(!deck.length){
-    h+=`<div class="empty"><div class="big">${ico('hourglass',46)}</div><h3>Deck is empty</h3>
-     <p>Nothing wrong, nothing guessed, nothing unsure.</p></div>`;
+    h+=`<div class="empty"><p class="empty-line">The deck is empty. Questions you get wrong, guess or mark unsure will collect here.</p>
+     <button class="btn go" onclick="go({name:'home'})">Choose a subject</button></div></div>`;
     p.innerHTML=h;return;
   }
-  h+=`<div class="grid g4" style="margin-bottom:24px">
-    <div class="stat"><span class="emo">${ico('hourglass',20)}</span><div class="n" style="color:${due.length?'var(--ent)':'var(--ok)'}">${due.length}</div><div class="l">Due today</div></div>
-    <div class="stat"><span class="emo">${ico('amphora',20)}</span><div class="n">${deck.length}</div><div class="l">In the deck</div></div>
-    <div class="stat"><span class="emo">${ico('target',20)}</span><div class="n">${deck.filter(q=>S.answers[q.id].conf===0&&isCorrect(q.id)).length}</div><div class="l">Lucky guesses</div></div>
-    <div class="stat"><span class="emo">${ico('laurel',20)}</span><div class="n">${deck.filter(q=>(S.srs[q.id]||{}).lvl>=3).length}</div><div class="l">Nearly retired</div></div>
+  h+=`<div class="grid g4">
+    <div class="stat"><div class="n">${due.length}</div><div class="l">Due today</div></div>
+    <div class="stat"><div class="n">${deck.length}</div><div class="l">In the deck</div></div>
+    <div class="stat"><div class="n">${deck.filter(q=>S.answers[q.id].conf===0&&isCorrect(q.id)).length}</div><div class="l">Lucky guesses</div></div>
+    <div class="stat"><div class="n">${deck.filter(q=>(S.srs[q.id]||{}).lvl>=3).length}</div><div class="l">Nearly retired</div></div>
   </div>`;
   if(due.length){
     h+=`<div class="filterbar"><button class="btn go" onclick="startQuiz(${JSON.stringify(due.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — due today')">${ico('play')} Start ${due.length} due</button>
     <button class="btn sec" onclick="startQuiz(${JSON.stringify(deck.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — all')">Whole deck (${deck.length})</button>
     <button class="btn sec" onclick="resetDeck()">Reset deck</button></div>`;
   }else{
-    h+=`<div class="filterbar"><button class="btn sec" onclick="startQuiz(${JSON.stringify(deck.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — all')">Nothing due — practise anyway (${deck.length})</button>
+    h+=`<div class="filterbar"><button class="btn go" onclick="startQuiz(${JSON.stringify(deck.map(q=>q.id)).replace(/"/g,'&quot;')},'Review — all')">Nothing due &mdash; practise anyway (${deck.length})</button>
     <button class="btn sec" onclick="resetDeck()">Reset deck</button></div>`;
   }
 
@@ -1070,29 +1071,29 @@ function vReview(p){
     h+=`<div class="grouphdr">${ico(m.icon,15)} ${m.name} — ${md_.length}${mdue.length?` · ${mdue.length} due`:''}</div>`;
     h+=`<div class="filterbar">
       ${mdue.length?`<button class="chip on" style="--c:${m.hex}" onclick="startQuiz(${JSON.stringify(mdue.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — due')">${ico('play')} ${mdue.length} due now</button>`:''}
-      <button class="chip" onclick="startQuiz(${JSON.stringify(md_.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — review')">All ${md_.length}</button>
+      <button class="chip" style="--c:${m.hex}" onclick="startQuiz(${JSON.stringify(md_.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — review')">All ${md_.length}</button>
     </div>`;
     md_.forEach(q=>{
       const s=S.srs[q.id]||{lvl:0,due:todayISO()};
       const isDue=s.due<=todayISO();
       const guess=isCorrect(q.id)&&S.answers[q.id].conf===0;
       h+=`<button class="ch-row" onclick="startQuiz(['${q.id}'],'Single question')">
-        <span class="ch-dot" style="background:${isDue?'var(--ent)':'var(--line-2)'}"></span>
-        <span class="ch-name" style="font-size:13.2px;font-weight:600">${guess?ico('target',13)+' ':''}${esc(q.stem.slice(0,96))}…</span>
+        <span class="ch-dot${isDue?' due':''}"></span>
+        <span class="ch-name stem-line">${guess?ico('target',13)+' ':''}${esc(q.stem.slice(0,96))}…</span>
         <span class="ch-count">${esc(chapterName(q.chapter))}</span>
-        <span class="ch-acc" style="color:${isDue?'var(--ent)':'var(--ink-4)'};min-width:62px">${isDue?'due now':'in '+daysUntil(s.due)+'d'}</span>
+        <span class="ch-acc${isDue?' due':''}">${isDue?'due now':'in '+daysUntil(s.due)+'d'}</span>
       </button>`;
     });
   });
-  p.innerHTML=h;
+  p.innerHTML=h+'</div>';
 }
 function resetDeck(){
   const n=deckAll().length;
   showModal(`<h3>Empty the review deck?</h3>
    <p>All ${n} question${n===1?'':'s'} leave the deck. Your answers, scores and progress are kept. A question comes back only if you get it wrong again, or mark it as a guess or as unsure. This cannot be undone.</p>
-   <div class="modal-actions">
+   <div class="modal-actions lst-m">
      <button class="btn sec" onclick="closeModal()">Cancel</button>
-     <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="doResetDeck()">Empty it</button>
+     <button class="btn danger" onclick="doResetDeck()">Empty it</button>
    </div>`);
 }
 function doResetDeck(){
@@ -1105,10 +1106,11 @@ function daysUntil(iso){return Math.max(Math.ceil((new Date(iso)-new Date(todayI
 
 function vFlagged(p){
   const f=QUESTIONS.filter(q=>S.flags[q.id]);
-  let h=`<div class="eyebrow" style="background:var(--gold);color:var(--on-accent)">Marked by you</div><h1>${ico('laurel',26)} Flagged</h1>
-  <p class="page-sub">Anything you wanted to come back to, right or wrong.</p>`;
+  let h=`<div class="lst"><header class="lst-head"><div class="eyebrow">Marked by you</div><h1>Flagged</h1>
+  <p class="page-sub">Anything you wanted to come back to, right or wrong.</p></header>`;
   if(!f.length){
-    h+=`<div class="empty"><div class="big">${ico('laurel',46)}</div><h3>No flags yet</h3><p>Hit the flag button on any question — or press <b>F</b> — to park it here.</p></div>`;
+    h+=`<div class="empty"><p class="empty-line">No flagged questions yet. Press the flag button on any question, or press F, to park it here.</p>
+      <button class="btn go" onclick="go({name:'home'})">Choose a subject</button></div>`;
   }else{
     activeModules().forEach(m=>{
       const fm=f.filter(q=>q.module===m.id);
@@ -1117,13 +1119,13 @@ function vFlagged(p){
       <div class="filterbar"><button class="chip on" style="--c:${m.hex}" onclick="startQuiz(${JSON.stringify(fm.map(q=>q.id)).replace(/"/g,'&quot;')},'${m.name} — flagged')">${ico('play')} Practise ${fm.length}</button></div>`;
       fm.forEach(q=>{
         h+=`<button class="ch-row" onclick="startQuiz(['${q.id}'],'Flagged')">
-          <span class="ch-dot" style="background:var(--gold)"></span>
-          <span class="ch-name" style="font-size:13.2px;font-weight:600">${esc(q.stem.slice(0,100))}…</span>
+          <span class="ch-dot gold"></span>
+          <span class="ch-name stem-line">${esc(q.stem.slice(0,100))}…</span>
           <span class="ch-count">${esc(chapterName(q.chapter))}</span></button>`;
       });
     });
   }
-  p.innerHTML=h;
+  p.innerHTML=h+'</div>';
 }
 
 /* ============ MOCK — CHANGE 3: by module ============ */
@@ -1138,34 +1140,41 @@ function mockable(q){ return q.type!=='case' }
 function vMock(p){
   activeModules().forEach(m=>{if(mockMods[m.id]===undefined)mockMods[m.id]=qsInModule(m.id).filter(mockable).length>0});
   const pool=QUESTIONS.filter(q=>mockMods[q.module]&&mockable(q)&&bankOn(q));
-  let h=`<div class="eyebrow" style="background:var(--neuro)">Exam conditions</div><h1>${ico('amphora',26)} Mock exam</h1>
-  <p class="page-sub">Pick your modules, pick a length. Random order, a clock you can see, and no explanations until you hand the paper in. Anything left blank counts as wrong.</p>
-  <h2>1 · Choose modules</h2><div class="filterbar">`;
+  let h=`<div class="lst"><header class="lst-head"><div class="eyebrow">Exam conditions</div><h1>Mock exam</h1>
+  <p class="page-sub">Pick your modules, pick a length. Random order, a clock you can see, and no explanations until you hand the paper in. Anything left blank counts as wrong.</p></header>`;
+  /* A saved paper blocks a new one (runMock), so say so up front instead of after a length is clicked. */
+  if(hasSavedMock()){
+    h+=`<div class="lst-note"><p>You have a saved mock exam. Resume it, keep it for later or discard it before starting another.</p>
+      <button class="btn go" onclick="offerMockResume()">Open saved exam</button></div>`;
+  }else if(hasStoredMock()){
+    h+=`<div class="lst-note"><p>A saved mock exam belongs to another semester. Switch back to that semester to resume or discard it before starting another.</p></div>`;
+  }
+  h+=`<h2>1 · Choose modules</h2><div class="filterbar">`;
   openModules().forEach(m=>{
     const n=qsInModule(m.id).filter(mockable).length;
-    h+=`<button class="chip ${mockMods[m.id]&&n?'on':''}" style="--c:${m.hex};${n?'':'opacity:.4'}" aria-pressed="${!!(mockMods[m.id]&&n)}"
+    h+=`<button class="chip ${mockMods[m.id]&&n?'on':''}" style="--c:${m.hex}" aria-pressed="${!!(mockMods[m.id]&&n)}"
       ${n?`onclick="mockMods['${m.id}']=!mockMods['${m.id}'];render()"`:'disabled'}>
-      ${ico(m.icon,15)} ${m.name} <span style="opacity:.7">${n}</span></button>`;
+      ${ico(m.icon,15)} ${m.name} <span class="n">${n}</span></button>`;
   });
   h+=`</div>`;
   h+=`<h2>2 · Choose length</h2>`;
   if(!pool.length){
     const filtered=QUESTIONS.some(q=>mockMods[q.module]&&mockable(q));
-    h+=`<div class="empty"><div class="big">${ico('amphora',46)}</div><h3>${filtered?'No questions match your source filter':'Nothing selected'}</h3><p>${filtered?'Your source filter hides all questions in the selected modules. Change it on the module page.':'Pick at least one module that has questions loaded.'}</p></div>`;
+    h+=`<div class="empty"><p class="empty-line">${filtered?'Your source filter hides every question in the selected modules. Change it on the module page.':'Nothing selected. Pick at least one module that has questions loaded.'}</p></div>`;
   }else{
-    h+=`<p class="page-sub" style="margin-bottom:14px">${pool.length} question${pool.length===1?'':'s'} in the selected pool.</p><div class="grid g3" style="max-width:780px">`;
+    h+=`<p class="pool-line">${pool.length} question${pool.length===1?'':'s'} in the selected pool.</p><div class="mock-lens">`;
     [10,20,40].forEach(n=>{
       const ok=pool.length>=n;
-      h+=`<button class="card" ${ok?`onclick="runMock(${n})"`:'disabled'} style="--c:rgba(109,76,125,.4)">
-        <div class="mod-top"><span class="mod-ic" style="background:var(--neuro)">${ico('clepsydra',22)}</span><span class="mod-name">${n} questions</span></div>
-        <div class="mod-meta">${examMins(n)} minutes on the clock${ok?'':' · pool too small'}</div></button>`;
+      h+=`<button class="mock-len" ${ok?`onclick="runMock(${n})"`:'disabled'}>
+        <span class="mock-n">${n}</span><span class="mock-u">questions</span>
+        <span class="mock-t">${examMins(n)} minutes on the clock${ok?'':' · pool too small'}</span></button>`;
     });
-    if(pool.length<40)h+=`<button class="card" onclick="runMock(${pool.length})" style="--c:rgba(109,76,125,.4)">
-      <div class="mod-top"><span class="mod-ic" style="background:var(--gold);color:var(--on-accent)">${ico('target',22)}</span><span class="mod-name">All ${pool.length}</span></div>
-      <div class="mod-meta">${examMins(pool.length)} minutes on the clock</div></button>`;
+    if(pool.length<40)h+=`<button class="mock-len" onclick="runMock(${pool.length})">
+      <span class="mock-n">${pool.length}</span><span class="mock-u">questions, all of them</span>
+      <span class="mock-t">${examMins(pool.length)} minutes on the clock</span></button>`;
     h+=`</div>`;
   }
-  p.innerHTML=h;
+  p.innerHTML=h+'</div>';
 }
 /* 72 seconds a question. The card said "~1.2 minutes each" long before there
    was a clock to hold it to; keeping the same figure means the length the

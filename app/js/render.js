@@ -49,7 +49,7 @@ function renderNow(){
   else ({home:vHome,module:vModule,quiz:vQuiz,results:vResults,review:vReview,schedule:vSchedule,theory:vTheory,
     moved:vMoved,flagged:vFlagged,mock:vMock,session:vSession,weak:vWeak}[view.name]||vHome)(p);
   if(view.name==='module'&&!emptyCourse)SubjFx.init(p);
-  if((view.name==='mock'||(view.name==='home'&&!p.querySelector('[data-saved-mock]')))&&hasSavedMock()){
+  if(((view.name==='mock'&&emptyCourse)||(view.name==='home'&&!p.querySelector('[data-saved-mock]')))&&hasSavedMock()){
     p.insertAdjacentHTML('afterbegin','<p><button class="btn sec" onclick="offerMockResume()">Open saved mock exam</button></p>');
   }
   const focusView=['quiz','results'].includes(view.name);

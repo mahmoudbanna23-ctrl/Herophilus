@@ -1,0 +1,130 @@
+/* Lists and exams (step 3 part A, 2026-10-29): review deck, weak chapters, flagged, mock setup, and the exam clock's hourglass.
+   Scoped to .lst (the wrapper these four views write) so the shared .btn, .chip, .stat, .ch-row and .empty on the
+   other pages are untouched. Same look as subject.css: tokens only, radius 6/10/14, flat 1px lines, one filled accent
+   button per screen, subject colours as identity only.
+   No transitions, keyframes or easing are written here. The only motion is the copied Lottie hourglass (js/exam-fx.js).
+   Banned and absent: pills, hover lift, idle pulse, confetti, emoji. */
+
+/* ---- header panel ------------------------------------------------------------------------------------ */
+.lst-head{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:var(--s-9) var(--s-10);margin-bottom:var(--s-9);
+}
+.lst-head .eyebrow{
+  background:none;padding:0;border-radius:0;margin:0 0 var(--s-2);
+  color:var(--ink-3);font-size:var(--fs-sm);font-weight:600;letter-spacing:.06em;
+}
+.lst-head h1{
+  font-family:var(--font-display);font-weight:600;text-transform:none;letter-spacing:0;margin:0 0 var(--s-3);
+}
+.lst-head .page-sub{margin:0}
+
+/* ---- buttons: one filled accent button, the rest outlined ------------------------------------------- */
+:is(.lst,.lst-m) .btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:var(--s-3);min-height:40px;
+  padding:var(--s-4) var(--s-7);border:1px solid var(--line-2);border-radius:var(--r-sm);
+  background:var(--card);color:var(--tx);box-shadow:none;
+  font-family:var(--font-body);font-size:var(--fs-ui);font-weight:600;letter-spacing:0;text-transform:none;
+}
+:is(.lst,.lst-m) .btn::before,
+:is(.lst,.lst-m) .btn::after{display:none}
+:is(.lst,.lst-m) .btn:hover:not(:disabled){background:var(--bg-2)}
+:root :is(.lst,.lst-m) .btn.go:not(:disabled){background:var(--accent);color:var(--on-accent);border-color:var(--accent);box-shadow:none}
+:is(.lst,.lst-m) .btn.danger{background:var(--card);color:var(--bad);border-color:var(--bad)}
+:is(.lst,.lst-m) .btn:disabled{opacity:.5}
+.lst .filterbar{margin-bottom:var(--s-9);gap:var(--s-4)}
+
+/* ---- numbers ---------------------------------------------------------------------------------------- */
+.lst .grid.g4{margin-bottom:var(--s-9);gap:var(--s-4)}
+.lst .stat{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);box-shadow:none;padding:var(--s-6) var(--s-7);
+}
+.lst .stat .n{font-family:var(--font-display);font-size:var(--fs-2xl);font-weight:600;letter-spacing:0;color:var(--tx);font-variant-numeric:tabular-nums lining-nums}
+.lst .stat .l{font-size:var(--fs-md);font-weight:500;color:var(--ink-3);margin-top:var(--s-1)}
+
+/* ---- group headers and rows -------------------------------------------------------------------------- */
+.lst .grouphdr{margin:var(--s-10) 0 var(--s-4);color:var(--ink-2);font-size:var(--fs-sm);font-weight:600;letter-spacing:.06em}
+.lst .grouphdr::after{height:1px}
+.lst .grouphdr .gi{flex:none}
+.lst .ch-row{
+  gap:var(--s-7);padding:var(--s-3) var(--s-7);border:1px solid var(--line);border-radius:var(--r-md);margin-bottom:var(--s-3);
+  background:var(--card);box-shadow:none;
+}
+.lst .ch-row:hover:not(:disabled){background:var(--bg-2);border-color:var(--line-2);box-shadow:none}
+.lst .ch-dot{width:10px;height:10px;border:0;background:var(--line-2)}
+.lst .ch-dot.due{background:var(--warn)}
+.lst .ch-dot.gold{background:var(--accent)}
+.lst .ch-name{font-size:var(--fs-ui);font-weight:600;min-width:0;overflow-wrap:break-word}
+.lst .ch-name.stem-line{font-size:var(--fs-md)}
+.lst .ch-name .gi{vertical-align:-2px;margin-right:var(--s-2);color:var(--ink-3)}
+.lst .ch-count{font-size:var(--fs-sm);font-weight:500;color:var(--ink-3);text-align:right;font-variant-numeric:tabular-nums lining-nums}
+.lst .ch-acc{font-size:var(--fs-sm);font-weight:600;min-width:62px;text-align:right;color:var(--ink-3);font-variant-numeric:tabular-nums lining-nums}
+.lst .ch-acc.due{color:var(--warn)}
+.lst .wk-mod{display:block;font-size:var(--fs-sm);font-weight:500;color:var(--ink-3);margin-top:2px}
+
+/* ---- module chips: small-radius tags, subject colour is identity only ------------------------------- */
+.lst .chip{
+  display:inline-flex;align-items:center;gap:var(--s-3);padding:var(--s-2) var(--s-4);cursor:pointer;
+  border:1px solid var(--line-2);border-radius:var(--r-sm);background:transparent;color:var(--ink-2);
+  font-family:var(--font-body);font-size:var(--fs-md);font-weight:600;
+}
+.lst .chip::before,.lst .chip::after,.lst .chip .chiplabel::after{display:none}   /* the old tick, strike and underline marks (views.css .chiplabel::after); the colour of the border carries "on" */
+.lst .chip[aria-pressed]::before{display:none}
+.lst .chip.on{color:var(--tx);border-color:var(--c,var(--accent));background:color-mix(in srgb,var(--c,var(--accent)) 22%,var(--card))}
+.lst .chip:hover:not(:disabled){color:var(--tx)}
+.lst .chip:disabled{opacity:.5;cursor:default}
+.lst .chip .gi{flex:none}
+.lst .chip .n{font-size:var(--fs-sm);font-weight:700;color:var(--ink-3);font-variant-numeric:tabular-nums lining-nums}
+.lst .chip.on .n{color:var(--tx)}
+
+/* ---- empty state: one plain line, one action -------------------------------------------------------- */
+.lst .empty{
+  padding:var(--s-12) var(--s-9);border:1px dashed var(--line-2);border-radius:var(--r-lg);
+  display:flex;flex-direction:column;align-items:center;gap:var(--s-6);
+}
+.lst .empty .empty-line{margin:0;max-width:440px;color:var(--ink-2);font-size:var(--fs-body);font-weight:500;line-height:1.5}
+
+/* ---- notes (saved mock, other-semester paper) ------------------------------------------------------- */
+.lst-note{
+  display:flex;align-items:center;justify-content:space-between;gap:var(--s-6);flex-wrap:wrap;
+  background:var(--selected);border:1px solid var(--line-2);border-radius:var(--r-md);
+  padding:var(--s-5) var(--s-7);margin-bottom:var(--s-9);
+}
+.lst-note p{margin:0;color:var(--tx);font-size:var(--fs-ui);font-weight:500;line-height:1.5;flex:1 1 260px}
+
+/* ---- mock setup ------------------------------------------------------------------------------------- */
+.lst h2{font-family:var(--font-display);font-size:var(--fs-lg);font-weight:600;letter-spacing:0;text-transform:none;margin:var(--s-10) 0 var(--s-5)}
+.lst .mock-lens{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--s-4);max-width:780px}
+.lst .mock-len{
+  display:flex;flex-direction:column;align-items:flex-start;gap:var(--s-2);width:100%;text-align:left;cursor:pointer;
+  padding:var(--s-7);background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-md);box-shadow:none;color:var(--tx);
+  font-family:var(--font-body);
+}
+.lst .mock-len:hover:not(:disabled){background:var(--bg-2);border-color:var(--accent);box-shadow:none}
+.lst .mock-len:disabled{opacity:.5;cursor:default}
+.lst .mock-n{font-family:var(--font-display);font-size:var(--fs-2xl);font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums lining-nums}
+.lst .mock-u{font-size:var(--fs-ui);font-weight:600}
+.lst .mock-t{font-size:var(--fs-md);font-weight:500;color:var(--ink-3)}
+.lst .pool-line{margin:0 0 var(--s-5);color:var(--ink-3);font-size:var(--fs-ui);font-weight:500}
+
+/* ---- exam clock: the hourglass beside it (Lottie, copied; tinted and played in js/exam-fx.js) ------- */
+.exam-hg{display:inline-block;width:28px;height:28px;flex:none}
+.exam-hg svg{display:block;width:100%;height:100%}
+
+@media (max-width:600px){
+  .lst-head{padding:var(--s-7)}
+  /* the stem gets the full width; chapter and due line sit under it */
+  .lst .ch-row{display:grid;grid-template-columns:auto 1fr auto;column-gap:var(--s-4);row-gap:var(--s-2);align-items:start;padding:var(--s-4) var(--s-5)}
+  .lst .ch-dot{margin-top:6px}
+  .lst .ch-name{grid-column:2 / -1}
+  .lst .ch-count{grid-column:2;text-align:left;min-width:0}
+  .lst .ch-acc{grid-column:3;min-width:0}
+  .lst-m{flex-direction:column;align-items:stretch}
+  .lst-m .btn{width:100%}
+  .lst .filterbar .btn{flex:1 1 100%}
+}
+/* The floating icon cluster covers the right end of the column between 601 and 900 px (same measurement as subject.css) */
+@media (min-width:601px) and (max-width:900px){
+  .lst .ch-row{padding-right:calc(var(--s-7) + 140px)}
+}
+@media print{.exam-hg{display:none}}

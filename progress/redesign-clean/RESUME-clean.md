@@ -117,3 +117,13 @@ Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before d
   bubble repeats question count · CSOM tile ~10px low at 1024/820 · 1440 tiles wrap 4+2 · at 1024 the fixed
   top-right buttons cover a chapter row end when scrolled · 1180 column ~445px, titles wrap.
 - Next: steps 3-5 per plan.
+
+## Step 3 STARTED 2026-10-29 (owner "go to step 3")
+- Brief step3-brief.txt (this folder), three parts A lists+exams / B planning / C shell (modals, backup, term, gate,
+  sync). Screen map D:\scratch 2026\clean-3\map.md. Part A dispatched to lean-drafter 13:1x (Codex out until 16:16);
+  report D:\scratch 2026\clean-3\report-A.md. Per part: looker on shots-<part>\, refuter, owner pictures, commit.
+- Part A DONE 2026-10-29 (owner yes): new lists.css (.lst scope, .lst-m on saved-mock + reset-deck modals only),
+  exam-fx.js + vendor hourglass Lottie (#7), quiz.js list views, skin.css:428 lane adds rail on mock/review,
+  render.js:52 no stray saved-mock button. Fix round step3A-fix-brief.txt; looker PASS, refuter CONFIRMED.
+  Left as is: literal `**` in some stems (data, frozen). overlap-proof only loads review EMPTY - it never sees rows.
+- NEXT: Part B (planning) - Codex after 16:16 or lean-drafter, same brief.

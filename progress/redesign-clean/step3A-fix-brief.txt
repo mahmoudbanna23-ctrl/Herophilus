@@ -1,0 +1,27 @@
+STEP 3 PART A FIX - brief 2026-10-29. Same rules as progress\redesign-clean\step3-brief.txt (read it). No git.
+Your build is the uncommitted diff (lists.css, exam-fx.js, vendor\lottie-hourglass-data.js, index.html, quiz.js).
+Reviews: D:\scratch 2026\clean-3\looker-A.md and D:\scratch 2026\clean-3\refute-A.md (read both).
+
+FIX
+1. review-due at 390x844: stems squeezed to ~60px, one word per line. Rows must give the stem the full width at <=600
+   (stack meta under the stem). Check 390 and 820.
+2. review-due dark 1440x900: the mascot bubble overlaps list rows. The .lst views must honour the mascot lane/gutter
+   (skin.css lane rules incl. --lane-rail) like the subject page does. overlap-proof.js reported 0 hits here - find why
+   it missed (does it check .lst rows? the review view with due items?) and say so in the report; measure the gap
+   between rows and her bubble with getBoundingClientRect at 1440 and 1180 instead.
+3. mock-saved 1440: a stray white "Open saved mock exam" button floats above the header and duplicates the banner
+   button. One saved-mock entry only (render.js ~52 guard + your new note) - keep the one in the page, styled.
+4. lists.css:23-34 `:is(.lst,.modal-actions) .btn` restyles every modal's buttons (Part C scope): scope it to .lst
+   and the reset-deck modal only.
+5. lists.css:60-61 claims old chip marks are hidden but views.css:44-45 still draws strike/underline on mock chips:
+   hide them inside .lst (.lst .chip .chiplabel::after{display:none} or equivalent) and confirm in the computed style.
+6. Minor: "OPHTHALMOLOGY" breaks mid-word at 390 (weak-ranked) - let it shrink/wrap at word level only; saved-mock
+   modal buttons wrap raggedly at 390 - stack them full width; "in 26362d" in a due line - find if real data can give
+   it (dates math) or only the shot fixture; fix whichever it is.
+
+VERIFY: boot-check 0 errors · tasks.js 7 PASS · frozen.js 8bd99322 0 mismatches · overlap-proof no new hits vs
+D:\scratch 2026\clean-2\op-fix.txt · re-shoot ONLY the changed states (review-due, mock-saved, weak-ranked, the
+saved-mock modal, mock setup chips) at 1440/1180/820/390 dark+light -> D:\scratch 2026\clean-3\shots-A2\, 0 console
+errors, no horizontal scroll.
+OUTPUT: return under 100 words (report file writes may be refused - put the report in your final message).
+Stop at ~35 tool calls.
