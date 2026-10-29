@@ -1,11 +1,20 @@
 /* The question panel is no longer a modal: it is a native <dialog> (openJump in quiz.js), which traps focus and closes on Escape itself. */
+/* The element that had focus when the first pop-up opened. A pop-up that redraws itself (the profile editor does) must not overwrite it with something inside the pop-up. */
+let modalOpener=null;
 function showModal(html,wide){
-  const m=$('modal');
+  const m=$('modal'), bg=$('modalBg');
+  if(!bg.classList.contains('show'))modalOpener=document.activeElement;
   m.innerHTML=html;m.classList.toggle('wide',!!wide);
-  $('modalBg').classList.add('show');
+  m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');m.setAttribute('tabindex','-1');
+  bg.classList.add('show');
+  /* Focus moves into the pop-up (its frame, not a button, so Enter cannot fire an action by accident); a pop-up that sets its own focus afterwards wins. */
+  if(!m.contains(document.activeElement))m.focus({preventScroll:true});
 }
 function closeModal(){
+  const wasOpen=$('modalBg').classList.contains('show');
   $('modalBg').classList.remove('show');
+  if(wasOpen&&modalOpener&&document.contains(modalOpener)&&modalOpener.focus){try{modalOpener.focus({preventScroll:true})}catch(e){}}
+  modalOpener=null;
   /* closeModal used to close the question panel too; keep that, so no caller can leave the dialog open behind another screen */
   if(typeof closeQuestionPanel==='function')closeQuestionPanel();
 }
@@ -25,7 +34,7 @@ function showShortcuts(){
      <span><span class="kbd">T</span></span><span class="d">Light / dark mode</span>
      <span><span class="kbd">Esc</span></span><span class="d">Close</span>
    </div>
-   <div class="modal-actions" style="margin-top:21px"><button class="btn go" onclick="closeModal()">Got it</button></div>`);
+   <div class="modal-actions"><button class="btn go" onclick="closeModal()">Got it</button></div>`);
 }
 /* ============================================================================
    BACKUP — automatic.
@@ -160,13 +169,13 @@ function showBackup(){
   }).join('');
   showModal(`<h3>${ico('shield',19)} Backup</h3>
    <p>Your progress saves the moment you answer, and a dated snapshot is kept automatically.
-      ${bakState==='full'?'<b style="color:var(--bad)">This browser has run out of storage, so new snapshots are not being kept.</b>':'There is nothing for you to press.'}</p>
+      ${bakState==='full'?'<b class="bak-full">This browser has run out of storage, so new snapshots are not being kept.</b>':'There is nothing for you to press.'}</p>
    ${rows?`<div class="bak-list">${rows}</div>`
-         :`<p style="color:var(--ink-4)">No snapshots yet — the first one is taken a few seconds after your next answer.</p>`}
-   <p style="font-size:12.5px;color:var(--ink-4);margin-top:14px">
+         :`<p class="m-dim">No snapshots yet — the first one is taken a few seconds after your next answer.</p>`}
+   <p class="m-small">
      Snapshots live in this browser. They survive a crash or a bad write, but not clearing your
      browser data — sign in if you want your progress kept off this machine.</p>
-   <div class="modal-actions" style="margin-top:18px">
+   <div class="modal-actions">
      <button class="btn sec" onclick="exportData()">Download a copy</button>
      <button class="btn sec" onclick="document.getElementById('importFile').click()">Restore from a file</button>
      <button class="btn go" onclick="closeModal()">Close</button>
@@ -180,7 +189,7 @@ function bakConfirm(at){
   showModal(`<h3>Restore ${bakWhen(at)}?</h3>
    <p>That snapshot holds <b>${n}</b> answered question${n===1?'':'s'}. You currently have <b>${now}</b>.
       Restoring replaces what is on this device now.</p>
-   ${n<now?`<p style="color:var(--warn)"><b>Note:</b> the snapshot has fewer answers than you have now,
+   ${n<now?`<p class="m-warn"><b>Note:</b> the snapshot has fewer answers than you have now,
       so this would lose ${now-n} of them.</p>`:''}
    <div class="modal-actions">
      <button class="btn sec" onclick="showBackup()">Back</button>

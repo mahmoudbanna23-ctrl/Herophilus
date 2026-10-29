@@ -26,20 +26,7 @@
 /* ---- light: only the edge, and the blue that leaked into parchment ---------- */
 /* Palette declarations now live in tokens.css. */
 
-/* ---- dark: ground ------------------------------------------------------------ */
-/* the three orbs of colour: night blue, deep blue, sea teal */
-:root:not([data-theme="light"]) body{
-  background-image:
-    radial-gradient(1200px 700px at 8% -10%, rgba(56,88,160,.22), transparent 60%),
-    radial-gradient(1000px 620px at 100% 0%, rgba(40,70,130,.14), transparent 58%),
-    radial-gradient(900px 600px at 50% 110%, rgba(40,80,110,.10), transparent 60%);
-}
 /* ---- pop-ups, notices, zoom ---------------------------------------------------- */
-:root:not([data-theme="light"]) .modal{
-  background:linear-gradient(160deg,rgba(22,32,52,.97),rgba(11,17,30,.98));
-  border-color:rgba(232,194,106,.30);
-}
-:root:not([data-theme="light"]) .modal-bg,:root[data-theme="light"] .modal-bg{background:var(--scrim)}
 /* the toast kept its dark-brown ground in the light look (the one value both looks shared) */
 :root[data-theme="light"] .toast{background:linear-gradient(160deg,#3b2a1a,#241810)}
 :root:not([data-theme="light"]) .toast{background:linear-gradient(160deg,#1c2a44,#111b2e)}
@@ -55,23 +42,9 @@
 :root:not([data-theme="light"]) .readtheory{box-shadow:var(--pop) rgba(0,0,0,.35)}
 :root:not([data-theme="light"]) .readtheory:hover{background:var(--bg-2);box-shadow:var(--pop-lg) rgba(0,0,0,.45)}
 :root:not([data-theme="light"]) .conf-b:hover{box-shadow:0 7px 18px rgba(2,5,12,.4)}
-:root:not([data-theme="light"]) .colb.on{box-shadow:0 9px 22px rgba(2,5,12,.45)}
 
 /* ---- light: blue leaks on parchment ------------------------------------------- */
-:root[data-theme="light"] body{
-  background-image:
-    radial-gradient(1200px 700px at 8% -10%, rgba(154,107,31,.14), transparent 60%),
-    radial-gradient(1000px 620px at 100% 0%, rgba(180,71,47,.09), transparent 58%),
-    radial-gradient(900px 600px at 50% 110%, rgba(154,107,31,.14), transparent 60%);
-}
-:root[data-theme="light"] .modal{
-  background:linear-gradient(160deg,rgba(252,246,232,.98),rgba(243,233,212,.97));
-  box-shadow:0 30px 80px rgba(74,56,34,.24),var(--glow);
-}
 :root[data-theme="light"] .toast{box-shadow:0 18px 44px rgba(74,56,34,.32)}
-:root[data-theme="light"] .gsign{border-color:rgba(60,44,28,.18);box-shadow:0 6px 18px rgba(74,56,34,.14)}
-:root[data-theme="light"] .gsign:hover{box-shadow:0 12px 28px rgba(74,56,34,.2)}
-:root[data-theme="light"] .gsign::after{background:linear-gradient(100deg,transparent,rgba(122,84,16,.14),transparent)}
 :root[data-theme="light"] .mod-ic{box-shadow:0 8px 22px var(--c),0 0 0 1px rgba(60,44,28,.10)}
 :root[data-theme="light"] .pill{box-shadow:0 4px 14px rgba(74,56,34,.2)}
 :root[data-theme="light"] .rail{border-right-color:rgba(122,84,16,.30)}
@@ -136,7 +109,6 @@
 /* profile and sync chips: bronze edge; the sync line drops its lilac */
 :root:not([data-theme="light"]) .railprof{box-shadow:inset 0 0 0 1px rgba(217,180,74,.20)}
 :root:not([data-theme="light"]) .railprof:hover{box-shadow:inset 0 0 0 1px rgba(217,180,74,.34)}
-:root:not([data-theme="light"]) .railsync{color:var(--rail-dim);background:rgba(217,180,74,.06)}
 
 /* ============================================================================
    FIX PASS, ROUND 2 — faults found by looking at the first stills.

@@ -1,0 +1,32 @@
+STEP 3 PART C+ BACKGROUND - brief 2026-10-29. Same rules as progress\redesign-clean\step3-brief.txt (read it). No git.
+Part C is the uncommitted diff (shell.css, sync-fx.js, boot.js, gate.js, components.css, licence). Keep it.
+
+OWNER RULING 2026-10-29: the backdrop behind schedule, session, sign-in (gate) and popups is "too plain".
+He picked: SOFT HOME PAINTING behind them - reuse the home plates, darkened and blurred so text reads easily.
+No new art.
+
+BUILD
+1. Plates: assets\lean\painted-codex-3@2x.webp (night, dark theme) and painted-day-v2@2x.webp (day, light theme).
+   Use the .webp (280-340 KB), not the 3.6-3.8 MB .png. render.js:263 names them for home.
+2. One fixed backdrop layer (body::before or a single element; position:fixed, inset:0, z-index below .app,
+   pointer-events:none, background-size:cover) holding the plate, blurred (filter:blur) and dimmed by a
+   gradient scrim so every text/surface keeps its contrast. Held still - no motion, no parallax.
+3. Where it shows: every body[data-view] EXCEPT home (has its own scene, lean.css) and quiz/results
+   (focus.css, plain on purpose: calm to read). Find the view list from render.js:40 and the views. The gate and
+   splash (views.css:94 `.gate,.splash{background:var(--bg);background-image:inherit}`) get it too.
+   Popups sit over the page - they show it through their overlay; check the overlay still separates them.
+   Replace the old radial-gradient grounds (views.css:71, base.css:3) only where the plate now shows.
+4. Light theme uses the day plate with a pale scrim; dark uses the night plate with a dark scrim. The theme is
+   :root[data-theme]; dark = bare :root.
+5. Print: print.css is FROZEN and sets body background:#fff - confirm the layer does not print
+   (@media print hide it in your new file, not in print.css).
+6. Put it in a new file css\backdrop.css linked in index.html after skin.css; comment why in one line.
+7. Fix the full-page seam the looker saw at viewport height (shots-B2 sched-plan 820 light, session-paused 390
+   dark): with a fixed layer it should be gone - confirm.
+
+VERIFY: boot-check 0 errors - tasks.js 7 PASS - frozen.js 8bd99322 0 mismatches - overlap-proof matches
+D:\scratch 2026\clean-2\op-fix.txt - contrast: measure body text and buttons on schedule + gate at 1440 dark and
+light against the darkest and lightest plate region under the scrim (AA 4.5:1) - shoot schedule, session, gate
+sign-in, one popup, review-due (part A list) at 1440/820/390 dark+light -> D:\scratch 2026\clean-3\shots-C2\,
+0 console errors, no horizontal scroll. Reduced motion changes nothing (layer is still).
+OUTPUT: under 100 words in your final message. Stop at ~35 tool calls.

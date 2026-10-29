@@ -130,5 +130,19 @@ Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before d
   boot.js:158), sessions.js schedule/moved/session views, #23 add button on "Start my plan"/"Add day", dead
   components.css/views.css rules removed. Looker PASS, refuter PARTIAL (.ed-t) then fixed, re-check PASS.
   Left as is: Pause/Resume label waits for next redraw (old, clepsydra.js); print.css:14 lists dead .mk,.edbar.
-- NEXT: Part C (shell: modals, shortcuts, backup, term picker, gate, sync light) - Codex after 16:16 or
-  lean-drafter, same brief. Backup popup Restore button was never re-shot - shoot it in C.
+- Part C DONE 2026-10-29 (owner yes): new shell.css (modal helper, #28 on profile name/PIN fields), sync-fx.js
+  (#32 loading2 Lottie while syncing), boot.js:3-17 showModal focus in/out + role=dialog, 4 inline red buttons
+  -> btn danger, sync wording, licences/useanimations-LICENSE.txt (full MIT, filled). RULING: .gmark::after halo
+  ring + .gsign::after sheen removed from components.css - infinite idle loops (banned idle pulse); stands.
+  Report D:\scratch 2026\clean-3\report-C.md, shots shots-C\. Looker NEEDS-FIX minor, refuter PARTIAL (both
+  points resolved). Leftover: gate.js:390 .ai-note still inline styles.
+- OWNER 2026-10-29: background behind schedule/session/sign-in/popups "too plain" -> picked SOFT HOME PAINTING
+  (home plates blurred + dimmed; not on home, quiz, results). Brief: progress\redesign-clean\step3C-bg-brief.txt.
+  DONE same day, owner yes: new css\backdrop.css (fixed layer, .webp plates, 3px blur, scrim heavier behind the
+  content column, light gate = one soft panel), lists.css chips on card colour + light group headers on card bars.
+  Final refuter CONFIRMED: worst AA light 4.68 (review-due 390) / dark 5.33. Shots D:\scratch 2026\clean-3\shots-C5\.
+  Probe lesson: a contrast probe must scroll the whole page and close popups first - the first one measured
+  at scroll 0 with a popup open and passed text at 1.95:1. Probe: D:\scratch 2026\clean-3\code\shots-C4.js.
+  Leftover: probe skips text under the floating icon cluster.
+- NEXT: plan steps 4-5 (C:\Users\Alfa388\.claude\plans\moonlit-skipping-summit.md).
+  Separate, pending: wide subject paintings plan C:\Users\Alfa388\.claude\plans\bright-dreaming-squirrel.md.

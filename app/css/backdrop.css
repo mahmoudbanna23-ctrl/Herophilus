@@ -1,0 +1,67 @@
+/* Soft home painting behind every screen except home (own scene) and quiz/results (plain on purpose),
+   plus the gate and splash: the home plate, lightly blurred, with a scrim heavy behind the text column and
+   light at the margins (the right lane belongs to the Clepsydra). Held still, no motion. */
+
+body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"])::before,
+.gate::before,
+.splash::before{
+  content:"";position:fixed;inset:-12px;z-index:0;pointer-events:none;
+  background-position:center;background-size:cover;background-repeat:no-repeat;
+  filter:blur(3px);
+}
+/* inside the gate and splash the layer sits under their own content */
+.gate::before,.splash::before{z-index:-1}
+.splash{isolation:isolate}
+
+/* night plate, dark scrim (dark = bare :root). Narrow windows: text spans the width, so one even scrim. */
+body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"])::before,
+.gate::before,
+.splash::before{
+  background-image:linear-gradient(rgba(3,5,7,.62),rgba(3,5,7,.62)),url("../assets/lean/painted-codex-3@2x.webp");
+}
+/* the gate keeps a heavier scrim: its text sits bare on the plate */
+.gate::before,.splash::before{
+  background-image:linear-gradient(rgba(3,5,7,.78),rgba(3,5,7,.78)),url("../assets/lean/painted-codex-3@2x.webp");
+}
+/* day plate, pale scrim */
+:root[data-theme="light"] body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"])::before,
+:root[data-theme="light"] .gate::before,
+:root[data-theme="light"] .splash::before{
+  background-image:linear-gradient(rgba(247,239,224,.52),rgba(247,239,224,.52)),url("../assets/lean/painted-day-v2@2x.webp");
+}
+
+/* wide windows: page text ends at about 70% of the width (right lane is hers), the gate is a centred column */
+@media screen and (min-width:1180px){
+  body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"])::before{
+    background-image:linear-gradient(90deg,rgba(3,5,7,.80) 0,rgba(3,5,7,.80) 70%,rgba(3,5,7,.22) 90%,rgba(3,5,7,.22) 100%),url("../assets/lean/painted-codex-3@2x.webp");
+  }
+  .gate::before,.splash::before{
+    background-image:linear-gradient(90deg,rgba(3,5,7,.22) 0,rgba(3,5,7,.80) 30%,rgba(3,5,7,.80) 70%,rgba(3,5,7,.22) 100%),url("../assets/lean/painted-codex-3@2x.webp");
+  }
+  :root[data-theme="light"] body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"])::before{
+    background-image:linear-gradient(90deg,rgba(247,239,224,.52) 0,rgba(247,239,224,.52) 70%,rgba(247,239,224,.16) 90%,rgba(247,239,224,.16) 100%),url("../assets/lean/painted-day-v2@2x.webp");
+  }
+  :root[data-theme="light"] .gate::before,:root[data-theme="light"] .splash::before{
+    background-image:linear-gradient(90deg,rgba(247,239,224,.16) 0,rgba(247,239,224,.52) 30%,rgba(247,239,224,.52) 70%,rgba(247,239,224,.16) 100%),url("../assets/lean/painted-day-v2@2x.webp");
+  }
+}
+
+/* print.css is frozen and only sets a white body; the layer must not print */
+@media print{
+  body::before,.gate::before,.splash::before{display:none!important}
+}
+
+/* light theme: the plate is seen through a light scrim, so bare text that sits straight on it gets a surface
+   instead of the whole picture being scrimmed pale */
+:root[data-theme="light"] .pln .leg{background:rgba(247,239,224,.94);padding:var(--s-2) var(--s-5);border-radius:var(--r-sm)}
+/* list group headers (review, weak, flagged, subject) sit between cards: a card-coloured bar */
+:root[data-theme="light"] body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"]) .grouphdr{
+  background:var(--card);border-radius:var(--r-sm);padding:var(--s-2) var(--s-5)}
+/* gate sign-in: the intro, buttons and note share one soft lifted panel; its edge dissolves into the painting (no hard border) */
+:root[data-theme="light"] .gstep[data-step="signin"]{
+  width:min(100%,540px);padding:var(--s-11) var(--s-10);border-radius:var(--r-lg);
+  background:rgba(247,239,224,.88);box-shadow:0 0 44px 30px rgba(247,239,224,.88);
+}
+@media print{
+  body::before,.gate::before,.splash::before{display:none!important}
+}

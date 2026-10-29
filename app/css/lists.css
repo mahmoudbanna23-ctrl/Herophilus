@@ -20,18 +20,18 @@
 .lst-head .page-sub{margin:0}
 
 /* ---- buttons: one filled accent button, the rest outlined ------------------------------------------- */
-:is(.lst,.lst-m) .btn{
+:is(.lst,.lst-m,.modal,.gate) .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:var(--s-3);min-height:40px;
   padding:var(--s-4) var(--s-7);border:1px solid var(--line-2);border-radius:var(--r-sm);
   background:var(--card);color:var(--tx);box-shadow:none;
   font-family:var(--font-body);font-size:var(--fs-ui);font-weight:600;letter-spacing:0;text-transform:none;
 }
-:is(.lst,.lst-m) .btn::before,
-:is(.lst,.lst-m) .btn::after{display:none}
-:is(.lst,.lst-m) .btn:hover:not(:disabled){background:var(--bg-2)}
-:root :is(.lst,.lst-m) .btn.go:not(:disabled){background:var(--accent);color:var(--on-accent);border-color:var(--accent);box-shadow:none}
-:is(.lst,.lst-m) .btn.danger{background:var(--card);color:var(--bad);border-color:var(--bad)}
-:is(.lst,.lst-m) .btn:disabled{opacity:.5}
+:is(.lst,.lst-m,.modal,.gate) .btn::before,
+:is(.lst,.lst-m,.modal,.gate) .btn::after{display:none}
+:is(.lst,.lst-m,.modal,.gate) .btn:hover:not(:disabled){background:var(--bg-2)}
+:root :is(.lst,.lst-m,.modal,.gate) .btn.go:not(:disabled){background:var(--accent);color:var(--on-accent);border-color:var(--accent);box-shadow:none}
+:is(.lst,.lst-m,.modal,.gate) .btn.danger{background:var(--card);color:var(--bad);border-color:var(--bad)}
+:is(.lst,.lst-m,.modal,.gate) .btn:disabled{opacity:.5}
 .lst .filterbar{margin-bottom:var(--s-9);gap:var(--s-4)}
 
 /* ---- numbers ---------------------------------------------------------------------------------------- */
@@ -65,7 +65,7 @@
 /* ---- module chips: small-radius tags, subject colour is identity only ------------------------------- */
 .lst .chip{
   display:inline-flex;align-items:center;gap:var(--s-3);padding:var(--s-2) var(--s-4);cursor:pointer;
-  border:1px solid var(--line-2);border-radius:var(--r-sm);background:transparent;color:var(--ink-2);
+  border:1px solid var(--line-2);border-radius:var(--r-sm);background:var(--card);color:var(--ink-2);
   font-family:var(--font-body);font-size:var(--fs-md);font-weight:600;
 }
 .lst .chip::before,.lst .chip::after,.lst .chip .chiplabel::after{display:none}   /* the old tick, strike and underline marks (views.css .chiplabel::after); the colour of the border carries "on" */

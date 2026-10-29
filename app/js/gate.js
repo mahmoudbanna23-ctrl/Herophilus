@@ -69,9 +69,11 @@ function drawRailSync(){
      stopped an hour ago looks identical to one that finished a second ago.
      Say when. */
   const when=lastSyncAt?' '+syncClock(lastSyncAt):'';
-  const label={idle:'Synced'+when,busy:'Syncing\u2026',err:'Sync failed \u2014 retry on next change',off:'Offline'}[syncState]||'Synced'+when;
+  const label={idle:'Synced'+when,busy:'Syncing\u2026',err:'Not synced. We will try again soon.',off:'Offline. Saved on this device.'}[syncState]||'Synced'+when;
   const cls={idle:'ok',busy:'busy',err:'err',off:''}[syncState]||'ok';
-  el.innerHTML=`<span class="syncdot ${cls}"></span>${label}`;
+  /* While syncing the light is the copied Lottie loader (js/sync-fx.js); every other state is a plain dot. */
+  el.innerHTML=(syncState==='busy'?`<span class="sync-lo" aria-hidden="true"></span>`:`<span class="syncdot ${cls}"></span>`)+label;
+  if(typeof syncLoadMount==='function')syncLoadMount();
 }
 
 async function signInGoogle(){
@@ -394,7 +396,7 @@ service cloud.firestore {
    </ol>
    <div class="modal-actions" style="margin-top:18px">
      <button class="btn sec" onclick="closeModal();showGate()">Close</button>
-     ${cfg?`<button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="clearCfg()">Remove</button>`:''}
+     ${cfg?`<button class="btn danger" onclick="clearCfg()">Remove</button>`:''}
      <button class="btn go" onclick="saveCfg()">Save</button>
    </div>`,true);
 }
@@ -759,7 +761,7 @@ function switchProfile(){
      <div class="modal-actions">
        <button class="btn sec" onclick="closeModal()">Stay</button>
        <button class="btn sec" onclick="leaveProfile()">Switch profile</button>
-       <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="signOutCloud()">Sign out</button>
+       <button class="btn danger" onclick="signOutCloud()">Sign out</button>
      </div>`);
     return;
   }
@@ -809,10 +811,12 @@ function editProfile(id){
 function drawProfileEditor(isEdit){
   showModal(`<h3>${isEdit?'Edit profile':'New profile'}</h3>
    ${avHTML(draft.av,'avprev')}
-   <input class="keyin" id="pfName" placeholder="Name" value="${esc(draft.name)}"
-     style="width:100%;font-family:inherit;font-weight:700;margin-bottom:14px"
-     oninput="draft.name=this.value">
-   <div style="font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px">Picture</div>
+   <div class="input-wrapper">
+     <input class="input-box" id="pfName" placeholder="Name" value="${esc(draft.name)}" aria-label="Name"
+       oninput="draft.name=this.value">
+     <span class="underline"></span>
+   </div>
+   <div class="m-lab">Picture</div>
    <div class="emgrid">
      ${AVATARS.map(k=>`<button class="emb ${avKey(draft.av)===k&&draft.av.t!=='p'?'on':''}" title="${AVNAMES[k]}"
        onclick="draft.av={t:'g',v:'${k}',c:draft.av.c,f:draft.av.f};drawProfileEditor(${isEdit})"><img src="${avSrc(k)}" alt="${AVNAMES[k]}"></button>`).join('')}
@@ -821,27 +825,30 @@ function drawProfileEditor(isEdit){
      ${AVCOLS.map(c=>`<button class="colb ${draft.av.c===c?'on':''}" style="background:${c}"
        onclick="draft.av.c='${c}';drawProfileEditor(${isEdit})"></button>`).join('')}
    </div>
-   <div style="font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px">Frame</div>
+   <div class="m-lab">Frame</div>
    <div class="frgrid">
      ${(()=>{const tileImg=`<img src="${draft.av.t==='p'?draft.av.v:avSrc(avKey(draft.av))}" alt="">`;
        return ['plain','mount','moulding','walnut'].map(f=>`<button class="frtile ${f!=='plain'?'hasfr ':''}${(draft.av.f||'plain')===f?'on':''}"
          style="--fr-c:${draft.av.c};border-color:${f==='plain'?draft.av.c:'transparent'}"
          onclick="draft.av.f='${f}';drawProfileEditor(${isEdit})">${avFrame(f,tileImg,false)}</button>`).join('');})()}
    </div>
-   <div style="margin-bottom:16px">
+   <div class="m-photo">
      <button class="btn sec" onclick="document.getElementById('pfPhoto').click()">Upload a photo</button>
-     ${draft.av.t==='p'?`<button class="ai-p" onclick="draft.av={t:'g',v:AVATARS[0],c:draft.av.c,f:draft.av.f};drawProfileEditor(${isEdit})" style="border:2px solid var(--line-2);padding:7px 13px;border-radius:var(--r-lg);font-size:12px;font-weight:700;margin-left:7px">Use a portrait instead</button>`:''}
+     ${draft.av.t==='p'?`<button class="ai-p" onclick="draft.av={t:'g',v:AVATARS[0],c:draft.av.c,f:draft.av.f};drawProfileEditor(${isEdit})">Use a portrait instead</button>`:''}
      <input type="file" id="pfPhoto" accept="image/*" style="display:none" onchange="pfUpload(event,${isEdit})">
    </div>
-   <div style="font-size:11px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px">PIN (optional)</div>
-   <input class="keyin" id="pfPin" inputmode="numeric" maxlength="4" placeholder="4 digits \u2014 leave blank for none"
-     value="${esc(draft.pin||'')}" style="width:100%;font-family:inherit;font-weight:700"
-     oninput="draft.pin=this.value.replace(/[^0-9]/g,'').slice(0,4)">
-   <div class="ai-note" style="font-size:11.5px;color:var(--ink-4);font-weight:600;margin-top:8px;line-height:1.5">
+   <div class="m-lab">PIN (optional)</div>
+   <div class="input-wrapper">
+     <input class="input-box" id="pfPin" inputmode="numeric" maxlength="4" placeholder="4 digits \u2014 leave blank for none" aria-label="PIN"
+       value="${esc(draft.pin||'')}"
+       oninput="draft.pin=this.value.replace(/[^0-9]/g,'').slice(0,4)">
+     <span class="underline"></span>
+   </div>
+   <div class="m-small">
      Keeps other people from clicking into your profile by accident. It is not real security \u2014 anyone determined can get past it.</div>
-   <div class="modal-actions" style="margin-top:18px">
+   <div class="modal-actions">
      <button class="btn sec" onclick="closeModal();showGate()">Cancel</button>
-     ${isEdit?`<button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="deleteProfile('${draft.id}')">Delete</button>`:''}
+     ${isEdit?`<button class="btn danger" onclick="deleteProfile('${draft.id}')">Delete</button>`:''}
      <button class="btn go" onclick="saveProfile()">Save</button>
    </div>`,true);
 }
@@ -889,7 +896,7 @@ function deleteProfile(id){
    <p>This erases that profile's answers, highlights, schedule and review deck. It cannot be undone.</p>
    <div class="modal-actions">
      <button class="btn sec" onclick="editProfile('${id}')">Cancel</button>
-     <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="doDeleteProfile('${id}')">Delete</button>
+     <button class="btn danger" onclick="doDeleteProfile('${id}')">Delete</button>
    </div>`);
 }
 function doDeleteProfile(id){
@@ -909,12 +916,12 @@ function manageProfiles(){
     const msrc=mav.t==='p'?mav.v:avSrc(avKey(mav));
     const mfr=mav.f||'plain';
     const minner=avFrame(mfr,`<img src="${msrc}" alt="">`,true);
-    h+=`<button class="ch-row" style="margin-bottom:8px" onclick="editProfile('${p.id}')">
+    h+=`<button class="ch-row" onclick="editProfile('${p.id}')">
       <div class="rav${mfr!=='plain'?' hasfr':''}" style="width:34px;height:34px;border-radius:var(--r-lg);display:flex;align-items:center;justify-content:center;font-size:18px;overflow:hidden;border:${mfr==='plain'?'2px solid '+mav.c:'0'};background:${mav.c};--fr-c:${mav.c};--fr-t:3px">${minner}</div>
       <span class="ch-name">${esc(p.name)}</span>
       <span class="ch-count">${p.pin?'PIN set':'no PIN'}</span></button>`;
   });
-  h+=`<div class="modal-actions" style="margin-top:16px">
+  h+=`<div class="modal-actions">
      <button class="btn sec" onclick="closeModal();showGate()">Back</button>
      <button class="btn go" onclick="editProfile(null)">Add profile</button></div>`;
   showModal(h,true);
