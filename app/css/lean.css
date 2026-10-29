@@ -55,6 +55,7 @@
 .lean-cards { margin: auto 0 var(--s-11, 28px) var(--lean-left); width: calc(51% - var(--lean-left)); } /* wide enough that ophthalmology / neuropsychiatry fit on one line at 1180 */
 .lean-cards .lean-h2 { margin-top: 0; }
 .lean-cards .mod-art { aspect-ratio: 6 / 1; } /* size only: four cards must fit above the runway */
+.lean-cards .mod-art { background-image: var(--art); } /* owner 2026-10-29: no subject-colour wash over the wide paintings on home; icon, title and dot keep the colour */
 .lean-cards .mod-card .startrow { min-height: 36px; }
 
 /* The rest of the dashboard follows the scene on the plain ground. */
@@ -205,4 +206,34 @@
   body[data-view="home"] .lean-after .hp-txt p,
   body[data-view="home"] .lean-after .hp-txt p:last-child { color: var(--lean-ink-2); }
   body[data-view="home"] .lean-after .filterbar .btn.go { background: var(--lean-brass); color: var(--lean-on-brass); box-shadow: none; }
+
+  /* ===== Warm cards r4 2026-10-26: the four subject cards over the painting take the same panel look as the cards below
+     (dark wood in the dark theme, parchment in the light theme). Same tokens, no new colours. Colour only: the picture (.mod-art),
+     the module icon and its colour, size and layout stay; hover changes colour only (no lift, no glow). ===== */
+  body[data-view="home"] .lean-cards .mod-card {
+    background-image: none; background-color: var(--lean-panel); border-color: var(--lean-line); box-shadow: none; color: var(--lean-ink);
+  }
+  body[data-view="home"] .lean-cards button.card.mod-card:hover:not(:disabled),
+  body[data-view="home"] .lean-cards button.card.mod-card:active:not(:disabled),
+  body[data-view="home"] .lean-cards button.card.mod-card:focus-visible {
+    background-color: var(--lean-panel); border-color: var(--lean-brass-text); box-shadow: none;
+  }
+  body[data-view="home"] .lean-cards .mod-name,
+  body[data-view="home"] .lean-cards .mod-card.locked .mod-name,
+  body[data-view="home"] .lean-cards .mod-card .startgo,
+  body[data-view="home"] .lean-cards .ring .rv { color: var(--lean-ink); }
+  body[data-view="home"] .lean-cards .mod-meta,
+  body[data-view="home"] .lean-cards .ringmeta .b { color: var(--lean-ink-2); }
+  /* accuracy figure: inline accColor tokens, same mapping as the stat numbers above */
+  body[data-view="home"] .lean-cards .ringmeta .a[style*="var(--ok)"] { color: var(--lean-ok) !important; }
+  body[data-view="home"] .lean-cards .ringmeta .a[style*="var(--warn)"] { color: var(--lean-warn) !important; }
+  body[data-view="home"] .lean-cards .ringmeta .a[style*="var(--bad)"] { color: var(--lean-bad) !important; }
+  body[data-view="home"] .lean-cards .ringmeta .a[style*="var(--ink-4)"] { color: var(--lean-ink-2) !important; }
+  /* ring track is a fixed pale lavender (#e5e2f5) in utils.js: on a dark or parchment panel it shouts, so the hairline colour instead */
+  body[data-view="home"] .lean-cards .ring svg circle:first-child { stroke: var(--lean-line); }
+  /* the progress arc keeps its module colour, only its value moves so it clears 4.5:1 on the panel (measured: dark brightness 1.5 -> min 4.92,
+     light 0.85 -> min 4.70; unchanged it was 2.57 purple / 2.69 blue on the dark wood). A colour filter, not a glow. */
+  body[data-view="home"] .lean-cards .ring svg circle:last-child { filter: brightness(1.5); }
+  :root[data-theme="light"] body[data-view="home"] .lean-cards .ring svg circle:last-child { filter: brightness(.85); }
+  body[data-view="home"] .lean-cards .mod-card > .soon { background: var(--lean-panel); border-color: var(--lean-line); color: var(--lean-ink-2); }
 }

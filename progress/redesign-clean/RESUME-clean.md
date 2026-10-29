@@ -91,5 +91,13 @@ Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before d
   D:\scratch 2026\lean-in\notes.md "Melt*"; lookers looker-melt*.md (r3 GOOD); refuter refute\r5\verdict.md PASS.
   Owner saw films rec\melt-*.mp4, said yes. Left as is (not asked): subject cards over the painting stay
   white/navy, mascot bubble navy in dark; 820 day plate floor reads a little dark (painting's own).
+- 2026-10-29 PORTED: warm subject cards over the painting (r4: dark wood / parchment panels, lean.css colour only,
+  looker-melt-r4.md GOOD) + NEW WIDE CARD PAINTINGS. Owner: square photos "half cropped" at the home 6:1 strip,
+  picked new wide paintings. Codex gpt-image, refs = own mod-*.jpg + painted plate; generated\mod-wide-<sub>\
+  (approved: ent/ophtho strip-v1b, neuro/peds strip-v2, 1536x256) -> app\assets\mod-<sub>-wide.jpg; render.js
+  home cards add '-wide' (MOD_ART in frozen storage.js untouched; theory cards keep square art). Owner ruled the
+  subject-colour wash OFF on home (lean.css `.lean-cards .mod-art`). Lookers: D:\scratch 2026\lean-in\
+  looker-wide-v1.md, looker-wide-cards.md. Checks: boot 0 errors · ui-tasks 7 PASS · frozen 0. Refuter r6:
+  D:\scratch 2026\lean-in\refute\r6\verdict.md.
 - OPEN: card block starts y 8-10% (brief said 15%) · returning profiles now see stats after the scene ·
   49 leftover hlean-* test copies in the user temp folder, deletion was denied - owner to clear.
