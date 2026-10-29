@@ -465,6 +465,8 @@ function doSearch(){
   /* THEORY is still indexed and still searchable in the code; it is simply not
      searched while the section is held back, because a result the student
      cannot open is worse than no result. */
+  const chapters=openModules().flatMap(m=>m.groups.flatMap(g=>g.chapters)).filter(([cid,name])=>name.toLowerCase().includes(v)&&qsIn(cid).length);
+  const chits=[...new Map(chapters.map(c=>[c[0],c])).values()];
   const thits=[];
   if(!THEORY_LOCKED)Object.keys(THEORY).forEach(ch=>{
     (THEORY[ch].sections||[]).forEach(s=>{
@@ -483,17 +485,25 @@ function doSearch(){
     const showQ=extra?hits:hits.slice(0,12);
     let h='';
     let id=0;
-    showT.forEach(t=>{
-      h+=`<button class="res-item" type="button" role="option" id="res-${id}" data-jump="theory" data-ch="${esc(t.ch)}" data-sec="${esc(t.sec.id)}">
-        <span class="res-tag" style="color:var(--neuro)">${ico('scroll',16)} Notes \u00b7 ${esc(chapterName(t.ch))}</span>
-        <span class="res-txt"><b>${esc(t.sec.h)}</b></span></button>`;
-      id++;
-    });
     showQ.forEach(({q})=>{
       const m=moduleOf(q.module)||{hex:'#7a6a55'};
       h+=`<button class="res-item" type="button" role="option" id="res-${id}" data-jump="q" data-qid="${esc(q.id)}">
         <span class="res-tag" style="color:${m.hex}">${esc(chapterName(q.chapter))}</span>
         <span class="res-txt">${esc(q.stem.slice(0,130))}\u2026</span></button>`;
+      id++;
+    });
+    if(showQ.length)h='<div role="group" aria-label="Questions"><div class="res-empty" aria-hidden="true">Questions</div>'+h+'</div>';
+    if(chits.length){
+      h+='<div role="group" aria-label="Chapters"><div class="res-empty" aria-hidden="true">Chapters</div>';
+      chits.forEach(([cid,name])=>{
+        h+=`<button class="res-item" type="button" role="option" id="res-${id++}" data-jump="chapter" data-ch="${esc(cid)}"><span class="res-txt">${esc(name)}</span></button>`;
+      });
+      h+='</div>';
+    }
+    showT.forEach(t=>{
+      h+=`<button class="res-item" type="button" role="option" id="res-${id}" data-jump="theory" data-ch="${esc(t.ch)}" data-sec="${esc(t.sec.id)}">
+        <span class="res-tag" style="color:var(--neuro)">${ico('scroll',16)} Notes \u00b7 ${esc(chapterName(t.ch))}</span>
+        <span class="res-txt"><b>${esc(t.sec.h)}</b></span></button>`;
       id++;
     });
     /* The count is of matches this search actually collected, and the loop above
@@ -507,8 +517,8 @@ function doSearch(){
     sinput.setAttribute('aria-expanded','true');
     sinput.removeAttribute('aria-activedescendant');
   };
-  if(!hits.length&&!thits.length){
-    box.innerHTML='<div class="res-empty">Nothing matched \u2014 try a shorter term. Search covers questions'+(THEORY_LOCKED?' and explanations.':', explanations and the notes.')+'</div>';
+  if(!hits.length&&!thits.length&&!chits.length){
+    box.innerHTML='<div class="res-empty">Nothing matched \u2014 try a shorter term. Search covers questions, chapters'+(THEORY_LOCKED?' and explanations.':', explanations and the notes.')+'</div>';
     box.classList.add('show');
     sinput.setAttribute('aria-expanded','true');
     sinput.removeAttribute('aria-activedescendant');
@@ -529,6 +539,7 @@ $('results').addEventListener('click',e=>{
   const j=b.getAttribute('data-jump');
   if(j==='more'){doSearch.all=true;doSearch();return}
   if(j==='theory'){jumpTheory(b.getAttribute('data-ch'),b.getAttribute('data-sec'));return}
+  if(j==='chapter'){$('search').value='';doSearch();startChapter(b.getAttribute('data-ch'));return}
   if(j==='q'){jump(b.getAttribute('data-qid'));return}
 });
 function jumpTheory(ch,sec){
@@ -541,8 +552,8 @@ function jump(id){$('search').value='';$('results').classList.remove('show');$('
 /* The listbox is operable from the keyboard because the cursor only has the
    input to land on otherwise, and a dropdown the cursor cannot reach is a
    dropdown that does not exist. ArrowDown and ArrowUp move through the items,
-   Home and End jump to the ends, Enter opens the one with focus, Escape closes
-   the listbox without clearing the typed term — the student may still want it. */
+   Home and End jump to the ends, Enter opens the one with focus, Escape clears
+   the search and closes the listbox. */
 $('search').addEventListener('keydown',e=>{
   const box=$('results');
   const items=box.querySelectorAll&&box.querySelectorAll('.res-item');
@@ -550,7 +561,7 @@ $('search').addEventListener('keydown',e=>{
   if(e.key==='ArrowDown'&&open){e.preventDefault();if(items[0].focus)items[0].focus();return}
   if(e.key==='ArrowUp'&&open){e.preventDefault();if(items[items.length-1].focus)items[items.length-1].focus();return}
   if(e.key==='Enter'&&open){e.preventDefault();if(items[0])items[0].click();return}
-  if(e.key==='Escape'&&open){e.preventDefault();box.classList.remove('show');e.target.setAttribute('aria-expanded','false');e.target.removeAttribute('aria-activedescendant');return}
+  if(e.key==='Escape'){e.preventDefault();$('search').value='';doSearch();box.classList.remove('show');e.target.setAttribute('aria-expanded','false');e.target.removeAttribute('aria-activedescendant');return}
 });
 $('results').addEventListener('keydown',e=>{
   const items=e.currentTarget.querySelectorAll('.res-item');
@@ -561,7 +572,7 @@ $('results').addEventListener('keydown',e=>{
   if(e.key==='ArrowUp'){e.preventDefault();if(items[(i-1+items.length)%items.length].focus)items[(i-1+items.length)%items.length].focus();return}
   if(e.key==='Home'){e.preventDefault();if(items[0].focus)items[0].focus();return}
   if(e.key==='End'){e.preventDefault();if(items[items.length-1].focus)items[items.length-1].focus();return}
-  if(e.key==='Escape'){e.preventDefault();$('results').classList.remove('show');const s=$('search');s.setAttribute('aria-expanded','false');s.removeAttribute('aria-activedescendant');s.focus();return}
+  if(e.key==='Escape'){e.preventDefault();$('search').value='';doSearch();$('results').classList.remove('show');const s=$('search');s.setAttribute('aria-expanded','false');s.removeAttribute('aria-activedescendant');s.focus();return}
 });
 
 /* ============================================================================

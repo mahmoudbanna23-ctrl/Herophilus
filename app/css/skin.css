@@ -211,7 +211,7 @@
 
 /* B. Streak chip in the bar: "streak" sat alone on a second line. Two balanced lines
    are the deliberate shape (the box is too narrow for one at this size). */
-.streak>span{text-wrap:balance}
+.streak>span{text-wrap:balance;line-height:1.25}
 
 /* C. Subject-page section labels (Ear, Nose...): --ink-3 measured 3.99:1 dark and
    4.06:1 light at 11 px. A step toward --ink-2 (a text token is mixed, none restated). */
@@ -291,221 +291,21 @@
 :root:not([data-theme="light"]) .qg.bad{background:rgba(240,64,76,.17)}
 :root:not([data-theme="light"]) .fb.n{background:rgba(240,64,76,.14)}
 
-/* STRIP — slim floating rail */
-/* The left bar is a thin column of chips floating over the page. Pointing at (only where a
-   pointer can hover) or tabbing to ONE chip opens that chip alone (its name grows out to the
-   right); the whole panel opens only by class .open, set by the menu button. Same markup,
-   same buttons; nothing is display:none'd. Wins by the :root prefix and the chain below (no
-   !important). Under 601 px the old slide-in drawer is untouched.
-   Stacking: strip 30, a rail with an opened chip or the open panel 160 (above the mascot at
-   150, below the gate at 200), tap button 170. One thin-state block serves every pointer. */
-:root{--chip:36px;--strip-w:52px;--rail-open:238px;--fab:38px}
-@media (pointer:coarse){:root{--chip:40px;--strip-w:56px;--fab:42px}}
-
-@media (min-width:601px){
-
-/* both states: out of the flow (the page gets the full width), full height, always at 0 */
-:root .rail{
-  position:fixed;top:0;bottom:0;left:0;height:auto;
-  transition:width .18s ease;
+/* Labelled menu: fixed desktop column; the existing narrow drawer remains. */
+:root{--page-pl:var(--s-11);--strip-w:0px;--rail-open:260px;--fab:38px}
+:root .rail{width:var(--rail-open);flex-shrink:0;overflow-x:hidden;scrollbar-gutter:stable}
+:root .rail .nav-item{white-space:normal;border-radius:6px;min-height:36px}
+:root .rail .nav-label{font-size:var(--fs-xs)}
+@media (min-width:861px){
+  :root .rail{position:fixed;inset:0 auto 0 0;height:100vh;z-index:30}
+  :root .main{margin-left:var(--rail-open)}
+  :root .page{padding-top:64px}
 }
-/* #nav keeps a fixed strip-wide box in both states; its rows overflow it when the
-   panel is open. clepClearRail() reads this box, so the mascot never moves. */
-:root .rail .nav{
-  width:var(--strip-w);flex:none;overflow:visible;
-  padding:var(--s-2) calc((var(--strip-w) - var(--chip)) / 2) var(--s-4);
-}
-/* Vertical metrics are the SAME in both states, so no row moves under the pointer when the
-   strip widens (a taller panel head would slide the chip you aimed at out from under it).
-   The semester line and the key band leave the head; the chips keep a fixed pitch. */
-/* the semester line (#railTerm) is hidden visually, not removed, so screen readers keep it;
-   out of the flow, so the chip rows sit exactly where they did */
-:root .rail .rail-head::after{display:none}
-:root .rail .rail-sub{
-  position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;
-  overflow:hidden;clip-path:inset(50%);white-space:nowrap;
-}
-:root .rail .rail-head{padding-block:10px 4px}
-:root .rail .logo{height:var(--chip);align-items:center}
-:root .rail .railprof{height:var(--chip);padding-block:0;margin-block:4px 2px}
-:root .rail .streak{height:44px;padding-block:var(--s-2);margin-block:2px}
-:root .rail .railsync{height:24px;padding-block:0;margin-block:2px}
-:root .rail .nav-item{height:var(--chip);min-height:0;padding-block:0;margin-block:2px}
-:root .rail .nav-label{height:24px;padding-block:0}
-@media (max-height:860px){
-  :root .rail .nav-item{margin-block:1px}
-}
-/* page room (final): the left gutter keeps content 16 px clear of the strip; where the
-   centred column already leaves more than that (wide windows) the base 28 px stays.
-   Top padding clears the band of floating buttons (STRIP B below). */
-:root{--strip-clear:calc(var(--strip-w) + 16px)}
-:root .page{
-  --page-pl:max(var(--s-11), calc(var(--strip-clear) - max(0px, (100vw - 1180px) / 2)));
-  padding-top:calc(var(--fab) + 18px);
-  padding-left:var(--page-pl);
-}
-/* the theory reader centres its sheet on the window: the right gutter matches the left,
-   so the page, the sheet and the turn arrows sit evenly either side of the middle */
-:root body.bk-on .page{padding-right:var(--page-pl)}
-/* the old hamburger is only for touch here (re-shown below); a narrow desktop window
-   has the hover strip */
-:root .topbar .mobile-only{display:none}
-
-/* ---- expanded ---- */
-/* the whole panel opens by class .open only (the touch menu button); a single chip opens
-   from the collapsed block below */
-:root .rail.open{
-  width:var(--rail-open);z-index:160;overflow-x:hidden;overflow-y:auto;scrollbar-width:thin;
-}
-:root .rail.open .nav > *{
-  width:calc(var(--rail-open) - 16px);margin-inline:0;
-}
-/* ---- collapsed: the rail has no ground; every chip is its own button and opens ALONE ---- */
-/* One block serves every pointer. The rail box is --rail-open wide (so an opened pill is
-   never cut at 52 px) but paints nothing and takes no clicks; only the buttons take theirs
-   back. #nav keeps its strip-wide box above. Each button is laid out at pill width and cut
-   down to its 36 px chip with clip-path (the cut-away part has no hit area and no layout);
-   hover or keyboard focus on ONE button lifts the cut on that button only. The round chip
-   ground is the button's ::before, so the pill's fill and the chip's ring never fight.
-   Hover opens only where a pointer can hover; keyboard focus opens everywhere. */
-:root{--pill-w:calc(var(--rail-open) - var(--strip-w) + var(--chip))}
-:root:not([data-theme="light"]) .rail{--pill-ring:rgba(217,180,74,.20)}
-:root[data-theme="light"] .rail{--pill-ring:rgba(122,84,16,.26)}
-:root .rail:not(.open){
-  width:var(--rail-open);z-index:30;overflow-x:hidden;overflow-y:auto;scrollbar-width:none;
-  background:none;border:0;box-shadow:none;
-  backdrop-filter:none;-webkit-backdrop-filter:none;
-  pointer-events:none;
-}
-:root .rail:not(.open)::after{display:none}
-:root .rail:not(.open) .blip{pointer-events:auto}
-:root .rail:not(.open) .rail-head{padding-inline:0;width:var(--strip-w)}
-:root .rail:not(.open) .logo{font-size:0;gap:0;justify-content:center}
-:root .rail:not(.open) .nav-label{font-size:0;gap:0;padding-inline:0;justify-content:center}
-:root .rail:not(.open) .nav-label::after{flex:none;width:22px}
-/* a pill that opens clears the mascot (150) */
-@media (hover:hover){
-  :root .rail:not(.open):hover{z-index:160}
-}
-@supports selector(:has(a)){
-  :root .rail:not(.open):has(:focus-visible){z-index:160}
-}
-
-/* the four kinds of chip, shut: pill-wide box, cut to the chip. --pr = pill corner radius */
-:root .rail:not(.open) :is(.nav-item,.railprof,.streak,.railsync){
-  --pr:18px;
-  position:relative;box-sizing:border-box;width:var(--pill-w);align-self:flex-start;
-  margin-inline:calc((var(--strip-w) - var(--chip)) / 2) 0;   /* #nav's own padding already gives its items this gutter */
-  white-space:nowrap;background:none;border:0;box-shadow:none;border-radius:var(--pr);
-  clip-path:inset(0 calc(100% - var(--chip)) 0 0 round var(--pr));
-  transition:clip-path .22s cubic-bezier(.2,.8,.2,1);
-  pointer-events:auto;
-}
-:root .rail:not(.open) .nav-item{
-  margin-inline:0;
-  gap:10px;justify-content:flex-start;
-  padding-inline:calc((var(--chip) - 19px) / 2) 12px;
-}
-:root .rail:not(.open) .railprof{padding-inline:calc((var(--chip) - 28px) / 2) 12px}
-:root .rail:not(.open) .railprof .rav{width:28px;height:28px}
-:root .rail:not(.open) .railsync{--pr:12px;padding-inline:calc((var(--chip) - 8px) / 2) 12px}
-/* the words start past the chip edge, so no letter peeks out of the shut chip */
-:root .rail:not(.open) .railsync .syncdot{margin-right:calc(var(--chip) - (var(--chip) - 8px) / 2 - 8px + 2px)}
-/* the longest sync label ("Sync failed - retry on next change") is wider than the pill, and a
-   flex container cannot ellipsise its loose text. gate.js sets display:flex inline (and none
-   when signed out), so only !important can make the chip a block here; the [style*] guard
-   keeps the signed-out chip hidden. Text then ends in an ellipsis inside the pill. */
-:root .rail:not(.open) .railsync[style*="flex"]{
-  display:block !important;line-height:24px;overflow:hidden;text-overflow:ellipsis;
-}
-/* streak: icon over number in the chip zone, the words to the right of it */
-:root .rail:not(.open) .streak{
-  --pr:22px;padding-inline:0;gap:2px;
-  flex-direction:column;align-items:flex-start;justify-content:center;
-}
-:root .rail:not(.open) .streak > .fl{width:var(--chip);justify-content:center}
-:root .rail:not(.open) .streak > span:not(.fl){width:var(--chip);text-align:center}
-:root .rail:not(.open) .streak .t{
-  position:absolute;left:calc(var(--chip) + 8px);top:50%;transform:translateY(-50%);
-  width:calc(var(--pill-w) - var(--chip) - 20px);white-space:normal;text-align:left;
-}
-/* the chip's own ground: round, glass, hairline ring */
-:root .rail:not(.open) :is(.nav-item,.railprof,.streak,.railsync)::before{
-  content:"";position:absolute;left:0;top:0;width:var(--chip);height:100%;z-index:-1;
-  border-radius:50%;background:var(--glass-2);box-shadow:inset 0 0 0 1px var(--line-2);
-}
-:root .rail:not(.open) .railsync::before{border-radius:12px}
-:root .rail:not(.open) .streak::before{border-radius:999px}
-/* the open page: gold/brass bar + ring on a tint (--neon is dark brass in the light look) */
-:root .rail:not(.open) .nav-item.on::before{
-  background:linear-gradient(rgba(217,180,74,.16),rgba(217,180,74,.16)),var(--glass-2);
-  box-shadow:inset 3px 0 0 var(--neon),inset 0 0 0 1px var(--neon);
-}
-/* due / live-session count is a dot on the shut chip (#navSessClock swaps .badge-due <-> .cnt);
-   .cnt sits in the cut-away part */
-:root .rail:not(.open) .nav-item .badge-due{
-  position:absolute;top:2px;left:calc(var(--chip) - 11px);width:9px;height:9px;min-width:0;
-  margin:0;padding:0;overflow:hidden;font-size:0;border-radius:50%;
-}
-
-/* ---- one button open: the cut lifts, the pill fills opaque, the label and count show ---- */
-@media (hover:hover){
-  :root .rail:not(.open) :is(.nav-item,.railprof,.streak,.railsync):hover{
-    clip-path:inset(0 0 0 0 round var(--pr));background:var(--rail-2);
-    box-shadow:inset 0 0 0 1px var(--pill-ring);
-    animation:pop .22s ease-out;transform-origin:left center;
-  }
-  :root .rail:not(.open) :is(.nav-item,.railprof,.streak,.railsync):hover::before{opacity:0}
-  :root .rail:not(.open) .nav-item:hover .badge-due{
-    position:static;width:auto;height:auto;min-width:20px;margin-left:auto;
-    padding:var(--s-1) var(--s-3);overflow:visible;font-size:var(--fs-xs);border-radius:var(--r-lg);
-  }
-  :root .rail:not(.open) .nav-item.on:hover{
-    background:linear-gradient(rgba(217,180,74,.16),rgba(217,180,74,.16)),var(--rail-2);
-    box-shadow:inset 3px 0 0 var(--neon),inset 0 0 0 1px var(--pill-ring);
-  }
-}
-:root .rail:not(.open) :is(.nav-item,.railprof,.streak,.railsync):focus-visible{
-  clip-path:inset(0 0 0 0 round var(--pr));background:var(--rail-2);
-  box-shadow:inset 0 0 0 1px var(--pill-ring);outline-offset:-3px;
-  animation:pop .22s ease-out;transform-origin:left center;
-}
-:root .rail:not(.open) :is(.nav-item,.railprof,.streak,.railsync):focus-visible::before{opacity:0}
-:root .rail:not(.open) .nav-item:focus-visible .badge-due{
-  position:static;width:auto;height:auto;min-width:20px;margin-left:auto;
-  padding:var(--s-1) var(--s-3);overflow:visible;font-size:var(--fs-xs);border-radius:var(--r-lg);
-}
-:root .rail:not(.open) .nav-item.on:focus-visible{
-  background:linear-gradient(rgba(217,180,74,.16),rgba(217,180,74,.16)),var(--rail-2);
-  box-shadow:inset 3px 0 0 var(--neon),inset 0 0 0 1px var(--pill-ring);
-}
-
-/* "Theory soon" is disabled and render.js gives it an inline opacity:.45, which would make its
-   open pill see-through and the label faint. Inline wins over any plain rule, so !important is
-   the only lever: the opened pill is fully opaque like the others; the icon stays dim to read
-   as unavailable. A disabled button cannot take focus, so hover is the only way it opens. */
-@media (hover:hover){
-  :root .rail:not(.open) .nav-item:disabled:hover{opacity:1 !important}
-  :root .rail:not(.open) .nav-item:disabled:hover .ic{opacity:.5}
-}
-
-/* ---- touch: the old hamburger floats above the strip and opens/closes it ---- */
-@media (pointer:coarse){
-  :root .topbar .mobile-only{
-    display:inline-flex;align-items:center;justify-content:center;
-    position:fixed;left:calc((var(--strip-w) - var(--fab)) / 2);top:8px;z-index:170;
-    width:var(--fab);height:var(--fab);padding:0;border-radius:50%;
-    background:var(--glass-2);box-shadow:inset 0 0 0 1px var(--line-2);
-  }
-  /* the column starts below the button in BOTH states, so the open panel never covers it
-     (the button lives in the top bar's stacking layer, 20) and a second tap closes it */
-  :root .rail{top:calc(var(--fab) + 16px)}
-}
-
-@media (prefers-reduced-motion:reduce){
-  :root .rail{transition:none}
-}
-
+@media (max-width:860px){
+  :root .rail{left:calc(-1 * var(--rail-open))}
+  :root .rail.open{left:0}
+  :root .topbar .mobile-only{display:flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;padding:0;border-radius:6px;background:var(--lean-ground);color:var(--lean-ink);border:1px solid currentColor}
+  :root .topbar .mobile-only svg{width:24px;height:24px;stroke-width:2}
 }
 
 /* STRIP B — floating top buttons and search */
@@ -616,9 +416,11 @@
    end reserve above stays the only provision. Layout only; nothing of hers is touched. */
 @media screen and (min-width:1180px){
   :root{--clep-lane:432px;--page-mw:1180px}
-  :root body[data-view="home"]{--page-mw:936px}
+  :root body[data-view="home"]{--page-mw:936px;--lane-rail:0px}
+  /* the column is centred inside .main, which starts --rail-open from the left, so its side margin is
+     (100vw - rail - page-mw) / 2, not (100vw - page-mw) / 2. Home keeps the old figure (--lane-rail:0px). */
   :root body:not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]) .page{
-    padding-right:max(var(--s-11), calc(var(--clep-lane) - max(0px, (100vw - var(--page-mw)) / 2)));
+    padding-right:max(var(--s-11), calc(var(--clep-lane) - max(0px, (100vw - var(--lane-rail, var(--rail-open)) - var(--page-mw)) / 2)));
   }
   /* mock and review dock her bottom-LEFT (clepsydra.js CL_LEFT_VIEWS), so their lane is the left gutter */
   :root body:is([data-view="mock"],[data-view="review"]):not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]) .page{   /* the :not() chain only matches the rule above in weight */

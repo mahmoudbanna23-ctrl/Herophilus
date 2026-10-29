@@ -1,0 +1,17 @@
+STEP 2 FINAL TOUCH - brief 2026-10-29. Same rules as progress\redesign-clean\step2-brief.txt (read it). No git.
+Review: D:\scratch 2026\clean-2\looker-step2-polish.md. Your build is the uncommitted diff in the trial repo.
+
+FIX
+1. 1180 width: weak-chapter names truncate so hard two read "Anatomy..." - make tiles distinguishable (allow two
+   lines with line-clamp, or show the subject name too). Check 1180 and 1024.
+2. The "REVISION" label (On today tag) is a full-round pill - use the app's normal small radius.
+3. Fresh profile shows "Review your saved questions" when nothing is saved - hide that item when its count is 0.
+4. Light theme 1440/1180: the mascot bubble covers hero-panel text. Do NOT change the mascot, her bubble or her
+   motion; only give the page enough end space / right gutter so nothing sits under the bubble (the existing
+   240px end reserve pattern, see overlap-proof.js in progress\redesign-clean). Report if it cannot be done that way.
+Leave the gap above the row (Dolly runway, unchanged by design).
+
+VERIFY: boot-check 0 errors · tasks.js 7 PASS · frozen.js 8bd99322 0 mismatches · node progress\redesign-clean\overlap-proof.js
+if it runs against home (else report). Shots -> D:\scratch 2026\clean-2\shots4\ (-below set, 1440/1180/1024/820 x
+dark/light x fresh/due), 0 console errors.
+OUTPUT: D:\scratch 2026\clean-2\report-final.md, max 80 words. Stop at ~35 tool calls.

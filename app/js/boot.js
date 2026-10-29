@@ -340,7 +340,7 @@ document.addEventListener('keydown',e=>{
      the listbox is open, the page underneath must also stay silent — without
      this, pressing A on a focused result would pick an answer behind it. */
   if($('results').classList.contains('show')&&e.target.closest&&e.target.closest('#results'))return;
-  if(e.key==='Escape'){closeModal();$('results').classList.remove('show');return}
+  if(e.key==='Escape'){closeModal();$('search').value='';doSearch();return}
   if(e.key==='/'){e.preventDefault();$('search').focus();return}
   /* Global, so it works while reading theory as well as in a quiz. Safe above
      the quiz guard because typing targets bailed out at the top of the handler. */
@@ -383,7 +383,7 @@ document.addEventListener('click',e=>{
 (function(){
   var narrow=matchMedia('(max-width:520px)'), el=$('search');
   function setPh(){ el.placeholder = narrow.matches ? 'Search questions'
-    : 'Search questions, topics, explanations\u2026'; }
+    : 'Search questions, chapters, explanations\u2026'; }
   narrow.addEventListener('change',setPh); setPh();
 })();
 

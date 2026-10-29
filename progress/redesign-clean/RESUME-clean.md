@@ -99,5 +99,21 @@ Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before d
   subject-colour wash OFF on home (lean.css `.lean-cards .mod-art`). Lookers: D:\scratch 2026\lean-in\
   looker-wide-v1.md, looker-wide-cards.md. Checks: boot 0 errors · ui-tasks 7 PASS · frozen 0. Refuter r6:
   D:\scratch 2026\lean-in\refute\r6\verdict.md.
-- OPEN: card block starts y 8-10% (brief said 15%) · returning profiles now see stats after the scene ·
-  49 leftover hlean-* test copies in the user temp folder, deletion was denied - owner to clear.
+- OPEN: card block starts y 8-10% (brief said 15%) · 49 leftover hlean-* test copies in the user temp
+  folder, deletion was denied - owner to clear.
+
+## Step 2 DONE 2026-10-29 (home Today + labelled menu; trial branch only, not merged, not uploaded)
+- Briefs step2-brief.txt + step2-fix/polish/final-brief.txt (this folder). Owner: primary Today button ON the
+  painting under the heading; it changes with the day (due review > saved mock > continue chapter > fresh /
+  returning > day done) - not a fixed "Continue". Secondary row below the painting: weak chapters (top 3, name
+  + subject, 3-line clamp), streak, accuracy (hidden on fresh). No days-to-exam (no data, no new key).
+- Rail: labels always visible above 860 (260px, hover reveal removed); <=860 drawer kept, hamburger 44x44.
+  Search lists chapters as own group. Mascot gutter on non-home views subtracts the rail (skin.css --lane-rail).
+- Reports D:\scratch 2026\clean-2\ (report*.md, looker-step2*.md, refute-step2*.md, op-head/op-new/op-fix.txt);
+  shots shots4\ (home) + shots5\ (subject pages), 6 sent to owner.
+- Checks: boot 0 errors · ui-tasks 7 PASS · frozen 0 · overlap-proof 24/192 = identical to HEAD (all home:
+  painting/lean-copy/lean-after under the mascot - PRE-EXISTING, not fixed). No horizontal scroll 1440/1180/1024.
+- Left as is: Dolly runway gap above the row (414/377/543 px, by design) · light heading wash (owner-approved) ·
+  bubble repeats question count · CSOM tile ~10px low at 1024/820 · 1440 tiles wrap 4+2 · at 1024 the fixed
+  top-right buttons cover a chapter row end when scrolled · 1180 column ~445px, titles wrap.
+- Next: steps 3-5 per plan.

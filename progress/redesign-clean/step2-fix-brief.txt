@@ -1,0 +1,24 @@
+STEP 2 FIX - brief 2026-10-29. Same rules as progress\redesign-clean\step2-brief.txt (read it first: write grant,
+frozen files, no new storage key, no animation of your own, banned list, Clepsydra untouched, no git writes).
+Your earlier build is in the uncommitted diff of D:\claude os\Medical school\Herophilus-redesign. Reviews:
+D:\scratch 2026\clean-2\looker-step2.md and D:\scratch 2026\clean-2\refute-step2.md (read both).
+
+FIX
+1. Plural: "Review 1 due questions" -> "Review 1 due question" (any count wording the same way).
+2. Hamburger (<=860 drawer button): clearly visible in both themes at 820 and 390, contrast >= 3:1 against the real
+   pixels behind it; tap target >= 44x44.
+3. Today primary button: >= 44px tall at 820 and 390 (desktop may stay as is).
+4. render.js ~159: drop the extra acc<60 filter; show only what weakChapters() returns, top 3.
+5. render.js ~177-179: a returning profile (has answers) with nothing due, no saved mock, nothing to continue and
+   nothing answered today must NOT get the fresh-profile "Choose a subject to begin". Give it its own calm line +
+   action (e.g. "Pick up a subject" moving to the subject cards, or a weak chapter if any).
+6. Rail streak box odd line gap (fresh state) and the ~10px rail shift when a scrollbar appears: fix if it is a
+   one-line CSS change (e.g. scrollbar-gutter), else report.
+NOT a fix: the light-theme pale wash behind the heading is owner-approved - leave it.
+
+VERIFY (paste tails into the report): boot-check 0 errors · tasks.js 7 PASS · frozen.js 8bd99322 0 mismatches.
+Shots -> D:\scratch 2026\clean-2\shots2\: same widths/themes/states as before, PLUS for 1440 and 820 both themes a
+second shot scrolled so the secondary row (Continue / weak chapters / streak / accuracy) and "On today" are in frame
+(name <theme>-<w>-<state>-below.png). Add a fourth state "returning" (fix 5). Seed weak chapters in the due state so
+they show. 0 console errors in every run.
+OUTPUT: D:\scratch 2026\clean-2\report-fix.md, max 120 words, written as you go. Stop at ~50 tool calls.

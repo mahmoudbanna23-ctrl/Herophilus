@@ -1,0 +1,60 @@
+STEP 2 - HOME "TODAY" + LABELLED MENU - brief 2026-10-29. Plan: C:\Users\Alfa388\.claude\plans\moonlit-skipping-summit.md step 2.
+Trial copy: D:\claude os\Medical school\Herophilus-redesign, branch redesign/clean-2026-10.
+
+WRITE GRANT (this job only): Herophilus-redesign\app\ (EXCEPT frozen files) and new files under D:\scratch 2026\clean-2\.
+No git writes. Never touch D:\claude os\Medical school\Herophilus (live copy).
+FROZEN, never edit (byte-checked against 8bd99322): app\data\*, app\js\storage.js, utils.js, theme.js, icons.js,
+app\js\lib\*, app\css\print.css. No new storage key, no new field in S. Theory stays locked. Do not open images.
+Banned in anything you add: emoji, pills (fully rounded chips), hover lift, idle pulse, confetti.
+THE CLEPSYDRA MASCOT IS THE OWNER'S OWN ARTWORK: never redraw her, never change her files or her animation.
+MOTION RULE "copy, never recreate": you write NO animation, keyframes, transition timing or easing of your own. New
+elements are static. Keep every existing motion as it is (the home lean-in scene is Dolly, MIT - untouched).
+Vanilla HTML/CSS/JS, no new library, no CDN.
+
+GOAL A - TODAY ON THE HOME PAGE (owner picked: the main button sits ON THE PAINTING, under the big heading)
+Home = vHome in app\js\render.js (~149-274). The heading block (headHTML, ~164-172) belongs to the opening view of the
+lean-in painting (app\css\lean.css, render.js ~264-267); the subject cards follow; ".lean-after" holds stats,
+Continue, "On today", the Herophilus hero panel.
+1. Under the heading, inside the opening view: ONE primary action plus a one-line reason. Pick in this order:
+   a. due reviews: dueNow() (utils.js:76) > 0 -> "Review N due questions" / reason "Scheduled from your past
+      answers". Click = the existing review-deck path (find how the rail's Review deck starts it; reuse it).
+   b. else saved mock: hasSavedMock() (quiz.js:2) -> "Resume your mock exam", click = offerMockResume() (quiz.js:45).
+   c. else unfinished chapter: same "recent" logic as render.js ~185-191 -> "Continue - <chapter>", startChapter(cid).
+   d. else no history (fresh) -> "Choose a subject to begin" style action that scrolls/moves to the subject cards.
+   e. day done (answered today and nothing due, nothing to continue) -> calm "Done for today" line, secondary action
+      "Practise a weak chapter" if one exists, else none.
+   Reason line is plain text, no icon soup. One button only is primary (filled); everything else is quiet.
+2. Secondary row (below the painting, top of .lean-after, replacing the loose Continue/stats where they duplicate):
+   Continue (if not already the primary), weak chapters (weakChapters() quiz.js:947; only those it returns, top 3,
+   each opens that chapter), streak (streakCount() utils.js:85; hide at 0), accuracy (accuracy() storage.js:338).
+   "Days to exam": the app holds NO exam-date data and no key may be added - leave it out, write one code comment why.
+   Keep "On today" (schedule rows) and the hero panel as they are, after this row. Keep the saved-mock button logic
+   from render.js ~52-54 working (do not show it twice).
+3. Defined states, each must render cleanly: zero due · no history (fresh profile) · no schedule today · day done.
+4. Must read on the painting in BOTH themes (dark plate and cream day plate): text contrast >= 4.5:1 measured against
+   the real pixels behind it; reuse the heading's own wash/ink tokens from lean.css rather than inventing a scrim.
+
+GOAL B - LABELLED MENU (rail)
+Rail = index.html ~54-63, renderNav() render.js ~95-146, CSS skin.css ~305-480 (52px icon strip above 600px, labels
+clipped, expand on hover/focus, .rail.open) and views.css ~66-70 (<=860 drawer + hamburger, toggleRail()).
+1. Above 860px: labels ALWAYS visible (no hover-to-reveal). Rail width fits the longest label; main content shifts
+   accordingly at 1440, 1180 and 1024 widths with no horizontal scroll. Remove the hover-expand/clip-path reveal
+   (removing motion is allowed; adding is not).
+2. <=860px: keep the existing drawer + hamburger, items labelled.
+3. Plain icons + visible text label per item; keep every item, its order, its onclick and the current-view marker.
+   Group labels (Modules, Practice) stay as quiet headings.
+4. Search (index.html ~70-73, doSearch sessions.js:453, jump() :540, "/" focus boot.js:344) already covers
+   questions; make sure results also list matching CHAPTERS (name match -> startChapter), questions first capped,
+   chapters as their own labelled group. Keyboard: "/" still focuses, Esc clears.
+
+MUST VERIFY (run these yourself, paste the tail of each into the report):
+- node tools\boot-check\boot-check.js  -> 0 errors
+- node tools\ui-tasks\tasks.js         -> 7 PASS
+- node tools\ui-tasks\frozen.js 8bd99322 -> 0 mismatches
+- headless shots of home at 1440x900, 1180x820, 820x1180, 390x844, dark and light, for states: fresh, due>0,
+  day done -> D:\scratch 2026\clean-2\shots\ (reuse the harness pattern in D:\scratch 2026\lean-in\code\lib.js;
+  never use a --user-data-dir under a path containing "--"). 0 console errors in every run.
+- prefers-reduced-motion: page still complete and usable.
+
+OUTPUT: D:\scratch 2026\clean-2\report.md - max 150 words: files changed (path + one line each), check results,
+anything dropped or not done and why. Write it as you go so a cut-off run leaves a usable file. Stop at ~60 tool calls.

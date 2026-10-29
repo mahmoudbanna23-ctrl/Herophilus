@@ -237,3 +237,45 @@
   :root[data-theme="light"] body[data-view="home"] .lean-cards .ring svg circle:last-child { filter: brightness(.85); }
   body[data-view="home"] .lean-cards .mod-card > .soon { background: var(--lean-panel); border-color: var(--lean-line); color: var(--lean-ink-2); }
 }
+
+/* Today uses the heading's existing ink and day wash. New controls are static. */
+.today-action{color:var(--lean-ink)}
+.today-primary,.today-link{font:inherit;cursor:pointer;border-radius:6px;padding:10px 14px;max-width:100%;text-align:left;line-height:1.4}
+.today-primary{background:var(--lean-ink);color:var(--lean-ground);border:1px solid var(--lean-ink);font-weight:700}
+.today-link{background:transparent;color:inherit;border:1px solid currentColor}
+.today-reason{font-size:1rem;line-height:1.5;margin:12px 0 0;color:var(--lean-ink)}
+.today-done{font-size:1.3rem;margin:0 0 12px}
+.today-secondary{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);align-items:stretch;gap:8px;padding-bottom:28px;color:var(--lean-ink)}
+.today-secondary:empty{display:none}
+.today-weak{display:contents}
+.today-secondary .today-link,.today-stat{min-width:0;padding:10px;background:var(--lean-panel);border:1px solid var(--lean-line);border-radius:var(--r-lg);font-size:.85rem;line-height:1.4;text-align:left}
+.today-secondary small{display:block;color:var(--lean-ink-2);font-size:.75rem;white-space:nowrap}
+.today-secondary .today-link span,.today-stat>span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.today-secondary .today-link span{white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3}
+/* The On today label uses the small radius, not a pill. */
+.lean-after .day-line .tag{border-radius:var(--r-sm,4px)}
+@media(max-width:600px){
+  .today-secondary{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+.today-primary:focus-visible,.today-link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+@media screen{
+  :root .lean-head-in{max-width:min(70%,36rem)}
+  :root .lean-after{padding-left:28px}
+}
+@media(max-width:600px){
+  :root .lean-head-in{max-width:90%}
+  .today-primary,.today-link{padding:10px}
+}
+
+@media(max-width:860px){
+  /* Allow for the existing Dolly perspective scaling the opening view. */
+  .today-primary{min-height:68px}
+}
+
+/* Her lane on home (step 2 final): the rail narrows the page, so the 100vw-based gutter above fell short and
+   the bubble sat over the Herophilus panel. The page box now ends at the window edge, so the lane is a plain
+   432px of end space (her measured width plus scrollbar room). Layout only; she and her bubble are untouched. */
+@media screen and (min-width: 1180px) {
+  body[data-view="home"] .lean-after { padding-right: max(calc(max(0px, (100% - 936px) / 2) + var(--s-11, 28px)), var(--clep-lane, 432px)); }
+  .today-secondary{grid-auto-flow:row;grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
+}

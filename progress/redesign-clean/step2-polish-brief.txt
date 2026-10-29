@@ -1,0 +1,19 @@
+STEP 2 POLISH - brief 2026-10-29. Same rules as progress\redesign-clean\step2-brief.txt (read it: write grant, frozen
+files, no new storage key, no animation of your own, banned list incl. pills, Clepsydra and her bubble untouched, no git).
+Review to act on: D:\scratch 2026\clean-2\looker-step2-fix.md. Your build is the uncommitted diff in the trial repo.
+
+FIX
+1. Secondary row (Continue / weak chapters / streak / accuracy below the painting): bare outline chips look harsh next
+   to plain text. Make it one calm, consistent row of quiet buttons/links in the existing panel style (lean.css warm
+   panels, same radius scale as the app's other buttons - no full-round pills). Items line up; nothing wraps alone
+   at 1440, 1180 or 820 (third weak chapter included - truncate long names with ellipsis + title attribute).
+2. Fresh profile: hide accuracy (and any stat that would read "no answers yet") - show nothing rather than an empty stat.
+3. "On today" with one near-empty "Study session" box: find out if real data can produce it or if it is only your
+   harness fixture. Real case: render it properly or hide when an item has no text. Fixture-only: fix the fixture.
+4. Big gap above the secondary row: measure where it comes from. If it is the lean-in scene's own runway (Dolly scroll
+   range) leave it and report the number; if it is new padding/margin from your build, tighten it.
+Do NOT change the mascot or her bubble text.
+
+VERIFY: boot-check 0 errors · tasks.js 7 PASS · frozen.js 8bd99322 0 mismatches. Shots -> D:\scratch 2026\clean-2\shots3\
+(the "-below" set: 1440/1180/820 x dark/light x fresh/due/returning/done), 0 console errors.
+OUTPUT: D:\scratch 2026\clean-2\report-polish.md, max 100 words, written as you go. Stop at ~40 tool calls.

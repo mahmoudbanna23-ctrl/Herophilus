@@ -49,7 +49,7 @@ function renderNow(){
   else ({home:vHome,module:vModule,quiz:vQuiz,results:vResults,review:vReview,schedule:vSchedule,theory:vTheory,
     moved:vMoved,flagged:vFlagged,mock:vMock,session:vSession,weak:vWeak}[view.name]||vHome)(p);
   if(view.name==='module'&&!emptyCourse)SubjFx.init(p);
-  if((view.name==='home'||view.name==='mock')&&hasSavedMock()){
+  if((view.name==='mock'||(view.name==='home'&&!p.querySelector('[data-saved-mock]')))&&hasSavedMock()){
     p.insertAdjacentHTML('afterbegin','<p><button class="btn sec" onclick="offerMockResume()">Open saved mock exam</button></p>');
   }
   const focusView=['quiz','results'].includes(view.name);
@@ -152,51 +152,52 @@ function vHome(p){
   const acc=accuracy(QUESTIONS);
   const dueList=dueNow();
   const due=dueList.length;
-  /* A profile that has answered nothing has nothing to stand on, and the four
-     stat tiles say so in the bluntest possible way: 0 / — / 0 / 0. That is an
-     empty scoreboard shown to somebody who has not played yet, and it was the
-     first sentence the app spoke to a new colleague. The first run asks for a
-     subject instead, and puts the subjects directly underneath the question.
-     The moment one answer lands the dashboard becomes the ledger it was built
-     to be — nothing is removed, it is deferred until it means something. */
   const fresh=done===0;
-
-  let h=`<div class="eyebrow">${esc(termName())}</div>`;
-  h+=fresh
-    ?`<h1>Choose a subject to begin</h1>
-      <p class="page-sub">${total} questions, transcribed from the printed banks. Start anywhere — every chapter remembers where you stopped.</p>`
-    :`<h1>Where you stand</h1>
-      <p class="page-sub">${total} questions loaded. Work through them by chapter, by module, or build a custom set.</p>`;
-
-  /* lean-in: the heading block ends here; everything else in h goes after the scene. */
-  const headHTML=h;h="";
-  if(!fresh){
-    h+=`<div class="grid g4" style="margin-bottom:30px">
-    <div class="stat"><span class="emo">${ico('stylus',20)}</span><div class="n">${done}<span style="font-size:15px;color:var(--ink-4)">/${total}</span></div><div class="l">Answered</div></div>
-    <div class="stat"><span class="emo">${ico('target',20)}</span><div class="n" style="color:${accColor(acc)}">${acc===null?'—':acc+'%'}</div><div class="l">Accuracy</div></div>
-    <div class="stat"><span class="emo">${ico('hourglass',20)}</span><div class="n" style="color:${due?'var(--ent)':'var(--ok)'}">${due}</div><div class="l">Due for review</div></div>
-    <div class="stat"><span class="emo">${ico('laurel',20)}</span><div class="n">${QUESTIONS.filter(q=>S.flags[q.id]).length}</div><div class="l">Flagged</div></div>
-  </div>`;
-  }
-
-  /* openModules(), not MODULES: a student who practised a subject before it was
-     locked still has its place saved, and offering to continue it would open a
-     chapter with nothing in it. The pointer is kept, just not offered. */
   const recent=Object.keys(S.resumeByChapter||{}).filter(cid=>
+    !S.resumeByChapter[cid].finished&&
     openModules().some(m=>m.groups.some(g=>g.chapters.some(c=>c[0]===cid)))
   ).sort((a,b)=>S.resumeByChapter[b].at-S.resumeByChapter[a].at)[0];
-  if(recent){
-    const r=S.resumeByChapter[recent];
-    h+=`<div class="filterbar"><button class="btn go" onclick="startChapter('${recent}')">${r.finished?'Restart':'Continue'} &mdash; ${esc(chapterName(recent))}</button></div>`;
+  const weak=weakChapters().slice(0,3);
+  const saved=hasSavedMock(), streak=streakCount();
+  const dayDone=!!S.days[todayISO()]&&!due&&!saved&&!recent;
+  let action='', reason='', primary='';
+  if(due){
+    primary='review'; reason='Scheduled from your past answers';
+    action=`<button class="today-primary" onclick="go({name:'review'})">Review ${due} due question${due===1?'':'s'}</button>`;
+  }else if(saved){
+    primary='mock'; reason='Saved answers and clock kept';
+    action='<button class="today-primary" data-saved-mock onclick="offerMockResume()">Resume your mock exam</button>';
+  }else if(recent){
+    primary='continue'; reason='Pick up where you stopped';
+    action=`<button class="today-primary" onclick="startChapter('${recent}')">Continue - ${esc(chapterName(recent))}</button>`;
+  }else if(dayDone){
+    reason='Your answers for today are saved';
+    action='<p class="today-done">Done for today</p>'+(weak.length?`<button class="today-link" onclick="startChapter('${weak[0].cid}')">Practise a weak chapter</button>`:'');
+  }else{
+    reason=fresh?'Your place is saved as you study':'Your progress is saved. Continue when you are ready';
+    action='<button class="today-primary" onclick="document.getElementById(&quot;homeSubjects&quot;).scrollIntoView();document.getElementById(&quot;homeSubjects&quot;).focus({preventScroll:true})">'+(fresh?'Choose a subject to begin':'Pick up a subject')+'</button>';
   }
+  const headHTML=`<div class="eyebrow">${esc(termName())}</div><h1>Today</h1>
+    <div class="today-action">${action}<p class="today-reason">${reason}</p></div>`;
+  // Days to exam is omitted: no exam-date data exists, and no storage key may be added.
+  let h='<section class="today-secondary" aria-label="Study overview">';
+  if(recent&&primary!=='continue')h+=`<button class="today-link" title="Continue - ${esc(chapterName(recent))}" onclick="startChapter('${recent}')"><small>Continue</small><span>${esc(chapterName(recent))}</span></button>`;
+  if(saved&&primary!=='mock')h+='<button class="today-link" data-saved-mock title="Resume your mock exam" onclick="offerMockResume()"><small>Resume</small><span>Mock exam</span></button>';
+  if(weak.length)h+=`<div class="today-weak" role="group" aria-label="Weak chapters">${weak.map(c=>`<button class="today-link" title="${esc(c.name)}" onclick="startChapter('${c.cid}')"><small>Weak - ${esc(c.mod.name)}</small><span>${esc(c.name)}</span></button>`).join('')}</div>`;
+  if(streak)h+=`<span class="today-stat"><small>Streak</small><span>${streak} day${streak===1?'':'s'}</span></span>`;
+  if(acc!==null)h+=`<span class="today-stat"><small>Accuracy</small><span>${acc}%</span></span>`;
+  h+='</section>';
 
   const t=todayISO();
   const rows=buildSchedule().rows;
   const today=rows.find(d=>d.date===t);
   let todayHTML='';
-  if(today&&today.items&&today.items.length){
+  const nFlagged=QUESTIONS.filter(q=>S.flags[q.id]).length;
+  /* An item that sends the student to saved (flagged) questions is hidden while none are saved. */
+  const todayItems=(today?.items||[]).filter(it=>typeof it.text==='string'&&it.text.trim()&&(nFlagged>0||!/saved questions/i.test(it.text)));
+  if(todayItems.length){
     todayHTML=`<h2>${ico('laurel',20)} On today</h2><div class="card" style="margin-bottom:28px;--c:rgba(109,76,125,.4)">
-      ${today.items.map(it=>`<div class="day-line">${it.label?`<span class="tag" style="background:${it.hex}">${esc(it.label)}</span>`:''}${esc(it.text)}</div>`).join('')}
+      ${todayItems.map(it=>`<div class="day-line">${it.label?`<span class="tag" style="background:${it.hex}">${esc(it.label)}</span>`:''}${esc(it.text)}</div>`).join('')}
       </div>`;
   }
 
@@ -215,7 +216,7 @@ function vHome(p){
     </div>
   </section>`;
 
-  let modsHTML=`<h2 class="lean-h2">${fresh?'Subjects':'Modules'}</h2><div class="grid g3 mod-grid" data-dolly-stagger>`;
+  let modsHTML=`<h2 class="lean-h2" id="homeSubjects" tabindex="-1">${fresh?'Subjects':'Modules'}</h2><div class="grid g3 mod-grid" data-dolly-stagger>`;
   activeModules().forEach(m=>{
     const qs=qsInModule(m.id);
     const d=qs.filter(q=>isAnswered(q.id)).length;
