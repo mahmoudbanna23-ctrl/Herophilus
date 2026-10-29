@@ -1,0 +1,194 @@
+/* Planning (step 3 part B, 2026-10-29): study schedule, rescheduled, study session.
+   The three views are written inside <div class="lst pln">, so the header panel, buttons, numbers, group headers, rows,
+   chips and empty state come from lists.css. This file adds only what a plan needs: day cards, subject lines, the
+   done / missed marks, the editor, the session clock panel.
+   Tokens only, radius 6/10/14, flat 1px lines. One filled accent button per screen. Subject colour is a small swatch
+   (identity); the words stay in the text colour so contrast never depends on a colour the user picked.
+   Motion: none written here. The one piece is the "Add to my schedule" button, the maker's published code (see below).
+   Banned and absent: pills, hover lift, idle pulse, confetti, emoji. */
+
+/* ---- subject label --------------------------------------------------------------------------------- */
+.pln .tag{
+  display:inline-flex;align-items:center;gap:var(--s-3);margin:0 var(--s-3) 0 0;padding:var(--s-1) var(--s-3);
+  border:1px solid var(--line-2);border-radius:var(--r-sm);background:var(--bg-2);box-shadow:none;vertical-align:baseline;
+  color:var(--tx);font-size:var(--fs-sm);font-weight:600;letter-spacing:0;text-transform:none;white-space:nowrap;
+}
+.tag-sw{width:10px;height:10px;border-radius:2px;flex:none}
+.pln .movednote{margin-top:var(--s-1);color:var(--ink-3);font-size:var(--fs-sm);font-weight:500}
+.pln .movednote b{color:var(--ok);font-weight:600}
+.pln .ch-dot.ok{background:var(--ok)}
+.pln .stat .n.bad{color:var(--bad)}
+.pln div.ch-row{cursor:default;align-items:flex-start}
+.pln div.ch-row:hover{background:var(--card);border-color:var(--line)}
+.pln .ch-row .ch-dot{margin-top:6px}
+.pln .ch-row.bad{border-color:var(--bad);background:var(--bad-bg)}
+.pln .ch-row.bad:hover{background:var(--bad-bg);border-color:var(--bad)}
+.pln .ch-row .day-line{margin:0;font-size:var(--fs-ui);font-weight:600}
+
+.pln .chip{min-height:36px}
+
+/* ---- plan toolbar, legend, link ---------------------------------------------------------------------- */
+.pln .edbar{display:flex;gap:var(--s-4);flex-wrap:wrap;align-items:center;margin-bottom:var(--s-7)}
+.pln .sched-legend{display:flex;gap:var(--s-8);flex-wrap:wrap;margin-bottom:var(--s-7);color:var(--ink-3);font-size:var(--fs-md);font-weight:500}
+.pln .leg{display:flex;align-items:center;gap:var(--s-3)}
+.pln .leg .sw{width:14px;height:14px;border-radius:var(--r-sm);border:1px solid var(--line-2);background:var(--card)}
+.pln .leg .sw.today{border-color:var(--accent);background:var(--selected)}
+.pln .leg .sw.missed{border-color:var(--bad);background:var(--bad-bg)}
+.pln .leg .sw.done{border-color:var(--ok);background:var(--ok-bg)}
+.pln .leg .sw.free{border-style:dashed;background:transparent}
+.pln-link{
+  display:flex;flex-direction:column;gap:var(--s-1);width:100%;text-align:left;cursor:pointer;margin-bottom:var(--s-7);
+  padding:var(--s-5) var(--s-7);background:var(--selected);border:1px solid var(--line-2);border-radius:var(--r-md);
+  color:var(--tx);font-family:var(--font-body);
+}
+.pln-link:hover{background:var(--bg-2)}
+.pln-link-t{font-size:var(--fs-ui);font-weight:600}
+.pln-link-s{font-size:var(--fs-md);font-weight:500;color:var(--ink-2)}
+.pln-alert{
+  display:flex;flex-direction:column;gap:var(--s-2);margin-bottom:var(--s-9);padding:var(--s-5) var(--s-7);
+  background:var(--bad-bg);border:1px solid var(--bad);border-radius:var(--r-md);color:var(--tx);font-size:var(--fs-ui);
+}
+.pln-alert span{color:var(--ink-2);font-size:var(--fs-md);line-height:1.5}
+.pln-none{margin:var(--s-9) 0 0;color:var(--ink-2);font-size:var(--fs-ui);line-height:1.5;max-width:560px}
+
+/* ---- day cards --------------------------------------------------------------------------------------- */
+.pln .day{
+  display:flex;gap:var(--s-7);align-items:stretch;padding:var(--s-5) var(--s-7);margin-bottom:var(--s-3);
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);box-shadow:none;
+}
+.pln .day.rest{border-style:dashed;border-color:var(--line-2);background:var(--bg-2)}
+.pln .day.missed{background:var(--bad-bg);border-color:var(--bad)}
+.pln .day.done{background:var(--ok-bg);border-color:var(--ok)}
+.pln .day.today{background:var(--selected);border-color:var(--accent)}
+.pln .day.editing{border-style:dashed;border-color:var(--line-2)}
+.pln .day-date{display:flex;flex-direction:column;gap:var(--s-1);width:84px;flex:none}
+.pln .day-d{font-family:var(--font-display);font-size:var(--fs-body);font-weight:600;letter-spacing:0;font-variant-numeric:tabular-nums lining-nums}
+.pln .day-w{color:var(--ink-3);font-size:var(--fs-sm);font-weight:500;letter-spacing:0;text-transform:none}
+.pln .day.today .day-w{color:var(--tx)}
+.pln .day-body{display:flex;flex-direction:column;justify-content:center;flex:1;min-width:0}
+.pln .track{display:flex;align-items:center;gap:var(--s-5);padding:var(--s-3) 0;border-bottom:1px solid var(--line)}
+.pln .track:last-child{border-bottom:0}
+.pln .track-body{flex:1;min-width:0;font-size:var(--fs-ui);font-weight:500;line-height:1.55;overflow-wrap:break-word}
+.pln .track.is-done .track-body{color:var(--ink-2)}
+.pln .track.is-missed .track-body{color:var(--ink-2);text-decoration:line-through}
+.pln .free-note{color:var(--ink-2)}
+.pln .track.catchup{padding:var(--s-4) var(--s-5);margin-top:var(--s-3);border:1px dashed var(--line-2);border-radius:var(--r-sm);background:var(--selected)}
+.pln .day-marks{display:flex;gap:var(--s-3);flex:none}
+.pln .mk{
+  width:40px;height:40px;display:flex;align-items:center;justify-content:center;padding:0;cursor:pointer;
+  border:1px solid var(--line-2);border-radius:var(--r-sm);background:var(--card);box-shadow:none;color:var(--ink-2);
+  font-family:var(--font-body);font-size:var(--fs-body);
+}
+.pln .mk:hover{background:var(--bg-2);color:var(--tx)}
+.pln .mk.done.on{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.pln .mk.miss.on{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+@media (max-width:700px),(hover:none){.pln .mk{width:44px;height:44px}}
+
+/* ---- editor ------------------------------------------------------------------------------------------ */
+.pln .ed-item{display:flex;gap:var(--s-3);align-items:center;flex-wrap:wrap;padding:var(--s-3) 0}
+.pln .ed-lab,.pln .ed-txt,.pln .newday input[type=date]{
+  min-height:36px;padding:var(--s-3) var(--s-5);border:1px solid var(--line-2);border-radius:var(--r-sm);
+  background:var(--card);color:var(--tx);font-family:var(--font-body);font-size:var(--fs-ui);font-weight:500;
+}
+.pln .ed-lab{width:132px;flex:none}
+.pln .ed-txt{flex:1;min-width:150px}
+.pln .ed-lab:focus-visible,.pln .ed-txt:focus-visible,.pln .newday input[type=date]:focus-visible{outline:2px solid var(--focus-ring);outline-offset:1px;border-color:var(--focus-ring);box-shadow:none}
+.pln .ed-col{width:30px;height:30px;padding:0;flex:none;cursor:pointer;border:1px solid var(--line-2);border-radius:var(--r-sm)}
+.pln .ed-x{
+  width:30px;height:30px;padding:0;flex:none;cursor:pointer;border:1px solid var(--line-2);border-radius:var(--r-sm);
+  background:var(--card);color:var(--bad);font-size:var(--fs-body);font-weight:600;
+}
+.pln .ed-x:hover{background:var(--bad-bg);border-color:var(--bad)}
+.pln .ed-add{
+  align-self:flex-start;margin-top:var(--s-3);padding:var(--s-3) var(--s-6);cursor:pointer;
+  border:1px dashed var(--line-2);border-radius:var(--r-sm);background:transparent;color:var(--ink-2);
+  font-family:var(--font-body);font-size:var(--fs-md);font-weight:600;
+}
+.pln .ed-add:hover{background:var(--bg-2);color:var(--tx)}
+.pln .ed-day-tools{display:flex;gap:var(--s-3);flex:none;flex-wrap:wrap;align-self:flex-start}
+.ed-t{
+  padding:var(--s-3) var(--s-5);cursor:pointer;border:1px solid var(--line-2);border-radius:var(--r-sm);background:var(--card);
+  color:var(--ink-2);font-family:var(--font-body);font-size:var(--fs-md);font-weight:600;
+}
+.ed-t.danger{border-color:var(--bad);color:var(--bad)}
+.ed-t:hover{background:var(--bg-2)}
+.pln .newday{
+  display:flex;gap:var(--s-5);align-items:center;flex-wrap:wrap;margin-top:var(--s-5);padding:var(--s-7);
+  background:var(--card);border:1px dashed var(--line-2);border-radius:var(--r-md);
+}
+.pln .newday label{color:var(--tx);font-size:var(--fs-ui);font-weight:600}
+.pln .newday-hint{flex:1 1 100%;color:var(--ink-3);font-size:var(--fs-sm);font-weight:500}
+
+/* ---- "Add to my schedule" button: uiverse.io andrew-demchenk0/giant-termite-81 (MIT), copied as published ----
+   Edits, all allowed by the pick: colours to tokens, label text, corner radius to the 6px step, width grows to the label,
+   font to the app's body face at 14px. The icon tilt on hover and its keyframes are the maker's, only renamed. */
+.sched-add{
+  display:flex;justify-content:center;align-items:center;padding:9px 18px;gap:8px;height:40px;min-width:201px;
+  border:none;background:var(--accent);border-radius:var(--r-sm);cursor:pointer;
+}
+.sched-add-label{line-height:22px;font-size:var(--fs-ui);font-weight:600;color:var(--on-accent);font-family:var(--font-body);letter-spacing:0;white-space:nowrap}
+.sched-add:hover .svg-icon{animation:sched-add-slope 1s linear infinite}
+.sched-add .svg-icon g{stroke:var(--on-accent)}
+.sched-add:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+@keyframes sched-add-slope {
+  0% {
+  }
+
+  50% {
+    transform:rotate(10deg);
+  }
+
+  100% {
+  }
+}
+.pln .empty .sched-add{flex:none}
+
+/* ---- study session ----------------------------------------------------------------------------------- */
+.pln .sess-live{
+  display:grid;grid-template-columns:auto 1fr;gap:var(--s-12);align-items:center;margin-bottom:var(--s-9);
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:none;padding:var(--s-10) var(--s-12);
+}
+.pln .sr-wrap{position:relative;width:172px;height:172px;flex:none}
+.pln .sr-ring{display:block;width:100%;height:100%}
+.pln .sr-mid{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--s-3);pointer-events:none}
+.pln .sr-time{font:600 34px/1 var(--font-display);letter-spacing:0;color:var(--tx);font-variant-numeric:tabular-nums lining-nums}
+.pln .sr-ph{max-width:124px;color:var(--ink-3);font-size:var(--fs-sm);font-weight:500;letter-spacing:0;text-transform:none;text-align:center;line-height:1.4}
+.pln .sess-side{min-width:0}
+.pln .sess-live .grid{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:var(--s-7)}
+.pln .sess-live .filterbar{margin-bottom:var(--s-4)}
+.pln .sess-live .filterbar:last-child{margin-bottom:0}
+.pln-panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:var(--s-9) var(--s-10);margin-bottom:var(--s-9)}
+.pln .sess-setup h2{margin:var(--s-9) 0 var(--s-4);font-size:var(--fs-body)}
+.pln .sess-setup h2:first-child{margin-top:0}
+.pln .sess-setup .filterbar{margin-bottom:0}
+.pln .sess-sum{
+  margin:var(--s-9) 0 var(--s-7);padding:var(--s-5) var(--s-7);border-radius:var(--r-md);
+  background:var(--bg-2);border:1px solid var(--line);color:var(--ink-2);font-size:var(--fs-ui);line-height:1.5;
+}
+.pln .sess-sum b{color:var(--tx);font-weight:600}
+
+/* ---- narrow: text keeps the full width, controls sit under it ------------------------------------------ */
+@media (max-width:760px){
+  .pln .sess-live{grid-template-columns:1fr;justify-items:center;padding:var(--s-9)}
+  .pln .sess-side{width:100%}
+}
+@media (max-width:600px){
+  .pln .sess-live .grid{grid-template-columns:1fr}
+  .pln-panel{padding:var(--s-7)}
+  .pln .day{flex-direction:column;gap:var(--s-3);padding:var(--s-5)}
+  .pln .day-date{width:auto;flex-direction:row;align-items:baseline;gap:var(--s-4)}
+  .pln .track{flex-wrap:wrap}
+  .pln .track-body{flex:1 1 100%}
+  .pln .ed-item .ed-lab{flex:1 1 90px;width:auto}
+  .pln .ed-item .ed-x{order:2}
+  .pln .ed-item .ed-txt{order:3;flex:1 1 100%}
+  .pln .newday .sched-add{width:100%}
+  .pln .edbar .btn,.pln .sess-live .filterbar .btn{flex:1 1 100%}
+}
+/* The floating icon cluster covers the right end of the column between 601 and 900 px (same measurement as lists.css) */
+@media (min-width:601px) and (max-width:900px){
+  .pln .day,.pln-link,.pln-alert,.pln .newday{padding-right:calc(var(--s-7) + 140px)}
+  .pln .sess-live{padding-right:calc(var(--s-12) + 140px)}
+  .pln .lst-head{margin-right:236px}
+}
+@media print{.pln .edbar,.pln .newday,.pln .day-marks{display:none}}

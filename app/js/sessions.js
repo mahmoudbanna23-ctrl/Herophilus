@@ -40,56 +40,57 @@ function sessSetDraft(k,v){ sessDraft[k]=v; render() }
 
 function vSession(p){
   const s=sess();
-  let h=`<div class="eyebrow" style="background:var(--buffer)">Focus</div>
-  <h1>${ico('clepsydra',26)} Study session</h1>`;
+  let h=`<div class="lst pln"><header class="lst-head"><div class="eyebrow">Focus</div>
+  <h1>Study session</h1>`;
 
   if(s){
     const rest=s.phase==='break';
     const frac=phaseMs()?1-phaseLeft()/phaseMs():0;
     const st=sessStats(s);
-    h+=`<p class="page-sub">The Clepsydra carries this clock into every other screen — you never have to come back here to see it.</p>
+    const back=sessScopeIds(s.scope).length;
+    h+=`<p class="page-sub">The Clepsydra carries this clock into every other screen, so you never have to come back here to see it.</p></header>
     <div class="sess-live">
       <div class="sr-wrap">
-        ${sessRing(frac,rest?'var(--ok)':'var(--gold)')}
+        ${sessRing(frac,rest?'var(--ok)':'var(--accent)')}
         <div class="sr-mid">
           <div class="sr-time" id="sessTime">${clMMSS(phaseLeft())}</div>
           <div class="sr-ph" id="sessPhase">${s.paused?'Paused':(rest?'Break':`Focus · block ${s.cycle} of ${s.plan.cycles}`)}</div>
         </div>
       </div>
       <div class="sess-side">
-        <div class="grid g3" style="margin:0 0 18px">
-          <div class="stat"><span class="emo">${ico('stylus',20)}</span><div class="n" id="sessCount">${st.n}</div><div class="l">Answered now</div></div>
-          <div class="stat"><span class="emo">${ico('clepsydra',20)}</span><div class="n" id="sessFocus">${Math.round(sessFocusMs(s)/60000)}</div><div class="l">Minutes focused</div></div>
+        <div class="grid g3">
+          <div class="stat"><div class="n" id="sessCount">${st.n}</div><div class="l">Answered now</div></div>
+          <div class="stat"><div class="n" id="sessFocus">${Math.round(sessFocusMs(s)/60000)}</div><div class="l">Minutes focused</div></div>
         </div>
         <div class="filterbar">
-          <button class="btn ${s.paused?'go':'sec'}" onclick="sessPause()">${ico(s.paused?'play':'pause')} ${s.paused?'Resume':'Pause'}</button>
-          <button class="btn sec" onclick="sessSkip()">${rest?'Skip the break':'Take the break now'}</button>
-          <button class="btn sec" style="border-color:var(--bad);color:var(--bad)" onclick="endSession(false)">End session</button>
+          <button class="btn ${s.paused?'go':''}" onclick="sessPause()">${ico(s.paused?'play':'pause')} ${s.paused?'Resume':'Pause'}</button>
+          <button class="btn" onclick="sessSkip()">${rest?'Skip the break':'Take the break now'}</button>
+          <button class="btn danger" onclick="endSession(false)">End session</button>
         </div>
-        ${sessScopeIds(s.scope).length?`<div class="filterbar" style="margin-top:2px">
-          <button class="btn go" onclick="startQuiz(${JSON.stringify(sessScopeIds(s.scope)).replace(/"/g,'&quot;')},'${sessScopeName(s.scope)}')">${ico('play')} Back to the questions</button>
+        ${back?`<div class="filterbar">
+          <button class="btn ${s.paused?'':'go'}" onclick="startQuiz(${JSON.stringify(sessScopeIds(s.scope)).replace(/"/g,'&quot;')},'${sessScopeName(s.scope)}')">${ico('play')} Back to the questions</button>
         </div>`:''}
       </div>
     </div>`;
   }else{
-    h+=`<p class="page-sub">Pick a block length and I will keep the time. The Clepsydra follows you through the app while it runs, so the clock is always in the corner wherever you are studying.</p>
-    <div class="card sess-setup">
-      <h2 style="margin-top:0">1 · Focus block</h2>
+    h+=`<p class="page-sub">Pick a block length and I will keep the time. The Clepsydra follows you through the app while it runs, so the clock is always in the corner wherever you are studying.</p></header>
+    <section class="pln-panel sess-setup">
+      <h2>1 · Focus block</h2>
       <div class="filterbar">${[15,25,45,60].map(n=>
-        `<button class="chip ${sessDraft.focus===n?'on':''}" style="--c:var(--gold)" aria-pressed="${sessDraft.focus===n}" onclick="sessSetDraft('focus',${n})">${n} min</button>`).join('')}</div>
+        `<button class="chip ${sessDraft.focus===n?'on':''}" aria-pressed="${sessDraft.focus===n}" onclick="sessSetDraft('focus',${n})">${n} min</button>`).join('')}</div>
 
       <h2>2 · Break</h2>
       <div class="filterbar">${[3,5,10,15].map(n=>
-        `<button class="chip ${sessDraft.brk===n?'on':''}" style="--c:var(--ophtho)" aria-pressed="${sessDraft.brk===n}" onclick="sessSetDraft('brk',${n})">${n} min</button>`).join('')}</div>
+        `<button class="chip ${sessDraft.brk===n?'on':''}" aria-pressed="${sessDraft.brk===n}" onclick="sessSetDraft('brk',${n})">${n} min</button>`).join('')}</div>
 
       <h2>3 · How many blocks</h2>
       <div class="filterbar">${[1,2,3,4,6].map(n=>
-        `<button class="chip ${sessDraft.cycles===n?'on':''}" style="--c:var(--neuro)" aria-pressed="${sessDraft.cycles===n}" onclick="sessSetDraft('cycles',${n})">${n}</button>`).join('')}</div>
+        `<button class="chip ${sessDraft.cycles===n?'on':''}" aria-pressed="${sessDraft.cycles===n}" onclick="sessSetDraft('cycles',${n})">${n}</button>`).join('')}</div>
 
       <h2>4 · What are you working on</h2>
       <div class="filterbar">
         <button class="chip ${sessDraft.scope==='all'?'on':''}" aria-pressed="${sessDraft.scope==='all'}" onclick="sessSetDraft('scope','all')">Decide later</button>
-        ${(()=>{const d=dueNow().length;return d?`<button class="chip ${sessDraft.scope==='review'?'on':''}" style="--c:var(--ent)" aria-pressed="${sessDraft.scope==='review'}" onclick="sessSetDraft('scope','review')">${ico('hourglass',15)} Review due <span style="opacity:.7">${d}</span></button>`:''})()}
+        ${(()=>{const d=dueNow().length;return d?`<button class="chip ${sessDraft.scope==='review'?'on':''}" aria-pressed="${sessDraft.scope==='review'}" onclick="sessSetDraft('scope','review')">Review due <span class="n">${d}</span></button>`:''})()}
         ${MODULES.filter(m=>qsInModule(m.id).length).map(m=>
           `<button class="chip ${sessDraft.scope===m.id?'on':''}" style="--c:${m.hex}" aria-pressed="${sessDraft.scope===m.id}" onclick="sessSetDraft('scope','${m.id}')">${ico(m.icon,15)} ${m.name}</button>`).join('')}
       </div>
@@ -99,10 +100,10 @@ function vSession(p){
         <b>${sessDraft.cycles*sessDraft.focus} minutes of work</b>, about
         ${Math.round((sessDraft.cycles*sessDraft.focus+(sessDraft.cycles-1)*sessDraft.brk)/6)/10} hours end to end.
       </div>
-      <div class="filterbar" style="margin-bottom:0">
+      <div class="filterbar">
         <button class="btn go" onclick="startSession({focus:${sessDraft.focus},brk:${sessDraft.brk},cycles:${sessDraft.cycles},scope:'${sessDraft.scope}'})">${ico('play')} Begin</button>
       </div>
-    </div>`;
+    </section>`;
   }
 
   /* ---- the log ---------------------------------------------------------- */
@@ -111,34 +112,44 @@ function vSession(p){
   const wk=log.filter(x=>x.start>=weekAgo);
   if(log.length){
     h+=`<div class="grouphdr">Last seven days</div>
-    <div class="grid g4" style="margin-bottom:22px">
-      <div class="stat"><span class="emo">${ico('clepsydra',20)}</span><div class="n">${wk.reduce((n,x)=>n+(x.focusMin||0),0)}</div><div class="l">Minutes focused</div></div>
-      <div class="stat"><span class="emo">${ico('laurel',20)}</span><div class="n">${wk.length}</div><div class="l">Sessions</div></div>
-      <div class="stat"><span class="emo">${ico('stylus',20)}</span><div class="n">${wk.reduce((n,x)=>n+(x.answered||0),0)}</div><div class="l">Questions</div></div>
+    <div class="grid g4">
+      <div class="stat"><div class="n">${wk.reduce((n,x)=>n+(x.focusMin||0),0)}</div><div class="l">Minutes focused</div></div>
+      <div class="stat"><div class="n">${wk.length}</div><div class="l">Sessions</div></div>
+      <div class="stat"><div class="n">${wk.reduce((n,x)=>n+(x.answered||0),0)}</div><div class="l">Questions</div></div>
       ${(()=>{const a=wk.reduce((n,x)=>n+(x.answered||0),0), c=wk.reduce((n,x)=>n+(x.correct||0),0);
         const acc=a?Math.round(c/a*100):null;
-        return `<div class="stat"><span class="emo">${ico('target',20)}</span><div class="n" style="color:${accColor(acc)}">${acc===null?'—':acc+'%'}</div><div class="l">Accuracy</div></div>`})()}
+        return `<div class="stat"><div class="n">${acc===null?'—':acc+'%'}</div><div class="l">Accuracy</div></div>`})()}
     </div>
     <div class="grouphdr">Every session</div>`;
     log.slice(0,25).forEach(x=>{
       const d=new Date(x.start);
       const acc=x.answered?Math.round(x.correct/x.answered*100):null;
-      h+=`<div class="ch-row" style="cursor:default">
-        <span class="ch-dot" style="background:${x.completed?'var(--ok)':'var(--line-2)'}"></span>
+      h+=`<div class="ch-row">
+        <span class="ch-dot ${x.completed?'ok':''}"></span>
         <span class="ch-name">${d.toLocaleDateString('en-GB',{day:'numeric',month:'short'})} ·
           ${d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})}</span>
         <span class="ch-count">${x.focusMin} min · ${x.cycles} block${x.cycles===1?'':'s'}</span>
-        <span class="ch-acc" style="color:${accColor(acc)};min-width:96px">${x.answered} q${acc===null?'':' · '+acc+'%'}</span>
+        <span class="ch-acc">${x.answered} q${acc===null?'':' · '+acc+'%'}</span>
       </div>`;
     });
   }else if(!s){
-    h+=`<div class="empty"><div class="big">${ico('clepsydra',46)}</div><h3>No sessions yet</h3>
-      <p>Finish one and it lands here, with the minutes you actually focused and how you scored inside them.</p></div>`;
+    h+=`<p class="pln-none">No sessions yet. Finish one and it lands here, with the minutes you actually focused and how you scored inside them.</p>`;
   }
-  p.innerHTML=h;
+  p.innerHTML=h+'</div>';
 }
 
 /* ============ SCHEDULE PAGE ============ */
+/* The plan's subject label: the colour you chose is a small swatch, the text stays in the text colour. */
+function planTag(label,hex){
+  return label?`<span class="tag"><i class="tag-sw" style="background:${hex}"></i>${esc(label)}</span>`:'';
+}
+/* The "Add to my schedule" button is the maker's published piece (uiverse andrew-demchenk0/giant-termite-81, MIT), see css/plan.css. */
+function planAddBtn(label,onclick){
+  return `<button class="sched-add" onclick="${onclick}">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" height="24" fill="none" class="svg-icon" aria-hidden="true"><g stroke-width="2" stroke-linecap="round"><rect y="5" x="4" width="16" rx="2" height="16"></rect><path d="m8 3v4"></path><path d="m16 3v4"></path><path d="m4 11h16"></path></g></svg>
+    <span class="sched-add-label">${label}</span>
+  </button>`;
+}
 function vSchedule(p){
   const t=todayISO();
   const {rows,catchups,overflow}=buildSchedule();
@@ -148,41 +159,38 @@ function vSchedule(p){
 
   const empty=!rows.length;
 
-  let h=`<div class="eyebrow" style="background:var(--peds)">Your plan</div><h1>${ico('tablet',26)} Study schedule</h1>
+  let h=`<div class="lst pln"><header class="lst-head"><div class="eyebrow">Your plan</div><h1>Study schedule</h1>
   <p class="page-sub">${empty
-      ? 'This is yours to write. Add the days you are studying and what each one is for; the plan is stored with your profile and nobody else sees it.'
-      : 'Every subject has its own <b>&#10003; done</b> and <b>&#10007; missed</b> buttons. Missed work moves to a catch-up slot on a free day; nothing else shifts.'}</p>`;
+      ? 'Add the days you study and what each is for. Only you see it.'
+      : 'Mark each subject done or missed. Missed work moves to a catch-up slot on a free day; nothing else shifts.'}</p></header>`;
 
   /* An empty plan gets one door, not a toolbar: the edit bar's two buttons are
      both meaningless before a day exists. */
   if(empty&&!ed){
-    h+=`<div class="empty"><div class="big">${ico('tablet',46)}</div><h3>No days yet</h3>
-     <p>Build the plan a day at a time &mdash; a date, then what you mean to study on it. A day you leave without a subject becomes a catch-up slot for anything you miss.</p>
-     <div style="margin-top:20px"><button class="btn go" onclick="S.editSched=true;save();render()">${ico('stylus',15)} Start your plan</button></div></div>`;
+    h+=`<div class="empty"><p class="empty-line">No days yet. Add one to begin.</p>
+     ${planAddBtn('Start my plan','S.editSched=true;save();render()')}</div></div>`;
     p.innerHTML=h;
     return;
   }
 
   h+=`<div class="edbar">
-    <button class="btn ${ed?'':'sec'}" onclick="S.editSched=!S.editSched;save();render()">${ed?'\u2713 Done editing':`${ico('stylus',14)} Edit schedule`}</button>
-    ${ed&&rows.length?`<button class="ed-t danger" onclick="resetSchedule()">Clear the whole plan</button>`:''}
+    <button class="btn" onclick="S.editSched=!S.editSched;save();render()">${ed?'Done editing':`${ico('stylus',14)} Edit schedule`}</button>
+    ${ed&&rows.length?`<button class="btn danger" onclick="resetSchedule()">Clear the whole plan</button>`:''}
   </div>`;
 
   if(!ed){
     h+=`<div class="sched-legend">
-      <span class="leg"><span class="sw" style="background:var(--neuro)"></span>Today</span>
-      <span class="leg"><span class="sw" style="background:var(--bad)"></span>Missed</span>
-      <span class="leg"><span class="sw" style="background:var(--ok)"></span>Done</span>
-      <span class="leg"><span class="sw" style="background:var(--bg-2);border-style:dashed"></span>Free \u00b7 catch-up slot</span>
+      <span class="leg"><span class="sw today"></span>Today</span>
+      <span class="leg"><span class="sw missed"></span>Missed</span>
+      <span class="leg"><span class="sw done"></span>Done</span>
+      <span class="leg"><span class="sw free"></span>Free, catch-up slot</span>
     </div>`;
     const n=catchups.length;
     if(n){
-      h+=`<button class="card" style="margin-bottom:20px;--c:rgba(109,76,125,.4)" onclick="go({name:'moved'})">
-        <div style="display:flex;align-items:center;gap:11px">
-          <span class="mod-ic" style="background:var(--neuro)">${ico('shuffle',20)}</span>
-          <div><div class="mod-name" style="font-size:14.5px">${n} missed item${n===1?'':'s'} to catch up</div>
-          <div class="mod-meta" style="margin:0">${overflow>0?`${overflow} with no slot left`:'All of it has a new date'} &rarr;</div></div>
-        </div></button>`;
+      h+=`<button class="pln-link" onclick="go({name:'moved'})">
+        <span class="pln-link-t">${n} missed item${n===1?'':'s'} to catch up</span>
+        <span class="pln-link-s">${overflow>0?`${overflow} with no slot left`:'All of it has a new date'} &rarr;</span>
+      </button>`;
     }
   }
 
@@ -204,32 +212,32 @@ function vSchedule(p){
     const landed=landing[d.date]||[];
 
     h+=`<div class="${cls.join(' ')}">
-      <span class="day-date"><span class="day-d">${dd}</span><br><span class="day-w">${wd}${isToday&&!ed?' \u00b7 today':''}${!ed&&anyMissed?' \u00b7 missed':(!ed&&allDone?' \u00b7 done':'')}</span></span>
+      <span class="day-date"><span class="day-d">${dd}</span><span class="day-w">${wd}${isToday&&!ed?' · today':''}${!ed&&anyMissed?' · missed':(!ed&&allDone?' · done':'')}</span></span>
       <span class="day-body">`;
 
     if(ed){
       d.items.forEach(it=>{
         h+=`<div class="ed-item">
-          <span class="ed-col" style="background:${it.hex}" title="Change colour" onclick="cycleColour(${di},${it.idx})"></span>
-          <input class="ed-lab" value="${esc(it.label)}" placeholder="Label"
+          <button class="ed-col" style="background:${it.hex}" title="Change colour" aria-label="Change colour" onclick="cycleColour(${di},${it.idx})"></button>
+          <input class="ed-lab" value="${esc(it.label)}" placeholder="Label" aria-label="Label"
             onchange="editItem(${di},${it.idx},'label',this.value)">
-          <input class="ed-txt" value="${esc(it.text)}" placeholder="What to study"
+          <input class="ed-txt" value="${esc(it.text)}" placeholder="What to study" aria-label="What to study"
             onchange="editItem(${di},${it.idx},'text',this.value)">
-          <button class="ed-x" title="Remove" onclick="delItem(${di},${it.idx})">&times;</button>
+          <button class="ed-x" title="Remove" aria-label="Remove this subject" onclick="delItem(${di},${it.idx})">&times;</button>
         </div>`;
       });
       h+=`<button class="ed-add" onclick="addItem(${di})">+ Add a subject</button>`;
     }else{
       if(!d.items.length){
-        h+=`<div class="track"><span class="track-body" style="color:var(--ink-4);font-style:italic">Free day \u2014 catch-up slot</span></div>`;
+        h+=`<div class="track"><span class="track-body free-note">Free day, catch-up slot</span></div>`;
       }
       d.items.forEach(it=>{
         h+=trackRow(d.date,it.idx,it.label,it.hex,it.text,S.sched[d.date+'|'+it.idx]);
       });
       landed.forEach(c=>{
         h+=`<div class="track catchup">
-          <span class="track-body"><span class="tag" style="background:${c.hex}">${esc(c.label)}</span>${esc(c.text)}
-          <div class="movednote">&#8627; caught up from ${fmtShort(c.date)}</div></span></div>`;
+          <span class="track-body">${planTag(c.label,c.hex)}${esc(c.text)}
+          <div class="movednote">caught up from ${fmtShort(c.date)}</div></span></div>`;
       });
     }
     h+=`</span>`;
@@ -243,13 +251,13 @@ function vSchedule(p){
 
   if(ed){
     h+=`<div class="newday">
-      <b style="font-size:13px">Add a day:</b>
+      <label for="newDate">Add a day</label>
       <input type="date" id="newDate" value="${nextFreeDate()}">
-      <button class="btn go" onclick="addDay()">Add</button>
-      <span style="font-size:11.5px;color:var(--ink-4);font-weight:600">A day with no subjects becomes a catch-up slot.</span>
+      ${planAddBtn('Add day','addDay()')}
+      <span class="newday-hint">A day with no subjects becomes a catch-up slot.</span>
     </div>`;
   }
-  p.innerHTML=h;
+  p.innerHTML=h+'</div>';
 }
 function fmtShort(iso){
   const d=new Date(iso+'T00:00:00');
@@ -257,10 +265,10 @@ function fmtShort(iso){
 }
 function trackRow(date,idx,label,hex,text,mark){
   return `<div class="track ${mark==='missed'?'is-missed':mark==='done'?'is-done':''}">
-    <span class="track-body">${label?`<span class="tag" style="background:${hex}">${esc(label)}</span>`:''}${esc(text)}</span>
+    <span class="track-body">${planTag(label,hex)}${esc(text)}</span>
     <span class="day-marks">
-      <button class="mk done ${mark==='done'?'on':''}" title="Mark done" onclick="setMark('${date}',${idx},'done')">&#10003;</button>
-      <button class="mk miss ${mark==='missed'?'on':''}" title="Mark missed" onclick="setMark('${date}',${idx},'missed')">&#10007;</button>
+      <button class="mk done ${mark==='done'?'on':''}" title="Mark done" aria-label="Mark done" aria-pressed="${mark==='done'}" onclick="setMark('${date}',${idx},'done')">&#10003;</button>
+      <button class="mk miss ${mark==='missed'?'on':''}" title="Mark missed" aria-label="Mark missed" aria-pressed="${mark==='missed'}" onclick="setMark('${date}',${idx},'missed')">&#10007;</button>
     </span></div>`;
 }
 function setMark(date,idx,mark){
@@ -377,9 +385,9 @@ function nextFreeDate(){
 function resetSchedule(){
   showModal(`<h3>Clear the whole plan?</h3>
    <p>Every day you have written, and every done / missed mark on them, is removed and the schedule goes back to empty. There is no built-in plan to fall back on, so this cannot be undone. Your answers, highlights and review deck are not affected.</p>
-   <div class="modal-actions">
-     <button class="btn sec" onclick="closeModal()">Cancel</button>
-     <button class="btn" style="background:var(--bad);border-color:var(--bad)" onclick="doResetSchedule()">Clear it</button>
+   <div class="modal-actions lst-m">
+     <button class="btn" onclick="closeModal()">Cancel</button>
+     <button class="btn danger" onclick="doResetSchedule()">Clear it</button>
    </div>`);
 }
 function doResetSchedule(){
@@ -390,58 +398,56 @@ function doResetSchedule(){
 /* ============ RESCHEDULED PAGE ============ */
 function vMoved(p){
   const {catchups,overflow,capacity}=buildSchedule();
-  let h=`<div class="eyebrow" style="background:var(--neuro)">Catch-up plan</div><h1>${ico('shuffle',26)} Rescheduled</h1>
-  <p class="page-sub">Only the subjects you marked missed, and the day each one has been moved to. Nothing else in the schedule was touched.</p>`;
+  let h=`<div class="lst pln"><header class="lst-head"><div class="eyebrow">Catch-up plan</div><h1>Rescheduled</h1>
+  <p class="page-sub">Only the subjects you marked missed, and the day each one has been moved to. Nothing else in the schedule was touched.</p></header>`;
 
   if(!catchups.length){
-    h+=`<div class="empty"><div class="big">${ico('laurel',46)}</div><h3>Nothing missed</h3>
-     <p>Nothing is behind. Mark a subject missed on the schedule and it appears here with a new date.</p>
-     <div style="margin-top:20px"><button class="btn go" onclick="go({name:'schedule'})">Open schedule</button></div></div>`;
+    h+=`<div class="empty"><p class="empty-line">Nothing is behind. Mark a subject missed on the schedule and it appears here with a new date.</p>
+     <button class="btn go" onclick="go({name:'schedule'})">Open schedule</button></div></div>`;
     p.innerHTML=h;return;
   }
 
   const placed=catchups.filter(c=>c.to);
   const dropped=catchups.filter(c=>!c.to);
-  h+=`<div class="grid g4" style="margin-bottom:24px">
-    <div class="stat"><span class="emo">${ico('shuffle',20)}</span><div class="n">${placed.length}</div><div class="l">Given a new date</div></div>
-    <div class="stat"><span class="emo">${ico('hourglass',20)}</span><div class="n" style="color:${overflow?'var(--bad)':'var(--ok)'}">${overflow}</div><div class="l">No slot left</div></div>
-    <div class="stat"><span class="emo">${ico('tablet',20)}</span><div class="n">${capacity}</div><div class="l">Catch-up capacity</div></div>
+  h+=`<div class="grid g4">
+    <div class="stat"><div class="n">${placed.length}</div><div class="l">Given a new date</div></div>
+    <div class="stat"><div class="n ${overflow?'bad':''}">${overflow}</div><div class="l">No slot left</div></div>
+    <div class="stat"><div class="n">${capacity}</div><div class="l">Catch-up capacity</div></div>
   </div>`;
 
   if(overflow){
-    h+=`<div class="card" style="margin-bottom:22px;background:var(--bad-bg);border-color:var(--bad)">
-      <b>${overflow} item${overflow===1?'':'s'} have nowhere to go.</b>
-      <div style="margin-top:7px;font-size:13.3px;color:var(--ink-2);font-weight:500">
-      Rest days and buffer days are full. Double up on a catch-up day, or drop something from the plan.</div></div>`;
+    h+=`<div class="pln-alert">
+      <b>${overflow} item${overflow===1?'':'s'} ${overflow===1?'has':'have'} nowhere to go.</b>
+      <span>Rest days and buffer days are full. Double up on a catch-up day, or drop something from the plan.</span></div>`;
   }
 
   const byDate={};
   placed.forEach(c=>{(byDate[c.to]=byDate[c.to]||[]).push(c)});
   Object.keys(byDate).sort().forEach(dt=>{
     const kind=byDate[dt][0].kind;
-    h+=`<div class="grouphdr">&rarr; ${fmtShort(dt)} &middot; ${kind==='rest'?'rest day':'buffer day'}</div>`;
+    h+=`<div class="grouphdr">Moved to ${fmtShort(dt)} · ${kind==='rest'?'rest day':'buffer day'}</div>`;
     byDate[dt].forEach(c=>{
-      h+=`<div class="ch-row" style="cursor:default;align-items:flex-start">
-        <span class="ch-dot" style="background:${c.hex};margin-top:4px"></span>
+      h+=`<div class="ch-row">
+        <span class="ch-dot" style="background:${c.hex}"></span>
         <span class="ch-name">
-          <div class="day-line"><span class="tag" style="background:${c.hex}">${esc(c.label)}</span>${esc(c.text)}</div>
-          <div class="movednote">missed ${fmtShort(c.date)} &nbsp;&rarr;&nbsp; <b style="color:var(--ok)">${fmtShort(c.to)}</b></div>
+          <div class="day-line">${planTag(c.label,c.hex)}${esc(c.text)}</div>
+          <div class="movednote">missed ${fmtShort(c.date)} &nbsp;&rarr;&nbsp; <b>${fmtShort(c.to)}</b></div>
         </span></div>`;
     });
   });
 
   if(dropped.length){
-    h+=`<div class="grouphdr" style="color:var(--bad)">No catch-up slot available</div>`;
+    h+=`<div class="grouphdr">No catch-up slot available</div>`;
     dropped.forEach(c=>{
-      h+=`<div class="ch-row" style="cursor:default;align-items:flex-start;border-color:var(--bad);background:var(--bad-bg)">
-        <span class="ch-dot" style="background:var(--bad);margin-top:4px"></span>
+      h+=`<div class="ch-row bad">
+        <span class="ch-dot" style="background:${c.hex}"></span>
         <span class="ch-name">
-          <div class="day-line"><span class="tag" style="background:${c.hex}">${esc(c.label)}</span>${esc(c.text)}</div>
-          <div class="movednote" style="color:var(--bad)">missed ${fmtShort(c.date)} &mdash; nowhere left to put it</div>
+          <div class="day-line">${planTag(c.label,c.hex)}${esc(c.text)}</div>
+          <div class="movednote">missed ${fmtShort(c.date)}, nowhere left to put it</div>
         </span></div>`;
     });
   }
-  p.innerHTML=h;
+  p.innerHTML=h+'</div>';
 }
 
 /* ============ SEARCH ============ */

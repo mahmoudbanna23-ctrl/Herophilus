@@ -225,23 +225,6 @@
 .noexp{padding:var(--s-8) var(--s-9);color:var(--ink-4);font-size:var(--fs-ui);font-style:italic}
 
 /* ---------- Schedule ---------- */
-.sched-legend{display:flex;gap:15px;flex-wrap:wrap;margin-bottom:20px;font-size:var(--fs-md);color:var(--ink-3);font-weight:700}
-.leg{display:flex;align-items:center;gap:7px}
-.leg .sw{width:13px;height:13px;border-radius:var(--r-md);border:2px solid var(--line-2)}
-.day{
-  display:flex;gap:14px;align-items:center;padding:var(--s-6) var(--s-7);background:var(--card);
-  border:1px solid var(--line-2);border-radius:var(--r-lg);margin-bottom:9px;
-  box-shadow:0 5px 14px rgba(0,0,0,.13);transition:transform var(--dur-2),box-shadow var(--dur-2);
-}
-.day:hover{border-color:var(--gold);box-shadow:0 10px 24px rgba(0,0,0,.18)}
-.day.rest{background:var(--bg-2);opacity:.72;border-style:dashed}
-.day.missed{background:var(--bad-bg);border-color:var(--bad)}
-.day.done{background:var(--ok-bg);border-color:var(--ok)}
-.day.today{border-color:var(--neuro);box-shadow:0 10px 24px rgba(125,88,144,.4)}
-.day-date{width:74px;flex-shrink:0}
-.day-d{font-weight:900;font-size:var(--fs-ui);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
-.day-w{font-size:var(--fs-xs);color:var(--ink-4);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
-.day-body{flex:1;min-width:0}
 .day-line{font-size:var(--fs-md);margin-bottom:4px;line-height:1.45;font-weight:600}
 .day-line:last-child{margin-bottom:0}
 .day-line.faded{opacity:.45;text-decoration:line-through}
@@ -252,43 +235,6 @@
 }
 /* Owner ruling: Peds is a coloured word, never a boxed status tag. */
 .tag[style*="#2e5f8a"]{background:transparent!important;border:0;box-shadow:none;padding:0;color:var(--peds-hi)}
-.movednote{font-size:var(--fs-xs);color:var(--neuro);font-weight:800;margin-top:4px}
-.day-marks{display:flex;gap:7px;flex-shrink:0}
-.mk{
-  width:38px;height:38px;border-radius:var(--r-lg);border:1px solid var(--line-2);background:var(--card);
-  display:flex;align-items:center;justify-content:center;font-size:var(--fs-ui);
-  transition:transform var(--dur-2) ease,box-shadow var(--dur-2),background var(--dur-2);
-  box-shadow:0 5px 14px rgba(0,0,0,.16);
-}
-.mk:hover{background:var(--bg-2);box-shadow:0 7px 18px rgba(0,0,0,.25)}
-.mk:active{transform:translate(1px,1px);box-shadow:0 2px 7px rgba(0,0,0,.2)}
-.mk.done.on{background:var(--ok);color:#fff}
-.mk.miss.on{background:var(--bad);color:#fff}
-.mk .lbl{position:absolute;opacity:0;pointer-events:none}
-/* Touch. These are 38px, under the 44px minimum, and the two of them sit 7px
-   apart while meaning opposite things — the schedule renders 119 rows, so 238
-   of them are on the page at once and a mis-tap is likeliest exactly here.
-   Growing the target without growing the gap would trade one error for
-   another, so both move. A portrait tablet is 768px and is still a finger, so
-   this is keyed on the pointer as well as on the width, not on width alone. */
-@media(max-width:700px),(hover:none){
-  .day-marks{gap:10px}
-  .mk{width:44px;height:44px;border-radius:var(--r-lg);font-size:var(--fs-body)}
-}
-
-
-.track{
-  display:flex;align-items:center;gap:11px;padding:var(--s-4) 0;
-  border-bottom:1.5px dashed var(--line);
-}
-.track:last-child{border-bottom:none}
-.track-body{flex:1;min-width:0;font-size:var(--fs-ui);font-weight:600;line-height:1.55}
-.track.is-done .track-body{opacity:.6}
-.track.is-missed .track-body{opacity:.55;text-decoration:line-through}
-.track.catchup{background:rgba(109,76,125,.12);border-radius:var(--r-lg);padding:var(--s-4) var(--s-5);margin-top:5px;border:1.5px dashed var(--neuro)}
-.day{align-items:stretch}
-.day-body{display:flex;flex-direction:column;justify-content:center}
-
 
 /* ---------- Highlighter ---------- */
 mark.hl{background:transparent;padding:var(--s-1) var(--s-1);border-radius:var(--r-md);color:inherit;
@@ -369,40 +315,6 @@ mark.hl[data-c="b"]{background:rgba(120,190,255,.28);box-shadow:inset 0 -1px 0 r
 
 
 
-/* ---------- Schedule editor ---------- */
-.edbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
-.day.editing{border-style:dashed;border-color:var(--neuro);background:rgba(109,76,125,.10)}
-.ed-item{display:flex;gap:8px;align-items:center;padding:var(--s-3) 0;flex-wrap:wrap}
-.ed-lab,.ed-txt{
-  padding:var(--s-3) var(--s-5);border:2px solid var(--line-2);border-radius:var(--r-lg);font-size:var(--fs-md);
-  background:var(--card);color:var(--tx);font-weight:600;font-family:inherit;
-}
-.ed-lab{width:132px;flex-shrink:0}
-.ed-txt{flex:1;min-width:150px}
-.ed-lab:focus,.ed-txt:focus{border-color:var(--neuro);outline:none}
-.ed-col{width:30px;height:30px;border-radius:var(--r-lg);border:2.5px solid var(--line-2);flex-shrink:0;cursor:pointer}
-.ed-x{
-  width:29px;height:29px;border-radius:var(--r-lg);border:2px solid var(--bad);color:var(--bad);
-  background:var(--card);font-weight:900;flex-shrink:0;font-size:var(--fs-md);
-}
-.ed-x:hover{background:var(--bad-bg)}
-.ed-add{
-  font-size:var(--fs-sm);font-weight:800;color:var(--neuro);padding:var(--s-3) var(--s-6);border-radius:var(--r-lg);
-  border:2px dashed var(--neuro);background:transparent;margin-top:5px;
-}
-.ed-add:hover{background:rgba(109,76,125,.17)}
-.ed-day-tools{display:flex;gap:7px;flex-shrink:0;flex-wrap:wrap}
-.ed-t{
-  font-size:var(--fs-xs);font-weight:800;padding:var(--s-2) var(--s-5);border-radius:var(--r-lg);border:2px solid var(--line-2);
-  background:var(--card);color:var(--ink-3);
-}
-.ed-t:hover{border-color:var(--line-2);color:var(--tx)}
-.ed-t.danger{border-color:var(--bad);color:var(--bad)}
-.ed-t.on{background:var(--fill);color:#fff;border-color:var(--line-2)}
-.newday{display:flex;gap:9px;align-items:center;flex-wrap:wrap;padding:var(--s-7);margin-top:10px;
-  border:2.5px dashed var(--line-2);border-radius:var(--r-lg);background:var(--card)}
-.newday input[type=date]{padding:var(--s-4) var(--s-5);border:2px solid var(--line-2);border-radius:var(--r-lg);
-  font-family:inherit;font-size:var(--fs-md);font-weight:600;background:var(--card);color:var(--tx)}
 .palette{display:flex;gap:6px;flex-wrap:wrap}
 
 

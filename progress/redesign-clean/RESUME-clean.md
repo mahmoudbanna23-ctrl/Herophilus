@@ -126,4 +126,9 @@ Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before d
   exam-fx.js + vendor hourglass Lottie (#7), quiz.js list views, skin.css:428 lane adds rail on mock/review,
   render.js:52 no stray saved-mock button. Fix round step3A-fix-brief.txt; looker PASS, refuter CONFIRMED.
   Left as is: literal `**` in some stems (data, frozen). overlap-proof only loads review EMPTY - it never sees rows.
-- NEXT: Part B (planning) - Codex after 16:16 or lean-drafter, same brief.
+- Part B DONE 2026-10-29 (owner yes): new plan.css (.pln scope + global .ed-t, still used by backup Restore
+  boot.js:158), sessions.js schedule/moved/session views, #23 add button on "Start my plan"/"Add day", dead
+  components.css/views.css rules removed. Looker PASS, refuter PARTIAL (.ed-t) then fixed, re-check PASS.
+  Left as is: Pause/Resume label waits for next redraw (old, clepsydra.js); print.css:14 lists dead .mk,.edbar.
+- NEXT: Part C (shell: modals, shortcuts, backup, term picker, gate, sync light) - Codex after 16:16 or
+  lean-drafter, same brief. Backup popup Restore button was never re-shot - shoot it in C.
