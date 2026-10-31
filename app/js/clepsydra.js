@@ -83,12 +83,12 @@ function clepLoadCfg(){
     /* posQ is the question screens' own spot and is read separately: an older
        stored value has only `pos`, and she should fall back to the new default
        corner there rather than inheriting the browsing one */
-    if(o){CLEP.mini=!!o.mini;CLEP.muted=!!o.muted;CLEP.pos=o.pos||null;CLEP.posQ=o.posQ||null}
+    if(o){CLEP.mini=!!o.mini;CLEP.muted=!!o.muted}
   }catch(e){}
 }
 function clepSaveCfg(){
   try{localStorage.setItem(CLKEY,JSON.stringify(
-    {mini:CLEP.mini,muted:CLEP.muted,pos:CLEP.pos,posQ:CLEP.posQ}))}catch(e){}
+    {mini:CLEP.mini,muted:CLEP.muted}))}catch(e){}
 }
 const clepReduced=()=>matchMedia('(prefers-reduced-motion:reduce)').matches;
 
@@ -118,11 +118,14 @@ function clepMount(){
   <button class="cl-mini" onclick="clepMini()" aria-label="Bring the Clepsydra back">
     ${clepMiniDial()}<span id="clepMiniT">Clepsydra</span></button>`;
   const b=$('clepBody');
-  b.addEventListener('pointerdown',clepDrag);
+  b.addEventListener('click',clepAsk);
   b.addEventListener('keydown',e=>{
     if(e.key==='Enter'||e.key===' '){e.preventDefault();clepAsk()}
   });
-  addEventListener('resize',clepPlace);
+  addEventListener('resize',clepTuck);
+  /* a page can swap its empty message in without a full render (filters) */
+  let awayT=0;
+  new MutationObserver(()=>{ clearTimeout(awayT); awayT=setTimeout(clepAway,120) }).observe(document.body,{childList:true,subtree:true});
   /* Re-measure the book on resize — the column width IS the view width, so a
      window change repaginates. Debounced: measuring forces layout, and a drag
      fires this continuously. The page index is kept by anchoring on the section
@@ -156,7 +159,10 @@ function clepShow(){
   const el=$('clep'); if(!el)return;
   CLEP.on=true; el.hidden=false;
   el.classList.toggle('mini',CLEP.mini);
-  clepPlace(); clepGlitchLoop(); clepPaint(); clepIdleLoop(); clepShiftLoop();
+  clepTuck(true); clepPaint();
+  /* her ambient life: the glitch (not gated on reading views) and the weight shift between two
+     resting poses. The idle chatter loop is NOT restarted: nothing of hers talks on its own. */
+  clepGlitchLoop(); clepShiftLoop();
   /* arrive in the pose this screen asks for, without a tear — there is no
      previous pose to fail out of */
   CLEP.pose=clepViewPose();
@@ -166,92 +172,184 @@ function clepHide(){
   CLEP.on=false;
   const el=$('clep'); if(el)el.hidden=true;
   clearTimeout(CLEP.glT); clearTimeout(CLEP.idleT);
-  clearTimeout(CLEP.shiftT); clearTimeout(CLEP.settleT); clearTimeout(CLEP.swapT);
+  clearTimeout(CLEP.shiftT); clearTimeout(CLEP.settleT); clearTimeout(CLEP.swapT); clearTimeout(CLEP.tuckT);
 }
 
 /* ---- where she stands ---------------------------------------------------
-   She keeps TWO spots, not one. On the question screens Skip and Next are
-   pinned to the right edge of the card and she was covering them, so there she
-   docks bottom-LEFT; everywhere else she keeps her usual bottom-right corner.
-   Two remembered positions rather than one, because a single one would mean
-   dragging her anywhere on a browse screen puts her back over the buttons the
-   next time a question opens. Both are device preferences, like the theme. */
-const CL_LEFT_VIEWS=['quiz','mock','review'];
-/* guarded the same way clepViewPose() is: clepPlace() can run before `view`
-   exists on a cold boot */
-function clepOnLeft(){
-  try{ return CL_LEFT_VIEWS.includes(view.name) }catch(e){ return false }
-}
+   One place on every screen: the RIGHT edge of the window, fixed to the
+   viewport (never the page, so she cannot widen it). At rest she is tucked
+   there with about half of the figure showing, cut only by the screen edge. She comes
+   out for an event or a press, says her line, and slides back by herself.
+
+   ⚠️ A tuck is only allowed where it covers nothing. clepEdgeFree() asks the
+   page: does any pressable thing reach into the strip she would occupy? If so
+   (a narrow window, a question card that runs to the edge) she rests wholly
+   off-screen instead and still slides out on events. Asked of the page rather
+   than encoded as a breakpoint, so a new layout cannot reintroduce the overlap.
+
+   Older builds stored a dragged position (CLEP.pos / CLEP.posQ). Dragging is
+   gone; those fields are left in storage, unread and unwritten. */
 function clepPlace(){
   const el=$('clep'); if(!el||el.hidden)return;
-  const left=clepOnLeft();
-  el.classList.toggle('left',left);
-  const p=left?CLEP.posQ:CLEP.pos;
-  if(!p){
-    el.style.left=el.style.top=el.style.right=el.style.bottom='';
-    if(left)clepClearRail(el);
+  el.classList.remove('left');
+  el.style.left=el.style.top=el.style.right='';
+}
+
+/* GSAP is already shipped under its recorded licence (js/lib). The slide is a
+   GSAP tween, no hand-written keyframes. Without it she still ends in the right
+   place: the fallback writes the final transform directly. */
+const CL_SHOW=.45;     /* share of her 112px canvas that shows while tucked. Owner 2026-10-31: about a third of her (was .55). .45 of the canvas is ~35-40% of her drawn pixels; by eye on all five rest poses it keeps wreath + eye (at .40 the welcoming pose is an arm and a sliver) */
+const CL_OUT=12;       /* gap to the screen edge while she is out */
+const CL_HIT='a[href],button,input,select,textarea,summary,label,[role=button],[tabindex]:not([tabindex="-1"])';
+function clepSlide(el,x,y,d,ease){
+  if(window.gsap&&gsap.to){
+    gsap.killTweensOf(el);
+    if(d>0)gsap.to(el,{x:x,y:y,duration:d,ease:ease}); else gsap.set(el,{x:x,y:y});
+  }else el.style.transform=`translate(${x}px,${y}px)`;
+}
+/* the thing that tucks: the figure, or the pill when she is collapsed */
+function clepUnit(el){
+  return el.querySelector(el.classList.contains('mini')?'.cl-mini':'.cl-body');
+}
+/* a bar that stays put while the page scrolls (top bar, focus bar). It only matters
+   where it sits in her band along the bottom edge; scrolled content matters anywhere. */
+function clepPinned(e){
+  for(let n=e;n&&n!==document.body;n=n.parentElement){
+    const p=getComputedStyle(n).position;
+    if(p==='fixed'||p==='sticky')return true;
+  }
+  return false;
+}
+/* rectangles of everything pressable on the screen, except her own parts */
+/* rest=true: only what could ever sit in her band along the bottom edge (she is tucked at any scroll);
+   rest=false: everything on screen right now (she is out, lifted anywhere) */
+function clepControls(el,rest,text){
+  const out=[], band=innerHeight-(parseFloat(getComputedStyle(el).bottom)||18)-190;
+  document.querySelectorAll(CL_HIT).forEach(e=>{
+    if(el.contains(e))return;
+    const r=e.getBoundingClientRect();
+    if(r.width<1||r.height<1)return;
+    const cs=getComputedStyle(e);
+    if(cs.visibility==='hidden'||cs.display==='none')return;
+    /* a pinned bar matters only if it sits in her band now; anything else only if the page can
+       ever scroll it into her band (its bottom, from the top of the document, is below the band) */
+    if(rest){ if(r.bottom+(clepPinned(e)?0:scrollY)<band)return; }
+    else if(r.bottom<0||r.top>innerHeight)return;
+    out.push(r);
+  });
+  /* the question stem and the page's own text are not pressable but they are what is being read:
+     while she is out, her bubble should not sit on them (step 5 fix 2, V5/V6). Every element that
+     holds text of its own counts; `text` asks for it. */
+  if(!rest&&text){
+    document.querySelectorAll('.page *,.stem').forEach(e=>{
+      if(el.contains(e))return;
+      /* the lines of text themselves (a Range per text node), not the element's box: a block is as wide as its
+         column even where its text is short, which left no clear spot at 1180 */
+      for(const n of e.childNodes){
+        if(n.nodeType!==3||!n.nodeValue.trim())continue;
+        const rg=document.createRange(); rg.selectNodeContents(n);
+        for(const r of rg.getClientRects()){
+          if(r.width<1||r.height<1||r.bottom<0||r.top>innerHeight)continue;
+          out.push(r);
+        }
+      }
+    });
+  }
+  return out;
+}
+/* true when no pressable thing reaches into the strip `shown` px wide at the
+   right edge, at ANY scroll position (x does not change with scroll) */
+function clepEdgeFree(el,shown){
+  const vw=document.documentElement.clientWidth, x0=vw-shown-6;   /* clientWidth: a scrollbar is not screen she can use */
+  return !clepControls(el,true).some(r=>r.right>x0&&r.left<vw);
+}
+function clepSpeaking(){
+  const box=$('clepSay'), el=$('clep'); return !!((box&&box.classList.contains('show'))||(el&&el.classList.contains('nosay')));   /* nosay = a peek without the bubble: still out until its own timer tucks her */
+}
+function clepTuck(now){
+  const el=$('clep'); if(!el||el.hidden)return;
+  if(now!==true&&clepSpeaking())return;   /* she tucks when the line ends */
+  clearTimeout(CLEP.tuckT);
+  el.classList.remove('pass');
+  el.classList.remove('nosay');
+  el.classList.add('tucked');             /* bubble and tools leave the layout */
+  clepAway();
+  const u=clepUnit(el), w=(u&&u.offsetWidth)||el.offsetWidth;
+  const shown=Math.round(w*CL_SHOW);
+  const free=clepEdgeFree(el,shown);
+  el.dataset.rest=free?'edge':'off';
+  clepSlide(el,free?w-shown:w+4,0,(now===true||clepReduced())?0:.42,'power2.in');
+}
+/* An empty page already shows her in a pose inside its message. Two of her on one page is one too
+   many, so the tucked figure hides while that image is on the page; she is back as soon as the page
+   changes, and a peek always shows her. */
+function clepAway(){
+  const el=$('clep'); if(!el)return;
+  el.classList.toggle('away',!!document.querySelector('.clep-empty')&&el.classList.contains('tucked'));
+}
+/* After a render: tuck now, and once more when the new screen has settled,
+   because a late layout can change whether the edge is free. */
+function clepRest(){
+  if(clepSpeaking())return;
+  clepTuck(true);
+  setTimeout(()=>{ if(!CLEP.on||clepSpeaking())return; clepTuck(true) },450);
+}
+/* Where she and her bubble stand while out: the lowest spot, then upward in
+   20px steps, where their box meets no pressable thing. Returns the lift in px,
+   or null when no clear spot exists (a narrow window). The bubble is measured
+   at the size its finished line will have. */
+function clepClearLift(el,text,strict){
+  clepClearLift.coversText=false;
+  const t=$('clepTxt'); if(!t)return 0;
+  const keep=t.innerHTML;
+  t.innerHTML=clepPartial(clepSegs(text),1e6);
+  const W=el.offsetWidth, H=el.offsetHeight;
+  t.innerHTML=keep;
+  const bot=parseFloat(getComputedStyle(el).bottom)||18;
+  const vw=document.documentElement.clientWidth;
+  const L=vw-CL_OUT-W, R=vw-CL_OUT, pad=6;
+  /* first a spot clear of controls AND text; failing that, clear of controls only (it covers a little
+     text, so the caller shortens her stay: lift.text) */
+  for(const text of (strict?[true]:[true,false])){
+    const cs=clepControls(el,false,text);
+    for(let lift=0;bot+lift+H<=innerHeight-8;lift+=20){
+      const B=innerHeight-bot-lift, T=B-H;
+      if(!cs.some(r=>r.left<R+pad&&r.right>L-pad&&r.top<B+pad&&r.bottom>T-pad)){
+        clepClearLift.coversText=!text;
+        return lift;
+      }
+    }
+  }
+  return null;
+}
+function clepPeek(text,opt){
+  const el=$('clep'); if(!el||el.hidden)return;
+  opt=opt||{};
+  /* muted or collapsed = no automatic peeks; only a press gets through */
+  if((CLEP.muted||CLEP.mini)&&!opt.press)return;
+  clearTimeout(CLEP.tuckT);
+  el.classList.remove('tucked','pass','away','nosay');
+  /* opt.quiet (the set-finish line over the results page): the line may never cover text. If no clear spot
+     exists for bubble plus figure, she peeks without the bubble and the line is simply not shown */
+  if(opt.quiet&&clepClearLift(el,text,true)===null){
+    el.classList.add('nosay');
+    const l2=clepClearLift(el,'',true);
+    /* opt.hold (the chapter moment): no clear spot for the figure either = no peek at all; she stays tucked
+       and the page's own chapter-done state is the moment (390: the figure had sat over the stem) */
+    if(l2===null&&opt.hold){clepTuck(true);return}
+    if(l2===null)el.classList.add('pass');
+    clepSlide(el,-CL_OUT,-(l2||0),clepReduced()?0:.42,'power2.out');
+    clepPose(clepViewPose());
+    CLEP.tuckT=setTimeout(()=>clepTuck(true),2200);
     return;
   }
-  /* clamped every time, not just on drag: a window that shrank between visits
-     would otherwise leave her parked off-screen with no way back */
-  const w=el.offsetWidth||160, h=el.offsetHeight||140;
-  const x=Math.min(Math.max(p.x,6),Math.max(6,innerWidth-w-6));
-  const y=Math.min(Math.max(p.y,6),Math.max(6,innerHeight-h-6));
-  el.style.left=x+'px'; el.style.top=y+'px';
-  el.style.right='auto'; el.style.bottom='auto';
-}
-/* ⚠️ The window's bottom-left corner IS THE RAIL — 238px wide and full height —
-   and moving her onto it would only trade one covered control for another. The
-   rail is fixed too, so unlike an overlap with the question card that one
-   cannot be scrolled out of the way: the links would be under her for good.
-   Measured, not assumed: docked at the window edge at 1440x760 she landed on
-   Review deck and Mock exam.
-
-   So the left dock is the RAIL'S right edge, not the window's — the bottom-left
-   of the reading column. Asked of the element rather than encoded as a
-   breakpoint, because the rail slides off-canvas below 860px and there the bare
-   window edge is right again; one geometry test covers both.
-
-   Collapsed counts too. The pill looked small enough to be exempt and is not:
-   measured at 1366x768 it sat on Review deck. .cl-body is display:none then, so
-   its rect is all zeros — which reads as "at the window edge" and moves the
-   pill for the same reason, with no special case needed. */
-function clepClearRail(el){
-  const nav=$('nav'), body=el.querySelector('.cl-body');
-  if(!nav||!body)return;
-  const r=nav.getBoundingClientRect();
-  if(r.right<=body.getBoundingClientRect().left)return;   /* off-canvas, or clear */
-  el.style.left=Math.round(r.right+12)+'px';
-  el.style.right='auto';
-}
-function clepDrag(e){
-  if(e.button!==undefined&&e.button!==0)return;
-  const el=$('clep');
-  const r=el.getBoundingClientRect();
-  const ox=e.clientX-r.left, oy=e.clientY-r.top;
-  let moved=false;
-  try{e.target.setPointerCapture(e.pointerId)}catch(err){}
-  const mv=ev=>{
-    if(!moved&&Math.abs(ev.clientX-e.clientX)+Math.abs(ev.clientY-e.clientY)>4){
-      moved=true; el.classList.add('drag');
-    }
-    if(!moved)return;
-    /* the drag writes to whichever of the two spots this screen is using */
-    const at={x:ev.clientX-ox,y:ev.clientY-oy};
-    if(clepOnLeft())CLEP.posQ=at; else CLEP.pos=at;
-    clepPlace();
-  };
-  const up=()=>{
-    e.target.removeEventListener('pointermove',mv);
-    e.target.removeEventListener('pointerup',up);
-    e.target.removeEventListener('pointercancel',up);
-    el.classList.remove('drag');
-    /* a press that never moved is a tap, and a tap asks her a question */
-    if(moved)clepSaveCfg(); else clepAsk();
-  };
-  e.target.addEventListener('pointermove',mv);
-  e.target.addEventListener('pointerup',up);
-  e.target.addEventListener('pointercancel',up);
+  const lift=clepClearLift(el,text);
+  /* no clear spot: nothing of hers may block a press, and she leaves by herself */
+  if(lift===null)el.classList.add('pass');
+  /* it sits on some text: short stay, so the page is readable again within seconds */
+  if(lift===null||clepClearLift.coversText)opt.dwell=Math.min(4000,Math.max(2600,1400+clepSegs(text).reduce((n,x)=>n+x.t.length,0)*35));
+  clepSlide(el,-CL_OUT,-(lift||0),clepReduced()?0:.42,'power2.out');
+  clepSay(text,{force:true,peek:true,pose:opt.pose,tipK:opt.tipK,dwell:opt.dwell});
 }
 
 /* ---- controls ----------------------------------------------------------- */
@@ -259,12 +357,12 @@ function clepMini(){
   CLEP.mini=!CLEP.mini; clepSaveCfg();
   const el=$('clep'); if(el)el.classList.toggle('mini',CLEP.mini);
   if(CLEP.mini)clepDismiss();
-  clepPlace(); clepPaint();
+  clepPlace(); clepPaint(); clepTuck(true);
 }
 function clepMute(){
   CLEP.muted=!CLEP.muted; clepSaveCfg(); clepPaintTools();
   if(CLEP.muted){clepDismiss(); toast('The Clepsydra will keep quiet')}
-  else clepSay('Back with you. Tap me on any screen and I will explain it.',{force:true});
+  else clepPeek('Back with you. Tap me on any screen and I will explain it.',{press:true});
 }
 function clepPaintTools(){
   const b=$('clepMuteBtn'); if(!b)return;
@@ -297,8 +395,8 @@ function clepPartial(segs,n){
   return h;
 }
 function clepSay(text,opt){
-  if(['quiz','results'].includes(view.name))return;
   opt=opt||{};
+  if(!opt.peek)return;
   if(!CLEP.on||!text)return;
   if((CLEP.muted||CLEP.mini)&&!opt.force)return;
   const box=$('clepSay'), t=$('clepTxt');
@@ -320,7 +418,7 @@ function clepSay(text,opt){
       if(n>=total)clearInterval(CLEP.typer);
     },16);
   }
-  const dwell=Math.min(15000,Math.max(4500,2600+total*46));
+  const dwell=opt.dwell||Math.min(15000,Math.max(4500,2600+total*46));
   CLEP.hideT=setTimeout(clepDismiss,dwell);
   /* She turns to speak. The swap carries its own burst, so the bare flicker
      that used to fire here would be a second, overlapping one. */
@@ -334,6 +432,7 @@ function clepDismiss(){
   /* back to whatever this screen asks for, so "she said something" always
      resolves rather than leaving her mid-gesture */
   if(CLEP.pose==='talking')clepSettle(900);
+  CLEP.tuckT=setTimeout(()=>clepTuck(),clepReduced()?0:500);
 }
 
 /* ---- the glitch --------------------------------------------------------- */
@@ -434,8 +533,9 @@ function clepTip(){
    screen per visit, which is the line between a companion and a nag. */
 function clepAsk(){
   if(CLEP.mini){clepMini();return}
+  const box=$('clepSay'); if(box&&box.classList.contains('show')){clepDismiss();return}
   const t=clepTip();
-  clepSay(t||clPick(clepFacts()),{force:true,tipK:t?clepViewKey()+(view.name==='module'?':'+view.id:''):null});
+  clepPeek(t||clPick(clepFacts()),{press:true,tipK:t?clepViewKey()+(view.name==='module'?':'+view.id:''):null});
 }
 let _clLastView='';
 function clepOnView(){
@@ -450,19 +550,7 @@ function clepOnView(){
      it does not freeze her. It sits ABOVE the mute check for that reason. */
   clearTimeout(CLEP.settleT);
   clepPose(clepViewPose());
-  if(!CLEP.on||CLEP.muted||CLEP.mini)return;
-  const seenKey=clepViewKey();
-  if(CLEP.seen[seenKey])return;
-  const t=clepTip();
-  /* let the page entrance land first; if the reader has moved on by then the tip is stale, so it
-     is dropped and the screen stays unseen (its tip comes on the next visit) */
-  if(t){
-    CLEP.seen[seenKey]=1;
-    setTimeout(()=>{
-      if(_clLastView!==k){ CLEP.seen[seenKey]=0; return }
-      clepSay(t,{tipK:k});
-    },620);
-  }
+  /* no talk on arrival: she only comes out for an event or a press */
 }
 /* Idle chatter is the one thing held back from the reading screens. A tip you
    asked for by arriving is welcome mid-question; an unprompted aside about the
@@ -487,7 +575,7 @@ function clepShiftLoop(){
   clearTimeout(CLEP.shiftT);
   if(!CLEP.on||clepReduced())return;
   CLEP.shiftT=setTimeout(()=>{
-    if(CLEP.on&&!CLEP.mini&&!STILL_VIEWS.includes(view.name)
+    if(CLEP.on&&!CLEP.mini&&!clepReduced()&&!clepSpeaking()&&!STILL_VIEWS.includes(view.name)
        &&CL_IDLE_POSES.includes(CLEP.pose)
        &&Date.now()-CLEP.lastSay>9000){
       clepPose(clPick(CL_IDLE_POSES.filter(p=>p!==CLEP.pose)));
@@ -640,8 +728,9 @@ function endSession(completed){
   S.sess=null; save(); sessStopTick(); clepPaint();
   /* finishing the set she timed is worth a jump; stopping early is not.
      The pose carries its own burst, so the bare one that was here is gone. */
-  clepPose(completed?'jumping':'presenting'); clepSettle(4200);
-  clepSay(completed
+  /* muted or collapsed = no automatic pose change either (a press still works) */
+  if(!CLEP.muted&&!CLEP.mini){clepPose(completed?'jumping':'presenting'); clepSettle(4200)}
+  clepPeek(completed
     ? `Set complete: **${mins} min**, **${st.n}** questions${st.acc!==null?` at **${st.acc}%**`:''}.`
     : `Stopped. **${mins} min**, **${st.n}** questions logged.`,
     {force:true,pose:false});   /* pose:false — she is mid-jump, do not turn her */

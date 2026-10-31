@@ -401,6 +401,7 @@ function reveal(){
   if(Q.exam)return;                       /* no peeking: the promise on the mock page */
   if(Q.shown||Q.sel===null)return;
   const q=QUESTIONS.find(x=>x.id===Q.ids[Q.i]);
+  const chapterWasComplete=clepChapterWasComplete(q.chapter);
   const ok=Q.sel===q.answer;
   Q.shown=true;
   /* Repeating the same choice is still a new recall attempt. Schedule once
@@ -409,7 +410,16 @@ function reveal(){
   Q.did[q.id]=ok;                         /* what THIS sitting scored — see finishSet */
   scheduleSRS(q.id,ok);
   fxFresh=q.id;
-  markDayActive();save();render();
+  markDayActive();save();render();clepChapterFinished(q.chapter,chapterWasComplete);
+}
+function clepChapterWasComplete(cid){
+  const qs=QUESTIONS.filter(q=>q.chapter===cid);
+  return !qs.length||qs.every(q=>isAnswered(q.id));
+}
+function clepChapterFinished(cid,before){
+  if(before)return;
+  const qs=QUESTIONS.filter(q=>q.chapter===cid);
+  if(qs.length&&qs.every(q=>isAnswered(q.id)))clepPeek(`Chapter finished: **${chapterName(cid)}**.`,{pose:false,quiet:true,hold:true});
 }
 /* The three ratings have to differ in what they DO, not only in what they
    store, or the heading above them — "this sets when it comes back" — is a
@@ -483,6 +493,7 @@ function finishSet(){
   const skipped=Q.ids.length-done;
   const wrong=ids.filter(id=>!Q.did[id]);
   go({name:'results',result:{done:done,right:right,missed:missed,skipped:skipped,mins:mins,wrong:wrong}});
+  clepPeek(`Set finished: **${right}** right from **${done}** answered.`,{pose:false,quiet:true});
 }
 function vResults(p){
   const r=view.result;
@@ -591,6 +602,7 @@ function examFinish(byClock){
      <button class="btn sec" onclick="closeModal();go({name:'home'})">Dashboard</button>
      <button class="btn go" onclick="examReview()">Go through the paper</button>
    </div>`);
+  clepPeek(`Mock finished: **${right}** right out of **${ids.length}**.`,{pose:false});
 }
 /* Marking every question as revealed hands the paper back to the ordinary quiz
    view, which already knows how to show a verdict, an explanation, the theory
@@ -997,7 +1009,7 @@ function vWeak(p){
   <p class="page-sub">Every chapter you have started, worst score first. A chapter is only ranked once you have answered ${WEAK_MIN} of its questions &mdash; below that the percentage says more about luck than about you.</p></header>`;
 
   if(!all.length){
-    h+=`<div class="empty"><p class="empty-line">Nothing to rank yet. Answer a few questions and this page will show where to spend your time.</p>
+    h+=`<div class="empty"><img class="clep-empty" src="assets/clep/thinking.png" alt="Clepsydra thinking"><p class="empty-line">Nothing to rank yet. Answer a few questions and this page will show where to spend your time.</p>
      <button class="btn go" onclick="go({name:'home'})">Choose a subject</button></div></div>`;
     p.innerHTML=h;return;
   }
@@ -1045,7 +1057,7 @@ function vReview(p){
   let h=`<div class="lst"><header class="lst-head"><div class="eyebrow">Spaced repetition</div><h1>Review deck</h1>
   <p class="page-sub">Anything you got wrong, or got right but marked as a guess or as unsure, lands here. A guess comes back tomorrow, an unsure one in three days, then 7, 21, 60. Right answer moves it out a step; wrong resets it.</p></header>`;
   if(!deck.length){
-    h+=`<div class="empty"><p class="empty-line">The deck is empty. Questions you get wrong, guess or mark unsure will collect here.</p>
+    h+=`<div class="empty"><img class="clep-empty" src="assets/clep/thinking.png" alt="Clepsydra thinking"><p class="empty-line">The deck is empty. Questions you get wrong, guess or mark unsure will collect here.</p>
      <button class="btn go" onclick="go({name:'home'})">Choose a subject</button></div></div>`;
     p.innerHTML=h;return;
   }
@@ -1109,7 +1121,7 @@ function vFlagged(p){
   let h=`<div class="lst"><header class="lst-head"><div class="eyebrow">Marked by you</div><h1>Flagged</h1>
   <p class="page-sub">Anything you wanted to come back to, right or wrong.</p></header>`;
   if(!f.length){
-    h+=`<div class="empty"><p class="empty-line">No flagged questions yet. Press the flag button on any question, or press F, to park it here.</p>
+    h+=`<div class="empty"><img class="clep-empty" src="assets/clep/pointing.png" alt="Clepsydra pointing"><p class="empty-line">No flagged questions yet. Press the flag button on any question, or press F, to park it here.</p>
       <button class="btn go" onclick="go({name:'home'})">Choose a subject</button></div>`;
   }else{
     activeModules().forEach(m=>{
@@ -1160,7 +1172,7 @@ function vMock(p){
   h+=`<h2>2 · Choose length</h2>`;
   if(!pool.length){
     const filtered=QUESTIONS.some(q=>mockMods[q.module]&&mockable(q));
-    h+=`<div class="empty"><p class="empty-line">${filtered?'Your source filter hides every question in the selected modules. Change it on the module page.':'Nothing selected. Pick at least one module that has questions loaded.'}</p></div>`;
+    h+=`<div class="empty"><img class="clep-empty" src="assets/clep/thinking.png" alt="Clepsydra thinking"><p class="empty-line">${filtered?'Your source filter hides every question in the selected modules. Change it on the module page.':'Nothing selected. Pick at least one module that has questions loaded.'}</p></div>`;
   }else{
     h+=`<p class="pool-line">${pool.length} question${pool.length===1?'':'s'} in the selected pool.</p><div class="mock-lens">`;
     [10,20,40].forEach(n=>{

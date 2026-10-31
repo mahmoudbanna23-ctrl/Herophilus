@@ -64,7 +64,7 @@
   padding: var(--s-11, 28px) var(--s-11, 28px) var(--clep-reserve, 240px) var(--page-pl, 68px);
 }
 @media screen and (min-width: 1180px) {
-  .lean-after { padding-right: max(var(--s-11, 28px), calc(432px - max(0px, (100vw - 936px) / 2))); }
+  .lean-after { padding-right: max(var(--s-11, 28px), calc(var(--clep-lane, 58px) - max(0px, (100vw - 936px) / 2))); }
 }
 
 /* Narrow or tall windows: the cards use the whole width (they are opaque, the painting shows around them). */
@@ -162,7 +162,7 @@
       padding-right: calc(max(0px, (100% - 936px) / 2) + var(--s-11, 28px));
     }
     @media (min-width: 1180px) {
-      body[data-view="home"] .lean-after { padding-right: calc(max(0px, (100% - 936px) / 2) + max(var(--s-11, 28px), calc(432px - max(0px, (100vw - 936px) / 2)))); }
+      body[data-view="home"] .lean-after { padding-right: calc(max(0px, (100% - 936px) / 2) + max(var(--s-11, 28px), calc(var(--clep-lane, 58px) - max(0px, (100vw - 936px) / 2)))); }
     }
   } }
   body[data-view="home"] .lean-after { position: relative; z-index: 2; } /* above the painting's fade in every mode */

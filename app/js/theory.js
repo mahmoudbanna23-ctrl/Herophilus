@@ -357,7 +357,7 @@ function vTheory(p){
   const m=moduleOf(view.mod);
   if(!view.ch){
     const chs=theoryChapters(view.mod);
-    let h=`<button class="tb-btn" style="padding-left:0;margin-bottom:8px" onclick="go({name:'theory'})">&larr; Theory</button>
+    let h=`<button class="tb-btn tb-back" onclick="go({name:'theory'})">&larr; Theory</button>
     <div class="eyebrow" style="background:${m.hex}">${m.name}</div><h1>${ico(m.icon,26)} ${m.name} notes</h1>
     <p class="page-sub">Tap a lecture to open its full summary.</p>`;
     chs.forEach(([cid,cname])=>{
@@ -374,7 +374,7 @@ function vTheory(p){
 
   /* ---- the lecture as one continuous document ---- */
   const t=THEORY[view.ch];
-  if(!t){p.innerHTML=`<div class="empty"><div class="big">${ico('scroll',46)}</div><h3>No notes for this lecture</h3></div>`;return}
+  if(!t){p.innerHTML=`<div class="empty"><img class="clep-empty" src="assets/clep/thinking.png" alt="Clepsydra thinking"><div class="big">${ico('scroll',46)}</div><h3>No notes for this lecture</h3></div>`;return}
   const secs=t.sections||[];
   const allQs=[];
   secs.forEach(s=>(s.qs||[]).forEach(q=>{if(allQs.indexOf(q)<0)allQs.push(q)}));
@@ -666,4 +666,3 @@ const SDK=['https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js',
            'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js'];
 let fbApp=null, fbUser=null, syncState='off', pushTimer=null, sdkLoading=null;
 let cloudSession=null, cloudAuth=0, retryTimer=null;
-

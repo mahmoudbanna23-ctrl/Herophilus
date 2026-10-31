@@ -38,9 +38,9 @@ body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"]):
   .gate::before,.splash::before{
     background-image:linear-gradient(90deg,rgba(3,5,7,.22) 0,rgba(3,5,7,.80) 30%,rgba(3,5,7,.80) 70%,rgba(3,5,7,.22) 100%),url("../assets/lean/painted-codex-3@2x.webp");
   }
-  :root[data-theme="light"] body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"])::before{
-    background-image:linear-gradient(90deg,rgba(247,239,224,.52) 0,rgba(247,239,224,.52) 70%,rgba(247,239,224,.16) 90%,rgba(247,239,224,.16) 100%),url("../assets/lean/painted-day-v2@2x.webp");
-  }
+  /* light, pages: no wide-window override. The 70% / 90% fade assumed a 432px lane on the right; the lane is now 58px
+     (--clep-lane), so page text reaches the fade and sat on the bare desk (empty lines read 2.2-2.5:1). The even
+     scrim of the narrow rule above applies at every width. */
   :root[data-theme="light"] .gate::before,:root[data-theme="light"] .splash::before{
     background-image:linear-gradient(90deg,rgba(247,239,224,.16) 0,rgba(247,239,224,.52) 30%,rgba(247,239,224,.52) 70%,rgba(247,239,224,.16) 100%),url("../assets/lean/painted-day-v2@2x.webp");
   }
@@ -54,6 +54,12 @@ body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"]):
 /* light theme: the plate is seen through a light scrim, so bare text that sits straight on it gets a surface
    instead of the whole picture being scrimmed pale */
 :root[data-theme="light"] .pln .leg{background:rgba(247,239,224,.94);padding:var(--s-2) var(--s-5);border-radius:var(--r-sm)}
+/* light, text that sits straight on the plate gets a ground of its own: the empty-state box, the mock pool line, the back links */
+:root[data-theme="light"] body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"]) .lst .empty{background:var(--card)}
+:root[data-theme="light"] body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"]) .lst .pool-line{
+  display:inline-block;background:var(--card);padding:var(--s-2) var(--s-5);border-radius:var(--r-sm)}
+:root[data-theme="light"] body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"]) .tb-back{
+  background:var(--card);padding-left:var(--s-6);color:var(--text-2)}
 /* list group headers (review, weak, flagged, subject) sit between cards: a card-coloured bar */
 :root[data-theme="light"] body:not([data-view="home"]):not([data-view="quiz"]):not([data-view="results"]) .grouphdr{
   background:var(--card);border-radius:var(--r-sm);padding:var(--s-2) var(--s-5)}

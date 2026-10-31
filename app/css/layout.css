@@ -107,6 +107,7 @@
 @media(max-width:520px){ .kbd-btn{display:none} }
 .tb-btn{padding:var(--s-3) var(--s-6);border-radius:var(--r-lg);font-size:var(--fs-md);color:var(--ink-3);font-weight:700;transition:background var(--dur-2),transform var(--dur-2)}
 .tb-btn:hover{background:var(--bg-2);color:var(--tx)}
+.tb-back{padding-left:0;margin-bottom:8px}   /* was an inline style on the two back links (module, theory) */
 /* Touch. The nav rows are 36px tall and the topbar buttons 33-36px, both under
    the 44px minimum. The nav is a vertical list, so it can simply grow. The
    topbar cannot: four 44px buttons would push a sticky bar to ~70px and take

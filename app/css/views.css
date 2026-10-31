@@ -399,9 +399,10 @@ button.card.locked:hover .mod-art{opacity:.42}
    and toast (400). A companion that covered a modal would be a bug.
    ============================================================================ */
 .clep{
-  position:fixed;right:20px;bottom:18px;z-index:var(--z-150);
+  position:fixed;right:0;bottom:18px;z-index:var(--z-150);
+  pointer-events:none;               /* her box is not a wall: only her parts take presses */
   display:flex;align-items:flex-end;gap:9px;
-  touch-action:none;                 /* the figure is a drag handle */
+  touch-action:manipulation;
   /* The figure is a PNG now, so it carries its own colour and needs no ramp.
      Six shading tokens went with the SVG. These three are still hers because
      the CHROME around her is drawn in CSS, not painted into the sprite. */
@@ -415,6 +416,16 @@ button.card.locked:hover .mod-art{opacity:.42}
   --cl-edge:rgba(255,190,110,.42);
 }
 .clep[hidden]{display:none}          /* display:flex would otherwise beat it */
+.cl-body,.cl-tool,.cl-mini,.cl-x,.cl-say.show{pointer-events:auto}
+/* tucked: the bubble and tools leave the layout, so her box is the figure alone */
+.clep.tucked .cl-col,.clep.nosay .cl-col{display:none}
+/* tucked, the scanline layer would paint bands on the empty page beside her (V4): it only belongs on her
+   while she is out */
+.clep.tucked .cl-scan,.clep.tucked .cl-band{display:none}
+/* an empty page shows her in its message; the tucked one steps aside (clepAway) */
+.clep.away{visibility:hidden}
+/* out with no clear spot: nothing of hers may block a press (clepsydra.js) */
+.clep.pass,.clep.pass *{pointer-events:none!important}
 .cl-col{display:flex;flex-direction:column;align-items:flex-end;gap:7px}
 
 /* ---- the figure ---------------------------------------------------------
@@ -435,8 +446,7 @@ button.card.locked:hover .mod-art{opacity:.42}
 
    TWO stacked images, not one. The swap needs the outgoing frame to stay on
    screen while it is torn apart — see clepPose(). */
-.cl-body{position:relative;width:112px;height:112px;cursor:grab;flex:0 0 auto}
-.clep.drag .cl-body{cursor:grabbing}
+.cl-body{position:relative;width:112px;height:112px;cursor:pointer;flex:0 0 auto}
 .cl-stage{position:absolute;inset:0;animation:clBob 3.6s ease-in-out infinite}
 .cl-fig{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;
   -webkit-user-drag:none;user-select:none;
@@ -606,24 +616,9 @@ button.card.locked:hover .mod-art{opacity:.42}
 .clep.mini .cl-body,.clep.mini .cl-col{display:none}
 .clep.mini .cl-mini{display:inline-flex}
 
-/* ---- docked to the other corner -----------------------------------------
-   On the question screens she stands bottom-LEFT (user, 2026-08-02). Skip and
-   Next are pushed hard against the RIGHT edge of the question card — .qactions
-   does it with margin-left:auto — so in her usual corner she was sitting on
-   top of the two buttons the reader presses most.
-
-   The row is REVERSED rather than the figure being moved on its own: her
-   bubble, readout and tools all hang off her, and left un-flipped they would
-   run off the left edge of the window. Flipping puts the figure on the outside
-   and everything that grows on the inside, where there is room.
-
-   These rules only need to beat the base corner when nothing is stored;
-   clepPlace() writes inline left/top when she has been dragged, and inline
-   always wins. ------------------------------------------------------------ */
-.clep.left{flex-direction:row-reverse;right:auto;left:20px}
-.clep.left .cl-col{align-items:flex-start}
-.clep.left .cl-say{transform-origin:0 100%}
-.clep.left .cl-say::after{right:auto;left:-6px;transform:rotate(135deg)}
+/* ---- one place --------------------------------------------------------------
+   She no longer docks bottom-left on the question screens (Step 5 fix 1): every
+   view uses the right edge, tucked or out. See clepsydra.js, "where she stands". */
 
 /* ---- light: only her CHROME re-themes now -------------------------------
    The figure itself does NOT change between themes and must not be made to:
@@ -640,8 +635,7 @@ button.card.locked:hover .mod-art{opacity:.42}
 
 /* ---- small screens: she gets out of the way ----------------------------- */
 @media(max-width:700px){
-  .clep{right:12px;bottom:12px}
-  .clep.left{right:auto;left:12px}
+  .clep{bottom:12px}
   .cl-body{width:84px;height:84px}   /* SQUARE, like the desktop size — see above */
   .cl-say{max-width:min(64vw,240px);font-size:var(--fs-md)}
 }
@@ -660,6 +654,9 @@ button.card.locked:hover .mod-art{opacity:.42}
   .cl-say{transition:none}
 }
 @media print{.clep{display:none!important}}
+
+.empty .clep-empty{display:block;width:112px;height:112px;object-fit:contain;margin:0 auto 12px}
+@media print{.empty .clep-empty{display:none!important}}
 
 /* ---- the backup status light -------------------------------------------- */
 .bak-btn{position:relative}

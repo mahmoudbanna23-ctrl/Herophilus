@@ -58,6 +58,8 @@ function renderNow(){
   /* The companion travels with the view: she repaints her readout and, the
      first time she meets a screen, explains it. */
   if(!focusView){clepPaint();clepPlace();clepOnView()}
+  /* tucked on EVERY screen, quiz and results included (js/clepsydra.js) */
+  if(typeof clepRest==='function')clepRest();
 }
 
 /* Fade cards up as they enter the viewport — browse screens only. Reading
@@ -283,7 +285,7 @@ function vModule(p){
   const qs=qsInModule(m.id);
   const a=accuracy(qs);
   let h=`<div class="subj" style="--sj:${m.hex}">
-  <button class="tb-btn" style="padding-left:0;margin-bottom:8px" onclick="go({name:'home'})">← Dashboard</button>
+  <button class="tb-btn tb-back" onclick="go({name:'home'})">← Dashboard</button>
   <header class="subj-head">
     <div class="eyebrow">Subject</div>
     <h1>${ico(m.icon,26)} ${m.name}</h1>

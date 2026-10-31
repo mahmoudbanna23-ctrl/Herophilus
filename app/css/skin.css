@@ -387,34 +387,32 @@
    worst case (391 px wide, 18 px from the edge) plus room for the scrollbar. Below 1180 px the 240 px
    end reserve above stays the only provision. Layout only; nothing of hers is touched. */
 @media screen and (min-width:1180px){
-  :root{--clep-lane:432px;--page-mw:1180px}
+  :root{--clep-lane:58px;--page-mw:1180px}
   :root body[data-view="home"]{--page-mw:936px;--lane-rail:0px}
   /* the column is centred inside .main, which starts --rail-open from the left, so its side margin is
      (100vw - rail - page-mw) / 2, not (100vw - page-mw) / 2. Home keeps the old figure (--lane-rail:0px). */
   :root body:not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]) .page{
     padding-right:max(var(--s-11), calc(var(--clep-lane) - max(0px, (100vw - var(--lane-rail, var(--rail-open)) - var(--page-mw)) / 2)));
-  }
-  /* mock and review dock her bottom-LEFT (clepsydra.js CL_LEFT_VIEWS), so their lane is the left gutter */
-  :root body:is([data-view="mock"],[data-view="review"]):not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]) .page{   /* the :not() chain only matches the rule above in weight */
-    padding-right:var(--s-11);
-    padding-left:max(var(--page-pl), calc(var(--clep-lane) + var(--strip-w) - max(0px, (100vw - var(--rail-open) - var(--page-mw)) / 2)));
+    /* the left gutter matches (step 5 fix 3, U2): equal on both sides, so the lane never reads as a lopsided margin */
+    padding-left:max(var(--page-pl), calc(var(--clep-lane) - max(0px, (100vw - var(--lane-rail, var(--rail-open)) - var(--page-mw)) / 2)));
   }
 }
 
-/* her place on a narrow window (step 1b part 3): below 1180 px there is no lane, so she stops riding the
-   viewport. She is pinned to the bottom of the PAGE (body is the containing block, body height = the whole
-   page) and so sits inside the end reserve above, after the last row, at every scroll position. Placement
-   only: her figure, bubble, animation and timing are untouched. Horizontal side stays whatever clepsydra.js
-   and .clep / .clep.left decide (bottom-right, bottom-left on mock/review, her rail clearance); top and
-   bottom are forced because a dragged position writes a viewport top that would float her mid-page. */
-@media screen and (max-width:1179.98px){
-  :root body:not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]){position:relative}
-  :root body:not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]) .clep{
-    position:absolute;top:auto!important;bottom:18px!important;
+/* her place (Step 5 fix 1): fixed to the VIEWPORT at every width, right edge, tucked (clepsydra.js). The
+   step 1b rule that pinned her to the page bottom below 1180 px is gone: an absolutely placed, translated
+   figure widened the page (scrollWidth 963 vs 820), and a fixed one cannot. */
+
+/* her lane below 1180 (step 5 fix 2, V2): from 700 px up, the browse pages stop short of her tucked figure
+   so she rests on the same edge on every view (it was off-screen on the tall pages, on-screen on the short
+   ones). Measured against the page's own padding box, which already excludes the scrollbar. 700 matches the
+   breakpoint where her figure shrinks; a phone keeps the old rule (she rests off-screen where an edge is taken). */
+@media screen and (min-width:700px) and (max-width:1179.98px){
+  :root body:not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]) .page{
+    padding-right:max(var(--s-11), 58px);
+    padding-left:max(var(--page-pl), 58px);   /* equal gutters both sides (U2) */
   }
-}
-@media screen and (max-width:700px){
-  :root body:not([data-view="quiz"]):not([data-view="results"]):not([data-view="theory"]) .clep{bottom:12px!important}
+  :root body[data-view="home"] .lean-after{padding-right:max(var(--s-11, 28px), 58px)}
+  :root body[data-view="home"] .lean-cards{margin-right:58px}
 }
 
 /* pills are out: the label above a page title and the source counts are plain text, not

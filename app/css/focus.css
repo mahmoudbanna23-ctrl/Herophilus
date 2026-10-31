@@ -1,6 +1,5 @@
 /* Step 1a: isolated reading and results surfaces. Legacy browse screens remain. */
 body:is([data-view="quiz"],[data-view="results"]){background:var(--surface-0)!important;color:var(--text-1);font-family:var(--font-body)}
-body:is([data-view="quiz"],[data-view="results"]) :is(.clep){display:none!important}
 body:is([data-view="quiz"],[data-view="results"]) .rail{display:none!important}
 body:is([data-view="quiz"],[data-view="results"]) .main{margin:0!important;width:100%;min-width:0}
 body:is([data-view="quiz"],[data-view="results"]) .app{display:block;margin:0;padding:0}
@@ -246,3 +245,8 @@ dialog.question-panel .jumpkey .k-x{font-size:24px;line-height:1}
 /* Explanation chevron: an icon sized to the heading text, centred on it */
 #page .focus-reading .ex-head .chev{display:inline-flex;align-items:center;justify-content:center;width:1.2em;height:1.2em;margin-left:auto;color:var(--text-2)}
 #page .focus-reading .ex-head .chev svg{width:100%;height:100%;display:block}
+
+/* step 5 fix 3, U4: the light-theme "Check answer" faded from the disabled grey to the accent over .5s, and a
+   reading taken inside that half second measured 3.5-3.7:1. Settled it is 4.74:1 (#1971c2 on #f8f9fa). Light only,
+   so dark is untouched: the colour now snaps, the hover fill still sweeps. */
+:root[data-theme="light"] .check-answer:not(:hover){transition:box-shadow ease-out .5s}
