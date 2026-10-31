@@ -1,0 +1,24 @@
+STEP 4 FIX ROUND 3 - brief 2026-10-30. Rules: step4-brief.txt + step3-brief.txt. Prior rounds: step4-fix1-brief.txt,
+step4-fix2-brief.txt, notes step4-notes.md (append). Uncommitted diff = step 4 + fix 1 + fix 2; do not regress any code check.
+No git. Looker r3 on D:\scratch 2026\clean-4\shots-F3\ - fix these, visual only:
+
+W1. LIGHT HERO (hero_light_1440x900, hero_light_1180x820): (a) the white veil still covers the left ~60% heavily - make it
+    lighter and narrower: only as much as the headline/subtitle need for contrast (re-measure on real pixels), the painting
+    must read clearly. (b) grey-brown smear bottom-right. If it is the painting's own shadow, the painting is the owner's
+    artwork - never paint over it to hide it; re-pick background-position/size (or a different crop for light) so the corner
+    reads as painting, not as a smear. If any layer of ours tints it, remove that layer.
+W2. hero_dark_390x844 (and light 390): bowl cut at the right edge - re-pick position/size for narrow portrait so the whole
+    subject is in frame.
+W3. how_*_1440x900: left column empty ~280px below the ring. Either make the left column sticky/vertically centred against
+    the list, or move the ring so the two columns end together. No dead space.
+W4. NEW: what/how/demo light at 1440 and 1180 - grey-brown vertical bands ~150px at far left and right edges. Find what paints
+    them (backdrop showing beside a max-width container?) and make the section background run edge to edge cleanly.
+W5. what_*_1440x900 / 1180x820: "Spaced review" row shows a blank body - check whether it is a reveal caught mid-fade in the
+    capture or a real bug. If capture: force reveals done before shooting. If real: fix.
+REFUTER r3: PASS all, no items. Note: refuter saw the bowl in frame on dark 390 while looker saw it cut - look yourself
+(hero_dark_390x844 + light), fix only if cut.
+
+VERIFY as fix 2 (boot-check 0, tasks 7 PASS, frozen 8bd99322 0, overlap-proof row-identical to clean HEAD copy, contrast
+whole-page both themes 1440+390 real pixels, reduced motion, isolation 0 writes, 0 console errors, no h-scroll).
+OPEN every shot you produce, all sizes, both themes, before claiming a W item done.
+Shots -> D:\scratch 2026\clean-4\shots-F4\ (+ rm\). OUTPUT under 120 words. Stop at ~40 tool calls.

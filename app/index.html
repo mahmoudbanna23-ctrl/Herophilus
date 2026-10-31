@@ -40,6 +40,9 @@
 <link rel="stylesheet" href="css/views.css">
 <link rel="stylesheet" href="css/skin.css">
 <link rel="stylesheet" href="css/backdrop.css">
+<!-- Front page (signed-out visitors, before the gate): css/front.css + js/front.js; odometer counter theme from vendor/ -->
+<link rel="stylesheet" href="vendor/odometer-theme-minimal.min.css">
+<link rel="stylesheet" href="css/front.css">
 <link rel="stylesheet" href="css/type.css">
 <link rel="stylesheet" href="css/fonts-ui.css">
 <link rel="stylesheet" href="css/tokens.css">
@@ -157,6 +160,10 @@
 <script src="js/quiz.js"></script>
 <script src="js/sessions.js"></script>
 <script src="js/clepsydra.js"></script>
+<!-- Front page: SplitType + HubSpot odometer (vendor/), then its own wiring; showGate() closes it -->
+<script src="vendor/split-type.min.js"></script>
+<script src="vendor/odometer.min.js"></script>
+<script src="js/front.js"></script>
 <script src="js/boot.js"></script>
 </body>
 </html>

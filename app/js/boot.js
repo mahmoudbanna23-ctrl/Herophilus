@@ -420,5 +420,9 @@ async function boot(){
   }else{
     hideSplash();
   }
+  /* A device with no profile has not been here before: show the front page first (js/front.js). Its Start and
+     Sign in buttons call showGate(), so the gate and enterProfile() are unchanged. Anyone with a profile goes
+     straight to the gate as before. */
+  if(!profiles.length&&typeof FrontPage!=='undefined'){FrontPage.open();return}
   showGate();
 }

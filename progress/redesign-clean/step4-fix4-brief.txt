@@ -1,0 +1,22 @@
+STEP 4 FIX ROUND 4 - brief 2026-10-30. Rules: step4-brief.txt + step3-brief.txt. Prior rounds: step4-fix1..3-brief.txt,
+notes step4-notes.md (append). Uncommitted diff = step 4 + fixes 1-3; do not regress any code check. No git.
+Looker r4 on D:\scratch 2026\clean-4\shots-F4\: DARK IS STRONG - do not change dark. Fix light only:
+
+X1. LIGHT HERO 1440/1180 - CHANGE APPROACH (three rounds of thinning the band veil failed: it washes lamp, scrolls, papyrus,
+    bowl and leaves a fade edge ~x=950). Remove the wide band veil. Instead shade ONLY behind the text block: a soft
+    elliptical/radial scrim sized to the headline+lede+buttons box, fading to fully transparent within ~120px of the text, so
+    no edge is visible and the painting's subjects are untouched. If real-pixel contrast still fails, add a restrained
+    text-shadow halo; if still failing, put the lede (only) on a small plate using the app's existing raised-fill token. Pick
+    the lightest option that passes, say which in notes. Never draw on, recolour or edit the painting itself.
+X2. LIGHT PORTRAIT (hero_light_390x844, hero_light_820x1180): painting ends in a hard horizontal edge with the headline ~8px
+    below; pale band under the nav. Make light fade out exactly as the dark portrait does (copy dark's mechanism), same gap
+    to the headline as dark, and remove the pale band under the nav.
+X3. Capture artefacts (how_dark_820x1180 blank first card; what_light_1180x820 ring as outline only): force every reveal /
+    draw animation to its end state before EVERY shot, all sizes. Confirm in the shots.
+X4. demo_light_1440x900: faint horizontal line at y~658 - find what paints it and remove it.
+REFUTER r4: PASS all, overlap row diff vs clean HEAD done (192 identical), backdrop.css additions all keyed on html.front-on -
+keep any new backdrop rule keyed the same way.
+
+VERIFY as fix 3, PLUS the overlap-proof row diff against a fresh clean `git archive HEAD` copy (skipped last round - required).
+OPEN every light shot you produce, all four sizes, before claiming an X item done; confirm dark shots unchanged.
+Shots -> D:\scratch 2026\clean-4\shots-F5\ (+ rm\). OUTPUT under 120 words. Stop at ~40 tool calls.

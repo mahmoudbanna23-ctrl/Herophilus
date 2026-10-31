@@ -1,0 +1,57 @@
+STEP 4 FRONT PAGE - brief 2026-10-29. Same rules as progress\redesign-clean\step3-brief.txt (read it first). No git.
+Repo: D:\claude os\Medical school\Herophilus-redesign (branch redesign/clean-2026-10). Never touch the live Herophilus folder.
+
+OWNER RULINGS
+- Plan step 4 (C:\Users\Alfa388\.claude\plans\moonlit-skipping-summit.md): "Signed-out visitors, before the gate: hero, what it
+  is (subjects, banks, counts from data), how it works (focus quiz, spaced review, timed exams) with scroll reveals, a live quiz
+  demo that cannot touch study state or reuse live ids, start / sign-in."
+- 2026-10-29: hero = HIS PAINTED DESK (assets\lean\painted-codex-3@2x.webp night/dark, painted-day-v2@2x.webp day/light; .webp,
+  never the 3.6 MB .png). Not the flying cards. No new art. Never draw on it. The Clepsydra does not appear on this page.
+- Moves picked (progress\redesign-clean\PICKS.md): N1 heading rises line by line, M3 depth on scroll (on the painting), M4
+  self-drawing ring, small pick #1 question counter (HubSpot odometer, MIT). Engine GSAP + ScrollTrigger + Lenis is already in
+  app\vendor (index.html:149-154) - reuse those files, add no second copy.
+- COPY, NEVER RECREATE (owner 2026-10-16): every motion is the real published code. Only colours, text, size may change -
+  never timing, easing, keyframes.
+  * Counter: D:\scratch 2026\motion-copied\src\odometer\ (odometer.min.js, odometer-theme-minimal.min.css, LICENSE) -> app\vendor\
+    + licence into app\assets\licences\. Init as in its README.
+  * N1 and M3: take each from a Codrops clone in D:\scratch 2026\motion-big\src\ (MIT; MANIFEST.md + tools\patches.mjs in
+    D:\scratch 2026\motion-big\ say what each does). Pick the closest demo, copy its GSAP/ScrollTrigger code as published, name
+    the repo + file + licence in a comment and in assets\licences\. If no clone fits a move, DROP that move and say so - do not
+    hand-build one.
+  * M4: progressbar.js (already app\vendor\progressbar.min.js, owner pick 6), init as in its README.
+
+WHEN IT SHOWS (my call, keep it): boot.js:423 calls showGate() when no session was restored. Show the front page there instead
+ONLY when this device has no profiles (profiles.length===0); otherwise showGate() as today. Its Start and Sign-in buttons call
+showGate() / showGate('signin'). Add one quiet text link on the gate's first step back to the front page. Gate stays two steps;
+keep the file: button swap in gateSignInStep(); enterProfile() stays the only cloud entry. No new storage key, no new S field.
+
+BUILD (new files: css\front.css, js\front.js; link after backdrop.css / before boot.js in index.html; comment why in one line)
+1. Hero: painting full-bleed with a scrim that keeps AA, Herophilus title + one plain line of what it is, Start + Sign in.
+2. What it is: the 4 subjects (MODULES), the banks (BANKS / banksPresent), question counts read from QUESTIONS at runtime -
+   never typed numbers; the counter rolls to the total.
+3. How it works: focus quiz, spaced review, timed exams - three short blocks with scroll reveals; one carries the M4 ring.
+4. Live demo: 3 real questions (one per subject, fixed choice) rendered by front.js's own tiny renderer with its own DOM id
+   prefix fp-. It must NEVER call the quiz engine, record(), save, S, localStorage or any wardround.* key. Answer shows right/
+   wrong + the printed explanation. Prove it: snapshot every localStorage key before and after answering all 3 - identical.
+5. Wording: plain, short, no emoji, no chirpy copy, no pills, no hover lift, no idle pulse, no confetti.
+6. Lenis + ScrollTrigger only while the front page is up; destroy/kill both when the gate opens (the subject page runs its own).
+7. Stacking: front sits under the gate (gate 200) - pick a value below 150 or hide the front when the gate shows; say which.
+8. prefers-reduced-motion: no Lenis, no scroll motion, counter shows the final number, ring drawn - everything readable.
+9. Print: hide the front page in your own css (print.css is FROZEN).
+
+FROZEN, byte-identical to 8bd99322: app\data\*, js\lib\*, storage.js, utils.js, theme.js, icons.js, print.css. Never commit
+tools\city-film or tools\kaggle (no git anyway).
+
+VERIFY (from the repo root):
+- node tools/boot-check/boot-check.js -> 0 errors; node tools/ui-tasks/tasks.js -> 7 PASS;
+  node tools/ui-tasks/frozen.js 8bd99322 -> 0 mismatches; node progress/redesign-clean/overlap-proof.js -> same as
+  D:\scratch 2026\clean-2\op-fix.txt (24 failing, 56 hits).
+- Headless Chrome (no --user-data-dir under a path containing --; use D:\scratch 2026\): fresh device (no profiles) boots to the
+  front page from file:// with 0 console errors; Start opens the gate; a device with a profile goes straight to the gate.
+- Contrast: adapt D:\scratch 2026\clean-3\code\shots-C4.js (scroll the whole page, wait for animations, composite alpha) ->
+  every text on the front page AA 4.5 (large 3.0) in dark and light.
+- Demo isolation snapshot (item 4) printed.
+- Shots, dark + light, at 1440x900, 1180x820, 820x1180, 390x844: hero, what-it-is, how-it-works, demo after one answer,
+  plus 1440 reduced motion -> D:\scratch 2026\clean-4\shots-F1\. No horizontal scroll at any size.
+OUTPUT: under 120 words in your final message: files touched, which Codrops demo gave N1 and M3 (or dropped), the stacking
+choice, check results, shot folder. Write notes to progress\redesign-clean\step4-notes.md as you go. Stop at ~45 tool calls.

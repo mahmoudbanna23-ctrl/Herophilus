@@ -1,0 +1,32 @@
+STEP 4 FIX ROUND 1 - brief 2026-10-29. Rules: step4-brief.txt + step3-brief.txt (read both). Prior work and notes:
+progress\redesign-clean\step4-notes.md (append, do not rewrite). Uncommitted diff is the step 4 build - keep it, fix only below. No git.
+
+REFUTER (code):
+R1. M3 parallax in js\front.js: y runs -75 -> 75; the Codrops OneElementScroll source runs intensity -> -intensity, and the
+    clamp(...) start/end was borrowed from another function. Copy it as published: same direction, same start/end, same
+    easing/scrub. Only the intensity number (a size) may change. Cite source file + line in the comment.
+R2. On a local-only device Start lands on the gate's profile step, which has no way back to the front page. Add the same quiet
+    back link there (only when the front page is the way in, i.e. profiles.length===0 on this device).
+R3. "Try three questions" / "That was all three": take the count from the demo array length, never typed.
+
+LOOKER (pictures, D:\scratch 2026\clean-4\shots-F1\):
+L1. Dark hero at 820x1180 and 390x844: scrim crushes the painting near-black, top half of the phone empty black. Dark hero 1440:
+    left 40% pure black, bowl cut off at the right. Fix: the scrim darkens only behind the text block (directional gradient
+    that fades out), the rest of the painting shows at near-full strength; choose background-position per breakpoint so the
+    painting's main subject stays in frame at all four sizes (portrait is a different picture - check 820x1180 and 390x844).
+L2. Light hero 1440/1180/390: white veil washes the painting out; dirty grey smudge bottom-right at 1440 and 1180 (find the
+    layer causing it and remove it). Same directional approach, pale only behind the text.
+L3. Below the hero the page is flat black / white and right halves sit empty (books list, demo card, how-it-works row are all
+    left-weighted). Put the soft still painting behind the rest of the page the way css\backdrop.css does for other screens
+    (reuse its plates/blur/scrim approach - do not duplicate a second fixed layer if backdrop.css can simply include the front
+    view), and balance each section across the width at 1440/1180 (centred column or a two-column split that fills the row).
+L4. what-it-is light: four pastel tinted cards read as a generic grid. Use the same card surface the rest of the app uses
+    (the lists/cards tokens from step 3), subject colour as a thin accent only.
+Contrast must stay AA 4.5 (large 3.0) everywhere in both themes after L1-L4 - measured with the adapted shots-C4 probe, which
+must scroll the whole page and composite alpha. Text over the visible painting needs its own measurement at the darkest and
+lightest pixels behind it.
+
+VERIFY: boot-check 0 errors, tasks 7 PASS, frozen 8bd99322 0, overlap-proof 24 failing/56 hits (row-identical to a clean HEAD
+copy, as the refuter measured), contrast pass, 0 console errors, no horizontal scroll, demo isolation snapshot unchanged.
+Shots: same set as before PLUS the 1440 reduced-motion shots that were missing -> D:\scratch 2026\clean-4\shots-F2\ (new
+folder, keep F1). OUTPUT under 120 words. Stop at ~40 tool calls.

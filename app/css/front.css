@@ -1,0 +1,181 @@
+/* Front page (step 4): what a signed-out visitor sees before the gate. Built by js/front.js, which owns the markup.
+   Stacking: .front sits at 100, under the Clepsydra (150) and the gate (200); FrontPage.close() also removes it when
+   the gate shows, so the order is a backstop, not the mechanism. No transitions or keyframes here: every motion is
+   copied code run by front.js (see its header). The only moving parts are the GSAP lines, the painting, the counter
+   and the ring. */
+
+/* while the front page is up the empty app shell is not part of the document */
+.front-on .app,.front-on .toast{display:none}
+.front-on body{background:var(--bg)}
+
+.front{position:relative;z-index:100;color:var(--tx);font-family:var(--font-body)}   /* transparent: below the hero the soft painting from backdrop.css (html.front-on body::before) shows through */
+.front *{box-sizing:border-box}
+.fp-wrap{width:100%;max-width:920px;margin:0 auto;padding:0 var(--space-6)}
+
+/* the hero and its top bar always show the night painting with the dark treatment, in both themes (owner 2026-10-30).
+   In the light theme the dark token values are restated on those two elements only, so every rule below reads dark
+   there with no second set of rules; light starts below the hero. Values are the dark block of tokens.css. */
+:root[data-theme="light"] .fp-bar,:root[data-theme="light"] .fp-hero{
+  --surface-0:#030507; --surface-1:#0d0f12; --surface-2:#16191d; --surface-3:#212529;
+  --text-1:#f8f9fa; --text-2:#ced4da; --text-3:#adb5bd; --text-4:#868e96;
+  --hairline:#343a40; --hairline-strong:#868e96; --accent:#4dabf7; --on-accent:#030507;
+  --focus-ring:#74c0fc; --selected:#172837;
+  --bg:var(--surface-0); --tx:var(--text-1); --ink:var(--text-1); --card:var(--surface-1);
+  --shadow-1:0 4px 16px #00000040; --shadow-2:0 16px 48px #00000080;
+}
+/* light only: the page colour the night hero fades into at its bottom edge (resolved here, outside the scoped elements) */
+:root[data-theme="light"] .front{--fp-page:var(--surface-0)}
+/* hero bottom fade (light only): the night painting settles into the light page over the last 120px; the extra padding keeps the buttons above the fade, so text always sits on the dark part */
+:root[data-theme="light"] .fp-hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;z-index:-1;pointer-events:none;
+  background:linear-gradient(to bottom,color-mix(in srgb,var(--fp-page) 0%,transparent) 0,color-mix(in srgb,var(--fp-page) 4%,transparent) 15%,color-mix(in srgb,var(--fp-page) 14%,transparent) 30%,color-mix(in srgb,var(--fp-page) 32%,transparent) 45%,color-mix(in srgb,var(--fp-page) 55%,transparent) 60%,color-mix(in srgb,var(--fp-page) 78%,transparent) 75%,color-mix(in srgb,var(--fp-page) 93%,transparent) 90%,var(--fp-page) 100%)}
+:root[data-theme="light"] .fp-hero-in{padding-bottom:calc(var(--space-16) + 56px)}
+
+/* headings are hidden only until front.js has split them into lines */
+.fp-pre .fp-split{visibility:hidden}
+/* codrops wrapLines clip: each line rises out of its own overflow-hidden box; padding keeps descenders whole */
+.fp-oh{overflow:hidden;padding-bottom:.12em;margin-bottom:-.12em}
+
+/* ---- top bar ------------------------------------------------------------------------------------------- */
+.fp-bar{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:var(--space-4) max(var(--space-6),calc((100% - 920px)/2 + var(--space-6)))}   /* same column as the headline and the sections */
+.fp-mark{display:inline-flex;align-items:center;gap:var(--space-3);font-family:var(--font-display);font-size:var(--fs-lg);font-weight:600;color:var(--text-1)}
+.fp-mark img{border-radius:var(--radius-1)}
+
+/* ---- hero: his painted desk, full bleed -------------------------------------------------------------------- */
+.fp-hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate;background:var(--bg)}
+/* the painting is taller than the hero so the scroll depth (M3) never shows an edge; web images only, never the .png.
+   Subject runs from the scroll bundle (40%) to the bowl and book (76-100% of the width); 92% puts the bowl fully in frame at 1440 and 1180, the scrolls stay partly visible behind the text. */
+.fp-art{position:absolute;left:0;right:0;top:-80px;bottom:-80px;z-index:-2;background:url("../assets/lean/painted-codex-3@2x.webp") 92% center/cover no-repeat}
+/* scrim: directional. --fp-r is the right edge of the text block (centred 920px column + its 24px padding + the widest
+   line, 540px, + 16px); the scrim is solid up to it and fades out over the next 20%, so the rest of the painting shows at full strength. */
+.fp-hero{--fp-r:calc(max(0px,(100% - 920px)/2) + 24px + 556px)}
+.fp-scrim{position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(90deg,color-mix(in srgb,var(--surface-0) 62%,transparent) 0,color-mix(in srgb,var(--surface-0) 62%,transparent) var(--fp-r),color-mix(in srgb,var(--surface-0) 0%,transparent) calc(var(--fp-r) + 20%))}
+.fp-hero-in{width:100%;max-width:920px;margin:0 auto;padding:var(--space-16) var(--space-6)}
+.front :is(h1,h2,h3){text-transform:none;font-variant-caps:normal}
+.fp-h1{max-width:10em;margin:0 0 var(--space-6);font-family:var(--font-display);font-size:clamp(2.1rem,4.4vw,3.4rem);line-height:1.12;font-weight:600;letter-spacing:0;color:var(--text-1)}
+.fp-lede{max-width:30em;margin:0 0 var(--space-8);font-size:var(--fs-lg);line-height:1.5;color:var(--text-2)}
+.fp-cta{display:flex;flex-wrap:wrap;gap:var(--space-3)}
+
+/* buttons: the rebuilt pattern (one filled accent, the rest outlined), scoped here because lists.css scopes it to its own screens */
+.front .btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:var(--space-3);min-height:44px;
+  padding:var(--space-3) var(--space-6);border:1px solid var(--hairline-strong);border-radius:var(--radius-1);
+  background:var(--surface-1);color:var(--text-1);box-shadow:none;cursor:pointer;
+  font-family:var(--font-body);font-size:var(--fs-ui);font-weight:600;letter-spacing:0;text-transform:none;
+}
+.front .btn::before,.front .btn::after{display:none}
+.front .btn:hover:not(:disabled){background:var(--surface-2)}
+:root .front .btn.go:not(:disabled){background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.front .tb-btn{position:relative}
+/* theme button: its own filled square, so it reads on the painting in both themes */
+.fp-bar .themebtn{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0;border:1px solid var(--text-2);border-radius:var(--radius-1);background:var(--surface-1);color:var(--text-1);box-shadow:none}
+.fp-bar .themebtn:hover{background:var(--surface-2);color:var(--text-1)}
+
+/* ---- sections ------------------------------------------------------------------------------------------ */
+.fp-sec{padding:var(--space-16) 0;border-top:1px solid var(--hairline)}
+/* light: no hairline between sections (a stray line was seen at the start of the closing section); dark keeps it */
+:root[data-theme="light"] .fp-sec{border-top:0}
+/* each section fills the row: a heading column beside the content */
+.fp-cols{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:var(--space-10) var(--space-12);align-items:start}
+.fp-h2{margin:0 0 var(--space-8);font-family:var(--font-display);font-size:clamp(1.6rem,3.4vw,2.4rem);line-height:1.2;font-weight:600;letter-spacing:0;color:var(--text-1)}
+.fp-h3{margin:0 0 var(--space-3);font-family:var(--font-display);font-size:var(--fs-lg);line-height:1.3;font-weight:600;letter-spacing:0;color:var(--text-1)}
+.fp-note{margin:var(--space-4) 0 0;font-size:var(--fs-md);color:var(--text-2)}
+
+/* what it is */
+.fp-total{display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--space-3);margin:0 0 var(--space-8)}
+.fp-cols .fp-h2{margin-bottom:var(--space-5)}
+.fp-total-n{font-family:var(--font-display);font-size:clamp(2.6rem,7vw,4.4rem);line-height:1.05;font-weight:600;color:var(--text-1);font-variant-numeric:tabular-nums lining-nums}
+.fp-total-l{font-size:var(--fs-body);color:var(--text-2)}
+.fp-total-n .odometer{font-family:inherit;font-weight:inherit;line-height:inherit}
+.fp-subjs{list-style:none;margin:0;padding:0;border:1px solid var(--hairline);border-radius:var(--radius-2);background:var(--surface-1);overflow:hidden}
+/* one list surface, rows split by hairlines like the app's lists; the subject colour is a small square before the name, identity only */
+.fp-subj{--sc:var(--hairline-strong);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--space-1) var(--space-4);padding:var(--space-5) var(--space-6)}
+.fp-subj+.fp-subj{border-top:1px solid var(--hairline)}
+.fp-subj[data-tint="ent"]{--sc:var(--ent)}
+.fp-subj[data-tint="ophtho"]{--sc:var(--ophtho)}
+.fp-subj[data-tint="neuro"]{--sc:var(--neuro)}
+.fp-subj[data-tint="peds"]{--sc:var(--peds)}
+.fp-subj-name{display:flex;align-items:center;gap:var(--space-3);font-family:var(--font-display);font-size:var(--fs-lg);font-weight:600;color:var(--text-1)}
+.fp-subj-name::before{content:"";flex:none;width:10px;height:10px;border-radius:2px;background:var(--sc)}
+.fp-subj-n{font-size:var(--fs-ui);color:var(--text-1);font-variant-numeric:tabular-nums;align-self:center}
+.fp-subj-banks{grid-column:1/-1;font-size:var(--fs-md);color:var(--text-2)}
+.fp-banks{list-style:none;margin:0;padding:0}
+.fp-banks li{display:flex;justify-content:space-between;gap:var(--space-4);padding:var(--space-2) 0;border-bottom:1px solid var(--hairline);font-size:var(--fs-ui);color:var(--text-2)}
+.fp-bank-n{color:var(--text-1);font-variant-numeric:tabular-nums}
+
+/* how it works */
+/* three steps as one list surface beside the heading; the ring sits under the heading with its caption */
+.fp-steps{border:1px solid var(--hairline);border-radius:var(--radius-2);background:var(--surface-1);overflow:hidden}
+.fp-step{padding:var(--space-6)}
+.fp-step+.fp-step{border-top:1px solid var(--hairline)}
+.fp-step p{margin:0;font-size:var(--fs-body);line-height:1.55;color:var(--text-2)}
+.fp-ringbox{display:flex;align-items:center;gap:var(--space-5)}
+.fp-ringbox .fp-note{margin:0;max-width:14em}
+.fp-ring{position:relative;flex:none;width:84px;height:84px;margin:0}
+/* wide: the left column runs the height of the list; heading on top, ring group centred in the rest, so the two columns end together with no dead space */
+@media (min-width:821px){
+  .fp-how-l{align-self:stretch;display:flex;flex-direction:column}
+  .fp-how-l .fp-ringbox{margin:auto 0;flex-direction:column;align-items:flex-start;gap:var(--space-4)}
+  .fp-how-l .fp-ring{width:148px;height:148px}
+  .fp-how-l .fp-ringbox .fp-note{max-width:18em}
+}
+.fp-ring svg{display:block;width:100%;height:100%}
+/* ring colours through tokens, so the theme toggle recolours it; progressbar.js writes its own attributes, these win */
+.fp-ring path:nth-of-type(1){stroke:var(--hairline-strong)}
+.fp-ring path:nth-of-type(2){stroke:var(--accent)}
+.fp-ring .progressbar-text{color:var(--text-1)!important;font-family:var(--font-body);font-size:var(--fs-md);font-weight:600;font-variant-numeric:tabular-nums}
+
+/* live demo */
+.fp-card{padding:var(--space-6);border:1px solid var(--hairline);border-radius:var(--radius-3);background:var(--surface-1)}
+.fp-q-meta{margin:0 0 var(--space-3);font-size:var(--fs-md);color:var(--text-3)}
+.fp-q-stem{margin:0 0 var(--space-5);font-family:var(--font-read);font-size:var(--fs-lg);line-height:1.45;color:var(--text-1)}
+.fp-opts{list-style:none;margin:0;padding:0;display:grid;gap:var(--space-2)}
+.fp-opt{display:flex;align-items:center;gap:var(--space-4);width:100%;min-height:44px;padding:var(--space-3) var(--space-4);text-align:left;
+  border:1px solid var(--hairline-strong);border-radius:var(--radius-2);background:var(--surface-2);color:var(--text-1);cursor:pointer;font:inherit;font-size:var(--fs-body)}
+.fp-opt:hover{background:var(--surface-3)}
+.fp-opt-k{flex:none;width:24px;font-weight:600;color:var(--text-2)}
+.fp-opt[data-state="right"]{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.fp-opt[data-state="right"] .fp-opt-k{color:var(--ok)}
+.fp-opt[data-state="wrong"]{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+.fp-opt[data-state="wrong"] .fp-opt-k{color:var(--bad)}
+.fp-fb{margin-top:var(--space-5);padding-top:var(--space-5);border-top:1px solid var(--hairline)}
+.fp-fb-t{margin:0 0 var(--space-3);font-weight:600;color:var(--text-1)}
+.fp-fb[data-ok="true"] .fp-fb-t{color:var(--ok)}
+.fp-fb[data-ok="false"] .fp-fb-t{color:var(--bad)}
+.fp-fb-x{margin:0 0 var(--space-5);font-family:var(--font-read);font-size:var(--fs-body);line-height:1.55;color:var(--text-2)}
+/* demo: heading and one line above, the card centred below, so no column sits empty */
+.fp-solo{max-width:640px;margin:0 auto}
+.fp-solo>div:first-child{text-align:center;margin-bottom:var(--space-6)}
+.fp-solo .fp-h2{margin-bottom:var(--space-3)}
+.fp-end{text-align:center}
+.fp-end .fp-h2{margin-bottom:var(--space-6)}
+.fp-end .fp-cta{justify-content:center}
+
+@media (max-width:820px){
+  .fp-cols{grid-template-columns:minmax(0,1fr)}
+  .fp-steps{grid-template-columns:minmax(0,1fr)}
+  /* portrait is a different picture: the painting becomes a band across the top (subject kept in frame by position),
+     fading into the page, and the words sit below it on the plain page colour, so no scrim is needed */
+  .fp-hero{flex-direction:column;align-items:stretch;justify-content:flex-start;min-height:0}
+  .fp-art{position:relative;order:-1;flex:none;left:auto;right:auto;top:auto;bottom:auto;z-index:auto;height:clamp(260px,46svh,520px);
+    background-position:93% 50%;-webkit-mask-image:linear-gradient(to bottom,#000 84%,transparent);mask-image:linear-gradient(to bottom,#000 84%,transparent)}
+  .fp-scrim{display:none}
+  .fp-bar{background:linear-gradient(to bottom,color-mix(in srgb,var(--surface-0) 94%,transparent) 0,color-mix(in srgb,var(--surface-0) 94%,transparent) 68%,color-mix(in srgb,var(--surface-0) 0%,transparent) 100%)}
+  .fp-hero-in{position:relative;margin-top:calc(-1 * var(--space-10));padding-top:0;padding-bottom:var(--space-12)}
+  .fp-h1{max-width:none}
+  .fp-lede{max-width:none}
+  .fp-sec{padding:var(--space-12) 0}
+  :root[data-theme="light"] .fp-hero-in{padding-bottom:calc(var(--space-12) + 72px)}   /* room for the 120px light fade below the buttons */
+}
+@media (max-width:480px){
+  /* narrow band: 83% puts the whole bowl (76-92% of the painting) in frame at 390 */
+  .fp-art{background-position:83% 50%}
+}
+@media (max-width:480px){
+  .fp-wrap,.fp-hero-in{padding-left:var(--space-5);padding-right:var(--space-5)}
+  .fp-bar{padding:var(--space-3) var(--space-5)}
+  .fp-cta .btn{flex:1 1 100%}
+}
+
+/* the front page is not part of a printout (print.css is frozen, so it is hidden here) */
+@media print{.front{display:none!important}}

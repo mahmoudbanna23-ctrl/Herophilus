@@ -1,0 +1,20 @@
+STEP 4 FIX ROUND 5 - brief 2026-10-30. Rules: step4-brief.txt + step3-brief.txt. Prior rounds: step4-fix1..4-brief.txt,
+notes step4-notes.md (append). Uncommitted diff = step 4 + fixes 1-4; refuter r5 PASSED every code check - do not regress. No git.
+
+OWNER RULING 2026-10-30: the front-page hero ALWAYS shows the night (dark) painting and the dark hero treatment, in BOTH themes.
+Light mode starts below the hero. (Four rounds of scrims on the day painting fogged the lamp/scrolls; dark hero is judged strong.)
+
+Y1. Hero in light theme = exactly the dark hero: night painting, dark scrim/fade, dark-theme text colours, wordmark, buttons and
+    theme button as in dark, at every size (1440, 1180, 820x1180, 390x844). Simplest route: scope the dark token values to the
+    hero element when the theme is light (keyed on html.front-on / the hero selector) - do not duplicate rules. Remove the
+    round-4 light-only hero pool, the light lede width and the wordmark plate (.fp-mark pill) - no longer needed.
+Y2. The hero's bottom fade into the first section must look right in light: the night painting fades into the light page
+    colour smoothly (no hard edge, no dark band), at all four sizes.
+Y3. Light sections below (what/how/demo): looker said the painting behind them reads as beige fog. Make light sections a clean
+    light page surface (no washed painting behind them), keyed on html.front-on; dark sections unchanged.
+Y4. Dark theme must stay pixel-identical to shots-F5 (compare all dark shots).
+
+VERIFY as fix 4 (boot-check 0, tasks 7 PASS, frozen 8bd99322 0, overlap-proof 192 rows identical to a fresh clean
+`git archive HEAD` copy, contrast whole page both themes 1440+1180+820+390 real pixels, reduced motion, demo isolation 0 writes,
+0 console errors, no h-scroll). Capture with code\shots6.js. OPEN every light shot; diff dark shots vs shots-F5.
+Shots -> D:\scratch 2026\clean-4\shots-F6\ (+ rm\). OUTPUT under 120 words. Stop at ~40 tool calls.

@@ -145,4 +145,21 @@ Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before d
   at scroll 0 with a popup open and passed text at 1.95:1. Probe: D:\scratch 2026\clean-3\code\shots-C4.js.
   Leftover: probe skips text under the floating icon cluster.
 - NEXT: plan steps 4-5 (C:\Users\Alfa388\.claude\plans\moonlit-skipping-summit.md).
+
+## Step 4 front page - DONE 2026-10-31 (owner yes on shots-F6, committed + pushed)
+- Owner 2026-10-29: hero = his painted desk (not the flying cards - hand-built, blocked by copy-never-recreate).
+- Owner 2026-10-30: hero ALWAYS shows the night painting + dark treatment, in both themes; light mode starts below it. Four
+  rounds of scrims on the day painting all fogged the lamp and scrolls. Light sections = plain page surface, no painting.
+- My call: front shows only when the device has no profiles (boot.js), else gate as before; Start/Sign in open the gate.
+- Build: step4-brief.txt, fixes step4-fix1..5-brief.txt, notes step4-notes.md, capture D:\scratch 2026\clean-4\code\shots6.js.
+  N1 = Codrops CoverPageTransition textLinesReveal + SplitType; M3 = Codrops OneElementScroll parallax; counter = HubSpot
+  odometer; M4 = progressbar.js. Front z 100.
+- Last checks: refuter r6 PASS (boot 0, tasks 7/7, frozen 30 files 0, overlap-proof 192 rows identical to clean HEAD, contrast
+  0 fails 4 sizes both themes + reduced motion, isolation 0 writes, dark shots 16/16 byte-identical to F5). Leak test: the
+  harness did not reach a true signed-in app view (gate stayed visible after enterProfile), gate itself clean.
+  Looker r6 READY. Accepted leftovers, owner told: light sections below the painting are plain; how-it-works ring sits ~110px
+  below its heading at 1440 and 1180. Moon icon on the dark theme button in light mode (looker noted, not raised with owner).
+  Minor, accepted earlier: sign-in step back link also shows on devices with profiles (harmless).
+- NEXT: plan step 5 (C:\Users\Alfa388\.claude\plans\moonlit-skipping-summit.md, "Step 5"). Plan says Codex seat; Codex was out
+  of allowance and the gateway down on 2026-10-30 - re-check before dispatch.
   Separate, pending: wide subject paintings plan C:\Users\Alfa388\.claude\plans\bright-dreaming-squirrel.md.

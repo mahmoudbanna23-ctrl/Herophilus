@@ -1,0 +1,22 @@
+STEP 4 FIX ROUND 2 - brief 2026-10-29. Rules: step4-brief.txt + step3-brief.txt. Prior rounds: step4-fix1-brief.txt, notes
+step4-notes.md (append). Uncommitted diff = step 4 + fix 1; refuter r2 PASSED all code checks - do not regress them. No git.
+Looker r2 on D:\scratch 2026\clean-4\shots-F2\ - fix these, visual only:
+
+V1. LIGHT HERO (worst): hero_light_1440x900 / 1180x820 - a white veil over the left ~60% ending in a hard vertical edge near
+    x=850, and a dark-brown patch bottom-right. The scrim must fade out smoothly (no visible edge at any width) and no layer
+    may tint the painting's corners. Find the layer that paints the patch and remove it.
+V2. hero_dark_1440x900: the bowl (the painting's main subject) is cut at the right edge. Re-pick background-position /
+    size so the whole subject sits in frame at 1440 and 1180.
+V3. Portrait (820x1180, 390x844): big empty black gap between the picture band and the headline; the headline wraps narrow
+    while the subtitle is wide. Close the gap and let the headline use the full text width.
+V4. Theme button nearly invisible on the light hero (1440, 1180) - give it the contrast it has elsewhere (3:1 non-text min).
+V5. Headline at 1440 not aligned with the logo - share one left edge.
+V6. How-it-works (how_dark_1440x900): three equal cards with uneven empty space - even the heights/spacing or lay them as a
+    row that fills the width without dead space.
+V7. Demo (demo_dark_1440x900): left column empty - fill it (the section's heading + one plain line) or centre the demo.
+V8. What-it-is light: still a generic four-card stack - lay the four subjects as one surface with rows/dividers (like the
+    app's lists) instead of four separate cards. Subject colour stays a thin accent.
+
+VERIFY as fix 1 (boot-check 0, tasks 7 PASS, frozen 8bd99322 0, overlap-proof row-identical to clean HEAD copy, contrast
+whole-page both themes 1440+390 sampling real pixels behind text, isolation unchanged, 0 console errors, no h-scroll).
+Shots -> D:\scratch 2026\clean-4\shots-F3\ (+ rm\). OUTPUT under 120 words. Stop at ~40 tool calls.

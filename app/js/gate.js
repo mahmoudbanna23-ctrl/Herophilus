@@ -553,6 +553,8 @@ function gateChrome(){
 }
 
 function showGate(step){
+  /* the front page (js/front.js) never stays up under the gate: its Lenis, triggers and rings stop here */
+  if(typeof FrontPage!=='undefined')FrontPage.close();
   examStopTick();
   Q.exam=null;
   const g=$('gate');g.classList.remove('hide');hideSplash();
@@ -570,6 +572,9 @@ function hideGate(){$('gate').classList.add('hide');hideSplash()}
    One decision and nothing else. The escape hatch is worded for what it
    actually does, which differs depending on whether this device already has
    profiles on it.                                                           */
+/* One quiet way back to the front page from step 1 (js/front.js). Styled like the other text link, .glink. */
+const FRONT_LINK=`<button class="glink" style="--d:440ms" onclick="FrontPage.open()">Back to the front page</button>`;
+
 function gateSignInStep(){
   /* Google OAuth requires an http(s) origin. Opened straight from disk as a
      file:// URL, signInGoogle() can ONLY ever fail, with
@@ -588,6 +593,7 @@ function gateSignInStep(){
       <button class="btn go gbig" style="--d:230ms" onclick="showGate('profiles')">${onward} →</button>
       <div class="gsign off" style="--d:300ms" aria-disabled="true">${GOOGLE_MARK}<span>Sign in with Google</span></div>
       <p class="gnote" style="--d:370ms"><b>Google sign-in needs the app to be online.</b> Opened directly from the file on this computer it cannot run — so your progress saves here instead, which works fully and offline.</p>
+      ${FRONT_LINK}
     </div>`;
   }
   return `<div class="gstep" data-step="signin">
@@ -598,6 +604,7 @@ function gateSignInStep(){
     <button class="glink" style="--d:300ms" onclick="showGate('profiles')">${profiles.length?'Use a profile on this device':'Continue without an account'} →</button>
     ${inAppBrowser()?`<p class="gnote warn" style="--d:370ms"><b>Open this in your own browser first.</b> You have arrived here from inside another app, and Google will not let anyone sign in from there. Use the menu in the corner and choose <b>Open in browser</b> — or carry on below and keep your progress on this device.</p>`
       :`<p class="gnote" style="--d:370ms">Signing in keeps your progress the same on your phone and your laptop. Without it everything still works — it just stays on this device.</p>`}
+    ${FRONT_LINK}
   </div>`;
 }
 
@@ -642,6 +649,8 @@ function gateProfileStep(){
   if(canBack)h+=`<button class="btn sec" onclick="showGate('signin')">← Back</button>`;
   if(profiles.length)h+=`<button class="btn sec" onclick="manageProfiles()">Manage profiles</button>`;
   h+=`</div>`;
+  /* the front page is the way in only on a device with no profile; give the same quiet way back there (js/front.js) */
+  if(!profiles.length)h+=`<button class="glink" style="${step()}" onclick="FrontPage.open()">Back to the front page</button>`;
   /* cloudEnabled() is false whenever the app is opened as a file rather than
      from an address, which is the ordinary way a student ends up with a copy
      on a laptop. This used to offer them a "Set up sync" button, and behind it
