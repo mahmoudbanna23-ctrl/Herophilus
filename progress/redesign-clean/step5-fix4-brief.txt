@@ -1,0 +1,12 @@
+STEP 5 FIX ROUND 4 - brief 2026-10-31. Rules: step5-brief.txt, fix1-3. Notes: step5-notes.md, append. No git. Report: D:\scratch 2026\clean-5\refute4\verdict.md, its harness and logs beside it.
+
+W1. Light empty pages: empty-line (lists.css:85) reads 2.17-2.48 at 1440/1180 on flagged, weak, review, schedule. HEAD read 2.4-4.4, so step 5 made it worse: the text moved onto the painted desk. Find what moved it, root cause.
+    Restore the text to its ground or give it a real ground. AA, settled, real pixels, all four sizes, light. Dark unchanged.
+W2. Light mock pool-line (lists.css:108) at 390: 1.77, HEAD 3.33. Same: find why, reach AA.
+W3. tb-btn and sk-name in light fail at HEAD and are marginally worse now. Reach AA by token, outside frozen files, dark unchanged. If a token change reaches further than these two, say so in notes.
+W4. Chapter moment: 390 dark, figure over the stem ~3.5 s; 820x1180 bubble over the objective line ~2.6 s. Use the text-avoid logic already built for set-finish; same rule as there: at 390, if no clear spot, no figure over text and no bubble (she stays tucked, the moment is the existing chapter-done state). Text must always be readable.
+W5. Muted endSession(true) while tucked shows 'jumping' 4.2 s (clepsydra.js:728). Muted = no automatic pose change; a press still works.
+Do not regress anything in refute4\verdict.md.
+
+CHECK only: node --check, boot-check 0, rest probe, W1-W5 measured settled. An independent checker runs the rest.
+Reply under 60 words. Stop at ~25 tool calls with notes current.

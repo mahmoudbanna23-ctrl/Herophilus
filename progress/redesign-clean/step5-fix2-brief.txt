@@ -1,0 +1,16 @@
+STEP 5 FIX ROUND 2 - brief 2026-10-31. Rules: step5-brief.txt, step5-fix1-brief.txt. Notes: step5-notes.md, append. No git. Reports:
+D:\scratch 2026\clean-5\looker.md (end), D:\scratch 2026\clean-5\refute2\verdict.md. Harness: D:\scratch 2026\clean-5\code-F1\.
+
+OWNER RULING 2026-10-31: show less at rest, about a third of her (today 55%). Still recognisable as her, still pressable.
+
+V1. Tuck to ~1/3 showing on every view where she rests visible. Pick the third that reads as her, by eye.
+V2. 820x1180: home, module, theory rest wholly off-screen because the scrollbar eats the edge, while quiz, mock, review show her. Make it consistent; measure
+    against the real content edge, not the window.
+V3. Empty pages show two of her, the pose and the tucked figure. Hide the tucked one while an empty pose is on the page.
+V4. Dark home-tucked at 1440 and 1180: faint banded glow beside her. Find what paints it, remove it.
+V5. 390 set-finish: bubble covers the results text. Place it clear or shorten its stay; results must be readable.
+V6. Chapter moment: bubble 14px under the question stem. Test with the longest stem in the bank at 1440 and 1180; it must not cover it.
+Do not regress anything in refute2\verdict.md.
+
+CHECK only: node --check, boot-check 0, box-overlap at rest, all views, all four sizes, both themes, no h-scroll. An independent checker runs the rest.
+Reply under 80 words. Stop at ~25 tool calls with notes current.

@@ -163,3 +163,13 @@ Codex was out until 06:54 2026-10-16 and the gateway was down: re-probe before d
 - NEXT: plan step 5 (C:\Users\Alfa388\.claude\plans\moonlit-skipping-summit.md, "Step 5"). Plan says Codex seat; Codex was out
   of allowance and the gateway down on 2026-10-30 - re-check before dispatch.
   Separate, pending: wide subject paintings plan C:\Users\Alfa388\.claude\plans\bright-dreaming-squirrel.md.
+
+- Step 5 DONE 2026-10-31, owner yes after recording. Clepsydra rests at the right screen edge (50 of 112 px showing), slides out on
+  events with a short line, slides back. Empty-state poses, chapter moment (once, on the transition only, stays tucked when no clear
+  spot: 820 and 390), set-finish peek (no bubble at 390). First-visit tip dropped: no existing field could hold "seen", no new key. Slide runs on the GSAP
+  already in the app. Briefs step5-*.txt, notes step5-notes.md, verdicts D:/scratch 2026/clean-5/refute5/verdict.md + looker.md Round 5.
+  Known leftovers: 820 light, top-right buttons sit over a card corner (no text covered). Light contrast fails equal to HEAD listed in the
+  refute5 verdict. Theory empty page has no real route while theory is locked (forced view only). Stack-card text is aria-hidden decoration,
+  AA exempt, repeated in the chapter rows.
+- NEXT, owner yes 2026-10-31: one 3D test film for the same edge spot: pop out, wave, mouth moves, no sound, pre-made clip, not live 3D. Owner sees it before
+  anything enters the app. Model: D:/scratch 2026/her-c2/rig5s (arms not yet approved by owner), face9; notes in main repo p5/story/her/NOTES.md. Voice licence owed. P5 itself stays paused.

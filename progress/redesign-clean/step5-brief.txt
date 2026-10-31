@@ -1,0 +1,47 @@
+STEP 5 HELPER + POLISH - brief 2026-10-31. Repo: D:\claude os\Medical school\Herophilus-redesign, branch redesign/clean-2026-10,
+HEAD 8718a7e0 + the resume note. Rules and harnesses: step4-brief.txt, step3-brief.txt, CONTRACT.md. Notes: step5-notes.md, append as
+you go so a replacement can resume from the file. No git. Never touch the live Herophilus folder.
+
+OWNER RULING 2026-10-31: Clepsydra stops floating on pages. She PEEKS FROM THE SCREEN EDGE: mostly tucked out of sight while the user
+works, slides out when something happens, slides back.
+
+Her artwork: never redraw, recolour or draw on her; the nine PNGs in app\assets\clep\ are used as they are. Tucked = positioned partly
+off-screen, the file itself untouched.
+
+A. PEEK (app\js\clepsydra.js, app\js\sessions.js and her css)
+A1. First read every place she speaks or shows; list them in the notes. Do not delete session logic, the mute setting, or the wardround.clep
+    key. Dragging her to a position goes away; leave the stored pos fields alone and unread.
+A2. At rest: tucked at one edge, a small recognisable part of her visible. It must never cover a question, an option, a button, the demo or
+    the nav at 1440x900, 1180x820, 820x1180, 390x844. Prove with the overlap-proof, plus a box-overlap check of her tucked rectangle
+    against every interactive element on home, module, quiz, mock, review, theory.
+A3. She slides out ONLY for: set finished (quiz.js finishSet), mock finished (quiz.js examFinish), session ended (clepsydra.js endSession),
+    chapter finished (B), or when pressed. Says her line, slides back by herself; a press also sends her back. No more automatic talking on
+    page entry - remove that trigger, keep her lines for those events and for a press. Pressable with keyboard, sensible accessible name.
+A4. Motion follows the owner's rule: copied real code under an open licence, never recreated. First reuse a motion already copied into the app;
+    otherwise take a slide keyframe verbatim from animate.css (MIT) and record source + licence in app\assets\licences\. Her entrance has a
+    physical cause (from behind the edge), no fade from nothing. Reduced motion: no slide, she simply is out, then tucked; every loop stops.
+A5. Stacking stays Clepsydra 150. She hides in print.
+
+B. CHAPTER FINISHED
+Every question in the chapter answered at least once (storage.js isAnswered; frozen, call it, never edit it). Fire only on the transition,
+compare before and after the answer, so no stored flag and no new key. One restrained moment: she peeks with one line. No confetti. A chapter
+with zero questions never fires. The per-chapter count in render.js:222 may be reusable; verify its scope before trusting it.
+
+C. EMPTY STATES
+quiz.js:1000,1048,1112,1163 and theory.js:377 (locator's line numbers, verify): add one still pose image inside the empty message, sized to it,
+with alt text. Pick the pose that fits; `thinking` or `pointing` are rest-appropriate. Hidden in print. Not a peek.
+
+D. FIRST-VISIT TIP: DROPPED. No saved field holds it (CLEP.seen is in memory only). Add no key.
+
+FROZEN, byte-identical to 8bd99322: app\data\*, js\lib\*, storage.js, utils.js, theme.js, icons.js, print.css. No new storage key anywhere.
+
+VERIFY as step 4 fix 5, and say which you ran: boot-check 0, tasks 7 PASS, frozen 0, overlap-proof rows against a fresh clean `git archive HEAD`
+copy (differences must be only her, and listed), contrast AA real pixels whole page both themes all four sizes, reduced motion, print, 0 console
+errors, no h-scroll. Exercise A3 and B for real: finish a set, finish a mock, end a session, complete a small chapter, and check B does not fire on
+re-answering. Headless Chrome: --user-data-dir never under a path containing `--`, use D:\scratch 2026\clean-5\.
+
+OUTPUT to D:\scratch 2026\clean-5\: shots\ (home tucked, quiz tucked, peek out at set finish, chapter moment, one empty state: dark + light,
+1440x900 + 1180x820; plus tucked at 820x1180 + 390x844), and one short recording of the peek at 1440x900 and 1180x820 (webm or mp4; if no encoder
+exists, a frame strip, and say so). OPEN every shot you produce before claiming done.
+
+Reply under 120 words: what is done, what is not, check results. Stop at ~40 tool calls with notes current, even with work left.

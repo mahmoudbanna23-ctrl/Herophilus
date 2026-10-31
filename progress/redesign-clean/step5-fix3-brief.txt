@@ -1,0 +1,17 @@
+STEP 5 FIX ROUND 3 - brief 2026-10-31. Rules: step5-brief.txt, fix1, fix2. Notes: step5-notes.md, append. No git. Reports: D:\scratch 2026\clean-5\refute3\verdict.md,
+D:\scratch 2026\clean-5\looker.md (end). Harness: D:\scratch 2026\clean-5\code-F1\.
+
+U1. Her ambient life was lost. clepGlitchLoop() has no caller (clepsydra.js:426), clepShow() no longer calls it (~line 164), removed vs HEAD. Standing rule: her glitch is NOT gated on reading views.
+    Restore the call. Check the idle and shift loops the same way against HEAD (`git show HEAD:app/js/clepsydra.js`, read-only). Restore what serves her, but no loop may talk on its own, move her
+    out of the tuck, or swap to an expressive pose while tucked. Reduced motion stops all of them, timers included.
+U2. The 72px right lane reads lopsided: module-tucked_dark_820x1180 (16px left, 72px right), module-tucked_light_1180x820 (~430px empty right; compare with HEAD to see whether the lane caused it). Keep her visible at
+    820x1180, iPad is a first-class device. Use the smallest balanced answer: equal gutters both sides, only as wide as her visible part needs, and only at widths where the content really reaches her. No lane where
+    free space already exists. Prove with the rest overlap probe.
+U3. Set-finish bubble covers results text: setfinish-peek_dark_390x844, _light_390x844, _light_1180x820. Must clear the results at 1440, 1180, 820. At 390, if no clear spot exists, she peeks there without the bubble; the
+    set-finish line is simply not shown at that width. Results must always be readable.
+U4. Light theme: enabled "Check answer" measures 3.53-3.69, under AA; also fails at HEAD, and this step owes AA. Fix it and any other ENABLED control or body text listed as failing in refute3\verdict.md, by token, measured against
+    the darker gradient stop, outside frozen files. Dark must not change. Disabled controls are exempt, say which you left.
+Do not regress anything in refute3\verdict.md.
+
+CHECK only: node --check, boot-check 0, rest overlap probe (both themes, four sizes), no h-scroll, contrast on what you changed. An independent checker runs the rest.
+Reply under 80 words. Stop at ~30 tool calls with notes current.

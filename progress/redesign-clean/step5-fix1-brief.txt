@@ -1,0 +1,26 @@
+STEP 5 FIX ROUND 1 - brief 2026-10-31. Rules: step5-brief.txt, with progress\app-replan\step5-helper-brief.md (GSAP slide, no hand-written
+keyframes). Uncommitted diff = Codex's build. Notes: step5-notes.md, append. No git. Failure detail: D:\scratch 2026\clean-5\refute\verdict.md,
+D:\scratch 2026\clean-5\looker.md. Their harness scripts are in those folders, reuse them.
+
+Z1. Tucked means VISIBLE IN PART. Today clepTuck (clepsydra.js:246-252) puts her wholly past the edge on home/module/quiz/theory: nothing shows, a mouse
+    cannot press her, it reads as a bug. Same tuck on EVERY view: fixed to one edge, enough of her showing to read as her and be pressed (aim ~1/3 of
+    the figure, your call by eye), cut only by the screen edge. Her art untouched.
+Z2. Mock and review put her over the side-menu items at 1440 and 1180, and off-screen left at 1180 (empty-review shots). Same fix: one position, no
+    per-view left-side placement.
+Z3. Never covers a control at rest. 390x844 quiz covers option D and Previous. Where a width has no free edge on a reading view (quiz, mock, review,
+    theory), she rests wholly off-screen there and still slides out on events. Prove with the box-overlap check, all views, all four sizes.
+Z4. When out, she and her bubble must not cover the current question's controls ("Finish set" is covered at chapter-moment 1180). Place them clear of
+    controls. Where no clear spot exists (390 wide), the figure and bubble take pointer-events:none so nothing is blocked; it slides back by itself.
+Z5. Horizontal scroll at 820x1180 and 390x844 on home and module (963 vs 820, 528 vs 390), absent at HEAD. Root cause, not overflow:hidden on the page.
+    Also home-tucked at those sizes placed her at page bottom outside the viewport: fixed to the viewport, not the page.
+Z6. Mute: clepsydra.js:261 force:true makes muted still peek on events. Muted = no automatic peeks. A press still works.
+Z7. Not exercised last round, do them: mock and theory empty states live, reduced-motion pass through every event, contrast AA real pixels both themes all
+    four sizes.
+Do not regress what passed: events fire and return, no talk on page entry, chapter moment once only (not on re-answer, already-complete, or 0-question
+chapters), keyboard press, missing GSAP safe, no new key, PNGs unchanged, empty poses.
+
+VERIFY: boot-check 0, tasks 7 PASS, frozen 0, overlap-proof against a fresh clean `git archive HEAD` copy with differences listed, no h-scroll, 0 console
+errors, print, plus Z3 overlap and Z7. Drive past the gate into the real signed-in app. OPEN every shot.
+Shots -> D:\scratch 2026\clean-5\shots-F1\ same names as shots\, recordings D:\scratch 2026\clean-5\peek-F1-1440.webm and peek-F1-1180.webm. Chrome
+--user-data-dir never under a path containing `--`.
+Reply under 120 words. Stop at ~40 tool calls with notes current, even with work left.
